@@ -5,6 +5,7 @@ import {
   jsonLines,
   normalizedFullText,
   buildTextAuditFields,
+  buildPoetRecords,
   buildWorkRecords,
   validateRelations,
   validateRecordShapes,
@@ -37,6 +38,29 @@ describe('versioned corpus dataset', () => {
       'a/work',
       'z/work',
     ]);
+  });
+
+  it('preserves baptism data independently of birth data', () => {
+    const poets = new Map([
+      ['eltzholtz', {
+        id: 'eltzholtz',
+        country: 'dk',
+        lang: 'da',
+        type: 'poet',
+        name: { firstname: 'Alberta', lastname: 'Eltzholtz' },
+        period: {
+          baptized: { date: '1846-05-24', place: null, inon: 'in' },
+          dead: { date: '1934-05-19', place: null, inon: 'in' },
+        },
+      }],
+    ]);
+
+    const record = buildPoetRecords({ poets })[0];
+    expect(record).not.toHaveProperty('born');
+    expect(record).toEqual(expect.objectContaining({
+      baptized: { date: '1846-05-24', place: null, inon: 'in' },
+      dead: { date: '1934-05-19', place: null, inon: 'in' },
+    }));
   });
 
   it('normalizes text blocks without losing line boundaries', () => {

@@ -56,5 +56,107 @@ describe('helpers', () => {
         '<span lang="sv">andra raden</span>',
       ]);
     });
+
+    it.each(['center', 'right', 'wrap', 'w'])('balances a multi-line <%s> before it reaches the client', tag => {
+      const xml = `<${tag}><w>Første linje</w><br/>\n<w>Anden linje</w></${tag}>`;
+      const lines = htmlToXml(xml, collected, true, {
+        workId: '1807', textId: 'test180701', blockType: 'poetry',
+      });
+      expect(lines.map(([fragment]) => fragment)).toEqual(tag === 'w' ? [
+        '<w><w>Første linje</w><br/></w>',
+        '<w><w>Anden linje</w></w>',
+      ] : [
+        '<w>Første linje</w><br/>',
+        '<w>Anden linje</w>',
+      ]);
+    });
+
+    it('validates prose, quotations, headings, notes and footnotes', () => {
+      const contexts = ['prose', 'quote', 'heading', 'note', 'footnote'];
+      contexts.forEach(blockType => {
+        expect(() => htmlToXml('<broken>Første</other>', collected, false, {
+          workId: '1807', textId: 'test180701', blockType,
+        })).toThrow(new RegExp(`værk=1807, tekst=test180701, blok=${blockType}, linje=0:`));
+      });
+      expect(lineTexts('Tekst<note>Første\nAnden</note>')).toEqual([
+        'Tekst<note>Første Anden</note>',
+      ]);
+    });
+
+    it('keeps a multi-line footnote valid as one rendered line', () => {
+      expect(
+        lineTexts(
+          'Verslinje<footnote>Første linje\n' +
+            'anden <span lang="la"><i>linje</i></span>.</footnote>\n' +
+            'Næste verslinje'
+        )
+      ).toEqual([
+        'Verslinje<footnote>Første linje anden <span lang="la"><i>linje</i></span>.</footnote>',
+        'Næste verslinje',
+      ]);
+    });
+
+    it('preserves line indentation after a page break', () => {
+      expect(
+        lineTexts(
+          '<pb n="18" facs="024.jpg"/>        andre drog fra borgen ned,'
+        )
+      ).toEqual([
+        '<pb n="18" facs="024.jpg"/>' +
+          '\u00a0'.repeat(16) +
+          'andre drog fra borgen ned,',
+      ]);
+    });
+
+    it('keeps escaped angle brackets as text for the browser XML parser', () => {
+      expect(
+        lineTexts('&lt;er røde af blodet af mænd, der dræbes,&gt;')
+      ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
+    });
+
+    it('keeps ampersands escaped in generated XML fragments', () => {
+      expect(lineTexts('A &amp; B')).toEqual(['A &amp; B']);
+    });
+
+    it('renders Bible xrefs as links', () => {
+      expect(
+        lineTexts('Se <xref bible="bibelmatt13,45-46"/>.')
+      ).toEqual([
+        'Se <a bible="bibelmatt13,45-46">Matt13,45-46</a>.',
+      ]);
+    });
+
+    it('keeps numbered Bible book names separate from chapter numbers', () => {
+      expect(
+        lineTexts(
+          '<xref bible="bibel1mose1"/>; ' +
+          '<xref bible="bibel2korint05,17"/>'
+        )
+      ).toEqual([
+        '<a bible="bibel1mose1">1 Mos1</a>; ' +
+          '<a bible="bibel2korint05,17">2 Kor5,17</a>',
+      ]);
+    });
+
+    it('preserves inline margin markers in prose', () => {
+      expect(
+        htmlToXml(
+          'Før margin<margin>En margintekst.</margin> efter margin',
+          collected,
+          false,
+        )
+      ).toEqual([
+        [
+          'Før margin<margin>En margintekst.</margin> efter margin',
+          { num: 1, html: true },
+        ],
+      ]);
+    });
+
+    it('continues to extract margin markers from poetry lines', () => {
+      expect(
+        htmlToXml('<margin>Strofe 1.</margin>Første verslinje', collected, true)
+      ).toEqual([['Første verslinje', { num: 1, margin: 'Strofe 1.' }]]);
+    });
   });
 });

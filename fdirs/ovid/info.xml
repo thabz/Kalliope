@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="ovid" country="un" lang="la" type="poet">
+  <name>
+    <firstname/>
+    <lastname>Ovid</lastname>
+    <fullname>Publius Ovidius Naso</fullname>
+  </name>
+  <period>
+    <born>
+      <date>-0043-03-20</date>
+      <place>Sulmona</place>
+    </born>
+    <dead>
+      <date>ca. 0017</date>
+      <place>Tomis</place>
+    </dead>
+  </period>
+  <literary-periods>la-romersk-litteratur</literary-periods>
+  <works>amores,heroides,arsamatoria,remediaamoris,medicamina,fasti,metamorphoses,tristia,ibis,epistulae</works>
+  <identifiers>
+    <wikidata>Q7198</wikidata>
+    <wikipedia-da>Publius Ovidius Naso</wikipedia-da>
+    <wikipedia-en>Ovid</wikipedia-en>
+    <wikipedia-fr>Ovide</wikipedia-fr>
+    <wikipedia-de>Ovid</wikipedia-de>
+    <viaf>211149294305980521549</viaf>
+    <gnd>118590995</gnd>
+    <lex-dk>Ovid</lex-dk>
+    <runeberg-org>ovidipub</runeberg-org>
+    <gutenberg-org>2868</gutenberg-org>
+  </identifiers>
+</person>

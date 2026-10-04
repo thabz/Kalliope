@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beccuti" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Francesco</firstname>
+    <lastname>Beccuti</lastname>
+    <fullname>Francesco Coppetta Beccuti</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1509-04-06</date>
+      <place>Perugia</place>
+    </born>
+    <dead>
+      <date>1553-08-19</date>
+      <place>Perugia</place>
+    </dead>
+  </period>
+  <literary-periods>it-renaessance</literary-periods>
+  <works>1912</works>
+  <identifiers>
+    <wikidata>Q3749611</wikidata>
+    <viaf>62600416</viaf>
+    <gnd>128455527</gnd>
+  </identifiers>
+</person>

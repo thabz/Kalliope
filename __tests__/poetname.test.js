@@ -49,6 +49,25 @@ describe('String method', () => {
       'Emil Aarestrup (Ukendt år–1856)'
     );
   });
+  it('uses a baptism date when no birth date is documented', () => {
+    const poet = {
+      name: {
+        firstname: 'Alberta',
+        lastname: 'Eltzholtz',
+      },
+      period: {
+        baptized: {
+          date: '1846-05-24',
+        },
+        dead: {
+          date: '1934-05-19',
+        },
+      },
+    };
+    expect(poetNameString(poet, false, true)).toEqual(
+      'Alberta Eltzholtz (1846–1934)'
+    );
+  });
   it('outputs correctly when having full name and unknown lifespan', () => {
     const poet = {
       name: {

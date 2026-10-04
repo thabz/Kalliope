@@ -3,8 +3,11 @@
 <workhead>
   <title>Under åben Himmel</title>
   <year>1908</year>
+  <identifiers>
+    <openlibrary-work>OL44085236W</openlibrary-work>
+  </identifiers>
   <pictures>
-    <picture type="titlepage" src="1908-p1.jpg">Titelbladet til <i>Under åben Himmel</i> (1908) lyder ,,Valdemar Rørdam / Under åben Himmel // Gyldendalske Boghandel / Nordisk Forlag / København og Kristania / 1908''.</picture>
+    <picture type="titlepage" src="1908-p1.jpg"><transcription>Valdemar Rørdam / Under åben Himmel // Gyldendalske Boghandel / Nordisk Forlag / København og Kristania / 1908</transcription></picture>
   </pictures>
   <source facsimile="11540800397C_color" facsimile-pages-num="162" facsimile-pages-offset="8">Valdemar Rørdam: <i>Under åben Himmel</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1908.</source>
   <quality>korrektur1,korrektur2,side,side</quality>
@@ -3311,7 +3314,7 @@ igennem Bruset af Blæstens Gang.
 </head>
 <body>
 <poetry>
-<nonum><small><right>Febr. 1908.</right></small></nonum>
+<nonum><right><small>Febr. 1908.</small></right></nonum>
 
 I Finland var der — en større Skjald,
 Mester, hvor jeg må kun stamme,
@@ -3679,6 +3682,7 @@ At dø for Danmarks Ære
   <title>Ørnereden</title>
   <firstline>Der lå en Ørnerede</firstline>
   <source pages="142-143"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -3826,7 +3830,6 @@ frit skal du bo i din arvede Gård,
 </poetry>
 </body>
 </text>
-
 
 </workbody>
 </kalliopework>

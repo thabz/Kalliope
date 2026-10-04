@@ -11,6 +11,9 @@ import {
   loadXMLDoc,
   safeGetAttr,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   getElementsByTagName,
   getChildByTagName,
   safeTrim,
@@ -48,7 +51,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         );
         note = safeGetInnerXML(getChildByTagName(picture, 'picture-note'));
       } else {
-        description = safeTrim(safeGetInnerXML(picture));
+        description = safeTrim(safeGetInnerXMLWithout(picture, ['identifiers']));
       }
 
       const src = `/images/${personId}/${pictureId}.jpg`;
@@ -56,7 +59,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
       const remoteUrl = build_museum_url(picture, collected);
       const museumId = safeGetAttr(picture, 'museum');
       const clipPath = safeGetAttr(picture, 'clip-path');
-      const content_raw = safeGetInnerXML(picture).trim();
+      const content_raw = safeGetInnerXMLWithout(picture, ['identifiers']).trim();
       const result = {
         id: `${personId}/${pictureId}`,
         remoteUrl,
@@ -69,6 +72,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         content_raw,
         content_html: htmlToXml(description, collected),
         note_html: htmlToXml(note, collected),
+        identifiers: getIdentifiers(picture, identifierAllowlist.picture),
       };
       if (personId != 'kunst') {
         result.artist = collected.poets.get(personId);
@@ -105,10 +109,10 @@ const build_artwork = async (collected) => {
       const artworkFilename = `fdirs/${personId}/artwork.xml`;
       const portraitsFile = `fdirs/${personId}/portraits.xml`;
       const artworkFileChanged =
+        isFileModified(artworkFilename) ||
         force_reload ||
         codeModified ||
-        museumsModified ||
-        isFileModified(artworkFilename);
+        museumsModified;
 
       if (artworkFileChanged) {
         found_changes = true;
@@ -128,10 +132,10 @@ const build_artwork = async (collected) => {
         }
       }
       if (
+        isFileModified(portraitsFile) ||
         force_reload ||
         codeModified ||
-        museumsModified ||
-        isFileModified(portraitsFile)
+        museumsModified
       ) {
         found_changes = true;
         // Fjern eksisterende portraits fra cache (i tilfælde af id er slettet)
@@ -187,10 +191,10 @@ const build_artwork = async (collected) => {
         async (workId) => {
           const workFilename = `fdirs/${personId}/${workId}.xml`;
           if (
+            isFileModified(workFilename) ||
             force_reload ||
             codeModified ||
-            museumsModified ||
-            isFileModified(workFilename)
+            museumsModified
           ) {
             found_changes = true;
             // Fjern eksisterende work pictures fra cache
@@ -243,10 +247,10 @@ const build_artwork = async (collected) => {
   );
 
   if (
+    isFileModified('content/artwork.xml') ||
     force_reload ||
     codeModified ||
-    museumsModified ||
-    isFileModified('content/artwork.xml')
+    museumsModified
   ) {
     found_changes = true;
     Array.from(collected_artwork.keys())

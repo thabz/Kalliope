@@ -4,7 +4,7 @@
   <title>Septemberdage</title>
   <year>1900</year>
   <pictures>
-    <picture type="titlepage" src="1900-p1.jpg">Titelbladet lyder ,,Otto C. Fønss / Septemberdage / Digte // Aarhus / Jydsk Forlags-Forretning / 1900''.</picture>
+    <picture type="titlepage" src="1900-p1.jpg"><transcription>Otto C. Fønss / Septemberdage / Digte // Aarhus / Jydsk Forlags-Forretning / 1900</transcription></picture>
   </pictures>
   <quality>korrektur1,korrektur2,side,side</quality>
   <source facsimile="11530805542E_color.pdf" facsimile-pages-num="152" facsimile-pages-offset="12">Otto Fønss: <i>Septemberdage</i>, Jydsk Forlags-Forretning, Aarhus, 1900.</source>
@@ -488,7 +488,8 @@ som lukker Dig i Mindets Verden ind.
   <toctitle><num>II.</num>Et Steds i Napolimuseets Sale</toctitle>
   <firstline>Et Steds i Napolimuseets Sale</firstline>
   <pictures>
-    <picture src="fonss2018041909-p1.jpg" museum="capodimonte">Titian: <i>Danaë</i>, 1544-46, olie på lærred, 120 × 172 cm. Museo di Capodimonte, Napoli.</picture> <!-- https://en.wikipedia.org/wiki/Danaë_(Titian_series)#/media/File:Tizian_011.jpg -->
+    <picture src="fonss2018041909-p1.jpg" museum="capodimonte">Titian: <i>Danaë</i>, 1544-46, olie på lærred, 120 × 172 cm. Museo di Capodimonte, Napoli.</picture>
+    <!-- https://en.wikipedia.org/wiki/Danaë_(Titian_series)#/media/File:Tizian_011.jpg -->
   </pictures>
   <source pages="19"/>
   <keywords>sonnet</keywords>
@@ -1143,10 +1144,10 @@ men hver i Sit at tjene huld
   <title>Dronning Louise</title>
   <subtitle>(† d. 29. Sept. 1898)</subtitle>
   <firstline>Det var ved Valborgstide</firstline>
-  <source pages="45-49"/>
   <dates>
     <event>1898-09-29</event>
   </dates>
+  <source pages="45-49"/>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1897,10 +1898,10 @@ det er - mig selv.
   <title>Hjemfærd</title>
   <subtitle>(Efter Adolf Frey, Schweitz)</subtitle>
   <firstline>Trommernes Buldren, Staalets Skratten</firstline>
-  <source pages="71-72"/>
   <notes>
     <note unknown-original-by="frey" />
   </notes>
+  <source pages="71-72"/>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2726,7 +2727,7 @@ Lykken bo, hvor Du er til Huse,
 <body>
 <poetry>
 <nonum><center>I.</center></nonum>
-<nonum><small><center><i>Brevskriveri.</i></center></small></nonum>
+<nonum><center><small><i>Brevskriveri.</i></small></center></nonum>
 
 Men <w>Musse!</w> Hvad gaar der dog af Dig, Du Smaa
 Du glemmer jo rent at faa Dukken klædt paa.
@@ -2763,9 +2764,8 @@ Tro mig, det Brev vil faa Fa’r til at studse.
 Men læs saa, hvad Du har skrevet, min Snut!
 »Nej, Mo’r! <w>Det skal Fa’r jo fortælle Musse!</w>«
 
-
 <nonum><center>II.</center></nonum>
-<nonum><small><center><i>Kirkebesøg.</i></center></small></nonum>
+<nonum><center><small><i>Kirkebesøg.</i></small></center></nonum>
 
 Hun har tigget længe med bønlige Ord
 om Lov at komme i Kirke med Mo’r.

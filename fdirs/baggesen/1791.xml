@@ -3,6 +3,9 @@
 <workhead>
   <title>Ungdomsarbeider</title>
   <year>1791</year>
+  <identifiers>
+    <openlibrary-work>OL37257361W</openlibrary-work>
+  </identifiers>
   <notes>
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun direkte meningsforstyrrende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     <note type="credits">Teksten er tilføjet af Henrik Nielsen.</note>
@@ -11,8 +14,25 @@
     <picture src="1791-p1.jpg">Titelbladet til bind 1, lyder ,,Ungdomsarbeider // af / Jens Baggesen // - Nos hæc novimus esse nihil. / Mart. // Første Deel // Kiøbenhavn, / hos Hof- og Univers. Bogtrykker J. F. Schiltz, / 1791.''.</picture>
     <picture src="1791-p2.jpg">Titelbladet til bind 2, lyder ,,Ungdomsarbeider // af / Jens Baggesen // - Nos hæc novimus esse nihil. / Mart. // Første Deel // Kiøbenhavn, / hos Hof- og Univers. Bogtrykker J. F. Schiltz, / 1791.''.</picture>
   </pictures>
-  <source id="bd1" facsimile="115308040623_color" facsimile-pages-num="274" facsimile-pages-offset="20">Jens Baggesen: <i>Ungdomsarbeider</i>, Kbh., 1791, bd. 1.</source>
-  <source id="bd2" href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122582430105763" facsimile="115308040634_color" facsimile-pages-num="258" facsimile-pages-offset="20">Jens Baggesen: <i>Ungdomsarbeider</i>, Kbh., 1791, bd. 2.</source>
+  <source id="bd1"
+    facsimile="115308040623_color"
+    facsimile-pages-num="274"
+    facsimile-pages-offset="20">
+    Jens Baggesen: <i>Ungdomsarbeider</i>, Kbh., 1791, bd. 1.
+    <identifiers>
+      <kb-alma>99122582430105763</kb-alma>
+    </identifiers>
+  </source>
+  <source id="bd2"
+    href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122582430105763"
+    facsimile="115308040634_color"
+    facsimile-pages-num="258"
+    facsimile-pages-offset="20">
+    Jens Baggesen: <i>Ungdomsarbeider</i>, Kbh., 1791, bd. 2.
+    <identifiers>
+      <kb-alma>99122582430105763</kb-alma>
+    </identifiers>
+  </source>
 </workhead>
 <workbody>
 
@@ -25,9 +45,8 @@
 <text id="baggesen2003022001" skip-index="true">
 <head>
   <title>Til Publicum</title>
-  <toctitle>Til Publicum</toctitle>
-  <quality>korrektur1,kilde,side</quality>
   <source in="bd1" pages="iii-x" facsimile-pages="7-14" />
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -45,11 +64,9 @@ deels utrykte, som de af mine Smaastykker, der udentvivl vare Lyset mindst uvær
 <text id="baggesen2003022002">
 <head>
   <title>Til Charlotte, Grevinde af Schimmelmann</title>
-  <toctitle>Til Charlotte, Grevinde af Schimmelmann</toctitle>
-  <indextitle>Til Charlotte, Grevinde af Schimmelmann</indextitle>
   <firstline>Apollo ledte mig til Bredden af Castale</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source in="bd1" pages="xi-xiv" facsimile-pages="15-18" />
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -93,8 +110,6 @@ Med Følelser, som Gratier kun tale,
     <line>Med <i>begges Anmærkninger</i> og et <i>Real-Register</i></line>
     <line>(<i>Fragment</i>)</line>
   </subtitle>
-  <toctitle>Forfatterens Liv og Levnet, af hans Fætter</toctitle>
-  <indextitle>Forfatterens Liv og Levnet, af hans Fætter</indextitle>
   <firstline>Af alle Tanker, som en Pen</firstline>
   <notes>
     <note>* Simon Simonsen, velmeriteret Skoleholder i Hulbye. [note til titlen.]</note>
@@ -1875,8 +1890,6 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
     <line>eller</line>
     <line>Den hurtige Frier</line>
   </subtitle>
-  <toctitle>Ja og Nei</toctitle>
-  <indextitle>Ja og Nei</indextitle>
   <firstline>Man synger næstendeels om Alt paa Jorden</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Olav Andersen.</note>
@@ -3077,7 +3090,9 @@ Men denne Gang hun maatte læse mere:
 Hvad Ord for Ord, aldeles paa et Haar,
 Som det i samme gamle Krønik staaer,
 Jeg her min Læser trolig vil levere.
+
 <nonum><center>* * *</center></nonum>
+
    "Den - hujus døde Christen Smed<note>* Den 28de, om jeg mindes ret; men hun sprag det over, fordi det var trykt med Rommertal XXVIII.</note>
    Den hele Bye til stor Fortræd;
    Han var en brav og nyttig Mand,
@@ -3092,7 +3107,9 @@ Udbrød den standsende Borgmesterinde
 "Det vil sig haaber jeg paa Timen finde;
 "Jeg ei begriber denne Søvnløshed;
 "Nu vel! læs meer! bliv ved!” — og hun blev ved:
+
 <nonum><center>* * *</center></nonum>
+
    "Vor Præst, som nylig var lidt svag,
    Blir feed og fyldig Dag for Dag.
    Han kan lidt meer end Fadervor,
@@ -3113,7 +3130,9 @@ Men sprang tre fire Blade reent forbi,
 Som der var alt for meget moersomt i;
 Man derfor eene hende Skylden give
 Om Følgende lidt kiedsomt skulde blive:
+
 <nonum><center>* * *</center></nonum>
+
    "Den Tyv, som stial Herr Nielses Hest,
    Blev greben sidste Mortensfest,
    Og bragt paa Stand for Magistraten,
@@ -4464,7 +4483,6 @@ Denne Forskiællighed i Hensigter, og deraf flydende Forskiæl i Maaden at efter
 <text id="baggesen2019080308">
 <head>
   <title><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</title>
-  <toctitle><num>Første Sang</num>O! du, mit Haab, min Fryd, min Sang</toctitle>
   <indextitle>O! du, mit Haab, min Fryd, min Sang</indextitle>
   <linktitle>O! du, mit Haab, min Fryd, min Sang</linktitle>
   <firstline>O! du, mit Haab, min Fryd, min Sang</firstline>
@@ -4765,7 +4783,6 @@ Fortiener for sig selv en Sang.
 <text id="baggesen2019080309">
 <head>
   <title><num>Anden Sang</num>Den lyse Dagens Konge gled</title>
-  <toctitle><num>Anden Sang</num>Den lyse Dagens Konge gled</toctitle>
   <indextitle>Den lyse Dagens Konge gled</indextitle>
   <linktitle>Den lyse Dagens Konge gled</linktitle>
   <firstline>Den lyse Dagens Konge gled</firstline>
@@ -4943,7 +4960,6 @@ Som vover, at afsløre den!
 <text id="baggesen2019080310">
 <head>
   <title><num>Tredje Sang</num>Du dobbelt skiøn, fordi din Ild</title>
-  <toctitle><num>Tredje Sang</num>Du dobbelt skiøn, fordi din Ild</toctitle>
   <indextitle>Du dobbelt skiøn, fordi din Ild</indextitle>
   <linktitle>Du dobbelt skiøn, fordi din Ild</linktitle>
   <firstline>Du dobbelt skiøn, fordi din Ild</firstline>
@@ -5143,7 +5159,6 @@ Af Livets alt for bratte Roe.
 <text id="baggesen2019080311">
 <head>
   <title><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</title>
-  <toctitle><num>Fjerde Sang</num>Mens Vintrens seirende Tyran</toctitle>
   <indextitle>Mens Vintrens seirende Tyran</indextitle>
   <linktitle>Mens Vintrens seirende Tyran</linktitle>
   <firstline>Mens Vintrens seirende Tyran</firstline>
@@ -5429,7 +5444,6 @@ Og glad hun flyer hiem igien.
 <text id="baggesen2019080312">
 <head>
   <title><num>Femte Sang</num>Som Vandreren der mat af Sved</title>
-  <toctitle><num>Femte Sang</num>Som Vandreren der mat af Sved</toctitle>
   <indextitle>Som Vandreren der mat af Sved</indextitle>
   <linktitle>Som Vandreren der mat af Sved</linktitle>
   <firstline>Som Vandreren der mat af Sved</firstline>
@@ -5961,10 +5975,10 @@ De Stakler Aarsag har at grine;
   <title>Lenardo og Blandine</title>
   <subtitle>(Efter Bürger)</subtitle>
   <firstline>Blandine sad hisset, Lenardo stod her</firstline>
-  <source in="bd2" pages="84-104"/>
   <notes>
     <note>Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2019080301"/>.</note>
   </notes>
+  <source in="bd2" pages="84-104"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6734,10 +6748,10 @@ Ogsaa dette Smil engang forsvinder -
   <title>Digterviise</title>
   <subtitle>(Efter Horaz.)</subtitle>
   <firstline>Mig, som en Ven af den rolige Muse</firstline>
-  <source in="bd2" pages="125-128"/>
   <notes>
     <note>Variation over Horats' <xref type="translation" poem="horats2026010313"/>.</note>
   </notes>
+  <source in="bd2" pages="125-128"/>
   <keywords>wieland</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6974,6 +6988,7 @@ Jeg kun Erindringen har nu tilbage:
   <subtitle>(Polyhymnias Yndling J. A. P. Schultz, helliget.)</subtitle>
   <firstline>Nu stiger Dagens lyse Gud</firstline>
   <source in="bd2" pages="137-141"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7276,10 +7291,10 @@ Hvis Godhed mig Vivli har givet!
   <title>Selvindbydelse</title>
   <subtitle>(Efter Horaz.)</subtitle>
   <firstline>Du seer hvor slemt den kolde Vinter-Gud</firstline>
-  <source in="bd2" pages="153-154"/>
   <notes>
     <note>Variation over Horats' <xref type="translation" poem="horats2026010308"/>.</note>
   </notes>
+  <source in="bd2" pages="153-154"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7585,7 +7600,7 @@ I Koner! I Piger! I Skiønne! Jer Skaal!
   <subtitle>Drikkeviise</subtitle>
   <firstline>En Daare sørger for i Morgen</firstline>
   <source in="bd2" pages="168-169"/>
-  <keywords>drikkevise</keywords>
+  <keywords>drikkevise,balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8220,6 +8235,7 @@ At du frygter for at finde
   <title>Seiladsen</title>
   <firstline>See, hun seiler bort! mit Øie følger</firstline>
   <source in="bd2" pages="200-201"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

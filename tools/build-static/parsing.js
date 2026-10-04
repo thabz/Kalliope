@@ -1,3 +1,4 @@
+import { DOMParser } from '@xmldom/xmldom';
 import { htmlToXml } from '../libs/helpers.js';
 import { build_museum_url } from './museums.js';
 import {
@@ -5,9 +6,13 @@ import {
   getChildrenByTagName,
   getElementByTagName,
   getElementsByTagName,
+  getElementsByTagNames,
   safeGetText,
   safeGetAttr,
   safeGetInnerXML,
+  safeGetInnerXMLWithout,
+  getIdentifiers,
+  identifierAllowlist,
   safeTrim,
 } from './xml.js';
 import { poetName } from './formatting.js';
@@ -23,6 +28,8 @@ const knownPictureAttrs = new Set([
   'clip-path',
   // Local image id, primarily in artwork and portrait registries.
   'id',
+  // Explicit link to the image's source page.
+  'href',
   // Museum inventory number.
   'invnr',
   // Language for image text or description content.
@@ -45,8 +52,6 @@ const knownPictureAttrs = new Set([
   'subject',
   // Local picture type/classification.
   'type',
-  // Wikidata entity id for external lookup.
-  'wikidata',
   // Artwork or portrait year.
   'year',
 ]);
@@ -70,7 +75,7 @@ const get_local_picture_content = (pictureNode) => {
     };
   }
   return {
-    description: safeTrim(safeGetInnerXML(pictureNode)),
+    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers', 'transcription'])),
     note: null,
   };
 };
@@ -106,6 +111,7 @@ const get_artwork_picture = async (
     content_lang: artwork.content_lang,
     content_html: artwork.content_html,
     note_html: artwork.note_html,
+    identifiers: artwork.identifiers ?? {},
     primary,
   };
 };
@@ -163,16 +169,60 @@ const extractTitle = (head, type) => {
   }
 };
 
-const extractSubtitles = (head, tag = 'subtitle', collected) => {
+const stripTitleNotes = title => {
+  if (title == null) {
+    return null;
+  }
+  const document = new DOMParser().parseFromString(
+    `<content>${title.title}</content>`,
+    'text/xml'
+  );
+  for (const note of getElementsByTagNames(document, ['footnote', 'note'])) {
+    note.parentNode.removeChild(note);
+  }
+  return {
+    ...title,
+    title: safeGetInnerXML(document.documentElement),
+  };
+};
+
+const titleText = title => {
+  const titleWithoutNotes = stripTitleNotes(title);
+  if (titleWithoutNotes == null) {
+    return null;
+  }
+  const document = new DOMParser().parseFromString(
+    `<content>${titleWithoutNotes.title}</content>`,
+    'text/xml'
+  );
+  return safeGetText(document.documentElement);
+};
+
+const countHeadingFootnotes = head =>
+  ['title', 'subtitle'].reduce((count, tag) => {
+    const heading = getChildByTagName(head, tag);
+    return count + getElementsByTagName(heading, 'footnote').length;
+  }, 0);
+
+const effectiveTextTitles = ({ firstline, title, indextitle, linktitle }) => ({
+  indexTitle: indextitle ?? title ?? firstline,
+  linkTitle: linktitle ?? indextitle ?? title ?? firstline,
+});
+
+const extractSubtitles = (head, tag = 'subtitle', collected, fragmentContext = {}) => {
   let subtitles = null;
   const subtitle = getElementByTagName(head, tag);
   if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {
     subtitles = getElementsByTagName(subtitle, 'line').map(s => {
-      return htmlToXml(safeGetText(s), collected, true);
+      return htmlToXml(safeGetInnerXML(s), collected, true, {
+        ...fragmentContext, blockType: tag,
+      });
     });
   } else if (subtitle) {
-    const subtitleString = safeGetText(subtitle);
-    subtitles = [htmlToXml(subtitleString, collected, true)];
+    const subtitleString = safeGetInnerXML(subtitle);
+    subtitles = [htmlToXml(subtitleString, collected, true, {
+      ...fragmentContext, blockType: tag,
+    })];
   }
   return subtitles;
 };
@@ -189,8 +239,13 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const museumId = safeGetAttr(pictureNode, 'museum');
   const clipPath = safeGetAttr(pictureNode, 'clip-path');
   const remoteUrl = build_museum_url(pictureNode, collected);
+  const identifiers = getIdentifiers(pictureNode, identifierAllowlist.picture);
   if (src != null) {
     const { description, note } = get_local_picture_content(pictureNode);
+    const transcriptionNode = getChildByTagName(pictureNode, 'transcription');
+    const transcription = transcriptionNode == null
+      ? null
+      : transcriptionNode.textContent.trim();
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
@@ -206,9 +261,14 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       content_lang: 'da',
       content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
+      transcription,
+      identifiers,
       primary,
     };
   } else if (artworkRef != null) {
+    if (getChildByTagName(pictureNode, 'identifiers') != null) {
+      onError('et picture med artwork må ikke have egne <identifiers>.');
+    }
     return await get_artwork_picture(
       pictureNode,
       artworkRef,
@@ -216,6 +276,9 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       onError
     );
   } else if (portraitRef != null) {
+    if (getChildByTagName(pictureNode, 'identifiers') != null) {
+      onError('et picture med portrait må ikke have egne <identifiers>.');
+    }
     return await get_portrait_picture(
       pictureNode,
       portraitRef,
@@ -234,7 +297,7 @@ const getNoteType = note => {
 };
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
-const get_notes = (head, collected, context = {}) => {
+const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
   const notes = getChildByTagName(head, 'notes');
   if (notes == null) {
     return [];
@@ -253,7 +316,9 @@ const get_notes = (head, collected, context = {}) => {
       content_lang: lang,
       content_html: htmlToXml(
         replaceContextPlaceholders(safeGetInnerXML(note)),
-        collected
+        collected,
+        false,
+        { ...fragmentContext, blockType: 'note' },
       ),
     };
     if (unknownOriginalByPoetId != null) {
@@ -290,11 +355,16 @@ const extractDates = head => {
 
 export {
   extractTitle,
+  stripTitleNotes,
+  titleText,
+  countHeadingFootnotes,
+  effectiveTextTitles,
   extractSubtitles,
   extractDates,
   getNoteType,
   get_notes,
   get_pictures,
   get_picture,
+  get_local_picture_content,
   validate_picture_attrs,
 };

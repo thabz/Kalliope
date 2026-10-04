@@ -3,11 +3,14 @@
 <workhead>
   <title>Musarion</title>
   <year>1768</year>
+  <identifiers>
+    <openlibrary-work>OL1551785W</openlibrary-work>
+  </identifiers>
   <notes>
     <note>Tilføjet af Henrik Nielsen.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1768-1.jpg">Titelblad fra 1. udgave af <i>Musarion</i></picture>
+    <picture type="titlepage" src="1768-1.jpg"><transcription>Musarion, / oder / die Philosophie der Grazien. // Ein Gedicht, / in drey Büchern. // Leipzig, / bey Weidmanns Erben und Reich, 1768.</transcription></picture>
   </pictures>
 </workhead>
 <workbody>
@@ -16,8 +19,6 @@
 <head>
   <title>Widmungsvorrede an Chr. F. Weisse(von 1769)</title>
   <subtitle>An Herrn Creyßsteuereinnehmer Weisse in Leipzig</subtitle>
-  <toctitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</toctitle>
-  <indextitle>Widmungsvorrede an Chr. F. Weisse(von 1769)</indextitle>
 </head>
 <body>
 <prose>
@@ -95,7 +96,6 @@
 <head>
   <title>In einem Hain, der einer Wildniß glich</title>
   <toctitle>Erster Buch</toctitle>
-  <indextitle>In einem Hain, der einer Wildniß glich</indextitle>
   <firstline>In einem Hain, der einer Wildniß glich</firstline>
 </head>
 <body>
@@ -763,7 +763,6 @@ Die der Philosophie nicht allzu rühmlich war.
 <head>
   <title>Was, beym Anubis! konnte das</title>
   <toctitle>Zweyter Buch</toctitle>
-  <indextitle>Was, beym Anubis! konnte das</indextitle>
   <firstline>Was, beym Anubis! konnte das</firstline>
 </head>
 <body>
@@ -1237,7 +1236,6 @@ Und lachend wünschet man einander gute Nacht.
 <head>
   <title>Die Schöne lag auf ihrem Ruhebette</title>
   <toctitle>Dritter Buch</toctitle>
-  <indextitle>Die Schöne lag auf ihrem Ruhebette</indextitle>
   <firstline>Die Schöne lag auf ihrem Ruhebette</firstline>
 </head>
 <body>
@@ -1634,5 +1632,6 @@ Kurz, er verschwand, und ward nicht mehr gesehn.
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

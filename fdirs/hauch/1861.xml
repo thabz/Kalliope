@@ -3,9 +3,12 @@
 <workhead>
   <title>Lyriske Digte og Romancer</title>
   <year>1861</year>
+  <identifiers>
+    <openlibrary-work>OL11770395W</openlibrary-work>
+  </identifiers>
   <quality>korrektur1</quality>
   <pictures>
-    <picture type="titlepage" src="1861-p1.jpg">Titelbladet har ordlyden ,,Lyriske Digte / og / Romancer / af / C. Hauch. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1861.''</picture>
+    <picture type="titlepage" src="1861-p1.jpg"><transcription>Lyriske Digte / og / Romancer / af / C. Hauch. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1861.</transcription></picture>
   </pictures>
   <source facsimile="11530806012B_color" facsimile-pages-num="284" facsimile-pages-offset="10">C. Hauch: <i>Lyriske Digte og Romancer</i>, C. A. Reitzels Forlag, Kbh., 1861.</source>
 </workhead>
@@ -152,8 +155,8 @@ Dem vi aldrig svige.
 <text id="hauch2018032903">
 <head>
   <title>Sang for de Danske Studenter</title>
-  <toctitle>Sang for de Danske Studenter (paa Upsalatoget)</toctitle>
   <subtitle>paa Upsalatoget 1856</subtitle>
+  <toctitle>Sang for de Danske Studenter (paa Upsalatoget)</toctitle>
   <firstline>Naar Linden grønnes, og naar Gjøgen kommer</firstline>
   <source pages="6-8"/>
   <quality>korrektur1,kilde,side</quality>
@@ -257,8 +260,8 @@ Seent skal han glemmes i Kunsternes Hal.
 <text id="hauch2018032905">
 <head>
   <title>Til Hendes Majestæt Dronning Karoline Amalia</title>
-  <toctitle>Sang til Karoline Amalia</toctitle>
   <subtitle>Sungen ved en Fest paa Skydebanen</subtitle>
+  <toctitle>Sang til Karoline Amalia</toctitle>
   <firstline>Saalænge Danmarks Hjerte for Mildhed end kan slaae</firstline>
   <source pages="10-11"/>
   <quality>korrektur1,kilde,side</quality>
@@ -339,8 +342,8 @@ Der Din Løn Du finder.
 <text id="hauch2005052802">
 <head>
   <title>Ved Prof. Christian Lütkens Død</title>
-  <toctitle>Ved Prof. Chr. Lütkens Død</toctitle>
   <subtitle>1856</subtitle>
+  <toctitle>Ved Prof. Chr. Lütkens Død</toctitle>
   <firstline>Aand, som Intet kunde bøie</firstline>
   <!--  Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 248-249. -->
   <source pages="13-14"/>
@@ -389,8 +392,8 @@ Som en Sol i Aanders Land.
 <text id="hauch2005052803">
 <head>
   <title>Sang ved Naturforskermødet i Kjøbenhavn</title>
-  <toctitle>Sang ved Naturforskermødet i Kjøbenhavn 1860</toctitle>
   <subtitle>i Sommeren 1860</subtitle>
+  <toctitle>Sang ved Naturforskermødet i Kjøbenhavn 1860</toctitle>
   <firstline>Naturens ædle Dyrker begjerer ei den Krands</firstline>
   <!--  Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 250-251. -->
   <source pages="15-16"/>
@@ -1111,8 +1114,8 @@ Igjennem Dødens Nat til Livets Kilder!
 <text id="hauch2018032921">
 <head>
   <title>Et mystisk Digt</title>
-  <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
   <subtitle>Efter Novalis</subtitle>
+  <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
   <firstline>Naar Tal ikke meer og ei Figurer</firstline>
   <notes>
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
@@ -1141,8 +1144,8 @@ Det forvildede Væsen bort fra Jord.
 <text id="hauch2018032922">
 <head>
   <title>En lille Drengs Klage</title>
-  <toctitle>En lille Drengs Klage (efter Rückert)</toctitle>
   <subtitle>Efter Rückert</subtitle>
+  <toctitle>En lille Drengs Klage (efter Rückert)</toctitle>
   <firstline>Svalen har bedraget</firstline>
   <notes>
     <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121110"/>.</note>
@@ -1168,8 +1171,8 @@ Er jeg af Længsel død.
 <text id="hauch2018032923">
 <head>
   <title>Tillid til Gud</title>
-  <toctitle>Tillid til Gud (efter Paul Gerhard)</toctitle>
   <subtitle>Frit omarbejdet efter Paul Gerhard</subtitle>
+  <toctitle>Tillid til Gud (efter Paul Gerhard)</toctitle>
   <firstline>Befal hvad Du mon eie</firstline>
   <notes>
     <note>Fri gendigtning af Paul Gerhardts <xref type="translation" poem="gerhardt2026072601"/>.</note>
@@ -1428,7 +1431,7 @@ Saalænge Syndens Frugter modnes.
 </head>
 <body>
 <poetry>
-<nonum><small><center>Elskeren.</center></small></nonum>
+<nonum><center><small>Elskeren.</small></center></nonum>
 
   O Maane, svigt mig ei,
   Og lys mig paa min Vei!
@@ -1452,7 +1455,7 @@ Saalænge Syndens Frugter modnes.
   Skal vise Vei til den, for hvem han brænder.
 
 
-<nonum><small><center>Jægeren.</center></small></nonum>
+<nonum><center><small>Jægeren.</small></center></nonum>
 
   Til Jagten mig vinker
   Den bladløse Lund,
@@ -1466,7 +1469,7 @@ Saalænge Syndens Frugter modnes.
   At Jagten kan lykkes, mens Skyggerne flye.
 
 
-<nonum><small><center>Sømanden.</center></small></nonum>
+<nonum><center><small>Sømanden.</small></center></nonum>
 
   Maane, Du blev som et Blinkfyr fat
   Høit over Jordens Vande,
@@ -1478,7 +1481,7 @@ Saalænge Syndens Frugter modnes.
   Det visselig ei jeg begriber.
 
 
-<nonum><small><center>Den Melanecholske.</center></small></nonum>
+<nonum><center><small>Den Melanecholske.</small></center></nonum>
 
     Nu synke de sidste Blade
     I Høstens kolde Vind,
@@ -1506,7 +1509,7 @@ Saalænge Syndens Frugter modnes.
     Som i et blodigt Hav.
 
 
-<nonum><small><center>Den Vise med sin Lærling.</center></small></nonum>
+<nonum><center><small>Den Vise med sin Lærling.</small></center></nonum>
 
   Saavidt, min Søn, er nu vor Indsigt stegen,
   Skjøndt Maanens anden Halvdeel ei vi saae,
@@ -1533,7 +1536,7 @@ Saalænge Syndens Frugter modnes.
   Saavidt vor Viisdom stegen er til Dato.
 
 
-<nonum><small><center>Maanens Aand.</center></small></nonum>
+<nonum><center><small>Maanens Aand.</small></center></nonum>
 
 Fra Verdens første Tider jeg pløied Luftens Hav,
 Jeg smiled til Din Vugge, jeg smiler til Din Grav,
@@ -1590,9 +1593,9 @@ Vandalens Kølle knuste, hvad ikke han forstod,
 Den gamle Verden blegned og sank i sit Blod.
 
 
-<nonum><small><center>(De svundne Tiders Aander mødes.)</center></small></nonum>
+<nonum><center><small>(De svundne Tiders Aander mødes.)</small></center></nonum>
 
-<nonum><small><center>Den første.</center></small></nonum>
+<nonum><center><small>Den første.</small></center></nonum>
 
       Stemmer i Luften klage,
       Det er som i gamle Dage,
@@ -1609,7 +1612,7 @@ Den gamle Verden blegned og sank i sit Blod.
       End i de Ufødtes Hal.
 
 
-<nonum><small><center>Den anden.</center></small></nonum>
+<nonum><center><small>Den anden.</small></center></nonum>
 
       Atter Luftaanderne klage,
       En Verden skal atter forgaae,
@@ -1633,7 +1636,7 @@ Den gamle Verden blegned og sank i sit Blod.
       Graven sig om dem lukker.
 
 
-<nonum><small><center>Den tredie.</center></small></nonum>
+<nonum><center><small>Den tredie.</small></center></nonum>
 
       Afgrundene bæve,
       Skygger i Dybet svæve,
@@ -1647,9 +1650,9 @@ Den gamle Verden blegned og sank i sit Blod.
       Skal nu forgaae.
 
 
-<nonum><small><center>(Jordskjælv, Lynblink og Hvirvelvind.)</center></small></nonum>
+<nonum><center><small>(Jordskjælv, Lynblink og Hvirvelvind.)</small></center></nonum>
 
-<nonum><small><center>Jordens Aand bliver synlig.</center></small></nonum>
+<nonum><center><small>Jordens Aand bliver synlig.</small></center></nonum>
 
 Frygter ikke, jeg dem skjermer, jeg dem tager i min Arm,
 Og bevarer dem i Dybet, de skal hvile ved min Barm,
@@ -3903,6 +3906,7 @@ Den Herre, der holdt det hele Danmark i Haand.
   <title>Kongen besøger Tovelil og hendes Broder</title>
   <firstline>Kong Volmer jager den lette Raa</firstline>
   <source pages="152-155"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5584,7 +5588,6 @@ Han dæmped sin Stemme, han traadte Helvig nær,
 Saa hvisked de sammen ved Natlampens Skjær,
 Heel tidt de siden fandtes, naar Mørket faldt paa,
 Det lod som Konning Volmer slet Intet mon forstaae.
-
 
 Han syntes end mere dristig, end ellers han var vant,
 Tidt i de dunkle Skove ham Fuldmaanen fandt

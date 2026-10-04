@@ -10,7 +10,7 @@
     <!-- Udgivet 2. januar 1830. -->
   </notes>
   <pictures>
-    <picture type="titlepage" src="1830-p1.jpg">Titelbladet til <i>Digte</i> (1830). ,,Digte / af / H. C. Andersen // "Vergeßne Gedichte sind Neue." / Jean Paul. // Kjöbenhavn. / Trykt, paa Forfatterens Forlag, hos E. H. Robert. / 1830.''</picture>
+    <picture type="titlepage" src="1830-p1.jpg"><transcription>Digte / af / H. C. Andersen // "Vergeßne Gedichte sind Neue." / Jean Paul. // Kjöbenhavn. / Trykt, paa Forfatterens Forlag, hos E. H. Robert. / 1830.</transcription></picture>
   </pictures>
   <source facsimile="115308039429_color" facsimile-pages-num="152" facsimile-pages-offset="10">H.C. Andersen: <i>Digte</i>, Forfatterens Forlag, E. H. Robert, Kbh., 1830.</source>
   <quality>korrektur1</quality>
@@ -180,8 +180,6 @@ Det blive maa med denne Indskrift siret:
 <text id="andersen2002011301">
 <head>
   <title>Soldaten</title>
-  <toctitle>Soldaten</toctitle>
-  <indextitle>Soldaten</indextitle>
   <firstline>Med dæmpede Hvirvler Trommerne gaae</firstline>
   <notes>
     <note type="credits">Bidrag fra Sven Sørensen.</note>
@@ -226,7 +224,6 @@ De rysted paa Haanden af Smerte,
 </head>
 <body>
 <poetry>
-
         <nonum><small>Es giebt so bange Zeiten, </small></nonum>
         <nonum><small>Es giebt so trüben Muth, </small></nonum>
         <nonum><small>Wo alles sich vom weiten </small></nonum>
@@ -349,8 +346,8 @@ Kun Dødens Iis kan Hjertets Flamme dæmpe! —
 <text id="andersen2017110705">
 <head>
   <title>Phantasiestykke</title>
-  <toctitle>Phantasiestykke i min egen Maneer</toctitle>
   <subtitle>i min egen Maneer</subtitle>
+  <toctitle>Phantasiestykke i min egen Maneer</toctitle>
   <firstline>I Himlen sidde Guds Engle smaae</firstline>
   <source pages="12-13"/>
   <quality>korrektur1,kilde,side</quality>
@@ -464,8 +461,6 @@ Jeg kan for Graad ei meer paa Violinen spille,
 <text id="andersenandrea8">
 <head>
   <title>Vandrer-Liv</title>
-  <toctitle>Vandrer-Liv</toctitle>
-  <indextitle>Vandrer-Liv</indextitle>
   <firstline>Gaardhunden gjøer - dens Tænder ere saa skarpe</firstline>
   <source pages="16"/>
   <quality>korrektur1</quality>
@@ -493,8 +488,6 @@ Mens Manden bereder til Vandring.
 <text id="andersenandrea1">
 <head>
   <title>Det døende Barn</title>
-  <toctitle>Det døende Barn</toctitle>
-  <indextitle>Det døende Barn</indextitle>
   <firstline>Moder, jeg er træt, nu vil jeg sove</firstline>
   <notes>
     <note>Trykt første gang i <i>Kjøbenhavnsposten,</i> 1827 (BFN.#13)</note>
@@ -537,8 +530,6 @@ O, jeg er saa træt! - maa Øiet lukke -
 <text id="andersenandrea2">
 <head>
   <title>Graat Veir</title>
-  <toctitle>Graat Veir</toctitle>
-  <indextitle>Graat Veir</indextitle>
   <firstline>Den vaade Taage hænger dorsk over Mark og By</firstline>
   <notes>
     <note>Trykt i Kjøbenhavns-Posten, 1827.</note>
@@ -948,11 +939,11 @@ Vee, tretten Gange Vee de yngere Poeter!!!
 <text id="andersenandrea10">
 <head>
   <title>Aften-Landskab</title>
+  <firstline>See Solen gaaer ned i det deiligste Rødt</firstline>
   <notes>
     <note>Skrevet 1829.</note>
   </notes>
   <source pages="34-35"/>
-  <firstline>See Solen gaaer ned i det deiligste Rødt</firstline>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -999,9 +990,9 @@ O lad dem ha' Ro! -
 <text id="andersen2017110714">
 <head>
   <title>Cometen</title>
-  <toctitle>Cometen, et Sagn</toctitle>
-  <toctitle>Cometen, et Sagn</toctitle>
   <subtitle>Et Sagn</subtitle>
+  <toctitle>Cometen, et Sagn</toctitle>
+  <toctitle>Cometen, et Sagn</toctitle>
   <firstline>Da Sol stod op, og alle Nattens Terner</firstline>
   <source pages="36-40"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1240,8 +1231,6 @@ Hist hvor ingen Storme true.
 <text id="andersenandrea4">
 <head>
   <title>Recension</title>
-  <toctitle>Recension</toctitle>
-  <indextitle>Recension</indextitle>
   <firstline>Vel rødmer Land og Hav ret smukt i Aftensolens Flamme</firstline>
   <source pages="44"/>
   <quality>korrektur1</quality>
@@ -1275,6 +1264,7 @@ Høit skummer Bølgen, men for stærkt, den maa sig moderere -
     <note type="credits">Indtastet af Ejnar Nørager Pedersen.</note>
   </notes>
   <source pages="45"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1302,6 +1292,7 @@ Og synger bag Ruden sin Vise:
   <title>Ingenting og Noget</title>
   <firstline>Hør nu en Sang om Ingenting!</firstline>
   <source pages="46"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1713,12 +1704,12 @@ Mens Bølgen stumhvid vælter sig gjennem Øresund.
 
 <text id="andersen2017110724">
 <head>
-  <title>Den 1ste August 1825.</title>
+  <title>Den 1ste August 1825</title>
   <subtitle>(Til Kronprindsesse Caroline).</subtitle>
+  <firstline>Da første Gang jeg aabnede mit Øie</firstline>
   <dates>
     <event>1825-08-01</event>
   </dates>
-  <firstline>Da første Gang jeg aabnede mit Øie</firstline>
   <source pages="61-62"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1759,15 +1750,13 @@ For Gud jeg kun kan tolke Ønsket ret:
 <text id="andersen1830a0">
 <head>
   <title>Moderen med Barnet</title>
-  <toctitle>Moderen med Barnet</toctitle>
-  <indextitle>Moderen med Barnet</indextitle>
   <firstline>Hist, hvor Veien slaaer en Bugt</firstline>
   <notes>
     <note>Første gang trykt i Kjøbenhavns-Posten, 1829.</note>
   </notes>
   <source pages="63"/>
-  <quality>korrektur1</quality>
   <keywords>biedermeier</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1941,9 +1930,9 @@ Den blege Pige hist — hun er min Søster;
 <text id="andersen2017110728">
 <head>
   <title>Fastelavn</title>
+  <subtitle>(En Skizze)</subtitle>
   <toctitle>Fastelavn, en skizze</toctitle>
   <indextitle>Fastelavn, en skizze</indextitle>
-  <subtitle>(En Skizze)</subtitle>
   <firstline>Fastelavn idyllisk staaer med sin Gaas i Haanden</firstline>
   <source pages="69"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1967,8 +1956,6 @@ Mildt han hilser rundtomkring, Byens Damer neie.
 <text id="andersenandrea9">
 <head>
   <title>Martsviolerne</title>
-  <toctitle>Martsviolerne</toctitle>
-  <indextitle>Martsviolerne</indextitle>
   <firstline>Sig Himlen hvælver saa reen og klar</firstline>
   <source pages="70"/>
   <quality>korrektur1</quality>
@@ -2373,8 +2360,6 @@ Med nøgne Pusselanker i Bjergets Sale gaae.
     <line>(Et Træsnit)</line>
     <line>"Anch'io son pittore!" - Correggio.</line>
   </subtitle>
-  <toctitle>Aftenen</toctitle>
-  <indextitle>Aftenen</indextitle>
   <firstline>En Aften deilig, som i en Roman!</firstline>
   <notes>
     <note>Corregio skulle havde udtalt "Anch'io son pittore!" (jeg er også maler), da han så Raphaels <i>L'Estasi di santa Cecilia</i> (ca. 1516-17) i Bologna.</note>
@@ -2501,8 +2486,8 @@ For Seiren takke de Herren.
 </head>
 <body>
 <poetry>
-    <nonum><small><wrap>"Wenn die unbekannte Hand den letzten Pfeil an das Haupt des Menschen sendet, so bückt er vorher das Haupt, und der Pfeil hebt blos die Dornenkrone von Seinen Wunden ab."</wrap></small></nonum>
-    <nonum><small><right><w>Jean Paul</w></right></small></nonum>
+    <nonum><wrap><small>"Wenn die unbekannte Hand den letzten Pfeil an das Haupt des Menschen sendet, so bückt er vorher das Haupt, und der Pfeil hebt blos die Dornenkrone von Seinen Wunden ab."</small></wrap></nonum>
+    <nonum><right><small><w>Jean Paul</w></small></right></nonum>
 
 Hvad er det dog som lyser? det luttres for min Sands;
 Jeg føler Øiet briste i denne Straaleglands.
@@ -2558,8 +2543,6 @@ Og vi maae tjene som <w>Herrekort</w>.
 <text id="andersen1999041409">
 <head>
   <title>Oldtids huuslige Liv</title>
-  <toctitle>Oldtids huuslige Liv</toctitle>
-  <indextitle>Oldtids huuslige Liv</indextitle>
   <firstline>Ak, hvor romantisk smiler dog det Bjælkehuus i Dalen!</firstline>
   <notes>
     <note>Første gang trykt i <i>Kjøbenhavns-Posten</i>, 1829.</note>

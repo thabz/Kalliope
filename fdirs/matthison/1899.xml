@@ -40,6 +40,7 @@ hun som toccata gennem Livet haster
   <title>Børn</title>
   <firstline>Hver Barnesjæl er en sejlende Drøm</firstline>
   <source pages="6"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -373,13 +374,14 @@ og Skibet, det har Hast.
 <head>
   <title>De to Træer</title>
   <firstline>En Rimfrostdag ved Foraarstid</firstline>
+  <dates>
+    <event>1898-04-11</event>
+  </dates>
   <notes>
     <note>* Ved Kaptejn U. de Fine-Skibsteds Sølvbryllup den 11te April 1898.</note>
   </notes>
   <source pages="19-21"/>
-  <dates>
-    <event>1898-04-11</event>
-  </dates>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -529,6 +531,7 @@ og der falder Sne paa den sølede Gade.
   <title>Stille Timer</title>
   <firstline>Enhver, som en Aften silde</firstline>
   <source pages="26-27"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -566,6 +569,7 @@ der gled af vor Sjæl og forsvandt.
   <title>Tre smaa Digte</title>
   <firstline>Herude, hvor Luften aander saa sval</firstline>
   <source pages="28-29"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -936,6 +940,7 @@ tyde den Trolddom, der lød i din Sang.
   <title>Guds Godhed</title>
   <firstline>Gud er mod sine Børn saa god</firstline>
   <source pages="44"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -981,7 +986,7 @@ talløse Blomster.
 Mon allerede
 bagved Skyerne
 Vaaren blomstrer!
-<nonum><small><right>Kiyohara.</right></small></nonum>
+<nonum><right><small>Kiyohara.</small></right></nonum>
 
 
 <nonum><center>II.</center></nonum>
@@ -993,7 +998,7 @@ ses ej Vejen mer.
 Og som hvor det sner,
 mine unge Aar
 svinde mer og mer.
-<nonum><small><right>Ohochikauchi.</right></small></nonum>
+<nonum><right><small>Ohochikauchi.</small></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1037,10 +1042,11 @@ sig kun som Blomster om et Gravkors fletter.
   <title>Venusspejlet</title>
   <subtitle>(Fantasi over et Billede af Burne-Jones.)</subtitle>
   <firstline>Hesperien, hvis Haver er berømte</firstline>
-  <source pages="48-49"/>
   <pictures>
-    <picture src="matthison2019051543-p1.jpg">Sir Edward Coley Burne-Jones: <i>The Mirror of Venus</i>, 1898, olie på lærred, 120 × 200 cm, Gulbenkian Foundation, Lissabon. <a href="https://gulbenkian.pt/museu/en/works_museu/the-mirror-of-venus/">⌘</a></picture><!-- -->
+    <picture src="matthison2019051543-p1.jpg">Sir Edward Coley Burne-Jones: <i>The Mirror of Venus</i>, 1898, olie på lærred, 120 × 200 cm, Gulbenkian Foundation, Lissabon. <a href="https://gulbenkian.pt/museu/en/works_museu/the-mirror-of-venus/">⌘</a></picture>
+    <!-- -->
   </pictures>
+  <source pages="48-49"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

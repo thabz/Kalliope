@@ -1,10 +1,33 @@
 import {
+  buildPoetTimelineJson,
   compareNormalizedDate,
   normalizeTimelineDate,
   sortedTimeline,
 } from '../tools/build-static/timeline.js';
 
 describe('timeline helpers', () => {
+  it('renders baptism as baptism when no birth date is known', async () => {
+    const poet = {
+      id: 'test-baptized',
+      type: 'poet',
+      name: { firstname: 'Alberta', lastname: 'Eltzholtz' },
+      period: {
+        baptized: { date: '1846-05-24', place: null, inon: 'in' },
+        dead: { date: '1934-05-19', place: null, inon: 'in' },
+      },
+    };
+    const timeline = await buildPoetTimelineJson(poet, {
+      workids: new Map([[poet.id, []]]),
+      works: new Map(),
+      timeline: [],
+    });
+
+    expect(timeline.map(item => item.content_html[0][0])).toEqual([
+      'Eltzholtz døbt.',
+      'Eltzholtz død.',
+    ]);
+  });
+
   it('normalizes partial and approximate dates', () => {
     expect(normalizeTimelineDate('1818')).toBe('1818-01-01');
     expect(normalizeTimelineDate('1818-06')).toBe('1818-06-01');

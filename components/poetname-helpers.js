@@ -31,9 +31,10 @@ export function poetNameParts(
   }
 
   if (includePeriod && poet.period != null) {
-    const { born, dead } = poet.period;
+    const { born, baptized, dead } = poet.period;
+    const start = born ?? baptized;
     periodPart = formattedYearRange(
-      nvl(born, {}).date,
+      nvl(start, {}).date,
       nvl(dead, {}).date,
       lang
     );

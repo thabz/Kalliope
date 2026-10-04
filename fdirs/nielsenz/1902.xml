@@ -5,7 +5,7 @@
   <year>1902</year>
   <pictures>
     <picture type="frontpage" src="1902-p1.jpg">Forsiden til <i>Klokkespil</i> (1902).</picture>
-    <picture type="titlepage" src="1902-p2.jpg">Titelbladet til <i>Klokkespil</i> (1902). ,,Zakarias Nielsen / Klokkespil / Sange og Digte // Det Nordiske Forlag / Ernst Bojesen / Kjøbenhavn MCMII''.</picture>
+    <picture type="titlepage" src="1902-p2.jpg"><transcription>Zakarias Nielsen / Klokkespil / Sange og Digte // Det Nordiske Forlag / Ernst Bojesen / Kjøbenhavn MCMII</transcription></picture>
   </pictures>
   <source facsimile="11530808340B_color" facsimile-pages-num="172" facsimile-pages-offset="4">Zakarias Nielsen: <i>Klokkespil</i>, Det Nordiske Forlag, Kbh., 1902.</source>
 </workhead>
@@ -40,6 +40,7 @@
   <title>Til Stenslageren</title>
   <firstline>Du Stenen slaar, du gamle Mand</firstline>
   <source pages="9"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -704,8 +705,6 @@ Gud give, jeg skuede Glansen igen,
 <text id="nielsenz2017100719">
 <head>
   <title>Spænd ud dine Vinge</title>
-  <toctitle>Spænd ud dine Vinge</toctitle>
-  <indextitle>Spænd ud dine Vinge</indextitle>
   <firstline>Spænd ud din Vinge, min Tankes Ravn</firstline>
   <source pages="32-33"/>
   <quality>korrektur1,kilde,side</quality>
@@ -934,6 +933,7 @@ vaagn med ham i Søndagsfryd!
   <title>I Høibjærgene</title>
   <firstline>Jeg steg og steg mod Bjærgets Top</firstline>
   <source pages="41"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -957,7 +957,6 @@ Da standsed ved et Kors jeg brat
 nær Afgrundsrandens Arm
 - hvor blev jeg i den øde Nat
 med et da glad og varm!
-
 </poetry>
 </body>
 </text>
@@ -1074,6 +1073,7 @@ til et af dine mange Rum foroven!
   <title>Efter Sorgen</title>
   <firstline>Naar Sorgen, den dybe, er sagtnet hen</firstline>
   <source pages="46"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2280,8 +2280,8 @@ her synges ved Aanders Møde.
   <title>Stjerneglimt</title>
   <firstline>Jeg mindes grant fra Barndomstidens Nætter</firstline>
   <source pages="87"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2312,8 +2312,8 @@ en Gang skal alle rene Glimt jeg skue.
   <indextitle>Kultur og Kristendom</indextitle>
   <firstline>Kultur og Kristendom</firstline>
   <source pages="88"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2343,8 +2343,8 @@ ved Kristendom, der prækes af den lede.
   <title>Skolegang</title>
   <firstline>Hvis jeg i Livet selv fik Lov at vælge</firstline>
   <source pages="89"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2374,8 +2374,8 @@ da var den ingen Skole mer for Sjælen.
   <title>De Stakler!</title>
   <firstline>Helt ofte hed det i Kultur-Revuerne</firstline>
   <source pages="90"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2403,12 +2403,10 @@ fordi det var saa smaat med jeres Evner!
 <text id="nielsenz2017100759">
 <head>
   <title>Se, hvor de elsker -</title>
-  <toctitle>Se, hvor de elsker -</toctitle>
-  <indextitle>Se, hvor de elsker -</indextitle>
   <firstline>Ej Kristi Kirke den Triumf skal fejre</firstline>
   <source pages="91"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2438,8 +2436,8 @@ og Herrens Fjender gnider deres Hænder:
   <title>I Frikvarteret</title>
   <firstline>Se der paa Skolebakken hist, hvor Flokken</firstline>
   <source pages="92"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2471,8 +2469,8 @@ ak, før man ved — er Frikvarteret omme!
   <indextitle>Der udenfor</indextitle>
   <firstline>Der udenfor i Folkets travle Masse</firstline>
   <source pages="93"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2502,8 +2500,8 @@ som dine bedste kongelige Skatter.
   <title>En Reformator</title>
   <firstline>Han vejer Verden som en Dommer kyndig</firstline>
   <source pages="94"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2532,8 +2530,8 @@ den trækker sig desuden nok til Rette.''
   <indextitle>Jeg elske Livet vil</indextitle>
   <firstline>Af Jordens Børn de fleste er paa Kant</firstline>
   <source pages="95"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2563,8 +2561,8 @@ som Hyrdekongen elskede sit Mamre.
   <title>Undtagelseslov</title>
   <firstline>Bestandig maa indbankes i Forstanden</firstline>
   <source pages="96"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2594,8 +2592,8 @@ der siger: ,,Gælder ikke for Genier.''
   <title>Mejserne</title>
   <firstline>Igennem Skoven hviner Vind fra Øster</firstline>
   <source pages="97"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2625,8 +2623,8 @@ men Frostens Dødningpust til Jord dem strakte.
   <title>Kulbrænding</title>
   <firstline>En Nattevagt jeg ser ved Milen slingre</firstline>
   <source pages="98"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2656,8 +2654,8 @@ dit hele Liv med rolig, stille Gløden.
   <title>Kærlighed</title>
   <firstline>Hvad Lykke Kærlighed et Barn bereder</firstline>
   <source pages="99"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2687,8 +2685,8 @@ en Aftenlysning gennem Kirkeruder.
   <title>Ovenlys</title>
   <firstline>Jeg vandrer i ,,Salonen'' som en Drømmer</firstline>
   <source pages="100"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2720,8 +2718,8 @@ hvor staar der Glans igennem Perspektivet!
   <indextitle>Disse stakkels Hjerter</indextitle>
   <firstline>Du kender, hvordan Draaberne kan glide</firstline>
   <source pages="101"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2753,8 +2751,8 @@ livsmætte Arbejdsdyr foruden Sjæle
   <indextitle>I Toner, som en Gang</indextitle>
   <firstline>I Toner, som en Gang jeg hørte klinge</firstline>
   <source pages="102"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2829,6 +2827,7 @@ mod et ,,Vaagn'' i dagklar Morgen hist.
   <subtitle>Af ,,Den store Magt''.</subtitle>
   <firstline>Jeg rækker dig hver Nat min Haand</firstline>
   <source pages="105-106"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2869,9 +2868,9 @@ hver Nat, naar vore Hænder mødes.
 <text id="nielsenz2017100773">
 <head>
   <title>Vort Hjerte er en Sangbund fin -</title>
+  <subtitle>Af ,,Den store Magt''.</subtitle>
   <toctitle>Vort Hjerte er en Sangbund fin</toctitle>
   <indextitle>Vort Hjerte er en Sangbund fin</indextitle>
-  <subtitle>Af ,,Den store Magt''.</subtitle>
   <firstline>Vort Hjerte er en Sangbund fin</firstline>
   <source pages="107-108"/>
   <quality>korrektur1,kilde,side</quality>

@@ -3,6 +3,9 @@
 <workhead>
   <title>Ungdom i Digt og Sang</title>
   <year>1879</year>
+  <identifiers>
+    <openlibrary-work>OL3078342W</openlibrary-work>
+  </identifiers>
   <notes>
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
@@ -18,12 +21,10 @@
 <text id="drachmann201902231">
 <head>
   <title>Til Bjørnstjerne Bjørnson</title>
-  <toctitle>Til Bjørnstjerne Bjørnson</toctitle>
-  <indextitle>Til Bjørnstjerne Bjørnson</indextitle>
   <firstline>Det er, saa tilpas, et Decennium siden</firstline>
   <source pages="IX-XVI" facsimile-pages="15-22"/>
-  <quality>korrektur1,kilde</quality>
   <keywords>bjoernson</keywords>
+  <quality>korrektur1,kilde</quality>
 </head>
 <body>
 <poetry>
@@ -205,8 +206,6 @@ Der er Kræfter endnu i Norden!
 <head>
   <title>Ungdom</title>
   <subtitle>Den gamle Mesters Syn</subtitle>
-  <toctitle>Ungdom</toctitle>
-  <indextitle>Ungdom</indextitle>
   <firstline>Hed som en Ovn</firstline>
   <!-- Ikke en variant af drachmann1999111028: Forskellige tekster med fælles indledning. -->
   <source pages="3-12"/>
@@ -454,8 +453,6 @@ I kalder dem Dukker, men det er Mænd!«
 <text id="drachmann201902241">
 <head>
   <title>Islandsfarten før og siden</title>
-  <toctitle>Islandsfarten før og siden</toctitle>
-  <indextitle>Islandsfarten før og siden</indextitle>
   <firstline>Hvad er det for en modig Flok</firstline>
   <!-- Ikke en variant af drachmann1999050304: Forskellige lejlighedsdigte med fælles indledning. -->
   <source pages="13-19"/>
@@ -1343,7 +1340,7 @@ han smiler. Det er, som paa Forhaand man fatter
 <nonum><small>der meldes med Trommer og med Trompeter?</small></nonum>
 <nonum><small>Selv det ej kommer, men kun dets By</small></nonum>
 <nonum><small>og Masser af smaa Profeter.</small></nonum>
-<nonum><small><right>„Fædrelandet'' d. 20. Oktbr. 1876.</right></small></nonum>
+<nonum><right><small>„Fædrelandet'' d. 20. Oktbr. 1876.</small></right></nonum>
 
 Den løvede Skov er bleven lidt tynd,
 og Kappen er luvslidt, og Stakkelen fryser;
@@ -2419,7 +2416,7 @@ Men op fra Bunden steg, fra Kravlets Bolig,
 </head>
 <body>
 <poetry>
-<nonum><small><right>Den 4. Novbr. 1878.</right></small></nonum>
+<nonum><right><small>Den 4. Novbr. 1878.</small></right></nonum>
 
 Nej, jeg var ikke med til at skrive
 Hilsen og Sang ham iaftes ved Bordet;
@@ -2515,7 +2512,7 @@ Ilden og Døden.
 <body>
 <poetry>
 <nonum><center><b>Den sorte Skole og Livets Skole.</b></center></nonum>
-<nonum><small><center>Kantate <i>post festum</i>.</center></small></nonum>
+<nonum><center><small>Kantate <i>post festum</i>.</small></center></nonum>
 
 <nonum><center><i>Første Afdeling.</i></center></nonum>
 
@@ -3054,8 +3051,6 @@ i Hast at faa Ende paa Tiden.
 <text id="drachmann1999111028">
 <head>
   <title>Androkles og Løven</title>
-  <toctitle>Androkles og Løven</toctitle>
-  <indextitle>Androkles og Løven</indextitle>
   <firstline>Hed som en Ovn</firstline>
   <!-- Ikke en variant af drachmann201902232: Forskellige tekster med fælles indledning. -->
   <quality>korrektur1,kilde</quality>
@@ -3410,9 +3405,9 @@ Løven, Androkles' Ven!
 <text id="drachmann2019101715">
 <head>
   <title>,,Den syge Mand''</title>
+  <subtitle>Paris. Febr. 77.</subtitle>
   <indextitle>Den syge Mand</indextitle>
   <linktitle>Den syge Mand</linktitle>
-  <subtitle>Paris. Febr. 77.</subtitle>
   <firstline>Hør Skovlenes Slag</firstline>
   <source pages="128-134"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3945,8 +3940,8 @@ Jeg har Lodskud; Grunden er pejlet!
 </head>
 <body>
 <poetry>
-<nonum><small><right>„Hvor er I henne, store og smaa</right></small></nonum>
-<nonum><small><right>I Havets stærke Svaner . . .</right></small></nonum>
+<nonum><right><small>„Hvor er I henne, store og smaa</small></right></nonum>
+<nonum><right><small>I Havets stærke Svaner . . .</small></right></nonum>
 
 Smykt som til Fest — og rustet til Slag;
 fra den svimlende Hytte et Danebrogsflag,
@@ -5952,7 +5947,7 @@ Og saa synger »Brødrene« Amen!
 </head>
 <body>
 <poetry>
-<nonum><small><right>Wien. Maj 1873.</right></small></nonum>
+<nonum><right><small>Wien. Maj 1873.</small></right></nonum>
 
 Bag Wurstelprateren, Dyrehavsbakken,
 der ser Du en Mand med Flitter paa Jakken,

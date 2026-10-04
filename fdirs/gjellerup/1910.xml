@@ -8,10 +8,13 @@
     <note>I Kalliopes udgave af <i>Fra Vaar til Høst</i> medtages kun digte, som ikke har været trykt i tidligere samlinger.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1910-p1.jpg">Titelbladet til <i>Fra Vaar til Høst</i> (1910). ,,Karl Gjellerup / Fra Vaar til Høst // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX''.</picture>
+    <picture type="titlepage" src="1910-p1.jpg"><transcription>Karl Gjellerup / Fra Vaar til Høst // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCX</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122143076005763" facsimile="115308056597_color" facsimile-pages-num="138" facsimile-pages-offset="4">Karl Gjellerup: <i>Fra Vaar til Høst</i>, Gyldendalske Boghandel, Kbh., 1910.</source>
   <year>1910</year>
+  <identifiers>
+    <openlibrary-work>OL6048876W</openlibrary-work>
+  </identifiers>
 </workhead>
 <workbody>
 
@@ -1217,13 +1220,13 @@ Ondskab om Trinet af dit Monument.
 <text id="gjellerup2017120608">
 <head>
   <title>Niels W. Gade</title>
-  <toctitle>N. W. Gade</toctitle>
   <subtitle>Prolog ved Mindefesten i Det kongelige Theater d. 7. Januar 1891 (efter Ossian-Ouverturen)</subtitle>
+  <toctitle>N. W. Gade</toctitle>
   <firstline>Vel rørte sig til Bifald eders Hænder</firstline>
-  <source pages="69-73"/>
   <dates>
     <performed>1891-01-07</performed>
   </dates>
+  <source pages="69-73"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2005,6 +2008,7 @@ til dit nye Hjem i din gamle By!
   <toctitle><num>III.</num>Fangen</toctitle>
   <firstline>Saa gaar jeg atter i Havens Gange</firstline>
   <source pages="111"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2151,8 +2155,8 @@ er brave Folk. —
 <text id="gjellerup2017120618">
 <head>
   <title>Gjæsten</title>
-  <toctitle><num>V.</num>Gjæsten</toctitle>
   <subtitle>Fantasi over et Fragment. —</subtitle>
+  <toctitle><num>V.</num>Gjæsten</toctitle>
   <firstline>Blæsten er tung af tøet Sne</firstline>
   <source pages="115-122"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2514,6 +2518,7 @@ udhviler i den evig-mørke Krybt ...
   <title>Efterskrift</title>
   <firstline>Ti Aar — saa ubegribeligt det synes!</firstline>
   <source pages="127-128"/>
+  <keywords>blankvers</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

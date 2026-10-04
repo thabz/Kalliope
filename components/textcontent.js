@@ -276,6 +276,14 @@ const renderXmlString = (inputString) => {
       //        );
       case 'metrik':
         return handle_metrik(node.textContent);
+      case 'margin':
+        return (
+          <span className="margin-anchor" key={keySeq++}>
+            <span className="margin-note" role="note">
+              {handle_nodes(node.childNodes)}
+            </span>
+          </span>
+        );
       case 'hr':
         const double = node.getAttribute('class') || 'solid';
         const width = Math.min(node.getAttribute('width') * 10, 100);
@@ -519,7 +527,7 @@ const TextContent = (props) => {
   }
 
   let smallClassName = '';
-  if (options.fontSize === 'small') {
+  if (type === 'quote' || options.fontSize === 'small') {
     smallClassName = ' small';
   }
 
@@ -554,11 +562,12 @@ const TextContent = (props) => {
           content: attr(data-num);
           color: black;
           margin-right: 1em;
-          width: 1.5em;
+          width: 3.5em;
+          white-space: nowrap;
           font-size: 1em;
           text-align: right;
           display: inline-block;
-          margin-left: -2.5em;
+          margin-left: -4.5em;
           vertical-align: top;
           margin-top: 0;
         }
@@ -566,7 +575,19 @@ const TextContent = (props) => {
           margin-left: 1.5em;
         }
         :global(.prose-paragraph) {
+          position: relative;
           hyphens: auto;
+        }
+        :global(.prose-paragraph .margin-note) {
+          position: absolute;
+          left: calc(100% + 1.25rem);
+          top: auto;
+          width: 10rem;
+          color: black;
+          font-size: 0.9em;
+          line-height: 1.2;
+          text-align: left;
+          hyphens: none;
         }
         :global(.block.small) {
           font-size: 1rem;
@@ -642,10 +663,21 @@ const TextContent = (props) => {
           padding-left: 10px;
         }
         :global(.blockquote) {
-          /*width: calc(100% - ${options.marginLeft} - ${options.marginRight});*/
-          margin-left: ${options.marginLeft};
-          margin-right: ${options.marginRight};
-          font-size: ${options.fontSize};
+          display: block;
+          width: fit-content;
+          max-width: ${options.maxWidth ?? '70%'};
+          margin-inline-start: auto;
+          margin-inline-end: 0;
+        }
+        @media (max-width: 760px) {
+          :global(.prose-paragraph .margin-note) {
+            position: static;
+            display: block;
+            width: auto;
+            margin: 0.35rem 0;
+            font-size: 0.9em;
+            line-height: 1.2;
+          }
         }
       `}</style>
     </div>

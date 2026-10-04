@@ -4,7 +4,7 @@
   <title>Muld og Malm</title>
   <year>1909</year>
   <pictures>
-    <picture type="titlepage" src="1909-p1.jpg">Titelbladet til <i>Muld og Malm</i> (1909). ,,Jeppe Aakjær / Muld og Malm / En Digtsamling // Gyldendalske Boghandel / Nordisk Forlag / København 1909 Kristiania''.</picture>
+    <picture type="titlepage" src="1909-p1.jpg"><transcription>Jeppe Aakjær / Muld og Malm / En Digtsamling // Gyldendalske Boghandel / Nordisk Forlag / København 1909 Kristiania</transcription></picture>
   </pictures>
   <source facsimile="115308037427_color" facsimile-pages-num="202" facsimile-pages-offset="14">Jeppe Aakjær: <i>Muld og Malm</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1909.</source>
 </workhead>
@@ -1522,7 +1522,7 @@ og han svarer dig med Stolthed:
   <title>Paa Lochlea</title>
   <firstline>Her har han gaaet den ranke Mand</firstline>
   <source pages="77-78"/>
-  <keywords>burns</keywords>
+  <keywords>burns,balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1673,10 +1673,10 @@ det var den Løn den fik, Gut!
 <head>
   <title>Skjøn Nelly</title>
   <firstline>Paa Blomsterlejet ved en Aa</firstline>
-  <source pages="85-86"/>
   <notes>
     <note>Oversættelse af Robert Burns' <xref type="translation" poem="burns2018080202"/>.</note>
   </notes>
+  <source pages="85-86"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1992,10 +1992,10 @@ og hisset hos dit Englekuld
 <head>
   <title>Trods alt det</title>
   <firstline>Om én af ærlig Fattigdom</firstline>
-  <source pages="99-101"/>
   <notes>
     <note>Gendigtning af Robert Burns: <xref type="translation" poem="burns2018080201"/>.</note>
   </notes>
+  <source pages="99-101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2450,6 +2450,7 @@ Blandt Ting af Værdier en Hjerneskal brast.
   <subtitle>frit efter Burns</subtitle>
   <firstline>Et godt Glas Vin, en solfyldt Eng</firstline>
   <source pages="123-124"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2696,8 +2697,8 @@ der glaadle kam’ og laangle gor,
 <text id="aakjaer2018021438">
 <head>
   <title>H. H. Fejlberg</title>
-  <toctitle>H. F. Fejlberg</toctitle>
   <subtitle>Den jydske Forsknings Oldermand</subtitle>
+  <toctitle>H. F. Fejlberg</toctitle>
   <firstline>Hwor er æ skjon, te de er te</firstline>
   <notes>
     <note><i>Biel'</i>, flittige; <i>æsler ve’</i>, arbejde uden Stands; <i>stredde</i>, dygtig, fast paa Benene; <i>stywle Bied</i>, et godt Stykke Dagværk; <i>æ Awr</i>, Ageren; <i>Omfer</i>, Omfure, én Fure op og én ned til modsat Side; <i>Kraag’</i>, Krage; <i>taangle</i>, tungt, tungtladende; <i>skjarer</i>, glimter svagt; <i>Ru’e</i>, Rude; <i>Fu’e</i>, Fure.</note>
@@ -2845,7 +2846,6 @@ i denne Krans af disblaa Banker.
 <text id="aakjaer2018021441">
 <head>
   <title>Paa en Mindesten</title>
-  <toctitle>Paa en Mindesten</toctitle>
   <subtitle>over mine Forældre</subtitle>
   <firstline>Her vendte Far sin Plov, aa, saa mangen, mangen Gan</firstline>
   <source pages="142"/>
@@ -2953,11 +2953,11 @@ for tow ka’ nevves, og tre ka’ snakk’,
 </head>
 <body>
 <poetry>
-<nonum><small><center>Det er Midnat. En Snes Hyrdedrenge staar omkring Højen med tændte Fakler i Hænderne og raaber i Takt:</center></small></nonum>
+<nonum><center><small>Det er Midnat. En Snes Hyrdedrenge staar omkring Højen med tændte Fakler i Hænderne og raaber i Takt:</small></center></nonum>
 
     Bjergmand, Bjergmand, er du derind’,
     kom ud med di’ sytten Igipind’!
-<nonum><small><center>En gammel sidskjægget <i>Bjergmand</i> skyder sig i Vejret fra Højens Top:</center></small></nonum>
+<nonum><center><small>En gammel sidskjægget <i>Bjergmand</i> skyder sig i Vejret fra Højens Top:</small></center></nonum>
 Aa, ti dog med den Skrigen, dumme Drenge!
 Hvi raaber I mig gamle Trold af Senge,
 nu Fæet gumler trygt i Bondens Gaard,
@@ -3366,12 +3366,13 @@ end her, hvor vi bævende vandre.
   <title>Hjemme</title>
   <firstline>Der er saa stille i Huset</firstline>
   <source pages="167-169"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Det lærte en Sanger paa Modgangens Sø:</right></small></nonum>
-<nonum><small><right>Der skal <i>to</i> til at leve, kun én til at dø.</right></small></nonum>
+<nonum><right><small>Det lærte en Sanger paa Modgangens Sø:</small></right></nonum>
+<nonum><right><small>Der skal <i>to</i> til at leve, kun én til at dø.</small></right></nonum>
 
 Der er saa stille i Huset,
 for nys gik Natten forbi;
@@ -3426,6 +3427,7 @@ Jeg svarer: «Ske som <i>du</i> vil!»
   <title>Jeg gik mig ud</title>
   <firstline>Jeg gik mig ud at vandre</firstline>
   <source pages="170-171"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

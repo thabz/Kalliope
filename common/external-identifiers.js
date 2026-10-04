@@ -73,6 +73,14 @@ const externalIdentifierSources = [
     (value) => `https://viaf.org/viaf/${encodeURIComponent(value)}/`,
   ),
   source(
+    'gnd',
+    'authority',
+    30,
+    'GND',
+    'GND',
+    (value) => `https://d-nb.info/gnd/${encodeURIComponent(value)}`,
+  ),
+  source(
     'lex-dk',
     'reference',
     100,

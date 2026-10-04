@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="shirley" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>James</firstname>
+    <lastname>Shirley</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1596-09-18</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1666-10-29</date>
+      <place>London</place>
+    </dead>
+  </period>
+  <literary-periods>gb-restauration-og-barok</literary-periods>
+  <works>1833</works>
+  <identifiers>
+    <wikidata>Q1349914</wikidata>
+    <wikipedia-da>James Shirley</wikipedia-da>
+    <wikipedia-en>James Shirley</wikipedia-en>
+    <wikipedia-fr>James Shirley</wikipedia-fr>
+    <wikipedia-de>James Shirley</wikipedia-de>
+    <viaf>22157363</viaf>
+    <gnd>11879700X</gnd>
+    <gutenberg-org>43047</gutenberg-org>
+  </identifiers>
+</person>

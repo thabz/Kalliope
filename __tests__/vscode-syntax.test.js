@@ -20,3 +20,17 @@ describe('VS Code Kalliope text-format syntax', () => {
     );
   });
 });
+
+describe('VS Code Kalliope facsimile layout', () => {
+  const extensionSource = fs.readFileSync(
+    'tools/vscode-kalliope-syntax/extension.js',
+    'utf8',
+  );
+
+  it('fits the complete facsimile page inside the available panel height', () => {
+    expect(extensionSource).toContain('grid-template-rows: auto minmax(0, 1fr)');
+    expect(extensionSource).toContain(
+      'height: 100%; min-height: 0; object-fit: contain',
+    );
+  });
+});

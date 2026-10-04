@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="esmannv" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Vilhelm</firstname>
+    <lastname>Esmann</lastname>
+    <fullname>Vilhelm August Esmann</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1831-02-23</date>
+    </born>
+    <dead>
+      <date>1901-01-15</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q5719256</wikidata>
+    <runeberg-org>esmanvil</runeberg-org>
+  </identifiers>
+</person>

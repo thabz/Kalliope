@@ -19,10 +19,10 @@
   <title>Til Sophus Michaëlis</title>
   <subtitle>29. Oktbr. 1895.</subtitle>
   <firstline>Nu løftes Havet - Floden sætter ind</firstline>
-  <source pages="3"/>
   <dates>
     <written>1895-10-29</written>
   </dates>
+  <source pages="3"/>
   <keywords>michaelis,sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -80,6 +80,7 @@ og du selv var Landets Herre, du var ene, du var Mand.
   <title>Melodi</title>
   <firstline>Den, som kan synge</firstline>
   <source pages="6"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -203,6 +204,7 @@ Vandfald fra Tidernes Morgen,
   <linktitle>Digterfuglenes Hilsen</linktitle>
   <firstline>Vi er Fuglene paa Havet</firstline>
   <source pages="11-12"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -241,6 +243,7 @@ du var Hav og Bølge selv,
   <subtitle>1846-1906.</subtitle>
   <firstline>Trofast og ren i al din Færd</firstline>
   <source pages="13-14"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -289,7 +292,7 @@ thi du var tro og ren!
 <poetry>
 <nonum><center>1.</center></nonum>
 <nonum><center><i>Til Fru Oda Nielsen</i></center></nonum>
-<nonum><small><center>(med et Fotografi af en lille kinesisk Skuespillerinde).</center></small></nonum>
+<nonum><center><small>(med et Fotografi af en lille kinesisk Skuespillerinde).</small></center></nonum>
 
 En Skuespillerinde, der <i>er</i> Barn,
 kan kun i barnlig Kunst os ret fornøje,
@@ -317,6 +320,7 @@ den blomstred i hans Hjem.
   <title>Strøtanke</title>
   <firstline>Og hvis du en Uret har lidt</firstline>
   <source pages="17"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -339,6 +343,7 @@ med Foden i Bølgen træder.
   <title>Refleksioner</title>
   <firstline>Jeg véd det vel, at mange ædle Venner</firstline>
   <source pages="18"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -429,7 +434,6 @@ og selv maa jeg tjene for dagligt Brød.
 
 Hvad er den Verden, hvad er det Liv,
 jeg ender som Jomfru Tidsfordriv.
-
 
 <nonum><center>2.</center></nonum>
     O, gid du var mit Hjertebarn,
@@ -684,12 +688,12 @@ om Kulissen - Skoven faldt.
 <text id="matthison2019051420">
 <head>
   <title>Vandspringet</title>
-  <toctitle>F. I. Tjutsjèv: Vandspringet</toctitle>
   <subtitle>
     <line>af</line>
     <line>F. I. Tjutsjev</line>
     <line>russisk Digter 1803-1873.</line>
   </subtitle>
+  <toctitle>F. I. Tjutsjèv: Vandspringet</toctitle>
   <firstline>Se her en Søjle, der tillive bragt</firstline>
   <source pages="35"/>
   <quality>korrektur1,kilde,side</quality>
@@ -720,12 +724,12 @@ og løser i fortyndet Røg dig op.
 <text id="matthison2019051421">
 <head>
   <title>Ved mit Bæger</title>
-  <toctitle>Li-tai-pé: Ved mit Bæger</toctitle>
   <subtitle>
     <line>af</line>
     <line>Li-tai-pé</line>
     <line>kinesisk Digter 699-762.</line>
   </subtitle>
+  <toctitle>Li-tai-pé: Ved mit Bæger</toctitle>
   <firstline>En blomstersmykket Hytte</firstline>
   <source pages="36-37"/>
   <quality>korrektur1,kilde,side</quality>
@@ -770,12 +774,12 @@ i Himlens høje Blaa.
 <text id="matthison2019051422">
 <head>
   <title>Legende</title>
-  <toctitle>Anast. Grün: Legende</toctitle>
   <subtitle>
     <line>af</line>
     <line>Anastasius Grün</line>
     <line>østerrigsk Digter 1806-1876.</line>
   </subtitle>
+  <toctitle>Anast. Grün: Legende</toctitle>
   <firstline>Højt paa en Alpekæde</firstline>
   <notes>
     <note>Gendigtning af Anastasius Grün: <xref type="translation" poem="gruen2019051301"/>.</note>
@@ -861,17 +865,18 @@ og Blomster over mig snét.
 <text id="matthison2019051423">
 <head>
   <title>Den tunge Aften</title>
-  <toctitle>Nic. Lenau: Den tunge aften</toctitle>
   <subtitle>
     <line>af</line>
     <line>N. Lenau</line>
     <line>østerrigsk Digter 1802-1850.</line>
   </subtitle>
+  <toctitle>Nic. Lenau: Den tunge aften</toctitle>
   <firstline>De dunkle Skyers Dække</firstline>
   <notes>
     <note>Gendigtning af Anastasius Grün: <xref type="translation" poem="lenau2019051403"/>.</note>
   </notes>
   <source pages="42"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -897,11 +902,11 @@ en snar, barmhjertig Død.
 <text id="matthison2019051424">
 <head>
   <title>Ved den Elskedes Baare</title>
-  <toctitle>— Ved den Elskedes Baare</toctitle>
   <subtitle>
     <line>En Ode af</line>
     <line>N. Lenau.</line>
   </subtitle>
+  <toctitle>— Ved den Elskedes Baare</toctitle>
   <firstline>Bleg og for stedse stum, for stedse! hviler du</firstline>
   <notes>
     <note>Gendigtning af Nikolaus Lenau: <xref type="translation" poem="lenau2019051402"/>.</note>
@@ -947,16 +952,17 @@ Var jeg, fik jeg som Svar paa min Smerte din
 <text id="matthison2019051425">
 <head>
   <title>Til Tungsindet</title>
-  <toctitle>— Til Tungsindet</toctitle>
   <subtitle>
     <line>af</line>
     <line>N. Lenau.</line>
   </subtitle>
+  <toctitle>— Til Tungsindet</toctitle>
   <firstline>Aldrig fra min Vej du viger</firstline>
   <notes>
     <note>Gendigtning af Nikolaus Lenau: <xref type="translation" poem="lenau2019051401"/>.</note>
   </notes>
   <source pages="45"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -982,11 +988,11 @@ søger ved din Barm mit Hjem.
 <text id="matthison2019051426">
 <head>
   <title>En Høstaften</title>
-  <toctitle>— En Høstaften</toctitle>
   <subtitle>
     <line>af</line>
     <line>N. Lenau.</line>
   </subtitle>
+  <toctitle>— En Høstaften</toctitle>
   <firstline>Vinden vifter saa koldt, af Grenene kapper den Løvet</firstline>
   <notes>
     <note>Gendigtning af Nikolaus Lenau: <xref type="translation" poem="lenau2019051404"/>.</note>

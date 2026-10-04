@@ -1,0 +1,1001 @@
+import fs from 'fs';
+import {
+  auditPageInventory,
+  buildPageInventory,
+  normalizeLine,
+  visibleLines,
+} from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
+import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
+import {
+  updateFinding,
+  validateFindings,
+} from '../.agents/skills/pdf-to-kalliope/scripts/findings-register.js';
+import {
+  createCheckpoint,
+  validateErrataInventory,
+  validateReviewerRanges,
+  validateVisualStructureReviews,
+  validateWholeWorkCandidates,
+  verifyCheckpoint,
+} from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
+
+const roerdamOcr = JSON.parse(fs.readFileSync(
+  new URL('./fixtures/roerdam-1906-ocr.json', import.meta.url),
+  'utf8',
+));
+
+describe('rettelsesark i sideinventaret', () => {
+  const xml = '<kalliopework><workhead><errata status="applied" pages="[392]" facsimile-pages="415"/></workhead></kalliopework>';
+
+  it('requires every discovered sheet to be registered', () => {
+    const rows = [{ page_type: 'errata', facsimile: '414.jpg' }];
+    expect(validateErrataInventory(rows, '<kalliopework><workhead><errata status="none"/></workhead></kalliopework>'))
+      .toEqual(expect.arrayContaining([expect.stringContaining('mangler indført')]));
+  });
+
+  it('requires every applied sheet to appear in the reviewed inventory', () => {
+    expect(validateErrataInventory([], xml))
+      .toEqual(expect.arrayContaining([expect.stringContaining('mangler i sideinventaret')]));
+    expect(validateErrataInventory([{ page_type: 'errata', facsimile: '414.jpg' }], xml))
+      .toEqual([]);
+  });
+
+  it('requires both pages of a two-page correction sheet', () => {
+    const twoPages = xml.replace('facsimile-pages="415"', 'facsimile-pages="415-416"');
+    expect(validateErrataInventory([{ page_type: 'errata', facsimile: '414.jpg' }], twoPages))
+      .toEqual(expect.arrayContaining([expect.stringContaining('facsimileside 416 mangler')]));
+  });
+});
+
+const workXml = `<?xml version="1.0"?>
+<kalliopework id="1900" author="test">
+<workhead><title>Test</title><year>1900</year><pagebreaks/><source facsimile="test" facsimile-pages-num="20" facsimile-pages-offset="1">Test</source></workhead>
+<workbody>
+<text id="test1900010101">
+<head><title>Digt</title><source pages="10-12"/></head>
+<body><poetry>Første linje
+Sidste paa ti
+<pb n="11" facs="011.jpg"/>Første paa elleve
+Et spl<pb n="12" facs="012.jpg"/>ittet Ord
+Sidste linje</poetry></body>
+</text>
+</workbody>
+</kalliopework>`;
+
+describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('keeps body anchors stable when notes change', () => {
+    const cases = [
+      ['Første<note>gammel</note> linje', 'Første linje'],
+      ['<footnote>gammel</footnote>Første linje', 'Første linje'],
+      ['Sidste linje<footnote>gammel</footnote>', 'Sidste linje'],
+      ['Første<note>flere\nlinjer<pb n="2" facs="002.jpg"/> i noten</note> linje', 'Første linje'],
+    ];
+    cases.forEach(([input, expected]) => {
+      expect(visibleLines(input)).toEqual([expected]);
+      expect(visibleLines(input.replace('gammel', 'ny tekst'))).toEqual([expected]);
+    });
+    expect(normalizeLine('Første<note>indsat</note> linje')).toBe('Første linje');
+  });
+
+  it('keeps reviewed page anchors when a footnote is added', () => {
+    const changedXml = workXml.replace('Første linje',
+      'Første<footnote>redaktionel rettelse</footnote> linje');
+    expect(buildPageInventory({ xml: changedXml })[0].first_line).toBe('Første linje');
+    const inventory = buildPageInventory({ xml: workXml }).map(row => ({
+      ...row, status: 'reviewed', reviewer: 'worker-2', disposition: 'Gennemgået',
+      typography_status: 'reviewed', typography_disposition: 'Gennemgået',
+    }));
+    expect(auditPageInventory({ xml: changedXml, inventory }).issues).toEqual([]);
+  });
+
+  it('removes note text across a page break without inventing body lines', () => {
+    const xml = workXml.replace(
+      '<pb n="11" facs="011.jpg"/>',
+      '<footnote>første notelinje\n<pb n="11" facs="011.jpg"/>anden notelinje</footnote>',
+    );
+    const [firstPage, secondPage] = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(firstPage.last_line).toBe('Sidste paa ti');
+    expect(secondPage.first_line).toBe('Første paa elleve');
+  });
+  it('builds one side-aware JSON row per printed page', () => {
+    expect(buildPageInventory({ xml: workXml })).toEqual([
+      expect.objectContaining({
+        text_id: 'test1900010101',
+        printed_page: '10',
+        facsimile: '010.jpg',
+        first_line: 'Første linje',
+        last_line: 'Sidste paa ti',
+        expected_transition: 'text-start',
+      }),
+      expect.objectContaining({
+        printed_page: '11',
+        facsimile: '011.jpg',
+        first_line: 'Første paa elleve',
+        last_line: 'Et spl',
+        expected_transition: 'pb',
+      }),
+      expect.objectContaining({
+        printed_page: '12',
+        facsimile: '012.jpg',
+        first_line: 'ittet Ord',
+        expected_transition: 'pb-within-word',
+      }),
+    ]);
+  });
+
+  it('fails on uncovered pages and semantic anchor mismatches', () => {
+    const inventory = buildPageInventory({ xml: workXml }).map(row => ({
+      ...row,
+      status: 'reviewed',
+      reviewer: 'worker-2',
+      disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Kursiv og spatiering kontrolleret.',
+    }));
+    inventory[1].first_line = 'Forkert sidebegyndelse';
+    inventory[2].status = 'pending';
+
+    expect(auditPageInventory({ xml: workXml, inventory }).issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ rule: 'mismatched-first-line', key: 'test1900010101:11' }),
+        expect.objectContaining({ rule: 'page-not-reviewed', key: 'test1900010101:12' }),
+      ]),
+    );
+  });
+
+  it('inventories pages that are absent because XML is missing page breaks', () => {
+    const brokenXml = workXml.replace('<pb n="11" facs="011.jpg"/>', '');
+    const inventory = buildPageInventory({ xml: brokenXml });
+
+    expect(inventory.map(row => row.printed_page)).toEqual(['10', '11', '12']);
+    expect(inventory[1]).toEqual(expect.objectContaining({
+      facsimile: '011.jpg',
+      first_line: '',
+      expected_transition: 'pb',
+    }));
+    expect(inventory[2]).toEqual(expect.objectContaining({
+      printed_page: '12',
+      first_line: 'ittet Ord',
+    }));
+    const reviewed = inventory.map((row, index) => ({
+      ...row,
+      status: 'reviewed',
+      reviewer: 'worker-2',
+      disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Kursiv og spatiering kontrolleret.',
+      first_line: index === 1 ? 'Facsimilets sidestart' : row.first_line,
+    }));
+    expect(auditPageInventory({ xml: brokenXml, inventory: reviewed }).issues).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ rule: 'missing-xml-page', key: 'test1900010101:11' }),
+      ]),
+    );
+  });
+
+  it('expands Roman page ranges while preserving their labels', () => {
+    const romanXml = workXml
+      .replace('pages="10-12"', 'pages="iii-v"')
+      .replace('n="11"', 'n="iv"')
+      .replace('n="12"', 'n="v"');
+    expect(buildPageInventory({ xml: romanXml }).map(row => row.printed_page)).toEqual([
+      'iii', 'iv', 'v',
+    ]);
+  });
+
+  it('distinguishes unnumbered source pages by facsimile', () => {
+    const xml = workXml
+      .replace('pages="10-12"', 'facsimile-pages="10-12"')
+      .replace(' n="11"', '')
+      .replace(' n="12"', '');
+    const inventory = buildPageInventory({ xml }).map(row => ({
+      ...row,
+      status: 'reviewed',
+      reviewer: 'worker-2',
+      disposition: 'Kontrolleret direkte mod facsimilet.',
+      typography_status: 'reviewed',
+      typography_disposition: 'Typografien kontrolleret.',
+    }));
+
+    expect(inventory.map(row => row.printed_page)).toEqual([null, null, null]);
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+  });
+});
+
+describe('whole-work structure wrapper', () => {
+  it.each([
+    {
+      textId: 'roerdam2026092001',
+      pageBreakAfter: 8,
+      ocrFacsimiles: ['012.jpg', '013.jpg'],
+      sourcePages: '1-2',
+      body: `Og har du leget din Luth så længe
+for døve Øren på stumme Strænge —
+
+En halv Mils Vej ud i Verdensrummet
+er hele Jordens Musik forstummet.
+
+Ja, selv i Syvstjærnens Søsterklynge
+kan ingen høre de andre synge.
+
+Men alle synger endda. Det trøster:
+Histovre vandrer med Sang min Søster.
+<pb n="2" facs="013.jpg"/>Og Himlens Skaber og Gud fornemmer
+i gylden Samklang de klare Stemmer. —
+
+Hvad vil du, Myg? Når dit eget Indre
+dog hører Tonernes Dråber tindre ...`,
+    },
+    {
+      textId: 'roerdam2026092004',
+      pageBreakAfter: 10,
+      ocrFacsimiles: ['018.jpg', '019.jpg'],
+      sourcePages: '7-8',
+      body: `Jul, Påske, Pinse og Sankt-Hans,
+de svinger omkring dig — Elvernes Dans.
+
+En hvid, en grå, en grøn, en rød;
+de danser, du drømmer — om Liv og Død.
+
+Mer ilsomt hvirvler de År for År,
+og dybere drømmer du, hvor du står.
+
+Nu duver Axet, nu dufter Rugen —
+snart triller et Jordbær rødt henad Dugen.
+
+Nu dufter Rugen. Hvad vil du mer?
+Du tænker på Ting ... på Ting, som sker.
+<pb n="8" facs="019.jpg"/>På Menneskebørn, som lo bedrøvet,
+og bøjede Nakken, og krøb i Støvet.
+
+Dær ligger de nede. Og du står her,
+mens Roserne blomstrer, og Rugen drær.`,
+    },
+  ])('flags the lost stanza boundary at a page break in $textId', ({
+    body,
+    ocrFacsimiles,
+    pageBreakAfter,
+    sourcePages,
+    textId,
+  }) => {
+    const xml = workXml
+      .replace('test1900010101', textId)
+      .replace('facsimile-pages-offset="1"', 'facsimile-pages-offset="12"')
+      .replace('pages="10-12"', `pages="${sourcePages}"`)
+      .replace(
+        /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+        `<body><poetry>${body}</poetry></body>`,
+      );
+    const variantsByFacsimile = Object.fromEntries(
+      ocrFacsimiles.map(facsimile => [
+        facsimile,
+        [{
+          name: `${facsimile.replace('.jpg', '')}.psm3.tsv`,
+          lines: roerdamOcr.pages[facsimile],
+        }],
+      ]),
+    );
+    const result = analyzeWholeWork(xml, { variantsByFacsimile });
+    const [poem] = result.poems;
+
+    expect(result.geometry_summary.expected_line_count).toBeGreaterThan(0);
+    expect(poem.geometry).toBeDefined();
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'stanza',
+      type: 'possible_missing_boundary',
+      after_verse_line: pageBreakAfter,
+      at_page_break: true,
+    }));
+  });
+
+  it('separates drop-cap clearance and physical wraps from poetic indentation in September', () => {
+    const body = `En Pointer jager forbi os i luftige Spring,
+ det stænker omkring den af Roernes drivvåde Blade.
+Den står; der falder et Skud — og i pilende Sving
+stryger Hønsene lavt langt bort bag om Enggårdens Lade.
+
+De vidtstrakte Stubmarker blinker. Mærk Stakkenes Duft.
+Langs Telefontråden kvidrer de hvilende Svaler,
+og Tærskemaskinerne brummer i solklar Luft.
+Så fik vi September engang. Og Jer, kære kvidrende Svaler,
+<pb n="13" facs="024.jpg"/> Jer sender vi bort med al Sorgen for Somren og Høsten.
+ Vi slæbte os Sjælen af Livet, og tidt var det slemt,
+  men flyv nu kun I til Ægypten med Klagen og Trøsten!
+„Det gik, som det kunde og skulde. Og nu er det glemt.
+
+  Flyv I til Ægypten. Her bliver så frydeligt stille.
+ Jeg tænker mig om, og jeg ser mig om — og jeg hører Cikaderne spille.`;
+    const xml = workXml
+      .replace('test1900010101', 'roerdam2026092007')
+      .replace('facsimile-pages-offset="1"', 'facsimile-pages-offset="12"')
+      .replace('pages="10-12"', 'pages="12-13"')
+      .replace(
+        /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+        `<body><poetry>${body}</poetry></body>`,
+      );
+    const variantsByFacsimile = Object.fromEntries(
+      ['023.jpg', '024.jpg'].map(facsimile => [
+        facsimile,
+        [{ name: `${facsimile.replace('.jpg', '')}.psm3.tsv`, lines: roerdamOcr.pages[facsimile] }],
+      ]),
+    );
+    const [poem] = analyzeWholeWork(xml, { variantsByFacsimile }).poems;
+
+    expect(poem.geometry).toEqual(expect.objectContaining({
+      stanza_geometry_ready: false,
+      indentation_geometry_ready: true,
+      stanza: null,
+      indentation: expect.any(Object),
+    }));
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'stanza',
+      type: 'possible_missing_boundary',
+      after_verse_line: 8,
+      at_page_break: true,
+    }));
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'indentation_geometry',
+      type: 'unreliable_indentation_geometry',
+      verse_line: 2,
+      cause: 'drop_cap_clearance',
+    }));
+    expect(poem.candidates.filter(candidate =>
+      candidate.source === 'indentation_geometry' &&
+      candidate.type === 'possible_extra_indentation'
+    ).map(candidate => candidate.verse_line)).toEqual([9, 10, 11, 13, 14]);
+  });
+
+  it('keeps text id and page range and flags very long unbroken poems', () => {
+    const lines = Array.from({ length: 80 }, (_, index) => `Vers ${index + 1}`).join('\n');
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      `<body><poetry>${lines}</poetry></body>`,
+    ).replace('pages="10-12"', 'pages="10"');
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem).toEqual(expect.objectContaining({
+      text_id: 'test1900010101',
+      pages: '10',
+      block_index: 1,
+    }));
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      type: 'very-long-unbroken-block',
+      verse_line_count: 80,
+    }));
+  });
+
+  it('requires manual disposition when no indentation pattern is stable', () => {
+    const indentations = [0, 7, 2, 11, 4, 1, 9, 3, 12, 5, 8, 2];
+    const lines = indentations
+      .map((indentation, index) => `${' '.repeat(indentation)}Vers ${index + 1}`)
+      .join('\n');
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      `<body><poetry>${lines}</poetry></body>`,
+    ).replace('pages="10-12"', 'pages="10"');
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.indentation.status).toBe('no_stable_pattern');
+    expect(poem.candidates).toContainEqual(expect.objectContaining({
+      source: 'wrapper',
+      type: 'indentation_pattern_unresolved',
+      verse_line_count: 12,
+    }));
+  });
+
+  it('preserves page starts as verse-line metadata after removing pb elements', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\n\n<pb n="11" facs="011.jpg"/>    Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_breaks).toEqual([2]);
+    expect(poem.indentation.indentation_profile).toEqual([0, 4, 0]);
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+      }),
+      expect.objectContaining({
+        source: 'geometry_preparation',
+        type: 'facsimile_geometry_not_run',
+      }),
+    ]));
+  });
+
+  it('does not report a stanza boundary when a stanza continues over a page', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\n<pb n="11" facs="011.jpg"/>Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
+  });
+
+  it('treats a comma before a page-break stanza boundary as strong continuation evidence', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje,\n\n<pb n="11" facs="011.jpg"/>Anden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+        preceding_text: 'Første linje,',
+        continuation_signal: 'comma',
+        confidence: 'strong',
+      }),
+    ]));
+  });
+
+  it('treats any line without terminal punctuation as continuation evidence', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>(Fast høitidelig er Minen)\n\n<pb n="11" facs="011.jpg"/>Herren bukker\nDamen neier</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'stanza_boundary_at_page_break',
+        after_verse_line: 1,
+        continuation_signal: 'missing_terminal_punctuation',
+        confidence: 'strong',
+      }),
+    ]));
+  });
+
+  it('does not override an explicit section marker at a comma page break', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje,\n<pb n="11" facs="011.jpg"/><nonum><center>2.</center></nonum>\nAnden linje\nTredje linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_break_nonum_starts).toEqual([2]);
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
+  });
+
+  it('does not report a boundary when an ornament precedes the page break', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje.\n\n<nonum><center>* * *</center></nonum>\n\n<pb n="11" facs="011.jpg"/>Anden linje</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.page_break_nonum_starts).toEqual([2]);
+    expect(poem.candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'stanza_boundary_at_page_break' }),
+    ]));
+  });
+
+  it('reports a short lowercase continuation as a possible physical wrap', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Her står en meget lang verslinje\nstaaer,\nNæste verslinje.</poetry></body>',
+    );
+    const [poem] = analyzeWholeWork(xml).poems;
+
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'wrapper',
+        type: 'possible_physical_wrap',
+        verse_line: 2,
+        preceding_verse_line: 1,
+        text: 'staaer,',
+      }),
+    ]));
+  });
+
+  it('runs prepared stanza and indentation geometry for the whole work', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\n\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [100, 160, 280, 340].map((top, index) => ({
+      page: 1,
+      left: index === 3 ? 200 : 100,
+      top,
+      width: 500,
+      height: 30,
+      text: `${['Første', 'Anden', 'Tredje', 'Fjerde'][index]} linje`,
+    }));
+    const result = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.psm6.tsv', lines }],
+      },
+    });
+    const [poem] = result.poems;
+
+    expect(result.geometry_summary).toEqual(expect.objectContaining({
+      ready_block_count: 1,
+      manual_review_block_count: 0,
+      safe_geometry_line_count: 4,
+    }));
+    expect(poem.geometry.status).toBe('ready');
+    expect(poem.geometry.stanza.suggested_boundaries).toEqual([2]);
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        source: 'indentation_geometry',
+        type: 'possible_missing_indentation',
+        verse_line: 4,
+      }),
+    ]));
+  });
+
+  it('assigns text after consecutive page breaks to the last facsimile', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry><pb n="10" facs="010.jpg"/><pb n="11" facs="011.jpg"/>Første linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10-11"');
+    const result = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '011.jpg': [{
+          name: '011.tsv',
+          lines: [{ page: 11, left: 100, top: 100, width: 500, height: 30, text: 'Første linje' }],
+        }],
+      },
+    });
+
+    expect(result.poems[0].geometry.coverage).toEqual(expect.objectContaining({
+      expected_line_count: 1,
+      matched_line_count: 1,
+      ratio: 1,
+    }));
+    expect(result.poems[0].geometry.selected_variants).toEqual([
+      expect.objectContaining({ facsimile: '011.jpg' }),
+    ]);
+  });
+
+  it('does not expose geometry analysis when matched lines still have unsafe geometry', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\n\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [
+      { top: 100, text: 'Første linje' },
+      { top: 160, text: 'Anden linje' },
+      { top: 200, text: 'OCR-støj' },
+      { top: 280, text: 'Tredje linje' },
+      { top: 340, text: 'Fjerde linje' },
+    ].map(line => ({
+      page: 1,
+      left: 100,
+      width: 500,
+      height: 30,
+      ...line,
+    }));
+    const [poem] = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.tsv', lines }],
+      },
+    }).poems;
+
+    expect(poem.geometry.status).toBe('manual_review');
+    expect(poem.geometry.stanza).toBeNull();
+    expect(poem.geometry.indentation).toBeNull();
+    expect(poem.candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'geometry_manual_review' }),
+    ]));
+  });
+});
+
+describe('historical OCR candidate profile', () => {
+  it('attributes candidates on unnumbered pages to their own facsimile', () => {
+    const xml = workXml
+      .replace('pages="10-12"', 'facsimile-pages="10-12"')
+      .replace(' n="11"', '')
+      .replace(' n="12"', '')
+      .replace('Første linje', 'Image linje')
+      .replace('Første paa elleve', 'Image paa elleve');
+    const candidates = historicalOcrCandidates({ xml, inventory: buildPageInventory({ xml }) })
+      .filter(candidate => candidate.rule === 'image-token');
+
+    expect(candidates.map(candidate => candidate.facsimile)).toEqual(['009.jpg', '011.jpg']);
+    expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(2);
+  });
+
+  it('reports side, facsimile and stable anchor for historical OCR patterns', () => {
+    const xml = workXml.replace('Første paa elleve', 'Image {kildrer soc1o.ikke Ordxxx');
+    const inventory = buildPageInventory({ xml });
+    const candidates = historicalOcrCandidates({ xml, inventory });
+
+    expect(candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'image-token', printed_page: '11', facsimile: '011.jpg' }),
+      expect.objectContaining({ rule: 'long-s-brace', text_id: 'test1900010101', anchor: expect.stringContaining('{kildrer') }),
+      expect.objectContaining({ rule: 'digit-inside-word', match: 'c1' }),
+      expect.objectContaining({ rule: 'period-without-space', match: 'o.i' }),
+      expect.objectContaining({ rule: 'implausible-ending', match: 'Ordxxx' }),
+    ]));
+  });
+
+  it('reports Fraktur word-shaped candidates without normalizing historical forms', () => {
+    const xml = workXml.replace('Første paa elleve', 'forst gjor det fkal voere klart.');
+    const inventory = buildPageInventory({ xml });
+    const candidates = historicalOcrCandidates({ xml, inventory });
+
+    expect(candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'historical-wordform', match: 'forst' }),
+      expect.objectContaining({ rule: 'fraktur-letter-confusion', match: 'gjor' }),
+      expect.objectContaining({ rule: 'likely-long-s-substitution', match: 'fkal' }),
+      expect.objectContaining({ rule: 'fraktur-letter-confusion', match: 'voere' }),
+    ]));
+
+    const historicalXml = workXml.replace('Første paa elleve', 'høi skiøn kiær giøre maaskee.');
+    expect(historicalOcrCandidates({
+      xml: historicalXml,
+      inventory: buildPageInventory({ xml: historicalXml }),
+    })).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'fraktur-letter-confusion' }),
+      expect.objectContaining({ rule: 'historical-wordform' }),
+    ]));
+  });
+});
+
+describe('findings registry and frozen checkpoint', () => {
+  const checkpointWorkXml = '<kalliopework><workbody/></kalliopework>';
+  const checkpointAnalysis = analyzeWholeWork(checkpointWorkXml);
+  const candidateReviews = ['ocr', 'page', 'stanza', 'indentation', 'typography'].map(kind => ({
+    kind,
+    reviewer: 'anna',
+    status: 'reviewed',
+    candidate_count: 2,
+    reviewed_count: 2,
+  }));
+  const finding = {
+    id: 'W2-B1-001',
+    batch: 'W2-B1',
+    reviewer: 'worker-2',
+    text_id: 'test1900010101',
+    printed_page: '11',
+    facsimile: '011.jpg',
+    anchor: 'Første paa elleve',
+    severity: 'high',
+    description: 'Forkert ord',
+    status: 'open',
+    disposition: null,
+    evidence: null,
+    snapshot: 'abc123',
+  };
+
+  it('requires a disposition for every candidate from the current XML and OCR geometry', () => {
+    const xml = workXml.replace(
+      /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
+      '<body><poetry>Første linje\nAnden linje\nTredje linje\nFjerde linje</poetry></body>',
+    ).replace('pages="10-12"', 'pages="10"');
+    const lines = [100, 160, 280, 340].map((top, index) => ({
+      page: 1,
+      left: 100,
+      top,
+      width: 500,
+      height: 30,
+      text: `${['Første', 'Anden', 'Tredje', 'Fjerde'][index]} linje`,
+    }));
+    const analysis = analyzeWholeWork(xml, {
+      variantsByFacsimile: {
+        '010.jpg': [{ name: '010.psm6.tsv', lines }],
+      },
+    });
+    const candidates = analysis.poems.flatMap(poem => poem.candidates);
+    expect(candidates.length).toBeGreaterThan(0);
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings: [] }))
+      .toEqual(expect.arrayContaining([expect.stringContaining('0 dispositioner')]));
+
+    const checkpointArgs = {
+      root: process.cwd(),
+      analysis,
+      workXml: xml,
+      findings: [],
+      inventory: [{
+        text_id: 'test1900010101', printed_page: '10', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      tests: [{ command: 'make test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
+      visualStructureReviews: analysis.poems.map(poem => ({
+        text_id: poem.text_id,
+        block_index: poem.block_index,
+        status: 'reviewed',
+        reviewer: 'anna',
+        visual_stanza_lengths: poem.stanza.observed_stanza_lengths,
+        facsimiles: ['010.jpg'],
+        disposition: 'Alle strofegrænser sammenholdt med facsimilet.',
+      })),
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    };
+    expect(() => createCheckpoint(checkpointArgs)).toThrow('0 dispositioner');
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: [],
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('0 visuelle strofekontroller'),
+    ]));
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: checkpointArgs.visualStructureReviews.map(review => ({
+        ...review,
+        visual_stanza_lengths: [2, 2],
+      })),
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('strofelængder som ikke stemmer'),
+    ]));
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: checkpointArgs.visualStructureReviews.map(review => ({
+        ...review,
+        facsimiles: ['011.jpg'],
+      })),
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('ikke kontrolleret alle facsimilesider'),
+    ]));
+
+    const findings = candidates.map(candidate => ({
+      candidate_id: candidate.candidate_id,
+      status: 'rejected',
+    }));
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings }))
+      .toEqual([]);
+    const registeredFindings = candidates.map((candidate, index) => ({
+      ...finding,
+      id: `W2-B1-${String(index + 1).padStart(3, '0')}`,
+      candidate_id: candidate.candidate_id,
+      reviewer: 'anna',
+      status: 'rejected',
+      disposition: 'Kontrolleret som falsk positiv.',
+      evidence: 'facs 010.jpg',
+    }));
+    expect(() => createCheckpoint({ ...checkpointArgs, findings: registeredFindings }))
+      .not.toThrow();
+    expect(validateWholeWorkCandidates({
+      analysis,
+      workXml: xml.replace('Første linje', 'Ændret linje'),
+      findings,
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('hører ikke til den aktuelle XML'),
+    ]));
+    const withoutCandidate = {
+      ...analysis,
+      poems: analysis.poems.map(poem => ({
+        ...poem,
+        candidates: poem.candidates.slice(1),
+      })),
+    };
+    expect(validateWholeWorkCandidates({
+      analysis: withoutCandidate,
+      workXml: xml,
+      findings,
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('kandidatliste stemmer ikke'),
+    ]));
+    expect(validateWholeWorkCandidates({
+      analysis: analyzeWholeWork(xml),
+      workXml: xml,
+      findings: [],
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('mangler OCR-geometri'),
+    ]));
+  });
+
+  it('requires visual stanza review even when an analyzer reports no candidates', () => {
+    const analysis = {
+      poems: [{
+        text_id: 'quiet1900010101',
+        block_index: 1,
+        stanza: { observed_stanza_lengths: [4, 4] },
+        candidates: [],
+      }],
+    };
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: [],
+      producer: 'producer',
+    })).toEqual(expect.arrayContaining([
+      expect.stringContaining('0 visuelle strofekontroller'),
+    ]));
+  });
+
+  it('preserves stable ids and requires dispositions/evidence', () => {
+    expect(validateFindings([finding])).toEqual([]);
+    const withdrawn = updateFinding([finding], finding.id, {
+      status: 'withdrawn',
+      disposition: 'Auditor trak fundet tilbage.',
+      evidence: 'facs 011.jpg',
+    });
+    expect(withdrawn[0].id).toBe(finding.id);
+    expect(validateFindings(withdrawn)).toEqual([]);
+    expect(validateFindings([{ ...finding, status: 'withdrawn' }])).toEqual(
+      expect.arrayContaining([
+        expect.stringContaining('mangler disposition'),
+        expect.stringContaining('mangler evidence'),
+      ]),
+    );
+    expect(validateFindings([{
+      ...finding,
+      status: 'verified',
+      disposition: 'Genkontrolleret.',
+      evidence: 'facs 011.jpg',
+    }])).toEqual(expect.arrayContaining([
+      expect.stringContaining('mangler verified_by'),
+    ]));
+  });
+
+  it('blocks READY on open findings and detects mutations after a checkpoint', () => {
+    expect(() => createCheckpoint({
+      root: process.cwd(),
+      findings: [finding],
+      inventory: [{ text_id: 'test', printed_page: '1', status: 'reviewed' }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [],
+      producer: 'producer',
+      candidateReviews,
+    })).toThrow('uverificeret finding');
+
+    const original = {
+      head: 'abc', diff_sha256: 'one', changed_files: ['work.xml'], file_sha256: { 'work.xml': 'hash' },
+    };
+    expect(() => createCheckpoint({
+      root: process.cwd(),
+      findings: [{
+        ...finding,
+        status: 'fixed',
+        disposition: 'Rettet mod facsimilet.',
+        evidence: 'før → efter, facs 011.jpg',
+      }],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
+      state: original,
+    })).toThrow('uverificeret finding');
+
+    const checkpoint = createCheckpoint({
+      root: process.cwd(),
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
+      findings: [{
+        ...finding,
+        status: 'verified',
+        disposition: 'Rettelsen er genkontrolleret mod facsimilet.',
+        evidence: 'før → efter, facs 011.jpg',
+        verified_by: 'anna',
+      }],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews,
+      state: original,
+    });
+    expect(verifyCheckpoint({ root: process.cwd(), checkpoint, state: original }).status).toBe('valid');
+    expect(verifyCheckpoint({
+      root: process.cwd(),
+      checkpoint,
+      state: { ...original, diff_sha256: 'two' },
+    }).status).toBe('invalid');
+  });
+
+  it('requires explicit non-overlapping reviewer ranges with full coverage', () => {
+    const inventory = [
+      { facsimile: '010.jpg', reviewer: 'anna' },
+      { facsimile: '011.jpg', reviewer: 'bo' },
+    ];
+    expect(validateReviewerRanges([
+      { reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' },
+      { reviewer: 'bo', facsimile_from: '011.jpg', facsimile_to: '011.jpg' },
+    ], inventory)).toEqual([]);
+    expect(validateReviewerRanges([
+      { reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '011.jpg' },
+      { reviewer: 'bo', facsimile_from: '011.jpg', facsimile_to: '012.jpg' },
+    ], inventory)).toEqual(expect.arrayContaining([
+      expect.stringContaining('overlappende reviewer-ranges'),
+      expect.stringContaining('dækkes af 2 reviewer-ranges'),
+    ]));
+  });
+
+  it('requires a reviewer independent of the producer for pages, ranges and findings', () => {
+    const inventory = [{
+      text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+      status: 'reviewed', reviewer: 'producer', disposition: 'Kontrolleret.',
+      typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+    }];
+    expect(() => createCheckpoint({
+      root: process.cwd(),
+      findings: [],
+      inventory,
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'producer', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      candidateReviews: candidateReviews.map(review => ({ ...review, reviewer: 'producer' })),
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+    })).toThrow(/producenten/);
+  });
+
+  it('requires all five candidate audits with every candidate reviewed', () => {
+    const common = {
+      root: process.cwd(),
+      findings: [],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      tests: [{ command: 'npm test', status: 'passed' }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer',
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
+    };
+    expect(() => createCheckpoint({
+      ...common,
+      candidateReviews: candidateReviews.filter(review => review.kind !== 'indentation'),
+    })).toThrow('kandidatkontrollen indentation forekommer 0 gange');
+    expect(() => createCheckpoint({
+      ...common,
+      candidateReviews: candidateReviews.filter(review => review.kind !== 'typography'),
+    })).toThrow('kandidatkontrollen typography forekommer 0 gange');
+    expect(() => createCheckpoint({
+      ...common,
+      candidateReviews: candidateReviews.map(review => review.kind === 'ocr'
+        ? { ...review, reviewed_count: 1 }
+        : review),
+    })).toThrow('kandidatkontrollen ocr har uverificerede kandidater');
+    expect(() => createCheckpoint({
+      ...common,
+      inventory: common.inventory.map(({ typography_status, ...page }) => page),
+    })).toThrow('sidens typografi er ikke gennemgået');
+    expect(() => createCheckpoint({
+      ...common,
+      inventory: common.inventory.map(page => ({ ...page, typography_disposition: null })),
+    })).toThrow('side mangler typografidisposition');
+    expect(() => createCheckpoint({ ...common, candidateReviews })).not.toThrow();
+  });
+
+  it('blocks READY when no tests are recorded or a test fails', () => {
+    const common = {
+      root: process.cwd(), findings: [],
+      inventory: [{
+        text_id: 'test', printed_page: '1', facsimile: '010.jpg',
+        status: 'reviewed', reviewer: 'anna', disposition: 'Kontrolleret.',
+        typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelse.',
+      }],
+      reviewerRanges: [{ reviewer: 'anna', facsimile_from: '010.jpg', facsimile_to: '010.jpg' }],
+      producer: 'producer', candidateReviews,
+      state: { head: 'abc', diff_sha256: 'one', changed_files: [], file_sha256: {} },
+      analysis: checkpointAnalysis,
+      workXml: checkpointWorkXml,
+    };
+    expect(() => createCheckpoint({ ...common, tests: [] })).toThrow('ingen tests er registreret');
+    expect(() => createCheckpoint({
+      ...common,
+      tests: [{ command: 'xmllint --noout work.xml', status: 'failed' }],
+    })).toThrow('test bestod ikke');
+  });
+});

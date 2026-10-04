@@ -15,6 +15,9 @@ Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
 Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
 hvert niveau.
 
+Indholdet i `<notes>` og `<pictures>` står altid på egne linjer. `<note>` og
+`<picture>` indrykkes ét niveau i forhold til deres beholder.
+
 Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
 og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
 ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.
@@ -25,7 +28,7 @@ En eller flere værkfiler kan formateres uden at ændre brødteksten med:
 node tools/format-work-xml.js fdirs/<digter>/<vaerk>.xml
 ```
 
-Testen i `__tests__/work-xml-formatting.test.js` kontrollerer den strukturelle
+Testen i `__tests__/corpus/work-corpus.test.js` kontrollerer den strukturelle
 formatering i alle sporede værkfiler.
 
 ## Grundstruktur
@@ -68,6 +71,11 @@ De guldhenboelgende Vaenge
 `<workhead>` indeholder metadata for hele vaerket. `<workbody>` indeholder tekster,
 sektioner og eventuelle underværker.
 
+I `andre.xml` må en `<source>` ikke ligge i `<workhead>`; den fulde kilde skal
+angives direkte i hvert berørt digts `<head>`. Se
+`docs/originaltekster-til-oversaettelser.md` for kildevalg og -angivelse ved
+originaltekster til oversættelser.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:
@@ -84,11 +92,33 @@ Almindelige felter i `<workhead>`:
 - `<dates>`: datoer for vaerket.
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
+- `<errata>`: eksplicit sidekontrol og eventuelle indførte trykte rettelsesark.
+- `<proofreadings>`: modelattester fra afsluttende, uafhængige
+  facsimilekorrekturer.
+
+Et værks metadata kan have typevaliderede eksterne identifikatorer:
+
+```xml
+<workhead>
+  <title>Lyngblomster</title>
+  <year>1856</year>
+  <identifiers>
+    <wikidata>Q123</wikidata>
+    <openlibrary-work>OL4525390W</openlibrary-work>
+  </identifiers>
+</workhead>
+```
+
+Identifikatorerne gemmes separat i work-metadata.
+
+For værker er `wikidata`, `dbc-work`, `openlibrary-work`,
+`dansklitteraturshistorie-lex-dk` og `runeberg-book` tilladt. For konkrete source-udgaver er
+`wikidata`, `kb-alma`, `dbc-pid` og `openlibrary-edition` tilladt.
 
 Titelfelter kan bruge `<num>` som prefix:
 
 ```xml
-<title><num>III.</num> Digtets titel</title>
+<title><num>III.</num>Digtets titel</title>
 ```
 
 Det bliver splittet i `prefix` og egentlig titel i indholdsfortegnelsen.
@@ -112,7 +142,72 @@ ikke, at værket nødvendigvis indeholder et `<pb>`: hvis hver tekst står på �
 side, er der ingen interne sideskift at indsætte. Fravær af `<pagebreaks/>` i en
 ældre værkfil betyder derfor »ikke oplyst«, ikke at kilden er uden sideskift.
 
+### Trykte rettelsesark
+
+Kontrollér hele kilden for rettelsesark. Et fundet ark skal indføres; det er en
+fejl at springe det over, og arket må aldrig blive en selvstændig `<text>`.
+Registrér gennemgangen i `<workhead>`:
+
+```xml
+<errata status="none"/>
+<errata status="applied" pages="[392]" facsimile-pages="415"/>
+```
+
+Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
+`applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
+er redaktionelt sat i kantede parenteser; `facsimile-pages` er et enbaseret
+sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
+`<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
+samme linje:
+
+```xml
+Med magisk Kunst<footnote type="errata">Kunst] Kraft</footnote> jeg ved din Side staar.
+```
+
+Venstre side af `]` er Kalliopes rettede læsemåde, højre side er trykkets
+oprindelige læsemåde. Brug `∅` for en manglende læsemåde ved tilføjelse eller
+sletning. Alle `type="errata"`-fodnoter skal have begge sider af `]` udfyldt.
+Værknoten med facsimilelink bygges automatisk af `<errata>`; skriv den ikke
+også manuelt.
+
+### Korrekturattester
+
+Et facsimileværk må først sættes til `status="complete"`, når det er gennemgået
+side for side to gange. Anden gennemgang udføres af en anden model eller session
+end producenten. Efter bestået slutkontrol indeholder værkets `<workhead>` én
+beholder med én eller flere attester:
+
+```xml
+<proofreadings>
+  <proofreading model="gpt-5.6-sol"
+                datetime="2026-09-01T21:00:00+02:00"/>
+</proofreadings>
+```
+
+Hver attest indeholder kun det præcise modelnavn og tidspunktet i ISO 8601 med
+tidszone. Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
+bedre model kan tilføje en ny `<proofreading>`; tidligere attester bevares, og
+Git dokumenterer den attesterede version og efterfølgende ændringer.
+
+Ved den første overgang fra manglende eller `incomplete` til `complete` kræver
+CI, at hvert inkluderet teksthoved har kvalitetsflagene
+`korrektur1,korrektur2,kilde,side`, og at værket har mindst én gyldig attest.
+Senere note-, metadata- og tekstændringer udløser ikke automatisk krav om en ny
+attest.
+
 ### Workhead source
+
+En kilde kan have typevaliderede eksterne identifikatorer. I første version er
+kun `<wikidata>` tilladt:
+
+```xml
+<source>
+  Erica: <i>Lyngblomster</i>, 1856.
+  <identifiers><wikidata>Q123</wikidata></identifiers>
+</source>
+```
+
+Identifikatorerne gemmes separat fra den synlige kildeangivelse.
 
 En kilde paa vaerkniveau kan bruges som default for tekster i samme vaerk:
 
@@ -170,8 +265,10 @@ Tekstdatoer beskrives nedenfor. De tre sidste samles ogsaa i `caches/collected.d
 
 `<workbody>` kan indeholde:
 
-- `<text>`: en normal tekst/digtpost.
-- `<prose>`: en selvstaendig prosatekst med `head` og `body`.
+- `<text>`: en normal tekst- eller digtpost. Selvstændig prosa registreres også
+  som `<text>` med brødteksten i `<body><prose>...</prose></body>`.
+- `<prose>`: en ældre form for selvstændige prosatekster. Brug `<text>` ved nye
+  eller redigerede tekstforekomster.
 - `<section>`: en gruppe tekster, eventuelt linkbar hvis den har `id`.
 - `<subwork ref="..."/>`: henviser til et andet vaerk hos samme digter.
 
@@ -207,26 +304,276 @@ Attributter paa `<text>`:
   `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
   `<pb>` over for teksten.
 
+#### Tekst-id
+
+Nye tekst-id'er består af tekstens effektive digter-id, oprettelsesdatoen i
+formatet `YYYYMMDD` og et løbenummer på mindst to cifre:
+
+```text
+winther2018081001
+winther2018081002
+```
+
+Det effektive digter-id er `text/@author`, når attributten findes, og ellers
+værkets `kalliopework/@author`. En tekst uden `author` i et værk med
+`author="antologierdk"` får derfor eksempelvis id'et
+`antologierdk2026081501`. Løbenumre må ikke genbruges, hvis en tekst slettes
+eller sammenlægges.
+
+Næste ledige id kan genereres uden at ændre værkfilen:
+
+```sh
+npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
+```
+
+CI sammenligner tekst-id'erne semantisk mellem base- og HEAD-committen. Kun
+id'er, der ikke fandtes i base-committen, håndhæves efter dette format, så
+historiske id-formater fortsat kan bevares uændret.
+
 ### Text head
 
 `<head>` paa en tekst kan indeholde:
 
-- `<title>`: tekstens titel. `force-index="true"` viser en ikke-primaer
-  variant i titelindekset.
-- `<firstline>`: foerstelinje. Maa ikke indeholde markup. `force-index="true"`
+- `<title>`: tekstens titel. Den del, der bruges i titelindekset efter et
+  eventuelt `<num>`, skal begynde med et Unicode-bogstav eller et tal, medmindre
+  en lovlig `<indextitle>` bruges i stedet. `force-index="true"` viser en
+  ikke-primaer variant i titelindekset.
+- `<firstline>`: foerstelinje. Maa ikke indeholde markup. En ikke-tom
+  førstelinje skal begynde med et Unicode-bogstav eller et tal; indledende
+  citationstegn og anden tegnsætning bevares kun i brødteksten. `force-index="true"`
   viser en ikke-primaer variant i foerstelinjeindekset.
 - `<indextitle>`: titel brugt i titelindekset, hvis den skal afvige.
   `force-index="true"` virker som paa `<title>`.
 - `<toctitle>`: titel i vaerkets indholdsfortegnelse.
-- `<linktitle>`: titel i links.
+- `<linktitle>`: titel i links. Den effektive linktitel må ikke have omgivende
+  blanktegn eller begynde med en guillemet (`«`, `»`, `‹` eller `›`), fordi
+  visningen selv indleder titlen med en guillemet. Guillemets må gerne afslutte
+  titlen. Andre citationstegn som `„…“`, `“…”` og `,,…''` er også tilladt,
+  ligesom intern tegnsætning og afsluttende spørgsmålstegn, udråbstegn og
+  apostroffer i ord.
 - `<subtitle>`: undertitel. Kan indeholde flere `<line>`.
 - `<suptitle>`: overtitel. Kan indeholde flere `<line>`.
 - `<nofirstline/>`: markerer bevidst manglende foerstelinje.
 - `<keywords>`: komma-separerede ids for keywords eller personer/digtere.
+- `<places>`: stedrelationer, der peger på lokale id'er i `content/places.xml`.
 - `<notes>`: noter til teksten.
 - `<pictures>`: billeder til teksten.
 - `<source>`: kilde for teksten.
 - `<dates>`: datoer for teksten.
+- `<metre>`: en eller flere automatiske, reproducerbare metriske analyser.
+- `<form>`: en eller flere automatiske, reproducerbare klassifikationer af
+  poetisk form.
+- `<rhyme>`: en eller flere automatiske, reproducerbare analyser af rimskema.
+- `<structure>`: den observerede, reproducerbare strofe- og linjestruktur.
+- `<syllables>`: en eller flere automatiske analyser af digtets stavelsesmønster.
+- `<quality>`: redaktionelle kvalitetsflag. Feltet står altid sidst i tekstens
+  metadata.
+
+Formatteren ordner de direkte metadatafelter i denne kanoniske rækkefølge:
+
+```text
+suptitle, title, subtitle, toctitle, indextitle, linktitle, breadcrumbtitle,
+firstline, nofirstline, year, dates, written, performed, event, begivenhed,
+notes, pictures, source, keywords, places, form, metre, rhyme, structure,
+syllables, quality
+```
+
+Stedrelationer står i tekstens `<head>`. `ref` er stedets stabile Kalliope-id;
+Wikidata-id'et står kun i det centrale stedregister. `relation` kan være
+`subject` (centralt emne), `setting` (sted for scenen eller rejsen),
+`mentioned` (omtalt sted) eller `writtenAt` (sted hvor digtet er skrevet eller
+stedfæstet). Brug `primary="true"`, når stedet er markeret som primært:
+
+```xml
+<places>
+  <place ref="rome" relation="subject" primary="true"/>
+  <place ref="capri" relation="writtenAt"/>
+</places>
+```
+
+Gentagne felter beholder deres indbyrdes rækkefølge. En XML-kommentar på sin
+egen linje foran et metadatafelt følger feltet ved sortering; en kommentar på
+samme linje som et felt følger dette felt. Afsluttende kommentarer bliver
+stående efter det sidste metadatafelt. Rækkefølgen gælder kun teksternes
+`<head>`, ikke `<workhead>` eller sektionshoveder.
+
+`<title>` og `<subtitle>` samt de enkelte `<line>`-elementer i en undertitel
+kan indeholde `<footnote>`. Fodnoten vises og nummereres sammen med digtet, men
+udelades fra linktitler, indeks og indholdsfortegnelser:
+
+```xml
+<title>Gravsang<footnote>Af Sørge-Cantaten.</footnote></title>
+<subtitle>
+  <line>Første undertitellinje</line>
+  <line>Anden linje<footnote>Kildens note.</footnote></line>
+</subtitle>
+```
+
+### Kildebaseret titelstruktur
+
+Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt
+forbedret eller katalogiseret titel. Kontrollér tekstens første kildeside og
+bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, interne
+tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
+reglen nedenfor.
+
+Brug felterne efter den trykte funktion og placering:
+
+- linjer over hovedtitlen skrives i `<suptitle>`
+- hovedtitlen skrives i `<title>`
+- linjer under hovedtitlen skrives i `<subtitle>`
+- flere trykte linjer i samme over- eller undertitel bevares som særskilte
+  `<line>`-elementer i den oprindelige rækkefølge
+
+Eksempelvis skal de tre trykte linjer i `baggesen2026090116`, »Begyndelse af
+Digtet Odin.«, »(I Hexametre).« og »Første Sang.«, ikke omskrives til en
+konstrueret titel som »Odin. Begyndelsen af første Sang i Hexametrer«. De kan
+repræsenteres sådan:
+
+```xml
+<title>Begyndelse af Digtet Odin</title>
+<subtitle>
+  <line>(I Hexametre).</line>
+  <line>Første Sang.</line>
+</subtitle>
+```
+
+Et tilsvarende flerlinjet overtitelparti bruger `<suptitle>` med ét `<line>`
+pr. trykt linje. En overskrift, der indleder en intern del af teksten, hører
+derimod til i brødteksten med den relevante eksisterende overskriftsstruktur;
+den må ikke flyttes til tekstens metadata alene på grund af skriftstørrelse
+eller centrering.
+
+Sammenskriv, ombyt eller parafrasér aldrig kildeoverskrifter, og ændr ikke ord,
+præpositioner, bøjninger eller talformer for at gøre titlen tydeligere eller
+entydig i et indeks. `<toctitle>`, `<linktitle>` og `<indextitle>` kan bruges,
+når Kalliopes visning kræver en særskilt dokumenteret titelvariant, men de må
+ikke erstatte eller begrunde en omskrivning af de kildebaserede titelfelter.
+
+En overskrift, der typografisk er sat helt med versaler eller kapitæler,
+normaliseres til læsbar brug af store og små bogstaver; den typografiske
+fremhævelse må ikke transskriberes som fulde versaler. Skriv eksempelvis
+`FØRSTE SANG` som `Første Sang` og `TILEGNELSE` som `Tilegnelse`. Bevar derimod
+blandet brug af store og små bogstaver, når den er tekstligt betydningsfuld,
+herunder egennavne og egentlige initialord. Reglen gælder både titelfelter og
+interne overskrifter i brødteksten.
+
+Hvis hierarkiet ikke kan afgøres sikkert fra kilden, bevares de sikre
+oplysninger, og tvivlen markeres med en eksplicit `TODO:`-note i stedet for at
+blive løst med et gæt.
+
+### Automatisk formklassifikation
+
+Formklassifikatoren kombinerer de uafhængige analyser af struktur, rim, metrik
+og stavelsesantal. Den genkender sonetter samt petrarcanske og shakespeareske
+undertyper, terza rima, ottava rima, rime royal, balladestrofer,
+alexandriner, distika, quatrains, blankvers og knittelvers:
+
+```xml
+<form>
+  <analysis pattern="sonnet" confidence="0.99"/>
+  <analysis pattern="petrarchan-sonnet" confidence="0.96"/>
+</form>
+```
+
+Fjorten linjer er et stærkt, men ikke tilstrækkeligt signal. Manglende
+strofegrænser sænker sikkerheden uden automatisk at diskvalificere digtet, og
+undertypen udelades, når kun den overordnede form er sikker. Eksisterende
+`<form>` betragtes som manuelt kurateret og overskrives aldrig.
+
+De specifikke rimformer kræver deres karakteristiske lokale rimskema og
+strofestruktur. Distikon og quatrain beskriver derimod først og fremmest den
+observerede strofestruktur og kan derfor foreslås uden enderim. Blankvers kræver
+både jambisk pentameter og fravær af systematisk enderim. Knittelvers kræver
+parrim og et sikkert firefodsmål. Rimanalysen klassificerer hver strofe lokalt;
+et terza-rima-gæt kan derfor genkende `ABA`-terzetterne, men ikke i sig selv
+bevise rimkæden mellem to nabostrofer.
+
+Uden `--form` vurderes og gemmes alle sikre former; en balladestrofe kan derfor
+også få den bredere klassifikation `quatrain`. `--form` begrænser både søgning
+og foreslået XML til det valgte mønster.
+
+De understøttede mønsternavne er `sonnet`, `terza-rima`, `ottava-rima`,
+`alexandrine`, `rime-royal`, `ballad-stanza`, `distich`, `quatrain`,
+`blank-verse` og `knittelvers`. Alexandriner kræver både seks jambiske fødder
+og et sikkert tolvstavelsesmønster; formen tildeles ikke alene ud fra
+linjelængden.
+
+En samlet, skrivebeskyttet rapport for ét digt-id viser alle delanalyser og den
+resulterende formklassifikation:
+
+```sh
+npm run poetic-form -- oehlen1999062839
+```
+
+De underliggende værktøjer til at skrive, afgrænse, evaluere og træne
+analyserne køres direkte med Node og er dokumenteret i
+[`tools/poetic-form/README.md`](../tools/poetic-form/README.md).
+
+### Automatisk metrisk analyse
+
+Et kvalificeret automatisk gæt på digtets grundmeter gemmes i tekstens `<head>`:
+
+```xml
+<metre>
+  <analysis pattern="iambic-pentameter" confidence="0.91"/>
+  <analysis pattern="hendecasyllabic" confidence="0.84"/>
+</metre>
+```
+
+`confidence` er et decimaltal mellem 0 og 1, og analyserne står med den højeste
+confidence først. Flere analyser bruges kun, når en rytmisk og en
+stavelsesbaseret beskrivelse er kompatible. Eksisterende `<metre>` betragtes som
+manuelt kurateret og overskrives ikke af analyseværktøjet.
+
+`--only-missing` kan angives eksplicit; værktøjet springer af hensyn til manuelt
+kuraterede oplysninger altid tekster med eksisterende `<metre>` over. Den
+danske trykheuristik springer desuden tekster over, når tekstens eller digterens
+metadata angiver et andet sprog end `da`.
+
+### Automatisk strukturanalyse
+
+Den observerede strofe- og linjestruktur gemmes i tekstens `<head>`:
+
+```xml
+<structure>
+  <analysis pattern="4-4-3-3" confidence="1.0"/>
+</structure>
+```
+
+Tallene er antallet af egentlige verslinjer i hver eksplicit afgrænset strofe.
+Et digt med 14 sammenhængende linjer får derfor mønsteret `14`; værktøjet
+gætter ikke strofegrænser for at få teksten til at passe til en kendt versform.
+Tomme linjer og semantiske speciallinjer som `<nonum>`, `<versenum>`, `<hr>` og
+`<metrik>` afgrænser strofer, men tæller ikke som verslinjer. Inline noter,
+linjenumre og sideskift tæller heller ikke som selvstændige verslinjer.
+
+Analysen er deterministisk for korrekt XML og får derfor `confidence="1.0"`.
+Uden `--only-missing` erstattes en eksisterende strukturanalyse med den aktuelt
+observerede struktur. `--dry-run` viser antallet af foreslåede analyser uden at
+ændre værkfilerne.
+
+### Automatisk stavelsesanalyse
+
+Et gennemgående stavelsestal gemmes uafhængigt af den rytmiske analyse:
+
+```xml
+<syllables>
+  <analysis pattern="decasyllabic" confidence="0.94"/>
+  <analysis pattern="hendecasyllabic" confidence="0.81"/>
+</syllables>
+```
+
+Analysen kombinerer et lille udtaleleksikon med regler for moderne og historisk
+dansk og en fallback for ukendte ord. Confidence afspejler linjernes
+regelmæssighed, udtaleusikkerheden og antallet af analyserede linjer. Naboantal
+kan begge gemmes, når fx maskuline og feminine linjeudgange gør dem plausible.
+
+Værktøjet overskriver aldrig et eksisterende `<syllables>`-element og springer
+tekster over, når tekstens eller digterens metadata angiver et andet sprog end
+`da`. `--debug` viser stavelsestallet for hver linje og markerer ord, der er
+behandlet med de mindre sikre historiske regler eller elisionsregler.
 
 Titel-fallbacks:
 
@@ -234,6 +581,23 @@ Titel-fallbacks:
 - `indextitle` falder tilbage til `title`.
 - `linktitle` falder tilbage til `indextitle` og derefter `title`.
 - `toctitle` falder tilbage til `title`.
+
+Kontrollerne af indeks- og linktitler gælder de effektive værdier efter disse
+fallbacks. En blank specialtitel tilsidesætter derfor ikke en gyldig fallback.
+Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
+fra kontrollen af linktitlen.
+
+Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
+punktum, kolon eller semikolon. Fjern derfor disse tegn til sidst i `<title>`,
+`<indextitle>`, `<toctitle>` og `<breadcrumbtitle>`, også når tegnet står i den
+trykte overskrift. Et nødvendigt tegn, eksempelvis punktummet i en afsluttende
+forkortelse, bevares med den lokale undtagelse
+`ignore-tests="title-trailing-punctuation"` på det relevante `<text>`-element
+eller, for et felt i `<workhead>`, på `<kalliopework>`. En afsluttende ellipse
+med mindst tre punktummer, herunder formen `. . .`, er tilladt uden undtagelse.
+Undtagelsen på `<kalliopework>` gælder kun værkhovedet. Reglen gælder ikke
+`<linktitle>`, `<subtitle>`, `<suptitle>` eller den diplomatiske transskription i
+tekstlegemet, hvor kildens tegnsætning bevares.
 
 ### Keywords
 
@@ -295,6 +659,10 @@ Regler:
 `href` arves fra den valgte værkkilde, når teksten ikke selv angiver sin egen `href`.
 Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
+Eksterne links fra en kilde skal ligge i `source/@href`. Et `<source>` må ikke
+indeholde `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
+fortsat tilladt.
+
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
 beregnes faksimilesiderne automatisk.
 
@@ -338,9 +706,10 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 
 Blokattributter:
 
-- `font-size="small"`: mindre skrift.
-- `margin-left="30%"` eller lignende: bruges især paa `<quote>`.
-- `margin-right="..."`: bruges især paa `<quote>`.
+- `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
+
+`<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
+Brug kun `max-width`, når et langt citat skal begrænses yderligere.
 
 Eksempel:
 
@@ -355,7 +724,7 @@ Anden verslinje
 
 Tredje verslinje
   </poetry>
-  <quote margin-left="30%" font-size="small">
+  <quote max-width="70%">
 Et citat
   </quote>
 </body>
@@ -363,6 +732,12 @@ Et citat
 
 I `<poetry>` laves linjenummerering automatisk. Hver femte linje faar visningsnummer,
 medmindre teksten bruger egne `<num>` eller `<margin>`.
+
+Verslinjernes indrykning skal være relativ til tekstens venstrekant. Hvis alle
+egentlige verslinjer i en tekst har den samme positive grundindrykning, skal den
+fælles indrykning trækkes fra alle linjerne. Et mønster på eksempelvis `2, 4, 2`
+skrives derfor som `0, 2, 0`. Sideskift, noter, talerangivelser og andre
+ikke-verslinjer indgår ikke i denne vurdering.
 
 ### Sideskift i kilden
 
@@ -390,6 +765,10 @@ sideskiftet, står markøren inline på det nøjagtige sted:
 En verslinje som fort<pb n="12" facs="019.jpg"/>sætter
 ```
 
+En indrykning på den nye sides første linje placeres tilsvarende efter
+markøren: `<pb n="12" facs="019.jpg"/>    Indrykket linje`. Mellemrummene må
+ikke stå foran `<pb>`, da de i så fald hører til den foregående kildeside.
+
 En `<pb>` må ikke stå på en selvstændig XML-linje i `<poetry>`, fordi den så kan
 forveksles med en vers- eller strofegrænse. Ved sideskift mellem verslinjer eller
 strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
@@ -404,9 +783,14 @@ tillader fortsat ældre `<pb>` uden `facs` af hensyn til bagudkompatibilitet.
 
 Inden for hver tekstpost må de arabiske værdier i `pb/@n` ikke falde. De kan
 begynde forfra ved en ny tekstpost, når kilden har selvstændig paginering. De
-numeriske facsimilefilnavne i `pb/@facs` må ikke falde gennem hele værket.
-Spring er gyldige, fordi sideskift mellem to tekstposter ikke får en markør.
-Romertalsværdier i `n` indgår ikke i den maskinelle rækkefølgekontrol.
+numeriske facsimilefilnavne i `pb/@facs` må ikke falde inden for den samme
+facsimilekilde. I ældre værkfiler med flere kilder begynder en ny rækkefølge,
+når tekstens `source/@in` skifter. Uden `source/@in` gælder én rækkefølge for
+hele værket. Spring er gyldige, fordi sideskift mellem to tekstposter ikke får
+en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
+rækkefølgekontrol. Sideskift inde i hver note kontrolleres i deres egen
+rækkefølge, fordi en slutnote kan være trykt senere end det vers, dens
+notemarkør er knyttet til.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
@@ -415,14 +799,42 @@ Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 placering eller rækkefølge over. Sæt kun undtagelsen på `<kalliopework>`, hvis
 den dokumenterede pagineringsafvigelse gælder hele værket.
 
+Når en tekst står på unummererede sider uden `source/@pages`, kontrolleres
+antallet af interne sideskift i stedet mod `source/@facsimile-pages`, hvis det
+angiver et almindeligt numerisk interval.
+
 Særlige linjeformer:
 
 - En blank linje bevares.
 - En linje med kun tal eller romertal bliver `<versenum>`.
-- En linje med `----` bliver `<hr width="4"/>`.
-- En linje med `====` bliver `<hr width="4" class="double"/>`.
+- En linje med `---` eller `----` bliver til en vandret streg under rendering.
+- En linje med `====` bliver til en dobbelt vandret streg under rendering.
+- Skriv ikke `<hr/>` direkte i værkfilen; brug en skillelinje på sin egen linje.
 - Indledende mellemrum bliver til non-breaking spaces.
 - Linjer med kun `***`, `___` eller lignende pakkes i `<nonum>`.
+
+### Enkeltstående dobbelt blanklinje i poesi
+
+Korpustesten afviser en `<poetry>`-blok med mindst fire adskillelser på én
+blanklinje og præcis én adskillelse på to blanklinjer, når passagen efter den
+dobbelte afstand har mere end én linje. Reglen hedder
+`isolated-double-poetry-gap` og fejler `make test`.
+
+En enkeltstående linje efter den dobbelte afstand er tilladt, hvis den følges
+af en blanklinje eller blokslutningen. Det gælder også overskrifter som
+»Moral«, talerangivelser, afsnitsnumre, ornamenter og afsluttende krediteringer.
+En overskrift direkte efterfulgt af vers uden en mellemliggende blanklinje
+fritager derimod ikke afstanden.
+
+Hver poesiblok vurderes for sig. Linjer med kun mellemrum eller tabulatorer
+regnes som blanke; afstand ved blokgrænser samt blanklinjer i noter,
+fodnoter og XML-kommentarer tælles ikke med. Linjer tælles i kilde-XML'en,
+inklusive inline-markup. Der gættes ikke på strofegrænser eller strofelængde.
+
+Reglen håndhæver kun det beskrevne mønster: flere dobbelte adskillelser
+udløser den ikke, og en afstand på tre eller flere blanklinjer tæller hverken
+som en enkelt eller dobbelt adskillelse. En anden større afstand i samme blok
+fritager ikke den enkeltstående dobbelte afstand.
 
 ## Sections
 
@@ -495,6 +907,10 @@ Noter paa vaerk- og tekstniveau:
 </notes>
 ```
 
+Paa vaerk- og tekstniveau skal `<note>` altid ligge i en `<notes>`-wrapper.
+En direkte `<note>` under `<workhead>` eller `<head>` er ugyldig. Noter og
+fodnoter i selve brødteksten kan fortsat staa direkte i tekstblokkene.
+
 Attributter paa `<note>`:
 
 - `type`: bruges fx til `credits` og `source`.
@@ -506,12 +922,20 @@ kendt, men originalteksten ikke findes i Kalliope. Naar originalteksten findes i
 Kalliope, bruges i stedet en `<xref type="translation" poem="..."/>` i en
 almindelig note.
 
+Kildeproveniens skal angives med `<source>`. Brug ikke en `<note>` med
+formuleringen »Teksten følger ...« som erstatning for en struktureret kilde.
+
 Noter i selve teksten kan skrives som `<note>` eller `<footnote>` i tekstblokkene:
 
 ```xml
 Linje med note<note>Tekstkritisk note.</note>
 Prosatekst<footnote>Fodnote.</footnote>
 ```
+
+I `<poetry>` skal noten stå på samme linje som det ord, vers eller den
+overskrift, den henviser til. En note må ikke stå alene på en linje, heller
+ikke når den er trykt nederst på en side i kilden: det giver en løsrevet
+notemarkør. Renderingen placerer selv noteteksten under digtet.
 
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
@@ -522,9 +946,7 @@ Links i noter og fodnoter indgaar i referenceopsamlingen.
 Lokalt billede:
 
 ```xml
-<picture src="1856-p1.jpg" type="titlepage" primary="true">
-  Titelbladet til <i>Lyngblomster</i>.
-</picture>
+<picture src="1856-p1.jpg" type="titlepage" primary="true"><transcription>Lyngblomster / af / Erica. // Kjøbenhavn. / Boghandler G. E. C. Gad. / Thieles Bogtrykkeri. / 1856.</transcription></picture>
 ```
 
 Fælles artwork:
@@ -542,14 +964,26 @@ Portraet:
 Attributter:
 
 - `src`: lokalt billede. Relative paths slaas op under `/images/<digter>`.
+- `href`: eksplicit link til billedets kildeside. Vises som et linkikon ved billedteksten
+  og har forrang for et link dannet af museumsmetadata.
 - `artwork`: reference til et billede i `content/artwork.xml` eller `fdirs/<kunstner>/artwork.xml`.
 - `portrait`: reference til et portraet i `fdirs/<digter>/portraits.xml`.
 - `primary="true"`: markerer primaert billede.
 - `year`: aar for billedet.
-- `museum`, `objid`, `invnr`, `wikidata`: bruges til museumslinks.
+- `museum`, `objid`, `invnr`: bruges til museumslinks.
 - `clip-path`: bruges til visuel beskæring.
 - `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
 - `lang`: sprog for lokal billedtekst; default er `da`.
+
+Hvert billede med `type="titlepage"` i et værk skal have præcis én ikke-tom
+`<transcription>` med den trykte ordlyd. Brug `/` mellem trykte linjer og `//`
+mellem større afsnit. Bevar stavning, store og små bogstaver samt tegnsætning.
+Hold transskriptionen på én XML-linje uden tabulatorer, linjeskift eller
+indledende og afsluttende whitespace.
+Skriv kun ordlyden i feltet, ikke en indledning som »Titelbladet lyder«.
+En billedtekst er valgfri og bruges kun til oplysninger, som transskriptionen
+ikke allerede giver. Korpustesten håndhæver feltets tilstedeværelse; korrekt
+ordlyd skal kontrolleres mod billedet.
 
 For lokale billeder kan billedteksten enten vaere direkte indhold:
 
@@ -595,26 +1029,34 @@ Almindelige inline-tags:
 
 Links:
 
+I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
+digte, prosa eller citatblokke under `<body>`. Bevar omtalen som almindelig
+tekst i brødteksten, og læg en eventuel redaktionel henvisning i en `<note>`.
+Brug `<footnote>` til fodnoter, der stammer fra kilden, samt til de særskilt
+typemærkede rettelser fra trykte rettelsesark. Linkmetadata som
+`<source href="...">` er ikke inline-links og er fortsat tilladt.
+
 ```xml
-<a poet="heine">Heine</a>
-<a person="steffens">Steffens</a>
-<a poem="schiller2018011501">Die Goetter Griechenlands</a>
-<a text="...">tekst</a>
-<a keyword="romantikken">romantikken</a>
-<a dict="...">ordbogsopslag</a>
-<a work="goethe/1819">West-oestlicher Divan</a>
-<a href="https://...">eksternt link</a>
-<a bible="bibeljohn03,16">Joh 3,16</a>
+<note>Se <a poet="heine">Heine</a>.</note>
+<note>Se <a person="steffens">Steffens</a>.</note>
+<note>Se <a poem="schiller2018011501">Die Goetter Griechenlands</a>.</note>
+<note>Se <a text="...">teksten</a>.</note>
+<note>Se <a keyword="romantikken">romantikken</a>.</note>
+<note>Se <a dict="...">ordbogsopslaget</a>.</note>
+<note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
+<note>Se <a href="https://...">den eksterne kilde</a>.</note>
+<note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
 ```
 
-`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>` i noter og tekst:
+`<xref ...>` er en genvej, der i buildet omskrives til `<a ...>`. I værkfiler
+skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
-<xref poem="schiller2018011501"/>
-<xref type="translation" poem="heine..."/>
-<xref keyword="romantikken"/>
-<xref dict="..."/>
-<xref bible="bibeljohn03,16"/>
+<note>Se <xref poem="schiller2018011501"/>.</note>
+<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Se <xref keyword="romantikken"/>.</note>
+<note>Se <xref dict="..."/>.</note>
+<note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
@@ -630,8 +1072,71 @@ Disse tags paavirker linjenummerering eller linjelayout:
 - `<wrap>...</wrap>`: undgaar poesilinje-layout for lange linjer.
 - `<center>...</center>` og `<right>...</right>`: linjejustering.
 
+`<nonum>` er den yderste markør for en unummereret linje. En eventuel
+linjejustering står inden i `<nonum>`, og typografiske markører står inderst:
+
+```xml
+<nonum><right><i>F. H. Guldberg</i></right></nonum>
+```
+
+En linje må højst have én linjejustering og må derfor aldrig indeholde både
+`<right>` og `<center>`. Typografiske markører som `<i>`, `<small>`, `<w>`,
+`<b>` og `<sc>` kan indlejres i vilkårlig rækkefølge.
+
 Hvis en linje indeholder `<num>` eller `<margin>`, regnes teksten for at have egne
 visningsnumre, og automatisk visning af hver femte linje slaas fra.
+
+### Dramatiske tekster: talere, regi og rollelister
+
+Ved skuespil, versdramaer og dramatiske samtaler skal replikker,
+talerangivelser, sceneintroduktioner og korte regibemærkninger skelnes fra
+hinanden. Kontrollér hver types opsætning i facsimilet; en fælles betegnelse
+som »regi« betyder ikke, at alle linjerne skal have samme formatering.
+
+- **Talerangivelser:** Brug `<nonum>`, så navnet ikke tælles som vers.
+  Gengiv kildens centrering med `<center>` og spatiering med `<w>`; bevar
+  anden dokumenteret fremhævelse. Sæt en blank linje over den næste
+  talerangivelse, men ingen indledende blank linje lige efter `<poetry>`.
+- **Sceneintroduktioner:** Brug `<wrap>` til den sammenhængende prosatekst,
+  når den skal kunne ombrydes naturligt. Tilføj `<small>` og centrering,
+  når facsimilet viser det. Overfør ikke automatisk denne opsætning til
+  alle regibemærkninger.
+- **Korte regibemærkninger mellem repliklinjer:** Gengiv lille skrift med
+  inline-tagget `<small>`. På en selvstændig linje i `<poetry>` omgives
+  bemærkningen også af `<nonum>`. Tilføj ikke automatisk centrering,
+  `<wrap>` eller en blank linje over den.
+- **Skillelinjer:** Gengiv kildens centrerede, korte streg som `---` på
+  en selvstændig linje; den bliver til en centreret vandret streg ved
+  rendering. Kontrollér både overgange ved samtale- og sceneoverskrifter
+  og afsnitsskift inde i teksten uden overskrift. Indsæt kun streger med
+  belæg i facsimilet. Sideskift alene er ikke afsnitsskift.
+
+Eksempler på de forskellige markeringer (ikke et sammenhængende tekstuddrag):
+
+```xml
+<nonum><center><w>Palnatoke.</w></center></nonum>
+<nonum><center><wrap><small>(Palnatoke sad med de ypperste Høvdinge i Salen.)</small></wrap></center></nonum>
+<nonum><small>(Længe grublede han, før han igien kom til Orde.)</small></nonum>
+```
+
+**Rollelister og fortaler** er paratekst. Registrér dem som `<text
+skip-index="true">` med deres sædvanlige `id`, så de bevares i værkets
+indholdsfortegnelse uden at optræde i titel- og førstelinjeindekset.
+Rollelisten »De Talende« har brødtekst i `<prose>`; dette tag udelukker
+ikke i sig selv teksten fra indeks. Formatér listen med ét rolleled pr.
+linje, `<br/>` mellem leddene og fremhævede navne efter kilden, fx:
+
+```xml
+<prose>
+<b>Gorm hin Gamle,</b> Leirekonge.<br/>
+<b>Thyra Danebod,</b> hans Dronning.
+</prose>
+```
+
+En fælles klamme kan gengives med `}` ved den fælles beskrivelse efter
+det sidste navn, som i `grundtvig2026091320` i `fdirs/grundtvig/1861.xml`.
+Arbejdsmarkører som `[shared brace: ...]` må aldrig stå i den færdige tekst.
+En fortale med indlagte vers kan fortsat have både `<prose>` og `<poetry>`.
 
 ## Typiske valideringer og faldgruber
 

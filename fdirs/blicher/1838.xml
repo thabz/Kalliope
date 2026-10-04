@@ -4,8 +4,12 @@
   <title>Trækfuglene</title>
   <subtitle>Naturconcert</subtitle>
   <year>1838</year>
+  <identifiers>
+    <wikidata>Q12339838</wikidata>
+    <openlibrary-work>OL45398115W</openlibrary-work>
+  </identifiers>
   <pictures>
-    <picture type="titlepage" src="1838-p1.jpg">Titelbladet til <i>Trækfuglene</i> (1838) lyder ,,Trækfuglene. / Naturconcert / af / Steen Steensen Blicher. // Randers. / Trykt, paa Boghandler Smiths Forlag, / hos J. M. Elmenhoff.</picture>
+    <picture type="titlepage" src="1838-p1.jpg"><transcription>Trækfuglene. / Naturconcert / af / Steen Steensen Blicher. // Randers. / Trykt, paa Boghandler Smiths Forlag, / hos J. M. Elmenhoff.</transcription></picture>
   </pictures>
   <source facsimile="11530804553D" facsimile-pages-num="64" facsimile-pages-offset="6">St. St. Blicher: <i>Trækfuglene</i>, Boghandler Smiths Forlag, Randers, 1838.</source>
 </workhead>
@@ -16,6 +20,7 @@
   <title>Præludium</title>
   <firstline>Sig nærmer Tiden, da jeg maa væk</firstline>
   <source pages="3-4"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -1173,8 +1178,8 @@ At Kjerlighed kommer med Tiden.
   <title><num>25.</num>Hejren</title>
   <firstline>Der kommer Hejren i Bølgeflugt</firstline>
   <source pages="43-44"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>christian4</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1307,11 +1312,11 @@ Sødere jeg drømte.
 <head>
   <title><num>27.</num>Gjøgen</title>
   <firstline>Min Søn! om Du vil i Verden frem</firstline>
-  <source pages="47-50"/>
   <notes>
     <note>Sven Sørensen skriver: Digtet travesterer W. H. F. Abrahamsons <xref poem="abrahamsonandrea0"/>. Med titlen ,,Gjøgesang'' blev digtet trykt 1822 i tidsskriftet <i>Harpen</i>; senere omarbejdede Blicher det, hvorved antallet af strofer blev skåret ned til under det halve. Det er denne sidste version som er gengivet her. En interessant analyse af digtet findes hos Björn von Törne, pp. 137-143.</note>
     <note>Cf. Törne, Björn von: <i>Zwischen Loyalität und Servilität: Steen Steensen Blichers politische Publizistik und ihre Voraussetzungen</i>, (Skandinavistische Studien, 12.), Neumünster, 1980.</note>
   </notes>
+  <source pages="47-50"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

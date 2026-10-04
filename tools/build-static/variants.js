@@ -11,12 +11,9 @@ import {
   normalizeTimelineDate,
 } from '../../common/dates.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
-import { sourceWorkFilename, sourceWorkKey } from './anthologies.js';
+import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
 
-const variantDate = (text, work) =>
-  normalizeTimelineDate(
-    text.dates?.written ?? text.dates?.published ?? work.published ?? work.year
-  );
+const variantDate = work => normalizeTimelineDate(work.year);
 
 const build_variants = (collected) => {
   let variants_map = globalForceReload
@@ -38,7 +35,8 @@ const build_variants = (collected) => {
       if (!fileExists(filename)) {
         return;
       }
-      if (!force_reload && !isFileModified(filename)) {
+      const fileModified = isFileModified(filename);
+      if (!force_reload && !fileModified) {
         return;
       }
       let doc = loadXMLDoc(filename);
@@ -116,8 +114,8 @@ const resolve_variants = (poemId, collected) => {
     }
     const workA = collected.works.get(sourceWorkKey(metaA));
     const workB = collected.works.get(sourceWorkKey(metaB));
-    const dateA = variantDate(metaA, workA);
-    const dateB = variantDate(metaB, workB);
+    const dateA = variantDate(workA);
+    const dateB = variantDate(workB);
     if (dateA == null || dateB == null) {
       if (dateA == null && dateB != null) {
         return 1;

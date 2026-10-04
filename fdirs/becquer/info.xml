@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="becquer" country="un" lang="es" type="poet">
+  <name>
+    <firstname>Gustavo Adolfo</firstname>
+    <lastname>Bécquer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1836-02-17</date>
+      <place>Sevilla</place>
+    </born>
+    <dead>
+      <date>1870-12-22</date>
+      <place>Madrid</place>
+    </dead>
+  </period>
+  <literary-periods>es-romantik</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q203715</wikidata>
+    <wikipedia-en>Gustavo Adolfo Bécquer</wikipedia-en>
+    <wikipedia-fr>Gustavo Adolfo Bécquer</wikipedia-fr>
+    <wikipedia-de>Gustavo Adolfo Bécquer</wikipedia-de>
+    <viaf>39390815</viaf>
+    <gnd>11890423X</gnd>
+  </identifiers>
+</person>

@@ -6,6 +6,7 @@
   <year>1915</year>
   <notes>
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note>Titelbladets motto ,,Gutta cavat lapidem'' er fra Ovids <xref poem="ovid2026083024,5"/>.</note>
   </notes>
   <pictures>
     <picture src="1915-p1.jpg">Titelbladet til <i>Slyngrose</i> (1915) lyder ,,Slyngrose / og andre Digte / af / Aage Matthison-Hansen // Gutta cavat lapidem. / Ovid // København / J. L. Lybeckers Forlag / 1915''.</picture>
@@ -275,6 +276,7 @@ Alt, hvad han om vort fjerne Hjemland véd,
   <title>Sjællands Kyst</title>
   <firstline>Paa det brede Bondeland</firstline>
   <source pages="8"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -392,6 +394,7 @@ at dalre bort i Himlens dybe Blaa.
   <toctitle>Fra den jyske Vestkyst 1-2</toctitle>
   <firstline>Hvor Synskredsen trindt er randet</firstline>
   <source pages="12-13"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -744,6 +747,7 @@ fulgt af to vilde Hunde, der halsede af Harm.
   <title>Folkevise</title>
   <firstline>Der er en fager Blomsterbrud</firstline>
   <source pages="24"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -771,6 +775,7 @@ og er just Brud i dette Aar!
   <title>Blomsten</title>
   <firstline>I Hjertet er Regn og Kulde</firstline>
   <source pages="25"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -880,31 +885,31 @@ hører jeg ofte dem sukke:
 <poetry>
 <nonum><i>Adelaide Ristori:</i></nonum>
 
-  Dit Barn du bag Kulissen kunde amme
-  og næste Nu i tragisk Patos flamme!
+Dit Barn du bag Kulissen kunde amme
+og næste Nu i tragisk Patos flamme!
 
 
 <nonum><i>Med en Tegning forestillende Budha og en død Skildpadde:</i></nonum>
 
-  Langsom er Sjælenes Verdensforstand,
-  Skildpaddens Gang over Ørkenens Sand.
+Langsom er Sjælenes Verdensforstand,
+Skildpaddens Gang over Ørkenens Sand.
 
 
 <nonum><i>Vistnok er Verden:</i></nonum>
 
-    Vistnok er Verden Musik
-      og følger de evige Love:
-    men de er ukendt for os
-      og Rummet har talløse Stjerner,
-    der i det fjerneste funkler
-      med uudforskelig Glans.
+  Vistnok er Verden Musik
+    og følger de evige Love:
+  men de er ukendt for os
+    og Rummet har talløse Stjerner,
+  der i det fjerneste funkler
+    med uudforskelig Glans.
 
 
 <nonum><i>Til Ferdinand Bauditz. 29/3 1912:</i></nonum>
 
-  Saa hvil da sødt! Sangfugle har ej glemt
-  du var en Fugle ven, i deres Bryst blev gemt
-  èn Lovsangstone kun for dig bestemt.
+Saa hvil da sødt! Sangfugle har ej glemt
+du var en Fugle ven, i deres Bryst blev gemt
+èn Lovsangstone kun for dig bestemt.
 </poetry>
 </body>
 </text>
@@ -918,7 +923,7 @@ hører jeg ofte dem sukke:
 </head>
 <body>
 <poetry>
-<nonum><small><center>Dvóřak: Kvartet i D. moll. Op. 34.</center></small></nonum>
+<nonum><center><small>Dvóřak: Kvartet i D. moll. Op. 34.</small></center></nonum>
 
 Bækkens Vande saa tungsindigt ile,
 langs med Bredden staa de gamle Pile.
@@ -1136,10 +1141,10 @@ for sin egen Haand.
   <title>Guldbrylluppet</title>
   <subtitle>18. Maj 1913</subtitle>
   <firstline>Der gynger Æbleblomster</firstline>
-  <source pages="36-37"/>
   <dates>
     <event>1913-05-18</event>
   </dates>
+  <source pages="36-37"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1299,13 +1304,13 @@ kækt som en brusende Ørn!
   <title>Franz Neruda</title>
   <subtitle>25. Marts 1915</subtitle>
   <firstline>Neruda er død! - Neruda!</firstline>
+  <dates>
+    <written>1915-03-25</written>
+  </dates>
   <notes>
     <note>Franz Xaver Victor Neruda (1843-1915), tjekkisk-dansk cellist, dirigent og komponist.</note>
   </notes>
   <source pages="42"/>
-  <dates>
-    <written>1915-03-25</written>
-  </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1327,13 +1332,13 @@ over hans Grav!
   <title>Til Sophus Michaëlis</title>
   <subtitle>15. December 1913</subtitle>
   <firstline>Lykkelige Formens Mester</firstline>
+  <dates>
+    <event>1913-12-15</event>
+  </dates>
   <notes>
     <note>Michaëlis' <xref poem="michaelis2017102404"/> og <xref poem="michaelis2017102401"/> omtales.</note>
   </notes>
   <source pages="43"/>
-  <dates>
-    <event>1913-12-15</event>
-  </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1413,14 +1418,15 @@ Ypperstepræster.
 <head>
   <title>Walter Crane og Mary Frances Crane</title>
   <firstline>Fra Himalaya de kom til mit Hjem</firstline>
-  <source pages="46"/>
   <notes>
     <note>Walter Crane (1845-1915), engelsk kunster og bogillustator.</note>
     <note>Se også Matthison-Hansens <xref poem="matthison2019051632"/>.</note>
   </notes>
   <pictures>
-    <picture src="matthison2019051543-p1.jpg">Sir Edward Coley Burne-Jones: <i>The Mirror of Venus</i>, 1898, olie på lærred, 120 × 200 cm, Gulbenkian Foundation, Lissabon. <a href="https://gulbenkian.pt/museu/en/works_museu/the-mirror-of-venus/">⌘</a></picture><!-- -->
+    <picture src="matthison2019051543-p1.jpg">Sir Edward Coley Burne-Jones: <i>The Mirror of Venus</i>, 1898, olie på lærred, 120 × 200 cm, Gulbenkian Foundation, Lissabon. <a href="https://gulbenkian.pt/museu/en/works_museu/the-mirror-of-venus/">⌘</a></picture>
+    <!-- -->
   </pictures>
+  <source pages="46"/>
   <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1544,7 +1550,7 @@ og øser Guldet ud med begge Hænder.
   <title>Herman Bang</title>
   <firstline>Han var den største - ubestridt</firstline>
   <source pages="50"/>
-  <keywords>bang,lie</keywords>
+  <keywords>bang,lie,knittelvers</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1607,10 +1613,10 @@ drog sære Syner os forbi.
   <title>Jordefærd i Christiania</title>
   <subtitle>18. Marts 1813.</subtitle>
   <firstline>Et heftigt Uvejr raser nu til Morgen</firstline>
-  <source pages="52"/>
   <dates>
     <event>1913-03-18</event>
   </dates>
+  <source pages="52"/>
   <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1640,8 +1646,8 @@ skal her du hvile trygt i Aftensvale.
 <text id="matthison2019051550">
 <head>
   <title>Bjørnstjerne Bjørnson</title>
-  <toctitle>Bjørnstjerne Bjørnson I-III</toctitle>
   <subtitle>1832-1910.</subtitle>
+  <toctitle>Bjørnstjerne Bjørnson I-III</toctitle>
   <firstline>Fik du ved Fødselen</firstline>
   <source pages="53-54"/>
   <keywords>bjoernson</keywords>
@@ -1740,13 +1746,13 @@ sprang tvende Hjerter læk.
 <text id="matthison2019051552">
 <head>
   <title>Rosenborg</title>
-  <toctitle>M. F. Egan: Rosenborg</toctitle>
   <subtitle>(Efter Maurice Francis Egan)</subtitle>
+  <toctitle>M. F. Egan: Rosenborg</toctitle>
   <firstline>En stilfuld Park, Bymure stænger den</firstline>
-  <source pages="56"/>
   <notes>
     <note unknown-original-by="egan" />
   </notes>
+  <source pages="56"/>
   <keywords>christian4,sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1776,13 +1782,14 @@ nu stjerneflimter under Sol og Blæst!
 <text id="matthison2019051553">
 <head>
   <title>Hesperus</title>
-  <toctitle>N. Lenau: Hesperus</toctitle>
   <subtitle>(Efter N. Lenau)</subtitle>
+  <toctitle>N. Lenau: Hesperus</toctitle>
   <firstline>Hesperus, din Straale glider</firstline>
   <notes>
     <note>Gendigtning af Nikolaus Lenau: <xref type="translation" poem="lenau2019051501"/>.</note>
   </notes>
   <source pages="57"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1808,13 +1815,13 @@ ak! og Saligheden med!
 <text id="matthison2019051554">
 <head>
   <title>Sansebedrag</title>
-  <toctitle>N. Lenau: Sansebedrag</toctitle>
   <subtitle>(Efter N. Lenau)</subtitle>
+  <toctitle>N. Lenau: Sansebedrag</toctitle>
   <firstline>Natuglen skriger trist i øde Klippekløfter</firstline>
-  <source pages="58-59"/>
   <notes>
     <note>Gendigtning af Nikolaus Lenaus <xref type="translation" poem="lenau2026072601"/>.</note>
   </notes>
+  <source pages="58-59"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1867,8 +1874,8 @@ er hver dyb Smærte dog en Eremit hernede.
 <text id="matthison2019051555">
 <head>
   <title>Sangen om Nøkkeroserne</title>
-  <toctitle>Wan-chan-lin: Sangen om Nøkkeroserne</toctitle>
   <subtitle>(Efter Wan-chan-lin).</subtitle>
+  <toctitle>Wan-chan-lin: Sangen om Nøkkeroserne</toctitle>
   <firstline>Mellem Nøkkerosers</firstline>
   <source pages="60-61"/>
   <quality>korrektur1,kilde,side</quality>

@@ -839,7 +839,7 @@ Lad Sløret hylle Dig til paany,
 
 <text id="fonss2019101509">
 <head>
-  <title>Søndagmorgen i Luino.</title>
+  <title>Søndagmorgen i Luino</title>
   <subtitle>Sonet</subtitle>
   <firstline>Paa Gaden sværme muntre Pigeklynger</firstline>
   <source pages="36"/>
@@ -874,13 +874,16 @@ bliver Du maaske selv engang i Tiden.
   <title>Foran Lionardos »hellige Nadver«</title>
   <subtitle>Sonet</subtitle>
   <firstline>Har vi vel mere Vidnesbyrd behov</firstline>
-  <source pages="37"/>
   <pictures>
-    <picture src="fonss2019101510-p1.jpg" wikidata="Q128910">
+    <picture src="fonss2019101510-p1.jpg">
       Leonardo da Vinci: <i>Den sidste nadver</i>, 1895-98, tempera, 460 × 880 cm. Santa Maria delle Grazie, Milano.
       <!-- metadata checked: 2026-07-16 -->
+      <identifiers>
+        <wikidata>Q128910</wikidata>
+      </identifiers>
     </picture>
   </pictures>
+  <source pages="37"/>
   <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2223,10 +2226,10 @@ fremstaa for Dig i Rosernes Symbol!
   <title>Ved Kongeparrets Guldbryllup</title>
   <subtitle>(Den 26. Maj 1892).</subtitle>
   <firstline>Kvælden lyser over Strande</firstline>
-  <source pages="103-108"/>
   <dates>
     <event>1892-05-26</event>
   </dates>
+  <source pages="103-108"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

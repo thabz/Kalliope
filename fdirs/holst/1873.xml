@@ -8,7 +8,7 @@
     <note>Noter med en foranstillet asterisk er Holsts egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1873-p1.jpg">Titelbladet til <i>Fra min Ungdom</i> (1873) lyder ,,Fra min Ungdom. / Fortællinger paa Vers / af / H. P. Holst // Med Forfatterens Portrait, / tegnet af V. Marstrand i München 1840. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1873.''</picture>
+    <picture type="titlepage" src="1873-p1.jpg"><transcription>Fra min Ungdom. / Fortællinger paa Vers / af / H. P. Holst // Med Forfatterens Portrait, / tegnet af V. Marstrand i München 1840. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1873.</transcription></picture>
     <picture type="frontpage" src="1873-p2.jpg">Forsiden</picture>
     <picture src="1873-p3.jpg">Forfatterens portræt som tegnet af Vilhelm Marstrand i München.</picture>
   </pictures>
@@ -679,7 +679,7 @@ Og denne Glæde var ægte!
   <indextitle>En Løve</indextitle>
   <firstline>Nu, da Tiden strengt inddriver sit Krav</firstline>
   <source pages="41-45"/>
-  <keywords>frederik6,weyze,hertzh,steffens,dante</keywords>
+  <keywords>frederik6,weyze,hertzh,steffens,dante,oersted</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1794,10 +1794,10 @@ At jeg selv blev varm med det samme.
 <head>
   <title>De oversatte Digte</title>
   <firstline>I Rom traf jeg H. C. Andersen</firstline>
-  <source pages="99-102"/>
   <pictures>
     <picture artwork="hansenc/kuchler-1837" />
   </pictures>
+  <source pages="99-102"/>
   <keywords>andersen,kuchler</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2081,12 +2081,12 @@ Af den Diendes Mund sig bereder.''
 <head>
   <title>Maneer i Kunsten</title>
   <firstline>Thorvaldsen skranted. En heftig Katarrh</firstline>
-  <source pages="114-118"/>
-  <keywords>thorvaldsen,frederik6,ovid,rafael,michelangelo</keywords>
   <pictures>
     <picture artwork="thorvaldsen/1823-gratierne-og-amor" />
     <picture artwork="marstrand/piazza-barberini-1840erne" />
   </pictures>
+  <source pages="114-118"/>
+  <keywords>thorvaldsen,frederik6,ovid,rafael,michelangelo</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2112,7 +2112,7 @@ Naar jeg blot kunde sove om Natten i Ro
 For de Gratier!<note>* Under Thorvaldsens Ophold i Kjøbenhavn i 1839 havde Kongen af Würtemberg gjæstet Rom og aflagt et Besøg i hans Studier, ved hvilken Leilighed han gjorde adskillige Bestillinger og deriblandt paa en Gjentagelse af Gratiegruppen i Marmor. Thorvaldsens skabende Aand tillod ham imidlertid ikke at gjentage; han besluttede der for at omforme Gruppen, og denne rige Composition beskæftigede ham Dag og Nat, da han igjen begyndte at arbeide efter sin Sygdom.</note> ... Det er min Plage!
 
 ,,Hør, kom saa iaften og læs lidt igjen
-Af Ovid<note>* I Vinteren 1841-42 læste jeg saagodtsom hver Aften en Timestid for Thorvaldsen og den Kreds af Danske, der samlede sig omkring ham. ,,Ovids Forvandlinger'', som han ikke havde kjendt tidligere, interesserede ham allermest, og medens jeg læste, sad han gjerne med Blyanten i Haanden og henkastede paa lange Strimler Papir hele Compositioner, der knyttede sig til det Læste.</note> — nu jeg kjender det Meste!
+Af Ovid<note>* I Vinteren 1841-42 læste jeg saagodtsom hver Aften en Timestid for Thorvaldsen og den Kreds af Danske, der samlede sig omkring ham. <a work="ovid/metamorphoses">,,Ovids Forvandlinger''</a>, som han ikke havde kjendt tidligere, interesserede ham allermest, og medens jeg læste, sad han gjerne med Blyanten i Haanden og henkastede paa lange Strimler Papir hele Compositioner, der knyttede sig til det Læste.</note> — nu jeg kjender det Meste!
 Og tag saa et Par af de Andre med
 Saa skal jeg lave Punsch, af den bedste!
 

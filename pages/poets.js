@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -31,8 +31,19 @@ const poetListItem = (poet) => {
         ? null
         : {
             born: period.born == null ? null : { date: period.born.date },
+            baptized:
+              period.baptized == null
+                ? null
+                : { date: period.baptized.date },
             dead: period.dead == null ? null : { date: period.dead.date },
           },
+  };
+};
+
+const periodPoetListItem = (poet) => {
+  return {
+    ...poetListItem(poet),
+    literaryPeriods: poet.literary_periods,
   };
 };
 
@@ -92,12 +103,12 @@ const groupsByYear = (poets, lang, country) => {
       let key = _('Ukendt fødeår', lang);
       if (
         p.period != null &&
-        p.period.born != null &&
-        p.period.born.date !== '?'
+        (p.period.born != null || p.period.baptized != null) &&
+        (p.period.born ?? p.period.baptized).date !== '?'
       ) {
-        const born = parseDate(p.period.born.date);
-        if (born.year != null) {
-          key = poetYearIntervalTitle(born.year);
+        const start = parseDate((p.period.born ?? p.period.baptized).date);
+        if (start.year != null) {
+          key = poetYearIntervalTitle(start.year);
         }
       }
       let group = groups.get(key) || [];
@@ -114,15 +125,15 @@ const groupsByYear = (poets, lang, country) => {
   return sortedGroups.sort(Sorting.poetYearSectionsByTitle);
 };
 
-const groupsByLiteraryPeriod = (periods, lang, country) => {
+const groupsByLiteraryPeriod = (periods, poets, lang, country) => {
   return periods
     .filter(
       period => period.countries.includes(country)
     )
     .map((period) => {
-      const items = period.poets
-        .filter((poet) => poet.country === country)
+      const items = poets
         .filter((poet) => poet.type === 'poet')
+        .filter((poet) => poet.literaryPeriods.includes(period.id))
         .sort(Sorting.poetsByLastnameForCountry(country));
       return {
         title: period.title[lang] ?? period.title.da,
@@ -135,6 +146,35 @@ const groupsByLiteraryPeriod = (periods, lang, country) => {
 const Poets = (props) => {
   const { country, poets, periods, groupBy, error } = props;
   const lang = useContext(LangContext);
+
+  useEffect(() => {
+    if (groupBy !== 'name' || error != null) return;
+
+    const onKeyDown = (event) => {
+      if (
+        event.defaultPrevented ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.key.length !== 1 ||
+        event.target.isContentEditable ||
+        ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)
+      ) {
+        return;
+      }
+
+      const heading = document.getElementById(
+        `poets-letter-${event.key.toUpperCase()}`
+      );
+      if (heading != null) {
+        heading.scrollIntoView();
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [groupBy, error]);
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
@@ -163,7 +203,7 @@ const Poets = (props) => {
       ? groupsByLetter(poets, lang, country)
       : groupBy === 'year'
         ? groupsByYear(poets, lang, country)
-        : groupsByLiteraryPeriod(periods, lang, country);
+        : groupsByLiteraryPeriod(periods, poets, lang, country);
 
   let sections = [];
 
@@ -175,7 +215,11 @@ const Poets = (props) => {
         html: <PoetName poet={poet} lastNameFirst includePeriod />,
       };
     });
-    sections.push({ title: group.title, items });
+    sections.push({
+      title: group.title,
+      items,
+      headingId: groupBy === 'name' ? `poets-letter-${group.title}` : undefined,
+    });
   });
 
   let renderedGroups = <SectionedList sections={sections} />;
@@ -260,17 +304,27 @@ const Poets = (props) => {
 };
 
 Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
-  const json =
+  const [poetsJson, periodsJson] =
     groupBy === 'period'
-      ? await Client.literaryPeriods()
-      : await Client.poets(country);
+      ? await Promise.all([Client.poets(country), Client.literaryPeriods()])
+      : [await Client.poets(country), null];
   return {
     lang,
     country,
     groupBy,
-    poets: json.poets == null ? null : json.poets.map(poetListItem),
-    periods: json.periods ?? null,
-    error: json.error,
+    poets:
+      poetsJson.poets == null
+        ? null
+        : poetsJson.poets.map(
+            groupBy === 'period' ? periodPoetListItem : poetListItem
+          ),
+    periods:
+      periodsJson == null
+        ? null
+        : periodsJson.periods.filter(period =>
+            period.countries.includes(country)
+          ),
+    error: poetsJson.error ?? periodsJson?.error,
   };
 };
 

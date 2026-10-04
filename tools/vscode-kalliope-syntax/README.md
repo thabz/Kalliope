@@ -42,7 +42,9 @@ tilgængelige efter `Developer: Reload Window`; den skal ikke geninstalleres.
 
 Facsimilen åbnes i et panel ved siden af XML-editoren. Når panelet er åbent,
 opdateres det automatisk, når cursoren flyttes til en anden tekst. Panelet kan
-lukkes som en almindelig editorfane.
+lukkes som en almindelig editorfane. Hver facsimileside skaleres efter panelets
+tilgængelige højde, så hele siden er synlig; tekster med flere sider kan rulles
+sidevis.
 
 Extensionen finder siderne ud fra tekstens `<head><source>` og værkets
 `<workhead><source>`. Normalt beregnes facsimilesiden fra `pages` og

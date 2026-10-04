@@ -7,7 +7,7 @@
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1851a-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.''</picture>
+    <picture type="titlepage" src="1851a-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
   <source facsimile="11530806249E_color" facsimile-pages-num="545" facsimile-pages-offset="20">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel I, C. A. Reitzel, Kbh., 1851.</source>
 </workhead>
@@ -1644,6 +1644,7 @@ Er sønderbrudt og knuust af Haschemiden.
   <title>Et Digt af Hafiz</title>
   <firstline>Din Magt, o Kjærlighed, er stærk</firstline>
   <source pages="65-66"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1729,10 +1730,10 @@ Og hvis som Julie du mildt mig hørte!
     <note>* Fra 1826. Det 6te Vers har jeg ikke villet udelade eller forandre, uagtet jeg vel veed, at det intet adæquat Billede indeholder. Men jeg mener, der gives Lignelser, hvis Ligheds-Punkt eller <i>tertium comparationis</i> vel er saare svagt, men der ligefuldt sætte Phantasien saaledes i Bevægelse, at de bidrage meget til at understøtte Hovedtanken, og som henhørende til denne Classe, haaber jeg, det nævnte Vers kan forsvare sin Plads.</note>
     <note>Se også Staffeldts <xref poem="staffeldt2018010471"/>.</note>
   </notes>
-  <source pages="69-71"/>
   <pictures>
     <picture src="hertz2018021820-p1.jpg" museum="uffizi" objid="venere-dei-medici"><i>Venus de' Medici</i>, græsk, 1. årh. fvt., marmor.</picture>
   </pictures>
+  <source pages="69-71"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3899,11 +3900,11 @@ Boer jeg. Skynd dig og kom! - Huset er vist dig bekjendt.
 <head>
   <title>Fornarina</title>
   <firstline>Den skjønne Fornarina</firstline>
-  <source pages="162-163"/>
   <pictures>
     <picture src="hertz2018021838-p1.jpg" museum="barberinicorsini">Raphael: <i>La Fornarina</i>, 1518-19, olie på panel, 85×60cm. Galleria Nazionale d'Arte Antica, Rom.</picture>
     <picture src="hertz2018021838-p2.jpg" museum="pushkin">Giulio Romano: <i>Fornarina</i>, ca. 1520, olie på panel, 111×92cm.</picture>
   </pictures>
+  <source pages="162-163"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4238,7 +4239,7 @@ Der kunde forkynde dets Ære.
 
 Men - udsletter end den rullende Sø
 Hiin Seier, den hjalp til at vinde,
-<w>Den haver den Skjæbne, den aldrig skal døe;</w><note>* <a poet="sorterup">Sorterup</a>.</note>
+<w>Den haver den Skjæbne, den aldrig skal døe;</w><note>* <a poem="sorterup2026081204">Sorterup</a>.</note>
 For Seieren paa den rullende Sø
 Er Menneskets Bryst et Minde.
 Og er end et værdigt Stof for et Digt
@@ -5188,7 +5189,6 @@ Til dem, til hver Idee er anviist Plads,
 Og alle rummes i det samme Glas.
 <nonum><center><i>(Cetera desant.)</i></center></nonum>
 
-
 <nonum><center>II.</center></nonum>
 <nonum><center><small>Prolog, fremsagt ved Selskabets Julefest 1835 i det nye Locale.</small></center></nonum>
 
@@ -5557,6 +5557,7 @@ Han vil husvale og Trøsten sende.
   <toctitle><num>IV.</num>Mimi Collin</toctitle>
   <firstline>Dengang hun laae og leed, af Ømhed pleiet</firstline>
   <source pages="235-236"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5629,10 +5630,10 @@ Stedet, hvor han sover.
   </subtitle>
   <toctitle><num>VI.</num>Fru Esther Nathanson</toctitle>
   <firstline>I Skjønhed formed' her sig hendes Liv</firstline>
-  <source pages="237"/>
   <pictures>
     <picture artwork="eckersberg/familien-nathanson-1818" />
   </pictures>
+  <source pages="237"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5727,7 +5728,7 @@ Med Veemod zittrer i vor Sang.
 </head>
 <body>
 <poetry>
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 
 Til Hvilestedet bæres hen
   En Olding, træt af Aar.
@@ -5749,7 +5750,7 @@ Vi hylded' ham med hvad os gav
   Hans egen, rige Aand.
 
 
-<center><nonum><sc>Romance.</sc></nonum></center>
+<nonum><center><sc>Romance.</sc></center></nonum>
 
 Det var i den dæmrende, tause Nat.
   I Slummer han laae,
@@ -5769,7 +5770,7 @@ Og Sangerens drømmende Liv paa Jord
   Blev endt i en Drøm.
 
 
- <center><nonum><sc>Recitativ.</sc></nonum></center>
+ <nonum><center><sc>Recitativ.</sc></center></nonum>
 
 Af Drømmen, Jordens sidste, blev han vækket
 Ved Engles Hosianna-Sang,
@@ -5787,7 +5788,7 @@ I Engles Chor -
 Men renere, men stærkere de løde.
 
 
-<center><nonum><i>Chor.</i></nonum></center>
+<nonum><center><i>Chor.</i></center></nonum>
 
 Vi prise ham, der drog herfra.
 Hvad han har higet efter, hist ham vorder.
@@ -5808,9 +5809,9 @@ Istemmer Englenes Halleluja.
 </head>
 <body>
 <poetry>
-<center><nonum>Før Talen.</nonum></center>
-<center><nonum><sc>Choral</sc></nonum></center>
-<center><nonum><small>(afsjungen af Skolens yngre Disciple).</small></nonum></center>
+<nonum><center>Før Talen.</center></nonum>
+<nonum><center><sc>Choral</sc></center></nonum>
+<nonum><center><small>(afsjungen af Skolens yngre Disciple).</small></center></nonum>
 
 Til dig, o Gud! vor Tanke gaaer,
     Skjøndt frygtsom end og bly.
@@ -5829,7 +5830,7 @@ Der gjennem dem til os gaaer ud,
     Vor Fader og vor Gud!
 
 
-<center><nonum><sc>Recitativ.</sc></nonum></center>
+<nonum><center><sc>Recitativ.</sc></center></nonum>
 
 ,,Den vilde Sti, det falske Spor
 Advarende skal staa for Den, der lytter
@@ -5846,7 +5847,7 @@ Engang saa stræbende, saa stæk og ung!
 Men Herrens Haand paa den faldt tung.
 
 
-<center><nonum><sc>Solo med Qvartet.</sc></nonum></center>
+<nonum><center><sc>Solo med Qvartet.</sc></center></nonum>
 
 Den Verden, du har peget paa,
 Vel gik den i sin Stræben under;
@@ -5870,15 +5871,15 @@ Vi toge Steen til Templet trygt
 Fra hine glimrende Ruiner.
 
 
-<center><nonum><sc>Efter Talen.</sc></nonum></center>
-<center><nonum><small>Qvartet og Chor (af Skolens yngre Disciple.)</small></nonum></center>
+<nonum><center><sc>Efter Talen.</sc></center></nonum>
+<nonum><center><small>Qvartet og Chor (af Skolens yngre Disciple.)</small></center></nonum>
 
 O du, der hører hvad den Svage beder,
 Bøi til vor Bøn dit Øre ned!
 Hold dine Hænder over Ham, der leder
 Med Kjærlighed og Viisdom vore Fjed!
 
-<center><nonum><sc>Fiirstemmig Sang med Chor.</sc></nonum></center>
+<nonum><center><sc>Fiirstemmig Sang med Chor.</sc></center></nonum>
 
 I denne Bøn fra yngre Læbers Chor,
     O Jubelolding! blander sig en Skare,
@@ -5919,8 +5920,7 @@ Lyt da med venlig Villie til det Chor,
 </head>
 <body>
 <poetry>
-
-<center><nonum><sc>Alferne ved Sorgenfri.</sc></nonum></center>
+<nonum><center><sc>Alferne ved Sorgenfri.</sc></center></nonum>
 
     Forgjæves vi søge,
     Forgjæves vi kalde!
@@ -5940,7 +5940,7 @@ Og sorgfuld er Sorgenfri-Slot.
 Du veed, her er venligt og godt.
 
 
-<center><nonum><sc>Alferne ved Jægersborg.</sc></nonum></center>
+<nonum><center><sc>Alferne ved Jægersborg.</sc></center></nonum>
 
 Søstre fra det Skjønne Sorgenfri!
 Længe har vi hørt paa eders Klage.
@@ -5972,7 +5972,7 @@ Kommer da! En Krands vi binde
 For Uskyldigheds Veninde!
 
 
-<center><nonum><sc>Chor af de Kommende.</sc></nonum></center>
+<nonum><center><sc>Chor af de Kommende.</sc></center></nonum>
 
 Vi bringe Dig, vor Dronning god!
 Vor Hilsen i vor Sang.

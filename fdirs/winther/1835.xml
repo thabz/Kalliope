@@ -11,6 +11,7 @@
     <picture src="1835-p1.jpg">Titelbladet til <i>Nogle Digte</i> (1835) lyder ,,Nogle Digte / af / Christian Winther. // Non è figlia del Sol la Musa mia, / Ne ha cetra d'oro o d'ebano contesta: / È rozza villanuella, e si trastulla / Cantando a aria, conforme le frulla. / Niccolò Forteguerri. // Kjøbenhavn. / Forlagt af Universitets-Boghandler C. A. Reitzel. / Trykt hos Bianco Luno &amp; Schneider. / 1835.''</picture>
   </pictures>
   <source facsimile="115408015221_color" facsimile-pages-num="266" facsimile-pages-offset="14">Christian Winther: <i>Nogle Digte</i>, C.A. Reitzel, Kbh., 1835.</source>
+  <errata status="applied" pages="[241]" facsimile-pages="255"/>
 </workhead>
 <workbody>
 
@@ -159,10 +160,10 @@ Og hver Pande vorde lys!
 <text id="winther2018080704">
 <head>
   <title>Farvel</title>
+  <subtitle>til Henrik Hertz</subtitle>
   <toctitle>Farvel til Henrik Hertz</toctitle>
   <indextitle>Farvel til Henrik Hertz</indextitle>
   <linktitle>Farvel til Henrik Hertz</linktitle>
-  <subtitle>til Henrik Hertz</subtitle>
   <firstline>Naar Engen praler lysegrøn</firstline>
   <source pages="6-8"/>
   <quality>korrektur1,kilde,side</quality>
@@ -358,15 +359,15 @@ Hans herlige Vidunder!
   <title>En Sviptour til Rom</title>
   <subtitle>I det romerske Gilde, 8de Marts 1834</subtitle>
   <firstline>Lytter ei til Nordens Stemme!</firstline>
+  <dates>
+    <event>1834-03-08</event>
+  </dates>
   <notes>
     <note>* Paa den Dag, der helligholdes som <a person="thorvaldsen">Thorwaldsens</a> Fødselsdag, da han første Gang satte Foden paa ,,Byens'' Grund, samles de, der engang vare saa lykkelige at see den ,,evige Stad,'' og søge med Sang og et <i>italiæsnk</i> Maaltid, saa godt det her lader sig gjøre, at gjenkalde sig i Erindringen den Rigdom af Skjønhed i Kunst og Natur, hvoraf de engang i hiint vidunderlige Land selv i Livets lavere Momenter vare omgivne.</note>
   </notes>
   <pictures>
     <picture artwork="kuchler/1831-italienerinde"/>
   </pictures>
-  <dates>
-    <event>1834-03-08</event>
-  </dates>
   <source pages="14-17"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -564,6 +565,7 @@ I Salighed foreente af din Haand.
     <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2026072301"/>.</note>
   </notes>
   <source pages="22-23"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -606,6 +608,7 @@ Enhver sin egen gyldne Tid.
     <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2018101001"/>.</note>
   </notes>
   <source pages="23-24"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1221,7 +1224,7 @@ Der gaaer ei meget Klæde til;
 Kom hid, jeg strax dig maale vil!
 See saa, - Vorherre dig bevare!
 Gaa nu og skin, - kom saa igjen.
-Lys kjønt for Jorden hist, vor Ven,<!-- Jorden] Verden iflg. errataen -->
+Lys kjønt for Jorden<footnote type="errata">Jorden] Verden</footnote> hist, vor Ven,
 At den kan Lygteskatten spare;
 Hvo ret sin Næste tjene vilde,
 End aldrig kommen er for silde!''
@@ -1737,7 +1740,7 @@ Kjæreste min Frue! her har De os atter,
 </body>
 </text>
 
-<text id="winther2018080720">
+<text id="winther2018080720" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til A. M.</title>
   <subtitle>Novbr. 1833</subtitle>
@@ -1871,6 +1874,7 @@ Vintren til en yndig Vaar!
     <note>* Fremsagt paa en Aftenunderholdning af kongl. Skuespiller Hr. Seemann.</note>
   </notes>
   <source pages="75-79"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2356,7 +2360,7 @@ Graaulvens Sang og Skræk og Nød
 Og Bjørnens Dands i Lunden.
 
 Men Drengen var, da han blev stor,
-En Grenadeer saa bister; - <!-- Grenadeer] Greenadeer iflg. errataen. -->
+En Grenadeer<footnote type="errata">Grenadeer] Greenadeer</footnote> saa bister; -
 Af Bjørnens Pels var Huens Foer,
 Af Ulvens hans Tornister.
 </poetry>
@@ -3025,7 +3029,7 @@ End slumre Lærkens Sange.
 
 Der er saa ængsteligt, saa tyst,
 Med Graat er Himlen tjeldet;
-Nysgjerrigt taus, som hviskende,<!-- hvidskende] hviskende iflg. errataen. -->
+Nysgjerrigt taus, som hvidskende,<footnote type="errata">hvidskende] hviskende</footnote>
 Staaer Gran mod Granen hældet.
 
 De stige ned af Hest og Vogn
@@ -3477,7 +3481,7 @@ Men Æren - dig betalde.
 
 Du tør mig dømme, - Hine ei, -
 De veed ei, hvad de gjøre!
-Saa svar mig: veeg jeg fra din Vei?<!-- din] min iflg. errataen -->
+Saa svar mig: veeg jeg fra din<footnote type="errata">din] min</footnote> Vei?
 Og hvor vil du mig føre?'' -
 
 Men det blev ikke mere lyst
@@ -3493,7 +3497,7 @@ Hver Dag blev Svøben større.
 Da kaldte han en Nat paa Ham,
 Hvis Navn jeg tør ei nævne;
 Han kom i al sin Rædselsbram
-Ind gjennem Murens Revne.<!-- gjennem] igjennem iflg. errataen -->
+Ind gjennem<footnote type="errata">gjennem] igjennem</footnote> Murens Revne.
 
 ,,Jeg knuser ei dit sorte Buur, -
 Dertil jeg er for ringe;
@@ -4558,7 +4562,7 @@ Kan du jo takke Gud, jeg kom!''
    Det Aften var; Høstsolen alt
 Bag Nattens brune Teppe faldt;
 Tykt Mørke dækked Skov og Slot,
-Rigt guldbrodeert var Himlens Blaat.<!-- Rigt] Riigt iflg. errataen -->
+Rigt<footnote type="errata">Rigt] Riigt</footnote> guldbrodeert var Himlens Blaat.
 Paa Høien hist, hvor smalle Sti
 Langs Søen slynger sig forbi,
 En Vandrer eensom stille stod,
@@ -4635,13 +4639,12 @@ Det var de Tvendes Brudenat!
 <text id="winther2002062304">
 <head>
   <title>Det første Møde</title>
-  <toctitle>Det første Møde</toctitle>
-  <indextitle>Det første Møde</indextitle>
   <firstline>See, Sneen lægger sin Pude</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="191-199"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4867,8 +4870,6 @@ Hvad faaer jeg nu for min Sang?
 <text id="winther2002062305">
 <head>
   <title>Besøget</title>
-  <toctitle>Besøget</toctitle>
-  <indextitle>Besøget</indextitle>
   <firstline>I Dalen der, hvor Veien bugter</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
@@ -4983,8 +4984,6 @@ Med salig Frihed til min Barm.
 <text id="winther2002062306">
 <head>
   <title>Hjemreisen</title>
-  <toctitle>Hjemreisen</toctitle>
-  <indextitle>Hjemreisen</indextitle>
   <firstline>Din Moder mener selv, at bedst</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
@@ -5228,8 +5227,6 @@ Og Balder, Pudelhunden.
 <text id="winther2002062307">
 <head>
   <title>Tordenveiret om Natten</title>
-  <toctitle>Tordenveiret om Natten</toctitle>
-  <indextitle>Tordenveiret om Natten</indextitle>
   <firstline>Staa op, Annette! - Barn! det tordner</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
@@ -5317,13 +5314,12 @@ Min Elsktes Læber kysset har.
 <text id="winther2002062308">
 <head>
   <title>Vandring til Landsbyen</title>
-  <toctitle>Vandring til Landsbyen</toctitle>
-  <indextitle>Vandring til Landsbyen</indextitle>
   <firstline>Jo, du skal kjønt spadsere med</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="219-221"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5394,8 +5390,6 @@ Her boer en - Kurvemager.
 <text id="winther2002062309">
 <head>
   <title>Kanefarten</title>
-  <toctitle>Kanefarten</toctitle>
-  <indextitle>Kanefarten</indextitle>
   <firstline>Nu god Nat! - Gaa ind, min Frue!</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
@@ -5454,7 +5448,7 @@ See, hvor dybt sørgmodig hælder
 Granens Top, med Snee beladt;
 Hør, hvor muntert vore Bjelder
 Ringle gjennem Skov og Krat;
-Sælsomt disse Ellestammer <!-- Sælsomt] Selsomt iflg. errataen -->
+Sælsomt<footnote type="errata">Sælsomt] Selsomt</footnote> disse Ellestammer
 Dandse os i Rad forbi,
 Maanens Flammer
 Fylder Alt med Trylleri.
@@ -5699,8 +5693,6 @@ Ak, hvad er det for et Brev?''
 <text id="winther2002062310">
 <head>
   <title>Den sidste Aften</title>
-  <toctitle>Den sidste Aften</toctitle>
-  <indextitle>Den sidste Aften</indextitle>
   <firstline>Jeg spænder min Spore, jeg griber min Hat</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
@@ -5784,6 +5776,7 @@ Det sidste - og dette!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 

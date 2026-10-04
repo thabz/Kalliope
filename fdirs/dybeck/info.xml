@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dybeck" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Richard</firstname>
+    <lastname>Dybeck</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1811-09-01</date>
+    </born>
+    <dead>
+      <date>1877-07-28</date>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q1384083</wikidata>
+    <wikipedia-da>Richard Dybeck</wikipedia-da>
+    <wikipedia-en>Richard Dybeck</wikipedia-en>
+    <wikipedia-fr>Richard Dybeck</wikipedia-fr>
+    <wikipedia-de>Richard Dybeck</wikipedia-de>
+    <gravsted-dk>richarddybeck</gravsted-dk>
+    <viaf>61920369</viaf>
+    <gnd>143998366</gnd>
+    <runeberg-org>dybecric</runeberg-org>
+  </identifiers>
+</person>

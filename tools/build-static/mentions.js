@@ -103,7 +103,7 @@ const build_person_or_keyword_refs = (collected) => {
     },
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
     {
-      regexp: /picture[^>]*(?:artwork|ref)="([^"]*)"/g,
+      regexp: /picture[^>]*\s(?:artwork|ref)="([^"]*)"/g,
       type: 'pictureref',
     },
   ];
@@ -116,10 +116,11 @@ const build_person_or_keyword_refs = (collected) => {
         return;
       }
       knownFiles.add(filename);
+      const fileModified = isFileModified(filename);
       if (
         !forced_reload &&
         refsByFile.has(filename) &&
-        !isFileModified(filename)
+        !fileModified
       ) {
         return;
       } else {

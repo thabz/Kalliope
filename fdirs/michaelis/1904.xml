@@ -8,7 +8,7 @@
   </notes>
   <pictures>
     <picture type="frontpage" src="1904-p2.jpg">Forsiden til <i>Palmerne</i> (1904).</picture>
-    <picture type="titlepage" src="1904-p1.jpg">Titelbladet til <i>Palmerne</i> (1904). ,,Sophus Michaëlis / Palmerne / Digte // Gyldendalske Boghandel / Nordisk Forlag / København 1904 Kristiania''.</picture>
+    <picture type="titlepage" src="1904-p1.jpg"><transcription>Sophus Michaëlis / Palmerne / Digte // Gyldendalske Boghandel / Nordisk Forlag / København 1904 Kristiania</transcription></picture>
   </pictures>
   <source facsimile="11530807864B_color" facsimile-pages-num="158" facsimile-pages-offset="6">Sophus Michaëlis: <i>Palmerne</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1904.</source>
 </workhead>
@@ -1436,15 +1436,15 @@ i hver Draabe skinner.
 <head>
   <title>Borgkastellanens Datter</title>
   <firstline>Jeg vaagned en Sommermorgen i det skønne rige Land</firstline>
-  <source pages="76-77"/>
-  <quality>korrektur1,kilde,side</quality>
   <dates>
     <written>1900-08-03</written>
   </dates>
+  <source pages="76-77"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>Pierrefonds 3. Avg. 1900.</small></right></wrap></nonum>
+<nonum><right><wrap><small>Pierrefonds 3. Avg. 1900.</small></wrap></right></nonum>
 
 Jeg vaagned en Sommermorgen i det skønne rige Land
 og stirred i Rhonedalens dybe Søers Spejle,
@@ -1898,16 +1898,16 @@ vide over Landet øjnes.
 <head>
   <title>Tyge Brahe</title>
   <firstline>De samme Stjerner gaar i Nat</firstline>
-  <source pages="96-98"/>
-  <keywords>brahe</keywords>
   <dates>
     <written>1901-10-24</written>
   </dates>
+  <source pages="96-98"/>
+  <keywords>brahe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>24. Oktbr. 1901.</small></right></wrap></nonum>
+<nonum><right><wrap><small>24. Oktbr. 1901.</small></wrap></right></nonum>
 
 De samme Stjerner gaar i Nat
 den gyldne Gang paa Himlens Hvalv,
@@ -1970,15 +1970,15 @@ dit Navn som Morgenstjerne tændt.
 <head>
   <title>Anden April</title>
   <firstline>Skvulper ind fra Kongedyb</firstline>
-  <source pages="99-101"/>
   <dates>
     <written>1901-04-02</written>
   </dates>
+  <source pages="99-101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>2. April 1901.</small></right></wrap></nonum>
+<nonum><right><wrap><small>2. April 1901.</small></wrap></right></nonum>
 
 Skvulper ind fra Kongedyb,
 strøt med Sol, det blanke Sund
@@ -2050,11 +2050,11 @@ toner op fra Kongedyb.
 <head>
   <title>Bjørnstjerne Bjørnson</title>
   <firstline>Alle Kongeørne flyve</firstline>
-  <source pages="102-108"/>
-  <keywords>bjoernson</keywords>
   <dates>
     <written>1902-12-08</written>
   </dates>
+  <source pages="102-108"/>
+  <keywords>bjoernson</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2208,16 +2208,16 @@ i dette Tempel véd vi, han er Præst,
 <head>
   <title>Sophus Schandorph</title>
   <firstline>Kære gamle Digter</firstline>
-  <source pages="109-110"/>
   <dates>
     <written>1901-01-06</written>
   </dates>
+  <source pages="109-110"/>
   <keywords>elegi,schandorph</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>6. Jan. 1901.</small></right></wrap></nonum>
+<nonum><right><wrap><small>6. Jan. 1901.</small></wrap></right></nonum>
 
 Kære gamle Digter,
 svandt i Vinterkulden
@@ -2254,15 +2254,15 @@ Lunets Latterkilde.
 <head>
   <title>Harald Høffding</title>
   <firstline>Giv et Sted, hvor jeg kan staa</firstline>
-  <source pages="111-113"/>
   <dates>
     <written>1903-03-11</written>
   </dates>
+  <source pages="111-113"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>11. Marts 1903.</small></right></wrap></nonum>
+<nonum><right><wrap><small>11. Marts 1903.</small></wrap></right></nonum>
 
 Giv et Sted, hvor jeg kan staa,
 saa skal Verden jeg bevæge,
@@ -2331,15 +2331,15 @@ mange Tusind bringer Tak!
 <head>
   <title>Kristian Zahrtmann</title>
   <firstline>Ja, vi elsker Zahrtmanns stærke</firstline>
-  <source pages="114-116"/>
   <dates>
     <written>1903-03-31</written>
   </dates>
+  <source pages="114-116"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>31. Marts 1903.</small></right></wrap></nonum>
+<nonum><right><wrap><small>31. Marts 1903.</small></wrap></right></nonum>
 
 Ja, vi elsker Zahrtmanns stærke
 I solskinsfødte Kunst,
@@ -2436,7 +2436,7 @@ afsindsdybt i Øjet brænder.
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>Til Edith Brandes’ Stambog.</small></right></wrap></nonum>
+<nonum><right><wrap><small>Til Edith Brandes’ Stambog.</small></wrap></right></nonum>
 
 Drypne hed Odins Ring
 — den drypped ni nye Ringe
@@ -2475,7 +2475,7 @@ Ringen er bleven en Hær.
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>Decbr. 1903.</small></right></wrap></nonum>
+<nonum><right><wrap><small>Decbr. 1903.</small></wrap></right></nonum>
 
 Døden glimter gennem Verden,
 Pustet af dens Is-Forhærden
@@ -2562,15 +2562,15 @@ endnu skøn og hed af Lød.
 <head>
   <title>Axel Vadum</title>
   <firstline>Hvem han var? - En af dem</firstline>
-  <source pages="125-128"/>
   <dates>
     <written>1904-07-20</written>
   </dates>
+  <source pages="125-128"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>20. Juli 1904.</small></right></wrap></nonum>
+<nonum><right><wrap><small>20. Juli 1904.</small></wrap></right></nonum>
 
 Hvem han var? — En af dem,
 som først Dødslistens Tryk
@@ -2749,15 +2749,15 @@ saa vor Frihed forlanger Oprejsning.
 <head>
   <title>En Sang om Telegrafen</title>
   <firstline>Før var det Odins Ravne</firstline>
-  <source pages="133-135"/>
   <dates>
     <written>1904-02-02</written>
   </dates>
+  <source pages="133-135"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap><right><small>2. Febr. 1904.</small></right></wrap></nonum>
+<nonum><right><wrap><small>2. Febr. 1904.</small></wrap></right></nonum>
 
 Før var det Odins Ravne,
 der Bud om Verden fløj,

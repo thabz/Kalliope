@@ -3,6 +3,7 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
+import FacsimileLink from '../components/facsimilelink.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
@@ -26,6 +27,7 @@ const WorkPage = (props) => {
     poet,
     work,
     notes,
+    errata = [],
     pictures,
     toc,
     subworks,
@@ -50,8 +52,21 @@ const WorkPage = (props) => {
       </Note>
     );
   });
+  const renderedErrata = errata.map((entry, index) => (
+    <Note key={`errata-${index}`} type="errata">
+      Trykkets{' '}
+      <FacsimileLink
+        poetId={poet.id}
+        facsimile={entry.facsimile}
+        pageCount={entry.facsimilePageCount}
+        firstPage={entry.facsimilePages[0]}>
+        rettelsesliste
+      </FacsimileLink>{' '}
+      på s. {entry.pages} er indført.
+    </Note>
+  ));
 
-  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} work={work} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
@@ -69,6 +84,7 @@ const WorkPage = (props) => {
   if (
     pictures.length > 0 ||
     notes.length > 0 ||
+    errata.length > 0 ||
     completedStatus != null ||
     modifiedDate != null
   ) {
@@ -77,6 +93,7 @@ const WorkPage = (props) => {
         <Stack spacing="20px">
           {renderedPictures}
           {renderedNotes}
+          {renderedErrata}
           {completedStatus}
           {modifiedDate}
         </Stack>
@@ -84,22 +101,21 @@ const WorkPage = (props) => {
     );
   }
   let table = null;
+  let ogDescription = null;
   if (toc != null && toc.length > 0) {
     table = <TOC toc={toc} lang={lang} />;
+    ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
     table = <WorksList lang={lang} poet={poet} works={subworks} />;
+    ogDescription = subworks
+      .map((part) => part.toctitle.title)
+      .join(', ');
   } else {
     table = (
       <div className="nodata">
         <i>Kalliope indeholder endnu ingen tekster fra dette værk.</i>
       </div>
     );
-  }
-  let ogDescription = null;
-  if (toc != null && toc.length > 0) {
-    ogDescription = toc.map((part) => part.title).join(', ');
-  } else if (subworks != null && subworks.length > 0) {
-    ogDescription = subworks.map((part) => part.toctitle).join(', ');
   }
 
   let paging = {};
@@ -170,6 +186,7 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     toc: json.toc,
     subworks: json.subworks,
     notes: json.notes,
+    errata: json.errata,
     pictures: json.pictures,
     modified: json.modified,
     prev: json.prev,

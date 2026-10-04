@@ -8,7 +8,7 @@
     <note>Dette er en af de ældste digtsamlinger i Kalliope sat med bolle-å og som skriver fællesnavne med små begyndelsesbogstaver. Litteraturhistoriker og sprogvidenskabsmand Svend Grundtvig skriver således allerede i 1860erne, men først med retskrivningsreformen fra 1948 indføres det i almindelighed.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1897-p1.jpg">Titelbladet til <i>Røster</i> (1897). ,,Niels Møller / Røster / Digte // København / Det Nordiske Forlag / Bogforlaget / Ernst Bojesen / 1897''.</picture>
+    <picture type="titlepage" src="1897-p1.jpg"><transcription>Niels Møller / Røster / Digte // København / Det Nordiske Forlag / Bogforlaget / Ernst Bojesen / 1897</transcription></picture>
   </pictures>
   <source facsimile="11530808145B" facsimile-pages-num="118" facsimile-pages-offset="12">Niels Møller: <i>Røster</i>, Det nordiske Forlag, Kbh., 1897.</source>
 </workhead>
@@ -352,8 +352,8 @@ og tiden tiden hævner.
   <title>Sommermorgen</title>
   <firstline>Vindskyggen drager dunkel på det blanke</firstline>
   <source pages="18"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -466,8 +466,8 @@ og den frie fugl i lunden fløjter bag det lette løv.
   <title>Sonetter</title>
   <firstline>Her er det gode gamle, som vi kender</firstline>
   <source pages="24-25"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -518,10 +518,10 @@ og søge Miltons kongelige vers.
 <text id="moellern2017091908">
 <head>
   <title>Khamsin</title>
-  <firstline>O, ørkenens vind drog ind!</firstline>
   <subtitle>
     <line>Af Clinton Scollard</line>
   </subtitle>
+  <firstline>O, ørkenens vind drog ind!</firstline>
   <notes>
     <note>Gendigtning af Clinton Scollards <xref type="translation" poem="scollard2017091901"/>.</note>
   </notes>
@@ -588,8 +588,8 @@ til et ræddeligt råb om en grufuld gæst.
   <title>Sonet</title>
   <firstline>Den tyste nat i vide ringe rundes</firstline>
   <source pages="29"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1691,6 +1691,7 @@ min fjende død ved træet lå.
     <note>Gendigtning af William Blakes <xref type="translation" poem="blake1999041338"/> fra <i>Songs of Innocence and of Experience</i> (1794).</note>
   </notes>
   <source pages="75-76"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

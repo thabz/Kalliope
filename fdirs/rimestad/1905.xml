@@ -272,7 +272,6 @@ Bestandigt, som en Tørst, det svide skal hans Mund.
 <text id="rimestad2019030504">
 <head>
   <title><num>I.</num>I Morgen sker det! Regnens lunkne Lyd</title>
-  <toctitle><num>I.</num>I Morgen sker det! Regnens lunkne Lyd</toctitle>
   <indextitle>I Morgen sker det! Regnens lunkne Lyd</indextitle>
   <linktitle>I Morgen sker det! Regnens lunkne Lyd</linktitle>
   <firstline>I Morgen sker det! Regnens lunkne Lyd</firstline>
@@ -306,7 +305,6 @@ Det skøre Guld den sorte Jord bestrør.
 <text id="rimestad2019030505">
 <head>
   <title><num>II.</num>Du duftende Skov, som dugberuset skinner!</title>
-  <toctitle><num>II.</num>Du duftende Skov, som dugberuset skinner!</toctitle>
   <indextitle>Du duftende Skov, som dugberuset skinner!</indextitle>
   <linktitle>Du duftende Skov, som dugberuset skinner!</linktitle>
   <firstline>Du duftende Skov, som dugberuset skinner!</firstline>
@@ -837,10 +835,10 @@ til jeg sidder alene - forladt.
   <title>Uklar Himmel</title>
   <subtitle>(Efter Baudelaire)</subtitle>
   <firstline>En Damp det er, som varsomt de Slør og Skygger tegner</firstline>
-  <source pages="36"/>
   <notes>
     <note>Gendigtning af Baudelaire: <xref type="translation" poem="baudel1999070167"/>.</note>
   </notes>
+  <source pages="36"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1089,8 +1087,8 @@ Saa svømmer Sydens Mørke, uden Bund.
   <title>Høstnat</title>
   <firstline>Det var fra Dybet af en høstlig Nat</firstline>
   <source pages="47"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1122,8 +1120,8 @@ hvor <i>du</i> er slettet ud, for evigt død!
   <title>En Aften</title>
   <firstline>Svøbt ind i Aftenlys og løst fra Minder</firstline>
   <source pages="48"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1304,7 +1302,6 @@ Og langsomt alle Kvinderne i Husene sig skjule.
 <text id="rimestad2019030526">
 <head>
   <title><num>I.</num>Hvor er du nu? Dit Minde suger mig i Brystet</title>
-  <toctitle><num>I.</num>Hvor er du nu? Dit Minde suger mig i Brystet</toctitle>
   <indextitle>Hvor er du nu? Dit Minde suger mig i Brystet</indextitle>
   <linktitle>Hvor er du nu? Dit Minde suger mig i Brystet</linktitle>
   <firstline>Hvor er du nu? Dit Minde suger mig i Brystet</firstline>
@@ -1349,7 +1346,6 @@ og hvem det dødsenstriste Blik, jeg ved, jeg ej kan glemme • • •
 <text id="rimestad2019030527">
 <head>
   <title><num>II.</num>Jeg husker en Eftermiddag i Skovene ved Meudon</title>
-  <toctitle><num>II.</num>Jeg husker en Eftermiddag i Skovene ved Meudon</toctitle>
   <indextitle>Jeg husker en Eftermiddag i Skovene ved Meudon</indextitle>
   <linktitle>Jeg husker en Eftermiddag i Skovene ved Meudon</linktitle>
   <firstline>Jeg husker en Eftermiddag i Skovene ved Meudon</firstline>
@@ -1399,7 +1395,6 @@ Jeg husker din Haand . . . den laa som en lille og livsvarm Fugl i min.
 <text id="rimestad2019030528">
 <head>
   <title><num>III.</num>Saa kom altsaa det som jeg vented</title>
-  <toctitle><num>III.</num>Saa kom altsaa det som jeg vented</toctitle>
   <indextitle>Saa kom altsaa det som jeg vented</indextitle>
   <linktitle>Saa kom altsaa det som jeg vented</linktitle>
   <firstline>Saa kom altsaa det som jeg vented</firstline>
@@ -1528,8 +1523,8 @@ den Aften, i Juli, hun krydsed min Vej.
   <title>La Tortajada</title>
   <firstline>Le frisson lourd et long des nuits dans les branches</firstline>
   <source pages="67"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1816,7 +1811,7 @@ vilde jeg følge dig.
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Til min Søster</i></right></small></nonum>
+<nonum><right><small><i>Til min Søster</i></small></right></nonum>
 
 Det var det stærke og hemmelige Baand som sammen os bandt:
 at vi har levet sammen det blinde Søvnliv fjernt fra Alverden,
@@ -1851,7 +1846,7 @@ Men de sidste der i min Tanke - jeg tror, det blir Mor og dig.
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Til Harald Kidde</i></right></small></nonum>
+<nonum><right><small><i>Til Harald Kidde</i></small></right></nonum>
 
 Gamle Kvinder med de stille Øjne,
 mere stille end de skjulte Sør,

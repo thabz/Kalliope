@@ -15,6 +15,7 @@
   <title>Paa Landet</title>
   <firstline>Min Hytte er Ler kun og Straa</firstline>
   <source pages="1-2"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -119,8 +120,8 @@ skal ingen Magt da mere kue.
   <title>† Frederik VII</title>
   <indextitle>Frederik VII</indextitle>
   <firstline>Hvor sælsomt Aftenklokken klinger</firstline>
-  <keywords>frederik7</keywords>
   <source pages="5-6"/>
+  <keywords>frederik7,balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -174,6 +175,7 @@ til sidste Slægters sidste Aar.
   <indextitle>Casper Claudius Rosenhoff</indextitle>
   <firstline>Han stred saa kjækt i Ungdomsvaaren</firstline>
   <source pages="7-10"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -271,11 +273,11 @@ blev lukket til af Dødens Haand.
 </body>
 </text>
 
-<text id="nielsenz2019061905">
+<text id="nielsenz2019061905" ignore-tests="title-trailing-punctuation">
 <head>
   <title>† Fru M. H.</title>
-  <indextitle>Fru M. H.</indextitle>
   <subtitle>(den 2den Marts 1870.)</subtitle>
+  <indextitle>Fru M. H.</indextitle>
   <firstline>Hvi skulde alt det ømme Baand</firstline>
   <dates>
     <event>1870-03-02</event>
@@ -334,10 +336,10 @@ i Himlen atter favne.
 <head>
   <title>Juleaften</title>
   <firstline>Gud ske Lov og Pris!</firstline>
-  <source pages="13-14"/>
   <dates>
     <event>1870-12-24</event>
   </dates>
+  <source pages="13-14"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -776,7 +778,6 @@ med lette Vingeslag.
 <text id="nielsenz2019061914">
 <head>
   <title><num>1.</num>I aarle Morgenstund, naar Solens Lue</title>
-  <toctitle><num>1.</num>I aarle Morgenstund, naar Solens Lue</toctitle>
   <indextitle>I aarle Morgenstund, naar Solens Lue</indextitle>
   <linktitle>I aarle Morgenstund, naar Solens Lue</linktitle>
   <firstline>I aarle Morgenstund, naar Solens Lue</firstline>
@@ -809,7 +810,6 @@ et saadant Morgenblus er - Kjærligheden.
 <text id="nielsenz2019061915">
 <head>
   <title><num>2.</num>Jeg mindes grant fra Barndomstidens Dage</title>
-  <toctitle><num>2.</num>Jeg mindes grant fra Barndomstidens Dage</toctitle>
   <indextitle>Jeg mindes grant fra Barndomstidens Dage</indextitle>
   <linktitle>Jeg mindes grant fra Barndomstidens Dage</linktitle>
   <firstline>Jeg mindes grant fra Barndomstidens Dage</firstline>
@@ -842,7 +842,6 @@ engang jeg skal dens Straaleglimt dog skue.
 <text id="nielsenz2019061916">
 <head>
   <title><num>3.</num>Hvis jeg i Livet selv fik Lov at vælge</title>
-  <toctitle><num>3.</num>Hvis jeg i Livet selv fik Lov at vælge</toctitle>
   <indextitle>Hvis jeg i Livet selv fik Lov at vælge</indextitle>
   <linktitle>Hvis jeg i Livet selv fik Lov at vælge</linktitle>
   <firstline>Hvis jeg i Livet selv fik Lov at vælge</firstline>
@@ -875,7 +874,6 @@ da svang forgjæves Prøvelsen sin Landse.
 <text id="nielsenz2019061917">
 <head>
   <title><num>4.</num>I vevre Toner, som med Ynde klinge</title>
-  <toctitle><num>4.</num>I vevre Toner, som med Ynde klinge</toctitle>
   <indextitle>I vevre Toner, som med Ynde klinge</indextitle>
   <linktitle>I vevre Toner, som med Ynde klinge</linktitle>
   <firstline>I vevre Toner, som med Ynde klinge</firstline>
@@ -1579,9 +1577,9 @@ det Liv, som trodser Gravens Blund.
 <text id="nielsenz2019061932">
 <head>
   <title>»Med Rud for Ære og Ret!«</title>
+  <subtitle>(Ved Skyttefesten i Roskilde 1869).</subtitle>
   <indextitle>Med Rud for Ære og Ret!</indextitle>
   <linktitle>Med Rud for Ære og Ret!</linktitle>
-  <subtitle>(Ved Skyttefesten i Roskilde 1869).</subtitle>
   <firstline>Staa fast, mit elskte Folk, staa fast</firstline>
   <source pages="66-68"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1641,6 +1639,7 @@ at kæmpe Alle som én Mand
   <title>Efteraarets Stemme</title>
   <firstline>Se Somren svandt med sine Glæder</firstline>
   <source pages="69-71"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1696,8 +1695,8 @@ skal spire i Dit Vinterspor.
 <text id="nielsenz2019061934">
 <head>
   <title>Fader Abraham og hans Gjæst</title>
-  <toctitle>Fader Abraham</toctitle>
   <subtitle>(Et østerlandsk Sagn.)</subtitle>
+  <toctitle>Fader Abraham</toctitle>
   <firstline>Hvor Hebrons Klippe rejser</firstline>
   <source pages="72-76"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1837,6 +1836,7 @@ hvis sidste Suk blev Bogens bedste Blad!
   <title>O lær mig!</title>
   <firstline>O lær mig, o Fader, at stride</firstline>
   <source pages="78-80"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

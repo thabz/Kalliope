@@ -28,7 +28,8 @@ Bygning:
 
 - `poet`
   - Nøgle: `poet_id`
-  - Indeholder basisinfo om forfattere og booleans for antal-typer.
+  - Indeholder basisinfo om forfattere, fødsels-, dåbs- og dødsdata samt
+    booleans for antal-typer.
 - `work`
   - Nøgle: `work_id`
   - Indeholder værkstamdata, publiceringsdato og relation til parent/work-type.
@@ -47,6 +48,10 @@ Bygning:
 - `text_search_index`
   - Nøgle: `text_id`
   - Denormaliseret søgeflade med `raw_text`, titler, evt. datoer og nøgleord.
+- `picture`
+  - Nøgle: `picture_id`
+  - Sporer `<picture>`-elementer med kildefil, scope, eventuelt `text_id` samt
+    metadatafelterne `has_href` og `has_objid`.
 SQLite-filen er et genereret, lokalt analyseartefakt og er ikke del af det
 offentlige korpusdatasæt. `caches/sqlite-index-build.sql` er kun en valgfri
 debug-/importcache og skal ikke redigeres som datakilde.
@@ -70,6 +75,9 @@ debug-/importcache og skal ikke redigeres som datakilde.
 
 Databasen må ikke redigeres manuelt. Kør `make build-sqlite` igen efter
 ændringer i XML eller buildlogikken.
+
+Indekset opdateres inkrementelt, når en arbejdsfil eller en billedmetadatafil
+er ændret. Ved ændringer, der ikke kan afgrænses sikkert, genopbygges det helt.
 
 ## Typiske queries
 
@@ -118,6 +126,17 @@ SELECT text_id, source_label, pages_text
 FROM source
 WHERE facsimile IS NOT NULL
 ORDER BY text_id;
+```
+
+- Billeder uden `href` eller museums-`objid`:
+
+```sql
+SELECT
+  COUNT(*) AS total_pictures,
+  SUM(1 - has_href) AS mangler_href,
+  SUM(1 - has_objid) AS mangler_objid,
+  SUM(CASE WHEN has_href = 0 OR has_objid = 0 THEN 1 ELSE 0 END) AS mangler_href_eller_objid
+FROM picture;
 ```
 
 - Tekster uden registreret dato, hvor brødteksten indeholder en mulig dato:

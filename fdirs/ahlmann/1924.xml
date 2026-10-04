@@ -204,9 +204,9 @@ for den danske Slægt.
 
 <text id="ahlmann2024050604">
 <head>
-  <toctitle>Sækkepiben. Morgen i Rom, I-III</toctitle>
   <title>Sækkepiben</title>
   <subtitle>Morgen i Rom</subtitle>
+  <toctitle>Sækkepiben. Morgen i Rom, I-III</toctitle>
   <firstline>Op med Skodderne - ah, det var godt</firstline>
   <source pages="19-21"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -615,14 +615,14 @@ Siden - er i Dag
 </head>
 <body>
 <poetry>
-<nonum><small><right>Til Ludvig Holstein.</right></small></nonum>
-<nonum><small><right>En Munk gik ud bedrøvet,</right></small></nonum>
-<nonum><small><right>hvor Skoven ensom staar,</right></small></nonum>
-<nonum><small><right>der sang en Fugl i Løvet,</right></small></nonum>
-<nonum><small><right>hans Vinter blev til Vaar,</right></small></nonum>
-<nonum><small><right>han lytted sig bort fra Verden,</right></small></nonum>
-<nonum><small><right>fra Kald og Klostergaard -</right></small></nonum>
-<nonum><small><right>og der gik tusind Aar.</right></small></nonum>
+<nonum><right><small>Til Ludvig Holstein.</small></right></nonum>
+<nonum><right><small>En Munk gik ud bedrøvet,</small></right></nonum>
+<nonum><right><small>hvor Skoven ensom staar,</small></right></nonum>
+<nonum><right><small>der sang en Fugl i Løvet,</small></right></nonum>
+<nonum><right><small>hans Vinter blev til Vaar,</small></right></nonum>
+<nonum><right><small>han lytted sig bort fra Verden,</small></right></nonum>
+<nonum><right><small>fra Kald og Klostergaard -</small></right></nonum>
+<nonum><right><small>og der gik tusind Aar.</small></right></nonum>
 
 Det var den danske Sommer,
 saa langt gik jeg mig ud,
@@ -838,8 +838,8 @@ og søgte det forliste.
 <text id="ahlmann2024050616">
 <head>
   <title>Herre med Ære</title>
-  <toctitle>Herre med Ære. Til P. E. Lange-Müller</toctitle>
   <subtitle>Til P. E. Tange-Müller paa Sophienberg.</subtitle>
+  <toctitle>Herre med Ære. Til P. E. Lange-Müller</toctitle>
   <firstline>Skyen sejled i Himlens Blaa</firstline>
   <source pages="48-49"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1078,8 +1078,8 @@ under Sol og Stjerne.
 <text id="ahlmann2024050622" ignore-tests="repeated-adjacent-word">
 <head>
   <title>En Sommernatsang</title>
-  <toctitle>En Sommernatsang. Til Hjalmar Söderberg</toctitle>
   <subtitle>Til Hjalmar Söderberg.</subtitle>
+  <toctitle>En Sommernatsang. Til Hjalmar Söderberg</toctitle>
   <firstline>Nattens Tid er inde</firstline>
   <notes>
     <note>Hjalmar Söderberg (1869-1941), svensk forfatter.</note>
@@ -1248,6 +1248,7 @@ og du, som styrted med brustne Øjne.
   <title>Høstsang</title>
   <firstline>Imellem de lave Diger</firstline>
   <source pages="66-67"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1476,8 +1477,8 @@ læg ham Løv, Vinløv om hans Pande.
 <text id="ahlmann2024050629">
 <head>
   <title>Efteraarssang</title>
-  <toctitle>Efteraarssang. Til Studenterne i »Forum«</toctitle>
   <subtitle>Til Studenterne i »Forum«.</subtitle>
+  <toctitle>Efteraarssang. Til Studenterne i »Forum«</toctitle>
   <firstline>Dagen blev kort</firstline>
   <source pages="75-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2004,8 +2005,8 @@ her i den venstre Side.
 
 <text id="ahlmann2024050636">
 <head>
-  <toctitle>Sent Efteraar I-IX</toctitle>
   <title>Sent Efteraar</title>
+  <toctitle>Sent Efteraar I-IX</toctitle>
   <firstline>Et Fuglepip i Vejens Hegn</firstline>
   <source pages="105-116"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2488,6 +2489,7 @@ i Julens Navn, med Julens Sind,
   <title>Juleaften</title>
   <firstline>Aftnen kom - og Timen kom!</firstline>
   <source pages="124-125"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2530,6 +2532,7 @@ er Julen atter slukket.
   <title>Dostojewskij</title>
   <firstline>Snestormen pisker paa Ruder</firstline>
   <source pages="126"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2638,6 +2641,7 @@ din egen velsignede Sommer.
   <title>Det sner endnu</title>
   <firstline>Der var et Ur, der vækked mig</firstline>
   <source pages="131-132"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2846,12 +2850,12 @@ Lyst og mørkt gaar Vævens Traade.
   <title>Moderen og Barnet</title>
   <subtitle>En Legende, tilegnet Johs. V. Jensen</subtitle>
   <firstline>I Landet Vé, som af Havet steg</firstline>
-  <keywords>jensenjv</keywords>
   <source pages="140-142"/>
+  <keywords>jensenjv</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="30%" font-size="small">
+<quote>
   - - - den hvide Gud stiv og stum
 paa sit Kors, i en evig Agoni, <i>Mennesket</i>,
 <i>saadan som det har redet sig tit</i>.

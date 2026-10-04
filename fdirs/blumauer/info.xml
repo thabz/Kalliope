@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blumauer" country="un" lang="de" type="poet">
+  <!-- Østrigsk digter -->
+  <name>
+    <firstname>Aloys</firstname>
+    <lastname>Blumauer</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1755-12-21</date>
+      <place>Steyr</place>
+    </born>
+    <dead>
+      <date>1798-03-16</date>
+      <place>Wien</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <works>1871</works>
+  <identifiers>
+    <wikidata>Q79087</wikidata>
+    <wikipedia-en>Aloys Blumauer</wikipedia-en>
+    <wikipedia-fr>Alois Blumauer</wikipedia-fr>
+    <wikipedia-de>Aloys Blumauer</wikipedia-de>
+    <viaf>206834762</viaf>
+    <gnd>118511963</gnd>
+    <danskforfatterleksikon-dk>u10675</danskforfatterleksikon-dk>
+    <runeberg-org>blumauer</runeberg-org>
+    <gutenberg-org>37995</gutenberg-org>
+  </identifiers>
+</person>

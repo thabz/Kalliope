@@ -9,6 +9,8 @@ import {
   safeGetAttr,
   safeGetText,
   getElementsByTagName,
+  getIdentifiers,
+  identifierAllowlist,
   loadXMLDoc,
 } from './xml.js';
 
@@ -42,12 +44,14 @@ const build_museums = () => {
     const sortName = safeGetText(museum, 'sort-name') || name;
     const country = safeGetText(museum, 'country');
     const deepLink = safeGetText(museum, 'deep-link');
+    const identifiers = getIdentifiers(museum, identifierAllowlist.museum);
     const data = {
       id,
       name,
       sortName,
       country,
       deepLink,
+      identifiers,
     };
     validateMuseum(data, xmlFilename);
     collected_museums.set(id, data);
@@ -64,6 +68,10 @@ const build_museums = () => {
 const build_museum_url = (picture, collected) => {
   if (picture == null) {
     return null;
+  }
+  const href = safeGetAttr(picture, 'href');
+  if (href != null) {
+    return href;
   }
   const invNr = safeGetAttr(picture, 'invnr');
   const objId = safeGetAttr(picture, 'objid');

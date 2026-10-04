@@ -7,7 +7,7 @@
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1851b-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.''</picture>
+    <picture type="titlepage" src="1851b-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
   <source facsimile="11530806249E_color" facsimile-pages-num="545" facsimile-pages-offset="282">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel II, C. A. Reitzel, Kbh., 1851.</source>
 </workhead>
@@ -379,6 +379,7 @@ Og krandser dig med Bladepragt og Drue.
   <subtitle>1835</subtitle>
   <firstline>I denne Tid jeg stemmer</firstline>
   <source pages="15-18"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -827,13 +828,13 @@ For hun er saa ung og saa yndig seer hun ud.''
   <title>Natten og Dagen</title>
   <subtitle>(To Basrelieffer af Thorvaldsen)</subtitle>
   <firstline>Den svæver gjennem Rummet</firstline>
-  <source pages="31-36"/>
   <pictures>
     <picture artwork="thorvaldsen/1815-natten" />
     <picture artwork="thorvaldsen/1815-dagen" />
   </pictures>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="31-36"/>
   <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2359,7 +2360,7 @@ Forfriske Sindet atter
 Ved Tale, Skjemt og Latter,
 Og synge høit i Chor.:,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,:Halleh, hallo, halleh, hallo!
 Paa Arbeid følge Ro! :,:
 
@@ -2371,7 +2372,7 @@ O, Den der havde Vinger!
 Derhen, derhen os bringer!
 Der er det godt at boe! :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Der er det godt at boe! :,:
 
@@ -2383,7 +2384,7 @@ Med den vi fare vide!
 Med den mod Sønderlide
 Vi kapre Vinens Høst. :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Derhen hvor Ranker groe! :,:
 
@@ -2395,7 +2396,7 @@ Endskjøndt vi sidde stille,
 Vi langveis fare ville,
 Som Himlens Fugle frie. :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Vi seile og vi roe! :,:
 
@@ -2407,7 +2408,7 @@ Med den vi lægge Grunden;
 Thi den er god paa Bunden.
 Ei sandt? det veed vi jo?
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Vi er nu i Bordeaux! :,:
 
@@ -2419,7 +2420,7 @@ Og Fanden skulde spart'en,
 Da nu vi er paa Farten;
 Her drikker Hver for To! :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Her drikker Hver for To! :,:
 
@@ -2431,7 +2432,7 @@ Vi Reisen nu forcere
 Til Høiden af Madeira,
 Og saa afsted! afsted! :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Vi seile og vi roe! :,:
 
@@ -2443,7 +2444,7 @@ Fra Portugal og Spanien
 Vi drage til Champagnen;
 Her slaae vi os til Ro. :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Her slaae vi os til Ro! :,:
 
@@ -2455,7 +2456,7 @@ Det gaaer! det kan ei feile!
 Jeg mærker alt vi seile -
 Vi seile rundt - hurra! :,:
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 :,: Halleh, hallo, halleh, hallo!
 Vi seile og vi roe! :,:
 </poetry>
@@ -2468,10 +2469,10 @@ Vi seile og vi roe! :,:
   <subtitle><w>Mel.</w> Og kjøre Vand og kjøre Ved</subtitle>
   <toctitle><num>III.</num>Ligevægten</toctitle>
   <firstline>Vi sidde sammen som vi kan bedst</firstline>
-  <source pages="98-101"/>
   <notes>
     <note>Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
+  <source pages="98-101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3269,9 +3270,9 @@ Saa qvad hun over Voven for Kongen.
 </head>
 <body>
 <poetry>
-<center><nonum>I.</nonum></center>
+<nonum><center>I.</center></nonum>
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 
 Høit over Bifrost
 Aserne droge,
@@ -3291,16 +3292,16 @@ Lige til Loke
 Haan og med Had.
 
 
-<center><nonum>II.</nonum></center>
+<nonum><center>II.</center></nonum>
 
-<center><nonum><sc>Recitation.</sc></nonum></center>
+<nonum><center><sc>Recitation.</sc></center></nonum>
 
     <nonum><wrap>Saaledes fortælles der i et af de ældste, nordiske Digte, der ere efterladte os: Ægir, Havets Behersker, hvis Throne er opreist under Hlesey i store, straalende Haller, havde Asaguderne til Gjæst hos sig, og beværtede dem kosteligt. Mad og Drikke blev baaret omkring i Guldkar, der skinnede saa stærkt, at Salen fik sin Lysning derfra. Kun een af Aserne var ikke indbuden, <w>Loke Laufeyasøn</w>. Men han kom selvbuden, og med ham var Gildets Glæde forbi. Med hadske Ord, med Løgn og ond Eftertale, haanede han enkeltviis hele Forsamlingen. Først dengang <w>Thor</w> ankom - han havde været i Østerleden - standsede Loke sine Ords giftige Strøm, og blev snart nødt til at søge Frelse i Flugten. Siden blev han fangen og bunden til en Klippe. Gudinden <w>Skade</w> hang en Øgle over hans Hoved. Som <w>han</w> havde spyet sin Gift over Aserne, dryppede nu den sin Gift ned over hans Hoved. Men <w>Sigyn</w>, hans Hustru, stod hos ham og, som et skjønt Billede paa Troskab ved Siden af denne Gud for det Ustadige og Omstiftelige, holdt hun uafladeligt en Skaal over hans Hoved. Kun hver Gang den var fuld og hun maatte hælde Skaalen ud, traf Giften ham, og rystede ham saa stærkt, at Jorden gav sig derved i Jordskjælv. - Det er dette i Asagudernes Historie berømte Gjæstebud, der af kunsterfarne Mænd er fremstillet her paa Lærredet, - ikke for at give denne enkelte Begivenhed, men for paa en sindrig og billedlig Maade at drage Tanken hen til det Gudeliv, hvis Herlighed og Fald en Sanger blandt os i udødelige Qvad har besjunget.</wrap></nonum>
 
 
-<center><nonum>II.</nonum></center>
+<nonum><center>II.</center></nonum>
 
-<center><nonum><sc>Chor.</sc></nonum></center>
+<nonum><center><sc>Chor.</sc></center></nonum>
 
 Du, som har manet
 Norden af Fjeldet,
@@ -4933,7 +4934,7 @@ Den stiller Din Smerte; - den giver Enhver
   </subtitle>
   <firstline>En halv Snees Aar er snart forløben</firstline>
   <source pages="206-207"/>
-  <keywords>heibergjohanne</keywords>
+  <keywords>heibergjohanne,ottave-rime</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5712,8 +5713,8 @@ Hvilke Tider! Hvilken Skik!
 </head>
 <body>
 <poetry>
-<center><nonum>I.</nonum></center>
-<center><nonum><small>(1843.)</small></nonum></center>
+<nonum><center>I.</center></nonum>
+<nonum><center><small>(1843.)</small></center></nonum>
 
 Dengang den gamle Sanger laae
 I Jorden død og glemt,
@@ -5742,9 +5743,8 @@ Erindrer os med Eet
 Om Tider, der er længst forbi
 Og hvad forlængst er skeet.
 
-
-<center><nonum>II.</nonum></center>
-<center><nonum><small>(December 1849.)</small></nonum></center>
+<nonum><center>II.</center></nonum>
+<nonum><center><small>(December 1849.)</small></center></nonum>
 
 Da denne Bog kom ud, da var der Fred,
 Dyb Fred i Landet. Frederik den Sjette
@@ -6109,10 +6109,10 @@ Der mit imøde banker.
 <head>
   <title>Med Thorvaldsens ,,Amor med Lyren''</title>
   <firstline>Min yndige, min unge Hustru, tag</firstline>
-  <source pages="256-257"/>
   <pictures>
     <picture artwork="thorvaldsen/1836-amor-med-lyren" />
   </pictures>
+  <source pages="256-257"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>

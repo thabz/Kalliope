@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schwach" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Conrad Nicolai</firstname>
+    <lastname>Schwach</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-03-28</date>
+    </born>
+    <dead>
+      <date>1860-09-09</date>
+    </dead>
+  </period>
+  <literary-periods>no-nationalromantik</literary-periods>
+  <identifiers>
+    <wikidata>Q11964057</wikidata>
+    <viaf>10899949</viaf>
+    <gnd>128507470</gnd>
+    <danskforfatterleksikon-dk>u10646</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

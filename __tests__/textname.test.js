@@ -1,3 +1,10 @@
+import React from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import TextName from '../components/textname.js';
+import {
+  FootnoteContainer,
+  FootnoteList,
+} from '../components/footnotes.js';
 import {
   textLinkTitleString,
   textTitleString,
@@ -12,5 +19,24 @@ describe('text name helpers', () => {
     expect(textLinkTitleString({ linktitle: 'Ode til nogen' })).toBe(
       'Ode til nogen'
     );
+  });
+
+  it('renders and lists a footnote in the displayed title', () => {
+    const html = renderToStaticMarkup(
+      <FootnoteContainer>
+        <TextName
+          text={{
+            title: 'Gravsang',
+            title_html: [['Gravsang<footnote>Kildens note.</footnote>']],
+          }}
+          renderMarkup
+        />
+        <FootnoteList />
+      </FootnoteContainer>
+    );
+
+    expect(html).toContain('Gravsang');
+    expect(html).toContain('name="note-1"');
+    expect(html).toContain('Kildens note.');
   });
 });

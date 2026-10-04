@@ -7,7 +7,7 @@
     <note>Noter med en foranstillet asterisk er Hostrups egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1852-p1.jpg">Titelbladet til <i>Viser og Vers</i> (1852) lyder ,,Viser og Vers, / nogle Minder fra et Studenterliv, / af / C. Hostrup. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1852.''</picture>
+    <picture type="titlepage" src="1852-p1.jpg"><transcription>Viser og Vers, / nogle Minder fra et Studenterliv, / af / C. Hostrup. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1852.</transcription></picture>
   </pictures>
   <source facsimile="11530806609E_color" facsimile-pages-num="176" facsimile-pages-offset="8">Christian Hostrup: <i>Viser og Vers</i>, F. H. Eibe, Kbh., 1852.</source>
 </workhead>
@@ -386,10 +386,10 @@ og derfor en Skaal til hans Ære!
   <title>Lad andre prise Forstandens Spil</title>
   <toctitle><num>1.</num>Lad andre prise Forstandens Spil</toctitle>
   <firstline>Lad andre prise Forstandens Spil</firstline>
-  <source pages="19-20"/>
   <notes>
     <note>Digtets metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
+  <source pages="19-20"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -443,6 +443,7 @@ og til Poet Kontubernalen.
   <toctitle><num>2.</num>Om Morgenen seer jeg dit Skræddergeni</toctitle>
   <firstline>Om Morgenen seer jeg dit Skræddergeni</firstline>
   <source pages="21"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -865,7 +866,7 @@ takke for de minderige Dage.
 
 <text id="hostrup2018051314">
 <head>
-  <title>I Gøtheborg.</title>
+  <title>I Gøtheborg</title>
   <subtitle>Paa Christianiatoget 1851</subtitle>
   <firstline>Vi er en lille, munter Flok</firstline>
   <source pages="40-41"/>
@@ -1263,10 +1264,10 @@ og lær ham at skjøtte sit eget Land!
   <title>Ved de Frivilliges Afrejse</title>
   <subtitle>I Studenterforeningen den 17de April 1848</subtitle>
   <firstline>I stille Musasønner, hvad vil I vel i Krig</firstline>
-  <source pages="59-60"/>
   <dates>
     <written>1848-04-17</written>
   </dates>
+  <source pages="59-60"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1546,13 +1547,13 @@ og kom som Studenter herhjem igjen!
   <title>Slaget ved Isted</title>
   <subtitle>25 Juli 1851</subtitle>
   <firstline>Et Aar randt hen — ja kun et Aar</firstline>
+  <dates>
+    <event>1851-07-25</event>
+  </dates>
   <notes>
     <note>* <w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
   </notes>
   <source pages="70-73"/>
-  <dates>
-    <event>1851-07-25</event>
-  </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1953,12 +1954,12 @@ og Verden er vor.
 <head>
   <title>Fodrejsen</title>
   <firstline>Man maa rejse tilfods for at sprænge med Hast</firstline>
-  <source pages="88-89"/>
   <notes>
     <note>Af J. Chr. Hostrups <i>Eventyr paa Fodreisen</i> (I,4) 1848.</note>
     <!-- Findes under titlen »Studenterne« i <i>Fest-Sange</i>, udg. af Arthur Arnholtz, Karl Clausen og Finn Viderø, 1947. -->
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
+  <source pages="88-89"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2216,7 +2217,7 @@ saa veed du mere end jeg.
 </head>
 <body>
 <poetry>
-<nonum><small><center>1. Til Filistrene.</center></small></nonum>
+<nonum><center><small>1. Til Filistrene.</small></center></nonum>
 
 Purpurfolk, som Egmont og Fiesco,
 dem min Muse mægter ej at male,
@@ -2237,7 +2238,7 @@ kom, du Heste- Jøde- Svine-Slagter;
 dig jeg male, dig jeg træffe kan.
 
 
-<nonum><small><center>2. Pietro da Moresco.</center></small></nonum>
+<nonum><center><small>2. Pietro da Moresco.</small></center></nonum>
 
 I Genua, i Sanct Christophs Kapel,
 man seer et Billed, malet smukt al fresco,
@@ -2338,16 +2339,16 @@ mod denne Aftens Helte!
 </head>
 <body>
 <poetry>
-<nonum><small><center><b>Regisseuren</b> kommer hastigt. Stort Skjænderi udenfor Scenen.</center></small></nonum>
+<nonum><center><small><b>Regisseuren</b> kommer hastigt. Stort Skjænderi udenfor Scenen.</small></center></nonum>
 
 <nonum><center>Regisseuren.</center></nonum>
 
 Højstærede Publikum! ganske betuttet,
 forknyt, slukøret De her mig seer;
-<nonum><small><right>(Skjænderiet tiltager.)</right></small></nonum>
+<nonum><right><small>(Skjænderiet tiltager.)</small></right></nonum>
 dog knap jeg behøver at sige meer,
 De faaer det, at vide paa Minuttet.
-<nonum><small><right>(standser et Øjeblik.)</right></small></nonum>
+<nonum><right><small>(standser et Øjeblik.)</small></right></nonum>
 Nu bliver det stille! tør jeg da tale,
 tør jeg da regne paa Skaansel hos Dem,
 naar jeg fortæller Dem ligefrem,
@@ -2385,7 +2386,7 @@ at atter vi Teppet ned maae trække
 og saa spille Stykket — Men hvem kommer der?
 Naa, Gud forbarme sig! der er de begge.
 
-<nonum><small><center><b>Han</b> og <b>Hun</b> træde ind.</center></small></nonum>
+<nonum><center><small><b>Han</b> og <b>Hun</b> træde ind.</small></center></nonum>
 
 
 <nonum><center>Regisseuren <small>(til Ham).</small></center></nonum>
@@ -2489,7 +2490,7 @@ vi byde Dem som Vært —
 <nonum><center>Hun.</center></nonum>
 
             Og som Værtinde.
-<nonum><small><right>(Pavse.)</right></small></nonum>
+<nonum><right><small>(Pavse.)</small></right></nonum>
 
 
 <nonum><center>Hun.</center></nonum>
@@ -2521,7 +2522,7 @@ som jeg vil ha' det!
 <nonum><center>Han.</center></nonum>
 
             De har at befale.
-<nonum><small><center>(til Publikum.)</center></small></nonum>
+<nonum><center><small>(til Publikum.)</small></center></nonum>
 Vi os fordristet har Dem hid at stevne;
 det skulde være — Grunden vel De veed —
 et Vidnesbyrd, alt efter fattig Evne,
@@ -2540,7 +2541,7 @@ Det er vor Ungdom. Og det livsfro Sind,
 den lette Lystighed, som intet trætter,
 den raske Selvtillid — det er de Retter,
 hvorpaa vi har i Aften budt Dem ind.
-<nonum><small><center>(til Hende.)</center></small></nonum>
+<nonum><center><small>(til Hende.)</small></center></nonum>
 Vil De saa ta' fat!
 
 
@@ -2561,7 +2562,7 @@ nu maa De helst snakke af med det samme.
 <nonum><center>Han.</center></nonum>
 
 Nu ja, som De vil.
-<nonum><small><center>(til Publikum.)</center></small></nonum>
+<nonum><center><small>(til Publikum.)</small></center></nonum>
         Jeg maa mig skamme.
 ifald jeg —
 
@@ -2623,10 +2624,10 @@ Vil De da begynde paa en Vise.
 <nonum><center>Regisseuren. <small>(afsides).</small></center></nonum>
 
 Jeg vil passe paa dem bag en Kulisse.
-<nonum><small><right>(gaaer.)</right></small></nonum>
+<nonum><right><small>(gaaer.)</small></right></nonum>
 
 
-<nonum><small><center>Mel. Fr. S. 13.</center></small></nonum>
+<nonum><center><small>Mel. Fr. S. 13.</small></center></nonum>
 
 <nonum><center>1.</center></nonum>
 
@@ -2646,7 +2647,7 @@ og vort Personale, vor Skuespillerflok,
 det er Dilettanter, saa har De vel nok.
 
 
-<nonum><small><center>Mel. af En Spurv i Tr.: O min Ven, jeg maa dig sige.</center></small></nonum>
+<nonum><center><small>Mel. af En Spurv i Tr.: O min Ven, jeg maa dig sige.</small></center></nonum>
 
 <nonum><center>1.</center></nonum>
 
@@ -2674,7 +2675,7 @@ men vi stakkels falske Kvinder
 haabe paa en skaansom Dom.
 
 
-<nonum><small><center>Mel. Fr. Ep. 33.</center></small></nonum>
+<nonum><center><small>Mel. Fr. Ep. 33.</small></center></nonum>
 
 <nonum><center>1.</center></nonum>
 
@@ -2782,7 +2783,7 @@ Nej, nu vil vi tale som een—
 <nonum><center>Han.</center></nonum>
 
 <nonum><center>Begge to.</center></nonum>
-<nonum><small><center>(de tage hinanden i Haanden.)</center></small></nonum>
+<nonum><center><small>(de tage hinanden i Haanden.)</small></center></nonum>
 
 
 <nonum><center>2.</center></nonum>
@@ -3285,6 +3286,7 @@ kan kun om hans Ære melde.
   <title>Til en lille Pige</title>
   <firstline>I Gaarden er slukket hvert et Lys</firstline>
   <source pages="134-136"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3378,6 +3380,7 @@ i denne Bog en trofast Ven!
   <title>Ved et Barns Død</title>
   <firstline>Den Kind er vorden nu saa bleg</firstline>
   <source pages="138"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3445,6 +3448,7 @@ elsket som hans!
   <title>Til Lærken i Høst</title>
   <firstline>Hvor blev du af min Lærkelil?</firstline>
   <source pages="141-143"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3611,10 +3615,10 @@ thi jeg veed, at du mig elsker
 <text id="hostrup2018051357">
 <head>
   <title>Til en ung Musiker,</title>
+  <subtitle>hvem Forf. havde lovet et Digt til at sætte i Musik.</subtitle>
   <toctitle>Til en ung Musiker</toctitle>
   <indextitle>Til en ung Musiker</indextitle>
   <linktitle>Til en ung Musiker</linktitle>
-  <subtitle>hvem Forf. havde lovet et Digt til at sætte i Musik.</subtitle>
   <firstline>Til min Dommer angst jeg kommer</firstline>
   <source pages="147-149"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3734,10 +3738,10 @@ at prise den norske Kvinde.
   <title>Oehlenschlægers Mindefest i Studenterforeningen</title>
   <subtitle>Paa Skydebanen d. 3. Juni 1850</subtitle>
   <firstline>Frosten knugede Jorden</firstline>
-  <source pages="152-160"/>
   <dates>
     <event>1850-06-03</event>
   </dates>
+  <source pages="152-160"/>
   <keywords>oehlenschlaeger</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>

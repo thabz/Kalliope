@@ -279,10 +279,10 @@ da stig mangfoldig igen mod Sky!
     <line>27. Juli 1915.</line>
   </subtitle>
   <firstline>Højt over Bølger og Master</firstline>
-  <source pages="23-24"/>
   <dates>
     <event>1915-07-27</event>
   </dates>
+  <source pages="23-24"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -371,10 +371,10 @@ rammer Ven som Fjende - - -
 <text id="juelaxel2019122307">
 <head>
   <title>Skibet</title>
+  <subtitle>Før Kampen.</subtitle>
   <toctitle>Skibet, før Kampen</toctitle>
   <indextitle>Skibet, før Kampen</indextitle>
   <linktitle>Skibet, før Kampen</linktitle>
-  <subtitle>Før Kampen.</subtitle>
   <firstline>Salutkanoner bragede</firstline>
   <source pages="29-30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -408,10 +408,10 @@ Alt for sit Fædreland - -
 <text id="juelaxel2019122308">
 <head>
   <title>Skibet</title>
+  <subtitle>Efter Kampen.</subtitle>
   <toctitle>Skibet, efter Kampen</toctitle>
   <indextitle>Skibet, efter Kampen</indextitle>
   <linktitle>Skibet, efter Kampen</linktitle>
-  <subtitle>Efter Kampen.</subtitle>
   <firstline>De sidste spredte Skud er skudt</firstline>
   <source pages="31-33"/>
   <quality>korrektur1,kilde,side</quality>
@@ -636,7 +636,6 @@ jeg kan ene føle Had!
 <text id="juelaxel2019122311">
 <head>
   <title>Kampen paa Havet</title>
-  <toctitle>Kampen paa Havet</toctitle>
   <firstline>I Skjul bag Næssets Skove</firstline>
   <source pages="45-51"/>
   <quality>korrektur1,kilde,side</quality>
@@ -959,6 +958,7 @@ her er min Haand - hvis Du er Mand af Ære.
   <title>Piratvise</title>
   <firstline>Intet levende øjner jeg fjernt eller nær</firstline>
   <source pages="60-63"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1226,15 +1226,15 @@ os give Magt paany!
     <line>Den 9. Maj 1914</line>
   </subtitle>
   <firstline>Evigt rinder Danmarks Graad for den tabte Søn</firstline>
-  <source pages="77-94"/>
   <dates>
     <event>1914-05-09</event>
   </dates>
+  <source pages="77-94"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><center>SOLO-KVARTET OG KOR</center></small></nonum>
+<nonum><center><small>SOLO-KVARTET OG KOR</small></center></nonum>
 
 Evigt rinder Danmarks Graad for den tabte Søn.
 At han kom tilbage, var længe Landets Bøn.
@@ -1266,7 +1266,7 @@ For en tørstig: Væde, og for en hungrig: Brød!
 Sejrens Krans blev dog hans. Hil det raske Kor,
 der har talt med Malmets Sprog de sidste danske Ord!
 
-<nonum><small><center>KOR</center></small></nonum>
+<nonum><center><small>KOR</small></center></nonum>
 
 Herlige Lyd,
 Sømandens Fryd,
@@ -1301,7 +1301,7 @@ den hede Tigerkat,
 den river hans Rig og flænser hans Bov
 og gør ham mat!
 
-<nonum><small><center>RECITATIV</center></small></nonum>
+<nonum><center><small>RECITATIV</small></center></nonum>
 
 ,,Klart Skib'' er bleven blæst og Topgasterne sendt op
 med Rifler og med blanke Falkonetter,
@@ -1361,7 +1361,7 @@ de griber hvert Sind med en svimlende Rus,
 de slapper de anspændte Hænder -
 <i>Schwarzenberg brænder!!!</i>
 
-<nonum><small><center>SOLO MED KOR</center></small></nonum>
+<nonum><center><small>SOLO MED KOR</small></center></nonum>
 
 Kanonerne tier, mens Røgen driver væk -
 og Jubelen forstummer over Sejersskibets Dæk.
@@ -1390,7 +1390,7 @@ mens sænkte Faner vajer tungt, som drypped de af Blod.
 Dèr hviler de, som frejdigt sig selv for Danmark gav,
 og gode, milde Hænder har smykket deres Grav.
 
-<nonum><small><center>KOR</center></small></nonum>
+<nonum><center><small>KOR</small></center></nonum>
 
 Vi staar Kronborg ind,
 Helsingør imod os flager,
@@ -1431,7 +1431,7 @@ takker, roser, nikker, smiler -
 Hjertet fløj i vor Krop,
 som Flag fra Gaffeltop!
 
-<nonum><small><center>RECITATIV</center></small></nonum>
+<nonum><center><small>RECITATIV</small></center></nonum>
 
 I mindes vel Dagen, ærværdige Mænd,
 og tit har I manet den frem for Jer Tanke
@@ -1446,7 +1446,7 @@ maa skabe sin Fremtid et lysende Minde,
 som det, I har rejst paa dets mørkeste Vej
 hin sollyse niende Maj!
 
-<nonum><small><center>FÆLLESSANG</center></small></nonum>
+<nonum><center><small>FÆLLESSANG</small></center></nonum>
 
 I Tidens Gry en Verden steg
 af Hav, af Hav!

@@ -2,7 +2,6 @@
 <kalliopework id="andre" author="claussen" status="incomplete" type="poetry">
 <workhead>
   <title>Andre digte</title>
-  <source id="gottschalk-1930" facsimile="gottschalk-1930" facsimile-pages-num="48" facsimile-pages-offset="2">Albert Gottschalk, <i>Den frie Udstilling</i>, katalog, Oktober 1930.</source>
 </workhead>
 <workbody>
 
@@ -198,8 +197,6 @@ den kvægende, sølvfine Luft.
 <text id="claussen2001101101">
 <head>
   <title>Jeg er ombølget af dig</title>
-  <toctitle>Jeg er ombølget af dig</toctitle>
-  <indextitle>Jeg er ombølget af dig</indextitle>
   <firstline>Jeg er ombølget af dig</firstline>
   <notes>
     <note>Ranet fra Brian Bentsens <a href="http://d2.kalliope.org/~bbb/thepierianspring.dk/">The Pierian Spring</a>.</note>
@@ -233,8 +230,8 @@ fra dine Øjnes Nat
 <head>
   <title>Albert Gottschalk</title>
   <firstline>Er det hans Liv, hans Farver har i Sinde?</firstline>
+  <source pages="7-8" facsimile="gottschalk-1930" facsimile-pages-num="48" facsimile-pages-offset="2">Albert Gottschalk, <i>Den frie Udstilling</i>, katalog, Oktober 1930.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
-  <source in="gottschalk-1930" pages="7-8"/>
 </head>
 <body>
 <poetry>

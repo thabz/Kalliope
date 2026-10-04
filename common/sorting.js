@@ -75,13 +75,15 @@ export const poetsByLastnameForCountry = (country) => {
 export const poetsByBirthDateForCountry = (country) => {
   const byLastname = poetsByLastnameForCountry(country);
   return (a, b) => {
+    const aStart = a.period?.born ?? a.period?.baptized;
+    const bStart = b.period?.born ?? b.period?.baptized;
     if (a.period == null || b.period == null) {
       return byLastname(a, b);
-    } else if (a.period.born == null || b.period.born == null) {
+    } else if (aStart == null || bStart == null) {
       return byLastname(a, b);
     } else {
-      const a1 = a.period.born.date;
-      const b1 = b.period.born.date;
+      const a1 = aStart.date;
+      const b1 = bStart.date;
       if (a1 === b1) {
         return byLastname(a, b);
       } else {
@@ -92,13 +94,15 @@ export const poetsByBirthDateForCountry = (country) => {
 };
 
 export const poetsByBirthDate = (a, b) => {
+  const aStart = a.period?.born ?? a.period?.baptized;
+  const bStart = b.period?.born ?? b.period?.baptized;
   if (a.period == null || b.period == null) {
     return poetsByLastname(a, b);
-  } else if (a.period.born == null || b.period.born == null) {
+  } else if (aStart == null || bStart == null) {
     return poetsByLastname(a, b);
   } else {
-    const a1 = a.period.born.date;
-    const b1 = b.period.born.date;
+    const a1 = aStart.date;
+    const b1 = bStart.date;
     if (a1 === b1) {
       return poetsByLastname(a, b);
     } else {

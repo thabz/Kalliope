@@ -24,11 +24,12 @@ describe('OCR candidate report helpers', () => {
 
   it('removes ignored editorial XML while preserving line numbers', () => {
     const lines = removeIgnoredXml(
-      'Tekst\n<note>på moderne dansk</note>\nMere'
+      'Tekst\n<note>på moderne dansk</note>\n<footnote>Tekst tekst</footnote>\nMere'
     ).split('\n');
 
-    expect(lines.length).toBe(3);
+    expect(lines.length).toBe(4);
     expect(lines[1].trim()).toBe('');
+    expect(lines[2].trim()).toBe('');
   });
 
   it('removes XML markup but preserves metadata text and line numbers', () => {

@@ -433,7 +433,7 @@ engang sent en Sejrens Tid!
 </head>
 <body>
 <poetry>
-<nonum><small><right>Motiv fra Vestkysten</right></small></nonum>
+<nonum><right><small>Motiv fra Vestkysten</small></right></nonum>
 
 Sikkert jeg véd, vil det bære frem
   over de høje Fjelde,
@@ -518,12 +518,16 @@ at Ungdomskraft dør i Frost ej ud -!
   <title>Fjeldvandet</title>
   <firstline>Inde bag Fjeldenes store</firstline>
   <source pages="25-27"/>
+  <places>
+    <place ref="svartediket" relation="subject" primary="true"/>
+    <place ref="bergen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Motiv fra</right></small></nonum>
-<nonum><small><right>Svarte diget ved Bergen</right></small></nonum>
+<nonum><right><small>Motiv fra</small></right></nonum>
+<nonum><right><small>Svarte diget ved Bergen</small></right></nonum>
 
 Inde bag Fjeldenes store,
     evigt dragende Øde
@@ -684,11 +688,15 @@ Og gennem Taagerne skinner
   <title>Til Løvstakkens Stjerne</title>
   <firstline>I de lyse Nætter</firstline>
   <source pages="32-33"/>
+  <places>
+    <place ref="lovstakken" relation="subject" primary="true"/>
+    <place ref="bergen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right>Motiv fra Bergen</right></small></nonum>
+<nonum><right><small>Motiv fra Bergen</small></right></nonum>
 
 I de lyse Nætter
 er det tungt at tænke
@@ -733,6 +741,9 @@ Dødens Blik tør møde -!
   <title>Farvel til Bergen</title>
   <firstline>Du kære, gamle Hansestad</firstline>
   <source pages="34"/>
+  <places>
+    <place ref="bergen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -763,6 +774,9 @@ jeg sender dig, i Morgengry,
   <title>Sognefjorden</title>
   <firstline>Tung af Aartusinders Taushed</firstline>
   <source pages="35"/>
+  <places>
+    <place ref="sognefjord" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -788,6 +802,9 @@ Sognefjordsfjeldenes Gimle.
   <title>Jotunheimen</title>
   <firstline>Fjernt mod Himlens Soldis stiger</firstline>
   <source pages="36-37"/>
+  <places>
+    <place ref="jotunheimen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -827,6 +844,9 @@ men i evig Ro de finder
   <title>Paa Højfjeldet</title>
   <firstline>Jeg kender mig igen! Hid gik min Længsel</firstline>
   <source pages="38-39"/>
+  <places>
+    <place ref="jotunheimen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -874,6 +894,11 @@ Og Natten stiger taus og lys indover
   <title>Og vi vandrede vidt over stenede Ur</title>
   <firstline>Og vi vandrede vidt over stenede Ur</firstline>
   <source pages="40-42"/>
+  <places>
+    <place ref="jotunheimen" relation="setting" primary="true"/>
+    <place ref="gjende" relation="setting"/>
+    <place ref="besseggen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -956,6 +981,9 @@ Som et kølende Pust over brændende Kind
   <title>Paa Galdhøpiggen</title>
   <firstline>Et Hav af snehvide Tinder</firstline>
   <source pages="43"/>
+  <places>
+    <place ref="galdhopiggen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -988,6 +1016,10 @@ Som et kølende Pust over brændende Kind
   <title>Nedover</title>
   <firstline>Saa gaar det ned, i Spring og Løb</firstline>
   <source pages="44-46"/>
+  <places>
+    <place ref="galdhopiggen" relation="setting" primary="true"/>
+    <place ref="jotunheimen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1077,6 +1109,9 @@ ad Aare ses vi! Hils, min Ven,
   <title>Solnedgang over Tonsaasen</title>
   <firstline>Se, Solen har sænket</firstline>
   <source pages="47-49"/>
+  <places>
+    <place ref="tonsasen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1161,6 +1196,9 @@ fra Solgudens Bavn.
   <title>Mjøsen</title>
   <firstline>Det blaaner over Mjøsen</firstline>
   <source pages="50-51"/>
+  <places>
+    <place ref="mjosa" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1265,7 +1303,7 @@ Ak, er det Høst, er det Høst, naar Gensynet eengang er inde!
 </head>
 <body>
 <poetry>
-<nonum><small><right>Ombord. Aften</right></small></nonum>
+<nonum><right><small>Ombord. Aften</small></right></nonum>
 
 Aldrig blir jeg dog træt af at tale med dig
   nogen Stund, du mit dejlige Hav!
@@ -1399,21 +1437,21 @@ de kan ikke skilles ad -
 <text id="nalbandian2019030929">
 <head>
   <title>Gustav Johannsen</title>
-  <toctitle>Gustav Johannsen. Et Farvel</toctitle>
   <subtitle>Et Farvel</subtitle>
+  <toctitle>Gustav Johannsen. Et Farvel</toctitle>
   <firstline>Det suser i Danmarks Skove, - med dyb og skælvende Lyd</firstline>
+  <dates>
+    <event>1901-10-29</event>
+  </dates>
   <notes>
     <note>Gustav Johannsen (1840-1901), dansk journalist og politiker.</note>
   </notes>
   <source pages="63-64"/>
-  <dates>
-    <event>1901-10-29</event>
-  </dates>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>29. Okt. 1901</i></right></small></nonum>
+<nonum><right><small><i>29. Okt. 1901</i></small></right></nonum>
 
 Det suser i Danmarks Skove, - med dyb og skælvende Lyd
 bæres imod os et Ekko fjernt dernede fra Syd.
@@ -1708,7 +1746,6 @@ over de hvide Haar - -
 <text id="nalbandian2019030933">
 <head>
   <title><num>II.</num>Vel jeg véd, at Verden -</title>
-  <toctitle><num>II.</num>Vel jeg véd, at Verden -</toctitle>
   <indextitle>Vel jeg véd, at Verden -</indextitle>
   <linktitle>Vel jeg véd, at Verden -</linktitle>
   <firstline>Vel jeg véd, at Verden</firstline>
@@ -1738,7 +1775,6 @@ saaret Syn vil stænge - -
 <text id="nalbandian2019030934">
 <head>
   <title><num>III.</num>Bunden ligger min Smerte</title>
-  <toctitle><num>III.</num>Bunden ligger min Smerte</toctitle>
   <indextitle>Bunden ligger min Smerte</indextitle>
   <linktitle>Bunden ligger min Smerte</linktitle>
   <firstline>Bunden ligger min Smerte</firstline>
@@ -1778,7 +1814,6 @@ Og ensom kan jeg ej vandre.
 <text id="nalbandian2019030935">
 <head>
   <title><num>IV.</num>Mod Aften ringe de Klokker smaa</title>
-  <toctitle><num>IV.</num>Mod Aften ringe de Klokker smaa</toctitle>
   <indextitle>Mod Aften ringe de Klokker smaa</indextitle>
   <linktitle>Mod Aften ringe de Klokker smaa</linktitle>
   <firstline>Mod Aften ringe de Klokker smaa</firstline>
@@ -1826,7 +1861,6 @@ dumpe Toner imod mig gaa -
 <text id="nalbandian2019030936">
 <head>
   <title><num>V.</num>Langt, langt borte ser jeg to Øjne graa -</title>
-  <toctitle><num>V.</num>Langt, langt borte ser jeg to Øjne graa -</toctitle>
   <indextitle>Langt, langt borte ser jeg to Øjne graa -</indextitle>
   <linktitle>Langt, langt borte ser jeg to Øjne graa -</linktitle>
   <firstline>Langt - langt borte ser jeg to Øjne graa -</firstline>
@@ -1973,10 +2007,9 @@ Her svæver Højalpernes Ørne
 <text id="nalbandian2019030939">
 <head>
   <title><num>I.</num>Foraaret</title>
-  <toctitle><num>I.</num>Foraaret</toctitle>
+  <subtitle>Emigrantens Sang</subtitle>
   <indextitle>Foraaret</indextitle>
   <linktitle>Foraaret</linktitle>
-  <subtitle>Emigrantens Sang</subtitle>
   <firstline>Lette Morgenbrise, hvor du vifter stille</firstline>
   <source pages="87-88"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2014,7 +2047,6 @@ og du Nattens Sanger, og du Sus i Løvet!
 <text id="nalbandian2019030940">
 <head>
   <title><num>II.</num>Moder Armeniens Sorg</title>
-  <toctitle><num>II.</num>Moder Armeniens Sorg</toctitle>
   <indextitle>Moder Armeniens Sorg</indextitle>
   <linktitle>Moder Armeniens Sorg</linktitle>
   <firstline>Mine Børn, mit Hjertes Kære, flakker i Verden vide</firstline>
@@ -2023,7 +2055,7 @@ og du Nattens Sanger, og du Sus i Løvet!
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>En Kvindeskikkelse sidder bøjet mellem nedstyrtede Ruiner, med Hovedet støttet til Haanden, Blikket søgende ud i Rummet</i></right></small></nonum>
+<nonum><right><small><i>En Kvindeskikkelse sidder bøjet mellem nedstyrtede Ruiner, med Hovedet støttet til Haanden, Blikket søgende ud i Rummet</i></small></right></nonum>
 
 Mine Børn, mit Hjertes Kære, flakker i Verden vide,
 hvor kan de høre min Stemme, hvor kan de føle min Kvide?
@@ -2056,18 +2088,17 @@ Kom, mine Børn, mine Hjemløse! laaner jer Moder Øre!''
 <text id="nalbandian2019030941">
 <head>
   <title><num>III.</num>Bryllupssange</title>
-  <toctitle><num>III.</num>Bryllupssange</toctitle>
+  <subtitle>Brudstykker</subtitle>
   <indextitle>Bryllupssange</indextitle>
   <linktitle>Bryllupssange</linktitle>
-  <subtitle>Brudstykker</subtitle>
   <firstline>Fra Bjergenes Høje er den glødende Sol staaet op</firstline>
   <source pages="91-95"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><small><right><i>Sang af Gæsterne i Brudgomshuset, medens ,,Kongen'',</i></right></small></nonum>
-<nonum><small><right><i>ↄ: Brudgommen, iføres Bryllupskjortelen</i></right></small></nonum>
+<nonum><right><small><i>Sang af Gæsterne i Brudgomshuset, medens ,,Kongen'',</i></small></right></nonum>
+<nonum><right><small><i>ↄ: Brudgommen, iføres Bryllupskjortelen</i></small></right></nonum>
 
 Fra Bjergenes Høje er den glødende Sol staaet op
         over os.
@@ -2082,9 +2113,9 @@ men tag til hans Ærmers Knapper
 
 ---
 
-<nonum><small><right><i>Vekselsang efter Paaklædningsceremonien, af unge</i></right></small></nonum>
-<nonum><small><right><i>Mænd og Kvinder, dansende med Tamburiner, strøende</i></right></small></nonum>
-<nonum><small><right><i>Roser og stænkende Rosenvand</i></right></small></nonum>
+<nonum><right><small><i>Vekselsang efter Paaklædningsceremonien, af unge</i></small></right></nonum>
+<nonum><right><small><i>Mænd og Kvinder, dansende med Tamburiner, strøende</i></small></right></nonum>
+<nonum><right><small><i>Roser og stænkende Rosenvand</i></small></right></nonum>
 
 ,,Konge, hvad kan jeg sammenligne med dig?
 Med hvad kan jeg ligne din lyse Ungdom?
@@ -2117,8 +2148,8 @@ Og gid Gud altid bevare din Pande ren!
 
 ---
 
-<nonum><small><right><i>Sang af Kvinderne i Brudehuset, naar</i></right></small></nonum>
-<nonum><small><right><i>den unge Pige er iført sin Bryllupsdragt</i></right></small></nonum>
+<nonum><right><small><i>Sang af Kvinderne i Brudehuset, naar</i></small></right></nonum>
+<nonum><right><small><i>den unge Pige er iført sin Bryllupsdragt</i></small></right></nonum>
 
 ,,Unge Pige, du er klædt i rødt,
 løft din lille, røde Kjole op!
@@ -2136,7 +2167,7 @@ og plukke Dadlerne af dets Grene!''
 
 ---
 
-<nonum><small><right><i>Sang ved Brudens Bortdragen fra det fædrende Hus</i></right></small></nonum>
+<nonum><right><small><i>Sang ved Brudens Bortdragen fra det fædrende Hus</i></small></right></nonum>
 
 <nonum><i>Kvinderne:</i></nonum>
 ,,- - - Lavinen kommer fra Dilif-Bjerget,
@@ -2170,8 +2201,8 @@ Græd ikke, lille Moder,
 
 ---
 
-<nonum><small><right><i>Sang af Gæsterne i Bryllupshuset, naar efter</i></right></small></nonum>
-<nonum><small><right><i>Nattens Dans og Fest Solens Komme hilses</i></right></small></nonum>
+<nonum><right><small><i>Sang af Gæsterne i Bryllupshuset, naar efter</i></small></right></nonum>
+<nonum><right><small><i>Nattens Dans og Fest Solens Komme hilses</i></small></right></nonum>
 
 ,,Lader os hilse Morgenrøden,
 og hilse Guds hellige Moder,
@@ -2189,10 +2220,9 @@ for at den giver et langt Liv til Kongen og til Dronningen!"
 <text id="nalbandian2019030942">
 <head>
   <title><num>IV.</num>Kærlighedssange</title>
-  <toctitle><num>IV.</num>Kærlighedssange</toctitle>
+  <subtitle>Brudstykker</subtitle>
   <indextitle>Kærlighedssange</indextitle>
   <linktitle>Kærlighedssange</linktitle>
-  <subtitle>Brudstykker</subtitle>
   <firstline>Mit Hjerte er et Barn, som græder</firstline>
   <source pages="96-98"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2242,7 +2272,7 @@ Jeg vil røbe min Længsel kun for Maanen deroppe,
 
 ---
 
-<nonum><small><right><i>Den unge Emigrants Sang</i></right></small></nonum>
+<nonum><right><small><i>Den unge Emigrants Sang</i></small></right></nonum>
 
 Min blide, min Elskede! jeg hilser dig med Taarer!
   Se, jeg drager bort fra vor By.
@@ -2270,7 +2300,6 @@ I Bjergenes Ly! o min Stjerne herhjemme,
 <text id="nalbandian2019030943">
 <head>
   <title><num>V.</num>Min lille Moder</title>
-  <toctitle><num>V.</num>Min lille Moder</toctitle>
   <indextitle>Min lille Moder</indextitle>
   <linktitle>Min lille Moder</linktitle>
   <firstline>Hvem nærede mit spæde Liv</firstline>
@@ -2346,10 +2375,9 @@ og siger dig Farvel -
 <text id="nalbandian2019030944">
 <head>
   <title><num>VI.</num>Hvem søger du, min blide Moder?</title>
-  <toctitle><num>VI.</num>Hvem søger du, min blide Moder?</toctitle>
+  <subtitle>Den døende Helts Afsked</subtitle>
   <indextitle>Hvem søger du, min blide Moder?</indextitle>
   <linktitle>Hvem søger du, min blide Moder?</linktitle>
-  <subtitle>Den døende Helts Afsked</subtitle>
   <firstline>Hvem søger du, min blide Moder?</firstline>
   <source pages="102-104"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2419,7 +2447,6 @@ bring det glade Budskab til Zeytun!
 <text id="nalbandian2019030945">
 <head>
   <title><num>VII.</num>Friheden</title>
-  <toctitle><num>VII.</num>Friheden</toctitle>
   <indextitle>Friheden</indextitle>
   <linktitle>Friheden</linktitle>
   <firstline>Fra den Dag, da den gode Gud værdigedes at indblæse</firstline>
@@ -2442,7 +2469,6 @@ Min Tunges Lænker brast, og mine Forældre frydedes over min Stemmes Lyd. Men d
 <text id="nalbandian2019030946">
 <head>
   <title><num>VIII.</num>Arax's Graad</title>
-  <toctitle><num>VIII.</num>Arax's Graad</toctitle>
   <indextitle>Arax's Graad</indextitle>
   <linktitle>Arax's Graad</linktitle>
   <firstline>Jeg flakker ene langs med Moder Arax’s øde Bredder</firstline>
@@ -2484,7 +2510,6 @@ Ligesaa længe som mine Børn flakker hjemløse i fjerne Lande, ligesaa længe v
 <text id="nalbandian2019030947">
 <head>
   <title><num>IX.</num>Vuggesang for vor Moder Armenien</title>
-  <toctitle><num>IX.</num>Vuggesang for vor Moder Armenien</toctitle>
   <indextitle>Vuggesang for vor Moder Armenien</indextitle>
   <linktitle>Vuggesang for vor Moder Armenien</linktitle>
   <firstline>Sammensunken sidder du, der hvor Vejene krydses</firstline>
@@ -2534,7 +2559,6 @@ Sejrrig skal du staa frem af Mørket! Dine Øjne skal blive til Stjerner, dine b
 <text id="nalbandian2019030948">
 <head>
   <title><num>I.</num>Du siger, jeg er som Granen -</title>
-  <toctitle><num>I.</num>Du siger, jeg er som Granen -</toctitle>
   <indextitle>Du siger, jeg er som Granen -</indextitle>
   <linktitle>Du siger, jeg er som Granen -</linktitle>
   <firstline>Du siger, jeg er som Granen</firstline>
@@ -2604,23 +2628,26 @@ skifter just Ham og samles
 <text id="nalbandian2019030949">
 <head>
   <title><num>II.</num>I Berlin I-II</title>
-  <toctitle><num>II.</num>I Berlin I-II</toctitle>
   <indextitle>I Berlin I-II</indextitle>
   <linktitle>I Berlin I-II</linktitle>
   <firstline>Blandt alle de Minder, som ejer</firstline>
-  <source pages="120-126"/>
   <pictures>
-    <picture src="nalbandian2019030949-p4.jpg" year="1883">Arnold Böcklin: <i>Frühlingstag (Die drei Lebensalter)</i>, 1883, olie på panel, 103 × 150 cm. Kunstmuseum Bern.</picture><!-- http://www.sikart.ch/werke.aspx?id=10170712 -->
+    <picture src="nalbandian2019030949-p4.jpg" year="1883">Arnold Böcklin: <i>Frühlingstag (Die drei Lebensalter)</i>, 1883, olie på panel, 103 × 150 cm. Kunstmuseum Bern.</picture>
+    <!-- http://www.sikart.ch/werke.aspx?id=10170712 -->
     <picture src="nalbandian2019030949-p3.jpg" year="1872" objid="962057" museum="smb">Arnold Böcklin: <i>Selbstbildnis mit fiedelndem Tod</i>, 1872, olie på lærred, 75 × 61 cm. Alte Nationalgalerie, Berlin.</picture>
     <picture src="nalbandian2019030949-p1.jpg" year="1883" objid="967648" museum="smb">Arnold Böcklin: <i>Die Toteninsel</i>, 1883, olie på panel, 80 × 150 cm. Alte Nationalgalerie, Berlin.</picture>
     <picture src="nalbandian2019030949-p2.jpg" year="1884" objid="962824" museum="smb">Arnold Böcklin: <i>Der Einsiedler</i>, 1884, olie på panel, 90 × 69 cm. Alte Nationalgalerie, Berlin.</picture>
   </pictures>
+  <source pages="120-126"/>
+  <places>
+    <place ref="berlin" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 <nonum><center>I</center></nonum>
-<nonum><small><center>Böcklins Malerier</center></small></nonum>
+<nonum><center><small>Böcklins Malerier</small></center></nonum>
 
 <nonum><i>Han:</i></nonum>
 Blandt alle de Minder, som ejer
@@ -2725,7 +2752,7 @@ Smaa-Engle flokkes og lyttende staa - -
 ---
 
 <nonum><center>II</center></nonum>
-<nonum><small><center>Følge</center></small></nonum>
+<nonum><center><small>Følge</small></center></nonum>
 
 ... Men Solen randt og minded
   os om, at kort var Mødet,
@@ -2803,7 +2830,6 @@ en Bro imod mig bygge!
 <text id="nalbandian2019030950">
 <head>
   <title><num>III.</num>Og du kom</title>
-  <toctitle><num>III.</num>Og du kom</toctitle>
   <indextitle>Og du kom</indextitle>
   <linktitle>Og du kom</linktitle>
   <firstline>Og du kom -! Og Solen lyste</firstline>
@@ -2838,7 +2864,6 @@ Det blev saa livsaligt et Møde,
 <text id="nalbandian2019030951">
 <head>
   <title><num>IV.</num>Min Syreknop</title>
-  <toctitle><num>IV.</num>Min Syreknop</toctitle>
   <indextitle>Min Syreknop</indextitle>
   <linktitle>Min Syreknop</linktitle>
   <firstline>Aa nej, hvor staar de friske!</firstline>
@@ -2872,7 +2897,6 @@ thi trygt og ømt i Skygge
 <text id="nalbandian2019030952">
 <head>
   <title><num>V.</num>Du tog mig op paa det højeste Bjerg</title>
-  <toctitle><num>V.</num>Du tog mig op paa det højeste Bjerg</toctitle>
   <indextitle>Du tog mig op paa det højeste Bjerg</indextitle>
   <linktitle>Du tog mig op paa det højeste Bjerg</linktitle>
   <firstline>Du tog mig op paa det højeste Bjerg</firstline>
@@ -2918,7 +2942,6 @@ Der laa det nede, saa stort og blaat,
 <text id="nalbandian2019030953">
 <head>
   <title><num>VI.</num>Min Ranke fin</title>
-  <toctitle><num>VI.</num>Min Ranke fin</toctitle>
   <indextitle>Min Ranke fin</indextitle>
   <linktitle>Min Ranke fin</linktitle>
   <firstline>Du er den unge, slanke</firstline>
@@ -2970,7 +2993,6 @@ Lær mig at være dig, ved Kraft
 <text id="nalbandian2019030954">
 <head>
   <title><num>VII.</num>Men om du rigtig vidste, hvad du gjorde -</title>
-  <toctitle><num>VII.</num>Men om du rigtig vidste, hvad du gjorde -</toctitle>
   <indextitle>Men om du rigtig vidste, hvad du gjorde -</indextitle>
   <linktitle>Men om du rigtig vidste, hvad du gjorde -</linktitle>
   <firstline>Min Elskede, du ser paa mig og smiler</firstline>
@@ -3004,7 +3026,6 @@ dengang du tog en Drømmerske til Hustru -?
 <text id="nalbandian2019030955">
 <head>
   <title><num>VIII.</num>Barneportrættet</title>
-  <toctitle><num>VIII.</num>Barneportrættet</toctitle>
   <indextitle>Barneportrættet</indextitle>
   <linktitle>Barneportrættet</linktitle>
   <firstline>Der staar paa Bordet foran mig et Billed</firstline>
@@ -3060,7 +3081,6 @@ saa er det hende, jeg tyr til: en lille,
 <text id="nalbandian2019030956">
 <head>
   <title><num>IX.</num>Hvor man er To</title>
-  <toctitle><num>IX.</num>Hvor man er To</toctitle>
   <indextitle>Hvor man er To</indextitle>
   <linktitle>Hvor man er To</linktitle>
   <firstline>Hvor man er To, der sætter Værn</firstline>
@@ -3091,7 +3111,6 @@ da bæres let, som Blomst fra Edens Have,
 <text id="nalbandian2019030957">
 <head>
   <title><num>X.</num>Vort første, lille Juletræ -</title>
-  <toctitle><num>X.</num>Vort første, lille Juletræ -</toctitle>
   <indextitle>Vort første, lille Juletræ -</indextitle>
   <linktitle>Vort første, lille Juletræ -</linktitle>
   <firstline>Vort første, lille Juletræ</firstline>
@@ -3200,7 +3219,6 @@ som straaled for os, da vi sammen sad
 <text id="nalbandian2019030958">
 <head>
   <title><num>XI.</num>Du ejer saa rigt et Livsmod -</title>
-  <toctitle><num>XI.</num>Du ejer saa rigt et Livsmod -</toctitle>
   <indextitle>Du ejer saa rigt et Livsmod -</indextitle>
   <linktitle>Du ejer saa rigt et Livsmod -</linktitle>
   <firstline>Du ejer saa rigt et Livsmod</firstline>

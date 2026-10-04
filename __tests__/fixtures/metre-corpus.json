@@ -1,0 +1,132 @@
+[
+  {
+    "name": "regulær firefodet jamb",
+    "expected": ["iambic-tetrameter"],
+    "lines": [
+      "i nat på vej mod havets rand",
+      "ved dag på sti til skovens port",
+      "og se den sol bag skyens slør",
+      "at gå med håb til livets mål",
+      "i nat på vej mod havets rand",
+      "ved dag på sti til skovens port",
+      "og se den sol bag skyens slør",
+      "at gå med håb til livets mål"
+    ]
+  },
+  {
+    "name": "regulær firefodet trokæ",
+    "expected": ["trochaic-tetrameter"],
+    "lines": [
+      "månen over stille skove",
+      "vinden gennem grønne dale",
+      "solen over blanke bølger",
+      "fugle flyver over engen",
+      "månen over stille skove",
+      "vinden gennem grønne dale",
+      "solen over blanke bølger",
+      "fugle flyver over engen",
+      "månen over stille skove",
+      "vinden gennem grønne dale",
+      "solen over blanke bølger",
+      "fugle flyver over engen",
+      "månen over stille skove",
+      "vinden gennem grønne dale"
+    ]
+  },
+  {
+    "name": "regulær tofodet anapæst",
+    "expected": ["anapestic-dimeter"],
+    "lines": [
+      "i en skov på en vej",
+      "på et bjerg ved en sø",
+      "i en nat under sky",
+      "med et håb om en vår",
+      "i en skov på en vej",
+      "på et bjerg ved en sø",
+      "i en nat under sky",
+      "med et håb om en vår"
+    ]
+  },
+  {
+    "name": "regulær tofodet daktyl",
+    "expected": ["dactylic-dimeter"],
+    "lines": [
+      "sommeren lykkelig",
+      "månerne skinnende",
+      "bølgerne rullende",
+      "stjernerne lysende",
+      "sommeren lykkelig",
+      "månerne skinnende",
+      "bølgerne rullende",
+      "stjernerne lysende"
+    ]
+  },
+  {
+    "name": "jambisk alexandriner",
+    "expected": ["alexandrine", "iambic-hexameter"],
+    "lines": [
+      "i nat på vej mod byens port ved havets rand",
+      "ved dag på sti til skovens hus ved markens hegn",
+      "og se den sol bag skyens slør på himlens hvælv",
+      "at gå med håb til livets mål ved verdens rand",
+      "i nat på vej mod byens port ved havets rand",
+      "ved dag på sti til skovens hus ved markens hegn",
+      "og se den sol bag skyens slør på himlens hvælv",
+      "at gå med håb til livets mål ved verdens rand"
+    ]
+  },
+  {
+    "name": "femfodet jamb med feminin udgang",
+    "expected": ["hendecasyllabic", "iambic-pentameter"],
+    "lines": [
+      "i nat på vej mod byens port ved havet",
+      "ved dag på sti til skovens hus ved marken",
+      "og se den sol bag skyens slør på himlen",
+      "at gå med håb til livets mål i verden",
+      "i nat på vej mod byens port ved havet",
+      "ved dag på sti til skovens hus ved marken",
+      "og se den sol bag skyens slør på himlen",
+      "at gå med håb til livets mål i verden",
+      "i nat på vej mod byens port ved havet",
+      "ved dag på sti til skovens hus ved marken",
+      "og se den sol bag skyens slør på himlen",
+      "at gå med håb til livets mål i verden",
+      "i nat på vej mod byens port ved havet",
+      "ved dag på sti til skovens hus ved marken"
+    ]
+  },
+  {
+    "name": "firefodet jamb med metrisk substitution",
+    "expected": ["iambic-tetrameter"],
+    "lines": [
+      "i nat på vej mod havets rand",
+      "ved dag på sti til skovens port",
+      "og se den sol bag skyens slør",
+      "at gå med håb til livets mål",
+      "Pludselig står alting ganske stille her",
+      "ved dag på sti til skovens port",
+      "og se den sol bag skyens slør",
+      "at gå med håb til livets mål",
+      "i nat på vej mod havets rand",
+      "ved dag på sti til skovens port",
+      "Morgenens vinger løfter de sovende blade",
+      "at gå med håb til livets mål",
+      "i nat på vej mod havets rand",
+      "ved dag på sti til skovens port"
+    ]
+  },
+  {
+    "name": "frie vers",
+    "expected": [],
+    "lines": [
+      "Regn",
+      "En sporvogn drejer gennem byen",
+      "jeg husker et vindue",
+      "under den meget store himmel",
+      "så stilhed",
+      "og alle de navne vi glemte",
+      "sten",
+      "i morgen er gaden en anden"
+    ]
+  }
+]

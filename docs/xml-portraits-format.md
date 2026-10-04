@@ -39,6 +39,21 @@ Buildet kræver:
 
 ## Lokale portrætter
 
+Et direkte `<picture>` kan have typevaliderede identifikatorer:
+
+```xml
+<picture src="p1.jpg">
+  Billedtekst.
+  <identifiers>
+    <wikidata>Q123</wikidata>
+    <smk>12345</smk>
+  </identifiers>
+</picture>
+```
+
+Et `<picture>` med `artwork` eller `portrait` må ikke have egne identifikatorer;
+de hentes fra den refererede billedpost.
+
 Den mest almindelige form er et lokalt billede i `public/images/<id>/`:
 
 ```xml
@@ -54,7 +69,9 @@ Attributter:
 - `square-src`: kvadratisk fil under `public/images/<id>/`, brugt til social portrait.
 - `year`: år eller årinterval for billedet.
 - `museum`: museums-id fra `content/museums.xml`.
-- `objid`, `invnr`, `wikidata`: bruges til remote museum-link.
+- `objid`, `invnr`: bruges til remote museum-link.
+
+Wikidata-ID’er angives i `<identifiers><wikidata>...</wikidata></identifiers>`.
 - `clip-path`: CSS clip-path til beskæring.
 
 `src`-billedet skal være en billedfil, typisk `.jpg`, og thumbnails genereres under
@@ -142,6 +159,19 @@ Typiske attributter:
 - `wikidata`: Wikidata-id.
 
 Remote URL bygges i `tools/build-static/museums.js`.
+
+For kunstværker er `wikidata`, `smk` og `kid` tilladt.
+
+Museumposter i `content/museums.xml` kan desuden have typevaliderede
+identifikatorer. For museer er `wikidata` tilladt:
+
+```xml
+<museum id="smk">
+  <name>Statens Museum for Kunst</name>
+  <country>dk</country>
+  <identifiers><wikidata>Q2015876</wikidata></identifiers>
+</museum>
+```
 
 ## Square portraits
 

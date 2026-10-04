@@ -13,6 +13,7 @@ describe('external identifiers', () => {
       'wikipedia-de': 'Hans Christian Andersen',
       'gravsted-dk': 'hcandersen',
       viaf: '4925902',
+      gnd: '1073490319',
       'lex-dk': 'H.C._Andersen',
       'teaterleksikon-lex-dk': 'H.C._Andersen',
       'biografisk-leksikon-lex-dk': 'H.C._Andersen',
@@ -28,6 +29,7 @@ describe('external identifiers', () => {
     }))).toEqual([
       { id: 'viaf', href: 'https://viaf.org/viaf/4925902/' },
       { id: 'wikidata', href: 'https://www.wikidata.org/wiki/Q5673' },
+      { id: 'gnd', href: 'https://d-nb.info/gnd/1073490319' },
       { id: 'lex-dk', href: 'https://lex.dk/H.C._Andersen' },
       {
         id: 'biografisk-leksikon-lex-dk',
@@ -83,6 +85,7 @@ describe('external identifiers', () => {
     const identifiers = {
       wikidata: 'Q5673',
       viaf: '4925902',
+      gnd: '1073490319',
       'lex-dk': 'H.C._Andersen',
       'gutenberg-org': '2298',
     };
@@ -91,7 +94,7 @@ describe('external identifiers', () => {
       buildExternalIdentifierLinks(identifiers, { category: 'authority' }).map(
         ({ id }) => id,
       ),
-    ).toEqual(['viaf', 'wikidata']);
+    ).toEqual(['viaf', 'wikidata', 'gnd']);
     expect(
       buildExternalIdentifierLinks(identifiers, { category: 'reference' }).map(
         ({ id }) => id,

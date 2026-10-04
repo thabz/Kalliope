@@ -8,7 +8,7 @@
   </notes>
   <pictures>
     <picture type="frontpage" src="1905-p1.jpg">Forsiden til <i>Vandringer</i> (1905).</picture>
-    <picture type="titlepage" src="1905-p2.jpg">Titelbladet til <i>Vandringer</i> (1905). ,,Vandringer / Digte / af / L. C. Nielsen / Gyldendalske Boghandel / Nordisk Forlag / København 1905 Kristiania''.</picture>
+    <picture type="titlepage" src="1905-p2.jpg"><transcription>Vandringer / Digte / af / L. C. Nielsen / Gyldendalske Boghandel / Nordisk Forlag / København 1905 Kristiania</transcription></picture>
   </pictures>
   <source facsimile="115308082748_color" facsimile-pages-num="148" facsimile-pages-offset="14">L. C. Nielsen: <i>Vandringer</i>, Gyldendalske Boghandel, Nordisk Forlag, Kbh., 1905.</source>
   <quality>korrektur1,kilde,side</quality>
@@ -167,10 +167,10 @@ med Roser vi smykkede vor Ransel!
   <title>Julehilsen hjem!</title>
   <subtitle>(Med et Billede af Luca della Robbias Relief: Syngende Drenge.)</subtitle>
   <firstline>Vi kommer syngende langvejs fra</firstline>
-  <source pages="8-9"/>
   <pictures>
     <picture src="nielsenlc2017100903-p1.jpg" museum="operaduomo">Luca della Robbia (1399/1400-1482): udsnit af <i>Cantoria di Luca della Robbia</i>, 1431-1438, bassorelief.</picture>
   </pictures>
+  <source pages="8-9"/>
   <!-- https://it.wikipedia.org/wiki/Cantoria_di_Luca_della_Robbia -->
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2493,6 +2493,7 @@ af drømmende Vellugt ombølget.
   <title>Vandring</title>
   <firstline>Fra Sorg jeg gik, til Sorg jeg kom</firstline>
   <source pages="126-127"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

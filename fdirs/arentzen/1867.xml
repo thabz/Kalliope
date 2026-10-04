@@ -8,7 +8,7 @@
     <note>Noter med en foranstillet asterisk er Arentzens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1867-p1.jpg">Titelblad til <i>Ny Digtsamling</i> har ordlyden ,,Ny Digtsamling / af / Kristian Arentzen. // Kjøbenhavn / O. B. Wroblewskys Forlag. / G. S. Wibes Bogtrykkeri. / 1867.''.</picture>
+    <picture type="titlepage" src="1867-p1.jpg"><transcription>Ny Digtsamling / af / Kristian Arentzen. // Kjøbenhavn / O. B. Wroblewskys Forlag. / G. S. Wibes Bogtrykkeri. / 1867.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122436957305763" facsimile="115308040225_color" facsimile-pages-num="194" facsimile-pages-offset="8">Kristian Arentzen: <i>Ny Digtsamling</i>, O. B. Wroblewskys Forlag, Kbh., 1867.</source>
 </workhead>
@@ -497,6 +497,7 @@ deres Nattevagt.
   <title>En Moders Kys</title>
   <firstline>Jeg drog afsted fra mit Barndoms Hjem</firstline>
   <source pages="22-23"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -704,11 +705,11 @@ skjærme sine smaa Forstødte med en mægtig Haand.
   <title>Hinsides Alperne</title>
   <subtitle>(Af et Reisebrev fra 1862)</subtitle>
   <firstline>Alpenaturen med jættestor Vælde</firstline>
-  <!-- Sassoferrato har malet madonnaen med det sovende jesubarn mange gange, men der findes ikke (længere?) en udgave på Pinacoteca Brera i Milano. -->
-  <source pages="32-37"/>
   <pictures>
     <picture src="arentzen2018022811-p1.jpg">Guercino (Giovan Francesco Barbieri): <i>Abramo ripudia Agar e Ismael</i>, 1657, olie på lærred, 115×152cm. Brera Pinocoteca, Milano.</picture>
   </pictures>
+  <!-- Sassoferrato har malet madonnaen med det sovende jesubarn mange gange, men der findes ikke (længere?) en udgave på Pinacoteca Brera i Milano. -->
+  <source pages="32-37"/>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1056,6 +1057,7 @@ som aldrig skal uddøe paa Dannemarks Vang.
   <title>Om Natten</title>
   <firstline>Det er ikke dødt, det er ikke dødt</firstline>
   <source pages="46"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1482,6 +1484,7 @@ vær hilset, evige Rom!
   <title>Paa Veien</title>
   <firstline>Min unge Kvinde, fjernt fra Dig</firstline>
   <source pages="64"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2022,6 +2025,7 @@ fra Vandring.
   <title>I Klostergaarden</title>
   <firstline>Der hersker i Klostergaarden</firstline>
   <source pages="88-90"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2521,6 +2525,7 @@ og en Tyveknegt han!
   <title>Ved Havet</title>
   <firstline>Du skal vandre ved Strand, Du skal vandre ved Strand</firstline>
   <source pages="110-111"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2563,6 +2568,7 @@ fortabes i Skabningens Sukke.
   <title>Julebrev fra Rom</title>
   <firstline>Nu Juletidens Tryllespil</firstline>
   <source pages="112-117"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2725,9 +2731,9 @@ saa kommer Karnevalet.
 </head>
 <body>
 <poetry>
-<nonum><small><center>Hal paa Gaarden Sævarende i Jylland. Nat.</center></small></nonum>
+<nonum><center><small>Hal paa Gaarden Sævarende i Jylland. Nat.</small></center></nonum>
 <nonum><center>Kongen</center></nonum>
-<nonum><small><center>kommer, urolig, ind, iført Natdragt.</center></small></nonum>
+<nonum><center><small>kommer, urolig, ind, iført Natdragt.</small></center></nonum>
 
 Der gives bange Timer i vort Liv.
 De komme ofte, som en dunkel Sky
@@ -2782,7 +2788,7 @@ og indtil Døden er min Sjæl bedrøvet.
 
 
 <nonum><center>Dronningen</center></nonum>
-<nonum><small><center>træder ind, ligeledes i Natdragt.</center></small></nonum>
+<nonum><center><small>træder ind, ligeledes i Natdragt.</small></center></nonum>
 
 Min elskede Husbond for Gud og Mænd.
 min dyrebare Knudlille,
@@ -3730,7 +3736,7 @@ stimerne gjemte.
 
 <text id="arentzen2018022846">
 <head>
-  <title>182*. 1841. 1866.</title>
+  <title>182*. 1841. 1866</title>
   <subtitle>Ved det 25aarige Studenterjubilæum 1866.</subtitle>
   <firstline>Helten var styrted, der dristigen iled</firstline>
   <source pages="162-164"/>

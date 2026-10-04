@@ -61,7 +61,7 @@ const PersonMetaLine = ({ label, value }) => {
   );
 };
 
-const PersonMeta = ({ poet, lang }) => {
+export const PersonMeta = ({ poet, lang }) => {
   if (poet.type === 'collection') {
     return null;
   }
@@ -71,6 +71,10 @@ const PersonMeta = ({ poet, lang }) => {
   let age = formattedAge(poet.period, lang);
 
   let born = poet.period == null ? null : dateAndPlace(poet.period.born, lang);
+  let baptized =
+    poet.period?.baptized == null
+      ? null
+      : dateAndPlace(poet.period.baptized, lang);
   let dead =
     poet.period == null ? null : dateAndPlace(poet.period.dead, lang, age);
 
@@ -91,12 +95,13 @@ const PersonMeta = ({ poet, lang }) => {
         value={poet.name.fullname}
         label={_('Fulde navn', lang)}
       />
-      <PersonMetaLine value={christened} label={_('Døbt', lang)} />
+      <PersonMetaLine value={christened} label={_('Døbenavn', lang)} />
       <PersonMetaLine
         value={poet.name.pseudonym}
         label={_('Pseudonym', lang)}
       />
       <PersonMetaLine value={born} label={_('Født', lang)} />
+      <PersonMetaLine value={baptized} label={_('Døbt', lang)} />
       {coronationMetaLine}
       <PersonMetaLine value={dead} label={_('Død', lang)} />
     </div>
@@ -228,9 +233,7 @@ const BioPage = (props) => {
     lang,
     poet,
     portraits,
-    content_html,
-    content_lang,
-    sources,
+    biographies,
     timeline,
     identifiers,
     error,
@@ -258,7 +261,9 @@ const BioPage = (props) => {
       headTitle={`${_('Biografi', lang)} - ${poetNameString(poet)} - Kalliope`}
       ogTitle={poetNameString(poet, false, false) + ' ' + _('biografi', lang)}
       ogImage={OpenGraph.poetImage(poet)}
-      ogDescription={OpenGraph.trimmedDescription(content_html)}
+      ogDescription={OpenGraph.trimmedDescription(
+        biographies[0]?.content_html
+      )}
       requestPath={`/${lang}/bio/${poet.id}`}
       crumbs={poetCrumbsWithTitle(lang, poet, _('Biografi', lang))}
       pageTitle={<PoetName poet={poet} includePeriod />}
@@ -268,22 +273,24 @@ const BioPage = (props) => {
       selectedMenuItem="bio">
       <SidebarSplit sidebar={sidebarItems} sidebarOnTopWhenSplit={true}>
         <div style={{ lineHeight: '1.6' }}>
-          <TextContent
-            contentHtml={content_html}
-            contentLang={content_lang}
-            className="bio-text"
-          />
-          <BiographySources sources={sources} lang={lang} />
+          {biographies.map((biography, index) => (
+            <div className="biography" key={index}>
+              <TextContent
+                contentHtml={biography.content_html}
+                contentLang={biography.content_lang}
+                className="bio-text"
+              />
+              <BiographySources sources={biography.sources} lang={lang} />
+            </div>
+          ))}
           <Timeline timeline={timeline} lang={lang} />
           <style jsx>{`
-            :global(.bio-text) {
+            .biography {
               margin-bottom: 40px;
             }
-            @media (max-width: 600px) {
-              :global(.bio-text) {
-                border-bottom: 1px solid #666;
-                padding-bottom: 30px;
-              }
+            .biography + .biography {
+              border-top: 1px solid #666;
+              padding-top: 30px;
             }
           `}</style>
         </div>
@@ -298,9 +305,7 @@ BioPage.getInitialProps = async ({ query: { lang, poetId } }) => {
     lang,
     portraits: json.portraits,
     poet: json.poet,
-    content_html: json.content_html,
-    content_lang: json.content_lang,
-    sources: json.sources,
+    biographies: json.biographies ?? [],
     timeline: json.timeline,
     identifiers: json.identifiers,
     error: json.error,

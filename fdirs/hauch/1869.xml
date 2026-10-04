@@ -3,13 +3,16 @@
 <workhead>
   <title>Nye Digtninger</title>
   <year>1869</year>
+  <identifiers>
+    <openlibrary-work>OL11770398W</openlibrary-work>
+  </identifiers>
   <quality>korrektur1</quality>
   <notes>
     <note>Noter med en foranstillet asterisk er Hauchs egne.</note>
     <note>Novellen <i>Bellman</i>, pp. 153-301, er pt. eneste udeladelse i Kalliope.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1869-p1.jpg">Titelbladet til <i>Nye Digtninger</i> (1869) lyder ,,Nye Digtninger, / af / C. Hauch. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1869.''</picture>
+    <picture type="titlepage" src="1869-p1.jpg"><transcription>Nye Digtninger, / af / C. Hauch. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1869.</transcription></picture>
   </pictures>
   <source facsimile="115208030438_color" facsimile-pages-num="324" facsimile-pages-offset="14">Carsten Hauch: <i>Nye Digtninger</i>, C. A. Reitzels Forlag, Kbh., 1869.</source>
 </workhead>
@@ -381,7 +384,7 @@ Ved Sorøs gamle By.
 </head>
 <body>
 <poetry>
-<nonum><small><center>Før.</center></small></nonum>
+<nonum><center><small>Før.</small></center></nonum>
 
 Atter stride Polens Sønner paa den vante Viis,
 Deres Daad maa Hjertet smelte, var det end af Iis,
@@ -413,7 +416,7 @@ Naar til Kamp det vækkes.
 
 ---
 
-<nonum><small><center>Nu.</center></small></nonum>
+<nonum><center><small>Nu.</small></center></nonum>
 
 Vort Haab og de gjøglende Drømme.
 Svandt hen i Glemsels Elv,
@@ -1381,6 +1384,7 @@ Da modstaae Elskovs Magt.
   <title>Da jeg var syg</title>
   <firstline>Naar Nattens Børn sig hæve</firstline>
   <source pages="62-63"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1461,7 +1465,7 @@ Paa Evighedens Hav.
     Men Eders Stjerneblik forstaaer jeg ikke.
 
 
-<nonum><small><center>Stemmer fra oven.</center></small></nonum>
+<nonum><center><small>Stemmer fra oven.</small></center></nonum>
 
 I langstrakte Baner vi maale Tid og Rum,
 Hvor deres Grændser sattes, vi veed dog Intet om,
@@ -3246,6 +3250,7 @@ Og spærrer saa Døren til!
   <toctitle><num>4.</num>En Sæterpiges Afsked med sin Kjæreste</toctitle>
   <firstline>Og nu farvel da, min Hjertens Ven!</firstline>
   <source pages="149-150"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

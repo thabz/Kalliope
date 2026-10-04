@@ -41,6 +41,7 @@ import { isFileModified } from '../tools/libs/caching.js';
 import { htmlToXml } from '../tools/libs/helpers.js';
 import * as xml from '../tools/build-static/xml.js';
 import {
+  buildElasticsearchKeywordEntries,
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
   buildElasticsearchTextEntryDocuments,
@@ -177,6 +178,132 @@ describe('Elasticsearch build-static step', () => {
     ]);
   });
 
+  test('builds entries only for selected poets', () => {
+    expect(
+      buildElasticsearchTextEntries(collected, new Set(['poet'])).map(
+        entry => entry.textEntryKey
+      )
+    ).toEqual(['poet-first', 'poet-second']);
+    expect(
+      buildElasticsearchTextEntries(collected, new Set(['other']))
+    ).toEqual([]);
+    expect(
+      buildElasticsearchPoetEntries(collected, new Set(['other']))
+    ).toEqual([]);
+  });
+
+  test('builds searchable published keyword entries', () => {
+    expect(
+      buildElasticsearchKeywordEntries({
+        keywords: new Map([
+          [
+            'sonnet',
+            {
+              id: 'sonnet',
+              title: 'Sonet',
+              redirectURL: null,
+              isDraft: false,
+            },
+          ],
+          [
+            'perioder',
+            { id: 'perioder', title: 'Perioder', isDraft: true },
+          ],
+        ]),
+      })
+    ).toEqual([
+      {
+        id: 'keyword-sonnet',
+        data: {
+          result_type: 'keyword',
+          keyword: {
+            id: 'sonnet',
+            title: 'Sonet',
+            redirectURL: null,
+          },
+        },
+      },
+    ]);
+  });
+
+  test('indexes keyword entries in the configured selected-poet index', async () => {
+    const collectedWithKeywords = {
+      ...collected,
+      keywords: new Map([
+        [
+          'sonnet',
+          {
+            id: 'sonnet',
+            title: 'Sonet',
+            redirectURL: null,
+            isDraft: false,
+          },
+        ],
+      ]),
+    };
+
+    await update_elasticsearch(collectedWithKeywords, {
+      forceRebuild: true,
+      index: 'kalliope-ci',
+      poetIds: new Set(['poet']),
+    });
+
+    expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith(
+      'kalliope-ci',
+      [
+        {
+          id: 'keyword-sonnet',
+          data: {
+            result_type: 'keyword',
+            keyword: {
+              id: 'sonnet',
+              title: 'Sonet',
+              redirectURL: null,
+            },
+          },
+        },
+      ]
+    );
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith(
+      'kalliope-ci'
+    );
+  });
+
+  test('adds keyword ids and titles to text documents', () => {
+    const textNode = { node: 'text' };
+    const collectedWithKeywords = {
+      ...collected,
+      keywords: new Map([
+        ['sonnet', { id: 'sonnet', title: 'Sonet' }],
+      ]),
+    };
+    xml.getElementByTagName.mockImplementation((element, tagName) => tagName);
+    xml.getElementsByTagNames.mockReturnValue([textNode]);
+    xml.safeGetAttr.mockImplementation((element, attrName) =>
+      attrName === 'id' ? 'poet-first-text' : null
+    );
+    xml.safeGetText.mockImplementation((element, tagName) =>
+      tagName === 'keywords' ? 'sonnet' : null
+    );
+    xml.safeGetInnerXML.mockImplementation(element =>
+      element === 'body' ? 'Tekstindhold' : 'Teksttitel'
+    );
+    xml.tagName.mockReturnValue('text');
+    htmlToXml.mockReturnValue([['Tekstindhold']]);
+
+    const entry = buildElasticsearchTextEntries(collectedWithKeywords).find(
+      item => item.workId === 'first'
+    );
+    const textDocument = buildElasticsearchTextEntryDocuments(
+      collectedWithKeywords,
+      entry
+    ).find(document => document.id === 'poet-first-text');
+
+    expect(textDocument.data.text.keyword_ids).toEqual(['sonnet']);
+    expect(textDocument.data.text.keyword_titles).toEqual(['Sonet']);
+  });
+
   test('skips Elasticsearch when no works changed and index exists', async () => {
     await update_elasticsearch(collected);
 
@@ -199,6 +326,20 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.deleteWork).not.toHaveBeenCalled();
     expect(elasticSearchClient.create).not.toHaveBeenCalled();
     expect(consoleLog).toHaveBeenCalledWith(
+      'Elasticsearch server not available; skipping search index update.'
+    );
+  });
+
+  test('fails when Elasticsearch is required but unavailable', async () => {
+    const error = new Error('connect ECONNREFUSED 127.0.0.1:9200');
+    error.code = 'ECONNREFUSED';
+    elasticSearchClient.indexExists.mockRejectedValue(error);
+
+    await expect(
+      update_elasticsearch(collected, { skipUnavailable: false })
+    ).rejects.toThrow('connect ECONNREFUSED 127.0.0.1:9200');
+
+    expect(consoleLog).not.toHaveBeenCalledWith(
       'Elasticsearch server not available; skipping search index update.'
     );
   });
@@ -408,5 +549,35 @@ describe('Elasticsearch build-static step', () => {
       )
     ).toBe(false);
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('rebuilds a selected subset in a separate index', async () => {
+    await update_elasticsearch(collected, {
+      index: 'kalliope-ci',
+      poetIds: new Set(['poet']),
+      forceRebuild: true,
+      skipUnavailable: false,
+    });
+
+    expect(elasticSearchClient.indexExists).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.createIndex).toHaveBeenCalledWith('kalliope-ci');
+    expect(elasticSearchClient.bulkCreate).toHaveBeenCalledWith(
+      'kalliope-ci',
+      expect.any(Array)
+    );
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith(
+      'kalliope-ci'
+    );
+  });
+
+  test('rejects unknown selected poet ids', async () => {
+    await expect(
+      update_elasticsearch(collected, {
+        poetIds: new Set(['unknown']),
+        forceRebuild: true,
+      })
+    ).rejects.toThrow('Unknown Elasticsearch poet ids: unknown');
+
+    expect(elasticSearchClient.indexExists).not.toHaveBeenCalled();
   });
 });

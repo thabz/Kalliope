@@ -8,7 +8,7 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Noter med foranstillet * er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1854-p1.jpg">Titelbladet til <i>Digte. Første Deel</i> (1854).<br/>Digte / af / H. C. Andersen. / Første Deel. / Kjøbenhavn. / Forlagt af C. A. Reitzels Bo og Arvinger. / Bianco Lunos Bogtrykkeri. / 1854.</picture>
+    <picture type="titlepage" src="1854-p1.jpg"><transcription>Digte / af / H. C. Andersen. / Første Deel. / Kjøbenhavn. / Forlagt af C. A. Reitzels Bo og Arvinger. / Bianco Lunos Bogtrykkeri. / 1854.</transcription></picture>
   </pictures>
   <quality>korrektur1,kilde,side</quality>
 </workhead>
@@ -23,7 +23,6 @@
 <text id="andersen2002122201" variant="andersen2002121801">
 <head>
   <title>Poesien</title>
-  <toctitle>Poesien</toctitle>
   <indextitle>Poesien [1854]</indextitle>
   <firstline>Der er et herligt Land</firstline>
   <notes>
@@ -76,8 +75,6 @@ Det Lysets Fædreland.
 <text id="andersen2002122203">
 <head>
   <title>Gefion</title>
-  <toctitle>Gefion</toctitle>
-  <indextitle>Gefion</indextitle>
   <firstline>Kong Gylfe sidder i Gildehuus</firstline>
   <notes>
     <note>Trykt første gang april 1832 i <i>Valkyrien</i>, 1. bind, side 279-80; teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 37-38.</note>
@@ -137,8 +134,6 @@ Med Kjæmpehøie og Skove.''
 <text id="andersen2002122204">
 <head>
   <title>Aarets Børn</title>
-  <toctitle>Aarets Børn</toctitle>
-  <indextitle>Aarets Børn</indextitle>
   <firstline>Tolv Sønner Aaret har; pas paa</firstline>
   <notes>
     <note>Trykt første gang i <i>Hertha. Svensk-Dansk Nyårsgåfva för 1840</i>, side 156-57; teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 38-39.</note>
@@ -193,8 +188,6 @@ Tilraaber os: ,,Kom med, leg Juul!''
 <head>
   <title>Skovbal</title>
   <subtitle>(1825)</subtitle>
-  <toctitle>Skovbal</toctitle>
-  <indextitle>Skovbal</indextitle>
   <firstline>Den friske, varme Sommerluft</firstline>
   <notes>
     <note>Trykt første gang i 1835 som lejlighedstryk: <i>Sang ved Skovballet den 31 Juli 1835. Forfattet af H.C. Andersen;</i> teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 43.</note>
@@ -242,8 +235,6 @@ I hvor vi monne være!
 <head>
   <title>Rosen paa Kisten</title>
   <subtitle>(1851)</subtitle>
-  <toctitle>Rosen paa Kisten</toctitle>
-  <indextitle>Rosen paa Kisten</indextitle>
   <firstline>See Sørgetoget gjennem Gyden gaaer</firstline>
   <notes>
     <note>Første gang trykt i 1849 som fjerde sang i <i>Fire Sange for een Syngestemme med Accompagnement af Pianoforte</i>, under titlen ,,Rosen''; teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 49.</note>
@@ -273,8 +264,6 @@ Hvad drømmer den paa Kistens sorte Fjel.
 <text id="andersen2002122604">
 <head>
   <title>Fædrelandet</title>
-  <toctitle>Fædrelandet</toctitle>
-  <indextitle>Fædrelandet</indextitle>
   <firstline>Ægypteren ved Nilen gaaer</firstline>
   <notes>
     <note>Trykt første gang som lejlighedstryk: <i>Fædrelandet. 28. Mai 1840</i> (1840); teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 54-55.</note>
@@ -350,7 +339,6 @@ Vort Fædreland, det kaldes Danmark!
 </head>
 <body>
 <poetry>
-
 Nu kommer Visen med Knald, Hurra!
 Humeur forneden og foroven.
 Held Elephanten i Africa,
@@ -409,7 +397,6 @@ Ved din Skaal hver en Rose nikker!
 </head>
 <body>
 <poetry>
-
 Hør Venners Stemme: drik og spiis!
 Thi snart, saa er Du i Paris,
 Og nyder der, ja, Gud veed hvad,
@@ -450,7 +437,6 @@ Farvel! farvel! det Bedste skee!
 </head>
 <body>
 <poetry>
-
 Vi er i Marts, men Martsviol
 Kun sees i Rude-Isen,
 Man selv maa bringe Foraars-Sol
@@ -502,7 +488,6 @@ Og ingen Rigsdags Tanker,
 </head>
 <body>
 <poetry>
-
 Hæv Dig vor Sang! her synger Stort og Smaat,
 Har man kun Røst, paa den megen gode Spisen!
 Blæse være Røsten! er bare Hjertet godt,
@@ -558,7 +543,6 @@ Hjertet vil og vor Sang forstaae! :/:
 </head>
 <body>
 <poetry>
-
 Du, som nys Flugten satte
 Ned mod Italia
 Og Kunstens rige Skatte
@@ -597,7 +581,6 @@ Farvel! Held Danmarks Flag!
 </head>
 <body>
 <poetry>
-
 Naar Du nu om ikke længe
 Staaer i Mexico,
 ,,Danmark deiligst Vang og Vænge''
@@ -660,6 +643,7 @@ Glædens Guld, tag din Betaling Ven!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -667,8 +651,6 @@ Glædens Guld, tag din Betaling Ven!
 <head>
   <title>Stakkels Mary Anne</title>
   <subtitle>(Engelsk Folkevise, udsat af <i>J. P. E. Hartmann</i>)</subtitle>
-  <toctitle>Stakkels Mary Anne</toctitle>
-  <indextitle>Stakkels Mary Anne</indextitle>
   <firstline>Under Gravens Græstørv sover</firstline>
   <notes>
     <note>Trykt første gang i <i>Samling af fleerstemmige Mandssange</i> (1852); teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 80.</note>
@@ -711,8 +693,6 @@ Egnens Piger Dig begræde,
 <head>
   <title>Prolog og Epilog</title>
   <subtitle>(Fremsagte paa et Privattheater ved en Forestilling, givet af Elever fra det kongelige Theater)</subtitle>
-  <toctitle>Prolog og Epilog</toctitle>
-  <indextitle>Prolog og Epilog</indextitle>
   <firstline>En Aftenunderholdning med Bevilling</firstline>
   <notes>
     <note>Epilogen blev trykt første gang i <i>Digte, gamle og nye</i> (1846); teksten her følger <i>Samlede Skrifter</i>, bind XV (1854), side 86-87.</note>
@@ -749,9 +729,9 @@ Den kaldes <i>Publicum</i>, - den for os være! -
 
 ---
 
-<center><nonum><sc>Et Par Ord</sc></nonum></center>
+<nonum><center><sc>Et Par Ord</sc></center></nonum>
 <nonum><center><small><i>Epilog</i></small></center></nonum>
-<wrap><center><small>fremsagt af en af Eleverne, der paa det kongelige Theater endnu kun var brugt til at være Bud eller Tjener</small></center></wrap>
+<center><wrap><small>fremsagt af en af Eleverne, der paa det kongelige Theater endnu kun var brugt til at være Bud eller Tjener</small></wrap></center>
 <resetnum/>Høistærede! - jeg troer De vil mig kjende,
 De veed jeg fører ei den lange Snak;
 En kort Replik og saa er Alt tilende -
@@ -865,6 +845,7 @@ Mere end Guldet er Hjerternes Klang!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1079,6 +1060,7 @@ Og staaer i Tøir paa en Tanke-Skat.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1183,6 +1165,7 @@ Vor Moder, vor Veninde!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1236,14 +1219,13 @@ Held ham, vor Stolthed og vor Kjærlighed!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="andersen2002122716">
 <head>
   <title>Med „Molbechs Eventyr“</title>
-  <toctitle>Med „Molbechs Eventyr“</toctitle>
-  <indextitle>Med „Molbechs Eventyr“</indextitle>
   <firstline>Her aabnes Dig et Slot med tusind Sale</firstline>
   <source pages="71-72"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
   <quality>korrektur1,kilde,side</quality>
@@ -1306,10 +1288,10 @@ Ved det hun just forfølge vil, - Geni!
   <toctitle><num>VII</num>Georg Carstensen</toctitle>
   <indextitle>Georg Carstensen</indextitle>
   <firstline>Som vildsom Fugl Du flere Gange fløi</firstline>
-  <source pages="75"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
   <pictures>
     <picture artwork="marstrand/carstensen-1844" />
   </pictures>
+  <source pages="75"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1499,6 +1481,7 @@ Dig blomstre Livets Rose frisk og længe!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1954,6 +1937,7 @@ Hvad Mængden kalder: ,,Børne-Eventyr''.
   <indextitle>Ved et Barns Død</indextitle>
   <firstline>Dit Øie loe, din Kind var rød</firstline>
   <source pages="122-123"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2071,24 +2055,23 @@ Og det er jo altid Noget.
 </head>
 <body>
 <poetry>
-<center><nonum><small>(Over en Conditor-Boutik)</small></nonum></center>
+<nonum><center><small>(Over en Conditor-Boutik)</small></center></nonum>
 For Pengene, som til Conditoren gaaer,
 Den Lidende Sundheds-Æblet faaer!
 
-<center><nonum><small>(Over Tombola)</small></nonum></center>
+<nonum><center><small>(Over Tombola)</small></center></nonum>
 Her vinder Du altid - Dig Lykken er huld!
 Her vinder Du altid - Taknemligheds Guld!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
 <text id="andersen2002122752">
 <head>
   <title>Den unge Herr Petersen</title>
-  <toctitle>Den unge Herr Petersen</toctitle>
-  <indextitle>Den unge Herr Petersen</indextitle>
   <firstline>Og det var den unge Herr Petersen</firstline>
   <source pages="144"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
   <quality>korrektur1,kilde,side</quality>
@@ -2301,7 +2284,6 @@ Ved Deres Bifald gaaer min Feber bort!
 <head>
   <title>&#8224; Grev Joachim Moltke-Bregentved</title>
   <subtitle>(Til hans Forældre og Sødskende)</subtitle>
-  <toctitle>&#8224; Grev Joachim Moltke-Bregentved</toctitle>
   <indextitle>Grev Joachim Moltke-Bregentved</indextitle>
   <firstline>Tænk kun paa ham hvis Støv er Graven bragt</firstline>
   <source pages="190-191"><i>Samlede Skrifter</i>, bind XVI (1854).</source>
@@ -2329,6 +2311,7 @@ De Runer vil' vi riste paa hans Grav!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 

@@ -25,7 +25,6 @@
 <text id="henriksen2019072401">
 <head>
   <title><num>I.</num>Skibet</title>
-  <toctitle><num>I.</num>Skibet</toctitle>
   <indextitle>Skibet</indextitle>
   <linktitle>Skibet</linktitle>
   <firstline>Hint Skib, der glider bort for Morgnens Bris</firstline>
@@ -61,7 +60,6 @@ O, Skib, hvad Lykke mon os Skæbnen gav!
 <text id="henriksen2019072402">
 <head>
   <title><num>II.</num>Liljerne</title>
-  <toctitle><num>II.</num>Liljerne</toctitle>
   <indextitle>Liljerne</indextitle>
   <linktitle>Liljerne</linktitle>
   <firstline>Jeg vandrer ensom lig en Sky</firstline>
@@ -461,7 +459,6 @@ mit Træ - det faar Du ej!
 <text id="henriksen2019072409">
 <head>
   <title><num>I.</num>Det aabne Vindu</title>
-  <toctitle><num>I.</num>Det aabne Vindu</toctitle>
   <indextitle>Det aabne Vindu</indextitle>
   <linktitle>Det aabne Vindu</linktitle>
   <firstline>Det gamle Hus under Lindene</firstline>
@@ -509,7 +506,6 @@ hans bløde og varme Haand.
 <text id="henriksen2019072410">
 <head>
   <title><num>II.</num>Det er ej altid Maj!</title>
-  <toctitle><num>II.</num>Det er ej altid Maj!</toctitle>
   <indextitle>Det er ej altid Maj!</indextitle>
   <linktitle>Det er ej altid Maj!</linktitle>
   <firstline>Saa høj en Sol, saa ren en Luft</firstline>
@@ -557,7 +553,6 @@ i glemte Reder fra i Fjor.
 <text id="henriksen2019072411">
 <head>
   <title><num>III.</num>Morgenvind</title>
-  <toctitle><num>III.</num>Morgenvind</toctitle>
   <indextitle>Morgenvind</indextitle>
   <linktitle>Morgenvind</linktitle>
   <firstline>Saa vidt over Verden gik Morgenens Vind</firstline>
@@ -621,11 +616,11 @@ Sov kun og vent til jer Time slaar!
 <head>
   <title>Længsel</title>
   <firstline>Saa gyldent Stjærnerne blinked</firstline>
-  <source pages="35-36"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Joseph von Eichendorff <xref type="translation" poem="eichendorff2019072601"/>.</note>
   </notes>
+  <source pages="35-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -846,11 +841,11 @@ fornemme Efterarets Løvfaldsfryd.
 <head>
   <title>Ithaka</title>
   <firstline>Der blæser en Sydstorm af værste Art</firstline>
-  <source pages="44-45"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Emil von Schoenaich-Carolaths <xref type="translation" poem="schoenaich2026072601"/>.</note>
   </notes>
+  <source pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -890,11 +885,11 @@ Vi hilser Dig, Gudestrand!
 <head>
   <title>Moders Ring</title>
   <firstline>Du smalle Ring, Du gyldne Ring</firstline>
-  <source pages="46-47"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note unknown-original-by="vierordt" />
   </notes>
+  <source pages="46-47"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -944,11 +939,11 @@ det helligt-rene Troskabspant.
 <head>
   <title>De blaanende Søers Land</title>
   <firstline>Og gaarr Du i modløs Tøven</firstline>
-  <source pages="48-50"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note unknown-original-by="lienhard" />
   </notes>
+  <source pages="48-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1195,7 +1190,6 @@ og Bagdad og Wak-Wak-Land?
 <text id="henriksen2019072422">
 <head>
   <title><num>I.</num>Vildgræsset</title>
-  <toctitle><num>I.</num>Vildgræsset</toctitle>
   <indextitle>Vildgræsset</indextitle>
   <linktitle>Vildgræsset</linktitle>
   <firstline>Der gror i de gamle Skove en Urt</firstline>
@@ -1233,15 +1227,14 @@ der drog ham med Toner og Sus.
 <text id="henriksen2019072423">
 <head>
   <title><num>II.</num>Den yderste Dag</title>
-  <toctitle><num>II.</num>Den yderste Dag</toctitle>
+  <subtitle>Ynglingen til Jomfruen:</subtitle>
   <indextitle>Den yderste Dag</indextitle>
   <linktitle>Den yderste Dag</linktitle>
-  <subtitle>Ynglingen til Jomfruen:</subtitle>
   <firstline>Det var i Jordens sidste Vaar</firstline>
-  <source pages="61-63"/>
   <notes>
     <note>Gendigtning af Erik Axel Karlfeldts <xref type="translation" poem="karlfeldt2026072601"/>.</note>
   </notes>
+  <source pages="61-63"/>
   <source href="http://www.karlfeldt.org/bibliotek/diktarkivet">Erik Axel Karlfeldt: <i>Diktarkivet</i>.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

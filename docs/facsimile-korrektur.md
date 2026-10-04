@@ -9,10 +9,41 @@ Målet er ikke blot en tekst uden oplagte OCR-fejl. Resultatet skal bevare
 kildens ordlyd, verslinjer, strofer, overskrifter, tegnsætning og relevante
 typografiske træk og samtidig være gyldigt Kalliope-XML.
 
+## To korrekturgennemgange før færdigstatus
+
+En PDF-import er en kladde med `status="incomplete"`, indtil to fulde,
+side-for-side-gennemgange mod facsimilet er afsluttet. `txt2xml` tildeler aldrig
+kvalitetsmærker. Producentens første gennemgang må tilføje
+`korrektur1,kilde,side`, men værket forbliver `incomplete`.
+
+Den anden gennemgang udføres af en anden model eller session, som læser alle
+relevante sider uden selv at redigere XML. Editoren retter reviewerens fund;
+revieweren genkontrollerer rettelserne, så fund går fra `fixed` til `verified`.
+Et fund, der blot er rettet, er ikke afsluttet.
+
+Slutcheckpointet blokerer, hvis en side er gennemgået af producenten, et fund
+er `open` eller `fixed`, en OCR-, side-, strofe- eller indrykningskandidat ikke
+er vurderet mod facsimilet, eller XML-/repositorytests ikke består. Først når
+checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
+`complete`, og reviewerens modelattest registreres efter
+`docs/xml-work-format.md`.
+
 ## Grundregel
 
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
+
+Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
+`<workhead>`, og alle relevante rettelser skal indføres med
+`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
+
+En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
+udgave eller variant. Opret først et kildebaseret udkast fra det aktuelle
+facsimile og frisk OCR. Brug derefter eksisterende transskriptioner til
+sammenligning og relationsfinding. Ordlyd, tegnsætning, linje- og
+strofegrænser, indrykning, overskrifter, noter, sideskift og typografi må aldrig
+overføres fra varianten uden selvstændig kontrol mod det aktuelle facsimile.
 
 En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
 mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
@@ -113,6 +144,23 @@ Kontrollér maskinelt:
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
 
+Slutkontrollen skal bruge helværksanalysen fra den endelige XML og OCR-geometri
+fra facsimilesiderne. Hver kandidat i rapporten skal forbindes med en særskilt
+afsluttet registrering, som beskriver afgørelsen og angiver den kontrollerede
+facsimileside. Et samlet antal »gennemgåede kandidater« er ikke tilstrækkeligt.
+Der skal også være en selvstændig visuel registrering af strofelængderne for
+hvert digt, inklusive digte uden maskinelle kandidater.
+Ændres XML efter analysen, skal rapporten og registreringerne opdateres før
+værket kan godkendes.
+
+Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
+digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor
+mange eksisterende grænser der bevares, hvor mange grænser der skal fjernes
+eller tilføjes, og hvor mange intakte strofer der allerede støtter mønstret.
+Resultatets `uniform_pattern_hypotheses` viser de bedst rangerede forslag og de
+konkrete grænseændringer. En global hypotese bruges kun, når den har tydelig
+afstand til næstbedste forslag; kandidaterne skal stadig kontrolleres visuelt.
+
 Ved sideskift skal optællingen fortsætte på tværs af siden. Afgør ud fra
 facsimilet, strofeformen og den løbende tekst, om den første linje på den nye
 side fortsætter en strofe eller begynder en ny. En ny fysisk side er ikke i sig
@@ -152,9 +200,11 @@ Sideintervallet skal skrives med fulde endepunkter, fx `102-108`, ikke
 `102-08`, og skal være lukket og ikke-faldende. Inden for hver tekstpost skal
 arabiske `pb/@n` være ikke-faldende. Sidetallet kan begynde forfra ved en ny
 tekstpost, når kilden har selvstændig paginering. De numeriske
-`pb/@facs`-filnavne skal være ikke-faldende gennem hele værket; der må gerne
-være spring mellem markørerne. Romertal i `n` ignoreres af den maskinelle
-rækkefølgekontrol.
+`pb/@facs`-filnavne skal være ikke-faldende inden for samme facsimilekilde; der
+må gerne være spring mellem markørerne. I ældre værkfiler med flere kilder
+begynder en ny rækkefølge, når tekstens `source/@in` skifter. Uden
+`source/@in` gælder én rækkefølge for hele værket. Romertal i `n` ignoreres af
+den maskinelle rækkefølgekontrol.
 
 En konkret tekst med en dokumenteret pagineringsafvigelse kan bruge
 `ignore-tests="pagebreak-count"`, hvis det lovlige sideinterval ikke bestemmer
@@ -189,9 +239,25 @@ Strofeoverskrifter og andre trykte linjer, som ikke er vers, skal markeres efter
 <nonum><center>XLII.</center></nonum>
 ```
 
-En trykt skillelinje kan tilsvarende være en centreret `<nonum>`-linje eller et
-eksisterende, passende skilleelement. Følg mønstret i repositoryet; lad ikke en
-overskrift eller dekoration stå som en almindelig verslinje.
+En trykt, centreret vandret skillelinje skrives som `---` på en selvstændig
+linje med en tom linje både før og efter. `build-static` omsætter denne notation
+til det korrekte skilleelement. Denne notation gælder kun en intern skillelinje:
+Et ornament efter digtets sidste vers transskriberes aldrig og må derfor ikke
+stå som `---` eller som anden markup umiddelbart før `</poetry>`. Andre trykte
+dekorationer kan være en centreret
+`<nonum>`-linje eller et eksisterende, passende skilleelement. Følg mønstret i
+repositoryet; lad ikke en overskrift eller dekoration stå som en almindelig
+verslinje.
+
+Et ornament af adskilte stjerner skal altid normaliseres til den centrerede
+ikke-verslinje `<nonum><center>* * *</center></nonum>`, uanset hvor mange
+mellemrum OCR'en har indsat mellem stjernerne. Der skal være en tom linje både
+før og efter markøren.
+
+Ved dramatiske tekster følges også
+[vejledningen om talere, regi og rollelister](xml-work-format.md#dramatiske-tekster-talere-regi-og-rollelister).
+Kontrollér særskilt talernavnenes spatiering, sceneintroduktionernes lille
+skrift og ombrydning samt korte regibemærkninger og interne skillelinjer.
 
 ## 4. Brug flere OCR-pass som kontrol
 
@@ -275,6 +341,16 @@ Kontrollér særskilt:
 Tegnfejl er ofte sværere for OCR end ordfejl. Et pass kan gengive alle bogstaver
 rigtigt og stadig miste en tankestreg, vende et anførselstegn eller forveksle
 spatiering med almindelige mellemrum.
+
+Typografikontrollen skal registreres som sin egen kandidatkontrol i det frosne
+review-checkpoint. Den udføres side for side direkte på facsimilet: kursiv
+afmærkes med `<i>`, og spatieret tekst med `<w>`. OCR uden typografiske fund er
+ikke i sig selv et bestået resultat, fordi almindelig OCR typisk flader begge
+dele ud. Checkpointet må derfor ikke oprettes uden en afsluttet
+`typography`-kontrol, heller ikke når kontrollen ender med nul fund.
+Hver side i JSONL-inventaret skal desuden have
+`"typography_status":"reviewed"` og en konkret `typography_disposition`, så én
+samlet afkrydsning ikke kan stå i stedet for sidevis kontrol.
 
 Zoom ind på tvivlsomme steder. Afgør dem ikke ud fra moderne sprogbrug. En
 mærkelig, men tydeligt trykt læsning skal bevares.

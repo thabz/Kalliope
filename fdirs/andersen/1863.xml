@@ -3,11 +3,14 @@
 <workhead>
   <title>I Spanien</title>
   <year>1863</year>
+  <identifiers>
+    <openlibrary-work>OL25467W</openlibrary-work>
+  </identifiers>
   <notes>
     <note>Alle digtene fra rejsebogen <i>I Spanien</i>, der blev udgivet i 1863 som bind 24 af <i>Samlede Skrifter</i>. Romertallene er et redaktionelt påfund, efterlignende den praksis Andersen selv benyttede sig af når han lod udvalg af Spaniensdigtene trykke i digtantologier og tidsskrifter; overskrifterne (,,Indtrædelse i Spanien'', ,,Murcia'' osv.) følger bogens kapitler. Medtaget er også Andersens oversættelser, der såvel i bogen som her er sat i citationstegn, de er alle ret kontekstafhængige, så den foregående bid prosa er ved disse digte citeret i digtnoten. Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1863-p1.jpg">Titelbladet til <i>I Spanien</i> (1863).<br/>I Spanien / af / H. C. Andersen. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1863.</picture>
+    <picture type="titlepage" src="1863-p1.jpg"><transcription>I Spanien / af / H. C. Andersen. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1863.</transcription></picture>
   </pictures>
   <quality>korrektur1,kilde,side</quality>
 </workhead>
@@ -26,6 +29,9 @@
   <indextitle>Sindet forfriskes, Tanken beriges</indextitle>
   <firstline>Sindet forfriskes, Tanken beriges</firstline>
   <source pages="1"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="spain" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -37,6 +43,7 @@ Tak for min Lykke, Fader i Himlen!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -53,6 +60,9 @@ Tak for min Lykke, Fader i Himlen!
   <indextitle>Granattræ, Citrontræ, - ja slige Høibaarne</indextitle>
   <firstline>Granattræ, Citrontræ, - ja slige Høibaarne</firstline>
   <source pages="73"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="murcia" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -74,6 +84,7 @@ Og saa - Du er Aske og jeg faren hen!''
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -93,6 +104,9 @@ Og saa - Du er Aske og jeg faren hen!''
     <note>Balkonen med den dejlige datter bringer mindelser om eventyret <i>Skyggen</i> fra 1847, som også foregår i de varme lande og hvori hovedpersonen drømmer om en smuk jomfru stående på genboens altan.</note>
   </notes>
   <source pages="78"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cartagena" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -128,6 +142,9 @@ Nu vil jeg slukke Lampen
   <indextitle>De dandse med Castagnetter</indextitle>
   <firstline>De dandse med Castagnetter</firstline>
   <source pages="82"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cartagena" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -157,6 +174,9 @@ I, som bleve Konstens Udkaarne,
   <indextitle>Hvor Himlen har Stjerner! jeg kjender jo hver</indextitle>
   <firstline>Hvor Himlen har Stjerner! jeg kjender jo hver</firstline>
   <source pages="82-83"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cartagena" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -178,6 +198,9 @@ Det er som et Kys fra det danske Land!
   <indextitle>Hvor flyver min Tanke imorgen den Dag?</indextitle>
   <firstline>Hvor flyver min Tanke imorgen den Dag?</firstline>
   <source pages="84-85"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cartagena" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -197,6 +220,7 @@ Hvad eller til Klarhed i Gud og Tro.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -213,6 +237,9 @@ Hvad eller til Klarhed i Gud og Tro.
   <indextitle>Der under Træerne nede</indextitle>
   <firstline>Der under Træerne nede</firstline>
   <source pages="90"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -242,6 +269,9 @@ Og Havet er Landeveien
   <indextitle>Ingen kjender mig, Ingen kjender jeg</indextitle>
   <firstline>Ingen kjender mig, Ingen kjender jeg</firstline>
   <source pages="91"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -265,6 +295,9 @@ Kysse hver Blomst paa den svulmende Strøm!
   <indextitle>Flodleiet ligger udtørret</indextitle>
   <firstline>Flodleiet ligger udtørret</firstline>
   <source pages="96-97"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -305,6 +338,9 @@ Dog ikke min Erindring,
   <indextitle>Ja Guult og Rødt er Spaniens Farver</indextitle>
   <firstline>Ja Guult og Rødt er Spaniens Farver</firstline>
   <source pages="98-99"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -332,6 +368,9 @@ Du Solblomst-Frugt med <i>Spaniens</i> Farver!
   <indextitle>Hvo skal jeg troe?</indextitle>
   <firstline>Hvo skal jeg troe?</firstline>
   <source pages="102"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -365,6 +404,9 @@ Inqvisitionen har mig.
   <indextitle>Ved Husets Muur stod en Hæk af Geranier</indextitle>
   <firstline>Ved Husets Muur stod en Hæk af Geranier</firstline>
   <source pages="103"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -386,6 +428,9 @@ Var man ei en Iismand, strax blev man en Spanier.
   <indextitle>Som en Lotus paa den stille Sø</indextitle>
   <firstline>Som en Lotus paa den stille Sø</firstline>
   <source pages="103"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -417,6 +462,9 @@ Bed en Bøn for mig - hos <i>Spanierinden</i>.
   <indextitle>I Norden, i Kakkelovns-Krogen</indextitle>
   <firstline>I Norden, i Kakkelovns-Krogen</firstline>
   <source pages="104"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="malaga" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -430,6 +478,7 @@ Saa brænder du op i et Eventyr!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -446,6 +495,9 @@ Saa brænder du op i et Eventyr!
   <indextitle>Grønne Flod, Du strømmer sorgfuld</indextitle>
   <firstline>Grønne Flod, Du strømmer sorgfuld</firstline>
   <source pages="115"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -473,6 +525,9 @@ Som er' faldne her i Slaget.''<note>* Gammel spansk Romanze.</note>
     <note>Digtet følger efter følgende prosastykke: ,,Ældgamle, forunderlig høie Træer, staae opstillede i Række, slynge deres tykke, bladfulde Grene ind i hverandre, danne et for Sollyset uigjennemtrængeligt Løvtag, der løfter sig saa høit, saa høit. Laurbærbuske, Oleander og tætbladede Hækker skjerme paa Siderne mod den stærke Sol; <i>Xenil</i> løber tæt forbi for snart at forenens med <i>Darro</i>; derom er en Sang, som Børnene synge:''</note>
   </notes>
   <source pages="133"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -492,6 +547,9 @@ Plaza Nueva og Zacatin.
   <indextitle>Held mig! Granada jeg seer</indextitle>
   <firstline>Held mig! Granada jeg seer</firstline>
   <source pages="136-138"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -562,6 +620,9 @@ Snart voxer Græsset derover,
   <indextitle>Bibelens Job ham kjender Du vel?</indextitle>
   <firstline>Bibelens Job ham kjender Du vel?</firstline>
   <source pages="140"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -583,6 +644,9 @@ Verset her, - det er ogsaa et Mærke!
   <indextitle>Giv af dit Hjerte til Folk og til Slægt</indextitle>
   <firstline>Giv af dit Hjerte til Folk og til Slægt</firstline>
   <source pages="141"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -608,6 +672,9 @@ Venter Du Glæde —, ja, da faaer Du Smerte.
   <indextitle>Den, som jeg gav af mit Hjerteblod</indextitle>
   <firstline>Den, som jeg gav af mit Hjerteblod</firstline>
   <source pages="141-142"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -636,38 +703,41 @@ O, maatte mit briste i denne Stund!
     <note>De første tre strofer følger efter følgende prosastykke: ,,Stumme, mægtige Cypresser i <i>Generalifes</i> Have, hvad vidne I? Hvad have I seet? - <i>Boabdils</i> Fald, Maurernes Undergang! Til Eder naaede Jammerens Raab, da <i>Alhama</i> var falden.'' De næste to linjer efter: ,,Og Maurerne forsamledes og han forkyndte dem sit Tab; den Ældste af Præsterne forkyndte ham sin Skjæbne'', og det sidste efter: ,,og han nævner <i>Abencerragerne</i>, og de Fremmede i <i>Cordoba</i> og Dommen. Sangen slutter:''</note>
   </notes>
   <source pages="152-153"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-    ,,I <i>Granada</i>, gjennem Byen,
-    Sorgfuld drager Maurerkongen;
-    Fra <i>Elviras</i> Port han rider
-    Hen til Porten <i>Bivarrambla</i>.
-        Vee mig, mit <i>Alhama</i>.
+,,I <i>Granada</i>, gjennem Byen,
+Sorgfuld drager Maurerkongen;
+Fra <i>Elviras</i> Port han rider
+Hen til Porten <i>Bivarrambla</i>.
+    Vee mig, mit <i>Alhama</i>.
 
-    Breve vare komne til ham,
-    At han havde tabt <i>Alhama</i>;
-    Brevene han smed til Jorden,
-    Den, som bragte dem, han dræbte.
-        Vee mig, mit <i>Alhama!</i>
+Breve vare komne til ham,
+At han havde tabt <i>Alhama</i>;
+Brevene han smed til Jorden,
+Den, som bragte dem, han dræbte.
+    Vee mig, mit <i>Alhama!</i>
 
-    Og han steg ned af sit Muuldyr,
-    Satte sig paa Hesten, red saa
-    Til <i>Alhambra</i>, lod der skingre
-    Sølvtrompet og Kjedeltromme.
-        Vee mig, mit <i>Alhama!</i>''
-
----
-
-    ,,Kun din Ret skeer Dig, o Konge!
-    Du fortjente værre Skjæbne.''
+Og han steg ned af sit Muuldyr,
+Satte sig paa Hesten, red saa
+Til <i>Alhambra</i>, lod der skingre
+Sølvtrompet og Kjedeltromme.
+    Vee mig, mit <i>Alhama!</i>''
 
 ---
 
-    ,,Som Du <i>Alhama</i> har mistet,
-    Miste skal Du snart dit Rige!
-        Vee mig, mit <i>Alhama!</i>''
+,,Kun din Ret skeer Dig, o Konge!
+Du fortjente værre Skjæbne.''
+
+---
+
+,,Som Du <i>Alhama</i> har mistet,
+Miste skal Du snart dit Rige!
+    Vee mig, mit <i>Alhama!</i>''
 </poetry>
 </body>
 </text>
@@ -679,6 +749,9 @@ O, maatte mit briste i denne Stund!
   <indextitle>Som en Æolsharpe brudt itu</indextitle>
   <firstline>Som en Æolsharpe brudt itu</firstline>
   <source pages="157"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="granada" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -698,6 +771,7 @@ Kostbar rigt indlagt - det er <i>Alhambra</i>.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -714,6 +788,9 @@ Kostbar rigt indlagt - det er <i>Alhambra</i>.
   <indextitle>Man siger, at i Spanien Qvinden</indextitle>
   <firstline>Man siger, at i Spanien Qvinden</firstline>
   <source pages="177"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="spain" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -733,6 +810,7 @@ En Dolk ved sit Strømpebaand.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -746,9 +824,12 @@ En Dolk ved sit Strømpebaand.
 <head>
   <title>I Afrika</title>
   <toctitle><num>I</num>I Afrika</toctitle>
-  <indextitle>I Afrika</indextitle>
   <firstline>Jeg er ovre i Marokko!</firstline>
   <source pages="185"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="africa" relation="subject" primary="true"/>
+    <place ref="morocco" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -791,6 +872,9 @@ Hører Du igjen mit Hjertes
     <note>Digtet følger efter følgende prosastykke (som igen følger umiddelbart efter forrige digt): ,,Hjemligt var her; mit Modersmaal hørte jeg. Fru <i>Drummond Hay</i>, en af disse stille, ædle, qvindelige Naturer, er en Datter af den afdøde danske General-Consul <i>Carstensen</i> i <i>Tanger</i>. Om Slægt og Venner i det kjære <i>Danmark</i> var meget at tale; danske Melodier klang fra Claveret. Husets unge, smukke Døttre sad hos os, <i>Louisa</i> og <i>Alice</i>, den Ene er født i <i>Kjøbenhavn</i>, den Anden i <i>Tanger</i>; de kjendte mine Eventyr i engelsk Oversættelse; den franske Genfer-Udgave, hvori staaer <i>Dyndkongens Datter</i>, et Eventyr, hvori Scenen skifter mellem <i>Danmark</i> og <i>Afrika</i>, fik Plads i deres Bogskab; i Bogen selv skrev jeg:''</note>
   </notes>
   <source pages="186"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="tangier" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -810,6 +894,9 @@ At eie to unge Veninder?
   <indextitle>Hører Du Havets susende Tone</indextitle>
   <firstline>Hører Du Havets susende Tone</firstline>
   <source pages="188-189"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="tangier" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -831,6 +918,7 @@ Suus og fortæl, hvad et Verdenshav dækker!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -844,9 +932,11 @@ Suus og fortæl, hvad et Verdenshav dækker!
 <head>
   <title>Cadiz</title>
   <toctitle><num>I</num>Cadiz</toctitle>
-  <indextitle>Cadiz</indextitle>
   <firstline>Som store, grønne Fuglebuur</firstline>
   <source pages="210"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cadiz" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -877,6 +967,9 @@ Saa heller strax begravet.
     <note>Linjerne følger efter følgende prosastykke: ,,Der groer ved Sommertid et deiligt Træ i Skoven, Solen skinner derind, Fuglene synge deri og Vinden gynger de grønne Grene. Træet bliver hugget om, det er dets Bestemmelse; det bliver savet til fire gode Bræder, de blive bragt i Snedkerens Værksted.''</note>
   </notes>
   <source pages="212-213"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cadiz" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -886,6 +979,7 @@ Naar vi bli'er i Graven lagt!''
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -899,9 +993,11 @@ Naar vi bli'er i Graven lagt!''
 <head>
   <title>Cigaren</title>
   <toctitle><num>I</num>Cigaren</toctitle>
-  <indextitle>Cigaren</indextitle>
   <firstline>Cigarens Glød er et Ildsted</firstline>
   <source pages="217-218"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -937,6 +1033,9 @@ Jeg glemte Dig, jeg var i <i>Danmark</i>,
   <indextitle>Ja vel, vi er midt i November</indextitle>
   <firstline>Ja vel, vi er midt i November</firstline>
   <source pages="223"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -975,6 +1074,9 @@ Ved dem og ved det at jeg fryser,
     <note>Andersen gengiver (sandsynligvis) en replik fra Gabriel Téllez' <i>El Burlador de Sevilla</i>, Don Juans tjener har lige set sin herre blive opslugt i ,,Afgrundens Flammer'' og udbryder:</note>
   </notes>
   <source pages="229"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -998,6 +1100,9 @@ Hjelp mig naadigt ud paa Gaden!''
   <indextitle>Hun er som en Rose, saa frisk og blød!</indextitle>
   <firstline>Hun er som en Rose, saa frisk og blød!</firstline>
   <source pages="234"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1026,6 +1131,9 @@ Troer Du, at en Djævel gjør Mennesket glad!''
   <indextitle>Ak, var der dog kun et eneste Sprog</indextitle>
   <firstline>Ak, var der dog kun et eneste Sprog</firstline>
   <source pages="235"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1050,6 +1158,9 @@ Der er et eneste fælles Sprog,
   <indextitle>Man finder det passende, finder det smukt</indextitle>
   <firstline>Man finder det passende, finder det smukt</firstline>
   <source pages="235-236"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1081,6 +1192,9 @@ I Kjærlighed synger mit Hjerte ud!
   <indextitle>Jeg er som et Vand, som det dybe Vand</indextitle>
   <firstline>Jeg er som et Vand, som det dybe Vand</firstline>
   <source pages="238"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1097,6 +1211,7 @@ Mod Ungdommen! <i>Din</i> er forbi!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1113,6 +1228,9 @@ Mod Ungdommen! <i>Din</i> er forbi!
   <indextitle>Du evige Gud, saa kjærlig og god!</indextitle>
   <firstline>Du evige Gud, saa kjærlig og god!</firstline>
   <source pages="246-247"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="cordoba" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1135,6 +1253,7 @@ I den kom Du til os! Dig Magten og Æren!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1148,9 +1267,11 @@ I den kom Du til os! Dig Magten og Æren!
 <head>
   <title>Madrid</title>
   <toctitle><num>I</num>Madrid</toctitle>
-  <indextitle>Madrid</indextitle>
   <firstline>Spaniens Hovedstad, nei</firstline>
   <source pages="261-262"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="madrid" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1174,6 +1295,7 @@ Sølede, taagede, hu!
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1190,6 +1312,9 @@ Sølede, taagede, hu!
   <indextitle>Vær hilset, Du Fortids Toledo</indextitle>
   <firstline>Vær hilset, Du Fortids Toledo</firstline>
   <source pages="288-289"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="toledo" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1229,6 +1354,7 @@ Og den havde kulsorte Øine,
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1242,9 +1368,11 @@ Og den havde kulsorte Øine,
 <head>
   <title>Burgos</title>
   <toctitle><num>I</num>Burgos</toctitle>
-  <indextitle>Burgos</indextitle>
   <firstline>Det fyger saa voldsomt derude</firstline>
   <source pages="294-295"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="burgos" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1299,6 +1427,9 @@ Jeg synger i <i>Spaniens</i> Land.
     <note>De første 7 linjer følger efter følgende prosastykke: „... Der hang i et Aflukke, ligesom en gammel Reise-Kiste, for ikke at siger Koffert; der skulde efter Sagnet have været to af disse historiske Minder. Det hedder om dem i Sangen:'', de sidste to efter: ,,Men som Sangen melder og undskyldende tilføier: 'det var i Nød det skeete'.''</note>
   </notes>
   <source pages="296"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="burgos" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1318,6 +1449,7 @@ Der var fyldt med alt hans Sølvtøi.''
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 
@@ -1334,6 +1466,9 @@ Der var fyldt med alt hans Sølvtøi.''
   <indextitle>Af Rhythmer i Castagnetter</indextitle>
   <firstline>Af Rhythmer i Castagnetter</firstline>
   <source pages="300-301"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="spain" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1361,6 +1496,9 @@ Det spanske Sprog maa hun tale,
   <indextitle>Spanien, hvilken Rigdom har Du</indextitle>
   <firstline>Spanien, hvilken Rigdom har Du</firstline>
   <source pages="305-306"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="spain" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1392,6 +1530,9 @@ Og din Nutid eier Ungdom,
   <indextitle>Jeg jubler af Fryd paa fremmed Strand</indextitle>
   <firstline>Jeg jubler af Fryd paa fremmed Strand</firstline>
   <source pages="308"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="biarritz" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1409,6 +1550,9 @@ Men Glæden har Taarer i Hjemmets Land.
   <indextitle>Gud Fader i Himlen, hvor er Du dog god!</indextitle>
   <firstline>Gud Fader i Himlen, hvor er Du dog god!</firstline>
   <source pages="308-309"><i>Samlede Skrifter</i>, bind XXIV (1863).</source>
+  <places>
+    <place ref="biarritz" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1426,6 +1570,7 @@ Det var dog et Kys af din Fadermund.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
 

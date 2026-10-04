@@ -8,7 +8,7 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1895-p1.jpg">Titelbladet til <i>Sol og Sky</i> (1895). ,,Sol og Sky / Digte / af / Valdemar Rørdam // Kjøbenhavn / Jul. Gjellerups Forlag / Fr. G. Knudtzons Bogtrykkeri / 1895''.</picture>
+    <picture type="titlepage" src="1895-p1.jpg"><transcription>Sol og Sky / Digte / af / Valdemar Rørdam // Kjøbenhavn / Jul. Gjellerups Forlag / Fr. G. Knudtzons Bogtrykkeri / 1895</transcription></picture>
   </pictures>
   <source facsimile="115408003700" facsimile-pages-num="112" facsimile-pages-offset="10">Valdemar Rørdam: <i>Sol og Sky</i>, Jul. Gjellerups Forlag, Kbh., 1895.</source>
   <quality>korrektur1,kilde,side</quality>
@@ -21,7 +21,7 @@
 </head>
 <content>
 
-<text id="roerdam2017112701">
+<text id="roerdam2017112701" ignore-tests="title-trailing-punctuation">
 <head>
   <title>I.</title>
   <toctitle><num>I.</num>Danmarks Datter</toctitle>
@@ -47,7 +47,7 @@ med de hvide Hænders Vejeskaaler!
 </body>
 </text>
 
-<text id="roerdam2017112702">
+<text id="roerdam2017112702" ignore-tests="title-trailing-punctuation">
 <head>
   <title>II.</title>
   <toctitle><num>II.</num>Hvor er dit Øre fint og sødt</toctitle>
@@ -75,12 +75,12 @@ af ingen Storm at røre.
 </body>
 </text>
 
-<text id="roerdam2017112703">
+<text id="roerdam2017112703" ignore-tests="title-trailing-punctuation">
 <head>
   <title>III.</title>
+  <subtitle>Din Sang</subtitle>
   <toctitle><num>III.</num>Din Sang</toctitle>
   <indextitle>Din Sang</indextitle>
-  <subtitle>Din Sang</subtitle>
   <firstline>En snehvid, snehvid Due</firstline>
   <source pages="7"/>
   <quality>korrektur1,kilde,side</quality>
@@ -101,7 +101,7 @@ mod Himlens mørkblaa Bue!
 </body>
 </text>
 
-<text id="roerdam2017112704">
+<text id="roerdam2017112704" ignore-tests="title-trailing-punctuation">
 <head>
   <title>IV.</title>
   <toctitle><num>IV.</num>Mørk Aurikel, Abildbloster, snehvid Marguerite</toctitle>
@@ -120,7 +120,7 @@ dine Kinder leger Abildblostrets klare Farver paa.
 </body>
 </text>
 
-<text id="roerdam2017112705">
+<text id="roerdam2017112705" ignore-tests="title-trailing-punctuation">
 <head>
   <title>V.</title>
   <toctitle><num>V.</num>Fem Stedmodersblomster lig sorten Kul</toctitle>
@@ -149,7 +149,7 @@ og drømmer om den, der har Blomsterne lagt.
 </body>
 </text>
 
-<text id="roerdam2017112706">
+<text id="roerdam2017112706" ignore-tests="title-trailing-punctuation">
 <head>
   <title>VI.</title>
   <toctitle><num>VI.</num>Nu svømmer Solen ud paa Dybet</toctitle>
@@ -185,7 +185,7 @@ og basker sig til Hvile dér.
 </body>
 </text>
 
-<text id="roerdam2017112707">
+<text id="roerdam2017112707" ignore-tests="title-trailing-punctuation">
 <head>
   <title>VII.</title>
   <toctitle><num>VII.</num>Det dufter af Poplernes brunlige Løv</toctitle>
@@ -215,13 +215,14 @@ med Tusendfrydskrans om din Pande!
 </body>
 </text>
 
-<text id="roerdam2017112708">
+<text id="roerdam2017112708" ignore-tests="title-trailing-punctuation">
 <head>
   <title>VIII.</title>
   <toctitle><num>VIII.</num>Hvor er den frejdige Glæde sød</toctitle>
   <indextitle>Hvor er den frejdige Glæde sød</indextitle>
   <firstline>Hvor er den frejdige Glæde sød</firstline>
   <source pages="12-13"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -259,7 +260,7 @@ med hundred lystige Sange!
 </body>
 </text>
 
-<text id="roerdam2017112709">
+<text id="roerdam2017112709" ignore-tests="title-trailing-punctuation">
 <head>
   <title>IX.</title>
   <toctitle><num>IX.</num>Du løfte dig, min Sang</toctitle>
@@ -288,12 +289,12 @@ i Hjærtet sænke dybt du min Villies Pilestaal!
 </body>
 </text>
 
-<text id="roerdam2017112710">
+<text id="roerdam2017112710" ignore-tests="title-trailing-punctuation">
 <head>
   <title>X.</title>
+  <subtitle>Aprilbuket</subtitle>
   <toctitle><num>X.</num>Aprilbuket</toctitle>
   <indextitle>Aprilbuket</indextitle>
-  <subtitle>Aprilbuket</subtitle>
   <firstline>Firdelte Kløverblad!</firstline>
   <source pages="15"/>
   <quality>korrektur1,kilde,side</quality>
@@ -319,7 +320,7 @@ Som Haabets Fakkel ved jeg du kan skinne.
 </body>
 </text>
 
-<text id="roerdam2017112711">
+<text id="roerdam2017112711" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XI.</title>
   <toctitle><num>XI.</num>Først nys de lystige Haner gol</toctitle>
@@ -367,7 +368,7 @@ saa Straalerne næsten mit Øje blinder.
 </body>
 </text>
 
-<text id="roerdam2017112712">
+<text id="roerdam2017112712" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XII.</title>
   <toctitle><num>XII.</num>Syngende Lyd af den svævende</toctitle>
@@ -411,12 +412,12 @@ Véd du, naar Maanen sig atter vil tænde,
 </body>
 </text>
 
-<text id="roerdam2017112713">
+<text id="roerdam2017112713" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XIII.</title>
+  <subtitle>Blomsterord</subtitle>
   <toctitle><num>XIII.</num>Blomsterord</toctitle>
   <indextitle>Blomsterord</indextitle>
-  <subtitle>Blomsterord</subtitle>
   <firstline>Hør Blaaklokkerne, hvor sødt de nynne</firstline>
   <source pages="20"/>
   <quality>korrektur1,kilde,side</quality>
@@ -435,7 +436,7 @@ Gærderosen tier, men den tænker:
 </body>
 </text>
 
-<text id="roerdam2017112714">
+<text id="roerdam2017112714" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XIV.</title>
   <toctitle><num>XIV.</num>Natten sin blaahvide Kjortel op</toctitle>
@@ -464,7 +465,7 @@ og kysse den hundred Gange.
 </body>
 </text>
 
-<text id="roerdam2017112715">
+<text id="roerdam2017112715" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XV.</title>
   <toctitle><num>XV.</num>Du Solskin over mine Drømmes Vover!</toctitle>
@@ -486,7 +487,7 @@ du Solskin over mine Drømmes Vover.
 </body>
 </text>
 
-<text id="roerdam2017112716">
+<text id="roerdam2017112716" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XVI.</title>
   <toctitle><num>XVI.</num>Du tvinger min Tunge til gode Ord</toctitle>
@@ -505,7 +506,7 @@ som du har baaret derind.
 </body>
 </text>
 
-<text id="roerdam2017112717">
+<text id="roerdam2017112717" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XVII.</title>
   <toctitle><num>XVII.</num>Vi ruller frem over Østerveje</toctitle>
@@ -564,7 +565,7 @@ for Pigefoden den gaar til Hvile.
 </body>
 </text>
 
-<text id="roerdam2017112718">
+<text id="roerdam2017112718" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XVIII.</title>
   <toctitle><num>XVIII.</num>Det er Morgengry</toctitle>
@@ -595,7 +596,7 @@ over al din Vej.
 </body>
 </text>
 
-<text id="roerdam2017112719">
+<text id="roerdam2017112719" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XIX.</title>
   <toctitle><num>XIX.</num>Det er en Vintermorgenstund</toctitle>
@@ -645,12 +646,12 @@ hvis Skud var dødsens-stive. —
 </body>
 </text>
 
-<text id="roerdam2017112720">
+<text id="roerdam2017112720" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XX.</title>
+  <subtitle>En Drøm</subtitle>
   <toctitle><num>XX.</num>En Drøm</toctitle>
   <indextitle>En Drøm</indextitle>
-  <subtitle>En Drøm</subtitle>
   <firstline>Der duftede Tjørn og Syrener</firstline>
   <source pages="29-30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -695,7 +696,7 @@ som over mit Hoved sig lukked.
 </body>
 </text>
 
-<text id="roerdam2017112721">
+<text id="roerdam2017112721" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XXI.</title>
   <toctitle><num>XXI.</num>Langvejs herfra</toctitle>
@@ -751,7 +752,7 @@ vil min Baad mig til Lykken bringe.
 </body>
 </text>
 
-<text id="roerdam2017112722">
+<text id="roerdam2017112722" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XXII.</title>
   <toctitle><num>XXII.</num>Den grønne Vold, den grønne Vold</toctitle>
@@ -792,7 +793,7 @@ den naar mig ingensinde!
 </body>
 </text>
 
-<text id="roerdam2017112723">
+<text id="roerdam2017112723" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XXIII.</title>
   <toctitle><num>XXIII.</num>Jeg vandred i et fremmed Land</toctitle>
@@ -869,7 +870,7 @@ hvor er vel den at finde?
 </body>
 </text>
 
-<text id="roerdam2017112724">
+<text id="roerdam2017112724" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XXIV.</title>
   <toctitle><num>XXIV.</num>Een Gang, ak ja, én Gang</toctitle>
@@ -917,7 +918,7 @@ til Ensomhed i Mørket
 </body>
 </text>
 
-<text id="roerdam2017112725">
+<text id="roerdam2017112725" ignore-tests="title-trailing-punctuation">
 <head>
   <title>XXV.</title>
   <toctitle><num>XXV.</num>Det er i den maaneskinslysende Nat</toctitle>

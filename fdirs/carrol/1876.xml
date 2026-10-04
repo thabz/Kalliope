@@ -4,6 +4,10 @@
   <title>The Hunting of the Snark</title>
   <subtitle>an Agony in Eight Fits</subtitle>
   <year>1876</year>
+  <identifiers>
+    <wikidata>Q1079681</wikidata>
+    <openlibrary-work>OL151447W</openlibrary-work>
+  </identifiers>
   <notes>
     <note type="credits">Bidrag fra Martin Snoer Raaschou.</note>
     <note>Henry Holidays illustrationer fra førstetrykket findes ved de enkelte »fits«.</note>
@@ -14,8 +18,6 @@
 <text id="carroll2002030601">
 <head>
   <title>Dedication</title>
-  <toctitle>Dedication</toctitle>
-  <indextitle>Dedication</indextitle>
   <firstline>Girt with a boyish garb for boyish task</firstline>
 </head>
 <body>
@@ -50,8 +52,6 @@ Albeit bright memories of that sunlit shore
 <text id="carroll2002030602" skip-index="true">
 <head>
   <title>Preface</title>
-  <toctitle>Preface</toctitle>
-  <indextitle>Preface</indextitle>
 </head>
 <body>
 <prose>
@@ -933,5 +933,6 @@ THE END
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>

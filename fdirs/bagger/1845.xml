@@ -4,7 +4,7 @@
   <title>Øieblikkets Børn</title>
   <year>1845</year>
   <pictures>
-    <picture type="titlepage" src="1845-p1.jpg">Titelbladet til <i>Øieblikkets Børn</i> (1845). ,,Øieblikkets Børn, / Prosa og Poesie / af / Forfatteren til ,,Min Broders Levnet.'' // Odense 1845. / Forlagt af Boghandler J. N. Gomard i Nyborg // Trykt i M. C. Hempels Officin.''</picture>
+    <picture type="titlepage" src="1845-p1.jpg"><transcription>Øieblikkets Børn, / Prosa og Poesie / af / Forfatteren til ,,Min Broders Levnet.'' // Odense 1845. / Forlagt af Boghandler J. N. Gomard i Nyborg // Trykt i M. C. Hempels Officin.</transcription></picture>
   </pictures>
   <notes>
     <note>Udeladt i nærværende udgave er dramaet »Cromwells Søn« og »En Ansøgning«.</note>
@@ -19,6 +19,9 @@
 <text id="bagger2017120401" skip-index="true">
 <head>
   <title>Forord</title>
+  <dates>
+    <written>1845-08-22</written>
+  </dates>
   <source pages="i-iv" facsimile-pages="11-14"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -250,16 +253,15 @@ Hil være Kong Fredrik den Anden!
 <head>
   <suptitle>†</suptitle>
   <title>Frederikke Kirstine Hempel</title>
+  <subtitle>(Død i September 1839)</subtitle>
   <toctitle>† Frederikke Kirstine Hempel</toctitle>
   <linktitle>† Frederikke Kirstine Hempel</linktitle>
-  <indextitle>Frederikke Kirstine Hempel</indextitle>
-  <subtitle>(Død i September 1839)</subtitle>
   <firstline>Græd ei, naar Bladet ved Løvfaldstid</firstline>
   <source pages="87-89"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="10%" font-size="small" lang="en">
+<quote lang="en">
 Why should we mourn for the blest?
 <right><w>Byron</w></right>
 </quote>
@@ -455,7 +457,7 @@ Og takke dem, der smelted Snee og Iis.
 </body>
 </text>
 
-<text id="bagger2002121413">
+<text id="bagger2002121413" ignore-tests="title-trailing-punctuation">
 <head>
   <title>J. Chr. A.</title>
   <subtitle>(Død i August 1845.)</subtitle>
@@ -918,6 +920,9 @@ Hid til Roskilds gamle Ørn!''
 <head>
   <title>I H. C. Andersens Stambog</title>
   <firstline>Du, hvem en mægtig Guddom gav dit Kald</firstline>
+  <dates>
+    <written>1841-07-19</written>
+  </dates>
   <source pages="110"/>
   <keywords>andersen</keywords>
   <quality>korrektur1,kilde,side</quality>
@@ -1695,7 +1700,7 @@ Maa over alle Verdens Lande staae!
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="10%" font-size="small">
+<quote>
 ,,Dybt i Dalen er mit simple Hjem,
 Aldrig vil paa Bjerget op jeg klavre;
 Lad for Andre Slottets Port paa klem,
@@ -2322,8 +2327,8 @@ Med Lyst vi spilte her til Andres Glæde!
 <text id="bagger2017120430">
 <head>
   <title>† Kjøbmand Geismar i Nyborg</title>
-  <indextitle>Kjøbmand Geismar i Nyborg</indextitle>
   <toctitle>Kjøbmand Geismar i Nyborg</toctitle>
+  <indextitle>Kjøbmand Geismar i Nyborg</indextitle>
   <firstline>Man reiser til fremmede Byer</firstline>
   <source pages="161-162"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2371,9 +2376,9 @@ Og over de stakkels Smaa!
 <text id="bagger2017120431">
 <head>
   <title>† Kirstine Marie Thune</title>
+  <subtitle>(3 Februar 1818 - 10 Mai 1843).</subtitle>
   <toctitle>Kirstine Marie Thune</toctitle>
   <indextitle>Kirstine Marie Thune</indextitle>
-  <subtitle>(3 Februar 1818 - 10 Mai 1843).</subtitle>
   <firstline>Dengang Flammen greb i Gavl og Tag</firstline>
   <source pages="163-164"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2780,11 +2785,11 @@ Til evig Lysglands Du indgaaer! :|:
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="30%" font-size="small" lang="la">
+<quote lang="la">
 ,,Hoc ridere meum, tam nil, nullâ tibi vendo Iliade.''
 <right>Persius</right>
 </quote>
-<quote margin-left="30%" font-size="small" lang="fr">
+<quote lang="fr">
 ,,Il y a un dieu pour les ivrognes.''
 <right>Proverbes de Salomon II</right>
 </quote>

@@ -13,6 +13,8 @@ describe('translations helper', () => {
     expect(_('Identifikatorer', 'en')).toBe('Identifiers');
     expect(_('Identifikatorer', 'de')).toBe('Identifikatoren');
     expect(_('Identifikatorer', 'fr')).toBe('Identifiants');
+    expect(_('Døbenavn', 'en')).toBe('Birth name');
+    expect(_('Døbt', 'de')).toBe('Getauft');
     expect(_('Eksterne ressourcer', 'en')).toBe('External resources');
     expect(_('Eksterne ressourcer', 'de')).toBe('Externe Ressourcen');
     expect(_('Eksterne ressourcer', 'fr')).toBe('Ressources externes');

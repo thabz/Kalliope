@@ -3,7 +3,7 @@
 <workhead>
   <title>Derude fra Kjærene</title>
   <pictures>
-    <picture type="titlepage" src="1899-p1.jpg">Titelbladet til <i>Derude fra Kjærene</i> (1899). ,,Derude / fra / Kjærene // Digte / af / J. Aakjær // København / V. Oscar Søtoftes Forlag / P. Petersens Bogtrykkeri / Egmont H. Petersen / MDCCCXCIX''.</picture>
+    <picture type="titlepage" src="1899-p1.jpg"><transcription>Derude / fra / Kjærene // Digte / af / J. Aakjær // København / V. Oscar Søtoftes Forlag / P. Petersens Bogtrykkeri / Egmont H. Petersen / MDCCCXCIX</transcription></picture>
   </pictures>
   <source facsimile="11530803728B_color" facsimile-pages-num="152" facsimile-pages-offset="4">Jeppe Aakjær: <i>Derude fra Kjærene</i>, Oscar Søtoftes Forlag, Kbh., 1899.</source>
 
@@ -76,6 +76,9 @@ om jeg fo’r ud og drukned mig!
   <title>Vi sad alene -</title>
   <firstline>Vi sad alene i den stille Kvæld</firstline>
   <source pages="15"/>
+  <metre>
+    <analysis pattern="iambic-pentameter" confidence="0.84"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -205,6 +208,10 @@ de intet siger.
   <title>Saa fager fòr hun -</title>
   <firstline>Saa fager fòr hun gjennem Havens Gange</firstline>
   <source pages="19"/>
+  <metre>
+    <analysis pattern="hendecasyllabic" confidence="1.00"/>
+    <analysis pattern="iambic-pentameter" confidence="0.81"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -242,6 +249,10 @@ da ler du, alvorsfulde Gud, deroppe.
   <title>Saa sig mig -</title>
   <firstline>Der risler en Bæk i det stenede Krat</firstline>
   <source pages="20"/>
+  <metre>
+    <analysis pattern="hendecasyllabic" confidence="0.87"/>
+    <analysis pattern="anapestic-tetrameter" confidence="0.80"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -364,6 +375,9 @@ hvordan man elsker smukt.
   <title>En Synd</title>
   <firstline>Hun rakte frem sin Mund til Kys</firstline>
   <source pages="24"/>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.77"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -453,6 +467,9 @@ og synke tilbunds i de Øjne.
   <title>Hvor var det ikke saligt -</title>
   <firstline>Hvor var det ikke saligt</firstline>
   <source pages="27"/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.82"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -534,6 +551,9 @@ din røde Munds Berusning, dit vege Drømme-Blik.
   <title>Jeg længes -</title>
   <firstline>Jeg længes i dit Favntag</firstline>
   <source pages="30"/>/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.77"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -571,6 +591,9 @@ i Kvæld og Morgenrøde.
   <title>Det banked paa min Rude</title>
   <firstline>Det banked paa min Rude</firstline>
   <source pages="31-32"/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.78"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -623,6 +646,9 @@ som Elskovens til.
   <title>Hvorfor?</title>
   <firstline>Hvorfor skal Mandens Slægt</firstline>
   <source pages="33"/>/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.89"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -665,6 +691,9 @@ saa han faldt ned fra Himlen.
   <title>Idag en Engel -</title>
   <firstline>I dag en Engel fin og skjær</firstline>
   <source pages="34-35"/>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.77"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -800,6 +829,7 @@ og hængte sig saa i sit Klokkereb.
   <toctitle><num>I.</num>Kain</toctitle>
   <firstline>Abel ofred af Hjordens Lam</firstline>
   <source pages="39"/>/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -828,6 +858,7 @@ naar man staar højt hos — Gudinder.
   <toctitle><num>II.</num>Hercules</toctitle>
   <firstline>Ung Herkules kasted sig rundt i sin Seng</firstline>
   <source pages="40"/>/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -916,6 +947,9 @@ der bar en Fakkel gjennem Jordens Nætter.
   <title>Nathimlen</title>
   <firstline>Du stolte Himmelhvælving</firstline>
   <source pages="45"/>/>
+  <metre>
+    <analysis pattern="trochaic-trimeter" confidence="0.75"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1094,6 +1128,9 @@ med denne Skaal for de glade.
   <title>Regnvejrsstemning</title>
   <firstline>Fra énsom Vraa jeg stirrer ud</firstline>
   <source pages="51"/>/>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.85"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1130,6 +1167,10 @@ i Evighedens staalgraa Flod.
   <title>Dødsramt</title>
   <firstline>Naar Hvalen rammes af Harpunens Tand</firstline>
   <source pages="52"/>/>
+  <metre>
+    <analysis pattern="hendecasyllabic" confidence="0.85"/>
+    <analysis pattern="iambic-pentameter" confidence="0.83"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1163,6 +1204,9 @@ for uset der at græde og forbløde.
   <title>Den syge Ynglings Livsbekjendelse</title>
   <firstline>Jeg bad til Gud én eneste Bøn</firstline>
   <source pages="53-54"/>
+  <metre>
+    <analysis pattern="iambic-pentameter" confidence="0.82"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1215,6 +1259,9 @@ om og jeg imellem mod Himlen ser.
   <title>I Vaande</title>
   <firstline>Jeg var stædt i Ve og Vaande</firstline>
   <source pages="55-56"/>
+  <metre>
+    <analysis pattern="trochaic-tetrameter" confidence="0.86"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1314,6 +1361,9 @@ med Fyrsten: Prinsen af Reuss.
   <title>Smeden og Missjonæren</title>
   <firstline>Den raske Smed har alt optændt sit Baal</firstline>
   <source pages="58-59"/>
+  <metre>
+    <analysis pattern="iambic-pentameter" confidence="0.79"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1401,6 +1451,10 @@ ej mindst i Præsteflokken.
   <title>Politisk Uenighed</title>
   <firstline>Der sad to Venner ved et Krostubord</firstline>
   <source pages="61-62"/>
+  <metre>
+    <analysis pattern="iambic-pentameter" confidence="0.83"/>
+    <analysis pattern="hendecasyllabic" confidence="0.83"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1467,6 +1521,7 @@ men anderledes tænkte Anarkisten.
   <title>Over Themaet Medlidenhed</title>
   <firstline>Kom alle Hunde til min Dør</firstline>
   <source pages="63-64"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1734,6 +1789,9 @@ er alt ej helt som sidst.
   <title>Liden Maja</title>
   <firstline>Og det var liden Maja</firstline>
   <source pages="75-76"/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.80"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1928,6 +1986,7 @@ imorgen ved vi, at det højst er Plet.
   <title>Tre Trolde</title>
   <firstline>Der var tre vældige Trolde</firstline>
   <source pages="86"/>/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1955,6 +2014,10 @@ en Smule bedre end os.
   <title>Nat</title>
   <firstline>Mens Jorden sover Rusen ud</firstline>
   <source pages="87"/>/>
+  <keywords>balladestrofe</keywords>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.79"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1987,6 +2050,10 @@ det er Gud, der slaar Ild til sin Pibe.
   <title>I Mørke</title>
   <firstline>Jeg ser mod Himlen. Ej én Stjærne blinker</firstline>
   <source pages="88"/>/>
+  <metre>
+    <analysis pattern="hendecasyllabic" confidence="0.95"/>
+    <analysis pattern="iambic-pentameter" confidence="0.76"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2014,6 +2081,9 @@ Kan du nu finde Gud i dette Mørke?
   <title>I Vaar</title>
   <firstline>Nu løves alle Bøge</firstline>
   <source pages="89"/>/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.78"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2165,6 +2235,9 @@ Her bærer Ungdommen Fanen!
   <title>Sic transit -</title>
   <firstline>Der gik saa krumme Veje</firstline>
   <source pages="95-96"/>
+  <metre>
+    <analysis pattern="iambic-trimeter" confidence="0.88"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2301,6 +2374,9 @@ sænk’t over Lyngen og Sindene med!
   <toctitle><num>II.</num>Med raske Trin jeg over Lyngen skred</toctitle>
   <firstline>Med raske Trin jeg over Lyngen skred</firstline>
   <source pages="101"/>/>
+  <metre>
+    <analysis pattern="iambic-pentameter" confidence="0.79"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2344,6 +2420,10 @@ og har ej noget Fadervor at bede.
   <toctitle><num>III.</num>Rævejagt</toctitle>
   <firstline>Aahej, Hr. Mikkel, nu har jeg dig</firstline>
   <source pages="102-103"/>
+  <keywords>balladestrofe</keywords>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.82"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2563,6 +2643,9 @@ længst skovled Døden dem Posen fuld.
   <title>Brudeslot</title>
   <firstline>Ude paa Per Krænsens Vestermark</firstline>
   <source pages="109-110"/>
+  <metre>
+    <analysis pattern="trochaic-tetrameter" confidence="0.79"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2610,6 +2693,9 @@ og de kalder Hytten — Brudeslot.
   <title>Pinsevise</title>
   <firstline>Naar Bonden vel har saaet sin Byg</firstline>
   <source pages="111-112"/>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.79"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2684,6 +2770,9 @@ og jeg skal elske dig saa ømt, jeg orker!
   <title>Jens Hurra</title>
   <firstline>Jens Hurra kaldtes en Ungersvend</firstline>
   <source pages="114-117"/>
+  <metre>
+    <analysis pattern="dactylic-trimeter" confidence="0.85"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2801,6 +2890,9 @@ paa Tonerne af hans Harmonika.
   <title>Maren</title>
   <firstline>Mads Tammeses Maren haaj Bejlere nok</firstline>
   <source pages="118"/>/>
+  <metre>
+    <analysis pattern="hendecasyllabic" confidence="0.90"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2898,6 +2990,9 @@ med di’ løjn Ør’!
   <title>Ka' Drebæk</title>
   <firstline>Ka' Drebæk lægger sit Lat paa Bleg</firstline>
   <source pages="121-123"/>
+  <metre>
+    <analysis pattern="iambic-tetrameter" confidence="0.76"/>
+  </metre>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
