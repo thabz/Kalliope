@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="andre" author="heibergpa" status="incomplete" type="poetry">
+<kalliopework id="1884" author="heibergpa" status="incomplete" type="poetry">
 <workhead>
-  <title>Andre digte</title>
+  <title>Udvalgte Skrifter</title>
+  <year>1884</year>
+  <notes>
+    <note>Her gengives afsnittet »Viser og Vers«, s. 575-626, med alle 35 tekster. Bogens øvrige afsnit er ikke medtaget.</note>
+    <note>Rettelsesarket »Rettelser og Tillæg« på faksimileside 20 vedrører s. 1, 3, 136, 288, 556 og 558 og indeholder ingen rettelser til »Viser og Vers«.</note>
+  </notes>
+  <pictures>
+    <picture src="1884-p1.jpg" type="titlepage"><transcription>Peter Andreas Heibergs / Udvalgte Skrifter. // Udgivne / af / Otto Borchsenius og Fr. Winkel Horn. // Kjøbenhavn. / Otto B. Wroblewskys Forlag. / 1884.</transcription></picture>
+  </pictures>
   <quality>korrektur1</quality>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122907672005763" facsimile="115208031742" facsimile-pages-num="657" facsimile-pages-offset="23">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
 </workhead>
 <workbody>
+
+<section>
+<head>
+  <title>Viser og Vers</title>
+</head>
+<content>
 
 <text id="heibergpa20170925218">
 <head>
   <title>Den pæne Mand</title>
   <firstline>Omsider kom han, den pæne Mand</firstline>
-  <source pages="575-576">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="575-576"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -52,7 +67,7 @@ Nu lykkelig Rejse, du pæne Mand!
 <head>
   <title>Impromptu</title>
   <firstline>Filosofiens Skaal! God Taar!</firstline>
-  <source pages="576">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="576"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -74,7 +89,7 @@ Hurra! vor Filosofi
   <title>Almindelig Folkesang</title>
   <subtitle>for hele Kjøbenhavn i Anledning af Kronprinsesse Maria Sophie Fridericas højtidelige Indtog.</subtitle>
   <firstline>Rundt om os høres Jubellyd</firstline>
-  <source pages="576-577">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="576-577"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -112,7 +127,7 @@ vi hilse dig: Velkommen her!
     <note>Skrevet til et fest i »Kronprinsens Klub« 25/9-1790 og var foranlediget af Kronprins Frederik og hans hustrus indtog i København 14. september efter deres netop overståede bryllup på Gottorp Slot. P.A. Heiberg blev idømt en bøde på 150 rigsdaler for sangen.</note>
     <note>Kendes også under titlen »Indtogsvisen«.</note>
   </notes>
-  <source pages="577-579">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="577-579"/>
 </head>
 <body>
 <poetry>
@@ -169,7 +184,7 @@ midt under Sviren, Elendigheds Ve.
     <line>Gammel Kjøgegaard d. 22 Oktober 1790.</line>
   </subtitle>
   <firstline>Der var en Mand i Verdens unge Dage</firstline>
-  <source pages="579-580">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="579-580"/>
 </head>
 <body>
 <poetry>
@@ -215,10 +230,10 @@ vor Brudgoms Skaal vi drikke skal.
 
 <text id="heibergpa20170925223">
 <head>
-  <title>Til Hr. Kiegels paa hans Bryllupsdag</title>
+  <title>Til Hr. Riegels paa hans Bryllupsdag</title>
   <subtitle>(1790).</subtitle>
   <firstline>At den, som altid Sandhed siger</firstline>
-  <source pages="580-582">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="580-582"/>
 </head>
 <body>
 <poetry>
@@ -290,7 +305,7 @@ Den gode glædes ved dit Held.
   <title>Vise</title>
   <subtitle>(1791.)</subtitle>
   <firstline>Verden af Krig og af Fejde er fuld</firstline>
-  <source pages="582-584">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="582-584"/>
 </head>
 <body>
 <poetry>
@@ -357,7 +372,7 @@ klogere er det, end Lüttichaus Vers.
 <head>
   <title>Vise for Oktober 1791</title>
   <firstline>Henslængt i Krogen min Harpe staar</firstline>
-  <source pages="584-586">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="584-586"/>
 </head>
 <body>
 <poetry>
@@ -435,7 +450,7 @@ sit fulde Glas.
   <title>Vise den 31. Januar 1792</title>
   <subtitle>(I Anledning af Kongens Fødselsdag d. 29. Januar).</subtitle>
   <firstline>Hvor glide ved Søvnen de Dage saa let</firstline>
-  <source pages="586-587">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="586-587"/>
 </head>
 <body>
 <poetry>
@@ -481,7 +496,10 @@ Men ærligt og hjærtement er vores Skraal:
   <title>Pyrenæer-Marsch</title>
   <subtitle>(Fri Oversættelse.)</subtitle>
   <firstline>Hvi sove Frankrigs Helte hen?</firstline>
-  <source pages="587-589">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <notes>
+    <note>Fri oversættelse af <xref type="translation" poem="anonym1700fr2026100501"/>.</note>
+  </notes>
+  <source pages="587-589"/>
 </head>
 <body>
 <poetry>
@@ -547,7 +565,7 @@ o den Lod er saa skjøn for sit Fødeland at leve!
   <title>Vise</title>
   <subtitle>1792.</subtitle>
   <firstline>Bort med Sus og med Dus</firstline>
-  <source pages="589-590">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="589-590"/>
 </head>
 <body>
 <poetry>
@@ -604,7 +622,7 @@ for Kjønnet ved vort Bord.
   <title>Vise i Anledning af den 28. Januar 1793</title>
   <subtitle>(Kronprinsens Fødselsdag).</subtitle>
   <firstline>Kom, Nabo! se, her staar jo Vin paa vort Bord</firstline>
-  <source pages="590-591">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="590-591"/>
 </head>
 <body>
 <poetry>
@@ -659,7 +677,7 @@ Thi skjænker, I Venner! det fuldeste Maal
 <head>
   <title>Vise i Anledning af den 29 Januar 1793</title>
   <firstline>Fred med Kongerne paa Jorden</firstline>
-  <source pages="592-593">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="592-593"/>
 </head>
 <body>
 <poetry>
@@ -737,7 +755,7 @@ med Erkjendtlighed paaskjønner.
   <title>Vise paa den bedste Faders Fødseldag</title>
   <subtitle>den 29. August 1793.</subtitle>
   <firstline>Hvad er skjønt som Faders Navn</firstline>
-  <source pages="593-594">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="593-594"/>
 </head>
 <body>
 <poetry>
@@ -785,7 +803,7 @@ Leve vores gode Fader!
   <title>Vise</title>
   <subtitle>bestemt for en Fuglekonge, den Dag, han blev afsat.</subtitle>
   <firstline>Det var i hine fordums Dage</firstline>
-  <source pages="595">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="595"/>
 </head>
 <body>
 <poetry>
@@ -828,7 +846,7 @@ og vores Selskab ej forgaa.
     <note>Melodien er angivet som ,,Mel.: Druen voxer paa vor Klode''.</note>
     <!-- Tidligere bidrag fra Margit Ammentorp. -->
   </notes>
-  <source pages="596">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="596"/>
   <keywords>drikkevise</keywords>
 </head>
 <body>
@@ -879,7 +897,7 @@ Notabene, til jeg dør.
   <notes>
     <note>Gendigtning af <xref type="translation" poem="lisle2001112501"/>.</note>
   </notes>
-  <source pages="597-599">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="597-599"/>
 </head>
 <body>
 <poetry>
@@ -993,7 +1011,7 @@ din Triumf og vor Ære, og falde!
   <title>Vise</title>
   <subtitle>(1794.)</subtitle>
   <firstline>De, der lege, danse, drikke</firstline>
-  <source pages="600-601">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="600-601"/>
 </head>
 <body>
 <poetry>
@@ -1066,7 +1084,7 @@ Leve Kongerne paa Jorden,
     <note>Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
     <note>Heiberg fik en bøde på 300 rigsdaler for denne vise, som Rahbek uden forfatterens samtykke trykkede i ,,Den Danske Tilskuer''.</note>
   </notes>
-  <source pages="601-603">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="601-603"/>
 </head>
 <body>
 <poetry>
@@ -1145,7 +1163,7 @@ Skaal! Klubben staa ved Magt!
   <notes>
     <!-- TODO: Korrekturlæs herfra og ned -->
   </notes>
-  <source pages="603-605">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="603-605"/>
 </head>
 <body>
 <poetry>
@@ -1213,7 +1231,7 @@ bliv lykkelig!
   <title>Min politiske Omvendelse</title>
   <subtitle>Hymne til ,,Folkevennen''.</subtitle>
   <firstline>Jeg skrev saa tit med vanhellig Pen</firstline>
-  <source pages="605-607">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="605-607"/>
 </head>
 <body>
 <poetry>
@@ -1298,7 +1316,7 @@ Forstaar I mig?
 <head>
   <title>Vise den 29. August 1794</title>
   <firstline>Her Vinen skjænket staar paa Bord</firstline>
-  <source pages="607-608">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="607-608"/>
 </head>
 <body>
 <poetry>
@@ -1360,7 +1378,7 @@ for dig vi vores Glas udstikke,
   <notes>
     <note type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
-  <source pages="609">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="609"/>
   <keywords>drikkevise</keywords>
 </head>
 <body>
@@ -1407,7 +1425,7 @@ bliv og grundfæst din Trone blandt os!
 <head>
   <title>Laterna Magica</title>
   <firstline>Kommer, hvo, som komme kan!</firstline>
-  <source pages="610-614">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="610-614"/>
 </head>
 <body>
 <poetry>
@@ -1590,7 +1608,7 @@ hver en lumpen Styver!
   <title>Barnedaabs-Vise</title>
   <subtitle>(1795.)</subtitle>
   <firstline>Du lille Krabat, der saa nylig er fød!</firstline>
-  <source pages="615-616">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="615-616"/>
 </head>
 <body>
 <poetry>
@@ -1643,7 +1661,7 @@ Saa fylde vi Glasset med fuldeste Maal
 <head>
   <title>Epigram</title>
   <firstline>I Spidsen af Batailloner</firstline>
-  <source pages="616">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="616"/>
 </head>
 <body>
 <poetry>
@@ -1660,7 +1678,7 @@ ih! det er stort.
   <title>I en Venindes Stambog</title>
   <subtitle>(1796 eller 1797.)</subtitle>
   <firstline>Den Mand, hvis Haand har dette skrevet</firstline>
-  <source pages="616">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="616"/>
 </head>
 <body>
 <poetry>
@@ -1687,7 +1705,7 @@ spørg nu, om han for Dem ej brænder.
     <note>Fri oversættelse og udvidelse af Axel Gabriel Silverstolpe: <xref type="translation" poem="silverstolpe2026081101"/>. Den tidligere undertitel »Efter Kellgren« er fejlagtig.</note>
     <!-- Tidligere et bidrag fra Margit Ammentorp. -->
   </notes>
-  <source pages="617-618">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="617-618"/>
   <keywords>drikkevise</keywords>
 </head>
 <body>
@@ -1755,7 +1773,7 @@ og i dens Draaber Livets Glæder svømme.
 <head>
   <title>Vise den 5. Januar 1797</title>
   <firstline>Lovens sjette Bog har lagt</firstline>
-  <source pages="618-621">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="618-621"/>
 </head>
 <body>
 <poetry>
@@ -1866,7 +1884,7 @@ Morderen velsignet være!
     <line>(1797.)</line>
   </subtitle>
   <firstline>Kom, min Ven! og klink og drik!</firstline>
-  <source pages="621-623">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="621-623"/>
 </head>
 <body>
 <poetry>
@@ -1942,7 +1960,7 @@ Jorden juble skal derved:
   <notes>
     <note>Mottoet er fra Ovids <xref poem="ovid2026083001,9"/> og betyder ,,Slet sammenføjede Ting indeholde Spirer til Strid.''</note>
   </notes>
-  <source pages="623-625">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="623-625"/>
 </head>
 <body>
 <poetry>
@@ -2007,10 +2025,10 @@ vi Pokalen tømme!
 
 <text id="heibergpa20170925249">
 <head>
-  <title>I John Kyghs Stambog, da han nar bleven Foged i Saltens Føgderi i Nordlandene</title>
+  <title>I John Ryghs Stambog, da han var bleven Foged i Saltens Føgderi i Nordlandene</title>
   <subtitle>(1799.)</subtitle>
   <firstline>Der staar et Punkt et Steds i Danmarks Love</firstline>
-  <source pages="625">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="625"/>
 </head>
 <body>
 <poetry>
@@ -2036,7 +2054,7 @@ mig vente vil den Trøst at kunne tro mig fri.
 <head>
   <title>Epigram</title>
   <firstline>Glem, Danmark, dine gamle Sorger</firstline>
-  <source pages="626">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="626"/>
 </head>
 <body>
 <poetry>
@@ -2054,7 +2072,7 @@ at nu og da dit Sprog han borger.
 <head>
   <title>Epigram</title>
   <firstline>Mangen bær Navnet, som ej det fortjener</firstline>
-  <source pages="626">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="626"/>
 </head>
 <body>
 <poetry>
@@ -2072,7 +2090,7 @@ den tredje tigger Stjærner af den kongelige Haand.
 <head>
   <title>Under Skuespiller fr. Schwarz' Portræt</title>
   <firstline>Sku Yndlingen af to Gudinder</firstline>
-  <source pages="626">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
+  <source pages="626"/>
 </head>
 <body>
 <poetry>
@@ -2083,6 +2101,9 @@ Smil paa vor Læbe. Graad paa vore Kinder.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
