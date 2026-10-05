@@ -5,6 +5,7 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectSourceAuthorIssues,
   collectStandaloneFootnoteIssues,
   collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
@@ -221,5 +222,52 @@ note.</footnote> i verset.
     const document = parseWorkXml(`<text id="poem"><head><notes><note>Metadata</note></notes></head><body><poetry>Vers
 <!-- <footnote>Kommentar</footnote> --></poetry></body></text>`);
     expect(collectStandaloneFootnoteIssues('work.xml', document)).toEqual([]);
+  });
+});
+
+
+describe('bibliographic source author consistency', () => {
+  const check = (sources, author = 'digter', filename = 'fdirs/digter/1900.xml', body = '', type = 'poetry') =>
+    collectSourceAuthorIssues(filename, parseWorkXml(
+      `<kalliopework author="${author}" type="${type}"><workhead>${sources}</workhead><workbody>${body}</workbody></kalliopework>`,
+    ));
+
+  it('requires at least one author or translator ID to match for each work source', () => {
+    expect(check('<source><title>Digte</title><author id="digter">Navn</author></source>')).toEqual([]);
+    expect(check('<source><author id="anden">Medforfatter</author><author id="digter">Navn</author></source>')).toEqual([]);
+    expect(check('<source><author id="tasso">Tasso</author><translator id="digter">Oversætter</translator></source>')).toEqual([]);
+    expect(check('<source><author id="anden">Navn</author></source>')).toEqual([
+      'fdirs/digter/1900.xml: source "default" has author/translator ids [anden] that do not match kalliopework/@author="digter".',
+    ]);
+    expect(check('<source id="bd1"><author id="digter">Navn</author></source><source id="bd2"><author id="anden">Navn</author><translator id="tredje">Navn</translator></source>')).toEqual([
+      'fdirs/digter/1900.xml: source "bd2" has author/translator ids [anden, tredje] that do not match kalliopework/@author="digter".',
+    ]);
+  });
+
+  it('does not accept an editor ID as an author or translator match', () => {
+    expect(check('<source><author id="anden">Navn</author><editor id="digter">Udgiver</editor></source>')).toHaveLength(1);
+  });
+
+  it('allows legacy and anonymous sources and optional person IDs', () => {
+    expect(check('<source>Navn: <i>Digte</i>.</source>')).toEqual([]);
+    expect(check('<source><title>Digte</title></source>')).toEqual([]);
+    expect(check('<source><title>Digte</title><author>Navn</author></source>')).toEqual([]);
+    expect(check('<source><title>Digte</title><editor id="anden">Udgiver</editor></source>')).toEqual([]);
+  });
+
+  it('allows collection publications without an individual work author', () => {
+    const source = '<source><translator id="oversaetter">Navn</translator></source>';
+    expect(check(source, 'antologierdk', 'fdirs/antologierdk/1900.xml')).toEqual([]);
+    expect(check(source, 'tidsskrifterdk', 'fdirs/tidsskrifterdk/1900.xml')).toEqual([]);
+    expect(check(source, '', 'fdirs/samling/1900.xml', '', 'anthology')).toEqual([]);
+    expect(check(source, 'digter', 'fdirs/digter/1900.xml', '', 'anthology')).toHaveLength(1);
+    expect(check(source, '')).toEqual([]);
+  });
+
+  it('does not confuse a text source or a quoted author with the work source', () => {
+    expect(check('<source><author id="digter">Navn</author></source>', 'digter', 'fdirs/digter/1900.xml',
+      '<text author="anden"><head><source><author id="anden">Navn</author></source></head></text>',
+    )).toEqual([]);
+    expect(check('<source>Fritekst <note><author id="anden">Navn</author></note></source>')).toEqual([]);
   });
 });

@@ -217,6 +217,12 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
   gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
   vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- Når en værkkilde i `workhead` angiver `author/@id` eller `translator/@id`,
+  skal mindst ét af disse id'er matche `kalliopework/@author`. Ved en oversættelse
+  kan værkets digter være oversætteren. Kontrollen gælder hver værkkilde særskilt;
+  person-id'er er fortsat valgfrie. Antologier og tidsskrifter uden en individuel
+  værkforfatter er undtaget, og teksternes egne kildeangivelser kontrolleres ikke
+  mod værkets forfatter, da teksten kan have en anden forfatter.
 - `editor` uden `type` vises som `udg. af`. Brug `type="editor"` for en
   redaktør i snævrere forstand, fx ved antologier; det vises som `red. af`.
   Typen bevares som valgfrit `type` på redaktøren i JSON. Andre typer afvises.

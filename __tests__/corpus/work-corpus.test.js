@@ -12,6 +12,7 @@ import {
   collectRedundantTextTitleMetadataIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectSourceAuthorIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -65,6 +66,7 @@ describe('tracked work corpus', () => {
   let poetryBoundaryBlankLineIssues;
   let nestedBodyBlockIssues;
   let sourceHrIssues;
+  let sourceAuthorIssues;
   let asteriskOrnamentSpacingIssues;
   let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
@@ -96,6 +98,7 @@ describe('tracked work corpus', () => {
     poetryBoundaryBlankLineIssues = [];
     nestedBodyBlockIssues = [];
     sourceHrIssues = [];
+    sourceAuthorIssues = [];
     asteriskOrnamentSpacingIssues = [];
     rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
@@ -145,6 +148,7 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      sourceAuthorIssues.push(...collectSourceAuthorIssues(filename, workDocument));
       if (/<hr\b/u.test(xml)) {
         sourceHrIssues.push(filename);
       }
@@ -305,6 +309,10 @@ describe('tracked work corpus', () => {
 
   it('keeps links out of work body text', () => {
     expect(bodyLinkIssues).toEqual([]);
+  });
+
+  it('matches bibliographic authors or translators to the work author', () => {
+    expect(sourceAuthorIssues).toEqual([]);
   });
 
   it('requires a workhead source for every page-only text source', () => {
