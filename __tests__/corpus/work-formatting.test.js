@@ -4,6 +4,15 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it('keeps explicit note citation breaks separate from main verse formatting', () => {
+    const citation = '<footnote><column><nonum><right>Kort citat</right></nonum><br/>    Andet vers</column></footnote>';
+    const xml = `<body>\n<poetry>Vers${citation}\n<nonum><right>Signatur</right></nonum></poetry>\n</body>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain('</nonum>\n</poetry>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
   <workhead>

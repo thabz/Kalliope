@@ -225,10 +225,14 @@ const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
   return `${pageBreakPrefix}${canonicalOpening}${content}${canonicalClosing}`;
 }).join('\n');
 
-const splitPoetryLines = xml =>
-  normalizeLineWrappers(xml)
-    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-    .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n');
+const splitPoetryLines = xml => xml
+  .split(/(<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>)/gu)
+  .map(part => /^<(?:note|footnote)\b/u.test(part)
+    ? part
+    : normalizeLineWrappers(part)
+      .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+      .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n'))
+  .join('');
 
 const indentMetadata = xml => {
   let metadataDepth = 0;

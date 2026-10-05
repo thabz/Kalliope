@@ -38,6 +38,27 @@ const ocrLine = (text, top, left = 300) => ({
 });
 
 describe('forberedelse af helværksgeometri', () => {
+  it('maps nested note verses in their own page stream and includes wrapped prose quotations', () => {
+    const nestedXml = xml.replace('Første Verslinje', `Første<footnote>Note
+<pb n="9" facs="013.jpg"/><column>Notens første vers<br/>    Notens andet vers</column></footnote> Verslinje`)
+      .replace('</body>', '<quote><poetry>Et senere citat</poetry></quote></body>');
+    const blocks = extractPoetryBlocks(nestedXml);
+    expect(blocks).toHaveLength(3);
+    expect(blocks.map(block => block.blockIndex)).toEqual([1, 2, 3]);
+    expect(blocks[0].lines.map(line => line.facsimile))
+      .toEqual(['012.jpg', '012.jpg', '012.jpg', '013.jpg']);
+    expect(blocks[1].lines.map(line => line.facsimile))
+      .toEqual(['013.jpg', '013.jpg']);
+    expect(blocks[1].lines.map(line => line.indentation)).toEqual([0, 4]);
+    expect(blocks[2].lines[0].facsimile).toBe('013.jpg');
+  });
+
+  it('maps verse lines independently of page breaks inside attached notes', () => {
+    const withNote = xml.replace('Første Verslinje',
+      'Første<footnote>Noten fortsætter<pb n="9" facs="013.jpg"/>paa næste side.</footnote> Verslinje');
+    expect(extractPoetryBlocks(withNote)).toEqual(extractPoetryBlocks(xml));
+  });
+
   it('extracts page-aware verse lines without using whitespace as match text', () => {
     const [block] = extractPoetryBlocks(xml);
 

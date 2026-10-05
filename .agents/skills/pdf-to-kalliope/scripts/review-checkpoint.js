@@ -9,7 +9,11 @@ import { DOMParser } from '@xmldom/xmldom';
 import { child, children, facsimileInterval } from '../../../../tools/errata.js';
 import { validateFindings } from './findings-register.js';
 
-const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
+const git = (root, args) => execFileSync('git', args, {
+  cwd: root,
+  encoding: 'utf8',
+  maxBuffer: 128 * 1024 * 1024,
+});
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
 const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation', 'typography'];

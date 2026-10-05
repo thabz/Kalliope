@@ -18,6 +18,19 @@ const serializeChildren = node => {
     .join('');
 };
 
+// Inline note citations use explicit breaks; body blocks remain siblings.
+const isPoetryBlock = node => {
+  if (node.nodeName === 'poetry') return true;
+  if (node.nodeName === 'quote') return node.getElementsByTagName('poetry').length === 0;
+  return node.nodeName === 'column' &&
+    ['note', 'footnote'].includes(node.parentNode?.nodeName) &&
+    node.getElementsByTagName('br').length > 0;
+};
+
+const serializeVerseLines = node => node.nodeName === 'column'
+  ? serializeChildren(node).replace(/<br\s*\/>\r?\n?/gu, '\n')
+  : serializeChildren(node);
+
 const stripNotes = text =>
   text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
 
@@ -309,6 +322,8 @@ export {
   buildPageInventory,
   directChild,
   elementChildren,
+  isPoetryBlock,
+  serializeVerseLines,
   normalizeLine,
   parseSimplePages,
   parseXml,
