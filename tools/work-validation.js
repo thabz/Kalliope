@@ -405,8 +405,18 @@ const collectPageBreakIssues = (
 
   textEntries(document).forEach(text => {
     const previousPrintedPages = new Map();
+    const visitedPagesByStream = new Map();
     Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
       const stream = noteAncestor(pageBreak) ?? text;
+      const visited = visitedPagesByStream.get(stream) ?? new Set();
+      const facs = pageBreak.getAttribute('facs');
+      if (facs != null && facs !== '') {
+        if (visited.has(facs)) {
+          issues.push(`${filename}: duplicate pb/@facs within one text stream: ${facs}.`);
+        }
+        visited.add(facs);
+        visitedPagesByStream.set(stream, visited);
+      }
       const previousPrintedPage = previousPrintedPages.get(stream) ?? null;
       const printedLabel = pageBreak.getAttribute('n');
       const printedPage =
@@ -433,8 +443,11 @@ const collectPageBreakIssues = (
     const pages = source?.getAttribute('pages') ?? null;
     const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
     const body = directChild(text, 'body');
-    const pageBreakCount =
-      body == null ? 0 : body.getElementsByTagName('pb').length;
+    const physicalTransitions = body == null ? [] : Array.from(body.getElementsByTagName('pb'));
+    const pageBreakCount = new Set(physicalTransitions.map(pageBreak => {
+      const facs = pageBreak.getAttribute('facs');
+      return facs != null && facs !== '' ? facs : pageBreak;
+    })).size;
     const intervalSource = pages ?? facsimilePages;
     const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =

@@ -24,6 +24,37 @@ const stableAnchor = (line, column) => {
   return line.slice(start, column + 48).trim();
 };
 
+const ocrPageStreams = (body, initialPage) => {
+  const segments = splitBodyPages(body, { noteNeutral: true }).map((page, index) => ({
+    ...page,
+    metadata: index === 0 ? initialPage : page.transition,
+    stream: 'body',
+  }));
+  let noteIndex = 0;
+  const visit = (node, stream) => {
+    if (node.nodeName === 'pb') {
+      stream.metadata = {
+        facsimile: node.getAttribute('facs'),
+        printed_page: node.getAttribute('n') ?? null,
+      };
+      return;
+    }
+    if (node.nodeName === 'note' || node.nodeName === 'footnote') {
+      noteIndex += 1;
+      const key = `note-${noteIndex}`;
+      splitBodyPages(node).forEach((page, index) => segments.push({
+        ...page,
+        metadata: index === 0 ? stream.metadata : page.transition,
+        stream: key,
+      }));
+      return;
+    }
+    Array.from(node.childNodes ?? []).forEach(child => visit(child, stream));
+  };
+  visit(body, { metadata: initialPage });
+  return segments;
+};
+
 const historicalOcrCandidates = ({ xml, inventory = null }) => {
   const document = parseXml(xml);
   const generated = inventory ?? buildPageInventory({ xml });
@@ -36,10 +67,10 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
   const candidates = [];
   for (const entry of textEntries(document)) {
     const textId = entry.getAttribute('id') ?? '';
-    const pages = splitBodyPages(directChild(entry, 'body'));
+    const inventoryRows = byText.get(textId) ?? [];
+    const pages = ocrPageStreams(directChild(entry, 'body'), inventoryRows[0] ?? {});
     pages.forEach((page, pageIndex) => {
-      const inventoryRows = byText.get(textId) ?? [];
-      const metadata = inventoryRows[pageIndex] ?? {};
+      const metadata = page.metadata ?? {};
       const pageKey = metadata.printed_page ?? metadata.facsimile ?? '?';
       const lines = page.content.replace(/<[^>]+>/g, ' ').split(/\r?\n/);
       lines.forEach((rawLine, lineIndex) => {
@@ -49,7 +80,7 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
           pattern.lastIndex = 0;
           for (const match of line.matchAll(pattern)) {
             candidates.push({
-              id: `${textId}:${pageKey}:${rule}:${lineIndex + 1}:${match.index + 1}`,
+              id: `${textId}:${pageKey}:${page.stream}:${rule}:${lineIndex + 1}:${match.index + 1}`,
               rule,
               reason,
               text_id: textId,
@@ -66,7 +97,7 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
       const normalized = lines.map(normalizeLine).filter(Boolean);
       normalized.forEach((line, index) => {
         if (line === normalized[index - 1]) candidates.push({
-          id: `${textId}:${pageKey}:duplicate-adjacent-line:${index + 1}`,
+          id: `${textId}:${pageKey}:${page.stream}:duplicate-adjacent-line:${index + 1}`,
           rule: 'duplicate-adjacent-line',
           reason: 'Identiske nabolinjer',
           text_id: textId,

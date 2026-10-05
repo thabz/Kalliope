@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useContext } from 'react';
+import { Fragment, useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
@@ -149,6 +149,8 @@ const renderXmlString = (inputString) => {
             {handle_nodes(node.childNodes)}
           </i>
         );
+      case 'nonum':
+        return <Fragment key={keySeq++}>{handle_nodes(node.childNodes)}</Fragment>;
       case 'span':
         return (
           <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
@@ -302,7 +304,7 @@ const renderXmlString = (inputString) => {
         );
       case 'column':
         return (
-          <div style={{ textAlign: 'left' }} key={keySeq++}>
+          <div style={{ textAlign: 'left', whiteSpace: 'pre-wrap' }} key={keySeq++}>
             {handle_nodes(node.childNodes)}
           </div>
         );

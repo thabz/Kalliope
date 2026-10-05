@@ -6,7 +6,7 @@ import { analyzeIndentation } from './analyze-indentation.js';
 import { analyzeIndentationGeometry } from './analyze-indentation-geometry.js';
 import { analyzeStanzaGeometry } from './analyze-stanza-geometry.js';
 import { analyzeStanzas } from './analyze-stanzas.js';
-import { directChild, parseXml, serializeChildren, sha256, textEntries } from './audit-utils.js';
+import { directChild, isPoetryBlock, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
 import {
   loadTsvVariants,
   preparePoetryGeometry,
@@ -124,12 +124,14 @@ const poetryBlocks = xml => {
   return textEntries(document).flatMap(entry => {
     const textId = entry.getAttribute('id') ?? '';
     const source = directChild(directChild(entry, 'head'), 'source');
-    return Array.from(directChild(entry, 'body')?.getElementsByTagName('poetry') ?? [])
+    return Array.from(directChild(entry, 'body')?.getElementsByTagName('*') ?? [])
+      .filter(isPoetryBlock)
       .map((poetry, blockIndex) => ({
         text_id: textId,
         pages: source?.getAttribute('pages') ?? null,
         block_index: blockIndex + 1,
-        ...bodyAndPageBreaks(serializeChildren(poetry)),
+        ...bodyAndPageBreaks(serializeVerseLines(poetry)
+          .replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu, '')),
       }));
   });
 };
