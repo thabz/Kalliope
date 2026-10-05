@@ -4,8 +4,26 @@
 <workhead>
   <title>Optrin af Nordens Kæmpeliv</title>
   <year>1861</year>
-  <source href="https://www.kb.dk/e-mat/dod/115308057344-color.pdf" facsimile="115308057344-color" facsimile-pages-num="453" facsimile-pages-offset="15">Nik. Fred. Sev. Grundtvig: <i>Optrin af Nordens Kæmpeliv.</i> Anden Udgave. Første Bind. Kjøbenhavn, Forlagt af K. Schønberg. Thieles Bogtrykkeri. 1861.</source>
-  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115308057344-color.pdf" facsimile="115308057344-color" facsimile-pages-num="453" facsimile-pages-offset="253">Nik. Fred. Sev. Grundtvig: <i>Optrin af Nordens Kæmpeliv.</i> Anden Udgave. Andet Bind: <i>Optrin af Kæmpelivets Undergang i Nord.</i> Kjøbenhavn, Forlagt af K. Schønberg. Thieles Bogtrykkeri. 1861.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308057344-color.pdf" facsimile="115308057344-color" facsimile-pages-num="453" facsimile-pages-offset="15">
+    <author id="grundtvig">Nik. Fred. Sev. Grundtvig</author>
+    <title>Optrin af Nordens Kæmpeliv</title>
+    <edition>Anden Udgave</edition>
+    <volume>1</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>K. Schønberg</publisher>
+    <printer>Thieles Bogtrykkeri</printer>
+    <year>1861</year>
+  </source>
+  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115308057344-color.pdf" facsimile="115308057344-color" facsimile-pages-num="453" facsimile-pages-offset="253">
+    <author id="grundtvig">Nik. Fred. Sev. Grundtvig</author>
+    <title>Optrin af Nordens Kæmpeliv: Optrin af Kæmpelivets Undergang i Nord</title>
+    <edition>Anden Udgave</edition>
+    <volume>2</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>K. Schønberg</publisher>
+    <printer>Thieles Bogtrykkeri</printer>
+    <year>1861</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-26T13:05:58+02:00"/>

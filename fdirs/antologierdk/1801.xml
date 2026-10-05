@@ -8,9 +8,24 @@
   <pictures>
     <picture type="titlepage" src="1801-p1.jpg"><transcription>Fierne Gienlyd / af / Danmarks anden April / 1801 / eller / svenske, tydske, bataviske og franske / Hædersdigte over denne Dag / samlet og med hosføiet Oversættelse / udgivne / af / Knud Lyne Rahbek / Professor. // Kiøbenhavn 1801. / Trykt hos Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription></picture>
   </pictures>
-  <source id="originaler" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">Originaldigtene i Knud Lyne Rahbek (udg.): <i>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</i>, trykt hos Johan Frederik Schultz, Kiøbenhavn, 1801.</source>
-  <source id="oversaettelser" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">Oversættelserne i Knud Lyne Rahbek (udg.): <i>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</i>, trykt hos Johan Frederik Schultz, Kiøbenhavn, 1801.</source>
+  <source id="originaler" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">
+    <title>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</title>
+    <editor id="rahbek">Knud Lyne Rahbek</editor>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
+    <year>1801</year>
+  </source>
+  <source id="oversaettelser" href="https://www.kb.dk/e-mat/dod/130001758791-color.pdf" facsimile="130001758791-color.pdf" facsimile-pages-num="21" facsimile-pages-offset="3">
+    <title>Fierne Gienlyd af Danmarks anden April 1801 eller svenske, tydske, bataviske og franske Hædersdigte over denne Dag</title>
+    <editor id="rahbek">Knud Lyne Rahbek</editor>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
+    <year>1801</year>
+  </source>
   <quality>kilde</quality>
+  <notes>
+    <note>Kilden med id »originaler« anvendes til originaldigtene; kilden med id »oversaettelser« anvendes til oversættelserne i samme udgave.</note>
+  </notes>
 </workhead>
 <workbody>
 

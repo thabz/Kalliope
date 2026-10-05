@@ -1,4 +1,9 @@
-import { getChildByTagName, safeGetAttr } from './xml.js';
+import {
+  getChildByTagName,
+  getChildren,
+  safeGetAttr,
+  safeGetInnerXMLWithout,
+} from './xml.js';
 
 const kbDigitalPermalink = (recordId) =>
   `https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma${encodeURIComponent(recordId)}`;
@@ -132,5 +137,97 @@ export const resolveSourceFacsimileForText = ({
       pagesOffset == null
         ? (sourceForText?.facsimilePagesOffset ?? null)
         : parseInt(pagesOffset, 10),
+  };
+};
+
+const personRoles = { author: 'authors', editor: 'editors', translator: 'translators' };
+const bibliographyFields = ['title', 'edition', 'volume', 'place', 'publisher', 'printer', 'year'];
+const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+export const parseSourceBibliography = sourceNode => {
+  const children = getChildren(sourceNode) ?? [];
+  const bibliographicChildren = children.filter(child =>
+    Object.hasOwn(personRoles, child.tagName) || bibliographyFields.includes(child.tagName)
+  );
+  if (bibliographicChildren.length === 0) {
+    return null;
+  }
+  const bibliography = {};
+  for (const child of children) {
+    if (child.tagName === 'identifiers') {
+      continue;
+    }
+    const value = child.textContent.trim();
+    if (value.length === 0 || (getChildren(child) ?? []).length > 0) {
+      throw new Error(`Bibliografisk kildefelt <${child.tagName}> skal indeholde ikke-tom tekst.`);
+    }
+    if (Object.hasOwn(personRoles, child.tagName)) {
+      const role = personRoles[child.tagName];
+      const id = safeGetAttr(child, 'id');
+      bibliography[role] ??= [];
+      bibliography[role].push({ name: value, ...(id == null ? {} : { id }) });
+    } else if (bibliographyFields.includes(child.tagName)) {
+      if (bibliography[child.tagName] != null) {
+        throw new Error(`Gentaget bibliografisk kildefelt <${child.tagName}>.`);
+      }
+      bibliography[child.tagName] = value;
+    } else {
+      throw new Error(`Ukendt bibliografisk kildefelt <${child.tagName}>.`);
+    }
+  }
+  const hasFreeText = Array.from(sourceNode.childNodes).some(child =>
+    (child.nodeType === 3 || child.nodeType === 4) && child.textContent.trim().length > 0
+  );
+  if (hasFreeText || bibliography.title == null) {
+    throw new Error('En struktureret kilde kræver en titel og må ikke indeholde fritekst.');
+  }
+  return bibliography;
+};
+
+// Return the same inline XML consumed by TextInline for legacy references.
+export const formatSourceBibliography = (bibliography, poets = new Map()) => {
+  const personName = person => {
+    const name = escapeXml(person.name);
+    return person.id != null && poets.has(person.id)
+      ? `<a poet="${escapeXml(person.id)}">${name}</a>` : name;
+  };
+  const names = people => {
+    const rendered = people.map(personName);
+    return rendered.length < 2 ? rendered.join('')
+      : `${rendered.slice(0, -1).join(', ')} og ${rendered.at(-1)}`;
+  };
+  const authors = bibliography.authors ?? [];
+  const parts = [`${authors.length === 0 ? '' : `${names(authors)}: `}<i>${escapeXml(bibliography.title)}</i>`];
+  for (const [role, label] of [['editors', 'udg. af'], ['translators', 'overs. af']]) {
+    if ((bibliography[role] ?? []).length > 0) {
+      parts.push(`${label} ${names(bibliography[role])}`);
+    }
+  }
+  if (bibliography.edition != null) parts.push(escapeXml(bibliography.edition));
+  if (bibliography.volume != null) parts.push(`bind ${escapeXml(bibliography.volume)}`);
+  const imprint = bibliography.publisher != null ? escapeXml(bibliography.publisher)
+    : bibliography.printer == null ? null : `trykt hos ${escapeXml(bibliography.printer)}`;
+  if (bibliography.place != null) {
+    parts.push(`${escapeXml(bibliography.place)}${imprint == null ? '' : `: ${imprint}`}`);
+  } else if (imprint != null) {
+    parts.push(imprint);
+  }
+  if (bibliography.year != null) parts.push(escapeXml(bibliography.year));
+  return `${parts.join(', ').replace(/\.$/, '')}.`;
+};
+
+export const resolveSourceReference = ({ sourceNode, inheritedSource, poets }) => {
+  const bibliography = parseSourceBibliography(sourceNode);
+  if (bibliography != null) {
+    return { source: formatSourceBibliography(bibliography, poets), bibliography };
+  }
+  const legacyReference = safeGetInnerXMLWithout(sourceNode, ['identifiers'])?.trim();
+  if (legacyReference != null && legacyReference.length > 0) {
+    return { source: legacyReference };
+  }
+  return {
+    source: inheritedSource?.source ?? null,
+    ...(inheritedSource?.bibliography == null ? {} : { bibliography: inheritedSource.bibliography }),
   };
 };

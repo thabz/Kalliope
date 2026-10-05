@@ -9,7 +9,15 @@
   <pictures>
     <picture type="titlepage" src="1881-p1.jpg"><transcription>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler. Samlede af Lauritz N. V. Balslev og M. E. Matthiessen. Første Bind. Odense. Den Miloske Boghandel. 1881.</transcription></picture>
   </pictures>
-  <source href="https://www.kb.dk/e-mat/dod/115308020230.pdf" facsimile="115308020230" facsimile-pages-num="135" facsimile-pages-offset="5">Lauritz N. V. Balslev og M. E. Matthiessen (saml.): <i>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</i>, første bind, Den Miloske Boghandel, Odense, 1881.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308020230.pdf" facsimile="115308020230" facsimile-pages-num="135" facsimile-pages-offset="5">
+    <title>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</title>
+    <editor id="balslevlnv">Lauritz N. V. Balslev</editor>
+    <editor>M. E. Matthiessen</editor>
+    <volume>1</volume>
+    <place>Odense</place>
+    <publisher>Den Miloske Boghandel</publisher>
+    <year>1881</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-06T12:55:48+02:00"/>
