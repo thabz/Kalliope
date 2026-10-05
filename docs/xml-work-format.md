@@ -418,6 +418,10 @@ bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, intern
 tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
 reglen nedenfor.
 
+Hvis en prosatekst ingen trykt overskrift har, kan en kort redaktionel titel
+tilføjes i firkantede klammer. Brug da en `<indextitle>` uden klammer, og
+dokumentér den tilføjede titel ved importen.
+
 Brug felterne efter den trykte funktion og placering:
 
 - linjer over hovedtitlen skrives i `<suptitle>`
