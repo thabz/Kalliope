@@ -41,6 +41,8 @@ Mange Veie til Hæder —
 
 <text id="samfundetlitteratur2026100501" author="samfundetlitteratur">
 <head>
+  <title>[Bestyrelsens meddelelse]</title>
+  <indextitle>Bestyrelsens meddelelse</indextitle>
   <dates><written>1840-08-12</written></dates>
   <source facsimile-pages="8-9"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -64,6 +66,8 @@ Ogsaa troe vi at kunne love, at det <w>andet</w> Hefte af disse ved Samfundet ud
 
 <text id="thaarupc2026100501" author="thaarupc">
 <head>
+  <title>[Dedikation]</title>
+  <indextitle>Dedikation</indextitle>
   <source facsimile-pages="12-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -389,7 +393,9 @@ Manuskriptet indeholder alle de af Falster, som Rector, udstædte Testimonier, o
 <text id="falster2026100508" variant="falster2026100501">
 <head>
   <title>Disse Tiders onde Optugtelse</title>
-  <notes>I strofe 30 står Faders og Moders over hinanden mellem klammer i trykket; de to alternativer er her gengivet med skråstreg.</notes>
+  <notes>
+    <note>I strofe 30 står Faders og Moders over hinanden mellem klammer i trykket; de to alternativer er her gengivet med skråstreg.</note>
+  </notes>
   <source pages="1-24" facsimile-pages="48-71"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1052,7 +1058,9 @@ Ved <w>Corfiz Ulfelds</w><footnote>Ved <w>Corfiz Ulfeld</w> anføre Critici: „
 <text id="falster2026100509" variant="falster2026100502">
 <head>
   <title>Daarers alamodiske Leveregler</title>
-  <notes>I anmærkningen til strofe 3 står tydske og franske over hinanden mellem klammer i trykket; de to alternativer er her gengivet med skråstreg.</notes>
+  <notes>
+    <note>I anmærkningen til strofe 3 står tydske og franske over hinanden mellem klammer i trykket; de to alternativer er her gengivet med skråstreg.</note>
+  </notes>
   <source pages="25-45" facsimile-pages="72-92"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3986,7 +3994,8 @@ Jeg takker Gud, at han mig fri’r fra denne Last,
 </body>
 </text>
 
-<text id="falster2026100515" variant="falster2002122602">
+<!-- Kildens hovedvers i strofe 30.8 har det gentagne »med med« (s. 137). -->
+<text id="falster2026100515" variant="falster2002122602" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Verden som et Dolhuus<footnote>Ogsaa i Holbergs Satirer forekommer Udtrykket „Verdens Dulhuus”, hvad vi nu kalde „<w>Daarekiste</w>”. I sine <span lang="la">Amoen. phil. Tom. II.</span> (udkommen 1731) S. 83, giver Falster en Udsigt over denne Satires Indhold, som han siger at have indeelt i 10 Kamre, der skulde indbefatte Daarer af enhver Alder, Stand og Kjøn. Det er mærkeligt, at i den trykte savnes ganske et af disse (imellem den tryktes 5te og 6te), som indtoges af en <w>Krigsmand</w> eller storpralende Soldat, der kaldte sig et Dødens Sendebud, for hvis Navn og Glavind den hele Verden skjælver og bæver — samt at det <w>første</w> indesluttede en uartig og ulydig <w>Dreng</w>; det <w>andet en barnagtig</w> Romanheltinde. Ved at tage de barnagtige Træk fra denne Charakter og lægge dem til den første, som han har omdannet til en lille Pige, har Forfatteren udentvivl givet sine Charakterer større Consistents. Disse Forandringer vise, at Satiren har faaet en Omarbejdelse inden den blev trykt, en i flere Henseender interessant Omstændighed.</footnote></title>
   <subtitle>
