@@ -63,6 +63,7 @@ Troe mit Raad er dog det beste.
 <head>
   <title>Til <i>Zoilus</i></title>
   <subtitle><i>Sonnet.</i></subtitle>
+  <indextitle>Til Zoilus</indextitle>
   <firstline>Du spotste Zoilus, du vedst en hver at lære</firstline>
   <source facsimile-pages="78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -207,7 +208,7 @@ Tack for <i>Poëters</i> Krantz / som Dichte-Kunsten ærer
 </body>
 </text>
 
-<text id="pct2026100501" author="pct" ignore-tests="title-trailing-punctuation">
+<text id="pct2026100501" author="pct" ignore-tests="title-trailing-punctuation,internal-uppercase">
 <head>
   <suptitle>Til den Høy-Ædle og Skarpsindige Lyst og Kunst <i>Poët</i></suptitle>
   <title><i>Mons.</i> J. S. Sehested. <i>Lieuten.</i></title>
@@ -216,6 +217,7 @@ Tack for <i>Poëters</i> Krantz / som Dichte-Kunsten ærer
   <firstline>Høyværdigst KunstPoët du Norden Spraagis-fremmer</firstline>
   <notes>
     <note>TODO: Forfatteren er kun angivet som P. C. T.; identiteten skal afklares.</note>
+    <note>Trykkets KunstPoët står uden mellemrum; den indre kapitæl P hører til skiftet til Antiqua (PDF-side 86). Formen er bevaret efter facsimilet.</note>
   </notes>
   <source facsimile-pages="86-87"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -242,12 +244,15 @@ Du Danske <i>Cicero</i>: Tag denne Plict af mig.
 </body>
 </text>
 
-<text id="wallefont2026100501" author="wallefont" ignore-tests="space-before-semicolon">
+<text id="wallefont2026100501" author="wallefont" ignore-tests="space-before-semicolon,single-circumflex-a-in-text">
 <head>
   <suptitle>Den Bloed / Moed / Dyd og Kunst-Ædle Mand</suptitle>
   <title>J. S. Sehestædt</title>
   <subtitle><line>Min Høyæred Herre og Gunstige Vel-Yndere til Ære.</line><line><i>C. WALLEFONT.</i></line></subtitle>
   <firstline>Hvem stercken Krigs-Gud MARS ret tapper-HELDE-MOOD!</firstline>
+  <notes>
+    <note>Trykket har lâr med en tydelig circumfleks over a (PDF-side 92). Formen er bevaret efter facsimilet.</note>
+  </notes>
   <source facsimile-pages="88-95"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
