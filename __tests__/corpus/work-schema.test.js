@@ -24,6 +24,7 @@ describe('kalliopework RELAX NG schema', () => {
   it('validates structured sources, repeated people and legacy sources', () => {
     for (const source of [
       '<source><title>Digte</title></source>',
+      '<source><title>Antologi</title><editor type="editor">A</editor><editor>B</editor></source>',
       '<source><author id="digter">Navn</author><editor>A</editor><title>Digte</title><editor id="anden">B</editor><translator>C</translator><edition>2. udgave</edition><volume>1</volume><place>København</place><publisher>Forlag</publisher><printer>Trykkeri</printer><year>[1900]</year><identifiers><kb-alma>123</kb-alma></identifiers></source>',
       '<source>Fritekst <i>titel</i>.</source>', '<source pages="1-2"/>',
     ]) expect(() => validate(sourceWork(source))).not.toThrow();
@@ -36,6 +37,9 @@ describe('kalliopework RELAX NG schema', () => {
     '<source><title>Digte</title><year/></source>',
     '<source><title>Digte</title><title>Digte</title></source>',
     '<source><title>Digte</title><editor id="">A</editor></source>',
+    '<source><title>Digte</title><editor type="edition">A</editor></source>',
+    '<source><title>Digte</title><editor type="">A</editor></source>',
+    '<source><title>Digte</title><translator type="editor">A</translator></source>',
   ])('rejects malformed bibliographic sources: %s', source => {
     expect(() => validate(sourceWork(source))).toThrow();
   });

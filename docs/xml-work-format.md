@@ -217,11 +217,14 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
   gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
   vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- `editor` uden `type` vises som `udg. af`. Brug `type="editor"` for en
+  redaktør i snævrere forstand, fx ved antologier; det vises som `red. af`.
+  Typen bevares som valgfrit `type` på redaktøren i JSON. Andre typer afvises.
 - En struktureret kilde må ikke blandes med fritekst. Eksisterende fritekstkilder
   fungerer fortsat. Kildeattributter og `identifiers` bevares i begge formater.
 - Supplerende kildeforklaringer placeres i `<workhead><notes><note>`, med tydelig
   angivelse af den relevante kilde. Serienavne indgår ikke i kildeformatet.
-- Visningen formateres centralt med kursiveret titel, `udg. af`, `overs. af`,
+- Visningen formateres centralt med kursiveret titel, `udg. af` eller `red. af`, `overs. af`,
   udgave, `bind` og udgivelsessted. Forlag vises, når det findes; ellers vises
   trykkeriet med `trykt hos`. Begge oplysninger bevares i maskindata.
 - Et tekstniveau med egen kildeangivelse erstatter hele den bibliografiske

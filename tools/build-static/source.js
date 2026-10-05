@@ -165,8 +165,16 @@ export const parseSourceBibliography = sourceNode => {
     if (Object.hasOwn(personRoles, child.tagName)) {
       const role = personRoles[child.tagName];
       const id = safeGetAttr(child, 'id');
+      const type = safeGetAttr(child, 'type');
+      if (type != null && (child.tagName !== 'editor' || type !== 'editor')) {
+        throw new Error(`Ugyldig bibliografisk persontype: ${type}.`);
+      }
       bibliography[role] ??= [];
-      bibliography[role].push({ name: value, ...(id == null ? {} : { id }) });
+      bibliography[role].push({
+        name: value,
+        ...(id == null ? {} : { id }),
+        ...(type == null ? {} : { type }),
+      });
     } else if (bibliographyFields.includes(child.tagName)) {
       if (bibliography[child.tagName] != null) {
         throw new Error(`Gentaget bibliografisk kildefelt <${child.tagName}>.`);
@@ -199,10 +207,20 @@ export const formatSourceBibliography = (bibliography, poets = new Map()) => {
   };
   const authors = bibliography.authors ?? [];
   const parts = [`${authors.length === 0 ? '' : `${names(authors)}: `}<i>${escapeXml(bibliography.title)}</i>`];
-  for (const [role, label] of [['editors', 'udg. af'], ['translators', 'overs. af']]) {
-    if ((bibliography[role] ?? []).length > 0) {
-      parts.push(`${label} ${names(bibliography[role])}`);
+  const editorGroups = new Map();
+  for (const editor of bibliography.editors ?? []) {
+    const label = editor.type === 'editor' ? 'red. af' : 'udg. af';
+    if (!editorGroups.has(label)) {
+      editorGroups.set(label, []);
     }
+    editorGroups.get(label).push(editor);
+  }
+  for (const [label, editors] of editorGroups) {
+    parts.push(`${label} ${names(editors)}`);
+  }
+  const translators = bibliography.translators ?? [];
+  if (translators.length > 0) {
+    parts.push(`overs. af ${names(translators)}`);
   }
   if (bibliography.edition != null) parts.push(escapeXml(bibliography.edition));
   if (bibliography.volume != null) parts.push(`bind ${escapeXml(bibliography.volume)}`);

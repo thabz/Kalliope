@@ -141,6 +141,21 @@ describe('structured bibliographic sources', () => {
     expect(result.bibliography.editors).toHaveLength(2);
   });
 
+  it('defaults to udg. af and uses red. af only for type="editor"', () => {
+    const source = reference('<source><title>Antologi</title><editor type="editor" id="a">A</editor><editor type="editor">B</editor></source>', null, new Map([['a', {}]]));
+    expect(source.source).toBe('<i>Antologi</i>, red. af <a poet="a">A</a> og B.');
+    expect(source.bibliography.editors).toEqual([
+      { name: 'A', id: 'a', type: 'editor' }, { name: 'B', type: 'editor' },
+    ]);
+    expect(reference('<source><title>Digte</title><editor>A</editor></source>').source)
+      .toBe('<i>Digte</i>, udg. af A.');
+    expect(reference('<source><title>Digte</title><editor>A</editor><editor type="editor">B</editor><editor>C</editor><translator>D</translator></source>').source)
+      .toBe('<i>Digte</i>, udg. af A og C, red. af B, overs. af D.');
+    expect(reference('<source><title>Digte</title><editor type="editor">B</editor><editor>A</editor></source>').source)
+      .toBe('<i>Digte</i>, red. af B, udg. af A.');
+    expect(reference('<source pages="7"/>', source)).toEqual(source);
+  });
+
   it('supports anonymous, undated sources, translators, edition, volume and uncertain years', () => {
     expect(reference('<source><title>Antologi</title></source>')).toEqual({
       source: '<i>Antologi</i>.', bibliography: { title: 'Antologi' },
@@ -183,6 +198,9 @@ describe('structured bibliographic sources', () => {
     '<source><title>Titel</title><publisher/></source>',
     '<source><title>Titel</title><note>Forklaring</note></source>',
     '<source><title><i>Titel</i></title></source>',
+    '<source><title>Titel</title><editor type="edition">A</editor></source>',
+    '<source><title>Titel</title><editor type="">A</editor></source>',
+    '<source><title>Titel</title><translator type="editor">A</translator></source>',
   ])('rejects invalid structured bibliography: %s', xml => {
     expect(() => reference(xml)).toThrow();
   });

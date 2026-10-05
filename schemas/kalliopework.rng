@@ -222,7 +222,7 @@
   <define name="sourceBibliography">
     <interleave>
       <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
-      <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="type"><value>editor</value></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <zeroOrMore><element name="translator"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <element name="title"><ref name="sourceBibliographicText"/></element>
       <optional><element name="edition"><ref name="sourceBibliographicText"/></element></optional>
