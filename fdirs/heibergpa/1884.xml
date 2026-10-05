@@ -6,8 +6,10 @@
   <notes>
     <note>Her gengives afsnittet »Viser og Vers«, s. 575-626, med alle 35 tekster. Bogens øvrige afsnit er ikke medtaget.</note>
     <note>Rettelsesarket »Rettelser og Tillæg« på faksimileside 20 vedrører s. 1, 3, 136, 288, 556 og 558 og indeholder ingen rettelser til »Viser og Vers«.</note>
-    <!-- TODO: Tilføj titelblad fra faksimileside 14. Den automatiske titelblads-QA kræver manuel vurdering, da den foreslåede beskæring fjerner 10,68% af højre kant (grænse: 8%). -->
   </notes>
+  <pictures>
+    <picture src="1884-p1.jpg" type="titlepage"><transcription>Peter Andreas Heibergs / Udvalgte Skrifter. // Udgivne / af / Otto Borchsenius og Fr. Winkel Horn. // Kjøbenhavn. / Otto B. Wroblewskys Forlag. / 1884.</transcription></picture>
+  </pictures>
   <quality>korrektur1</quality>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122907672005763" facsimile="115208031742" facsimile-pages-num="657" facsimile-pages-offset="23">Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, Otto Borchsenius og Fr. Winkel Horn (red.), Otto B. Wroblewskys Forlag, Kbh., 1884.</source>
 </workhead>
@@ -494,6 +496,9 @@ Men ærligt og hjærtement er vores Skraal:
   <title>Pyrenæer-Marsch</title>
   <subtitle>(Fri Oversættelse.)</subtitle>
   <firstline>Hvi sove Frankrigs Helte hen?</firstline>
+  <notes>
+    <note>Fri oversættelse af <xref type="translation" poem="anonym1700fr2026100501"/>.</note>
+  </notes>
   <source pages="587-589"/>
 </head>
 <body>
