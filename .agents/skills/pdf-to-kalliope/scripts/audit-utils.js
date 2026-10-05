@@ -18,6 +18,19 @@ const serializeChildren = node => {
     .join('');
 };
 
+// Inline note citations use explicit breaks; body blocks remain siblings.
+const isPoetryBlock = node => {
+  if (node.nodeName === 'poetry') return true;
+  if (node.nodeName === 'quote') return node.getElementsByTagName('poetry').length === 0;
+  return node.nodeName === 'column' &&
+    ['note', 'footnote'].includes(node.parentNode?.nodeName) &&
+    node.getElementsByTagName('br').length > 0;
+};
+
+const serializeVerseLines = node => node.nodeName === 'column'
+  ? serializeChildren(node).replace(/<br\s*\/>\r?\n?/gu, '\n')
+  : serializeChildren(node);
+
 const stripNotes = text =>
   text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
 
@@ -109,9 +122,15 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
 
 const splitBodyPages = (body, { noteNeutral = false } = {}) => {
   const raw = serializeChildren(body);
+  const withoutNotes = raw.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
+  const mainTransitions = new Set([...withoutNotes.matchAll(/<pb\b[^>]*\bfacs="([^"]+)"[^>]*\/>/g)]
+    .map(match => match[1]));
   const serialized = noteNeutral ? raw.replace(
     /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
-    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).join(''),
+    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).filter(markup => {
+      const facs = /\bfacs="([^"]+)"/.exec(markup)?.[1];
+      return mainTransitions.has(facs) === false;
+    }).join(''),
   ) : raw;
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
@@ -306,6 +325,8 @@ export {
   buildPageInventory,
   directChild,
   elementChildren,
+  isPoetryBlock,
+  serializeVerseLines,
   normalizeLine,
   parseSimplePages,
   parseXml,

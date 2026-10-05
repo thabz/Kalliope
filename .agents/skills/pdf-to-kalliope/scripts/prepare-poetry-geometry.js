@@ -7,7 +7,8 @@ import {
   directChild,
   elementChildren,
   parseXml,
-  serializeChildren,
+  isPoetryBlock,
+  serializeVerseLines,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
 
@@ -137,7 +138,9 @@ const countIndentation = serialized => {
 const pbPattern = /<pb\b[^>]*\bfacs="([^"]+)"[^>]*\/>/gu;
 
 const parsePoetryElement = ({ poetry, startingFacsimile }) => {
-  const serialized = serializeChildren(poetry).replace(/\r\n?/gu, '\n');
+  const serialized = serializeVerseLines(poetry)
+    .replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu, '')
+    .replace(/\r\n?/gu, '\n');
   const lines = [];
   const equipment = [];
   const observedBoundaries = [];
@@ -220,32 +223,38 @@ const extractPoetryBlocks = xml => {
     const source = directChild(head, 'source');
     if (body == null) return;
     const firstPb = body.getElementsByTagName('pb')[0] ?? null;
-    let currentFacsimile = initialFacsimile(
+    const startingFacsimile = initialFacsimile(
       source,
       sourceForText(workhead, source),
       firstPb,
     );
     let blockIndex = 0;
-    elementChildren(body).forEach(child => {
-      if (child.nodeName === 'poetry') {
+    const visit = (node, stream) => {
+      if (node.nodeName === 'pb') {
+        stream.facsimile = node.getAttribute('facs') ?? stream.facsimile;
+        return;
+      }
+      if (node.nodeName === 'note' || node.nodeName === 'footnote') {
+        const noteStream = { facsimile: stream.facsimile };
+        elementChildren(node).forEach(child => visit(child, noteStream));
+        return;
+      }
+      if (isPoetryBlock(node)) {
         blockIndex += 1;
         const parsed = parsePoetryElement({
-          poetry: child,
-          startingFacsimile: currentFacsimile,
+          poetry: node,
+          startingFacsimile: stream.facsimile,
         });
-        currentFacsimile = parsed.endingFacsimile;
         blocks.push({
           textId: entry.getAttribute('id') ?? '',
           pages: source?.getAttribute('pages') ?? null,
           blockIndex,
           ...parsed,
         });
-      } else {
-        const pageBreaks = Array.from(child.getElementsByTagName('pb'));
-        const facsimile = pageBreaks.at(-1)?.getAttribute('facs') ?? null;
-        if (facsimile != null) currentFacsimile = facsimile;
       }
-    });
+      elementChildren(node).forEach(child => visit(child, stream));
+    };
+    visit(body, { facsimile: startingFacsimile });
   });
   return blocks;
 };

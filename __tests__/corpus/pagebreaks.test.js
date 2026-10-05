@@ -329,6 +329,18 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
 
 
 describe('page breaks inside attached endnotes', () => {
+  it('counts a shared main-text and footnote boundary once', () => {
+    const xml = `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="XI-XII"/></head><body><prose>Biografs<footnote>Flens<pb n="XII" facs="020.jpg"/>burgi.</footnote> Vidnesbyrd, med udmærkede <pb n="XII" facs="020.jpg"/>Læregaver.</prose></body></text></workbody></kalliopework>`;
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+  });
+
+  it('rejects repeated physical boundaries inside the same stream', () => {
+    const xml = `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-2"/></head><body><prose>Først<pb n="2" facs="002.jpg"/>Andet<pb n="2" facs="002.jpg"/>Tredje</prose></body></text></workbody></kalliopework>`;
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: duplicate pb/@facs within one text stream: 002.jpg.',
+    );
+  });
+
   const xmlWith = notePages => `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-5"/></head><body><poetry>Vers<footnote>Slutnote${notePages}</footnote>
 <pb n="2" facs="002.jpg"/>Næste vers
 <pb n="3" facs="003.jpg"/>Sidste vers</poetry></body></text></workbody></kalliopework>`;

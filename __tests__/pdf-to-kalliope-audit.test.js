@@ -64,6 +64,15 @@ Sidste linje</poetry></body>
 </kalliopework>`;
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('does not move main-text anchors to the next page when a footnote crosses the same boundary', () => {
+    const xml = workXml.replace('Første linje',
+      'Første<footnote>Flens<pb n="11" facs="011.jpg"/>burgi</footnote> linje');
+    const rows = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(rows).toHaveLength(3);
+    expect(rows[0]).toMatchObject({ first_line: 'Første linje', last_line: 'Sidste paa ti' });
+    expect(rows[1]).toMatchObject({ printed_page: '11', first_line: 'Første paa elleve' });
+  });
+
   it('keeps body anchors stable when notes change', () => {
     const cases = [
       ['Første<note>gammel</note> linje', 'Første linje'],
@@ -204,6 +213,20 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
 });
 
 describe('whole-work structure wrapper', () => {
+  it('counts note poetry separately without adding its paragraphs or page breaks to the main poem', () => {
+    const xml = workXml.replace('Første linje', `Første<footnote>Notens prosa
+
+<pb n="11" facs="011.jpg"/><poetry>Notens første vers
+Notens andet vers</poetry>
+
+Mere prosa</footnote> linje`);
+    const analysis = analyzeWholeWork(xml);
+    expect(analysis.poems).toHaveLength(2);
+    expect(analysis.poems[0].stanza.observed_stanza_lengths).toEqual([5]);
+    expect(analysis.poems[0].page_breaks).toEqual([3, 4]);
+    expect(analysis.poems[1].stanza.observed_stanza_lengths).toEqual([2]);
+  });
+
   it.each([
     {
       textId: 'roerdam2026092001',
@@ -437,6 +460,13 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
     ]));
   });
 
+  it('audits explicit note citation breaks separately from the main stanza', () => {
+    const citedXml = workXml.replace('<poetry>', '<poetry>Vers<footnote><column>Første citat<br/>Andet citat</column></footnote>\n');
+    const result = analyzeWholeWork(citedXml);
+    expect(result.poems).toHaveLength(2);
+    expect(result.poems[1].stanza.observed_stanza_lengths).toEqual([2]);
+  });
+
   it('treats any line without terminal punctuation as continuation evidence', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
@@ -593,6 +623,17 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
+  it('keeps note and main-text candidates on their physical pages when their transitions repeat', () => {
+    const xml = workXml.replace('Første linje',
+      'Første<footnote>Image note<pb n="11" facs="011.jpg"/>Image notefortsættelse</footnote> linje')
+      .replace('Første paa elleve', 'Image hovedtekst');
+    const candidates = historicalOcrCandidates({ xml })
+      .filter(candidate => candidate.rule === 'image-token');
+    expect(candidates.map(candidate => candidate.facsimile))
+      .toEqual(['011.jpg', '010.jpg', '011.jpg']);
+    expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(3);
+  });
+
   it('attributes candidates on unnumbered pages to their own facsimile', () => {
     const xml = workXml
       .replace('pages="10-12"', 'facsimile-pages="10-12"')

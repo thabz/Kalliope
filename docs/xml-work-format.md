@@ -775,6 +775,12 @@ strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
 side. Markøren opretter ikke en verslinje, en blanklinje, en strofe eller et
 prosaafsnit og renderes ikke visuelt.
 
+Hvis både hovedteksten og en fodnote fortsætter på næste fysiske side,
+registreres sideskiftet i begge tekststrømme, også inde i et ord i fodnoten.
+Markørerne har samme `n` og `facs`. Sidetalsintervallet tæller den fysiske
+sideovergang én gang; hver notes og hovedtekstens rækkefølge kontrolleres
+særskilt. En markør må ikke gentages inden for samme tekststrøm.
+
 Der indsættes ikke `<pb>` ved begyndelsen eller slutningen af en `<text>` alene
 for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
 `<pagebreaks/>` lovligt indeholde nul `<pb>`-elementer. I værker med
@@ -937,6 +943,12 @@ overskrift, den henviser til. En note må ikke stå alene på en linje, heller
 ikke når den er trykt nederst på en side i kilden: det giver en løsrevet
 notemarkør. Renderingen placerer selv noteteksten under digtet.
 
+Verscitater i fodnoter kan stå i `<column>` med eksplicitte `<br/>` mellem
+verslinjerne. Skriv blokken uden XML-linjeskift, så de ikke giver ekstra
+linjeskift ved visningen. Mellemrum bevarer indrykning; `<center>`, `<right>`
+og `<nonum>` kan markere centrering og oplysninger uden for versene.
+`<poetry>`, `<prose>` og `<quote>` skal være direkte børn af `<body>`.
+
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
 ## Billeder
@@ -1070,6 +1082,7 @@ Disse tags paavirker linjenummerering eller linjelayout:
 - `<margin>...</margin>`: margintekst/visningsnummer.
 - `<resetnum/>`: nulstiller automatisk linjenummerering til 1.
 - `<wrap>...</wrap>`: undgaar poesilinje-layout for lange linjer.
+
 - `<center>...</center>` og `<right>...</right>`: linjejustering.
 
 `<nonum>` er den yderste markør for en unummereret linje. En eventuel
