@@ -85,7 +85,13 @@ digtere.
 - Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
   worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
   CI er gennemført.
-- Når en PR skal lukke et GitHub issue automatisk, skal PR-beskrivelsen bruge GitHubs engelske closing keyword, fx `Fixes #123`. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker issues på dansk.
+- Alle PR'er, der udspringer af et GitHub issue, skal have `Fixes #123` med
+  det konkrete issue-nummer i beskrivelsen fra oprettelsen. Det gælder også
+  draft-PR'er, og uanset om issuet eller arbejdet er et udkast, afventer noget
+  eller har en anden ufærdig tilstand. Dermed kan forbindelsen til det
+  igangværende arbejde ses i GitHub. Bevar henvisningen ved senere opdateringer
+  af PR-beskrivelsen. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker
+  issues på dansk.
 - Branch-navne må ikke indeholde `/` eller have et teknisk prefix. Brug et kort,
   beskrivende navn som `robert-burns-ikon`.
 - Når brugeren beder om at få fikset et GitHub issue, skal arbejdet udføres i et

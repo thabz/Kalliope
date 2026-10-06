@@ -1703,8 +1703,11 @@ The PR description must state concretely:
 - which validation and tests were run
 - any remaining `TODO:` notes
 
-Use an English GitHub closing keyword such as `Fixes #123` when the PR must
-close an issue automatically.
+Every PR originating from a GitHub issue must include `Fixes #123` with the
+actual issue number in its description from creation, including draft PRs and
+stopped imports. This applies regardless of whether the issue or work is a
+draft, awaiting action or otherwise incomplete. Preserve the reference when
+updating the PR description.
 
 Do not wait for GitHub CI unless the user explicitly asks for that.
 

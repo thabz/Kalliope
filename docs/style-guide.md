@@ -37,6 +37,10 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## GitHub
 
 - Issues, PR-titler og PR-beskrivelser skrives på dansk.
+- Alle PR'er, der udspringer af et issue, skal fra oprettelsen have
+  `Fixes #123` med det konkrete issue-nummer i beskrivelsen. Det gælder også
+  draft-PR'er og uanset issuets eller arbejdets ufærdige tilstand. Bevar
+  henvisningen ved senere opdateringer.
 - Skriv konkret hvad der er observeret, ændret og valideret.
 - Brug engelske navne eller citater, når de er kildens titel, personnavn eller egentlig terminologi.
 
