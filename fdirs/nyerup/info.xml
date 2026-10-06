@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nyerup" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Rasmus</firstname>
+    <lastname>Nyerup</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1759-03-12</date>
+      <place>Nyrup</place>
+    </born>
+    <dead>
+      <date>1829-06-28</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q3365201</wikidata>
+    <biografisk-leksikon-lex-dk>R._Nyerup</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

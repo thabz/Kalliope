@@ -12,6 +12,7 @@
     <picture src="1832-p1.jpg">Titelbladet til <i>Digte, gamle og nye</i> (1832) lyder ,,Digte, / gamle og nye, / af / Christian Winther. // Kjøbenhavn, 1832. / Trykt på Universitetsboghandler C. A. Reitzels Forlag / hos P. R. Jørgensen.''</picture>
   </pictures>
   <source facsimile="130022886216_color" facsimile-pages-num="298" facsimile-pages-offset="10">Christian Winther: <i>Digte, gamle og nye</i>, C.A. Reitzel, Kbh., 1832.</source>
+  <errata status="applied" pages="[281]" facsimile-pages="291"/>
 </workhead>
 <workbody>
 
@@ -806,6 +807,7 @@ Lyksalige med ham i Paradis!
   <title>Musiken</title>
   <firstline>Han sagde: Bliv! - og mere snelt end Tanken</firstline>
   <source pages="30-32"/>
+  <keywords>ottave-rime</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -987,8 +989,6 @@ Om Danmarks hulde Qvinder!
 <text id="winther1999070602">
 <head>
   <title>Tonerne</title>
-  <toctitle>Tonerne</toctitle>
-  <indextitle>Tonerne</indextitle>
   <firstline>De slumre dybt i al Naturens Rige</firstline>
   <source pages="37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2307,6 +2307,7 @@ Og hver dets Daad skal kun om hende tale.
   <title>Hvordan hun er?</title>
   <firstline>Hun skildres ei med Pen og Blæk</firstline>
   <source pages="87-89"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3106,7 +3107,6 @@ Ret læres kun Bryst imod Bryst!
 <head>
   <title>Sang i Dalen</title>
   <toctitle>* Sang i Dalen</toctitle>
-  <indextitle>Sang i Dalen</indextitle>
   <firstline>Naar Iis og Snee paa Mark og Vang</firstline>
   <source pages="116-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3125,7 +3125,7 @@ La du, da dui, da du etc.
 
 En Krop saa rank, som Fyrren hist,
 En Flætning tyk og lang,
-En Fod saa let som Fugl paa Qvist,<!-- saa] faa iflg. errata -->
+En Fod saa<footnote type="errata">saa] faa</footnote> let som Fugl paa Qvist,
 En Røst, som Klokkeklang,
 To Øine, som to sorte Bær,
 Og Kinden rund og rød, -
@@ -3239,6 +3239,7 @@ Os slumrende Barm mod Barm.
   <title>Jeg elskte Fogdens Datter</title>
   <firstline>Jeg elskte Fogdens Datter</firstline>
   <source pages="121-122"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3360,8 +3361,6 @@ Den kan jeg ikke dæmpe.
 <text id="winther1999070514b" variant="winther1999070514">
 <head>
   <title>Ridder Kalv</title>
-  <toctitle>Ridder Kalv</toctitle>
-  <indextitle>Ridder Kalv</indextitle>
   <firstline>Kong Wolmer stod i Halle</firstline>
   <source pages="126-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3739,6 +3738,7 @@ Han skreeg fra Skudens Speil:
   <title>Matrosen</title>
   <firstline>Ved Toldboden steeg en Matros i Land</firstline>
   <source pages="140-142"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3953,7 +3953,7 @@ Saa hævner han sig sikkert snart.
 <body>
 <poetry>
 Min Mosters Gaard den laae paa Skrinten
-Ved Bredden af en skovkrandst Bugt,<!-- skovkrandst] stovkrandst iflg. errata -->
+Ved Bredden af en skovkrandst<footnote type="errata">skovkrandst] stovkrandst</footnote> Bugt,
 Og vis-a-vis saa fjernt paa Klinten
 En anden Borg sig reiste smukt;
 De stod og vexled' kjælne Blikke
@@ -4094,8 +4094,6 @@ Et lille Brev ved Siden laae:
 <head>
   <title>Kongens Skygge</title>
   <subtitle>(1829)</subtitle>
-  <toctitle>Kongens Skygge</toctitle>
-  <indextitle>Kongens Skygge</indextitle>
   <firstline>Hans Haar var Snee, hans Ryg var bøiet</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
@@ -5086,7 +5084,7 @@ Og til Dandsens muntre Fryd!''
 Kongen talde; - Jægerskaren
 Svinger ind paa Slottets Plads,
 Og paa Vogne følge Haren,
-Hjorten og den vilde Bas.<!-- og] eg iflg. errata -->
+Hjorten og<footnote type="errata">og] eg</footnote> den vilde Bas.
 
 Slottet kneised strunkt med Vælde,
 Ungdomsstærkt, skjøndt graat af Ælde,
@@ -5748,7 +5746,7 @@ Vi spille Guldtavl ved Malvasier og Klaret.''
 
 Da reisde hun sit Hoved, slog Lokken fra sin Kind,
 Hun smilde med sit Øie, saa listefuld i Sind.
-Hvor gule var' de Lokker, som rundt om Panden laae,<!-- var'] vare iflg. errata -->
+Hvor gule var'<footnote type="errata">var'] vare</footnote> de Lokker, som rundt om Panden laae,
 Og saa disse Øine, - hvor friske og hvor blaae!
 
 ,,Jeg er kuns Bondepige, men I en Ridder stolt,
@@ -5786,7 +5784,7 @@ Det sætte I for Knæ, og bryde det brat;
 Og ned maa I styrte eders stolte Ridderhuus,
 Og lade Plougen vandre over Grundmurens Gruus!''
 
-Da straalede hans Ansigt med Høihed og Ro,<!-- straalede] straalde iflg. errata -->
+Da straalede<footnote type="errata">straalede] straalde</footnote> hans Ansigt med Høihed og Ro,
 Han mærkede klarligt, hun var sin Kjærest tro:
 ,,Jeg seer, liden Else, du kan dig fra mig snoe,
 Thi Skjoldet maa jeg bære, i Huset vil jeg boe!
@@ -5822,8 +5820,6 @@ Thi dem er der, Gud skee Lov, dog endnu mange af!
 <text id="winther1999062805b" variant="winther1999062805">
 <head>
   <title>Jørgen og Trine</title>
-  <toctitle>Jørgen og Trine</toctitle>
-  <indextitle>Jørgen og Trine</indextitle>
   <firstline>I græsbegroede Enge, tæt ved Østersøens Bugt</firstline>
   <source pages="219-223"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5946,8 +5942,6 @@ Mon hun vel ogsaa volder hans Hjerte saadan Meen?
 <text id="winther1999062806b" variant="winther1999062806">
 <head>
   <title>Johan og Lise</title>
-  <toctitle>Johan og Lise</toctitle>
-  <indextitle>Johan og Lise</indextitle>
   <firstline>Jeg sad i vores Hauge med Naalen i min Haand</firstline>
   <source pages="224-229"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6080,8 +6074,6 @@ Og nynner denne Vise til; - den er kun saa som saa!
 <text id="winther1999062807b" variant="winther1999062807">
 <head>
   <title>Christen og Lene</title>
-  <toctitle>Christen og Lene</toctitle>
-  <indextitle>Christen og Lene</indextitle>
   <firstline>I Kroen er der lystigt med Spil og med Sang</firstline>
   <source pages="230-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6269,8 +6261,6 @@ Nyhugget, malet, som ingen i vort Sogn!''
 <text id="winther1999062808b" variant="winther1999062808">
 <head>
   <title>Svend og Inger</title>
-  <toctitle>Svend og Inger</toctitle>
-  <indextitle>Svend og Inger</indextitle>
   <firstline>Dybt nede mellem Banker retsom i en Tragt</firstline>
   <source pages="237-245"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6488,8 +6478,6 @@ Med Hjertet fuldt af Vemod og trofast Kjærlighed.
 <text id="winther2002072001b" variant="winther2002072001">
 <head>
   <title>Asbjørn og Thora</title>
-  <toctitle>Asbjørn og Thora</toctitle>
-  <indextitle>Asbjørn og Thora</indextitle>
   <firstline>Høstsolen blinker liflig, frisk blæser Østenvind</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen.</note>
@@ -6685,8 +6673,6 @@ Ak! det er Asbjørn Bonde og Thora, hans Brud!
 <text id="winther2002072002b" variant="winther2002072002">
 <head>
   <title>Martin og Marie</title>
-  <toctitle>Martin og Marie</toctitle>
-  <indextitle>Martin og Marie</indextitle>
   <firstline>Min Søn! seer du ei Søen? den vælter Bølgen sort</firstline>
   <notes>
     <note type="credits">Bidrag fra Svend Andersen.</note>

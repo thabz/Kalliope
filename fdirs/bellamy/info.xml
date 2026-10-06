@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bellamy" country="un" lang="nl" type="poet">
+  <name>
+    <firstname>Jacobus</firstname>
+    <lastname>Bellamy</lastname>
+    <pseudonym>Zelandus</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1757-11-12</date>
+      <place>Vlissingen</place>
+    </born>
+    <dead>
+      <date>1786-03-11</date>
+      <place>Utrecht</place>
+    </dead>
+  </period>
+  <literary-periods>nl-verlichting</literary-periods>
+  <works>andre</works>
+  <identifiers>
+    <wikidata>Q716609</wikidata>
+    <viaf>5041279</viaf>
+    <gnd>100032427</gnd>
+  </identifiers>
+</person>

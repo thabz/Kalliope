@@ -8,7 +8,7 @@
     <note>Noter med en foranstillet asterisk er Thieles egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1848-p1.jpg">Titelbladet til <i>Vragstykker af et Digterskib</i> (1848). ,,Vragstykker / af / Et Digterskib. // Manuscript / af / J. M. Thiele. // Kiöbenhavn. / Trykt i Thieles Bogtrykkeri. / 1848.''</picture>
+    <picture type="titlepage" src="1848-p1.jpg"><transcription>Vragstykker / af / Et Digterskib. // Manuscript / af / J. M. Thiele. // Kiöbenhavn. / Trykt i Thieles Bogtrykkeri. / 1848.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122024005005763" facsimile="115408010203_color" facsimile-pages-num="250" facsimile-pages-offset="6">J. M. Thiele: <i>Vragstykker af et Digterskib</i>, Kbh., 1848.</source>
 </workhead>
@@ -1174,7 +1174,7 @@ Med tusind Hilsner saae jeg dem at bölge,
     <picture artwork="lund/sophienholm"/>
   </pictures>
   <source pages="40-41"/>
-  <keywords>staffeldt</keywords>
+  <keywords>staffeldt,ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2223,7 +2223,6 @@ Den hist og her sig gynger
             Da ned den Bladet tynger, —
         Og de maa skilles ad.
 
-
 Da gled den mod og stille
     Ned i den travle Aa
 Og blev en Bölge lille
@@ -2880,6 +2879,7 @@ Eller lul mig sagte ind i Graven, —
   <subtitle>1820</subtitle>
   <firstline>O dulm, min Smerte! Ti, mit Savn!</firstline>
   <source pages="105-107"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3407,7 +3407,7 @@ En Anadyomene Aphrodite!
 
 <text id="thiele2017121484">
 <head>
-  <title>Til den förste Svale.</title>
+  <title>Til den förste Svale</title>
   <subtitle>(Ved Efterretningen om en Broders Död i Ostindien.)</subtitle>
   <firstline>Saae Du, letbevingte lille Svale!</firstline>
   <source pages="127"/>

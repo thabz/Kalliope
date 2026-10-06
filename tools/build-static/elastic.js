@@ -148,6 +148,22 @@ const buildElasticsearchPoetEntries = (collected, poetIds = null) => {
     }));
 };
 
+const buildElasticsearchKeywordEntries = collected => {
+  return Array.from(collected.keywords?.values() ?? [])
+    .filter(keyword => keyword.isDraft !== true)
+    .map(keyword => ({
+      id: `keyword-${keyword.id}`,
+      data: {
+        result_type: 'keyword',
+        keyword: {
+          id: keyword.id,
+          title: keyword.title,
+          redirectURL: keyword.redirectURL,
+        },
+      },
+    }));
+};
+
 const buildElasticsearchTextEntryDocuments = (collected, entry) => {
   const { poet, poetId, workId, textEntryKey, work: workMeta } = entry;
   const workData = {
@@ -201,12 +217,17 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
     if (keywords) {
       keywordsArray = keywords.split(',');
     }
+    const keywordTitles = (keywordsArray ?? [])
+      .map(keywordId => collected.keywords?.get(keywordId)?.title)
+      .filter(title => title != null);
 
     const textData = {
       id: textId,
       title: replaceDashes(title),
       subtitles,
       keywords: keywordsArray,
+      keyword_ids: keywordsArray,
+      keyword_titles: keywordTitles,
       content_html: htmlToXml(
         (safeGetInnerXML(body) || '')
           .replace(/<note>.*?<\/note>/g, '')
@@ -370,21 +391,33 @@ const update_elasticsearch = async (collected, options = {}) => {
     await writeElasticsearchDocuments(index, documents);
   };
 
+  const indexElasticsearchKeywordEntries = async entries => {
+    await writeElasticsearchDocuments(index, entries);
+  };
+
   try {
     const textEntries = buildElasticsearchTextEntries(collected, poetIds);
     const poetEntries = buildElasticsearchPoetEntries(collected, poetIds);
+    const keywordEntries = buildElasticsearchKeywordEntries(collected);
     const indexExists = await elasticSearchClient.indexExists(index);
     const codeModified = isFileModified(...elasticsearchCodeSourceFiles);
+    const keywordSourceFiles = Array.from(collected.keywords?.values() ?? [])
+      .map(keyword => keyword.sourceFile)
+      .filter(sourceFile => sourceFile != null);
+    const keywordsModified =
+      keywordSourceFiles.length > 0 && isFileModified(...keywordSourceFiles);
     const needsFullRebuild =
       force_reload ||
       forceRebuild ||
       poetIds != null ||
       !indexExists ||
-      codeModified;
+      codeModified ||
+      keywordsModified;
 
     if (needsFullRebuild) {
       await elasticSearchClient.createIndex(index);
       await indexElasticsearchPoetEntries(poetEntries);
+      await indexElasticsearchKeywordEntries(keywordEntries);
       await indexElasticsearchTextEntries(textEntries);
       await elasticSearchClient.refreshIndex(index);
       return;
@@ -434,6 +467,7 @@ const update_elasticsearch = async (collected, options = {}) => {
 };
 
 export {
+  buildElasticsearchKeywordEntries,
   buildElasticsearchPoetEntries,
   buildElasticsearchTextEntries,
   buildElasticsearchTextEntryDocuments,
