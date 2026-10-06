@@ -232,6 +232,104 @@ describe('Check workfiles', () => {
     ).toHaveLength(1);
   });
 
+  it.each(['title', 'indextitle', 'linktitle'].flatMap(type =>
+    ['w', 'i'].map(tag => [type, tag]),
+  ))(
+    'rejects %s containing %s even with plain alternative titles',
+    (type, tag) => {
+      const issues = titleMetadataIssues(
+        `<text id="marked"><head><title>Titel</title><${type}>En <${tag}>titel</${tag}></${type}><indextitle>Indekstitel</indextitle><linktitle>Linktitel</linktitle></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toEqual([
+        expect.objectContaining({ textId: 'marked', description: expect.stringContaining(type) }),
+      ]);
+    },
+  );
+
+  it.each(['title', 'toctitle', 'indextitle', 'linktitle'])(
+    'rejects markup in %s on a text marked skip-index',
+    type => {
+      const issues = titleMetadataIssues(
+        `<text id="skipped" skip-index="true"><head><${type}><b>Titel</b></${type}></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it.each(['title', 'toctitle'])(
+    'allows plain text, num and footnotes in %s',
+    type => {
+      const issues = titleMetadataIssues(
+        `<text id="noted"><head><${type}><num>III.</num>Titel &amp; tekst<footnote>Note med <i>kursiv</i>.</footnote></${type}></head></text>`,
+      );
+
+      expect(issues).toEqual([]);
+    },
+  );
+
+  it('allows w and i, including nested formatting, in toctitle', () => {
+    const issues = titleMetadataIssues(
+      '<text id="formatted"><head><title>Titel</title><toctitle><num>III.</num>En <w>spatieret <i>titel</i></w><footnote>Note med <i>kursiv</i>.</footnote></toctitle></head></text>',
+    );
+
+    expect(issues).toEqual([]);
+  });
+
+  it('rejects disallowed markup nested inside permitted toctitle formatting', () => {
+    const issues = titleMetadataIssues(
+      '<text id="nested"><head><title>Titel</title><toctitle><i>En <b>titel</b></i></toctitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+  });
+
+  it.each(['indextitle', 'linktitle'])(
+    'allows plain num prefixes but rejects footnotes in %s',
+    type => {
+      const plainIssues = titleMetadataIssues(
+        `<text id="plain"><head><title>Titel</title><${type}><num>III.</num>Anden titel</${type}></head></text>`,
+      );
+      const notedIssues = titleMetadataIssues(
+        `<text id="noted"><head><title>Titel</title><${type}>Anden titel<footnote>Note.</footnote></${type}></head></text>`,
+      );
+
+      expect(plainIssues).toEqual([]);
+      expect(notedIssues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it.each(['<w/>', '<num><w>III.</w></num>Titel', '<note>Note</note>'])(
+    'rejects disallowed title markup: %s',
+    title => {
+      const issues = titleMetadataIssues(
+        `<text id="marked"><head><title>${title}</title><indextitle>Indekstitel</indextitle></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it('checks title markup in work and section headings', () => {
+    const issues = titleMetadataIssues(
+      '<kalliopework><workhead><title><w>Værk</w></title></workhead><workbody><section id="part"><head><title><i>Del</i></title></head></section></workbody></kalliopework>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toEqual([
+      expect.objectContaining({ textId: 'workhead' }),
+      expect.objectContaining({ textId: 'part' }),
+    ]);
+  });
+
+  it('reports title and toctitle markup independently', () => {
+    const issues = titleMetadataIssues(
+      '<text id="both"><head><title><w>Titel</w></title><toctitle><b>Indholdstitel</b></toctitle><indextitle>Indekstitel</indextitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(2);
+  });
+
   it.each(['Æbler', 'Én sang', '4 Sange'])(
     'allows an effective index title beginning with a Unicode letter or number: %s',
     indextitle => {

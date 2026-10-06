@@ -306,7 +306,7 @@ Attributter paa `<text>`:
 
 #### Tekst-id
 
-Nye tekst-id'er består af tekstens effektive digter-id, oprettelsesdatoen i
+Nye id'er på `<text>` og `<section>` består af det effektive digter-id, oprettelsesdatoen i
 formatet `YYYYMMDD` og et løbenummer på mindst to cifre:
 
 ```text
@@ -314,11 +314,12 @@ winther2018081001
 winther2018081002
 ```
 
-Det effektive digter-id er `text/@author`, når attributten findes, og ellers
-værkets `kalliopework/@author`. En tekst uden `author` i et værk med
+Det effektive digter-id findes i elementets eget `author`, derefter i den
+nærmeste omsluttende sektions `author` og ellers i værkets
+`kalliopework/@author`. En tekst uden arvet eller eget `author` i et værk med
 `author="antologierdk"` får derfor eksempelvis id'et
 `antologierdk2026081501`. Løbenumre må ikke genbruges, hvis en tekst slettes
-eller sammenlægges.
+eller sammenlægges. Tekster og sektioner deler id-navnerum og løbenumre.
 
 Næste ledige id kan genereres uden at ændre værkfilen:
 
@@ -327,9 +328,11 @@ npm run new-text-id -- fdirs/antologierdk/1872.xml
 npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
 ```
 
-CI sammenligner tekst-id'erne semantisk mellem base- og HEAD-committen. Kun
+CI sammenligner tekst- og section-id'erne semantisk mellem base- og HEAD-committen. Kun
 id'er, der ikke fandtes i base-committen, håndhæves efter dette format, så
 historiske id-formater fortsat kan bevares uændret.
+Korpustesten sammenligner arbejdsfilerne med den fælles base for `origin/master`
+og `HEAD`, så nye id'er også kontrolleres lokalt inden commit.
 
 ### Text head
 
@@ -409,6 +412,14 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
   <line>Anden linje<footnote>Kildens note.</footnote></line>
 </subtitle>
 ```
+
+`<title>` må kun indeholde tekst, `<footnote>` og et `<num>`-prefix uden
+indlejret markup. `<toctitle>` må desuden bruge `<w>` og `<i>`. Typografiske
+tags er ikke tilladt i `<title>` uden for fodnoter, og `<indextitle>` og
+`<linktitle>` må kun indeholde tekst og et `<num>`-prefix uden indlejret
+markup. Korpustesten kontrollerer hvert felt direkte, også når teksten har
+`<indextitle>` eller `skip-index="true"`. Reglerne gælder også værk- og
+sektionshoveder.
 
 ### Kildebaseret titelstruktur
 
@@ -841,7 +852,7 @@ fritager ikke den enkeltstående dobbelte afstand.
 Sektioner grupperer tekster og kan nestes:
 
 ```xml
-<section id="del-1" author="hansenfj" level="2">
+<section id="hansenfj2026081501" author="hansenfj" level="2">
   <head>
     <title>Foerste del</title>
   </head>
@@ -854,6 +865,7 @@ Sektioner grupperer tekster og kan nestes:
 Attributter paa `<section>`:
 
 - `id`: gor sektionen linkbar og giver den egen tekstside med intern TOC.
+  Nye id'er følger samme format og validering som tekst-id'er.
 - `author`: valgfrit forfatter-id, som arves af alle tekster og undersektioner.
   Et `author` direkte paa en indlejret `<section>` eller `<text>` overskriver den
   arvede forfatter i den paagaeldende gren.
