@@ -384,6 +384,25 @@ describe('kalliopework RELAX NG schema', () => {
     }).toThrow();
   });
 
+  it.each(['poetry', 'prose', 'quote'])('accepts a language on %s blocks with inline language overrides', blockName => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Tekster</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><title>Latin og dansk</title></head>
+            <body>
+              <${blockName} lang="la">Nota. Inter omnes bestias.<footnote><span lang="da">En dansk forklaring.</span></footnote></${blockName}>
+              <${blockName}>Dansk tekst med <span lang="la">Deo gratias.</span></${blockName}>
+            </body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
   it('rejects unsupported blocks directly in a text body', () => {
     const validXml = `
       <kalliopework id="1900" author="digter">
