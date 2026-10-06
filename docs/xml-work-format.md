@@ -410,6 +410,14 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 </subtitle>
 ```
 
+`<title>` må kun indeholde tekst, `<footnote>` og et `<num>`-prefix uden
+indlejret markup. `<toctitle>` må desuden bruge `<w>` og `<i>`. Typografiske
+tags er ikke tilladt i `<title>` uden for fodnoter, og `<indextitle>` og
+`<linktitle>` må kun indeholde tekst og et `<num>`-prefix uden indlejret
+markup. Korpustesten kontrollerer hvert felt direkte, også når teksten har
+`<indextitle>` eller `skip-index="true"`. Reglerne gælder også værk- og
+sektionshoveder.
+
 ### Kildebaseret titelstruktur
 
 Titelfelterne skal gengive kildens trykte overskrifter, ikke en redaktionelt
