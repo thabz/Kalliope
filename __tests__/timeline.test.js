@@ -6,6 +6,29 @@ import {
 } from '../tools/build-static/timeline.js';
 
 describe('timeline helpers', () => {
+  it('preserves publication events when life dates are undocumented', async () => {
+    const poet = {
+      id: 'test-undocumented-dates',
+      type: 'poet',
+      name: { lastname: 'Forfatter' },
+      period: null,
+    };
+    const works = new Map([
+      [`${poet.id}/1671`, { title: 'Første værk', year: '1671', published: '1671' }],
+      [`${poet.id}/1672`, { title: 'Andet værk', year: '1672', published: '1672' }],
+    ]);
+    const timeline = await buildPoetTimelineJson(poet, {
+      workids: new Map([[poet.id, ['1671', '1672']]]),
+      works,
+      timeline: [],
+    });
+
+    expect(timeline.map(item => item.content_html[0][0])).toEqual([
+      'Forfatter: Første værk.',
+      'Forfatter: Andet værk.',
+    ]);
+  });
+
   it('renders baptism as baptism when no birth date is known', async () => {
     const poet = {
       id: 'test-baptized',
