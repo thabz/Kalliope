@@ -1486,6 +1486,19 @@ common transcription problems.
 
 Follow the commands and procedures in `docs/facsimile-korrektur.md`.
 
+Before handing off a work with inline XML markup in poem or prose lines, run
+the corpus renderer-markup test. It sends every HTML-marked line in the work
+through the same XML fragment parser used by the text page, so an inline tag
+that crosses a source newline cannot make the page crash:
+
+```sh
+npm test -- --runInBand __tests__/corpus/renderable-work-markup.test.js
+```
+
+When adding this regression check for a work, include its XML file in the
+tracked-work fixture selection in that test. Keep one rendered line per parse
+and report the work path and line number for any parse error.
+
 As a current baseline, include the relevant forms of:
 
 ```shell
