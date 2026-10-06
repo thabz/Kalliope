@@ -4,14 +4,14 @@
   <title>Dydernis Prøvesteen</title>
   <year>1671</year>
   <notes>
-    <note>Trykt i Kiøbenhaffn af Hendrik og Jørgen Gøde 1671 og solgt hos Daniel Pauli på vor Frue Kirkegaard. Den digitaliserede bog er indbundet sammen med Pigernes Dyd- og Laster-Speyl. Mellemrum før trykte semikoloner er bevaret efter facsimilet.</note>
+    <note>Trykt i Kiøbenhaffn af Hendrik og Jørgen Gøde 1671 og solgt hos Daniel Pauli på vor Frue Kirkegaard. Mellemrum før trykte semikoloner er bevaret efter facsimilet.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1671a-p1.jpg">
       <transcription>Dydernis Prøvesteen. / Alle Ugudelige/ Letsindige/ Ubarmhiertig-Gierige/ / Penge-Elskere/ til en Advarsel for Øyen stilled. I beste Vel- / meening fra saadan Forfængelighed og Siel-Dødende La- / ster at af staa/ hvilcket af Hierted inderlig Ynsker. / Jeg Straffer Somme. // Siennést // Kiøbenhaffn/ Trygt hos Hendrik og Jørgen Gøde/ K.M. oc Univ. Bogt, Aar 1671. / Oc findis til kiøbs/ hos Daniel Pauli paa vor Frue Kirkegaard.</transcription>
     </picture>
   </pictures>
-  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99124915005005763" facsimile="130018999383-color" facsimile-pages-num="141">Dydernis Prøvesteen, i samlebindet digitaliseret af Det Kgl. Bibliotek som Pigernes Dyd- og Laste-Speyl.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99124915005005763" facsimile="130018999383-color" facsimile-pages-num="141">Jens Steen Sehested: <i>Dydernis Prøvesteen</i>, Hendrik og Jørgen Gøde, Kiøbenhaffn, 1671.</source>
   <errata status="none"/>
   <pagebreaks/>
   <proofreadings>
@@ -153,7 +153,7 @@ Til Ærens herlig Huus og Lykkens høye Døre!
 </body>
 </text>
 
-<text id="anonym1600dk2026100501" author="anonym1600dk">
+<text id="sehested2026100508">
 <head>
   <suptitle>Den skarp-sindig / oc Nemme-rige <i>Autors</i> Ædle <i>Esprit</i></suptitle>
   <title>Til Ære</title>
@@ -208,23 +208,22 @@ Tack for <i>Poëters</i> Krantz / som Dichte-Kunsten ærer
 </body>
 </text>
 
-<text id="pct2026100501" author="pct" ignore-tests="title-trailing-punctuation,internal-uppercase">
+<text id="sehested2026100509" ignore-tests="title-trailing-punctuation">
 <head>
   <suptitle>Til den Høy-Ædle og Skarpsindige Lyst og Kunst <i>Poët</i></suptitle>
   <title><i>Mons.</i> J. S. Sehested. <i>Lieuten.</i></title>
   <subtitle><line>min Ynst udkaarne Broderl. Ven.</line><line><i>Sonnet.</i></line></subtitle>
   <indextitle>Mons. J. S. Sehested. Lieuten.</indextitle>
-  <firstline>Høyværdigst KunstPoët du Norden Spraagis-fremmer</firstline>
+  <firstline>Høyværdigst Kunst Poët du Norden Spraagis-fremmer</firstline>
   <notes>
     <note>TODO: Forfatteren er kun angivet som P. C. T.; identiteten skal afklares.</note>
-    <note>Trykkets KunstPoët står uden mellemrum; den indre kapitæl P hører til skiftet til Antiqua (PDF-side 86). Formen er bevaret efter facsimilet.</note>
   </notes>
   <source facsimile-pages="86-87"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Høyværdigst Kunst<i>Poët</i> du Norden Spraagis-fremmer
+Høyværdigst Kunst <i>Poët</i> du Norden Spraagis-fremmer
     Du giør af Danske Vers som paa en Prøve-steen
     Ved dig faar Held og Gunst / de klinger klar og reen
 Hvo en gang læs din Skrifft hand samme aldrig glemmer
@@ -244,7 +243,7 @@ Du Danske <i>Cicero</i>: Tag denne Plict af mig.
 </body>
 </text>
 
-<text id="wallefont2026100501" author="wallefont" ignore-tests="space-before-semicolon,single-circumflex-a-in-text">
+<text id="sehested2026100510" ignore-tests="space-before-semicolon,single-circumflex-a-in-text">
 <head>
   <suptitle>Den Bloed / Moed / Dyd og Kunst-Ædle Mand</suptitle>
   <title>J. S. Sehestædt</title>
