@@ -7,6 +7,7 @@ import {
 } from './text-quality-filters.js';
 import {
   getChildByTagName,
+  getChildren,
   getElementsByTagName,
   parseXMLFragment,
   safeGetAttr,
@@ -288,6 +289,45 @@ const findTitleMetadataFindings = ({
   const document = parseXMLFragment(data);
   const work = document.documentElement;
   const workhead = getChildByTagName(work, 'workhead');
+
+  [workhead, ...getElementsByTagName(work, 'head')].forEach(head => {
+    if (head == null) {
+      return;
+    }
+    const owner = head.parentNode;
+    const textId = head.tagName === 'workhead'
+      ? 'workhead'
+      : safeGetAttr(owner, 'id') ?? owner.tagName;
+    getChildren(head).filter(child =>
+      ['title', 'toctitle', 'indextitle', 'linktitle'].includes(child.tagName),
+    ).forEach(element => {
+      const type = element.tagName;
+      const allowsFootnotes = ['title', 'toctitle'].includes(type);
+      const allowedFormatting = type === 'toctitle' ? ['w', 'i'] : [];
+      const hasDisallowedMarkup = node => getChildren(node).some(child => {
+        if (child.tagName === 'footnote') {
+          return allowsFootnotes === false;
+        }
+        if (child.tagName === 'num') {
+          return getChildren(child).length > 0;
+        }
+        return allowedFormatting.includes(child.tagName) === false ||
+          hasDisallowedMarkup(child) === true;
+      });
+      if (hasDisallowedMarkup(element) === true) {
+        issues.push(
+          titleIssue({
+            file,
+            context,
+            textId,
+            candidate: { element, type },
+            rule: 'title-markup',
+            description: `${type} contains disallowed markup; only plain num prefixes${allowsFootnotes === true ? ', footnotes' : ''}${type === 'toctitle' ? ', w and i' : ''} are permitted.`,
+          }),
+        );
+      }
+    });
+  });
 
   const checkTrailingPunctuation = ({ head, owner, textId }) => {
     if (

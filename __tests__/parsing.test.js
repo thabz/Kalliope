@@ -48,15 +48,15 @@ describe('titeludtrækning', () => {
 
   it('bevarer titlens fodnote til digtvisningen, men kan strippe den', () => {
     const doc = new DOMParser().parseFromString(
-      '<head><title><w>Gravsang</w><footnote>Kildens note.</footnote></title></head>',
+      '<head><title>Gravsang<footnote>Kildens note.</footnote></title></head>',
       'text/xml'
     );
     const title = extractTitle(doc.documentElement, 'title');
 
     expect(title.title).toBe(
-      '<w>Gravsang</w><footnote>Kildens note.</footnote>'
+      'Gravsang<footnote>Kildens note.</footnote>'
     );
-    expect(stripTitleNotes(title).title).toBe('<w>Gravsang</w>');
+    expect(stripTitleNotes(title).title).toBe('Gravsang');
     expect(titleText(title)).toBe('Gravsang');
   });
 
