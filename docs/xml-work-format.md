@@ -718,6 +718,11 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 Blokattributter:
 
 - `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
+- `lang="la"` på `<poetry>`, `<prose>` eller `<quote>`: sprog for hele blokken,
+  angivet med en ISO 639-1-kode. Markér kun hele blokken, når brødteksten har
+  samme sprog. I blandede blokke bruges `<span lang="...">` på de fremmedsprogede
+  tekststykker. En note på et andet sprog end blokken kan tilsvarende have
+  en `<span lang="...">` omkring sin tekst.
 
 `<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
 Brug kun `max-width`, når et langt citat skal begrænses yderligere.
@@ -818,8 +823,11 @@ Særlige linjeformer:
 
 - En blank linje bevares.
 - En linje med kun tal eller romertal bliver `<versenum>`.
-- En linje med `---` eller `----` bliver til en vandret streg under rendering.
-- En linje med `====` bliver til en dobbelt vandret streg under rendering.
+- En linje med `---` bliver automatisk en centreret streg (`<hr width="3"/>`).
+  Skriv den som en selvstændig linje uden tags; formen
+  `<nonum><center>---</center></nonum>` er ulovlig og afvises af korpustesten.
+- En linje med `----` bliver `<hr width="4"/>`.
+- En linje med `====` bliver `<hr width="4" class="double"/>`.
 - Skriv ikke `<hr/>` direkte i værkfilen; brug en skillelinje på sin egen linje.
 - Indledende mellemrum bliver til non-breaking spaces.
 - Linjer med kun `***`, `___` eller lignende pakkes i `<nonum>`.

@@ -74,6 +74,7 @@ describe('tracked work corpus', () => {
   let redundantTextTitleMetadataIssues;
   let errataIssues;
   let unindexedAnthologyTexts;
+  let wrappedSeparatorIssues;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
@@ -105,8 +106,19 @@ describe('tracked work corpus', () => {
     redundantTextTitleMetadataIssues = [];
     errataIssues = [];
     unindexedAnthologyTexts = [];
+    wrappedSeparatorIssues = [];
 
     works.forEach(({ content: xml, filename }) => {
+      if (xml.includes('<nonum><center>---</center></nonum>')) {
+        xml.split('\n').forEach((line, index) => {
+          if (line.includes('<nonum><center>---</center></nonum>')) {
+            wrappedSeparatorIssues.push(
+              `${filename}:${index + 1}: Ulovligt <nonum><center>---</center></nonum>; brug --- på en selvstændig linje.`
+            );
+          }
+        });
+      }
+
       const anthologyDirectory = filename.match(/^fdirs\/(antologier[^/]+)\//);
       if (anthologyDirectory != null) {
         const anthologyId = anthologyDirectory[1];
@@ -269,6 +281,10 @@ describe('tracked work corpus', () => {
 
   it('keeps every work canonically formatted', () => {
     expect(formattingIssues).toEqual([]);
+  });
+
+  it('forbids <nonum><center>---</center></nonum>; use --- on its own line', () => {
+    expect(wrappedSeparatorIssues).toEqual([]);
   });
 
   it('keeps poetry free of leading and trailing blank lines', () => {
