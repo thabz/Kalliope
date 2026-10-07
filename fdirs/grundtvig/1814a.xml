@@ -215,7 +215,8 @@ Herrens Lignelse og Syner skue;
 </body>
 </text>
 
-<text id="grundtvig2026100703">
+<!-- Trykkets »Nei nei« på side 220 er en bevidst gentagelse. -->
+<text id="grundtvig2026100703" ignore-tests="repeated-adjacent-word">
 <head>
   <firstline>Hil dig Roskild! ja hilsæl</firstline>
   <source facsimile-pages="21-302" pages="1-282"/>
