@@ -3,7 +3,7 @@
 COMPOSE ?= docker compose
 POETS ?=
 
-.PHONY: help test elasticsearch build-static build-static-force-reload build-sqlite sqlite \
+.PHONY: help test elasticsearch build-static build-static-force-reload profile-build-static build-sqlite sqlite \
 	build-facsimiles extract-facsimiles reextract-facsimiles \
 	sync-facsimiles sync-wikidata app status
 
@@ -13,6 +13,7 @@ help:
 		'make elasticsearch              Start Elasticsearch' \
 		'make build-static              Byg statiske data' \
 		'make build-static-force-reload Byg statiske data uden cachede build-data' \
+		'make profile-build-static      Profilér fuldt static-build; gem profil og log i caches/profiles' \
 		'make build-sqlite              Byg valgfrit lokalt SQLite-indeks' \
 		'make sqlite                    Åbn SQLite-databasen i en SQL-session' \
 		'make build-facsimiles          Udtræk facsimiler og byg thumbnails' \
@@ -36,6 +37,18 @@ build-static: elasticsearch
 build-static-force-reload: elasticsearch
 	$(COMPOSE) --profile build build static-builder
 	$(COMPOSE) --profile build run --rm --no-deps static-builder npm run build-static-force-reload
+
+profile-build-static: SHELL := /bin/bash
+profile-build-static: elasticsearch
+	@set -euo pipefail; \
+	mkdir -p caches/profiles; \
+	profileDirectory=$$(mktemp -d caches/profiles/run-XXXXXX); \
+	echo "Profil og buildlog: $$profileDirectory"; \
+	/usr/bin/time -p $(COMPOSE) --profile build build static-builder \
+		2>&1 | tee "$$profileDirectory/image-build.log"; \
+	$(COMPOSE) --profile build run --rm --no-deps static-builder \
+		node --cpu-prof --cpu-prof-dir="/app/$$profileDirectory" \
+		tools/build-static.js --force-reload 2>&1 | tee "$$profileDirectory/build.log"
 
 build-sqlite:
 	$(COMPOSE) --profile build build static-builder

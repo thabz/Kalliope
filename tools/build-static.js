@@ -128,6 +128,7 @@ import {
 } from './build-static/timeline.js';
 import {
   ANTHOLOGY_WORK_ID,
+  buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
@@ -140,7 +141,10 @@ import {
   sourceFilesForText,
 } from './build-static/work-cache.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
-import { buildCorpusDataset } from './build-static/corpus-dataset.js';
+import {
+  buildCorpusDataset,
+  buildTextRecord,
+} from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
@@ -164,6 +168,7 @@ let collected = {
   timeline: new Array(),
   person_or_keyword_reference: new Map(),
   unlistedWorkFiles: [],
+  corpusTextRecords: new Map(),
 };
 
 // Ready after second pass
@@ -651,6 +656,15 @@ const handle_text = async (
     },
   };
   writeJSON(Paths.textPath(textId), text_data);
+  // Retain only the compact export record, so the dataset need not reread the
+  // complete JSON document. Unchanged texts still use the on-disk API file.
+  const textMeta = collected.texts.get(textId);
+  if (textMeta.indexable !== false) {
+    collected.corpusTextRecords.set(
+      textId,
+      buildTextRecord(collected, textMeta, text_data),
+    );
+  }
   textBuildProgress?.increment();
 };
 
@@ -1572,6 +1586,7 @@ const main = async () => {
   collected.texts = texts;
   collected.textsByPoet = textsByPoet;
   collected.dates = dates;
+  await b('buildCollectionIndexes', buildCollectionIndexes, collected);
   collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
     'build_person_or_keyword_refs',
@@ -1623,6 +1638,7 @@ const main = async () => {
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
   await b('build_corpus_dataset', buildCorpusDataset, collected);
+  collected.corpusTextRecords.clear();
   if (buildSqlite) {
     await b('update_sqlite_index', updateSqliteIndex, collected);
   }
