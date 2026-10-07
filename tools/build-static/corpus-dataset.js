@@ -290,37 +290,45 @@ const buildTextAuditFields = (textMeta, textData, source) => ({
   source_pages: source.pages,
 });
 
+const buildTextRecord = (collected, textMeta, textData) => {
+  const textPath = Paths.textPath(textMeta.id);
+  const workId = `${textMeta.poetId}/${textMeta.workId}`;
+  const work = collected.works.get(workId);
+  const poet = collected.poets.get(textMeta.poetId);
+  const source = textData.text?.source ?? {};
+  return compactObject({
+    id: textMeta.id,
+    title: textMeta.title,
+    lang: textData.text?.content_lang ?? poet.lang,
+    type: textMeta.type,
+    poet_id: textMeta.poetId,
+    work_id: workId,
+    poet_name: poetName(poet),
+    work_title: work.title,
+    canonical_url: `${SITE_URL}/da/text/${textMeta.id}`,
+    api_url: `${SITE_URL}/${textPath.replace(/^public\//, '')}`,
+    full_text: normalizedFullText(textData.text ?? {}),
+    keywords: textData.text?.keywords ?? [],
+    source,
+    ...buildTextAuditFields(textMeta, textData, source),
+    canonical_text_id: textMeta.canonicalTextId ?? textMeta.id,
+    source_poet_id: textMeta.sourcePoetId,
+    source_work_id: textMeta.sourceWorkId,
+    source_text_id: textMeta.sourceTextId,
+    placement: textMeta.placement ?? 'canonical',
+  });
+};
+
 const buildTextRecords = (collected) => sortById(
   Array.from(collected.texts.values())
     .filter(text => text.indexable !== false)
     .map(textMeta => {
-      const textPath = Paths.textPath(textMeta.id);
-      const textData = JSON.parse(fs.readFileSync(textPath, 'utf8'));
-      const workId = `${textMeta.poetId}/${textMeta.workId}`;
-      const work = collected.works.get(workId);
-      const poet = collected.poets.get(textMeta.poetId);
-      const source = textData.text?.source ?? {};
-      return compactObject({
-        id: textMeta.id,
-        title: textMeta.title,
-        lang: textData.text?.content_lang ?? poet.lang,
-        type: textMeta.type,
-        poet_id: textMeta.poetId,
-        work_id: workId,
-        poet_name: poetName(poet),
-        work_title: work.title,
-        canonical_url: `${SITE_URL}/da/text/${textMeta.id}`,
-        api_url: `${SITE_URL}/${textPath.replace(/^public\//, '')}`,
-        full_text: normalizedFullText(textData.text ?? {}),
-        keywords: textData.text?.keywords ?? [],
-        source,
-        ...buildTextAuditFields(textMeta, textData, source),
-        canonical_text_id: textMeta.canonicalTextId ?? textMeta.id,
-        source_poet_id: textMeta.sourcePoetId,
-        source_work_id: textMeta.sourceWorkId,
-        source_text_id: textMeta.sourceTextId,
-        placement: textMeta.placement ?? 'canonical',
-      });
+      const renderedRecord = collected.corpusTextRecords?.get(textMeta.id);
+      if (renderedRecord != null) {
+        return renderedRecord;
+      }
+      const textData = JSON.parse(fs.readFileSync(Paths.textPath(textMeta.id), 'utf8'));
+      return buildTextRecord(collected, textMeta, textData);
     })
 );
 
@@ -416,6 +424,7 @@ export {
   buildCorpusDataset,
   buildPoetRecords,
   buildTextAuditFields,
+  buildTextRecord,
   buildTextRecords,
   buildWorkRecords,
   deterministicGzip,

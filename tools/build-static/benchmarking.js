@@ -1,9 +1,11 @@
-let b_keys = [];
-let b_millis = {};
-let b_memory = {};
+import { performance } from 'node:perf_hooks';
+
+const benchmarkKeys = [];
+const benchmarkMillis = {};
+const benchmarkMemory = {};
 
 const memoryLogEnabled = ['1', 'true', 'yes'].includes(
-  (process.env.KALLIOPE_BUILD_STATIC_MEMORY_LOG || '').toLowerCase()
+  (process.env.KALLIOPE_BUILD_STATIC_MEMORY_LOG ?? '').toLowerCase()
 );
 
 const megabytes = bytes => Math.round(bytes / 1024 / 1024);
@@ -19,7 +21,7 @@ const memorySnapshot = () => {
 };
 
 const collectGarbage = () => {
-  if (global.gc) {
+  if (typeof global.gc === 'function') {
     global.gc();
   }
 };
@@ -29,23 +31,28 @@ const formatMemory = memory =>
 
 // Benchmarking
 const b = async (name, f, args) => {
-  if (!memoryLogEnabled) {
-    console.log(`${name}...`);
-    return await f(args);
+  if (memoryLogEnabled === true) {
+    collectGarbage();
   }
-
-  collectGarbage();
-  const beforeMemory = memorySnapshot();
-  console.log(`${name}... ${formatMemory(beforeMemory)}`);
-  const beforeMillis = Date.now();
+  const beforeMemory = memoryLogEnabled === true ? memorySnapshot() : null;
+  console.log(beforeMemory == null
+    ? `${name}...`
+    : `${name}... ${formatMemory(beforeMemory)}`);
+  const beforeMillis = performance.now();
   const result = await f(args);
-  const afterMillis = Date.now();
+  const elapsedMillis = performance.now() - beforeMillis;
+  if (benchmarkMillis[name] == null) {
+    benchmarkKeys.push(name);
+    benchmarkMillis[name] = 0;
+  }
+  benchmarkMillis[name] += elapsedMillis;
+  if (memoryLogEnabled === false) {
+    return result;
+  }
   collectGarbage();
   const afterMemory = memorySnapshot();
-  if (b_millis[name] == null) {
-    b_keys.push(name);
-    b_millis[name] = 0;
-    b_memory[name] = {
+  if (benchmarkMemory[name] == null) {
+    benchmarkMemory[name] = {
       beforeHeapUsed: beforeMemory.heapUsed,
       afterHeapUsed: afterMemory.heapUsed,
       beforeExternal: beforeMemory.external,
@@ -60,28 +67,27 @@ const b = async (name, f, args) => {
       maxRss: afterMemory.rss,
     };
   }
-  b_millis[name] = b_millis[name] + afterMillis - beforeMillis;
-  b_memory[name].afterHeapUsed = afterMemory.heapUsed;
-  b_memory[name].afterExternal = afterMemory.external;
-  b_memory[name].afterArrayBuffers = afterMemory.arrayBuffers;
-  b_memory[name].afterRss = afterMemory.rss;
-  b_memory[name].maxHeapUsed = Math.max(
-    b_memory[name].maxHeapUsed,
+  benchmarkMemory[name].afterHeapUsed = afterMemory.heapUsed;
+  benchmarkMemory[name].afterExternal = afterMemory.external;
+  benchmarkMemory[name].afterArrayBuffers = afterMemory.arrayBuffers;
+  benchmarkMemory[name].afterRss = afterMemory.rss;
+  benchmarkMemory[name].maxHeapUsed = Math.max(
+    benchmarkMemory[name].maxHeapUsed,
     beforeMemory.heapUsed,
     afterMemory.heapUsed
   );
-  b_memory[name].maxExternal = Math.max(
-    b_memory[name].maxExternal,
+  benchmarkMemory[name].maxExternal = Math.max(
+    benchmarkMemory[name].maxExternal,
     beforeMemory.external,
     afterMemory.external
   );
-  b_memory[name].maxArrayBuffers = Math.max(
-    b_memory[name].maxArrayBuffers,
+  benchmarkMemory[name].maxArrayBuffers = Math.max(
+    benchmarkMemory[name].maxArrayBuffers,
     beforeMemory.arrayBuffers,
     afterMemory.arrayBuffers
   );
-  b_memory[name].maxRss = Math.max(
-    b_memory[name].maxRss,
+  benchmarkMemory[name].maxRss = Math.max(
+    benchmarkMemory[name].maxRss,
     beforeMemory.rss,
     afterMemory.rss
   );
@@ -89,18 +95,18 @@ const b = async (name, f, args) => {
 };
 
 const print_benchmarking_results = () => {
-  if (!memoryLogEnabled) {
-    return;
-  }
-
   let sum = 0;
   console.log('\nSTATS');
-  b_keys.forEach(key => {
-    const millis = b_millis[key];
-    const memory = b_memory[key];
+  benchmarkKeys.forEach(key => {
+    const millis = benchmarkMillis[key];
+    const memory = benchmarkMemory[key];
     sum += millis;
+    if (memory == null) {
+      console.log(`${key}: ${Math.round(millis)}ms`);
+      return;
+    }
     console.log(
-      `${key}: ${millis}ms, ` +
+      `${key}: ${Math.round(millis)}ms, ` +
         `${memory.beforeHeapUsed}->${memory.afterHeapUsed}MB heap, ` +
         `${memory.beforeExternal}->${memory.afterExternal}MB ext, ` +
         `${memory.beforeArrayBuffers}->${memory.afterArrayBuffers}MB buffers, ` +
@@ -109,7 +115,8 @@ const print_benchmarking_results = () => {
         `${memory.maxArrayBuffers}MB buffers / ${memory.maxRss}MB rss`
     );
   });
-  console.log(`SUM: ${sum}ms`);
+  console.log(`SUM: ${Math.round(sum)}ms`);
+  console.log(`TOTAL (process): ${Math.round(process.uptime() * 1000)}ms`);
 };
 
 export {
