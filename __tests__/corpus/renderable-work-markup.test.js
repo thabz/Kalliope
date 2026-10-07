@@ -15,7 +15,10 @@ describe('renderable work corpus markup', () => {
     const issues = [];
 
     for (const { content, filename } of loadTrackedWorkFiles().filter(
-      (work) => work.filename === 'fdirs/blicherclausen/1900.xml'
+      (work) => [
+        'fdirs/blicherclausen/1900.xml',
+        'fdirs/blicherclausen/1903.xml',
+      ].includes(work.filename)
     )) {
       const document = parseWorkXml(content);
       const blocks = getElementsByTagNames(document, ['poetry', 'prose', 'quote']);
