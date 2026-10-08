@@ -86,4 +86,15 @@ describe('beregnede digtermetadata', () => {
       Array.from(collected.poets)
     );
   });
+
+  it('viderefører nationality til digterens JSON-API', () => {
+    const runeberg = { id: 'runeberg', country: 'un', nationality: 'fi' };
+    build_poets_json({
+      poets: new Map([['runeberg', runeberg]]),
+      works: new Map(),
+      person_or_keyword_refs: new Map(),
+    });
+    expect(writeJSON).toHaveBeenCalledWith('public/api/runeberg.json',
+      expect.objectContaining({ country: 'un', nationality: 'fi' }));
+  });
 });
