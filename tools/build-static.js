@@ -337,7 +337,10 @@ const handle_text = async (
   const textDates = extractDates(head);
   validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
-  const title = extractTitle(head, 'title') ?? firstline; // {title: xxx, prefix: xxx}
+  const title =
+    extractTitle(head, 'title') ??
+    firstline ??
+    extractTitle(head, 'linktitle');
   const effectiveTitles = effectiveTextTitles({
     firstline,
     title,
@@ -714,11 +717,14 @@ const handle_work = async (work) => {
             anthologyText ? publicationTextId(textId) : textId;
           const head = getChildByTagName(part, 'head');
           const firstline = extractTitle(head, 'firstline');
-          const title = extractTitle(head, 'title') || firstline;
+          const title =
+            extractTitle(head, 'title') ??
+            firstline ??
+            extractTitle(head, 'linktitle');
           const indextitle = extractTitle(head, 'indextitle') || title;
           const toctitle = extractTitle(head, 'toctitle') || title;
           if (indextitle == null) {
-            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler førstelinje, indextitle, title og linktitle i ${poetId}/${workId}.xml`;
           }
           validateFirstlineMarkup(
             firstline,
@@ -732,7 +738,7 @@ const handle_work = async (work) => {
             throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
           }
           if (toctitle == null) {
-            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
           }
           if (firstline != null) {
             // Kun digte skal indekseres

@@ -130,6 +130,27 @@ describe('antologiplaceringer', () => {
     expect(toc[0].title[0][0]).toBe('Indledning');
   });
 
+  it('medtager en utitlet rolleliste med kun linktitle', () => {
+    const doc = new DOMParser().parseFromString(
+      `<kalliopework author="blicher"><workbody>
+        <text id="rolelist" skip-index="true">
+          <head><linktitle>Personer</linktitle></head>
+          <body><prose>Sigurd Lejrekonge.</prose></body>
+        </text>
+      </workbody></kalliopework>`,
+      'text/xml'
+    );
+
+    const toc = build_section_toc(
+      getChildByTagName(doc.documentElement, 'workbody'),
+      'blicher'
+    );
+
+    expect(toc).toHaveLength(1);
+    expect(toc[0].id).toBe('rolelist');
+    expect(toc[0].title[0][0]).toBe('Personer');
+  });
+
   it('genkender en anden tekstforfatter og danner udgivelses-id', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);
