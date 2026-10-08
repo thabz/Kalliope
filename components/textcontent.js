@@ -454,7 +454,10 @@ const TextContent = (props) => {
       }
     }
 
-    if (lineOptions.html) {
+    if (
+      lineOptions.html === true ||
+      /&(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);/iu.test(l[0]) === true
+    ) {
       rendered = renderXmlString(l[0], lang);
     } else {
       rendered = replaceHyphens(l[0]);

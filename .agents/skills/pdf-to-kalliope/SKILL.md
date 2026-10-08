@@ -15,9 +15,9 @@ complete, source-backed and validated Kalliope edition.
 
 The input is always a PDF representing a complete physical publication.
 
-The output is always a complete Kalliope work XML. Do not deliver isolated poems
-or a partial transcription unless the source itself is incomplete and that
-limitation is explicitly documented.
+The normal output is a complete Kalliope work XML. If facsimile pages are
+missing, stop the import immediately and deliver a blocked-import PR as
+specified below. Documenting the gap does not permit continued transcription.
 
 The normal deliverables are:
 
@@ -74,6 +74,14 @@ Do not renumber them according to their physical order in the PDF.
 The PDF's page images are the source of truth. OCR, existing transcriptions,
 metadata, dictionaries, metre and expected stanza forms are aids only.
 
+Create the new occurrence from the current facsimile and its fresh OCR. Do not
+seed or initialize its body by copying another edition or variant. An existing
+transcription may be consulted only after the source-based draft exists, for
+comparison and relation detection. Never transfer its wording, punctuation,
+line or stanza boundaries, leading whitespace, headings, notes, page breaks or
+typography into the new occurrence without independently verifying each item
+against the current facsimile.
+
 Preserve:
 
 - the source's wording
@@ -95,12 +103,51 @@ Do not silently:
 - modernize spelling or punctuation
 - improve awkward wording
 - regularize an unusual form
-- reconstruct an uncertain reading without marking it
 - merge distinct editions or versions
 - omit prose because the work is primarily poetry
 - trust OCR merely because it looks plausible
 
 An unusual printed form is not an error merely because it looks strange.
+
+**Never reconstruct text.** Do not supply missing or unreadable text from
+another edition, an existing transcription, memory, inference, metre or model
+generation. Marking a reconstruction in a note does not make it permissible.
+Record uncertainty without inventing a reading.
+
+### Missing facsimile pages: stop the import and deliver a PR
+
+As soon as a missing facsimile page or spread is discovered, stop all further
+OCR, transcription and proofreading for the import. This applies at every
+stage, including the initial inventory and final review. Do not continue with
+the remaining pages, fill the gap from another edition or declare the work
+complete. Resume only after the source gap has been resolved.
+
+Preserve the work already done as incomplete and document:
+
+- the source PDF or facsimile and its identifier or URL
+- the missing printed pages or spread, with adjacent PDF page numbers and
+  facsimile filenames where known
+- the evidence for the gap and the affected texts
+- the pages processed before stopping and the checks actually completed
+- what source material is needed to resume
+
+Still create a **draft PR** in Danish, clearly labelled as a stopped import
+with missing facsimile pages. The PR is required for tracking the agent's
+work; a chat status message is not a substitute. Use an existing import PR
+when there is one. Keep unfinished checklist items unchecked and do not claim
+READY, complete proofreading or a complete import.
+
+If no usable XML change exists yet, add a concise Markdown report under
+`docs/import-status/<poet-id>-<work-id>.md` so the PR has a reviewable change.
+Do not fabricate XML or commit scratch OCR files just to create a PR.
+
+This blocked handoff replaces the normal completion requirements in sections
+19–24 and the definition of done below. Run the full repository test suite
+before creating the PR, report its actual result, and retain the repository's
+commit/push approval rules. Where approval is still needed, present the
+prepared incomplete change and report for approval, then create the PR after
+approval. Do not continue importing while waiting. Do not publish incomplete
+facsimile assets merely to satisfy the normal completion workflow.
 
 ## 1. Establish the repository context
 
@@ -136,6 +183,9 @@ Do not invent a new person or work ID before searching the corpus.
 
 Inspect the entire publication before transcription.
 
+Check for missing pages and spreads. If any are discovered, immediately use
+the blocked-import handoff above instead of continuing the inventory or import.
+
 Create a temporary page inventory covering every PDF page. Record at least:
 
 - PDF page number
@@ -165,6 +215,7 @@ Useful page classifications include:
 - poem
 - prose
 - notes
+- correction sheet (`errata` in the review inventory)
 - afterword
 - advertisement
 - blank page
@@ -172,6 +223,15 @@ Useful page classifications include:
 
 No relevant page may disappear unnoticed between PDF analysis, OCR,
 transcription and XML generation.
+
+Inspect every page for a printed correction sheet. Record each sheet as a
+separate `page_type: "errata"` row in the reviewed inventory, including its
+facsimile filename, even though the sheet is never a standalone Kalliope text.
+Apply every relevant correction to the affected text and attach a
+`<footnote type="errata">corrected] printed</footnote>` at the correction.
+Register the sheet in `<workhead>` as documented in `docs/xml-work-format.md`.
+If no sheet exists, register `<errata status="none"/>`. A discovered sheet that
+has not been applied blocks completion and the review checkpoint.
 
 The page inventory is working material and should normally not be committed.
 
@@ -251,12 +311,15 @@ The XML normally references the basename:
 
 ```xml
 <picture type="titlepage" src="<work-id>-p1.jpg">
-  ...
+  <transcription>Den trykte ordlyd / linje for linje.</transcription>
 </picture>
 ```
 
 Use current repository conventions for `primary`, captions and other
 attributes.
+Transcribe the complete readable title-page text in `<transcription>` using
+`/` and `//` as described in `docs/xml-work-format.md`. The picture caption
+is optional and must not repeat the transcription.
 
 ### Graphic front cover: optional `p2`
 
@@ -479,13 +542,13 @@ compare every row with the facsimile, correct its anchors and facsimile mapping,
 then set `status` to `reviewed`. A page that starts a new `<text>` remains an
 explicit `text-start` exception and must not acquire a synthetic `<pb>`.
 
-These files and commands are process-neutral. They do not depend on a specific agent runtime,
-CMUX or a particular agent. The producer can use them during the first pass,
+These files and commands are process-neutral. They do not depend on a specific
+agent runtime or a particular agent. The producer can use them during the first pass,
 but the completion checkpoint requires every page to be assigned to a reviewer
 whose stable ID differs from the producer ID. Coordination messages are
-outside the data contract. When the surrounding workflow provides a
-coordination channel such as CMUX, report blockers, decisions and review
-milestones there, but do not make any audit command depend on that channel.
+outside the data contract. When the session provides agent tools for
+coordination, use them to report blockers, decisions and review milestones to
+the coordinator, but do not make any audit command depend on those tools.
 
 During distributed review, designate exactly one XML editor. All other
 reviewers work read-only and add findings to the shared contract through the
@@ -748,7 +811,7 @@ and physical line wrapping.
 After the final XML has been assembled, run the targeted page-break test:
 
 ```shell
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 ```
 
 This test reads the serialized XML and rejects a `<pb>` that ends an XML line.
@@ -787,6 +850,15 @@ Pay particular attention to:
 - running headers and page numbers
 - ornamental separators
 - dropped or duplicated OCR lines
+
+Transcribe an ornamental separator only when it separates content inside a
+poem. Never transcribe an ornament printed after the poem's final verse; in
+particular, do not add `---` or other ornament markup immediately before
+`</poetry>`.
+
+Always encode a printed row of separated asterisks as the centered non-verse
+line `<nonum><center>* * *</center></nonum>`, with a blank line on both sides.
+Never preserve OCR-dependent spacing between the asterisks.
 
 ### Use stanza structure as a diagnostic
 
@@ -1199,7 +1271,8 @@ Use the note placement and syntax supported by current Kalliope XML.
 
 Continue processing the rest of the publication after recording a local
 uncertainty. Do not stop the entire import for an isolated doubt that can be
-reviewed manually later.
+reviewed manually later. Missing facsimile pages are not a local uncertainty;
+apply the immediate stop and blocked-import PR procedure above.
 
 Do not use `TODO:` as a substitute for ordinary research or proofreading.
 
@@ -1317,6 +1390,12 @@ Compare each imported text with the existing corpus using, as appropriate:
 Use normalization only for searching and comparison. Do not normalize the
 published transcription.
 
+Perform this comparison against the source-based draft; do not create that
+draft by copying the matched occurrence. When a match is found, treat every
+shared structural feature—including indentation—as a candidate requiring
+independent confirmation in the current facsimile, not as evidence that the
+feature belongs to both occurrences.
+
 Determine whether the new occurrence is:
 
 - a distinct text
@@ -1407,6 +1486,19 @@ common transcription problems.
 
 Follow the commands and procedures in `docs/facsimile-korrektur.md`.
 
+Before handing off a work with inline XML markup in poem or prose lines, run
+the corpus renderer-markup test. It sends every HTML-marked line in the work
+through the same XML fragment parser used by the text page, so an inline tag
+that crosses a source newline cannot make the page crash:
+
+```sh
+npm test -- --runInBand __tests__/corpus/renderable-work-markup.test.js
+```
+
+When adding this regression check for a work, include its XML file in the
+tracked-work fixture selection in that test. Keep one rendered line per parse
+and report the work path and line number for any parse error.
+
 As a current baseline, include the relevant forms of:
 
 ```shell
@@ -1416,7 +1508,7 @@ node .agents/skills/pdf-to-kalliope/scripts/audit-pagebreaks.js WORK.xml INVENTO
 node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js WORK.xml TSV_DIRECTORY
 node .agents/skills/pdf-to-kalliope/scripts/findings-register.js validate FINDINGS.jsonl
 xmllint --noout path/to/work.xml
-npm test -- --runInBand __tests__/pagebreaks.test.js
+npm test -- --runInBand --runTestsByPath __tests__/corpus/pagebreaks.test.js
 git diff --check
 npm test -- --runInBand
 ```
@@ -1476,11 +1568,32 @@ Follow `AGENTS.md`.
 
 READY requires complete independent inventory coverage, no `open` or `fixed`
 findings, completed visual structure records for every poetry block, a
-disposition for every candidate in the unfiltered whole-work report, all four
-candidate-review categories and recorded passing tests. Put
+disposition for every candidate in the unfiltered whole-work report, all five
+candidate-review categories and recorded passing tests. The typography review
+must inspect every relevant facsimile page for italics, letterspacing and other
+source emphasis, and compare each occurrence with `<i>`, `<w>` or the other
+appropriate XML markup. A zero-candidate typography review is valid only after
+that page-by-page visual pass; plain OCR is not evidence that no emphasis is
+present. Every page-inventory row must therefore have
+`"typography_status":"reviewed"` and a non-empty `typography_disposition`
+that records the observed and encoded emphasis, or explicitly records that the
+page contains none. Put
 a small JSON file in scratch space with `producer`, `tests`,
-`candidate_reviews` and `reviewer_ranges`, then create the frozen checkpoint
+`candidate_reviews`, `visual_structure_reviews` and `reviewer_ranges`, then create the frozen checkpoint
 outside the worktree.
+The category counts are summaries, not proof that individual candidates were
+reviewed. Run `analyze-whole-work.js` on the final XML with the TSV directory and
+save its complete JSON output. For every `poems[*].candidates[*].candidate_id`
+in that report, add exactly one finding with the same `candidate_id`, a final
+status, a concrete disposition and direct facsimile evidence. Record a rejected
+false positive too; do not omit it. After any XML change, rerun the analysis and
+reconcile the new candidate IDs. The checkpoint checks the report against the
+current XML and refuses missing OCR geometry or unaccounted candidates.
+Add one `visual_structure_reviews` record per poetry block, including the text
+ID, one-based block index, stanza lengths read from the facsimile, all facsimile
+pages inspected, the independent reviewer and a specific disposition. The
+checkpoint compares the visually confirmed lengths with the final XML even
+when the analyzers emitted no candidates.
 Each range has a stable `reviewer`, `facsimile_from` and `facsimile_to`; ranges
 must not overlap, must cover the complete inventory and must agree with each
 inventory row's reviewer. For example:
@@ -1493,7 +1606,11 @@ inventory row's reviewer. For example:
     {"kind": "ocr", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 12, "reviewed_count": 12},
     {"kind": "page", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 4, "reviewed_count": 4},
     {"kind": "stanza", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 31, "reviewed_count": 31},
-    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49}
+    {"kind": "indentation", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 49, "reviewed_count": 49},
+    {"kind": "typography", "reviewer": "reviewer-model-session", "status": "reviewed", "candidate_count": 18, "reviewed_count": 18}
+  ],
+  "visual_structure_reviews": [
+    {"text_id": "example1900010101", "block_index": 1, "status": "reviewed", "reviewer": "reviewer-model-session", "visual_stanza_lengths": [4, 4], "facsimiles": ["055.jpg"], "disposition": "Begge firelinjede strofer og mellemrummet er kontrolleret på facsimilet."}
   ],
   "reviewer_ranges": [
     {"reviewer": "reviewer-model-session", "facsimile_from": "000.jpg", "facsimile_to": "099.jpg"}
@@ -1506,7 +1623,8 @@ Create and verify the checkpoint with:
 ```shell
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js create \
   /tmp/<work>-checkpoint.json /tmp/<work>-findings.jsonl \
-  /tmp/<work>-pages.jsonl /tmp/<work>-review.json
+  /tmp/<work>-pages.jsonl /tmp/<work>-review.json \
+  fdirs/<poet>/<work>.xml /tmp/<work>-structure.json
 node .agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js verify \
   /tmp/<work>-checkpoint.json
 ```
@@ -1536,6 +1654,8 @@ Report concisely:
   visually checked against all of its facsimile pages
 - total stanza and indentation candidates from the unfiltered whole-work
   report and confirmation that all were dispositioned
+- total typography findings, including italics and letterspacing, and
+  confirmation that every relevant page was visually checked
 - title-page image created
 - title-page geometry and crop QA status
 - whether a graphic front cover was created
@@ -1583,8 +1703,11 @@ The PR description must state concretely:
 - which validation and tests were run
 - any remaining `TODO:` notes
 
-Use an English GitHub closing keyword such as `Fixes #123` when the PR must
-close an issue automatically.
+Every PR originating from a GitHub issue must include `Fixes #123` with the
+actual issue number in its description from creation, including draft PRs and
+stopped imports. This applies regardless of whether the issue or work is a
+draft, awaiting action or otherwise incomplete. Preserve the reference when
+updating the PR description.
 
 Do not wait for GitHub CI unless the user explicitly asks for that.
 
@@ -1592,11 +1715,19 @@ The complete pull request is the final deliverable.
 
 ## Definition of done
 
-The task is complete only when all applicable items are true:
+For a stopped import with missing facsimile pages, completion of the handoff
+means a draft PR documenting the gap and the preserved incomplete work, as
+specified above. The import itself remains blocked.
+
+For a complete import, all applicable items below must be true:
 
 - [ ] `AGENTS.md`, the style guide and relevant special documentation were read.
 - [ ] The complete PDF was inventoried.
 - [ ] Every PDF page was classified or otherwise accounted for.
+- [ ] Every correction sheet was identified in the reviewed page inventory,
+      registered in `<workhead>`, applied in the text and accompanied by typed
+      footnotes; no sheet was created as a text entry. If none exists,
+      `<workhead>` explicitly records `status="none"`.
 - [ ] The JSONL page inventory covers every relevant printed page and every row
       is marked reviewed against the facsimile by someone other than the
       producer.
@@ -1608,6 +1739,9 @@ The task is complete only when all applicable items are true:
       `npm run check-facsimiles` passed against the public `000.jpg`.
 - [ ] Fresh OCR was produced from page images with at least two meaningfully
       different passes or strategies.
+- [ ] No text body was seeded from another edition or variant; existing
+      occurrences were used only after the source-based draft existed, for
+      comparison and relation detection.
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.
@@ -1615,6 +1749,9 @@ The task is complete only when all applicable items are true:
       and every visible printed stanza boundary is represented in XML.
 - [ ] Every verse line's horizontal position was visually checked; indented
       lines were not converted to stanza breaks or flattened by OCR.
+- [ ] Every relevant page was visually checked for italic, letterspaced and
+      otherwise emphasized text, and each occurrence is represented with
+      `<i>`, `<w>` or the appropriate XML markup.
 - [ ] The final whole-work structure report was reviewed without filtering to
       selected poems, and every stanza, indentation and wrapper candidate was
       dispositioned against the facsimile.
@@ -1680,8 +1817,8 @@ The task is complete only when all applicable items are true:
       `TODO:`.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
-- [ ] OCR, page, stanza and indentation candidate totals equal their reviewed
-      totals, and the reviewer differs from the producer.
+- [ ] OCR, page, stanza, indentation and typography candidate totals equal
+      their reviewed totals, and the reviewer differs from the producer.
 - [ ] The semantic page audit and side-aware historical OCR profile were run on
       the final XML.
 - [ ] The whole-work wrapper analyzed every poetry block and all candidates

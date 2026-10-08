@@ -19,6 +19,14 @@ describe('kalliopework RELAX NG schema', () => {
     { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
   );
 
+  it('rejects hr elements in source poetry and prose', () => {
+    expect(() => validate(poetryWork('<hr/>Første linje'))).toThrow();
+    expect(() => validate(poetryWork('Første linje').replace(
+      '<poetry>Første linje</poetry>',
+      '<prose><hr/>Første linje</prose>',
+    ))).toThrow();
+  });
+
   it('requires head notes to use the notes wrapper', () => {
     const wrappedTextNote = poetryWork(
       'Første linje',
@@ -382,6 +390,25 @@ describe('kalliopework RELAX NG schema', () => {
         { input: legacyXml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
       );
     }).toThrow();
+  });
+
+  it.each(['poetry', 'prose', 'quote'])('accepts a language on %s blocks with inline language overrides', blockName => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Tekster</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><title>Latin og dansk</title></head>
+            <body>
+              <${blockName} lang="la">Nota. Inter omnes bestias.<footnote><span lang="da">En dansk forklaring.</span></footnote></${blockName}>
+              <${blockName}>Dansk tekst med <span lang="la">Deo gratias.</span></${blockName}>
+            </body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
   });
 
   it('rejects unsupported blocks directly in a text body', () => {

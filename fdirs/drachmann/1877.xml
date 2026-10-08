@@ -12,7 +12,7 @@
   </notes>
   <pictures>
     <picture type="frontpage" src="1877-p1.jpg">Forsiden til <i>Sange ved Havet</i> (1877).</picture>
-    <picture type="titlepage" src="1877-p2.jpg">Titelbladet til <i>Sange ved Havet</i> (1877) siger ,,Sange ved Havet. - Venezia. / Nye Digte / af / Holger Drachmann. // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Thieles Bogtrykkeri. / 1877.''.</picture>
+    <picture type="titlepage" src="1877-p2.jpg"><transcription>Sange ved Havet. - Venezia. / Nye Digte / af / Holger Drachmann. // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Thieles Bogtrykkeri. / 1877.</transcription></picture>
   </pictures>
   <source facsimile="11530805165E" facsimile-pages-num="184" facsimile-pages-offset="18">Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</source>
   <quality>korrektur1,korrektur2,kilde</quality>
@@ -1645,6 +1645,10 @@ Blandt dets gode, dets ægte Sønner.
   <title>Italia!</title>
   <firstline>Jeg hisler Dig atter, Italiens Land</firstline>
   <source pages="80-81"/>
+  <places>
+    <place ref="italy" relation="subject" primary="true"/>
+    <place ref="rovereto" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1691,6 +1695,10 @@ Her skal med Blomster Naturen bekranses, -
   <firstline>Om Nogen vil vide, hvad Foraar er</firstline>
   <source pages="82-88"/>
   <keywords>petrarca</keywords>
+  <places>
+    <place ref="euganean-hills" relation="subject" primary="true"/>
+    <place ref="arqua-petrarca" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1995,6 +2003,9 @@ Hen over Arnen sig skød.
   <title>Præludium</title>
   <firstline>Dagen har været saa trykkende hed</firstline>
   <source pages="97-100"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2071,6 +2082,9 @@ Og Bølgernes Stemme jeg følger.
   <title>Venezia</title>
   <firstline>Det blaaner over de flade</firstline>
   <source pages="101-102"/>
+  <places>
+    <place ref="venice" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2118,6 +2132,9 @@ I Drømme fra Havets Mund.
   <title>Jeg hører i ensomme Stunder</title>
   <firstline>Jeg hører i ensomme Stunder</firstline>
   <source pages="103-104"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2157,6 +2174,11 @@ Paa det, som paa meget mer'!
   <title>Laguna morta</title>
   <firstline>Canalvandet skvulper og spiller</firstline>
   <source pages="105-106"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="venetian-lagoon" relation="subject" primary="true"/>
+    <place ref="venice" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2189,6 +2211,9 @@ I den »døde Lagunes« Spejl.
   <title>Karnevalet</title>
   <firstline>Saa faldt til Vesperklokkernes Slag</firstline>
   <source pages="107-109"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2247,6 +2272,9 @@ Spring ud — ud i Karnevalet!
   <title>En Maske</title>
   <firstline>En Stump af et Skørt; en Slags Trøje</firstline>
   <source pages="110-111"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2284,6 +2312,9 @@ Hun vil vugge Dig bort i et Blund
   <title>Adelina drømmer</title>
   <firstline>Der har været En ved min Dør inat</firstline>
   <source pages="112-113"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2317,6 +2348,9 @@ Madonna! hvor har jeg dog selsomt drømt!
   <title>Maanereflexer</title>
   <firstline>I Maanestraalerne funkler</firstline>
   <source pages="114"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2344,6 +2378,9 @@ Paany sit hildende Næt.
   <title>St. Élena</title>
   <firstline>Vi læste jo alle, den Gang vi var smaa</firstline>
   <source pages="115-118"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2422,6 +2459,9 @@ Ak, Barnet var voksent og Barnet var smukt.
   <title>I Gondolen</title>
   <firstline>De bar mig i stille Timer</firstline>
   <source pages="119-122"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2488,6 +2528,9 @@ Sfærernes Harmoni.
   <title>Lagunedrømme</title>
   <firstline>Naar Natten er helliget Farter</firstline>
   <source pages="123-125"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2545,6 +2588,9 @@ Omkap med Lagunernes Vand.
   <title>Solnedgang</title>
   <firstline>Ved Santa Maria della Salute</firstline>
   <source pages="126-128"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2597,6 +2643,9 @@ Musik til den malede Klynge.
   <title>Ved ,,Sukkenes Bro''</title>
   <firstline>Maanen skinner fra skyfri Luft</firstline>
   <source pages="129-132"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2670,6 +2719,9 @@ Det er »Sukkenes Bro«, jeg ser.
   <title>Jeg hører i Natten den vuggende</title>
   <firstline>Jeg hører i Natten den vuggende</firstline>
   <source pages="133-135"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2724,6 +2776,9 @@ Saadan om Natten os møde —?
   <title>Vino Conegliano</title>
   <firstline>Hvi sidder Du Fremmede tavs og tvær</firstline>
   <source pages="136-138"/>
+  <places>
+    <place ref="venice" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2776,6 +2831,10 @@ Behold Eders vino conegliano!
   <firstline>Farvel Du Hav, som Horats besang</firstline>
   <source pages="139-141"/>
   <keywords>horats</keywords>
+  <places>
+    <place ref="adriatic-sea" relation="subject" primary="true"/>
+    <place ref="venice" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

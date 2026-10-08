@@ -5,9 +5,10 @@
   <year>1910</year>
   <pictures>
     <picture type="frontpage" src="1910-p1.jpg">Forsiden til <i>Pil og Plekter</i>.</picture>
-    <picture type="titlepage" src="1910-p2.jpg">Titelbladet til <i>Pil og Plekter</i> (1910) lyder ,,Pil og Plekter / Digte / af / P. A. Rosenberg // København / Nationale Forfatteres Forlag / 1910''</picture>
+    <picture type="titlepage" src="1910-p2.jpg"><transcription>Pil og Plekter / Digte / af / P. A. Rosenberg // København / Nationale Forfatteres Forlag / 1910</transcription></picture>
   </pictures>
   <source facsimile="11540800303A_color" facsimile-pages-num="352" facsimile-pages-offset="8">P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910.</source>
+  <errata status="applied" pages="[332]" facsimile-pages="340"/>
 
   <quality>korrektur1,kilde,side</quality>
 </workhead>
@@ -607,6 +608,7 @@ Kjærlighed er Gaadens Navn.
   <title>Bøn</title>
   <firstline>Naar jeg skal dø, Elisabeth</firstline>
   <source pages="37"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -934,7 +936,6 @@ Ingen Frygt! Intet Haab!
 <text id="rosenbergpa2018022521">
 <head>
   <title>,,Flyvende Sommer''</title>
-  <toctitle>,,Flyvende Sommer''</toctitle>
   <indextitle>Flyvende Sommer</indextitle>
   <linktitle>Flyvende Sommer</linktitle>
   <firstline>Aa, hvor dog Luften er lummer!</firstline>
@@ -3829,7 +3830,7 @@ Baaret frem i Sang og Tale.
 Helstøbt, som i disse Tider
 Saare sjælden vel det kjendes,
 Fra de tusend trykte Sider
-Ind din Sjæl i Mindet brændes:<!-- Ind din] I din - efter errata bagerst i bogen -->
+Ind din<footnote type="errata">Ind din] I din</footnote> Sjæl i Mindet brændes:
 Dybe Blik fra milde Øjne,
 Haandfast Tryk af bløde Hænder,
 Ord, som dømmer, for at højne,
@@ -4000,7 +4001,6 @@ Der bølger i det Lave;
 Mod Højden gik hans stolte Kunst,
 Hans Hjertes Offergave,
     Gud i det Høje!
-
 
 <nonum><center>EFTER TALEN:</center></nonum>
 <nonum><center><small>Mel.: Fædrelandssang af ,,Konge-kantaten''.</small></center></nonum>
@@ -4263,6 +4263,7 @@ Dog stærkest alle Dage.
   <title>Til Inga</title>
   <firstline>Jeg elsked dig, før du blev til</firstline>
   <source pages="207-209"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4530,7 +4531,6 @@ Tro og Begejstring lued i hans Tanke,
 Daad var hans Dag, og Lønnen Danmarks Gavn.
     :,: Slyng da Festens Ranke
     	Først om hans Navn! :,:
-
 
 <nonum><center>II.</center></nonum>
 <nonum><center><small><i>Kor:</i></small></center></nonum>
@@ -4932,6 +4932,7 @@ Kan dit Jericho styrtes i Gruset.
   <toctitle><num>II.</num>Kampen</toctitle>
   <firstline>Hel skønt er vel Stridens Stævne</firstline>
   <source pages="237-238"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5019,6 +5020,7 @@ Igjennem Livet skinner.
   <toctitle><num>IV.</num>Hjemmet</toctitle>
   <firstline>Natten sin Vinge sænker</firstline>
   <source pages="240-241"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5551,6 +5553,7 @@ Som fik dens første Smil ved Gry.
     <note>Gendigtning af George Eliot: <xref type="translation" poem="eliot2018021001"/>.</note>
   </notes>
   <source pages="261"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

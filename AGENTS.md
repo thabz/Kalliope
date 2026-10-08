@@ -24,6 +24,19 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   skal opspores, udvælges, indsættes eller forbindes med oversættelsen. Brug
   også `$add-kalliope-work`, når originalen oprettes som et selvstændigt værk.
 
+## OCR and PDF tooling
+
+- Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
+  eksisterende værktøjer, før et nyt systemværktøj installeres.
+- Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den
+  eksisterende installation; geninstallér den ikke, og læg ikke
+  projektdependencies i Krakens pipx-miljø. Brug projektets eget venv/uv-miljø
+  til projektkode.
+- Brug `pdftoppm` til PDF-sider som billeder og `pdftotext` til eksisterende
+  PDF-tekst. Brug ImageMagick (`magick`) til billedbehandling. `ocrmypdf` kan
+  bruges til almindelige PDF/OCR-workflows. Tesseract er et hjælpeværktøj og
+  ikke nødvendigvis førstevalg til historisk fraktur.
+
 ## Kalliopes dækningsmål
 
 Ved arbejde med personer, værker, kilder og import skal
@@ -49,6 +62,10 @@ digtere.
 
 ## XML-data
 
+- Et trykt rettelsesark skal altid opdages ved sidegennemgangen og alle dets
+  relevante rettelser indføres før færdigstatus. Registrér arket som `<errata>`
+  i `<workhead>`, og mærk hver rettelse med `<footnote type="errata">` i formen
+  `rettet] trykt`. Arket må aldrig oprettes som en selvstændig tekstpost.
 - Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
@@ -68,7 +85,13 @@ digtere.
 - Når brugeren beder om at få fikset et issue, skal agenten starte i et nyt
   worktree baseret på `origin/master` og først melde arbejdet klar, når GitHub
   CI er gennemført.
-- Når en PR skal lukke et GitHub issue automatisk, skal PR-beskrivelsen bruge GitHubs engelske closing keyword, fx `Fixes #123`. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker issues på dansk.
+- Alle PR'er, der udspringer af et GitHub issue, skal have `Fixes #123` med
+  det konkrete issue-nummer i beskrivelsen fra oprettelsen. Det gælder også
+  draft-PR'er, og uanset om issuet eller arbejdet er et udkast, afventer noget
+  eller har en anden ufærdig tilstand. Dermed kan forbindelsen til det
+  igangværende arbejde ses i GitHub. Bevar henvisningen ved senere opdateringer
+  af PR-beskrivelsen. Skriv ikke `Lukker #123`, fordi GitHub ikke auto-lukker
+  issues på dansk.
 - Branch-navne må ikke indeholde `/` eller have et teknisk prefix. Brug et kort,
   beskrivende navn som `robert-burns-ikon`.
 - Når brugeren beder om at få fikset et GitHub issue, skal arbejdet udføres i et
@@ -77,9 +100,18 @@ digtere.
 - Uden for arbejdsgangen for GitHub issue-fixes må agenten aldrig committe, pushe
   eller amende kodeændringer, før brugeren eksplicit har læst ændringen og bedt om
   commit/push. Det gælder også opdateringer til eksisterende PR-branches.
+- Agenten må aldrig oprette en commit med Codex, OpenAI eller en anden agent som
+  author eller committer. Før hver commit skal agenten kontrollere den effektive
+  Git-identitet og bruge repositoryejerens allerede konfigurerede navn og
+  e-mailadresse; agenten må ikke erstatte dem med en agentidentitet via Git-config
+  eller `GIT_AUTHOR_*`-/`GIT_COMMITTER_*`-miljøvariable.
 - Ved `gh issue view ... --comments` kan GitHub CLI i non-TTY give tomt tekstoutput for issues uden kommentarer. Brug enten `--json number,title,state,body,comments` eller kør kommandoen med TTY, når issue-indholdet skal læses.
 - Hvis `gh auth status` melder et ugyldigt token, samtidig med at `gh api` melder en forbindelsesfejl, skal GitHub-forbindelsen testes uden sandboxens netværksbegrænsning, før brugeren bedes logge ind igen. En blokeret API-forbindelse kan ellers fejlagtigt ligne et udløbet token.
 - Når du opretter eller opdaterer en PR, behøver du ikke vente på GitHubs CI, medmindre brugeren eksplicit beder om det.
+- Når brugeren siger "commit og push", skal agenten efter push vente, til alle
+  påkrævede GitHub CI-checks er gennemført og grønne. Fejlende checks skal
+  undersøges og rettes; rettelserne skal testes, committes og pushes, og CI skal
+  overvåges igen. Opgaven må ikke meldes færdig, mens CI er ventende eller fejler.
 - Når brugeren beder dig merge en PR, skal det ske som squash merge.
 - Ved `gh pr create`, `gh issue create`, `gh pr comment` og `gh issue comment` skal brødteksten skrives til en midlertidig fil og sendes med `--body-file`. Skriv ikke markdown direkte i shell-argumenter, fordi backticks og anden shell-syntaks kan blive evalueret som kommandoer.
 - Avoid commands that dump large amounts of text into context. Use grep -l, head, targeted searches, counts, or write large intermediate output to a temporary file and inspect only relevant portions.

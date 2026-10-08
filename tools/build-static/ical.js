@@ -1,4 +1,5 @@
-import ics from 'ics';
+import { createEvents } from 'ics';
+import { poetFlag } from '../../common/flags.js';
 import { poetName } from './formatting.js';
 import { writeText } from '../libs/helpers.js';
 
@@ -26,7 +27,7 @@ const build_anniversaries_ical = collected => {
         events.push({
           start: [eventYear, month, day],
           duration: { days: 1 },
-          title: `${poetName(poet)} ${eventTitle} for ${eventYear -
+          title: `${poetFlag(poet)} ${poetName(poet)} ${eventTitle} for ${eventYear -
             year} år siden`,
           description: `${poetName(poet)} ${eventTitle} ${parseInt(
             day,
@@ -54,7 +55,7 @@ const build_anniversaries_ical = collected => {
       handleDate(poet, 'dead', poet.period.dead.date);
     }
   });
-  const { error, value } = ics.createEvents(events);
+  const { error, value } = createEvents(events);
   if (error != null) {
     throw error;
   }
