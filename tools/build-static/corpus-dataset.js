@@ -7,7 +7,7 @@ import { loadExternalIdentifiers } from './external-identifiers.js';
 import { poetName } from './formatting.js';
 
 const DATASET_VERSION = 'v1';
-const SCHEMA_VERSION = '1.1.0';
+const SCHEMA_VERSION = '1.2.0';
 const SITE_URL = 'https://kalliope.org';
 const OUTPUT_DIRECTORY = `public/api/${DATASET_VERSION}`;
 const LEGACY_SQLITE_FILES = [
@@ -105,6 +105,7 @@ const schema = {
         id: { type: 'string' },
         name: { type: 'string' },
         country: { type: 'string' },
+        nationality: { type: 'string', pattern: '^[a-z]{2}$' },
         lang: { type: 'string' },
         type: { type: 'string' },
         born: { type: ['object', 'null'] },
@@ -173,6 +174,8 @@ the current dataset version.
 ## Stable identifiers and relations
 
 \`poets.jsonl.gz\` has one poet record per line, keyed by \`id\`.
+Its optional \`nationality\` field is a modern ISO 3166-1 alpha-2 country code;
+\`country\` remains Kalliope's grouping code.
 \`works.jsonl.gz\` has one work record per line, keyed by the global \`id\`
 (\`poet_id/local_id\`). \`texts.jsonl.gz\` has one indexable text per line,
 keyed by \`id\`. A text's \`poet_id\` and \`work_id\` reference those files.
@@ -245,6 +248,7 @@ const buildPoetRecords = (collected) => sortById(
     id: poet.id,
     name: poetName(poet),
     country: poet.country,
+    nationality: poet.nationality,
     lang: poet.lang,
     type: poet.type,
     born: poet.period?.born ?? null,

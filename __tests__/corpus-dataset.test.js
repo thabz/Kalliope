@@ -63,6 +63,18 @@ describe('versioned corpus dataset', () => {
     }));
   });
 
+  it('preserves nationality independently of the poet grouping country', () => {
+    const poets = new Map([
+      ['runeberg', {
+        id: 'runeberg', country: 'un', nationality: 'fi', lang: 'sv', type: 'poet',
+        name: { firstname: 'Johan Ludvig', lastname: 'Runeberg' },
+      }],
+    ]);
+    expect(buildPoetRecords({ poets })[0]).toEqual(expect.objectContaining({
+      country: 'un', nationality: 'fi',
+    }));
+  });
+
   it('normalizes text blocks without losing line boundaries', () => {
     expect(normalizedFullText({
       title: ' En titel ',
