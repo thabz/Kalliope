@@ -20,7 +20,8 @@
 </workhead>
 <workbody>
 
-<text id="barfodf2026082301" author="barfodf">
+<!-- Gentagelsen »det det« står i trykket på side X (facsimile 014.jpg). -->
+<text id="barfodf2026082301" author="barfodf" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Fortale</title>
   <source pages="V-XIV" facsimile-pages="10-19"/>
@@ -8796,7 +8797,8 @@ Hans Hoved laa paa et Anker. —
 </body>
 </text>
 
-<text id="ingemann20260823174" author="ingemann">
+<!-- Gentagelsen »for for« står i trykket på side 268 (facsimile 296.jpg). -->
+<text id="ingemann20260823174" author="ingemann" ignore-tests="repeated-adjacent-word">
 <head>
   <title><num>173.</num>Til Dannebrog</title>
   <firstline>Vift stolt paa Kodans Bølge</firstline>
