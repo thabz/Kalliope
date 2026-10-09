@@ -5,8 +5,11 @@ import {
 import {
   checksForWorkXml,
   collectBodyLinkIssues,
+  collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectStandaloneFootnoteIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -118,6 +121,34 @@ describe('work corpus support', () => {
     expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
   });
 
+  it('rejects single line wrappers in work and text subtitles', () => {
+    const xml = `<kalliopework id="1732">
+      <workhead><subtitle><line>Undertitel</line></subtitle></workhead>
+      <workbody><text id="pastor-fido"><head>
+        <subtitle>
+          <!-- Kildens sceneangivelse -->
+          <line>Act. I. Scen. I.<footnote>Kildens note.</footnote></line>
+        </subtitle>
+      </head></text></workbody>
+    </kalliopework>`;
+
+    expect(collectSingleLineSubtitleIssues('work.xml', parseWorkXml(xml))).toEqual([
+      'work.xml: workhead 1732 has a <subtitle> with only one <line>; remove the <line> wrapper.',
+      'work.xml: head pastor-fido has a <subtitle> with only one <line>; remove the <line> wrapper.',
+    ]);
+  });
+
+  it('allows plain and multiline subtitles', () => {
+    const xml = `<kalliopework id="1732">
+      <workhead><subtitle>Undertitel<footnote>Kildens note.</footnote></subtitle></workhead>
+      <workbody><text id="poem"><head>
+        <subtitle><line>Violin</line><line>Anden Del</line></subtitle>
+      </head></text></workbody>
+    </kalliopework>`;
+
+    expect(collectSingleLineSubtitleIssues('work.xml', parseWorkXml(xml))).toEqual([]);
+  });
+
   it('rejects redundant text title metadata', () => {
     const xml = `
       <kalliopework>
@@ -221,5 +252,104 @@ note.</footnote> i verset.
     const document = parseWorkXml(`<text id="poem"><head><notes><note>Metadata</note></notes></head><body><poetry>Vers
 <!-- <footnote>Kommentar</footnote> --></poetry></body></text>`);
     expect(collectStandaloneFootnoteIssues('work.xml', document)).toEqual([]);
+  });
+});
+
+
+describe('bibliographic source author consistency', () => {
+  const check = (sources, author = 'digter', filename = 'fdirs/digter/1900.xml', body = '', type = 'poetry') =>
+    collectSourceAuthorIssues(filename, parseWorkXml(
+      `<kalliopework author="${author}" type="${type}"><workhead>${sources}</workhead><workbody>${body}</workbody></kalliopework>`,
+    ));
+
+  it('requires at least one author or translator ID to match for each work source', () => {
+    expect(check('<source><title>Digte</title><author id="digter">Navn</author></source>')).toEqual([]);
+    expect(check('<source><author id="anden">Medforfatter</author><author id="digter">Navn</author></source>')).toEqual([]);
+    expect(check('<source><author id="tasso">Tasso</author><translator id="digter">Oversætter</translator></source>')).toEqual([]);
+    expect(check('<source><author id="anden">Navn</author></source>')).toEqual([
+      'fdirs/digter/1900.xml: source "default" has author/translator ids [anden] that do not match kalliopework/@author="digter".',
+    ]);
+    expect(check('<source id="bd1"><author id="digter">Navn</author></source><source id="bd2"><author id="anden">Navn</author><translator id="tredje">Navn</translator></source>')).toEqual([
+      'fdirs/digter/1900.xml: source "bd2" has author/translator ids [anden, tredje] that do not match kalliopework/@author="digter".',
+    ]);
+  });
+
+  it('does not accept an editor ID as an author or translator match', () => {
+    expect(check('<source><author id="anden">Navn</author><editor id="digter">Udgiver</editor></source>')).toHaveLength(1);
+  });
+
+  it('allows legacy and anonymous sources and optional person IDs', () => {
+    expect(check('<source>Navn: <i>Digte</i>.</source>')).toEqual([]);
+    expect(check('<source><title>Digte</title></source>')).toEqual([]);
+    expect(check('<source><title>Digte</title><author>Navn</author></source>')).toEqual([]);
+    expect(check('<source><title>Digte</title><editor id="anden">Udgiver</editor></source>')).toEqual([]);
+  });
+
+  it('allows collection publications without an individual work author', () => {
+    const source = '<source><translator id="oversaetter">Navn</translator></source>';
+    expect(check(source, 'antologierdk', 'fdirs/antologierdk/1900.xml')).toEqual([]);
+    expect(check(source, 'tidsskrifterdk', 'fdirs/tidsskrifterdk/1900.xml')).toEqual([]);
+    expect(check(source, '', 'fdirs/samling/1900.xml', '', 'anthology')).toEqual([]);
+    expect(check(source, 'digter', 'fdirs/digter/1900.xml', '', 'anthology')).toHaveLength(1);
+    expect(check(source, '')).toEqual([]);
+  });
+
+  it('does not confuse a text source or a quoted author with the work source', () => {
+    expect(check('<source><author id="digter">Navn</author></source>', 'digter', 'fdirs/digter/1900.xml',
+      '<text author="anden"><head><source><author id="anden">Navn</author></source></head></text>',
+    )).toEqual([]);
+    expect(check('<source>Fritekst <note><author id="anden">Navn</author></note></source>')).toEqual([]);
+  });
+});
+
+describe('anthology source requirements', () => {
+  const source = '<source><title>Samling</title><editor>Samler</editor></source>';
+  const check = (workSources, body = '', type = 'anthology', filename = 'fdirs/samling/1900.xml') =>
+    collectAnthologySourceIssues(filename, parseWorkXml(
+      `<kalliopework type="${type}"><workhead>${workSources}</workhead><workbody>${body}</workbody></kalliopework>`,
+    ));
+
+  it('uses the work type independently of its path or status', () => {
+    expect(check(source)).toEqual([]);
+    expect(check('', '', 'anthology')).toHaveLength(1);
+    expect(check('', '', 'poetry', 'fdirs/antologierdk/1900.xml')).toEqual([]);
+    expect(collectAnthologySourceIssues('fdirs/samling/1900.xml', parseWorkXml(
+      '<kalliopework type="anthology" status="incomplete"/>',
+    ))).toHaveLength(1);
+  });
+
+  it('rejects empty and legacy work sources', () => {
+    expect(check('<source/>')).toHaveLength(1);
+    expect(check('<source>Samler (udg.): <i>Samling</i>.</source>')).toHaveLength(1);
+  });
+
+  it('requires an editor on every work source', () => {
+    expect(check(`${source}<source id="andet"><title>Anden udgave</title></source>`)).toEqual([
+      'fdirs/samling/1900.xml: work source "andet" requires an editor.',
+    ]);
+    expect(check('<source><title>Samling</title><author>Forfatter</author><translator>Oversætter</translator></source>')).toHaveLength(1);
+    expect(check('<source><title>Samling</title><editor id="samler" type="editor">Samler</editor><editor>Anden samler</editor></source>')).toEqual([]);
+  });
+
+  it('rejects malformed structured bibliographies', () => {
+    for (const invalidSource of [
+      '<source><editor>Samler</editor></source>',
+      '<source><title>Samling</title><editor> </editor></source>',
+      '<source><title>Samling</title><editor><i>Samler</i></editor></source>',
+      '<source>Fritekst<title>Samling</title><editor>Samler</editor></source>',
+    ]) {
+      expect(check(invalidSource)).toHaveLength(1);
+    }
+  });
+
+  it('allows inherited bibliographies but validates explicit text sources', () => {
+    const text = textSource => `<text id="bidrag"><head>${textSource}</head><body/></text>`;
+    expect(check(source, text('<source pages="1-2"/>'))).toEqual([]);
+    expect(check(source, text('<source in="default" pages="1">\n </source>'))).toEqual([]);
+    expect(check(source, text(source))).toEqual([]);
+    expect(check(source, text('<source pages="1">Samler: <i>Samling</i>.</source>'))).toHaveLength(1);
+    expect(check(source, text('<source><title>Anden samling</title></source>'))).toEqual([
+      'fdirs/samling/1900.xml: text bidrag source requires an editor.',
+    ]);
   });
 });

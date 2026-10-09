@@ -10,8 +10,11 @@ import {
   collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -65,6 +68,8 @@ describe('tracked work corpus', () => {
   let poetryBoundaryBlankLineIssues;
   let nestedBodyBlockIssues;
   let sourceHrIssues;
+  let sourceAuthorIssues;
+  let anthologySourceIssues;
   let asteriskOrnamentSpacingIssues;
   let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
@@ -72,6 +77,7 @@ describe('tracked work corpus', () => {
   let textFollowsNoteIssues;
   let textStructureIssues;
   let redundantTextTitleMetadataIssues;
+  let singleLineSubtitleIssues;
   let errataIssues;
   let unindexedAnthologyTexts;
   let wrappedSeparatorIssues;
@@ -97,6 +103,8 @@ describe('tracked work corpus', () => {
     poetryBoundaryBlankLineIssues = [];
     nestedBodyBlockIssues = [];
     sourceHrIssues = [];
+    sourceAuthorIssues = [];
+    anthologySourceIssues = [];
     asteriskOrnamentSpacingIssues = [];
     rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
@@ -104,6 +112,7 @@ describe('tracked work corpus', () => {
     textFollowsNoteIssues = [];
     textStructureIssues = [];
     redundantTextTitleMetadataIssues = [];
+    singleLineSubtitleIssues = [];
     errataIssues = [];
     unindexedAnthologyTexts = [];
     wrappedSeparatorIssues = [];
@@ -157,6 +166,11 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      singleLineSubtitleIssues.push(
+        ...collectSingleLineSubtitleIssues(filename, workDocument),
+      );
+      sourceAuthorIssues.push(...collectSourceAuthorIssues(filename, workDocument));
+      anthologySourceIssues.push(...collectAnthologySourceIssues(filename, workDocument));
       if (/<hr\b/u.test(xml)) {
         sourceHrIssues.push(filename);
       }
@@ -323,6 +337,14 @@ describe('tracked work corpus', () => {
     expect(bodyLinkIssues).toEqual([]);
   });
 
+  it('matches bibliographic authors or translators to the work author', () => {
+    expect(sourceAuthorIssues).toEqual([]);
+  });
+
+  it('requires structured sources with editors for anthology works', () => {
+    expect(anthologySourceIssues).toEqual([]);
+  });
+
   it('requires a workhead source for every page-only text source', () => {
     expect(pageOnlySourceIssues).toEqual([]);
   });
@@ -349,6 +371,10 @@ describe('tracked work corpus', () => {
 
   it('does not retain text title metadata identical to the title', () => {
     expect(redundantTextTitleMetadataIssues).toEqual([]);
+  });
+
+  it('does not wrap a single subtitle line in a line element', () => {
+    expect(singleLineSubtitleIssues).toEqual([]);
   });
 
   it('keeps declared page-break markup consistent', () => {

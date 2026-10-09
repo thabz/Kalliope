@@ -209,9 +209,29 @@
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
-      <ref name="mixed"/>
+      <choice>
+        <ref name="inlineWithoutLineMarkers"/>
+        <ref name="sourceBibliography"/>
+      </choice>
       <optional><ref name="sourceIdentifiers"/></optional>
     </element>
+  </define>
+
+  <define name="sourceBibliographicText"><data type="string"><param name="pattern">[\s\S]*\S[\s\S]*</param></data></define>
+
+  <define name="sourceBibliography">
+    <interleave>
+      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="type"><value>editor</value></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="translator"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <element name="title"><ref name="sourceBibliographicText"/></element>
+      <optional><element name="edition"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="volume"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="place"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="publisher"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="printer"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="year"><ref name="sourceBibliographicText"/></element></optional>
+    </interleave>
   </define>
 
   <define name="note">

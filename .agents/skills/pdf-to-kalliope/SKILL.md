@@ -1375,6 +1375,22 @@ review.
 
 ## 18. Detect variants and duplicates
 
+Once the source-based draft has its texts, authors and first lines, run:
+
+```sh
+node tools/find-variant-candidates.js fdirs/<poet>/<work>.xml
+```
+
+The work file is mandatory. The tool searches only for pairs involving that
+work, under each text's effective author, including anthology occurrences.
+It reads the XML directly and the existing JSONL corpus without a static build.
+See `docs/corpus-dataset.md` for the search rules and dataset limitations;
+`--json` produces a machine-readable report. Do not run a global corpus audit.
+Read and assess the candidate texts, establish safe relations under the XML
+model, and document unresolved matches and data problems. Running the script
+alone does not complete variant review. Repeat it if first lines or authors
+change. Substantially rewritten openings may require the checks below.
+
 Compare each imported text with the existing corpus using, as appropriate:
 
 - normalized title
@@ -1791,7 +1807,8 @@ For a complete import, all applicable items below must be true:
 - [ ] Referenced poets, translators and other persons were resolved against the
       corpus where possible.
 - [ ] Translations and adaptations were investigated for originals.
-- [ ] Existing texts were checked for duplicates, variants and relations.
+- [ ] Work-scoped variant candidates were reviewed, safe relations established,
+      and unresolved matches documented; existing texts were checked for duplicates.
 - [ ] Verse lines match the printed source.
 - [ ] Physical line wraps were rejoined to their correct verse lines.
 - [ ] Stanza boundaries match the printed source.

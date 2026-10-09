@@ -2,9 +2,7 @@
 <kalliopework id="1860-19" author="oehlenschlaeger" status="complete" type="poetry" parent="1857-1862">
 <workhead>
   <title>Poetiske Skrifter</title>
-  <subtitle>
-    <line>Nittende Bind. Digte, Første Deel.</line>
-  </subtitle>
+  <subtitle>Nittende Bind. Digte, Første Deel.</subtitle>
   <linktitle>Samlede Skrifter, 19. Bind</linktitle>
   <toctitle><num>Bind 19.</num>Digte, Første Deel</toctitle>
   <breadcrumbtitle>Bd. 19</breadcrumbtitle>
@@ -15,7 +13,15 @@
   <pictures>
     <picture src="1860-19-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Første Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''</picture>
   </pictures>
-  <source facsimile="130023479592_color" facsimile-pages-num="366" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 19, 1860.</source>
+  <source facsimile="130023479592_color" facsimile-pages-num="366" facsimile-pages-offset="18">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>19</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1860</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -9112,9 +9118,7 @@ Og aldrig dit Minde at glemme.
 <head>
   <suptitle>I Anledning af</suptitle>
   <title>Maria Elisabeth Thuras Død</title>
-  <subtitle>
-    <line>Juli 1805.</line>
-  </subtitle>
+  <subtitle>Juli 1805.</subtitle>
   <toctitle>I Anledning af M. E. Thuras Død. Juli 1805</toctitle>
   <indextitle>I Anledning af M. E. Thuras Død</indextitle>
   <linktitle>I Anledning af M. E. Thuras Død</linktitle>
