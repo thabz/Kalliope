@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1765" author="antologiergb" status="incomplete" type="poetry">
+<kalliopework id="1765" author="antologiergb" status="incomplete" type="anthology">
 <workhead>
   <title>Reliques of Ancient English Poetry</title>
   <year>1765</year>
@@ -10,10 +10,13 @@
   <notes>
     <note>Antologien udkom første gang i 1765. Kalliope bringer foreløbig tre tekster. »Child Waters« følger 2. udgave, bind 3 (1767); kildeudgaven til »The Child of Elle« og »Edom O’ Gordon« er ikke identificeret.</note>
   </notes>
-  <source id="uidentificeret">Thomas Percy (udg.): <i>Reliques of Ancient English Poetry</i>, udgave ikke identificeret.</source>
+  <source id="uidentificeret">
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+  </source>
   <source id="1767-bd3" href="https://en.wikisource.org/wiki/Index:Percy%27s_Reliques_of_Ancient_English_Poetry,_Volume_3,_1767.djvu">
     <title>Reliques of Ancient English Poetry</title>
-    <editor id="percy">Thomas Percy</editor>
+    <editor id="percy" type="editor">Thomas Percy</editor>
     <edition>2. udg.</edition>
     <volume>3</volume>
     <place>London</place>

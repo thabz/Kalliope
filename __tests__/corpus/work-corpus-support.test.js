@@ -6,6 +6,7 @@ import {
   checksForWorkXml,
   collectBodyLinkIssues,
   collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectStandaloneFootnoteIssues,
   collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
@@ -269,5 +270,57 @@ describe('bibliographic source author consistency', () => {
       '<text author="anden"><head><source><author id="anden">Navn</author></source></head></text>',
     )).toEqual([]);
     expect(check('<source>Fritekst <note><author id="anden">Navn</author></note></source>')).toEqual([]);
+  });
+});
+
+describe('anthology source requirements', () => {
+  const source = '<source><title>Samling</title><editor>Samler</editor></source>';
+  const check = (workSources, body = '', type = 'anthology', filename = 'fdirs/samling/1900.xml') =>
+    collectAnthologySourceIssues(filename, parseWorkXml(
+      `<kalliopework type="${type}"><workhead>${workSources}</workhead><workbody>${body}</workbody></kalliopework>`,
+    ));
+
+  it('uses the work type independently of its path or status', () => {
+    expect(check(source)).toEqual([]);
+    expect(check('', '', 'anthology')).toHaveLength(1);
+    expect(check('', '', 'poetry', 'fdirs/antologierdk/1900.xml')).toEqual([]);
+    expect(collectAnthologySourceIssues('fdirs/samling/1900.xml', parseWorkXml(
+      '<kalliopework type="anthology" status="incomplete"/>',
+    ))).toHaveLength(1);
+  });
+
+  it('rejects empty and legacy work sources', () => {
+    expect(check('<source/>')).toHaveLength(1);
+    expect(check('<source>Samler (udg.): <i>Samling</i>.</source>')).toHaveLength(1);
+  });
+
+  it('requires an editor on every work source', () => {
+    expect(check(`${source}<source id="andet"><title>Anden udgave</title></source>`)).toEqual([
+      'fdirs/samling/1900.xml: work source "andet" requires an editor.',
+    ]);
+    expect(check('<source><title>Samling</title><author>Forfatter</author><translator>Oversætter</translator></source>')).toHaveLength(1);
+    expect(check('<source><title>Samling</title><editor id="samler" type="editor">Samler</editor><editor>Anden samler</editor></source>')).toEqual([]);
+  });
+
+  it('rejects malformed structured bibliographies', () => {
+    for (const invalidSource of [
+      '<source><editor>Samler</editor></source>',
+      '<source><title>Samling</title><editor> </editor></source>',
+      '<source><title>Samling</title><editor><i>Samler</i></editor></source>',
+      '<source>Fritekst<title>Samling</title><editor>Samler</editor></source>',
+    ]) {
+      expect(check(invalidSource)).toHaveLength(1);
+    }
+  });
+
+  it('allows inherited bibliographies but validates explicit text sources', () => {
+    const text = textSource => `<text id="bidrag"><head>${textSource}</head><body/></text>`;
+    expect(check(source, text('<source pages="1-2"/>'))).toEqual([]);
+    expect(check(source, text('<source in="default" pages="1">\n </source>'))).toEqual([]);
+    expect(check(source, text(source))).toEqual([]);
+    expect(check(source, text('<source pages="1">Samler: <i>Samling</i>.</source>'))).toHaveLength(1);
+    expect(check(source, text('<source><title>Anden samling</title></source>'))).toEqual([
+      'fdirs/samling/1900.xml: text bidrag source requires an editor.',
+    ]);
   });
 });

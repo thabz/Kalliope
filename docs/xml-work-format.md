@@ -63,7 +63,8 @@ De guldhenboelgende Vaenge
 - `id`: vaerkets id. Skal svare til filnavnet uden `.xml`.
 - `author`: digterens id. Skal svare til mappen i `fdirs`.
 - `status`: typisk `complete` eller `incomplete`.
-- `type`: typisk `poetry`; enkelte vaerker bruger `prose`.
+- `type`: typisk `poetry`; enkelte værker bruger `prose`. Antologier bruger
+  `anthology`, uanset hvilken mappe værkfilen ligger i.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
 - `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
   tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
@@ -226,6 +227,11 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `editor` uden `type` vises som `udg. af`. Brug `type="editor"` for en
   redaktør i snævrere forstand, fx ved antologier; det vises som `red. af`.
   Typen bevares som valgfrit `type` på redaktøren i JSON. Andre typer afvises.
+- Alle værker med `type="anthology"` skal have mindst én struktureret
+  `<source>` i `<workhead>`, og hver værkkilde skal angive mindst én `<editor>`.
+  Teksternes egne bibliografiske kildeangivelser skal ligeledes være
+  strukturerede med en redaktør; tomme side-/kildereferencer arver værkkilden.
+  Korpustesten bruger udelukkende værkets type, uanset mappe og færdigstatus.
 - En struktureret kilde må ikke blandes med fritekst. Eksisterende fritekstkilder
   fungerer fortsat. Kildeattributter og `identifiers` bevares i begge formater.
 - Supplerende kildeforklaringer placeres i `<workhead><notes><note>`, med tydelig
