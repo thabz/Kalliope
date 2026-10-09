@@ -86,7 +86,8 @@ const parseWork = filename => {
 
 // Consume the gzip through a pipeline so corrupt/truncated input rejects too.
 const streamCorpus = async (filename, consume) => {
-  await pipeline(fs.createReadStream(filename), createGunzip(), async source => {
+  let recordError = null;
+  const consumeSource = async source => {
     const decoder = new StringDecoder('utf8');
     let pending = '';
     let lineNumber = 0;
@@ -98,7 +99,8 @@ const streamCorpus = async (filename, consume) => {
       try {
         consume(JSON.parse(line));
       } catch (error) {
-        throw new Error(`${filename}:${lineNumber}: ${error.message}`);
+        recordError = new Error(`${filename}:${lineNumber}: ${error.message}`);
+        throw recordError;
       }
     };
     for await (const chunk of source) {
@@ -110,7 +112,14 @@ const streamCorpus = async (filename, consume) => {
     if (pending.length > 0) {
       consumeLine(pending);
     }
-  });
+  };
+  try {
+    await pipeline(fs.createReadStream(filename), createGunzip(), consumeSource);
+  } catch (error) {
+    // Node 20 can report the pipeline's subsequent AbortError instead of the
+    // consumer error. Keep the record location when JSON parsing failed.
+    throw recordError ?? error;
+  }
 };
 
 const lineSimilarity = (left, right) => {
