@@ -299,6 +299,29 @@ Et citat
     expect(formatWorkXml(formatted)).toBe(formatted);
   });
 
+  it.each(['workhead', 'head'])('puts subtitle lines on indented lines in %s', head => {
+    const xml = `<${head}>
+  <subtitle><line>Violin</line><line>Anden Del<footnote>Kildens note.</footnote></line></subtitle>
+</${head}>
+`;
+    const expected = `<${head}>
+  <subtitle>
+    <line>Violin</line>
+    <line>Anden Del<footnote>Kildens note.</footnote></line>
+  </subtitle>
+</${head}>
+`;
+
+    expect(formatWorkXml(xml)).toBe(expected);
+    expect(formatWorkXml(expected)).toBe(expected);
+  });
+
+  it('keeps subtitles without line elements inline', () => {
+    const xml = '<head>\n  <subtitle>Anden Del<footnote>Kildens note.</footnote></subtitle>\n</head>\n';
+
+    expect(formatWorkXml(xml)).toBe(xml);
+  });
+
   it('always leaves a blank line after text and section elements', () => {
     expect(formatWorkXml('<workbody>\n<text>Tekst</text>\n</workbody>\n'))
       .toContain('</text>\n\n</workbody>');
