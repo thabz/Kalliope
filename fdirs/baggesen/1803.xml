@@ -10,7 +10,13 @@
   <pictures>
     <picture type="titlepage" src="1803-p1.jpg"><transcription>Parthenäis / oder / Die Alpenreise. / Ein idyllisches Epos / in neun Gesängen / von / Jens Baggesen / mit sechs Kupfern nach Schnorr u. Schubert / von Schule. / Hamburg und Mainz / bei Gottfried Vollmer. / C. Martin sc. Lipsiae.</transcription></picture>
   </pictures>
-  <source href="https://www.kb.dk/e-mat/dod/11540804011A.pdf" facsimile="11540804011A" facsimile-pages-num="393">Jens Baggesen: <i>Parthenäis oder Die Alpenreise. Ein idyllisches Epos in neun Gesängen</i>, Gottfried Vollmer, Hamburg og Mainz, [1804].</source>
+  <source href="https://www.kb.dk/e-mat/dod/11540804011A.pdf" facsimile="11540804011A" facsimile-pages-num="393">
+    <author id="baggesen">Jens Baggesen</author>
+    <title>Parthenäis oder Die Alpenreise. Ein idyllisches Epos in neun Gesängen</title>
+    <place>Hamburg og Mainz</place>
+    <publisher>Gottfried Vollmer</publisher>
+    <year>[1804]</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-29T20:14:44+02:00"/>

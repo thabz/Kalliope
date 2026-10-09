@@ -237,6 +237,36 @@ const collectRedundantTextTitleMetadataIssues = (filename, document) => {
   return issues;
 };
 
+const collectSourceAuthorIssues = (filename, document) => {
+  const work = document.documentElement;
+  const workAuthor = work.getAttribute('author');
+  if (
+    workAuthor == null || workAuthor === '' ||
+    /^fdirs\/(?:antologier|tidsskrifter)[^/]+\//u.test(filename)
+  ) {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  if (workhead == null) {
+    return [];
+  }
+  const issues = [];
+  for (const source of directChildren(workhead, 'source')) {
+    const personIds = [
+      ...directChildren(source, 'author'),
+      ...directChildren(source, 'translator'),
+    ].map(person => person.getAttribute('id'))
+      .filter(id => id != null && id !== '');
+    if (personIds.length > 0 && !personIds.includes(workAuthor)) {
+      const sourceId = source.getAttribute('id') ?? 'default';
+      issues.push(
+        `${filename}: source "${sourceId}" has author/translator ids [${personIds.join(', ')}] that do not match kalliopework/@author="${workAuthor}".`,
+      );
+    }
+  }
+  return issues;
+};
+
 const collectSourceStructureIssues = (filename, document) => {
   const pageOnlySources = [];
   const pageIntervals = [];
@@ -474,6 +504,7 @@ export {
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectSourceAuthorIssues,
   collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
   parseWorkXml,

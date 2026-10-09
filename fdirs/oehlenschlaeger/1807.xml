@@ -4,7 +4,14 @@
 <workhead>
   <title>Nordiske Digte</title>
   <year>1807</year>
-  <source href="https://www.kb.dk/e-mat/dod/11520805657D.pdf" facsimile="11520805657D" facsimile-pages-num="475" facsimile-pages-offset="47">Adam Oehlenschläger: <i>Nordiske Digte.</i> Kiøbenhavn, trykt hos og forlagt af Andreas Seidelin. 1807.</source>
+  <source href="https://www.kb.dk/e-mat/dod/11520805657D.pdf" facsimile="11520805657D" facsimile-pages-num="475" facsimile-pages-offset="47">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Nordiske Digte</title>
+    <place>Kiøbenhavn</place>
+    <publisher>Andreas Seidelin</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1807</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-6.1-sol" datetime="2026-09-29T22:57:28+02:00"/>
