@@ -5,6 +5,7 @@ import {
   parsePageInterval,
 } from './build-static/source-validation.js';
 import { safeGetInnerXML } from './build-static/xml.js';
+import { parseSourceBibliography } from './build-static/source.js';
 
 const directChildren = (element, name) =>
   Array.from(element.childNodes).filter(
@@ -234,6 +235,101 @@ const collectRedundantTextTitleMetadataIssues = (filename, document) => {
     });
   });
 
+  return issues;
+};
+
+const collectSingleLineSubtitleIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('subtitle')).forEach(subtitle => {
+    const head = subtitle.parentNode;
+    if (head.nodeName !== 'head' && head.nodeName !== 'workhead') {
+      return;
+    }
+    if (directChildren(subtitle, 'line').length === 1) {
+      const ownerId = head.parentNode.getAttribute('id') ?? '(missing id)';
+      issues.push(
+        `${filename}: ${head.nodeName} ${ownerId} has a <subtitle> with only one <line>; remove the <line> wrapper.`,
+      );
+    }
+  });
+
+  return issues;
+};
+
+const collectAnthologySourceIssues = (filename, document) => {
+  const work = document.documentElement;
+  if (work.getAttribute('type') !== 'anthology') {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  const workSources = workhead == null ? [] : directChildren(workhead, 'source');
+  const issues = [];
+  if (workSources.length === 0) {
+    issues.push(`${filename}: anthology requires a structured workhead source with an editor.`);
+  }
+  const sources = workSources.map(source => ({
+    source,
+    context: `work source "${source.getAttribute('id') ?? 'default'}"`,
+  }));
+  for (const text of textEntries(document)) {
+    const head = directChild(text, 'head');
+    if (head == null) {
+      continue;
+    }
+    for (const source of directChildren(head, 'source')) {
+      // Empty text sources inherit the selected work source's bibliography.
+      if (safeGetInnerXML(source).trim().length === 0) {
+        continue;
+      }
+      sources.push({
+        source,
+        context: `text ${text.getAttribute('id')} source`,
+      });
+    }
+  }
+  for (const { source, context } of sources) {
+    try {
+      const bibliography = parseSourceBibliography(source);
+      if (bibliography == null) {
+        issues.push(`${filename}: ${context} requires a structured bibliography with an editor.`);
+      } else if ((bibliography.editors ?? []).length === 0) {
+        issues.push(`${filename}: ${context} requires an editor.`);
+      }
+    } catch (error) {
+      issues.push(`${filename}: ${context}: ${error.message}`);
+    }
+  }
+  return issues;
+};
+
+const collectSourceAuthorIssues = (filename, document) => {
+  const work = document.documentElement;
+  const workAuthor = work.getAttribute('author');
+  if (
+    workAuthor == null || workAuthor === '' ||
+    /^fdirs\/(?:antologier|tidsskrifter)[^/]+\//u.test(filename)
+  ) {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  if (workhead == null) {
+    return [];
+  }
+  const issues = [];
+  for (const source of directChildren(workhead, 'source')) {
+    const personIds = [
+      ...directChildren(source, 'author'),
+      ...directChildren(source, 'translator'),
+    ].map(person => person.getAttribute('id'))
+      .filter(id => id != null && id !== '');
+    if (personIds.length > 0 && !personIds.includes(workAuthor)) {
+      const sourceId = source.getAttribute('id') ?? 'default';
+      issues.push(
+        `${filename}: source "${sourceId}" has author/translator ids [${personIds.join(', ')}] that do not match kalliopework/@author="${workAuthor}".`,
+      );
+    }
+  }
   return issues;
 };
 
@@ -474,7 +570,10 @@ export {
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectTextStructureIssues,
   parseWorkXml,
 };

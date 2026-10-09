@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1827" author="antologierdk" status="incomplete" type="poetry">
+<kalliopework id="1827" author="antologierdk" status="incomplete" type="anthology">
 <workhead>
   <title>Digter-Krands</title>
   <subtitle>En Samling af udkaarede ældre og nyere Selskabssange</subtitle>
@@ -8,7 +8,14 @@
   <pictures>
     <picture type="titlepage" src="1827-p1.jpg"><transcription>Digter-Krands. // En Samling / af / udkaarne ældre og nyere / Selskabssange. // Odense 1827. / Trykt og forlagt af S. Hempel, / Eier af Fyens Stifts Adressekontoir.</transcription></picture>
   </pictures>
-  <source href="https://www.kb.dk/e-mat/dod/115308013592-color.pdf" facsimile="115308013592-color.pdf" facsimile-pages-num="557" facsimile-pages-offset="13">Digter-Krands : en Samling af udkaarede ældre og nyere Selskabssange, bind 2, Odense, S. Hempel, 1827.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308013592-color.pdf" facsimile="115308013592-color.pdf" facsimile-pages-num="557" facsimile-pages-offset="13">
+    <title>Digter-Krands: en Samling af udkaarede ældre og nyere Selskabssange</title>
+    <editor id="hempel" type="editor">S. Hempel</editor>
+    <volume>2</volume>
+    <place>Odense</place>
+    <publisher>S. Hempel</publisher>
+    <year>1827</year>
+  </source>
   <quality>kilde</quality>
 </workhead>
 <workbody>
@@ -308,7 +315,12 @@
 <head>
   <title>Strikkevise</title>
   <firstline>Vist ingen Amazone</firstline>
-  <source pages="419-420">Digter-Krands, bind 2, 1827.</source>
+  <source pages="419-420">
+    <title>Digter-Krands</title>
+    <editor id="hempel" type="editor">S. Hempel</editor>
+    <volume>2</volume>
+    <year>1827</year>
+  </source>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -382,7 +394,12 @@ Hvis Brud ei strikke kan.
 <head>
   <title>Rheinweinlied</title>
   <firstline>Bekränzt mit Laub den lieben vollen Becher</firstline>
-  <source pages="441-442">Digter-Krands, bind 2, 1827.</source>
+  <source pages="441-442">
+    <title>Digter-Krands</title>
+    <editor id="hempel" type="editor">S. Hempel</editor>
+    <volume>2</volume>
+    <year>1827</year>
+  </source>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

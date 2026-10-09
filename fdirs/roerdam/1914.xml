@@ -4,7 +4,14 @@
   <title>Roser</title>
   <subtitle>Kærlighedsdigte</subtitle>
   <year>1914</year>
-  <source href="https://www.kb.dk/e-mat/dod/115408004013-color.pdf" facsimile="115408004013-color" facsimile-pages-num="127" facsimile-pages-offset="3">Valdemar Rørdam: <i>Roser. Kærlighedsdigte</i>, Gyldendalske Boghandel, Nordisk Forlag, Kjøbenhavn og Kristiania, 1914. Trykt i Kjøbenhavn, Forlagstrykkeriet. Serien <i>Smaa Digtsamlinger</i>.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115408004013-color.pdf" facsimile="115408004013-color" facsimile-pages-num="127" facsimile-pages-offset="3">
+    <author id="roerdam">Valdemar Rørdam</author>
+    <title>Roser. Kærlighedsdigte</title>
+    <place>Kjøbenhavn og Kristiania</place>
+    <publisher>Gyldendalske Boghandel, Nordisk Forlag</publisher>
+    <printer>Forlagstrykkeriet</printer>
+    <year>1914</year>
+  </source>
   <proofreadings>
     <proofreading model="gpt-6" datetime="2026-09-13T21:23:35.515870+00:00"/>
     <proofreading model="gpt-6" datetime="2026-09-28T08:25:21+00:00"/>
@@ -14,6 +21,9 @@
     <picture src="1914-p1.jpg" type="titlepage"><transcription>Valdemar Rørdam / Roser / Kærlighedsdigte // Kjøbenhavn og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCXIV</transcription></picture>
     <picture src="1914-p3.jpg" type="illustration">Serietitelbladet til <i>Smaa Digtsamlinger</i> med roseillustration.</picture>
   </pictures>
+  <notes>
+    <note>Kildeangivelsen oplyser, at Roser er trykt i Kjøbenhavn på Forlagstrykkeriet.</note>
+  </notes>
 </workhead>
 <workbody>
 

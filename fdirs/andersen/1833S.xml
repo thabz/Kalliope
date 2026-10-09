@@ -10,7 +10,13 @@
   <notes>
     <note>De med * betegnede Stykker findes ikke i <i>Digte</i> eller <i>Phantasier og Skizzer</i>; ere enten ikke tilforn trykte eller staae aftrykte i Blade og Tidsskrifter.</note>
   </notes>
-  <source href="https://www.kb.dk/e-mat/dod/115308039480-color.pdf" facsimile="115308039480_color" facsimile-pages-num="385" facsimile-pages-offset="19">H. C. Andersen: <i>Samlede Digte</i>, C. A. Reitzel, Kbh., 1833.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308039480-color.pdf" facsimile="115308039480_color" facsimile-pages-num="385" facsimile-pages-offset="19">
+    <author id="andersen">H. C. Andersen</author>
+    <title>Samlede Digte</title>
+    <place>Kbh.</place>
+    <publisher>C. A. Reitzel</publisher>
+    <year>1833</year>
+  </source>
   <proofreadings>
     <proofreading model="gpt-6-astra" datetime="2026-10-01T21:28:48+02:00"/>
   </proofreadings>

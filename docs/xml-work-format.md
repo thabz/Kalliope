@@ -18,6 +18,15 @@ hvert niveau.
 Indholdet i `<notes>` og `<pictures>` står altid på egne linjer. `<note>` og
 `<picture>` indrykkes ét niveau i forhold til deres beholder.
 
+I både `<workhead>` og tekstens `<head>` står `<line>`-elementer i `<subtitle>`
+på egne linjer og indrykkes ét niveau i forhold til `<subtitle>`, ligesom noter
+i `<notes>`. En undertitel uden `<line>` bliver på én linje.
+
+Brug kun `<line>` i `<subtitle>`, når undertitlen består af mindst to linjer.
+En undertitel med én linje skrives direkte, fx
+`<subtitle>Act. I. Scen. I.</subtitle>`. Korpustesten afviser en overflødig
+`<line>`-wrapper i både værk- og teksthoveder.
+
 Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
 og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
 ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.
@@ -63,7 +72,8 @@ De guldhenboelgende Vaenge
 - `id`: vaerkets id. Skal svare til filnavnet uden `.xml`.
 - `author`: digterens id. Skal svare til mappen i `fdirs`.
 - `status`: typisk `complete` eller `incomplete`.
-- `type`: typisk `poetry`; enkelte vaerker bruger `prose`.
+- `type`: typisk `poetry`; enkelte værker bruger `prose`. Antologier bruger
+  `anthology`, uanset hvilken mappe værkfilen ligger i.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
 - `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
   tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
@@ -196,6 +206,58 @@ Senere note-, metadata- og tekstændringer udløser ikke automatisk krav om en n
 attest.
 
 ### Workhead source
+
+Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniveau:
+
+```xml
+<source href="https://example.org/udgave">
+  <author id="heiberg">Peter Andreas Heiberg</author>
+  <title>Udvalgte Skrifter</title>
+  <editor id="borchsenius">Otto Borchsenius</editor>
+  <editor id="winkel-horn">Fr. Winkel Horn</editor>
+  <place>København</place>
+  <publisher>Otto B. Wroblewskys Forlag</publisher>
+  <year>1884</year>
+</source>
+```
+
+- `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`
+  og `year` er valgfrie og kan forekomme højst én gang. Alle felter indeholder
+  ikke-tom ren tekst. År kan bevare usikkerhed, fx `[1804]`.
+- `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
+  gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
+  vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- Når en værkkilde i `workhead` angiver `author/@id` eller `translator/@id`,
+  skal mindst ét af disse id'er matche `kalliopework/@author`. Ved en oversættelse
+  kan værkets digter være oversætteren. Kontrollen gælder hver værkkilde særskilt;
+  person-id'er er fortsat valgfrie. Antologier og tidsskrifter uden en individuel
+  værkforfatter er undtaget, og teksternes egne kildeangivelser kontrolleres ikke
+  mod værkets forfatter, da teksten kan have en anden forfatter.
+- `editor` uden `type` vises som `udg. af`. Brug `type="editor"` for en
+  redaktør i snævrere forstand, fx ved antologier; det vises som `red. af`.
+  Typen bevares som valgfrit `type` på redaktøren i JSON. Andre typer afvises.
+- Alle værker med `type="anthology"` skal have mindst én struktureret
+  `<source>` i `<workhead>`, og hver værkkilde skal angive mindst én `<editor>`.
+  Teksternes egne bibliografiske kildeangivelser skal ligeledes være
+  strukturerede med en redaktør; tomme side-/kildereferencer arver værkkilden.
+  Korpustesten bruger udelukkende værkets type, uanset mappe og færdigstatus.
+- En struktureret kilde må ikke blandes med fritekst. Eksisterende fritekstkilder
+  fungerer fortsat. Kildeattributter og `identifiers` bevares i begge formater.
+- Supplerende kildeforklaringer placeres i `<workhead><notes><note>`, med tydelig
+  angivelse af den relevante kilde. Serienavne indgår ikke i kildeformatet.
+- Visningen formateres centralt med kursiveret titel, `udg. af` eller `red. af`, `overs. af`,
+  udgave, `bind` og udgivelsessted. Forlag vises, når det findes; ellers vises
+  trykkeriet med `trykt hos`. Begge oplysninger bevares i maskindata.
+- Et tekstniveau med egen kildeangivelse erstatter hele den bibliografiske
+  angivelse fra den valgte værkkilde. Et tomt `<source pages="…"/>` arver den.
+  Eksisterende regler for URL, sidetal og facsimile er uændrede.
+
+JSON-API'et bevarer `source` som formatteret kilde og tilføjer valgfrit
+`bibliography`. Personrollerne hedder `authors`, `editors` og `translators`
+og er arrays med `name` og valgfrit `id`. Øvrige felter har XML-felternes navne
+og er strenge. Manglende felter udelades. Biografier og bulkdatasættet bruger
+fortsat deres eksisterende format.
+
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
 kun `<wikidata>` tilladt:

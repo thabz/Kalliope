@@ -2,9 +2,7 @@
 <kalliopework id="1861-24" author="oehlenschlaeger" status="complete" type="poetry" parent="1857-1862">
 <workhead>
   <title>Poetiske Skrifter</title>
-  <subtitle>
-    <line>Fire og Tyvende Bind. Digte, Sjette Deel.</line>
-  </subtitle>
+  <subtitle>Fire og Tyvende Bind. Digte, Sjette Deel.</subtitle>
   <linktitle>Samlede Skrifter, 24. Bind</linktitle>
   <toctitle><num>Bind 24.</num>Digte, Siette Deel</toctitle>
   <breadcrumbtitle>Bd. 24</breadcrumbtitle>
@@ -15,7 +13,15 @@
   <pictures>
     <picture src="1861-24-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1861) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Sjette Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 44 (6). / 1861.''.</picture>
   </pictures>
-  <source facsimile="115208057585_color" facsimile-pages-num="418" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 24, 1861.</source>
+  <source facsimile="115208057585_color" facsimile-pages-num="418" facsimile-pages-offset="18">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>24</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1861</year>
+  </source>
 </workhead>
 <workbody>
 
