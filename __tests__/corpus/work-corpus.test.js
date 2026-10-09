@@ -10,6 +10,7 @@ import {
   collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectSourceAuthorIssues,
@@ -76,6 +77,7 @@ describe('tracked work corpus', () => {
   let textFollowsNoteIssues;
   let textStructureIssues;
   let redundantTextTitleMetadataIssues;
+  let singleLineSubtitleIssues;
   let errataIssues;
   let unindexedAnthologyTexts;
   let wrappedSeparatorIssues;
@@ -110,6 +112,7 @@ describe('tracked work corpus', () => {
     textFollowsNoteIssues = [];
     textStructureIssues = [];
     redundantTextTitleMetadataIssues = [];
+    singleLineSubtitleIssues = [];
     errataIssues = [];
     unindexedAnthologyTexts = [];
     wrappedSeparatorIssues = [];
@@ -163,6 +166,9 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      singleLineSubtitleIssues.push(
+        ...collectSingleLineSubtitleIssues(filename, workDocument),
+      );
       sourceAuthorIssues.push(...collectSourceAuthorIssues(filename, workDocument));
       anthologySourceIssues.push(...collectAnthologySourceIssues(filename, workDocument));
       if (/<hr\b/u.test(xml)) {
@@ -365,6 +371,10 @@ describe('tracked work corpus', () => {
 
   it('does not retain text title metadata identical to the title', () => {
     expect(redundantTextTitleMetadataIssues).toEqual([]);
+  });
+
+  it('does not wrap a single subtitle line in a line element', () => {
+    expect(singleLineSubtitleIssues).toEqual([]);
   });
 
   it('keeps declared page-break markup consistent', () => {
