@@ -123,11 +123,7 @@ jobs:
           ELASTICSEARCH_URL: http://localhost:9200
 
       - name: Build container image
-        run: |
-          # Undgå Docker Hubs anonyme pull-grænse på GitHub-runners.
-          docker build \
-            --build-context node:20-bookworm-slim=docker-image://public.ecr.aws/docker/library/node:20-bookworm-slim \
-            --target runtime -t kalliope-ci-app .
+        run: docker build --target runtime -t kalliope-ci-app .
 
       - name: Start app in container and check homepage
         run: |
