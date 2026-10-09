@@ -7,7 +7,14 @@
   <notes>
     <note>Noter med foranstillet * er forfatterens egne.</note>
   </notes>
-  <source href="https://www.kb.dk/e-mat/dod/115408007852.pdf" facsimile="115408007852" facsimile-pages-num="291" facsimile-pages-offset="45">Edvard Storm: <i>Samlede Digte.</i> Kjøbenhavn, Trykt paa Gyldendals Forlag hos August Friderich Stein. 1785.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115408007852.pdf" facsimile="115408007852" facsimile-pages-num="291" facsimile-pages-offset="45">
+    <author id="storm">Edvard Storm</author>
+    <title>Samlede Digte</title>
+    <place>Kjøbenhavn</place>
+    <publisher>Gyldendals Forlag</publisher>
+    <printer>August Friderich Stein</printer>
+    <year>1785</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-26T12:43:41+02:00"/>

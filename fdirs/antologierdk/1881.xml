@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1881" author="antologierdk" status="complete" type="poetry">
+<kalliopework id="1881" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</title>
   <year>1881</year>
@@ -9,7 +9,15 @@
   <pictures>
     <picture type="titlepage" src="1881-p1.jpg"><transcription>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler. Samlede af Lauritz N. V. Balslev og M. E. Matthiessen. Første Bind. Odense. Den Miloske Boghandel. 1881.</transcription></picture>
   </pictures>
-  <source href="https://www.kb.dk/e-mat/dod/115308020230.pdf" facsimile="115308020230" facsimile-pages-num="135" facsimile-pages-offset="5">Lauritz N. V. Balslev og M. E. Matthiessen (saml.): <i>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</i>, første bind, Den Miloske Boghandel, Odense, 1881.</source>
+  <source href="https://www.kb.dk/e-mat/dod/115308020230.pdf" facsimile="115308020230" facsimile-pages-num="135" facsimile-pages-offset="5">
+    <title>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</title>
+    <editor id="balslevlnv" type="editor">Lauritz N. V. Balslev</editor>
+    <editor type="editor">M. E. Matthiessen</editor>
+    <volume>1</volume>
+    <place>Odense</place>
+    <publisher>Den Miloske Boghandel</publisher>
+    <year>1881</year>
+  </source>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-06T12:55:48+02:00"/>
@@ -39,7 +47,7 @@ Hensigten med Udgivelsen af denne lille Samling Sange er at afhjælpe Savnet af 
 </body>
 </text>
 
-<text id="kaalund2026090601" author="kaalund">
+<text id="kaalund2026090601" author="kaalund" variant="kaalund2001071801">
 <head>
   <firstline>Paa det jævne! Paa det jævne!</firstline>
   <source facsimile-pages="9"/>
@@ -116,7 +124,7 @@ men hun er saa ung, og saa yndig ser hun ud.
 </body>
 </text>
 
-<text id="grundtvig2026090601" author="grundtvig">
+<text id="grundtvig2026090601" author="grundtvig" variant="modersmaalet">
 <head>
   <title><num>2.</num>Modersmaalet</title>
   <subtitle>Melodi af H. Rung.</subtitle>
@@ -281,7 +289,7 @@ da er Danmark øde!
 </body>
 </text>
 
-<text id="boyecj2026090601" author="boyecj">
+<text id="boyecj2026090601" author="boyecj" variant="boyecj2002010101">
 <head>
   <title><num>5.</num>Danmark</title>
   <subtitle>Mel. af Weyse.</subtitle>
@@ -321,7 +329,7 @@ her er det smukt at leve, godt at dø!
 </body>
 </text>
 
-<text id="oehlenschlaeger2026090601" author="oehlenschlaeger">
+<text id="oehlenschlaeger2026090601" author="oehlenschlaeger" variant="oehlen1999062847">
 <head>
   <title><num>6.</num>Fædrelandet</title>
   <subtitle>Mel. af H. E. Krøyer.</subtitle>
@@ -408,7 +416,7 @@ skal der tone Sejerssang,
 </body>
 </text>
 
-<text id="grundtvig2026090603" author="grundtvig">
+<text id="grundtvig2026090603" author="grundtvig" variant="grundtvig2002031701">
 <head>
   <title><num>8.</num>Danmarks Trøst</title>
   <subtitle>Mel. af Zinck.</subtitle>
@@ -456,7 +464,7 @@ naar faa har for meget og færre for lidt.
 </body>
 </text>
 
-<text id="wilster2026090601" author="wilster">
+<text id="wilster2026090601" author="wilster" variant="wilster2020011101">
 <head>
   <title><num>9.</num>Fædrelandssang</title>
   <subtitle>Mel. af Weyse.</subtitle>
@@ -803,7 +811,7 @@ jeg bliver her i Danmark.
 </body>
 </text>
 
-<text id="moellerpm2026090601" author="moellerpm">
+<text id="moellerpm2026090601" author="moellerpm" variant="moellerpm1999111401">
 <head>
   <title><num>15.</num>Glæde over Danmark</title>
   <subtitle>Mel. af C. Mortensen.</subtitle>
@@ -858,7 +866,7 @@ takker Gud, mens fra min Læbe lyder:
 </body>
 </text>
 
-<text id="oehlenschlaeger2026090602" author="oehlenschlaeger">
+<text id="oehlenschlaeger2026090602" author="oehlenschlaeger" variant="oehlen1999062842">
 <head>
   <title><num>16.</num>Hjemve</title>
   <subtitle>Mel. af H. Rung.</subtitle>
@@ -996,7 +1004,7 @@ højtidsfuldt til gamle Danmarks Pris!
 </body>
 </text>
 
-<text id="ingemann2026090601" author="ingemann">
+<text id="ingemann2026090601" author="ingemann" variant="ingemann2001112501">
 <head>
   <title><num>19.</num>Danebrog</title>
   <subtitle>Mel. af R. Bay.</subtitle>
@@ -1104,7 +1112,7 @@ vi’ os til Manddom ind.
 </body>
 </text>
 
-<text id="grundtvig2026090606" author="grundtvig">
+<text id="grundtvig2026090606" author="grundtvig" variant="grundtvig20010618133">
 <head>
   <title><num>21.</num>Korsbanneret</title>
   <subtitle>Egen Melodi.</subtitle>
@@ -1149,7 +1157,7 @@ skjærpet vi har til en Dyst.
 </body>
 </text>
 
-<text id="grundtvig2026090607" author="grundtvig">
+<text id="grundtvig2026090607" author="grundtvig" variant="grundtvig2003032301">
 <head>
   <title><num>22.</num>Skjold</title>
   <subtitle>Folkemelodi.</subtitle>
@@ -1192,7 +1200,7 @@ saa Skjalde sjunge om Danmarks Skjold“.
 </body>
 </text>
 
-<text id="folkeviser2026090601" author="folkeviser">
+<text id="folkeviser2026090601" author="folkeviser" variant="folke2001032502">
 <head>
   <title><num>23.</num>Kristjan den anden</title>
   <subtitle>Mel. af Chr. Bull.</subtitle>
@@ -1287,7 +1295,7 @@ Men Ørnen bygger i Fjældet ud.
 </body>
 </text>
 
-<text id="blicher2026090601" author="blicher">
+<text id="blicher2026090601" author="blicher" variant="blicher20030915142">
 <head>
   <title><num>24.</num>Kristjan den fjerde</title>
   <subtitle>Mel. af H. Rung.</subtitle>
@@ -1560,7 +1568,7 @@ Sit Løfte har han holdt, den tapre Landsoldat!
 </body>
 </text>
 
-<text id="lembcke2026090602" author="lembcke">
+<text id="lembcke2026090602" author="lembcke" variant="lembcke1999100501">
 <head>
   <title><num>28.</num>Sønderjylland</title>
   <subtitle>Som: Hr. Peder kasted’ Runer over Spange.</subtitle>
@@ -1613,7 +1621,7 @@ tunge Slag drøned’ over Heden,
 </body>
 </text>
 
-<text id="grundtvig2026090608" author="grundtvig">
+<text id="grundtvig2026090608" author="grundtvig" variant="grundtvig2002042701">
 <head>
   <title><num>29.</num>Isted-Slaget</title>
   <subtitle>Norsk Folkemelodi.</subtitle>
@@ -2525,7 +2533,7 @@ utofver Nordanland!
 </body>
 </text>
 
-<text id="runeberg2026090601" author="runeberg" lang="sv">
+<text id="runeberg2026090601" author="runeberg" lang="sv" variant="runeberg20190313">
 <head>
   <title><num>49.</num>Finsk Sang</title>
   <subtitle>Mel. af Pacius.</subtitle>
@@ -2573,7 +2581,7 @@ var fritt, var gladt, var tryggt!
 </body>
 </text>
 
-<text id="bjoernson2026090601" author="bjoernson" lang="no">
+<text id="bjoernson2026090601" author="bjoernson" lang="no" variant="bjoernson2020042602">
 <head>
   <title><num>50.</num>Norsk Fædrelandssang</title>
   <subtitle>Mel. af Nordraak.</subtitle>
@@ -3022,7 +3030,7 @@ og venter trøstig — den kommer nok.
 </body>
 </text>
 
-<text id="richardt2026090603" author="richardt">
+<text id="richardt2026090603" author="richardt" variant="richardt20190730180">
 <head>
   <title><num>60.</num>De unges Arbejde</title>
   <subtitle>Som: Vift stolt paa Kodans Bølge.</subtitle>
@@ -3105,7 +3113,7 @@ kan med Guds Hjælp og lykkes os!
 </body>
 </text>
 
-<text id="folkeviser2026090602" author="folkeviser">
+<text id="folkeviser2026090602" author="folkeviser" variant="folke2000013102">
 <head>
   <title><num>62.</num>Tonens Magt</title>
   <subtitle>Svensk Folkemelodi.</subtitle>
@@ -3252,7 +3260,7 @@ vattenfågelns lek kring fjärd och ö.
 </body>
 </text>
 
-<text id="richardt2026090604" author="richardt">
+<text id="richardt2026090604" author="richardt" variant="richardt2002050908">
 <head>
   <title><num>65.</num>Ved Lærkens Komme</title>
   <subtitle>Egen Melodi.</subtitle>
@@ -3300,7 +3308,7 @@ den Pinseglans, der dølger sig bag Taagen.
 </body>
 </text>
 
-<text id="richardt2026090605" author="richardt">
+<text id="richardt2026090605" author="richardt" variant="richardt2002050905">
 <head>
   <title><num>66.</num>Lær mig</title>
   <subtitle>Mel. af Nutzhorn og Malling.</subtitle>
@@ -3343,7 +3351,7 @@ Lær mig, grønne Lunde.
 </body>
 </text>
 
-<text id="grundtvig2026090612" author="grundtvig">
+<text id="grundtvig2026090612" author="grundtvig" variant="grundtvig2005080101">
 <head>
   <title><num>67.</num>Livsoplysning</title>
   <subtitle>Som: Det er saa yndigt at følges ad.</subtitle>
@@ -3515,7 +3523,7 @@ i Himmel og paa Jord.
 </body>
 </text>
 
-<text id="stub2026090601" author="stub">
+<text id="stub2026090601" author="stub" variant="stub2019061407">
 <head>
   <title><num>71.</num>Livet som en Sejlads</title>
   <subtitle>Gammel Folkemelodi.</subtitle>
@@ -3631,7 +3639,7 @@ og i hver Livsgnist skjælver.
 </body>
 </text>
 
-<text id="ingemann2026090604" author="ingemann">
+<text id="ingemann2026090604" author="ingemann" variant="ingemann2001101101">
 <head>
   <title><num>74.</num>Holger Danskes Sang om Livet</title>
   <subtitle>Mel. af J. Jørgensen.</subtitle>
@@ -4018,7 +4026,7 @@ et Trin paa vor Himmelstige.
 </body>
 </text>
 
-<text id="ingemann2026090607" author="ingemann">
+<text id="ingemann2026090607" author="ingemann" variant="ingemann1831a0">
 <head>
   <title><num>83.</num>Giv Tid!</title>
   <subtitle>Mel. af H. Rung.</subtitle>
@@ -4261,7 +4269,7 @@ luk mig i Haven ind!
 </body>
 </text>
 
-<text id="ingemann2026090609" author="ingemann">
+<text id="ingemann2026090609" author="ingemann" variant="ingemann1837b1">
 <head>
   <title><num>89.</num>Ved Solopgang</title>
   <subtitle>Mel. af Weyse.</subtitle>
@@ -4304,7 +4312,7 @@ og vor glade Morgensang fornemmer.
 </body>
 </text>
 
-<text id="grundtvig2026090616" author="grundtvig">
+<text id="grundtvig2026090616" author="grundtvig" variant="grundtvigandresalmera16">
 <head>
   <title><num>90.</num>Morgensang</title>
   <subtitle>Mel. af Barnekow.</subtitle>
@@ -4513,7 +4521,7 @@ med Barnetro at istemme Amen!
 </body>
 </text>
 
-<text id="ingemann2026090610" author="ingemann">
+<text id="ingemann2026090610" author="ingemann" variant="ingemann1838a0">
 <head>
   <title><num>95.</num>Ved Solnedgang</title>
   <subtitle>Mel. af Weyse.</subtitle>

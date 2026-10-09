@@ -52,7 +52,10 @@ const build_section_toc = (section, workAuthorId = null) => {
         : sourceTextId;
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
-      const title = extractTitle(head, 'title') || firstline;
+      const title =
+        extractTitle(head, 'title') ??
+        firstline ??
+        extractTitle(head, 'linktitle');
       const toctitle = extractTitle(head, 'toctitle') || title;
       toc.push({
         type: 'text',

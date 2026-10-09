@@ -13,6 +13,9 @@
     <picture src="1976-4-p1.jpg">Titelbladet til <i>Samlede Skrifter, første bind</i> (1976) lyder ,,Emil Aarestrups / Samlede Skrifter / udgivne af / Hans Brix og Palle Runkjær / Første Bind // C. A. Reitzels Boghandel / 1976.''</picture>
   </pictures>
   <source facsimile="1976-4" facsimile-pages-num="191" facsimile-pages-offset="9">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -501,7 +504,7 @@ Det kan du aldrig miste.
   <title>Til O. Bang</title>
   <firstline>Mellem Lolliker tilhuse</firstline>
   <notes>
-    <note>O. Bang er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
+    <note><a person="bango">O. Bang</a> er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
   </notes>
   <source pages="23-26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

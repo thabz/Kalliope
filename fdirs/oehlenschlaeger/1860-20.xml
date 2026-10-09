@@ -15,7 +15,15 @@
   <pictures>
     <picture src="1860-20-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Anden Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''.</picture>
   </pictures>
-  <source facsimile="130023479606_color" facsimile-pages-num="368" facsimile-pages-offset="16">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 20, 1860.</source>
+  <source facsimile="130023479606_color" facsimile-pages-num="368" facsimile-pages-offset="16">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>20</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1860</year>
+  </source>
 </workhead>
 <workbody>
 

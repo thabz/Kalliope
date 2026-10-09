@@ -50,7 +50,6 @@ import {
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
-  safeGetInnerXMLWithout,
   getIdentifiers,
   identifierAllowlist,
   tagName,
@@ -107,6 +106,7 @@ import {
 } from './build-static/benchmarking.js';
 import {
   collectSourceDigitalUrl,
+  resolveSourceReference,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
 } from './build-static/source.js';
@@ -337,7 +337,10 @@ const handle_text = async (
   const textDates = extractDates(head);
   validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
-  const title = extractTitle(head, 'title') ?? firstline; // {title: xxx, prefix: xxx}
+  const title =
+    extractTitle(head, 'title') ??
+    firstline ??
+    extractTitle(head, 'linktitle');
   const effectiveTitles = effectiveTextTitles({
     firstline,
     title,
@@ -492,11 +495,10 @@ const handle_text = async (
     }
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
-    let sourceBookRef = workSource == null ? null : workSource.source;
-    const sourceNodeInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
-    if (sourceNodeInner.length > 0) {
-      sourceBookRef = sourceNodeInner;
-    }
+    const sourceReference = resolveSourceReference({
+      sourceNode, inheritedSource: workSource, poets: collected.poets,
+    });
+    const sourceBookRef = sourceReference.source;
     const digitalUrl = resolveSourceDigitalUrlForText({
       sourceNode,
       sourceForText: workSource,
@@ -553,8 +555,8 @@ const handle_text = async (
       }
     }
     source = {
-      source: sourceBookRef,
-    identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
+      ...sourceReference,
+      identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
       facsimilePageCount,
@@ -714,11 +716,14 @@ const handle_work = async (work) => {
             anthologyText ? publicationTextId(textId) : textId;
           const head = getChildByTagName(part, 'head');
           const firstline = extractTitle(head, 'firstline');
-          const title = extractTitle(head, 'title') || firstline;
+          const title =
+            extractTitle(head, 'title') ??
+            firstline ??
+            extractTitle(head, 'linktitle');
           const indextitle = extractTitle(head, 'indextitle') || title;
           const toctitle = extractTitle(head, 'toctitle') || title;
           if (indextitle == null) {
-            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler førstelinje, indextitle, title og linktitle i ${poetId}/${workId}.xml`;
           }
           validateFirstlineMarkup(
             firstline,
@@ -732,7 +737,7 @@ const handle_work = async (work) => {
             throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
           }
           if (toctitle == null) {
-            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
           }
           if (firstline != null) {
             // Kun digte skal indekseres
@@ -1393,6 +1398,7 @@ const works_second_pass = async (collected) => {
       const sourceFiles = new Set([
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/source.js',
         `fdirs/${poetId}/info.xml`,
         filename,
       ]);
@@ -1416,10 +1422,10 @@ const works_second_pass = async (collected) => {
       let sources = {};
       getChildrenByTagName(head, 'source').forEach((sourceNode) => {
         let source = null;
-        const sourceInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
-        if (sourceInner != null && sourceInner.length > 0) {
+        const sourceReference = resolveSourceReference({ sourceNode, poets: collected.poets });
+        if (sourceReference.source != null) {
           source = {
-            source: sourceInner,
+            ...sourceReference,
             identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
           };
         }
@@ -1487,6 +1493,7 @@ const build_poet_works_json = (collected) => {
       !isFileModified(
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/source.js',
         `fdirs/${poetId}/info.xml`,
         `fdirs/${poetId}/artwork.xml`,
         ...workFilenames,
@@ -1620,8 +1627,8 @@ const main = async () => {
   build_dict_first_pass(collected);
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
-  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('works_second_pass', works_second_pass, collected);
+  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',
