@@ -5,6 +5,7 @@ import {
   parsePageInterval,
 } from './build-static/source-validation.js';
 import { safeGetInnerXML } from './build-static/xml.js';
+import { parseSourceBibliography } from './build-static/source.js';
 
 const directChildren = (element, name) =>
   Array.from(element.childNodes).filter(
@@ -234,6 +235,52 @@ const collectRedundantTextTitleMetadataIssues = (filename, document) => {
     });
   });
 
+  return issues;
+};
+
+const collectAnthologySourceIssues = (filename, document) => {
+  const work = document.documentElement;
+  if (work.getAttribute('type') !== 'anthology') {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  const workSources = workhead == null ? [] : directChildren(workhead, 'source');
+  const issues = [];
+  if (workSources.length === 0) {
+    issues.push(`${filename}: anthology requires a structured workhead source with an editor.`);
+  }
+  const sources = workSources.map(source => ({
+    source,
+    context: `work source "${source.getAttribute('id') ?? 'default'}"`,
+  }));
+  for (const text of textEntries(document)) {
+    const head = directChild(text, 'head');
+    if (head == null) {
+      continue;
+    }
+    for (const source of directChildren(head, 'source')) {
+      // Empty text sources inherit the selected work source's bibliography.
+      if (safeGetInnerXML(source).trim().length === 0) {
+        continue;
+      }
+      sources.push({
+        source,
+        context: `text ${text.getAttribute('id')} source`,
+      });
+    }
+  }
+  for (const { source, context } of sources) {
+    try {
+      const bibliography = parseSourceBibliography(source);
+      if (bibliography == null) {
+        issues.push(`${filename}: ${context} requires a structured bibliography with an editor.`);
+      } else if ((bibliography.editors ?? []).length === 0) {
+        issues.push(`${filename}: ${context} requires an editor.`);
+      }
+    } catch (error) {
+      issues.push(`${filename}: ${context}: ${error.message}`);
+    }
+  }
   return issues;
 };
 
@@ -505,6 +552,7 @@ export {
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
   collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectRedundantTextTitleMetadataIssues,
   collectTextStructureIssues,
   parseWorkXml,

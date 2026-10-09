@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1767" author="antologiergb" status="incomplete" type="poetry">
+<kalliopework id="1767" author="antologiergb" status="incomplete" type="anthology">
 <workhead>
   <title>Reliques of Ancient English Poetry</title>
   <year>1767</year>
   <notes>
     <note>Kalliope bringer foreløbig kun den tekst, som er optaget nedenfor.</note>
   </notes>
-  <source href="https://en.wikisource.org/wiki/Index:Percy%27s_Reliques_of_Ancient_English_Poetry,_Volume_3,_1767.djvu">Thomas Percy (udg.): <i>Reliques of Ancient English Poetry</i>, 2. udg., bd. 3, J. Dodsley, London, 1767.</source>
+  <source href="https://en.wikisource.org/wiki/Index:Percy%27s_Reliques_of_Ancient_English_Poetry,_Volume_3,_1767.djvu">
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+    <edition>2. udg.</edition>
+    <volume>3</volume>
+    <place>London</place>
+    <publisher>J. Dodsley</publisher>
+    <year>1767</year>
+  </source>
 </workhead>
 <workbody>
 

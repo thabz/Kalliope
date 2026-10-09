@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1835" author="antologierdk" status="incomplete" type="poetry">
+<kalliopework id="1835" author="antologierdk" status="incomplete" type="anthology">
 <workhead>
   <title>Poetisk Læsebog for Børn og barnlige Sjæle</title>
   <subtitle>til Brug saavel i Skolen som i Huset</subtitle>
@@ -11,7 +11,14 @@
   <pictures>
     <picture type="titlepage" src="1835-p1.jpg"><transcription>Poetisk Læsebog / for / Børn og barnlige Sjæle, / til Brug saavel i Skolen som i Huset. // Samlet, udgivet og forlagt af A. S. // Sælges til Fordeel for det forenede Velgjørenheds- / Selskabs Skoler og koster, — hæftet og med Omslag, / — 1 Rbdlr. // Kjøbenhavn. / Trykt hos Bianco Luno &amp; Schneider. / 1835 og 1836.</transcription></picture>
   </pictures>
-  <source facsimile="115308007267.pdf" facsimile-pages-num="641" facsimile-pages-offset="29">A. S. [Povl Frederik Barfod]: <i>Poetisk Læsebog for Børn og barnlige Sjæle</i>, Bianco Luno &amp; Schneider, Kjøbenhavn, 1835 og 1836.</source>
+  <source facsimile="115308007267.pdf" facsimile-pages-num="641" facsimile-pages-offset="29">
+    <title>Poetisk Læsebog for Børn og barnlige Sjæle</title>
+    <editor id="barfodf" type="editor">A. S. [Povl Frederik Barfod]</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>A. S.</publisher>
+    <printer>Bianco Luno &amp; Schneider</printer>
+    <year>1835 og 1836</year>
+  </source>
   <errata status="applied" pages="605-607" facsimile-pages="634-636"/>
   <errata status="applied" pages="608" facsimile-pages="637"/>
   <proofreadings>
