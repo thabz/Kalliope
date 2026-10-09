@@ -18,6 +18,15 @@ hvert niveau.
 Indholdet i `<notes>` og `<pictures>` står altid på egne linjer. `<note>` og
 `<picture>` indrykkes ét niveau i forhold til deres beholder.
 
+I både `<workhead>` og tekstens `<head>` står `<line>`-elementer i `<subtitle>`
+på egne linjer og indrykkes ét niveau i forhold til `<subtitle>`, ligesom noter
+i `<notes>`. En undertitel uden `<line>` bliver på én linje.
+
+Brug kun `<line>` i `<subtitle>`, når undertitlen består af mindst to linjer.
+En undertitel med én linje skrives direkte, fx
+`<subtitle>Act. I. Scen. I.</subtitle>`. Korpustesten afviser en overflødig
+`<line>`-wrapper i både værk- og teksthoveder.
+
 Der skal være én blank linje mellem to `<text>`-elementer og én blank linje før
 og efter et `<section>`-element. Mellemrum og blanke linjer i selve brødteksten
 ændres ikke, fordi de har betydning for tekstens layout og strofestruktur.

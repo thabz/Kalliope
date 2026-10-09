@@ -238,6 +238,25 @@ const collectRedundantTextTitleMetadataIssues = (filename, document) => {
   return issues;
 };
 
+const collectSingleLineSubtitleIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('subtitle')).forEach(subtitle => {
+    const head = subtitle.parentNode;
+    if (head.nodeName !== 'head' && head.nodeName !== 'workhead') {
+      return;
+    }
+    if (directChildren(subtitle, 'line').length === 1) {
+      const ownerId = head.parentNode.getAttribute('id') ?? '(missing id)';
+      issues.push(
+        `${filename}: ${head.nodeName} ${ownerId} has a <subtitle> with only one <line>; remove the <line> wrapper.`,
+      );
+    }
+  });
+
+  return issues;
+};
+
 const collectAnthologySourceIssues = (filename, document) => {
   const work = document.documentElement;
   if (work.getAttribute('type') !== 'anthology') {
@@ -554,6 +573,7 @@ export {
   collectSourceAuthorIssues,
   collectAnthologySourceIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectTextStructureIssues,
   parseWorkXml,
 };

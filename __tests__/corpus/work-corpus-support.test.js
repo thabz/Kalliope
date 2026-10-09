@@ -9,6 +9,7 @@ import {
   collectAnthologySourceIssues,
   collectStandaloneFootnoteIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
@@ -118,6 +119,34 @@ describe('work corpus support', () => {
     `;
 
     expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
+  });
+
+  it('rejects single line wrappers in work and text subtitles', () => {
+    const xml = `<kalliopework id="1732">
+      <workhead><subtitle><line>Undertitel</line></subtitle></workhead>
+      <workbody><text id="pastor-fido"><head>
+        <subtitle>
+          <!-- Kildens sceneangivelse -->
+          <line>Act. I. Scen. I.<footnote>Kildens note.</footnote></line>
+        </subtitle>
+      </head></text></workbody>
+    </kalliopework>`;
+
+    expect(collectSingleLineSubtitleIssues('work.xml', parseWorkXml(xml))).toEqual([
+      'work.xml: workhead 1732 has a <subtitle> with only one <line>; remove the <line> wrapper.',
+      'work.xml: head pastor-fido has a <subtitle> with only one <line>; remove the <line> wrapper.',
+    ]);
+  });
+
+  it('allows plain and multiline subtitles', () => {
+    const xml = `<kalliopework id="1732">
+      <workhead><subtitle>Undertitel<footnote>Kildens note.</footnote></subtitle></workhead>
+      <workbody><text id="poem"><head>
+        <subtitle><line>Violin</line><line>Anden Del</line></subtitle>
+      </head></text></workbody>
+    </kalliopework>`;
+
+    expect(collectSingleLineSubtitleIssues('work.xml', parseWorkXml(xml))).toEqual([]);
   });
 
   it('rejects redundant text title metadata', () => {

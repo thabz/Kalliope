@@ -138,22 +138,22 @@ const splitProofreadings = xml => xml
   .replace(/(<proofreading\b[^<>]*\/>)(?!\r?\n)/g, '$1\n');
 
 const splitMetadataCollections = xml => xml.replace(
-  /<(notes|pictures|places)(?:[ \t][^<>]*)?>[\s\S]*?<\/\1>/g,
+  /<(notes|pictures|places|subtitle)(?:[ \t][^<>]*)?>[\s\S]*?<\/\1>/g,
   collection => {
-    if (/<(?:note|picture|place)\b/.test(collection) !== true) {
+    if (/<(?:note|picture|place|line)\b/.test(collection) !== true) {
       return collection;
     }
     return collection
-      .replace(/(<(?:notes|pictures|places)(?:[ \t][^<>]*)?>)(?!\r?\n)/, '$1\n')
+      .replace(/(<(?:notes|pictures|places|subtitle)(?:[ \t][^<>]*)?>)(?!\r?\n)/, '$1\n')
       .replace(
-        /(<\/(?:note|picture|place)>)(?=[ \t]*<(?:note|picture|place)\b)/g,
+        /(<\/(?:note|picture|place|line)>)(?=[ \t]*<(?:note|picture|place|line)\b)/g,
         '$1\n',
       )
       .replace(
-        /(<(?:note|picture|place)\b[^<>]*\/>)(?=[ \t]*<(?:note|picture|place)\b)/g,
+        /(<(?:note|picture|place|line)\b[^<>]*\/>)(?=[ \t]*<(?:note|picture|place|line)\b)/g,
         '$1\n',
       )
-      .replace(/([^ \t\r\n])[ \t]*(?=<\/(?:notes|pictures|places)>)/g, '$1\n');
+      .replace(/([^ \t\r\n])[ \t]*(?=<\/(?:notes|pictures|places|subtitle)>)/g, '$1\n');
   },
 );
 
