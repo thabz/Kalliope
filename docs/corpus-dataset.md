@@ -63,6 +63,44 @@ SQLite er ikke del af det offentlige datasæt. Ved lokale, komplekse relationell
 audits kan et valgfrit indeks bygges med `make build-sqlite`; se
 `docs/sqlite-index.md`.
 
+## Værkafgrænset variantkontrol
+
+Ved værktilføjelse og senere kontrol af et bestemt værk kan kandidater findes
+uden et nyt static-build:
+
+```sh
+node tools/find-variant-candidates.js fdirs/antologierdk/1881.xml
+npm run find-variant-candidates -- fdirs/antologierdk/1881.xml --json
+```
+
+Værkfilen er obligatorisk; værktøjet har ingen global auditfunktion og ændrer
+ingen filer. Inputteksterne læses fra XML med Kalliopes normale forfatterarv.
+Korpusfilen streames én gang, og kun førstelinjer hos de relevante digtere
+bruges, inklusive tekster i antologier. Hvert kandidatpar involverer mindst én
+inputtekst; selvtræffere og gentagne placeringer af samme tekst udelades.
+Interne kandidatpar i inputværket medtages. `skip-index`-tekster springes over,
+og tekster uden førstelinje tælles særskilt.
+
+Søgningen normaliserer Unicode, store/små bogstaver, mellemrum og tegnsætning,
+men rapporten bevarer ordlyden. Kandidater har enten ens normaliserede
+førstelinjer, de samme tre indledende ord med mindst 12 bogstaver i begyndelsen,
+eller mindst 85 % lighed efter normaliseret Levenshtein-afstand blandt de to
+efterfølgende naboer i dansk sortering. Nabokontrollen kræver mindst 15
+bogstaver i begge førstelinjer; identiske linjer grupperes inden sorteringen.
+
+Kun kandidaternes konkrete tekst-JSON læses for at kontrollere eksisterende
+variantforbindelser. Indirekte forbindelser medtages sammen med inputværkets
+aktuelle XML-relationer. Allerede forbundne par tælles særskilt og vises ikke
+som udestående kandidater. Manglende data og uløste referencer rapporteres.
+
+Rapporten angiver datasættets buildtid og giver førstelinjer, titler, id'er,
+links og matchgrunde grupperet efter digter. Kandidater kræver tekstlig
+vurdering; ens begyndelser er ikke i sig selv bevis for et variantforhold.
+Stærkt omskrevne begyndelser kan overses. Korpusopslag afspejler den eksisterende
+genererede version, mens inputværket altid læses i sin aktuelle form. Manglende
+eller ugyldig XML/JSONL giver exitkode 1; kandidatfund og rapporterede
+dataproblemer giver exitkode 0, men dataproblemer skal afklares før færdigstatus.
+
 Kalliopes software er GPL-2.0. Korpusset består hovedsageligt af public
 domain-tekster, men rettigheder til kilder, redaktionelt materiale, billeder og
 tredjepartsdata kan variere. Kildeoplysninger og kreditering skal bevares, og

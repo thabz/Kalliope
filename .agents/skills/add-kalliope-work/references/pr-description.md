@@ -20,6 +20,7 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
       indrykningskandidater direkte mod facsimilet
 - [ ] Kontrollér XML/TEI-syntaks
 - [ ] Kontrollér at alle interne referencer og id'er er gyldige
+- [ ] Variantkandidater gennemgået; sikre forbindelser indsat og tvivl dokumenteret
 - [ ] Tilføj eller opdater metadata for værket
 - [ ] Transskriber og kontrollér titelbladets trykte tekst mod billedet
 - [ ] Kontrollér titel, forfatter, udgivelsesår og øvrige bibliografiske oplysninger mod kilden
