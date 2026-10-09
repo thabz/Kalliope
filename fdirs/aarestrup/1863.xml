@@ -6,7 +6,16 @@
   <pictures>
     <picture type="titlepage" src="1863-p1.jpg"><transcription>Efterladte Digte / af / Emil Aarestrup. // Udgivne / ved / Christian Winther og F. L. Liebenberg. // Kjøbenhavn. / Forlagt af Samfundet til den danske Literaturs Fremme. / Thieles Bogtrykkeri. / 1863.</transcription></picture>
   </pictures>
-  <source facsimile="11530803779C" facsimile-pages-num="370" facsimile-pages-offset="18">Emil Aarestrup: <i>Efterladte Digte</i>, Christian Winther og F.L. Liebenberg (red.), Samfundet til den danske Literaturs Fremme, Kbh., 1863.</source>
+  <source facsimile="11530803779C" facsimile-pages-num="370" facsimile-pages-offset="18">
+    <author id="aarestrup">Emil Aarestrup</author>
+    <title>Efterladte Digte</title>
+    <editor id="winther">Christian Winther</editor>
+    <editor>F. L. Liebenberg</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>Samfundet til den danske Literaturs Fremme</publisher>
+    <printer>Thieles Bogtrykkeri</printer>
+    <year>1863</year>
+  </source>
   <proofreadings>
     <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
   </proofreadings>
