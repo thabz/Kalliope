@@ -29,6 +29,13 @@ kildeindhold. Manifestets `built_at` er eksplicit buildmetadata. Tekstudvalget
 omfatter de indekserbare, kanoniske placeringer; rene publikationsplaceringer
 kan fortsat hentes via det eksisterende API, men er ikke selvstændige bulkposter.
 
+Buildet gemmer en lokal tilstand i `caches/corpus-dataset.json`. Når metadata,
+digternes `info.xml`, de indekserbare teksters API-filer og eksportkoden er
+uændrede, og alle outputfiler stadig matcher tilstanden, springes genlæsning
+og gzip-komprimering over. Filtilstanden kontrolleres med størrelse, mtime og
+ctime. Tilføjelser og sletninger indgår i kontrollen. Manglende eller ændrede
+outputfiler, manglende cache og `--force-reload` udløser et nyt eksportbuild.
+
 ## Eksisterende statisk JSON-API
 
 - `/api/{poet_id}.json`: digtermetadata.

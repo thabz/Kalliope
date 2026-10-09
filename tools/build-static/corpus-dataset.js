@@ -10,6 +10,20 @@ const DATASET_VERSION = 'v1';
 const SCHEMA_VERSION = '1.2.0';
 const SITE_URL = 'https://kalliope.org';
 const OUTPUT_DIRECTORY = `public/api/${DATASET_VERSION}`;
+const BUILD_STATE_FILE = 'caches/corpus-dataset.json';
+const OUTPUT_FILES = [
+  'poets.jsonl.gz', 'works.jsonl.gz', 'texts.jsonl.gz',
+  'schema.json', 'README.md', 'manifest.json',
+].map(filename => `${OUTPUT_DIRECTORY}/${filename}`).concat('public/api/manifest.json');
+const BUILD_CODE_FILES = [
+  'tools/build-static/corpus-dataset.js',
+  'tools/build-static/external-identifiers.js',
+  'tools/build-static/formatting.js',
+  'tools/build-static/xml.js',
+  'tools/libs/helpers.js',
+  'common/external-identifiers.js',
+  'common/paths.js',
+];
 const LEGACY_SQLITE_FILES = [
   'public/api/kalliope.sqlite',
   `${OUTPUT_DIRECTORY}/kalliope.sqlite`,
@@ -75,6 +89,44 @@ const checksum = (filename) => crypto
   .createHash('sha256')
   .update(fs.readFileSync(filename))
   .digest('hex');
+
+const fileState = (filename) => {
+  const stats = fs.statSync(filename, { throwIfNoEntry: false });
+  return stats == null ? null : [stats.size, stats.mtimeMs, stats.ctimeMs];
+};
+
+const inputSignature = (collected, works) => {
+  const poets = sortById(Array.from(collected.poets.values())).map(poet => ({
+    id: poet.id,
+    name: poet.name,
+    country: poet.country,
+    nationality: poet.nationality,
+    lang: poet.lang,
+    type: poet.type,
+    period: poet.period,
+    infoFile: fileState(`fdirs/${poet.id}/info.xml`),
+  }));
+  const texts = sortById(Array.from(collected.texts.values())
+    .filter(text => text.indexable !== false))
+    .map(text => [text, fileState(Paths.textPath(text.id))]);
+  return crypto.createHash('sha256')
+    .update(JSON.stringify({ poets, works, texts }))
+    .update(JSON.stringify(BUILD_CODE_FILES.map(checksum)))
+    .digest('hex');
+};
+
+const outputSignature = () => JSON.stringify(OUTPUT_FILES.map(fileState));
+
+const loadBuildState = () => {
+  try {
+    return JSON.parse(fs.readFileSync(BUILD_STATE_FILE, 'utf8'));
+  } catch (error) {
+    if (error.code === 'ENOENT' || error instanceof SyntaxError) {
+      return null;
+    }
+    throw error;
+  }
+};
 
 const fileDescriptor = (filename, recordType = null) => {
   const absolutePath = path.join(OUTPUT_DIRECTORY, filename);
@@ -368,14 +420,30 @@ const validateRecordShapes = (poets, works, texts) => {
   });
 };
 
-const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = {}) => {
+const buildCorpusDataset = (collected, {
+  builtAt = new Date().toISOString(),
+  forceReload = process.argv.includes('--force-reload'),
+} = {}) => {
   fs.mkdirSync(OUTPUT_DIRECTORY, { recursive: true });
   LEGACY_SQLITE_FILES.forEach((filename) => {
     fs.rmSync(filename, { force: true });
   });
 
-  const poets = buildPoetRecords(collected);
   const works = buildWorkRecords(collected);
+  const signature = inputSignature(collected, works);
+  const previousState = loadBuildState();
+  // Check inputs and every published file before reading texts or compressing.
+  // Rendered records also invalidate the cache for callers supplying fresh data.
+  if (
+    forceReload === false &&
+    (collected.corpusTextRecords?.size ?? 0) === 0 &&
+    previousState?.inputSignature === signature &&
+    previousState?.outputSignature === outputSignature()
+  ) {
+    return JSON.parse(fs.readFileSync(`${OUTPUT_DIRECTORY}/manifest.json`, 'utf8'));
+  }
+
+  const poets = buildPoetRecords(collected);
   const texts = buildTextRecords(collected);
   validateRelations(poets, works, texts);
   validateRecordShapes(poets, works, texts);
@@ -421,6 +489,11 @@ const buildCorpusDataset = (collected, { builtAt = new Date().toISOString() } = 
     current_version: DATASET_VERSION,
     manifest_url: `${SITE_URL}/api/${DATASET_VERSION}/manifest.json`,
   }, null, 2)}\n`);
+  fs.mkdirSync(path.dirname(BUILD_STATE_FILE), { recursive: true });
+  writeFileIfChanged(BUILD_STATE_FILE, `${JSON.stringify({
+    inputSignature: signature,
+    outputSignature: outputSignature(),
+  })}\n`);
   return manifest;
 };
 
