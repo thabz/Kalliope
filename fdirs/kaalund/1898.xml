@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1898" author="kaalund" status="complete" type="poetry">
+<kalliopework id="1898" author="kaalund" status="incomplete" type="poetry">
 <workhead>
   <title>Samlede Digte</title>
   <year>1898</year>
@@ -8,15 +8,9 @@
     <runeberg-book>khvsamlede</runeberg-book>
   </identifiers>
   <source>H.V. Kaalund: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, 1898, udgivet ved Otto Borchsenius.</source>
-  <pictures>
-    <picture type="titlepage" src="1845-p1.jpg"><transcription>Fabler for Børn / af / H. V. Kaalund / og / J. C. Lundbye. // Kjøbenhavn. / Paa P. G. Philipsens Forlag. / Billederne lithographerede af Kittendorff i Em. Bærentzen &amp; Co. / lith. Institut. / Texten trykt i Bianco Lunos Bogtrykkeri. // 1845.</transcription></picture>
-  </pictures>
   <quality>korrektur1</quality>
 </workhead>
 <workbody>
-
-<!-- TODO: Husk at tildele nye id'er (erstat datoen). Bemærk, »Forord« har anden dato end resten. -->
-<!-- Enkelte digte her, findes i andre.xml, så når denne Samlede Digte tilføjes, kan andre.xml nedlægges. Husk dog, at overføre id'er. -->
 
 <section level="1">
 <head>
@@ -24,7 +18,7 @@
 </head>
 <content>
 
-<text id="kaalund2018011701">
+<text id="kaalund20261010001" variant="kaalund2018011701">
 <head>
   <title>Forord</title>
   <firstline>Det er den herligste Tidsfordriv</firstline>
@@ -53,7 +47,7 @@ Og gjerne dets venlige Færd betragte.
 </body>
 </text>
 
-<text id="kaalund2003010401">
+<text id="kaalund20261010002" variant="kaalund2003010401">
 <head>
   <title>Spædkalven</title>
   <firstline>Kalv, Du raver som Du er fuld</firstline>
@@ -78,7 +72,7 @@ Det var da nok en rigtig Kommers.
 </body>
 </text>
 
-<text id="kaalund2003010402">
+<text id="kaalund20261010003" variant="kaalund2003010402">
 <head>
   <title>Konen og Hesten</title>
   <firstline>I Skoven ligger en ensom Hytte</firstline>
@@ -103,7 +97,7 @@ De To, de har kun i Verden hinanden.
 </body>
 </text>
 
-<text id="kaalund2003010403">
+<text id="kaalund20261010004" variant="kaalund2003010403">
 <head>
   <title>Pudelhunden</title>
   <firstline>En Pudelhund havde mistet sin Kjole</firstline>
@@ -128,7 +122,7 @@ den tænkte: hvor Pokker blev Solen af?
 </body>
 </text>
 
-<text id="kaalund1999031703">
+<text id="kaalund20261010005" variant="kaalund1999031703">
 <head>
   <title>Maagen</title>
   <firstline>Maagen skreg over Havets Speil</firstline>
@@ -155,7 +149,7 @@ Da kløede sig Skipperen bag sit Øre.
 </body>
 </text>
 
-<text id="kaalund2003010404">
+<text id="kaalund20261010006" variant="kaalund2003010404">
 <head>
   <title>Skraldemandshesten</title>
   <firstline>En Skraldemandshest over Torvet drog</firstline>
@@ -180,7 +174,7 @@ da peged han paa sin gamle Hest.
 </body>
 </text>
 
-<text id="kaalund2003010405">
+<text id="kaalund20261010007" variant="kaalund2003010405">
 <head>
   <title>Vinteren</title>
   <firstline>Nej se, nej se</firstline>
@@ -207,7 +201,7 @@ og titted igjen i Flammens Skin.
 </body>
 </text>
 
-<text id="kaalund2003010441">
+<text id="kaalund20261010008" variant="kaalund2003010441">
 <head>
   <title>Slagsmaalet</title>
   <firstline>Jeg er klippet, jeg er umaadelig fin</firstline>
@@ -234,7 +228,7 @@ Mig synes, Du glemte Knebelsbarten!
 </body>
 </text>
 
-<text id="kaalund2003010442">
+<text id="kaalund20261010009" variant="kaalund2003010442">
 <head>
   <title>Lænkegrisen</title>
   <firstline>Porthunden døde af Alderdom</firstline>
@@ -259,7 +253,7 @@ det var en egen Lænkehund, den.
 </body>
 </text>
 
-<text id="kaalund2003010443">
+<text id="kaalund20261010010" variant="kaalund2003010443">
 <head>
   <title>Hanekyllingerne</title>
   <firstline>Min Kam er meget større end din</firstline>
@@ -295,7 +289,7 @@ det skulde nu være som deres Fa'er.
 </body>
 </text>
 
-<text id="kaalund2003010406">
+<text id="kaalund20261010011" variant="kaalund2003010406">
 <head>
   <title>Kilden</title>
   <firstline>Du vevre, Du lille</firstline>
@@ -319,7 +313,7 @@ med det dejlige, klare Kildevand.
 </body>
 </text>
 
-<text id="kaalund1999031704">
+<text id="kaalund20261010012" variant="kaalund1999031704">
 <head>
   <title>Væderen og Grisen</title>
   <firstline>Med krøllet Hale og næsevis</firstline>
@@ -345,7 +339,7 @@ At holde de gamle Folk i Ære!
 </body>
 </text>
 
-<text id="kaalund2003010407">
+<text id="kaalund20261010013" variant="kaalund2003010407">
 <head>
   <title>Hanen</title>
   <firstline>Det blæser og regner om Bondens Gaard</firstline>
@@ -370,7 +364,7 @@ de tænke: er Hanen mon fra Forstanden!
 </body>
 </text>
 
-<text id="kaalund2003010408">
+<text id="kaalund20261010014" variant="kaalund2003010408">
 <head>
   <title>Fiolen</title>
   <firstline>Du lille Fiol, kom frem! kom frem!</firstline>
@@ -399,7 +393,7 @@ mens Draaberne maattte fra Bladet trille.
 </body>
 </text>
 
-<text id="kaalund2003010409">
+<text id="kaalund20261010015" variant="kaalund2003010409">
 <head>
   <title>Aftenstunden</title>
   <firstline>Bølge, Du grumme, Du stolte, Du vilde</firstline>
@@ -429,7 +423,7 @@ hilste ham Bonden mildt: Guds Fred!
 </body>
 </text>
 
-<text id="kaalund2003010410">
+<text id="kaalund20261010016" variant="kaalund2003010410">
 <head>
   <title>Skaden og Grisen</title>
   <firstline>Skaden flagred i Gaarden ind</firstline>
@@ -454,7 +448,7 @@ til hver af Skindet beholdt sit Stykke.
 </body>
 </text>
 
-<text id="kaalund2003010411">
+<text id="kaalund20261010017" variant="kaalund2003010411">
 <head>
   <title>De to Katte</title>
   <firstline>Hankatten sidder paa Gaardens Mur</firstline>
@@ -479,7 +473,7 @@ Som Visen Du sang, Herr Mons, var Takken!
 </body>
 </text>
 
-<text id="kaalund1999031701">
+<text id="kaalund20261010018" variant="kaalund1999031701">
 <head>
   <title>Den dræbte And</title>
   <firstline>I Skoven risled den klare Aa</firstline>
@@ -503,7 +497,7 @@ O, har du en Moder, da skjøn derpaa!
 </body>
 </text>
 
-<text id="kaalund1999031702">
+<text id="kaalund20261010019" variant="kaalund1999031702">
 <head>
   <title>Hunden ved Stranden</title>
   <firstline>Saa ti dog, Hund, med den evige Gjøen!</firstline>
@@ -531,7 +525,7 @@ For sin Troskab et hædrende Gravmonument.
 </body>
 </text>
 
-<text id="kaalund2003010412">
+<text id="kaalund20261010020" variant="kaalund2003010412">
 <head>
   <title>Kjøreturen</title>
   <firstline>Du, Moppe, er Prins, og jeg er din Kudsk</firstline>
@@ -558,7 +552,7 @@ han troede, at Moppen sad i Kassen.
 </body>
 </text>
 
-<text id="kaalund2003010413">
+<text id="kaalund20261010021" variant="kaalund2003010413">
 <head>
   <title>Bien</title>
   <firstline>God Nat, lille Bi</firstline>
@@ -585,7 +579,7 @@ da flagrede Bien til Gartneren hen:
 </body>
 </text>
 
-<text id="kaalund2003010414">
+<text id="kaalund20261010022" variant="kaalund2003010414">
 <head>
   <title>Posten</title>
   <firstline>Hvi staar Du i Hø, Du lange Post?</firstline>
@@ -621,7 +615,7 @@ jeg tror, det kunde have fyldt en Spand.
 </body>
 </text>
 
-<text id="kaalund2003010415">
+<text id="kaalund20261010023" variant="kaalund2003010415">
 <head>
   <title>Hønen og Koen</title>
   <firstline>En lille, vanskabt løjerlig Ting</firstline>
@@ -646,7 +640,7 @@ dér jaged den bort baade Fluer og Myg.
 </body>
 </text>
 
-<text id="kaalund2003010416">
+<text id="kaalund20261010024" variant="kaalund2003010416">
 <head>
   <title>Hjorden</title>
   <firstline>Og har Du aldrig set det før</firstline>
@@ -671,7 +665,7 @@ af deres Hoves Sparken.
 </body>
 </text>
 
-<text id="kaalund1999031705">
+<text id="kaalund20261010025" variant="kaalund1999031705">
 <head>
   <title>Hundehvalpen</title>
   <firstline>Den var saa buttet, saa trind og blød</firstline>
@@ -695,7 +689,7 @@ Det spaaede dens Moder sig Meget af.
 </body>
 </text>
 
-<text id="kaalund2003010417">
+<text id="kaalund20261010026" variant="kaalund2003010417">
 <head>
   <title>Spurveungen</title>
   <firstline>En Spurveunge, en nøgen En</firstline>
@@ -720,7 +714,7 @@ den kvidred sin Tak til ham i Solen.
 </body>
 </text>
 
-<text id="kaalund2003010418">
+<text id="kaalund20261010027" variant="kaalund2003010418">
 <head>
   <title>Lammene</title>
   <firstline>En Kæmpehøj paa Marken staar</firstline>
@@ -744,7 +738,7 @@ og slumre sorgløst paa Kæmpens Grav.
 </body>
 </text>
 
-<text id="kaalund2003010419">
+<text id="kaalund20261010028" variant="kaalund2003010419">
 <head>
   <title>Skaden</title>
   <firstline>I Kroen de havde en tæmmet Skade</firstline>
@@ -769,7 +763,7 @@ men Tordnen hørte kun lidt derefter.
 </body>
 </text>
 
-<text id="kaalund2003010420">
+<text id="kaalund20261010029" variant="kaalund2003010420">
 <head>
   <title>Kattene</title>
   <firstline>Tre, fire Katte hinanden mødte</firstline>
@@ -794,7 +788,7 @@ pas paa, han giver os Ingenting!
 </body>
 </text>
 
-<text id="kaalund2003010421">
+<text id="kaalund20261010030" variant="kaalund2003010421">
 <head>
   <title>Rotterne</title>
   <firstline>Rotte, Du Tyv, hvor kunde Du flytte</firstline>
@@ -819,7 +813,7 @@ saa kjørte et Æg de bort ad Gangen.
 </body>
 </text>
 
-<text id="kaalund1999031706">
+<text id="kaalund20261010031" variant="kaalund1999031706">
 <head>
   <title>Bjørnen</title>
   <firstline>Bjørnen sidder ved Strømmens Skum</firstline>
@@ -843,7 +837,7 @@ Du kunde jo ladt mig være.''
 </body>
 </text>
 
-<text id="kaalund2003010422">
+<text id="kaalund20261010032" variant="kaalund2003010422">
 <head>
   <title>Rumlepotten</title>
   <firstline>Rumlepotten rendte omkring</firstline>
@@ -868,7 +862,7 @@ elske den gamle Knurrepotte.
 </body>
 </text>
 
-<text id="kaalund2003010423">
+<text id="kaalund20261010033" variant="kaalund2003010423">
 <head>
   <title>De to Venner</title>
   <firstline>Med Killingen voxede Hvalpen op</firstline>
@@ -893,7 +887,7 @@ de spiste og sov ved hinandens Side.
 </body>
 </text>
 
-<text id="kaalund1999031707">
+<text id="kaalund20261010034" variant="kaalund1999031707">
 <head>
   <title>Kyllingerne</title>
   <firstline>Jeg fryser, Moder, om mine Ben</firstline>
@@ -920,7 +914,7 @@ Smaakyllingerne under den bløde Dyne.
 </body>
 </text>
 
-<text id="kaalund2003010424">
+<text id="kaalund20261010035" variant="kaalund2003010424">
 <head>
   <title>Edderkoppen</title>
   <firstline>Du Edderkop, vil Du til Hækken spinde?</firstline>
@@ -945,7 +939,7 @@ nu sad den derovre i Aftenrøden.
 </body>
 </text>
 
-<text id="kaalund2003010425">
+<text id="kaalund20261010036" variant="kaalund2003010425">
 <head>
   <title>Svinet og Anden</title>
   <firstline>Hønen gaar saa vever og ren</firstline>
@@ -970,7 +964,7 @@ det kan man kalde at høste og pløje!
 </body>
 </text>
 
-<text id="kaalund2003010426">
+<text id="kaalund20261010037" variant="kaalund2003010426">
 <head>
   <title>Lækatten</title>
   <firstline>Den Lækat titter fra Gjærdet ud</firstline>
@@ -995,7 +989,7 @@ dér sad det og saae paa Nytaarsnyet.
 </body>
 </text>
 
-<text id="kaalund2003010427">
+<text id="kaalund20261010038" variant="kaalund2003010427">
 <head>
   <title>Grisene</title>
   <firstline>Skammer Jer, Børn, vort Liv er for kort</firstline>
@@ -1022,7 +1016,7 @@ end faa sig for Tørsten en Taar at drikke.
 </body>
 </text>
 
-<text id="kaalund2003010428">
+<text id="kaalund20261010039" variant="kaalund2003010428">
 <head>
   <title>Hesten og Føllet</title>
   <firstline>Moder, jeg længes, faar jeg ej Lov</firstline>
@@ -1052,7 +1046,7 @@ skjøndt Pisken var Silke og Sporen forgyldt.
 </body>
 </text>
 
-<text id="kaalund2003010429">
+<text id="kaalund20261010040" variant="kaalund2003010429">
 <head>
   <title>Bissekræmmeren og hans Hund</title>
   <firstline>Hunden vil gjerne hos Mennesket bo</firstline>
@@ -1077,7 +1071,7 @@ et Stykke han først til Hunden byder.
 </body>
 </text>
 
-<text id="kaalund2003010430">
+<text id="kaalund20261010041" variant="kaalund2003010430">
 <head>
   <title>Abekatten</title>
   <firstline>Ved Havet vandred en Abekat</firstline>
@@ -1102,7 +1096,7 @@ han sagde: Herr Østers, Tak for Mad!
 </body>
 </text>
 
-<text id="kaalund2003010431">
+<text id="kaalund20261010042" variant="kaalund2003010431">
 <head>
   <title>Nissen</title>
   <firstline>Du lille Nisse med Huen rød</firstline>
@@ -1132,7 +1126,7 @@ Hvo uden Nissen kan Grøden spise!
 </body>
 </text>
 
-<text id="kaalund2003010432">
+<text id="kaalund20261010043" variant="kaalund2003010432">
 <head>
   <title>Stormen</title>
   <firstline>Hu, hu! hvor Du bider, Du skarpe Vind</firstline>
@@ -1174,7 +1168,7 @@ men Storm og Solskin maa følges ad.
 </body>
 </text>
 
-<text id="kaalund2003010433">
+<text id="kaalund20261010044" variant="kaalund2003010433">
 <head>
   <title>God Nat!</title>
   <firstline>Nu lægger sig hele Naturen til Ro</firstline>
@@ -1201,7 +1195,7 @@ Sov sødeligt Alle! god Nat! god Nat!
 </body>
 </text>
 
-<text id="kaalund2003010434">
+<text id="kaalund20261010045" variant="kaalund2003010434">
 <head>
   <title>Vogterdrengen</title>
   <firstline>Deroppe bag den høje Allé</firstline>
@@ -1226,7 +1220,7 @@ sine Træsko med samt den røde Hue.
 </body>
 </text>
 
-<text id="kaalund2003010435">
+<text id="kaalund20261010046" variant="kaalund2003010435">
 <head>
   <title>Tudsen</title>
   <firstline>Jeg er styg og rynket, jeg véd det nok</firstline>
@@ -1251,7 +1245,7 @@ hilse paa deres Moder dernede.
 </body>
 </text>
 
-<text id="kaalund2003010436">
+<text id="kaalund20261010047" variant="kaalund2003010436">
 <head>
   <title>De to Heste</title>
   <firstline>Naar Godtfolk mødes, de hilse: God Dag!</firstline>
@@ -1276,7 +1270,7 @@ Tjenstvillighed lære Dig disse Heste.
 </body>
 </text>
 
-<text id="kaalund2003010437">
+<text id="kaalund20261010048" variant="kaalund2003010437">
 <head>
   <title>Møllehesten</title>
   <firstline>Hvi stirrer Du, Hest, fra det gamle Skur</firstline>
@@ -1301,7 +1295,7 @@ end at ødsle i Møllen sit Mod, sin Kraft.
 </body>
 </text>
 
-<text id="kaalund2003010438">
+<text id="kaalund20261010049" variant="kaalund2003010438">
 <head>
   <title>Ræven</title>
   <firstline>Ræven lister sig til sin Hule</firstline>
@@ -1326,7 +1320,7 @@ mens Ungerne valsed omkring i Græsset.
 </body>
 </text>
 
-<text id="kaalund2003010439">
+<text id="kaalund20261010050" variant="kaalund2003010439">
 <head>
   <title>Duerne</title>
   <firstline>Duerne sidde paa Husets Tag</firstline>
@@ -1351,7 +1345,7 @@ Nu kunde Røveren ha'e det saa godt.
 </body>
 </text>
 
-<text id="kaalund2003010440">
+<text id="kaalund20261010051" variant="kaalund2003010440">
 <head>
   <title>Hønsene og Ænderne</title>
   <firstline>I Luften taarner sig Sky ved Sky</firstline>
@@ -1385,7 +1379,7 @@ end at lade af Regnen sig vaske og væde.
 </head>
 <content>
 
-<text id="kaalund2001062501">
+<text id="kaalund20261010052" variant="kaalund2001062501">
 <head>
   <title>Naar Du er dum</title>
   <firstline>Naar Du er dum</firstline>
@@ -1403,7 +1397,7 @@ og tænker Død og Pine!
 </body>
 </text>
 
-<text id="kaalund2001062502">
+<text id="kaalund20261010053" variant="kaalund2001062502">
 <head>
   <title>Jeg, raabte Vintren</title>
   <toctitle>„Jeg“, raabte Vintren</toctitle>
@@ -1421,7 +1415,7 @@ og derfor Skabningen mig priser.''
 </body>
 </text>
 
-<text id="kaalund2001062503">
+<text id="kaalund20261010054" variant="kaalund2001062503">
 <head>
   <title>O Pige! jeg vil ikke sé</title>
   <firstline>O Pige! jeg vil ikke sé</firstline>
@@ -1437,7 +1431,7 @@ og kan med Hjertet græde.
 </body>
 </text>
 
-<text id="kaalund2001062504">
+<text id="kaalund20261010055" variant="kaalund2001062504">
 <head>
   <title>Den Mand er ikke stort bevendt, som praler af sin Hjerne</title>
   <firstline>Den Mand er ikke stort bevendt, som praler af sin Hjerne</firstline>
@@ -1451,7 +1445,7 @@ det er jo kun den skrumpne Nød, som rasler med sin Kjærne.
 </body>
 </text>
 
-<text id="kaalund2001062505">
+<text id="kaalund20261010056" variant="kaalund2001062505">
 <head>
   <title>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</title>
   <firstline>Natur, hvor lidt har Mennesket Du paa dets Vandring givet</firstline>
@@ -1471,7 +1465,7 @@ Her har en Regning jeg igjen nu faaet fra min Skræder!
 </body>
 </text>
 
-<text id="kaalund2001062506">
+<text id="kaalund20261010057" variant="kaalund2001062506">
 <head>
   <title>Af Recensent faar man Navnet nu</title>
   <firstline>Af Recensent faar man Navnet nu</firstline>
@@ -1487,7 +1481,7 @@ som ej har Marv til et Træ.
 </body>
 </text>
 
-<text id="kaalund2001062507">
+<text id="kaalund20261010058" variant="kaalund2001062507">
 <head>
   <title>Ja, Stof til Sang har hver en Tid</title>
   <firstline>Ja, Stof til Sang har hver en Tid</firstline>
@@ -1503,7 +1497,7 @@ saa dog ved sine Narres.
 </body>
 </text>
 
-<text id="kaalund2001062508">
+<text id="kaalund20261010059" variant="kaalund2001062508">
 <head>
   <title>Tag denne farvede Devise</title>
   <firstline>Tag denne farvede Devise</firstline>
@@ -1519,7 +1513,7 @@ og saa, saa ligger Tanken indeni.
 </body>
 </text>
 
-<text id="kaalund2001062509">
+<text id="kaalund20261010060" variant="kaalund2001062509">
 <head>
   <title>Jeg, raabte højt en Skralde</title>
   <toctitle>„Jeg“, raabte højt en Skralde</toctitle>
@@ -1538,7 +1532,7 @@ Lad sé - da var det Snavs.
 </body>
 </text>
 
-<text id="kaalund2001062510">
+<text id="kaalund20261010061" variant="kaalund2001062510">
 <head>
   <title>Et Sildehoved i Mørket laa</title>
   <firstline>Et Sildehoved i Mørket laa</firstline>
@@ -1556,7 +1550,7 @@ det lyse Hoved ej lyste mér.
 </body>
 </text>
 
-<text id="kaalund2001062511">
+<text id="kaalund20261010062" variant="kaalund2001062511">
 <head>
   <title>Shakespeare</title>
   <firstline>Lér jeg af Hjertet med Dig, jeg kunde bevæget dog græde</firstline>
@@ -1573,7 +1567,7 @@ bøjer min Alvor i Smil og smelter i Taarer min Latter.
 </body>
 </text>
 
-<text id="kaalund2001062512">
+<text id="kaalund20261010063" variant="kaalund2001062512">
 <head>
   <title>Grundtvig</title>
   <firstline>Hel sælsomt det i Verden gaar</firstline>
@@ -1590,7 +1584,7 @@ det har jeg aldrig rigtig vidst!
 </body>
 </text>
 
-<text id="kaalund2001062513">
+<text id="kaalund20261010064" variant="kaalund2001062513">
 <head>
   <title>Voltaire</title>
   <firstline>En Digter sang: Hvor Smaa kan være store</firstline>
@@ -1607,7 +1601,7 @@ jeg synger: Ak, hvor Store tidt er smaa!
 </body>
 </text>
 
-<text id="kaalund2001062514">
+<text id="kaalund20261010065" variant="kaalund2001062514">
 <head>
   <title>Schack Staffeldt</title>
   <firstline>Schack Staffeldt, de dybeste drømmende Savn</firstline>
@@ -1636,7 +1630,7 @@ Naar gik det ej saadan det Himmelske her!
 </head>
 <content>
 
-<text id="kaalund2001061401">
+<text id="kaalund20261010066" variant="kaalund2001061401">
 <head>
   <title>Sommerfuglene</title>
   <firstline>En Sommerfuglesamling er disse Sange</firstline>
@@ -1692,7 +1686,7 @@ maaske skal ud de flyve som jublende Sange!
 </body>
 </text>
 
-<text id="kaalund2001061402">
+<text id="kaalund20261010067" variant="kaalund2001061402">
 <head>
   <title>Til Adam Oehlenschläger</title>
   <subtitle>Tilegnelsesdigt med min første Digtsamling.</subtitle>
@@ -1768,7 +1762,7 @@ endnu som Barnet har kjær!
 </body>
 </text>
 
-<text id="kaalund2001061403">
+<text id="kaalund20261010068" variant="kaalund2001061403">
 <head>
   <title>Hilsen til Thorvaldsen</title>
   <subtitle>1838</subtitle>
@@ -1862,7 +1856,7 @@ med dit Øjes blaa Forglemmigej!
 </body>
 </text>
 
-<text id="kaalund2001061404">
+<text id="kaalund20261010069" variant="kaalund2001061404">
 <head>
   <title>Thorvaldsens „Psyche sælger Amoriner“</title>
   <firstline>Hver Gang, o Du herlige Mester</firstline>
@@ -1999,7 +1993,7 @@ Vorherre os Alle bevare
 </body>
 </text>
 
-<text id="kaalund2001061405">
+<text id="kaalund20261010070" variant="kaalund2001061405">
 <head>
   <title>Kvindens Skabelse</title>
   <firstline>Tidens Morgen frembrød i straalende Glans over Eden</firstline>
@@ -2022,7 +2016,7 @@ Englen, ved hvilken er tabt, men atter gjenfundet et Eden!
 </body>
 </text>
 
-<text id="kaalund2001061406">
+<text id="kaalund20261010071" variant="kaalund2001061406">
 <head>
   <title>Aftenskumring</title>
   <firstline>Hver en Smaafugl blunder</firstline>
@@ -2060,7 +2054,7 @@ ak, kun stakket Frist!
 </body>
 </text>
 
-<text id="kaalund2001061407">
+<text id="kaalund20261010072" variant="kaalund2001061407">
 <head>
   <title>Alverden er syg</title>
   <firstline>Alverden er syg, Alverden er mat</firstline>
@@ -2092,7 +2086,7 @@ da, syge Verden: Godnat!
 </body>
 </text>
 
-<text id="kaalund2001061408">
+<text id="kaalund20261010073" variant="kaalund2001061408">
 <head>
   <title>Til Nic. Fred. Sev. Grundtvig</title>
   <subtitle>Afsunget ved Slutningen af hans historiske Forelæsninger paa Borch's Kollegium den 26de November 1838.</subtitle>
@@ -2168,7 +2162,7 @@ og hvert Hjerte røres!
 </body>
 </text>
 
-<text id="kaalund2001061409">
+<text id="kaalund20261010074" variant="kaalund2001061409">
 <head>
   <title>Efemer-Glæden</title>
   <firstline>Klart straaler Slottet i festlig Glans</firstline>
@@ -2205,7 +2199,7 @@ Men alle de skulle Dig følge!''
 </body>
 </text>
 
-<text id="kaalund2001061410">
+<text id="kaalund20261010075" variant="kaalund2001061410">
 <head>
   <title>Frydensborg</title>
   <firstline>Et Sted i Jylland, jeg véd ej hvor</firstline>
@@ -2251,7 +2245,7 @@ Vorherre nok sørger for Resten!''
 </body>
 </text>
 
-<text id="kaalund2001061411">
+<text id="kaalund20261010076" variant="kaalund2001061411">
 <head>
   <title>Niels Ebbesens Mindestøtte</title>
   <subtitle>1838</subtitle>
@@ -2352,7 +2346,7 @@ da over Dig Du fejgt vil bryde Staven!
 </body>
 </text>
 
-<text id="kaalund2001061502">
+<text id="kaalund20261010077" variant="kaalund2001061502">
 <head>
   <title>Konen ved Ledet i Frederiksdal</title>
   <firstline>Naar gjennem det dejlige Frederiksdal</firstline>
@@ -2433,7 +2427,7 @@ hvormed hun den bedre kan pryde.
 </body>
 </text>
 
-<text id="kaalund2001061503">
+<text id="kaalund20261010078" variant="kaalund2001061503">
 <head>
   <title>Ved Frederik den sjettes Død</title>
   <firstline>En Sfinx med Fingeren paa sin Mund</firstline>
@@ -2553,7 +2547,7 @@ sit Hoved til Folket kan hælde!''
 </body>
 </text>
 
-<text id="kaalund2001061504">
+<text id="kaalund20261010079" variant="kaalund2001061504">
 <head>
   <title>Til Historiemaler, Professor Eckersberg</title>
   <subtitle>Ved hans Halvhundredaars Jubilæum</subtitle>
@@ -2611,7 +2605,7 @@ vor Ven, vor elskelige Eckersberg!
 </body>
 </text>
 
-<text id="kaalund2001061505">
+<text id="kaalund20261010080" variant="kaalund2001061505">
 <head>
   <title>Kjærligheds Trang</title>
   <firstline>Dig, Kjærligheds vemodsfulde</firstline>
@@ -2682,7 +2676,7 @@ skal ej i Natten den sorte
 </body>
 </text>
 
-<text id="kaalund2001061506">
+<text id="kaalund20261010081" variant="kaalund2001061506">
 <head>
   <title>Aftenskyerne</title>
   <firstline>Naar Aftnen breder om Jorden sit Slør</firstline>
@@ -2728,7 +2722,7 @@ hvad skulde jeg Daare i Englenes By!
 </body>
 </text>
 
-<text id="kaalund2001061601">
+<text id="kaalund20261010082" variant="kaalund2001061601">
 <head>
   <title>Den stumme Sorg</title>
   <firstline>Kom, liden Thora, kom og sid</firstline>
@@ -2824,7 +2818,7 @@ mindes mig da som Søster!
 </body>
 </text>
 
-<text id="kaalund2001061602">
+<text id="kaalund20261010083" variant="kaalund2001061602">
 <head>
   <title>Fortrøstning</title>
   <firstline>Jeg sad og saae</firstline>
@@ -2875,7 +2869,7 @@ i Østen som for tusind Aar!
 </body>
 </text>
 
-<text id="kaalund2001061603">
+<text id="kaalund20261010084" variant="kaalund2001061603">
 <head>
   <title>Vor Tid</title>
   <firstline>Nu skriver fast Alle den dejligste Stil</firstline>
@@ -2970,7 +2964,7 @@ jeg jubler som den dog for Livets Væld!
 </body>
 </text>
 
-<text id="kaalund2001061701">
+<text id="kaalund20261010085" variant="kaalund2001061701">
 <head>
   <title>Den sande Fryd</title>
   <firstline>Kom, glade Overgivenhed</firstline>
@@ -3056,7 +3050,8 @@ og Fryd for Ingenting!
   <title>Eventyret</title>
   <subtitle>Til en Radering af Retsch: Pigen med Hexemasken</subtitle>
   <firstline>Lig en gammel tandløs Krykkemo'er</firstline>
-  <quality>korrektur1,kilde</quality>
+  <source pages="49-50" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3115,7 +3110,7 @@ rige Skjønhed Ansigt tæt til Ansigt.
 </body>
 </text>
 
-<text id="kaalund2001061703">
+<text id="kaalund20261010086" variant="kaalund2001061703">
 <head>
   <title>Før hun var voxen</title>
   <firstline>Naar før til Valsen</firstline>
@@ -3186,7 +3181,7 @@ jeg strax - betalt!
 </body>
 </text>
 
-<text id="kaalund2001061704">
+<text id="kaalund20261010087" variant="kaalund2001061704">
 <head>
   <title>Da hun var voxen</title>
   <firstline>Med milde Blikke</firstline>
@@ -3227,7 +3222,7 @@ saa dybt til Dig.
 </body>
 </text>
 
-<text id="kaalund2001061705">
+<text id="kaalund20261010088" variant="kaalund2001061705">
 <head>
   <title>Naar Du er træt</title>
   <firstline>Naar Du er træt, naar Du er kjed</firstline>
@@ -3283,7 +3278,7 @@ og Du vil finde Verden skjøn.
 </body>
 </text>
 
-<text id="kaalund2001061706">
+<text id="kaalund20261010089" variant="kaalund2001061706">
 <head>
   <title>Naturens Uforanderlighed</title>
   <firstline>I Verden op og ned det gaar</firstline>
@@ -3345,7 +3340,7 @@ saa varmt paa Livets Mund.
 </body>
 </text>
 
-<text id="kaalund2001061501">
+<text id="kaalund20261010090" variant="kaalund2001061501">
 <head>
   <title>Den flyvende Sommer</title>
   <firstline>En Spindelvæv flagrer i Solens Skin</firstline>
@@ -3376,7 +3371,7 @@ min Sangs den ustadige Lykke.
 </body>
 </text>
 
-<text id="kaalund2001061707">
+<text id="kaalund20261010091" variant="kaalund2001061707">
 <head>
   <title>Farum</title>
   <subtitle>
@@ -3463,7 +3458,7 @@ Skjønne Farum! fra din Blomstervrimmel
 </body>
 </text>
 
-<text id="kaalund2001061708">
+<text id="kaalund20261010092" variant="kaalund2001061708">
 <head>
   <title>Tankespillet</title>
   <firstline>Kjender Du det Tankespil, som, sindrigt</firstline>
@@ -3502,7 +3497,7 @@ sammensætte mig mit Eden atter.
 </body>
 </text>
 
-<text id="kaalund2001061709">
+<text id="kaalund20261010093" variant="kaalund2001061709">
 <head>
   <title>En Drøm</title>
   <firstline>Et Samlingspunkt jeg trængte til</firstline>
@@ -3559,7 +3554,7 @@ den klare Nattens Stjerne.
 </body>
 </text>
 
-<text id="kaalund2001061710">
+<text id="kaalund20261010094" variant="kaalund2001061710">
 <head>
   <title>Efteraarsnaturen</title>
   <firstline>Saa vidt mit Øje skuer</firstline>
@@ -3633,7 +3628,7 @@ mit Øje forbi.
 </body>
 </text>
 
-<text id="kaalund2001061711">
+<text id="kaalund20261010095" variant="kaalund2001061711">
 <head>
   <title>Forbandet Kain udi Ørknen gik</title>
   <firstline>Forbandet Kain udi Ørknen gik</firstline>
@@ -3670,7 +3665,7 @@ men naar, naar flyder den sidste?
 </body>
 </text>
 
-<text id="kaalund2001061712">
+<text id="kaalund20261010096" variant="kaalund2001061712">
 <head>
   <title>O, jeg har siddet engang som Drot</title>
   <firstline>O, jeg har siddet engang som Drot</firstline>
@@ -3692,7 +3687,7 @@ at jeg er en falden Konge.
 </body>
 </text>
 
-<text id="kaalund2001061713">
+<text id="kaalund20261010097" variant="kaalund2001061713">
 <head>
   <title>Til Trankebar!</title>
   <firstline>Til Trankebar, til Trankebar</firstline>
@@ -3763,7 +3758,7 @@ de syge Griller af mit Sind.
 </body>
 </text>
 
-<text id="kaalund2001061714">
+<text id="kaalund20261010098" variant="kaalund2001061714">
 <head>
   <title>Eftersommeren</title>
   <firstline>Her, hvor den græsrige Slette</firstline>
@@ -3829,7 +3824,7 @@ salig i Livet om mig.
 </body>
 </text>
 
-<text id="kaalund2001061715">
+<text id="kaalund20261010099" variant="kaalund2001061715">
 <head>
   <title>Før Søvnen</title>
   <firstline>Paa mit Kammer jeg nu Lyset slukker</firstline>
@@ -3860,7 +3855,7 @@ Moderen Godnat!
 </body>
 </text>
 
-<text id="kaalund2001061801">
+<text id="kaalund20261010100" variant="kaalund2001061801">
 <head>
   <title>Friskt Vejr</title>
   <firstline>Det dufter til Regn</firstline>
@@ -3943,7 +3938,7 @@ og længes i Striden at ile.
 </body>
 </text>
 
-<text id="kaalund2001061802">
+<text id="kaalund20261010101" variant="kaalund2001061802">
 <head>
   <title>Sommeraftnens Tusmørke</title>
   <firstline>Jeg Baaden har paa Land nu sat</firstline>
@@ -4000,7 +3995,7 @@ i Intets store Grav.
 </body>
 </text>
 
-<text id="kaalund2001061803">
+<text id="kaalund20261010102" variant="kaalund2001061803">
 <head>
   <title>Mismod</title>
   <firstline>Tungt paa den vaade Skovvej Vognen henrasler</firstline>
@@ -4031,7 +4026,7 @@ i den vilde, den tungsindige Aften!
 </body>
 </text>
 
-<text id="kaalund2001062101">
+<text id="kaalund20261010103" variant="kaalund2001062101">
 <head>
   <title>Kejseren og den fattige Kone</title>
   <firstline>En Kejser lod bygge et Tempel til Guds Ære</firstline>
@@ -4134,7 +4129,8 @@ da hun et Halmstraa ofred til Himmelens Ære!''
   <title>I Staden og paa Landet</title>
   <subtitle>For Børn</subtitle>
   <firstline>Prægtigt det er dog at bo i Staden</firstline>
-  <quality>korrektur1,kilde</quality>
+  <source pages="83-85" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4211,7 +4207,7 @@ fik jeg en Mark og en straatækt Hytte
 </body>
 </text>
 
-<text id="kaalund2001062103">
+<text id="kaalund20261010104" variant="kaalund2001062103" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til Baronesse Marie L.</title>
   <firstline>Baronesse, De, som tvinger</firstline>
@@ -4331,7 +4327,7 @@ hvor hans Fod end vandrer om!
 </body>
 </text>
 
-<text id="kaalund2001062515">
+<text id="kaalund20261010105" variant="kaalund2001062515">
 <head>
   <title>Hvor skal jeg søge Sandhed?</title>
   <firstline>Hvor skal jeg søge Sandhed, hvor?</firstline>
@@ -4388,7 +4384,7 @@ jeg fulgte dog min Engels Vej!
 </body>
 </text>
 
-<text id="kaalund2001062516">
+<text id="kaalund20261010106" variant="kaalund2001062516">
 <head>
   <title>Orgelet</title>
   <firstline>Det er mig engang for Sandhed sagt</firstline>
@@ -4444,7 +4440,7 @@ jeg tror, det sprængte mig Brystet.
 </body>
 </text>
 
-<text id="kaalund2001062517">
+<text id="kaalund20261010107" variant="kaalund2001062517">
 <head>
   <title>I Efteraaret</title>
   <firstline>Jeg svøber mig i Kappen lunt og tæt</firstline>
@@ -4655,7 +4651,7 @@ i Undergangen peger op mod Gud!
 </body>
 </text>
 
-<text id="kaalund2001062518">
+<text id="kaalund20261010108" variant="kaalund2001062518">
 <head>
   <title>Efter Uvejret</title>
   <firstline>Renset er Luften. Naturen som gjenfødt sig fryder</firstline>
@@ -4721,7 +4717,7 @@ nu som det gladeste Barn maa jeg jublende hælde
 </body>
 </text>
 
-<text id="kaalund2001062519">
+<text id="kaalund20261010109" variant="kaalund2001062519">
 <head>
   <title>Mørk Himmel</title>
   <firstline>Novemberaftenen bruser mørk</firstline>
@@ -4762,7 +4758,8 @@ paa Himmelens mørke Bue!
 <head>
   <title>St. Johannes</title>
   <firstline>St. Johannes, Jesu fromme Ven</firstline>
-  <quality>korrektur1,kilde</quality>
+  <source pages="109" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4796,7 +4793,7 @@ for hans Storhed i det lille Kryb.''
 </body>
 </text>
 
-<text id="kaalund2001062602">
+<text id="kaalund20261010110" variant="kaalund2001062602">
 <head>
   <title>Nisserne paa Vandring</title>
   <firstline>De stakkels Smaanisser, de undes ej Ro</firstline>
@@ -4927,7 +4924,7 @@ som viser den Vej, de har vandret.
 </body>
 </text>
 
-<text id="kaalund2001062603">
+<text id="kaalund20261010111" variant="kaalund2001062603">
 <head>
   <title>Lysets Flugt</title>
   <firstline>Sagtelig den sorte Nat</firstline>
@@ -5014,7 +5011,7 @@ glimre end dets Straaler smukt.
 </body>
 </text>
 
-<text id="kaalund2001062604">
+<text id="kaalund20261010112" variant="kaalund2001062604">
 <head>
   <title>Nu suser den kolde Oktoberblæst</title>
   <firstline>Nu suser den kolde Oktoberblæst</firstline>
@@ -5081,7 +5078,7 @@ dér er den lystige Jæger!
 </body>
 </text>
 
-<text id="kaalund2001062605">
+<text id="kaalund20261010113" variant="kaalund2001062605">
 <head>
   <title>Den firbenede Proletar</title>
   <firstline>Sé Pudlen med det purrede Skind</firstline>
@@ -5183,7 +5180,7 @@ de foragte ham ej for Kjolen.
 </body>
 </text>
 
-<text id="kaalund2001062801">
+<text id="kaalund20261010114" variant="kaalund2001062801">
 <head>
   <title>Bjørnen som Rytter</title>
   <subtitle>Fortælling for Børn</subtitle>
@@ -5319,7 +5316,7 @@ sin raske, lille Nordbag takke.
 </body>
 </text>
 
-<text id="kaalund2001062802">
+<text id="kaalund20261010115" variant="kaalund2001062802">
 <head>
   <title>Til Familien i Præstegaarden</title>
   <firstline>Her sidder jeg stakkels Spøgefugl</firstline>
@@ -5490,7 +5487,7 @@ et Blad, som en Arkens Due!
 </body>
 </text>
 
-<text id="kaalund2001063001">
+<text id="kaalund20261010116" variant="kaalund2001063001">
 <head>
   <title>Naturens Graad</title>
   <firstline>O Menneske, Du Jordens halve Gud</firstline>
@@ -5546,7 +5543,7 @@ og trøsted sig ved Nattergalens Trille.
 </body>
 </text>
 
-<text id="kaalund2001063002">
+<text id="kaalund20261010117" variant="kaalund2001063002">
 <head>
   <title>Kejserkronen</title>
   <firstline>Sé, hvilken Blomst, hvor rank og skjøn</firstline>
@@ -5578,7 +5575,7 @@ men hvad den skjuler sér man ikke.''
 </body>
 </text>
 
-<text id="kaalund2001063003">
+<text id="kaalund20261010118" variant="kaalund2001063003">
 <head>
   <title>Edderkoppen</title>
   <firstline>Du Edderkop, vil Du til Hækken spinde</firstline>
@@ -5610,7 +5607,7 @@ paa Himmelens Hjælp kan meget bygges!
 </body>
 </text>
 
-<text id="kaalund2001063004">
+<text id="kaalund20261010119" variant="kaalund2001063004">
 <head>
   <title>Billedstøtten</title>
   <firstline>Til Stranden skylled op et halvfuldent</firstline>
@@ -5651,7 +5648,7 @@ og kalder saa den slebne Dukke dannet.
 </body>
 </text>
 
-<text id="kaalund2001063005">
+<text id="kaalund20261010120" variant="kaalund2001063005">
 <head>
   <title>Solen og dens Skygge</title>
   <firstline>Engang faldt Solen paa</firstline>
@@ -5678,7 +5675,7 @@ han havde heller ingen.
 </body>
 </text>
 
-<text id="kaalund2001063006">
+<text id="kaalund20261010121" variant="kaalund2001063006">
 <head>
   <title>Indsigt og Oversigt</title>
   <firstline>En Træorm i en Vinduespost</firstline>
@@ -5715,7 +5712,7 @@ at den og jeg vi høre sammen!
 </body>
 </text>
 
-<text id="kaalund2001063007">
+<text id="kaalund20261010122" variant="kaalund2001063007">
 <head>
   <title>Kokosnødden</title>
   <firstline>En Kokosnød</firstline>
@@ -5789,7 +5786,7 @@ kan Sandhedsordet blive!
 </body>
 </text>
 
-<text id="kaalund2001063008">
+<text id="kaalund20261010123" variant="kaalund2001063008">
 <head>
   <title>Planeten og Kometen</title>
   <firstline>I sit System en lille Biplanet</firstline>
@@ -5830,7 +5827,7 @@ sin uudgrundelige Bane skriver.''
 </body>
 </text>
 
-<text id="kaalund2001063009">
+<text id="kaalund20261010124" variant="kaalund2001063009">
 <head>
   <title>Nøddeknækkeren</title>
   <firstline>Nøddeknækker, hvor er Du stiv</firstline>
@@ -5855,7 +5852,7 @@ han agted kun lidt, at Kjærnen er lækker,
 </body>
 </text>
 
-<text id="kaalund2001063010">
+<text id="kaalund20261010125" variant="kaalund2001063010">
 <head>
   <title>Uvejrsskyen</title>
   <firstline>O Menneske, hvor vil Du fly</firstline>
@@ -5907,7 +5904,7 @@ staar hævet over Jordens Sky!''
 </body>
 </text>
 
-<text id="kaalund2001063011">
+<text id="kaalund20261010126" variant="kaalund2001063011">
 <head>
   <title>Guldfiskene</title>
   <firstline>En dobbelt Boble, hvælvet af Krystal</firstline>
@@ -5948,7 +5945,7 @@ Og sig mig, har Du aldrig tænkt som Svalen?
 </body>
 </text>
 
-<text id="kaalund2001063012">
+<text id="kaalund20261010127" variant="kaalund2001063012">
 <head>
   <title>Oldingen og Pogen</title>
   <firstline>Paa Grenen højt en Pære hang</firstline>
@@ -6000,7 +5997,7 @@ I steg paa eders Fædres Skuldre.
 </body>
 </text>
 
-<text id="kaalund2001063013">
+<text id="kaalund20261010128" variant="kaalund2001063013">
 <head>
   <title>Sommerfugl og Østers</title>
   <firstline>Hvad fik hin Østers Skallen til</firstline>
@@ -6032,7 +6029,7 @@ gid Pokker Østers være!''
 </body>
 </text>
 
-<text id="kaalund2001063014">
+<text id="kaalund20261010129" variant="kaalund2001063014">
 <head>
   <title>Den højere Dressur</title>
   <firstline>Mellem Fjælebodens Aber</firstline>
@@ -6079,7 +6076,7 @@ for med dem at pudse Katten.
 </body>
 </text>
 
-<text id="kaalund2001070101">
+<text id="kaalund20261010130" variant="kaalund2001070101">
 <head>
   <title>Til Rosen</title>
   <firstline>Rose, yndige Rose! naar jeg Dig sér</firstline>
@@ -6130,7 +6127,7 @@ sér og længes og bliver saa underlig øm,
 </body>
 </text>
 
-<text id="kaalund1999031201">
+<text id="kaalund20261010131" variant="kaalund1999031201">
 <head>
   <title>Efter Maskeraden</title>
   <firstline>Her sidder jeg alene</firstline>
@@ -6162,7 +6159,7 @@ mig selv, mig selv igjen!
 </body>
 </text>
 
-<text id="kaalund2001070102">
+<text id="kaalund20261010132" variant="kaalund2001070102">
 <head>
   <title>Revolutionstiden</title>
   <subtitle>1848</subtitle>
@@ -6466,8 +6463,9 @@ smuldre vi i vore Grave.
   <title>Til Kong Frederik den Syvende</title>
   <subtitle>Ved hans Thronbestigelse</subtitle>
   <firstline>Du Drot, som nu throner i høje Sale</firstline>
+  <source pages="165-172" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
   <keywords>frederik7</keywords>
-  <quality>korrektur1,kilde</quality>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6667,7 +6665,7 @@ Ja, Herre Konge, det ske! det ske!
 </body>
 </text>
 
-<text id="kaalund2001070103">
+<text id="kaalund20261010133" variant="kaalund2001070103">
 <head>
   <title>Sang for det danske Folk</title>
   <subtitle>Den 22de Marts 1848</subtitle>
@@ -6714,7 +6712,7 @@ og Ryggen mod Verdens Tyranner!
 </body>
 </text>
 
-<text id="kaalund2001070104">
+<text id="kaalund20261010134" variant="kaalund2001070104">
 <head>
   <title>Ved Adam Oehlenschlägers Død</title>
   <firstline>Ak, det herlige Lys er slukket</firstline>
@@ -6766,7 +6764,7 @@ græder Norden for Hakons Skjald.
 </body>
 </text>
 
-<text id="kaalund2001070105">
+<text id="kaalund20261010135" variant="kaalund2001070105">
 <head>
   <title>Den brudte Straale</title>
   <firstline>Du priser kun Skjalde af første Rang</firstline>
@@ -6798,7 +6796,7 @@ og bereder den Verden, som kommer!
 </body>
 </text>
 
-<text id="kaalund2001070106">
+<text id="kaalund20261010136" variant="kaalund2001070106">
 <head>
   <title>De to Kamre</title>
   <firstline>Tvende Kamre har mit Hjerte</firstline>
@@ -6849,7 +6847,7 @@ førend hele Huset falder.
 </body>
 </text>
 
-<text id="kaalund2001070107">
+<text id="kaalund20261010137" variant="kaalund2001070107">
 <head>
   <title>Kaos</title>
   <firstline>Styrtet er min drømte Verden, tabt</firstline>
@@ -6880,7 +6878,7 @@ Ak, og naar skal Hviledagen komme?
 </body>
 </text>
 
-<text id="kaalund2001070108">
+<text id="kaalund20261010138" variant="kaalund2001070108">
 <head>
   <title>Rastløs Higen</title>
   <firstline>Ved hvert Maal, hvortil jeg higer</firstline>
@@ -6918,7 +6916,7 @@ vækker mig til Strid igjen!
 </body>
 </text>
 
-<text id="kaalund2001070109">
+<text id="kaalund20261010139" variant="kaalund2001070109">
 <head>
   <title>Det gamle Øg</title>
   <firstline>Det suser saa tungt i den visnende Bøg</firstline>
@@ -6984,7 +6982,7 @@ Hurra! mod den evige Morgen.
 </body>
 </text>
 
-<text id="kaalund2001070110">
+<text id="kaalund20261010140" variant="kaalund2001070110">
 <head>
   <title>Kun en Draabe</title>
   <firstline>Tag friske Rosenblade - hundred Pund</firstline>
@@ -7035,7 +7033,7 @@ og svundne Seklers Duft i Sagn og Sange.
 </body>
 </text>
 
-<text id="kaalund2001070111">
+<text id="kaalund20261010141" variant="kaalund2001070111">
 <head>
   <title>Fredspiben</title>
   <firstline>Jeg var en Vild, som Fuglen fri</firstline>
@@ -7061,7 +7059,7 @@ en Fredspibe med min Fjende.
 </body>
 </text>
 
-<text id="kaalund2001070112">
+<text id="kaalund20261010142" variant="kaalund2001070112">
 <head>
   <title>Lærken</title>
   <firstline>Det lakked hen mod Pintse, dog laa paa Marken Sne</firstline>
@@ -7107,7 +7105,7 @@ at synge profetisk med jublende Tro
 </body>
 </text>
 
-<text id="kaalund2001070113">
+<text id="kaalund20261010143" variant="kaalund2001070113">
 <head>
   <title>Helligkilden</title>
   <firstline>Gjennem Hedelyng og Sand</firstline>
@@ -7197,7 +7195,7 @@ Kuren er for Alle fri!
 </body>
 </text>
 
-<text id="kaalund2001070114">
+<text id="kaalund20261010144" variant="kaalund2001070114">
 <head>
   <title>Den lille Evadatter</title>
   <firstline>Overgiven er Du, ellevild</firstline>
@@ -7313,7 +7311,7 @@ kan med Smil Dig ind i Øjet skue.
 </body>
 </text>
 
-<text id="kaalund2001070115">
+<text id="kaalund20261010145" variant="kaalund2001070115">
 <head>
   <title>Til Naturen</title>
   <firstline>O store, herlige Natur</firstline>
@@ -7355,7 +7353,7 @@ en Plads ved Livets Fest for mig?
 </body>
 </text>
 
-<text id="kaalund2001070116">
+<text id="kaalund20261010146" variant="kaalund2001070116">
 <head>
   <title>Livet</title>
   <firstline>En Tyran, forfærdelig og grum</firstline>
@@ -7432,7 +7430,7 @@ der sig taber ud i Evigheden!
 </body>
 </text>
 
-<text id="kaalund2001070117">
+<text id="kaalund20261010147" variant="kaalund2001070117">
 <head>
   <title>Kontrasterne</title>
   <firstline>Du stødes ved min Tale</firstline>
@@ -7508,7 +7506,7 @@ er Mønten dog den samme.
 </body>
 </text>
 
-<text id="kaalund2001070118">
+<text id="kaalund20261010148" variant="kaalund2001070118">
 <head>
   <title>Maaske!</title>
   <firstline>Jeg vil et Ord Dem nævne</firstline>
@@ -7554,7 +7552,7 @@ for mig kun et Maaske.
 </body>
 </text>
 
-<text id="kaalund2001061303">
+<text id="kaalund20261010149" variant="kaalund2001061303">
 <head>
   <title>Til Hende</title>
   <firstline>Mens Vintersolen daler bag den rødmende Sky</firstline>
@@ -7646,7 +7644,7 @@ sin søde, lille Mage, og gjør ligesaa -
 </body>
 </text>
 
-<text id="kaalund2001070119">
+<text id="kaalund20261010150" variant="kaalund2001070119">
 <head>
   <title>De grønne Blade</title>
   <firstline>Igjennem Plantens Liv der gaar en Længsel</firstline>
@@ -7709,6 +7707,7 @@ min Digterlængsels Krone, jeg vil naae!
   <notes>
     <note>Det omtalte digt <xref poem="kaalund2001061303"/> findes i <a work="kaalund/1858"><i>Et Foraar</i></a>.</note>
   </notes>
+  <source pages="245" facsimile="130023270839_color" facsimile-pages-num="462" facsimile-pages-offset="12">H. V. Kaalund: <i>Samlede Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1898.</source>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -7738,7 +7737,7 @@ min beskedne, stille Viv!
 </body>
 </text>
 
-<text id="kaalund2001081501">
+<text id="kaalund20261010151" variant="kaalund2001081501">
 <head>
   <title>Stæren</title>
   <firstline>Ved Tøbrudstid fløjter Stæren sin Sang</firstline>
@@ -7790,7 +7789,7 @@ da jeg faar min Stemme tilbage!
 </body>
 </text>
 
-<text id="kaalund1999030801">
+<text id="kaalund20261010152" variant="kaalund1999030801">
 <head>
   <title>Til Virkeligheden</title>
   <firstline>Min Tugtemester, min store Lærer</firstline>
@@ -7929,7 +7928,7 @@ naar jeg rykker op i en højere Klasse!
 </body>
 </text>
 
-<text id="kaalund2001081502">
+<text id="kaalund20261010153" variant="kaalund2001081502">
 <head>
   <title>I en Solskinskrog</title>
   <firstline>Bestraalet af den milde Foraarssol</firstline>
@@ -7980,7 +7979,7 @@ for hvad der ellers Smaabørn kun fortryller!
 </body>
 </text>
 
-<text id="kaalund2001081503">
+<text id="kaalund20261010154" variant="kaalund2001081503">
 <head>
   <title>Løven i Slippen</title>
   <firstline>En Gang - ja, det er nu langt tilbage</firstline>
@@ -8102,7 +8101,7 @@ den stakkels sovende Løve i Slippen!
 </body>
 </text>
 
-<text id="kaalund2001081504">
+<text id="kaalund20261010155" variant="kaalund2001081504">
 <head>
   <title>Vinteraften paa Landet</title>
   <firstline>Nu skal alt Skodden lukkes</firstline>
@@ -8193,7 +8192,7 @@ hvor Lysene blænde!
 </body>
 </text>
 
-<text id="kaalund2001081701">
+<text id="kaalund20261010156" variant="kaalund2001081701">
 <head>
   <title>Paa Grænsen mellem Stad og Land</title>
   <firstline>Paa Grænsen mellem Stad og Land</firstline>
@@ -8255,7 +8254,7 @@ paa Grænsen mellem Land og By!
 </body>
 </text>
 
-<text id="kaalund2001081702">
+<text id="kaalund20261010157" variant="kaalund2001081702">
 <head>
   <title>Ensomt Liv</title>
   <firstline>Jeg sad alene paa en øde Gaard</firstline>
@@ -8341,7 +8340,7 @@ og sér den skjulte Verdenspendel svinge.
 </body>
 </text>
 
-<text id="kaalund2002122801">
+<text id="kaalund20261010158" variant="kaalund2002122801">
 <head>
   <title>Til Nordens Folk</title>
   <subtitle>(I December 1863.)</subtitle>
@@ -8444,7 +8443,7 @@ vil med uplettet Hæder vi falde!
 </body>
 </text>
 
-<text id="kaalund2002122803">
+<text id="kaalund20261010159" variant="kaalund2002122803">
 <head>
   <title>I Farens Stund</title>
   <subtitle>(Januar 1864).</subtitle>
@@ -8556,7 +8555,7 @@ og fra Tvivlens fule Pest!
 </body>
 </text>
 
-<text id="kaalund2002052501">
+<text id="kaalund20261010160" variant="kaalund2002052501">
 <head>
   <title>Kaalormen</title>
   <firstline>Om Landsbyhaverne Kampen stod</firstline>
@@ -8619,7 +8618,7 @@ mod Opstandelses-Morgenrøden!
 </body>
 </text>
 
-<text id="kaalund2002122804">
+<text id="kaalund20261010161" variant="kaalund2002122804">
 <head>
   <title>Et Fugleskjul</title>
   <firstline>Blandt Kugler og Kanoner</firstline>
@@ -8721,7 +8720,7 @@ som denne maatte fyldes!''
 </body>
 </text>
 
-<text id="kaalund2002122805">
+<text id="kaalund20261010162" variant="kaalund2002122805">
 <head>
   <title>Rejsetummel</title>
   <firstline>Jeg har rejst! - Jeg har været i fremmede Byer!</firstline>
@@ -8838,7 +8837,7 @@ da Du atter gjenfødes i Daad og i Sang!
 </body>
 </text>
 
-<text id="kaalund2002052502">
+<text id="kaalund20261010163" variant="kaalund2002052502">
 <head>
   <title>Hvorledes man kan narre et Æsel</title>
   <firstline>Omdanset af de lette Myg</firstline>
@@ -8910,7 +8909,7 @@ saa Skovens Ekko klang!
 </body>
 </text>
 
-<text id="kaalund2002052503">
+<text id="kaalund20261010164" variant="kaalund2002052503">
 <head>
   <title>Ved et Kunstnerpars Sølvbryllup</title>
   <firstline>Nær ved Lillebælts Strand stod hans Vugge paa Fyen</firstline>
@@ -8961,7 +8960,7 @@ og hvad Livet har skjønnest og bedst!
 </body>
 </text>
 
-<text id="kaalund2002122802">
+<text id="kaalund20261010165" variant="kaalund2002122802">
 <head>
   <title>I Sommernatten</title>
   <firstline>Ved Vindvet Poplen sukker</firstline>
@@ -9019,7 +9018,7 @@ til saa at være svag!
 </body>
 </text>
 
-<text id="kaalund2002122806">
+<text id="kaalund20261010166" variant="kaalund2002122806">
 <head>
   <title>Ved en Vens Afrejse til Udlandet</title>
   <subtitle>1872.</subtitle>
@@ -9086,7 +9085,7 @@ over Døgnets Taage og Skraalet!
 </body>
 </text>
 
-<text id="kaalund2002122807">
+<text id="kaalund20261010167" variant="kaalund2002122807">
 <head>
   <title>Ved Stranden</title>
   <firstline>Ensom i Aftenens dæmrende Stund</firstline>
@@ -9161,7 +9160,7 @@ som min Sjæl har i Nuet fornummet!
 </body>
 </text>
 
-<text id="kaalund2002122808">
+<text id="kaalund20261010168" variant="kaalund2002122808">
 <head>
   <title>Det sidste Følge</title>
   <firstline>De skulde bære den Døde bort</firstline>
@@ -9254,7 +9253,7 @@ af hundrede Fugle om Graven!
 </body>
 </text>
 
-<text id="kaalund2002122809">
+<text id="kaalund20261010169" variant="kaalund2002122809">
 <head>
   <title>„Araberen“</title>
   <indextitle>Araberen</indextitle>
@@ -9378,7 +9377,7 @@ til den højeste Ret paa Dommens Dag!
 </body>
 </text>
 
-<text id="kaalund2002122810">
+<text id="kaalund20261010170" variant="kaalund2002122810">
 <head>
   <title>Elefanten</title>
   <firstline>Den var bragt over Sø og salten Vand</firstline>
@@ -9498,7 +9497,7 @@ Respekt for de Smaa - for <i>Mængden!</i>
 </body>
 </text>
 
-<text id="kaalund2003010444">
+<text id="kaalund20261010171" variant="kaalund2003010444">
 <head>
   <title>Bjørnejagt</title>
   <firstline>Jeg véd en pudsig Maade</firstline>
@@ -9626,7 +9625,7 @@ deroppe i sit Tov!
 </body>
 </text>
 
-<text id="kaalund2003010445">
+<text id="kaalund20261010172" variant="kaalund2003010445">
 <head>
   <title>Manden paa Dueslaget</title>
   <firstline>Fra femte Stokværk til Husets Kvist</firstline>
@@ -9727,7 +9726,7 @@ og er ikke rigtig i Ho'det.
 </body>
 </text>
 
-<text id="kaalund2003010446">
+<text id="kaalund20261010173" variant="kaalund2003010446">
 <head>
   <title>Ravnen</title>
   <firstline>Da paa Solferinos Høje Kampens store Stund var nær</firstline>
@@ -9768,7 +9767,7 @@ Aadselsravnen - Ørnens Skygge - Dødens Fugl saa sort som Sod!
 </body>
 </text>
 
-<text id="kaalund2003010447">
+<text id="kaalund20261010174" variant="kaalund2003010447">
 <head>
   <title>Kilden</title>
   <firstline>Af Kilderne smaa</firstline>
@@ -9807,7 +9806,7 @@ og strøm saa i Havet med Ære!
 </body>
 </text>
 
-<text id="kaalund2003010448">
+<text id="kaalund20261010175" variant="kaalund2003010448">
 <head>
   <title>Da de rev Voldene ned</title>
   <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
@@ -9998,7 +9997,7 @@ før de forsvinder!
 </body>
 </text>
 
-<text id="kaalund2003010449">
+<text id="kaalund20261010176" variant="kaalund2003010449">
 <head>
   <title>Til en Ven og en Veninde</title>
   <firstline>Modtag, min unge, varme Ven</firstline>
@@ -10105,7 +10104,7 @@ og mér end tyve Aar!
 </body>
 </text>
 
-<text id="kaalund2003010450">
+<text id="kaalund20261010177" variant="kaalund2003010450">
 <head>
   <title>Et Vinterbillede</title>
   <subtitle>(Text til et Træsnit, tegnet af H. Friis.)</subtitle>
@@ -10221,7 +10220,7 @@ mig betragter med ærlige Øjne.
 </body>
 </text>
 
-<text id="kaalund2001071801">
+<text id="kaalund20261010178" variant="kaalund2001071801">
 <head>
   <title>Paa det Jevne</title>
   <firstline>Paa det Jevne, paa det Jevne!</firstline>
@@ -10286,7 +10285,7 @@ Det er Livets Sejerssang!
 </body>
 </text>
 
-<text id="kaalund2003010451">
+<text id="kaalund20261010179" variant="kaalund2003010451">
 <head>
   <title>Til Fru .....</title>
   <firstline>Til Dem, som tidt har skjændt</firstline>
@@ -10423,7 +10422,7 @@ med Hjertet paa Læben,
 </body>
 </text>
 
-<text id="kaalund2003010452">
+<text id="kaalund20261010180" variant="kaalund2003010452">
 <head>
   <title>Den brogede Verden</title>
   <firstline>Jeg elsker den brogede Verden</firstline>
