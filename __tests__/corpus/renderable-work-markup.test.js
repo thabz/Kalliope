@@ -21,6 +21,7 @@ describe('renderable work corpus markup', () => {
         'fdirs/blicherclausen/1903.xml',
         'fdirs/blicher/1814.xml',
         'fdirs/grundtvig/1814a.xml',
+        'fdirs/kaalund/1898.xml',
       ].includes(work.filename)
     )) {
       const document = parseWorkXml(content);
