@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="goethe" author="rosenbergpa" status="incomplete" type="poetry">
 <workhead>
-  <title>Oversættelser af Goethe</title>
+  <title>Goethes Værker</title>
+  <year>1924-1928</year>
+  <source>
+    <title>Goethes Værker</title>
+    <editor id="rosenbergpa">P.A. Rosenberg</editor>
+    <volume>1</volume>
+    <place>København</place>
+    <publisher>Forlaget Danmark</publisher>
+    <year>1924-1928</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -12,7 +21,7 @@
   <notes>
     <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2019011801"/>.</note>
   </notes>
-  <source pages="108"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <source pages="108"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -38,7 +47,7 @@ Kom, o kom til dette Bryst!
   <notes>
     <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2002103001"/>.</note>
   </notes>
-  <source pages="109"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <source pages="109"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -64,7 +73,7 @@ Hviler du med.
   <notes>
     <note>Oversættelse af Goethe: <xref type="translation" poem="goethe2001111901"/>.</note>
   </notes>
-  <source pages="165-167"><i>Goethes Værker</i> ved P.A. Rosenberg, Forlaget Danmark, Kbh., 1924-28, Bd. 1.</source>
+  <source pages="165-167"/>
   <quality>korrektur1</quality>
 </head>
 <body>
