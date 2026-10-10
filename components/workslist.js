@@ -16,7 +16,7 @@ const workNameTranslated = (work, lang) => {
   }
 };
 
-const WorksList = ({ lang, poet, works }) => {
+const WorksList = ({ lang, poet, works, preserveOrder = false }) => {
   if (works.length === 0) {
     return null;
   }
@@ -24,7 +24,8 @@ const WorksList = ({ lang, poet, works }) => {
   const anyPrefixes =
     works.filter((work) => work.toctitle.prefix != null).length > 0;
 
-  const rows = WorkSorting.sortWorks(poet, works).map((work, i) => {
+  const orderedWorks = preserveOrder === true ? works : WorkSorting.sortWorks(poet, works);
+  const rows = orderedWorks.map((work, i) => {
     const workName = workNameTranslated(work, lang);
 
     const year = work.year;
