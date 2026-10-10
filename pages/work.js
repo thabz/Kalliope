@@ -10,8 +10,10 @@ import Note from '../components/note.js';
 import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Source from '../components/source.js';
 import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
@@ -41,6 +43,27 @@ const WorkPage = (props) => {
     return <ErrorPage error={error} lang={lang} message="Ukendt værk" />;
   }
   const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
+
+  const sources = Object.entries(work.sources ?? {}).filter(
+    ([, source]) =>
+      (source.source != null && source.source.length > 0) ||
+      source.digitalUrl != null
+  );
+  const renderedSources = sources.length > 0 ? (
+    <Note type="source">
+      <SidebarMiniHeading>{_('Kilde', lang)}</SidebarMiniHeading>
+      <Stack spacing="10px">
+        {sources.map(([sourceId, source]) => (
+          <Source
+            key={sourceId}
+            contentHtml={[[source.source ?? '', { html: true }]]}
+            href={source.digitalUrl}
+            lang={lang}
+          />
+        ))}
+      </Stack>
+    </Note>
+  ) : null;
 
   const renderedNotes = notes.map((note, i) => {
     return (
@@ -82,6 +105,7 @@ const WorkPage = (props) => {
     ) : null;
   let sidebar = null;
   if (
+    renderedSources != null ||
     pictures.length > 0 ||
     notes.length > 0 ||
     errata.length > 0 ||
@@ -91,6 +115,7 @@ const WorkPage = (props) => {
     sidebar = (
       <div>
         <Stack spacing="20px">
+          {renderedSources}
           {renderedPictures}
           {renderedNotes}
           {renderedErrata}
