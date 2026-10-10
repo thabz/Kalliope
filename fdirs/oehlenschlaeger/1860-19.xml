@@ -2,9 +2,7 @@
 <kalliopework id="1860-19" author="oehlenschlaeger" status="complete" type="poetry" parent="1857-1862">
 <workhead>
   <title>Poetiske Skrifter</title>
-  <subtitle>
-    <line>Nittende Bind. Digte, Første Deel.</line>
-  </subtitle>
+  <subtitle>Nittende Bind. Digte, Første Deel.</subtitle>
   <linktitle>Samlede Skrifter, 19. Bind</linktitle>
   <toctitle><num>Bind 19.</num>Digte, Første Deel</toctitle>
   <breadcrumbtitle>Bd. 19</breadcrumbtitle>
@@ -15,7 +13,15 @@
   <pictures>
     <picture src="1860-19-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Første Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''</picture>
   </pictures>
-  <source facsimile="130023479592_color" facsimile-pages-num="366" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 19, 1860.</source>
+  <source facsimile="130023479592_color" facsimile-pages-num="366" facsimile-pages-offset="18">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>19</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1860</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -1550,6 +1556,7 @@ Før jeg finder.
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="43-47"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2823,6 +2830,7 @@ Og takked Gud, fordi jeg var saa stum.
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060502"/>.</note>
   </notes>
   <source pages="78-79"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3323,6 +3331,7 @@ Elvens fortvivlede Brag, Hornets vildthylende Klang!
   <linktitle>Til Hanna Steffens</linktitle>
   <firstline>November stod saa kold og øde</firstline>
   <source pages="92-93"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7459,6 +7468,7 @@ Som af Cheruberne synges om Skaberens Throne.
   <title>Jesu Mirakler</title>
   <firstline>Hvor Sangersken glædeligt toner</firstline>
   <source pages="211-213"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7547,6 +7557,7 @@ Og smile til Himmelens Blaa.
   <firstline>Hvad vil du mig, du stolte Sommerstraale?</firstline>
   <!-- Ikke en variant af oehlenschlaeger2019021817: Forskellige tekster med fælles indledning. -->
   <source pages="213-215"/>
+  <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9107,9 +9118,7 @@ Og aldrig dit Minde at glemme.
 <head>
   <suptitle>I Anledning af</suptitle>
   <title>Maria Elisabeth Thuras Død</title>
-  <subtitle>
-    <line>Juli 1805.</line>
-  </subtitle>
+  <subtitle>Juli 1805.</subtitle>
   <toctitle>I Anledning af M. E. Thuras Død. Juli 1805</toctitle>
   <indextitle>I Anledning af M. E. Thuras Død</indextitle>
   <linktitle>I Anledning af M. E. Thuras Død</linktitle>
@@ -9439,7 +9448,7 @@ Ei sin Gang, før den seer Hytten i velkiendte Hiem.
   <title>Bakkehuset</title>
   <firstline>Du kiære Høi, saa nær ved den</firstline>
   <source pages="266-267"/>
-  <keywords>rahbekk,rabbek</keywords>
+  <keywords>rahbekk,rabbek,balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9838,6 +9847,7 @@ Maria Danebod!
     <note type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="278"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -10164,7 +10174,6 @@ Saaledes kom vi ud af det.
 <text id="oehlenschlaeger20190203130">
 <head>
   <title><num>3.</num>Til Carl Heger</title>
-  <toctitle><num>3.</num>Til Carl Heger</toctitle>
   <indextitle>Til Carl Heger</indextitle>
   <linktitle>Til Carl Heger</linktitle>
   <firstline>Min Carl! naar dette Digt du nu har læst</firstline>
@@ -10224,7 +10233,6 @@ Naar med dig selv for Gud du ene staaer.
 <text id="oehlenschlaeger20190203131">
 <head>
   <title><num>4.</num>Til den øvrige lille Venneflok</title>
-  <toctitle><num>4.</num>Til den øvrige lille Venneflok</toctitle>
   <indextitle>Til den øvrige lille Venneflok</indextitle>
   <linktitle>Til den øvrige lille Venneflok</linktitle>
   <firstline>Hvad giør Fædrelandet kiært?</firstline>

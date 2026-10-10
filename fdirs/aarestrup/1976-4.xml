@@ -2,9 +2,7 @@
 <kalliopework id="1976-4" author="aarestrup" status="complete" type="poetry" parent="1976">
 <workhead>
   <title>Samlede Skrifter</title>
-  <subtitle>
-    <line>Fjerde Bind. Utrykte digte 1838-56.</line>
-  </subtitle>
+  <subtitle>Fjerde Bind. Utrykte digte 1838-56.</subtitle>
   <linktitle>Samlede Skrifter, 4. Bind</linktitle>
   <toctitle><num>Bind 4.</num>Utrykte digte 1838-56</toctitle>
   <breadcrumbtitle>Bd. 4</breadcrumbtitle>
@@ -13,6 +11,9 @@
     <picture src="1976-4-p1.jpg">Titelbladet til <i>Samlede Skrifter, første bind</i> (1976) lyder ,,Emil Aarestrups / Samlede Skrifter / udgivne af / Hans Brix og Palle Runkjær / Første Bind // C. A. Reitzels Boghandel / 1976.''</picture>
   </pictures>
   <source facsimile="1976-4" facsimile-pages-num="191" facsimile-pages-offset="9">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976.</source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -501,7 +502,7 @@ Det kan du aldrig miste.
   <title>Til O. Bang</title>
   <firstline>Mellem Lolliker tilhuse</firstline>
   <notes>
-    <note>O. Bang er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
+    <note><a person="bango">O. Bang</a> er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
   </notes>
   <source pages="23-26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -809,8 +810,6 @@ Og at den herlige Flor længe maa blomstre som nu -
 <text id="aarestrup2001061403" skip-index="true">
 <head>
   <title>Min Ven - Christian Petersen!</title>
-  <toctitle>Min Ven - Christian Petersen!</toctitle>
-  <indextitle>Min Ven - Christian Petersen!</indextitle>
   <source pages="35-37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -949,8 +948,6 @@ Alle Venner snart mig glemt.
 <text id="aarestrup2001061405" variant="aarestrup2018110604" skip-index="true">
 <head>
   <title>Mit Brev jeg sender</title>
-  <toctitle>Mit Brev jeg sender</toctitle>
-  <indextitle>Mit Brev jeg sender</indextitle>
   <source pages="42-44"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1028,6 +1025,7 @@ Men i hvert ærligt Hjerte, som du vandt!
   <title>Kom, Gudsengel, stille Død</title>
   <firstline>Kom, Gudsengel, stille Død</firstline>
   <source pages="47-48"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1107,6 +1105,7 @@ Om den veed ikkun Guderne Besked.
   <title>Patriotisk Elegie</title>
   <firstline>Der var en Tid mit Fødeland</firstline>
   <source pages="50-52"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1594,8 +1593,6 @@ Og turde ei paa Porten kime.
     <line>den 1ste Januar 1842.</line>
     <line>Sonetto.</line>
   </subtitle>
-  <toctitle>Deres Naade Fru Kammerherreinde, Baronesse Rosenørn-Lehn</toctitle>
-  <indextitle>Deres Naade Fru Kammerherreinde, Baronesse Rosenørn-Lehn</indextitle>
   <firstline>Italiens Sanger slaaer som Nattergalen</firstline>
   <source pages="70"/>
   <keywords>lejlighedsdigtning,thovaldsen,sonnet</keywords>
@@ -1917,8 +1914,6 @@ Maa daglig svulme frisk og skjøn!
 <text id="aarestrup2019013023" variant="aarestrup3x2002032817">
 <head>
   <title>Til en ung Sømand</title>
-  <toctitle>Til en ung Sømand</toctitle>
-  <indextitle>Til en ung Sømand</indextitle>
   <firstline>Fra grønne Bakker - svulmende paa Øen</firstline>
   <source pages="85-86"/>
   <quality>korrektur1,korrektur2</quality>
@@ -2649,6 +2644,7 @@ Vor Vert og vor Vertinde leve!
   <title>Den 19de Juni 1851</title>
   <firstline>Den 19de Juni 1851</firstline>
   <source pages="109-111"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

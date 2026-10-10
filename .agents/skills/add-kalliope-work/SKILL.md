@@ -62,10 +62,13 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
 - opret eller opdatér værkmetadata og nødvendige personmetadata;
 - kontrollér titel, forfatter, udgivelsesår, forlag eller trykkested, bind og
   andre bibliografiske oplysninger mod kilden;
+- transskriber titelbladets trykte ordlyd i `<transcription>` på hvert
+  `type="titlepage"`-billede efter `docs/xml-work-format.md`;
 - tilføj en præcis kildehenvisning og om muligt et stabilt link til den
   anvendte digitalisering eller det anvendte facsimile;
 - kontrollér alle interne referencer og id'er, herunder varianter, personer,
   kilder og billeder;
+- kør den værkafgrænsede variantkontrol nedenfor og gennemgå kandidaterne;
 - formatér og validér med repositoryets aktuelle værktøjer;
 - kør hele testpakken før PR-oprettelse, som krævet af `AGENTS.md`;
 - gennemgå den endelige diff for åbenlyse OCR-, markup- og
@@ -74,6 +77,26 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
 Markér ikke en opgave som udført alene fordi filerne bygger. En kontrol er
 først færdig, når den faktisk er kørt eller gennemført og resultatet er
 vurderet.
+
+### Variantkontrol
+
+Når værkets tekster og førstelinjer er indsat, kør:
+
+```sh
+node tools/find-variant-candidates.js fdirs/<digter>/<værk>.xml
+```
+
+Værktøjet læser inputværket direkte og søger i det eksisterende JSONL-korpus
+hos hver teksts effektive forfatter, også ved antologier med flere digtere.
+Der kræves intet build. Se `docs/corpus-dataset.md` for søgegrundlag og
+begrænsninger; `--json` giver en maskinlæsbar rapport.
+
+Gennemgå kandidatteksterne, indsæt sikre relationer efter XML-modellen og
+dokumentér uafklarede fund og dataproblemer. En kandidatsøgning alene er ikke
+en afsluttet variantkontrol. Gentag kontrollen efter ændringer i førstelinjer
+eller forfatterangivelser. Kør kun for værket under arbejde, ikke globalt for
+korpusset. Eksisterende tekster må ikke bruges som grundlag for at kopiere
+transskriptionen fra en anden udgave.
 
 ## 3. Håndtér tvivl eksplicit
 

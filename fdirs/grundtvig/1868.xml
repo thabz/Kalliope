@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1868" author="grundtvig" status="complete" type="poetry" parent="1868-1881">
+<kalliopework id="1868" author="grundtvig" status="complete" type="poetry" parent="1868-1881" ignore-tests="title-trailing-punctuation">
 <workhead>
   <title>Psalmer og aandelige Sange</title>
   <subtitle>Sangværk til den Danske Kirke, 2. uforandr. Udg.</subtitle>
@@ -12,7 +12,7 @@
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1868-p1.jpg">Første titelblad lyder ,,Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Første Deel. / Sangværket. // Kjøbenhavn. / Michaelsen &amp; Tillige. K. Schønberg. / Thieles Bogtrykkeri. / 1868.''</picture>
+    <picture type="titlepage" src="1868-p1.jpg"><transcription>Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Første Deel. / Sangværket. // Kjøbenhavn. / Michaelsen &amp; Tillige. K. Schønberg. / Thieles Bogtrykkeri. / 1868.</transcription></picture>
     <picture src="1868-p2.jpg"></picture>
     <picture src="1868-p3.jpg">Andet titelblad lyder ,,Sang-Værk / til / Den Danske Kirke, / samlet / af / Nik. Fred. Sev. Grundtvig. // Anden uforandrede Udgave. // Kjøbenhavn. / Michaelsen &amp; Tillige. K. Schønberg. / Thieles Bogtrykkeri. / 1868.''</picture>
     <picture src="1868-p4.jpg">Dedikationen lyder ,,Den danske Menighed / og navnlig / mine præstelige Venner / Gunni Busck og Peter Fenger / venligt tilegnet.''</picture>
@@ -1516,7 +1516,7 @@ Det fattes her en Hytte!
   <title><num>9.</num>Ved Babylons Floder</title>
   <firstline>Ved Babylons Floder</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme137">137de Davids-Psalme</a></note>
+    <note>* Efter den <a bible="bibelsalme137">137de Davids-Psalme</a></note>
   </notes>
   <source pages="39-41"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1595,7 +1595,7 @@ Til Lykke med den!
   <title><num>10.</num>Hvor er dog din Naade</title>
   <firstline>Hvor er dog din Naade!</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme74">74de Davids-Psalme</a></note>
+    <note>* Efter den <a bible="bibelsalme74">74de Davids-Psalme</a></note>
   </notes>
   <source pages="41-45"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2122,9 +2122,7 @@ Være Dig! Halleluja!
 <text id="grundtvig2001010715">
 <head>
   <title><num>15.</num>Tusind Aar stod Christi Kirke</title>
-  <subtitle>
-    <line>Mel. Som den gyldne Soel udbryder</line>
-  </subtitle>
+  <subtitle>Mel. Som den gyldne Soel udbryder</subtitle>
   <firstline>Tusind Aar stod Christi Kirke</firstline>
   <source pages="55-57"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2420,9 +2418,7 @@ Kiærminden groer i Enge!
 <text id="grundtvig2001010718">
 <head>
   <title><num>18.</num>Oprundet er vor Jubel-Fest</title>
-  <subtitle>
-    <line>Mel. Nu nærmer sig vor Pindsefest</line>
-  </subtitle>
+  <subtitle>Mel. Nu nærmer sig vor Pindsefest</subtitle>
   <firstline>Oprundet er vor Jubel-Fest</firstline>
   <source pages="62-64"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2544,7 +2540,7 @@ Favner den forlorne Søn!
   <title><num>20.</num>Vær trøstig, Zion, Jesu Brud</title>
   <firstline>Vær trøstig, Zion, Jesu Brud!</firstline>
   <notes>
-    <note>* En af Kingos bekiendte Psalmer efter Es. 60, lidt forandret</note>
+    <note>* En af Kingos bekiendte Psalmer efter <a bible="bibelesajas60">Es. 60</a>, lidt forandret</note>
   </notes>
   <source pages="65-66"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2607,7 +2603,7 @@ Til vore Dages Ende!
   <title><num>21.</num>Nu lader os sjunge en Vise</title>
   <firstline>Nu lader os sjunge en Vise</firstline>
   <notes>
-    <note>* Omarbeidelse af den gammeldanske "Vorherres Brude-Vise" efter den <a poem="bibelsalme45">45. Davids-Psalme</a></note>
+    <note>* Omarbeidelse af den gammeldanske "Vorherres Brude-Vise" efter den <a bible="bibelsalme45">45. Davids-Psalme</a></note>
   </notes>
   <source pages="66-69"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3014,7 +3010,7 @@ Byder Død og Djævel Trods!
   <title><num>25.</num>Er det mueligt, er det sandt</title>
   <firstline>Er det mueligt, er det sandt</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme124">124de</a> og <a poem="bibelsalme126">126de</a> Davids-Psalme</note>
+    <note>* Efter den <a bible="bibelsalme124">124de</a> og <a bible="bibelsalme126">126de</a> Davids-Psalme</note>
   </notes>
   <source pages="77-78"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3434,7 +3430,7 @@ Døden overvundet!
   <title><num>31.</num>Som Foraars-Solen mild og blid</title>
   <firstline>Som Foraars-Solen mild og blid</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme85">85de Davids-Psalme</a></note>
+    <note>* Efter den <a bible="bibelsalme85">85de Davids-Psalme</a></note>
   </notes>
   <source pages="87-88"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3509,7 +3505,7 @@ Naar brat sig Bladet vender!
   <title><num>32.</num>Herren, han sagde til Herre min</title>
   <firstline>Herren, han sagde til Herre min</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme110">110de Davids-Psalme</a></note>
+    <note>* Efter den <a bible="bibelsalme110">110de Davids-Psalme</a></note>
   </notes>
   <source pages="88-89"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3688,7 +3684,7 @@ Billedlig ta'r Skriften Svaret:
 "Taaler Sting i stille Sind,
 "Taaler Spot og Tugt beskeden,
 "Mægler os til Bedste Freden,
-"Kiøber Læge-Konst med Saar!<note>* Efter <a poem="bibelesajas53">Esaias 53.</a></note>"
+"Kiøber Læge-Konst med Saar!<note>* Efter <a bible="bibelesajas53">Esaias 53.</a></note>"
 
 Ja, i Colossenser-Brevet,
 Frugtbart, naar det pløies vaadt,
@@ -3954,7 +3950,7 @@ Som det lyder, sagt til os!
   <title><num>36.</num>Mig rinder i Hu et lystigt Ord</title>
   <firstline>Mig rinder i Hu et lystigt Ord</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme45">45de Davids-Psalme</a> og vor Lutherske "Bryllups-vise om Christus og hans aandelige Brud", begyndende: Mit Hjerte opgav et lystigt Ord</note>
+    <note>* Efter den <a bible="bibelsalme45">45de Davids-Psalme</a> og vor Lutherske "Bryllups-vise om Christus og hans aandelige Brud", begyndende: Mit Hjerte opgav et lystigt Ord</note>
   </notes>
   <source pages="100-102"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4057,7 +4053,7 @@ Og synger din Bryllups-Vise!
   <title><num>37.</num>Christus er vores, med Ham har vi Alt</title>
   <firstline>Christus er vores, med Ham har vi Alt</firstline>
   <notes>
-    <note>* Efter Propheten Esaias 61</note>
+    <note>* Efter Propheten <a bible="bibelesajas61">Esaias 61</a></note>
   </notes>
   <source pages="102-105"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4990,7 +4986,7 @@ Det Løsen, os aabner den herlige Stad!
   <title><num>51.</num>Der var en Kæmpe, stor og stærk</title>
   <firstline>Der var en Kæmpe, stor og stærk</firstline>
   <notes>
-    <note>* 2 Kong. B. 5</note>
+    <note>* <a bible="bibel2konge05">2 Kong. B. 5</a></note>
   </notes>
   <source pages="124-126"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5595,7 +5591,7 @@ For Menighedens Øre!
   <title><num>60.</num>Trods Længselens Smerte</title>
   <firstline>Trods Længselens Smerte</firstline>
   <notes>
-    <note>* Efter Romer-Brevets 10.</note>
+    <note>* Efter <a bible="bibelrom10">Romer-Brevets 10.</a></note>
   </notes>
   <source pages="138-139"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5666,7 +5662,7 @@ Vorherre vi tager i Favn!
   <title><num>61.</num>Hyggelig, rolig</title>
   <firstline>Hyggelig, rolig</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme84">84de Davids-Psalme</a>.</note>
+    <note>* Efter den <a bible="bibelsalme84">84de Davids-Psalme</a>.</note>
   </notes>
   <source pages="140-142"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5753,7 +5749,7 @@ Til for dit Aasyn de kronede staae!
   <title><num>62.</num>Giv mig, Gud, en Psalme-Tunge</title>
   <firstline>Giv mig, Gud, en Psalme-Tunge</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme92">92. Davids-Psalme</a>.</note>
+    <note>* Efter den <a bible="bibelsalme92">92. Davids-Psalme</a>.</note>
     <note>I udgaven af dette digt som blev trykt i <i>Nordisk Kirketidende</i>, 1836 findes 8. strofe som: »Om end giennem Dage haarde, / Blomstre skal i dine Gaarde / Hvert et Hjerte-Skud, / Bære Frugt paa gamle Dage, / Medens Bjerg og Skov gientage: / Eiegod er Gud!«</note>
   </notes>
   <source pages="142-143"/>
@@ -5825,7 +5821,7 @@ Finest Frugt om Vintertide
   <title><num>63.</num>Paradis-Gaard og Folke-Vang</title>
   <firstline>Paradis-Gaard og Folke-Vang!</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme96">96. Davids-Psalme</a>.</note>
+    <note>* Efter den <a bible="bibelsalme96">96. Davids-Psalme</a>.</note>
   </notes>
   <source pages="143-144"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5875,7 +5871,7 @@ Bruser i Vind-Harpetoner!
   <title><num>64.</num>Lovsynger Herren, min Mund og mit Indre</title>
   <firstline>Lovsynger Herren, min Mund og mit Indre!</firstline>
   <notes>
-    <note>* Efter <a poem="bibelsalme103">den 103de Davids-Psalme</a>.</note>
+    <note>* Efter <a bible="bibelsalme103">den 103de Davids-Psalme</a>.</note>
   </notes>
   <source pages="144-146"/>
   <quality>korrektur1,kilde,side</quality>
@@ -8891,7 +8887,7 @@ Naar vore Tunger gløde!
   <title><num>94.</num>Vil du Kirkens Spir forgylde</title>
   <firstline>Vil du Kirkens Spir forgylde</firstline>
   <notes>
-    <note>* Efter Ephes. 1.</note>
+    <note>* Efter <a bible="bibelefeserne01">Ephes. 1.</a></note>
   </notes>
   <source pages="221-224"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9218,7 +9214,7 @@ Over dig al Verden glemmer!
   <title><num>100.</num>Herre! hvor skal vi gaae hen</title>
   <firstline>Herre! hvor skal vi gaae hen!</firstline>
   <notes>
-    <note>* Efter Joh. 6</note>
+    <note>* Efter <a bible="bibeljohannes06">Joh. 6</a></note>
   </notes>
   <source pages="228-231"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10152,7 +10148,7 @@ Kan leve i Fryd og Gammen!
   <title><num>110.</num>Med os det har slet ingen Nød</title>
   <firstline>Med os det har slet ingen Nød</firstline>
   <notes>
-    <note>* Efter den Gamle "Hvad kan os komme til for Nød" og den <a poem="bibelsalme23">23.  Davids-Psalme</a></note>
+    <note>* Efter den Gamle "Hvad kan os komme til for Nød" og den <a bible="bibelsalme23">23.  Davids-Psalme</a></note>
   </notes>
   <source pages="252-254"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10884,7 +10880,7 @@ Jesus Christus, Ja og Amen!
   <title><num>119.</num>Syng, Guds Folk! med Hjertens Glæde</title>
   <firstline>Syng, Guds Folk! med Hjertens Glæde!</firstline>
   <notes>
-    <note>* Af den 40. Davids-Psalme</note>
+    <note>* Af den <a bible="bibelsalme40">40. Davids-Psalme</a></note>
   </notes>
   <source pages="271-273"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10918,7 +10914,6 @@ Og til mig Han sig nedlod!
 Han har hørt min Bøn fra Hulen,
 Trak mig op af Rakker-Kulen,
 Og den fule Mødding-Flod!
-
 
 Paa en Klippe han mig satte,
 Styrked mine Fødder matte,
@@ -10977,7 +10972,7 @@ Ham, som gjorde Alting godt!
   <title><num>120.</num>Himlene, Herre, fortælle din Ære</title>
   <firstline>Himlene, Herre, fortælle din Ære</firstline>
   <notes>
-    <note>* Af den 19. Davids-Psalme</note>
+    <note>* Af den <a bible="bibelsalme19">19. Davids-Psalme</a></note>
     <note>Cf. <xref bible="bibelsalme19"/>.</note>
   </notes>
   <source pages="273-274"/>
@@ -11583,7 +11578,7 @@ Vær Selv blandt os tilstæde!
   <title><num>130.</num>Som Hjorten, med Tørst befangen</title>
   <firstline>Som Hjorten, med Tørst befangen</firstline>
   <notes>
-    <note>* Af den <a poem="bibelsalme41">41.</a> og <a poem="bibelsalme42">42.</a> Davids-Psalme</note>
+    <note>* Af den <a bible="bibelsalme41">41.</a> og <a bible="bibelsalme42">42.</a> Davids-Psalme</note>
   </notes>
   <source pages="287-290"/>
   <quality>korrektur1,kilde,side</quality>
@@ -11679,7 +11674,7 @@ Hans Kiærlighed dulme din Smerte!
   <title><num>131.</num>Foragter ei de ringe Dage</title>
   <firstline>Foragter ei de ringe Dage!</firstline>
   <notes>
-    <note>* Efter Propheten Sacharias 4</note>
+    <note>* Efter Propheten <a bible="bibelzakarias04">Sacharias 4</a></note>
     <note>Cf. <xref bible="bibelzakarias04,6-10"/>.</note>
   </notes>
   <source pages="290-292"/>
@@ -11772,7 +11767,7 @@ Og folde sig i Lampens Glands!
   <title><num>132.</num>Blomstre som en Rosen-Gaard</title>
   <firstline>Blomstre som en Rosen-Gaard</firstline>
   <notes>
-    <note>* Efter Propheten Esaias 35.</note>
+    <note>* Efter Propheten <a bible="bibelesajas35">Esaias 35.</a></note>
     <note>Cf. <xref bible="bibelesajas35"/>.</note>
   </notes>
   <source pages="292-296"/>
@@ -12913,7 +12908,7 @@ Og evigsøde Fryde-Sange!
   <title><num>147.</num>Kron-Prinds i Himlen og Konge paa Jorden</title>
   <firstline>Kron-Prinds i Himlen og Konge paa Jorden!</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme72">72. Davids-Psalme</a></note>
+    <note>* Efter den <a bible="bibelsalme72">72. Davids-Psalme</a></note>
   </notes>
   <source pages="320-321"/>
   <quality>korrektur1,kilde,side</quality>
@@ -12982,7 +12977,7 @@ Fredegod Fyrste, med Bod for alt Savn!
   <title><num>148.</num>Hedenskabets Galilæer</title>
   <firstline>Hedenskabets Galilæer</firstline>
   <notes>
-    <note>* Af Esaias i det 7., 9. og 11, sammenføiet</note>
+    <note>* Af <a bible="bibelesajas07">Esaias i det 7.</a>, <a bible="bibelesajas09">9.</a> og <a bible="bibelesajas11">11</a>, sammenføiet</note>
   </notes>
   <source pages="322-324"/>
   <quality>korrektur1,kilde,side</quality>
@@ -13093,7 +13088,7 @@ Fryder eder Alle!
   <title><num>149.</num>Bethlehem Ephrata</title>
   <firstline>Bethlehem Ephrata</firstline>
   <notes>
-    <note>* Af Propheten Michas det 5.</note>
+    <note>* Af Propheten <a bible="bibelmikas05">Michas det 5.</a></note>
   </notes>
   <source pages="324-325"/>
   <quality>korrektur1,kilde,side</quality>
@@ -13174,7 +13169,7 @@ Synger Guds Miskundheds Priis!
   <title><num>151.</num>Held den Mand, som frygter Gud</title>
   <firstline>Held den Mand, som frygter Gud</firstline>
   <notes>
-    <note>* Efterligning af det Græske Indgangs-Kvad paa Jule-Festen, med den <a poem="bibelsalme112">112. Davids-Psalme</a>.</note>
+    <note>* Efterligning af det Græske Indgangs-Kvad paa Jule-Festen, med den <a bible="bibelsalme112">112. Davids-Psalme</a>.</note>
   </notes>
   <source pages="326-327"/>
   <quality>korrektur1,kilde,side</quality>
@@ -13657,7 +13652,7 @@ Vær velkommen til os Smaa,
   <firstline>Sanddru og Fredegod!</firstline>
   <notes>
     <note>* Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
-    <note>Strofe 13, vers 3: Ezechiel 44</note>
+    <note>Strofe 13, vers 3: <a bible="bibelezekiel44">Ezechiel 44</a></note>
   </notes>
   <source pages="338-340"/>
   <quality>korrektur1,kilde,side</quality>
@@ -13754,7 +13749,6 @@ Giennem-Gang skal finde,
 Færdes skal sikkert ei
 Kækt paa den Konge-Vei
 Kæmper nogensinde!
-
 
 Talt var det Ord med Skiel,
 Thi, sagde Gabriel:
@@ -14665,7 +14659,7 @@ Og drages det Alt til Minde!
   <title><num>174.</num>Alt hvad Fornuften overgaaer</title>
   <firstline>Alt hvad Fornuften overgaaer</firstline>
   <notes>
-    <note>* Kingos, efter Propheten Esaias i det 7., lidt forandret</note>
+    <note>* Kingos, efter Propheten <a bible="bibelesajas07">Esaias i det 7.</a>, lidt forandret</note>
   </notes>
   <source pages="362-363"/>
   <quality>korrektur1,kilde,side</quality>
@@ -16904,7 +16898,7 @@ Hjertet alle Dage!
   <title><num>205.</num>Al den ganske Christenhed</title>
   <firstline>Al den ganske Christenhed</firstline>
   <notes>
-    <note>* Efter Propheten Esajas 53.</note>
+    <note>* Efter Propheten <a bible="bibelesajas53">Esajas 53.</a></note>
   </notes>
   <source pages="418-420"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17009,7 +17003,7 @@ Det er nu skeet, som spaaet havde Esaias!
   <title><num>206.</num>I de gyldne Himmel-Sale</title>
   <firstline>I de gyldne Himmel-Sale</firstline>
   <notes>
-    <note>* Efter den <a poem="bibelsalme16">16. Davids-Psalme</a>.</note>
+    <note>* Efter den <a bible="bibelsalme16">16. Davids-Psalme</a>.</note>
   </notes>
   <source pages="420-422"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17080,7 +17074,7 @@ Evig ved din Høire-Haand!
   <title><num>207.</num>O Gud, min Gud og Fader</title>
   <firstline>O Gud, min Gud og Fader!</firstline>
   <notes>
-    <note>* Den 22. Davids-psalme, frit oversat</note>
+    <note>* Den <a bible="bibelsalme22">22. Davids-psalme</a>, frit oversat</note>
     <note>Cf. <xref bible="bibelsalme22"/>.</note>
   </notes>
   <source pages="422-426"/>
@@ -17274,7 +17268,7 @@ Sin Throne med Glands at beklæde!
   <title><num>209.</num>Stat op i Gry, min Gud! stat op</title>
   <firstline>Stat op i Gry, min Gud! stat op!</firstline>
   <notes>
-    <note>* Den 68. Davids-Psalme, christelig benyttet</note>
+    <note>* Den <a bible="bibelsalme68">68. Davids-Psalme</a>, christelig benyttet</note>
     <note>Cf. <xref bible="bibelsalme68"/>.</note>
   </notes>
   <source pages="427-430"/>
@@ -24449,7 +24443,7 @@ I Himmels og Jords Eenbaarne!
   <title><num>328.</num>Libanons de høie Cedre</title>
   <firstline>Libanons de høie Cedre</firstline>
   <notes>
-    <note>* Propheten Ezechiel i det 17., christelig forklaret</note>
+    <note>* Propheten <a bible="bibelezekiel17">Ezechiel i det 17.</a>, christelig forklaret</note>
   </notes>
   <source pages="600-602"/>
   <quality>korrektur1,kilde,side</quality>
@@ -24528,7 +24522,7 @@ Ogsaa Den fra Abraham!
   <title><num>329.</num>Fat Mod, du Jord, vær frisk og glad</title>
   <firstline>Fat Mod, du Jord, vær frisk og glad!</firstline>
   <notes>
-    <note>* Propheten Joels Spaadom i det 2. og 3., forklaret efter Apostlenes Gerninger 2</note>
+    <note>* Propheten <a bible="bibeljoel02">Joels Spaadom i det 2.</a> og <a bible="bibeljoel03">3.</a>, forklaret efter <a bible="bibelapostlene02">Apostlenes Gerninger 2</a></note>
   </notes>
   <source pages="602-604"/>
   <quality>korrektur1,kilde,side</quality>
@@ -24613,7 +24607,7 @@ Dem tager under Kaaben!
   <title><num>330.</num>Hvilende paa mig er Guds Aand</title>
   <firstline>Hvilende paa mig er Guds Aand</firstline>
   <notes>
-    <note>* Propheten Esaias Spaadom i det 61., forklaret efter Lucas i det 4.</note>
+    <note>* Propheten <a bible="bibelesajas61">Esaias Spaadom i det 61.</a>, forklaret efter <a bible="bibellukas04">Lucas i det 4.</a></note>
   </notes>
   <source pages="604-605"/>
   <quality>korrektur1,kilde,side</quality>
@@ -24677,7 +24671,7 @@ Løste ind med Ord og Aand!
   <title><num>331.</num>Himlene, Talsmand! fortælle din Ære</title>
   <firstline>Himlene, Talsmand! fortælle din Ære</firstline>
   <notes>
-    <note>* Af Græske Pindse-Vers, knyttede til den <a poem="bibelsalme19">19. Davids-Psalme</a></note>
+    <note>* Af Græske Pindse-Vers, knyttede til den <a bible="bibelsalme19">19. Davids-Psalme</a></note>
   </notes>
   <source pages="605-607"/>
   <quality>korrektur1,kilde,side</quality>

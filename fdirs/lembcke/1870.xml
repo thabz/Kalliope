@@ -7,7 +7,7 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1870-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1870). ,,Digte og Sange / af / Edv. Lembcke. // Kjøbenhavn. / Forlagt af J. H. Schubothes Boghandel / G. S. Wibes Bogtrykkeri. / 1870.''</picture>
+    <picture type="titlepage" src="1870-p1.jpg"><transcription>Digte og Sange / af / Edv. Lembcke. // Kjøbenhavn. / Forlagt af J. H. Schubothes Boghandel / G. S. Wibes Bogtrykkeri. / 1870.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122897988205763" facsimile="115308075631_color" facsimile-pages-num="158" facsimile-pages-offset="8">Edvard Lembcke: <i>Digte og Sange</i>, J. H. Schubothes Boghandel, Kbh., 1870.</source>
 </workhead>
@@ -1061,6 +1061,7 @@ til Elskovs sødeste Sange!««
   <title>Caspar Hauser</title>
   <firstline>Caspar Hauser stod under Nathimlens Blaa</firstline>
   <source pages="44-47"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1153,6 +1154,7 @@ jeg trode, jeg leved alene!«
   <title>Samson</title>
   <firstline>Hvad er det for Raab og Trængsel</firstline>
   <source pages="48-51"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1675,7 +1677,8 @@ blive vi tro til det Sidste!
   <title>Vort Modersmaal</title>
   <firstline>Vort Modersmaal er dejligt</firstline>
   <notes>
-    <!-- Sven Sørensens kilde var <note>Kilde er <i>Fest-Sange</i>, udg. af Arthur Arnholtz, Karl Clausen og Finn Viderø, 1947.</note> -->
+    <!-- Sven Sørensens kilde var <note>Kilde er <i>Fest-Sange</i>, udg. af Arthur Arnholtz, Karl Clausen og Finn Viderø, 1947.</note>
+    -->
     <note>Inspireret af Hertz' <xref poem="hertz2002032201"/>.</note>
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>

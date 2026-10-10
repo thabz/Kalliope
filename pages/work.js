@@ -3,14 +3,17 @@ import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
 import { workCrumbs } from '../components/breadcrumbs.js';
 import { formattedDate } from '../components/formatteddate.js';
+import FacsimileLink from '../components/facsimilelink.js';
 import * as Links from '../components/links.js';
 import { poetMenu } from '../components/menu.js';
 import Note from '../components/note.js';
 import Page from '../components/page.js';
 import { poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
+import Source from '../components/source.js';
 import Stack from '../components/stack.js';
 import SubHeading from '../components/subheading.js';
 import TextContent from '../components/textcontent.js';
@@ -26,6 +29,7 @@ const WorkPage = (props) => {
     poet,
     work,
     notes,
+    errata = [],
     pictures,
     toc,
     subworks,
@@ -40,6 +44,27 @@ const WorkPage = (props) => {
   }
   const requestPath = `/${lang}/work/${poet.id}/${work.id}`;
 
+  const sources = Object.entries(work.sources ?? {}).filter(
+    ([, source]) =>
+      (source.source != null && source.source.length > 0) ||
+      source.digitalUrl != null
+  );
+  const renderedSources = sources.length > 0 ? (
+    <Note type="source">
+      <SidebarMiniHeading>{_('Kilde', lang)}</SidebarMiniHeading>
+      <Stack spacing="10px">
+        {sources.map(([sourceId, source]) => (
+          <Source
+            key={sourceId}
+            contentHtml={[[source.source ?? '', { html: true }]]}
+            href={source.digitalUrl}
+            lang={lang}
+          />
+        ))}
+      </Stack>
+    </Note>
+  ) : null;
+
   const renderedNotes = notes.map((note, i) => {
     return (
       <Note key={'note' + i} type={note.type}>
@@ -50,8 +75,21 @@ const WorkPage = (props) => {
       </Note>
     );
   });
+  const renderedErrata = errata.map((entry, index) => (
+    <Note key={`errata-${index}`} type="errata">
+      Trykkets{' '}
+      <FacsimileLink
+        poetId={poet.id}
+        facsimile={entry.facsimile}
+        pageCount={entry.facsimilePageCount}
+        firstPage={entry.facsimilePages[0]}>
+        rettelsesliste
+      </FacsimileLink>{' '}
+      på s. {entry.pages} er indført.
+    </Note>
+  ));
 
-  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} />;
+  const renderedPictures = <SidebarPictures pictures={pictures} lang={lang} work={work} />;
   const completedStatus =
     work.status === 'incomplete' && work.id !== 'andre' ? (
       <div>
@@ -67,16 +105,20 @@ const WorkPage = (props) => {
     ) : null;
   let sidebar = null;
   if (
+    renderedSources != null ||
     pictures.length > 0 ||
     notes.length > 0 ||
+    errata.length > 0 ||
     completedStatus != null ||
     modifiedDate != null
   ) {
     sidebar = (
       <div>
         <Stack spacing="20px">
+          {renderedSources}
           {renderedPictures}
           {renderedNotes}
+          {renderedErrata}
           {completedStatus}
           {modifiedDate}
         </Stack>
@@ -89,7 +131,7 @@ const WorkPage = (props) => {
     table = <TOC toc={toc} lang={lang} />;
     ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
-    table = <WorksList lang={lang} poet={poet} works={subworks} />;
+    table = <WorksList lang={lang} poet={poet} works={subworks} preserveOrder />;
     ogDescription = subworks
       .map((part) => part.toctitle.title)
       .join(', ');
@@ -169,6 +211,7 @@ WorkPage.getInitialProps = async ({ query: { lang, poetId, workId } }) => {
     toc: json.toc,
     subworks: json.subworks,
     notes: json.notes,
+    errata: json.errata,
     pictures: json.pictures,
     modified: json.modified,
     prev: json.prev,

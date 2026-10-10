@@ -37,6 +37,10 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## GitHub
 
 - Issues, PR-titler og PR-beskrivelser skrives på dansk.
+- Alle PR'er, der udspringer af et issue, skal fra oprettelsen have
+  `Fixes #123` med det konkrete issue-nummer i beskrivelsen. Det gælder også
+  draft-PR'er og uanset issuets eller arbejdets ufærdige tilstand. Bevar
+  henvisningen ved senere opdateringer.
 - Skriv konkret hvad der er observeret, ændret og valideret.
 - Brug engelske navne eller citater, når de er kildens titel, personnavn eller egentlig terminologi.
 
@@ -59,6 +63,10 @@ Læs den relevante specialdokumentation før ændringer på området:
   kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
   Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
 - Der må ikke ligge `.jpg`, `.jpeg`, `.png`, `.gif` eller `.webp` under `fdirs/`.
+- Skriv ikke museets navn, `objid` eller `invnr` i en billedtekst, når de allerede er
+  angivet som metadata på samme `<picture>`; visningen tilføjer museets navn og
+  bruger numrene til links. En værktitel må dog bevares, selv om museet også
+  bruger titlen som `objid`.
 - Når billedmetadata som `wikidata`, `museum`, `objid` og `invnr` opdateres, skal alle
   kilder med `<picture>` gennemgås: `content/artwork.xml`, `fdirs/<id>/artwork.xml`,
   `content/events.xml`, `fdirs/<id>/events.xml`, værkernes XML-filer,

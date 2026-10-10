@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1872" author="antologierdk" status="complete" type="poetry">
+<kalliopework id="1872" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>Blade fra danske Kvinder</title>
   <year>1872</year>
   <notes>
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note>Elisabet Ouchterlony var anonym udgiver af samlingen ifølge <a href="https://kvindebiografiskleksikon.lex.dk/Elisabet_Ouchterlony">Dansk Kvindebiografisk Leksikon</a>.</note>
   </notes>
   <pictures>
     <picture src="1872-p1.jpg">Titelbladet til <i>Blade fra danske Kvinder</i> (1872) lyder ,,Blade / fra / Danske Kvinder. // Kjøbenhavn. / L. A. Jørgensens Forlag. / 1872.''.</picture>
   </pictures>
-  <source facsimile="130021854450-color.pdf" facsimile-pages-num="149" facsimile-pages-offset="14">Flere forfatterinder: <i>Blade fra danske Kvinder</i>, L. A. Jørgensens Forlag, Kjøbenhavn, 1872.</source>
+  <source facsimile="130021854450-color.pdf" facsimile-pages-num="149" facsimile-pages-offset="14">
+    <title>Blade fra danske Kvinder</title>
+    <editor type="editor">Elisabet Ouchterlony</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>L. A. Jørgensens Forlag</publisher>
+    <year>1872</year>
+  </source>
 </workhead>
 <workbody>
 

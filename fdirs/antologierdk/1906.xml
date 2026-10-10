@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1906" author="antologierdk" status="incomplete" type="poetry">
+<kalliopework id="1906" author="antologierdk" status="incomplete" type="anthology">
 <workhead>
   <title>Sangbog for de unges Idræt</title>
   <year>1906</year>
   <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1906-p1.jpg">Titelbladet til <i>Sangbog for de unges Idræt</i> (1906) lyder ,,Sangbog / for / de unges Idræt / udgivet / af / A. C. Meyer // København / Rud. Bøhms Bogtrykkeri / 1906''.</picture>
+    <picture type="titlepage" src="1906-p1.jpg"><transcription>Sangbog / for / de unges Idræt / udgivet / af / A. C. Meyer // København / Rud. Bøhms Bogtrykkeri / 1906</transcription></picture>
   </pictures>
-  <source>A. C. Meyer (udg.): <i>Sangbog for de unges Idræt</i>, København, Rud. Bøhms Bogtrykkeri, 1906.</source>
+  <source>
+    <title>Sangbog for de unges Idræt</title>
+    <editor type="editor">A. C. Meyer</editor>
+    <place>København</place>
+    <printer>Rud. Bøhms Bogtrykkeri</printer>
+    <year>1906</year>
+  </source>
   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>

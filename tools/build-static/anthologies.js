@@ -23,15 +23,45 @@ const resolveAuthorId = (node, fallbackAuthorId) => {
   return fallbackAuthorId;
 };
 
-const worksForPoet = (collected, poetId) =>
-  Array.from(collected.works.entries())
+// Build once after the first pass, when author and publication placements and
+// virtual works are complete. Keep both placements and the Maps' source order.
+const buildCollectionIndexes = (collected) => {
+  const worksByPoet = new Map();
+  const textsByWork = new Map();
+  collected.works.forEach((work, key) => {
+    const poetId = key.slice(0, key.indexOf('/'));
+    const works = worksByPoet.get(poetId) ?? [];
+    works.push(work);
+    worksByPoet.set(poetId, works);
+  });
+  collected.texts.forEach((text) => {
+    const poetWorks = textsByWork.get(text.poetId) ?? new Map();
+    const texts = poetWorks.get(text.workId) ?? [];
+    texts.push(text);
+    poetWorks.set(text.workId, texts);
+    textsByWork.set(text.poetId, poetWorks);
+  });
+  collected.worksByPoet = worksByPoet;
+  collected.textsByWork = textsByWork;
+};
+
+const worksForPoet = (collected, poetId) => {
+  if (collected.worksByPoet != null) {
+    return (collected.worksByPoet.get(poetId) ?? []).slice();
+  }
+  return Array.from(collected.works.entries())
     .filter(([key]) => key.startsWith(`${poetId}/`))
     .map(([, work]) => work);
+};
 
-const textsForWork = (collected, poetId, workId) =>
-  Array.from(collected.texts.values()).filter(
+const textsForWork = (collected, poetId, workId) => {
+  if (collected.textsByWork != null) {
+    return (collected.textsByWork.get(poetId)?.get(workId) ?? []).slice();
+  }
+  return Array.from(collected.texts.values()).filter(
     text => text.poetId === poetId && text.workId === workId
   );
+};
 
 const compareSourceSections = (a, b) => {
   const aKey = `${a.work.published || ''}\0${a.work.title}\0${a.key}`;
@@ -40,6 +70,8 @@ const compareSourceSections = (a, b) => {
 };
 
 const buildVirtualAnthologyWorks = collected => {
+  delete collected.worksByPoet;
+  delete collected.textsByWork;
   Array.from(collected.works.entries()).forEach(([key, work]) => {
     if (work.virtualType === 'anthology') {
       collected.works.delete(key);
@@ -115,6 +147,7 @@ const buildVirtualAnthologyWorks = collected => {
 export {
   ANTHOLOGY_WORK_ID,
   ANTHOLOGY_WORK_TITLE,
+  buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,

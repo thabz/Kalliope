@@ -2,9 +2,7 @@
 <kalliopework id="1861-23" author="oehlenschlaeger" status="complete" type="poetry" parent="1857-1862">
 <workhead>
   <title>Poetiske Skrifter</title>
-  <subtitle>
-    <line>Tre og Tyvende Bind. Digte, Femte Deel.</line>
-  </subtitle>
+  <subtitle>Tre og Tyvende Bind. Digte, Femte Deel.</subtitle>
   <linktitle>Samlede Skrifter, 23. Bind</linktitle>
   <toctitle><num>Bind 23.</num>Digte, Femte Deel</toctitle>
   <breadcrumbtitle>Bd. 23</breadcrumbtitle>
@@ -15,7 +13,15 @@
   <pictures>
     <picture src="1861-23-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1861) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Femte Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 44 (6). / 1861.''.</picture>
   </pictures>
-  <source facsimile="115208057577_color" facsimile-pages-num="328" facsimile-pages-offset="18">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 23, 1861.</source>
+  <source facsimile="115208057577_color" facsimile-pages-num="328" facsimile-pages-offset="18">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>23</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1861</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -365,7 +371,6 @@ Og for Glæden viger Sorgen.
 <text id="oehlenschlaeger2019022105">
 <head>
   <title><num>1.</num>Ved hendes Grav</title>
-  <toctitle><num>1.</num>Ved hendes Grav</toctitle>
   <indextitle>Ved hendes Grav</indextitle>
   <linktitle>Ved hendes Grav</linktitle>
   <firstline>Visselulle nu, Barnlil!</firstline>
@@ -485,7 +490,6 @@ Uden Dunn og uden Gænge.
 <text id="oehlenschlaeger2019022106">
 <head>
   <title><num>2.</num>Paa en skiøn Sommerdag, kort efter hendes Død</title>
-  <toctitle><num>2.</num>Paa en skiøn Sommerdag, kort efter hendes Død</toctitle>
   <indextitle>Paa en skiøn Sommerdag, kort efter hendes Død</indextitle>
   <linktitle>Paa en skiøn Sommerdag, kort efter hendes Død</linktitle>
   <firstline>Solen skinner ikke meer paa dig</firstline>
@@ -1905,7 +1909,7 @@ Vor egen Skaal vi drikke.
   </subtitle>
   <firstline>Hvor Odins gamle Tempel stod</firstline>
   <source pages="50-53"/>
-  <keywords>racine,corneille,kellgren,franzen,wallin,tegner</keywords>
+  <keywords>racine,corneille,kellgren,franzen,wallin,tegner,balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3250,7 +3254,7 @@ Vi samles snart paa Vaarens Vinge.
   <subtitle>Februar 1845.</subtitle>
   <firstline>En Yngling Døden rammed</firstline>
   <source pages="85-87"/>
-  <keywords>steffens</keywords>
+  <keywords>steffens,balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4868,6 +4872,7 @@ Du forsmaaer ei vor Forgietmigei.
     <written>1847-07-09</written>
   </dates>
   <source pages="127-129"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6546,7 +6551,6 @@ Vor Kraft som en electrisk Funke.
 <text id="oehlenschlaeger2019022187">
 <head>
   <title><num>1.</num>I lang Tid, Brødre! mødte Taal</title>
-  <toctitle><num>1.</num>I lang Tid, Brødre! mødte Taal</toctitle>
   <indextitle>I lang Tid, Brødre! mødte Taal</indextitle>
   <linktitle>I lang Tid, Brødre! mødte Taal</linktitle>
   <firstline>I lang Tid, Brødre! mødte Taal</firstline>
@@ -6591,7 +6595,6 @@ Det Sprog skal vi Holsterne lære.
 <text id="oehlenschlaeger2019022188">
 <head>
   <title><num>2.</num>Danske Mænd! halvhundred Aar -</title>
-  <toctitle><num>2.</num>Danske Mænd! halvhundred Aar -</toctitle>
   <indextitle>Danske Mænd! halvhundred Aar -</indextitle>
   <linktitle>Danske Mænd! halvhundred Aar -</linktitle>
   <firstline>Danske Mænd! halvhundred Aar -</firstline>
@@ -6626,7 +6629,6 @@ Skal i Græsset for Tapperhed bide!
 <text id="oehlenschlaeger2019022189">
 <head>
   <title><num>3.</num>I Holster! naar Dansken er vild og vred</title>
-  <toctitle><num>3.</num>I Holster! naar Dansken er vild og vred</toctitle>
   <indextitle>I Holster! naar Dansken er vild og vred</indextitle>
   <linktitle>I Holster! naar Dansken er vild og vred</linktitle>
   <firstline>I Holster! naar Dansken er vild og vred</firstline>

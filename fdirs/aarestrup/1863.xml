@@ -4,9 +4,21 @@
   <title>Efterladte Digte</title>
   <year>1863</year>
   <pictures>
-    <picture type="titlepage" src="1863-p1.jpg">Titelbladet til <i>Efterladte Digte</i> (1863) lyder ,,Efterladte Digte / af / Emil Aarestrup. // Udgivne / ved / Christian Winther og F. L. Liebenberg. // Kjøbenhavn. / Forlagt af Samfundet til den danske Literaturs Fremme. / Thieles Bogtrykkeri. / 1863.''</picture>
+    <picture type="titlepage" src="1863-p1.jpg"><transcription>Efterladte Digte / af / Emil Aarestrup. // Udgivne / ved / Christian Winther og F. L. Liebenberg. // Kjøbenhavn. / Forlagt af Samfundet til den danske Literaturs Fremme. / Thieles Bogtrykkeri. / 1863.</transcription></picture>
   </pictures>
-  <source facsimile="11530803779C" facsimile-pages-num="370" facsimile-pages-offset="18">Emil Aarestrup: <i>Efterladte Digte</i>, Christian Winther og F.L. Liebenberg (red.), Samfundet til den danske Literaturs Fremme, Kbh., 1863.</source>
+  <source facsimile="11530803779C" facsimile-pages-num="370" facsimile-pages-offset="18">
+    <author id="aarestrup">Emil Aarestrup</author>
+    <title>Efterladte Digte</title>
+    <editor id="winther">Christian Winther</editor>
+    <editor>F. L. Liebenberg</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>Samfundet til den danske Literaturs Fremme</publisher>
+    <printer>Thieles Bogtrykkeri</printer>
+    <year>1863</year>
+  </source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -152,8 +164,6 @@ Ahnende ved Graven staae.
 <text id="aarestrup3x200203282">
 <head>
   <title>Den lille ulykkelige</title>
-  <toctitle>Den lille ulykkelige</toctitle>
-  <indextitle>Den lille ulykkelige</indextitle>
   <firstline>See, hun har de trinde Arme</firstline>
   <source pages="6-7"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4100,7 +4110,7 @@ Haabet leve! Danmarks Skaal!
     <written>1838-02-12</written>
   </dates>
   <notes>
-    <note>Ole Bang er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
+    <note><a person="bango">Ole Bang</a> er den ansete læge Oluf Lundt Bang (kaldet Ole Bang; 1788-1877), også virksom som skribent. Farfader til <a person="bang">Herman Bang</a>.</note>
   </notes>
   <source pages="101-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4555,6 +4565,7 @@ Er i Nattens Mulm at see.
     <written>1839-12-15</written>
   </dates>
   <source pages="113-114"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5097,6 +5108,7 @@ Som Brud og Viv det skjønne Engestofte.
   <title>Paa Klinten</title>
   <firstline>Jeg gik den aarle Morgenstund</firstline>
   <source pages="126-128"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5209,6 +5221,9 @@ Vi stille mødtes - Mund paa Mund -
   <title>Varselskriften</title>
   <subtitle>(Til Magister D. G. Monrad.)</subtitle>
   <firstline>Nattens Gudinde henad Himlen svæved</firstline>
+  <notes>
+    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <source pages="129-131"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -6674,6 +6689,7 @@ Hvordan du kan fortumle og fortrylle.
   <title>En Engel stod ved Leiet stille</title>
   <firstline>En Engel stod ved Leiet stille</firstline>
   <source pages="164-165"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6770,6 +6786,7 @@ Som huldt I mindes Furresøens Kyst!
   <title>Aphorismer</title>
   <firstline>Mod Kjærlighed Forstanden har den Skik</firstline>
   <source pages="166-169"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6892,6 +6909,7 @@ Og dig intet Slemt har truffet!
   <title>Ritorneller</title>
   <firstline>Blomst af Forglemmigeien!</firstline>
   <source pages="169-186"/>
+  <keywords>stornello</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8476,6 +8494,7 @@ Og aldrig meer et Løv sig kruser.
     <note>Gendigtning af Lord Byron: <xref type="translation" poem="byron2018120802"/>.</note>
   </notes>
   <source pages="226-229"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8887,6 +8906,7 @@ Sol synker alt, snart funkle mine Stjerner -
     <note>Fra brev 1. juli 1826 til Frk. Caroline Aagaard, senere Fru Aarestrup.</note>
   </notes>
   <source pages="236"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9065,7 +9085,11 @@ Mit stille Haab, min bange Tro!
   <title>Kirkeklokken</title>
   <toctitle>- -: Kirkeklokken</toctitle>
   <firstline>Syng Psalmerne, du liden Dreng!</firstline>
+  <notes>
+    <note>Fri gendigtning af Johann Wolfgang von Goethes <xref type="translation" poem="goethe2026100901"/>.</note>
+  </notes>
   <source pages="240-241"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9314,6 +9338,7 @@ Græd over saadan en Konst.
     <note>Gendigtning af Heinrich Heine: <xref type="translation" poem="heine2000082606"/>.</note>
   </notes>
   <source pages="245"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9959,6 +9984,7 @@ Dreier sig hele den drukne Verden.
     <note>Gendigtning af Felicia Hemans' <xref type="translation" poem="hemans2019072001"/>.</note>
   </notes>
   <source pages="258"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10515,6 +10541,7 @@ Vi Foraarsvenner to!
     <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111201"/>.</note>
   </notes>
   <source pages="270-271"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10558,6 +10585,7 @@ Paany fortryllet, flyer til dig!
     <note>Oversættelse af Thomas Moore: <xref type="translation" poem="moore2018111202"/>.</note>
   </notes>
   <source pages="271-272"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10662,6 +10690,7 @@ At jeg maa bede: stands dem ikke!
     <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018121001"/>.</note>
   </notes>
   <source pages="273"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10901,6 +10930,7 @@ Og roe deres hvide Kanoe.
     <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018111205"/>.</note>
   </notes>
   <source pages="278-279"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10964,6 +10994,7 @@ Og saadan - kysser jeg din Mund.
     <note>Gendigtning af Thomas Moore: <xref type="translation" poem="moore2018111206"/>.</note>
   </notes>
   <source pages="280"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12602,6 +12633,7 @@ Tilsidst maa det dog fremad rykke:
     <note>Gendigtning af Charles Sprague: <xref type="translation" poem="sprague2018111101"/>.</note>
   </notes>
   <source pages="315-316"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

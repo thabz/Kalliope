@@ -8,7 +8,7 @@
     <note>Udgivet af J. H. Smidth.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1835-p1.jpg">Titelbladet til <i>Samlede, udvalgte Digte</i> (1835).</picture>
+    <picture type="titlepage" src="1835-p1.jpg"><transcription>Samlede, udvalgte / Digte / af / Peder Horrebow Haste. // Udgivne / af / J. H. Smidth, / Sognepræst til Moseby Menighed paa Falster, / Professor, Ridder af Dannebrog. // Kiøbenhavn, 1835. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos P. N. Jørgensen, Pilestræde 110.</transcription></picture>
   </pictures>
   <source href="https://www.kb.dk/e-mat/dod/115308060061-color.pdf" facsimile="115308060061_color" facsimile-pages-num="218" facsimile-pages-offset="20">Peder Horrebow Haste: <i>Samlede, udvalgte Digte</i>, udgivet af J. H. Smidth, C. A. Reitzel, Kbh., 1835.</source>
   <pagebreaks/>
@@ -21,7 +21,9 @@
 <text id="haste2026090172" skip-index="true">
 <head>
   <title>Peder Horrebow Haste</title>
-  <notes><note>Side VII er fejlpagineret som IIV i trykket.</note></notes>
+  <notes>
+    <note>Side VII er fejlpagineret som IIV i trykket.</note>
+  </notes>
   <source pages="III-X" facsimile-pages="9-16"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2306,6 +2308,7 @@ Som en ufortornet Ven.
   <title>Kjærlighed</title>
   <firstline>I den høitidsklædte Morgenrøde</firstline>
   <source pages="82-83"/>
+  <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2595,6 +2598,7 @@ Kjærligt rosenstrøer min Grav!
   <subtitle>1792.</subtitle>
   <firstline>Fred med Edens Minder allevegne</firstline>
   <source pages="93-96"/>
+  <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4235,6 +4239,7 @@ Hun sikkert Saadant vide maa.
   <title><num>VII.</num>Andagt</title>
   <firstline>Jeg tænker Dig med Lov og Sang</firstline>
   <source pages="153-154"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4568,6 +4573,7 @@ Hilse hvert et Aar som kommer.
   <title>Balvise I</title>
   <firstline>Luftig og lys var hele Jorden</firstline>
   <source pages="165-166"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
