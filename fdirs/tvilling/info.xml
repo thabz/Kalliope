@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tvilling" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Søren Hansen</firstname>
+    <lastname>Tvilling</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1600</date>
+      <place>Helsingør</place>
+    </born>
+    <dead>
+      <date>1633-12-24</date>
+      <place>Helsingør</place>
+    </dead>
+  </period>
+  <literary-periods>dk-barok</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Søren_Hansen_Tvilling</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>
