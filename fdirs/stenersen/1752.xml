@@ -26,7 +26,8 @@
   </proofreadings>
 </workhead>
 <workbody>
-<text id="stenersen2026101003">
+<!-- »og næst den den gode Smag« står i trykket på s. 5; begge »den« har hver sin funktion. -->
+<text id="stenersen2026101003" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Critiske Tanker over De riimfrie Vers</title>
   <firstline>Den Forundring, som jeg sættes i</firstline>
