@@ -106,7 +106,7 @@ const WorkPage = (props) => {
     table = <TOC toc={toc} lang={lang} />;
     ogDescription = toc.map((part) => part.title).join(', ');
   } else if (subworks != null && subworks.length > 0) {
-    table = <WorksList lang={lang} poet={poet} works={subworks} />;
+    table = <WorksList lang={lang} poet={poet} works={subworks} preserveOrder />;
     ogDescription = subworks
       .map((part) => part.toctitle.title)
       .join(', ');
