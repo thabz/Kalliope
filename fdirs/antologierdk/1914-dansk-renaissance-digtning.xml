@@ -7,7 +7,7 @@
   <errata status="applied" pages="162" facsimile-pages="185"/>
   <notes>
     <note>Teksterne er gengivet efter Det Kgl. Biblioteks scanning af 1914-udgaven, 115308010084-color.pdf. Udgiverens egne tekster er udeladt: dedikation (PDF-side 14), »Til Bogen« (s. IX–X; PDF-side 16–17), fortale (s. XI–XIII; PDF-side 18–20), kommentar (s. 157–173; PDF-side 180–196) og »VALE« (PDF-side 197). J. N. Bachs historiske digt på side 161 er udskilt fra kommentaren og medtaget med egen kildehenvisning. Annoncer og biblioteksmærker er ikke transskriberet.</note>
-    <note>TODO: Scanningen afskærer linjebegyndelser på trykte sider 113 og 115 (PDF-side 136 og 138); på sider 47, 114, 142 og i rettelsen på side 162 (PDF-side 70, 137, 165 og 185) er et bogstav ulæseligt. Ulæselige tegn er markeret med ⟦ulæseligt⟧ i de berørte tekster. Værket står derfor som ufuldstændigt, selv om alle øvrige relevante sider er transskriberet.</note>
+    <note>TODO: Scanningen afskærer linjebegyndelser på trykte sider 113 og 115 (PDF-side 136 og 138); på sider 47, 142 og i rettelsen på side 162 (PDF-side 70, 165 og 185) er et bogstav ulæseligt. Ulæselige tegn er markeret med ⟦ulæseligt⟧ i de berørte tekster. Værket står derfor som ufuldstændigt, selv om alle øvrige relevante sider er transskriberet.</note>
   </notes>
   <pictures>
     <picture src="1914-dansk-renaissance-digtning-p1.jpg" type="titlepage"><transcription>Deliciarvm manipvlvs Danicarvm / Det er / Dansk Renaissance Digtning / Eller / Udvalgte Stykker af den Verdslige Danske Poesi / mellem Arreboe og Holberg. / Med Flid udgivet / af / Viggo Julius von Holstein Rathlou / Cand. mag. / Underbibliothekar ved Statsbibliotheket i Aarhus/ / Medlem af Det Danske Sprog- og Litteraturselskab. // Gyldendalske Boghandel/ Nordisk Forlag. / København og Kristiania. // Trykt i De Forenede Bogtrykkerier/ Aarhus. / MCMXIV</transcription></picture>
@@ -22,6 +22,12 @@
   </source>
 </workhead>
 <workbody>
+
+<section>
+<head>
+  <title>Søren Tvilling</title>
+</head>
+<content>
 <text author="tvilling" id="tvilling2026101001" skip-index="true">
 <head>
   <title>Titelblad til Quid Tua?</title>
@@ -494,6 +500,14 @@ J JEsu Christi Naffn.
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Anders Bording</title>
+</head>
+<content>
 <text author="bording" id="bording2026101008">
 <head>
   <title>Ære-Digt</title>
@@ -729,6 +743,14 @@ En leffvendis Histori faa’r/
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Vitus Bering</title>
+</head>
+<content>
 <text author="bering" id="bering2002111601">
 <head>
   <title>Brudgommen M. Bering Svarer Poëten M. Bording til hans Brøllups-Vers</title>
@@ -868,6 +890,14 @@ Beklæde mange Aar sit Kongelige Sæde/
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>N. Bach</title>
+</head>
+<content>
 <text author="bachjn" id="bachjn2002103101">
 <head>
   <title>Tre Ting Jeg Høyt berømmer</title>
@@ -905,6 +935,14 @@ I Hvad og Andre dømmer
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Jens Steen Sehested</title>
+</head>
+<content>
 <text author="sehested" id="sehested2026101001" skip-index="true">
 <head>
   <title>Kiøbenhaufns Mis-Trøstige Dog villige Fangers, Ynkelige Klage-maal</title>
@@ -1663,6 +1701,14 @@ om af Dig <w>Verdsens-Gud</w> Jeg ikke Høyer skattes
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Henrich Gerner</title>
+</head>
+<content>
 <text author="gerner" id="gerner2026101001" skip-index="true">
 <head>
   <title>Titelblad til Hesiodi Dage</title>
@@ -1706,7 +1752,7 @@ effter som Konsten stiger altid. Eller oc hand icke skulle faldet i noget: Jeg v
   <title>HESIODI Dage oc Rijmstock</title>
   <firstline>Velkommen nyt Aar/ far vel du gamle December/</firstline>
   <notes>
-    <note>De klammeindfattede alternativer på side 69 og 72 står over hinanden: »Faste-« over »Stege« og »Tale« over »Hilsen«. De er gengivet som billedudsnit, så den trykte opsætning bevares.</note>
+    <note>De klammeindfattede alternativer på side 69 og 72 står over hinanden: »Faste-« over »Stege« og »Tale« over »Hilsen«.</note>
   </notes>
   <source pages="66-108" />
   <quality>korrektur1,kilde,side</quality>
@@ -1812,7 +1858,7 @@ Saa faar du Eg udi dit skiød
     Til Viinmos oc til Terter
 Giff Soerne Haffre stegt oc tør
     Saa løber de med Orne/
-Saa faar du <img src="/images/antologierdk/1914-dansk-renaissance-digtning-alternativer-069.jpg" width="76px" alt="Faste- over Stege"/> griße før
+Saa faar du Faste-/Stege<!-- TODO: Formatér senere som en brøk med Faste- over Stege. --> griße før
     I rette Tjde borne.
 Nu falder ind een Dag ublid
     Som mand mon Snapsting kalde
@@ -1934,7 +1980,7 @@ Udi denne Maaned falder<footnote>25. Martii.</footnote>
     Een glad Budskabs Frydedag/
 Dend vor Frue-Dag vi kalder/
     For det var en Jomfrue sag/
-Hun een Engels-<img src="/images/antologierdk/1914-dansk-renaissance-digtning-alternativer-072.jpg" width="76px" alt="Tale over Hilsen"/> hørde
+Hun een Engels-Tale/Hilsen<!-- TODO: Formatér senere som en brøk med Tale over Hilsen. --> hørde
 Som til Verden Glædskab førde.
 Naar dend udi Dimmeluge
 <pb n="73" facs="095.jpg"/>    I Calender skriffvis ind:
@@ -3109,19 +3155,14 @@ For hendis Fliid jeg hende vil
 </body>
 </text>
 
-<text author="syv" id="syv2026101001" skip-index="true">
-<head>
-  <title>Titelblad til Udvalgte Vers</title>
-  <source pages="109" />
-  <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
-<prose>
-<center>Udvalgte Vers<br/>af<br/>Peder Syv.<br/>1663.</center>
-</prose>
-</body>
-</text>
+</content>
+</section>
 
+<section>
+<head>
+  <title>Peder Syv</title>
+</head>
+<content>
 <text author="syv" id="syv2002110213">
 <head>
   <title>Om et til sig overskikket baand</title>
@@ -3151,11 +3192,11 @@ So maa jeg og hoos dig/ o min magnetsteen blifve;
 </body>
 </text>
 
-<text author="syv" id="syv2002110206">
+<text author="syv" id="syv2002110206" variant="syv2001081401" aliases="syv2026101002">
 <head>
   <title>En Silk-Orm</title>
   <firstline>Jeg spinder selv min døød/ og giør min egen graf/</firstline>
-  <source pages="110" />
+  <source pages="110-111" />
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3164,18 +3205,7 @@ Jeg spinder selv min døød/ og giør min egen graf/
     Dend heslig’ ormeham jeg siden legger af/
 Og lefver da po ny en fugl ej halv so lang
 Som før/ strags yngler jeg og døer so andengang.
-</poetry>
-</body>
-</text>
 
-<text author="syv" id="syv2026101002" variant="syv2001081401">
-<head>
-  <firstline>Velkommen Nymfe skiøn/ o dejlig lilde pige/</firstline>
-  <source pages="110-111" />
-  <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
-<poetry>
 Velkommen Nymfe skiøn/ o dejlig lilde pige/
     Du Venus eget barn; hvor finder mand din lige?
     O yndelig jomfru/ o hiertens venne møø/
@@ -3273,10 +3303,13 @@ Friligt mig altid til døden skal følge.
 </body>
 </text>
 
-<text author="syv" id="syv2002110207">
+<text author="syv" id="syv2002110207" aliases="syv2002110208">
 <head>
   <title>Politisk/ som det nu bruges</title>
   <firstline>Andet synes/ andet være/</firstline>
+  <notes>
+    <note>TODO: Flere linjebegyndelser er afklippet i den anvendte scanning på trykt side 113. Ulæselige tegn er markeret med ⟦ulæseligt⟧ og er ikke rekonstrueret fra andre udgaver. Teksten kræver kontrol mod et bedre billede af samme 1914-udgave.</note>
+  </notes>
   <source pages="113" />
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3290,21 +3323,7 @@ Aldting lov' og aldting hage
 Aldting tænk' og aldting mage
 Til sit gavn blant ond' og gode/
 Det er nu politisk møde.
-</poetry>
-</body>
-</text>
 
-<text author="syv" id="syv2002110208">
-<head>
-  <firstline>Jeg kaldte dig vel skiøn/ der jeg dig langt fra saa!</firstline>
-  <notes>
-    <note>TODO: Flere linjebegyndelser er afklippet i den anvendte scanning på trykt side 113. Ulæselige tegn er markeret med ⟦ulæseligt⟧ og er ikke rekonstrueret fra andre udgaver. Teksten kræver kontrol mod et bedre billede af samme 1914-udgave.</note>
-  </notes>
-  <source pages="113" />
-  <quality>korrektur1,kilde,side</quality>
-</head>
-<body>
-<poetry>
 Jeg kaldte dig vel skiøn/ der jeg dig langt fra saa!
     Men der du nermer komst/ og jeg nu ret dig kiender/
 ⟦ulæseligt⟧ seer jeg Venus selv liv-agtig for mig staa/
@@ -3347,9 +3366,6 @@ Dend fierde Charis mand foruden dig ej finder.
 <head>
   <title>Hvad Cupido eller Kierlighed er</title>
   <firstline>Du nøgne-væbned dreng/ du brændend uden ild/</firstline>
-  <notes>
-    <note>TODO: I vers 8 er et bogstav beskadiget i scanningen på trykt side 114. Stedet er markeret med ⟦ulæseligt⟧ og kræver kontrol mod samme udgave.</note>
-  </notes>
   <source pages="114" />
   <keywords>sonnet</keywords>
   <quality>korrektur1,kilde,side</quality>
@@ -3363,7 +3379,7 @@ Du yndelig forgift/ du vor modstander mild/
 O grumme ven der hoos/ du skalk dog gev og gild.
     Du glædelige sorg/ du angenemme plage/
     Du vittig galenskab/ du lyst ej uden klage/
-Du høflig est og grov/ omgænge⟦ulæseligt⟧ig og vild.
+Du høflig est og grov/ omgængelig og vild.
     Du nareriis ophaf/ en drøm for dend som vaager/
     De sofvendes ustyyr/ de lasters neste svaager/
 Fornuftens trylderi/ forstandens fiinde slem/
@@ -3495,19 +3511,22 @@ Du roser mig vel højt/ sligt giørst du visselig
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Thomas Kingo</title>
+</head>
+<content>
 <text author="kingo" id="kingo2026101001" ignore-tests="single-circumflex-a-in-text">
 <head>
-  <title>Næsve-tuud</title>
+  <title>Næsve-tuud og Knud her-ud</title>
   <subtitle>
-    <line>og</line>
-    <line>Knud her-ud</line>
     <line>af</line>
     <line>Th: Kingo.</line>
   </subtitle>
   <firstline>Hvo Kand fortæncke een Poët</firstline>
-  <notes>
-    <note>På side 124 står »I huule Bog târ Varme.« med circumfleks over a i trykket; bogstavformen er bevaret efter kontrol mod scanningen.</note>
-  </notes>
   <source pages="117-129" />
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3902,13 +3921,12 @@ Naar Jeg eengang faar faufned dig
   <firstline>Saa triner Dagen frem/ af Gylden Morgen-røde/</firstline>
   <notes>
     <note>Iflg. Viggo J. von Holstein Rathlou er digtet fra omkr. 1675.</note>
-    <note>
-      <a person="griffenfeld">Peder Schumacher Griffenfeld</a> blev udnævnt til rigskansler og greve af Griffenfeld i 1673.</note>
-      <note type="source">Antologien angiver Codex Bergensis VII, 2° s. 154 som kilde.</note>
-    </notes>
-    <source pages="130-131" />
-    <keywords>griffenfeld</keywords>
-    <quality>korrektur1,kilde,side</quality>
+    <note><a person="griffenfeld">Peder Schumacher Griffenfeld</a> blev udnævnt til rigskansler og greve af Griffenfeld i 1673.</note>
+    <note type="source">Antologien angiver Codex Bergensis VII, 2° s. 154 som kilde.</note>
+  </notes>
+  <source pages="130-131" />
+  <keywords>griffenfeld</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4130,7 +4148,7 @@ Gud Velsignelse skal legge
   </subtitle>
   <firstline>Du Danske KLINTE-KORN/ og Sverrigs Brænde-nelde/</firstline>
   <notes>
-    <note>De to klammeindfattede ordpar på side 140 står over hinanden og er gengivet som billedudsnit. Den efterfølgende »Hosianna Konnung CARL.« er Valentin Korns svenske tekst, citeret i Kingos skrift.</note>
+    <note>De to klammeindfattede ordpar på side 140 står over hinanden. Den efterfølgende »Hosianna Konnung CARL.« er Valentin Korns svenske tekst, citeret i Kingos skrift.</note>
   </notes>
   <source pages="136-141" />
   <quality>korrektur1,kilde,side</quality>
@@ -4252,7 +4270,7 @@ Dend har du betled aff en fremmed Staader-Poose!
 Kand DEUS udi SUED saa herlig accordere
 Da leeder du vel ud slig deylig Indfald flere/
     Du vender nock/ naar du begynder ret at gloo/
-    Det de Ebraeers <img src="/images/antologierdk/1914-dansk-renaissance-digtning-alternativer-140-hebraisk.jpg" width="76px" alt="Hebraisk ord over SUS"/> om til en Rommer <img src="/images/antologierdk/1914-dansk-renaissance-digtning-alternativer-140-latin.jpg" width="74px" alt="SUS over Soo"/>
+    Det de Ebraeers <span lang="he">שוש</span>/SUS<!-- TODO: Formatér senere som en brøk med det hebraiske ord over SUS. --> om til en Rommer <span lang="la">SUS</span>/Soo<!-- TODO: Formatér senere som en brøk med SUS over Soo. -->
     <span lang="sv"><u>Hand gifv' nu Lyck' som for sampt Hielp (hos min Poet)</u></span>
     <span lang="sv"><u>Jag skrifva maa og spaa som en ret sand Prophet.</u></span>
 Her Præsident Poet, jeg ynsker dig til Lykke/
@@ -4328,7 +4346,7 @@ Veds Nambn DEUS i SUED saalunt at accordere,
   <notes>
     <note type="source">Antologien angiver Add. 273. 2° som kilde.</note>
     <note>TODO: I vers 14 er et bogstav beskadiget i scanningen på trykt side 142. Stedet er markeret med ⟦ulæseligt⟧ og kræver kontrol mod samme udgave.</note>
-    <note>Ordene »Verdens« og »himlens« på side 142 står over hinanden og er gengivet som et billedudsnit.</note>
+    <note>Ordene »Verdens« og »himlens« på side 142 står over hinanden.</note>
   </notes>
   <source pages="142-143" />
   <quality>korrektur1,kilde,side</quality>
@@ -4347,7 +4365,7 @@ Saa Bliid seer Solen ey af Morgenrødens øye/
 I sin Safraned Rok/ naar hun sig Vil ophøye
     Oppaa sit Firmament/ at jo hver straale seer
     Af din almægtighed/ og Ved din Naade Leer!
-Hver Dag/ hver <img src="/images/antologierdk/1914-dansk-renaissance-digtning-alternativer-142.jpg" width="55px" alt="Verdens over himlens"/> Dag |: det ruske maa og reyne :|
+Hver Dag/ hver Verdens/Himlens<!-- TODO: Formatér senere som en brøk med Verdens over Himlens. --> Dag |: det ruske maa og reyne :|
 Har Himlen fuld af Gud/ det nød⟦ulæseligt⟧s ey at teyne
     Et <w>Menniske</w> derpaa/ og sette Jorden der/
     Hvor Gud sin Riimstok med sin Sool og Maane skiær!
@@ -4546,6 +4564,14 @@ Til Hannem Vil Jeg Dig og ey til Verden binde!
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Laurids Thura</title>
+</head>
+<content>
 <text author="thura" id="thura2026101001">
 <head>
   <suptitle>
@@ -4611,6 +4637,14 @@ Allene det eene vi holder os til.
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Dorothea Engelbrechts Datter</title>
+</head>
+<content>
 <text author="engelbretsdatter" id="engelbretsdatter2026101001">
 <head>
   <title>Dorothea Engelbrechts Datter</title>
@@ -4622,6 +4656,7 @@ Allene det eene vi holder os til.
   </subtitle>
   <firstline>At søge til Kiøge har været min snack</firstline>
   <source pages="151" />
+  <keywords>thura</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4766,6 +4801,9 @@ Hæc Poëtriæ illustris pictas meretur publicari.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text author="bachjn" id="bachjn2002103102">
 <head>
