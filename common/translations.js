@@ -415,7 +415,7 @@ const _ = (danishString, lang, keys) => {
   if (keys != null) {
     for (var key in keys) {
       if (keys.hasOwnProperty(key)) {
-        translated = translated.replace('{' + key + '}', keys[key]);
+        translated = translated.replaceAll('{' + key + '}', () => keys[key]);
       }
     }
   }
