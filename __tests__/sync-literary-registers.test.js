@@ -30,6 +30,39 @@ const addKalliopePoet = ({ root, poetId, dflId, works = [] }) => {
 };
 
 describe('dækningsregister-sync', () => {
+  test('bevarer andre kilders personer og fælles DFL-identiteter med deres værkrelationer', () => {
+    const { directory, root, rawDir } = makeWorkspace();
+    const externalPoet = {
+      id: 'claus-hansen-bang',
+      name: { preferred: 'Claus Hansen Bang' },
+      status: 'included',
+      kalliope: { id: 'bangc' },
+      sources: [{ source: 'kalliope', id: 'bangc' }],
+    };
+    const existingPoets = [externalPoet, ...['tychonius', 'christen-tychonius'].map(id => ({
+      id,
+      name: { preferred: 'Christen Tychonius' },
+      status: 'included',
+      identifiers: { 'danskforfatterleksikon-dk': 'TCLTychonius' },
+    }))];
+    const existingWorks = [{
+      id: 'samling-1739',
+      poet_ids: existingPoets.map(poet => poet.id),
+      title: 'Samling',
+      year: '1739',
+      status: 'included',
+      sources: [{ source: 'kalliope', id: 'bangc/1739' }],
+    }];
+
+    const result = buildRecords({ existingPoets, existingWorks, dflWorks: [], root, rawDir });
+
+    expect(result.poets.map(poet => poet.id).sort()).toEqual(existingPoets.map(poet => poet.id).sort());
+    expect(result.poets.find(poet => poet.id === externalPoet.id)).toEqual(externalPoet);
+    expect(result.works[0].poet_ids).toEqual(['claus-hansen-bang', 'tychonius', 'christen-tychonius']);
+    expect(result.works).toEqual(existingWorks);
+    fs.rmSync(directory, { recursive: true });
+  });
+
   test('vælger danske digtere og oversættere af udenlandske digte', () => {
     const works = [
       { type: 'digte', language: 'dansk', authors: [{ role: 'author', name: 'A' }, { role: 'translator', name: 'B' }] },

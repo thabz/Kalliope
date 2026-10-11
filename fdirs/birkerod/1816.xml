@@ -4,7 +4,7 @@
   <title>Bagateller</title>
   <year>1816</year>
   <pictures>
-    <picture type="titlepage" src="1816-p1.jpg">Titelbladet til <i>Bagateller</i> (1816). ,,Bagateller // af / C. V. P. Birkerod. // Kjøbenhavn, 1816. / Trykt og forlagt af P. D. Kispping, / i Vimmelskaftet No. 138.''</picture>
+    <picture type="titlepage" src="1816-p1.jpg"><transcription>Bagateller // af / C. V. P. Birkerod. // Kjøbenhavn, 1816. / Trykt og forlagt af P. D. Kispping, / i Vimmelskaftet No. 138.</transcription></picture>
   </pictures>
   <source facsimile="11530804476F_color" facsimile-pages-num="45" facsimile-pages-offset="6">C. V. P. Birkerod: <i>Bagateller</i>, P. D. Kispping Forlag, Kbh., 1816.</source>
 </workhead>
@@ -418,7 +418,7 @@ Du det skulde faae.
 </body>
 </text>
 
-<text id="birkerod2018011812">
+<text id="birkerod2018011812" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til M.</title>
   <firstline>Hulde Yngling! Livets Vaar</firstline>
@@ -600,6 +600,7 @@ Thi begge vise, men ei rette Feil.
   <title>Min Barndom</title>
   <firstline>Min glade Barndoms skyldfrie Dage</firstline>
   <source pages="28-29"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -647,6 +648,7 @@ Saalænge som jeg aander her.
   <title>Til H ....</title>
   <firstline>I Norden fordum Troskab gjaldt</firstline>
   <source pages="30-31"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

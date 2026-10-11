@@ -51,6 +51,10 @@ så afvigende formatering ikke kan merges.
 
 - `id`: personens id. Skal svare til mappenavnet i `fdirs`.
 - `country`: landekode/grupperingskode. Bruges bl.a. i forfatteroversigter.
+- `nationality`: nationalt tilhørsforhold med en moderne ISO 3166-1 alpha-2-
+  landekode i små bogstaver. Påkrævet ved `country="un"`, ellers valgfri.
+  For historiske digtere bruges en moderne pendant; for samleposter angiver
+  attributten traditionens tilhørsforhold.
 - `lang`: personens standardsprog. Bruges bl.a. til sortering og tekstsprog.
 - `type`: typen af aktør.
 
@@ -67,6 +71,17 @@ Landekoder, som buildet accepterer i dag:
 - `un`
 
 `un` bruges som en praktisk "uden fast landegruppe"-gruppe og sorteres efter danske regler.
+
+Nationaliteter skal findes i flagopslaget i `common/flags.js`. Det understøtter
+`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`,
+`ch`, `at` og `pt`. Fx bevarer Runeberg sin gruppering under »andre«:
+
+```xml
+<person id="runeberg" country="un" nationality="fi" lang="sv" type="poet">
+```
+
+Jubilæumskalenderen vælger flag med `flagMap[nationality ?? country]`.
+`nationality` videreføres til digtermetadata og det offentlige korpusdatasæt.
 
 Sprogkoder, som buildet accepterer i dag:
 
@@ -291,6 +306,9 @@ Buildet tjekker blandt andet:
 
 - Alle mapper i `fdirs` skal have `info.xml`.
 - `country` skal være en kendt landekode.
+- `country="un"` kræver en ikke-tom `nationality`, og enhver angivet nationalitet
+  skal kunne oversættes til en flag-emoji. Korpusregressionen kontrollerer også,
+  at `nationality ?? country` giver en flag-emoji for hver post i `info.xml`.
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
 - lokale litteraturperioder skal passe til personens `country`.

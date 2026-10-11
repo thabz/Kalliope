@@ -8,6 +8,13 @@
     <element name="person">
       <attribute name="id"><text/></attribute>
       <attribute name="country"><text/></attribute>
+      <optional>
+        <attribute name="nationality">
+          <data type="string" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+            <param name="pattern">[a-z]{2}</param>
+          </data>
+        </attribute>
+      </optional>
       <attribute name="lang"><text/></attribute>
       <attribute name="type"><text/></attribute>
       <ref name="name"/>

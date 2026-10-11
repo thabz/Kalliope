@@ -7,7 +7,7 @@
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1851a-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.''</picture>
+    <picture type="titlepage" src="1851a-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
   <source facsimile="11530806249E_color" facsimile-pages-num="545" facsimile-pages-offset="20">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel I, C. A. Reitzel, Kbh., 1851.</source>
 </workhead>
@@ -1644,6 +1644,7 @@ Er sønderbrudt og knuust af Haschemiden.
   <title>Et Digt af Hafiz</title>
   <firstline>Din Magt, o Kjærlighed, er stærk</firstline>
   <source pages="65-66"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1729,10 +1730,10 @@ Og hvis som Julie du mildt mig hørte!
     <note>* Fra 1826. Det 6te Vers har jeg ikke villet udelade eller forandre, uagtet jeg vel veed, at det intet adæquat Billede indeholder. Men jeg mener, der gives Lignelser, hvis Ligheds-Punkt eller <i>tertium comparationis</i> vel er saare svagt, men der ligefuldt sætte Phantasien saaledes i Bevægelse, at de bidrage meget til at understøtte Hovedtanken, og som henhørende til denne Classe, haaber jeg, det nævnte Vers kan forsvare sin Plads.</note>
     <note>Se også Staffeldts <xref poem="staffeldt2018010471"/>.</note>
   </notes>
-  <source pages="69-71"/>
   <pictures>
     <picture src="hertz2018021820-p1.jpg" museum="uffizi" objid="venere-dei-medici"><i>Venus de' Medici</i>, græsk, 1. årh. fvt., marmor.</picture>
   </pictures>
+  <source pages="69-71"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3899,11 +3900,11 @@ Boer jeg. Skynd dig og kom! - Huset er vist dig bekjendt.
 <head>
   <title>Fornarina</title>
   <firstline>Den skjønne Fornarina</firstline>
-  <source pages="162-163"/>
   <pictures>
     <picture src="hertz2018021838-p1.jpg" museum="barberinicorsini">Raphael: <i>La Fornarina</i>, 1518-19, olie på panel, 85×60cm. Galleria Nazionale d'Arte Antica, Rom.</picture>
     <picture src="hertz2018021838-p2.jpg" museum="pushkin">Giulio Romano: <i>Fornarina</i>, ca. 1520, olie på panel, 111×92cm.</picture>
   </pictures>
+  <source pages="162-163"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5188,7 +5189,6 @@ Til dem, til hver Idee er anviist Plads,
 Og alle rummes i det samme Glas.
 <nonum><center><i>(Cetera desant.)</i></center></nonum>
 
-
 <nonum><center>II.</center></nonum>
 <nonum><center><small>Prolog, fremsagt ved Selskabets Julefest 1835 i det nye Locale.</small></center></nonum>
 
@@ -5557,6 +5557,7 @@ Han vil husvale og Trøsten sende.
   <toctitle><num>IV.</num>Mimi Collin</toctitle>
   <firstline>Dengang hun laae og leed, af Ømhed pleiet</firstline>
   <source pages="235-236"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5629,10 +5630,10 @@ Stedet, hvor han sover.
   </subtitle>
   <toctitle><num>VI.</num>Fru Esther Nathanson</toctitle>
   <firstline>I Skjønhed formed' her sig hendes Liv</firstline>
-  <source pages="237"/>
   <pictures>
     <picture artwork="eckersberg/familien-nathanson-1818" />
   </pictures>
+  <source pages="237"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

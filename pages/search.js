@@ -13,7 +13,6 @@ import * as Links from '../components/links.js';
 import { kalliopeMenu, poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import {
-  poetGenetiveLastName,
   poetNameString,
 } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
@@ -22,6 +21,20 @@ import WorkName from '../components/workname.js';
 import ErrorPage from './error.js';
 
 export const totalHitsValue = (hits) => hits.total.value;
+
+export const parseKeywordIds = value => {
+  if (value == null || value.length === 0) {
+    return [];
+  }
+  return Array.from(
+    new Set(
+      value
+        .split(',')
+        .map(keywordId => keywordId.trim())
+        .filter(keywordId => keywordId.length > 0)
+    )
+  );
+};
 
 export const singleMatchingTextIdResultURL = (lang, query, result) => {
   if (
@@ -95,12 +108,34 @@ const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
   return hits
-    .filter((x) => ['poet', 'work', 'text'].includes(x._source.result_type))
+    .filter((x) =>
+      ['keyword', 'poet', 'work', 'text'].includes(x._source.result_type)
+    )
     .map((hit, i) => {
-      const { poet, work, text } = hit._source;
+      const { keyword, poet, work, text } = hit._source;
       const { highlight } = hit;
       let item = null;
-      if (hit._source.result_type === 'poet') {
+      if (hit._source.result_type === 'keyword') {
+        const keywordURL =
+          keyword.redirectURL != null
+            ? keyword.redirectURL.replace('${lang}', lang)
+            : Links.keywordURL(lang, keyword.id);
+        item = (
+          <div>
+            <div className="title">
+              <Link href={keywordURL}>{keyword.title}</Link>
+            </div>
+            <div className="poet-and-work">
+              <ResultTypeLabel>{_('Nøgleord', lang)}</ResultTypeLabel>
+            </div>
+            <style jsx>{`
+              .title {
+                font-size: 1.15em;
+              }
+            `}</style>
+          </div>
+        );
+      } else if (hit._source.result_type === 'poet') {
         const poetURL = Links.poetURL(lang, poet.id);
         item = (
           <div>
@@ -202,17 +237,132 @@ const RenderedHits = ({ hits }) => {
     });
 };
 
+const collectionLabels = {
+  dk: { da: 'dansk', en: 'Danish', fr: 'danoise', de: 'dänisch' },
+  gb: { da: 'engelsk', en: 'English', fr: 'anglaise', de: 'englisch' },
+  de: { da: 'tysk', en: 'German', fr: 'allemande', de: 'deutsch' },
+  fr: { da: 'fransk', en: 'French', fr: 'française', de: 'französisch' },
+  se: { da: 'svensk', en: 'Swedish', fr: 'suédoise', de: 'schwedisch' },
+  no: { da: 'norsk', en: 'Norwegian', fr: 'norvégienne', de: 'norwegisch' },
+  it: { da: 'italiensk', en: 'Italian', fr: 'italienne', de: 'italienisch' },
+  us: {
+    da: 'amerikansk',
+    en: 'North American',
+    fr: 'nord-américaine',
+    de: 'nordamerikanisch',
+  },
+  un: { da: 'anden', en: 'other', fr: 'autre', de: 'sonstige' },
+};
+
+const FilterChip = ({ href, label, removeLabel }) => (
+  <Link href={href} className="filter-chip" aria-label={removeLabel}>
+    <span>{label}</span>
+    <span aria-hidden="true">×</span>
+  </Link>
+);
+
+export const SearchFilters = ({ country, keywordFilters, lang, poet, query }) => {
+  const keywordIds = keywordFilters.map(keyword => keyword.id);
+  const filters = [];
+  if (query.length > 0) {
+    filters.push({
+      id: 'query',
+      label: `${_('Fritekst', lang)}: ${query}`,
+      href: Links.searchURL(lang, '', country, poet?.id ?? null, keywordIds),
+    });
+  }
+  keywordFilters.forEach(keyword => {
+    filters.push({
+      id: `keyword-${keyword.id}`,
+      label: `${_('Nøgleord', lang)}: ${keyword.title}`,
+      href: Links.searchURL(
+        lang,
+        query,
+        country,
+        poet?.id ?? null,
+        keywordIds.filter(keywordId => keywordId !== keyword.id)
+      ),
+    });
+  });
+  if (poet != null) {
+    filters.push({
+      id: 'poet',
+      label: `${_('Digter', lang)}: ${poetNameString(poet, false, false)}`,
+      href: Links.searchURL(lang, query, country, null, keywordIds),
+    });
+  }
+  if (country !== 'all') {
+    const collectionLabel = collectionLabels[country]?.[lang] ?? country;
+    filters.push({
+      id: 'country',
+      label: `${_('Samling', lang)}: ${collectionLabel}`,
+      href: Links.searchURL(lang, query, 'all', poet?.id ?? null, keywordIds),
+    });
+  }
+  if (filters.length === 0) {
+    return null;
+  }
+  return (
+    <div className="search-filters" aria-label={_('Aktive filtre', lang)}>
+      {filters.map(filter => (
+        <FilterChip
+          key={filter.id}
+          href={filter.href}
+          label={filter.label}
+          removeLabel={_('Fjern filteret {filter}', lang, {
+            filter: filter.label,
+          })}
+        />
+      ))}
+      <style jsx>{`
+        .search-filters {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin: 0 0 20px;
+        }
+        .search-filters :global(a.filter-chip) {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 4px 10px;
+          border-radius: 16px;
+          background: ${CommonData.backgroundLinkColor};
+          text-decoration: none;
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export const SearchResultCount = ({ lang, totalHits }) => {
+  if (totalHits == null) {
+    return null;
+  }
+  const description = _(
+    totalHits === 1 ? '{count} resultat fundet' : '{count} resultater fundet',
+    lang,
+    { count: totalHits }
+  );
+  return <div className="result-count">{description}</div>;
+};
+
 const SearchPage = (props) => {
-  const { lang, poet, country, query } = props;
+  const { lang, poet, country, query, keywordFilters } = props;
+  const keywordIds = keywordFilters.map(keyword => keyword.id);
   const [error, setError] = useState(null);
   const [hits, setHits] = useState([]);
   const [isFetchingMore, setFetchingMore] = useState(false);
-  const [totalHits, setTotalHits] = useState(0);
+  const [totalHits, setTotalHits] = useState(null);
   const [resultPage, setResultPage] = useState(0);
   const [redirectURL, setRedirectURL] = useState(null);
 
   const fetchMoreItems = async () => {
-    if (isFetchingMore || hits.length >= totalHits) {
+    if (
+      isFetchingMore ||
+      totalHits == null ||
+      hits.length >= totalHits
+    ) {
       return;
     }
     setFetchingMore(true);
@@ -220,7 +370,8 @@ const SearchPage = (props) => {
       poet != null ? poet.id : '',
       country,
       query,
-      resultPage + 1
+      resultPage + 1,
+      keywordIds
     );
     setFetchingMore(false);
     if (result.error != null) {
@@ -270,11 +421,24 @@ const SearchPage = (props) => {
 
   useEffect(() => {
     const asyncLoad = async () => {
+      if (
+        query.trim().length === 0 &&
+        keywordIds.length === 0 &&
+        poet == null
+      ) {
+        setError(null);
+        setResultPage(0);
+        setHits([]);
+        setTotalHits(0);
+        setRedirectURL(null);
+        return;
+      }
       const result = await Client.search(
         poet != null ? poet.id : '',
         country,
         query,
-        0
+        0,
+        keywordIds
       );
       if (result.error != null) {
         setError(result.error);
@@ -291,7 +455,7 @@ const SearchPage = (props) => {
       }
     };
     asyncLoad();
-  }, [country, lang, poet, query]);
+  }, [country, lang, poet, query, keywordIds.join(',')]);
 
   if (error != null) {
     return <ErrorPage error={error} lang={lang} message="Søgning fejlede" />;
@@ -299,29 +463,6 @@ const SearchPage = (props) => {
 
   if (redirectURL != null) {
     return null;
-  }
-
-  let resultaterOrd = null;
-  let linkToFullSearch = null;
-  if (totalHits === 0) {
-    resultaterOrd = 'ingen resultater';
-  } else if (totalHits > 1) {
-    resultaterOrd = totalHits + ' resultater';
-  } else {
-    resultaterOrd = totalHits + ' resultat';
-  }
-  let resultaterBeskrivelse = `Fandt ${resultaterOrd} ved søgning efter »${query}«`;
-  if (poet != null) {
-    const genetive = poetGenetiveLastName(poet, lang);
-    resultaterBeskrivelse += ` i ${genetive} værker.`;
-    const fullSearchURL = Links.searchURL(lang, query, country);
-    linkToFullSearch = <Link href={fullSearchURL}>Søg i hele Kalliope.</Link>;
-  } else if (country != 'dk') {
-    const countryData = CommonData.countries.filter((x) => x.code === country);
-    if (countryData.length > 0) {
-      const adjective = countryData[0].adjective[lang];
-      resultaterBeskrivelse += ` i den ${adjective} samling.`;
-    }
   }
 
   const henterFlere = isFetchingMore ? (
@@ -350,18 +491,30 @@ const SearchPage = (props) => {
   return (
     <Page
       headTitle={headTitle}
-      requestPath={`/${lang}/search/${country}?query=${query}`}
+      requestPath={Links.searchURL(
+        lang,
+        query,
+        country,
+        poet?.id ?? null,
+        keywordIds
+      )}
       crumbs={crumbs}
       pageTitle={pageTitle}
       query={query}
+      keywordIds={keywordIds}
       country={country}
       menuItems={tabs}
       poet={poet}
       selectedMenuItem="search">
       <div className="result-items">
-        <div className="result-count">
-          {resultaterBeskrivelse} {linkToFullSearch}
-        </div>
+        <SearchFilters
+          country={country}
+          keywordFilters={keywordFilters}
+          lang={lang}
+          poet={poet}
+          query={query}
+        />
+        <SearchResultCount lang={lang} totalHits={totalHits} />
         <RenderedHits hits={hits} />
         <style jsx>{`
           .result-count {
@@ -379,14 +532,26 @@ const SearchPage = (props) => {
 };
 
 SearchPage.getInitialProps = async ({
-  query: { lang, country, poetId, query },
+  query: { lang, country, poetId, query, keyword },
 }) => {
-  const poet = await Client.poet(poetId);
+  const keywordIds = parseKeywordIds(keyword);
+  const [poet, ...keywordResponses] = await Promise.all([
+    Client.poet(poetId),
+    ...keywordIds.map(keywordId => Client.keyword(keywordId)),
+  ]);
+  const keywordFilters = keywordResponses.map((response, index) => ({
+    id: keywordIds[index],
+    title:
+      response != null && response.error == null
+        ? response.title
+        : keywordIds[index],
+  }));
   return {
     lang,
-    country,
-    query,
+    country: country ?? 'dk',
+    query: query ?? '',
     poet,
+    keywordFilters,
   };
 };
 

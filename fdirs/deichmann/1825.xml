@@ -7,9 +7,10 @@
     <note>På titelbladets bagside står et uddrag af Schack Staffeldts <xref poem="staffeldt1804a2"/>: “Hellige Kunst! / Det Eviges Udbrud / af det Endelige! / Guddommelige Börneleeg / ved den Uendeliges Fod! / Salige Andagt! / Den Eviges Selverkjendelse / i det Endelige! / Straale af den uendelige / Selvkjærlighed, / som holder det Hele sammen! / Du, det ene, eneste Væsens / Tilværelse i os! / Hellige Kunst! / Salige Andagt! / samler mig i det Hele! / styrter mig i den salige Afgrund, / i det ene, uendelige Selv!”</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1825-p1.jpg">Titelbladet til <i>Digte</i> (1825) lyder “Digte / af / Christian Deichmann. // Kjöbenhavn; 1825. / Trykket, paa Forfatterens Forlag, / hos H. F. Popp.”.</picture>
+    <picture type="titlepage" src="1825-p1.jpg"><transcription>Digte / af / Christian Deichmann. // Kjöbenhavn; 1825. / Trykket, paa Forfatterens Forlag, / hos H. F. Popp.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122320872905763" facsimile="115308051111_color" facsimile-pages-num="294" facsimile-pages-offset="14">Christian Deichmann: <i>Digte</i>, paa Forfatterens Forlag, hos H. F. Popp, Kbh., 1825.</source>
+  <errata status="applied" pages="274" facsimile-pages="288"/>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-05T08:58:33+02:00"/>
@@ -21,11 +22,11 @@
 <head>
   <title>Prolog</title>
   <firstline>Men naar de förste Straaler</firstline>
-  <source pages="3-9"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Mottoet er tillagt <a poet="herder">J. G. Herder</a>; den oprindelige tekstkilde er ikke identificeret.</note>
   </notes>
+  <source pages="3-9"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="de">
@@ -49,7 +50,7 @@ og naar de skrede frem, de Nattens Perler,
 Alkraftens evige Lovsjungere,
 et Ventes varselfulde Billeder,
 hvert daglystruet Nöies tause Vidner,
-hver hellig, negtet Pagts Besæglere;<footnote>Rettet fra »Beseglere« efter trykfejlslisten på s. 274.</footnote>
+hver hellig, negtet Pagts Beseglere,<footnote type="errata">Beseglere,] Beseglere;</footnote>
 hiint Phantasiens forudsögte Hjemskjær,
 o! naar de skrede frem, og dryssed' Glimt
 paa Dalens Blomst, og Anelser i Hjertet; -
@@ -87,7 +88,7 @@ ei lignende af Kaldserkjendelse de nære,
 kun hvor sig Livet yttrer glödende
 af Kraft, om stundom end den leded' vild,
 i höi Bevidsthed af sit Slægtskab med
-det Aandigste, ved dyb Erkjiendelse<footnote>Rettet fra »Erkjendelse« efter trykfejlslisten på s. 274.</footnote>
+det Aandigste, ved dyb Erkjiendelse<footnote type="errata">Erkjiendelse] Erkjendelse</footnote>
 af Kunsten selv, er det for Kunsten modent.
 
   Og er den Slægt, som Kunstneren medfödtes,
@@ -188,14 +189,14 @@ hen over Verdners Sarcophag.
 Fra Dybets Nat til Lysets Buer
 Dig Intet standser i Din Flugt;
 Du Skattene blandt Gruset skuer,
-af umaalt Sekelbölge<footnote>Rettet fra »Sckelbölge« efter trykfejlslisten på s. 274.</footnote> lukt';
+af umaalt Sekelbölge<footnote type="errata">Sekelbölge] Sckelbölge</footnote> lukt';
 og hist, hvor Bjerges Rödder mödes
 i aldrignaaet Demantglands,
 <pb n="12" facs="025.jpg"/>hvor fraadende Vulcaner födes
 ved Salamandres vilde Dands,
 hvor intet Öie Dybet maaler,
 hvor dristigst Attraa kun nedsteeg,
-<i>der</i> lyse gjenfödt' Dine Straaler<footnote>Kommaet efter »Straaler« er fjernet efter trykfejlslisten på s. 274.</footnote>
+<i>der</i> lyse gjenfödt' Dine Straaler<footnote type="errata">Straaler] Straaler,</footnote>
 den mulmtillukte Perlevæg.
 
 Og hvor i Natten Tanken higer
@@ -1038,10 +1039,10 @@ Pige! ja! thi uden Dig for Öie,
 <head>
   <title>Ynglingen ved Werthers Grav</title>
   <firstline>Frygt ei! bramfrie Gröntörv, som tildækker</firstline>
-  <source pages="55-58"/>
   <notes>
     <note>Se Oehlenschlägers <xref poem="oehlenschlaeger1999062809"/>.</note>
   </notes>
+  <source pages="55-58"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1387,11 +1388,11 @@ venligt stammende: "vi er'!"
   <title>Veemodskvad</title>
   <subtitle>skrevet i et gammelt, ödelagt Bjergslot</subtitle>
   <firstline>Aft'nen dæmrer: i et helligt Stille</firstline>
-  <source pages="75-81"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Matthissons <xref type="translation" poem="matthisson2026090401"/>.</note>
   </notes>
+  <source pages="75-81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1701,11 +1702,11 @@ efter Kvel, i Morgenskjær?
 <head>
   <title>Epicuræisme</title>
   <firstline>Nei! her staaer Skranken, Sjæl! for Dine Kæmpe</firstline>
-  <source pages="92-96"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Mottoet er fra Schillers <xref poem="schiller2020050902,93"/>.</note>
   </notes>
+  <source pages="92-96"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="de">
@@ -1785,7 +1786,7 @@ den Visnende er glemt i nyskabt Lyst. —
 
 <pb n="96" facs="109.jpg"/>Saaledes til Din Favn, o! Vellyst! klynget,
 Du stedse nye Blomster om mig ströe!
-saaledes jeg, af krydret Lyst omslynget,<footnote>Rettet fra udråbstegn efter trykfejlslisten på s. 274.</footnote>
+saaledes jeg, af krydret Lyst omslynget,<footnote type="errata">omslynget,] omslynget!</footnote>
 södt sukke, döe.
 </poetry>
 </body>
@@ -2094,7 +2095,7 @@ Engang brister Vexels Sværd.
 </head>
 <body>
 <poetry>
-Udblöd,<footnote>Rettet fra udråbstegn efter trykfejlslisten på s. 274.</footnote> Hjerte!
+Udblöd,<footnote type="errata">Udblöd,] Udblöd!</footnote> Hjerte!
 i Din Smerte!
 Fjernhed! see! jeg hviler i Din Favn;
 Sukket stiger,
@@ -2136,11 +2137,11 @@ Lönnens Ord for Jordlivsvintrens Taal:
 <head>
   <title>Aladdins Sang i Fængslet</title>
   <firstline>Skulde for min Död jeg bange zittre?</firstline>
-  <source pages="116-119"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Oehlenschlägers <xref type="translation" poem="oehlenschlaeger2026090401"/>.</note>
   </notes>
+  <source pages="116-119"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2205,11 +2206,11 @@ Nei! min Gud! Du vil mig ei forlade.
 <head>
   <title>Farvel til den Elskede</title>
   <firstline>Saa vil Du da, o! hellighöie Stjerne!</firstline>
-  <source pages="120-124"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Mottoet er fra Popes <xref poem="pope2001061102,104-105"/>.</note>
   </notes>
+  <source pages="120-124"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote lang="en">
@@ -2443,11 +2444,11 @@ Tonerne, han for mig sang.
 <head>
   <title>Natlig Höitid</title>
   <firstline>Synker! luende Straaler!</firstline>
-  <source pages="132-142"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Mottoet er fra Staffeldts <xref poem="staffeldt1999080701,29-32"/>.</note>
   </notes>
+  <source pages="132-142"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <quote>
@@ -2932,11 +2933,11 @@ ud over det blodige Liig.
 <head>
   <title>Elskovsphantasi</title>
   <firstline>Hil Dig, o! himmelbaarne Phantasi!</firstline>
-  <source pages="157-158"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>De sidste ti vers er en gendigtning af en replik i Drydens <xref type="translation" poem="dryden2026090401"/>.</note>
   </notes>
+  <source pages="157-158"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2951,7 +2952,7 @@ ved hvert et Blik, hvert södt fremdraget Nær.
 <pb n="158" facs="171.jpg"/>Taust sammenslyngte Sjælene sig finde,
 og eget Væv af eget Indre spinde;
 ja! selv naar langtfra vore Blik sig möde,
-vor Fölelse, södt glödende,<footnote>Kommaet efter »glödende« er indsat efter trykfejlslisten på s. 274.</footnote> er <i>saa</i>,
+vor Fölelse, södt glödende,<footnote type="errata">glödende,] glödende</footnote> er <i>saa</i>,
 at fjernt vi os, Arachne lig', formaae
 den ömmeste Berörelse at föde.
 </poetry>
@@ -3079,11 +3080,11 @@ husvalende i hendes piinte Bryst.
 <head>
   <title>Frasigelse</title>
   <firstline>Viig! o! Verden! ei for Dig jeg skabtes</firstline>
-  <source pages="165-166"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Efter Maltitz.</note>
   </notes>
+  <source pages="165-166"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3182,7 +3183,7 @@ luer Længslen som en Stjerne
 södt med Visheds Smiil.
 
 Lad mig ofte da, o! Maane!
-luttret ved Din Ild,<footnote>Rettet fra punktum efter trykfejlslisten på s. 274.</footnote>
+luttret ved Din Ild,<footnote type="errata">Ild,] Ild.</footnote>
 södt ved Phantasi bortdaane
 i et Vordes Smiil!
 eller frydfuldendt henglide,
@@ -3204,7 +3205,7 @@ vil snart Oldtidsvennens Öie
 savne Sporet af;
 <i>Nytten</i> dem med Jorden jevner,
 föleslös og kold;
-<i>saa</i> hvert Minde selv<footnote>Rettet fra »Minde, ak!« efter trykfejlslisten på s. 274.</footnote> bortstævner
+<i>saa</i> hvert Minde selv<footnote type="errata">Minde selv] Minde, ak!</footnote> bortstævner
 om de Kæmpers Old.
 <pb n="172" facs="185.jpg"/>O! forlad de mörke Skygger!
 veemodgrebne Sjæl!
@@ -3474,10 +3475,10 @@ at Du Dommen tog igjen!
 <head>
   <title>Ved Havet</title>
   <firstline>Underlige Blaae!</firstline>
-  <source pages="186-187"/>
   <notes>
     <note>Mottoet er fra Hamlets monolog i 3. akt, 1. scene af <a poet="shakespeare">William Shakespeares</a> <i>Hamlet</i>.</note>
   </notes>
+  <source pages="186-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3682,10 +3683,10 @@ Himlens Rige Jorden nær.
 <head>
   <title>Zephyr og Rosen</title>
   <firstline>Sildigt vakt af lange Blund</firstline>
-  <source pages="196-198"/>
   <notes>
     <note>Mottoet gengiver med en mindre ændring de to første vers af Schack Staffeldts <xref poem="staffeldt1804a4"/>.</note>
   </notes>
+  <source pages="196-198"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4397,7 +4398,7 @@ Svandt, svandt Du? Tid! da fro jeg kunde smelte
 ved Elskovsvift fra Myrthers kjelne Hjem,
 ved Skjoldeklang fra Nords besneete Helte,
 naar södt i Tonens Speil de skrede frem. -
-Har, Elskede! Du lyst mit Syn i Band?<footnote>Rettet fra »Ban?« efter trykfejlslisten på s. 274.</footnote>
+Har, Elskede! Du lyst mit Syn i Band?<footnote type="errata">Band?] Ban?</footnote>
 nu, naar Dit Öie hæves, langsomt daler,
 Din Barm sig rörer, Smilet Kinden maler,
 den Billedskrivt jeg ene tyde kan. -
@@ -4415,10 +4416,10 @@ ei grumt for hidtil kjendte Tegn mit Öie!
 <head>
   <title>Beslutning</title>
   <firstline>Kast Dragten! evig Flammestraf Dig venter</firstline>
-  <source pages="235-239"/>
   <notes>
     <note>Mottoet er fra <a poet="goethe">J. W. Goethes</a> <i>Wilhelm Meisters Lehrjahre</i>, 8. bog, 7. kapitel.</note>
   </notes>
+  <source pages="235-239"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4507,11 +4508,11 @@ træd frem som Syn, som Dröm! — adlydt Du er.
   <title>Nänie</title>
   <subtitle>(Efter Schiller).</subtitle>
   <firstline>Ogsaa det Skjönne maa döe, som Mennesker</firstline>
-  <source pages="240-241"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001102428"/>.</note>
   </notes>
+  <source pages="240-241"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4602,11 +4603,11 @@ hviil da savnet i Din vundne Grav!
   <title>Resignation</title>
   <subtitle>(Efter Schiller).</subtitle>
   <firstline>Jeg ogsaa födtes i arcadiskt Eden</firstline>
-  <source pages="245-251"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <notes>
     <note>Gendigtning af Schillers <xref type="translation" poem="schiller2020050902"/>.</note>
   </notes>
+  <source pages="245-251"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4890,10 +4891,10 @@ der fjern paa faldne Asers Hjemstavn ganger!
 <head>
   <title>Schack Staffeldt</title>
   <firstline>Lysets Olympos!</firstline>
-  <source pages="262-268"/>
   <notes>
     <note>Mottoet er fra Schack Staffeldts <xref poem="staffeldt1804a2"/>.</note>
   </notes>
+  <source pages="262-268"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

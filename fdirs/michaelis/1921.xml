@@ -10,7 +10,7 @@
     <note>Dette er en korrekturlæst udgave af teksten hos <a href="http://www.adl.dk/">Arkiv for Dansk Litteratur</a>.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1921-p1.jpg">Titelbladet til <i>Romersk Foraar</i> (1921).<br/>,,Sophus Michaëlis / Romersk Foraar / og andre Digte / Andet Oplag / Gyldendalske Boghandel · Nordisk / Forlag · København · Kristiania / Berlin · London · MDCCCCXXI''</picture>
+    <picture type="titlepage" src="1921-p1.jpg"><transcription>Sophus Michaëlis / Romersk Foraar / og andre Digte / Andet Oplag / Gyldendalske Boghandel · Nordisk / Forlag · København · Kristiania / Berlin · London · MDCCCCXXI</transcription></picture>
   </pictures>
   <source facsimile="adl_michs_11" facsimile-pages-num="158" facsimile-pages-offset="0">Sophus Michaëlis: <i>Romersk Foraar og andre Digte</i>, 2. oplag, Gyldendalske Boghandel, Kbh., 1921.</source>
 </workhead>
@@ -846,8 +846,8 @@ og falder i hans Længsels Favn og — dør?
   <title>Majnat</title>
   <firstline>En Stjerne drypped gennem Bøgeløvet</firstline>
   <source pages="48"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1843,8 +1843,6 @@ og høre Sfærernes Musik tilsidst.
 <text id="michaelis2003090702">
 <head>
   <title>Rodin</title>
-  <toctitle>Rodin</toctitle>
-  <indextitle>Rodin</indextitle>
   <firstline>Af Stenbruddet strækker en Skaberhaand sin Klo</firstline>
   <notes>
     <note>François-Auguste-René Rodin (1840-1917), fransk billedhugger.</note>
@@ -1988,11 +1986,11 @@ Evighedens Integral.
 <head>
   <title>Jakob Knudsen</title>
   <firstline>En djærv Protestant, der var frejdig og stærk</firstline>
-  <source pages="93-94"/>
-  <keywords>knudsen</keywords>
   <dates>
     <event>1917-01-21</event>
   </dates>
+  <source pages="93-94"/>
+  <keywords>knudsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2330,12 +2328,12 @@ Se! Højt paa Skansen staar han selv — Prins Hamlet!
 <head>
   <title>Odense</title>
   <firstline>Som en hængende Have vor Aakande-Ø</firstline>
-  <source pages="108-116"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-  <keywords>aarestrup,bagger</keywords>
   <dates>
     <performed>1914-10-09</performed>
   </dates>
+  <source pages="108-116"/>
+  <keywords>aarestrup,bagger</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2915,8 +2913,8 @@ løft gennem Kvindernes Mund
   <title>Trøsten</title>
   <firstline>Som Vilddyr røre sig de raa Titaner</firstline>
   <source pages="134"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

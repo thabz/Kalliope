@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hofman" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans de</firstname>
+    <lastname>Hofman</lastname>
+    <fullname>Hans Dreyer de Hofman</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1713-07-10</date>
+      <place inon="on">Skerrildgård</place>
+    </born>
+    <dead>
+      <date>1793-02-03</date>
+      <place>Fredericia</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Hans_de_Hofman</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

@@ -9,7 +9,7 @@
     <note>Udgaven omfatter kun Fr. Moths bidrag på s. I-XIV i Haderslev Katedralskoles indbydelsesskrift; publikationens øvrige bidrag og skolemeddelelser er udeladt.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1924-p1.jpg">Titelbladet lyder ,,Prøver af Petrarcas Digtning, / oversat fra Latin og Italiensk / af Lektor Dr. phil. Fr. Moth.''</picture>
+    <picture type="titlepage" src="1924-p1.jpg"><transcription>Prøver af Petrarcas Digtning, / oversat fra Latin og Italiensk / af Lektor Dr. phil. Fr. Moth.</transcription></picture>
   </pictures>
   <source facsimile="115408051084-color" facsimile-pages-num="103">Fr. Moth: <i>Prøver af Petrarcas Digtning</i>, i <i>Indbydelsesskrift til Afgangs- og Aarsprøverne ved Haderslev Katedralskole, Juni 1924</i>, A.S. ,,Haderslev Stiftstidende''s Bogtrykkeri, Haderslev, 1924, s. I-XIV.</source>
 </workhead>
@@ -40,8 +40,8 @@
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca20020506III"/>.</note>
   </notes>
   <source pages="III-IV" facsimile-pages="12-13"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -76,8 +76,8 @@ Ej ærefuldt han handled, tør jeg sværge;
     <note>Skønt denne og den følgende sonet i min oversættelse desværre mangler rimets næsten uundværlige pryd, giver de dog en god forestilling om Petrarcas tilbedende, men noget umandige kærlighed.</note>
   </notes>
   <source pages="IV" facsimile-pages="13"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -107,8 +107,8 @@ Af eders sukke, om end sent de kommer.
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca20020506XIII"/>.</note>
   </notes>
   <source pages="IV-V" facsimile-pages="13-14"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -138,8 +138,8 @@ Alt nu mig dette haab med stolthed fylder.
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2018021001"/>.</note>
   </notes>
   <source pages="V" facsimile-pages="14"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -172,8 +172,8 @@ Min skæbne vil, at jeg mod hende stævner
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2026082701"/>.</note>
   </notes>
   <source pages="V" facsimile-pages="14"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -206,8 +206,8 @@ Jeg signer hvert med vers beskrevet blad
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2003012302"/>.</note>
   </notes>
   <source pages="V-VI" facsimile-pages="14-15"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -235,12 +235,16 @@ Vis dig barmhjærtig! frels mig ud af kviden!
 <text id="moth2026082608">
 <head>
   <title>De poetiske breve, første bog, sjette brev</title>
-  <subtitle><line>(Noget forkortet.)</line><line>Til Giacomo di Colonna, biskop af Lombes.</line></subtitle>
+  <subtitle>
+    <line>(Noget forkortet.)</line>
+    <line>Til Giacomo di Colonna, biskop af Lombes.</line>
+  </subtitle>
   <firstline>Hvad jeg har for, hvordan jeg er stedt, og hvorledes jeg lever</firstline>
   <notes>
     <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2026082706"/>.</note>
   </notes>
   <source pages="VI-XI" facsimile-pages="15-20"/>
+  <keywords>heksameter</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -320,7 +324,7 @@ Ind paa mit bryst, og den grusomme sot mig greb som en smitte.
 Hvad skal jeg sige? Hvor finder jeg ord til at skildre, hvorledes
 Atter taarerne flød? Hvem tror mig? Hvor kan jeg i verskunst
 <num>105</num>Klarligt vise, hvor ofte til bønner om døden min smærte
-Drev mig, hvor ofte den fristet mig har til handlinger grumme,
+Drev mig, hvor ofte den fristet mig har til handlinger grumme,<footnote><span lang="la"><i>quotiens precibus deposcere mortem<br/>Me dolor impulerit, quotiens graviora parare.</i></span> Det er formasteligt at bede Gud om døden; men værre er det at søge den selv. Hertil sigter utvivlsomt <span lang="la"><i>graviora parare</i></span>. Flere steder i Lauradigtene siger P., at han har følt sig fristet <pb n="XI" facs="019.jpg"/>til selvmord.</footnote>
 Hvilken ulidelig møje mig tabet af friheden voldte,
 Som maatte vindes paa ny? Saa standser jeg. Men da omsider
 Lænkerne faldt (de sidste), som hvilede tungt paa min nakke,
@@ -421,7 +425,6 @@ Aftenstjærnen viste mig vej, saa jeg tornene undgik,
 Eller Diana<footnote>Maanen.</footnote> der lyser, naar Phøbus synker i døden<footnote>d. e.: naar solen gaar ned.</footnote>.
 <num>235</num>Saadan jeg lever og virker; hvis sorgernes tynge forlod mig,
 Fuldt ud lykkelig var jeg og født under gunstige stjærner.
-<nonum><footnote><span lang="la"><i>quotiens precibus deposcere mortem<br/>Me dolor impulerit, quotiens graviora parare.</i></span> Det er formasteligt at bede Gud om døden; men værre er det at søge den selv. Hertil sigter utvivlsomt <span lang="la"><i>graviora parare</i></span>. Flere steder i Lauradigtene siger P., at han har følt sig fristet <pb n="XI" facs="019.jpg"/>til selvmord.</footnote></nonum>
 </poetry>
 </body>
 </text>
@@ -434,8 +437,8 @@ Fuldt ud lykkelig var jeg og født under gunstige stjærner.
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2018051101"/>.</note>
   </notes>
   <source pages="XI" facsimile-pages="20"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -468,8 +471,8 @@ Jeg saa en sol, en lysets aand, der bor
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2026082702"/>.</note>
   </notes>
   <source pages="XII" facsimile-pages="21"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -502,8 +505,8 @@ Saa stor en glæde næppe før jeg kendte,
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2020042801"/>.</note>
   </notes>
   <source pages="XII" facsimile-pages="21"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -536,8 +539,8 @@ Jeg véd ej, under under vanraads vægt begravet,
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2026082703"/>.</note>
   </notes>
   <source pages="XII-XIII" facsimile-pages="21-22"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -570,8 +573,8 @@ Hvor yndigt, naar i vaarens dage skønne
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2026082704"/>.</note>
   </notes>
   <source pages="XIII" facsimile-pages="22"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -604,8 +607,8 @@ Saa jeg med pilen i min venstre side,
     <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2026082705"/>.</note>
   </notes>
   <source pages="XIII-XIV" facsimile-pages="22-23"/>
-  <quality>korrektur1,kilde,side</quality>
   <keywords>sonnet</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -639,6 +642,7 @@ Da tænker jeg, at mine vers han laster
     <note>Gendigtning af Petrarcas latinske <xref type="translation" poem="petrarca2026082707"/>.</note>
   </notes>
   <source pages="XIV" facsimile-pages="23"/>
+  <keywords>heksameter</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

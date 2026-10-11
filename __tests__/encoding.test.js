@@ -25,7 +25,8 @@ const gitFiles = (...patterns) =>
   execFileSync('git', ['ls-files', ...patterns], { encoding: 'utf8' })
     .split('\n')
     .filter(Boolean)
-    .filter(filename => fs.existsSync(filename));
+    .filter(filename => fs.existsSync(filename))
+    .filter(filename => fs.statSync(filename).isFile());
 
 const xmlEntities = new Set(['amp', 'apos', 'gt', 'lt', 'quot']);
 
@@ -89,5 +90,9 @@ describe('source encodings', () => {
     // NFC stores characters in their composed Unicode form where possible,
     // for example "å" as one code point instead of "a" plus a combining ring.
     expect(unnormalized).toEqual([]);
+  });
+
+  it('skips tracked symlinks to directories', () => {
+    expect(gitFiles('.claude/skills/*')).toEqual([]);
   });
 });

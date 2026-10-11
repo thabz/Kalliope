@@ -1,6 +1,9 @@
 import { DOMParser } from '@xmldom/xmldom';
 import {
   collectSourceDigitalUrl,
+  parseSourceBibliography,
+  formatSourceBibliography,
+  resolveSourceReference,
   resolveSourceDigitalUrl,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
@@ -112,5 +115,93 @@ describe('source digital URL helpers', () => {
       facsimilePageCount: 60,
       facsimilePagesOffset: 4,
     });
+  });
+});
+
+
+describe('structured bibliographic sources', () => {
+  const parse = xml => new DOMParser().parseFromString(xml, 'text/xml').documentElement;
+  const reference = (xml, inheritedSource, poets) => resolveSourceReference({
+    sourceNode: parse(xml), inheritedSource, poets,
+  });
+
+  it('formats the issue example centrally and preserves bibliographic names in person links', () => {
+    const xml = `<source>
+      <author id="heiberg">Peter Andreas Heiberg</author><title>Udvalgte Skrifter</title>
+      <editor id="borchsenius">Otto Borchsenius</editor><editor id="winkel-horn">Fr. Winkel Horn</editor>
+      <place>København</place><publisher>Otto B. Wroblewskys Forlag</publisher><year>1884</year>
+    </source>`;
+    const parsed = parseSourceBibliography(parse(xml));
+    expect(formatSourceBibliography(parsed)).toBe(
+      'Peter Andreas Heiberg: <i>Udvalgte Skrifter</i>, udg. af Otto Borchsenius og Fr. Winkel Horn, København: Otto B. Wroblewskys Forlag, 1884.'
+    );
+    const result = reference(xml, null, new Map([['heiberg', {}], ['borchsenius', {}]]));
+    expect(result.source).toContain('<a poet="heiberg">Peter Andreas Heiberg</a>');
+    expect(result.source).toContain('<a poet="borchsenius">Otto Borchsenius</a> og Fr. Winkel Horn');
+    expect(result.bibliography.editors).toHaveLength(2);
+  });
+
+  it('defaults to udg. af and uses red. af only for type="editor"', () => {
+    const source = reference('<source><title>Antologi</title><editor type="editor" id="a">A</editor><editor type="editor">B</editor></source>', null, new Map([['a', {}]]));
+    expect(source.source).toBe('<i>Antologi</i>, red. af <a poet="a">A</a> og B.');
+    expect(source.bibliography.editors).toEqual([
+      { name: 'A', id: 'a', type: 'editor' }, { name: 'B', type: 'editor' },
+    ]);
+    expect(reference('<source><title>Digte</title><editor>A</editor></source>').source)
+      .toBe('<i>Digte</i>, udg. af A.');
+    expect(reference('<source><title>Digte</title><editor>A</editor><editor type="editor">B</editor><editor>C</editor><translator>D</translator></source>').source)
+      .toBe('<i>Digte</i>, udg. af A og C, red. af B, overs. af D.');
+    expect(reference('<source><title>Digte</title><editor type="editor">B</editor><editor>A</editor></source>').source)
+      .toBe('<i>Digte</i>, red. af B, udg. af A.');
+    expect(reference('<source pages="7"/>', source)).toEqual(source);
+  });
+
+  it('supports anonymous, undated sources, translators, edition, volume and uncertain years', () => {
+    expect(reference('<source><title>Antologi</title></source>')).toEqual({
+      source: '<i>Antologi</i>.', bibliography: { title: 'Antologi' },
+    });
+    expect(reference('<source><title>Digte</title><translator>En oversætter</translator><edition>Anden Udgave</edition><volume>2</volume><year>[1804]</year></source>').source)
+      .toBe('<i>Digte</i>, overs. af En oversætter, Anden Udgave, bind 2, [1804].');
+  });
+
+  it('keeps printers in data but displays them only when there is no publisher', () => {
+    const result = reference('<source><title>Digte</title><place>København</place><publisher>Forlaget</publisher><printer>Trykkeriet</printer></source>');
+    expect(result.source).toBe('<i>Digte</i>, København: Forlaget.');
+    expect(result.bibliography.printer).toBe('Trykkeriet');
+    expect(reference('<source><title>Digte</title><place>København</place><printer>Trykkeriet</printer><year>1798</year></source>').source)
+      .toBe('<i>Digte</i>, København: trykt hos Trykkeriet, 1798.');
+    expect(reference('<source><title>Digte</title><printer>Trykkeriet</printer></source>').source)
+      .toBe('<i>Digte</i>, trykt hos Trykkeriet.');
+  });
+
+  it('inherits the selected bibliography and replaces it as a whole for text overrides', () => {
+    const inherited = reference('<source><title>Bogen</title><publisher>Forlaget</publisher></source>');
+    expect(reference('<source in="bd2" pages="7-8"/>', inherited)).toEqual(inherited);
+    expect(reference('<source pages="7"><title>Anden bog</title></source>', inherited))
+      .toEqual({ source: '<i>Anden bog</i>.', bibliography: { title: 'Anden bog' } });
+    expect(reference('<source pages="7">Gammel <i>fritekst</i></source>', inherited))
+      .toEqual({ source: 'Gammel <i>fritekst</i>' });
+    expect(reference('<source><identifiers><kb-alma>123</kb-alma></identifiers></source>', inherited))
+      .toEqual(inherited);
+  });
+
+  it('escapes bibliographic text and IDs without creating markup from input', () => {
+    const result = reference('<source><author id="a&amp;b">A &amp; B</author><title>&lt;i&gt; &amp; C</title></source>', null, new Map([['a&b', {}]]));
+    expect(result.source).toBe('<a poet="a&amp;b">A &amp; B</a>: <i>&lt;i&gt; &amp; C</i>.');
+  });
+
+  it.each([
+    '<source><title/></source>', '<source><title>  </title></source>',
+    '<source><editor>Redaktør</editor></source>',
+    '<source>Fritekst<title>Titel</title></source>',
+    '<source><title>Titel</title><title>Anden titel</title></source>',
+    '<source><title>Titel</title><publisher/></source>',
+    '<source><title>Titel</title><note>Forklaring</note></source>',
+    '<source><title><i>Titel</i></title></source>',
+    '<source><title>Titel</title><editor type="edition">A</editor></source>',
+    '<source><title>Titel</title><editor type="">A</editor></source>',
+    '<source><title>Titel</title><translator type="editor">A</translator></source>',
+  ])('rejects invalid structured bibliography: %s', xml => {
+    expect(() => reference(xml)).toThrow();
   });
 });

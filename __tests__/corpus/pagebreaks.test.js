@@ -105,6 +105,25 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     );
   });
 
+  it('counts boundaries on unnumbered facsimile pages', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><firstline>Første linje</firstline><source facsimile-pages="6-8"/></head>
+            <body><poetry>Første linje
+<pb facs="006.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: text digter1900a with facsimile-pages="6-8" requires 2 <pb> elements, but found 1.'
+    );
+  });
+
   it('rejects abbreviated and otherwise uninterpretable page intervals', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -152,6 +171,22 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
 
     expect(collectPageBreakIssues('text.xml', textException)).toEqual([]);
     expect(collectPageBreakIssues('work.xml', workException)).toEqual([]);
+  });
+
+  it('allows the pagebreak-count exception for unpaginated source leaves', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a" ignore-tests="pagebreak-count">
+            <head><firstline>Første linje</firstline><source facsimile-pages="9-12"/></head>
+            <body><poetry><pb facs="009.jpg"/><pb facs="010.jpg"/>Første linje<pb facs="011.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('text.xml', xml)).toEqual([]);
   });
 
   it('rejects page breaks in a text whose source covers one page', () => {
@@ -290,4 +325,23 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     );
   });
 
+});
+
+
+describe('page breaks inside attached endnotes', () => {
+  const xmlWith = notePages => `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-5"/></head><body><poetry>Vers<footnote>Slutnote${notePages}</footnote>
+<pb n="2" facs="002.jpg"/>Næste vers
+<pb n="3" facs="003.jpg"/>Sidste vers</poetry></body></text></workbody></kalliopework>`;
+
+  it('checks a note independently of the main text pagination', () => {
+    expect(collectPageBreakIssues('work.xml', xmlWith('<pb n="4" facs="004.jpg"/>Fortsat note<pb n="5" facs="005.jpg"/>Mere note'))).toEqual([]);
+  });
+
+  it('still rejects decreasing pages within a note', () => {
+    const issues = collectPageBreakIssues('work.xml', xmlWith('<pb n="5" facs="005.jpg"/>Fortsat note<pb n="4" facs="004.jpg"/>Mere note'));
+    expect(issues).toEqual([
+      'work.xml: pb/@facs must not decrease within one source: 005.jpg before 004.jpg.',
+      'work.xml: pb/@n must not decrease within a text: 5 before 4.',
+    ]);
+  });
 });

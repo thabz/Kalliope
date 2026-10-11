@@ -8,7 +8,7 @@
     <note>Noter med en foranstillet asterisk er Holsts egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1840-p1.jpg">Titelbladet til første del af <i>Digte, første Samling</i> (1840) lyder ,,Digte / af / H. P. Holst. // Første Samling. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel, / Trykt i Bianco Lunos Bogtrykkerie. / 1840.''</picture>
+    <picture type="titlepage" src="1840-p1.jpg"><transcription>Digte / af / H. P. Holst. // Første Samling. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel, / Trykt i Bianco Lunos Bogtrykkerie. / 1840.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122386264305763" facsimile="11530806547C_color" facsimile-pages-num="202" facsimile-pages-offset="8">H. P. Holst: <i>Digte</i>, Første Samling, C. A. Reitzel, Kbh., 1840.</source>
 </workhead>
@@ -811,7 +811,6 @@ Den røde Vante han mod Kolben slaaer:
         ,,Vagt i Gevær!''
         Eia, hvem der?
     Ah, det er Runden! Ganske rigtigt!
-
 
     Fra dette Strejftog ud i det Frie
     Nu mine Blik tilbageile
@@ -1721,8 +1720,8 @@ Velsignende det hvilte. -
 <text id="holst2018030529">
 <head>
   <title>Farvel til H. P. J. Lyngbye</title>
-  <toctitle><num>1.</num>Farvel til H. P. J. Lyngbye</toctitle>
   <subtitle>fra Studenterforeningen</subtitle>
+  <toctitle><num>1.</num>Farvel til H. P. J. Lyngbye</toctitle>
   <firstline>Sov vel, sov sødeligt! Din Seng er redt</firstline>
   <notes>
     <note>* Componeret af Weyse.</note>
@@ -1771,8 +1770,8 @@ Vi Sangeren den sidste Hilsen bringe.
 <text id="holst2018030530">
 <head>
   <title>Farvel til Jens Lund</title>
-  <toctitle><num>2.</num>Farvel til Jens Lund</toctitle>
   <subtitle>fra Studenterforeningen</subtitle>
+  <toctitle><num>2.</num>Farvel til Jens Lund</toctitle>
   <firstline>Igjen en Røst i denne Kreds forstummed!</firstline>
   <notes>
     <note>* Componeret af Weyse.</note>
@@ -2751,11 +2750,11 @@ Over deres Liig.
   <notes>
     <note>* Romanzen ,,Amor og Psyche'' [er] fremsagt af Forfatteren ved Festen for Thorvaldsen.</note>
   </notes>
-  <source pages="122-126"/>
   <pictures>
     <picture artwork="thorvaldsen/1803-jason" />
     <picture artwork="thorvaldsen/1807-amor-og-psyche" />
   </pictures>
+  <source pages="122-126"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2868,11 +2867,11 @@ Urørt i Undergangen - stolte Syn! -
   <title>Schachspillet</title>
   <subtitle>Motivet efter en Tegning af Retzch</subtitle>
   <firstline>I sit Pallads i Sevilla</firstline>
-  <source pages="127-139"/>
   <pictures>
     <picture src="holst2018030545-p1.jpg">Moritz Retzch: <i>Die Schachspieler</i>, kobberstik med pastel, 199×230mm. Kupferstich-Kabinett, Staatlichen Kunstsammlungen Dresden.</picture>
     <!--  https://skd-online-collection.skd.museum/Details/Index/1078178 -->
   </pictures>
+  <source pages="127-139"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -1,10 +1,12 @@
 import { DOMParser } from '@xmldom/xmldom';
 import {
   ANTHOLOGY_WORK_ID,
+  buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
   resolveAuthorId,
+  textsForWork,
   worksForPoet,
 } from '../tools/build-static/anthologies.js';
 import { workName } from '../tools/build-static/formatting.js';
@@ -17,6 +19,38 @@ import {
 } from '../tools/build-static/xml.js';
 
 describe('antologiplaceringer', () => {
+  it('indekserer både forfatter- og publikationsplaceringer uden at ændre rækkefølgen', () => {
+    const collected = {
+      works: new Map([
+        ['publisher/book', { id: 'book' }],
+        ['author/antologier', { id: 'antologier', virtualType: 'anthology' }],
+        ['author/book', { id: 'book' }],
+      ]),
+      texts: new Map([
+        ['one', { id: 'one', poetId: 'author', workId: 'antologier', placement: 'author' }],
+        ['onea', { id: 'onea', poetId: 'publisher', workId: 'book', placement: 'publication', indexable: false }],
+        ['two', { id: 'two', poetId: 'author', workId: 'antologier', placement: 'author' }],
+        ['three', { id: 'three', poetId: 'author', workId: 'book' }],
+      ]),
+    };
+    const authorWorks = worksForPoet(collected, 'author');
+    const authorTexts = textsForWork(collected, 'author', 'antologier');
+    const publicationTexts = textsForWork(collected, 'publisher', 'book');
+    buildCollectionIndexes(collected);
+    expect(worksForPoet(collected, 'author')).toEqual(authorWorks);
+    expect(textsForWork(collected, 'author', 'antologier')).toEqual(authorTexts);
+    expect(textsForWork(collected, 'publisher', 'book')).toEqual(publicationTexts);
+    expect(textsForWork(collected, 'author', 'book').map(text => text.id)).toEqual(['three']);
+    expect(worksForPoet(collected, 'missing')).toEqual([]);
+    expect(textsForWork(collected, 'missing', 'book')).toEqual([]);
+    expect(textsForWork(collected, 'author', 'missing')).toEqual([]);
+    // Callers may reorder or discard their results without changing the index.
+    worksForPoet(collected, 'author').reverse();
+    textsForWork(collected, 'author', 'antologier').pop();
+    expect(worksForPoet(collected, 'author')).toEqual(authorWorks);
+    expect(textsForWork(collected, 'author', 'antologier')).toEqual(authorTexts);
+  });
+
   it('arver forfatter fra den nærmeste sektion', () => {
     const doc = new DOMParser().parseFromString(
       `<kalliopework author="antologierdk">
@@ -96,6 +130,27 @@ describe('antologiplaceringer', () => {
     expect(toc[0].title[0][0]).toBe('Indledning');
   });
 
+  it('medtager en utitlet rolleliste med kun linktitle', () => {
+    const doc = new DOMParser().parseFromString(
+      `<kalliopework author="blicher"><workbody>
+        <text id="rolelist" skip-index="true">
+          <head><linktitle>Personer</linktitle></head>
+          <body><prose>Sigurd Lejrekonge.</prose></body>
+        </text>
+      </workbody></kalliopework>`,
+      'text/xml'
+    );
+
+    const toc = build_section_toc(
+      getChildByTagName(doc.documentElement, 'workbody'),
+      'blicher'
+    );
+
+    expect(toc).toHaveLength(1);
+    expect(toc[0].id).toBe('rolelist');
+    expect(toc[0].title[0][0]).toBe('Personer');
+  });
+
   it('genkender en anden tekstforfatter og danner udgivelses-id', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);
@@ -148,6 +203,8 @@ describe('antologiplaceringer', () => {
       ]),
     };
 
+    buildCollectionIndexes(collected);
+    expect(worksForPoet(collected, 'arnesen-kall')).toEqual([]);
     buildVirtualAnthologyWorks(collected);
 
     const work = collected.works.get('arnesen-kall/antologier');

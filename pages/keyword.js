@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -7,6 +8,7 @@ import * as Links from '../components/links.js';
 import { kalliopeMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import SidebarPictures from '../components/sidebarpictures.js';
+import SidebarMiniHeading from '../components/sidebarminiheading.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import Stack from '../components/stack.js';
 import Source from '../components/source.js';
@@ -43,6 +45,55 @@ const KeywordSources = ({ sources, lang }) => {
   );
 };
 
+const KeywordTextCount = ({ count, keyword, lang }) => {
+  if (count === 0) {
+    return null;
+  }
+  const countText = _(
+    count === 1 ? '{count} dansk digt' : '{count} danske digte',
+    lang,
+    { count }
+  );
+  return (
+    <div className="keyword-text-count">
+      {_('Kalliope indeholder', lang)}{' '}
+      <Link href={Links.searchURL(lang, '', 'dk', null, [keyword.id])}>
+        {countText}
+      </Link>{' '}
+      {_('med nøgleordet', lang)} »{keyword.title}«.
+      <style jsx>{`
+        .keyword-text-count {
+          margin-bottom: 20px;
+        }
+      `}</style>
+    </div>
+  );
+};
+
+const RelatedKeywords = ({ related, lang }) => {
+  if (related.length === 0) {
+    return null;
+  }
+  return (
+    <section>
+      <SidebarMiniHeading>
+        {_('Relaterede nøgleord', lang)}
+      </SidebarMiniHeading>
+      {related.map(keyword => {
+        const url =
+          keyword.redirectURL != null
+            ? keyword.redirectURL.replace('${lang}', lang)
+            : Links.keywordURL(lang, keyword.id);
+        return (
+          <div key={keyword.id}>
+            <Link href={url}>{keyword.title}</Link>
+          </div>
+        );
+      })}
+    </section>
+  );
+};
+
 const KeywordPage = (props) => {
   const { lang, keyword, error } = props;
 
@@ -56,9 +107,21 @@ const KeywordPage = (props) => {
     <SidebarPictures pictures={keyword.pictures} lang={lang} />
   );
 
+  const danishTextCount = keyword.danish_text_count ?? 0;
+  const related = keyword.related ?? [];
+
   const sidebar =
-    keyword.has_footnotes || keyword.pictures.length > 0 ? (
+    danishTextCount > 0 ||
+    related.length > 0 ||
+    keyword.has_footnotes ||
+    keyword.pictures.length > 0 ? (
       <Stack spacing="20px">
+        <KeywordTextCount
+          count={danishTextCount}
+          keyword={keyword}
+          lang={lang}
+        />
+        <RelatedKeywords related={related} lang={lang} />
         {keyword.has_footnotes ? <FootnoteList /> : null}
         {keyword.pictures.length > 0 ? renderedPictures : null}
       </Stack>

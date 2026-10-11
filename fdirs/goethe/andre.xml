@@ -9,12 +9,12 @@
 <head>
   <title>Wandrers Nachtlied I</title>
   <firstline>Der du von dem Himmel bist</firstline>
-  <notes>
-    <note>Skrevet 1776 og efterfulgtes af <xref poem="goethe2002103001"/> i 1780.</note>
-  </notes>
   <dates>
     <written>1776-02-12</written>
   </dates>
+  <notes>
+    <note>Skrevet 1776 og efterfulgtes af <xref poem="goethe2002103001"/> i 1780.</note>
+  </notes>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -35,13 +35,13 @@ Komm, ach, komm in meine Brust!
 <head>
   <title>Wandrers Nachtlied II</title>
   <firstline>Über allen Gipfeln</firstline>
+  <dates>
+    <written>1780-09-06</written>
+  </dates>
   <notes>
     <note>Skrevet 1780 som efterfølger til <xref poem="goethe2019011801"/> fra 1870.</note>
     <note>Først i 1815 blev digtene udgivet sammen, hvor dette digt fik titlen »Ein Gleiches« (da.: ligeledes).</note>
   </notes>
-  <dates>
-    <written>1780-09-06</written>
-  </dates>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -61,8 +61,6 @@ Ruhest du auch.
 <text id="goethe2000010801">
 <head>
   <title>Der Fischer</title>
-  <toctitle>Der Fischer</toctitle>
-  <indextitle>Der Fischer</indextitle>
   <firstline>Das Wasser rauscht', das Wasser schwoll</firstline>
   <notes>
     <note>1778</note>
@@ -113,8 +111,6 @@ und ward nicht mehr gesehn.
 <text id="goethe2000010802">
 <head>
   <title>Osterspaziergang</title>
-  <toctitle>Osterspaziergang</toctitle>
-  <indextitle>Osterspaziergang</indextitle>
   <firstline>Vom Eise befreit sind Strom und Bäche</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -165,8 +161,6 @@ Hier bin ich Mensch, hier darf ich's sein."
 <text id="goethe2000010803">
 <head>
   <title>April 1814</title>
-  <toctitle>April 1814</toctitle>
-  <indextitle>April 1814</indextitle>
   <firstline>Wir hören's oft und glauben's wohl am Ende</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -394,8 +388,6 @@ Sehr viel die Pflicht, unendlich mehr die Liebe!
 <text id="goethe2000010804">
 <head>
   <title>Der Zauberlehrling</title>
-  <toctitle>Der Zauberlehrling</toctitle>
-  <indextitle>Der Zauberlehrling</indextitle>
   <firstline>Hat der alte Hexenmeister</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -519,8 +511,6 @@ Werd ich nun nicht los.
 <text id="goethe2000010805">
 <head>
   <title>Erlkönig</title>
-  <toctitle>Erlkönig</toctitle>
-  <indextitle>Erlkönig</indextitle>
   <firstline>Wer reitet so spät durch Nacht und Wind?</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -572,8 +562,6 @@ in seinen Armen das Kind war tot.
 <text id="goethe2000010806">
 <head>
   <title>Vermächtnis</title>
-  <toctitle>Vermächtnis</toctitle>
-  <indextitle>Vermächtnis</indextitle>
   <firstline>Kein Wesen kann zu Nichts zerfallen!</firstline>
   <quality>korrektur1</quality>
   <!-- (eingesandt von Konrad Wolfram, K.Wolfram@t-online.de) -->
@@ -654,8 +642,6 @@ Und die Zukunft Gott überlassen.
 <text id="goethe2000010808">
 <head>
   <title>Prometheus</title>
-  <toctitle>Prometheus</toctitle>
-  <indextitle>Prometheus</indextitle>
   <firstline>Bedecke deinen Himmel, Zeus</firstline>
   <quality>korrektur1</quality>
   <!-- (eingesandt von Martin Schuhmann, mschuhmann@hotmail.com) -->
@@ -725,8 +711,6 @@ Wie ich!
 <text id="goethe2000010809">
 <head>
   <title>Lied des Lynkeus</title>
-  <toctitle>Lied des Lynkeus</toctitle>
-  <indextitle>Lied des Lynkeus</indextitle>
   <firstline>Zum Sehen geboren</firstline>
   <notes>
     <note>Aus Faust, II. Teil</note>
@@ -759,8 +743,6 @@ Es war doch so schön!
 <text id="goethe2000082801">
 <head>
   <title>Nähe des Geliebten</title>
-  <toctitle>Nähe des Geliebten</toctitle>
-  <indextitle>Nähe des Geliebten</indextitle>
   <firstline>Ich denke dein, wenn mir der Sonne Schimmer</firstline>
   <source>Sämtliche Werke, Hamburger Ausgabe.</source>
   <quality>korrektur1,korrektur2,kilde</quality>
@@ -793,8 +775,6 @@ O, wärst du da!
 <text id="goethe2000082802">
 <head>
   <title>Lebendiges Andenken</title>
-  <toctitle>Lebendiges Andenken</toctitle>
-  <indextitle>Lebendiges Andenken</indextitle>
   <firstline>Der Liebsten Band und Schleife rauben</firstline>
   <quality>korrektur1</quality>
   <!-- (eingesandt von Karin Nachtigal: karin.nachtigal@sap-ag.de) -->
@@ -839,8 +819,6 @@ Erinnre mich an Glück und Lust!
 <text id="goethe2000082803">
 <head>
   <title>An die Entfernte</title>
-  <toctitle>An die Entfernte</toctitle>
-  <indextitle>An die Entfernte</indextitle>
   <firstline>So hab ich wirklich dich verloren?</firstline>
   <quality>korrektur1</quality>
   <!-- eingesandt von Michael Sorger: sorger@rmc.de -->
@@ -868,8 +846,6 @@ O komm, Geliebte, mir zurück!
 <text id="goethe2000082804">
 <head>
   <title>Der Müllerin Verrat</title>
-  <toctitle>Der Müllerin Verrat</toctitle>
-  <indextitle>Der Müllerin Verrat</indextitle>
   <firstline>Woher der Freund so früh und schnelle</firstline>
   <quality>korrektur1</quality>
   <!-- (eingesandt von Hans-Hermann Bartz: Kranz-Bartz@t-online.de ) -->
@@ -972,8 +948,6 @@ Zu Amors falscher Mühle kriecht.
 <text id="goethe2000082805">
 <head>
   <title>Trost in Tränen</title>
-  <toctitle>Trost in Tränen</toctitle>
-  <indextitle>Trost in Tränen</indextitle>
   <firstline>Wie kommts, daß du so traurig bist</firstline>
   <quality>korrektur1</quality>
   <!-- (eingesandt von : Nico Baumgartner, nico.baumgartner@datacomm.ch) -->
@@ -1026,8 +1000,6 @@ Solang ich weinen mag.«
 <text id="goethe2001032801">
 <head>
   <title>An die Günstigen</title>
-  <toctitle>An die Günstigen</toctitle>
-  <indextitle>An die Günstigen</indextitle>
   <firstline>Dichter lieben nicht zu schweigen</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -1053,8 +1025,6 @@ Nimmt sich gut in Liedern aus.
 <text id="goethe2002073101">
 <head>
   <title>An den Mond</title>
-  <toctitle>An den Mond</toctitle>
-  <indextitle>An den Mond</indextitle>
   <firstline>Füllest wieder Busch und Tal</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -1111,8 +1081,6 @@ Wandelt in der Nacht.
 <text id="goethe2002073102">
 <head>
   <title>Mailied</title>
-  <toctitle>Mailied</toctitle>
-  <indextitle>Mailied</indextitle>
   <firstline>Wie herrlich leuchtet</firstline>
   <quality>korrektur1</quality>
 </head>
@@ -1169,13 +1137,11 @@ Wie du mich liebst!
 <text id="goethe2003060101">
 <head>
   <title>Hoch auf dem alten Turme steht</title>
-  <toctitle>Hoch auf dem alten Turme steht</toctitle>
-  <indextitle>Hoch auf dem alten Turme steht</indextitle>
   <firstline>Hoch auf dem alten Turme steht</firstline>
-  <quality>korrektur1</quality>
   <notes>
     <note>am 18. Juli 1774 im Anblick der Burg Lahneck</note>
   </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1533,10 +1499,10 @@ Und wer steht, daß er nicht falle!
 <head>
   <title>Die Nacht</title>
   <firstline>Gern verlass ich diese Hütte</firstline>
-  <quality>korrektur1</quality>
   <notes>
     <note>Skrevet 1768, første gang trykt 1769 og senere trykt i 1789 under titlen »Die schöne Nacht«.</note>
   </notes>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -1568,8 +1534,8 @@ Gäb mein Mädchen <i>eine</i> mir.
     <line>Fragmentarisch</line>
     <line>Des Ewigen Juden erster Fetzen</line>
   </subtitle>
-  <source href="http://gutenberg.spiegel.de/buch/gedichte-9503/357">Johann Wolfgang von Goethe: <i>Gedichte</i>.</source>
   <firstline>Um Mitternacht wohl fang ich an</firstline>
+  <source href="http://gutenberg.spiegel.de/buch/gedichte-9503/357">Johann Wolfgang von Goethe: <i>Gedichte</i>.</source>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2442,9 +2408,9 @@ Die letzte muß heraus!
 <head>
   <title><num>XIII</num>Warnung</title>
   <firstline>Am Jüngsten Tag, wenn die Posaunen schallen</firstline>
-  <quality>korrektur1</quality>
   <source href="https://www.textlog.de/18578.html">Johann Wolfgang von Goethe: <i>Warnung</i>.</source>
   <keywords>sonnet</keywords>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2473,8 +2439,8 @@ So wird der Jüngste Tag zum vollen Jahre.
 <head>
   <title>Das Sonett</title>
   <firstline>Sich in erneutem Kunstgebrauch zu üben</firstline>
-  <quality>korrektur1</quality>
   <source href="https://lyrikwiki.de/mediawiki/index.php/Sonett_(Goethe)">Johann Wolfgang von Goethe: <i>Das Sonett</i>.</source>
+  <quality>korrektur1</quality>
 </head>
 <body>
 <poetry>
@@ -2535,6 +2501,7 @@ Wie mit verbundnen Augen hin.
 <head>
   <title>Jägers Abendlied</title>
   <firstline>Im Felde schleich ich still und wild</firstline>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>

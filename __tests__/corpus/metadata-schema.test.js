@@ -1,5 +1,7 @@
 import fs from 'fs';
 import { execFileSync } from 'child_process';
+import { DOMParser } from '@xmldom/xmldom';
+import { flagMap, poetFlag } from '../../common/flags.js';
 
 const infoXmlFiles = () =>
   execFileSync('git', ['ls-files', 'fdirs/*/info.xml'], { encoding: 'utf8' })
@@ -7,6 +9,50 @@ const infoXmlFiles = () =>
     .filter(filename => filename.length > 0);
 
 describe('info.xml RELAX NG schema', () => {
+  const people = () => infoXmlFiles().map(filename => {
+    const person = new DOMParser().parseFromString(
+      fs.readFileSync(filename, 'utf8'), 'text/xml'
+    ).documentElement;
+    return {
+      filename,
+      id: person.getAttribute('id'),
+      country: person.getAttribute('country'),
+      nationality: person.hasAttribute('nationality')
+        ? person.getAttribute('nationality') : null,
+    };
+  });
+
+  it('requires a non-empty nationality for every country="un" entry', () => {
+    const missing = people()
+      .filter(person => person.country === 'un' &&
+        (person.nationality == null || person.nationality.trim().length === 0))
+      .map(person => person.filename);
+
+    expect(missing).toEqual([]);
+  });
+
+  it('provides a flag emoji for nationality ?? country for every info.xml entry', () => {
+    const failures = [];
+    people().forEach(person => {
+      const countryCode = person.nationality ?? person.country;
+      try {
+        if (/^[\u{1F1E6}-\u{1F1FF}]{2}$/u.test(poetFlag(person)) === false) {
+          failures.push(`${person.filename}: ${countryCode} er ikke en flag-emoji`);
+        }
+      } catch (error) {
+        failures.push(`${person.filename}: ${error.message}`);
+      }
+    });
+
+    expect(failures).toEqual([]);
+  });
+
+  it('contains only regional indicator flag emoji in the shared flag map', () => {
+    Object.values(flagMap).forEach(flag => {
+      expect(flag).toMatch(/^[\u{1F1E6}-\u{1F1FF}]{2}$/u);
+    });
+  });
+
   it('does not contain empty works elements', () => {
     const emptyWorksElements = infoXmlFiles().filter(filename => {
       const xml = fs.readFileSync(filename, 'utf8');

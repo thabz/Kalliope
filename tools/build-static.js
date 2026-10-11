@@ -50,7 +50,6 @@ import {
   getElementByTagName,
   getElementsByTagNames,
   safeGetInnerXML,
-  safeGetInnerXMLWithout,
   getIdentifiers,
   identifierAllowlist,
   tagName,
@@ -63,11 +62,14 @@ import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
 import {
   effectiveTextTitles,
+  countHeadingFootnotes,
   extractDates,
   extractTitle,
   extractSubtitles,
   get_notes,
   get_pictures,
+  stripTitleNotes,
+  titleText,
 } from './build-static/parsing.js';
 import {
   build_person_or_keyword_refs,
@@ -104,6 +106,7 @@ import {
 } from './build-static/benchmarking.js';
 import {
   collectSourceDigitalUrl,
+  resolveSourceReference,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
 } from './build-static/source.js';
@@ -125,6 +128,7 @@ import {
 } from './build-static/timeline.js';
 import {
   ANTHOLOGY_WORK_ID,
+  buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
   publicationTextId,
@@ -137,7 +141,10 @@ import {
   sourceFilesForText,
 } from './build-static/work-cache.js';
 import { updateSqliteIndex } from './build-static/sqlite-index.js';
-import { buildCorpusDataset } from './build-static/corpus-dataset.js';
+import {
+  buildCorpusDataset,
+  buildTextRecord,
+} from './build-static/corpus-dataset.js';
 import { findUnlistedWorkFiles } from './build-static/workfiles.js';
 
 const envFlag = (name) => {
@@ -161,6 +168,7 @@ let collected = {
   timeline: new Array(),
   person_or_keyword_reference: new Map(),
   unlistedWorkFiles: [],
+  corpusTextRecords: new Map(),
 };
 
 // Ready after second pass
@@ -329,7 +337,10 @@ const handle_text = async (
   const textDates = extractDates(head);
   validateTextDates(textDates, sourcePoetId, sourceWorkId, sourceTextId);
   const firstline = extractTitle(head, 'firstline');
-  const title = extractTitle(head, 'title') ?? firstline; // {title: xxx, prefix: xxx}
+  const title =
+    extractTitle(head, 'title') ??
+    firstline ??
+    extractTitle(head, 'linktitle');
   const effectiveTitles = effectiveTextTitles({
     firstline,
     title,
@@ -341,8 +352,10 @@ const handle_text = async (
 
   const keywords = safeGetText(head, 'keywords');
 
-  let subtitles = extractSubtitles(head, 'subtitle', collected);
-  let suptitles = extractSubtitles(head, 'suptitle', collected);
+  const fragmentContext = { workId: sourceWorkId, textId: sourceTextId };
+  let subtitles = extractSubtitles(head, 'subtitle', collected, fragmentContext);
+  let suptitles = extractSubtitles(head, 'suptitle', collected, fragmentContext);
+  const headingFootnoteCount = countHeadingFootnotes(head);
 
   let keywordsArray = [];
   if (keywords) {
@@ -482,11 +495,10 @@ const handle_text = async (
     }
     let pages = null;
     const pagesAttr = safeGetAttr(sourceNode, 'pages');
-    let sourceBookRef = workSource == null ? null : workSource.source;
-    const sourceNodeInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
-    if (sourceNodeInner.length > 0) {
-      sourceBookRef = sourceNodeInner;
-    }
+    const sourceReference = resolveSourceReference({
+      sourceNode, inheritedSource: workSource, poets: collected.poets,
+    });
+    const sourceBookRef = sourceReference.source;
     const digitalUrl = resolveSourceDigitalUrlForText({
       sourceNode,
       sourceForText: workSource,
@@ -543,8 +555,8 @@ const handle_text = async (
       }
     }
     source = {
-      source: sourceBookRef,
-    identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
+      ...sourceReference,
+      identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
       pages: pagesAttr,
       digitalUrl,
       facsimilePageCount,
@@ -559,8 +571,8 @@ const handle_text = async (
     );
   }
   let blocks = null;
-  let has_footnotes = false;
-  let footnotes_count = 0;
+  let has_footnotes = headingFootnoteCount > 0;
+  let footnotes_count = headingFootnoteCount;
   let toc = null;
   if (textType === 'section') {
     // A linkable section with id
@@ -578,7 +590,8 @@ const handle_text = async (
         const rawBlock = safeGetInnerXML(block);
         footnotes_count += (rawBlock.match(/<footnote\b|<note\b/g) || [])
           .length;
-        has_footnotes |=
+        has_footnotes =
+          has_footnotes === true ||
           rawBlock.indexOf('<footnote') !== -1 ||
           rawBlock.indexOf('<note') !== -1;
         const fontSize = safeGetAttr(block, 'font-size');
@@ -586,14 +599,18 @@ const handle_text = async (
         const options = { fontSize, maxWidth };
         return {
           type,
-          lines: htmlToXml(rawBlock, collected, type === 'poetry'),
+          lines: htmlToXml(rawBlock, collected, type === 'poetry', {
+            workId: sourceWorkId,
+            textId,
+            blockType: type,
+          }),
           options,
         };
       },
     );
   }
   mkdirp.sync(foldername);
-  const notes = get_notes(head, collected);
+  const notes = get_notes(head, collected, {}, fragmentContext);
   if (placement.systemNote != null) {
     notes.push(placement.systemNote);
   }
@@ -605,9 +622,14 @@ const handle_text = async (
     section_titles,
     text: {
       id: textId,
-      title: replaceDashes(title.title),
+      title: replaceDashes(titleText(title)),
+      ...(title.title.indexOf('<') > -1 ?
+        { title_html: htmlToXml(title.title, collected, true, {
+          ...fragmentContext, blockType: 'title',
+        }) }
+      : {}),
       title_prefix: title.prefix,
-      linktitle: replaceDashes(linktitle.title),
+      linktitle: replaceDashes(titleText(linktitle)),
       subtitles,
       suptitles,
       text_type: textType,
@@ -636,6 +658,15 @@ const handle_text = async (
     },
   };
   writeJSON(Paths.textPath(textId), text_data);
+  // Retain only the compact export record, so the dataset need not reread the
+  // complete JSON document. Unchanged texts still use the on-disk API file.
+  const textMeta = collected.texts.get(textId);
+  if (textMeta.indexable !== false) {
+    collected.corpusTextRecords.set(
+      textId,
+      buildTextRecord(collected, textMeta, text_data),
+    );
+  }
   textBuildProgress?.increment();
 };
 
@@ -685,11 +716,14 @@ const handle_work = async (work) => {
             anthologyText ? publicationTextId(textId) : textId;
           const head = getChildByTagName(part, 'head');
           const firstline = extractTitle(head, 'firstline');
-          const title = extractTitle(head, 'title') || firstline;
+          const title =
+            extractTitle(head, 'title') ??
+            firstline ??
+            extractTitle(head, 'linktitle');
           const indextitle = extractTitle(head, 'indextitle') || title;
           const toctitle = extractTitle(head, 'toctitle') || title;
           if (indextitle == null) {
-            throw `${textId} mangler førstelinje, indextitle og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler førstelinje, indextitle, title og linktitle i ${poetId}/${workId}.xml`;
           }
           validateFirstlineMarkup(
             firstline,
@@ -699,11 +733,11 @@ const handle_work = async (work) => {
           if (firstline != null && firstline.title.trim().length === 0) {
             throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
           }
-          if (indextitle.title.indexOf('>') > -1) {
+          if (stripTitleNotes(indextitle).title.indexOf('>') > -1) {
             throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
           }
           if (toctitle == null) {
-            throw `${textId} mangler toctitle, firstline og title i ${poetId}/${workId}.xml`;
+            throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
           }
           if (firstline != null) {
             // Kun digte skal indekseres
@@ -711,15 +745,14 @@ const handle_work = async (work) => {
               id: textId,
               work_id: workId,
               lang: collected.poets.get(poetId).lang,
-              title: replaceDashes(indextitle.title),
-              firstline:
-                firstline == null ? null : replaceDashes(firstline.title),
+              title: replaceDashes(titleText(indextitle)),
+              firstline: replaceDashes(titleText(firstline)),
             });
           }
           toc.push({
             type: 'text',
             id: renderedTextId,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             prefix: replaceDashes(toctitle.prefix),
           });
           if (anthologyText) {
@@ -792,7 +825,7 @@ const handle_work = async (work) => {
           }
           const linktitle =
             extractTitle(head, 'linktitle') || title || toctitle;
-          const breadcrumb = { title: linktitle.title, id: sectionId };
+          const breadcrumb = { title: titleText(linktitle), id: sectionId };
           const subtoc = await handle_section(
             getChildByTagName(part, 'content'),
             resolve_prev_next,
@@ -802,7 +835,7 @@ const handle_work = async (work) => {
             type: 'section',
             id: sectionId,
             level: level,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             content: subtoc,
           });
           if (sectionId != null) {
@@ -826,7 +859,7 @@ const handle_work = async (work) => {
           toc.push({
             type: 'text',
             id: textId,
-            title: htmlToXml(toctitle.title),
+            title: htmlToXml(stripTitleNotes(toctitle).title),
             prefix: toctitle.prefix,
           });
           await handle_text(
@@ -873,7 +906,7 @@ const handle_work = async (work) => {
             publicationTextId(sourceTextId)
           : sourceTextId;
         const head = getChildByTagName(part, 'head');
-        const title = safeGetText(head, 'title');
+        const title = titleText(extractTitle(head, 'title'));
         return { id: textId, title: title };
       });
     return (textId) => {
@@ -1207,12 +1240,12 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
-          title: replaceDashes(linkTitle.title),
-          firstline: replaceDashes(firstline == null ? null : firstline.title),
-          indexTitle: replaceDashes(indexTitle.title),
-          linkTitle: replaceDashes(linkTitle.title),
+          title: replaceDashes(titleText(linkTitle)),
+          firstline: replaceDashes(titleText(firstline)),
+          indexTitle: replaceDashes(titleText(indexTitle)),
+          linkTitle: replaceDashes(titleText(linkTitle)),
           tocTitle: replaceDashes(
-            (extractTitle(head, 'toctitle') || linkTitle).title
+            stripTitleNotes(extractTitle(head, 'toctitle') || linkTitle).title
           ),
           tocPrefix: replaceDashes(
             (extractTitle(head, 'toctitle') || linkTitle).prefix
@@ -1365,6 +1398,7 @@ const works_second_pass = async (collected) => {
       const sourceFiles = new Set([
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/source.js',
         `fdirs/${poetId}/info.xml`,
         filename,
       ]);
@@ -1388,10 +1422,10 @@ const works_second_pass = async (collected) => {
       let sources = {};
       getChildrenByTagName(head, 'source').forEach((sourceNode) => {
         let source = null;
-        const sourceInner = safeGetInnerXMLWithout(sourceNode, ['identifiers']);
-        if (sourceInner != null && sourceInner.length > 0) {
+        const sourceReference = resolveSourceReference({ sourceNode, poets: collected.poets });
+        if (sourceReference.source != null) {
           source = {
-            source: sourceInner,
+            ...sourceReference,
             identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
           };
         }
@@ -1459,6 +1493,7 @@ const build_poet_works_json = (collected) => {
       !isFileModified(
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/source.js',
         `fdirs/${poetId}/info.xml`,
         `fdirs/${poetId}/artwork.xml`,
         ...workFilenames,
@@ -1558,6 +1593,7 @@ const main = async () => {
   collected.texts = texts;
   collected.textsByPoet = textsByPoet;
   collected.dates = dates;
+  await b('buildCollectionIndexes', buildCollectionIndexes, collected);
   collected.artwork = await b('build_artwork', build_artwork, collected);
   await b(
     'build_person_or_keyword_refs',
@@ -1591,8 +1627,8 @@ const main = async () => {
   build_dict_first_pass(collected);
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
-  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('works_second_pass', works_second_pass, collected);
+  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',
@@ -1609,6 +1645,7 @@ const main = async () => {
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
   await b('build_corpus_dataset', buildCorpusDataset, collected);
+  collected.corpusTextRecords.clear();
   if (buildSqlite) {
     await b('update_sqlite_index', updateSqliteIndex, collected);
   }

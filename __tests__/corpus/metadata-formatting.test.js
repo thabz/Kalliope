@@ -19,11 +19,11 @@ const metadataFiles = () =>
 describe('metadata XML formatting', () => {
   it('formats nested person elements with two spaces', () => {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<person id="test" country="dk" lang="da" type="poet"><name><firstname>Test</firstname><lastname>Person</lastname></name></person>
+<person id="test" country="un" nationality="fi" lang="sv" type="poet"><name><firstname>Test</firstname><lastname>Person</lastname></name></person>
 `;
 
     expect(formatMetadataXml(xml)).toBe(`<?xml version="1.0" encoding="UTF-8"?>
-<person id="test" country="dk" lang="da" type="poet">
+<person id="test" country="un" nationality="fi" lang="sv" type="poet">
   <name>
     <firstname>Test</firstname>
     <lastname>Person</lastname>

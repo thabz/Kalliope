@@ -158,4 +158,32 @@ describe('sharp image helpers', () => {
     expect(fs.existsSync('facsimiles/poet/work/t/000-w100.jpg')).toBe(true);
     expect(fs.existsSync('public/generated/facsimiles')).toBe(false);
   });
+
+  it('processes recently modified source images first', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/older.jpg', 320, 180);
+    await createJpeg('public/images/poet/newer.jpg', 320, 180);
+    fs.utimesSync(
+      'public/images/poet/older.jpg',
+      new Date('2020-01-01'),
+      new Date('2020-01-01')
+    );
+    fs.utimesSync(
+      'public/images/poet/newer.jpg',
+      new Date('2021-01-01'),
+      new Date('2021-01-01')
+    );
+
+    const visited = [];
+    await buildThumbnails('public/images', null, {
+      thumbnailOutputPath: (fullFilename, width, ext) => {
+        visited.push(path.basename(fullFilename));
+        return `public/images/poet/t/${path.basename(fullFilename, '.jpg')}-w${width}.${ext}`;
+      },
+    });
+
+    expect([...new Set(visited)]).toEqual(['newer.jpg', 'older.jpg']);
+    expect(visited.slice(visited.indexOf('older.jpg'))).not.toContain('newer.jpg');
+  });
 });

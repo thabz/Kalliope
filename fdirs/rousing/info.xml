@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rousing" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hanna</firstname>
+    <lastname>Rousing</lastname>
+    <fullname>Johanne Kirstine Rousing</fullname>
+    <christened>Johanne Kirstine von Munthe af Morgenstierne</christened>
+  </name>
+  <period>
+    <born>
+      <date>1779-08-15</date>
+      <place>Lundbygaard ved Vordingborg</place>
+    </born>
+    <dead>
+      <date>1868-10</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <works>1838</works>
+</person>

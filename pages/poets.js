@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import * as Client from '../common/client.js';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -147,6 +147,35 @@ const Poets = (props) => {
   const { country, poets, periods, groupBy, error } = props;
   const lang = useContext(LangContext);
 
+  useEffect(() => {
+    if (groupBy !== 'name' || error != null) return;
+
+    const onKeyDown = (event) => {
+      if (
+        event.defaultPrevented ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.key.length !== 1 ||
+        event.target.isContentEditable ||
+        ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)
+      ) {
+        return;
+      }
+
+      const heading = document.getElementById(
+        `poets-letter-${event.key.toUpperCase()}`
+      );
+      if (heading != null) {
+        heading.scrollIntoView();
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [groupBy, error]);
+
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt land" />;
   }
@@ -186,7 +215,11 @@ const Poets = (props) => {
         html: <PoetName poet={poet} lastNameFirst includePeriod />,
       };
     });
-    sections.push({ title: group.title, items });
+    sections.push({
+      title: group.title,
+      items,
+      headingId: groupBy === 'name' ? `poets-letter-${group.title}` : undefined,
+    });
   });
 
   let renderedGroups = <SectionedList sections={sections} />;

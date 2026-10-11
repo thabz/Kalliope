@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { flagMap } from '../../common/flags.js';
 import { catalogFilename, literaryPeriods } from './literary-periods.js';
 import {
   isFileModified,
@@ -41,6 +42,16 @@ const knownPoetLanguages = new Set([
 ]);
 
 const isKnownPoetLanguage = lang => knownPoetLanguages.has(lang);
+
+export const parsePoetNationality = (id, country, nationality) => {
+  if (country === 'un' && nationality == null) {
+    throw new Error(`${id} mangler nationality ved country="un"`);
+  }
+  if (nationality != null && flagMap[nationality] == null) {
+    throw new Error(`${id} har ukendt nationalitet: ${nationality}`);
+  }
+  return nationality;
+};
 
 const create_poet_square_thumb = (poetId, square_path) => {
   const path = `public/images/${poetId}/${square_path}`;
@@ -148,6 +159,7 @@ const build_poets_first_pass = collected => {
     const doc = loadXMLDoc(infoFilename);
     const p = getChildByTagName(doc, 'person');
     const country = safeGetAttr(p, 'country');
+    const nationality = parsePoetNationality(id, country, safeGetAttr(p, 'nationality'));
     const lang = safeGetAttr(p, 'lang');
     const type = safeGetAttr(p, 'type');
     const nameE = getChildByTagName(p, 'name');
@@ -240,6 +252,7 @@ const build_poets_first_pass = collected => {
     const poet = {
       id,
       country,
+      ...(nationality == null ? {} : { nationality }),
       lang,
       type,
       square_portrait,

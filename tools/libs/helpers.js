@@ -129,17 +129,23 @@ const replaceDashes = html => {
   );
 };
 
-const splitMultilineLanguageSpans = html =>
-  html.replace(
-    /<span(\s+[^>]*\blang="[^"]+"[^>]*)>([\s\S]*?)<\/span>/g,
-    (_, attributes, content) => {
-      const openingTag = `<span${attributes}>`;
-      return `${openingTag}${content.replaceAll(
-        '\n',
-        `</span>\n${openingTag}`
-      )}</span>`;
+const balanceMultilineTags = html => {
+  const openTags = [];
+  return html.replace(/<(?:"[^"]*"|'[^']*'|[^'">])*>|\n/g, token => {
+    if (token === '\n') {
+      return openTags.map(tag => `</${tag.name}>`).reverse().join('') +
+        '\n' + openTags.map(tag => tag.opening).join('');
     }
-  );
+    const closing = /^<\/([A-Za-z][\w:-]*)\s*>$/.exec(token);
+    if (closing != null) {
+      if (openTags.at(-1)?.name === closing[1]) openTags.pop();
+    } else if (!token.endsWith('/>')) {
+      const opening = /^<([A-Za-z][\w:-]*)(?:\s|>)/.exec(token);
+      if (opening?.[1] != null) openTags.push({ name: opening[1], opening: token });
+    }
+    return token;
+  });
+};
 
 const collapseMultilineNotes = html =>
   html.replace(
@@ -148,7 +154,28 @@ const collapseMultilineNotes = html =>
       `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
   );
 
-const htmlToXml = (html, collected, isPoetry) => {
+const validateContentHtmlFragments = (lines, context = {}) => {
+  lines.forEach(([fragment], lineIndex) => {
+    try {
+      new DOMParser({
+        onError: (level, message) => {
+          if (level === 'error') throw new Error(message);
+        },
+      }).parseFromString(
+        `<content>${fragment}</content>`, 'text/xml',
+      );
+    } catch (error) {
+      const { workId = '?', textId = '?', blockType = '?' } = context;
+      throw new Error(
+        `Ugyldigt content_html-fragment: værk=${workId}, tekst=${textId}, ` +
+        `blok=${blockType}, linje=${lineIndex}: ${JSON.stringify(fragment)} (${error.message})`,
+      );
+    }
+  });
+  return lines;
+};
+
+const htmlToXml = (html, collected, isPoetry, context) => {
   if (html == null) {
     return null;
   }
@@ -157,7 +184,7 @@ const htmlToXml = (html, collected, isPoetry) => {
   html = html
     .replace(/&lt;/g, escapedLessThanPlaceholder)
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
-  const regexp = /<xref.*?(digt|poem|keyword|work|bibel|dict)=['"]([^'"]*)['"][^>]*>/;
+  const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
   if (isPoetry) {
     // Marker strofe numre
     html = html
@@ -176,32 +203,32 @@ const htmlToXml = (html, collected, isPoetry) => {
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   html = collapseMultilineNotes(html);
-  let decoded = splitMultilineLanguageSpans(
-    decodeXmlCharacterReferences(
-      replaceDashes(
-        html
-          .replace(/\n *(----*) *\n/g, (match, p1) => {
-            return `\n<hr width="${p1.length}"/>\n`;
-          })
-          .replace(/\n *(====*) *\n/g, (match, p1) => {
-            return `\n<hr width="${p1.length}" class="double"/>\n`;
-          })
-          .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
-            return prefix + '\u00a0'.repeat(2 * spaces.length);
-          })
-          .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
-            // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
-            return `<nonum>${p1}</nonum>`;
-          })
-          .replace(/^\n/, '')
-          .replace(/^ *(<right>.*)$/gm, '$1')
-          .replace(/^ *(<center>.*)$/gm, '$1')
-      )
+  let decoded = decodeXmlCharacterReferences(
+    replaceDashes(
+      html
+        .replace(/\n *(----*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}"/>\n`;
+        })
+        .replace(/\n *(====*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}" class="double"/>\n`;
+        })
+        .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
+          return prefix + '\u00a0'.repeat(2 * spaces.length);
+        })
+        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
+          // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
+          return `<nonum>${p1}</nonum>`;
+        })
+        .replace(/^\n/, '')
+        .replace(/^ *(<right>.*)$/gm, '$1')
+        .replace(/^ *(<center>.*)$/gm, '$1')
     )
   );
-  decoded = decoded
-    .replaceAll(escapedLessThanPlaceholder, '&lt;')
-    .replaceAll(escapedGreaterThanPlaceholder, '&gt;');
+  decoded = balanceMultilineTags(
+    decoded
+      .replaceAll(escapedLessThanPlaceholder, '&lt;')
+      .replaceAll(escapedGreaterThanPlaceholder, '&gt;')
+  );
 
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
@@ -234,7 +261,7 @@ const htmlToXml = (html, collected, isPoetry) => {
         } else {
           return `<a dict="${id}">${meta.title}</a>`;
         }
-      } else if (type === 'bibel') {
+      } else if (type === 'bible') {
         const originalAttribute = `${id}`;
         id = id.replace(/^bibel/, '');
         let verses = id.match(/,(.*)$/);
@@ -242,10 +269,11 @@ const htmlToXml = (html, collected, isPoetry) => {
           id = id.replace(',' + verses[1], '');
           verses = verses[1];
         }
-        let chapter = id.match(/(\d*)$/);
+        let chapter = id.match(/(\d+)$/);
         if (chapter != null) {
-          id = id.replace(chapter[1], '');
-          chapter = chapter[1].replace(/^0*/, '');
+          const chapterDigits = chapter[1];
+          id = id.slice(0, -chapterDigits.length);
+          chapter = chapterDigits.replace(/^0*/, '');
         } else {
           const error = `xref dead bible link: ${originalAttribute}`;
           throw error;
@@ -314,6 +342,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     if (l.indexOf('<hr ') > -1) {
       options.hr = true;
     }
+    l = l.replace(/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);)/gi, '&amp;');
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
       options.html = true;
@@ -325,7 +354,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     }
   });
 
-  return lines;
+  return validateContentHtmlFragments(lines, context);
 };
 
 const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
@@ -376,6 +405,7 @@ const buildThumbnails = async (
   options = {}
 ) => {
   const tasks = [];
+  const sourceFiles = [];
   const progress = createProgressReporter(
     `Genererede thumbnails i ${topFolder}`,
     100
@@ -406,40 +436,49 @@ const buildThumbnails = async (
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        const hasModificationCache = isFileModifiedMethod != null;
-        const sourceModified =
-          hasModificationCache && isFileModifiedMethod(fullFilename);
-        const sourceMtime = fileModifiedTime(fullFilename);
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            const outputMtime = fileModifiedTime(outputfile);
-            if (
-              outputMtime == null ||
-              (hasModificationCache
-                ? sourceModified
-                : sourceMtime > outputMtime)
-            ) {
-              tasks.push(
-                limit(async () => {
-                  const result = await resizeImage(
-                    fullFilename,
-                    outputfile,
-                    width
-                  );
-                  progress.increment();
-                  return result;
-                })
-              );
-            }
-          });
-        });
+        sourceFiles.push({ fullFilename, mtimeMs: stats.mtimeMs });
       }
     });
   };
 
   handleDirRecursive(topFolder);
+  sourceFiles.sort((left, right) => {
+    const mtimeDifference = right.mtimeMs - left.mtimeMs;
+    return mtimeDifference !== 0
+      ? mtimeDifference
+      : left.fullFilename.localeCompare(right.fullFilename);
+  });
+
+  sourceFiles.forEach(({ fullFilename, mtimeMs: sourceMtime }) => {
+    const hasModificationCache = isFileModifiedMethod != null;
+    const sourceModified =
+      hasModificationCache && isFileModifiedMethod(fullFilename);
+    CommonData.availableImageFormats.forEach(ext => {
+      CommonData.availableImageWidths.forEach(width => {
+        const outputfile = thumbnailOutputPath(fullFilename, width, ext);
+        safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
+        const outputMtime = fileModifiedTime(outputfile);
+        if (
+          outputMtime == null ||
+          (hasModificationCache
+            ? sourceModified
+            : sourceMtime > outputMtime)
+        ) {
+          tasks.push(
+            limit(async () => {
+              const result = await resizeImage(
+                fullFilename,
+                outputfile,
+                width
+              );
+              progress.increment();
+              return result;
+            })
+          );
+        }
+      });
+    });
+  });
 
   await Promise.all(tasks);
   progress.finish();
@@ -456,6 +495,7 @@ export {
   writeJSON,
   writeText,
   htmlToXml,
+  validateContentHtmlFragments,
   replaceDashes,
   buildThumbnails,
   resizeImage,

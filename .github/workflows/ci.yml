@@ -74,11 +74,26 @@ jobs:
         run: ruby test/txt2xml_test.rb
 
   build-app:
-    name: Build app and check pages
+    name: Build app, test search, and check pages
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [20.x]
+    services:
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.17.20
+        env:
+          discovery.type: single-node
+          xpack.security.enabled: "false"
+          xpack.ml.enabled: "false"
+          ES_JAVA_OPTS: -Xms512m -Xmx512m
+        ports:
+          - 9200:9200
+        options: >-
+          --health-cmd "curl -fsS 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=1s'"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 24
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -100,6 +115,12 @@ jobs:
           KALLIOPE_SKIP_IMAGE_THUMBNAILS: true
           KALLIOPE_SHARP_CACHE_MEMORY: 64
           KALLIOPE_SHARP_CONCURRENCY: 1
+
+      - name: Test search against Elasticsearch
+        run: npm run test-search-integration
+        env:
+          CI: true
+          ELASTICSEARCH_URL: http://localhost:9200
 
       - name: Build container image
         run: docker build --target runtime -t kalliope-ci-app .

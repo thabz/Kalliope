@@ -6,7 +6,7 @@
   <year>1837</year>
   <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1837-p1.jpg">Titelbladet til <i>Digte</i> (1837) lyder „Digte af O. Chr. Drejer. Udgivne som Manuscript for Venner. Kjøbenhavn. Trykt hos Bianco Luno &amp; Schneider. 1837.“.</picture>
+    <picture type="titlepage" src="1837-p1.jpg"><transcription>Digte af O. Chr. Drejer. Udgivne som Manuscript for Venner. Kjøbenhavn. Trykt hos Bianco Luno &amp; Schneider. 1837.</transcription></picture>
   </pictures>
   <source facsimile="115308052107_color" facsimile-pages-num="91" facsimile-pages-offset="7">O. Chr. Drejer: <i>Digte</i>, udgivne som Manuscript for Venner, trykt hos Bianco Luno &amp; Schneider, Kjøbenhavn, 1837.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1346,7 +1346,7 @@ Faaer I Skaansel vise!
 </body>
 </text>
 
-<text id="drejer2026083122">
+<text id="drejer2026083122" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til Jomfru H. J.</title>
   <subtitle>
@@ -1371,7 +1371,7 @@ Dens Vellugt — hvis, Hulde! blot ei De forsmaaer den!
 </body>
 </text>
 
-<text id="drejer2026083123">
+<text id="drejer2026083123" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til Julie L.</title>
   <subtitle>
@@ -1452,7 +1452,7 @@ Glæder hisset sig hans Aand!
 </body>
 </text>
 
-<text id="drejer2026083124">
+<text id="drejer2026083124" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til Mad. L.</title>
   <subtitle>

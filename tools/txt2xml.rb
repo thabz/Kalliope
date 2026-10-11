@@ -68,6 +68,7 @@ end
 @facsimile_page = nil
 @lang = nil
 @text_author = nil
+@ignore_tests = nil
 
 def printHeader()
     if @header_printed
@@ -143,7 +144,7 @@ def printPoem()
   if @initialtype == 'poetry' and (@firstline.nil? || @firstline.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler førstelinje"
   end
-  poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
+  poemid = @poemid || "#{@text_author || @poetid}#{@date}#{'%02d' % @poemcount}"
   variant = ''
   if @variant
       variant = " variant=\"#{@variant}\""
@@ -155,8 +156,12 @@ def printPoem()
   if @text_author
       author = " author=\"#{@text_author}\""
   end
+  ignore_tests = ''
+  if @ignore_tests
+      ignore_tests = " ignore-tests=\"#{@ignore_tests}\""
+  end
 
-  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}>"
+  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}#{ignore_tests}>"
   puts "<head>"
   if @title
       puts "  <title>#{@title}</title>"
@@ -182,6 +187,19 @@ def printPoem()
   if not (@firstline.nil? || @firstline.strip.length == 0)
     puts "  <firstline>#{@firstline}</firstline>"
   end
+  if @written or @performed or @event
+    puts "  <dates>"
+    if @written
+      puts "    <written>#{@written}</written>"
+    end
+    if @performed
+      puts "    <performed>#{@performed}</performed>"
+    end
+    if @event
+      puts "    <event>#{@event}</event>"
+    end
+    puts "  </dates>"
+  end
   if @notes.length > 0 or @credits
     puts "  <notes>"
     @notes.each { |noteline|
@@ -201,19 +219,6 @@ def printPoem()
       else
         puts "  <source pages=\"#{pages}\"/>"
       end
-  end
-  if @written or @performed or @event
-    puts "  <dates>"
-    if @written
-      puts "    <written>#{@written}</written>"
-    end
-    if @performed
-      puts "    <performed>#{@performed}</performed>"
-    end
-    if @event
-      puts "    <event>#{@event}</event>"
-    end
-    puts "  </dates>"
   end
   if @todos.length > 0
     @todos.each { |todo|
@@ -251,6 +256,7 @@ def printPoem()
   @variant = nil
   @lang = nil
   @text_author = nil
+  @ignore_tests = nil
   @todos = []
   @credits = nil
   @facsimile_page = nil
@@ -317,6 +323,13 @@ File.readlines(ARGV[0]).each do |line|
     else
       printPendingSection()
     end
+  end
+  if line.start_with?('IGNORER')
+    if @state == 'INBODY'
+      printPoem()
+    end
+    @state = 'NONE'
+    next
   end
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
     ensureSectionsClosed()
@@ -488,6 +501,8 @@ File.readlines(ARGV[0]).each do |line|
       @variant = line[8..-1].strip
     elsif line.start_with?("CREDITS:")
       @credits = line[8..-1].strip
+    elsif line.start_with?("IGNORE-TESTS:")
+      @ignore_tests = line[13..-1].strip
     elsif line.start_with?("TODO:")
       @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")

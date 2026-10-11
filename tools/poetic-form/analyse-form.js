@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import { analyzePoetryBlocks } from './analyse-structure.js';
 import { classifyPoeticForm, formatFormXml } from './form-analysis.js';
+import { formKeywords } from './form-keywords.js';
 import { formatWorkXml } from '../format-work-xml.js';
 import { analyzePoem, poetryStanzasFromXml } from './metre-analysis.js';
 import { analyzeRhyme } from './rhyme-analysis.js';
@@ -30,6 +31,7 @@ export const supportedForms = new Set([
   'ottava-rima',
   'rime-royal',
   'ballad-stanza',
+  'alexandrine',
   'distich',
   'quatrain',
   'blank-verse',
@@ -42,6 +44,7 @@ export const parseArgs = (args = process.argv.slice(2)) => {
     dryRun: false,
     find: null,
     form: null,
+    keywords: false,
     minConfidence: 0.8,
     onlyMissing: false,
     poet: null,
@@ -51,6 +54,7 @@ export const parseArgs = (args = process.argv.slice(2)) => {
     const arg = args[index];
     if (arg === '--debug') options.debug = true;
     else if (arg === '--dry-run') options.dryRun = true;
+    else if (arg === '--keywords') options.keywords = true;
     else if (arg === '--only-missing') options.onlyMissing = true;
     else if (['--find', '--form', '--min-confidence', '--poet', '--work'].includes(arg)) {
       const value = args[++index];
@@ -161,6 +165,7 @@ const analyzeTextXml = (textXml, language, options) => {
     ? result.analyses[0]
     : result.analyses.find(analysis => analysis.pattern === requestedForm);
   const selectedForm = requestedForm ?? selected.pattern;
+  const keywords = options.keywords === true ? formKeywords(analyses, options.minConfidence) : [];
   const report = {
     analyses,
     existingForm,
@@ -173,17 +178,28 @@ const analyzeTextXml = (textXml, language, options) => {
     status: existingForm ? 'existing-form' : analyses.length > 0 ? 'proposed' : 'below-threshold',
     textId: text.getAttribute('id') || '(uden id)',
   };
-  if (existingForm || analyses.length === 0) return { report, textXml };
+  const withKeywords = keywords.length === 0 ? textXml : (() => {
+    const keywordMatch = textXml.match(/<keywords>([^<]*)<\/keywords>/);
+    if (keywordMatch == null) {
+      return textXml.replace(/<\/head>/, `<keywords>${keywords.join(',')}</keywords>\n</head>`);
+    }
+    const existing = keywordMatch[1].split(',').map(keyword => keyword.trim()).filter(Boolean);
+    const merged = [...new Set([...existing, ...keywords])];
+    return textXml.replace(keywordMatch[0], `<keywords>${merged.join(',')}</keywords>`);
+  })();
+  if (existingForm || analyses.length === 0 || options.keywords === true) {
+    return { report, textXml: withKeywords };
+  }
   const selfClosingHead = /<head\b[^>]*\/>/;
-  if (selfClosingHead.test(textXml)) {
+  if (selfClosingHead.test(withKeywords)) {
     return {
       report,
-      textXml: textXml.replace(selfClosingHead, `<head>\n${report.formXml}\n</head>`),
+      textXml: withKeywords.replace(selfClosingHead, `<head>\n${report.formXml}\n</head>`),
     };
   }
   return {
     report,
-    textXml: textXml.replace(/<\/head>/, `${report.formXml}\n</head>`),
+    textXml: withKeywords.replace(/<\/head>/, `${report.formXml}\n</head>`),
   };
 };
 

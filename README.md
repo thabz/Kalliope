@@ -47,6 +47,10 @@ Hvis cachede build-data driller, kan hele static-buildet tvinges igennem:
 npm run build-static-force-reload
 ```
 
+Profilér et fuldt build med `make profile-build-static`. CPU-profilen
+(`.cpuprofile`) og logs (`build.log` og `image-build.log`) gemmes i en ny
+mappe under `caches/profiles/`.
+
 ## Forespørgsler i korpusdata
 
 Static-buildet opretter et versionsmærket korpusdatasæt som JSONL-gzipfiler i
@@ -67,7 +71,17 @@ kilde-XML'en skal kontrolleres.
 Kør testene før større ændringer eller pull requests:
 
 ```shell
-npm test
+make test
+```
+
+Søgeregressionstesten kræver en kørende Elasticsearch og data fra et fuldt
+static-build. Den opretter et isoleret `kalliope-ci`-indeks med et mindre udvalg
+af digtere:
+
+```shell
+make elasticsearch
+KALLIOPE_SKIP_ELASTICSEARCH=true KALLIOPE_SKIP_IMAGE_THUMBNAILS=true npm run build-static
+npm run test-search-integration
 ```
 
 ## Facsimile-generering

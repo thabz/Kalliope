@@ -7,7 +7,7 @@
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1851b-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.''</picture>
+    <picture type="titlepage" src="1851b-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
   <source facsimile="11530806249E_color" facsimile-pages-num="545" facsimile-pages-offset="282">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel II, C. A. Reitzel, Kbh., 1851.</source>
 </workhead>
@@ -379,6 +379,7 @@ Og krandser dig med Bladepragt og Drue.
   <subtitle>1835</subtitle>
   <firstline>I denne Tid jeg stemmer</firstline>
   <source pages="15-18"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -827,13 +828,13 @@ For hun er saa ung og saa yndig seer hun ud.''
   <title>Natten og Dagen</title>
   <subtitle>(To Basrelieffer af Thorvaldsen)</subtitle>
   <firstline>Den svæver gjennem Rummet</firstline>
-  <source pages="31-36"/>
   <pictures>
     <picture artwork="thorvaldsen/1815-natten" />
     <picture artwork="thorvaldsen/1815-dagen" />
   </pictures>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="31-36"/>
   <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2468,10 +2469,10 @@ Vi seile og vi roe! :,:
   <subtitle><w>Mel.</w> Og kjøre Vand og kjøre Ved</subtitle>
   <toctitle><num>III.</num>Ligevægten</toctitle>
   <firstline>Vi sidde sammen som vi kan bedst</firstline>
-  <source pages="98-101"/>
   <notes>
     <note>Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
+  <source pages="98-101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4933,7 +4934,7 @@ Den stiller Din Smerte; - den giver Enhver
   </subtitle>
   <firstline>En halv Snees Aar er snart forløben</firstline>
   <source pages="206-207"/>
-  <keywords>heibergjohanne</keywords>
+  <keywords>heibergjohanne,ottave-rime</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5742,7 +5743,6 @@ Erindrer os med Eet
 Om Tider, der er længst forbi
 Og hvad forlængst er skeet.
 
-
 <nonum><center>II.</center></nonum>
 <nonum><center><small>(December 1849.)</small></center></nonum>
 
@@ -6109,10 +6109,10 @@ Der mit imøde banker.
 <head>
   <title>Med Thorvaldsens ,,Amor med Lyren''</title>
   <firstline>Min yndige, min unge Hustru, tag</firstline>
-  <source pages="256-257"/>
   <pictures>
     <picture artwork="thorvaldsen/1836-amor-med-lyren" />
   </pictures>
+  <source pages="256-257"/>
   <keywords>thorvaldsen</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>

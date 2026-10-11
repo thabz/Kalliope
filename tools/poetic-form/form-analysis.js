@@ -332,6 +332,32 @@ export const classifyPoeticForm = ({
     metrePatterns: ['hendecasyllabic', 'iambic-pentameter'],
     minimumLines: 8,
   });
+  const alexandrineSignals = [];
+  const alexandrineMetre = confidenceFor(metre, ['iambic-hexameter']);
+  const alexandrineSyllables = confidenceFor(syllables, ['alexandrine']);
+  const alexandrine = formScore({
+    signals: alexandrineSignals,
+    structure: scoredSignal(
+      lineCount >= 4,
+      0.04,
+      `${lineCount} verse lines`,
+      'too few verse lines',
+    ),
+    rhyme: neutralSignal('rhyme is not required'),
+    metre: scoredSignal(
+      alexandrineMetre > 0,
+      0.48 * alexandrineMetre,
+      `iambic hexameter (${alexandrineMetre.toFixed(2)})`,
+      'no iambic hexameter',
+    ),
+    sample: scoredSignal(
+      alexandrineSyllables > 0,
+      0.48 * alexandrineSyllables,
+      `twelve-syllable lines (${alexandrineSyllables.toFixed(2)})`,
+      'no twelve-syllable pattern',
+    ),
+  });
+  formSignals.alexandrine = alexandrineSignals;
   const rimeRoyalConfidence = scorePatternForm({
     name: 'rime-royal',
     structureMatches: regularStanzas(stanzaLengths, 7),
@@ -436,6 +462,7 @@ export const classifyPoeticForm = ({
       { pattern: 'shakespearean-sonnet', confidence: shakespeareanConfidence },
       { pattern: 'terza-rima', confidence: terzaRimaConfidence },
       { pattern: 'ottava-rima', confidence: ottavaRimaConfidence },
+      { pattern: 'alexandrine', confidence: alexandrine },
       { pattern: 'rime-royal', confidence: rimeRoyalConfidence },
       { pattern: 'ballad-stanza', confidence: balladStanzaConfidence },
       { pattern: 'distich', confidence: distichConfidence },

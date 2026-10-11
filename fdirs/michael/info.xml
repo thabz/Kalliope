@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="michael" country="dk" lang="da" type="poet">
+  <name>
+    <lastname>Michael</lastname>
+    <fullname>Herr Michael</fullname>
+    <sortname>Michael</sortname>
+    <alternative>Mikkel</alternative>
+    <alternative>Mikkel i Odense</alternative>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-middelalderlitteratur</literary-periods>
+  <works>1836</works>
+  <identifiers>
+    <viaf>27422409</viaf>
+    <gnd>100955738</gnd>
+    <biografisk-leksikon-lex-dk>Michael</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

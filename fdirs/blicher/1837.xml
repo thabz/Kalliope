@@ -19,6 +19,9 @@
   <title>Indledning</title>
   <firstline>Sydvesten skjuler Himlen tykt med Skyer</firstline>
   <source pages="7-8"/>
+  <places>
+    <place ref="sweden" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -68,6 +71,9 @@ Smelt Taagen og belys det dunkle Fjerne!
   <title>Rommeliklint</title>
   <firstline>Jeg drømmer tidt endnu, jeg er i Sverrig</firstline>
   <source pages="9-11"/>
+  <places>
+    <place ref="romeleklint" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -126,6 +132,9 @@ Imod mig truende mod Himlen op.
   <title>Kullen</title>
   <firstline>Der stander et Fjeld af hiin haarde Granit</firstline>
   <source pages="12-14"/>
+  <places>
+    <place ref="kullaberg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -201,6 +210,10 @@ Og tænker paa den, det har skrevet.
     <note>* Et Herresæde midt i Skaane, tilhørende den historiske Familie <w>de la Gardie</w>.</note>
   </notes>
   <source pages="15-17"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="loeberoed-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -268,6 +281,9 @@ Eet af <w>Morganas</w> Slotte.
   <title>Helsingborg og Svarteraae</title>
   <firstline>Helsingborg og Svarteraae?</firstline>
   <source pages="18-21"/>
+  <places>
+    <place ref="helsingborg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -364,6 +380,9 @@ Sjunger: <w>Nu har Lyset sejret;</w>
   Hultmark: Kungl. Akademiens för de fria konsterna utställningar
   1794–1887. -->
   <!-- TODO: Tilføj https://commons.wikimedia.org/wiki/File:Johan_Rohde,_Fra_egnen_ved_Karup_Å,_1889,_RKMm0170,_Ribe_Kunstmuseum.jpg -->
+  <places>
+    <place ref="ostra-karup" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -432,6 +451,9 @@ For min Erindring; tidt jeg begge mindes.
     <note>* I Elfsborg Lehn ikke langt fra Landeveien mellem Stockholm og Götheborg. Der holdt <w>Gustav Vasa</w> Bryllup med sin anden Hustru <w>Margarethe Leionhufvud</w>.</note>
   </notes>
   <source pages="25-27"/>
+  <places>
+    <place ref="grafsnas-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -489,6 +511,9 @@ Om den Rædselstid, som forestod:
     <note>* Sverrigs højeste Bjerg (med Undtagelse af Nordlandenes) paa en Odde i Venneren, hvorfra Man overseer næsten hele denne store Indsøe; en viid Strækning af Vestergothland, ja endog i klart Vejr øiner <w>Omberg</w> paa Østsiden af Vetteren — et Panorama, hvortil næppe findes Lige. Bjerget bærer paa sin uhyre Krop flere Byer og Herregaarde, og er ombeltet af skjønne Kirsebærskove.</note>
   </notes>
   <source pages="28-30"/>
+  <places>
+    <place ref="kinnekulle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -546,6 +571,9 @@ Da var' Skjaldens Syner meer end Drømme.
   <title>Stockholm</title>
   <firstline>Et Panorama løber rundt</firstline>
   <source pages="31-33"/>
+  <places>
+    <place ref="stockholm" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -615,6 +643,9 @@ Og med Sydvesten bort et Suk
   </notes>
   <source pages="34-35"/>
   <keywords>bellman</keywords>
+  <places>
+    <place ref="djurgarden" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -660,6 +691,9 @@ En Kriger? — ,,Ingenlunde!'' — En Statsmand? — ,,Heller ej!''
   <title>Haga</title>
   <firstline>Haga ligger nydeligt i Skoven</firstline>
   <source pages="36-38"/>
+  <places>
+    <place ref="haga-park" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -728,6 +762,9 @@ Spiret er fra <w>Vasaæten</w> veget.
   <source pages="39-40"/>
   <!-- TODO: Find Tegnérs digt. -->
   <keywords>tegner</keywords>
+  <places>
+    <place ref="ulriksdal-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -782,6 +819,9 @@ Sjælens Frihed — og udøste
   <title>Sigtuna</title>
   <firstline>Nordop til Upsala gik min Fart</firstline>
   <source pages="41-43"/>
+  <places>
+    <place ref="sigtuna" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -837,11 +877,14 @@ Til Liv opvaagner hver en Vaar paa ny.
 <head>
   <title>Upsala</title>
   <firstline>Jeg skred henind ad Fyrisaa</firstline>
-  <source pages="44-48"/>
-  <keywords>atterbom</keywords>
   <notes>
     <note>Fodnoterne henviser til Per Daniel Amadeus Atterboms <a work="atterbom/1836"><i>Blommor</i> (1836)</a>.</note>
   </notes>
+  <source pages="44-48"/>
+  <keywords>atterbom</keywords>
+  <places>
+    <place ref="uppsala" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -950,6 +993,9 @@ Fra Jord til Himmel Aanden sig opsvinger.
     <note>* Eet af de største og skjønneste Herresæder i Sverrig; ligger ved Dampskibsvejen mellem Sigtuna og Upsala, og tilhører Familien Greverne Brahe.</note>
   </notes>
   <source pages="49-52"/>
+  <places>
+    <place ref="skokloster-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1028,6 +1074,9 @@ Ligesaa hurtigt dem atter for
     <note>* En Landsbykirke, fordum et Kloster.</note>
   </notes>
   <source pages="53-55"/>
+  <places>
+    <place ref="vreta-abbey" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1082,6 +1131,9 @@ See Enden paa al jordisk Magt og Ære.
   <title>Vetteren</title>
   <firstline>Dybt udi Østen klarer det til Dag</firstline>
   <source pages="56-58"/>
+  <places>
+    <place ref="vattern" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1162,6 +1214,9 @@ Naar Sol bag <w>Vennerhavet</w> synker rød,
     <note>* En meget stor gothisk Borg paa en Klippe ved <w>Kaallandsøe</w> i Venneren; navnkundig i den svenske Historie ved sine mange mægtige Besiddere, og tvende af Disses — en <w>Brahes</w> og en <w>Hogenschild Bjelkes</w> — tragiske Endeligt. Det er — skjøndt endnu heelt og holdent — aldeles ubeboet. — Dampskibet gaaer tæt derforbi.</note>
   </notes>
   <source pages="59-61"/>
+  <places>
+    <place ref="lacko-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1212,6 +1267,9 @@ Det skjønne <w>Halleberg</w><note>* Ved Sydvestenden af Venneren i Nærheden af
   <title>Trolhættan</title>
   <firstline>Her kjender Du, o Digter! først, hvor fattigt</firstline>
   <source pages="62"/>
+  <places>
+    <place ref="trollhattan" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1245,6 +1303,9 @@ Som Øjet trætter vel, men aldrig mætter.
   <title>Afreise</title>
   <firstline>Ved Foden og paa Skrænterne af Fjelde</firstline>
   <source pages="63-64"/>
+  <places>
+    <place ref="gothenburg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

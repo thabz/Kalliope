@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bie" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jacob Christian</firstname>
+    <lastname>Bie</lastname>
+    <pseudonym>Philopatreias</pseudonym>
+  </name>
+  <period>
+    <!-- Livsdata: Lorentz Bie, Stamtavle over den norsk-danske Slægt Bie (1947), s. 21: https://slaegtsbibliotek.dk/927478.pdf#page=20 -->
+    <born>
+      <date>1738</date>
+      <place>Trondhjem</place>
+    </born>
+    <baptized>
+      <date>1738-07-11</date>
+      <place>Trondhjem</place>
+    </baptized>
+    <dead>
+      <date>1798</date>
+      <place>Frederiksnagore, Indien</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <works>1765,1766</works>
+  <identifiers>
+    <wikidata>Q3434148</wikidata>
+    <wikipedia-da>Jacob Christian Bie</wikipedia-da>
+    <gnd>143626442</gnd>
+    <biografisk-leksikon-lex-dk>Jacob_Christian_Bie</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>BJacobChristianBie</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

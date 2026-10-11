@@ -101,11 +101,23 @@ export const museumsURL = (lang = 'da', groupBy = null) => {
     : `/${lang}/museums/${groupBy}`;
 };
 
-export const searchURL = (lang, query, country, poetId = null) => {
-  const escapedQuery = encodeURIComponent(query).replace(/%20/g, '+');
-  if (poetId != null) {
-    return `/${lang}/search/${country}/${poetId}?query=${escapedQuery}`;
-  } else {
-    return `/${lang}/search/${country}?query=${escapedQuery}`;
+export const searchURL = (
+  lang,
+  query = '',
+  country = 'dk',
+  poetId = null,
+  keywordIds = []
+) => {
+  const path =
+    poetId != null
+      ? `/${lang}/search/${country}/${poetId}`
+      : `/${lang}/search/${country}`;
+  const params = [];
+  if (query.length > 0) {
+    params.push(`query=${encodeURIComponent(query).replace(/%20/g, '+')}`);
   }
+  if (keywordIds.length > 0) {
+    params.push(`keyword=${encodeURIComponent(keywordIds.join(','))}`);
+  }
+  return params.length > 0 ? `${path}?${params.join('&')}` : path;
 };

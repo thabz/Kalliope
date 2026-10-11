@@ -360,13 +360,13 @@ Stormen har lagt sig til Ro, Bølgerne bæve dog end.
 <text id="hauch2019010403">
 <head>
   <title>En Phantasie,</title>
-  <toctitle>En Phantasie</toctitle>
-  <indextitle>En Phantasie</indextitle>
-  <linktitle>En Phantasie</linktitle>
   <subtitle>
     <line>digtet efter Læsningen af Novalis.</line>
     <line>(Uddraget af Athene, 1815.)</line>
   </subtitle>
+  <toctitle>En Phantasie</toctitle>
+  <indextitle>En Phantasie</indextitle>
+  <linktitle>En Phantasie</linktitle>
   <firstline>Hvorfor hvælver sig Himmelblaaet</firstline>
   <!-- TODO: Er Hauch inspireret af en bestemt tekst af Novalis, som vi kan henvise til? -->
   <source pages="12-18"/>
@@ -699,6 +699,7 @@ Og Barndomsvenner i Stavnen staae,
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2026090301"/>.</note>
   </notes>
   <source pages="24-26"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -770,8 +771,6 @@ Jeg vandt den største Skat.
 <head>
   <title>Aftensang</title>
   <subtitle>(Efter det Tydske.)</subtitle>
-  <toctitle>Aftensang</toctitle>
-  <indextitle>Aftensang</indextitle>
   <firstline>Intet Blad sig i Skoven rører</firstline>
   <notes>
     <note>Gendigtning af Goethes <xref type="translation" poem="goethe2002103001"/>.</note>
@@ -898,6 +897,7 @@ Og kun dens Indgang kan jeg vise dig.
   <subtitle>(Af den polske Familie.)</subtitle>
   <firstline>Jeg eied intet Meer paa Jorden</firstline>
   <source pages="32-33"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1102,10 +1102,10 @@ Hvis ikke vi levende fange den kan.
   <title>Birken</title>
   <subtitle>(Af den polske Familie.)</subtitle>
   <firstline>Hvi staaer du saa eensom, o Birketræ!</firstline>
-  <source pages="39"/>
   <notes>
     <note type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
+  <source pages="39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1180,8 +1180,6 @@ Forvandled hendes Blik.''
 <head>
   <title>Længsel</title>
   <subtitle>(Af Athene 1816.)</subtitle>
-  <toctitle>Længsel</toctitle>
-  <indextitle>Længsel</indextitle>
   <firstline>Om Dagen jeg søger dig fiern og nær</firstline>
   <source pages="42-43"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1229,8 +1227,6 @@ For dit Kys bortflye.
 <text id="hauch2002092903">
 <head>
   <title>Sang af Hamadryaden</title>
-  <toctitle>Sang af Hamadryaden</toctitle>
-  <indextitle>Sang af Hamadryaden</indextitle>
   <firstline>Naar Sneens Lilier dække Marken ene</firstline>
   <source pages="44-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1468,6 +1464,7 @@ For hist at tilstaae, hvad jeg dulgte her.
   <title>Dyvekes Sang i Vilhelm Zabern</title>
   <firstline>Naar Skytten udsender den hvasse Piil</firstline>
   <source pages="55"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1728,8 +1725,8 @@ Og nøgen Sandhed være skal dens Smykke.
   <subtitle>(Med den tydske Oversættelse af Maastrichts Belejring.)</subtitle>
   <firstline>Heel modig paa min Vandring kom jeg til dig engang</firstline>
   <source pages="65-66"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>tieck</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1775,8 +1772,8 @@ Selv naar de skiule Sangeren i udenlandsk Dragt.<note>Dragt.]Dragt</note>
   <subtitle>(Afsungen paa Rysøe.)</subtitle>
   <firstline>Hvi funkler nu saa stærkt hver Ynglings Øie?</firstline>
   <source pages="67-68"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
   <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2345,6 +2342,7 @@ Da har Smerten tabt sin Braad.
   <title>Lovsang</title>
   <firstline>O, Herre! jeg vil gaae, hvorhen du kalder</firstline>
   <source pages="89-90"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2406,6 +2404,7 @@ Jeg skuffed ei min Gud.
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060513"/>.</note>
   </notes>
   <source pages="91-93"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2482,6 +2481,7 @@ Og dog hos mig du dvæle skal.
     <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060512"/>.</note>
   </notes>
   <source pages="94-95"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4405,6 +4405,7 @@ Mens Klokkerne klang over Dale.
   <subtitle>(Efter et græsk Sagn.)</subtitle>
   <firstline>Festlig bredte sig Faklernes Glands fra kneisende Høisal</firstline>
   <source pages="171-182"/>
+  <keywords>heksameter</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -11,7 +11,7 @@
   </notes>
   <!-- I Poesiens Oprindelse og i Katten bruges både schwabacher og  kursivering til fremhævelse, bibeholdt ved at bruge både fed og kursiv i vores tekst, resten af CF bruger kun schwabacher til fremhævelse, hvilket i vores tekst er kursiveret -->
   <pictures>
-    <picture type="titlepage" src="1785-p1.jpg">Titelbladet til <i>Comiske Fortællinger</i> (1785).<br/>Comiske / Fortællinger / af / Jens Baggesen. / --- Ubi qvid datur otî / Illudo chartis; hoc est mediocribus illis / Ex vitiis unum. - / Horat. / Kiøbenhavn, 1785. / Trykt hos August Friderich Stein.</picture>
+    <picture type="titlepage" src="1785-p1.jpg"><transcription>Comiske / Fortællinger / af / Jens Baggesen. / --- Ubi qvid datur otî / Illudo chartis; hoc est mediocribus illis / Ex vitiis unum. - / Horat. / Kiøbenhavn, 1785. / Trykt hos August Friderich Stein.</transcription></picture>
   </pictures>
   <source facsimile="115308040544_color" facsimile-pages-num="228" facsimile-pages-offset="28">Jens Baggesen: <i>Comiske Fortællinger</i>, Kbh., 1785.</source>
 </workhead>
@@ -20,9 +20,8 @@
 <text id="baggesen2002100301a" skip-index="true">
 <head>
   <title>Fortale</title>
-  <toctitle>Fortale</toctitle>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="i-iv" facsimile-pages="9-12"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -55,8 +54,8 @@ Ikke blot at imodtage, men ogsaa efter Evne at meddeele Glæde, er en Pligt, som
   <pictures>
     <picture src="baggesen2001060801a.jpg">Titelblad til <i>Poesiens Oprindelse</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Poesiens Oprindelse. / - - Sunt, qui non corpora tantum, / Verum animos etiam valeant mutare liquores. / Ovid.</picture>
   </pictures>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="1-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -992,8 +991,8 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
   <pictures>
     <picture src="baggesen2002110103.jpg">Titelblad til <i>Katten, eller Elskovs Magt</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Katten, / eller / Elskovs Magt. / - - - -  Ille ferocem / Contudit, et dominae misit in arbitrium. / Armeniae tigres et fulvos ille leones / Vicit et indomitis mollia corda dedit. / Haec Amor, et majora valet. - - / Tibull.</picture>
   </pictures>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="47-74"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1583,8 +1582,6 @@ Og synge Eventyr om <b>Amor i Triumf</b>.
 <text id="baggesen2002122301">
 <head>
   <title>Deucalion og Pyrrha</title>
-  <toctitle>Deucalion og Pyrrha</toctitle>
-  <indextitle>Deucalion og Pyrrha</indextitle>
   <firstline>Om første Verdens Undergang fortæl</firstline>
   <notes>
     <note>Bearbejdelse af Ovids <xref poem="ovid2026083001"/>.</note>
@@ -1592,8 +1589,8 @@ Og synge Eventyr om <b>Amor i Triumf</b>.
   <pictures>
     <picture src="baggesen2002122301-p1.jpg">Titelblad til <i>Deucalion og Pyrrha</i> fra <i>Comiske Fortællinger</i> (1785).<br/>Deucalion og Pyrrha. / Piscium et summa genus haesit ulmo, / Nota quae sedes fuerat columbis / Et superiecto pavidae natârunt / Aequore damae. / Hor. Carm. L. I. Od. 2. v. 9.</picture>
   </pictures>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="77-100"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2075,12 +2072,11 @@ Den anden Deel ærbødigst at frembære.
 <text id="baggesen2002122501">
 <head>
   <title>Første Capitel</title>
-  <toctitle>Første Capitel</toctitle>
-  <linktitle>Jeppe. Første Capitel</linktitle>
   <indextitle>Jeppe</indextitle>
+  <linktitle>Jeppe. Første Capitel</linktitle>
   <firstline>Jeg, som tilforn med Piben i min Mund</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="103-109"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2236,10 +2232,9 @@ For første Gang nedstødt fra konelige Throne.
 <head>
   <title>Andet Capitel</title>
   <linktitle>Jeppe. Andet Capitel</linktitle>
-  <toctitle>Andet Capitel</toctitle>
   <firstline>Lidt meer om Heltens Tilstand</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="110-118"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2426,10 +2421,9 @@ Der laae vor <i>Jeppe</i> - Greenen knak.
 <head>
   <title>Tredie Capitel</title>
   <linktitle>Jeppe. Tredie Capitel</linktitle>
-  <toctitle>Tredie Capitel</toctitle>
   <firstline>Skielv altid, usle, svage Dødelige</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="118-126"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2609,10 +2603,9 @@ Skal Læseren nu faae at vide.
 <head>
   <title>Fierde Capitel</title>
   <linktitle>Jeppe. Fierde Capitel</linktitle>
-  <toctitle>Fierde Capitel</toctitle>
   <firstline>En Herremand og Kudsk fremviise sig</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="126-134"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2805,10 +2798,9 @@ Og endelig sov hen, da hun ei kunde meer.
 <head>
   <title>Femte Capitel</title>
   <linktitle>Jeppe. Femte Capitel</linktitle>
-  <toctitle>Femte Capitel</toctitle>
   <firstline>Aurores Ankomst giør en Hoben Vind</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="135-139"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2920,11 +2912,10 @@ Jeg haaber Læseren mig her og der forlader.
 <head>
   <title>Siette Capitel</title>
   <linktitle>Jeppe. Siette Capitel</linktitle>
-  <toctitle>Siette Capitel</toctitle>
   <firstline>Et Billede paa Seirens stolte Fryd</firstline>
+  <source pages="140-151"/>
   <keywords>milton,klopstock,ewald</keywords>
   <quality>korrektur1,kilde,side</quality>
-  <source pages="140-151"/>
 </head>
 <body>
 <poetry>
@@ -3181,8 +3172,8 @@ Men kunde raisonnere, naar det gieldte.
   <title>Syvende Capitel</title>
   <linktitle>Jeppe. Syvende Capitel</linktitle>
   <firstline>Et nyt Spilop, hvoraf man seer med Sorg</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="151-159"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3380,10 +3371,9 @@ Og dermed gik han glad fra sin Bormester væk.
 <head>
   <title>Ottende Capitel</title>
   <linktitle>Jeppe. Ottende Capitel</linktitle>
-  <toctitle>Ottende Capitel</toctitle>
   <firstline>Vor Helt, trods alle sine tyve Daler</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="160-168"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3582,10 +3572,9 @@ Han for sin Koe de tyve Daler fik.
 <head>
   <title>Niende Capitel</title>
   <linktitle>Jeppe. Niende Capitel</linktitle>
-  <toctitle>Niende Capitel</toctitle>
   <firstline>Man høster ikke altid, hvor man saaede</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="169-179"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3826,11 +3815,11 @@ For at faae fat paa den omtalte Hund.
 <text id="baggesen2003011103">
 <head>
   <title>Tiende Capitel</title>
-  <breadcrumbtitle>Tiende Capitel</breadcrumbtitle>
   <linktitle>Jeppe. Tiende Capitel</linktitle>
+  <breadcrumbtitle>Tiende Capitel</breadcrumbtitle>
   <firstline>Den Læser, som har fulgt mig hidindtil</firstline>
-  <quality>korrektur1,kilde,side</quality>
   <source pages="180-196"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -611,4 +611,43 @@
       <wikidata>Q7675043</wikidata>
     </identifiers>
   </museum>
+  <museum id="kurpfaelzisches">
+    <name>Kurpfälzisches Museum der Stadt Heidelberg</name>
+    <country>de</country>
+    <link>https://www.museum-heidelberg.de/Museum-Heidelberg/museum/graphik.html</link>
+  </museum>
+  <museum id="mfa">
+    <name>Museum of Fine Arts, Boston</name>
+    <country>us</country>
+    <link>https://www.mfa.org/</link>
+    <deep-link>https://collections.mfa.org/objects/${objId}</deep-link>
+  </museum>
+  <museum id="zuerich">
+    <name>Zentralbibliothek Zürich</name>
+    <country>ch</country>
+    <link>https://www.zb.uzh.ch/</link>
+    <deep-link>https://www.e-rara.ch/zuz/content/titleinfo/${objId}</deep-link>
+  </museum>
+  <museum id="natlibch">
+    <name>Schweizerische Nationalbibliothek</name>
+    <country>ch</country>
+    <link>https://www.nb.admin.ch/</link>
+    <deep-link>https://www.helveticarchives.ch/detail.aspx?ID=${objId}</deep-link>
+  </museum>
+  <museum id="albertina">
+    <name>Albertina, Wien</name>
+    <country>at</country>
+    <link>https://www.albertina.at/</link>
+  </museum>
+  <museum id="aargauer">
+    <name>Aargauer Kunsthaus</name>
+    <country>ch</country>
+    <link>https://aargauerkunsthaus.ch/</link>
+  </museum>
+  <museum id="gallerieditalia">
+    <name>Gallerie d’Italia, Milano</name>
+    <country>it</country>
+    <link>https://gallerieditalia.com/it/</link>
+    <deep-link>https://gallerieditalia.com/it/musei-online/opere/${objId}/</deep-link>
+  </museum>
 </museums>

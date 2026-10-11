@@ -47,6 +47,12 @@ describe('link builders', () => {
     expect(searchURL('en', 'blomstrende mark', 'dk', 'aarestrup')).toBe(
       '/en/search/dk/aarestrup?query=blomstrende+mark',
     );
+    expect(searchURL('da', '', 'dk', null, ['sonnet', 'elegi'])).toBe(
+      '/da/search/dk?keyword=sonnet%2Celegi',
+    );
+    expect(
+      searchURL('da', 'kærlighed', 'all', null, ['sonnet']),
+    ).toBe('/da/search/all?query=k%C3%A6rlighed&keyword=sonnet');
   });
 
   it('builds collection urls', () => {

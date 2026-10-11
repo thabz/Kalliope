@@ -48,6 +48,7 @@ Der voxer ingen Palme.
   <title>Til Vinter-Lærken</title>
   <firstline>Hvi qviddrer du saa tidlig hist?</firstline>
   <source pages="3-5"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -100,7 +101,7 @@ Er Hjertesuk og Smil og Sange!
 </body>
 </text>
 
-<text id="winther20020217105">
+<text id="winther20020217105" ignore-tests="title-trailing-punctuation">
 <head>
   <title>Til J.</title>
   <firstline>Læg Vedbendranken om min Hat</firstline>
@@ -108,6 +109,7 @@ Er Hjertesuk og Smil og Sange!
     <note type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="6-7"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -148,10 +150,9 @@ Naar bankende min Tinding brænder.
 <text id="winther2002120102">
 <head>
   <title>En Hytte</title>
-  <toctitle>En Hytte</toctitle>
-  <indextitle>En Hytte</indextitle>
   <firstline>Her gad jeg boe og bygge</firstline>
   <source pages="8-10"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -207,8 +208,6 @@ Let svæve fra min Barm.
 <text id="winther2002120103">
 <head>
   <title>Til Storken</title>
-  <toctitle>Til Storken</toctitle>
-  <indextitle>Til Storken</indextitle>
   <firstline>Saa drager du ad fremmed Land</firstline>
   <source pages="11-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -284,8 +283,6 @@ Du har Guds Fred i Følge!
 <text id="winther2002120104">
 <head>
   <title>Vaaren</title>
-  <toctitle>Vaaren</toctitle>
-  <indextitle>Vaaren</indextitle>
   <firstline>Nu har sit lyse Banner</firstline>
   <source pages="14-16"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -387,6 +384,7 @@ I Tide! - Nu det er forsilde! -
   <title>Farvel</title>
   <firstline>Der klinger en Klokke paa den rolige Vang</firstline>
   <source pages="19-20"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -437,8 +435,6 @@ Jeg ønsker jer Alle tusind Godnat!
 <text id="winther2002120106">
 <head>
   <title>Et Genre-Billede</title>
-  <toctitle>Et Genre-Billede</toctitle>
-  <indextitle>Et Genre-Billede</indextitle>
   <firstline>Det sused i Lindenes glindsende Blad</firstline>
   <source pages="21-23"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -624,6 +620,7 @@ Kun med en Landsoldat.
   <title>Den hvide Hind</title>
   <firstline>Skjøn Jomfru vinked med Haanden hvid</firstline>
   <source pages="29-32"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -933,8 +930,6 @@ I Evigheden smelted sammen.
 <text id="winther2002120108">
 <head>
   <title>Dandsen ved Glumsø</title>
-  <toctitle>Dandsen ved Glumsø</toctitle>
-  <indextitle>Dandsen ved Glumsø</indextitle>
   <firstline>Hver Aftenstund, naar Faar og Ko</firstline>
   <source pages="42-48"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1223,8 +1218,6 @@ Det skjærmes huldt af en Faders Hænder!
 <text id="winther2002120109">
 <head>
   <title>Tre om Een</title>
-  <toctitle>Tre om Een</toctitle>
-  <indextitle>Tre om Een</indextitle>
   <firstline>Der roede tre Matroser fra Skib imod Strand</firstline>
   <source pages="54-56"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1320,6 +1313,7 @@ I Dør han stod og vinked med hendes Jomfrukrands:
   <title>Natligt Frieri</title>
   <firstline>Han vandred gjennem Lunden</firstline>
   <source pages="57-64"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1612,13 +1606,12 @@ Arve skal i Dag <w>min</w> Søn!''
 <text id="winther2002120110">
 <head>
   <title>Skatten</title>
-  <toctitle>Skatten</toctitle>
-  <indextitle>Skatten</indextitle>
   <firstline>Nei, Karen! gaae ei bort i Nat</firstline>
   <notes>
     <note>Motivet som er taget fra folkesagnene findes også i Winthers <xref poem="winther2002021791"/> og Oehlenschlägers <xref poem="oehlenschlaeger2001052803"/>.</note>
   </notes>
   <source pages="69-78"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
