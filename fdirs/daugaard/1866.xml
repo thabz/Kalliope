@@ -281,6 +281,9 @@ At heelt for Verdens Glands de blive blinde!
   <title><num>4.</num>Gethsemane! dit smerterige Minde</title>
   <firstline>Gethsemane! dit smerterige Minde</firstline>
   <source pages="13-16"/>
+  <places>
+    <place ref="gethsemane" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2027,6 +2030,9 @@ Gav han dig Magt at lade sig korsfæste.
   <title><num>37.</num>Til Golgatha gaaer Vejen nu, mit Hjerte!</title>
   <firstline>Til Golgatha gaaer Vejen nu, mit Hjerte!</firstline>
   <source pages="68-69"/>
+  <places>
+    <place ref="golgotha" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2084,6 +2090,9 @@ Med Frydetjenesten for Thronen bytter.
   <title><num>38.</num>Din Herlighed, o Jesu! jeg beskuer</title>
   <firstline>Din Herlighed, o Jesu! jeg beskuer</firstline>
   <source pages="70-71"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
