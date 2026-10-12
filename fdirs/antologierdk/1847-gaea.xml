@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1847-gaea" author="antologierdk" status="complete" type="poetry" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
+<kalliopework id="1847-gaea" author="antologierdk" status="incomplete" type="poetry" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
   <title>Gæa</title>
   <subtitle>Æsthetisk Aarbog</subtitle>
@@ -8,10 +8,6 @@
   <pagebreaks/>
   <errata status="none"/>
   <source href="https://archive.org/details/gaea-1847" facsimile="gaea1847.pdf" facsimile-pages-num="325" facsimile-pages-offset="6">P. L. Møller (udg.): <i>Gæa. Æsthetisk Aarbog</i>, Udgiverens Forlag, Kjøbenhavn, 1847. Digitaliseret af Det Kgl. Bibliotek.</source>
-  <quality>korrektur1,kilde, side,korrektur2</quality>
-  <proofreadings>
-    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
-  </proofreadings>
 </workhead>
 <workbody>
 
