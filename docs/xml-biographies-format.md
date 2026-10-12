@@ -25,6 +25,32 @@ En ældre redaktionel tekst, som skal bevares uden at blive vist på sitet,
 markeres med `hidden="true"` på `<biography>`. Skjulte biografier bevarer deres
 normale `<head>` og `<body>` og må ikke gemmes i XML-kommentarer.
 
+## Blanke linjer
+
+Trim blanke linjer i begyndelsen og slutningen af `<body>`, også i skjulte
+biografier. Bevar blanke linjer mellem tekstens afsnit. Ved XML på flere
+linjer kan indholdet stå på linjen efter `<body>`, og `</body>` på linjen
+lige efter det sidste tekstindhold; der skal ingen tomme linjer imellem.
+Biografibuildet trimmer også tomme kantlinjer fra de genererede tekstdata,
+herunder linjer, som kun indeholder indrykning eller XML-kommentarer.
+
+## Skribentkreditering og signaturer
+
+Biografiens skribent krediteres kun i `<head><source>`. Udelad originalens
+selvstændige forfatterlinjer og afsluttende signaturer fra `<body>`, fx
+`<i>J. Kinch.</i>`. Det gælder også signaturer mellem afsnit i et opslag med
+flere skribenter; alle skribenter angives i den pågældende kildeangivelse.
+
+Kontrollér skribentens navneform mod originalens signatur og eventuelt
+udgavens medarbejderregister. Udvid ikke initialer uden belæg, og forveksl
+ikke artiklens skribent med værkets redaktør. Aarestrups DBL1-biografi er
+fx signeret Bertel Elmgaard og krediteres med dette navn i kilden.
+
+Fjern kun selve skribentkrediteringen fra brødteksten. Navne i fortællingen,
+citerede digte, brevsignaturer i citater og bibliografiske henvisninger
+bevares. Ved rettelse af en eksisterende biografi skal en manglende eller
+fejlagtig kreditering i `<source>` afklares, før signaturen fjernes.
+
 ## Kildevalg
 
 For danske forfattere er <i>Dansk Biografisk Leksikon</i> (DBL) den foretrukne
