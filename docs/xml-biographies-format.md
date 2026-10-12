@@ -25,6 +25,15 @@ En ældre redaktionel tekst, som skal bevares uden at blive vist på sitet,
 markeres med `hidden="true"` på `<biography>`. Skjulte biografier bevarer deres
 normale `<head>` og `<body>` og må ikke gemmes i XML-kommentarer.
 
+## Blanke linjer
+
+Trim blanke linjer i begyndelsen og slutningen af `<body>`, også i skjulte
+biografier. Bevar blanke linjer mellem tekstens afsnit. Ved XML på flere
+linjer kan indholdet stå på linjen efter `<body>`, og `</body>` på linjen
+lige efter det sidste tekstindhold; der skal ingen tomme linjer imellem.
+Biografibuildet trimmer også tomme kantlinjer fra de genererede tekstdata,
+herunder linjer, som kun indeholder indrykning eller XML-kommentarer.
+
 ## Skribentkreditering og signaturer
 
 Biografiens skribent krediteres kun i `<head><source>`. Udelad originalens
