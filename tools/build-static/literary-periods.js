@@ -12,7 +12,7 @@ const knownTraditions = new Set([
 const traditionCountries = {
   dk: ['dk'], se: ['se'], no: ['no'], gb: ['gb'], de: ['de', 'un'],
   fr: ['fr'], us: ['us'], it: ['it'], es: ['un'], fa: ['un'],
-  grc: ['un'], la: ['un'], nl: ['un'], is: ['is'], 'sv-fi': ['un'],
+  grc: ['un'], la: ['un'], nl: ['un'], is: ['is', 'un'], 'sv-fi': ['un'],
 };
 
 const validateLiteraryPeriods = catalog => {

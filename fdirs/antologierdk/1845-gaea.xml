@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1845-gaea" author="antologierdk" status="complete" type="poetry" ignore-tests="pagebreak-count">
+<kalliopework id="1845-gaea" author="antologierdk" status="complete" type="poetry" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
   <title>Gæa. Æsthetisk Aarbog</title>
+  <toctitle>1845</toctitle>
+  <breadcrumbtitle>1845</breadcrumbtitle>
   <year>1845</year>
   <pagebreaks/>
   <source href="https://archive.org/details/gaea-1845" facsimile="gaea1845.pdf" facsimile-pages-num="379" facsimile-pages-offset="6">P. L. Møller (udg.): <i>Gæa. Æsthetisk Aarbog</i>, Udgiverens Forlag, Kjøbenhavn, 1845. Trykt i Berlingske Bogtrykkeri. Digitaliseret af Det Kgl. Bibliotek.</source>
@@ -639,7 +641,6 @@ Saa har de dog tidt ædt Andre.
 <text id="blicher20260814008" author="blicher">
 <head>
   <title>Skinsyge</title>
-  <firstline>Skinsyge, en virkelig Begiveuhed, fortalt af</firstline>
   <source pages="17-28" facsimile-pages="23-35"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -784,7 +785,6 @@ Synerne svandt som en Drøm i Morgendæmringens Tvelys.
 <text id="hauch20260814010" author="hauch">
 <head>
   <title>Fragment af Marsk Stig</title>
-  <firstline>en utrykt Tragoedie, ) af C. Hauch</firstline>
   <source pages="34-54" facsimile-pages="40-61"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1754,7 +1754,6 @@ Og Byrden svandt, som hidtil havde tynget.
 <text id="rosenkildecn20260814012" author="rosenkildecn">
 <head>
   <title>Albert Perse</title>
-  <firstline>Albert Perse</firstline>
   <source pages="79-87" facsimile-pages="85-94"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -2230,10 +2229,9 @@ i
 </body>
 </text>
 
-<text id="antologierdk20260814018" ignore-tests="repeated-adjacent-word">
+<text id="antologierdk20260814018" ignore-tests="repeated-adjacent-word" skip-index="true">
 <head>
   <title>Portnerens Søn</title>
-  <firstline>Novelle</firstline>
   <source pages="99-118" facsimile-pages="105-125"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -2255,13 +2253,13 @@ Det sortnede for Niels's Øine og endnu havde han ei hørt Alt. Han vilde spørg
 Niels havde nok, Trappen lob rundt for ham, han vidste ikke,
 <pb facs="110.jpg"/>hvorledes han kom ned. Da han kom til sig selv, laa han vaa Sengen. Han reiste sig op; Solen skinnede fan venlig ind pan ham. Han stod op og kledte sig paa. Han holdt det Hele for en Drøm, han kunde ikke fatte, at den Skjønneste skulde ægte den Hæsligfte, der tillige var Vanskabning; det gos i ham. Kun udannede Mennesker, troe vi sædvanlig, handle af Egennytte; men bvo bringer Egennytten fan store, faa blodige Offre, som den høiere Stand? Den følgende Dag var der Ro i Huset, men denne Ro havde noget Gyseligt ved sig. Greven red og kjorte som sedvanligt, hans Hold— ning var rank, hans Sie stolt, men der lage noget Truende i hans Miner, der forfærdede Niels. Naar Greven kom ned ad Trappen, raabte han,,min Hest“ med en tordnende Stemme, sagat endog Hesten skjælvede ved den. Derpaa svang han sig op og red ned ad Gaden i faa voldsom Fart, at Tjeneren neppe kunde følge ham.,,Det Uhyre,“ teœnkte Niels,,,hvad man Olga ikke lide af ham!“
 Den naste Dag var det et grueligt Veir; Greven var kjort ud med Grevinden; Kuͤdsken truede, de skulde til Baronens Forældre, der boede i en nærliggende Gade. Noget efter ringere det paa Porten; Niels gik ud og aabnede den, hans bittreste Fjende, den pukkelryggede Diplomat, spankede ind. Niels flap af Harme Porten, den heeftige Storm blæfte den i, og Baronens Frakkeskjod kom imellem. Nasende vendte han sig om, men ved denne Bevee— gelse kom der en Fluge i Skjødet. Han foer ind paa Niels, men denne gik rolig ned i Kjelderen, lukkede Døren i, og lod Baronen stage i den rygende Storm ganske hvid af Snee. Han kiolede sin Harme ved at sparke en Rude ind i Kjelderen og gik hjem for at flæde sig om.,,Ak Olga,“ tenkte Niels,,,nu er Du frie for ham for Øieblikket — kunde jeg med mit Liv befrie Dig for stedse — og Niels tænfte paa at myrde Baronen, han tog en Ragekniv frem, aabnede den, og stod lenge og stirrede paa den. Mange og for⸗ stjellige vare haus Tanker. Han fane Olga bleg og syg og denne
-<pb facs="111.jpg"/>Vanskabning nærme sig hende med affkyelig haanende Latter, og for- trolig fægge fin Arm paa bende. Langsomt hævede Niels Hovedet, hans Øine guistrede og havde Baronen været der, var Niels maaskee blevet en Morder. Han faar sig i Tankerne pan Skafottet. Tanken om at lide Døden for Olgas Lykke var ham kjer, men naar han tænfte paa fine gode gamle Forældre, fine smaa Sodskende og den Jammer, han vilde forvolde dem, blev han blød om Hjertet, og sagte rullede Taarerne ned ad hans Kinder; med Eet standsede hans Graad, han lagde Kniven bort, en Tanke faldt ham ind, der ganske tilintetgjorde hans blodige Forsct.,,Hvo veed om Olga vil saa nodig have ham? — hun besvimede, det kan være af andre Aar— fager”. — Hele Natten grublede han derover. Om Morgenen stod han tidlig op, for som sedvanligt at høre til Comtessens Befindende.,,Hun var bedre, — hed det — og skulde, hvis Veiret tillod det, ud at kjore en lille Tour.“ Niels gik i Stalden, Gaarden og Porten, og ventede, Sneen knagede under hans Fødder, det var en af de deilige Frostdage, som Kjøbenhavn desverre kun har faa af.
+<pb facs="111.jpg"/>Vanskabning nærme sig hende med affkyelig haanende Latter, og fortrolig fægge fin Arm paa bende. Langsomt hævede Niels Hovedet, hans Øine guistrede og havde Baronen været der, var Niels maaskee blevet en Morder. Han faar sig i Tankerne pan Skafottet. Tanken om at lide Døden for Olgas Lykke var ham kjer, men naar han tænfte paa fine gode gamle Forældre, fine smaa Sodskende og den Jammer, han vilde forvolde dem, blev han blød om Hjertet, og sagte rullede Taarerne ned ad hans Kinder; med Eet standsede hans Graad, han lagde Kniven bort, en Tanke faldt ham ind, der ganske tilintetgjorde hans blodige Forsct.,,Hvo veed om Olga vil saa nodig have ham? — hun besvimede, det kan være af andre Aar— fager”. — Hele Natten grublede han derover. Om Morgenen stod han tidlig op, for som sedvanligt at høre til Comtessens Befindende.,,Hun var bedre, — hed det — og skulde, hvis Veiret tillod det, ud at kjore en lille Tour.“ Niels gik i Stalden, Gaarden og Porten, og ventede, Sneen knagede under hans Fødder, det var en af de deilige Frostdage, som Kjøbenhavn desverre kun har faa af.
 Grevens Have gik ud til en af Skibspladserne. Den brede Canal mellem Kjøbenhavn og Amager var stivnet, en sneehvid Mark laa, hver for fort Tid siden stolte Tremastere gyngede paa den blaa, bevægelige Flade. Himlen havde den blaagraa Farve, der passer fan godt til Sneen. Solen stod blodrod noget over Hori— zonten og kastede et rødligt Skjær paa alle Gjenstande, som den ei var istand til at opvarme. Under Sang og Raab trak Matroserne Slæder belæssede med store Tender ud til Skibene, der lage stille, majestctiste, med tyk Snee paa Tougveerket og de endnu stagende terte Stykfer af Masterne. Ovre fra Holmen hørtes hyppige Hammerslag pan den paa Stablen stagende Colos. Vidt og bredt hertes den mindste Lyd i den folde, rene og klare Luft. Naturens Stjonhed gjorde Indtryk paa Niels.,,Hvor her er deiligt“ hviskede
 <pb facs="112.jpg"/>han sagte, og den Sorg, der knugede hans Hjerte, opløste sig i ftille Taarer, der randt ned ad hans Kinder, indtil de stivnede som Naturen om ham. Endog Naturens Børn kunne blive poetiske og Niels var Meer end et Naturens Barn. Musikken bavde forædlet hans Hjerte, han var modtagelig for Naturens Skjønheder og i dette Sieblik følte han ret, hvor deilig Verden var. Og igaar havde han onsket Døden, den Staffel, knap atter Aar og allerede tenke pan at døe.
 Da Niels kom tilbage, holdt Vognen forspendt i Gaarden. Hestenes Aande var synlig langtfra ui den folde Luft, muntert stam— pede de paa den haardtfrosne Jord, medens Kudsken sad ubevægelig i for grønne lodne Pelts. Niels skyndte sig hen til Trappen, da Vognen kjorte frem. Grevinden kom med Comtessen under Armen. Olga fane bleg og lidende ud, med et Small gjengjeldte hun Niels's Hilsen. Hun vilde tale til ham, men Grevinden skjød hende ind i Vognen, idet hun tilkastede hende et vredt Blik.,,Den stakkels Niels — tænfte Olga — han holder dog vist af mig, han er den eneste her, som har Medlidenhed med mig.“ Hendes forrige Stolt— bed var hræsket, hun fatte nu Priis paa et simpelt Meuneskes Med— lidenhed. Saaledes væsker Ulykken Sympathi.
 Vinteren var forbi; det var den sidste barske Vinterdag; men den havde efterladt et Indtryk i Niels's Hjerte, som ikke kunde üuͤdslettes. Olga kom sig, men Sundhedens Roser blomstrede aldrig mere paa hendes Kinder, hun fod frille, og hendes fine Legene truede med at bukke under for den Vyrde, der nasten nedtrykte hende. Greven var bleven endun mere barsk og stivsindet, end for, og da han talte om Brylluppet med Baronen, vovede Jungen at modsige ham. Olga sukkede og suͤkkede ene, men hun sank ikke sammen ved dette Tordenslag; man kunde fee, hun havde fattet en fast og for— tvivlet Beslutuing.,,Gud veed, hvad Enden skal blive,” sagde Huusjomfruen sagte;
 <pb facs="113.jpg"/>hun gjennemskuede Olga og ahnede hendes Tanker.,,Ja Gud veed, hvad Enden skal blive,” mumlede Jcgeren, der hørte Jomfruens Ord, og han gik ned til Portneren; thi han holdt af Niels, der med Taalmodighed hørte hans broutende Historier, blot for at høre noget om Olga.
-Bryllupsdagen nærmede sig. Olga var blid og venlig mod Alle, endogsaa mod Baronen, der hver Dag kom der. Omtrent 14 Dage for denne gruelige Dag stod Niels i Bagporten, da et sagte Slag paa hand Skulder vakkede ham af hans Drømmerier. Han vendte sig om, Olga stod for ham.,,Ah! Deres Naade,“ sagde Niels og tog Huen af.,,Tys!“ sagde hun.,,Hør Niels!“ hvidskede hun, idet hun traadte ham nærmere,,,kan du tie?“,,Som Graven,” sparede Niels med Haanden paa sit trofaste Bryst. Olga saae stivt paa ham og leste i haus aabne ærlige Blik Forsikkringen om, hvad han sagde.,,Hvem har Noglen til Baglaagen?“ spurgte hun.,,Det har Fader.“,,Naar gaaer han til Sengs?“,,Klokken 10.“,,Saa, — men hvem lukker da op efter den Tide”,,Jeg, Deres Naade; jeg kan ikke sove faa tidlig — jeg sover nesten aldrig,“ sagde han sagte med et Suk.,,Kunde Du være der i Aften Klokken 11 ½, men tal for Him- lens Skyld ikke om det til Nogen.“,,Ja, Deres Naade kan stole paa mig.“
+Bryllupsdagen nærmede sig. Olga var blid og venlig mod Alle, endogsaa mod Baronen, der hver Dag kom der. Omtrent 14 Dage for denne gruelige Dag stod Niels i Bagporten, da et sagte Slag paa hand Skulder vakkede ham af hans Drømmerier. Han vendte sig om, Olga stod for ham.,,Ah! Deres Naade,“ sagde Niels og tog Huen af.,,Tys!“ sagde hun.,,Hør Niels!“ hvidskede hun, idet hun traadte ham nærmere,,,kan du tie?“,,Som Graven,” sparede Niels med Haanden paa sit trofaste Bryst. Olga saae stivt paa ham og leste i haus aabne ærlige Blik Forsikkringen om, hvad han sagde.,,Hvem har Noglen til Baglaagen?“ spurgte hun.,,Det har Fader.“,,Naar gaaer han til Sengs?“,,Klokken 10.“,,Saa, — men hvem lukker da op efter den Tide”,,Jeg, Deres Naade; jeg kan ikke sove faa tidlig — jeg sover nesten aldrig,“ sagde han sagte med et Suk.,,Kunde Du være der i Aften Klokken 11 ½, men tal for Himlens Skyld ikke om det til Nogen.“,,Ja, Deres Naade kan stole paa mig.“
 Niels var lyskelig, fordi han skulde gjøre Noget for Olga, men hvad vilde hun ude paa Pladsen fan silde? Han tabte sig i For⸗ modninger, uden at finde nogen Grund. Klokken 11 var han der, stod stille og tankefuld, og mærkede ikke til den kolde Storm, der tudede mellem de nøgne Træer. Det var mitt i April. En Tid
 <pb facs="114.jpg"/>havde han ventet, da to Mandspersoner i store Kapper sagte snege sig hen til ham. Han greb en tyk Green, der lage tæt ved Laagen, men den Ene sagde:,,det er os, Niels.“,,Min Gud, Deres Naade,“ sagde Niels forundret,,,skal De nu ud?“,,Ja,“ svarede hun. Den anden Skikkelse kom til, det var Grevens franske Tjener, Leonæ. Da Pe vare ude af Laagen, gik han ned til Vandet. Olga blev noget tilbage hos Niels.,,Farvel Niels,“ sagde hun med sagte, skjælvende Stemme,,,Tak for din Tjeneste! giv Fader dette Brev imorgen Formiddag; ikke for. Hils dem nu Alle, og lev vel.“,,Reiser Deres Naade?“ spurgte Niels med Taarer i Sinene —,,alene? Veed Deres Fader intet af det?“,,Nei han veed ikke; derfor skal du bringe ham og Moder mit Farvel.“,,O Gud! maa jeg ikke reise med,“ bad Niels,,,ligemeget hvorhen, naar jeg blot er i Deres Nerhed?“,,Nei, Niels,“ sagde Olga,,,det kan ikke gage an.“,,Jeg troer egentlig ikke det var faa galt, Deres Naade,“ sagde Leonæ, der var kommen tilbage fra Baaden,,,det stormer i Aften, og Een bliver vistnok for Lidt til at styre denne Baad. Naar vi blot kunne stole pan ham,“ tilfoiede han sagte.,,Det kunne vi,“ sagde Olga; ,,Velan Niels! Lov mig da tro at følge mig, hvor jeg gaaer hen.“,,Oh, Deres Naade, jeg gaaer i Døden for Dem,“ sparede Niels heurykt, hængte Brevet ved Noglen, som han lod sidde indenfor i Døren, og ilede efter dem ned til Stranden. Olga satte sig ved Roret, tause grebe Niels og Leonæ Aarerne, og roede med lange, sagte Tag ned ad Langebro til; men Olga spobte sig i sin Kappe og græd stille; forf nu fattede hun ret sin fortvivlede Stilling. Noget fra Langebro holdt Niels op at roe.
 <pb facs="115.jpg"/>,,Hvad er det?“ spurgte Leonæ.,,Bommen er for, vi kunne ikke komme ud.“,,Hvilken Børn?“,,Indløbet under Broen bliver hver Aften sparret med en Bjælfe.”,,Mon Øieu! jaa er alt Haab forbi.”,,Vi maa løfte Baaden vver,“ sagde Niels, efter et Siebliks Eftertanke,,,Bølgerne gane høit, de hjælpe os nok.“ J susende Fart lob Baaden hen mod ÜUdløbet, hvor man trods Mørket kunde fee det hvide Skum omkring Bjælfen.,,Gag bagud,” sagde Niels til Leonæ, selv stod han op i Forstavnen. Baaden tornede, det Halve af den lob op over Bjelken, dens Forstavn havede sig høit i Veiret, medens dens Bagstavn nasten stod under Vand. Kommer berhen begge,” raabte Niels, og fortvivlet sprang han ud paa Bjclken. Den var rund og glat af Tang, han gled og sank ned i de iskolde Bølger. Et bvinende og hjerteskjrende Skrig hævede sig, men Bølgerne havde lukket sig over Niels, han hørte det iske. Han kom snart op igjen, fatte sig skrævs over Bjelken, og stjod med rasende Anstreengelse Baaden over, han holdt fast ved den, blev revet ned af Bjelken og flæbte i Bandet efter Baaden. Leonæ hjalp ham op.,,Min Gud, hvorledes befinder Du dig?“ spurgte Olga deel— tagende, bendes Hjerte var ganske opfyldt af Tanemmelighed imod ham.“,,Godt, Deres Naade,“ svarede Niels, men hans Tender klapprede af den isnende Kulde, der bragte hans Legeme til at stivne.,,See her Niels! tag dette at styrke Dig paa,” sagde Leonæ, og ralte ham et Glas Vin.,,Hvor bar Du det fra,“ spurgte Niels; ,,er det det Eneste, Du har?“,,Nei! vi ere vel forsynede,“ sagde Leonæ og lukkede Rummet.
@@ -2573,10 +2571,13 @@ J Danmark Din Hader skal lyde.
 </body>
 </text>
 
-<text id="gaea1845delta20260814023" author="gaea1845delta">
+<text id="anonym1800dk20260814023" author="anonym1800dk">
 <head>
   <title>Ved Thorvaldsens Død</title>
   <firstline>ger 1 Syd, det runger m Hard</firstline>
+  <notes>
+    <note>Trykt under signaturen Δ.</note>
+  </notes>
   <source pages="127-130" facsimile-pages="133-136"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -2662,10 +2663,13 @@ Med Lauren frisk i det hvide Haar.
 </body>
 </text>
 
-<text id="gaea1845delta20260814024" author="gaea1845delta">
+<text id="anonym1800dk20260814024" author="anonym1800dk">
 <head>
   <title>Emmas Vuggesang</title>
   <firstline>Emmas Vuggesang</firstline>
+  <notes>
+    <note>Trykt under signaturen Δ.</note>
+  </notes>
   <source pages="130-133" facsimile-pages="136-139"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -3277,7 +3281,6 @@ Til Buesnorens Klang.
 <text id="saintaubain20260814029" author="saintaubain">
 <head>
   <title>Marie</title>
-  <firstline>Marie</firstline>
   <source pages="146-165" facsimile-pages="152-172"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -3346,8 +3349,10 @@ I bette Sieblik er Marie Jorgens Hustru; Kjerligheden hel— bredede hurtigt den
 <head>
   <title>Roger paa Alcinas Ø</title>
   <firstline>efter Ariost, auersat af F. C. Hillerup</firstline>
+  <notes>
+    <note>Oversat af F. C. Hillerup efter Ludovico Ariosto.</note>
+  </notes>
   <source pages="166-179" facsimile-pages="172-185"/>
-  <notes><note>Oversat af F. C. Hillerup efter Ludovico Ariosto.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4082,8 +4087,10 @@ Singsallijoh!,, Hurra! Hurra for — Singsallijoh! 1,:
 <head>
   <title>Sigrunarljod</title>
   <firstline>Sigrunarljod</firstline>
+  <notes>
+    <note>Oversat af Grímur Thomsen.</note>
+  </notes>
   <source pages="199-200" facsimile-pages="205-206"/>
-  <notes><note>Oversat af Grímur Thomsen.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4154,8 +4161,10 @@ Mig svinge bort herfra til Himlens Lyt.
 <head>
   <title>Natten</title>
   <firstline>Natten</firstline>
+  <notes>
+    <note>Oversat af Grímur Thomsen.</note>
+  </notes>
   <source pages="200-201" facsimile-pages="206-207"/>
-  <notes><note>Oversat af Grímur Thomsen.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4195,8 +4204,10 @@ Ud i Nordlys Evighedens Glands.
 <head>
   <title>Eet Kys endnu</title>
   <firstline>Eet Kys endnu</firstline>
+  <notes>
+    <note>Oversat af Grímur Thomsen.</note>
+  </notes>
   <source pages="201-202" facsimile-pages="207-208"/>
-  <notes><note>Oversat af Grímur Thomsen.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4245,8 +4256,10 @@ Med ct Khs, som du tog den.
 <head>
   <title>Freyas Katte</title>
   <firstline>Freund Katte</firstline>
+  <notes>
+    <note>Oversat af Grímur Thomsen.</note>
+  </notes>
   <source pages="202-203" facsimile-pages="208-209"/>
-  <notes><note>Oversat af Grímur Thomsen.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4309,8 +4322,10 @@ Thi der bag Stene Frehas Katte ligge.
 <head>
   <title>Eldgamla Isafold</title>
   <firstline>Af hans Fæbdrelandsfang: Eldgamla Isafold meddeler jeg</firstline>
+  <notes>
+    <note>Fransk oversættelse ved Xavier Marmier, meddelt af Grímur Thomsen.</note>
+  </notes>
   <source pages="203" facsimile-pages="209-210"/>
-  <notes><note>Fransk oversættelse ved Xavier Marmier, meddelt af Grímur Thomsen.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -4340,7 +4355,6 @@ Ou le brut importun, ou le rire eruel.
 <text id="andersen20260814039" author="andersen">
 <head>
   <title>Hyldemoer</title>
-  <firstline>KS</firstline>
   <source pages="204-213" facsimile-pages="210-220"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -4370,7 +4384,7 @@ Og den lille Dreng sage hen til Theepotten, Laaget hævede sig meer og meer, og 
 <pb facs="214.jpg"/>,,Ja, det maa du forstage!“ sagde han, som fortalte,,,men lad os spørge Hyldemoer!“,,Det var intet Eventyr;“ sagde Hyldemoer,,,men nu kom— mer det! Ud af det Virkelige vorer just det forunderligste Even— tyr; ellers kunde jo min deilige Hyldebusk ikfe være sprunget ud af Theepotten!“ og faa tog hun den lille Dreng ud af Sengen, lagte ham ved fit Bryst og Hyldegrenene, fulde af Blomster, sloge sam— men omkring dem, de fab, som i det tetteste Lysthuus, og det flot med dem igjennem Luften, det var faa mageløst deiligt. Hylde— moer var med eet blevet en ung, nydelig Pige, men Kjolen var endnu af samme grønne, hvidblomstrede Toi, som Hyldemoer havde baaret; paa Brystet havde hun en virkelig Hyldeblomst, og om fit gule, krollede Haar en heel Krands af Hyldeblomster; hen— des Sine vare fan store, faa blaa, o, hun var saa velsignet at see paa! hun og Drengen kyssedes, og saa vare de i lige Alder og af lige Lyst.
 De gik Haand i Haand ud af Lovhytten og stode nu i Hjem— mets smukke Blomsterhave; ved den friske Græsplet var Faders Stof toiret til en Pind; for de Smaa var der Liv i Stokken; saasnart de fatte sig skrævs over den, forvandlede sig den blanke Knap til et prægtigt vrinskende Hoved, den lange førte Manke flagrede, fire slanke, stærke Been skjød ud; Dyret var sterkt og væ- ligt; i Gallop foer de rundt om Grespletten; hussa! —,,Nu ride vi mange Mile bort!“ sagde Drengen; ,,vi ride til Herregaarden, hvor vi vare ifjor!“ og de reed og reed Grespletten rundt; og altid raabte den lille Pige, der som vi veed, var ingen anden end Hyldemoer:,,Nu ere vi paa Landet! seer du Bondens Huus med den store Bagerovn, der synes et kjæmpestort Eg i Muren ud mod Veien; Hyldetræt hælder fine Grene hen over dem, og Hanen gaaer og skraber for Honsene, fee, hvor den bryster sig! — nu ere vi ved
 Kirken! den ligger høit paa Banken mellem de store Egetrær,
-<pb facs="215.jpg"/>hvoraf det ene er balvt gaget ud! — Nu er vi ved Smedien, hvor Ilden brænder, og de halvnøgne Mend flade med Hammeren, faa Gnisterne flyve vidtomkring. Afsted, afsted til den prægtige Herre— gaard!” og Alt, hvad den lille Pige, der fad bag pan Stokken, sagde, det flot ogsaa forbi; Drengen sage det, og dog kom de kun Gres— pletten rundt. Saa legede deli Sidegangen og ridsede i Jorden en lille Have, og hun tog Hyldeblomster af sit Haar, plantede dem, og de vorte akkurat ligesom det var skeet for de gamle Folk i Nyboder den Gang de vare Smaa, og som der tidligere er fortalt om. De gik Haand i Haand, ligesom de gamle Folk bavde gjort det som Børn, men ikke op paa det runde Taarn, eller til Frederiks— berghave, nei, den lille Pige tog Drengen om Livet, og saa fløi de vidt omkring i hele Danmark, og det var Vaar og det blev Sommer, og det var Høst og det blev Vinter, og tusinde Billeder asspeilede sig i Drengens Øine og Hjerte, og altid fang den lille Pige for ham:,,det vil du aldrig glemme!“ og paa den hele Flugt duftede Hyldetræt faa sødt og fan deiligt; han mærfere vel Roserne og de friske Bøge, men Hyldetræet duftede endnu mere forunderligt, thi dets Blomster hang ved den lille Piges Hjerte, og til det hel— dede han li Flugten tidt fit Hoven.,,Her er deiligt i Vaaren!“ sagde den unge Pige, og de stode i den nys udsprungne Bøgeskov, hvor den grønne Bukkar duftede for deres Fødder, og de blegrøde Anemoner saae faa deilige ud i det Grønne.,,O, var det altid Vaar i den duftende danske Bøgeskov!“,,Her er deiligt i Sommeren!“ sagde hun, og de foer forbi gamle Herregaarde fra Riddertiden, hvor de røde Mure og takkede Gavle speilede sig i Kanalerne, hvor Svanerne svømmede og kiggede op i de gamle kølige Alleer. Paa Marken bølgede Kornet, ligesom det var en Sø, Grofterne stode med røde og gule Blomster, Gjær- derne med vild Humle og blomstrende Convolvoli; og om Aftenen
+<pb facs="215.jpg"/>hvoraf det ene er balvt gaget ud! — Nu er vi ved Smedien, hvor Ilden brænder, og de halvnøgne Mend flade med Hammeren, faa Gnisterne flyve vidtomkring. Afsted, afsted til den prægtige Herre— gaard!” og Alt, hvad den lille Pige, der fad bag pan Stokken, sagde, det flot ogsaa forbi; Drengen sage det, og dog kom de kun Gres— pletten rundt. Saa legede deli Sidegangen og ridsede i Jorden en lille Have, og hun tog Hyldeblomster af sit Haar, plantede dem, og de vorte akkurat ligesom det var skeet for de gamle Folk i Nyboder den Gang de vare Smaa, og som der tidligere er fortalt om. De gik Haand i Haand, ligesom de gamle Folk bavde gjort det som Børn, men ikke op paa det runde Taarn, eller til Frederiks— berghave, nei, den lille Pige tog Drengen om Livet, og saa fløi de vidt omkring i hele Danmark, og det var Vaar og det blev Sommer, og det var Høst og det blev Vinter, og tusinde Billeder asspeilede sig i Drengens Øine og Hjerte, og altid fang den lille Pige for ham:,,det vil du aldrig glemme!“ og paa den hele Flugt duftede Hyldetræt faa sødt og fan deiligt; han mærfere vel Roserne og de friske Bøge, men Hyldetræet duftede endnu mere forunderligt, thi dets Blomster hang ved den lille Piges Hjerte, og til det hel— dede han li Flugten tidt fit Hoven.,,Her er deiligt i Vaaren!“ sagde den unge Pige, og de stode i den nys udsprungne Bøgeskov, hvor den grønne Bukkar duftede for deres Fødder, og de blegrøde Anemoner saae faa deilige ud i det Grønne.,,O, var det altid Vaar i den duftende danske Bøgeskov!“,,Her er deiligt i Sommeren!“ sagde hun, og de foer forbi gamle Herregaarde fra Riddertiden, hvor de røde Mure og takkede Gavle speilede sig i Kanalerne, hvor Svanerne svømmede og kiggede op i de gamle kølige Alleer. Paa Marken bølgede Kornet, ligesom det var en Sø, Grofterne stode med røde og gule Blomster, Gjærderne med vild Humle og blomstrende Convolvoli; og om Aftenen
 <pb facs="216.jpg"/>steg Maanen rund og stor, Hostakkene paa Engene duftede faa sødt.,,Det glemmes aldrig!“,,Her er deiligt i Efteraaret!“ sagde den lille Pige, og Luf— ten blev dobbelt fan høi og blaa, Skoven fif de deiligste Couleurer af Rodt, Guult og Grønt. Jagthundene foer afsted, hele Skarer Fuglevildt fløi skrigende henover Kmpehøien, hvor Brombæran— ken hang om de gamle Stene. Havet var sortblaat med hvide Sei— lere og i Loen fad gamle Koner, Piger og Børn og pillede Humle i et stort Kar; de Unge sang Viser, men de Gamle fortalte Eventyr om Nisser og Trolde. Bedre kunde der ikfe være!,,Her er deiligt i Vinteren!“ sagde den lille Pige; og alle Træer stode med Riim— frost, de fane ud som hvide Koraller, Sneen knirkede under Fod— derne, som om man altid havde nye Støvler paa, og fra Himlen faldt det ene Stjerneskud efter det andet. J Stuen tændtes Jule— træet, der var Prœsenter og godt Humeur; paa Landet klang Vio— len i Boͤndens Stue, Æbleskiver flot i Grams; selv det fattigste Barn sagde:,,Det er dog deiligt om Vinteren!“
 Ja, det var deiligt! og den lille Pige viiste Alting til Dren— gen, og altid duftede Hyldetrœet og altid vaiede det røde Flag med det hvide Kors, Flaget, hvorunder den gamle Somand i Nyboder havde seilet; — og Drengen blev Knos, og han skulde ud i den vide Verden, langveis bort til de varme Lande, hvor Kaffeen groer; men i Afskeden tog den lille Pige en Hyldeblomst af sit Bryst, gav ham den at gjemme, og ben blev lagt i Psalmebogen, og altid i fremmed Land, naar han aabnede Bøgen, var det just paa det Sted, hvor Erindringsblomsten lage, og jo mere han fane paa ben, des fri— stere blev den; han ligesom følte en Duft fra de dauste Skove, og iydeligt saa han mellem Blomsterbladene den lille Pige titte frem meb fine klare blaa Øine, og hun hvidskede da:,,her er deiligt i Vaar, i Sommer, i Høst og Vinter!“ og hundrede Billeder glede gjennem hans Tanker.
 <pb facs="217.jpg"/>Saaledes gik mange Aar, og han var nu en gammel Mand og sad med sin gamle Kone under et blomstrende Tra; de boldt hinanden i Hænderne, ligesom Oldefader og Oldemoder giorde det ude i Nyboder, og de talte ligesom de om de gamle Dage, og om Guldbrylluppet; den lille Pige med de blaae Øine og med Hyldeblomsterne i Haaret fad oppe i Treet, nikkede til dem begge to, og sagde:,,i Dag er det Guldbryllupsdag!“ og faa tog hun to Blomster af fin Krands, kyssede paa dem, og de skin— nede først som Sølv, saa som Guld, og da hun lagde dem paa de gamle Folks Hoveder, blev: hver Blomst til en Guldkrone, der fad de begge to som en Konge og en Dronning, under det duftende Tre, der ganske og aldeles sage ud som et Hyldetrœ, og han for— talte fn gamle Kone Historien om Hyldemoer, saaledes som den var fortalt ham, da han var en lille Dreng, og de syntes begge to, at der var saa meget i den, som lignede deres egen, og det der lignede, det syntes de bedst om.,,Ja, saadan er det!“ sagde den lille Pige i Træet,,,Nogle falde mig Hyldemoer, Andre kalde mig Dryade, men egentlig hedder jeg Erindring, det er mig, der sidder i Træet, som vorer og vorer, jeg kan buske, jeg kan fortelle! Lad mig fee, om du har din Blomst, endnu!“
@@ -5185,7 +5199,8 @@ Fast skimtes Smilet der:,,Guds Fred, min mørke Broder!,,Mig huer flig en Færd.
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
-<poetry>,,vyrist Studie“
+<poetry>
+,,vyrist Studie“
 af
 Carl Rielsen.
 
@@ -5263,7 +5278,6 @@ L
 <text id="borgaardc20260814046" author="borgaardc">
 <head>
   <title>Kjøbenhavn i Magistratsmaaneskin</title>
-  <firstline>Kjøbenhavn i Mlagistratsmaanesnin. (Stigze) af</firstline>
   <source pages="239-243" facsimile-pages="245-251"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -5338,10 +5352,9 @@ Til Himlen bed med mig, at snart de mage fane Fødselsvrer!
 </body>
 </text>
 
-<text id="antologierdk20260814047">
+<text id="antologierdk20260814047" skip-index="true">
 <head>
   <title>Maifesten i Sundby</title>
-  <firstline>Dramatisk Sitnation</firstline>
   <source pages="244-253" facsimile-pages="251-260"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -5414,7 +5427,7 @@ Jeg forlanger Ordet.
 Flere Stemmer.
 Bravo, Spræl har Ordet.
 Tpral (springer op paa Bordet pg stoder til nogle Glas, som falde ned og gage itu.)
-Danske Mænd! det har ofte fyldt min Barm med Stolthed, ofte begeistret mig til mangen Stordaad, ogsaa ni Dag er det med en vis Stolthed, at jeg lader det frie, det levende Ord strømme fra danske, fra jydske Leber, i denne hederveerdige Forsamling af kjakke Medborgere. Vi ere komne sammen for at debattere om Fædre- landets, det velsignede Danmarks Vee og Vel, for at debattere om et fandt og ægte Nationalanliggende, nemlig om vi skulle holde den 28de Mai hellig i Aar. Midt i en dyb Freds Skjød tør det vel være mig, skjøndt Kriger, tilladt at tale et Par Alvorsord. En— hver fjender min Mening, Enhver af Eder veed, at jeg med Liv og Sjæl hylder de friere Grundsctninger, der fra Gorm den Gam— les og Rolf Blaaskjcgs, men navnlig siden den spanske Sucæssions— krig, Julirevolutionen og Kjøbenhavnsposten, have gjort sig gjeldende i Verden og rystet Throner. Disse friere Grundscktninger hylder jeg, siger jeg; feigt er jeg ikke bleven stagende pan Halvveien, men har trolige strebt at føre mig selv det Liberalismens, Skandinavismens og Pan— slavismens Maal imøde, der som en mægtig Hjerte inden foie Tid vil lyse over al Verden. Ja, ligesom disse Glas, jeg nyligen sønderspar— fede med min Fod, saaledes, mener jeg, skulle snart Despotiets Taager briste! J ere paa denne Dag komne sammen, for at fatte en Beslut— ning, der med uudslettelige Trak vil staae brændemærfet i Verdens Aarboger ved Evighedens Ophør; J ere komne sammen for at be— slutte en Fest, en Folkefest, en Maifest, siger jeg; J ville taabeligen
+Danske Mænd! det har ofte fyldt min Barm med Stolthed, ofte begeistret mig til mangen Stordaad, ogsaa ni Dag er det med en vis Stolthed, at jeg lader det frie, det levende Ord strømme fra danske, fra jydske Leber, i denne hederveerdige Forsamling af kjakke Medborgere. Vi ere komne sammen for at debattere om Fædrelandets, det velsignede Danmarks Vee og Vel, for at debattere om et fandt og ægte Nationalanliggende, nemlig om vi skulle holde den 28de Mai hellig i Aar. Midt i en dyb Freds Skjød tør det vel være mig, skjøndt Kriger, tilladt at tale et Par Alvorsord. En— hver fjender min Mening, Enhver af Eder veed, at jeg med Liv og Sjæl hylder de friere Grundsctninger, der fra Gorm den Gam— les og Rolf Blaaskjcgs, men navnlig siden den spanske Sucæssions— krig, Julirevolutionen og Kjøbenhavnsposten, have gjort sig gjeldende i Verden og rystet Throner. Disse friere Grundscktninger hylder jeg, siger jeg; feigt er jeg ikke bleven stagende pan Halvveien, men har trolige strebt at føre mig selv det Liberalismens, Skandinavismens og Pan— slavismens Maal imøde, der som en mægtig Hjerte inden foie Tid vil lyse over al Verden. Ja, ligesom disse Glas, jeg nyligen sønderspar— fede med min Fod, saaledes, mener jeg, skulle snart Despotiets Taager briste! J ere paa denne Dag komne sammen, for at fatte en Beslut— ning, der med uudslettelige Trak vil staae brændemærfet i Verdens Aarboger ved Evighedens Ophør; J ere komne sammen for at be— slutte en Fest, en Folkefest, en Maifest, siger jeg; J ville taabeligen
 <pb facs="256.jpg"/>og uoverlagt feire den 28de Mai? Nei, mine Brødre! Saaledes bor det ikke være! Jeg raaber det høit og lydeligt, ja fan høit og lydeligt, at det skal kunne høres fra Viborg til Badstuestrade (erdvend. Applaus), at Stenderinstitutionen efter fin nærværende Organisation og hidtilverende Frugter, eller, hvad jeg vilde sige, efter fin hidtil— værende Organisation og nærværende Frugter, nei! hvordan var det nu? — ja! — jeg gjentager det — at Staenderinstitutionen ikke er stikket til at væske glade Følelser. Det er en mægtig Kiendsgjer⸗ ning, som altid vil staae uimodsagt og uimodsigelig, en Kjendsgjer— ning, som selv de fjerneste Slægter i tusinde og atter tusinde Led ville indtomme, en Kjendsgjerning, som ligger soleklar for Alver— dens Sine, — — (bor! Hør) danske Mænd! Haabspulmende Taler og glade Sange have i flere Aar lydt trindt i Landet; men — have vi faget Constution, eller Skattebevilling, eller Jernbaner? er Lande— veien bleven bedre? og ligesom en enkelt Fakkel tjener til at oplyse, hvor mørkt Mørket er, saaledes ville ogsaa vi, naar vi spise og drikke paa den 28de Mai, bestyrke min Paastand, at vor Taushed netop ved fin Taushed skal tale faa høit, at selv den, der er dovere end den Doveste, vil kunne høre den. See! saaledes vil Maigildet blive (normende Bifald, 1eve Spræl! e. f. e.). Uagtet der altsaa flet ingen Anledning er til at feire den 28de Mai, stemmer jeg alligevel paa at vi holde Maigilde, for at jeg og ligesindede Talere kunne udtale vore Ideer for hele Communen. Jeg har talt!
 Zlat.
 Har Nogen Noget at indvende mod den sidste Talers Amende— ment? — — Da Ingen begjærer Ordet — — —

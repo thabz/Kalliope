@@ -12,6 +12,7 @@ export const flagMap = Object.freeze(Object.assign(Object.create(null), {
   gr: '🇬🇷',
   ir: '🇮🇷',
   fi: '🇫🇮',
+  is: '🇮🇸',
   ch: '🇨🇭',
   at: '🇦🇹',
   pt: '🇵🇹',

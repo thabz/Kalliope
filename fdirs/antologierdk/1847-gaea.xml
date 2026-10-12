@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1847-gaea" author="antologierdk" status="complete" type="poetry" ignore-tests="pagebreak-count">
+<kalliopework id="1847-gaea" author="antologierdk" status="complete" type="poetry" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
   <title>Gæa. Æsthetisk Aarbog</title>
+  <toctitle>1847</toctitle>
+  <breadcrumbtitle>1847</breadcrumbtitle>
   <year>1847</year>
   <pagebreaks/>
   <source href="https://archive.org/details/gaea-1847" facsimile="gaea1847.pdf" facsimile-pages-num="325" facsimile-pages-offset="6">P. L. Møller (udg.): <i>Gæa. Æsthetisk Aarbog</i>, Udgiverens Forlag, Kjøbenhavn, 1847. Digitaliseret af Det Kgl. Bibliotek.</source>
@@ -792,12 +794,14 @@ aa fcyttes. C. Mererfen,
 </body>
 </text>
 
-<text id="antologierdk20260814214">
+<text id="antologierdk20260814214" skip-index="true">
 <head>
   <title>Den Moderløse</title>
   <firstline>Bohmifk Føleesang</firstline>
+  <notes>
+    <note>Bøhmisk folkesang, oversat af P. L. Møller.</note>
+  </notes>
   <source pages="56-58" facsimile-pages="62-64"/>
-  <notes><note>Bøhmisk folkesang, oversat af P. L. Møller.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -877,10 +881,13 @@ Gregorio.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814215" author="gaea1847gregorio">
+<text id="anonym1800dk20260814215" author="anonym1800dk">
 <head>
   <title>En Høisang</title>
   <firstline>En Høisang</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="58" facsimile-pages="64-65"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -920,10 +927,13 @@ Og det fulde Hjertes høie Sang.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814216" author="gaea1847gregorio">
+<text id="anonym1800dk20260814216" author="anonym1800dk">
 <head>
   <title>Til H. N. Clausen</title>
   <firstline>Aarsdagen efter Falkeltoget 1811</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="59" facsimile-pages="65-66"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -976,10 +986,13 @@ Der har Vaarens Spirer i fir Indre.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814217" author="gaea1847gregorio">
+<text id="anonym1800dk20260814217" author="anonym1800dk">
 <head>
   <title>Harald Haarderaade</title>
   <firstline>Harald Haarderaade</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="60" facsimile-pages="66-66"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1012,10 +1025,13 @@ Willemoes.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814218" author="gaea1847gregorio">
+<text id="anonym1800dk20260814218" author="anonym1800dk">
 <head>
   <title>Willemoes</title>
   <firstline>Willemoes</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="60-61" facsimile-pages="66-67"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1056,10 +1072,13 @@ Som knap for Æren takked.,,Ja, var jeg Konge” raabte han,,,Da blev han Admira
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814219" author="gaea1847gregorio">
+<text id="anonym1800dk20260814219" author="anonym1800dk">
 <head>
   <title>Whistpartiet</title>
   <firstline>Whistpartiet</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="61-62" facsimile-pages="67-68"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1091,10 +1110,13 @@ Og de ramte mig alle.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814220" author="gaea1847gregorio">
+<text id="anonym1800dk20260814220" author="anonym1800dk">
 <head>
   <title>Paa Gaden</title>
   <firstline>Van Gaden</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="62" facsimile-pages="68-68"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1129,10 +1151,13 @@ Sage jeg aldrig flig en Sol at gløde.
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814221" author="gaea1847gregorio">
+<text id="anonym1800dk20260814221" author="anonym1800dk">
 <head>
   <title>Et Møde</title>
   <firstline>Et Mode</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="62-63" facsimile-pages="68-69"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1162,10 +1187,13 @@ Og jeg herte Byens Klokker kime!
 </body>
 </text>
 
-<text id="gaea1847gregorio20260814222" author="gaea1847gregorio">
+<text id="anonym1800dk20260814222" author="anonym1800dk">
 <head>
   <title>Billet-doux</title>
   <firstline>Billet-donx</firstline>
+  <notes>
+    <note>Trykt under navnet Gregorio.</note>
+  </notes>
   <source pages="63-64" facsimile-pages="69-70"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1195,7 +1223,6 @@ Min yudige Veninde,
 
 Tag Hatten og Schawlet, jeg kjender,
 Da — skal jeg dig finde!
-
 </poetry>
 </body>
 </text>
@@ -1203,7 +1230,6 @@ Da — skal jeg dig finde!
 <text id="moellerpl20260814223" author="moellerpl">
 <head>
   <title>Skizzer af Folkelivet</title>
-  <firstline>Skizzer af Folkelivet</firstline>
   <source pages="64-101" facsimile-pages="70-107"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -1259,7 +1285,7 @@ Nu syntes Tiden at være kommen til at fætte Kronen paa hans Lykke. Han aflagde
 Han syntes nu alene at ville leve for fine Borgerpligter. Da han virkelig besad Duelighed og Iver i sit Fag, faldt der ham ikke vansteligt at erholde Ansættelse som Skolelærer i et temmelig velha— vende Sogn. Her gik det uu en Tidlang ret godt; dog begyndte man efterhaanden at spore en merkelig Distraction hos ham. Under— tiden talte hau høit med sig selv i Skolen, undertiden blev han sid— dende i fir egen Stue og spillede paa fin Bas længe efter, at alle Børnene vare samlede. Prasten gav ham en mild Paamindelse; men det stod ikke langer i Christens Magt at vare anderledes. Undertiden kom der en saadan Uro over ham, at han ikke kunde blive hjemme. Han drog da ud i Landet, mange Miil omkring, og blev borte i hele Uger. Naar han kom til Folk, som han kjendte, indkvarterede han sig gjerne i nogle Dage hos dem som en Mand, der i Et og Alt var tin egen Herre, og viste sig fædvanlig ganske opromt dog fornuftig. Paa saadanne Fodtoure kom han ogsaa under— tiden til mine Foraldre. Jeg erindrer endnu, hvorledes han kunde gage hele Timer med store Skridt fra det ene Hjorne i Stuen til det andet, og tale med min Fader. Paa mig gjorde han nasten ct uhyggeligt Indtryk, hans Been vare, syntes mig, blevne meget len— gere og tyndere, og Haaret hang uordentligt om hans Hoved. Mig
 <pb facs="080.jpg"/>indlod han sig ikke synderligt med; dels havde han maaskee en dunkel Erindring om, wat jeg tidligere havde været for nergagende i mine Drillerier mod ham, dels nærede han Jalousi mod mig, fordi jeg var kommen i Latinskolen, og saaledes alt maatte have lært Et og Andet, som han ikke forstod sig paa. Dette gav sig Luft i adftillige spydige Yttringer; naar jeg gjorde en eller anden Indvending, kaldte han mig,,Professoren“,,,Hr. Latiner“ osv.
 Den sidste Gang, jeg traf sammen med ham, var tilspes paa en Jagt, somt gik fra Thisted til Kjøbenhavn. Jeg fulde ikke læns ger end til Aalborg; men jeg hørte, at han agtede sig til Hoved— staden. Hans Vasen var da bleven endnu mere fært og afstikkende. Jeg hørte, at han havde opgivet fit Embede, for at følge en hyiere Kaldelse. J de Aar, han havde fort hint ustadige omflakkende Liv, havde hans Tanker været i stadig og livlig Bevegelse; medens han blandt Almuen efterhaanden kom i Orde som fjantet eller halotosset, var haus hele Sjæl betagen af ædle philanthropiske Ideer. Han havde hørt fortælle, at der i det store, rige Kjøbenhavn fandtes blandt en talrig Menneskeklasse en Fattigdom og Nød, hvorom man paa Landet i Provindserne neppe har noget Begreb, at utallige Børn henlevede der i Hunger, Smuds og den dybeste Elendighed, og maatte favne endog kun den tarveligste og nodvendigste Under— visning. Dette slog ned som et Lyn i haus Sjæl; haus Beslutning var strax fattet, han vilde optræde som Apostel eller Missionær blandt de kjøbenhavnske Proletarer. Denne hans Hensigt var allerede bekjendt mellem Passagererne paa Skibet, og man var udelikat nok til at benytte det til pan alle Maader at harællere ham, en Tilbvielighed, som Jyderne synes at have tilfælles med de ovrige Danffe. Hvor han viste sig paa Dakket, var han strax omringet af Folk, som først søgte at gjøre ham troskyldig, for siden dobbelt at kunne have ham til Bedste; mod mig var han det ene Sieblik meget fortrolig, i det næjte syntes det atter som om en fjendtlig Magt stod mellem os. Men man chikanerede ham ogsag i andre Retninger. Med det for
-<pb facs="081.jpg"/>de saakaldie Sindsspage færegne Instinkt havde han nede i Kahytten beredt sig til Nattehvile et ganske fortreffeligt Leie, hvilket han havde beregnet fon fin Eiendom ved en lille Kasse, meerket med haus Navn. Da det begyndte at morknes, havde Nogle, ifølge Aftale, holdt ham med Suak paa Dakket saalenge, til alle de Andre vare komne ned og havde taget hele Kahytten i Besiddelse, og deriblandt ogsaa Skole— mesterens Leie, faa der ikke var Plads til flere. Da han kom ned og fade, hvorledes han var overlistet, udbrod han i en Tordentale. Efterhaanden, som han udmattedes, gik Talen over i en bliv For— wivlelses Tone, og tilsidst udbrod han med prophetist Salvelse:,,Himmelens Fugle have Reder, og Ravene have Huler, men Men- neskens Sun“ — — her indtraadte en Pause, han syntes at be— tenke sig pan at fuldende Citatet og dets Anvendelse paa ham selv. Han kneb sig op i en Krog, hvor han netop kunde fage Plads til at sidde, og hensank i taus Lethargi. Imidlertid vare de andre Passagerer ingenlunde gaaet ned for at sove. De tilbragte flere Timer med Fjas, Latter og Støi.,,Nu sover nok Skolemesteren,“ udbrud endelig En.,,Nei,“ lod det henne fra hans Krog,,,man sover just ikke, fordi man ikke ligger og griner og forstyrrer de An— dres Rou.“ —,,A— men!“ istemte de Alle i Chor. Og saaledes har han vel havt fin Plage paa hele Touren.
+<pb facs="081.jpg"/>de saakaldie Sindsspage færegne Instinkt havde han nede i Kahytten beredt sig til Nattehvile et ganske fortreffeligt Leie, hvilket han havde beregnet fon fin Eiendom ved en lille Kasse, meerket med haus Navn. Da det begyndte at morknes, havde Nogle, ifølge Aftale, holdt ham med Suak paa Dakket saalenge, til alle de Andre vare komne ned og havde taget hele Kahytten i Besiddelse, og deriblandt ogsaa Skole— mesterens Leie, faa der ikke var Plads til flere. Da han kom ned og fade, hvorledes han var overlistet, udbrod han i en Tordentale. Efterhaanden, som han udmattedes, gik Talen over i en bliv For— wivlelses Tone, og tilsidst udbrod han med prophetist Salvelse:,,Himmelens Fugle have Reder, og Ravene have Huler, men Menneskens Sun“ — — her indtraadte en Pause, han syntes at be— tenke sig pan at fuldende Citatet og dets Anvendelse paa ham selv. Han kneb sig op i en Krog, hvor han netop kunde fage Plads til at sidde, og hensank i taus Lethargi. Imidlertid vare de andre Passagerer ingenlunde gaaet ned for at sove. De tilbragte flere Timer med Fjas, Latter og Støi.,,Nu sover nok Skolemesteren,“ udbrud endelig En.,,Nei,“ lod det henne fra hans Krog,,,man sover just ikke, fordi man ikke ligger og griner og forstyrrer de An— dres Rou.“ —,,A— men!“ istemte de Alle i Chor. Og saaledes har han vel havt fin Plage paa hele Touren.
 Angagende hans Eventyr i Kjøbenhavn, da hørte vi snart, at han havde spillet en glimrende, men fort Rolle. Han havde ikke ladet det mangle paa Energi og Iver for fin Idee; uden at fristes af de mangehaande Midler til Forlystelse og Adspredelse, som Ho— vedstaden frembyder, havde han strax opsøgt og fundet det Publi— kum, han vilde,,føre fin Tids Oplysning imøde“. Flere Gange havde han paa offentlige Pladse samlet en Kreds af Tiggerbørn og Gade— Drenge om sig, for hvem han prædifede Bibelens og Balles Evan— gelium, eller foredrog ABC'ens og den lille Tabels Mysterier. Men hver Gang havde Politiet grebet ind med væbnet Haand og adsplittet Forsamlingen, samt advaret ham imod oftere at prasidere
 <pb facs="082.jpg"/>ved saadanne Moder. Da han alligevel, fit ophøiede Kald tro, vedblev,,at frygte Gud: meer end Menneskene“, blev det ham be— tydet, at han gjorde bedst i med det Gode at forfoie sig bort fra Staden. Han var ba vandret ud omkring paa Landet, og var til sidst bleven antaget et Sted som Hjelpelerer ved en Skole.
 Saapidt og ikke videre strakte mine Efterretninger sig om Chri— sten Skolemester, da jeg en 15— 16 Aar efter faa uventet skulde giensee ham i en ny Skikkelse, nemlig som Virtuos og Rhapsode i den ovennævnte Landsbykro. Da han havde sunget, tog han en Bid Brod, skjcnkede sig en Snaps, og fad taus og sage ned for sig, medens Samtalen atter susede hen som en Bifværm blandt Forsam— lingen. Den samme unge Knos, som for opfordrede ham til Sang, traadte nu atter frem, og sagde med en endnu mere indsmigrende Tone, der fulde udtrykke strømtet Agtelse og Beundring:,,Ja, Sføle- mester, vi fane vel ogsaa den, De har digtet til Karen?“
@@ -1347,7 +1373,7 @@ Reberet et Paer Beklader + — 1 fl - En Frake omsoyet derfoeo e 38 — - Rebær
 sem 5 4 J 8 2 Kiøben d. 25 Janivar 1840.
 Han havde en jevnaldrende Veninde, om Kone eller Elskerinde skal jeg ikke kunne sige, men Forholdet mellem dem var meget liberalt. Naar det gik godt med Fortjenesten, indkaldte han hende (ligesom man indkalder sine Creditorer eller sammenkalder Stenderne) til at dele Bord og Seng med ham, og han fif da saalenge vadsket om sig og gjort reent, høilket ellers ikke skfete. Men naar han intet Arbeide havde, opløste han atter Baandet, og jog hende uden videre bort. Naringssorg virkede hos ham altid paa Hjernen; naar det gik godt, var han ganske fornuftig, men gik det daarlig, lob han som en Vanvittig med Regninger til Folk, som aldrig havde ladet sye hos ham, og forfulgte Bekjendte og Übekjendte paa Gaden. J en saadan Paroxysme fif han engang en phantastisk Lyst til at reise til Hamborg, hvor han havde levet fine lykkelige Ungdomsagar. Han haabede at fage fri Reise ved at paatage sig Commissioner for Lysthavende, og indrykkede i Adresavisen (bogstavelig) Følgende:,,Jeg agter mig Rese til Hamborg. De ville behage at henvende
 Dem i fl. Kannikestrcde Nr. ..“
-At fætte Navn under forsmagede han, som den store Skribent, der er overbevist om at gjenkjendes af fit Folk paa et eneste,,Pen- nestrog.“ Da imidlertid Ingen indfandt sig efter dette Avertissement, begav han sig alligevel paa Reisen, men kom ikke længer end til
+At fætte Navn under forsmagede han, som den store Skribent, der er overbevist om at gjenkjendes af fit Folk paa et eneste,,Pennestrog.“ Da imidlertid Ingen indfandt sig efter dette Avertissement, begav han sig alligevel paa Reisen, men kom ikke længer end til
 <pb facs="092.jpg"/>Roskildekro. Senere er han død, fandfynlig som Fattiglem. Men i Livet havde han altid en honnet Ambition, og jeg haaber derfor han i fin Himmel vil være mig forbunden, fordi jeg her har værnet om hans Minde. —
 Men tilbage til mine Proletarer. Den, som strax fortrinsvis tildrog sig min Opmarksomhed, var Spenden. Han var lyshaaret og spinkel af Bygning, med et underligt melaukolsk Udtryk i det blege Ansigt. Ofte bevægede hans Læber sig i en selsom Blanding af Bitterhed og Vemod; men naar han sage op fra fit Arbeide (og det stete gjerne for at henvende et Par venlige Ord til den unge Pige, som besvarede dem med kjendelig Interesse), jaa var der i hans Sine en jaa overordentlig Blidhed, og tillige en dunkelt ulmende Glød, Noget fan mildt og fjærligt og tillige dybt og gjennemborende, at jeg aldrig har kunnet glemme dette Blik. Skroder, saaledes hørte jeg, de kaldte ham, syntes ikke at skjænfe mig nogen Opmarksomhed, og reiste sig temmelig distrait, da Mesteren indbod ham til at del— tage i Forhandlingerne over min Vinterfrakke. Da jeg imidlertid troede at have gjort mig fuldkommen forstagelig for Hr. Petersen, tog jeg Afsked med den noget overdrevne Artighed og Venlighed, hvortil man let føler sig opfordret blandt Mennesker, som i deres tilsyneladende Armod maaskee ikke ere ulykkeligere end vi, der fjende og nyde de jordiske Goder.
 Nogle Dage derefter, da jeg tilfældigvis kom gjennem den Gade, hvor Skrederen boede, gik jeg derop, for at fryde mig ved Realise⸗ ringen af min Idee, men egentlig mest af Lyst til at gjøre nærmere Bekjendtskab med Skroder.
@@ -1823,7 +1849,6 @@ B, 0 —
 <text id="lorenzench20260814230" author="lorenzench">
 <head>
   <title>Achilles paa Skyros</title>
-  <firstline>Af C. H. Lorenzen</firstline>
   <source pages="110-136" facsimile-pages="117-143"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -2080,8 +2105,10 @@ KR FED—
 <head>
   <title>Helvede. Femte Sang</title>
   <firstline>femte Zaug, ”)</firstline>
+  <notes>
+    <note>Oversat af P. L. Møller efter Dante Alighieri.</note>
+  </notes>
   <source pages="137-141" facsimile-pages="143-148"/>
-  <notes><note>Oversat af P. L. Møller efter Dante Alighieri.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -2529,7 +2556,6 @@ O stig, jeg er munter og glad!
 <text id="etlar20260814233" author="etlar">
 <head>
   <title>Djævelens Bro</title>
-  <firstline>Diwvelens Bro, Et Folkesagn fortalt af</firstline>
   <source pages="149-157" facsimile-pages="155-163"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -3478,7 +3504,6 @@ eee
 <text id="moellerpl20260814246" author="moellerpl">
 <head>
   <title>En Historie fra Cadix</title>
-  <firstline>fortalt af V. 2. Moller</firstline>
   <source pages="195-200" facsimile-pages="203-209"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -3551,7 +3576,6 @@ ADorgenjoren havde overvundet Nattens Dunster, og kastede sine Straaler uhindret
 <text id="thistedv20260814247" author="thistedv">
 <head>
   <title>Informatoren</title>
-  <firstline>Saa tom og forladt Naturen end er i denne Egn, er den dog meget tiltræskende. Den er vel nøgen, men dog storartet, vel for— virret, men dog gribende. Klipperne ligge henkastede imellem hver— andre, men levne dog Moder Natur hist og her en s</firstline>
   <source pages="200-232" facsimile-pages="209-240"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -4297,10 +4321,9 @@ Og Bondeskaren jubler høit:,,Hurra for Arrans Drot!“
 </body>
 </text>
 
-<text id="antologierdk20260814253">
+<text id="antologierdk20260814253" skip-index="true">
 <head>
   <title>Breve fra Grækenland</title>
-  <firstline>Breve fra Grækenland</firstline>
   <source pages="243-273" facsimile-pages="251-283"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -4401,7 +4424,7 @@ Dette var en af vore sidste Udflugter. Jeg blev forstemt ved at tenke pan Adskil
 <pb facs="269.jpg"/>iagttaget. Men engang, da hun var gaget ud for at kjøbe Vin⸗ Druer til mig, benyttede jeg Leiligheden, gik ned til Piræus, hvor jeg netop traf en Skipper, som neste Dag vilde gage til Epidauros i en gaben Baad, og for at lægge et Baand paa mig selv, betalte jeg ham Fragten forud.
 Da jeg om Morgenen pakkede mit Toi ind, og Eleutheria fane, at det blev Alvor, var hun ganske forandret. Hun spurgte mig i en ligegyldig Tone om min Route, og ved hvert Sted jeg nævnte, taug hun nogle Sieblikke, som om hun ret vilde indprente sig de hende uden Tvivl ubekjendee Navne. Taus og rolig hjalp hun selv til; hun sage ud som En, der efter en haard Kamp har fattet fin Be— slunning. Jeg gav hende en lille Sum Penge, og hun tog derimod, nasten uden at bemerke det; hendes Sjæl var fraværende. Forst da jeg til Afsked takkede hende for al den Tjeneste, hun havde viist mig, og rakte hende Haanden, og da jeg venlig klappede hende paa Kinden, da bevægede hendes Bryst sig krampagtig, og hun begyndte at hulke.,,Grad ikke, Eleutherig!“ sagde jeg,,,farvel mit fjære Barn, Gud bevare Dig! vi sees jo snart igjen!“ og hermed ilede jeg bort. Saalenge jeg kunde fee, blev hun stagende i Khanens Port, ubevægelig som Athenestøtten paa Borgen.
 Vinden var god, og Veiret ikke mindre, da jeg forlod det frugt— og blomsterrige, det — som en gammel Digter siger,,fiolomgivne“ Athen. Snart stroge vi forbi den skjønne O Engia (gina) be— kjendt af sine herlige Bjergformationer og sin Rigdom i Oldtiden som i Nutiden, men iser af det prægtige Panhelleniostempel, der fra sit Bjerg skuer vidt ud over Havet, og som vi allerede lige fra Piræus havde for Sie. Foran os udftrafte nu Morca fine Fjælde, den ene Mæske høiere end den anden, og allerede om Eftermiddagen lob vi ind i Epidauros's Havn, Da der i denne simple Ladeplads ikke er nogen ordentlig Khan, fik jeg ved min Skippers Anvisning Privatlogis hos en Pottemager, det vil sige, jeg fik Lov at benytte en Benk og en Krog i den Stue, hvor han og hans Familie be—
-<pb facs="270.jpg"/>fandt sig. Det var meget gemytlige Folk, men jeg nægter det ikke, her paa Landjorden følte jeg et Savn, en Tomhed, hvis Aarsag jeg nødig vilde tilstage mig selb. Jeg brev lidt om paa egen Haand, og betragtede Folkelivet, iser Matroserne, som færdedes ved Havnen. Tidlig neste Morgen fif jeg en Forer; jeg tog Afsked og besteg mit Mulesel, for at besøge Afklepios's berømte hellige Lund, egentlig en Dal, som er opfyldt med de kosteligste Ruiner. Her var nok for mig at see i et Par Dage. Jeg logerede mig ind hos en Bonde, hvor man paa den ene Side har Udsigt til Dalen, paa den anden til de argoliske og over dem til de arkadiske Bjerge ... (føler Du ikke en lengselfuld Zittren ved at læfe det Ord,,arkadiste“) og udenfor hans Hytte sidder jeg paa en antik Marmorblok og skriver disse Linier. Jeg skriver ogsaa adskillige andre Ting i de første Morgen- timer, thi snart bliver det for varmt, fan flygter jeg ned til Dalen, hvor Cypresser og Plataner malerisk skyde frem blandt de uhyre Ruiner.
+<pb facs="270.jpg"/>fandt sig. Det var meget gemytlige Folk, men jeg nægter det ikke, her paa Landjorden følte jeg et Savn, en Tomhed, hvis Aarsag jeg nødig vilde tilstage mig selb. Jeg brev lidt om paa egen Haand, og betragtede Folkelivet, iser Matroserne, som færdedes ved Havnen. Tidlig neste Morgen fif jeg en Forer; jeg tog Afsked og besteg mit Mulesel, for at besøge Afklepios's berømte hellige Lund, egentlig en Dal, som er opfyldt med de kosteligste Ruiner. Her var nok for mig at see i et Par Dage. Jeg logerede mig ind hos en Bonde, hvor man paa den ene Side har Udsigt til Dalen, paa den anden til de argoliske og over dem til de arkadiske Bjerge ... (føler Du ikke en lengselfuld Zittren ved at læfe det Ord,,arkadiste“) og udenfor hans Hytte sidder jeg paa en antik Marmorblok og skriver disse Linier. Jeg skriver ogsaa adskillige andre Ting i de første Morgentimer, thi snart bliver det for varmt, fan flygter jeg ned til Dalen, hvor Cypresser og Plataner malerisk skyde frem blandt de uhyre Ruiner.
 Her sad jeg anden Dagen efter min Ankomst, hensunken i Beundring af det store Theater, hvis hvide Marmor her i Dalens Skygge har bevaret sig næften uforandret. Jeg følte mig meer end nogensinde for greben af den gamle Kunsts Storhed, og dog — følte jeg mig første Gang ret ensom og forladt. Jeg havde for første Gang et Aufald af Hjemvee, eller snarere Menneskevee. Jeg længtes ikke efter Østergade og Tivoli, hverken efter,,Berlingske“ eller,,Fedrelandet“, jeg leengtes efter et menneskeligt Veen, en Sjæl, ikke til at underholde mig med, nei blot til at være om mig, til at indaande denne balsamiske Luft i mit Selskab.
 Og her var faa taust, faa panik stille, ikke en Vind bevægede Træerne, kun en Fugl fløi af og til hurtig hen over mit Hoved. Melankolst sænkede jeg mit Blik dybt ind i den vidunderlig klare Himmel, og det gled nesten ligegyldig hen over de hvide Bjergtoppe og de yppig grønne Dale. Jeg fan udstrakt i Grasset og tenkte paa — de lykkelige Dage i Athenen og paa — — Phantasten bes
 <pb facs="271.jpg"/>gyndte at virke og udmale Gjensynet med fine lokkende Farver, For⸗ standen talte med og forsikkrede, at naar jeg kom tilbage, vilde hele Trylleriet være hævet; men den første seirede dog og førte mig med sig fra Billede til Billede, fan jeg tilsidst befandt mig imellem vaa— gen Tilstand og Drøm. Hvorlenge det varede, kan jeg ikke sige; men pludsclig vaktes jeg ved at en vild Kat sprang frem fra Bu— stene forbi mit Hvilested, og pilede afsted, som om den var forfulgt. Uvilkaarlig undersøgte jeg mine Pistoler, for at være belavet paa ethvert Eveutyr. Noget efter hører jeg ogsaa Fodtrin, som vare mig temmelig nær, men saa leite, at de ikke vare stikkede til at indsage nogen syn⸗ derlig Skræk. Jeg synes at høre en mig bekjendt Melodi, jeg rei— for mig for at lytie, men idetsamme opdager jeg over en af Thea— trets Benke en rød Fez og et Par førte lynende Sine.,,Eleuthe— ria“, udbrod jeg uvilkaarlig, inden jeg havde feet Mere, og strax sage jeg fra mit Hvilested et Par yndige Been spave i de dristigste Spring hen over Marmortrapperne ned til mig. Det var hende; med vdmpg bedende Miner nærmede hun sig, som fordum Thetis hos Homer, og omfavnede mine Knæ. Da var det forbi med min Stoicisme, jeg tog hen for første Gang ømt i mine Arme, løftede hende op til mig og kyssede hende. Det fjære Barn var ganske ustyrligt, hun loe og græd paa æn Gang, sprang og dandsede omkring mig, og kastede sig tilsidst, med et Spring som en Gemse, igjen i mine Arme. Jeg lagde heller ikke Skjul paa min Glæde, jeg kjelede for hende, fortalte hvorledes jeg havde længtes efter hende, og gav mig som i en Slags Inspiration til at synge et Par Vers af en græft Folkesang hun tidligere havde fært mig. Det er en, som Børnene starevis drage om og synge paa den almindelige græske Børnefest, den 1ste Marts; den [yder i temmelig ordret Overseettelse saaledes:
@@ -4447,7 +4470,7 @@ Jeg havde fortalt hende om Middelalderens Kampe og Ridder— livet; hun betragte
 Vi droge over Megalopolis, og gjennem de blomstrende Dale, hvor Floden Alphcos — faa beromt ved sin Kjærlighed til Kilden Arethusa — iler frem fra fit dunkle Üdspring, heftig, ungdommelig brusende som den uerfarne Yugling, der en fort Tid tumler sig i fyrig Livsglade, for snart at tabe sig og forsvinde i et Middelhav af Skuffelser, Slovhed og Glemsel. Vi rede nu mod Sydost, og nærmede os Grendserne af Lakonien. Her gik det nesten bestandig opad, Bjergtoppene viste sig indhyllede i Skyer, og rundtom os ga— bede ofte dybe hemmelighedsfulde Afgrunde. Landet var mindre be— bygget, og en ublid Vind kom af og til ned fra Bjergene. De smaa Floder viste sig hyppigere og med et ilsommere Lob, end forhen. Nogle usle Hytter hang hist og her som Svalereder paa de terrasse— formede Fjeldstraaninger. J Landsbyen Drionest havde vi faget en Agojat af mainotiisk Herkomst, som med fit vilde førte Skjcg og den pjaltede Kappe, kastet som en Lovehud over herakleiske Must⸗
 <pb facs="278.jpg"/>—V— —— —
 ler, flet ikke var skikket til at indgyde Tillid. Eleutheria betragtede ham ofte med en vis Uro, og tilkastede ham mistenksomme Blikke. Han fulde føre os til Lykconbjerget, et af de høieste Punkter i denne Egn, og derefter skaffe os Natteleie i en Landsby, hvor han kjendte et Par gamle Folk. Da vi naaede Bjergets vverste Flade, laa endnu den tætte Taage om dets Cider lig Røgen af hundrede Landsbyer; men snart fordelte den sig, og vi havde nu et Syn, som jeg aldrig glemmer. Dybt under vore Fødder, bekrandset af dunkle Lunde, giennemstrømmet af Eurotas, udbredte sig den lakoniske Slette. Vi stjelnede tydelig Byen Mistra, der omtrent betegner Stedet, hvor det gamle Sparta laa. Men rundtom os viste sig hele Peleponnes som det Platanblad, hvormed en gammel Forfatter har sammenlignet det, med fine utallige Bugter, Bjergforgreuinger og Forbjerge, dybe Dale og stinnende Floder; et Landskab, omtrent faa stort som Jylland, oversage man her nesten med æt Blik. Eleutheriga græd af Forbauselse og sank uvilkaarlig paa Knæ; Foreren stod ligegyldig og underholdt lig med Muldyrene, uden at forraade nogen Veveegelse. Maastee havde han været her ofte for. Vi holdt et let Maaliid her, henved 7000 Fod over Havets Overflade; jeg følte mig jaa salig, faq op— løftet over alt Smaaligt og Jammerligt, at jeg havde ondt ved at loͤsrive mig fra dette Sted. Tilsidst tændte jeg en Cigar, for faa⸗ ledes spidsborgerlig indviet atter at nedstige til det jordiste Liv. Mod Aften nagede vi den By, hvor vi skulde overnatte. Husene lage adspredte, ligesom klinede op ad en skraa Klippe, og det hvor— til vi fortes, var et af de usleste. Udenfor legede nogle pjaltede Børn, men de legede dog ikke som andre europciste Børn, deres Bevegelser vare harmoniske, deres Leg var en Dands, og istedenfor Orchester fang de og klappede i Hænderne. Vi traadte ind i Hytten, der som fædvanlig var Et med Siuen. Væggene vare førte af Røg; en gammel Kone fad ved Ildstedet, og ved Siden laa en Hund, en Ko og nogle magre Faar. Manden var fraværende, men Konen tog meget venlig imod os, vi bragte et tarveligt Maaltid tilveie, og
-<pb facs="279.jpg"/>begave os til Hvile. Jeg havde paa Reisen vant mig til den græske Skik, stedse at overnatte i Kladerne. Jeg lagde mig da paa Jor- den i min Kappe, med Vadsakken under mit Hoved og mine Pisto— ler mellem den og Veggen. Konen fnorkede allerede ved Ildstedet, og Agojaten laa mellem Kveget. Eleutheria havde som sedvanlig aget fin Plads ved mit Hovedgjerde, jeg trykkede hendes lille Haand til Godnat, og sov ind. Men Eleutheria sov ikke, eller rettere, hun sov altid med vaagen Sjæl; med et forunderligt Instinet vaagnede hun stedse ved den mindste Bevægelfe, og naar jeg var vaagen, spurgte hun om jeg tørstede, og lob strax efter, Hvad jeg onskede.
+<pb facs="279.jpg"/>begave os til Hvile. Jeg havde paa Reisen vant mig til den græske Skik, stedse at overnatte i Kladerne. Jeg lagde mig da paa Jorden i min Kappe, med Vadsakken under mit Hoved og mine Pisto— ler mellem den og Veggen. Konen fnorkede allerede ved Ildstedet, og Agojaten laa mellem Kveget. Eleutheria havde som sedvanlig aget fin Plads ved mit Hovedgjerde, jeg trykkede hendes lille Haand til Godnat, og sov ind. Men Eleutheria sov ikke, eller rettere, hun sov altid med vaagen Sjæl; med et forunderligt Instinet vaagnede hun stedse ved den mindste Bevægelfe, og naar jeg var vaagen, spurgte hun om jeg tørstede, og lob strax efter, Hvad jeg onskede.
 Der kunde vel være gaaet en Timestid, da Noget forstyrrede min Sven; dog faldt jeg strax hen igjen. Men lidt efter vakkedes jeg af en lydelig Støi, jeg reiste mig, og følte efter mine Pistoler; den ene var borte. Foran mit Leie skimtede jeg Eleutherias Skikkelse, jeg hørte nogle heftige Udbrud som af Mennester, der brydes; men idetsamme faldt et Skud, og Eleutheria sank til Jorden. J den redsomste Skræk fløi jeg op, kaldte paa Eleutheria — hun sparede ikke; jeg raabte pan Lys, styrtede hen til Ildstedet, og befalede Konen at staffe Lys. Hun nolede noget, men fik endelig tændt en Fyrre— spaan, saa at jeg kunde overskue Scenen. Skuddet havde ikke ram⸗ met Eleutheria, det var tvertimod hende, der havde affyret det, thi ved Siden af hende laa Agojaten med knust Bande. Men i samme Øieblik, som hun opoffrende og uforfærdet havde reddet mit Liv og hvad jeg eiede, havde Skurken giennemboret hende med fir Kniv. Hun var besvimet, og en Blodstrøm piblede frem af hendes Bryst. Jeg havde Besindelse nok til at hente koldt Band og rive Lærred op af min Vadsak for at forbinde hende, og standse Blodet. Men Alt var forgjcves, en ond Daemon havde fort hans Haand, og det hulde Liv vendte kun een Gang endnu tilbage, for i et Blik fuldt af Kjerlighed at vise mig et Glimt af den herlige Sjæl.
 Dog hvad var herved at gjøre? — Synderen lag paa sine Gjerninger, min Lykke og Glæde havde han taget med sig, og alt
 <pb facs="280.jpg"/>mit Raseri og min Fortvivlelse var spildt. Konen, der rimeligviis havde været i Forstagelse med Roveren, hylede som en Besat; kjed af at höre herpaa, trykte jeg det sidste Sys paa Barnets kolde Læber, sadlede felv det ene af Muldyrene, opsøgte den nermeste Sognefoged, og meddelte ham det Passerede. Det var en verdig Olding, han tilbød mig Ophold i fit Huus saalenge det gjordes fornødent, og vifte mig selv hen til Prasten. Det var en Trøst, skjøndt en sørge— lig, for mit sønderrevne Hjerte, at jeg for en langt større Sum, end jeg fornuftigviis kunde undvære, foranstaltede Eleutherias Be— gravelse med en Høitidelighed, Hvortil man der i Egnen ikke var vant. Jeg tilbragte endnu nogle Dage hos den brave Sognefoged, flov for Alt, for Naturen saavelsom for Menneskene; jeg veed ikke selv hvad jeg tenkte eller foretog mig i den Tid, uden at jeg ved min Verts Hjelp fif hidkaldt en Stenhugger, som under mit eget Tilsyn tilhuggede et Kors af Taygetist Marmor, hvorpaa jeg lod ham fætte følgende Ord:,,Her hviler Eleutheria af Athenen, 133 Aar gammel, hun var trofastere end en Hund, skjønnere end en Blomst, kjerligere end et Menneste.“
@@ -4456,12 +4479,14 @@ Denne Steen blev opsat paa hendes Grav; da dette var for— rettet, havde jeg he
 </body>
 </text>
 
-<text id="antologierdk20260814254">
+<text id="antologierdk20260814254" skip-index="true">
 <head>
   <title>Fragment af Reineke Vos</title>
   <firstline>ved</firstline>
+  <notes>
+    <note>Oversat fra nedertysk af Christian Winther.</note>
+  </notes>
   <source pages="274-280" facsimile-pages="283-289"/>
-  <notes><note>Oversat fra nedertysk af Christian Winther.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -5429,7 +5454,6 @@ el l Må 4.
 <text id="andersen20260814264" author="andersen">
 <head>
   <title>To Billeder fra Kjøbenhavn</title>
-  <firstline>To Billeder fra Kjøbenhaun, af 9. C. Andersen</firstline>
   <source pages="299-302" facsimile-pages="307-310"/>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
@@ -5464,8 +5488,10 @@ Em Aarestrup.
 <head>
   <title>Favorit-Sultanen</title>
   <firstline>Favorit⸗Sultänen</firstline>
+  <notes>
+    <note>Oversat af Emil Aarestrup efter Victor Hugo.</note>
+  </notes>
   <source pages="302-304" facsimile-pages="310-312"/>
-  <notes><note>Oversat af Emil Aarestrup efter Victor Hugo.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -5575,8 +5601,10 @@ En Dolk det perlesmykte Skaft.
 <head>
   <title>Slangestumperne</title>
   <firstline>Slangestumperne</firstline>
+  <notes>
+    <note>Oversat af Emil Aarestrup efter Victor Hugo.</note>
+  </notes>
   <source pages="304-305" facsimile-pages="312-313"/>
-  <notes><note>Oversat af Emil Aarestrup efter Victor Hugo.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -5654,8 +5682,10 @@ Som krympe sig og bløde.''
 <head>
   <title>Sørøversang</title>
   <firstline>Soroversang</firstline>
+  <notes>
+    <note>Oversat af Emil Aarestrup efter Victor Hugo.</note>
+  </notes>
   <source pages="305-307" facsimile-pages="313-315"/>
-  <notes><note>Oversat af Emil Aarestrup efter Victor Hugo.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -5735,8 +5765,10 @@ De NY 2 -
 <head>
   <title>Corsaren og hans Brud</title>
   <firstline>Corsaren og hans Brud.“)</firstline>
+  <notes>
+    <note>Fragment oversat af P. L. Møller efter George Gordon Byron.</note>
+  </notes>
   <source pages="307-310" facsimile-pages="315-318"/>
-  <notes><note>Fragment oversat af P. L. Møller efter George Gordon Byron.</note></notes>
   <quality>korrektur1,kilde, side,korrektur2</quality>
 </head>
 <body>
@@ -5931,7 +5963,7 @@ Maureroiets Glands kun glemme!
 </body>
 </text>
 
-<text id="antologierdk20260814270">
+<text id="antologierdk20260814270" skip-index="true">
 <head>
   <title>To Stadier af Menneskelivet</title>
   <firstline>Da gamle Lærer, for sidste Gang</firstline>
@@ -5995,7 +6027,7 @@ Frederik Høegh-Guldberg.
 </body>
 </text>
 
-<text id="antologierdk20260814272">
+<text id="antologierdk20260814272" skip-index="true">
 <head>
   <title>Tre danske Bondesange</title>
   <firstline>Den jeg oprigtig elsker</firstline>

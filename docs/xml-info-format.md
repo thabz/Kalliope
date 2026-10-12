@@ -73,7 +73,7 @@ Landekoder, som buildet accepterer i dag:
 `un` bruges som en praktisk "uden fast landegruppe"-gruppe og sorteres efter danske regler.
 
 Nationaliteter skal findes i flagopslaget i `common/flags.js`. Det understøtter
-`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`,
+`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`, `is`,
 `ch`, `at` og `pt`. Fx bevarer Runeberg sin gruppering under »andre«:
 
 ```xml
