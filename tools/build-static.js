@@ -156,6 +156,7 @@ const envFlag = (name) => {
 const skipImageThumbnails = envFlag('KALLIOPE_SKIP_IMAGE_THUMBNAILS');
 const skipElasticsearch = envFlag('KALLIOPE_SKIP_ELASTICSEARCH');
 const buildSqlite = process.argv.includes('--build-sqlite');
+const showTimings = process.argv.includes('--timings');
 
 let collected = {
   texts: new Map(),
@@ -1662,7 +1663,9 @@ const main = async () => {
   }
   refreshFilesModifiedCache();
   flushImageSizeCache();
-  print_benchmarking_results();
+  if (showTimings) {
+    print_benchmarking_results();
+  }
 };
 
 main().catch(error => {

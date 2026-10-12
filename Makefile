@@ -48,7 +48,7 @@ profile-build-static: elasticsearch
 		2>&1 | tee "$$profileDirectory/image-build.log"; \
 	$(COMPOSE) --profile build run --rm --no-deps static-builder \
 		node --cpu-prof --cpu-prof-dir="/app/$$profileDirectory" \
-		tools/build-static.js --force-reload 2>&1 | tee "$$profileDirectory/build.log"
+		tools/build-static.js --force-reload --timings 2>&1 | tee "$$profileDirectory/build.log"
 
 build-sqlite:
 	$(COMPOSE) --profile build build static-builder
