@@ -2,6 +2,7 @@ import fs from 'fs';
 import { execFileSync } from 'child_process';
 import { DOMParser } from '@xmldom/xmldom';
 import { flagMap, poetFlag } from '../../common/flags.js';
+import { poetNameString } from '../../components/poetname-helpers.js';
 
 const infoXmlFiles = () =>
   execFileSync('git', ['ls-files', 'fdirs/*/info.xml'], { encoding: 'utf8' })
@@ -51,6 +52,32 @@ describe('info.xml RELAX NG schema', () => {
     Object.values(flagMap).forEach(flag => {
       expect(flag).toMatch(/^[\u{1F1E6}-\u{1F1FF}]{2}$/u);
     });
+  });
+
+  it('does not repeat the displayed name in fullname', () => {
+    const normalizeName = value => value.normalize('NFC').trim().replace(/\s+/gu, ' ');
+    const redundantFullnames = [];
+
+    infoXmlFiles().forEach(filename => {
+      const person = new DOMParser().parseFromString(
+        fs.readFileSync(filename, 'utf8'), 'text/xml'
+      ).documentElement;
+      const name = person.getElementsByTagName('name')[0];
+      const nameText = tag => name.getElementsByTagName(tag)[0]?.textContent;
+      const fullname = nameText('fullname');
+      if (fullname == null) {
+        return;
+      }
+      const displayedName = poetNameString({
+        name: { firstname: nameText('firstname'), lastname: nameText('lastname') },
+      });
+
+      if (normalizeName(fullname) === normalizeName(displayedName)) {
+        redundantFullnames.push(`${filename}: ${fullname}`);
+      }
+    });
+
+    expect(redundantFullnames).toEqual([]);
   });
 
   it('does not contain empty works elements', () => {
