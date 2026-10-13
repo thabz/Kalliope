@@ -1,7 +1,38 @@
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import TwoColumns from './twocolumns.js';
 
-const SectionedList = ({ sections }) => {
+const SectionedList = ({ sections, keyboardNavigation = false }) => {
+  const headings = useRef(new Map());
+
+  useEffect(() => {
+    if (keyboardNavigation !== true) return;
+
+    const onKeyDown = (event) => {
+      if (
+        event.defaultPrevented === true ||
+        event.isComposing === true ||
+        event.altKey === true ||
+        event.ctrlKey === true ||
+        event.metaKey === true ||
+        event.key.length !== 1 ||
+        event.target?.isContentEditable === true ||
+        ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target?.tagName)
+      ) {
+        return;
+      }
+
+      const heading = headings.current.get(event.key.toUpperCase());
+      if (heading != null) {
+        heading.scrollIntoView();
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [keyboardNavigation]);
+
   let renderedGroups = sections.map((group, i) => {
     const { title, items, headingId } = group;
     const list = items.map((item) => {
@@ -11,7 +42,19 @@ const SectionedList = ({ sections }) => {
     });
     return (
       <div className="list-section" key={i + title}>
-        <h3 id={headingId}>{title}</h3>
+        <h3
+          id={headingId}
+          ref={(heading) => {
+            if (typeof title !== 'string' || title.length !== 1) return;
+            const key = title.toUpperCase();
+            if (heading == null) {
+              headings.current.delete(key);
+            } else {
+              headings.current.set(key, heading);
+            }
+          }}>
+          {title}
+        </h3>
         {list}
       </div>
     );
