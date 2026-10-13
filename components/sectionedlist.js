@@ -1,6 +1,27 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import TwoColumns from './twocolumns.js';
+
+export const sectionColumnSplitIndex = (sections) => {
+  if (sections.length < 2) return sections.length;
+
+  // Include space for each heading when balancing whole sections.
+  const totalWeight = sections.reduce(
+    (weight, section) => weight + section.items.length + 2,
+    0
+  );
+  let leftWeight = 0;
+  let splitIndex = 1;
+  let bestDifference = Infinity;
+  for (let index = 1; index < sections.length; index += 1) {
+    leftWeight += sections[index - 1].items.length + 2;
+    const difference = Math.abs(totalWeight - leftWeight * 2);
+    if (difference < bestDifference) {
+      splitIndex = index;
+      bestDifference = difference;
+    }
+  }
+  return splitIndex;
+};
 
 const SectionedList = ({ sections, keyboardNavigation = false }) => {
   const headings = useRef(new Map());
@@ -59,10 +80,26 @@ const SectionedList = ({ sections, keyboardNavigation = false }) => {
       </div>
     );
   });
+  const splitIndex = sectionColumnSplitIndex(sections);
   return (
-    <TwoColumns noLinkUnderline>
-      {renderedGroups}
+    <div className="sectioned-list">
+      <div className="list-column">{renderedGroups.slice(0, splitIndex)}</div>
+      <div className="list-column">{renderedGroups.slice(splitIndex)}</div>
       <style jsx>{`
+        .sectioned-list {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          column-gap: 30px;
+          align-items: start;
+        }
+        .list-column :global(a) {
+          text-decoration: none;
+        }
+        @media (max-width: 480px) {
+          .sectioned-list {
+            grid-template-columns: minmax(0, 1fr);
+          }
+        }
         :global(.list-section) {
           break-inside: avoid;
         }
@@ -82,7 +119,7 @@ const SectionedList = ({ sections, keyboardNavigation = false }) => {
           margin-bottom: 12px;
         }
       `}</style>
-    </TwoColumns>
+    </div>
   );
 };
 
