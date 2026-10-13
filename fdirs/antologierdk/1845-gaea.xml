@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1845-gaea" author="antologierdk" status="incomplete" type="poetry" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
+<kalliopework id="1845-gaea" author="antologierdk" status="incomplete" type="anthology" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
   <title>Gæa</title>
   <subtitle>Æsthetisk Aarbog</subtitle>
@@ -3906,7 +3906,7 @@ I dette Øieblik er Marie Jørgens Hustru; Kjærligheden helbredede hurtigt den 
   <notes>
     <note unknown-original-by="ariosto">Oversættelse af et uddrag af Ludovico Ariostos <i>Orlando furioso</i>.</note>
   </notes>
-  <source pages="166-178" facsimile-pages="172-184"/>
+  <source pages="167-178" facsimile-pages="173-184"/>
   <pictures>
     <picture src="1845-gaea-illustration-171.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 172.</picture>
   </pictures>
@@ -5489,17 +5489,24 @@ Tilgiv! tilgiv! — der er en Gud i Dig!
 </text>
 
 <text id="hansenfj20260814044" author="hansenfj">
+
 <head>
+
   <title>Araberen og hans Hest</title>
   <firstline>Det stamper let paa Fliser</firstline>
   <pictures>
     <picture src="1845-gaea-illustration-232.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 233.</picture>
   </pictures>
-  <source pages="227-236" facsimile-pages="233-242"/>
+  <source pages="227-236" facsimile-pages="233-242" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="232.jpg"/><nonum><center>I.</center></nonum>
+<nonum><center>I.</center></nonum>
 Det stamper let paa Fliser
 I Hr. Paschaens Gaard;
 En Ganger stolt og vælig
@@ -5508,7 +5515,8 @@ Paa Halsen, paa den ranke,
 Sig løfter høit dens Manke;
 Om Siderne, de blanke,
 Den lette Hale slaaer.
-<pb facs="233.jpg"/>Af Dyrets Ryg nedstiger
+
+<pb n="228" facs="233.jpg"/>Af Dyrets Ryg nedstiger
 De vilde Heders Aand,
 Araberen, den mørke,
 Som kjender ei til Baand.
@@ -5539,7 +5547,7 @@ De Tvende staae i Pagt.“
 Den skjæggede Tyrk —
 „For høit man kan betale
 Selv Diamant i Ørk.“
-<pb facs="234.jpg"/>„Min Hingst er adelsbaaren,
+<pb n="229" facs="234.jpg"/>„Min Hingst er adelsbaaren,
 Med ædelt Blod i Aaren,
 Til første Priis udkaaren!“
 Gjenmæler Scheiken mørk.
@@ -5570,7 +5578,8 @@ Mørkt vender han tilbage:
 Han ene skal bortdrage —
 Han skal jo Afsked tage
 Med Vennen stærk og tro.
-<pb facs="235.jpg"/>Rundtom de Muselmanner
+
+<pb n="230" facs="235.jpg"/>Rundtom de Muselmanner
 I blanke Vaabenrad
 Beskue Ros og Herre,
 Ret nu de skilles ad.
@@ -5600,7 +5609,7 @@ Med Vredesblus paa Kind.
 <nonum><center>II.</center></nonum>
 Paa den vidtudstrakte Slette
 Dandser hen en Hvirvelvind,
-<pb facs="236.jpg"/>Og i Taageskyer tætte
+<pb n="231" facs="236.jpg"/>Og i Taageskyer tætte
 Hyller susende sig ind.
 Blinkende Straaler spille
 Paa det flygtige Sand;
@@ -5630,7 +5639,8 @@ Over Sletten han svæver,
 Sig dukker og bæver,
 Og vugges paa dens Midie
 Som et vaiende Siv.
-<pb facs="237.jpg"/>Men den lette Rytterskare
+
+<pb n="232" facs="237.jpg"/>Men den lette Rytterskare
 Følger susende sit Maal;
 Over Heden spredt de fare,
 Som et Solglimt over Staal.
@@ -5660,7 +5670,7 @@ Sikker, i Faren prøvet,
 Selv det flygtende Rov
 Med Forfølgeren leger,
 Og lokker sin Jæger,
-<pb facs="238.jpg"/>Og vinker ham med Støvet
+<pb n="233" facs="238.jpg"/>Og vinker ham med Støvet
 Fra sin kraftige Hov.
 
 Alt sig hviler Dagens Stjerne
@@ -5688,10 +5698,10 @@ I de fuldeste Drag.
 Og, som vildt med stramme Sener,
 Al sin Kraft det stærke Dyr
 I et Tigerspring forener,
-Med fordobblet Ild den flyer.
+Med fordoblet Ild den flyer.
 Viftende sig dens Manke
 Som en Fane slaaer ud;
-<pb facs="239.jpg"/>Hvo kan Banneret følge?
+<pb n="234" facs="239.jpg"/>Hvo kan Banneret følge?
 De Støvskyer bølge ....
 Bort svandt den som en Tanke
 Paa et Menneskes Bud!
@@ -5721,7 +5731,7 @@ Hr. Paschaen sig løfter
 Fra stoppede Madrats;
 Han gnider kort sit Øie —
 Han skifter nødigt Plads.
-<pb facs="240.jpg"/>Alt Hestetramp han hører ....
+<pb n="235" facs="240.jpg"/>Alt Hestetramp han hører ....
 Hvo mon den Ganger fører?
 Hvo blandt de Trætte rører
 Sig atter veltilpas?
@@ -5752,7 +5762,8 @@ Ja! spørg den rappe Skare,
 Om ei fra Død og Fare
 Mig bar paa Fødder snare
 Det ædle, stolte Blod!
-<pb facs="241.jpg"/>I Pagt med Ørknens Herre
+
+<pb n="236" facs="241.jpg"/>I Pagt med Ørknens Herre
 Var List fra Vuggen af;
 Men derfor ei han svigter
 Just Ærlighedens Krav.
@@ -5779,23 +5790,33 @@ Skal mig i Kampen bære,
 Ja, først og forrest være
 Det ædle, stolte Blod!“ —
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="nielsencarl20260814045" author="nielsencarl">
+
 <head>
+
   <title>Med et Par Sidekamme</title>
   <subtitle>Lyrisk Studie</subtitle>
   <firstline>Jeg sad i mit ensomme Cabinet</firstline>
-  <source pages="237-238" facsimile-pages="243-244"/>
+  <source pages="237-238" facsimile-pages="243-244" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="242.jpg"/>Jeg sad i mit ensomme Cabinet,
+Jeg sad i mit ensomme Cabinet,
 For at skrive et Vers til min Pige,
 Men Elskede, tro mig, det er ei saa let
 At finde de Ord, man vil sige.
-
 Thi underligt Tankerne krydse sig
 Og Hovedet tidt forvilde.
 Det vilde slet ikke lykkes mig
@@ -5805,13 +5826,13 @@ Jeg aabnede Vinduet, og Nattens Vind
 I Øret mig hvidsked fortroligt;
 Da følte jeg mig saa let i Sind,
 Da blev mit Hjerte saa roligt.
-
 Jeg tænkte, min Elskede, kun paa Dig,
 Dit Billed mig svæved for Øie,
 Og før jeg mig lagde, besluttede jeg
 Med en Smaating Dig at fornøie.
-<pb facs="243.jpg"/>Men Valget er ikke saa ganske let,
-Thi Du har Hjerte og Hoved,
+
+<pb n="238" facs="243.jpg"/>Men Valget er ikke saa ganske let,
+Thi Du har <w>Hjerte</w> og <w>Hoved</w>,
 Og naar jeg nu tænker efter ret,
 Saa holder jeg knap, hvad jeg loved;
 Thi hvor skal jeg finde en saadan Ting,
@@ -5828,28 +5849,39 @@ Min Lyst knap kunde jeg styre,
 Da nogle nitide Poeter jeg saae;
 Men Bøgerne vare saa dyre.
 
-Da Hjertet jeg altsaa ei glæde kan
+Da <w>Hjertet</w> jeg altsaa ei glæde kan
 Jeg maatte paa Noget finde,
-Som passer for Hovedet — ja det gaaer an,
+Som passer for <w>Hovedet</w> — ja det gaaer an,
 Det var godt, det randt mig i Minde.
 Modtag min Gave med venlig Hu,
 Jeg næsten mig derved maa skamme:
 Der er — ja kan Du gjætte det nu —
 Det er et Par — Sidekamme!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="borgaardc20260814046" author="borgaardc">
+
 <head>
+
   <title>Kjøbenhavn i Magistratsmaaneskin</title>
   <subtitle>Skizze</subtitle>
   <firstline>Man illustrerer Alting nu; Paris og Leipzig smykke</firstline>
-  <source pages="239-243" facsimile-pages="245-249"/>
+  <source pages="239-243" facsimile-pages="245-249" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="244.jpg"/>Man illustrerer Alting nu; Paris og Leipzig smykke
+Man illustrerer Alting nu; Paris og Leipzig smykke
 Med Billeder hver gammel Bog, hver ny, de lade trykke;
 Hver By, hvert Huus, hver Helt, hvert Qvæg, i Staal og Træ bli'er skaaret,
 Selv Kjolen, som en hellig Mand maaskee har aldrig baaret.
@@ -5859,7 +5891,7 @@ I Magistratens Maaneskin det troligt er fremstillet.
 Det Lys, som en Novembernat i Axelstaden skinner,
 I al sin Klarhed og Natur du her gjengivet finder.
 
-<pb facs="245.jpg"/>„Men“ — siger Du, — „jeg Intet seer!“ — Jeg heller Intet øiner,
+<pb n="240" facs="245.jpg"/>„Men“ — siger Du, — „jeg Intet seer!“ — Jeg heller Intet øiner,
 Og hvis man Noget øinede, var Maleren en Løgner.
 Husk, Maanen gammel er, den let af Regn og Blæst tog Skade;
 Den gaaer, som andre Skaldede, om Vinteren med Plade.
@@ -5886,16 +5918,16 @@ Og lyst som Dagen skal det Dig sit Indhold aabenbare.
 
 Kjøbmagergaden Du da seer, hvor Griffenfeldt har levet,
 Og hvor han Kongeloven skrev. Tætved der nu blier skrevet
-I „Fædrelandets“ djærve Sprog imod det Absolute;
+I „<w>Fædrelandets</w>“ djærve Sprog imod det Absolute;
 Ironiskt tidt Extremerne sig til hinanden slutte!
 
-<pb facs="246.jpg"/>En anden Skjæbnens Ironi man seer i samme Gade,
+<pb n="241" facs="246.jpg"/>En anden Skjæbnens Ironi man seer i samme Gade,
 Thi mens paa hullet Steenbro man i Vand og Dynd maa vade,
 Høit over sig man hænge seer ved Helliggeistesstræde
 Det deiligste Gulvtæppetøi, som nogen Fod vil træde.
 
 Hofapothekets Indgang hist med Farveharmonien
-Som Mønster staaer for Kistelaags-Pompeijanomanien.
+Som Mønster staaer for Kistlaags-Pompeijanomanien.
 — Forresten Gaden vakker er; ved Dagen uden Fare
 For Fald og Stød og Beenbrud lader den varsomt sig befare.
 
@@ -5921,7 +5953,7 @@ Naiadedands udføre smukt Svovlstikker, Lys og Koste.
 
 O Kjøbenhavn! Din Kjældermand i Nøden Du forsvare,
 Din Trøst, Din Livspuls i hver Sorg, i hver politisk Fare!
-<pb facs="247.jpg"/>Vistnok alt længe været har Din Aandling noget vandet,
+<pb n="242" facs="247.jpg"/>Vistnok alt længe været har Din Yndling noget vandet,
 Men dersom heelt han druknede, — hvad blev der saa af Landet?
 
 Den hele Sværm, som kommer der, har i Theatret været,
@@ -5941,7 +5973,7 @@ Og paa sin Bag Familien sig ned i Pølen lægger.
 
 — „Ja, paa det Kongelige faaer man Smæk for sine Penge;
 Hos os i Ringsted varer ei Comedien halvt saa længe.“
-— Saa taler en høidstrømpet Mø, som dristigt fremad trasker.
+— Saa taler en hvidstrømpet Mø, som dristigt fremad trasker.
 Ak! der i Dyndet traadte hun! — nu har hun graae Kamascher.
 
 — „O søde Dandserindebeen!“ — en Gardelieutnant sukker,
@@ -5954,7 +5986,7 @@ Sit Drama, paa det femte nu vil han sig høste Hæder.
 Han snubler, styrter, — aa, der faldt hans Manuskript i Strømmen,
 Og Vinden flyver piilsnar med hans Hat og — Bifaldsdrømmen.
 
-<pb facs="248.jpg"/>— „Jeg takker til min sidste Stund vor Øvrighed for Gaven!“
+<pb n="243" facs="248.jpg"/>— „Jeg takker til min sidste Stund vor Øvrighed for Gaven!“
 En Borger siger fromt, og — bums! — gaaer han i Muddergraven.
 Den Gave, som han takked for, idet han faldt paa Næsen,
 Det var — o Skjæbnens sære Spil! — vor Stads Communevæsen.
@@ -5984,52 +6016,70 @@ Hvo langsomt gaaer, bedst Maalet naaer, saa tænkte Dine Fædre.
 Til Din Forskjønnelse vi fik forlængst jo Commiteer,
 Til Himlen bed med mig, at snart de maae faae Fødselsveer!
 </poetry>
+
+
 </body>
+
+
 </text>
 
-<text id="antologierdk20260814047" skip-index="true">
+<text id="antologierdk20260814047" skip-index="true" ignore-tests="repeated-adjacent-word">
+
 <head>
+
   <title>Maifesten i Sundby</title>
   <subtitle>Dramatisk Situation</subtitle>
   <pictures>
     <picture src="1845-gaea-illustration-249.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 250.</picture>
   </pictures>
-  <source pages="244-253" facsimile-pages="250-259"/>
+  <source pages="244-253" facsimile-pages="250-259" />
+
 </head>
+
+
 <body>
+
+
 <prose>
-<pb facs="250.jpg"/>(Stue hos Byfogden, Formiddag.)
 
-Byfogden (gnager paa et Stykke Skinke).
-Det er dog ogsaa forbistret, man kan ikke faae en ærlig Skinke i denne hele By. Hei Chresten, skjænk mig nok en Snaps, bring saa denne herre Skinke ud, og lad mig faae Bedekollen ind fra igaar Middags. (Det ringer.) Naa, i Pokkers Skind og Been, kan en kongelig Embedsmand ikke engang have Ro til at spise sin Frokost. Chresten, gaae ud og see, hvem det er.
+<center><small>(Stue hos Byfogden, Formiddag.)</small></center>
 
-Chresten (gaaer og kommer igjen).
+<center><small>Byfogden (gnager paa et Stykke Skinke).</small></center><br/>
+Det er dog ogsaa forbistret, man kan ikke faae en ærlig Skinke i denne hele By. Hei Chresten, skjænk mig nok en Snaps, bring saa denne herre Skinke ud, og lad mig faae Bedekollen ind fra igaar Middags. <small>(Det ringer.)</small> Naa, i Pokkers Skind og Been, kan en kongelig Embedsmand ikke engang have Ro til at spise sin Frokost. Chresten, gaae ud og see, hvem det er.
+
+<center><small>Chresten (gaaer og kommer igjen).</small></center><br/>
 Det er den tykke Brygger Humle, skal a sige, at Herren er daarlig?
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Lad ham komme ind.
 
-Humle (kommer ind med et Buk).
+<center><small>Humle (kommer ind med et Buk).</small></center><br/>
 Godmorgen Deres Velviished, velbekomme Spisen!
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Godmorgen, min gode Humle, sid ned, man maa vel nok byde en Snaps og en Bid Brød?
 
-Humle.
+<center><small>Humle.</small></center><br/>
 Takker, takker, for mig Intet; har allerede nydt en Hjertestyrkning hjemme hos vor Moer. Men hvad jeg vilde sige og ikke lyve, det var anbelangendes denne hersens 28de Mai, for Deres Velviished veed nok, det er paa Torsdag .... og saa meente jeg
-<pb facs="251.jpg"/>som saa, da de nu alle andre Steder i Landet holde den Dag hellig, saa burde vi vel ogsaa her hos os gjøre lidt Dikkedar af den. En smagfuld Decoration af Festsalonen har Hr. Hammer overtaget, De veed nok, Steenpikkeren, som da han havde gjort Ligstenen over Jfr. Jacobsen hos Provstens, reiste til Kjøbenhavn for at see Tordenskjolds Museum, og som nu er bleven Billedhugger, og gaaer med bar Hals og langt Haar.
+<pb n="246" facs="251.jpg"/>som saa, da de nu alle andre Steder i Landet holde den Dag hellig, saa burde vi vel ogsaa her hos os gjøre lidt Dikkedar af den. En smagfuld Decoration af Festsalonen har Hr. Hammer overtaget, De veed nok, Steenpikkeren, som da han havde gjort Ligstenen over Jfr. Jacobsen hos Provstens, reiste til Kjøbenhavn for at see Tordenskjolds Museum, og som nu er bleven Billedhugger, og gaaer med bar Hals og langt Haar.
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Min gode Humle, det Forslag kommer mig noget uventet. Imidlertid, hvis De indestaaer mig for, at Festen ikke faaer noget liberalt Anstrøg .... samt at de holdende Taler og syngende Viser først leveres mig til Gjennemsyn, forstaaer De .... saa kan Sagen vel lade sig gjøre.
 
-Humle.
-Ja, hvad Viser anbelanger (trækker et Papir op af Brystlommen), saa har vi allerede skikket Bud til vor jydske Folkesanger —
+<center><small>Humle.</small></center><br/>
+Ja, hvad Viser anbelanger <small>(trækker et Papir op af Brystlommen)</small>, saa har vi allerede skikket Bud til vor jydske Folkesanger —
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Jeg veed nok, ham Peer Jensen ....
 
-Humle.
+<center><small>Humle.</small></center><br/>
 Nei, den anden, hvad er det nu de kalde ham, denne Snydorf-Værk, og han har allerede sendt os Slutningsverset, de andre skal komme bagefter: Her skal Byfogden høre:
+
+</prose>
+
+
+<quote lang="da">
+
 „Maifest, derfor skal du være
 Folkefest i Dan.
 Da vi mindes hvad vi ere,
@@ -6037,162 +6087,183 @@ Og ei vorde kan.
 Da skal Festens Stund oprinde,
 Dan sin Brudgom vinde.“
 
-Byfogden.
+</quote>
+
+
+<prose>
+
+
+<center><small>Byfogden.</small></center><br/>
 Ja, det er nu meget godt, kun synes jeg, at vi lærte i Skolen, at Dan var en gammel Konge, hvad skal han med en Brudgom?
-<pb facs="252.jpg"/>Humle.
+<pb n="247" facs="252.jpg"/>Humle.
 Ja, det maa jeg ikke sige Noget om, Hr. Byfoged, men jeg har ellers altid hørt, at der ikke behøver at være Mening i Alt, hvad disse Poeter eller Redacteurer skrive. Men da nu Deres Velviished og jeg ere enige om Realiteten, som Procuratoren siger, saa vil jeg strax løbe hen til Literatus Slat, for at faae ham til at sætte en Proclamation i Pennen. Han har i sine unge Dage været en Discipel af Biskop Toxen, og det er, som Hr. Byfogden veed, en Karl, der skriver en god Pen.
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Man kjender hans Pennestrøg ....
 
-Humle.
+<center><small>Humle.</small></center><br/>
 Saa har jeg kun en lille Begjæring tilbage, nemlig om Deres Velviished vilde laane mig Deres Trommeslager en Timestid idag, for at sammentromme Sundby Borgere til en Generalforsamling.
 
-Byfogden.
+<center><small>Byfogden.</small></center><br/>
 Ja, veed De hvad, min gode Humle, det Andragende er mig noget betænkeligt; dog det er det samme, for Deres elskværdige Kones Skyld skal det være Dem tilstaaet, men Humle, Humle! det siger jeg Dem ....
 
-Humle.
-Farvel Hr. Byfoged! De skal blive tilfreds med mig. (gaaer.)
+<center><small>Humle.</small></center><br/>
+Farvel Hr. Byfoged! De skal blive tilfreds med mig. <small>(gaaer.)</small>
 
-Byfogden (fortærer en Deel af Bedekollen, og raaber derpaa).
+<center><small>Byfogden (fortærer en Deel af Bedekollen, og raaber derpaa).</small></center><br/>
 Chresten, sæt mig Sovestolen herhen, og hent mig saa den blaa Nathue, jeg trænger til min Formiddagsluur. Hvis der kommer Nogen, saa siig, jeg er ved mine Forretninger.
-(Han lægger sig til at sove, en Tidslang hører man ham snorke, indtil en stærk Larm opstaaer paa Gaden.)
+<small>(Han lægger sig til at sove, en Tidslang hører man ham snorke, indtil en stærk Larm opstaaer paa Gaden.)</small>
 
-Opraaberen (udenfor).
+<center><small>Opraaberen (udenfor).</small></center><br/>
 Borgere af Sundby! Venner! Medbrødre! Om kort Tid oprinder den mindeværdige og skjønne Dag, da en Monark skjænkede et Folk en Gave, ringe af Udseende, men stor og betydningsfuld ....
-<pb facs="253.jpg"/>Byfogden (vaagner).
+<pb n="248" facs="253.jpg"/>Byfogden <small>(vaagner)</small>.
 Hvad, hvad, hvad er det her? Nu saa gid Pokker havde alle Stænder og Maigilder! kan en Byfoged nu ikke engang faae sig en ærlig Formiddagssøvn for det Vrøvl, lad os høre, hvad han skraaler om.
 
-Opraaberen (gjentager).
+<center><small>Opraaberen (gjentager).</small></center><br/>
 Stor og betydningsfuld i sine Følger. Om kort Tid oprinder den 28de Mai over vore Hoveder. Lader os feire den, Borgere! heller ikke Sundby bør staae udenfor Tidens Intelligents. Leve Stænderinstitutionen! Hurra! De Herrer, som dele disse Anskuelser, behage at møde til Generalforsamling i Aften Kl. 7 hos Gjæstgiverens.
-Ærbødigst Humle, Brygger og Borgerrepræsentant.
+<center>Ærbødigst Humle, Brygger og Borgerrepræsentant.</center>
 
-Byfogden.
-Naa, man kan jo sende Fuldmægtigen derud, for at rapportere. Nu troer jeg, de trække om i en anden Gade, saa kan man da faae lidt Ro igjen. (Lægger sig atter til at sove.)
+<center><small>Byfogden.</small></center><br/>
+Naa, man kan jo sende Fuldmægtigen derud, for at rapportere. Nu troer jeg, de trække om i en anden Gade, saa kan man da faae lidt Ro igjen. <small>(Lægger sig atter til at sove.)</small>
 
-Aften. Stue hos Gjæstgiveren. Byens Kjøbmand Hr. Buf, Skrædderen Hr. Snip, samt flere Haandværkere, Stadsmusikant og Barbeer Strut, Hammer, Humle, Slat, Fuldmægtig, Spræl, Lieutenant ved Brandcorpset, og flere, spadsere ivrig imellem hverandre. Slat og et Par andre sidde ved et Bord med Flasker og Glas.
+---
 
-Nogle Stemmer.
-Humle vil tale, Humle har Ordet. (Humle rømmer sig.)
+<center><small>Aften. Stue hos Gjæstgiveren. Byens Kjøbmand Hr. Buf, Skrædderen Hr. Snip, samt flere Haandværkere, Stadsmusikant og Barbeer Strut, Hammer, Humle, Slik, Fuldmægtig, Spræl, Lieutenant ved Brandcorpset, og flere, spadsere ivrig imellem hverandre. Slat og et Par andre sidde ved et Bord med Flasker og Glas.</small></center>
 
-Andre.
+<center><small>Nogle Stemmer.</small></center><br/>
+Humle vil tale, Humle har Ordet. <small>(Humle rømmer sig.)</small>
+
+<center><small>Andre.</small></center><br/>
 Spræl har Ordet.
 
-Spræl.
+<center><small>Spræl.</small></center><br/>
 Jeg proponerer at vor Generalforsamling constituerer sig som saadan ved at vælge en Dirigent. Jeg tillader mig at foreslaae Hr. Slat. Mine Herrer, behag at stemme paa en Dirigent.
-(Der stemmes og Slat bliver valgt.)
-<pb facs="254.jpg"/>Slat.
-Hr. Vert, en Snaps Korn endnu. (Han drikker og siger derpaa.) Mine Herrer! Discussionerne kunne tage deres Begyndelse.
+<small>(Der stemmes og Slat bliver valgt.)</small>
+<pb n="249" facs="254.jpg"/>Slat.
+Hr. Vert, en Snaps Korn endnu. <small>(Han drikker og siger derpaa.)</small> Mine Herrer! Discussionerne kunne tage deres Begyndelse.
 
-Humle (arbeider sig frem).
-Hm! Hm! Mine Venner! Mine Brødre! Hm! Hm! mine — hvad jeg vilde sige — Venner! Jeg har tilladt mig at stævne Eder hid til Thinge, for at fortælle Eder. — — Skulde vi ikke — — 28de Mai — Folkefest — — Hr. Dirigent! — Puh! — (Bravo!)
+<center><small>Humle (arbeider sig frem).</small></center><br/>
+Hm! Hm! Mine Venner! Mine Brødre! Hm! Hm! mine — hvad jeg vilde sige — Venner! Jeg har tilladt mig at stævne Eder hid til Thinge, for at fortælle Eder. — — Skulde vi ikke — — 28de Mai — Folkefest — — Hr. Dirigent! — Puh! — <small>(Bravo!)</small>
 
-Nogle.
+<center><small>Nogle.</small></center><br/>
 Ja! Ja! Humle har Ret! 28de Mai leve! Hurra! —
 
-Andre.
+<center><small>Andre.</small></center><br/>
 Nei! Ingen 28de Mai! Den skal ikke leve! Hurra! —
 
-Hammer.
+<center><small>Hammer.</small></center><br/>
 Hr. Dirigent, jeg beder om Ordet.
 
-Slat.
+<center><small>Slat.</small></center><br/>
 Hr. Hammer har Ordet.
 
-Hammer.
+<center><small>Hammer.</small></center><br/>
 Jeg mener, Festen bør foregaae i følgende Orden: I Spidsen gaaer Hr. Strut med Musiken ud til Lunden, hvor jeg har decoreret Festsalonen, derefter Hr. Humle med Dannebrog eller det skandinaviske Flag, baaret af 12 hvidklædte Damer, og vi Andre Par om Par.
 
-Slat.
+<center><small>Slat.</small></center><br/>
 Inden der skrides til Afstemning over Hr. Hammers Amendment, mener jeg der først burde udnævnes en Festcomitee.
 
-Spræl.
+<center><small>Spræl.</small></center><br/>
 Men inden vi vælge Comiteen, turde det, efter min uforgribelige Mening være rigtigst om vi debatterede Grundene for og imod en Fests Afholdelse. Hvad mener De, Hr. Snip, De har jo været i Paris og bivaanet Kamrenes Discussioner?
-<pb facs="255.jpg"/>Snip.
+<pb n="250" facs="255.jpg"/>Snip.
 Gud be—be—vares, jeg fi— finder, Hr. Spræl har fuldkommen Ret.
 
-Spræl.
+<center><small>Spræl.</small></center><br/>
 Jeg forlanger Ordet.
 
-Flere Stemmer.
+<center><small>Flere Stemmer.</small></center><br/>
 Bravo, Spræl har Ordet.
 
-Spræl (springer op paa Bordet og støder til nogle Glas, som falde ned og gaae itu).
+<center><small>Spræl (springer op paa Bordet og støder til nogle Glas, som falde ned og gaae itu).</small></center><br/>
 Danske Mænd! det har ofte fyldt min Barm med Stolthed, ofte begeistret mig til mangen Stordaad, ogsaa i Dag er det med en vis Stolthed, at jeg lader det frie, det levende Ord strømme fra danske, fra jydske Læber, i denne hæderværdige Forsamling af kjække Medborgere. Vi ere komne sammen for at debattere om Fædrelandets, det velsignede Danmarks Vee og Vel, for at debattere om et sandt og ægte Nationalanliggende, nemlig om vi skulle holde den 28de Mai hellig i Aar. Midt i en dyb Freds Skjød tør det vel vel være mig, skjøndt Kriger, tilladt at tale et Par Alvorsord. Enhver kjender min Mening, Enhver af Eder veed, at jeg med Liv og Sjæl hylder de friere Grundsætninger, der fra Gorm den Gamles og Rolf Blaaskjægs, men navnlig siden den spanske Successionskrig, Julirevolutionen og Kjøbenhavnsposten, have gjort sig gjeldende i Verden og rystet Throner. Disse friere Grundsætninger hylder jeg, siger jeg; feigt er jeg ikke bleven staaende paa Halvveien, men har troligen stræbt at føre mig selv det Liberalismens, Skandinavismens og Panslavismens Maal imøde, der som en mægtig Kjerte inden føie Tid vil lyse over al Verden. Ja, ligesom disse Glas, jeg nyligen søndersparkede med min Fod, saaledes, mener jeg, skulle snart Despotiets Taager briste! I ere paa denne Dag komne sammen, for at fatte en Beslutning, der med uudslættelige Træk vil staae brændemærket i Verdens Aarbøger ved Evighedens Ophør; I ere komne sammen for at beslutte en Fest, en Folkefest, en Maifest, siger jeg; I ville taabeligen
-<pb facs="256.jpg"/>og uoverlagt feire den 28de Mai? Nei, mine Brødre! Saaledes bør det ikke være! Jeg raaber det høit og lydeligt, ja saa høit og lydeligt, at det skal kunne høres fra Viborg til Badstuestræde (tordnende Applaus), at Stænderinstitutionen efter sin nærværende Organisation og hidtilværende Frugter, eller, hvad jeg vilde sige, efter sin hidtilværende Organisation og nærværende Frugter, nei! hvordan var det nu? — ja! — jeg gjentager det — at Stænderinstitutionen ikke er skikket til at vække glade Følelser. Det er en mægtig Kjendsgjerning, som altid vil staae uimodsagt og uimodsigelig, en Kjendsgjerning, som selv de fjerneste Slægter i tusinde og atter tusinde Led ville indrømme, en Kjendsgjerning, som ligger soleklar for Alverdens Øine, — — (Hør! Hør!) danske Mænd! Haabsvulmende Taler og glade Sange have i flere Aar lydt trindt i Landet; men — have vi faaet Constitution, eller Skattebevilling, eller Jernbaner? er Landeveien bleven bedre? og ligesom en enkelt Fakkel tjener til at oplyse, hvor mørkt Mørket er, saaledes ville ogsaa vi, naar vi spise og drikke paa den 28de Mai, bestyrke min Paastand, at vor Taushed netop ved sin Taushed skal tale saa høit, at selv den, der er døvere end den Døveste, vil kunne høre den. See! saaledes vil Maigildet blive (stormende Bifald, leve Spræl! o. s. v.). Uagtet der altsaa slet ingen Anledning er til at feire den 28de Mai, stemmer jeg alligevel paa at vi holde Maigilde, for at jeg og ligesindede Talere kunne udtale vore Ideer for hele Communen. Jeg har talt!
+<pb n="251" facs="256.jpg"/>og uoverlagt feire den 28de Mai? Nei, mine Brødre! Saaledes bør det ikke være! Jeg raaber det høit og lydeligt, ja saa høit og lydeligt, at det skal kunne høres fra Viborg til Badstuestræde <small>(tordnende Applaus), at Stænderinstitutionen efter sin nærværende Organisation og hidtilværende Frugter, eller, hvad jeg vilde sige, efter sin hidtilværende Organisation og nærværende Frugter, nei! hvordan var det nu? — ja! — jeg gjentager det — at Stænderinstitutionen ikke er skikket til at vække glade Følelser. Det er en mægtig Kjendsgjerning, som altid vil staae uimodsagt og uimodsigelig, en Kjendsgjerning, som selv de fjerneste Slægter i tusinde og atter tusinde Led ville indrømme, en Kjendsgjerning, som ligger soleklar for Alverdens Øine, — — (Hør! Hør!) danske Mænd! Haabsvulmende Taler og glade Sange have i flere Aar lydt trindt i Landet; men — have vi faaet Constitution, eller Skattebevilling, eller Jernbaner? er Landeveien bleven bedre? og ligesom en enkelt Fakkel tjener til at oplyse, hvor mørkt Mørket er, saaledes ville ogsaa vi, naar vi spise og drikke paa den 28de Mai, bestyrke min Paastand, at vor Taushed netop ved sin Taushed skal tale saa høit, at selv den, der er døvere end den Døveste, vil kunne høre den. See! saaledes vil Maigildet blive (stormende Bifald, leve Spræl! o. s. v.)</small>. Uagtet der altsaa slet ingen Anledning er til at feire den 28de Mai, stemmer jeg alligevel paa at vi holde Maigilde, for at jeg og ligesindede Talere kunne udtale vore Ideer for hele Communen. Jeg har talt!
 
-Slat.
+<center><small>Slat.</small></center><br/>
 Har Nogen Noget at indvende mod den sidste Talers Amendment? — — Da Ingen begjærer Ordet — — —
 
-Slik.
+<center><small>Slik.</small></center><br/>
 Jeg begjærer Ordet — — jeg vilde blot bemærke, at jeg ikke har Noget at indvende mod Forslaget.
 
-De Andre.
+<center><small>De Andre.</small></center><br/>
 Hurra! den 28de Mai leve!
-<pb facs="257.jpg"/>Slat.
+<pb n="252" facs="257.jpg"/>Slat.
 Det er saaledes eenstemmig antaget, at vi skulle holde Maigilde. Vi kunne altsaa skride til Oplæsningen af Stemmesedlerne paa Festcomiteen. Hr. Fuldmægtig Slik, er De saa god at læse op?
 
-Slik.
-Med Fornøielse! (læser) Hammer, Snip, Humle, — — Hammer, Snip, Spræl, — — Spræl, Humle, Buf — — Snip, Spræl, Strut — — Hammer, Humle, Buf — — Slik, Slat, Byfogden — — (En Vogn kjører ind i Gaarden, og man hører et Posthorn.)
+<center><small>Slik.</small></center><br/>
+Med Fornøielse! <small>(læser) Hammer, Snip, Humle, — — Hammer, Snip, Spræl, — — Spræl, Humle, Buf — — Snip, Spræl, Strut — — Hammer, Humle, Buf — — Slik, Slat, Byfogden — — (En Vogn kjører ind i Gaarden, og man hører et Posthorn.)</small>
 
-Alle.
+<center><small>Alle.</small></center><br/>
 Aah, der er Posten, nu skal vi høre hvad Bladene sige.
 
-Spræl.
+<center><small>Spræl.</small></center><br/>
 Marqueur, gaa ned til Posten og hent mig mit „Fædreland.“
 
-Marqueuren (kommer tilbage).
+<center><small>Marqueuren (kommer tilbage).</small></center><br/>
 Værs’god mine Herrer, her er Bladene. Hr. Spræl, her er Deres „Fædreland“, Hr. Humle, her er Deres, Hr. Snip, her er Portefeuillen til Dem, Hr. Buf, her er Berlingske til Dem, her er et Aftenblad til Controlleur Snus, og her et Exemplar af Corsaren uden Udskrift ...
 
-Slik (sagte).
+<center><small>Slik (sagte).</small></center><br/>
 Det er til Byfogden, lad mig faae det.
 
-Spræl (læser).
-„At Stænderindretningen ikke svarer til sin Bestemmelse, have selv lærde Mænd som Ussing og David forlængst erkjendt ..... Det bliver tyst og stille iaar over hele Landet den 28de Mai .... Vi overlade til vore Læsere, at tilbagekalde i Erindringen det haabrige Liv og glade Røre, der fordum herskede paa denne Dag, i Tankerne at gjennemleve....“ Hører I? i Erindringen og Tankerne skulle vi gjennemleve Dagen! Der kan altsaa ikke blive Noget af Gildet.
+<center><small>Spræl (læser).</small></center><br/>
+„At Stænderindretningen ikke svarer til sin Bestemmelse, have selv lærde Mænd som Ussing og David forlængst erkjendt ..... Det bliver tyst og stille iaar over hele Landet den 28de Mai .... Vi overlade til vore Læsere, at tilbagekalde i Erindringen det haabrige Liv og glade Røre, der fordum herskede paa denne Dag, i Tankerne at gjennemleve....“ Hører I? i <w>Erindringen</w> og <w>Tankerne</w> skulle vi gjennemleve Dagen! Der kan altsaa ikke blive Noget af Gildet.
 
-Flere Stemmer.
+<center><small>Flere Stemmer.</small></center><br/>
 Aah!
-<pb facs="258.jpg"/>Snus.
+<pb n="253" facs="258.jpg"/>Snus.
 Men om vi nu ogsaa gjorde Fædrelandet imod, saa fik vi dog maaskee Aftenbladet paa vor Side ... jeg vilde saa gjerne udbragt en Skaal for den slesvig-holstenske Toldgrændse ...
 
-Flere.
+<center><small>Flere.</small></center><br/>
 Nei vist ikke, vi maae rette os efter hvad Fædrelandet siger.
 
-Spræl.
-Ja det bliver altsaa, som jeg strax sagde — intet Maigilde! Den med Haabet nødvendigvis forbundne livsfriske frodige Tillid existerer ikke mere. Der er slet ingen Grund til at gjøre Gilde.
+<center><small>Spræl.</small></center><br/>
+Ja det bliver altsaa, som jeg strax sagde — intet Maigilde! Den med Haabet nødvendigviis forbundne livsfriske frodige Tillid existerer ikke mere. Der er slet ingen Grund til at gjøre Gilde.
 
-Hammer.
+<center><small>Hammer.</small></center><br/>
 Det er ellers Skade, jeg talte just paa min sidste Reise til Kjøbenhavn med Lieutenant Carstensen om nogle nye Decorationsideer ...
 
-Buf.
+<center><small>Buf.</small></center><br/>
 Ja Gu’ var det Skade, jeg havde ogsaa udspekuleret en Skaal for „Klippelandets frie Sønner,“ hvis Brød jeg spiser. Men vi ere jo ikke blot Danske, vi ere tillige Skandinaver, og siden jeg ikke faaer Lov til at holde min norske Tale, saa lad os i det mindste drikke paa Svensk. Marqueur! en dobbelt Bolle svensk Banco! Hr. Snus, De er dog vel med?
 
-Snus.
-Jeg siger saa mange Tak, jeg taaler ikke svensk Banco. (Gaaer.)
+<center><small>Snus.</small></center><br/>
+Jeg siger saa mange Tak, jeg taaler ikke svensk Banco. <small>(Gaaer.)</small>
 
-Spræl.
-Han holder nok mere af Hamborger Banco. (Bravo Spræl!)
+<center><small>Spræl.</small></center><br/>
+Han holder nok mere af Hamborger Banco. <small>(Bravo Spræl!)</small>
 
-Buf.
+<center><small>Buf.</small></center><br/>
 Men der seer jeg Bollen komme! Mine Herrer, behag at tage Sæde ... Evan byder os at drikke, Faldera!
 
-Forskjellige Stemmer.
+<center><small>Forskjellige Stemmer.</small></center><br/>
 Bravo, Buf leve! De Svenske leve, svensk Banco leve! Fædrelandet leve! Giveren leve! Hurra! Nok engang, alle Mand, Hur...rrrrra...a!!
+
 </prose>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814048" author="moellerpl">
+
 <head>
+
   <title>Gudruns Hævn</title>
   <firstline>Nu hør min gode Terne, gak ud af Borgeport</firstline>
   <pictures>
     <picture src="1845-gaea-illustration-259.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 260.</picture>
   </pictures>
-  <source pages="254-263" facsimile-pages="260-269"/>
+  <source pages="254-263" facsimile-pages="260-269" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="260.jpg"/>„Nu hør min gode Terne, gak ud af Borgeport,
+<nonum><center>I.</center></nonum>
+„Nu hør min gode Terne, gak ud af Borgeport,
 Ned til Egelunden, hvor Budles Høi blev gjort,
 Der dvæle Du ved Stenen; alt paa den lave Strand,
 Og meld mig, om Du Snekker seer, som stevne hid til dette Land.“
@@ -6221,7 +6292,8 @@ Gudruns Øine fyldtes alt med den klare Graad;
 Da kvalte hun Taarekilden, saa Kinden ei blev vaad.
 Det stolte Hjerte gløded som Nastronds Flamme stærk,
 Dog Barmens høie Snee betvang det lig en iskold Pantserserk.
-<pb facs="261.jpg"/>Hun sad i Fruerburet, ud over Eng hun saae.
+
+<pb n="256" facs="261.jpg"/>Hun sad i Fruerburet, ud over Eng hun saae.
 Med Spyd og Bue leged der hendes Sønner smaa.
 Da mørknedes hendes Pande, det var jo Atles Børn,
 Hun tænkte paa sin og Sigurds Søn, den unge dræbte Kongeørn.
@@ -6236,7 +6308,7 @@ Da Gudrun dette hørte, fra Hyndet op hun stod:
 Ha, mine gjæve Brødre, stander nu mandelig,
 At Thors den ærlige Hammer maa spilde Atles Jettesvig!“
 
-II.
+<nonum><center>II.</center></nonum>
 
 Og det var Gunnar og Høgne, de baade Kæmper to
 Med deres lange Snekker saa hart de monne roe;
@@ -6252,7 +6324,8 @@ Men der de udaf Skoven hen over Marken jog,
 Fremsprang den Svend, som havde dem lokket paa dette Tog.
 „Vel ridt I gode Drotter“, saa listelig han loe,
 „Nu seer I plat for Jer den Borg, hvor Konning Atle monne boe.
-<pb facs="262.jpg"/>„Han loved Eder Hæder og Hjelme og blanke Sværd,
+
+<pb n="257" facs="262.jpg"/>„Han loved Eder Hæder og Hjelme og blanke Sværd,
 Gyldne Brynieplader, Heste og rustet Hær,
 Samt Riget i Arv og Fæste; nu Tak I have skal,
 Jeg vil nu søge det Galgetræ, som vorder Eders Høiloftssal.“
@@ -6281,7 +6354,8 @@ Nu fløi de tunge Spyde og Pilene fra Streng.
 Af dybe Vunder Blodet flød paa den grønne Eng
 Tidende kom til Gudrun om svare Vaabengny,
 Strax skred hun ud af Borgeport, sorgfyldt men uden Qvindebly.
-<pb facs="263.jpg"/>Midt gjennem Pilesværmen den høie Dronning gik,
+
+<pb n="258" facs="263.jpg"/>Midt gjennem Pilesværmen den høie Dronning gik,
 Med flyvende gyldne Lokker, stærke flammende Blik.
 Strax kjendte hun sine Brødre, favned og kyssed dem:
 „Hvi lod I dog ei de Runer, jeg skikked til vort Fædrehjem?“
@@ -6310,7 +6384,8 @@ Det mælte Konning Atle: „Lad Høgnes Bane blive,
 At Hjertet I ham udskjære af Bryst med skarpe Knive,
 Hvis ikke han forinden saa blid vorder stemt,
 At han med Iil bekjender, hvor Gnytahedes Guld er gjemt.
-<pb facs="264.jpg"/>Men Høgne taug. Da straaled for Kniven Kæmpens Blod.
+
+<pb n="259" facs="264.jpg"/>Men Høgne taug. Da straaled for Kniven Kæmpens Blod.
 Gudrun stod ved Siden og priste hans høie Mod.
 Saa mandig var da Høgne, han lo med høien Røst,
 Dengang det rygende Hjerte blev revet af hans laadne Bryst.
@@ -6342,10 +6417,10 @@ Fra Borgen gjennem Skoven, til Snekkerne i dyben Vig.
 
 Af hele Gjukungsætten, som Egen prud og skjøn,
 Kun Niflung var nu tilbage, Høgnes den liden Søn,
-<pb facs="265.jpg"/>Ham Dronning Gudrun vogted, at hævne Frændernes Blod;
+<pb n="260" facs="265.jpg"/>Ham Dronning Gudrun vogted, at hævne Frændernes Blod;
 Hos Hyrden høit i Landet hun lønlig ham opfostre lod.
 
-III.
+<nonum><center>III.</center></nonum>
 
 Treaarsdagen var kommen efter hin Udaad stor.
 Aldrig mælte Gudrun i denne Tid et Ord.
@@ -6374,7 +6449,7 @@ Den stolte Dronning Gudrun, hun gik sig i den Abildgaard.
 
 Hun hører det suse fra høie Abildtræer,
 Det er saa travl en Bisværm, som leirer sig der.
-<pb facs="266.jpg"/>Snart vugger hver et Blomster i Skjød en flittig Bi;
+<pb n="261" facs="266.jpg"/>Snart vugger hver et Blomster i Skjød en flittig Bi;
 Lig Bjergmand i Grube med Brum den farer om deri.
 
 Og Lyden i den rene, let zittrende Luft,
@@ -6392,7 +6467,7 @@ Hvad vil Du os, kjære Moder? hvi stirrer Du saa ilde?
 „Jer Fader drikker Arveøl med Pragt og Harpespil,
 Dog Eet ved Gildet mangler, — jeg Eder begge dræbe vil.“
 
-„Kjær Moder, Du kan raade; dog nænner Du med vort Blot
+„Kjær Moder, Du kan raade; dog nænner Du med vort Blod
 At plette Vaarens Blommer? — Den Daad vist ei er god.“
 De sank paa Knæ i Græsset, de bad for deres Liv;
 Stærkt rysted de lyse Lokker, da tabte hun den blanke Kniv.
@@ -6402,11 +6477,11 @@ Og sendte dem til Hyrden, hvor Niflung fostret blev.
 Han hentet blev til Borgen; dybt i en lønlig Vraa
 Hun skjulte ham. Men Ingen de Kongesønner mere saae.
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 I Hallen, hvor Fyrrekerter flød tusind Straaler ud,
 Holdt Konning Atle med sine Mænd saa rigt et Gjæstebud.
-<pb facs="267.jpg"/>Der var der slagtet og Kalve og unge Svin,
+<pb n="262" facs="267.jpg"/>Der var der slagtet og Kalve og unge Svin,
 I dreiede Horn med Guldrand flød søden Mjød og Humleviin.
 
 De Kæmper med stor Gammen fortærte Brøden god.
@@ -6426,7 +6501,7 @@ Altfor mod mine Frænder Du var saa svigefuld og gram.
 
 „Siig, vil Du dine Sønner ei bringe Gildetak?
 Af deres Hjerneskaller i Mjøden Blod Du drak. —
-Siig Konning Atle, hvorlunde forlysted Dig den Brød?
+Siig Konning Atle, hvorlunde forlysted Dig den Brad?
 Det var dine baade Sønner, Du aad af dette Sølverfad.“
 
 Da blev han som Kalken hvid og alle Gjæsterne med.
@@ -6438,7 +6513,8 @@ Men taus og kold skred Gudrun til Kammerset igjen.
 Brat Kongen lod til Hvile sig bringe af sin Svend.
 Rundt blandt de vilde Gjæster end længe Hornet gik.
 Snart sank de alle paa Bænke med døsigt og omtaaget Blik.
-<pb facs="268.jpg"/>Det Midnat var, da lønlig hun kaldte Niflung hid,
+
+<pb n="263" facs="268.jpg"/>Det Midnat var, da lønlig hun kaldte Niflung hid,
 Og mælte: „nu vore Frænder at hævne det er Tid.“
 Det var den liden Niflung, opslog han glad sit Blik,
 Det luede som Flammer; men rolig Gudrun foran gik.
@@ -6453,7 +6529,7 @@ Fulgte, da stolten Gudrun hun Atle tog til Mand.
 De toge den døde Konge, i fagre Lin ham klædte.
 Høi over ham at reise hun bød, og ham en Bauta sætte.
 
-Saa gik hun til Gildeshallen, hvor Atles Hofsinder saae.
+Saa gik hun til Gildeshallen, hvor Atles Hofsinder laae.
 Og slynged Kerten mod Taget; høit monne Luen slaae.
 Det knaged i Væg og Bjælker. Da sprang de op af Huus,
 Men hvor de hen sig vendte, i Flammer stod det ganske Huus.
@@ -6468,7 +6544,11 @@ Og Hjertet atter roligt slog under Svanebarm.
 „Nu hent mig, Sigurd,“ kvad hun, og sprang i dyben Flod.
 Men Niflung drog til Rhinen og blev en Kæmpe stærk og god.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814049" author="moellerpl">
