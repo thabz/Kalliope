@@ -412,6 +412,15 @@ const TextContent = (props) => {
       const lineOptions = l.length > 1 ? l[1] : {};
       return lineOptions.displayNum != null || lineOptions.margin != null;
     }) != null;
+  const verseLineCount = contentHtml.filter((l) => {
+    const lineOptions = l.length > 1 ? l[1] : {};
+    return lineOptions.num != null;
+  }).length;
+  const indentShortPoem =
+    type === 'poetry' &&
+    showNums === false &&
+    verseLineCount > 0 &&
+    verseLineCount < 5;
 
   if (options.highlight != null) {
     const highlight = options.highlight;
@@ -481,6 +490,8 @@ const TextContent = (props) => {
     }
     if (showNums) {
       className += ' line-with-num';
+    } else if (indentShortPoem === true) {
+      className += ' short-poem-line';
     }
 
     if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
@@ -574,7 +585,8 @@ const TextContent = (props) => {
           vertical-align: top;
           margin-top: 0;
         }
-        :global(.line-with-num) {
+        :global(.line-with-num),
+        :global(.short-poem-line) {
           margin-left: 1.5em;
         }
         :global(.prose-paragraph) {
