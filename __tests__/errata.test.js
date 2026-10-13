@@ -28,6 +28,13 @@ describe('errata declarations and footnotes', () => {
     }), 'test.xml')).toEqual([]);
   });
 
+  it('accepts an unnumbered correction block with a precise facsimile page', () => {
+    expect(validateErrata(work({
+      declarations: '<errata status="applied" pages="[upagineret]" facsimile-pages="10"/>',
+      footnotes: '<footnote type="errata">taler] læser</footnote>',
+    }), 'test.xml')).toEqual([]);
+  });
+
   it('rejects applied errata without typed footnotes', () => {
     expect(validateErrata(work({ declarations: applied }), 'test.xml'))
       .toEqual(expect.arrayContaining([expect.stringContaining('kræver mindst én')]));

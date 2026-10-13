@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1845-gaea" author="antologierdk" status="incomplete" type="anthology" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
+  <pictures>
+    <picture src="1845-gaea-p1.jpg" type="titlepage" primary="true"><transcription>Gæa / æsthetisk Aarbog, / med Bidrag af / Oehlenschlæger, / St. St. Blicher, C. Hauch, Ludv. Bødtcher, / C. N. Rosenkilde, Anna Christiane Jessen, Chr. Winther, / Δ, H. C. Ørsted, J. S. Welhaven, Carl Bernhard, F. C. Hillerup, Wergeland, / Grimur Thjomsen, H. C. Andersen, F. J. Hansen, Carl Nielsen, / Carl Borgaard, Anonyme Forfattere, / P. L. Møller, / og Illustrationer efter Tegninger af / J. Juel, Clemenz, / Constantin Hansen, Klæstrup, Melbye, A. Koberg, / Lund, Sodring, Westphal, L. Frølund, A. Leiner, Marstrand, Skovgaard, / W. Bendz, Hetsch, Lundby, Böisen, / Thorvaldsen. // Udgivet af / P. L. Møller. // Kjøbenhavn. / Udgiverens Forlag. Berlingske Bogtrykkeri. / 1845.</transcription></picture>
+  </pictures>
+
   <title>Gæa</title>
   <subtitle>Æsthetisk Aarbog</subtitle>
   <breadcrumbtitle>1845</breadcrumbtitle>
@@ -34,7 +38,7 @@
   <title>Vaaren</title>
   <firstline>Man siger, at Vaaren er Ungdommens Ven</firstline>
   <pictures>
-    <picture src="1845-gaea-illustration-006.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 7.</picture>
+    <picture src="1845-gaea-illustration-006.jpg" type="illustration">Billedblad før s. 2 i <i>Gæa</i>, 1845.</picture>
   </pictures>
   <source pages="2-4" facsimile-pages="8-10"/>
 </head>
@@ -49,7 +53,7 @@ Selv Kulden og Mørket maa vige;
 Men Elskeren finder kun der Paradiis,
 Hvor henrykt han finder sin Pige.
 
-Hvad er vel Kiærminder mod Øinenes Blaa,
+Hvad er vel Kierminder mod Øinenes Blaa,
 Hvis Blikke saa saligt ham saare?
 Hvad ere vel Kildernes Sølvbølger smaa
 Mod hendes fortryllende Taare?
@@ -126,7 +130,7 @@ Naar sig Mindet atter Siælen nærmer.
 
 Du var kraftig, Du var sund og skiøn, —
 Deilig Rosenknup i Morgenrøden.
-Hvilken Forskial! da Du laa i Løn
+Hvilken Forskiæl! da Du laa i Løn
 Bleg, og droges ubevidst med Døden.
 <pb facs="010.jpg"/>End som Moder kan jeg grant Dig see
 Med de Smaa — o hvilken yndig Scene!
@@ -280,7 +284,7 @@ Og selv i Døden har den Overhaand!
 Saa flyv, Du Helligaand! flyv til den Bo,
 Hvor Hun som Viv og Moder Glæden fandt.
 Hvor hun har ikke glemt i huuslig Ro
-    Den Tid, som svandt,
+    Den Tid som svandt,
 Og dem, som tidligst hendes Hierte vandt!
 </poetry>
 </body>
@@ -288,8 +292,12 @@ Og dem, som tidligst hendes Hierte vandt!
 
 <text id="oehlenschlaeger20260814005" author="oehlenschlaeger" variant="oehlenschlaeger2019022069">
 <head>
-  <title>Jægeren paa Frieri og Dyrene som Raadgivere</title>
-  <subtitle>(Ideen efter det Tydske.)</subtitle>
+  <title>Jægeren paa Frieri</title>
+  <subtitle>
+    <line>og</line>
+    <line>Dyrene som Raadgivere.</line>
+    <line>(Ideen efter det Tydske.)</line>
+  </subtitle>
   <firstline>En Jæger vilde giftes engang</firstline>
   <source pages="9-12" facsimile-pages="15-18"/>
 </head>
@@ -422,7 +430,7 @@ Den giækker ei — thi den forsvinder ei!
 Af gamle, forsmaaede Bomare;
 Hvem Baggesen dog har et Minde sat
 For „Grønland med Kokleare.“
-Jeg tog den frem, den bestøvede Bog,
+Jeg tog den frem, den bestøvede Bog; —
 Som hele Verden indfatter;
 Jeg ofte havde den læst, som Pog,
 Nu læste som Gubbe jeg atter.
@@ -501,7 +509,7 @@ For Fluer og Taskekrabber.“
 
 Saavidt var jeg kommen; og vel et Døgn
 Jeg brugte for Verset at vende;
-Da sagde mig Werlauff, at det var Løgn;
+Da sagde mig Werlauff, at det var Løgn,
 At Frands fik en lykkelig Ende.
 Hvad gavned nu Møien? Dog giør den ei Skam;
 Om Drake skal Visen udvandre;
@@ -544,9 +552,9 @@ Men det var ellers ikke det, jeg vilde fortælle. — Fra mine Tanter — som je
 Jeg forlod Falster i Efteraaret 1803, tog til Kjøbenhavn, og fik der andet at tænke paa end halvvorne Hønsepiger. Men i et af de følgende Krigsaar blev jeg ej allene sørgeligt, men frygteligt mindet om hende. Jeg skal fortælle, hvad der er mig fortalt.
 Gunslev havde, i eet af hine Danmarks mørke Aar, faaet Artillerister i Indkvartering. Blandt disse var en Constabel, hollandsk af Fødsel, en flink Karl, der var agtet og yndet af alle og enhver i Batteriet, baade Officerer og Simple. Der var ikke andet at sige ham paa, end at han var noget stolt og trodsig, dersom man prøvede paa at forurette ham; men dette skedte da heller ikke for tidt. Af Person var han velvoxen, havde et ærligt, men stedse alvorligt Aasyn. Smaatalende var han, og ikke mange flere end Commando-Ordene hørtes af hans Mund. — Hvad hans Opførsel udenfor Tjenesten angik, da var den aldeles dadelfrie: han brød sig hverken om Fruentimmer eller Flasker.
 <pb facs="024.jpg"/>Men af det første Slags maatte dog Een vorde hans Fordærvelse — og han hendes.
-Cornelis, saaledes kalder jeg ham — blev ulykkeligviis indqvarteret i den deilige Hønsepiges Fødegaard. Nu var hun ikke længer Hønsepige, men fuldvoxen deilig Mø, Arving til Gaarden. — Den stolte Kriger saae paa hende een Dag og en anden Dag; og snart maatte han bøie sig for Qvindeskjønheds Magt. Hans barske Krigerfjæs antog et mildt og blidt Skjær, saasnart denne Gunslev Sol — eller om man saa vil — Maane, bestraalede ham. Kort sagt: han blev forelsket i Pigen — hun ikke i ham.
+Cornelis, saaledes kalder jeg ham — blev ulykkeligviis indqvarteret i den deilige Hønsepiges Fødegaard. Nu var hun ikke længer Hønsepige, men fuldvoren deilig Mø, Arving til Gaarden. — Den stolte Kriger saae paa hende een Dag og en anden Dag; og snart maatte han bøie sig for Qvindeskjønheds Magt. Hans barske Krigerfjæs antog et mildt og blidt Skjær, saasnart denne Gunslev Sol — eller om man saa vil — Maane, bestraalede ham. Kort sagt: han blev forelsket i Pigen — hun ikke i ham.
 Der var en ung Karl i Gunslev, lad ham nu hedde Jens. Denne Jens havde Bodild allerede i nogen Tid havt et godt Øie til, saavel som han til hende. Men det var længe ikke kommen videre med dem end til Øinene. Hvor de kom sammen, saae de altsaa lidt paa hverandre, smiilte maaskee lidt ad hverandre, snakkede om baade det ene og det andet; kun ikke om Kjærlighed.
-Da var det, at Cornelis kom i Qvarteer hos Bodilds Forældre, og saae ligeledes paa hende een Dag og en anden, indtil han omsider blev saa forelsket som nogen kan blive.
+Da var det, at Cornelis kom i Qvarteer hos Bodilds Forældre, og saae ligeledes paa hende een Dag og enanden, indtil han omsider blev saa forelsket som nogen kan blive.
 Men han ikke blot saae paa hende; han sagde hende ogsaa hvorledes han havde det. Han sagde det eengang og togange og fleregange, men han fik kun undvigende Spøg i Svar. Havde han før været alvorlig, saa blev han nu mørk, og stundom skummel. Naar han ikke var i Tjenesten, sad han, eller gik frem og tilbage i sit Kammer. Han sukkede mere end han sov, som Forelskede pleie. En Dag, da han var ude, gik Bodild, som bestandigt i hans Fraværelse, ind i hans Værelse for at gjøre reent der. Hun saae da indvendig paa Døren skrevet med Kridt efterstaaende Vers, hvis Mening hun naturligviis umuligt kunde fatte:
 </prose>
 <quote lang="nl">
@@ -616,9 +624,13 @@ Vei er for os bered).
 <text id="hauch20260814009" author="hauch" variant="hauch2019011833">
 <head>
   <title>Dionysos</title>
+  <subtitle>
+    <line>af</line>
+    <line>C. Hauch.</line>
+  </subtitle>
   <firstline>Hesperus vifted sin Fakkel i Luft, da bragtes en ukjendt</firstline>
   <pictures>
-    <picture src="1845-gaea-illustration-033.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 34.</picture>
+    <picture src="1845-gaea-illustration-033.jpg" type="illustration">Billedblad før s. 29 i <i>Gæa</i>, 1845.</picture>
   </pictures>
   <source pages="29-33" facsimile-pages="35-39"/>
 </head>
@@ -767,7 +779,11 @@ Synerne svandt som en Drøm i Morgendæmringens Tvelys.
 <text id="hauch20260814010" author="hauch">
 <head>
   <title>Fragment af Marsk Stig</title>
-  <subtitle>en utrykt Tragoedie<footnote>Den Tragoedie, hvoraf efterfølgende Scener ere tagne, vil vel under nærværende Omstændigheder vanskelig fuldføres eller see Dagens Lys. Jeg havde begyndt at skrive den og var netop færdig med halvtredie Act deraf, da Oehlenschläger besluttede at skrive sin Erik Glipping, og da jeg nu til min egen Skade havde erfaret, hvorlidet vort Publicum ynder, at flere Digtere, ligesom det hos Grækerne var Tilfældet, behandle det samme Æmne, saa lagde jeg naturligviis strax mit Stykke hen.</footnote></subtitle>
+  <subtitle>
+    <line>en utrykt Tragoedie<footnote>Den Tragoedie, hvoraf efterfølgende Scener ere tagne, vil vel under nærværende Omstændigheder vanskelig fuldføres eller see Dagens Lys. Jeg havde begyndt at skrive den og var netop færdig med halvtredie Act deraf, da Oehlenschläger besluttede at skrive sin Erik Glipping, og da jeg nu til min egen Skade havde erfaret, hvorlidet vort Publicum ynder, at flere Digtere, ligesom det hos Grækerne var Tilfældet, behandle det samme Æmne, saa lagde jeg naturligviis strax mit Stykke hen.</footnote></line>
+    <line>af</line>
+    <line>C. Hauch.</line>
+  </subtitle>
   <source pages="34-54" facsimile-pages="40-60"/>
 </head>
 <body>
@@ -786,7 +802,7 @@ Nu er vi ene, hvis de var her nu,
 Da kunde strax det skee.
 
 <nonum><center>Erik.</center></nonum>
-Hvad siger Du?
+            Hvad siger Du?
 
 <nonum><center>Ranild.</center></nonum>
 Jeg siger: End er Jagten ei forbi;
@@ -924,7 +940,7 @@ Det gjør vi ganske vist, min kjække Drot.
 <nonum><center>Erik.</center></nonum>
 Vi er kun Konger indenfor vor Kreds;
 Dog naar vi overskride den, da er
-Vort Bryst saa let at nage, som Betlerens.
+Vort Bryst saa let at naae, som Betlerens.
 
 <nonum><center>Ranild.</center></nonum>
 Du taler sandt.
@@ -1164,7 +1180,7 @@ Da skal jeg gaae at skaffe Spise, Drot!
 Ja, gjør det Ranild! men kom snart igjen!
 <nonum><small>Ranild gaaer.</small></nonum>
 
-<nonum><center><wrap><b>Erik, Drengen sovende.</b></wrap></center></nonum>
+<nonum><center><wrap><b>Erik, Drengen soven.</b></wrap></center></nonum>
 
 <nonum><center>Erik.</center></nonum>
 Heel selsomt blinke Skyerne derude,
@@ -1208,7 +1224,7 @@ Kun af min Drøm. — Men nei, jeg seer det klart:
 Paa Gulvet stander hun i Liigdragt klædt.
 — Du hellige Cecilia! Forstaaer
 Den tause Grav i saadan Billedskrift
-At vise Til dig min Siæl / Ved hendes Siælen, hvad den mindst af al
+At vise Siælen, hvad den mindst af al
 Den Rædsel Dybet eier, vilde see,
 Da var det bedre fast, vi ei var født.
 <nonum><small>(Gjenfærdet forsvinder.)</small></nonum>
@@ -1445,7 +1461,7 @@ I tager feil, Kong Erik er ei her.
 <nonum><center>Erik.</center></nonum>
 O, Salighed, omviftet af Forraadnelse!
 O, Paradiis, hvor døde Fugle sjunge!
-Til dig min Til dig min Siæl / Ved hendes Siæl vil aldrig finde Vei.
+Til dig min Siæl vil aldrig finde Vei.
 — Men Livet kjendte jeg, og det var skjønt.
 <pb facs="057.jpg"/>— O, vee! Der springer Døren op — jeg seer dem,
 Ha, det er Stig! Nu er der intet Haab!
@@ -1489,7 +1505,7 @@ Ved hendes Lidelser og blege Kinder,
 Ved hendes Suk og hendes klamme Dødssved,
 <pb facs="058.jpg"/>Ved hendes Øines evig slukte Glands,
 Ved hendes Legem paa den sorte Liigbaar,
-Ved hendes Til dig min Siæl / Ved hendes Siæl, som du forvandlet har
+Ved hendes Siæl, som du forvandlet har
 Til en veemodig, tung og bitter Taare,
 Hvori sig Syndens Billed stedse speiled:
 At end du skrifter i din sidste Stund,
@@ -1556,11 +1572,12 @@ Bevarer Mindet.
 <text id="boedtcher20260814011" author="boedtcher" variant="boedtcher2002112403">
 <head>
   <title>Fuglen</title>
-  <subtitle>poetisk Fortælling</subtitle>
+  <subtitle>
+    <line>poetisk Fortælling</line>
+    <line>af</line>
+    <line>Ludv. Bødtcher.</line>
+  </subtitle>
   <firstline>Maanens fulde Midnatsflamme</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-060.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 61.</picture>
-  </pictures>
   <source pages="55-78" facsimile-pages="61-84"/>
 </head>
 <body>
@@ -1587,7 +1604,7 @@ Men en Qvindes svage Trin
 Med Fortvivlelse i Sjælen.
 
 Korte Drøm i Paradiset!
-Hun har lydt, Natur, dit Bud,
+Hun har lydt Natur, dit Bud,
 Seet i Elskov blindt sin Gud,
 Verden staaer med Flammeriset: —
 Indtil nu med Kæmpestyrke
@@ -1655,7 +1672,7 @@ Aaen skummer som en Flod,
 Gynger fremad og tilbage;
 Og en skummel Afgrund gaber,
 Som har sluget Vei og Sti, —
-„Alting, Alting er forbi!“
+Alting, Alting er forbi!
 Høit hun jamrer til sin Skaber.
 
 Tys! det larmer fjernt histnede,
@@ -1676,7 +1693,7 @@ Krybe under Løvets Hang,
 For at hindre hendes Gang
 Og forvikle hendes Fødder.
 
-Barnet sig i Smerte vaander,
+Barnet sig i Smerte vaander:
 See, da glemmer hun sin Nød,
 Skjælver kun for Barnets Død,
 Priser Gud, da frit det aander. —
@@ -1796,7 +1813,7 @@ Og ud af Døren foer hun rask som Lynet. —
 Hun var en rank, blegrosenfarvet Lillie,
 Med brune Øine, sky som Skovens Hind,
 Og da hun atter pustende kom ind,
-Blev Anna hende god imod sin Villie.
+Blev Anna hende god imod sin Villie:
 
 „Du kom fra Loftet nylig?“ — hør Marie,
 Hvad gjør du der saa tidt ved Dag og Nat? —
@@ -1838,9 +1855,9 @@ Det var, som nærmede sig Høets Duft,
 Han hørte henrykt i den stille Luft
 Den hæse Klang af Leen, som blev hvæsset.
 
-Ja, indtil Smørret, — maatte Alt vurderes,
+Ja, indtil Smørret, — maatte det vurderes,
 Det stod saa gyldent paa den hvide Dug, —
-Han saae paa Brødets rene, gode Rug,
+Han saae paa Brødets rene gode Rug,
 Og paa sin Moder saae han som paa Ceres.
 
 <pb facs="070.jpg"/>Men Anna saae i ham, om ikke Paven,
@@ -1953,7 +1970,7 @@ Og da tilsidst Godnat de bød til Hver,
 Da tændte alt i Græsset hist og her
 Johannesormen taus sin lille Lygte. — —
 
-Johannes higed efter ensom Hvile.
+Johannes higed efter ensom Hvile,
 Han ilte til et Stevne med sig selv:
 Hans Følelser var som en standset Elv,
 Hans Mund var træt af evig glad at smile;
@@ -2091,7 +2108,7 @@ Med aabne Øine, store, barneklare.
 
 Sødt havde Glutten nylig morgenblundet,
 Paa hver en Kind laa end et Valmu'blad,
-Nu Munden atter gjerne drikke gad,
+Og Munden atter gjerne drikke gad,
 Og Haanden søgte, — buttet og bedunet.
 
 Der er et Sprog, som kun en Qvinde næmmer,
@@ -2120,7 +2137,7 @@ Hun var som altid rolig, mild og klog,
 Kun mere Blødhed laa i hendes Stemme.
 
 Hun flyttede til Døren hen sit Sæde,
-Lod Rokken snurre i dens jevne Takt,
+Lod Rokken snurre i sin jevne Takt,
 Men medens Haanden spandt, gav Øiet Agt
 Paa Hver, som op til Loftet vilde træde.
 
@@ -2250,10 +2267,11 @@ Og Byrden svandt som hidtil havde tynget.
 <text id="rosenkildecn20260814012" author="rosenkildecn">
 <head>
   <title>Albert Perse</title>
-  <subtitle>Fortælling</subtitle>
-  <pictures>
-    <picture src="1845-gaea-illustration-084.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 85.</picture>
-  </pictures>
+  <subtitle>
+    <line>Fortælling</line>
+    <line>af</line>
+    <line>C. N. Rosenkilde.</line>
+  </subtitle>
   <source pages="79-87" facsimile-pages="85-93"/>
 </head>
 <body>
@@ -2276,7 +2294,7 @@ I Kirken saae alle Mennesker med dyb Deeltagelse paa den smukke og velklædte Ch
 <pb n="86" facs="091.jpg"/> Blik, tidt i dyb Sorg hævet op mod Himmelen. Hun rakte undertiden sin høire Haand ud af Stolen og lagde den paa Drengens Skulder; i den venstre holdt hun sin lille Datter, Juliane.
 Da Præsten tog Løftet af Christian Perse, om at han altid vilde blive et godt Menneske, og lagde sin Haand paa hans blondlokkede Hoved, da var det vel en usynlig, hellig Magt, der gjorde, at han just i det Øieblik hævede sine Øine og sit Aasyn opad under Præstens indviende Haand og Bøn, og saae ligehen for sig; hans Øie dvælede ved hans Moder og Søster, og saae derpaa hen mod Kirkedøren. Der stod hans Fader, den gode Albert Perse, lænet op til en Pille. Han stod og saae saa mildt hen paa sin Søn, og foldede sine Hænder sammen som til en Bøn for ham.
 Aarsagen, hvorfor Albert var bleven saa længe bort, var den, at han havde jaget et Søm ind i sin Fod, og derover var han faldet; Smedesvenden havde han givet i Commission at hilse sin Kone, hvis han kom før hjem end han, og dette havde han gjort, førend han faldt om. Han var bleven baaret i Land, saa slemt var Saaret i hans Fod, og han havde maattet holde Sygestuen i nogle Dage, men dette var ogsaa den eneste Skade, han havde faaet.
-Iblandt dem, der i de fjorten Dage denne Begivenhed blev gjennemdrøftet i Byen, især med Strenghed dadlede Albert for det han havde solgt sig for en Klædning til sin Dreng, var Ingen strengere end Postmesteren, til hvem Albert havde leveret de 21 Rigsdaler. „Jeg siger, og jeg paastaaer, det var Dottepinne! overdrevent; det siger jeg, for det var overdrevent. Da den fordrukne Skytte gik i Torvemosen, og ingen Hund kunde gjøe ad de 21 Rigsdaler, og Perses ogsaa i flere Aar har havt Uleilighed nok baade af Skytten og af hans Hest, saa kunde han have laant de 21 med Gud og Æren. — Jeg siger, det var overdrevent.“ Saaledes philosopherede Postmesteren. Men naar Nogen talte til Albert derom, saa sagde han: „Føi for Katten!! skulde jeg stjæle Confirmations<pb n="87" facs="092.jpg"/>klæder til min egen rare Dreng? Nei — Gud forbarme sig over os Mennesker, at vi da ikke bleve til saadanne Satans Kreature! Nei! Men femten Rigsdalers Karl, det syntes mig var noget, der passede sig godt. Det var ligesaadan for mig, som om det maatte saadan være, for at den velsignede Dreng kunde blive rigtig confirmeret; og at der ikke var nogen stor Ræsikom ved det, det kunde jeg mærke paa mig. — Pas paa ham, I skal see — ikke sandt Christian? Opdragelse har jeg ikke saadan kunnet give Dig, min rare Dreng! men ikke sandt — confirmeret Dig i alt Godt, det har jeg.“
+Iblandt dem, der i de fjorten Dage denne Begivenhed blev gjennemdrøftet i Byen, især med Strenghed dadlede Albert for det han havde solgt sig for en Klædning til sin Dreng, var Ingen strengere end Postmesteren, til hvem Albert havde leveret de 21 Rigsdaler. „Jeg siger, og jeg paastaaer, det var <w>Dottepinne!</w> overdrevent; det siger jeg, for det var overdrevent. Da den fordrukne Skytte gik i Torvemosen, og ingen Hund kunde gjøe ad de 21 Rigsdaler, og Perses ogsaa i flere Aar har havt Uleilighed nok baade af Skytten og af hans Hest, saa kunde han have laant de 21 med Gud og Æren. — Jeg siger, det var overdrevent.“ Saaledes philosopherede Postmesteren. Men naar Nogen talte til Albert derom, saa sagde han: „Føi for Katten!! skulde jeg stjæle Confirmations<pb n="87" facs="092.jpg"/>klæder til min egen rare Dreng? Nei — Gud forbarme sig over os Mennesker, at vi da ikke bleve til saadanne Satans Kreature! Nei! Men femten Rigsdalers Karl, det syntes mig var noget, der passede sig godt. Det var ligesaadan for mig, som om det maatte saadan være, for at den velsignede Dreng kunde blive rigtig confirmeret; og at der ikke var nogen stor Ræsikom ved det, det kunde jeg mærke paa mig. — Pas paa ham, I skal see — ikke sandt Christian? Opdragelse har jeg ikke saadan kunnet give Dig, min rare Dreng! men ikke sandt — confirmeret Dig i alt Godt, det har jeg.“
 Efterfølgende kunde maaskee fortjene Plads her som Slutning paa min lille Fortælling. Da jeg for nogle Aar siden læste den for en gammel Ven, saa sagde han: „Ih, men det er jo Christian —s virkelige Confirmations Historie, Du der fortæller for alle Mennesker!“ „O, ja saamæn, det kan jo ogsaa nok være værd at høre.“
 „Veed Du ellers, hvordan den blev Aarsagen til hans største Lykke? Han var Informator hos en Baron i Fyen, og der blev Mennesket slaaet i en Søsterdatter af Baronen. Han har fortalt mig, at da Pigen engang gav ham et Kys i Haven, som Onklen fik at see, saa blev denne uhyre opbragt og foreholdt ham: „hvorledes han turde vove paa Sligt, han — — stakkels Student;“ men saa tog han Mod til sig og sagde: „Jeg er indkaldt til alle mine Examina, og min Fader, som rigtignok kun var Muursvend, var af den ægteste Adel, der findes i Danmark,“ hvorpaa han fortalte sin Barndoms og Confirmations Historie. Baronen, som var en skikkelig Adelsmand, tillod ham at forlove sig med Søsterdatteren.
 Der boer vistnok endnu etsteds i Fyen en Præste-Enke, som veed Besked om denne Historie. Hun vil maaskee finde nogen Trøst i sit Savn, hvis hun læser dette lille Mindeskrift om min Ven, af hans gamle Skolekammerat.
@@ -2299,9 +2317,6 @@ Der boer vistnok endnu etsteds i Fyen en Præste-Enke, som veed Besked om denne 
 <head>
   <title>Min Spinderok</title>
   <firstline>Det bruser fælt derude</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-093.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 94.</picture>
-  </pictures>
   <source pages="88-90" facsimile-pages="94-96"/>
 </head>
 <body>
@@ -2443,80 +2458,80 @@ Den blev hans Vogter i Dødens Nat
 <body>
 <poetry>
 <pb facs="097.jpg"/>Theone leger ved Middagsstund
-    I grønnen Lund,
+I grønnen Lund,
 Hun plukker Blomster med Glæde!
 Mens dybt hun bøiet i Græsset gaaer,
-    For hende staaer
+For hende staaer
 Et Barn i skinnende Klæde!
 
 Den underdeilige Pige bar
-    Et Vingepar
+Et Vingepar
 <pb facs="098.jpg"/>Saa sølverglindsende, hvide.
 Theone frydefuld nærmer sig,
-    Og søsterlig
+Og søsterlig
 Omfavnes hun af den Blide.
 
 De Smaabørn række hinanden Haand
-    Med munter Aand,
+Med munter Aand,
 De hoppe, lege og spøge.
 Saa ene søgte du Blomster her,
-    Veninde kjær!
+Veninde kjær!
 Thi kom jeg dig at besøge.
 
 Snart skal du skue min Blomsterflor,
-    Som evig groer
+Som evig groer
 I Urtegaarden derhjemme;
 Der blomstrer Rosen i Purpurglød,
-    Og undersød
+Og undersød
 Er hist Smaafuglenes Stemme.
 
 Theone hælder sig længselsfuld
-    Til Pigen huld,
+Til Pigen huld,
 Sødt leer det himmelblaa Øie,
 Mens hiin fortæller med yndig Røst
-    Om Hjemmets Lyst
+Om Hjemmets Lyst
 Hist i det straalende Høie.
 
 Saa venlig smilende Solen gled
-    Bag Lunden ned,
+Bag Lunden ned,
 Da mon den Vingede smile:
 See Duggen perler fra dunkle Sky,
 <pb facs="099.jpg"/>    Nu maa jeg flye!
 Hjem til din Hytte du ile.
 
 Theone beder saa bønlig blid,
-    O, giv dog Tid!
+O, giv dog Tid!
 Mig ei saa hastig forlade!
 O, tag mig med til din Urtegaard,
-    Hvor Blomsten staaer,
+Hvor Blomsten staaer,
 Med purpurglødende Blade!
 
 Jeg gaaer at binde i venlig Glands
-    Til dig en Krands,
+Til dig en Krands,
 Snart kan du atter mig vente.
 Naar Solen stiger i Rosenskjær,
-    Da er jeg her,
+Da er jeg her,
 Dig til min Have at hente.
 
 Med Smiil hun breder de Vinger smaa,
-    Og mod det Blaa,
+Og mod det Blaa,
 Af Glands omstraalet sig hæver,
 Mens Nattergalen fra Bøgen slaaer
-    Sødt som i Vaar,
+Sødt som i Vaar,
 Og Blomsten duftende bæver.
 
 Klart skinner Solen ad Ruden ind,
-    Paa Barnets Kind,
+Paa Barnets Kind,
 Dens Straaler vække Theone.
 O Fryd, da skuer hun Pigen skjøn
-    Med Palme grøn,
+Med Palme grøn,
 Og seierfunklende Krone.
 
 <pb facs="100.jpg"/>Da hylles Øiet i Taageslør
-    Og Smilet døer,
+Og Smilet døer,
 Paa Kinden Roserne blegne;
 Men frydfuld svæver den rene Aand
-    Ved Englens Haand,
+Ved Englens Haand,
 Til Himlens salige Egne.
 </poetry>
 </body>
@@ -2890,10 +2905,6 @@ Niels er nu 26 Aar, men han og hans Klædedragt ere uforandrede: han seer sig om
 <head>
   <title>Paa Valen</title>
   <firstline>Snart brister nu den svære Lænke</firstline>
-
-  <pictures>
-    <picture src="1845-gaea-illustration-124.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 125.</picture>
-  </pictures>
   <source pages="119-121" facsimile-pages="125-127" />
 </head>
 
@@ -3157,10 +3168,6 @@ I Danmark Din Hæder skal lyde.
   <notes>
     <note>Trykt under signaturen Δ.</note>
   </notes>
-
-  <pictures>
-    <picture src="1845-gaea-illustration-132.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 133.</picture>
-  </pictures>
   <source pages="127-130" facsimile-pages="133-136" />
 </head>
 
@@ -3351,10 +3358,6 @@ Imens hans Arme Dig vugge!
   <title>Skjønhedsglæder</title>
   <subtitle>Et didactisk Digt</subtitle>
   <firstline>O, see den Sommerfugls flagrende Dands</firstline>
-
-  <pictures>
-    <picture src="1845-gaea-illustration-138.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 139.</picture>
-  </pictures>
   <source pages="133-139" facsimile-pages="139-145" />
 </head>
 
@@ -3717,9 +3720,6 @@ Til Buesnorens Klang.
   <title>Marie</title>
   <subtitle>Fortælling</subtitle>
   <source pages="146-165" facsimile-pages="152-171"/>
-  <pictures>
-    <picture src="1845-gaea-illustration-151.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 152.</picture>
-  </pictures>
 </head>
 
 
@@ -3908,7 +3908,7 @@ I dette Øieblik er Marie Jørgens Hustru; Kjærligheden helbredede hurtigt den 
   </notes>
   <source pages="167-178" facsimile-pages="173-184"/>
   <pictures>
-    <picture src="1845-gaea-illustration-171.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 172.</picture>
+    <picture src="1845-gaea-illustration-171.jpg" type="illustration">Billedblad før s. 167 i <i>Gæa</i>, 1845.</picture>
   </pictures>
 </head>
 
@@ -4585,7 +4585,7 @@ Et Hurra under Bovenbram!
   <source pages="187-198" facsimile-pages="193-204" />
 
   <pictures>
-    <picture src="1845-gaea-illustration-191.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 192.</picture>
+    <picture src="1845-gaea-illustration-191.jpg" type="illustration">Billedblad før s. 187 i <i>Gæa</i>, 1845.</picture>
   </pictures>
 </head>
 
@@ -4939,9 +4939,6 @@ Ou le bruit importun, ou le rire cruel.
 
   <title>Hyldemoer</title>
   <source pages="204-213" facsimile-pages="210-219" />
-  <pictures>
-    <picture src="1845-gaea-illustration-209.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 210.</picture>
-  </pictures>
 
 </head>
 
@@ -5494,9 +5491,6 @@ Tilgiv! tilgiv! — der er en Gud i Dig!
 
   <title>Araberen og hans Hest</title>
   <firstline>Det stamper let paa Fliser</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-232.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 233.</picture>
-  </pictures>
   <source pages="227-236" facsimile-pages="233-242" />
 
 </head>
@@ -6030,9 +6024,9 @@ Til Himlen bed med mig, at snart de maae faae Fødselsveer!
   <title>Maifesten i Sundby</title>
   <subtitle>Dramatisk Situation</subtitle>
   <pictures>
-    <picture src="1845-gaea-illustration-249.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 250.</picture>
+    <picture src="1845-gaea-illustration-249.jpg" type="illustration">Billedblad før s. 245 i <i>Gæa</i>, 1845.</picture>
   </pictures>
-  <source pages="244-253" facsimile-pages="250-259" />
+  <source pages="245-253" facsimile-pages="251-259" />
 
 </head>
 
@@ -6250,9 +6244,6 @@ Bravo, Buf leve! De Svenske leve, svensk Banco leve! Fædrelandet leve! Giveren 
 
   <title>Gudruns Hævn</title>
   <firstline>Nu hør min gode Terne, gak ud af Borgeport</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-259.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 260.</picture>
-  </pictures>
   <source pages="254-263" facsimile-pages="260-269" />
 
 </head>
@@ -6552,153 +6543,136 @@ Men Niflung drog til Rhinen og blev en Kæmpe stærk og god.
 </text>
 
 <text id="moellerpl20260814049" author="moellerpl">
+
 <head>
+
   <title>En Kunstners Stemninger</title>
   <firstline>Hvor Dagen dog er lang! thi først naar Løvet</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-269.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 270.</picture>
-  </pictures>
-  <source pages="264-281" facsimile-pages="270-287"/>
+  <source pages="264-281" facsimile-pages="270-287" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="269.jpg"/>I.
+<nonum><center>I.</center></nonum>
 
 Hvor Dagen dog er lang! thi først naar Løvet
 Sig kruser dunklere paa Mark og Gren,
 Da flagre frem de blye, de lette Been,
 Naar Vinden ikke længer hvirvler Støvet.
-<pb facs="270.jpg"/>Er Dagen da ei lang? jo jeg har prøvet,
-Fra Solen steg af Badet blank og reen,
-At vente paa en Sommeraften seen;
-Jo, i Taalmodighed jeg har mig øvet. —
-
+<pb n="265" facs="270.jpg"/>Er Dagen da ei lang? jo jeg har prøvet,
+    Fra Solen steg af Badet blank og reen,
+    At vente paa en Sommeraften seen;
+    Jo, i Taalmodighed jeg har mig øvet. —
 Og naar da Intet dulmede min Længsel,
-Og mørk, utilfredsstillet jeg gik hjem,
-Ledsaget kun af Savnet og af Sorgen,
-
+    Og mørk, utilfredsstillet jeg gik hjem,
+    Ledsaget kun af Savnet og af Sorgen,
 Og Tanken rastløs, fra sit dunkle Fængsel,
-Kun mod den næste Aften higed frem:
-Hvor var da Natten lang til næste Morgen!
+    Kun mod den næste Aften higed frem:
+    Hvor var da Natten lang til næste Morgen!
 
 Men, naar min skjulte Vandring lod mig møde
-Den ranke Væxt, og Øiets dybe Hav,
-Som Flætningernes milde Skygger gav
-Forhøiet Klarhed; Glædens Straaler gøde
-
+    Den ranke Væxt, og Øiets dybe Hav,
+    Som Flætningernes milde Skygger gav
+    Forhøiet Klarhed; Glædens Straaler gøde
 Sig paa min Kind som Pigehænder bløde:
-Som Rankens Friskhed om den tørre Stav,
-Som Liv og Død i Blomster paa en Grav,
-Sødt alle Hjertets Tanker sammenfløde.
-
+    Som Rankens Friskhed om den tørre Stav,
+    Som Liv og Død i Blomster paa en Grav,
+    Sødt alle Hjertets Tanker sammenfløde.
 Naar blot en Luftning Duften til mig førte
-Af hendes Lokker, mens hun svæved bort,
-Da døde Sukket, Længselen og Klagen.
-
-Naar jeg et Vift af Kjolen, hvis jeg hørte
-Et Fodtrin blot, o, da var Natten kort,
-O, da var Søvnen sød, og let svandt Dagen.
+    Af hendes Lokker, mens hun svæved bort,
+    Da døde Sukket, Længselen og Klagen.
+Saae jeg et Vift af Kjolen, hvis jeg hørte
+    Et Fodtrin blot, o, da var Natten kort,
+    O, da var Søvnen sød, og let svandt Dagen.
 
 Jeg rev mig løs fra mine Venners Tale,
-Og fulgte Haabets, Anelsernes Røst.
-Den blege Maane glimtede fra Øst,
-Halvmørket jeg min Uro lod husvale.
-
+    Og fulgte Haabets, Anelsernes Røst.
+    Den blege Maane glimtede fra Øst,
+    Halvmørket jeg min Uro lod husvale.
 Stolt hvælved sig de mørkegrønne Sale,
-<pb facs="271.jpg"/>Og Alt var taust, kun i mit eget Bryst
-Der sad en Fugl, som uden Fred og Trøst
-Af intet Vindpust lulledes i Dvale.
-
+<pb n="266" facs="271.jpg"/>    Og Alt var taust, kun i mit eget Bryst
+    Der sad en Fugl, som uden Fred og Trøst
+    Af intet Vindpust lulledes i Dvale.
 Da lød der Skridt, saa svævende, saa stille,
-Mens Løvet sused om de gamle Ranker, —
-En Gang som Bølger bævende og milde.
-
+    Mens Løvet sused om de gamle Ranker, —
+    En Gang som Bølger bævende og milde.
 Det var — ved Mindet end mit Hjerte banker —
-Hin Fod, saa let sig hævende, saa lille;
-Jeg sank paa Bænken hen i søde Tanker.
+    Hin Fod, saa let sig hævende, saa lille;
+    Jeg sank paa Bænken hen i søde Tanker.
 
 Hun vandred, hvor Kastanierne skygged,
-Den høie Væxt, den lette Gang jeg saae,
-Jeg kjendte Dragten klar og himmelblaa,
-Skjøndt Aftnen længst sit mørke Skyslot bygged.
-
+    Den høie Væxt, den lette Gang jeg saae,
+    Jeg kjendte Dragten klar og himmelblaa,
+    Skjøndt Aftnen længst sit mørke Skyslot bygged.
 Alt nærmed Skikkelsen sig, skjønhedssmykket;
-Jeg hæved mig, imøde den at gaae,
-Men før mit Øie ret den kunde naae,
-Paa mig to Stjerner Trylleseglet trykked.
-
+    Jeg hæved mig, imøde den at gaae,
+    Men før mit Øie ret den kunde naae,
+    Paa mig to Stjerner Trylleseglet trykked.
 Den faure Svanehals sig sagte dreied —
-O, at jeg ei forstod dets tause Ord,
-Det milde Blik, som strax sig monne vende!
-
+    O, at jeg ei forstod dets tause Ord,
+    Det milde Blik, som strax sig monne vende!
 O, aned det Alt, hvad jeg overveied! —
-Jeg fulgte disse fine Formers Spor,
-Jeg fulgte dem, og saae, at det var hende.
+    Jeg fulgte disse fine Formers Spor,
+    Jeg fulgte dem, og saae, at det var hende.
 
 O ja, jeg veed, jeg veed, at det var hende,
-Hvem jeg min tause Lidenskab i Aar
-Og Dage vied, ja, forvist jeg troer,
-Blandt Tusinde jeg hende skulde kjende.
-
+    Hvem jeg min tause Lidenskab i Aar
+    Og Dage vied, ja, forvist jeg troer,
+    Blandt Tusinde jeg hende skulde kjende.
 Og Stemmen, aldrig end jeg hørte denne,
-Dog jeg skal kjende Droslen, naar den slaaer,
-<pb facs="272.jpg"/>Paa Øinene, hvis Alterkærter Aar
-Og Dage mine Vinger jeg lod brænde.
-
+    Dog jeg skal kjende Droslen, naar den slaaer,
+<pb n="267" facs="272.jpg"/>    Paa Øinene, hvis Alterkerter Aar
+    Og Dage mine Vinger jeg lod brænde.
 Men, naar engang min Lykkes Time klinger,
-Vi tale skal som gode gamle Venner
-Om Svanehalsens sagtelige Dreining,
-
+    Vi tale skal som gode gamle Venner
+    Om Svanehalsens sagtelige Dreining,
 Og meget meer, mens mine brændte Vinger
-Hun læger, og i hvert mit Billed kjender
-Med Fryd sig selv, trods Skygger og Fortegning.
+    Hun læger, og i hvert mit Billed kjender
+    Med Fryd sig selv, trods Skygger og Fortegning.
 
 Og dog, hvor kan jeg svage Daare tænke,
-En saadan Time vil for mig oprinde,
-At, om jeg end kan Tankens Syner binde,
-Jeg disse Skjønhedsstraaler skulde lænke?
-
+    En saadan Time vil for mig oprinde,
+    At, om jeg end kan Tankens Syner binde,
+    Jeg disse Skjønhedsstraaler skulde lænke?
 Og vilde jeg vel, uden dem at krænke
-Til dem mig kunne nærme nogensinde,
-Da kun, naar Dagens stærke Straaler svinde,
-De blye til min Beskuelse sig sænke?
-
+    Til dem mig kunne nærme nogensinde,
+    Da kun, naar Dagens stærke Straaler svinde,
+    De blye til min Beskuelse sig sænke?
 Og vilde disse fine Former ikke,
-Hvis blot et Kys at trykke paa en Flig
-Af deres Klædebon jeg fik i Sinde,
-
+    Hvis blot et Kys at trykke paa en Flig
+    Af deres Klædebon jeg fik i Sinde,
 Unddrage sig aldeles mine Blikke,
-Og føres, til en Sky forvandlet, lig
-Ixions Elskte, bort af Æthervinde?
+    Og føres, til en Sky forvandlet, lig
+    Ixions Elskte, bort af Æthervinde?
 
-II.
+<nonum><center>II.</center></nonum>
 
 Naar din Skygge svæver
-Sagte bag Gardinet,
-Heftig Attraa hæver
-Gjennem al min Sjæl,
-
+  Sagte bag Gardinet,
+  Heftig Attraa hæver
+  Gjennem al min Sjæl,
 Efter dig at skue
-Nærved, i din Ynde,
-<pb facs="273.jpg"/>Tolke Dig min Lue
-I et Flammesprog, —
-
+  Nærved, i din Ynde,
+<pb n="268" facs="273.jpg"/>  Tolke Dig min Lue
+  I et Flammesprog, —
 Efter Dig at skjenke
-Al mit Hjertes Rigdom,
-Efter Dig at lænke
-Til min Tankes Maal.
-
+  Al mit Hjertes Rigdom,
+  Efter Dig at lænke
+  Til min Tankes Maal.
 Og jeg vilde strække
-Armene imod Dig,
-Hele Verden lægge
-Ydmyg for Din Fod. —
-
+  Armene imod Dig,
+  Hele Verden lægge
+  Ydmyg for Din Fod. —
 O, men hver Gang, naar jeg
-Nærved mig Dig skuer,
-Taus og stille staaer jeg
-I Beundring tabt.
+  Nærved mig Dig skuer,
+  Taus og stille staaer jeg
+  I Beundring tabt.
 
-III.
+<nonum><center>III.</center></nonum>
 
 Du er Væsnet, født af Tidens Bølge
 I mig, som min rette Mulighed.
@@ -6707,7 +6681,7 @@ Jeg er Skyggen af min tabte Sjæl;
 Derfor maa jeg evig, evig følge
 Dig, hvorhen Du vender Dine Fjed.
 
-IV.
+<nonum><center>IV.</center></nonum>
 
 Arabiens golde Sandhav
 Sig strækker taust og øde,
@@ -6715,7 +6689,7 @@ Og alle Spirer martres
 Af Solens Ild tildøde.
 Men, hvor i kølige Nætter
 Den tætte Dug sig gyder,
-<pb facs="274.jpg"/>Der grønnes dunkle Skove,
+<pb n="269" facs="274.jpg"/>Der grønnes dunkle Skove,
 Og Livet rigt frembryder.
 
 Saaledes er mit Indre,
@@ -6727,7 +6701,7 @@ Sødt mig imøde lufter,
 Da som et frugtbart Landskab
 Det grønnes og det dufter.
 
-V.
+<nonum><center>V.</center></nonum>
 
 Naar Du i Livet viser
 Dig mellem Mænd og Qvinder,
@@ -6738,7 +6712,7 @@ Staaer op bag fjerne Høie,
 Og kaster Glandsen over
 En flad, tilploiet Mark.
 
-VI.
+<nonum><center>VI.</center></nonum>
 
 Luk Vindvet op, Du Elskede! —
 See, Maanen blank og fri
@@ -6749,12 +6723,13 @@ Saa i mit Bryst een Følelse
 Udstraaler evig Glands,
 Og alle andre tumle sig
 Om den i Taagedands.
-<pb facs="275.jpg"/>Den Aand, jeg før med Lyst adlød,
+
+<pb n="270" facs="275.jpg"/>Den Aand, jeg før med Lyst adlød,
 Er segnet syg og mat
 Hen paa en Klippepynt, og seer
 Ud i den dunkle Nat.
 
-VII.
+<nonum><center>VII.</center></nonum>
 
 Ja, som Stjernerne, de klare Stjerner,
 Tindrende med mystisk Straalespil,
@@ -6763,7 +6738,7 @@ Som i unge Aar vor Hu stod til.
 
 Ingen naaer i Natten disse Stjerner,
 De forsvinde ved den lyse Dag:
-Saa til hine Ideales Verdner
+Saa til hine Idealers Verdner
 Fast at holde, Kraften er for svag.
 
 Derfor jeg til Jorden nu mig holder,
@@ -6776,13 +6751,14 @@ Er kun et Par Øine, milde, blaae, —
 Over Søen hist et Lys, som blinker,
 Og — selv dette kan jeg ikke naae!
 
-VIII.
+<nonum><center>VIII.</center></nonum>
 
 Dig er det, som kunde opfylde min Drøm,
 Dig ene min Længsel søgte
 I Skovens Skygger, ved Havets Strøm; —
 Nu aldrig fra mig Du flygte!
-<pb facs="276.jpg"/>Min bly Sneeklokke med Rosenskjær,
+
+<pb n="271" facs="276.jpg"/>Min bly Sneeklokke med Rosenskjær,
 Dit Baand Du løse, og stige
 Med mig blandt usynlige Aanders Hær
 Over Jordens uklare Rige!
@@ -6802,7 +6778,7 @@ Bæv ikke ved Stormens Smerte,
 Men kom som en velsignende Regn,
 Og læsk mit tørstige Hjerte! —
 
-IX.
+<nonum><center>IX.</center></nonum>
 
 I Havens høie Skygge,
 Hvor vi forleden Aften
@@ -6815,7 +6791,7 @@ Hist gløder Lueaften,
 Og hvor vemodig-mildt Kastanien flokker
 Sin mørke Alvors Fylde
 Med lave, muntre Hylde: —
-<pb facs="277.jpg"/>Blandt Astersflor og — dunkelbrune Lokker
+<pb n="272" facs="277.jpg"/>Blandt Astersflor og — dunkelbrune Lokker
 Gaaer Du, min Herskerinde,
 I yndig Enekamp med kaade Vinde.
 
@@ -6846,15 +6822,15 @@ Med Straalernes havkolde Glands forhaane,
 Da rødmer Du blufærdig,
 Da flyer med from, elskværdig
 Blyhed fra mig min Elskovs fulde Maane:
-<pb facs="278.jpg"/>Da flyer Du, min Veninde,
+<pb n="273" facs="278.jpg"/>Da flyer Du, min Veninde,
 I Buret sky, som Skovens lette Hinde!
 
-X.
+<nonum><center>X.</center></nonum>
 
 Lad mig hvile, lad mig hvile
 I Din Arm, naar Dagen ender,
 Tryk med Dine bløde Hænder
-Dit til, og lad det smile,
+Øiet til, og lad det smile,
 Lad det smile sødt i Drømme,
 Ved Din ømme, ved Din ømme,
 Tause Barm!
@@ -6867,24 +6843,24 @@ I Dit Favntag, ved Din Stemme,
 Lad mig slumre, lad mig glemme,
 Glemme Alt! — —
 
-XI.
+<nonum><center>XI.</center></nonum>
 
 Den grumme Skjebne smiler for at dræbe,
-Paa Skromt den førte Lykken mig imod,
-Men kun for Alvor Haabet os forlod,
-Da først der havde kysset let vor Læbe.
+    Paa Skrømt den førte Lykken mig imod,
+    Men kun for Alvor Haabet os forlod,
+    Da først det havde kysset let vor Læbe.
 Og Ingen dog kan Sjæl til Sjæl at klæbe,
-Og elske Ingen dog som vi forstod,
-Og Ingen kunde dog fra Hjertets Rod
-Til mere hellig Enhed sammenstræbe.
+    Og elske Ingen dog som vi forstod,
+    Og Ingen kunde dog fra Hjertets Rod
+    Til mere hellig Enhed sammenstræbe.
 Hun kom til mig med falmet Kind; sødt kruset
-Sig Svanedunets Snee om Halsen gød,
-Vemodig Stemmens bløde Bølger sused.
-<pb facs="279.jpg"/>„Farvel, min Ven! vi maae hinanden miste,
-Ak, denne Afsked er min første Død:
-Snart venter mig den længere, den sidste.“
+    Sig Svanedunets Snee om Halsen gød,
+    Vemodig Stemmens bløde Bølger sused.
+<pb n="274" facs="279.jpg"/>„Farvel, min Ven! vi maae hinanden miste,
+    Ak, denne Afsked er min første Død:
+    Snart venter mig den længere, den sidste.“
 
-XII.
+<nonum><center>XII.</center></nonum>
 
 — Hvorfor min Pensel hviler,
 Hvorfor jeg Selskab skyer,
@@ -6900,7 +6876,7 @@ Har voldet mig Sorg og Harm;
 
 — Hvorfor ved Midnatstide
 Jeg vandrer i Nattens Vind,
-Der, Venner, vil I vide:
+Det, Venner, vil I vide:
 I veed ei, hvad jeg maa lide,
 Og hvad der martrer mit Sind.
 
@@ -6913,10 +6889,10 @@ I Dødens Taagedal.
 Og jeg, som kunde nyde
 Livet i friske Drag,
 Og Aandens Syner tyde,
-<pb facs="280.jpg"/>Og dem i Former gyde,
+<pb n="275" facs="280.jpg"/>Og dem i Former gyde,
 Jeg føler mig mat og svag.
 
-XIII.
+<nonum><center>XIII.</center></nonum>
 
 Hun ligned Solen, naar den bryder
 En Sommermorgen frem af Nattens Mørke.
@@ -6938,15 +6914,16 @@ Og den profane Jord ei længer taaler:
 I Sorgens tause, dybe Bølge
 Nedsank, da hun forlod mig, Livets Straaler.
 
-XIV.
+<nonum><center>XIV.</center></nonum>
 
 Jeg elsker de skumle Nætter,
 Naar Stormen driftig og frisk
 Ruster de klynkende Træer,
 Driver de vandtunge Skyer
 Frem med sin mægtige Pidsk;
-<pb facs="281.jpg"/>Thi hvergang Øiet sig aabner
-Under Skyns kulsorte Bryn,
+
+<pb n="276" facs="281.jpg"/>Thi hvergang Øiet sig aabner
+Under Skyens kulsorte Bryn,
 Og hen over Jordens Skygger
 Maanen kaster ufølsom
 Straalernes flygtige Lyn:
@@ -6957,7 +6934,7 @@ Du, som frembrød engang lig
 Maanens flygtige Glimt i
 Den ensomme, stormende Nat!
 
-XV.
+<nonum><center>XV.</center></nonum>
 
 Hvor skal jeg finde, af hvor skal jeg faae
 Alt det, som jeg har tabt, igjen tilbage?
@@ -6978,7 +6955,8 @@ Og jeg som kunde svælget i et Hav
 Af Lyst og Harmoni med gode Magter,
 Skal hente Livsstof af en evig Grav,
 Og Trøst af det, som dybest jeg foragter.
-<pb facs="282.jpg"/>Og jeg, der engang eied Troens Lyn,
+
+<pb n="277" facs="282.jpg"/>Og jeg, der engang eied Troens Lyn,
 Som gjør Mirakler og som flytter Bjerge,
 Skal tumles hid og did af Drømmesyn,
 Og tæres langsomt hen i Kamp med Dverge.
@@ -6998,7 +6976,7 @@ Og ingen Himmel til. Vort Liv paa Jorden
 Er kun som Skygger i en Taagedal,
 Og der er ingen evig Verdensorden!
 
-XVI.
+<nonum><center>XVI.</center></nonum>
 
 Der er et Sagn om Kraken, at den sin uhyre Krop
 Stundom af Dybet hæver til Havets Flade op.
@@ -7006,16 +6984,16 @@ Og Seileren flyer med Gru for det underfulde Dyr,
 Der som en Ø sig strækker med Bjerge, Skove og Byer.
 
 Og Bølgerne høit sig taarne ved Massens svære Tryk.
-Der hedder, en undergaaet Verden den bær paa sin Ryg.
+Det hedder, en undergaaet Verden den bær paa sin Ryg.
 Den drager saa dybt sin Aande, den suger af Solens Glød;
 Saa synker den atter tilbage i Havets dybe Skjød.
 
 Mit Bryst er som Havet — stundom dybt fra dets tause Hjem
 En undergaaet Verden af Minder hæver sig frem.
-<pb facs="283.jpg"/>Den viser et smilende Landskab, en Bæk, en skyggefuld Lund;
+<pb n="278" facs="283.jpg"/>Den viser et smilende Landskab, en Bæk, en skyggefuld Lund;
 Den synker hurtig tilbage igjen til den tause Grund.
 
-XVII.
+<nonum><center>XVII.</center></nonum>
 
 Jeg sad i Toppen af den store Mast,
 Mens Nattevinden ruskede i Vanten,
@@ -7046,7 +7024,8 @@ En mild og lunken Luftning kom fra Landet,
 Og Laurbærlundens Duft jeg mærke kan.
 Guul vælter Bølgen sig, blytung og sandet,
 Jeg skuer den berømte Tibers Strand. —
-<pb facs="284.jpg"/>O Stad med de ruinbeklædte Høie,
+
+<pb n="279" facs="284.jpg"/>O Stad med de ruinbeklædte Høie,
 Hvor stærkt bevæges jeg i denne Stund!
 De store Skygger træde for mit Øie,
 Som engang vandred paa Din hellige Grund.
@@ -7061,13 +7040,12 @@ Som om den lange Dvale var tilende.
 De vaagne efterhaanden sagtelig,
 Jeg føler deres Liv tilbagevende.
 
-XVIII.
+<nonum><center>XVIII.</center></nonum>
 
 Sankt Peter, der Du staaer med Buer klare!
 De høitidsfulde Orgeltoner klinge,
 Blidt under Hvælvingerne hen de fare;
-Hvidtklædte Drenge fært med Røgkar svinge.
-
+Hvidtklædte Drenge sært med Røgkar svinge.
 Mildt vifter om den stille, tause Skare
 En varmerig, en hellig Andagts Vinge,
 Og trindt i Templet fromme Qvinder knæle,
@@ -7077,85 +7055,78 @@ O søde Fred, som bygger i et Hjerte,
 Naar det er fyldt med Troens Himmelrige!
 O see, hvor den al Bitterhed og Smerte
 Fra hvert et Aasyn bringer til at vige!
-
 Hvert Øie funkler, som en Fromhedskerte,
 Mens Tonerne mod Kuplen sagte stige.
 Nu svandt den sidste Lyd af Chorets Amen:
 Det smelted mig med Menigheden sammen.
-<pb facs="285.jpg"/>XIX.
+
+<pb n="280" facs="285.jpg"/><nonum><center>XIX.</center></nonum>
 
 Jeg slumred ind; i Drømmen stod jeg ene,
-Og prøved atter Livets Savn og Kampe,
-Og Hjertet trued med, i maalløs Krampe,
-At briste som den spændte Buesene.
-
+    Og prøved atter Livets Savn og Kampe,
+    Og Hjertet trued med, i maalløs Krampe,
+    At briste som den spændte Buesene.
 Da tindred det som Lys blandt Piniegrene,
-En Varme, som naar Sommerenge dampe,
-Jeg mærked, Flammen blegned i min Lampe;
-En lys Gestalt jeg saae med Straaler rene.
-
+    En Varme, som naar Sommerenge dampe,
+    Jeg mærked, Flammen blegned i min Lampe;
+    En lys Gestalt jeg saae med Straaler rene.
 Den svæved gjennem Vinduet ind i Cellen,
-Og underlig det bæved mig i Hjertet,
-Hvor flygtig Fryd med Harm og Længsel mødtes;
-
+    Og underlig det bæved mig i Hjertet,
+    Hvor flygtig Fryd med Harm og Længsel mødtes;
 Og alle Minder, her i Juleqvælden,
-Om længst forsvundne Haab, hvis Tab har smertet,
-Som Foraarsblomster i mit Sind gjenfødtes.
+    Om længst forsvundne Haab, hvis Tab har smertet,
+    Som Foraarsblomster i mit Sind gjenfødtes.
 
 Jeg saae dets Glands, det velbekjendte Øie,
-Jeg saae de hulde Kinders milde Skjær,
-Jeg saae — det var som kom en Duft mig nær —
-Det faure Hoved sig mod mig at bøie.
-
+    Jeg saae de hulde Kinders milde Skjær,
+    Jeg saae — det var som kom en Duft mig nær —
+    Det faure Hoved sig mod mig at bøie.
 Alt, hvad der engang kunde mig fornøie,
-Jeg saae, — Alt hvad engang jeg havde kjær;
-Som Vinger flagred Svanedunet, der
-Indhylled Halsen bly og Barmens Høie:
-
+    Jeg saae, — Alt hvad engang jeg havde kjær;
+    Som Vinger flagred Svanedunet, der
+    Indhylled Halsen bly og Barmens Høie:
 Saalunde som den sidste Gang, hun vandred
-Til mig i Løn, og mig sin Haand i Stilhed
-Til Afsked gav, den smertelige, sidste:
-
+    Til mig i Løn, og mig sin Haand i Stilhed
+    Til Afsked gav, den smertelige, sidste:
 Ja, det var hende — dog var Alt forandret,
-Hist Sorg forstened os, nu Fredens Mildhed
-Og himmelsk Ro i hendes Træk sig viste.
-<pb facs="286.jpg"/>Jeg blev saa blød, ret som i fordums Dage,
-Jeg vaagned som jeg længe havde sovet.
-Hun sagde, da mit Blik at spørge voved:
-„Jeg har det godt, men hvad har Du tilbage? —
+    Hist Sorg forstened os, nu Fredens Mildhed
+    Og himmelsk Ro i hendes Træk sig viste.
 
+<pb n="281" facs="286.jpg"/>Jeg blev saa blød, ret som i fordums Dage,
+    Jeg vaagned som jeg længe havde sovet.
+    Hun sagde, da mit Blik at spørge voved:
+    „Jeg har det godt, men hvad har Du tilbage? —
 „Jeg Dig forsage saae, — modtag nu Svage,
-„Af mig langt Meer, end Elskovs Skin Dig loved.“
-— Hun lagde sine Hænder paa mit Hoved —
-„Nu er Du rig, nu har Du Alt tilbage!“
-
+    „Af mig langt Meer, end Elskovs Skin Dig loved.“
+    — Hun lagde sine Hænder paa mit Hoved —
+    „Nu er Du rig, nu har Du Alt tilbage!“
 Ak Intet, Intet, siden Dig jeg misted! —
-Og er Du da for stedse fra mig vristet?
-Men ingen Stemme meer mit Ord besvared.
-
+    Og er Du da for stedse fra mig vristet?
+    Men ingen Stemme meer mit Ord besvared.
 Da dæmred Toner, Alt af Lys forgyldtes,
-Med himmelsk Klarhed fast mit Indre fyldtes:
-Det var, som om en Gud sig aabenbared.
+    Med himmelsk Klarhed fast mit Indre fyldtes:
+    Det var, som om en Gud sig aabenbared.
 
 Da var det, som min Tankes Baand af milde
-Lysalfer løstes, og af Hjertets Øde
-Livfulde, klare Skikkelser frembrøde
-I Straaleglands fra en ustandset Kilde.
-
+    Lysalfer løstes, og af Hjertets Øde
+    Livfulde, klare Skikkelser frembrøde
+    I Straaleglands fra en ustandset Kilde.
 Jeg kunde lænke mine Drømme vilde,
-Udaande dem i Farver, varme, bløde, —
-I Lyset af en Kraftens Morgenrøde,
-En Verden kunde jeg i Tegn afbilde.
-
+    Udaande dem i Farver, varme, bløde, —
+    I Lyset af en Kraftens Morgenrøde,
+    En Verden kunde jeg i Tegn afbilde.
 Da fandt jeg Styrke selv mod Amors Vaaben,
-Og som en frugtbar Aandens Foraarsregn
-Var mig hvert Savn, hver Sjælens Kamp og Møie.
-
+    Og som en frugtbar Aandens Foraarsregn
+    Var mig hvert Savn, hver Sjælens Kamp og Møie.
 Da syntes jeg at skue Himlen aaben,
-Og som en solbestraalt elysisk Egn,
-Laa Kunstens Rige udbredt for mit Øie.
+    Og som en solbestraalt elysisk Egn,
+    Laa Kunstens Rige udbredt for mit Øie.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text ignore-tests="repeated-adjacent-word" id="moellerpl2026101303" author="moellerpl">
@@ -7671,9 +7642,6 @@ Ogsaa han holder af at fremstille sønderrevne Charakterer, Banditer eller rene 
   <firstline>Vandfladen glimred. Solen paa sit Tog</firstline>
   <source pages="324-339" facsimile-pages="330-345"/>
 
-  <pictures>
-    <picture src="1845-gaea-illustration-329.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 330.</picture>
-  </pictures>
 </head>
 
 
@@ -7687,7 +7655,7 @@ Vandfladen glimred. Solen paa sit Tog
     Med sagte Suk. Kastales Kilde
     Sit Sølv udvikled. Ensom slog
     En Nattergal sin sidste søde Trille.
-    Og Lyset ind sig stjeler
+    Og Lyset ind sig stjæler
     I Hallen med de gyldne Kapitaler.
 
 Med hvide Søiler Marmorslottet staaer,
@@ -7717,7 +7685,7 @@ Hun drømte om et bundløst Dyb af Savn,
     Han stod i Laurbærlunden,
     Og logred med et hæsligt Smil om Munden.
 
-<pb facs="331.jpg"/>Da hæved hun sin Skulder klar og hvid,
+<pb n="326" facs="331.jpg"/>Da hæved hun sin Skulder klar og hvid,
     End ei af slukte Længsler rundet,
     Og Brystet svulmed som til Strid,
     Nyshvælvet, pragtfuldt, kjækt, uovervundet
@@ -7748,7 +7716,7 @@ Men Psyche sad mismodig, tankefuld;
     Saa at dit Aasyns Purpur svinder?
     Siig, har Du mødt paa eensom Vei
     Artemis med et Tog af Jægerinder?
-<pb facs="332.jpg"/>    Har Pan sig viist? o, er det ei
+<pb n="327" facs="332.jpg"/>    Har Pan sig viist? o, er det ei
     En Dæmon, som din Læbe binder?“
     Men stum er hendes Klage:
     Hun synker atter i sin Drøm tilbage.
@@ -7780,7 +7748,8 @@ Var som Løvinden hun til Blodhævn tirret?
 See igjennem Haaret brænder hendes Kind,
 Og Barmen stormer! Drev en Villie hende,
 Eller et Vanvids vilde Hvirvelvinde?
-<pb facs="333.jpg"/>Der gik et Sagn trindt i de græske Dale,
+
+<pb n="328" facs="333.jpg"/>Der gik et Sagn trindt i de græske Dale,
 Som bange Qvinder lytted til i Løn:
 „At høit i Luften, i krystalne Sale
 Der boede en mægtig Gudesøn,
@@ -7811,7 +7780,7 @@ Hvad var hans Navn? ja, hvor er den, som magter
 Ret at udtale dette dunkle Ord? —
 Og hvor er den Forvovne, som fornægter,
 Eros! den Vælde, som i Buen boer?
-<pb facs="334.jpg"/>For den sig bøied alle Jordens Slægter,
+<pb n="329" facs="334.jpg"/>For den sig bøied alle Jordens Slægter,
 Hvert Liv fra Niger til det fjerne Nord.
 Til Firmamentet har han Vei sig banet,
 En Musling bar ham over Oceanet.
@@ -7843,7 +7812,7 @@ Sin bævende, sin tonefulde Røst,
 Og sagde: „Hil Dig, Du min Sjæls Udkaarne!
 Mit Hjertes den fra evig Tid Eenbaarne!“
 
-<pb facs="335.jpg"/>Og Stemmens Sødme skjulte Strengens Susen,
+<pb n="330" facs="335.jpg"/>Og Stemmens Sødme skjulte Strengens Susen,
 Og Blikkets Glands fordulgte Pilens Flugt.
 Hun vilde græde; lukt var Taareslusen,
 Hun vilde smile, Smilets Ild var slukt.
@@ -7876,7 +7845,7 @@ Da bryder hendes Røst de tunge Lænker:
 <b>Skjænk min Skulder den flyvende Vinge!</b>
 <b>Til mit Ønske Du naadigen smile!</b>
 <b>Skjænk mig Vinger, at jeg</b>
-<pb facs="336.jpg"/><b>Mig ad Fuglenes Vei,</b>
+<pb n="331" facs="336.jpg"/><b>Mig ad Fuglenes Vei,</b>
 <b>Over Sø, over Land, kan springe!</b>
 <b>Over Dale og Byer,</b>
 <b>Gjennem regnsvangre Skyer,</b>
@@ -7913,7 +7882,7 @@ Men hendes Søvn var rolig. Ingen Drømme
 Det unge Sind med deres Gjøglen skrække.
 Og Aarernes de rosenrøde Strømme
 Sig bølged sagtelig som stille Bække.
-<pb facs="337.jpg"/>Phobos tilbageholdt den gyldne Tømme,
+<pb n="332" facs="337.jpg"/>Phobos tilbageholdt den gyldne Tømme,
 At Vognens Glands ei skulde hende vække,
 Og Stjernerne med de lydløse Fjed
 Saae venlig ned til hendes Hvilested.
@@ -7944,7 +7913,8 @@ O, see! af hendes Skuldre, store Under! —
 Er spiret frem det deiligste Par Vinger,
 Just der, hvor to Fordybninger før sad,
 Som Zephyr aander dem i Liliens Blad.
-<pb facs="338.jpg"/>Et Sølverspeil med Glands som Kildevandet
+
+<pb n="333" facs="338.jpg"/>Et Sølverspeil med Glands som Kildevandet
 Ved Væggen stod; der saae hun halv forskrækket,
 At hendes Haab, med Tvivl og Uro blandet,
 Var som en yndig Blomst til Live vækket.
@@ -7975,7 +7945,7 @@ Let svømmed hun i Ætheren, den klare;
 Men da paa Jord sig nærmed Middagsstunden,
 Da frygted Ternerne, hun var i Fare,
 De traadte ind, og see, hun var forsvunden.
-<pb facs="339.jpg"/>Men Kongen, Dronningen og Hoffets Skare,
+<pb n="334" facs="339.jpg"/>Men Kongen, Dronningen og Hoffets Skare,
 Taust stirred efter Flygtningen fra Lunden.
 Alt høit gik hendes Flugt, snart som et Ny,
 Forsvandt hun for dem bag en Rosensky.
@@ -8009,7 +7979,7 @@ Og, Athene, dit Pandser!
 Eros din drømmende, første
 Kalden er dog det Største.
 
-<pb facs="340.jpg"/>Naar Du som Morgenrøde
+<pb n="335" facs="340.jpg"/>Naar Du som Morgenrøde
 Tænder din evige Kærte,
 Naar Du sænker din Guldregn
 Ned i det slumrende Hjerte,
@@ -8040,7 +8010,7 @@ Tyst og stille var Slottet.
 Søiler, krystalopførte,
 Funkled med gyldne Tage;
 Intet Liv dog sig rørte.
-<pb facs="341.jpg"/>Frygtsom betraadte hun Hallen,
+<pb n="336" facs="341.jpg"/>Frygtsom betraadte hun Hallen,
 Egne Fjed kun hun hørte.
 Demantvæggene lyste
 Psyche forfærdet gyste.
@@ -8074,7 +8044,7 @@ Blødende Menneskehjerter.
 
 ---
 
-<pb facs="342.jpg"/>Undrende hun sig reiste, prøved den blanke Spidse.
+<pb n="337" facs="342.jpg"/>Undrende hun sig reiste, prøved den blanke Spidse.
 Skarp vel er den, hun tænkte, farlig dog ei, tilvisse.
 Halvt i Drømme hun prøved Liliehuden at ridse:
 Sagtelig rosenrøde
@@ -8108,7 +8078,7 @@ Purpurlæberne mødtes.
 
 Dette Liv, skal det dog aldrig endes?
 Vil han aldrig trættes af dets Lyst?
-<pb facs="343.jpg"/>Ei ophøre at beundre hendes
+<pb n="338" facs="343.jpg"/>Ei ophøre at beundre hendes
 Skuldre, hendes unge faste Bryst?
 Hver en fin og fyldig Form skal kjendes,
 Hver en Skjønhed har han henrykt kyst,
@@ -8139,7 +8109,7 @@ Eros draget var paa Jagt fra Borgen,
 Og hun fandt sig ensom og forladt.
 Hun, som havde Længselen og Sorgen
 Ganske glemt, var nu forvandlet brat,
-<pb facs="344.jpg"/>Og fra Øiet klare Taarer strømme,
+<pb n="339" facs="344.jpg"/>Og fra Øiet klare Taarer strømme,
 Som hun vækket var af søde Drømme.
 
 Lunden, Engene, den Flod, som rinder
@@ -8177,27 +8147,39 @@ Efter sine tabte Vinger leder. —
 </text>
 
 <text id="moellerpl2026101201" author="moellerpl">
+
 <head>
+
   <title>Maleren Vilhelm Bendz,</title>
   <pictures>
-    <picture artwork="kunst/bendz-billedhugger-atelier-1827"/>
-    <picture artwork="kunst/bendz-fincks-kaffehus-1832"/>
-    <picture src="1845-gaea-illustration-345.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 346.</picture>
+    <picture artwork="kunst/bendz-billedhugger-atelier-1827" />
+    <picture artwork="kunst/bendz-fincks-kaffehus-1832" />
+    <picture src="1845-gaea-illustration-345.jpg" type="illustration">Billedblad før s. 341 i <i>Gæa</i>, 1845.</picture>
   </pictures>
-  <source pages="341-343" facsimile-pages="347-349"/>
+  <source pages="341-343" facsimile-pages="347-349" />
+
 </head>
+
+
 <body>
+
+
 <prose>
-<pb facs="346.jpg"/>som bortreves midt i en rig og lovende Virksomhed, og fra hvis efterladte Studier foranstaaende Tegning hidrører, var født d. 20de April 1804. Hans Fader var Etatsraad og Borgemester i Odense. Som Barn tildrog han sig Opmærksomhed ved en vis selvstændig Charakter, forenet med adskillige Besynderligheder. Skjøndt i Grunden godmodig, havde han tillige et heftigt, ofte egensindigt, Gemyt. Han havde tidlig et opmærksomt Øie for Naturen og Naturgjenstande. Han var munter og opvakt, naar han f. Ex. paa Spadseretoure var ene med sin Fader og sine Nærmeste; stille og tilbageholden, saasnart en Fremmed var tilstede, men iagttog og opfattede da med Skarphed Alt, hvad der foregik. I Latinskolen ansaaes han for en doven Dreng uden Lyst til Studering, stod endog tilbage for Brødrene i Tegning, og da den yngre Broder sprang ham forbi, kom han (1820) ud af Skolen. Han bestemtes nu til Architekt, og kom til Conferentsraad Hansen i Kjøbenhavn. Da denne viste ham Akademiets Skoler og spurgte, hvad han helst vilde være, svarede han, som ved en pludselig Indskydelse: Maler. Han gik nu paa Skolerne, men i Førstningen med saa liden Fremgang, at Broderen, som nu var Student, undertiden maatte hjelpe paa hans Tegninger. Dog, da nogen Tid var gaaet, bemærkede man særdeles lovende Anlæg hos ham. Det var som Elev hos Prof. Eckersberg, han først uddannede sig i Oliemaling. Et Par Aar efter forlod han sin Lærer for at studere paa egen Haand, og allerede til en af de næste Udstillinger leverede han et Portræt af Pastor Hornsyld, som i den Grad vakte Opsigt og Beundring, at han snart erholdt flere
-<pb facs="347.jpg"/>Bestillinger paa Portræter, end han kunde modtage. Dette foranledigede paa Grund af Bendz's bizarre Charakter adskillige i sin Tid meget omtalte, pudsige Scener, saaledes med en corpulent Spekhøker-madame, som partout vilde „males som Hornsyld“, og slet ikke kunde begribe, hvorfor hun uden Barmhjertighed blev vist paa Døren.
+
+som bortreves midt i en rig og lovende Virksomhed, og fra hvis efterladte Studier foranstaaende Tegning hidrører, var født d. 20de April 1804. Hans Fader var Etatsraad og Borgemester i Odense. Som Barn tildrog han sig Opmærksomhed ved en vis selvstændig Charakter, forenet med adskillige Besynderligheder. Skjøndt i Grunden godmodig, havde han tillige et heftigt, ofte egensindigt, Gemyt. Han havde tidlig et opmærksomt Øie for Naturen og Naturgjenstande. Han var munter og opvakt, naar han f. Ex. paa Spadseretoure var ene med sin Fader og sine Nærmeste; stille og tilbageholden, saasnart en Fremmed var tilstede, men iagttog og opfattede da med Skarphed Alt, hvad der foregik. I Latinskolen ansaaes han for en doven Dreng uden Lyst til Studering, stod endog tilbage for Brødrene i Tegning, og da den yngre Broder sprang ham forbi, kom han (1820) ud af Skolen. Han bestemtes nu til Architekt, og kom til Conferentsraad Hansen i Kjøbenhavn. Da denne viste ham Akademiets Skoler og spurgte, hvad han helst vilde være, svarede han, som ved en pludselig Indskydelse: Maler. Han gik nu paa Skolerne, men i Førstningen med saa liden Fremgang, at Broderen, som nu var Student, undertiden maatte hjelpe paa hans Tegninger. Dog, da nogen Tid var gaaet, bemærkede man særdeles lovende Anlæg hos ham. Det var som Elev hos Prof. Eckersberg, han først uddannede sig i Oliemaling. Et Par Aar efter forlod han sin Lærer for at studere paa egen Haand, og allerede til en af de næste Udstillinger leverede han et Portræt af Pastor <w>Hornsyld</w>, som i den Grad vakte Opsigt og Beundring, at han snart erholdt flere
+<pb n="342" facs="347.jpg"/>Bestillinger paa Portræter, end han kunde modtage. Dette foranledigede paa Grund af Bendz's bizarre Charakter adskillige i sin Tid meget omtalte, pudsige Scener, saaledes med en corpulent Spekhøker-madame, som partout vilde „males som Hornsyld“, og slet ikke kunde begribe, hvorfor hun uden Barmhjertighed blev vist paa Døren.
 
 En fuldstændig Fortegnelse paa hans mærkeligste Arbeider maa opsættes til en anden Leilighed. Her skulle vi kun erindre om hans „Christensen i sit Atelier“, som findes i Galleriet paa Christiansborg, og som især udmærker sig ved en eiendommelig Lys- og Farvevirkning.
+Bendz tiltraadte nu en Udenlandsreise. I Hamborg og Nordtydskland kjedede han sig, og først fra det sachsiske Schweitz bleve hans Breve interessante og aandede en frisk og ungdommelig Livsglæde. Derfra gik han til München, hvor Livet behagede ham særdeles, og hans Kunstnerevne naaede sin Culmination. Her vakte hans kraftige, djærve Væsen meget store Tanker om ham; ved sin ualmindelige Farvesands blev han saa bekjendt for den Kunst at „opsætte en Pallet“, at efter Sigende de mest ansete Kunstnere kom til ham for at lære det. Her udkastede og fuldendte han i kort Tid sit store Maleri „<w>Finkskneipen</w>“, der, allerede før det var færdigt, almindelig omtaltes som en høist udmærket Præstation. Da Bendz behøvede Penge til at fortsætte Reisen mod Syd, solgte han sit Billede for en forholdsvis ringe Priis til den norske Maler „<w>Fearnley</w>“; men dets Ry var ilet forud for Kunstneren til Rom, hvor <w>Thorvaldsen</w> tilkjøbte sig det for 1200 Rbd., og det findes nu her i hans Malerisamling. Fuld af freidige Forhaabninger, og efter Manges Mening med Udsigt til at blive en af vor Tids første Genremalere, reiste Bendz til Italien. Men paa Søturen fra Triest til Verona følte han Ildebefindende, en Forkjølelse kom ved Uforsigtighed til, og en Mavesygdom, som allerede i München havde hjemsøgt ham, vendte tilbage og seirede hurtig over hans stærke, livfulde Natur. Han døde i Verona 11te Novbr. 1832.
 
-Bendz tiltraadte nu en Udenlandsreise. I Hamborg og Nordtydskland kjedede han sig, og først fra det sachsiske Schweitz bleve hans Breve interessante og aandede en frisk og ungdommelig Livsglæde. Derfra gik han til München, hvor Livet behagede ham særdeles, og hans Kunstnerevne naaede sin Culmination. Her vakte hans kraftige, djærve Væsen meget store Tanker om ham; ved sin ualmindelige Farvesands blev han saa bekjendt for den Kunst at „opsætte en Pallet“, at efter Sigende de mest ansete Kunstnere kom til ham for at lære det. Her udkastede og fuldendte han i kort Tid sit store Maleri „Finkskneipen“, der, allerede før det var færdigt, almindelig omtaltes som en høist udmærket Præstation. Da Bendz behøvede Penge til at fortsætte Reisen mod Syd, solgte han sit Billede for en forholdsvis ringe Priis til den norske Maler „Fearnley“; men dets Ry var ilet forud for Kunstneren til Rom, hvor Thorvaldsen tilkjøbte sig det for 1200 Rbd., og det findes nu her i hans Malerisamling. Fuld af freidige Forhaabninger, og efter Manges Mening med Udsigt til at blive en af vor Tids første Genremalere, reiste Bendz til Italien. Men paa Søturen fra Triest til Verona følte han Ildebefindende, en Forkjølelse kom ved Uforsigtighed til, og en Mavesygdom, som allerede i München havde hjemsøgt ham, vendte tilbage og seirede hurtig over hans stærke, livfulde Natur. Han døde i Verona 11te Novbr. 1832.
+<pb n="343" facs="348.jpg"/>Som Kunstner var han en sjelden umiddelbar Aand, ikke rig i Compositionen, men med et klart og aabent Blik for Naturen og Livet, med Sikkerhed og Correcthed i Tegning, en let og kjæk Pensel, og især en Genialitet i Colorit og Farvebehandling, som hos nordiske Kunstnere hører til de store Sjeldenheder. Af Ydre var han sund og kraftig og usædvanlig smukt bygget. Hans ofte noget bizarre Væsen var Udtrykket for et naivt, friskt og livfuldt Gemyt, hvis overgivne Lune hyppig i den Grad brød over alle Skranker, at en Uindviet vilde finde det utroligt, medens han hos dem, som stode ham nær, netop var afholdt i denne og andre Uregelmæssigheder af hans kjække og hjertelige Natur.
 
-<pb facs="348.jpg"/>Som Kunstner var han en sjelden umiddelbar Aand, ikke rig i Compositionen, men med et klart og aabent Blik for Naturen og Livet, med Sikkerhed og Correcthed i Tegning, en let og kjæk Pensel, og især en Genialitet i Colorit og Farvebehandling, som hos nordiske Kunstnere hører til de store Sjeldenheder. Af Ydre var han sund og kraftig og usædvanlig smukt bygget. Hans ofte noget bizarre Væsen var Udtrykket for et naivt, friskt og livfuldt Gemyt, hvis overgivne Lune hyppig i den Grad brød over alle Skranker, at en Uindviet vilde finde det utroligt, medens han hos dem, som stode ham nær, netop var afholdt i denne og andre Uregelmæssigheder af hans kjække og hjertelige Natur.
 </prose>
+
+
 </body>
+
+
 </text>
 
 <section author="moellerpl">
@@ -8212,17 +8194,21 @@ Bendz tiltraadte nu en Udenlandsreise. I Hamborg og Nordtydskland kjedede han si
 <content>
 
 <text id="moellerpl20260814051" author="moellerpl">
+
 <head>
+
   <title>Natfiolen</title>
   <firstline>Først naar Mørket falder paa</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-349.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 350.</picture>
-  </pictures>
-  <source pages="344-345" facsimile-pages="350-351"/>
+  <source pages="344-345" facsimile-pages="350-351" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="349.jpg"/>Først naar Mørket falder paa,
+Først naar Mørket falder paa,
 Tause Skygger gjennem Haven gaae,
 Kommer jeg til Live,
 Kan min Sjæl sig rive
@@ -8236,7 +8222,7 @@ Dem, som vaage, med min Himmeldrik.
 
 Naar i Nattens tætte Flor
 Hylles hvert Forgængeligheds Spor,
-<pb facs="350.jpg"/>Naar den klare Stjerne
+<pb n="345" facs="350.jpg"/>Naar den klare Stjerne
 Funkler i det Fjerne,
 Spreder jeg min Virak over Jord.
 
@@ -8258,22 +8244,33 @@ Og, naar Solen stiger,
 Bort min Vellugt viger,
 Og min Sjæl har sig i Dvale lagt.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814052" author="moellerpl">
+
 <head>
+
   <title>Kokosnødden</title>
   <firstline>Kokosnød, du kjække Vandrer, som har Jordens Kreds omseilet</firstline>
-  <source pages="345-346" facsimile-pages="351-352"/>
+  <source pages="345-346" facsimile-pages="351-352" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="350.jpg"/>Kokosnød, du kjække Vandrer, som har Jordens Kreds omseilet,
+Kokosnød, du kjække Vandrer, som har Jordens Kreds omseilet,
 Siig mig, har i Ganges' Bølge først din unge Knop sig speilet?
 Saae Du i „den nye Verden“ første Gang den lyse Dag?
 Saae Du mine sorte Brødre krympe sig ved Pidskens Slag?
-<pb facs="351.jpg"/>Har en Sydhavsø Dig løftet frem af Dybets Klippeskarer?...
+<pb n="346" facs="351.jpg"/>Har en Sydhavsø Dig løftet frem af Dybets Klippeskarer?...
 Til min Kind jeg Nødden lægger, og med dæmpet Suk den svarer:
 „I det skjønne Indien sprudled mine bolde Fædres Blod,
 Og den store Flod jeg hørte suse ved min Stammes Rod.
@@ -8303,21 +8300,29 @@ Og de solgte mig paa Torvet ... og en fattig Europæer
 Skal mig knuse og fortære Kjernen i mit Indre skjult,
 Og til Drikkebæger bliver jeg poleret og udhulet.“
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814053" author="moellerpl">
+
 <head>
+
   <title>En Idyl</title>
   <firstline>See, hvilken deilig Dreng der hist i Fælledens Grønsvar</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-352.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 353.</picture>
-  </pictures>
-  <source pages="347-349" facsimile-pages="353-355"/>
+  <source pages="347-349" facsimile-pages="353-355" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="352.jpg"/>See, hvilken deilig Dreng der hist i Fælledens Grønsvar
+See, hvilken deilig Dreng der hist i Fælledens Grønsvar
 Løber omkap med et Lam, mens Faaret ængstelig bræger!
 Huen kaster han bort, frit bølger Lokken i Vinden,
 Og i det hastige Løb brast Kraven, og Brystet er blottet.
@@ -8328,19 +8333,18 @@ Kjæler og kysser det bævende Dyr og tar det paa Skjødet,
 Trykker det til sin Kind, saa det ei længer ham frygter;
 Kjælen det strækker sin Hals og lader ham lege med Foden,
 Og da han reiser sig, flygter det ei, men hopper omkring ham.
-Stands, min yndige Dreng, et Øieblik standse Du Legen,
+    Stands, min yndige Dreng, et Øieblik standse Du Legen,
 Tag dit Lam forsigtig paa Arm, kom hid under Skyggen
 Af de viftende Træer til os, hvor Græsset staaer høiest.
 See denne Mand med det buskede Skjæg om Munden og Hagen,
-
-<pb facs="353.jpg"/>Frygt kun ikke for ham, hvem tænker Du vel han kan være?
+<pb n="348" facs="353.jpg"/>Frygt kun ikke for ham, hvem tænker Du vel han kan være?
 Det er en Mand, som ridser med Pen og Blyant paa Brættet,
 Hvad der tykkes ham sjælfuldt og smukt under Himmelens Hvælving.
 Sid kun et Øieblik saa, der har Du en Skilling, saa kan Du,
 Naar Du imorgen til Skolen gaaer, en Kringle Dig kjøbe.
 
 Kun et Minut endnu sid rolig! — saa, nu er han færdig —
-Nu er Du fri, og i driftige lette Spring kan Du atter
+Nu er Du fri, og i dristige lette Spring kan Du atter
 Lege Tagfat med de snehvide Lam, hvor Græsset staaer høiest.
 Giv os til Afsked et Kys! — See saa — nu munter og sorgløs
 Spring kun, min yndige Dreng, paa Marken til rødmende Solen
@@ -8348,7 +8352,7 @@ Glider i dæmrende Skygger ned bag de vestlige Høie,
 Og Du drages af Længsel hjem til din ventende Moder.
 Men naar Natten udbreder sit Slør over Byen og Marken,
 Sov med en Bøn da sødelig ind i kjærlige Arme,
-Drøm en uskyldig Drøm, mens Du hviler det modige Hoved,
+Drøm en uskyldig Drøm, mens Du hviler det mødige Hoved,
 Vaagn saa igjen med Roser paa Kind til uskyldige Lege!
 Søg dine hoppende Lam, mens Vaaren end er i Landet,
 Snart saa voxe de til og kjende Dig ei, naar Du kalder.
@@ -8364,8 +8368,7 @@ Søge det Sted, hvor engang Du tumled Dig munter og sorgløs,
 Standse dit ilende Fjed, mens i Øiet frembryder en Taare.
 Eller maaskee Du vandrer herud med en blomstrende Ungmø,
 Som Dig skuer i Sjælen ind med funklende Øine.
-
-<pb facs="354.jpg"/>Hun kan forstaae dine Savn, din Længsel, din lønlige Tanke,
+<pb n="349" facs="354.jpg"/>Hun kan forstaae dine Savn, din Længsel, din lønlige Tanke,
 Følge din hellige Flugt, naar Du dvæler ved henfarne Tider.
 Hende fortælle Du kan: „Her var det, her løb jeg i Græsset
 Mellem de brægende Lam, her plukked jeg Blomster og Blade,
@@ -8386,21 +8389,29 @@ Da skal ved Kunstens evige Magt endnu dette Billed
 Minde Dig om, hvordan Du saae ud, dengang Du et Lam var
 Yndigt, uskyldigt og fromt, som det, Du holder i Armen.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814054" author="moellerpl">
+
 <head>
+
   <title>En Jordefærd</title>
   <firstline>En Mand i tyndslidt Frakke; en Luft af Taage fuld —</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-355.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 356.</picture>
-  </pictures>
-  <source pages="350-351" facsimile-pages="356-357"/>
+  <source pages="350-351" facsimile-pages="356-357" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="355.jpg"/>En Mand i tyndslidt Frakke; en Luft af Taage fuld —
+En Mand i tyndslidt Frakke; en Luft af Taage fuld —
 En Kiste under Armen, lidt Flor om Hattens Pul...
 
 Et Klæde om Hals og Skulder til Stød for den trætte Arm,
@@ -8412,7 +8423,7 @@ En lille grædende Pige, med blonde uredte Haar;
 Med Kinden bleg, indfalden af Kummer og daarlig Kost,
 Med Træsko, graasprængt Kjole og Hænder røde af Frost.
 
-<pb facs="356.jpg"/>Faderen iler fremad, med store, hastige Trin,
+<pb n="351" facs="356.jpg"/>Faderen iler fremad, med store, hastige Trin,
 Hun løber saa godt hun kan, og tørrer saa tidt sin Kind.
 
 Det var det hele Følge, de Frænder fjernt og nær
@@ -8433,18 +8444,29 @@ Den Lille tygger en Skorpe og tager sin Lærebog.
 Næste Dag i Skolen saa mange Skjend hun faaer.
 Hun kunde jo ikke læse et Ord for Graad igaar.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814055" author="moellerpl">
+
 <head>
+
   <title>Fem Momenter</title>
   <firstline>Morgenrøden sine gyldne Vinger</firstline>
-  <source pages="351-356" facsimile-pages="357-362"/>
+  <source pages="351-356" facsimile-pages="357-362" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="356.jpg"/>Morgen.
+<nonum><center>Morgen.</center></nonum>
 
 Morgenrøden sine gyldne Vinger
 Løfter over Horizontens Rand.
@@ -8453,7 +8475,7 @@ Nede bugter sig det tause Vand.
 
 Morgenrøden er din Skjønheds Dække,
 Under det den bølger foraarsvarm.
-<pb facs="357.jpg"/>Klangen er det Liv, som Gratier vække
+<pb n="352" facs="357.jpg"/>Klangen er det Liv, som Gratier vække
 I din blændende, snehvide Barm.
 
 Var jeg Havet! — Klædebonnet bæved
@@ -8466,7 +8488,7 @@ Skyers Billed i min Bølges Væld;
 Og jeg saae i Himlens sidste Stjerne
 Glimt af din udødelige Sjæl!
 
-Aftenvandring.
+<nonum><center>Aftenvandring.</center></nonum>
 
 Seer Du de svævende Skyer, af Maanens blege Flammer
 Lig dunkel-bløde Billeder indfattet i gyldne Rammer?
@@ -8483,11 +8505,11 @@ De staae, mens Skyen sig fjerner, paa Himlen ene tilbage;
 Mellem deres evige Baner et bundløst Svalg er bredt:
 Saa skal vi aldrig — det aner mig — mødes og vorde til Eet.
 
-Afsted.
+<nonum><center>Afsted.</center></nonum>
 
 Ja nu, nu skal Du dog vide det,
 Du favre, blonde Mø,
-<pb facs="358.jpg"/>Med Barmens skinnende Sølvernet,
+<pb n="353" facs="358.jpg"/>Med Barmens skinnende Sølvernet,
 Med Øiets stille Sø.
 Ja nu skal Du dog vide det,
 Her, medens Ingen os seer,
@@ -8518,10 +8540,10 @@ Det bliver jo dog den sidste Gang,
 Vi saadan tales ved.
 Farvel, farvel, og hør det kun
 Een Gang, saa aldrig meer,
-<pb facs="359.jpg"/>At ene Dig jeg elsket har,
+<pb n="354" facs="359.jpg"/>At ene Dig jeg elsket har,
 Og Ingen, Ingen fleer!
 
-Valfart.
+<nonum><center>Valfart.</center></nonum>
 
 Sadlet er du alt min lette Ganger,
 Hvor du stamper fnysende og kjæk!
@@ -8553,7 +8575,7 @@ Hvor hun vandred engang frisk og varm,
 Vil indaande hendes Sjæl af Luften,
 Og i Tanken søge hendes Barm.
 
-<pb facs="360.jpg"/>Over Kirkediget vil jeg stige,
+<pb n="355" facs="360.jpg"/>Over Kirkediget vil jeg stige,
 Sætte mig i Duggen ved en Grav,
 Læse Navnet, og med det berige
 Skatten, hun af bittre Savn mig gav.
@@ -8566,19 +8588,21 @@ Hvor hun som en Dronning hersket har.
 Hist, hvor Maanen skinner ind ad Ruden,
 Har jeg mig mit Leie kaaret ud;
 Der jeg lægge vil min Kind til Puden,
-Der, hvor hun har hvilet siin som Brud.
+Der, hvor hun har hvilet sin som Brud.
 
 Jeg vil drømme om min Ungdoms Varme,
 Drømme, at hun nævner mig ved Navn,
 At om mig hun slynger sine Arme,
-At hun bæver henrykt i min Favn.
+At hun bæver henrykt i min Favn...
+
+---
 
 Hvad der drømmes i de mørke Nætter,
 Svinder brat, naar Dagens Lys gaaer op. —
 Rask, min Ganger, solbestraalte Sletter
 Ligge for os, fremad i Galop! —
 
-Ny Vaar.
+<nonum><center>Ny Vaar.</center></nonum>
 
 Lærken har jeg hørt, høit i Luften den svang
 Sig med Jubel og qvad sin forfriskende Sang.
@@ -8586,7 +8610,7 @@ Sig med Jubel og qvad sin forfriskende Sang.
 Viben har jeg seet, henad Furen den gik,
 Og kneiste med sin gamle, hovmodige Skik.
 
-<pb facs="361.jpg"/>Svalen har jeg hørt, glad i Solskin den fløi,
+<pb n="356" facs="361.jpg"/>Svalen har jeg hørt, glad i Solskin den fløi,
 Og samled til Rede paa Mark og paa Høi.
 
 Storken har jeg seet, høit paa Taget den stod,
@@ -8601,69 +8625,87 @@ Og opfyldte min Sjæl, og forlysted mit Blik.
 Graven har jeg seet, hvor de bar hende ned,
 Og jeg knæled i Græsset under Træet derved.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814056" author="moellerpl">
+
 <head>
+
   <title>Rose og Hjerte</title>
   <firstline>Som Rosens Knop, den hulde</firstline>
-  <source pages="356-357" facsimile-pages="362-363"/>
+  <source pages="356-357" facsimile-pages="362-363" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="361.jpg"/>Som Rosens Knop, den hulde,
-Der grusomt briste maa,
-Naar Blomstens Blade skulle,
-Med Glands og Virak fulde,
-Af Bægeret fremgaae:
-
+Som Rosens Knop, den hulde,
+    Der grusomt briste maa,
+    Naar Blomstens Blade skulle,
+    Med Glands og Virak fulde,
+    Af Bægeret fremgaae:
 Som Rosens Blomst, der fage
-Af Vinden splittes ad,
-Og efter et Par Dage
-Er intet Meer tilbage,
-End Stilkens Torn og Blad:
-
+    Af Vinden splittes ad,
+    Og efter et Par Dage
+    Er intet Meer tilbage,
+    End Stilkens Torn og Blad:
 Saa er det unge Hjerte, —
-Sin rige Bladekrands
-Det folder ud i Smerte,
-Og spreder som en Kerte
-Mod Himmelen sin Glands.
-
-<pb facs="362.jpg"/>Men Stormens bittre Dage
-Betvinge Flammens Flugt:
-Som Rosen har det svage
-Kun Tornene tilbage,
-Og Hjertets Glød er slukt.
-
+    Sin rige Bladekrands
+    Det folder ud i Smerte,
+    Og spreder som en Kerte
+    Mod Himmelen sin Glands.
+<pb n="357" facs="362.jpg"/>Men Stormens bittre Dage
+    Betvinge Flammens Flugt:
+    Som Rosen har det svage
+    Kun Tornene tilbage,
+    Og Hjertets Glød er slukt.
 Over dem Gravens Dække
-Sig lægger taust og svalt;
-Og dog, i Livets Række
-Paa Jorden, var de begge
-Det Skjønneste af Alt.
+    Sig lægger taust og svalt;
+    Og dog, i Livets Række
+    Paa Jorden, var de begge
+    Det Skjønneste af Alt.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814057" author="moellerpl">
+
 <head>
+
   <title>Byrons sidste Time</title>
   <firstline>Din Harpe klinger som Stormens Hvin</firstline>
-  <source pages="357-358" facsimile-pages="363-364"/>
+  <source pages="357-358" facsimile-pages="363-364" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="362.jpg"/>Din Harpe klinger som Stormens Hvin,
+Din Harpe klinger som Stormens Hvin,
 I Fjeldets Kløfter Du sidder
 Saa tankefuld paa dit Livs Ruin,
-Dig glæder ei Fuglens Kvidder.
+Dig glæder ei Fuglenes Kvidder.
 Dig glæder ei Sommerens Stjernenat,
 Dens grønne, smilende Sletter.
 Dit Aasyn er furet, dit Blik er mat
 Af gjennemvaagede Nætter.
 
 Du har afrevet hver Livets Frugt,
-Udtømt dets Lyst og dets Smerte.
+Udtømt dets Lyst og deres Smerte.
 For Alle har Du dit Indre lukt,
 Og Bitterhed fylder dit Hjerte.
 Det bæver kun af et brændende Savn,
@@ -8671,12 +8713,12 @@ Det har ingen Støtte i Striden,
 Du tør ei nævne dit eget Navn,
 Og du er ældet før Tiden!
 
-<pb facs="363.jpg"/>Hvad har Du, fordi Du ødsled vildt
+<pb n="358" facs="363.jpg"/>Hvad har Du, fordi Du ødsled vildt
 Med Livets hellige Gaver?
 Har du en Vished, som leder mildt
 Din Sjæl til Elysiums Haver?
 Troer Du at see gjennem Tidens Slør
-Til Løndommens inderste Traade?
+Til Løndommenes inderste Traade?
 Troer du vel selv, at naar du døer,
 Sig klarer den redsomme Gaade? —
 
@@ -8698,23 +8740,34 @@ Du har ingen Engel ved Siden,
 Dit Aasyn er furet, dit Blik er mat,
 Og du er ældet før Tiden!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814058" author="moellerpl">
+
 <head>
+
   <title>En Qvinde</title>
   <firstline>Er hun skjøn? jeg veed det ikke. Ei for Alle hun er smuk</firstline>
-  <source pages="358-359" facsimile-pages="364-365"/>
+  <source pages="358-359" facsimile-pages="364-365" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="363.jpg"/>Er hun skjøn? jeg veed det ikke. Ei for Alle hun er smuk;
+Er hun skjøn? jeg veed det ikke. Ei for Alle hun er smuk;
 Ei enhver forelsket Ridder hun afpresser ømme Suk.
 Hun er som et Træ i Vaaren, der udfolder Blad for Blad,
 Lige venlig imod alle, lige mild og frisk og glad.
 
-<pb facs="364.jpg"/>Hun er som et Barn, der ikke veed, hvorfor man elsker det,
+<pb n="359" facs="364.jpg"/>Hun er som et Barn, der ikke veed, hvorfor man elsker det,
 Og dog i det aabne Øie har en Guddoms Majestæt.
 Snart du fristes til at klappe hende paa den runde Kind,
 Snart til hendes Haand at kysse med ærbødigt, ydmygt Sind.
@@ -8744,21 +8797,29 @@ Gid du aldrig maa berøres af en fræk, vanhellig Haand!
 Gid din Flugt kun fylde rene Sjæle med uskyldig Lyst,
 Til du sagtelig henslumrer atter ved Naturens Bryst!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814059" author="moellerpl">
+
 <head>
+
   <title>Om Foraaret</title>
   <firstline>Nu er det Vaar, nu flytter man paa Landet</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-365.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 366.</picture>
-  </pictures>
-  <source pages="360-363" facsimile-pages="366-369"/>
+  <source pages="360-363" facsimile-pages="366-369" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="365.jpg"/>Nu er det Vaar, nu flytter man paa Landet,
+Nu er det Vaar, nu flytter man paa Landet,
 Ud under Vaarens friske, lette Tag,
 Hvor Millioner nyudsprungne Flag
 Forkynde festlig Glæde Nat og Dag,
@@ -8776,11 +8837,10 @@ Og efter Duer, som erotisk kurre,
 Og — efter ikke meer at kukkelurre.
 Jeg længes efter Skovens grønne Hjem,
 For paa Dianas skjulte Jagt at lure,
-
-<pb facs="366.jpg"/>Jeg længes efter Ænder i en Dam,
+<pb n="361" facs="366.jpg"/>Jeg længes efter Ænder i en Dam,
 Og efter sværmeriske, hvide Lam,
 Og smaa romantiske Spadseretoure! —
-Nu bygger man sig Reder fjernt og nær,
+  Nu bygger man sig Reder fjernt og nær,
 Mens Fuglerigets lette Hær
 Med løste Vinger gjennem Luften iler;
 Mens Hjertet, fuldt af Solens Morgenskjær,
@@ -8797,7 +8857,7 @@ Forsamles under Bøgekroner,
 Der elsker den at dvæle,
 Der sænker den sin Vinge ned,
 Og aander ud sin Lyst i varme Toner.
-Thi løst er nu hvert Baand, som bandt dens Tunge,
+  Thi løst er nu hvert Baand, som bandt dens Tunge,
 Foraarets Vift har fyldt dens Lunge,
 Saa rastløs maa den tumle sig, forvoven,
 I Dybets Mulm, i Solens Glands foroven,
@@ -8808,15 +8868,14 @@ Og sænker sig som Skumring sagte ned,
 Da er den træt, da trænger den til Fred;
 Da nærmer den sig til de unge Piger,
 Sit Hoved lægger den til deres Bryst,
-
-<pb facs="367.jpg"/>Og, hvad den hvisker drømmende og tyst,
+<pb n="362" facs="367.jpg"/>Og, hvad den hvisker drømmende og tyst,
 Gjenfødt fra deres Læber atter stiger. —
 Et venligt Hjem den finder jo hos dem...
 Dog — hele Verden er dens Hjem,
 Og Hjem og Hvile finder hele Verden,
 Hvert stille Liv, og hver urolig Færden,
 Men Du — har intet Hjem!
-O, hvem
+                            O, hvem
 Der havde sig et yndigt Hjem!
 Et Hvilepunkt for hver ustadig Længsel,
 Et venligt Tag, et blomstersmykket Fængsel,
@@ -8830,7 +8889,7 @@ Hvor Høet dufted fra de friske Hæs,
 Og Smaabørn legede bag Havens Hæk,
 Hvor Ranker dækkede den hvide Væg,
 Hvor Kinderne og Roserne var røde! —
-Forsagte Hjerte, har du intet Hjem? —
+  Forsagte Hjerte, har du intet Hjem? —
 Og det formastelig du siger nu,
 Da Hjemmets milde Genier din Hu
 Tilvifte tusindfold og bryde frem
@@ -8840,8 +8899,7 @@ Ud i Naturens Helligdom! din Brud,
 Dit Hjem er der, i Skovens dunkle Liv,
 Hvor Hjorten drikker mellem Mosens Siv,
 Og Bølgen ind mod Strand forelsket hopper!
-
-<pb facs="368.jpg"/>Der eier du et trofast Moderbryst
+<pb n="363" facs="368.jpg"/>Der eier du et trofast Moderbryst
 At hvile ved;
 Der kan Du strække Dig med Guders Lyst
 I grønne Virakbølger ned,
@@ -8855,273 +8913,307 @@ Du smelte sammen med den hele Jord,
 Og, uden Sky, i tusindstemmigt Chor
 Kan Du forkynde dine Suk og Tanker!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814060" author="moellerpl">
+
 <head>
+
   <title>Sjælevandring</title>
   <firstline>Jeg fødtes paa en Klippetinde</firstline>
-  <source pages="363-365" facsimile-pages="369-371"/>
+  <source pages="363-365" facsimile-pages="369-371" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="368.jpg"/>Jeg fødtes paa en Klippetinde;
-Der stod min Rede skjult og varm.
-Men snart de friske Hvirvelvinde
-Mig vuggede paa kraftig Arm.
-Snart voxed ud min egen Vinge,
-Fra Reden stolt min Moder saae,
-Hvor jeg i Sky mig kunde svinge,
-Og Luftens stærke Magter tvinge,
-Og svinde i det fjerne Blaa.
+Jeg fødtes paa en Klippetinde;
+  Der stod min Rede skjult og varm.
+  Men snart de friske Hvirvelvinde
+  Mig vuggede paa kraftig Arm.
+  Snart voxed ud min egen Vinge,
+  Fra Reden stolt min Moder saae,
+  Hvor jeg i Sky mig kunde svinge,
+  Og Luftens stærke Magter tvinge,
+  Og svinde i det fjerne Blaa.
 
 De lette, brune Fjedre bruste,
-Naar let min Vei mod Stormen gik,
-Og mægtig Vingeslaget suste,
-Og Solen skærpede mit Blik.
-<pb facs="369.jpg"/>Ei vidste jeg af Frygt og Fare,
-Af Grændse for min Flugt, mit Mod.
-Tidt traf min Klo den feige Hare,
-Jeg steg med den op til det klare
-Sollys, og drak dens Hjerteblod.
+  Naar let min Vei mod Stormen gik,
+  Og mægtig Vingeslaget suste,
+  Og Solen skjærpede mit Blik.
+<pb n="364" facs="369.jpg"/>  Ei vidste jeg af Frygt og Fare,
+  Af Grændse for min Flugt, mit Mod.
+  Tidt traf min Klo den feige Hare,
+  Jeg steg med den op til det klare
+  Sollys, og drak dens Hjerteblod.
 
 En Dag jeg freidig Vingen sænkte
-Nær den forræderiske Jord:
-Et Glimt, et Knald — mit Bryst det sprængte,
-Som Ild det mig i Blodet foer.
-Og Alt blev sort, — jeg sank — en Slummer
-Saa dyb og stærk sig om mig gød.
-Hvi vaagned jeg af den — til Kummer,
-Til Kval, som ei mit Hjerte rummer,
-Hvi fandt jeg ingen evig Død?
+  Nær den forræderiske Jord:
+  Et Glimt, et Knald — mit Bryst det sprængte,
+  Som Ild det mig i Blodet foer.
+  Og Alt blev sort, — jeg sank — en Slummer
+  Saa dyb og stærk sig om mig gød.
+  Hvi vaagned jeg af den — til Kummer,
+  Til Kval, som ei mit Hjerte rummer,
+  Hvi fandt jeg ingen evig Død?
 
 Jeg vaagned — o, jeg maatte græde; —
-Skjøndt uforandret er min Sjæl,
-Hvor var mit Fjæld, min Sky, min Glæde?,
-Jeg kjender ikke meer mig selv.
-Hvor var mit vidtudstrakte Rige?
-Hvor var min stolte Fjederham?
-Jeg som mod Solen kunde stige,
-Jeg var forvandlet til en Pige,
-Afmægtig som det usle Lam.
+  Skjøndt uforandret er min Sjæl,
+  Hvor var mit Fjæld, min Sky, min Glæde?,
+  Jeg kjender ikke meer mig selv.
+  Hvor var mit vidtudstrakte Rige?
+  Hvor var min stolte Fjederham?
+  Jeg som mod Solen kunde stige,
+  Jeg var forvandlet til en Pige,
+  Afmægtig som det usle Lam.
 
 Et yppigt Haar min Isse dækker,
-Mit Bryst ei trodser Stormens Larm,
-Et snevert Silkesvøb sig lægger
-Tæt om en sjælen Kvindebarm.
-Istedenfor min Himmelbue
-En kvalm og taaget Fængselsnat;
-Istedenfor mit Fjæld en Stue,
-<pb facs="370.jpg"/>Istedenfor mit Lyn en Lue
-Paa Arnestedet, syg og mat.
+  Mit Bryst ei trodser Stormens Larm,
+  Et snevert Silkesvøb sig lægger
+  Tæt om en sjælen Qvindebarm.
+  Istedenfor min Himmelbue
+  En kvalm og taaget Fængselsnat;
+  Istedenfor mit Fjæld en Stue,
+<pb n="365" facs="370.jpg"/>  Istedenfor mit Lyn en Lue
+  Paa Arnestedet, syg og mat.
 
 O, maatte dog mit Fængsel briste!
-O, leved atter jeg den Tid,
-At jeg min Skjæbne maatte friste
-I Kraft, i Torden, Storm og Strid!
-O, maatte stærke Fjedre skyde
-Sig frem af denne hvide Hud,
-O, maatte jeg paa Vinden flyde,
-Og gjennem tætte Skyer bryde,
-Og høre Riflens muntre Skud!
+  O, leved atter jeg den Tid,
+  At jeg min Skjæbne maatte friste
+  I Kraft, i Torden, Storm og Strid!
+  O, maatte stærke Fjedre skyde
+  Sig frem af denne hvide Hud,
+  O, maatte jeg paa Vinden flyde,
+  Og gjennem tætte Skyer bryde,
+  Og høre Riflens muntre Skud!
 
 Forgjæves kun min Attraa stræber
-Høit mod min Hjemstavns Morgengry;
-Men over disse tause Læber
-Den kan ei hæve sig mod Sky.
-Istedenfor min stærke Vinge
-Har jeg to bløde Arme kun,
-Som ei engang mig kunne svinge
-Til ham, jeg elsker og ham — tvinge
-At synke henrykt til min Mund.
+  Høit mod min Hjemstavns Morgengry;
+  Men over disse tause Læber
+  Den kan ei hæve sig mod Sky.
+  Istedenfor min stærke Vinge
+  Har jeg to bløde Arme kun,
+  Som ei engang mig kunne svinge
+  Til ham, jeg elsker og ham — tvinge
+  At synke henrykt til min Mund.
 
 Min frie Luft, og Moderhjemmet,
-Den ubegrændsede Natur,
-Jeg har ei meer. Jeg er en Fremmed;
-Mit Sind er tungt, jeg er i Bur.
-Her maa jeg vanke som i Blinde,
-Og færdes blandt forsagte Børn;
-Og aldrig kan jeg Hvile finde, —
-Man kalder mig en deilig Qvinde,
-Og veed ei, at jeg er en Ørn!
+  Den ubegrændsede Natur,
+  Jeg har ei meer. Jeg er en Fremmed;
+  Mit Sind er tungt, jeg er i Bur.
+  Her maa jeg vanke som i Blinde,
+  Og færdes blandt forsagte Børn;
+  Og aldrig kan jeg Hvile finde, —
+  Man kalder mig en deilig Qvinde,
+  Og veed ei, at jeg er en Ørn!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814061" author="moellerpl">
+
 <head>
+
   <title>Den hellige Veronika</title>
   <firstline>Til hine tunge, bittre Smertens Dage</firstline>
   <pictures>
-    <picture src="1845-gaea-illustration-371.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 372.</picture>
+    <picture src="1845-gaea-illustration-371.jpg" type="illustration">Billedblad før s. 367 i <i>Gæa</i>, 1845.</picture>
   </pictures>
-  <source pages="367-370" facsimile-pages="373-376"/>
+  <source pages="367-370" facsimile-pages="373-376" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="372.jpg"/>Til hine tunge, bittre Smertens Dage,
-Da Frelseren forfulgtes her paa Jord,
-Jeg fører Eder for en Stund tilbage —
-O, gid hans Aand maa hvile paa mit Ord!
-O, naar jeg tænker paa den Haan og Plage,
-Han udstod, før han til sin Fader foer,
-Da vil min Tunge sig til Ganen klæbe
-Og Ordet standser lydløst paa min Læbe.
+Til hine tunge, bittre Smertens Dage,
+    Da Frelseren forfulgtes her paa Jord,
+    Jeg fører Eder for en Stund tilbage —
+    O, gid hans Aand maa hvile paa mit Ord!
+    O, naar jeg tænker paa den Haan og Plage,
+    Han udstod, før han til sin Fader foer,
+    Da vil min Tunge sig til Ganen klæbe
+    Og Ordet standser lydløst paa min Læbe.
 
 Jerusalem, du ypperste blandt Steder!
-End stod Du, stolt af hykkelsk Herlighed,
-Af Templets Pragt, af Patriarchers Hæder, —
-Hist gik den Vei, hvor nys dit Folk faldt ned
-Og strøede Krandse, bredte sine Klæder
-For ham, som paa en Æseninde red.
-Her gik han atter. Kinder græd; han vendte
-Sin Røst til dem, mens Øiet mægtig brændte:
+    End stod Du, stolt af hykkelsk Herlighed,
+    Af Templets Pragt, af Patriarchers Hæder, —
+    Hist gik den Vei, hvor nys dit Folk faldt ned
+    Og strøede Krandse, bredte sine Klæder
+    For ham, som paa en Æseninde red.
+    Her gik han atter. Qvinder græd; han vendte
+    Sin Røst til dem, mens Øiet mægtig brændte:
 
 „O Zions Døttre, ei for mig I græde!
-I bittre Taarer selv fornøden har;
-Thi see, den Tid er nær, da det skal hedde:
-Saligt det Liv, som ikke Livsfrugt bar,
-Salig, hvo aldrig kjendte Fødselsglæde,
-Salig det Bryst, som uden Øie var, —
-Fald, Høie over os, fald ned og skjuler,
-I Bjerge, os med Eders dybe Huler.“
+    I bittre Taarer selv fornøden har;
+    Thi see, den Tid er nær, da det skal hedde:
+    Saligt det Liv, som ikke Livsfrugt bar,
+    Salig, hvo aldrig kjendte Fødselsglæde,
+    Salig det Bryst, som uden Die var, —
+    Fald, Høie over os, fald ned og skjuler,
+    I Bjerge, os med Eders dybe Huler.“
 
 Han rives bort; i Støv og Støi og Bulder
-Betræder han den sidste Smertensvei.
-<pb facs="373.jpg"/>De lægge Korset paa hans hellige Skulder,
-Og under Byrden taust han vaander sig.
-Ned ad hans Kind i store Draaber ruller
-En blodig Sved, dog Folket ynkes ei:
-Paa Issen brænde Solens stærke Luer,
-Og i det Fjerne Golgatha man skuer.
+    Betræder han den sidste Smertensvei.
+<pb n="368" facs="373.jpg"/>    De lægge Korset paa hans hellige Skulder,
+    Og under Byrden taust han vaander sig.
+    Ned ad hans Kind i store Draaber ruller
+    En blodig Sved, dog Folket ynkes ei:
+    Paa Issen brænde Solens stærke Luer,
+    Og i det Fjerne Golgatha man skuer.
 
 Han standser; overvældet af den svære
-Tyngde, han synker ned i maalløs Vee.
-Da træder af den tætte Folkeskare
-En Qvinde frem, heel ærbar, from at see,
-Og ydmyg, uden Frygt for Had og Fare,
-En Svededug ham rækker, hvid som Snee.
-Med Dugen han de hede Kinder svalte,
-Og gav den saa til hende, mens han talte:
+    Tyngde, han synker ned i maalløs Vee.
+    Da træder af den tætte Folkeskare
+    En Qvinde frem, heel ærbar, from at see,
+    Og ydmyg, uden Frygt for Had og Fare,
+    En Svededug ham rækker, hvid som Snee.
+    Med Dugen han de hede Kinder svalte,
+    Og gav den saa til hende, mens han talte:
 
-„Naar Du sukker,
-Og Dit Hjerte lukker
-Sig for Glæden,
-Som er til herneden,
-Skal Du trøstes,
-Og Din Sjæl forlystes
+    „Naar Du sukker,
+    Og Dit Hjerte lukker
+    Sig for Glæden,
+    Som er til herneden,
+    Skal Du trøstes,
+    Og Din Sjæl forlystes
 Ved det Lin, min Smerte nu bedugger.
 
-„Jeg har villet,
-Da dog Een formildet
-Har min Smerte
-Med et kjærligt Hjerte,
-At Du ene,
-Og, for Din Skyld ene,
+    „Jeg har villet,
+    Da dog Een formildet
+    Har min Smerte
+    Med et kjærligt Hjerte,
+    At Du ene,
+    Og, for Din Skyld ene,
 Fjerne Slægter arve skal mit Billed.
 
-<pb facs="374.jpg"/>„Det skal minde
-Om, at kun en Qvinde
-Første, sidste
-Kjærlighed mig viste;
-Naar Du farer
-Heden, christne Skarer
+<pb n="369" facs="374.jpg"/>    „Det skal minde
+    Om, at kun en Qvinde
+    Første, sidste
+    Kjærlighed mig viste;
+    Naar Du farer
+    Heden, christne Skarer
 Skulle dyrke Dig som Helgeninde!
 
-„Naar jeg tages
-Bort fra disse Dages
-Daad, og fjerner
-Mig bag Himlens Stjerner,
-Skal det smile
-Ned med Trøst og Hvile,
+    „Naar jeg tages
+    Bort fra disse Dages
+    Daad, og fjerner
+    Mig bag Himlens Stjerner,
+    Skal det smile
+    Ned med Trøst og Hvile,
 Hvor der lides Nød, og hvor der klages.
 
-„Det skal minde
-Tiderne, som rinde,
-Naar de glemme
-Ordet og min Stemme,
-Med mit milde
-Øie om den Kilde,
+    „Det skal minde
+    Tiderne, som rinde,
+    Naar de glemme
+    Ordet og min Stemme,
+    Med mit milde
+    Øie om den Kilde,
 Hvor alene Frelsen er at finde!“
 
 Han hæved atter blidelig sit Hoved
-Med Tornekronen; gik sin stille Gang.
-Men Qvinden laa paa Knæ, og høit hun loved
-Den Herre med sit Hjertes fulde Klang.
-Og Ingen at fornærme hende voved;
-En hellig Frygt det ganske Folk betvang. —
-Da fjerne Fjelde skjalv i Aftenrøden,
-Led Frelseren paa Korset Marterdøden.
+    Med Tornekronen; gik sin stille Gang.
+    Men Qvinden laa paa Knæ, og høit hun loved
+    Den Herre med sit Hjertes fulde Klang.
+    Og Ingen at fornærme hende voved;
+    En hellig Frygt det ganske Folk betvang. —
+    Da fjerne Fjelde skjalv i Aftenrøden,
+    Led Frelseren paa Korset Marterdøden.
 
-<pb facs="375.jpg"/>Men Veronika folded ud sit Klæde, —
-Begeistrings Purpur farver hendes Kind;
-Thi see det Under, som er skeet, en Glæde
-Lig Englenes, nedsteg i hendes Sind.
-I denne Dug, som end hans Taarer væde,
-Er Herrens eget Billed trykket ind.
-Det er ham selv, livagtig som han vandred
-Paa Jorden, skjøn og ung og uforandret.
+<pb n="370" facs="375.jpg"/>Men Veronika folded ud sit Klæde, —
+    Begeistrings Purpur farver hendes Kind;
+    Thi see det Under, som er skeet, en Glæde
+    Lig Englenes, nedsteg i hendes Sind.
+    I denne Dug, som end hans Taarer væde,
+    Er Herrens eget Billed trykket ind.
+    Det er ham selv, livagtig som han vandred
+    Paa Jorden, skjøn og ung og uforandret.
 
 Det er hans Træk, de naaderige, milde,
-Det straalende, det evig klare Blik;
-De gyldne Haar, der sig om Panden skille,
-Som Guddomsglorien i Fødselen fik.
-Det er hans Mund, fra hvilket Ordets Kilde
-Lig Sværd og Honning over Jorden gik, —
-Det er hans Aand, som over Menigheden
-Nedsender Trøsten, Haabet, Himmelfreden!
+    Det straalende, det evig klare Blik;
+    De gyldne Haar, der sig om Panden skille,
+    Som Guddomsglorien i Fødselen fik.
+    Det er hans Mund, fra hvilket Ordets Kilde
+    Lig Sværd og Honning over Jorden gik, —
+    Det er hans Aand, som over Menigheden
+    Nedsender Trøsten, Haabet, Himmelfreden!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814062" author="moellerpl">
+
 <head>
+
   <title>Poesiens Genius</title>
   <firstline>Op af Dvalen, I som slumre, I, som kan en Harpe slaae</firstline>
-  <pictures>
-    <picture src="1845-gaea-illustration-376.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1845, facsimileside 377.</picture>
-  </pictures>
-  <source pages="371-372" facsimile-pages="377-378"/>
+  <source pages="371-372" facsimile-pages="377-378" />
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="376.jpg"/>Op af Dvalen, I som slumre, I, som kan en Harpe slaae! —
+Op af Dvalen, I som slumre, I, som kan en Harpe slaae! —
 Staaer alt Solen ikke høit paa Himmelbuen blank og blaa?
-Lad da Tonen kjækt sig svinge
-Mod den klare Morgensky,
-Og lad Strengen mandig klinge,
-Mens de dorske Taager flye!
+            Lad da Tonen kjækt sig svinge
+            Mod den klare Morgensky,
+            Og lad Strengen mandig klinge,
+            Mens de dorske Taager flye!
 
 Denne sygelige, matte Søvnighed ved Musers Fest,
 Denne pyntelige Tomhed, den jeg hader som en Pest, —
-<pb facs="377.jpg"/>Denne Ringeagt for Tanken
-Med den svære Centnervægt,
-Denne Qvindefrygt for Skranken,
-Opreist af en svunden Slægt!
+<pb n="372" facs="377.jpg"/>            Denne Ringeagt for Tanken
+            Med den svære Centnervægt,
+            Denne Qvindefrygt for Skranken,
+            Opreist af en svunden Slægt!
 
 Nei, lad Sangen dristig klinge, frigjort fra det usle Støv,
 Om den Livsaand, der forynger sig som Skovens friske Løv,
-Om de stærke Lidenskaber,
-Slægtens Vunder, Slægtens Lyst,
-Hvad der flammer høit, og taber
-Sig i Menneskenes Bryst...
+            Om de stærke Lidenskaber,
+            Slægtens Vunder, Slægtens Lyst,
+            Hvad der flammer høit, og taber
+            Sig i Menneskenes Bryst...
 
 Lad den vække Folkets Manddom, lad den klinge mangen Kvæld,
 Om den danske Kvindes Troskab, hendes tause Hjertevæld!
-O, lad Sangen mægtig runge
-Over Eng og Bøgetop,
-Hilse værdig paa den unge
-Tid, som nu slaaer Øiet op! —
+            O, lad Sangen mægtig runge
+            Over Eng og Bøgetop,
+            Hilse værdig paa den unge
+            Tid, som nu slaaer Øiet op! —
 
-Op af Dvalen, I, som slumre, spænder Gyldensporen paa!
+Op af Dvalen, I som slumre, spænder Gyldensporen paa!
 Lad den gamle Digterganger Rytterkraft at føle faae!
-Lad ham spænde ud sin Vinge,
-Manken høit i Stormen slaae,
-Lad ham frem i Døgnet springe,
-Træde ned, hvad ei kan staae!
+            Lad ham spænde ud sin Vinge,
+            Manken høit i Stormen slaae,
+            Lad ham frem i Døgnet springe,
+            Træde ned, hvad ei kan staae!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 </content>

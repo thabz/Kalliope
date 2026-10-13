@@ -165,7 +165,8 @@ Registrér gennemgangen i `<workhead>`:
 
 Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
 `applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
-er redaktionelt sat i kantede parenteser; `facsimile-pages` er et enbaseret
+er redaktionelt sat i kantede parenteser. Brug `pages="[upagineret]"`, når
+rettelsesblokken står på et blad uden sidetal; `facsimile-pages` er et enbaseret
 sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
 `<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
 samme linje:

@@ -253,6 +253,7 @@
 
   <define name="picture">
     <element name="picture">
+      <optional><attribute name="primary"><choice><value>true</value><value>false</value></choice></attribute></optional>
       <optional><attribute name="src"><text/></attribute></optional>
       <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>

@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1846-gaea" author="antologierdk" status="incomplete" type="anthology" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
 <workhead>
+  <pictures>
+    <picture src="1846-gaea-p1.jpg" type="titlepage" primary="true"><transcription>Gæa / æsthetisk Aarbog, / med Bidrag af / Oehlenschlæger, / St. St. Blicher, H. Hertz, C. N. Rosenkilde, Aarestrup, / C. Bredahl, Caralis, Carit Etlar, H. C. Andersen, Chr. Winther, / En Dame, Adolph Meyer, Ludv. Bødtcher, H. B. Kaalund, F. J. Hansen, / H. C. Ørsted, L. Koikjær, C. Hauch, / P. L. Møller. / og Illustrationer efter / Gertner, Buntzen, / Melz, Herbst, A. Melbye, C. Liebert, Retsch, / Lundbye, Klæstrup, Petersen, Skovgaard, Flintoe, D. Teniers, / N. Simonsen, Ernst Meyer, Adam Müller, / Thorvaldsen. // Udgivet af / P. L. Møller. // Kjøbenhavn. / Udgiverens Forlag. Berlingske Bogtrykkeri. / 1846.</transcription></picture>
+  </pictures>
+
   <title>Gæa</title>
   <subtitle>Æsthetisk Aarbog</subtitle>
   <breadcrumbtitle>1846</breadcrumbtitle>
   <year>1846</year>
   <dates><published>1845-12</published></dates>
   <pagebreaks/>
-  <errata status="none"/>
+  <errata status="applied" pages="[upagineret]" facsimile-pages="10"/>
   <source href="https://archive.org/details/gaeaaesthetiskaa00ml" facsimile="gaea1846.pdf" facsimile-pages-num="346" facsimile-pages-offset="12">
     <title>Gæa. Æsthetisk Aarbog</title>
     <editor id="moellerpl" type="editor">P. L. Møller</editor>
     <place>Kjøbenhavn</place>
     <publisher>Udgiverens Forlag</publisher>
+    <printer>Berlingske Bogtrykkeri</printer>
     <year>1846</year>
   </source>
 </workhead>
@@ -28,7 +33,7 @@
   <source pages="1-4" facsimile-pages="13-16"/>
 
   <pictures>
-    <picture src="1846-gaea-illustration-011.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 12.</picture>
+    <picture src="1846-gaea-illustration-011.jpg" type="illustration">Billedblad før s. 1 i <i>Gæa</i>, 1846.</picture>
   </pictures>
 </head>
 
@@ -165,10 +170,6 @@ Der straffed ham; — og foer med Gud til Paradiset!
   <title>Pilen</title>
   <firstline>Hvad hedder Du? som her nedbøiet staaer —</firstline>
   <source pages="5" facsimile-pages="17"/>
-
-  <pictures>
-    <picture src="1846-gaea-illustration-016.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 17.</picture>
-  </pictures>
 </head>
 
 
@@ -695,9 +696,6 @@ Jeg maa blive som de Andre.
   <title>Rakar</title>
   <subtitle>poetisk Fortælling.</subtitle>
   <firstline>Lad os favnes medens vi er unge</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-038.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 39.</picture>
-  </pictures>
   <source pages="27-34" facsimile-pages="39-46" />
 </head>
 
@@ -1206,9 +1204,6 @@ Et lyrisk Udbrud kaster hermed
     <line>Tragødie af C. Bredahl.</line>
   </subtitle>
   <toctitle>Fragmenter af Sokrates</toctitle>
-  <pictures>
-    <picture src="1846-gaea-illustration-062.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 63.</picture>
-  </pictures>
   <source pages="51-82" facsimile-pages="63-94" />
 </head>
 
@@ -2376,7 +2371,7 @@ Den sender os et stjaalent Blik
   <title>Koen og Kalven</title>
   <firstline>Gud veed, hvad der skal siges om en Ko</firstline>
   <pictures>
-    <picture src="1846-gaea-illustration-098.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 99.</picture>
+    <picture src="1846-gaea-illustration-098.jpg" type="illustration">Billedblad før s. 88 i <i>Gæa</i>, 1846.</picture>
   </pictures>
   <source pages="86" facsimile-pages="98"/>
 </head>
@@ -2794,9 +2789,6 @@ En Dag laae der nogle Gadedrenge og ragede i Rendestenen, hvor de fandt gamle S�
 <head>
   <title>I Jenny Linds Album</title>
   <firstline>Folkesangen har en Verden inde</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-110.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 111.</picture>
-  </pictures>
   <source pages="99-100" facsimile-pages="111-112"/>
 </head>
 <body>
@@ -3509,10 +3501,6 @@ Endnu engang glemte min Onkel sin Værdighed, og han sagde til mig: „Du Gavtyv
   <title>Mødet med Bacchus</title>
   <subtitle>Et Digt<br/>af<br/>Ludv. Bødtcher.</subtitle>
   <firstline>Frascatis friske Haver</firstline>
-
-  <pictures>
-    <picture src="1846-gaea-illustration-141.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 142.</picture>
-  </pictures>
   <source pages="130-143" facsimile-pages="142-155"/>
 </head>
 
@@ -3898,10 +3886,6 @@ Jeg saae ham aldrig meer. —
   <title>Et Besøg i Sorø</title>
   <subtitle>Corpusfeuilleton<br/>af<br/>P. L. Møller.</subtitle>
   <source pages="144-187" facsimile-pages="156-199"/>
-
-  <pictures>
-    <picture src="1846-gaea-illustration-155.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 156.</picture>
-  </pictures>
 </head>
 
 
@@ -4259,10 +4243,6 @@ See, begge disse Fruentimmer lignede hiin Hund overmaade, med Undtagelse af, at 
   <title>Pigen med Masken</title>
   <firstline>Hvad betyder dette Maskespil?</firstline>
   <source pages="188-190" facsimile-pages="200-202"/>
-
-  <pictures>
-    <picture src="1846-gaea-illustration-199.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 200.</picture>
-  </pictures>
 </head>
 
 
@@ -4434,10 +4414,6 @@ Maa Tonernes Fylde jeg dæmpe.
   <title>Den hellige Helene</title>
   <firstline>Hun var saa from som Duen, saa kjærlig og god</firstline>
   <source pages="193-194" facsimile-pages="205-206"/>
-
-  <pictures>
-    <picture src="1846-gaea-illustration-204.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 205.</picture>
-  </pictures>
 </head>
 
 
@@ -4881,11 +4857,6 @@ Dæmper sig de vilde Bølgers Larm.
   <title>Tre Kapitler af Amors Biographi</title>
   <firstline>Du spørger, hvo mig lærte Alt, hvad jeg kan og veed</firstline>
   <source pages="206-213" facsimile-pages="218-225"/>
-  <pictures>
-    <picture src="1846-gaea-illustration-217.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 218.</picture>
-    <picture src="1846-gaea-illustration-219.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 220.</picture>
-    <picture src="1846-gaea-illustration-223.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 224.</picture>
-  </pictures>
 
 </head>
 
@@ -5116,9 +5087,6 @@ Jeg aldrig, aldrig mister det! —
   <title>Janus</title>
   <subtitle>Fortælling<br/>af<br/>P. L. Møller.</subtitle>
   <source pages="214-238" facsimile-pages="226-250"/>
-  <pictures>
-    <picture src="1846-gaea-illustration-225.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 226.</picture>
-  </pictures>
 
 </head>
 
@@ -5499,7 +5467,7 @@ I det Smaa Du seer det Store.
   </subtitle>
   <toctitle>Poetiske Forsøg af L. Koikjær</toctitle>
   <pictures>
-    <picture src="1846-gaea-illustration-255.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 256.</picture>
+    <picture src="1846-gaea-illustration-255.jpg" type="illustration">Billedblad før s. 245 i <i>Gæa</i>, 1846.</picture>
   </pictures>
 </head>
 <content>
@@ -5675,9 +5643,6 @@ O, bliv for Alting ved, som hidtil mig at muntre,
   <title>Samtale i Underverdenen</title>
   <subtitle>Frit efter Schiller.</subtitle>
   <firstline>Hvor heldigt, I Herrer, jeg træffer Jer just</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-259.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 260.</picture>
-  </pictures>
   <source pages="248-251" facsimile-pages="260-263" />
 
 </head>
@@ -5797,267 +5762,546 @@ Jeg Actier ta' i Casino!
 </content>
 </section>
 
-<text id="moellerpl20260814152" author="moellerpl">
+<text ignore-tests="repeated-adjacent-word" id="moellerpl20260814152" author="moellerpl">
+
 <head>
+
   <title>Skizzer fra Norge</title>
-  <pictures>
-    <picture src="1846-gaea-illustration-263.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 264.</picture>
-    <picture src="1846-gaea-illustration-275.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 276.</picture>
-    <picture src="1846-gaea-illustration-279.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 280.</picture>
-  </pictures>
   <source pages="252-287" facsimile-pages="264-299"/>
+
 </head>
+
+
 <body>
+
+
 <prose>
-I.
-Normendene i det Indre af Landet udmerke sig ved kraftfuld Legems⸗ bygning, Gjestfrihed, Redelighed, Tapperhed og en vis edel Stolt⸗ hed. IJ Stederne og ved Sokysterne ere Sederne mere fordervede, og mange af Nationalkarakterens edle Trek nesten udflettede.
-Millings Geographi.
-SYSvenstaaende Billede forestiller det berømte Bjerg Gaufta, som ansees for den interessanteste og høiefte,,Knude“ i det sydlige Norge. Det er beliggende i Ovre-Tellemarken, jeg kunde gjerne angive under hvilken Leengde- og Bredegrad, da jeg netop har et Landkort ved Haanden. Men det er der for⸗ modentlig Ingen, der bryder sig om. Efter de seneste Udmaa⸗ linger, navnlig ved Professor Hansteen, som har besteget det fra Sverst til Nederst, eller rettere sagt, omvendt, holder
-<pb facs="264.jpg"/>Gausta magelig fine 6000 Foo. Imidlertid har det ikke manglet pan Bagvaskere, som skumle over Bjerget og sige, at det kun er mellem 3 og 4000. Men den intelligente Del af det sønderfjældske Norge holder ivrig og enstemmig paa de 6000 Fod, da den anseer fine Bjerges Pre for uadffillig fra fin egen. Nærværende Vignet er udført efter en Haandtegning af den danske Maler Flintoe, som opholder sig i Christiania, har tilbragt mange Aar med at bereise Norge paakryds og ters, belt op til Finmarken, og har i fortræskelige Malerier giengivet en Mængde af de interessanteste Naturscener. For en Del Aar siden foreviste han dem som Panoramer her i Kjøbenhavn. Men da existerede Skandinavismen endnu ikke, og følgelig lod man Flintoe være Flintoe og Ingen brod sig om hans norske Prospekter. Kom han nu igjen, vilde det gage ham som Jenny Lind. Han vilde bestandig have prop⸗ fuldt Huus, blive besungen af Digterne, og skandinavifk knust under Vegten af,,kongelig danske“ Markstykker; endelig vilde han blive færdeles rost i,,Fedrelandet“. Da han imidlertid den⸗ gang var kommen for langt forud for sin Tid, maatte han igjen vende tilbage, og indeslutte sig med sine Malerier i sin lille Bolig i Christiania, indtil han i de senere Aar har faget Brug for nogle af dem som Dekorationer i det nyopførte Slot, eller som det hedder pan Norsk:,,Kongeboligen“.,,Om det her meddelte Billede ligner“ — spørger man. Ja, det gjør det, og det tør jeg paastage, uagtet jeg ikke har besteget Bjerget, og maaskee netop derfor; thi jeg har været faa nær, at jeg strax kunde fjende Bjerget efter Billedet. Men faa faldt det i med Regnveir, og fan gad jeg ikke trænge dy— bere ind i Tellemarken, især da jeg ofte var i Livsfare, ikke saameget ved vanffelige Bjergpassager, som ved Hungersnod. Jeg overnattede bl. A. paa en Station, hvor det ikke var mu⸗
-<pb facs="265.jpg"/>ligt at opdrive andre Levnetsmidler, end Mælk og W meget vilde jeg iske have givet 7 en Kop Kaffe, 1
-fortæller,,,var KR i et Strømpeffaft, han Dag i havde feet paa Vertindens Been.“ Og han havde o Cigarer til, og fan ydermere angive hvormange han rog paa fine Ben under Omftændigheder 1 mine
-berg, hvor Veiret vel ogsaa var daarligt, men Laxen i Sand åg kongelig, og det har været mig en stor Satisfaction at mes Sen at den ovennævnte Sfribent ganske er af samme Mening. 8 For jeg gaaer videre i Texten, maa jeg kortelig berøre: nogle af de geographiske, naturhistoriske og andre Merkeligheder, som Landet frembyder. Af Mineralriget frembringer Norge Mængde store Kampestene, som kaldes Fjelde, og som ifær benyttes som Stof af Malere, Reisende og Forfattere af norske Nationg sange. Fremdeles edle og uedle Metaller, samt en Meng Vandfald. Jeg betænfer mig ikke paa at regne disse til Miner, riget, da deres hele Existents berber paa en Stenmasse, som lægger sig i Veien for Vandet; Desuden afbenyttes de ganske paa samme Maade som Fjcldene. Saaledes har den bekjendte Maler Fearnley gjort et meget smukt Maleri af et Vandfald i Nerheden af Kongsberg, som hedder Labrofossen “). Den tydelige Flod styrter her ned over en (rigtignok ikke Høide af 140 Fod, og gjør et Spektakel, faa man høre Orelyd. Atmospheren er i den nermeste Omkr fyldt af det Vand, som opstiger af Fossen, og den in varende Fugtighed giver Vegetationen i Nærheden af et dant e en s sort Kolorit.
-<pb facs="266.jpg"/>vove sig altfor nær, thi saa kunde det let hænde, at man fif en Bjælfe i Hovedet, hvoraf der ellers kunde have blevet en Skibskjol. Naar Drivtommeret kommer flydende til et faa- dant Sted, kan det nemlig ikke undgaaes, at nogle af Stokkene stode paatveers mod de Klipper, som danne Vandfaldet. Da feer man de veldigste Bjelker fnæskes som Pibestilke, og flyve i Stumper og Splinter til alle Sider.
-Planteriget frembringer især Birk, Gran, Fyr (paa Norst,,Furu“) og Skov⸗Jordber, samt Blomster, der af Mangel paa Sand bruges til at komme i Spyttebakker. Dyreriget frembringer flere vilde Dyr end andre Lande i Europa, som Lover (der dog ikke haves til Udforsel), Bjørne, Ulve, samt Myseost, Hummer, Lax og Makrel. De sidste findes i fan stor Mængde og ere i faa lap Pris, at de ikke tør nydes uden af Fattigfolk, og den Fremmede, som paa en Restauration forlanger Makrel, udfætter sig for offentlig Foragt. De to første af disse Artikler saae jeg kun, de sidste spiste jeg tillige, og de forekom mig, ifær Jordbærene og Laxene, ubetinget at maatte gives Fortrinet. Den, der ikke har spist Lax i Norge, har ikke spist Lax. Ja, jeg paastager, ak selv den bittreste Fjende af Norge og den norske Nation, naar han gjorde Bekjendtskab med dens Jordbær og Lax, og endda ikke blev forsonet med den, han maatte enten have et Stenhjerte, eller ogsaa være skabt som en Hollænder. Ak ja, de norske Lax! — naar jeg tenker paa dem, løbe alle mine Tænder i Band. Hvor ofte har jeg ikke onsket mig til⸗ bage til de norske Laxegryder! alene for Laxens — og en Dames — Skuyld kunde jeg onske, jeg atter var i,,Norge, Kempers Fodeland!“
-Religionen er blandt de mere Dannede den luthersk-constitu⸗ tionelle, i Finmarken og inde mellem Bjergene findes endnu
-<pb facs="267.jpg"/>r
-SN
-r
-komst, hvilket vinder i Sandsynlighed, naar man jen
-rn
-meget Hedenskab. Desuden treffer man hyppig en Adyrkere, der tilbede nogle Sætninger, som kaldes 1 tionen“, og som enhver Bonde har hengende ve L ligesom de russiske Livegne deres Skytshelgen. I den Tid har man endog foranstaltet e af Fetisch, faa at den kan bæres i Vestelommen.
-Forfatningen er, som bekjendt, den frieste i Cn Tegn herpaa anføres ifær, at Regjeringen hvert Sieblik
-defpotiske Theokrati, ere banlyste fra Landet. De eneste! kvemmeligheder, hvoraf den Fremmede merker, han er i,,et 5 i frit Land“, er at man har Tilladelse til at ryge Cigar forbi Sfilbvagterne, samt fri Entree til Storthinget paa et Galleri, som rummer henved 30 Mennesker, i: hvor man 8,,
-sig Wellem andre Mennesker.
-Sproget, især Skriftsproget, har i Stæderne en paafaldende Lighed med det Danske. Kommer man op i Landet, mærker man snart en mere selvstændig Dialekt, som bliver uforstaaelig, og en Udtale, som stærkt ligner de arabiske Gutturallyd. Dette har maaskee givet Anledning til det bekjendte Keglespil, som kaldes Norsk-Arabisk. Det taler ydermere for en Konjektur, at Nordmændene oprindelig ere af østerlandsk
-1 der ganske traadte istedenfor W 0 Journal Men i deres Virkninger vare de fordeerveligere; hvorma
-<pb facs="268.jpg"/>Reisendes Udsagn, hos Fruentimmerne blandt visse orientalske Folk, f. Er. Joderne. Det er saaledes saagodt som bevist, at de gamle Islendere nedstamme fra Jodinder, som maaskee ere udvandrede, da Herodes vilde lade deres Børn dræbe.
-Angagende Indbyggerne i Norge kan jeg i det Vesentlige henholde mig til mit Motto. De kunne inddeles paa for— skjellige Maader; Landboerne saaledes i Odels- eller Gaard— mænd og Husmand, der representere Middelalderens: Feudal⸗ vesen i samme Forhold som Adel og Bondestand i andre Lande. Aegteskab mellem Gaard- og Husmeendsbørn ansees saaledes for uhyre Mesallianæ. J Staderne derimod skjælnes mellem Aristokrater eller Kosmopoliter, der søge at efterligne Udlandets Seeder, og Kraftpatrioter, der ville isolere Norge fra den øvrige Verden og gjenindføre den barbariske Nydelse af Barkebrod og Hestekjod. Litteraturen omtaler jeg senere, da jeg her i Ud⸗ førlighed agter at afvige lidt fra mine glorveerdige geographiske Forgengere.
-Naar man gaaer ombord paa Dampfkibet, og efter halv⸗ anden Dags Seilads feer de fave Klipper ved Frederiksvern, der som Trolde stikke de graae Hoveder op af Bandet, da er dette endnu ikke Norge. Det er kun en Gjentagelse af Indløbet til Gothenborg. Man seiler nu op ad Christianiafjorden, som hvert Øieblik synes at ophøre, men faa igjen aabner sig udenom smukke Øer og Nesse; — denne Tur skal meget ligne Ind⸗
-seilingen til Smyrna. Man anløber adskillige af de Smaa-
-steeder, der ligge skraas over for hverandre; Bjergene med
-deres Graner, der i Afstand see ud som omvendte Redekamme,
-ere endnu ikke meget høiere end en god jydsk Bakke. Forst
-paa Høiden af Drammen hæve de sig Noget; men bette er
-dog endnu ikke Norge. Heller ikke Chriftiania, med fine kramp⸗
-agtige Anstrengelser for at løsrive sig fra Smaakjøbsteds⸗
-<pb facs="269.jpg"/>Miféren, er Norge. Christiania repræfenterer Halen af den europeiste Civilisation; man finder her (og det er netop det Kjedelige) saa godt som hos os og andensteds glaserede Sel⸗
-skaber, vandrende Modejournaler, staaende Aftensmaaltider og 5
-løbende Medisanæ. Jeg havde til denne Reise udsøgt de eldste Stykker af min Garderobe, jeg troede at komme til Naturstandens Hjem, til et Folk af gammeldags, simple Sæder, Jo pyt! — jeg stod her som en Saul blandt Profeterne, og kunde — for den Sags Skyld — ligesaagodt have reist til Paris, hvor Opholdet ovenikjøbet er meget billigere. Christiania er at betragte som en Forstad til Kjøbenhavn eller Europa, hvormed den ved en Dampbaad stager i Forbindelse. Den er for stor til at have Smakjøbstæedernes gemytlige Cordialitet, og for klein til at frembringe et Hovedstadsliv. Man troer at være ud af Vrov⸗ len, og kommer atter midt ind i den. Mangen lille Privat⸗ historie om Folk i Kjøbenhavn, som der intet Menneske kjender, fager man her at høre, ja det kan gjerne hænde, at man af en Skandale, som ved Ens Afreise fra Kjøbenhavn netop er paabegyndt, kan erholde Fortscttelse og Slutning i Christianig. Nei, her er endnu ikke Norge. Det begynder først, naar man kommer en halv Snes Mil bort fra Hovedstaden op til den
-egentlige Fjeldnatur. Her finder man ogsaa først det norske 5%
-Folk, det som Hakon Jarl kalder:,,Et herligt, trofast, tappert Kœmpefolk,“
-udmerket ved patriarkalske Seeder og en overordentlig Naivitet?).
-*) Paa denne sages ifær merkelige Exempler i den bevægede Tid 1814. Da Rigsforsamlingen havde aflagt høitidelig Ed paa at offre Liv og Blod, for Norge skulde overgives til Sværig, indkom som frivillige Bidrag til Krigsforelsen fra Folk, der ikke havde Valuta, de kuris⸗
-<pb facs="270.jpg"/>Dette vidste jeg imidlertid, dengang ikke, jeg bildte mig ind, at Christiania var Norge, slog mig derfor til Ro, og fif et Logis hos en Traktor i Raadhusgaden, hvor jeg havde en smuk Udfigt til den gamle mod Fjorden befæftebe Borg Agers— hus, til de med lav Naaleskov bevoxede Bakker, der indeslutte Byen, og over en Vig af Fjorden til Christianias Tivoli,,,Lade⸗ gaardssen“, som man paa Danfk vilde falde en Halvø, Uagtet disse Agrements vil jeg dog ikke raade Nogen, som har Bøger med sig, at tage ind hos denne Mand. Han er nemlig i den
-Grad en Ander af Litteraturen, at nogle Bøger, som jeg havde laant, og ved min Afreise bad ham at besørge, ikke senere skulle være komne Eieren tilheende, — formodentlig fordi han, da det var vidtløftige Værfer, endnu ikke har faaet dem gjennemlæft.
-seste Repræfentativer, saasom umage Epauletter, smaa Portioner Fladbrod og Gammeløst. Og fra en Del anseete Bønder i Gud- brandødalen modtog Rigsdagen d. 20de April et Udfaft til en Con⸗ stitutionen, hvoraf følgende Punkter meddeles ordlydende:,,Bistopper, Stiftamtmaend, Amtmænd, Fogeder og Proknrator⸗ embeder ophøre inden et Aar fra Rigsdagens Slutning. Prokuratorer ere ofte Sagvoldere imellem den enfoldige Mand, og med Lift sette Sagerne i Langdrag. De bor for Alt nedlægges.” —,,Bispestolen synes for Eftertiden at være til Overflodighed, samt Vei-Inspektor⸗ Betjeningen.“ —,,Religion, Tenke- og Skrivefrihed ere Nationens medfødte Rettigheder, som vi formode Regenten, saavel for eget som for Nationens Vel, tillader uden vort Begjær. Regenten og Folket stage i nøieste Forbindelse, og Skrivefriheden er det kraftigste Middel til at forene dem, og ved den kunne de meddele hinanden deres sande, retfærdige Meninger, Handlinger og Foredrag uden lange og bekostelige Reiser.“ —,,Ingen Danfk eller Üdlending antages ved Regjeringen uden forhen aflagt Prøve paa Retfer— dighed og Patriotisme.“ —,,Fyrstendommer, Hertugdommer, Grev— skaber, Baronier og Herregaarde, hvorunder tillægges Rederier, maae aldrig oprettes i Norge. Det var at fætte det fri norske Folk i Ligning med Sjelleendere,“ o. s. v.
-<pb facs="271.jpg"/>Christiania ligner i Storrelse og Udseende Christians⸗ havn; Gaderne ere ogsaa her vinkelrette, hvilket tyder paa, at Christian den Fjerde, som har anlagt begge Byer, har været en vinkelret Mand. Dog er der lysere i Chriftiania, eftersom Husene kun have to Etager. Meget i det ydre Liv har et ganske dansk Præg, man træsker hyppig Danske paa Gaderne, og man troer ofte at befinde sig paa Christianshavn eller i en dansk Provindsby, lige indtil de for en Danfk ubehagelige Ting, der stundom siges En, hvilket man naturligvis ikke er belavet paa at høre blandt Fremmede. Viser man Sligt alvorlig til⸗ bage, da troe de ikke engang, man mener det; dog dette mag ikke lægges Nordmendene til Last, men snarere de mange jam⸗ merlige Danske, der have forvænt dem ved af Godmodighed eller for Fordels Skyld at tage enhver Uartighed for gode Barer. Det, hvorpaa jeg mest meerkede, at jeg var reist udenlands, var for det Første Brolcgningen, som tilveiebringes ved høist forskjellige Slags Materiale: flade og spidse Stene, Trepele, Flaskebunde, bar Jordvei og naturlige Klipper, der undertiden stikke Hovedet op af Gaden, ligesaa nøgne som Vorherre har skabt dem. Dernæft de lyse Sømmernætter, der mindede om, at jeg var kommen Nordpolen nærmere, og den umaadelige Dag⸗ varme, der mere tydede pan Ægqvator, og hvortil jeg her⸗ hjemme aldrig har oplevet Mage. En Stemning fra den Tid finder jeg i min Tegnebog udtalt paa følgende Maade:
-Den vamle Støvffy driver henad Gaden, Thi Gaden er en Vei brolagt med Sand, Hist over Bugten feer man Slotsfagaden, Lad glider Baaden paa det lunkne Vand. Og i det Fjerne lave Aases Rand,
-Med Dvergegran besat lig Pindsvinsborster, Jeg gjennem Varmetaagen dine kan,
+
+<nonum><center><b>I.</b></center></nonum>
+
+</prose>
+
+
+<quote>
+
+
+Normændene i det Indre af Landet udmærke sig ved kraftfuld Legemsbygning, Gjæstfrihed, Redelighed, Tapperhed og en vis ædel Stolthed. I Stæderne og ved Søkysterne ere Sæderne mere fordærvede, og mange af Nationalkarakterens ædle Træk næsten udslettede.
+<right><b>Millings Geographi.</b></right>
+
+</quote>
+
+
+<prose>
+
+---
+Ovenstaaende Billede forestiller det berømte Bjerg <w>Gausta</w>, som ansees for den interessanteste og høieste „Knude“ i det sydlige Norge. Det er beliggende i Øvre-Tellemarken, jeg kunde gjerne angive under hvilken Længde- og Bredegrad, da jeg netop har et Landkort ved Haanden. Men det er der formodentlig Ingen, der bryder sig om. Efter de seneste Udmaalinger, navnlig ved Professor Hansteen, som har besteget det fra Øverst til Nederst, eller rettere sagt, omvendt, holder
+<pb facs="264.jpg"/>Gausta magelig sine 6000 Fod. Imidlertid har det ikke manglet paa Bagvaskere, som skumle over Bjerget og sige, at det kun er mellem 3 og 4000. Men den intelligente Del af det sønderfjældske Norge holder ivrig og enstemmig paa de 6000 Fod, da den anseer sine Bjerges Ære for uadskillig fra sin egen. Nærværende Vignet er udført efter en Haandtegning af den danske Maler <w>Flintoe</w>, som opholder sig i Christiania, har tilbragt mange Aar med at bereise Norge paakryds og tværs, helt op til Finmarken, og har i fortræffelige Malerier gjengivet en Mængde af de interessanteste Naturscener. For en Del Aar siden foreviste han dem som Panoramer her i Kjøbenhavn. Men da existerede Skandinavismen endnu ikke, og følgelig lod man Flintoe være Flintoe og Ingen brød sig om hans norske Prospekter. Kom han nu igjen, vilde det gaae ham som Jenny Lind. Han vilde bestandig have propfuldt Huus, blive besungen af Digterne, og skandinavisk knust under Vægten af „kongelig danske“ Markstykker; endelig vilde han blive særdeles rost i „Fædrelandet“. Da han imidlertid dengang var kommen for langt forud for sin Tid, maatte han igjen vende tilbage, og indeslutte sig med sine Malerier i sin lille Bolig i Christiania, indtil han i de senere Aar har faaet Brug for nogle af dem som Dekorationer i det nyopførte Slot, eller som det hedder paa Norsk: „Kongeboligen“.
+
+„Om det her meddelte Billede ligner“ — spørger man. Ja, det gjør det, og det tør jeg paastaae, uagtet jeg ikke har besteget Bjerget, og maaskee netop derfor; thi jeg har været saa nær, at jeg strax kunde kjende Bjerget efter Billedet. Men saa faldt det i med Regnveir, og saa gad jeg ikke trænge dybere ind i Tellemarken, især da jeg ofte var i Livsfare, ikke saameget ved vanskelige Bjergpassager, som ved Hungersnød. Jeg overnattede bl. A. paa en Station, hvor det ikke var muligt
+<pb facs="265.jpg"/>at opdrive andre Levnetsmidler, end Mælk og Æg. Hvor meget vilde jeg ikke have givet for en Kop Kaffe, ja jeg troer — selv for den, som den tydske Reiseforfatter Theodor Mügge fortæller, „var kogt i et Strømpeskaft, han Dagen i Forveien havde seet paa Værtindens Been.“ Og han havde ovenikjøbet Cigarer til, og kan ydermere angive hvormange han røg paa paa sin Reise. Men under Omstændigheder som mine var det en sand Lise for det indre Menneske at komme tilbage til Kongsberg, hvor Veiret vel ogsaa var daarligt, men Laxen i Sandhed kongelig, og det har været mig en stor Satisfaction at erfare, at den ovennævnte Skribent ganske er af samme Mening.
+
+Før jeg gaaer videre i Texten, maa jeg kortelig berøre nogle af de geographiske, naturhistoriske og andre Mærkeligheder, som Landet frembyder. Af Mineralriget frembringer Norge en Mængde store Kampestene, som kaldes Fjælde, og som især benyttes som Stof af Malere, Reisende og Forfattere af norske Nationalsange. Fremdeles ædle og uædle Metaller, samt en Mængde Vandfald. Jeg betænker mig ikke paa at regne disse til Mineralriget, da deres hele Existents beroer paa en Stenmasse, som lægger sig i Veien for Vandet; desuden afbenyttes de ganske paa samme Maade som Fjældene. Saaledes har den bekjendte Maler <w>Fearnley</w> gjort et meget smukt Maleri af et Vandfald i Nærheden af Kongsberg, som hedder Labrofossen<footnote>Maleriet findes i Nationalsamlingen i Kongeboligen.</footnote>. Den betydelige Flod styrter her ned over en (rigtignok ikke lodret) Høide af 140 Fod, og gjør et Spektakel, saa man ikke kan høre Ørelyd. Atmosphæren er i den nærmeste Omkreds opfyldt af det Vand, som opstiger af Fossen, og den immervarende Fugtighed giver Vegetationen i Nærheden af et saadant Vandfald en eiendommelig sort Kolorit. Man skal ikke
+<pb facs="266.jpg"/>vove sig altfor nær, thi saa kunde det let hænde, at man fik en Bjælke i Hovedet, hvoraf der ellers kunde have blevet en Skibskjøl. Naar Drivtømmeret kommer flydende til et saadant Sted, kan det nemlig ikke undgaaes, at nogle af Stokkene støde paatværs mod de Klipper, som danne Vandfaldet. Da seer man de vældigste Bjælker knækkes som Pibestilke, og flyve i Stumper og Splinter til alle Sider.
+
+Planteriget frembringer især Birk, Gran, Fyr (paa Norsk „Furu“) og Skov-Jordbær, samt Blomster, der af Mangel paa Sand bruges til at komme i Spyttebakker. Dyreriget frembringer flere vilde Dyr end andre Lande i Europa, som Løver (der dog ikke haves til Udførsel), Bjørne, Ulve, samt Myseost, Hummer, Lax og Makrel. De sidste findes i saa stor Mængde og ere i saa lav Pris, at de ikke tør nydes uden af Fattigfolk, og den Fremmede, som paa en Restauration forlanger Makrel, udsætter sig for offentlig Foragt. De to første af disse Artikler saae jeg kun, de sidste spiste jeg tillige, og de forekom mig, især Jordbærrene og Laxene, ubetinget at maatte gives Fortrinet. Den, der ikke har spist Lax i Norge, har ikke spist Lax. Ja, jeg paastaaer, at selv den bittreste Fjende af Norge og den norske Nation, naar han gjorde Bekjendtskab med dens Jordbær og Lax, og endda ikke blev forsonet med den, han maatte enten have et Stenhjerte, eller ogsaa være skabt som en Hollænder. Ak ja, de norske Lax! — naar jeg tænker paa dem, løbe alle mine Tænder i Vand. Hvor ofte har jeg ikke ønsket mig tilbage til de norske Laxegryder! alene for Laxens — og en Dames — Skyld kunde jeg ønske, jeg atter var i
+
+</prose>
+
+
+<poetry>
+„Norge, Kæmpers Fødeland!“
+</poetry>
+
+
+<prose>
+
+Religionen er blandt de mere Dannede den luthersk-constitutionelle, i Finmarken og inde mellem Bjergene findes endnu
+<pb facs="267.jpg"/>meget Hedenskab. Desuden træffer man hyppig en Art Fetischdyrkere, der tilbede nogle Sætninger, som kaldes „Constitutionen“, og som enhver Bonde har hængende paa Væggen, ligesom de russiske Livegne deres Skytshelgen. I den senere Tid har man endog foranstaltet Portativudgaver af denne Fetisch, saa at den kan bæres i Vestelommen.
+
+Forfatningen er, som bekjendt, den frieste i Europa. Som Tegn herpaa anføres især, at Regjeringen hvert Øieblik sættes under Generalfiskalens Tiltale, og at Jøderne, der hylde det despotiske Theokrati, ere banlyste fra Landet. De eneste Bekvemmeligheder, hvoraf den Fremmede mærker, han er i „et frit Land“, er at man har Tilladelse til at ryge Cigar forbi Skildvagterne, samt fri Entree til Storthinget paa et Galleri, som rummer henved 30 Mennesker, og hvor man har det interessante Syn af Løver og Bønderkoner, som fredelig blande sig mellem andre Mennesker.
+
+Sproget, især Skriftsproget, har i Stæderne en paafaldende Lighed med det Danske. Kommer man op i Landet, mærker man snart en mere selvstændig Dialekt, som efterhaanden bliver uforstaaelig, og en Udtale, som stærkt ligner de arabiske Gutturallyd. Dette har maaskee givet Anledning til det bekjendte Keglespil, som kaldes Norsk-Arabisk. Det taler ydermere for den Konjektur, at Normændene oprindelig ere af østerlandsk Herkomst, hvilket vinder i Sandsynlighed, naar man seer hen til Island, hvor Norge i gamle Dage anbragte sine Colonister, fordi Nordamerika da endnu ikke var opfundet. Allerede i Sagaerne viser Nysgjerrighed og Sladderagtighed sig her som staaende Charaktertræk, der ganske traadte istedenfor Nutidens Journallitteratur. Men i deres Virkninger vare de fordærveligere; hvormange blodige Kampe og Mord læser man ikke, havde sin Oprindelse alene af Kvindesladder? Men de samme Egenskaber gjenfindes, efter
+<pb facs="268.jpg"/>Reisendes Udsagn, hos Fruentimmerne blandt visse orientalske Folk, f. Ex. Jøderne. Det er saaledes saagodt som bevist, at de gamle Islændere nedstamme fra Jødinder, som maaskee ere udvandrede, da Herodes vilde lade deres Børn dræbe.
+
+Angaaende Indbyggerne i Norge kan jeg i det Væsentlige henholde mig til mit Motto. De kunne inddeles paa forskjellige Maader; Landboerne saaledes i Odels- eller Gaardmænd og Husmænd, der repræsentere Middelalderens Feudalvæsen i samme Forhold som Adel og Bondestand i andre Lande. Ægteskab mellem Gaard- og Husmændsbørn ansees saaledes for uhyre Mésalliance. I Stæderne derimod skjelnes mellem Aristokrater eller Kosmopoliter, der søge at efterligne Udlandets Sæder, og Kraftpatrioter, der ville isolere Norge fra den øvrige Verden og gjenindføre den barbariske Nydelse af Barkbrød og Hestekjød. Litteraturen omtaler jeg senere, da jeg her i Udførlighed agter at afvige lidt fra mine gloværdige geographiske Forgængere.
+
+Naar man gaaer ombord paa Dampskibet, og efter halvanden Dags Seilads seer de lave Klipper ved Frederiksværn, der som Trolde stikke de graae Hoveder op af Vandet, da er dette endnu ikke Norge. Det er kun en Gjentagelse af Indløbet til Gothenborg. Man seiler nu op ad Christianiafjorden, som hvert Øieblik synes at ophøre, men saa igjen aabner sig udenom smukke Øer og Næsse; — denne Tur skal meget ligne Indseilingen til Smyrna. Man anløber adskillige af de Smaastæder, der ligge skraas over for hverandre; Bjergene med deres Graner, der i Afstand see ud som omvendte Redekamme, ere endnu ikke meget høiere end en god jydsk Bakke. Først paa Høiden af Drammen hæve de sig Noget; men dette er dog endnu ikke Norge. Heller ikke Christiania, med sine krampagtige Anstrængelser for at løsrive sig fra
+<pb facs="269.jpg"/>Smaakjøbsteds-Misèren, er Norge. Christiania repræsenterer Halen af den europæiske Civilisation; man finder her (og det er netop det Kjedelige) saa godt som hos os og andensteds glaserede Selskaber, vandrende Modejournaler, staaende Aftensmaaltider og løbende Medisance.
+
+Jeg havde til denne Reise udsøgt de ældste Stykker af min Garderobe, jeg troede at komme til Naturstandens Hjem, til et Folk af gammeldags, simple Sæder. Jo pyt! — jeg stod her som en Saul blandt Profeterne, og kunde — for den Sags Skyld — ligesaagodt have reist til Paris, hvor Opholdet ovenikjøbet er meget billigere. Christiania er at betragte som en Forstad til Kjøbenhavn eller Europa, hvormed den ved en Dampbaad staaer i Forbindelse. Den er for stor til at have Smaakjøbstædernes gemytlige Cordialitet, og for klein til at frembringe et Hovedstadsliv. Man troer at være ud af Vrøvlen, og kommer atter midt ind i den. Mangen lille Privathistorie om Folk i Kjøbenhavn, som der intet Menneske kjender, faaer man her at høre, ja det kan gjerne hænde, at man af en Skandale, som ved Ens Afreise fra Kjøbenhavn netop er paabegyndt, kan erholde Fortsættelse og Slutning i Christiania. Nei, her er endnu ikke Norge. Det begynder først, naar man kommer en halv Snes Mil bort fra Hovedstaden op til den egentlige Fjeldnatur. Her finder man ogsaa først det norske Folk, det som Hakon Jarl kalder:
+
+</prose>
+
+
+<poetry>
+„Et herligt, trofast, tappert Kæmpefolk,“
+</poetry>
+
+
+<prose>
+
+udmærket ved patriarkalske Sæder og en overordentlig Naivitet<footnote>Paa denne saaes især mærkelige Exempler i den bevægede Tid 1814. Da Rigsforsamlingen havde aflagt høitidelig Ed paa at offre Liv og Blod, før Norge skulde overgives til Sverrig, indkom som frivillige Bidrag til Krigsførelsen fra Folk, der ikke havde Valuta, de kurioseste Repræsentativer, saasom umage Epauletter, smaa Portioner Fladbrød og Gammelost. Og fra en Del anseete Bønder i Gudbrandsdalen modtog Rigsdagen d. 20de April et Udkast til en Constitutionen, hvoraf følgende Punkter meddeles ordlydende: „Biskopper, Stiftamtmænd, Amtmænd, Fogeder og Prokuratorembeder ophøre inden et Aar fra Rigsdagens Slutning. Prokuratorer ere ofte Sagvoldere imellem den enfoldige Mand, og med List sætte Sagerne i Langdrag. De bør for Alt nedlægges.“ — „Bispstolen synes for Eftertiden at være til Overflødighed, samt Vei-Inspektør-Betjeningen.“ — „Religion, Tænke- og Skrivefrihed ere Nationens medfødte Rettigheder, som vi formode Regenten, saavel for eget som for Nationens Vel, tillader uden vort Begjær. Regenten og Folket staae i nøieste Forbindelse, og Skrivefriheden er det kraftigste Middel til at forene dem, og ved den kunne de meddele hinanden deres sande, retfærdige Meninger, Handlinger og Foredrag uden lange og bekostelige Reiser.“ — „Ingen Dansk eller Udlænding antages ved Regjeringen uden forhen aflagt Prøve paa Retfærdighed og Patriotisme.“ — „Fyrstendommer, Hertugdommer, Grevskaber, Baronier og Herregaarde, hvorunder tillægges Rederiet, maae aldrig oprettes i Norge. Det var at sætte det fri norske Folk i Ligning med Sjællændere,“ o. s. v.</footnote>.
+
+<pb facs="270.jpg"/>Dette vidste jeg imidlertid dengang ikke, jeg bildte mig ind, at Christiania var Norge, slog mig derfor til Ro, og fik et Logis hos en Traktør i Raadhusgaden, hvor jeg havde en smuk Udsigt til den gamle mod Fjorden befæstede Borg Agershuus, til de med lav Naaleskov bevoxede Bakker, der indeslutte Byen, og over en Vig af Fjorden til Christianias Tivoli, „Ladegaardsøen“, som man paa Dansk vilde kalde en Halvø. Uagtet disse Agrements vil jeg dog ikke raade Nogen, som har Bøger med sig, at tage ind hos denne Mand. Han er nemlig i den Grad en Ynder af Litteraturen, at nogle Bøger, som jeg havde laant, og ved min Afreise bad ham at besørge, ikke senere skulle være komne Eieren tilhænde, — formodentlig fordi han, da det var vidtløftige Værker, endnu ikke har faaet dem gjennemlæst.
+
+<pb facs="271.jpg"/>Christiania ligner i Størrelse og Udseende Christianshavn; Gaderne ere ogsaa her vinkelrette, hvilket tyder paa, at Christian den Fjerde, som har anlagt begge Byer, har været en vinkelret Mand. Dog er der lysere i Christiania, eftersom Husene kun have to Etager. Meget i det ydre Liv har et ganske dansk Præg, man træffer hyppig Danske paa Gaderne, og man troer ofte at befinde sig paa Christianshavn eller i en dansk Provindsby, lige indtil de for en Dansk ubehagelige Ting, der stundom siges En, hvilket man naturligvis ikke er belavet paa at høre blandt Fremmede. Viser man Sligt alvorlig tilbage, da troe de ikke engang, man mener det; dog dette maa ikke lægges Nordmændene til Last, men snarere de mange jammerlige Danske, der have forvænt dem ved af Godmodighed eller for Fordels Skyld at tage enhver Uartighed for gode Varer. Det, hvorpaa jeg mest mærkede, at jeg var reist udenlands, var for det Første Brolægningen, som tilveiebringes ved høist forskjellige Slags Materiale: flade og spidse Stene, Træpæle, Flaskebunde, bar Jordvei og naturlige Klipper, der undertiden stikke Hovedet op af Gaden, ligesaa nøgne som Vorherre har skabt dem. Dernæst de lyse Sommernætter, der mindede om, at jeg var kommen Nordpolen nærmere, og den umaadelige Dagvarme, der mere tydede paa Æqvator, og hvortil jeg herhjemme aldrig har oplevet Mage. En Stemning fra den Tid finder jeg i min Tegnebog udtalt paa følgende Maade:
+
+</prose>
+
+
+<poetry>
+Den vamle Støvsky driver henad Gaden,
+Thi Gaden er en Vei brolagt med Sand,
+Hist over Bugten seer man Slotsfaçaden,
+Lad glider Baaden paa det lunkne Vand.
+Og i det Fjerne lave Aases Rand,
+Med Dværgegran besat lig Pindsvinsbørster,
+Jeg gjennem Varmetaagen øine kan,
 Mens her jeg ligger gispende og tørster.
-<pb facs="272.jpg"/>Hvor selsomt! her hvor man om Kulden taler, Mig lummer Fersthed selv i Bad forfølger,
-Og her, hvor Folk af Salt og Skarphed praler, Er der ei Salt engang i Havets Bølger! — —
-Det var i et Par Uger næppe muligt at bevæge sig i det Frie om Dagen, og jeg maatte venne mig til at sove eller ligge ganffe stille til henimod Aften. Forst da stod jeg op og gik ud og fad siden hele Natten og leste ved Skinnet af Polar⸗ solen. Desuden havde en Bekjendt af mig, ved hvis Ind⸗ bydelse min Reise oprindelig var foranlediget, lovet at orien⸗ tere mig lidt i Folket og Naturen, og mange hele Dage holdt jeg mig hjemme for at det rare Menneske ikke skulde gage for⸗ gieves. Men fee, om han kom. Tilsidst maatte jeg da op⸗ søge Eventyr paa egen Haand.
-J eet Punkt syntes selp de stridbareste Medlemmer af de forskjellige ordførende Partier — i det mindste for et Par Aar siden — af være aldeles enige; det var i ikke at vedkjende sig skandinavisske Sympathier. Sandsynligvis findes de endnu kun blandt den yngre Slægt og ville hos denne maaskee ikke vare længer end Troen paa andre Idealer. Danske og Svenske finde vist i Reglen en mindre velvillig Modtagelse end andre Na—
-\'\'tioner, og svenske Reisende kunde endnu for fag Aar siden re- sikere Skjældsord og Ubehageligheder paa Gaden. Heller ikke troer jeg, at den sidste artige og splendide Modtagelse af Nalur⸗ forskerne bor forklares af skandinaviske Grunde, men dels af den ganske upolitiske Interesse, som sammenknytter Videnskabs⸗ mend af samme Fag, dels af den let undskyldelige National- forfængelighed, trods Landets Fattigdom, ved en Leilighed som denne ei at ville skye nogen Slags Bekostning og Luxus.
-Man hører ikke fan sjelden den Mehing; at de Norske
-ere et Pomodigt Folk. Dette troer jeg, er en fuldkommen
-el 2
-<pb facs="273.jpg"/>Vildfarelse. De synes fun undertiden at vise sig saaledes, navnlig mod Danske, for at ikke den fjerneste Mistærke skal
-opstage om, at de jo efter Adskillelsen i alle Maader befinde sig i Paradis. Dette bidrog imidlertid til, at jeg nu meer end nogensinde for, ja maaffee først nu, følte mig stolt af at være Danskl. Hin Manovre anvendes egentlig mest af Kosmopoliterne, der gjøre Profession af Dannelsen, og en Dansk vil derfor ofte befinde sig hyggeligere blandt de Ultra⸗ norske, de saakaldte Kraftpatrioter, end blandt Kosmopoliterne, som hvert Sieblik generes af den Bevidsthed, at de skylde nærmest os deres hele Kultur og Intelligents, og som ikke kunne
-nægte sig den Fornøielse at lade det enkelte Individ undgjælde
-for Misfornøielsen med den tidligere danske Regjering. Dette gjælber dog naturligvis kun om de Halvdannede. De virkelig Dannede ere omtrent ens i alle Lande; her, hvor Folkemeengden
-er lille, ere de naturligvis færre, og hos de Udannede n ig
-man til Erstatning den nationale Kjærnenatur.
-Ligesaalidt vil jeg istemme de fædvanlige Klager (der skrive sig fra Digtet,,Demringen“ og dets Tilheengere) over den forærede Pukken paa en Nationalitet, sem i Tide og Utide træskes frem ved Haarene, eller over en vis uangenem Raahed, Kulde og Utilgengelighed, som man i Omgangslivet nof kan stode paa. Herhen hører ogsaa det Træf, at medens de Svenske ofte sige Meer end de føle, faa genere mange Morffe sig for at udtale deres naturlige Følelser, af Frygt for at give en Blot⸗ telse, og ikke synes faa civiliserede, som de gjøre Fordring paa.
-Derfor feer man ofte Kjedsomhedens, Misfornøielsens og Iro⸗
-niens Demoner uden nogen Berettigelse snige sig om og forstyrre al Livsglede og Naturlighed. De Norske have af Naturen Tilbøielighed til Gjcstfrihed, men ligesom de i det Hele ikke ret 1 have Mod til at udtale deres bedre Følelser, saaledes genere
-<pb facs="274.jpg"/>de sig ogsaa for at nerme sig en Fremmed. Men har denne selv en Mosesstav, faa kan han fremlokke Veldet af Klippen; tager han selv Initiativet, kan han nok fane en Conversation i Gang, og nærmer han sig sans géne de Personer og Familier, som han onsker at fjende, da vil han i Almindelighed blive meget vel modtaget. Jeg for min Part er nu af den Mening, at man skal stikke Fingeren i Jorden og lugte, hvad Land man er i, og finder det urimeligt at befvære sig over Forholde, der ere ganffe naturlige for en ung Nation, hvis felyftændige Kultur først skal begynde, og hvis sociale Dannelse, som Følge af det politiske Elements Overvægt, endnu er i Svobet, eller i det Høieste i Flegelaarene. Slige Udværter maae nødvendig følge med enhver Omvaltning til en ny Tilstand. Folket selv er i Grunden ærligt og godhjertet, og har mange fmuffe og elffværdige Sider. Det er næften overflødigt at tilfoie, at man baade i det private og offentlige Liv ofte treffer ligesaa vakkre dogs elskverdige Personer her, som andensteds. Saaledes benyttede jeg jævnlig Universitetets Bibliothek, og jeg kan ikke varmt nok anerkjende den udmerkede Velvillie og Forekommenhed, hvormed den Fremmede her bliver behandlet.
-Omegnen ved Christiania ansees for færdeles smuk, og de velhavende Familier have besaget den med deres Parker og Villger (paa Norsk,,Lokker“), som sædvanlig ere Trehuse. Mig interesserede den ikke synderlig, dels fordi Naturen her allerede er forjasket af Menneskenes Forskjønnelseslyst, dels fordi den ikke frembyder noget Nyt for den, der kjender Jylland, hvor Bakkerne ofte ere meget høiere, om end deres Bekledning, Lyn⸗ gen, ikke kan maale sig med de norske Naaletrœer. Da jeg snart havde seet nok af dette, bestilte jeg mig et af de Kjore⸗ toier,,,hvorved (efter Skydsloven) to vorne Personer frem⸗ bringes”, for at gjøre en Udflugt til Norge, og for det første
-<pb facs="275.jpg"/>til Ringerige. For ikke at blive bedraget. før 19 og
-(ved at vente paa Stationerne), er det nodvendigt, at man først
-lærer Skydsloven udenad. Befordringen er ikke den bekvem⸗
-meste, og da Veien sjelden gaaer lige ud, befinder man sig. for⸗
-detmeste i følgende Situation:
-Granskovene udbrede et melanfolft Merke,, disse Naale⸗ træer fee ud som frosne eller sorstenede, sort- krystalliserede Planter, og hist og her stikker en Hengebirk fit vemodige Hoved frem blandt dem. Da Skumringen brod ind, kom jeg til den Dal, som indeslutter Bærum Jernverk. Her gnistrer og spru⸗ der, hvisler og suser det, som om man var midt i hede Helvede. Men det maa sees om Aftenen, ellers tager det sig ikke ud. Hist kommer det glødende, smeltede Jern løbende i Render i Gulvet som hvesende Ildslanger, her samle nøgle. af Sans Engle sig om en uhyre Punschebolle, der flammer som en Vi * kan i Mørket, og med Potageskeer oses den frygtelige Drik — (hvoraf en helanhrage: Draabe vilde være nok for hele! i 0: 73
-<pb facs="276.jpg"/>4 KSud i de Former, hvor den taalmodig storkner som smukke Kakkel⸗ Novnsplader. Ilden kan være farlig nok i fin sedvanlige Skik⸗ kelse, men den har noget Redsomt, naar den som her optræder med Kjod og Blod og Personlighed. Man føler sig lettere om Hjertet, naar man igjen kommer ud i de belmørke Skove. Efter en Reise af 6—7 Mil kommer man til den be⸗ romte Krogklev, en uhyre Kløft, som aabner sig paa en Høide af henved et Par Tusind Fod mellem to steile, skovbevoxede Fjeldægge og senker sig brat ned mod Tyrifjord, en af de 30,000 Søer, Norge skal befinde. Fra de saakaldte,,Udsigter“ paa begge Sider af Kløften, saavelsom fra denne selv, har man, NB. naar det er lyst Veir, et Panorama af overordentlig Stskiønhed og en halv Snes Kvadratmiles Udstrekning. Man over⸗ seer hele den store frugtbare Dal, Ringerige, med fine blinkende Søer og Elve, Skuepladsen for saamange gamle Kongers Meriter, . Olaf den Hellige maatte døje meget med Troldene, da indførte Christendommen (Hexen Gyri kastede endog sit ene 5 e efter en af hans Kirker), — hvor man foreviser den Høi, der gjemmer Fjerdeparten af Halfdan Svarte, samt den Gaard, hvor salig Kong Ring (der ikke var noget Menneske, men ze en Hund) residerede“). I Horizonten feer man tydelig Toppen e Gausta, Valders⸗ og Hallingdalsfjeldene, med de glimrende Striber af den evige Sne; den hede Sommersol lod sine | 5 Sale som overgivne Børn lege med de ærværdige Hoveder
-: 17 gav han dem sin Hund Ring til 1 og bestemte Dødsstraf 5 for den, som forkyndte ham Hundens Død. Bønderne slog den aalligevel af Æresfølelse ihjel, men da Ingen turde overbringe Ny⸗ bheden, tog En af dem Hunden paa Ryggen, og gik baglends ind til Kongen, uden at sige Noget.,,Er nu Kong Ring død“, sagde Sl Kongen, hvorpaa Bonden svarede som Tyra Danebod:,,Det siger J, Herre, og ikke jeg“, og flap saaledes for Straffen.
-<pb facs="277.jpg"/>væg. Paa saadanne Stader feer Norge SR
-hen til Honefossen, som har Navn efter den gamle Kong H.
-Det er en egen Fornemmelse, naar man for førse et Sneffeeld. R 1% ml 7 eee
-Naar man med Moie har løsrevet sig fra d Skue, og er kommen vel ned, gaaer det rafk ind i forbi Nordrehoug, Scenen for Madam Colbjornsens
-8 bed Veien beftaner her, ligesom ved i
-hensmuldrende Ruin, og dette maa vel have givet Anledning den Benævnelse:,,gamle Norge“, som faa ofte forekommer Digtere og patriotiske Skribenter, da der vel ellers ingen
-blev at bede om Søndagen for Kong Frederik den Sjette end
-en Snes Aar efter. Adffillelfen fra Danmark. 0 i 1
-Honefossen hand en euerm Brede ' men kun ringe
-feng maa drive Saug⸗ og eee og 45 fun og Broer deles i en Mengde Filialfosser, gjør de tryk. Langt interessantere for en Dansk er derimod her en virkelig Flod, Dramselven, som med stolt Indigna der sig bort fra den jammerlige Fos, for at gj Svommetur gjennem hele Tyrifjord. En Mils hen bliver Ringerige mindre fladt, en Mængde opfyldte med Graner, hvis Toppe nage op til
-<pb facs="278.jpg"/>omk
-AGES
-NOEARVEN3 ae bal 7
-SAs
-gg
-5 stivepande. Spirillelven danner her et Par anseelige og meget mukke Vandfald, hvor den forhen omtalte Scene med Tommer⸗ feokene gjentager sig. IJaeg lod mig herfra,, stydse tilbaads“ over Tyrifjorden til Modum, hvor Bøndernes Nationaldragt ikke er ulig Nutidens Modesnit, og kjorte derpaa, med Tellemarkens Fjældformationer og det jævnlig fremdukkende Gausta for Sie, til Kongsberg. Denne By ligger i en stor Dal, og mange af Husene ere (formodentlig for ei at oversvømmes af Lougen, som flyder derigjennem) opførte paa Stenpiller, ligesom de Vilde i varme Lande bygge Hytter paa Pale for at sikkre sig mod Slanger. Jieeg gjorde herfra nogle Udflugter, med hvis Beffrivelfe jeg Litke vil trætte Læferen. Jeg besøgte Sølvværfet, hvor man kraoler 3—400 Alen ned i Jorden, for at fee det Band, som stjuler det gedigne Sølv. Jeg besteg et Fjæld der i Nærheden, 5 Jonsknuden, som regnes at være 3000 Fod heit, hvorfra man har Udsigt dybt ind i Tellemarken, og da det blev Aften, bavde jeg den Fornøielse at fee store Skymasser vælte sig af æe nedenfor mine Fødder. Samme Forneielse kostede mig ellers akkurat et Par kjøbenhavnste Støvler, faa at jeg ved 3 Nedsigningen gik paa Strømperne, Da Sølvoverket imidlertid eg lligger paa en betydelig Høide, kan man omtrent antage, at der 8 bas et 1500 Fods Fjæld gaaer et Par kjøbenhavnske Støvler, 25 . følgelig fire Par paa Gausta. Jeg anforer dette til Nytte 5 8 fr andre Reisende, for at de efter Høiden af de Bjerge, de Abe bestige, allerede hjemme kunne beregne, hvormange; Støvler De behøve at føre med. Naar man fra Kongsberg. tager til Eger, kan man langs den skjønne og imposante Drams⸗ *,, e kjore til Drammen, hvor Floden udgyder sig i Fjordspeilet, 1 og store Fjelde danne en ee Vold om Wie Wenn Kjøb⸗ 1 e, 15 SEG. US
-sår
-H4
-<pb facs="279.jpg"/>væ
-i 9 e,,Videnskaberne ere dyrkede i Norge.“ 140 Millings Geographi. ore W — * a jeg steg i Land i Christiania, traf jeg rar paa en. gammel Bekjendt, som i flere Aar havde opholdt sig her. Jeg lagde nævpe Merke til hans Velkomsthilsener og Spørgsmaal, da jeg onskede uforstyrret at nyde Indtrykket af første Gang at betræde et fremmed Land. Den første Kuriositet, der tildrog sig min Opmerksomhed, var i; En gm en et menneskeagtigt Bæfen, med imposant Mundstjcg, 53 uhyre barske og ærgerlige Miner, der stod stiltiende f ved Siden af nogle Andre af lignende sense,,Hvad er det for en Fyr?“ sagde jeg. 3,,Hvad det er?“ svarede han,,,det er jo en af vores
-ER
-Sk
-havde jeg ventet at træske paa Bjørne og Ulve, men ikke — måtte paa daher — Nei, det kan jeg tænfe! Det
-<pb facs="280.jpg"/>1 — mæften faa ftor som en Heft, og gaaer om Natten ud for at 75 HAe Dyr.\'\' DOMde ellers. meget vilde? ⸗ 5 DE,,Aa nei, * Raæn her er temmelig tam, det Frygte⸗ lige ligger egentlig kun i det Ydre. De ede saaledes ikke raat Kjod (hvorved de undgaae at forgribe sig paa sig felv), ikke heller hele Orer, men nøies med Bofsteg, diverse Slags Punsch, Trondhjemsk Akvavit og Champagne, og skjøndt de i Grunden ere umalende, efterligne de menneskelige Sæder ved en Slags brummende Talestemme, samt ved den op⸗ reiste Gang, som dog kun bibeholdes om Dagen. Mod Aften vende de gjerne tilbage til den naturlige Maneer. Ogsaa gage de som Du har feet, med Klæder — der paa en Skred⸗ ders Regning forskrives fra Paris og Løndon med saa brede Skjøder, at de i smalle Gader nage til Husene paa begge Si⸗ i 5 der, — samt med paillefarvede Handsker, hvorved Forbeens⸗ Bevagelserne blive faa generte og kantede, at Folks Ruder ofte 3 ere i Fare. Alle virkelige Mennesker betragte de som Dyr, for gat leve i den Indbildning, at de selv ere Konger — —“ . Så 5 Det klinger myftisk og kuriost nok, men hvad der nermest sktal interessere mig, tenker jeg er Theatret og Litteraturen, og i den Henseende kunde Du maaskee tjene mig med Oplysninger.“ 25 SÅ Med Fornøielse, min Ven,“ vedblev han; ,,jeg oplyser Dig alt hvad jeg kan. Seer Du, naar et saadant ungt Dyr 3 er udvoret, kan han fordetmeste kjende Bogstaver, og sendes saa FÅ 15 3 — Maaneder til Europa, enten til Paris eller Stockholm, Sa 1 har oprettet et Menageri for at teemme dem og 5 artikulere deres Sprog. Naar han faa kommer tilbage, har ben, Bic ejsdt: er,,europatret“, kan brumme lidt Franff, og saa — er han Love. Han optages nu i de Leldres,,Trop“
-1 SM— Cberaf den naturhistoriste Venavnelse leo troppista) og maa
-<pb facs="281.jpg"/>gage pan Gaden i stivt,, ved Bryggen, naar Dampfibet at og passe reif e nere eller fremmede Dyr op, for at kunne prale med f gage om Søndagen paa Fæftningen og høre Vagtpe træske efter den gjennem Gaderne, og staage paa Fortouget Kammerherre M* med Familie og,, .
-Byen fra sin Lokke — —“; ,,Kammerherre? jeg troede, at Adel og Titler var: lyste fra Norge?“ å 1,,Ja vist, efter Loven; men i Virkeligheden dar 3 berømte Demokrati sig i tre Slags Aristokrati, nemlig paa Lan⸗ 8 — det Gaardmeends⸗Aristokrati, i Bergen og Sostæderne Per ze; aristokrati og her i Hovedstaden Modejournals- og Embed 1 aristokratiet, 28 1 50 dannes af Loverne. 1 Falbe nu, ål,,Jo, min Ven, meer end Du troer; disse bes i Bæfener have nemlig føgt at angive Tonen paa begge Steder, men det endte med, at de fil Prygl og bleve benyttede |
-Stof for komisk og satirist Fremstilling. Forst sluttede de til,,Demringen“, og bette Skrift og dets Forfatter fif d endnu flere Fjender blandt Folket. Efter at den Co tionelle“ Havde mistet fin første dygtige Redaction, fik de pas i Aae Blad, og Følgen var, at det tabte si
-selv Gjenftanb for en ny,,Damring“, i en Rakke inte Bladartikler Com Se tillengger en 3 seg
-<pb facs="282.jpg"/>e mega irær har han med aristophanist Dristighed og Lune blottet deres Naragtigheder. Allerbedst har han dog gjort det i det fortræskelige Digt, han udgav i gamle Kunsthandler Schmahrs Navn og hvor det blandt Andet hedder:
-Æg,,Libyens Palmekrat er Fuldt af Abekatter, Men vor kjere
+
+<pb facs="272.jpg"/>Hvor selsomt! her hvor man om Kulden taler,
+Mig lummer Ferskhed selv i Bad forfølger,
+Og her, hvor Folk af Salt og Skarphed praler,
+Er der ei Salt engang i Havets Bølger! — —
+</poetry>
+
+
+<prose>
+
+Det var i et Par Uger næppe muligt at bevæge sig i det Frie om Dagen, og jeg maatte vænne mig til at sove eller ligge ganske stille til henimod Aften. Først da stod jeg op og gik ud og sad siden hele Natten og læste ved Skinnet af Polarsolen. Desuden havde en Bekjendt af mig, ved hvis Indbydelse min Reise oprindelig var foranlediget, lovet at orientere mig lidt i Folket og Naturen, og mange hele Dage holdt jeg mig hjemme for at det rare Menneske ikke skulde gaae forgjæves. Men see, om han kom. Tilsidst maatte jeg da opsøge Eventyr paa egen Haand.
+
+I eet Punkt syntes selv de stridbareste Medlemmer af de forskjellige ordførende Partier — i det mindste for et Par Aar siden — at være aldeles enige; det var i ikke at vedkjende sig skandinaviske Sympathier. Sandsynligvis findes de endnu kun blandt den yngre Slægt og ville hos denne maaskee ikke vare længer end Troen paa andre Idealer. Danske og Svenske finde vist i Reglen en mindre velvillig Modtagelse end andre Nationer, og svenske Reisende kunde endnu for faa Aar siden risikere Skjældsord og Ubehageligheder paa Gaden. Heller ikke troer jeg, at den sidste artige og splendide Modtagelse af Naturforskerne bør forklares af skandinaviske Grunde, men dels af den ganske upolitiske Interesse, som sammenknytter Videnskabsmænd af samme Fag, dels af den let undskyldelige Nationalforfængelighed, trods Landets Fattigdom, ved en Leilighed som denne ei at ville skye nogen Slags Bekostning og Luxus.
+
+Man hører ikke saa sjelden den Mening, at de Norske ere et hovmodigt Folk. Dette troer jeg, er en fuldkommen
+<pb facs="273.jpg"/>Vildfarelse. De synes kun undertiden at vise sig saaledes, navnlig mod Danske, for at ikke den fjerneste Mistanke skal opstaae om, at de jo efter Adskillelsen i alle Maader befinde sig i Paradis. Dette bidrog imidlertid til, at jeg nu meer end nogensinde før, ja maaskee først nu, følte mig stolt af at være Dansk. Hiin Manøvre anvendes egentlig mest af Kosmopoliterne, der gjøre Profession af Dannelsen, og en Dansk vil derfor ofte befinde sig hyggeligere blandt de Ultranorske, de saakaldte Kraftpatrioter, end blandt Kosmopoliterne, som hvert Øieblik generes af den Bevidsthed, at de skylde nærmest os deres hele Kultur og Intelligents, og som ikke kunne nægte sig den Fornøielse at lade det enkelte Individ undgjælde for Misfornøielsen med den tidligere danske Regjering. Dette gjælder dog naturligvis kun om de Halvdannede. De virkelig Dannede ere omtrent ens i alle Lande; her, hvor Folkemængden er lille, ere de naturligvis færre, og hos de Udannede finder man til Erstatning den nationale Kjernenatur.
+
+Ligesaalidt vil jeg istemme de sædvanlige Klager (der skrive sig fra Digtet „Dæmringen“ og dets Tilhængere) over den forcerede Pukken paa en Nationalitet, sin i Tide og Utide trækkes frem ved Haarene, eller over en vis uangenem Raahed, Kulde og Utilgjængelighed, som man i Omgangslivet nok kan støde paa. Herhen hører ogsaa det Træk, at medens de Svenske ofte sige Meer end de føle, saa genere mange Norske sig for at udtale deres naturlige Følelser, af Frygt for at give en Blottelse, og ikke synes saa civiliserede, som de gjøre Fordring paa. Derfor seer man ofte Kjedsomhedens, Misfornøielsens og Ironiens Dæmoner uden nogen Berettigelse snige sig om og forstyrre al Livsglæde og Naturlighed. De Norske have af Naturen Tilbøielighed til Gjæstfrihed, men ligesom de i det Hele ikke ret have Mod til at udtale deres bedre Følelser, saaledes genere
+<pb facs="274.jpg"/>de sig ogsaa for at nærme sig en Fremmed. Men har denne selv en Mosesstav, saa kan han fremlokke Vældet af Klippen; tager han selv Initiativet, kan han nok faae en Conversation i Gang, og nærmer han sig sans gêne de Personer og Familier, som han ønsker at kjende, da vil han i Almindelighed blive meget vel modtaget. Jeg for min Part er nu af den Mening, at man skal stikke Fingeren i Jorden og lugte, hvad Land man er i, og finder det urimeligt at besvære sig over Forholde, der ere ganske naturlige for en ung Nation, hvis selvstændige Kultur først skal begynde, og hvis sociale Dannelse, som Følge af det politiske Elements Overvægt, endnu er i Svøbet, eller i det Høieste i Flegelaarene. Slige Uvørter maae nødvendig følge med enhver Omvæltning til en ny Tilstand. Folket selv er i Grunden ærligt og godhjertet, og har mange smukke og elskværdige Sider. Det er næsten overflødigt at tilføie, at man baade i det private og offentlige Liv ofte træffer ligesaa vakre og elskværdige Personer her, som andensteds. Saaledes benyttede jeg jævnlig Universitetets Bibliothek, og jeg kan ikke varmt nok anerkjende den udmærkede Velvillie og Forekommenhed, hvormed den Fremmede her bliver behandlet.
+
+Omegnen ved Christiania ansees for særdeles smuk, og de velhavende Familier have beslaaet den med deres Parker og Villaer (paa Norsk „Løkker“), som sædvanlig ere Træhuse. Mig interesserede den ikke synderlig, dels fordi Naturen her allerede er forjasket af Menneskenes Forfinelseslyst, dels fordi den ikke frembyder noget Nyt for den, der kjender Jylland, hvor Bakkerne ofte ere meget høiere, om end deres Beklædning, Lyngen, ikke kan maale sig med de norske Naaletræer. Da jeg snart havde seet nok af dette, bestilte jeg mig et af de Kjøretøier, „hvorved (efter Skydsloven) to voxne Personer frembringes“, for at gjøre en Udflugt til <w>Norge</w>, og for det første
+<pb facs="275.jpg"/>til Ringerige. For ikke at blive bedraget for Penge og Tid (ved at vente paa Stationerne), er det nødvendigt, at man først lærer Skydsloven udenad. Befordringen er ikke den bekvemmeste, og da Veien sjelden gaaer lige ud, befinder man sig fordetmeste i følgende Situation:
+
+Granskovene udbrede et melankolsk Mørke, disse Naaletræer see ud som frosne eller forstenede, sort-krystalliserede Planter, og hist og her stikker en Hængebirk sit vemodige Hoved frem blandt dem. Da Skumringen brød ind, kom jeg til den Dal, som indeslutter Bærum Jernværk. Her gnistrer og spruder, hvisler og suser det, som om man var midt i hede Helvede. Men det maa sees om Aftenen, ellers tager det sig ikke ud. Hist kommer det glødende, smeltede Jern løbende i Render i Gulvet som hvæsende Ildslanger; her samle nogle af Satans Engle sig om en uhyre Punschebolle, der flammer som en Vulkan i Mørket, og med Potageskeer øses den hyggelige Drik (hvoraf en velanbragt Draabe vilde være nok for hele Livet)
+<pb facs="276.jpg"/>ud i de Former, hvor den taalmodig størkner som smukke Kakkelovnsplader. Ilden kan være farlig nok i sin sædvanlige Skikkelse, men den har noget Rædsomt, naar den som her optræder med Kjød og Blod og Personlighed. Man føler sig lettere om Hjertet, naar man igjen kommer ud i de belmørke Skove.
+
+Efter en Reise af 6—7 Mil kommer man til den berømte Krogklev, en uhyre Kløft, som aabner sig paa en Høide af henved et Par Tusind Fod mellem to steile, skovbegroede Fjeldvægge og sænker sig brat ned mod Tyrifjord, en af de 30,000 Søer, Norge skal besidde. Fra de saakaldte „Udsigter“ paa begge Sider af Kløften, saavelsom fra denne selv, har man, NB. naar det er lyst Veir, et Panorama af overordentlig Skjønhed og en halv Snes Kvadratmiles Udstrækning. Man overseer hele den store frugtbare Dal, Ringerige, med sine blinkende Søer og Elve, Skuepladsen for saamange gamle Kongers Meriter, hvor Olaf den Hellige maatte døie meget med Troldene, da han indførte Christendommen (Heren Gyri kastede endog sit ene Been efter en af hans Kirker), — hvor man foreviser den Høi, der gjemmer Fjerdeparten af Halfdan Svarte, samt den Gaard, hvor salig Kong Ring (der ikke var noget Menneske, men en Hund) residerede<footnote>Da Bønderne paa Aadal havde gjort Oprør mod Kong Beine, gav han dem sin Hund Ring til Vicekonge, og bestemte Dødsstraf for den, som forkyndte ham Hundens Død. Bønderne slog den alligevel af Æresfølelse ihjel, men da Ingen turde overbringe Nyheden, tog En af dem Hunden paa Ryggen, og gik baglænds ind til Kongen, uden at sige Noget. „Er nu Kong Ring død“, sagde Kongen, hvorpaa Bonden svarede som Tyra Danebod: „Det siger I, Herre, og ikke jeg“, og slap saaledes for Straffen.</footnote>. I Horizonten seer man tydelig Toppen af Gausta, Valders- og Hallingdalsfjeldene, med de glimrende Skiver af den evige Sne; den hede Sommersol lod sine Straaler som overgivne Børn lege med de ærværdige Hoveder.
+
+<pb facs="277.jpg"/>Det er en egen Fornemmelse, naar man for første Gang seer et Snefjæld.
+
+Naar man med Møie har løsrevet sig fra dette ophøiede Skue, og er kommen vel ned, gaaer det rask ind i Ringerige, forbi Nordrehoug, Scenen for Madam Colbjørnsens Bedrifter, hen til Hønefossen, som har Navn efter den gamle Kong Høne. Væggen ved Veien bestaaer her, ligesom ved Opseilingen af Christianiafjord, af Sienitklipper, som ere saa brøstfældige, at de synes hvert Øieblik at ville styrte sammen i Gruus. Ofte ere de saa forvittrede, at man lægger Kartofler i den skraa Klippevæg. Paa saadanne Steder seer Norge virkelig ud som en hensmuldrende Ruin, og dette maa vel have givet Anledning til den Benævnelse: „gamle Norge“, som saa ofte forekommer hos Digtere og patriotiske Skribenter, da der vel ellers ingen Grund er til at antage, at Norge skulde være ældre end den øvrige Del af Jordkloden, skjøndt det unægtelig er noget tilbage i Tiden, idetmindste hvad Postvæsenet angaaer. Saaledes fortalte man mig, at en gammel Præst paa en Ø i Nordlandene vedblev at bede om Søndagen for Kong Frederik den Sjette endnu en Snes Aar efter Adskillelsen fra Danmark.
+
+Hønefossen har en enorm Brede, men kun ringe Høide, og da den, uden fri Naturomgivelse, i sin sønderrevne Klippeseng maa drive Sauge og Mølleværker, og af Huse, Trapper og Broer deles i en Mængde Filialfosser, gjør den intet Indtryk. Langt interessantere for en Dansk er derimod her Synet af en virkelig Flod, Dramselven, som med stolt Indignation skynder sig bort fra den jammerlige Fos, for at gjøre sig en Svømmetur gjennem hele Tyrifjord. En Mils Vei længer hen bliver Ringerige mindre fladt, en Mængde dybe Dale, opfyldte med Graner, hvis Toppe naae op til Randen, vise sig tæt ved hverandre, og give Landet Udseende af en uhyre
+<pb facs="278.jpg"/>Æbleskivepande. Spirillelven danner her et Par anseelige og meget smukke Vandfald, hvor den forhen omtalte Scene med Tømmerstokkene gjentager sig.
+
+Jeg lod mig herfra „skydse tilbaads“ over Tyrifjorden til Modum, hvor Bøndernes Nationaldragt ikke er ulig Nutidens Modesnit, og kjørte derpaa, med Tellemarkens Fjældformationer og det jævnlig fremdukkende Gausta for Øie, til Kongsberg.
+
+Denne By ligger i en stor Dal, og mange af Husene ere (formodentlig for ei at oversvømmes af Lougen, som flyder derigjennem) opførte paa Stenpiller, ligesom de Vilde i varme Lande bygge Hytter paa Pæle for at sikre sig mod Slanger. Jeg gjorde herfra nogle Udflugter, med hvis Beskrivelse jeg ikke vil trætte Læseren. Jeg besøgte Sølvværket, hvor man kravler 3—400 Alen ned i Jorden, for at see det Vand, som skjuler det gedigne Sølv. Jeg besteg et Fjæld der i Nærheden, Jonsknuden, som regnes at være 3000 Fod høit, hvorfra man har Udsigt dybt ind i Tellemarken, og da det blev Aften, havde jeg den Fornøielse at see store Skymasser vælte sig afsted nedenfor mine Fødder. Samme Fornøielse kostede mig ellers akkurat et Par kjøbenhavnske Støvler, saa at jeg ved Nedstigningen gik paa Strømperne. Da Sølvværket imidlertid ligger paa en betydelig Høide, kan man omtrent antage, at der paa et 1500 Fods Fjæld gaaer et Par kjøbenhavnske Støvler, og følgelig fire Par paa Gausta. Jeg anfører dette til Nytte for andre Reisende, for at de efter Høiden af de Bjerge, de agte at bestige, allerede hjemme kunne beregne, hvormange Støvler de behøve at føre med. Naar man fra Kongsberg tager til Eger, kan man langs den skjønne og imposante Dramselv kjøre til Drammen, hvor Floden udgyder sig i Fjordspeilet, og store Fjælde danne en pragtfuld Vold om nogle smaa Kjøbmandssjæle.
+
+---
+
+<pb facs="279.jpg"/><nonum><center><b>II.</b></center></nonum>
+
+</prose>
+
+
+<quote>
+
+
+„Videnskaberne ere dyrkede i Norge.“
+<right><b>Millings Geographi.</b></right>
+
+</quote>
+
+
+<prose>
+
+Da jeg steg i Land i Christiania, traf jeg strax paa en gammel Bekjendt, som i flere Aar havde opholdt sig her. Jeg lagde næppe Mærke til hans Velkomsthilsener og Spørgsmaal, da jeg ønskede uforstyrret at nyde Indtrykket af første Gang at betræde et fremmed Land. Den første Kuriositet, der tildrog sig min Opmærksomhed, var et menneskeagtigt Væsen, med imposant Mundskjæg, uhyre barske og ærgerlige Miner, der stod stikkende ved Siden af nogle Andre af lignende Udseende.
+
+„Hvad er det for en Fyr?“ sagde jeg.
+
+„Hvad det er?“ svarede han, „det er jo en af vore Løver.“
+
+„En Løve,“ gjentog jeg, „under 60 Graders nordlig Brede havde jeg ventet at træffe paa Bjørne og Ulve, men ikke —
+
+„Ikke paa Løver — Nei, det kan jeg tænke! Det er heller intet ægte indenlandsk Produkt, men frembragt ved, at nogle Exemplarer fra <span lang="fr">Jardin des Plantes</span> og Mini have forvildet sig blandt vore Ulve og Bjørne. Der er saaledes fremkommen en interessant Bastard, der forresten har gulbrun Farve, lange Knurrehaar, tykt Hoved og brølende Stemme tilfælles med de afrikanske, og er, som der staaer om disse i Billed-ABC'en
+<pb facs="280.jpg"/>„næsten saa stor som en Hest, og gaaer om Natten ud for at fange andre Dyr.“
+
+„Er de ellers meget vilde?“
+
+„Aa nei, Racen her er temmelig tam, det Frygtelige ligger egentlig kun i det Ydre. De æde saaledes ikke raat Kjød (hvorved de undgaae at forgribe sig paa sig selv), ikke heller hele Dyr, men nøies med Bøfsteg, diverse Slags Punsch, Trondhjemsk Akvavit og Champagne, og skjøndt de i Grunden ere umælende, efterligne de menneskelige Sæder ved en Slags brummende Talestemme, samt ved den opreiste Gang, som dog kun bibeholdes om Dagen. Mod Aften vende de gjerne tilbage til den naturlige Maneer. Ogsaa gaae de, som Du har seet, med Klæder — der paa en Skrædders Regning forskrives fra Paris og London med saa brede Skjøder, at de i smalle Gader naae til Husene paa begge Sider, — samt med paillefarvede Handsker, hvorved Forbeens-Bevægelserne blive saa generte og kantede, at Folks Ruder ofte ere i Fare. Alle virkelige Mennesker betragte de som Dyr, for at leve i den Indbildning, at de selv ere Konger — —“
+
+„Det klinger mystisk og kuriøst nok, men hvad der nærmest skal interessere mig, tænker jeg er Theatret og Litteraturen, og i den Henseende kunde Du maaskee tjene mig med Oplysninger.“
+
+„Med Fornøielse, min Ven,“ vedblev han; „jeg oplyser Dig alt hvad jeg kan. Seer Du, naar et saadant ungt Dyr er udvoret, kan han fordetmeste kjende Bogstaver, og sendes saa nogle Maaneder til Europa, enten til Paris eller Stockholm, hvor Kongen har oprettet et Menageri for at tæmme dem og artikulere deres Sprog. Naar han saa kommer tilbage, har han Knurrehaar, er „europæret“, kan brumme lidt Fransk, og saa — er han Løve. Han optages nu i de Ældres „Trop“ (deraf den naturhistoriske Benævnelse <span lang="la">leo troppista</span>) og man
+<pb facs="281.jpg"/>deltage i deres Beskjæftigelser, som ere at sværte Mundhaaret, gaae paa Gaden i stivt „Antræk“, sidde paa Kaffehuse, staae ved Bryggen, naar Dampskibet ventes, og passe reisende Kunstnere eller fremmede Dyr op, for at kunne prale med dem, gaae om Søndagen paa Fæstningen og høre Vagtparaden, trække efter den gjennem Gaderne, og staae paa Fortouget, naar Kammerherre M* med Familie og Domestiker kjører ind til Byen fra sin Løkke — —“
+
+„Kammerherre? jeg troede, at Adel og Titler vare banlyste fra Norge?“
+
+„Ja vist, efter Loven; men i Virkeligheden deler vort berømte Demokrati sig i tre Slags Aristokrati, nemlig paa Landet Gaardmands-Aristokrati, i Bergen og Søstæderne Pengearistokrati og her i Hovedstaden Modejournals- og Embedsaristokratiet, hvis Garde dannes af Løverne. Disse kalde nu, for at forhøie Illusionen, hverandre indbyrdes Baron, Marquis, Kammerjunker o. s. v.“
+
+„Men dette vedkommer da hverken Litteratur eller Theater.“
+
+„Jo, min Ven, meer end Du troer; disse besynderlige Væsener have nemlig søgt at angive Tonen paa begge Steder, men det endte med, at de fik Prygl og bleve benyttede som Stof for komisk og satirisk Fremstilling. Først sluttede de sig til „Dæmringen“, og dette Skrift og dets Forfatter fik derved endnu flere Fjender blandt Folket. Efter at „den Constitutionelle“ havde mistet sin første dygtige Redaktion, fik de Indpas i dette Blad, og Følgen var, at det tabte sin forrige Kredit og blot opfyldtes med udenlandske Phraser. Senere bleve de selv Gjenstand for en ny „Dæmring“, i en Række interessante Bladartikler (som Rygtet tillægger en Dame), hvor disse Norges Dandys kaldes „tungvinte“ (klodsede) og „leie“ (ækle). Værst har dog <w>Wergeland</w> medhandlet dem; i forskjellige af
+<pb facs="282.jpg"/>sine Farcer har han med aristophanisk Dristighed og Lune blottet deres Naragtigheder. Allerbedst har han dog gjort det i det fortræffelige Digt, han udgav i gamle Kunsthandler Schmalhrs Navn og hvor det blandt Andet hedder:
+
+</prose>
+
+
+<poetry>
+„Libyens Palmekrat er
+Fuldt af Abekatter,
+Men vor kjære
 By desværre
 Flere har af dem.“
-Naturligvis have de efter Evne søgt at hævne sig paa ham. De kaldte ham,,schofel“, fordi han en Tid af patriotist Iver gik i Vadmelskleder. Da han for nogen Tid siden ved F Lystighed paa en Vagtstue havde forstjærtset det Kapellani, bhan søgte, og Kongen fan, paa Grund af hans mangesidige Stribentvirtsonhed, gav ham en lille Pension, stødte de i Trom⸗ peter og udskrege ham som Landsforrcder; og hvad der var for ham det Bærfte, nogle af hans Venner fif de til at skrige med. Han faldt igjennem i et Leseselskab, men endnu tidligere hapde der været en Sammensvergelse mod ham, som Du skal i fane at høre.” Vi vare nu komne op i Byen til det nye Theater, der lig⸗ ger paa en aaben Plans, hvor flere nye Bygninger ere opførte, og min Ledsager vedblev:,,Den bramatiske Kunst hertillands er ikke gammel, og Theatrets Historie er snart fortalt. J 1826 eller 27 begyndte en svenst Snustobaksfabriker, Strømberg, at oprette et Theater med norske Skuespillere, men det var og blev SNdet rene Jux; man engagerede da et danfk Selskab, der stadig SR * senere er rekruteret, og ikke har manglet paa virkelige Ta⸗ SØ lenter. Saaledes have vi i Jorgensen en meget begavet Tra⸗ der, der tillige med Held kan gage ind i forskjellige andre Fa i Balling en tør Komiker med megen Smag og Talent, GØR en vet. uulbiemmeligt, burlest Lune, som mange Theatre
-<pb facs="283.jpg"/>maatte misunde os. Rosenkilde er med sin gode 8 91 og fit udmeerkede Gehør uundværlig for i Lu 1 Lystspilet ket man falder en idet
-pathetist 5 ved hendes prosaiske Diction Nee, Blandt de øvrige Damer findes flere respektable Talenter af SEanden Rang. Dog om Alt dette kan Du jo selb nærmere. av, overbevife Dig. Jeg vil blot fortælle Dig et Par harakteri⸗ Så 1 ftiske Træf af Theatrets ældre Historie. Medens Svenskeren 855 AR endnu var Direktor blev paa Unionsdagen, d. Ade Novbr. 1827,
-et originalt Stykke,,Fredsfesten eller Foreningen“ udpeben. Stemningen mod de Svenske var dengang saa mistenkt, at i. Regjeringen lod 47 Personer forhøre, og skjøndt Resultatet v 1
-at Pibningen kun havde gjeldt Skuespillernes og Stykkets Slethed, fif dog adskillige Embedsmænd deres Afsked. KER SA
-af Skuespillerne gav sig til af alle Kræfter at pibe ad 1 Mi hvilket. r man taalte. Opforelsen af Don Juan blev mi
-mer jeg til den Hævn, vore Lover fg øver Wergeland. per 8 od DØRE, til deres fashionable Beffjæftigelfer hver reg Asten at SR
-eee ret magelige til dette Brug. Men da
-Stykke e første Gang 1 eee 2
-Hele 2 070 iforveien havde man indkjøbt Piber; 3 kunde faae, hjalp sig med. een
-<pb facs="284.jpg"/>Å . tygget Skraa og andre eke og nu stod det serømte Theaterslag, der fortsattes helt ud paa Gaden og endte med i mange blodige Pander og Pibernes totale Nederlag. En af disse, en bekjendt Vaurien, fif saameget,,Juling“ (et norfk ÜUdtryk for Prygl), at han i lang Tid humpede om med forflaget Been og blaat Øie. En detailleret Beskrivelse af denne Aftens komiste og skandaløfe Scener udkom i et færeget Skrift med Navyngivelse af de virksomste Deltagere. Jeg haaber nu, Du indseer Lovernes Betydning saavel for Theater som Litteratur. Ey,,Jeg mærfer idetmindste, at jeg er kommen en Men har J J da slet intet Politi?“ FÅ
-Jo vel har vi det, men det er liberalt Politi, det tiger AREaltid for Overmagten. Desuden morede det sig ved, at,,Trop⸗ pen“ fif Juling. Efter disse Uheld nøies den med at henhøre. ae mme Forlystelser samt organisere vort selskabelige 0
-n skulde serveres Kringler og The, be. date
-9 Denne Forf. maa dog ikke have fundet sig tilfreds her, som man feer e e, pere, Digte,“ hvor det S. 99 hedder:;
-1,,Og Herrerne, hvad vil man vente 3 Mpaa deres Bei, der falder trang; su narret
-', vorfra skal de Dresfuren hente. . ER 102 deres norste Skolegang? Nene Så: e J De tenke vist: det kommer nok, Gn
-og, bald brutale, halv generte,
-NENEvane endnu, og Halv blaserte n. å n e d nne ber en selsom Flok. 70,, han og aa wen
-<pb facs="285.jpg"/>274 Ak ERE8
-Theen drikke de dog ikke, men gage et Par en. ig franst Lericon i Lommen, hvide Handsker og Hatten e! Pole, * 2 og afstebkomme Ulykker ved deres Ubehjelpsomhed. Naar en⸗ Ed 1 delig Sulten og den opreiste Gang piner dem for sterkt, seer 9 SAman Hat og Handffer forsvinde, og med den oprindelige Vild⸗ 3 hed kaste de sig over de Bjorneskinker og Snapse, der holdes DAparate i andre Verelser, hvor tillige forefindes Borde til at 5 ligge under. Ja Du troer maaskee jeg taler for allegorifk, Mn Du fager det nok selv at see.“ 5 Og hvad han sagde, gif virkelig i Opfyldelse. Jeg fik nøgle Dage efter en Indbydelse, skreven som det syntes med Menneskehaand, faa jeg ikke anede, hvor jeg kom hen. Men strax ved Ankomsten fane jeg mig omringet af nogle mørke 4 Skikkelser, som maalte mig med en air malcontent, og derpag gik brummende bort. J det samme kom min tidligere Ciærone mig imøde.,,Veed Du hvad de tale om?“ sagde han.,,Nei saamen veed jeg ikke.“,,De finde det uartigt mod Selskabet, at Du ikke har taget en forloren Snurbart paa; det var nogle af de ægte Fuldblodslover, de have alle været i Europa, der⸗ for er Intet dem tilpas her. Nogle gaae med nedheengende Manker, Andre flippe dem tæt af. Hvad synes Du om den?
-* de gg. 1
-N
-ere de ikke ret skuffende forkldte som Europckere?“?,,Men her er jo virkelig ganske net, her er jo dene e Granbar og et helt Bord med Blomster.“,,,Ja, seer Du, disse Skabninger efterligne med en W Snildhed menneskelige Skikke, jeg troer saagar, nogle have 9 ladet sig dressere nede hos Carstensen. Nu skal jeg 3 38 + 1 nogle af vore Lovinder. Der flager en Fyr foran, der 8 1 som han siger Noget til Frøkenen — thi paa et Lovebal 5 des kun Fruer og Frøkener — han veed flet ikke, hvor Bb a1 ÅR f a skal gjøre af det, vi Andre kalde Hænder, Han vil f telle
-<pb facs="286.jpg"/>es 65 hende en amusant Skrone ), som han dog ikke kan erindre, for her bliver mere,,tranqvilt.“ Men der er Præfidenten, det er det Exemplar af Arten, som pleier lœngst at kunne gage opret; hør, han melder, at Klokken er 6, og Punschen serveret. Det er nu Skik her i alle Selskaber. Siden begynder Dandsen, saa blive de glade, da de hertil kunne hjelpe sig med Benene.“ Ballet var forbi og Damerne fade. udenfor og saae paa den opgaaende Sol. Præfidenten havde offret saameget til Bacchus eller denne til ham, at han, som det endog gaaer med mange Mennesker i lignende Tilstand, blev sentimental, og fik det ulykkelige Indfald at ville improvisere. Nogle af hans Kolleger hjalp ham op paa et Bord. Han frembragte enkelte artikulerede Lyd, men snart begyndte han at vakle og famle med Forbenene, og da Bordet var for lille, styrtede han med stor Larm ned og søgte fin Plads derunder. J Faldet tornede han faa ublidt imod mig, at jeg blev noget tilsmudsket. 5 Hovorfor giver De ham ikke Juling?“ spurgte en af de Hosstaaende. Jeg sparede, at jeg fandt det ueedelmodigt at benytte mig af Vederpartens Forfatning, men i Grunden syn⸗ tes det mig underligt som Gjest at stulle tage sig selv tilrette. Om Eftermiddagen gik jeg lidt ud til en Lokke, hvor jeg hos nogle virkelige Mennesker havde fundet en serdeles venlig Mod⸗ tagelse, og tilbragt mange behagelige Timer, og hvor man siden for Spøg kaldte mig Daniel, fordi jeg var fluppen levende AR ud af Lovekulen. NAble Jeg anvendte nogle Uger paa at fætte mig ind i den veorste Litteratur, om hvilken de fleste Danske have en Forestil⸗ RDling, der i høi Grad trænger til Berigtigelse. Nogle troe, at den slet ikke existerer, og til disse synes Wee af begge
-9
-es 5 ar — Y 4
-r
-ee
-SASES
-rer
-5 e Lystigt 1 de l ere FISK 1 18\'\'
-<pb facs="287.jpg"/>vore offentlige Bibliotheker at høre, da man her 1 eppe finder
-en eneste Frembringelse af den norske Presse. — DEG den kun er en lille Paræl af den banffe Litteratur, de have 1 SØ
-læft,,Dæmringen” og hørt lidt om den herved fremkaldte Strid, der af den banffe Kritik blev aldeles misforstaaet. De ansee Welhaven for et agtbart lille Talent, og Wergeland for en Barbar, en Varuly, der flet ikke kan komme i Betragtning. 3 Sandheden er, at om den norske Litteratur ikke besd Ae, 1 end hvad Wergeland i sine lykkeligste Sieblikke i forskjellige 1 Former har frembragt”), faa maatte man er bob GE1 Hat af for den; thi neppe kan nøgen anden Litteratur opvise An 8 ægtere Geniglimt. Havde han udviklet sig under andre Betinn⸗ gelser, havde det ei været en politist Troessag, hvad man domte om hans Digte, var ikke hans Kraft bleven adsplittet ved politisfe ggg mange andre Interesser, og hans mageløs frugtbare Aand sønder⸗ 5 . flidt af Partistridigheder, — dobbelt ødelæggende, hvor den snevre Kampplads tvinger Lidenskaberne til daglig Rivning — faa vilde han upaatvivlelig været almindelig anerkjendt som en af den nyere Tids genialeste Digtere. Man for ret at vurdere og forstage den 8 norske Litteratur, maatte man kjende Folkets indre Historie i de sidste Deænnier, og om jeg end hertil kunde meddele nogle 5 Bidrag, maa jeg dog for denne Gang indskrenke mig til et Par flygtige Antydninger, idet jeg foreløbig henviser til et lille 1 Skrift,,,Upartist Betragtning af vor Litteratur,“ af en yngre, ir 55 75 meget lovende norst Forf. H. O. Blom, som i en serdeles klar og livlig Fremstilling med stor Sikkerhed har opstillet de Se rette Prineiper, om end i deres Anvendelse og 3 å keltheder den ungdommelige Varme har fort bam til noger Ensidighed. Te eee.; id ee ds ee RE) Fer: ar. Pres blot nævne. hans fiofte Digt: Wann
-1 re?
-<pb facs="288.jpg"/>AG Den norste esthetiske Litteratur reprœsenteres af Werge⸗ land og M. Hansen, der i en Del af fine Noveller har losre⸗ 5 vet sig fra den tydske Romanstil og leveret virkelig poetiske Skildringer af norst Natur og Folkeliv. Han vovede først — som senere Wergeland — at indføre Ord af Folkesproget i Litteraturen Chvilfet betegner en feløftændig norsk Litteraturs Begyndelse), og i enkelte Momenter nærmer han sig meget: Steen Blicher. For ham nevnedes som de største norste Poeter Bjerregaard og Schwach, begge af den ælbre danske Skole, den første skrev en Na⸗ tionalsang, nogle Romanær uden Eiendommelighed og nogle UÜbetydeligheder i dramatifk Form. Den sidste bar fit Navn med større Ret, end de fleste Digtere, og var en ligefrem Aflegger af den Rahbekste Aand og Smagsretning. Selv naar han staaer,,paa Dovre“ pttrer hans Begeistring over, hvad han kan 8 og ikke ses sig i følgende Maneer: 1,,Saa svæver Tankeblikket til en Egn g Af Christians og Drammens Fjorde vædet.…. SGaa flyver Tankeblikket over Hav a * Til Arelskad. g Blikket gaaer til fjerde Christians Stad.., Der treen jeg — — ind 5 5 5. 11 3 Syssellivets, Borgersamfunds-Skranken. — —
-5,06 endelig sig fæfter sydvendt Blik * Paa Dig, du kjere Stad ved Nordhavs Bredder o. f. 9. 5 lan
-HM5 1 ae man i Middagsstunden paa Gaden i Christiania, vil
-man let møde en sortkledt Person, som taler høit og i en af⸗ gierende Tone om Alt, seer vist efter enhver Bagatel, som om han var kortsynet, \'\'fægter i Luften eller mod de Forbigaaende med et tyndt Spanskror, stager undertiden stille og slaaer Be⸗ nene Sene, idet han dreier Overkroppen med en halv Ven⸗; j ding, — i en meget malerist Stilling. Naar han taler, gesti⸗
-<pb facs="289.jpg"/>kulerer han faa ivrig, at det nok fan hænde, man fager en al⸗ vorlig paa Øret; men det er ikke Andet, end,,Kvikh ed“, det
-linste Parti's Schiboleth, det er Welbæven. Det er ne 3 va begunstigede Naturer, som funne gjøre Meget, der ikke vilde ta les af Andre, og som derfor troe at kunne tillade sig Alt; han An., fan være færdeles interessant i Samtale, men han er lyrist⸗ lune⸗ 8 SEfuld som en forfjælet Prindsesse, en Følge af, at han i alle litte⸗ SØ DK se rere Anliggender har været den fornemste Styrke og Tilhold for ft Parti, som han til Gjengjeld tyranniserer. Med ham følger gjerne, ikke ret paa Siden og heller ikke bagefter, en tynd og vak⸗ lende Figur, et vandrende Lig, med nedslaaet Blik og Hatten nedtrykfk 8 i Sinene. Det er hans fidus Achates, den anden tosmopolikiste 1 Digter, den,,drømmende“ A. Muneh, hvis,,Ephemerer“ a 5 Forhaabninger, der ikke siden ere tilfredsstillede, faa man meer og meer betragter dem blot som Studier efter forskjellige moderne tydske Lyrikere. Han feer ud, som han var slov og fortvivlet over É Mangel paa tilftræskelig Anerkjendelse og derfor har slaget sig til 1 at redigere et politifk Dagblad,,,den Constitutionelle“ (Nella). ik Da bette Blad i fin Tid fremgik af den ved,,een, gen“ vakte Partistrid, og søgte at fortsctte den tidligere euros peiste, og in specie danske, Kulturstrømning paa norsk Grund, SÅ var det naturligt, at de Talenter, som ikke bea Den ae. Følelse af en ny og begyndende Nationalitet, søgte herhen. Jeg tenker her kun paa belletristiske Talenter; thi de mere abstracte Videnskaber have i deres Oprindelse en universel eller r tosmo⸗ politisk Charakter, og først i deres fortsatte Udvikling kan et nationalt Preg give sig tilkjende. Saaledes udmeerkede Collet sig her i den subjetive Kritik, som ikke slutter sig
-SR
-<pb facs="290.jpg"/>Digte af Muneh maatte tryffes i Morgenbladet, da Mund) var priviligeret Nellapoet. Paa samme Tid leverede Ebell en RNeække i fit Slags ypperlige Feuilletonartikler, lunefulde Skizzer
-af Folkelivet o. s. v. Begge disse Forfattere vare vel i Stilen
-DP7 Ad
-kijendelig paavirkede af den,,moderne“ Litteratur, der i det
-Hele har fundet tidligere og ftærfede Indgang i Christiania, end hos os; men,,den Constitutionelle“ stod i sine første Aargange (1836 — 40) baade i Dygtighed og Talent ikke lidet over, re den samtidig danske Journalistik presterede.
-Welhaven havde oprindelig et net lyrisk Talent, som skjønnes af hans ældfte Digte, med Sands for det Musikalske, men tillige et Heiniserende Hang til at være pikant ved en Masse fremmede Ord,
-der kun gjøre Dictionen broget. Under hans kritiske Felttog mod
-Wergeland, den deraf følgende Strid og senere Dæmringsstriden, som antog en saa voldsom Charakter, at Wergeland er død, og Welhaven længe har været skaldet, — udartede hans Ta⸗ lent til en smaalig⸗forstandig Reflexion, der oprindelig var hans Natur imod, som man kan slutte af hans ufordoiede og ufordeielige Afhandling,,om de norske Presseanliggender“.,,Demringen“, en Kritik paa Vers, der forlangte en heel Ci- vilisation uden dens Forudsctninger, og Frugterne af en Civi⸗ lisation, der ikke existerede, var i Modpartiets Sine,,et Nid⸗ dingsveerk“, der fortjente at brændemærfes, og Forfatteren,,en Modermoder“, ja man paastaaer, hans Liv, eller idetmindste
-8 j hans Ryg ofte var i Fare. Men Welhaven havde Uret i at beklage sig derover, da han burde have forudseet saadanne Følger
-ligesaa sikkert her, som i en af de nyamerikanste Stater, og ikke gjort Negning pan den polemiske Hoflighed, un en fuldt⸗ udviklet Cultur medforer f. Ex. i Paris. ne, Ligesom hos Mange Poesien er gaaet op i Embedslivet,
-Rg 8 . saaledes synes den hos W. at gage op i Conversationslivet,
-<pb facs="291.jpg"/>| her forbruger han alle fine poetiske Fonds. Han fortæller norffe! Sagn og Charaftertræb med en høist livlig Kolorit, men dette gjentager han faa tidt, at naar han engang vil fætte sig ned | og gjøre Digte deraf, dunster Poesien bort under hans Hænder; | medens han filer og pudser paa fine Vers, synes han selv at være kjed
-af Stoffet, og Leseren bliver det ikke mindre. J sin sidste Digte⸗ | samling (1845) er han aldeles gaaet i Frø og nedsunken til | plat og ideelss Versifikator af Ting, som meget bedre lode sig | fige paa Prosa. Hans Anfættelfe som Universitetslektor i Phi⸗ i losophi var vistnok et uheldigt Valg, ifær da der findes flere yngre Studerende, som ikke ere Dilettanter i dette Fag. Lidt udenfor Byen, tæt ved Kongeboligen, ligger et Hus
-bygget paa en Klippegrotte. Der boede Wergelandz det var
-en høi, bredskuldret Mand, hvis smukke og edle Physiognomi var
-noget medtaget af Livet. Det er bekjendt, at han i fine Skrifter
-ikke har skaanet Danmark og de Danste; men den Danffe, som i
-besøgte ham, kunde være sikker paa en aaben og hjertelig Mod⸗ ) tagelse. Til at skilbre denne uhyre frugtbare og virksomme Aand É i de mangfoldige Retninger, den med Geniets Lynhast har gjen⸗ nemfaret, vilde behøves en tyk Bog. Foruden det kempemeessige Misfoster,,Skabelsen, Mennesket, Messias“, improviseret i en Febæruus af en 20aarig Phantasi, der nys var berørt af Byron, har han skrevet alvorlige. Dramer (7 — 8), satiriste Far⸗ ær (14—16) ), episke og lyriske Digte, philantrophiste Folke⸗ | skrifter, politiste Taler) og Opsatser, hiftoriske Arbeider, og re⸗ i digeret Bladet,,Statsborgeren“ (1835—37) i demokratist | Oppositionsaand mod,,den Constitutionelle“. Overalt spores idetmindste Glimt af hans uhyre begavede Aand, og i Alt, hvad han under fit Navn har skrevet, aander, trods hans lidenskabe⸗ lige Patriotisme, en ærlig Velvillie mod den hele Menneske⸗
-*) Nogle af dem, f. Ex.,,Pagegoien“ ere ægte aristophaniste. ) Han havde herved erholdt en uhyre Popularitet over hele Landet.
-<pb facs="292.jpg"/>et
-8 i KSSia Spade, det Navn han, for ei at inddrage fin
-F ER | ne Trakasserier, antog i polemiske Skrifter, var kun, som han selv sagde,,en Alf, der boede i hans Sjcls Skygge⸗ af bedre Jegs Halobroder“. Rase kunde han og føre Hadets utæmmede Sprog, men til at misunde Nogen havde han selv formegen Aand. Hans Hjerte var i Grunden barnligt og godmodigt,,,men varmt og pirreligt; Lidenskaberne reiste sig der ligesaa pludselig og heftig som Hvirvelvindene paa de norske Soer, vild og ubendig var han i de unge Aar, og i Strid lignede han ofte et Barn, der er faldet i Vandet, og i sin Fortvivlelse griber efter Alt. J et Digt til hans høitelskede Angdomsven, den senere bekjendte Daa, læfer man:
-Men hvis de Tosker mig fordomme, Da veed jeg, Ludvig ei vil glemme“ o. s. v.
-Det Høieste, han har presteret, er uimodsigelig i lyrist poes. Ossian og Shakspeare havde bragt ham i en kaotist Giering; men aldrig for har man seet en faa uudtømmelig Phantasi rigdom og sublim Tankeskjønhed forenet med et saadant Barbari i Smagen, med saamegen Vildhed og Disharmoni i Formen (den han siden i høi Grad beherskede), som i hans Kaldste Digte (yførste og anden Ring“). Jeg skal henfætte | 5 É K Prøver: enn 22 Sklalden).,,Saa hun loe, da jeg viste
-5 hende min Elskov, der glimrede gjennem: Graaden,
-2 lig en Gartner, der ræsker 1
-AGlad Herskerinden om Morgenen den første Rose“ ca M. Hansen bier,,Jeg vil, trods Allums ) Hyl, nu lerer i Kongsberg) (nu skal han blive udødelig her), 2
-5 Ni fortalle som vist, at Kongsberg nu har Sølv.“ Som man feer af hans høift livlige og lunefulde Me⸗ 35 ÆG voter Ce busftne er,, der bleve forfattede paa Sygeleiet 5 9 En bekjer En bekjendt slet e ata, ume un e en, *
-<pb facs="293.jpg"/>i i
-og tidlig afbrudte ved hans Død, har han i sin første Ungdom
-lidt en Del af uheldig Forelskelse. En saadan udtaler han i
-de velklingende Rythmer:
-(Ved Mjosen),,Ikarus er jeg, hvis svimlende Jid Bølgerne flugte!
+</poetry>
+
+
+<prose>
+
+Naturligvis have de efter Evne søgt at hævne sig paa ham. De kaldte ham „schofel“, fordi han en Tid af patriotisk Iver gik i Vadmelsklæder. Da han for nogen Tid siden ved en Lystighed paa en Vagtstue havde forskjærtset det Kapellani, han søgte, og Kongen saa, paa Grund af hans mangesidige Skribentvirksomhed, gav ham en lille Pension, stødte de i Trompeter og udskrege ham som Landsforræder; og hvad der var for ham det Værste, nogle af hans Venner fik de til at skrige med. Han faldt igjennem i et Læseselskab, men endnu tidligere havde der været en Sammensværgelse mod ham, som Du skal faae at høre.“
+
+Vi vare nu komne op i Byen til det nye Theater, der ligger paa en aaben Plads, hvor flere nye Bygninger ere opførte, og min Ledsager vedblev: „Den dramatiske Kunst hertillands er ikke gammel, og Theatrets Historie er snart fortalt. I 1826 eller 27 begyndte en svensk Snustobaksfabrikør, Strømberg, at oprette et Theater med norske Skuespillere, men det var og blev det rene Jux; man engagerede da et dansk Selskab, der stadig senere er rekruteret, og ikke har manglet paa virkelige Talenter. Saaledes have vi i Jørgensen en meget begavet Tragiker, der tillige med Held kan gaae ind i forskjellige andre Fag, i Balling en tør Komiker med megen Smag og Talent, i Hagen et uudtømmeligt burlesk Lune, som mange Theatre
+<pb facs="283.jpg"/>maatte misunde os. Rosenkilde er med sin gode Syngestemme og sit udmærkede Gehør uundværlig for Operaen, og tillige for Lystspillet hvad man kalder <span lang="fr">en grande utilité</span>. Desværre er vor Primadonna, Md. Schrumpf, med sit tækkelige Ydre egentlig kun paa sin Plads i Vaudevillen, da enhver alvorlig og pathetisk Replik ved hendes prosaiske Diction bliver til Parodi. Blandt de øvrige Damer findes flere respektable Talenter af anden Rang. Dog om Alt dette kan Du jo selv nærmere overbevise Dig. Jeg vil blot fortælle Dig et Par charakteristiske Træk af Theatrets ældre Historie. Medens Svenskeren endnu var Direktør blev paa Unionsdagen, d. 4de Novbr. 1827, et originalt Stykke „Fredsfesten eller Foreningen“ udpebet. Stemningen mod de Svenske var dengang saa mistænkt, at Regjeringen lod 47 Personer forhøre, og skjøndt Resultatet var, at Pibningen kun havde gjældt Skuespillernes og Stykkets Slethed, fik dog adskillige Embedsmænd deres Afsked. Engang blev der pebet ad et af de bedste danske Stykker, hvorpaa en af Skuespillerne gav sig til af alle Kræfter at pibe ad Publikum, hvilket man taalte. Opførelsen af Don Juan blev misbilliget af Kritiken, som fandt Stykket umoralsk. Men nu kommer jeg til den Hævn, vore Løver tog over Wergeland. Det hører til deres fashionable Beskjæftigelser hver Fredag Aften at sove i Theatret, og da det er smukt og bekvemt indrettet, ere Parquetbænkene ret magelige til dette Brug. Men da W.s Stykke „Campbellerne“ første Gang skulde opføres d. 28de Jan. 1838, bleve de vaagne og sluttede en Sammensværgelse med Kosmopoliterne, der modarbeide den nationale Aandsretning. Hele Dagen iforveien havde man indkjøbt Piber; de, der ingen kunde faae, hjalp sig med Nøgler, Klarinetmundstykker o. s. v. Allerede ved Prologen, som i og for sig er et skjønt lyrisk Digt, begyndte Pibningen, der saaledes viste sig som reen
+<pb facs="284.jpg"/>Partidemonstration, og gjentoges efter Stykket med en saa utæskende Raadhed, at Bagler og Birkebener (Wergelands Parti, som især var samlet i Parterret), brøde over Rækværket med Stokke, knyttede Næver, stegte Æbler, tygget Skraa og andre Vaaben, og nu stod det berømte Theaterslag, der fortsattes helt ud paa Gaden og endte med mange blodige Pander og Pibernes totale Nederlag. En af disse, en bekjendt Vaurien, fik saameget „Juling“ (et norsk Udtryk for Prygl), at han i lang Tid humpede om med forslaaet Been og blaat Øie. En detailleret Beskrivelse af denne Aftens komiske og skandaløse Scener udkom i et særegent Skrift med Navngivelse af de virksomste Deltagere. Jeg haaber nu, Du indseer Løvernes Betydning saavel for Theater som Litteratur.
+
+„Jeg mærker idetmindste, at jeg er kommen udenlands. Men har I da slet intet Politi?“
+
+„Jo vel har vi det, men det er liberalt Politi, det viger altid for Overmagten. Desuden morede det sig ved, at „Troppen“ fik Juling. Efter disse Uheld nøies den med at henhøre til vore offentlige Forlystelser samt organisere vort selskabelige Liv ved parfumerede Theklubber efter Forbilledet af det engelske Aristokrati, og for at tilveiebringe et intellektuelt Element, har man vidst at drage Welhaven<footnote>Denne Forf. maa dog ikke have fundet sig tilfreds her, som man seer af hans „Nyere Digte,“ hvor det S. 99 hedder:
+
+„Og Herrerne, hvad vil man vente
+paa deres Vei, der falder trang;
+hvorfra skal de Dressuren hente
+<i>i deres norske Stolegang?</i>
+De tænke vist: det kommer nok,
+og, halvt brutale, halvt generte,
+halvt raae endnu, og halvt blaserte,
+de danne her en selsom Flok!“
+
+Det er vist det eneste Punkt, hvor han og Wergeland have været enige.</footnote> og andre Kosmopoliter ind i disse Cirkler. En af dem hed „Kringla,“ og fik dette aandrige Navn af, at der kun skulde serveres Kringler og The, samt dandses.
+
+<pb facs="285.jpg"/>Theen drikke de dog ikke, men gaae et Par Timer om med fransk Lexicon i Lommen, hvide Handsker og Hatten i Poten, og afstedkomme Ulykker ved deres Ubehjælpsomhed. Naar endelig Sulten og den opreiste Gang piner dem for stærkt, seer man Hat og Handsker forsvinde, og med den oprindelige Vildhed kaste de sig over de Bjørneskinker og Snapse, der holdes parate i andre Værelser, hvor tillige forefindes Borde til at ligge under. Ja Du troer maaskee jeg taler for allegorisk, men Du faaer det nok selv at see.“
+
+Og hvad han sagde, gik virkelig i Opfyldelse. Jeg fik nogle Dage efter en Indbydelse, skreven som det syntes med Menneskehaand, saa jeg ikke anede, hvor jeg kom hen. Men strax ved Ankomsten saae jeg mig omringet af nogle mørke Skikkelser, som maalte mig med en <span lang="fr">air malcontent</span>, og derpaa gik brummende bort. I det samme kom min tidligere Cicerone mig imøde. „Veed Du hvad de tale om?“ sagde han. „Nei saamæn veed jeg ikke.“ „De finde det uartigt mod Selskabet, at Du ikke har taget en forloren Snurbart paa; det var nogle af de ægte Fuldblodsløver, de have alle været i Europa, derfor er Intet dem tilpas her. Nogle gaae med nedhængende Manker, Andre klippe dem tæt af. Hvad synes Du om dem? ere de ikke ret skuffende forløste som Europæere?“
+
+„Men her er jo virkelig ganske net, her er jo Festons af Granbar og et helt Bord med Blomster.“
+
+„Ja, seer Du, disse Skabninger efterligne med en vis Smidighed menneskelige Skikke, jeg troer saagar, nogle have ladet sig dressere nede hos Carstensen. Nu skal jeg vise Dig nogle af vore Løvinder. Der staaer en Fyr forom, der lader som han siger Noget til Frøkenen — thi paa et Løvebal findes kun Fruer og Frøkener — han veed slet ikke, hvor han skal gjøre af det, vi Andre kalde Hænder. Han vil fortælle
+<pb facs="286.jpg"/>hende en amusant Skrøne<footnote>Lystige Indfald.</footnote>, som han dog ikke kan erindre, for her bliver mere „tranquilt.“ Men der er Præsidenten, det er det Exemplar af Arten, som pleier længst at kunne gaae opret; hør, han melder, at Klokken er 6, og Punschen serveret. Det er nu Skik her i alle Selskaber. Siden begynder Dandsen, saa blive de glade, da de hertil kunne hjælpe sig med Benene.“
+
+Ballet var forbi og Damerne sade udenfor og saae paa den opgaaende Sol. Præsidenten havde offret saameget til Bacchus eller denne til ham, at han, som det endog gaaer med mange Mennesker i lignende Tilstand, blev sentimental, og fik det ulykkelige Indfald at ville improvisere. Nogle af hans Kolleger hjalp ham op paa et Bord. Han frembragte enkelte artikulerede Lyd, men snart begyndte han at vakle og famle med Forbenene, og da Bordet var for lille, styrtede han med stor Larm ned og søgte sin Plads derunder. I Faldet tørnede han saa ublidt imod mig, at jeg blev noget tilsmudsket.
+
+„Hvorfor giver De ham ikke Juling?“ spurgte en af de Hosstaaende. Jeg svarede, at jeg fandt det uædelmodigt at benytte mig af Vederpartens Forfatning, men i Grunden syntes det mig underligt som Gjæst at skulle tage sig selv tilrette. Om Eftermiddagen gik jeg lidt ud til en Løkke, hvor jeg hos nogle virkelige Mennesker havde fundet en særdeles venlig Modtagelse, og tilbragt mange behagelige Timer, og hvor man siden for Spøg kaldte mig Daniel, fordi jeg var sluppen levende ud af Løvekulen.
+
+Jeg anvendte nogle Uger paa at sætte mig ind i den norske Litteratur, om hvilken de fleste Danske have en Forestilling, der i høi Grad trænger til Berigtigelse. Nogle troe, at den slet ikke existerer, og til disse synes Bestyrerne af begge
+<pb facs="287.jpg"/>vore offentlige Bibliotheker at høre, da man her neppe finder en eneste Frembringelse af den norske Presse. Andre troe, at den kun er en lille Parcel af den danske Litteratur, de have læst „Dæmringen“ og hørt lidt om den herved fremkaldte Strid, der af den danske Kritik blev aldeles misforstaaet. De ansee Welhaven for et agtbart lille Talent, og Wergeland for en Barbar, en Varulv, der slet ikke kan komme i Betragtning. Sandheden er, at om den norske Litteratur ikke besad Andet, end hvad Wergeland i sine lykkeligste Øieblikke i forskjellige Former har frembragt<footnote>Jeg skal her blot nævne hans sidste Digt: „Den smukke Familie.“,</footnote>, saa maatte man ærbødig tage sin Hat af for den; thi neppe kan nogen anden Litteratur opvise ægtere Geniglimt. Havde han udviklet sig under andre Betingelser, havde det ei været en politisk Troessag, hvad man dømte om hans Digte, var ikke hans Kraft bleven adsplittet ved politiske og mange andre Interesser, og hans mageløs frugtbare Aand sønderslidt af Partistridigheder, — dobbelt ødelæggende, hvor den snævre Kampplads tvinger Lidenskaberne til daglig Rivning — saa vilde han upaatvivlelig været almindelig anerkjendt som en af den nyere Tids genialeste Digtere. Man for ret at vurdere og forstaae den norske Litteratur, maatte man kjende Folkets indre Historie i de sidste Decennier, og om jeg end hertil kunde meddele nogle Bidrag, maa jeg dog for denne Gang indskrænke mig til et Par flygtige Antydninger, idet jeg foreløbig henviser til et lille Skrift, „Upartisk Betragtning af vor Litteratur,“ af en yngre, meget lovende norsk Forf. H. Ø. Blom, som i en særdeles klar og livlig Fremstilling med stor Sikkerhed har opstillet de rette Principer, om end i deres Anvendelse og Udtrykkets Enkeltheder den ungdommelige Varme har ført ham til nogen Ensidighed.
+
+<pb facs="288.jpg"/>Den norske æsthetiske Litteratur repræsenteres af Wergeland og M. Hansen, der i en Del af sine Noveller har løsrevet sig fra den tydske Romanstil og leveret virkelig poetiske Skildringer af norsk Natur og Folkeliv. Han vovede først — som senere Wergeland — at indføre Ord af Folkesproget i Litteraturen (hvilket betegner en selvstændig norsk Litteraturs Begyndelse), og i enkelte Momenter nærmer han sig meget Steen Blicher. Før ham nævnedes som de største norske Poeter Bjerregaard og Schwach, begge af den ældre danske Skole, den første skrev en Nationalsang, nogle Romancer uden Eiendommelighed og nogle Ubetydeligheder i dramatisk Form. Den sidste har sit Navn med større Ret, end de fleste Digtere, og var en ligefrem Afslager af den Rahbekske Aand og Smagsretning. Selv naar han staaer „paa Dovre“ yttrer hans Begeistring over, hvad han kan see og ikke see, sig i følgende Maneer:
+
+</prose>
+
+
+<poetry>
+„Saa svæver Tankeblikket til en Egn
+Af Christians og Drammens Fjorde vædet...
+„Saa flyver Tankeblikket over Hav
+Til Arelstad...
+„Og Blikket gaaer til fjerde Christians Stad...
+Der træng jeg — — ind
+I Syssellivets, Borgersamfunds-Skranken. — —
+„Og endelig sig fæster højvendt Blik
+Paa Dig, du kjære Stad ved Nordhavs Bredder o. s. v.“
+</poetry>
+
+
+<prose>
+
+Gaaer man i Middagsstunden paa Gaden i Christiania, vil man let møde en sortklædt Person, som taler høit og i en afgjørende Tone om Alt, seer vist efter enhver Bagatel, som om han var fortørnet, fægter i Luften eller mod de Forbigaaende med et tyndt Spanskrør, staaer undertiden stille og slaaer Benene overkors, idet han dreier Overkroppen med en halv Vending, — i en meget malerisk Stilling. Naar han taler,
+<pb facs="289.jpg"/>gestikulerer han saa ivrig, at det nok kan hænde, man faaer en alvorlig paa Øret; men det er ikke Andet, end „Kvikhed“, det er en Venskabsyttring, og det Eftertrykkelige i Bevægelsen kommer kun af en urigtig beregnet Distance. Det er det kosmopolitiske Parti's Schiboleth, det er Welhaven. Det er en af disse begunstigede Naturer, som kunne gjøre Meget, der ikke vilde taales af Andre, og som derfor troe at kunne tillade sig Alt; han kan være særdeles interessant i Samtale, men han er lyrisk-lunefuld som en forkjælet Prindsesse, en Følge af, at han i alle litterære Anliggender har været den fornemste Styrke og Tilhold for sit Parti, som han til Gjengjæld tyranniserer. Med ham følger gjerne, ikke ret paa Siden og heller ikke bagefter, en tynd og vaklende Figur, et vandrende Lig, med nedslaaet Blik og Hatten nedtrykt i Øinene. Det er hans <span lang="la">fidus Achates</span>, den anden kosmopolitiske Digter, den „drømmende“ A. Munch, hvis „Ephemerer“ vakte Forhaabninger, der ikke siden ere tilfredsstillede, saa man meer og meer betragter dem blot som Studier efter forskjellige moderne tydske Lyrikere. Han seer ud, som han var flov og fortvivlet over Mangel paa tilstrækkelig Anerkjendelse og derfor har slaaet sig til at redigere et politisk Dagblad, „den Constitutionelle“ (Nella).
+
+Da dette Blad i sin Tid fremgik af den ved „Dæmringen“ vakte Partistrid, og søgte at fortsætte den tidligere europæiske, og <span lang="la">in specie</span> danske, Kulturstrømning paa norsk Grund, var det naturligt, at de Talenter, som ikke havde den dybe Følelse af en ny og begyndende Nationalitet, søgte herhen. Jeg tænker her kun paa belletristiske Talenter; thi de mere abstrakte Videnskaber have i deres Oprindelse en universel eller kosmopolitisk Charakter, og først i deres fortsatte Udvikling kan et nationalt Præg give sig tilkjende. Saaledes udmærkede P. J. Collet sig her i den subjektive Kritik, som ikke slutter sig til noget videnskabeligt System, men hans vittige Parodier over nogle flaue
+<pb facs="290.jpg"/>Digte af Munch maatte trykkes i Morgenbladet, da Munch var priviligeret Nellapoet. Paa samme Tid leverede Ebell en Række i sit Slags ypperlige Feuilletonartikler, lunefulde Skizzer af Folkelivet o. s. v. Begge disse Forfattere vare vel i Stilen kjendelig paavirkede af den „moderne“ Litteratur, der i det Hele har fundet tidligere og stærkere Indgang i Christiania, end hos os; men „den Constitutionelle“ stod i sine første Aargange (1836—40) baade i Dygtighed og Talent ikke lidet over, hvad den samtidig danske Journalistik præsterede.
+
+Welhaven havde oprindelig et net lyrisk Talent, som skjønnes af hans ældste Digte, med Sands for det Musikalske, men tillige et Heiniserende Hang til at være pikant ved en Masse fremmede Ord, der kun gjøre Dictionen broget. Under hans kritiske Felttog mod Wergeland, den deraf følgende Strid og senere Dæmringsstriden, som antog en saa voldsom Charakter, at Wergeland er død, og Welhaven længe har været skaldet, — udartede hans Talent til en smaalig-forstandig Reflexion, der oprindelig var hans Natur imod, som man kan slutte af hans ufordøiede og ufordøielige Afhandling „om de norske Præstsamlingsaander“. „Dæmringen“, en Kritik paa Vers, der forlangte en hel Civilisation uden dens Forudsætninger, og Frugterne af en Civilisation, der ikke existerede, var i Modpartiets Øine „et Nidingsværk“, der fortjente at brandemærkes, og Forfatteren „en Modermorder“, ja man paastaaer, hans Liv, eller idetmindste hans Ryg ofte var i Fare. Men Welhaven havde Uret i at beklage sig derover, da han burde have forudseet saadanne Følger ligesaa sikkert her, som i en af de nyamerikanske Stater, og ikke gjort Regning paa den polemiske Høflighed, som en fuldtudviklet Cultur medfører f. Ex. i Paris.
+
+Ligesom hos Mange Poesien er gaaet op i Embedslivet, saaledes synes den hos W. at gaae op i Conversationslivet,
+<pb facs="291.jpg"/>her forbruger han alle sine poetiske Fonds. Han fortæller norske Sagn og Charaktertræk med en høist livlig Kolorit, men dette gjentager han saa tidt, at naar han engang vil sætte sig ned og gjøre Digte deraf, dunster Poesien bort under hans Hænder; medens han filer og pudser paa sine Vers, synes han selv at være kjed af Stoffet, og Læseren bliver det ikke mindre. I sin sidste Digtesamling (1845) er han aldeles gaaet i Frø og nedsjunken til plat og ideeløs Versfabrikator af Ting, som meget bedre lode sig sige paa Prosa. Hans Ansættelse som Universitetslektor i Philosophi var vistnok et uheldigt Valg, især da der findes flere yngre Studerende, som ikke ere Dilettanter i dette Fag.
+
+Lidt udenfor Byen, tæt ved Kongeboligen, ligger et Huus bygget paa en Klippegrotte. Der boede <w>Wergeland</w>; det var en høi, bredskuldret Mand, hvis smukke og ædle Physiognomi var noget medtaget af Livet. Det er bekjendt, at han i sine Skrifter ikke har skaanet Danmark og de Danske; men den Danske, som besøgte ham, kunde være sikker paa en aaben og hjertelig Modtagelse. Til at skildre denne uhyre frugtbare og virksomme Aand i de mangfoldige Retninger, den med Geniets Lynkraft har gjennemfaret, vilde behøves en tyk Bog. Foruden det kæmpemæssige Misfoster „Skabelsen, Mennesket, Messias“, improviseret i en Feberruus af en 20aarig Phantasi, der nys var berørt af Byron, har han skrevet alvorlige Dramer (7—8), satiriske Farcer (14—16)<footnote>Nogle af dem, f. Ex. „Naggoien“ ere ægte aristophaniske.</footnote>, episke og lyriske Digte, philantropiske Folkeskrifter, politiske Taler<footnote>Han havde herved erholdt en uhyre Popularitet over hele Landet.</footnote> og Opsatser, historiske Arbeider, og redigeret Bladet „Statsborgeren“ (1835—37) i demokratisk Oppositionsaand mod „den Constitutionelle“. Overalt spores idetmindste Glimt af hans uhyre begavede Aand, og i Alt, hvad han under sit Navn har skrevet, aander, trods hans lidenskabelige Patriotisme, en ærlig Velvillie mod den hele
+<pb facs="292.jpg"/>Menneskeslægt. Siful Sifadda, det Navn han, for ei at inddrage sin Fader i sine Trakasserier, antog i polemiske Skrifter, var kun, som han selv sagde „en Alf, der boede i hans Sjæls Skyggeside, hans bedre Jegs Halvbroder“. Rase kunde han og føre Hadets utæmmede Sprog, men til at misunde Nogen havde han selv formegen Aand. Hans Hjerte var i Grunden barnligt og godmodigt, men varmt og pirreligt; Lidenskaberne reiste sig der ligesaa pludselig og heftig som Hvirvelvindene paa de norske Søer, vild og ubændig var han i de unge Aar, og i Strid lignede han ofte et Barn, der er faldet i Vandet, og i sin Fortvivlelse griber efter Alt. I et Digt til hans høitelskede Ungdomsven, den senere bekjendte Daa, læser man:
+
+</prose>
+
+
+<poetry>
+„Men hvis de Tosker mig fordømme,
+Da veed jeg, Ludvig ei vil glemme“ o. s. v.
+</poetry>
+
+
+<prose>
+
+Det Høieste, han har præsteret, er uimodsigelig i lyrisk Poesi. Ossian og Shakspeare havde bragt ham i en kaotisk Gjæring; men aldrig før har man seet en saa uudtømmelig Phantasirigdom og sublim Tankeskjønhed forenet med et saadant Barbari i Smagen, med saamegen Vildhed og Disharmoni i Formen (den han siden i høi Grad beherskede), som i hans ældste Digte („første og anden Ring“). Jeg skal hensætte nogle faa Prøver:
+
+</prose>
+
+
+<poetry>
+<nonum><b>(Stella og Skjalden).</b></nonum>
+„Saa hun loe, da jeg viste
+hende min Elskov, der glimrede gjennem! Graaden,
+lig en Gartner, der rækker
+Glad Herskerinden om Morgnen den første Rose.“
+
+<nonum><b>(Da W. engang blev Overlærer i Kongsberg)</b></nonum>
+„Jeg vil, trods Illums<footnote>En bekjendt slet Bladskriver.</footnote> Hyl,
+(nu skal han blive udødelig her),
+fortælle som vist, at Kongsberg nu har Sølv.“
+</poetry>
+
+
+<prose>
+
+Som man seer af hans høist livlige og lunefulde Memoirer („Hasselnødder“), der bleve forfattede paa Sygeleiet
+<pb facs="293.jpg"/>og tidlig afbrudte ved hans Død, har han i sin første Ungdom lidt en Del af uheldig Forelskelse. En saadan udtaler han i de velklingende Rhythmer:
+
+</prose>
+
+
+<poetry>
+„Ikarus er jeg, hvis svimlende Iid
+          Bølgerne slugte!
 Tumle ei Bølgerne mig? og med Sorrig
-feer jeg jo mit Sicilien svinde!“ ...,,Hey Dig, min Sjæl til Tinden, hvor nylig
+seer jeg jo mit Sicilien svinde!“...
+
+<nonum><b>(Ved Mjøsen)</b></nonum>
+„Hæv Dig, min Sjæl til Tinden, hvor nylig
 Verden Du saae at bølge forbi lig
-Ørnen paa Fjeldet, der undres ved Morgnens glimrende Skyer!
-Eller som Drengen sorglos, der kaster
-Stene i Bakken, morkner Naj adens
-Pande: han veed, at den kommende Vove vil Rynkerne glatte.“
-Midt i Oden til Napoleon indflætter han uden Forbindelse et Kvad om Stella, der i og for sig er fuldt af Skjønheder:,,See min Kvindes Jomfrubarm er en Harpes Sølverkarm, Aarerne med Fomfrublod Harpens Strenges gyldne Flod.“ .. (i samme Ode),,Mennestet skaber fin Skjebne, det modige Blik imod Fremtiden er den glimrende Stay, som bestriver Skjæbnen dens Trin: En Stormvind, som fødes, naar sterke Planer krydse hinanden, Sfjæbnen er.“ (Hymne til,,Se Christianiafjorden, som blaa Violer, stroede
-Frihed.)
+Ørnen paa Fjældet, der undres ved Morgnens
+                    glimrende Skyer!
+Eller som Drengen sorgløs, der kaster
+Stene i Bækken, mørkner Najadens
+Pande: han veed, at den kommende Vove vil
+                    Rynkerne glatte.“
+</poetry>
+
+
+<prose>
+
+Midt i Oden til Napoleon indfletter han uden Forbindelse et Kvad om Stella, der i og for sig er fuldt af Skjønheder:
+
+</prose>
+
+
+<poetry>
+„See min Kvindes Jomfrubarm
+er en Harpes Sølverkarm,
+Aarerne med Jomfrublod
+Harpens Strenges gyldne Flod.“.....
+
+<nonum><b>(i samme Ode)</b></nonum>
+„Mennesket støber sin Skjæbne, det modige
+Blik imod Fremtiden er den
+glimrende Stav, som beskriver
+Skjæbnen dens Trin: En
+Stormvind, som fødes, naar stærke
+Planer krydse hinanden,
+Skjæbnen er.“.....
+
+<nonum><b>(Hymne til Frihed.)</b></nonum>
+„Se Christianiafjorden, som blaa Vidler, strevde
 paa Festdagen op mod Portalen,
-hvor, som Fredsstjold, en Krone er opsat til Pryd!“ ..
+hvor, som Fredskjold, en Krone er opsat til Pryd!“.....
+</poetry>
+
+
+<prose>
+
 til den opvoxende Slægt siger han:
-Saa Du i Kloderne (Guds Hjerter i hans Himmelbarme)
-i É i i;
-<pb facs="294.jpg"/>opfostres — o som et rødmende Hav af unge Sjæle, der fuge fraoven, af hvide Stjernestin, Udødelighedens Øie? (Til Granen),,Bekrandste høie Wtling af Den Gran, som først de Gother gav Den djærve Kunstmodel Til Cathedral paa Cathedral, Til Notredamens Høiportal.“ . ee e mig, naar atter Vaven greies, “): Din udslidte Kjole: jeg gjemmer Stytfet, hvor Hjertet har slaaet.“
-Et andet Sted hedder det:,,En med fem Fingre om fin Elsktes Hals (Hun, hvis Øie feer ud som en ynglende fort Pudel) spørger mig, leende i hendes Øre: Hvem er Stella? Ret min Ven, pral af Elskov! hvert et Kys er at ede en Skinke, hvert Blik i Din Moes Øie er jo at see i en Nat, af Bacchanter fuld og Fakler! .
-(Og senere),,Nu jeg agter, selv den Biom, Jomfrubarmen vugged om, Ikke mere end en Pjalt,“ o. s. v.
-Er det ikke forunderligt at fee en ægte Genius saaledes forspinde i Krudtdampen af phantastiske Fyrverkerier? Denne Genius, om hvem han atter faa skjønt siger, at den,,snart (font det lyster) gaaer til Himmels
-og let er dens Dragt: et fattigt Taareliin;
-Med rytmist Vingeslag opad en Streng. Den stiger blandt Stjernerne som et Barn
-i en fuld Jasminhek.“
-*) Laves til.
-<pb facs="295.jpg"/>Forst efter 1834 begyndte han,,at skjælne mellem Godt og Ondt” og at anvende Kritiken paa sig felv. Forhen havde In⸗ stinktet kun enkelte Gange frembragt en moden poetisk Frugt, (som Faræn:,,Irreparabile tempus“ 1828); nu begyndte han at vise mere Besindighed og Udholdenhed i Compositionen. Hjertets Inderlighed frembrod hyppigst som hurtige Lynglimt, der smeltede sammen med Billedets Kolorit; Phantasi havde han for tyve Poeter; men dens Rigdom og Glands havde hidtil fordunklet hans andre Evner. Nu traadte den oftere i Forbindelse med en varm og naiv Følelse, f. Cr. i,,Jan van Huysums Blomsterstykke,“,,Langeleiken“ (norske Folkesange og Tresnit i Bondedialekt) o. fl. Dette syntes at tiltage under hans Forfølgelsesperiode, da han blev grusomt mishandlet, faa han valgte Løvetanden til Symbolum, og selv enkelte af hans Venner forlode ham. Blandt dem var ogsaa Nordlenderen Daa, et udmærfet dygtigt Hoved, men hvis mathematiske Forstand ikke begreb, hvorledes det fyrige Digterhjerte paa een Gang kunde sverme for en fri Forfatning og for en eminent Personlighed som Carl Johan. Hvor nær W. tog sig dette Brud, seer man af et Digt:
-FJordums Venner. 1842. Med Døden i mit Hjerte Og Smilet om min Mund, Og i mit Blik en Smerte Ifra vor Afskedsstund —
-Kom Ludvig Daa, min Svorne Jeg beder, kom min Ven!
+
+</prose>
+
+
+<poetry>
+Saa Du i Kløverne (Guds Hjerter
+i hans Himmelbarne)
+<pb facs="294.jpg"/>opfostres — o som et rødmende Hav af
+unge Sjæle, der suge fraoven, af hvide
+Stjerneskin, Udødelighedens Die?
+
+<nonum><b>(Til Granen)</b></nonum>
+„Bekrandste høie Ætling af
+Den Gran, som først de Gother gav
+Den djærve Kunstmodel
+Til Cathedral paa Cathedral,
+Til Notredamens Høiportal.“...
+
+<nonum><b>(Stella i Vexelspil.)</b></nonum>
+„Giv mig, naar atter Voven greies<footnote>Laves til.</footnote>,
+Din udslidte Kjole: jeg <w>gjemmer</w> Stykket,
+        hvor Hjertet har slaget.“
+</poetry>
+
+
+<prose>
+
+Et andet Sted hedder det:
+
+</prose>
+
+
+<poetry>
+„En med fem Fingre om sin Elsktes Hals
+(Hun, hvis Øie seer ud som en ynglende sort Pudel)
+spørger mig, leende i hendes Øre:
+        Hvem er Stella?
+Net min Ven, pral af Elskov! hvert et Kys
+er at <w>æde</w> en <w>Skinke</w>, hvert Blik i Din Møes Øie
+er jo at see i en Nat, af Bacchanter
+        fuld og Fakler!“.....
+
+<nonum><b>(Og senere)</b></nonum>
+„Nu jeg agter selv den Blom,
+Jomfrubarmen vugged om,
+Ikke mere end en <w>Pjalt</w>,“ o. s. v.
+</poetry>
+
+
+<prose>
+
+Er det ikke forunderligt at see en ægte Genius saaledes forsvinde i Krudtdampen af phantastiske Fyrværkerier? Denne Genius, om hvem han atter saa skjønt siger, at den
+
+</prose>
+
+
+<poetry>
+„snart (som det lyster) gaaer til Himmels
+og let er dens Dragt: et fattigt Taareflin;
+Med rytmisk Vingeslag opad en Streng
+Den stiger blandt Stjernerne som et Barn
+i en fuld Jasminhæk.“
+</poetry>
+
+
+<prose>
+
+<pb facs="295.jpg"/>Først efter 1834 begyndte han „at skjelne mellem Godt og Ondt“ og at anvende Kritiken paa sig selv. Forhen havde Instinktet kun enkelte Gange frembragt en moden poetisk Frugt, (som Farcen: „<span lang="la">Irreparabile tempus</span>“ 1828); nu begyndte han at vise mere Besindighed og Udholdenhed i Compositionen. Hjertets Inderlighed frembrød hyppigst som hurtige Lynglimt, der smeltede sammen med Billedets Kolorit; Phantasi havde han for tyve Poeter; men dens Rigdom og Glands havde hidtil fordunklet hans andre Evner. Nu traadte den oftere i Forbindelse med en varm og naiv Følelse, f. Ex. i „Jan van Huystums Blomsterstykke,“ „Langeleiken“ (norske Folkesange og Træsnit i Bondedialekt) o. fl. Dette syntes at tiltage under hans Forfølgelsesperiode, da han blev grusomt mishandlet, saa han valgte Løvetanden til Symbolum, og selv enkelte af hans Venner forlod ham. Blandt dem var ogsaa Nordlænderen Daa, et udmærket dygtigt Hoved, men hvis mathematiske Forstand ikke begreb, hvorledes det fyrige Digterhjerte paa een Gang kunde sværme for en fri Forfatning og for en eminent Personlighed som Carl Johan. Hvor nær W. tog sig dette Brud, seer man af et Digt:
+
+</prose>
+
+
+<poetry>
+<nonum><b>Fordums Venner. 1842.</b></nonum>
+Med Døden i mit Hjerte
+Og Smilet om min Mund,
+Og i mit Blik en Smerte
+Ifra vor Afskedstund —
+Kom Ludvig Daa, min Svorne
+Jeg beder, kom min Ven!
 Af tusinde forlorne — —
 Jeg har en Stund igjen!
-Vi os ved Fossen fætte
-Se, hvor den Skummet slaager! Saa Venskab, knust din lette Meneed i Skum forgaaer
-<pb facs="296.jpg"/>Du gyser der ved Faldet, Dau tør ei fee derned, Som om Du hørte Skraldet
-1 Af en forsvoren Eed. i Frist Mod, ved Fosse Birken
+
+Vi os ved Fossen satte
+Se, hvor den Skummet slaaer!
+Saa Venskab, knust din lette
+Meneed i Skum forgaaer.....
+
+<pb facs="296.jpg"/>Du gyser der ved Faldet,
+Du tør ei see derned,
+Som om Du hørte Skraldet
+Af en forsvoren Eed.
+Frisk Mod, ved Fossen Birken
 Sin Fane freidig slaaer.
-Histudenføre Kirken Bort næfte Mode staaer.
-Vi os paa Engen fætte,
-Dens Gras er gult og ført — Ak, just et Liv som dette
-Har jo vort Benffab fort.
-Det stjod som Gras i Vaaren,
-Det visnede som Straa, Og Vindens Flugt har skaaren De Ar, som fad derpaa!
-Vi fætte os paa Tinden
-Hvor Skpen flyer forbi,
-Der seile to for Vinden, Forbundne fast som Vi.
-De splittes i Sekunden — Forbi Fostbroderskab!
+Histudenfore Kirken
+Vort næste Møde staaer.
+
+Vi os paa Engen satte,
+Dens Græs er gult og tørt —
+Ak, just et Liv som dette
+Har jo vort Venskab ført.
+Det skjød som Græs i Vaaren,
+Det visnede som Straa,
+Og Vindens Flugt har skaaren
+De Ar, som sad derpaa!
+
+Vi sætte os paa Tinden
+Hvor Skyen flyer forbi,
+Der seile to for Vinden,
+Forbundne fast som Vi.
+De splittes i Sekunden —
+Forbi Fostbroderskab!
 Saa af vort Venskab vunden
 Vi har hinandens Tab. — — —
-Vi fætte os paa Randen Af vildest Afgrunds Hang,
-Omfapne faa hinanden,
-Og faa — Min Ven, et Sprang! Lad Dybet Tvende gjemme, Som vare engang Eet!
-Vee mig, som ei kan glemme, \'\'Vee dig, som kunde det!
-<pb facs="297.jpg"/>I de senere Aar modnedes hans Aand meer og meer, og hans Produktivitet syntes at tiltage i samme Forhold, som den blev mere organisk. Som historist Skribent (Constitutions⸗ historien, den ypperlige Skildring af Storthingsbanden Ole Haagen⸗ stad, og Ole Bulls Biographi) erhvervede han sig en prosaist Stil, der i digterisk Liv og Skjønhed sjelden er overgaget; lige⸗ ledes vifte sig store Fremskridt i hans poetiske Arbeider,,,Joden“, Dramaet,,Venetianerne“ og det episke Digt,,Lodsen“, som gjennem en Overfylde af blomstrende Phantasi bevarer en ægte lyrisk Grundtone, hvor Geniets forskjellige Kræfter synes at smeelte sammen i mild Harmoni. Dog — jeg haaber en anden Gang igjen at optage disse Themaer, og slutter her med nogle Linier, nedskrevune i Sommer ved Efterretningen om
-Henrik Wergelands Død. En Digtersjel fløi bort fra Jorden, — Lig Nordlys i en Vinternat Den zittred heftig gjennem Norden, Og svandt som Stjerneskuddet brat; Men hele Universets Ild, Hvad Sødt og Skjønt Naturen drømte, J dette Nordlys sammenstrømte, Og dirrede som Strengespil.
+
+Vi sætte os paa Randen
+Af vildest Afgrunds Hang,
+Omfavne saa hinanden,
+Og saa — Min Ven, et Sprang!
+Lad Dybet Tvende gjemme,
+Som vare engang Eet!
+Vee mig, som ei kan glemme,
+Vee dig, som kunde det!
+</poetry>
+
+
+<prose>
+
+<pb facs="297.jpg"/>I de senere Aar modnedes hans Aand meer og meer, og hans Produktivitet syntes at tiltage i samme Forhold, som den blev mere organisk. Som historisk Skribent (Constitutionshistorien, den ypperlige Skildring af Storthingsbonden Ole Haagenstad, og Ole Bulls Biographi) erhvervede han sig en prosaisk Stil, der i digterisk Liv og Skjønhed sjelden er overgaaet; ligeledes viste sig store Fremskridt i hans poetiske Arbeider, „Jøden“, Dramet „Venetianerne“ og det episke Digt „Lodsen“, som gjennem en Overfylde af blomstrende Phantasi bevarer en ægte lyrisk Grundtone, hvor Geniets forskjellige Kræfter synes at smælte sammen i mild Harmoni. Dog — jeg haaber en anden Gang igjen at optage disse Themaer, og slutter her med nogle Linier, nedskrevne i Sommer ved Efterretningen om
+
+</prose>
+
+
+<poetry>
+<nonum><center><b>Henrik Wergelands Død.</b></center></nonum>
+En Digtersjæl fløi bort fra Jorden, —
+Lig Nordlys i en Vinternat
+Den zittred heftig gjennem Norden,
+Og svandt som Stjerneskuddet brat;
+Men hele Universets Ild,
+Hvad Sødt og Skjønt Naturen drømte,
+I dette Nordlys sammenstrømte,
+Og dirrede som Strengespil.
+
 O, hvilke rige Feer vakte
-J Vuggen ham med himmelsk Røst!
-Og hvilfe stolte Gaver lagde
-De om hans Hoved og hans Brøft! De kasted Roser paa hans Mund,
-J Lilliens Vande de ham dobte,
-J Aethrens Stjerneflor ham spobte,
-Og bolstred ham paa Ørnedun.
+I Vuggen ham med himmelsk Røst!
+Og hvilke stolte Gaver lagde
+De om hans Hoved og hans Bryst!
+De kasted Roser paa hans Mund,
+I Lilliens Vande de ham døbte,
+I Æthrens Stjerneslør ham svøbte,
+Og volstred ham paa Ørnedun.
+
 <pb facs="298.jpg"/>Og paa en nordisk Foraarsmorgen
 De Phantasiens Tryllestav
-Og — Himlens Smil ad Jordesørgen: Guldharpen — ham til Eie gav.
+Og — Himlens Smil ad Jordesorgen:
+Guldharpen — ham til Eie gav.
 Hvor klang den tidt forvirret vild!
-Dog — selv, hvad han kun dunkelt hørte, Ja Alt, hvad han med Staven rørte, Fik Glands af Digterhjertets Ild.
-Tidt naar han hævede fin Stemme, Drog den os mægtig med didop, Hvor Storm og Torden have hjemme, J Joklens Sne paa Fjaldets Top. Tidt fang han fan i Norges Dal, At sagte bruste Fosseveldet,
-Og der sprang Roser ud af Fjaldet, Og Granen fik sin Nattergal.
-Engang i Sangens Seiersskjorte Han steg til hine rige Feer, Da aabned Himlen sine Porte, Da kom han ei tilbage meer. J Blomster stod den lyse Strand, Med gyldne Druer, grønne Ranker — Det var hans egne, bedste Tanker, Thi de er evige som han! P. L. Meer.
-<pb facs="299.jpg"/>Digte af C. Hauch.
-</prose>
+Dog — selv, hvad han kun dunkelt hørte,
+Ja Alt, hvad han med Staven rørte,
+Fik Glands af Digterhjertets Ild.
+
+Tidt naar han hævede sin Stemme,
+Drog den os mægtig med didop,
+Hvor Storm og Torden have hjemme,
+I Jøklens Sne paa Fjældets Top.
+Tidt sang hun saa i Norges Dal,
+At sagte bruste Fossevældet,
+Og der sprang Roser ud af Fjældet,
+Og Granen fik sin Nattergal.
+
+Engang i Sangens Seiersskjorte
+Han steg til hine rige Feer,
+Da aabned Himlen sine Porte,
+Da kom han ei tilbage meer.
+I Blomster stod den lyse Strand,
+Med gyldne Druer, grønne Ranker —
+Det var hans egne, bedste Tanker,
+Thi de er evige som han!
+</poetry>
+
+
 </body>
+
+
 </text>
 
 <section author="hauch">
@@ -6072,25 +6316,34 @@ Engang i Sangens Seiersskjorte Han steg til hine rige Feer, Da aabned Himlen sin
 <content>
 
 <text id="hauch20260814153" author="hauch" variant="hauch2019011815">
+
 <head>
+
   <title>Nomadeliv</title>
   <firstline>Aldrig fra de grønne Sale</firstline>
-  <source pages="288-290" facsimile-pages="300-302"/>
+  <source pages="288-290" facsimile-pages="300-302" />
+
 </head>
+
+
+
+
 <body>
+
+
 <poetry>
-<pb facs="299.jpg"/>Aldrig fra de grønne Sale
-Vandrer jeg til Staden ind,
-Skilt fra Høider og fra Dale,
-Skilt fra Lys og letten Vind.
+Aldrig fra de grønne Sale,
+Vandrer jeg i Staden ind,
+Skildt fra Høider og fra Dale,
+Skildt fra Lys og letten Vind:
 
 Aldrig jeg fra Teltet flytter,
 Søger Skjul bag Vold og Muur,
 Aldrig jeg min Frihed bytter
-Mod et skummelt Fangebuur.
+Med et skummelt Fangebuur.
 
-Seer Du Floden hist, der iler,
-Bruser mod det store Hav!
+Seer du Floden hist, der iler,
+Ruller mod det store Hav!
 Dristig den i Solen smiler,
 Skjøndt den vandrer mod sin Grav.
 
@@ -6099,8 +6352,8 @@ Stille kan den aldrig staae,
 Færdes efter gammel Vane
 I det ubekjendte Blaa.
 
-<pb facs="300.jpg"/>Høstens vilde Fugl sig svinger
-Til et sydligt, fremmed Land,
+<pb facs="300.jpg" />Høstens vilde Fugl sig svinger
+Til et sydligt, fremmed Land.
 Aldrig den sin Længsel tvinger,
 Før den naaer den fjerne Strand.
 
@@ -6112,23 +6365,23 @@ Mod den Kyst, den nys forlod.
 Stiernen, Fuglen, Flodens Vande,
 Er da de alene frie!
 Og skal jeg tilbage stande
-Som et Træ paa vilden Sti?
+Som et Træ paa vilden Sti!
 
 Samler Hjorden! Vi vil reise,
 Bryder Teltets Bolig ned!
-Hurtig skal det atter kneise
+Hurtigt skal det atter kneise
 Paa et nyt og ukjendt Sted.
 
 Min Kameel jeg snart belæsser,
-Den skal knæle paa mit Bud,
+Den skal knæle paa mit Bud;
 Hesten, der paa Sletten græsser,
 Bære skal min unge Brud.
 
-Buen klinger, Strængen bæver,
+Buen klinger, Strengen bæver,
 Pilen svigter ei sit Maal,
 Ulven, der sit Bytte kræver,
 Synker for det hvasse Staal.
-<pb facs="301.jpg"/>Slettens Søn ved Faren smiler,
+<pb facs="301.jpg" />Slettens Søn ved Faren smiler,
 Deilig er hans ranke Mø;
 Frem hun som Gazellen iler,
 Fanges den, da maa den døe.
@@ -6136,14 +6389,18 @@ Fanges den, da maa den døe.
 Hendes Slør i Luften bølger,
 Blikkets Glands det skjuler ei,
 Vind og Sol og Maane følger
-Paa den ubekjendte Vei.
+Paa den ubetraadte Vei.
 
 Men naar Reisen er til Ende,
 Og naar Teltets Stang er sat,
 Da skal Kjærligheden brænde
 Som et Baal i Steppens Nat.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="hauch20260814154" author="hauch" variant="hauch2005052511">
@@ -6202,17 +6459,24 @@ En aldrig visnende Krands.“
 <content>
 
 <text id="moellerpl20260814155" author="moellerpl">
+
 <head>
+
   <title>Den hellige Hjeronymus</title>
   <firstline>Dengang Hjeronymus var ung, til Rom han emigrerte</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-303.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 304.</picture>
-  </pictures>
-  <source pages="292-293" facsimile-pages="304-305"/>
+  <source pages="292-293" facsimile-pages="304-305" />
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
+
+
 <body>
+
+
 <poetry>
-<pb facs="303.jpg"/>Dengang Hjeronymus var ung, til Rom han emigrerte,
+Dengang Hjeronymus var ung, til Rom han emigrerte,
 De klassiske Forfattere han der med Flid studerte, —
 Dog ei af Hedenskab, men kun for Lærdoms Skat at hitte,
 Han talte haant om Bacchus og om Zeus og Aphrodite.
@@ -6227,7 +6491,7 @@ At hver en klassisk Gud var død, at Tro paa dem var syndig.
 Dog af den salig Gudeflok end Aphrodite leved:
 Hvor skrækkelig hun hævned sig, er os berettet blevet.
 
-<pb facs="304.jpg"/>Han sad en Dag blandt Folket paa Theatrets Marmorbænke,
+<pb facs="304.jpg" />Han sad en Dag blandt Folket paa Theatrets Marmorbænke,
 Og paa et dunkelt Skriftsted hos Sanct Paul han monne tænke.
 Da sprang en Dandserinde frem, en ung og deilig Kvinde,
 Halvnøgen lod for Publikum sin Skjønheds Sol hun skinne.
@@ -6253,25 +6517,36 @@ Han slog sit Bryst med store Steen, saa knap han kunde sandse,
 Dog glemte han den Jomfru ei, som han i Rom saae dandse.
 
 Af Bjergets Snee og Markens Torn han redte sig et Leie,
-Men, naar han nogen laa derpaa, for Kjødet ret at spege, —
+Men, naar han nøgen laa derpaa, for Kjødet ret at spege, —
 Den skjønne Dandserinde kom, og — hvilte ved hans Side:
 Ak, hellige Hjeronymus, hvad du har maatte lide!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814156" author="moellerpl">
+
 <head>
+
   <title>Med en Tegning af Simonsen</title>
   <firstline>Hvo er den Mand, Du skuer her</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-305.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 306.</picture>
-  </pictures>
-  <source pages="294-295" facsimile-pages="306-307"/>
+  <source pages="294-295" facsimile-pages="306-307" />
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
+
+
 <body>
+
+
 <poetry>
-<pb facs="305.jpg"/>Hvo er den Mand, Du skuer her?
+Hvo er den Mand, Du skuer her?
 Mig tykkes, os bekjendt han er.
 Har han sit Navn i stor Bedrift
 Indpræget med en evig Skrift? —
@@ -6284,7 +6559,7 @@ Dybsind, Gemyt og Aandens Ro, —
 En Aand, som er Dig vel bekjendt,
 Og har Dit Venskab vel fortjent,
 
-<pb facs="306.jpg"/>En Aand, der født som Minnesang,
+<pb facs="306.jpg" />En Aand, der født som Minnesang,
 Og atter djærvt som Sværdet klang,
 Naar Ridderen Korsfanen svang, —
 Og streng og kjæk, og varm og mild
@@ -6293,7 +6568,7 @@ I Albrecht Dürers Farvespil.
 En Aand, der grublende og bly
 Brød frem af Nat som Morgengry,
 Som tændte Lysets Straalekjerte
-Ved Gutenberg og Berthold Schwartz,
+Ved Gutenberg og Berthold Schwarz,
 Og som det Land fra Alp til Harz
 Har givet Navn af Jordens Hjerte; —
 En Aand, der rundt om Verden gik
@@ -6307,25 +6582,39 @@ For hvem sig Syd og Nord maa bøie,
 Har som et Glimt sig gjenfødt i
 En Kunstners varme Phantasi!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814157" author="moellerpl">
+
 <head>
+
   <title>Ved en Fest</title>
   <firstline>Der holdes Fest! — hør Jubelskrig og Toner</firstline>
-  <source pages="295-297" facsimile-pages="307-309"/>
+  <source pages="295-297" facsimile-pages="307-309" />
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
+
+
 <body>
+
+
 <poetry>
-<pb facs="306.jpg"/>Der holdes Fest! — hør Jubelskrig og Toner!
+Der holdes Fest! — hør Jubelskrig og Toner!
 Med Glands og Pragt er Salen smykket,
 Et Feepallads er for en Nat opbygget, —
-Jeg blendes, hvor jeg staaer, i Mørket her,
+Jeg blændes, hvor jeg staaer, i Mørket her,
 Fra Vindverne gaaer tusind Straalers Skjær
 Af Kandelabrer og af Lysekroner.
 
-<pb facs="307.jpg"/>Og festlig skummer Druens ædle Blod, —
+<pb facs="307.jpg" />Og festlig skummer Druens ædle Blod, —
 Hør, hvor de synge, støie, hvor de klinke,
 Og holde Taler ved en røget Skinke,
 Og vise — ved et Hurra, Heltemod!
@@ -6357,7 +6646,7 @@ Hvem hele Jordens Kreds er underlagt? —
 Hvad Morgensolen uden Lærketoner,
 Hvad Haven uden Rosers Duft,
 
-<pb facs="308.jpg"/>Hvad uden Stjerneglands den kolde Luft,
+<pb facs="308.jpg" />Hvad uden Stjerneglands den kolde Luft,
 Hvad Skoven uden Løvets grønne Himmel,
 Hvad Havet uden Kystens Blomstervrimmel,
 Hvad Bækken uden smilende Kjærminder,
@@ -6383,7 +6672,11 @@ Og bøie blidt sit Hoved mod mit Øre,
 Og, med et sødt, af Taarer kvalt Farvel,
 Bevinge min til Jorden bundne Sjæl!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814158" author="moellerpl">
@@ -6391,15 +6684,15 @@ Bevinge min til Jorden bundne Sjæl!
   <title>Krandsen</title>
   <firstline>Unge Pige, hvorfor iler du saa heftig frem</firstline>
   <source pages="297-298" facsimile-pages="309-310"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<pb facs="308.jpg"/>Unge Pige, hvorfor iler du saa heftig frem?
+Unge Pige, hvorfor iler du saa heftig frem?
 Venter dig en Elskers Favntag i dit stille Hjem?
 Venter dig en elsket Moder, strakt paa Leiet ned?
 Føre dig til Fest og Jubel dine lette Fjed?
-
-<pb facs="309.jpg"/>Hvorfor strækker du blandt Mængden dine Arme smaa?
+<pb n="298" facs="309.jpg"/>Hvorfor strækker du blandt Mængden dine Arme smaa?
 Er det Brudepyntens Smykker, som du skjærmer saa?
 O, nu seer jeg, hvad du bærer, er en Burbonkrands;
 Og nu veed jeg, hvad der volder dine Øines Glands!
@@ -6433,14 +6726,24 @@ Du skal prøve nu, om Verden fletter dig en Krands.
 </text>
 
 <text id="moellerpl20260814159" author="moellerpl">
+
 <head>
+
   <title>Den første Sanger</title>
   <firstline>Han hørte Nattergalen og Fjeldfossens Fald</firstline>
-  <source pages="299-300" facsimile-pages="311-312"/>
+  <source pages="299-300" facsimile-pages="311-312" />
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
+
+
 <body>
+
+
 <poetry>
-<pb facs="310.jpg"/>Han hørte Nattergalen og Fjeldfossens Fald,
+Han hørte Nattergalen og Fjeldfossens Fald,
 Og spændte Sølverstrenge over Skildpaddens Skal.
 
 Da gik en Klang fra Strengene, saa mægtig, dyb og blød,
@@ -6462,7 +6765,7 @@ Han kvad: „I Stene, bygger mit Slot i Dalens Skjød!“
 Og Stenene sig ordned, og gjorde som han bød.
 
 Han kvad: „I Træer, I vorde til Haver og Alleer,
-Med kølige Løvsale, hvor Solen ei man seer!“
+„Med kølige Løvsale, hvor Solen ei man seer!“
 
 Og alle Træer standsed; de stilled sig i Rad
 Og Kredse, og en Skygge sank ned fra hvert et Blad.
@@ -6471,584 +6774,539 @@ Han kvad: „Hæv dig som Vandspring, du Strøm fra høie Fjeld!“
 I blanke Marmorskaaler da sprang det stærke Væld.
 
 Han kvad igjen: „Ved Porten I vilde Dyr skal staae,
-Som Vagt mod mine Fjender!“ og see, det skeete saa!
+Som Vagt mod mine Fiender!“ og see, det skeete saa!
 
-<pb facs="311.jpg"/>Men dengang Jorden slumred, af Solens Lys forladt,
+<pb facs="311.jpg" />Men dengang Jorden slumred, af Solens Lys forladt,
 Og ensom end han Strengen slog i den stille Nat;
 
 Kom Stjernerne ned til ham, og dandsede i Chor, —
 Og Jorden blev til Himmel, og Himlen blev til Jord!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814160" author="moellerpl">
+
 <head>
+
   <title>Leilighedsdigte</title>
-  <firstline>Leilighedødigte</firstline>
+  <firstline>Der gives Folk, som for Din Skyld har lidt</firstline>
   <source pages="300-303" facsimile-pages="312-315"/>
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
 <body>
+
+
 <poetry>
-Leilighedødigte.
-L
-J Oehlenschlegers Album
-
-CJ
-
-J er gives Folk, som for Din Skyld har lidt
-Heel meget af Musernes Vrede, 2
+<nonum><center><b>I.</b></center></nonum>
+<nonum><center><b>I Oehlenschlägers Album.</b></center></nonum>
+---
+Der gives Folk, som for Din Skyld har lidt
+Heel meget af Musernes Vrede,
 Lig Pharaos Køer de slugte Dig tidt,
-
 Og blev dog ei mere fede.
 
 Men Din Poesi som Nilens Strøm,
-Befrugtede hele Folket. eg
+Befrugtede hele Folket.
 Det vaagned til Rigdom af fattig Drøm
 Ved hvad Din Harpe har tolket.
 
-Ei meer i det store Kanaans Land,,,Daraußen“, foragtes nu Ihdsken:
-Slager Kornet os feil, vi stundom dog kan
-Nu fælge lidt Mand til Tydsken.
+Ei meer i det store Kanaans Land,
+„<span lang="de">Daraußen</span>“, foragtes nu Jydsken:
+Slaaer Kornet os feil, vi stundom dog kan
+Nu sælge lidt Aand til Tydsken.
 
 Men, naar vi samles engang i det Land,
 Hvor det hedder, at Alle er lige,
-
-Vi vidne:,,Vorherre, der var dog som han
+Vi vidne: „Vorherre, der var dog som han
 Ei fleer i det danske Rige!“
-<pb facs="312.jpg"/>II
 
-Da Oehlenschläger blev Æresmedlem i Studenterforeningen.
-
+---
+<pb facs="312.jpg"/><nonum><center><b>II.</b></center></nonum>
+<nonum><center><b>Da Oehlenschläger blev Æresmedlem i Studenterforeningen.</b></center></nonum>
 Der var en yndig Mø,
+Hun laa halvt som i Drømme
+|: Nær salten Østersø. :|
+Stærkt bæved Barmens Høi og Dal
+Og hendes Sind betrængtes
+|: Af Tanker uden Tal. :|
 
-5 Hun laa halvt som i Drømme
-: Ner salten Østerss.
-
-Sterkt beved Barmens Høi og Dal
-Og hendes Sind betrengtes
-
-: Af Tanker uden Tal.
-
-Men Leben stammed føagt
-
-Kun om den Vægt af Lengsler,
-Som var han Hjertet lagt.
-
+Men Læben stummed svagt
+Kun om den Vægt af Længsler,
+|: Som var paa Hjertet lagt. :|
 Og Øiet aabned hun mod Nord,
 Men Sjælen famled efter
-
-: Et klart bevinget Ord.
+|: Et klart bevinget Ord. :|
 
 Da kom en Ungersvend
 Med høi og mandig Pande,
-
-: Med Styrkens Gjord om Lend;
-
+|: Med Styrkens Gjord om Lænd; :|
 Han favnede den unge Mø,
 Og kyssed hendes Læber
+|: Alt ved den blanke Sø. :|
 
-Alt ved den blanke Ss.
-
-Da Tungens Baand blev løft, 3
-Og som de høre Musers
-
-Sig haved hendes Røst;
-
+Da Tungens Baand blev løst,
+Og som de høie Musers
+|: Sig hæved hendes Røst; :|
 Men han, som endte hendes Savn,
 Han sidder her iblandt os,
+|: Og Adam er hans Navn! :|
 
-Og Adam er hans Navn!
-
-Hil dig, Du Me i Nord! —
+Hil dig, Du Mø i Nord! —
 Nu klinger høit Din Stemme.
-<pb facs="313.jpg"/>SEER Aandens Folker. .
-Og han, som Ordets Veld Dig we,
-Som fjerne Aanders Fader,, Skal prises i fin Grav!
+<pb facs="313.jpg"/>|: I Aandens Folkechor. :|
+Og han, som Ordets Væld Dig gav,
+Som fjerne Aanders Fader
+|: Skal prises i sin Grav! :|
 
-III.
-
-En Thevise.
-Pan en Moders Fodfelsdag
-
+---
+<nonum><center><b>III.</b></center></nonum>
+<nonum><center><b>En Thevise.</b></center></nonum>
+<nonum><center><b>Paa en Moders Fødselsdag.</b></center></nonum>
 Hvor hyggelig er Stuen ei,
 Naar Themaskinen snurrer,
-
 Og naar lig Duerne i Mai
-
 Den venlig for os kurrer!
-
 Ret som Maskinen, naar i Sus
 Og Damp paa Bord den blinker,
-Saa er det kjere Fædrehus,
+Saa er det kjære Fædrehus,
 Som tidt os sammen vinker.
 
-Og, hvis J ei ad mig vil lee, —
-Hvor svert det end kan falde,
-
+Og, hvis I ei ad mig vil lee, —
+Hvor svært det end kan falde,
 Jeg vise skal i en Kop The
-
 Et Billed af os Alle.
-
 Den gode The vor Fader er,
-
-Som Navn har Drisken givet.
-
+Som Navn har Drikken givet.
 Og Sukkret er vor Mutter her,
-Som ham forsoder Livet.
+Som ham forsøder Livet.
 
-Men Stoffet med det hvide Skjer,, RR
+Men Stoffet med det hvide Skjær,
 Som begge mildt forbinder,
 Det er de vakkre Børn, som her
-J Kreds man samlet finder;
-<pb facs="314.jpg"/>Hvad fostret blev med Melk engang,
-Maa sagtens bringe Flode:
+I Kreds man samlet finder;
+<pb facs="314.jpg"/>Hvad fostret blev med Mælk engang,
+Maa sagtens bringe Fløde:
 Og vi forene ved vor Sang
-Det Sterke med det Søde.
+Det Stærke med det Søde.
 
 Nu nærer jeg det høie Mod,
-
 At den, som haver Nemme,
-
 Indseer, der laves kan en god
-
 Kop The af os herhjemme.
-
-Jeg, som lod Harpens Strenge flaae, —
+Jeg, som lod Harpens Strenge slaae, —
 Det var dog reent forbandet,
-
 Om Nogen skulde falde paa
-
 At ligne mig med Vandet.
 
 Af denne Undersøgelse
-
-Som Resultat vi fætte:
-
-Alt Kjod i dette Huus er The,
+Som Resultat vi sætte:
+Alt Kjød i dette Huus er The,
 Og for det Andet dette:
-
 At uden Sukker var det dødt
 Med alle Husets Goder,
-
 Og skal vi sige noget Sødt,
 Saa — nævne vi: vor Moder!
 
 Ja, Sukkret fremfor Alt idag,
-Skal holdes høit i Are.
-
+Skal holdes høit i Ære.
 Gid os og Alle til Behag,
-
 Det længe maa florere!
-
-At onske Sukkrets Told fat ned,
+At ønske Sukkrets Told sat ned,
 Ei nytter her i Visen:
-
-Hver Dag dog ved vor Kjarlighed
+Hver Dag dog ved vor Kjærlighed
 Det stige vil i Prisen!
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814161" author="moellerpl">
+
 <head>
+
   <title>Fragmenter af en Roman</title>
-  <firstline>Hvad Jomsruen tenkte</firstline>
+  <firstline>Hvor saligt, i en Sommernat som denne</firstline>
   <source pages="304-313" facsimile-pages="316-325"/>
+
+  <quality>korrektur1,kilde,side</quality>
 </head>
+
+
 <body>
+
+
 <poetry>
-Hvad Jomsruen tenkte.
+<nonum><center><b>Hvad Jomfruen tænkte.</b></center></nonum>
 
 Hvor saligt, i en Sommernat som denne,
-Saa mild og følig hvilende paa Marken,
-Mens tufind klare Stjerner ftille tindre,
-At vandre med den Clskede i Parken!
+Saa mild og kølig hvilende paa Marken,
+Mens tusind klare Stjerner stille tindre,
+At vandre med den Elskede i Parken!
 
 Hvor saligt, i en Sommernat som denne,
-At vandre i en Kreds af fine Kjære,
-Og ved en Moders, ved en Søsters Hjerte
-Den søde Fred at kalde frem og nere!
+At vandre i en Kreds af sine Kjære,
+Og, ved en Moders, ved en Søsters Hjerte
+Den søde Fred at kalde frem og nære!
 
 Hvor saligt, under Løvets milde Susen
-At aande ud i om, fortrolig Tale
-
-Skn Lengsel og fin Glæde og fin Uro,
+At aande ud i øm, fortrolig Tale
+Sin Længsel og sin Glæde og sin Uro,
 Sig hos en ædel, trofast Sjæl husvale:
 
 Men i den skjønne Sommernat kun ene
-
 Jeg stirrer op mod Stjernerne fra Ruden,
 Og ene lytter jeg til Sjælens Stemmer,
 Og ene lægger jeg min Kind til Puden!
 
-Hvad Nidderen fagde.
-Hvi er Du fan bedrøvet,
-Saa tavs og forrigfuld?
-\'\'Hvi skyer Dit Øie Løvet
-Og Vaarens friske Guld?
-<pb facs="316.jpg"/>Hvi lifter sig en Taare
+<nonum><center><b>Hvad Ridderen sagde.</b></center></nonum>
 
-Ned ad Din skjenne Kind?
+Hvi er Du saa bedrøvet,
+Saa tavs og sorrigfuld?
+Hvi skyer Dit Øie Løvet
+Og Vaarens friske Guld?
+<pb n="305" facs="316.jpg"/>Hvi lister sig en Taare
+Ned ad Din skjønne Kind?
 Hvo har vel kunnet saare
-Saa huldt, faa reent et Sind?
+Saa huldt, saa reent et Sind?
 
 Siig, var det Fortids Minder,
 Hvis Bølger væded Dig?
-
-Var det et Haab, som fvinder?
+Var det et Haab, som svinder?
 En Grav, som lukked sig?
-
 Er det en gammel Smertes
-Opvagagnen, som… o tal,
-
+Opvaagnen, som... o tal,
 Er det et skuffet Hjertes
-Unevnelige Kval?
+Unævnelige Kval?
 
 Du tier — o jeg fatter,
-
 Din Sorg har intet Navn,
-Og intet Ord erstætter
-
+Og intet Ord erstatter
 Dit hemmelige Savn.
-
 Ei meer som Barn du drømmer
 Om et elysisk Held,
-
-Og intet Sprog udtommer
-Din Taares tavfe Vald.
+Og intet Sprog udtømmer
+Din Taares tavse Væld.
 
 Og dog — hvis Du blot vilde
-Dig hvile ved mit Brøft,
-
-Maaffee — hvo ved? — en Kilde
-Udsprang for Dig til Trøft, —
+Dig hvile ved mit Bryst,
+Maaskee — hvo ved? — en Kilde
+Udsprang for Dig til Trøst, —
 Som kunde Smerten døve...
-
 O, hvil Din Kind hos mig;
-
 Det er jo kun en Prøve, —
 Maaskee det lindrer Dig!
-<pb facs="317.jpg"/>| Syvad Zomfruen fire
+
+<pb n="306" facs="317.jpg"/><nonum><center><b>Hvad Jomfruen skrev.</b></center></nonum>
+
 Det var en Drøm, den er forbi.
-
+En Drøm saa stor som Himlen rummer,
 Saa salig som en Engels Slummer,
-En sod, en evig Melodi.
-Det var en Drøm, men ingen Tone SEK å
-Er mere fmeltende og om,
-
-Som Wöbletraets Blomsterkrone,
+En sød, en evig Melodi.
+Det var en Drøm, men ingen Tone
+Er mere smeltende og øm,
+Som Æbletræets Blomsterkrone,
 Saa duftende var denne Drøm.
 
 Jeg var et Barn, jeg var som blind,
 Og ingen Fryd og ingen Smerte
 Sig havde vugget i mit Hjerte
-
-Og fat fit Merke paa min Kind.
+Og sat sit Mærke paa min Kind.
 Og ingen Bitterhed og Harme
-Mig havde aabnet Taarens Vald,
+Mig havde aabnet Taarens Væld,
 Men heller ei af hellig Varme
-
 End gjennemglødet var min Sjæl.
 
 Da kom han, o, han var en Mand!
-Og hvisked Toner i mit Øre, i
-Som aldrig før jeg fif at høre,
-Som aldrig meer jeg glemme fan.
-Han gav mig af fir Hjertes Varme,
-
-i Han gav mig af fin rige Aand,
-Han talte kjerlig til mig Arme,
+Og hvisked Toner i mit Øre,
+Som aldrig før jeg fik at høre,
+Som aldrig meer jeg glemme kan.
+Han gav mig af sit Hjertes Varme,
+Han gav mig af sin rige Aand,
+Han talte kjærlig til mig Arme,
 Og trykked bævende min Haand.
 
-Og hver en Lyd og hvert et Ord 2
+Og hver en Lyd og hvert et Ord
 Som Guldvin faldt i klare Skaaler,
 Faldt som de milde Foraarsstraaler
 Ned i den blomstersvangre Jord.
-<pb facs="318.jpg"/>N
-
-Og Elskovs Rosenknopper brode
+<pb n="307" facs="318.jpg"/>Og Elskovs Rosenknopper brøde
 Ustandset af mit Hjerte frem,
-Og, hvor der for var tomt og ode,
+Og, hvor der før var tomt og øde,
 Der bygged jeg for ham et Hjem.
 
-Hvor ofte har jeg pan ham faldt
+Hvor ofte har jeg paa ham kaldt
 I mine Tanker, mine Drømme,
-Med Navne fværmeriske, ømme,
+Med Navne sværmeriske, ømme,
 Han var mit Liv, han var mig Alt!
 Men hvad der høit i Hjertet talte
-Jeg at udfige mægted ei,
-
-Hvad Phantasien driftig malte,
-Fandt aldrig over Leben Vei.
+Jeg at udsige mægted ei,
+Hvad Phantasien dristig malte,
+Fandt aldrig over Læben Vei.
 
 Han troed mig af Stolthed blind,
-Og for han havde mig forstaget,
-Han tænkte sig forraadt, forsmaget,
-Og flygted bort med krenket Sind.
-Og jeg, — som vilde Alt ham skjenke,
-Og fulgt ham til en ukjendt O, —
-Og for ham baaret Mag og Lenke,
-Og jeg, som vilde for ham de!
+Og før han havde mig forstaaet,
+Han tænkte sig forraadt, forsmaaet,
+Og flygted bort med krænket Sind.
+Og jeg, — som vilde Alt ham skjænke,
+Og fulgt ham til en ukjendt Ø, —
+Og for ham baaret Nag og Lænke,
+Og jeg, som vilde for ham dø!
 
-—,,O vidste Du, hvad jeg har lidt,
+— „O vidste Du, hvad jeg har lidt,
 O vidste Du, hvormangen Taare
-
 Jeg Dig har offret, og hvor saare
 Jeg sørget, angret har og stridt, —
 Du vilde brede dine Arme,
-
 Du vilde glemme dine Tvivl,
-
 Du vilde naadig Dig forbarme,
+Og skjænke mig igjen dit Smiil!“
 
-Og skjanke mig igjen dit Smiil!”
-<pb facs="319.jpg"/>308 sø. i
-
-O, at min Ild mig gjorde stum,
-
+<pb n="308" facs="319.jpg"/>O, at min Ild mig gjorde stum,
 O, at en Trolddom bandt min Tunge,
 Saa tidt jeg vilde høit udsjunge
-
-Det, hvortil Talen ei har Rum. É
+Det, hvortil Talen ei har Rum.
 Jeg vented ham i Aar og Dage,
-Med føde Længflers Frygt og Lyst —::
-Han fommer aldrig mer tilbage,
+Med søde Længslers Frygt og Lyst —
+Han kommer aldrig meer tilbage,
 Han hører ei engang min Røst!
 
-Hvad Ridderen skrev.
+<nonum><center><b>Hvad Ridderen skrev.</b></center></nonum>
+
 Velsignet være dit Hoved, dit Hjerte, din Haand,
-Velsignet være dit Brev med det rofenrøde Baand,
-Velsignet hvert dit Skrifttræk, faa henaandet, faa let,
+Velsignet være dit Brev med det rosenrøde Baand,
+Velsignet hvert dit Skrifttræk, saa henaandet, saa let,
 Velsignet være den Due, som bragte mig det!
 
-Velsignet være Luften, hvorigjennem den fløt,
-
-Hver Kvist, alle Træer, hver en smilende Hei!
+Velsignet være Luften, hvorigjennem den fløi,
+Hver Kvist, alle Træer, hver en smilende Høi!
 Velsignet være alle de Himlens Fugle smaa,
-
-Som paa fin Flugt fra dig til mig den mødte og sage.
+Som paa sin Flugt fra dig til mig den mødte og saae.
 
 Velsignet være Alt, hvad der hører Dig til,
-
-Dit Pie, din Fod, din Barm og dens glødende ID,
-Hvert Suk og Smil, som aander og straaler i dette Brev,
+Dit Øie, din Fod, din Barm og dens glødende Ild,
+Hvert Suk og Smiil, som aander og straaler i dette Brev,
 Velsignet være hver Taare, som faldt imens du skrev!
 
 Velsignet være din Morgen, din Dag, din Aften og Nat,
-Velsignet være din Kjerligheds den gyldne rige Skat! —
+Velsignet være din Kjærligheds den gyldne rige Skat! —
 Velsignet være dit varme, dit svulmende Blod,
+Velsignet hver en Plet, hvor du sætter din Fod!
 
-Velsignet hver en Plet, hvor du fætter din Fod!
-
-Velsignet være den Time, du beder din Xftenbøn! —
+Velsignet være den Time, du beder din Aftenbøn! —
 Velsignet være det Leie, hvor Du hviler i Løn, —
 Hvor ensom og i Taushed din Sorg du har kvalt:
-
 — Din Søvn og dine Drømme — velsignet være Alt!
-<pb facs="320.jpg"/>Hvad Fuglen fatig.
-Sfjøn Jomfru, som sidder faa lidende
-J Skoven,
+
+<pb n="309" facs="320.jpg"/><nonum><center><b>Hvad Fuglen sang.</b></center></nonum>
+
+Skjøn Jomfru, som sidder saa lidende
+    I Skoven,
 Der kommer en Ridder ridende,
-O tro ham ei!
+    O tro ham ei!
 
 Han kommer saa lystig syngende
-J Skoven,
+    I Skoven,
+Hen over Græsset det gyngende —
+    O tro ham ei!
 
-Hen over Grasset det gyngende —
-O tro ham ei!
-
-Hans Klader ere saa skinnende
-J Skoven,
-
+Hans Klæder ere saa skinnende
+    I Skoven,
 Hans Tanker ere som Vindene —
-O tro ham ei!
+    O tro ham ei!
 
-Hans Sorger er lengst forvundene,
-J Skoven,
-
+Hans Sorger er længst forvundene,
+    I Skoven,
 Nu synger han dem for Lundene:
-O tro ham ei!
+    O tro ham ei!
 
 Hans Ganger den letspringende,
-J Skoven,
-
+    I Skoven,
 Er som hans Tale den klingende,
-O tro ham ei!
+    O tro ham ei!
 
-Sfjøn Jomfru, jeg synes du standser ham,
-J Skoven,
-
+Skjøn Jomfru, jeg synes du standser ham,
+    I Skoven,
 Og med Violer bekrandser ham —
-O tro ham ei!
+    O tro ham ei!
 
 Og glemmer din gamle Kjærlighed,
-J Skoven,
-<pb facs="321.jpg"/>Og haaber pan Ridderens Vrlighed:
+    I Skoven,
+<pb n="310" facs="321.jpg"/>Og haaber paa Ridderens Ærlighed:
 O tro ham ei!
 
 Jeg troed, at du den gjemte heel,
-J Skoven,
+    I Skoven.
+Han ønsker vist knap en Femtedel —
+    O tro ham ei!
 
-Han ensker vist knap en Femtedel —
-
-O tro ham ei!
-
-Han ei dit Hjerte begjerede,
-SQ Skoven.
-
+Han ei dit Hjerte begjærede,
+    I Skoven.
 Du ham det selv forærede,
-O tro ham ei!
+    O tro ham ei!
 
 Naar Sol igjen kommer skinnende,
-J Stkoven,
-
+    I Skoven,
 Da flyver han bort som Vindene:
-O tro ham ei!
+    O tro ham ei!
 
-Hvad Ridderen tenkte.
+<nonum><center><b>Hvad Ridderen tænkte.</b></center></nonum>
+
 Jeg elsker, men — forelsket er jeg ikke,
 Jeg bryder ei i høie Toner ud,
 Men jeg er glad og rolig som en Gud,
 Naar hun omstraaler mig med sine Blikke.
 
+Vi mødes tidt, skjult for profane Blikke,
+Men dem, som os belured, blev til Nar,
 Og i mit Hjerte hende Troskab har
-Jeg lovet, men for lovet er jeg ikke.
+Jeg lovet, men forlovet er jeg ikke.
 
-Jeg 22 8 Røstnather dete,
+Jeg kunde Mundens Rosenecter drikke,
+Og salig har jeg hvilt ved hendes Bryst, —
+Men jeg har ikke hendes Læbe kyst, —
+Hun elsker mig, skjøndt hun forstaaer mig ikke.
 
-Men jeg har ikke hendes Læbe fy —
-Hun elsker mig, skiøndt ure bete
-
-en
-<pb facs="322.jpg"/>Jeg lyder hendes Bud til Punkt og Prikke,
+<pb n="311" facs="322.jpg"/>Jeg lyder hendes Bud til Punkt og Prikke,
 Beundrer hendes Hjertes Poesi,
 Dog — om en fortsat Sjæleharmoni
 Jeg tvivler, men fortvivlet er jeg ikke.
 
 Hun holder smukt paa gode gamle Skikke,
-Skjøndt hendes Aand har ikke der fit Hjem;
+Skjøndt hendes Aand har ikke der sit Hjem;
 Maaskee for mig hun vilde trodset dem —
-Jeg onsked det, — forlanger det dog ikke
+Jeg ønsked det, — forlanger det dog ikke
 
-Og naar der stager i hendes Flammeblikke
+Og naar der staaer i hendes Flammeblikke
 Et Ønske — naar hun til den fulde Barm
-Mig knuger fast, da er jeg ogsag varm,
-Jeg onsker — men jeg siger det dog ikke!
-Forlovelse.
+Mig knuger fast, da er jeg ogsaa varm,
+Jeg ønsker — men jeg siger det dog ikke!
 
-Du mig spørger, kjereste Veninde,
+<nonum><center><b>Forlovelse.</b></center></nonum>
 
+Du mig spørger, kjæreste Veninde,
 Hvorfor jeg vor tause Pagt vil ei
-
 Give hen til Pris for alle Vinde;
-
-Det er kun af Kjarlighed til dig.
+Det er kun af Kjærlighed til dig.
 
 Solen nærer Jordens Liv med Flammen,
-Men kun Straalerne til Jorden nage —
+Men kun Straalerne til Jorden naae —
 Smelted deres Masser synlig sammen,
-O, fan maatte begge jo forgage.
+O, saa maatte begge jo forgaae.
 
-Fra hende.
+<nonum><center><b>Fra hende.</b></center></nonum>
+
 Jeg vilde tidt en Hymne sjunge,
 Men magter ei den Magt at trodse,
-Som kveler Ordet paa min Tunge,
+Som kvæler Ordet paa min Tunge,
 Og gjør mig til en lille Tosse.
-Det er naar jeg i Kredsen sidder
-Af min skikkelige Frender,
+    Det er naar jeg i Kredsen sidder
+Af min skikkelige Frænder,
 Og ei jeg profanere gidder,
-Den Ild, som mig paa Leben brænder.
-<pb facs="323.jpg"/>Da e jeg paa Nattergalen,
-Som gjemmer fine Melodier 9 .
-Til Merket hviler over Dalen,
+Den Ild, som mig paa Læben brænder.
+<pb n="312" facs="323.jpg"/>    Da tænker jeg paa Nattergalen,
+Som gjemmer sine Melodier
+Til Mørket hviler over Dalen,
 Og Menneskenes Tummel tier.
-Dog, jeg er ikke Nattergalen, —
+    Dog, jeg er ikke Nattergalen, —
 Jeg hører kun dens Stemme klinge,
 Naar fra en ensom Krog i Salen
 Din Tankes klare Straaler springe.
-Nei, jeg er kun den tause Stjerne, År 8
-Der tændes, naar Din Stemme lyder;
+    Nei, jeg er kun den tause Stjerne,
+Der tændes, naar <w>Din</w> Stemme lyder;
 Jeg er et Echo i det Fjerne
-Af Tonen, som Dit Bryst udgyder.
+Af Tonen, som <w>Dit</w> Bryst udgyder.
 
-Fra ham.
+<nonum><center><b>Fra ham.</b></center></nonum>
 
 Kom med mig ud i Livets friske Vover,
-Dybt lad os fænfe os deri!
-Fremtiden intet sikkert Held os lover,
-Snart er vor Gladesdrøm forbi.
-Gyd over mig kun al dit Hjertes Varme,
-Vin er ei sod som dette Bad!
-Snart skal man rive dig af mine Arme,
-Snart vil man skille os ad!
+    Dybt lad os sænke os deri!
+    Fremtiden intet sikkert Held os lover,
+    Snart er vor Glædesdrøm forbi.
+    Gyd over mig kun al dit Hjertes Varme, —
+    Vin er ei sød som dette Bad!
+    Snart skal man rive dig af mine Arme,
+    Snart vil man skille os ad!
+Solen sit milde Lys paa Bølgen gyder,
+    Rosen sin Kalk har oplukt,
+    Duftens det tause Offer bly den byder,
+    Ranken rækker os sin Frugt.
+    Trindt sine kvægende Gaver Ceres spreder,
+    Vinker og kalder os til Gjæst.
+    Amor bag Busken hemmelig bereder
+    Krandsen til Nydelsernes Fest.
+<pb n="313" facs="324.jpg"/>Som et Morganasyn paa fjerne Kyster
+    Svinder i Dødens Taagedunst
+    Snart dette Liv, som nu os huldt forlyster, —
+    Bæv ei for Øieblikkets Gunst!
+    Det er en lunefuld Fee; skal det lykkes
+    Hende at fængsle, da hun maa
+    Favnes i Hast og kjækt til Læben trykkes —
+    Kom, lad os prøve derpaa!
+Fly fra dit Fængsel, du frygtsomme Pige,
+    Bøi dig for Øieblikkets Magt!
+    Kom! — hvorfor troer du, gløder vel det rige
+    Liv med al sin underfulde Pragt?
+    Ogsaa for os har jo hele Naturen
+    Smykket sig saa festlig og smukt,
+    Ogsaa for os svulmer Grenen hist paa Muren,
+    Kom! os tilhører jo dens Frugt!
 
-Solen fit milde Lys paa Bølgen gyder,
-Rosen fin Kalk har oplukt,
-Duftens det tause Offer bly den byder,
-Ranken rekker os fin Frugt. 2
-Trindt fine fvægende Gaver Ceres spreder,
-Vinker og kalder os til Gjast. bag
+<nonum><center><b>Slutning.</b></center></nonum>
 
-Amor bag Busken hemmelig. bereder
-
-Krandsen til Nydelsernes Fest.
-<pb facs="324.jpg"/>Som et Morganasyn paa fjerne Kyster
-Svinder i Dødens Taagedunst
-Snart dette Liv, som nu os huldt forlyster, —
-Bab ei for Øieblikkets Gunst!
-Det er en lunefuld Fee; skal det lykkes
-Hende at fængfle, da hun maa
-Favnes i Haft og kjakt til Leben trykkes —
-Kom, lad os prøve derpaa! ”
-Fly fra dit Fængfel, du frygtsomme Pige,
-Boi dig for Øieblikkets Magt!
-Kom! —- hvorfor troer du, gløder vel det rige
-Liv med al fin underfulde Pragt?
-Ogsaa for os har jo hele Naturen
-Smykket sig fan festlig og smukt,
-Ogsaa for os svulmer Grenen hist paa Muren,
-Kom! os tilhører jo dens Frugt!
-
-) Slufning. -
-
-Maanen vandrer enfom over Himlen,
-Iskold, hyllet i fin Straalekrands, —
-Uffe Skinliv, Maffe, som af Solen
-Borger al fit Lys og al fin Glands!
+Maanen vandrer ensom over Himlen,
+Iskold, hyllet i sin Straalekrands, —
+Usle Skinliv, Masse, som af Solen
+Borger al sit Lys og al sin Glands!
 
 Jeg er Maanen, uerfarne Pige,
-
-Som dit Hjerte skjænfed mig, o fly! —
-Naar du troer at fængfle mig for stedse,
-Svinder jeg forredersk bag en Sky.
+Som dit Hjerte skjænked mig, o fly! —
+Naar du troer at fængsle mig for stedse,
+Svinder jeg forrædersk bag en Sky.
 
 Jeg er Maanen. Fly mig! — uden Varme
 Skuer jeg paa Livets Stjernedands:
-
 Og min første Kjærlighed er Solen,
-
 Og af den jeg laaner al min Glands.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814162" author="moellerpl">
+
 <head>
+
   <title>Med en Tegning af Ernst Meyer</title>
   <firstline>Her er Italien, hvor Marken og Lunden</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-325.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 326.</picture>
-  </pictures>
-  <source pages="314" facsimile-pages="326"/>
+  <source pages="314" facsimile-pages="326" />
+
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="325.jpg"/>Her er Italien, hvor Marken og Lunden
+Her er Italien, hvor Marken og Lunden
 Altid er grøn! See, Kurven staaer fuld
 Af Orangernes glødende Guld! —
 Paa Vagt sidder trofast speidende Hunden.
-
 Glutten med Huusnøglen ligger paa Jorden,
 Moder er gaaet — hvorhen? ja hvo veed? —
 Har hun maaskee nu et Stevne med
@@ -7064,214 +7322,347 @@ Har han forblommet maaskee villet sige:
 „Hvert lille Barn jo Sankt Peder er,
 „Thi det har Nøglen til Himmerige!“
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814163" author="moellerpl">
+
 <head>
+
   <title>En Stemning</title>
   <firstline>I Vinduet jeg stod saa tidt</firstline>
-  <source pages="315" facsimile-pages="327"/>
+  <source pages="315" facsimile-pages="327" />
+
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
 <body>
+
+
 <poetry>
-<pb facs="326.jpg"/>I Vinduet jeg stod saa tidt
-Mod Vintrens Ende,
+I Vinduet jeg stod saa tidt
+    Mod Vintrens Ende,
 Og mærked Vaaren Skridt for Skridt
-Tilbagevende;
+    Tilbagevende;
 
 De første Knopper frem jeg saae
-Af Grenen springe,
+    Af Grenen springe,
 Jeg saae en Fugl det første Straa
-Til Reden bringe. —
+    Til Reden bringe. —
 
 O, vaagned jeg som Knoppen hist
-I nyfødt Ynde!
+    I nyfødt Ynde!
 Var jeg den Fugl, hvis Liv paa Kvist
-Skal nu begynde!
+    Skal nu begynde!
 
 Og havde mig en Mage huld
-I Verden funden,
+    I Verden funden,
 Som sværmed glad og yndefuld
-Med mig i Lunden!
+    Med mig i Lunden!
 
 Som fulgte mig med Rosenkind
-Paa lyse Sletter,
+    Paa lyse Sletter,
 Som delte med mig Solens Skin
-Og mørke Nætter.
+    Og mørke Nætter.
 
 Som nød med mig den rige Lyst
-I Sommersalen, —
+    I Sommersalen, —
 Som sagtelig sank ved mit Bryst
-I Vinterdvalen!
+    I Vinterdvalen!
 </poetry>
+
+
 </body>
+
+
 </text>
 
-<text id="moellerpl20260814164" author="moellerpl" ignore-tests="firstline-leading-punctuation">
+<text ignore-tests="firstline-leading-punctuation" id="moellerpl20260814164" author="moellerpl">
+
 <head>
+
   <title>En Baadsmands Fortælling</title>
-  <firstline>,,Den vaade Søvn. — Het for os ude</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-327.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 328.</picture>
-  </pictures>
-  <source pages="317-322" facsimile-pages="329-334"/>
+  <firstline>Det var en rygende Orkan</firstline>
+  <source pages="316-322" facsimile-pages="328-334"/>
+
+  <quality>korrektur1,kilde,side</quality>
+
 </head>
+
+
 <body>
+
+
 <poetry>
-,,Den vaade Søvn. — Het for os ude,,Stak Skroget af en sunken Skude,,J Bandet frem. Vi lægger bi,,,Strar Jollen ud, syv Mand deri,,,At see, om end der Nogen var,,,Som havde Døden holdt for Var. —,,Nu, da vi Skroget entret har,,,Nei, om Forladelse, det var,,Kun Agterdelen af en Kuf —
+„Det var en rygende Orkan“,
+Fortalte Tom, mens alle Mand
+Sig nærmere omkring ham rygged,
+Og Tom betænksom Skraaen tygged, —
+„Det var min første Tur om Cap,
+„Jeg var en Stump paa femten Aar,
+„Dog husker jeg det som igaar,
+„Som sagt — hvor var det nu jeg slap?
 
-Hvad feer vi? ikke sgu et Øie,,,Bart Bord, — dog da jeg lytted nøie,
-; ,,Lo det fra Leet af et Ruf
+„Nu ja! Det var en haard Orkan,
+„Hist i det stille Ocean.
+„Vi havde rebet alle Klude,
+„Og holdt med Møie Vandet ude,
+<pb n="317" facs="328.jpg"/>„Snart Fanden gjorde Alting sort
+„Han tog os et Par Stænger bort,
+„Dog dengang fik han os ei fat, —
+„Paa rum Sø holdt vi ud den Nat.
+„Seer I, det er en farlig Sø,
+„Der ligger saadan Ø ved Ø,
+„Som Ærter i en Suppeskaal,
+„Med lumske Revler af Koraller,
+„Der knække Skrog som Nøddeskaller,
+„Naar man ei rigtig tager Maal.
 
-e
-<pb facs="329.jpg"/>,,Ret som et dæmpet Barneskrig.,,Og jeg derhen. Der laa et Lig —,,En Kvinde ung, men bleg og stiv,,,Udslukt var hver en Gnist af Liv, —,,Med Hungersdødens matte Trak,,,Hun laa, — dog smilende og kjek,,,Ja fast endnu i Døden skj on..,,Et Barn, en halvaars gammel Søn,,Krampagtig knuged hendes Arm,,Op til den kolde, brustne Barm; ,,Men Knagten — ham der Liv var i,,,Snart skreg han op i høien Sky,,,Snart søgte han ved Brystet Ly,,,Stiondt Melk der var ei meer deri,,,End her paa Bagen af min Haand...,,Vi løfte Gutten af hans Baand,,,Af Døden, — som ham Nering gav —,,Hvad mener J, han leved af 2... BR
+„Alt Ende tager i Verden her,
+„Saa gik det og med dette Veir,
+„Lidt klarere i Øst det blev,
+„Vi vidste selv knap, hvor vi drev
+„Nu ja, da Solen lirked op,
+„Det var just Tid at sige Stop, —
+„Hvis vi var gaaet tre Kabeltoug
+„I samme Kurs, vi Alle sov
+„Den vaade Søvn. — Ret for os ude
+„Stak Skroget af en sunken Skude
+„I Vandet frem. Vi lægger bi,
+„Strax Jollen ud, syv Mand deri,
+„At see, om end der Nogen var,
+„Som havde Døden holdt for Nar. —
+„Nu, da vi Skroget entret har,
+„Nei, om Forladelse, det var
+„Kun Agterdelen af en Kuf —
+„Hvad seer vi? ikke sgu et Øie,
+„Bart Bord, — dog da jeg lytted nøie,
+„Lød det fra Leet af et Ruf
+<pb n="318" facs="329.jpg"/>„Ret som et dæmpet Barneskrig.
+„Og jeg derhen. Der laa et Lig —
+„En Kvinde ung, men bleg og stiv,
+„Udslukt var hver en Gnist af Liv, —
+„Med Hungersdødens matte Træk,
+„Hun laa, — dog smilende og kjæk,
+„Ja fast endnu i Døden skjøn.....
 
-Der blev et Høre nu paa Dakket,
-Kaptainens djærve Stemme lød.,,Enhver til Sit!“ han rolig bod,
-Og alle Mand fløi op forskrakket,
+„Et Barn, en halvaars gammel Søn
+„Krampagtig knuged hendes Arm
+„Op til den kolde, brustne Barm;
+„Men Knægten — ham der Liv var i,
+„Snart skreg han op i høien Sky,
+„Snart søgte han ved Brystet Ly,
+„Skjøndt Mælk der var ei meer deri,
+„End her paa Bagen af min Haand.....
+„Vi løfte Gutten af hans Baand,
+„Af Døden, — som ham Næring gav —
+„Hvad mener I, han leved af?.....“
+
+Der blev et Røre nu paa Dækket,
+Kaptainens djærve Stemme lød.
+„Enhver til Sit!“ han rolig bød,
+Og alle Mand fløi op forskrækket,
 Een — vel en Passageer det var, —
-Sad taus og tandte sin Cigar.,,For Pokker,“ brummed Tom faa smaat,,,Naar Passiaren gaaer for godt,,,Man ta'er ei Tiden ret i Agt —,,Nu! — Resten fager J naste Vagt.“
+Sad taus og tændte sin Cigar.
+„For Pokker,“ brummed Tom saa smaat,
+„Naar Passiaren gaaer for godt,
+„Man ta'er ei Tiden ret i Agt —
+„Nu! — Resten faaer I næste Vagt.“
 
-Han letted Lidt pan fin Kalot, 5
-(Hans Haar var tyndt og noget graat) ER
-<pb facs="330.jpg"/>En Stund han som i Drømme fad,
-Maaskee fin Aftenbon han bad.
+Han letted lidt paa sin Kalot,
+(Hans Haar var tyndt og noget graat) —
+<pb n="319" facs="330.jpg"/>En Stund han som i Drømme sad,
+Maaskee sin Aftenbøn han bad.
 Derpaa, som om en Tanke gik
 Igjennem ham, sit skarpe Blik
-
-Han langskibs over Dakket sendte,
-Mens han sig selv og Skragen vendte.
+Han langskibs over Dækket sendte,
+Mens han sig selv og Skraaen vendte.
 
 Det var en Mainat, stjerneklar,
-
 Saa roligt rundtomkring der var;
-Det syntes stundom næften som
-
+Det syntes stundom næsten som
 At dette Skib med gamle Tom
-
-Flod ene her i Verden om.
-
+Flød ene her i Verden om.
 Der hørtes kun en afbrudt Lyd
-
 Af Vindens Tag i Toug og Spryd;
 Der hørtes kun en enkelt Gang
-
 Fra Bakken en Matros, som sang.
 Der hørtes kun den Melodi,
-
-Som let gaaer Orets Sands forbi,
+Som let gaaer Ørets Sands forbi,
 Som Sjælens Blik magnetisk lukker,
-Saa den i sod Berusthed vugger
-
-Sig drømmende og ubevidft:
-
+Saa den i sød Berusthed vugger
+Sig drømmende og ubevidst:
 Hin Hvislen, monoton og trist,
-
 Af Bølgens Brud mod Skibets Side,
 Mens det — en Dronning lig, der gaaer
 Med diamantomstraalet Haar
-
-Og Slab indsprengt med tusind hvide
-Soløstjerner, — skar for Sidevind
+Og Slæb indsprængt med tusind hvide
+Sølvstjerner, — skar for Sidevind
 Sit lette Spor i Havet ind.
 
 Der gik en Stund. — Da Alt omborde
 Var klart til Natten, Flokken kom
 Tilbage og slog Kreds om Tom,
-<pb facs="331.jpg"/>Hvorpaa igjen han tog tilorde:;; ,,Som sagt, vi løfted. Glutten op 2,,Fra den affjælte Moders Krop — i,,Da saae vi, hvor han Naring fif:,,Et dybt og aabent Dolkestik,,Tat under hendes venstre Bryst —,,Der suged den Vampyr fin Trøst.,,Der havde i fin sidste Nød i,,(Endnu af Saaret Blodet flød),,Hun skjcnket Sønnen Liv af Død,,,Der havde hendes Heltemod,,Ham ladsket med fit Hjerteblod.“,, an al sen sd
+<pb n="320" facs="331.jpg"/>Hvorpaa igjen han tog tilorde:
+„Som sagt, vi løfted Glutten op
+„Fra den afsjælte Moders Krop —
+„Da saae vi, hvor hun Næring fik:
+„Et dybt og aabent Dolkestik
+„Tæt under hendes venstre Bryst —
+„Der suged den Vampyr sin Trøst.
+„Der havde i sin sidste Nød
+„(Endnu af Saaret Blodet flød)
+„Hun skjænket Sønnen Liv af Død,
+„Der havde hendes Heltemod
+„Ham lædsket med sit Hjerteblod.“
 
 Han taug. En dæmpet Mumlen brød
-Paa een Gang frem; rundtom der lod
+Paa een Gang frem; rundtom der lød
 En dyb Forundrings sagte Røst,
 Som tolker Hjertets høieste Lyst, —
 Den stundom du at høre fik,
-
 Naar i Theatret en Replik
-
 Der faldt, saa rig paa Poesi,
-
 At den gik intet Bryst forbi, —
 Eller der hørtes en Musik,
-
 En saa dybt greben Melodi,
-
 At den til Marv og Hjerte gik.
 
-Derpaa saa blev han atter ved:,,Ru, vi begav os da afsted,,Fra det forknuste tomme Skrog.,,Det skiltes ad, strax efter vi,,Var roet fra 'et, — men som,,Kan tenke, begge med vi tog,,,Den Levende som og den Døde.
-<pb facs="332.jpg"/>Bor Doktor strax hen til os foer —,,det var grumme dygtig Mand,,,Dog det gik over hans Forstand,,At vakke Livet atter i,,Den unge Kvindes folde Marv.,,En Hoben kostbart Stadseri,,Hun havde paa, — det toge vi,,Og gjemte smukt som Guttens Arv.,,En Kapsel bar hun i en Kjade,,,Hvad hun og hendes Mand de hedde,,,Det der i Guld indskrevet stod —,,De var af gammelengelsk Blod! —,,Snart Høitidsklokkens Toner lod,,,Og saa med al Honnor og Pragt,,Blev hendes Lig pan Brættet lagt.,,Vor Sfibspræft en Ligpræfen holdt,,,Ak, faa bevægelig og blød, —,,Det ned ad Ryggen lob os koldt,,,Og mange salte Taarer flød,,For Moderen saa from og brav,,,Der Livet for sit Barn hengav.,,Tre Gang syv Kanonskud lod—,,Som om en Officier var død, —,,Saa fit hun da en ærlig: Grav,,Paa Dybet af det stille Hav.“
+Derpaa saa blev han atter ved:
+„Nu, vi begav os da afsted
+„Fra det forknuste tomme Skrog.
+„Det skiltes ad, strax efter vi
+„Var roet fra 'et, — men som I
+„Kan tænke, begge med vi tog,
+„Den Levende som og den Døde.
+<pb n="321" facs="332.jpg"/>„Da vi med Fangsten kom ombord,
+„Vor Doktor strax hen til os foer —
+„Det var grumme dygtig Mand,
+„Dog det gik over hans Forstand
+„At vække Livet atter i
+„Den unge Kvindes kolde Marv.
+„En Hoben kostbart Stadseri
+„Hun havde paa, — det toge vi
+„Og gjemte smukt som Guttens Arv.
+„En Kapsel bar hun i en Kjæde,
+„Hvad hun og hendes Mand de hedde,
+„Det der i Guld indskrevet stod —
+„De var af gammelengelsk Blod! —
 
-— Men Drengen, hvad blev der af 125 —
+„Snart Høitidsklokkens Toner lød,
+„Og saa med al Honnør og Pragt
+„Blev hendes Lig paa Brættet lagt.
+„Vor Skibspræst en Ligpræken holdt,
+„Ak, saa bevægelig og blød, —
+„Det ned ad Ryggen løb os koldt,
+„Og mange salte Taarer flød
+„For Moderen saa from og brav,
+„Der Livet for sit Barn hengav.
+„Tre Gang syv Kanonskud lød,
+„Som om en Officier var død, —
+„Saa fik hun da en ærlig Grav
+„Paa Dybet af det stille Hav.“
 
-å,,Ja hør kun nu, — da han fornam,
-1,,Der. ikte mere
-<pb facs="333.jpg"/>,,Vor Somandskost han tog for god. Fe,,Han kom sig, fan det var en Lyt, — 5,,Tidt har han blundet ved mit Bryst.,,Ham Kongen tog, da vi kom hjem,,,Han blev Kadet, gik Skolen frem,,,Og som en Knos paa sytten Aar,,Han kunde meer end sit Bestik:,,Med Skjerf og Port⸗d'epée han gik,
-; ,,Trekantet Hat paa trende Haar,
+— Men Drengen, hvad blev der af ham? —
 
-*,,Da Krig vi med Franzosen fik.,,Ved Abukir og Trafalgar,,,Med Nelson han i Ilden var
-(Her letted Tom paa sin Kalot),,Og der han teed sig saa godt,,,At man paa Fyhren nok forstod,,,Han havde tidlig lugtet Blod.,,Nu fører han fin egen Brig, —,,Hans Moders Navn i Daab den fik.,,Og nu, godt Folk! vil J som jeg:,,Et Hurra for den Englekvinde,,,Som satte ham saa godt i Vei,,,Gid syvfold Salighed hun vinde!”
+„Ja hør kun nu, — da han fornam,
+„Der vanked ikke mere Blod,
+<pb n="322" facs="333.jpg"/>„Vor Sømandskost han tog for god.
+„Han kom sig, saa det var en Lyst, —
+„Tidt har han blundet ved mit Bryst.
+„Ham Kongen tog, da vi kom hjem,
+„Han blev Kadet, gik Skolen frem,
+„Og som en Knøs paa sytten Aar
+„Han kunde meer end sit Bestik:
+„Med Skjærf og <span lang="fr">Ports-d’épée</span> han gik,
+„Trekantet Hat paa trende Haar,
+„Da Krig vi med Franzosen fik.
+„Ved Abukir og Trafalgar,
+„Med <w>Nelson</w> han i Ilden var
+(Her letted Tom paa sin Kalot)
+„Og der han teed sig saa godt,
+„At man paa Fyren nok forstod,
+„Han havde tidlig lugtet Blod.
+„Nu fører han sin egen Brig, —
+„Hans Moders Navn i Daab den fik.
 
-— Er faa Sistorien forbi?,,Ret strax; thi Sønnen — fjender J..
-— Hvad? —,,Han, saasandt jeg hedder To,,Er vor Kaptain .... ja fee Jer om.,,— Kaptain paa Briggen Cecily.“
+„Og nu, godt Folk! vil I som jeg:
+„Et Hurra for den Englekvinde,
+„Som satte ham saa godt i Vei,
+„Gid syvfold Salighed hun vinde!“
+
+— Er saa Historien forbi?
+
+„Ret strax; thi Sønnen — kjender I ....
+— Hvad? — „Han, saasandt jeg hedder Tom,
+„Er vor Kaptain .... ja see Jer om!..
+„— Kaptain paa Briggen Cecily.“
 </poetry>
+
+
 </body>
+
+
 </text>
 
 <text id="moellerpl20260814165" author="moellerpl">
-<head>
-  <title>Arion</title>
-  <firstline>5 Da ved Gudernes Gunst det helleniske Folk</firstline>
-  <pictures>
-    <picture src="1846-gaea-illustration-334.jpg" type="illustration">Billedtryk i <i>Gæa</i>, 1846, facsimileside 335.</picture>
-  </pictures>
-  <source pages="323-330" facsimile-pages="335-342"/>
-</head>
-<body>
-<poetry>
-5 Da ved Gudernes Gunst det helleniske Folk
-Stad i Kraftens herligste Dage,
 
+<head>
+
+  <title>Arion</title>
+  <firstline>Da ved Gudernes Gunst det helleniske Folk</firstline>
+  <source pages="323-330" facsimile-pages="335-342"/>
+
+  <quality>korrektur1,kilde,side</quality>
+
+</head>
+
+
+<body>
+
+
+<poetry>
+Da ved Gudernes Gunst det helleniske Folk
+Stod i Kraftens herligste Dage,
 Gik som Sol over Landet Arions Ry,
 En Sanger han var uden Mage.
-
-Fra sin Fedreneby med sit modige Bryst
+Fra sin Fædreneby med sit modige Bryst
 Over skummende Bølger han drog,
-
-Og for lyttende Moser pan Hesperiens Kyst
+Og for lyttende Møer paa Hesperiens Kyst
 Sine klingende Strenge han slog.
 
-Sist sig haber et Fjeld mod den svævende Sky,
-ik Og helt op ad dets takkede Side
-
-8 Ligger Huus ved Huus mellem grønnende Træer,
-2 SÅ Syn, 8 af 1 35
-<pb facs="335.jpg"/>Gjennem Sitges 9 gaaer ehen af
+Hist sig hæver et Fjeld mod den svævende Sky,
+Og helt op ad dets takkede Side
+Ligger Huus ved Huus mellem grønnende Træer,
+Mellem Templer af Marmor hvide.
+<pb n="324" facs="335.jpg"/>Gjennem Søilehaller gaaer Echoet af
 Høie Vandsprings trodsige Mod.
-
-Dybt nede ruller det mørke Hav 3
-Og bryder mod Fjældets Fod. ns ØR
-
-eg 1
+Dybt nede ruller det mørke Hav
+Og bryder mod Fjældets Fod.
 
 Det er Cyprias By, det berømte Korinth;
-Foran Slottet blandt sine Drabanter, Rn
+Foran Slottet blandt sine Drabanter,
 Hvor man skuer saa vidt over Hav og Strand,
 Sad den vise Kong Periander, —
-Han fad i fin prægtige Ibenholtsstol,
+Han sad i sin prægtige Ibenholtsstol,
 Ved en skyggefuld Terebinth,
-
 Og stirred i Aftenens rødmende Sol,
 Som belyste det rige Korinth.
 
-Nu han leser:,,Arion, den flygtige Fugl, za
-SGoor han bliver fra Hjemmet længe!
-
-; SÅ Jeg har Lengsel efter hans mandige Sang
-7 8 Til. ed Strenge.
-
-Naar jeg haver den blanke Pokal,
-Hans bevingede Ords dets begeistrende Veld,
-Ja, jeg favner Arion, min Skjald!“
+Nu han taler<footnote type="errata">taler] læser</footnote>: „Arion, den flygtige Fugl, —
+Hvor han bliver fra Hjemmet længe!
+Jeg har Længsel efter hans mandige Sang
+Til Lyrens omsvarende Strenge.
+Jeg savner hans Røst i den dæmrende Kvæld,
+Naar jeg hæver den blanke Pokal,
+Hans bevingede Ords dets begeistrende Væld,
+Ja, jeg savner Arion, min Skjald!“
 
 Hør, da lyder fra Havnen en jublende Larm,
 Og Folket bølger i Masse,
@@ -7279,206 +7670,193 @@ Og iblandt dem skrider Arion stolt
 Op ad den steile Terrasse.
 Høit svinger han Lyren som i en Dands,
 Og synger et festligt Kvad;
-8 Af drevet Guld en Laurberkrands
+Af drevet Guld en Laurbærkrands
 Om hans Pande funklende sad.
-<pb facs="336.jpg"/>Og af Guldfjæder dæbfes hans Hals og Bryst,
+<pb n="325" facs="336.jpg"/>Og af Guldkjæder dækkes hans Hals og Bryst,
 Og hans Arm Guldringe omfatte.
 Men de sorte Haar, som om nylig han steg
 Af et Bad, hang vaade og glatte.
 En Purpurkaabe med gylden Rand
-J Folder omflagred hans Lend.
+I Folder omflagred hans Lænd.
 Men trindt neddrypped det salte Vand
-J n strømmende Draaber fra den.
+I strømmende Draaber fra den.
 
-Huldt melede Kongen:,,Jeg frygted, vor Skjald
+Huldt mælede Kongen: „Jeg frygted, vor Skjald
 Havde glemt os?“ — med bævende Stemme
-Arion fvarer:,,Min høie Drot,
-
-O, hvor kunde Din Maade jeg glemme! ..
-
-Tak skee de evige Guder! .. tilgiv,
-Periander, mit stammende Ord ...
-
+Arion svarer: „Min høie Drot,
+O, hvor kunde Din Naade jeg glemme!...
+Tak skee de evige Guder!... tilgiv,
+Periander, mit stammende Ord...
 Et guddommeligt Under har reddet mit Liv
+Og frelst mig fra Rov og fra Mord!
 
-Og frelsk mig fra Rov og fra Mord!
-
-Nu Kongen:,,velan, erfare jeg vil,
-
-Hvad dit Sind fan selsomt bevæger!
-
-Den eldste og dyreste Cyperviin
-
-Skal perle for dig i mit Bager.
-
+Nu Kongen: „velan, erfare jeg vil,
+Hvad dit Sind saa selsomt bevæger!
+Den ældste og dyreste Cyperviin
+Skal perle for dig i mit Bæger.
 Dit Eventyr nu os, Arion fortæl
-
 Ved Strengenes herlige Klang!“
+Og han tømte paa Stand det forfriskende Væld,
+Greb Plektret, spilled og sang:
 
-Og han tømte paa Stand det forfriskende Veld,
-Greb Plektret, spilled og sang:,,Jeg vandred omkring paa den fremmede Strand,
-Vandt Heder og Gunst hos Mange,
-
+„Jeg vandred omkring paa den fremmede Strand,
+Vandt Hæder og Gunst hos Mange,
 Og Begeistringens Smil og Beundringens Kys
 Jeg erobrede med mine Sange.
-<pb facs="337.jpg"/>Jeg hentede paa den sikeliste D105
-Af Guldet fan rig en Høst, 15
-Og saamangen bly og sortsiet Mø Ki
-Blev driftig og om ved min Hot,,,Fra Kroton jeg gik til det rige Tarent
+<pb n="326" facs="337.jpg"/>Jeg hentede paa den sikeliske Ø
+Af Guldet saa rig en Høst,
+Og saamangen bly og sortøiet Mø
+Blev dristig og øm ved min Røst.
+
+„Fra Kroton jeg gik til det rige Tarent
 Med Dithyrambernes Tone,
-
 Der seirede jeg i en Sangerkamp,
-
 Det var der, jeg vandt denne Krone.
-Da gik jeg ombord, thi en Lengsel mig drog
+Da gik jeg ombord, thi en Længsel mig drog
 Til mit Hjems den blomstrende Kyst, —
 Ak ingen Plet er i Verden dog
+Som Hellas min Fryd og min Lyst.
 
-Som Hellas min Fryd og min Lhst.,,Og Søen gik høit, under Vindens Klo
-Sig mægtig Seilene krummed, 3
+„Og Søen gik høit, under Vindens Klo
+Sig mægtig Seilene krummed,
 Som Ørnevinger ustandset de fløi
-
 Med os hen over Bølgeskummet.
 Skibsfolkene muntred jeg med min Sang,
 De priste mit kunstige Spil,
+Stormfuglene kom, og Delphinerne sprang
+Om Skibet og lytted dertil.
 
-Stormfuglene kom, og Delphinerne AN
-Om Skibet og lytted dertil.,,Men den følgende Nat, for Solen steg frem
-Af den øftlige rødmende Vove,
-Kom i Drømme til mig Apollon, og bod:,,Arion ei længer du sove!“ —
+„Men den følgende Nat, før Solen steg frem
+Af den østlige rødmende Vove,
+Kom i Drømme til mig Apollon, og lød:
+„Arion ei længer du sove!“ —
 Da vaagned jeg, Vee! jeg omringet mig saae,
-En svang alt den blinkende Kniv, — dl 5
-Ohg sagde,,,dit Guld vil vi have, nu maa, 8 5
-Arion, du lade dit Lis (Es: *
-<pb facs="338.jpg"/>3 en got jeg haabede hjem
+En svang alt den blinkende Kniv, —
+Og sagde, „dit Guld vil vi have, nu maa,
+Arion, du lade dit Liv!“
+<pb n="327" facs="338.jpg"/>„Da tænkte jeg paa min Fædrenestad,
+Paa dig, min Drot, og den Ære,
+Fra den fremmede Kyst jeg haabede hjem
+Til det gyldne Hellas at bære.
+Jeg tænkte paa hver en forsvunden Lyst,
+Paa en herlig korinthisk Mø,
+Og min Lyre jeg drog saa fast til mit Bryst,
+Og saae i den dybe Sø.
 
-85 Til det gyldne Hellas at bare.
-
-5 Jeg tænkte pan hver en forsvunden Lyst,
-Pag en herlig korinthisk Mø,
-
-Ogg min Lhre jeg drog fan fast til mit Bryst,
-Og fane i den dybe Sø.,,Og jeg vendte mig til den forraderske Flok:
-
-3 En Bøn J end mig tilstede!
-
+„Og jeg vendte mig til den forræderske Flok:
+En Bøn I end mig tilstede!
 Lad Strengen mig slaae kun en eneste Gang,
-
 Da døer jeg med mere Glæde! —
+Det nægted de ei; — da jeg smykte mig glad
+Med Purpur, Guldkjæder og Krands,
+Og Strengen jeg slog og begyndte mit Kvad,
+Mens Phoebos steg i sin Glands:
 
-É Det nægted de ei; — da jeg smykte mig glad
-Med Purpur, Guldkjader og Krands,
+            „Død, du er skjøn,
+    Naar i Slagbulder Sværdhugget falder,
+    Og med Krandsen som Seierens Løn
+            Du paa Heltene kalder!
 
-Og Strengen jeg slog og begyndte mit Svag
+            Skjøn er du Død,
+    Naar Bedrifter har graanet den Gamle,
+    Og de blomstrende Børn om hans Skjød
+            Sig med Taarer forsamle!
 
-5 SER Phoebos steg i sin Glands:
+            Skjønnere dog
+    Var du, Liv, med de brusende Vinger,
+    Med din Ild, som i Sangerens Sprog
+            Til Olympen sig svinger!
 
-n,,Dod, du er skjøn,
-55 i Slagbulder Sverdhugget falder,
-Og med Krandsen som Seierens Løn
-Du paa Heltene kalder!
+<pb n="328" facs="339.jpg"/>            Skjønnere dog
+    Var du, Liv, paa helleniske Sletter,
+    Naar til Daphnes Hytte jeg drog
+            I ambrosiske Nætter.
 
-Skjøn er du Død,
-Naar Bedrifter har graanet den Gamle,
-Og de blomstrende Børn om hans Skjød
-Sig med Taarer forsamle!
+            Eller i Dands
+    Henad Banen Løberne bruste,
+    Og de seirende Ynglingers Krands
+            Dem om Lokkerne suste!
 
-' Sfjønnere dog
+            Aldrig mig meer
+    Skjænkes Vin af en rødmende Terne,
+    Ingen Lund, ingen Roser — jeg seer
+            Ei fra Dybet en Stjerne!
 
-Var du, Liv, med de brusende Vinger,
-5 Med din Ild, som i Sangerens Sprog
-Til 9 sig
-<pb facs="339.jpg"/>Skjønnere dog 1
+            Herlige Liv!
+    Nu Farvel! snart Jordbæltets Ryster
+    Gjør mig stum, og hans tangkrandste Viv,
+            Amphitrite, mig kryster!
 
-Var du, Liv, paa helleniste Sletter,
+            Phoebos Apol!
+    Naar sin Vellyd Lyren mig nægter,
+    Slyng mit Navn fra dit skinnende Skjold
+            Til de fjerneste Slægter!“
 
-Naar til Daphnes Hytte jeg drog
-J ambrosiske Natter.
-
-Eller i Dands
-Henad Banen Loberne bruste,
-Og de seirende Ynglingers Krands
-Dem om Lokkerne suste!
-
-Aldrig mig meer
-Skjænkes Vin af en rødmende Terne,
-Ingen Lund, ingen Roser — jeg seer
-Ei fra Dybet en Stjerne!
-
-Herlige Liv!
-Nu Farvel! snart Jordbeltets Ryster 2
-Gjor mig stum, og hans tangkrandste Viv,
-Amphitrite, mig kryster!
-
-Phoebos Apol!
-Naar fin Vellyd Lyren mig nægter,
-Slyng mit Navn fra dit stinnende Skjold
-Til de fjerneste Slegter!“,,Og ak, saa stor er Sangens Magt, — jeg bie
-En pludselig Forandring hos Enhver. ei
+„Og ak, saa stor er Sangens Magt, — jeg skued
+En pludselig Forandring hos Enhver.
 Af deres Blik en bedre Flamme lued,
-
 De taug, som om de vilde høre Meer.
-Selv han, som nys mig vildt med Kniven dau,
-Sit Vaaben tankefuld jeg senke feer. i
+Selv han, som nys mig vildt med Kniven trued,
+Sit Vaaben tankefuld jeg sænke seer.
 Min Sjæl Apol alt for min Redning priste,
 Dog atter jeg det svage Haab forliste.
-<pb facs="340.jpg"/>ære fear 50 Sangens Magt.
-2 monne Guden mig en Tanke sende,
-* Nogle vaklede forsagt:
-llig vilde selv mit Liv jeg ende,
 
-og ebe styrte mig med al min Pragt, —
-Den vilde Flok alt fine Hænder haved,
+<pb n="329" facs="340.jpg"/>„De onde Lyster snart tilbagevende,
+Guldtørsten seirer over Sangens Magt.
+Da monne Guden mig en Tanke sende,
+Mens endnu Nogle vaklede forsagt:
+Frivillig vilde selv mit Liv jeg ende,
+I Dybet styrte mig med al min Pragt, —
+Den vilde Flok alt sine Hænder hæved,
+Da sang jeg, saa de gyldne Strenge bæved:
 
-Da fang jeg, fan de gyldne Strenge bæved:,,Nu vil jeg døe! Nsee
+            „Nu vil jeg døe!
+    Gid det skee uden Smerte! — jeg gruer
+    Ei for Charon, naar stygiske Sø
+            Og naar Hades jeg skuer!
 
-Gid det stee uden Smerte! — jeg gruer,
-Ei for Charon, naar stygiske Sø
+            Guld skal han faae,
+    Og min Krands, mine Kjæder de skjønne,
+    Dyre Skatte, saa Ingen man saae
+            Ham saa rigelig lønne!
 
-Og naar Hades jeg skuer!, 1
+            Kalde han skal
+    Paa Homeros, Orpheus og Bion,
+    Og forkynde i Skyggernes Hal,
+            At nu kommer Arion!“
 
-5 Guld skal han fane,
-Og min Krands, mine Kjader de skjønne,
-Dyre Skatte, faa Ingen man saae
-Ham saa rigelig lønne!
-
-Kalde han skal i:
-
-Paa Homeros, Orpheus og Bion,
-80 forkynde i Skyggernes Hal,
-At nu kommer Arion!“,,Da sprang jeg ud, men som min Fod bevørte
-Det fraadbedakte, folde Dødens Bad,
-8 Jeg Larm af boltrende Delfiner hørte,
+„Da sprang jeg ud, men som min Fod berørte
+Det fraadbedækte, kolde Dødens Bad,
+Jeg Larm af boltrende Delfiner hørte,
 Som trindt sig havde flokket ved mit Kvad;
-En mægtig Kraft mig hen ad Dybet forte,
-Paa en af Havets Gangere jeg fad.
-5 Soit Vredesskrig fra Skibet til mig føde, —
+En mægtig Kraft mig hen ad Dybet førte,
+Paa en af Havets Gangere jeg sad.
+Høit Vredesskrig fra Skibet til mig løde, —
+Men for mig laa den lyse Morgenrøde.
 
-vre
-fæ. en for mig laa den lhse eee p 874;
-2 KA: røget 5 — SÅ 85: 7
-25 É * SÅ
-<pb facs="341.jpg"/>,,Min Genius foran flͤi med Guddomsminer,
-— Saa syntes mig, ei veed jeg det forvist —
+<pb n="330" facs="341.jpg"/>„Min Genius foran fløi med Guddomsminer,
+— Saa syntes mig, ei veed jeg det forvist. —
 Den styred de krumryggede Delfiner,
-En sod Musik rundtom mig klang, og hist
+En sød Musik rundtom mig klang, og hist
 Blandt Nymfer og et Tog af Amoriner
+Poseidons gyldne Trefork saaes; — tilsidst
+En Taage lagde sig for mine Blikke, —
+Her staaer jeg blandt Jer — Mere veed jeg ikke.“
 
-Poseidons gyldne Trefork sages; — tilsidst 2
-En Taage lagde sig for mine Blikke, — 5
-Her staaer jeg blandt Jer — Mere veed jeg ikke.“ i
-ö
-
-En hellig Undren greb den hele Skare É
+En hellig Undren greb den hele Skare
 Og Ingen tømte meer Pokalen ud,
-End kasted Solen mildt med Luer klare 1. 1
-Paa Lyrens Guld fit sidste Straalebrud. 3
-Lyksalig han, hvem Guderne bevare! . |
-Hans Blik var Ild, han. tyktes dem en Gud; —
-Men mellem fine Hofmend og Drabanter 3
-Sad tankefuld og taus Kong Periander. SR,,,, É
+End kasted Solen mildt med Luer klare
+Paa Lyrens Guld sit sidste Straalebrud.
+Lyksalig han, hvem Guderne bevare!
+Hans Blik var Ild, han tyktes dem en Gud; —
+Men mellem sine Hofmænd og Drabanter
+Sad tankefuld og taus Kong Periander.
 </poetry>
+
+
 </body>
+
+
 </text>
 
 </content>
