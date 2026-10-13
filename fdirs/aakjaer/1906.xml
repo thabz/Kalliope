@@ -14,6 +14,14 @@
     <picture type="titlepage" src="1906-p1.jpg"><transcription>Jeppe Aakjær / Rugens Sange / og / Andre Digte // Gyldendalske Boghandel / Nordisk Forlag / København og Kristiania / 1906</transcription></picture>
   </pictures>
   <source facsimile="11530803731D_color" facsimile-pages-num="320" facsimile-pages-offset="6">Jeppe Aakjær: <i>Rugens Sange</i>, Gyldendalske Boghandel, Nordisk Forlag, 1906.</source>
+  <source id="niende-udgave">
+    <author id="aakjaer">Jeppe Aakjær</author>
+    <title>Rugens Sange</title>
+    <edition>9. udgave</edition>
+    <place>København</place>
+    <publisher>Gyldendal</publisher>
+    <year>1926</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -23,6 +31,7 @@
   <dates>
     <written>1926-10-12</written>
   </dates>
+  <source in="niende-udgave"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
