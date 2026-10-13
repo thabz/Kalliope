@@ -122,7 +122,18 @@ const formatYearInterval = (startYear, endYear) => {
   return `${startYear} - ${endYear}`;
 };
 
+const formatYearSpan = (date) => {
+  const match = typeof date === 'string'
+    ? date.match(/^(\d{4})[-–](\d{2}|\d{4})$/)
+    : null;
+  return match == null ? null : `${match[1]}–${match[2]}`;
+};
+
 const formatTitleAndYear = (title, date, lang = 'da') => {
+  const yearSpan = formatYearSpan(date);
+  if (yearSpan != null) {
+    return `${title} (${yearSpan})`;
+  }
   const [year, numericYear, , bce] = extractYear(date, null, lang);
   if (numericYear == null) {
     return title;
@@ -154,6 +165,10 @@ const extractYear = (date, unknownYear = 'Ukendt år', lang = 'da') => {
 };
 
 const formattedYear = (date, lang = 'da') => {
+  const yearSpan = formatYearSpan(date);
+  if (yearSpan != null) {
+    return yearSpan;
+  }
   const [formatted, x, y, bce] = extractYear(
     date,
     yearTranslation(lang).unknownYear,

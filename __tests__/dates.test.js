@@ -22,6 +22,11 @@ describe('shared date helpers', () => {
     expect(Dates.formatTitleAndYear('Digte', null)).toBe('Digte');
   });
 
+  it('preserves a work year span in its title', () => {
+    expect(Dates.formatTitleAndYear('Gæa', '1845-47')).toBe('Gæa (1845–47)');
+    expect(Dates.formatTitleAndYear('Gæa', '1845-1847')).toBe('Gæa (1845–1847)');
+  });
+
   it('normalizes timeline dates independently of display formatting', () => {
     expect(Dates.normalizeTimelineDate('ca. 1818-06')).toBe('1818-06-01');
     expect(Dates.normalizeTimelineDate('-0100-02')).toBe('-0100-02-01');

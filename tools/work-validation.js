@@ -471,7 +471,10 @@ const collectPageBreakIssues = (
         `${filename}: pb/@facs must use a numeric JPEG filename: ${facs}`,
       );
     }
-    if (!hasAncestor(pageBreak, 'body')) {
+    const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
+      hasAncestor(pageBreak, 'head') === true &&
+      hasAncestor(pageBreak, 'footnote') === true;
+    if (hasAncestor(pageBreak, 'body') !== true && inHeadingFootnote !== true) {
       issues.push(`${filename}: <pb> must occur inside a text body.`);
     }
   });

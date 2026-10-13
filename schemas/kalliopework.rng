@@ -93,6 +93,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -253,6 +254,7 @@
 
   <define name="picture">
     <element name="picture">
+      <optional><attribute name="primary"><choice><value>true</value><value>false</value></choice></attribute></optional>
       <optional><attribute name="src"><text/></attribute></optional>
       <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
@@ -564,6 +566,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -626,6 +629,13 @@
   <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
+  <define name="blockquote">
+    <element name="blockquote">
+      <optional><attribute name="left"><text/></attribute></optional>
+      <optional><attribute name="right"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>
   <define name="two-columns"><element name="two-columns"><ref name="simpleElement"/></element></define>
   <define name="column"><element name="column"><ref name="simpleElement"/></element></define>

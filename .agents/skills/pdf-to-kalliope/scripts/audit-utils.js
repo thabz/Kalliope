@@ -109,9 +109,12 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
 
 const splitBodyPages = (body, { noteNeutral = false } = {}) => {
   const raw = serializeChildren(body);
+  const bodyBreaks = new Set(stripNotes(raw).match(/<pb\b[^>]*\/>/g) ?? []);
   const serialized = noteNeutral ? raw.replace(
     /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
-    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).join(''),
+    note => (note.match(/<pb\b[^>]*\/>/g) ?? [])
+      .filter(pageBreak => bodyBreaks.has(pageBreak) === false)
+      .join(''),
   ) : raw;
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
@@ -206,7 +209,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page ?? row.facsimile}`;
+const inventoryKey = row => `${row.text_id}:${row.facsimile ?? row.printed_page}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });
@@ -251,7 +254,7 @@ const auditPageInventory = ({ xml, inventory }) => {
       issues.push({ rule: 'missing-xml-page', key });
       continue;
     }
-    for (const field of ['facsimile', 'first_line', 'last_line', 'expected_transition']) {
+    for (const field of ['printed_page', 'facsimile', 'first_line', 'last_line', 'expected_transition']) {
       if ((expected[field] ?? null) !== (found[field] ?? null)) {
         issues.push({
           rule: `mismatched-${field.replaceAll('_', '-')}`,

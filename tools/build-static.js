@@ -826,7 +826,9 @@ const handle_work = async (work) => {
           }
           const linktitle =
             extractTitle(head, 'linktitle') || title || toctitle;
-          const breadcrumb = { title: titleText(linktitle), id: sectionId };
+          const breadcrumbtitle =
+            extractTitle(head, 'breadcrumbtitle') ?? linktitle;
+          const breadcrumb = { title: titleText(breadcrumbtitle), id: sectionId };
           const subtoc = await handle_section(
             getChildByTagName(part, 'content'),
             resolve_prev_next,

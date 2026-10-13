@@ -8,6 +8,7 @@ const child = (node, name) => children(node, name)[0] ?? null;
 const printedPagesValid = pages => {
   if (pages == null || pages.trim() === '') return false;
   const trimmed = pages.trim();
+  if (trimmed === '[upagineret]') return true;
   if (trimmed.startsWith('[') !== trimmed.endsWith(']')) return false;
   const unwrapped = trimmed.startsWith('[') ? trimmed.slice(1, -1) : trimmed;
   return parsePageInterval(unwrapped) != null;

@@ -80,6 +80,10 @@ const parseBody = body => {
   };
 
   lines.forEach(line => {
+    // Printed omission lines are not verses or stanza boundaries.
+    if (/^\s*<nonum>\s*[—–](?:\s*[—–])+\s*<\/nonum>\s*$/u.test(line)) {
+      return;
+    }
     if (isStanzaDivider(line)) {
       finishStanza();
       return;

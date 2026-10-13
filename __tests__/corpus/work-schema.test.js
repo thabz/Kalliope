@@ -21,6 +21,12 @@ describe('kalliopework RELAX NG schema', () => {
 
   const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
 
+  it('accepts documented quotation margins', () => {
+    expect(() => validate(poetryWork(
+      '<blockquote left="10%" right="0">Citat med <i>kursiv</i>.</blockquote>',
+    ))).not.toThrow();
+  });
+
   it('validates structured sources, repeated people and legacy sources', () => {
     for (const source of [
       '<source><title>Digte</title></source>',

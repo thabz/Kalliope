@@ -10,6 +10,16 @@ const lineTexts = html => htmlToXml(html, collected).map(([line]) => line);
 
 describe('helpers', () => {
   describe('htmlToXml', () => {
+    it.each(['right', 'center'])('keeps <%s> in a footnote from aligning the prose paragraph', tag => {
+      const html = `grebes han ogsaa stærkt<footnote>En note. <${tag}>W.</${tag}></footnote>.`;
+      expect(htmlToXml(html, collected)).toEqual([
+        [html, { num: 1, html: true }],
+      ]);
+      expect(htmlToXml(`<${tag}>W.</${tag}>`, collected)).toEqual([
+        ['W.', { num: 1, [tag]: true }],
+      ]);
+    });
+
     it('removes inline XML comments', () => {
       expect(lineTexts('Foraaret <!-- section title -->')).toEqual([
         'Foraaret',

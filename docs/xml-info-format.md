@@ -73,8 +73,8 @@ Landekoder, som buildet accepterer i dag:
 `un` bruges som en praktisk "uden fast landegruppe"-gruppe og sorteres efter danske regler.
 
 Nationaliteter skal findes i flagopslaget i `common/flags.js`. Det understøtter
-`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`,
-`ch`, `at` og `pt`. Fx bevarer Runeberg sin gruppering under »andre«:
+`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`, `is`,
+`ch`, `at`, `pt` og `cz`. Fx bevarer Runeberg sin gruppering under »andre«:
 
 ```xml
 <person id="runeberg" country="un" nationality="fi" lang="sv" type="poet">
@@ -95,6 +95,8 @@ Sprogkoder, som buildet accepterer i dag:
 - `fa`
 - `es`
 - `nl`
+- `is`
+- `cs`
 - `un`
 - `it`
 

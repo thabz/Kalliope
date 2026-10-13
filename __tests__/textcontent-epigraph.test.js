@@ -37,6 +37,16 @@ describe('epigraph rendering', () => {
     expect(html).not.toContain('blockquote');
   });
 
+  it('keeps an indented prose quotation in the document flow', () => {
+    const html = renderToStaticMarkup(<TextInline contentHtml={htmlToXml(
+      '<blockquote left="10%" right="0">Et langt citat.</blockquote>Efter citatet.',
+      collected, false,
+    )} />);
+    expect(html).toContain('position:relative');
+    expect(html).not.toContain('position:absolute');
+    expect(html).toContain('</blockquote>Efter citatet.');
+  });
+
   it('renders a section epigraph in mixed content', () => {
     const html = renderToStaticMarkup(
       <TextContent contentHtml={htmlToXml(
