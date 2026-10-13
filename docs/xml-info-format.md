@@ -126,6 +126,8 @@ Understøttede felter:
 - `<firstname>`: fornavn(e) eller forled.
 - `<lastname>`: efternavn eller hovednavn.
 - `<fullname>`: fuldt navn, hvis det ikke bare skal konstrueres af fornavn + efternavn.
+  Udelad feltet, når det er identisk med det viste navn; korpustesten kontrollerer
+  dette efter normalisering af Unicode og mellemrum.
 - `<sortname>`: eksplicit sorteringsnavn.
 - `<pseudonym>`: pseudonym. Kan forekomme flere gange i data.
 - `<christened>`: døbenavn/fødenavn.
