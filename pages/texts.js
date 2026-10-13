@@ -65,13 +65,12 @@ export const groupLines = (lines, type, contentLang) => {
 };
 
 const TextsPage = (props) => {
-  const { lang, poet, type, lines, error } = props;
+  const { lang, poet, type, groups, error } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
   }
 
-  const groups = groupLines(lines, type, poet.lang);
   let sections = [];
   groups.forEach((group) => {
     const items = group.items.map((lines) => {
@@ -150,7 +149,9 @@ TextsPage.getInitialProps = async ({ query: { lang, poetId, type } }) => {
   return {
     lang,
     poet: json.poet,
-    lines: json.lines,
+    // Reuse the loaded order during hydration: collation differs across runtimes.
+    groups:
+      json.error != null ? [] : groupLines(json.lines, type, json.poet.lang),
     error: json.error,
     type,
   };
