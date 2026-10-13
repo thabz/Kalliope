@@ -842,6 +842,9 @@ Attributterne har forskellig betydning:
   `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
   facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
 
+Et sideskift i en titel- eller undertitelfodnote markeres også med `<pb>`
+inde i fodnoten. Fodnotens sideskift er uafhængigt af brødtekstens.
+
 `<pb>` placeres præcis før det første transskriberede tegn eller inline-element
 på den nye side. Hvis en sætning, en verslinje eller et ord fortsætter over
 sideskiftet, står markøren inline på det nøjagtige sted:

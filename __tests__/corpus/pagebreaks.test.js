@@ -30,6 +30,15 @@ describe('page-break markup', () => {
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
+  it('allows a source-page transition in a title footnote', () => {
+    const xml = '<kalliopework><workhead><pagebreaks/></workhead><workbody><text><head><title>Digt<footnote>Første side<pb facs="002.jpg"/>Anden side</footnote></title></head><body><poetry>Vers</poetry></body></text></workbody></kalliopework>';
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+    const invalid = xml.replace('<footnote>', '').replace('</footnote>', '');
+    expect(collectPageBreakIssues('work.xml', invalid)).toContain(
+      'work.xml: <pb> must occur inside a text body.',
+    );
+  });
+
   it('requires facs filenames on page breaks in declared works', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

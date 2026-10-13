@@ -226,7 +226,7 @@ const renderXmlString = (inputString) => {
             key={keySeq++}
             style={{
               display: 'block',
-              position: 'absolute',
+              position: 'relative',
               margin: `0 ${right} 0 ${left}`,
             }}>
             {handle_nodes(node.childNodes)}
