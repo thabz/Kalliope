@@ -47,6 +47,9 @@ outputfiler, manglende cache og `--force-reload` udløser et nyt eksportbuild.
   `api_url` og ikke beregne hashstien.
 - `/api/{poet_id}/mentions.json`: henvisninger og oversættelser.
 
+I tekst-JSON angiver `blocks[].type` bloktypen: `poetry`, `prose` eller
+`epigraph`. `epigraph` bruges til litterære mottoer.
+
 De eksisterende ressourcer er applikationsendpoints. Kun de felter og relationer,
 der er beskrevet i v1-schemaet og datasættets README, er en stabil
 datasætkontrakt.

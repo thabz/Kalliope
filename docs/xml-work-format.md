@@ -11,7 +11,7 @@ prosa, noter, kilder, faksimiler, varianter, henvisninger og billeder.
 
 Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
 `<workhead>`, `<workbody>`, `<text>`, `<section>`, `<head>`, `<content>`,
-`<body>`, `<poetry>`, `<prose>`, `<quote>` og `<subwork>` samt deres slut-tags.
+`<body>`, `<poetry>`, `<prose>`, `<epigraph>` og `<subwork>` samt deres slut-tags.
 Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
 hvert niveau.
 
@@ -775,19 +775,25 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 
 - `<poetry>`: poesi. Linjer nummereres automatisk.
 - `<prose>`: prosa. Renderes som prosalinjer/afsnit.
-- `<quote>`: citatblok.
+- `<epigraph>`: litterært motto eller epigraf.
 
 Blokattributter:
 
-- `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
-- `lang="la"` på `<poetry>`, `<prose>` eller `<quote>`: sprog for hele blokken,
+- `max-width="..."`: valgfri maksimal bredde for især `<epigraph>`.
+- `lang="la"` på `<poetry>`, `<prose>` eller `<epigraph>`: sprog for hele blokken,
   angivet med en ISO 639-1-kode. Markér kun hele blokken, når brødteksten har
   samme sprog. I blandede blokke bruges `<span lang="...">` på de fremmedsprogede
   tekststykker. En note på et andet sprog end blokken kan tilsvarende have
   en `<span lang="...">` omkring sin tekst.
 
-`<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
-Brug kun `max-width`, når et langt citat skal begrænses yderligere.
+`<epigraph>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
+Brug kun `max-width`, når et langt motto skal begrænses yderligere.
+
+Et `<epigraph>` markeres efter sin funktion som motto og må stå før, mellem
+eller efter tekstens øvrige blokke, også foran en intern scene eller sang.
+Et citat er ikke i sig selv et motto. Indlejrede digte og verscitater bruger
+`<poetry>`, mens prosacitater bruger `<prose>`. Skift mellem disse bloktyper
+inden for samme `<body>`, når prosaen indeholder vers.
 
 Eksempel:
 
@@ -802,9 +808,9 @@ Anden verslinje
 
 Tredje verslinje
   </poetry>
-  <quote max-width="70%">
-Et citat
-  </quote>
+  <epigraph max-width="70%">
+Et motto
+  </epigraph>
 </body>
 ```
 

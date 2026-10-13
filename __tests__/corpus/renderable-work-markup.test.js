@@ -26,7 +26,7 @@ describe('renderable work corpus markup', () => {
       ].includes(work.filename)
     )) {
       const document = parseWorkXml(content);
-      const blocks = getElementsByTagNames(document, ['poetry', 'prose', 'quote']);
+      const blocks = getElementsByTagNames(document, ['poetry', 'prose', 'epigraph']);
 
       for (const block of blocks) {
         const bodyXml = safeGetInnerXML(block).replace(/<xref\b[^>]*\/>/gu, '');

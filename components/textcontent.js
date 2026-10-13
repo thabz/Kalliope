@@ -198,6 +198,22 @@ const renderXmlString = (inputString) => {
             {handle_nodes(node.childNodes)}
           </center>
         );
+      case 'poetry':
+        return (
+          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}>
+            {handle_nodes(node.childNodes)}
+          </div>
+        );
+      case 'epigraph':
+        return (
+          <div
+            key={keySeq++}
+            className="blockquote small"
+            lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{ maxWidth: node.hasAttribute('max-width') ? node.getAttribute('max-width') : '70%' }}>
+            {handle_nodes(node.childNodes)}
+          </div>
+        );
       case 'blockquote':
         const left = node.hasAttribute('left')
           ? node.getAttribute('left')
@@ -535,20 +551,20 @@ const TextContent = (props) => {
     }
   });
 
-  let quoteClassName = '';
-  if (type === 'quote') {
-    quoteClassName = 'blockquote';
+  let epigraphClassName = '';
+  if (type === 'epigraph') {
+    epigraphClassName = 'blockquote';
   }
 
   let smallClassName = '';
-  if (type === 'quote' || options.fontSize === 'small') {
+  if (type === 'epigraph' || options.fontSize === 'small') {
     smallClassName = ' small';
   }
 
   return (
     <div
       style={style}
-      className={[className, smallClassName, quoteClassName]
+      className={[className, smallClassName, epigraphClassName]
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}

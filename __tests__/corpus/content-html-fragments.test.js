@@ -25,7 +25,7 @@ describe('renderable work corpus fragments', () => {
         const textId = entry.getAttribute('id') ?? '?';
         const head = child(entry, 'head');
         const blocks = children(body).filter(node =>
-          ['poetry', 'prose', 'quote'].includes(node.nodeName));
+          ['poetry', 'prose', 'epigraph'].includes(node.nodeName));
         const headings = children(head).filter(node =>
           ['title', 'subtitle', 'suptitle'].includes(node.nodeName));
         const notes = children(child(head, 'notes')).filter(node => node.nodeName === 'note');

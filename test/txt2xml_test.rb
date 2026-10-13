@@ -134,7 +134,7 @@ class Txt2XmlTest < Minitest::Test
     assert_includes output, "  <notes>\n    <note>Tekstnote</note>\n  </notes>"
     assert_includes output, '<source pages="3" facsimile-pages="5"/>'
     assert_includes output, "  <dates>\n    <written>1851</written>\n  </dates>"
-    refute_match(/^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|text|workbody|workhead)(?:[ \t>\/])/m, output)
+    refute_match(/^[ \t]+<\/?(?:body|content|head|poetry|prose|epigraph|section|text|workbody|workhead)(?:[ \t>\/])/m, output)
     refute_includes output, ' />'
 
     Tempfile.create(['txt2xml-output', '.xml']) do |file|
@@ -381,7 +381,7 @@ class Txt2XmlTest < Minitest::Test
       TYPE:prose
 
       Første afsnit
-      TYPE:quote
+      TYPE:epigraph
       Et citat
 
       T:Digt
@@ -395,9 +395,24 @@ class Txt2XmlTest < Minitest::Test
 
     assert_equal %w[digter2026072101 digter2026072102],
                  texts.map { |text| text.attributes['id'] }
-    assert_equal %w[prose quote],
+    assert_equal %w[prose epigraph],
                  REXML::XPath.match(texts[0], 'body/*').map(&:name)
     assert_equal ['poetry'], REXML::XPath.match(texts[1], 'body/*').map(&:name)
+  end
+
+  def test_rejects_the_retired_quote_type_in_header_and_body
+    ['', "TYPE:prose\n\nFørste afsnit\n"].each do |body_prefix|
+      assert_conversion_fails(<<~TEXT, 'FEJL: Ukendt TYPE: quote')
+        KILDE:<i>Prosa</i> 1900
+        DIGTER:digter
+
+        T:Prosatekst
+        #{body_prefix}TYPE:quote
+
+        Et citat
+        SLUT
+      TEXT
+    end
   end
 
   def test_rejects_blank_facsimile_page_count

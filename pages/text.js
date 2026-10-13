@@ -590,18 +590,18 @@ const TextPage = (props) => {
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks
       text.blocks
-        .filter((b) => b.type !== 'quote')
+        .filter((b) => b.type !== 'epigraph')
         .map((b) => b.lines)
         .reduce((result, lines) => {
           return result.concat(lines);
         }, [])
     );
 
-    // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-    const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
+    // Titlen skal indentes hvis første ikke-epigraph block indeholder numre.
+    const firstNonEpigraphBlock = text.blocks.find((b) => b.type !== 'epigraph');
     shouldIndentTitle =
-      firstNoneQuoteBlock != null &&
-      firstNoneQuoteBlock.lines.find((l) => {
+      firstNonEpigraphBlock != null &&
+      firstNonEpigraphBlock.lines.find((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         return lineOptions.displayNum != null || lineOptions.margin != null;
       }) != null;

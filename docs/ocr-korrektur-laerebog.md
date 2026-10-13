@@ -76,10 +76,13 @@ Faksimilen skal være den autoritative kontrolkilde. Kildelinket skal derfor
 pege på en stabil og entydig digital facsimile, så teksten senere kan
 efterprøves samme sted. Se også `docs/kb-digital-links.md` ved KB-links.
 
-### 8. Markér mottoer som citater
+### 8. Markér mottoer efter deres funktion
 
-Mottoer og andre citater skal markeres som citater (`quote`), ikke som
-undertitler. Dokumentets semantiske struktur skal afspejle tekstens funktion.
+Mottoer markeres med `<epigraph>`, også når de står foran en intern scene
+eller afslutter en tekst. Indlejrede digte og verscitater markeres med
+`<poetry>`, og prosacitater med `<prose>`. Citatstatus eller et indrykket
+layout gør ikke i sig selv en blok til et motto. Dokumentets semantiske
+struktur skal afspejle tekstens funktion.
 
 ### 9. Hold strofenumre adskilt fra verslinjerne
 

@@ -686,6 +686,12 @@ Do not deliver a collection of loose poem files.
 
 Include every relevant text in source order.
 
+Use `<epigraph>` only for literary mottoes, including mottoes before internal
+scenes or at the end of a text. Embedded poems and verse quotations use
+`<poetry>`; prose quotations use `<prose>`. Alternate these sibling blocks
+within the same `<body>` when prose contains verse. Quotation status or
+indentation alone does not make a passage an epigraph.
+
 Fill all fields that can be responsibly established from:
 
 - the publication itself
