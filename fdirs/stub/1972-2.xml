@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1972-2" author="stub" status="incomplete" type="poetry" parent="1972">
+<kalliopework id="1972-2" author="stub" status="complete" type="poetry" parent="1972">
 <workhead>
   <title>Digte</title>
   <subtitle>Bind II</subtitle>
@@ -7,8 +7,9 @@
   <breadcrumbtitle>Bd. 2</breadcrumbtitle>
   <year>1972</year>
   <pagebreaks/>
+  <errata status="none"/>
   <notes>
-    <note>Facsimilet mangler trykside 155 i det dokumentariske tillæg. Sidepositionen viser midlertidigt et billede mærket »Mangler«.</note>
+    <note>Kilde: ADL-facsimilet til bind II mangler trykt s. 155 i det dokumentariske tillæg. Sidepositionen 154.jpg viser efter redaktionel beslutning en midlertidig JPG med »Mangler«; billedet gengiver ikke den trykte side. Ingen af de indførte digte berøres.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1972-2-p1.jpg"><transcription>Ambrosius Stubs / Digte // Udgivet med Indledning og Noter af / Erik Kroman // Billedredaktion og Billedtekst ved / Erik Kroman og Volmer Rosenkilde // II // Rosenkilde og Bagger / 1972.</transcription></picture>
@@ -21,6 +22,9 @@
     <publisher>Rosenkilde og Bagger</publisher>
     <year>1972</year>
   </source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-10-13T07:43:54+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -30,7 +34,7 @@
   <title>Vor stoere Falsters Liv</title>
   <firstline>Vor stoere Falsters Liv fandt just i Død sin Vinding</firstline>
   <source pages="9-11"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -127,7 +131,7 @@ En March blev spillet smukt af Falster og de andre,
   <title>Toe Rigers Velfærds Fødsels Dag</title>
   <firstline>Toe Rigers Velfærds Fødsels Dag!</firstline>
   <source pages="14-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -187,7 +191,7 @@ Regieres i lyksalig Stand,
   <title>Stubs Vers over Jens Mahler</title>
   <firstline>Her sover da Dit Støv udi sin Jorde Blee!</firstline>
   <source pages="17"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -213,7 +217,7 @@ Din Siæl foer herlig op Velgiørende Jens Mahler
   <subtitle>i et muntert Selskab hos en Præst</subtitle>
   <firstline>Vi har alle den samme Troe</firstline>
   <source pages="18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -234,7 +238,7 @@ Og ey lystig drikker.
   <title>Chanson à boire</title>
   <firstline>I Dyder bandt min Siæl</firstline>
   <source pages="19"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -260,7 +264,7 @@ I hendes Skaal staar grøn.
   <title>Paaskrift paa en Slet Daase, hvori var got Tobak</title>
   <firstline>Er Daasen ikke rar og Net</firstline>
   <source pages="20"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -276,7 +280,7 @@ Mand dømmer dog saa let.
   <title>Jeg er et Hoved uden Krop</title>
   <firstline>Jeg er et Hoved uden Krop</firstline>
   <source pages="21"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -300,7 +304,7 @@ Er bare Krop foruden Hoved.
   <title>Mand, Mand, Mand</title>
   <firstline>Mand, Mand, Mand</firstline>
   <source pages="22"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -326,7 +330,7 @@ Giør Hovmod Tiden lang.
   <title>Impromtu</title>
   <firstline>Vel født er vel en Trøst</firstline>
   <source pages="23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -350,7 +354,7 @@ Som gav den Første først.
   <title>Jeg staar paa mine Fødder</title>
   <firstline>Jeg staar paa mine Fødder</firstline>
   <source pages="25"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -367,7 +371,7 @@ Du pille vil de Kierne.
   <title>Indskrift paa Stentavle i Verninge Kirke over Ambrosius Stubs Svoger Pastor Schyth, d. 7. Januar 1756</title>
   <firstline>Du levende dødelige</firstline>
   <source pages="26-27"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -412,7 +416,7 @@ Du pille vil de Kierne.
   <title>Ansøgning til Stiftamtmand G. F. Holstein 5. Juni 1756</title>
   <firstline>HøyVelbaarne</firstline>
   <source pages="28-29"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -479,7 +483,7 @@ Sit Kiøn, sin Stand til Ziir, sit Fædre-Land til Nytte;
   <title>Kantate til Festen paa Odense Gymnasium i Anledning af Frederik d. Femtes Fødselsdag 31. Marts 1757</title>
   <firstline>Her glæde sig, hvad der kan glædes!</firstline>
   <source pages="31-35"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -611,7 +615,7 @@ Den Femte Kong <w>FRIDERICH</w> Konge i Norden!
   <title>Kongen opnaae Snee-hviid Alder</title>
   <firstline>Kongen opnaae Snee-hviid Alder!</firstline>
   <source pages="37"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -645,7 +649,7 @@ Sværdet staae og Kølen skride,
   <title>Da mangel har forvoldt</title>
   <firstline>Da mangel har forvoldt, Clienten ey betaler</firstline>
   <source pages="39"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -678,7 +682,7 @@ At Livets blide Dag har mørcke, bittre Nætter,
   <title>Livet som en Seylads</title>
   <firstline>Hvad vindes ved Verdens vidtløftige Hav!</firstline>
   <source pages="41-42"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -727,7 +731,7 @@ Selv stavner vi mere tilbage end frem.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Saa sortnes vort Levnets den bliideste Dag</firstline>
   <source pages="44"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -761,7 +765,7 @@ Saa stikker vort Beenrad dog Hovedet ud.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Uforsagt hvordan min Lykke</firstline>
   <source pages="45-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -823,7 +827,7 @@ Uforsagt i hvor det gaaer.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Vaare Dage</firstline>
   <source pages="48-49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -882,7 +886,7 @@ Hand min Sorrig kan forlette,
     <note>Cf. <xref bible="bibelsalme73,25"/></note>
   </notes>
   <source pages="51-52"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -932,7 +936,7 @@ Men hvad er Himmel eller Jord
   <title>O! min Siæl du gaaer og vanker</title>
   <firstline>O! min Siæl du gaaer og vanker</firstline>
   <source pages="53-56"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1047,7 +1051,7 @@ Samle hver en vildsom Tanke,
   <title>Hvi render I Verdens Olympiske Gecke</title>
   <firstline>Hvi render I Verdens Olympiske Gecke</firstline>
   <source pages="57"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1071,7 +1075,7 @@ Min Tinding foragter de visnende Blade
   <title>Tanker for an i en Psalme-Bog</title>
   <firstline>Her slaaer jeg ald min Sorg reent hen i Veyr og Vind</firstline>
   <source pages="59"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1095,7 +1099,7 @@ Naar Gud vil høre dig en Gang i Engle-Chor.
     <note>Den trykte første overskriftslinje slutter med kolon.</note>
   </notes>
   <source pages="60"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1133,7 +1137,7 @@ Det eene jeg Synder vil vide paa Jord,
   <title>Før din hellig Lyst blev syndig</title>
   <firstline>Før din hellig Lyst blev syndig</firstline>
   <source pages="62-63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1180,7 +1184,7 @@ Edens Have, Ærens Rige
   <title>Høye Gud! Vort Fald, des verre</title>
   <firstline>Høye Gud! Vort Fald, des verre</firstline>
   <source pages="64-65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1222,7 +1226,7 @@ Hand lod os ey forgaae.
   <title>O du dybe Fald og Vaade</title>
   <firstline>O du dybe Fald og Vaade!</firstline>
   <source pages="66-67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1272,7 +1276,7 @@ I din Synds forfuulnet Søle?
   <subtitle><i>Aria</i></subtitle>
   <firstline>Bedrøvet Verdens Glæde!</firstline>
   <source pages="68-69"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1340,7 +1344,7 @@ Her lyster mig at græde,
   <title>Christi syv Ord paa Korset Luc. 23 Cap. 34 v. Fader! forlad dem; thi de viide ikke hvad de giøre!</title>
   <firstline>I hvad min Talsmand leed</firstline>
   <source pages="71-72"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1391,7 +1395,7 @@ Jeg er dog ey forladt.
   <title>Joh. 19. Cap. 26. V. Qvinde! See, det er din Søn</title>
   <firstline>Var Jesus end paa Korset bragt</firstline>
   <source pages="73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1424,7 +1428,7 @@ I Døden tør min Siæl ey grue;
   <title>Aria over Luc. 23 V. 43: I Dag skal du etc.</title>
   <firstline>Een Røver og til Paradis?</firstline>
   <source pages="74-75"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1471,7 +1475,7 @@ Min Frelser! frels min Siæl fra Satans Røver-Kloe.
   <title>Aria over Matth. 27 V. 46. Min Gud, min</title>
   <firstline>O! høye Raab, hvis lige aldrig hørtes</firstline>
   <source pages="76-77"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1518,7 +1522,7 @@ Skal naae din Gud, og finde Himlen aaben.
   <title>Joh. 19 Cap. 28 V. Mig tørster</title>
   <firstline>Kan Tørstens Brand fortørre den</firstline>
   <source pages="78-79"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1566,7 +1570,7 @@ Saa vederqvæges jeg af dig
   <title>Joh. 19 Cap. 30 V. Det er fuldkommet</title>
   <firstline>De Prophetiers lange Regning</firstline>
   <source pages="80"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1599,7 +1603,7 @@ Saa giør din Lidelse min Herlighed fuldkommen.
   <title>Aria over Luc. 23 V. 46: Fader jeg vil etc.</title>
   <firstline>Lyksalig endte Da! min Frelser sine Dage</firstline>
   <source pages="81"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1633,7 +1637,7 @@ Saa er mit siste Suk paa Jord
   <subtitle>1 Cor. 7 Cap. 31 V.</subtitle>
   <firstline>Ach! hvi har jeg dog saalænge</firstline>
   <source pages="83-85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1704,7 +1708,7 @@ Holde den for Skarn og Skade,
   <subtitle><i>Aria</i></subtitle>
   <firstline>Vel an, endskiønt jeg skal</firstline>
   <source pages="86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1743,7 +1747,7 @@ I Gud og Jesu alle Ting.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Op af Synden</firstline>
   <source pages="88-89"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1789,7 +1793,7 @@ Tvet da Strax dit smittet Klæde
   <subtitle><i>Aria</i></subtitle>
   <firstline>Jesu Kors lad eene blive</firstline>
   <source pages="90"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1825,7 +1829,7 @@ Livsalig, kiær og sød.
   <title>Ach hører Himlens Ord</title>
   <firstline>Kommer dog saa, og lader os gaae i Rette mod Hverandre</firstline>
   <source pages="91-92"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1892,7 +1896,7 @@ Jeg evig reen og hviid.
   <title>Aria over Act. 4 v 12. Der er ey Salighed i nogen anden</title>
   <firstline>Eya! hvor Synden trykker</firstline>
   <source pages="93-95"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1964,7 +1968,7 @@ Saa har jeg Himmerig.
   <title>Aria over Act. 4 V. 12: Der er ey noget andet Navn under etc.</title>
   <firstline>Et varigt Vel er dog engang at finde</firstline>
   <source pages="96-97"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2004,7 +2008,7 @@ Og faae ved Jesu Navn nyt Navn i Æevig Ære.
   <title>Aria over 1. Joh. 2 V. 1 Vi have en Talsmand hos Faderen, Jesum Christum den retfærdige</title>
   <firstline>Giv Sag og Søgsmaal, naar du vil</firstline>
   <source pages="98-99"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2062,7 +2066,7 @@ At jeg kan vinde Himmerig
   <subtitle><i>Aria</i></subtitle>
   <firstline>Vel dig din Sag er god</firstline>
   <source pages="100-103"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2171,7 +2175,7 @@ Og være mig imod,
     <note>Cf. <xref bible="bibellukas02,29"/></note>
   </notes>
   <source pages="104"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2197,7 +2201,7 @@ See der er den i din Haand,
   <subtitle><i>Aria</i></subtitle>
   <firstline>Jeg er fornøyet med min Gud</firstline>
   <source pages="105"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2218,7 +2222,7 @@ Dermed jeg distillerer alt det gamle Frøe,
   <title>Seer det end for dig dunkelt ud</title>
   <firstline>Seer det end for dig dunkelt ud</firstline>
   <source pages="106"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2244,7 +2248,7 @@ Dig meenes intet Ondt af Gud
   <title>Hvad er vor Glæde dog i denne skummelhytte</title>
   <firstline>Hvad er vor Glæde dog i denne skummelhytte</firstline>
   <source pages="107"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2271,7 +2275,7 @@ Saa kand du her paa Jord forsikret stædse være
   <title>Bort Jordisk Sorg! jeg hører Sion siunge</title>
   <firstline>Bort Jordisk Sorg! jeg hører Sion siunge</firstline>
   <source pages="108"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

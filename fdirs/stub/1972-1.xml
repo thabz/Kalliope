@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1972-1" author="stub" status="incomplete" type="poetry" parent="1972">
+<kalliopework id="1972-1" author="stub" status="complete" type="poetry" parent="1972">
 <workhead>
   <title>Digte</title>
   <subtitle>Bind I</subtitle>
@@ -7,6 +7,7 @@
   <breadcrumbtitle>Bd. 1</breadcrumbtitle>
   <year>1972</year>
   <pagebreaks/>
+  <errata status="none"/>
   <pictures>
     <picture type="titlepage" src="1972-1-p1.jpg"><transcription>Ambrosius Stubs / Digte // Udgivet med Indledning og Noter af / Erik Kroman // Billedredaktion og Billedtekst ved / Erik Kroman og Volmer Rosenkilde // I // Rosenkilde og Bagger / 1972.</transcription></picture>
   </pictures>
@@ -18,6 +19,9 @@
     <publisher>Rosenkilde og Bagger</publisher>
     <year>1972</year>
   </source>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-10-13T07:43:54+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -28,7 +32,7 @@
   <subtitle>efter Branden 1728</subtitle>
   <firstline>Borrichii sic alma domus, sic fama virebit</firstline>
   <source pages="75"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -48,7 +52,7 @@ Marmora sic pereunt, perierunt marcida grana,
   <subtitle><i>Aria</i></subtitle>
   <firstline>Gid den faae Skam der slaaer i Dag</firstline>
   <source pages="76-77"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -116,7 +120,7 @@ Dit Velstands Blomster som et Løv,
   <firstline>Paa denne Steen de Naune staa</firstline>
   <source pages="79"/>
   <keywords>gravskrift</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -145,7 +149,7 @@ Saa kand du og med dennem naa
   <title>Brude-Vers til Msr. Johan Klugh, og Jfr. Johanne Ehrenreich, den 1 ste Maj 1733</title>
   <firstline>Endog til Brude-Seng er Middel-Veien sikker</firstline>
   <source pages="81-83"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -218,7 +222,7 @@ Og hver elskværdig Møe saa kiæk en Mand tillige,
   <title>Kiærligheds Alphabet</title>
   <firstline>Min eene kiære! skal end vor Samling ikke skee</firstline>
   <source pages="84"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -244,7 +248,7 @@ Liig, ærlig, kiærlig, vil du meer, saa lev, og Døe med mig.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Oprigtighed, min Fryd</firstline>
   <source pages="85-86"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -285,7 +289,7 @@ Gud veed, hvem jeg kan troe.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Jeg lever jevnt fornøyet foruden stoere Ting</firstline>
   <source pages="87-88"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -331,7 +335,7 @@ Her hviiler en lyksalig, trods Lykkens Laan og Krav.
   </subtitle>
   <firstline>Bestandighed er rar</firstline>
   <source pages="89-90"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -371,7 +375,7 @@ Til den, der elsker mig.
   <title>Trofasthed er den Dyd, jeg søger</title>
   <firstline>Trofasthed er den Dyd, jeg søger</firstline>
   <source pages="91-92"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -425,7 +429,7 @@ Som er og blir en trofast Ven!
   <title>Spring, Hierte! spring forbi de Døre</title>
   <firstline>Spring, Hierte! spring forbi de Døre</firstline>
   <source pages="93-94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -474,7 +478,7 @@ Vær i din Tale ganske ærlig,
   <subtitle><i>Aria</i></subtitle>
   <firstline>Hierte Ven! vi ere lige</firstline>
   <source pages="95-96"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -530,7 +534,7 @@ Den skal findes værd at ære,
     <note>Circe (aka Kirke) er troldkvinden som forvandlede Odysseus' mænd til svin.</note>
   </notes>
   <source pages="97-99"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -609,7 +613,7 @@ For Lysters Tyranni.
   </subtitle>
   <firstline>Jeg har kun Dyden kiær</firstline>
   <source pages="100-101"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -653,7 +657,7 @@ Du est mig eene kiær.
     <note>Antageligt skrevet omkring 1735.</note>
   </notes>
   <source pages="102-104"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -722,7 +726,7 @@ I Dyden hans at være!
   <subtitle>Mel. En ærlig Ven er &amp;c.</subtitle>
   <firstline>See, Skiønhed er en Skat</firstline>
   <source pages="105-107"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -790,7 +794,7 @@ Det blier den beste Brud.
   <title>Skal Dahlens Lillie af Foragt</title>
   <firstline>Skal Dahlens Lillie af Foragt</firstline>
   <source pages="108"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -833,7 +837,7 @@ Din Herlighed omvexles, naar
   </subtitle>
   <firstline>Medgangs Ven har lært at smiile</firstline>
   <source pages="110-111"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -874,7 +878,7 @@ Søde Phoenix! Modgangs Ven
   <subtitle><i>Aria</i></subtitle>
   <firstline>Som en nøysom jeg foragter</firstline>
   <source pages="112-113"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -922,7 +926,7 @@ Skal forøge Liv og Kræfter,
   <subtitle>Under egen Melodie.</subtitle>
   <firstline>Er mit Hiem end ey saa nær</firstline>
   <source pages="114-115"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -964,7 +968,7 @@ Men faae selv, faae selv sin Løn deri.
   <title>Haab ikkuns! Haab kuns! bekymrede Hierte</title>
   <firstline>Haab ikkuns! Haab kuns! bekymrede Hierte</firstline>
   <source pages="116"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1009,7 +1013,7 @@ Himlen besluttet har, dig at forunde,
   </subtitle>
   <firstline>Nærværende Anton og Anna hans Bruud</firstline>
   <source pages="119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1046,7 +1050,7 @@ sligt meldes den hæderlig Tranderup-Præst.
   <title>Overskrivt over P. Clausens Kramboe i Ærøeskiøbing</title>
   <firstline>Her holdes Vare fal paa gammel ærlig Viis</firstline>
   <source pages="121"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1064,7 +1068,7 @@ Med Bonitet i Kram, med Billighed i Priis;
   <subtitle><i>Aria</i></subtitle>
   <firstline>Den kiedsom Vinter gik sin gang</firstline>
   <source pages="122-125"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1173,7 +1177,7 @@ Min Vinter blive til en Vaar – i Aar.
   <subtitle>Poeten Stubs Vers over Løwenørns Død</subtitle>
   <firstline>Man har for nylig hørt Kanoners hule Torden</firstline>
   <source pages="127-130"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1278,7 +1282,7 @@ Maa blive stor, og stor til Stammens Held og Ære.
   <title>Sørgedigt i Anledning af Christian Stockfleths Hustru Adolphine Christine Rostgaards Død 16. Juli 1740</title>
   <firstline>Vor brave Stochfleth sad forleeden Dag saa eene</firstline>
   <source pages="133-145"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1669,7 +1673,7 @@ Ved den skal <w>Rostgaards</w> Navn i Agt og Ære blive.
   <title>Oversættelse af Rostgaards latinske Digt i Anledning af den kongelige Families Indtog paa Christiansborg 26. November 1740</title>
   <firstline>Toe Rigers Fader Selv og Moder seer mand stige</firstline>
   <source pages="147"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1697,7 +1701,7 @@ Det Guds, det Kongens Huus er stort, men kand ey romme
   <subtitle><i>Aria</i></subtitle>
   <firstline>Jeg lever vel tilfreds</firstline>
   <source pages="148-149"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1752,7 +1756,7 @@ Fornøyet hvad mig skeer.
   <title>Indskrift paa Tavle i Vedtofte Kirke over Hans Giislef, d. 22. Febr. 1741</title>
   <firstline>I hvo du er</firstline>
   <source pages="150"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1789,7 +1793,7 @@ Gak hen og see ham der hvor al hans Sorg er glemt.
   <title>Indskrift paa Tavle i Køng Kirke over Morten Stub, d. 12. Maj 1725, og hans Hustru Karen Møller, d. 22. Sept. 1743</title>
   <firstline>Her under og needen for</firstline>
   <source pages="152-153"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1837,7 +1841,7 @@ og lever nu i den Kiærlighed der affalder aldrig.
   <title>Over et Dødinghovet</title>
   <firstline>Her seer jeg Tiiden har hver stund mit Liv berøvet</firstline>
   <source pages="154"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1859,7 +1863,7 @@ Den farlig flygtig Tiid, den visse Død og Dom.
   </subtitle>
   <firstline>Vor Neubergs Bryst</firstline>
   <source pages="155"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1878,7 +1882,7 @@ Hans hviide Orden blive blaae,
   <title>Drikke-Skaal</title>
   <firstline>Reen Handel og Vandel florere i Landet</firstline>
   <source pages="157"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1897,7 +1901,7 @@ Hvis Eyermand erlig vil unde og svare
   <title>Til Obr: Leut: Leth</title>
   <firstline>Skal skaalen tømmes ret</firstline>
   <source pages="158"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1926,7 +1930,7 @@ Hr. Oberst Lieutnant Leth.
     <note>Digtet er skrevet i anledning af <a person="stockfleth">Stockfleths</a> udnævnelse til stiftamtmand i Trondhjem, 18-6-1744.</note>
   </notes>
   <source pages="159"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1956,7 +1960,7 @@ Til Nordens høie Pynt, hvor Field og Bølge kneiser,
   </subtitle>
   <firstline>Ved Vinen den klare</firstline>
   <source pages="160"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1977,7 +1981,7 @@ Af Frue Mama!
   <title>Stadfæst dit Forsyns Verk</title>
   <firstline>Stadfæst dit Forsyns Verk, det huus o fromme Gud!</firstline>
   <source pages="163"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1994,7 +1998,7 @@ hvis Grundsten er jo dog, din Medynk og dit Bud
   <title>Adam var min første Fader</title>
   <firstline>Adam var min første Fader, thi hand haver avlet mig</firstline>
   <source pages="164"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2011,7 +2015,7 @@ paa vor Christum, kand jeg stunde og til Salighed og roe.
   <title>Hver tiime er forgyldt</title>
   <firstline>hver tiime er forgylt og viseren tillige</firstline>
   <source pages="165"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2038,7 +2042,7 @@ Saa mærkte vi til gavns, hvad Klokken den var slagen.
   <subtitle>De har det i Ryggen</subtitle>
   <firstline>Af 3 er den eene den anden ey lig</firstline>
   <source pages="166"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2058,7 +2062,7 @@ Een har det i Ryggen af Brud og af Værk,
   <title>Af tre blev dend ene</title>
   <firstline>Af tre blev dend ene, dend anden dog liig</firstline>
   <source pages="168"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2092,7 +2096,7 @@ Af fiire Ducater svandt Ryg-Ve og Værk.
   <title>Tiden løber som en Floed</title>
   <firstline>Tiden løber som en Floed</firstline>
   <source pages="170"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2114,7 +2118,7 @@ Aldrig saae mand Rihnen stoed
   <subtitle>blef dette Vers giort om ham i Odense den 10. Julii</subtitle>
   <firstline>Rare Printz toe Kongers glæde</firstline>
   <source pages="171"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2139,7 +2143,7 @@ Lev og bliv din Kronet Herkomsts herlig Ziir.
   <title>Paa een Flaske, hvori laa en liden Elling i Spiritus med 2 Hoveder</title>
   <firstline>Du lille Ande Noer!</firstline>
   <source pages="173"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2178,7 +2182,7 @@ Da Lycken føyer dem der fødes uden Hoved.
   </subtitle>
   <firstline>Jeg laver tynd Caffe</firstline>
   <source pages="175-176"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2233,7 +2237,7 @@ Af sort og stærk Caffe.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Græm Dig aldrig; thi det svier</firstline>
   <source pages="177"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2259,7 +2263,7 @@ Lev og lee dem begge ud.
   </subtitle>
   <firstline>Her findes Hierter nok, her findes 10 for Et</firstline>
   <source pages="178"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2282,7 +2286,7 @@ Der spillet mangen een med Hierter, og blev beet.
   </subtitle>
   <firstline>Verden er et Flyve-Sand</firstline>
   <source pages="179"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2303,7 +2307,7 @@ Sandet volder Foden Møye,
   </subtitle>
   <firstline>Nei den Ræson var syg, der knæler strax og falder</firstline>
   <source pages="180"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2329,7 +2333,7 @@ At naar hun krympes ind af Krampen her og hidset,
   </notes>
   <source pages="181"/>
   <keywords>gravskrift</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2346,7 +2350,7 @@ Thi Døden slog mig selv omkuld,
   <title>Recept for den dievelske Løgnagtighed</title>
   <firstline>En fremmed Medicus i Lægekunsten øvet</firstline>
   <source pages="182-183"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2389,7 +2393,7 @@ At R: være kan et Apotheck for Munden
   <title>Diogenes og Alexander paa en Tobaks-Daase, gav Anledning til følgende Betænkning</title>
   <firstline>O rige Nøisomhed!</firstline>
   <source pages="184"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2414,7 +2418,7 @@ Ved dig har Fattigdom i Rigdom ingen Lige,
   </subtitle>
   <firstline>Jeg er ey død endnu, jeg ligger kun og luurer</firstline>
   <source pages="185"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2433,7 +2437,7 @@ da Verdens Skue-Plads blev Klogskabs Daarekiste.
   <title>Paa Bagstavnen af et Skib ved navn Samson</title>
   <firstline>Hin Samson slog paa Land en Løve, som var bister</firstline>
   <source pages="186"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2448,7 +2452,7 @@ Giv denne slaae til Vands Misundelsers Philister.
   <title>Impromtu</title>
   <firstline>Efter Ærter</firstline>
   <source pages="187"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2467,7 +2471,7 @@ Fare de i Doktor Bing.
   <title>Impromtu</title>
   <firstline>Gak bort, Nord-Vest!</firstline>
   <source pages="188"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2490,7 +2494,7 @@ Men ei for de kiære Venner, os fri!
   <title>Impromtu til en Kræmmersvend</title>
   <firstline>Tjen ærlig, vel og tro</firstline>
   <source pages="189"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2510,7 +2514,7 @@ Med Pas paa graat Papir.
     <note>1972-udgaven anfører, at digtet kan være Ambrosius Stubs oversættelse af Olof Dalin; tilskrivningen er usikker.</note>
   </notes>
   <source pages="190"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2532,7 +2536,7 @@ Elske. Beyle. Giftes. Aves.
   <firstline>Din Qvindes Skiærs-Ild var dit Helved alle Dage</firstline>
   <source pages="192"/>
   <keywords>gravskrift</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2550,7 +2554,7 @@ Nu har den tunge Jord dog giort din Byrde læt.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Nu er jeg befriet fra Kierligheds Pagt</firstline>
   <source pages="193"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2579,7 +2583,7 @@ I Elskov jeg tusinde Blindheder seer.
   <subtitle>Da Stiftamtmand Stochfleth vandt Søeholm ved Proces.</subtitle>
   <firstline>Begierlighed, saa bøi dit Knæ</firstline>
   <source pages="194"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2617,7 +2621,7 @@ Vi Pærse den med God Maneer
   <subtitle>i et muntert Selskab paa Søeholm</subtitle>
   <firstline>Her bragte Tiden en Pocal</firstline>
   <source pages="196"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2639,7 +2643,7 @@ De staae til Tidens Ende!
   <subtitle>da han var Kronprintz</subtitle>
   <firstline>Herop vor Glædskabs danske Flag!</firstline>
   <source pages="197-199"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2707,7 +2711,7 @@ Er, hvad hun her glædes ved,
   <title>Lykønskning paa en Vens Fødselseag</title>
   <firstline>Her er jo Fred?</firstline>
   <source pages="200"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2733,7 +2737,7 @@ Er denne Løsning best:
   </subtitle>
   <firstline>Her skiuler Muld og Nat en Konges Værdig Dotter</firstline>
   <source pages="201"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2755,7 +2759,7 @@ Hos Fald og Needrighed stod Hendis Dyd ophøyet;
   <title>En giftefærdig Piges Klage over sin Moders Urimelighed i at nægte hende et anstændigt Ægteskab</title>
   <firstline>Hvi har min Moder giftet sig?</firstline>
   <source pages="203"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2781,7 +2785,7 @@ Min Liv-Kat hede som vor Knud,
   <subtitle><i>Aria</i></subtitle>
   <firstline>Forhadte Navn af Toldforpagter!</firstline>
   <source pages="204-208"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2914,7 +2918,7 @@ De lære jer, at handle ret med Vare.
   <title>Da vor allernaadigste Konge Kong Friderick den Femte 1750 den 27. Junii var i Faaborg, bekostede Byen sig en ny Fane, hvorpaa blef sat følgende Vers</title>
   <firstline>See Himlen skienkte Os Kong Friderich den Femte</firstline>
   <source pages="210"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2932,7 +2936,7 @@ Som Dydernes Monarch Mild Naadig Eye-god.
   <subtitle><i>Aria</i></subtitle>
   <firstline>Lad Krig fornøye Potentater</firstline>
   <source pages="212-213"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2997,7 +3001,7 @@ Thi jeg har og Chrambambuli.
   </subtitle>
   <firstline>Er nogen, jeg er glæde riig</firstline>
   <source pages="215-217"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3086,7 +3090,7 @@ Du laster Drue-Saft, lev vel ved tør Indbildning.
   <title>Ey saa hvi tripper du saa fast</title>
   <firstline>Ey saa hvi tripper du saa fast?</firstline>
   <source pages="220-221"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
