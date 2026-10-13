@@ -13,7 +13,7 @@ import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
 
-const groupLines = (lines, type, contentLang) => {
+export const groupLines = (lines, type, contentLang) => {
   let groups = new Map();
   const lineIndexField = type === 'titles' ? 'index_title' : 'index_firstline';
   lines
@@ -31,7 +31,8 @@ const groupLines = (lines, type, contentLang) => {
         return;
       }
       line = line.replace(',', '').replace('!', '');
-      linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
+      linePair.sortBy = line;
+      linePair.sortByAlternative = alternative ?? '';
       let letter = Sorting.lineSectionTitleForLang(line, contentLang);
       if (line.indexOf('Aa') === 0) {
         letter = 'Å';
