@@ -20,7 +20,7 @@ const SectionedList = ({ sections }) => {
     <TwoColumns noLinkUnderline>
       {renderedGroups}
       <style jsx>{`
-        :global(.list-section) {
+        :global(.list-section > div) {
           break-inside: avoid;
         }
         :global(.list-section),
@@ -33,6 +33,7 @@ const SectionedList = ({ sections }) => {
           height: 1px;
         }
         :global(.list-section) :global(h3) {
+          break-after: avoid;
           font-weight: 300;
           font-size: 22px;
           border-bottom: 1px solid #888;
