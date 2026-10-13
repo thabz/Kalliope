@@ -739,6 +739,29 @@ supertitles or the diplomatic body transcription, whose source punctuation
 must still be preserved. Follow `docs/xml-work-format.md` for the complete list
 of affected title fields.
 
+### Facsimile links start at the text; preceding plates are text pictures
+
+A text's facsimile link must always open on the physical page where its text
+begins, never on a preceding illustration, portrait or decorative title plate.
+Set `head/source/@facsimile-pages` to that first text page and the last text
+page. Keep `source/@pages` tied to the printed text pagination. When using an
+inherited offset instead of an explicit interval, verify that it resolves to
+exactly the same first text page. Facsimile intervals are one-based; page-image
+filenames and `pb/@facs` are zero-based.
+
+If a printed picture belonging to the text occurs before its first text page,
+extract it as a local JPEG under `public/images/<source-poet-id>/` and attach
+it in the text's `head/pictures` as `<picture type="illustration" src="...">`.
+Check the association and orientation against the scan; rotate the extracted
+copy as needed. Preserve the original facsimile images. Do not expand the
+text's facsimile interval to include the plate.
+
+Do not add a separate text picture when the illustration is on a page that
+also contains the text: the facsimile already shows both. For an unnumbered
+plate, describe its position relative to the next printed text page, rather
+than presenting its PDF/image index as a printed page number. Verify the first
+facsimile image and every preceding text picture directly before handoff.
+
 ## 8. Encode every internal source-page break
 
 Preserve every physical source-page transition that occurs inside an included
