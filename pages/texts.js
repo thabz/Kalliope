@@ -104,7 +104,7 @@ const TextsPage = (props) => {
     sections.push({ title: group.title, items });
   });
 
-  let renderedGroups = <SectionedList sections={sections} />;
+  let renderedGroups = <SectionedList sections={sections} keyboardNavigation />;
 
   const lastCrumbTitle =
     type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
