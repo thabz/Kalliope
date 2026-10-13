@@ -227,6 +227,31 @@ describe('antologiplaceringer', () => {
     );
   });
 
+  it('sorterer årbøger efter deres årstal, også når næste bind udkom året før', () => {
+    const sources = [
+      { id: '1846-gaea', title: 'Gæa', year: '1846', published: '1845-12' },
+      { id: '1847-gaea', title: 'Gæa', year: '1847', published: '1847' },
+      { id: '1845-gaea', title: 'Gæa', year: '1845', published: '1845' },
+    ];
+    const collected = {
+      works: new Map(sources.map(work => [`antologierdk/${work.id}`, work])),
+      texts: new Map(sources.map(work => [work.id, {
+        id: work.id,
+        poetId: 'oehlenschlaeger',
+        workId: ANTHOLOGY_WORK_ID,
+        placement: 'author',
+        sourcePoetId: 'antologierdk',
+        sourceWorkId: work.id,
+        sourceOrder: 1,
+      }])),
+    };
+    buildVirtualAnthologyWorks(collected);
+    const work = collected.works.get('oehlenschlaeger/antologier');
+    expect(work.sections.map(section => section.work.year)).toEqual([
+      '1845', '1846', '1847',
+    ]);
+  });
+
   it('placerer det virtuelle antologiværk efter Andre digte', () => {
     const works = [
       { id: 'antologier', title: 'Tekster i andre udgivelser' },

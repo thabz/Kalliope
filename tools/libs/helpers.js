@@ -327,12 +327,12 @@ const htmlToXml = (html, collected, isPoetry, context) => {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
       l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
-    if (l.indexOf('<center>') > -1) {
-      l = l.replace('<center>', '').replace('</center>', '');
+    if (/^<center>.*<\/center>$/.test(l) === true) {
+      l = l.slice('<center>'.length, -'</center>'.length);
       options.center = true;
     }
-    if (l.indexOf('<right>') > -1) {
-      l = l.replace('<right>', '').replace('</right>', '');
+    if (/^<right>.*<\/right>$/.test(l) === true) {
+      l = l.slice('<right>'.length, -'</right>'.length);
       options.right = true;
     }
     if (l.indexOf('<wrap>') > -1) {

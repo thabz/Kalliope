@@ -64,9 +64,13 @@ const textsForWork = (collected, poetId, workId) => {
 };
 
 const compareSourceSections = (a, b) => {
-  const aKey = `${a.work.published || ''}\0${a.work.title}\0${a.key}`;
-  const bKey = `${b.work.published || ''}\0${b.work.title}\0${b.key}`;
-  return aKey.localeCompare(bKey, 'da');
+  const aYear = a.work.year ?? a.work.published ?? '';
+  const bYear = b.work.year ?? b.work.published ?? '';
+  if (aYear !== bYear) {
+    return aYear < bYear ? -1 : 1;
+  }
+  const titleOrder = a.work.title.localeCompare(b.work.title, 'da');
+  return titleOrder !== 0 ? titleOrder : a.key.localeCompare(b.key, 'da');
 };
 
 const buildVirtualAnthologyWorks = collected => {
