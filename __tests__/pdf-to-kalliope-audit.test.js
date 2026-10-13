@@ -98,6 +98,21 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
     expect(firstPage.last_line).toBe('Sidste paa ti');
     expect(secondPage.first_line).toBe('Første paa elleve');
   });
+
+  it('does not create a duplicate body page from a continued footnote', () => {
+    const xml = workXml.replace(
+      '<pb n="11" facs="011.jpg"/>',
+      '<footnote>første note<pb n="11" facs="011.jpg"/>fortsat note</footnote>.\n<pb n="11" facs="011.jpg"/>',
+    );
+    const pages = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(pages).toHaveLength(3);
+    expect(pages[1].first_line).toBe('Første paa elleve');
+    const inventory = pages.map(row => ({
+      ...row, status: 'reviewed', reviewer: 'worker-2', disposition: 'Gennemgået',
+      typography_status: 'reviewed', typography_disposition: 'Gennemgået',
+    }));
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+  });
   it('builds one side-aware JSON row per printed page', () => {
     expect(buildPageInventory({ xml: workXml })).toEqual([
       expect.objectContaining({

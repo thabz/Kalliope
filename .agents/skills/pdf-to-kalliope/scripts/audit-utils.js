@@ -109,9 +109,12 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
 
 const splitBodyPages = (body, { noteNeutral = false } = {}) => {
   const raw = serializeChildren(body);
+  const bodyBreaks = new Set(stripNotes(raw).match(/<pb\b[^>]*\/>/g) ?? []);
   const serialized = noteNeutral ? raw.replace(
     /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
-    note => (note.match(/<pb\b[^>]*\/>/g) ?? []).join(''),
+    note => (note.match(/<pb\b[^>]*\/>/g) ?? [])
+      .filter(pageBreak => bodyBreaks.has(pageBreak) === false)
+      .join(''),
   ) : raw;
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
