@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1847-gaea" author="antologierdk" status="complete" type="anthology" parent="1845-1847-gaea" ignore-tests="pagebreak-count">
+<kalliopework id="1847-gaea" author="antologierdk" status="complete" type="anthology" parent="1845-1847-gaea">
 <workhead>
   <pictures>
     <picture src="1847-gaea-p1.jpg" type="titlepage" primary="true"><transcription>Gæa / æsthetisk Aarbog, / med Bidrag af / Oehlenschläger, / Hauch, Grüne, Gregorio, Anna Christiane / Ludvigsen (Jessen), C. H. Lorenzen, L. Koikjær, Carit Etlar, / Caralis, Emanuel St. Hermidad, Anonym, Chr. Winther, H. C. Andersen, / E. Aarestrup, Angelica, F. Hoegh-Guldberg, / P. L. Møller, / og Illustrationer efter Tegninger af / Abildgaard, Thorvaldsen, / Jerichau, Liebert, Knoechl, Marstrand, Schirmer, / C. Sohn, Leösing, Sergell, En Antik, A. Melby, Lund, Gasparini, / Kjellerup, Juul, Beckmann, Simonsen, / D. Blunk. // Udgivet af / P. L. Møller. // Kjøbenhavn. / Udgiverens Forlag. Schultziske Bogtrykkeri. / 1847.</transcription></picture>
@@ -403,7 +403,7 @@ I Høstens Dage, mod sit bedre Hjem.
 
 </text>
 
-<text id="moellerpl2026101302" author="moellerpl">
+<text id="moellerpl2026101302" author="moellerpl" ignore-tests="pagebreak-count">
 <head>
   <title>Rahbek og Bakkehuset</title>
   <subtitle>
@@ -6969,13 +6969,16 @@ Han drager vældig over Jorden!
 
 </text>
 
-<text id="moellerpl20260814260" author="moellerpl">
+<text id="moellerpl20260814260" author="moellerpl" ignore-tests="pagebreak-count">
 
 <head>
 
   <title>Skaal for Dampen!</title>
   <subtitle>(Ved en Tour fra Klampenborg til Ramløse.)</subtitle>
   <firstline>Priis være Vandet, ja det klare Vand</firstline>
+  <notes>
+    <note>Den sidste side er fejlnummereret 288 i stedet for 289; den foregående side har ikke trykt sidetal.</note>
+  </notes>
   <source pages="287-288" facsimile-pages="295-297"/>
 
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7016,7 +7019,7 @@ Da standser Intet meer vor Længsels Flugt;
     Hilse „Goddag!“
 Og dampe over til hverandre.
 
-<pb n="289" facs="296.jpg"/>Ja, Skaal for Dampens Aand, som Ven til Ven
+<pb n="288" facs="296.jpg"/>Ja, Skaal for Dampens Aand, som Ven til Ven
 Trygt bærer paa de mørke Vinger! —
 Og dog, han er jo ret en flygtig Svend,
 Som bort med Vindene sig svinger,
@@ -7033,7 +7036,7 @@ O, lad os Eders Tanker tyde saa:
 
 </text>
 
-<text id="moellerpl20260814261" author="moellerpl">
+<text id="moellerpl20260814261" author="moellerpl" ignore-tests="pagebreak-count">
 
 <head>
 
@@ -8011,9 +8014,6 @@ og med venlige Blik paa de Forudvandrende nynner:
 
   <title>Tre danske Bondesange</title>
   <firstline>Den jeg oprigtig elsker</firstline>
-  <pictures>
-    <picture src="1847-gaea-bondesange.jpg" type="illustration">Det trykte nodeblad til de tre sange.</picture>
-  </pictures>
   <source pages="315" facsimile-pages="323"/>
 
   <quality>korrektur1,korrektur2,kilde,side</quality>

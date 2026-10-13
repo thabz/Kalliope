@@ -209,7 +209,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page ?? row.facsimile}`;
+const inventoryKey = row => `${row.text_id}:${row.facsimile ?? row.printed_page}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });
@@ -254,7 +254,7 @@ const auditPageInventory = ({ xml, inventory }) => {
       issues.push({ rule: 'missing-xml-page', key });
       continue;
     }
-    for (const field of ['facsimile', 'first_line', 'last_line', 'expected_transition']) {
+    for (const field of ['printed_page', 'facsimile', 'first_line', 'last_line', 'expected_transition']) {
       if ((expected[field] ?? null) !== (found[field] ?? null)) {
         issues.push({
           rule: `mismatched-${field.replaceAll('_', '-')}`,

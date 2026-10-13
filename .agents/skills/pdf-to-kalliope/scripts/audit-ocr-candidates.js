@@ -26,7 +26,7 @@ const stableAnchor = (line, column) => {
 
 const historicalOcrCandidates = ({ xml, inventory = null }) => {
   const document = parseXml(xml);
-  const generated = inventory ?? buildPageInventory({ xml });
+  const generated = inventory ?? buildPageInventory({ xml, includeExpectedPages: false });
   const byText = new Map();
   generated.forEach(row => {
     const rows = byText.get(row.text_id) ?? [];
@@ -37,10 +37,21 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
   for (const entry of textEntries(document)) {
     const textId = entry.getAttribute('id') ?? '';
     const pages = splitBodyPages(directChild(entry, 'body'));
+    const inventoryRows = byText.get(textId) ?? [];
+    const pageOccurrences = new Map();
     pages.forEach((page, pageIndex) => {
-      const inventoryRows = byText.get(textId) ?? [];
-      const metadata = inventoryRows[pageIndex] ?? {};
-      const pageKey = metadata.printed_page ?? metadata.facsimile ?? '?';
+      const facsimile = page.transition?.facsimile;
+      const metadata = (facsimile != null
+        ? inventoryRows.find(row => row.facsimile === facsimile)
+        : inventoryRows[0]) ?? inventoryRows[pageIndex] ?? {};
+      const repeatedLabel = metadata.printed_page != null && inventoryRows.filter(
+        row => row.printed_page === metadata.printed_page,
+      ).length > 1;
+      const label = metadata.printed_page ?? metadata.facsimile ?? '?';
+      const physicalKey = metadata.facsimile ?? facsimile ?? label;
+      const occurrence = (pageOccurrences.get(physicalKey) ?? 0) + 1;
+      pageOccurrences.set(physicalKey, occurrence);
+      const pageKey = `${label}${repeatedLabel ? `:${physicalKey}` : ''}${occurrence > 1 ? `:segment${occurrence}` : ''}`;
       const lines = page.content.replace(/<[^>]+>/g, ' ').split(/\r?\n/);
       lines.forEach((rawLine, lineIndex) => {
         const line = normalizeLine(rawLine);

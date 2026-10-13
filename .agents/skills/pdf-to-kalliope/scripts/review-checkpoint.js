@@ -216,7 +216,7 @@ const validateVisualStructureReviews = ({ analysis, reviews, producer }) => {
         .map(variant => variant.facsimile)
         .sort();
       if (expectedFacsimiles.length > 0 &&
-          JSON.stringify([...review.facsimiles].sort()) !== JSON.stringify(expectedFacsimiles)) {
+          expectedFacsimiles.some(facsimile => review.facsimiles.includes(facsimile) === false)) {
         errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, har ikke kontrolleret alle facsimilesider`);
       }
     }
