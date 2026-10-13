@@ -178,7 +178,7 @@ describe('tracked work corpus', () => {
         for (const block of getElementsByTagNames(body, [
           'poetry',
           'prose',
-          'quote',
+          'epigraph',
         ])) {
           if (block.parentNode?.tagName !== 'body') {
             nestedBodyBlockIssues.push(
@@ -305,7 +305,7 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
-  it('keeps poetry, prose, and quote as sibling body blocks', () => {
+  it('keeps poetry, prose, and epigraph as sibling body blocks', () => {
     expect(nestedBodyBlockIssues).toEqual([]);
   });
 

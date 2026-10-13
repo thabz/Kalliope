@@ -72,7 +72,7 @@ describe('helpers', () => {
     });
 
     it('validates prose, quotations, headings, notes and footnotes', () => {
-      const contexts = ['prose', 'quote', 'heading', 'note', 'footnote'];
+      const contexts = ['prose', 'epigraph', 'heading', 'note', 'footnote'];
       contexts.forEach(blockType => {
         expect(() => htmlToXml('<broken>Første</other>', collected, false, {
           workId: '1807', textId: 'test180701', blockType,

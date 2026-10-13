@@ -384,14 +384,14 @@ describe('kalliopework RELAX NG schema', () => {
     }).toThrow();
   });
 
-  it('accepts quote max-width and rejects quote styling attributes', () => {
+  it('accepts epigraph max-width and rejects epigraph styling attributes', () => {
     const baseXml = `
       <kalliopework id="1900" author="digter">
         <workhead><title>Digte</title><year>1900</year></workhead>
         <workbody>
           <text id="digter1900a">
             <head><firstline>Første linje</firstline></head>
-            <body><quote max-width="70%" lang="de">Erste Zeile</quote></body>
+            <body><epigraph max-width="70%" lang="de">Erste Zeile</epigraph></body>
           </text>
         </workbody>
       </kalliopework>
@@ -417,7 +417,27 @@ describe('kalliopework RELAX NG schema', () => {
     }).toThrow();
   });
 
-  it.each(['poetry', 'prose', 'quote'])('accepts a language on %s blocks with inline language overrides', blockName => {
+  it('accepts multiple epigraphs before, within and after the main text', () => {
+    const xml = poetryWork('Verslinje').replace(
+      '<poetry>Verslinje</poetry>',
+      '<epigraph>Første motto</epigraph><epigraph>Andet motto</epigraph>' +
+      '<poetry>Første scene</poetry><epigraph>Scenens motto</epigraph>' +
+      '<prose>Prosa</prose><poetry>Sidste scene</poetry>' +
+      '<epigraph>Afsluttende motto</epigraph>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('rejects the retired quotation element', () => {
+    const xml = poetryWork('Verslinje').replace(
+      '<poetry>Verslinje</poetry>', '<quote>Gammelt motto</quote>',
+    );
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['poetry', 'prose', 'epigraph'])('accepts a language on %s blocks with inline language overrides', blockName => {
     const xml = `
       <kalliopework id="1900" author="digter">
         <workhead><title>Tekster</title><year>1900</year></workhead>
@@ -443,7 +463,7 @@ describe('kalliopework RELAX NG schema', () => {
         <workbody>
           <text id="digter1900a">
             <head><firstline>Første linje</firstline></head>
-            <body><prose>Første afsnit</prose><poetry>Første verslinje</poetry><quote>Citat</quote></body>
+            <body><prose>Første afsnit</prose><poetry>Første verslinje</poetry><epigraph>Citat</epigraph></body>
           </text>
         </workbody>
       </kalliopework>

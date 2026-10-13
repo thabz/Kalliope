@@ -507,6 +507,7 @@ File.readlines(ARGV[0]).each do |line|
       @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
       @initialtype = line[5..-1].strip
+      abort "FEJL: Ukendt TYPE: #{@initialtype}" unless %w[poetry prose epigraph].include?(@initialtype)
       @type = @initialtype
     elsif line =~ /^[A-Z]*:/
       abort "Unknown header-line: #{line}"
@@ -518,6 +519,7 @@ File.readlines(ARGV[0]).each do |line|
       if line.start_with?("TYPE:")
           @body.push("</#{@type}>")
           @type = line[5..-1].strip
+          abort "FEJL: Ukendt TYPE: #{@type}" unless %w[poetry prose epigraph].include?(@type)
           @body.push("<#{@type}>")
       else
           @body.push(line)

@@ -194,7 +194,7 @@ describe('work corpus support', () => {
   it.each([
     '<poetry>Vers <a poem="target"><i>mål</i></a></poetry>',
     '<prose>Prosa <w><xref poem="target"/></w></prose>',
-    '<quote>Citat <a work="poet/work">værk</a></quote>',
+    '<epigraph>Citat <a work="poet/work">værk</a></epigraph>',
   ])('rejects links directly in a text body: %s', bodyContent => {
     const xml = `
       <kalliopework>

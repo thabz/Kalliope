@@ -65,7 +65,7 @@
         <ref name="picture"/>
         <ref name="transcription"/>
         <ref name="poetry"/>
-        <ref name="quote"/>
+        <ref name="epigraph"/>
         <ref name="a"/>
         <ref name="xref"/>
         <ref name="b"/>
@@ -178,7 +178,7 @@
         <choice>
           <ref name="poetry"/>
           <ref name="prose"/>
-          <ref name="quote"/>
+          <ref name="epigraph"/>
         </choice>
       </zeroOrMore>
     </element>
@@ -329,8 +329,8 @@
     </element>
   </define>
 
-  <define name="quote">
-    <element name="quote">
+  <define name="epigraph">
+    <element name="epigraph">
       <optional><attribute name="max-width"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>

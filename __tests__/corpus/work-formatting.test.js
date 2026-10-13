@@ -22,9 +22,9 @@ describe('work XML formatting', () => {
     </text>
     <text>
       <body>
-        <quote>
+        <epigraph>
 Et citat
-        </quote>
+        </epigraph>
       </body>
     </text>
     <section>
@@ -69,7 +69,7 @@ Et citat
     expect(formatted).toContain('</text>\n\n<section>');
     expect(formatted).toContain('</section>\n\n</workbody>');
     expect(formatted).not.toMatch(
-      /^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|subwork|text|workbody|workhead)(?:[ \t>/])/m,
+      /^[ \t]+<\/?(?:body|content|head|poetry|prose|epigraph|section|subwork|text|workbody|workhead)(?:[ \t>/])/m,
     );
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
   });

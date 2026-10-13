@@ -66,7 +66,7 @@ digtere.
   relevante rettelser indføres før færdigstatus. Registrér arket som `<errata>`
   i `<workhead>`, og mærk hver rettelse med `<footnote type="errata">` i formen
   `rettet] trykt`. Arket må aldrig oprettes som en selvstændig tekstpost.
-- Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
+- Angiv altid `lang` med en ISO 639-1-sprogkode på `<epigraph>`, når mottoet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
 - Brug ikke `<a>` eller `<xref>` i værkernes egentlige brødtekst i `<body>`.

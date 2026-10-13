@@ -585,7 +585,7 @@ const handle_text = async (
   } else {
     // prose or poem
     const body = getChildByTagName(text, 'body');
-    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'quote']).map(
+    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'epigraph']).map(
       (block) => {
         const type = tagName(block);
         const rawBlock = safeGetInnerXML(block);
