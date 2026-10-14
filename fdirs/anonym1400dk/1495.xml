@@ -5793,10 +5793,13 @@ om h<o>a</o> haffuer wenner hwldæ
 </body>
 </text>
 
-<text id="anonym1400dk2026101377">
+<text id="anonym1400dk2026101377" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Erick Ericſꝫ kallz m<o>e</o>nz</title>
   <firstline>Tha dāſkæ hadæ meg til kōnug wold</firstline>
+  <notes>
+    <note>Den trykte gentagelse oc oc i årstalsverset på originalbillede 159 er bevaret. Undtagelsen repeated-adjacent-word vedrører denne gentagelse.</note>
+  </notes>
   <source facsimile-pages="157-159"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
