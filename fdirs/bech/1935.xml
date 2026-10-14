@@ -925,7 +925,8 @@ paa det der engang var mig
 </head>
 <content>
 
-<text id="bech2026101461">
+<!-- repeated-adjacent-word: De 16 ordgentagelser, bl.a. »nu nu«, »vid vid«, »Sole Sole« og »Hvile Hvile«, står sådan i trykket. -->
+<text id="bech2026101461" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Hjertets Sang</title>
   <firstline>Hvad er det nu</firstline>

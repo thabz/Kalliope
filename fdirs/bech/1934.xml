@@ -292,7 +292,8 @@ paa en blegrød Dynesky
 </body>
 </text>
 
-<text id="bech2026101409">
+<!-- repeated-adjacent-word: »Mildt mildt« står sådan i trykket. -->
+<text id="bech2026101409" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Skriget</title>
   <firstline>Der er et stort Skrig inde i mig</firstline>
@@ -668,7 +669,8 @@ kom du for at blive hos mig
 </body>
 </text>
 
-<text id="bech2026101420">
+<!-- repeated-adjacent-word: »længe længe« står sådan i trykket. -->
+<text id="bech2026101420" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Hjertets Fange</title>
   <firstline>Min Sjæl bruser</firstline>
@@ -746,7 +748,8 @@ mod hans bitte dunetbløde Kinder
 </head>
 <content>
 
-<text id="bech2026101423">
+<!-- repeated-adjacent-word: Begge forekomster af »vidste vidste« står sådan i trykket. -->
+<text id="bech2026101423" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Paa Vinhuset</title>
   <firstline>Ak vidste vidste I</firstline>
@@ -774,7 +777,8 @@ Skaal kære Død!
 </body>
 </text>
 
-<text id="bech2026101424">
+<!-- repeated-adjacent-word: »dryp dryp« står sådan i trykket. -->
+<text id="bech2026101424" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Den enes Død — —</title>
   <firstline>Naar man i mange Aar har været dyrket af en Mand</firstline>
@@ -1069,7 +1073,8 @@ og visner
 </body>
 </text>
 
-<text id="bech2026101431">
+<!-- repeated-adjacent-word: »længe længe« står sådan i trykket. -->
+<text id="bech2026101431" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Maj</title>
   <firstline>I den dunkle Æblelund</firstline>
