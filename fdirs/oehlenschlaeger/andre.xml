@@ -127,44 +127,6 @@ gjentog vor stumme Lyst.
 </body>
 </text>
 
-<text id="oehlenschlaeger1999062801" variant="oehlen2002101107">
-<head>
-  <title>Freyas Rok</title>
-  <firstline>Naar Natten udruller sit sorte Slør</firstline>
-  <notes>
-    <note>Fra Simon Poulsens <i>Nytaarsgave</i>, 1804.</note>
-  </notes>
-  <quality>korrektur1</quality>
-</head>
-<body>
-<poetry>
-Naar Natten udruller sit sorte Slør,
-Naar Lyset døer,
-Naar Himlen berøvet sin blanke Lue
-Ruger ned, som en skummel Fængselbue,
-Da fremluer Freya din Rok saa blid
-Ved Kierligheds stille Midnatstid,
-Sødtstraalende, bævende, hvid.
-
-Og mens den tindrer med venlig Ild,
-Du deilig mild,
-Med runde Fingre den Silke spinder,
-Som du om Rosenkiederne binder,
-Hvormed du yndig og elskovsvarm,
-Med din fulde sneehvide Arm,
-Slynger Yngling og Pige Barm til Barm.
-
-Og da nu hver voxen Svend og Møe
-Vil heller døe,
-End vandre fiernet fra Elskovsflokken,
-End mangle Roser og Traad af Rokken,
-Saa sukker til dig det hele Nord,
-Og du bønhører hvert kierligt Ord.
-Derfor er din funklende Rok saa stor!
-</poetry>
-</body>
-</text>
-
 <text id="oehlen2002022406" variant="oehlen2002101104">
 <head>
   <title>Eventyret i den fremmede Stad</title>
@@ -711,7 +673,14 @@ De fugtes af min Taare.
   <notes>
     <note>Gendigtning af Bürger: <xref type="translation" poem="burger2019091903"/>.</note>
   </notes>
-  <source pages="5-8"><i>Poetiske Skrifter</i>, Liebenberg (red.), Det Nordiske Forlag, Kbh., 1898, bd. 10.</source>
+  <source pages="5-8">
+    <title>Poetiske Skrifter</title>
+    <editor type="editor">Liebenberg</editor>
+    <volume>10</volume>
+    <place>Kbh.</place>
+    <publisher>Det Nordiske Forlag</publisher>
+    <year>1898</year>
+  </source>
 </head>
 <body>
 <poetry>

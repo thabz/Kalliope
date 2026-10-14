@@ -17,6 +17,30 @@ describe('text content language markup', () => {
     );
   });
 
+  it('renders note citation lines and non-verse labels without raw XML', () => {
+    const html = renderToStaticMarkup(
+      <TextInline contentHtml={[[
+        '<poetry>    Første vers<br/>Andet vers<br/><nonum><right>Kilden.</right></nonum></poetry>',
+      ]]} />
+    );
+
+    expect(html).toContain('white-space:pre-wrap');
+    expect(html).toContain('    Første vers<br/>Andet vers<br/>');
+    expect(html).toContain('Kilden.');
+    expect(html).not.toContain('<code>');
+    expect(html).not.toContain('&lt;nonum');
+  });
+
+  it('keeps normal whitespace handling for ordinary columns', () => {
+    const html = renderToStaticMarkup(
+      <TextInline contentHtml={[[
+        '<column>Se første udgave.<br/>Se anden udgave.</column>',
+      ]]} />
+    );
+    expect(html).not.toContain('white-space');
+    expect(html).toContain('Se første udgave.<br/>Se anden udgave.');
+  });
+
   it('preserves language attributes on italic source text', () => {
     const html = renderToStaticMarkup(
       <TextInline contentHtml={[["<i lang=\"fr\">Très bien</i>"]]} />

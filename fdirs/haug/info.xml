@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="haug" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Friedrich</firstname>
+    <lastname>Haug</lastname>
+    <fullname>Johann Christoph Friedrich Haug</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1761-03-09</date>
+      <place>Niederstotzingen</place>
+    </born>
+    <dead>
+      <date>1829-01-30</date>
+      <place>Stuttgart</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <viaf>76427521</viaf>
+    <gnd>118973649</gnd>
+  </identifiers>
+</person>

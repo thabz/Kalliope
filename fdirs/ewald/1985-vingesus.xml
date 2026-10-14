@@ -3,7 +3,14 @@
 <workhead>
   <title>Vingesus</title>
   <year>1985</year>
-  <source>Johannes Ewald: <i>Vingesus</i>, digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh., 1985.</source>
+  <source>
+    <author id="ewald">Johannes Ewald</author>
+    <title>Vingesus</title>
+    <editor>Keld Zeruneith</editor>
+    <place>København</place>
+    <publisher>Hans Reitzels Forlag</publisher>
+    <year>1985</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -14,7 +21,7 @@
   <notes>
     <note>Kun dette fragment af digtet er overleveret eller overhovedet skrevet.</note>
   </notes>
-  <source pages="101">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="101"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -40,7 +47,7 @@ Den Tid,
 <head>
   <title>Fragment</title>
   <firstline>Hellige, Hellige, Hellige Gud</firstline>
-  <source pages="116-117">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="116-117"/>
   <keywords>blankvers</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -99,7 +106,7 @@ Og de ....
   <title>Til B *** og E ***</title>
   <subtitle>1772</subtitle>
   <firstline>O du, hvis stærke Flammer drive</firstline>
-  <source pages="77-79">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="77-79"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -211,7 +218,7 @@ Ja, længe skal din Glæde vare,
   <title>Til Hr. Hiersing og Jfr. Malling</title>
   <subtitle>1772</subtitle>
   <firstline>Ord eller Lyd - som Babels Virvelvinde</firstline>
-  <source pages="80-82">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="80-82"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -322,7 +329,7 @@ Ney Jersing - Thi det beste du kan haabe
   <title>Rimbrev til L. Bensen</title>
   <subtitle>1772</subtitle>
   <firstline>Høystærede Herre! udvalgteste Ven!</firstline>
-  <source pages="95-97">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="95-97"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -427,7 +434,7 @@ A Monseieur Monsieur L: Bensen à son Logis
   <title>Over M. B**</title>
   <subtitle>1772</subtitle>
   <firstline>Almagts Ord, du store Anker</firstline>
-  <source pages="77-79">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="77-79"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -521,10 +528,13 @@ Almagt, heft de bange Tanker
   <title>Til Thalias Caroline paa hendes Fødselsdag</title>
   <subtitle>d 5te Febr: 1772</subtitle>
   <firstline>O du som henrykt seer vor Fryd</firstline>
+  <dates>
+    <event>1772-02-05</event>
+  </dates>
   <notes>
     <note>Med navnet ,,Thalias Caroline'' hædrede Ewald skuespillerinden Caroline Walter (1755-1826).</note>
   </notes>
-  <source pages="57-59">Johannes Ewald, <i>Vingesus</i>, Digte udvalgt af Keld Zeruneith, Hans Reitzels Forlag, Kbh. 1985.</source>
+  <source pages="57-59"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

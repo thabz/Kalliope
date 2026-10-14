@@ -1,0 +1,4172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1900" author="jacobsen" status="complete" type="poetry">
+<workhead>
+  <title>Digte og Udkast</title>
+  <year>1900</year>
+  <notes>
+    <note>Andet oplag (1900) er udvidet i forhold til første oplag (1886) med fire digte: »Monomani«, »Den vilde Jagt«, »Rim« og »Omkring mit Billed —«, samt en udeladt markedsscene fra »Mogens«. Ifølge tilføjelsen til forordet blev disse tekster fundet efter første oplags udgivelse. Desuden har to digte skiftet plads, nogle dateringer er præciseret, og enkelte skrivefejl er rettet.</note>
+  </notes>
+  <errata status="none"/>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-10-19T11:36:21+00:00"/>
+  </proofreadings>
+  <pictures>
+    <picture type="titlepage" src="1900-p1.jpg" primary="true"><transcription>Digte og Udkast / af / J. P. Jacobsen. // Andet Oplag. // Kjøbenhavn. / Gyldendalske Boghandels Forlag. / Fr. Bagges Bogtrykkeri. / 1900.</transcription></picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122583729905763" facsimile="115208033487-color" facsimile-pages-num="229" facsimile-pages-offset="11">
+    <author id="jacobsen">J. P. Jacobsen</author>
+    <editor>Edvard Brandes</editor>
+    <editor id="moellerv">Vilhelm Møller</editor>
+    <title>Digte og Udkast</title>
+    <edition>2. Oplag</edition>
+    <place>Kjøbenhavn</place>
+    <publisher>Gyldendalske Boghandels Forlag</publisher>
+    <printer>Fr. Bagges Bogtrykkeri</printer>
+    <year>1900</year>
+    <identifiers><kb-alma>99122583729905763</kb-alma></identifiers>
+  </source>
+</workhead>
+<workbody>
+
+<text id="moellerv20261019100" variant="moellerv2026101901" author="moellerv" skip-index="true">
+<head>
+  <title>[Forord]</title>
+  <subtitle>(Til Bogens 1ste Oplag, Efteraaret 1886.)</subtitle>
+  <indextitle>Forord</indextitle>
+  <nofirstline/>
+  <notes>
+    <note>Forordet er underskrevet af Edvard Brandes og Vilhelm Møller.</note>
+  </notes>
+  <source facsimile-pages="6-7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  <w>Digte og Udkast</w> indeholder de meget faa Digte, J. P. Jacobsen har offenliggjort ved forskellige Lejligheder, samt et Udvalg af hans efterladte Manuskripter, hvilket Udvalg vi — efter hans Families Ønske — har foretaget.
+  Foruden et Par avtobiografiske Optegnelser bestaar Udvalget dels af saadanne tidlige Forsøg (fra Tredserne), som Jacobsen i sin Ungdom havde bestemt til Trykning (<w>Hervert Sperring</w>, <w>En Kaktus springer ud</w>), dels af Digte og Brudstykker, der er skrevne efter 1870, samtidig med at han optraadte som Forfatter. Han lagde hyppigt Planer til en Digtsamling, men opgav dem igen, fordi Sam<pb facs="006.jpg"/>lingen hver Gang syntes ham ikke som Helhed at svare til hans daværende Udviklingstrin.
+  Nu efter hans Død vil man værdsætte Digtene og Udkastene efter deres Tid. Vi har ment at burde medtage ikke alene det Færdige, der er hans Genius fuldkommen værdigt, men ogsaa det Ufuldstændige, naar det bærer Mærke af hans digteriske Ejendommelighed.
+
+<b>Edvard Brandes.</b>    <b>Vilhelm Møller.</b>
+
+<small>  I 2det Oplag er medtaget et Prosastykke og fire Digte, som blev fundne længe efter Udgivelsen af «Digte og Udkast». Dette ny er i Indholdsfortegnelsen mærket med en *. Desuden har to Digte skiftet Plads, der er nogle Steder tilføjet nærmere Tidsbestemmelser, og et Par Skrivefejl er blevet rettede.</small>
+</prose>
+</body>
+</text>
+
+<section>
+<head>
+  <title>En begavet ung Mands Dagbog</title>
+  <subtitle>(Udvalg.)</subtitle>
+</head>
+<content>
+
+<text id="jacobsen20261019105" variant="jacobsen2026101902">
+<head>
+  <title><num>I.</num>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</title>
+  <firstline>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</firstline>
+  <dates>
+    <written>1867-01-15</written>
+    <written>1867-03-12</written>
+    <written>1867-05-22</written>
+    <written>1867-12-16</written>
+    <written>1867-12-17</written>
+    <written>1867-12-18</written>
+    <written>1868-01-02</written>
+    <written>1868-03-06</written>
+    <written>1868-03-08</written>
+    <written>1868-04-04</written>
+  </dates>
+  <source pages="3-13" facsimile-pages="14-24"/>
+  <keywords>heine,shakespeare,aarestrup,schiller,heibergjl</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<right><small>15. Januar 1867.</small></right>
+  Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald; men til andre Tider er det, som om Poesien var dét, der skulde være min Idræt, og dette er da navnlig, naar et eller andet udmærket Digt har vakt min Begejstring eller naar jeg har syslet med Nordens Gudelære. Kunde jeg overføre Naturens evige Love, Herligheder, Gaader og Undere i Digtningens Verden, da føler jeg, at mit Værk vilde blive et mer end almindeligt. Men Digtningen vilde ikke blive en kristelig, den vilde betragte Biblen som en Edda og ikke vedkende sig andre Værker af Guddommen end Naturlovene i videste Udstrækning; den vilde betragte Menneskene ikke <pb n="4" facs="014.jpg"/>som Guds Børn, men som Dele af Guddommen, ringe Dele, men dog Dele . . .
+
+---
+
+  Det er en dum gammel Tradition, at man selv kender sig mindst. Andre kunne vide, hvad man gør og siger, selv véd man om, hvad man tænker, — og det er det vigtigste, thi desværre, Ord og Daad ere ofte Tanken modsatte . . . . Dette gælder naturligvis kun, naar man har beskæftiget sig med sig selv.
+<right><small>12/3 67.</small></right>
+
+---
+
+<right><small>22. Maj 1867.</small></right>
+  Jeg var i den italienske Opera, trods Tid og Penge; jeg saa’ «Un ballo in maschera». Forstod ikke et Ord, anede dunkelt Meningen, væmmedes ved Primadonnaen, kedede mig over det meste af Musiken og — morede mig dog ganske udmærket.
+  Signora Benati! ung, naturlig, glad, skælmsk, ret smuk, Pagedragt, dejlig Stemme — I Guder, hvilket forfærdeligt Angreb paa et ungt Hjærte, der slaar varmt for alt skønt, maaske endog <pb n="5" facs="015.jpg"/>vel varmt. Hvor jeg gaar og hvor jeg staar, ser jeg Signora Benati danse ud af 4de Akt og hører hende synge Arien i 1ste. Hun er næsten Barn, hendes Henrykkelse over Buketterne var stor, hun vilde nødig slippe dem. Signor Padilla maatte næsten rykke dem fra hende, for at hun ikke skulde generes af dem i sit Spil, — og saa holdt hun dog trodsig fast i et af Buketbaandene. Signora Benati og Examen Artium! skrækkeligt, at I ikke kunne forliges! Jeg maa dog se at faa jer til det. Se Benati endnu en Gang <i>maa</i> jeg.
+
+---
+
+<right><small>16. December 1867.</small></right>
+  Hvorfor begynde paa en Dagbog! det bliver dog ikke til noget alligevel. — Men Kollegieheftet er saa pænt, og det er saadan en dejlig fræk Titel, jeg har skrevet der foran. Jeg maa være oprigtig i højeste Grad i disse Blade. «Intet sundt Menneske skriver Dagbog». Dette er altsaa en Syge-Journal. — Ved at skrive Dagbog bilder man sig selv en Masse Løgne ind. — Jeg har læst «Per Gynt» i denne Tid. Lad den sætte sig. Krojsos af A. Flinch. <pb n="6" facs="016.jpg"/>Kold Ild. Aarestrups Digte, — hvor betegnende er ikke for ham den lille Ritornelle:
+</prose>
+<poetry>
+<small>«Det faldt mig aldrig ind, at gøre Regning,</small>
+<small>Blandt dine Yndigheders Tal, paa denne:</small>
+<small>Snørlivets Silketryk og Rosentegning.»</small>
+</poetry>
+<prose>
+det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Versform og skrive den ned.
+  Set «København ved Dag» paa Vesterbros Teater. Mærkelig nok var der en Ytring deri, der, om den end er gal, dog ligner noget: Det er en ung Mand fra Landet, der er yderst utilfreds med København og kun kan finde sig til Rette, da han er kommen ind paa Regensen blandt en Flok Studenter. Ellers ligner det fælt meget «Østergade og Vestergade».
+  Det er egenlig komisk: Jed véd ikke, hvordan min Prosa ser ud. Det forekommer mig, der er noget uoriginalt ved den, — jeg mener ikke uoriginalt; men jeg kender ikke mig selv i den.
+
+---
+
+<right><small>17. December 1867.</small></right>
+  Digteren gaar sig en Tur, Naturen er saa dejlig, saa stor, saa levende, hans Følelser røre <pb n="7" facs="017.jpg"/>sig stærkt, hans Læbe nynner: det er Undfangelsens salige Øjeblik. Han gaar hjem, tager Papir og Pen, skriver og streger ud, tænker og tænker om igen, former og former om igen: det er Forløsningens haarde Timer. Dagen efter skriver han igen, det gaar lettere, men det er ogsaa mindre værdifuldt: det er Efterbyrden. Derfor saa meget daarligt mellem saa meget godt i Digterværkerne. Det er raat, men sandt . . .
+  Naar man, idet jeg, efter at have været borte et Øjeblik, træder ind i en Kreds, taler om noget andet end det, der var Talens Genstand, før jeg gik, og lidt efter at jeg er kommen opgiver dette Emne, spiller man i 9 af 10 Tilfælde Komedie. Man har talt om mig; idet jeg træder ind, begynder én ivrigt at tale om et og andet; de andre deltage ivrigt deri; naar saa man tror Faren overstaaet, holder man op og puster . . .
+  Hvorfor skriver jeg Digte? For en Gang at blive berømt? Jeg vil ikke haabe det. Fordi det er min Natur, fordi det er mig nødvendigt? Det koster mig Anstrængelse at skrive et Digt. Fordi jeg mener at burde bruge det Pund, jeg maaske har? Jeg er intet Pligtmenneske. For <pb n="8" facs="018.jpg"/>at lære mig selv og mine Evners Størrelse at kende? Lad mig sige: maaske, jeg gider ikke opkaste flere Spørgsmaal.
+  Det er mig aldeles umuligt at sige, om hvad jeg skriver heri virkelig er min Mening, eller det blot er Pennegriller (Pendiarrhoe).
+  Mon jeg lumske Menneske ikke inderst, aller inderst i mig huser den Tanke: en Gang i Tiden bliver du en stor Digter, og naar du saa er død, vil man finde dette pæne Kollegiehefte og glæde sig over dine træffende (?) Bemærkninger og finde mange Vink til Bedømmelse af din Personlighed og dine Værker og saa udgive det som en Avtobiografi! (Var jeg Kritiker paa den Tid, vilde jeg sige, at det var noget forbandet forvirret Tøj.) Gud, hvor dette kunde føre én, der studerede mig, bag Lyset! Af hele Tonen f. Eks. af ovenstaaende kunde han komme til at slutte: hvor oprigtigt! og saa er alt dette maaske netop stik imod min Mening. Ja, ærede fremtidige Anmelder, jeg kommer ikke med nogen Paastand, i det Kapitel véd jeg ikke mere end du og sandsynligvis mindre, — du véd da, hvordan hele Bogen ser ud, jeg kender kun de første Sider.
+
+---
+
+<pb n="9" facs="019.jpg"/><right><small>18. December 1867.</small></right>
+  En Digter behøver vist aldrig at være bange for, at hans Tanker skulle være saa geniale eller hans Følelser saa individuelle, at hans Samtid ikke kan fatte dem.
+  Da jeg havde faaet rystet Drengen ud af Ærmet og begyndte at udvikle mig aandeligt, ɔ: begyndte at studere mig selv, blev jeg meget forbavset og tænkte: saadan som du er, er der ingen andre i Verden. Nu véd jeg ad Erfaringens Vej, at der er mange. Jeg kunde have Lyst til at hellige mit Jeg en speciel Undersøgelse her.
+<center>Jeg.</center>
+  Jeg er et Menneske, der har Lyst til alt for mange Ting. Jeg kunde have Lyst til at studere Botanik, Æstetik, Kunsthistorie, Mytologi og sikkert meget mere.
+  Min Vilje er maaske stærk i store Ting, svag i Smaating, maaske omvendt, maaske for Øjeblikket kvalt af Følelse og Tanke.
+  Min Følelse er stærk, men gør ingen Larm. (Hvad mener Hr. Jeg om Digte? det er dog en Slags Spræld.)
+<pb n="10" facs="020.jpg"/>  Naar jeg bliver begejstret, farer det mig koldt ned ad Ryggen. Jeg kan let komme til at græde. Gaar i Almindelighed til Yderligheder i Følelsessager.
+  Min Tankegang er nogenlunde hurtig, men dog for langsom; maaske klar, maaske ikke.
+  Jeg indgyder i Almindelighed unge Piger Tillid.
+  Jeg har vist megen Takt og Finfølelse. Rødmer i Almindelighed uden Grund.
+  Meget indbildsk. Har vist megen Selvkritik og er vist i det hele taget en god, skarp Kritiker. Meget ærgerrig.
+  Ovenstaaende er meget muligt aldeles pinende galt.
+  Har meget stærk Tilbøjelighed til at omsætte alt mødende i Poesi. Er forfængelig om Sommeren, ikke om Vinteren. Arbejder mest ved Lys. Spadserer helst i Dæmring. Drømmer hellere end tænker. Er modtagelig for Smiger, naar den er fin. Meget pirrelig . . . Alt muligvis Løgn.
+
+---
+
+<pb n="11" facs="021.jpg"/><right><small>2. Januar 1868.</small></right>
+  Hvor jeg er doven! Jeg læser i denne Tid Körners Biografi. 21 Aar og berømt Digter og Helt. Jeg maa rigtignok sige med Don Carlos: «<span lang="de">zwanzig Jahre und noch nichts für die Unsterblichkeit gethan.</span>» Dog det kommer nok. (Lad mig huske at skrive: Sejrssang, ɔ: Sejr i Kærlighed.)
+  Begyndelse til en Novelle fra 1997:
+  Det var en mørk Januarnat i Aaret 1868, da den unge, endnu ikke bekendte Digter Jens Peter Jacobsen med hastige Skridt ilede hen ad de glatte Fliser i Krystalgade (i den graa Oldtid Skidenstræde, nu Diamanttorvet), indsvøbt i en daarlig Overfrakke, tænkende paa de geniale Bemærkninger, han havde siddet og gjort i Studenterforeningen (den Gang paa Gammelholm, nu paa Kejsergade), da et Baal af knittrende Cokes, der flammede midt paa Gaden og gav Husene paa begge Sider et magisk rødt Skær, fik ham til at stanse og se derpaa; det var Gasvæsensfolk, der optøede Jorden for at komme til at gøre Rørene i Stand. (Den Gang brugte man dette kummer<pb n="12" facs="022.jpg"/>lige Belysningsmiddel.) Derpaa ilede han hjem og . . . (Ende) . . . skrev dette staaende.
+
+---
+
+<right><small>6. Marts 1868.</small></right>
+  Sagde jeg det ikke nok! det blev ikke til noget med det Dagbogeri.
+
+---
+
+<right><small>8. Marts 1868.</small></right>
+  Man kan, naar man studerer Algerne, næsten komme til at tro, at der er en personlig Gud, der, den Gang da han skabte Verden og Tingene i den, sad med et stort Stykke Tegnepapir for sig og et Blyant i Haanden og kradsede først simple Cirkler og Triangler op og saa pyntede paa dem med Prikker og Streger (Diatomophyceerne), dernæst allehaande løjerlige Figurer, som det nu faldt ham ind (Phycochromophyceæ), saa trak Paralleler og fik Confervae frem, — de var saa lette at tegne, derfor tegnede han saa mange.
+
+---
+
+<pb n="13" facs="023.jpg"/><right><small>4. April 1868.</small></right>
+  Hvis der var en personlig Gud og jeg troede paa ham, vilde jeg bede, saa Haaret paa hans Hoved vilde rejse sig og han selv af Forfærdelse og Angst sende en Dødsengel til mig og tæmme mig i Paradis ved Kedsomhed, for at ikke Helvede med mig i Spidsen skulde sejre over Himlen. Men nu tror jeg ikke, — beder altsaa ikke — men ønsker, — faar ikke — men drømmer.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019106" variant="jacobsen2026101903">
+<head>
+  <title><num>II.</num>Sære og synderlige Drømme</title>
+  <subtitle>Anno 1868.</subtitle>
+  <source pages="14-17" facsimile-pages="25-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>1. Drøm.</center>
+  Jeg var oppe til Filosoficum.<footnote>Det var i Filosoficumsdagene og jeg havde flere Gange hørt paa Eksaminationen.</footnote> R. Nielsen fortalte mig, at han godt kunde lide, at jeg studerede Botanik.<footnote>Et Menneske havde fortalt mig, at R. N. særlig yndede unge Fagmænd.</footnote> Saa spurgte han mig om, hvad jeg vilde op i. Jeg svarede «Substantialitet»,<footnote>Læst om Substans om Aftenen.</footnote> men han misforstod mig vist og hørte da om Subjektivitet. Maaske var det omvendt. Jeg kunde intet. Nielsen hjalp mig vist; thi jeg sad hele Tiden som paa Naale, for at han <pb n="15" facs="025.jpg"/>skulde prostituere sig ved ulovlig Hjælpen. Folk sagde, at jeg havde faaet nogle positive Karakterer. Jeg tvivlede og tillod mig at se i Protokollen, der mærkværdig nok var en Dynge Papir, hvori Fragmenter af Musikalsk Album. Jeg tror, at jeg undrede mig derover og tænkte ved mig selv: at da Nielsen jo var et alsidigt Menneske og gav sig af med Musik og Maleri, var det vel saaledes, det var kommet der. Mærkværdig nok vare Kandidaterne ordnede efter Lav, og mærkværdig nok maatte jeg søge mig selv i Skorstensfejerlavets Rækker; der stod da Karakteren: «forbi». Jeg spurgte Nielsen, om jeg var dumpet, og han bejaede det. Thi gik jeg hændervridende op og ned ad Gulvet og befandt mig oppe hos Rudolph Schmidt, min Manuduktør. Nu kom noget Vrøvl om en Michael Gjørup og en Frederik G. Der var en Kat inde i Stuen, hvilket jeg ikke yndede og sagde, at jeg kun frygtede 2 Ting, nemlig Kedsomhed og Katte.<footnote>Dette havde jeg samme Dag eller et Par Dage i Forvejen erklæret et Par Mennesker.</footnote> R. Schmidt truede med at faa en Fru X’s lille Kat op, hver Gang vi læste.
+<pb n="16" facs="026.jpg"/><center>2. Drøm.</center>
+  Jeg kom ude fra Vesterbro. Gik saa ned i en Urtebod for at købe Salep.<footnote>Havde dette i Sinde om Dagen.</footnote> Saa noget Pris-Vrøvl. Jeg lagde 2 Specier<footnote>Havde laant 2 Specier samme Aften og siddet og leget med dem.</footnote> paa Disken, som pludselig forsvandt. Jeg klagede, men det hjalp ikke. Saa søgte jeg alle Vegne. Pludselig fandt jeg — jeg tror, den faldt ned fra et Træ, der voksede udenfor Boden — en gammel romersk Sølvmønt, noget større end en Specie. Men Kræmmeren tog den fra mig og sagde, at det kunde jeg vel være tjent med at faa den i Stedet. Saa søgte jeg i hans Kones Gemmer, jeg tror et Sybord. Kræmmeren sagde: De kan jo anmelde det for Politiet; men jeg frygtede for ikke at faa Pengene igen alligevel. Svenden sagde: vær dygtig distræt<footnote>Havde hørt noget af Søren Kierkegaard samme Aften, hvor dette Ord var anvendt paa en mærkelig Maade.</footnote>, Hr. Vinding<footnote>Havde i Forbigaaende set et Portræt af Musikeren Vinding paa Store Købmagergade.</footnote>! til Principalen. Jeg blev ved at søge. Men nu holdt Principal og Svend mine Arme. Jeg stred imod og vaagnede.
+<pb n="17" facs="027.jpg"/><center>3. Drøm.</center>
+  Noget med to dybe Grøfter ude ved Slukefter,<footnote>Havde samme Aften set en Pantomime i Tivoli, der foregik til Dels i Slukefter.</footnote> hvorned jeg tabte noget Tøj. Der blev søgt, og noget andet fundet. Endelig fandt nogle Piger det. De vilde have Findeløn. En af Genstandene var en Stok,<footnote>Havde i disse Dage faaet en Stok og tænkt, nu kan V. (min Broder) beholde sin Stok i Fred i Sommerferien.</footnote> som jeg en Gang har givet min Broder, et knudet Rør nemlig. Der voksede i Grøften, hvori der ikke var Vand, nogle uhyre Planter, som jeg antog for gule Aakander.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019107" variant="jacobsen2026101904">
+<head>
+  <title><num>III.</num>Breve og Strøtanker</title>
+  <firstline>Jeg læser i denne Tid: Tusend og én Nat</firstline>
+  <source pages="18-22" facsimile-pages="29-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<right><small>Avgust 1868.</small></right>
+  Kære Erik!
+  Jeg læser i denne Tid: Tusend og én Nat, Schleiden Grundzüge der w. Botanik, Uhlands Gedichte, Poul Møllers Aforismer og Filosofiens Historie, Heines Briefe, Olaf den Helliges Saga, Immermanns Münchhausen, Didrik af Berns Saga, Juliet and Romeo, Heibergs Kritiker, skriver paa Hervert Sperring og en Feuilleton «fra Bornholm». — !!!!!!!!!
+  Under Tiden er jeg til Mode, som om jeg laa i en Ligkiste, og giver de gamle Ret med Hensyn paa Ymers Hjerneskal. Vi ere døde, vi have levet og ere nu begravede og vente paa Opstandelsen. I Regn og Slud
+<right>din</right>
+<right>J. P. J . . .</right>
+
+---
+
+<pb n="19" facs="029.jpg"/>  Intet dannet Menneske i vor Tid kan udtale Ordet: «rørende», uden at der i Stemmen skælver et Gran Ironi.
+
+---
+
+  Hvor uhyggelig maa en Mimoseskov ikke være i stille Blæst, naar Træerne røre sig, som om de vare levende.
+
+---
+
+  Thorvaldsen sagde: «det gaar tilbage, jeg synes formelig godt om mine Arbejder.»
+  Han havde Ret, det var et Tegn paa, at Idealet ikke boede saa kraftigt i ham, ikke havde sin fordums Skønhed, siden han kunde finde det saa godt udtrykt i sine Arbejder.
+
+---
+
+  Skade, at J. L. Heiberg ikke kendte «Hervert Sperring», hvilket ypperligt Eksempel paa det dramatiske i det lyriske!
+
+---
+
+<pb n="20" facs="030.jpg"/>  Ved hvilke Idé-Associationer vækker en Kvinde i 30 Aars Alderen Vaarminder?
+
+---
+
+  Hans Ord summede som Spyfluer om hans døde Tanker.
+
+---
+
+  Jens saa’, at han med halvlukkede Øjne nynnede en svensk Melodi, ikke for at synge, men for at tilbagekalde en Situation, og fortalte ham derpaa, at hans (ikke Jenses) Forlovede sang smukt og især Svensk.
+
+---
+
+  De tre vare paa det Standpunkt af Fuldskab, da Selvkritiken endnu ikke er ganske kvalt. Den Affekterede begyndte at synge «Lad os synge og danse gemytlig omkring.» Nej, den er kedelig, brølte S . . . Saa synge vi en anden: «Lad os synge og danse gemytlig osv.»
+
+---
+
+<pb n="21" facs="031.jpg"/>  En nordisk Digtning skal ligne en Kæmpehøj, men det slaar tidt Fejl for Digterne, og i Stedet for Kæmpehøjen faa vi en Barner . . . . garneret med Grønt.
+
+---
+
+  Hos mig vække kogte Rejer paa en Tallerken altid Minder om Barnemordet i Bethlehem.
+
+---
+
+  Under Tiden har jeg en Fornemmelse af, at jeg gaar paa Havets Bund, og alle de dumme Torsk og Østers sidde og gaa og glo og gabe paa mig, uden at kunne forstaa, hvilken Fisk jeg: Mennesket er.
+
+---
+
+  Naar man ser en Dame i Herreklæder, kan man forstaa, hvad en Dame føler overfor en Herre.
+
+---
+
+  Stakkels Fyr! han var løben løbsk fra Frue Kirke og helt ned i Studiestræde, da Kusken <pb n="22" facs="032.jpg"/>indhentede ham og vredt smed Pisken i Snavset og sagde: er du tosset, tror du, jeg gider rende saadan efter dig?! . . . Stakkels 8-aarige! at leve i Illusionen som Hest saa langt og saa blive revet ud af den. Stakkels Fyr! ydmyg og bedrøvet tog han Pisken op af Snavset.
+
+---
+
+</prose>
+<poetry>
+Alt, hvad der ejer Skønheds Liv,
+Jeg kalder paa med Formens: bliv!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Hervert Sperring</title>
+  <subtitle>
+    <line>Lyrisk Digtning.</line>
+    <line>(Udvalg.)</line>
+  </subtitle>
+</head>
+<content>
+
+<text id="jacobsen20261019108" variant="jacobsen2026101918">
+<head>
+  <title>[Om Navnet Hervert Sperring]</title>
+  <indextitle>Om Navnet Hervert Sperring</indextitle>
+  <source pages="24" facsimile-pages="35"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Sperring er en Landsby 1 Mil fra Thisted. Hervert kommer af Havør, — et Navn, der altid har fulgt mig fra min tidligste Barndom og som jeg tidt har kradset ind paa Borde og Bænke, Træer og Bogbind.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019109" variant="jacobsen2026101919">
+<head>
+  <title>«Hervert Sperrings» Historie</title>
+  <indextitle>Hervert Sperrings Historie</indextitle>
+  <linktitle>Hervert Sperrings Historie</linktitle>
+  <source pages="25-27" facsimile-pages="36-38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  En Aften havde jeg ude hos M . . . . . . . . s hørt en Historie om en Mand, der efter at have hørt et Musikstykke om Elverpiger var gaaet hjem gennem en Skov og her pludselig havde hørt alle de vilde Toner klinge igen og set Skovpigernes Dans og Dagen derpaa var bleven funden besvimet ude i Skoven. — En anden Aften, i Foraaret 1866, henimod 2, gik jeg gennem Lykkesholms Allé til Harsdorfsvej, hvor jeg boede (Nr. 5). Der duftede stærkt af Lønblomster (Acer) og nys udsprungne Balsampopler, hvilket i Forbindelse med Maanens underlige Belysning vakte en vis bakkantisk Stemning hos mig, i hvilken Fortællingen om Skovdansen gik op for mig i «Aand og Sandhed». Det skulde blive en Romance. — Det blev dog anderledes. — <pb n="26" facs="036.jpg"/>Romancen vilde ikke lykkes, fordi Forudsætningerne syntes mig saa indholdsrige, at jeg ikke vilde udelade dem, og de egnede sig nu ikke for Romanceformen. Saa blev da den Form, i hvilken Digtningen foreligger, valgt. Hele mit eget Drømmeliv skulde lægges deri i alle dets Nuancer, med al dets Fryd og Smærte. Saaledes stod det i 66 eller Begyndelsen af 67. Først hed det «Sigurd Sanger» og laa i Middelalderen, nu ligger det i Nutiden . . . eller Maanen.
+
+---
+
+<right><small>1868.</small></right>
+  Bedste Erik!
+  Du har læst min «Hervert» og vil nu høre, hvad jeg selv har ment med den og hvorledes jeg er fornøjet med den og Kritikens Omtale af den. Her en Kritik af den:
+<center><i>Hervert Sperring.</i></center>
+<center>Lyrisk Digtning af J. P. Jacobsen.</center>
+<center><small>Bedømt af Jens Peter Jacobsen.</small></center>
+  Denne lille Bog vidner i det mindste om Talent, nogle Enkeltheder maaske endog om mere . . . Gangen i den er følgende: en digterisk begavet Yngling, indført i Poesien ved sin Moder, <pb n="27" facs="037.jpg"/>kan ikke finde sig tilfreds i Livet og flyr derfor til Drømmeriet; Drømmene faa Overhaand og drage ham ned mod Sanselighed; da ser han en ung Kvinde, skøn som Psyke, det er et Maal at kæmpe for. Hun bliver hans, men han føler snart, at det tomme Drømmeliv ikke undlader at hævne sig; han har ikke Livsindhold til at vedligeholde Kærlighed hos en anden, vel hos sig selv. Kærligheden giver ham Kraft til at drage bort fra hende for at søge at vinde et Livsindhold. Han kommer tilbage. Hun er en andens. Han styrter sig ind i Nydelser, kan ikke overdøve sig selv, bringes Vanvidsgrænsen nær. En Sommernat, — hans Fantasi, gamle Minder og hans sygelige Tilstand sammensværge sig imod ham, de gamle glemte Drømme stige op af Graven og tage ham med sig derned. Alt dette er paa Døden nær sagt i lyriske Digte, men det er fejl, disse lyriske Digte gøre under Tiden Indtryk af at være Monologer.<footnote>Man kunde ogsaa sige, at Monologer var Lyrik. Dette var vist bedre?</footnote>
+
+---
+
+  [Til «Hervert Sperrings Historie» er knyttet en kort Kritik af hvert enkelt Digt i Samlingen. Ved Flertallet af de her optagne Digte er denne, Jacobsens egen Kritik tilføjet. <i>Udg.</i>]
+</prose>
+</body>
+</text>
+
+<section>
+<head>
+  <title>Herverts Sange</title>
+</head>
+<content>
+
+<text id="jacobsen20261019110" variant="jacobsen2026101962" skip-index="true">
+<head>
+  <title>[Motto]</title>
+  <indextitle>Motto</indextitle>
+  <nofirstline/>
+  <source pages="28" facsimile-pages="39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph>
+Der hjælper ej Drømme saa lidt som Digt,
+Er Fondet end aldrig saa stort og rigt.
+</epigraph>
+</body>
+</text>
+
+<text id="jacobsen20261019111" variant="jacobsen2002092102">
+<head>
+  <title>Til min Moder</title>
+  <firstline>O! husker du, Moder, den Gang jeg var lille</firstline>
+  <source pages="28-29" facsimile-pages="39-40"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+O! husker du, Moder, den Gang jeg var lille,
+Jeg lagde mit Hoved saa glad i dit Skød,
+Naar Tusmørkets Time den milde og stille
+Var kommen og Dagen den lyse var død?
+
+Da sang du med sagte og vémodig Stemme
+De Sange, du jubled’, da Modet var ungt,
+De Sange, hvis Klang jeg endnu kan fornemme,
+Naar Tanken er trættet og Hjærtet er tungt.
+
+Vel hørte jeg Toner langt skønnere siden,
+Vel læste jeg Sange med stoltere Flugt;
+Mest elsker jeg dem dog, jeg hørte som liden,
+Thi de bar for mig dog den rigeste Frugt.
+
+<pb n="29" facs="039.jpg"/>De vakte en Længsel saa stærk i mit Hjærte,
+Der toned’ fra Læben som Digt og som Sang,
+De blev for min Tanke en lysende Kerte,
+Der styrer mod Skønhedens Rige min Gang.
+</poetry>
+<prose>
+  Skrevet i 1868, til min Moder, kun med «Sandhedens Rige» i Stedet for «Skønhedens Rige». De 2 første Strofer ere gode, de 2 sidste for matte.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019112" variant="jacobsen2002092112">
+<head>
+  <title>Hvi gækker mig Livet stedse!</title>
+  <firstline>Hvi gækker mig Livet stedse</firstline>
+  <source pages="29-30" facsimile-pages="40-41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvi gækker mig Livet stedse,
+Saasnart jeg stævner frem,
+Naar træt jeg er af at dvæle
+I Synernes luftige Hjem?
+Er jeg da fremmed hernede?
+Er ikke for Jorden jeg skabt?
+Har vel paa Vej til en Stjærne
+Livsenglen herned mig tabt?
+Nej! nej! jeg føler herinde,
+Jeg hører just Jorden til,
+Det glødende Liv hernede
+Er netop det Liv, jeg vil;
+<pb n="30" facs="040.jpg"/>Og alt, hvad Livet kan give,
+Jeg rumme kan i mit Bryst,
+Saavel den dybeste Smerte
+Som og den højeste Lyst.
+O! havde jeg Magt som Vilje
+Og Vilje dertil som Lyst,
+Verden skulde gaa under
+Ved Flammerne i mit Bryst!
+</poetry>
+<prose>
+  1868. Gaar an.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019113" variant="jacobsen2002092113">
+<head>
+  <title>En Bøn</title>
+  <firstline>Jeg sendte som Barn, før jeg lukked’ mit Øje</firstline>
+  <source pages="30-31" facsimile-pages="41-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg sendte som Barn, før jeg lukked’ mit Øje,
+Hver Aften en Bøn til min Gud i det høje;
+Slig Bøn steg vist aldrig mod Guddommens Øre:
+Thi jeg bad min Gud mig almægtig at gøre.
+
+Nu mærker jeg først, at den naaed’ hans Throne,
+Nu først, at min Isse bær Almagtens Krone:
+Han har givet mig Almagt i Drømmenes Rige,
+Snart af Taagernes Kaos min Verden skal stige.
+</poetry>
+<prose>
+  67 eller 68. Hvad der er fortalt i 1. Strofe gjorde jeg som Barn i lang Tid. Dette er et meget vigtigt Digt i Samlingen og et godt Digt. <pb n="31" facs="041.jpg"/>Det viser nemlig den Higen efter Magt, der i Forbindelse med en vis Slaphed dog til syvende og sidst er Drømmeriets Ophav.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019114" variant="jacobsen2002092114">
+<head>
+  <title>I Drømmenes Land</title>
+  <firstline>Det er herligt at leve i Drømmenes Land</firstline>
+  <source pages="31-32" facsimile-pages="42-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det er herligt at leve i Drømmenes Land,
+Hvad jeg vil, det staar dér i min Magt,
+Jeg kan lege med Fisken paa Havbundens Sand,
+Skue Havdybets tryllende Pragt,
+Jeg kan bygge som en Sommerfugl bag Rosernes Blad,
+Jeg kan tumle mig som Alferne i Dugdraabens Bad,
+Jeg kan stige ned i Bjærget, der har Flammer om sin Tinde,
+Jeg kan vugge mig paa Strømmene de glødende derinde,
+Jeg kan fare over Vandene, som Aanden èn Gang fór,
+Mens sorte Bølger vælte sig over mørke Jord,
+Jeg kan skue Mulmet vige for Lysets stærke Glans
+Og juble glad med Jorden ved dets første Straalekrans,
+<pb n="32" facs="042.jpg"/>Jeg kan fare som Storm over Hav og over Jord
+Og i Kvag slaa den ængstede Snekke,
+Jeg kan aande som Vaarvind paa Blomsternes Flor
+Og fra Vinterens Dvale dem vække,
+Jeg kan sænke mig som Dæmring ud over Mark og Vang,
+Jeg kan klinge som en Tone i Lærkens Morgensang,
+Jeg kan drømme som en Knop under Bladenes Hang
+Og aabne mig som Rose under Solstraalers Klang,
+Jeg kan bæve som Duggen paa Bøgetræets Blad
+Og fange Glans og svinde ved Solstraalers Bad,
+Jeg kan ruge som Skygge i Skov og i Lund,
+Kan bølge som Duft fra Liljens Blomstermund,
+Jeg kan taarne mig som Bølge og knuses imod Strand, —
+O, herligt er at leve i Drømmenes Land!
+</poetry>
+<prose>
+  67 eller 68. Altfor kaotisk for Skønheden men derved vinder det i Sandhed.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019115" variant="jacobsen2002092115">
+<head>
+  <title>Straaler, mine Drømmesale!</title>
+  <firstline>Straaler, mine Drømmesale</firstline>
+  <source pages="33-34" facsimile-pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Straaler, mine Drømmesale,
+Skønt i tusend Kerters Glans,
+Klinger højt af Sang og Tale,
+Strængespil og munter Dans! —
+
+Tovelil, kom lad os vandre,
+Luften her er tung og varm,
+Lad os ile fra de andre
+Ned i Haven Arm i Arm.
+
+Natten er saa mild og stille,
+Fjærn alt lyder Hallens Larm,
+Se, hvor Maanens Straaler spille
+Hist paa Sø og Baadens Karm.
+
+Kom, jeg løser Baadens Lænke,
+Stig nu, Tovelil, om Bord;
+Du dig her i Stavnen bænke,
+At jeg ser dig, mens jeg ror.
+
+Nu en lille Sang du synge,
+Frejdig, rig og elskovsvarm,
+Mens vi ud paa Dybet gynge
+I vor lille, lette Karm.
+
+<pb n="34" facs="044.jpg"/>Tak for dine skønne Toner
+Og for Hjærtets Ord deri,
+Natten selv i Skovens Kroner
+Sukker: ak, det er forbi!
+
+Lad nu, mens vi fremad gynges
+Og af Nattens milde Vind
+Vore Lokker sammenslynges,
+Blodet kysses Kind mod Kind.
+
+Bønnen skreven i mit Øje,
+Tove, lad den røre dig;
+Lad mit Blik din Vilje bøje,
+Saa den stedse vil som jeg.
+
+Lad min Stemme i dit Øre
+Døve Tankens strænge Røst,
+Saa at du kun mægter høre
+Hjærtets Stemme i dit Bryst.
+
+Og lad saa i Kys mig sige
+Stærke Ord til Hjærtet dit,
+At dets Stemmes Kraft maa stige,
+Tale glødende som mit.
+</poetry>
+<prose>
+67?
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019116" variant="jacobsen2002092117">
+<head>
+  <title>Drøm!</title>
+  <firstline>Bliv, o bliv i dine Drømmes Verden</firstline>
+  <source pages="35" facsimile-pages="46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Bliv, o bliv i dine Drømmes Verden,
+Hig ej mod Livets virkelige Færd!
+Det har kun Nats og Middagslysets Farve,
+Drømmen har ene Morgenrødens Skær; —
+Dør du og har levet, død er du Livets,
+Aanden vil da søge til Jorden igen:
+Dør du som Drømmer, dø da kan du rolig,
+Hele din Verden med dig blegner hen.
+</poetry>
+<prose>
+  Fremkaldt ved en Historie, der vil findes i «Atheisten», hvis jeg nogen Sinde faar denne Roman skreven. 67. Maaske formet i Thisted i Sommerferien. Godt.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019117" variant="jacobsen2002092118">
+<head>
+  <title>Drømmeidealet</title>
+  <firstline>Hele Formens rige Fylde</firstline>
+  <source pages="35-37" facsimile-pages="46-48"/>
+  <keywords>mueller</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hele Formens rige Fylde
+Tog jeg fangen og den samled’
+Til et helt foruden Lige,
+Til en Kvinde ung og skøn;
+Liljens friske, varme Hvide
+Gød i Væksten jeg den slanke,
+Solens Straaleguld det lyse
+Over Haarets rige Strøm.
+
+<pb n="36" facs="046.jpg"/>Himlens dybe Blaa jeg fængsled’
+I det skønne store Øje,
+Maanens Lys det blide gemte
+Jeg som Smil om hendes Mund,
+Roser planted’ jeg i Hjærtet,
+Lod dem vokse, lod dem skyde,
+Sætte Knop paa hendes Kinder,
+Springe ud paa hendes Mund.
+
+Alle rene Toners Vellyd
+Lod i hendes Barm jeg bygge
+Og fra hendes Læbe klinge
+I en skøn harmonisk Strøm;
+Bølgens Gang og Fuglens Svæven,
+Raaens lette Flugt paa Jorden,
+Blomstens Bøjninger for Vinden
+Blev de ranke Formers Liv.
+
+Al min Barndoms rene Glæde,
+Al mit Væsens bedste Indhold
+Gav den Fagre jeg i Eje,
+Dejlig for mit Blik hun stod;
+Altid drømte jeg om hende,
+Naar jeg sov og naar jeg vaaged’;
+Sang hun lokked fra min Lyre;
+Længsel gød hun i mit Bryst:
+
+<pb n="37" facs="047.jpg"/>Længsel efter en lig hende,
+Men med mere Liv end Drømmens, —
+Og min Længsel sig forvilded’
+Og til Attraa højt den steg:
+Jeg i Drømme hende favned’,
+Med mit Favntag hende dræbte,
+Sidder ene nu og drømmer,
+Skøndt jeg kender Drømmens Værd.
+</poetry>
+<prose>
+  67 eller 68. Godt. Har slugt en Del af en Pygmalion, jeg vilde skrive, men ikke skriver, da Pal. Müller skal have behandlet det omtrent paa samme Maade. Favne sig selv: — Godt.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019118" variant="jacobsen2002092123">
+<head>
+  <title>Asali</title>
+  <firstline>Naar Haabets Vinger allernærmest løfte</firstline>
+  <source pages="37-38" facsimile-pages="48-49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Naar Haabets Vinger allernærmest løfte
+Mig mod den Himmel, som jeg higer til,
+Da stiger frem for Sjælen mørke Tanker,
+Og Haabets Kraft ej længer bære vil.
+
+Kan hun vel elske Trællen, som hun løste?
+Thi Træl, hun vide skal, det var mit Navn;
+Vil kun til Hjælp hun da mig række Haanden,
+Men haanlig vrage Hvilen i min Favn?
+
+<pb n="38" facs="048.jpg"/>Kan hun vel tro paa mig, sig til mig støtte,
+Med mig vel trøstig flagre Elskovs Flugt?
+Maa hun ej tro, at ingen Kraft jeg ejer,
+Og at mit Mod blev dræbt ved Trældoms Tugt?
+
+Hun maa det ej, jeg var til Træl ej baaren,
+En Kongesøn var det, i Lænker lagt;
+Men Lænken faldt, og ingen Skygge vover
+Nu mer at trodse min genvundne Magt.
+
+Ja jeg er Drot, hun op til mig skal skue,
+Skal fuld af Tillid synke i min Favn,
+Som min hun dele vil en Konges Sæde,
+Og fjærne Slægter kende hendes Navn.
+</poetry>
+<prose>
+  68. Gaar an.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019119" variant="jacobsen2002092127">
+<head>
+  <title>Til Asali</title>
+  <firstline>Før drømte jeg fast hver eneste Nat</firstline>
+  <source pages="38-39" facsimile-pages="49-50"/>
+  <keywords>munch</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Før drømte jeg fast hver eneste Nat,
+Jeg havde dit Hjærte vundet;
+Ak, hvor var Dagen da mørk og mat,
+Naar Mulmet igen var svundet!
+
+<pb n="39" facs="049.jpg"/>Nu plager en Drøm mig saa tung og svar,
+Den, at jeg dit Hjærte har mistet;
+O, hvor er Dagen da lys og klar,
+Naar Mørket sig bort har listet!
+</poetry>
+<prose>
+  66 eller 67. Et lille Mesterværk hvad Symmetri angaar. Mulm og Mørke burde ombyttes, men saa kom der «mørk» 2 Gange i 1. Strofe. Det havde svaret ypperligt til «svundet» og «listet». Et Aarstid efter at det var skrevet, saa’ jeg et Digt af A. Munch i «Sorg og Trøst», hvis Tanke er den samme; da dog mit er bedre end hans, lod jeg det staa.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019120" variant="jacobsen2002092130">
+<head>
+  <title>Der hjælper ej Drømme</title>
+  <firstline>Der hjælper ej Drømme saa lidt som Digt</firstline>
+  <source pages="39-40" facsimile-pages="50-51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der hjælper ej Drømme saa lidt som Digt,
+Er Fondet end aldrig saa stort og rigt;
+Ej Kærlighed bærer, faar Livet ej drage
+Sin Aande i Miner saavel som i Ord,
+Om ikke Erindring fra levede Dage
+Kan klinge deri som et tankerigt Kor.
+
+Vel ejed’ en Barndom jeg skøn og rig,
+Men Barndommen er kun det ulmende Liv,
+<pb n="40" facs="050.jpg"/>Og aldrig fik levet jeg Ynglingelivet,
+Det drømte jeg bort, ak! i Skyggernes Land,
+Fik aldrig med Verden i Kast mig givet,
+Har ej været Yngling — og nu er jeg Mand.
+</poetry>
+<prose>
+  68. Kort efter Filosoficum. Tungt, tungt, tungt — men godt. Det vigtigste Digt i hele Samlingen, hvorfor Mottoet ogsaa er taget deraf.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019121" variant="jacobsen2002092133">
+<head>
+  <title>Fjærn</title>
+  <firstline>Nu aabner hun vist sit Vindve</firstline>
+  <source pages="40-41" facsimile-pages="51-52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu aabner hun vist sit Vindve,
+Nu Natten mørk falder paa,
+Og Maanen straaler fra Himlen
+Med alle de Stjærner smaa.
+
+Dem sender hun milde Blikke,
+De blinke til mig igen,
+Saadan gennem Rummet vide
+Faar Hilsen jeg fra min Ven.
+
+En Regn af Straaler nedsender
+Sølvmaanen fra Himmelbo
+Og danner hen over Havet
+Af dem en funklende Bro.
+
+<pb n="41" facs="051.jpg"/>Nu ganger hun ud paa Broen,
+I Tanken, og jeg som hun:
+Snart ville vi mødes derude,
+I Tanken, ak! er det kun.
+
+Hun kommer — med Ild i Øje,
+Med Smil om sin Purpurmund,
+Dens glødende Buer kysse
+Jeg skal om en føje Stund.
+
+Jeg aner den milde Aande,
+Jeg venter det søde Kys,
+Jeg strækker min Arm at favne,
+Hvad jeg kun skuede nys. —
+
+Ak, Armen favner kun Luften,
+Og Kysset som Suk mig flyr,
+Natvinden isner min Pande,
+Mens Maanen svinder bag Sky’r.
+</poetry>
+<prose>
+65.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019122" variant="jacobsen2002092136">
+<head>
+  <title>Solnedgang</title>
+  <firstline>Svømmende Skyer, dejlige Cyclader</firstline>
+  <source pages="41-42" facsimile-pages="52-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Svømmende Skyer, dejlige Cyclader,
+Roser, der vugges paa Lufthavets Bryst,
+Stænkede af Sfærers tonende Kaskader,
+Sollyset skummende mod Eders Kyst,
+<pb n="42" facs="052.jpg"/>    I alene ere
+    Værdige at bære
+Navnet af Asalis lykkelige Land.
+
+Der skal hun throne, drømmende sig hvile,
+Der skal jeg knæle tavs hos hende ned,
+Der skal jeg glemme, mens I fremad ile,
+Livet og Verden, Gud og Evighed;
+    Et mig kun skal fylde
+    Løfte og fortrylle,
+Elskovs Evangelium i Asalis Navn.
+</poetry>
+<prose>
+  Undfanget i Sommerferien en Aften ved Solnedgang paa Odinshøj ved Hellebæk. 68. Skrevet i København efter Sommerferien 68. Godt. — Maaske om mange, mange Aar vil en Aften to Studenter staa paa Odinshøj og synge den vidt, vidt ud over Sundet, og mine Manes vil suse om dem.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019123" variant="jacobsen2002092140">
+<head>
+  <title>Saa er nu da Jorden en Kobbertyr</title>
+  <firstline>Saa er nu da Jorden en Kobbertyr</firstline>
+  <source pages="42-44" facsimile-pages="53-55"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Saa er nu da Jorden en Kobbertyr,
+En Phalaris grum «Gud Fader»,
+Og Smærte og Skuffelse er den Ild,
+Han Tyren ombølge lader.
+
+<pb n="43" facs="053.jpg"/>Han hører da oppe fra Himlen fro
+De martrede Sjæles Klager,
+Dog først naar en Digter er med deri,
+Ham rigtig Koncerten behager.
+
+Thi har da og jeg faaet mit Parti;
+Han véd, con espressione
+Jeg altid har sunget, og derfor skal
+Min Sang nu mod Himmelen tone.
+
+Saa synge vi da, men husker vel paa,
+Vi aldrig tør vorde tavse,
+Selv Dommedag, naar den kommer en Gang,
+Er ikkun en lille Pavse.
+
+Ja, stemmer nu op, I Sjæle paa Jord,
+Men vogter Jer for minuendo;
+Lad bruse det gennem al Evighed
+Med Kraft i et vældigt crescendo!
+
+Saa synge vi Solen og Maanen ud,
+Ned synge vi Stjærners Vrimmel,
+Saa synge vi selve Tiden istaa
+Og sammen Helved og Himmel.
+
+<pb n="44" facs="054.jpg"/>Saa synge vi Guddommens Throne i Kvag,
+Vi synge ham selver til Døde,
+Tilsidst vi synge os selv saa ihjel
+Og levende atter de døde.
+</poetry>
+<prose>
+  68.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019124" variant="jacobsen2002092156">
+<head>
+  <title>Afsted, min Baad!</title>
+  <firstline>Afsted, min Baad, afsted, min Baad</firstline>
+  <source pages="44" facsimile-pages="55"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Afsted, min Baad, afsted, min Baad,
+Ad Lidenskabens Strømme!
+Dig styrer ingen Viljes Ror,
+Hvorhen de vil, du svømme!
+
+Afsted, min Baad, afsted, min Baad!
+Længst Haabets Flag vi strøge,
+Der findes ingen Havn for dig,
+Hvor du kan Hvile søge.
+
+Afsted, min Baad, afsted, min Baad!
+Dig lyser ingen Stjærne,
+Snart knuses du i Fossens Fald,
+Det bruser i det fjærne.
+</poetry>
+<prose>
+66 eller 67.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019125" variant="jacobsen2002092157">
+<head>
+  <title>Ønskerne</title>
+  <firstline>Saa sikker du stander, du mørkladne Borg</firstline>
+  <source pages="45-46" facsimile-pages="56-57"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Saa sikker du stander, du mørkladne Borg
+Med Volde og Gravene brede,
+Med Broen optrukken og Porte tilstængt,
+Ja sikker som Fjeldørnens Rede.
+
+Og Vægteren vandrer paa Muren omkring
+Aarvaagen, med spejdende Øje,
+Med Lansen i Armen og Sværdet ved Lænd
+Og vogter saa tro og saa nøje.
+
+Dog ikke han mærker, hvor grant han end ser,
+At skøndt han saa stærkt monne stænge,
+Saa let over Gravene, Volde og Mur
+Der talløse Skarer sig trænge.
+
+Ja ustanset iler det brogede Tog,
+Saa tæt paa hinanden de følge
+Som Skyer, der jages af susende Storm,
+Som ved Strandbredden Bølge paa Bølge.
+
+De trænge sig ind til det signede Sted,
+Hvor Signelil sødt monne sove,
+Dog ikke de styrre den slumrende Mø,
+Hvor meget og mangt de end vove.
+
+<pb n="46" facs="056.jpg"/>En henover Lejet sig bøjer saa øm
+Og minder den snehvide Pande,
+En ænser alene de hvælvede Laag,
+Der dække de drømmende Vande.
+
+En leger med Lokkernes smidige Guld
+Og en med Fingrene hvide,
+En trykker sig til hendes rødmende Kind,
+En drikker de Aandedrag blide.
+
+En slynger sin Arm om den snehvide Hals,
+En vil hendes Hjærteslag høre,
+Helt mange sig trænge om Læben til Kys,
+Flest hende dog sukke i Øre.
+
+Men Vægteren vandrer paa Muren omkring
+Aarvaagen, med spejdende Øje,
+Med Lansen i Armen og Sværdet ved Lænd
+Og vogter saa tro og saa nøje.
+</poetry>
+<prose>
+  66 eller 67.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019126" variant="jacobsen2002092149">
+<head>
+  <title>Mod Dæmring</title>
+  <firstline>Afsted, før Solen tænder</firstline>
+  <source pages="46-47" facsimile-pages="57-58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Afsted, før Solen tænder
+De vestlige Skyer i Brand,
+Før Natten Dæmring sender
+Udover det tavse Land.
+
+<pb n="47" facs="057.jpg"/>Afsted fra dunkle Skove
+Og rullende Bølgers Pragt,
+Min Sjæl tør her ej vove
+En Kamp mod Dæmringens Magt.
+
+Afsted! nu dale Drømme,
+Saa lidet jeg drømme maa.
+Nu stige Minde-Strømme,
+Jeg ikke vil vugges paa.
+
+Afsted til blussende Kvinder
+Og skummende Bægres Klang:
+Der dræbes de gamle Minder
+Ved Kys og jublende Sang.
+</poetry>
+<prose>
+68. Gurre Sø mod Dæmring. Ret god.
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019127" variant="jacobsen2002092154">
+<head>
+  <title>Lad mig ej dø!</title>
+  <firstline>Lad mig ej dø en Dag, Naturen bader</firstline>
+  <source pages="47-49" facsimile-pages="58-60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lad mig ej dø en Dag, Naturen bader
+Sig glad og lykkelig i Solens Glans,
+Mens tusend Fugle fro i Lunden juble,
+Og Bølgen vugger sig i livsglad Dans,
+<pb n="48" facs="058.jpg"/>Mens milde Vinde sprede Blomsters Duft,
+Og ingen Sky gør mørk den lyse Luft!
+
+Det, som af alting renest jeg har elsket,
+Naturen med dens rige Liv og Pragt,
+Hvis hemmeligste Aandedrag jeg fulgte,
+En Elsker lig, ved Brudens Leje Vagt, —
+Den skal ej smile ligegyldig fro,
+Naar Afskedsstunden kommer for os to.
+
+Lad mig ej dø, mens Dæmringssukket hæver
+Sig fra Naturens angstomspændte Bryst,
+Naar Vemodsdraget fødes paa dens Pande
+Ved Mindet om de lyse Timers Lyst!
+En Medlidstaare vil det synes klar,
+Og stedse bedsk mig Medlidstaaren var.
+
+Nej, lad mig dø en Høstnat vild og dunkel,
+Naar Stormen farer over Hav og Land,
+Og hvirvler Løvet om i sære Kredse
+Og slynger Bølgen fraadende mod Strand,
+Naar Skyer stævne frem i sælsom Flugt,
+Og hver en Stjærne er paa Himlen slukt!
+
+<pb n="49" facs="059.jpg"/>Da kan jeg tro, at lydt Naturen jamrer
+Og hyller sørgende sit Hoved til,
+Og hvad med mig den hele Verden taber
+Jeg se i Skyernes det sære Spil:
+Det er de Skikkelser, jeg skulde fød,
+Men som med mig nu dø den aarle Død.
+
+<nonum>  (Septbr. 1868.)</nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</content>
+</section>
+
+<text id="jacobsen20261019128" variant="jacobsen2026101906">
+<head>
+  <title>En Kaktus springer ud</title>
+  <firstline>Naar man i Tanken lader Rækken af sine bekendte glide forbi</firstline>
+  <notes>
+    <note>Digtsamlingen indeholder blandt andet tekstversioner af <xref poem="jacobsenandrea0"/>, <xref poem="jacobsenandrea2"/> og <xref poem="jacobsenandrea4"/>.</note>
+  </notes>
+  <source pages="53-119" facsimile-pages="64-130"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Naar man i Tanken lader Rækken af sine bekendte glide forbi, saa ser man altid dem, til hvem man ikke er kommet i et nært og inderligt Forhold, lade sig til Syne i en vis bestemt Situation.
+  Saaledes gaar det i det mindste mig.
+  En drejer for Eksempel altid hilsende om et Hjørne, en anden finder jeg altid staaende ved mit Vindu med Blikket fæstet paa Genbohuset. Der er en aldrende Mand, som stedse sidder og stirrer tankefuldt ned i sin Suppe, hvorover utallige Fluer summe, og en elegant ung Mand, der stedse følges af en Nøddeknækker, der viser Tænder i Skyggen af en stor Kalla.
+  Af de mange saadanne Billeder, som nu drage mig forbi, vil jeg fastholde et enkelt.
+  Det er en gammel Mand, der bøjer sig ned over en prægtig Rose og kysser en nys udfoldet <pb n="54" facs="064.jpg"/>Knop. Han er Krigsraad. Krigsraaden holder usigelig meget af sine Blomster, ogsaa af andres, men som man holder af andres Børn i Forhold til sine egne; men havde nu disse andre et ejendommeligt Blomsterbarn, som de ikke forstode at pleje, som det skulde plejes for at blive til noget, saa tog han det til sig og var mod det som mod sine egne og skiltes nødig fra det. Han blev vred, naar man ikke var god ved Blomster, og gik endogsaa stundom ind til vildfremmede Mennesker og gav dem Tilhold om at vande den Heliotroph, de havde i Vinduet, og beskære Myrthen, der stod ved Siden af den. Denne Krigsraad havde en Datter, hun hed ikke Julie; men jeg vil kalde hende Julie. Om hun var smuk? Ja! se nu, hvad Krigsraaden mente. Jeg har nemlig Krigsraaden mistænkt for et stærkt Hang til Symbolik; jeg tror, at de Blomster, der stode i Dagligstuen, hver havde sit Navn efter en af hans kære, og hvad en dejlig hvid Nerium angaar, som stod paa et lille Blomsterbord for sig og prangede med sine mørke Blade og skære, duftende Blomster, saa er jeg ganske vis paa, at den hed, hvad Julie hed.
+  Vi vare fem unge Mennesker, der stadig <pb n="55" facs="065.jpg"/>kom der i Huset: Per og Povl, Karl og Jesper og — Mads. Sidste Gang, vi alle vare samlede der, var en Aften i Oktober og det i Anledning af en meget sjælden Kaktus, som nu endelig efter ni Aars omhyggelige Pleje havde faaet en Blomst, der efter denne Kaktus’es Skik vilde aabne sig en Gang i Løbet af Natten med et stort Knald. Nu skulde jo Ventetiden gaa med noget, og da vi unge, hvad der ikke er nogen Sjældenhed, troede, vi vare Digtere, — Karl var dog baade for vort og sit eget Vedkommende vis paa, at det var en Fejltagelse, — saa havde vi ladet Krigsraaden forstaa, at vi vilde paatage os at udfylde Pavserne mellem Theen og Frugtskaalenes Vandringer.
+  Der var nu blevet indbudt en Del Damer og Herrer, men paa Grund af det daarlige Vejr og andet lovligt Forfald havde, med Undtagelse af en døv Assessor, ingen andre end vi fem givet Møde. Men hvad gjorde vel det, Julie var der, og det var dog egenlig hende, for hvem vi vilde læse, hende, af hvem vi vilde beundres.
+  Nu! Kaktus’en stod midt paa Bordet, Krigsraaden og Assessoren sad hver i sin Ende af Sofaen, Julie vandt Garn af en nydelig antik <pb n="56" facs="066.jpg"/>Garnvinde, der havde tilhørt hendes afdøde Moder, og Karl sad hos hende og klippede Vindsler med en umaadelig Havesaks. Vi andre dreve lidt ulykkelige omkring, fortabte os i Billederne paa Væggene, talte Striberne i Tapetet, gennemgik Visitkortene, løftede paa Rullegardinet for at se, om det var stjærnelyst, og hørte uagtet al denne Travlhed dog hvert Ord, der blev sagt i Stuen, saa vi kunde le, naar Assessoren var vittig.
+  Endelig var Julie saa venlig at anmode Povl om at begynde, og han læste da:
+</prose>
+<poetry>
+<nonum><center>Efteraar.</center></nonum>
+
+Skoven staar i sin fejreste Dragt,
+Frugter er komne til Blades Pragt,
+Rigere mægter den aldrig sig smykke,
+Nærmere kan den mod Maalet ej rykke,
+    Maalet er naa’t.
+
+Høstvind kommer med Lumskhed og List,
+Kysser hvert Blad, der hænger paa Kvist,
+Bringer en Hilsen fra Vaarvinde milde,
+Minder det trædsk om den Tid, det var lille,
+    Løvspringets Tid.
+
+<pb n="57" facs="067.jpg"/>Længselsfuldt mindes nu hvert et Blad
+Tiden, det drømte i Knoppen glad,
+Mindes det Nu, da befriet det strakte
+Ud mod det Lys sig, der venligt det vakte,
+    Kyssed’ det grønt.
+
+Om vil det leve den Tid, der svandt hen,
+Lyst nu for Vinden det flagrer igen;
+Ej har dog Vaarfarvens Friskhed det vundet,
+Visnet det hænger, dets Farve er svundet,
+    Maalet var naa’t.
+
+Høstvind kommer sin hærjende Gang,
+Tuder for Blade sin spottende Sang:
+«Gaar I i Barndom, saa er I for gamle,
+Ned skal I alle fra Grenene ramle,
+    Maalet er naa’t.»
+
+Løvet nu falder, dog Blade smaa,
+Ret som om atter i Knop de laa,
+Rulle sig sammen, skøndt revne fra Kviste,
+Holde ved Drømmene fast til det sidste,
+    Drømme om Vaar.
+</poetry>
+<prose>
+  «O ja! o ja!» sukkede Assessoren, «Efteraaret er en meget melankolsk Aarstid og usund, meget usund!»
+<pb n="58" facs="068.jpg"/>  Jesper saa’ medlidende over paa Sofafolkene, smilede til Julie, og læste:
+</prose>
+<poetry>
+<nonum><center>Stemninger.</center></nonum>
+
+<nonum><center>I.</center></nonum>
+
+I Rummet det vældige vugges
+Vor Jord som paa Havet et Blad,
+Og jeg er et Støvgran, der glimter
+«Gud» véd i Lyset af hvad?
+Og dog er det hele Solsystem,
+Der vugges i Æthrens Bad,
+En Krusning i mine Tankers Hav,
+Kun lille, og kruset af hvad?
+
+
+---
+
+
+<nonum><center>II.</center></nonum>
+
+Med store Tanker har jeg levet,
+Og dybe Stemninger mig bar
+Saa tidt til Aandens lyse Rige,
+Hvor Sandhedssolen funkler klar.
+
+Paa Skønhedshavet har jeg vugget
+Og lyttet til dets Vovers Klang,
+Og Dybets fine klare Perler
+Jeg dristig hented’ paa min Gang.
+
+<pb n="59" facs="069.jpg"/>Rigt var mit Liv paa Sorg og Smerte,
+Men og paa Fryd, selv i dets Kval,
+Og blev jeg slaaet i dets Kampe,
+Jeg vandt og Sejre paa dets Val.
+
+Og dog, hvor gerne veg jeg ikke
+Min Plads i denne stolte Dans
+Og gav med Glæde Aandens Vælde
+Bort for en Bondes sløve Sans.
+
+O, hvilken Ro dog kun at tænke
+Paa hvad et søvnigt Blik kan se,
+Hvad Værd ej har, værdifuldt finde,
+Og dumt ad Aandens Tale le;
+
+Og saa tilsidst henslumre rolig
+Med Drøm om Himlens Fryd og Mag,
+Om Gensyn med afdøde Koner
+Og Haab om Søndag hver en Dag!
+</poetry>
+<prose>
+  «Det minder mig ganske om den Tid, jeg gav mig af med Botanik,» udbrød Krigsraaden, «der var saa megen Tale om, at dobbelte Blomster vare vanskabte, og jeg kunde aldrig se paa en Rose uden at pille den fra hinanden for at se al den Støvdragerjammerlighed, der gemtes <pb n="60" facs="070.jpg"/>bag de kønne Blade. Da længtes jeg ogsaa efter min gamle Bondeforstand, nu har jeg den — Gudskelov!»
+  Julie bad nu Per at glæde os med et eller andet. Per sad og saa’ paa sine Støvler og lod meget overrasket og meget uvillig. Da han var færdig med dette Forspil, begyndte han:
+</prose>
+<poetry>
+<nonum><center>En Arabesk.</center></nonum>
+
+Har du faret vild i dunkle Skove?
+Kender du Pan?
+Jeg har følt ham,
+Ikke i de dunkle Skove,
+Medens alt tiende talte,
+Nej! den Pan har jeg aldrig kendt,
+Men Kærlighedens Pan har jeg følt,
+Da tav alt talende.
+
+I solvarme Egne
+Vokser en sælsom Urt,
+Kun i dybeste Tavshed,
+Under tusende Solstraalers Brand,
+Aabner den sin Blomst
+I et flygtigt Sekund.
+<pb n="61" facs="071.jpg"/>Den ser ud som en gal Mands Øje,
+Som et Ligs røde Kinder:
+Den har jeg set
+I min Kærlighed.
+
+Hun var som Jasminens sødt duftende Sne,
+Valmueblod randt i hendes Aarer,
+De kolde, marmorhvide Hænder
+Hvilede i hendes Skød
+Som Vandliljer i den dybe Sø.
+Hendes Ord faldt blødt
+Som Æbleblomstens Blade
+Paa det dugvaade Græs;
+Men der var Timer,
+Hvor de snoede sig kolde og klare
+Som Vandets stigende Straale.
+Der var Suk i hendes Latter,
+Jubel i hendes Graad;
+For hende maatte alt bøje sig, —
+Kun tvende turde trodse hende,
+Hendes egne Øjne.
+
+Af den giftige Liljes
+Blændende Kalk
+Drak hun mig til,
+Ham, der er død,
+Og ham, der nu knæler ved hendes Fod.
+<pb n="62" facs="072.jpg"/>Med os alle drak hun
+— Og da var Blikket hende lydigt —
+Løftets Bæger om usvigelig Troskab
+Af den giftige Liljes
+Blændende Kalk.
+
+Alt er forbi!
+Paa den snedækte Slette
+I den brune Skov
+Vokser en enlig Tjørn,
+Vindene eje dens Løv.
+Et for et,
+Et for et
+Drypper den de blodrøde Bær
+Ned i den hvide Sne,
+De glødende Bær
+I den kolde Sne. —
+
+Kender du Pan?
+</poetry>
+<prose>
+  Per saa’ bifaldsfordrende hen paa Julie, og hun nikkede venligt til ham med Begejstring i Blikket, men ikke ubetydelig forvirret; thi hun havde hele Tiden, mens Per læste, hvisket med Karl og saaledes næppe hørt et eneste Ord.
+  Assessoren lo og hostede og raabte: «Su<pb n="63" facs="073.jpg"/>perbt, superbt, ikke sandt, Krigsraad? Fortrinligt, i Sandhed fortrinligt!»
+  Krigsraaden vendte sig mod Per og sagde lidt forlegent: «Ja, De maa virkelig undskylde mig, men jeg kunde Gud hjælpe mig ikke forstaa det, men det lød overmaade dejligt.»
+  «Netop!» udbrød Jesper, Mads og Povl paa en Gang og antydede ved deres Armbevægelser, at de havde en hel Del at sige om den Sag, men afbrødes heldigvis ved, at Pigen bragte Aften-Berlingeren ind. Selvfølgelig lagde Avisen Beslag paa alles Opmærksomhed; men den Ting er ikke til, man jo omsider bliver ked af, og Jesper anmodedes om at læse. Han foldede meget langsomt sit Manuskript ud, saa’ længe mørkt frem for sig, og tog saa fat paa:
+<center>Udlændinge.</center>
+  Det hænder undertiden, at Frø fra sydlige Lande af Vind og Vove føres op til Nordens Kyster, og stundom spirer det; men Luften er den fremmede Plante for kold, det stærke Strandgræs tager Væksten fra den og skygger over den, og al den Skønhed, den i sit Hjem havde mægtet udfolde, kan kun et Forskerøje ane i <pb n="64" facs="074.jpg"/>den forkrøblede Stængel og de gule hængende Blade . . . Det er to saadanne Planter, jeg vil vise dig; men vil nu du være Forskeren, der i den kuede Vækst aner den ranke Stamme, Livets grønne Fylde og Blomsternes Farvepragt, og saaledes give dem et Skær af det Skønhedsliv, det blev dem nægtet at føre?
+  Det var da i en jysk Landsby (Vestervig), paa et stort Sommermarked. Midt paa Pladsen stod en Liremand, Karle og Piger i Kreds om ham, fortabte i det Tonehav, der strømmede ud over dem, glade, men med alvorsfulde Miner, saaledes som det sømmer sig for voksne Folk. Dog var der én, som helt og aabent hengav sig til Tonerne; han nynnede saa smaat med, slog med Hovedet, gjorde nu og da et Dansetrin og vendte sig med glade, forundrede Øjekast snart mod én, snart mod en anden, som vilde han sige: «kan I da blive staaende?» og deres rolige Blikke svarede ham det bestemteste Ja, og enkelte Knøses svedne Grin tilføjede endog en stille Tvivl om hans Forstand. Med ét blev han, helt ovre paa den anden Side, en Pige vár, som stod med halvt lukkede Øjne og vuggede Hovedet i Takt. Han fór over mod hende, greb hendes Haand, og snart svingede <pb n="65" facs="075.jpg"/>de rundt paa Græsset. Det var ikke nogen Dansemelodi, der lød just i dette Øjeblik; men den Dans, de improviserede, gik med et Liv og en Sikkerhed og sluttede sig saa nøje til Melodien, som var det hele dem begge noget gammelt og vel bekendt.
+  «Det er da sært, de saadan vil danse,» hviskede en ganske ung Bondepige til en ældre.
+  «Aa hvad! der er jo ingen af dem, der er af Folk.»
+  «Hvordan det?»
+  «Aa, han er jo opfødt i Fattighuset, hans Moder kaldte de Grethe Rakker, og hun var nok en Kæltringpige.»
+  «Men Pigen?»
+  «Du kan nok se, at hun er af de sorte, hendes Fader var Sergeant ved Spaniolerne.»
+  Men de to glade, der havde fundet hinanden, vilde ikke skilles. En Maaned efter lode de sig vie. De havde ingen Slægt og hvad de ejede var kun lidet, dog saa meget, at en Mand derfor overlod dem et lille Hedehjørne, hvorpaa der laa en Høj. Højen fik de indrettet til Hus; men Heden blev aldrig Have, som de først havde tænkt; thi Jens vilde hellere tjene Brødet ved at spille paa Klarinet end ved <pb n="66" facs="076.jpg"/>at grave, og Karen vilde før spinde end luge. Her levede de nu meget lykkeligt, og da Sommermarkedet kom igen, tog Jens derhen med sin Klarinet; men Karen maatte blive hjemme, thi der var en tredje i Højen, der ikke kunde raade ene.
+  Aarene gik, og den lille, Else havde de kaldt den, voksede sig smuk og klog og tumlede sig lystigt fra Morgen til Aften mellem de brune Lyngbuske.
+  Pludselig blev hun meget syg, Dage og Nætter sad Forældrene ved hendes Leje; men Sygdommen veg ikke.
+  Endelig vaandede hun sig i den sidste Kamp; Jens flygtede forfærdet udenfor, men Moderen bad sit Fadervor, og da hun mærkede, at det ikke raabte om dét, hun dette Øjeblik ene søgte, saa gav hun selv Ord til Bønnen og bad: «Vorherre! jeg véd, at du er en god Mand, og har vi været for glade og ikke tænkt nok paa dig, saa maa du nu ikke være for stræng ved os; tag ikke mit Barn fra mig! kan du ikke lade os faa det, som vi havde det, saa lad mig blive syg, det er jo os store, der skal rammes, ram os saa, men lad ikke mit uskyldige Barn lide!»
+<pb n="67" facs="077.jpg"/>  Men Barnet vred sig i Dødssmærten, og Moderen skreg i Fortvivlelse: «Hold op, Vorherre! lad ikke Sygen tage saaledes i hende, hjælp hende, se, hvor hendes Hænder knytte sig, se, hvor hendes Øjne se paa mig om Hjælp! o Gud, det er Synd af dig!»
+  Men Barnet døde.
+  Dagen efter gik nu Jens til Præsten og bad ham, om Barnet maatte blive begravet i Heden, lige udenfor Højen, der havde det haft sine lykkeligste Timer og der vilde det vist helst ligge, nær ved dem; Kirkegaarden kendte det slet ikke noget til, og der vilde de saa nødig have det hen mellem lutter fremmede. Præsten søgte nu at gøre ham begribeligt, at Kirkegaarden var det eneste rigtige Sted at ligge, naar man var død, og at den kristne Kirkes Børn ikke kunde begraves i uindviet Jord som andre Hedninger.
+  Præsten fik da sin Vilje.
+  Sorgen gjorde det nu en Stund mørkt for dem; men de vare unge, og Livet fik atter Lys og Lød. De flyttede bort fra Egnen ind til Købstaden, hvor Jens blev ansat ved nogle Danseboder og Karen fik nok at spinde.
+  Der var dog ogsaa Dage, hvor de op<pb n="68" facs="078.jpg"/>traadte sammen, og til disse længtes de som Børn. Naar der nemlig var en eller anden Fest i Byen, der skulde være rigtig straalende, saa bestilte man Parret til at gøre Musik. Og hvor var det da ikke morsomt for kloge Folk at se den gale Jens Klarinet kaste kælne og beundrende Blikke til sin Kone, medens hans Fingre smuttede hen over Hullerne paa Instrumentet, som var det en Mandolins Strænge, de behandlede, og hvor uendelig komisk var det ikke at se Karen, en gift Kone, ryste, svinge og slaa en uhyre Tamburin, og endelig hvilken Masse Indfald blev der efterhaanden ikke at mindes og at gentage, efter som Aarene led, thi der blev ingen Vittigheder glemte, og Jens og Karen blev ved at optræde, længe efter at deres Haar var begyndt at graane.
+  Men anden Gang vilde Døden gæste deres Hjem og sendte sin Tjener Sot at berede den Vejen. Karen var syg, meget syg, og Jens sad hos hende, naar han ikke var ude at søge Raad; thi alt, hvad der hed Læge, klog Kone og klog Mand i flere Miles Omkreds hentede han til den syges Seng, og lovende dem alt, hvad han ejede, tiggede han dem paa sine Knæ om at gøre Karen rask.
+<pb n="69" facs="079.jpg"/>  Men Karen døde.
+  Aftenen var mild og stille. Jens hentede Tamburinen, lagde den i den dødes Hænder, tog saa sin Klarinet frem og spillede de Melodier, hun mest havde elsket; først spillede han en lille Sang, og Ordene klang om ham saa tunge og vemodige:
+</prose>
+<poetry>
+<small>«Det var en Lørdag Aften,</small>
+<small>Jeg sad og vented’ dig,</small>
+<small>Du loved’ mig at komme vist,</small>
+<small>Men kom dog ej til mig.»</small>
+</poetry>
+<prose>
+  Saa spillede han den sære Dans, som hun altid vilde høre, men Bønderne aldrig vilde danse efter, fordi den ingen Ting lignede, som de sagde.
+  Men Nabokonen hørte Musiken inde hos den døde; hun gik straks ind til Jens, og med Forargelsens hele Pathos raabte hun: «hvad er du dog for et Menneske! sidder du ikke her og spiller Danse ved din Kones Lig!»
+  Jens saa’ forundret paa hende.
+  «Ud med dig! hverken for Gud eller Mennesker kan jeg forsvare at lade dig blive her hos Liget.»
+  Og Jens gik ud og drak sig fuld. Men det var det første, man kunde forstaa af alt, <pb n="70" facs="080.jpg"/>hvad han havde gjort, og Folk sagde, at den gale Jens Klarinet var bleven klog, da hans taabelige Kone døde.
+  Men Jens blev ved at drikke.
+
+---
+
+  Der blev meget stille i Stuen, hvad der gjorde Julie og Karl meget forlegne, da de ikke vidste hvorfor. Karl vilde sige noget, men vidste ikke hvad; — saa væltede han en Frugtskaal, og leende tumlede hele Selskabet omkring efter trillende Æbler og hoppende Valdnødder. Nu skulde Povl frem; han drak tre Glas Vand og foredrog saa:
+</prose>
+<poetry>
+<nonum><center>Gurresange.</center></nonum>
+
+<nonum><center>I.</center></nonum>
+
+<nonum><center>Valdemar.</center></nonum>
+
+Den blaalige Dæmring nu dæmper
+Hver Tone fra Sø og Land,
+De flyvende Skyer har lagt sig
+Til Hvile ved Himlens Rand,
+I lydløs Tynge samlet
+Er Skovens luftige Bo,
+<pb n="71" facs="081.jpg"/>Og Søens klare Bølger
+Har vugget sig selv til Ro.
+I Vesten kaster Solen
+Sin straalende Purpurdragt,
+Saa drager den over sig Bølgen
+Og drømmer om Dagens Pragt.
+Ej mindste Løv sig rører
+Og kalder paa min Sans,
+Ej mindste Tone klinger
+Og vugger mit Sind i Dans,
+Nej, hver en Magt er sunken
+I egne Drømmes Elv
+Og skyder mig blidt og stille
+Tilbage til mig selv.
+
+<nonum><center>II.</center></nonum>
+
+<nonum><center>Tove.</center></nonum>
+
+O, naar Maanens Straaler milde spille,
+Naar omkring mig alt er tyst og stille,
+Da er Vand mig ikke Søens Vove,
+Træer ej de dunkle, tavse Skove,
+Sky ej, hvad mig Himlens Hvælving dølger,
+Dal og Bakke ikke Jordens Bølger,
+<pb n="72" facs="082.jpg"/>Form ej Form og Farven ikke Farve,
+Alt: et Udtryk for hvad Gud har drømt.
+
+<nonum><center>III.</center></nonum>
+
+<nonum><center>Valdemar.</center></nonum>
+
+Ganger! staar du nu og drømmer!
+Nej, jeg ser det, Vejen strømmer
+Hurtig bort dig under Hoven.
+Stærkere dog frem du sprænge,
+Du er endnu midt i Skoven,
+Medens jeg dig ventet længe
+Har ved Gurre Borgeled.
+Skoven slipper, alt jeg øjner Tovelilles fagre Bur,
+Skovens Træer bag os glide sammen til en dunkel Mur;
+Men end vildere du jage!
+Ser du Skyens Skygge trække
+Over Mark og Mose frem?
+Før den Gurres Grund kan række,
+Maa vi staa ved Toves Hjem.
+Før den Tone, som nu klinger,
+Gaar for Evighed til Ro,
+<pb n="73" facs="083.jpg"/>Maa dit rappe Hovslag ryste
+Gurre-Borgens lille Bro;
+Før det Blad, der falder,
+Bækkens Bølger naa’r,
+Maa din Vrinsken gjalde
+Lydt i Gurregaard.
+Skygge kom og Tone dø,
+Dyk dig Blad i Vove,
+Volmer ser sin Tove!
+
+<nonum><center>IV.</center></nonum>
+
+<nonum><center>Tove.</center></nonum>
+
+Stjærner juble, Søen lyser,
+Trykker sit bankende Hjærte mod Kyst,
+Løvet nynner, Duggen danser,
+Vinden sig kaster saa kaad til mit Bryst.
+Vejrhanen synger og Taarnene nikke,
+Svendene spanke med flammende Blikke,
+Ternerne dæmpe med Haanden forgæves
+Barmen, der sælsomt uroligen hæves.
+Roserne stirre med Haand over Bryn,
+Faklerne hjælpe det daarlige Syn.
+Skoven nu aabner sit Ly,
+Hundene glamme i By,
+<pb n="74" facs="084.jpg"/>Stien, i stedse nærmere Bølger,
+Vugger den dristige Rytter mod Havn,
+Og i den næste Stigning, som følger,
+Slynger den ham i min aabnede Favn.
+
+<nonum><center>V.</center></nonum>
+
+<nonum><center>Mødet.</center></nonum>
+
+<nonum><center>Valdemar.</center></nonum>
+
+Ej danse de Engle for Herren saa herligt,
+Som Verden nu danser for mig!
+Ej juble for ham de mer ydmygt og kærligt,
+End Valdemars Hjærte for dig.
+Men stoltere satte ejheller sig Krist
+Hos Herren, og lo af sin Kvide,
+End Valdemar, glemmende Kummer og Tvist,
+Sig sætter ved Tovelils Side.
+
+Ej længes de Sjæle for Himmerigs Mure
+Mer efter at svinge sig ind,
+End Valdemar, da han fra Øresunds Kure
+Saa’ Gurres guldglimtende Tind.
+Og ej vil jeg bytte dets fredsæle Vang
+Og Perlen, den lønligen varer,
+<pb n="75" facs="085.jpg"/>For Himmerigs Glans og bedøvende Klang
+Og alle de helliges Skarer.
+
+<nonum><center>Tove.</center></nonum>
+
+Nu siger jeg dig for første Gang:
+«Kong Volmer, jeg elsker dig.»
+Nu kysser jeg dig for første Gang
+Og slynger min Arm om dig.
+Og siger du, at jeg det før har sagt
+Og at du til Kysset er vant,
+Saa siger jeg: «Kongen han er en Nar,
+Der mindes forfængelig Tant.»
+Og siger du, saa er jeg selv slig Nar,
+Saa siger jeg: «Kongen har Ret,»
+Men siger du, at jeg det ikke er,
+Saa siger jeg: «Kongen er slet.»
+For alle mine Roser har jeg kysset ihjel,
+Alt mens jeg tænkte paa dig.
+
+<nonum><center>Valdemar.</center></nonum>
+
+Det er Midnattens Stund,
+Og usalige Slægter
+Staa frem af glemte, sunkne Grave,
+Og de stirre med Længsel
+Paa Borgens Kerter og Hyttens Lys,
+Og Vinden ned over dem
+Spottende ryster
+<pb n="76" facs="086.jpg"/>Harpeslæt og Bægerklang
+Og Elskovssange.
+Og svindende de sukke:
+«Vor Tid er forbi!» —
+Mit Hoved vugges paa levende Bølger,
+Min Haand fornemmer et Hjærtes Slag,
+Ned over mig livssvulmende strømmer
+Kyssets glødende Purpurregn.
+Og min Læbe jubler:
+«Det er min Tid nu!»
+Men Tiden flygter,
+Og jeg skal færdes
+Ved Midnatstide
+En Gang som død,
+Skal samle Ligdragten om mig tæt
+Mod de kolde Vinde,
+Og liste mig frem ved sildig Maane,
+Og smærtebunden
+I Muldet riste
+Med sorte Gravkors
+Dit kære Navn,
+Og synkende sukke:
+«Vor Tid er forbi!»
+
+<nonum><center>Tove.</center></nonum>
+
+Du sender mig et Elskovsblik
+Og sænker saa Øjet,
+<pb n="77" facs="087.jpg"/>Dog Blikket trykker din Haand i min,
+Og Trykket dør;
+Men som et elskovsvækkende Kys
+Du lægger mit Haandtryk paa min Læbe. —
+Og du har for Døden et Suk,
+Naar et Blik kan opstaa
+Som et flammende Kys!
+De lysende Stjærner paa Himlen hist
+Vel blegne hver Gry,
+Men blusse dog hver en Midnatsstund
+I evig Pragt.
+— Saa kort er Døden
+Som rolig Slummer
+Fra Kvæld til Gry,
+Og naar du vaagner,
+Hos dig paa Lejet
+I nyfødt Skønhed
+Du straale ser
+Din unge Brud.
+Saa lad os da tømme
+Den gyldne Skaal
+For den mægtigt forskønnende Død;
+Thi vi gange til Grav
+Som et Smil, der dør
+For et saligt Kys.
+<pb n="78" facs="088.jpg"/><nonum><center>Valdemar.</center></nonum>
+
+Vidunderlige Tove!
+Saa rig ved dig er jeg nu,
+At end ej et Ønske jeg ejer.
+Mit Bryst er saa let,
+Min Tanke saa klar,
+En vaagen Fred er over min Sjæl.
+Der er saa stille i mig,
+Saa sælsomt stille.
+Læben vil bygge paa Ordets Bro,
+Men synker igen til Hvile;
+Thi det er mig, som banked’ mit Bryst
+Ved dit Hjærtes Slag,
+Og som mit Aandedrag
+Hæved’, Tove, din Barm.
+Og jeg ser vore Tanker
+Fødes og glide sammen
+Som Skyer, der mødes,
+Og samlede vugges de i vekslende Former.
+Og min Sjæl er stille,
+Jeg ser i dit Øje og tier.
+Vidunderlige Tove!
+<pb n="79" facs="089.jpg"/><nonum><center>VI.</center></nonum>
+
+<nonum><center>Skovduens Sang.</center></nonum>
+
+Gurre Duer! Sorg mig tynger,
+Samlet paa Flugt over Ø, —
+Kommer! lytter!
+Død er Tove! Nat paa hendes Øje,
+Det, der var Kongens Dag.
+Stille er hendes Hjærte,
+Men Kongens vugger vildt,
+Dødt og dog vildt!
+Sælsomt lig Baad paa Vove,
+Naar den, Plankerne krummede sig for at favne —
+Snekkens Styrer — ligger død, hildet i Dybets Tang.
+Ingen bærer dem Bud,
+Ufør er Vejen.
+Som tvende Strømme vare deres Tanker,
+Strømme, der fulgtes Side om Side.
+Hvor rinde nu Toves Tanker?
+Kongens i sælsomme Bugter sig vride,
+Søgende Toves,
+Finder dem ikke.
+Vide fór jeg, Sorg mig sanked’, meget jeg saa’!
+Kisten saa’ jeg paa Kongens Skuldre,
+<pb n="80" facs="090.jpg"/>Henning den støtted’;
+Mørk var Natten, en enkelt Fakkel
+Lyste i Gyden,
+Dronningen holdt den, højt paa Svalen,
+Skjalv for sin Hævn;
+Taarer, som ikke græde hun vilde,
+Funkled’ i Blik.
+Vide fór jeg, Sorg mig sanked’, meget jeg saa’!
+Kongen jeg saa’ i Bondekofte
+Køre med Kisten,
+Gangeren, som ham bar til Sejer,
+Maatte den drage.
+Vildsomt vankede Kongens Øje,
+Søgte et Blik,
+Sælsomt lyttede Kongens Hjærte
+Efter et Ord.
+Henning talte Ord til Kongen,
+Blik og Hjærte søgte dog end.
+Kongen aabner for Toves Kiste,
+Stirrer og lytter med bedende Læbe,
+Tove er tavs.
+Vide fór jeg, Sorg mig sanked’, meget jeg saa’!
+Munken vilde Rebet drage
+Ringe Solen ned,
+Men han saa’ paa Køresvenden,
+Sorgens Rune til ham talte:
+<pb n="81" facs="091.jpg"/>Solen sank til Klang, som lyder
+Over Jordens døde.
+Vide fór jeg, Sorg mig sanked’, Død dertil.
+Helvigs Falk
+I Kongegaarden
+Gurres Due slog.
+
+<nonum><center>VII.</center></nonum>
+
+<nonum><center>Valdemar.</center></nonum>
+
+Herre, véd du, hvad du gjorde,
+Da du Tove fra mig tog?
+Véd du, at det var mit sidste
+Fristed, hvorfra du mig jog?
+Herre, rødmer du ej af Skam,
+Det var den fattiges eneste Lam!
+
+Herre, jeg er ogsaa Hersker,
+Jeg har lært paa Kongestol,
+Man fra sine Undersaatter
+Ta’r ej sidste Glimt af Sol.
+Herre, du er paa vilse Vej,
+Saadan vel knuser, men hersker man ej!
+
+<pb n="82" facs="092.jpg"/>Herre, dine Englehære
+Fylde Øret dig med Lov,
+Ingen Ven du har, der dadler,
+Naar du Dadel har Behov.
+Ak, og ingen er altid klar,
+Herre, lad mig derfor være din Nar!
+
+<nonum><center>VIII.</center></nonum>
+
+<nonum><center>Den Vilde Jagt.</center></nonum>
+
+<nonum><center>Valdemar.</center></nonum>
+
+Vaagner, alle Kong Volmers Mænd!
+Spænder rustede Sværd ved Lænd,
+Henter i Kirker det støvede Skjold,
+Prydet med Mærker af Dyr og af Trold.
+Væk Eders Heste, der græsse i Muld,
+Sæt dem i Siden de Kringler af Guld,
+Sprænger mod Gurreby,
+Det er Dødningegry!
+
+<nonum><center>Bondens Sang.</center></nonum>
+
+Klap, klap med Kistelaag,
+Tunge Trin af Nattetog;
+Græstørv skyder af Muld,
+<pb n="83" facs="093.jpg"/>Toften klinger af Guld,
+Klirren og Klappen i Vaabenhus,
+Hvisten og Kasten med gammelt Grus,
+Stenene ramle i Kirkegaardsdige,
+Høgene suse fra Taarnet og skrige,
+Kirkeporten slaar op og i, —
+Ned under Dynen, der fór de forbi.
+
+— Jeg slaar tre hellige Herrens Kors
+For Folk og Hus, for Ko og Hors,
+Tre Gange nævner jeg Frelserens Navne,
+Saa skade de ikke min Sæd for en Avne.
+Saa tegner jeg mig paa Ledemod,
+Hvor Herrens hellige Vunder stod,
+Da bliver for Elverskud jeg fri,
+For Mareridt og for Troldespi;
+Sidst lægger for Døren jeg Staal og Sten,
+Da voldes slet ingen i Huset Mèn.
+
+<nonum><center>Valdemars Mænd.</center></nonum>
+
+Vær hilset, Konge, ved Gurre Sø!
+Nu spænde Jagten vi over Ø,
+Vi Pile sende fra strængløs Bue,
+Med Øjne sigte, som ej kan skue,
+Vi Hjortens Skygge med Vunder slaar,
+Og Engvand siver som Blod af Saar.
+<pb n="84" facs="094.jpg"/>Hør Valravn svinge
+Med sorten Vinge,
+Og Løvet skumme om Hestens Bringe.
+Saa skal vi jage, har somme sagt,
+Hver Nat til Dommedags vilde Jagt.
+Holla, Hest, og holla, Hund,
+Stanser Jagten stakket Stund!
+Her er Slottet, som fordum var;
+Hest skal fodres med Lokes Havre,
+Mand kan æde sit Ry til Davre.
+
+<nonum><center>Valdemar.</center></nonum>
+
+Skoven hvisker med Toves Røst,
+Søen skuer med Toves Øje,
+Stjærner lyse med Toves Smil,
+Skyen svulmer som Barmens Høje.
+Sanserne jage for hende at fatte,
+Tankerne kæmpe for hende at samle.
+Men Tove er hist og Tove er her,
+Tove er fjærn og Tove er nær.
+Er du da, Tove, med Trolddomsmagt
+Bundet i Søens og Skovens Pragt?
+Hjertet svulmer, som skulde det sprænges,
+Tove, Tove, Valdemar længes!
+<pb n="85" facs="095.jpg"/><nonum><center>Klaus Nar.</center></nonum>
+
+«Aalen hun er en sælsom Fugl,
+Lever som helst i Vandet,
+Vrider sig dog i Maaneskin
+Ofte en Stund paa Landet.»
+Det har jeg sunget om andre en Gang,
+Bedst passer nu paa mig selv min Sang.
+Jeg er ikkun Husmand nu og mit Hus er lille,
+Og skøndt ej jeg bad en Gæst, leved’ ganske stille,
+Blev jeg halvvejs dog ædt ud af mit Hus det lille,
+Saa jeg kan ej byde stort, skøndt jeg gerne vilde.
+Dog — den skal faa min Nattero,
+Som kan mig det forklare,
+Hvorfor jeg skal hver Midienat
+Omkring et Vandhul fare.
+At Palle Glob og Erik Paa
+Det skulle, kan jeg godt forstaa:
+De var saa lidet fromme,
+De doble nu, endskøndt til Hest,
+Om svalest Sted og Døren næst,
+Naar de til Helved komme.
+Og Kongen, han, som løber gal ved mørke Nattetide
+<pb n="86" facs="096.jpg"/>Og raaber paa en Pige, som for Aar og Dage siden
+Med Engle og med Vildgæs fløj, han maa med Rette ride;
+Thi han var altfor raa oprigtig,
+Og man maa være højst forsigtig
+Og tage mægtigt sig i Agt,
+Naar man er Nar hos slig en Magt
+Som ham, der bor hinsides Maanen.
+Men at jeg, Klaus Nar til Farum,
+Jeg, som troede, at de døde
+Vare fri for Legemsmøde,
+At éns Støv blev Aandens Anker,
+Saa i Fred man sine Tanker
+Kunde samle til den store
+Hoffest, som Bro’r Knud har sagt
+Blæses ind med Guldbasuner,
+Hvor vi Gode vel ved Magt
+Æde Onde som Kapuner,
+Ak, at jeg paa en Fole galen
+Med min Næse vendt imod Halen
+Skal humpe om, mens Folk er i Senge, . . . .
+Var ej det for sent, jeg vilde mig hænge. —
+O, men hvor sødt det skal smage forvist,
+Naar jeg nu dog bliver salig tilsidst.
+Vel har jeg syndet lidt mer end de fleste,
+<pb n="87" facs="097.jpg"/>Kan dog vel snakke mig fra det meste:
+Hvem gav den nøgne Sandhed Klæder
+Og tog dens Prygl paa Vej og Stræder?
+Jo — i Fald der er Billighed til,
+Saa maa jeg bænkes i Himmerigs Sale, . . .
+Naa, hvor jeg dér skal Værten bagtale!
+
+<nonum><center>Valdemar.</center></nonum>
+
+Nu lér du deroppe,
+Du strenge Dommer!
+Men dette drage du dig til Minde,
+Naar Dommedag kommer:
+En Sjæl er elskende Mand og Kvinde.
+Du rive ikke vor Sjæl i tvende,
+Til Helved mig og til Himlen hende.
+Thi da faar jeg Magt,
+Da splitter jeg din Englevagt
+Og sprænger med min vilde Jagt
+I Himmerige ind.
+
+<nonum><center>Valdemars Mænd.</center></nonum>
+
+Hanen løfter sit Hoved til Gal,
+Har alt Dag i Kroppen,
+Og Morgenduggen driver rød
+Af Rust, fra vore Sværd.
+Omme er Tiden!
+<pb n="88" facs="098.jpg"/>Graven kalder med aaben Mund,
+Og Jorden suger al lyssky Rædsel.
+Synker, synker!
+Livet kommer i Magt og Glans
+Med Daad og bankende Hjærter,
+Og vi er Dødens,
+Sorgens og Dødens,
+Smærtens og Dødens.
+Til Gravs! til Gravs! til drømmesvanger Ro —
+O, fik i Fred vi hvile!
+
+<nonum><center>IX.</center></nonum>
+
+<nonum><center>Sommervindens Vilde Jagt.</center></nonum>
+
+Stolt Henrik og Fru Gaaseurt, tag blot jer i Agt!
+Nu begynder Sommervindens vildene Jagt:
+Søen gnistrer som Sølv i dens Spor,
+Myggene Sivskoven bange forlade;
+Det er meget værre, end I tror,
+Hu, hvor det lér nu i Bøgenes Blade!
+Træk det grønne om Hagen!
+Der er St. Hansorm med Ildtunge rød
+Og Engtaagen, det er en Sky, der er død;
+<pb n="89" facs="099.jpg"/>Hvilken Bølgen og Gyngen,
+Hvilken Ringen og Syngen:
+Kornvangens Guldaks slaar den lede Vind
+Mod hinanden, saa det klinger;
+Edderkoppen spiller paa sit Strængespind
+Med de lange Ben, saa det springer.
+Duggen triller med Klang fra Tue,
+Stjærneskud flyve fra Himmelbue,
+Sommerfuglen flygter med Larm gennem Hækken,
+Frøen springer langt ud i Bækken.
+— Tys! hvad tyder nu dens Færd?
+Hvert et vissent Løv den vender,
+Ak, den søger Eders Frænder:
+Vaarens blaahvide Strøm af Blommer,
+Jordens flygtige Drøm om Sommer.
+Længst er de Jord!
+Men nu svinger den op
+Over Træernes Top,
+Thi opstanden den tror
+Er det drømfine Flor,
+Og i sælsomme Toner
+Den dem hilser igen
+I de løvrige Kroner.
+— Se saa! nu er det snart forbi,
+Den hvirvler hen ad luftig Sti
+<pb n="90" facs="100.jpg"/>Mod Søens blanke Flade,
+Og dér i tusend Vovers Dans
+I blege Stjærners Genfærdsglans
+Den vugges blidt til Hvile.
+Hvor her blev tyst!
+Ak, var det lyst!
+O sving, Mariehøne, sving dig fra din Blomstertue
+Og bed om fagert Solskinsliv alt hos din fagre Frue!
+Alt danse Bølgerne om Næs,
+Alt trækker stribet Snegl paa Græs;
+Nu vaagner Skovens Fugleflok,
+Og Blomsten ryster Dug af Lok
+Og spejder efter Sol.
+Vaagner, vaagner, alle Blommer,
+Solen kommer!
+Alt i Øst i Farvestrømme
+Hilse os dens Morgendrømme!
+Snart den af de dunkle Vande
+Smilende opstaar,
+Stryger fra sin lyse Pande
+Rige Straalehaar!
+</poetry>
+<prose>
+  «Uden Kritik til det næste,» raabte Krigsraaden.
+<pb n="91" facs="101.jpg"/>  Mads tog en meget tyk Bunke Papir frem, og af mangfoldige Stumper af meget ulige Størrelse og Farve læste han:
+<center>Kormak og Stengerde.</center>
+  Den Kormak, om hvem her skal handles, var Søn af Øgmund Kormakssøn og boede paa den Tid, Fortællingen begynder, ved Midfjord paa Island med sin Broder Thorgils hos Dalla, deres Moder. Øgmund var da død, og Dalla stod for Gaarden; men da hun alt var gammel, laa Styret mest paa Sønnerne.
+  Thorgils, den ældste, var tavs og indesluttet, havde baade Greb paa Arbejdet og Lyst til det, blev heri heller ikke hindret af Kormak, som bedre led at trække Tavl end Kvæg, hellere talte med Kvinder end med Huskarle og mere tænkte paa, hvad svundne Dage havde bragt af Sagn og Sange, end paa, hvad kommende vilde bringe af Høst og Fangst. Han var i det hele ulig de fleste Folk paa den Tid, og det er sandt sagt om ham, at han kun kendte Fred som Brist paa Strid og jævne Ord som Misvækst paa Kvad.
+  En Dag hændte det, at Thorgils bad ham <pb n="92" facs="102.jpg"/>gaa til Fjælds efter nogle bortløbne Beder. Kormak gik og kom mod Sengetid til Gnupsdal. Han blev vel modtaget og ført ind i en stor Stue, hvor et Baal brændte. Ved dette satte han sig og saa’ ind i Flammerne, medens han nynnede paa et gammelt Kvæde. Som han nu sad der, gik Stengerde, Datter af Thorkel paa Tunge, der havde sendt hende derhen i Opfostring, forbi Stuen med sin Pige. De saa’, der var lyst derinde, og Pigen sagde:
+  «Hvad Slags Fremmede kan det være? lyster det dig ikke at se ad?»
+  Stengerde svarede, at hun før havde set Folk. Alligevel gik hun hen til en Luge, der førte ind til en mørk Krog i Stuen og kunde lukkes op udenfra. Hun saa’ ind, og skøndt hun vel vidste, at hun ikke kunde ses, blev hun dog ræd derfor og gik fra Lugen. Pigen saa’ nu ind og sagde: «Lidet lysteligt er her at se paa; men er du ikke ræd for ham, var det dog altid Tidsfordriv, om du spøgte med ham; han rejser vel imorgen tidlig og kommer dig sagtens aldrig mere for Øje.»
+  Stengerde saa’ ind: «Manden er fager.»
+  Pigen svarede: «Mig tykkes han led og sort.»
+<pb n="93" facs="103.jpg"/>  «Lidet forstaar du dig paa Fagerhed,» mælte Stengerde vredt.
+  Kormak havde hørt deres Tale, løftede Hovedet og kvad:
+</prose>
+<poetry>
+«Ofte Pigemunde
+Nævnte Kormak skøn,
+Nu han tror sig ligne
+Odins yngste Søn;
+Thi slig Stemme fager
+Maa fra Freja komme,
+Skønheds Dis, som bedst kan
+Fælde Skønhedsdomme.»
+</poetry>
+<prose>
+  Stengerde mælte: «Det er dog en Lyde, at Haaret hænger dig i Øjnene.»
+  Kormak kvad:
+</prose>
+<poetry>
+«Issens Lyng den sorte
+Dækker Tankens Vang,
+Varer Snoge tvende
+Venligt under Hang,
+At ej Møers Hjærte
+Fast de skal omspænde
+Og saa Elskovs Syge
+Dem i Sindet tænde.»
+</poetry>
+<prose>
+<pb n="94" facs="104.jpg"/>  Stengerde sagde nu: «Skønnere er du end de fleste og snar i Ordvalg; lidet er dog kun Fagerhed og fagre Ord.»
+  Hertil kvad Kormak:
+</prose>
+<poetry>
+«Mer end skumhvid Bølge
+Frygter jeg din Barm,
+Mer end Tryk af Skjolde,
+Mø, din runde Arm,
+Mer end Stormens Bulder
+Røsten din den klare
+Og dit Blik det lyse
+Mer end Sejd og Snare.»
+</poetry>
+<prose>
+  Stengerde tog til Orde: «Meget ræd maa du være, naar du kan frygte, hvad du aldrig har set og aldrig skal faa at se.» Dermed vilde hun gaaet fra Lugen; men da kvad Kormak:
+</prose>
+<poetry>
+«Brand saa vil jeg tage,
+Dag din Skønhed faa:
+Ved dens Lys den klare
+Brand vil slukket staa.
+Men for mig vil aldrig
+Mere Nat oprinde,
+Thi bestandig skuer
+Jeg den fagre Kvinde.»
+</poetry>
+<prose>
+<pb n="95" facs="105.jpg"/>  «Anderledes turde det blive,» sagde Stengerde og gik fra Lugen; men Kormak gjorde sig en Brand rede og kvad:
+</prose>
+<poetry>
+«Skønheds Skik det aldrig
+Var for Lyset fly,
+Jætter kun og Trolde
+Kaare Mulmets Ly.
+Men har nu en Gyge
+Borget sølvklar Stemme,
+Lykkelig var Kormak,
+Var han blevet hjemme.»
+</poetry>
+<prose>
+  Derpaa tog han Branden og gik for Lugen; men Stengerde havde hørt Kvadet og var gaaet derhen, og da Kormak kom, stod hun for ham i Lugen: hendes Læber bævede, men Barmen vuggede roligt, hendes Kinder blussede, men Blikket var skarpt, skøndt Graaden ikke var langt borte. Men Kormak lod Branden falde og sagde: «Nu fødtes Kormaks Fremtid.»
+  Den Nat fik Søvnen kun liden Magt over to paa Gnupsdal, mindst over Kormak, thi alle hans Tanker stævnede fremad og byggede paa hans Skæbne; men naar de havde samlet den af Lykke og lysende Haab og Kormak ret <pb n="96" facs="106.jpg"/>skulde frydes ved dens Sælhed, saa fore de bort med Lykken og slukkede Haab efter Haab, saa der blev kun idel Tomhed og Mørke. Saaledes gik da Natten; men mod Morgen blev han roligere, og efter Davre gik han udenfor.
+  Stengerde saa’ ham fra Fruerstuen og talte ned til ham: «Rider I nu fra Gnupsdal?»
+  «Hellere blev jeg og drog Tavl med Eder,» svarede Kormak.
+  «Gæst maa føjes,» mælte Stengerde.
+  Saa satte de sig ved Tavlet inde i Storstuen. De spillede nu en Stund tavse.
+  «Fagert Møde,» begyndte Kormak, «havde jeg igaar i denne Stue; men kort var det, dog var det min egen Skyld.»
+  «Hvordan skiltes I da?»
+  «Det er det, jeg ikke véd tilfulde; hun gik vist vred.»
+  «Det var en Kvinde — Kvindevrede er lig Sommerfrost, den varer en Nat, og saa er den forbi.»
+  «Men Sommerfrosten kan dræbe de Spirer, der kunde baaret fagre Blomster og rig Frugt.»
+  «Det hænder; men er Dagen blid og varm, gør den vel Nattens Skade god igen.»
+  «Men Urten faar dog aldrig rigtig Grøde.»
+<pb n="97" facs="107.jpg"/>  «Tidt trives dét netop aller bedst, der fares ilde med, mens det er spædt.»
+  «Men, Stengerde, om der nu ingen Spirer var?»
+  «Saa tog ingen Skade.»
+  «Stengerde! var der Spirer?»
+  «Det er jo Sommer.»
+  «Vil de trives?»
+  «Naar de vares vel.»
+  «Ville de vorde varede vel?»
+  «Det raader Dagen for.»
+  «Saa er Kormak ikke ræd.»
+  Dermed tog han Farvel og red til Midfjord; men der meldes intet om, at Thorgils fik sine Beder igen.
+  Kormak fór nu ofte til Gnupsdal. Dette kom ud blandt Folk og naaede Thorkel paa Tunge. Han blev kun lidet glad derved og tog Stengerde hjem.
+  Nu varer det en Stund, inden de ses; det bliver endelig Kormak for længe, og han rider til Tunge.
+  Da han nu er kommet Vejen frem, staar Stengerde i Løggaarden og narrer sine Høns med Blomster, hun river af Diget.
+<pb n="98" facs="108.jpg"/>  Kormak lister sig ind derunder og fanger i Haanden en stor Bunke, hun kaster ud.
+  Han kvæder:
+</prose>
+<poetry>
+«Fager Blomsterbølge
+Over Diget faldt,
+Skøn slig Hilsen være
+Maa for ham, den gjaldt.
+Men sig bedre lønne
+Maa bag Diget fange
+Kyssebær saa søde,
+Blikkeblomster mange.»
+</poetry>
+<prose>
+  Derpaa sprang han over Diget; men Stengerde havde fjælet sig bag en Hyld. Kormak saa’ længe efter hende; da lo hun og raabte: «Du skulde biet med at synge, til du var kommen over.»
+  De taltes da længe ved; saa sagde Stengerde: «Gaar du nu ind til Thorkel?»
+  «De er der, som hellere se mig end han,» svarede Kormak.
+  «Dog maa du tale med ham; thi han er den, der raader over mig,» sagde Stengerde og saa’ stift paa Kormak.
+  Han forstod Tanken, der havde baaret Blikket; den voldte ham Smærte. Han stod <pb n="99" facs="109.jpg"/>hastig op, gik ind til Thorkel, friede, som Skik var, og enedes de da vel derom.
+  De Ord sagde han nu til Stengerde, at det bares ham for, at han hidtil havde sunget paa den anden Side Diget og først i Dag var kommet over; men end saa’ han hende ikke. Saa red han hjem igen.
+  Ved Midfjord sagde han dem da, at han havde talt med Thorkel. Det var dem ikke ret til Maade. Dalla sagde ham, at han og Stengerde kun lidet passede for hinanden, og Thorgils mente, at det var altfor tidlig at binde sig. Kormak hørte paa det og bad saa Thorgils tage til Tunge og aftale alt Thorkel og ham imellem. Selv tager han sig nu af Gaarden, er altid i Marken ved Arbejdet, taler lidt og kvæder aldrig, og er det for alle, der kende ham, som var han bleven en hel anden.
+  Saa lider Tiden, og der er ikke langt til Bryllupet.
+  Da hænder det en Nat, at der er stor Varme i Luften, og Kormak lægger sig oppe paa Høloftet for at hvile svalt.
+  Hvad her nu er overgaaet ham, om han er bleven hjemsøgt af vildende Drømme, eller onde Vætter have gjort ham Skade, vil ikke <pb n="100" facs="110.jpg"/>falde let at raade; men det er næsten at tro af det underlige Kvad, han stundom, naar hans Sind var tungt, lod Thorgils høre.
+  Dette er nu Kvadets Begyndelse:
+</prose>
+<poetry>
+«Ud fra Høloftslugen
+Stirred Øjet mat,
+Saa’, hvor Aaen glimted
+I den lune Nat,
+Skued Taagens Bølger
+Op af Enge vælde,
+Og langt borte saa’ det
+Gnupdals spidse Fjælde.
+
+Navnløs Tavshed hused
+I mit unge Bryst,
+Hjærtet som en Dravge
+Sad derinde tyst;
+Alle mine Tanker
+Laa i Taage bundne,
+Mindets Havn og Haabets
+Bavne var forsvundne.
+
+Men nu Blikket vanked
+Over kendte Sti:
+Hver en Busk og Tue,
+Som det gled forbi,
+<pb n="101" facs="111.jpg"/>Kendinger og Mærker
+Var til det forsvundne;
+Mindets Havn og Haabets
+Bavn var atter fundne.
+
+Mine Gnupdalssange
+Lød for mig igen:
+«Elskovsflugt vi flyve
+Ingen Vegne hen,
+Under Frejas Lofte
+Vi paa Vinger hvile,
+Alle Jubeltoner
+Frem imod os ile.»
+
+Men fra Tunge svared’
+Pigen mig igen:
+««Elskovsflugten flyve
+Vi mod Maalet hen,
+Gennem Frejas Lofte
+Jublende vi glide,
+Thi vor Lykke vinker
+Paa den anden Side.»»
+</poetry>
+<prose>
+  Saa er det, der følger Vers, som faa mindes helt og ingen tilfulde fatter; men dét synes det dog, at de melde: at han enten drømte <pb n="102" facs="112.jpg"/>eller bildte sig ind, at han saa’ Stengerde i al hendes Skønhed, og at der kom Hede i Blodet, saa han krænkede hende, og saa gled Drømmen eller Synet fra ham og Angeren ned over ham, og han blev saa særsindet og betagen, at han ikke kunde mindes Stengerdes Træk, hvor meget han end tænkte derpaa.
+  Ihvor det saa er, er det dog vist, at han i mange Nætter og Dage flakkede om paa Fjælde og Udmarker, og da han kom hjem igen, bar han sig som én, der kun havde halv Raadighed over sit Sind. Baade Kvad og Omtanke var som sejdet ham fra, og først Uger efter blev han Mand igen.
+  I de Dage, han fór vidløs om paa Fjældene, falder Bryllupet; men der kom ingen Brudgom hverken første eller anden Dag, og derom var nu alle Stengerdes Frænder enige, at dette var en stor Skam, der var overgaaet baade dem og hende.
+  Paa den Tid sad ved Hrutafjord en Mand, der kaldtes for Holmgangs-Berse, Enke. Berses Omgang var kun lidet søgt, for saa hidsig og stridslysten var han, at det at tale til ham næsten var som at pæle af til Kamp. Af Skjaldekunst led han kun Nidviser, og Lovene <pb n="103" facs="113.jpg"/>saa’ han kun an for urimelige Skikke, der lagde sig i Vejen for Folks Gammen. Ham lod Thorkel byde Stengerde til, og da han vidste, at Kormak skulde havt hende, fandt han, at det Smykke, der var sluppet en Mand af Hænde, vilde skære ilde i Øjnene i anden Mands Haand, og Handelen blev da sluttet og Bryllupet stod.
+  Men Død og Gifte er Herredsrygte, og elskende Hjærter er altid Grander, saa den Sag kunde da ikke gaa Kormak helt forbi. Han stod just og bødede paa en Lervæg, da det meldtes ham. En Stund blev han ved med Arbejdet, men paa én Gang satte han begge Hænder mod Væggen og trykkede den ind; derpaa vendte han sig mod den, der havde bragt Rygtet i Gaarde, og kvad:
+</prose>
+<poetry>
+«Ej er Tid at bøde
+Nu paa revnet Hus,
+Kormaks fagre Lykke
+Sunken er i Grus.
+Ringe er den Glæde,
+Lunt bag Væg at hvile,
+Medens ude Stimænd
+Med éns Eje ile.»
+</poetry>
+<prose>
+<pb n="104" facs="114.jpg"/>  Thorgils kom til og mælte, at nu maatte de vel lede deres Sværd frem, siden Kormak havde fundet sine Kvad. Kormak sang:
+</prose>
+<poetry>
+«Hvilet har det Rygte
+Vist i hver en Vraa,
+Træt af al den Kummer,
+Som det drager paa.
+Nu paa rappe Foler
+Maa vi hurtigt fare.
+Spildte Tid skal Hestens
+Hove sammenspare.»
+</poetry>
+<prose>
+  Rede de da med stort Følge til Tunge. Men Berse sad alt i god Behold med Stengerde paa sin Gaard. Kormak kvad da:
+</prose>
+<poetry>
+«Nu skal Berse favne
+Lyse Mø med Lyst,
+Mig vil Sorgen svarte
+Trykke til sit Bryst,
+Skønt skal han paa Lejet
+Hendes Røst fornemme,
+Grumt mig holde vaagen
+Sildig Angers Stemme.»
+</poetry>
+<prose>
+<pb n="105" facs="115.jpg"/>  Saa rede de hjem igen.
+  Som Berse havde tænkt, bragte Stengerde ham en stor Medgift af Strid, og nu følger megen Ufred mellem ham og Kormak og begges Frænder. Dermed gaar saa Tiden.
+  Da falder det sig en Dag saaledes, at Stengerde er ude paa Fjældene at sanke Urter til Farvning og møder Kormak. Det bliver saa et langt Ordskifte.
+  Saa siger Stengerde: «Hvad Hinder havde du vor Bryllupsdag?»
+  »Det vil du knap forstaa, og det er tungt for mig at tale om; thi hvad den Gang var mig som høje Fjælde, er mig nu som løse Sandtuer.»
+  «Kormak! vilde du ikke ægte mig?»
+  «Det vilde jeg, Stengerde; men jeg led ikke, du talte om det, og meget drog de Ord ned over mig.»
+  «Skjalde er nok skøre Varer!»
+  «Hvor lider Berse?»
+  «Han er ikke Skjald.»
+  Kormak stod nu en Stund tavs og saa’ paa Stengerde; saa kvad han:
+</prose>
+<poetry>
+<pb n="106" facs="116.jpg"/>«Samled Odin alle
+Asekvinders Blod,
+Vakte det ved Runer
+Til en Kvinde god,
+Skulde saa som fagrest
+Guder hun fortrylle, —
+Fik <i>din</i> Ham hun laane
+Og i den sig hylle.
+
+Milde Norner vilde,
+Jeg Stengerde fandt;
+Norners Hu sig vendte,
+Berse hende vandt.
+Og min Fremtid, gryet
+Til en Vaardags Lykke,
+Til en Høstnat kvelded,
+— Alt dens Taager trykke.
+
+Dog, som her jeg stander,
+Kuet, mat og mod,
+Magt og Sejer ruger
+I mit Skjaldeblod,
+Thi om end en anden
+Dig som sin kan favne,
+Evig mine Kvad dog
+Samler vore Navne.
+
+<pb n="107" facs="117.jpg"/>Tak for lødrig Glæde,
+Tak for Kummer bleg!
+Tak, for du mig elsked’,
+Tak, for du mig sveg!
+Tak for rige Toner
+I ufødte Sange!
+Tak for hver en Hæder,
+Jeg paa Jord skal fange!»
+</poetry>
+<prose>
+  Derpaa gik han hurtig bort, og hun stod længe og saa’ efter ham. Straks efter kom Berse til og satte sig lidt borte; han havde set Kormak og sagde: «Var det om jert Bryllup, I talte? Stakkels Knøs! liden Glæde er der i Mindet om det Faar, Ulven har taget.»
+  «Ti stille, Berse!» mælte Stengerde, «han er bedre Mand end du.»
+  «Ja til at finde paa Kvad.»
+  «Ja, Berse; men det er noget stort at være Skjald.»
+  «Vist saa! — du er klogere, end du snakker til: — og fager er du! Kom hen til mig!»
+  «Du er gammel, Berse!»
+  «Hvi siger du det? Kom hen til mig!»
+<pb n="108" facs="118.jpg"/>  «Du er gammel, Berse, og jeg skal vare dig og være dig god.»
+  «Det skal jeg elske dig for.»
+  «Nej, saa Farvel, Berse!»
+  «Men har du da end Kormak kær, efter alt, han har voldet dig?»
+  «Han og jeg er nu en Gang gaaet fejl af hinanden; men endnu kan vi raabe hinanden til.»
+  «Han har da snakket mig dig fra?»
+  «Fra dig; men ikke til sig.»
+  Saa gik hun fra Berse hjem til Tunge, og Thorkel maatte se at ordne alt paa det bedste med Berse.
+  Til Tunge kom der ofte Folk fra Sunnudalen, da de havde megen Slægt der. Rigest Mand i Dalen var Thorvald Tinten, og han tog altid ind hos Thorkel. Thorvald var en vidt berømt Skjald; hans Kvad vare meget ansete, men faa kunde huske dem; hans Gaard var den skønneste viden om, og i hans Storstue stode kostelige Bægre af Guld, han havde faaet af Konger og Jarler i Skjaldeløn. Hans Venner vare alle gamle Folk, og de roste ham højligen for hans Klogskab og Sindighed; men de unge i Dalen sagde om ham, at han gik, som havde han Skørter om Benene, og at hans Forstand <pb n="109" facs="119.jpg"/>paa Vaaben var saa stor, at han troede, der holdtes om Sværdodden og sloges med Hjaltet.
+  Thorvald traf tidt sammen med Stengerde, talte altid længe med hende og sagde hende sine Kvad. Saa bejlede han en Dag til hende hos Thorkel. Thorkel sagde, det var ham med, men viste ham til hende selv.
+  Stengerde sad ved Væven og sang. Som Thorvald traadte ind til hende, holdt hun op og sagde: «Thorvald! er det noget stort at være Skjald, og er Skjaldskab mer end Manddom?»
+  Thorvald svarede hastigt: «Du kender jo Kvadet:
+</prose>
+<poetry>
+«I Glemsels Grav
+Hver Tid maa gange,
+Hvis Skridt ej skues
+Af Skjaldeblik.»
+</poetry>
+<prose>
+  «Ja! — Hvad er din Tro om Kormak?»
+  «At han er tapper.»
+  «Ja! — men hvor højt regner du hans Skjaldskab?»
+  «Saa højt som det, han kvæder om.»
+  «Det er da saa højt som mig.»
+<pb n="110" facs="120.jpg"/>  «Nej! — ikke var det min Tanke.»
+  «Regner du dine Kvad lige med det, de lyde om?»
+  «Ja, Stengerde!»
+  «Saa staar da din Kunst saa meget over hans, som Konger og Jarler over mig.»
+  «Nej! — ikke var det min Tanke.»
+  «Hvad tænker du da?»
+  «At der ingen Lighed er mellem mine og Kormaks Kvad, at Konger er Konger og du den dejligste af alle Kvinder!»
+  «Vil du fri?»
+  «Ja! det er min Tanke!»
+  «Er det din eneste?»
+  «Det er min nærmeste.»
+  «Hvad er da din næste?»
+  «Bryllup, Stengerde!»
+  «Er du saa stor med mig, som Kormak uden mig?»
+  «Med dig eller uden dig er min Storhed den samme.»
+  «Den samme?»
+  «Men min Lykke ikke.»
+  «Saa tal med Thorkel!»
+  «Det har jeg gjort.»
+  «Dig forstaar jeg! — og Skjald er du?»
+<pb n="111" facs="121.jpg"/>  «Større end Kormak!»
+  Saa følger Bryllupet, og de tage til Sunnudal.
+  Imens er nu Kormak bleven saa til Sinds, at han vil følge med Thorgils til Norge; han har derfor mangt at tage vare og færdes langt omkring for at sige Frænderne Farvel, saa alle disse Tidender først træffe ham sent. Straks rider han til Sunnudal, og træffer Stengerde paa Toften. Han bliver paa Hesten og kvæder, før den vel er kommen i Hold:
+</prose>
+<poetry>
+«Nu, Stengerde, ønsker
+Jeg dig Trællestand,
+Saa du gik som Vare
+Om fra Mand til Mand,
+Thi din rige Skønhed
+Du saa ringe agter,
+At til hver en Stodder
+Du den bort forpagter.»
+</poetry>
+<prose>
+  Stengerde mæler: «Stor Uret har du i stedse at løbe efter mig, og troede jeg nu, den Tid var kommen, at jeg for bestandig var fri for dig.»
+  Saa kvæder Kormak:
+</prose>
+<poetry>
+<pb n="112" facs="122.jpg"/>Aldrig, nej, Stengerde,
+Skilles du fra mig,
+Mer end fællig Arne
+Binder mig til dig.
+Fjæld paa Fjælde dynget,
+Hvorom Bølger larme,
+Var kun liden Hindring,
+Mindre Tintens Arme.»
+</poetry>
+<prose>
+  «Lidt er det at lave i Kvad! Gaa nu!» mælte Stengerde vredt. Men Kormak kvæder:
+</prose>
+<poetry>
+«Saa Farvel, lad Tinten
+Kys og Blikke faa,
+Og din fagre Stemme
+Lad ham høre paa;
+Men din stærke Længsel,
+Graad, som lønligt vælder,
+Og hver dristig Tanke
+Dog kun Kormak gælder.»
+</poetry>
+<prose>
+  «Dyrt skal du angre din Haan, og det skal du vide, at Thorvald staar langt over dig baade i Kvad og i mit Hjærte!» Det mæler Stengerde, og saa skilles de.
+<pb n="113" facs="123.jpg"/>  Da Brødrene aarle næste Morgen stode ud for Fjorden, stod Kormak i Stavnen og kvad:
+</prose>
+<poetry>
+«Nat er nu forbi,
+Fred og Slummer ender,
+Kampbud over Ø
+Solens Bavn udsender.
+Op til Liv og Strid!
+Dag sit Skjold faar Klang,
+Skønt det klinger ned
+Nu som Fuglesang.
+
+Se, hvor Ymers Blod
+Rødt i Solen luer,
+Som det syded end
+Under Bringens Buer!
+Hvor det vugges vildt,
+Hvor det løftes vredt,
+Som i Aarens Gang
+End det banked’ hedt!
+
+Himmellød og Glans,
+Som mit Øje blænder,
+<pb n="114" facs="124.jpg"/>Drømmehær, som Sol
+I hans Hjerne tænder,
+Saa kun nævnes kan
+Svalins Runedrag,
+Rumme kan dem ej
+Noget Ordelag.
+
+Større Pragt dog nu
+Undes Tintens Øje:
+Drømmens Rose Liv
+Faar bag hvide Høje,
+Paa den Fagres Kind
+Sætter Knop den prud,
+Og paa hendes Mund
+Springer Rosen ud.»
+</poetry>
+<prose>
+  Børen var dem gunstig, og det bærer godt afsted. Saa komme de til Norge og blive vel modtagne. Men længe er de ikke paa Sted ad Gangen; vide færdes de paa Vikingetog; ved Gry gøre de Strandhugst, i Kveld bøde de Sejl; slippe de Aaren, er Sværdet ved Haanden, og volde de Fjenderne Ulæmpe med Sejersraab den ene Nat, saa hyle de saarede <pb n="115" facs="125.jpg"/>efter den næste. Paa den Vis tumles de i tvende Aar, lande igen i Norge, færre om at dele Byttet, end de har været om at vinde det.
+  Nu tøve Brødrene en Stund i Kongsgaarden; men saa siger Kormak, at han heller vil fryse som Skovgangsmand paa Island end sidde Kongen og Baalet næst i Norge.
+  Det svarer Thorgils, at faa Mænd løbe saa gridske efter Arvepart, som Kormak efter Ulykke.
+  Kormak mæler: «Jeg kender kun én Lykke, og den ejer Tinten.»
+  «Den skulde du grebet, da den raktes dig», siger Thorgils.
+  «Ræk mig den nu,» svarer Kormak.
+  «Mon Lykken vil?»
+  «Ja det er det, jeg vil vide.»
+  Saa droge de til Island og fandt dér deres Rygte meget større, end de lode det tilbage. Kormak fandt snart til Sunnudal og dér Stengerde ene hjemme.
+  De Ord vare hans første, om hun havde længtes efter ham.
+  Dertil svarer hun, at hendes Længsel var stærk efter ham, naar han var langt borte, men <pb n="116" facs="126.jpg"/>at det ingen Glæde voldte hende at vide ham nær.
+  Saa sidde de længe og se tavse paa hinanden. Da kvæder Kormak:
+</prose>
+<poetry>
+Lad mit Kvad nu galdre
+Gamle Minder Dag,
+Tiden, da vi mødtes
+Under Gnupsdals Tag!
+Lad et Kys, Stengerde,
+Syv Aars Smerte døde,
+Tænde ny vor Elskovs
+Første Morgenrøde.»
+</poetry>
+<prose>
+  Dertil svarer Stengerde: «Daarligt sømmer det os at mindes vor Kaadhed, og ikke er Thorvalds Hustru vant til at kysse fremmede Ungersvende.»
+  «Det tror jeg dog, at der kommer Tid, da vi faa fælles Leje.»
+  «Saaledes kunde det været.»
+  «Stengerde, bliv min Hustru!»
+  «Jeg er Thorvalds.»
+  «Han ligner Berse saa lidt, lad ham ligne ham i ét.»
+<pb n="117" facs="127.jpg"/>  «Du snakker over dig.»
+  «Det er tungt at miste dig.»
+  «Det vilde Thorvald mene.»
+  «Han har aldrig ejet dig.»
+  «Nu snakker du vidløst igen.»
+  «Men elsker du da Thorvald?»
+  «Det skulde synes være en Sag mellem ham og mig.»
+  «Men du og jeg da?»
+  «Jeg er Thorvalds Kone.»
+  Kormak kvæder:
+</prose>
+<poetry>
+«En Gang i dit Hjærte
+Lukked du mig ind,
+Did bestandig længes
+End mit tunge Sind.
+Men hvor stærkt jeg banker
+Og hvor mygt jeg beder,
+Ej mig op du lader,
+Ej mig ind du leder.»
+</poetry>
+<prose>
+  Saa vilde han gaaet, men Stengerde greb hans Haand; Kormak vendte sig, men hun slap hurtigt Haanden og gik. Saa gaar ogsaa han, og der er ikke mange Dage mellem dette Møde og hans ny Norgesfærd.
+<pb n="118" facs="128.jpg"/>  Siden vendes ogsaa Stengerdes Hu mod Norge, og hun og Thorvald tage afsted.
+  I Norge ser nu Kormak en Dag Stengerde paa den lange Gade tæt ved Kongsgaarden. Han gaar lige hen til hende og siger: «Følg med mig, Pige! længe nok har jeg været dig foruden.»
+  «Godt Køb har du paa Talemaader, som andre aldrig bruge.»
+  Kormak greb fat i hende: «Nu skal du følge med mig, mangesindede Kvinde! Stærk Elskov er der paa begge Sider, og skønt vil vort Samliv vorde; men den, der ikke vil lokkes til det gode, skal tvinges dertil.»
+  Saa vilde han gaaet bort med hende. Men Stengerde tog til at raabe om Hjælp, og der kom Folk til og skilte dem ad.
+  Nu farer Thorvald med Stengerde til Danmark; men Vikinger tage baade Gods og Kvinde fra ham. Kormak og Thorgils fare paa samme Led og spørge dette. De vinde begge Dele tilbage. Da de mødes med Thorvald, giver han dem stor Tak og siger: «Tag nu du Stengerde, Kormak! det var dog dig, hun mente, baade da hun tog Holmgangs-Berse og Thorvald Skjald.»
+<pb n="119" facs="129.jpg"/>  «Er det efter dit Sind, Stengerde?» spurgte Kormak.
+  «Thorvald er mig god nok,» svarede hun.
+  Saa kvæder Kormak:
+
+---
+
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019129" variant="jacobsen2026101963">
+<head>
+  <title>Middag</title>
+  <firstline>Der ligger en Duft af Turist-Lyrik</firstline>
+  <dates>
+    <written>1869-07-23</written>
+  </dates>
+  <source pages="120-121" facsimile-pages="131-132"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><small>I Klade-Bogen indledes «Gurresange» med Digtet:</small></center>
+</prose>
+<poetry>
+Der ligger en Duft af Turist-Lyrik
+Alt ud over Gurre Vange;
+Hvad her skal føles, véd paa en Prik
+Man gennem de kendte Sange.
+Alt er beredt, naturlige Sæder,
+Kunstigen gjorte, enkelte Steder
+Vise Dig, hvor det er Skik at begejstres.
+Dejlig er Skoven, en engelsk Park,
+Pyntelig Slottet, det ses for en Mark.
+        Ja Slottet er kønt,
+Rosers og Clematis’ blomstrende Ranker
+Og Kirkegaardsgrønt
+Slynge om Murene sig og om Tanker.
+
+Øjner Du Stenen? læs i en Fart
+Indskriften; saa, nu skuer du klart:
+<pb n="121" facs="131.jpg"/>Slottet er altsaa
+Sokkel, ej andet.
+
+Dyb er Moralen,
+Vidt er den kendt.
+Det er jo Fortids
+Store Betydning,
+At den til Fremtid
+Mægter at bære
+Navnet paa den, der
+Drog den af Mørket,
+Bragte den Dag.
+
+<nonum><small>Renskrift ²³/₇ 69.)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="moellerv20261019101" variant="jacobsen2026101964" author="moellerv" skip-index="true">
+<head>
+  <title>[Udgivernote til En Kaktus springer ud]</title>
+  <indextitle>Udgivernote til En Kaktus springer ud</indextitle>
+  <nofirstline/>
+  <source facsimile-pages="133"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<small>  Første Udkast til Titlen og Rammen fra 1868. Nogle af Digtene (f. Eks. «Efteraar», «Stemninger» II og «Tove» S. 71) er fra sidst i 67 eller først i 68. Meget af Fortællingerne og af «Gurresange» gaar tilbage til Sommeren 68, men synes at være gjort endelig færdigt i Sommeren 69. Vistnok intet i «En Kaktus springer ud» er skrevet eller omskrevet senere end midt i 70.</small>
+<right><small>Udg.</small></right>
+</prose>
+</body>
+</text>
+
+<section>
+<head>
+  <title>Digte og Udkast</title>
+</head>
+<content>
+
+<text id="jacobsen20261019131" variant="jacobsenandrea1">
+<head>
+  <firstline>Alle de voksende Skygger</firstline>
+  <notes>
+    <note>Digtet svarer til første strofe af <xref poem="jacobsen2002092152"/>; her trykkes det som et selvstændigt otteversdigt.</note>
+  </notes>
+  <source pages="125" facsimile-pages="136"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Alle de voksende Skygger
+Har vævet sig sammen til en,
+Ensom paa Himmelen lyser
+En Stjærne saa straalende ren,
+Skyerne have saa tunge Drømme,
+Blomsternes Øjne i Duggraad svømme,
+    Underligt Aftenvinden
+    Suser i Linden.
+
+<nonum><small>Septbr. 68.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<!-- Trykt s. 129 (facs 139.jpg) har bevidst gentagelse: Og op op ned, op op ned. -->
+<text id="jacobsenandrea3" ignore-tests="repeated-adjacent-word" aliases="jacobsen20261019132">
+<head>
+  <title>Monomani</title>
+  <subtitle>(En Arabesk.)</subtitle>
+  <firstline>Jeg er gal</firstline>
+  <notes>
+    <note>Inspiration fra Staffeldts <xref poem="staffeldt1804a0"/> fra <i>Digte</i> (1804).</note>
+  </notes>
+  <source pages="126-129" facsimile-pages="137-140"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er gal.
+Men jeg kender mit Vanvid,
+Dets Ophav og dets Væsen.
+Jeg er gal, og nu vil jeg synge;
+Men jeg véd, jeg er stum,
+Og at Strængene, jeg slaar,
+Er Jærnstængerne for min Celle.
+— Jeg synger det frem altsammen,
+Og det kommer i Klang og Farve:
+Men den smilende Vogter
+Ser kun mine Læber bevæges,
+Mine Fingre famle.
+
+Saa let, saa begejstrende let
+Gaar min Elskedes Dans
+Som Libellernes Flugt
+Over de brunlige Sivtoppe.
+<pb n="127" facs="137.jpg"/>Og som Løvet, der falder i spejlklare Sø,
+Faar Vandet til at vugge
+I voksende Kredse og falde igen
+Løvets eget vuggende Fald,
+Saa følte hver, der skued min Elskedes Dans,
+Sig forunderlig let
+Og aned ukendt Harmoni
+I sin egen Gang. —
+Men ve! hendes Fodtrin høres tungt,
+Rytmerne vakle,
+Lemmerne stivne —
+Der faldt Tynge over Alle,
+Men jeg blev Sten.
+O jeg hader Rytmer,
+Jeg elsker det, der hviler i Usikkerhed,
+Mest hader jeg Stormens sikre Flugt,
+Mest elsker jeg Taagen.
+O! ser I det! ser I det!
+Mit Paradis kommer:
+Over det hvide Sand
+Ligger Taagen tæt;
+Saa mat, saa dødt og glansløst,
+Saa afsindigt uforstaaeligt
+Skvulper Havet;
+Som Skyggen af en Lue
+Flammer den takkede Klint
+<pb n="128" facs="138.jpg"/>Mørkt, gennem Taagens Røghvirvler.
+For mig lurer det glatte, glatte Sand,
+Bag mig gabe mine Fodtrin i Sand,
+Mine svindende Kræfters Grave
+I en lang, lang lige Linje.
+
+Du lille Verden, som Taagen begrænser,
+Til din Midte naa’ mine Skridt.
+Bag mig er smaa Verdener
+Fulde af mine Fjed.
+Men paa hin Fangemurs anden Side
+Ligger en Verden, jeg ej har set og ej har traadt,
+Og i den gaar nu Døden,
+Og ved Muren vil han møde mig.
+Men jeg vil ikke vide det,
+Thi mit skuffende Blik
+Flytter den ved hvert Fjed,
+Og naar Døden naa’r mig ved Muren
+Og kaster mig til Jorden,
+Vil jeg tro, mine Fodtrin stanse
+I en ny Verdens Midte. . . .
+O hvor mat jeg er, saa salig mat!
+Og! Havet skvulper,
+Klinten vakler,
+Og Taagen .. ve! ve! Taagen flygter
+For Stormens faste Vingeslag!
+<pb n="129" facs="139.jpg"/>Klinten staar fast,
+Havet faar Glans,
+Og op op ned, op op ned
+Vugger det i kraftige Vover!
+Og Stormen er Guds Tanke,
+Hans stærke klare Tanke,
+Og det er mig, den vil,
+I Styrkes og Klarheds
+Dobbelte Rædsel!
+
+Men jeg vil ikke Døden, vil jeg!
+Min Sjæl skal skælve bort
+Som en Hules forvirrede Ekko,
+Og han vil, han vil drage den til sig
+I et stærkt, fuldt tonende Drøn! . .
+O klinger, mine Strænge, klinger
+Rallende og raslende! —
+Strænge, Strænge, er I af Jærn?
+Ja, ja, det er Stænger af Jærn,
+Stænger for min Celle,
+Thi jeg er gal!
+
+<nonum><small>(Vinteren 1868.)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019133">
+<head>
+  <title>(Den vilde Jagt.)</title>
+  <indextitle>Den vilde Jagt</indextitle>
+  <firstline>Har du med dit Øje skuet</firstline>
+  <source pages="130-131" facsimile-pages="141-142"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Har du med dit Øje skuet
+Solens Spil paa Vang og Vove,
+Mens med Angst dit Øre hørte
+Hundeglam og Klang af Hove
+Fra den vilde Jagt,
+Nattens vilde Jagt.
+
+Har du flygtet gennem Lunden
+Som en Hind og bange bævet,
+Medens fremad vildt du sprængte
+Med dit Spyd til Kastet hævet
+I den vilde Jagt,
+Nattens vilde Jagt.
+
+Har du ræd som Skovens Due
+Flagret over Kær og Hede,
+Medens du som sære Toner
+Skræmmed Fugl fra lune Rede
+I den vilde Jagt,
+Nattens vilde Jagt.
+
+<pb n="131" facs="141.jpg"/>Saa forstaar du, hvad jeg viser,
+Hvad jeg ej kan aabenbare,
+Saa vi gennem Livet sammen
+Flygte kan og sammen fare
+I den vilde Jagt,
+Nattens vilde Jagt.
+
+<nonum><small>(Sommeren 69?)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019134" variant="jacobsen2026101953">
+<head>
+  <firstline>Hvor den flade Mark løfter sig tungt</firstline>
+  <source pages="132-133" facsimile-pages="143-144"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor den flade Mark løfter sig tungt
+I en langlig, kamløs Bølge,
+Har Lyngen Fred.
+Der er stride Blade med sære Former,
+Der er vilde Blomster med stærke Farver,
+Og over dem alle — alle løfter
+En enlig Tjørn sin tunge Krone.
+Der gaar ingen Stier til Tjørnens Fod,
+Vejene løbe den sky forbi i bratte Bugter;
+Der er ingen Reder i Tjørnens Top,
+Solens Straaler er bange for den,
+Der hænger altid Dug i dens Grene.
+Men naar graalig Taage gør Maanen mat
+Og Nattevinden bølger sukkende om Lande
+Og brister ud i ....,
+Naar den slaar mod de tusende Kirkegaardsdiger:
+Da er der Liv af Død om den gamle Tjørn,
+Da er der Gang af          Skygger,
+<pb n="133" facs="143.jpg"/>Da er der Nyn af døde Blomster
+Og Klang af glemte sjunkne Klokker.
+Og didhen Vinden da fra Tjørnen naa’r
+Der fødes Angst og          Drømme.
+
+
+---
+
+
+For Tjørnen er Gravtræ,
+Dens Rødder rinde
+Blandt døde Mænds Ben . . .
+
+<nonum>  <small>Senest 1870.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019135" variant="jacobsen2026101910">
+<head>
+  <title>Ellen</title>
+  <firstline>Der aabnes en Dør</firstline>
+  <dates>
+    <written>1870-04-03</written>
+  </dates>
+  <source pages="134-136" facsimile-pages="145-147"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    Der aabnes en Dør,
+    Og der lysner et Lin
+    I Maanens dæmpede Skær.
+    Og det blavrer afsted
+    Imod Bondens Stald,
+    Hvor Hestenes Hove
+    Mod Gulvets Sten
+    Skramle Gnister døsige frem.
+    Det famler ved Slaaen,
+    Og Døren gaar op,
+    Og Linet svinder
+    I Varmens fugtige hvide Damp.
+
+    Det var Bondens Datter,
+    Det var Ellen!
+    Stakkels Ellen,
+    Hun har ingen anden Sjæl
+    End sine klare Øjne,
+<pb n="135" facs="145.jpg"/>    Véd ikke hvad og véd ikke hvi
+    Mer end den fattige Klinte,
+    Véd ej, om Regnen er lys og varm
+    Og Solstraalen fugtig og kold,
+    Fatter ej Miner og fatter ej Ord,
+    Sender den sidste Lyd, hun har hørt,
+    Død fra sin Mund som et Ekko,
+    Enten det saa er Hønens Kluk
+    Eller Moderens graadtunge Stemme.
+
+    Hun løser en Hest,
+    Og hun leder den frem,
+    Men Dyret skælver;
+    Sænkende sit Hoved stirrer det vildt
+    Og klemmer sine Hove
+    I sælsom Rædsel
+    Mod Jorden fast,
+    Som om det fattede, at dets Fører
+    Var mere bunden, mindre Herre,
+    Mere hjælpeløs end det selv.
+
+    Hun hæver sig op paa dets Ryg,
+    Og afsted det staar
+    Gennem tætte Straa,
+    Gennem Engens Rør
+    Ud over den mørke Hede.
+<pb n="136" facs="146.jpg"/>    Pigens Arm er om Hestens Hals,
+    Og hendes Lokker og Dyrets Manke
+    Vildsomt blandede flagre.
+
+    Op ad Bakke, ned i Kløft,
+    I rastløs Fart!
+    Der flyver Skum fra Hestens Mund,
+    Det stænker op fra den duggede Lyng,
+    Sand hvirvler fra Klit,
+    Vejen frem og Vej tilbage
+    Paa kryds, paa tværs,
+    Paa alle Led.
+    Saa stander Færden den lange Nat
+    Til Gry og Død.
+
+Var det nu kun et Vanvidsridt,
+Eller var det et Legem, der rased efter at fange sig Sjæl?
+Er der bag disse blinkende Stjærner Øjne, der vaage?
+Er der mere Liv end Jordens?
+
+<nonum>    <small>Renskrift ³/₄ 70.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019136" variant="jacobsenandrea8">
+<head>
+  <title>I Seraillets Have</title>
+  <firstline>Rosen sænker sit Hoved, tungt</firstline>
+  <source pages="137" facsimile-pages="148"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Rosen sænker sit Hoved, tungt
+Af Dug og Duft,
+Og Pinjerne svaje saa tyst og mat
+I lumre Luft.
+Kilderne vælte det tunge Sølv
+I døsig Ro,
+Minareterne pege mod Himlen op
+I Tyrketro,
+Og Halvmaanen driver saa jævnt afsted
+Over det jævne Blaa,
+Og den kysser Rosers og Liljers Flok,
+Alle de Blomster smaa
+I Seraillets Have,
+i Seraillets Have.
+
+<nonum><small>Renskrift April 1870.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019137" variant="jacobsen2026101912">
+<head>
+  <title>Faustina og Faust</title>
+  <subtitle>(Et Fragment).</subtitle>
+  <firstline>Nej der er ingen Kristendom i dette</firstline>
+  <source pages="138-139" facsimile-pages="149-150"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>1. <w>Kapitel.</w></center>
+<center><wrap><small>En Celle i et Nonnekloster. I Baggrunden et simpelt Leje, hvorpaa et Dødningehoved og en Bodssvøbe ligge. I Forgrunden et stort Krucifix.</small></wrap></center>
+<center>Faustina.</center>
+<center><wrap><small>(Staar ved det aabne Vindu).</small></wrap></center>
+</prose>
+<poetry>
+Nej der er ingen Kristendom i dette,
+Ej Sønderknuselse og stille Suk,
+Ej Myrrhakvalm og tunge Salmetaager,
+O hvilken Aften dog, hvor vild og smuk!
+Det er ej Martyrblod, der Vesten farver,
+Det Mulm, der synker, aander ikke Fred,
+Der er ej Bøn i disse Fløjtetoner,
+Her knirker ikke Korsets tørre Ved.
+I Solens Favn, den flammerøde Molok,
+De dunkle Skyer sænke sig med Lyst,
+<pb n="139" facs="149.jpg"/>Og Jorden elskovsmod sit Hoved gemmer
+Ved Mulmets attraasvangre Bejlerbryst.
+
+<nonum><right><small>(Gaar fra Vinduet hen foran Krucifixet).</small></right></nonum>
+
+O hvorfor fordrer du saa mildt, min Brudgom,
+Og stedse af det fattigste i mig?
+Hvi kommer ej du, som din stærke Fader
+Kom til Marie? Se, jeg venter dig!
+Ak, syg og lidende paa Træ du hænger
+Og vil kun Graad og stille Vemodssuk,
+Tyst skal der være hos dig som hos Syge,
+Tyst, — og jeg er saa hed og sund og smuk!
+
+O kom dog i din Skønhed og din Vælde
+Som fyrig Bejler eller Herre vred!
+Glad skal jeg ile hen i dine Arme,
+Glad synke, knust af dig, i Støvet ned.
+
+<nonum><right><small>(Hun løsner Nonnedragten og staar nøgen.)</small></right></nonum>
+
+Du vil mig ej! Nej ingen mig begærer.
+Hvortil dog disse rige Formers Pragt?
+Langt heller gav jeg disse blanke Lemmer
+Til Bytte for en Rovfugls hvasse Næb ...
+
+<nonum>  <small>1870?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019138" variant="jacobsen2026101913">
+<head>
+  <title>Navnløs</title>
+  <firstline>En Aften jeg mindes for alle</firstline>
+  <dates>
+    <written>1870-10-06</written>
+  </dates>
+  <source pages="140-141" facsimile-pages="151-152"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En Aften jeg mindes for alle,
+Mindes den grant, vemodig stolt
+Og jublende ydmyg. —
+Tyst var der i Stuen,
+Syngende Tavshed;
+Lampens Skær faldt saa klart og mildt
+Over de fine dejlige Træk;
+Og jeg saa’ — men ikke, at Lyset faldt
+Over de fine, dejlige Træk —
+Nej! det var, som min Sjæl
+Vugged i skabende Vælde
+Aasynet frem af Lysets skælvende Strøm.
+Og Øjnene saa’ paa mig saa længselsmilde,
+At min Tanke hvisked’ i sælsomt Mod,
+At jeg var værd at eje . . .
+Saa drog Trækkene ind i Skyggen.
+Ej Ord blev talt,
+<pb n="141" facs="151.jpg"/>Ord var for tunge for min Tanke;
+Og Haandtryk ikke vekslet,
+Thi ej jeg mindedes, at jeg var til.
+Og dog jeg véd, vi to vi høre sammen,
+At aldrig noget vil os kunne skille,
+Var hint Sekund endog vort sidste Møde.
+
+<nonum><small>Renskrift ⁶/₁₀ 70.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsenandrea5" aliases="jacobsen20261019139">
+<head>
+  <title>Rim</title>
+  <firstline>Skære, skære Havre</firstline>
+  <source pages="142" facsimile-pages="153"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>1.</center></nonum>
+
+Skære, skære Havre,
+Hvert et gyldent Straa!
+Hvem skal Havren binde
+Og være ovenpaa?
+Hvem ta’r mig,
+Og hvem ta’r Dig,
+Og hvem vil Alle vrage? —
+Gud ta’r sin, og Satan sin,
+Ingen bliver tilbage!
+
+<nonum><center>2.</center></nonum>
+
+Fare! Fare! Krigsmand!
+Fare for Enhver!
+Ingens Kaar er blide:
+Døden skal vi lide.
+Alle samles vi tilsidst
+I den sorte Gryde!
+
+<nonum><small>1870.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019140" variant="jacobsen2026101914">
+<head>
+  <title>[Af et Brev.]</title>
+  <indextitle>Af et Brev</indextitle>
+  <source pages="143" facsimile-pages="154"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Efterhaanden som jeg kommer mere og mere ind i den nyere danske Digterkunsts Frembringelser, indser jeg klarere og klarere, at jeg hidtil har arbejdet ganske i Taaget og at jeg, dersom jeg ikke tager Skeen i en anden Haand, aldrig vil blive til noget. Baade De og jeg har taget fejl, vi har været som hin daarlige Jomfru Martha, der gjorde sig Besvær med mange Ting og glemte det ene fornødne. Det ene fornødne er Uskyldighed. «Uden vi blive som Børn, komme vi ingenlunde paa det danske Parnas.» Vor Poesi er en ren Edens Have, hvor Digterne gaa om i den bareste Uskyldighedstilstand; der er kun den Forskel paa dem og Adam og Eva, at de alligevel bærer Figenbladet, — men paa den anden Side mangler de — — —
+  <small>1871?</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019141" variant="jacobsen2026101909">
+<head>
+  <title>Til Agnes</title>
+  <firstline>Alle mine Ønsker du véd er dine Savn</firstline>
+  <source pages="144-145" facsimile-pages="155-156"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Alle mine Ønsker du véd er dine Savn,
+Alle mine Tanker jeg døber i dit Navn,
+Alle mine Ord jeg lytter fra din Læbe.
+Men ønsker jeg vildt
+Og tænker jeg hvast
+Eller falde mine Ord for tunge,
+Saa tro mig svag, tro mig ej slet!
+Tro, at jeg end af Kampene træt
+Hildes i gamle Forvildelsers Næt!
+Tal saa til mig blødt og stille
+Dine lyse milde Ord,
+Hvor Taarerne glimtende bæve,
+Drag mig saa med det lette Flor
+Af din Tankes lydløse Suk.
+O! men stæng for Øjets Taare,
+<pb n="145" facs="155.jpg"/>Stæng for Barmens mindste Suk!
+Thi Taaren ses, Sukket høres,
+Og at jeg dig har Smerte voldet
+Maa vel jeg ane, men aldrig vide,
+Aldrig vide!
+
+<nonum><small>Februar 71.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019142" variant="jacobsenandrea6">
+<head>
+  <firstline>Nævner min Tanke dig, —</firstline>
+  <source pages="146" facsimile-pages="157"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nævner min Tanke dig, —
+Rødmer min Kind,
+Knyttes min Haand
+Og dirrer min Læbe.
+En Duft af Dug paa nysudfoldet Løv,
+De lette Skygger af en nøgen Busk,
+Et rødgult Solblink over fjærne Ruder,
+En Haand, der springer fra min Skulder,
+To Læber, der i Angst og Smærte,
+Men lydløst, hurtigt briste fra hinanden,
+Alt gaar forbi mig i et kort Sekund.
+Saa er det Nat,
+Og oppe mod en dunkel Himmel,
+Af Aander baaret, dem mit Øje ser
+Kun som en mørknet, men dog lødløs Krusning,
+Ligger du som gydt henover Luften.
+Din Dragt er hvid og ubevægelig,
+Din Arm er over dit Aasyn bøjet,
+Kun Mundens Smærtedrag er ikke dulgte.
+Saaledes skuer jeg dig langsomt svinde,
+Imedens jeg og Jorden synke.
+
+<nonum>  <small>1872.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019143">
+<head>
+  <title>(Markeds-Scene af «Mogens».)<footnote>Denne Scene udelod J. P. J. i sidste Øjeblik, før Fortællingen skulde trykkes, og erstattede den med et kort Referat, se «Mogens» S. 44—48 (Saml. Skrifter II. S. 305—6).</footnote></title>
+  <indextitle>Markeds-Scene af Mogens</indextitle>
+  <firstline>Jylland. Det var Aaret efter i Septembermaaned paa Kanstrup Marked, Tamperdag</firstline>
+  <source pages="147-153" facsimile-pages="158-164"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Jylland. Det var Aaret efter i Septembermaaned paa Kanstrup Marked, Tamperdag. Midnat var forbi. Der skulde igen være Marked den næste Dag, derfor stode Teltene endnu. Inde i Rasmus Kryles Telt var der endnu Folk oven Senge. Lys skinnede igennem Sejlduget, og Skygger bevægede sig henover det. Over lange, tomme Borde og Bænke af umalet Fyrretræ drev det med Kvalm af Posetobak, Øl og vaadt Vadmel. I den ene Ende var der en Opstilling af brune Markedskasser, tomme Ankere, ludende Tønder og fidtet Stentøj. Bag ved det laa Kryles Kone og Piger og sov i et Urede <pb n="148" facs="158.jpg"/>af Dyner og Halm. En Staldlygte kastede sit blavrende Lys over deres trætte Ansigter. Ved et Bord i den anden Ende sad Mogens og et mørkt Fruentimmer i falmet Rødt og luvslidt Fløjl. Mogens var bleg og mager, der var kommet noget Haardt i den Maade, paa hvilken han bevægede sit Hoved, og der var ligesom noget grusomt ved hans Mund. Ligeoverfor sad en lille, trivelig, korthalset Bonde med et rødbrunt, skægløst Ansigt; han havde mistet sin Hue og havde bundet et stort blaarudret Lommetørklæde over Hovedet. Det var Jens Svingbjerg; Per Styrløs sad ved Siden af ham i Pjækkert og blank Kasket, havde lang, bar Hals, en stor, læbeløs Mund, for lang Næse, og smaa Øjne uden Bryn. I Ørene havde han store, glimtende Guldringe. Ved Teltets Udgang sad en lurvet Fyr paa et Ølanker og sov, det var Fruentimmerets Mand. Kryle gik til og fra i store Sivsko, blev borte i Mørket for at se til en Keddel, der sang og smaakogte, og dukkede frem for at pudse Lysene og nippe af et Glas, der stod paa Bordenden. Ingen sagde Noget, der var ganske stille. Langt borte galede en Hane.
+<pb n="149" facs="159.jpg"/>  Jens sang pludselig op med skingrende Stemme:
+</prose>
+<poetry>
+«Naar Dagen den kommer,
+Jeg Kongen skal tjene
+Og bære Musketten saa tung,
+Saa vil jeg . . . . .»
+</poetry>
+<prose>
+  «Hold Mund, Jens, og se efter, om der er spændt for!»
+  Da Mogens havde sagt dette, greb han et Glas og kastede Indholdet over Manden paa Ølankeret:
+  «Vaagn op, Bajads!» raabte han, «og tag Martha med sig!»
+  Manden fór op, saa’ sig forstyrret om, sank ned paa sin Plads igen og sov videre.
+  «Giv ham Glasset i Stjærnen, saa vaagner han nok», foreslog Per Styrløs.
+  Mogens rystede uvilligt paa Hovedet.
+  «Saadan en Tamp!» indvendte Per, «han kan taale som syv Satan og tre Prangere.»
+  Martha havde siddet og sét forskende paa Mogens, hun lagde sin brune Haand paa hans Nakke, bøjede sit Ansigt henunder hans og sagde med fremmed Akcent, hvinende og vredt: «Jeg gaar ikke med Naudin, nej, nej, nej!»
+<pb n="150" facs="160.jpg"/>  «Rør mig ikke, Kvind!» raabte Mogens og slyngede hendes Arm fra sig, saa Haanden slog ned mod Bordet.
+  Martha blev ligbleg og hendes store sorte Øjne funklede, hendes Træk blev ligesom skærpede og Underlæben sank ved Mundvigene; med en skingrende Krampelatter lod hun sig synke ned under Bordet og blev liggende hulkende ved Mogens’ Fødder.
+  Jens hørtes synge udenfor:
+</prose>
+<poetry>
+«En Aften, jeg gik min sædvanlige Gang,
+Jeg hørte en Pige saa sørgelig sang . . .»
+</poetry>
+<prose>
+  Han kom ind syngende; men da han saa’, hvad der var paa Færde, tav han pludselig og listede sig stille hen paa sin Plads. Mogens saa’ spørgende over paa ham. Han nikkede.
+  «Rasmus, mer Punsch!» raabte Mogens, tog en Flaske og strøg med den ganske roligt Stykke efter Stykke af hvad der stod paa Bordet ned paa Jorden: «og du, Martha, sæt du dig op og vær rimelig!»
+  Der blev sat store Glas frem med rygende Punsch. Per bøjede sig ned under Bordet og hviskede: «Kom nu op og tag sig en Hiddengut, hun kan jo nok skønne, at han er galt vendt i <pb n="151" facs="161.jpg"/>Nat, hun plejer jo ellers at være saa glat og fornuftig.»
+  Martha dukkede op og satte sig. Mogens klappede hende paa Ryggen; og Jens trommede af Lystighed paa Bordet.
+  «Naa, Jens!» raabte Per, «fortæl nu op om de Skræm Musikanter og de Kanstrup Orner!»
+  «Nej!» sagde Jens, «lad Rasmus fortælle om Probenreuteren, der solgte ham Brændevinsbevilling.»
+  «Kunde Per ikke hellere fortælle om den Gang, han friede i Mørke og blev viet ved Lys?» spurgte Rasmus forsigtigt.
+  «Nej!» raabte Per, «Fanden med alle Fruentimmere og Gud lade dem ikke længer leve end der er Stads ved dem. Skaal, Jens! syng op! har du glemt Klemme Neffes Vals? Neffe, neffe, nef, nef, nef. Øh, Ko! kan du blive opdinket!»
+  Men Jens var allerede kommen for langt med Punschen og om i sit triste Hjørne og begyndte at synge med brægende Stemme, medens Taarerne løb ham ned ad Kinden:
+</prose>
+<poetry>
+«Ak Verden! ak Verden! din Modgang er stor
+Og alting er klædt udi sørgelige Flor.
+<pb n="152" facs="162.jpg"/>Jeg elsked mig en Pige udi Rendsborgstad,
+Da var jeg Soldat og da var jeg glad.»
+</poetry>
+<prose>
+  Per ruskede ham for at faa ham munter. Det hjalp. Jens blev ellevild af Glæde og gav sig til at danse Menuet for dem, med pludselige Afbrydelser af Hamborger-Skotsk. Per hujede en Opsang dertil, Martha stod op paa Bænken og jodlede, og Rasmus klingrede forsigtigt paa sit Glas med en Theske.
+  Endelig bleve de trætte og gik paa Vognen, Mogens og Martha paa Forsædet, Jens og Per bag i. Rasmus stod og takkede og ønskede dem lykkelig Henfart. Jens stod op i Vognen og sang:
+</prose>
+<poetry>
+«Nu beklager jeg Enhver,
+Thi Mormonen kommen er,
+Vil os alle af Landet udrive.»
+</poetry>
+<prose>
+  Saa kørte de. Med ét drejede Mogens ind paa en Sidevej. Per sagde, at det var galt, Mogens sagde, at det fik være rigtigt for den Gangs Skyld. De kom ind paa en gammel Hedevej, ét Hjul paa Brinken, ét i Hjulsporet, begge paa Brinken, begge i Sporet, Sæt paa Stød og Stød paa Sæt, afsted stod det.
+<pb n="153" facs="163.jpg"/>  «Jeg vil af!» raabte Jens, «det er vild Vej og gal Mands Køren.»
+  Mogens holdt, og Jens sprang af.
+  «Farvel, Jens Svingbjerg!»
+  Vejen blev ikke bedre, og Mogens piskede paa Hestene alt hvad han kunde. Nu var den ene Fadding mod Vejkanten, nu den anden, Hestene oppe, Vognen i et Hul, Hestene nede, Vognen oppe; lige for laa den store Lyngbakke, mod den gik det. «Holdt!» hvinede Martha. Saa kom hun af. Mogens kørte opad Bakken, han stod op og raabte og gennede, Skaglerne vare saa stramme, som om de skulde springe, Vognstangen var ved at gaa ud af Koblerne; nedad Bakken, — Hestene skejede hver til sin Side og styrtede afsted, hvert Øjeblik var Vognen ved at løbe ind paa dem. Da de vare nede af Bakken, vendte Mogens sig om mod Per. Han var der ikke mere. I det samme susede noget Tungt forbi Mogens. Det var Pers store Foldekniv.
+  «Det ligner dig, Per Styrløs.»
+  Mogens kørte langsomt videre for at finde en Vej. Det lysnede i Øst, Lærkerne sang, og Duggen glimtede paa Lyngen.
+  <small>(April 1872.)</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019144" variant="jacobsen2026101916">
+<head>
+  <title>Wiebe Peters</title>
+  <subtitle>Konturen til en Romanfigur.</subtitle>
+  <source pages="154-157" facsimile-pages="165-168"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Forgangen Aar, da vi levede i Krigen mellem Frankrig og Tyskland, traf det sig saaledes, at jeg kom til at opholde mig en Maanedstid paa den lille Ø Anholt.
+  Det var vel otte Dage eller saa efter Krigens Begyndelse, at jeg en Middagsstund stod i den lille Smøge, der har Anholt-Kirke paa den ene Side og Plankeværket af en Have paa den anden. Inde i Haven stod der en Anholter-Kone, og med hende talte jeg. Jeg mindes det altsammen saa tydeligt, at saasnart mine Tanker falde derpaa, ser jeg Kirkens røde Brandstige og de blaa Klokkeblomster paa Kirkegaardsdiget; den lumre Sommerluft og den stærke tunge Duft af store Nælder mærker jeg i det samme, og jeg hører, hvad jeg den Gang hørte.
+<pb n="155" facs="165.jpg"/>  Vi havde talt om Steffen Storm, der var i Lejren ved Hald, om hvor sørgeligt det var, at han skulde være der i saadanne urolige Tider, og om at det var den eneste nulevende Anholter, jeg ikke havde set. Vi talte om, at alle Øens Folk vare i Slægt med hverandre, og om at alle Husene laa samlede Side om Side: derfor mente jeg nu, at Beboerne maatte se hinanden Snese Gange om Dagen, og saa fortalte hun, at hun ikke i de sidste fem Aar havde sat sin Fod i Vester-Enden af Byen. Saa var det, at en underlig dump Lyd kom og rystede Luften inde i Smøgen, og inden jeg havde forstaaet, hvad det var, kom den igen. Det var et fjærnt Kanonskud — det var Krigen, det var den franske Flaade, der var under Opsejling, saaledes fortsatte mine Tanker. Lyden blev ved, og mit Haab slog Søslag, skummede fremad med franske Eskadrer og strøg tyske Flag, saa jeg hørte kun svagt, ligesom noget borte, og maaske hun ogsaa var gaaet, Konen raabe: «Aa Gud bevare vel Steffen Storm!»
+  En enlig Ko brølede af Længsel efter Stalden, blev hentet hjem og tav. Et Barn stod i en af Dørene og græd; saa blev Døren <pb n="156" facs="166.jpg"/>lukket, Barnet græd derinde, og saa tav ogsaa det. «Aa Gud bevare vel Steffen Storm!»
+  Hvilket underligt Folk, som kan leve hele deres Liv her, som kun kan leve her. Folk, for hvem den øvrige Verdens Færd, Kampe og Omskiftelser er fjærne, taagede og farveløse som Drømme fra ifjor. Et hundrede Mennesker, hvis Tilværelse er saaledes slynget, knyttet, vævet sammen, at Døden vel kan bringe Sorg, men ikke Forglemmelse: thi den, der døde for syv Aar siden, omtales næsten, som om han leved igaar, og hans Enke kommer hver Søndag sørgeklædt til Kirke, lige til sit Livs Ende, og naar Velsignelsen lyses over Menigheden, da maa hun ikke rejse sig op, thi Lyset fra Guds Ansigt tør ikke falde fuldt paa hende, for saa stor Glæde tør ikke komme til hende, hvis Ægtefælle er taget bort.
+  Jeg husker, hvor jeg længtes den Aften efter rigtig at forstaa et af disse Mennesker, efter et Øjeblik at tænke med deres Hjerner, føle med deres Hjærter og sanse med deres Sanser: det vilde være mere nyt, end den nye Verden var det for Kolumbus.
+  Den samme var min Stemning og de samme mine Tanker, da jeg i Sommer stod paa <pb n="157" facs="167.jpg"/>Dæmningerne ud for Eppenvørden . . . Der laa Ditmarskerlandet med sin blaagrønne Marsk og sin fedtede Gest, der laa Havet, Ditmarskens Skaber, Ernærer og Fjende, det Hav, om hvilket de tænkte, som Job talte om Jehova: Havet gav, Havet tog, Havets Navn være lovet. — — —
+  <small>Efteraar 72?</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019145" variant="jacobsenandrea7">
+<head>
+  <firstline>Det er Stævnemødets Time</firstline>
+  <source pages="158-159" facsimile-pages="169-170"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det er Stævnemødets Time!
+Det er Stævnemødets Time!
+I en stor og gylden Stime
+Stryger Lyset fra min Lampe
+Over Haven, over Hegnet, over langt, langt bort.
+Og det lokker og det drager?
+Ja det lokker og det drager,
+Ved hans Hjærte det ham tager,
+Til hans Kind det Blodet jager,
+Og med længselslyse Blikke
+Og med elskovsdrukne Tanker
+Iler frem han utaalmodigt
+Som en Stormvind, som en Bølge,
+Som hans Skygge,
+Som ham selv.
+
+Og jeg glædes, og jeg ængstes,
+Bliver rød og bliver bleg.
+Ganske stille vil jeg sidde,
+<pb n="159" facs="169.jpg"/>Jeg vil nynne,
+Hvis jeg kunde!
+Men jeg mangler næsten Aande.
+Ganske stille vil jeg sidde,
+Jeg vil stirre paa hans Billed.
+Nu han kommer — kommer ikke,
+Nu han kommer — kommer ikke,
+Kommer ikke — kommer ikke.
+O hvor stille! Jeg fortvivler.
+Haahaa haa og saa saa saa!
+Jeg ler af din Skønhed
+Din Elskov og min Tro,
+Jeg ler af din Tro og min Elskov!
+Hvis du vidste, hvor rig jeg var med dig!
+Hvis du vidste! . . .
+
+<nonum>  <small>Efteraar 72?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019146" variant="jacobsenandrea9">
+<head>
+  <title>Grækenland</title>
+  <firstline>Marmoret er hvidt</firstline>
+  <dates>
+    <written>1872-11-28</written>
+  </dates>
+  <source pages="160-161" facsimile-pages="171-172"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Marmoret er hvidt,
+Men det lyser ikke.
+Søjlerne er slanke,
+Men de knejser ikke.
+Kapitælernes frodige Pragt er svunden.
+Akantusløvet har rullet sig sammen,
+Er visnet og faldet,
+Smulrende blander det sit Støv med Plintens.
+Og de gyldne Skaaler er tomme,
+Deres Malm har intet Mæle.
+Hebe har kun Taarer,
+Bakkos har kun Vinløv,
+Døsigt lege Pantrene med Thyrsen.
+Af Ælde ryster Zeus’es lokketunge Hoved,
+Poseidon fægter sælsomt i Luften med sin Trefork,
+Og Phøbus ser bedrøvet efter Solen;
+De ledige Hestes Hove
+<pb n="161" facs="171.jpg"/>Trampe paa den strængløse Lyre.
+Muserne slumre,
+Gratierne er skilte.
+
+Men Lauren har alle sine Blade.
+
+Mellem de Søjler staar der en Laure
+Stærkstammet, lavstammet, storkronet og bred.
+Nedover Søjlerne, rodfæstet i dem,
+Løbe de tornede Ranker,
+Leger det flimrende Løv
+Af den Plante, hvis purpurgyldne Roser
+Alle Sydens Kvinder elske.
+Mange Mænds Vej gaar forbi de Søjler,
+Alle Mænds Blikke vogte paa Rosen.
+Mange Blomster bær’ den,
+Og højt er de baarne.
+Dog før Dagen vel er kommen,
+Er dens Blomsterrigdom delt.
+
+Men Lauren har alle sine Blade.
+
+<nonum>  <small>Renskrift 28/11 72.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019147" variant="jacobsen2026101928">
+<head>
+  <firstline>Kongens Øre er mæt af Tale</firstline>
+  <source pages="162-164" facsimile-pages="173-175"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kongens Øre er mæt af Tale,
+Tørster efter Sang.
+
+---
+
+Et Kvad, Herre Konge!
+Et Kvad skal du faa,
+Thi Øllet endnu staar højt i Hornet,
+Og end har det ej som en koglende Taage
+Vundet sig rundt om Mændenes Tanker;
+Endnu har det ej hidset op deres Stemning,
+Saa den er tilfals som en billig Frille.
+    Og Goden er gaaet,
+    Det er nu (det) bedste.
+
+---
+
+Der er ikke Hav, der er ikke Jord,
+Ej Menneskefjed eller levende Aande:
+Det er fjærnt, fjærnere end Blaalands fjærneste Kyster,
+Maales ikke ved Mile,
+Naaes ikke i Aar.
+<pb n="163" facs="173.jpg"/>Fløj du i Ørneham, til Fjerene faldt,
+Du kom der aldrig, du fløj derfra!
+
+Mit Øje dummes, mit Øje ser —
+
+Der er ikke Hav, der er ikke Jord,
+Ej Menneskefjed eller levende Aande.
+Der er kun de store, de ældgamle Tider,
+De ligger, de løftes, de bæres
+— Af hvad? eller bær’ de sig selv?
+De har taarnet sig op i Fjælde,
+Der har Skygger til Verdner ni,
+De har straalende Bræer, der lyse
+For Verdner og Verdner igen.
+Mørke, stormslagne Skyer er strandet ved deres Fod,
+Nordlyset risler i skiftende Buer
+Ned over de mørke Sider.
+
+Og bag dem er der Lys i Lys,
+Som Guld, der spejler sig i Guld.
+
+Nastronds Pine over Goder alle!
+Helhejms Gus over jer, der lyde!
+Hvi er vor Tid som et grøngræsset Dalstrøg,
+Hvor Taagen har lagt sig til Ro?
+<pb n="164" facs="174.jpg"/>Hvi er vor Tid som et bredmundet Aaløb,
+Der dovner sig frem, blinkende af Søvn?
+Hvi er Mændene som de stakkede Sværd,
+Der er matte i Slaget og døde i Bidet,
+Uden Vægt eller Klang i Svinget?
+Og hvi er hver en Kvinde i Landet
+En Perleklase paa møre Traade?
+Mumler jer Læbe mig Svar,
+Eller venter I Ordet?
+
+Min Sang er oppe:
+
+---
+
+<nonum>  <small>Senest 1873?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019148">
+<head>
+  <title>Bryllupssange</title>
+  <firstline>Livsranken bugter fyldig sig og frodig</firstline>
+  <notes>
+    <note>Første sang findes også som <xref poem="jacobsenandrea10"/>. Denne udgave samler to bryllupssange under én overskrift.</note>
+  </notes>
+  <source pages="165-168" facsimile-pages="176-179"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.</center></nonum>
+
+Livsranken bugter fyldig sig og frodig
+Frem for jer Sans;
+Haabets det rige Lys omslynger modig
+Druernes Krans;
+Farver i Live spiller under Løvet,
+Hvilende Toner svulme frem til Lyd.
+Grib det alt og øv det!
+Lev det og nyd!
+
+Ungdommens Almagt syder jer i Aarens
+Ilddrukne Kraft,
+Længes at skabe og i Gerning baaren
+Skue sin Saft.
+Spænd da jer Verdens dristigt brudte Buer,
+Slyng da dens slanke Søjler imod Sky;
+Fyld med Hjærtets Luer
+Verden den ny.
+<pb n="166" facs="176.jpg"/><nonum><center>II.</center></nonum>
+
+<nonum><center>Hilsen fra Dyrehavens Dryader.</center></nonum>
+
+Længe nok har vi været om at komme,
+Skøndt os et Ekstratog førte her til By’n.
+Nu vil vi glad
+Synge jer et Kvad,
+Svinge jer i Rytmernes brogede Rad.
+
+Allemand har vi tavse Vidner været
+Til Eders Kærligheds første Morgengry,
+Set er hvert Smil,
+Stævnemødets Il,
+Kærlighedsdrømmenes vidunderlige Reel.
+
+Derfor vi nu en Hilsen vil jer bringe,
+For at I kan se, at vi ikke har jer glemt,
+I og vi har Il;
+Skynd dig, Kirsten Pil!
+Stille, nu begynd . . . . .
+
+    Nu Skoven er øde
+    Og fløjet hver Fugl,
+    Smaakilderne døde,
+    Og Blomster i Skjul.
+
+<pb n="167" facs="177.jpg"/>    Sig Dagslyset dølger
+    Ved Taagernes Barm,
+    Kun Sneblomster bølger
+    Om Vinterens Karm.
+
+    Men Kærlighedsguden
+    Tog Somren ej med,
+    Han banker paa Ruden
+    Og vinker: afsted.
+
+    Til Pile ej trænger
+    Han mer denne Gang,
+    Et Posthorn der hænger
+    Hvor Koggeret hang.
+
+    Ret snart vil han føre
+    Det op for sin Mund,
+    Og da maa I køre
+    Den selvsamme Stund.
+
+    Gid heldigt I køre,
+    Hvorhen I saa kør’.
+    Thi vidt kan jer føre
+    Slig Kusk-Amatør.
+
+<pb n="168" facs="178.jpg"/>    Og naar I er landet
+    Her atter, saa husk:
+    Ej Hymen er andet
+    End Amor som Kusk.
+
+<nonum>    <small>Januar 1873.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsenandrea11" aliases="jacobsen20261019149" variant="jacobsen2026101930">
+<head>
+  <title>Arabesk</title>
+  <subtitle>
+    <line>Til en Haandtegning af Michel Angelo.</line>
+    <line>(Kvindeprofil med sænkede Blikke i Ufficierne.)</line>
+  </subtitle>
+  <firstline>Tog Bølgen Land</firstline>
+  <notes>
+    <note>Denne udgave fra 1900 trykker »Rullende« i tredje vers. De følgende redaktionelle noter om læsemåden »Rallende« er bevaret fra Kalliopes tidligere tekst under »Andre digte«.</note>
+    <note>Antagelig påbegyndt 1870 og i hovedsagen færdigskrevet 1874.</note>
+    <note>Trykt i Vilh. Møllers tidsskrift <i>Flyvende Blade,</i> 11/7, 1874 og er Jacobsens debut som lyriker.</note>
+    <note>I Kalliopes tidligere tekst under »Andre digte« var "Rullende" i tredje vers rettet til "Rallende" på foranledning af Ole Pedersen, som skriver "Fejlen er meget almindelig, så der er ikke noget at være flov over!". Ole Pedersen citerer desuden Carsten Madsen: »Digteren har været meget eksplicit her, i førsteudgaven af Michelangelo-arabesken stod der "<i>Rullende</i> med Grusets Perler", men senere udgaver korrigerer denne rent typografiske fejl, der afspejler en konventionel forventningshorisont.«, Spring nr. 13, 1998, p. 67.</note>
+    <note>Sven Sørensen tilføjer: Digtet blev 'sat' og omhyggeligt korrekturlæst efter digterens manuskript (måske endda af Vilh. Møller selv). Ordet 'Rallende' vakte undren og foranledigede flere henvendelser til Møller, men han konstaterede at det ikke var trykfejl, da det stemte med trykmanuskriptet. Der var dog den mulighed at JPJac. i distraktion havde skrevet 'Rallende' for 'Rullende': derfor hans henvendelse til digteren, hvorpå denne svarede at det ikke var skrivefejl (se faksimile heraf hos Jacobsens <i>Samlede Værker</i>, Fr. Nielsen (red.), Rosenkilde og Bagger, 1973, bd. 4, ill. 158.). Havde førstetrykket haft 'Rullende', ville ingen have mistænkt trykfejl, og digterens brev ville være uforståeligt.</note>
+  </notes>
+  <pictures>
+    <picture src="jacobsenandrea11-p1.jpg">"Michelangelo: <i>Kvindeprofil</i>, Rødkridttegning; Oxford, University Galleries. If. Georg Brandes den tegning, der har inspireret JPJ til Michelangelo-arabesken (G. Brandes: <i>Michelangelo Buonarroti</i>, II; 1921, s. 364). Brandes erhvervede sig i 1860 en reproduktion af tegningen, som JPJ angiveligt har set." J.P. Jacobsen, <i>Lyrik og Prosa</i>, ved Jørn Erslev Andersen, DSL/Borgen 1993, side 236.</picture>
+  </pictures>
+  <source pages="169-173" facsimile-pages="180-184"/>
+  <keywords>michelangelo</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Tog Bølgen Land?
+Tog den Land og sived langsomt
+Rullende med Grusets Perler
+Atter ud i Bølgers Verden?
+Nej! den stejled som en Ganger,
+Løfted højt sin vaade Bringe!
+Gennem Manken gnistred’ Skummet
+Snehvidt som en Svanes Ryg.
+Straalestøv og Regnbu’taage
+Sitred op igennem Luften:
+Ham den kasted’,
+Ham den skifted’,
+Fløj paa brede Svanevinger
+Gennem Solens hvide Lys.
+
+Jeg kender din Flugt, du flyvende Bølge;
+Men den gyldne Dag vil segne,
+Vil, svøbt i Nattens dunkle Kappe,
+<pb n="170" facs="180.jpg"/>Lægge sig træt til Hvile,
+Og Duggen vil glimte i hans Aande,
+Blomsterne lukke sig om hans Leje,
+Før du naa’r dit Maal.
+— Og har du naa’t det gyldne Gitter
+Og stryger tyst paa spredte Vinger
+Henover Havens brede Gange,
+Henover Laurers og Myrthers Vover,
+Over Magnoliens dunkle Krone,
+Fulgt af dens lyse, roligt blinkende,
+Fulgt af dens stirrende Blomsterøjne,
+Nedover hemmeligt-hviskende Iris,
+Baaret og dysset i graadmilde Drømme
+Af Geraniernes Duft,
+Af Tuberosers og Jasminers tungtaandende Duft,
+Baaret mod den hvide Villa
+Med de maanelyste Ruder,
+Med dens Vagt af høje, dunkle,
+Høje, trolige Cypresser,
+Da forgaar du i Anelsers Angst,
+Brændes op af din skælvende Længsel,
+Glider frem som en Luftning fra Havet,
+Og du dør mellem Vinrankens Løv,
+Vinrankens susende Løv,
+Paa Balkonens Marmortærskel.
+Mens Balkongardinets kolde Silke
+<pb n="171" facs="181.jpg"/>Langsomt vugger sig i tunge Folder,
+Og de gyldne Drueklaser
+Fra de angstfuldt-vredne Ranker
+Fældes ned i Havens Græs.
+
+Glødende Nat!
+Langsomt brænder du henover Jorden;
+Drømmenes sælsomt skiftende Røg
+Flakker og hvirvles afsted i dit Spor.
+Glødende Nat!
+— Viljer er Voks i din bløde Haand,
+Og Troskab Siv kun for din Aandes Pust!
+Og hvad er Klogskab lænet mod din Barm?
+Og hvad er Uskyld daaret af dit Blik,
+Der intet ser, men suger vildt
+Til Stormflod Aarens røde Strøm,
+Som Maanen suger Havets kolde Vande?
+— Glødende Nat!
+Vældige, blinde Mænade!
+Frem gennem Mulmet blinker og skummer
+Sælsomme Bølger af sælsom Lyd:
+Bægeres Klang,
+Staalets hurtige, syngende Klang,
+Blodets Dryppen og Blødendes Rallen
+Og tykmælt Vanvids Brølen blandet
+Med purpurrøde Attraas hæse Skrig . . .
+<pb n="172" facs="182.jpg"/>— Men Sukket, glødende Nat?
+Sukket, der svulmer og dør,
+Dør for at fødes paany,
+Sukket, du glødende Nat!
+
+Se, Gardinets Silkevover skilles,
+Og en Kvinde høj og herlig
+Tegner mørk sig mod den mørke Luft.
+— Hellige Sorg i dit Blik,
+Sorg, der ej kan hjælpes,
+Haabløs Sorg,
+Brændende, tvivlende Sorg.
+— Nætter og Dage summe over Jorden,
+Aarstider skifte som Farver paa Kind,
+Slægter paa Slægt i lange, mørke Bølger
+Rulle over Jord,
+Rulle og forgaa,
+Medens langsomt Tiden dør.
+Hvorfor Livet?
+Hvorfor Døden?
+Hvorfor leve, naar vi dog skal dø?
+Hvorfor kæmpe, naar vi véd, at Sværdet
+Dog skal vristes af vor Haand en Gang?
+Hvortil disse Baal af Kval og Smærte:
+Tusend Timers Liv i langsom Liden,
+Langsom Løben ud i Dødens Liden?
+<pb n="173" facs="183.jpg"/>Er dét din Tanke, høje Kvinde?
+
+Tavs og rolig staar hun paa Balkonen,
+Har ej Ord, ej Suk, ej Klage,
+Tegner mørk sig mod den mørke Luft
+Som et Sværd igennem Nattens Hjærte.
+
+<nonum>  <small>1874? (Noget af Digtet fra 70.)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019150" variant="jacobsen2026101942">
+<head>
+  <title>Englen Asali<footnote>Oven over staar: <i>Eros sacer. Studier i Vers efter gamle italienske Kirkemalerier.</i></footnote></title>
+  <firstline>Om Perlerader vare Strænge</firstline>
+  <source pages="174" facsimile-pages="185"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Om Perlerader vare Strænge
+Paa min tonende Gige,
+Og en Maanestraale Buen,
+Der lod Tonerne klare fremstige,
+Glemmer jeg dog aldrig, hvad der klang
+I mit Hjærte, den Gang
+Første Gang af alle Ordets Engel
+Svæved mig forbi i Morgenrøden. —
+Glødende faldt Lyset over Lok og Vinge,
+Og det spejled sig blankt i hans blanke Klinge;
+Morgenvinden suste i hans Dragt,
+Blottede hans Lemmers marmorhvide Pragt.
+
+  De er skønne, Ordets Engle,
+  Og til Kampen altid rede.
+  Derfor bærer ogsaa Sværd de
+  I en gylden, slangesiret Skede . . .
+
+<nonum>  <small>1874?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019151" variant="jacobsen2026101943">
+<head>
+  <firstline>Det har Seraferne</firstline>
+  <source pages="175" facsimile-pages="186"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det har Seraferne:
+Seraferne har rullet bort de blanke Stjærner
+Og foldet Mørket ned om Jordens Skuldre,
+Har stænket Dug henover Dal og Høje
+Og hængt de gyldne Skyer op i Østen.
+Hver Ting er rede, Jord og Himle vente
+Og Solen bier blussende bag Bjærge
+Paa Vinket fra Gud Herrens Herskerthrone . . .
+
+<nonum>  <small>1874?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019152" variant="jacobsenandrea12">
+<head>
+  <firstline>Løft de klingre Glaspokaler</firstline>
+  <source pages="176" facsimile-pages="187"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Løft de klingre Glaspokaler,
+Som Burgunder-Bølger maler
+Røde som en mørk Rubin.
+
+  En svunden Dag
+  En svunden Tid
+  Vaagner igen i mit Minde.
+
+Nu Dæmringen kvælder,
+Og Jorden har vendt
+Sig bort ifra Sollysets Strømme.
+  Vilde Rose ved Alfarvej,
+  Vinrose, Vinrose!
+
+Vilde Rose ved Alfarvej,
+Hvor er vor lyse Sommernats Drøm?
+Svunden som Tonernes flygtige Strøm?
+  Vinrose, Vinrose!
+
+<nonum>  <small>1874?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019153" variant="jacobsenandrea13">
+<head>
+  <firstline>Silkesko over gylden Læst</firstline>
+  <source pages="177" facsimile-pages="188"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Silkesko over gylden Læst!
+Jeg har mig en Jomfru fæst’!
+Jeg har mig en dejlig Jomfru fæst’!
+Ingen er som hun paa Guds sollyse Jord,
+Ikke en eneste en.
+Som Himlen i Syd og som Sneen i Nord
+Er hun ren.
+Men der er Jorderigs Fryd i min Himmel,
+Og Flammer der staar af min Sne.
+Ingen Sommers Rose er rødere,
+End hendes Øje er sort . . .
+
+<nonum><small>1874?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019154" variant="jacobsenandrea15">
+<head>
+  <title>Taarnvægtersang</title>
+  <firstline>Nu er det Nat</firstline>
+  <notes>
+    <note>Af dette Digt fandtes der mellem J’s Papirer kun en af Andenmand besørget Afskrift. Men dets Titel staar anført paa en Fortegnelse, J. har gjort over Digte, som han agtede at optage i en Samling, saa Digtet tør antages at være af ham. <i>Udg.</i></note>
+  </notes>
+  <source pages="178-179" facsimile-pages="189-190"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu er det Nat,
+Og Skellet, som blev sat
+Af Gud vor Herre, inden Tiden blev,
+Imellem Lysets klare Sø
+Og Mulmets mørke Hav,
+Det Skel er flyttet fra sin Grund —
+Kun for en Stund,
+Vel tør vi ydmygt haabe.
+
+End glimter i det fjærne Vest
+Et Skær fra Lysets tætte Vande,
+Men de er stædt ej, heller fæst
+Og ville brat henrinde.
+
+I Folk i Borg og Fæste,
+I, som paa Veje færdes,
+Og I paa salten Sø,
+Tager til at bede,
+Inden Dagens Møde
+Brat faar Overhaand.
+
+<pb n="179" facs="189.jpg"/>I tage til at lede
+Jere Tanker fra Hus og Hjem,
+I lade jert Hjerte drive
+Dem imod Himlen frem.
+Thi Herren er god og miskundelig
+Nu og evindelig.
+
+Herre, nu komme de
+Gode og Onde,
+Syge og Sunde,
+I Raab og Tale,
+I Suk og i Korsets
+Hellige Tegn.
+Du høre dem alle efter din Naade,
+Bønhøre dem efter din Vilje,
+Du lade dem kristeligen bede!
+
+<nonum><small>1874?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019155">
+<head>
+  <title>(Omkring mit Billed —)</title>
+  <indextitle>Omkring mit Billed</indextitle>
+  <firstline>Liglagner i Festons omkring mit Billed</firstline>
+  <source pages="180" facsimile-pages="191"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Liglagner i Festons omkring mit Billed
+Og mørk Cypres og Pil, men ingen Palmer;
+En Haandfuld Liljer slidt af deres Stængel
+Med graalig Aske paa de hvide Blade;
+Og knuste Urner, nedadvendte Fakler,
+Kridhvide Dødningben og sorte Faner;
+Men ingen Hænder slutted’ i hinanden
+Og ingen Sommerfugl i Flugt mod Himlen!
+
+<nonum>  <small>(1874?)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019156" variant="jacobsenandrea20">
+<head>
+  <title>Landskab</title>
+  <firstline>En vidtstrakt Hede med mossede Sten</firstline>
+  <dates>
+    <written>1875-03-02</written>
+  </dates>
+  <source pages="181-182" facsimile-pages="192-193"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En vidtstrakt Hede med mossede Sten,
+Lidt blinkende Vand i det fjærne,
+En gulrød Stribe hvor Solen gik ned,
+En eneste skælvende Stjærne.
+
+Og sælsomt susende Aftenens Vind
+Saa langeligt sukkende aander,
+Som kæred’ mindeligt i den en Sjæl
+For jordiske Veer og Vaander.
+
+Da Solen vaagned, vel tusende Haab
+Strøg fremad paa dristige Vinger;
+Hvem véd, om ikke den sukkende Vind
+De Saare og Stækkede bringer?
+
+Hvem véd, om ikke de samle sig her
+Som Fugle ved Efteraarstrækket
+Og prøve: haver end Vingerne Kraft
+Mon, eller er evigt de stækket?
+
+<pb n="182" facs="192.jpg"/>Og mange kende sig længst paa Gled
+Ad Dødens forstummende Strømme;
+De andre letter i Flok efter Flok
+At læges i Menneskers Drømme.
+
+<nonum><small>Renskrift 2/3 75.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019157" variant="jacobsenandrea17">
+<head>
+  <title>Marine</title>
+  <firstline>Frem under Haarets ravnsorte Sky’r</firstline>
+  <dates>
+    <written>1875-03-03</written>
+  </dates>
+  <source pages="183" facsimile-pages="194"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Frem under Haarets ravnsorte Sky’r
+Øjnenes blinkende Tvillingefyr
+Straaler og flyr.
+Aandedragsluftninger lune og blide
+Henover Skuldrenes Klipper de hvide
+Sagtelig glide.
+Mens imod Dragtens Kniplingekyst
+Svulmende vugges det bølgende Bryst
+Skumhvidt, men tyst.
+— Ak om der lød dog
+Smeltende blød og
+Daarende mild,
+Hen til sig dragende,
+Kærlighedsklagende
+Havfruesang!
+
+<nonum><small>3/3 1875.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019158" variant="jacobsenandrea21">
+<head>
+  <title>Polka</title>
+  <firstline>Cendrée og lille</firstline>
+  <source pages="184-185" facsimile-pages="195-196"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Cendrée og lille,
+Frisk og fin
+Som nys udsprungne Blade,
+Med Øjne milde,
+Let Carmin
+Paa Kindens hvalte Flade.
+
+I Haaret Roser,
+Gyldent Tant
+Om Hals og hvide Arme,
+I Barm Mimoser,
+Dragtens Kant
+Med Dun af Svanebarme.
+
+Og selve Roben:
+Formen ny,
+Et Stof med Striber blanke,
+Som støbt foroven,
+Men en Sky
+Fra Bæltets gyldne Skranke.
+
+<pb n="185" facs="195.jpg"/>I dybe Tanker —
+Saadan staar
+Hun lænet op mod Karmen,
+Og Hjærtet banker,
+Pulsen slaar,
+Uroligt bølger Barmen.
+
+Og Vinden hviner,
+Regn og Slud
+Slaar haardt mod dugget Rude.
+Med spændte Miner
+Ser hun ud.
+Hvad søger hun derude?
+
+«Ak! de charmante
+Blomster vist
+Vil visne, før jeg danser! . . .
+Der er den, Tante,
+Hør! Jo vist —
+Jo, det er her, den stanser.»
+
+<nonum><small>1875.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019159" variant="jacobsenandrea22">
+<head>
+  <firstline>Har Dagen sanket al sin Sorg</firstline>
+  <source pages="186" facsimile-pages="197"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Har Dagen sanket al sin Sorg
+Og grædt den ud i Dug,
+Saa aabner Natten Himlens Borg
+Med evigt Tungsinds tavse Sorg.
+Og en for en
+Og to for to
+Gaa fjærne Verd’ners Genier frem
+Af Himmeldybets dunkle Gem.
+Og højt over Jordens Lyst og Elende
+Med Stjærnekerter højt i Hænde
+Skride de langsomt hen over Himlen.
+De Fodtrin skifte
+Med Sorg i Sinde . . .
+Underligt vifte
+For Rummets kolde Vinde
+Stjærnekerternes flakkende Flammer.
+
+<nonum><small>1875?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019160" variant="jacobsenandrea23">
+<head>
+  <title>Irmelin Rose</title>
+  <firstline>Se, der var en Gang en Konge</firstline>
+  <source pages="187-188" facsimile-pages="198-199"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Se, der var en Gang en Konge,
+Mangen Skat han kaldte sin,
+Navnet paa den allerbedste
+Vidste hver var Irmelin,
+Irmelin Rose,
+Irmelin Sol,
+Irmelin alt, hvad der var dejligt.
+
+Alle Ridderhjelme spejled
+Hendes Farvers muntre Pragt,
+Og med alle Rim og Rytmer
+Havde Navnet sluttet Pagt:
+Irmelin Rose,
+Irmelin Sol,
+Irmelin alt, hvad der var dejligt.
+
+Hele store Bejlerflokke
+Der til Kongens Gaarde fór,
+<pb n="188" facs="198.jpg"/>Bejlede med ømme Lader
+Og med blomsterfagre Ord:
+Irmelin Rose,
+Irmelin Sol,
+Irmelin alt, hvad der er dejligt!
+
+Men Prinsessen jog dem fra sig
+(Hjærtet var saa koldt som Staal),
+Lastede den enes Holdning,
+Vrænged ad den andens Maal.
+Irmelin Rose,
+Irmelin Sol,
+Irmelin alt, hvad der er dejligt.
+
+<nonum><small>1875? (En Del af Digtet dog vist fra 69.)</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019161" variant="jacobsenandrea24">
+<head>
+  <firstline>Evig og uden Forandring</firstline>
+  <source pages="189" facsimile-pages="200"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Evig og uden Forandring
+Er kun det tomme.
+Alt, hvad der var og der er
+Og hvad der skal komme,
+Vækkes, spirer og fødes,
+Skifter, ældes og dødes.
+
+Kloder have vandret
+Hvor Kloder nu vandre,
+En Gang i Tiderne
+Kommer der andre.
+Hvad der er Livets maa gaa og komme,
+Evig er ene Rummet det tomme.
+
+<nonum><small>1875?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019162" variant="jacobsenandrea19">
+<head>
+  <title>Genrebillede</title>
+  <firstline>Pagen højt paa Taarnet sad</firstline>
+  <source pages="190" facsimile-pages="201"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Pagen højt paa Taarnet sad,
+Stirred’ ud saa vide,
+Digted paa et Elskovskvad
+Om sin Elskovskvide,
+Kunde ikke faa det samlet,
+Sad og famled’
+Nu med Stjærner, nu med Roser —
+Intet rimed’ sig paa Roser —
+Satte fortvivlet saa Hornet for Mund,
+Knugede vredt sit Værge,
+Blæste saa sin Elskov ud
+Over alle Bjærge.
+
+<nonum><small>1875?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019163" variant="jacobsenandrea18">
+<head>
+  <title>Landskab</title>
+  <firstline>Stille, du elskede Kvinde</firstline>
+  <source pages="191-192" facsimile-pages="202-203"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Stille, du elskede Kvinde!
+Tyst maa vi træde, vi to.
+Der sover en Sang her inde
+I Skovens natlige Ro.
+
+Stille er Vover og Vinde,
+Tavs er hver Sangfuglemund,
+Tiende Kilderne rinde
+Blankt over mossede Bund.
+
+Maanestraalerne spille
+Tyst mellem Bøgene frem,
+Langs ad Stierne stille
+Blunder en lyslig Bræm.
+
+Sølvskyen selv der oppe
+Hviler paa Vingen bred,
+Højt over Træernes Toppe
+Skuer den lyttende ned.
+
+<pb n="192" facs="202.jpg"/>Stille er Vover og Vinde,
+Tyst maa vi træde, vi to.
+Der sover en Sang her inde
+I Skovens natlige Ro.
+
+<nonum><small>1875?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019164" variant="jacobsenandrea16">
+<head>
+  <title>Det bødes der for —</title>
+  <firstline>Det bødes der for i lange Aar</firstline>
+  <dates>
+    <written>1875-03-01</written>
+  </dates>
+  <source pages="193-194" facsimile-pages="204-205"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det bødes der for i lange Aar,
+Som kun var en stakket Glæde;
+Det smiler man frem i en flygtig Stund,
+Man bort kan i Aar ej græde.
+Der rinder Sorg, rinder Harm af Roser røde.
+
+Der ages paa Lykkens gyldne Hjul
+Saa fast, at én intet sanser;
+Men Sorgens trælsomme tunge Læs
+Det venter os dog, naar vi stanser.
+Der rinder Sorg, rinder Harm af Roser røde.
+
+Der leves i Lyst som halvt i Drøm, —
+Men Sorgen har ingen Drømme:
+Med vaagne Øjne den paa Dig ser,
+Øjne som sugende Strømme.
+Der rinder Sorg, rinder Harm af Roser røde.
+
+<pb n="194" facs="204.jpg"/>Ej Smilet vil lyse din Dag i Seng,
+Men Taaren har gode Stunder;
+Thi Smil er Glans kun af dét, der er,
+Graad Skyggen af dét, der gik under.
+Der rinder Sorg, rinder Harm af Roser røde.
+
+<nonum>  <small>Renskrift 1/3 75.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019165" variant="jacobsen2026101957">
+<head>
+  <title>En Rejseerindring</title>
+  <source pages="195-196" facsimile-pages="206-207"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Borte i det hvide, skærende Lys over Søen kom der én Baad: en lille, sort Planke, et graat Sejl vugget og kastet, svindende dykket, kommende løftet, blinket bort, blinket frem af den blændende Glans.
+  Saa blev den skjult af Næsset.
+  Der var ikke et Sejl at se nu derude, end ikke en hvidbrystet Fugl brød Søens vide Flade, og bred og blaa, som aldrig Himlen er blaa, straalede Vandet under Dagens fulde, mægtige Lysfald; hvidt og lillatonet i det disede Fjærne, sølvstribet kornblaat op under Bjærgskyggen, guldkornet glitrende, guldkornet mylrende udover Dybet og paa det brede, vide Nære i rig og farvemættet Azurblaanen, vugget i runde kamløse Bølger, glatte som glidende Glas, som Krystal, der svulmer i monløs Klarhed, lysnet af isblankt Lys, skygget <pb n="196" facs="206.jpg"/>af søgrønt Skær — saadan saa’s Gardasøens Vande.
+  Og Baaden saa igen derud for Næsset, støt og ufortrødent skydende frem i den døende Vind, nærmere og nærmere, forbi de lave graa Olivenfelter, ind under Monte Baldos lerbrune Højder og nærmere endnu, hvor den græsbundne Sandodde strækker sig frem, saa ganske nær med slappe Sejl og næsten ingen Fart, langsomt glidende ind til Hotellets Fjælebro.
+  Der var kun to i Baaden, en rødhuet Fisker og en lyshaaret Fremmed, der straks steg iland og dovent eller drømmende gik ind i Haven. — — —
+  <small>Sommeren 1877.</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019166" variant="jacobsenandrea25">
+<head>
+  <firstline>Lad Vaaren komme, mens den vil</firstline>
+  <source pages="197" facsimile-pages="208"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lad Vaaren komme, mens den vil,
+Med Grønt, der grønnes,
+Med tusend Fugles Fløjtespil,
+Mens Blomster blomstre
+Og alt det Skønnes
+Favreste Fagre
+Kommer at flagre
+Ud over Enge og ud over Agre,
+Vælder i Haver og skjules i Skove,
+Vælter sin Duft over Vang, over Vove —
+Hvad gør det mig?
+Mit Hjærte er ej Blomst, ej Blad,
+Og Vaaren gør det ikke glad:
+Det har sin egen, sære Vaar —
+    Naar?
+
+<nonum>  <small>82?</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019167" variant="jacobsen2026101959">
+<head>
+  <title>[Af en Fortælling.]</title>
+  <indextitle>Af en Fortælling</indextitle>
+  <source pages="198-199" facsimile-pages="209-210"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Denne stillestaaende lille Fortælling fra Aarhundredets Begyndelse, den Gang vore Bedsteforældre vare raske og varmblodige nygifte Folk, er bygget paa Breve og Dagbogsblade, paa Miniaturportræter og Stambøger, og Helten hedder Avgust, mens hun hedder Rosalie, og de bor paa Frederiksdal.
+  Men husk nu paa, at det var ganske andre Tider den Gang, og ganske andre Mennesker. Bare nu det, at Mandfolk kyssede hinanden og gik og viste deres Lægge frem i Silkestrømper og sad og sang over deres Vin, bare det, at det ikke var én af femogtyve Damer, der kunde spille, og hvis hun kunde, saa i Almindelighed paa Guitar!
+  Det er blot for at vise Afstanden, at nu netop det bliver fremhævet, og ikke fordi det faar noget at sige i Historien.
+<pb n="199" facs="209.jpg"/>  Derimod noget andet: tænk en Gang over, hvad Hjemmet var i de Dage. Man kan ikke sige, at det <i>nu</i> kun er det Sted, hvor man gaar hen for at sove og sidde til Bords; men det er ganske vist ikke det snævre altopslugende Fædreneland, som det den Gang var. Livet udenfor er nutildags ikke Trapezunt, Sahara, Planeten Mars eller Mælkevejen, dét er Alfarveje nutildags, gamle velbekendte Veje, der løbe sammen til et Torv i vore Dagligstuer; men i gamle Dage, da var Livet udenfor noget, man rejste <i>til</i> og kom hjem <i>fra</i>, eller fik det i en Samtale Lov til at komme indenfor ens Døre, var det som en Mappe med kuriøse Kobberstik, man tager frem af et Skab, naar Børnene er kommen i Seng. — — —
+    <small>1883?</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019168" variant="jacobsen2026101960">
+<head>
+  <title>Anne Charlotte</title>
+  <source pages="200-206" facsimile-pages="211-217"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>Første Akt.</center>
+  <small>Dagligstue hos Direktør Hein. Luksuriøs, svær Vintermontering. Større Møbelgruppe tilbage til højre, mindre fremme til venstre. Dør tilbage til venstre og fremme til højre. Mellem mindre Billeder paa Bagvæggen legemstort Portræt af Fruens Fader. Sørge-Roset over Rammen.</small>
+<center>Første Scene.</center>
+<center>De Geer. Anne Charlotte.</center>
+  <small>Anne Charlotte siddende bag Bordet til venstre, hvorpaa Bøger og Brochurer. De Geer paa Visit, har lige taget Plads, til højre for Fruen. Profil imod Tilskuerne.</small>
+
+<center>De Geer.</center>
+  Saa De morede Dem virkelig igaar? Ja, jeg syntes det nok.
+
+<center>Anne Charlotte.</center>
+  Ja. — Skulde det desuden ikke være Morskab nok for en Balaften, ganske uventet <pb n="201" facs="211.jpg"/>at træffe en gammel Ven, man ikke har set i hele fire lange Aar?
+
+<center>De Geer.</center>
+  Ja fire Aar <i>er</i> længe. — Der er skét meget her, mens jeg har været borte.
+
+<center>Anne Charlotte</center>
+<center><small>(Sørgmodigt, seende efter Faderens Portræt.)</small></center>
+  Ja, der er meget skét.
+
+<center>De Geer</center>
+<center><small>(vendt efter Portrætet.)</small></center>
+  Hvor det ligner! <small>(Rejser sig halvt.)</small> Ja, det er ganske det kære, modige, gamle Ansigt. <small>(Mod Fruen.)</small> Jeg har aldrig kendt en gammel Mand som Deres Fader, én, der troede saa godt om Livet og om Menneskene som han. Naar man kom til ham med sine ungdommelige Planer og Forhaabninger, saa havde han aldrig disse mistrøstige erfarne Sentenser til én, som gamle Folk ellers altid kommer med; der var ikke Tale om overlegne Smil eller om at ryste medlidende paa Hovedet; han tog éns Planer op og lod dem lykkes i sin Fantasi; og Vanskeligheder! Vanskeligheder og Forhindringer dem huggede han løs paa, saa de faldt til alle <pb n="202" facs="212.jpg"/>Sider, og Fremtiden stod der for én som en aaben festlig Port, man blot skulde tage sig sammen for at spadsere igennem . . . . Altid gik man forfrisket bort fra ham, mere tryg paa sin Lykke, sikrere paa sig selv.
+
+<center>Anne Charlotte.</center>
+  Og ikke sandt, han havde Ret?
+
+<center>De Geer.</center>
+  Han <i>havde</i> Ret, han <i>fik</i> det ikke altid. De ligned’ ham i saa meget, Frue, og ligner ham maaske endnu?
+
+<center>Anne Charlotte.</center>
+  Ja, hvorfor skulde jeg være forandret?
+
+<center>De Geer.</center>
+  Fire Aar! — Det er sjældent, et Menneske er sig selv tro saa længe.
+
+<center>Anne Charlotte.</center>
+  Det har De ikke lært af Fader.
+
+<center>De Geer.</center>
+  Nej, — det er der — andre, der har lært mig.
+
+<center>Anne Charlotte.</center>
+  Hvem?
+<pb n="203" facs="213.jpg"/><center>De Geer.</center>
+  Man skal ikke nævne Navne.
+
+<center>Anne Charlotte.</center>
+  Jeg forstaar Dem ikke.
+
+<center>De Geer.</center>
+  Nej.
+
+<center>Anne Charlotte.</center>
+  Men maaske De vil indrømme, at det i en Samtale er behageligst, at man forstaar hinanden?
+
+<center>De Geer.</center>
+  Ja er nu det saa vist?
+
+<center>Anne Charlotte.</center>
+  <i>Jeg</i> foretrækker det i det mindste.
+
+<center>De Geer.</center>
+  Ja, ser De, Frue, det, jeg mener, er jo ikke andet end det, at naar vi som ganske unge skal i Lag med Livet, saa har vi, de fleste af os, fra Naturens Haand en Mængde skønne Egenskaber. Vi er uegennyttige, tillidsfulde, rede til at lide for Sandheden, uforsonlige overfor alt hvad der er lavt, urokkelige i vor Tro paa, at det, der er Ret, skal sejre, vi er ridderlige, modige, alt hvad der er modigt, fint og ædelt.
+<pb n="204" facs="214.jpg"/><center>Anne Charlotte.</center>
+  Ja!
+
+<center>De Geer.</center>
+  Men al den Herlighed er af Naturen slet ikke bestemt til at vare, ikke mer end det Sæt Tænder er det, man faar som ganske lille. Der er nemlig en Drift hos os, som ikke rigtig har ladet sig mærke, før nu da man som voksen er kommen i Haandgemæng med Livet, og det er Selvopholdelsesdriften, — og det er mærkværdigt . . .
+
+<center>Anne Charlotte.</center>
+  Skal jeg sige Dem min oprigtige Mening?
+
+<center>De Geer.</center>
+  For min Skyld ikke. Jeg véd altfor godt, at naar man kalder sin Mening for oprigtig, saa er den ubehagelig.
+
+<center>Anne Charlotte.</center>
+  Ja, hele Deres lange Historie er efter min Mening ikke andet end Vrøvl.
+
+<center>De Geer</center>
+<center><small>(efter en Pavse, betænksomt).</small></center>
+  Aa ja, der kan være noget i det samme. Saadanne almindelige Theorier, hvormed man <pb n="205" facs="215.jpg"/>søger at ramme den, man ikke aabenlyst tør angribe — —
+
+<center>Anne Charlotte.</center>
+  Er det mig, De mener?
+
+<center>De Geer</center>
+<center><small>(ser ned).</small></center>
+  Sig mig, Frue, har De aldrig tænkt paa, hvad Indtryk det maatte gøre paa mig dernede i Venedig, da jeg fik at vide, at De havde forlovet Dem med Frederik Hejn.
+
+<center>Anne Charlotte.</center>
+  Nej, gjorde det noget synderligt Indtryk paa Dem?
+
+<center>De Geer.</center>
+  Ja det gjorde, Frue, for der var et helt Flor af lyse, lykkelige Haab og fine Drømme, der blev vejret hen, som man siger, netop ved dét.
+
+<center>Anne Charlotte.</center>
+  Nej hør, vil De nu virkelig gøre Dem den Ulejlighed at bilde mig ind, at De er gaaet om med ulykkelig Kærlighed til mig? Det, er jo <pb n="206" facs="216.jpg"/>dog aldeles unødvendigt. Jeg er slet ikke saa fordringsfuld, jeg tillader, at man bevarer sit Hjærtes Fred overfor mig.
+<center>— — — — — — — — —</center>
+  <small>1883.</small>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019169" variant="jacobsen2026101965">
+<head>
+  <title>Doktor Faust</title>
+  <source pages="207-211" facsimile-pages="218-222"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+  Der kom en Ryttersmand ridende gennem Hulvejen i en Skov.
+  Op med begge Skrænterne stod der store, bare Træer, helt højt op, til de øverste havde Toppen i Sol; men dernede, der var det mørkt og knapt med Lys.
+  Og Foraarsvinden kom tungt op gennem Vejen.
+  Og Ryttersmanden kom ogsaa tungt, og han slæbte en stor Le efter sig, saa den pløjede med sin blinkblanke Od i den sorte Muld.
+  Bleggul Hest var han paa, og gammel sad han forover i Sadlen, i Læg og Folder af Sidt og Sort, med én hvid mager Haand i Tømmen og én hvid mager Haand om Leens Skaft.
+  Han var større, end Mennesker er, og der var ingenting Hvidt i hans Øjne, bare det Sorte, som ser.
+<pb n="208" facs="218.jpg"/>  Og hvor han red frem, der fyldtes Luften om ham med den muldne, muldramme Em fra det vaade, visne Løv, der gæred, fra Bunden, der raadned, fra Træstødene, der frønned og gik i Trøske, og fra Mosset, der smulred hen. Og fra de høje Træer ramled de gamle tørre Grene ned og gjorde Larm og gjorde det stille, saa Hovslaget af hans Hest var som den eneste Lyd i Verden.
+  Og Hovslaget af én Hest til, bag ved ham, langt borte.
+  Han holdt stille og lyttede; saa nikkede han, som om han forstod, og red til igen.
+  Det varede en Stund, saa kom den anden Ryttersmand til Syne paa en Hest, som var rød.
+  Ogsaa han var større, end Mennesker de er, men han var at se til som en Knøs paa en Snes Aar med lyse Dun paa de glatte Kinder og om den fulde, smilende Mund.
+  Halvt af Hvergarn og Kongers Purpur til Hælvten var hans Dragt; men de slanke Lemmer kom blændende nøgne ud under Hvergarnet og ud under Purpuret, — hedningeagtigt nøgne. For det var Amor, ham denne Knøs med Lokker, der krusede sig om hans Hoved som gyldne Spaaner, og paa hans Ryg hang Koggeret med <pb n="209" facs="219.jpg"/>Pile, men den stærke Bue havde han knyttet ind i Hestens Manke.
+  Og hvor han red frem, der krummed Bregnerne de brunlaadne Snørkler op over Mulde, det raadne Løv blev levende af gule og hvide Spirer, og tusende Kim gik af deres Dvale, mens altfor aarle Blomster blaanede frem under Vinterbladenes Mørke, mens Knopperne tog til at lysnes i Svulmen over hans Hoved, og mens Trækfugleskarer kom sejlende som sorte Tegn over den graablaa Himmel.
+  Amor red op paa Siden af den Gamle med Leen. De nikkede til hinanden og fulgtes saa ad gennem Hulvejen uden at tale; og da Vejen kom ud af Skoven og tog dem med sig tværs over Marken hen til Adelvejen og de havde den store By lige for sig med dens brune Tage, dens Taarntinder knejsende og graa og dens guldglimtende Spir, saa nikkede de igen til hinanden, med et Smil.
+  Og de red frem ad Adelvejen, der bugtede sig bred og graa, smallere og smallere i det fjærne, til den som en fin Traad løb ind ad det sorte Øje paa en af Stadens røde Porte.
+  Og de red.
+  Lige indenfor Porten var der en stor bar <pb n="210" facs="220.jpg"/>Urtegaard med krogede Abildtræer, og i den et Hus, der var skudt op i Gavl ved Gavl under lange, stejle Fald af mosgroede Tegl og som havde sine mange sorte Skorstene støttet af efter hinanden med Jernstænger og med stramme Lænker af Jærn.
+  Der stansede de.
+  Østefter var der et Vindue saa stort som en Port, et uendeligt Tavl og Tern af smaabitte blyindfattede Knaster af Glas. Det var slaaet aabent og haget til Væggen, og inden den portstore Aabning stod Doktor Faust og stirrede ud den Vej han vidste, at Skoven og Hulvejen var.
+  Og Døden og Amor red op foran Vinduet, usynlige som de var, uden at kaste nogen Skygge.
+  Og der holdt de, større end Mennesker er, og Vinden flagrede med Dødens sorte Kappe og med Amors Purpur, og deres store Heste strakte Halsene ind gennem Vinduet og ludede, halvt i Søvne, med de tunge Hoveder over Bøger og Pergamenter, gumlende paa deres Bidsler, og Skummet fra deres Muler dryppede flagevis ned over sorte Skriftlinier og farvestærke Initialer.
+<pb n="211" facs="221.jpg"/>  [Den ene Tanke kom stærkere end den anden ind paa Dr. Faust, som han stod dér støttet paa sine Haandflader mod den brede Vindueskarm, én ringsmykket Haand foran hver Hests Mule. Og Lyset viste frem hans Pandes og hans Ansigts klare Bleghed og talte hvert et Haar i hans mørke, krusede Skæg.
+  Hørligt klang hver Tanke af ham om de to usynlige derude.
+  «Nu er jeg 40 Aar,» tænkte han: «10, 20, 30 Aar til kan jeg leve, saa er alt forbi!
+  Igen er det Foraar, igen har jeg ét Aar mindre at leve . . . »]<footnote>Døden kommer for at søge den 40aarige Dr. Faust; men Amor beder for ham, og Døden skænker ham nye 40 Aar. Efter den Tids Forløb kommer de to atter ridende for at hente ham. De finder en Olding, hvem Aarene intet har nyttet: hans Kraft var opbrugt for 40 Aar siden, hele hans Livs sidste Halvdel har været dødt Liv. <w>Udg.</w></footnote>
+</prose>
+</body>
+</text>
+
+<text id="jacobsen20261019170" variant="jacobsenandrea26">
+<head>
+  <firstline>Saa stansed og dér den Blodets Strøm</firstline>
+  <source pages="212" facsimile-pages="223"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Saa stansed og dér den Blodets Strøm,
+Som før var vant at rinde.
+Saa dirred ogsaa de Nerver til Ro,
+Og Sanserne alle blev blinde.
+Og Hjærtet og Hjernen virker ej mer,
+Du er kun Støv nu og livløst Ler.
+Lad længes, lad grædes med Evigheds-Savn,
+Der er kun en Stofhob, en Daad og et Navn.
+
+---
+
+For alle gode Tanker de kan slet ikke dø,
+Før endnu bedre Tanker er spired’ af deres Frø.
+
+<nonum>  <small>1884.</small></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="jacobsen20261019171" variant="jacobsenandrea27">
+<head>
+  <firstline>Lys over Landet, —</firstline>
+  <source pages="213" facsimile-pages="224"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lys over Landet, —
+Det er det, vi vil.
+
+<nonum><small>1884.</small></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
+</kalliopework>

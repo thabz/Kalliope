@@ -44,6 +44,8 @@ const build_todays_events_json = async (collected) => {
   if (
     !missingLanguageOutput &&
     !isFileModified(
+      'tools/build-static/today.js',
+      'content/museums.xml',
       portraitPrioritiesFilename,
       ...poet_info_files,
       ...portrait_descriptions
@@ -193,8 +195,8 @@ const build_todays_events_json = async (collected) => {
               }
               if (primary_portrait != null) {
                 const data = {
+                  ...primary_portrait,
                   type: 'image',
-                  src: primary_portrait.src,
                   content_html,
                   content_lang: lang,
                   date: event.date,

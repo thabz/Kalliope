@@ -1,5 +1,11 @@
+import fs from 'fs';
+import os from 'os';
+import path from 'path';
+import * as Paths from '../common/paths.js';
 import {
   obsoleteSourceWorkKeys,
+  pruneDeletedVariants,
+  removeObsoleteTextFiles,
   removeTextsFromSourceWorks,
   sourceFilesForText,
   sourceWorkFilename,
@@ -7,6 +13,46 @@ import {
 } from '../tools/build-static/work-cache.js';
 
 describe('værk-cache', () => {
+  it('fjerner cachede publikationsdubletter uden at slette rigtige a-id’er', () => {
+    const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-migration-'));
+    const previousDirectory = process.cwd();
+    try {
+      process.chdir(temporary);
+      const previous = new Map(['one', 'onea', 'historicala'].map(id => [id, { id }]));
+      previous.forEach((text, id) => {
+        fs.mkdirSync(Paths.textFolder(id), { recursive: true });
+        fs.writeFileSync(Paths.textPath(id), '{}');
+      });
+      removeObsoleteTextFiles(previous, new Map([
+        ['one', { id: 'one' }], ['historicala', { id: 'historicala' }],
+      ]));
+      expect(fs.existsSync(Paths.textPath('onea'))).toBe(false);
+      expect(fs.existsSync(Paths.textPath('one'))).toBe(true);
+      expect(fs.existsSync(Paths.textPath('historicala'))).toBe(true);
+    } finally {
+      process.chdir(previousDirectory);
+      fs.rmSync(temporary, { recursive: true, force: true });
+    }
+  });
+
+  it('fjerner slettede teksters variantrelationer og genbruger resten af grafen', () => {
+    const variants = new Map([
+      ['removed', ['peer']],
+      ['peer', ['removed', 'survivor']],
+      ['survivor', ['peer']],
+      ['isolated', ['removed']],
+    ]);
+    const texts = new Map([
+      ['peer', { poetId: 'poet', workId: 'one' }],
+      ['survivor', { poetId: 'poet', workId: 'two' }],
+      ['isolated', { poetId: 'other', workId: 'three' }],
+    ]);
+    expect(pruneDeletedVariants(variants, texts)).toEqual(new Set([
+      'fdirs/poet/one.xml', 'fdirs/other/three.xml',
+    ]));
+    expect([...variants]).toEqual([['peer', ['survivor']], ['survivor', ['peer']]]);
+  });
+
   it('finder en teksts faktiske kildeværk', () => {
     const directText = { poetId: 'digter', workId: 'foerste' };
     const placedText = {

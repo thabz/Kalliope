@@ -1,3 +1,4 @@
+import { discoverPoetFiles } from '../../tools/libs/poet-files.js';
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync } from 'fs';
 import {
@@ -13,6 +14,7 @@ import {
   collectSingleLineSubtitleIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectFacsimilePageSourceIssues,
   collectSourceAuthorIssues,
   collectAnthologySourceIssues,
   collectTextStructureIssues,
@@ -65,6 +67,7 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let facsimilePageSourceIssues;
   let poetryBoundaryBlankLineIssues;
   let nestedBodyBlockIssues;
   let sourceHrIssues;
@@ -100,6 +103,7 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    facsimilePageSourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
     nestedBodyBlockIssues = [];
     sourceHrIssues = [];
@@ -166,6 +170,11 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      if (checksForWorkXml(xml).facsimiles === true) {
+        facsimilePageSourceIssues.push(
+          ...collectFacsimilePageSourceIssues(filename, workDocument),
+        );
+      }
       singleLineSubtitleIssues.push(
         ...collectSingleLineSubtitleIssues(filename, workDocument),
       );
@@ -180,10 +189,17 @@ describe('tracked work corpus', () => {
           'prose',
           'epigraph',
         ])) {
-          if (block.parentNode?.tagName !== 'body') {
+          const notePoetry = block.tagName === 'poetry' &&
+            ['note', 'footnote'].includes(block.parentNode?.tagName);
+          if (block.parentNode?.tagName !== 'body' && notePoetry === false) {
             nestedBodyBlockIssues.push(
               `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
             );
+          }
+        }
+        for (const note of getElementsByTagNames(body, ['note', 'footnote'])) {
+          if (getElementsByTagNames(note, ['column', 'two-columns']).length > 0) {
+            nestedBodyBlockIssues.push(`${filename}: column layout inside <${note.tagName}>`);
           }
         }
       }
@@ -305,7 +321,7 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
-  it('keeps poetry, prose, and epigraph as sibling body blocks', () => {
+  it('keeps body blocks separate and permits poetry, but not column layout, in notes', () => {
     expect(nestedBodyBlockIssues).toEqual([]);
   });
 
@@ -351,6 +367,10 @@ describe('tracked work corpus', () => {
 
   it('requires legal page intervals on text sources', () => {
     expect(pageIntervalIssues).toEqual([]);
+  });
+
+  it('requires legal text page references for work sources with a facsimile and page count', () => {
+    expect(facsimilePageSourceIssues).toEqual([]);
   });
 
   it('places sources on individual texts in andre.xml', () => {
@@ -465,13 +485,9 @@ describe('registered first-edition placeholders', () => {
         issues.push(`${id}: invalid placeholder metadata or body`);
       }
 
-      const info = readFileSync(`fdirs/${poetId}/info.xml`, 'utf8');
-      const infoDocument = parseWorkXml(info);
-      const listedWorkIds = getElementsByTagNames(infoDocument, ['works'])
-        .flatMap((node) => node.textContent.split(','))
-        .map((workId) => workId.trim());
-      if (!listedWorkIds.includes(workId)) {
-        issues.push(`${id}: ${workId} is missing from ${poetId}/info.xml`);
+      const { workids } = discoverPoetFiles([poetId]);
+      if (workids.get(poetId).includes(workId) === false) {
+        issues.push(`${id}: ${workId} is not automatically registered`);
       }
     });
 

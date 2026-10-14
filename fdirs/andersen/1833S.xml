@@ -2361,6 +2361,9 @@ Ud, til Død eller Seier!
   <title>De Danske og deres Konge</title>
   <subtitle>(En Skizze fra den 11 Februar 1659.)</subtitle>
   <firstline>Alt reiser Vint’ren sit hvide Telt</firstline>
+  <dates>
+    <event>1659-02-11</event>
+  </dates>
   <source pages="97-98"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3831,10 +3834,13 @@ Og Græsset groer derover.
 </body>
 </text>
 
-<text id="andersen2026100163" variant="andersen2004011602">
+<text id="andersen2026100163" aliases="andersen2004011602">
 <head>
   <title>Stanzer for Musik</title>
   <firstline>I de hellige Guders Lund</firstline>
+  <notes>
+    <note type="credits">Den tidligere selvstændige tekstpost var et bidrag fra Ejnar Nørager Pedersen.</note>
+  </notes>
   <source pages="164"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3918,6 +3924,9 @@ Hiint store Faderbillede, vor Gud!
     <line>(Afsjungen i <w>Odense</w> den 28 Januar 1832).</line>
   </subtitle>
   <firstline>Vi gamle Danmark prise</firstline>
+  <dates>
+    <event>1832-01-28</event>
+  </dates>
   <source pages="167-168"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4497,10 +4506,15 @@ Men fra Himlen funkler Stjernen
 </body>
 </text>
 
-<text id="andersen2026100176">
+<text id="andersen2026100176" aliases="andersen2006071101">
 <head>
   <title>Epigrammatiske Digte</title>
   <firstline>Jeg slutter snildt af min Natur</firstline>
+  <notes>
+    <note>Nr. XII: Skrevet 1832.</note>
+    <note>Nr. XII: Sat i musik af flere komponister. Meget kendt er Griegs sang fra 1864 med titlen ,,Jeg elsker dig''.</note>
+    <note type="credits">Nr. XII: Indtastet af Ejnar Nørager Pedersen.</note>
+  </notes>
   <source pages="191-194"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4957,10 +4971,13 @@ Der seer man ”<w>Formens evige Magie.</w>”
 </body>
 </text>
 
-<text id="andersen2026100181" variant="andersenandrea0">
+<text id="andersen2026100181" aliases="andersenandrea0">
 <head>
   <title>Min Undskyldning</title>
   <firstline>Om mine Digte</firstline>
+  <notes>
+    <note>Skrevet 1831</note>
+  </notes>
   <source pages="211"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

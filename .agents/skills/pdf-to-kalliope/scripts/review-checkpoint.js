@@ -9,7 +9,11 @@ import { DOMParser } from '@xmldom/xmldom';
 import { child, children, facsimileInterval } from '../../../../tools/errata.js';
 import { validateFindings } from './findings-register.js';
 
-const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
+const git = (root, args) => execFileSync('git', args, {
+  cwd: root,
+  encoding: 'utf8',
+  maxBuffer: 128 * 1024 * 1024,
+});
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
 const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation', 'typography'];
@@ -18,7 +22,7 @@ const validateErrataInventory = (inventory, workXml) => {
   if (workXml == null) return [];
   const work = new DOMParser().parseFromString(workXml, 'text/xml').documentElement;
   const declarations = children(child(work, 'workhead'), 'errata');
-  const applied = declarations.filter(node => node.getAttribute('status') === 'applied');
+  const applied = declarations.filter(node => ['applied', 'reviewed'].includes(node.getAttribute('status')));
   const errataPages = inventory.filter(page => page.page_type === 'errata');
   const issues = [];
   errataPages.forEach(page => {

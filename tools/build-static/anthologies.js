@@ -4,8 +4,6 @@ import { sourceWorkKey } from './work-cache.js';
 const ANTHOLOGY_WORK_ID = 'antologier';
 const ANTHOLOGY_WORK_TITLE = 'Tekster i andre udgivelser';
 
-const publicationTextId = textId => `${textId}a`;
-
 const isAnthologyText = (textAuthorId, workAuthorId) =>
   workAuthorId != null &&
   textAuthorId != null &&
@@ -23,8 +21,8 @@ const resolveAuthorId = (node, fallbackAuthorId) => {
   return fallbackAuthorId;
 };
 
-// Build once after the first pass, when author and publication placements and
-// virtual works are complete. Keep both placements and the Maps' source order.
+// Index the canonical texts by publication and the same objects by virtual TOC.
+// A TOC reference never creates a second text record.
 const buildCollectionIndexes = (collected) => {
   const worksByPoet = new Map();
   const textsByWork = new Map();
@@ -35,11 +33,21 @@ const buildCollectionIndexes = (collected) => {
     worksByPoet.set(poetId, works);
   });
   collected.texts.forEach((text) => {
-    const poetWorks = textsByWork.get(text.poetId) ?? new Map();
-    const texts = poetWorks.get(text.workId) ?? [];
+    const workPoetId = text.sourcePoetId ?? text.poetId;
+    const poetWorks = textsByWork.get(workPoetId) ?? new Map();
+    const texts = poetWorks.get(text.sourceWorkId ?? text.workId) ?? [];
     texts.push(text);
-    poetWorks.set(text.workId, texts);
-    textsByWork.set(text.poetId, poetWorks);
+    poetWorks.set(text.sourceWorkId ?? text.workId, texts);
+    textsByWork.set(workPoetId, poetWorks);
+  });
+  collected.works.forEach((work, key) => {
+    if (work.virtualType !== 'anthology') {
+      return;
+    }
+    const poetId = key.slice(0, key.indexOf('/'));
+    const poetWorks = textsByWork.get(poetId) ?? new Map();
+    poetWorks.set(work.id, work.textIds.map(id => collected.texts.get(id)));
+    textsByWork.set(poetId, poetWorks);
   });
   collected.worksByPoet = worksByPoet;
   collected.textsByWork = textsByWork;
@@ -58,8 +66,12 @@ const textsForWork = (collected, poetId, workId) => {
   if (collected.textsByWork != null) {
     return (collected.textsByWork.get(poetId)?.get(workId) ?? []).slice();
   }
+  const work = collected.works.get(`${poetId}/${workId}`);
+  if (work?.virtualType === 'anthology') {
+    return work.textIds.map(id => collected.texts.get(id));
+  }
   return Array.from(collected.texts.values()).filter(
-    text => text.poetId === poetId && text.workId === workId
+    text => sourceWorkKey(text) === `${poetId}/${workId}`
   );
 };
 
@@ -84,10 +96,10 @@ const buildVirtualAnthologyWorks = collected => {
 
   const textsByAuthor = new Map();
   collected.texts.forEach(text => {
-    if (text.placement !== 'author') {
+    if (!isAnthologyText(text.poetId, text.sourcePoetId)) {
       return;
     }
-    const texts = textsByAuthor.get(text.poetId) || [];
+    const texts = textsByAuthor.get(text.poetId) ?? [];
     texts.push(text);
     textsByAuthor.set(text.poetId, texts);
   });
@@ -102,7 +114,7 @@ const buildVirtualAnthologyWorks = collected => {
           `Antologiteksten ${text.id} henviser til det ukendte værk ${key}.`
         );
       }
-      const section = sectionsBySource.get(key) || {
+      const section = sectionsBySource.get(key) ?? {
         key,
         sourcePoetId: text.sourcePoetId,
         sourceWorkId: text.sourceWorkId,
@@ -118,12 +130,12 @@ const buildVirtualAnthologyWorks = collected => {
       .map(section => ({
         ...section,
         texts: section.texts.sort(
-          (a, b) => (a.sourceOrder || 0) - (b.sourceOrder || 0)
+          (a, b) => (a.sourceOrder ?? 0) - (b.sourceOrder ?? 0)
         ),
       }));
     const sourceFiles = new Set([`fdirs/${poetId}/info.xml`]);
     sections.forEach(section => {
-      (section.work.sourceFiles || [
+      (section.work.sourceFiles ?? [
         `fdirs/${section.sourcePoetId}/info.xml`,
         `fdirs/${section.sourcePoetId}/${section.sourceWorkId}.xml`,
       ]).forEach(filename => sourceFiles.add(filename));
@@ -154,7 +166,6 @@ export {
   buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
-  publicationTextId,
   resolveAuthorId,
   textsForWork,
   worksForPoet,

@@ -82,3 +82,13 @@ describe('breadcrumb helpers', () => {
     expect(crumbs[5].url).toBe(null);
   });
 });
+
+describe('antologitekstens navigation', () => {
+  it('linker til digteren og antologiens faktiske værkside', () => {
+    const crumbs = workCrumbs('da', {
+      id: 'author', country: 'dk', name: { fullname: 'Digter' },
+    }, { id: 'book', poet_id: 'anthology', title: 'Antologi' });
+    expect(crumbs.map(crumb => crumb.url)).toContain('/da/works/author');
+    expect(crumbs.at(-1).url).toBe('/da/work/anthology/book');
+  });
+});

@@ -270,6 +270,9 @@ med dit Øjes blaa Forglemmigej!
   <title>Thorvaldsens „Psyche sælger Amoriner“</title>
   <firstline>Hver Gang, o Du herlige Mester</firstline>
   <source pages="10-15"/>
+  <places>
+    <place ref="delphi" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -626,6 +629,9 @@ Men alle de skulle Dig følge!“
   <title>Frydensborg</title>
   <firstline>Et Sted i Jylland, jeg véd ej hvor</firstline>
   <source pages="21-22"/>
+  <places>
+    <place ref="jutland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -777,6 +783,9 @@ da over Dig Du fejgt vil bryde Staven!
   <title>Konen ved Ledet i Frederiksdal</title>
   <firstline>Naar gjennem det dejlige Frederiksdal</firstline>
   <source pages="26-28"/>
+  <places>
+    <place ref="frederiksdal" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1832,6 +1841,9 @@ min Sangs den ustadige Lykke.
   <firstline>Her i Farums skovomkranste Eden</firstline>
   <year>1842</year>
   <source pages="59-61"/>
+  <places>
+    <place ref="farum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5435,6 +5447,9 @@ Ja, Herre Konge, det ske! det ske!
     <event>1848-03-22</event>
   </dates>
   <source pages="172-173"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8183,6 +8198,9 @@ for hvad der ellers Smaabørn kun fortryller!
   <title>Løven i Slippen</title>
   <firstline>En Gang — ja, det er nu langt tilbage</firstline>
   <source pages="255-259"/>
+  <places>
+    <place ref="africa" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8659,6 +8677,9 @@ vil med uplettet Hæder vi falde!
   <firstline>Varsler denne sære Stilhed</firstline>
   <year>1864</year>
   <source pages="271-275"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9301,6 +9322,9 @@ over Døgnets Taage og Skraalet!
   <title>Ved Stranden</title>
   <firstline>Ensom i Aftenens dæmrende Stund</firstline>
   <source pages="294-296"/>
+  <places>
+    <place ref="oresund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9377,6 +9401,9 @@ som min Sjæl har i Nuet fornummet!
   <firstline>De skulde bære den Døde bort</firstline>
   <source pages="296-299"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9593,6 +9620,9 @@ til den højeste Ret paa Dommens Dag!
   <title>Elefanten</title>
   <firstline>Den var bragt over Sø og salten Vand</firstline>
   <source pages="304-308"/>
+  <places>
+    <place ref="livorno" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10026,6 +10056,9 @@ og strøm saa i Havet med Ære!
   <title>Da de rev Voldene ned</title>
   <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
   <source pages="320-326"/>
+  <places>
+    <place ref="copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12379,6 +12412,9 @@ næst Gud, min bedste Tak!
   <subtitle>(Skjærtorsdag 1880).</subtitle>
   <firstline>For Dem straaler Lykken, min unge Frue</firstline>
   <year>1880</year>
+  <dates>
+    <written>1880-03-25</written>
+  </dates>
   <source pages="406-408"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

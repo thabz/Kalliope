@@ -95,6 +95,20 @@ describe('XML parser', () => {
     );
   });
 
+  it('preserves nested elements with the same name when extracting inner XML', () => {
+    const content = 'Første<footnote><poetry>Citat<br/>Andet vers</poetry></footnote>\nSidste';
+    const element = new DOMParser().parseFromString(
+      `<poetry lang="da">${content}</poetry>`, 'text/xml',
+    ).documentElement;
+    expect(safeGetInnerXML(element)).toBe(content);
+  });
+
+  it('returns empty inner XML for empty elements and null for missing elements', () => {
+    const element = new DOMParser().parseFromString('<poetry lang="da"/>', 'text/xml').documentElement;
+    expect(safeGetInnerXML(element)).toBe('');
+    expect(safeGetInnerXML(null)).toBeNull();
+  });
+
   it('rejects identifiers outside the entity allowlist', () => {
     const source = new DOMParser().parseFromString(
       '<source><identifiers><oclc>1</oclc></identifiers></source>',

@@ -295,6 +295,35 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
+  it('uses a text source’s own facsimile when page numbers restart', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><source pages="385-386"/></head>
+            <body><poetry>Første linje
+<pb n="386" facs="390.jpg"/>Anden linje</poetry></body>
+          </text>
+          <text id="digter1900b">
+            <head><source facsimile="supplement" facsimile-pages-num="2" facsimile-pages="1-2"/></head>
+            <body><poetry>Første linje
+<pb n="387" facs="001.jpg"/>Anden linje</poetry></body>
+          </text>
+          <text id="digter1900c">
+            <head><source facsimile="supplement" facsimile-pages-num="2" facsimile-pages="1-2"/></head>
+            <body><poetry>Første linje
+<pb n="389" facs="000.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([
+      'work.xml: pb/@facs must not decrease within one source: 001.jpg before 000.jpg.',
+    ]);
+  });
+
   it('rejects decreasing printed page numbers within one text', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
@@ -338,6 +367,18 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
 
 
 describe('page breaks inside attached endnotes', () => {
+  it('counts a shared main-text and footnote boundary once', () => {
+    const xml = `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="XI-XII"/></head><body><prose>Biografs<footnote>Flens<pb n="XII" facs="020.jpg"/>burgi.</footnote> Vidnesbyrd, med udmærkede <pb n="XII" facs="020.jpg"/>Læregaver.</prose></body></text></workbody></kalliopework>`;
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+  });
+
+  it('rejects repeated physical boundaries inside the same stream', () => {
+    const xml = `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-2"/></head><body><prose>Først<pb n="2" facs="002.jpg"/>Andet<pb n="2" facs="002.jpg"/>Tredje</prose></body></text></workbody></kalliopework>`;
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: duplicate pb/@facs within one text stream: 002.jpg.',
+    );
+  });
+
   const xmlWith = notePages => `<kalliopework><workhead><pagebreaks/></workhead><workbody><text id="poem"><head><source pages="1-5"/></head><body><poetry>Vers<footnote>Slutnote${notePages}</footnote>
 <pb n="2" facs="002.jpg"/>Næste vers
 <pb n="3" facs="003.jpg"/>Sidste vers</poetry></body></text></workbody></kalliopework>`;

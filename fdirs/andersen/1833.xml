@@ -2071,6 +2071,9 @@ Der ei Barnet græder!
     <note>Digtet indledes med mottoet: ,,Tredje Reeb ind! - - Op at beslaae Mersseilet! - / Ha, alle Djævle, hvilken Nat! -''.</note>
   </notes>
   <source pages="101-114"/>
+  <places>
+    <place ref="jutland" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2459,7 +2462,7 @@ Kold og hvid, som Kommandanten.
 </body>
 </text>
 
-<text id="andersen2026080812" aliases="andersen1999041411, andersen2026080812b, andersen2026080814">
+<text id="andersen2026080812" aliases="andersen1999041411, andersen2026080812b, andersen2026080814,andersen2005050101">
 <head>
   <title>December</title>
   <firstline>Dybt i mit Hjerte, hvor hun boer</firstline>

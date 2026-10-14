@@ -9,7 +9,14 @@
   <pictures>
     <picture type="titlepage" src="1940-p1.jpg"><transcription>Ludvig Bødtcher / Samlede Digte / udgivne af / John. Brøndum-Nielsen // Gyldendal / 1940</transcription></picture>
   </pictures>
-  <source facsimile="1940" facsimile-pages-num="398" facsimile-pages-offset="21">Ludvig Bødtcher: <i>Samlede Digte</i>, Johs. Brøndum-Nielsen (red.), Gyldendal, Holstebro, 1940.</source>
+  <source facsimile="1940" facsimile-pages-num="398" facsimile-pages-offset="21">
+    <author>Ludvig Bødtcher</author>
+    <title>Samlede Digte</title>
+    <editor type="editor">Johs. Brøndum-Nielsen</editor>
+    <place>Holstebro</place>
+    <publisher>Gyldendal</publisher>
+    <year>1940</year>
+  </source>
   <proofreadings>
     <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
   </proofreadings>
@@ -1920,6 +1927,9 @@ Som fødte Danmark Romantikens Vaar!
 <head>
   <title>I A. Oehlenschlägers Album</title>
   <firstline>Forgjeves har jeg brudt min Hjerne</firstline>
+  <dates>
+    <event>1841-11-14</event>
+  </dates>
   <notes>
     <note>* tr. Digte 1856; Orig. i haandskrevet Album, overrakt Oehlenschläger paa hans Fødselsdag 1841; jf. Illustr. Tidende 16.11.1879.</note>
     <note>Album er i denne sammenhæng et <i>album amicorum</i>, hvilket er den latinske betegnelse for en stambog.</note>
@@ -6948,6 +6958,10 @@ Hymens Sølv det giælde skal!
   <subtitle>(Afsjungen Juleaften 1824, i Rom, af de paa den Tid derværende Danske, tolv i Tallet)</subtitle>
   <toctitle>En Julesang, 1824</toctitle>
   <firstline>Nu et Suk, min Ven og Broder</firstline>
+  <dates>
+    <event>1824-12-24</event>
+    <performed>1824-12-24</performed>
+  </dates>
   <notes>
     <note>* tr. Kbh. Morgenblad 28. 5. 1825.</note>
   </notes>
@@ -7043,6 +7057,10 @@ Som dufter midt i Kulde!
   <title>Julevise, 1825</title>
   <subtitle>(Afsjungen Juleaften, hos Thorvaldsen i Rom)</subtitle>
   <firstline>Gamle Juul kom snart igjen</firstline>
+  <dates>
+    <event>1825-12-24</event>
+    <performed>1825-12-24</performed>
+  </dates>
   <notes>
     <note>* tr. Kbh. Morgenblad 29. 4. 1826.</note>
   </notes>
@@ -7764,6 +7782,10 @@ Op Venner, Hurra for dem Begge!
   <title>Den 6te Juli</title>
   <subtitle>(I Skandinavisk Selskab den 6te October 1849)</subtitle>
   <firstline>Det var en Sommermorgen</firstline>
+  <dates>
+    <event>1849-07-06</event>
+    <performed>1849-10-06</performed>
+  </dates>
   <notes>
     <note>* Lejlighedstryk. Nr. 2 har Angivelsen: Mel. af J. F. Frølich.</note>
   </notes>

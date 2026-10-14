@@ -59,6 +59,11 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
 - indsæt hele den relevante tekst og den semantiske struktur;
 - bevar historisk ordlyd, tegnsætning, verslinjer, strofer og understøttet
   typografi efter kilden;
+- kontrollér hvert prosaafsnits grænser, førstelinjeindryk og afstand til
+  naboafsnit visuelt mod facsimilet; bevar trykkets struktur, og indsæt kun
+  blanklinjer, hvor trykket viser ekstra lodret afstand. OCR-opdelingen må ikke
+  styre strukturen; se `docs/xml-work-format.md` og
+  `docs/facsimile-korrektur.md`;
 - opret eller opdatér værkmetadata og nødvendige personmetadata;
 - kontrollér titel, forfatter, udgivelsesår, forlag eller trykkested, bind og
   andre bibliografiske oplysninger mod kilden;
@@ -97,6 +102,13 @@ en afsluttet variantkontrol. Gentag kontrollen efter ændringer i førstelinjer
 eller forfatterangivelser. Kør kun for værket under arbejde, ikke globalt for
 korpusset. Eksisterende tekster må ikke bruges som grundlag for at kopiere
 transskriptionen fra en anden udgave.
+
+### Redaktionelle noter og PR-overlevering
+
+Tilføj kun redaktionelle noter, når de bidrager med relevant information for
+læseren. Noter, der kan stå som en del af overleveringen i PR'en, skal stå i
+PR-beskrivelsen og må ikke skrives som noter i værkerne. Det gælder fx
+arbejdsstatus, indlæsningsomfang, manglende tekstkontrol og opgaver til senere.
 
 ## 3. Håndtér tvivl eksplicit
 

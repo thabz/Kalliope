@@ -121,9 +121,18 @@ export const linesPairsByLineForLang = (lang) => {
   const locale = localeForLang(lang);
   const collator = new Intl.Collator(locale, lineCollatorOptions);
   return (a, b) => {
-    const a1 = a.sortBy;
-    const b1 = b.sortBy;
-    return collator.compare(a1, b1);
+    const lineOrder = collator.compare(a.sortBy, b.sortBy);
+    if (lineOrder !== 0) {
+      return lineOrder;
+    }
+    const alternativeOrder = collator.compare(
+      a.sortByAlternative ?? '',
+      b.sortByAlternative ?? ''
+    );
+    if (alternativeOrder !== 0) {
+      return alternativeOrder;
+    }
+    return collator.compare(a.id ?? '', b.id ?? '');
   };
 };
 

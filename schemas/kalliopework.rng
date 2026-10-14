@@ -108,6 +108,7 @@
       <optional><attribute name="status"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="parent"><text/></attribute></optional>
+      <optional><attribute name="sort-order"><data type="positiveInteger" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <ref name="workhead"/>
       <optional><ref name="workbody"/></optional>
@@ -127,7 +128,7 @@
 
   <define name="errata">
     <element name="errata">
-      <attribute name="status"><choice><value>none</value><value>applied</value></choice></attribute>
+      <attribute name="status"><choice><value>none</value><value>applied</value><value>reviewed</value></choice></attribute>
       <optional><attribute name="in"><text/></attribute></optional>
       <optional><attribute name="pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
@@ -223,7 +224,7 @@
 
   <define name="sourceBibliography">
     <interleave>
-      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="realname"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="type"><value>editor</value></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <zeroOrMore><element name="translator"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <element name="title"><ref name="sourceBibliographicText"/></element>

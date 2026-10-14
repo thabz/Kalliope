@@ -572,6 +572,9 @@ Det gror, hvor Danmarks Fremtid gror.
     <event>1905-09-12</event>
   </dates>
   <source pages="30-32"/>
+  <places>
+    <place ref="england" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -655,6 +658,9 @@ dybt i Evigheds Flod.
   <subtitle>Ved Kong Håkons Indtog</subtitle>
   <firstline>Hilsen og Håndslag, Nordmænd! I Sønner</firstline>
   <source pages="35-38"/>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -699,7 +705,13 @@ såsandt som Jer styrende Stjærne er det trefold funklende Nord.
     <line>Sankt-Hans-Dag 1906</line>
   </subtitle>
   <firstline>Ser vi et tusende</firstline>
+  <dates>
+    <event>1906-06-24</event>
+  </dates>
   <source pages="39-42"/>
+  <places>
+    <place ref="greenland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -780,6 +792,10 @@ og Havet i os.
   </subtitle>
   <firstline>Se, det var smukt — idet vi dog skal dø —</firstline>
   <source pages="43-49"/>
+  <places>
+    <place ref="duchy-schleswig" relation="subject" primary="true"/>
+    <place ref="rinkenaes" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -908,6 +924,9 @@ midt på den friske Jord ved Forårstide.
   <subtitle>Mel.: Ja, vi elsker dette Landet.</subtitle>
   <firstline>Havet åd sig ind fra Vester</firstline>
   <source pages="50-55"/>
+  <places>
+    <place ref="duchy-schleswig" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1840,6 +1859,9 @@ alt Livets Forår var deri,
   <title>Ved Vandet</title>
   <firstline>Ak, Spaden bider, og Ilden æder</firstline>
   <source pages="107-111"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

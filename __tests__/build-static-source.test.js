@@ -1,3 +1,4 @@
+import { buildWorkSourceMetadata } from '../tools/build-static/work-metadata.js';
 import { DOMParser } from '@xmldom/xmldom';
 import {
   collectSourceDigitalUrl,
@@ -203,5 +204,43 @@ describe('structured bibliographic sources', () => {
     '<source><title>Titel</title><translator type="editor">A</translator></source>',
   ])('rejects invalid structured bibliography: %s', xml => {
     expect(() => reference(xml)).toThrow();
+  });
+});
+
+
+describe('work source metadata before output and caching', () => {
+  it.each([false, true])('keeps errata sources separate unless also used by a text (%s)', usedByText => {
+    const work = new DOMParser().parseFromString(`
+      <kalliopework><workhead>
+        <source><title>Bind I</title></source>
+        <source id="corrections"><title>Bind III</title></source>
+        <errata status="reviewed" in="corrections"/>
+      </workhead><workbody>
+        ${usedByText === true ? '<text><head><source in="corrections"/></head></text>' : ''}
+      </workbody></kalliopework>`, 'text/xml').documentElement;
+    const { sources } = buildWorkSourceMetadata(work, new Map(), 'test.xml');
+    expect(sources.default.errataOnly).toBeUndefined();
+    expect(sources.corrections.errataOnly === true).toBe(usedByText === false);
+  });
+
+  it('preserves identifiers and facsimile metadata through JSON cache serialization', () => {
+    const work = new DOMParser().parseFromString(`
+      <kalliopework><workhead>
+        <title>Digte</title><identifiers><wikidata>Q123</wikidata></identifiers>
+        <source id="edition" facsimile="scan.pdf" facsimile-pages-num="20" facsimile-pages-offset="2">
+          <title>Samlede Digte</title><year>1900</year>
+          <identifiers><kb-alma>123456</kb-alma></identifiers>
+        </source>
+      </workhead></kalliopework>`, 'text/xml').documentElement;
+    const metadata = buildWorkSourceMetadata(work, new Map(), 'fdirs/poet/1900.xml');
+    const cached = JSON.parse(JSON.stringify(metadata));
+    expect(cached).toMatchObject({
+      identifiers: { wikidata: 'Q123' },
+      sources: { edition: {
+        identifiers: { 'kb-alma': '123456' },
+        facsimile: 'scan', facsimilePageCount: 20, facsimilePagesOffset: 2,
+      } },
+    });
+    expect(cached.sources.edition.source).toContain('Samlede Digte');
   });
 });

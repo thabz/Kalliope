@@ -228,6 +228,9 @@ at hun ej skulde høre mig klage.
   <title>Drømmen i Visby</title>
   <firstline>Jeg drømmer, at sikkert i Havnen ind</firstline>
   <source pages="14-16" facsimile-pages="21-23"/>
+  <places>
+    <place ref="visby" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -303,6 +306,9 @@ St. Karins Stemme klinger.
   <title>Farvel til Visby</title>
   <firstline>Mens Byens Ruder blinkede</firstline>
   <source pages="17-18" facsimile-pages="24-25"/>
+  <places>
+    <place ref="visby" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2148,6 +2154,9 @@ og mit tunge Hjærte slaar.
   <firstline>Jeg aabner mit Vindu</firstline>
   <source pages="82-85" facsimile-pages="89-92"/>
   <keywords>byron</keywords>
+  <places>
+    <place ref="reykjavik" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

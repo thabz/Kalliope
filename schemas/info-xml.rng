@@ -22,7 +22,6 @@
         <choice>
           <ref name="period"/>
           <ref name="literary-periods"/>
-          <ref name="works"/>
           <ref name="identifiers"/>
         </choice>
       </zeroOrMore>
@@ -153,7 +152,6 @@
   <define name="note"><element name="note"><text/></element></define>
   <define name="date"><element name="date"><text/></element></define>
   <define name="literary-periods"><element name="literary-periods"><text/></element></define>
-  <define name="works"><element name="works"><text/></element></define>
   <define name="wikidata"><element name="wikidata"><text/></element></define>
   <define name="wikipedia-da"><element name="wikipedia-da"><text/></element></define>
   <define name="wikipedia-en"><element name="wikipedia-en"><text/></element></define>

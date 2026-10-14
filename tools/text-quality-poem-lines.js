@@ -1,3 +1,4 @@
+import { discoverPoetFiles } from './libs/poet-files.js';
 import fs from 'fs';
 import path from 'path';
 import { fileExists, loadText } from './libs/helpers.js';
@@ -115,13 +116,18 @@ const findCommonPoetryIndentationFindings = ({
 
   while ((textMatch = textRegexp.exec(data)) != null) {
     const text = textMatch[0];
+    const textWithoutNotes = text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+      note => note.replace(/[^\n]/g, ' '));
     const textId = firstMatch(text, /^<text\b[^>]*\sid="([^"]+)"/u);
     const verseLines = [];
     const poetryRegexp = /<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu;
     let poetryMatch;
 
-    while ((poetryMatch = poetryRegexp.exec(text)) != null) {
-      const poetry = poetryContentForIndentation(poetryMatch[1]);
+    while ((poetryMatch = poetryRegexp.exec(textWithoutNotes)) != null) {
+      const contentOffset = poetryMatch.index + poetryMatch[0].indexOf(poetryMatch[1]);
+      const poetry = poetryContentForIndentation(
+        text.slice(contentOffset, contentOffset + poetryMatch[1].length),
+      );
       const poetryStart =
         textMatch.index +
         poetryMatch.index +
@@ -280,6 +286,32 @@ const titleIssue = ({ file, context, textId, candidate, rule, description }) => 
   };
 };
 
+const findLineLeadingPunctuationFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const document = parseXMLFragment(data);
+  return getElementsByTagName(document, 'line').flatMap(element => {
+    const content = titleTextWithoutNotes({ title: element.toString() });
+    if (/^[,.;:!?]/u.test(content) === false) {
+      return [];
+    }
+    let owner = element.parentNode;
+    while (owner != null && ['text', 'section', 'workhead'].includes(owner.tagName) === false) {
+      owner = owner.parentNode;
+    }
+    return [titleIssue({
+      file,
+      context,
+      textId: owner == null ? undefined : safeGetAttr(owner, 'id') ?? owner.tagName,
+      candidate: { element },
+      rule: 'line-leading-punctuation',
+      description: 'line must not begin with a comma, period, semicolon, colon, exclamation mark, or question mark.',
+    })];
+  });
+};
+
 const findTitleMetadataFindings = ({
   file,
   data,
@@ -332,21 +364,23 @@ const findTitleMetadataFindings = ({
   });
 
   const checkTrailingPunctuation = ({ head, owner, textId }) => {
-    if (
-      head == null ||
-      ignoredTests(owner).includes(titleTrailingPunctuationRule)
-    ) {
+    if (head == null) {
       return;
     }
+    const punctuationIgnored = ignoredTests(owner).includes(titleTrailingPunctuationRule);
 
-    titleFieldsWithoutTrailingPunctuation.forEach(type => {
+    [...titleFieldsWithoutTrailingPunctuation, 'linktitle', 'subtitle', 'suptitle'].forEach(type => {
       const candidate = extractedTitleCandidate(head, type);
       if (candidate == null) {
         return;
       }
       const title = titleTextWithoutNotes(candidate);
       const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
-      if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
+      const forbiddenComma = type !== 'title' && /,$/u.test(title) === true;
+      const forbiddenOtherPunctuation = punctuationIgnored === false &&
+        titleFieldsWithoutTrailingPunctuation.includes(type) === true &&
+        /[.:;]$/u.test(title) === true && endsWithAllowedEllipsis === false;
+      if (forbiddenComma === true || forbiddenOtherPunctuation === true) {
         issues.push(
           titleIssue({
             file,
@@ -354,7 +388,9 @@ const findTitleMetadataFindings = ({
             textId,
             candidate,
             rule: titleTrailingPunctuationRule,
-            description: `${type} must not end with a period, colon, or semicolon.`,
+            description: forbiddenComma === true
+              ? `${type} must not end with a comma.`
+              : `${type} must not end with a period, colon, or semicolon.`,
           }),
         );
       }
@@ -456,6 +492,7 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
     : [];
 
   const metadata = [];
+  const { workids } = discoverPoetFiles(poetIds, { rootDir });
 
   for (const poetId of poetIds) {
     const infoFilename = path.join(rootDir, 'fdirs', poetId, 'info.xml');
@@ -478,19 +515,7 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
       firstMatch(infoData, /<born>([\s\S]*?)<\/born>/) ??
       firstMatch(infoData, /<baptized>([\s\S]*?)<\/baptized>/);
     const bornYear = firstYear(bornOrBaptized);
-    const workIds = firstMatch(infoData, /<works>([\s\S]*?)<\/works>/);
-
-    const works = workIds
-      ? workIds
-          .toString()
-          .replace('<works>', '')
-          .replace('</works>', '')
-          .replace('<works/>', '')
-          .trim()
-          .split(',')
-          .filter((workId) => workId.length > 0)
-          .map((workId) => workId.trim())
-      : [];
+    const works = workids.get(poetId);
 
     for (const workId of works) {
       const filename = `${poetId}/${workId}.xml`;
@@ -788,6 +813,7 @@ const findPoemLineFindingsInText = ({
     ...findCommonPoetryIndentationFindings({ file, data, context }),
     ...findPoetrySpacingFindings({ file, data, context }),
     ...findTitleMetadataFindings({ file, data, context }),
+    ...findLineLeadingPunctuationFindings({ file, data, context }),
   );
 
   return issues;
@@ -932,6 +958,7 @@ export {
   findCommonPoetryIndentationFindings,
   findPoetrySpacingFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,

@@ -18,7 +18,8 @@ import { mapLimit } from './concurrency.js';
 const build_about_pages = async (collected) => {
   safeMkdir(`public/api/about`);
   // Regenerate all about-pages if any work-file is modified, since our poem-counts then might be off
-  const areAnyWorkModified = Array.from(collected.works.keys())
+  const areAnyWorkModified = (collected.changedWorkPoetIds?.size ?? 0) > 0 ||
+    isFileModified('tools/build-static/about.js') || Array.from(collected.works.keys())
     .filter(key => {
       const work = collected.works.get(key);
       return isFileModified(...(work.sourceFiles || [`fdirs/${key}.xml`]));

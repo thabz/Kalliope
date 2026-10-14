@@ -101,6 +101,15 @@ const build_artwork = async (collected) => {
   );
   const museumsModified = isFileModified('content/museums.xml');
   let found_changes = false;
+  for (const key of collected_artwork.keys()) {
+    if (key.startsWith('work/')) {
+      const [, poetId, workId] = key.split('/');
+      if (collected.workids.get(poetId)?.includes(workId) !== true) {
+        collected_artwork.delete(key);
+        found_changes = true;
+      }
+    }
+  }
 
   await mapLimit(
     Array.from(collected.poets.values()),
@@ -266,6 +275,13 @@ const build_artwork = async (collected) => {
     );
   }
 
+  // Cached pictures contain serialized copies of person metadata. Rebind them
+  // to this build's people so later flag updates also reach museum/work output.
+  for (const picture of collected_artwork.values()) {
+    if (picture.artistId != null) {
+      picture.artist = collected.poets.get(picture.artistId);
+    }
+  }
   if (found_changes) {
     writeCachedJSON('collected.artwork', Array.from(collected_artwork));
   }
