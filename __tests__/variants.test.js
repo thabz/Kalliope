@@ -1,6 +1,7 @@
 import {
   primaryTextVariantId,
   resolve_variants,
+  editionSourceFilesForText,
 } from '../tools/build-static/variants.js';
 
 describe('variant resolution helpers', () => {
@@ -24,6 +25,15 @@ describe('variant resolution helpers', () => {
 
   it('resolves a variant chain and sorts by work year', () => {
     expect(resolve_variants('a', collected)).toEqual(['a', 'b', 'c']);
+  });
+
+  it('tracks source files for every edition in a variant chain', () => {
+    expect(editionSourceFilesForText('a', collected)).toEqual([
+      'fdirs/p1/info.xml', 'fdirs/p1/w1.xml',
+      'fdirs/p2/info.xml', 'fdirs/p2/w2.xml',
+      'fdirs/p3/info.xml', 'fdirs/p3/w3.xml',
+    ]);
+    expect(editionSourceFilesForText('unrelated', collected)).toEqual([]);
   });
 
   it('sorts variants by the year of their work', () => {

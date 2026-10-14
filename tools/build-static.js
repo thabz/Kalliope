@@ -79,7 +79,9 @@ import {
   build_variants,
   resolve_variants,
   primaryTextVariantId,
+  editionSourceFilesForText,
 } from './build-static/variants.js';
+import { buildEditionReference, resolveEditionSource } from './build-static/edition-reference.js';
 import { build_artwork } from './build-static/artwork.js';
 import { flushImageSizeCache, imageSizeSync } from './build-static/image.js';
 import {
@@ -283,10 +285,15 @@ const handle_text = async (
   const sourceTextId = safeGetAttr(text, 'id');
   const textId = placement.textId || sourceTextId;
   const textMeta = collected.texts.get(textId);
-  const sourceFiles = placement.sourceFiles ?? sourceFilesForText(textMeta);
+  const sourceFiles = [
+    ...(placement.sourceFiles ?? sourceFilesForText(textMeta)),
+    ...editionSourceFilesForText(sourceTextId, collected),
+  ];
   if (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
-    !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js', ...sourceFiles)
+    !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
+      'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
+      'common/source-reference.js', ...sourceFiles)
   ) {
     return;
   }
@@ -404,20 +411,7 @@ const handle_text = async (
       // Skip self
       return id !== sourceTextId;
     })
-    .map((id) => {
-      const meta = collected.texts.get(id);
-      const poet = poetName(collected.poets.get(meta.poetId));
-      const work = workLinkName(
-        collected.works.get(sourceWorkKey(meta)),
-      );
-      return {
-        id,
-        title: meta.title,
-        poet,
-        poetId: meta.poetId,
-        work,
-      };
-    });
+    .map(id => buildEditionReference(collected.texts.get(id), collected));
   const relatedDateTexts = relatedTextsForDates(
     sourceTextId,
     textDates,
@@ -974,7 +968,9 @@ const works_first_pass = (collected) => {
   let found_changes = false;
   const anthologyCodeModified = isFileModified(
     'tools/build-static.js',
-    'tools/build-static/anthologies.js'
+    'tools/build-static/anthologies.js',
+    'tools/build-static/edition-reference.js',
+    'tools/build-static/source.js',
   );
   const force_reload =
     texts.size === 0 ||
@@ -1040,6 +1036,10 @@ const works_first_pass = (collected) => {
 
       const parentId = safeGetAttr(work, 'parent');
       const head = getElementByTagName(work, 'workhead');
+      const editionWorkSources = new Map((getChildrenByTagName(head, 'source') ?? []).map(sourceNode => [
+        safeGetAttr(sourceNode, 'id') ?? 'default',
+        resolveSourceReference({ sourceNode, poets: collected.poets }),
+      ]));
       const workBody = getElementByTagName(work, 'workbody');
       const title = replaceDashes(safeGetText(head, 'title'));
       const toctitle = extractTitle(head, 'toctitle') || { title };
@@ -1129,6 +1129,11 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
+          editionSource: resolveEditionSource({
+            sourceNode: getChildByTagName(head, 'source'),
+            workSources: editionWorkSources,
+            poets: collected.poets,
+          }),
           title: replaceDashes(titleText(linkTitle)),
           firstline: replaceDashes(titleText(firstline)),
           indexTitle: replaceDashes(titleText(indexTitle)),
@@ -1266,12 +1271,17 @@ const works_second_pass = async (collected) => {
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
         'tools/build-static/source.js',
+        'tools/build-static/edition-reference.js',
+        'common/source-reference.js',
         `fdirs/${poetId}/info.xml`,
         filename,
       ]);
       const sourceTexts = textsBySourceWork.get(`${poetId}/${workId}`) || [];
       sourceTexts.forEach((text) => {
         sourceFilesForText(text).forEach((sourceFile) =>
+          sourceFiles.add(sourceFile)
+        );
+        editionSourceFilesForText(text.sourceTextId ?? text.id, collected).forEach(sourceFile =>
           sourceFiles.add(sourceFile)
         );
       });

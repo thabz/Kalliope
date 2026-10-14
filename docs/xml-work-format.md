@@ -259,6 +259,22 @@ og er arrays med `name` og valgfrit `id`. Øvrige felter har XML-felternes navne
 og er strenge. Manglende felter udelades. Biografier og bulkdatasættet bruger
 fortsat deres eksisterende format.
 
+»Andre udgaver« genbruger kildeformatteringen og indleder hver henvisning med
+den linkede teksttitel i `»…«` efterfulgt af `, i: `. Den valgte kilde arves
+fra værket, medmindre teksten har sin egen kildeangivelse. Bibliografiske
+personnavne linkes som i »Kilde«, og publikationens titel linkes til det
+konkrete værk, også for antologier, tidsskrifter og aviser. Bind forkortes til
+`bd.` i disse henvisninger; »Kilde« bevarer `bind`. Sidetal tilføjes med `s.`
+og tankestreg i intervaller i begge sektioner.
+
+Fritekstkilder bevares, og den første kursiverede titel linkes til værket,
+når den ikke allerede indeholder et link. Mangler kildeangivelsen, bruges
+tilgængelig værktitel, år og eventuel værkforfatter uden at tilføje ukendte
+udgivelsesoplysninger. I tekst-JSON får poster i `variants` et valgfrit
+`citation` med den samlede henvisning som inline XML. De eksisterende
+referencefelter bevares. Ændringer i en udgaves kildefiler genopbygger også
+henvisningerne hos de øvrige varianter.
+
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
 kun `<wikidata>` tilladt:
