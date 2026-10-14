@@ -661,6 +661,11 @@ fallbacks. En blank specialtitel tilsidesætter derfor ikke en gyldig fallback.
 Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
 fra kontrollen af linktitlen.
 
+Afsluttende komma er tilladt i `<title>`, uanset om der er en undertitel.
+Andre titelfelter (`<indextitle>`, `<toctitle>`, `<breadcrumbtitle>`,
+`<linktitle>`, `<subtitle>` og `<suptitle>`) må aldrig slutte med komma.
+Kommaforbuddet kan ikke undtages med `ignore-tests`.
+
 Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
 punktum, kolon eller semikolon. Fjern derfor disse tegn til sidst i `<title>`,
 `<indextitle>`, `<toctitle>` og `<breadcrumbtitle>`, også når tegnet står i den

@@ -482,6 +482,14 @@ describe('Check workfiles', () => {
     },
   );
 
+  it.each(['indextitle', 'toctitle', 'breadcrumbtitle', 'linktitle', 'subtitle', 'suptitle'])(
+    'rejects a trailing comma in %s even with a punctuation exemption',
+    type => {
+      const issues = titleMetadataIssues(`<text id="comma" ignore-tests="title-trailing-punctuation"><head><${type}>Titel,</${type}></head></text>`);
+      expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(1);
+    },
+  );
+
   it.each(['.', ':', ';'])(
     'reports a title ending with %s',
     punctuation => {
