@@ -341,12 +341,9 @@ En tekst i en antologi findes kun én gang, med XML'ens `text/@id`. Teksten
 hører til antologiens værk, mens dens effektive `author` identificerer digteren.
 Buildet opretter automatisk digterens virtuelle værk »Tekster i andre udgivelser«;
 dets indholdsfortegnelse refererer direkte til de samme tekstposter og URL'er.
-Der skal ikke indsættes lokale kopier hos digteren eller tilføjes et `a`-suffiks.
-Forskellige historiske udgaver bevarer deres egne tekstposter.
-
-Tidligere genererede `a`-placeringer fjernes fra buildcache og tekst-API ved
-næste build. Der oprettes ingen automatiske redirects for disse adresser.
-Eksisterende eksplicitte `aliases` fungerer fortsat.
+Forskellige historiske udgaver har deres egne tekstposter.
+Tekstens eksplicitte `aliases` angiver alternative ID'er, der viderestilles
+til den kanoniske tekst.
 
 ### Text
 

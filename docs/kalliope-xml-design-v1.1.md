@@ -1960,14 +1960,11 @@ merged
 
 ### `<works>` og antologier
 
-En antologitekst har én kanonisk tekstpost i sin kildepublikation. Buildet
-bevarer XML'ens tekst-ID og opretter ikke ekstra tekstposter eller ID'er til
-visningen hos digteren. Det virtuelle værk »Tekster i andre udgivelser« har
+En antologitekst har én kanonisk tekstpost i sin kildepublikation med
+XML'ens tekst-ID. Det virtuelle værk »Tekster i andre udgivelser« har
 indholdsfortegnelsesreferencer til de samme kanoniske tekster. I tekst-API'et
 angiver `poet` den effektive forfatter, mens `work` angiver antologien; værkets
-`poet_id` bruges til værklinket. Tidligere automatisk genererede `a`-placeringer
-migreres væk ved genbygning uden automatiske redirects.
-
+`poet_id` bruges til værklinket.
 
 En antologi skal ikke tilføjes manuelt til alle bidragyderes `<works>`.
 
