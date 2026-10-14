@@ -330,21 +330,23 @@ const findTitleMetadataFindings = ({
   });
 
   const checkTrailingPunctuation = ({ head, owner, textId }) => {
-    if (
-      head == null ||
-      ignoredTests(owner).includes(titleTrailingPunctuationRule)
-    ) {
+    if (head == null) {
       return;
     }
+    const punctuationIgnored = ignoredTests(owner).includes(titleTrailingPunctuationRule);
 
-    titleFieldsWithoutTrailingPunctuation.forEach(type => {
+    [...titleFieldsWithoutTrailingPunctuation, 'linktitle', 'subtitle', 'suptitle'].forEach(type => {
       const candidate = extractedTitleCandidate(head, type);
       if (candidate == null) {
         return;
       }
       const title = titleTextWithoutNotes(candidate);
       const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
-      if (/[.:;]$/u.test(title) && endsWithAllowedEllipsis === false) {
+      const forbiddenComma = type !== 'title' && /,$/u.test(title) === true;
+      const forbiddenOtherPunctuation = punctuationIgnored === false &&
+        titleFieldsWithoutTrailingPunctuation.includes(type) === true &&
+        /[.:;]$/u.test(title) === true && endsWithAllowedEllipsis === false;
+      if (forbiddenComma === true || forbiddenOtherPunctuation === true) {
         issues.push(
           titleIssue({
             file,
@@ -352,7 +354,9 @@ const findTitleMetadataFindings = ({
             textId,
             candidate,
             rule: titleTrailingPunctuationRule,
-            description: `${type} must not end with a period, colon, or semicolon.`,
+            description: forbiddenComma === true
+              ? `${type} must not end with a comma.`
+              : `${type} must not end with a period, colon, or semicolon.`,
           }),
         );
       }

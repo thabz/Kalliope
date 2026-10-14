@@ -106,6 +106,29 @@ formodet strofeform.
 
 ### Regelmæssige strofeformer
 
+**Kør altid strofeanalyseværktøjet, når strofelængder eller strofegrænser
+skal vurderes eller rettes.** Visuel læsning, manuel linjetælling og den
+eksisterende XML-opdeling kan ikke erstatte dette trin.
+
+Kør fra repositoryets rod:
+
+```sh
+node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js fdirs/<digter>/<værk>.xml > /tmp/strofeanalyse.json
+jq --arg id '<tekst-id>' '.poems[] | select(.text_id == $id) | {stanza, candidates}' /tmp/strofeanalyse.json
+```
+
+Hvis OCR-geometri er tilgængelig, angives dens TSV-mappe som andet argument
+til `analyze-whole-work.js`. Vurder værktøjets forslag om manglende eller
+overflødige strofegrænser mod facsimilet, også ved sideskift. Et sideskift er
+ikke i sig selv belæg for, at en strofe fortsætter; en blanklinje mellem
+strofer kan være skjult dér. Registrér værktøjets forslag og begrund den
+endelige afgørelse. Ved usikkert belæg skal usikkerheden fremgå.
+
+Efter en rettelse køres analysen igen på den ændrede XML. Kommandoen
+`npm run poetic-form -- <tekst-id>` kan supplere med rim og metrik, men dens
+strukturdel tæller den eksisterende XML-opdeling og erstatter ikke
+strofeanalyseværktøjets forslag til grænser.
+
 Når facsimilet har bekræftet en regelmæssig strofeform, kan linjetælling bruges
 som en stærk kontrol. En ottave skal eksempelvis have otte verslinjer, men det
 beviser ikke, at en indledning eller paratekst i samme bog også består af
