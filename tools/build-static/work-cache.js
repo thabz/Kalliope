@@ -1,3 +1,6 @@
+import fs from 'fs';
+import * as Paths from '../../common/paths.js';
+
 const sourceWorkKey = text =>
   `${text.sourcePoetId ?? text.poetId}/${text.sourceWorkId ?? text.workId}`;
 
@@ -17,6 +20,14 @@ const removeTextsFromSourceWorks = (texts, sourceWorkKeys) => {
   });
 };
 
+const removeObsoleteTextFiles = (previousTexts, texts) => {
+  previousTexts.forEach((text, id) => {
+    if (!texts.has(id)) {
+      fs.rmSync(Paths.textPath(id), { force: true });
+    }
+  });
+};
+
 const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
   new Set(
     Array.from(works.entries())
@@ -30,6 +41,7 @@ const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
 
 export {
   obsoleteSourceWorkKeys,
+  removeObsoleteTextFiles,
   removeTextsFromSourceWorks,
   sourceFilesForText,
   sourceWorkFilename,

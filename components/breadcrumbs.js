@@ -133,7 +133,7 @@ export const worksCrumbs = (lang, poet) => {
 export const workCrumbs = (lang, poet, work) => {
   const workLink = {
     title: <WorkName lang={lang} work={work} useTitle="breadcrumbtitle" />,
-    url: Links.workURL(lang, poet.id, work.id),
+    url: Links.workURL(lang, work.poet_id ?? poet.id, work.id),
   };
   let parentLink;
   if (work.parent != null) {
@@ -141,7 +141,7 @@ export const workCrumbs = (lang, poet, work) => {
       title: (
         <WorkName lang={lang} work={work.parent} useTitle="breadcrumbtitle" />
       ),
-      url: Links.workURL(lang, poet.id, work.parent.id),
+      url: Links.workURL(lang, work.parent.poet_id ?? work.poet_id ?? poet.id, work.parent.id),
     };
   }
 

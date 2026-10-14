@@ -6,7 +6,7 @@ import {
 } from '../libs/helpers.js';
 import { primaryTextVariantId } from './variants.js';
 import { poetName, workName } from './formatting.js';
-import { sourceFilesForText } from './work-cache.js';
+import { sourceFilesForText, sourceWorkKey } from './work-cache.js';
 import { createProgressReporter } from './progress.js';
 
 function stripDiacriticsGreek(str) {
@@ -121,7 +121,7 @@ const build_global_lines_json = (collected) => {
               firstletter = '_';
             }
             const work = collected.works.get(
-              textMeta.poetId + '/' + textMeta.workId
+              sourceWorkKey(textMeta)
             );
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({
