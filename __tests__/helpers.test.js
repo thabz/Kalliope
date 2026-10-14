@@ -27,6 +27,13 @@ describe('helpers', () => {
       ]);
     });
 
+    it.each(['center', 'right'])('preserves %s alignment with a trailing line break', tag => {
+      const pb = '<pb n="247" facs="252.jpg"/>';
+      expect(htmlToXml(`${pb}<${tag}><small>Humle.</small></${tag}><br/>`, collected, true)).toEqual([
+        [`${pb}<small>Humle.</small><br/>`, { num: 1, [tag]: true, html: true }],
+      ]);
+    });
+
     it.each(['center', 'right'])('keeps adjacent %s elements valid', tag => {
       const xml = `<${tag}>Tekst</${tag}><${tag}></${tag}>`;
       expect(htmlToXml(xml, collected, true)).toEqual([
