@@ -195,6 +195,12 @@ const titleText = title => {
     `<content>${titleWithoutNotes.title}</content>`,
     'text/xml'
   );
+  for (const overline of getElementsByTagName(document, 'o')) {
+    const letters = safeGetText(overline)
+      .replace(/\S/gu, '$&\u0304')
+      .normalize('NFC');
+    overline.parentNode.replaceChild(document.createTextNode(letters), overline);
+  }
   return safeGetText(document.documentElement);
 };
 
