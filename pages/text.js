@@ -283,6 +283,7 @@ const TextPage = (props) => {
     lang,
     highlight,
     poet,
+    workPoet,
     work,
     prev,
     next,
@@ -616,7 +617,7 @@ const TextPage = (props) => {
       requestPath={`/${lang}/text/${text.id}`}
       canonicalPath={`/${lang}/text/${text.canonical_id || text.id}`}
       noIndex={text.indexable === false}
-      crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
+      crumbs={textCrumbs(lang, workPoet ?? poet, work, section_titles ?? [], text)}
       paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
@@ -665,10 +666,16 @@ const TextPage = (props) => {
 
 TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
   const json = await Client.text(textId);
+  const workPoetId = json.work?.poet_id ?? json.poet?.id;
+  const workPoet =
+    json.error == null && workPoetId !== json.poet?.id
+      ? await Client.poet(workPoetId)
+      : json.poet;
   return {
     lang,
     highlight,
     poet: json.poet,
+    workPoet,
     work: json.work,
     prev: json.prev,
     next: json.next,
