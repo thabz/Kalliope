@@ -13,7 +13,7 @@ import PoetName from '../components/poetname.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
 
-const groupLines = (lines, type, contentLang) => {
+export const groupLines = (lines, type, contentLang) => {
   let groups = new Map();
   const lineIndexField = type === 'titles' ? 'index_title' : 'index_firstline';
   lines
@@ -31,7 +31,8 @@ const groupLines = (lines, type, contentLang) => {
         return;
       }
       line = line.replace(',', '').replace('!', '');
-      linePair['sortBy'] = line + ' [' + alternative + '[' + linePair.id;
+      linePair.sortBy = line;
+      linePair.sortByAlternative = alternative ?? '';
       let letter = Sorting.lineSectionTitleForLang(line, contentLang);
       if (line.indexOf('Aa') === 0) {
         letter = 'Å';
@@ -64,13 +65,12 @@ const groupLines = (lines, type, contentLang) => {
 };
 
 const TextsPage = (props) => {
-  const { lang, poet, type, lines, error } = props;
+  const { lang, poet, type, groups, error } = props;
 
   if (error) {
     return <ErrorPage error={error} lang={lang} message="Ukendt digter" />;
   }
 
-  const groups = groupLines(lines, type, poet.lang);
   let sections = [];
   groups.forEach((group) => {
     const items = group.items.map((lines) => {
@@ -104,7 +104,7 @@ const TextsPage = (props) => {
     sections.push({ title: group.title, items });
   });
 
-  let renderedGroups = <SectionedList sections={sections} />;
+  let renderedGroups = <SectionedList sections={sections} keyboardNavigation />;
 
   const lastCrumbTitle =
     type === 'titles' ? _('Titler', lang) : _('Førstelinjer', lang);
@@ -149,7 +149,9 @@ TextsPage.getInitialProps = async ({ query: { lang, poetId, type } }) => {
   return {
     lang,
     poet: json.poet,
-    lines: json.lines,
+    // Reuse the loaded order during hydration: collation differs across runtimes.
+    groups:
+      json.error != null ? [] : groupLines(json.lines, type, json.poet.lang),
     error: json.error,
     type,
   };

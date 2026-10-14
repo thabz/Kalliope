@@ -20,6 +20,27 @@ describe('helpers', () => {
       ]);
     });
 
+    it.each(['center', 'right'])('preserves whole-line %s alignment after a page marker', tag => {
+      const pb = '<pb n="94" facs="105.jpg"/>';
+      expect(htmlToXml(`${pb}<nonum><${tag}>VI.</${tag}></nonum>`, collected, true)).toEqual([
+        [`${pb}VI.`, { [tag]: true, html: true }],
+      ]);
+    });
+
+    it.each(['center', 'right'])('preserves %s alignment with a trailing line break', tag => {
+      const pb = '<pb n="247" facs="252.jpg"/>';
+      expect(htmlToXml(`${pb}<${tag}><small>Humle.</small></${tag}><br/>`, collected, true)).toEqual([
+        [`${pb}<small>Humle.</small><br/>`, { num: 1, [tag]: true, html: true }],
+      ]);
+    });
+
+    it.each(['center', 'right'])('keeps adjacent %s elements valid', tag => {
+      const xml = `<${tag}>Tekst</${tag}><${tag}></${tag}>`;
+      expect(htmlToXml(xml, collected, true)).toEqual([
+        [xml, { num: 1, html: true }],
+      ]);
+    });
+
     it('removes inline XML comments', () => {
       expect(lineTexts('Foraaret <!-- section title -->')).toEqual([
         'Foraaret',
