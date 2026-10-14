@@ -11,7 +11,7 @@ import {
   normalizeTimelineDate,
 } from '../../common/dates.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
-import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
+import { sourceFilesForText, sourceWorkFilename, sourceWorkKey } from './work-cache.js';
 
 const variantDate = work => normalizeTimelineDate(work.year);
 
@@ -146,8 +146,14 @@ const primaryTextVariantId = (textId, collected) => {
   }
 };
 
+const editionSourceFilesForText = (textId, collected) => {
+  const ids = resolve_variants(textId, collected) ?? [];
+  return [...new Set(ids.flatMap(id => sourceFilesForText(collected.texts.get(id))))];
+};
+
 export {
   build_variants,
   resolve_variants,
   primaryTextVariantId,
+  editionSourceFilesForText,
 };
