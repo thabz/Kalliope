@@ -574,9 +574,6 @@ const handle_text = async (
   }
   mkdirp.sync(foldername);
   const notes = get_notes(head, collected, {}, fragmentContext);
-  if (placement.systemNote != null) {
-    notes.push(placement.systemNote);
-  }
   const text_data = {
     poet,
     work,
@@ -638,16 +635,6 @@ const handle_work = async (work) => {
   const workId = safeGetAttr(work, 'id');
   let lines = [];
 
-  const systemNote = html => ({
-    type: 'anthology',
-    content_lang: 'da',
-    content_html: htmlToXml(html, collected),
-  });
-  const escapeXml = value =>
-    String(value)
-      .replaceAll('&', '&amp;')
-      .replaceAll('<', '&lt;')
-      .replaceAll('>', '&gt;');
   const handle_section = async (section, resolve_prev_next, section_titles) => {
     let poems = [];
     let proses = [];
@@ -701,14 +688,10 @@ const handle_work = async (work) => {
             prefix: replaceDashes(toctitle.prefix),
           });
           if (anthologyText) {
-            const author = collected.poets.get(textAuthorId);
             await handle_text(
               poetId, workId, part, partName, resolve_prev_next, section_titles,
               {
                 sourceFiles: collected.texts.get(textId).sourceFiles,
-                systemNote: systemNote(
-                  `Skrevet af <a poet="${textAuthorId}">${escapeXml(poetName(author))}</a>.`
-                ),
               }
             );
           } else {
