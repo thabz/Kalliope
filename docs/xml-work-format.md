@@ -476,9 +476,10 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 </subtitle>
 ```
 
-`<title>` må kun indeholde tekst, `<footnote>` og et `<num>`-prefix uden
-indlejret markup. `<toctitle>` må desuden bruge `<w>` og `<i>`. Typografiske
-tags er ikke tilladt i `<title>` uden for fodnoter, og `<indextitle>` og
+`<title>` må indeholde tekst, `<footnote>`, `<o>` til trykte forkortelsesstreger
+og et `<num>`-prefix uden indlejret markup. `<toctitle>` må desuden bruge
+`<w>` og `<i>`. Andre typografiske tags er ikke tilladt i `<title>` uden for
+fodnoter, og `<indextitle>` og
 `<linktitle>` må kun indeholde tekst og et `<num>`-prefix uden indlejret
 markup. Korpustesten kontrollerer hvert felt direkte, også når teksten har
 `<indextitle>` eller `skip-index="true"`. Reglerne gælder også værk- og
@@ -1114,9 +1115,14 @@ ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er til
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
+- `<o>`: en streg over de omfattede bogstaver, fx `h<o>a</o>` ved en
+  trykt forkortelsesstreg. Bogstaverne bevares uden at opløse forkortelsen.
+  Elementet renderes med CSS `text-decoration: overline`.
+  I titlers rene tekst til indeks og links bevares stregen som en kombinerende
+  macron (U+0304).
 - `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
   at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
-- `<s>` og `<small>`
+- `<s>` og `<small>`: lille skrift. Gennemstregning angives med `<strike>`.
 - `<w>`: spatieret tekst; renderes aktuelt som kursiv.
 - `<sc>`: small caps.
 - `<year>`: semantisk aar, renderes som indholdet.

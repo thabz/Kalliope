@@ -277,6 +277,22 @@ describe('Check workfiles', () => {
     expect(issues).toEqual([]);
   });
 
+  it.each(['title', 'toctitle'])(
+    'allows printed abbreviation overlines in %s',
+    type => {
+      expect(titleMetadataIssues(
+        `<text id="abbreviated"><head><${type}>Dan k<o>o</o>ning</${type}></head></text>`,
+      )).toEqual([]);
+    },
+  );
+
+  it('rejects emphasis inside a title abbreviation overline', () => {
+    const issues = titleMetadataIssues(
+      '<text id="emphasized"><head><title>Dan k<o><i>o</i></o>ning</title></head></text>',
+    );
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+  });
+
   it('rejects disallowed markup nested inside permitted toctitle formatting', () => {
     const issues = titleMetadataIssues(
       '<text id="nested"><head><title>Titel</title><toctitle><i>En <b>titel</b></i></toctitle></head></text>',

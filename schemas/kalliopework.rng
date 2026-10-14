@@ -76,6 +76,7 @@
         <ref name="sup"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="o"/>
         <ref name="num"/>
         <ref name="nonum"/>
         <ref name="resetnum"/>
@@ -552,6 +553,7 @@
         <ref name="sup"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="o"/>
         <ref name="num"/>
         <ref name="resetnum"/>
         <ref name="margin"/>
@@ -598,6 +600,7 @@
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
+  <define name="o"><element name="o"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
   <define name="nonum">
     <element name="nonum">

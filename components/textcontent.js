@@ -159,6 +159,12 @@ const renderXmlString = (inputString) => {
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
+      case 'o':
+        return (
+          <span key={keySeq++} style={{ textDecoration: 'overline' }}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'p':
         return <p>{handle_nodes(node.childNodes)}</p>;
       case 'sup':

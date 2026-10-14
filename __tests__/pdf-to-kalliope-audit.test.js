@@ -634,6 +634,20 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
+  it('keeps overlined letters inside words while detecting actual OCR errors', () => {
+    const xml = workXml.replace('Første paa elleve', 'h<o>a</o>ns soc1o.ikke');
+    const candidates = historicalOcrCandidates({ xml });
+
+    expect(candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'singleton', match: 'h' }),
+      expect.objectContaining({ rule: 'suspicious-internal-space', anchor: expect.stringContaining('h a ns') }),
+    ]));
+    expect(candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'digit-inside-word', match: 'c1' }),
+      expect.objectContaining({ rule: 'period-without-space', match: 'o.i' }),
+    ]));
+  });
+
   it('attributes candidates on unnumbered pages to their own facsimile', () => {
     const xml = workXml
       .replace('pages="10-12"', 'facsimile-pages="10-12"')
