@@ -1,3 +1,4 @@
+import { sourceWorkKey } from './work-cache.js';
 import {
   isFileModified,
   loadCachedJSON,
@@ -317,7 +318,7 @@ const build_mentions_data = (
           translation: {
             poem: translationPoem,
             work: collected.works.get(
-              `${translationPoem.poetId}/${translationPoem.workId}`
+              sourceWorkKey(translationPoem)
             ),
             poet: collected.poets.get(translationPoem.poetId),
           },
@@ -326,7 +327,7 @@ const build_mentions_data = (
           result.translated = {
             poem: translatedPoem,
             work: collected.works.get(
-              `${translatedPoem.poetId}/${translatedPoem.workId}`
+              sourceWorkKey(translatedPoem)
             ),
           };
         }
@@ -383,10 +384,10 @@ const build_mentions_json = (collected) => {
       throw `Unknown poet ${meta.poetId}`;
     }
     const poet = poetName(poetObj);
-    const work = collected.works.get(meta.poetId + '/' + meta.workId);
+    const work = collected.works.get(sourceWorkKey(meta));
     if (work == null) {
       throw `${poemId} references unknown work ${
-        meta.poetId + '/' + meta.workId
+        sourceWorkKey(meta)
       }`;
     }
     const workNameFormattet =

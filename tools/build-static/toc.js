@@ -28,9 +28,6 @@ import {
   getChildrenByTagName,
 } from './xml.js';
 import {
-  isAnthologyText,
-  publicationTextId,
-  resolveAuthorId,
   worksForPoet,
 } from './anthologies.js';
 
@@ -44,12 +41,7 @@ const build_section_toc = (section, workAuthorId = null) => {
   getChildren(section).forEach((part) => {
     const partName = tagName(part);
     if (partName === 'text') {
-      const sourceTextId = safeGetAttr(part, 'id');
-      const textAuthorId = resolveAuthorId(part, workAuthorId);
-      const textId =
-        isAnthologyText(textAuthorId, workAuthorId) ?
-          publicationTextId(sourceTextId)
-        : sourceTextId;
+      const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
       const title =

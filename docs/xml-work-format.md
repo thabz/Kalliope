@@ -335,6 +335,16 @@ Tekstdatoer beskrives nedenfor. De tre sidste samles ogsaa i `caches/collected.d
 - `<section>`: en gruppe tekster, eventuelt linkbar hvis den har `id`.
 - `<subwork ref="..."/>`: henviser til et andet vaerk hos samme digter.
 
+### Antologitekster og virtuelle indholdsfortegnelser
+
+En tekst i en antologi findes kun én gang, med XML'ens `text/@id`. Teksten
+hører til antologiens værk, mens dens effektive `author` identificerer digteren.
+Buildet opretter automatisk digterens virtuelle værk »Tekster i andre udgivelser«;
+dets indholdsfortegnelse refererer direkte til de samme tekstposter og URL'er.
+Forskellige historiske udgaver har deres egne tekstposter.
+Tekstens eksplicitte `aliases` angiver alternative ID'er, der viderestilles
+til den kanoniske tekst.
+
 ### Text
 
 En normal tekst ser saadan ud:

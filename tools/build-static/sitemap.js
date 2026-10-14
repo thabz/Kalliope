@@ -157,7 +157,7 @@ const build_sitemap_xml = (collected) => {
           ...localizedUrls(`/work/${poetId}/${workId}`, lastmod)
         );
         textsForWork(collected, poetId, workId).forEach(text => {
-          if (text.indexable !== false) {
+          if (text.indexable !== false && text.poetId === poetId) {
             poet_text_urls.push(
               ...localizedUrls(`/text/${text.id}`, lastmod)
             );

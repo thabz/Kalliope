@@ -1,3 +1,4 @@
+import { sourceWorkKey } from './work-cache.js';
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
@@ -284,9 +285,8 @@ gzip -dc texts.jsonl.gz | jq -c 'select(.full_text | contains("hav"))'
 The major URL version changes for incompatible schema changes. Additive fields
 may appear within v1. Records are sorted by ID and gzip output is deterministic
 for identical source data; \`built_at\` is explicit build metadata. Texts are
-the indexable canonical placements in Kalliope. Publication-only placements are
-available through their existing API representation but are excluded from the
-bulk text selection. Some metadata can be absent because the source XML does
+the indexable canonical texts in Kalliope. Anthology texts belong to their
+source publication; virtual author tables of contents do not create extra records. Some metadata can be absent because the source XML does
 not provide it.
 
 Kalliope's software is GPL-2.0. The corpus consists mainly of public-domain
@@ -348,7 +348,7 @@ const buildTextAuditFields = (textMeta, textData, source) => ({
 
 const buildTextRecord = (collected, textMeta, textData) => {
   const textPath = Paths.textPath(textMeta.id);
-  const workId = `${textMeta.poetId}/${textMeta.workId}`;
+  const workId = sourceWorkKey(textMeta);
   const work = collected.works.get(workId);
   const poet = collected.poets.get(textMeta.poetId);
   const source = textData.text?.source ?? {};
