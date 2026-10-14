@@ -1104,6 +1104,13 @@ til interne redaktionelle kommentarer.
 
 Inline XML bliver renderet client-side af `components/textcontent.js`.
 
+Layout- og typografitags skal have indhold. Tomme `<center>`, `<right>`,
+`<nonum>`, `<wrap>`, `<blockquote>` og tilsvarende formateringstags afvises af
+korpustesten `empty-layout-tags`. Whitespace, kommentarer, tomme indlejrede
+tags og usynlige `<pb/>`- eller `<br/>`-markører tæller ikke som indhold.
+Brug blanklinjer til afstand. Tags med synlige billeder eller ornamenter er
+ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er tilladt.
+
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
