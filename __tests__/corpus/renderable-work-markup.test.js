@@ -16,6 +16,8 @@ describe('renderable work corpus markup', () => {
 
     for (const { content, filename } of loadTrackedWorkFiles().filter(
       (work) => [
+        'fdirs/bech/1934.xml',
+        'fdirs/bech/1935.xml',
         'fdirs/blicherclausen/1900.xml',
         'fdirs/ingemann/1816a.xml',
         'fdirs/blicherclausen/1903.xml',
