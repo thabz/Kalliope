@@ -1038,6 +1038,9 @@ Styrte sig over de piger, som efter din kærlighed higer!
   <title>Carmina Burana XIX</title>
   <firstline>Imod lasten skal min røst fuld af harme gjalde</firstline>
   <source pages="176-179"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1146,6 +1149,9 @@ Ret som om en dynge møg perler fik at bære.
   <subtitle>(Haupt’s Zeitschrift für deutsches Alterthum V, 1848, s. 301 ff.).</subtitle>
   <firstline>Vejen til Rom for de fremmede tit er en smærternes vandring</firstline>
   <source pages="179-180"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1217,6 +1223,9 @@ Førend guldæbler svømmer i skaalen, det tørstende tømmer.
   <title>Carm. Bur. P. 23 (Nr. XX a)</title>
   <firstline>Roma, som aldrig mættes, ved arvede regler ej trættes</firstline>
   <source pages="182-183"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1523,6 +1532,9 @@ Stige fra hver præstemand og hans søde kone!"
   <subtitle>(Th. Wright: Poems of Walter Mapes, p. 180 ff.).</subtitle>
   <firstline>Gennem Englands egne for nyt paa rygtets vinger</firstline>
   <source pages="189-192"/>
+  <places>
+    <place ref="england" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1810,6 +1822,9 @@ For at skille brav fra skælm monne hid jeg komme. “
   </subtitle>
   <firstline>Medens jeg i sjælens dyb føler harmen syde</firstline>
   <source pages="198-203"/>
+  <places>
+    <place ref="pavia" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1973,6 +1988,9 @@ Derfor undgaar jeg med flid talen ud at spinde.
   <subtitle>(Abhandlungen der Königl. Akad. der Wiss. zu Berlin 1843).</subtitle>
   <firstline>Ej mine vers du vrage! Du bød, og jeg vendte tilbage</firstline>
   <source pages="203-204"/>
+  <places>
+    <place ref="salerno" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2313,6 +2331,9 @@ Men om end bort jeg dig viser, min mad du dog ligefuldt spiser.
   <subtitle>(Haupt’s Zeitschr. f. deutsches Alterthum V, 1845, s. 293 ff.).</subtitle>
   <firstline>Bort til Frankrig gaar min vej</firstline>
   <source pages="213-214"/>
+  <places>
+    <place ref="swabia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2382,6 +2403,9 @@ Saa mystikens perle ren jeg til sidst kan vinde!
   <subtitle>(Efter Waitz’ text i Haupt’s Zeitschr. VII, Leipzig 1849, s. 160 ff.).</subtitle>
   <firstline>Da de væne pigers skare fyldte smukt det hele rum</firstline>
   <source pages="215-222"/>
+  <places>
+    <place ref="remiremont" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
