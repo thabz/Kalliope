@@ -312,6 +312,10 @@ Attributter:
 
 - `id`: valgfri kilde-id. Uden `id` bliver kilden `default`.
 - `facsimile`: mappe/id for faksimile. `.pdf` fjernes automatisk, hvis det er angivet.
+- `facsimile-poet`: valgfri mappe for et eksisterende faksimile, fx `beyer`,
+  når værket er flyttet til en antologi. Uden attributten bruges værkets mappe.
+  Tekstkilder arver værdien fra værkkilden; den gælder også rettelsesark og
+  facsimilekontrollen.
 - `facsimile-pages-num`: antal sider i faksimilen. Paakraeves naar `facsimile` bruges.
 - `facsimile-pages-offset`: tal der laegges til trykte sidetal for at finde faksimilesider.
 - `href`: valgfri URL til en stabil digital udgave af teksten.

@@ -80,6 +80,17 @@ describe('facsimile checker unit logic', () => {
     ).toEqual([]);
   });
 
+  it('checks the preserved facsimile folder after moving an anthology', () => {
+    const references = findFacsimileReferences([{
+      filename: 'fdirs/antologierdk/1852-vintergroent.xml',
+      content: '<kalliopework><workhead><source facsimile="scan.pdf" facsimile-poet="beyer"/></workhead></kalliopework>',
+    }], 'https://example.org/facsimiles');
+    expect(references[0].urls).toEqual([
+      'https://example.org/facsimiles/beyer/scan/000.jpg',
+      'https://example.org/facsimiles/beyer/scan/t/000-w250.jpg',
+    ]);
+  });
+
   it('builds safe URLs for facsimile ids', () => {
     expect(
       facsimilePageUrl(
