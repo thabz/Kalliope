@@ -3,7 +3,23 @@
 <workhead>
   <title>det underste land</title>
   <year>1933</year>
-  <!-- TODO: titelblad -->
+  <source href="https://www.kb.dk/e-mat/dod/115308085793-color.pdf" facsimile="1933" facsimile-pages-num="77" facsimile-pages-offset="7">
+    <author id="munchp">Gustaf Munch-Petersen</author>
+    <title>det underste land</title>
+    <place>Kjøbenhavn</place>
+    <publisher>Nyt Nordisk Forlag, Arnold Busck</publisher>
+    <printer>Hans Jørgensens Bogtrykkeri</printer>
+    <year>1933</year>
+  </source>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-10-14T23:30:38+02:00"/>
+  </proofreadings>
+  <pictures>
+    <picture src="1933-p1.jpg" type="titlepage" primary="true"><transcription>gustaf munch-petersen / det underste land // Nyt Nordisk Forlag / Arnold Busck. Kjøbenhavn / 1933</transcription></picture>
+    <picture src="1933-p2.jpg" type="frontpage"/>
+  </pictures>
 </workhead>
 <workbody>
 
@@ -11,22 +27,24 @@
 <head>
   <title>tilegnelse</title>
   <firstline>paa vejen blev</firstline>
+  <source pages="7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-              <i>paa vejen blev</i>
-              <i>mit hjærte alt for tungt at slæbe</i>
-              <i>her lagde jeg denne del</i>
-              <i>ved vejkanten</i>
-<i>men ogsaa dette tilkommer dig</i> -
-              <i>her</i>
-              <i>stedet, hvor jeg hvilede sidst</i>
-<i>og maatte lægge dette</i> -
-<i>ogsaa det tilhører dig</i> -
-              <i>over dine øjne</i>
-              <i>sidder alle guds smil</i>
-              <i>roligt afventende</i>
-              <i>min sikre herliggørelse</i> -
+paa vejen blev
+mit hjærte alt for tungt at slæbe
+her lagde jeg denne del
+ved vejkanten
+men ogsaa dette tilkommer dig -
+her
+stedet, hvor jeg hvilede sidst
+og maatte lægge dette -
+ogsaa det tilhører dig -
+over dine øjne
+sidder alle guds smil
+roligt afventende
+min sikre herliggørelse -
 </poetry>
 </body>
 </text>
@@ -35,6 +53,8 @@
 <head>
   <title>med lukkede øjne</title>
   <firstline>det er som om</firstline>
+  <source pages="9"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -44,7 +64,7 @@ ingen sorg kvæle mig
 helt -
 det er som om
 kærlighed kommer til mig
-over alle have,
+over alle have
 fordi en blød streng altid svinger
 i mig -
 </poetry>
@@ -55,6 +75,8 @@ i mig -
 <head>
   <title>og gud talte</title>
   <firstline>det var ikke gud</firstline>
+  <source pages="10-11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -81,11 +103,11 @@ vogtere af jeres smil -?
 og hans øjne flagrede,
 og han talte -:
 
-o, at se hver enkelt drage ud
+<pb n="11" facs="017.jpg"/>o, at se hver enkelt drage ud
 med sine drømme i oprakte hænder -,
 syngende mod solen og stormen -:
 elskede, her er alle mine drømme -,
-tag-!
+tag -!
 ve - ve over angsten -
 ve - ve over angsten -
 ikke lysten i jeres vagtsomme øjne
@@ -96,7 +118,7 @@ fyld jeres hænder med følsomhed -,
 og gaa til jeres elskede -,
 og sig -:
 her er alle mine drømme -,
-tag-!
+tag -!
 </poetry>
 </body>
 </text>
@@ -105,16 +127,18 @@ tag-!
 <head>
   <title>regnen</title>
   <firstline>regnen kom</firstline>
+  <source pages="12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 regnen kom -,
 og mændene satte sig paa hug
-og holdt deres tøj stumper op under maven
+og holdt deres tøjstumper op under maven
 ryggene blinkede som oljepytter i natten
 og rokkede frem og tilbage,
 for at faa tiden til at gaa -,
-deres vaade kinder tyggede solsikkefrø.
+deres vaade kinder tyggede solsikkefrø,
 mens vandet fossede
 og fyldte natten -
 
@@ -130,10 +154,13 @@ under en ny sol -
 <head>
   <title>ellen</title>
   <firstline>ellen ikke var det meningen</firstline>
+  <source pages="13"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 ellen -, ikke var det meningen -
+
 ellen, i dag kommer jeg
 og henter dig -
 læg noget over de dybe saar
@@ -162,6 +189,8 @@ at du aldrig finder tilbage -
 <head>
   <title>min far</title>
   <firstline>han vaklede</firstline>
+  <source pages="14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -196,6 +225,8 @@ dine hænder -
 <head>
   <title>aften</title>
   <firstline>jeg klagede</firstline>
+  <source pages="15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -218,6 +249,8 @@ mod et stykke træ -
 <head>
   <title>tal ikke til mig</title>
   <firstline>saa stille</firstline>
+  <source pages="16-17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -242,7 +275,7 @@ jeg har allerede gaaet meget længe -
 maaske har jeg meget længe
 endnu at gaa -
 
-og helt alene maa jeg gaa
+<pb n="17" facs="023.jpg"/>og helt alene maa jeg gaa
 og saa forfærdeligt forsigtigt
 maa jeg gaa,
 hvis jeg skal finde noget -
@@ -270,6 +303,8 @@ finde mit hjem -
 <head>
   <title>latter</title>
   <firstline>i fortvivlelse</firstline>
+  <source pages="18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -301,8 +336,10 @@ ha - ha -
 
 <text id="munchp20170923171">
 <head>
-  <title>vent -!</title>
+  <title>vent</title>
   <firstline>hun venter</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -325,6 +362,8 @@ den første draabe -
 <head>
   <title>bekendelse</title>
   <firstline>præstinde</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -350,7 +389,7 @@ skønheden selv
 i verden -
 præstinde -!
 
-een gang
+<pb n="21" facs="027.jpg"/>een gang
 i en sanseløs nat
 elskede jeg dig
 præstinde -
@@ -379,6 +418,8 @@ præstinde -
 <head>
   <title>drengens klage</title>
   <firstline>hvor kan jeg gemme mig</firstline>
+  <source pages="22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -415,6 +456,8 @@ om natten -
 <head>
   <title>kærlighed</title>
   <firstline>jeg kom til den by</firstline>
+  <source pages="23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -422,9 +465,9 @@ jeg kom til den by,
 hvor alle mennesker lever -
 og jeg saa med stor smerte,
 at alle var sekskantede,
-tolvkantede eller ottekantede
+tolvkantede eller ottekantede -
 de, som jeg ikke kendte,
-lo og sagde, at jeg var et æg
+lo og sagde, at jeg var et æg -
 og de, som elskede mig,
 blev graa og klagede,
 fordi eet enkelt æg
@@ -435,7 +478,7 @@ kom og fortalte mig,
 at jeg var født af en langbenet fugl,
 som havde mistet sin stemme
 ved at se langt bort -
-og hun forstod, at hun maatte blive længe hos mig
+og hun forstod, at hun maatte blive længe hos mig -
 en gang hvert halve aar
 knækkede skallen
 og noget kom ud -,
@@ -454,6 +497,8 @@ skulde koste saa mange mennesker -
 <head>
   <title>ikke andet</title>
   <firstline>det siger jeg bare</firstline>
+  <source pages="24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -486,6 +531,8 @@ kvæler jeg dig -
 <head>
   <title>min baby</title>
   <firstline>naar du ikke</firstline>
+  <source pages="25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -518,6 +565,8 @@ vil du aldrig faa mig at se -
 <head>
   <title>slottet</title>
   <firstline>du min lille pige</firstline>
+  <source pages="26"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -550,6 +599,8 @@ o hvem har set slottet -?
 <head>
   <title>rival</title>
   <firstline>svag og god er du</firstline>
+  <source pages="27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -590,6 +641,8 @@ dø -
 <head>
   <title>sump</title>
   <firstline>jeg har en sjæl</firstline>
+  <source pages="28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -617,6 +670,8 @@ over uskyldige -
 <head>
   <title>martyrer</title>
   <firstline>i, som kuede jeres munde</firstline>
+  <source pages="29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -650,6 +705,8 @@ og gi alt -
 <head>
   <title>en god kvinde</title>
   <firstline>din bitterhed</firstline>
+  <source pages="30"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -677,6 +734,8 @@ du har dig selv -
 <head>
   <title>ivigtut</title>
   <firstline>de hundrede mand</firstline>
+  <source pages="31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -717,6 +776,8 @@ gi fa'en -
 <head>
   <title>pigen else</title>
   <firstline>engang blev du skræmt</firstline>
+  <source pages="32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -724,7 +785,9 @@ engang blev du skræmt -
 nu sidder du med friheden -
 dit hjærte vejer intet -,
 o du er fri -
-- - -
+
+<nonum>- - -</nonum>
+
 altid holder du dit røgfarvede smil
 op foran øjnene,
 før du ser paa de andre,
@@ -743,6 +806,8 @@ af at smile -
 <head>
   <title>du</title>
   <firstline>døende laa den lille</firstline>
+  <source pages="33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -781,6 +846,8 @@ og slikkede den lille i nakken -
 <head>
   <title>danserinden elisabet</title>
   <firstline>elisabets sjæl</firstline>
+  <source pages="34-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -808,7 +875,7 @@ omkring deres smaa hjærter
 og blive store mænd,
 som hendes far -
 
-men da hun ikke
+<pb n="35" facs="041.jpg"/>men da hun ikke
 kunde elske dem,
 gik de efterhaanden bort,
 (og skønne, fordi de havde
@@ -835,7 +902,7 @@ havde haft en stor sjæl -
 og saa kunde elisabet ikke mere
 elske den vidunderlige digter -
 
-og han gik -,
+<pb n="36" facs="042.jpg"/>og han gik -,
 vild af sorg
 og tog elisabets sjæl med sig,
 da han gik -,
@@ -861,6 +928,8 @@ og elske uden sjæl -
 <head>
   <title>tigger</title>
   <firstline>hvad skriger du for</firstline>
+  <source pages="37"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -882,6 +951,8 @@ dit røvhul -
 <head>
   <title>nomader</title>
   <firstline>som nyfødte børns fødder</firstline>
+  <source pages="38-39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -910,8 +981,7 @@ eller
 rædselsgrebne børn
 med ansigter af haardtbrændt ler -,
 og hænderne knugende om smaa plettede sten -
-
-eller i finder
+<pb n="39" facs="045.jpg"/>eller i finder
 den fede gud,
 hvis taarer hamrer syndflodsglæde
 mod sumpplanters haarde blade -,
@@ -937,6 +1007,8 @@ altid finder i noget -
 <head>
   <title>til jer</title>
   <firstline>det er til jer</firstline>
+  <source pages="40"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -959,7 +1031,9 @@ og ikke kan jeg stille larmen -
 
 men det er
 til jer, jeg taler -!
-- - -
+
+<nonum>- - -</nonum>
+
 en fjern aften,
 naar i sidder roligt
 med fælles sejr imellem jer -,
@@ -977,6 +1051,8 @@ og kræver ny kamp -
 <head>
   <title>blod</title>
   <firstline>en søndag morgen</firstline>
+  <source pages="41-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -992,7 +1068,9 @@ mor, den døde -,
 drømmen -
 det var mig, du fødte -,
 o du gav drømmen dit blod -
-- - -
+
+<nonum>- - -</nonum>
+
 mor -!
 blod -!
 mit hjerte er ikke sten -
@@ -1005,9 +1083,9 @@ blod er ikke dejlig elskov -
 blod - blod
 er kobberlænker -
 
-- - -
+<nonum>- - -</nonum>
 
-kære mor -, ikke er jeg drømmen -
+<pb n="42" facs="048.jpg"/>kære mor -, ikke er jeg drømmen -
 mor - hvorfor snor dine evigt rastløse fingre
 taalsomme lokker -
 for mig -?
@@ -1020,7 +1098,9 @@ hvorfor græder du - mor -
 for mig -?
 kære mor -,
 saa du ikke, at drømmen døde -?
-- - -
+
+<nonum>- - -</nonum>
+
 min mor -!
 elskede - rejs dig -
 se vejen -!
@@ -1033,9 +1113,9 @@ se vejen -!
 se den vej, som jeg gaar, som du fødte
 søndagen, da dit skød var livets syngende mund -
 
-- - - |
+<nonum>- - -</nonum>
 
-mor - hvorfor ønsker du mig
+<pb n="43" facs="049.jpg"/>mor - hvorfor ønsker du mig
 søvnen
 mætheden
 usaarligheden -?
@@ -1052,9 +1132,13 @@ skal vi mødes
 og som en dobbelt draabe flyde ud i søen,
 som er livets øje -!
 kære mor -
-- - -
+
+<nonum>- - -</nonum>
+
 o, mor -
-at du gav drømmen dit blod -o, stakkels, elskede mor -store mor -
+at du gav drømmen dit blod -
+o, stakkels, elskede mor -
+store mor -
 </poetry>
 </body>
 </text>
@@ -1063,12 +1147,14 @@ at du gav drømmen dit blod -o, stakkels, elskede mor -store mor -
 <head>
   <title>for sent</title>
   <firstline>gennem denne nat</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 gennem denne nat
 hører jeg
-dronningens øjne kalde  -
+dronningens øjne kalde -
 
 men dronningen sover
 blandt palmevinde -
@@ -1080,9 +1166,9 @@ brug for mig -
 det er mig, der behøver
 hende -
 
-- - - |
+<nonum>- - -</nonum>
 
-let at finde sydens maane -
+<pb n="45" facs="051.jpg"/>let at finde sydens maane -
 men jeg har ødelagt min elskov -
 den er ikke mere til at stole paa -
 men jeg vil sende min maage
@@ -1095,7 +1181,7 @@ gennem denne nat
 hører jeg
 dronningens øjne kalde -
 
-- - -
+<nonum>- - -</nonum>
 
 dronningen kalder jo ikke -
 det er mig, der behøver
@@ -1109,6 +1195,8 @@ hende -
   <title>paa fjældet</title>
   <subtitle>(fragment)</subtitle>
   <firstline>bare for at binde mig</firstline>
+  <source pages="46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1132,6 +1220,8 @@ dolken min -?
 <head>
   <title>melodi</title>
   <firstline>hør</firstline>
+  <source pages="47"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1170,6 +1260,8 @@ flygter -
 <head>
   <title>dans</title>
   <firstline>lad mine ører i fred</firstline>
+  <source pages="48-49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1194,7 +1286,7 @@ alle slags elskov
 i en herlig stue
 med sort dør -
 
-nu
+<pb n="49" facs="055.jpg"/>nu
 er der tænder i navlestrengen -
 gaa væk
 gaa væk
@@ -1225,11 +1317,13 @@ ler -
   <notes>
     <note>Fannie Hurst (1889-1968), amerikansk forfatterinde.</note>
   </notes>
+  <source pages="50-51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 o stor lykke
-stor lykke har de faaet,
+stor lykke har de faaet.
 som er født i det underste land -
 overalt kan i se dem
 vandrende
@@ -1238,7 +1332,9 @@ grædende -
 overalt gaar de,
 men i deres hænder bærer de smaa ting
 fra det underste land -
-- - -
+
+<nonum>- - -</nonum>
+
 o større end alle lande
 herligere
 er det underste -
@@ -1249,9 +1345,9 @@ udad synker det tunge
 levende blod
 ind i det underste land -
 
-- - - |
+<nonum>- - -</nonum>
 
-smalle forsigtige fødder
+<pb n="51" facs="057.jpg"/>smalle forsigtige fødder
 og tynde lemmer
 og ren er luften
 over de aabne opadstigende veje -
@@ -1269,10 +1365,10 @@ børn -
 hvor glæden og fortvivlelsen og elskoven
 tunge og fuldmodne
 straaler i alle farver mod jorden -
-o	jorden er hemmelighedsfuld som en pande
+o jorden er hemmelighedsfuld som en pande
 i det underste land -
 
-- - -
+<nonum>- - -</nonum>
 
 overalt kan i se dem
 vandrende
@@ -1289,6 +1385,8 @@ fra det underste land -
 <head>
   <title>sang</title>
   <firstline>gudebarn, som jeg elsker</firstline>
+  <source pages="52-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1311,7 +1409,7 @@ altid være for langt borte
 til at kunne høres
 af dig o gudebarn, som jeg elsker -?
 
-aah
+<pb n="53" facs="059.jpg"/>aah
 flodgraad
 sanggraad -
 hulkende hulkende
@@ -1351,6 +1449,8 @@ gudebørn -
 <head>
   <title>sommernat</title>
   <firstline>en hvid ugle</firstline>
+  <source pages="57"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1372,6 +1472,8 @@ om fortvivlet uret -
 <head>
   <title>sol</title>
   <firstline>i middagssolen</firstline>
+  <source pages="58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1385,7 +1487,9 @@ tynde stemmer synger
 bøjet over sicilianske broderier -
 langs hvide og gule traade
 drypper ordene -
-- - -
+
+<nonum>- - -</nonum>
+
 sekstenaarige - syttenaarige -
 tremmer mellem dem og middagssolen
 og morgensolen og skumringen -
@@ -1404,6 +1508,8 @@ i middagssolen -
 <head>
   <title>salvatore bambara</title>
   <firstline>alle sang</firstline>
+  <source pages="59"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1429,6 +1535,8 @@ o herligt -!
 <head>
   <title>brødre</title>
   <firstline>de vogtede geder</firstline>
+  <source pages="60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1444,7 +1552,7 @@ brunkindet, taarestribet
 kom den lille
 og lagde sukkende fem gule blomster
 ved mine fødder
-paa capo san andreae
+paa capo san andreae -
 </poetry>
 </body>
 </text>
@@ -1453,6 +1561,8 @@ paa capo san andreae
 <head>
   <title>santo cacopardi</title>
   <firstline>du venter paa natten</firstline>
+  <source pages="61"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1489,6 +1599,8 @@ uden ro -
 <head>
   <title>nino</title>
   <firstline>han blev fundet under citrontræerne</firstline>
+  <source pages="62-63"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1512,7 +1624,7 @@ pengene i bordet -,
 og kvinderne sidder tavse -
 og nino bukker -
 
-og en aften vendte sig amerikas millionskøge
+<pb n="63" facs="069.jpg"/>og en aften vendte sig amerikas millionskøge
 mod sin nye millionær
 og skreg som en kælling -:
 »gaa -!«
