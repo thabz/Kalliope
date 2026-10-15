@@ -1521,16 +1521,16 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
-  await b('build_corpus_dataset', buildCorpusDataset, collected);
-  collected.corpusTextRecords.clear();
-  if (buildSqlite) {
-    await b('update_sqlite_index', updateSqliteIndex, collected);
-  }
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
   } else {
     await b('build_image_thumbnails', build_image_thumbnails);
+  }
+  await b('build_corpus_dataset', buildCorpusDataset, collected);
+  collected.corpusTextRecords.clear();
+  if (buildSqlite) {
+    await b('update_sqlite_index', updateSqliteIndex, collected);
   }
   if (skipElasticsearch) {
     console.log('Skipping Elasticsearch update.');
