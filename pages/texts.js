@@ -93,6 +93,7 @@ const TextsPage = (props) => {
       return {
         id: lines.id,
         url: url,
+        searchText: line,
         html: (
           <span>
             {line}

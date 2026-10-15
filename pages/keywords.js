@@ -48,6 +48,7 @@ const Keywords = (props) => {
       return {
         id: keyword.id,
         url,
+        searchText: keyword.title,
         html: keyword.title,
       };
     });
