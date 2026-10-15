@@ -4,8 +4,23 @@
   <title>Folkeviser</title>
   <quality>korrektur1</quality>
   <keywords>folkevise</keywords>
-  <source id="g1882" facsimile="115308004385" facsimile-pages-num="524" facsimile-pages-offset="16"><i>Danmarks Folkeviser i Udvalg</i>, Svend Grundtvig (red.), P. G. Philipsens Forlag, Kbh., 1882.</source>
-  <source id="o1918" facsimile="11530800444D_color" facsimile-pages-num="286" facsimile-pages-offset="10"><i>Danske Folkeviser i Udvalg</i>, Axel Olrik, Ida Falbe-Hansen (red.), 1. samling, 4. udgave, Gyldendalske Boghandel, Kbh., 1918.</source>
+  <source id="g1882" facsimile="115308004385" facsimile-pages-num="524" facsimile-pages-offset="16">
+    <title>Danmarks Folkeviser i Udvalg</title>
+    <editor type="editor">Svend Grundtvig</editor>
+    <place>Kbh.</place>
+    <publisher>P. G. Philipsens Forlag</publisher>
+    <year>1882</year>
+  </source>
+  <source id="o1918" facsimile="11530800444D_color" facsimile-pages-num="286" facsimile-pages-offset="10">
+    <title>Danske Folkeviser i Udvalg</title>
+    <editor type="editor">Axel Olrik</editor>
+    <editor type="editor">Ida Falbe-Hansen</editor>
+    <edition>4. udgave</edition>
+    <volume>1. samling</volume>
+    <place>Kbh.</place>
+    <publisher>Gyldendalske Boghandel</publisher>
+    <year>1918</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -16844,7 +16859,14 @@ Med Raade, Konning Valdemar han lover dem baade.
 <head>
   <title>Folkevisen om Niding</title>
   <firstline>Nyding kom fra tingen hiem</firstline>
-  <source pages="337-339">Hieronymus Justesen Ranch's <i>Danske Skuespil og Fuglevise</i>, S. Birket Smith (red.), Samfundet til den danske Literaturs Fremme, Kbh., 1876-77.</source>
+  <source pages="337-339">
+    <author>Hieronymus Justesen Ranch</author>
+    <title>Danske Skuespil og Fuglevise</title>
+    <editor type="editor">S. Birket Smith</editor>
+    <place>Kbh.</place>
+    <publisher>Samfundet til den danske Literaturs Fremme</publisher>
+    <year>1876-77</year>
+  </source>
   <source>Håndskriftet nr. 815B, 4<sup>o</sup>, NkS, blad 9-10.</source>
   <keywords>folkevise</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>

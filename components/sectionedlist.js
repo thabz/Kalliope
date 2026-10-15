@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { listenForListNavigation } from './sectionedlist-navigation.js';
 
 export const sectionColumnSplitIndex = (sections) => {
   if (sections.length < 2) return sections.length;
@@ -25,41 +26,37 @@ export const sectionColumnSplitIndex = (sections) => {
 
 const SectionedList = ({ sections, keyboardNavigation = false }) => {
   const headings = useRef(new Map());
+  const itemElements = useRef(new Map());
 
   useEffect(() => {
     if (keyboardNavigation !== true) return;
 
-    const onKeyDown = (event) => {
-      if (
-        event.defaultPrevented === true ||
-        event.isComposing === true ||
-        event.altKey === true ||
-        event.ctrlKey === true ||
-        event.metaKey === true ||
-        event.key.length !== 1 ||
-        event.target?.isContentEditable === true ||
-        ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target?.tagName)
-      ) {
-        return;
-      }
-
-      const heading = headings.current.get(event.key.toUpperCase());
-      if (heading != null) {
-        heading.scrollIntoView();
-        event.preventDefault();
-      }
-    };
-
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [keyboardNavigation]);
+    return listenForListNavigation(
+      window,
+      sections,
+      headings.current,
+      itemElements.current
+    );
+  }, [keyboardNavigation, sections]);
 
   let renderedGroups = sections.map((group, i) => {
     const { title, items, headingId } = group;
     const list = items.map((item) => {
       const content =
         item.url != null ? <Link href={item.url}>{item.html}</Link> : item.html;
-      return <div key={item.id}>{content}</div>;
+      return (
+        <div
+          key={item.id}
+          ref={(element) => {
+            if (element == null) {
+              itemElements.current.delete(item);
+            } else {
+              itemElements.current.set(item, element);
+            }
+          }}>
+          {content}
+        </div>
+      );
     });
     return (
       <div className="list-section" key={i + title}>
