@@ -1612,6 +1612,11 @@ ned imod de blomstrende Linde!
   <title>Møn</title>
   <firstline>Aldrig er Østersøen i Ro</firstline>
   <source pages="75-77"/>
+  <places>
+    <place ref="moen" relation="subject" primary="true"/>
+    <place ref="mons-klint" relation="subject"/>
+    <place ref="baltic-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1691,6 +1696,9 @@ skal Danmark ejes af Danske!
   </subtitle>
   <firstline>Det skærer mig i mit Hjærte, det bider som et Sværd</firstline>
   <source pages="78-89"/>
+  <places>
+    <place ref="thy" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2460,6 +2468,9 @@ først ved Alverdens
   <title>Formiddag i Schwarzwald</title>
   <firstline>Granskoven bag mig</firstline>
   <source pages="118-119"/>
+  <places>
+    <place ref="black-forest" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2771,6 +2782,9 @@ sanker han sig Sæd for andre Somre?
   <subtitle>Rekonvalescent-Stemning</subtitle>
   <firstline>Det gyldne Gry over Bjærgets Tind</firstline>
   <source pages="131-133"/>
+  <places>
+    <place ref="black-forest" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

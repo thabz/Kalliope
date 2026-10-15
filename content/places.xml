@@ -52,6 +52,13 @@
     <alias>Kongens Palais</alias>
     <parent ref="copenhagen"/>
   </place>
+  <place id="america">
+    <name>Amerika</name>
+    <canonical-name>Americas</canonical-name>
+    <wikidata>Q828</wikidata>
+    <type>continental region</type>
+    <alias>America</alias>
+  </place>
   <place id="apennines">
     <name>Apenninerne</name>
     <canonical-name>Apennines</canonical-name>
@@ -59,6 +66,13 @@
     <type>mountain range</type>
     <alias>Appennini</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="arabia">
+    <name>Arabien</name>
+    <canonical-name>Arabian Peninsula</canonical-name>
+    <wikidata>Q31945</wikidata>
+    <type>peninsula</type>
+    <parent ref="asia"/>
   </place>
   <place id="arco-felice-arch">
     <name>Arco Felice</name>
@@ -84,6 +98,12 @@
     <alias>Arquà</alias>
     <parent ref="italy"/>
   </place>
+  <place id="asia">
+    <name>Asien</name>
+    <canonical-name>Asia</canonical-name>
+    <wikidata>Q48</wikidata>
+    <type>continent</type>
+  </place>
   <place id="augustenborg-palace">
     <name>Augustenborg Slot</name>
     <canonical-name>Augustenborg Palace</canonical-name>
@@ -91,6 +111,15 @@
     <type>palace</type>
     <alias>Augustenborg</alias>
     <parent ref="als"/>
+  </place>
+  <place id="austria">
+    <name>Østrig</name>
+    <canonical-name>Austria</canonical-name>
+    <wikidata>Q40</wikidata>
+    <type>country</type>
+    <alias>Østerrig</alias>
+    <alias>Østerrige</alias>
+    <parent ref="europe"/>
   </place>
   <place id="aversa">
     <name>Aversa</name>
@@ -117,6 +146,8 @@
     <type>sea</type>
     <alias>Ostsee</alias>
     <alias>Baltic Sea</alias>
+    <alias>Østersø</alias>
+    <alias>Østerhav</alias>
   </place>
   <place id="basel">
     <name>Basel</name>
@@ -147,11 +178,34 @@
     <type>mountain ridge</type>
     <parent ref="jotunheimen"/>
   </place>
+  <place id="bethlehem">
+    <name>Betlehem</name>
+    <canonical-name>Bethlehem</canonical-name>
+    <wikidata>Q5776</wikidata>
+    <type>city</type>
+  </place>
   <place id="biarritz">
     <name>Biarritz</name>
     <wikidata>Q132790</wikidata>
     <type>city</type>
     <alias>Biarrits</alias>
+  </place>
+  <place id="bjornkjaer-castle">
+    <name>Bjørnkær Voldsted</name>
+    <canonical-name>Bjørnkær</canonical-name>
+    <wikidata>Q12303749</wikidata>
+    <type>castle ruin</type>
+    <alias>Bjørnkjær</alias>
+    <alias>Bjørnkjær Slot</alias>
+    <parent ref="jutland"/>
+    <note>Voldstedet ved Hou nær Gersdorffslund i Jylland.</note>
+  </place>
+  <place id="black-forest">
+    <name>Schwarzwald</name>
+    <canonical-name>Black Forest</canonical-name>
+    <wikidata>Q4204</wikidata>
+    <type>mountain range</type>
+    <parent ref="germany"/>
   </place>
   <place id="bologna">
     <name>Bologna</name>
@@ -210,6 +264,12 @@
     <type>city</type>
     <alias>Cadiz</alias>
     <parent ref="spain"/>
+  </place>
+  <place id="canaan">
+    <name>Kanaan</name>
+    <canonical-name>Canaan</canonical-name>
+    <wikidata>Q163329</wikidata>
+    <type>historical region</type>
   </place>
   <place id="capri">
     <name>Capri</name>
@@ -312,6 +372,11 @@
     <type>city</type>
     <alias>Kiøbenhavn</alias>
     <alias>Kjöbenhavn</alias>
+    <alias>Kjøbenhavn</alias>
+    <alias>Kiöbenhavn</alias>
+    <alias>Kjøbenhaun</alias>
+    <alias>Kjöbenhaun</alias>
+    <alias>Axelstad</alias>
     <parent ref="denmark"/>
   </place>
   <place id="cordoba">
@@ -329,16 +394,38 @@
     <alias>Cumæ</alias>
     <parent ref="italy"/>
   </place>
+  <place id="dannevirke">
+    <name>Dannevirke</name>
+    <canonical-name>Danevirke</canonical-name>
+    <wikidata>Q689454</wikidata>
+    <type>fortification</type>
+    <alias>Danewerk</alias>
+    <parent ref="duchy-schleswig"/>
+  </place>
   <place id="darmstadt">
     <name>Darmstadt</name>
     <wikidata>Q2973</wikidata>
     <type>city</type>
+  </place>
+  <place id="delphi">
+    <name>Delfi</name>
+    <canonical-name>Delphi</canonical-name>
+    <wikidata>Q75459</wikidata>
+    <type>ancient town</type>
+    <alias>Delphis</alias>
+    <parent ref="greece"/>
   </place>
   <place id="denmark">
     <name>Danmark</name>
     <canonical-name>Denmark</canonical-name>
     <wikidata>Q35</wikidata>
     <type>country</type>
+    <alias>Dannemark</alias>
+    <alias>Daneland</alias>
+    <alias>Danrig</alias>
+    <alias>Danriget</alias>
+    <alias>Danevang</alias>
+    <alias>Danevangen</alias>
   </place>
   <place id="djurgarden">
     <name>Djurgården</name>
@@ -360,12 +447,29 @@
     <alias>Schleswig</alias>
     <note>Historisk sted-entitet passende til Oehlenschlägers »I Slesvig«.</note>
   </place>
+  <place id="egypt">
+    <name>Egypten</name>
+    <canonical-name>Egypt</canonical-name>
+    <wikidata>Q79</wikidata>
+    <type>country</type>
+    <alias>Ægypten</alias>
+    <alias>Ægypt</alias>
+    <parent ref="africa"/>
+  </place>
   <place id="einsiedeln">
     <name>Einsiedeln</name>
     <wikidata>Q68950</wikidata>
     <type>municipality</type>
     <alias>Maria Einsideln</alias>
     <alias>Einsideln</alias>
+  </place>
+  <place id="england">
+    <name>England</name>
+    <wikidata>Q21</wikidata>
+    <type>country</type>
+    <alias>Engelland</alias>
+    <alias>Engeland</alias>
+    <parent ref="great-britain"/>
   </place>
   <place id="euganean-hills">
     <name>De euganeiske Bjerge</name>
@@ -375,6 +479,13 @@
     <alias>Colli Euganei</alias>
     <parent ref="italy"/>
   </place>
+  <place id="europe">
+    <name>Europa</name>
+    <canonical-name>Europe</canonical-name>
+    <wikidata>Q46</wikidata>
+    <type>continent</type>
+    <alias>Evropa</alias>
+  </place>
   <place id="faarevejle-langeland">
     <name>Fårevejle</name>
     <wikidata>Q12313265</wikidata>
@@ -382,6 +493,12 @@
     <alias>Faareveile</alias>
     <parent ref="langeland"/>
     <note>Fårevejle på Langeland.</note>
+  </place>
+  <place id="farum">
+    <name>Farum</name>
+    <wikidata>Q3554742</wikidata>
+    <type>town</type>
+    <parent ref="zealand"/>
   </place>
   <place id="florence">
     <name>Firenze</name>
@@ -421,6 +538,7 @@
     <canonical-name>France</canonical-name>
     <wikidata>Q142</wikidata>
     <type>country</type>
+    <alias>Frankerland</alias>
   </place>
   <place id="frankfurt-am-main">
     <name>Frankfurt am Main</name>
@@ -462,6 +580,13 @@
     <alias>Frederiksborg</alias>
     <parent ref="denmark"/>
   </place>
+  <place id="frederiksdal">
+    <name>Frederiksdal</name>
+    <wikidata>Q5499331</wikidata>
+    <type>locality</type>
+    <parent ref="zealand"/>
+    <note>Lokaliteten ved Furesøen nordvest for København.</note>
+  </place>
   <place id="funen">
     <name>Fyn</name>
     <canonical-name>Funen</canonical-name>
@@ -497,6 +622,13 @@
     <type>country</type>
     <alias>Deutschland</alias>
   </place>
+  <place id="gethsemane">
+    <name>Getsemane</name>
+    <canonical-name>Gethsemane</canonical-name>
+    <wikidata>Q205333</wikidata>
+    <type>garden</type>
+    <parent ref="mount-of-olives"/>
+  </place>
   <place id="gex">
     <name>Gex</name>
     <wikidata>Q202451</wikidata>
@@ -526,6 +658,14 @@
     <name>Goldau</name>
     <wikidata>Q474619</wikidata>
     <type>village</type>
+  </place>
+  <place id="golgotha">
+    <name>Golgata</name>
+    <canonical-name>Calvary</canonical-name>
+    <wikidata>Q170516</wikidata>
+    <type>historical site</type>
+    <alias>Golgatha</alias>
+    <parent ref="jerusalem"/>
   </place>
   <place id="goose-tower">
     <name>Gåsetårnet</name>
@@ -582,6 +722,29 @@
     <alias>Beltet</alias>
     <alias>Bæltet</alias>
   </place>
+  <place id="great-britain">
+    <name>Storbritannien</name>
+    <canonical-name>Great Britain</canonical-name>
+    <wikidata>Q23666</wikidata>
+    <type>island</type>
+    <alias>Britannien</alias>
+    <alias>Britania</alias>
+    <alias>Britaniam</alias>
+    <alias>Britannia</alias>
+    <alias>Brittannien</alias>
+    <alias>Bretland</alias>
+    <parent ref="europe"/>
+  </place>
+  <place id="greece">
+    <name>Grækenland</name>
+    <canonical-name>Greece</canonical-name>
+    <wikidata>Q41</wikidata>
+    <type>country</type>
+    <alias>Græckerland</alias>
+    <alias>Grækeland</alias>
+    <alias>Grikland</alias>
+    <parent ref="europe"/>
+  </place>
   <place id="greenland">
     <name>Grønland</name>
     <canonical-name>Greenland</canonical-name>
@@ -608,6 +771,14 @@
     <name>Grindelwald</name>
     <wikidata>Q64004</wikidata>
     <type>municipality</type>
+  </place>
+  <place id="gudbrandsdalen">
+    <name>Gudbrandsdalen</name>
+    <wikidata>Q1292655</wikidata>
+    <type>valley</type>
+    <alias>Guldbrandsdal</alias>
+    <alias>Gudbrandsdal</alias>
+    <parent ref="norway"/>
   </place>
   <place id="gudenaa">
     <name>Gudenå</name>
@@ -660,6 +831,12 @@
     <canonical-name>Hanover</canonical-name>
     <wikidata>Q1715</wikidata>
     <type>city</type>
+  </place>
+  <place id="haran">
+    <name>Harran</name>
+    <wikidata>Q199547</wikidata>
+    <type>ancient city</type>
+    <alias>Charan</alias>
   </place>
   <place id="harburg-hamburg">
     <name>Harburg</name>
@@ -714,6 +891,31 @@
     <type>town</type>
     <alias>Hougsund</alias>
   </place>
+  <place id="holstein">
+    <name>Holsten</name>
+    <canonical-name>Holstein</canonical-name>
+    <wikidata>Q111224</wikidata>
+    <type>historical region</type>
+    <alias>Holsteen</alias>
+    <parent ref="germany"/>
+  </place>
+  <place id="iceland">
+    <name>Island</name>
+    <canonical-name>Iceland</canonical-name>
+    <wikidata>Q189</wikidata>
+    <type>country</type>
+    <alias>Iisland</alias>
+    <alias>Iſland</alias>
+    <parent ref="europe"/>
+  </place>
+  <place id="india">
+    <name>Indien</name>
+    <canonical-name>India</canonical-name>
+    <wikidata>Q668</wikidata>
+    <type>country</type>
+    <alias>Indieland</alias>
+    <parent ref="asia"/>
+  </place>
   <place id="ingelheim-am-rhein">
     <name>Ingelheim am Rhein</name>
     <wikidata>Q159548</wikidata>
@@ -733,6 +935,7 @@
     <type>fjord</type>
     <alias>Issefiorden</alias>
     <alias>Isefiorden</alias>
+    <alias>Isefiord</alias>
   </place>
   <place id="italy">
     <name>Italien</name>
@@ -746,6 +949,13 @@
     <wikidata>Q128092</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <place id="jerusalem">
+    <name>Jerusalem</name>
+    <wikidata>Q1218</wikidata>
+    <type>city</type>
+    <alias>Hjerusalem</alias>
+    <alias>Jorsal</alias>
   </place>
   <place id="jotunheimen">
     <name>Jotunheimen</name>
@@ -776,6 +986,12 @@
     <alias>Kalø Slotsruin</alias>
     <parent ref="jutland"/>
   </place>
+  <place id="karise">
+    <name>Karise</name>
+    <wikidata>Q848261</wikidata>
+    <type>town</type>
+    <parent ref="zealand"/>
+  </place>
   <place id="karlsruhe">
     <name>Karlsruhe</name>
     <wikidata>Q1040</wikidata>
@@ -786,6 +1002,7 @@
     <name>Kattegat</name>
     <wikidata>Q131716</wikidata>
     <type>sea area</type>
+    <alias>Kalegat</alias>
   </place>
   <place id="kiel">
     <name>Kiel</name>
@@ -809,6 +1026,21 @@
     <wikidata>Q3104</wikidata>
     <type>city</type>
     <alias>Coblenz</alias>
+  </place>
+  <place id="koge-bay">
+    <name>Køge Bugt</name>
+    <canonical-name>Køge Bay</canonical-name>
+    <wikidata>Q1638096</wikidata>
+    <type>bay</type>
+    <alias>Kjøgebugt</alias>
+    <parent ref="zealand"/>
+  </place>
+  <place id="koldinghus">
+    <name>Koldinghus</name>
+    <wikidata>Q3347392</wikidata>
+    <type>castle</type>
+    <alias>Koldinghuus</alias>
+    <parent ref="jutland"/>
   </place>
   <place id="kongsberg">
     <name>Kongsberg</name>
@@ -933,6 +1165,13 @@
     <type>manor</type>
     <parent ref="funen"/>
   </place>
+  <place id="lejre">
+    <name>Lejre</name>
+    <wikidata>Q2689028</wikidata>
+    <type>town</type>
+    <alias>Leire</alias>
+    <parent ref="zealand"/>
+  </place>
   <place id="little-belt">
     <name>Lillebælt</name>
     <canonical-name>Little Belt</canonical-name>
@@ -989,6 +1228,13 @@
     <wikidata>Q311124</wikidata>
     <type>landscape</type>
     <alias>Lyneborg Hede</alias>
+  </place>
+  <place id="lund">
+    <name>Lund</name>
+    <wikidata>Q2167</wikidata>
+    <type>city</type>
+    <alias>Lundeby</alias>
+    <parent ref="scania"/>
   </place>
   <place id="luneburg">
     <name>Lüneburg</name>
@@ -1049,6 +1295,13 @@
     <type>municipality</type>
     <alias>Meyringen</alias>
   </place>
+  <place id="memphis">
+    <name>Memfis</name>
+    <canonical-name>Memphis</canonical-name>
+    <wikidata>Q5715</wikidata>
+    <type>ancient city</type>
+    <parent ref="egypt"/>
+  </place>
   <place id="milan">
     <name>Milano</name>
     <canonical-name>Milan</canonical-name>
@@ -1081,6 +1334,14 @@
     <name>Modum</name>
     <wikidata>Q484001</wikidata>
     <type>municipality</type>
+  </place>
+  <place id="moen">
+    <name>Møn</name>
+    <wikidata>Q666502</wikidata>
+    <type>island</type>
+    <alias>Møen</alias>
+    <alias>Möen</alias>
+    <parent ref="denmark"/>
   </place>
   <place id="moench">
     <name>Mönch</name>
@@ -1117,6 +1378,15 @@
     <alias>Circello</alias>
     <parent ref="italy"/>
   </place>
+  <place id="mount-of-olives">
+    <name>Oliebjerget</name>
+    <canonical-name>Mount of Olives</canonical-name>
+    <wikidata>Q205976</wikidata>
+    <type>hill</type>
+    <alias>Oliebierget</alias>
+    <alias>Oliebjergets</alias>
+    <parent ref="jerusalem"/>
+  </place>
   <place id="murcia">
     <name>Murcia</name>
     <wikidata>Q12225</wikidata>
@@ -1137,6 +1407,14 @@
     <type>city</type>
     <alias>Napoli</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="netherlands">
+    <name>Nederlandene</name>
+    <canonical-name>Netherlands</canonical-name>
+    <wikidata>Q55</wikidata>
+    <type>country</type>
+    <alias>Holland</alias>
+    <parent ref="europe"/>
   </place>
   <place id="neumuenster">
     <name>Neumünster</name>
@@ -1162,6 +1440,7 @@
     <wikidata>Q1772223</wikidata>
     <type>historical municipality/place</type>
     <alias>Norderhoug</alias>
+    <alias>Norderhovg</alias>
     <parent ref="ringerike"/>
   </place>
   <place id="norway">
@@ -1169,6 +1448,10 @@
     <canonical-name>Norway</canonical-name>
     <wikidata>Q20</wikidata>
     <type>country</type>
+    <alias>Norrig</alias>
+    <alias>Norrige</alias>
+    <alias>Norrigs</alias>
+    <alias>Norriges</alias>
   </place>
   <place id="nyborg">
     <name>Nyborg</name>
@@ -1188,6 +1471,11 @@
     <type>palace</type>
     <alias>Slottet</alias>
     <parent ref="odense"/>
+  </place>
+  <place id="oresund">
+    <name>Øresund</name>
+    <wikidata>Q104662</wikidata>
+    <type>strait</type>
   </place>
   <place id="oscarshall">
     <name>Oscarshall</name>
@@ -1253,6 +1541,12 @@
     <wikidata>Q2683</wikidata>
     <type>city</type>
   </place>
+  <place id="pavia">
+    <name>Pavia</name>
+    <wikidata>Q6259</wikidata>
+    <type>city</type>
+    <parent ref="italy"/>
+  </place>
   <place id="perugia">
     <name>Perugia</name>
     <wikidata>Q3437</wikidata>
@@ -1296,11 +1590,44 @@
     <alias>Puzzuoli</alias>
     <parent ref="italy"/>
   </place>
+  <place id="prague">
+    <name>Prag</name>
+    <canonical-name>Prague</canonical-name>
+    <wikidata>Q1085</wikidata>
+    <type>city</type>
+  </place>
+  <place id="provence">
+    <name>Provence</name>
+    <wikidata>Q101081</wikidata>
+    <type>historical region</type>
+    <alias>Provença</alias>
+    <parent ref="france"/>
+  </place>
+  <place id="randers">
+    <name>Randers</name>
+    <wikidata>Q27168</wikidata>
+    <type>city</type>
+    <alias>Randersby</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="reggio-emilia">
     <name>Reggio Emilia</name>
     <wikidata>Q13360</wikidata>
     <type>city</type>
     <alias>Reggio</alias>
+  </place>
+  <place id="remiremont">
+    <name>Remiremont</name>
+    <wikidata>Q504853</wikidata>
+    <type>town</type>
+    <parent ref="france"/>
+  </place>
+  <place id="reykjavik">
+    <name>Reykjavík</name>
+    <wikidata>Q1764</wikidata>
+    <type>city</type>
+    <alias>Reykjavik</alias>
+    <parent ref="iceland"/>
   </place>
   <place id="rhine">
     <name>Rhinen</name>
@@ -1335,6 +1662,14 @@
     <wikidata>Q283658</wikidata>
     <type>city</type>
   </place>
+  <place id="rinkenaes">
+    <name>Rinkenæs</name>
+    <wikidata>Q3977699</wikidata>
+    <type>village</type>
+    <alias>Rinknis</alias>
+    <alias>Ringenæs</alias>
+    <parent ref="duchy-schleswig"/>
+  </place>
   <place id="rocca-di-papa">
     <name>Rocca di Papa</name>
     <wikidata>Q243228</wikidata>
@@ -1357,6 +1692,12 @@
     <alias>Rommeliklint</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="romsdal">
+    <name>Romsdal</name>
+    <wikidata>Q1467860</wikidata>
+    <type>region</type>
+    <parent ref="norway"/>
+  </place>
   <place id="ronciglione">
     <name>Ronciglione</name>
     <wikidata>Q177695</wikidata>
@@ -1376,6 +1717,7 @@
     <wikidata>Q26563</wikidata>
     <type>city</type>
     <alias>Roeskilde</alias>
+    <alias>Roskild</alias>
   </place>
   <place id="roskilde-cathedral">
     <name>Roskilde Domkirke</name>
@@ -1441,6 +1783,12 @@
     <type>city</type>
     <parent ref="italy"/>
   </place>
+  <place id="salling">
+    <name>Salling</name>
+    <wikidata>Q1970602</wikidata>
+    <type>peninsula</type>
+    <parent ref="jutland"/>
+  </place>
   <place id="samso">
     <name>Samsø</name>
     <wikidata>Q216422</wikidata>
@@ -1454,6 +1802,14 @@
     <type>church</type>
     <alias>St. Pietro Montorio</alias>
     <parent ref="rome"/>
+  </place>
+  <place id="scania">
+    <name>Skåne</name>
+    <canonical-name>Scania</canonical-name>
+    <wikidata>Q180756</wikidata>
+    <type>historical province</type>
+    <alias>Skaane</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="schaffhausen">
     <name>Schaffhausen</name>
@@ -1611,6 +1967,12 @@
     <alias>San Pietro in Vaticano</alias>
     <parent ref="vatican-city"/>
   </place>
+  <place id="stjerneborg">
+    <name>Stjerneborg</name>
+    <wikidata>Q142658</wikidata>
+    <type>observatory</type>
+    <parent ref="ven"/>
+  </place>
   <place id="stockholm">
     <name>Stockholm</name>
     <wikidata>Q1754</wikidata>
@@ -1643,6 +2005,13 @@
     <type>city</type>
     <alias>Sviinborg</alias>
   </place>
+  <place id="swabia">
+    <name>Schwaben</name>
+    <canonical-name>Swabia</canonical-name>
+    <wikidata>Q11812551</wikidata>
+    <type>historical region</type>
+    <parent ref="germany"/>
+  </place>
   <place id="sweden">
     <name>Sverige</name>
     <canonical-name>Sweden</canonical-name>
@@ -1650,6 +2019,16 @@
     <type>country</type>
     <alias>Sverrig</alias>
     <alias>Svithiod</alias>
+    <alias>Sverrige</alias>
+  </place>
+  <place id="switzerland">
+    <name>Schweiz</name>
+    <canonical-name>Switzerland</canonical-name>
+    <wikidata>Q39</wikidata>
+    <type>country</type>
+    <alias>Schveitz</alias>
+    <alias>Schweitz</alias>
+    <parent ref="europe"/>
   </place>
   <place id="taasinge">
     <name>Tåsinge</name>
@@ -1683,6 +2062,13 @@
     <wikidata>Q1992413</wikidata>
     <type>museum</type>
     <parent ref="copenhagen"/>
+  </place>
+  <place id="thy">
+    <name>Thy</name>
+    <wikidata>Q787040</wikidata>
+    <type>region</type>
+    <alias>Thyland</alias>
+    <parent ref="jutland"/>
   </place>
   <place id="tivoli">
     <name>Tivoli</name>
@@ -1730,6 +2116,11 @@
     <wikidata>Q754314</wikidata>
     <type>ancient city/archaeological site</type>
     <parent ref="italy"/>
+  </place>
+  <place id="tyrol">
+    <name>Tyrol</name>
+    <wikidata>Q153809</wikidata>
+    <type>historical region</type>
   </place>
   <place id="ufenau">
     <name>Ufenau</name>
@@ -1842,6 +2233,13 @@
     <type>city</type>
     <parent ref="jutland"/>
   </place>
+  <place id="vienna">
+    <name>Wien</name>
+    <canonical-name>Vienna</canonical-name>
+    <wikidata>Q1741</wikidata>
+    <type>city</type>
+    <parent ref="austria"/>
+  </place>
   <place id="vierlande">
     <name>Vierlande</name>
     <wikidata>Q885045</wikidata>
@@ -1864,6 +2262,12 @@
     <alias>Maro's grav</alias>
     <alias>Tomba di Virgilio</alias>
     <parent ref="naples"/>
+  </place>
+  <place id="visby">
+    <name>Visby</name>
+    <wikidata>Q54757</wikidata>
+    <type>town</type>
+    <parent ref="sweden"/>
   </place>
   <place id="volturno">
     <name>Volturno</name>
@@ -1897,6 +2301,19 @@
     <name>Worms</name>
     <wikidata>Q3852</wikidata>
     <type>city</type>
+  </place>
+  <place id="zealand">
+    <name>Sjælland</name>
+    <canonical-name>Zealand</canonical-name>
+    <wikidata>Q25535</wikidata>
+    <type>island</type>
+    <alias>Sielland</alias>
+    <alias>Sælland</alias>
+    <alias>Sjølund</alias>
+    <alias>Sølund</alias>
+    <alias>Siælland</alias>
+    <alias>Solund</alias>
+    <parent ref="denmark"/>
   </place>
   <place id="zug">
     <name>Zug</name>

@@ -12,6 +12,7 @@ import * as Links from '../components/links.js';
 import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
 
@@ -183,6 +184,7 @@ const Poets = (props) => {
       return {
         id: poet.id,
         url: `/${lang}/works/${poet.id}`,
+        searchText: poet.name.sortname ?? poetNameString(poet, true),
         html: <PoetName poet={poet} lastNameFirst includePeriod />,
       };
     });

@@ -17,6 +17,7 @@ describe('renderable work corpus markup', () => {
     for (const { content, filename } of loadTrackedWorkFiles().filter(
       (work) => [
         'fdirs/bech/1940.xml',
+        'fdirs/bech/1941.xml',
         'fdirs/blicherclausen/1900.xml',
         'fdirs/ingemann/1816a.xml',
         'fdirs/blicherclausen/1903.xml',
@@ -24,6 +25,7 @@ describe('renderable work corpus markup', () => {
         'fdirs/grundtvig/1814a.xml',
         'fdirs/kaalund/1898.xml',
         'fdirs/stenersen/1752.xml',
+        'fdirs/munchp/1932.xml',
       ].includes(work.filename)
     )) {
       const document = parseWorkXml(content);
