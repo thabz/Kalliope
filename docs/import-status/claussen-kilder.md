@@ -138,6 +138,10 @@ PR'en var åben og havde grønne CI-checks ved kontrollen. `1925.xml` er ikke
 `digtefraprosa.xml`, `ovs.xml` og `andre.xml` kræver tekstvis kildeafklaring
 under #1912; de har ikke fået fælles kilder fra de ovenstående samlinger.
 
+Trykkets »Bâal« (s. 102) og »Châblis« (s. 148) er visuelt genbekræftet.
+To snævre, navngivne OCR-regelundtagelser på de berørte tekstposter bevarer
+disse kildekorrekte stavninger; valget er også forklaret i teksternes noter.
+
 ## Afsluttende validering
 
 `make test` bestod med 1.952 tests (ni eksisterende tests sprunget over).

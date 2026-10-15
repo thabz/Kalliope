@@ -1831,10 +1831,13 @@ end hun kan i Morgen sy!
 </body>
 </text>
 
-<text id="claussen20261015120" variant="claussen20050508117">
+<text id="claussen20261015120" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text" variant="claussen20050508117">
 <head>
   <title>Herman Bang</title>
   <firstline>I Døvstumgaden i Paris</firstline>
+  <notes>
+    <note>Trykkets stavning »Bâal« med cirkumfleks er bevaret (s. 102).</note>
+  </notes>
   <source pages="98-104"/>
   <keywords>bang</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2695,10 +2698,13 @@ som Kniplinger fra Valenciennes.
 </body>
 </text>
 
-<text id="claussen20261015134">
+<text id="claussen20261015134" ignore-tests="single-circumflex-a-in-text">
 <head>
   <title>Alliance</title>
   <firstline>Vi har faret paa alskens Omnibus-Tage</firstline>
+  <notes>
+    <note>Trykkets stavning »Châblis« med cirkumfleks er bevaret (s. 148).</note>
+  </notes>
   <source pages="146-149"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
