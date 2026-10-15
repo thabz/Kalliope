@@ -61,8 +61,11 @@ strofeafslutninger.
 ### 5. Brug tekstens genre som kontrol
 
 Digte skal vurderes ud fra verslinjer og strofer, mens prosa skal vurderes ud
-fra sammenhængende afsnit. OCR-formatet må ikke ukritisk anvendes ens på begge
-dele.
+fra sammenhængende afsnit. Kontrollér hvert prosaafsnits grænser,
+førstelinjeindryk og afstand til naboafsnit mod facsimilet. Et indrykket nyt
+afsnit kræver ikke en blanklinje; blanklinjer må kun gengive ekstra lodret
+afstand i trykket og må ikke erstatte indryk. OCR-formatet må ikke ukritisk
+anvendes ens på begge dele. Se `docs/facsimile-korrektur.md`.
 
 ### 6. Korrekturlæs også fodnoter
 

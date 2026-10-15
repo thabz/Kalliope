@@ -754,6 +754,11 @@ Eksempel (text kilde med arv og override):
 
 Regler:
 
+- Når den valgte værkkilde har både `facsimile` og `facsimile-pages-num`, skal
+  hver tekst angive `source/@pages` eller, for unummererede sider,
+  `source/@facsimile-pages`. Det gælder også prosa og tekster i sektioner.
+  Facsimileintervaller er enbaserede, lukkede og ikke-faldende og må ikke
+  overskride kildens sideantal. Korpustesten håndhæver kravet.
 - `pages` skal være én fuld sidebetegnelse eller et lukket, ikke-faldende
   interval. Skriv eksempelvis `102-108`, aldrig den bibliografiske forkortelse
   `102-08`; åbne intervaller som `106-` er ugyldige.
@@ -809,7 +814,22 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 - `<prose>`: prosa. Renderes som prosalinjer/afsnit.
 - `<epigraph>`: litterært motto eller epigraf.
 
-Blokattributter:
+### Prosaafsnit
+
+Facsimilet bestemmer prosaens afsnitsgrænser, førstelinjeindryk og afstand
+mellem afsnit. Skriv hvert sammenhængende afsnit på én XML-linje i `<prose>`;
+repræsentér trykte førstelinjeindryk med indledende mellemrum. Kontrollér
+indrykket for hvert afsnit, også første afsnit efter en overskrift, som kan
+stå uden indryk.
+
+Indsæt kun en blanklinje mellem afsnit, når facsimilet viser ekstra lodret
+afstand. Et nyt afsnit eller et førstelinjeindryk er ikke i sig selv grund til
+en blanklinje. Indryk må ikke erstattes med blanklinjer. Saml trykkets fysiske
+linjeombrydninger inden for afsnittet, og lad ikke et sideskift skabe et nyt
+afsnit eller ekstra afstand; bevar `<pb>` på det præcise tekststed.
+OCR'ens linjeskift, blokopdeling og mellemrum er ikke facit.
+
+### Blokattributter
 
 - `max-width="..."`: valgfri maksimal bredde for især `<epigraph>`.
 - `lang="la"` på `<poetry>`, `<prose>` eller `<epigraph>`: sprog for hele blokken,

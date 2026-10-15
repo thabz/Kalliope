@@ -104,6 +104,26 @@ Et blankt mellemrum i trykket er redaktionel information. Det må hverken
 fjernes, fordi nabostrofer har samme rimskema, eller tilføjes alene ud fra en
 formodet strofeform.
 
+### Prosaafsnit
+
+Kontrollér hvert prosaafsnit visuelt mod facsimilet i begge
+korrekturgennemgange. Gennemgå afsnitsgrænser, førstelinjeindryk og afstanden
+mellem afsnit hver for sig. Kontrollér også afsnit uden indryk, herunder
+første afsnit efter en overskrift; overfør ikke automatisk naboafsnittenes
+indryk.
+
+En blanklinje skal svare til ekstra lodret afstand i trykket. Et almindeligt
+afsnitsskift med førstelinjeindryk må ikke få tilføjet en blanklinje, og en
+blanklinje må ikke erstatte et trykt indryk. Gennemgå både eksisterende
+blanklinjer og steder, hvor trykkets afstand eller indryk mangler i XML.
+
+Følg kodningen i `docs/xml-work-format.md`: ét sammenhængende afsnit pr.
+XML-linje med indledende mellemrum for dokumenterede førstelinjeindryk.
+Trykte linjeombrydninger og sideskift inde i et fortsat afsnit må ikke skabe
+nye afsnit eller ekstra afstand. OCR-opdelingen må ikke være styrende.
+Registrér fund i det eksisterende fundregister. Strofe- og indrykningsanalyser
+for digte dokumenterer ikke, at prosaen er kontrolleret.
+
 ### Regelmæssige strofeformer
 
 **Kør altid strofeanalyseværktøjet, når strofelængder eller strofegrænser
@@ -461,6 +481,9 @@ godkendelse til at publicere den.
 - [ ] Alle relevante sider er registreret og gennemgået.
 - [ ] Første og sidste tekstlinje stemmer med facsimilet.
 - [ ] Strofegrænser følger trykket, også ved uregelmæssige former.
+- [ ] Alle prosaafsnits grænser, førstelinjeindryk og indbyrdes afstand er
+      visuelt kontrolleret mod facsimilet i begge korrekturgennemgange;
+      blanklinjer svarer til trykkets ekstra lodrette afstand.
 - [ ] Alle interne sideskift er markeret med præcist placerede `<pb>`.
 - [ ] Hver `<pb>` har korrekt `facs`; `n` følger den trykte sidebetegnelse.
 - [ ] `<workhead>` indeholder `<pagebreaks/>`, også når der ikke findes `<pb>`.

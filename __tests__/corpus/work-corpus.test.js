@@ -13,6 +13,7 @@ import {
   collectSingleLineSubtitleIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectFacsimilePageSourceIssues,
   collectSourceAuthorIssues,
   collectAnthologySourceIssues,
   collectTextStructureIssues,
@@ -65,6 +66,7 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let facsimilePageSourceIssues;
   let poetryBoundaryBlankLineIssues;
   let nestedBodyBlockIssues;
   let sourceHrIssues;
@@ -100,6 +102,7 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    facsimilePageSourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
     nestedBodyBlockIssues = [];
     sourceHrIssues = [];
@@ -166,6 +169,11 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      if (checksForWorkXml(xml).facsimiles === true) {
+        facsimilePageSourceIssues.push(
+          ...collectFacsimilePageSourceIssues(filename, workDocument),
+        );
+      }
       singleLineSubtitleIssues.push(
         ...collectSingleLineSubtitleIssues(filename, workDocument),
       );
@@ -351,6 +359,10 @@ describe('tracked work corpus', () => {
 
   it('requires legal page intervals on text sources', () => {
     expect(pageIntervalIssues).toEqual([]);
+  });
+
+  it('requires legal text page references for work sources with a facsimile and page count', () => {
+    expect(facsimilePageSourceIssues).toEqual([]);
   });
 
   it('places sources on individual texts in andre.xml', () => {
