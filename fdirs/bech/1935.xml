@@ -9,9 +9,6 @@
   <proofreadings>
     <proofreading model="gpt-6.1-sol" datetime="2026-10-14T21:08:19+02:00"/>
   </proofreadings>
-  <notes>
-    <note>Oplag: 500 Eksemplarer.</note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1935-p1.jpg"><transcription>Bodil Bech / Ildtunger danser / Digte // Gyldendalske Boghandel - Nordisk / Forlag - København - MCMXXXV</transcription></picture>
     <picture type="frontpage" src="1935-p2.jpg"/>
@@ -27,7 +24,7 @@
 </workhead>
 <workbody>
 
-<section id="bech2026101437">
+<section>
 <head>
   <title>Ti Digte</title>
 </head>
@@ -425,7 +422,7 @@ ved min Side?
 </content>
 </section>
 
-<section id="bech2026101448">
+<section>
 <head>
   <title>Gudhjem</title>
 </head>
@@ -919,7 +916,7 @@ paa det der engang var mig
 </content>
 </section>
 
-<section id="bech2026101460">
+<section>
 <head>
   <title>Hjertets Sang</title>
 </head>
@@ -930,9 +927,6 @@ paa det der engang var mig
 <head>
   <title>Hjertets Sang</title>
   <firstline>Hvad er det nu</firstline>
-  <notes>
-    <note>TODO: Kontrollér strofegrænsen i afsnit 8 ved s. 63-64. Efter spørgsmålet »føle Hænders Favnen?« er der her indsat en strofegrænse før »hvorfor ikke glide ud«; sideskiftet skjuler en mulig strofeafstand.</note>
-  </notes>
   <source pages="55-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1144,7 +1138,6 @@ hvorfor vil jeg smage Lykken
 paa min Tunge
 hvorfor mine Lænder
 føle Hænders Favnen?
-
 <pb n="64" facs="070.jpg"/>hvorfor ikke glide ud
 i sorte Nætter
 blive borte — —
