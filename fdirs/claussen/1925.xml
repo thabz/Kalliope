@@ -4,6 +4,10 @@
   <title>Heroica</title>
   <subtitle>Nye Digte</subtitle>
   <year>1925</year>
+  <pictures>
+    <picture type="titlepage" src="1925-p1.jpg"><transcription>SOPHUS CLAUSSEN / HEROICA / NYE DIGTE // GYLDENDALSKE BOGHANDEL · NORDISK / FORLAG · KØBENHAVN · LONDON / BERLIN · MCMXXV</transcription></picture>
+    <picture type="frontpage" src="1925-p2.jpg"/>
+  </pictures>
   <source href="https://www.kb.dk/e-mat/dod/130025789696-color.pdf" facsimile="130025789696-color" facsimile-pages-num="189" facsimile-pages-offset="7">
     <author id="claussen">Sophus Claussen</author>
     <title>Heroica. Nye Digte</title>
@@ -639,7 +643,7 @@ fra Oceanernes Bund.
   <title>Don Luis de Góngoras Sonet om Madrid</title>
   <firstline>Et dyrisk Liv med Hexegrydens Brusen</firstline>
   <notes>
-    <note>Luis de Góngora y Argote (1561-1627)</note>
+    <note>Oversættelse af <xref type="translation" poem="anonym1600es2026101501"/>.</note>
   </notes>
   <source pages="47"/>
   <keywords>sonnet</keywords>
@@ -1816,8 +1820,7 @@ Sjæl, du er endnu derinde.
   <subtitle>Gammelfransk</subtitle>
   <firstline>Ved en Vej i nørre Len</firstline>
   <notes>
-    <note>Det franske forlæg er »Sur la route de Louviers«.</note>
-    <!-- TODO: Find og tilføj den franske original. -->
+    <note>Gendigtning af den anonyme franske vise <xref type="translation" poem="anonym1800fr2026101501"/>. Sidste strofe er frit gengivet.</note>
   </notes>
   <source pages="105-106"/>
   <quality>korrektur1</quality>
