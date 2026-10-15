@@ -1104,6 +1104,9 @@ Tilbage til Kongens Gaard han render.
   <title>Fierde Bog</title>
   <firstline>Til Trængselsborg, at stævne Ræven ind</firstline>
   <source pages="45-55"/>
+  <places>
+    <place ref="salling" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

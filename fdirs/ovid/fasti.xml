@@ -8,7 +8,14 @@
     <note>Den latinske tekst følger den angivne Perseus-udgave. Tekstkritiske variantnoter i TEI-kilden er udeladt, mens udgavens versnumre er bevaret.</note>
     <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
   </notes>
-  <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi007">P. Ovidius Naso: <i>Ovid's Fasti</i>, James George Frazer (red.), Harvard University Press og William Heinemann, Cambridge, MA og London, 1931.</source>
+  <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi007">
+    <author>P. Ovidius Naso</author>
+    <title>Ovid's Fasti</title>
+    <editor type="editor">James George Frazer</editor>
+    <place>Cambridge, MA og London</place>
+    <publisher>Harvard University Press og William Heinemann</publisher>
+    <year>1931</year>
+  </source>
   <quality>kilde</quality>
 </workhead>
 <workbody>

@@ -106,7 +106,17 @@ Of aid from them—She was the universe.
 <head>
   <title>Stanzas to [Augusta]</title>
   <firstline>Though the day of my destiny's over</firstline>
-  <source pages="33-35">Lord Byron, <i>The Complete Poetical Works</i>, red. Jerome J. McGann, 7 bind, Clarendon Press 1980-93, bind 4.</source>
+  <notes>
+    <note>The Complete Poetical Works er udgivet i 7 bind.</note>
+  </notes>
+  <source pages="33-35">
+    <author>Lord Byron</author>
+    <title>The Complete Poetical Works</title>
+    <editor type="editor">Jerome J. McGann</editor>
+    <volume>4</volume>
+    <publisher>Clarendon Press</publisher>
+    <year>1980-93</year>
+  </source>
   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
@@ -172,7 +182,13 @@ And a bird in the solitude singing,
 <head>
   <title>The Dream</title>
   <firstline>Our life is twofold: Sleep hath its own world</firstline>
-  <source pages="33-41">E.H. Coleridge (red.): <i>The Works of Lord Byron</i>, Vol. IV, London, 1905.</source>
+  <source pages="33-41">
+    <title>The Works of Lord Byron</title>
+    <editor type="editor">E.H. Coleridge</editor>
+    <volume>IV</volume>
+    <place>London</place>
+    <year>1905</year>
+  </source>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

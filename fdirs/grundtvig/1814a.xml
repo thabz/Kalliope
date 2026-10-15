@@ -223,6 +223,10 @@ Herrens Lignelse og Syner skue;
 <head>
   <firstline>Hil dig Roskild! ja hilsæl</firstline>
   <source facsimile-pages="21-302" pages="1-282"/>
+  <places>
+    <place ref="roskilde" relation="subject" primary="true"/>
+    <place ref="roskilde-cathedral" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
