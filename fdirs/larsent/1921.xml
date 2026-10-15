@@ -1,7 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1921" author="larsent" status="incomplete" type="poetry">
+<kalliopework id="1921" author="larsent" status="complete" type="poetry">
 <workhead>
   <title>Blishønsene</title>
+  <subtitle>Julen 1921</subtitle>
   <year>1921</year>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-15T15:21:23+00:00"/>
+  </proofreadings>
+  <notes>
+    <note>Særtryk illustreret af forfatteren og fremstillet i 100 eksemplarer.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1921-p1.jpg"><transcription>Thøger Larsen / Blishønsene // Julen 1921</transcription></picture>
+    <picture type="illustration" src="1921-v1.jpg">Thøger Larsen: Blishøne, afsluttende vignet.</picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99125875533005763" facsimile="115308075023_color" facsimile-pages-num="23" facsimile-pages-offset="3">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Blishønsene</title>
+    <place>Lemvig</place>
+    <printer>Lemvig Bogtrykkeri</printer>
+    <year>1921</year>
+    <identifiers>
+      <kb-alma>99125875533005763</kb-alma>
+    </identifiers>
+  </source>
 </workhead>
+<workbody>
+
+<text id="larsent2026101502" skip-index="true">
+<head>
+  <title/>
+  <toctitle>Julehilsen</toctitle>
+  <nofirstline/>
+  <source facsimile-pages="4"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><i>De bedste Ønsker om en glædelig Jul.</i></center>
+
+<right><i>Deres hengivne</i></right>
+</prose>
+</body>
+</text>
+
+<text id="larsent2026101503" skip-index="true">
+<head>
+  <title/>
+  <toctitle>Tilegnelse</toctitle>
+  <nofirstline/>
+  <source facsimile-pages="7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>MIN HUSTRU<br/>TILEGNET</center>
+</prose>
+</body>
+</text>
+
+<text id="larsent2026101504" variant="larsent2001071816">
+<head>
+  <title>Blishønsene</title>
+  <firstline>Der boede otte Blishøns</firstline>
+  <source pages="7-15" facsimile-pages="10-18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der boede otte Blishøns
+i Rørene rundt om Søen.
+De seks var Unger og avlet
+i Rørene rundt om Søen.
+
+<pb n="8" facs="010.jpg"/>Den Rede, hvori de var ruget,
+laa som en Baad og vipped,
+skjult i den susende Rørskov,
+da de af Æggene pipped.
+
+Snart alle otte sejled
+paa Fangst fra Rørskovens Stammer;
+de spejded med Hovedet nedad
+flittigt i Dybets Kammer.
+
+<pb n="9" facs="011.jpg"/>En kort og panisk Tone
+sendte de tit over Søen
+mod Sommernætternes Blændværk
+af ulmende Søvn og Døen.
+
+De sejled paa deres Buge,
+naar Solen kastede Brande
+om dem, saa de maatte svale
+Øjnene under Vande.
+
+<pb n="10" facs="012.jpg"/>De sejlede tavst, naar Maanen
+steg over Tage og Tinder
+med Smilet fra Underverdnen
+og Skærsild om sine Kinder.
+
+Men Solen sank gennem Høsten
+og dykked sig ned i Syden,
+og sort og skummel blev Natten,
+og Blæsten blev ond i Lyden.
+
+<pb n="11" facs="013.jpg"/>Og Stjernernes rolige Sølvblik
+fra Sommerens Himmelside
+veg for andre, som Mørket
+tirrede rasende hvide.
+
+Og hvor de spæde i Kurven
+havde som Moses vugget,
+blev der for Stormene aabnet,
+Rørenes Skov blev hugget.
+
+<pb n="12" facs="014.jpg"/>Saa stilned det som i en Afmagt:
+— en Braad gennem Verden stukket,
+Vidderne haarde og øde,
+Vandene laast og lukket.
+
+En stille Dag, mens Solen
+gik lavt som paa Gravens Munding,
+stod otte Blishøns paa Isen
+i Midten af Søens Runding.
+
+<pb facs="015.jpg"/>Otte fattige Blishøns
+stod der med kolde Fødder
+Time efter Time
+som Planter paa deres Rødder.
+
+<pb n="14" facs="016.jpg"/>Vidderne haarde og øde,
+Vandene laast og lukket,
+Kulden piner til Døde,
+sløvet Sol bliver slukket.
+
+Time efter Time
+stod de smaa der alene
+i Søens inderste Midte
+paa Vand, der var haardt som Stene.
+
+<pb n="15" facs="017.jpg"/>Otte fattige Blishøns,
+Fiskere, jævne Fugle,
+havde nu faaet det saa haabløst
+øde paa Jordens Kugle.
+
+Saa kom da Natten, den onde,
+for Dagens Armod at arve —
+end stod de smaa der alene —
+de sluktes ud som en Farve.
+</poetry>
+</body>
+</text>
+
+</workbody>
 </kalliopework>
