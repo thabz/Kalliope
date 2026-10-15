@@ -1,6 +1,5 @@
 import { isFileModified } from '../libs/caching.js';
 import { facsimileInterval } from '../errata.js';
-import { resolveSourceFacsimilePoetId } from './source.js';
 import {
   safeMkdir,
   writeJSON,
@@ -144,7 +143,6 @@ const build_works_toc = async (collected) => {
         return {
           pages: safeGetAttr(node, 'pages'),
           facsimilePages: facsimileInterval(safeGetAttr(node, 'facsimile-pages')),
-          facsimilePoetId: resolveSourceFacsimilePoetId({ sourceNode: source, poetId }),
           facsimile: safeGetAttr(source, 'facsimile')?.replace(/\.pdf$/, ''),
           facsimilePageCount: Number(safeGetAttr(source, 'facsimile-pages-num')),
         };

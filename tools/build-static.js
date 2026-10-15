@@ -111,7 +111,6 @@ import {
   resolveSourceReference,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
-  resolveSourceFacsimilePoetId,
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
@@ -520,9 +519,7 @@ const handle_text = async (
       facsimilePageCount,
       facsimile,
       facsimilePages,
-      facsimilePoetId: resolveSourceFacsimilePoetId({
-        sourceNode, sourceForText: workSource, poetId: sourcePoetId,
-      }),
+      facsimilePoetId: sourcePoetId,
     };
   } else if (workSource != null) {
     // Dette er ikke nødvendigvis en fejl.
@@ -1341,7 +1338,6 @@ const works_second_pass = async (collected) => {
             facsimile,
             facsimilePageCount: parseInt(facsimilePageCount, 10),
             facsimilePagesOffset,
-            facsimilePoetId: resolveSourceFacsimilePoetId({ sourceNode, poetId }),
           };
         }
         sources[sourceId] = source;

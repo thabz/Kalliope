@@ -79,7 +79,7 @@ const WorkPage = (props) => {
     <Note key={`errata-${index}`} type="errata">
       Trykkets{' '}
       <FacsimileLink
-        poetId={entry.facsimilePoetId ?? poet.id}
+        poetId={poet.id}
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>

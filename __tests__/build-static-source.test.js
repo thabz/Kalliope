@@ -7,7 +7,6 @@ import {
   resolveSourceDigitalUrl,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
-  resolveSourceFacsimilePoetId,
 } from '../tools/build-static/source.js';
 
 describe('source digital URL helpers', () => {
@@ -85,19 +84,6 @@ describe('source digital URL helpers', () => {
     const sourceNode = parseSource('<source>Kilde</source>');
 
     expect(resolveSourceDigitalUrlForText({ sourceNode })).toBeNull();
-  });
-
-  it('keeps an existing facsimile folder when a publication moves', () => {
-    const inheritedSource = { facsimilePoetId: 'beyer' };
-    expect(resolveSourceFacsimilePoetId({
-      sourceNode: parseSource('<source pages="78"/>'),
-      sourceForText: inheritedSource, poetId: 'antologierdk',
-    })).toBe('beyer');
-    expect(resolveSourceFacsimilePoetId({
-      sourceNode: parseSource('<source facsimile-poet="other"/>'),
-      sourceForText: inheritedSource, poetId: 'antologierdk',
-    })).toBe('other');
-    expect(resolveSourceFacsimilePoetId({ poetId: 'antologierdk' })).toBe('antologierdk');
   });
 
   it('reads self-contained facsimile metadata from a text source', () => {

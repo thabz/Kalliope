@@ -2,7 +2,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { DOMParser } from '@xmldom/xmldom';
 import plimit from 'p-limit';
-import { resolveSourceFacsimilePoetId } from './build-static/source.js';
 import * as ImagePaths from '../common/imagepaths.js';
 import {
   isWorkFileContent,
@@ -79,8 +78,7 @@ const findFacsimileReferences = (workFiles, baseUrl = defaultBaseUrl) => {
           return;
         }
 
-        const facsimilePoetId = resolveSourceFacsimilePoetId({ sourceNode: source, poetId });
-        const urls = facsimileAssetUrls(baseUrl, facsimilePoetId, facsimile);
+        const urls = facsimileAssetUrls(baseUrl, poetId, facsimile);
         const pageUrl = urls[0];
         if (referencesByUrl.has(pageUrl) === false) {
           referencesByUrl.set(pageUrl, {

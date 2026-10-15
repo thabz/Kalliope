@@ -116,9 +116,6 @@ export const resolveSourceDigitalUrlForText = ({
   });
 };
 
-export const resolveSourceFacsimilePoetId = ({ sourceNode, sourceForText, poetId }) =>
-  safeGetAttr(sourceNode, 'facsimile-poet') ?? sourceForText?.facsimilePoetId ?? poetId;
-
 export const resolveSourceFacsimileForText = ({
   sourceNode,
   sourceForText,
