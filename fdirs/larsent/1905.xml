@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1905" author="larsent" status="complete" type="poetry">
+<kalliopework id="1905" author="larsent" status="incomplete" type="poetry">
 <workhead>
   <title>Dagene</title>
   <year>1905</year>
@@ -10,9 +10,19 @@
     <picture type="titlepage" src="1905-p1.jpg"><transcription>Thøger Larsen / Dagene, / Viser og Digte. / I Kommission hos / Hvidehus Boglade, Vejle. / 1905</transcription></picture>
   </pictures>
   <notes>
+    <note>Facsimilet mangler s. 58-59 med »Kræ-Tammesen i Vorherres Haand«, som er anført i trykkets indholdsfortegnelse. Digtet er endnu ikke medtaget her.</note>
     <note>Bidrag fra Henrik Nielsen.</note>
   </notes>
-  <source facsimile="115308074956_color" facsimile-pages-num="76" facsimile-pages-offset="6">Thøger Larsen: <i>Dagene</i>, Hvidehus Boglade, Vejle, 1905.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122436855805763" facsimile="115308074956_color" facsimile-pages-num="74" facsimile-pages-offset="6">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Dagene</title>
+    <place>Vejle</place>
+    <publisher>Hvidehus Boglade</publisher>
+    <year>1905</year>
+    <identifiers>
+      <kb-alma>99122436855805763</kb-alma>
+    </identifiers>
+  </source>
 </workhead>
 <workbody>
 
