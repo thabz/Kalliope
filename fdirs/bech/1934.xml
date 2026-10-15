@@ -1,44 +1,1297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1934" author="bech" status="incomplete" type="poetry">
+<kalliopework id="1934" author="bech" status="complete" type="poetry">
 <workhead>
-  <title>Vi, der ejer Natten</title>
+  <title>Vi der ejer Natten</title>
+  <subtitle>Digte</subtitle>
   <year>1934</year>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-14T21:08:19+02:00"/>
+  </proofreadings>
+  <pictures>
+    <picture type="titlepage" src="1934-p1.jpg"><transcription>Bodil Bech / Vi der ejer Natten / Digte // Gyldendalske Boghandel - Nordisk / Forlag - København - MCMXXXIV</transcription></picture>
+    <picture type="frontpage" src="1934-p2.jpg">Omslagstegning af Axel Nygaard.</picture>
+  </pictures>
+  <source href="https://www.kb.dk/e-mat/dod/115308042606-color.pdf" facsimile="1934" facsimile-pages-num="81" facsimile-pages-offset="7">
+    <author id="bech">Bodil Bech</author>
+    <title>Vi der ejer Natten</title>
+    <place>København</place>
+    <publisher>Gyldendalske Boghandel - Nordisk Forlag</publisher>
+    <printer>Gyldendals Forlagstrykkeri</printer>
+    <year>1934</year>
+  </source>
 </workhead>
 <workbody>
 
-<text id="bech2019052306">
+<section>
 <head>
-  <title>Vi, der ejer Natten -</title>
-  <firstline>Runde var Bankerne</firstline>
-  <source pages="232">
-    <title>Digernes Danmark</title>
-    <editor type="editor">Fredrik Nygaard</editor>
-    <place>Kbh.</place>
-    <publisher>J.H. Schultz Forlag</publisher>
-    <year>1941</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <title>Pige</title>
+</head>
+<content>
+
+<text id="bech20261014122">
+<head>
+  <title>Pige</title>
+  <firstline>Jeg kan ikke sove ind for Glæde</firstline>
+  <source pages="9-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Runde var Bankerne,
-hvor min Fars Heste græssed,
-blaablank Aaen,
-som Himlen hviled i -
-i min Mors Kaalhave
-hang Humlen til Høst-Øl.
+Jeg kan ikke sove ind for Glæde
+i min Seng jeg hviler — smiler —
+Maanestraalen pusler i mit Kammer
 
-Paa den søde Ø
-kyssed Solen mig æblerund,
-fuld af Safter -
-lykkesvanger modnedes jeg,
-hægtet Arm i Arm
-med andre fynske Piger,
-dem, der latterstolt bekender:
-Natten er vor egen.
+Du der gav mig Vennehaand i Aften
+kaldte mig din Søster
+ser du ogsaa Maaneskyen jage
+under Himmelkuplen?
+
+Dybt jeg drager Vejret
+jeg er bristefuld af Glæde
+— er du fjernt
+er du mig nær dog
+i mit Hjerte nu du lever
+
+<pb facs="016.jpg"/>Jeg vil hviske til min Hovedpude
+tusind Gange at jeg elsker dig
+dunke Puden — true — græde —
+nynne fint i Natten — —
+
+Hvor skal jeg faa Luft for Glæden?
+skal jeg hoppe ud af Sengen?
+skal jeg danse om paa bare Fødder?
+knipse Kys til Maanen?
+knæle — bede?
+ringe til Paris?
+drikke Vin indtil jeg dejser?
+skrive lange Digte?
+
+Tusind Gange vil dit Navn jeg skrive!
+— gir det heller ikke Ro nok
+vil jeg kysse disse tusind Navne
+kysse Haand og Pen der skrev dem
+— jeg blir gal af Glæde
 </poetry>
 </body>
 </text>
+
+<text id="bech20261014123">
+<head>
+  <title>Før</title>
+  <firstline>Naar du er i min Stue</firstline>
+  <source pages="11-12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Naar du er i min Stue
+er Luften flydende Lys
+det er de blide Smil
+vore ustandselige Smil
+der strømmer fra Hjerterne
+fra de sænkede Øjenlaag
+fra vore milde forstummede Munde
+alle disse blide hvide Smil
+der fylder Luften i min Stue
+
+Hver Ting man gør
+blir aandeløst betydningsfuld:
+at høre Urets Tiktak
+at stirre ind i Lysets Flakken
+at komme Sukker i din The
+<pb facs="018.jpg"/>du tænder Cigaret for mig med dine lange Fingre
+at skubbe til en Stol
+at sige Ja og Nej og trække Vejret sammen
+saa dybt betydningsfuldt det er
+blot det <i>at være</i>
+
+Og hver en Celle i Ens Krop
+og hver en Fuge i Ens Sjæl
+er polstrede og rosenrøde
+er bristefærdigt spændt
+
+Naar du er i min Stue
+er Nuet Evighed
+og du og jeg
+to tunge Neg der segner
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014124" variant="bech2019052301">
+<head>
+  <title>I Halvsøvne</title>
+  <firstline>Sommernat paa Altanen</firstline>
+  <source pages="13"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Sommernat paa Altanen
+Kastanjens grønne Fingre spiller i Vinden
+en overflødig Latter raa fra Struben
+slaar op mod den blaasorte forundrede Himmel
+Togene mumler over Skinnerne
+den røde Søjle flimrer med stumme Dampe om sig
+Løven vaander sig bag Søndermarken
+Gud den underfulde sender mig Søvnen
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014125">
+<head>
+  <title>Vente — vente — — —</title>
+  <firstline>Trin paa Trappen</firstline>
+  <source pages="14-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Trin paa Trappen
+Mandetrin
+er det ham der kommer?
+første Sal
+anden Sal
+Nøgler klirrer
+Døre smækkes
+— det var ikke ham
+
+Trin paa Trappen
+Mandetrin
+er det ham nu?
+første Sal
+anden Sal
+tredie Sal
+Frydeskrig af Barnestemmer
+Mandemumlen — Kvindekvidder
+lyse Stemmer bliver borte bag en lukket Dør
+
+<pb n="15" facs="021.jpg"/>Trin paa Trappen
+Mandetrin igen
+atter ikke ham
+
+Trin paa Trappen
+Trin paa Trappen
+Time efter Time
+Kirkeuret mjaver klager hvert Kvarter
+Hjertet tappes knuges
+Kinden bliver bleg
+
+Timer gaar — Dage gaar
+Nætter svinder hen
+Tirsdag Onsdag Torsdag Fredag
+stadig ikke ham
+
+Lørdag Aften
+Trin paa Trappen
+Mandetrin
+nej det kan vel ikke være ham?
+Klokken ringer
+Gud i Himlen
+er det ham?
+
+<pb facs="022.jpg"/>Det <i>er</i> ham
+det <i>er</i> ham
+der i Dørens Ramme staar han
+
+Ganske lillebitte
+svag og stille blir man
+svinder hen
+og svinder ind
+og bliver gemt
+og bliver tryg
+gemt hos noget
+der er stort og varmt og stærkt
+og som hvisker: Kære — kære —
+ikke være vred — — —
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014126">
+<head>
+  <title>April</title>
+  <firstline>En blaaøjet Pigelil er du</firstline>
+  <source pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En blaaøjet Pigelil er du
+en Drengepige med smalle Skuldre
+med gult Haar der flyver i den salte Blæst
+du smiler gennem Taarer
+du er fuld af Nykker og kyske Kærtegn
+du er Solens unge Datter
+du er Blæstens Dansepige
+og de bløde Foraarsbygers lille Veninde
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014127" variant="bech2019052306">
+<head>
+  <title>Fyn</title>
+  <firstline>Runde var Bankerne</firstline>
+  <source pages="18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Runde var Bankerne
+hvor min Fars Heste græssed
+blaablank Aaen
+som Himlen hviled i
+i min Mors Kaalhave
+hang Humlen til Høst-Øl
+
+Paa den søde Ø
+kyssed Solen mig æblerund
+fuld af Safter —
+lykkesvanger modnedes jeg
+hægtet Arm i Arm
+med andre fynske Piger
+dem der latterstolt bekender:
+Natten er vor egen
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014128">
+<head>
+  <title>Grille</title>
+  <firstline>Jeg gaar rundt blændet</firstline>
+  <source pages="19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg gaar rundt blændet
+og skimter Verden
+gennem et Slør
+jeg er ikke længer paa Jorden —
+naar jeg gør et Hop
+forlader jeg Kloden —
+jeg vil forloves med en Flyver
+og snurre opad
+i det uendelige vandblaa
+eller maaske hellere
+ligge med ham i Græsset
+og flette mine Fingre
+i hans danske Haar
+og se vore sammenslyngede Sjæle
+duve sagte gennem Æteren
+paa en blegrød Dynesky
+</poetry>
+</body>
+</text>
+
+<!-- repeated-adjacent-word: »Mildt mildt« står sådan i trykket. -->
+<text id="bech20261014129" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Skriget</title>
+  <firstline>Der er et stort Skrig inde i mig</firstline>
+  <source pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Der er et stort Skrig inde i mig
+det vil frem
+men jeg lukker Læberne til
+og smiler som en Dame
+
+Det store Skrig er som et Sværd i mit Indre
+staalblankt spidst bøjeligt
+det borer sig i Hjertet
+stryger mig op i Struben
+det vil ud i Verden
+op mod Nattehimlen som en Guldraket
+
+Hvis jeg skreg nu
+lange gule Skrig
+og det saa atter blev stille
+og jeg stod kortaandet og saa ud i Stjernenatten
+ud i den store sovende Gaard
+<pb facs="027.jpg"/>og Lys blev tændt her og der
+og Folk stod som Silhuetter i Vinduerne
+og nogle lænede sig ud og snakkede sammen
+— hvis jeg nu skreg — —
+
+Herre min Gud
+hvorfor er der dette store Skrig i mit Indre
+hvorfor ædes mine Indvolde op af Sorg
+Herre min Gud
+
+Jeg vil gemme mig hen som et lille Barn
+den gamle Drøm fra Biblen er over mig
+jeg vil hvile i Abrahams Skød
+
+Mildt mildt blir det
+Søvn og røde Kinder
+Tryghed
+intet gøre
+ikke tænke
+bare vente
+bare vide
+alting bliver gjort paa bedste Maade
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014130">
+<head>
+  <title>Hvis</title>
+  <firstline>Jeg ligger stille i Sommernatten</firstline>
+  <source pages="22-24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg ligger stille i Sommernatten
+med Hænderne foldet over Brystet
+jeg kan føle mit Hjerte
+jeg lever endnu
+mit Ansigt er vendt mod det turkisgrønne Loft
+hvor en forvreden Tegning af Vinduet
+spøger og aander i blegt Lysflimmer
+hvergang Buelampen dernede
+duver mellem Kastanjebladene
+
+Hvis hans Nøgle nu sneg sig ind i Døren
+uhørlig for andre end mig
+som dengang
+hvis han skramled sagte med Bøjler og Knager
+og sagde rustent og dybt Godaften
+som dengang
+<pb n="23" facs="029.jpg"/>saa sank jeg atter
+og sank
+og sank
+i Sødme og Svimlen
+og hviled længe
+tung og tavs
+paa Bunden af bleggraa Taage —
+hvor forvirrende sødt
+at du atter var hos mig
+og pusled i Stuen derinde
+
+Hvorfor har jeg begge to Nøgler til Døren nu?
+hvorfor ligger jeg stille og klarhjernet
+og ser op i Loftet?
+hvorfor tar jeg ikke Telefonen
+og sender en Kile ind i hans Bevidsthed?
+er han ene — er de to?
+har han Nøglen til en andens Dør nu?
+
+Jeg ligger stille i Sommernatten
+med Hænderne foldet over Brystet
+jeg kan føle mit Hjerte
+jeg lever endnu
+
+<pb facs="030.jpg"/>Hvis du kom nu
+store Himmel kom nu!
+hvis du kyssed mine Hænder
+først den ene saa den anden
+kyssed Panden Øjenlaag og Haaret
+aanded varmt paa mine Læber
+hvis du
+hvis du
+store Himmel hvis du
+alt som dengang — — —
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014131">
+<head>
+  <title>Billedet</title>
+  <firstline>Hvor skal jeg faa Luft for Længslen?</firstline>
+  <source pages="25-27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor skal jeg faa Luft for Længslen?
+aa jeg sprænges aa jeg brister
+og en Uro som et Stormvejr
+sønderslider Hjertet Hjernen
+
+Skal jeg synge Klagesange?
+skal jeg græde grave Hovedet i Puden?
+skal jeg jage ud paa Gaden?
+sætte højre foran venstre
+sætte venstre foran højre
+gaa som en mekanisk Dukke
+ingen se og intet høre?
+bare føle kolde Fliser mod min Fodsaal —
+
+Og jeg gaar og gaar i haarde Gader
+graa uvirkelige stryger Skikkelser forbi mig
+alt er koldt og fjernt og uden Øjne
+<pb n="26" facs="032.jpg"/>intet er mig nær i Gadekløften
+uden Billedet af denne ene
+kære ene som jeg elsker
+
+Kære eneste alene
+hvisker jeg til Billedet der foran
+kan du høre hvad mit Hjerte hvisker?
+ved du mine Hænder dirrer?
+de vil glatte dine Rynker
+ved du mine Læber brænder?
+ved du mine Øjne er som Stjerner der vil møde Stjerner?
+
+Pusleblød blir Aftenluften
+og den dufter blidt af Vin Parfume Frugt og Cigaretrøg
+
+Kære eneste alene
+du er hos mig
+jeg kan lugte Huden Haaret
+og vi hvisker blødt fortroligt
+og vi smiler gyldent sejrrigt
+
+<pb facs="033.jpg"/>Jeg er ikke længer ene
+jeg har skabt dit Billed af mit Længselshjerte
+og jeg vandrer frem i Natten
+gennem Vintergader lange mange
+uden Standsning uden Ophør
+følgende dit lyse Billed
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014132">
+<head>
+  <title>Slut</title>
+  <firstline>Mine Læber har ikke flere Ord</firstline>
+  <source pages="28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mine Læber har ikke flere Ord
+mine Øjne ikke flere Taarer
+du lever som en smertende Klump i mit Hjerte
+jeg sidder hen med tørre Øjne i Blæsten
+og stirrer ud i Synsranden
+lader blot Tiden gaa
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Gudinde</title>
+</head>
+<content>
+
+<text id="bech20261014133">
+<head>
+  <title>Røgelse</title>
+  <firstline>Jeg er Ildpigen</firstline>
+  <source pages="31-32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er Ildpigen
+hør jeg beder
+
+Gud Evighedskraft i hvem vi alle hviler
+hjælp du min Aand
+vidtfavnende at lodde dybt og stige
+
+Gud giv mig Kraft at lyse Vej for Mennesker
+alle smaa Væsners store Søster vil jeg være
+lad Dyrene komme til mig og Himlens vilde Fugle
+
+Gud giv mig Lov at blive en Mands elskede Kvinde
+min Favn er en sødmefyldt Grube rede til Elskeren
+min Mund en bristet Rose
+<pb facs="038.jpg"/>han der begærer mig sky som en Hjort fra Skovene
+hans rene unge Vildskab lad den bestorme mig
+
+Hør mine Bønner
+jeg er jo Ildpigen Gud
+Ild af din Ild
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014134">
+<head>
+  <title>Lænken</title>
+  <firstline>Hvor din lette Fodsaal træder</firstline>
+  <source pages="33-34"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor din lette Fodsaal træder
+bliver Jorden hellig for mig
+
+Jeg kan klatre op paa Bjergets Toppe
+jeg kan skjule mig i dunkle Skove
+flygte til en Ødemark af Glimmersne
+alting er det dog forgæves
+ingen Flugt kan bryde Lænken
+jeg er bundet til dig
+jeg er din
+
+Jeg kan hæve mig i Vælde
+hente Ild og Blomster ned fra Himlen
+lyne farefuldt af Druesaft og Sødme
+<pb facs="040.jpg"/>alting er det dog forgæves
+se jeg knæler ned i Støvet
+se jeg breder ud mit Purpurklæde
+Ild og Blomster Druesaft og Sødme
+alt er dit
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014135">
+<head>
+  <title>Afgud</title>
+  <firstline>Som en Spaane foran Ilden</firstline>
+  <source pages="35-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Som en Spaane foran Ilden
+krummer jeg mig smertehærget
+for det Flammebaal han tændte
+men forlod for andre Arme
+jeg er lænket til den Støtte
+som jeg formed i hans Billed:
+hjortelet med Hovedet tilbagebøjet
+uvejrssvanger Brunst paa aandeløse Læber
+
+Sortblaa Nattehimmel
+Sitterstjerner
+milde Maanemoder mellem Skyer
+løs min Lænke
+løft mig mod den store Kuppel
+lad mig svaje
+i de svale Pust fra Evighedens Himle
+
+<pb facs="042.jpg"/>Men naar Ilden kun er Ulm og Aske
+lad saa Gudestøtten
+skabt i Ler af mine svage Hænder
+hærdet i det Flammebaal han tændte
+staa i Ørknen under Stjerner
+Barn af ham og mig
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014136">
+<head>
+  <title>Uopnaaeligt</title>
+  <firstline>Min Sjæl skriger af Længsel</firstline>
+  <source pages="37"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Sjæl skriger af Længsel
+mine Læber vil væde din elastiske Hud med hede Kys
+men de maa ikke
+
+Det er ikke mine Læbers Kys din unge Krop begærer
+det er en andens
+en andens uopnaaelige Regn af Kys den begærer
+
+Mine Læber attraar at dække alt det der er dig
+med et Blomstertæppe af Kys
+men de maa ikke
+
+Saa i Stedet smiler de smaa ligeglade Smil
+og ikke engang du ved
+at min Sjæl skriger af Længsel
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014137" variant="bech2019052302">
+<head>
+  <title>Brombær</title>
+  <firstline>Sortgrønne Blade som Solen hopper i</firstline>
+  <source pages="38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Sortgrønne Blade som Solen hopper i
+min Ryg hviler mod et Stenhegn
+blanke Brombær hænger over mit Hoved
+dine bittesmaa Brystvorter er som sortebrune Brombær
+en sort Slange rejser sig spillende i Græsset
+jeg nipper af de sortebrune Brombær
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014138">
+<head>
+  <title>Skæbnebaner</title>
+  <firstline>Hvorfor kom du unge Broder</firstline>
+  <source pages="39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvorfor kom du unge Broder
+kom du for at blive hos mig
+eller vil du atter vandre videre
+fjernt fra mig ad nye Skæbnebaner
+skal mit Hjerte
+nu et svulmende og klartrødt Sommerbær
+dirrende i Solens Favntag
+skal det Hjerte gennembores flænses
+af de gule Smertensknive
+skal det krympe sig i Afskedsvé
+eller skal det stadigt aa ufatteligt
+have Lov som nu at aande lykketungt og lue
+hvorfor kom du
+sig mig ved du selv det Broder
+kom du for at blive hos mig
+</poetry>
+</body>
+</text>
+
+<!-- repeated-adjacent-word: »længe længe« står sådan i trykket. -->
+<text id="bech20261014139" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Hjertets Fange</title>
+  <firstline>Min Sjæl bruser</firstline>
+  <source pages="40-41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Sjæl bruser
+mit Hjerte er fuldt indtil Sprængning
+men det maa ikke briste
+dets Mure maa skjule det røde det hede
+der er min Følelse for dig min Elskede —
+som en letlemmet Hjort er du —
+aa dine Øjenbryn
+jeg vil nippe dem med mine Tænder
+aa disse taageslørede Øjne
+jeg vil se ind i dem længe
+jeg vil lukke dem og kysse dine Øjenlaag
+dine tørre altfor tørre Læber
+vil jeg kysse røde skinnende af Saft
+af din og min Livsens Saft
+din Tunge vil jeg mærke
+som en lille forsigtig Slange i min Mund
+
+<pb facs="047.jpg"/>Aa min unge Elskede
+hvorfor kan jeg ikke tage dit Hoved mellem mine Hænder
+og puste mine Ord sagte som en Nattevind
+henover dit saa tilbedte Ansigt
+Herre min Gud
+hvis jeg længe længe
+gemmer min sviende Længsel
+som en stakkels Fange i mit Hjerte
+kommer saa den Dag
+kommer saa den gyldne Aften
+hvor min unge Elskede knæler for mig
+og gemmer sit sorte Hoved i mit Skød?
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014140">
+<head>
+  <title>Drømmebørn</title>
+  <firstline>Som sorte Solsikker staar dine smaa Børn omkring mit Leje</firstline>
+  <source pages="42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Som sorte Solsikker staar dine smaa Børn omkring mit Leje
+med Ibenholts-Glorier om de gyldne Ansigter
+de taageslørede Øjne ser fløjlsbrunt og forsigtigt paa mig
+deres Øjne spørger
+hvad spørger de om?
+beder de deres Moder om Mad?
+vil de suge Livsens Kundskab fra denne monumentale hvilende Moder?
+musestille med sagte smilende Munde
+med hemmelighedsfulde myge Næsebor
+staar de som en Vagt et Hegn omkring mit Leje
+og den mindste Sorteblomst
+holder jeg krystet i Armen
+og jeg trykker mine Læber lykkedrukken men forsigtigt aa forsigtigt
+mod hans bitte dunetbløde Kinder
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Kvinde</title>
+</head>
+<content>
+
+<!-- repeated-adjacent-word: Begge forekomster af »vidste vidste« står sådan i trykket. -->
+<text id="bech20261014141" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Paa Vinhuset</title>
+  <firstline>Ak vidste vidste I</firstline>
+  <source pages="45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ak vidste vidste I
+som jeg skimter smilende til mig gennem Cigarettaagen
+at en Kvindes arme gennemstukne Hjerte
+forbløder for Øjnene af jer?
+hvorfor er I saa blinde saa dumme?
+aa trøsterigt er det
+at skylle den røde Vin ned
+og bare skimte Verden gennem min bedøvede Hjernes Brudeslør
+hvorfor dette besynderlige Ord Brudeslør?
+aa min unge Elskede gifter sig
+maaske i denne Nat maaske i Morgen Nat
+med en tynd bararmet Pige
+der bærer en Hjælm af sort Haar
+presset ned over sit unge fnisende Hoved
+Skaal kære Død!
+</poetry>
+</body>
+</text>
+
+<!-- repeated-adjacent-word: »dryp dryp« står sådan i trykket. -->
+<text id="bech20261014142" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Den enes Død — —</title>
+  <firstline>Naar man i mange Aar har været dyrket af en Mand</firstline>
+  <source pages="46-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Naar man i mange Aar har været dyrket af en Mand
+og man Nat efter Nat har sovet sammen
+som to Zigzag i samme store Seng
+efter først at have pustet Godnat til hinanden
+saa er det noget Ens Hjerte slet ikke kan fatte
+at man nu sidder hen forladt i de samme Stuer
+ser ud over Majmaaneds søde og frodige Grønne
+og ved
+at et Sted nordude under den spøgelsegraa Aftenhimmel
+hvor Lyn paa Lyn hvisler ned i Zigzag
+holder Ens Elskede Bryllupsnat med den anden
+
+Nu hænger han Tøjet sirligt over Stolen
+nu kommer han hen til hende med Hovedet ømt paa Skraa
+<pb n="47" facs="053.jpg"/>nu siger han det
+nu det
+nu det
+og saa om en Stund sidder han paa Hug i Sengen
+og ser forladt ud af Øjnene
+og klør sig lattervækkende tankeløst i Haaret
+nu lægger han sig i Zigzag
+nu puster han hende et stille Godnat ned i Haaret
+og holder hendes Haand under Dynen
+saa sover de trætte ind
+mens Tordenskyllen synger i Tagrenderne
+
+Eller mon hans Hjerne dunkelt besøges af en Tanke
+om hende der nu sidder forladt i deres Stuer
+og dryp dryp græder nedover en lille forskrækket Hund
+der slikker sin Mor varmt og hastigt paa Næsen
+
+To Zigzag i en stor Seng
+mange Zigzag nedover en spøgelsegraa Aftenhimmel
+og ned i den regnvaade Majseng
+
+<pb facs="054.jpg"/>Hvorfor kommer der ikke et Lyn hastigt
+og farer gennem den Elskede og hende
+saa de endnu i Nat kan hvile sammen
+som to Zigzag i samme store Kiste?
+
+Livet er ikke grinagtigt nok
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014143">
+<head>
+  <title>Nordisk Vinter</title>
+  <firstline>I det sorte Vintermørke</firstline>
+  <source pages="49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I det sorte Vintermørke
+ligger de store Byer hen
+som Grotter fyldte af mangefarvede Lys —
+naar Tusmørket kommer
+springer Menneskenes Ildtræer ud
+Ildblomster gror i alle Gaderne —
+
+Vi vil gaa i forgyldte Koncertsale
+og høre Orkestrets Græshoppesang
+vi vil lytte til det store Ha! i Teaterrummet
+vi vil sidde kjoleklædte i Revyernes Parket
+og se Korpigerne svinge med de rosenrøde Ben
+vi vil samles otte Tusind Mand i en Hal
+for at se to Mænd slaas under Projektørernes Lys
+vi vil gaa til Karneval syngende
+med Hattene paa Sned
+og med Vinens flammegule Sole i vore Hjerner — —
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014144">
+<head>
+  <title>Gold Kvinde</title>
+  <firstline>En Digter forlades af sin Elskede</firstline>
+  <source pages="50-51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En Digter forlades af sin Elskede
+og hver en Gang hans Hjerte krymper sig
+springer et Digt frem
+et straalende og varigt Klenodie
+og han blusser op i Glæde
+over det skønne der er bleven til
+
+En Elskerinde forlades af sin Elskede
+hun holder hans nyfødte Barn i sine Arme
+hun ænser det først ikke
+hendes Øjne er blændede af Taarer
+men saa skinner Barnet
+og Moderen ser det og smiler
+
+Men jeg — naar jeg græder —
+blir kun vaad af mine arme Taarer
+<pb facs="057.jpg"/>jeg er hverken Digter eller Elskerinde
+der er hverken Digte
+eller et nyt lille Væsen
+i mine trætte Hænder
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014145">
+<head>
+  <title>Gift Kvinde</title>
+  <firstline>Er det min dybe Lidenskab</firstline>
+  <source pages="52-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Er det min dybe Lidenskab
+der faar dig til at begære en anden?
+Kan din Drengesjæl ikke taale
+at min Følelse bestandigt
+med utalte Ord
+svøber sig om dig som et blødt Klæde?
+din Sjæl er en Jægersjæl
+og jeg det længe kendte Bytte
+
+Mit arme Hjerte
+luk dig som et Fængsel om min Følelse
+min Mund bæv ikke i dine Vige
+men smil fripostigt
+mine Øjne skjul jeres Taarer
+og se skalkagtige ud
+
+<pb facs="059.jpg"/>Mine Veje skal være ukendte for ham
+skønne Klæder vil jeg bære
+jeg vil smyge Kaaben om mig
+jeg vil sige let Farvel
+og liste ud i Natten
+jeg vil drikke
+jeg vil glemme
+jeg vil le til andre
+naar jeg atter kommer hjem
+skal jeg lugte stærkt og sødt
+af andre Mænds Tobak
+
+Hvorfor dette? hvorfor dette?
+aa min Elskede
+hvorfor er dette hvide Ark Papir
+det eneste der skal kende min Sjæl?
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014146">
+<head>
+  <title>Ung Veninde</title>
+  <firstline>Angst er dit Blik i Skumringen</firstline>
+  <source pages="54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Angst er dit Blik i Skumringen
+graadgrim din Mund
+bag dit unge bøjede Hoved
+luer en guldflammet Himmel
+sagte drypper forsagte Ord
+over de flettede Hænder
+du spørger forvirret
+hvorfor dog hvorfor
+jeg stryger Kinden
+jeg stryger Haaret
+der laaner Guld
+fra Himmelbranden
+du er jo ung endnu
+du er jo saa ung endnu
+og mange Slør skal løftes
+før du kan se
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014147">
+<head>
+  <title>Jødinde</title>
+  <firstline>Mit Blod drømmer — —</firstline>
+  <source pages="55-56"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mit Blod drømmer — —
+
+i røde Floder gaar det tyst i dunkle Gange —
+om Lys der flakker drømmer det
+om krumme Fuglefingre
+som Guldet glider gennem
+som Æggeblommer rødt
+og rødt som Sol der synker
+
+Mit Blod drømmer — —
+
+om Bøger drømmer det
+uendeligt i Rækker
+en buet Pande bøjet ned
+mod Bogen under Lampeskær
+hvid Ild der dirrer staar om Panden
+
+<pb facs="062.jpg"/>Mit Blod drømmer — —
+
+om Guld og Cedertræ
+om Ibenholt og matte Perler
+om Gedemælk og Honning
+og vinrødt Draperi om gyldne Hofter
+om skønne Søstre ved de Bjerge der er blaa —
+som Sværd staar Solens Guld ned mod jer Søstre
+og Baalets Flammer rejser sine Spyd for jeres Fødder
+I løfter Armene bag stejle Nakker
+og drømmer ud mod Horizontens Dis
+
+Mit Blod drømmer — —
+
+om Rachel der er solvarm moden
+om Jakob der har kæmpet haabet
+og faaet Lea først
+saa atter kæmpet ventet
+nu staar hun Rachel ved den klare Brønd
+og læsker den der beder
+og Aftensolen breder Lys
+paa tænksom Pande og i Haarets Floder
+
+Mit Blod drømmer — —
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014148">
+<head>
+  <title>Dagens Cirkel</title>
+  <firstline>Hver Morgen vaagner jeg op</firstline>
+  <source pages="57-58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hver Morgen vaagner jeg op
+kampberedt og stærk
+og møder den nye Dag med nye Haab
+jeg jager Søvnens sidste Slør paa Flugt
+med brunsort Kaffe og en Morgensang
+og krummer Brød til Fuglene
+der muntert fordringsfulde venter paa Altanen
+saa tar jeg Plads ved Skrivebordet
+med rynked Bryn — en lang Tot Haar ned mod Maskinen
+og klaprer løs — en Sky af Sølvlyd staar i Vejret
+det er min Tankes Flugt
+sat om i det haandgribelige
+
+Og Dagen gaar med vælig Kamp med Stoffet
+til Mørket sænkes over Byen
+det var den Stund du plejede at komme
+<pb facs="064.jpg"/>og drikke The i gustent Skær fra Lysets Flamme
+da blir jeg lutter Øre
+da blir jeg lutter Hjertevé
+da visner jeg
+og Tiden drypper spidst og gult
+sin bitre Gift imod mit Hjerte —
+igen en Dag med skuffet Haab
+han kommer ikke kommer ikke —
+
+Saa er det Dagens sidste Stund
+jeg knæler ned og beder
+om Kraft og smuk Taalmodighed
+om Evne til at fatte Skæbnens Mening
+saa lægger jeg min Kind mod Puden taarevædet
+
+Hver Morgen vaagner jeg op
+kampberedt og stærk
+beredt til Glæden
+hver Kvæld naar Mørket sænkes over Byen
+tappes jeg for min Livsens Kraft
+og visner
+</poetry>
+</body>
+</text>
+
+<!-- repeated-adjacent-word: »længe længe« står sådan i trykket. -->
+<text id="bech20261014149" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Maj</title>
+  <firstline>I den dunkle Æblelund</firstline>
+  <source pages="59-60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I den dunkle Æblelund
+hvor forvredne Stammer
+tegner sig mod Skumringsmulmet
+sidder jeg fortabt alene
+paa en vindskæv Havebænk
+hører hvor min gamle Hund
+pusler mellem Mos og Blade
+mindes Tornerosehaven
+hvor vi boede dengang du og jeg
+og naar Natten kom som nu
+gik vi om i Havens Gange
+under Æbletræer der dryssed —
+og med Æblesne i Haaret
+og med Kyssen og med Hvisken
+stænged vi de gamle Skodder
+og krøb sammen
+ind i Himmelsengens Mørke
+
+<pb facs="066.jpg"/>Kirkeuret kløver sprukkent
+og forsigtigt Luften nu som dengang —
+mildt som Majnat vederkvægende
+væder varme Taarer mine Kinder —
+under Maanens Sølvsegl
+dykker jeg mit vaade Ansigt
+ned i Æbletræets Blomsteraasyn
+som jeg kysser længe længe
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014150">
+<head>
+  <title>Dengang</title>
+  <firstline>En sort Kat smutter op ad en Havegang</firstline>
+  <source pages="61-62"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En sort Kat smutter op ad en Havegang
+det var her du boede
+dengang vi traf hinanden
+i vor store Ungdom —
+der er Maanepletter paa Stakittet
+der har ogsaa været Maanepletter dengang
+naar du vendte hjem fra hende
+der var din
+
+Jeg ser dig mellem Havegangens Hække
+dine Hænders lade Dansen
+de berømte Stjerneøjne
+Smilets gule Spillen
+
+Nej det er jo den feterte
+Sjælesanger af Guds Naade!
+<pb facs="068.jpg"/>han der dengang gik i disse Havegange
+var en ung Dreng
+bleg og brændende
+oftest med en Bog i Haanden
+
+Under Hyld Jasmin vi kyssed rødt og længe
+skjult i Sommernattens varme Mulm og Krydderlugte
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014151">
+<head>
+  <title>Tomme Stuer</title>
+  <firstline>Længslen gnaver i mit Hjerte</firstline>
+  <source pages="63-64"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Længslen gnaver i mit Hjerte
+hvorfor rejste du din Vej?
+hvorfor er der aa saa dødsenstavst omkring mig?
+gennem Dørens Sprækker klager Vinden tuder hyler —
+gaar der ogsaa store Storme over Jylland?
+basker Vinden i din Regnvejrsfrakke
+pisker salte Taarer i dit Øje?
+eller sidder du i lunt Lag
+ler og skaaler snakker blinker
+og gir arme Tiggere en Skilling
+„for vi er saa lykkelige?“
+eller er du stivnet standset
+— dine Øjne ruger ofte —
+føler undrende og frihedstrodsig
+<pb facs="070.jpg"/>Tankerne imod mig flagre?
+Længslen gnaver sprænger Hjertet
+lad mig leve i din Nærhed
+jeg vil give netop hvad du vil og intet kræve
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014152">
+<head>
+  <title>Ophør</title>
+  <firstline>Jeg vil ikke blive ved at leve</firstline>
+  <source pages="65-66"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg vil ikke blive ved at leve
+
+Jeg vil ikke blive ved at tjene Penge
+tjene Penge bare for at leve
+leve bare for at længes
+sønderslides
+græde
+
+Jeg vil ikke dræbe Kroppen
+som Gud gav mig
+jeg vil bare holde op
+at tjene Penge for at leve
+
+Jeg vil sætte mig i Toget
+jeg vil bruse ud i Sommernatten
+bruse rase stadigt nordpaa
+<pb facs="072.jpg"/>op i store stille Vidder
+op hvor Nætterne er perleblege
+og hvor ingen Fødder træder
+og hvor ingen Stemmer længer høres
+
+Dér med Ryggen mod et Sangtræ
+stort og favnende i al sin Grønhed
+vil jeg sidde ganske stille ganske ene
+indtil alting hører op
+
+Lade Blikket gaa mod Himlens Stjerner
+samme Stjerner som nu funkler i hans unge Øjne
+lade Blikket gaa mod Maanen
+samme Maane som nu sniger puslehvid sig i hans Kammer
+lægger Sølvglans over Sengen
+over Kinden
+over Haaret
+<nonum>— — —</nonum>
+Til min Krop er segnet over Træets Rødder
+vil jeg spinde mine Tanker om ham
+ind i Træets store alvorsfulde Salme
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014153">
+<head>
+  <title>Fyrretræet</title>
+  <firstline>Jeg er et grønt Spiger</firstline>
+  <source pages="67"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er et grønt Spiger
+i Jordens roterende Kugle
+jeg svinger gennem Nat og Dag
+og gennem Aarets Tider
+Æterfingre reder mit filtrede Haar
+jeg rider under Solen
+
+Jeg er Sangtræet
+hør mine dybe Toner
+de er skabt af de vældige Storme
+der gungrer gennem mig
+og naar Solilden stille luende
+buer sig henover mig
+de er blevet til
+under isblaa majestætiske Nætter
+
+Jeg er et grønt Spiger
+i Jordens roterende Kugle
+Æterfingre reder mit filtrede Haar
+</poetry>
+</body>
+</text>
+
+<text id="bech20261014154">
+<head>
+  <title>Kommer der en Fugl — —</title>
+  <firstline>Kommer der en Fugl og bygger Rede hos mig — —</firstline>
+  <source pages="68"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kommer der en Fugl og bygger Rede hos mig — —
+jeg er et stort Træ paa en Klippe
+en grøn Verden i Verden
+modne Safter driver af mine Porer
+jeg er fuld af duftende Gemmesteder
+
+Nede i Dalen ser jeg smaa Hverdagshuse
+med Pyntehaver og galende Flag
+jeg ser de tunge Eksprestog
+med vajende Manker
+og Ildblomst i Brystet
+stønne henad de løbende Skinner
+der fortaber sig langtude
+hvor Jorden runder
+
+Jeg er et tonende Træ paa en Klippe
+en grøn Verden i Verden
+kommer der en Fugl og bygger Rede hos mig — —
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
