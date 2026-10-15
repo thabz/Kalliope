@@ -754,6 +754,11 @@ Eksempel (text kilde med arv og override):
 
 Regler:
 
+- Når den valgte værkkilde har både `facsimile` og `facsimile-pages-num`, skal
+  hver tekst angive `source/@pages` eller, for unummererede sider,
+  `source/@facsimile-pages`. Det gælder også prosa og tekster i sektioner.
+  Facsimileintervaller er enbaserede, lukkede og ikke-faldende og må ikke
+  overskride kildens sideantal. Korpustesten håndhæver kravet.
 - `pages` skal være én fuld sidebetegnelse eller et lukket, ikke-faldende
   interval. Skriv eksempelvis `102-108`, aldrig den bibliografiske forkortelse
   `102-08`; åbne intervaller som `106-` er ugyldige.
