@@ -787,6 +787,9 @@ Samle os i Himlens Fred!
   <title><num>21.</num>Den norske Bondes Sang</title>
   <firstline>Jeg er saa fro, jeg er saa glad</firstline>
   <source pages="20-22"/>
+  <places>
+    <place ref="norway" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1171,6 +1174,9 @@ Til Livets Sol gaaer ned.
   <title><num>33.</num>Fiskersang</title>
   <firstline>Nattens Dunkelhed er svunden</firstline>
   <source pages="30-31"/>
+  <places>
+    <place ref="baltic-sea" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1795,6 +1801,10 @@ For Barnets lyksalige Time!
   <title><num>49.</num>De hellige tre Konger</title>
   <firstline>Dejlig er den Himmel blaa</firstline>
   <source pages="48-53"/>
+  <places>
+    <place ref="bethlehem" relation="setting" primary="true"/>
+    <place ref="jerusalem" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3157,6 +3167,9 @@ I Tillid er kun Baade! —
     <note>* „Ur“ ɔ: en Samling af nedstyrtede Fjeldmasser; — „Bamsen“ ɔ: Bjørnen; „Bojgd“ ɔ: en Samling af Gaarde; „Skyldløse“ i Originalen staaer „meenløse“, som man næppe vilde forstaae her; — „Myren“ ɔ: Mosen; — „Multer“, et Slags Bær.</note>
   </notes>
   <source pages="90-92"/>
+  <places>
+    <place ref="norway" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3813,6 +3826,9 @@ Sildigste Slægter velsigne dit Navn!
   <title><num>88.</num>Sommervise</title>
   <firstline>Den friske, varme Sommerluft</firstline>
   <source pages="109-110"/>
+  <places>
+    <place ref="denmark" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4483,6 +4499,9 @@ Vil visne, som en Blomst i fremmed Jord.
   <title><num>103.</num>Danmarks Skjønhed</title>
   <firstline>Der er et Land; dets Sted er højt mod Norden</firstline>
   <source pages="129-130"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5162,6 +5181,9 @@ Mig Bøn og Viisdom lære.
     <note>* Er derimod ikke noget Brudstykke. Forfatteren har nemlig erklæret mig, at det Vers, der i Almindelighed gaaer som dette Digts næstsidste, er en Tilsætning af Rahbek. Der stod rigtignok der engang et Grundbillede til den rahbekske Tegning; men det Vers har aldrig været trykt, og Forfatteren ønsker ej heller, at det nu skeer. Iøvrigt er dette herlige Digt, — et levende Udtryk af enhver ædel Dansks helligste Følelser, — skrevet paa Sydhavet, imedens Forfatteren var Skibspræst.</note>
   </notes>
   <source pages="149-151"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5246,6 +5268,9 @@ Takker Gud, mens fra min Læbe lyder:
   <title><num>117.</num>Bøn for Danmark og dets Konge</title>
   <firstline>Den kolde Nat er flygtet med sin Skygge</firstline>
   <source pages="152"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7417,6 +7442,9 @@ Hvo er dig, Gud! blandt Engle liig?
   <title><num>154.</num>Vaarsang</title>
   <firstline>Op! sjung og glæd dig, Danmarks Søn</firstline>
   <source pages="220-221"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7857,6 +7885,9 @@ Sov, min lille Glut!
   <title><num>161.</num>Flugten til Amerika</title>
   <firstline>Dengang jeg var en lille En</firstline>
   <source pages="233-238"/>
+  <places>
+    <place ref="america" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7994,6 +8025,9 @@ Paa Bunden af Sagosuppen.
     <note>Uddrag af <xref poem="moellerpm20010502513"/>.</note>
   </notes>
   <source pages="238-241"/>
+  <places>
+    <place ref="lund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8068,6 +8102,9 @@ Og skrige gjorde det lidet Barn, tilmed den lede Kvinde.
   <title><num>163.</num>Fru Martes Kilde</title>
   <firstline>Fru Marte sad paa Karshøjgaard</firstline>
   <source pages="242-244"/>
+  <places>
+    <place ref="karise" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8280,6 +8317,9 @@ Farvel, nu svandt den sidste Aftenstraale! —
   <title><num>166.</num>Savojarden og Bjørneungen</title>
   <firstline>Hvor Boulevardens Vrimmel tættest bølger</firstline>
   <source pages="248-254"/>
+  <places>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8732,6 +8772,9 @@ Min Grav!
     <note>Uddrag af <xref poem="winther2018090605"/>.</note>
   </notes>
   <source pages="263-266"/>
+  <places>
+    <place ref="toldboden-copenhagen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8996,6 +9039,10 @@ Med Venner i Lys vi tale.
   <title><num>175.</num>Fædrelandskjærlighed</title>
   <firstline>Du Plet af Jord, hvor Livets Stemme</firstline>
   <source pages="272-276"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="norway" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9107,6 +9154,9 @@ Er Maalet som vi stræbe til.
   <title><num>176.</num>Fædrelandssang</title>
   <firstline>Dybt under Nordens Himmel</firstline>
   <source pages="276-278"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9164,6 +9214,9 @@ Skal danske Hjerter slaae.
   <title><num>177.</num>Fædrelandssang</title>
   <firstline>Blomstrende Enge og kornrige Vange</firstline>
   <source pages="278-279"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9206,6 +9259,9 @@ Himlen velsigne vor Drot og vort Land!
   <title><num>178.</num>Danmarks Priis</title>
   <firstline>Langt højere Bjerge saa vide paa Jord</firstline>
   <source pages="279-281"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9274,6 +9330,9 @@ Hans Alder højloves som Fredegods Tid!
   <title><num>179.</num>Hjemve</title>
   <firstline>Underlige Aftenlufte</firstline>
   <source pages="282-285"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9887,6 +9946,9 @@ Nedlægger jeg mit Hoved.
   <title><num>188.</num>Kong Frode og Gubben</title>
   <firstline>Kong Frode højt ved Gilde sad</firstline>
   <source pages="303-305"/>
+  <places>
+    <place ref="lejre" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9963,6 +10025,9 @@ Ned paa hans Rustning flød.
     <note>Dette er et uddrag af en længere tekst.</note>
   </notes>
   <source pages="305-307"/>
+  <places>
+    <place ref="lejre" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10039,6 +10104,10 @@ I Horn og skaarne Bægre; den Drik var sød og klar.
     <note>*80. Historien her er saa almeenbekjendt — jeg har kun det at anmærke, at jeg har tilladt mig enkelte Friheder og Forandringer i Digtet, hvilket jeg, ihvor ubetydelige de end ere, dog visselig ikke havde vovet, hvis det endnu, som for 30 Aar siden, som Sang havde levet paa Alles Læber.</note>
   </notes>
   <source pages="308-310"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+    <place ref="lejre" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10124,6 +10193,10 @@ Thi Viggo har hævnet sin Konge!
     <note>*81. Det kunde synes dumdristigt af mig, at jeg her har gjengivet dette Digt efter min egen Behandling, skjønt baade Grundtvig og Petersen tidligere have behandlet det. Men med al min dybe Ærbødighed for begge disse herlige Mænd, savnede jeg dog ved dette Digt Noget hos dem begge, og jeg vovede at vende mig fra dem til selve Originalen, og gjengive denne paa min egen Maade. Hvad jeg vovede, indseer jeg vel, men hvad jeg følte, før jeg vovede det, veed heller Ingen bedre end jeg selv. Hverken Overilelse eller Selvtillid har jeg Grund til at bebrejde mig. „Mejlfarsund“ ɔ: det lille Bælt ved Middelfart; — „Gjedsør“ ɔ: den sydligste Pynt af Falster; — „Dannebod“ ɔ: de Danskes Trøst; — „Konning Harald“ ɔ: Harald Blaatand; „ravest“ ɔ: rankest, højest; — „Bure“ ɔ: Værelse, Borg; — „Kure“ ɔ: Omsorg.</note>
   </notes>
   <source pages="310-315"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="dannevirke" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10262,6 +10335,9 @@ Naar hun er i Dvale!
   <title><num>192.</num>Hakon Adelsteens Vise</title>
   <firstline>Ung Adelsteen paa Tinge stod</firstline>
   <source pages="315-316"/>
+  <places>
+    <place ref="norway" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10580,6 +10656,9 @@ Han hedder Saxe Grammatikus.
     <note>Uddrag af <xref poem="blicher2003091558"/>.</note>
   </notes>
   <source pages="326-327"/>
+  <places>
+    <place ref="iceland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10761,6 +10840,9 @@ Nattergalen der og slaaer.
     <note>Uddrag af <xref poem="folkeviser2018041080"/>.</note>
   </notes>
   <source pages="332-340"/>
+  <places>
+    <place ref="randers" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11002,6 +11084,10 @@ Vil tjene sit Fædreland!
     <note>Uddrag af <xref poem="winther2018090603"/>.</note>
   </notes>
   <source pages="341-345"/>
+  <places>
+    <place ref="koldinghus" relation="setting" primary="true"/>
+    <place ref="holstein" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11135,6 +11221,10 @@ Med stærke Kalve to.“
     <note>Uddrag af <xref poem="folkeviser2018041081"/>.</note>
   </notes>
   <source pages="345-351"/>
+  <places>
+    <place ref="sweden" relation="setting" primary="true"/>
+    <place ref="helsingborg" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11353,6 +11443,9 @@ Kvinden idag.
     <note>*90. At dette Digt ingen Kjæmpevise er, viser Forfatterens Navn, skjønt Kjæmpevisetonen er vel vedligeholdt. — Man erindre, at dengang, i Kristian den 1stes Tid, hørte Skaane endnu til Danmark, og at det var først en langt senere Tid, Freden til Roskilde 1658, der gjorde det svensk, medens en endnu langt senere Tid, Krigen fra 1709 til 1720, først gjorde det svensksindet. Iver Axelsen er den berømte, rige og mægtige Thott af dette Navn.</note>
   </notes>
   <source pages="353-358"/>
+  <places>
+    <place ref="lund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11639,6 +11732,9 @@ Kristus selv i Favnen slutter.
     <note>Uddrag af <xref poem="moellerpm20010502514"/>.</note>
   </notes>
   <source pages="363-365"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11858,6 +11954,9 @@ Hos hvem hans Minde blev koldt!
     <note>*95. Det er historisk, at det kostede ingen ringe Umage for nogle Aar siden, at gjenfinde det Sted, hvor Stjerneborgen havde staaet. Et Dige af Kampsteen omkring det, ved Eftergravningen tilblevne, vandopfyldte Hul er saagodtsom det Eneste, der nufortiden udmærker hin engang verdensberømte Plet.</note>
   </notes>
   <source pages="370-371"/>
+  <places>
+    <place ref="stjerneborg" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11918,6 +12017,10 @@ Han selv er nok for os, — nok for ham er friske Løv!
     <note>* Det var 1612, at de kjekke Guldbrandsdøler, under Fogden Lars Gram, nedhuggede den skotske Oberst Zinklar, med hele hans, til svensk Tjeneste hyrede, Følge, paa den her anførte Fjeldsti Kringlen. — „Grande“ ɔ: Nabo; — „Nøkken“ ɔ: Flodguden.</note>
   </notes>
   <source pages="372-375"/>
+  <places>
+    <place ref="gudbrandsdalen" relation="setting" primary="true"/>
+    <place ref="romsdal" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12127,6 +12230,9 @@ Hun faaer en salig Ende.
   <title><num>211.</num>Romanse</title>
   <firstline>Ved Sundet en truende Flaade gik</firstline>
   <source pages="379-380"/>
+  <places>
+    <place ref="copenhagen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12162,6 +12268,9 @@ Endnu er vi vore egne!
     <note>*97. Det Sagn, at den underskjønne Gefion, som forhen er bleven omtalt, fortryllede Kong Gylfes Sønner saaledes, at de lode sig spænde for hendes Plov, og hun paa den Maade pløjede Sjælland ud af Sverrig midt i Østersøen, er saa almindelig bekjendt og et Par Gange saa herlig besjunget af Oehlenschläger. — Gøste, der nu atter vilde pløje det til sig, er den svenske Kong Karl den 10de Gustav, og det Træ, i hvilket Kongefuglen Frederik den 3die havde bygget sin Rede, som han ej atter vil flygte fra, er naturligviis Kjøbenhavn, der saa heltemodig forsvaredes, ej blot af Garnisonen, men og af dens Borgere og Studenterne.</note>
   </notes>
   <source pages="380-381"/>
+  <places>
+    <place ref="copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12357,6 +12466,9 @@ Men Danmark gjemmer end, tro som Guld,
     <note>*99. Denne herlige Karakterskildring af det stolte Brødrepar, Jens og Niels Juel, er aldeles historisk. Det er ligeledes bekjendt, at Kristian den 5te fra Kjøge Kirke saae til, hvorledes Slaget gik.</note>
   </notes>
   <source pages="386-388"/>
+  <places>
+    <place ref="koge-bay" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12512,6 +12624,9 @@ Paa raske Orlogshelte! —
     <note>Uddrag af <xref poem="oehlenschlaeger20190216136"/>.</note>
   </notes>
   <source pages="391-393"/>
+  <places>
+    <place ref="norderhov" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -13084,6 +13199,9 @@ Hundredtusind Blomster favne dig!
     <note>Uddrag af <xref poem="bagger2001042401"/>.</note>
   </notes>
   <source pages="409-413"/>
+  <places>
+    <place ref="kattegat" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

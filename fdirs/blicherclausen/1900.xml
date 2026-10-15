@@ -688,6 +688,12 @@ Gud naade dig! hvis du har følt for tungt, — følt for tungt, at det sang en 
   <title>Violin</title>
   <firstline>Rejs dig, Slyngel! Jeg har vundet</firstline>
   <source pages="25-62" facsimile-pages="38-75"/>
+  <places>
+    <place ref="prague" relation="setting"/>
+    <place ref="vienna" relation="setting"/>
+    <place ref="tyrol" relation="setting"/>
+    <place ref="venice" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2427,6 +2433,9 @@ gør atter mine Øjne blinde!
   <title>Violin</title>
   <firstline>Ved Du af, at nu er det ti Uger siden</firstline>
   <source pages="69-101" facsimile-pages="82-114"/>
+  <places>
+    <place ref="tyrol" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5860,6 +5869,9 @@ lukker jeg vidt, vidt op —
   <title>Violin</title>
   <firstline>Gud! hør mig!</firstline>
   <source pages="157-202" facsimile-pages="170-215"/>
+  <places>
+    <place ref="vienna" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7802,6 +7814,9 @@ Herre! — den Sjæl er <w>din!</w>
   <title>Intermezzo</title>
   <firstline>Og det var en Søndag Aften</firstline>
   <source pages="205-208" facsimile-pages="218-221"/>
+  <places>
+    <place ref="vienna" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7929,6 +7944,9 @@ evnede siden at glemme det —!
   <title>Violin</title>
   <firstline>Fra Haven stiger en krydret Duft</firstline>
   <source pages="209-220" facsimile-pages="222-233"/>
+  <places>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

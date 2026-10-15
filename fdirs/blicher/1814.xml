@@ -166,6 +166,9 @@ Naar ingen veed hvor Skjaldens Gravhøj findes,
   <indextitle>Klintekorset</indextitle>
   <firstline>Dejlig est du, mit Østhavs Møe!</firstline>
   <source pages="7-14"/>
+  <places>
+    <place ref="mons-klint" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1081,6 +1084,9 @@ Cathrina Wernicke! bort til Udødelighed.
   <indextitle>Bjørnkjærs Ruiner</indextitle>
   <firstline>Bjørnkjær Slot ligger ned i Gruus</firstline>
   <source pages="50-55"/>
+  <places>
+    <place ref="bjornkjaer-castle" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1297,6 +1303,9 @@ Meer end Livet værd.
   <indextitle>Skibbrudet</indextitle>
   <firstline>Solen gaaer mørkrød ned i Sydvest</firstline>
   <source pages="60-64"/>
+  <places>
+    <place ref="jutland" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1410,6 +1419,10 @@ Naar Himlenes Herre bevæger sin Haand.
   <title>Schveitzeren i Paris</title>
   <firstline>Er det Skyer</firstline>
   <source pages="65-67"/>
+  <places>
+    <place ref="switzerland" relation="subject" primary="true"/>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1477,6 +1490,10 @@ O Schweitz! o Fødeland!
   <title>Provençalen i Engelland</title>
   <firstline>Spred dig, o spred dig</firstline>
   <source pages="67-69"/>
+  <places>
+    <place ref="provence" relation="subject" primary="true"/>
+    <place ref="england" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1526,6 +1543,10 @@ O min Orangelund!
   <title>Araberen i Schweitz</title>
   <firstline>Døvende Torden!</firstline>
   <source pages="69-70"/>
+  <places>
+    <place ref="arabia" relation="subject" primary="true"/>
+    <place ref="switzerland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1565,6 +1586,9 @@ O Du min gule Ørk!
   <title>Huroneren i Arabien</title>
   <firstline>Lumre Sandørken</firstline>
   <source pages="70-71"/>
+  <places>
+    <place ref="arabia" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1605,6 +1629,10 @@ Flodrige Fødeland!
   <title>Nordmanden i Holland</title>
   <firstline>Løft dig af Sumperne</firstline>
   <source pages="72-73"/>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+    <place ref="netherlands" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1717,6 +1745,10 @@ Blandt mine Fædres lyngbegroede Grave.
   <title>Første Sang</title>
   <firstline>Stundom kommer et Glimt fra Oldtids henfarne Dage</firstline>
   <source pages="75-94"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="isefjord" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1946,6 +1978,10 @@ Paa Regners Bølger svømme hans Ætlinges Liig.
   <title>Anden Sang</title>
   <firstline>Himmelens Stjerner funkle paa mørkeblaa Hvælving</firstline>
   <source pages="95-114"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+    <place ref="lejre" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2171,6 +2207,9 @@ Den sjunge de Glæder, som mægtigen rørte hans Sjæl.
   <title>Tredie Sang</title>
   <firstline>Stat op, o Habor! stat op du frygtløse Kæmpe!</firstline>
   <source pages="115-134"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2394,6 +2433,10 @@ Og Ragnarokur indhyller Jorden i Mulm!
   <title>Fjerde Sang</title>
   <firstline>Hræsvælgur ryster sin Vinge, Nordvinden bruse</firstline>
   <source pages="135-158"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+    <place ref="lejre" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
