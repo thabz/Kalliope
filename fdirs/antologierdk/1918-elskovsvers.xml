@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1918-2" author="hanseno" status="complete" type="poetry">
+<kalliopework id="1918-elskovsvers" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>Elskovsvers og andre Digte fra "Buch der Lieder"</title>
   <year>1918</year>
+  <notes>
+    <note>Danske gendigtninger af Heinrich Heine, udvalgt og tildels oversat af Olaf Hansen.</note>
+  </notes>
   <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1918-2-p1.jpg"><transcription>Heinrich Heine / Elskovsvers og andre Digte / fra „Buch der Lieder“. // Udvalgt og tildels oversat af / Olaf Hansen. // Gyldendalske Boghandel. / København. / 1918</transcription></picture>
+    <picture type="titlepage" src="1918-elskovsvers-p1.jpg"><transcription>Heinrich Heine / Elskovsvers og andre Digte / fra „Buch der Lieder“. // Udvalgt og tildels oversat af / Olaf Hansen. // Gyldendalske Boghandel. / København. / 1918</transcription></picture>
   </pictures>
-  <source facsimile="11540804213F-color" facsimile-pages-num="125" facsimile-pages-offset="7">Heinrich Heine: <i>Elskovsvers og andre Digte fra "Buch der Lieder"</i>, udvalgt og tildels oversat af Olaf Hansen, Gyldendalske Boghandel, København, 1918.</source>
+  <source facsimile="11540804213F-color" facsimile-pages-num="125" facsimile-pages-offset="7">
+    <title>Elskovsvers og andre Digte fra "Buch der Lieder"</title>
+    <editor id="hanseno" type="editor">Olaf Hansen</editor>
+    <place>København</place>
+    <publisher>Gyldendalske Boghandel</publisher>
+    <year>1918</year>
+  </source>
 </workhead>
 <workbody>
-<text id="hanseno2026080818">
+<text id="hanseno2026080818" author="hanseno">
 <head>
   <title>Indledning</title>
   <source pages="9-11" facsimile-pages="16-18"/>
@@ -287,7 +296,7 @@ og drømme en salig Drøm.
 </body>
 </text>
 
-<text id="hanseno2026080826">
+<text id="hanseno2026080826" author="hanseno">
 <head>
   <title><num>VIII.</num>Lotusblomsten ængstes</title>
   <firstline>Lotusblomsten ængstes</firstline>
@@ -317,7 +326,7 @@ af Elskov og Elskovsve.
 </body>
 </text>
 
-<text id="hanseno2026080827">
+<text id="hanseno2026080827" author="hanseno">
 <head>
   <title><num>IX.</num>Giger og Fløjter klinger</title>
   <firstline>Giger og Fløjter klinger</firstline>
@@ -342,7 +351,7 @@ højt i den Bryllupshal.
 </body>
 </text>
 
-<text id="hanseno2026080828">
+<text id="hanseno2026080828" author="hanseno">
 <head>
   <title><num>X.</num>Meget har de fortalt dig</title>
   <firstline>Meget har de fortalt dig</firstline>
@@ -487,7 +496,7 @@ vi bliver rolig dernede.
 </body>
 </text>
 
-<text id="hanseno2026080833">
+<text id="hanseno2026080833" author="hanseno">
 <head>
   <title><num>XV.</num>Der staar en Fyrr alene</title>
   <firstline>Der staar en Fyrr alene</firstline>
@@ -548,7 +557,7 @@ og gør min Barm saa veg.
 </body>
 </text>
 
-<text id="hanseno2026080835">
+<text id="hanseno2026080835" author="hanseno">
 <head>
   <title><num>XVII.</num>Han holdt meget af hende</title>
   <firstline>Han holdt meget af hende</firstline>
@@ -625,7 +634,7 @@ du stille, bedrøvede Mand!
 </body>
 </text>
 
-<text id="hanseno2026080838">
+<text id="hanseno2026080838" author="hanseno">
 <head>
   <title><num>XX.</num>De har forvoldt mig Pine</title>
   <firstline>De har forvoldt mig Pine</firstline>
@@ -655,7 +664,7 @@ og fik mig aldrig kær.
 </body>
 </text>
 
-<text id="hanseno2026080839">
+<text id="hanseno2026080839" author="hanseno">
 <head>
   <title><num>XXI.</num>De sad og nød deres Tevand</title>
   <firstline>De sad og nød deres Tevand</firstline>
@@ -695,7 +704,7 @@ at pjatte dit Elskovspjat.
 </body>
 </text>
 
-<text id="hanseno2026080840">
+<text id="hanseno2026080840" author="hanseno">
 <head>
   <title><num>XXII.</num>Høstvinden rasler med Løvet</title>
   <firstline>Høstvinden rasler med Løvet</firstline>
@@ -735,7 +744,7 @@ saa dumt endnu, som du kan?”
 </body>
 </text>
 
-<text id="hanseno2026080841">
+<text id="hanseno2026080841" author="hanseno">
 <head>
   <title><num>XXIII.</num>Der falder en Stjærne fra Himlen</title>
   <firstline>Der falder en Stjærne fra Himlen</firstline>
@@ -770,7 +779,7 @@ og Svanens Sang døet hen.
 </body>
 </text>
 
-<text id="hanseno2026080842">
+<text id="hanseno2026080842" author="hanseno">
 <head>
   <title><num>XXIV.</num>Nat laa paa mine Øjne</title>
   <firstline>Nat laa paa mine Øjne</firstline>
@@ -848,7 +857,7 @@ Og se — jeg vaagned op.
   <title>Hjemkomst</title>
 </head>
 <content>
-<text id="hanseno2026080843">
+<text id="hanseno2026080843" author="hanseno">
 <head>
   <title><num>XXV.</num>Jeg ved ej hvorfor i Grunden</title>
   <firstline>Jeg ved ej hvorfor i Grunden</firstline>
@@ -893,7 +902,7 @@ paa Loreleyens Sang.
 </body>
 </text>
 
-<text id="hanseno2026080844">
+<text id="hanseno2026080844" author="hanseno">
 <head>
   <title><num>XXVI.</num>Mit Hjærte er dybt bedrøvet</title>
   <firstline>Mit Hjærte er dybt bedrøvet</firstline>
@@ -938,7 +947,7 @@ Gud give, han skød mig ihjel.
 </body>
 </text>
 
-<text id="hanseno2026080845">
+<text id="hanseno2026080845" author="hanseno">
 <head>
   <title><num>XXVII.</num>Natten er fugtig og stormfuld</title>
   <firstline>Natten er fugtig og stormfuld</firstline>
@@ -978,7 +987,7 @@ piber ved Pigens Fod.
 </body>
 </text>
 
-<text id="hanseno2026080846">
+<text id="hanseno2026080846" author="hanseno">
 <head>
   <title><num>XXVIII.</num>Paa Reisen traf jeg tilfældig</title>
   <firstline>Paa Reisen traf jeg tilfældig</firstline>
@@ -1028,7 +1037,7 @@ der lod mig grumt forgaa.
 </body>
 </text>
 
-<text id="hanseno2026080847">
+<text id="hanseno2026080847" author="hanseno">
 <head>
   <title><num>XXIX.</num>Vi sad ved Fiskerhuset</title>
   <firstline>Vi sad ved Fiskerhuset</firstline>
@@ -1145,7 +1154,7 @@ for, som Guderne, at sove.
 </body>
 </text>
 
-<text id="hanseno2026080850">
+<text id="hanseno2026080850" author="hanseno">
 <head>
   <title><num>XXXII.</num>Hver Morgen, naar jeg kommer</title>
   <firstline>Hver Morgen, naar jeg kommer</firstline>
@@ -1180,7 +1189,7 @@ nævner man ogsaa mit.
 </body>
 </text>
 
-<text id="hanseno2026080851">
+<text id="hanseno2026080851" author="hanseno">
 <head>
   <title><num>XXXIII.</num>Som et Taagebilled dukker</title>
   <firstline>Som et Taagebilled dukker</firstline>
@@ -1210,7 +1219,7 @@ hvor jeg fordum mistede alt.
 </body>
 </text>
 
-<text id="hanseno2026080852">
+<text id="hanseno2026080852" author="hanseno">
 <head>
   <title><num>XXXIV.</num>Det er stille Nat, der er ingen paa Gaden</title>
   <firstline>Det er stille Nat, der er ingen paa Gaden</firstline>
@@ -1240,7 +1249,7 @@ i fordums Tid paa det samme Sted?
 </body>
 </text>
 
-<text id="hanseno2026080853">
+<text id="hanseno2026080853" author="hanseno">
 <head>
   <title><num>XXXV.</num>Hvor kan du sove roligt</title>
   <firstline>Hvor kan du sove roligt</firstline>
@@ -1270,7 +1279,7 @@ end alle, der gaar igen.
 </body>
 </text>
 
-<text id="hanseno2026080854">
+<text id="hanseno2026080854" author="hanseno">
 <head>
   <title><num>XXXVI.</num>Jeg stod i dunkle Drømme</title>
   <firstline>Jeg stod i dunkle Drømme</firstline>
@@ -1300,7 +1309,7 @@ Jeg kan ikke tro, det er sandt.
 </body>
 </text>
 
-<text id="hanseno2026080855">
+<text id="hanseno2026080855" author="hanseno">
 <head>
   <title><num>XXXVII.</num>Aarene kommer og vandrer</title>
   <firstline>Aarene kommer og vandrer</firstline>
@@ -1325,7 +1334,7 @@ ved din Fod, Madam, før jeg døde:
 </body>
 </text>
 
-<text id="hanseno2026080856">
+<text id="hanseno2026080856" author="hanseno">
 <head>
   <title><num>XXXVIII.</num>Den blege Halvmaane stiger</title>
   <firstline>Den blege Halvmaane stiger</firstline>
@@ -1380,7 +1389,7 @@ i sit Præsteklædebon.
 </body>
 </text>
 
-<text id="hanseno2026080857">
+<text id="hanseno2026080857" author="hanseno">
 <head>
   <title><num>XXXIX.</num>Det er daarligt Vejr i Aften</title>
   <firstline>Det er daarligt Vejr i Aften</firstline>
@@ -1415,7 +1424,7 @@ ned over den sødeste Kind.
 </body>
 </text>
 
-<text id="hanseno2026080858">
+<text id="hanseno2026080858" author="hanseno">
 <head>
   <title><num>XL.</num>Man tror, jeg gaar og lider</title>
   <firstline>Man tror, jeg gaar og lider</firstline>
@@ -1450,7 +1459,7 @@ forbitrer mig nu hver Stund.
 </body>
 </text>
 
-<text id="hanseno2026080859">
+<text id="hanseno2026080859" author="hanseno">
 <head>
   <title><num>XLI.</num>Har trods dit forlibte Væsen</title>
   <firstline>Har trods dit forlibte Væsen</firstline>
@@ -1475,7 +1484,7 @@ Klodrian i den Slags Sager!
 </body>
 </text>
 
-<text id="hanseno2026080860">
+<text id="hanseno2026080860" author="hanseno">
 <head>
   <title><num>XLII.</num>De elsked hinanden, men aldrig</title>
   <firstline>De elsked hinanden, men aldrig</firstline>
@@ -1500,7 +1509,7 @@ og vidste knap selv derom.
 </body>
 </text>
 
-<text id="hanseno2026080861">
+<text id="hanseno2026080861" author="hanseno">
 <head>
   <title><num>XLIII.</num>Mand, driv ikke Spot med Djævlen</title>
   <firstline>Mand, driv ikke Spot med Djævlen</firstline>
@@ -1525,7 +1534,7 @@ som du maatte mangen Gang.
 </body>
 </text>
 
-<text id="hanseno2026080862">
+<text id="hanseno2026080862" author="hanseno">
 <head>
   <title><num>XLIV.</num>Der blev spurgt i hver By af de hellige tre</title>
   <firstline>Der blev spurgt i hver By af de hellige tre</firstline>
@@ -1555,7 +1564,7 @@ de tre hellige sang deres Sange.
 </body>
 </text>
 
-<text id="hanseno2026080863">
+<text id="hanseno2026080863" author="hanseno">
 <head>
   <title><num>XLV.</num>Mit Barn, vi var Børn derhjemme</title>
   <firstline>Mit Barn, vi var Børn derhjemme</firstline>
@@ -1641,7 +1650,7 @@ saa var der slet intet at holde sig til,
 </body>
 </text>
 
-<text id="hanseno2026080865">
+<text id="hanseno2026080865" author="hanseno">
 <head>
   <title><num>XLVII.</num>I Drømme saa jeg min elskte</title>
   <firstline>I Drømme saa jeg min elskte</firstline>
@@ -1722,7 +1731,7 @@ spillet den døende Gladiator.
 </body>
 </text>
 
-<text id="hanseno2026080867">
+<text id="hanseno2026080867" author="hanseno">
 <head>
   <title><num>XLIX.</num>Du er, som ikkun Blomstret</title>
   <firstline>Du er, som ikkun Blomstret</firstline>
@@ -1783,7 +1792,7 @@ er hændet mig eengang før.
 </body>
 </text>
 
-<text id="hanseno2026080869">
+<text id="hanseno2026080869" author="hanseno">
 <head>
   <title><num>LI.</num>Du har Diamanter og Perler</title>
   <firstline>Du har Diamanter og Perler</firstline>
@@ -1813,7 +1822,7 @@ Hvad vil du, min elskede, mer?
 </body>
 </text>
 
-<text id="hanseno2026080870">
+<text id="hanseno2026080870" author="hanseno">
 <head>
   <title><num>LII.</num>Pokker ved, hvor hun kan være</title>
   <firstline>Pokker ved, hvor hun kan være</firstline>
@@ -1843,7 +1852,7 @@ et Hotel som et Palads!
 </body>
 </text>
 
-<text id="hanseno2026080871">
+<text id="hanseno2026080871" author="hanseno">
 <head>
   <title><num>LIII.</num>Som dunkle Drømme staar Huse</title>
   <firstline>Som dunkle Drømme staar Huse</firstline>
@@ -1945,7 +1954,7 @@ skinne hendes hvide Skuldre.
 </body>
 </text>
 
-<text id="hanseno2026080874">
+<text id="hanseno2026080874" author="hanseno">
 <head>
   <title><num>LVI.</num>Døden, det er den køle Nat</title>
   <firstline>Døden, det er den køle Nat</firstline>
@@ -2004,7 +2013,7 @@ Urnen med min Elskovs Aske.
   <title>Af Harzrejsen</title>
 </head>
 <content>
-<text id="hanseno2026080876">
+<text id="hanseno2026080876" author="hanseno">
 <head>
   <title><num>LVIII.</num>Bjærgmandshytten staar paa Bjærget</title>
   <firstline>Bjærgmandshytten staar paa Bjærget</firstline>
@@ -2079,7 +2088,7 @@ Engle Dag og Nat paa Vagt.“
 </body>
 </text>
 
-<text id="hanseno2026080877">
+<text id="hanseno2026080877" author="hanseno">
 <head>
   <title><num>LIX.</num>Granen slaar, med grønne Fingre</title>
   <firstline>Granen slaar, med grønne Fingre</firstline>
@@ -2174,7 +2183,7 @@ Helligaandens Riddersmænd."
 </body>
 </text>
 
-<text id="hanseno2026080878">
+<text id="hanseno2026080878" author="hanseno">
 <head>
   <title><num>LX.</num>Stille synker Maanen ude</title>
   <firstline>Stille synker Maanen ude</firstline>
@@ -2304,7 +2313,7 @@ al min unge Naadepragt.
 </body>
 </text>
 
-<text id="hanseno2026080879">
+<text id="hanseno2026080879" author="hanseno">
 <head>
   <title><num>LXI.</num>Hyrdedrengen er en Konge</title>
   <firstline>Hyrdedrengen er en Konge</firstline>
@@ -2355,7 +2364,7 @@ er min hele Rigdom gemt.”
 </body>
 </text>
 
-<text id="hanseno2026080880">
+<text id="hanseno2026080880" author="hanseno">
 <head>
   <title><num>LXII.</num>Jeg er Prinsesse Ilse</title>
   <firstline>Jeg er Prinsesse Ilse</firstline>

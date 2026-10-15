@@ -15,8 +15,22 @@
     <picture type="titlepage" src="1847-p1.jpg"><transcription>Digte / af / St. St. Blicher. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.</transcription></picture>
     <picture type="titlepage" src="1847-p2.jpg"><transcription>Digte / af / St. St. Blicher. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1847.</transcription></picture>
   </pictures>
-  <source id="bd1" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="14">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. I.</source>
-  <source id="bd2" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="256">St. St. Blicher: <i>Digte</i>, P.L. Møller (red.), C.A. Reitzel, 1847, Bd. II.</source>
+  <source id="bd1" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="14">
+    <author>St. St. Blicher</author>
+    <title>Digte</title>
+    <editor type="editor">P.L. Møller</editor>
+    <volume>I</volume>
+    <publisher>C.A. Reitzel</publisher>
+    <year>1847</year>
+  </source>
+  <source id="bd2" facsimile="115308045460_color" facsimile-pages-num="528" facsimile-pages-offset="256">
+    <author>St. St. Blicher</author>
+    <title>Digte</title>
+    <editor type="editor">P.L. Møller</editor>
+    <volume>II</volume>
+    <publisher>C.A. Reitzel</publisher>
+    <year>1847</year>
+  </source>
 </workhead>
 
 <!--

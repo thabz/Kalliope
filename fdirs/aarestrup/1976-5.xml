@@ -10,7 +10,15 @@
   <pictures>
     <picture src="1976-5-p1.jpg">Titelbladet til <i>Samlede Skrifter, første bind</i> (1976) lyder ,,Emil Aarestrups / Samlede Skrifter / udgivne af / Hans Brix og Palle Runkjær / Første Bind // C. A. Reitzels Boghandel / 1976.''</picture>
   </pictures>
-  <source facsimile="1976-5" facsimile-pages-num="372" facsimile-pages-offset="4">Emil Aarestrup: <i>Samlede Skrifter</i>, Hans Brix (red.), Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel, Kbh., 1976, bd. 5.</source>
+  <source facsimile="1976-5" facsimile-pages-num="372" facsimile-pages-offset="4">
+    <author id="aarestrup">Emil Aarestrup</author>
+    <title>Samlede Skrifter</title>
+    <editor type="editor">Hans Brix</editor>
+    <volume>5</volume>
+    <place>Kbh.</place>
+    <publisher>Dansk Sprog- og Litteraturselskab, C.A. Reitzels Boghandel</publisher>
+    <year>1976</year>
+  </source>
 </workhead>
 <workbody>
 

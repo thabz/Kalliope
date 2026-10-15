@@ -809,7 +809,22 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 - `<prose>`: prosa. Renderes som prosalinjer/afsnit.
 - `<epigraph>`: litterært motto eller epigraf.
 
-Blokattributter:
+### Prosaafsnit
+
+Facsimilet bestemmer prosaens afsnitsgrænser, førstelinjeindryk og afstand
+mellem afsnit. Skriv hvert sammenhængende afsnit på én XML-linje i `<prose>`;
+repræsentér trykte førstelinjeindryk med indledende mellemrum. Kontrollér
+indrykket for hvert afsnit, også første afsnit efter en overskrift, som kan
+stå uden indryk.
+
+Indsæt kun en blanklinje mellem afsnit, når facsimilet viser ekstra lodret
+afstand. Et nyt afsnit eller et førstelinjeindryk er ikke i sig selv grund til
+en blanklinje. Indryk må ikke erstattes med blanklinjer. Saml trykkets fysiske
+linjeombrydninger inden for afsnittet, og lad ikke et sideskift skabe et nyt
+afsnit eller ekstra afstand; bevar `<pb>` på det præcise tekststed.
+OCR'ens linjeskift, blokopdeling og mellemrum er ikke facit.
+
+### Blokattributter
 
 - `max-width="..."`: valgfri maksimal bredde for især `<epigraph>`.
 - `lang="la"` på `<poetry>`, `<prose>` eller `<epigraph>`: sprog for hele blokken,
