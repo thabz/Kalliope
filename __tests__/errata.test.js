@@ -40,6 +40,21 @@ describe('errata declarations and footnotes', () => {
       .toEqual(expect.arrayContaining([expect.stringContaining('kræver mindst én')]));
   });
 
+  it('records a reviewed correction sheet without inventing text corrections', () => {
+    const declarations = '<errata status="reviewed" pages="12-13" facsimile-pages="20-21"/>';
+    expect(validateErrata(work({ declarations }), 'test.xml')).toEqual([]);
+    expect(validateErrata(work({ declarations, footnotes: '<footnote type="errata">a] b</footnote>' }), 'test.xml'))
+      .toEqual(expect.arrayContaining([expect.stringContaining('kræver <errata status="applied"/>')]));
+  });
+
+  it('validates the source pages of reviewed sheets and forbids combining them with none', () => {
+    const reviewed = '<errata status="reviewed" pages="12-13" facsimile-pages="49-51"/>';
+    expect(validateErrata(work({ declarations: reviewed }), 'test.xml'))
+      .toEqual(expect.arrayContaining([expect.stringContaining('uden for facsimilekildens sider')]));
+    expect(validateErrata(work({ declarations: '<errata status="none"/>' + reviewed }), 'test.xml'))
+      .toEqual(expect.arrayContaining([expect.stringContaining('må stå alene')]));
+  });
+
   it.each([
     'rettet trykt',
     '] trykt',

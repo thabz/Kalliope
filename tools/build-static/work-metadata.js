@@ -1,6 +1,7 @@
 import {
   getChildByTagName,
   getChildrenByTagName,
+  getElementsByTagName,
   getIdentifiers,
   identifierAllowlist,
   safeGetAttr,
@@ -29,6 +30,15 @@ export const buildWorkSourceMetadata = (work, poets, filename) => {
     }
     source.digitalUrl = collectSourceDigitalUrl(sourceNode);
     const sourceId = safeGetAttr(sourceNode, 'id') ?? 'default';
+    const isErrataSource = getChildrenByTagName(head, 'errata').some(
+      node => safeGetAttr(node, 'in') === sourceId
+    );
+    const isTextSource = getElementsByTagName(getChildByTagName(work, 'workbody'), 'source').some(
+      node => (safeGetAttr(node, 'in') ?? 'default') === sourceId
+    );
+    if (sourceId !== 'default' && isErrataSource === true && isTextSource === false) {
+      source.errataOnly = true;
+    }
     let facsimile = safeGetAttr(sourceNode, 'facsimile');
     if (facsimile != null) {
       facsimile = facsimile.replace(/.pdf$/, '');
