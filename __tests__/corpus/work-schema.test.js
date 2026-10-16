@@ -21,6 +21,13 @@ describe('kalliopework RELAX NG schema', () => {
 
   const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
 
+  it('accepts a positive sort-order and rejects non-positive values', () => {
+    expect(() => validate(sourceWork('').replace('<kalliopework ', '<kalliopework sort-order="10" '))).not.toThrow();
+    for (const value of ['0', '-1', '1.5', 'abc']) {
+      expect(() => validate(sourceWork('').replace('<kalliopework ', `<kalliopework sort-order="${value}" `))).toThrow();
+    }
+  });
+
   it('accepts documented quotation margins', () => {
     expect(() => validate(poetryWork(
       '<blockquote left="10%" right="0">Citat med <i>kursiv</i>.</blockquote>',

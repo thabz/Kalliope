@@ -107,7 +107,6 @@ import {
   print_benchmarking_results,
 } from './build-static/benchmarking.js';
 import {
-  collectSourceDigitalUrl,
   resolveSourceReference,
   resolveSourceDigitalUrlForText,
   resolveSourceFacsimileForText,
@@ -149,7 +148,8 @@ import {
   buildCorpusDataset,
   buildTextRecord,
 } from './build-static/corpus-dataset.js';
-import { findUnlistedWorkFiles } from './build-static/workfiles.js';
+import { discoverPoetFiles } from './libs/poet-files.js';
+import { buildWorkSourceMetadata } from './build-static/work-metadata.js';
 
 const envFlag = (name) => {
   return ['1', 'true', 'yes'].includes(
@@ -172,7 +172,7 @@ let collected = {
   dict: new Map(),
   timeline: new Array(),
   person_or_keyword_reference: new Map(),
-  unlistedWorkFiles: [],
+  changedWorkPoetIds: new Set(),
   corpusTextRecords: new Map(),
 };
 
@@ -246,29 +246,13 @@ const build_bio_json = async (collected) => {
   return results;
 };
 
-const build_poet_workids = () => {
-  let collected_workids =
-    globalForceReload ?
-      new Map()
-    : new Map(loadCachedJSON('collected.workids') || []);
-  let found_changes = false;
-  all_poet_ids().forEach((poetId) => {
-    const infoFilename = `fdirs/${poetId}/info.xml`;
-    if (!fs.existsSync(infoFilename)) {
-      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
-    }
-    if (isFileModified(infoFilename) || globalForceReload) {
-      const doc = loadXMLDoc(infoFilename);
-      const workIds = safeGetText(doc, 'works') || '';
-      let items = workIds.split(',').filter((x) => x.length > 0);
-      collected_workids.set(poetId, items);
-      found_changes = true;
-    }
+const buildPoetWorkIds = () => {
+  const result = discoverPoetFiles(all_poet_ids(), {
+    previous: globalForceReload ? null : loadCachedJSON('poet-files'),
   });
-  if (found_changes) {
-    writeCachedJSON('collected.workids', Array.from(collected_workids));
-  }
-  return collected_workids;
+  collected.poetFilesCache = result.cache;
+  collected.changedWorkPoetIds = result.changedPoetIds;
+  return result.workids;
 };
 
 const handle_text = async (
@@ -971,6 +955,7 @@ const works_first_pass = (collected) => {
     'tools/build-static/anthologies.js',
     'tools/build-static/edition-reference.js',
     'tools/build-static/source.js',
+    'tools/build-static/work-metadata.js',
   );
   const force_reload =
     texts.size === 0 ||
@@ -992,11 +977,17 @@ const works_first_pass = (collected) => {
     works,
     currentSourceWorkKeys
   );
+  changedSourceWorkKeys.forEach(key => {
+    const [poetId, workId] = key.split('/');
+    fs.rmSync(`public/api/${poetId}/${workId}.xml`, { force: true });
+    fs.rmSync(`public/api/${poetId}/${workId}-toc.json`, { force: true });
+  });
   collected.workids.forEach((workIds, poetId) => {
     const workFilenames = workIds.map(
       (workId) => `fdirs/${poetId}/${workId}.xml`,
     );
     const poetHasChangedWorks =
+      collected.changedWorkPoetIds.has(poetId) ||
       isFileModified(...workFilenames) || force_reload;
     changedWorksByPoet.set(poetId, poetHasChangedWorks);
     if (poetHasChangedWorks === true) {
@@ -1010,6 +1001,7 @@ const works_first_pass = (collected) => {
     works.delete(key);
     removeWorkDates(dates, poetId, workId);
   });
+  collected.changedSourceWorkKeys = changedSourceWorkKeys;
   removeTextsFromSourceWorks(texts, changedSourceWorkKeys);
   found_changes = changedSourceWorkKeys.size > 0;
 
@@ -1072,6 +1064,9 @@ const works_first_pass = (collected) => {
         linktitle,
         breadcrumbtitle,
         year: year,
+        ...(safeGetAttr(work, 'sort-order') == null ? {} : {
+          sort_order: Number(safeGetAttr(work, 'sort-order')),
+        }),
         status,
         type,
         has_content: workTexts.length > 0,
@@ -1080,6 +1075,7 @@ const works_first_pass = (collected) => {
           `fdirs/${poetId}/info.xml`,
           workFilename,
         ],
+        ...buildWorkSourceMetadata(work, collected.poets, workFilename),
       });
 
       if (parentId != null) {
@@ -1288,61 +1284,14 @@ const works_second_pass = async (collected) => {
       const poetMetadataModified = sourceTexts.some(text =>
         collected.poetMetadataDirty?.has(text.poetId)
       );
-      if (!poetMetadataModified && !isFileModified(...sourceFiles)) {
+      const sourceChanged = collected.changedSourceWorkKeys.has(`${poetId}/${workId}`);
+      const sourceFilesModified = isFileModified(...sourceFiles);
+      if (sourceChanged === false && !poetMetadataModified && sourceFilesModified === false) {
         return;
       }
       let doc = loadXMLDoc(filename);
       const work = getChildByTagName(doc, 'kalliopework');
-      const head = getChildByTagName(work, 'workhead');
       const data = collected.works.get(`${poetId}/${workId}`);
-      data.identifiers = getIdentifiers(head, identifierAllowlist.workhead);
-      let sources = {};
-      getChildrenByTagName(head, 'source').forEach((sourceNode) => {
-        let source = null;
-        const sourceReference = resolveSourceReference({ sourceNode, poets: collected.poets });
-        if (sourceReference.source != null) {
-          source = {
-            ...sourceReference,
-            identifiers: getIdentifiers(sourceNode, identifierAllowlist.source),
-          };
-        }
-        if (source == null || source.source == null) {
-          throw new Error(
-            `fdirs/${poetId}/${workId}.xml has source with no title.`
-          );
-        }
-        source.digitalUrl = collectSourceDigitalUrl(sourceNode);
-        const sourceId = safeGetAttr(sourceNode, 'id') || 'default';
-        let facsimile = safeGetAttr(sourceNode, 'facsimile');
-        if (facsimile != null) {
-          facsimile = facsimile.replace(/.pdf$/, '');
-          let facsimilePagesOffset = safeGetAttr(
-            sourceNode,
-            'facsimile-pages-offset'
-          );
-          if (facsimilePagesOffset != null) {
-            facsimilePagesOffset = parseInt(facsimilePagesOffset, 10);
-          }
-
-          const facsimilePageCount = safeGetAttr(
-            sourceNode,
-            'facsimile-pages-num'
-          );
-          if (facsimilePageCount == null) {
-            throw new Error(
-              `fdirs/${poetId}/${workId}.xml is missing facsimile-pages-num in source.`
-            );
-          }
-          source = {
-            ...source,
-            facsimile,
-            facsimilePageCount: parseInt(facsimilePageCount, 10),
-            facsimilePagesOffset,
-          };
-        }
-        sources[sourceId] = source;
-      });
-      data.sources = sources;
       collected_works.set(poetId + '-' + workId, data);
 
       // TODO: Make handle_work non-recursive by using a simple XPath
@@ -1454,8 +1403,7 @@ const build_image_thumbnails = async () => {
 const main = async () => {
   safeMkdir(`public/api`);
   collected.museums = await b('build_museums', build_museums, collected);
-  collected.workids = await b('build_poet_workids', build_poet_workids);
-  collected.unlistedWorkFiles = findUnlistedWorkFiles(collected.workids);
+  collected.workids = await b('buildPoetWorkIds', buildPoetWorkIds);
   collected.poets = await b(
     'build_poets_first_pass',
     build_poets_first_pass,
@@ -1539,6 +1487,7 @@ const main = async () => {
   }
   refreshFilesModifiedCache();
   flushImageSizeCache();
+  writeCachedJSON('poet-files', collected.poetFilesCache);
   if (showTimings) {
     print_benchmarking_results();
   }

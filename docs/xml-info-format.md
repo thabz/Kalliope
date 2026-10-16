@@ -36,7 +36,6 @@ så afvigende formatering ikke kan merges.
     </dead>
   </period>
   <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
-  <works>1795,1808,1819,1832,romi,andre</works>
   <identifiers>
     <wikidata>Q5879</wikidata>
     <viaf>24602065</viaf>
@@ -207,23 +206,41 @@ refererer kun til id'erne.
 
 Feltet bruges til `/literary-periods` og til at gruppere digtere efter periode.
 
-## Works
+## Automatisk værkregistrering
 
-```xml
-<works>1830,1831,1832,1833,1833S,1838,1847,1849,1851,1854,1863,1867,1879,eventyr,andre</works>
-```
+`<works>` er afskaffet og afvises af RELAX NG-schemaet. Værker findes automatisk
+som XML-filer med rodelementet `<kalliopework>` direkte i digterens mappe.
+Filnavnet uden `.xml` skal svare til værkets `id`, og `author` skal svare til
+mappenavnet. Også ufuldstændige værker, antologier og underværker registreres.
+En ny værkfil kræver ingen ændring i `info.xml`.
 
-Kommasepareret liste over værk-id'er.
+Den normale visningsrækkefølge bestemmes af år og titel. Særlige rækkefølger
+angives med den valgfrie `sort-order` på hver værkfil, jf.
+`docs/xml-work-format.md`. Bibelen bruger denne attribut til sin bogrækkefølge.
 
-Regler:
+Korpustesten og buildet bruger samme filklassifikation. Ud over værkfiler
+accepteres kun disse metadatafiler med de angivne rodelementer:
 
-- Hvert id svarer normalt til `fdirs/<person>/<work-id>.xml`.
-- Rækkefølgen bruges som udgangspunkt for buildets gennemløb.
-- Et værk kan godt stå i listen uden at filen findes, men det bliver ignoreret mange steder.
-- Hvis et værk refereres som `<subwork ref="..."/>`, skal det også være nævnt her.
+| Fil | Rodelement | Funktion |
+| --- | --- | --- |
+| `info.xml` | `person` | Personmetadata og identifikatorer |
+| `bio.xml` | `bio` | Biografitekst |
+| `events.xml` | `events` | Tidslinjebegivenheder |
+| `portraits.xml` | `pictures` | Portrætter |
+| `artwork.xml` | `pictures` | Kunstværker |
+| `bibliography-primary.xml` | `items` | Primærbibliografi |
+| `bibliography-secondary.xml` | `items` | Sekundærbibliografi |
 
-Hvis `<works>` mangler eller er tom, har personen ingen tekstværker, men kan stadig have
-portrætter, artwork, bio eller mentions.
+Ukendte XML-filer eller et forkert rodelement er fejl. De gamle, ubrugte
+`links.xml`-filer er fjernet; de indgår ikke i det nuværende linkformat.
+
+Buildet gemmer filklassifikationen i `caches/poet-files.json`. Mapperne
+kontrolleres ved hvert build; uændrede filer genbruger klassifikationen uden
+XML-parsing. Tilføjede, ændrede og slettede værker genberegner berørte
+forfatterdata og værkoutput. En manglende eller ældre cache genskabes automatisk.
+
+Ved merge af ældre PR'er fjernes deres `<works>`-ændringer, mens værkfilerne
+bevares. Schemaet og `make test` håndhæver oprydningen.
 
 ## Identifiers
 
@@ -290,7 +307,7 @@ Der kan findes andre sjældne id-felter i data; de bør dokumenteres her, når d
 
 Buildet udleder en række booleans fra `info.xml` og nabofiler:
 
-- `has_works`: baseret på `<works>`.
+- `has_works`: mindst én automatisk registreret værkfil.
 - `has_poems`: sand hvis et værk indeholder `<poetry>`.
 - `has_indexed_poems`: sand hvis mindst ét digt indgår i titel- og
   førstelinjeindekserne.
@@ -317,7 +334,7 @@ Buildet tjekker blandt andet:
 - `literary-periods` skal bestå af kendte periode-id'er.
 - lokale litteraturperioder skal passe til personens `country`.
 - Hvis `portraits.xml` findes, skal der være et square-portræt.
-- Værk-id'er fra `<works>` bruges til at finde og bygge værkdata.
+- Alle XML-filer i digtermapperne skal have en understøttet funktion; værker registreres automatisk.
 
 Bemærk:
 

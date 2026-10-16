@@ -1,3 +1,4 @@
+import { discoverPoetFiles } from '../../tools/libs/poet-files.js';
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync } from 'fs';
 import {
@@ -477,13 +478,9 @@ describe('registered first-edition placeholders', () => {
         issues.push(`${id}: invalid placeholder metadata or body`);
       }
 
-      const info = readFileSync(`fdirs/${poetId}/info.xml`, 'utf8');
-      const infoDocument = parseWorkXml(info);
-      const listedWorkIds = getElementsByTagNames(infoDocument, ['works'])
-        .flatMap((node) => node.textContent.split(','))
-        .map((workId) => workId.trim());
-      if (!listedWorkIds.includes(workId)) {
-        issues.push(`${id}: ${workId} is missing from ${poetId}/info.xml`);
+      const { workids } = discoverPoetFiles([poetId]);
+      if (workids.get(poetId).includes(workId) === false) {
+        issues.push(`${id}: ${workId} is not automatically registered`);
       }
     });
 
