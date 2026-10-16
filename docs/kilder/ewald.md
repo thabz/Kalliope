@@ -10,8 +10,9 @@ Kildearven er efterprøvet i de berørte XML-filer. De 88 DSL-tekster er samlet 
 Digtenes id'er, ordlyd og sidehenvisninger er bevaret ved flytningen.
 *Philet* og de seks sange fra *Fiskerne* beholder deres oprindelige
 udgivelsesår i teksternes noter. De tidligere værkbeholdere
-`1770.xml` og `1779.xml` er erstattet af deres placering i bind II og III;
-interne henvisninger er opdateret.
+`1770.xml` og `1779.xml` bevares som tomme værkposter for de faktiske
+udgivelser fra 1770 og 1779, med noter der henviser til DSL-teksterne i bind
+II og III. De eksisterende værklinks bevares.
 
 DSL's udgave er valgt som tekstgrundlag for 88 eksisterende tekstposter efter
 identifikation og sammenligning med trykket. Det er et redaktionelt kildevalg;
