@@ -4,12 +4,9 @@
 <workhead>
   <title>Bekendelse</title>
   <linktitle>Bekendelse, 2. udg.</linktitle>
-  <toctitle>Bekendelse, 2. udg.</toctitle>
+  <toctitle>Bekendelse, 2. udgave</toctitle>
   <subtitle>Anden udgave</subtitle>
   <year>1913</year>
-  <notes>
-    <note>Teksten følger Johannes Jørgensen: <i>Bekendelse</i>, 2. udgave, Gyldendalske Boghandel, Nordisk Forlag, 1913.</note>
-  </notes>
   <pictures>
     <picture src="1913b-p1.jpg">Titelbladet til <i>Bekendelse</i> (1913) lyder ,,Johannes Jørgensen // Bekendelse / Per mortem ad vitam / Anden Udgave // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag - 1913''.</picture>
   </pictures>
@@ -911,7 +908,7 @@ o Evighed! jeg er i Dine Hænder!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="25%" font-size="small">
+<epigraph max-width="75%">
 <right>O Spejl!</right>
 du Vand, af Lede i din Ramme størknet,
 hvor ofte sad jeg ikke, naar det mørkned,
@@ -920,7 +917,7 @@ der er som Løv, jeg i din Dybde finder,
 og saae min Skygge, fjærn og underbar.
 Men Rædsel! ofte i dit strænge Glar
 erkendte jeg min golde, nøgne Drøm.
-</quote>
+</epigraph>
 <poetry>
 <nonum><center><sc>Herodias</sc></center></nonum>
 Jeg blomstrer ene, ene og forladt!
@@ -993,7 +990,6 @@ og mærker sine Drømmes Pragtskrud sprænges.
 <text id="joergensenj2024061626">
 <head>
   <title>Længsel</title>
-  <toctitle>Længsel</toctitle>
   <subtitle>(Efter Stéphane Mallarmé)</subtitle>
   <firstline>Imod din Pande, Søster, der blid og stille drømmer</firstline>
   <notes>
@@ -1284,7 +1280,7 @@ og som et sølvhvidt Vand den blege Egn.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote margin-left="15%" font-size="small">
+<epigraph max-width="85%">
 Hvor rinder, siver, nynner Stadsgravens Strøm, og se:
 der risler Maaneskin ned i den gamle Allé,
 hvor under Kastaniers Tag og kongehøje Linde
@@ -1292,7 +1288,7 @@ Stenbroen pletvis lyser, mens Gravens Vande spinde
 en Vellyst af dyb Musik til Lysets og Bladenes Spil,
 en tropisk Drøm om at dø og fornyes, som viljeløst Draaberne vil.
 <nonum><right><small><i>Sophus Claussen.</i></small></right></nonum>
-</quote>
+</epigraph>
 <poetry>
 Det var i det gamle København, i Løvstræde var det vist,
 der boede du, der skrev du Vers, paa en hyggelig trediesals Kvist;

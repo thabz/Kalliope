@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="merrill" country="us" lang="fr" type="poet">
+<person id="merrill" country="fr" nationality="us" lang="fr" type="poet">
   <name>
     <fullname>Stuart Fitzrandolph Merrill</fullname>
     <firstname>Stuart</firstname>
@@ -16,7 +16,7 @@
       <place>Versailles</place>
     </dead>
   </period>
-  <literary-periods>symbolisme-og-fin-de-siecle</literary-periods>
+  <literary-periods>fr-symbolisme</literary-periods>
   <works>1887</works>
   <identifiers>
     <wikidata>Q3087491</wikidata>
