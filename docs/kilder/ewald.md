@@ -42,6 +42,12 @@ forbeholdet »bortset fra Tillæg 1969«.
 | VI | 1924 | Svend Aage Pallis under medvirkning af Niels Møller | [KB](https://tekster.kb.dk/text/adl-texts-ewal08tom-root) | [PDF](https://tekster.kb.dk/catalog/adl-texts-ewal08tom-root/facsimile.pdf) |
 | Tillæg | 1969 | Erik M. Christensen | [KB](https://tekster.kb.dk/text/adl-texts-ewal09tom-root) | [PDF](https://tekster.kb.dk/catalog/adl-texts-ewal09tom-root/facsimile.pdf) |
 
+De seks binds titelbladsbilleder `1969-1-p1.jpg` til `1969-6-p1.jpg` viser
+1969-optrykkets titelblade, den tredje billedside i hvert komplet facsimile.
+De er fremstillet fra KB's originalbilleder, geometrisk kontrolleret og
+beskåret med den fulde bogside bevaret. Den trykte ordlyd er transskriberet
+på hvert `<picture type="titlepage">`; udgivelsesåret fremgår af kolofonerne.
+
 Alle syv facsimile-PDF'er kunne hentes. PDF'erne har en indledende portalside,
 som ikke er en trykt bogside. KB's `/text/…-root.pdf` er derimod en sat digital
 tekstgengivelse og bruges ikke som billeder af trykket.
@@ -230,8 +236,10 @@ De syv tekster i `ewald/1985-vingesus` bevarer deres eksisterende ordlyd og
 sidetal. Den gentagne fritekstkilde er omsat til én struktureret værkkilde
 med Johannes Ewald som forfatter, Keld Zeruneith som udgiver, København,
 Hans Reitzels Forlag og 1985; teksternes tomme `<source pages="…"/>` arver
-denne bibliografi. Teksten i `ewald/p1780` er uændret. Ingen af disse
-tekster tilskrives DSL-udgaven. Fuld transskription af de seks bind, komplettering
+denne bibliografi. `ewald/p1780` får en struktureret kilde til Johannes
+Ewalds *Samtlige Skrifter*, København, 1780, efter den eksisterende note
+om forordets oprindelse. Der er ikke tilføjet gættede bind- eller sidetal.
+Ingen af disse tekster tilskrives DSL-udgaven. Fuld transskription af de seks bind, komplettering
 af *Fiskerne* eller *Adskilligt* og nye korrekturattester ligger uden for denne
 kildekontrol. #992 og #1821 bevarer deres selvstændige afgrænsninger.
 
