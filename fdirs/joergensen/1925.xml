@@ -45,6 +45,10 @@ Af disse Digte blev de 11 første skrevet i Assisi i Dagene 12.—15. Januar 192
   <title>Tilegnelse</title>
   <firstline>Det var en Dag i Somren ifjor</firstline>
   <source pages="5-7"/>
+  <places>
+    <place ref="assisi" relation="writtenAt"/>
+    <place ref="denmark" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -100,6 +104,9 @@ og vidste, at her var jeg hjemme.
   <title><num>I.</num>Der staar derhjemme i Svendborg</title>
   <firstline>Der staar derhjemme i Svendborg</firstline>
   <source pages="11-12"/>
+  <places>
+    <place ref="svendborg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -132,6 +139,9 @@ en Vellugt, jeg kender endnu.
   <title><num>II.</num>Men ovenpaa Chatollet</title>
   <firstline>Men ovenpaa Chatollet, i en Kasse af Glar</firstline>
   <source pages="13-14"/>
+  <places>
+    <place ref="svendborg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -412,13 +422,11 @@ paa Libau gik i Fragt ...
 
 Ved Vindvet staar den samme Stol
 bag Hyacinth i Glas.
-
 <pb n="28" facs="034.jpg"/>Men det er mig, som sidder der
 og læser, paa din Plads.
 
 Og Eisenreich er død som du,
 og »Svafva« led Forlis.
-
 Og jeg som du en sidste Gang
 skal lukke min Avis.
 </poetry>
@@ -670,6 +678,9 @@ det er Jehovas Ild, hvori jeg brænder.
   <title>Foraar i Flandern</title>
   <firstline>April har bragt os Blomster</firstline>
   <source pages="44-52"/>
+  <places>
+    <place ref="leuven" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -702,7 +713,6 @@ men synger end saa skønt.
 
 Ak Hjærte, bliver du aldrig træt
 af Jordens grønne Dale —
-
 <pb n="46" facs="052.jpg"/>længes du ej at høre
 de himmelske Nattergale?
 
@@ -716,8 +726,8 @@ gaar mit Hjærte gennem Tiden
 og banker end i samme Takt
 som for tredve Aar siden.
 
-<nonum><center>II</center></nonum>
-<pb n="47" facs="053.jpg"/>Det er igen den grønne Parknatur.
+<pb n="47" facs="053.jpg"/><nonum><center>II</center></nonum>
+Det er igen den grønne Parknatur.
 Halvelve viser Kirketaarnets Ur.
 Paa Bænken dér en lang Soldat gør Kur.
 
@@ -749,8 +759,8 @@ og spurgte langsomt: »Elsker?« »Elsker ej?«
 og slutted: »Elsker!« Men du svared: »Nej«
 og tog din Haand — men lod mig følge dig.
 
-<nonum><center>III</center></nonum>
-<pb n="49" facs="055.jpg"/>Det var i Maj. Det er paany i Maj.
+<pb n="49" facs="055.jpg"/><nonum><center>III</center></nonum>
+Det var i Maj. Det er paany i Maj.
 Folk kigger paa mig. »Er han rigtig klog,
 som sidder paa en Bænk ved Alfarvej
 og skriver med sit Blyant i en Bog?«
@@ -763,7 +773,6 @@ og Engen lyser med et Silkeskær.
 <pb n="50" facs="056.jpg"/>Altid det samme. Poplens Purpurrakler
 strøet paa den brune Sti. Grøn og som Silke
 er Engen, og to Sommerfugle vakler
-
 hen over den og søger blandt dens Stilke
 om Honningbægre — véd blot ikke, hvilke.
 
@@ -771,8 +780,8 @@ Altid det samme. Græs og Blomst af Guld
 og Nattergalens Tone, dyb og fuld.
 Altid det samme: Muld, der vorder Muld.
 
-<nonum><center>IV</center></nonum>
-<pb n="51" facs="057.jpg"/>Glemt, glemt af alle — hvem der længst var glemt
+<pb n="51" facs="057.jpg"/><nonum><center>IV</center></nonum>
+Glemt, glemt af alle — hvem der længst var glemt
 og laa som Knokler dybt i Jorden gemt,
 af intet Smil bedraget, ingen Vrede skræmt.
 
@@ -788,7 +797,7 @@ med Skygge og med langligt Solfaldsskær.
 og Græs og Blomster voxer, tyst og vildt,
 over et Liv, der helt var tabt og spildt.
 
-    <nonum><small>Louvain, 1913.</small></nonum>
+<nonum><right><small><i>Louvain, 1913.</i></small></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1023,6 +1032,10 @@ græd Blod og Ild — græd, Broder Ulv!
   <title>Taksigelse</title>
   <firstline>Sidde paa Pynten og sé mod Cannes</firstline>
   <source pages="68-69"/>
+  <places>
+    <place ref="ile-saint-honorat" relation="writtenAt" primary="true"/>
+    <place ref="cannes" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1073,6 +1086,9 @@ Du alene er Vejen værd!
   <title>Amalfi</title>
   <firstline>Der staar Roser i mit Vindu</firstline>
   <source pages="73-74"/>
+  <places>
+    <place ref="amalfi" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1109,6 +1125,9 @@ evigt Havet gaar og gaar ...
   <title>Danimarca</title>
   <firstline>Stenoljen brænder i min Ovn</firstline>
   <source pages="75-76"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1116,9 +1135,11 @@ evigt Havet gaar og gaar ...
 Stenoljen brænder i min Ovn
 og varmer mig, saa godt den kan
 trods Bjærgets Blæst og Vintrens Slud,
+
 og sér jeg af mit Vindu ud,
 saa sér jeg over ti Mil Land,
 saa sér jeg sytten Kirkesogn
+
 og sér de fjærne Bjærge, blaa,
 langs Horisonten staa.
 
@@ -1220,6 +1241,9 @@ uden Længsel, uden Kummer.
   <title><num>II.</num>Muezzinens Nattesang</title>
   <firstline>Den femte Bøn er sungen; jeg er fri</firstline>
   <source pages="81-83"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1281,6 +1305,9 @@ og funkler over Beth-Lam, »Brødets Hus«.
   <title><num>III.</num>Svaler</title>
   <firstline>Svaler sværme, Svaler svinge</firstline>
   <source pages="84-85"/>
+  <places>
+    <place ref="jerusalem" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

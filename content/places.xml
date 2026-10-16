@@ -104,6 +104,12 @@
     <wikidata>Q48</wikidata>
     <type>continent</type>
   </place>
+  <place id="assisi">
+    <name>Assisi</name>
+    <wikidata>Q20103</wikidata>
+    <type>town/comune</type>
+    <parent ref="italy"/>
+  </place>
   <place id="augustenborg-palace">
     <name>Augustenborg Slot</name>
     <canonical-name>Augustenborg Palace</canonical-name>
@@ -270,6 +276,12 @@
     <canonical-name>Canaan</canonical-name>
     <wikidata>Q163329</wikidata>
     <type>historical region</type>
+  </place>
+  <place id="cannes">
+    <name>Cannes</name>
+    <wikidata>Q39984</wikidata>
+    <type>city</type>
+    <parent ref="france"/>
   </place>
   <place id="capri">
     <name>Capri</name>
@@ -908,6 +920,14 @@
     <alias>Iſland</alias>
     <parent ref="europe"/>
   </place>
+  <place id="ile-saint-honorat">
+    <name>Île Saint-Honorat</name>
+    <wikidata>Q292148</wikidata>
+    <type>island</type>
+    <alias>Ile Saint-Honorat</alias>
+    <alias>Ile Saint-Honorat ved Cannes</alias>
+    <parent ref="cannes"/>
+  </place>
   <place id="india">
     <name>Indien</name>
     <canonical-name>India</canonical-name>
@@ -1171,6 +1191,12 @@
     <type>town</type>
     <alias>Leire</alias>
     <parent ref="zealand"/>
+  </place>
+  <place id="leuven">
+    <name>Leuven</name>
+    <wikidata>Q118958</wikidata>
+    <type>city</type>
+    <alias>Louvain</alias>
   </place>
   <place id="little-belt">
     <name>Lillebælt</name>
