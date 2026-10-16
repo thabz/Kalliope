@@ -96,7 +96,8 @@ const build_museum_url = (picture, collected) => {
 const build_museum_pages = collected => {
   safeMkdir('public/api/museums');
 
-  let found_changes = false;
+  let found_changes = (collected.changedWorkPoetIds?.size ?? 0) > 0 ||
+    isFileModified('tools/build-static/museums.js');
 
   collected.poets.forEach((poet, poetId) => {
     const portraitsFile = `fdirs/${poet.id}/portraits.xml`;

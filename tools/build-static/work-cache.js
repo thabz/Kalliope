@@ -28,6 +28,26 @@ const removeObsoleteTextFiles = (previousTexts, texts) => {
   });
 };
 
+const pruneDeletedVariants = (variants, texts) => {
+  const affectedFiles = new Set();
+  for (const [id, relatedIds] of variants) {
+    if (texts.has(id) === false) {
+      variants.delete(id);
+      continue;
+    }
+    const remaining = relatedIds.filter(relatedId => texts.has(relatedId));
+    if (remaining.length !== relatedIds.length) {
+      affectedFiles.add(sourceWorkFilename(texts.get(id)));
+      if (remaining.length === 0) {
+        variants.delete(id);
+      } else {
+        variants.set(id, remaining);
+      }
+    }
+  }
+  return affectedFiles;
+};
+
 const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
   new Set(
     Array.from(works.entries())
@@ -41,6 +61,7 @@ const obsoleteSourceWorkKeys = (works, currentSourceWorkKeys) =>
 
 export {
   obsoleteSourceWorkKeys,
+  pruneDeletedVariants,
   removeObsoleteTextFiles,
   removeTextsFromSourceWorks,
   sourceFilesForText,

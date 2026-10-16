@@ -10,6 +10,12 @@ const infoXmlFiles = () =>
     .filter(filename => filename.length > 0);
 
 describe('info.xml RELAX NG schema', () => {
+  it('rejects works elements in incoming PRs', () => {
+    const xml = '<person id="test" country="dk" lang="da" type="poet"><name><lastname>Test</lastname></name><works>1900</works></person>';
+    expect(() => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/info-xml.rng', '-'], {
+      input: xml, stdio: 'pipe',
+    })).toThrow();
+  });
   const people = () => infoXmlFiles().map(filename => {
     const person = new DOMParser().parseFromString(
       fs.readFileSync(filename, 'utf8'), 'text/xml'
@@ -80,14 +86,14 @@ describe('info.xml RELAX NG schema', () => {
     expect(redundantFullnames).toEqual([]);
   });
 
-  it('does not contain empty works elements', () => {
-    const emptyWorksElements = infoXmlFiles().filter(filename => {
+  it('does not contain retired works elements', () => {
+    const retiredWorksElements = infoXmlFiles().filter(filename => {
       const xml = fs.readFileSync(filename, 'utf8');
 
-      return /<works\s*\/>|<works>\s*<\/works>/.test(xml);
+      return /<works(?:\s|>)/.test(xml);
     });
 
-    expect(emptyWorksElements).toEqual([]);
+    expect(retiredWorksElements).toEqual([]);
   });
 
   it('requires literary periods for every poet', () => {
