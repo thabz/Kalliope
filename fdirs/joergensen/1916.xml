@@ -47,7 +47,7 @@ og bad, landflygtig, for et fremmed Billed.
 </body>
 </text>
 
-<text id="joergensen2026072202" aliases="joergensenj2026072202">
+<text id="joergensen2026072202" variant="joergensen2026072936" aliases="joergensenj2026072202">
 <head>
   <title>Gensyn</title>
   <firstline>Den store Skov, den store Skov</firstline>
@@ -99,7 +99,7 @@ Jeg kan dig ikke glemme!
 </body>
 </text>
 
-<text id="joergensen2026072203" aliases="joergensenj2026072203">
+<text id="joergensen2026072203" variant="joergensen2026072937" aliases="joergensenj2026072203">
 <head>
   <title>Øer i Havet</title>
   <firstline>De stride, staalblaa Strømme</firstline>
@@ -146,7 +146,7 @@ til mine Minders Genklang.
 </body>
 </text>
 
-<text id="joergensen2026072204" aliases="joergensenj2026072204">
+<text id="joergensen2026072204" variant="joergensen2026072938" aliases="joergensenj2026072204">
 <head>
   <title>Gamle Sange</title>
   <firstline>En svunden Vaar imod mig slaar</firstline>
@@ -256,7 +256,7 @@ og Jordens liflige Luft.
 </body>
 </text>
 
-<text id="joergensen2026072206" aliases="joergensenj2026072206">
+<text id="joergensen2026072206" variant="joergensen2026072934" aliases="joergensenj2026072206">
 <head>
   <title><num>II.</num>Angelusklokker</title>
   <firstline>Der rødmer Skyer langt ude</firstline>
@@ -288,7 +288,7 @@ min Sjæl er vendt.
 </body>
 </text>
 
-<text id="joergensen2026072207" aliases="joergensenj2026072207">
+<text id="joergensen2026072207" variant="joergensen2026072935" aliases="joergensenj2026072207">
 <head>
   <title><num>III.</num>St. Gotthard</title>
   <firstline>Den evige Sne, den evige Sne</firstline>
@@ -652,7 +652,7 @@ og at jeg gærne vilde Verden vinde.
 </body>
 </text>
 
-<text id="joergensen2026072215" aliases="joergensenj2026072215">
+<text id="joergensen2026072215" variant="joergensen2026072939" aliases="joergensenj2026072215">
 <head>
   <title>Høstsuk</title>
   <firstline>Saa standser jeg ved Vejens Kant</firstline>
@@ -833,7 +833,7 @@ i Evigheds Evighed. Amen.
 </body>
 </text>
 
-<text id="joergensen2026072218" aliases="joergensenj2026072218">
+<text id="joergensen2026072218" variant="joergensen2026072940" aliases="joergensenj2026072218">
 <head>
   <title>De profundis</title>
   <subtitle>In Memoriam Paul Verlaine, † 9. JAN. 1896.</subtitle>
@@ -966,17 +966,23 @@ lad ham frelst Dit Aasyn se!
 </body>
 </text>
 
-<text id="joergensen2026072219" aliases="joergensenj2026072219">
+<section id="joergensen2026072219" aliases="joergensenj2026072219">
 <head>
   <title>Livets Sang</title>
-  <firstline>Det er en Julimorgenstund</firstline>
   <source pages="48-54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<content>
+
+<text id="joergensen2026101653">
+<head>
+  <title><num>I</num>Det er en Julimorgenstund</title>
+  <firstline>Det er en Julimorgenstund</firstline>
+  <source pages="48"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>I</center></nonum>
-
 Det er en Julimorgenstund,
 jeg hører Fugle synge,
 og i den lyse Lindelund,
@@ -991,9 +997,19 @@ Den falder langsomt, uafbrudt
 som store, lyse Draaber —
 som Graad, der intet haaber,
 men rinder, rinder uafbrudt.
+</poetry>
+</body>
+</text>
 
-<nonum><center>II</center></nonum>
-
+<text id="joergensen2026101654">
+<head>
+  <title><num>II</num>Ak, var der ej for dig og mig</title>
+  <firstline>Ak, var der ej for dig og mig</firstline>
+  <source pages="49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Ak, var der ej for dig og mig
 mer Lykke end for Linden,
 og var vort Støv kun som et Løv,
@@ -1008,9 +1024,19 @@ Ak Gud, da græd vi begge med,
 naar Blomster faldt som Taarer —
 da fik vor Færd i Verden her
 kun Værd for Døgnets Daarer.
+</poetry>
+</body>
+</text>
 
-<nonum><center>III</center></nonum>
-
+<text id="joergensen2026101655">
+<head>
+  <title><num>III</num>Da vil vi samle Roser</title>
+  <firstline>Da vil vi samle Roser</firstline>
+  <source pages="50-51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Da vil vi samle Roser
 og knytte dem i Kæder
 og favne fagre Kvinder
@@ -1035,9 +1061,19 @@ Blaat er dit Blik, Veninde,
 og grøn er vor Alkove.
 Kom, lad vort Liv forsvinde
 blandt disse gyldne Skove.
+</poetry>
+</body>
+</text>
 
-<nonum><center>IV</center></nonum>
-
+<text id="joergensen2026101656" variant="joergensen2026072941">
+<head>
+  <title><num>IV</num>Solen svinder, Skyer graane</title>
+  <firstline>Solen svinder, Skyer graane</firstline>
+  <source pages="52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Solen svinder, Skyer graane,
 Sommerdagen døer,
 og en mat, vemodig Maane
@@ -1057,9 +1093,19 @@ Tider svulme, Tider briste.
 Livet bruser hen.
 Og det sidste, vi maa miste,
 er den Drøm, vi har igen.
+</poetry>
+</body>
+</text>
 
-<nonum><center>V</center></nonum>
-
+<text id="joergensen2026101657">
+<head>
+  <title><num>V</num>Saa svinder alle Syner</title>
+  <firstline>Saa svinder alle Syner</firstline>
+  <source pages="53-54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Saa svinder alle Syner,
 saa viger alle Drømme,
 og Morgenluft og Morgensol
@@ -1098,7 +1144,10 @@ at vi hos Dig maa bygge!
 </body>
 </text>
 
-<text id="joergensen2026072220" aliases="joergensenj2026072220">
+</content>
+</section>
+
+<text id="joergensen2026072220" variant="joergensen2026072942" aliases="joergensenj2026072220">
 <head>
   <title>Stilleliv</title>
   <firstline>Det er saa blankt, det Græs, som groer</firstline>
@@ -1167,7 +1216,7 @@ af Sølv over Synsranden skyder.
 </body>
 </text>
 
-<text id="joergensen2026072222" aliases="joergensenj2026072222">
+<text id="joergensen2026072222" variant="joergensen2026072943" aliases="joergensenj2026072222">
 <head>
   <title>Morgenandagt</title>
   <firstline>En Himmel, tæt og blaa som Amethyst</firstline>
@@ -1197,7 +1246,7 @@ og flyver stille i Guds Himmel ind.
 </body>
 </text>
 
-<text id="joergensen2026072223" aliases="joergensenj2026072223">
+<text id="joergensen2026072223" variant="joergensen2026072944" aliases="joergensenj2026072223">
 <head>
   <title>Media vita</title>
   <subtitle>Parafrase af St. Notkers Hymne</subtitle>
@@ -1230,7 +1279,7 @@ giv os ej den bitre Død i Vold.
 </body>
 </text>
 
-<text id="joergensen2026072224" aliases="joergensenj2026072224">
+<text id="joergensen2026072224" variant="joergensen2026072945" aliases="joergensenj2026072224">
 <head>
   <title>Allesjælesnat</title>
   <firstline>Store Stjærner staa deroppe</firstline>
