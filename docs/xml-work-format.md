@@ -1108,7 +1108,7 @@ Verscitater i fodnoter kan stå i `<column>` med eksplicitte `<br/>` mellem
 verslinjerne. Skriv blokken uden XML-linjeskift, så de ikke giver ekstra
 linjeskift ved visningen. Mellemrum bevarer indrykning; `<center>`, `<right>`
 og `<nonum>` kan markere centrering og oplysninger uden for versene.
-`<poetry>`, `<prose>` og `<quote>` skal være direkte børn af `<body>`.
+`<poetry>`, `<prose>` og `<epigraph>` skal være direkte børn af `<body>`.
 
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
