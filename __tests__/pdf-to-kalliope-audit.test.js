@@ -64,6 +64,32 @@ Sidste linje</poetry></body>
 </kalliopework>`;
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('distinguishes physical pages with a repeated printed page number', () => {
+    const xml = workXml.replace('n="12"', 'n="11"');
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false }).map(row => ({
+      ...row, status: 'reviewed', reviewer: 'worker-2', disposition: 'Fejlnummerering kontrolleret',
+      typography_status: 'reviewed', typography_disposition: 'Gennemgået',
+    }));
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+    inventory[2].printed_page = '12';
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([
+      expect.objectContaining({ rule: 'mismatched-printed-page' }),
+    ]);
+  });
+
+  it('keeps OCR candidates on their physical page across a continued footnote', () => {
+    const xml = workXml.replace(
+      '<pb n="11" facs="011.jpg"/>',
+      '<footnote>Første note\n<pb n="11" facs="011.jpg"/>Anden note</footnote>\n<pb n="11" facs="011.jpg"/>',
+    ).replace('Første paa elleve', 'Image paa elleve');
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false });
+    const candidates = historicalOcrCandidates({ xml, inventory });
+    const bodyCandidate = candidates.find(candidate => candidate.rule === 'image-token');
+    expect(bodyCandidate).toMatchObject({ printed_page: '11', facsimile: '011.jpg' });
+    expect(candidates.every(candidate => candidate.facsimile != null)).toBe(true);
+    expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(candidates.length);
+  });
+
   it('keeps body anchors stable when notes change', () => {
     const cases = [
       ['Første<note>gammel</note> linje', 'Første linje'],
@@ -97,6 +123,21 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
     const [firstPage, secondPage] = buildPageInventory({ xml, includeExpectedPages: false });
     expect(firstPage.last_line).toBe('Sidste paa ti');
     expect(secondPage.first_line).toBe('Første paa elleve');
+  });
+
+  it('does not create a duplicate body page from a continued footnote', () => {
+    const xml = workXml.replace(
+      '<pb n="11" facs="011.jpg"/>',
+      '<footnote>første note<pb n="11" facs="011.jpg"/>fortsat note</footnote>.\n<pb n="11" facs="011.jpg"/>',
+    );
+    const pages = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(pages).toHaveLength(3);
+    expect(pages[1].first_line).toBe('Første paa elleve');
+    const inventory = pages.map(row => ({
+      ...row, status: 'reviewed', reviewer: 'worker-2', disposition: 'Gennemgået',
+      typography_status: 'reviewed', typography_disposition: 'Gennemgået',
+    }));
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
   });
   it('builds one side-aware JSON row per printed page', () => {
     expect(buildPageInventory({ xml: workXml })).toEqual([
@@ -138,8 +179,8 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
 
     expect(auditPageInventory({ xml: workXml, inventory }).issues).toEqual(
       expect.arrayContaining([
-        expect.objectContaining({ rule: 'mismatched-first-line', key: 'test1900010101:11' }),
-        expect.objectContaining({ rule: 'page-not-reviewed', key: 'test1900010101:12' }),
+        expect.objectContaining({ rule: 'mismatched-first-line', key: 'test1900010101:011.jpg' }),
+        expect.objectContaining({ rule: 'page-not-reviewed', key: 'test1900010101:012.jpg' }),
       ]),
     );
   });
@@ -169,7 +210,7 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
     }));
     expect(auditPageInventory({ xml: brokenXml, inventory: reviewed }).issues).toEqual(
       expect.arrayContaining([
-        expect.objectContaining({ rule: 'missing-xml-page', key: 'test1900010101:11' }),
+        expect.objectContaining({ rule: 'missing-xml-page', key: 'test1900010101:011.jpg' }),
       ]),
     );
   });
@@ -746,6 +787,14 @@ describe('findings registry and frozen checkpoint', () => {
     })).toEqual(expect.arrayContaining([
       expect.stringContaining('ikke kontrolleret alle facsimilesider'),
     ]));
+    expect(validateVisualStructureReviews({
+      analysis,
+      reviews: checkpointArgs.visualStructureReviews.map(review => ({
+        ...review,
+        facsimiles: ['010.jpg', '011.jpg'],
+      })),
+      producer: 'producer',
+    })).toEqual([]);
 
     const findings = candidates.map(candidate => ({
       candidate_id: candidate.candidate_id,

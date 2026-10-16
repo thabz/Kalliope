@@ -14,7 +14,7 @@ filstørrelser, SHA-256-checksummer, antal poster, relationer og genbrugsnoter.
   ISO 3166-1 alpha-2-landekode. `country` bevarer Kalliopes landegruppering.
 - `works.jsonl.gz`: ét `work` per linje med globalt `id` på formen
   `{poet_id}/{local_id}`, `poet_id`, værkmetadata og kanonisk URL.
-- `texts.jsonl.gz`: én indekserbar tekstplacering per linje med stabilt `id`,
+- `texts.jsonl.gz`: én indekserbar tekstforekomst per linje med stabilt `id`,
   `poet_id`, `work_id`, kanonisk URL, direkte URL til den komplette eksisterende
   JSON-repræsentation, normaliseret fuldtekst, førstelinje, datoer,
   fodnoteindikator, kildesider og relationer.
@@ -26,8 +26,9 @@ ny major-version i URL'en.
 
 Poster er sorteret efter `id`, og gzip-filerne er deterministiske for samme
 kildeindhold. Manifestets `built_at` er eksplicit buildmetadata. Tekstudvalget
-omfatter de indekserbare, kanoniske placeringer; rene publikationsplaceringer
-kan fortsat hentes via det eksisterende API, men er ikke selvstændige bulkposter.
+omfatter de indekserbare, kanoniske tekstforekomster. Antologitekster har digteren
+som `poet_id` og antologien som `work_id`. Digterens virtuelle indholdsfortegnelse
+er en alternativ indgang og giver ingen ekstra tekstpost.
 
 Buildet gemmer en lokal tilstand i `caches/corpus-dataset.json`. Når metadata,
 digternes `info.xml`, de indekserbare teksters API-filer og eksportkoden er
@@ -46,6 +47,9 @@ outputfiler, manglende cache og `--force-reload` udløser et nyt eksportbuild.
   referencer, varianter og renderingsdata. Klienter skal bruge bulkpostens
   `api_url` og ikke beregne hashstien.
 - `/api/{poet_id}/mentions.json`: henvisninger og oversættelser.
+
+I tekst-JSON angiver `blocks[].type` bloktypen: `poetry`, `prose` eller
+`epigraph`. `epigraph` bruges til litterære mottoer.
 
 De eksisterende ressourcer er applikationsendpoints. Kun de felter og relationer,
 der er beskrevet i v1-schemaet og datasættets README, er en stabil

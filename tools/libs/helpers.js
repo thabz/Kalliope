@@ -327,12 +327,14 @@ const htmlToXml = (html, collected, isPoetry, context) => {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
       l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
-    if (l.indexOf('<center>') > -1) {
-      l = l.replace('<center>', '').replace('</center>', '');
+    const centerLine = /^((?:<pb\b[^>]*\/>\s*)*)<center>((?:(?!<\/?center>).)*)<\/center>((?:<br\s*\/>)*)$/.exec(l);
+    if (centerLine != null) {
+      l = centerLine[1] + centerLine[2] + centerLine[3];
       options.center = true;
     }
-    if (l.indexOf('<right>') > -1) {
-      l = l.replace('<right>', '').replace('</right>', '');
+    const rightLine = /^((?:<pb\b[^>]*\/>\s*)*)<right>((?:(?!<\/?right>).)*)<\/right>((?:<br\s*\/>)*)$/.exec(l);
+    if (rightLine != null) {
+      l = rightLine[1] + rightLine[2] + rightLine[3];
       options.right = true;
     }
     if (l.indexOf('<wrap>') > -1) {

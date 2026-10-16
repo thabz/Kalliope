@@ -11,7 +11,7 @@ prosa, noter, kilder, faksimiler, varianter, henvisninger og billeder.
 
 Strukturtags står i kolonne 0, også når de er indlejret. Det gælder
 `<workhead>`, `<workbody>`, `<text>`, `<section>`, `<head>`, `<content>`,
-`<body>`, `<poetry>`, `<prose>`, `<quote>` og `<subwork>` samt deres slut-tags.
+`<body>`, `<poetry>`, `<prose>`, `<epigraph>` og `<subwork>` samt deres slut-tags.
 Metadatafelter inde i `<head>` og `<workhead>` indrykkes med to mellemrum for
 hvert niveau.
 
@@ -74,6 +74,14 @@ De guldhenboelgende Vaenge
 - `status`: typisk `complete` eller `incomplete`.
 - `type`: typisk `poetry`; enkelte værker bruger `prose`. Antologier bruger
   `anthology`, uanset hvilken mappe værkfilen ligger i.
+- `sort-order`: valgfri positiv heltalsværdi til en særlig visningsrækkefølge.
+  Værker med værdien vises først, sorteret numerisk. Værdien skal være unik
+  inden for digterens mappe og kunne repræsenteres sikkert som et JavaScript-heltal.
+  Brug fx 10, 20, 30, så indskud normalt ikke kræver omnummerering. Uden
+  attributten bruges den normale sortering efter år og titel, med »Andre digte«
+  og det virtuelle antologiværk til sidst. Det gælder både værklisten og
+  forrige/næste-navigation. I det eksisterende værk-API hedder feltet `sort_order`;
+  det offentlige v1-bulkformat er uændret.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
 - `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
   tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
@@ -165,7 +173,8 @@ Registrér gennemgangen i `<workhead>`:
 
 Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
 `applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
-er redaktionelt sat i kantede parenteser; `facsimile-pages` er et enbaseret
+er redaktionelt sat i kantede parenteser. Brug `pages="[upagineret]"`, når
+rettelsesblokken står på et blad uden sidetal; `facsimile-pages` er et enbaseret
 sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
 `<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
 samme linje:
@@ -258,6 +267,22 @@ og er arrays med `name` og valgfrit `id`. Øvrige felter har XML-felternes navne
 og er strenge. Manglende felter udelades. Biografier og bulkdatasættet bruger
 fortsat deres eksisterende format.
 
+»Andre udgaver« genbruger kildeformatteringen og indleder hver henvisning med
+den linkede teksttitel i `»…«` efterfulgt af `, i: `. Den valgte kilde arves
+fra værket, medmindre teksten har sin egen kildeangivelse. Bibliografiske
+personnavne linkes som i »Kilde«, og publikationens titel linkes til det
+konkrete værk, også for antologier, tidsskrifter og aviser. Bind forkortes til
+`bd.` i disse henvisninger; »Kilde« bevarer `bind`. Sidetal tilføjes med `s.`
+og tankestreg i intervaller i begge sektioner.
+
+Fritekstkilder bevares, og den første kursiverede titel linkes til værket,
+når den ikke allerede indeholder et link. Mangler kildeangivelsen, bruges
+tilgængelig værktitel, år og eventuel værkforfatter uden at tilføje ukendte
+udgivelsesoplysninger. I tekst-JSON får poster i `variants` et valgfrit
+`citation` med den samlede henvisning som inline XML. De eksisterende
+referencefelter bevares. Ændringer i en udgaves kildefiler genopbygger også
+henvisningerne hos de øvrige varianter.
+
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
 kun `<wikidata>` tilladt:
@@ -333,6 +358,16 @@ Tekstdatoer beskrives nedenfor. De tre sidste samles ogsaa i `caches/collected.d
   eller redigerede tekstforekomster.
 - `<section>`: en gruppe tekster, eventuelt linkbar hvis den har `id`.
 - `<subwork ref="..."/>`: henviser til et andet vaerk hos samme digter.
+
+### Antologitekster og virtuelle indholdsfortegnelser
+
+En tekst i en antologi findes kun én gang, med XML'ens `text/@id`. Teksten
+hører til antologiens værk, mens dens effektive `author` identificerer digteren.
+Buildet opretter automatisk digterens virtuelle værk »Tekster i andre udgivelser«;
+dets indholdsfortegnelse refererer direkte til de samme tekstposter og URL'er.
+Forskellige historiske udgaver har deres egne tekstposter.
+Tekstens eksplicitte `aliases` angiver alternative ID'er, der viderestilles
+til den kanoniske tekst.
 
 ### Text
 
@@ -660,6 +695,11 @@ fallbacks. En blank specialtitel tilsidesætter derfor ikke en gyldig fallback.
 Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
 fra kontrollen af linktitlen.
 
+Afsluttende komma er tilladt i `<title>`, uanset om der er en undertitel.
+Andre titelfelter (`<indextitle>`, `<toctitle>`, `<breadcrumbtitle>`,
+`<linktitle>`, `<subtitle>` og `<suptitle>`) må aldrig slutte med komma.
+Kommaforbuddet kan ikke undtages med `ignore-tests`.
+
 Titelfelter er redaktionelle metadata og skrives normalt uden afsluttende
 punktum, kolon eller semikolon. Fjern derfor disse tegn til sidst i `<title>`,
 `<indextitle>`, `<toctitle>` og `<breadcrumbtitle>`, også når tegnet står i den
@@ -722,6 +762,11 @@ Eksempel (text kilde med arv og override):
 
 Regler:
 
+- Når den valgte værkkilde har både `facsimile` og `facsimile-pages-num`, skal
+  hver tekst angive `source/@pages` eller, for unummererede sider,
+  `source/@facsimile-pages`. Det gælder også prosa og tekster i sektioner.
+  Facsimileintervaller er enbaserede, lukkede og ikke-faldende og må ikke
+  overskride kildens sideantal. Korpustesten håndhæver kravet.
 - `pages` skal være én fuld sidebetegnelse eller et lukket, ikke-faldende
   interval. Skriv eksempelvis `102-108`, aldrig den bibliografiske forkortelse
   `102-08`; åbne intervaller som `106-` er ugyldige.
@@ -775,19 +820,40 @@ Datohjaelperne kender også negative år og enkelte `ca.`-udtryk i andre sammenh
 
 - `<poetry>`: poesi. Linjer nummereres automatisk.
 - `<prose>`: prosa. Renderes som prosalinjer/afsnit.
-- `<quote>`: citatblok.
+- `<epigraph>`: litterært motto eller epigraf.
 
-Blokattributter:
+### Prosaafsnit
 
-- `max-width="..."`: valgfri maksimal bredde for især `<quote>`.
-- `lang="la"` på `<poetry>`, `<prose>` eller `<quote>`: sprog for hele blokken,
+Facsimilet bestemmer prosaens afsnitsgrænser, førstelinjeindryk og afstand
+mellem afsnit. Skriv hvert sammenhængende afsnit på én XML-linje i `<prose>`;
+repræsentér trykte førstelinjeindryk med indledende mellemrum. Kontrollér
+indrykket for hvert afsnit, også første afsnit efter en overskrift, som kan
+stå uden indryk.
+
+Indsæt kun en blanklinje mellem afsnit, når facsimilet viser ekstra lodret
+afstand. Et nyt afsnit eller et førstelinjeindryk er ikke i sig selv grund til
+en blanklinje. Indryk må ikke erstattes med blanklinjer. Saml trykkets fysiske
+linjeombrydninger inden for afsnittet, og lad ikke et sideskift skabe et nyt
+afsnit eller ekstra afstand; bevar `<pb>` på det præcise tekststed.
+OCR'ens linjeskift, blokopdeling og mellemrum er ikke facit.
+
+### Blokattributter
+
+- `max-width="..."`: valgfri maksimal bredde for især `<epigraph>`.
+- `lang="la"` på `<poetry>`, `<prose>` eller `<epigraph>`: sprog for hele blokken,
   angivet med en ISO 639-1-kode. Markér kun hele blokken, når brødteksten har
   samme sprog. I blandede blokke bruges `<span lang="...">` på de fremmedsprogede
   tekststykker. En note på et andet sprog end blokken kan tilsvarende have
   en `<span lang="...">` omkring sin tekst.
 
-`<quote>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
-Brug kun `max-width`, når et langt citat skal begrænses yderligere.
+`<epigraph>` renderes med mindre skrift, naturlig bredde og placeres mod højre.
+Brug kun `max-width`, når et langt motto skal begrænses yderligere.
+
+Et `<epigraph>` markeres efter sin funktion som motto og må stå før, mellem
+eller efter tekstens øvrige blokke, også foran en intern scene eller sang.
+Et citat er ikke i sig selv et motto. Indlejrede digte og verscitater bruger
+`<poetry>`, mens prosacitater bruger `<prose>`. Skift mellem disse bloktyper
+inden for samme `<body>`, når prosaen indeholder vers.
 
 Eksempel:
 
@@ -802,9 +868,9 @@ Anden verslinje
 
 Tredje verslinje
   </poetry>
-  <quote max-width="70%">
-Et citat
-  </quote>
+  <epigraph max-width="70%">
+Et motto
+  </epigraph>
 </body>
 ```
 
@@ -834,6 +900,9 @@ Attributterne har forskellig betydning:
 - `facs`: det obligatoriske filnavn på facsimilebilledet for den nye side, fx
   `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
   facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
+
+Et sideskift i en titel- eller undertitelfodnote markeres også med `<pb>`
+inde i fodnoten. Fodnotens sideskift er uafhængigt af brødtekstens.
 
 `<pb>` placeres præcis før det første transskriberede tegn eller inline-element
 på den nye side. Hvis en sætning, en verslinje eller et ord fortsætter over
@@ -975,8 +1044,8 @@ Selve prosateksten.
 <subwork ref="1856-2"/>
 ```
 
-`ref` skal pege paa et vaerk-id hos samme digter. Vaerket skal ogsaa vaere listet i
-digterens `<works>` i `info.xml`.
+`ref` skal pege på et værk-id hos samme digter. Værkfilen skal ligge i
+digterens mappe, hvor den registreres automatisk uden en liste i `info.xml`.
 
 ## Noter
 
@@ -1088,6 +1157,13 @@ til interne redaktionelle kommentarer.
 ## Links og inline-tags
 
 Inline XML bliver renderet client-side af `components/textcontent.js`.
+
+Layout- og typografitags skal have indhold. Tomme `<center>`, `<right>`,
+`<nonum>`, `<wrap>`, `<blockquote>` og tilsvarende formateringstags afvises af
+korpustesten `empty-layout-tags`. Whitespace, kommentarer, tomme indlejrede
+tags og usynlige `<pb/>`- eller `<br/>`-markører tæller ikke som indhold.
+Brug blanklinjer til afstand. Tags med synlige billeder eller ornamenter er
+ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er tilladt.
 
 Almindelige inline-tags:
 

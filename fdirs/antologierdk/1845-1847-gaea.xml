@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1845-1847-gaea" author="antologierdk" status="complete" type="anthology">
+<workhead>
+  <title>Gæa</title>
+  <subtitle>Æsthetisk Aarbog</subtitle>
+  <year>1845-47</year>
+  <source>
+    <title>Gæa</title>
+    <editor id="moellerpl" type="editor">P. L. Møller</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>Udgiverens Forlag</publisher>
+    <year>1845-47</year>
+  </source>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-13T15:59:21+02:00"/>
+  </proofreadings>
+</workhead>
+<workbody>
+<subwork ref="1845-gaea"/>
+<subwork ref="1846-gaea"/>
+<subwork ref="1847-gaea"/>
+
+</workbody>
+</kalliopework>

@@ -13,14 +13,23 @@
     <picture type="titlepage" src="1807s-p1.jpg"><transcription>Skiemtsomme / Riimbreve / af / Jens Baggesen. / - - - - ut sibi quivis / Speret idem - - - - / Hor. / Kiöbenhavn. / 1807. / Paa Frederik Brummers Forlag.</transcription></picture>
   </pictures>
   <source facsimile="130023407941_color" facsimile-pages-num="368" facsimile-pages-offset="6">Jens Baggesen: <i>Skiemtsomme Riimbreve</i>, Frederik Brummers Forlag, Kbh., 1807.</source>
+  <source id="fortale">
+    <author id="baggesen">Jens Baggesen</author>
+    <title>Skiemtsomme Riimbreve</title>
+    <place>Kiøbenhavn</place>
+    <publisher>Frederik Brummers Forlag</publisher>
+    <year>1807</year>
+  </source>
 </workhead>
 <workbody>
 
 <text id="baggesen2002121801" skip-index="true">
 <head>
   <title>Fortale</title>
-  <source><i>Skiemtsomme Riimbreve</i> (1807), side ii-ix (siderne er ikke paginerede).</source>
-  <!-- Vores faksimile mangler disse sider -->
+  <notes>
+    <note>Fortalens sider ii-ix er unummererede og mangler i det registrerede facsimile.</note>
+  </notes>
+  <source in="fortale" pages="ii-ix"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

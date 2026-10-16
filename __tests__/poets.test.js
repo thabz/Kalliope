@@ -9,6 +9,10 @@ describe('poet language validation', () => {
     expect(isKnownPoetLanguage('nl')).toBe(true);
   });
 
+  it.each(['is', 'cs'])('allows imported poet language %s', language => {
+    expect(isKnownPoetLanguage(language)).toBe(true);
+  });
+
   it('rejects unknown language codes', () => {
     expect(isKnownPoetLanguage('zz')).toBe(false);
   });

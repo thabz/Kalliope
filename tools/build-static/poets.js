@@ -37,6 +37,8 @@ const knownPoetLanguages = new Set([
   'fa',
   'es',
   'nl',
+  'is',
+  'cs',
   'un',
   'it',
 ]);
@@ -141,7 +143,7 @@ const build_poets_first_pass = collected => {
   all_poet_ids().forEach(id => {
     const infoFilename = `fdirs/${id}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
-      throw new Error(`Missing info.xml in fdirs/${poetId}.`);
+      throw new Error(`Missing info.xml in fdirs/${id}.`);
     }
     const relevantFiles = [
       infoFilename,
@@ -152,7 +154,8 @@ const build_poets_first_pass = collected => {
       `fdirs/${id}/portraits.xml`,
     ];
     const relevantFilesModified = isFileModified(...relevantFiles);
-    if (!force_reload && !relevantFilesModified) {
+    const worksModified = collected.changedWorkPoetIds?.has(id) === true;
+    if (force_reload === false && relevantFilesModified === false && worksModified === false) {
       return;
     }
     found_changes = true;
@@ -164,13 +167,12 @@ const build_poets_first_pass = collected => {
     const type = safeGetAttr(p, 'type');
     const nameE = getChildByTagName(p, 'name');
     const periodE = getChildByTagName(p, 'period');
-    const works = safeGetText(p, 'works');
     const literary_periods = parseLiteraryPeriods(
       id,
       country,
       safeGetText(p, 'literary-periods')
     );
-    if (!country.match(/(dk|se|no|gb|de|fr|us|it|un)/)) {
+    if (!country.match(/^(dk|se|no|is|cz|gb|de|fr|us|it|un)$/)) {
       throw `${id} har ukendt land: ${country}`;
     }
     if (!isKnownPoetLanguage(lang)) {
@@ -247,7 +249,7 @@ const build_poets_first_pass = collected => {
       period = null;
     }
 
-    let worksArray = works ? works.split(',') : [];
+    const worksArray = [...(collected.workids.get(id) ?? [])];
     const has = hasTexts(id, worksArray);
     const poet = {
       id,
@@ -293,7 +295,7 @@ const build_poets_first_pass = collected => {
 };
 
 const build_poets_json = collected => {
-  const poetMetadataDirty = new Set();
+  const poetMetadataDirty = new Set(collected.changedWorkPoetIds ?? []);
   collected.poets.forEach((poet, id) => {
     const mentions = collected.person_or_keyword_refs.get(id);
     const has_mentions =
@@ -316,6 +318,7 @@ const build_poets_json = collected => {
     const outputFilename = `public/api/${poet.id}.json`;
     if (
       mentionsChanged ||
+      poetMetadataDirty.has(id) ||
       !fileExists(outputFilename) ||
       isFileModified(
         'tools/build-static.js',

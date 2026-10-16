@@ -6,7 +6,13 @@
   <identifiers>
     <openlibrary-work>OL6094211W</openlibrary-work>
   </identifiers>
-  <source pages="85-165"><i>Paludan-Müllers Poetiske Skrifter i Udvalg</i>, Carl S. Petersen (red.), Gyldendalske Boghandel, Kbh. 1909.</source>
+  <source pages="85-165">
+    <title>Paludan-Müllers Poetiske Skrifter i Udvalg</title>
+    <editor type="editor">Carl S. Petersen</editor>
+    <place>Kbh.</place>
+    <publisher>Gyldendalske Boghandel</publisher>
+    <year>1909</year>
+  </source>
   <keywords>ottave-rime</keywords>
 </workhead>
 <workbody>
@@ -1281,7 +1287,7 @@ Imellem Skovens spredte Træer Diana
 Paa Jagt med sine Nympher!
 
 <nonum>MYRIS <small>betragtende det næste.</small></nonum>
-<nonum><center></center></nonum>
+
                  Venus sku!
 I Morgenglands hun stiger op af Havet,
 Og Vandet strømmer af de gyldne Haar.

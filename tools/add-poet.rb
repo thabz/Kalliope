@@ -79,7 +79,6 @@ end
       <date>#{@fieldvalues['Dødsdato (yyyy-mm-dd)']}</date>#{@deathplace}
     </dead>
   </period>
-  #{@wantsAndreXml ? "<works>andre</works>" : ""}
 </person>
 }
 

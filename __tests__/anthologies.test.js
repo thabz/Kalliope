@@ -1,10 +1,8 @@
 import { DOMParser } from '@xmldom/xmldom';
 import {
-  ANTHOLOGY_WORK_ID,
   buildCollectionIndexes,
   buildVirtualAnthologyWorks,
   isAnthologyText,
-  publicationTextId,
   resolveAuthorId,
   textsForWork,
   worksForPoet,
@@ -19,36 +17,27 @@ import {
 } from '../tools/build-static/xml.js';
 
 describe('antologiplaceringer', () => {
-  it('indekserer både forfatter- og publikationsplaceringer uden at ændre rækkefølgen', () => {
-    const collected = {
-      works: new Map([
-        ['publisher/book', { id: 'book' }],
-        ['author/antologier', { id: 'antologier', virtualType: 'anthology' }],
-        ['author/book', { id: 'book' }],
-      ]),
-      texts: new Map([
-        ['one', { id: 'one', poetId: 'author', workId: 'antologier', placement: 'author' }],
-        ['onea', { id: 'onea', poetId: 'publisher', workId: 'book', placement: 'publication', indexable: false }],
-        ['two', { id: 'two', poetId: 'author', workId: 'antologier', placement: 'author' }],
-        ['three', { id: 'three', poetId: 'author', workId: 'book' }],
-      ]),
+  it('indekserer samme tekstobjekt i både publikationen og digterens virtuelle TOC', () => {
+    const text = {
+      id: 'one', poetId: 'author', workId: 'book',
+      sourcePoetId: 'publisher', sourceWorkId: 'book', sourceOrder: 1,
     };
-    const authorWorks = worksForPoet(collected, 'author');
+    const collected = {
+      works: new Map([['publisher/book', { id: 'book', title: 'Bog' }]]),
+      texts: new Map([['one', text]]),
+    };
+    buildVirtualAnthologyWorks(collected);
     const authorTexts = textsForWork(collected, 'author', 'antologier');
     const publicationTexts = textsForWork(collected, 'publisher', 'book');
     buildCollectionIndexes(collected);
-    expect(worksForPoet(collected, 'author')).toEqual(authorWorks);
     expect(textsForWork(collected, 'author', 'antologier')).toEqual(authorTexts);
     expect(textsForWork(collected, 'publisher', 'book')).toEqual(publicationTexts);
-    expect(textsForWork(collected, 'author', 'book').map(text => text.id)).toEqual(['three']);
-    expect(worksForPoet(collected, 'missing')).toEqual([]);
+    expect(authorTexts[0]).toBe(text);
+    expect(publicationTexts[0]).toBe(text);
+    expect(collected.texts.size).toBe(1);
     expect(textsForWork(collected, 'missing', 'book')).toEqual([]);
-    expect(textsForWork(collected, 'author', 'missing')).toEqual([]);
-    // Callers may reorder or discard their results without changing the index.
-    worksForPoet(collected, 'author').reverse();
     textsForWork(collected, 'author', 'antologier').pop();
-    expect(worksForPoet(collected, 'author')).toEqual(authorWorks);
-    expect(textsForWork(collected, 'author', 'antologier')).toEqual(authorTexts);
+    expect(textsForWork(collected, 'author', 'antologier')).toEqual([text]);
   });
 
   it('arver forfatter fra den nærmeste sektion', () => {
@@ -86,7 +75,7 @@ describe('antologiplaceringer', () => {
     expect(author('vaerkets')).toBe('antologierdk');
   });
 
-  it('bruger udgivelses-id for tekster i en forfattersektion', () => {
+  it('bevarer tekst-id for tekster i en forfattersektion', () => {
     const doc = new DOMParser().parseFromString(
       `<workbody>
         <section author="hansenfj">
@@ -103,7 +92,7 @@ describe('antologiplaceringer', () => {
 
     const toc = build_section_toc(doc.documentElement, 'antologierdk');
 
-    expect(toc[0].content[0].id).toBe('solnedganga');
+    expect(toc[0].content[0].id).toBe('solnedgang');
   });
 
   it('medtager en prosatekst i værkets indholdsfortegnelse', () => {
@@ -151,14 +140,11 @@ describe('antologiplaceringer', () => {
     expect(toc[0].title[0][0]).toBe('Personer');
   });
 
-  it('genkender en anden tekstforfatter og danner udgivelses-id', () => {
+  it('genkender en anden tekstforfatter', () => {
     expect(isAnthologyText('arnesen-kall', 'antologierdk')).toBe(true);
     expect(isAnthologyText('antologierdk', 'antologierdk')).toBe(false);
     expect(isAnthologyText(null, 'antologierdk')).toBe(false);
     expect(isAnthologyText('winther', null)).toBe(false);
-    expect(publicationTextId('antologierdk2026071901')).toBe(
-      'antologierdk2026071901a'
-    );
   });
 
   it('opretter et virtuelt værk grupperet efter kildeudgivelsen', () => {
@@ -181,8 +167,8 @@ describe('antologiplaceringer', () => {
           {
             id: 'text-2',
             poetId: 'arnesen-kall',
-            workId: ANTHOLOGY_WORK_ID,
-            placement: 'author',
+            workId: '1872',
+            placement: 'canonical',
             sourcePoetId: 'antologierdk',
             sourceWorkId: '1872',
             sourceOrder: 2,
@@ -193,8 +179,8 @@ describe('antologiplaceringer', () => {
           {
             id: 'text-1',
             poetId: 'arnesen-kall',
-            workId: ANTHOLOGY_WORK_ID,
-            placement: 'author',
+            workId: '1872',
+            placement: 'canonical',
             sourcePoetId: 'antologierdk',
             sourceWorkId: '1872',
             sourceOrder: 1,
@@ -227,6 +213,31 @@ describe('antologiplaceringer', () => {
     );
   });
 
+  it('sorterer årbøger efter deres årstal, også når næste bind udkom året før', () => {
+    const sources = [
+      { id: '1846-gaea', title: 'Gæa', year: '1846', published: '1845-12' },
+      { id: '1847-gaea', title: 'Gæa', year: '1847', published: '1847' },
+      { id: '1845-gaea', title: 'Gæa', year: '1845', published: '1845' },
+    ];
+    const collected = {
+      works: new Map(sources.map(work => [`antologierdk/${work.id}`, work])),
+      texts: new Map(sources.map(work => [work.id, {
+        id: work.id,
+        poetId: 'oehlenschlaeger',
+        workId: work.id,
+        placement: 'canonical',
+        sourcePoetId: 'antologierdk',
+        sourceWorkId: work.id,
+        sourceOrder: 1,
+      }])),
+    };
+    buildVirtualAnthologyWorks(collected);
+    const work = collected.works.get('oehlenschlaeger/antologier');
+    expect(work.sections.map(section => section.work.year)).toEqual([
+      '1845', '1846', '1847',
+    ]);
+  });
+
   it('placerer det virtuelle antologiværk efter Andre digte', () => {
     const works = [
       { id: 'antologier', title: 'Tekster i andre udgivelser' },
@@ -246,9 +257,9 @@ describe('antologiplaceringer', () => {
     const toc = build_section_toc(workbody, 'antologierdk');
 
     expect(toc.slice(0, 3).map(item => item.id)).toEqual([
-      'antologierdk2026071901a',
-      'antologierdk2026071902a',
-      'antologierdk2026071903a',
+      'antologierdk2026071901',
+      'antologierdk2026071902',
+      'antologierdk2026071903',
     ]);
   });
 });

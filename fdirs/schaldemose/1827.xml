@@ -28,7 +28,7 @@
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 In weltlicker Wyßheit yß kein Boeck geschreven,
 Dem man billick mehr Rohm un Loff kan geven
 As <w>Reineke Voß</w>, ein schlicht Boeck, darinnen
@@ -38,7 +38,7 @@ As ein dürbahr Schatt verborgen ligt,
 Glieck as dat Für schulet in der Asche,
 Um gülne Pennige inner schmerigen Tasche.
 <right>Lauremberg.</right>
-</quote>
+</epigraph>
 </body>
 </text>
 
@@ -1104,6 +1104,9 @@ Tilbage til Kongens Gaard han render.
   <title>Fierde Bog</title>
   <firstline>Til Trængselsborg, at stævne Ræven ind</firstline>
   <source pages="45-55"/>
+  <places>
+    <place ref="salling" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

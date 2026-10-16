@@ -28,9 +28,6 @@ import {
   getChildrenByTagName,
 } from './xml.js';
 import {
-  isAnthologyText,
-  publicationTextId,
-  resolveAuthorId,
   worksForPoet,
 } from './anthologies.js';
 
@@ -44,12 +41,7 @@ const build_section_toc = (section, workAuthorId = null) => {
   getChildren(section).forEach((part) => {
     const partName = tagName(part);
     if (partName === 'text') {
-      const sourceTextId = safeGetAttr(part, 'id');
-      const textAuthorId = resolveAuthorId(part, workAuthorId);
-      const textId =
-        isAnthologyText(textAuthorId, workAuthorId) ?
-          publicationTextId(sourceTextId)
-        : sourceTextId;
+      const textId = safeGetAttr(part, 'id');
       const head = getChildByTagName(part, 'head');
       const firstline = extractTitle(head, 'firstline');
       const title =
@@ -91,7 +83,7 @@ const extract_subworks = (poetId, workbody, collected) => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
     if (subwork == null) {
-      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til <works> i fdirs/${poetId}/info.xml?`;
+      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Kontrollér værkfilens placering og id.`;
     }
     return subwork;
   });
@@ -185,6 +177,7 @@ const build_works_toc = async (collected) => {
     const poetWorksModified =
       isFileModified(
         'tools/build-static/toc.js',
+        'common/worksort.js',
         'tools/errata.js',
         'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
@@ -204,6 +197,7 @@ const build_works_toc = async (collected) => {
         !poetWorksModified &&
         !isFileModified(
           'tools/build-static/toc.js',
+          'common/worksort.js',
           'tools/errata.js',
           'tools/build-static/anthologies.js',
           ...workMeta.sourceFiles

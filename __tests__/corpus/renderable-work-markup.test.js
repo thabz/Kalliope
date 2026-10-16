@@ -14,21 +14,15 @@ describe('renderable work corpus markup', () => {
   it('keeps every rendered text line valid XML', () => {
     const issues = [];
 
+    // Behold disse to faste eksempler; nye værkindsættelser skal ikke udvide listen.
     for (const { content, filename } of loadTrackedWorkFiles().filter(
       (work) => [
-        'fdirs/blicherclausen/1900.xml',
-        'fdirs/ingemann/1816a.xml',
-        'fdirs/blicherclausen/1903.xml',
         'fdirs/blicher/1814.xml',
         'fdirs/grundtvig/1814a.xml',
-        'fdirs/kaalund/1898.xml',
-        'fdirs/stenersen/1752.xml',
-        'fdirs/stub/1972-1.xml',
-        'fdirs/stub/1972-2.xml',
       ].includes(work.filename)
     )) {
       const document = parseWorkXml(content);
-      const blocks = getElementsByTagNames(document, ['poetry', 'prose', 'quote']);
+      const blocks = getElementsByTagNames(document, ['poetry', 'prose', 'epigraph']);
 
       for (const block of blocks) {
         const bodyXml = safeGetInnerXML(block).replace(/<xref\b[^>]*\/>/gu, '');

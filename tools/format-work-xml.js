@@ -7,7 +7,7 @@ const structuralElements = [
   'head',
   'poetry',
   'prose',
-  'quote',
+  'epigraph',
   'section',
   'subwork',
   'text',

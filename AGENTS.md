@@ -62,11 +62,17 @@ digtere.
 
 ## XML-data
 
+- Værker registreres automatisk fra `<kalliopework>`-filer i digtermappen.
+  Opret aldrig `<works>` i `info.xml`; elementet er ulovligt i RELAX NG.
+  XML-filer skal være værker eller en dokumenteret metadatafil efter
+  `docs/xml-info-format.md`. Særlige værkrækkefølger angives med `sort-order`
+  på de enkelte værkfiler.
+
 - Et trykt rettelsesark skal altid opdages ved sidegennemgangen og alle dets
   relevante rettelser indføres før færdigstatus. Registrér arket som `<errata>`
   i `<workhead>`, og mærk hver rettelse med `<footnote type="errata">` i formen
   `rettet] trykt`. Arket må aldrig oprettes som en selvstændig tekstpost.
-- Angiv altid `lang` med en ISO 639-1-sprogkode på `<quote>`, når citatet ikke
+- Angiv altid `lang` med en ISO 639-1-sprogkode på `<epigraph>`, når mottoet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
 - Brug ikke `<a>` eller `<xref>` i værkernes egentlige brødtekst i `<body>`.

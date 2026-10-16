@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Fragment, useState } from 'react';
 import * as Client from '../common/client.js';
+import { buildExternalIdentifierLinks } from '../common/external-identifiers.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { poetsByLastname } from '../common/sorting.js';
 import _ from '../common/translations.js';
@@ -240,7 +241,7 @@ const TranslationsSection = (props) => {
 };
 
 const MentionsLead = (props) => {
-  const { hasReferences, hasTranslations, lang, poet } = props;
+  const { hasReferences, hasTranslations, hasExternalResources, lang, poet } = props;
   const poetName = poetNameString(poet, false, false, lang);
   if (hasReferences && hasTranslations) {
     return (
@@ -258,6 +259,19 @@ const MentionsLead = (props) => {
       <PageLead>
         {_(
           'Her finder du oversættelser af tekster af {poetName} til andre sprog.',
+          lang,
+          { poetName }
+        )}
+      </PageLead>
+    );
+  }
+  if (hasReferences === false) {
+    return (
+      <PageLead>
+        {_(
+          hasExternalResources
+            ? 'Her finder du links til eksterne ressourcer om {poetName}.'
+            : 'Der er endnu ingen henvisninger til {poetName} på Kalliope.',
           lang,
           { poetName }
         )}
@@ -321,6 +335,9 @@ const MentionsPage = (props) => {
   const hasReferences =
     mentions.length > 0 || primary.length > 0 || secondary.length > 0;
   const hasTranslations = translations.length > 0;
+  const hasExternalResources =
+    buildExternalIdentifierLinks(identifiers, { category: 'reference', lang })
+      .length > 0;
 
   sections.push(
     <ExternalIdentifierLinks
@@ -349,6 +366,7 @@ const MentionsPage = (props) => {
       <MentionsLead
         hasReferences={hasReferences}
         hasTranslations={hasTranslations}
+        hasExternalResources={hasExternalResources}
         lang={lang}
         poet={poet}
       />

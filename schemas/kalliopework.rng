@@ -65,7 +65,7 @@
         <ref name="picture"/>
         <ref name="transcription"/>
         <ref name="poetry"/>
-        <ref name="quote"/>
+        <ref name="epigraph"/>
         <ref name="a"/>
         <ref name="xref"/>
         <ref name="b"/>
@@ -93,6 +93,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -106,6 +107,7 @@
       <optional><attribute name="status"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="parent"><text/></attribute></optional>
+      <optional><attribute name="sort-order"><data type="positiveInteger" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <ref name="workhead"/>
       <optional><ref name="workbody"/></optional>
@@ -178,7 +180,7 @@
         <choice>
           <ref name="poetry"/>
           <ref name="prose"/>
-          <ref name="quote"/>
+          <ref name="epigraph"/>
         </choice>
       </zeroOrMore>
     </element>
@@ -253,6 +255,7 @@
 
   <define name="picture">
     <element name="picture">
+      <optional><attribute name="primary"><choice><value>true</value><value>false</value></choice></attribute></optional>
       <optional><attribute name="src"><text/></attribute></optional>
       <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
@@ -329,8 +332,8 @@
     </element>
   </define>
 
-  <define name="quote">
-    <element name="quote">
+  <define name="epigraph">
+    <element name="epigraph">
       <optional><attribute name="max-width"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
@@ -564,6 +567,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -626,6 +630,13 @@
   <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
+  <define name="blockquote">
+    <element name="blockquote">
+      <optional><attribute name="left"><text/></attribute></optional>
+      <optional><attribute name="right"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>
   <define name="two-columns"><element name="two-columns"><ref name="simpleElement"/></element></define>
   <define name="column"><element name="column"><ref name="simpleElement"/></element></define>

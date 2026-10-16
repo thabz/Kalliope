@@ -91,6 +91,7 @@ class ElasticSearchClient {
         mappings: {
           date_detection: false,
           properties: {
+            index_entry: { type: 'keyword' },
             poet_search: {
               type: 'text',
               analyzer: 'kalliope_text',
@@ -248,21 +249,9 @@ class ElasticSearchClient {
   }
 
   deleteWork(index, poetId, workId) {
+    // The owning build entry can differ from the text's physical publication.
     return this.deleteByQuery(index, {
-      bool: {
-        filter: [
-          {
-            term: {
-              'poet.id': poetId,
-            },
-          },
-          {
-            term: {
-              'work.id': workId,
-            },
-          },
-        ],
-      },
+      term: { index_entry: `${poetId}-${workId}` },
     });
   }
 

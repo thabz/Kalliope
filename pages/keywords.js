@@ -48,13 +48,14 @@ const Keywords = (props) => {
       return {
         id: keyword.id,
         url,
+        searchText: keyword.title,
         html: keyword.title,
       };
     });
     sections.push({ title: group.title, items });
   });
 
-  let renderedGroups = <SectionedList sections={sections} />;
+  let renderedGroups = <SectionedList sections={sections} keyboardNavigation />;
 
   return (
     <Page

@@ -13,6 +13,13 @@ const bodyWithStanzas = stanzaLengths => {
 };
 
 describe('stanza candidate analysis', () => {
+  it('keeps a printed omission line inside its stanza', () => {
+    const body = 'Første vers\n<nonum>— — — —</nonum>\nAndet vers\n\nTredje vers';
+    const result = analyzeStanzas({ body });
+    expect(result.verse_line_count).toBe(3);
+    expect(result.observed_stanza_lengths).toEqual([2, 1]);
+  });
+
   it('finds an extra boundary in the first sonnet quatrain', () => {
     const result = analyzeStanzas({ body: bodyWithStanzas([2, 2, 4, 3, 3]) });
 

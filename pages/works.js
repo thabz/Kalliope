@@ -9,7 +9,7 @@ import { poetMenu } from '../components/menu.js';
 import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import PicturesGrid from '../components/picturesgrid.js';
-import { poetNameString } from '../components/poetname-helpers.js';
+import { navnMedEjefald, poetNameString } from '../components/poetname-helpers.js';
 import PoetName from '../components/poetname.js';
 import Stack from '../components/stack.js';
 import WorksList from '../components/workslist.js';
@@ -56,7 +56,29 @@ const periodFromAnonymousId = (poet, lang) => {
   return `${year}-tallet`;
 };
 
-const worksLead = (poet, lang) => {
+const worksLead = (poet, lang, works, artwork) => {
+  const poetName = poetNameString(poet, false, false, lang);
+  if (works.length === 0 && artwork.length > 0) {
+    return _(
+      'Her finder du de kunstværker af {poetName}, som er gengivet på Kalliope.',
+      lang,
+      { poetName }
+    );
+  }
+  if (works.length > 0 && artwork.length > 0) {
+    return _(
+      'Her finder du litterære værker og kunstværker af {poetName} på Kalliope.',
+      lang,
+      { poetName }
+    );
+  }
+  if (works.length > 0 && works.some((work) => work.has_content === true) === false) {
+    return _(
+      'Listen viser {genitivePoetName} værkerstitler og udgivelsesår. Teksterne er endnu ikke tilgængelige på Kalliope.',
+      lang,
+      { genitivePoetName: navnMedEjefald(poetName), poetName }
+    );
+  }
   if (poet.id === 'bibel') {
     return _(
       'En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.',
@@ -154,7 +176,7 @@ const WorksPage = (props) => {
       menuItems={poetMenu(poet)}
       poet={poet}
       selectedMenuItem="works">
-      <PageLead>{worksLead(poet, lang)}</PageLead>
+      <PageLead>{worksLead(poet, lang, works, artwork)}</PageLead>
       <div className="two-columns no-link-underline">
         {stack}
         <style jsx>{`

@@ -1354,6 +1354,9 @@ For dig ald Jorden sig og Himlen skal nedbøye,
     <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100602"/>.</note>
   </notes>
   <source pages="32-49" facsimile-pages="45-62"/>
+  <places>
+    <place ref="haran" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2210,6 +2213,9 @@ Hvordan et Ægte-Par hinanden bør at ære,
     <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100604"/>.</note>
   </notes>
   <source pages="53-61" facsimile-pages="66-74"/>
+  <places>
+    <place ref="india" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2580,6 +2586,10 @@ Som giør et Ægteskab, det maae du selv betænke,
     <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100605"/>.</note>
   </notes>
   <source pages="62-144" facsimile-pages="75-157"/>
+  <places>
+    <place ref="egypt" relation="setting"/>
+    <place ref="memphis" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5993,9 +6003,9 @@ Som lader jo sin Siæl af Kiærlighed indtage,
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="it">
+<epigraph lang="it">
 Care, Salve, beate, &amp;c.
-</quote>
+</epigraph>
 <poetry>
 Ach! smukke grønne Lund! eensomme taugse Skygge,
 Hvor sig den gyldne Fred har selv udvalt at bygge,

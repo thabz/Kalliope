@@ -3256,7 +3256,18 @@ Og Himlens Engle ved dens Duft sig glæder.
 <head>
   <title>Mindedigt over J. P. Mynster</title>
   <firstline>Slægter fødes, Slægter svinde, Tiden kommer, Tiden gaaer</firstline>
-  <source pages="244-245">Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III.</source>
+  <notes>
+    <note>Udvalgte Skrifter er udgivet i bind I-III.</note>
+  </notes>
+  <source pages="244-245">
+    <author>Carsten Hauch</author>
+    <title>Udvalgte Skrifter</title>
+    <editor type="editor">Poul Schjærf</editor>
+    <volume>III</volume>
+    <place>Kbh.</place>
+    <publisher>Holbergselskabet</publisher>
+    <year>1926-29</year>
+  </source>
   <source pages="115"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

@@ -1066,10 +1066,10 @@ En omfattende dedikation kan alternativt være en selvstændig `<text type="dedi
 Motto eller epigraf:
 
 ```xml
-<motto>
-  <quote xml:space="preserve">
+<epigraph>
+  <poetry>
 Den trykte Motto-Tekst
-  </quote>
+  </poetry>
 
   <contributors>
     <contributor
@@ -1081,10 +1081,13 @@ Den trykte Motto-Tekst
   </contributors>
 
   <credit type="source-attribution">Goethe.</credit>
-</motto>
+</epigraph>
 ```
 
-Mottoets contributors påvirker ikke hovedtekstens authorship.
+Mottoets contributors påvirker ikke hovedtekstens authorship. I dette
+designforslag kan `<epigraph>` indeholde struktureret indhold og attribution;
+i det aktuelle format indeholder elementet mottoets mixed content direkte.
+Epigrafer kan stå før, mellem eller efter tekstens øvrige blokke.
 
 Noter:
 
@@ -1110,7 +1113,7 @@ Trykt signatur:
 
 ### Schemahåndtering
 
-Elementer som `<label>`, `<dateline>`, `<dedication>`, `<motto>`, `<quote>` og `<signature>` skal genbruge eksisterende Relax NG-definitioner, hvor de allerede findes. Manglende definitioner tilføjes som mixed-content-elementer med de viste attributter og child-elementer.
+Elementer som `<label>`, `<dateline>`, `<dedication>`, `<epigraph>` og `<signature>` skal genbruge eksisterende Relax NG-definitioner, hvor de allerede findes. Manglende definitioner tilføjes som mixed-content-elementer med de viste attributter og child-elementer.
 
 De skal samtidig have klart afgrænset scope: contributors inde i eksempelvis et motto eller en dedikation tilhører den indlejrede struktur og må ikke ændre hovedtekstens effektive contributors.
 
@@ -1856,7 +1859,7 @@ Følgende referencer skal tilføjes:
 <ref name="supplied"/>
 ```
 
-Desuden skal schemaets eksisterende eller nye definitioner for de semantiske kildeelementer `<label>`, `<dateline>`, `<dedication>`, `<motto>`, `<quote>` og `<signature>` kunne forekomme i de relevante mixed-content-kontekster. Der bør genbruges eksisterende definitioner frem for at oprette parallelle elementtyper.
+Desuden skal schemaets eksisterende eller nye definitioner for de semantiske kildeelementer `<label>`, `<dateline>`, `<dedication>`, `<epigraph>` og `<signature>` kunne forekomme i de relevante mixed-content-kontekster. Der bør genbruges eksisterende definitioner frem for at oprette parallelle elementtyper.
 
 Bemærk, at `publicationIdentifiers` er navnet på Relax NG-definitionen, mens XML-elementet er `<identifiers>`.
 
@@ -1955,9 +1958,16 @@ merged
 
 `lang="da"` kan fortsat bruges til at angive det relevante forfattersprog.
 
-### `<works>` og antologier
+### Automatisk værkregistrering og antologier
 
-En antologi skal ikke tilføjes manuelt til alle bidragyderes `<works>`.
+En antologitekst har én kanonisk tekstpost i sin kildepublikation med
+XML'ens tekst-ID. Det virtuelle værk »Tekster i andre udgivelser« har
+indholdsfortegnelsesreferencer til de samme kanoniske tekster. I tekst-API'et
+angiver `poet` den effektive forfatter, mens `work` angiver antologien; værkets
+`poet_id` bruges til værklinket.
+
+Værker registreres automatisk ud fra XML-filerne i udgiverens digtermappe.
+`<works>` er afskaffet. En antologi skal ikke kopieres til bidragydernes mapper.
 
 Build-processen skal danne et omvendt bidragsindeks ud fra:
 

@@ -19,6 +19,24 @@ import {
 } from '../tools/build-static/corpus-dataset.js';
 
 describe('versioned corpus dataset', () => {
+  it('exports one anthology text with its poet and physical publication', () => {
+    const text = {
+      id: 'poem', poetId: 'poet', workId: 'book', title: 'Digt',
+      sourcePoetId: 'anthology', sourceWorkId: 'book',
+    };
+    const collected = {
+      poets: new Map([['poet', { lang: 'da', name: { fullname: 'Digter' } }]]),
+      works: new Map([['anthology/book', { title: 'Antologi' }]]),
+      texts: new Map([['poem', text]]),
+    };
+    const record = buildTextRecord(collected, text, { text: { blocks: [] } });
+    expect(record).toMatchObject({
+      id: 'poem', canonical_text_id: 'poem', poet_id: 'poet',
+      work_id: 'anthology/book', work_title: 'Antologi',
+      canonical_url: 'https://kalliope.org/da/text/poem',
+    });
+  });
+
   it('uses rendered records and reads unchanged texts from disk with identical output', () => {
     const authorText = { id: 'one', poetId: 'poet', workId: 'book', title: 'En titel' };
     const unchangedText = { ...authorText, id: 'two', title: 'Anden titel' };

@@ -155,7 +155,7 @@ const RenderedHits = ({ hits }) => {
           </div>
         );
       } else if (hit._source.result_type === 'work') {
-        const workURL = Links.workURL(lang, poet.id, work.id);
+        const workURL = Links.workURL(lang, work.poet_id ?? poet.id, work.id);
         const highlightedWorkTitle =
           highlight && highlight['work.title']
             ? renderHighlightFragment(highlight['work.title'][0], hit._id)

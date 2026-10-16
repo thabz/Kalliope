@@ -381,6 +381,53 @@ const collectSourceStructureIssues = (filename, document) => {
   return { pageIntervals, pageOnlySources };
 };
 
+const collectFacsimilePageSourceIssues = (filename, document) => {
+  const workhead = directChild(document.documentElement, 'workhead');
+  if (workhead == null) {
+    return [];
+  }
+  const sources = directChildren(workhead, 'source');
+
+  return textEntries(document).flatMap(text => {
+    const head = directChild(text, 'head');
+    const source = head == null ? null : directChild(head, 'source');
+    const sourceId = source?.getAttribute('in') ?? 'default';
+    const workSource = sources.find(
+      candidate => (candidate.getAttribute('id') ?? 'default') === sourceId,
+    );
+    if (
+      (workSource?.getAttribute('facsimile') ?? '').trim() === '' ||
+      (workSource?.getAttribute('facsimile-pages-num') ?? '').trim() === ''
+    ) {
+      return [];
+    }
+
+    const pages = source?.getAttribute('pages') ?? null;
+    const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
+    const textId = text.getAttribute('id') ?? '(ukendt tekst)';
+    const label = `${filename}: text ${textId}`;
+    if (pages == null && facsimilePages == null) {
+      return [`${label} requires source pages or facsimile-pages for its work facsimile.`];
+    }
+
+    const issues = [];
+    if (pages != null && parsePageInterval(pages) == null) {
+      issues.push(`${label} has an invalid source pages interval: ${pages}.`);
+    }
+    if (facsimilePages != null) {
+      const interval = parsePageInterval(facsimilePages);
+      const pageCount = Number(workSource.getAttribute('facsimile-pages-num'));
+      if (
+        /^\d+(?:\s*[-–]\s*\d+)?$/.test(facsimilePages.trim()) !== true ||
+        interval == null || interval.from < 1 || interval.to > pageCount
+      ) {
+        issues.push(`${label} has an invalid source facsimile-pages interval: ${facsimilePages}.`);
+      }
+    }
+    return issues;
+  });
+};
+
 const collectSourcePolicyIssues = (filename, document) => {
   const andreWorkheadSources = [];
   const externalSourceLinks = [];
@@ -471,7 +518,10 @@ const collectPageBreakIssues = (
         `${filename}: pb/@facs must use a numeric JPEG filename: ${facs}`,
       );
     }
-    if (!hasAncestor(pageBreak, 'body')) {
+    const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
+      hasAncestor(pageBreak, 'head') === true &&
+      hasAncestor(pageBreak, 'footnote') === true;
+    if (hasAncestor(pageBreak, 'body') !== true && inHeadingFootnote !== true) {
       issues.push(`${filename}: <pb> must occur inside a text body.`);
     }
   });
@@ -570,6 +620,7 @@ export {
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectFacsimilePageSourceIssues,
   collectSourceAuthorIssues,
   collectAnthologySourceIssues,
   collectRedundantTextTitleMetadataIssues,

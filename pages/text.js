@@ -5,6 +5,7 @@ import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
+import { appendSourcePages, removeSourcePoetLinks } from '../common/source-reference.js';
 import _ from '../common/translations.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
@@ -20,7 +21,7 @@ import SidebarPictures from '../components/sidebarpictures.js';
 import SidebarSplit from '../components/sidebarsplit.js';
 import Source from '../components/source.js';
 import Stack from '../components/stack.js';
-import TextContent from '../components/textcontent.js';
+import TextContent, { TextInline } from '../components/textcontent.js';
 import TextName, { textLinkTitleString } from '../components/textname.js';
 import TOC from '../components/toc.js';
 import { workTitleString } from '../components/workname.js';
@@ -63,13 +64,21 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = false }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
       return (
         <div className="reference" key={i}>
           <TextContent contentHtml={ref} contentLang={contentLang} />
+        </div>
+      );
+    }
+
+    if (editions === true && ref.citation != null) {
+      return (
+        <div className="reference" key={ref.id}>
+          <TextInline contentHtml={[[removeSourcePoetLinks(ref.citation, currentPoetId), { html: true }]]} />
         </div>
       );
     }
@@ -283,6 +292,7 @@ const TextPage = (props) => {
     lang,
     highlight,
     poet,
+    workPoet,
     work,
     prev,
     next,
@@ -372,11 +382,7 @@ const TextPage = (props) => {
   if (text.source != null) {
     const source = text.source;
     if (source.source != null && source.source.length > 0) {
-      sourceText = source.source;
-      if (source.pages != null) {
-        sourceText = sourceText.replace(/\.?$/, ', ');
-        sourceText += 's. ' + source.pages + '.';
-      }
+      sourceText = appendSourcePages(removeSourcePoetLinks(source.source, poet.id), source.pages);
       renderedSource = (
         <Source
           contentHtml={[[sourceText, { html: true }]]}
@@ -480,6 +486,7 @@ const TextPage = (props) => {
         <MetadataGroup title={_('Andre udgaver', lang)} printHidden>
           <Refs
             refs={text.variants}
+            editions
             contentLang={text.content_lang}
             currentPoetId={poet.id}
           />
@@ -590,18 +597,18 @@ const TextPage = (props) => {
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks
       text.blocks
-        .filter((b) => b.type !== 'quote')
+        .filter((b) => b.type !== 'epigraph')
         .map((b) => b.lines)
         .reduce((result, lines) => {
           return result.concat(lines);
         }, [])
     );
 
-    // Titlen skal indentes hvis første ikke-quote block indeholder numre.
-    const firstNoneQuoteBlock = text.blocks.find((b) => b.type !== 'quote');
+    // Titlen skal indentes hvis første ikke-epigraph block indeholder numre.
+    const firstNonEpigraphBlock = text.blocks.find((b) => b.type !== 'epigraph');
     shouldIndentTitle =
-      firstNoneQuoteBlock != null &&
-      firstNoneQuoteBlock.lines.find((l) => {
+      firstNonEpigraphBlock != null &&
+      firstNonEpigraphBlock.lines.find((l) => {
         const lineOptions = l.length > 1 ? l[1] : {};
         return lineOptions.displayNum != null || lineOptions.margin != null;
       }) != null;
@@ -616,7 +623,7 @@ const TextPage = (props) => {
       requestPath={`/${lang}/text/${text.id}`}
       canonicalPath={`/${lang}/text/${text.canonical_id || text.id}`}
       noIndex={text.indexable === false}
-      crumbs={textCrumbs(lang, poet, work, section_titles || [], text)}
+      crumbs={textCrumbs(lang, workPoet ?? poet, work, section_titles ?? [], text)}
       paging={paging}
       pageTitle={<PoetName poet={poet} includePeriod />}
       pageSubtitle={_('Værker', lang)}
@@ -665,10 +672,16 @@ const TextPage = (props) => {
 
 TextPage.getInitialProps = async ({ query: { lang, textId, highlight } }) => {
   const json = await Client.text(textId);
+  const workPoetId = json.work?.poet_id ?? json.poet?.id;
+  const workPoet =
+    json.error == null && workPoetId !== json.poet?.id
+      ? await Client.poet(workPoetId)
+      : json.poet;
   return {
     lang,
     highlight,
     poet: json.poet,
+    workPoet,
     work: json.work,
     prev: json.prev,
     next: json.next,

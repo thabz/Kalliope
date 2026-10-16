@@ -142,7 +142,7 @@ export const resolveSourceFacsimileForText = ({
 
 const personRoles = { author: 'authors', editor: 'editors', translator: 'translators' };
 const bibliographyFields = ['title', 'edition', 'volume', 'place', 'publisher', 'printer', 'year'];
-const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
+export const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
   .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 export const parseSourceBibliography = sourceNode => {
@@ -194,7 +194,10 @@ export const parseSourceBibliography = sourceNode => {
 };
 
 // Return the same inline XML consumed by TextInline for legacy references.
-export const formatSourceBibliography = (bibliography, poets = new Map()) => {
+export const formatSourceBibliography = (bibliography, poets = new Map(), {
+  workId = null,
+  volumeLabel = 'bind',
+} = {}) => {
   const personName = person => {
     const name = escapeXml(person.name);
     return person.id != null && poets.has(person.id)
@@ -206,7 +209,9 @@ export const formatSourceBibliography = (bibliography, poets = new Map()) => {
       : `${rendered.slice(0, -1).join(', ')} og ${rendered.at(-1)}`;
   };
   const authors = bibliography.authors ?? [];
-  const parts = [`${authors.length === 0 ? '' : `${names(authors)}: `}<i>${escapeXml(bibliography.title)}</i>`];
+  const title = `<i>${escapeXml(bibliography.title)}</i>`;
+  const linkedTitle = workId == null ? title : `<a work="${escapeXml(workId)}">${title}</a>`;
+  const parts = [`${authors.length === 0 ? '' : `${names(authors)}: `}${linkedTitle}`];
   const editorGroups = new Map();
   for (const editor of bibliography.editors ?? []) {
     const label = editor.type === 'editor' ? 'red. af' : 'udg. af';
@@ -223,7 +228,7 @@ export const formatSourceBibliography = (bibliography, poets = new Map()) => {
     parts.push(`overs. af ${names(translators)}`);
   }
   if (bibliography.edition != null) parts.push(escapeXml(bibliography.edition));
-  if (bibliography.volume != null) parts.push(`bind ${escapeXml(bibliography.volume)}`);
+  if (bibliography.volume != null) parts.push(`${volumeLabel} ${escapeXml(bibliography.volume)}`);
   const imprint = bibliography.publisher != null ? escapeXml(bibliography.publisher)
     : bibliography.printer == null ? null : `trykt hos ${escapeXml(bibliography.printer)}`;
   if (bibliography.place != null) {

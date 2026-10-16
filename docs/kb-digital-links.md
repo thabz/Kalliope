@@ -66,7 +66,11 @@ I PNX-svaret er især disse felter nyttige:
 - `pnx.display.description`: beskrivelsen af originaludgaven;
 - `delivery.deliveryCategory`: skal normalt indeholde `Alma-E`;
 - `delivery.link`: links til de elektroniske udgaver, typisk med
-  `linkType: linktorsrc`.
+  `linkType: linktorsrc`;
+- `pnx.addata.url`: kan indeholde et direkte PDF-link, selv når
+  `delivery.link` er tomt. Kontrollér filens indhold og udgave, før linket bruges.
+  Det gælder fx *Hvededynger* (1930), digital post `alma99128221814205763`,
+  hvor PDF-linket blev fundet i dette felt den 15. oktober 2026.
 
 Metadataresponset er ikke altid komplet. Nogle `Alma-E`-poster viser ikke
 `delivery.link` i et enkelt API-kald, selv om brugerfladen viser PDF-links.

@@ -114,9 +114,9 @@ Som Pintseglædens Ild i Hjertet tænder.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Og der de havde sjunget Lovsangen, gik Jesus ud efter Sædvane over den Bæk Kedron til Oliebjerget.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Min Jesu Lovsang klinger,
 For han til Værket træder,
@@ -199,9 +199,9 @@ Sæt paa min Lidelse din Lovsangs Stempel!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>I denne Nat skulle I Alle forarges paa mig; thi der er skrevet: Jeg skal slaae Hyrden, og Hjordens Faar skulle adspredes: men efterat jeg er opstanden, vil jeg gaae forud for Eder til Galilæa.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Tak, Jesu! for dit Fodspors Straaler klare,
 Som lyse henad Lidelsernes Gange
@@ -281,12 +281,15 @@ At heelt for Verdens Glands de blive blinde!
   <title><num>4.</num>Gethsemane! dit smerterige Minde</title>
   <firstline>Gethsemane! dit smerterige Minde</firstline>
   <source pages="13-16"/>
+  <places>
+    <place ref="gethsemane" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Vaager med mig! Beder, at I ikke skulle falde i Fristelse.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Gethsemane! dit smerterige Minde
 Mig falder til i Bøn og Bod at vaage —
@@ -419,9 +422,9 @@ Og finde ham som Kraftens Væld i Bønnen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Der han sagde til dem: Det er mig, vege de tilbage og faldt til Jorden.</wrap>
-</quote>
+</epigraph>
 <poetry>
 I Jesu Fjender, Daarer, som I vare!
 Hvis han er ej Guds Søn, hvad I jo nægte,
@@ -534,9 +537,9 @@ Dig Christus, Jesus!“ Klang i Klang det toner.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Mener du, at jeg ikke nu kunde bede min Fader, at han Skulde tilskikke mig mere end tolv Legioner Engle? Skal jeg ikke da drikke den Kalk, som min Fader haver givet mig? Hvorledes skulde da Skrifterne fuldkommes, at det bor sig saa ledes gaae til?</wrap>
-</quote>
+</epigraph>
 <poetry>
 Ja! du vil Kalken tomme,
 Dig af din Fader givet,
@@ -591,9 +594,9 @@ Din Død en Livsens Duft til Livet kalde!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Og han rørte ved hans Øre og lægte ham.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Engang endnu den Haand, hvis Saar helbreder,
 Naar gjennemstunget den paa Korset bløder,
@@ -648,9 +651,9 @@ Da du vor Sygdom tog, for os har vundet.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Denne er Eders Time og Mørkets Magt.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Du Lys for Sjælens Øje,
 Min Jesu, hvor du lyser,
@@ -797,9 +800,9 @@ Og Evighedens Herlighed bereder!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Hil være dig, Mester! og han kyssede ham.</wrap>
-</quote>
+</epigraph>
 <poetry>
 „Hil være dig,“ o Troløshedens Ord!
 Hil være dig, sagt med et Kys, som dræber!
@@ -830,9 +833,9 @@ I denne Hilsen Himmerig er lagt.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>De toge Jesus og bandt ham.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Du Frie af Evigheden,
 Som lod for os dig binde,
@@ -943,9 +946,9 @@ Hvem Kjærlighed har til vor Frelse bundet.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Men det var Caiphas, som havde givet Jøderne det Raad, at det var gavnligt, at eet Menneske skulde omkommes for Folket.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Ja, det er gavnligt, at du doer for Folket!
 Skjønt for Guds Lys han monne Hjertet luke,
@@ -1027,9 +1030,9 @@ Vi din Forsonings Priis skal sjunge sammen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Da spurgte den Ypperstepræst Jesus om hans Disciple og om hans Lærdom. Jesus svarede ham: jeg haver talet frit for Verden.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Du frit for Verden lærte,
 De vidste, hvad du talte,
@@ -1140,9 +1143,9 @@ Dig om din Lærdom spørger hver min Tanke!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Er du Christus, den Højlovedes Søn? — Du haver sagt det, jeg er det. Men nu herefter skulle I see Menneskens Søn sidde ved Kraftens højre Haand og komme i Himmelens Skyer.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Ja, du er Christus, den Vidunderlige,
 Den Vældige, den Gud, hvem Engle prise,
@@ -1228,9 +1231,9 @@ Hans Naade varer Jer at undflye Dommen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>De fordømte ham og sagde: Han er skyldig til Døden.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Taalmodig Jesus tier, dømt til Døde;
 Han kunde svare dog med Dommens Torden,
@@ -1264,9 +1267,9 @@ Og skyldige vort Liv i ham at leve.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Jeg kjender det Menneske ikke, om hvem I tale.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Hvad gjør du, Peder! at du nægter denne?
 Guds Søn, som Livet har og Livets Ord,
@@ -1426,9 +1429,9 @@ Hvor tit sig end min Svaghed fra ham vender.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Jeg har syndet, at jeg forraadte uskyldigt Blod.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Du Mørkets Barn! saa gik du hen i Natten;
 Forfærdet Tanken ned i Dybet skuer
@@ -1483,9 +1486,9 @@ Som let sin Død i Luen havde funden!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>De toge de tredive Sølvpenge, den Vurderedes Værd, hvilken Israels Børn vurderede.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Saa har du ham vurderet,
 Den Jakobs klare Stjerne,
@@ -1571,9 +1574,9 @@ I Troens Lys og Kjærlighedens Lue!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Men Jøderne gik ikke ind i Domhuset, paa det de ikke skulde besmittes, men at de maatte æde Paaske.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Med Reenhed vil de Paaskemaaltid æde,
 Tør ej i Hedninghuset sætte Fod,
@@ -1607,9 +1610,9 @@ Og længst er Israels Sabbathstid udrundet.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Mit Rige er ikke af denne Verden.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Nej, ej af denne Verden er dit Rige,
 Det viser sig ved første Øjekast:
@@ -1643,9 +1646,9 @@ Er hævet over Verdens Gang og Døden.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Jeg er dertil født og dertil kommen til Verden, at jeg skal vidne om Sandhed. Hver den, som er af Sandheden, hører min Røst.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Det Rige, du har skabt, er Sandheds Rige:
 Mens Verdens Rige ligger i det Onde,
@@ -1745,9 +1748,9 @@ Hvem Mørket er det velbekjendte Gamle.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Herodes haabede at skulle see et Tegn skee af ham. Og han gjorde ham mange Spørgsmaal, men Jesus svarede Intet.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Tegn vil Herodes. Jesus Intet svarer,
 Han til det store Tegn sig taus bereder,
@@ -1781,9 +1784,9 @@ Som Sejrens Tegn med Kraft mig gjennemluer.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Befat dig intet med denne Retfærdige, thi jeg har lidt meget i en Drøm for hans Skyld.</wrap>
-</quote>
+</epigraph>
 <poetry>
 I Drømme lød for ham den Romerinde
 Og stred for ham med Qvindetanker blide
@@ -1817,9 +1820,9 @@ Som kommer ej i Evighed tilkort.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Bort med denne!</wrap>
-</quote>
+</epigraph>
 <poetry>
 „Bort med ham! bort med denne!“ Bort med hvem?
 Fredsfyrsten, den sagtmodige, den rene,
@@ -1853,9 +1856,9 @@ Og den ifølge han er aldrig borte.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Giv os Barrabas løs!</wrap>
-</quote>
+</epigraph>
 <poetry>
 Om denne Slægt hvad maatte Jesus tænke,
 Da tusindfoldigt Raabet han fornam,
@@ -1889,9 +1892,9 @@ Hvis denne Slægt til Lyset skulde føres.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>De begyndte at hilse ham sigende: Hil være dig, du Jødernes Konge!</wrap>
-</quote>
+</epigraph>
 <poetry>
 De knæled ned og tilbad for din Fod,
 Paa Skrømt de hilste dig med kaade Munde:
@@ -1925,9 +1928,9 @@ At ved din Fod en evig Plads jeg faaer!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>See hvilket Menneske!</wrap>
-</quote>
+</epigraph>
 <poetry>
 See hvilket Menneske, hvem Gud lod slaae!
 Forsmædeligt i Straffens Ild han brænder,
@@ -1961,9 +1964,9 @@ I dine Smerter evigt vederqvæges.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Hvorfra er du?</wrap>
-</quote>
+</epigraph>
 <poetry>
 Hvorfra han er? Ak, fra dit Fædreland,
 Dog ikke Rom, det stolte Verdensrige,
@@ -1997,9 +2000,9 @@ Og i sin Hjemgang med os vilde drage.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>Jeg er uskyldig i denne Retfærdiges Blod.</wrap>
-</quote>
+</epigraph>
 <poetry>
 I Jesu Blod uskyldig! arme Mand!
 Du veed det bedre — mens du Haanden tvætter,
@@ -2027,12 +2030,15 @@ Gav han dig Magt at lade sig korsfæste.
   <title><num>37.</num>Til Golgatha gaaer Vejen nu, mit Hjerte!</title>
   <firstline>Til Golgatha gaaer Vejen nu, mit Hjerte!</firstline>
   <source pages="68-69"/>
+  <places>
+    <place ref="golgotha" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>De fandt et Menneske, som gik forbi, Simon af Cyrene ham tvang de til at bære hans Kors.</wrap>
-</quote>
+</epigraph>
 <poetry>
 Til Golgatha gaaer Vejen nu, mit Hjerte!
 Sin Dom nedkalder Israel med Bulder
@@ -2084,12 +2090,15 @@ Med Frydetjenesten for Thronen bytter.
   <title><num>38.</num>Din Herlighed, o Jesu! jeg beskuer</title>
   <firstline>Din Herlighed, o Jesu! jeg beskuer</firstline>
   <source pages="70-71"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <wrap>I, Jerusalems Døttre, græder ikke over mig, men græder over Eder selv og over Eders Børn!</wrap>
-</quote>
+</epigraph>
 <poetry>
 Din Herlighed, o Jesu! jeg beskuer,
 Den indre Herlighed, som gjennembryder

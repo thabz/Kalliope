@@ -17,6 +17,9 @@ npm run build-static
 npm run build-static-force-reload
 ```
 
+Brug `npm run build-static -- --timings` for at få tidsmålinger af buildets trin.
+`make profile-build-static` medtager også tidsmålingerne i buildloggen.
+
 Filerne i `build-static/` og `libs/` er interne JavaScript-moduler. De skal ikke
 køres direkte.
 

@@ -3932,6 +3932,9 @@ Fin — det er Suomis Sang.
   <title>Mellemspil</title>
   <firstline>Den lystige Vind</firstline>
   <source pages="109-163"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5903,6 +5906,10 @@ men gør mig til en af dine Venner — —!
   <title>Intermezzo</title>
   <firstline>Der stod mellem Romas Mure</firstline>
   <source pages="167-236"/>
+  <places>
+    <place ref="denmark" relation="setting"/>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -270,6 +270,9 @@ med dit Øjes blaa Forglemmigej!
   <title>Thorvaldsens „Psyche sælger Amoriner“</title>
   <firstline>Hver Gang, o Du herlige Mester</firstline>
   <source pages="10-15"/>
+  <places>
+    <place ref="delphi" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -626,6 +629,9 @@ Men alle de skulle Dig følge!“
   <title>Frydensborg</title>
   <firstline>Et Sted i Jylland, jeg véd ej hvor</firstline>
   <source pages="21-22"/>
+  <places>
+    <place ref="jutland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -777,6 +783,9 @@ da over Dig Du fejgt vil bryde Staven!
   <title>Konen ved Ledet i Frederiksdal</title>
   <firstline>Naar gjennem det dejlige Frederiksdal</firstline>
   <source pages="26-28"/>
+  <places>
+    <place ref="frederiksdal" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1832,6 +1841,9 @@ min Sangs den ustadige Lykke.
   <firstline>Her i Farums skovomkranste Eden</firstline>
   <year>1842</year>
   <source pages="59-61"/>
+  <places>
+    <place ref="farum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5435,6 +5447,9 @@ Ja, Herre Konge, det ske! det ske!
     <event>1848-03-22</event>
   </dates>
   <source pages="172-173"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8183,6 +8198,9 @@ for hvad der ellers Smaabørn kun fortryller!
   <title>Løven i Slippen</title>
   <firstline>En Gang — ja, det er nu langt tilbage</firstline>
   <source pages="255-259"/>
+  <places>
+    <place ref="africa" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8659,6 +8677,9 @@ vil med uplettet Hæder vi falde!
   <firstline>Varsler denne sære Stilhed</firstline>
   <year>1864</year>
   <source pages="271-275"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9301,6 +9322,9 @@ over Døgnets Taage og Skraalet!
   <title>Ved Stranden</title>
   <firstline>Ensom i Aftenens dæmrende Stund</firstline>
   <source pages="294-296"/>
+  <places>
+    <place ref="oresund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9377,6 +9401,9 @@ som min Sjæl har i Nuet fornummet!
   <firstline>De skulde bære den Døde bort</firstline>
   <source pages="296-299"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9593,6 +9620,9 @@ til den højeste Ret paa Dommens Dag!
   <title>Elefanten</title>
   <firstline>Den var bragt over Sø og salten Vand</firstline>
   <source pages="304-308"/>
+  <places>
+    <place ref="livorno" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10026,6 +10056,9 @@ og strøm saa i Havet med Ære!
   <title>Da de rev Voldene ned</title>
   <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
   <source pages="320-326"/>
+  <places>
+    <place ref="copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10755,7 +10788,7 @@ af Englens og Satyrens Leg derinde.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 „Hvergang med opspilet Mund Du ruller
 Og truer og raaber: nu kommer jeg, nu!
 Saa trækker jeg tavst paa min Skulder.
@@ -10765,7 +10798,7 @@ Den vil jeg hædre og den vil jeg dyrke;
 Men Braget, hvormed Du i Striden bryder,
 Tillad mig, o Hav, som Svaghed jeg tyder!“
 <right><w>Holger Drachmann:</w> „Sange ved Havet“.</right>
-</quote>
+</epigraph>
 <poetry>
 Fra Mastetoppen de raabte: <i>Land,</i>
 <i>Den nye Verden!</i> — Ja vist: der laa den
@@ -11001,10 +11034,10 @@ gaar din Bane vældig i Periferien:
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 „Høsttiden endtes, her maa da ventes,
 her maa da ventes paa Foraarsvind!“
-</quote>
+</epigraph>
 <poetry>
 Lakker det mod Nedgang? Ganger det paa Hæld?
 Er der Sværtid og Ulvtid ivente?
@@ -12701,10 +12734,10 @@ blev Sejren din i det store Slag
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 „Hade Fejl, men ej Personer.“
 <right><i>Wessel.</i></right>
-</quote>
+</epigraph>
 <poetry>
 Hvor meget ondt, hvor meget dumt,
 -- og dog, hvor meget skjønt paa Jord!
@@ -12791,10 +12824,10 @@ kan ydmyg takke Dig!
 <prose>
 Imellem <i>H. V. Kaalunds</i> efterladte Papirer fandtes ogsaa en lille
 </prose>
-<quote>
+<prose>
 <center>„Fortegnelse</center>
 over Digte, som jeg har skrevet efter Udgivelsen af „En Eftervaar“, og som jeg agter at optage i en ny Digtsamling, naar der foreligger et tilstrækkeligt Indhold til en saadan.“
-</quote>
+</prose>
 <prose>
 Rettesnoren for en Udgave af de „Efterladte Digte“ var hermed givet, og denne Samling indeholder da ogsaa omtrent det samme Antal Numre som Fortegnelsen. Ved et Par af de opførte Digte var der imidlertid tilføjet et Spørgsmaalstegn eller et „ubetydeligt“, eller begge Dele, og saadanne Stykker har jeg derfor anset det for rigtigst at udelade. Fortegnelsen slutter med en Liste over nogle „til Dels færdige eller paabegyndte Digte“. Af disse er et Par næppe kommet videre end til Titlen. Der fandtes saaledes intet Manuskript til <pb n="420" facs="433.jpg"/>hvad der var opført under Overskrifterne: „Da det tyrkiske Panserskib, „Verdens Herlighed“, sprang i Luften“, „Vel mødt, Broder Letsind, paa Livets Vej“, „Mod Østen vender mit Kammer“ o. s. fr. Andre Digte forelaa kun i løse, ikke altid let læselige Udkast. Et og andet meddeler jeg nedenfor. Tilbage stod Spørgsmaalet om, hvad der skulde medtages af Digte, som Kaalund selv i Mellemtiden havde ladet trykke, saa vel som hvad der mellem hans Papirer eller i hans Nærmestes og Venners Værge fandtes af Ungdomsdigte, Lejlighedssange o. s. fr. Jeg er gaaet ud fra, at da Kaalund var meget stræng overfor sin egen Produktion, burde jeg kun optage, hvad jeg efter mit Kjendskab til ham turde gaa ud fra, at han selv vilde have givet sit Samtykke til. I de sidste 14—15 Aar tog Kaalund mig saa ofte paa Raad med angaaende sin Digtning, at jeg nogenlunde tror mig i Stand til ogsaa nu at handle efter hans Ønske og Vilje. Jeg har, naar der var Tvivl hos mig, hellere udeladt noget end tage det med, selv naar det forelaa trykt, og Digterens Enke, Fru Professorinde C. Kaalund, har saavel billiget mit Valg som hjulpet mig med at tolke de vanskeligste Steder i Haandskrifterne.
 
