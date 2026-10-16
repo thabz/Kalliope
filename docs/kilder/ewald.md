@@ -209,8 +209,12 @@ sangene i *Fiskerne* er bevaret.
 | `ewald2026082393` | `antologierdk/1835` | En brav Mands Eftermæle | 113 |
 | `ewald2026090601` | `antologierdk/1881` | Dansk Nationalsang | 64-66 |
 
-De syv tekster i `ewald/1985-vingesus` og teksten i `ewald/p1780` er ikke ændret
-eller blevet tilskrevet DSL-udgaven. Fuld import af de seks bind, komplettering
+De syv tekster i `ewald/1985-vingesus` bevarer deres eksisterende ordlyd og
+sidetal. Den gentagne fritekstkilde er omsat til én struktureret værkkilde
+med Johannes Ewald som forfatter, Keld Zeruneith som udgiver, København,
+Hans Reitzels Forlag og 1985; teksternes tomme `<source pages="…"/>` arver
+denne bibliografi. Teksten i `ewald/p1780` er uændret. Ingen af disse
+tekster tilskrives DSL-udgaven. Fuld import af de seks bind, komplettering
 af *Fiskerne* eller *Adskilligt* og nye korrekturattester ligger uden for denne
 kildekontrol. #992 og #1821 bevarer deres selvstændige afgrænsninger.
 
