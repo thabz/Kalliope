@@ -9,7 +9,7 @@ Kildearven er efterprøvet i de berørte XML-filer. De 88 DSL-tekster er samlet 
 `aarestrup/1976`. Bind VI er foreløbig en bibliografisk post uden tekster.
 Digtenes id'er, ordlyd og sidehenvisninger er bevaret ved flytningen.
 *Philet* og de seks sange fra *Fiskerne* beholder deres oprindelige
-udgivelsesår som eksplicitte tekstdatoer. De tidligere værkbeholdere
+udgivelsesår i teksternes noter. De tidligere værkbeholdere
 `1770.xml` og `1779.xml` er erstattet af deres placering i bind II og III;
 interne henvisninger er opdateret.
 
