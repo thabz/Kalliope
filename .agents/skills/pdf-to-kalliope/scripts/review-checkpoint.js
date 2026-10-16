@@ -18,7 +18,7 @@ const validateErrataInventory = (inventory, workXml) => {
   if (workXml == null) return [];
   const work = new DOMParser().parseFromString(workXml, 'text/xml').documentElement;
   const declarations = children(child(work, 'workhead'), 'errata');
-  const applied = declarations.filter(node => node.getAttribute('status') === 'applied');
+  const applied = declarations.filter(node => ['applied', 'reviewed'].includes(node.getAttribute('status')));
   const errataPages = inventory.filter(page => page.page_type === 'errata');
   const issues = [];
   errataPages.forEach(page => {

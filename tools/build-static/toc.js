@@ -136,11 +136,12 @@ const build_works_toc = async (collected) => {
     const notes = get_notes(workhead, collected);
     const sources = getChildrenByTagName(workhead, 'source');
     const errata = getChildrenByTagName(workhead, 'errata')
-      .filter(node => safeGetAttr(node, 'status') === 'applied')
+      .filter(node => ['applied', 'reviewed'].includes(safeGetAttr(node, 'status')))
       .map(node => {
         const sourceId = safeGetAttr(node, 'in') ?? 'default';
         const source = sources.find(item => (safeGetAttr(item, 'id') ?? 'default') === sourceId);
         return {
+          ...(safeGetAttr(node, 'status') === 'reviewed' ? { status: 'reviewed' } : {}),
           pages: safeGetAttr(node, 'pages'),
           facsimilePages: facsimileInterval(safeGetAttr(node, 'facsimile-pages')),
           facsimile: safeGetAttr(source, 'facsimile')?.replace(/\.pdf$/, ''),

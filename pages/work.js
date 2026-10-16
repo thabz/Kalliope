@@ -85,7 +85,10 @@ const WorkPage = (props) => {
         firstPage={entry.facsimilePages[0]}>
         rettelsesliste
       </FacsimileLink>{' '}
-      på s. {entry.pages} er indført.
+      på s. {entry.pages}{' '}
+      {entry.status === 'reviewed'
+        ? 'er gennemgået; ingen sikre rettelser berører de gengivne tekster.'
+        : 'er indført.'}
     </Note>
   ));
 

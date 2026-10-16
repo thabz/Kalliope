@@ -169,10 +169,16 @@ Registrér gennemgangen i `<workhead>`:
 ```xml
 <errata status="none"/>
 <errata status="applied" pages="[392]" facsimile-pages="415"/>
+<errata status="reviewed" pages="532-534" facsimile-pages="536-538"/>
 ```
 
 Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
-`applied`-element pr. ark. `pages` følger trykkets sideangivelse, også når den
+element pr. ark. Brug `applied`, når sikre rettelser er indført i teksten,
+og `reviewed`, når arket er gennemgået, men ingen sikre rettelser berører
+de inkluderede tekster. `reviewed` er relevant for udvalg og kræver ikke
+kunstige rettelser eller `type="errata"`-fodnoter. Tentative forslag fra
+udgiveren kan dokumenteres i almindelige noter uden at ændre hovedteksten.
+`pages` følger trykkets sideangivelse, også når den
 er redaktionelt sat i kantede parenteser. Brug `pages="[upagineret]"`, når
 rettelsesblokken står på et blad uden sidetal; `facsimile-pages` er et enbaseret
 sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme

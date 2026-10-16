@@ -29,15 +29,16 @@ const validateErrata = (work, filename, { requireDeclaration = false } = {}) => 
     issues.push(`${filename}: <errata> skal stå direkte i <workhead>`);
   }
   const applied = declarations.filter(node => node.getAttribute('status') === 'applied');
+  const recorded = declarations.filter(node => ['applied', 'reviewed'].includes(node.getAttribute('status')));
   const none = declarations.filter(node => node.getAttribute('status') === 'none');
   if (requireDeclaration && declarations.length === 0) {
     issues.push(`${filename}: et nyt komplet facsimileværk mangler <errata> i <workhead>`);
   }
-  if (none.length > 0 && (none.length !== 1 || applied.length > 0)) {
+  if (none.length > 0 && declarations.length !== 1) {
     issues.push(`${filename}: <errata status="none"/> må stå alene`);
   }
   const sources = children(head, 'source');
-  applied.forEach((node, index) => {
+  recorded.forEach((node, index) => {
     const label = `${filename}: errata ${index + 1}`;
     const pages = node.getAttribute('pages');
     const interval = facsimileInterval(node.getAttribute('facsimile-pages'));
