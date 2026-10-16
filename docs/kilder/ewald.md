@@ -31,6 +31,9 @@ Gyldendalske Boghandel, Nordisk Forlag, København. Det benyttede fotografiske
 optryk er 2. oplag, Gyldendal, København, 1969, udført af Villadsen og
 Christensen. Bind I–V betegnes uændrede fotografiske optryk; bind VI har
 forbeholdet »bortset fra Tillæg 1969«.
+XML-kilderne bruger den korte titel *Johannes Ewalds samlede Skrifter*
+og `2. oplag`; undertitlen *Efter Tryk og Haandskrifter* står på hovedværket.
+Oplysningen om det fotografiske optryk er samlet i hovedværkets note.
 
 | Bind | Første udgivelsesår | Udgivere | KB's digitale udgave | Facsimile-PDF |
 | --- | --- | --- | --- | --- |
