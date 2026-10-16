@@ -1,3 +1,4 @@
+import { discoverPoetFiles } from './libs/poet-files.js';
 import fs from 'fs';
 import path from 'path';
 import { fileExists, loadText } from './libs/helpers.js';
@@ -458,6 +459,7 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
     : [];
 
   const metadata = [];
+  const { workids } = discoverPoetFiles(poetIds, { rootDir });
 
   for (const poetId of poetIds) {
     const infoFilename = path.join(rootDir, 'fdirs', poetId, 'info.xml');
@@ -480,19 +482,7 @@ const parsePoetWorkFiles = (rootDir = process.cwd()) => {
       firstMatch(infoData, /<born>([\s\S]*?)<\/born>/) ??
       firstMatch(infoData, /<baptized>([\s\S]*?)<\/baptized>/);
     const bornYear = firstYear(bornOrBaptized);
-    const workIds = firstMatch(infoData, /<works>([\s\S]*?)<\/works>/);
-
-    const works = workIds
-      ? workIds
-          .toString()
-          .replace('<works>', '')
-          .replace('</works>', '')
-          .replace('<works/>', '')
-          .trim()
-          .split(',')
-          .filter((workId) => workId.length > 0)
-          .map((workId) => workId.trim())
-      : [];
+    const works = workids.get(poetId);
 
     for (const workId of works) {
       const filename = `${poetId}/${workId}.xml`;

@@ -1198,6 +1198,25 @@ several scattered one-line errors may otherwise evade a run-based analysis.
 
 Treat prose according to prose structure rather than verse structure.
 
+Visually check every prose paragraph against the facsimile. Preserve the
+printed paragraph boundaries, first-line indentation and extra vertical space
+between paragraphs. Assess the indent of each paragraph separately, including
+an unindented first paragraph after a heading. A new paragraph with a
+first-line indent does not by itself justify a blank line. Insert a blank line
+only where the facsimile shows extra vertical space; never apply a default
+blank line between paragraphs or replace an indent with one.
+
+Encode each continuous paragraph on one XML line and use leading spaces for
+first-line indentation supported by the facsimile. Rejoin physical print-line
+wraps within the paragraph. A page break within a continuing paragraph must
+not create a new paragraph or extra vertical space; preserve its exact `<pb>`
+position. OCR line breaks, block segmentation and whitespace are not evidence
+of paragraph structure.
+
+Check all prose paragraphs in both facsimile proofreading passes and record
+structural findings in the existing findings register. Poetry stanza and
+indentation analyses do not establish that prose has been reviewed.
+
 Preserve:
 
 - paragraph boundaries
@@ -1494,6 +1513,8 @@ Explicitly verify that:
 
 - every relevant poem is included
 - every relevant prose text is included
+- every prose paragraph's boundaries, first-line indentation and inter-paragraph
+  spacing were visually checked against the facsimile
 - introductions are included
 - prefaces are included
 - afterwords are included
@@ -1530,19 +1551,6 @@ After proofreading, run the current repository checks for OCR candidates and
 common transcription problems.
 
 Follow the commands and procedures in `docs/facsimile-korrektur.md`.
-
-Before handing off a work with inline XML markup in poem or prose lines, run
-the corpus renderer-markup test. It sends every HTML-marked line in the work
-through the same XML fragment parser used by the text page, so an inline tag
-that crosses a source newline cannot make the page crash:
-
-```sh
-npm test -- --runInBand __tests__/corpus/renderable-work-markup.test.js
-```
-
-When adding this regression check for a work, include its XML file in the
-tracked-work fixture selection in that test. Keep one rendered line per parse
-and report the work path and line number for any parse error.
 
 As a current baseline, include the relevant forms of:
 
@@ -1695,6 +1703,8 @@ Report concisely:
   presence of `<pagebreaks/>`
 - number of poems
 - number and kinds of prose or paratext entries
+- confirmation that every prose paragraph's boundaries, first-line indentation
+  and inter-paragraph spacing were visually checked against the facsimile
 - confirmation that every poem's stanza boundaries and indentation were
   visually checked against all of its facsimile pages
 - total stanza and indentation candidates from the unfiltered whole-work
@@ -1742,6 +1752,8 @@ The PR description must state concretely:
 - which material was intentionally excluded
 - how fresh OCR and direct proofreading were performed
 - how verse structure and indentation were checked
+- how prose paragraph boundaries, first-line indentation and inter-paragraph
+  spacing were checked against the facsimile
 - which title-page and cover assets were added
 - how the title-page geometry and crop were checked
 - which persons, translations and originals were resolved
@@ -1790,8 +1802,9 @@ For a complete import, all applicable items below must be true:
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.
-- [ ] Every XML blank line was verified as a visible printed stanza boundary,
-      and every visible printed stanza boundary is represented in XML.
+- [ ] Every XML blank line in `<poetry>` was verified as a visible printed
+      stanza boundary, and every visible printed stanza boundary is represented
+      in XML.
 - [ ] Every verse line's horizontal position was visually checked; indented
       lines were not converted to stanza breaks or flattened by OCR.
 - [ ] Every relevant page was visually checked for italic, letterspaced and
@@ -1817,6 +1830,12 @@ For a complete import, all applicable items below must be true:
       crosses a page boundary and the work consequently has no `<pb>`.
 - [ ] Every relevant poem was included.
 - [ ] Every relevant prose text was included as its own text entry.
+- [ ] Every prose paragraph's boundaries, first-line indentation and
+      inter-paragraph spacing were visually checked in both proofreading
+      passes; no blank line was added without extra vertical space in the
+      facsimile, and no indent was replaced by a blank line.
+- [ ] Physical print-line wraps and page breaks within continuing prose
+      paragraphs did not introduce false paragraph boundaries or spacing.
 - [ ] Relevant introductions, prefaces, afterwords, dedications and mottoes were
       included.
 - [ ] Advertisements were excluded.

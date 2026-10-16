@@ -107,7 +107,7 @@ describe('text page breadcrumbs', () => {
     const ref = {
       id: 'other', title: 'De to Røvere', poet: 'Adam Oehlenschläger', poetId: poet.id,
       work: 'Samlede Skrifter (1861)',
-      citation: '<a poem="other">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Poetiske Skrifter</i></a>, udg. af F. L. Liebenberg, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
+      citation: '<a poem="other">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Poetiske Skrifter</i></a>, udg. af <a poet="liebenberg">F. L. Liebenberg</a>, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
     };
     Client.text.mockResolvedValue({ ...textData, work: { id: 'digte', title: 'Digte' }, text: {
       ...textData.text,
@@ -122,7 +122,8 @@ describe('text page breadcrumbs', () => {
     const editions = sections.find(section => section.includes('Andre udgaver'));
     expect(editions).toContain('»De to Røvere«</a>, i: ');
     expect(editions).toContain('href="/da/text/other"');
-    expect(editions).toContain('href="/da/works/oehlenschlaeger"');
+    expect(editions).not.toContain('href="/da/works/oehlenschlaeger"');
+    expect(editions).toContain('href="/da/works/liebenberg"');
     expect(editions).toContain('href="/da/work/oehlenschlaeger/bd24"');
     expect(editions).toContain('s. 353–356.');
     expect(editions).not.toContain('reference-metadata');
@@ -133,5 +134,28 @@ describe('text page breadcrumbs', () => {
       expect(section).toContain('Samlede Skrifter (1861)');
       expect(section).not.toContain(', i:');
     }
+  });
+
+  it.each(['poet', 'person'])('omits the current author link in sources and facsimile captions (%s)', async attribute => {
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      source: {
+        source: `<a ${attribute}="oehlenschlaeger"><b>Adam Oehlenschläger</b></a>: <i>Digte</i>, udg. af <a poet="liebenberg">F. L. Liebenberg</a>, 1803.`,
+        pages: '10-12',
+        digitalUrl: 'https://www.kb.dk/source',
+        facsimile: 'scan', facsimilePages: [1, 2], facsimilePageCount: 2,
+      },
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    const sidebar = html.match(/<aside\b[^>]*>(.*?)<\/aside>/)[1];
+    expect(sidebar).not.toContain('href="/da/works/oehlenschlaeger"');
+    expect(sidebar.match(/<b>Adam Oehlenschläger<\/b>: <i>Digte<\/i>/g)).toHaveLength(2);
+    expect(sidebar.match(/href="\/da\/works\/liebenberg"/g)).toHaveLength(2);
+    expect(sidebar).toContain('href="https://www.kb.dk/source"');
+    expect(sidebar).toContain('s. 10–12.');
   });
 });

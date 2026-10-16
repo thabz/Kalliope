@@ -145,6 +145,10 @@ const redirects = [
     to: '/da/poets/dk/name',
   },
   {
+    from: /^(\/[a-z]{2}\/work)\/beyer\/1852$/,
+    to: '$1/antologierdk/1852-vintergroent',
+  },
+  {
     from: /^(\/[a-z]{2}\/work)\/hanseno\/1918-2$/,
     to: '$1/antologierdk/1918-elskovsvers',
   },
@@ -269,6 +273,7 @@ app.prepare().then(() => {
       pathname.indexOf('/winter') > -1 ||
       /\/hertzb(?:\/|$)/.test(pathname) ||
       /\/work\/hanseno\/1918-2$/.test(pathname) ||
+      /\/work\/beyer\/1852$/.test(pathname) ||
       (pathname.indexOf('.xml') > -1 && pathname.indexOf('/work/') > -1)
     ) {
       let done = false;

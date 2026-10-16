@@ -5,10 +5,68 @@ import {
 } from '../../tools/build-static/source-validation.js';
 import {
   collectSourcePolicyIssues,
+  collectFacsimilePageSourceIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
 
 describe('work source structure', () => {
+  const facsimileWork = (texts, sources = '<source facsimile="scan" facsimile-pages-num="20">Kilde</source>') =>
+    parseWorkXml(`<kalliopework><workhead>${sources}</workhead><workbody>${texts}</workbody></kalliopework>`);
+
+  it('requires pages for poems, nested texts and legacy prose using a work facsimile', () => {
+    const document = facsimileWork(`
+      <text id="poem"><head/><body><poetry>Vers</poetry></body></text>
+      <section><content><text id="nested"><head><source/></head></text></content></section>
+      <prose id="preface"><head/><body><prose>Prosa</prose></body></prose>
+    `);
+    expect(collectFacsimilePageSourceIssues('work.xml', document)).toEqual([
+      'work.xml: text poem requires source pages or facsimile-pages for its work facsimile.',
+      'work.xml: text nested requires source pages or facsimile-pages for its work facsimile.',
+      'work.xml: text preface requires source pages or facsimile-pages for its work facsimile.',
+    ]);
+  });
+
+  it.each(['pages="11-13"', 'pages="iii–v"', 'facsimile-pages="4-5"', 'pages="9" facsimile-pages="16"'])(
+    'accepts legal page references: %s', attributes => {
+      const document = facsimileWork(`<text id="poem"><head><source ${attributes}/></head></text>`);
+      expect(collectFacsimilePageSourceIssues('work.xml', document)).toEqual([]);
+    },
+  );
+
+  it.each(['pages=""', 'pages="13-11"', 'pages="102-08"', 'pages="11-"',
+    'facsimile-pages=""', 'facsimile-pages="0"', 'facsimile-pages="21"', 'facsimile-pages="5-4"', 'facsimile-pages="iii"'])(
+    'rejects illegal page references: %s', attributes => {
+      const document = facsimileWork(`<text id="poem"><head><source ${attributes}/></head></text>`);
+      expect(collectFacsimilePageSourceIssues('work.xml', document)).toHaveLength(1);
+    },
+  );
+
+  it('uses the selected work source instead of requiring pages for unrelated sources', () => {
+    const sources = '<source id="scan" facsimile="scan" facsimile-pages-num="20"/><source>Kilde uden facsimile</source>';
+    const document = facsimileWork(`
+      <text id="unrelated"><head/></text>
+      <text id="missing"><head><source in="scan"/></head></text>
+      <text id="located"><head><source in="scan" pages="4"/></head></text>
+    `, sources);
+    expect(collectFacsimilePageSourceIssues('work.xml', document)).toEqual([
+      'work.xml: text missing requires source pages or facsimile-pages for its work facsimile.',
+    ]);
+  });
+
+  it('requires pages on the source used by the renderer even when a second source has pages', () => {
+    const document = facsimileWork('<text id="poem"><head><source href="https://example.org"/><source pages="4-5"/></head></text>');
+    expect(collectFacsimilePageSourceIssues('work.xml', document)).toEqual([
+      'work.xml: text poem requires source pages or facsimile-pages for its work facsimile.',
+    ]);
+  });
+
+  it.each(['<source/>', '<source facsimile="scan"/>', '<source facsimile-pages-num="20"/>'])(
+    'does not require pages without both facsimile attributes: %s', sources => {
+      const document = facsimileWork('<text id="poem"><head/></text>', sources);
+      expect(collectFacsimilePageSourceIssues('work.xml', document)).toEqual([]);
+    },
+  );
+
   it('accepts only complete, nondecreasing page intervals', () => {
     expect(parsePageInterval('11')).toEqual({ from: 11, to: 11 });
     expect(parsePageInterval('11-13')).toEqual({ from: 11, to: 13 });

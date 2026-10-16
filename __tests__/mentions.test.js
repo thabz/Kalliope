@@ -172,7 +172,6 @@ describe('mentions data', () => {
         ['aarestrup', ['1863', 'ny-samling']],
       ]),
       texts: new Map(),
-      unlistedWorkFiles: [],
     };
 
     build_person_or_keyword_refs(collected);

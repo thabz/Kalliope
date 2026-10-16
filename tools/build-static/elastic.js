@@ -98,8 +98,8 @@ const buildElasticsearchTextEntries = (collected, poetIds = null) => {
   return entries.sort((a, b) => a.textEntryKey.localeCompare(b.textEntryKey));
 };
 
-const getChangedElasticsearchTextEntries = textEntries => {
-  const modifiedPoetIds = new Set();
+const getChangedElasticsearchTextEntries = (textEntries, changedPoetIds = []) => {
+  const modifiedPoetIds = new Set(changedPoetIds);
   const modifiedTextEntryKeys = new Set();
 
   textEntries.forEach(entry => {
@@ -438,9 +438,12 @@ const update_elasticsearch = async (collected, options = {}) => {
     const {
       modifiedPoetIds,
       entries: changedTextEntries,
-    } = getChangedElasticsearchTextEntries(textEntries);
+    } = getChangedElasticsearchTextEntries(textEntries, new Set([
+      ...(collected.changedWorkPoetIds ?? []),
+      ...(collected.poetMetadataDirty ?? []),
+    ]));
 
-    if (changedTextEntries.length === 0) {
+    if (changedTextEntries.length === 0 && modifiedPoetIds.size === 0) {
       console.log('Skipping Elasticsearch update; no changed text entries');
       return;
     }

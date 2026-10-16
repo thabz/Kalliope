@@ -4,6 +4,7 @@ import path from 'path';
 import * as Paths from '../common/paths.js';
 import {
   obsoleteSourceWorkKeys,
+  pruneDeletedVariants,
   removeObsoleteTextFiles,
   removeTextsFromSourceWorks,
   sourceFilesForText,
@@ -32,6 +33,24 @@ describe('værk-cache', () => {
       process.chdir(previousDirectory);
       fs.rmSync(temporary, { recursive: true, force: true });
     }
+  });
+
+  it('fjerner slettede teksters variantrelationer og genbruger resten af grafen', () => {
+    const variants = new Map([
+      ['removed', ['peer']],
+      ['peer', ['removed', 'survivor']],
+      ['survivor', ['peer']],
+      ['isolated', ['removed']],
+    ]);
+    const texts = new Map([
+      ['peer', { poetId: 'poet', workId: 'one' }],
+      ['survivor', { poetId: 'poet', workId: 'two' }],
+      ['isolated', { poetId: 'other', workId: 'three' }],
+    ]);
+    expect(pruneDeletedVariants(variants, texts)).toEqual(new Set([
+      'fdirs/poet/one.xml', 'fdirs/other/three.xml',
+    ]));
+    expect([...variants]).toEqual([['peer', ['survivor']], ['survivor', ['peer']]]);
   });
 
   it('finder en teksts faktiske kildeværk', () => {
