@@ -70,7 +70,7 @@ og Liget selv: den Lykke, du længer ej huser.
 </body>
 </text>
 
-<text id="joergensenj2026072902">
+<text id="joergensenj2026072902" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Længsel</title>
     <firstline>I Snekorallers Skove gad jeg gaa</firstline>
@@ -1247,7 +1247,7 @@ fra Jordens dybe Hjærte.
 </body>
 </text>
 
-<text id="joergensenj2026072928">
+<text id="joergensenj2026072928" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Stjærnenat</title>
     <firstline>Jeg vandrer silde i den mørke Have</firstline>

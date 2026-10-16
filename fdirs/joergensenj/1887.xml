@@ -321,7 +321,7 @@ der er Torden deroppe i Luften.
 </body>
 </text>
 
-<text id="joergensenj2024052308">
+<text id="joergensenj2024052308" ignore-tests="repeated-adjacent-word">
 <head>
     <title>En forladt Park</title>
     <firstline>En stille Kirkegaard foruden døde</firstline>
@@ -495,7 +495,7 @@ men slænger mit Blyant i Havet og tier.
 </body>
 </text>
 
-<text id="joergensenj2024052312">
+<text id="joergensenj2024052312" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Portræt</title>
     <firstline>Dagen er død og forsvunden</firstline>
@@ -678,7 +678,7 @@ mens alle Klokker ringe Mørket ind.
 </body>
 </text>
 
-<text id="joergensenj2024052315">
+<text id="joergensenj2024052315" ignore-tests="repeated-adjacent-word">
 <head>
     <title>Længsel</title>
     <firstline>I Snekorallers Skove gad jeg gaa</firstline>
@@ -1715,7 +1715,7 @@ en Hund - og Viben skriger over Heden.
 </body>
 </text>
 
-<text id="joergensenj2024052339" ignore-tests="internal-uppercase">
+<text id="joergensenj2024052339" ignore-tests="internal-uppercase,repeated-adjacent-word">
 <head>
     <title>Nat</title>
     <firstline>Med tusind grønne Rovdyr-Øjne stirrer</firstline>
