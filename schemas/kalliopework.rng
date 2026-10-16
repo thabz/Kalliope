@@ -437,9 +437,14 @@
   </define>
   <define name="proofreading">
     <element name="proofreading">
-      <attribute name="model">
-        <data type="string"><param name="minLength">1</param></data>
-      </attribute>
+      <choice>
+        <attribute name="model">
+          <data type="string"><param name="minLength">1</param></data>
+        </attribute>
+        <attribute name="reviewer">
+          <data type="string"><param name="minLength">1</param></data>
+        </attribute>
+      </choice>
       <attribute name="datetime"><data type="dateTime"/></attribute>
       <empty/>
     </element>

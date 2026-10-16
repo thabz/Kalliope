@@ -170,7 +170,7 @@ describe('kalliopework RELAX NG schema', () => {
     }).not.toThrow();
   });
 
-  it('accepts one or more model proofreading attestations', () => {
+  it('accepts preserved model and manual proofreading attestations', () => {
     const xml = `
       <kalliopework id="1900" author="digter">
         <workhead>
@@ -178,6 +178,7 @@ describe('kalliopework RELAX NG schema', () => {
           <proofreadings>
             <proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00"/>
             <proofreading model="future-model" datetime="2027-01-02T03:04:05Z"/>
+            <proofreading reviewer="Jesper Christensen" datetime="2026-10-16T08:00:00+02:00"/>
           </proofreadings>
         </workhead>
       </kalliopework>
@@ -191,6 +192,9 @@ describe('kalliopework RELAX NG schema', () => {
     '<proofreading datetime="2026-09-01T21:00:00+02:00"/>',
     '<proofreading model="gpt-5.6-sol"/>',
     '<proofreading model="" datetime="2026-09-01T21:00:00+02:00"/>',
+    '<proofreading reviewer="" datetime="2026-10-16T08:00:00+02:00"/>',
+    '<proofreading reviewer="Jesper Christensen"/>',
+    '<proofreading model="gpt-6" reviewer="Jesper Christensen" datetime="2026-10-16T08:00:00+02:00"/>',
     '<proofreading model="gpt-5.6-sol" datetime="ikke-en-dato"/>',
     '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00" extra="nej"/>',
     '<proofreading model="gpt-5.6-sol" datetime="2026-09-01T21:00:00+02:00">tekst</proofreading>',

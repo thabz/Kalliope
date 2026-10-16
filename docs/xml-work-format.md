@@ -103,8 +103,8 @@ Almindelige felter i `<workhead>`:
 - `<pagebreaks/>`: erklærer, at alle interne sideskift i de inkluderede
   tekstkroppe er registreret med `<pb>`.
 - `<errata>`: eksplicit sidekontrol og eventuelle indførte trykte rettelsesark.
-- `<proofreadings>`: modelattester fra afsluttende, uafhængige
-  facsimilekorrekturer.
+- `<proofreadings>`: attester fra afsluttende facsimilekorrekturer med
+  modelnavn eller navn på den manuelle korrekturlæser.
 
 Et værks metadata kan have typevaliderede eksterne identifikatorer:
 
@@ -195,8 +195,24 @@ beholder med én eller flere attester:
 </proofreadings>
 ```
 
-Hver attest indeholder kun det præcise modelnavn og tidspunktet i ISO 8601 med
-tidszone. Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
+En modelattest indeholder det præcise modelnavn og tidspunktet i ISO 8601 med
+tidszone. Afsluttet manuel korrektur kan attesteres af redaktøren med `reviewer`
+i stedet for `model`:
+
+```xml
+<proofreadings>
+  <proofreading reviewer="Jesper Christensen"
+                datetime="2026-10-16T08:00:00+02:00"/>
+</proofreadings>
+```
+
+Angiv præcis én af `model` og `reviewer` pr. attest. Ved en senere bekræftelse
+af tidligere manuel korrektur er `datetime` bekræftelsens tidspunkt; det
+oprindelige korrekturtidspunkt må ikke gættes. En manuel attest angiver ikke,
+at en ny modelkorrektur er udført. Kontrol af rettelsesark registreres fortsat
+særskilt i `<errata>`.
+
+Der tilføjes ingen hash eller reference til en sidecarfil. En senere,
 bedre model kan tilføje en ny `<proofreading>`; tidligere attester bevares, og
 Git dokumenterer den attesterede version og efterfølgende ændringer.
 
