@@ -74,6 +74,14 @@ De guldhenboelgende Vaenge
 - `status`: typisk `complete` eller `incomplete`.
 - `type`: typisk `poetry`; enkelte værker bruger `prose`. Antologier bruger
   `anthology`, uanset hvilken mappe værkfilen ligger i.
+- `sort-order`: valgfri positiv heltalsværdi til en særlig visningsrækkefølge.
+  Værker med værdien vises først, sorteret numerisk. Værdien skal være unik
+  inden for digterens mappe og kunne repræsenteres sikkert som et JavaScript-heltal.
+  Brug fx 10, 20, 30, så indskud normalt ikke kræver omnummerering. Uden
+  attributten bruges den normale sortering efter år og titel, med »Andre digte«
+  og det virtuelle antologiværk til sidst. Det gælder både værklisten og
+  forrige/næste-navigation. I det eksisterende værk-API hedder feltet `sort_order`;
+  det offentlige v1-bulkformat er uændret.
 - `parent`: valgfri. Bruges naar et vaerk er en underdel af et andet vaerk hos samme digter.
 - `ignore-tests`: kommaseparerede, navngivne undtagelser fra enkelte semantiske
   tests. Brug kun en dokumenteret undtagelse og aldrig som generel testafbrydelse.
@@ -1036,8 +1044,8 @@ Selve prosateksten.
 <subwork ref="1856-2"/>
 ```
 
-`ref` skal pege paa et vaerk-id hos samme digter. Vaerket skal ogsaa vaere listet i
-digterens `<works>` i `info.xml`.
+`ref` skal pege på et værk-id hos samme digter. Værkfilen skal ligge i
+digterens mappe, hvor den registreres automatisk uden en liste i `info.xml`.
 
 ## Noter
 

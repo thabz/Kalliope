@@ -519,6 +519,23 @@ describe('Elasticsearch build-static step', () => {
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 
+  test('removes a deleted last work from search without an info.xml edit', async () => {
+    await update_elasticsearch({
+      ...collected,
+      works: new Map(),
+      changedWorkPoetIds: new Set(['poet']),
+    });
+    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
+    expect(bulkDocumentIds()).toEqual(['poet-poet']);
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('reindexes all remaining works when automatic discovery changes membership', async () => {
+    await update_elasticsearch({ ...collected, changedWorkPoetIds: new Set(['poet']) });
+    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
+    expect(bulkDocumentIds()).toEqual(['poet-poet', 'poet-first', 'poet-second']);
+  });
+
   test('rebuilds the full index when the index is missing', async () => {
     elasticSearchClient.indexExists.mockResolvedValue(false);
 

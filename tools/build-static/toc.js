@@ -83,7 +83,7 @@ const extract_subworks = (poetId, workbody, collected) => {
     const subworkId = safeGetAttr(subworkNode, 'ref');
     const subwork = collected.works.get(`${poetId}/${subworkId}`);
     if (subwork == null) {
-      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Glemt at tilføje til <works> i fdirs/${poetId}/info.xml?`;
+      throw `${poetId}/${subworkId}.xml refereret i hovedfil, men findes ikke. Kontrollér værkfilens placering og id.`;
     }
     return subwork;
   });
@@ -177,6 +177,7 @@ const build_works_toc = async (collected) => {
     const poetWorksModified =
       isFileModified(
         'tools/build-static/toc.js',
+        'common/worksort.js',
         'tools/errata.js',
         'tools/build-static/anthologies.js',
         `fdirs/${poetId}/info.xml`,
@@ -196,6 +197,7 @@ const build_works_toc = async (collected) => {
         !poetWorksModified &&
         !isFileModified(
           'tools/build-static/toc.js',
+          'common/worksort.js',
           'tools/errata.js',
           'tools/build-static/anthologies.js',
           ...workMeta.sourceFiles
