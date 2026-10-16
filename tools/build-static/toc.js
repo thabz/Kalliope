@@ -140,7 +140,9 @@ const build_works_toc = async (collected) => {
       .map(node => {
         const sourceId = safeGetAttr(node, 'in') ?? 'default';
         const source = sources.find(item => (safeGetAttr(item, 'id') ?? 'default') === sourceId);
+        const sourceVolume = getChildrenByTagName(source, 'volume')[0]?.textContent;
         return {
+          ...(sourceVolume == null ? {} : { sourceVolume }),
           ...(safeGetAttr(node, 'status') === 'reviewed' ? { status: 'reviewed' } : {}),
           pages: safeGetAttr(node, 'pages'),
           facsimilePages: facsimileInterval(safeGetAttr(node, 'facsimile-pages')),

@@ -46,8 +46,10 @@ const WorkPage = (props) => {
 
   const sources = Object.entries(work.sources ?? {}).filter(
     ([, source]) =>
-      (source.source != null && source.source.length > 0) ||
-      source.digitalUrl != null
+      source.errataOnly !== true && (
+        (source.source != null && source.source.length > 0) ||
+        source.digitalUrl != null
+      )
   );
   const renderedSources = sources.length > 0 ? (
     <Note type="source">
@@ -77,15 +79,15 @@ const WorkPage = (props) => {
   });
   const renderedErrata = errata.map((entry, index) => (
     <Note key={`errata-${index}`} type="errata">
-      Trykkets{' '}
       <FacsimileLink
         poetId={poet.id}
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>
-        rettelsesliste
+        Rettelseslisten
       </FacsimileLink>{' '}
-      på s. {entry.pages}{' '}
+      {entry.sourceVolume != null ? <>i bind {entry.sourceVolume}, s. </> : <>på s. </>}
+      {entry.pages.replace(/-/g, '–')}{' '}
       {entry.status === 'reviewed'
         ? 'er gennemgået; ingen sikre rettelser berører de gengivne tekster.'
         : 'er indført.'}
