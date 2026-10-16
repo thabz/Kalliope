@@ -14,6 +14,9 @@ import {
 } from '../.agents/skills/prepare-kalliope-titlepage/scripts/titlepage.js';
 
 describe('prepare Kalliope title page', () => {
+  // Image processing can exceed Jest's five-second default in the full suite.
+  jest.setTimeout(30000);
+
   let root;
 
   beforeEach(() => {
