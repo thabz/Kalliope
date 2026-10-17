@@ -116,13 +116,18 @@ const findCommonPoetryIndentationFindings = ({
 
   while ((textMatch = textRegexp.exec(data)) != null) {
     const text = textMatch[0];
+    const textWithoutNotes = text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+      note => note.replace(/[^\n]/g, ' '));
     const textId = firstMatch(text, /^<text\b[^>]*\sid="([^"]+)"/u);
     const verseLines = [];
     const poetryRegexp = /<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu;
     let poetryMatch;
 
-    while ((poetryMatch = poetryRegexp.exec(text)) != null) {
-      const poetry = poetryContentForIndentation(poetryMatch[1]);
+    while ((poetryMatch = poetryRegexp.exec(textWithoutNotes)) != null) {
+      const contentOffset = poetryMatch.index + poetryMatch[0].indexOf(poetryMatch[1]);
+      const poetry = poetryContentForIndentation(
+        text.slice(contentOffset, contentOffset + poetryMatch[1].length),
+      );
       const poetryStart =
         textMatch.index +
         poetryMatch.index +
@@ -279,6 +284,32 @@ const titleIssue = ({ file, context, textId, candidate, rule, description }) => 
     description,
     excerpt: context.lines[line - 1],
   };
+};
+
+const findLineLeadingPunctuationFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const document = parseXMLFragment(data);
+  return getElementsByTagName(document, 'line').flatMap(element => {
+    const content = titleTextWithoutNotes({ title: element.toString() });
+    if (/^[,.;:!?]/u.test(content) === false) {
+      return [];
+    }
+    let owner = element.parentNode;
+    while (owner != null && ['text', 'section', 'workhead'].includes(owner.tagName) === false) {
+      owner = owner.parentNode;
+    }
+    return [titleIssue({
+      file,
+      context,
+      textId: owner == null ? undefined : safeGetAttr(owner, 'id') ?? owner.tagName,
+      candidate: { element },
+      rule: 'line-leading-punctuation',
+      description: 'line must not begin with a comma, period, semicolon, colon, exclamation mark, or question mark.',
+    })];
+  });
 };
 
 const findTitleMetadataFindings = ({
@@ -780,6 +811,7 @@ const findPoemLineFindingsInText = ({
     ...findCommonPoetryIndentationFindings({ file, data, context }),
     ...findPoetrySpacingFindings({ file, data, context }),
     ...findTitleMetadataFindings({ file, data, context }),
+    ...findLineLeadingPunctuationFindings({ file, data, context }),
   );
 
   return issues;
@@ -924,6 +956,7 @@ export {
   findCommonPoetryIndentationFindings,
   findPoetrySpacingFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,

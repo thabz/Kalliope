@@ -2,6 +2,7 @@ import {
   collectPoemLineQualityFindings,
   findCommonPoetryIndentationFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
 } from '../../tools/text-quality-poem-lines.js';
@@ -21,6 +22,41 @@ const titleMetadataIssues = data =>
   });
 
 describe('Check workfiles', () => {
+  it.each([',', '.', ';', ':', '!', '?'])(
+    'rejects a line starting with %s, including formatted and entity text',
+    punctuation => {
+      for (const content of [punctuation, `  <i>${punctuation}</i>`, `&#${punctuation.codePointAt(0)};`]) {
+        const issues = findLineLeadingPunctuationFindings({
+          file: 'fdirs/test/work.xml',
+          data: `<text id="noisy"><head><subtitle><line>${content} Undertitel</line><line>Anden linje</line></subtitle></head></text>`,
+        });
+        expect(issues).toEqual([expect.objectContaining({
+          rule: 'line-leading-punctuation', textId: 'noisy', line: 1,
+        })]);
+      }
+    },
+  );
+
+  it.each(['Æbler', 'Én sang', '4 Sange', '„Citat“', '(I Hexametre)', '— Replik'])(
+    'allows a line starting with letters, numbers or literary delimiters: %s',
+    content => {
+      expect(findLineLeadingPunctuationFindings({
+        file: 'fdirs/test/work.xml',
+        data: `<text id="valid"><head><subtitle><line><footnote>, note.</footnote>${content}</line><line>Anden linje</line></subtitle></head></text>`,
+      })).toEqual([]);
+    },
+  );
+
+  it('checks lines in work and section headings but ignores comments and ordinary verse', () => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/work.xml',
+      data: '<kalliopework><workhead><subtitle><line>, Værk</line></subtitle></workhead><workbody><section id="part"><head><suptitle><line>. Del</line></suptitle></head></section><!-- <line>, Kommentar</line> --><text id="verse"><body><poetry>\n, verslinje\n</poetry></body></text></workbody></kalliopework>',
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+    expect(issues.filter(issue => issue.rule === 'line-leading-punctuation').map(issue => issue.textId)).toEqual(['workhead', 'part']);
+  });
+
   it('has no poem-line quality issues', () => {
     const issues = collectPoemLineQualityFindings();
     if (issues.length > 0) {
@@ -158,6 +194,18 @@ describe('Check workfiles', () => {
       }),
     ]);
     expect(issues[0].description).toContain('2 columns');
+  });
+
+  it('checks verses after a note containing poetry without counting the note verses', () => {
+    const plain = '<text id="shifted"><body><poetry>\n  Første\n    Anden\n  Tredje\n</poetry></body></text>';
+    const annotated = plain.replace('Første',
+      'Første<footnote><poetry>Citat uden indryk<br/>Et andet citat</poetry></footnote>');
+    expect(commonIndentationIssues(annotated)).toEqual(commonIndentationIssues(plain));
+  });
+
+  it('retains an unindented main verse following a verse citation in a note', () => {
+    const annotated = '<text id="relative"><body><poetry>\n  Første<footnote><poetry>Citat<br/>Citat</poetry></footnote>\nAnden\n</poetry></body></text>';
+    expect(commonIndentationIssues(annotated)).toEqual([]);
   });
 
   it('allows one-column relative indentation when a verse line starts at zero', () => {

@@ -7,7 +7,14 @@
     <picture src="1867d-p1.jpg">Titelbladet til <i>Digte og Sange</i> (1868) lyder ,,Digte og Sange / ved / Caralis. // Andet Oplag / Kjöbenhavn. / Chr. Steen &amp; Søns Forlag. / Thieles Bogtrykkeri. / 1868.''</picture>
   </pictures>
   <!-- Thomas Moores samlede: http://www.gutenberg.org/cache/epub/8187/pg8187.txt -->
-  <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">Christian Preetzmann: <i>Digte og Sange</i>, Chr. Steen &amp; Søns Forlag, Kbh., 2. opl., 1868.</source>
+  <source facsimile="115408046490" facsimile-pages-num="238" facsimile-pages-offset="24">
+    <author id="preetzmann" realname="Christian Preetzmann">Caralis</author>
+    <title>Digte og Sange</title>
+    <edition>2. opl.</edition>
+    <place>Kbh.</place>
+    <publisher>Chr. Steen &amp; Søns Forlag</publisher>
+    <year>1868</year>
+  </source>
 </workhead>
 <workbody>
 

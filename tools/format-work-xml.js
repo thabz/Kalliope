@@ -94,9 +94,11 @@ const adjacentMetadataFieldsPattern = new RegExp(
 
 export const structuralTagsOutsideColumnZero = xml => {
   const violations = [];
+  const structure = xml.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    note => note.replace(/[^\n]/g, ' '));
   let match;
 
-  while ((match = anyStructuralTagPattern.exec(xml)) != null) {
+  while ((match = anyStructuralTagPattern.exec(structure)) != null) {
     const lineStart = xml.lastIndexOf('\n', match.index - 1) + 1;
     if (match.index !== lineStart) {
       violations.push(xml.slice(lineStart, xml.indexOf('\n', match.index)));
@@ -225,16 +227,28 @@ const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
   return `${pageBreakPrefix}${canonicalOpening}${content}${canonicalClosing}`;
 }).join('\n');
 
-const splitPoetryLines = xml =>
-  normalizeLineWrappers(xml)
-    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-    .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n');
+const splitPoetryLines = xml => xml
+  .split(/(<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>)/gu)
+  .map(part => /^<(?:note|footnote)\b/u.test(part)
+    ? part
+    : normalizeLineWrappers(part)
+      .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+      .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n'))
+  .join('');
 
 const indentMetadata = xml => {
+  const verseNotes = [];
+  const protectedXml = xml.replace(/<(note|footnote)\b(?![^>]*\/>)[^>]*>[\s\S]*?<\/\1>/g, note => {
+    if (note.includes('<poetry') !== true) {
+      return note;
+    }
+    const index = verseNotes.push(note) - 1;
+    return `<note>VERSE_NOTE_${index}</note>`;
+  });
   let metadataDepth = 0;
   let withinMetadata = false;
 
-  return xml.split('\n').map(line => {
+  return protectedXml.split('\n').map(line => {
     const content = line.trimStart();
 
     if (/^<(?:head|workhead)(?:[ \t>])/.test(content)) {
@@ -270,7 +284,8 @@ const indentMetadata = xml => {
     }
 
     return formatted;
-  }).join('\n');
+  }).join('\n').replace(/<note>VERSE_NOTE_(\d+)<\/note>/g,
+    (_match, index) => verseNotes[Number(index)]);
 };
 
 const tagEnd = (xml, start) => {

@@ -189,10 +189,17 @@ describe('tracked work corpus', () => {
           'prose',
           'epigraph',
         ])) {
-          if (block.parentNode?.tagName !== 'body') {
+          const notePoetry = block.tagName === 'poetry' &&
+            ['note', 'footnote'].includes(block.parentNode?.tagName);
+          if (block.parentNode?.tagName !== 'body' && notePoetry === false) {
             nestedBodyBlockIssues.push(
               `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
             );
+          }
+        }
+        for (const note of getElementsByTagNames(body, ['note', 'footnote'])) {
+          if (getElementsByTagNames(note, ['column', 'two-columns']).length > 0) {
+            nestedBodyBlockIssues.push(`${filename}: column layout inside <${note.tagName}>`);
           }
         }
       }
@@ -314,7 +321,7 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
-  it('keeps poetry, prose, and epigraph as sibling body blocks', () => {
+  it('keeps body blocks separate and permits poetry, but not column layout, in notes', () => {
     expect(nestedBodyBlockIssues).toEqual([]);
   });
 
