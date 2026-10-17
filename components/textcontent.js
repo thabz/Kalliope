@@ -353,9 +353,18 @@ const renderXmlString = (inputString) => {
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
       }
       case 'footnote':
-      case 'note':
-        const noteContent = handle_nodes(node.childNodes);
-        return <Footnote key={keySeq++} text={noteContent} />;
+      case 'note': {
+        const note = node.cloneNode(true);
+        const first = note.firstChild;
+        const authorMarker = first?.nodeType === 3
+          ? first.textContent.match(/^\s*(\*+(?:\))?)\s*/)?.[1] ?? null
+          : null;
+        if (authorMarker != null) {
+          first.textContent = first.textContent.replace(/^\s*\*+(?:\))?\s*/, '');
+        }
+        const noteContent = handle_nodes(note.childNodes);
+        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} />;
+      }
       case 'sc':
         return (
           <span key={keySeq++} className="small-caps">

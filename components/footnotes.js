@@ -6,8 +6,8 @@ class Footnotes {
   number = () => {
     return this._footnotes.length;
   };
-  registrer = (footnote, text) => {
-    this._footnotes.push({ footnote, text });
+  registrer = (footnote, text, authorMarker) => {
+    this._footnotes.push({ footnote, text, authorMarker });
     return this._footnotes.length;
   };
   unregister = (footnote) => {
@@ -20,7 +20,7 @@ class Footnotes {
 
 const FootnoteContext = React.createContext();
 
-const Footnote = ({ text }) => {
+const Footnote = ({ text, authorMarker = null }) => {
   const footnotes = useContext(FootnoteContext);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Footnote = ({ text }) => {
     };
   });
 
-  const number = footnotes.registrer(this, text);
+  const number = footnotes.registrer(this, text, authorMarker);
   const anchor = `note-${number}`;
   return (
     <sup
@@ -51,7 +51,15 @@ const FootnoteList = () => {
         <div className="footnote-num">
           <a href={anchor}>{i + 1}.</a>
         </div>
-        <div className="footnote-text">{text}</div>
+        <div className="footnote-text">
+          {footnote.authorMarker != null && (
+            <span className="author-note-marker" title="Forfatterens note" aria-label="Forfatterens note"
+              style={{ float: 'left', marginInlineEnd: '0.35em' }}>
+              {footnote.authorMarker}
+            </span>
+          )}
+          {text}
+        </div>
       </div>
     );
   });
