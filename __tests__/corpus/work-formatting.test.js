@@ -4,6 +4,29 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it('preserves verse indentation and page markers in metadata notes', () => {
+    const citation = `<footnote>Indledning.
+<poetry lang="de">
+Første vers
+<pb n="2" facs="002.jpg"/>  Andet vers
+
+Tredje vers
+  Fjerde vers
+</poetry>
+Kilde.</footnote>`;
+    const xml = `<head>
+  <title>Titel${citation}</title>
+  <notes>
+    ${citation.replaceAll('footnote', 'note')}
+  </notes>
+</head>
+`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain(citation.replaceAll('footnote', 'note'));
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
   it('keeps explicit note citation breaks separate from main verse formatting', () => {
     const citation = '<footnote><poetry><nonum><right>Kort citat</right></nonum><br/>    Andet vers</poetry></footnote>';
     const xml = `<body>\n<poetry>Vers${citation}\n<nonum><right>Signatur</right></nonum></poetry>\n</body>\n`;
