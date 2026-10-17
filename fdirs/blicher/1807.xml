@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1807" author="blicher" status="incomplete" type="poetry">
 <workhead>
-  <title>Ossian</title>
+  <title>Ossians Digte</title>
   <year>1807,1809</year>
+  <notes>
+    <note>Digitaliseringen indeholder begge bind med omtrykte titelblade uden årstal. Det Kgl. Bibliotek daterer udgaven til [1807-09].</note>
+    <note>TODO: Hele værket skal transskriberes og korrekturlæses. Rettelsesarket bagerst i digitaliseringen indeholder rettelser til begge bind, som skal indarbejdes før færdigstatus.</note>
+  </notes>
+  <source href="https://www.kb.dk/e-mat/dod/115408047875.pdf">
+    <author id="macpherson">James Macpherson</author>
+    <title>Ossians Digte</title>
+    <translator id="blicher">Steen Steensen Blicher</translator>
+    <volume>1-2</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Den Wahlske Boghandling</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>[1807-09]</year>
+    <identifiers>
+      <kb-alma>99122889916105763</kb-alma>
+    </identifiers>
+  </source>
 </workhead>
 </kalliopework>
