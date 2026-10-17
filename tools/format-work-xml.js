@@ -237,10 +237,18 @@ const splitPoetryLines = xml => xml
   .join('');
 
 const indentMetadata = xml => {
+  const verseNotes = [];
+  const protectedXml = xml.replace(/<(note|footnote)\b(?![^>]*\/>)[^>]*>[\s\S]*?<\/\1>/g, note => {
+    if (note.includes('<poetry') !== true) {
+      return note;
+    }
+    const index = verseNotes.push(note) - 1;
+    return `<note>VERSE_NOTE_${index}</note>`;
+  });
   let metadataDepth = 0;
   let withinMetadata = false;
 
-  return xml.split('\n').map(line => {
+  return protectedXml.split('\n').map(line => {
     const content = line.trimStart();
 
     if (/^<(?:head|workhead)(?:[ \t>])/.test(content)) {
@@ -276,7 +284,8 @@ const indentMetadata = xml => {
     }
 
     return formatted;
-  }).join('\n');
+  }).join('\n').replace(/<note>VERSE_NOTE_(\d+)<\/note>/g,
+    (_match, index) => verseNotes[Number(index)]);
 };
 
 const tagEnd = (xml, start) => {
