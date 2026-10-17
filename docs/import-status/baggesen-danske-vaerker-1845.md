@@ -1,10 +1,11 @@
 # Baggesen: Danske Værker, 2. udgave, 1845–1847
 
-Opgaven er en flytning af eksisterende tekster fra `baggesen/andre`, ikke en
-transskription af hele udgaven. Ingen nye tekst-id'er eller tekstkroppe er
-oprettet. Alle eksisterende id'er og tekstkroppe er bevaret. Den oprindelige
-kilde til »Vor Frues Fald« er bevaret i en XML-kommentar; indtasterkrediteringen
-er fortsat synlig.
+20 eksisterende tekster er flyttet fra `baggesen/andre` til denne udgave.
+Derudover er »Det fortvivlede Mord« indsat som en selvstændig forekomst fra
+1845-udgaven efter brugerens anvisning, med id `baggesen2026101701` og
+`variant="baggesen2001100302"`. De 31 oprindelige id'er og tekstkroppe er
+bevaret; i alt er der nu 32 forekomster. Den tidligere kilde til »Vor Frues
+Fald« er bevaret i en XML-kommentar, og indtasterkrediteringen er fortsat synlig.
 
 Overværket `baggesen/1845` samler tolv underbind efter samme model som
 Aarestrups *Samlede Skrifter*. Bindene er `incomplete`; der er ikke attesteret
@@ -71,7 +72,7 @@ Dette er en placeringskontrol, ikke fuld tekstkorrektur mod den nye udgave.
 | Tekst-id | Kilde og faksimilestatus |
 | --- | --- |
 | `baggesen20011110100` | *Immanuel* (1991), s. 27. Sidetallet er flyttet fra noten til en struktureret kilde. Faksimile af den anvendte udgave mangler. Formuleringen »Første gang trykt« er ændret til »Citeret«, da digtet allerede findes i Arlauds 1891-udgave, s. 315–316. |
-| `baggesen2001100302` | Den eksisterende kilde, Rørdams udgave fra 1899, er bevaret. Tilføjet fire tydeligt mærkede faksimilebilleder af **en anden udgave**, *Danske Værker*, bind 1, s. 143–146 (PDF 156–159). |
+| `baggesen2001100302` | Den eksisterende kilde, Rørdams udgave fra 1899, er bevaret. 1845-forekomsten er registreret selvstændigt som `baggesen2026101701` med en variantrelation. Faksimilebilleder af den anden udgave er fjernet fra denne tekstpost. |
 | `baggesen2002112620` | Den fulde tekst kan ikke flyttes til bind 5: her findes kun fragmentet »Knud Vidfadmes Endeligt«, s. 285–290 (PDF 301–306), med angivelsen »Begyndelsen mangler«. Den eksisterende tekst har yderligere begyndelsesstrofer. Kilden til den fulde tekst mangler fortsat. |
 | `baggesen2002112629` | »Til General-Krigscommissair Astrup«, førstelinje »Tak, kiære Ven! for Bladet du mig sendte«. Ingen sikker placering fundet i de leverede bind; kilde og faksimile mangler fortsat. Må ikke forveksles med »Nytaarsmødet«, »Jens Napoleon« eller »Horn-Concerten«. |
 | `baggesen2002112631` | »Aand mod Haand«. Ingen sikker placering fundet i de leverede bind. Kilde og faksimile mangler fortsat. |
@@ -96,3 +97,40 @@ sidereferencer for at udfylde hullerne.
 - Alle seks faksimiler er synkroniseret til Kalliopes faksimileserver. Repositoryets faksimilekontrol på de seks nye sæt har verificeret alle tolv offentlige kontrolbilleder (`000.jpg` og `t/000-w250.jpg`) uden fejl.
 - Ti titelblade har QA-status `pass` fra repositoryets titelbladsværktøj og er visuelt kontrolleret. Der er ikke indsat titelblade for de beskadigede bind 7–8.
 - `git diff --check`: bestået.
+
+## Forekomsten af Det fortvivlede Mord i 1845-udgaven
+
+`baggesen2026101701` ligger først i bind 1 efter kildens rækkefølge og
+henviser med `variant="baggesen2001100302"` til den eksisterende forekomst.
+Kilden er s. **141–144**, PDF-sider 156–159. De tidligere billedtekster angav
+fejlagtigt s. 143–146; de fire særskilte billedkopier er fjernet sammen med
+billedreferencerne i den gamle tekstpost.
+
+Den nye tekst er transskriberet fra de fire scannede sider med friske OCR-pass
+(Tesseract `frk+dan`, PSM 4 og 6) som støtte og visuelt kontrolleret side for
+side. Ordlyd, historisk stavning, tegnsætning og de tre interne sideskift er
+bevaret. Trykkets afsnitsindryk er gengivet som indryk; der er ikke indsat
+blanklinjer mellem disse afsnit. Den trykte streg før moralen er bevaret.
+
+Helværksanalysen finder intet stabilt strofe- eller indrykningsmønster for
+denne fortælling; den visuelle kontrol bekræfter fortællende vers med
+uregelmæssige afsnitsindryk. Dette er ikke en strofeopdelt sang. Teksten har
+første korrektur, kilde- og sideflag; bindet er fortsat `incomplete`.
+
+## Rørdams udgave fra 1899
+
+Det Kgl. Biblioteks katalog registrerer den præcise udgave som
+*Jens Baggesens komiske Fortællinger og Æventyr: I*, udgivet ved E. Rørdam,
+København 1899, 124 sider. Record-id: `alma99122266864305763`.
+[Katalogpost](https://soeg.kb.dk/permalink/45KBDK_KGL/1pioq0f/alma99122266864305763).
+Posten har fysisk tilgængelighed og placeringen »Digitalisering eller læsesal
+(max 5 pr måned)«. Der er ikke fundet en elektronisk udgave på posten eller
+en fri PDF ved søgninger i KB, Internet Archive og de almindelige websøgninger.
+Der er ikke afgivet en bestilling.
+
+Hypotesen om en fælles kilde for alle Svend Olav Andersens bidrag er ikke
+bekræftet. Tolv eksisterende Baggesen-forekomster med denne kreditering angiver
+allerede Rørdams 1899-udgave, mens otte andre angiver *Udvalgte Værker* (1914).
+De kildeangivelser er observationer i Kalliopes metadata; de er ikke en ny
+kontrol mod de fysiske bøger. Der er ikke overført en fælles kilde alene ud
+fra indtasterens navn.
