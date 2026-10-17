@@ -31,7 +31,7 @@ The normal deliverables are:
 - translation and original-work relations where they can be established
 - a JPEG of the title page
 - a JPEG of a separate graphic front cover when one exists
-- explicit XML `TODO:` notes for genuine unresolved questions
+- a precise PR handoff for genuine unresolved questions
 - a clean, validated repository change
 - a complete GitHub pull request after user approval
 
@@ -291,9 +291,9 @@ public/images/<poet-id>/<work-id>-p1.jpg
 ```
 
 The title page image is required for every imported work unless the source
-genuinely contains no title page. In that exceptional case, add an explicit
-`TODO:` note and explain the limitation in the review summary and PR
-description.
+genuinely contains no title page. In that exceptional case, explain the
+limitation in the review summary and PR description; do not add a work note
+for this handoff information.
 
 The JPEG must represent the printed title page itself. Do not generate it from
 the PDF's OCR layer. Use `$prepare-kalliope-titlepage` and follow
@@ -511,7 +511,7 @@ substitutions. Historical forms such as `høi`, `skiøn`, `kiær`, `giøre` and
 `maaskee` may be correct in the source, and a modern spelling or dictionary
 cannot overrule the facsimile. Check the complete local context, capitalization,
 word boundary and printed glyph before changing XML. If the facsimile does not
-settle the reading, preserve the uncertainty with a `TODO:` note or finding
+settle the reading, preserve the uncertainty in a finding and the PR handoff
 rather than guessing.
 
 The detailed general rules for facsimile proofreading, stanza structure,
@@ -653,8 +653,8 @@ lines to produce a clearer, shorter or more distinctive catalogue title. The
 table of contents is supporting evidence only and cannot overrule the heading
 on the text's own first page. A heading for an internal division belongs in the
 body using the documented heading structure rather than being promoted into
-the text metadata. Record a `TODO:` note or finding when the hierarchy cannot
-be established safely; do not resolve uncertainty by inventing a title.
+the text metadata. Record a finding for the PR handoff when the hierarchy
+cannot be established safely; do not resolve uncertainty by inventing a title.
 
 Check both the first and last relevant page directly. A presumed page range or
 table of contents may be wrong.
@@ -725,8 +725,8 @@ Actively determine, as applicable:
 Do not leave metadata absent merely because finding it requires a corpus
 lookup.
 
-Do not fabricate metadata when no responsible answer exists. Use an explicit
-`TODO:` note for a genuine unresolved editorial question.
+Do not fabricate metadata when no responsible answer exists. Document the
+unresolved editorial question in the PR handoff.
 
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
@@ -1285,7 +1285,7 @@ previous transcription without checking it against the printed note.
 
 Preserve the association between each marker and its note.
 
-## 14. Mark unresolved questions with XML TODO notes
+## 14. Document unresolved questions in the PR handoff
 
 Do not hide uncertainty behind a plausible guess.
 
@@ -1297,32 +1297,19 @@ Try first to resolve a doubtful place by:
 4. checking another copy or scan of the same physical edition when available
 5. checking relevant corpus examples or bibliographic evidence
 
-When a rare question still cannot be resolved responsibly, insert an XML note
-at the most relevant location.
-
-The note text must begin exactly with uppercase `TODO:` followed by a concise,
-actionable description.
-
-Example:
-
-```xml
-<note>TODO: Tvivl om sidste ord i verslinjen; kontrollér originalen manuelt.</note>
-```
-
-A `TODO:` note may be placed:
-
-- in the work header for a work-level problem
-- in a text header for a poem-level or prose-level problem
-- at the relevant point in the body when the XML format permits it
-
-Use the note placement and syntax supported by current Kalliope XML.
+When a rare question still cannot be resolved responsibly, document it in the
+PR handoff with the precise XML location, printed page, facsimile page and
+required follow-up. Do not insert an XML `TODO:` note for information that can
+stay in the PR handoff. Add an editorial note to a work only when it contributes
+relevant information for the reader, following
+[the editorial-note rule](../add-kalliope-work/SKILL.md#redaktionelle-noter-og-pr-overlevering).
 
 Continue processing the rest of the publication after recording a local
 uncertainty. Do not stop the entire import for an isolated doubt that can be
 reviewed manually later. Missing facsimile pages are not a local uncertainty;
 apply the immediate stop and blocked-import PR procedure above.
 
-Do not use `TODO:` as a substitute for ordinary research or proofreading.
+Do not use the handoff as a substitute for ordinary research or proofreading.
 
 ## 15. Extract dates and other textual metadata
 
@@ -1418,8 +1405,8 @@ evidence.
 When the original author is known but the precise original cannot be found, use
 the existing Kalliope mechanism for an unknown original where applicable.
 
-Add a `TODO:` note when the remaining uncertainty requires manual editorial
-review.
+Document remaining uncertainty requiring manual editorial review in the PR
+handoff, rather than adding a work note about the task.
 
 ## 18. Detect variants and duplicates
 
@@ -1717,7 +1704,7 @@ Report concisely:
 - referenced persons resolved
 - translations and originals identified
 - validation and tests run
-- remaining `TODO:` notes
+- remaining questions documented in the PR handoff
 - exact files intended for the commit
 
 Do not commit, amend or push until the user has explicitly reviewed the change
@@ -1758,7 +1745,7 @@ The PR description must state concretely:
 - how the title-page geometry and crop were checked
 - which persons, translations and originals were resolved
 - which validation and tests were run
-- any remaining `TODO:` notes
+- any remaining questions documented in the PR handoff
 
 Every PR originating from a GitHub issue must include `Fixes #123` with the
 actual issue number in its description from creation, including draft PRs and
@@ -1878,8 +1865,8 @@ For a complete import, all applicable items below must be true:
 - [ ] Notes applying to a whole poem are placed in the text header.
 - [ ] Full dates and other discoverable metadata were extracted according to
       current rules.
-- [ ] Genuine unresolved questions are marked with explicit XML notes beginning
-      `TODO:`.
+- [ ] Genuine unresolved questions are documented precisely in the PR handoff;
+      operational handoff notes are absent from the work XML.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
 - [ ] OCR, page, stanza, indentation and typography candidate totals equal

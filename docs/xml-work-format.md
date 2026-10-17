@@ -22,6 +22,11 @@ I både `<workhead>` og tekstens `<head>` står `<line>`-elementer i `<subtitle>
 på egne linjer og indrykkes ét niveau i forhold til `<subtitle>`, ligesom noter
 i `<notes>`. En undertitel uden `<line>` bliver på én linje.
 
+`<line>` må ikke begynde med komma, punktum, semikolon, kolon, udråbstegn
+eller spørgsmålstegn, heller ikke efter mellemrum eller inde i typografisk
+markup. Korpustesten håndhæver reglen. Citattegn, parenteser og replikstreger
+kan være meningsbærende og er tilladt.
+
 Brug kun `<line>` i `<subtitle>`, når undertitlen består af mindst to linjer.
 En undertitel med én linje skrives direkte, fx
 `<subtitle>Act. I. Scen. I.</subtitle>`. Korpustesten afviser en overflødig

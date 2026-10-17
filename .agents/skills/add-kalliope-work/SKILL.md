@@ -103,6 +103,13 @@ eller forfatterangivelser. Kør kun for værket under arbejde, ikke globalt for
 korpusset. Eksisterende tekster må ikke bruges som grundlag for at kopiere
 transskriptionen fra en anden udgave.
 
+### Redaktionelle noter og PR-overlevering
+
+Tilføj kun redaktionelle noter, når de bidrager med relevant information for
+læseren. Noter, der kan stå som en del af overleveringen i PR'en, skal stå i
+PR-beskrivelsen og må ikke skrives som noter i værkerne. Det gælder fx
+arbejdsstatus, indlæsningsomfang, manglende tekstkontrol og opgaver til senere.
+
 ## 3. Håndtér tvivl eksplicit
 
 Forsøg først at afklare et spørgsmål ud fra kilden, repositoryets konventioner

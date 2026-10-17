@@ -286,6 +286,32 @@ const titleIssue = ({ file, context, textId, candidate, rule, description }) => 
   };
 };
 
+const findLineLeadingPunctuationFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const document = parseXMLFragment(data);
+  return getElementsByTagName(document, 'line').flatMap(element => {
+    const content = titleTextWithoutNotes({ title: element.toString() });
+    if (/^[,.;:!?]/u.test(content) === false) {
+      return [];
+    }
+    let owner = element.parentNode;
+    while (owner != null && ['text', 'section', 'workhead'].includes(owner.tagName) === false) {
+      owner = owner.parentNode;
+    }
+    return [titleIssue({
+      file,
+      context,
+      textId: owner == null ? undefined : safeGetAttr(owner, 'id') ?? owner.tagName,
+      candidate: { element },
+      rule: 'line-leading-punctuation',
+      description: 'line must not begin with a comma, period, semicolon, colon, exclamation mark, or question mark.',
+    })];
+  });
+};
+
 const findTitleMetadataFindings = ({
   file,
   data,
@@ -785,6 +811,7 @@ const findPoemLineFindingsInText = ({
     ...findCommonPoetryIndentationFindings({ file, data, context }),
     ...findPoetrySpacingFindings({ file, data, context }),
     ...findTitleMetadataFindings({ file, data, context }),
+    ...findLineLeadingPunctuationFindings({ file, data, context }),
   );
 
   return issues;
@@ -929,6 +956,7 @@ export {
   findCommonPoetryIndentationFindings,
   findPoetrySpacingFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,
