@@ -106,5 +106,9 @@ Browserforbindelsen var desuden utilgængelig. Det statiske build,
 visningsdata og den lokale servers genererede indholdsfortegnelse er
 kontrolleret; en visuel browserkontrol er ikke attesteret.
 
+De otte kildebekræftede OCR-kandidater er lokalt undtaget fra deres konkrete
+kvalitetsregler på de berørte tekster. En ufiltreret rapport og alle
+kildeafgørelser er bevaret i scratch.
+
 Scratch med OCR, sidejournaler, findings og billedkandidater ligger uden for
 repositoryet. De er ikke en del af PR'en.

@@ -126,7 +126,7 @@ Af alle litterære Arbejder er intet saa utaknemmeligt som Oversættelse af Digt
 </content>
 </section>
 
-<text id="blicher2026101706">
+<text id="blicher2026101706" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Kampen med Caros<footnote>Caros er [ulæseligt] Carausius, som i Aaret 284 [ulæseligt] sig Britannien, og overvandt Maximin i [ulæseligt] Søslag, hvorfor han af Digteren kaldes: <w>Skibenes Konge</w>. Han [ulæseligt] Agricolas Vold, som Ossian ogsaa tilkjendegiver i Digtet. Under dete Arbejde er det formodentlig at han angribes af Oscar.</footnote></title>
   <notes>
@@ -583,10 +583,11 @@ Hveden er Aaarenes Strøm? hvorhen monne de bortrinde? Hvor have de skjult i Mul
 </content>
 </section>
 
-<text id="blicher2026101714">
+<text id="blicher2026101714" ignore-tests="internal-uppercase">
 <head>
   <title>Oina-Morul</title>
   <notes>
+    <note>Trykkets sammenløbne ord HjelmToscars på s. 88 er bevaret.</note>
     <note unknown-original-by="macpherson" />
   </notes>
   <source pages="87-93" facsimile-pages="124-130" />
@@ -1370,7 +1371,7 @@ Dejlig est du, Himmelens Dotter! Forlystende er dit Ansigts Taushed. Du strider 
 </body>
 </text>
 
-<text id="blicher2026101730">
+<text id="blicher2026101730" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Temora</title>
   <subtitle>Anden Sang.</subtitle>
@@ -1432,7 +1433,7 @@ Heltes Fader, <w>Trenmor</w>! Hvirvelvindens Indvaaner! Hvor Tordenens mørkerø
 </body>
 </text>
 
-<text id="blicher2026101731">
+<text id="blicher2026101731" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Temora</title>
   <subtitle>Tredie Sang.</subtitle>
@@ -1774,7 +1775,7 @@ Aftendæmringens Stjerne! yndigt er dit Skin udi Vesten! Du hæver dit trinde Ho
 </body>
 </text>
 
-<text id="blicher2026101738">
+<text id="blicher2026101738" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Conlath og Cuthona<footnote>Conlath var den yngste af Mornis Sønner og Broder til den navnkundige Goel. Han elskede Cuthona Rumors Dotter, da Toscar Rinsenas Søn — ikke hiin Toscar, som var Fader til Malvina — besøgte Conlath i Selskab med sin Ven Fercuth. Da han reiste bort, saae han Cuthona, forelskede sig i hende og bortførte hende med Vold. Stormen drev ham til en øde Øe, hvor Conlath traf ham. De stred og faldt tilligemed alle deres Mænd. Cuthona døde snart derefter af Græmmelse. Fingal spurgte deres Død, og sendte en Ædling for at begrave dem, men glemte at sende en Skiald, som kunde synge deres Gravsang. Efter lang Tids Forløb kommer nu Conlaths Aand til Ossian, for at bevæge ham til denne Kjerlighedsgjerning.</footnote></title>
   <notes>
@@ -1871,11 +1872,11 @@ Forlystende er din Sang, du Klippens ensomme Beboer<footnote>Dette Digt har Ossi
 </body>
 </text>
 
-<text id="blicher2026101740">
+<text id="blicher2026101740" ignore-tests="internal-uppercase">
 <head>
   <title>Carthon</title>
   <notes>
-    <note>Henvisningstegnet 1 efter Tusinde Lys på s. 179 svarer til anmærkning 2. Sidetal 194 er trykt 164 og gengives som 164 [194].</note>
+    <note>Trykkets afbrudte former brusen-/Storhavs og fald-/Balclutha på s. 188–189 er bevaret uden rekonstruerede bogstaver. Henvisningstegnet 1 efter Tusinde Lys på s. 179 svarer til anmærkning 2. Sidetal 194 er trykt 164 og gengives som 164 [194].</note>
     <note unknown-original-by="macpherson" />
   </notes>
   <source pages="178-199" facsimile-pages="511-532" />
@@ -1967,7 +1968,7 @@ Kom, du eensomme Straale, fra din natlige Vaagen! Stormbygerne ere omkring dig, 
 </body>
 </text>
 
-<text id="blicher2026101742">
+<text id="blicher2026101742" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Sulmalla</title>
   <notes>
@@ -2024,7 +2025,7 @@ Hvo triner saa statelig paa <w>Lumon</w> ved de skummende Bølgers Brusen? Hende
 </body>
 </text>
 
-<text id="blicher2026101744">
+<text id="blicher2026101744" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Ossians sidste Sang</title>
   <notes>
