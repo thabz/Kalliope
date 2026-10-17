@@ -150,8 +150,17 @@ const balanceMultilineTags = html => {
 const collapseMultilineNotes = html =>
   html.replace(
     /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
-    (_, tagName, attributes = '', content) =>
-      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+    (_, tagName, attributes = '', content) => {
+      // Keep note verses inside the enclosing main-text line during splitting.
+      const withVerseBreaks = content.replace(
+        /(<poetry\b[^>]*>)([\s\S]*?)(<\/poetry>)/g,
+        (_, opening, verses, closing) => opening + verses
+          .replace(/\r\n?/g, '\n')
+          .replace(/^\n|\n$/g, '')
+          .replace(/\n/g, '<br/>') + closing,
+      );
+      return `<${tagName}${attributes}>${withVerseBreaks.replace(/\s*\n\s*/g, ' ')}</${tagName}>`;
+    }
   );
 
 const validateContentHtmlFragments = (lines, context = {}) => {
@@ -185,13 +194,6 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     .replace(/&lt;/g, escapedLessThanPlaceholder)
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry) {
-    // Marker strofe numre
-    html = html
-      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
-      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
-      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
-  }
   html = html
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
     .replace(
@@ -203,6 +205,13 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   html = collapseMultilineNotes(html);
+  if (isPoetry) {
+    // Marker strofenumre i hovedteksten efter sammenfoldning af noterne.
+    html = html
+      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
+      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
+      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
+  }
   let decoded = decodeXmlCharacterReferences(
     replaceDashes(
       html

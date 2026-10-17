@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import {
   directChild,
   elementChildren,
+  inheritedNotePageBreaks,
   parseXml,
   isPoetryBlock,
   serializeVerseLines,
@@ -139,7 +140,6 @@ const pbPattern = /<pb\b[^>]*\bfacs="([^"]+)"[^>]*\/>/gu;
 
 const parsePoetryElement = ({ poetry, startingFacsimile }) => {
   const serialized = serializeVerseLines(poetry)
-    .replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu, '')
     .replace(/\r\n?/gu, '\n');
   const lines = [];
   const equipment = [];
@@ -237,6 +237,10 @@ const extractPoetryBlocks = xml => {
       if (node.nodeName === 'note' || node.nodeName === 'footnote') {
         const noteStream = { facsimile: stream.facsimile };
         elementChildren(node).forEach(child => visit(child, noteStream));
+        const inheritedFacsimile = inheritedNotePageBreaks(node).at(-1)?.getAttribute('facs');
+        if (inheritedFacsimile != null && inheritedFacsimile !== '') {
+          stream.facsimile = inheritedFacsimile;
+        }
         return;
       }
       if (isPoetryBlock(node)) {

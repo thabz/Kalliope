@@ -94,9 +94,11 @@ const adjacentMetadataFieldsPattern = new RegExp(
 
 export const structuralTagsOutsideColumnZero = xml => {
   const violations = [];
+  const structure = xml.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    note => note.replace(/[^\n]/g, ' '));
   let match;
 
-  while ((match = anyStructuralTagPattern.exec(xml)) != null) {
+  while ((match = anyStructuralTagPattern.exec(structure)) != null) {
     const lineStart = xml.lastIndexOf('\n', match.index - 1) + 1;
     if (match.index !== lineStart) {
       violations.push(xml.slice(lineStart, xml.indexOf('\n', match.index)));

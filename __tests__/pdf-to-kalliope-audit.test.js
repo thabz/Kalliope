@@ -257,8 +257,7 @@ describe('whole-work structure wrapper', () => {
   it('counts note poetry separately without adding its paragraphs or page breaks to the main poem', () => {
     const xml = workXml.replace('Første linje', `Første<footnote>Notens prosa
 
-<pb n="11" facs="011.jpg"/><poetry>Notens første vers
-Notens andet vers</poetry>
+<pb n="11" facs="011.jpg"/><poetry>Notens første vers<br/>Notens andet vers</poetry>
 
 Mere prosa</footnote> linje`);
     const analysis = analyzeWholeWork(xml);
@@ -501,11 +500,34 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
     ]));
   });
 
-  it('audits explicit note citation breaks separately from the main stanza', () => {
-    const citedXml = workXml.replace('<poetry>', '<poetry>Vers<footnote><column>Første citat<br/>Andet citat</column></footnote>\n');
+  it.each(['<br/>', '\n'])('audits note citations with %j breaks separately from the main stanza', separator => {
+    const citedXml = workXml.replace('<poetry>', `<poetry>Vers<footnote><poetry>Første citat${separator}Andet citat</poetry></footnote>\n`);
     const result = analyzeWholeWork(citedXml);
     expect(result.poems).toHaveLength(2);
     expect(result.poems[1].stanza.observed_stanza_lengths).toEqual([2]);
+  });
+
+  it('does not interpret prose note columns as poems', () => {
+    const withNote = workXml.replace('Første linje',
+      'Første<footnote><column>Se første udgave, 1820.<br/>Se anden udgave, 1830.</column></footnote> linje');
+    expect(analyzeWholeWork(withNote).poems).toEqual(analyzeWholeWork(workXml).poems);
+  });
+
+  it('preserves legacy note-only page boundaries without counting note text as verses', () => {
+    const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
+      .replace('Sidste paa ti',
+        'Sidste paa ti<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote>');
+    const [poem] = analyzeWholeWork(legacy).poems;
+    expect(poem.stanza.observed_stanza_lengths).toEqual([5]);
+    // Preserve master's convention: an inline transition belongs to its verse.
+    expect(poem.page_breaks).toEqual([2, 4]);
+  });
+
+  it('matches shared boundaries by facsimile regardless of attribute order', () => {
+    const withNote = workXml.replace('Første linje',
+      'Første<footnote>Note<pb facs="011.jpg" n="11"/> fortsat.</footnote> linje');
+    expect(analyzeWholeWork(withNote).poems).toEqual(analyzeWholeWork(workXml).poems);
+    expect(buildPageInventory({ xml: withNote })).toEqual(buildPageInventory({ xml: workXml }));
   });
 
   it('treats any line without terminal punctuation as continuation evidence', () => {
@@ -664,6 +686,15 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
+  it('starts a later note on the page inherited from a legacy note-only transition', () => {
+    const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
+      .replace('Første linje', 'Første<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote> linje')
+      .replace('Sidste paa ti', 'Senere<footnote>Image senere note</footnote> linje');
+    const candidate = historicalOcrCandidates({ xml: legacy })
+      .find(item => item.rule === 'image-token');
+    expect(candidate).toMatchObject({ facsimile: '011.jpg', printed_page: '11' });
+  });
+
   it('keeps note and main-text candidates on their physical pages when their transitions repeat', () => {
     const xml = workXml.replace('Første linje',
       'Første<footnote>Image note<pb n="11" facs="011.jpg"/>Image notefortsættelse</footnote> linje')

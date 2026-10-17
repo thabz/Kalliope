@@ -1,4 +1,5 @@
 import { htmlToXml } from '../tools/libs/helpers.js';
+import { parseXMLFragment, safeGetInnerXML } from '../tools/build-static/xml.js';
 
 const collected = {
   texts: new Map(),
@@ -124,6 +125,34 @@ describe('helpers', () => {
       ).toEqual([
         'Verslinje<footnote>Første linje anden <span lang="la"><i>linje</i></span>.</footnote>',
         'Næste verslinje',
+      ]);
+    });
+
+    it.each(['note', 'footnote'])('keeps poetry inside a %s separate from the main verse lines', tag => {
+      const note = `<${tag}>Et citat: <poetry>Første citatlinje<br/>  Anden citatlinje</poetry></${tag}>`;
+      const block = parseXMLFragment(`<poetry>Verslinje${note}\nNæste verslinje</poetry>`).documentElement;
+      expect(htmlToXml(safeGetInnerXML(block), collected, true)
+        .map(([fragment]) => fragment)).toEqual([
+        `Verslinje${note}`,
+        'Næste verslinje',
+      ]);
+    });
+
+    it.each(['note', 'footnote'])('preserves verse lines, stanzas and indentation inside a multiline %s', tag => {
+      const verses = '\nFørste citatlinje\n  Anden citatlinje\n\nTredje citatlinje\n';
+      const block = parseXMLFragment(`<poetry>Verslinje<${tag}>Notens\nprosa <poetry lang="da">${verses}</poetry>\nMere prosa.</${tag}>\nNæste verslinje</poetry>`).documentElement;
+      expect(htmlToXml(safeGetInnerXML(block), collected, true)).toEqual([
+        [`Verslinje<${tag}>Notens prosa <poetry lang="da">Første citatlinje<br/>  Anden citatlinje<br/><br/>Tredje citatlinje</poetry> Mere prosa.</${tag}>`, { num: 1, html: true }],
+        ['Næste verslinje', { num: 2 }],
+      ]);
+    });
+
+    it('keeps a stanza number in a note from suppressing the main verse number', () => {
+      const note = '<footnote><poetry>\n1.\nCitatlinje\n</poetry></footnote>';
+      expect(htmlToXml(`1.\nVerslinje${note}\nNæste`, collected, true)).toEqual([
+        ['<versenum>1.</versenum>', { html: true }],
+        ['Verslinje<footnote><poetry>1.<br/>Citatlinje</poetry></footnote>', { num: 1, html: true }],
+        ['Næste', { num: 2 }],
       ]);
     });
 

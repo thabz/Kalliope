@@ -38,10 +38,13 @@ const ocrLine = (text, top, left = 300) => ({
 });
 
 describe('forberedelse af helværksgeometri', () => {
-  it('maps nested note verses in their own page stream and includes wrapped prose quotations', () => {
+  it('maps explicit note verses separately and carries the main page into the next block', () => {
     const nestedXml = xml.replace('Første Verslinje', `Første<footnote>Note
-<pb n="9" facs="013.jpg"/><column>Notens første vers<br/>    Notens andet vers</column></footnote> Verslinje`)
-      .replace('</body>', '<quote><poetry>Et senere citat</poetry></quote></body>');
+<pb n="9" facs="013.jpg"/><poetry>
+Notens første vers
+    Notens andet vers
+</poetry></footnote> Verslinje`)
+      .replace('</body>', '<poetry>Et senere citat</poetry></body>');
     const blocks = extractPoetryBlocks(nestedXml);
     expect(blocks).toHaveLength(3);
     expect(blocks.map(block => block.blockIndex)).toEqual([1, 2, 3]);
@@ -57,6 +60,31 @@ describe('forberedelse af helværksgeometri', () => {
     const withNote = xml.replace('Første Verslinje',
       'Første<footnote>Noten fortsætter<pb n="9" facs="013.jpg"/>paa næste side.</footnote> Verslinje');
     expect(extractPoetryBlocks(withNote)).toEqual(extractPoetryBlocks(xml));
+  });
+
+  it('does not analyze bibliographic columns as verse', () => {
+    const withNote = xml.replace('Første Verslinje',
+      'Første<footnote><column>Se første udgave, 1820.<br/>Se anden udgave, 1830.</column></footnote> Verslinje');
+    expect(extractPoetryBlocks(withNote)).toEqual(extractPoetryBlocks(xml));
+  });
+
+  it('preserves a legacy page transition recorded only inside a note', () => {
+    const legacy = xml.replace('<pb n="9" facs="013.jpg"/>', '')
+      .replace('Tredje Verslinje',
+        'Tredje Verslinje<footnote>Noten<pb n="9" facs="013.jpg"/> fortsætter.</footnote>');
+    const [block] = extractPoetryBlocks(legacy);
+    expect(block.lines.map(line => line.facsimile))
+      .toEqual(['012.jpg', '012.jpg', '012.jpg', '013.jpg']);
+    expect(block.lines.map(line => line.text))
+      .toEqual(['Første Verslinje', 'Anden Verslinje', 'Tredje Verslinje', 'Fjerde Verslinje']);
+  });
+
+  it('carries a note-only transition in preceding prose into the next poem', () => {
+    const legacy = xml.replace('<poetry>',
+      '<prose>Indledning<footnote>Note<pb n="9" facs="013.jpg"/> fortsat.</footnote></prose><poetry>')
+      .replace('<pb n="9" facs="013.jpg"/>Fjerde', 'Fjerde');
+    expect(extractPoetryBlocks(legacy)[0].lines.map(line => line.facsimile))
+      .toEqual(['013.jpg', '013.jpg', '013.jpg', '013.jpg']);
   });
 
   it('extracts page-aware verse lines without using whitespace as match text', () => {

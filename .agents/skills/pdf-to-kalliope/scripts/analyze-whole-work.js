@@ -130,8 +130,7 @@ const poetryBlocks = xml => {
         text_id: textId,
         pages: source?.getAttribute('pages') ?? null,
         block_index: blockIndex + 1,
-        ...bodyAndPageBreaks(serializeVerseLines(poetry)
-          .replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu, '')),
+        ...bodyAndPageBreaks(serializeVerseLines(poetry)),
       }));
   });
 };

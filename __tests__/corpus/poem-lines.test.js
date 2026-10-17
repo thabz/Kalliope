@@ -160,6 +160,18 @@ describe('Check workfiles', () => {
     expect(issues[0].description).toContain('2 columns');
   });
 
+  it('checks verses after a note containing poetry without counting the note verses', () => {
+    const plain = '<text id="shifted"><body><poetry>\n  Første\n    Anden\n  Tredje\n</poetry></body></text>';
+    const annotated = plain.replace('Første',
+      'Første<footnote><poetry>Citat uden indryk<br/>Et andet citat</poetry></footnote>');
+    expect(commonIndentationIssues(annotated)).toEqual(commonIndentationIssues(plain));
+  });
+
+  it('retains an unindented main verse following a verse citation in a note', () => {
+    const annotated = '<text id="relative"><body><poetry>\n  Første<footnote><poetry>Citat<br/>Citat</poetry></footnote>\nAnden\n</poetry></body></text>';
+    expect(commonIndentationIssues(annotated)).toEqual([]);
+  });
+
   it('allows one-column relative indentation when a verse line starts at zero', () => {
     const issues = commonIndentationIssues(
       '<text id="relative"><body><poetry>\nFørste\n Anden\nFørste igen\n</poetry></body></text>',

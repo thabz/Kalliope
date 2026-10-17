@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Fragment, useContext } from 'react';
+import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
@@ -149,8 +149,6 @@ const renderXmlString = (inputString) => {
             {handle_nodes(node.childNodes)}
           </i>
         );
-      case 'nonum':
-        return <Fragment key={keySeq++}>{handle_nodes(node.childNodes)}</Fragment>;
       case 'span':
         return (
           <span key={keySeq++} lang={node.getAttribute('lang') || undefined}>
@@ -202,7 +200,14 @@ const renderXmlString = (inputString) => {
         );
       case 'poetry':
         return (
-          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}>
+          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{
+              whiteSpace: 'pre-wrap',
+              marginInlineStart: ['note', 'footnote'].includes(node.parentNode?.nodeName)
+                ? '1.5em' : undefined,
+              marginBlockStart: ['note', 'footnote'].includes(node.parentNode?.nodeName)
+                ? '0.25em' : undefined,
+            }}>
             {handle_nodes(node.childNodes)}
           </div>
         );
@@ -320,7 +325,7 @@ const renderXmlString = (inputString) => {
         );
       case 'column':
         return (
-          <div style={{ textAlign: 'left', whiteSpace: 'pre-wrap' }} key={keySeq++}>
+          <div style={{ textAlign: 'left' }} key={keySeq++}>
             {handle_nodes(node.childNodes)}
           </div>
         );

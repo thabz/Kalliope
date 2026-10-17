@@ -124,16 +124,13 @@ const safeGetOuterXML = element => {
 };
 
 const safeGetInnerXML = element => {
-  const outer = safeGetOuterXML(element);
-  if (outer == null) {
+  if (element == null) {
     return null;
   }
-  const t = tagName(element);
-  return outer
-    .replace(new RegExp('<' + t + '[^>]*>'), '')
-    .replace('<' + t + '>', '')
-    .replace('</' + t + '>', '')
-    .replace('<' + t + '/>', '');
+  const serializer = new XMLSerializer();
+  return Array.from(element.childNodes)
+    .map(child => serializer.serializeToString(child))
+    .join('');
 };
 
 const identifierAllowlist = Object.freeze({

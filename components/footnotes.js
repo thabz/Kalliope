@@ -69,6 +69,9 @@ const FootnoteList = () => {
           width: 100%;
           margin-left: -5px;
         }
+        :global(.footnote + .footnote) {
+          margin-top: 0.25em;
+        }
         :global(.footnote .footnote-num) {
           flex-basis: 20px;
           flex-grow: 0;

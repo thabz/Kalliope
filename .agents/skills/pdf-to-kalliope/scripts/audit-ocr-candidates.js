@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { buildPageInventory, normalizeLine, readJsonLines, splitBodyPages, directChild, parseXml, textEntries } from './audit-utils.js';
+import { buildPageInventory, inheritedNotePageBreaks, normalizeLine, readJsonLines, splitBodyPages, directChild, parseXml, textEntries } from './audit-utils.js';
 
 const rules = [
   ['ocr-symbol', /[{}%$]/gu, 'OCR-symbol fra rå genkendelse'],
@@ -47,6 +47,8 @@ const ocrPageStreams = (body, initialPage) => {
         metadata: index === 0 ? stream.metadata : page.transition,
         stream: key,
       }));
+      const inherited = inheritedNotePageBreaks(node).at(-1);
+      if (inherited != null) visit(inherited, stream);
       return;
     }
     Array.from(node.childNodes ?? []).forEach(child => visit(child, stream));

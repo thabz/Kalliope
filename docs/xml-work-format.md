@@ -1104,11 +1104,22 @@ overskrift, den henviser til. En note må ikke stå alene på en linje, heller
 ikke når den er trykt nederst på en side i kilden: det giver en løsrevet
 notemarkør. Renderingen placerer selv noteteksten under digtet.
 
-Verscitater i fodnoter kan stå i `<column>` med eksplicitte `<br/>` mellem
-verslinjerne. Skriv blokken uden XML-linjeskift, så de ikke giver ekstra
-linjeskift ved visningen. Mellemrum bevarer indrykning; `<center>`, `<right>`
+Verscitater i noter og fodnoter markeres med `<poetry>` med én verslinje pr.
+XML-linje og blanke linjer mellem strofer, ligesom i hovedteksten. Brug ikke
+`<br/>` til disse linjeskift. Linjeskift lige efter åbningstagget og lige før
+sluttagget er formatering og giver ikke ekstra luft ved visningen.
+Visningen indrykker hele verscitatet i forhold til
+noteteksten og tilføjer lidt luft over citatet. Mellemrum angiver yderligere
+indrykning af enkelte verslinjer; `<center>`, `<right>`
 og `<nonum>` kan markere centrering og oplysninger uden for versene.
-`<poetry>`, `<prose>` og `<epigraph>` skal være direkte børn af `<body>`.
+`<column>` og `<two-columns>` må ikke bruges i noter: trykkets kolonneopsætning
+overføres ikke til XML. Almindelig notetekst behøver ingen blokmarkering.
+`<poetry>` må stå direkte i `<body>`, `<note>` eller `<footnote>`;
+`<prose>` og `<epigraph>` skal være direkte børn af `<body>`.
+
+Analyseværktøjerne bevarer ældre sidemarkører, der kun står i en note, som
+sideovergange for den omgivende tekst. Når samme facsimileside har sin egen
+markør i hovedteksten, følger hovedtekst og note hver deres markør.
 
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
