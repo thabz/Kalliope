@@ -4,6 +4,23 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it('keeps explicit note citation breaks separate from main verse formatting', () => {
+    const citation = '<footnote><poetry><nonum><right>Kort citat</right></nonum><br/>    Andet vers</poetry></footnote>';
+    const xml = `<body>\n<poetry>Vers${citation}\n<nonum><right>Signatur</right></nonum></poetry>\n</body>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain('</nonum>\n</poetry>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
+    expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
+  });
+
+  it('preserves verse lines, stanzas and indentation in a multiline note citation', () => {
+    const citation = '<footnote><poetry>\nFørste vers\n    Andet vers\n\nTredje vers\n</poetry></footnote>';
+    const xml = `<body>\n<poetry>\nVers${citation}\nNæste vers\n</poetry>\n</body>\n`;
+    expect(formatWorkXml(xml)).toBe(xml);
+    expect(structuralTagsOutsideColumnZero(xml)).toEqual([]);
+  });
+
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
   <workhead>

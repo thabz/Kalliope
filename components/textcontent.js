@@ -200,7 +200,14 @@ const renderXmlString = (inputString) => {
         );
       case 'poetry':
         return (
-          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}>
+          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{
+              whiteSpace: 'pre-wrap',
+              marginInlineStart: ['note', 'footnote'].includes(node.parentNode?.nodeName)
+                ? '1.5em' : undefined,
+              marginBlockStart: ['note', 'footnote'].includes(node.parentNode?.nodeName)
+                ? '0.25em' : undefined,
+            }}>
             {handle_nodes(node.childNodes)}
           </div>
         );

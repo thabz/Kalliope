@@ -532,6 +532,10 @@ bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, intern
 tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
 reglen nedenfor.
 
+Hvis en prosatekst ingen trykt overskrift har, kan en kort redaktionel titel
+tilføjes i firkantede klammer. Brug da en `<indextitle>` uden klammer, og
+dokumentér den tilføjede titel ved importen.
+
 Brug felterne efter den trykte funktion og placering:
 
 - linjer over hovedtitlen skrives i `<suptitle>`
@@ -928,6 +932,12 @@ strofer sættes markøren derfor umiddelbart foran den første tekst på den nye
 side. Markøren opretter ikke en verslinje, en blanklinje, en strofe eller et
 prosaafsnit og renderes ikke visuelt.
 
+Hvis både hovedteksten og en fodnote fortsætter på næste fysiske side,
+registreres sideskiftet i begge tekststrømme, også inde i et ord i fodnoten.
+Markørerne har samme `n` og `facs`. Sidetalsintervallet tæller den fysiske
+sideovergang én gang; hver notes og hovedtekstens rækkefølge kontrolleres
+særskilt. En markør må ikke gentages inden for samme tekststrøm.
+
 Der indsættes ikke `<pb>` ved begyndelsen eller slutningen af en `<text>` alene
 for at gentage tekstens `<source pages="...">`. Derfor kan et værk med
 `<pagebreaks/>` lovligt indeholde nul `<pb>`-elementer. I værker med
@@ -1094,6 +1104,23 @@ overskrift, den henviser til. En note må ikke stå alene på en linje, heller
 ikke når den er trykt nederst på en side i kilden: det giver en løsrevet
 notemarkør. Renderingen placerer selv noteteksten under digtet.
 
+Verscitater i noter og fodnoter markeres med `<poetry>` med én verslinje pr.
+XML-linje og blanke linjer mellem strofer, ligesom i hovedteksten. Brug ikke
+`<br/>` til disse linjeskift. Linjeskift lige efter åbningstagget og lige før
+sluttagget er formatering og giver ikke ekstra luft ved visningen.
+Visningen indrykker hele verscitatet i forhold til
+noteteksten og tilføjer lidt luft over citatet. Mellemrum angiver yderligere
+indrykning af enkelte verslinjer; `<center>`, `<right>`
+og `<nonum>` kan markere centrering og oplysninger uden for versene.
+`<column>` og `<two-columns>` må ikke bruges i noter: trykkets kolonneopsætning
+overføres ikke til XML. Almindelig notetekst behøver ingen blokmarkering.
+`<poetry>` må stå direkte i `<body>`, `<note>` eller `<footnote>`;
+`<prose>` og `<epigraph>` skal være direkte børn af `<body>`.
+
+Analyseværktøjerne bevarer ældre sidemarkører, der kun står i en note, som
+sideovergange for den omgivende tekst. Når samme facsimileside har sin egen
+markør i hovedteksten, følger hovedtekst og note hver deres markør.
+
 Links i noter og fodnoter indgaar i referenceopsamlingen.
 
 ## Billeder
@@ -1234,6 +1261,7 @@ Disse tags paavirker linjenummerering eller linjelayout:
 - `<margin>...</margin>`: margintekst/visningsnummer.
 - `<resetnum/>`: nulstiller automatisk linjenummerering til 1.
 - `<wrap>...</wrap>`: undgaar poesilinje-layout for lange linjer.
+
 - `<center>...</center>` og `<right>...</right>`: linjejustering.
 
 `<nonum>` er den yderste markør for en unummereret linje. En eventuel

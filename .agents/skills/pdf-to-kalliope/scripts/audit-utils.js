@@ -18,6 +18,46 @@ const serializeChildren = node => {
     .join('');
 };
 
+const isPoetryBlock = node => node.nodeName === 'poetry';
+
+const pageBreakKey = markup => /\bfacs="([^"]+)"/u.exec(markup)?.[1] ?? markup;
+
+const explicitPageBreaks = node => {
+  let stream = node;
+  while (stream.parentNode != null &&
+    ['body', 'note', 'footnote'].includes(stream.nodeName) === false) {
+    stream = stream.parentNode;
+  }
+  return new Set((stripNotes(serializeChildren(stream)).match(/<pb\b[^>]*\/>/gu) ?? [])
+    .map(pageBreakKey));
+};
+
+// Older texts can record a physical transition only inside an attached note.
+// Keep it in the parent stream unless that stream has its own marker for the page.
+const inheritedNotePageBreaks = note => {
+  const explicit = explicitPageBreaks(note.parentNode);
+  const serializer = new XMLSerializer();
+  return Array.from(note.getElementsByTagName('pb')).filter(pageBreak =>
+    explicit.has(pageBreakKey(serializer.serializeToString(pageBreak))) === false);
+};
+
+const serializeWithoutNoteText = node => {
+  const raw = serializeChildren(node);
+  if (/<(?:note|footnote)\b/u.test(raw) === false) return raw;
+  const explicit = explicitPageBreaks(node);
+  return raw.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    note => (note.match(/<pb\b[^>]*\/>/gu) ?? [])
+      .filter(pageBreak => explicit.has(pageBreakKey(pageBreak)) === false)
+      .join(''));
+};
+
+const serializeVerseLines = node => {
+  const serialized = serializeWithoutNoteText(node);
+  return ['note', 'footnote'].includes(node.parentNode?.nodeName)
+    ? serialized.replace(/<br\s*\/>\r?\n?/gu, '\n')
+    : serialized;
+};
+
 const stripNotes = text =>
   text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
 
@@ -108,14 +148,7 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
 };
 
 const splitBodyPages = (body, { noteNeutral = false } = {}) => {
-  const raw = serializeChildren(body);
-  const bodyBreaks = new Set(stripNotes(raw).match(/<pb\b[^>]*\/>/g) ?? []);
-  const serialized = noteNeutral ? raw.replace(
-    /<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g,
-    note => (note.match(/<pb\b[^>]*\/>/g) ?? [])
-      .filter(pageBreak => bodyBreaks.has(pageBreak) === false)
-      .join(''),
-  ) : raw;
+  const serialized = noteNeutral ? serializeWithoutNoteText(body) : serializeChildren(body);
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
   let cursor = 0;
@@ -309,6 +342,9 @@ export {
   buildPageInventory,
   directChild,
   elementChildren,
+  inheritedNotePageBreaks,
+  isPoetryBlock,
+  serializeVerseLines,
   normalizeLine,
   parseSimplePages,
   parseXml,

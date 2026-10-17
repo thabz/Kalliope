@@ -116,13 +116,18 @@ const findCommonPoetryIndentationFindings = ({
 
   while ((textMatch = textRegexp.exec(data)) != null) {
     const text = textMatch[0];
+    const textWithoutNotes = text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+      note => note.replace(/[^\n]/g, ' '));
     const textId = firstMatch(text, /^<text\b[^>]*\sid="([^"]+)"/u);
     const verseLines = [];
     const poetryRegexp = /<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu;
     let poetryMatch;
 
-    while ((poetryMatch = poetryRegexp.exec(text)) != null) {
-      const poetry = poetryContentForIndentation(poetryMatch[1]);
+    while ((poetryMatch = poetryRegexp.exec(textWithoutNotes)) != null) {
+      const contentOffset = poetryMatch.index + poetryMatch[0].indexOf(poetryMatch[1]);
+      const poetry = poetryContentForIndentation(
+        text.slice(contentOffset, contentOffset + poetryMatch[1].length),
+      );
       const poetryStart =
         textMatch.index +
         poetryMatch.index +
