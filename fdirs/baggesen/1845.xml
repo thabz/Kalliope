@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1845" author="baggesen" status="incomplete" type="poetry">
+<workhead>
+  <title>Danske Værker</title>
+  <year>1845–1847</year>
+  <notes>
+    <note>Anden udgave ved August Baggesen i tolv bind. Kun et udvalg af udgavens tekster er indlagt.</note>
+  </notes>
+  <source>
+    <author id="baggesen">Jens Baggesen</author>
+    <title>Jens Baggesens danske Værker</title>
+    <editor>August Baggesen</editor>
+    <edition>2. udgave</edition>
+    <volume>1–12</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>C. A. Reitzel</publisher>
+    <printer>Bianco Lunos Bogtrykkeri</printer>
+    <year>1845–1847</year>
+  </source>
+</workhead>
+<workbody>
+<subwork ref="1845-1"/>
+<subwork ref="1845-2"/>
+<subwork ref="1845-3"/>
+<subwork ref="1845-4"/>
+<subwork ref="1845-5"/>
+<subwork ref="1845-6"/>
+<subwork ref="1845-7"/>
+<subwork ref="1845-8"/>
+<subwork ref="1845-9"/>
+<subwork ref="1845-10"/>
+<subwork ref="1845-11"/>
+<subwork ref="1845-12"/>
+</workbody>
+</kalliopework>
