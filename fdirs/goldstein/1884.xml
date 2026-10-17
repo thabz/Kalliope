@@ -4,7 +4,6 @@
   <title>Sprængte Lænker</title>
   <year>1884</year>
   <notes>
-    <note>Udgivet under pseudonymet Alexander Herz.</note>
     <note>Samlingens motto ,,Der Mensch ist frei geschaffen, ist frei, / Und würd' er in Ketten geboren, / Lasst euch nicht irren iles Pöbels Geschrei, / Nicht den Missbrauch rasender Thoren! / Vor dem Sklaven, wenn er die Kette bricht, / Vor dem freien Menschen erzittert nicht!'' stammer fra Schillers <xref poem="schiller2019041001,7-12"/>.</note>
   </notes>
   <pictures>
@@ -13,7 +12,13 @@
   </pictures>
   <!-- TODO: Indsat tegningen foran Kupido i Lænker -->
   <!-- TODO: Angiv mottoet foran Kupido i Lænker -->
-  <source facsimile="00007.pdf" facsimile-pages-num="92" facsimile-pages-offset="5">Emanuel Goldstein: <i>Sprængte Lænker</i>, E.L. Thaarup, Kbh., 1884.</source>
+  <source facsimile="00007.pdf" facsimile-pages-num="92" facsimile-pages-offset="5">
+    <author id="goldstein" realname="Emanuel Goldstein">Alexander Herz</author>
+    <title>Sprængte Lænker</title>
+    <place>Kbh.</place>
+    <publisher>E.L. Thaarup</publisher>
+    <year>1884</year>
+  </source>
 </workhead>
 <workbody>
 

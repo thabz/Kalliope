@@ -18,6 +18,7 @@ import {
 import { poetName } from './formatting.js';
 import { imageSizeSync } from './image.js';
 import { mapLimit } from './concurrency.js';
+import { escapeXml, parseSourceBibliography } from './source.js';
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -299,10 +300,7 @@ const getNoteType = note => {
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
   const notes = getChildByTagName(head, 'notes');
-  if (notes == null) {
-    return [];
-  }
-  return getChildrenByTagName(notes, 'note').map(note => {
+  const resultNotes = (getChildrenByTagName(notes, 'note') ?? []).map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
     const type = getNoteType(note);
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
@@ -327,6 +325,21 @@ const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
     }
     return result;
   });
+  if (head?.tagName === 'workhead') {
+    const pseudonyms = new Set(getChildrenByTagName(head, 'source').flatMap(source =>
+      (parseSourceBibliography(source)?.authors ?? [])
+        .filter(author => author.realname != null)
+        .map(author => author.name)
+    ));
+    for (const pseudonym of pseudonyms) {
+      resultNotes.push({
+        type: null,
+        content_lang: 'da',
+        content_html: htmlToXml(`Udgivet under pseudonymet ${escapeXml(pseudonym)}.`, collected),
+      });
+    }
+  }
+  return resultNotes;
 };
 
 const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
