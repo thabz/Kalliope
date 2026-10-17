@@ -242,6 +242,21 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
   gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
   vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- `author` kan have `realname="…"` ved udgivelse under pseudonym eller en anden
+  navneform. Elementets tekst er udgivelsesnavnet, og `realname` er det navn,
+  der vises i parentes: `<author id="larsent" realname="Thøger Larsen">Thøger
+  Underbjerg</author>` vises som »Thøger Underbjerg (Thøger Larsen)«.
+  Attributten skal indeholde ikke-tom tekst og må kun bruges på `author`.
+  Visningen fungerer med og uden `id`; parentesnavnet hentes aldrig fra
+  `info.xml`. Uden `realname` er navnevisningen uændret. Kontrollér altid den
+  konkrete udgaves navneangivelse, også ved genoptryk.
+- For hver forskellig forfattertekst med `realname` i en struktureret
+  værkkilde under `workhead` dannes automatisk værknoten »Udgivet under
+  pseudonymet Thøger Underbjerg.« Navnet kommer fra `author`-teksten. Gentages
+  samme pseudonym i flere værkkilder, vises noten kun én gang. Teksternes egne
+  kilder skaber ikke værknoter. Gem ikke den automatiske note som en ekstra
+  XML-note: fjern eksisterende manuelle dubletter ved konvertering, men bevar
+  andre oplysninger i blandede noter, fx et titelbladsmotto.
 - Når en værkkilde i `workhead` angiver `author/@id` eller `translator/@id`,
   skal mindst ét af disse id'er matche `kalliopework/@author`. Ved en oversættelse
   kan værkets digter være oversætteren. Kontrollen gælder hver værkkilde særskilt;
@@ -269,7 +284,9 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 
 JSON-API'et bevarer `source` som formatteret kilde og tilføjer valgfrit
 `bibliography`. Personrollerne hedder `authors`, `editors` og `translators`
-og er arrays med `name` og valgfrit `id`. Øvrige felter har XML-felternes navne
+og er arrays med `name` og valgfrit `id`. Forfattere bevarer desuden `realname`
+som et særskilt valgfrit felt; `name` indeholder kun udgivelsesnavnet.
+Øvrige felter har XML-felternes navne
 og er strenge. Manglende felter udelades. Biografier og bulkdatasættet bruger
 fortsat deres eksisterende format.
 
@@ -280,6 +297,11 @@ personnavne linkes som i »Kilde«, og publikationens titel linkes til det
 konkrete værk, også for antologier, tidsskrifter og aviser. Bind forkortes til
 `bd.` i disse henvisninger; »Kilde« bevarer `bind`. Sidetal tilføjes med `s.`
 og tankestreg i intervaller i begge sektioner.
+
+Begge sektioner viser også `realname` i parentes, inklusive ved kildearv fra
+værk til tekst. Parser- og schematests afviser tomme `realname`-værdier;
+renderingstests dækker personlink, manglende id, kildearv, automatiske noter
+og fjernelse af manuelle dubletter i de konverterede værker.
 
 Fritekstkilder bevares, og den første kursiverede titel linkes til værket,
 når den ikke allerede indeholder et link. Mangler kildeangivelsen, bruges

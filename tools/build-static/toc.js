@@ -162,7 +162,7 @@ const build_works_toc = async (collected) => {
       return {
         lines: [],
         toc: [],
-        notes: [],
+        notes,
         errata,
         pictures: [],
       };
@@ -180,6 +180,8 @@ const build_works_toc = async (collected) => {
     const poetWorksModified =
       isFileModified(
         'tools/build-static/toc.js',
+        'tools/build-static/parsing.js',
+        'tools/build-static/source.js',
         'common/worksort.js',
         'tools/errata.js',
         'tools/build-static/anthologies.js',

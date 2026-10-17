@@ -166,6 +166,10 @@ export const parseSourceBibliography = sourceNode => {
       const role = personRoles[child.tagName];
       const id = safeGetAttr(child, 'id');
       const type = safeGetAttr(child, 'type');
+      const realname = safeGetAttr(child, 'realname')?.trim();
+      if (realname != null && (child.tagName !== 'author' || realname.length === 0)) {
+        throw new Error('Bibliografisk realname kræver ikke-tom tekst på <author>.');
+      }
       if (type != null && (child.tagName !== 'editor' || type !== 'editor')) {
         throw new Error(`Ugyldig bibliografisk persontype: ${type}.`);
       }
@@ -174,6 +178,7 @@ export const parseSourceBibliography = sourceNode => {
         name: value,
         ...(id == null ? {} : { id }),
         ...(type == null ? {} : { type }),
+        ...(realname == null ? {} : { realname }),
       });
     } else if (bibliographyFields.includes(child.tagName)) {
       if (bibliography[child.tagName] != null) {
@@ -199,7 +204,8 @@ export const formatSourceBibliography = (bibliography, poets = new Map(), {
   volumeLabel = 'bind',
 } = {}) => {
   const personName = person => {
-    const name = escapeXml(person.name);
+    const name = escapeXml(person.name) +
+      (person.realname == null ? '' : ` (${escapeXml(person.realname)})`);
     return person.id != null && poets.has(person.id)
       ? `<a poet="${escapeXml(person.id)}">${name}</a>` : name;
   };
