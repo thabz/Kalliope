@@ -1,0 +1,862 @@
+{
+  "opgave": "#1919:36 danske kandidater",
+  "afgrænsning": "35 personer har fået kildetekst; Rode er uafklaret på grund af manglende sikker identifikation. Moderne oversigter er kun lokalisatorer. Søgebeskrivelser nedenfor er afgrænsede undersøgelser og beviser ikke generelt fravær i alle historiske kilder.",
+  "personer": [
+    {
+      "id": "hildebrandt",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Magister-Stat (1945), under redaktion af C. L. Henrichsen, E. Bjørn Hansen og J. Øbro Ravn, s. 95, hele det faktuelle personopslag.",
+        "url": "https://slaegtsbibliotek.dk/927401.pdf#page=110"
+      },
+      "genbrugsgrundlag": "Rent faktuelt personregisteropslag: navne, datoer, uddannelse, embeder og værkliste; uden individuelt formuleret beskrivende prosa. Katalogbeskyttelsens15år er udløbet; ikke en anonym70årsregel."
+    },
+    {
+      "id": "nielsenm",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 3235.",
+        "url": "https://runeberg.org/salmonsen/4/1207.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "walleen",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Neiiendam: Dansk Biografisk Leksikon, 2. udgave, bind 25 (1943), s. 72, personafsnittet om Carl Alphonse Walleen-Bornemann i artiklen »Walleen, Sophie (Soffy) Christine Elisabeth«.",
+        "url": "https://www.rosekamp.dk/DBL_All/DBL_25_text.pdf#page=72"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "DBL2, tilladt historisk udgave efter docs/xml-biographies-format.md § Ophavsret og DBL-udgaver."
+    },
+    {
+      "id": "agerskov",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Th. Hauch-Fausbøll: Studenterne 1889–1914. Biografier og Portræter (1914), s. 68.",
+        "url": "https://www.ronlev.dk/bibliotek/2673.pdf#page=78"
+      },
+      "genbrugsgrundlag": "Th.Hauch-Fausbøll1879–1948; 70årsfristen er udløbet."
+    },
+    {
+      "id": "alsted",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Torkil Baumgarten: Borgerlige Familier. En Samling af Genealogier (1910), s. 111–112, hele det faktuelle personafsnit om Peter Christen Alsted med barn i »Familien Sebbelov«.",
+        "url": "https://www.ronlev.dk/bibliotek/2253.pdf#page=113"
+      },
+      "genbrugsgrundlag": "Rent faktuelt personregisteropslag: navne, datoer, uddannelse, embeder og værkliste; uden individuelt formuleret beskrivende prosa. Katalogbeskyttelsens15år er udløbet; ikke en anonym70årsregel."
+    },
+    {
+      "id": "andersenniels",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "A. S. [Povl Frederik Barfod]: Poetisk Læsebog for Børn og barnlige Sjæle (1835–1836), »Biografiske Smaating om Forfatterne«, s. 443, nr. 2. Tallet 20 henviser til digtets nummer i antologien.",
+        "url": "https://www.kb.dk/e-mat/dod/115308007267.pdf#page=472"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "bachjn",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "H. Ehrencron-Müller: Forfatterlexikon omfattende Danmark, Norge og Island indtil 1814, bind 1 (1924), s. 184. Komplet bibliografisk personopslag.",
+        "url": "https://runeberg.org/hemforf/1/0202.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst.",
+      "begrænsning": "Ehrencron-Müllers fulde opslag er rent bibliografisk og indeholder ingen fødsels-, døds- eller levnedsdata. Identiteten er kontrolleret gennem værktitlerne; posten udgør derfor ikke en fuld levnedsskildring."
+    },
+    {
+      "id": "bange",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 1 (1959), s. 65, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947702.pdf#page=79"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "bech",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 358.",
+        "url": "https://runeberg.org/salmonsen/4/0154.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "conradsen",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Usigneret indledning i Karl Conradsen: Anakreontiske Digte (1908), hele det upaginerede indledningsblad, billedside 17.",
+        "url": "https://kalliope.org/facsimiles/conradsen/130023573521-color/016.jpg"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Usigneret selvstændig tekst offentliggjort1908; publikationsfristen er udløbet."
+    },
+    {
+      "id": "eltzholtz",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 1 (1959), s. 311, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947702.pdf#page=325"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "ewaldt",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Th. Lind: Gyldendals Forfatter-Lexikon (1915), s. 41.",
+        "url": "https://archive.org/details/gyldendalsforfat00lind/page/41/mode/1up"
+      },
+      "genbrugsgrundlag": "Th.Lind er Theodor Krarup Lind1882–1920. Soraner-Bladet5.aarg(1920)s15 knytter udtrykkeligt GyldendalsForfatterleksikon til ham: https://slaegtsbibliotek.dk/2024/943642.pdf#page=440 (originalscan set). Dødsdato20.5.1920: Studenternefra1901s144 https://slaegtsbibliotek.dk/931010.pdf. Hans 70årsfrist er udløbet."
+    },
+    {
+      "id": "grove",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Kraks1913–16 er konkret videre spor. DBL2s artikel om faderen Peter Vilhelm Grove, bd8s337, omtaler ikke Johan Grove."
+    },
+    {
+      "id": "hermann",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 1871.",
+        "url": "https://runeberg.org/salmonsen/4/0710.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "hjernoe",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Th. Lind: Gyldendals Forfatter-Lexikon (1915), s. 62.",
+        "url": "https://archive.org/details/gyldendalsforfat00lind/page/62/mode/1up"
+      },
+      "genbrugsgrundlag": "Th.Lind er Theodor Krarup Lind1882–1920. Soraner-Bladet5.aarg(1920)s15 knytter udtrykkeligt GyldendalsForfatterleksikon til ham: https://slaegtsbibliotek.dk/2024/943642.pdf#page=440 (originalscan set). Dødsdato20.5.1920: Studenternefra1901s144 https://slaegtsbibliotek.dk/931010.pdf. Hans 70årsfrist er udløbet."
+    },
+    {
+      "id": "hoffmeyers",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Studenterne fra 1904. Selvbiografiske og biografiske Oplysninger (1929), udgivet ved H. Grønvold og F. Elle Jensen, s. 54, hele opslaget om Svend Elin Hoffmeyer.",
+        "url": "https://slaegtsbibliotek.dk/927485.pdf#page=54"
+      },
+      "genbrugsgrundlag": "1929-samlingens forord oplyser, at levende studenter indsendte egne selvbiografier; Hoffmeyer døde1951. Opslaget er usigneret og den rent faktuelle CVtekst er også langt ældre end katalogbeskyttelsesfristen. Udgiverne krediteres som udgivere, ikke som sikre artikelautorer."
+    },
+    {
+      "id": "jensenm",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 2196.",
+        "url": "https://runeberg.org/salmonsen/4/0826.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "joergensenl",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 87, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=99"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "kie",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 103, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=115"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "kokm",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Salmonsen4 Kok er Laurids, ikke Martin. Lauritz Nielsens manuskriptkatalog1943 er bibliografisk spor, ikke kontrolleret personartikel."
+    },
+    {
+      "id": "lundotto",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 244, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=256"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "lyhne",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 250, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=262"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "meier",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Usigneret biografisk forord i Johannes Meier: Digte og Breve (1905), upagineret blad, billedside 13.",
+        "url": "https://kalliope.org/facsimiles/meier/115208043270_color/012.jpg"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Usigneret selvstændig tekst offentliggjort1905; publikationsfristen er udløbet."
+    },
+    {
+      "id": "moltesen",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Fred. Nørgaard: Dansk Biografisk Leksikon, 2. udgave, bind 16 (1939), s. 33, det selvstændige personafsnit om Erik Moltesen i artiklen »Moltesen, Eva Elisabeth«.",
+        "url": "https://www.rosekamp.dk/DBL_All/DBL_16_text.pdf#page=33"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "DBL2, tilladt historisk udgave efter docs/xml-biographies-format.md § Ophavsret og DBL-udgaver."
+    },
+    {
+      "id": "munchp",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 3112.",
+        "url": "https://runeberg.org/salmonsen/4/1160.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "nielsena",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 13, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=21"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "preetzmann",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Th. H. Erslew: Almindeligt Forfatter-Lexicon, Supplement, bind 1 (1858), s. 293–294, hele det bibliografiske opslag »Caralis« (Christian Preetzmanns pseudonym).",
+        "url": "https://runeberg.org/almiforf/sup1/0303.html"
+      },
+      "genbrugsgrundlag": "Th.H.Erslew1795–1870; fristen udløbet. Dette er et rent bibliografisk personopslag, ikke en levnedsskildring.",
+      "kilder": [
+        {
+          "tekst": "Th. H. Erslew: Almindeligt Forfatter-Lexicon, Supplement, bind 1 (1858), s. 293–294, hele det bibliografiske opslag »Caralis« (Christian Preetzmanns pseudonym).",
+          "url": "https://runeberg.org/almiforf/sup1/0303.html"
+        },
+        {
+          "tekst": "A. Falk-Jensen og H. Hjorth-Nielsen: Candidati og examinati juris 1736–1936, Candidati politices 1852–1936, Candidati actuarii 1922–1936, bind 3 (1957), s. 362–363, hele det faktuelle personopslag.",
+          "url": "https://slaegtsbibliotek.dk/922599.pdf#page=367"
+        }
+      ],
+      "begrænsning": "Erslews opslag om pseudonymet Caralis er rent bibliografisk. Den særskilte kildebiografi fra Candidati og examinati juris indeholder personens faktuelle levnedsdata."
+    },
+    {
+      "id": "rasmussenaa",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 3724.",
+        "url": "https://runeberg.org/salmonsen/4/1382.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    },
+    {
+      "id": "rasmussenf",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 142, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=150"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "rode",
+      "dato": "2026-10-18",
+      "status": "uafklaret",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        },
+        {
+          "udgave": "Digter-Krands (1826), s. 92",
+          "url": "https://www.kb.dk/e-mat/dod/115308013585-color.pdf",
+          "metode": "Kalliopes eksisterende tekst og kildehenvisning identificerer kun efternavnet Rode. Samlingens år udelukker Helge Rode (1870–1937). Ingen biografi indsat på dette grundlag."
+        },
+        {
+          "udgave": "Sange og Digte til Danmarks Melodier, s. 146, nr. 128",
+          "url": "https://www.kb.dk/e-mat/dod/115308017772.pdf",
+          "metode": "Det søgbare tekstlag til samme sang kontrolleret; kun efternavnet Rode er anført. Dette er et identitetsspor, ikke en facsimilekontrolleret biografikilde."
+        },
+        {
+          "udgave": "N. T. Bruun: Bacchus og Comus (1814), s. 108",
+          "url": "https://kalliope.org/da/text/bruunnt2018122065",
+          "metode": "Kalliopes kildebelagte tekst bruger sangens førstelinje som melodiangivelse. Sangen eksisterede dermed senest 1814; dette identificerer ikke forfatterens fornavn."
+        },
+        {
+          "udgave": "Palsbo viseregistrant, titel- og begyndelseslinjeregister",
+          "url": "https://img.kb.dk/export/sites/kb_dk/da/nb/fag/dafos/pdf/Palsbo_Titel.pdf",
+          "metode": "Målrettet søgning efter Hvor Fader Evan; melodien brugt i balviser 1811 og 1813, men de viste træf giver ikke originalforfatterens fulde navn."
+        },
+        {
+          "udgave": "Ehrencron-Müller, Forfatterlexikon; Halvorsen, Norsk Forfatter-Lexikon, bind 4, s. 580",
+          "url": "https://runeberg.org/halvforf/4/",
+          "metode": "Hans Henrik Rode-sporet fulgt til den norske militærpersons artikel. Den undersøgte artikel forbinder ikke personen med sangen. Navnelighed er ikke tilstrækkelig identifikation."
+        },
+        {
+          "udgave": "Webindeksering, målrettede søgninger 18. oktober 2026",
+          "url": "https://www.kb.dk/",
+          "metode": "Søgninger på \"Hvor Fader Evan\" Rode, \"Hvor Fader Evan\" forfatter og Rode Evan sangdigter gav sanggenoptryk, melodihenvisninger og Kalliope, men ingen sikker fuld identifikation. Dette er en afgrænset indekssøgning, ikke bevis for fravær i alle trykte kilder."
+        }
+      ],
+      "resultat": "Ingen sikkert identificeret personbiografi fundet inden for de dokumenterede spor. Sangens forfatter står kun som Rode; navnebrødrene Helge Rode og Hans Henrik Rode kan ikke indsættes uden belæg. Ingen tekst er derfor indsat for denne person.",
+      "begrænsning": "Identitetsblokering, ikke konstateret mangel på historiske biografier. En ukendt forfatteridentitet kan ikke afsluttes ved at vælge en kendt navnebror. Eksisterende tekst er ikke skjult."
+    },
+    {
+      "id": "rosenfeld",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Erik Zahle: Dansk Biografisk Leksikon, 2. udgave, bind 11 (1937), s. 288, de biografiske oplysninger om Rosalie Rosenfeld i artiklen »Jacobsen, Emil Itzig Levin«.",
+        "url": "https://www.rosekamp.dk/DBL_All/DBL_11_text.pdf#page=288"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "DBL2, tilladt historisk udgave efter docs/xml-biographies-format.md § Ophavsret og DBL-udgaver."
+    },
+    {
+      "id": "sandvad",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "kilde": {
+        "tekst": "Magister-Stat (1926), redigeret af Cai Hegermann-Lindencrone og C. L. Henrichsen, s. 216, hele det faktuelle personopslag.",
+        "url": "https://slaegtsbibliotek.dk/927324.pdf#page=227"
+      },
+      "genbrugsgrundlag": "Rent faktuelt personregisteropslag: navne, datoer, uddannelse, embeder og værkliste; uden individuelt formuleret beskrivende prosa. Katalogbeskyttelsens15år er udløbet; ikke en anonym70årsregel."
+    },
+    {
+      "id": "strunk",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 326, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=334"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "waagner",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 401, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=409"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "wandallfr",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "kilde": {
+        "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 404, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
+        "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=412"
+      },
+      "genbrugsgrundlag": "Rent faktuelt CV/personregisterafsnit med navne, datoer, familieforhold, uddannelse, stillinger og handlinger; ingen individuelt formuleret vurderende prosa. Katalogbeskyttelsens 15 år er udløbet. Grundlaget er faktuelle oplysninger, ikke en anonym 70-årsregel."
+    },
+    {
+      "id": "weltzer",
+      "dato": "2026-10-18",
+      "status": "indsat",
+      "undersøgt": [
+        {
+          "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
+          "url": "https://www.rosekamp.dk/DBL_All/",
+          "metode": "Alle27 PDF-tekstlag lokalt; målrettet efternavns-/fuldnavnssøgning samt udvalgte familiemedlemmer. Ikke en visuel blad-for-blad-gennemgang; OCR/linjedeling kan skjule træf."
+        },
+        {
+          "udgave": "Den nye Salmonsen,4.udgave(1949)",
+          "url": "https://www.rosekamp.dk/Salmonsen_1949_web/start.htm",
+          "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
+        }
+      ],
+      "kilde": {
+        "tekst": "Den nye Salmonsen, 4. udgave (1949), sp. 4850.",
+        "url": "https://runeberg.org/salmonsen/4/1793.html"
+      },
+      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
+    }
+  ]
+}
