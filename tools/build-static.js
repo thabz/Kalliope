@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { changedDateTextIds } from './build-static/related-dates.js';
 import { execSync } from 'child_process';
 import path from 'path';
 import mkdirp from 'mkdirp';
@@ -275,6 +276,7 @@ const handle_text = async (
   ];
   if (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
+    collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'common/source-reference.js', ...sourceFiles)
@@ -948,6 +950,7 @@ const works_first_pass = (collected) => {
   const dates = globalForceReload
     ? new Map()
     : new Map(loadCachedJSON('collected.dates') || []);
+  const previousDates = structuredClone(dates);
 
   let found_changes = false;
   const anthologyCodeModified = isFileModified(
@@ -1227,6 +1230,8 @@ const works_first_pass = (collected) => {
     works.set(fullWorkId, data);
   });
 
+  sortCollectedDates(dates);
+  collected.changedDateTextIds = changedDateTextIds(previousDates, dates);
   if (found_changes || anthologyCodeModified) {
     writeCachedJSON('collected.texts', Array.from(texts));
     writeCachedJSON('collected.works', Array.from(works));
@@ -1285,8 +1290,11 @@ const works_second_pass = async (collected) => {
         collected.poetMetadataDirty?.has(text.poetId)
       );
       const sourceChanged = collected.changedSourceWorkKeys.has(`${poetId}/${workId}`);
+      const relatedDatesChanged = sourceTexts.some(text =>
+        collected.changedDateTextIds.has(text.sourceTextId ?? text.id)
+      );
       const sourceFilesModified = isFileModified(...sourceFiles);
-      if (sourceChanged === false && !poetMetadataModified && sourceFilesModified === false) {
+      if (sourceChanged === false && !poetMetadataModified && sourceFilesModified === false && relatedDatesChanged === false) {
         return;
       }
       let doc = loadXMLDoc(filename);
