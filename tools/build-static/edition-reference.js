@@ -35,16 +35,18 @@ export const resolveEditionSource = ({ sourceNode, workSources, poets }) => ({
 export const buildEditionReference = (meta, collected) => {
   const poet = poetName(collected.poets.get(meta.poetId));
   const workId = sourceWorkKey(meta);
+  const publicationWorkId = (meta.sourceWorkId ?? meta.workId) === 'andre' ? null : workId;
   const work = collected.works.get(workId);
   const source = meta.editionSource ?? {};
   let reference;
   if (source.bibliography != null) {
     reference = formatSourceBibliography(source.bibliography, collected.poets, {
-      workId, volumeLabel: 'bd.',
+      workId: publicationWorkId, volumeLabel: 'bd.',
     });
   } else if (source.source != null && source.source.trim().length > 0) {
     // Keep free-form sources intact, linking their first italic title when safe.
-    reference = linkLegacyTitle(source.source, workId);
+    reference = publicationWorkId == null
+      ? source.source : linkLegacyTitle(source.source, publicationWorkId);
   } else {
     const publicationHasAuthor = collected.poets.get(work.poet_id ?? meta.poetId)?.type !== 'collection';
     const bibliography = {

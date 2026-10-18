@@ -107,6 +107,26 @@ describe('other edition citations', () => {
       .toContain('<a work="oehlenschlaeger/bd24"><i>Digte</i></a>.');
   });
 
+  it.each([
+    '<source pages="67-76"><i>Danfana</i> 1816, bind I.</source>',
+    '<source pages="67-76"><title>Danfana</title><volume>I</volume><year>1816</year></source>',
+  ])('does not link an external publication title to Andre digte (%s)', xml => {
+    const data = {
+      ...collected,
+      works: new Map([['oehlenschlaeger/andre', { id: 'andre', title: 'Andre digte' }]]),
+    };
+    const ref = buildEditionReference({
+      ...meta,
+      workId: 'andre',
+      editionSource: resolveEditionSource({ sourceNode: parse(xml), workSources: new Map(), poets: data.poets }),
+    }, data);
+    const html = render(ref.citation);
+    expect(html).toContain('<i>Danfana</i>');
+    expect(html).toContain('s. 67–76.');
+    expect(html).toContain(`href="/da/text/${meta.id}"`);
+    expect(html).not.toContain('/da/work/');
+  });
+
   it('falls back to available author, work title and year without fabricating metadata', () => {
     expect(buildEditionReference(meta, collected).citation).toBe(
       `<a poem="${meta.id}">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Samlede Skrifter, 24. Bind</i></a>, 1861.`
