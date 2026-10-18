@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE kalliopework SYSTEM "../../data/kalliopework.dtd">
 <kalliopework id="amores" author="ovid" status="incomplete" type="poetry">
 <workhead>
   <title>Amores</title>
   <year>ca. -0020</year>
   <notes>
-    <note>Den latinske tekst følger den angivne Perseus-udgave. Tekstkritiske variantnoter i TEI-kilden er udeladt, mens udgavens versnumre er bevaret.</note>
+    <note>Tekstkritiske variantnoter i TEI-kilden er udeladt, mens udgavens versnumre er bevaret.</note>
     <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
   </notes>
-  <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi001">
+  <source href="https://catalog.perseus.org/catalog/urn:cts:latinLit:phi0959.phi001.perseus-lat2">
     <author>P. Ovidius Naso</author>
     <title>Amores, Epistulae, Medicamina faciei femineae, Ars amatoria, Remedia amoris</title>
     <editor type="editor">Rudolf Ehwald</editor>
     <editor type="editor">Rudolph Merkel</editor>
+    <volume>1</volume>
     <place>Leipzig</place>
     <publisher>B. G. Teubner</publisher>
     <year>1907</year>
@@ -21,10 +21,367 @@
 </workhead>
 <workbody>
 
+<text id="ovid2026101801" lang="la">
+<head>
+  <title>Liber I, Elegia I</title>
+  <firstline>Arma gravi numero violentaque bella parabam</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.1/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Arma gravi numero violentaque bella parabam
+    Edere, materia conveniente modis.
+Par erat inferior versus: risisse Cupido
+    Dicitur atque unum surripuisse pedem.
+<num>5</num>'Quis tibi, saeve puer, dedit hoc in carmina iuris?
+    Pieridum vates, non tua turba sumus.
+Quid, si praeripiat flavae Venus arma Minervae,
+    Ventilet accensas flava Minerva faces?
+Quis probet in silvis Cererem regnare iugosis,
+<num>10</num>    Lege pharetratae virginis arva coli?
+Crinibus insignem quis acuta cuspide Phoebum
+    Instruat, Aoniam Marte movente lyram?
+Sunt tibi magna, puer, nimiumque potentia regna;
+    Cur opus adfectas, ambitiose, novum?
+<num>15</num>An, quod ubique, tuum est? tua sunt Heliconia tempe?
+    Vix etiam Phoebo iam lyra tuta sua est?
+Cum bene surrexit versu nova pagina primo,
+    Attenuat nervos proximus ille meos;
+Nec mihi materia est numeris levioribus apta,
+<num>20</num>    Aut puer aut longas compta puella comas.'
+Questus eram, pharetra cum protinus ille soluta
+    Legit in exitium spicula facta meum,
+Lunavitque genu sinuosum fortiter arcum,
+    'Quod' que 'canas, vates, accipe' dixit 'opus!'
+<num>25</num>Me miserum! certas habuit puer ille sagittas.
+    Uror, et in vacuo pectore regnat Amor.
+Sex mihi surgat opus numeris, in quinque residat:
+    Ferrea cum vestris bella valete modis!
+Cingere litorea flaventia tempora myrto,
+<num>30</num>    Musa, per undenos emodulanda pedes!
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101802" lang="la">
+<head>
+  <title>Liber I, Elegia II</title>
+  <firstline>Esse quid hoc dicam, quod tam mihi dura videntur</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.2/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Esse quid hoc dicam, quod tam mihi dura videntur
+    Strata, neque in lecto pallia nostra sedent,
+Et vacuus somno noctem, quam longa, peregi,
+    Lassaque versati corporis ossa dolent?
+<num>5</num>Nam, puto, sentirem, siquo temptarer amore.
+    An subit et tecta callidus arte nocet?
+Sic erit; haeserunt tenues in corde sagittae,
+    Et possessa ferus pectora versat Amor.
+Cedimus, an subitum luctando accendimus ignem?
+<num>10</num>    Cedamus! leve fit, quod bene fertur, onus.
+Vidi ego iactatas mota face crescere flammas
+    Et rursus nullo concutiente mori.
+Verbera plura ferunt, quam quos iuvat usus aratri,
+    Detractant prensi dum iuga prima boves.
+<num>15</num>Asper equus duris contunditur ora lupatis,
+    Frena minus sentit, quisquis ad arma facit.
+Acrius invitos multoque ferocius urget
+    Quam qui servitium ferre fatentur Amor.
+En ego confiteor! tua sum nova praeda, Cupido;
+<num>20</num>    Porrigimus victas ad tua iura manus.
+Nil opus est bello — veniam pacemque rogamus;
+    Nec tibi laus armis victus inermis ero.
+Necte comam myrto, maternas iunge columbas;
+    Qui deceat, currum vitricus ipse dabit,
+<num>25</num>Inque dato curru, populo clamante triumphum,
+    Stabis et adiunctas arte movebis aves.
+Ducentur capti iuvenes captaeque puellae;
+    Haec tibi magnificus pompa triumphus erit.
+Ipse ego, praeda recens, factum modo vulnus habebo
+<num>30</num>    Et nova captiva vincula mente feram.
+Mens Bona ducetur manibus post terga retortis,
+    Et Pudor, et castris quidquid Amoris obest.
+Omnia te metuent; ad te sua bracchia tendens
+    Vulgus 'io' magna voce 'triumphe!' canet.
+<num>35</num>Blanditiae comites tibi erunt Errorque Furorque,
+    Adsidue partes turba secuta tuas.
+His tu militibus superas hominesque deosque;
+    Haec tibi si demas commoda, nudus eris.
+Laeta triumphanti de summo mater Olympo
+<num>40</num>    Plaudet et adpositas sparget in ora rosas.
+Tu pinnas gemma, gemma variante capillos
+    Ibis in auratis aureus ipse rotis.
+Tunc quoque non paucos, si te bene novimus, ures;
+    Tunc quoque praeteriens vulnera multa dabis.
+<num>45</num>Non possunt, licet ipse velis, cessare sagittae;
+    Fervida vicino flamma vapore nocet.
+Talis erat domita Bacchus Gangetide terra;
+    Tu gravis alitibus, tigribus ille fuit.
+Ergo cum possim sacri pars esse triumphi,
+<num>50</num>    Parce tuas in me perdere, victor, opes!
+Adspice cognati felicia Caesaris arma —
+    Qua vicit, victos protegit ille manu.
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101803" lang="la">
+<head>
+  <title>Liber I, Elegia III</title>
+  <firstline>Iusta precor: quae me nuper praedata puella est</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.3/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Iusta precor: quae me nuper praedata puella est,
+    Aut amet aut faciat, cur ego semper amem!
+A, nimium volui — tantum patiatur amari;
+    Audierit nostras tot Cytherea preces!
+<num>5</num>Accipe, per longos tibi qui deserviat annos;
+    Accipe, qui pura norit amare fide!
+Si me non veterum commendant magna parentum
+    Nomina, si nostri sanguinis auctor eques,
+Nec meus innumeris renovatur campus aratris,
+<num>10</num>    Temperat et sumptus parcus uterque parens —
+At Phoebus comitesque novem vitisque repertor
+    Hac faciunt, et me qui tibi donat, Amor,
+Et nulli cessura fides, sine crimine mores
+    Nudaque simplicitas purpureusque pudor.
+<num>15</num>Non mihi mille placent, non sum desultor amoris:
+    Tu mihi, siqua fides, cura perennis eris.
+Tecum, quos dederint annos mihi fila sororum,
+    Vivere contingat teque dolente mori!
+Te mihi materiem felicem in carmina praebe —
+<num>20</num>    Provenient causa carmina digna sua.
+Carmine nomen habent exterrita cornibus Io
+    Et quam fluminea lusit adulter ave,
+Quaeque super pontum simulato vecta iuvenco
+    Virginea tenuit cornua vara manu.
+<num>25</num>Nos quoque per totum pariter cantabimur orbem,
+    Iunctaque semper erunt nomina nostra tuis.
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101804" lang="la">
+<head>
+  <title>Liber I, Elegia IV</title>
+  <firstline>Vir tuus est epulas nobis aditurus easdem</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.4/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Vir tuus est epulas nobis aditurus easdem —
+    Ultima coena tuo sit, precor, illa viro!
+Ergo ego dilectam tantum conviva puellam
+    Adspiciam? tangi quem iuvet, alter erit,
+<num>5</num>Alteriusque sinus apte subiecta fovebis?
+    Iniciet collo, cum volet, ille manum?
+Desino mirari, posito quod candida vino
+    Atracis ambiguos traxit in arma viros.
+Nec mihi silva domus, nec equo mea membra cohaerent —
+<num>10</num>    Vix a te videor posse tenere manus!
+Quae tibi sint facienda tamen cognosce, nec Euris
+    Da mea nec tepidis verba ferenda Notis!
+Ante veni, quam vir — nec quid, si veneris ante,
+    Possit agi video; sed tamen ante veni.
+<num>15</num>Cum premet ille torum, vultu comes ipsa modesto
+    Ibis, ut accumbas — clam mihi tange pedem!
+Me specta nutusque meos vultumque loquacem;
+    Excipe furtivas et refer ipsa notas.
+Verba superciliis sine voce loquentia dicam;
+<num>20</num>    Verba leges digitis, verba notata mero.
+Cum tibi succurret Veneris lascivia nostrae,
+    Purpureas tenero pollice tange genas.
+Siquid erit, de me tacita quod mente queraris,
+    Pendeat extrema mollis ab aure manus.
+<num>25</num>Cum tibi, quae faciam, mea lux, dicamve, placebunt,
+    Versetur digitis anulus usque tuis.
+Tange manu mensam, tangunt quo more precantes,
+    Optabis merito cum mala multa viro.
+Quod tibi miscuerit, sapias, bibat ipse, iubeto;
+<num>30</num>    Tu puerum leviter posce, quod ipsa voles.
+Quae tu reddideris ego primus pocula sumam,
+    Et, qua tu biberis, hac ego parte bibam.
+Si tibi forte dabit, quod praegustaverit ipse,
+    Reice libatos illius ore cibos.
+<num>35</num>Nec premat inpositis sinito tua colla lacertis,
+    Mite nec in rigido pectore pone caput;
+Nec sinus admittat digitos habilesve papillae;
+    Oscula praecipue nulla dedisse velis!
+Oscula si dederis, fiam manifestus amator
+<num>40</num>    Et dicam 'mea sunt!' iniciamque manum.
+Haec tamen adspiciam, sed quae bene pallia celant,
+    Illa mihi caeci causa timoris erunt.
+Nec femori committe femur nec crure cohaere
+    Nec tenerum duro cum pede iunge pedem.
+<num>45</num>Multa miser timeo, quia feci multa proterve,
+    Exemplique metu torqueor, ecce, mei.
+Saepe mihi dominaeque meae properata voluptas
+    Veste sub iniecta dulce peregit opus.
+Hoc tu non facies; sed, ne fecisse puteris,
+<num>50</num>    Conscia de tergo pallia deme tuo.
+Vir bibat usque roga — precibus tamen oscula desint! —
+    Dumque bibit, furtim si potes, adde merum.
+Si bene conpositus somno vinoque iacebit,
+    Consilium nobis resque locusque dabunt.
+<num>55</num>Cum surges abitura domum, surgemus et omnes,
+    In medium turbae fac memor agmen eas.
+Agmine me invenies aut invenieris in illo:
+    Quidquid ibi poteris tangere, tange, mei.
+Me miserum! monui, paucas quod prosit in horas;
+<num>60</num>    Separor a domina nocte iubente mea.
+Nocte vir includet, lacrimis ego maestus obortis,
+    Qua licet, ad saevas prosequar usque fores.
+Oscula iam sumet, iam non tantum oscula sumet:
+    Quod mihi das furtim, iure coacta dabis.
+<num>65</num>Verum invita dato — potes hoc — similisque coactae;
+    Blanditiae taceant, sitque maligna Venus.
+Si mea vota valent, illum quoque ne iuvet, opto;
+    Si minus, at certe te iuvet inde nihil.
+Sed quaecumque tamen noctem fortuna sequetur,
+<num>70</num>    Cras mihi constanti voce dedisse nega!
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101805" lang="la">
+<head>
+  <title>Liber I, Elegia V</title>
+  <firstline>Aestus erat, mediamque dies exegerat horam</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.5/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Aestus erat, mediamque dies exegerat horam;
+    Adposui medio membra levanda toro.
+Pars adaperta fuit, pars altera clausa fenestrae;
+    Quale fere silvae lumen habere solent,
+<num>5</num>Qualia sublucent fugiente crepuscula Phoebo,
+    Aut ubi nox abiit, nec tamen orta dies.
+Illa verecundis lux est praebenda puellis,
+    Qua timidus latebras speret habere pudor.
+Ecce, Corinna venit, tunica velata recincta,
+<num>10</num>    Candida dividua colla tegente coma —
+Qualiter in thalamos famosa Semiramis isse
+    Dicitur, et multis Lais amata viris.
+Deripui tunicam — nec multum rara nocebat;
+    Pugnabat tunica sed tamen illa tegi.
+<num>15</num>Quae cum ita pugnaret, tamquam quae vincere nollet,
+    Victa est non aegre proditione sua.
+Ut stetit ante oculos posito velamine nostros,
+    In toto nusquam corpore menda fuit.
+Quos umeros, quales vidi tetigique lacertos!
+<num>20</num>    Forma papillarum quam fuit apta premi!
+Quam castigato planus sub pectore venter!
+    Quantum et quale latus! quam iuvenale femur!
+Singula quid referam? nil non laudabile vidi
+    Et nudam pressi corpus ad usque meum.
+<num>25</num>Cetera quis nescit? lassi requievimus ambo.
+    Proveniant medii sic mihi saepe dies!
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101806" lang="la">
+<head>
+  <title>Liber I, Elegia VI</title>
+  <firstline>Ianitor — indignum! — dura religate catena</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.6/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Ianitor — indignum! — dura religate catena,
+    Difficilem moto cardine pande forem!
+Quod precor, exiguum est — aditu fac ianua parvo
+    Obliquum capiat semiadaperta latus.
+<num>5</num>Longus amor tales corpus tenuavit in usus
+    Aptaque subducto pondere membra dedit.
+Ille per excubias custodum leniter ire
+    Monstrat: inoffensos derigit ille pedes.
+At quondam noctem simulacraque vana timebam;
+<num>10</num>    Mirabar, tenebris quisquis iturus erat.
+Risit, ut audirem, tenera cum matre Cupido
+    Et leviter 'fies tu quoque fortis' ait.
+Nec mora, venit amor — non umbras nocte volantis,
+    Non timeo strictas in mea fata manus.
+<num>15</num>Te nimium lentum timeo, tibi blandior uni;
+    Tu, me quo possis perdere, fulmen habes.
+Adspice — uti videas, inmitia claustra relaxa —
+    Uda sit ut lacrimis ianua facta meis!
+Certe ego, cum posita stares ad verbera veste,
+<num>20</num>    Ad dominam pro te verba tremente tuli.
+Ergo quae valuit pro te quoque gratia quondam —
+    Heu facinus! — pro me nunc valet illa parum?
+Redde vicem meritis! grato licet esse quod optas.
+    Tempora noctis eunt; excute poste seram!
+<num>25</num>Excute! sic, inquam, longa relevere catena,
+    Nec tibi perpetuo serva bibatur aqua!
+Ferreus orantem nequiquam, ianitor, audis,
+    Roboribus duris ianua fulta riget.
+Urbibus obsessis clausae munimina portae
+<num>30</num>    Prosunt; in media pace quid arma times?
+Quid facies hosti, qui sic excludis amantem?
+    Tempora noctis eunt; excute poste seram!
+Non ego militibus venio comitatus et armis;
+    Solus eram, si non saevus adesset Amor.
+<num>35</num>Hunc ego, si cupiam, nusquam dimittere possum;
+    Ante vel a membris dividar ipse meis.
+Ergo Amor et modicum circa mea tempora vinum
+    Mecum est et madidis lapsa corona comis.
+Arma quis haec timeat? quis non eat obvius illis?
+<num>40</num>    Tempora noctis eunt; excute poste seram!
+Lentus es: an somnus, qui te male perdat, amantis
+    Verba dat in ventos aure repulsa tua?
+At, memini, primo, cum te celare volebam,
+    Pervigil in mediae sidera noctis eras.
+<num>45</num>Forsitan et tecum tua nunc requiescit amica —
+    Heu, melior quanto sors tua sorte mea!
+Dummodo sic, in me durae transite catenae!
+    Tempora noctis eunt; excute poste seram!
+Fallimur, an verso sonuerunt cardine postes,
+<num>50</num>    Raucaque concussae signa dedere fores?
+Fallimur — inpulsa est animoso ianua vento.
+    Ei mihi, quam longe spem tulit aura meam!
+Si satis es raptae, Borea, memor Orithyiae,
+    Huc ades et surdas flamine tunde foris!
+<num>55</num>Urbe silent tota, vitreoque madentia rore
+    Tempora noctis eunt; excute poste seram!
+Aut ego iam ferroque ignique paratior ipse,
+    Quem face sustineo, tecta superba petam.
+Nox et Amor vinumque nihil moderabile suadent;
+<num>60</num>    Illa pudore vacat, Liber Amorque metu.
+Omnia consumpsi, nec te precibusque minisque
+    Movimus, o foribus durior ipse tuis.
+Non te formosae decuit servare puellae
+    Limina, sollicito carcere dignus eras.
+<num>65</num>Iamque pruinosus molitur Lucifer axes,
+    Inque suum miseros excitat ales opus.
+At tu, non laetis detracta corona capillis,
+    Dura super tota limina nocte iace!
+Tu dominae, cum te proiectam mane videbit,
+<num>70</num>    Temporis absumpti tam male testis eris.
+Qualiscumque vale sentique abeuntis honorem;
+    Lente nec admisso turpis amante, vale!
+Vos quoque, crudeles rigido cum limine postes
+    Duraque conservae ligna, valete, fores!
+</poetry>
+</body>
+</text>
+
 <text id="ovid2026083016">
 <head>
   <title>Liber I, Elegia IX</title>
   <firstline>Militat omnis amans, et habet sua castra Cupido</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.9/" />
   <quality>kilde</quality>
 </head>
 <body>
@@ -75,6 +432,65 @@ Inpulit ignavum formosae cura puellae
 Iussit et in castris aera merere suis.
 <num>45</num>Inde vides agilem nocturnaque bella gerentem.
 Qui nolet fieri desidiosus, amet!
+</poetry>
+</body>
+</text>
+
+<text id="ovid2026101807" lang="la">
+<head>
+  <title>Liber I, Elegia XIII</title>
+  <firstline>Iam super oceanum venit a seniore marito</firstline>
+  <source href="https://beta.perseus.tufts.edu/urn:cts:latinLit:phi0959.phi001.perseus-lat2:1.13/" />
+  <quality>kilde</quality>
+</head>
+<body>
+<poetry>
+Iam super oceanum venit a seniore marito
+    Flava pruinoso quae vehit axe diem.
+'Quo properas, Aurora? mane! — sic Memnonis umbris
+    Annua sollemni caede parentet avis!
+<num>5</num>Nunc iuvat in teneris dominae iacuisse lacertis;
+    Si quando, lateri nunc bene iuncta meo est.
+Nunc etiam somni pingues et frigidus aer,
+    Et liquidum tenui gutture cantat avis.
+Quo properas, ingrata viris, ingrata puellis?
+<num>10</num>    Roscida purpurea supprime lora manu!
+Ante tuos ortus melius sua sidera servat
+    Navita nec media nescius errat aqua;
+Te surgit quamvis lassus veniente viator,
+    Et miles saevas aptat ad arma manus.
+<num>15</num>Prima bidente vides oneratos arva colentes;
+    Prima vocas tardos sub iuga panda boves.
+Tu pueros somno fraudas tradisque magistris,
+    Ut subeant tenerae verbera saeva manus;
+Atque vades sponsum stultos ante Atria mittis,
+<num>20</num>    Unius ut verbi grandia damna ferant.
+Nec tu consulto, nec tu iucunda diserto;
+    Cogitur ad lites surgere uterque novas.
+Tu, cum feminei possint cessare labores,
+    Lanificam revocas ad sua pensa manum.
+<num>25</num>Omnia perpeterer — sed surgere mane puellas,
+    Quis nisi cui non est ulla puella ferat?
+Optavi quotiens, ne nox tibi cedere vellet,
+    Ne fugerent vultus sidera mota tuos!
+Optavi quotiens, aut ventus frangeret axem,
+<num>30</num>    Aut caderet spissa nube retentus equus!
+Invida, quo properas? quod erat tibi filius ater,
+    Materni fuerat pectoris ille color.
+<num>35</num>Tithono vellem de te narrare liceret;
+    Fabula non caelo turpior ulla foret.
+Illum dum refugis, longo quia grandior aevo,
+    Surgis ad invisas a sene mane rotas.
+At si, quem mavis, Cephalum conplexa teneres,
+<num>40</num>    Clamares: "lente currite, noctis equi!"
+Cur ego plectar amans, si vir tibi marcet ab annis?
+    Num me nupsisti conciliante seni?
+Adspice, quot somnos iuveni donarit amato
+    Luna! — neque illius forma secunda tuae.
+<num>45</num>Ipse deum genitor, ne te tam saepe videret,
+    Commisit noctes in sua vota duas.'
+Iurgia finieram. scires audisse: rubebat —
+    Nec tamen adsueto tardius orta dies!
 </poetry>
 </body>
 </text>

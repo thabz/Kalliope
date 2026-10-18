@@ -64,7 +64,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = false }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -75,7 +75,7 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = f
       );
     }
 
-    if (editions === true && ref.citation != null) {
+    if (ref.citation != null) {
       return (
         <div className="reference" key={ref.id}>
           <TextInline contentHtml={[[removeSourcePoetLinks(ref.citation, currentPoetId), { html: true }]]} />
@@ -486,7 +486,6 @@ const TextPage = (props) => {
         <MetadataGroup title={_('Andre udgaver', lang)} printHidden>
           <Refs
             refs={text.variants}
-            editions
             contentLang={text.content_lang}
             currentPoetId={poet.id}
           />

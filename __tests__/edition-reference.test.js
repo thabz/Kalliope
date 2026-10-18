@@ -33,7 +33,7 @@ const render = citation => renderToStaticMarkup(
 );
 
 describe('other edition citations', () => {
-  it('inherits a complete bibliography and renders the issue example with all links', () => {
+  it('inherits a complete bibliography and links only the poem title in the complete bibliography', () => {
     const workSource = resolveSourceReference({ sourceNode: parse(completeSource), poets: collected.poets });
     const ref = edition('<source pages="353-356"/>', new Map([['default', workSource]]));
     const html = render(ref.citation);
@@ -41,9 +41,9 @@ describe('other edition citations', () => {
       '»De to Røvere«, i: Adam Oehlenschläger: Poetiske Skrifter, udg. af F. L. Liebenberg, bd. 24, Kjøbenhavn: Selskabet til Udgivelse af Oehlenschlägers Skrifter, 1861, s. 353–356.'
     );
     expect(html).toContain('href="/da/text/oehlenschlaeger18610101"');
-    expect(html).toContain('href="/da/works/oehlenschlaeger"');
-    expect(html).toContain('href="/da/works/liebenberg"');
-    expect(html).toContain('href="/da/work/oehlenschlaeger/bd24"');
+    expect(html.match(/<a\b/g)).toHaveLength(1);
+    expect(html).not.toContain('href="/da/works/liebenberg"');
+    expect(html).not.toContain('href="/da/work/oehlenschlaeger/bd24"');
     expect(html).toContain('<i>Poetiske Skrifter</i>');
     // The same source retains its existing volume label in Kilde.
     expect(workSource.source).toContain('bind 24');
@@ -55,9 +55,9 @@ describe('other edition citations', () => {
       ['other', resolveSourceReference({ sourceNode: parse('<source><title>Anden Udgave</title><year>1880</year></source>') })],
     ]);
     expect(edition('<source in="other" pages="5"/>', sources).citation)
-      .toContain('<i>Anden Udgave</i></a>, 1880, s. 5.');
+      .toContain('<i>Anden Udgave</i>, 1880, s. 5.');
     const override = edition('<source in="other" pages="7"><title>Tredje Udgave</title></source>', sources);
-    expect(override.citation).toContain('<i>Tredje Udgave</i></a>, s. 7.');
+    expect(override.citation).toContain('<i>Tredje Udgave</i>, s. 7.');
     expect(override.citation).not.toContain('1880');
   });
 
@@ -72,13 +72,13 @@ describe('other edition citations', () => {
   });
 
   it.each([
-    ['<source><title>Bog</title></source>', '<i>Bog</i></a>.'],
-    ['<source><title>Bog</title><publisher>Forlag</publisher></source>', '<i>Bog</i></a>, Forlag.'],
-    ['<source><title>Bog</title><place>Kjøbenhavn</place><year>[1804]</year></source>', '<i>Bog</i></a>, Kjøbenhavn, [1804].'],
-    ['<source><title>Bog</title><printer>Trykkeri</printer></source>', '<i>Bog</i></a>, trykt hos Trykkeri.'],
+    ['<source><title>Bog</title></source>', '<i>Bog</i>.'],
+    ['<source><title>Bog</title><publisher>Forlag</publisher></source>', '<i>Bog</i>, Forlag.'],
+    ['<source><title>Bog</title><place>Kjøbenhavn</place><year>[1804]</year></source>', '<i>Bog</i>, Kjøbenhavn, [1804].'],
+    ['<source><title>Bog</title><printer>Trykkeri</printer></source>', '<i>Bog</i>, trykt hos Trykkeri.'],
   ])('omits missing bibliographic fields cleanly (%s)', (xml, ending) => {
     expect(edition(xml).citation).toBe(
-      `<a poem="${meta.id}">»De to Røvere«</a>, i: <a work="oehlenschlaeger/bd24">${ending}`
+      `<a poem="${meta.id}">»De to Røvere«</a>, i: ${ending}`
     );
   });
 
@@ -87,24 +87,24 @@ describe('other edition citations', () => {
     const data = { ...collected, works: new Map([['samler/1845', publication]]) };
     const text = { ...meta, sourcePoetId: 'samler', sourceWorkId: '1845' };
     expect(buildEditionReference(text, data).citation).toBe(
-      `<a poem="${meta.id}">»De to Røvere«</a>, i: <a work="samler/1845"><i>Udgivelsen</i></a>, 1845.`
+      `<a poem="${meta.id}">»De to Røvere«</a>, i: <i>Udgivelsen</i>, 1845.`
     );
     const source = resolveEditionSource({
       sourceNode: parse('<source pages="10-12"><title>Udgivelsen</title><editor type="editor">Redaktøren</editor><volume>2</volume><year>1845</year></source>'),
       workSources: new Map(), poets: data.poets,
     });
     expect(buildEditionReference({ ...text, editionSource: source }, data).citation).toContain(
-      '<a work="samler/1845"><i>Udgivelsen</i></a>, red. af Redaktøren, bd. 2, 1845, s. 10–12.'
+      '<i>Udgivelsen</i>, red. af Redaktøren, bd. 2, 1845, s. 10–12.'
     );
   });
 
-  it('keeps legacy source text and links while linking an italic publication title', () => {
+  it('preserves legacy source text and typography while removing bibliography links', () => {
     const ref = edition('<source pages="1-3"><a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <i>Digte</i>, Kjøbenhavn, 1861.</source>');
-    expect(ref.citation).toContain('<a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Digte</i></a>, Kjøbenhavn, 1861, s. 1–3.');
+    expect(ref.citation).toContain('Adam Oehlenschläger: <i>Digte</i>, Kjøbenhavn, 1861, s. 1–3.');
     expect(edition('<source><i><a work="oehlenschlaeger/bd24">Digte</a></i>.</source>').citation)
-      .toContain('<i><a work="oehlenschlaeger/bd24">Digte</a></i>.');
+      .toContain('<i>Digte</i>.');
     expect(edition('<source><a work="oehlenschlaeger/bd24"><i>Digte</i></a>.</source>').citation)
-      .toContain('<a work="oehlenschlaeger/bd24"><i>Digte</i></a>.');
+      .toContain('<i>Digte</i>.');
   });
 
   it.each([
@@ -129,7 +129,7 @@ describe('other edition citations', () => {
 
   it('falls back to available author, work title and year without fabricating metadata', () => {
     expect(buildEditionReference(meta, collected).citation).toBe(
-      `<a poem="${meta.id}">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Samlede Skrifter, 24. Bind</i></a>, 1861.`
+      `<a poem="${meta.id}">»De to Røvere«</a>, i: Adam Oehlenschläger: <i>Samlede Skrifter, 24. Bind</i>, 1861.`
     );
   });
 

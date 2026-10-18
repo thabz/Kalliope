@@ -106,7 +106,7 @@ const facsimileSourceId = pageBreak => {
   const textEntry = textEntryAncestor(pageBreak);
   const head = textEntry == null ? null : directChild(textEntry, 'head');
   const source = head == null ? null : directChild(head, 'source');
-  return source?.getAttribute('in') ?? '';
+  return source?.getAttribute('facsimile') ?? source?.getAttribute('in') ?? '';
 };
 
 const parseWorkXml = xml =>

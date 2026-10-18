@@ -35,7 +35,7 @@ it.each(['id="larsent"', '', 'id="ukendt"'])(
       }, collected).citation;
       for (const reference of [resolved.source, citation]) {
         expect(plain([[reference, { html: true }]])).toContain('Thøger Underbjerg (Thøger Larsen): Vilde Roser');
-        expect(render([[reference, { html: true }]]).includes('href="/da/works/larsent"')).toBe(id === 'id="larsent"');
+        expect(render([[reference, { html: true }]]).includes('href="/da/works/larsent"')).toBe(reference === resolved.source && id === 'id="larsent"');
         expect(reference).not.toContain('Et andet');
       }
       expect(resolved.bibliography.authors[0].realname).toBe('Thøger Larsen');

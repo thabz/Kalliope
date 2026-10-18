@@ -8,13 +8,15 @@
   <toctitle><num>Bind 8.</num>Blandede Digte. Første Afdeling</toctitle>
   <breadcrumbtitle>Bd. 8</breadcrumbtitle>
   <year>1862</year>
-  <notes>
-    <note>I hovedfaksimilet følger side 388 umiddelbart efter side 385. Side 386–387 er suppleret fra et andet eksemplar af samme udgave.</note>
-  </notes>
   <pictures>
     <picture src="1862-8-p1.jpg" type="titlepage" primary="true"><transcription>Johan Ludvig Heibergs / Poetiske Skrifter. / Ottende Bind. // Blandede Digte. Første Afdeling. // Kjøbenhavn. / C. A. Reitzels Forlag. / 1862.</transcription></picture>
   </pictures>
   <source facsimile="1862-8" facsimile-pages-num="404" facsimile-pages-offset="6" href="https://archive.org/details/poetiskeskrifter07heib">
+    <!-- I hovedfaksimilet følger side 388 umiddelbart efter side 385.
+    Side 386–387 er suppleret fra Oxford-eksemplaret af Johan Ludvig Heiberg:
+    Poetiske Skrifter, bind 8, Kjøbenhavn, C. A. Reitzel, 1862.
+    https://archive.org/details/johanludvigheib05heibgoog
+    Supplementets to billeder findes i faksimilet 1862-8-supplement. -->
     <author id="heibergjl">Johan Ludvig Heiberg</author>
     <title>Poetiske Skrifter</title>
     <volume>8</volume>
@@ -22,7 +24,6 @@
     <publisher>C. A. Reitzel</publisher>
     <year>1862</year>
   </source>
-  <source id="oxford-supplement" facsimile="1862-8-supplement" facsimile-pages-num="2" href="https://archive.org/details/johanludvigheib05heibgoog"><author id="heibergjl">Johan Ludvig Heiberg</author><title>Poetiske Skrifter</title><volume>8</volume><place>Kjøbenhavn</place><publisher>C. A. Reitzel</publisher><year>1862</year></source>
   <pagebreaks />
   <proofreadings>
     <proofreading model="gpt-6" datetime="2026-10-18T10:59:43+02:00" />
@@ -45,8 +46,8 @@
 </body>
 </text>
 
-<section id="heibergjl2026101886">
-<head><title><num>I.</num>Blandede Digtninger</title>
+<section>
+<head><title>I. Blandede Digtninger</title>
 </head>
 <content>
 <text id="heibergjl20261018103" skip-index="true">
@@ -675,7 +676,7 @@ Dermed, min Sphinx, maa du tiltakke tage!
   <subtitle>(Efter <w>Geijer</w>.)</subtitle>
   <firstline>Kong Svegder sad ved Julen i sin Halle</firstline>
   <notes>
-    <note unknown-original-by="geijer" />
+    <note>Gendigtning af Erik Gustaf Geijer: <xref type="translation" poem="geijer2026101801" />.</note>
   </notes>
   <source pages="39-42" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -778,7 +779,7 @@ Tilbage Drotten vil — omsonst han viger;
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 13.</span>)</subtitle>
   <firstline>Alt forlader hun nu sin aldrende Ægtemands Leie</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101807" />.</note>
   </notes>
   <source pages="45-47" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -841,7 +842,7 @@ Saadan skjændte jeg lydt; hun hørte det godt, thi hun rødmed,
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 5.</span>)</subtitle>
   <firstline>Luften var brændende hed, og Middagens Time var kommen</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101805" />.</note>
   </notes>
   <source pages="48-49" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -884,7 +885,8 @@ Resten begriber Enhver. Udmattede hviilte vi Begge.
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 4.</span>)</subtitle>
   <firstline>Vi og din Mand skal idag i samme Selskab forsamles</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101804" />.</note>
+    <note>Oversættelsen udelader vers 47–48 af den latinske original.</note>
   </notes>
   <source pages="50-53" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -969,7 +971,8 @@ Dog, hvad ogsaa der skeer, hvad Lykke saa Natten ham bringer,
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 8.</span>)</subtitle>
   <firstline>Du, Dørvogter, som er (o Skjændsel!) bunden med Lænker</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101806" />.</note>
+    <note>Trykkets henvisning til <i>Amores</i> I,8 er fejlagtig; teksten svarer til I,6. I forhold til den latinske udgave fra 1907 står vers 55–56 efter vers 59–60 i oversættelsen.</note>
   </notes>
   <source pages="54-58" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1067,7 +1070,7 @@ Og I grusomme Stolper! du aldrig bøiede Tærskel!
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 1.</span>)</subtitle>
   <firstline>Nys jeg stemte min Streng til Vaaben og blodige Krige</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101801" />.</note>
   </notes>
   <source pages="61-62" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1113,7 +1116,7 @@ Stakkels Muse, som maa halte paa elleve Fod!
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 2.</span>)</subtitle>
   <firstline>Hvoraf kommer det, at saa haardt mig synes mit Leie</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101802" />.</note>
   </notes>
   <source pages="63-65" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1181,7 +1184,7 @@ Lær af din Slægtning! betragt vor Cæsars glimrende Vaaben:
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 3.</span>)</subtitle>
   <firstline>Billig og ret er min Bøn: Lad enten min Elskte mig elske</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026101803" />.</note>
   </notes>
   <source pages="66-67" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1223,7 +1226,7 @@ Ogsaa vi To skal langt i Verden flyve med Sangen,
   <subtitle>(Efter <span lang="la">Ovidii Amorum lib. I, Eleg. 9.</span>)</subtitle>
   <firstline>Elskeren er Soldat, og Cupido drager i Felten</firstline>
   <notes>
-    <note unknown-original-by="ovid" />
+    <note>Gendigtning af Ovid: <xref type="translation" poem="ovid2026083016" />.</note>
   </notes>
   <source pages="68-70" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2697,9 +2700,9 @@ Et Andet, at tilegne sig Moralen.
 </content>
 </section>
 
-<section id="heibergjl2026101887">
+<section>
 <head><suptitle>Blandede Digtninger</suptitle>
-  <title><num>II.</num>Danske Localiteter</title>
+  <title>II. Danske Localiteter</title>
 </head>
 <content>
 <text id="heibergjl20261018101" skip-index="true">
@@ -5634,12 +5637,12 @@ Om Issen krandset af Jetten <w>Grøn</w>.
 </content>
 </section>
 
-<section id="heibergjl2026101888">
+<section>
 <head><title>Lyriske Digte</title>
 </head>
 <content>
 
-<section id="heibergjl2026101889">
+<section>
 <head><title>I</title>
 </head>
 <content>
@@ -6365,7 +6368,8 @@ Vestenvinden bringer dig!
   <subtitle>Af Schillers Maria Stuart.</subtitle>
   <firstline>Sky, du som seiler paa Himmelens Bølge</firstline>
   <notes>
-    <note unknown-original-by="schiller" />
+    <note>Gendigtning af Friedrich Schiller: <xref type="translation" poem="schiller2026101801" />.</note>
+    <note>Oversættelsen samler fire sangstrofer fra tredje akt, første scene af <i>Maria Stuart</i>. Scenens indledende sangstrofe, »Laß mich der neuen Freiheit genießen«, er flyttet til slutningen; de mellemliggende replikker er udeladt.</note>
   </notes>
   <source pages="295-296" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6414,7 +6418,7 @@ Drikke med fulde, tørstige Drag.
 </content>
 </section>
 
-<section id="heibergjl2026101890">
+<section>
 <head><title>II</title>
 </head>
 <content>
@@ -7140,7 +7144,7 @@ Uforandret, og lidt snart.
 </content>
 </section>
 
-<section id="heibergjl2026101891">
+<section>
 <head><title>III</title>
 </head>
 <content>
@@ -8101,7 +8105,7 @@ Graaer da Lokken, er Krandsen dog grøn.
 </content>
 </section>
 
-<section id="heibergjl2026101892">
+<section>
 <head><title>IV</title>
 </head>
 <content>
@@ -8435,7 +8439,7 @@ Men vi kan ene Klagetoner
 <head><suptitle>†</suptitle>
   <title>Paul Martin Møller</title>
   <firstline>Vor tabte Ven! Vi til det Maal dig bringe</firstline>
-  <source pages="386-387" in="oxford-supplement" facsimile-pages="1-2" />
+  <source pages="386-387" facsimile="1862-8-supplement" facsimile-pages-num="2" facsimile-pages="1-2" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
