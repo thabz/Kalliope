@@ -532,7 +532,7 @@ Med venlig Faderrøst skal sige:
   <subtitle>Fabel efter Pfeffel.</subtitle>
   <firstline>Abdallas Lærling, Aladin faldt ned</firstline>
   <notes>
-    <note unknown-original-by="pfeffel"/>
+    <note>Gendigtning af Pfeffels <xref type="translation" poem="pfeffel2026101801"/>.</note>
   </notes>
   <source pages="27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -557,12 +557,20 @@ Har undertiden nok at give.''
 </body>
 </text>
 
+<section author="tode" level="1">
+<head>
+  <title>Epigrammer</title>
+</head>
+<content>
+
 <text id="tode2026101103" author="tode">
 <head>
-  <suptitle>Epigrammer.</suptitle>
   <title><num>1.</num>Bryllups-Tilstaaelsen</title>
   <subtitle>(Oversættelse.)</subtitle>
   <firstline>En Feil jeg bør min Engel aabenbare</firstline>
+  <notes>
+    <note>Gendigtning af Haugs <xref type="translation" poem="haug2026101801"/>.</note>
+  </notes>
   <source pages="28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -581,7 +589,6 @@ Jeg skal dig give Aarsag nok dertil.
 
 <text id="tode2026101104" author="tode">
 <head>
-  <suptitle>Epigrammer.</suptitle>
   <title><num>2.</num>To Gange 30 giør 60</title>
   <subtitle>(Oversættelse.)</subtitle>
   <firstline>I Albany en Irokeser saae</firstline>
@@ -603,6 +610,9 @@ Hun faaer der med den gamle Mage.''
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="staffeldt2026101103" author="staffeldt">
 <head>
@@ -788,20 +798,24 @@ Mangen en Hierteforeening ved Vaarens Gilde forsøgtes,
 </body>
 </text>
 
-<text id="oehlenschlaeger2026101101" author="oehlenschlaeger">
+<section author="oehlenschlaeger" level="1">
 <head>
   <title>Kunstnerens Liv</title>
+</head>
+<content>
+
+<text id="oehlenschlaeger2026101101" author="oehlenschlaeger">
+<head>
+  <title><num>1.</num>Første Akt</title>
   <firstline>Jeg vil det ei! Jeg kan det ei!</firstline>
   <notes>
-    <note><xref type="translation" poem="goethe2020041801"/></note>
+    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2020041801"/>.</note>
   </notes>
   <source pages="42-50"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center><w>Første Akt.</w></center></nonum>
-
 <nonum><center>Før Solens Opgang.</center></nonum>
 ---
 
@@ -971,7 +985,7 @@ og er du ei riig, saa er du brav.
   <title><num>2.</num>Kunstnerens Apotheose</title>
   <firstline>Her sidder jeg, Dag ud Dag ind</firstline>
   <notes>
-    <note><xref type="translation" poem="goethe2020041802"/></note>
+    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2020041802"/>.</note>
   </notes>
   <source pages="51-68"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1327,6 +1341,9 @@ lad ham, som jeg, men mere glad den nyde!
 </body>
 </text>
 
+</content>
+</section>
+
 <text id="weinwich2026101101" author="weinwich">
 <head>
   <title>Prolog</title>
@@ -1453,10 +1470,10 @@ naar Marken grønnes, vi hos Flora sees igien.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="la">Ah! te meæ si partem animæ rapit
+<epigraph lang="la">Ah! te meæ si partem animæ rapit
 maturior vis, quid moror altera.
 <right><w>Hor.</w></right>
-</quote>
+</epigraph>
 <prose>
 Denne Fortælling er udarbeidet i Aaret 1798. Da jeg, efterat den var bestemt for Nytaarsgaven, tog den frem for at giennemsee den, fandt jeg saavel i Planen som Indklædningen meget, som jeg ønskede at ændre, men — da den saare indskrænkede Tid ikke tillod mig ganske at omarbeide den, søgte jeg at forandre de Steder, som eg mindst troede at kunne bestaae for <pb n="78" facs="082.jpg"/>Kritikens Domstoel, og haaber for Resten Overbærelse med et Arbeide, som er mit første Forsøg i denne Digteart.
 
@@ -1921,7 +1938,7 @@ Da gav jeg ham alle de Blomster og Bær,
   <title><num>1.</num>Menneskehedens Grændser</title>
   <firstline>Naar den ældgamle</firstline>
   <notes>
-    <note unknown-original-by="goethe">Oversættelse af Goethes »Grenzen der Menschheit«.</note>
+    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>
   </notes>
   <source pages="182-184"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1982,7 +1999,7 @@ Evige Kiede!
   <title><num>2.</num>Min Gudinde</title>
   <firstline>Hvilken Udødelig</firstline>
   <notes>
-    <note><xref type="translation" poem="goethe2018101101"/></note>
+    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2018101101"/>.</note>
   </notes>
   <source pages="185-189"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2085,7 +2102,7 @@ Trøstende Haab!
   <subtitle>(i Vinteren.)</subtitle>
   <firstline>Ørnen liig</firstline>
   <notes>
-    <note unknown-original-by="goethe">Oversættelse af Goethes »Harzreise im Winter«.</note>
+    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101801"/>.</note>
   </notes>
   <source pages="190-195"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2205,7 +2222,7 @@ Med Brødres Aarer!
   <subtitle>(Efter det Spanske af Villegas.)</subtitle>
   <firstline>Blide Indvaaner af grønnende Lunde</firstline>
   <notes>
-    <note unknown-original-by="villegas"/>
+    <note>Gendigtning af Villegas’ <xref type="translation" poem="villegas2026101801"/>.</note>
   </notes>
   <source pages="196-197"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2314,10 +2331,13 @@ hvis jeg kun seer eet af <w>Lydas</w> Smile! —
 </body>
 </text>
 
-<text id="staffeldt2026101107" author="staffeldt" variant="staffeldt2001052703">
+<text id="staffeldt2001052703" author="staffeldt">
 <head>
   <title>Blomsterne</title>
   <firstline>Og over Engen</firstline>
+  <notes>
+    <note type="credits">Bidrag fra Brian Bentsen.</note>
+  </notes>
   <source pages="202-207"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2650,7 +2670,7 @@ Mand og Qvinde i Favn er Tingenes høieste Spidse,
 </head>
 <content>
 
-<text id="oehlenschlaeger2026101106" author="oehlenschlaeger" variant="oehlen2002101107">
+<text id="oehlenschlaeger1999062801" author="oehlenschlaeger" variant="oehlen2002101107">
 <head>
   <title><num>1.</num>Freyas Rok</title>
   <firstline>Naar Natten udruller sit sorte Slør</firstline>
@@ -3228,13 +3248,13 @@ Men den prægtigt flyder og omvinder
 <text id="staffeldt2026101149" author="staffeldt">
 <head>
   <title><num>XI.</num>Det kierere Bedrag</title>
-  <subtitle><num>1.</num></subtitle>
   <firstline>Naar, lig Fredens Engel, Maanen svæver</firstline>
   <source pages="245"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><center>1.</center></nonum>
 Naar, lig Fredens Engel, Maanen svæver
    Over Mindehøies stille Rad,
    Medens rundt med Dødningvuggeqvad
@@ -3259,13 +3279,13 @@ Den til Himlens Lige for mit Øie!
 <text id="staffeldt2026101150" author="staffeldt">
 <head>
   <title><num>XII.</num>Det kierere Bedrag</title>
-  <subtitle><num>2.</num></subtitle>
   <firstline>Nei undslye! Fra Jorden du bortvige</firstline>
   <source pages="246"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><center>2.</center></nonum>
 Nei undslye! Fra Jorden du bortvige,
    Bort med Haabet og Henrykkelsen!
    Fulgt af Tempe og Hesperien
@@ -3294,8 +3314,13 @@ Dit forklarte Jordphantom tiltrække!
 
 <text id="rahbek2026101103" author="rahbek">
 <head>
-  <title>For i et Exemplar af Figaros Giftermaal til Susanne Bournonville, der havde foræret Oversætteren, Mad. Møllers Portrait</title>
+  <suptitle>For i et Exemplar af Figaros Giftermaal til</suptitle>
+  <title>Susanne Bournonville</title>
+  <subtitle>der havde foræret Oversætteren, Mad. Møllers Portrait</subtitle>
   <firstline>Saa kiær en Gave Walthers Billed er</firstline>
+  <notes>
+    <note>Rahbek hentyder sandsynligvis til Johannes Ewalds <a poem="ewald1999081402"/>: »See her hvad Aand, hvad Ild, i hver en Mine, / Naar vor Aglae taus kun viser sig«. Både denne ordlyd og Ewalds betegnelse »Thalias Caroline« genfindes i digtet. Det er ikke dokumenteret, hvilket portræt Rahbek fik foræret.</note>
+  </notes>
   <source pages="247-248"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

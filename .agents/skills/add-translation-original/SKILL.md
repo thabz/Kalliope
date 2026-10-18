@@ -40,6 +40,11 @@ samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
    Kalliopes gældende oversættelsesrelation. Opret ikke en generisk relation til
    digteren. En nyere udgave må være relationens mål, når teksten matcher
    sikkert, og det historiske forlæg ikke er tilgængeligt.
+   Angiv altid forlægget med formuleringen »Gendigtning af [forfatterens navn
+   i genitiv] [digtlink].«, fx:
+   `<note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>`.
+   Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
+   Brug ikke et bart digtlink eller »Oversættelse af …« som forlægsnote.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.
