@@ -1,5 +1,7 @@
 # Afklaring af udenlandske biografier fra #1919, gruppe A
 
+> Historisk arbejdsnotat fra før korrekturen af PR #1987. Kun biografier fra DBL og Salmonsen indgår nu i PR’en. Andre kildetekster og skjulte ældre tekster uden disse kilder er fjernet. Oplysninger nedenfor om indsættelse og bevarelse beskriver den tidligere leverance. Aktuel status står i [leverancenoten](biografier-1919-2026-10-18.md).
+
 Kontrolleret 18. oktober 2026. Gruppen omfatter 24 personer: 22 har fået komplette kildebiografier; Abbott og Fiorentini kræver fortsat identitetsafklaring. Ingen kildebiografi er opfundet for de to. De tidligere tekster er bevaret uændret dér. Alle erstattede biografier er bevaret med `hidden="true"`. Det fælles statusregister er ikke ændret.
 
 Salmonsen 2 og Nordisk familjebok 2 inkl. supplement er undersøgt først. Hvor egnede artikler manglede, er historiske nationale eller litteraturhistoriske biografiske opslagsværker brugt. Kildens historiske stavning og faktuelle udsagn er bevaret; dette er ikke en moderniseret biografi. Hele de angivne artikler/personafsnit er kontrolleret mod facsimiler, inklusive fortsættelser, bibliografier og for Aquino den trykte tilføjelse. Brødtekstsprog og sikre fremmede titler/udtryk er markeret.

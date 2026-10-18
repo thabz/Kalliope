@@ -1,11 +1,11 @@
 {
   "opgave": "#1919:36 danske kandidater",
-  "afgrænsning": "35 personer har fået kildetekst; Rode er uafklaret på grund af manglende sikker identifikation. Moderne oversigter er kun lokalisatorer. Søgebeskrivelser nedenfor er afgrænsede undersøgelser og beviser ikke generelt fravær i alle historiske kilder.",
+  "afgrænsning": "Kildespor for 36 danske kandidater. Efter korrekturen af PR #1987 indgår kun DBL- og Salmonsen-tekster; andre kildetekster er fjernet. Rode er fortsat uden sikker identifikation. Undersøgelserne dokumenterer ikke generelt fravær i alle historiske kilder.",
   "personer": [
     {
       "id": "hildebrandt",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -18,7 +18,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Magister-Stat (1945), under redaktion af C. L. Henrichsen, E. Bjørn Hansen og J. Øbro Ravn, s. 95, hele det faktuelle personopslag.",
         "url": "https://slaegtsbibliotek.dk/927401.pdf#page=110"
@@ -74,7 +74,7 @@
     {
       "id": "agerskov",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -87,7 +87,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Th. Hauch-Fausbøll: Studenterne 1889–1914. Biografier og Portræter (1914), s. 68.",
         "url": "https://www.ronlev.dk/bibliotek/2673.pdf#page=78"
@@ -97,7 +97,7 @@
     {
       "id": "alsted",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -110,7 +110,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Torkil Baumgarten: Borgerlige Familier. En Samling af Genealogier (1910), s. 111–112, hele det faktuelle personafsnit om Peter Christen Alsted med barn i »Familien Sebbelov«.",
         "url": "https://www.ronlev.dk/bibliotek/2253.pdf#page=113"
@@ -120,7 +120,7 @@
     {
       "id": "andersenniels",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -137,13 +137,13 @@
         "tekst": "A. S. [Povl Frederik Barfod]: Poetisk Læsebog for Børn og barnlige Sjæle (1835–1836), »Biografiske Smaating om Forfatterne«, s. 443, nr. 2. Tallet 20 henviser til digtets nummer i antologien.",
         "url": "https://www.kb.dk/e-mat/dod/115308007267.pdf#page=472"
       },
-      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst."
     },
     {
       "id": "bachjn",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -160,14 +160,14 @@
         "tekst": "H. Ehrencron-Müller: Forfatterlexikon omfattende Danmark, Norge og Island indtil 1814, bind 1 (1924), s. 184. Komplet bibliografisk personopslag.",
         "url": "https://runeberg.org/hemforf/1/0202.html"
       },
-      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "genbrugsgrundlag": "Historisk usigneret leksikonartikel eller tekst af forfatter død senest1955. Ingen DBL3/Lex-tekst.",
       "begrænsning": "Ehrencron-Müllers fulde opslag er rent bibliografisk og indeholder ingen fødsels-, døds- eller levnedsdata. Identiteten er kontrolleret gennem værktitlerne; posten udgør derfor ikke en fuld levnedsskildring."
     },
     {
       "id": "bange",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -180,7 +180,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 1 (1959), s. 65, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947702.pdf#page=79"
@@ -213,7 +213,7 @@
     {
       "id": "conradsen",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -230,13 +230,13 @@
         "tekst": "Usigneret indledning i Karl Conradsen: Anakreontiske Digte (1908), hele det upaginerede indledningsblad, billedside 17.",
         "url": "https://kalliope.org/facsimiles/conradsen/130023573521-color/016.jpg"
       },
-      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "genbrugsgrundlag": "Usigneret selvstændig tekst offentliggjort1908; publikationsfristen er udløbet."
     },
     {
       "id": "eltzholtz",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -249,7 +249,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 1 (1959), s. 311, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947702.pdf#page=325"
@@ -259,7 +259,7 @@
     {
       "id": "ewaldt",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -272,7 +272,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Th. Lind: Gyldendals Forfatter-Lexikon (1915), s. 41.",
         "url": "https://archive.org/details/gyldendalsforfat00lind/page/41/mode/1up"
@@ -282,7 +282,7 @@
     {
       "id": "grove",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -295,7 +295,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Kraks1913–16 er konkret videre spor. DBL2s artikel om faderen Peter Vilhelm Grove, bd8s337, omtaler ikke Johan Grove."
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor."
     },
     {
       "id": "hermann",
@@ -323,7 +323,7 @@
     {
       "id": "hjernoe",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -336,7 +336,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Th. Lind: Gyldendals Forfatter-Lexikon (1915), s. 62.",
         "url": "https://archive.org/details/gyldendalsforfat00lind/page/62/mode/1up"
@@ -346,7 +346,7 @@
     {
       "id": "hoffmeyers",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -359,7 +359,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Studenterne fra 1904. Selvbiografiske og biografiske Oplysninger (1929), udgivet ved H. Grønvold og F. Elle Jensen, s. 54, hele opslaget om Svend Elin Hoffmeyer.",
         "url": "https://slaegtsbibliotek.dk/927485.pdf#page=54"
@@ -392,7 +392,7 @@
     {
       "id": "joergensenl",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -405,7 +405,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 87, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=99"
@@ -415,7 +415,7 @@
     {
       "id": "kie",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -428,7 +428,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 103, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=115"
@@ -438,7 +438,7 @@
     {
       "id": "kokm",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -451,12 +451,12 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Salmonsen4 Kok er Laurids, ikke Martin. Lauritz Nielsens manuskriptkatalog1943 er bibliografisk spor, ikke kontrolleret personartikel."
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor."
     },
     {
       "id": "lundotto",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -469,7 +469,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 244, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=256"
@@ -479,7 +479,7 @@
     {
       "id": "lyhne",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -492,7 +492,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 2 (1960), s. 250, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/956728.pdf#page=262"
@@ -502,7 +502,7 @@
     {
       "id": "meier",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -519,7 +519,7 @@
         "tekst": "Usigneret biografisk forord i Johannes Meier: Digte og Breve (1905), upagineret blad, billedside 13.",
         "url": "https://kalliope.org/facsimiles/meier/115208043270_color/012.jpg"
       },
-      "resultat": "Kildeteksten er indsat og hele det angivne artikel-/personafsnit kontrolleret visuelt mod originalfacsimile.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "genbrugsgrundlag": "Usigneret selvstændig tekst offentliggjort1905; publikationsfristen er udløbet."
     },
     {
@@ -571,7 +571,7 @@
     {
       "id": "nielsena",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -584,7 +584,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 13, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=21"
@@ -594,7 +594,7 @@
     {
       "id": "preetzmann",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -607,7 +607,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Th. H. Erslew: Almindeligt Forfatter-Lexicon, Supplement, bind 1 (1858), s. 293–294, hele det bibliografiske opslag »Caralis« (Christian Preetzmanns pseudonym).",
         "url": "https://runeberg.org/almiforf/sup1/0303.html"
@@ -651,7 +651,7 @@
     {
       "id": "rasmussenf",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -664,7 +664,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 142, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=150"
@@ -746,7 +746,7 @@
     {
       "id": "sandvad",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -759,7 +759,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele det angivne opslag/personafsnit er indsat og visuelt facsimilekontrolleret, inklusive fortsættelser.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Magister-Stat (1926), redigeret af Cai Hegermann-Lindencrone og C. L. Henrichsen, s. 216, hele det faktuelle personopslag.",
         "url": "https://slaegtsbibliotek.dk/927324.pdf#page=227"
@@ -769,7 +769,7 @@
     {
       "id": "strunk",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -782,7 +782,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 326, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=334"
@@ -792,7 +792,7 @@
     {
       "id": "waagner",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -805,7 +805,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 401, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=409"
@@ -815,7 +815,7 @@
     {
       "id": "wandallfr",
       "dato": "2026-10-18",
-      "status": "indsat",
+      "status": "fravalgt-kilde",
       "undersøgt": [
         {
           "udgave": "Dansk Biografisk Leksikon,2.udgave,bd1–27 (1933–44)",
@@ -828,7 +828,7 @@
           "metode": "Relevante bogstavafsnits tekstlag søgt med efternavnsvarianter, inklusive udtalemarkører. OCR kan skjule træf; alfabetisk Runeberg-indeks er kun sidestarter, ikke artikelregister."
         }
       ],
-      "resultat": "Hele den typografisk selvstændige biografiske indledning er visuelt kontrolleret mod facsimile og indsat. Den særskilt opstillede bibliografi er ikke del af dette afgrænsede personafsnit.",
+      "resultat": "Den tidligere indsatte tekst er fjernet ved korrekturen af PR #1987, fordi kilden hverken er DBL eller Salmonsen. Undersøgelsen og kildesporet er bevaret nedenfor.",
       "kilde": {
         "tekst": "Dansk skønlitterært Forfatterleksikon 1900–1950, biografisk redaktion ved Povl Engelstoft, bind 3 (1964), s. 404, hele den særskilte faktuelle biografiske indledning; den efterfølgende værkfortegnelse er ikke medtaget.",
         "url": "https://slaegtsbibliotek.dk/2025/947703.pdf#page=412"

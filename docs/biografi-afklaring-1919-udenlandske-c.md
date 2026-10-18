@@ -1,5 +1,7 @@
 # Afklaring af biografier fra #1919, gruppe C
 
+> Historisk arbejdsnotat fra før korrekturen af PR #1987. Kun biografier fra DBL og Salmonsen indgår nu i PR’en. Andre kildetekster og skjulte ældre tekster uden disse kilder er fjernet. Oplysninger nedenfor om indsættelse og bevarelse beskriver den tidligere leverance. Aktuel status står i [leverancenoten](biografier-1919-2026-10-18.md).
+
 Kontrolleret 18. oktober 2026. Gruppen omfatter 24 personer. Alle 24 personafsnit er indsat. Valle er dokumenteret særskilt i gruppe A; de øvrige 23 følger nedenfor. Alle angivne kildesider og fortsættelser er visuelt læst mod facsimile. Historisk ortografi og kildens usikkerhed er bevaret. Personafsnit er hele afgrænsede sektioner, ikke sammenstykkede uddrag.
 
 ## percival
