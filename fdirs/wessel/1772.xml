@@ -7,6 +7,28 @@
   <identifiers>
     <openlibrary-work>OL7280791W</openlibrary-work>
   </identifiers>
+  <pagebreaks/>
+  <errata status="applied" pages="[88]" facsimile-pages="94"/>
+  <source href="https://urn.nb.no/URN:NBN:no-nb_digibok_2014100928002" facsimile="nb-2014100928002" facsimile-pages-num="99" facsimile-pages-offset="6">
+    <author id="wessel">Johan Herman Wessel</author>
+    <title>Kierlighed uden Strømper</title>
+    <place>Kiøbenhavn</place>
+    <printer>A. H. Godiches Efterleverske, ved F. C. Godiche</printer>
+    <year>1772</year>
+  </source>
+  <source id="epilog1776" href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122620077505763" facsimile="130012449527" facsimile-pages-num="493" facsimile-pages-offset="51">
+    <title>Nye originale Skuespil</title>
+    <volume>1</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Gyldendal</publisher>
+    <year>1776</year>
+    <identifiers>
+      <kb-alma>99122620077505763</kb-alma>
+    </identifiers>
+  </source>
+  <notes>
+    <note>Epilogen og vaudevillen, som ikke findes i førsteudgaven, er sidehenvist efter <i>Nye originale Skuespil</i>, bind 1, 1776.</note>
+  </notes>
   <pictures>
     <picture type="titlepage" src="1772-p1.jpg"><transcription>Kierlighed uden Strømper. / Et Sørge-Spil i Fem Optog / Kiøbenhavn, 1772. / Trykt udi det Kongelige Universitets-Bogtrykkerie hos A. H. Godiches Efterleverske, ved F. C. Godiche.</transcription></picture>
   </pictures>
@@ -24,7 +46,8 @@
 <head>
   <title>Første Optrin</title>
   <firstline>Du bliver aldrig gift, hvis det i Dag ei skeer!</firstline>
-  <quality>korrektur1</quality>
+  <source pages="3-5"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -33,7 +56,7 @@ Du bliver aldrig gift, hvis det i Dag ei skeer!
 O! alt for fæle Drøm! mig synes, at jeg seer
 Endnu den sorte Geist, at jeg ham hører true
 Med samme Torden-Røst. Saa skal jeg aldrig skue
-Det Haap opfyldt, hvorpaa jeg byggede saa tryg,
+<pb n="4" facs="009.jpg"/>Det Haap opfyldt, hvorpaa jeg byggede saa tryg,
 Da paa min Skredders Skiød, med Haanden om hans Ryg,
 Jeg hørte ham saa tidt med kiælen Stemme sige:
 Jeg var hans eeneste, hans allerbeste Pige,
@@ -55,7 +78,7 @@ Han for at skuffe mig med dig var sammensvoren,
 I kiørte Pokker I! og ikke til Majoren.
 Hvor kunde vel hos mig Mistanke finde Sted?
 Jeg var godtroende og blind af Kierlighed;
-Stokblind jeg vist nok var, som kunde ei begribe,
+<pb n="5" facs="010.jpg"/>Stokblind jeg vist nok var, som kunde ei begribe,
 At aldrig saadan Mand, en reen Major, i Knibe
 For Buxer være kan; jeg nu for silde seer
 <nonum>(Efter nogen Taushed)</nonum>
@@ -71,7 +94,8 @@ Dog nei, Jeg hører ei, Jeg synes kun at høre.
 <head>
   <title>Andet Optrin</title>
   <firstline>Hvad nye Fortræd Masør! forvolder disse Skrig?</firstline>
-  <quality>korrektur1</quality>
+  <source pages="5-9"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -85,7 +109,7 @@ Hvor ængste de min Siæl?
 Jeg er ulykkelig!
 Veninde hør og skielv! et fælt sortagtigt Væsen,
 En Diævel uden Tvivl, med sorte Haar paa Næsen,
-Mig nu, jeg sad og sov, i Drømme forekom,
+<pb n="6" facs="011.jpg"/>Mig nu, jeg sad og sov, i Drømme forekom,
 Og grumt og brølende afsagde denne Dom:
 »Du bliver gift i Dag, skal du det eengang blive!«
 
@@ -111,7 +135,7 @@ Men den seer ikke Mette.
 Din Drøm, var den end sand, den siger jo kun dette:
 Du aldrig giftes skal.
 
-<nonum><i>Grete.</i></nonum>
+<pb n="7" facs="012.jpg"/><nonum><i>Grete.</i></nonum>
 Og den, som siger det,
 Han siger, jeg skal døe. Thi jeg har nogen Ret,
 Hvis tusind Vidnesbyrd mig nogen Ret kan give,
@@ -123,7 +147,7 @@ Man for at blive gift ei pleier lide Nød.
 Forlad mig, jeg tilstaar, at jeg har mig forløbet.
 
 <nonum><i>Grete.</i></nonum>
-Du ved din Tale kun Eenfoldighed har røbet,
+Du ved<footnote type="errata">ved] veed,</footnote> din Tale kun Eenfoldighed har røbet,
 Og den er alt forladt.
 
 <nonum><i>Mette.</i></nonum>
@@ -137,7 +161,7 @@ Min Haand jeg skulde give
 Til den, jeg før forskiød? Den Kaal jeg spøtted' i
 Jeg skulde søbe selv? Gid før - -
 
-<nonum><i>Mette.</i></nonum>
+<pb n="8" facs="013.jpg"/><nonum><i>Mette.</i></nonum>
 For alting tie!
 En ubetænksom Eed man ofte maa fortryde,
 Og mine Grunde dig maaske kan overtyde,
@@ -162,7 +186,7 @@ At Mads foragter ei den, ham har før foragtet?
 <nonum><i>Mette.</i></nonum>
 Du hans Høiagtelse for evig har forpagtet,
 Det staaer jeg inde for, og til Beviis herpaa,
-Før Solens Opgang han for mine Fødder laae
+<pb n="9" facs="014.jpg"/>Før Solens Opgang han for mine Fødder laae
 I Morges Taarefuld, og med en ydmyg Mine
 Bad om Tilladelse at kaste sig for dine.
 Han har en vigtig Sag at foredrage dig,
@@ -184,7 +208,8 @@ I Sorgens mørke Skye, du dens Veileder vær.
 <head>
   <title>Tredie Optrin</title>
   <firstline>Saa er jeg da fordømt til Madses Brud at blive</firstline>
-  <quality>korrektur1</quality>
+  <source pages="9"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -201,7 +226,8 @@ Hvis den utroe Johan ei værdig var mit Had.
 <head>
   <title>Fjerde Optrin</title>
   <firstline>Seigneur! Indgangen hid jeg vilde dig ei hindre</firstline>
-  <quality>korrektur1</quality>
+  <source pages="10-13"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -224,7 +250,7 @@ Du tog din Haand igien, og jeg har endnu Liv,
 Jeg ei mit Hierte strax hiemsøgte med en Kniv,
 Din Skiønhed jeg til Trods endnu tør drage Aande;
 Du Aarsag har om mig at tænke allehaande,
-Men tager jeg ei Feil, en Skiæbne eller Aand,
+<pb n="11" facs="016.jpg"/>Men tager jeg ei Feil, en Skiæbne eller Aand,
 Jeg veed ei hvem af to, tilbageholdt min Haand,
 Da jeg, Madam, forladt og straffet med din Vrede
 Besluttede at døe, min Kniv var af sin Skede,
@@ -247,7 +273,7 @@ Men saa hovmodig jeg dog aldrig blev deraf,
 At mig i Sinde kom at holde for en Brøde,
 Om ved mit Hiertes Tab min Elsker strax ei døde.
 
-<nonum><i>Mads.</i></nonum>
+<pb n="12" facs="017.jpg"/><nonum><i>Mads.</i></nonum>
 Ved din Beskedenhed min Brøde voxer meer,
 Jo meere jeg dit Værd ved den forøget seer.
 
@@ -270,7 +296,7 @@ Og at fornærme dig, som alt for længe siden
 Min Meening fattet har, beær mig med et Svar,
 Hvoraf jeg fatter din.
 
-<nonum><i>Grete.</i></nonum>
+<pb n="13" facs="018.jpg"/><nonum><i>Grete.</i></nonum>
 Hvad Skiæbnen budet har,
 Var en Forvovenhed af mig at vilde hindre;
 Jeg har i denne Sag kun dette at erinde,
@@ -292,7 +318,8 @@ Hvormed jeg værdigen kan som din Brudgom staae.
 <head>
   <title>Femte Optrin</title>
   <firstline>Skiæbnen bød mig først Johan</firstline>
-  <quality>korrektur1</quality>
+  <source pages="13-14"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -301,7 +328,7 @@ Hvormed jeg værdigen kan som din Brudgom staae.
 <nonum><i>Aria</i></nonum>
 Skiæbnen bød mig først Johan,
 Nu mig giver Mads til Mand.
-Naar dig nogen Karper byder,
+<pb n="14" facs="019.jpg"/>Naar dig nogen Karper byder,
 Og du faaer kun tørre Jyder,
 Bliver du lidt flau derved;
   Men har du en sulten Mave,
@@ -333,7 +360,8 @@ Dog hvorom alting er, saa gaaer jeg nu min Vei.
 <head>
   <title>Første Optrin</title>
   <firstline>Hvor hopper ei min Siæl! Hvor skynder sig mit Blod</firstline>
-  <quality>korrektur1</quality>
+  <source pages="15-18"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -352,7 +380,7 @@ Og vi vil faae at see, om du det bedre giør.
 Saa lykkelig en Hest som jeg var aldrig før.
 Kom kys mig søde Broer! Lad os en Sang istemme,
 Hvoraf den hele Jord min Glæde kan fornemme.
-For evig evig Tiid er Mads nu lykkelig!
+<pb n="16" facs="021.jpg"/>For evig evig Tiid er Mads nu lykkelig!
 Min Jesper! hielp mig at udstøde Fryde-Skrig,
 Hør! af min Fryds-Basun faer ud en Glædes Torden
 Langt ned til dem som boe, - der boer jo under Jorden
@@ -373,7 +401,7 @@ Mads i Dag sin Grete eier,
   Ja med Hud og Haar og Krop.
   Under Jorden giør et Hop!
 
-<nonum><i>Jesper.</i></nonum>
+<pb n="17" facs="022.jpg"/><nonum><i>Jesper.</i></nonum>
 Har du nu skreget ud din Glædes Raserie?
 
 <nonum><i>Mads.</i></nonum>
@@ -392,7 +420,7 @@ Ei røre sig af Flekken;
   Flød Bekken dobbelt fort.
 Min Glæde er som Bækken.
 
-<nonum><i>Jesper.</i></nonum>
+<pb n="18" facs="023.jpg"/><nonum><i>Jesper.</i></nonum>
 Jeg Grete komme seer, hun vist den Slutning drager,
 At du af Lunkenhed dig gode Stunder tager,
 Ifald hun faaer at see dit end ukiemte Haar;
@@ -406,7 +434,8 @@ Det bliver derfor best, at du afsides gaaer.
 <head>
   <title>Andet Optrin</title>
   <firstline>Saa var mit Haab omsonst, du syntes at samtykke</firstline>
-  <quality>korrektur1</quality>
+  <source pages="18-19"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -423,7 +452,7 @@ Jeg dig forbunden er, som vil min Smerte lindre,
 Og ærer dine Raad, men ikke destomindre
 Mit Hierte siger mig, at tusind Plagers Hær
 Med Længsel venter paa, at see min Brudefær.
-Før var jeg angestfuld, men tusind gange meere,
+<pb n="19" facs="024.jpg"/>Før var jeg angestfuld, men tusind gange meere,
 Saasnart jeg tænker paa, at Mads min Mand skal være,
 Jeg veed ei selv, hvorfor.
 
@@ -453,7 +482,8 @@ Jeg gaaer at lukke op.
 <head>
   <title>Tredie Optrin</title>
   <firstline>Hvem mon der vel kan banke?</firstline>
-  <quality>korrektur1</quality>
+  <source pages="20"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -471,7 +501,8 @@ Hvis ei; - - Men Himmel! Jord! det er Johan - - jeg døer.
 <head>
   <title>Fjerde Optrin</title>
   <firstline>Hvor seer jeg glad igien de mange Yndigheder</firstline>
-  <quality>korrektur1</quality>
+  <source pages="20-25"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -485,7 +516,7 @@ Som den maae være blind, der kan ei see hos eder.
 Jeg dig fornærmed har min allerbeste Ven!
 Jeg tænkte, du var Skielm.
 
-<nonum><i>Johan.</i></nonum>
+<pb n="21" facs="026.jpg"/><nonum><i>Johan.</i></nonum>
 Saa tænk nu om igien.
 
 <nonum><i>Grete.</i></nonum>
@@ -510,7 +541,7 @@ Med Ild-Bogstaver trykt. Det kort forfattet er:
 Hvor taler du ei smukt, jeg vilde paa min Ære,
 Nu Touren er til mig, og sige smukke Ting;
 Men Kierligheden har med tætte Atter-Sting
-Saa syed mit Hierte ind, at om jeg skulde henge,
+<pb n="22" facs="027.jpg"/>Saa syed mit Hierte ind, at om jeg skulde henge,
 Dets ømme Følelser sig dog ei kunde trænge
 Op til min Mund, Madam!
 
@@ -536,7 +567,7 @@ Du alt for gunstig er.
 <nonum><i>Grete.</i></nonum>
 Med Ret, maaske du venter
 Den Roes, du nægter dig, at faae igien med Renter,
-Fortryd dog ikke paa, der bliver intet af
+<pb n="23" facs="028.jpg"/>Fortryd dog ikke paa, der bliver intet af
 For den gang, men du er endnu ei i din Grav;
 Nei bie kun, til vi først er bleven Mand og Kone,
 Saa kan du lide paa, jeg skal til gavns forsone
@@ -562,7 +593,7 @@ Du studser, bliver bleeg.
 Gid mig alt Ont maae ramme!
 Hvis der en nogen Ting, mit Hierte ønsker meer
 End det, at blive din; men jeg mig tvungen seer
-En Dags Opsettelse mig ikkun at udbede;
+<pb n="24" facs="029.jpg"/>En Dags Opsettelse mig ikkun at udbede;
 En umild Skiebnes Dom - - -
 
 <nonum><i>Grete.</i></nonum>
@@ -590,7 +621,7 @@ Du nøder mig, viid da - - -
 <nonum><i>Grete.</i></nonum>
 Hvad? snart!
 
-<nonum><i>Johan.</i></nonum>
+<pb n="25" facs="030.jpg"/><nonum><i>Johan.</i></nonum>
 At mine Strømper -
 
 <nonum><i>Grete.</i></nonum>
@@ -614,14 +645,15 @@ Som Brudgom da i Dag, om uden Strømper staae.
 <head>
   <title>Femte Optrin</title>
   <firstline>Skal jeg som Brudgom staae i Dag foruden Strømper?</firstline>
-  <quality>korrektur1</quality>
+  <source pages="25-26"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 <nonum><i>Johan</i> (allene).</nonum>
 Skal jeg som Brudgom staae i Dag foruden Strømper?
 Hvo giver beste Raad til en uhældig Stømper,
-Som Æren byder et, et andet Elskovs Gud?
+<pb n="26" facs="031.jpg"/>Som Æren byder et, et andet Elskovs Gud?
 Hvis du i Støvler staaer, saa leer dig Folket ud,
 Det Ærens Stemme er. Du miste skal din Brud
 Ved en Opsettelse, saaledes Elskov truer.
@@ -653,7 +685,8 @@ Ei nogen vis at strande paa
 <head>
   <title>Første Optrin</title>
   <firstline>Hvor er min Skiebne grum og umaneerlig stiv!</firstline>
-  <quality>korrektur1</quality>
+  <source pages="27-29"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -668,7 +701,7 @@ Og da han tøvede at komme her tilbage,
 Jeg min Forhaabning saae med hver en Dag tiltage;
 I otte Dages Tid mit Haab steeg otte Trin,
 Jeg Trappen var forbi, og netop kommen ind
-I Lykkens Forgemak, hvor jeg knap kunde sandse
+<pb n="28" facs="033.jpg"/>I Lykkens Forgemak, hvor jeg knap kunde sandse
 For Fryd. Jeg faaer en Puf, og Hovedkuls maa dandse
 Af Trappen ned igien. Jeg ligger endnu der
 Forslagen og forknust. Det lære skal enhver,
@@ -688,7 +721,7 @@ Med Afgrund, Jordskiælv, Ild med Lynild og med Torden!
 Vek svage Billeder! med ingen Ting paa Jorden
 Jeg male kan min Qval, og ikke heller vil.
 Der maa, som før er sagt, et Helvede dertil.
-Jeg seer en Diævle-Hær opstillet i Felider,
+<pb n="29" facs="034.jpg"/>Jeg seer en Diævle-Hær opstillet i Felider,
 Som af Forbittrelse i egne Tunger bider,
 Og spyer Forbandelser mod deres General,
 For han dem endnu ei til Angreb gav Signal.
@@ -704,7 +737,8 @@ Mit Hierte - - -
 <head>
   <title>Andet Optrin</title>
   <firstline>Her er jeg</firstline>
-  <quality>korrektur1</quality>
+  <source pages="29-33"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -719,7 +753,7 @@ Hvor er jeg ikke Mat! og hvor har du giort ilde,
 Som min Forfatning veed, og kommer dog saa silde.
 Naar man dog har en Ven, som man kan tale med,
 Man Kræfter samle kan ved et og andet Sted,
-Og hvile, medens man den Vens Betænkning hører;
+<pb n="30" facs="035.jpg"/>Og hvile, medens man den Vens Betænkning hører;
 Men jeg et stivt Qvarteer her Talen eene fører,
 Saa jeg er bleven hæs, som ingen Under er.
 Fortvivler, rasende, og dette Svelg saa nær,
@@ -748,7 +782,7 @@ I Dag, i denne Dag han Gretes Mand skal være;
 Men han har -
 
 <nonum><i>Mads.</i></nonum>
-Hold min Haand! jeg ellers dræber dig,
+<pb n="31" facs="036.jpg"/>Hold min Haand! jeg ellers dræber dig,
 Er jeg ei martret nok, om du ei spotter mig?
 <nonum>(Han tager forbittret en Kniv op af Lommen.)</nonum>
 
@@ -776,7 +810,7 @@ Han ingen Strømper har.
 <nonum><i>Mads.</i></nonum>
 Saa døe da som et Bæst.
 
-<nonum><i>Jesper.</i></nonum>
+<pb n="32" facs="037.jpg"/><nonum><i>Jesper.</i></nonum>
 Han ingen Strømper har. For Pokker kan du høre?
 Og denne Mangel maa du dig til Nytte føre;
 Du Grete veed i Dag vil giftes absolut,
@@ -798,7 +832,7 @@ Kan du tilgive det?
 <nonum><i>Jesper.</i></nonum>
 Det lader meget ilde
 At huske smaa Ting nu, da jeg dig giver Haab
-At blive Gretes Mand; med Fryd og Elskovs Raab
+<pb n="33" facs="038.jpg"/>At blive Gretes Mand; med Fryd og Elskovs Raab
 Du burde svare mig; er Kulde her anstændig?
 Du er indvendig heed, viis dig og heed udvendig.
 
@@ -815,7 +849,8 @@ Den Maade synes mig var ikke ubeqvem.
 <head>
   <title>Tredie Optrin</title>
   <firstline>Paa mit Hiertes Skorsten brænder</firstline>
-  <quality>korrektur1</quality>
+  <source pages="33-34"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -823,7 +858,7 @@ Den Maade synes mig var ikke ubeqvem.
 
 <nonum><i>Aria.</i></nonum>
 Paa mit Hiertes Skorsten brænder
-  En Harpixet Elskovs Brand,
+  En Harpixet<footnote type="errata">Harpixet] Harpixes</footnote> Elskovs Brand,
 Som er tændt i begge Ender,
   Elskovs Gud den tændte an.
 Hver som Røgen ser opstige
@@ -831,7 +866,7 @@ Hver som Røgen ser opstige
 Tænke maae om ikke sige,
   Der er heedt, hvor den kom fra.
 
-Der kommer den, hvis Ord hos Grete meget gielde,
+<pb n="34" facs="039.jpg"/>Der kommer den, hvis Ord hos Grete meget gielde,
 Hvis Raad hos hende mig kan reise eller fælde.
 Jeg Mette bede vil med Forbøn tiene mig.
 </poetry>
@@ -842,7 +877,8 @@ Jeg Mette bede vil med Forbøn tiene mig.
 <head>
   <title>Fierde Optrin</title>
   <firstline>Seigneur!</firstline>
-  <quality>korrektur1</quality>
+  <source pages="34-36"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -863,10 +899,10 @@ Hos een som styredes af Egennyttens Love,
 Som Had og Lyst til Hævn har giort til Dyden feig,
 En saadan nedrig Siæl bønhørte mig vist ei:
 Jeg for at bede ham gik heller ei af Pladsen,
-Nei, Hierter kun, som det der pikker i Mads Madsen,
+<pb n="35" facs="040.jpg"/>Nei, Hierter kun, som det der pikker i Mads Madsen,
 Formaae at vise mig en saa udmerket Gunst,
 Hvorom en mindre Siæl anmodedes omsunst.
-Jeg beder for Johan; fra Knæet ned til Foden
+Jeg beder for Johan; fra Knæet ned til Foden<footnote type="errata">Johan; fra Knæet ned til Foden,] Johan fra Knæet indtil Foden,</footnote>
 Hans Skiæbne negter ham i Dag at lyde Moden,
 Døm selv, hvor Himmel-høit Seigneur jeg agter dig,
 Naar jeg dig bede tør at giøre lykkelig,
@@ -884,7 +920,7 @@ Ved Forbøn og ved Raad hos Grete tiene mig.
 Johan er Strømpeløs og Gretes Haand uværdig,
 Hun giftes vil i Dag, og han er ikke færdig;
 Hvor let en Sag for dig ved denne Leilighed,
-At skagge mig igien den Strømpeløses Sted?
+<pb n="36" facs="041.jpg"/>At skagge mig igien den Strømpeløses Sted?
 Hvor billigt og hvor ret!
 
 <nonum><i>Mette.</i></nonum>
@@ -903,7 +939,8 @@ Det er mit Svar. Farvel!
 <head>
   <title>Femte Optrin</title>
   <firstline>Vi begge Længselsfulde</firstline>
-  <quality>korrektur1</quality>
+  <source pages="36-37"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -917,7 +954,7 @@ Blant vore Ønsker see. Naar paa den jevne Skive
 Man tvende Kugler Fart vil mod hinanden give,
 De skynde sig afsted, med samme Hurtighed,
 Som ømme Elskere til deres Samlings Sted.
-En tosset Jyde-Dreng maaske vel turde meene,
+<pb n="37" facs="042.jpg"/>En tosset Jyde-Dreng maaske vel turde meene,
 De længtes efter sig for evig at foreene:
 Nei, kiære Jyde! nei! De før sig røre ei,
 Før med en lige Fart hver Kugle gaaer sin Vei.
@@ -932,7 +969,8 @@ Thi jeg jo eene er, og ingen har mig hørt.
 <head>
   <title>Siette Optrin</title>
   <firstline>Mit Ærinde kun slet Veninde er udført</firstline>
-  <quality>korrektur1</quality>
+  <source pages="37-40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -950,7 +988,7 @@ Jeg skulde kaste mig for den Gruesommes Fod;
 Jeg skulde vise dig, hvad Bønner kan udrette
 Naar man er heed som jeg, og ikke kold som Mette.
 
-<nonum><i>Mette.</i></nonum>
+<pb n="38" facs="043.jpg"/><nonum><i>Mette.</i></nonum>
 Er slig Bebreidelse da Løn for al min Flid?
 Men jeg dig ynker kun. Dit Hierte er i Striid,
 Og Piinsler ofte kan den største Siæl forlede,
@@ -972,7 +1010,7 @@ Det dem i Krigen lader see,
 Som dog er overmaade vigtig,
 At sige: Naar de sigte rigtig.
 
-<nonum><i>Grete.</i></nonum>
+<pb n="39" facs="044.jpg"/><nonum><i>Grete.</i></nonum>
 Hvor jeg er lykkelig, at du holdt op engang.
 Jeg tager samme Deel udi din smukke Sang,
 Som din besiungne Helt i Pibers Lyd og Trommen.
@@ -996,7 +1034,7 @@ Du veed, hvor høiligen mig Skredderen er kier.
 Jeg Dyd og Ære dog for Elskov Fortrin giver;
 Men, hvad jeg ikke veed, mig ei tilregnet bliver,
 Saa meget troer jeg dog, at du mig sige bør:
-Om du i dette Raad Johan delagtiggør;
+<pb n="40" facs="045.jpg"/>Om du i dette Raad Johan delagtiggør;
 Om Skredderen derved kan blive mig uværdig;
 Men frem for alle Ting, om han snart bliver færdig.
 
@@ -1013,7 +1051,8 @@ Johan i denne Dag vist blive skal din Mand.
 <head>
   <title>Syvende Optrin</title>
   <firstline>I Dag skal Elskovs Gud udmerke sig ved Seier</firstline>
-  <quality>korrektur1</quality>
+  <source pages="40"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1043,7 +1082,8 @@ Man Elskovs Heftighed af Dydens Tab maae vide.
 <head>
   <title>Første Optrin</title>
   <firstline>Bestjæle min Rival? det er for farligt Mette</firstline>
-  <quality>korrektur1</quality>
+  <source pages="41-44"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1064,7 +1104,7 @@ End een, hvis støvlet Fod skal giøre hende Skam.
 <nonum><i>Johan.</i></nonum>
 Det alt besluttet er, jeg dine Raad vil følge.
 
-<nonum><i>Mette.</i></nonum>
+<pb n="42" facs="047.jpg"/><nonum><i>Mette.</i></nonum>
 Du gaaer saasnart Johan? Jeg kan dig ikke dølge,
 Jeg havde ikke tænkt, det kostede saa lidt
 For en ophøiet Siæl at gøre saadant Skridt.
@@ -1085,7 +1125,7 @@ Mag saa, at Elskov dig den tolvte gang forblinder,
 Vræng Munden, vrie din Krop, bær dig som du var gal,
 Og naar du det har giort, bestiæl saa din Rival.
 
-<nonum><i>Johan.</i></nonum>
+<pb n="43" facs="048.jpg"/><nonum><i>Johan.</i></nonum>
 Tolv Gange Mette? nei, det vil for længe vare,
 Det er den høie Tiid.
 
@@ -1106,7 +1146,7 @@ Men Sækken, som I to kan ikke rømmes i,
 Tilgavns undgielde maae for eders Klammerie,
 Mit Hierte revner snart; jeg elsker eder begge,
 Du Elskov er mit Liv, Du Dyd min Kiæle-Degge!
-Jeg pleier ellers gaae derfra, hvor Slagsmaal er,
+<pb n="44" facs="049.jpg"/>Jeg pleier ellers gaae derfra, hvor Slagsmaal er,
 Men jeg de Stridende med mig i Hiertet bær.
 Omsonst at flye, omsonst at ville dem forlige,
 Her er ei andet for, jeg Dommen maa afsige:
@@ -1129,14 +1169,15 @@ Ja vist.
 <head>
   <title>Andet Optrin</title>
   <firstline>Naar Dyd og Elskov stride</firstline>
-  <quality>korrektur1</quality>
+  <source pages="44-45"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 <nonum><i>Mette</i> (allene).</nonum>
 Naar Dyd og Elskov stride
 Skiønt man som ofteste kan see, til hvilke Side
-Sig Lykken helde vil, saa føler man endda
+<pb n="45" facs="050.jpg"/>Sig Lykken helde vil, saa føler man endda
 En tvivlsom Frygt, jeg veed ei hvor den kommer fra.
 
 <nonum><i>Aria.</i></nonum>
@@ -1156,7 +1197,8 @@ Folk ind igiennem lukte Døre,
 <head>
   <title>Tredie Optrin</title>
   <firstline>Nu er der intet meer, som kan min Lykke hindre</firstline>
-  <quality>korrektur1</quality>
+  <source pages="45-48"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1165,7 +1207,7 @@ Folk ind igiennem lukte Døre,
 <nonum><i>Johan</i></nonum>
 Nu er der intet meer, som kan min Lykke hindre
 
-<nonum><i>Mette.</i></nonum>
+<pb n="46" facs="051.jpg"/><nonum><i>Mette.</i></nonum>
 Du har vel ei forsømt, hvad jeg dig bad erindre,
 Formaliteterne.
 
@@ -1192,7 +1234,7 @@ Hvad mener du?
 <nonum><i>Johan.</i></nonum>
 At jeg til Madses Kiste kom,
 Just da udi min Siæl Dyd førte Regimente;
-Det var ei raadeligt et Øieblik at vente,
+<pb n="47" facs="052.jpg"/>Det var ei raadeligt et Øieblik at vente,
 Til Elskov Seier vandt, og rent at bryde af
 Den nys begyndte Roes, som jeg til Dyden gav,
 Var alt for latterligt; jeg desforuden vidste,
@@ -1210,12 +1252,12 @@ Thi Klokken er kun for Skoemagere og Skred -
 <nonum><i>Mette.</i></nonum>
 Tal du kun Ordet ud, og blues ei derved.
 En Skredder, som er Helt, er ikke Skredder meere:
-Den Titel, som er størst, tilkommer os blant fleere.
+Den Titel, som er størst, tilkommer os blant fleere.<footnote type="errata">Den Titel, som er størst, tilkommer os blant fleere.] ∅</footnote>
 I øvrigt finder jeg, Seigneur, at du har Ret;
 En Helt hvert Øieblik afpasser ei saa net;
 Men Grete nærmer sig.
 
-<nonum><i>Johan.</i></nonum>
+<pb n="48" facs="053.jpg"/><nonum><i>Johan.</i></nonum>
 Jeg vil afsides træde,
 Iføre Strømperne, og være her tilstæde
 Om et Minut igien.
@@ -1227,7 +1269,8 @@ Om et Minut igien.
 <head>
   <title>Fierde Optrin</title>
   <firstline>Hvor er min Skiæbne haard!</firstline>
-  <quality>korrektur1</quality>
+  <source pages="48-49"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1244,7 +1287,7 @@ Sig gyngede med mig. Ja i vort Spise-Kammer,
 Hvor jeg saa tidt tilforn fandt Raad mod al Slags Jammer,
 Omsonst jeg søger nu en Lindring for mit Sind,
 Min Sorg med lige Skridt ledsager mig derind.
-Jeg tænkte, røget Flesk kan hielpe, hvem kan vide?
+<pb n="49" facs="054.jpg"/>Jeg tænkte, røget Flesk kan hielpe, hvem kan vide?
 Men følte Flesk og Sorg i Halsen fast at sidde.
 
 <nonum><i>Mette.</i></nonum>
@@ -1267,7 +1310,8 @@ Nu Ende har; ja troe - nei troe ei meer, men see!
 <head>
   <title>Femte Optrin</title>
   <firstline>Johan med Strømper paa! Tvivl, Haab og Frygt og Glæde</firstline>
-  <quality>korrektur1</quality>
+  <source pages="49-53"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1275,7 +1319,7 @@ Nu Ende har; ja troe - nei troe ei meer, men see!
 
 <nonum><i>Grete.</i></nonum>
 Johan med Strømper paa! Tvivl, Haab og Frygt og Glæde
-<nonum>(Til Mette, som tier.)</nonum>
+<pb n="50" facs="055.jpg"/><nonum>(Til Mette, som tier.)</nonum>
 Hvor fik han dem? siig snart.
 <nonum>(Til Johan.)</nonum>
 Johan, jeg har en Tvivl.
@@ -1304,7 +1348,7 @@ Madam! ja, men paa eders Vegne,
 Saa lav Mistanke kan ei høie Siæle egne
 Med eders Siæl er lav.
 
-<nonum><i>Grete.</i></nonum>
+<pb n="51" facs="056.jpg"/><nonum><i>Grete.</i></nonum>
 Seigneur! høi eller lav,
 Jeg beder dig, besvar det Spørgsmaal jeg dig gav.
 
@@ -1327,7 +1371,7 @@ Johan von Ehrenpreis, viid naar man heder saa,
 Man da umuelig kan et Tyverie begaae.
 Madam! I maatte dog min ømme Siæl forskaane,
 Den har endnu ei lært, at lade sig forhaane;
-Jeg før i Lære stod, min Mester var en Stud,
+<pb n="52" facs="057.jpg"/>Jeg før i Lære stod, min Mester var en Stud,
 For ikke smukke Ting han tidt mig skieldte ud,
 Jeg dølger ei derfor, han tidt, din Esel! sagde,
 Men Tyve-Navn, Madam, han aldrig mig tillagde,
@@ -1351,7 +1395,7 @@ Hvor min Høiagtelse høit til Beundring steeg,
 Og steeg alt høiere, jo meer du bister skreeg.
 Min Elskov og min Agt du kaldte tidt din Lykke,
 Læs i mit Hierte nu, see hvilket Fandens Stykke
-Din Lykke voxet har ved denne Leilighed,
+<pb n="53" facs="058.jpg"/>Din Lykke voxet har ved denne Leilighed,
 Og jeg skal vove for du er ei længer vred.
 
 <nonum><i>Johan.</i></nonum>
@@ -1383,7 +1427,8 @@ Paa eders Bryllups-Pynt den sidste Haand at lægge.
 <head>
   <title>Første Optrin</title>
   <firstline>Du paa Rivalens Been to hvide Strømper saae?</firstline>
-  <quality>korrektur1</quality>
+  <source pages="54-59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1398,7 +1443,7 @@ Du forud føler alt (du maatte skamme dig)
 En Vellyst i den Qval, som vil fortære mig,
 Naar jeg et Vidne skal til den Foreening være,
 Som skiller mig ved alt, ved Grete og min Ære;
-Men naar jeg ikke meer seer denne Verdens Dag,
+<pb n="55" facs="060.jpg"/>Men naar jeg ikke meer seer denne Verdens Dag,
 Skal Skiebnen med sit Had vel giøre mig en Smag.
 
 <nonum><i>Jesper.</i></nonum>
@@ -1419,7 +1464,7 @@ Men helte, som vil døe, foragter Ahnelser.
 <nonum>  (Han tager sin Kniv op.)</nonum>
 Vær stærk min Arm og troe! vær skarp min Kniv og sikker!
 Min Jesper! Liv! Farvel! - - Dog, førend jeg mig stikker,
-Ifald du haver kier din Kalemankes Vest,
+<pb n="56" facs="061.jpg"/>Ifald du haver kier din Kalemankes Vest,
 Saa staae mig ei saa nær, den ellers faar sin Rest.
 
 <nonum><i>Aria.</i></nonum>
@@ -1441,7 +1486,7 @@ Mit Blod tilfælles har saa mange Ting med Fluer,
 Som ere fængslede, at jeg med rette gruer,
 Det og vil ligne dem, som slippe ud igien,
 Og synes, at de ei kan komme langt nok hen
-Fra en forhadt Arrest. Min bedste Ven i Live!
+<pb n="57" facs="062.jpg"/>Fra en forhadt Arrest. Min bedste Ven i Live!
 Dig maatte allermindst min Død til Skade blive.
 
 <nonum><i>Jesper.</i></nonum>
@@ -1465,7 +1510,7 @@ Men Skredder meer end Helt; det viser noksom Huden,
 Saa længe som han har en Skredder-Plet paa den,
 Jeg Helten mindre seer i ham end Skredderen.
 
-<nonum><i>Mads.</i></nonum>
+<pb n="58" facs="063.jpg"/><nonum><i>Mads.</i></nonum>
 See i ham hvad du vil; jeg seer kun paa min Ære,
 Jeg maa ei i mit Brøst saa lav Mistanke nære.
 
@@ -1489,7 +1534,7 @@ Og du til Nedrighed forgiæves mig skal friste.
 Taal i det mindste, Mads, at jeg udi din Kiste
 Min Tvivl maae opløst faae!
 
-<nonum><i>Mads.</i></nonum>
+<pb n="59" facs="064.jpg"/><nonum><i>Mads.</i></nonum>
 Du kan den bringe ind,
 Ei for at rydde ud Mistanken af mit Sind,
 Thi jeg mistænker ei, men at endnu i Live
@@ -1504,7 +1549,8 @@ Mit Efterladenskab jeg dig kan overgive.
 <head>
   <title>Andet Optrin</title>
   <firstline>Nu var det Tiid at døe, nu ingen hindrer mig</firstline>
-  <quality>korrektur1</quality>
+  <source pages="59"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1521,7 +1567,8 @@ Og hvorfor jeg er kold, det veed - - det veed vor Herre.
 <head>
   <title>Tredie Optrin</title>
   <firstline>Kom, lad os efterse</firstline>
-  <quality>korrektur1</quality>
+  <source pages="60-63"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1545,7 +1592,7 @@ Et Brev fra salig Faster,
 En Daase uden Laag,
 Den nye Psalmebog.
 
-<nonum><i>Jesper.</i></nonum>
+<pb n="61" facs="066.jpg"/><nonum><i>Jesper.</i></nonum>
 Alt nok om Leddiken, jeg længes efter Kisten.
 
 <nonum><i>Mads.</i></nonum>
@@ -1572,7 +1619,7 @@ Al Søgen er omsonst; Søg selv.
 <nonum><i>Mads</i> (efter at have søgt).</nonum>
 De findes ei. Min Skiebne al sin Kunst
 Udtømmer for mig ret ulykkelig at giøre,
-Og alle Øieblik mig nye Sorger føre.
+<pb n="62" facs="067.jpg"/>Og alle Øieblik mig nye Sorger føre.
 Jeg undres endnu paa, den sparede min Stok,
 Hvis Knap af Perlemor, Gud veed, har kostet nok;
 Hvis Tab meer vigtig var, meer smertelig end dette.
@@ -1594,7 +1641,7 @@ Han her indfinder sig, før en Qvarteer er omme
 At følge Grete did hvor Baandet knyttes skal,
 Som ei kan løses meer.
 
-<nonum><i>Mads.</i></nonum>
+<pb n="63" facs="068.jpg"/><nonum><i>Mads.</i></nonum>
 Mod en forhadt Rival
 Jeg maa udrustes først med høist fornødne Vaaben.
 Jeg har ei Bidden smagt, jeg har ei drukket Draaben
@@ -1620,7 +1667,8 @@ Vee dig Johan! vee dig! naar Mads er bleven mæt.
 <head>
   <title>Fierde Optrin</title>
   <firstline>Saa blev det Sandhed dog, som i et Ordsprog staaer</firstline>
-  <quality>korrektur1</quality>
+  <source pages="64-72"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1645,7 +1693,7 @@ Jeg mig erindrer kun de kummerfulde Dage,
 Som, Himmelen skee Tak, jeg haver lagt tilbage,
 At jeg desbedre maa fornøies ved de Kaar
 Og den Lyksalighed, som mig Fremtiden spaaer,
-Da endnu et Qvarteer vi kunde her forhale,
+<pb n="65" facs="070.jpg"/>Da endnu et Qvarteer vi kunde her forhale,
 Saa lad os vexelviis vort Haab, vor Fryd afmale.
 
 <nonum><i>Johan.</i></nonum>
@@ -1671,7 +1719,7 @@ Gaae ei videre; Thi det anstaaer dig ei.
 Hør her engang Seigneur, du falder jo i Staver;
 Nu Touren er til dig.
 
-<nonum><i>Johan.</i></nonum>
+<pb n="66" facs="071.jpg"/><nonum><i>Johan.</i></nonum>
 St! St! jeg mig belaver
 Paa et anstændigt Svar - - og - - Svaret lyder saa - -
 Jeg - - neppe veed for Fryd - - paa hvilken Fod at staae - -
@@ -1689,7 +1737,7 @@ Som du det lovede.
 Jeg haver et indvendigt
 Og et udvendigt Pund, det første ikke staaer
 Det andet altid bi. Der i min Hierne gaaer
-Udaf de smukkeste og meest udsøgte Tanker
+<pb n="67" facs="072.jpg"/>Udaf de smukkeste og meest udsøgte Tanker
 En utaalmodig Sværm, som inden Hiernens Planker
 Indsluttes ynkelig, fordi jeg ikke kan
 I Gang min Tunge faae; - - men tys, nu gaaer det an.
@@ -1710,7 +1758,7 @@ Han taler som en Helt, det maa enhver ham lade.
 <nonum><i>Grete.</i></nonum>
 Hvor hæves ei mit Mod, naar jeg betænker kun,
 At det min Elsker er, som har saa sød en Mund;
-Men det er endnu lidt, jeg først for Alver kneiser,
+<pb n="68" facs="073.jpg"/>Men det er endnu lidt, jeg først for Alver kneiser,
 Naar jeg af mange smaae, men kiekke Ehrenpreiser
 Kun forestiller mig, hvor jeg omringes skal.
 
@@ -1736,7 +1784,7 @@ Heltinde!
 <nonum><i>Grete.</i></nonum>
 Au!
 
-<nonum><i>Johan.</i> Betroe din Sorg til mig.</nonum>
+<pb n="69" facs="074.jpg"/><nonum><i>Johan.</i> Betroe din Sorg til mig.</nonum>
 
 <nonum><i>Grete</i></nonum>
 Jeg fik en Ahnelse. O! alt for kiære Skredder!
@@ -1758,7 +1806,7 @@ Mit Hiertes Herskerinde!
 Lad onde Dunsters Magt ei din Forstand forblinde,
 Hvad har du spiist i Dag?
 
-<nonum><i>Grete.</i></nonum>
+<pb n="70" facs="075.jpg"/><nonum><i>Grete.</i></nonum>
 En ringe Bagatel,
 Fem Sild, lidt Erter, Flesk - - -
 
@@ -1780,7 +1828,7 @@ Hvad i min Heltes Ord der dog ei Kræfter ligger!
 <nonum><i>Aria.</i></nonum>
 Saa Børne-Sværmen i en Skole
 Bestige Borde, Bænke, Stole,
-Og skrige høit, og skogger lee,
+<pb n="71" facs="076.jpg"/>Og skrige høit, og skogger lee,
 Naar de ei Skolemester see;
 Man naar han kun ved Døren rører,
 Hver paa sit Sted strax Pokker fører;
@@ -1805,7 +1853,7 @@ Kom lille Hierte-Tyv.
 Jeg mig udbede maa
 Et mere tugtigt Navn. Naturen lod mig faae
 Til Tyv og Tyverie et Had, saa overdrevet
-At Ordet Hierte-Tyv er mig en Afskye blevet.
+<pb n="72" facs="077.jpg"/>At Ordet Hierte-Tyv er mig en Afskye blevet.
 Man sette Hierte for, man sette Hierte bag,
 En Tyv er dog en Tyv, det er en afgiort Sag.
 </poetry>
@@ -1816,7 +1864,8 @@ En Tyv er dog en Tyv, det er en afgiort Sag.
 <head>
   <title>Femte Optrin</title>
   <firstline>Madam, der staaer en Tyv</firstline>
-  <quality>korrektur1</quality>
+  <source pages="72-77"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1832,7 +1881,7 @@ Der staaer en Helt, Forræder.
 Jeg siger nu som før, Madam, der staaer en Skredder.
 <nonum>  (Grete faaer lidt Ont.)</nonum>
 
-<nonum><i>Mette</i> (til Johan).</nonum>
+<pb n="73" facs="078.jpg"/><nonum><i>Mette</i> (til Johan).</nonum>
 Du mig for liden er, du ellers for min Fod
 Udgyde skulde strax det smudsige, som flyder
 I dine Aarer.
@@ -1853,7 +1902,7 @@ Og Mads kun havde et. - Jeg mig udbeder dog,
 At fra en mere Riig du efterdags vil røve,
 Hvad Grete eller du fremdeles kan behøve.
 
-<nonum><i>Grete.</i></nonum>
+<pb n="74" facs="079.jpg"/><nonum><i>Grete.</i></nonum>
 Jeg ingen Lyninld seer! ei hører Tordenskrald!
 Hvordan er dette fat? En frek Forræder skal
 Ustraffet spotte os? Han ryddes ei af Jorden
@@ -1878,7 +1927,7 @@ Kiend ham, føl dig, og lyd.
 <nonum><i>Grete.</i></nonum>
 Nu fløi min Siæl tilbage,
 Som vilde nyligen af Angest Flugten tage;
-Jeg ustuderet er, saa meget veed jeg dog,
+<pb n="75" facs="080.jpg"/>Jeg ustuderet er, saa meget veed jeg dog,
 At aldrig nogen Tyv kan føre saadant Sprog.
 Hvor Heltemæssig stolt - -
 
@@ -1903,7 +1952,7 @@ Du aldrig af min Mund et Ord skal mere høre.
 Han paa det ømme Sted forstod mig ret at røre,
 Den Fristelse er stor.
 
-<nonum><i>Johan.</i></nonum>
+<pb n="76" facs="081.jpg"/><nonum><i>Johan.</i></nonum>
 Jeg har befalet ham
 At tie som en Muur; tillad ham ei, Madam,
 At handle mod min Lov; min Ære derved lider.
@@ -1926,7 +1975,7 @@ Med mindre, du mig selv vil løse fra min Eed.
 <nonum><i>Grete.</i></nonum>
 Jeg dig vel sverge bød, men der er Maade med.
 Graa Erter var vel fælt, men sverge ved de gule!
-Hu! Haaret reiser sig.
+<pb n="77" facs="082.jpg"/>Hu! Haaret reiser sig.
 <nonum>  (Til Mette.)</nonum>
 Bring mig en lille Smule
 Af Flesk og Erter ind.
@@ -1939,7 +1988,8 @@ Af Flesk og Erter ind.
 <head>
   <title>Siette Optrin</title>
   <firstline>Jeg føler, synes mig</firstline>
-  <quality>korrektur1</quality>
+  <source pages="77"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1959,7 +2009,8 @@ Den snart skal Fødder faae.
 <head>
   <title>Syvende Optrin</title>
   <firstline>Tak kiere Mette</firstline>
-  <quality>korrektur1</quality>
+  <source pages="78-87"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1990,7 +2041,7 @@ Kom lad os gaae Madam.
 <nonum><i>Grete.</i></nonum>
 Jeg fremmer jo dit Vel, i det jeg hører ham.
 
-<nonum><i>Mads.</i></nonum>
+<pb n="79" facs="084.jpg"/><nonum><i>Mads.</i></nonum>
 Erindrer du en Tiid - - -
 
 <nonum><i>Johan.</i></nonum>
@@ -2015,7 +2066,7 @@ Du bliver her Seigneur.
 <nonum><i>Johan.</i></nonum>
 Desverre! du har Ret. (Sagte). Jeg snart af Angest døer!
 
-<nonum><i>Grete.</i></nonum>
+<pb n="80" facs="085.jpg"/><nonum><i>Grete.</i></nonum>
 Du ei dit Beste veed. Jeg veed det, jeg det fremmer,
 Trods dig, trods al din Spot.
 <nonum>  (Til Mads).</nonum>
@@ -2041,7 +2092,7 @@ Endog mod Maddiker jeg Troe og Love holder.
 At Tiden gaaer omsonst, du selv jo kun forvolder.
 Din Banghed qvæler mig; men Løftet er alt giort.
 
-<nonum><i>Johan</i> (afsides).</nonum>
+<pb n="81" facs="086.jpg"/><nonum><i>Johan</i> (afsides).</nonum>
 Jeg døer!
 
 <nonum><i>Mads.</i></nonum>
@@ -2065,7 +2116,7 @@ Men, Mette, hvorfor gav ei du ham dette Svar?
 Du saae jeg i Begrab med at besvime var.
 <nonum>  (Til Mads.)</nonum>
 Og du, en anden gang, naar du seer Folk vil daane,
-Saa viid, at du dem bør for Pølse-Snak forskaane,
+<pb n="82" facs="087.jpg"/>Saa viid, at du dem bør for Pølse-Snak forskaane,
 Hvad skal jeg giøre nu? besvime eller ei?
 Om det for silde er, veed Pokker ikke jeg.
 Jeg i en Lignelse min Mening vil fremsette;
@@ -2088,7 +2139,7 @@ Er bedre end aldeles ingen,
 Og Grete hun seer dybt i Tingen,
   Og hvad hun troer, er reent.
 
-<nonum><i>Mette.</i></nonum>
+<pb n="83" facs="088.jpg"/><nonum><i>Mette.</i></nonum>
 Besvime, skiønt lidt seent, er vores Raad til dig.
 
 <nonum><i>Grete.</i></nonum>
@@ -2112,7 +2163,7 @@ Naar de lastværdige forlade Jorderige.
 Hvad Skam! Hvad Qval! Hvad Striid! Du som min Elsker var,
 Du skulde blive mig til en saa grum Barbar!
 
-<nonum><i>Johan</i> (grædende).</nonum>
+<pb n="84" facs="089.jpg"/><nonum><i>Johan</i> (grædende).</nonum>
 Barbar! jo men! jeg dig mit rette Navn skal sige:
 En Tyveknegt. Men tænk dog ei, jeg kunde vige
 Fra Dyden uden Striid. (Til Mette). Siig du oprigtigen
@@ -2130,7 +2181,7 @@ Aa! bitter knøe! Han døer! Han Hierte har i Brøstet!
 Saa har hans Last omsonst med dette Haab mig trøstet,
 At han kun Skredder var! min Elskers Hierte bor
 Udi hans Brøst, han er en Helt; den Trøst er stor,
-Men Jord! Hvor dyre kiøbt!
+<pb n="85" facs="090.jpg"/>Men Jord! Hvor dyre kiøbt!
 <nonum>  (Til Mads.)</nonum>
 Hør du Ulykkers Fyrste!
 Er der ei meere Blod, hvorefter du kan tørste?
@@ -2158,7 +2209,7 @@ Siig mig, hvor mange er da Trende gange Tretten;
 Thi Trende Furier der er per Helvede,
 Om man har sagt mig sandt.
 
-<nonum><i>Mette.</i></nonum>
+<pb n="86" facs="091.jpg"/><nonum><i>Mette.</i></nonum>
                            Ni - - ni og tredive.
 
 <nonum><i>Mads.</i></nonum>
@@ -2182,7 +2233,7 @@ Jeg uden Sprikvort døer - Herr Jesper! Tienerinde.
 Hvi skulde Mette døe? Jeg ei Aarsagen veed;
 Men naar de alle døe, saa maa jeg og afsted.
 <nonum>   (Han setter Skaalen fra sig.)</nonum>
-I Efterlevende som dette Sted betræde!
+<pb n="87" facs="092.jpg"/>I Efterlevende som dette Sted betræde!
 Som skue disse Liig og ei vor Død begræde,
 I haarde er' som Flint. Saa grum er ingen fød.
 Nei, Efterslægten vist bejamre skal vor Død.
@@ -2213,13 +2264,14 @@ Gid det ei Eder gaae, som det gik denne Stømper!
 <head>
   <title>Epilogue</title>
   <firstline>Jeg er Mercurius, og gid jeg var det ikke!</firstline>
-  <quality>korrektur1</quality>
+  <source in="epilog1776" pages="88-95" facsimile-pages="139-146"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><wrap>(Følgende Tillæg ville Læserne uden Tvivl troe, at Forfatteren uden Skade enten for dem eller ham anger- løs kunde have udeladet, og saa troede Forfatteren, som af ingen anden Aarsag udgiver dette, end blot af Frygt for at see det trykt med flere Feil end hans egne).</wrap></nonum>
+<nonum><wrap>(Følgende Tillæg ville Læserne uden Tvivl troe, at Forfatteren uden Skade enten for dem eller ham angerløs kunde have udeladet, og saa troede Forfatteren, som af ingen anden Aarsag udgiver dette, end blot af Frygt for at see det trykt med flere Feil end hans egne).</wrap></nonum>
 
-<nonum><i>Mercurius</i> (kommer ned fra Olympen under Basuners Lyd, og siger:)</nonum>
+<pb n="89" facs="139.jpg"/><nonum><i>Mercurius</i> (kommer ned fra Olympen under Basuners Lyd, og siger:)</nonum>
 Jeg er Mercurius, og gid jeg var det ikke!
 Man mig i Sinde faaer hvert Øieblik at skikke
 Snart hid, snart did. Det Fad, som just paa Bordet stod,
@@ -2230,7 +2282,7 @@ Da Jupiter, (thi hvad kan han ei falde paa,
 Naar han beskiænket er, og han er ofte saa)
 Mig den Befaling gav: løb ned til dem paa Jorden.
 Spørg, om de har forglemt al gammel Skik og Orden.
-Spørg, hvad Formastelse dem kunde bringe til
+<pb n="90" facs="140.jpg"/>Spørg, hvad Formastelse dem kunde bringe til
 At udelukke os af høie Synge-Spil,
 Og spørg Forfattere, som binde faste Knuder,
 Hvordan de løse dem foruden Hielp af Guder.
@@ -2252,7 +2304,7 @@ Jeg maatte nyde lidt i dette Erte-Fad.
 <nonum>   (Han spiser Erter og snakker som følger:)</nonum>
 Tyvs Privilegium jeg har blant Guder ene;
 Men derved er der nu ei meget at fortiene,
-Man nu ei finder meer, hvorvidt man søge vil,
+<pb n="91" facs="141.jpg"/>Man nu ei finder meer, hvorvidt man søge vil,
 Et Skriin, en Kiste, Skab, som jo er lukket til;
 Man lukte ei for Guld udi den gyldne Alder,
 Nu alting giemmes skal. Hvor sielden forefalder,
@@ -2271,7 +2323,7 @@ Jeg her begynde vil.
 <nonum><i>Jesper</i> (som troer det er Johan, som vil plyndre ham:)</nonum>
                      Johan, i Dødens Rige
 Jeg seer du ei engang fra din Natur kan vige;
-Hvad nytter, saadant nu?
+<pb n="92" facs="142.jpg"/>Hvad nytter, saadant nu?
 
 <nonum><i>Mercurius</i></nonum>
                           Du tager feil min Ven.
@@ -2301,7 +2353,7 @@ Nu skal du døe tilgavns og ei paa skrømt som før.
 <nonum><i>Jesper.</i></nonum>
 Jeg lever op.
 
-<nonum><i>Mercurius.</i></nonum>
+<pb n="93" facs="143.jpg"/><nonum><i>Mercurius.</i></nonum>
               Just, da en fræk Forræders Brøde
 Jeg give vil sin Løn, jeg vækker ham af Døde,
 Og glemmer, hvad et Slag af denne Stok formaaer.
@@ -2327,7 +2379,7 @@ At stiele blev nu mit, jeg Skiæbnens Love følger,
 Og at du ei skal troe, at jeg mit Haandværk dølger,
 Jeg strax vil øve det, og du maa see derpaa.
 
-<nonum><i>Jesper.</i></nonum>
+<pb n="94" facs="144.jpg"/><nonum><i>Jesper.</i></nonum>
 Antag mit ringe Raad; du siden skal tilstaae,
 At det dig gavnlig var: i Steden for at stiele
 De døde Heltes Tøi, saa giv dem nye Siæle;
@@ -2355,7 +2407,7 @@ Den liden Villighed, som du Velgierning kalder;
 Den vises os omsonst, saasnart Forhænget falder,
 Vi bruge ei eengang at sige Tak derfor.
 
-<nonum><i>Mercurius.</i></nonum>
+<pb n="95" facs="145.jpg"/><nonum><i>Mercurius.</i></nonum>
 Med bittre Klagemaal til Jupiter jeg gaaer;
 Jeg skal fortælle ham, hvordan I Guder drille.
 
@@ -2375,7 +2427,8 @@ De Herrer Musici behage nu at spille.
 <head>
   <title>Vaudeville</title>
   <firstline>En Romersk Gud og Siellandsk Skredder</firstline>
-  <quality>korrektur1</quality>
+  <source in="epilog1776" pages="95-96"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2402,7 +2455,7 @@ I klogt og galt den voxer lige.
 Vel os, naar den gaaer galt, den gaaer
    jo galere etc.
 
-<nonum>3. Mette.</nonum>
+<pb n="96" facs="146.jpg"/><nonum>3. Mette.</nonum>
 
 Skal man sig levende begrave,
 For Navn af kloge Folk at have,
