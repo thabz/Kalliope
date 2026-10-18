@@ -88,7 +88,6 @@ import { flushImageSizeCache, imageSizeSync } from './build-static/image.js';
 import {
   poetName,
   workName,
-  workLinkName,
 } from './build-static/formatting.js';
 import {
   pageIntervalError,
@@ -371,24 +370,7 @@ const handle_text = async (
       // vil vi kun vise den ældste variant.
       return primaryTextVariantId(id, collected) === id;
     })
-    .map((id) => {
-      const meta = collected.texts.get(id);
-      const poet = poetName(collected.poets.get(meta.poetId));
-      const work =
-        meta.workId === 'andre' ?
-          null
-        : workLinkName(
-            collected.works.get(sourceWorkKey(meta)),
-          );
-
-      return {
-        id,
-        title: meta.title,
-        poet,
-        poetId: meta.poetId,
-        work,
-      };
-    });
+    .map(id => buildEditionReference(collected.texts.get(id), collected));
   let refsArray = buildRefsArray(textRefIdsByType.mention || []);
   let translationsArray = buildRefsArray(textRefIdsByType.translation || []);
 

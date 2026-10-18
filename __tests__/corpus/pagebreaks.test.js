@@ -295,6 +295,35 @@ En linje fort<pb n="14" facs="021.jpg"/>sætter</poetry></body>
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
+  it('uses a text source’s own facsimile when page numbers restart', () => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Digte</title><year>1900</year><pagebreaks/></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><source pages="385-386"/></head>
+            <body><poetry>Første linje
+<pb n="386" facs="390.jpg"/>Anden linje</poetry></body>
+          </text>
+          <text id="digter1900b">
+            <head><source facsimile="supplement" facsimile-pages-num="2" facsimile-pages="1-2"/></head>
+            <body><poetry>Første linje
+<pb n="387" facs="001.jpg"/>Anden linje</poetry></body>
+          </text>
+          <text id="digter1900c">
+            <head><source facsimile="supplement" facsimile-pages-num="2" facsimile-pages="1-2"/></head>
+            <body><poetry>Første linje
+<pb n="389" facs="000.jpg"/>Anden linje</poetry></body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([
+      'work.xml: pb/@facs must not decrease within one source: 001.jpg before 000.jpg.',
+    ]);
+  });
+
   it('rejects decreasing printed page numbers within one text', () => {
     const xml = `
       <kalliopework id="1900" author="digter">

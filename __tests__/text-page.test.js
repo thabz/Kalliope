@@ -107,7 +107,7 @@ describe('text page breadcrumbs', () => {
     const ref = {
       id: 'other', title: 'De to Røvere', poet: 'Adam Oehlenschläger', poetId: poet.id,
       work: 'Samlede Skrifter (1861)',
-      citation: '<a poem="other">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Poetiske Skrifter</i></a>, udg. af <a poet="liebenberg">F. L. Liebenberg</a>, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
+      citation: '<a poem="other">»De to Røvere«</a>, i: Adam Oehlenschläger: <i>Poetiske Skrifter</i>, udg. af F. L. Liebenberg, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
     };
     Client.text.mockResolvedValue({ ...textData, work: { id: 'digte', title: 'Digte' }, text: {
       ...textData.text,
@@ -123,16 +123,18 @@ describe('text page breadcrumbs', () => {
     expect(editions).toContain('»De to Røvere«</a>, i: ');
     expect(editions).toContain('href="/da/text/other"');
     expect(editions).not.toContain('href="/da/works/oehlenschlaeger"');
-    expect(editions).toContain('href="/da/works/liebenberg"');
-    expect(editions).toContain('href="/da/work/oehlenschlaeger/bd24"');
+    expect(editions).not.toContain('href="/da/works/liebenberg"');
+    expect(editions).not.toContain('href="/da/work/oehlenschlaeger/bd24"');
     expect(editions).toContain('s. 353–356.');
     expect(editions).not.toContain('reference-metadata');
     const source = sections.find(section => section.includes('>Kilde<'));
     expect(source.replace(/<[^>]*>/g, '')).toContain('Adam Oehlenschläger: Digte, 1803, s. 10–12.');
     for (const heading of ['Omtalt i', 'Gendigtning']) {
       const section = sections.find(section => section.includes(heading));
-      expect(section).toContain('Samlede Skrifter (1861)');
-      expect(section).not.toContain(', i:');
+      expect(section).toContain('»De to Røvere«</a>, i: ');
+      expect(section.match(/<a\b/g)).toHaveLength(1);
+      expect(section).toContain('s. 353–356.');
+      expect(section).not.toContain('reference-metadata');
     }
   });
 
