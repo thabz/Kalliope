@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<kalliopework id="1807" author="blicher" status="incomplete" type="poetry">
+<kalliopework id="1807" author="blicher" status="complete" type="poetry">
 <workhead>
   <title>Ossians Digte</title>
   <year>1807-1809</year>
+  <pictures>
+    <picture src="1807-bind1-p1.jpg" type="titlepage" primary="true"><transcription>Ossians / Digte. // Oversatte / af / Steen Steensen Blicher, / Sognepræst til Spentrup og Gassum. // Første Bind. // Kjøbenhavn. / Forlagt af den Wahlske Boghandling. / Trykt hos Andreas Seidelin.</transcription></picture>
+    <picture src="1807-bind2-p1.jpg" type="titlepage"><transcription>Ossians / Digte. // Oversatte / af / Steen Steensen Blicher, / Sognepræst til Spentrup og Gassum. // Andet Bind. // Kjøbenhavn. / Forlagt af den Wahlske Boghandling. / Trykt hos Andreas Seidelin.</transcription></picture>
+  </pictures>
   <notes>
     <note>Digitaliseringen indeholder begge bind med omtrykte titelblade uden årstal. Det Kgl. Bibliotek daterer udgaven til [1807-09].</note>
     <note>Fortalens fejlagtige romertal XVIV og XXVIV er gengivet som trykt.</note>
@@ -28,7 +32,7 @@
 </workhead>
 <workbody>
 
-<section id="blicher2026101701">
+<section>
 <head>
   <title>Første Bind</title>
 </head>
@@ -56,7 +60,7 @@
 </body>
 </text>
 
-<section id="blicher2026101703">
+<section>
 <head>
   <title>Fortale</title>
 </head>
@@ -128,10 +132,10 @@ Af alle litterære Arbejder er intet saa utaknemmeligt som Oversættelse af Digt
 
 <text id="blicher2026101706" ignore-tests="repeated-adjacent-word">
 <head>
-  <title>Kampen med Caros<footnote>Caros er [ulæseligt] Carausius, som i Aaret 284 [ulæseligt] sig Britannien, og overvandt Maximin i [ulæseligt] Søslag, hvorfor han af Digteren kaldes: <w>Skibenes Konge</w>. Han [ulæseligt] Agricolas Vold, som Ossian ogsaa tilkjendegiver i Digtet. Under dete Arbejde er det formodentlig at han angribes af Oscar.</footnote></title>
+  <title>Kampen med Caros<footnote>Caros er formedentligt Carausius, som i Aaret 284 bemægtigede sig Britannine, og overvandt Maximin i flere Søeslag. hvorfor han af Digteren kaldes: <w>Skibenes Konge</w>. Han indstandsatte Agricolas Vold, som Ossian ogsaa tilkjendegiver i Digtet. Under dete Arbejde er det formodentlig at han angribes af Oscar.</footnote></title>
   <notes>
-    <note>Enkelte ord på s. 11–13 er dækket eller udvisket i det digitaliserede eksemplar og gengives som [ulæseligt]. Trykkets henvisningstegn 9 ved Lano på s. 9 svarer til anmærkning 8.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Teksttabet fra et hul i papiret på s. 11–12 er suppleret med læsningerne »den snævre«, »Skygge« og »baaret« efter Steen Steensen Blicher: <i>Samlede Skrifter</i>, bd. 1, udgivet af Jeppe Aakjær og Henrik Ussing, Gyldendalske Boghandel, Nordisk Forlag, København, 1920, s. 32–33. Trykkets henvisningstegn 9 ved Lano på s. 9 svarer til anmærkning 8.</note>
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101812"/>.</note>
   </notes>
   <source pages="1-14" facsimile-pages="38-51" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -169,9 +173,9 @@ Af alle litterære Arbejder er intet saa utaknemmeligt som Oversættelse af Digt
     <w>Oscar</w> tilbragte Natten blandt sine Fædre. Blege Morgen mødte ham paa <w>Caruns</w> Bredder. En Oldtids Gravhøj hæver sig midt i den grønne Dal. Bag den opløfte de mindre Bjerge deres Hoveder, og udstrække de aarrige Træer mod Vinden. Der sadde <w>Caros</w> Krigere, thi de vare gangne over Floden om Natten. De syntes som bedagede Grannestammer i Morgenens blege Skin. <w>Oscar</w> stod ved Højen og hævede tre Gange sin skrækkelige Røst. De gungrende Bjerge gjenløde; de skjælvende Raaer sprunge afsted, og henfarnes bævende Aander flyede skrigende paa deres Skyer. Saa skrækkelig var min Søns Røst, da han raabte paa sine Venner.
     Trindt om blinke tusinde Spyd, de fremmede Kæmper opfore. — <w>Toscars</w> Dotter! hvi denne Taare? Min Søn, skjøndt eene, er kjæk. <w>Oscar</w> er liig Skyens Straale; han hvirvler omkring, og Hærene falde. Hans Haand er liig Armen af en Aand; naar den ud<pb n="11" facs="047.jpg" />strækker den fra en Skye; ej sees de luftige Lemmer, men Folket doer udi Dalen.
     Min Søn skuede den fremskridende Fjende, og stod i sin Styrkes mørke Taushed. — Er jeg allene, sagde <w>Oscar</w> midt iblandt tusinde Fjender? Mangt et Spyd er der; mangt et mørkrullende Øje! — Skal jeg flygte til <w>Ardven</w>? — Men flyede vel mine Fædre? — Deres Hænders Mærke er i tusinde Slag. — <w>Oscar</w> vil og være navnkundig. — Kommer, I mine Fædres dunkle Aander, og skuer min Daad i Strid! — Jeg kan falde, men navnkundig vil jeg være liig stormfulde <w>Morvens</w> Æt!
-    Han stod paa sit Sted og voxte, som en Flod der svulmer i [ulæseligt] Dal. Kampen kom, men de faldt: blodigt var <w>Oscars</w> Sværd. — Buldret naaede hans Hær ved <w>Crona</w>; de kom liig et hundrede Strømme. De fremmede Kæmper flyede, og <w>Oscar</w> stod igjen, liig en Klippe forladt af det ebbende Hav.
+    Han stod paa sit Sted og voxte, som en Flod der svulmer i den snævre Dal. Kampen kom, men de faldt: blodigt var <w>Oscars</w> Sværd. — Buldret naaede hans Hær ved <w>Crona</w>; de kom liig et hundrede Strømme. De fremmede Kæmper flyede, og <w>Oscar</w> stod igjen, liig en Klippe forladt af det ebbende Hav.
     <w>Caros</w> kom med alle sine Gangere, og fremvælted sin viide Hær: de Smaabække forsvandt i hans Løb og trindt om rystede Jorden. — Kampen spreder sig fra Fløj til Fløj: <pb n="12" facs="048.jpg" />ti tusinde Glavind blinke paa eengang i Luften. — Men hvi skulde <w>Ossian</w> sjunge om Kamp? thi aldrig meer skal mit Staal skinne i Striden. — Jeg mindes mine Ungdoms Dage med Sorrig, naar jeg føler min Arms Svaghed. Lykkelige ere de, som falde i deres Ungdom, midt i deres Hæders Glands! — De have ikke seet deres Venners Grave; Deres Arme have ikke svigted ved at spænde Styrkens Bue. — Lykkelig est du, o <w>Oscar</w>, i din susende Skye! Du vandrer ofte til din Hæders Mark, hvor <w>Caros</w> flyede fra dit hævede Sværd.
-    Mørke kommer over min Sjæl, o <w>Toscars</w> faure Dotter! Jeg skuer ikke min Søn ved <w>Carun</w>, ej <w>Oscars</w> [ulæseligt] paa <w>Crona</w>. De susende Vinde have [ulæseligt] ham langt bort; og hans Faders Sjæl er bedrøvet.
+    Mørke kommer over min Sjæl, o <w>Toscars</w> faure Dotter! Jeg skuer ikke min Søn ved <w>Carun</w>, ej <w>Oscars</w> Skygge paa <w>Crona</w>. De susende Vinde have baaret ham langt bort; og hans Faders Sjæl er bedrøvet.
     Men leed mig, o <w>Malvina</w>, til mine Skoves Susen til mine Bjergstrømmes Buldren. Lad Jagten høres paa <w>Cona</w>; at jeg kan tænke paa fremfarne Dage. Og ræk mig Harpen, o Møe, at jeg kan røre den, naar min Sjæls Lys mon opstige. — Vær du nær, at lære min Sang, og kommende Tider skulle høre om <w>Os<pb n="13" facs="049.jpg" />sian</w>. Fremtidens svage Sønner ville hæve deres Røst, skue op til Klipperne og sige: ”her boede <w>Ossian</w>!” De skulle beundre Oldtids Helte, og den Slægt, som er ikke mere: mens vi ride paa vore Skyer, <w>Malvina</w>, paa Vindenes susende Vinger. Vore Stemmer skal høres i Ørken, og vi skulle sjunge paa Bjergenes Storme.
 </prose>
 </body>
@@ -206,8 +210,8 @@ Barder.
   <title>Comala</title>
   <subtitle>Et Dramatisk Digt<footnote>Dette lille Digt er mærkværdigt i to Henseender. For det første er det i en ganske anden Digtart end alle de øvrige, nemlig i den dramatiske. Versartens Forskjællighed i Originalen viser at det var sat til Musik; og det blev rimmeligviis opført ved visse højtidelige Anledninger. At deres Barder og Sangerinder i slige Tilfælde maatte tjene som Skuespillere og Skuespillerinder kan man see af Carric-Thura. For det andet giver det en vigtig Oplysning om Ossians<footnote type="errata">om Ossians] paa Ossians</footnote> <pb n="26" facs="062.jpg" />Ælde. Den her omtalte Caracul er nemlig ingen anden end Caracalla, som i Aaret 211 anførte et Tog mod Caledonierne. — Denne Tildragelse er ved Traditioner leveret os mere fuldstændig, end den findes i Digtet. ”Comala, en Datter af Sarno Kongen paa Inistore eller Ørkenøerne, var bleven forelsket i Fingal, ved en Fest, hvortil hendes Fader havde indbudet ham, (Fingal 3die Bog) ved hans Tilbagekomst fra Lochlin efter Agandeccas Død. Hun fulgte nu Fingal i mandlig Dragt; men blev snart røbet af Hidallan hvis Kjerlighed hun kort tilforn havde afslaaet. — Fingal elskede hende, og besluttede at tage hende til ægte, da han i det samme maatte drage ud mod Caracul. Comala fulgte ham til et Bjerg ikke langtfra den fiendtlige Hær og ventede der paa hans Gjenkomst. Paa dette Bjerg er Scenen i Digtet henlagt, hvori tillige findes Slutningen af Historien.</footnote></subtitle>
   <notes>
-    <note>Titelfodnoten begynder på s. 24. Trykkets henvisninger 3 og 4 er ombyttede i forhold til anmærkningslisten. Noterne er her forbundet med henholdsvis Klippens Søn og Verdens Kongesøn.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Trykkets henvisninger 3 og 4 er ombyttede i forhold til anmærkningslisten. Noterne er her forbundet med henholdsvis Klippens Søn og Verdens Kongesøn.</note>
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101804"/>.</note>
   </notes>
   <source pages="15-27" facsimile-pages="52-64" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -307,8 +311,7 @@ Jagten er forbi. — Kun Bækkens Rislen lyder over <w>Ardven</w>.—<w>Mornis</
 <head>
   <title>Inis-thona</title>
   <notes>
-    <note>Et kort ord på s. 28 er udvisket i det digitaliserede eksemplar og gengives som [ulæseligt].</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101815"/>.</note>
     <note type="source">Dette Digt er en Episode af et stort Heltedigt, som er forkommet; dog levede der i <w>Macphersons</w> Tid gamle Mænd, som i deres Ungdom havde hørt det recitere.</note>
   </notes>
   <source pages="28-36" facsimile-pages="65-73" />
@@ -316,7 +319,7 @@ Jagten er forbi. — Kun Bækkens Rislen lyder over <w>Ardven</w>.—<w>Mornis</
 </head>
 <body>
 <prose>
-Vor Ungdom er liig Jægerens Drøm paa det lynggroede Bjerg. [ulæseligt] Han indslumrer i Solens milde Straaler, men vogner midt i en Storm; trindt om ham flyve de røde Lyn, og Vinden ryster Træernes Toppe. Med Fryd skuer han tilbage paa Solens Dag, og sin Hviles forlystende Drømme.
+Vor Ungdom er liig Jægerens Drøm paa det lynggroede Bjerg. Han indslumrer i Solens milde Straaler, men vogner midt i en Storm; trindt om ham flyve de røde Lyn, og Vinden ryster Træernes Toppe. Med Fryd skuer han tilbage paa Solens Dag, og sin Hviles forlystende Drømme.
     Naar skal <w>Ossians</w> Ungdom vende tilbage, og hans Øre forlystes ved Vaabnenes Klang? Naar skal jeg, liig <w>Oscar</w>, vandre i mit Staals Glands? Kommer med eders Strømme, I <w>Conas</w> Bjerge, og lytter til <w>Ossians</w> <pb n="29" facs="065.jpg" />Røst! Sangen stiger, liig Solen, i min Sjæl, og mit Hjerte føler Fortids Glæder.
     Jeg seer<footnote type="errata">Jeg seer] Idg seer</footnote> mine Taarne, o <w>Selma</w>! og Eegene paa din beskyggede Vold: — Dine Strømme lyde for mit Øre; dine Helte forsamle sig trindt om. <w>Fingal</w> sidder i Midten, og støtter sig paa <w>Trenmors</w> Skjold: hans Spyd staaer op til Muren; han lytter til sine Barders Kvad. De prise hans vældige Arm, hans Ungdoms Stordaad.
     <w>Oscar</w> kom fra Jagten, og hørte Heltens Lov. Han tog <w>Brannos</w> Skjold fra Muren; hans Øjne fyldtes med Taarer. Rød var Ynglingens Kind. Hans Røst var skjælvende, svag. Mit Spyd rystede sin blinkende Od i hans Haand: han talte til <w>Morvens</w> Konge.
@@ -348,7 +351,7 @@ Vor Ungdom er liig Jægerens Drøm paa det lynggroede Bjerg. [ulæseligt] Han in
   <title>Carric-thura</title>
   <notes>
     <note>Henvisningstegnet efter Annir på s. 48 er trykt 7, men svarer til anmærkning 6. Anmærkning 9 har intet synligt henvisningstegn på s. 51 og gengives derfor som en note til hele teksten.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101805"/>.</note>
     <note type="source">Hun frygtede at Frothals gamle Kjerlighed til Comala skulde opvogne; hun har da ikke endnu spurgt hendes Død.</note>
   </notes>
   <source pages="37-61" facsimile-pages="74-98" />
@@ -474,8 +477,8 @@ Har du forladt dit blaae Løb i det Høje, Himlens guldlokkede Søn? Vesten har 
   <subtitle>Første Sang<footnote><pb n="85" facs="121.jpg" />I den eng. Oversættelse kaldes dette Digts trende Inddelinger ikke — Songs; — men Duan et galisk Ord, som betyder: et Digt, der ofte afbrydes ved Episoder og Apostropher.</footnote></subtitle>
   <toctitle>Første Sang</toctitle>
   <notes>
-    <note>Brødteksten står på s. 62–71 og anmærkningerne på s. 85–86. Mellemliggende sider hører til de næste sange. Trykkets stjernetegn efter hvyslende på s. 69 har ingen tilsvarende anmærkning i den trykte noteliste.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Trykkets stjernetegn efter hvyslende på s. 69 har ingen tilsvarende anmærkning i den trykte noteliste.</note>
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101801"/>.</note>
   </notes>
   <source pages="62-86" facsimile-pages="99-123" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -517,8 +520,7 @@ Et Oldtids Kvad! — Hvorfor, o Vandrer, du som usynlig bøjer <w>Loras</w> Tids
   <subtitle>Anden Sang.</subtitle>
   <toctitle>Anden Sang</toctitle>
   <notes>
-    <note>Brødteksten står på s. 71–78 og anmærkningerne på s. 86. Mellemliggende sider hører til næste sang.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101802"/>.</note>
   </notes>
   <source pages="71-86" facsimile-pages="108-123" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -555,8 +557,7 @@ Hvor est du, Kongesøn<footnote><pb n="86" facs="122.jpg" />Fingal er endnu ej k
   <subtitle>Tredie Sang.</subtitle>
   <toctitle>Tredie Sang</toctitle>
   <notes>
-    <note>Brødteksten står på s. 78–84 og anmærkningerne på s. 86. Et delvis overdækket ord på s. 83 gengives som [ulæseligt].</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101803"/>.</note>
   </notes>
   <source pages="78-86" facsimile-pages="115-123" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -572,7 +573,7 @@ Hveden er Aaarenes Strøm? hvorhen monne de bortrinde? Hvor have de skjult i Mul
     Paa sin Klippe sad ranke <w>Cormantrunar</w>, ved den brændende Eeg; og nær hos under et Træe sad dybbarmede <w>Foinar-Bragal</w>. Jeg nedkastede for dem mit gjennemborede Skjold, og talte Fredens Ord. — ”Ved hiint buldrende Hav ligger <w>Annir</w>. Kongen er dræbt i Slaget; og <w>Starno</w> vil nu oprejse hans Grav. Mig, en <w>Lodas</w> Søn, skikker han til hvidarmede <w>Foinarbragal</w>, at bede hende sende en Lok af sit Haar, til at hvile hos hendes Fader i Jorden. — Og du brusende <pb n="82" facs="118.jpg" /><w>Urlors</w> Konning! Lad Kampen ophøre, indtil <w>Annir</w> har modtaget Bægret af grumøjede <w>Cruthloda</w>”.
     Bristende i Taarer stod hun op, og rev en Lok af sit Haar; en Lok, som flaggrede i Vinden ned over hendes bølgende Bryst. <w>Cormantrunar</w> rakte mig Bægret, og bød mig være glad for hans Aasyn. — Jeg hvilte i Nattens Skygge! og skjulte mit Ansigt dybt i min Hjelm. — Søvn sank ned over Fjenderne. Jeg stod op, liig et omvankende Gjenfærd. Jeg gjennemstak <w>Cormantrunars</w> Side. <w>Foinarbragal</w> væltede sin hvide Barm i Blod. Hvi da, Kongedotter, opvakte du min Vrede? — Morgen fremsteeg. Som en forsvunden Taage var Fjenden flyet. <w>Annir</w> slog sit buglede Skjold. Han kaldte sin sortlokkede Søn. Jeg kom, med Blodstrimer bestænket. Tregange opløftede Kongen sit Glædesskriig, liig Vindstød, der frembriste fra den natlige Skye. — Tre Dage jublede vi over de døde, og nedkaldte Himmelens Ravne. De kom fra alle deres Vinde, at mætte sig paa <w>Annirs</w> Fjender. — <w>Swaran</w>! — <w>Fingal</w> er ene <pb n="83" facs="119.jpg" />paa sit natlige Bjerg. Lad dit Spyd ramme Kongen i Løndom; som <w>Annir</w>, min Sjæl skal fryde sig.
     <w>Annirs</w> Søn! <w>Swaran</w> skal ikke slaae i Skygger. Jeg gaaer frem i Lys; Ravnene komme farende fra alle deres Vinde. De ere vante at spore mit Løb; det er blodbestænkt gjennem Kamp.
-    Brændende steeg Kongens Vrede. Tre Gange hævede han det blinkende Spyd. Men [ulæseligt] og sparte sin Søn; han foer ind i Mørket. — Ved <w>Turthors</w> Elv er en Hule mørk, <w>Conbancarglas</w> eensomme Bolig. Der nedlagde han Kongers Hjelm, og raabte paa <w>Lulans</w> Møe; men hun var langt borte i <w>Lodas</w> dundrende Hald.
+    Brændende steeg Kongens Vrede. Tre Gange hævede han det blinkende Spyd. Men gøs og sparte sin Søn; han foer ind i Mørket. — Ved <w>Turthors</w> Elv er en Hule mørk, <w>Conbancarglas</w> eensomme Bolig. Der nedlagde han Kongers Hjelm, og raabte paa <w>Lulans</w> Møe; men hun var langt borte i <w>Lodas</w> dundrende Hald.
     I sin svulmende Vrede stalkede han didhen hvor <w>Fingal</w> afsides laae. Kongen hvilte paa sit Skjold, paa sin eenlige Høj. — Vildorners barske Jæger! Ingen svag Pige ligger her for dig; ingen Dreng paa sit Bregneleje, ved <w>Turthors</w> raslende Elv. Her er den vældiges Seng, hvorfra han opstaaer til blo<pb n="84" facs="120.jpg" />dig Daad. — Vildornejæger! Væk ej den forfærdelige!
     Brummende nærmede <w>Starno</w> sig. <w>Fingal</w> opfoer i Vaaben. ”Hvo er du Nattens Søn”? Taus kastede han Spydet. De mødtes i den skumle Kamp; kløvet faldt <w>Starnos</w> Skjold. — Han bindes til en Eeg. Den tidlige Straale lyste. Da saae <w>Fingal</w> <w>Gormals</w> Konge. En Stund rullede han sine tause Øjne. Han tænkte paa fordums Dage, da hvidbarmede <w>Agandecca</w> fremsvæved liig Harpens Bølgende Toner. Han løste Remmen fra hans Hænder. — <w>Annirs</w> Søn, sagde han, Gak bort! Gak til <w>Gormal</w>, Skallersborg. En Straale, som var dalet, vender tilbage; Jeg mindes din hvidbarmede Dotter. — Skrækkelige Konge, bort! — Gaae til din forstyrrede Bolig, du den elskeliges skumle Fjende! — Vandreren skye dig, du grumme i din Borg!
 <center>Et Oldtids Kvad!</center>
@@ -588,7 +589,7 @@ Hveden er Aaarenes Strøm? hvorhen monne de bortrinde? Hvor have de skjult i Mul
   <title>Oina-Morul</title>
   <notes>
     <note>Trykkets sammenløbne ord HjelmToscars på s. 88 er bevaret.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101807"/>.</note>
   </notes>
   <source pages="87-93" facsimile-pages="124-130" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -618,8 +619,8 @@ Som den ustadige Soel flyver over <w>Larmons</w> grønne Høje; saa glide Oldtid
 <head>
   <title>Goel</title>
   <notes>
-    <note>Trykkets sidetal 110 er vendt til 011. Det gengives som 011 [110] i sidehenvisningen. Oversætterens afsluttende anmærkning på s. 113 følger som en selvstændig tekstpost. Et defekt ord i anmærkning 4 på s. 112 er gengivet som [ulæseligt].</note>
-    <note unknown-original-by="macpherson" />
+    <note>Trykkets sidetal 110 er vendt til 011. Det gengives som 011 [110] i sidehenvisningen. Oversætterens afsluttende anmærkning på s. 113 følger som en selvstændig tekstpost.</note>
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101823"/>.</note>
   </notes>
   <source pages="94-112" facsimile-pages="131-149" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -638,7 +639,7 @@ Som den ustadige Soel flyver over <w>Larmons</w> grønne Høje; saa glide Oldtid
     <w>Comhals</w> Søn, svarde Helten. Min Arms Styrke er forsvunden. Jeg forsøger at drage min Ungdoms Sværd; men det bliver i Balgen. Jeg kaster Spydet; men det rækker ikke Maalet, og jeg føler mit Skjolds Tyngde. Vi henvisne liig Bjergets Blomster, og vor Kraft kommer aldrig tilbage. Jeg haver en Søn, o <w>Fingal</w>, hans Sjæl har frydet sig ved <w>Mornis</w> Ungdoms Daad; men hans Hæder er ikke begyndt. Jeg kommer med ham til Striid, at styre hans Arm. Hans Roes vil <pb n="99" facs="135.jpg" />være som Solen for min Sjæl i min Henfarts mørke Time. O at <w>Mornis</w> Navn var forglemt iblandt Folket! at Heltene kun ville sige: seer <w>Goels</w> Fader<footnote>”Gid Goel maae blive saa berømt, at man vil glemme mig for ham”!</footnote>!
     <w>Strumons</w> Konge, svarede <w>Fingal</w>, <w>Goel</w> skal hæve Sværdet i Striid. Men han skal hæve det for <w>Fingal</w>. Min Arm skal forsvare hans Ungdom. Du, o <w>Morni</w>, hvile i <w>Selmas</w> Borg og høre vor Roes. Lad Harpen klinge, og Skjalden hæve sin Røst, at de som falde kunne fryde sig, og <w>Mornis</w> Sjæl skinne af Glæde. — <w>Ossian</w>, du har kæmpet i Striid: Fjenders Blod er paa dit Spyd; dit Løb være med<footnote type="errata">dit Løb være med] dit Løb vær med</footnote> <w>Goel</w> i Kampen; men viger ikke fra <w>Fingals</w> Side; at ej Fjenden skal finde eder allene, og eders Ære pludselig henvisne.
     Jeg saae <w>Goel</w> i sin Rustning, og min Sjel blandedes med hans; thi Kampens Ild var i hans Øjne! Han saae til Fjenden med Fryd. I Løndom talte vi Venskabs Ord, og vore Sværdes Lynild sammenstrømmede; for vi drog dem bag Skoven, og forsøgte vore Armes Styrke paa den tomme Luft.
-<pb n="100" facs="136.jpg" />    Nat kom ned over <w>Morven</w>. <w>Fingal</w> sad ved Eegens Flamme; <w>Morni</w> ved hans Side med alle sine graae bølgende Lokker. Deres Samtale er om henfarne Tider og deres Fædres Daad. Tre Barder slaae Harpen, og <w>Ullin</w> var nær med sin Sang. Han sang om den vældige <w>Comhal</w>, men Mørke udbreder sig over <w>Mornis</w> Pande<footnote>Mornis Fortrydelse rejser sig ikke af noget Had [ulæseligt] Comhal, Fingals Fader, skjøndt denne var falden i et Slag mod ham; men af Frygt for at Fingal skulde bringes i Erindring om sin Faders Fjendskab med Morni.</footnote>. Han rullede sit røde Øje paa <w>Ullin</w>; og Skjaldens Sang ophørte. <w>Fingal</w> gav Agt paa den bedagede Helt, og talte blidelig.
+<pb n="100" facs="136.jpg" />    Nat kom ned over <w>Morven</w>. <w>Fingal</w> sad ved Eegens Flamme; <w>Morni</w> ved hans Side med alle sine graae bølgende Lokker. Deres Samtale er om henfarne Tider og deres Fædres Daad. Tre Barder slaae Harpen, og <w>Ullin</w> var nær med sin Sang. Han sang om den vældige <w>Comhal</w>, men Mørke udbreder sig over <w>Mornis</w> Pande<footnote>Mornis Fortrydelse rejser sig ikke af noget Had til Comhal, Fingals Fader, skjøndt denne var falden i et Slag mod ham; men af Frygt for at Fingal skulde bringes i Erindring om sin Faders Fjendskab med Morni.</footnote>. Han rullede sit røde Øje paa <w>Ullin</w>; og Skjaldens Sang ophørte. <w>Fingal</w> gav Agt paa den bedagede Helt, og talte blidelig.
     <w>Strumons</w> Konge, hvi dette Mørke? Lad os glemme de forbigangne Dage. Vore Fædre strede mod hverandre; men vi mødes ved Festen. Vi vende vore Glavind mod Fjenderne og de smelte for os paa Sletten. Lad os glemme vore Fædres Dage, <w>Strumons</w> Konge!
     <w>Fingal</w> — svarede Helten — jeg mindes din Fader med Fryd. Han var skrækkelig i Kampen; Kongens Vrede var dødbringende. Mine Øjne vare fulde af Taarer da Heltenes Konge faldt. De tappre falde, o <w>Fingal</w>, og de svage blive tilbage paa Bjergene. Hvor <pb n="101" facs="137.jpg" />mange Ædlinge have faret heden i <w>Mornis</w> Dage! Dog skyede jeg ikke Kampen; ej heller flyede jeg fra de kjækkes Striid.
     Nu hvile <w>Fingals</w> Venner; thi Nat er trindt om os; at de kunne opstaae med Kraft, til Kamp mod vognbaarne <w>Lathmon</w>. Jeg hører Buldret i hans Lejr, liig Torden paa fjerne Hede. <w>Ossian</w>! og haarfagre <w>Goel</w>! I ere hurtige i Løbet. Tager vare paa <w>Fingals</w> Fjender fra hiint skovgroede Bjerg. Men kommer dem ej nær, eders Fædres Sværd ere langt borte. Lad ikke eders Ære paa eengang tabes, Ungdoms Tapperhed kan svigte.
@@ -689,7 +690,7 @@ Som den ustadige Soel flyver over <w>Larmons</w> grønne Høje; saa glide Oldtid
 <head>
   <title>Oi-thona<footnote>Dette Digt er en Fortsættelse af det forrige thi da Lathmon var overvunden, ledsagede Goel ham hjem til Dunlathmon, hvor han forlovede sig med hans Søster Oithona. Imidlertid maatte Goel gjøre et Tog til Britannien med Fingal, og Lathmon følge sin Fader Nuath i en anden Krig. Af disses Fraværelse benytter nu Dunrommath sig og bortfører Oithona. Digtet selv indeholder Slutningen. Det være mig her tilladt at anmærke, at Ossian af alle episke Digtere er den galanteste mod det smukke Kjøn, og at han stedse veed at skildre det i hele sin tryllende Ynde; i Oithonas Karakter har han især lagt en Yndighed, Fiinhed og Delicatesse, som vilde pryde den meest oplyste Tidsalders fuldkomneste Kvinde.</footnote></title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101809"/>.</note>
   </notes>
   <source pages="114-124" facsimile-pages="151-161" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -735,8 +736,8 @@ Mørket boer i <w>Dunlathmon</w>, skjøndt Maanen halvt fremviser sit Ansigt paa
   <subtitle>Første Sang.</subtitle>
   <toctitle>Første Sang</toctitle>
   <notes>
-    <note>Et ord på s. 148 er udvisket og gengives som [ulæseligt]. Henvisningen 7 på s. 143 svarer til anmærkning 6.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Henvisningen 7 på s. 143 svarer til anmærkning 6.</note>
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101817"/>.</note>
   </notes>
   <source pages="127-151" facsimile-pages="164-188" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -788,7 +789,7 @@ Mørket boer i <w>Dunlathmon</w>, skjøndt Maanen halvt fremviser sit Ansigt paa
     Gamle <w>Carril</w> gik med blideste Røst, og talte til mørkbrune Skjoldes Konning: Stat op fra din Bjørnehud, stat op <w>Swaran</w>! <pb n="146" facs="182.jpg" /><w>Cuchullin</w> giver Skallernes Fryd; gak hid til <w>Erins</w> Herres Fest!
     Han svarte som <w>Cromlas</w> hule Drøn før en Storm: skjønt alle dine Døttre, <w>Inis-fael</w>, vilde udstrække deres sneehvide Arme; hæve højt deres Barme, og omtrulle deres smilende Øjne; dog fast som <w>Lochlins</w> tusinde Klipper skal <w>Swaran</w> stande her; til Morgnen, med mit Østens unge Straaler, skal lyse mig til <w>Cuchullins</w> Død. Liflig i mit Øre er <w>Lochlins</w> Vind; den farer over mine Have. Den taler højt i alle mine Touge, og minder mig om mine grønne Skove; <w>Gormals</w> grønne Skove, der ofte gjenlød af mine Storme, naar mit Spyd var rødt i Vildornens Blod. Mørke <w>Cuchullin</w> rømme <w>Cormacs</w> gamle Trone til mig, eller <w>Erins</w> Floder skulle vise fra deres Bjerge hans Stoltheds røde skummende Blod.
     Sorgelig er Lyden af <w>Swarans</w> Røst; sagde Oldtids <w>Carril</w>.
-    Sorgelig for ham selv allene, sagde <w>Semos</w> blaaøjede Søn. Men <w>Carril</w>, hæv højt din Stemme, og kvæd om Oldtids <pb n="147" facs="183.jpg" />Daad. Send Natten bort i Sang; giv os Tungsinds Fryd. Thi mangen Helt og elskende Møe har vandret i grønne <w>Innis-fael</w>. Og liflige ere Sorgens Sange, som lyde paa <w>Albions</w> Bjerge; naar Jagtens Larm er forbi, og <w>Conas</w> Strømme gjenlyde af <w>Ossians</w> Røst. — I fordums Dage, kvad <w>Carril</w>, kom Havets Sønner til <w>Erin</w>. Tusinde Snekker gled over Bølgerne til <w>Ullins</w> yndige Sletter. <w>Erins</w> Sønner opstode at møde de mørkbrune Skjoldes Æt. <w>Carbar</w>, den første blant Mennesker var der, og <w>Grudar</w>, den gjæveste Yngling. Længe havde de stredet om den plettede Tyr, som brølte over <w>Golbuns</w> susende Hede. Begge fordrede den som sin Ejendom; og Død var ofte paa deres Sværdes Od. — Side ved Side strede de Helte, og Havets Sønner flyede. Hvis Navn var herligere paa Bjerget, end <w>Carbars</w> og <w>Grudars</w>? — Men ak! hvi brølte stedse den plettede Tyr paa <w>Golbuns</w> susende Hede? De saae ham springe hvid som Snee — De Ædlinges Vrede kom nye igjen. — De strede <pb n="148" facs="184.jpg" />paa <w>Lubars</w> græsrige Bred, og <w>Grudar</w>, liig en Soelstraale, sank. Barske <w>Carbar</w> kom til gjenlydende <w>Turas</w> Dal; hvor <w>Brassolis</w>, den faureste blant hans Søstre, i Eensomhed, kvad sin Kummers Sang. Hun kvad om <w>Grudars</w> Daad, hendes lønligt Hjertes Yngling. — Hun begræd ham paa Blodmarken; dog haabed hun stedse hans Gjenkomst. Bag hendes Slør sees hendes hvide Barm, som Maanen bag Nattens Skyer. Hendes Røst var lifligere end Harpen, til at opløfte Sorgens Sang. Hendes Sjæl var fæstet til <w>Grudar</w>; hans var hendes [ulæseligt] lønlige Blik.
+    Sorgelig for ham selv allene, sagde <w>Semos</w> blaaøjede Søn. Men <w>Carril</w>, hæv højt din Stemme, og kvæd om Oldtids <pb n="147" facs="183.jpg" />Daad. Send Natten bort i Sang; giv os Tungsinds Fryd. Thi mangen Helt og elskende Møe har vandret i grønne <w>Innis-fael</w>. Og liflige ere Sorgens Sange, som lyde paa <w>Albions</w> Bjerge; naar Jagtens Larm er forbi, og <w>Conas</w> Strømme gjenlyde af <w>Ossians</w> Røst. — I fordums Dage, kvad <w>Carril</w>, kom Havets Sønner til <w>Erin</w>. Tusinde Snekker gled over Bølgerne til <w>Ullins</w> yndige Sletter. <w>Erins</w> Sønner opstode at møde de mørkbrune Skjoldes Æt. <w>Carbar</w>, den første blant Mennesker var der, og <w>Grudar</w>, den gjæveste Yngling. Længe havde de stredet om den plettede Tyr, som brølte over <w>Golbuns</w> susende Hede. Begge fordrede den som sin Ejendom; og Død var ofte paa deres Sværdes Od. — Side ved Side strede de Helte, og Havets Sønner flyede. Hvis Navn var herligere paa Bjerget, end <w>Carbars</w> og <w>Grudars</w>? — Men ak! hvi brølte stedse den plettede Tyr paa <w>Golbuns</w> susende Hede? De saae ham springe hvid som Snee — De Ædlinges Vrede kom nye igjen. — De strede <pb n="148" facs="184.jpg" />paa <w>Lubars</w> græsrige Bred, og <w>Grudar</w>, liig en Soelstraale, sank. Barske <w>Carbar</w> kom til gjenlydende <w>Turas</w> Dal; hvor <w>Brassolis</w>, den faureste blant hans Søstre, i Eensomhed, kvad sin Kummers Sang. Hun kvad om <w>Grudars</w> Daad, hendes lønligt Hjertes Yngling. — Hun begræd ham paa Blodmarken; dog haabed hun stedse hans Gjenkomst. Bag hendes Slør sees hendes hvide Barm, som Maanen bag Nattens Skyer. Hendes Røst var lifligere end Harpen, til at opløfte Sorgens Sang. Hendes Sjæl var fæstet til <w>Grudar</w>; hans var hendes Øjes lønlige Blik.
     ”Naar vilt du komme i din Rustning, du stærke i Striid”? <w>Carbar</w> kom og sagde: <w>Brassolis</w>, tag dette Blodskjold: Hæng det højt i min Hald, det er min Fiendes. — Hendes ømme Hjerte banker mod hendes Side. Bleg, fortvivlet fløj hun — hun fandt sin Yngling udi sit Blod — hun døde paa <w>Cromlas</w> Hede. Her hviler deres Støv, <w>Cuchullin</w>! og disse to ensomme Træer, fremspirede fra deres Grave, ønske at mødes i Luften. <pb n="149" facs="185.jpg" />Dejlig var <w>Brassolis</w> i Dalen, og <w>Grudar</w> paa Bjerget. Skjalden skal bevare deres Navne, og gjentage dem for kommende Tider.
 
     Liflig er din Røst, o <w>Carril</w>, sagde <w>Erins</w> blaaøjede Fyrste; og elskelige ere Oldtids Sagn. De ere som Vaarens milde Regn, naar Solen straaler over Marken, og den lette Skye flyder over Bjergene. O slaae din Harpe til min elskedes Priis, <w>Dunscachs</w> ensomme Solstraale. Slaae Harpen til <w>Bragelas</w> Priis, <w>Cuchullins</w> Viv, som han forlod paa sin Taageøe<footnote><w>Taageøen</w>: Den Sky, hvor Cuchullin var Konge.</footnote>. Hæver du dit faure Ansigt fra Klippen, for at finde <w>Cuchullins</w> Sejl? Langt borte ruller Havet, og dets hvide Skum vil skuffe dig. Gak tilbage, min elskte, for det er Nat, og de mørke Vinde sukke i dit Haar; gak tilbage til mine Glæders Borg, og tænk paa de svundne Tider: thi jeg vil ikke komme igjen, før Kampens Storm er forbi. <w>Connal</w>, tæl om Vaaben og Krige, og leed hende bort fra min Sjæl; for elskelig med hendes Ravnehaar er <w>Sorglans</w> hvidbarmede Dotter.
@@ -804,7 +805,7 @@ Mørket boer i <w>Dunlathmon</w>, skjøndt Maanen halvt fremviser sit Ansigt paa
   <subtitle>Anden Sang.</subtitle>
   <toctitle>Anden Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101818"/>.</note>
   </notes>
   <source pages="152-169" facsimile-pages="189-206" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -865,7 +866,7 @@ Mørket boer i <w>Dunlathmon</w>, skjøndt Maanen halvt fremviser sit Ansigt paa
   <toctitle>Tredie Sang</toctitle>
   <notes>
     <note>Anmærkning 3 har intet synligt henvisningstegn i trykket og gengives som en note til hele sangen.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101819"/>.</note>
     <note type="source">See mere om Calmars Moder i Digtet, Cuchullins Død.</note>
   </notes>
   <source pages="170-189" facsimile-pages="207-226" />
@@ -930,7 +931,7 @@ Mørket boer i <w>Dunlathmon</w>, skjøndt Maanen halvt fremviser sit Ansigt paa
   <toctitle>Fjerde Sang</toctitle>
   <notes>
     <note>Trykkets anmærkninger 1 og 2 har ingen synlige henvisningstegn i teksten. De gengives som noter til hele sangen; der er ikke indsat gættede henvisningstegn i brødteksten.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101820"/>.</note>
     <note type="source">Dette gjorde Ossian vist ikke af grusom Fryd over sin Fiendes Død; men for at bringe Cormacs Kæmper til at flye.</note>
     <note type="source">Her endes Episoden om Ossians Frierie, og Handlingen fortsættes.</note>
   </notes>
@@ -996,7 +997,7 @@ Hvo kommer sjungende fra Bjerget, liig <w>Lenas</w> Regnbue? Det er <w>Toskars</
   </subtitle>
   <toctitle>Femte Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101821"/>.</note>
   </notes>
   <source pages="209-224" facsimile-pages="246-261" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1054,7 +1055,7 @@ Saa vare <w>Connals</w> Ord, da Kongerne mødtes midt iblandt deres synkende Kæ
   <subtitle>Sjette Sang.</subtitle>
   <toctitle>Sjette Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101822"/>.</note>
   </notes>
   <source pages="225-241" facsimile-pages="262-278" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1112,7 +1113,7 @@ Nattens Skyer komme rullende ned, og hvile paa <w>Cromlas</w> mørkbrune Fjeld. 
 <head>
   <title>Aldo</title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101826"/>.</note>
   </notes>
   <source pages="242-254" facsimile-pages="279-291" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1160,7 +1161,7 @@ Fjernlandets Søn<footnote>Dette Digt kaldes i Originalen: Duan a <i>chuldich</i
   <title>Cuchullins Død</title>
   <notes>
     <note>Anmærkning 1 har intet synligt henvisningstegn i trykket og gengives som en note til hele teksten.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101825"/>.</note>
     <note type="source">Dette er Sangen, som Ossian forestiller sig, han hører Bragela synge.</note>
   </notes>
   <source pages="255-268" facsimile-pages="292-305" />
@@ -1214,7 +1215,7 @@ Rører Vinden <w>Fingals</w> Skjold? Eller er de fremfarne Dages Stemme i min Bo
   <title>Darthula<footnote>Usnoth Konge i — maaskee en Deel af Argyleshire ved Loch Eta — havde tre Sønner Nathos, Althos og Ardan ved Slislama, Semos Dotter og Cuchullins Søster. Disse sendte han over til Cuchullin i Irland for at øves i Krig. De ankom just da Cuchullin var død, og Nathos antog nu Commandoen over Cormacs Armee, overvandt Carbar i flere Slag; men da Carbar tilsidst myrdede Cormac, faldt Hæren fra Nathos, og han selv med sine Brødre nødtes til at forlade Irland. Darthula, som Carbar havde indspærret, flyede med dem; men Modvind kastede dem tilbage i en Bugt, som paa begge Sider var besat af Carbars Hær. Digtet indeholder det øvrige af Historien.</footnote></title>
   <notes>
     <note>Anmærkning 7 har intet synligt henvisningstegn i trykket og gengives som en note til hele teksten.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101824"/>.</note>
     <note type="source">Ossian</note>
   </notes>
   <source pages="269-292" facsimile-pages="306-329" />
@@ -1282,7 +1283,7 @@ Dejlig est du, Himmelens Dotter! Forlystende er dit Ansigts Taushed. Du strider 
 </content>
 </section>
 
-<section id="blicher2026101727">
+<section>
 <head>
   <title>Andet Bind</title>
 </head>
@@ -1300,8 +1301,7 @@ Dejlig est du, Himmelens Dotter! Forlystende er dit Ansigts Taushed. Du strider 
   <subtitle>Første Sang.<footnote><pb n="25" facs="357.jpg" />Indholdet af Temora er kortelig følgende: efter Cuchullins Død har Carbar, Konge over Firbolgerne i det sydlige Irland, myrdet den unge Konge Cormac i Temora. See Tem. 1ste Sang! — Fingal, alle de betrængtes Støtte gjør et Tog til Irland for at fordrive Carbar, og sikkre den unge Feradartho den irske Trone. See Tem. 8de Sang. — Carbar, som for en anden Begivenhed havde et særdeles Had til Oscar indbyder ham til en Fæst og myrder ham der, men dræbes tillige selv af Oscar. Cathmor, Carbars Broder, kommer nu for at hjelpe ham, og da han finder ham død, tilegner sig den usurperede Trone. Efter flere Slag, og og efter at have nedlagt Fillan, Fingals Søn, falder han tilsidst for Fingals Haand. Fingal indsætter nu Feradartho i sine Fædres Rige, og afstaaer Regjeringen over Morven til sin Søn Ossian. Dette Digt er særdeles vigtigt, ihenseende til det Lys, det udbreder over Irlands ældste Historie.</footnote></subtitle>
   <toctitle>Første Sang</toctitle>
   <notes>
-    <note>Noten til Første Sang begynder på s. 25.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101827"/>.</note>
   </notes>
   <source pages="1-26" facsimile-pages="334-359" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1378,7 +1378,7 @@ Dejlig est du, Himmelens Dotter! Forlystende er dit Ansigts Taushed. Du strider 
   <toctitle>Anden Sang</toctitle>
   <notes>
     <note>Sidetal 40 er trykt 30. Anmærkning 7 har intet synligt henvisningstegn i trykket og gengives som en note til hele sangen.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101828"/>.</note>
     <note type="source">Er formodentlig en Solformørkelse.</note>
   </notes>
   <source pages="27-45" facsimile-pages="360-378" />
@@ -1440,7 +1440,7 @@ Heltes Fader, <w>Trenmor</w>! Hvirvelvindens Indvaaner! Hvor Tordenens mørkerø
   <toctitle>Tredie Sang</toctitle>
   <notes>
     <note>Anmærkning 2 har intet synligt henvisningstegn i trykket og gengives som en note til hele sangen.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101829"/>.</note>
     <note type="source">Nu følger Bardernes Sang i 3 Afdelinger. Ded 1ste er stillet til Hæren: den 2den til Goel, og den 3die til Fillan. man mærke herved at i Sangen til Goel opmuntres han til Fyrighed, da han af Naturen var forsigtig og sindig nok: Fillan derimod formanes til Sindighed, da han havde alt for meget af Ungdommens Fremfusenhed. See Fingals Tale til Fillan i Slut. af Denne Sang.</note>
   </notes>
   <source pages="46-63" facsimile-pages="379-396" />
@@ -1499,7 +1499,7 @@ Hvo er hiin ved blaaestrømmende <w>Lubar</w>, ved Hjortens fremhældende Fjeld?
   <subtitle>Fjerde Sang.</subtitle>
   <toctitle>Fjerde Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101830"/>.</note>
   </notes>
   <source pages="64-79" facsimile-pages="397-412" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1549,7 +1549,7 @@ Under en Eeg, sagde Kongen, sad jeg ved <w>Selmas</w> Klippeelv, da <w>Connal</w
   <subtitle>Femte Sang.</subtitle>
   <toctitle>Femte Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101831"/>.</note>
   </notes>
   <source pages="80-94" facsimile-pages="413-427" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1599,7 +1599,7 @@ Du som boer blant Skjoldene, som hænger højt i <w>Ossians</w> Hal! Stig ned fr
   <toctitle>Sjette Sang</toctitle>
   <notes>
     <note>Henvisningen 7 ved Clungalo på s. 108 svarer til anmærkning 8. Tallet 7 er allerede brugt ved den foregående henvisning på s. 106.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101832"/>.</note>
   </notes>
   <source pages="95-110" facsimile-pages="428-443" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1642,7 +1642,7 @@ Du som boer blant Skjoldene, som hænger højt i <w>Ossians</w> Hal! Stig ned fr
   <subtitle>Syvende Sang.</subtitle>
   <toctitle>Syvende Sang</toctitle>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101833"/>.</note>
   </notes>
   <source pages="111-125" facsimile-pages="444-458" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1686,7 +1686,7 @@ Fra <w>Legos</w> skovindsluttede Vande opstige stundom graabrystede Taager, naar
   <toctitle>Ottende Sang</toctitle>
   <notes>
     <note>Anmærkning 4 har intet synligt henvisningstegn i trykket og gengives som en note til hele sangen.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101834"/>.</note>
     <note type="source">Her synes at være Spor til Troen paa et Slags Giengiældelse efter Døden.</note>
   </notes>
   <source pages="126-143" facsimile-pages="459-476" />
@@ -1740,7 +1740,7 @@ Som naar Vinterstorme have grebet Fieldsøens Bølger, have grebet dem i Frosten
 <head>
   <title>Selmas Sange<footnote>Dette Digt er en Samling af Sange, som Barderne have afsjunget ved en aarlig Fæst, efter de Tiders Skikke. See Fortalen!</footnote></title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101816"/>.</note>
   </notes>
   <source pages="144-157" facsimile-pages="477-490" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1779,7 +1779,7 @@ Aftendæmringens Stjerne! yndigt er dit Skin udi Vesten! Du hæver dit trinde Ho
 <head>
   <title>Conlath og Cuthona<footnote>Conlath var den yngste af Mornis Sønner og Broder til den navnkundige Goel. Han elskede Cuthona Rumors Dotter, da Toscar Rinsenas Søn — ikke hiin Toscar, som var Fader til Malvina — besøgte Conlath i Selskab med sin Ven Fercuth. Da han reiste bort, saae han Cuthona, forelskede sig i hende og bortførte hende med Vold. Stormen drev ham til en øde Øe, hvor Conlath traf ham. De stred og faldt tilligemed alle deres Mænd. Cuthona døde snart derefter af Græmmelse. Fingal spurgte deres Død, og sendte en Ædling for at begrave dem, men glemte at sende en Skiald, som kunde synge deres Gravsang. Efter lang Tids Forløb kommer nu Conlaths Aand til Ossian, for at bevæge ham til denne Kjerlighedsgjerning.</footnote></title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101835"/>.</note>
   </notes>
   <source pages="158-165" facsimile-pages="491-498" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1831,7 +1831,7 @@ Mon ej <w>Ossian</w> hørte en Røst eller er det de bortfarne Dages Stemme? For
 <head>
   <title>Calthon og Colmal</title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101811"/>.</note>
   </notes>
   <source pages="166-177" facsimile-pages="499-510" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1877,7 +1877,7 @@ Forlystende er din Sang, du Klippens ensomme Beboer<footnote>Dette Digt har Ossi
   <title>Carthon</title>
   <notes>
     <note>Trykkets afbrudte former brusen-/Storhavs og fald-/Balclutha på s. 188–189 er bevaret uden rekonstruerede bogstaver. Henvisningstegnet 1 efter Tusinde Lys på s. 179 svarer til anmærkning 2. Sidetal 194 er trykt 164 og gengives som 164 [194].</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101806"/>.</note>
   </notes>
   <source pages="178-199" facsimile-pages="511-532" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1938,7 +1938,7 @@ Saa juble da, o Soel, i din Ungdoms Kraft, Alderdom er ublid og mørk; den er li
   <title>Cathlin<footnote><w>Cathlin</w> forklædt som en Kriger, er den samme som <w>Lanul Cathmols</w> Datter.</footnote></title>
   <notes>
     <note>Trykkets henvisning 5 ved Oscar af Lego svarer til anmærkning 4. Henvisningerne 4 efter tvivlraadige Siæl og 6 efter Daad har ingen tilsvarende anmærkninger og er bevaret som tal i brødteksten.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101813"/>.</note>
   </notes>
   <source pages="200-208" facsimile-pages="533-541" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1972,7 +1972,7 @@ Kom, du eensomme Straale, fra din natlige Vaagen! Stormbygerne ere omkring dig, 
 <head>
   <title>Sulmalla</title>
   <notes>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101814"/>.</note>
   </notes>
   <source pages="209-216" facsimile-pages="542-549" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2003,7 +2003,7 @@ Hvo triner saa statelig paa <w>Lumon</w> ved de skummende Bølgers Brusen? Hende
   <title>Crothar</title>
   <notes>
     <note>Anmærkning 2 har intet synligt henvisningstegn i trykket og gengives som en note til hele teksten. Henvisningen 1 efter een for een på s. 223 svarer til anmærkning 3.</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101810"/>.</note>
     <note type="source">Her ender hendes Sang, og <w>Ossian</w> begynder.</note>
   </notes>
   <source pages="217-225" facsimile-pages="550-558" />
@@ -2030,7 +2030,7 @@ Hvo triner saa statelig paa <w>Lumon</w> ved de skummende Bølgers Brusen? Hende
   <title>Ossians sidste Sang</title>
   <notes>
     <note>Afslutningen fra »Led, o Alpins Søn« findes i versificeret form som <a poem="blicher20030915140">Ossians Svanesang</a> i Digte (1847).</note>
-    <note unknown-original-by="macpherson" />
+    <note>Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101836"/>.</note>
   </notes>
   <source pages="226-243" facsimile-pages="559-576" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2069,9 +2069,6 @@ Bøj dit blaae Løb, o Elv, trindt om <w>Luthas</w> snævre Slette! De grønne S
 <head>
   <title>Navne-Register</title>
   <subtitle>efter Digtenes Orden.</subtitle>
-  <notes>
-    <note>Registerets opslag er sat med hængende indryk i trykket. De gengives her som afsnit uden førstelinjeindryk.</note>
-  </notes>
   <source pages="244-265" facsimile-pages="577-598" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

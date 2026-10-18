@@ -1,8 +1,8 @@
 # Ossians Digte: importstatus for #1825
 
-Status 17. oktober 2026: **hele teksten er indsat og korrekturlæst**.
-Importen og PR'en forbliver uafsluttede, fordi titelbladsbilledets påkrævede
-QA ikke er bestået. Værket står derfor stadig som `incomplete`.
+Status 18. oktober 2026: **begge bind er indsat og korrekturlæst**.
+Brugeren har leveret to færdigt oprettede og beskårne titelblade, afklaret
+tekststederne og godkendt commit, push og merge. Blichers værk er `complete`.
 
 ## Kilde og omfang
 
@@ -64,8 +64,11 @@ Mos er afklaret ved ny bogstavsammenligning.
 
 ## Dokumenterede kildeforhold
 
-- Overdækninger/defekter på PDF-siderne 48–50, 65, 120, 149 og 185 er markeret
-  `[ulæseligt]`. Manglende ord er ikke rekonstrueret fra andre udgaver.
+- Brugeren har afklaret læsningerne på tryksiderne 13, 28, 83, 112 og 148.
+  Teksttab fra et hul på s. 11–12 er suppleret efter Blichers *Samlede
+  Skrifter*, bd. 1, Gyldendalske Boghandel, Nordisk Forlag, København, 1920,
+  s. 32–33. Den fysiske bog er citeret i teksthovedet. Der er ingen resterende
+  `[ulæseligt]`-markeringer.
 - Fejlpagineringerne XVIV/XXVIV i fortalen og 011, 30, 164 i de arabiske
   sideforløb er bevaret eller tydeliggjort med logisk sidetal i kantede parenteser.
 - Manglende, ombyttede og gentagne notehenvisninger er forklaret i de
@@ -76,31 +79,32 @@ Mos er afklaret ved ny bogstavsammenligning.
   Titelfodnoters egne sideskift er bevaret i deres særskilte tekststrømme.
 - Registerets hængende indryk kan ikke gengives med den aktuelle
   prosamodel. Opslagene er separate afsnit uden førstelinjeindryk;
-  begrænsningen er forklaret i registerets teksthoved. De to frie
+  den redaktionelle note er fjernet efter brugerens ønske. De to frie
   forklaringsafsnit på PDF-side 585 har deres trykte førstelinjeindryk.
 - Afslutningen af *Ossians sidste Sang* er forbundet med den senere,
   versificerede *Ossians Svanesang* via en præcis note, ikke som en variant
-  af hele teksten. De engelske originaltekster er ikke indsat;
-  oversættelserne har `unknown-original-by="macpherson"`.
+  af hele teksten. De engelske originaler er nu indsat i
+  `fdirs/macpherson/1773.xml` fra Sacred Texts, og Blichers 35 oversatte
+  tekster/sange er forbundet med de konkrete engelske tekster.
 
-## Udestående: titelbladsbilledet
+## Titelblade og engelske originaler
 
-Begge titelblade er udtrukket i original opløsning og behandlet med
-`prepare-kalliope-titlepage`. Analyse, foreslået rotation/beskæring og QA er
-kørt. Begge kandidater har status `manual-review` og er ikke lagt i
-`public/images/`.
+Brugerens to færdigbehandlede JPEG-filer er indsat uændret som
+`1807-bind1-p1.jpg` og `1807-bind2-p1.jpg` med fuld transskription.
+De erstatter de tidligere scratch-kandidater, som ikke bestod automatisk QA.
+Der er ikke foretaget yderligere billedbehandling af brugerens filer.
 
-Første binds foreslåede beskæring fjerner 6,05% øverst, 5,84% nederst og 8,64%
-til højre; grænserne er henholdsvis 5%, 5% og 8%. Andet binds kandidat
-overskrider også top- og højregrænsen. Kontrolgrænserne er ikke ændret,
-og kilden er ikke forbeskåret for at omgå dem.
+Sacred Texts' digtdel omfatter 22 digte i 36 tekstposter, herunder Cath-lodas
+tre duaner, Fingals seks og Temoras otte bøger. Den digitale udgave bygger
+på Boston-trykket fra Phillips, Sampson & Company, 1851, et genoptryk af
+1773-udgaven. Værk-id og værkår er 1773; den anvendte trykte kilde er 1851.
+Krediteringen er bevaret. De indledende afhandlinger er ikke indført,
+og den engelske værkpost står derfor som `incomplete`. Brugeren har
+udtrykkeligt fravalgt ny korrekturlæsning af den engelske tekst. Udgaven er
+ikke dokumenteret som det konkrete eksemplar, Blicher benyttede.
 
-Den konkrete restopgave er at fremskaffe en dokumenteret titelbladskilde,
-der kan bestå billedproceduren, eller få en eksplicit redaktionel undtagelse
-til billedkravet. Billedet og dets fulde transskription skal derefter
-registreres som `p1`, før værket sættes til `complete`. Automatisk fremstilling
-og promovering er blokeret af skillens QA-regel; denne rapport udgør ikke
-billedgodkendelse.
+Den tomme duplet `blicher/1814a` er fjernet; den fulde udgave ligger i
+`blicher/1814`.
 
 Browserforbindelsen var desuden utilgængelig. Det statiske build,
 visningsdata og den lokale servers genererede indholdsfortegnelse er
