@@ -8,9 +8,6 @@
   <year>1972</year>
   <pagebreaks/>
   <errata status="none"/>
-  <notes>
-    <note>Kilde: ADL-facsimilet til bind II mangler trykt s. 155 i det dokumentariske tillæg. Sidepositionen 154.jpg viser efter redaktionel beslutning en midlertidig JPG med »Mangler«; billedet gengiver ikke den trykte side. Ingen af de indførte digte berøres.</note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1972-2-p1.jpg"><transcription>Ambrosius Stubs / Digte // Udgivet med Indledning og Noter af / Erik Kroman // Billedredaktion og Billedtekst ved / Erik Kroman og Volmer Rosenkilde // II // Rosenkilde og Bagger / 1972.</transcription></picture>
   </pictures>
@@ -275,7 +272,7 @@ Mand dømmer dog saa let.
 </body>
 </text>
 
-<text id="stub2026101307">
+<text id="stub2026101307" aliases="stubmoralskea39">
 <head>
   <title>Jeg er et Hoved uden Krop</title>
   <firstline>Jeg er et Hoved uden Krop</firstline>
@@ -325,7 +322,7 @@ Giør Hovmod Tiden lang.
 </body>
 </text>
 
-<text id="stub2026101309">
+<text id="stub2026101309" aliases="stubmoralskea34">
 <head>
   <title>Impromtu</title>
   <firstline>Vel født er vel en Trøst</firstline>
@@ -366,11 +363,15 @@ Du pille vil de Kierne.
 </body>
 </text>
 
-<text id="stub2026101311">
+<text id="stub2026101311" aliases="stubmoralskea42">
 <head>
   <title>Indskrift paa Stentavle i Verninge Kirke over Ambrosius Stubs Svoger Pastor Schyth, d. 7. Januar 1756</title>
   <firstline>Du levende dødelige</firstline>
+  <notes>
+    <note>Cf. <xref bible="bibeljohannes01,47"/></note>
+  </notes>
   <source pages="26-27"/>
+  <keywords>gravskrift</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -613,7 +614,7 @@ Den Femte Kong <w>FRIDERICH</w> Konge i Norden!
 </body>
 </text>
 
-<text id="stub2026101314">
+<text id="stub2026101314" aliases="stubmoralskea5">
 <head>
   <title>Kongen opnaae Snee-hviid Alder</title>
   <firstline>Kongen opnaae Snee-hviid Alder!</firstline>
@@ -647,7 +648,7 @@ Sværdet staae og Kølen skride,
 </body>
 </text>
 
-<text id="stub2026101315">
+<text id="stub2026101315" aliases="stubmoralskea45">
 <head>
   <title>Da mangel har forvoldt</title>
   <firstline>Da mangel har forvoldt, Clienten ey betaler</firstline>
@@ -1342,10 +1343,13 @@ Her lyster mig at græde,
 </body>
 </text>
 
-<text id="stub2026101329">
+<text id="stub2026101329" aliases="stubgudeligea4">
 <head>
   <title>Christi syv Ord paa Korset Luc. 23 Cap. 34 v. Fader! forlad dem; thi de viide ikke hvad de giøre!</title>
   <firstline>I hvad min Talsmand leed</firstline>
+  <notes>
+    <note>Cf. <xref bible="bibellukas23,34"/></note>
+  </notes>
   <source pages="71-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2220,10 +2224,13 @@ Dermed jeg distillerer alt det gamle Frøe,
 </body>
 </text>
 
-<text id="stub2026101347">
+<text id="stub2026101347" aliases="stubgudeligea8">
 <head>
   <title>Seer det end for dig dunkelt ud</title>
   <firstline>Seer det end for dig dunkelt ud</firstline>
+  <notes>
+    <note>Cf. <xref bible="bibelsalme42,6"/></note>
+  </notes>
   <source pages="106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
