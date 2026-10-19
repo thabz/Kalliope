@@ -3,6 +3,9 @@
 <workhead>
   <title>Digte og Udkast</title>
   <year>1900</year>
+  <notes>
+    <note>Andet oplag (1900) er udvidet i forhold til første oplag (1886) med fire digte: »Monomani«, »Den vilde Jagt«, »Rim« og »Omkring mit Billed —«, samt en udeladt markedsscene fra »Mogens«. Ifølge tilføjelsen til forordet blev disse tekster fundet efter første oplags udgivelse. Desuden har to digte skiftet plads, nogle dateringer er præciseret, og enkelte skrivefejl er rettet.</note>
+  </notes>
   <errata status="none"/>
   <pagebreaks/>
   <proofreadings>
@@ -26,7 +29,7 @@
 </workhead>
 <workbody>
 
-<text id="moellerv20261019100" author="moellerv" skip-index="true">
+<text id="moellerv20261019100" variant="moellerv2026101901" author="moellerv" skip-index="true">
 <head>
   <title>[Forord]</title>
   <subtitle>(Til Bogens 1ste Oplag, Efteraaret 1886.)</subtitle>
@@ -43,23 +46,24 @@
   <w>Digte og Udkast</w> indeholder de meget faa Digte, J. P. Jacobsen har offenliggjort ved forskellige Lejligheder, samt et Udvalg af hans efterladte Manuskripter, hvilket Udvalg vi — efter hans Families Ønske — har foretaget.
   Foruden et Par avtobiografiske Optegnelser bestaar Udvalget dels af saadanne tidlige Forsøg (fra Tredserne), som Jacobsen i sin Ungdom havde bestemt til Trykning (<w>Hervert Sperring</w>, <w>En Kaktus springer ud</w>), dels af Digte og Brudstykker, der er skrevne efter 1870, samtidig med at han optraadte som Forfatter. Han lagde hyppigt Planer til en Digtsamling, men opgav dem igen, fordi Sam<pb facs="006.jpg"/>lingen hver Gang syntes ham ikke som Helhed at svare til hans daværende Udviklingstrin.
   Nu efter hans Død vil man værdsætte Digtene og Udkastene efter deres Tid. Vi har ment at burde medtage ikke alene det Færdige, der er hans Genius fuldkommen værdigt, men ogsaa det Ufuldstændige, naar det bærer Mærke af hans digteriske Ejendommelighed.
+
 <b>Edvard Brandes.</b>    <b>Vilhelm Møller.</b>
-<small>  I 2det Oplag er medtaget et Prosastykke og fire Digte, som blev fundne længe efter Udgivelsen af «Digte og Udkast». Dette ny er i Indholdsfortegnelsen mærket med en *.
-  Desuden har to Digte skiftet Plads, der er nogle Steder tilføjet nærmere Tidsbestemmelser, og et Par Skrivefejl er blevet rettede.</small>
+
+<small>  I 2det Oplag er medtaget et Prosastykke og fire Digte, som blev fundne længe efter Udgivelsen af «Digte og Udkast». Dette ny er i Indholdsfortegnelsen mærket med en *. Desuden har to Digte skiftet Plads, der er nogle Steder tilføjet nærmere Tidsbestemmelser, og et Par Skrivefejl er blevet rettede.</small>
 </prose>
 </body>
 </text>
 
-<section id="jacobsen20261019100">
+<section>
 <head>
   <title>En begavet ung Mands Dagbog</title>
   <subtitle>(Udvalg.)</subtitle>
 </head>
 <content>
 
-<text id="jacobsen20261019105">
+<text id="jacobsen20261019105" variant="jacobsen2026101902">
 <head>
-  <title>I</title>
+  <title><num>I.</num>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</title>
   <firstline>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</firstline>
   <dates>
     <written>1867-01-15</written>
@@ -159,10 +163,9 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 </body>
 </text>
 
-<text id="jacobsen20261019106">
+<text id="jacobsen20261019106" variant="jacobsen2026101903">
 <head>
-  <suptitle>II.</suptitle>
-  <title>Sære og synderlige Drømme</title>
+  <title><num>II.</num>Sære og synderlige Drømme</title>
   <subtitle>Anno 1868.</subtitle>
   <source pages="14-17" facsimile-pages="25-28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -179,10 +182,9 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 </body>
 </text>
 
-<text id="jacobsen20261019107">
+<text id="jacobsen20261019107" variant="jacobsen2026101904">
 <head>
-  <suptitle>III.</suptitle>
-  <title>Breve og Strøtanker</title>
+  <title><num>III.</num>Breve og Strøtanker</title>
   <firstline>Jeg læser i denne Tid: Tusend og én Nat</firstline>
   <source pages="18-22" facsimile-pages="29-33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -262,7 +264,7 @@ Jeg kalder paa med Formens: bliv!
 </content>
 </section>
 
-<section id="jacobsen20261019101">
+<section>
 <head>
   <title>Hervert Sperring</title>
   <subtitle>
@@ -272,7 +274,7 @@ Jeg kalder paa med Formens: bliv!
 </head>
 <content>
 
-<text id="jacobsen20261019108">
+<text id="jacobsen20261019108" variant="jacobsen2026101918">
 <head>
   <title>[Om Navnet Hervert Sperring]</title>
   <indextitle>Om Navnet Hervert Sperring</indextitle>
@@ -286,7 +288,7 @@ Jeg kalder paa med Formens: bliv!
 </body>
 </text>
 
-<text id="jacobsen20261019109">
+<text id="jacobsen20261019109" variant="jacobsen2026101919">
 <head>
   <title>«Hervert Sperrings» Historie</title>
   <indextitle>Hervert Sperrings Historie</indextitle>
@@ -315,13 +317,13 @@ Jeg kalder paa med Formens: bliv!
 </body>
 </text>
 
-<section id="jacobsen20261019102">
+<section>
 <head>
   <title>Herverts Sange</title>
 </head>
 <content>
 
-<text id="jacobsen20261019110" skip-index="true">
+<text id="jacobsen20261019110" variant="jacobsen2026101962" skip-index="true">
 <head>
   <title>[Motto]</title>
   <indextitle>Motto</indextitle>
@@ -1031,7 +1033,7 @@ Men som med mig nu dø den aarle Død.
 </content>
 </section>
 
-<text id="jacobsen20261019128">
+<text id="jacobsen20261019128" variant="jacobsen2026101906">
 <head>
   <title>En Kaktus springer ud</title>
   <firstline>Naar man i Tanken lader Rækken af sine bekendte glide forbi</firstline>
@@ -2256,7 +2258,7 @@ Ej mig ind du leder.»
 </body>
 </text>
 
-<text id="jacobsen20261019129">
+<text id="jacobsen20261019129" variant="jacobsen2026101963">
 <head>
   <title>Middag</title>
   <firstline>Der ligger en Duft af Turist-Lyrik</firstline>
@@ -2305,7 +2307,7 @@ Bragte den Dag.
 </body>
 </text>
 
-<text id="moellerv20261019101" author="moellerv" skip-index="true">
+<text id="moellerv20261019101" variant="jacobsen2026101964" author="moellerv" skip-index="true">
 <head>
   <title>[Udgivernote til En Kaktus springer ud]</title>
   <indextitle>Udgivernote til En Kaktus springer ud</indextitle>
@@ -2321,7 +2323,7 @@ Bragte den Dag.
 </body>
 </text>
 
-<section id="jacobsen20261019103">
+<section>
 <head>
   <title>Digte og Udkast</title>
 </head>
@@ -2353,11 +2355,14 @@ Blomsternes Øjne i Duggraad svømme,
 </text>
 
 <!-- Trykt s. 129 (facs 139.jpg) har bevidst gentagelse: Og op op ned, op op ned. -->
-<text id="jacobsen20261019132" variant="jacobsenandrea3" ignore-tests="repeated-adjacent-word">
+<text id="jacobsenandrea3" ignore-tests="repeated-adjacent-word" aliases="jacobsen20261019132">
 <head>
   <title>Monomani</title>
   <subtitle>(En Arabesk.)</subtitle>
   <firstline>Jeg er gal</firstline>
+  <notes>
+    <note>Inspiration fra Staffeldts <xref poem="staffeldt1804a0"/> fra <i>Digte</i> (1804).</note>
+  </notes>
   <source pages="126-129" facsimile-pages="137-140"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2502,7 +2507,7 @@ Nattens vilde Jagt.
 </body>
 </text>
 
-<text id="jacobsen20261019134">
+<text id="jacobsen20261019134" variant="jacobsen2026101953">
 <head>
   <firstline>Hvor den flade Mark løfter sig tungt</firstline>
   <source pages="132-133" facsimile-pages="143-144"/>
@@ -2546,7 +2551,7 @@ Blandt døde Mænds Ben . . .
 </body>
 </text>
 
-<text id="jacobsen20261019135">
+<text id="jacobsen20261019135" variant="jacobsen2026101910">
 <head>
   <title>Ellen</title>
   <firstline>Der aabnes en Dør</firstline>
@@ -2656,7 +2661,7 @@ i Seraillets Have.
 </body>
 </text>
 
-<text id="jacobsen20261019137">
+<text id="jacobsen20261019137" variant="jacobsen2026101912">
 <head>
   <title>Faustina og Faust</title>
   <subtitle>(Et Fragment).</subtitle>
@@ -2713,7 +2718,7 @@ Til Bytte for en Rovfugls hvasse Næb ...
 </body>
 </text>
 
-<text id="jacobsen20261019138">
+<text id="jacobsen20261019138" variant="jacobsen2026101913">
 <head>
   <title>Navnløs</title>
   <firstline>En Aften jeg mindes for alle</firstline>
@@ -2754,7 +2759,7 @@ Var hint Sekund endog vort sidste Møde.
 </body>
 </text>
 
-<text id="jacobsen20261019139" variant="jacobsenandrea5">
+<text id="jacobsenandrea5" aliases="jacobsen20261019139">
 <head>
   <title>Rim</title>
   <firstline>Skære, skære Havre</firstline>
@@ -2789,7 +2794,7 @@ I den sorte Gryde!
 </body>
 </text>
 
-<text id="jacobsen20261019140">
+<text id="jacobsen20261019140" variant="jacobsen2026101914">
 <head>
   <title>[Af et Brev.]</title>
   <indextitle>Af et Brev</indextitle>
@@ -2804,7 +2809,7 @@ I den sorte Gryde!
 </body>
 </text>
 
-<text id="jacobsen20261019141">
+<text id="jacobsen20261019141" variant="jacobsen2026101909">
 <head>
   <title>Til Agnes</title>
   <firstline>Alle mine Ønsker du véd er dine Savn</firstline>
@@ -2949,7 +2954,7 @@ Vil os alle af Landet udrive.»
 </body>
 </text>
 
-<text id="jacobsen20261019144">
+<text id="jacobsen20261019144" variant="jacobsen2026101916">
 <head>
   <title>Wiebe Peters</title>
   <subtitle>Konturen til en Romanfigur.</subtitle>
@@ -3074,7 +3079,7 @@ Men Lauren har alle sine Blade.
 </body>
 </text>
 
-<text id="jacobsen20261019147">
+<text id="jacobsen20261019147" variant="jacobsen2026101928">
 <head>
   <firstline>Kongens Øre er mæt af Tale</firstline>
   <source pages="162-164" facsimile-pages="173-175"/>
@@ -3241,7 +3246,7 @@ Stille, nu begynd . . . . .
 </body>
 </text>
 
-<text id="jacobsen20261019149" variant="jacobsenandrea11">
+<text id="jacobsenandrea11" aliases="jacobsen20261019149" variant="jacobsen2026101930">
 <head>
   <title>Arabesk</title>
   <subtitle>
@@ -3249,6 +3254,16 @@ Stille, nu begynd . . . . .
     <line>(Kvindeprofil med sænkede Blikke i Ufficierne.)</line>
   </subtitle>
   <firstline>Tog Bølgen Land</firstline>
+  <notes>
+    <note>Denne udgave fra 1900 trykker »Rullende« i tredje vers. De følgende redaktionelle noter om læsemåden »Rallende« er bevaret fra Kalliopes tidligere tekst under »Andre digte«.</note>
+    <note>Antagelig påbegyndt 1870 og i hovedsagen færdigskrevet 1874.</note>
+    <note>Trykt i Vilh. Møllers tidsskrift <i>Flyvende Blade,</i> 11/7, 1874 og er Jacobsens debut som lyriker.</note>
+    <note>I Kalliopes tidligere tekst under »Andre digte« var "Rullende" i tredje vers rettet til "Rallende" på foranledning af Ole Pedersen, som skriver "Fejlen er meget almindelig, så der er ikke noget at være flov over!". Ole Pedersen citerer desuden Carsten Madsen: »Digteren har været meget eksplicit her, i førsteudgaven af Michelangelo-arabesken stod der "<i>Rullende</i> med Grusets Perler", men senere udgaver korrigerer denne rent typografiske fejl, der afspejler en konventionel forventningshorisont.«, Spring nr. 13, 1998, p. 67.</note>
+    <note>Sven Sørensen tilføjer: Digtet blev 'sat' og omhyggeligt korrekturlæst efter digterens manuskript (måske endda af Vilh. Møller selv). Ordet 'Rallende' vakte undren og foranledigede flere henvendelser til Møller, men han konstaterede at det ikke var trykfejl, da det stemte med trykmanuskriptet. Der var dog den mulighed at JPJac. i distraktion havde skrevet 'Rallende' for 'Rullende': derfor hans henvendelse til digteren, hvorpå denne svarede at det ikke var skrivefejl (se faksimile heraf hos Jacobsens <i>Samlede Værker</i>, Fr. Nielsen (red.), Rosenkilde og Bagger, 1973, bd. 4, ill. 158.). Havde førstetrykket haft 'Rullende', ville ingen have mistænkt trykfejl, og digterens brev ville være uforståeligt.</note>
+  </notes>
+  <pictures>
+    <picture src="jacobsenandrea11-p1.jpg">"Michelangelo: <i>Kvindeprofil</i>, Rødkridttegning; Oxford, University Galleries. If. Georg Brandes den tegning, der har inspireret JPJ til Michelangelo-arabesken (G. Brandes: <i>Michelangelo Buonarroti</i>, II; 1921, s. 364). Brandes erhvervede sig i 1860 en reproduktion af tegningen, som JPJ angiveligt har set." J.P. Jacobsen, <i>Lyrik og Prosa</i>, ved Jørn Erslev Andersen, DSL/Borgen 1993, side 236.</picture>
+  </pictures>
   <source pages="169-173" facsimile-pages="180-184"/>
   <keywords>michelangelo</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3363,7 +3378,7 @@ Som et Sværd igennem Nattens Hjærte.
 </body>
 </text>
 
-<text id="jacobsen20261019150">
+<text id="jacobsen20261019150" variant="jacobsen2026101942">
 <head>
   <title>Englen Asali<footnote>Oven over staar: <i>Eros sacer. Studier i Vers efter gamle italienske Kirkemalerier.</i></footnote></title>
   <firstline>Om Perlerader vare Strænge</firstline>
@@ -3395,7 +3410,7 @@ Blottede hans Lemmers marmorhvide Pragt.
 </body>
 </text>
 
-<text id="jacobsen20261019151">
+<text id="jacobsen20261019151" variant="jacobsen2026101943">
 <head>
   <firstline>Det har Seraferne</firstline>
   <source pages="175" facsimile-pages="186"/>
@@ -3894,7 +3909,7 @@ Der rinder Sorg, rinder Harm af Roser røde.
 </body>
 </text>
 
-<text id="jacobsen20261019165">
+<text id="jacobsen20261019165" variant="jacobsen2026101957">
 <head>
   <title>En Rejseerindring</title>
   <source pages="195-196" facsimile-pages="206-207"/>
@@ -3941,7 +3956,7 @@ Det har sin egen, sære Vaar —
 </body>
 </text>
 
-<text id="jacobsen20261019167">
+<text id="jacobsen20261019167" variant="jacobsen2026101959">
 <head>
   <title>[Af en Fortælling.]</title>
   <indextitle>Af en Fortælling</indextitle>
@@ -3959,7 +3974,7 @@ Det har sin egen, sære Vaar —
 </body>
 </text>
 
-<text id="jacobsen20261019168">
+<text id="jacobsen20261019168" variant="jacobsen2026101960">
 <head>
   <title>Anne Charlotte</title>
   <source pages="200-206" facsimile-pages="211-217"/>
@@ -4070,7 +4085,7 @@ Det har sin egen, sære Vaar —
 </body>
 </text>
 
-<text id="jacobsen20261019169">
+<text id="jacobsen20261019169" variant="jacobsen2026101965">
 <head>
   <title>Doktor Faust</title>
   <source pages="207-211" facsimile-pages="218-222"/>
