@@ -103,7 +103,7 @@ describe('text page breadcrumbs', () => {
     expect(Client.poet).not.toHaveBeenCalled();
   });
 
-  it('renders edition citations inline and retains the source and other reference sections', async () => {
+  it('renders edition, mention and translation citations with the same bibliography', async () => {
     const ref = {
       id: 'other', title: 'De to Røvere', poet: 'Adam Oehlenschläger', poetId: poet.id,
       work: 'Samlede Skrifter (1861)',
@@ -134,6 +134,7 @@ describe('text page breadcrumbs', () => {
       expect(section).toContain('»De to Røvere«</a>, i: ');
       expect(section.match(/<a\b/g)).toHaveLength(1);
       expect(section).toContain('s. 353–356.');
+      expect(section).toContain('bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.');
       expect(section).not.toContain('reference-metadata');
     }
   });

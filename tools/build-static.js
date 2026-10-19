@@ -120,6 +120,7 @@ import { loadExternalIdentifiers } from './build-static/external-identifiers.js'
 import {
   build_textrefs,
   mark_ref_destinations_dirty,
+  referenceSourceFilesForText,
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
 import { buildLatestNews } from './build-static/news.js';
@@ -272,12 +273,14 @@ const handle_text = async (
   const sourceFiles = [
     ...(placement.sourceFiles ?? sourceFilesForText(textMeta)),
     ...editionSourceFilesForText(sourceTextId, collected),
+    ...referenceSourceFilesForText(sourceTextId, collected),
   ];
   if (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
     collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
+      'tools/build-static/textrefs.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -1255,6 +1258,7 @@ const works_second_pass = async (collected) => {
         'tools/build-static/anthologies.js',
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
+        'tools/build-static/textrefs.js',
         'common/source-reference.js',
         `fdirs/${poetId}/info.xml`,
         filename,
@@ -1265,6 +1269,9 @@ const works_second_pass = async (collected) => {
           sourceFiles.add(sourceFile)
         );
         editionSourceFilesForText(text.sourceTextId ?? text.id, collected).forEach(sourceFile =>
+          sourceFiles.add(sourceFile)
+        );
+        referenceSourceFilesForText(text.sourceTextId ?? text.id, collected).forEach(sourceFile =>
           sourceFiles.add(sourceFile)
         );
       });

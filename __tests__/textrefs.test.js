@@ -11,6 +11,7 @@ import {
   collectTextRefs,
   extractTextRefs,
   markChangedTextRefDestinationsDirty,
+  referenceSourceFilesForText,
 } from '../tools/build-static/textrefs.js';
 
 describe('text refs', () => {
@@ -84,5 +85,20 @@ describe('text refs', () => {
     );
 
     expect(refs.has('target1')).toBe(false);
+  });
+
+  it('tracks the actual publication and author files behind mention and translation citations', () => {
+    const collected = {
+      textrefs: new Map([['target', { mention: ['mention'], translation: ['translation'] }]]),
+      texts: new Map([
+        ['mention', { poetId: 'bering', sourcePoetId: 'antologierdk', sourceWorkId: '1914' }],
+        ['translation', { poetId: 'bording', workId: '1644' }],
+      ]),
+    };
+    expect(referenceSourceFilesForText('target', collected)).toEqual([
+      'fdirs/bering/info.xml', 'fdirs/antologierdk/1914.xml',
+      'fdirs/bording/info.xml', 'fdirs/bording/1644.xml',
+    ]);
+    expect(referenceSourceFilesForText('unmentioned', collected)).toEqual([]);
   });
 });
