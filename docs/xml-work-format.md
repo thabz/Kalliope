@@ -295,11 +295,12 @@ som et særskilt valgfrit felt; `name` indeholder kun udgivelsesnavnet.
 og er strenge. Manglende felter udelades. Biografier og bulkdatasættet bruger
 fortsat deres eksisterende format.
 
-»Andre udgaver« genbruger kildeformatteringen og indleder hver henvisning med
+»Andre udgaver«, »Omtalt i« og henvisninger til gendigtninger genbruger
+kildeformatteringen og indleder hver henvisning med
 den linkede teksttitel i `»…«` efterfulgt af `, i: `. Den valgte kilde arves
 fra værket, medmindre teksten har sin egen kildeangivelse. Bibliografiske
-personnavne linkes som i »Kilde«, og publikationens titel linkes til det
-konkrete værk, også for antologier, tidsskrifter og aviser. Bind forkortes til
+personnavne og publikationens titel vises uden links, også for antologier,
+tidsskrifter og aviser. Bind forkortes til
 `bd.` i disse henvisninger; »Kilde« bevarer `bind`. Sidetal tilføjes med `s.`
 og tankestreg i intervaller i begge sektioner.
 
@@ -308,13 +309,14 @@ værk til tekst. Parser- og schematests afviser tomme `realname`-værdier;
 renderingstests dækker personlink, manglende id, kildearv, automatiske noter
 og fjernelse af manuelle dubletter i de konverterede værker.
 
-Fritekstkilder bevares, og den første kursiverede titel linkes til værket,
-når den ikke allerede indeholder et link. Mangler kildeangivelsen, bruges
+Fritekstkilder bevares med bibliografiske links fjernet. Mangler
+kildeangivelsen, bruges
 tilgængelig værktitel, år og eventuel værkforfatter uden at tilføje ukendte
 udgivelsesoplysninger. I tekst-JSON får poster i `variants` et valgfrit
 `citation` med den samlede henvisning som inline XML. De eksisterende
-referencefelter bevares. Ændringer i en udgaves kildefiler genopbygger også
-henvisningerne hos de øvrige varianter.
+referencefelter bevares. Det samme `citation`-felt bruges i `refs` og
+`translations`. Ændringer i en udgaves kildefiler genopbygger også
+henvisningerne hos de øvrige varianter og de tekster, som udgaven henviser til.
 
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
