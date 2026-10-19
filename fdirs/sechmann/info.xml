@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sechmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Baltzar</firstname>
+    <lastname>Sechmann</lastname>
+    <fullname>Balthasar Jørgensen Sechmann</fullname>
+  </name>
+  <period>
+    <baptized>
+      <date>1680-10-22</date>
+      <place>Christiania</place>
+    </baptized>
+    <dead>
+      <date>1746-02-11</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
