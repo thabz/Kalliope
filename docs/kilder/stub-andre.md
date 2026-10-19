@@ -13,7 +13,9 @@ af de kildefrie teksters oprindelige udgaver.
 
 28 kildefrie poster er sammenlagt med eksisterende tekster. Hvert slettet id er bevaret som `aliases`
 på erstatningen. Variantrelationer er rettet til de faktiske erstatnings-id'er;
-relationer til selve erstatningsteksten er fjernet. Bibelhenvisninger er bevaret
+relationer til selve erstatningsteksten er fjernet. Interne teksthenvisninger
+i Molbechs *Ambrosius* (1877), hans »Andre digte« og Stubs biografi er
+rettet til de kanoniske erstatnings-id’er. Bibelhenvisninger er bevaret
 på erstatningerne, og de eksisterende kilde- og korrekturangivelser er uændrede.
 
 ## Slettede dubletter
