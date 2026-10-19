@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1868" author="jacobsen" status="complete" type="poetry">
+<kalliopework id="1928-4" author="jacobsen" status="incomplete" type="poetry" parent="1924">
 <workhead>
-  <title>Hervert Sperring</title>
-  <subtitle>Lyrisk Digtning</subtitle>
-  <year>1868</year>
-  <notes>
-    <note>Denne samling blev aldrig udgivet.</note>
-  </notes>
-  <source pages="1-55">
+  <title>Samlede Værker</title>
+  <subtitle>Fjerde Bind. Digte</subtitle>
+  <linktitle>Samlede Værker IV. Digte</linktitle>
+  <toctitle><num>Bind IV.</num>Digte</toctitle>
+  <breadcrumbtitle>Bd. IV</breadcrumbtitle>
+  <year>1928</year>
+  <source href="https://dsl.dk/publication?id=219">
     <author id="jacobsen">J. P. Jacobsen</author>
     <title>Samlede Værker</title>
     <editor>Morten Borup</editor>
+    <editor>Georg Christensen</editor>
     <volume>IV</volume>
     <place>København</place>
-    <publisher>DSL</publisher>
-    <year>1924-29</year>
+    <publisher>Gyldendalske Boghandel – Nordisk Forlag</publisher>
+    <year>1928</year>
   </source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
+
+<section id="jacobsen2026101969">
+<head>
+  <title>Hervert Sperring</title>
+  <subtitle>Lyrisk Digtning</subtitle>
+  <notes>
+    <note>Digtkredsen er fra 1868 og blev ikke udgivet i Jacobsens levetid.</note>
+  </notes>
+</head>
+<content>
 
 <text id="jacobsen2002092101">
 <head>
@@ -2192,6 +2203,9 @@ Møder Drømmens Skygger med et Kys.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>

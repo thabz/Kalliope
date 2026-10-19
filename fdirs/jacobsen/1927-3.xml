@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1871" author="jacobsen" status="incomplete" type="poetry">
+<kalliopework id="1927-3" author="jacobsen" status="incomplete" type="poetry" parent="1924">
 <workhead>
-  <title>En Cactus springer ud</title>
-  <year>1871</year>
-  <notes>
-    <note>Samlingen blev aldrig udgivet.</note>
-  </notes>
-  <quality>korrektur1</quality>
+  <title>Samlede Værker</title>
+  <subtitle>Bind III. Noveller og Prosaudkast</subtitle>
+  <linktitle>Samlede Værker III. Noveller og Prosaudkast</linktitle>
+  <toctitle><num>Bind III.</num>Noveller og Prosaudkast</toctitle>
+  <breadcrumbtitle>Bd. III</breadcrumbtitle>
+  <year>1927</year>
+  <source href="https://tekster.kb.dk/text/adl-texts-jacob03val-root">
+    <author id="jacobsen">J. P. Jacobsen</author>
+    <title>Samlede Værker</title>
+    <editor>Morten Borup</editor>
+    <editor>Georg Christensen</editor>
+    <volume>III</volume>
+    <place>København</place>
+    <publisher>Gyldendalske Boghandel – Nordisk Forlag</publisher>
+    <year>1927</year>
+  </source>
 </workhead>
 <workbody>
+
+<section id="jacobsen2026101970">
+<head>
+  <title>En Cactus springer ud</title>
+</head>
+<content>
 
 <text id="jacobsenandrea0">
 <head>
   <title>Stemninger I</title>
   <firstline>I Rummet det vældige vugges</firstline>
-  <quality>korrektur1</quality>
+  <source pages="51"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I Rummet det vældige vugges
 Vor Jord som paa Havet et Blad,
 Og jeg er et Støvgran, der glimter
-»Gud« veed i Lyset af hvad?
+"Gud" ved i Lyset af hvad?
 Og dog er det hele Solsystem,
 Der vugges i Æthrens Bad,
 En Krusning i mine Tankers Hav,
@@ -34,7 +51,8 @@ Kun lille, og kruset af hvad?
 <head>
   <title>Stemninger II</title>
   <firstline>Med store Tanker har jeg levet</firstline>
-  <quality>korrektur1</quality>
+  <source pages="51-52"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -50,7 +68,7 @@ Jeg dristig hented paa min Gang.
 
 Rigt var mit Liv paa Sorg og Smerte,
 Men og paa Fryd selv i dets Kval,
-Og blev jeg flaaet i dets Kampe,
+Og blev jeg slaaet i dets Kampe,
 Jeg vandt og Sejre paa dets Val.
 
 Og dog, hvor gjerne veg jeg ikke
@@ -58,7 +76,7 @@ Min Plads i denne stolte Dands,
 Og gav med Glæde Aandens Vælde
 Bort for en Bondes sløve Sands.
 
-O, hvilke Ro dog kun at tænke
+O, hvilken Ro dog kun at tænke
 Paa hvad et søvnigt Blik kan se,
 Hvad Værd ej har, værdifuldt finde,
 Og dumt ad Aandens Tale le.
@@ -66,7 +84,7 @@ Og dumt ad Aandens Tale le.
 Og saa tilsidst henslumre rolig
 Med Drøm om Himlens Fryd og Mag,
 Om Gjensyn med afdøde Koner
-Og Haab om Søndag hver en Dag.
+Og Haab om Søndag hver en Dag,
 </poetry>
 </body>
 </text>
@@ -79,7 +97,8 @@ Og Haab om Søndag hver en Dag.
     <note>1868?, Trykt i Vilh. Møllers "Dansk Folkekalender" Jul 1882</note>
     <note>Tak til Saskia for at gøre opmærksom på en slem fejl. Ligeledes til Brian Bentsen for endnu flere fejlrettelser.</note>
   </notes>
-  <quality>korrektur1</quality>
+  <source pages="52-54"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -88,13 +107,13 @@ Kjender du Pan?
 Jeg har følt ham,
 Ikke i de dunkle Skove,
 Medens alt Tiende talte,
-Nej, den Pan har jeg aldrig kjendt,
-Men Kjærlighedens Pan har jeg følt,
+Nej! den Pan har jeg aldrig kjendt,
+Men Kjerlighedens Pan har jeg følt,
 Da tav alt Talende.
 
 I solvarme Egne
 Vokser en sælsom Urt,
-Kun i dybeste Tavshed
+Kun i dybeste Tavshed,
 Under tusinde Solstraalers Brand,
 Aabner den sin Blomst
 I et flygtigt Secund.
@@ -147,6 +166,9 @@ Kjender du Pan?
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>

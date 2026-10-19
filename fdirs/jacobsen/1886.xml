@@ -48,7 +48,7 @@
 </body>
 </text>
 
-<section id="jacobsen2026101901">
+<section>
 <head>
   <title>En begavet ung Mands Dagbog</title>
   <subtitle>(Udvalg.)</subtitle>
@@ -57,7 +57,7 @@
 
 <text id="jacobsen2026101902">
 <head>
-  <title>I</title>
+  <title><num>I.</num>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</title>
   <firstline>Der gives Øjeblikke i mit Liv, hvori jeg tror, at Studiet af Naturen er mit Livs Kald</firstline>
   <dates>
     <written>1867-01-15</written>
@@ -161,8 +161,7 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 
 <text id="jacobsen2026101903">
 <head>
-  <suptitle>II.</suptitle>
-  <title>Sære og synderlige Drømme</title>
+  <title><num>II.</num>Sære og synderlige Drømme</title>
   <subtitle>Anno 1868.</subtitle>
   <nofirstline/>
   <source pages="14-17" facsimile-pages="33-36"/>
@@ -190,8 +189,7 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 
 <text id="jacobsen2026101904">
 <head>
-  <suptitle>III.</suptitle>
-  <title>Breve og Strøtanker</title>
+  <title><num>III.</num>Breve og Strøtanker</title>
   <firstline>Jeg læser i denne Tid: Tusind og en Nat</firstline>
   <source pages="18-22" facsimile-pages="37-41"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -271,7 +269,7 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 </content>
 </section>
 
-<section id="jacobsen2026101917">
+<section>
 <head>
   <title>Hervert Sperring</title>
   <subtitle>
@@ -333,7 +331,7 @@ det kunde aldrig falde nogen anden ind end ham at give en saadan Iagttagelse Ver
 </body>
 </text>
 
-<section id="jacobsen2026101961">
+<section>
 <head>
   <title>Herverts Sange</title>
 </head>
@@ -2328,13 +2326,13 @@ Indskriften; saa, nu skuer du klart:
 </body>
 </text>
 
-<section id="jacobsen2026101907">
+<section>
 <head>
   <title>Digte og Udkast</title>
 </head>
 <content>
 
-<text id="jacobsen2026101908" variant="jacobsenandrea1">
+<text id="jacobsenandrea1" aliases="jacobsen2026101908">
 <head>
   <firstline>Alle de voksende Skygger</firstline>
   <notes>
@@ -2472,10 +2470,13 @@ Er der mere Liv end Jordens?
 </body>
 </text>
 
-<text id="jacobsen2026101911" variant="jacobsenandrea8">
+<text id="jacobsenandrea8" aliases="jacobsen2026101911">
 <head>
   <title>I Seraillets Have</title>
   <firstline>Rosen sænker sit Hoved, tungt</firstline>
+  <notes>
+    <note>renskrift 1870</note>
+  </notes>
   <source pages="133" facsimile-pages="152"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2607,7 +2608,7 @@ Var hint Sekund endog vort sidste Møde.
 </body>
 </text>
 
-<text id="jacobsen2026101915" variant="jacobsenandrea6">
+<text id="jacobsenandrea6" aliases="jacobsen2026101915">
 <head>
   <firstline>Nævner min Tanke dig, —</firstline>
   <source pages="139" facsimile-pages="158"/>
@@ -2663,7 +2664,7 @@ Imedens jeg og Jorden, synke.
 </body>
 </text>
 
-<text id="jacobsen2026101926" variant="jacobsenandrea7">
+<text id="jacobsenandrea7" aliases="jacobsen2026101926">
 <head>
   <firstline>Det er Stævnemødets Time!</firstline>
   <source pages="144-145" facsimile-pages="163-164"/>
@@ -2710,7 +2711,7 @@ Hvis Du vidste! ...
 </body>
 </text>
 
-<text id="jacobsen2026101927" variant="jacobsenandrea9">
+<text id="jacobsenandrea9" aliases="jacobsen2026101927">
 <head>
   <title>Grækenland</title>
   <firstline>Marmoret er hvidt</firstline>
@@ -2839,16 +2840,21 @@ Min Sang er oppe:
 </body>
 </text>
 
-<text id="jacobsen2026101929">
+<section>
 <head>
   <title>Bryllupssange</title>
+</head>
+<content>
+
+<text id="jacobsenandrea10">
+<head>
+  <title><num>I.</num>Livsranken bugter fyldig sig og frodig</title>
   <firstline>Livsranken bugter fyldig sig og frodig</firstline>
-  <source pages="151-154" facsimile-pages="170-173"/>
+  <source pages="151" facsimile-pages="170"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>I.</center></nonum>
 Livsranken bugter fyldig sig og frodig
 Frem for jer Sans;
 Haabets det rige Lys omslynger modig
@@ -2866,11 +2872,19 @@ Spænd da jer Verdens dristigt brudte Buer,
 Slyng da dens slanke Søjler imod Sky;
 Fyld med Hjertets Luer
 Verden den ny.
+</poetry>
+</body>
+</text>
 
----
-
-<pb n="152" facs="170.jpg"/><nonum><center>II.</center></nonum>
-<nonum><center>Hilsen fra Dyrehavens Dryader.</center></nonum>
+<text id="jacobsen2026101968">
+<head>
+  <title><num>II.</num>Hilsen fra Dyrehavens Dryader</title>
+  <firstline>Længe nok har vi været om at komme</firstline>
+  <source pages="152-154" facsimile-pages="171-173"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Længe nok har vi været om at komme,
 Skjønt os et Ekstratog førte her til By'n.
 Nu vil vi glad
@@ -2927,6 +2941,9 @@ End Amor som Kusk.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="jacobsen2026101930" variant="jacobsenandrea11">
 <head>
@@ -3104,7 +3121,7 @@ Paa Vinket fra Gud Herrens Herskerthrone ...
 </body>
 </text>
 
-<text id="jacobsen2026101944" variant="jacobsenandrea12">
+<text id="jacobsenandrea12" aliases="jacobsen2026101944">
 <head>
   <firstline>Løft de klingre Glaspokaler</firstline>
   <source pages="162" facsimile-pages="181"/>
@@ -3135,7 +3152,7 @@ Svunden som Tonernes flygtige Strøm?
 </body>
 </text>
 
-<text id="jacobsen2026101945" variant="jacobsenandrea13">
+<text id="jacobsenandrea13" aliases="jacobsen2026101945">
 <head>
   <firstline>Silkesko over gylden Læst!</firstline>
   <source pages="163" facsimile-pages="182"/>
@@ -3159,7 +3176,7 @@ End hendes Øje er sort ...
 </body>
 </text>
 
-<text id="jacobsen2026101946" variant="jacobsenandrea15">
+<text id="jacobsenandrea15" aliases="jacobsen2026101946">
 <head>
   <title>Taarnvægtersang</title>
   <firstline>Nu er det Nat</firstline>
@@ -3213,13 +3230,16 @@ Du lade dem kristeligen bede!
 </body>
 </text>
 
-<text id="jacobsen2026101947" variant="jacobsenandrea20">
+<text id="jacobsenandrea20" aliases="jacobsen2026101947">
 <head>
   <title>Landskab</title>
   <firstline>En vidtstrakt Hede med mossede Sten</firstline>
   <dates>
     <written>1875-03-02</written>
   </dates>
+  <notes>
+    <note>Trykt i Borchsenius' og Hendriksens "Ude og Hjemme", 25/12 1881</note>
+  </notes>
   <source pages="166-167" facsimile-pages="185-186"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3254,7 +3274,7 @@ At læges i Menneskers Drømme.
 </body>
 </text>
 
-<text id="jacobsen2026101948" variant="jacobsenandrea17">
+<text id="jacobsenandrea17" aliases="jacobsen2026101948">
 <head>
   <title>Marine</title>
   <firstline>Frem under Haarets ravnsorte Sky'r</firstline>
@@ -3286,7 +3306,7 @@ Havfruesang!
 </body>
 </text>
 
-<text id="jacobsen2026101949" variant="jacobsenandrea21">
+<text id="jacobsenandrea21" aliases="jacobsen2026101949">
 <head>
   <title>Polka</title>
   <firstline>Cendrée og lille</firstline>
@@ -3341,7 +3361,7 @@ Jo, det er her, den standser.»
 </body>
 </text>
 
-<text id="jacobsen2026101950" variant="jacobsenandrea22">
+<text id="jacobsenandrea22" aliases="jacobsen2026101950">
 <head>
   <firstline>Har Dagen sanket al sin Sorg</firstline>
   <source pages="172" facsimile-pages="191"/>
@@ -3370,7 +3390,7 @@ Stjernekjerternes flakkende Flammer.
 </body>
 </text>
 
-<text id="jacobsen2026101951" variant="jacobsenandrea23">
+<text id="jacobsenandrea23" aliases="jacobsen2026101951">
 <head>
   <title>Irmelin Rose</title>
   <firstline>Se, der var en Gang en Konge</firstline>
@@ -3415,7 +3435,7 @@ Irmelin alt, hvad der er dejligt.
 </body>
 </text>
 
-<text id="jacobsen2026101952" variant="jacobsenandrea24">
+<text id="jacobsenandrea24" aliases="jacobsen2026101952">
 <head>
   <firstline>Evig og uden Forandring</firstline>
   <source pages="175" facsimile-pages="194"/>
@@ -3482,10 +3502,13 @@ Blandt døde Mænds Ben ...
 </body>
 </text>
 
-<text id="jacobsen2026101954" variant="jacobsenandrea19">
+<text id="jacobsenandrea19" aliases="jacobsen2026101954">
 <head>
   <title>Genrebillede</title>
   <firstline>Pagen højt paa Taarnet sad</firstline>
+  <notes>
+    <note>1875?, trykt i H. J. Greensteens "Fra Fjeld og Dal", Jul 1875</note>
+  </notes>
   <source pages="178" facsimile-pages="197"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3508,10 +3531,13 @@ Over alle Bjærge.
 </body>
 </text>
 
-<text id="jacobsen2026101955" variant="jacobsenandrea18">
+<text id="jacobsenandrea18" aliases="jacobsen2026101955">
 <head>
   <title>Landskab</title>
   <firstline>Stille, du elskede Kvinde!</firstline>
+  <notes>
+    <note>Trykt i H. J. Greensteens "Fra Fjeld og Dal", Jul 1875</note>
+  </notes>
   <source pages="179-180" facsimile-pages="198-199"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3546,13 +3572,16 @@ I Skovens natlige Ro.
 </body>
 </text>
 
-<text id="jacobsen2026101956" variant="jacobsenandrea16">
+<text id="jacobsenandrea16" aliases="jacobsen2026101956">
 <head>
   <title>Det bødes der for —</title>
   <firstline>Det bødes der for i lange Aar</firstline>
   <dates>
     <written>1875-03-01</written>
   </dates>
+  <notes>
+    <note>Trykt i Flyvende Blade, 10/4 1875</note>
+  </notes>
   <source pages="181-182" facsimile-pages="200-201"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3605,7 +3634,7 @@ Der rinder Sorg, rinder Harm af Roser røde.
 </body>
 </text>
 
-<text id="jacobsen2026101958" variant="jacobsenandrea25">
+<text id="jacobsenandrea25" aliases="jacobsen2026101958">
 <head>
   <firstline>Lad Vaaren komme, mens den vil</firstline>
   <source pages="185" facsimile-pages="204"/>
@@ -3808,7 +3837,7 @@ Det har sin egen, sære Vaar —
 </body>
 </text>
 
-<text id="jacobsen2026101966" variant="jacobsenandrea26">
+<text id="jacobsenandrea26" aliases="jacobsen2026101966">
 <head>
   <firstline>Saa standsed og dér den Blodets Strøm</firstline>
   <source pages="200" facsimile-pages="219"/>
@@ -3834,7 +3863,7 @@ Før endnu bedre Tanker er spired' af deres Frø.
 </body>
 </text>
 
-<text id="jacobsen2026101967" variant="jacobsenandrea27">
+<text id="jacobsenandrea27" aliases="jacobsen2026101967">
 <head>
   <firstline>Lys over Landet, —</firstline>
   <source pages="201" facsimile-pages="220"/>
