@@ -3973,7 +3973,8 @@ Og gik der en Smule Digter tabt,
 </content>
 </section>
 
-<text id="kaalund2026102001" author="kaalund">
+<!-- Kilden har den grammatiske gentagelse »Er det det samme« på side 149. -->
+<text id="kaalund2026102001" author="kaalund" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Ved Stranden</title>
   <firstline>Eensom i Aftenens dæmrende Stund</firstline>
