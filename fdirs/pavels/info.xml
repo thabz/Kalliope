@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pavels" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Claus</firstname>
+    <lastname>Pavels</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1769-08-01</date>
+      <place>Vanse</place>
+    </born>
+    <dead>
+      <date>1822-02-16</date>
+      <place>Bergen</place>
+    </dead>
+  </period>
+</person>
