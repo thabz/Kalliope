@@ -731,6 +731,22 @@ unresolved editorial question in the PR handoff.
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
 
+### Numbered poems without a title
+
+A simple number alone is not a usable text title. When a poem has only a
+number instead of a printed title, use the number as a `<num>` prefix followed
+by the poem's first line inside `<title>`. Always put a period after the
+number inside `<num>`, for example `<num>1.</num>`. Keep `<firstline>` as plain text.
+For example, `aarestrup2026102002` must use:
+
+```xml
+<title><num>1.</num>En deilig Aften, stille, sølvklart Vandet</title>
+<firstline>En deilig Aften, stille, sølvklart Vandet</firstline>
+```
+
+Apply this rule to every such poem in the work, including numbered sequences
+inside sections; never leave `<title>1</title>` or an equivalent bare number.
+
 Title metadata must also omit terminal punctuation. Remove a final period,
 comma, colon, semicolon, question mark or exclamation mark from `title` and its
 index, table-of-contents, link and breadcrumb variants even when it appears in
