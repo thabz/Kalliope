@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1793-nytaarsgave" author="antologierdk" status="incomplete" type="anthology" parent="1793-1804-nytaarsgave">
+<kalliopework id="1793-nytaarsgave" author="antologierdk" status="complete" type="anthology" parent="1793-1804-nytaarsgave">
 <workhead>
   <title>Nytaarsgave for Damer</title>
   <year>1793</year>
   <errata status="none"/>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1" datetime="2026-10-22T14:41:35+02:00"/>
+  </proofreadings>
   <pictures>
     <picture type="frontpage" src="1793-nytaarsgave-frontpage.jpg" primary="true"/>
   </pictures>
@@ -1348,6 +1351,7 @@ Og skyndelig svinde dens eneste Skye!
   <title>Kilden</title>
   <subtitle>en Fortælling, Professor Baggesen helliget.</subtitle>
   <source pages="67-77" facsimile-pages="80-90"/>
+  <keywords>baggesen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2596,6 +2600,7 @@ Og tænke, nævne Dig i sidste Aandedrag.
   <subtitle>(Sonnet.)</subtitle>
   <firstline>O, nu jeg føler, de har Ret, som sige</firstline>
   <source pages="135" facsimile-pages="150"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2629,6 +2634,7 @@ Jeg ei kan blive det adskilt fra dig.
     <note>Signeret »S. S.« i indholdsfortegnelsen.</note>
   </notes>
   <source pages="136" facsimile-pages="151"/>
+  <keywords>sonnet</keywords>
   <form>
     <analysis pattern="sonnet" confidence="1"/>
   </form>
@@ -3120,6 +3126,7 @@ Være min endløse Daad, min evige Sang — — —
   <subtitle>en Sonnet.</subtitle>
   <firstline>Uforstyrret Tiden skal fortære</firstline>
   <source pages="158" facsimile-pages="173"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
