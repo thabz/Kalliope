@@ -23,10 +23,15 @@ const loadCaching = async (fileContent, fileMtime, cachedContent, cachedMtime) =
   jest.doMock('../tools/libs/helpers.js', () => ({
     loadJSON: path => (path === './caches/files-sha.json' ? cache : null),
     loadFile: path => files.get(path)?.content ?? null,
-    writeJSON: (path, data) => writes.push({ path, data }),
     safeMkdir: jest.fn(),
     fileExists: path => files.has(path),
     fileModifiedTime: path => files.get(path).mtime,
+  }));
+
+  jest.doMock('fs', () => ({
+    writeFileSync: (path, json) => writes.push({ path, data: JSON.parse(json) }),
+    renameSync: jest.fn(),
+    rmSync: jest.fn(),
   }));
 
   return {

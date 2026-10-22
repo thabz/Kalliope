@@ -1466,6 +1466,10 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
+  // Publish the discovery registry only after all text outputs are complete.
+  // Commit file hashes last: interruption before that leaves inputs dirty.
+  flushImageSizeCache();
+  writeCachedJSON('poet-files', collected.poetFilesCache);
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
@@ -1484,7 +1488,6 @@ const main = async () => {
   }
   refreshFilesModifiedCache();
   flushImageSizeCache();
-  writeCachedJSON('poet-files', collected.poetFilesCache);
   if (showTimings) {
     print_benchmarking_results();
   }
