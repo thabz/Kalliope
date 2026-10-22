@@ -1,12 +1,12 @@
 import {
   loadJSON,
   loadFile,
-  writeJSON,
   safeMkdir,
   fileExists,
   fileModifiedTime,
 } from './helpers.js';
 import crypto from 'crypto';
+import fs from 'fs';
 
 const force_reload = process.argv.indexOf('--force-reload') !== -1;
 
@@ -109,7 +109,7 @@ const refreshFilesModifiedCache = () => {
   deleted_files.forEach(filename => {
     delete old_sha[filename];
   });
-  writeJSON('./caches/files-sha.json', old_sha);
+  writeCachedJSON('files-sha', old_sha);
 };
 
 // Use this for caching the data from a first pass
@@ -118,7 +118,14 @@ const loadCachedJSON = key => {
 };
 
 const writeCachedJSON = (key, data) => {
-  writeJSON(`caches/${key}.json`, data);
+  const filename = `caches/${key}.json`;
+  const temporary = `${filename}.tmp-${process.pid}`;
+  try {
+    fs.writeFileSync(temporary, JSON.stringify(data, null, 2));
+    fs.renameSync(temporary, filename);
+  } finally {
+    fs.rmSync(temporary, { force: true });
+  }
 };
 
 const shouldForceReload = () => {

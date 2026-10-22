@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { createHash } from 'crypto';
 import { DOMParser } from '@xmldom/xmldom';
 import * as bible from './bible-abbr.js';
 import path from 'path';
@@ -460,33 +461,50 @@ const buildThumbnails = async (
       : left.fullFilename.localeCompare(right.fullFilename);
   });
 
-  sourceFiles.forEach(({ fullFilename, mtimeMs: sourceMtime }) => {
-    const hasModificationCache = isFileModifiedMethod != null;
-    const sourceModified =
-      hasModificationCache && isFileModifiedMethod(fullFilename);
+  // Content receipts survive interruption independently of the global file cache.
+  // Include implementation and encoder versions so code/settings changes invalidate.
+  const digest = data => createHash('sha256').update(data).digest('hex');
+  const generator = digest(
+    fs.readFileSync(new URL(import.meta.url)) + JSON.stringify(sharp.versions)
+  );
+  safeMkdir('caches/thumbnails');
+  sourceFiles.forEach(({ fullFilename }) => {
+    const source = digest(fs.readFileSync(fullFilename));
     CommonData.availableImageFormats.forEach(ext => {
       CommonData.availableImageWidths.forEach(width => {
         const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-        safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-        const outputMtime = fileModifiedTime(outputfile);
-        if (
-          outputMtime == null ||
-          (hasModificationCache
-            ? sourceModified
-            : sourceMtime > outputMtime)
-        ) {
-          tasks.push(
-            limit(async () => {
-              const result = await resizeImage(
-                fullFilename,
-                outputfile,
-                width
-              );
-              progress.increment();
-              return result;
-            })
-          );
-        }
+        const receiptPath = `caches/thumbnails/${digest(path.resolve(outputfile))}.json`;
+        const key = digest(JSON.stringify({ source, generator, width, ext }));
+        tasks.push(limit(async () => {
+          let receipt = null;
+          try {
+            receipt = JSON.parse(fs.readFileSync(receiptPath, 'utf8'));
+          } catch (error) {
+            if (error.code !== 'ENOENT' && error instanceof SyntaxError === false) {
+              throw error;
+            }
+          }
+          if (receipt?.key === key && fs.existsSync(outputfile) === true &&
+              receipt.output === digest(fs.readFileSync(outputfile))) {
+            return;
+          }
+          safeMkdir(path.dirname(outputfile));
+          // Keep the extension for Sharp's format selection. Rename only complete
+          // outputs; a receipt is committed only after the output is in place.
+          const temporary = `${outputfile}.tmp-${process.pid}.${ext}`;
+          const temporaryReceipt = `${receiptPath}.tmp-${process.pid}`;
+          try {
+            await resizeImage(fullFilename, temporary, width);
+            const output = digest(fs.readFileSync(temporary));
+            fs.renameSync(temporary, outputfile);
+            fs.writeFileSync(temporaryReceipt, JSON.stringify({ key, output }));
+            fs.renameSync(temporaryReceipt, receiptPath);
+          } finally {
+            fs.rmSync(temporary, { force: true });
+            fs.rmSync(temporaryReceipt, { force: true });
+          }
+          progress.increment();
+        }));
       });
     });
   });
