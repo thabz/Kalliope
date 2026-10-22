@@ -3190,7 +3190,8 @@ Og du som døer med hver en Aftenrøde
 </body>
 </text>
 
-<text id="staffeldt2026102212" author="staffeldt">
+<!-- Gentagelsen »Slægter Slægter« er kontrolleret mod trykket s. 164. -->
+<text id="staffeldt2026102212" author="staffeldt" ignore-tests="repeated-adjacent-word">
 <head>
   <title><num>VII.</num>Ved de friske Grave paa Holmens Kirkegaard i Maj 1801</title>
   <firstline>Stands, o Ædling, her din Vandringsstav</firstline>
