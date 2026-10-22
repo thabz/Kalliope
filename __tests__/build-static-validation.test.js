@@ -1,4 +1,7 @@
-import { validateFirstlineMarkup } from '../tools/build-static/validation.js';
+import {
+  validateFirstlineMarkup,
+  validateIndexTitleMarkup,
+} from '../tools/build-static/validation.js';
 
 describe('build-static validation', () => {
   it('explains how to remove markup from a firstline', () => {
@@ -22,6 +25,21 @@ describe('build-static validation', () => {
         'fdirs/antologierdk/1868.xml'
       )
     ).not.toThrow();
+  });
+
+  it('accepts abbreviation overlines when indexing the printed title', () => {
+    expect(() => validateIndexTitleMarkup(
+      'Dan k<o>o</o>ning', 'dan', '1495.xml', { allowOverlines: true },
+    )).not.toThrow();
+  });
+
+  it.each([
+    ['Dan k<o>o</o>ning', false],
+    ['Dan k<o><i>o</i></o>ning', true],
+  ])('rejects unsupported index markup: %s', (title, allowOverlines) => {
+    expect(() => validateIndexTitleMarkup(
+      title, 'dan', '1495.xml', { allowOverlines },
+    )).toThrow('har markup i titlen');
   });
 
 });

@@ -85,7 +85,10 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
       const occurrence = (pageOccurrences.get(physicalKey) ?? 0) + 1;
       pageOccurrences.set(physicalKey, occurrence);
       const pageKey = `${label}${repeatedLabel ? `:${physicalKey}` : ''}${occurrence > 1 ? `:segment${occurrence}` : ''}`;
-      const lines = page.content.replace(/<[^>]+>/g, ' ').split(/\r?\n/);
+      const lines = page.content
+        .replace(/<\/?o>/g, '')
+        .replace(/<[^>]+>/g, ' ')
+        .split(/\r?\n/);
       lines.forEach((rawLine, lineIndex) => {
         const line = normalizeLine(rawLine);
         if (!line) return;

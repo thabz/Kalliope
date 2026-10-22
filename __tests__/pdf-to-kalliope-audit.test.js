@@ -686,6 +686,20 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
+  it('keeps overlined letters inside words while detecting actual OCR errors', () => {
+    const xml = workXml.replace('Første paa elleve', 'h<o>a</o>ns soc1o.ikke');
+    const candidates = historicalOcrCandidates({ xml });
+
+    expect(candidates).not.toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'singleton', match: 'h' }),
+      expect.objectContaining({ rule: 'suspicious-internal-space', anchor: expect.stringContaining('h a ns') }),
+    ]));
+    expect(candidates).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'digit-inside-word', match: 'c1' }),
+      expect.objectContaining({ rule: 'period-without-space', match: 'o.i' }),
+    ]));
+  });
+
   it('starts a later note on the page inherited from a legacy note-only transition', () => {
     const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
       .replace('Første linje', 'Første<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote> linje')

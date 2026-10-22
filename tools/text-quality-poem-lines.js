@@ -335,7 +335,9 @@ const findTitleMetadataFindings = ({
     ).forEach(element => {
       const type = element.tagName;
       const allowsFootnotes = ['title', 'toctitle'].includes(type);
-      const allowedFormatting = type === 'toctitle' ? ['w', 'i'] : [];
+      const allowedFormatting = type === 'toctitle'
+        ? ['w', 'i', 'o']
+        : type === 'title' ? ['o'] : [];
       const hasDisallowedMarkup = node => getChildren(node).some(child => {
         if (child.tagName === 'footnote') {
           return allowsFootnotes === false;
@@ -354,7 +356,7 @@ const findTitleMetadataFindings = ({
             textId,
             candidate: { element, type },
             rule: 'title-markup',
-            description: `${type} contains disallowed markup; only plain num prefixes${allowsFootnotes === true ? ', footnotes' : ''}${type === 'toctitle' ? ', w and i' : ''} are permitted.`,
+            description: `${type} contains disallowed markup; only plain num prefixes${allowsFootnotes === true ? ', footnotes and o' : ''}${type === 'toctitle' ? ', w and i' : ''} are permitted.`,
           }),
         );
       }

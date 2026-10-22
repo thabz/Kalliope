@@ -2,7 +2,7 @@ import { parseWorkXml } from './work-validation.js';
 
 export const layoutTagsRequiringContent = new Set([
   'center', 'right', 'nonum', 'wrap', 'block-center', 'blockquote',
-  'two-columns', 'column', 'i', 'b', 'u', 'sup', 'sub', 'strike',
+  'two-columns', 'column', 'i', 'b', 'u', 'o', 'sup', 'sub', 'strike',
   'quote', 'span', 's', 'small', 'w', 'sc', 'colored', 'metrik', 'biblio',
 ]);
 

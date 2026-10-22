@@ -60,6 +60,13 @@ describe('titeludtrækning', () => {
     expect(titleText(title)).toBe('Gravsang');
   });
 
+  it('bevarer forkortelsesstreger i titlers rene tekst', () => {
+    const title = { title: 'Dan k<o>o</o>ning <o>ſ</o>øn' };
+
+    expect(titleText(title)).toBe('Dan kōning ſ\u0304øn');
+    expect(title.title).toBe('Dan k<o>o</o>ning <o>ſ</o>øn');
+  });
+
   it('bevarer fodnoter i undertitler og deres linjer', () => {
     const doc = new DOMParser().parseFromString(
       '<head><title>Titel<footnote>Titelnote.</footnote></title>' +

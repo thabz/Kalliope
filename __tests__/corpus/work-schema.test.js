@@ -34,6 +34,12 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
+  it('accepts overlines containing letters, emphasis and source page markers', () => {
+    expect(() => validate(poetryWork(
+      'h<o>a</o> ſøn th<o><i>m</i><pb facs="006.jpg"/></o>',
+    ))).not.toThrow();
+  });
+
   it('validates structured sources, repeated people and legacy sources', () => {
     for (const source of [
       '<source><title>Digte</title></source>',

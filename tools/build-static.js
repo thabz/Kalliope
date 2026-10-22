@@ -113,7 +113,10 @@ import {
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
-import { validateFirstlineMarkup } from './build-static/validation.js';
+import {
+  validateFirstlineMarkup,
+  validateIndexTitleMarkup,
+} from './build-static/validation.js';
 import { build_works_toc, build_section_toc } from './build-static/toc.js';
 import { update_elasticsearch } from './build-static/elastic.js';
 import { loadExternalIdentifiers } from './build-static/external-identifiers.js';
@@ -617,7 +620,8 @@ const handle_work = async (work) => {
             extractTitle(head, 'title') ??
             firstline ??
             extractTitle(head, 'linktitle');
-          const indextitle = extractTitle(head, 'indextitle') || title;
+          const explicitIndexTitle = extractTitle(head, 'indextitle');
+          const indextitle = explicitIndexTitle ?? title;
           const toctitle = extractTitle(head, 'toctitle') || title;
           if (indextitle == null) {
             throw `${textId} mangler førstelinje, indextitle, title og linktitle i ${poetId}/${workId}.xml`;
@@ -630,9 +634,12 @@ const handle_work = async (work) => {
           if (firstline != null && firstline.title.trim().length === 0) {
             throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
           }
-          if (stripTitleNotes(indextitle).title.indexOf('>') > -1) {
-            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
-          }
+          validateIndexTitleMarkup(
+            stripTitleNotes(indextitle).title,
+            textId,
+            `${poetId}/${workId}.xml`,
+            { allowOverlines: explicitIndexTitle == null },
+          );
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
           }
