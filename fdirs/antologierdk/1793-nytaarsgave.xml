@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1793-nytaarsgave" author="antologierdk" status="incomplete" type="anthology">
+<kalliopework id="1793-nytaarsgave" author="antologierdk" status="incomplete" type="anthology" parent="1793-1804-nytaarsgave">
 <workhead>
   <title>Nytaarsgave for Damer</title>
   <year>1793</year>
   <errata status="none"/>
   <pagebreaks/>
-  <notes>
-    <note>Årgang 1793 i <a keyword="poulsens-nytaarsgaver">Simon Poulsens nytårsgaver</a>. Titelbladet har årstallet 1793; <a href="https://www.danskforfatterleksikon.dk/1850tit/0085/sknr85207.htm">Dansk Forfatterleksikon</a> daterer udgivelsen til 1792.</note>
-    <note>I KB’s PDF står de trykte sider 199–200 før 197–198. Kalliopes facsimile har de fire sider i trykt læserækkefølge; alle øvrige sider er uændrede. Nodebilagene er bevaret i facsimilet.</note>
-  </notes>
+  <pictures>
+    <picture type="frontpage" src="1793-nytaarsgave-frontpage.jpg" primary="true"/>
+  </pictures>
+  <!-- TODO: Opdatér det lokale facsimile, når KB har repareret PDF’ens rækkefølge af siderne 197–200. KB er kontaktet 22/10 2027; afventer svar. Se https://github.com/thabz/Kalliope/issues/2010. -->
   <source href="https://www.kb.dk/e-mat/dod/115208002918-color.pdf" facsimile="115208002918-color-ordered.pdf" facsimile-pages-num="225">
     <title>Nytaarsgave for Damer 1793</title>
     <editor type="editor">Simon Poulsen</editor>
@@ -104,6 +104,7 @@ Uvillig lagt i fremmed Arm
 Hvad hialp mig gyldne Sale? —
 I Ludvigs Hytte vil jeg boe
 Hos Frihed, Kierlighed og Roe!
+
 <nonum><right>Liebenberg.</right></nonum>
 </poetry>
 </body>
@@ -198,6 +199,7 @@ Snart du, blufærdig, øm og skiøn,
 Ved Alterfod og Præstebøn,
 Fuldkomme skal mit Arbeids Løn
 Med Ja fra rene Læber.
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -276,6 +278,7 @@ I Gravens Bolig
 Snart maaskee mit Legem hviler her;
 Gud! naar da min Siel er frie og rolig,
 Hist mit Held en Drøm ei er.
+
 <nonum><right>J. Smidth.</right></nonum>
 </poetry>
 </body>
@@ -287,7 +290,7 @@ Hist mit Held en Drøm ei er.
   <subtitle>(efter Voß.)</subtitle>
   <firstline>Klare Rosenskyer bebudede liflige Maïdag</firstline>
   <notes>
-    <note unknown-original-by="voss"/>
+    <note>Gendigtning af Voß’ <xref type="translation" poem="voss2026102201"/>.</note>
   </notes>
   <source pages="12-26" facsimile-pages="23-37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -499,6 +502,7 @@ Og hvor det Tørklæd’ sidder. Fy! skam dig du hæslige Unge!
 Spændte Skoene fast med bævende Hænder, og iilte
 Ned ad Trappen, og selv hun aabnede Døren, og raabte
 Høit af Fryd, og sank i Elskerens ventende Arme.
+
 <nonum><right>Riber.</right></nonum>
 </poetry>
 </body>
@@ -545,6 +549,7 @@ Eders gode Fader skal
 Nyde Glæder uden Tal.
 Gud! mit Hierte priser dig!
 Ham og disse gav du mig.
+
 <nonum><right>L****e.</right></nonum>
 </poetry>
 </body>
@@ -594,6 +599,7 @@ For i hans Arm at haste hen,
   Og for min Haardhed bøde.
 Han sikkert skulde skee sin Ret,
 Ti Kysse gav jeg ham for eet.
+
 <nonum><right>Frankenau.</right></nonum>
 </poetry>
 </body>
@@ -609,6 +615,7 @@ Ti Kysse gav jeg ham for eet.
 <prose>
 Et lille Blomst opvoxte i en lav og eensom Dal; det var skiønt og vellugtende; Stormvindene foere over det, men skadede det ikke. Afsides stod det, uden at bemærkes af Vandreren, men tryg for, at nedtrædes af hans uagtsomme Fod. Ingen vidste af det, uden den flittige Bie, som det villigt overlod sine overflødige Safter til nyttigt Brug. — En forskende Botaniker fandt det, og flyttede det til et Drivhuus, hvor det skiød sig i Veiret, udbredede sine Grene og blev stort. Den forbigaaende Tilskuer beundrede det nu, men ofte afbrækkede ogsaa hans Haand en af dets skiønneste Stilke; i konstig Lye og Varme var det nu i Sikkerhed for Stormene, men det følte heller ingen af de milde Vinde, som Naturen om Vaaren sender over Jorden, og ingen af Solens qvægende Straaler, hvilke ere saa qvægende, og hine saa milde, fordi de ere ukonstlede.
 <pb n="32" facs="044.jpg"/>  En Dag kom Gartneren i Haven, og spurgte Blomstret, hvad det syntes om sin Tilstand? Jeg takker dig, var Svaret, for den Møie, du har haft med mig; men vil du mit Vel, saa tag min Storhed fra mig, og giv mig min Roe igien.
+
 <right>J. Smidth.</right>
 </prose>
 </body>
@@ -674,6 +681,7 @@ Og aldrig skal, — det mig mit Hierte siger, —
 Jeg finde den, der mig som hiin er kier.
 Og iblandt alle Jordens skiønne Piger
 Der dog for mig ei nogen Linna er.
+
 <nonum><right>* th.</right></nonum>
 </poetry>
 </body>
@@ -719,6 +727,7 @@ O! jeg hører Eders hulde Stemme
 Ømt til Livets Fryd at kalde mig:
 Piger! kan I fordre, jeg skal glemme,
 At jeg her er ikke lykkelig?
+
 <nonum><right>A — m.</right></nonum>
 </poetry>
 </body>
@@ -763,6 +772,7 @@ Men, truer Mørke her Dit Fied,
 Du hærder mod vort Ønske være!
 Lad ei vor Taare holde Dig!
 Reis bort, — vær atter lykkelig!
+
 <nonum><right>A — m.</right></nonum>
 </poetry>
 </body>
@@ -818,6 +828,7 @@ Vilhelm! derfor klager jeg ei meer.
 Haabets balsamfulde Taarer trille,
 Og mit Hierte byder: Stille!
 Stille ved min Brudgoms Leer!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -926,6 +937,7 @@ Men om han os lidt bedre kiendte,
   Han blev vist ikke længe her;
   <w>Thi her forfølges ogsaa de</w>
   <w>Som kan os ind i Kortet see.</w>
+
 <nonum><right>i. m. h.</right></nonum>
 </poetry>
 </body>
@@ -935,6 +947,9 @@ Men om han os lidt bedre kiendte,
 <head>
   <title>Brev til Hans Høihed Prinds Christian Frederik</title>
   <subtitle>paa Hans Fødselsdag den 18. Septbr. 1791.</subtitle>
+  <dates>
+    <event>1791-09-18</event>
+  </dates>
   <notes>
     <note>Signeret »Knudsen« i indholdsfortegnelsen.</note>
   </notes>
@@ -1115,6 +1130,7 @@ Snart teede sig Hogen som Mand igien
 Og værdig at nævnes Kong Sivards Ven.
 Blandt Vaaben henrunde hans Dage:
 Hos Odin han Mieden skal smage.
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -1268,6 +1284,7 @@ Jeg lyde vil min Peters Raad,
   Og mig i Haabet trøste,
 At den, som saaer med Suk og Graad,
   Med Frydesang skal høste.
+
 <nonum><right>Pavels.</right></nonum>
 </poetry>
 </body>
@@ -1320,6 +1337,7 @@ Og dette forhøier hans Glæde hver Dag.
 Han eier en Himmel i huuslige Stand:
 Gid stedse den Himmel sin Klarhed fornye,
 Og skyndelig svinde dens eneste Skye!
+
 <nonum><right>B.</right></nonum>
 </poetry>
 </body>
@@ -1353,7 +1371,9 @@ Aftenen var alt kiølig, og kun eensomme Lerker qvidrede i skyndelig Flugt over 
   Syv Dage derefter bad Ulrik, at Amalia vilde møde ham ved Kilden kort før Solens Nedgang; han vilde der stige af Hest, naar han kom af Jagten. „Gierne,“ svarede Elskerinden; „jeg kiender ingen Plet paa Jorden, hvor jeg heller sværmer.“ Ulrik forlod hende. Neppe kastede Solen lange matte Skygger, før Amalia og Henriette, hver med sit Haandarbeide, <pb n="76" facs="088.jpg"/>gik ned over Fodstien giennem de høie Hæsselbuske til Engen, hvor Kilden opvældede. Amalia blev bestyrtset; Henriette forstillede Forundring. Kilden havde skiftet Udseende. Den strømmede nu frem giennem en Rift, der var anbragt i et rødagtigt Sandsteens Fodstykke, som den nedgaaende Sol gav herlige Farver. Det var skiødesløst behugget, og lignede en Klippe, hvorpaa Lys, Halvlys og Skygge afvexlede i mangehaande Former. Ovenpaa stod en Urne af hvideste Alabaster, rund og simpel, med et lidet ophøiet Laag. Paa een af Fodstykkets Sider vare disse Ord indgravne:
 
 <center>Til Minde<br/>for<br/><w>Amalia’s Moder,</w><br/>Dydens forevigede Tolk,<br/>Arbeidsomheds og Reenheds Skytsengel<br/>helligedes denne Kilde<br/>af<br/>sønlig Taknemmelighed.</center>
+
 <pb n="77" facs="089.jpg"/>  Ulrik havde plukket de Forglemmigei, han for en Uge siden satte Mærke ved; deraf havde hans Henriette flettet en yndig Krands; i det Øieblik, Amalia traadte frem af Hækkerne, var han sysselsat med at vinde den om Urnens Laag. Ubeskriveligt, umaleligt tindrede Amalia’s Øie, maalløs af Henrykkelse aabnede hun Arme, som ingen Praxiteles-Wiedewelt formaaer at efterligne, og styrtede hen mod sin nu dobbelt elskelige Elsker. Tæt føiede de deres Læber sammen, og Kilde og Mark, Jord og Himmel forsvunde trindt omkring dem.
+
 <right>P. H. Haste.</right>
 </prose>
 </body>
@@ -1362,7 +1382,10 @@ Aftenen var alt kiølig, og kun eensomme Lerker qvidrede i skyndelig Flugt over 
 <text id="abrahamson2026102101" author="abrahamson">
 <head>
   <title>Venskab</title>
-  <subtitle>Den 16. August 1781. Mel. <span lang="de">Bruder, auf dein Wohlergehen</span><footnote>En Venskabssang var begiert paa denne Melodie.</footnote>.</subtitle>
+  <subtitle>
+    <line>Den 16. August 1781.</line>
+    <line>Mel. <span lang="de">Bruder, auf dein Wohlergehen</span><footnote>En Venskabssang var begiert paa denne Melodie.</footnote>.</line>
+  </subtitle>
   <firstline>Venskab, Himlens blide Datter</firstline>
   <source pages="78-80" facsimile-pages="91-93"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1418,38 +1441,16 @@ Du bødst mig, Ædelste, at synge Venskabssang,
 Og Dagen byder mig, at give Strengen Klang.
 Jeg sang af Lydighed, jeg sang af Følelse;
 Lad det formilde Dig, naar Du seer Manglerne.
+
 <nonum><right>Abrahamson.</right></nonum>
 </poetry>
-</body>
-</text>
-
-<section id="anonym1700dk2026102110" author="anonym1700dk">
-<head>
-  <title>Huldgudinderne ved Belindes Vugge</title>
-  <subtitle>En Bryllups Cantate.</subtitle>
-</head>
-<content>
-
-<text id="anonym1700dk2026102111" author="anonym1700dk" skip-index="true">
-<head>
-  <title>Personerne</title>
-  <source pages="81" facsimile-pages="94"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<w>Aglae.</w><br/>
-<w>Thalia.</w><br/>
-<w>Eyphrosyne.</w>
-
-<small>Huldgudinderne, kronede med Blomsterkrandse, og holdende hinanden ved Haanden, udgiøre en halv Kreds omkring Belindes Leie.</small>
-</prose>
 </body>
 </text>
 
 <text id="anonym1700dk2026102112" author="anonym1700dk">
 <head>
   <title>Huldgudinderne ved Belindes Vugge</title>
+  <subtitle>En Bryllups Cantate.</subtitle>
   <firstline>Hviil sødt i Søvnens Arme</firstline>
   <notes>
     <note>Signeret »F. af F: L.« i indholdsfortegnelsen.</note>
@@ -1458,7 +1459,16 @@ Lad det formilde Dig, naar Du seer Manglerne.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+Personerne:<br/>
+<w>Aglae.</w><br/>
+<w>Thalia.</w><br/>
+<w>Eyphrosyne.</w>
+
+<small>Huldgudinderne, kronede med Blomsterkrandse, og holdende hinanden ved Haanden, udgiøre en halv Kreds omkring Belindes Leie.</small>
+</prose>
 <poetry>
+---
 <nonum><center><w>Terzet.</w></center></nonum>
 <nonum><center><w>Aglae.</w></center></nonum>
 Hviil sødt i Søvnens Arme,
@@ -1617,13 +1627,11 @@ Og Venskabs Ønske for vort Yndlings Par skal være:
     Til sildigst Alder nyde,
     Dem Jovis Forsyn fryde
         Med største jordiskt Held!
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
 </text>
-
-</content>
-</section>
 
 <text id="anonym1700dk2026102113" author="anonym1700dk">
 <head>
@@ -1671,6 +1679,7 @@ Saa ræk mig hulde Haand! jeg vinker ad den Dag,
   Hvis Aftens Mørke skal mig Dig i Arme give;
   Hvis Morgens Dagning skal min Banes bedste blive,
 Og aldrig græmmes af Fortrydelsernes Nag.
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
@@ -1720,6 +1729,7 @@ Du selv vil finde Livets Helding skiøn.
 Men mere sødt det da vil klinge Dig:
 „Vor Fader, Himles Fader Dig velsigne,
 „Og Himles Fader høre dem og mig!“
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -1761,6 +1771,7 @@ De Mænd saa stygt befale.
 Skal jeg da bytte Englestand
 For Lydighed imod en Mand?
 Nei, nei, jeg fri vil være.
+
 <nonum><right>A — m.</right></nonum>
 </poetry>
 </body>
@@ -1817,6 +1828,7 @@ Væne Piger! trodser ikke
     Elskovs og Naturens Magt.
 Følger ømme Mødres Skikke:
     De har Offret villig bragt.
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
@@ -1890,6 +1902,7 @@ Da vil vi freidig af fra Skuepladsen træde:
 Ei angre Verden, ei vor Lod begræde,
 Men slumre hen, og samles ved vor Død
 I Jordens moderlige Skiød.
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
@@ -1952,6 +1965,7 @@ Jeg seer dig selv — hist, hvor ei Graad er meer;
 Alt aabne Venskabs Favn mig at modtage —
 Trods Døden staaer, ubrudt, vort Venskab ved,
 Og skal bestaae hist i al Evighed.
+
 <nonum><right>Pram.</right></nonum>
 </poetry>
 </body>
@@ -2013,6 +2027,7 @@ Og hver din Time vorder fro!
 Og jeg skal uden Sukke
 Mit Moder-Øie lukke.
 Lullu, lullu! Sov sødeligt!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2062,6 +2077,7 @@ Og tænk ei, hun da vilde slide sig løs!
         Men var jeg ikke snild?
         Før var Glutten saa vild,
         Og nu blev hun saa mild!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2113,6 +2129,7 @@ Jeg da bær min Kummer glad
 Til jeg Øiet lukker:
 Blide Graad! taknemmelig
 Skal jeg hist velsigne dig.
+
 <nonum><right>A — m.</right></nonum>
 </poetry>
 </body>
@@ -2217,6 +2234,7 @@ En Cypressgreen plante til mit Minde,
 Pleie den, og give den mit Navn. —
 Held mig, naar jeg hviler mig af Møie,
 Groer mit Navn end under Hendes Øie!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2255,6 +2273,7 @@ I altid kan nøies med vor Menuet.
 Saa svinde vort Liv, som den raskeste Dands!
 I Dag vi os glæde. Jeg troer, vi giør ret;
 I Morgen vort Arbeid’ henglider saa let.
+
 <nonum><right>P. D. Faber.</right></nonum>
 </poetry>
 </body>
@@ -2278,6 +2297,7 @@ Som giør Luna Vandringsmanden kiær:
 Ak! jeg seer dit Smiil med bitter Smerte,
 Himmelskiønne <w>Mysis!</w> thi dit Hierte
 Meer foranderligt, end Maanen, er.
+
 <nonum><right>A — m.</right></nonum>
 </poetry>
 </body>
@@ -2354,11 +2374,39 @@ Lad det evig sove!
   <title>Reise til Peters-Øen i Bieler-Søen</title>
   <subtitle>min gode Ven og Svoger Eggers tilegnet.</subtitle>
   <source pages="120-127" facsimile-pages="135-142"/>
+  <places>
+    <place ref="st-petersinsel" relation="subject" primary="true"/>
+    <place ref="lake-biel" relation="setting"/>
+    <place ref="bern" relation="setting"/>
+    <place ref="aarberg" relation="setting"/>
+    <place ref="gerolfingen" relation="setting"/>
+    <place ref="aare" relation="mentioned"/>
+    <place ref="murten" relation="mentioned"/>
+    <place ref="saint-jean-cliffs" relation="mentioned"/>
+    <place ref="bois-de-la-batie" relation="mentioned"/>
+    <place ref="geneva" relation="mentioned"/>
+    <place ref="rhone" relation="mentioned"/>
+    <place ref="arve" relation="mentioned"/>
+    <place ref="fribourg-prealps" relation="mentioned"/>
+    <place ref="jura-mountains" relation="mentioned"/>
+    <place ref="jungfrau" relation="mentioned"/>
+    <place ref="eiger" relation="mentioned"/>
+    <place ref="wetterhorn" relation="mentioned"/>
+    <place ref="stockhorn" relation="mentioned"/>
+    <place ref="mettenberg" relation="mentioned"/>
+    <place ref="fort-lecluse" relation="mentioned"/>
+    <place ref="biel" relation="mentioned"/>
+    <place ref="nidau" relation="mentioned"/>
+    <place ref="vaud" relation="mentioned"/>
+    <place ref="niesen" relation="mentioned"/>
+    <place ref="lake-neuchatel" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
   Ved sit rene Blaa vinkede Himmelen, og Klokken syv sadde Jomfrue Henriette Haller, Schmidt, Carl og jeg paa en aaben Vogn for at giøre en Valfart til Bieler-Søe og Peters-Øen. Nu først saae jeg ganske Berns fortrolig eensomme Beliggenhed i det klare Morgenlys fra Panziger-Hübbels Bakke: det ligger paa en Høi, omgivet med en Vold af Høie, ved hvis Fod Aarfloden bruser, som, overalt beskyllende Stadens Mure, giør den til en Halvøe, der kun er landfast mod Sletten henad Murten til. Disse Høie ere saare grønne, og fulde af romantiske Situationer, lige de høie Klinte ved St. Jean og la Batie<footnote>To Høie i Nærheden af Genf, under hvilke Rhone og Arve flyde sammen.</footnote>, dog <pb n="121" facs="135.jpg"/>ikke høie nok for at tilspærre Udsigten. Ud af Staden gaae til alle Sider friske kiølige Spadseregange op paa denne naturlige Fæstning, paa hvilke man nyder en behagelig, vexlende Udsigt, snart paa Freiburger-Biergene, — snart hen over Jura, der fiern blaanende omgiver en viid Søm af Horizonten — saa mod Østen Gletschernes Himmelscene, som i stedse lysende Rækker takkede læne sig op til hinanden, som Kæmpere mod Aartusender. De stege med vor stigende Vei, der trak sig hen over Arven, hvilken lysegrøn under dybt indsnittede Biergvægge overskyggedes af tykke Granneskove, hvis melancholske Form og Farve er skatteret med spædgrønne Bøge. En Fierdingvei foran Staden henrykkede mig Synet af det vidt udbredte Biergamphitheater fra den sneetækkede Freiburger-Biergkiæde af, der tilsidst føier sig til Grinderwalds Gletscher. Jeg giorde for Alting Bekiendtskab med det ubestegne Jomfrue-Bierg, som høit i Luften opløfter sine tre blødt afrundede Domer; med Eigeren, hvis tvende kolossalske Taarne lade giennemskue en Dal, der sikkerligen forener alle Dø<pb n="122" facs="136.jpg"/>dens Rædsler. Phantastisk rager Wetterhornet i Veiret, og Stockhornet stivnede af Iis, blaat og uoplyst. Paa det hvide Mettenberg hviler Øiet efter de vilde Former. Vor Vei gik meer op, end ned, giennem behagelige Egne; og vi havde nu de stigende Iisbierge til Ledsagere, indtil paa Høien foran Aabierg først hele Egnen, den vi med et hastigt Blik giennemløb, viste sig, og derpaa under Nedkiørselen forsvandt, hvorfor Jura’s vigtige Masse fremskød sig; jeg hilsede det som en gammel Ven. — Den lille Stad har en munter Beliggenhed ved Foden af den frugtbare Høi, som Arven væder. Herfra kom vi til det ved Bieler-Søens Bred liggende Fiskerleie Gerlinsingen, giennem smaa fortrolige grønt overhvælvede Veie, indtil vi fra en fri Bakke pludseligt øinede Søens Flade, liig et klarligen smilende Aasyn, og det liflige Eiland, som vore Ønsker fløi imøde. Snart vare vi i den skrøbelige Baad, og inddrukke med aaben Sands al denne skiønne Søedals frydelige Klarhed. Bredden, fra hvilken vi glede, aabner Søen en fladtegnet Bugt, og udstrækker til begge Sider to lange Jord<pb n="123" facs="137.jpg"/>tunger. Ved den ene Side steilt afskaarne Bredder, tapetserede med Buske, blødt nedstigende i et smalt Jordstrøg, men som ved Enden hæver sig til en høi Vold, hvis Profil-Forbierge skuer langt ud i Vandene. Fra den anden Side nedglider Høien, som vi forlode, i et frisk fladt Land, hvis Enge, Agre og Lunde venligen bades af de nære Bølger. Lige for os indfattede Jura hele Maleriet, afheldende mod Søen i en rund Søm. Viinbierge, svævende paa høie Fielde, støttede af nøgne Steenmasser, — store Skove, udstrakte mod Siderne, — nydelige Viinrankehuse, — Slotte og Smaastæder, strøede tæt ved Søens Bred, — Jura’s bageste Toppe, bedækkede med Snee, — blaanende langt over Søens Cirkel-Oval Neufchateller-Biergrækkens Kløft, som erindrer mig om Fort l’Ecluse<footnote>Aabningen af Jura, berømt ved Cæsars Giennemgang.</footnote>. Da vi kom paa Høiden af Søen, tittede Biel og Nidau frem i grøn Krands. Først syntes vor Øe en liden Cirkelrunding; alt som vi nærmede os den, udstrakte den sig for Øiet, og viste sig som <pb n="124" facs="138.jpg"/>et egentligt Eiland, langagtigttegnet, den jevnt skraalige Sydside, hvorved vi landede, behængt med Ranker, og beskyttet af en Steenvold mod den lille Søes urolige Bølger. Hele Øens Ryg er bevoxen med Skov, der skiødesløs, som et Slør, affalder til begge Sider. Vi landede i en smal Kanal, der aabner sig ind i Øen. Sødt hemmeligt Stille lurede omkring os, ikkun afbrudt ved Bølgernes Brud mod Steenvolden. Jeg besteeg Øens Klint med bankende Hierte, og forvildede mig omkring i den skiønne Eegelund paa snævre bevoxede Stier. Hvor rørte Alting mig! — disse høie, indskrænkede Skygge-Domer, hvorunder <w>Han</w><footnote>Jean Jaques Rousseau.</footnote> tænksom vandrede, — disse rige Græsplaner, i hvis lille Verden sikkert ingen Plante var ham fremmed; disse Skarer af Fugle, som chorviis qvidrede deres uforstyrrede Vaarsang, og fordum nær omflagrende ham, som nu mig, trak hans elskende Siel til sig. Jeg ledte efter det Sted, som han fortrinligen elskede, den Pynt af Øen, hvor den brat skuer <pb n="125" facs="139.jpg"/>ud over Søen, og Bølgernes dumpe Slag pladske mod Klippegrunden, der i Lag udstrækker sig i det grønne Vand. Min Genius veiledte mig, og inden faa Minuter sad jeg under Eegeskyggen over Styrtningen. Hvor aldeles maatte denne lille Plads være for ham! — Dyb Eensomhed og Natur omkring ham, — ved hans Fødder Søen, der skillede ham fra besværlige Mennesker, — i beqvem Frastand Blikket paa det landlige Livs venlige Optrin. Fra Sydsiden Fiskerhytterne, skiulte i Buske, og høie Kornmarker bølgende, friske Enge glindsende over den eensomme Strand; fra Nordsiden Viinbiergene, hvorfra Viindyrkernes glade Chore løde over til ham, og ujevne Fieldklumper, afvexlende med tykke Skove. Her saae han den af hans skiønne Siel inderlig elskede Menneskeklasse, langt nok fra den, for ei at turde frygte den; og her nød han det qvægende Syn af ufordærvet Natur, uden at leve i en Udørk. O du Gode! og selv denne lille Plads misundte dig! Her havde du endt dine Dage i Fred, uden at føle den sidste Bitterhed, hvoraf dine sildigere Leveaar vare forgaldede. <pb n="126" facs="140.jpg"/>Ak! havde du døet her! Saare veemodige Taarer fulgte din Skygge, du, som jeg ganske forstaaer og begriber, i dine høie Dyder, som i dine Svagheder. Jeg omvankede den hele Bakke af Øen, som imod Norden nedstiger i en grøn Græsvold. Et forfaldet Chalet<footnote>Navnet paa Meierhytterne i Pays de Vaux.</footnote> syntes mig og at være een af de Gienstande, som vare ham kiære. Her hvilede han ofte af sine Vandringer, naar Storm og Regn overfaldte ham. Paa den anden Ende af Øen steeg jeg ud af Skoven ned ad Græsvolden indtil Søen, der brusende med høi Røst, brød de grønne blinkende Bølger imod Steenmuren. Derpaa gik vi ind i Øens eneste Huus. Jeg havde bestilt Middagsmaaltidet i Rousseaus Værelse, det jeg betraadte med bange Beklemmelse. Thi kun i Guds frie Luft befandt han sig vel, og den Hiertet sønderrivende Scene af hans Afsked fra dette salige Uskylds Eiland fremstillede sig for mig. Udsigten af det eneste Vindve paa denne lille Stue glider over Søen, og lander paa en frisk Engplet, bag hvilken <pb n="127" facs="141.jpg"/>Gletscher-Spidsene opvoxe. Synet er indskrænket men uendeligt for Indbildningskraften. Klokken fire forlode vi Øen efter tre Timers Ophold. Det blæste en skarp Vind, og jeg bestyrtsedes ved Søens høie svære Bølger, der høirøstede stødte mod vort Papirs Fartøi. Vor ene Færgemand var drukken, den anden iisgraa; og jeg havde frygtet, om jeg ikke havde været saa fordybet i Drømmerier. Fra den høie Søbred tilraabte jeg det fiernt svømmende Eiland et veemodigt Farvel. Under Hiemkiørselen nøde vi en skiøn Beskuelse af Gletscherne, der skarpt oplyste af nogle giennem en Skye fremskydende Solstraaler, laae for vort Øie i reent Omrids. Især rystedes jeg af Niesens Pyramide. Fra et Bierg saae vi Aftenrødens Gienskin paa eengang glimre i Neufchateller- og Bielersøen.
+
 <right>Frederike Brun, fød Münter.</right>
 </prose>
 </body>
@@ -2427,6 +2475,7 @@ Han vilde flink og tro sin Pligt udøve,
 Og jeg tør sige: helst han kom til mig.
 O hulde Venus! giør med ham en Prøve,
 For det Bud jeg tre Gange takker dig.
+
 <nonum><right>Tode.</right></nonum>
 </poetry>
 </body>
@@ -2463,6 +2512,7 @@ Kuns dette Ønske undes mig,
     Og saa min Rezia at eie!
     Da har jeg meer end Verden kan opveie,
 Trods Jordens Gud er lykkelig.
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
@@ -2534,6 +2584,7 @@ Saaledes tænker jeg paa Gluttens Fødselsdag;
   En Dag, der skal Din B — for evig hellig være;
   Som samme Følelser i hulde Bryst skal nære,
 Og tænke, nævne Dig i sidste Aandedrag.
+
 <nonum><right>F. af F: L.</right></nonum>
 </poetry>
 </body>
@@ -2578,6 +2629,9 @@ Jeg ei kan blive det adskilt fra dig.
     <note>Signeret »S. S.« i indholdsfortegnelsen.</note>
   </notes>
   <source pages="136" facsimile-pages="151"/>
+  <form>
+    <analysis pattern="sonnet" confidence="1"/>
+  </form>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2599,6 +2653,7 @@ Fryde den, som i den unge Vaar!
     Og saa gid jeg kunde rigt giengielde
 Hver en Fryd, Dit Hierte skienker mig!
 Ak! jeg kan ei meer, end elske Dig.
+
 <nonum><right>S. S.</right></nonum>
 </poetry>
 </body>
@@ -2693,6 +2748,7 @@ Uskyldighedens Krone
 Til Døden smykker mig:
 O fromme, gamle Kone!
 Gud Fader lønne dig!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2752,6 +2808,7 @@ Bad jeg: Evig, evig brænde den!
 Du vel ei paa Gavens Ringhed seer,
 Tænk engang iblandt paa mig tilbage,
 Naar min Skienk, men ikke jeg er meer!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2774,6 +2831,7 @@ Ak! men Graad er ei saa klog, som Latter,
 Alt for mangen Fryd bortskyller den:
 Derfor, Glædens ømme, gode Datter!
 Lee Din Morgen, Dag og Aften hen!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -2808,6 +2866,7 @@ Lee Din Morgen, Dag og Aften hen!
 <pb n="148" facs="162.jpg"/>  Louises Barm gik tungt op og ned, og Aftenrøden, der tittede igiennem Hækkernes urolige Løv, røbede noget Vaadt i det skiønne Øie. Ferdinand var stum, og holdt sin Pige uvilkaarlig haardt i Haanden. Bie her et Øieblik, sagde han endelig, jeg løber alt hvad jeg kan; jeg har smukkere Roser, end du: jeg vil hente dig den kiønneste blandt dem alle. Knopperne paa den synes allerede at love meer, end Blade.
 
   Hurtig, mens han løb, sammentraadte Louise Jorden om sin egen Rose, og brændende kyssede hun Elskeren, da han kom med sin, fordi den var skiønnere.
+
 <right>A — m.</right>
 </prose>
 </body>
@@ -2867,6 +2926,7 @@ Og med fornyet Liv og Kraft og Munterhed
     Den Almagt, som det bød paa Himlen frem at ile —
     Hold op, o Psyche! som Guds Sendebud at smile,
 At over dig jeg ei skal glemme Gud.
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -2889,6 +2949,7 @@ Den kielne, friske, purpurrøde Flamme,
     Tilbedte Doris! straaler og fra Dig —
     Og, for i alt at være Luna lig,
 Du hos en anden Klode laaner samme.
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -2926,6 +2987,7 @@ Som myrder selv den Glæde, Dyder tænde,
     Som med voltairisk Vid Fornuft forjager —
 Jeg troer et andet Liv, hvor den, som var mig kier
     Mig ingen sydlig Vind saa let borttager.
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -2949,6 +3011,7 @@ En Dumhed: for at følge gammel Skik,
 Saa dum er ingen, han jo eengang fik
 Et vittigt Indfald: efter Fædres Skik
     Forleden Dag min salig Fader døde.
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -3001,6 +3064,7 @@ Kom din Pagt med Himmelen ihu!
 Af hvis Hænder Solens Purpur flød,
 Han, som dig og Rosen rødme bød,
     Her og hisset signe dig, som Fader!
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -3013,7 +3077,7 @@ Han, som dig og Rosen rødme bød,
   <firstline>Dig forkynde min Sang, du Livets evige Kilde!</firstline>
   <notes>
     <note>Signeret »X.« i indholdsfortegnelsen.</note>
-    <note unknown-original-by="ramler"/>
+    <note>Gendigtning af Ramlers <xref type="translation" poem="ramler2026102201"/>.</note>
   </notes>
   <source pages="156-157" facsimile-pages="171-172"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3044,6 +3108,7 @@ Vil du, Fader! engang, naar mit jordiske smuldrer, opholde
 Denne høiere Deel af mit Væsen, som troer dig, og haaber —
 Da skal din Almagts, din Godheds, din Herligheds fulde Beundring
 Være min endløse Daad, min evige Sang — — —
+
 <nonum><right>X.</right></nonum>
 </poetry>
 </body>
@@ -3076,6 +3141,7 @@ Og med rene Taarer vande den:
     Dog maaskee en from, uskyldig Pige
 Hvisker stille: „Hvil dig, vaagn igien,
 „Søde! vaagn til Sang i Glædens Rige!“
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -3084,7 +3150,11 @@ Hvisker stille: „Hvil dig, vaagn igien,
 <text id="haste2026102113" author="haste">
 <head>
   <title>Esa</title>
-  <subtitle>en Ballade<footnote>Anledningen er tagen af Saxo’s syvende Bog.</footnote>, Kammerherre Peter Frederik Suhm helliget.</subtitle>
+  <subtitle>
+    <line>en Ballade<footnote>Anledningen er tagen af Saxo’s syvende Bog.</footnote>,</line>
+    <line>Kammerherre Peter Frederik Suhm</line>
+    <line>helliget.</line>
+  </subtitle>
   <firstline>Naar jeg paa fordums Idret saae</firstline>
   <source pages="159-172" facsimile-pages="174-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3372,6 +3442,7 @@ I Nordens Møer! endnu er Dyd:
 O! lad den Eder røre!
 Lad dens beskedne, kiekke Søn
 I Eder faae sin Idræts Løn!
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
@@ -3442,6 +3513,7 @@ O Gud! det Himmel-Vink mig aabenbarer.
 Den som meest sværger, gierne meest bedrager.
 Tro den, som paa sin Kiærlighed
 Ikkun sit Hierte kuns til Vidne tager.
+
 <nonum><right>Tode.</right></nonum>
 </poetry>
 </body>
@@ -3532,6 +3604,7 @@ Hver Dands, hver munter Sang
 En Lue tænder.
 Om Elskov kommer til,
 Jeg reent forbrænde vil.
+
 <nonum><right>Tode.</right></nonum>
 </poetry>
 </body>
@@ -3566,6 +3639,7 @@ O Mira! hvor kan du bebreide mig,
 Jeg før for andre Piger brændte,
 Jeg da, som Adam intet bedre kiendte;
 Nu først — nu har jeg seet, og elsket dig.
+
 <nonum><right>Rahbek.</right></nonum>
 </poetry>
 </body>
@@ -3615,6 +3689,7 @@ Himlen høre dine Venner,
 Den dig giøre lykkelig!
 Lykkelig, som du fortiener,
 Bedre kan ei ønskes dig.
+
 <nonum><right>Rahbek.</right></nonum>
 </poetry>
 </body>
@@ -3663,6 +3738,7 @@ Forvisse mig, at han bønhører den
 Du har end ei det mindste at begiære,
 Føl da, at Himlen dig ei skienkte mere,
 End du var værd, og end jeg ønskte dig.
+
 <nonum><right>÷</right></nonum>
 </poetry>
 </body>
@@ -3712,6 +3788,7 @@ Salig vorde dig din Hvile,
 Engle til din Slummer smile
 Fred af Himlen vennehuld
 Svæve om dit kiære Muld!
+
 <nonum><right>Frankenau.</right></nonum>
 </poetry>
 </body>
@@ -3753,6 +3830,7 @@ Venskab os en varig Sommer skienker,
 Minna! kom og nyd dens blide Fryd;
 Snart maaskee skal Amors bløde Lænker
 Bedre lønne din saa sieldne Dyd.
+
 <nonum><right>Frankenau.</right></nonum>
 </poetry>
 </body>
@@ -3772,6 +3850,7 @@ Nyd ogsaa dette Værk af <w>Florian!</w>
 Dog saare villig jeg erkiender,
 Han taber under mine Hænder;
 Paa dine Læber vinder han.
+
 <nonum><right>Rahbek.</right></nonum>
 </poetry>
 </body>
@@ -4009,6 +4088,7 @@ Af Glædens den vældigt frembristende Graad.
 Dog spirede Roser paa sneedækket Kind.
 Hun sledes med Møie fra Døden saa fæl,
 Og Ludvig var Engel paa Legem og Siel.
+
 <nonum><right>P. H. Haste.</right></nonum>
 </poetry>
 </body>
