@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <places>
+  <place id="aarberg">
+    <name>Aarberg</name>
+    <wikidata>Q64113</wikidata>
+    <type>town</type>
+    <alias>Aabierg</alias>
+    <parent ref="switzerland"/>
+  </place>
+  <place id="aare">
+    <name>Aare</name>
+    <wikidata>Q1675</wikidata>
+    <type>river</type>
+    <alias>Aarfloden</alias>
+    <alias>Aar</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="aarhus">
     <name>Aarhus</name>
     <wikidata>Q25319</wikidata>
@@ -98,6 +113,11 @@
     <alias>Arquà</alias>
     <parent ref="italy"/>
   </place>
+  <place id="arve">
+    <name>Arve</name>
+    <wikidata>Q633819</wikidata>
+    <type>river</type>
+  </place>
   <place id="asia">
     <name>Asien</name>
     <canonical-name>Asia</canonical-name>
@@ -190,6 +210,14 @@
     <type>city</type>
     <alias>Biarrits</alias>
   </place>
+  <place id="biel">
+    <name>Biel/Bienne</name>
+    <wikidata>Q1034</wikidata>
+    <type>city</type>
+    <alias>Biel</alias>
+    <alias>Bienne</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="bjornkjaer-castle">
     <name>Bjørnkær Voldsted</name>
     <canonical-name>Bjørnkær</canonical-name>
@@ -206,6 +234,12 @@
     <wikidata>Q4204</wikidata>
     <type>mountain range</type>
     <parent ref="germany"/>
+  </place>
+  <place id="bois-de-la-batie">
+    <name>Bois de la Bâtie</name>
+    <type>wooded hill</type>
+    <alias>la Batie</alias>
+    <parent ref="geneva"/>
   </place>
   <place id="bologna">
     <name>Bologna</name>
@@ -456,6 +490,13 @@
     <alias>Ægypt</alias>
     <parent ref="africa"/>
   </place>
+  <place id="eiger">
+    <name>Eiger</name>
+    <wikidata>Q4425</wikidata>
+    <type>mountain</type>
+    <alias>Eigeren</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="einsiedeln">
     <name>Einsiedeln</name>
     <wikidata>Q68950</wikidata>
@@ -533,6 +574,13 @@
     <alias>Mola</alias>
     <parent ref="italy"/>
   </place>
+  <place id="fort-lecluse">
+    <name>Fort l’Écluse</name>
+    <wikidata>Q3078389</wikidata>
+    <type>fort</type>
+    <alias>Fort l’Ecluse</alias>
+    <parent ref="france"/>
+  </place>
   <place id="france">
     <name>Frankrig</name>
     <canonical-name>France</canonical-name>
@@ -587,6 +635,15 @@
     <parent ref="zealand"/>
     <note>Lokaliteten ved Furesøen nordvest for København.</note>
   </place>
+  <place id="fribourg-prealps">
+    <name>Freiburgeralperne</name>
+    <canonical-name>Fribourg Prealps</canonical-name>
+    <type>mountain range</type>
+    <alias>Freiburger-Biergene</alias>
+    <alias>Freiburger-Biergkiæde</alias>
+    <alias>Freiburger Voralpen</alias>
+    <parent ref="alps"/>
+  </place>
   <place id="funen">
     <name>Fyn</name>
     <canonical-name>Funen</canonical-name>
@@ -608,6 +665,15 @@
     <alias>Liris</alias>
     <parent ref="italy"/>
   </place>
+  <place id="geneva">
+    <name>Genève</name>
+    <canonical-name>Geneva</canonical-name>
+    <wikidata>Q71</wikidata>
+    <type>city</type>
+    <alias>Genf</alias>
+    <alias>Geneve</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="genzano-di-roma">
     <name>Genzano di Roma</name>
     <wikidata>Q242683</wikidata>
@@ -621,6 +687,14 @@
     <wikidata>Q183</wikidata>
     <type>country</type>
     <alias>Deutschland</alias>
+  </place>
+  <place id="gerolfingen">
+    <name>Gerolfingen</name>
+    <wikidata>Q55336698</wikidata>
+    <type>village</type>
+    <alias>Gerlefingen</alias>
+    <alias>Gerlinsingen</alias>
+    <parent ref="switzerland"/>
   </place>
   <place id="gethsemane">
     <name>Getsemane</name>
@@ -969,6 +1043,14 @@
     <wikidata>Q15312</wikidata>
     <type>mountain</type>
     <alias>Jomfruen</alias>
+    <alias>Jomfrue-Bierg</alias>
+  </place>
+  <place id="jura-mountains">
+    <name>Jurabjergene</name>
+    <canonical-name>Jura Mountains</canonical-name>
+    <wikidata>Q178611</wikidata>
+    <type>mountain range</type>
+    <alias>Jura</alias>
   </place>
   <place id="jutland">
     <name>Jylland</name>
@@ -1117,6 +1199,16 @@
     <alias>averniske Afgrund</alias>
     <parent ref="italy"/>
   </place>
+  <place id="lake-biel">
+    <name>Bielersøen</name>
+    <canonical-name>Bielersee</canonical-name>
+    <wikidata>Q14429</wikidata>
+    <type>lake</type>
+    <alias>Bieler-Søen</alias>
+    <alias>Bieler-Søe</alias>
+    <alias>Lac de Bienne</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="lake-lauerz">
     <name>Lauerzersøen</name>
     <canonical-name>Lake Lauerz</canonical-name>
@@ -1139,6 +1231,14 @@
     <wikidata>Q648679</wikidata>
     <type>lake</type>
     <alias>Nemi</alias>
+  </place>
+  <place id="lake-neuchatel">
+    <name>Neuchâtelsøen</name>
+    <canonical-name>Lac de Neuchâtel</canonical-name>
+    <wikidata>Q14375</wikidata>
+    <type>lake</type>
+    <alias>Neufchatellersøen</alias>
+    <parent ref="switzerland"/>
   </place>
   <place id="lake-thun">
     <name>Thunersøen</name>
@@ -1302,6 +1402,12 @@
     <type>ancient city</type>
     <parent ref="egypt"/>
   </place>
+  <place id="mettenberg">
+    <name>Mettenberg</name>
+    <wikidata>Q670293</wikidata>
+    <type>mountain</type>
+    <parent ref="switzerland"/>
+  </place>
   <place id="milan">
     <name>Milano</name>
     <canonical-name>Milan</canonical-name>
@@ -1393,6 +1499,13 @@
     <type>city</type>
     <parent ref="spain"/>
   </place>
+  <place id="murten">
+    <name>Murten</name>
+    <wikidata>Q68283</wikidata>
+    <type>town</type>
+    <alias>Morat</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="naesbyholm">
     <name>Næsbyholm</name>
     <wikidata>Q12329556</wikidata>
@@ -1425,6 +1538,18 @@
     <name>Neuwied</name>
     <wikidata>Q3967</wikidata>
     <type>city</type>
+  </place>
+  <place id="nidau">
+    <name>Nidau</name>
+    <wikidata>Q13209</wikidata>
+    <type>town</type>
+    <parent ref="switzerland"/>
+  </place>
+  <place id="niesen">
+    <name>Niesen</name>
+    <wikidata>Q16693</wikidata>
+    <type>mountain</type>
+    <parent ref="switzerland"/>
   </place>
   <place id="nikolaj-church">
     <name>Sankt Nikolaj Kirke</name>
@@ -1645,6 +1770,12 @@
     <alias>Rheinfall</alias>
     <parent ref="schaffhausen"/>
   </place>
+  <place id="rhone">
+    <name>Rhône</name>
+    <wikidata>Q602</wikidata>
+    <type>river</type>
+    <alias>Rhone</alias>
+  </place>
   <place id="rigi">
     <name>Rigi</name>
     <wikidata>Q15291</wikidata>
@@ -1776,6 +1907,13 @@
     <wikidata>Q688537</wikidata>
     <type>meadow / historic site</type>
     <alias>Rütly</alias>
+  </place>
+  <place id="saint-jean-cliffs">
+    <name>Saint-Jean-klipperne</name>
+    <canonical-name>Falaises de Saint-Jean</canonical-name>
+    <type>cliffs</type>
+    <alias>St. Jean</alias>
+    <parent ref="geneva"/>
   </place>
   <place id="salerno">
     <name>Salerno</name>
@@ -1967,6 +2105,16 @@
     <alias>San Pietro in Vaticano</alias>
     <parent ref="vatican-city"/>
   </place>
+  <place id="st-petersinsel">
+    <name>Petersøen</name>
+    <canonical-name>St. Petersinsel</canonical-name>
+    <wikidata>Q688542</wikidata>
+    <type>island/peninsula</type>
+    <alias>Peters-Øen</alias>
+    <alias>Petersinsel</alias>
+    <alias>Île Saint-Pierre</alias>
+    <parent ref="lake-biel"/>
+  </place>
   <place id="stjerneborg">
     <name>Stjerneborg</name>
     <wikidata>Q142658</wikidata>
@@ -1978,6 +2126,13 @@
     <wikidata>Q1754</wikidata>
     <type>city</type>
     <parent ref="sweden"/>
+  </place>
+  <place id="stockhorn">
+    <name>Stockhorn</name>
+    <wikidata>Q15302</wikidata>
+    <type>mountain</type>
+    <alias>Stockhornet</alias>
+    <parent ref="switzerland"/>
   </place>
   <place id="strasbourg">
     <name>Strasbourg</name>
@@ -2187,6 +2342,14 @@
     <alias>Vetteren</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="vaud">
+    <name>Vaud</name>
+    <wikidata>Q12771</wikidata>
+    <type>canton</type>
+    <alias>Pays de Vaux</alias>
+    <alias>Pays de Vaud</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="velletri">
     <name>Velletri</name>
     <wikidata>Q189236</wikidata>
@@ -2282,6 +2445,13 @@
     <type>abbey ruin</type>
     <alias>Wreta</alias>
     <parent ref="sweden"/>
+  </place>
+  <place id="wetterhorn">
+    <name>Wetterhorn</name>
+    <wikidata>Q665089</wikidata>
+    <type>mountain</type>
+    <alias>Wetterhornet</alias>
+    <parent ref="switzerland"/>
   </place>
   <place id="wiesbaden">
     <name>Wiesbaden</name>

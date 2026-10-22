@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smidth" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jens Hansen</firstname>
+    <lastname>Smidth</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1769-07-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1847-01-20</date>
+      <place>Maarsby Præstegaard</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
