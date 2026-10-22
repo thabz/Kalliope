@@ -142,7 +142,7 @@ Ei Dit Øre for min Sang oplader,
 </body>
 </text>
 
-<text id="jessen2026102201" author="jessen">
+<text id="jessen2026102201" author="jessen" ignore-tests="internal-uppercase">
 <head>
   <title>Gaaden</title>
   <subtitle>
@@ -150,6 +150,9 @@ Ei Dit Øre for min Sang oplader,
     <line>Det evige Sindbillede.</line>
   </subtitle>
   <firstline>En Qvinde skiælvende for Danmarks Digter triner</firstline>
+  <notes>
+    <note>Sammentrykkene »VorSølvmynts« (side 103), »harQvinden« (104), »DinGaade« og »venligtNik« (106), »skalDu« og »mitSpring« (108) samt »SkiøndtHimlensCherub« og »denSkiultesCirkel« (109) følger trykket.</note>
+  </notes>
   <source pages="103-111" facsimile-pages="114-122"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
