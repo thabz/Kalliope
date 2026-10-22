@@ -123,3 +123,9 @@ med den lange originalnote, fire præcise sideskift og det afsluttende
 femlinjede citat. Begge friske OCR-pass og siderne er læst i en særskilt
 reviewersession. To delvis udviskede ord på side 287 er markeret
 `[ulæseligt]` og beskrevet i tekstens metadata.
+
+De tre tidligere martsforekomster på side 193–199 er også uafhængigt
+gennemgået: 12 konkrete rettelsesfund er verificeret, herunder to ord, fem
+sideskift, originalnoter, citatmarkører og indryk. Alle 29 kandidater fra
+den nye ufiltrerede martsanalyse er afklaret mod kilden. De syv indlagte
+martstekster er visuelt gennemgået; de to længere tekster mangler stadig.
