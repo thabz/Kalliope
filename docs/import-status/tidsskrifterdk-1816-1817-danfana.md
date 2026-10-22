@@ -1,4 +1,4 @@
-# Danfana 1816–1817: dokumenteret omslagsmangel
+# Danfana 1816–1817: igangværende tekstimport
 
 Brugeren har den 22. oktober 2026 udtrykkeligt godkendt: »Fortsæt uden
 majomslaget«. Importen til #1985 fortsætter med denne afgrænsede undtagelse
@@ -25,7 +25,8 @@ Anden kilde: <https://www.kb.dk/e-mat/dod/130017630327-bw.pdf>.
 
 Trykte rettelser findes i første PDF på siderne 206 og 499 samt i anden
 PDF på siderne 107 og 307. Rettelsen på PDF-side 499 gælder en dobbelttrykt
-slutstrofe på side 469. De skal indføres ved de relevante tekststeder.
+slutstrofe på side 469. Begge rettelser fra PDF-side 206 er indført med typed erratafodnoter
+i marts; de øvrige rettelser skal fortsat indføres ved de relevante tekststeder.
 Henvisningen til side 376 på sidste rettelsesark gælder med visuelt belæg
 side 276 (»Stene« → »Straa«).
 
@@ -49,8 +50,9 @@ hæfterne med deres id’er og redaktionelle noter bevaret. Nye kladder i
 januarhæftet omfatter *Maanedskriftets Bestemmelse*, *Fiendtlige
 Fredspræliminarier*, Weyses *Ïo* samt Thieles samlede gådeforklaring med
 motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desuden Jessens *Gaaden*,
-*Gaade-Kampen* og *Til Danfanas Læsere*. Det giver foreløbig 73
-tekstforekomster i hæfterne. Importen er ikke færdig.
+*Gaade-Kampen* og *Til Danfanas Læsere*. Marts har nu også
+*Til Danfanas Læsere*, *Apologie for min Vidspilde* og *Sjællandsk Trøst*.
+Det giver foreløbig 76 tekstforekomster i hæfterne. Importen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -90,3 +92,16 @@ Tekstkvalitetskontrollens 11 kandidater i Thieles og Jessens gådedigte er
 genkontrolleret mod trykket. De kildebelagte sammentryk og Thieles gentagne
 »det det« er bevaret med præcise noter og navngivne regelundtagelser på
 de to tekstposter. Kontrollen består derefter uden tekstkvalitetsfejl.
+
+De tre nye martstekster er særskilt uafhængigt gennemgået, og konkrete
+rettelser er genkontrolleret. Apologien har 344 vers; strofebrud, indryk og
+14 interne sideskift er kontrolleret. Epigrammet har syv vers med kildebelagte
+indryk. Variantkontrollen gav ingen kandidatpar for de fem martsforekomster
+med førstelinje; den korte prosameddelelse har efter projektets regel ingen
+førstelinjemetadata.
+
+Tre ord i Apologien (side 208, 210 og 213) og ét i epigrammets sidste vers
+(side 214) er delvis beskadigede. De står som `[ulæseligt]` med konkrete
+metadata-noter; ingen af læsemåderne er rekonstrueret. Desuden er 20 konkrete
+ord- og tegnrettelser i februars tidligere forekomster indført og uafhængigt
+genkontrolleret; resten af februarkorrekturen mangler stadig.
