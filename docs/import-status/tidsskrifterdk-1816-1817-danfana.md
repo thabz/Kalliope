@@ -51,8 +51,9 @@ januarhæftet omfatter *Maanedskriftets Bestemmelse*, *Fiendtlige
 Fredspræliminarier*, Weyses *Ïo* samt Thieles samlede gådeforklaring med
 motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desuden Jessens *Gaaden*,
 *Gaade-Kampen* og *Til Danfanas Læsere*. Marts har nu også
-*Til Danfanas Læsere*, *Apologie for min Vidspilde* og *Sjællandsk Trøst*.
-Det giver foreløbig 76 tekstforekomster i hæfterne. Importen er ikke færdig.
+*Til Danfanas Læsere*, *Apologie for min Vidspilde*, *Sjællandsk Trøst*
+og *Litterariske Nyheder* (side 284–288).
+Det giver foreløbig 77 tekstforekomster i hæfterne. Importen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -93,7 +94,7 @@ genkontrolleret mod trykket. De kildebelagte sammentryk og Thieles gentagne
 »det det« er bevaret med præcise noter og navngivne regelundtagelser på
 de to tekstposter. Kontrollen består derefter uden tekstkvalitetsfejl.
 
-De tre nye martstekster er særskilt uafhængigt gennemgået, og konkrete
+De første tre nye martstekster er særskilt uafhængigt gennemgået, og konkrete
 rettelser er genkontrolleret. Apologien har 344 vers; strofebrud, indryk og
 14 interne sideskift er kontrolleret. Epigrammet har syv vers med kildebelagte
 indryk. Variantkontrollen gav ingen kandidatpar for de fem martsforekomster
@@ -104,4 +105,21 @@ Tre ord i Apologien (side 208, 210 og 213) og ét i epigrammets sidste vers
 (side 214) er delvis beskadigede. De står som `[ulæseligt]` med konkrete
 metadata-noter; ingen af læsemåderne er rekonstrueret. Desuden er 20 konkrete
 ord- og tegnrettelser i februars tidligere forekomster indført og uafhængigt
-genkontrolleret; resten af februarkorrekturen mangler stadig.
+genkontrolleret. Februars videre korrektur omfatter 65 hovedtekst-sideskift,
+originale fodnoter med egen paginering, prosa, mottoer og typografi.
+Gamle redaktionelle noter og udtrykkelige emendationer bevares. De ni
+tidligere februarforekomsters 66 geometrikandidater er alle individuelt
+afklaret mod trykket; 12 poesiblokke har særskilte strukturregistre. Hæftet
+har nu 91 præcise interne sideskift, inklusive noternes egne sideskift.
+
+Februars scanning har desuden beskadigede bogstaver i »Strøetankernes« på
+side 147, den islandske linje »Fell Døgg í diúpa Dalí!« på side 176 og
+»spørger du, „hvor« på side 185. Farveudgaven viser de samme skader.
+De eksisterende læsninger bevares med konkrete usikkerhedsnoter; det
+læselige n i »Strøetankernes« er tilføjet.
+
+Marts’ *Litterariske Nyheder* er transskriberet fra alle fem facsimilesider
+med den lange originalnote, fire præcise sideskift og det afsluttende
+femlinjede citat. Begge friske OCR-pass og siderne er læst i en særskilt
+reviewersession. To delvis udviskede ord på side 287 er markeret
+`[ulæseligt]` og beskrevet i tekstens metadata.
