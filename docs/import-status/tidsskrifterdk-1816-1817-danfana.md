@@ -61,7 +61,7 @@ rammen, er forkastet. Majomslaget er udeladt efter brugerens godkendelse.
 Januars fire tidligere tekstforekomster og oktoberhæftets 30 tidligere
 forekomster er uafhængigt gennemgået mod tekstsiderne. Fundene om ordlyd,
 typografi og præcise sideskift er rettet og genkontrolleret. De nye
-januartekster er også under særskilt uafhængig korrektur. Dette er ikke en
+januar- og februartekster er også særskilt uafhængigt korrekturlæst. Dette er ikke en
 færdiggodkendelse af hele januar- eller oktoberhæftet.
 
 To læsninger i de eksisterende tekster kan ikke fuldt genkontrolleres:
@@ -79,3 +79,14 @@ Januarhæftets 85 interne sideskiftemarkører er kontrolleret med de konkrete
 facsimilefilnavne, og `<pagebreaks/>` er registreret. Den fulde testkørsel
 `make test` er bestået under arbejdet; slutkontrol og CI-godkendelse af hele
 importen udestår fortsat.
+
+De ni tidligere tekstforekomster i januar–marts 1817 er gennemgået mod alle
+28 relevante facsimilesider. Ordlyd, typografi og 20 interne sideskift er rettet
+og uafhængigt genkontrolleret; alle 23 kandidater fra den ufiltrerede
+strukturkontrol af ti poesiblokke er afklaret. De øvrige tekster i hæftet
+mangler stadig.
+
+Tekstkvalitetskontrollens 11 kandidater i Thieles og Jessens gådedigte er
+genkontrolleret mod trykket. De kildebelagte sammentryk og Thieles gentagne
+»det det« er bevaret med præcise noter og navngivne regelundtagelser på
+de to tekstposter. Kontrollen består derefter uden tekstkvalitetsfejl.
