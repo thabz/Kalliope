@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="arguijo" country="un" lang="es" type="poet">
+<person id="arguijo" country="un" nationality="es" lang="es" type="poet">
   <name>
     <firstname>Juan de</firstname>
     <lastname>Arguijo</lastname>
@@ -15,7 +15,6 @@
     </dead>
   </period>
   <literary-periods>es-guldalder</literary-periods>
-  <works>andre</works>
   <identifiers>
     <wikidata>Q3810934</wikidata>
     <wikipedia-en>Juan de Arguijo</wikipedia-en>

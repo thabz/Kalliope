@@ -7,9 +7,10 @@
     <note>På titelbladets bagside står et uddrag af Schack Staffeldts <xref poem="staffeldt1804a2"/>: “Hellige Kunst! / Det Eviges Udbrud / af det Endelige! / Guddommelige Börneleeg / ved den Uendeliges Fod! / Salige Andagt! / Den Eviges Selverkjendelse / i det Endelige! / Straale af den uendelige / Selvkjærlighed, / som holder det Hele sammen! / Du, det ene, eneste Væsens / Tilværelse i os! / Hellige Kunst! / Salige Andagt! / samler mig i det Hele! / styrter mig i den salige Afgrund, / i det ene, uendelige Selv!”</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1825-p1.jpg">Titelbladet til <i>Digte</i> (1825) lyder “Digte / af / Christian Deichmann. // Kjöbenhavn; 1825. / Trykket, paa Forfatterens Forlag, / hos H. F. Popp.”.</picture>
+    <picture type="titlepage" src="1825-p1.jpg"><transcription>Digte / af / Christian Deichmann. // Kjöbenhavn; 1825. / Trykket, paa Forfatterens Forlag, / hos H. F. Popp.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122320872905763" facsimile="115308051111_color" facsimile-pages-num="294" facsimile-pages-offset="14">Christian Deichmann: <i>Digte</i>, paa Forfatterens Forlag, hos H. F. Popp, Kbh., 1825.</source>
+  <errata status="applied" pages="274" facsimile-pages="288"/>
   <pagebreaks/>
   <proofreadings>
     <proofreading model="gpt-5" datetime="2026-09-05T08:58:33+02:00"/>
@@ -28,10 +29,10 @@
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Man sollte immer den Dichter vom Menschen absondern.</i>
 <right>J. G. Herder.</right>
-</quote>
+</epigraph>
 <poetry>
 — — Men naar de förste Straaler
 bortvifted' alle de smaae Blomsterspeile,
@@ -49,7 +50,7 @@ og naar de skrede frem, de Nattens Perler,
 Alkraftens evige Lovsjungere,
 et Ventes varselfulde Billeder,
 hvert daglystruet Nöies tause Vidner,
-hver hellig, negtet Pagts Besæglere;<footnote>Rettet fra »Beseglere« efter trykfejlslisten på s. 274.</footnote>
+hver hellig, negtet Pagts Beseglere,<footnote type="errata">Beseglere,] Beseglere;</footnote>
 hiint Phantasiens forudsögte Hjemskjær,
 o! naar de skrede frem, og dryssed' Glimt
 paa Dalens Blomst, og Anelser i Hjertet; -
@@ -87,7 +88,7 @@ ei lignende af Kaldserkjendelse de nære,
 kun hvor sig Livet yttrer glödende
 af Kraft, om stundom end den leded' vild,
 i höi Bevidsthed af sit Slægtskab med
-det Aandigste, ved dyb Erkjiendelse<footnote>Rettet fra »Erkjendelse« efter trykfejlslisten på s. 274.</footnote>
+det Aandigste, ved dyb Erkjiendelse<footnote type="errata">Erkjiendelse] Erkjendelse</footnote>
 af Kunsten selv, er det for Kunsten modent.
 
   Og er den Slægt, som Kunstneren medfödtes,
@@ -188,14 +189,14 @@ hen over Verdners Sarcophag.
 Fra Dybets Nat til Lysets Buer
 Dig Intet standser i Din Flugt;
 Du Skattene blandt Gruset skuer,
-af umaalt Sekelbölge<footnote>Rettet fra »Sckelbölge« efter trykfejlslisten på s. 274.</footnote> lukt';
+af umaalt Sekelbölge<footnote type="errata">Sekelbölge] Sckelbölge</footnote> lukt';
 og hist, hvor Bjerges Rödder mödes
 i aldrignaaet Demantglands,
 <pb n="12" facs="025.jpg"/>hvor fraadende Vulcaner födes
 ved Salamandres vilde Dands,
 hvor intet Öie Dybet maaler,
 hvor dristigst Attraa kun nedsteeg,
-<i>der</i> lyse gjenfödt' Dine Straaler<footnote>Kommaet efter »Straaler« er fjernet efter trykfejlslisten på s. 274.</footnote>
+<i>der</i> lyse gjenfödt' Dine Straaler<footnote type="errata">Straaler] Straaler,</footnote>
 den mulmtillukte Perlevæg.
 
 Og hvor i Natten Tanken higer
@@ -364,7 +365,7 @@ mod Vældens Höire skrider hen.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>Hvis her Du savner,</i>
 <i>og ei har Rist,</i>
 <i>o! da Du favner</i>
@@ -374,7 +375,7 @@ mod Vældens Höire skrider hen.
 <i>forud tör give</i>
 <i>i Sværmeri.</i>
 <right>Schack Staffeldt.</right>
-</quote>
+</epigraph>
 <poetry>
 Reen, som Verdensaltrets Offerlue,
 blid, som Haabet gjennem Gravens Fred,
@@ -642,13 +643,13 @@ seer et smiilfuldt Liig.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>Vai, Friheds Fane! fjern og nær!</i>
 <i>Vai stolt fra Syd til Nord!</i>
 <i>Dödsbudskab for Tyranner vær,</i>
 <i>rundtom vor hele Jord!</i>
 <right>M. C. Brun.</right>
-</quote>
+</epigraph>
 <poetry>
 Sku! Europa! — Palmen i Öst Dig vinker,
 Frihed strækker bedende Haanden mod Dig;
@@ -842,11 +843,11 @@ glemmer hun Barnet i Nöden.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>— Kjærlighed, fra Jorden landsforviist,</i>
 <i>er Aandens, Tankens Kjærlighed.</i>
 <right>C. Bredahl.</right>
-</quote>
+</epigraph>
 <poetry>
 Vandrer jeg i Herthas Lund,
 slaaer mit Hjerte sælsomt bange,
@@ -1290,10 +1291,10 @@ om Tro og Haab og Kjærligheden.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Die Wunder sind geblieben, denn wenn wir selbst das Wunderbarste, von dem wir täglich umgeben, deshalb nicht mehr so nennen wollen, weil wir einer Reihe von Erscheinungen die Regel der cyklischen Wiederkehr abgelauert haben, so fährt doch oft durch jenen Kreis ein Phänomen, das all unsre Klugheit zu Schanden macht, und an das wir, weil wir es nicht zu erfassen vermögen, in stumpfsinniger Verstocktheit nicht glauben. Hartnäckig läugnen wir dem innern Auge deshalb die Erscheinung ab, weil sie zu durchsichtig war, um sich auf der rauhen Fläche des äussern Auges abzuspiegeln.</i>
 <right>E. T. A. Hoffmann.</right>
-</quote>
+</epigraph>
 <poetry>
 Aand! ormklædte Guddomsslægt!
 hævd titaniskt Herkomstkrandsen!
@@ -1514,10 +1515,10 @@ ydmyg Pilgrims skjöre Vandringstav —
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="fr">
+<epigraph lang="fr">
 <i>Qu’as tu fait? ah! qu’as tu fait? tu voulois me récompenser, et tu m’as perdu. Je suis ivre, ou plutôt insensé. Mes sens sont altérés, toutes mes facultés sont troublées par ce baiser mortel. C’est du poison que j’ai cueilli sur tes lèvres; il fermente, il embrase mon sang; il me tue; et ta pitié me fait mourir.</i>
 <right>J. J. Rousseau.</right>
-</quote>
+</epigraph>
 <poetry>
 Söde Minders aldrigtömte Væld!
 Eneste, som Smerten ei forskyder!
@@ -1646,11 +1647,11 @@ eller sug det evigt fra min Læbe!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Blätter fallen. — Ach! so lose</i>
 <i>ist auch irdischer Genuß.</i>
 <right>E. Raupach.</right>
-</quote>
+</epigraph>
 <poetry>
 Rose, som i Saphirether,
 mildt omspögt af Zephyretter,
@@ -1708,10 +1709,10 @@ efter Kvel, i Morgenskjær?
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Genieße, wer nicht glauben kann!</i>
 <right>F. Schiller.</right>
-</quote>
+</epigraph>
 <poetry>
 Nei! her staaer Skranken, Sjæl! for Dine <i>Kæmpe</i>,
 mens fromt, hengivent Dine Fjed
@@ -1785,7 +1786,7 @@ den Visnende er glemt i nyskabt Lyst. —
 
 <pb n="96" facs="109.jpg"/>Saaledes til Din Favn, o! Vellyst! klynget,
 Du stedse nye Blomster om mig ströe!
-saaledes jeg, af krydret Lyst omslynget,<footnote>Rettet fra udråbstegn efter trykfejlslisten på s. 274.</footnote>
+saaledes jeg, af krydret Lyst omslynget,<footnote type="errata">omslynget,] omslynget!</footnote>
 södt sukke, döe.
 </poetry>
 </body>
@@ -2094,7 +2095,7 @@ Engang brister Vexels Sværd.
 </head>
 <body>
 <poetry>
-Udblöd,<footnote>Rettet fra udråbstegn efter trykfejlslisten på s. 274.</footnote> Hjerte!
+Udblöd,<footnote type="errata">Udblöd,] Udblöd!</footnote> Hjerte!
 i Din Smerte!
 Fjernhed! see! jeg hviler i Din Favn;
 Sukket stiger,
@@ -2212,11 +2213,11 @@ Nei! min Gud! Du vil mig ei forlade.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="en">
+<epigraph lang="en">
 <i>The soul, uneasy and confin’d from home,</i>
 <i>Rests and expatiates in a life to come.</i>
 <right>A. Pope.</right>
-</quote>
+</epigraph>
 <poetry>
 Saa vil Du da, o! hellighöie Stjerne!
 som malende min Elskovs Held oprandt,
@@ -2450,13 +2451,13 @@ Tonerne, han for mig sang.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>O! Nattens kydske Lys!</i>
 <i>i Dit Englesmiil</i>
 <i>spire Phantasiens Blomster</i>
 <i>til et Eden.</i>
 <right>Schack Staffeldt.</right>
-</quote>
+</epigraph>
 <poetry>
 Synker! luende Straaler!
 trykker hist paa Vestbölgens Læbe
@@ -2951,7 +2952,7 @@ ved hvert et Blik, hvert södt fremdraget Nær.
 <pb n="158" facs="171.jpg"/>Taust sammenslyngte Sjælene sig finde,
 og eget Væv af eget Indre spinde;
 ja! selv naar langtfra vore Blik sig möde,
-vor Fölelse, södt glödende,<footnote>Kommaet efter »glödende« er indsat efter trykfejlslisten på s. 274.</footnote> er <i>saa</i>,
+vor Fölelse, södt glödende,<footnote type="errata">glödende,] glödende</footnote> er <i>saa</i>,
 at fjernt vi os, Arachne lig', formaae
 den ömmeste Berörelse at föde.
 </poetry>
@@ -3182,7 +3183,7 @@ luer Længslen som en Stjerne
 södt med Visheds Smiil.
 
 Lad mig ofte da, o! Maane!
-luttret ved Din Ild,<footnote>Rettet fra punktum efter trykfejlslisten på s. 274.</footnote>
+luttret ved Din Ild,<footnote type="errata">Ild,] Ild.</footnote>
 södt ved Phantasi bortdaane
 i et Vordes Smiil!
 eller frydfuldendt henglide,
@@ -3204,7 +3205,7 @@ vil snart Oldtidsvennens Öie
 savne Sporet af;
 <i>Nytten</i> dem med Jorden jevner,
 föleslös og kold;
-<i>saa</i> hvert Minde selv<footnote>Rettet fra »Minde, ak!« efter trykfejlslisten på s. 274.</footnote> bortstævner
+<i>saa</i> hvert Minde selv<footnote type="errata">Minde selv] Minde, ak!</footnote> bortstævner
 om de Kæmpers Old.
 <pb n="172" facs="185.jpg"/>O! forlad de mörke Skygger!
 veemodgrebne Sjæl!
@@ -3481,11 +3482,11 @@ at Du Dommen tog igjen!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="en">
+<epigraph lang="en">
 <i>— The native hue of resolution</i>
 <i>is sicklied o’er with the pale cast of thought.</i>
 <right>W. Shakespear.</right>
-</quote>
+</epigraph>
 <poetry>
 Underlige Blaae!
 gjemmer hist Du bag Dit Saphirbelte
@@ -3519,11 +3520,11 @@ om hver skuffet Kjendsel Haabets Ynde!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Rein sey mein Herz! so darf ich, obwohl mit der bebenden Stimme</i>
 <i>eines Sterblichen, doch den Gottversöhner besingen.</i>
 <right>F. G. Klopstock.</right>
-</quote>
+</epigraph>
 <poetry>
 Vildsomt, gjennem Sandsers Öie
 skue Stövets Myriader
@@ -3689,11 +3690,11 @@ Himlens Rige Jorden nær.
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>Og, medens de Bölger rulle afsted,</i>
 <i>mig synes, at ogsaa jeg skulde med.</i>
 <right>Schack Staffeldt.</right>
-</quote>
+</epigraph>
 <poetry>
 Sildigt vakt af lange Blund,
 Flora atter Livet glæded',
@@ -4397,7 +4398,7 @@ Svandt, svandt Du? Tid! da fro jeg kunde smelte
 ved Elskovsvift fra Myrthers kjelne Hjem,
 ved Skjoldeklang fra Nords besneete Helte,
 naar södt i Tonens Speil de skrede frem. -
-Har, Elskede! Du lyst mit Syn i Band?<footnote>Rettet fra »Ban?« efter trykfejlslisten på s. 274.</footnote>
+Har, Elskede! Du lyst mit Syn i Band?<footnote type="errata">Band?] Ban?</footnote>
 nu, naar Dit Öie hæves, langsomt daler,
 Din Barm sig rörer, Smilet Kinden maler,
 den Billedskrivt jeg ene tyde kan. -
@@ -4422,10 +4423,10 @@ ei grumt for hidtil kjendte Tegn mit Öie!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote lang="de">
+<epigraph lang="de">
 <i>Warum muß sich zu diesen Empfindungen, zu diesen Erkenntnissen das unüberwindliche Verlangen des Besitzes gesellen? und warum richten, ohne Besitz, eben diese Empfindungen, diese Ueberzeugungen jede andere Art von Glückseligkeit völlig zu Grunde?</i>
 <right>J. W. Göthe.</right>
-</quote>
+</epigraph>
 <poetry>
 "Kast Dragten! evig Flammestraf Dig venter;
 "vov ei i Verdens Uhrværk frekt at drage!
@@ -4897,11 +4898,11 @@ der fjern paa faldne Asers Hjemstavn ganger!
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <i>Det Dödelige blive udenfor!</i>
 <i>her ere Himmelske i Besög.</i>
 <right>Schack Staffeldt.</right>
-</quote>
+</epigraph>
 <poetry>
 Lysets Olympos!
 betrædes gigantiskt Din Stjernesal?

@@ -38,6 +38,7 @@ const keywordListItem = (keyword, lang) => {
   return {
     id: keyword.id,
     url,
+    searchText: keyword.title,
     html: keyword.title,
   };
 };
@@ -89,7 +90,7 @@ const Keywords = (props) => {
         </>
       ) : null}
       <SubHeading>{_('Alfabetisk', lang)}</SubHeading>
-      <SectionedList sections={sections} />
+      <SectionedList sections={sections} keyboardNavigation />
       <LangSelect path={requestPath} />
     </Page>
   );

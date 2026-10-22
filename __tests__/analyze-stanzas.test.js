@@ -13,6 +13,13 @@ const bodyWithStanzas = stanzaLengths => {
 };
 
 describe('stanza candidate analysis', () => {
+  it('keeps a printed omission line inside its stanza', () => {
+    const body = 'Første vers\n<nonum>— — — —</nonum>\nAndet vers\n\nTredje vers';
+    const result = analyzeStanzas({ body });
+    expect(result.verse_line_count).toBe(3);
+    expect(result.observed_stanza_lengths).toEqual([2, 1]);
+  });
+
   it('finds an extra boundary in the first sonnet quatrain', () => {
     const result = analyzeStanzas({ body: bodyWithStanzas([2, 2, 4, 3, 3]) });
 
@@ -69,6 +76,22 @@ describe('stanza candidate analysis', () => {
         after_verse_line: 40,
         confidence: 'likely',
         reason: 'Digtet består ellers overvejende af strofer på 8 linjer.',
+      }),
+    ]);
+  });
+
+  it('prefers a dominant couplet pattern over a coincidental 14-line sonnet match', () => {
+    const result = analyzeStanzas({
+      body: bodyWithStanzas([2, 2, 2, 2, 4, 2]),
+    });
+
+    expect(result.dominant_stanza_length).toBe(2);
+    expect(result.recognized_forms).toEqual([]);
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'possible_missing_boundary',
+        after_verse_line: 10,
+        confidence: 'likely',
       }),
     ]);
   });

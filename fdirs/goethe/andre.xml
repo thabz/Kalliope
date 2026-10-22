@@ -5,6 +5,28 @@
 </workhead>
 <workbody>
 
+<text id="goethe2026102201" lang="de">
+<head>
+  <firstline>Was in der Zeiten Bildersaal</firstline>
+  <notes>
+    <note>Fra »Sprichwörtlich« i <i>Sprüche in Reimen</i>.</note>
+  </notes>
+  <source href="https://www.textlog.de/goethe/gedichte/spruechwoertlich">
+    <author id="goethe">Johann Wolfgang von Goethe</author>
+    <title>Gedichte</title>
+  </source>
+  <quality>korrektur1,kilde</quality>
+</head>
+<body>
+<poetry>
+Was in der Zeiten Bildersaal
+Jemals ist trefflich gewesen,
+Das wird immer einer einmal
+Wieder auffrischen, und lesen.
+</poetry>
+</body>
+</text>
+
 <text id="goethe2019011801">
 <head>
   <title>Wandrers Nachtlied I</title>
@@ -2533,10 +2555,14 @@ Weiß nicht, wie mir geschehn.
 <head>
   <title>Mit einem goldnen Halskettchen</title>
   <firstline>Dir darf dies Blatt ein Kettchen bringen</firstline>
-  <notes>
-    <note>Johann Wolfgang von Goethe: <i>Goethes Schriften</i>, G. J. Göschen, Leipzig, 1789, bd. 8, p. 128.</note>
-  </notes>
-  <source href="https://de.wikisource.org/wiki/Mit_einem_goldnen_Halskettchen">Johann Wolfgang von Goethe: <i>Mit einem goldnen Halskettchen</i>.</source>
+  <source href="https://de.wikisource.org/wiki/Mit_einem_goldnen_Halskettchen" pages="128">
+    <title>Goethes Schriften</title>
+    <author>Johann Wolfgang von Goethe</author>
+    <publisher>G. J. Göschen</publisher>
+    <place>Leipzig</place>
+    <year>1789</year>
+    <volume>8</volume>
+  </source>
   <quality>korrektur1</quality>
 </head>
 <body>

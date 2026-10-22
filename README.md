@@ -47,6 +47,10 @@ Hvis cachede build-data driller, kan hele static-buildet tvinges igennem:
 npm run build-static-force-reload
 ```
 
+Profilér et fuldt build med `make profile-build-static`. CPU-profilen
+(`.cpuprofile`) og logs (`build.log` og `image-build.log`) gemmes i en ny
+mappe under `caches/profiles/`.
+
 ## Forespørgsler i korpusdata
 
 Static-buildet opretter et versionsmærket korpusdatasæt som JSONL-gzipfiler i

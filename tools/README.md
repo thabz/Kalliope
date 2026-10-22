@@ -17,6 +17,21 @@ npm run build-static
 npm run build-static-force-reload
 ```
 
+Brug `npm run build-static -- --timings` for at få tidsmålinger af buildets trin.
+`make profile-build-static` medtager også tidsmålingerne i buildloggen.
+
+Efter afsluttet tekstbuild gemmes filregistre, billedmål og filhashes før
+thumbnailgenereringen. En genstart efter en afbrydelse her genbruger tekstbuildet,
+mens ændrede XML-filer stadig behandles på ny. Genstart midt i tekstbuildet er
+ikke et understøttet checkpoint.
+
+Thumbnails skrives atomisk og får individuelle kvitteringer i
+`caches/thumbnails/`. Kvitteringerne kontrollerer kildeindhold, genereringskode,
+Sharp-versioner, format, bredde og outputindhold. Færdige thumbnails kan derfor
+genbruges efter en afbrydelse; manglende eller beskadigede outputs genbygges.
+Uden kvitteringer genbygges thumbnails én gang. Slet `caches/thumbnails/` for
+at tvinge ny generering.
+
 Filerne i `build-static/` og `libs/` er interne JavaScript-moduler. De skal ikke
 køres direkte.
 

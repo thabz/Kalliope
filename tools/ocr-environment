@@ -1,0 +1,101 @@
+#!/bin/sh
+# Read-only inventory of OCR and PDF tools on this machine.
+
+print_tool() {
+    tool=$1
+    shift
+    if ! tool_path=$(command -v "$tool" 2>/dev/null); then
+        printf '%-12s NOT INSTALLED\n' "$tool"
+        return
+    fi
+
+    printf '%-12s %s\n' "$tool" "$tool_path"
+    version=$("$tool_path" "$@" 2>&1 | sed -n '1p')
+    if [ -n "$version" ]; then
+        printf '%-12s %s\n' '' "$version"
+    else
+        printf '%-12s version unavailable\n' ''
+    fi
+}
+
+resolve_path() {
+    resolved=$1
+    case $resolved in
+        /*) ;;
+        *) resolved="$(pwd -P)/$resolved" ;;
+    esac
+
+    hops=0
+    while [ -L "$resolved" ] && [ "$hops" -lt 20 ]; do
+        link=$(readlink "$resolved") || return 1
+        case $link in
+            /*) resolved=$link ;;
+            *) resolved="$(dirname "$resolved")/$link" ;;
+        esac
+        hops=$((hops + 1))
+    done
+    [ "$hops" -lt 20 ] || return 1
+    directory=$(cd -P "$(dirname "$resolved")" 2>/dev/null && pwd -P) || return 1
+    printf '%s/%s\n' "$directory" "$(basename "$resolved")"
+}
+
+print_model_dirs() {
+    found=0
+    for model_root in \
+        "${XDG_DATA_HOME:-$HOME/.local/share}/htrmopo" \
+        "$HOME/Library/Application Support/htrmopo"; do
+        if [ -d "$model_root" ]; then
+            printf 'Model directory: %s\n' "$model_root"
+            for model_dir in "$model_root"/*; do
+                if [ -d "$model_dir" ]; then
+                    printf '  %s\n' "$model_dir"
+                fi
+            done
+            found=1
+        fi
+    done
+    if [ "$found" -eq 0 ]; then
+        printf 'Model directories: none found in standard locations\n'
+    fi
+}
+
+printf 'OCR/PDF tools\n'
+print_tool kraken --version
+print_tool ocrmypdf --version
+print_tool pdftoppm -v
+print_tool pdftotext -v
+print_tool magick -version
+print_tool gs --version
+print_tool tesseract --version
+print_tool python3 --version
+print_tool uv --version
+print_tool pipx --version
+
+if kraken_path=$(command -v kraken 2>/dev/null); then
+    printf '\nKraken installation\n'
+    printf 'CLI path: %s\n' "$kraken_path"
+    if kraken_target=$(resolve_path "$kraken_path"); then
+        printf 'Resolved CLI: %s\n' "$kraken_target"
+        kraken_bin_dir=$(dirname "$kraken_target")
+        if [ "$(basename "$kraken_bin_dir")" = bin ]; then
+            kraken_venv=$(dirname "$kraken_bin_dir")
+            if [ -f "$kraken_venv/pyvenv.cfg" ]; then
+                printf 'Virtual environment: %s\n' "$kraken_venv"
+                case $kraken_venv in
+                    */pipx/venvs/kraken|*/pipx/venvs/kraken/) printf 'Environment type: pipx\n' ;;
+                esac
+            fi
+        fi
+    else
+        printf 'Resolved CLI: unavailable\n'
+    fi
+    print_model_dirs
+fi
+
+printf '\nRecommended roles\n'
+printf '%-25s %s\n' 'Historical OCR / Fraktur :' kraken
+printf '%-25s %s\n' 'PDF -> image             :' pdftoppm
+printf '%-25s %s\n' 'Existing PDF text        :' pdftotext
+printf '%-25s %s\n' 'Image preprocessing      :' magick
+printf '%-25s %s\n' 'PDF/OCR utility          :' ocrmypdf
+printf '%-25s %s\n' 'Modern OCR fallback      :' tesseract

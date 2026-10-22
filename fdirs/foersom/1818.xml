@@ -8,7 +8,7 @@
     <note>Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
-    <picture src="1818-p1.jpg" type="titlepage">Titelbladet til <i>Digte</i> (1818) lyder ,,Digte / af / Peter Foersom, / kongelig Skuespiller. // Udgivne efter hans Død. / Første Deel. // Kiøbenhavn. / Trykt i Thieles Bogtrykkerie. / 1818.''.</picture>
+    <picture src="1818-p1.jpg" type="titlepage"><transcription>Digte / af / Peter Foersom, / kongelig Skuespiller. // Udgivne efter hans Død. / Første Deel. // Kiøbenhavn. / Trykt i Thieles Bogtrykkerie. / 1818.</transcription></picture>
   </pictures>
   <source href="https://www.kb.dk/e-mat/dod/115308054736_color.pdf" facsimile="115308054736_color" facsimile-pages-num="386" facsimile-pages-offset="52">Peter Foersom: <i>Digte</i>, Kbh., 1818, første del.</source>
   <source id="bd2" href="https://www.kb.dk/e-mat/dod/115308054736_color.pdf" facsimile="115308054736_color" facsimile-pages-num="386" facsimile-pages-offset="252">Peter Foersom: <i>Digte</i>, Kbh., 1818, anden del.</source>
@@ -557,6 +557,9 @@ og i Din Siel Du har Din <w>Himmel-Høst.</w>
   <title>Til min Kone paa hendes Fødselsdag</title>
   <subtitle>(Den 16de May 1802.)</subtitle>
   <firstline>Min Hanna! Du, hvem fra mit Bryst</firstline>
+  <dates>
+    <event>1802-05-16</event>
+  </dates>
   <source pages="15-17"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1981,7 +1984,7 @@ med Regn og Soel og Landefred!
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 For ham tre Nationers Taare rinder;
 Hans Fødsel brammer Dannerriget af;
 Erkiendtligt Norrig har hans Seiersminder!
@@ -1989,13 +1992,13 @@ Ham Sværig bød en Krone, gav en Grav;
 For hine leved han, for dette er han død;
 Hvis Graad mon stoltest, mon retfærdigst flød?
 <nonum><right><w>Rahbek.</w></right></nonum>
-</quote>
-<quote lang="en">
+</epigraph>
+<epigraph lang="en">
 <nonum><i>- duller shoud'st thou be, than the fat weed,</i></nonum>
 <nonum><i>that rots itself in ease on Lethe-wharf,</i></nonum>
 <nonum><i>would'st thou not stir in this!</i></nonum>
 <nonum><right><w><i>Hamlet.</i></w></right></nonum>
-</quote>
+</epigraph>
 <poetry>
 Tør vel en uberømt, en navnløs Sanger,
 o Du Tilbedte! nærme sig den Grav,
@@ -2283,7 +2286,7 @@ dens Grundvold staaer i Dybet fast og trygt.
 Dens Skib sig stolt fra fiernest Østland strækker
 til Vest, hvor Solens Seng er gyldne Hav:
 blind gaaer Du did; men see! Dit Syn opvækker
-først Mulm, saa Stierneglands, saa <b> </b> s Grav: -
+først Mulm, saa Stierneglands, saa **s Grav: -
 den Brave, som sig offrer glad til Døden,
 den Fromme, som har Livets Vandring taalt,
 sig reiser billedlig i Morgenrøden,
@@ -2331,7 +2334,20 @@ og seent Dit Minni i vort Tempel staae!
 Søvn! skiønt Døden saa liig, vær en velkommen Giæst!
 Stille og bliid er Din Favn, Ro er mig liflig og sød,
 af alt Gode paa Jord prise man dette som bedst:
-At leve uden Liv og døe uden Død.<note>* Originalen hertil er paa Latin, af Meibomius, og lyder saaledes:<br/><br/><span lang="la"><i>Somne levis! qvamqvam certissima mortis imago,</i><br/><i>consortem cupio te tamen esse thori.</i><br/><i>Alma qvies optata veni! nam sic sine vita</i><br/><i>vivere qvam svave est, sic sine morte mori!</i></span><br/><br/>Paa Engelsk har man af den bekiendte Satiriker Peter Pindar (Doctor Wolscott) en Oversættelse deraf, som han skal være bleven færdig med i et Par Minutter:<br/><br/><span lang="en"><i>Come, gentle sleep! attend thy vot'rys prayer,</i><br/><i>and, tho deaths image, to my couch repair.</i><br/><i>How sweet, thus lifeless, yet with life, to lie;</i><br/><i>thus without dying, o! how sweet to die!</i></span></note>
+At leve uden Liv og døe uden Død.<note>* Originalen hertil er paa Latin, af Meibomius, og lyder saaledes:
+<poetry lang="la">
+<i>Somne levis! qvamqvam certissima mortis imago,</i>
+<i>consortem cupio te tamen esse thori.</i>
+<i>Alma qvies optata veni! nam sic sine vita</i>
+<i>vivere qvam svave est, sic sine morte mori!</i>
+</poetry>
+Paa Engelsk har man af den bekiendte Satiriker Peter Pindar (Doctor Wolscott) en Oversættelse deraf, som han skal være bleven færdig med i et Par Minutter:
+<poetry lang="en">
+<i>Come, gentle sleep! attend thy vot'rys prayer,</i>
+<i>and, tho deaths image, to my couch repair.</i>
+<i>How sweet, thus lifeless, yet with life, to lie;</i>
+<i>thus without dying, o! how sweet to die!</i>
+</poetry></note>
 </poetry>
 </body>
 </text>
@@ -4704,9 +4720,9 @@ som Vellugts-Offer vores Venskabs Flamme!
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote lang="en">
+<epigraph lang="en">
 Whatever is, is right
-</quote>
+</epigraph>
 <poetry>
 Af Dagens Møie træt, nedslumred' født
 Jehovas Striidsmand og Jehovas Sanger,
@@ -8157,7 +8173,23 @@ og omfavne i Elysium.
   <title>Fra George Keate til Hr. Instructeur Schwarz</title>
   <firstline>Hvi kom Du hid, for med Din Kunsts Magie</firstline>
   <notes>
-    <note>* <span lang="en"><i>Why com'st thou here with fascinating art<br/>respect and love to claim from every heart?<br/>Then like a sudden meteor melt in air,<br/>and back to Denmark thy bright talents bear! —<br/>Accept these lines from one, whom thou hast shown,<br/>how thou canst picture sorrows, not thine own,<br/>and by a magic change of look and eye<br/>colour the scenes of strong-mark'd comedy.<br/>Master in all! — The land, which gave thee birth,<br/>must prize thy public and thy private worth. —<br/>True genius is to no one soil confin'd!<br/>It ripens ev'rywhere th' expanded mind,<br/>which bursting forth admiring nations see, —<br/>England of Garrick boasts — Denmark of thee?</i></span></note>
+    <note>*
+<poetry lang="en">
+<i>Why com'st thou here with fascinating art
+respect and love to claim from every heart?
+Then like a sudden meteor melt in air,
+and back to Denmark thy bright talents bear! —
+Accept these lines from one, whom thou hast shown,
+how thou canst picture sorrows, not thine own,
+and by a magic change of look and eye
+colour the scenes of strong-mark'd comedy.
+Master in all! — The land, which gave thee birth,
+must prize thy public and thy private worth. —
+True genius is to no one soil confin'd!
+It ripens ev'rywhere th' expanded mind,
+which bursting forth admiring nations see, —
+England of Garrick boasts — Denmark of thee?</i>
+</poetry></note>
   </notes>
   <source in="bd2" pages="125"/>
   <quality>korrektur1,kilde,side</quality>
@@ -8188,7 +8220,13 @@ England har Garrick født - og Danmark Dig!
   <subtitle>da han reiste til England.</subtitle>
   <firstline>Drag liig den ædle Bie til fremmed Egn</firstline>
   <notes>
-    <note>* <span lang="en"><i>Range, like a gen'rous bee through foreign fields;<br/>Sip all the nectar blooming England yields.<br/>Enjoy the op'ning buds of spicy flow'rs;<br/>At thy return the honey will be ours!</i></span></note>
+    <note>*
+<poetry lang="en">
+<i>Range, like a gen'rous bee through foreign fields;
+Sip all the nectar blooming England yields.
+Enjoy the op'ning buds of spicy flow'rs;
+At thy return the honey will be ours!</i>
+</poetry></note>
   </notes>
   <source in="bd2" pages="126"/>
   <keywords>tode</keywords>
@@ -8212,10 +8250,10 @@ naar hiem Du tyer, Din Honning vores bliver!
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote lang="en">
+<epigraph lang="en">
 <nonum><right><small><i>Our youth is like the dream of the hunter on the hill of the heath.</i></small></right></nonum>
 <nonum><right><small><i>Ossians war of Inisthona.</i></small></right></nonum>
-</quote>
+</epigraph>
 <poetry>
 Hvor leder Du i Jordens Blomsterdal,
 o Haab! mildtskimrende, min stille Vandring hen?

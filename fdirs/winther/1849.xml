@@ -7,10 +7,13 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1849-p1.jpg">Titelbladet til <i>Lyriske Digte</i> (1849).<br/>Lyriske Digte, / af / Christian Winther. / - ,,ins bekannte Saitenspiel / Mit Muth und Anmuth einzugreifen; / Nach einem selbstgesteckten Ziel / Mit holdem Irren hinzuschweifen, - / <i>Das</i>, alte Herr'n, ist <i>eure</i> Pflicht'' - / Goethe. / Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1849.</picture>
+    <picture type="titlepage" src="1849-p1.jpg"><transcription>Lyriske Digte, / af / Christian Winther. / - ,,ins bekannte Saitenspiel / Mit Muth und Anmuth einzugreifen; / Nach einem selbstgesteckten Ziel / Mit holdem Irren hinzuschweifen, - / Das, alte Herr'n, ist eure Pflicht'' - / Goethe. / Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1849.</transcription></picture>
   </pictures>
   <source facsimile="11540801531E" facsimile-pages-num="238" facsimile-pages-offset="16">Christian Winther: <i>Lyriske Digte</i>, C. A. Reitzel, Kbh., 1849.</source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <proofreadings>
+    <proofreading model="gpt-6" datetime="2026-09-25T13:00:00+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -3604,14 +3607,14 @@ Har mig Dit Hjerte gjemt?
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 ,,Hvor Mænd i Atlashoser gaae,
 Er ei vor Plads.''
 
 ,,Men det skal være Folkets Fryd og Taarer,
 Som klinger i den danske Digters Røst.''
 <right><w>Poul Møller</w></right>
-</quote>
+</epigraph>
 
 <poetry>
 ---
@@ -5263,13 +5266,14 @@ En evig Kjærligbeds Skjærsommer!
 <text id="winther2017100264">
 <head>
   <title>Farvel</title>
-  <subtitle>
-    <line>til D. G. Monrad</line>
-  </subtitle>
+  <subtitle>til D. G. Monrad</subtitle>
   <toctitle>Farvel til D. G. Monrad</toctitle>
   <indextitle>Farvel til D. G. Monrad</indextitle>
   <linktitle>Farvel til D. G. Monrad</linktitle>
   <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
+  <notes>
+    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+  </notes>
   <pictures>
     <picture artwork="hansenc/monrad-1846" />
   </pictures>

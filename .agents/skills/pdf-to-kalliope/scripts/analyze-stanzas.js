@@ -80,6 +80,10 @@ const parseBody = body => {
   };
 
   lines.forEach(line => {
+    // Printed omission lines are not verses or stanza boundaries.
+    if (/^\s*<nonum>\s*[—–](?:\s*[—–])+\s*<\/nonum>\s*$/u.test(line)) {
+      return;
+    }
     if (isStanzaDivider(line)) {
       finishStanza();
       return;
@@ -691,17 +695,28 @@ const analyzeStanzas = input => {
 
   const parsed = parseBody(input.body);
   const candidates = new Map();
-  const recognizedForms = knownFormAnalysis({
+  const knownFormCandidates = new Map();
+  const matchingForms = knownFormAnalysis({
     ...parsed,
-    candidates,
+    candidates: knownFormCandidates,
   });
+  const dominantCandidates = new Map();
+  const inferredDominantLength = dominantPatternAnalysis({
+    ...parsed,
+    candidates: dominantCandidates,
+  });
+  const hasExactKnownForm = matchingForms.some(
+    form => form.boundary_changes === 0
+  );
+  const preferDominantPattern =
+    inferredDominantLength != null && !hasExactKnownForm;
+  const recognizedForms = preferDominantPattern ? [] : matchingForms;
+  (preferDominantPattern ? dominantCandidates : knownFormCandidates)
+    .forEach(candidate => addCandidate(candidates, candidate));
   const observedDominantLength =
     recognizedForms.length > 0
       ? null
-      : dominantPatternAnalysis({
-          ...parsed,
-          candidates,
-        });
+      : inferredDominantLength;
   const globalPattern = recognizedForms.length === 0
     ? globalUniformPatternAnalysis({
         ...parsed,

@@ -16,11 +16,16 @@ brugeropgaver forbliver `[ ]`, indtil brugeren selv har udført dem.
 - [ ] Bevar relevant typografi og strukturel markup
 - [ ] Kontrollér visuelt alle digtes verslinjer, strofegrænser og indryk mod
       samtlige relevante facsimilesider
+- [ ] Kontrollér visuelt hvert prosaafsnits grænser, førstelinjeindryk og
+      afstand til naboafsnit mod facsimilet; blanklinjer følger trykkets ekstra
+      lodrette afstand og erstatter ikke indryk
 - [ ] Kør helværksanalysen uden tekstfilter og afklar alle stanza- og
       indrykningskandidater direkte mod facsimilet
 - [ ] Kontrollér XML/TEI-syntaks
 - [ ] Kontrollér at alle interne referencer og id'er er gyldige
+- [ ] Variantkandidater gennemgået; sikre forbindelser indsat og tvivl dokumenteret
 - [ ] Tilføj eller opdater metadata for værket
+- [ ] Transskriber og kontrollér titelbladets trykte tekst mod billedet
 - [ ] Kontrollér titel, forfatter, udgivelsesår og øvrige bibliografiske oplysninger mod kilden
 - [ ] Tilføj kildehenvisning til den anvendte digitalisering/faksimile
 - [ ] Kontrollér eksisterende Kalliope-konventioner i sammenlignelige værker
@@ -77,6 +82,8 @@ Angiv kun kontroller, der faktisk er udført, med deres resultat. Eksempel:
 - stikprøvekontrol mod facsimile: 12 sider
 - visuel strukturkontrol: alle digte og relevante facsimilesider kontrolleret;
   alle kandidater fra helværksanalysen afklaret
+- visuel prosakontrol: alle afsnitsgrænser, førstelinjeindryk og afstande
+  mellem afsnit kontrolleret mod facsimilet
 - kendte warnings: ingen
 ```
 

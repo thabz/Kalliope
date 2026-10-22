@@ -4,7 +4,7 @@
   <title>Første Deel</title>
   <year>1895</year>
   <pictures>
-    <picture type="titlepage" src="1895-p1.jpg">Titelbladet til <i>Samlede Digte</i> (1895) lyder ,,Samlede Digte / af / Chr. Richardt. / Første Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.''</picture>
+    <picture type="titlepage" src="1895-p1.jpg"><transcription>Samlede Digte / af / Chr. Richardt. / Første Deel. / Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co (M. A. Hannover) / 1895.</transcription></picture>
   </pictures>
   <source facsimile="1895-1" facsimile-pages-num="342" facsimile-pages-offset="8">Christian Richardt: <i>Samlede Digte</i>, Gyldendalske Boghandels Forlag, Kbh., 1895, 1. del.</source>
 </workhead>
@@ -5734,6 +5734,9 @@ i Taagen tænde Stjerner og smelte Is til Vand!
   <title>Godt Mod!</title>
   <subtitle>(Nytaar 1864.)</subtitle>
   <firstline>Mit Folk, hvor var Du ofte</firstline>
+  <dates>
+    <event>1864-01-01</event>
+  </dates>
   <source pages="161-163"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10658,6 +10661,9 @@ og hjælpes ad i Nød og Lyst
   <title>Grundlovsvise</title>
   <subtitle>1871</subtitle>
   <firstline>I Stalden var der Uro, Støj og Sparken</firstline>
+  <dates>
+    <event>1871-06-05</event>
+  </dates>
   <source pages="304-305"/>
   <quality>korrektur1,kilde,side</quality>
 </head>

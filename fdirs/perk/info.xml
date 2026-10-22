@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="perk" country="un" lang="nl" type="poet">
+<person id="perk" country="un" nationality="nl" lang="nl" type="poet">
   <name>
     <firstname>Jacques</firstname>
     <lastname>Perk</lastname>
@@ -14,7 +14,6 @@
     </dead>
   </period>
   <literary-periods>nl-tachtigers</literary-periods>
-  <works>1914</works>
   <identifiers>
     <wikidata>Q1622474</wikidata>
     <wikipedia-en>Jacques Perk</wikipedia-en>

@@ -116,9 +116,9 @@ describe('isolated double gaps in poetry', () => {
     expect(findPoetrySpacingFindings({ file, data })).toEqual([]);
   });
 
-  it('does not check prose or quote blocks', () => {
+  it('does not check prose or epigraph blocks', () => {
     const content = `${singleSpaced}\n\n\n${stanza}`;
-    const data = `<text id="other"><body><prose>${content}</prose><quote>${content}</quote></body></text>`;
+    const data = `<text id="other"><body><prose>${content}</prose><epigraph>${content}</epigraph></body></text>`;
     expect(findPoetrySpacingFindings({ file, data })).toEqual([]);
   });
 });

@@ -55,9 +55,8 @@ const TodaysEvents = ({ events }) => {
     .filter((item) => item.type === 'image' && item.src != null)
     .map((item, i) => {
       const picture = {
-        src: item.src || '',
+        ...item,
         lang: item.content_lang,
-        content_html: item.content_html,
       };
       const html = (
         <div className="picture-item">
@@ -100,6 +99,10 @@ const TodaysEvents = ({ events }) => {
 
 const News = ({ news }) => {
   const lang = useContext(LangContext);
+
+  if (news.length === 0) {
+    return null;
+  }
 
   const items = news
     .map((item, i) => {
@@ -144,6 +147,19 @@ const zeroPad = (n) => {
   return n < 10 ? `0${n}` : `${n}`;
 };
 
+const fetchOptionalArray = async (path) => {
+  try {
+    const response = await fetch(createURL(path));
+    if (response.ok !== true) {
+      return [];
+    }
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+};
+
 let Index = (props) => {
   const { news, todaysEvents, pagingContext } = props;
   const lang = useContext(LangContext);
@@ -164,7 +180,10 @@ let Index = (props) => {
         }
       : null;
 
-  const sidebar = <TodaysEvents events={todaysEvents} />;
+  const hasNews = news.length > 0;
+  const hasTodaysEvents = todaysEvents.length > 0;
+  const newsSection = <News news={news} lang={lang} />;
+  const eventsSection = <TodaysEvents events={todaysEvents} />;
 
   return (
     <Page
@@ -181,11 +200,16 @@ let Index = (props) => {
             lang
           )}
         </PageLead>
-        <SidebarSplit sidebar={sidebar}>
+        {hasNews && hasTodaysEvents ? (
+          <SidebarSplit sidebar={eventsSection}>
+            <div>{newsSection}</div>
+          </SidebarSplit>
+        ) : (
           <div>
-            <News news={news} lang={lang} />
+            {hasNews ? newsSection : null}
+            {hasTodaysEvents ? eventsSection : null}
           </div>
-        </SidebarSplit>
+        )}
       </div>
     </Page>
   );
@@ -218,17 +242,11 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
       next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
     };
   }
-  const newsPromise = fetch(createURL(`/api/news_${lang}.json`));
-  const todayPromise = fetch(
-    createURL(`/api/today/${lang}/${dayAndMonth}.json`)
-  );
-  const todayResponse = await todayPromise;
-  const newsResponse = await newsPromise;
-  const todaysEvents = await todayResponse.json();
-  const news = latestNewsForDate(
-    await newsResponse.json(),
-    date
-  );
+  const [todaysEvents, allNews] = await Promise.all([
+    fetchOptionalArray(`/api/today/${lang}/${dayAndMonth}.json`),
+    fetchOptionalArray(`/api/news_${lang}.json`),
+  ]);
+  const news = latestNewsForDate(allNews, date);
 
   return { lang, country, news, todaysEvents, pagingContext };
 };

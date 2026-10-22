@@ -44,6 +44,7 @@
         <ref name="breadcrumbtitle"/>
         <ref name="nofirstline"/>
         <ref name="keywords"/>
+        <ref name="places"/>
         <ref name="source"/>
         <ref name="dates"/>
         <ref name="published"/>
@@ -59,10 +60,12 @@
         <ref name="rhyme"/>
         <ref name="structure"/>
         <ref name="pagebreaks"/>
+        <ref name="errata"/>
         <ref name="pictures"/>
         <ref name="picture"/>
+        <ref name="transcription"/>
         <ref name="poetry"/>
-        <ref name="quote"/>
+        <ref name="epigraph"/>
         <ref name="a"/>
         <ref name="xref"/>
         <ref name="b"/>
@@ -73,6 +76,7 @@
         <ref name="sup"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="o"/>
         <ref name="num"/>
         <ref name="nonum"/>
         <ref name="resetnum"/>
@@ -83,7 +87,6 @@
         <ref name="wrap"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -91,6 +94,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -104,6 +108,7 @@
       <optional><attribute name="status"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="parent"><text/></attribute></optional>
+      <optional><attribute name="sort-order"><data type="positiveInteger" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
       <ref name="workhead"/>
       <optional><ref name="workbody"/></optional>
@@ -120,6 +125,16 @@
     </element>
   </define>
   <define name="workbody"><element name="workbody"><ref name="mixed"/></element></define>
+
+  <define name="errata">
+    <element name="errata">
+      <attribute name="status"><choice><value>none</value><value>applied</value><value>reviewed</value></choice></attribute>
+      <optional><attribute name="in"><text/></attribute></optional>
+      <optional><attribute name="pages"><text/></attribute></optional>
+      <optional><attribute name="facsimile-pages"><text/></attribute></optional>
+      <empty/>
+    </element>
+  </define>
 
   <define name="textElement">
     <element name="text">
@@ -166,7 +181,7 @@
         <choice>
           <ref name="poetry"/>
           <ref name="prose"/>
-          <ref name="quote"/>
+          <ref name="epigraph"/>
         </choice>
       </zeroOrMore>
     </element>
@@ -197,9 +212,29 @@
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
-      <ref name="mixed"/>
+      <choice>
+        <ref name="inlineWithoutLineMarkers"/>
+        <ref name="sourceBibliography"/>
+      </choice>
       <optional><ref name="sourceIdentifiers"/></optional>
     </element>
+  </define>
+
+  <define name="sourceBibliographicText"><data type="string"><param name="pattern">[\s\S]*\S[\s\S]*</param></data></define>
+
+  <define name="sourceBibliography">
+    <interleave>
+      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="realname"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="type"><value>editor</value></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="translator"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <element name="title"><ref name="sourceBibliographicText"/></element>
+      <optional><element name="edition"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="volume"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="place"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="publisher"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="printer"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="year"><ref name="sourceBibliographicText"/></element></optional>
+    </interleave>
   </define>
 
   <define name="note">
@@ -221,6 +256,7 @@
 
   <define name="picture">
     <element name="picture">
+      <optional><attribute name="primary"><choice><value>true</value><value>false</value></choice></attribute></optional>
       <optional><attribute name="src"><text/></attribute></optional>
       <optional><attribute name="href"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
@@ -233,6 +269,7 @@
       <optional><ref name="pictureIdentifiers"/></optional>
     </element>
   </define>
+  <define name="transcription"><element name="transcription"><text/></element></define>
 
   <define name="sourceIdentifiers">
     <element name="identifiers">
@@ -276,6 +313,7 @@
 
   <define name="poetry">
     <element name="poetry">
+      <optional><attribute name="lang"><text/></attribute></optional>
       <optional><attribute name="font-size"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -295,8 +333,8 @@
     </element>
   </define>
 
-  <define name="quote">
-    <element name="quote">
+  <define name="epigraph">
+    <element name="epigraph">
       <optional><attribute name="max-width"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <ref name="mixed"/>
@@ -323,13 +361,6 @@
       <optional><attribute name="bible"><text/></attribute></optional>
       <optional><attribute name="type"><text/></attribute></optional>
       <empty/>
-    </element>
-  </define>
-
-  <define name="hr">
-    <element name="hr">
-      <optional><attribute name="width"><text/></attribute></optional>
-      <ref name="mixed"/>
     </element>
   </define>
 
@@ -373,6 +404,26 @@
   <define name="breadcrumbtitle"><element name="breadcrumbtitle"><ref name="simpleElement"/></element></define>
   <define name="nofirstline"><element name="nofirstline"><ref name="simpleElement"/></element></define>
   <define name="keywords"><element name="keywords"><ref name="simpleElement"/></element></define>
+  <define name="places">
+    <element name="places">
+      <oneOrMore><ref name="place"/></oneOrMore>
+    </element>
+  </define>
+  <define name="place">
+    <element name="place">
+      <attribute name="ref"><text/></attribute>
+      <attribute name="relation">
+        <choice>
+          <value>subject</value>
+          <value>setting</value>
+          <value>mentioned</value>
+          <value>writtenAt</value>
+        </choice>
+      </attribute>
+      <optional><attribute name="primary"><value>true</value></attribute></optional>
+      <empty/>
+    </element>
+  </define>
   <define name="dates"><element name="dates"><ref name="simpleElement"/></element></define>
   <define name="published"><element name="published"><ref name="simpleElement"/></element></define>
   <define name="written"><element name="written"><ref name="simpleElement"/></element></define>
@@ -503,13 +554,13 @@
         <ref name="sup"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="o"/>
         <ref name="num"/>
         <ref name="resetnum"/>
         <ref name="margin"/>
         <ref name="metrik"/>
         <ref name="line"/>
         <ref name="br"/>
-        <ref name="hr"/>
         <ref name="pb"/>
         <ref name="img"/>
         <ref name="colored"/>
@@ -518,6 +569,7 @@
         <ref name="biblio"/>
         <ref name="asterism"/>
         <ref name="block-center"/>
+        <ref name="blockquote"/>
         <ref name="two-columns"/>
         <ref name="column"/>
         <ref name="w"/>
@@ -549,6 +601,7 @@
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
+  <define name="o"><element name="o"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
   <define name="nonum">
     <element name="nonum">
@@ -577,9 +630,16 @@
     </element>
   </define>
   <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
-  <define name="footnote"><element name="footnote"><ref name="simpleElement"/></element></define>
+  <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
+  <define name="blockquote">
+    <element name="blockquote">
+      <optional><attribute name="left"><text/></attribute></optional>
+      <optional><attribute name="right"><text/></attribute></optional>
+      <ref name="simpleElement"/>
+    </element>
+  </define>
   <define name="block-center"><element name="block-center"><ref name="simpleElement"/></element></define>
   <define name="two-columns"><element name="two-columns"><ref name="simpleElement"/></element></define>
   <define name="column"><element name="column"><ref name="simpleElement"/></element></define>

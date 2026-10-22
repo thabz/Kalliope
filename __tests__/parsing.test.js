@@ -48,16 +48,23 @@ describe('titeludtrækning', () => {
 
   it('bevarer titlens fodnote til digtvisningen, men kan strippe den', () => {
     const doc = new DOMParser().parseFromString(
-      '<head><title><w>Gravsang</w><footnote>Kildens note.</footnote></title></head>',
+      '<head><title>Gravsang<footnote>Kildens note.</footnote></title></head>',
       'text/xml'
     );
     const title = extractTitle(doc.documentElement, 'title');
 
     expect(title.title).toBe(
-      '<w>Gravsang</w><footnote>Kildens note.</footnote>'
+      'Gravsang<footnote>Kildens note.</footnote>'
     );
-    expect(stripTitleNotes(title).title).toBe('<w>Gravsang</w>');
+    expect(stripTitleNotes(title).title).toBe('Gravsang');
     expect(titleText(title)).toBe('Gravsang');
+  });
+
+  it('bevarer forkortelsesstreger i titlers rene tekst', () => {
+    const title = { title: 'Dan k<o>o</o>ning <o>ſ</o>øn' };
+
+    expect(titleText(title)).toBe('Dan kōning ſ\u0304øn');
+    expect(title.title).toBe('Dan k<o>o</o>ning <o>ſ</o>øn');
   });
 
   it('bevarer fodnoter i undertitler og deres linjer', () => {

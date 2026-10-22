@@ -2,6 +2,8 @@ import fs from 'fs';
 import os from 'os';
 import path from 'path';
 import sharp from 'sharp';
+import { spawnSync } from 'child_process';
+import { pathToFileURL } from 'url';
 
 import { buildThumbnails, resizeImage } from '../tools/libs/helpers.js';
 import { imageSizeSync } from '../tools/build-static/image.js';
@@ -142,6 +144,76 @@ describe('sharp image helpers', () => {
     expect(fs.statSync(existingOutput).mtimeMs).toBe(existingOutputMtime);
   });
 
+  it('reuses completed thumbnails after the generating process is killed', async () => {
+    const helpersUrl = pathToFileURL(path.join(cwd, 'tools/libs/helpers.js')).href;
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/p1.jpg', 320, 180);
+    const child = spawnSync(process.execPath, ['--input-type=module', '-e', `
+      import fs from 'fs';
+      import { buildThumbnails } from ${JSON.stringify(helpersUrl)};
+      const rename = fs.renameSync;
+      fs.renameSync = (from, to) => {
+        rename(from, to);
+        if (to.startsWith('caches/thumbnails/') && to.endsWith('.json')) {
+          process.kill(process.pid, 'SIGKILL');
+        }
+      };
+      await buildThumbnails('public/images', () => true);
+    `], { cwd: tmpdir, env: { ...process.env, KALLIOPE_THUMBNAIL_CONCURRENCY: '1' } });
+    expect(child.signal).toBe('SIGKILL');
+    expect(fs.readdirSync('caches/thumbnails').filter(name => name.endsWith('.json'))).toHaveLength(1);
+    const complete = `public${ImagePaths.thumbnailSrc('/images/poet/p1.jpg', 100, 'jpg')}`;
+    const mtime = fs.statSync(complete).mtimeMs;
+    await buildThumbnails('public/images', () => true);
+    expect(fs.statSync(complete).mtimeMs).toBe(mtime);
+    const last = `public${ImagePaths.thumbnailSrc('/images/poet/p1.jpg', 800, 'jpg')}`;
+    expect(fs.existsSync(last)).toBe(true);
+  });
+
+  it('resumes with a stale global cache and repairs partial outputs', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/p1.jpg', 320, 180);
+    await buildThumbnails('public/images', () => true);
+    const output = width => `public${ImagePaths.thumbnailSrc('/images/poet/p1.jpg', width, 'jpg')}`;
+    const completeTime = fs.statSync(output(100)).mtimeMs;
+    fs.writeFileSync(output(150), 'partial JPEG');
+    fs.unlinkSync(output(200));
+    // The global cache was never saved before interruption: still reports dirty.
+    await buildThumbnails('public/images', () => true);
+    expect(fs.statSync(output(100)).mtimeMs).toBe(completeTime);
+    expect((await sharp(output(150)).metadata()).width).toBe(150);
+    expect((await sharp(output(200)).metadata()).width).toBe(200);
+  });
+
+  it('invalidates receipts for changed source content and generator settings', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    const source = 'public/images/poet/p1.jpg';
+    await createJpeg(source, 320, 180);
+    await buildThumbnails('public/images', () => false);
+    const output = `public${ImagePaths.thumbnailSrc('/images/poet/p1.jpg', 100, 'jpg')}`;
+    const original = fs.readFileSync(output);
+    const sourceTime = fs.statSync(source).mtime;
+    await createJpeg(source, 320, 320);
+    fs.utimesSync(source, sourceTime, sourceTime);
+    await buildThumbnails('public/images', () => false);
+    expect(fs.readFileSync(output).equals(original)).toBe(false);
+    expect((await sharp(output).metadata()).height).toBe(100);
+    // Simulate receipts made by a different generator version/settings.
+    for (const filename of fs.readdirSync('caches/thumbnails')) {
+      const receiptPath = `caches/thumbnails/${filename}`;
+      const receipt = JSON.parse(fs.readFileSync(receiptPath));
+      receipt.key = 'previous-generator';
+      fs.writeFileSync(receiptPath, JSON.stringify(receipt));
+    }
+    const oldTime = new Date('2000-01-01');
+    fs.utimesSync(output, oldTime, oldTime);
+    await buildThumbnails('public/images', () => false);
+    expect(fs.statSync(output).mtimeMs).toBeGreaterThan(oldTime.getTime());
+  });
+
   it('supports custom thumbnail output paths', async () => {
     process.chdir(tmpdir);
     fs.mkdirSync('facsimiles/poet/work', { recursive: true });
@@ -157,5 +229,33 @@ describe('sharp image helpers', () => {
 
     expect(fs.existsSync('facsimiles/poet/work/t/000-w100.jpg')).toBe(true);
     expect(fs.existsSync('public/generated/facsimiles')).toBe(false);
+  });
+
+  it('processes recently modified source images first', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    await createJpeg('public/images/poet/older.jpg', 320, 180);
+    await createJpeg('public/images/poet/newer.jpg', 320, 180);
+    fs.utimesSync(
+      'public/images/poet/older.jpg',
+      new Date('2020-01-01'),
+      new Date('2020-01-01')
+    );
+    fs.utimesSync(
+      'public/images/poet/newer.jpg',
+      new Date('2021-01-01'),
+      new Date('2021-01-01')
+    );
+
+    const visited = [];
+    await buildThumbnails('public/images', null, {
+      thumbnailOutputPath: (fullFilename, width, ext) => {
+        visited.push(path.basename(fullFilename));
+        return `public/images/poet/t/${path.basename(fullFilename, '.jpg')}-w${width}.${ext}`;
+      },
+    });
+
+    expect([...new Set(visited)]).toEqual(['newer.jpg', 'older.jpg']);
+    expect(visited.slice(visited.indexOf('older.jpg'))).not.toContain('newer.jpg');
   });
 });

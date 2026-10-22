@@ -5,6 +5,7 @@ import {
   parsePageInterval,
 } from './build-static/source-validation.js';
 import { safeGetInnerXML } from './build-static/xml.js';
+import { parseSourceBibliography } from './build-static/source.js';
 
 const directChildren = (element, name) =>
   Array.from(element.childNodes).filter(
@@ -105,7 +106,7 @@ const facsimileSourceId = pageBreak => {
   const textEntry = textEntryAncestor(pageBreak);
   const head = textEntry == null ? null : directChild(textEntry, 'head');
   const source = head == null ? null : directChild(head, 'source');
-  return source?.getAttribute('in') ?? '';
+  return source?.getAttribute('facsimile') ?? source?.getAttribute('in') ?? '';
 };
 
 const parseWorkXml = xml =>
@@ -237,6 +238,101 @@ const collectRedundantTextTitleMetadataIssues = (filename, document) => {
   return issues;
 };
 
+const collectSingleLineSubtitleIssues = (filename, document) => {
+  const issues = [];
+
+  Array.from(document.getElementsByTagName('subtitle')).forEach(subtitle => {
+    const head = subtitle.parentNode;
+    if (head.nodeName !== 'head' && head.nodeName !== 'workhead') {
+      return;
+    }
+    if (directChildren(subtitle, 'line').length === 1) {
+      const ownerId = head.parentNode.getAttribute('id') ?? '(missing id)';
+      issues.push(
+        `${filename}: ${head.nodeName} ${ownerId} has a <subtitle> with only one <line>; remove the <line> wrapper.`,
+      );
+    }
+  });
+
+  return issues;
+};
+
+const collectAnthologySourceIssues = (filename, document) => {
+  const work = document.documentElement;
+  if (work.getAttribute('type') !== 'anthology') {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  const workSources = workhead == null ? [] : directChildren(workhead, 'source');
+  const issues = [];
+  if (workSources.length === 0) {
+    issues.push(`${filename}: anthology requires a structured workhead source with an editor.`);
+  }
+  const sources = workSources.map(source => ({
+    source,
+    context: `work source "${source.getAttribute('id') ?? 'default'}"`,
+  }));
+  for (const text of textEntries(document)) {
+    const head = directChild(text, 'head');
+    if (head == null) {
+      continue;
+    }
+    for (const source of directChildren(head, 'source')) {
+      // Empty text sources inherit the selected work source's bibliography.
+      if (safeGetInnerXML(source).trim().length === 0) {
+        continue;
+      }
+      sources.push({
+        source,
+        context: `text ${text.getAttribute('id')} source`,
+      });
+    }
+  }
+  for (const { source, context } of sources) {
+    try {
+      const bibliography = parseSourceBibliography(source);
+      if (bibliography == null) {
+        issues.push(`${filename}: ${context} requires a structured bibliography with an editor.`);
+      } else if ((bibliography.editors ?? []).length === 0) {
+        issues.push(`${filename}: ${context} requires an editor.`);
+      }
+    } catch (error) {
+      issues.push(`${filename}: ${context}: ${error.message}`);
+    }
+  }
+  return issues;
+};
+
+const collectSourceAuthorIssues = (filename, document) => {
+  const work = document.documentElement;
+  const workAuthor = work.getAttribute('author');
+  if (
+    workAuthor == null || workAuthor === '' ||
+    /^fdirs\/(?:antologier|tidsskrifter)[^/]+\//u.test(filename)
+  ) {
+    return [];
+  }
+  const workhead = directChild(work, 'workhead');
+  if (workhead == null) {
+    return [];
+  }
+  const issues = [];
+  for (const source of directChildren(workhead, 'source')) {
+    const personIds = [
+      ...directChildren(source, 'author'),
+      ...directChildren(source, 'translator'),
+    ].map(person => person.getAttribute('id'))
+      .filter(id => id != null && id !== '');
+    if (personIds.length > 0 && !personIds.includes(workAuthor)) {
+      const sourceId = source.getAttribute('id') ?? 'default';
+      issues.push(
+        `${filename}: source "${sourceId}" has author/translator ids [${personIds.join(', ')}] that do not match kalliopework/@author="${workAuthor}".`,
+      );
+    }
+  }
+  return issues;
+};
+
 const collectSourceStructureIssues = (filename, document) => {
   const pageOnlySources = [];
   const pageIntervals = [];
@@ -283,6 +379,53 @@ const collectSourceStructureIssues = (filename, document) => {
   });
 
   return { pageIntervals, pageOnlySources };
+};
+
+const collectFacsimilePageSourceIssues = (filename, document) => {
+  const workhead = directChild(document.documentElement, 'workhead');
+  if (workhead == null) {
+    return [];
+  }
+  const sources = directChildren(workhead, 'source');
+
+  return textEntries(document).flatMap(text => {
+    const head = directChild(text, 'head');
+    const source = head == null ? null : directChild(head, 'source');
+    const sourceId = source?.getAttribute('in') ?? 'default';
+    const workSource = sources.find(
+      candidate => (candidate.getAttribute('id') ?? 'default') === sourceId,
+    );
+    if (
+      (workSource?.getAttribute('facsimile') ?? '').trim() === '' ||
+      (workSource?.getAttribute('facsimile-pages-num') ?? '').trim() === ''
+    ) {
+      return [];
+    }
+
+    const pages = source?.getAttribute('pages') ?? null;
+    const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
+    const textId = text.getAttribute('id') ?? '(ukendt tekst)';
+    const label = `${filename}: text ${textId}`;
+    if (pages == null && facsimilePages == null) {
+      return [`${label} requires source pages or facsimile-pages for its work facsimile.`];
+    }
+
+    const issues = [];
+    if (pages != null && parsePageInterval(pages) == null) {
+      issues.push(`${label} has an invalid source pages interval: ${pages}.`);
+    }
+    if (facsimilePages != null) {
+      const interval = parsePageInterval(facsimilePages);
+      const pageCount = Number(workSource.getAttribute('facsimile-pages-num'));
+      if (
+        /^\d+(?:\s*[-–]\s*\d+)?$/.test(facsimilePages.trim()) !== true ||
+        interval == null || interval.from < 1 || interval.to > pageCount
+      ) {
+        issues.push(`${label} has an invalid source facsimile-pages interval: ${facsimilePages}.`);
+      }
+    }
+    return issues;
+  });
 };
 
 const collectSourcePolicyIssues = (filename, document) => {
@@ -375,7 +518,10 @@ const collectPageBreakIssues = (
         `${filename}: pb/@facs must use a numeric JPEG filename: ${facs}`,
       );
     }
-    if (!hasAncestor(pageBreak, 'body')) {
+    const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
+      hasAncestor(pageBreak, 'head') === true &&
+      hasAncestor(pageBreak, 'footnote') === true;
+    if (hasAncestor(pageBreak, 'body') !== true && inHeadingFootnote !== true) {
       issues.push(`${filename}: <pb> must occur inside a text body.`);
     }
   });
@@ -405,8 +551,18 @@ const collectPageBreakIssues = (
 
   textEntries(document).forEach(text => {
     const previousPrintedPages = new Map();
+    const visitedPagesByStream = new Map();
     Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
       const stream = noteAncestor(pageBreak) ?? text;
+      const visited = visitedPagesByStream.get(stream) ?? new Set();
+      const facs = pageBreak.getAttribute('facs');
+      if (facs != null && facs !== '') {
+        if (visited.has(facs)) {
+          issues.push(`${filename}: duplicate pb/@facs within one text stream: ${facs}.`);
+        }
+        visited.add(facs);
+        visitedPagesByStream.set(stream, visited);
+      }
       const previousPrintedPage = previousPrintedPages.get(stream) ?? null;
       const printedLabel = pageBreak.getAttribute('n');
       const printedPage =
@@ -431,10 +587,15 @@ const collectPageBreakIssues = (
     const head = directChild(text, 'head');
     const source = head == null ? null : directChild(head, 'source');
     const pages = source?.getAttribute('pages') ?? null;
+    const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
     const body = directChild(text, 'body');
-    const pageBreakCount =
-      body == null ? 0 : body.getElementsByTagName('pb').length;
-    const expected = expectedPageBreakCount(pages);
+    const physicalTransitions = body == null ? [] : Array.from(body.getElementsByTagName('pb'));
+    const pageBreakCount = new Set(physicalTransitions.map(pageBreak => {
+      const facs = pageBreak.getAttribute('facs');
+      return facs != null && facs !== '' ? facs : pageBreak;
+    })).size;
+    const intervalSource = pages ?? facsimilePages;
+    const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =
       ignoresTest(work, 'pagebreak-count') ||
       ignoresTest(text, 'pagebreak-count');
@@ -444,7 +605,7 @@ const collectPageBreakIssues = (
         issues.push(
           `${filename}: text ${textId} has an uninterpretable pages value: ${pages}.`,
         );
-      } else if (pageBreakCount > 0) {
+      } else if (pageBreakCount > 0 && !ignorePageBreakCount) {
         issues.push(
           `${filename}: text ${textId} has ${pageBreakCount} <pb> elements, but no simple pages interval.`,
         );
@@ -455,8 +616,9 @@ const collectPageBreakIssues = (
       return;
     }
     if (pageBreakCount !== expected) {
+      const intervalLabel = pages == null ? 'facsimile-pages' : 'pages';
       issues.push(
-        `${filename}: text ${textId} with pages="${pages}" requires ${expected} <pb> elements, but found ${pageBreakCount}.`,
+        `${filename}: text ${textId} with ${intervalLabel}="${intervalSource}" requires ${expected} <pb> elements, but found ${pageBreakCount}.`,
       );
     }
   });
@@ -471,7 +633,11 @@ export {
   collectPageBreakIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectFacsimilePageSourceIssues,
+  collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectTextStructureIssues,
   parseWorkXml,
 };

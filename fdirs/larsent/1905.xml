@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1905" author="larsent" status="complete" type="poetry">
+<kalliopework id="1905" author="larsent" status="incomplete" type="poetry">
 <workhead>
   <title>Dagene</title>
   <year>1905</year>
@@ -7,12 +7,29 @@
     <openlibrary-work>OL12897709W</openlibrary-work>
   </identifiers>
   <pictures>
-    <picture type="titlepage" src="1905-p1.jpg">Titelbladet til <i>Dagene</i> (1905) lyder ,,Thøger Larsen / Dagene, / Viser og Digte. / I Kommission hos / Hvidehus Boglade, Vejle. / 1905''.</picture>
+    <picture type="titlepage" src="1905-p1.jpg"><transcription>Thøger Larsen / Dagene, / Viser og Digte. / I Kommission hos / Hvidehus Boglade, Vejle. / 1905</transcription></picture>
   </pictures>
   <notes>
+    <note>KB-facsimilet mangler s. 58-59. »Kræ-Tammesen i Vorherres Haand« gengives derfor efter Kim Byvalds digitalisering af 1905-udgaven.</note>
     <note>Bidrag fra Henrik Nielsen.</note>
   </notes>
-  <source facsimile="115308074956_color" facsimile-pages-num="76" facsimile-pages-offset="6">Thøger Larsen: <i>Dagene</i>, Hvidehus Boglade, Vejle, 1905.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122436855805763" facsimile="115308074956_color" facsimile-pages-num="74" facsimile-pages-offset="6">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Dagene</title>
+    <place>Vejle</place>
+    <publisher>Hvidehus Boglade</publisher>
+    <year>1905</year>
+    <identifiers>
+      <kb-alma>99122436855805763</kb-alma>
+    </identifiers>
+  </source>
+  <source id="byvald" href="https://archive.org/details/dagene1905larsenthger" facsimile="dagene1905larsenthger_text" facsimile-pages-num="68" facsimile-pages-offset="2">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Dagene</title>
+    <place>Vejle</place>
+    <publisher>Hvidehus Boglade</publisher>
+    <year>1905</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -1323,6 +1340,42 @@ for huddn en saa læ'r si Klæjmoler skjær',
 saa ka di sgu find' hwer Stropp aa hwer Hæjtt!''
 - Naa, væk er hun kommen den triddi September.
 Ka a stee di Dætter te' den fø'st November?
+</poetry>
+</body>
+</text>
+
+<text id="larsent1905b3">
+<head>
+  <title>Kræ-Tammesen i Vorherres Haand</title>
+  <firstline>En ka somtid gaa saa sær aa krasel</firstline>
+  <source in="byvald" pages="58-59" facsimile-pages="60-61"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En ka somtid gaa saa sær aa krasel,
+men alder haar vi hat en Staahej te wos
+som den syvend Gaang, mi Koen' gjowd' Basel.
+Ja sikken Molor! — Herre Jessu Køs! —
+A tot, en ku mist' æ Vid ower de' hall.
+Men sikker e' 'ed: En ka vær' lig' ve' aa drown
+i Bekymring aa Skidt aa endda komm forown,
+naar de' er Guds Villi, aa en holder sæ te' ham,
+aa a haar altid, naar de' knev, holdt ve' ham.
+Denn jenn a mi Øg hinner Tænd' war gall,
+den ajn war frewvel aa skawwed o æ Bringg,
+aa æ Jordmor sku hjunes, menn di ku springg;
+jen Ko war owsind, aa en ajn sku kall,
+aa æ gammel So war begynd' aa faa Griis.
+A war saaddn, te a hwerken ku drikk heller spiis.
+
+Men æ Klokk-e-tre war mi Koen' forløst
+aa laa me' en bitte Piig ve' æ Bryst,
+<pb n="59" facs="060.jpg"/>aa æ Jordmor saah, te æ Ung' den liggnt mæ,
+aa Kal' war der gjowd i den Ko, der war tyrgal.
+
+Aa æ Klokk-e-fir' haaj Worherr velsiggnt mæ
+me' en Dætter aa olle Griis aa en Tyrkal'.
 </poetry>
 </body>
 </text>

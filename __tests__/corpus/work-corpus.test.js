@@ -1,3 +1,4 @@
+import { discoverPoetFiles } from '../../tools/libs/poet-files.js';
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync } from 'fs';
 import {
@@ -10,12 +11,17 @@ import {
   collectStandaloneFootnoteIssues,
   collectPageBreakIssues,
   collectRedundantTextTitleMetadataIssues,
+  collectSingleLineSubtitleIssues,
   collectSourcePolicyIssues,
   collectSourceStructureIssues,
+  collectFacsimilePageSourceIssues,
+  collectSourceAuthorIssues,
+  collectAnthologySourceIssues,
   collectTextStructureIssues,
   parseWorkXml,
 } from '../../tools/work-validation.js';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
+import { validateErrata } from '../../tools/errata.js';
 import {
   getElementByTagName,
   getElementsByTagNames,
@@ -61,7 +67,12 @@ describe('tracked work corpus', () => {
   let pageBreakIssues;
   let pageIntervalIssues;
   let pageOnlySourceIssues;
+  let facsimilePageSourceIssues;
   let poetryBoundaryBlankLineIssues;
+  let nestedBodyBlockIssues;
+  let sourceHrIssues;
+  let sourceAuthorIssues;
+  let anthologySourceIssues;
   let asteriskOrnamentSpacingIssues;
   let rawAsteriskOrnamentIssues;
   let andreWorkheadSourceIssues;
@@ -69,7 +80,10 @@ describe('tracked work corpus', () => {
   let textFollowsNoteIssues;
   let textStructureIssues;
   let redundantTextTitleMetadataIssues;
+  let singleLineSubtitleIssues;
+  let errataIssues;
   let unindexedAnthologyTexts;
+  let wrappedSeparatorIssues;
 
   beforeAll(() => {
     const works = loadTrackedWorkFiles();
@@ -89,7 +103,12 @@ describe('tracked work corpus', () => {
     pageBreakIssues = [];
     pageIntervalIssues = [];
     pageOnlySourceIssues = [];
+    facsimilePageSourceIssues = [];
     poetryBoundaryBlankLineIssues = [];
+    nestedBodyBlockIssues = [];
+    sourceHrIssues = [];
+    sourceAuthorIssues = [];
+    anthologySourceIssues = [];
     asteriskOrnamentSpacingIssues = [];
     rawAsteriskOrnamentIssues = [];
     andreWorkheadSourceIssues = [];
@@ -97,9 +116,22 @@ describe('tracked work corpus', () => {
     textFollowsNoteIssues = [];
     textStructureIssues = [];
     redundantTextTitleMetadataIssues = [];
+    singleLineSubtitleIssues = [];
+    errataIssues = [];
     unindexedAnthologyTexts = [];
+    wrappedSeparatorIssues = [];
 
     works.forEach(({ content: xml, filename }) => {
+      if (xml.includes('<nonum><center>---</center></nonum>')) {
+        xml.split('\n').forEach((line, index) => {
+          if (line.includes('<nonum><center>---</center></nonum>')) {
+            wrappedSeparatorIssues.push(
+              `${filename}:${index + 1}: Ulovligt <nonum><center>---</center></nonum>; brug --- på en selvstændig linje.`
+            );
+          }
+        });
+      }
+
       const anthologyDirectory = filename.match(/^fdirs\/(antologier[^/]+)\//);
       if (anthologyDirectory != null) {
         const anthologyId = anthologyDirectory[1];
@@ -135,6 +167,41 @@ describe('tracked work corpus', () => {
         structuralTagsOutsideColumnZero(xml).length > 0
       ) {
         formattingIssues.push(filename);
+      }
+
+      const workDocument = parseWorkXml(xml);
+      if (checksForWorkXml(xml).facsimiles === true) {
+        facsimilePageSourceIssues.push(
+          ...collectFacsimilePageSourceIssues(filename, workDocument),
+        );
+      }
+      singleLineSubtitleIssues.push(
+        ...collectSingleLineSubtitleIssues(filename, workDocument),
+      );
+      sourceAuthorIssues.push(...collectSourceAuthorIssues(filename, workDocument));
+      anthologySourceIssues.push(...collectAnthologySourceIssues(filename, workDocument));
+      if (/<hr\b/u.test(xml)) {
+        sourceHrIssues.push(filename);
+      }
+      for (const body of getElementsByTagNames(workDocument, ['body'])) {
+        for (const block of getElementsByTagNames(body, [
+          'poetry',
+          'prose',
+          'epigraph',
+        ])) {
+          const notePoetry = block.tagName === 'poetry' &&
+            ['note', 'footnote'].includes(block.parentNode?.tagName);
+          if (block.parentNode?.tagName !== 'body' && notePoetry === false) {
+            nestedBodyBlockIssues.push(
+              `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
+            );
+          }
+        }
+        for (const note of getElementsByTagNames(body, ['note', 'footnote'])) {
+          if (getElementsByTagNames(note, ['column', 'two-columns']).length > 0) {
+            nestedBodyBlockIssues.push(`${filename}: column layout inside <${note.tagName}>`);
+          }
+        }
       }
 
       const xmlWithoutOrnamentBoundarySpacing = xml
@@ -184,6 +251,9 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
+      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")/.test(xml)) {
+        errataIssues.push(...validateErrata(parseWorkXml(xml).documentElement, filename));
+      }
       redundantTextTitleMetadataIssues.push(
         ...collectRedundantTextTitleMetadataIssues(filename, parseWorkXml(xml)),
       );
@@ -243,8 +313,20 @@ describe('tracked work corpus', () => {
     expect(formattingIssues).toEqual([]);
   });
 
+  it('forbids <nonum><center>---</center></nonum>; use --- on its own line', () => {
+    expect(wrappedSeparatorIssues).toEqual([]);
+  });
+
   it('keeps poetry free of leading and trailing blank lines', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
+  });
+
+  it('keeps body blocks separate and permits poetry, but not column layout, in notes', () => {
+    expect(nestedBodyBlockIssues).toEqual([]);
+  });
+
+  it('uses source separator lines instead of hr elements', () => {
+    expect(sourceHrIssues).toEqual([]);
   });
 
   it('does not preserve probable print-line word divisions in prose', () => {
@@ -271,12 +353,24 @@ describe('tracked work corpus', () => {
     expect(bodyLinkIssues).toEqual([]);
   });
 
+  it('matches bibliographic authors or translators to the work author', () => {
+    expect(sourceAuthorIssues).toEqual([]);
+  });
+
+  it('requires structured sources with editors for anthology works', () => {
+    expect(anthologySourceIssues).toEqual([]);
+  });
+
   it('requires a workhead source for every page-only text source', () => {
     expect(pageOnlySourceIssues).toEqual([]);
   });
 
   it('requires legal page intervals on text sources', () => {
     expect(pageIntervalIssues).toEqual([]);
+  });
+
+  it('requires legal text page references for work sources with a facsimile and page count', () => {
+    expect(facsimilePageSourceIssues).toEqual([]);
   });
 
   it('places sources on individual texts in andre.xml', () => {
@@ -299,8 +393,16 @@ describe('tracked work corpus', () => {
     expect(redundantTextTitleMetadataIssues).toEqual([]);
   });
 
+  it('does not wrap a single subtitle line in a line element', () => {
+    expect(singleLineSubtitleIssues).toEqual([]);
+  });
+
   it('keeps declared page-break markup consistent', () => {
     expect(pageBreakIssues).toEqual([]);
+  });
+
+  it('requires applied errata and well-formed errata footnotes', () => {
+    expect(errataIssues).toEqual([]);
   });
 
   it('conforms to the Kalliope work schema', () => {
@@ -383,13 +485,9 @@ describe('registered first-edition placeholders', () => {
         issues.push(`${id}: invalid placeholder metadata or body`);
       }
 
-      const info = readFileSync(`fdirs/${poetId}/info.xml`, 'utf8');
-      const infoDocument = parseWorkXml(info);
-      const listedWorkIds = getElementsByTagNames(infoDocument, ['works'])
-        .flatMap((node) => node.textContent.split(','))
-        .map((workId) => workId.trim());
-      if (!listedWorkIds.includes(workId)) {
-        issues.push(`${id}: ${workId} is missing from ${poetId}/info.xml`);
+      const { workids } = discoverPoetFiles([poetId]);
+      if (workids.get(poetId).includes(workId) === false) {
+        issues.push(`${id}: ${workId} is not automatically registered`);
       }
     });
 

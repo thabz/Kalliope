@@ -2,6 +2,7 @@ import {
   collectPoemLineQualityFindings,
   findCommonPoetryIndentationFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
 } from '../../tools/text-quality-poem-lines.js';
@@ -21,6 +22,41 @@ const titleMetadataIssues = data =>
   });
 
 describe('Check workfiles', () => {
+  it.each([',', '.', ';', ':', '!', '?'])(
+    'rejects a line starting with %s, including formatted and entity text',
+    punctuation => {
+      for (const content of [punctuation, `  <i>${punctuation}</i>`, `&#${punctuation.codePointAt(0)};`]) {
+        const issues = findLineLeadingPunctuationFindings({
+          file: 'fdirs/test/work.xml',
+          data: `<text id="noisy"><head><subtitle><line>${content} Undertitel</line><line>Anden linje</line></subtitle></head></text>`,
+        });
+        expect(issues).toEqual([expect.objectContaining({
+          rule: 'line-leading-punctuation', textId: 'noisy', line: 1,
+        })]);
+      }
+    },
+  );
+
+  it.each(['Æbler', 'Én sang', '4 Sange', '„Citat“', '(I Hexametre)', '— Replik'])(
+    'allows a line starting with letters, numbers or literary delimiters: %s',
+    content => {
+      expect(findLineLeadingPunctuationFindings({
+        file: 'fdirs/test/work.xml',
+        data: `<text id="valid"><head><subtitle><line><footnote>, note.</footnote>${content}</line><line>Anden linje</line></subtitle></head></text>`,
+      })).toEqual([]);
+    },
+  );
+
+  it('checks lines in work and section headings but ignores comments and ordinary verse', () => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/work.xml',
+      data: '<kalliopework><workhead><subtitle><line>, Værk</line></subtitle></workhead><workbody><section id="part"><head><suptitle><line>. Del</line></suptitle></head></section><!-- <line>, Kommentar</line> --><text id="verse"><body><poetry>\n, verslinje\n</poetry></body></text></workbody></kalliopework>',
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+    expect(issues.filter(issue => issue.rule === 'line-leading-punctuation').map(issue => issue.textId)).toEqual(['workhead', 'part']);
+  });
+
   it('has no poem-line quality issues', () => {
     const issues = collectPoemLineQualityFindings();
     if (issues.length > 0) {
@@ -160,6 +196,18 @@ describe('Check workfiles', () => {
     expect(issues[0].description).toContain('2 columns');
   });
 
+  it('checks verses after a note containing poetry without counting the note verses', () => {
+    const plain = '<text id="shifted"><body><poetry>\n  Første\n    Anden\n  Tredje\n</poetry></body></text>';
+    const annotated = plain.replace('Første',
+      'Første<footnote><poetry>Citat uden indryk<br/>Et andet citat</poetry></footnote>');
+    expect(commonIndentationIssues(annotated)).toEqual(commonIndentationIssues(plain));
+  });
+
+  it('retains an unindented main verse following a verse citation in a note', () => {
+    const annotated = '<text id="relative"><body><poetry>\n  Første<footnote><poetry>Citat<br/>Citat</poetry></footnote>\nAnden\n</poetry></body></text>';
+    expect(commonIndentationIssues(annotated)).toEqual([]);
+  });
+
   it('allows one-column relative indentation when a verse line starts at zero', () => {
     const issues = commonIndentationIssues(
       '<text id="relative"><body><poetry>\nFørste\n Anden\nFørste igen\n</poetry></body></text>',
@@ -230,6 +278,120 @@ describe('Check workfiles', () => {
     expect(
       issues.filter(issue => issue.rule === 'common-poetry-indentation'),
     ).toHaveLength(1);
+  });
+
+  it.each(['title', 'indextitle', 'linktitle'].flatMap(type =>
+    ['w', 'i'].map(tag => [type, tag]),
+  ))(
+    'rejects %s containing %s even with plain alternative titles',
+    (type, tag) => {
+      const issues = titleMetadataIssues(
+        `<text id="marked"><head><title>Titel</title><${type}>En <${tag}>titel</${tag}></${type}><indextitle>Indekstitel</indextitle><linktitle>Linktitel</linktitle></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toEqual([
+        expect.objectContaining({ textId: 'marked', description: expect.stringContaining(type) }),
+      ]);
+    },
+  );
+
+  it.each(['title', 'toctitle', 'indextitle', 'linktitle'])(
+    'rejects markup in %s on a text marked skip-index',
+    type => {
+      const issues = titleMetadataIssues(
+        `<text id="skipped" skip-index="true"><head><${type}><b>Titel</b></${type}></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it.each(['title', 'toctitle'])(
+    'allows plain text, num and footnotes in %s',
+    type => {
+      const issues = titleMetadataIssues(
+        `<text id="noted"><head><${type}><num>III.</num>Titel &amp; tekst<footnote>Note med <i>kursiv</i>.</footnote></${type}></head></text>`,
+      );
+
+      expect(issues).toEqual([]);
+    },
+  );
+
+  it('allows w and i, including nested formatting, in toctitle', () => {
+    const issues = titleMetadataIssues(
+      '<text id="formatted"><head><title>Titel</title><toctitle><num>III.</num>En <w>spatieret <i>titel</i></w><footnote>Note med <i>kursiv</i>.</footnote></toctitle></head></text>',
+    );
+
+    expect(issues).toEqual([]);
+  });
+
+  it.each(['title', 'toctitle'])(
+    'allows printed abbreviation overlines in %s',
+    type => {
+      expect(titleMetadataIssues(
+        `<text id="abbreviated"><head><${type}>Dan k<o>o</o>ning</${type}></head></text>`,
+      )).toEqual([]);
+    },
+  );
+
+  it('rejects emphasis inside a title abbreviation overline', () => {
+    const issues = titleMetadataIssues(
+      '<text id="emphasized"><head><title>Dan k<o><i>o</i></o>ning</title></head></text>',
+    );
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+  });
+
+  it('rejects disallowed markup nested inside permitted toctitle formatting', () => {
+    const issues = titleMetadataIssues(
+      '<text id="nested"><head><title>Titel</title><toctitle><i>En <b>titel</b></i></toctitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+  });
+
+  it.each(['indextitle', 'linktitle'])(
+    'allows plain num prefixes but rejects footnotes in %s',
+    type => {
+      const plainIssues = titleMetadataIssues(
+        `<text id="plain"><head><title>Titel</title><${type}><num>III.</num>Anden titel</${type}></head></text>`,
+      );
+      const notedIssues = titleMetadataIssues(
+        `<text id="noted"><head><title>Titel</title><${type}>Anden titel<footnote>Note.</footnote></${type}></head></text>`,
+      );
+
+      expect(plainIssues).toEqual([]);
+      expect(notedIssues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it.each(['<w/>', '<num><w>III.</w></num>Titel', '<note>Note</note>'])(
+    'rejects disallowed title markup: %s',
+    title => {
+      const issues = titleMetadataIssues(
+        `<text id="marked"><head><title>${title}</title><indextitle>Indekstitel</indextitle></head></text>`,
+      );
+
+      expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(1);
+    },
+  );
+
+  it('checks title markup in work and section headings', () => {
+    const issues = titleMetadataIssues(
+      '<kalliopework><workhead><title><w>Værk</w></title></workhead><workbody><section id="part"><head><title><i>Del</i></title></head></section></workbody></kalliopework>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toEqual([
+      expect.objectContaining({ textId: 'workhead' }),
+      expect.objectContaining({ textId: 'part' }),
+    ]);
+  });
+
+  it('reports title and toctitle markup independently', () => {
+    const issues = titleMetadataIssues(
+      '<text id="both"><head><title><w>Titel</w></title><toctitle><b>Indholdstitel</b></toctitle><indextitle>Indekstitel</indextitle></head></text>',
+    );
+
+    expect(issues.filter(issue => issue.rule === 'title-markup')).toHaveLength(2);
   });
 
   it.each(['Æbler', 'Én sang', '4 Sange'])(
@@ -381,6 +543,14 @@ describe('Check workfiles', () => {
       expect(
         issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
       ).toHaveLength(1);
+    },
+  );
+
+  it.each(['indextitle', 'toctitle', 'breadcrumbtitle', 'linktitle', 'subtitle', 'suptitle'])(
+    'rejects a trailing comma in %s even with a punctuation exemption',
+    type => {
+      const issues = titleMetadataIssues(`<text id="comma" ignore-tests="title-trailing-punctuation"><head><${type}>Titel,</${type}></head></text>`);
+      expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(1);
     },
   );
 

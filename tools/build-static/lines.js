@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { isFileModified } from '../libs/caching.js';
 import {
   safeMkdir,
@@ -6,7 +7,7 @@ import {
 } from '../libs/helpers.js';
 import { primaryTextVariantId } from './variants.js';
 import { poetName, workName } from './formatting.js';
-import { sourceFilesForText } from './work-cache.js';
+import { sourceFilesForText, sourceWorkKey } from './work-cache.js';
 import { createProgressReporter } from './progress.js';
 
 function stripDiacriticsGreek(str) {
@@ -41,7 +42,7 @@ const selectPoetLines = (poetTexts, poet, collected) =>
 const build_global_lines_json = (collected) => {
   safeMkdir('public/api/alltexts');
   let changed_langs = {};
-  let found_changes = false;
+  let found_changes = (collected.changedWorkPoetIds?.size ?? 0) > 0;
   collected.workids.forEach((workIds, poetId) => {
     workIds.forEach((workId) => {
       const workFilename = `fdirs/${poetId}/${workId}.xml`;
@@ -69,6 +70,16 @@ const build_global_lines_json = (collected) => {
     collected.poets.forEach(poet => {
       changed_langs[poet.country] = true;
     });
+    // Remove old letters too: deleting the last text for a letter must not
+    // leave a stale index page behind.
+    if (fs.existsSync('public/api/alltexts')) {
+      fs.readdirSync('public/api/alltexts').forEach(filename => {
+        const country = filename.split('-')[0];
+        if (changed_langs[country] === true && filename.endsWith('.json')) {
+          fs.rmSync(`public/api/alltexts/${filename}`, { force: true });
+        }
+      });
+    }
     // Collect the lines for the changed countries
     // collected_lines[country][titles|first][letter] is an array of lines
     let collected_lines = new Map();
@@ -121,7 +132,7 @@ const build_global_lines_json = (collected) => {
               firstletter = '_';
             }
             const work = collected.works.get(
-              textMeta.poetId + '/' + textMeta.workId
+              sourceWorkKey(textMeta)
             );
             let per_letter = per_linetype.get(firstletter) || [];
             per_letter.push({

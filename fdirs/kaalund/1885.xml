@@ -9,7 +9,14 @@
   <pictures>
     <picture src="1885-p1.jpg">Titelbladet til <i>Efterladte Digte</i> (1885) lyder ,,H. V. Kaalund. / Efterladte Digte. / udgivne af / Otto Borchsenius. // Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Fr. Bagges Bogtrykkeri. / 1885.''</picture>
   </pictures>
-  <source facsimile="11530807127D_color" facsimile-pages-num="182" facsimile-pages-offset="14">H.V. Kaalund: <i>Efterladte Digte</i>, Otto Borchsenius (red.), Gyldendalske Boghandels Forlag, Kbh., 1885.</source>
+  <source facsimile="11530807127D_color" facsimile-pages-num="182" facsimile-pages-offset="14">
+    <author>H.V. Kaalund</author>
+    <title>Efterladte Digte</title>
+    <editor type="editor">Otto Borchsenius</editor>
+    <place>Kbh.</place>
+    <publisher>Gyldendalske Boghandels Forlag</publisher>
+    <year>1885</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -2037,6 +2044,9 @@ næst Gud, min bedste Tak!
   <title>I en bortrejsende Dames Stambog</title>
   <subtitle>(Skjærtorsdag 1880)</subtitle>
   <firstline>For Dem straaler Lykken, min unge Frue</firstline>
+  <dates>
+    <written>1880-03-25</written>
+  </dates>
   <source pages="111-114"/>
   <quality>korrektur1,kilde,side</quality>
 </head>

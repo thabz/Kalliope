@@ -4,6 +4,46 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it('preserves verse indentation and page markers in metadata notes', () => {
+    const citation = `<footnote>Indledning.
+<poetry lang="de">
+Første vers
+<pb n="2" facs="002.jpg"/>  Andet vers
+
+Tredje vers
+  Fjerde vers
+</poetry>
+Kilde.</footnote>`;
+    const xml = `<head>
+  <title>Titel${citation}</title>
+  <notes>
+    ${citation.replaceAll('footnote', 'note')}
+  </notes>
+</head>
+`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain(citation.replaceAll('footnote', 'note'));
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
+  it('keeps explicit note citation breaks separate from main verse formatting', () => {
+    const citation = '<footnote><poetry><nonum><right>Kort citat</right></nonum><br/>    Andet vers</poetry></footnote>';
+    const xml = `<body>\n<poetry>Vers${citation}\n<nonum><right>Signatur</right></nonum></poetry>\n</body>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain('</nonum>\n</poetry>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
+    expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
+  });
+
+  it('preserves verse lines, stanzas and indentation in a multiline note citation', () => {
+    const citation = '<footnote><poetry>\nFørste vers\n    Andet vers\n\nTredje vers\n</poetry></footnote>';
+    const xml = `<body>\n<poetry>\nVers${citation}\nNæste vers\n</poetry>\n</body>\n`;
+    expect(formatWorkXml(xml)).toBe(xml);
+    expect(structuralTagsOutsideColumnZero(xml)).toEqual([]);
+  });
+
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
   <workhead>
@@ -22,9 +62,9 @@ describe('work XML formatting', () => {
     </text>
     <text>
       <body>
-        <quote>
+        <epigraph>
 Et citat
-        </quote>
+        </epigraph>
       </body>
     </text>
     <section>
@@ -69,7 +109,7 @@ Et citat
     expect(formatted).toContain('</text>\n\n<section>');
     expect(formatted).toContain('</section>\n\n</workbody>');
     expect(formatted).not.toMatch(
-      /^[ \t]+<\/?(?:body|content|head|poetry|prose|quote|section|subwork|text|workbody|workhead)(?:[ \t>/])/m,
+      /^[ \t]+<\/?(?:body|content|head|poetry|prose|epigraph|section|subwork|text|workbody|workhead)(?:[ \t>/])/m,
     );
     expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
   });
@@ -127,6 +167,7 @@ Et citat
       'pictures',
       'source',
       'keywords',
+      'places',
       'form',
       'metre',
       'rhyme',
@@ -296,6 +337,29 @@ Et citat
       '<body><prose>Brødtekst<note>Inline note</note></prose></body>',
     );
     expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
+  it.each(['workhead', 'head'])('puts subtitle lines on indented lines in %s', head => {
+    const xml = `<${head}>
+  <subtitle><line>Violin</line><line>Anden Del<footnote>Kildens note.</footnote></line></subtitle>
+</${head}>
+`;
+    const expected = `<${head}>
+  <subtitle>
+    <line>Violin</line>
+    <line>Anden Del<footnote>Kildens note.</footnote></line>
+  </subtitle>
+</${head}>
+`;
+
+    expect(formatWorkXml(xml)).toBe(expected);
+    expect(formatWorkXml(expected)).toBe(expected);
+  });
+
+  it('keeps subtitles without line elements inline', () => {
+    const xml = '<head>\n  <subtitle>Anden Del<footnote>Kildens note.</footnote></subtitle>\n</head>\n';
+
+    expect(formatWorkXml(xml)).toBe(xml);
   });
 
   it('always leaves a blank line after text and section elements', () => {

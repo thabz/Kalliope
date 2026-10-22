@@ -64,6 +64,11 @@ it('it formats single years', () => {
   expect(formattedYear('ca 1818', 'fr')).toEqual('v. 1818');
 });
 
+it('formats year spans in work names', () => {
+  expect(formattedYear('1845-47')).toEqual('1845–47');
+  expect(formattedYear('1845-1847')).toEqual('1845–1847');
+});
+
 it('it formats year eras', () => {
   expect(formatYearEra('100', 'bce')).toEqual('100 f.Kr.');
   expect(formatYearEra('20', 'ce')).toEqual('20 e.Kr.');

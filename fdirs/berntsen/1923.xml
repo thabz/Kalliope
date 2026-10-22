@@ -6,7 +6,7 @@
   <year>1923</year>
   <pagebreaks/>
   <pictures>
-    <picture type="titlepage" src="1923-p1.jpg">Titelbladet til Aage Berntsens <i>Ungkarlens Visebog</i> (1923).</picture>
+    <picture type="titlepage" src="1923-p1.jpg"><transcription>Aage Berntsen / Ungkarlens Visebog // Mine graanede Venner / tilegnes disse Vers // „Maaneden Ramadhâner gaaet, / og Schavvâl er kommet: Munter- / hedens, Nydelsernes og Æventyr- / fortællernes Tid.“ / Omar Khajjâm: Rubâijât // V. Pios Boghandel - Povl Branner / Nørregade - København / MDCCCCXXIII</transcription></picture>
     <picture type="frontpage" src="1923-p2.jpg">Forsiden til Aage Berntsens <i>Ungkarlens Visebog</i> (1923).</picture>
   </pictures>
   <source facsimile="130025821360-color" facsimile-pages-num="85" facsimile-pages-offset="7">Aage Berntsen: <i>Ungkarlens Visebog: Mine graanede Venner tilegnes disse Vers</i>, V. Pios Boghandel – Povl Branner, Nørregade, København, 1923.</source>
@@ -565,11 +565,11 @@ i Din egen Hat —
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote max-width="70%">
+<epigraph max-width="70%">
 — og ADA fødte JABAL; han blev Fader til dem, der boe i Telte og beflitte sig paa Besiddelse. Og hans Broders Navn var JUBAL; han blev Fader til dem, der røre Harpe og Fløiter.
 
 <right>1 Mosebog, IV Capitel, 20-21 Vers.</right>
-</quote>
+</epigraph>
 <poetry>
 En dejlig Sommermorgen,
 da Hjorden laa og gumled',
@@ -971,7 +971,10 @@ de lever sgu' endnu!
 <text id="berntsen2026080812">
 <head>
   <title>Balladen om Sir John Falstaffs Død</title>
-  <subtitle><line>(William Shakespeare: Henrik d. V.</line><line>II. Akt III. Scene)</line></subtitle>
+  <subtitle>
+    <line>(William Shakespeare: Henrik d. V.</line>
+    <line>II. Akt III. Scene)</line>
+  </subtitle>
   <firstline>Hvem pusler ved Din Laas</firstline>
   <source pages="45-47" facsimile-pages="58-60"/>
   <quality>korrektur1,kilde,side</quality>

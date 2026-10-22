@@ -1,4 +1,5 @@
 import { DOMParser } from '@xmldom/xmldom';
+import { resolveAuthorId } from '../build-static/anthologies.js';
 
 const dateStampPattern = /^(\d{4})(\d{2})(\d{2})$/;
 
@@ -108,13 +109,11 @@ export const parseWorkTextIds = (xml, filename = '(ukendt fil)') => {
   }
 
   const workAuthor = work.getAttribute('author') ?? '';
-  const texts = Array.from(work.getElementsByTagName('text'))
+  const texts = Array.from(work.getElementsByTagName('*'))
+    .filter(element => element.nodeName === 'text' || element.nodeName === 'section')
     .map(text => {
       const id = text.getAttribute('id') ?? '';
-      const textAuthor = text.getAttribute('author');
-      const poetId = textAuthor != null && textAuthor.length > 0
-        ? textAuthor
-        : workAuthor;
+      const poetId = resolveAuthorId(text, workAuthor);
 
       return { filename, id, poetId };
     })

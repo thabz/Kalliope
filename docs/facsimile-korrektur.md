@@ -33,6 +33,18 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
+Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
+`<workhead>`, og alle relevante rettelser skal indføres med
+`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
+
+En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
+udgave eller variant. Opret først et kildebaseret udkast fra det aktuelle
+facsimile og frisk OCR. Brug derefter eksisterende transskriptioner til
+sammenligning og relationsfinding. Ordlyd, tegnsætning, linje- og
+strofegrænser, indrykning, overskrifter, noter, sideskift og typografi må aldrig
+overføres fra varianten uden selvstændig kontrol mod det aktuelle facsimile.
+
 En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
 mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
 læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet
@@ -92,7 +104,50 @@ Et blankt mellemrum i trykket er redaktionel information. Det må hverken
 fjernes, fordi nabostrofer har samme rimskema, eller tilføjes alene ud fra en
 formodet strofeform.
 
+### Prosaafsnit
+
+Kontrollér hvert prosaafsnit visuelt mod facsimilet i begge
+korrekturgennemgange. Gennemgå afsnitsgrænser, førstelinjeindryk og afstanden
+mellem afsnit hver for sig. Kontrollér også afsnit uden indryk, herunder
+første afsnit efter en overskrift; overfør ikke automatisk naboafsnittenes
+indryk.
+
+En blanklinje skal svare til ekstra lodret afstand i trykket. Et almindeligt
+afsnitsskift med førstelinjeindryk må ikke få tilføjet en blanklinje, og en
+blanklinje må ikke erstatte et trykt indryk. Gennemgå både eksisterende
+blanklinjer og steder, hvor trykkets afstand eller indryk mangler i XML.
+
+Følg kodningen i `docs/xml-work-format.md`: ét sammenhængende afsnit pr.
+XML-linje med indledende mellemrum for dokumenterede førstelinjeindryk.
+Trykte linjeombrydninger og sideskift inde i et fortsat afsnit må ikke skabe
+nye afsnit eller ekstra afstand. OCR-opdelingen må ikke være styrende.
+Registrér fund i det eksisterende fundregister. Strofe- og indrykningsanalyser
+for digte dokumenterer ikke, at prosaen er kontrolleret.
+
 ### Regelmæssige strofeformer
+
+**Kør altid strofeanalyseværktøjet, når strofelængder eller strofegrænser
+skal vurderes eller rettes.** Visuel læsning, manuel linjetælling og den
+eksisterende XML-opdeling kan ikke erstatte dette trin.
+
+Kør fra repositoryets rod:
+
+```sh
+node .agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js fdirs/<digter>/<værk>.xml > /tmp/strofeanalyse.json
+jq --arg id '<tekst-id>' '.poems[] | select(.text_id == $id) | {stanza, candidates}' /tmp/strofeanalyse.json
+```
+
+Hvis OCR-geometri er tilgængelig, angives dens TSV-mappe som andet argument
+til `analyze-whole-work.js`. Vurder værktøjets forslag om manglende eller
+overflødige strofegrænser mod facsimilet, også ved sideskift. Et sideskift er
+ikke i sig selv belæg for, at en strofe fortsætter; en blanklinje mellem
+strofer kan være skjult dér. Registrér værktøjets forslag og begrund den
+endelige afgørelse. Ved usikkert belæg skal usikkerheden fremgå.
+
+Efter en rettelse køres analysen igen på den ændrede XML. Kommandoen
+`npm run poetic-form -- <tekst-id>` kan supplere med rim og metrik, men dens
+strukturdel tæller den eksisterende XML-opdeling og erstatter ikke
+strofeanalyseværktøjets forslag til grænser.
 
 Når facsimilet har bekræftet en regelmæssig strofeform, kan linjetælling bruges
 som en stærk kontrol. En ottave skal eksempelvis have otte verslinjer, men det
@@ -131,6 +186,15 @@ Kontrollér maskinelt:
 
 Linjetælling finder strukturfejl, som en almindelig OCR-sammenligning ikke ser.
 En korrekt tekst kan stadig være opdelt forkert.
+
+Slutkontrollen skal bruge helværksanalysen fra den endelige XML og OCR-geometri
+fra facsimilesiderne. Hver kandidat i rapporten skal forbindes med en særskilt
+afsluttet registrering, som beskriver afgørelsen og angiver den kontrollerede
+facsimileside. Et samlet antal »gennemgåede kandidater« er ikke tilstrækkeligt.
+Der skal også være en selvstændig visuel registrering af strofelængderne for
+hvert digt, inklusive digte uden maskinelle kandidater.
+Ændres XML efter analysen, skal rapporten og registreringerne opdateres før
+værket kan godkendes.
 
 Strofeanalysen afprøver desuden plausible ensartede strofelængder mod hele
 digtet. Hver hypotese vurderes efter, om alle verslinjer dækkes uden rest, hvor
@@ -417,6 +481,9 @@ godkendelse til at publicere den.
 - [ ] Alle relevante sider er registreret og gennemgået.
 - [ ] Første og sidste tekstlinje stemmer med facsimilet.
 - [ ] Strofegrænser følger trykket, også ved uregelmæssige former.
+- [ ] Alle prosaafsnits grænser, førstelinjeindryk og indbyrdes afstand er
+      visuelt kontrolleret mod facsimilet i begge korrekturgennemgange;
+      blanklinjer svarer til trykkets ekstra lodrette afstand.
 - [ ] Alle interne sideskift er markeret med præcist placerede `<pb>`.
 - [ ] Hver `<pb>` har korrekt `facs`; `n` følger den trykte sidebetegnelse.
 - [ ] `<workhead>` indeholder `<pagebreaks/>`, også når der ikke findes `<pb>`.

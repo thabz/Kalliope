@@ -7,7 +7,7 @@
     <note>Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1851a-p1.jpg">Titelbladet har ordlyden ,,Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.''</picture>
+    <picture type="titlepage" src="1851a-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Første Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
   <source facsimile="11530806249E_color" facsimile-pages-num="545" facsimile-pages-offset="20">Henrik Hertz: <i>Digte fra forskjellige Perioder</i>, Deel I, C. A. Reitzel, Kbh., 1851.</source>
 </workhead>
@@ -5312,6 +5312,10 @@ En Trøst, der os usynlig vederqvæger.
   <title>Nytaars-Prolog</title>
   <subtitle>Fremsagt af Mad. <w>Nielsen</w> ved den 50de Forestilling af <w>Elverhøi</w>, den 1ste Jannuar 1835</subtitle>
   <firstline>Af Tidernes uendelige Række</firstline>
+  <dates>
+    <event>1835-01-01</event>
+    <performed>1835-01-01</performed>
+  </dates>
   <source pages="226-231"/>
   <keywords>heibergjl</keywords>
   <quality>korrektur1,kilde,side</quality>

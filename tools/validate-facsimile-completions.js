@@ -3,6 +3,7 @@
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { DOMParser } from '@xmldom/xmldom';
+import { validateErrata } from './errata.js';
 
 const requiredQualityFlags = ['korrektur1', 'korrektur2', 'kilde', 'side'];
 const timestampWithTimezone = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/;
@@ -84,6 +85,7 @@ const validateFacsimileCompletion = ({ baseXml = null, headXml, filename = 'vær
   return [
     ...validateAttestations(head, filename),
     ...validateQuality(head, filename),
+    ...validateErrata(head, filename, { requireDeclaration: true }),
   ];
 };
 

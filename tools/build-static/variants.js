@@ -11,7 +11,7 @@ import {
   normalizeTimelineDate,
 } from '../../common/dates.js';
 import { loadXMLDoc, safeGetAttr, getElementsByTagNames } from './xml.js';
-import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
+import { pruneDeletedVariants, sourceFilesForText, sourceWorkFilename, sourceWorkKey } from './work-cache.js';
 
 const variantDate = work => normalizeTimelineDate(work.year);
 
@@ -19,6 +19,8 @@ const build_variants = (collected) => {
   let variants_map = globalForceReload
     ? new Map()
     : new Map(loadCachedJSON('collected.variants') || []);
+  const affectedFiles = pruneDeletedVariants(variants_map, collected.texts);
+  affectedFiles.forEach(filename => markFileDirty(filename));
   const force_reload = variants_map.size === 0;
 
   const register_variant = (from, to) => {
@@ -146,8 +148,14 @@ const primaryTextVariantId = (textId, collected) => {
   }
 };
 
+const editionSourceFilesForText = (textId, collected) => {
+  const ids = resolve_variants(textId, collected) ?? [];
+  return [...new Set(ids.flatMap(id => sourceFilesForText(collected.texts.get(id))))];
+};
+
 export {
   build_variants,
   resolve_variants,
   primaryTextVariantId,
+  editionSourceFilesForText,
 };

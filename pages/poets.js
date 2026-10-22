@@ -12,6 +12,7 @@ import * as Links from '../components/links.js';
 import Page from '../components/page.js';
 import PageLead from '../components/pagelead.js';
 import PoetName from '../components/poetname.js';
+import { poetNameString } from '../components/poetname-helpers.js';
 import SectionedList from '../components/sectionedlist.js';
 import ErrorPage from './error.js';
 
@@ -183,13 +184,20 @@ const Poets = (props) => {
       return {
         id: poet.id,
         url: `/${lang}/works/${poet.id}`,
+        searchText: poet.name.sortname ?? poetNameString(poet, true),
         html: <PoetName poet={poet} lastNameFirst includePeriod />,
       };
     });
-    sections.push({ title: group.title, items });
+    sections.push({
+      title: group.title,
+      items,
+      headingId: groupBy === 'name' ? `poets-letter-${group.title}` : undefined,
+    });
   });
 
-  let renderedGroups = <SectionedList sections={sections} />;
+  let renderedGroups = (
+    <SectionedList sections={sections} keyboardNavigation={groupBy === 'name'} />
+  );
 
   let pageTitle = null;
 

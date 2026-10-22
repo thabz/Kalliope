@@ -6,8 +6,10 @@ import { fileURLToPath } from 'url';
 import {
   directChild,
   elementChildren,
+  inheritedNotePageBreaks,
   parseXml,
-  serializeChildren,
+  isPoetryBlock,
+  serializeVerseLines,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
 
@@ -137,7 +139,8 @@ const countIndentation = serialized => {
 const pbPattern = /<pb\b[^>]*\bfacs="([^"]+)"[^>]*\/>/gu;
 
 const parsePoetryElement = ({ poetry, startingFacsimile }) => {
-  const serialized = serializeChildren(poetry).replace(/\r\n?/gu, '\n');
+  const serialized = serializeVerseLines(poetry)
+    .replace(/\r\n?/gu, '\n');
   const lines = [];
   const equipment = [];
   const observedBoundaries = [];
@@ -220,32 +223,42 @@ const extractPoetryBlocks = xml => {
     const source = directChild(head, 'source');
     if (body == null) return;
     const firstPb = body.getElementsByTagName('pb')[0] ?? null;
-    let currentFacsimile = initialFacsimile(
+    const startingFacsimile = initialFacsimile(
       source,
       sourceForText(workhead, source),
       firstPb,
     );
     let blockIndex = 0;
-    elementChildren(body).forEach(child => {
-      if (child.nodeName === 'poetry') {
+    const visit = (node, stream) => {
+      if (node.nodeName === 'pb') {
+        stream.facsimile = node.getAttribute('facs') ?? stream.facsimile;
+        return;
+      }
+      if (node.nodeName === 'note' || node.nodeName === 'footnote') {
+        const noteStream = { facsimile: stream.facsimile };
+        elementChildren(node).forEach(child => visit(child, noteStream));
+        const inheritedFacsimile = inheritedNotePageBreaks(node).at(-1)?.getAttribute('facs');
+        if (inheritedFacsimile != null && inheritedFacsimile !== '') {
+          stream.facsimile = inheritedFacsimile;
+        }
+        return;
+      }
+      if (isPoetryBlock(node)) {
         blockIndex += 1;
         const parsed = parsePoetryElement({
-          poetry: child,
-          startingFacsimile: currentFacsimile,
+          poetry: node,
+          startingFacsimile: stream.facsimile,
         });
-        currentFacsimile = parsed.endingFacsimile;
         blocks.push({
           textId: entry.getAttribute('id') ?? '',
           pages: source?.getAttribute('pages') ?? null,
           blockIndex,
           ...parsed,
         });
-      } else {
-        const pageBreaks = Array.from(child.getElementsByTagName('pb'));
-        const facsimile = pageBreaks.at(-1)?.getAttribute('facs') ?? null;
-        if (facsimile != null) currentFacsimile = facsimile;
       }
-    });
+      elementChildren(node).forEach(child => visit(child, stream));
+    };
+    visit(body, { facsimile: startingFacsimile });
   });
   return blocks;
 };
@@ -485,7 +498,7 @@ const nearestBlockKey = (operation, expectedLines) => {
   return expectedLines[cursor]?.blockKey ?? null;
 };
 
-const joinedGeometryLine = ({ expected, operation, ocrLines }) => {
+const joinedGeometryLine = ({ expected, facsimile, operation, ocrLines }) => {
   const physicalLines = operation.ocr.map(index => ocrLines[index]).sort(
     (left, right) => left.top - right.top || left.left - right.left
   );
@@ -498,6 +511,7 @@ const joinedGeometryLine = ({ expected, operation, ocrLines }) => {
   const visibleCharacters = first.text.replace(/\s/gu, '').length;
   return {
     ...first,
+    page: facsimileNumber(facsimile) ?? first.page,
     text: physicalLines.map(line => line.text).join(' '),
     xml_text: expected.text,
     source_verse_line: expected.source_verse_line,
@@ -529,14 +543,38 @@ const leadingOcrOmission = (expectedText, ocrText) => {
     (omittedLetters > 0 && omittedLetters <= 3);
 };
 
-const annotateIndentationSafety = line => leadingOcrOmission(
-  line.xml_text,
-  line.text,
-) ? {
-  ...line,
-  indentation_geometry_safe: false,
-  indentation_geometry_issue: 'ocr_missing_leading_content',
-} : line;
+const annotateIndentationSafety = line => {
+  const visibleCharacters = line.text.replace(/\s/gu, '').length;
+  const characterAdvance = line.character_advance ??
+    line.width / Math.max(visibleCharacters, 1);
+  const anchored = /^[„“”»«"'‘’]/u.test(line.text.trim()) ? {
+    ...line,
+    anchor_left: Number(line.anchor_left ?? line.left) + characterAdvance,
+    indentation_anchor_adjustment: 'hanging_punctuation',
+  } : line;
+  return leadingOcrOmission(line.xml_text, line.text) ? {
+    ...anchored,
+    indentation_geometry_safe: false,
+    indentation_geometry_issue: 'ocr_missing_leading_content',
+  } : anchored;
+};
+
+const annotateDropCapClearance = lines => lines.map((line, index) => {
+  const previous = lines[index - 1];
+  if (
+    previous == null || line.indentation_geometry_safe === false ||
+    line.page !== previous.page ||
+    line.source_verse_line !== previous.source_verse_line + 1
+  ) return line;
+  const previousBottom = previous.top + previous.height;
+  const isTallOverlappingInitial =
+    previous.height >= line.height * 1.8 && line.top < previousBottom;
+  return isTallOverlappingInitial ? {
+    ...line,
+    indentation_geometry_safe: false,
+    indentation_geometry_issue: 'drop_cap_clearance',
+  } : line;
+});
 
 const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
   const extracted = extractPoetryBlocks(xml);
@@ -610,6 +648,7 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
         expectedState.coveredSourceLines.add(expected.source_verse_line);
         expectedState.safeMatches.push(annotateIndentationSafety({
           ...ocr,
+          page: facsimileNumber(facsimile) ?? ocr.page,
           text: ocr.text,
           xml_text: expected.text,
           source_verse_line: expected.source_verse_line,
@@ -686,6 +725,7 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
         expectedState.coveredSourceLines.add(expected.source_verse_line);
         expectedState.safeMatches.push(annotateIndentationSafety(joinedGeometryLine({
           expected,
+          facsimile,
           operation,
           ocrLines: selected.lines,
         })));
@@ -738,9 +778,9 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
   });
 
   const blocks = [...blockStates.values()].map(state => {
-    const sortedMatches = state.safeMatches.sort((left, right) =>
-      left.source_verse_line - right.source_verse_line
-    );
+    const sortedMatches = annotateDropCapClearance(state.safeMatches.sort(
+      (left, right) => left.source_verse_line - right.source_verse_line
+    ));
     const projectedIndex = new Map(sortedMatches.map((line, index) =>
       [line.source_verse_line, index + 1]
     ));
@@ -761,28 +801,37 @@ const preparePoetryGeometry = ({ xml, variantsByFacsimile }) => {
     const physicallyWrappedCount = sortedMatches.filter(line =>
       Number(line.physical_line_span ?? 1) > 1
     ).length;
-    if (
+    const hasDensePhysicalWrapping =
       physicallyWrappedCount >= densePhysicalWrappingMinimum &&
       physicallyWrappedCount / Math.max(expectedLineCount, 1) >=
-        densePhysicalWrappingRatio
-    ) {
+        densePhysicalWrappingRatio;
+    if (hasDensePhysicalWrapping) {
       state.ambiguous.push({
         type: 'dense_physical_wrapping',
         physically_wrapped_line_count: physicallyWrappedCount,
         expected_line_count: expectedLineCount,
         ratio: Number((physicallyWrappedCount / expectedLineCount).toFixed(4)),
         reason:
-          'Tætte fysiske ombrud gør automatisk strofe- og indrykningsgeometri usikker.',
+          'Tætte fysiske ombrud gør automatisk strofegeometri usikker.',
       });
     }
-    const geometryReady = state.ambiguous.length === 0 &&
-      sortedMatches.length === expectedLineCount;
+    const completeSafeMatching = sortedMatches.length === expectedLineCount;
+    const sharedBlockingIssues = state.ambiguous.filter(issue =>
+      issue.type !== 'dense_physical_wrapping'
+    );
+    const indentationGeometryReady = completeSafeMatching &&
+      sharedBlockingIssues.length === 0;
+    const stanzaGeometryReady = indentationGeometryReady &&
+      !hasDensePhysicalWrapping;
+    const geometryReady = stanzaGeometryReady && indentationGeometryReady;
     return {
       text_id: state.block.textId,
       pages: state.block.pages,
       block_index: state.block.blockIndex,
       status: geometryReady ? 'ready' : 'manual_review',
       geometry_ready: geometryReady,
+      stanza_geometry_ready: stanzaGeometryReady,
+      indentation_geometry_ready: indentationGeometryReady,
       lines: sortedMatches,
       observed_boundaries: observedBoundaries,
       observed_indentation: sortedMatches.map(line =>

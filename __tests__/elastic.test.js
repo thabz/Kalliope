@@ -411,7 +411,7 @@ describe('Elasticsearch build-static step', () => {
     ]);
   });
 
-  test('indexes an anthology text only under its author placement', () => {
+  test('indexes an anthology text once with its author and source publication', () => {
     const sourcePoet = { id: 'anthology', name: { fullname: 'Antologi' } };
     const author = { id: 'author', name: { fullname: 'Forfatter' } };
     const sourceWork = {
@@ -423,6 +423,7 @@ describe('Elasticsearch build-static step', () => {
       id: 'antologier',
       title: 'Tekster i andre udgivelser',
       virtualType: 'anthology',
+      textIds: ['anthology-text'],
       sourceFiles: [
         'fdirs/author/info.xml',
         'fdirs/anthology/info.xml',
@@ -444,24 +445,11 @@ describe('Elasticsearch build-static step', () => {
           {
             id: 'anthology-text',
             poetId: 'author',
-            workId: 'antologier',
-            placement: 'author',
-            sourcePoetId: 'anthology',
-            sourceWorkId: '1872',
-            sourceTextId: 'anthology-text',
-          },
-        ],
-        [
-          'anthology-texta',
-          {
-            id: 'anthology-texta',
-            poetId: 'anthology',
             workId: '1872',
-            placement: 'publication',
+            placement: 'canonical',
             sourcePoetId: 'anthology',
             sourceWorkId: '1872',
             sourceTextId: 'anthology-text',
-            indexable: false,
           },
         ],
       ]),
@@ -499,10 +487,11 @@ describe('Elasticsearch build-static step', () => {
         id: 'anthology-text',
         data: expect.objectContaining({
           result_type: 'text',
+          index_entry: 'author-antologier',
           poet: author,
           work: expect.objectContaining({
-            id: 'antologier',
-            virtualType: 'anthology',
+            id: '1872',
+            title: 'Antologien',
           }),
         }),
       }),
@@ -528,6 +517,23 @@ describe('Elasticsearch build-static step', () => {
       'poet-second',
     ]);
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('removes a deleted last work from search without an info.xml edit', async () => {
+    await update_elasticsearch({
+      ...collected,
+      works: new Map(),
+      changedWorkPoetIds: new Set(['poet']),
+    });
+    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
+    expect(bulkDocumentIds()).toEqual(['poet-poet']);
+    expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
+  });
+
+  test('reindexes all remaining works when automatic discovery changes membership', async () => {
+    await update_elasticsearch({ ...collected, changedWorkPoetIds: new Set(['poet']) });
+    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
+    expect(bulkDocumentIds()).toEqual(['poet-poet', 'poet-first', 'poet-second']);
   });
 
   test('rebuilds the full index when the index is missing', async () => {

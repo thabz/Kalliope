@@ -68,6 +68,7 @@ end
 @facsimile_page = nil
 @lang = nil
 @text_author = nil
+@ignore_tests = nil
 
 def printHeader()
     if @header_printed
@@ -143,7 +144,7 @@ def printPoem()
   if @initialtype == 'poetry' and (@firstline.nil? || @firstline.strip.length == 0)
       abort "FEJL: Digtet »#{@title}« mangler førstelinje"
   end
-  poemid = @poemid || "#{@poetid}#{@date}#{'%02d' % @poemcount}"
+  poemid = @poemid || "#{@text_author || @poetid}#{@date}#{'%02d' % @poemcount}"
   variant = ''
   if @variant
       variant = " variant=\"#{@variant}\""
@@ -155,8 +156,12 @@ def printPoem()
   if @text_author
       author = " author=\"#{@text_author}\""
   end
+  ignore_tests = ''
+  if @ignore_tests
+      ignore_tests = " ignore-tests=\"#{@ignore_tests}\""
+  end
 
-  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}>"
+  puts "<text id=\"#{poemid}\"#{author}#{variant}#{lang}#{ignore_tests}>"
   puts "<head>"
   if @title
       puts "  <title>#{@title}</title>"
@@ -251,6 +256,7 @@ def printPoem()
   @variant = nil
   @lang = nil
   @text_author = nil
+  @ignore_tests = nil
   @todos = []
   @credits = nil
   @facsimile_page = nil
@@ -317,6 +323,13 @@ File.readlines(ARGV[0]).each do |line|
     else
       printPendingSection()
     end
+  end
+  if line.start_with?('IGNORER')
+    if @state == 'INBODY'
+      printPoem()
+    end
+    @state = 'NONE'
+    next
   end
   if line.start_with?('SLUT') and not line.start_with?('SLUTSEKTION')
     ensureSectionsClosed()
@@ -488,10 +501,13 @@ File.readlines(ARGV[0]).each do |line|
       @variant = line[8..-1].strip
     elsif line.start_with?("CREDITS:")
       @credits = line[8..-1].strip
+    elsif line.start_with?("IGNORE-TESTS:")
+      @ignore_tests = line[13..-1].strip
     elsif line.start_with?("TODO:")
       @todos.push(line[5..-1].strip)
     elsif line.start_with?("TYPE:")
       @initialtype = line[5..-1].strip
+      abort "FEJL: Ukendt TYPE: #{@initialtype}" unless %w[poetry prose epigraph].include?(@initialtype)
       @type = @initialtype
     elsif line =~ /^[A-Z]*:/
       abort "Unknown header-line: #{line}"
@@ -503,6 +519,7 @@ File.readlines(ARGV[0]).each do |line|
       if line.start_with?("TYPE:")
           @body.push("</#{@type}>")
           @type = line[5..-1].strip
+          abort "FEJL: Ukendt TYPE: #{@type}" unless %w[poetry prose epigraph].include?(@type)
           @body.push("<#{@type}>")
       else
           @body.push(line)

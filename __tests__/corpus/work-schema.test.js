@@ -19,6 +19,64 @@ describe('kalliopework RELAX NG schema', () => {
     { input: xml, encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] },
   );
 
+  const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
+
+  it('accepts a positive sort-order and rejects non-positive values', () => {
+    expect(() => validate(sourceWork('').replace('<kalliopework ', '<kalliopework sort-order="10" '))).not.toThrow();
+    for (const value of ['0', '-1', '1.5', 'abc']) {
+      expect(() => validate(sourceWork('').replace('<kalliopework ', `<kalliopework sort-order="${value}" `))).toThrow();
+    }
+  });
+
+  it('accepts documented quotation margins', () => {
+    expect(() => validate(poetryWork(
+      '<blockquote left="10%" right="0">Citat med <i>kursiv</i>.</blockquote>',
+    ))).not.toThrow();
+  });
+
+  it('accepts overlines containing letters, emphasis and source page markers', () => {
+    expect(() => validate(poetryWork(
+      'h<o>a</o> ſøn th<o><i>m</i><pb facs="006.jpg"/></o>',
+    ))).not.toThrow();
+  });
+
+  it('validates structured sources, repeated people and legacy sources', () => {
+    for (const source of [
+      '<source><title>Digte</title></source>',
+      '<source><author realname="Navn">Pseudonym</author><title>Digte</title></source>',
+      '<source><author id="digter" realname="Navn">Pseudonym</author><title>Digte</title></source>',
+      '<source><title>Antologi</title><editor type="editor">A</editor><editor>B</editor></source>',
+      '<source><author id="digter">Navn</author><editor>A</editor><title>Digte</title><editor id="anden">B</editor><translator>C</translator><edition>2. udgave</edition><volume>1</volume><place>København</place><publisher>Forlag</publisher><printer>Trykkeri</printer><year>[1900]</year><identifiers><kb-alma>123</kb-alma></identifiers></source>',
+      '<source>Fritekst <i>titel</i>.</source>', '<source pages="1-2"/>',
+    ]) expect(() => validate(sourceWork(source))).not.toThrow();
+  });
+
+  it.each([
+    '<source><title/></source>', '<source><title>  </title></source>',
+    '<source><editor>A</editor></source>',
+    '<source><author realname="">Pseudonym</author><title>Digte</title></source>',
+    '<source><author realname="   ">Pseudonym</author><title>Digte</title></source>',
+    '<source><editor realname="Navn">Pseudonym</editor><title>Digte</title></source>',
+    '<source><translator realname="Navn">Pseudonym</translator><title>Digte</title></source>',
+    '<source>Fritekst<title>Digte</title></source>',
+    '<source><title>Digte</title><year/></source>',
+    '<source><title>Digte</title><title>Digte</title></source>',
+    '<source><title>Digte</title><editor id="">A</editor></source>',
+    '<source><title>Digte</title><editor type="edition">A</editor></source>',
+    '<source><title>Digte</title><editor type="">A</editor></source>',
+    '<source><title>Digte</title><translator type="editor">A</translator></source>',
+  ])('rejects malformed bibliographic sources: %s', source => {
+    expect(() => validate(sourceWork(source))).toThrow();
+  });
+
+  it('rejects hr elements in source poetry and prose', () => {
+    expect(() => validate(poetryWork('<hr/>Første linje'))).toThrow();
+    expect(() => validate(poetryWork('Første linje').replace(
+      '<poetry>Første linje</poetry>',
+      '<prose><hr/>Første linje</prose>',
+    ))).toThrow();
+  });
+
   it('requires head notes to use the notes wrapper', () => {
     const wrappedTextNote = poetryWork(
       'Første linje',
@@ -351,14 +409,14 @@ describe('kalliopework RELAX NG schema', () => {
     }).toThrow();
   });
 
-  it('accepts quote max-width and rejects quote styling attributes', () => {
+  it('accepts epigraph max-width and rejects epigraph styling attributes', () => {
     const baseXml = `
       <kalliopework id="1900" author="digter">
         <workhead><title>Digte</title><year>1900</year></workhead>
         <workbody>
           <text id="digter1900a">
             <head><firstline>Første linje</firstline></head>
-            <body><quote max-width="70%" lang="de">Erste Zeile</quote></body>
+            <body><epigraph max-width="70%" lang="de">Erste Zeile</epigraph></body>
           </text>
         </workbody>
       </kalliopework>
@@ -384,6 +442,45 @@ describe('kalliopework RELAX NG schema', () => {
     }).toThrow();
   });
 
+  it('accepts multiple epigraphs before, within and after the main text', () => {
+    const xml = poetryWork('Verslinje').replace(
+      '<poetry>Verslinje</poetry>',
+      '<epigraph>Første motto</epigraph><epigraph>Andet motto</epigraph>' +
+      '<poetry>Første scene</poetry><epigraph>Scenens motto</epigraph>' +
+      '<prose>Prosa</prose><poetry>Sidste scene</poetry>' +
+      '<epigraph>Afsluttende motto</epigraph>',
+    );
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it('rejects the retired quotation element', () => {
+    const xml = poetryWork('Verslinje').replace(
+      '<poetry>Verslinje</poetry>', '<quote>Gammelt motto</quote>',
+    );
+
+    expect(() => validate(xml)).toThrow();
+  });
+
+  it.each(['poetry', 'prose', 'epigraph'])('accepts a language on %s blocks with inline language overrides', blockName => {
+    const xml = `
+      <kalliopework id="1900" author="digter">
+        <workhead><title>Tekster</title><year>1900</year></workhead>
+        <workbody>
+          <text id="digter1900a">
+            <head><title>Latin og dansk</title></head>
+            <body>
+              <${blockName} lang="la">Nota. Inter omnes bestias.<footnote><span lang="da">En dansk forklaring.</span></footnote></${blockName}>
+              <${blockName}>Dansk tekst med <span lang="la">Deo gratias.</span></${blockName}>
+            </body>
+          </text>
+        </workbody>
+      </kalliopework>
+    `;
+
+    expect(() => validate(xml)).not.toThrow();
+  });
+
   it('rejects unsupported blocks directly in a text body', () => {
     const validXml = `
       <kalliopework id="1900" author="digter">
@@ -391,7 +488,7 @@ describe('kalliopework RELAX NG schema', () => {
         <workbody>
           <text id="digter1900a">
             <head><firstline>Første linje</firstline></head>
-            <body><prose>Første afsnit</prose><poetry>Første verslinje</poetry><quote>Citat</quote></body>
+            <body><prose>Første afsnit</prose><poetry>Første verslinje</poetry><epigraph>Citat</epigraph></body>
           </text>
         </workbody>
       </kalliopework>

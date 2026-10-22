@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1883" author="antologierdk" status="complete" type="poetry">
+<kalliopework id="1883" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>Evropæiske Digte</title>
   <year>1883</year>
@@ -7,9 +7,15 @@
     <note>Udgivne af Alfred Ipsen. Hvor intet oversætternavn er anført i kilden, er oversættelsen foretaget af udgiveren.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1883-p1.jpg">Titelbladet til <i>Evropæiske Digte</i> (1883): „Evropæiske Digte / udgivne af / Alfred Ipsen. / Kjøbenhavn. / Andr. Schous Forlag. / Trykt hos Nielsen &amp; Lydiche. / 1883.“</picture>
+    <picture type="titlepage" src="1883-p1.jpg"><transcription>Evropæiske Digte / udgivne af / Alfred Ipsen. / Kjøbenhavn. / Andr. Schous Forlag. / Trykt hos Nielsen &amp; Lydiche. / 1883.</transcription></picture>
   </pictures>
-  <source facsimile="11530800013E_color" facsimile-pages-num="214" facsimile-pages-offset="18">Alfred Ipsen (udg.): <i>Evropæiske Digte</i>, Andr. Schous Forlag, Kjøbenhavn, 1883.</source>
+  <source facsimile="11530800013E_color" facsimile-pages-num="214" facsimile-pages-offset="18">
+    <title>Evropæiske Digte</title>
+    <editor id="ipsen" type="editor">Alfred Ipsen</editor>
+    <place>Kjøbenhavn</place>
+    <publisher>Andr. Schous Forlag</publisher>
+    <year>1883</year>
+  </source>
   <pagebreaks/>
 </workhead>
 <workbody>
@@ -3143,10 +3149,10 @@ det er Kugler og Krudt, det er det, jeg behøver.
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote lang="it">
+<epigraph lang="it">
 Oh primavera! gioventù dell' anno!
 Oh gioventù, primavera della vita!
-</quote>
+</epigraph>
 <poetry>
 I mine Breve fra Ungdommens Aar,
 hvilken Duft, hvilke Toner i Møde mig slaar
@@ -5219,10 +5225,10 @@ mod blege Død og golde Grav jeg ser dig
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
-<quote>
+<epigraph>
 <span lang="el">Ὃν οἱ θεοὶ φιλοῦσιν ἀποθνῄσκει νέος.</span>
 <span>(Hvem Guderne elske, dør ung.) Menandros.</span>
-</quote>
+</epigraph>
 <poetry>
 Elskov blev født som Dødens Tvillingbroder
       af Skjæbnen, deres Moder.

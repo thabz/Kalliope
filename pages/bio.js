@@ -4,6 +4,7 @@ import { translatePlace } from '../common/place-names.js';
 import _ from '../common/translations.js';
 import { poetCrumbsWithTitle } from '../components/breadcrumbs.js';
 import ExternalIdentifierLinks from '../components/external-identifier-links.js';
+import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import {
   extractYear,
   formattedAge,
@@ -228,6 +229,19 @@ const BiographySources = ({ sources, lang }) => {
   );
 };
 
+export const BiographyContent = ({ biography, lang }) => (
+  <FootnoteContainer>
+    <TextContent
+      contentHtml={biography.content_html}
+      contentLang={biography.content_lang}
+      lang={lang}
+      className="bio-text"
+    />
+    <FootnoteList />
+    <BiographySources sources={biography.sources} lang={lang} />
+  </FootnoteContainer>
+);
+
 const BioPage = (props) => {
   const {
     lang,
@@ -275,12 +289,7 @@ const BioPage = (props) => {
         <div style={{ lineHeight: '1.6' }}>
           {biographies.map((biography, index) => (
             <div className="biography" key={index}>
-              <TextContent
-                contentHtml={biography.content_html}
-                contentLang={biography.content_lang}
-                className="bio-text"
-              />
-              <BiographySources sources={biography.sources} lang={lang} />
+              <BiographyContent biography={biography} lang={lang} />
             </div>
           ))}
           <Timeline timeline={timeline} lang={lang} />

@@ -392,10 +392,13 @@ Gøge, Nattergale!
   <title>Bøgernes Verden</title>
   <firstline>Bøgernes Verden er som stille Gemmer</firstline>
   <notes>
-    <note>Stammer fra <i>Limfjords-Sange</i> (1925) pp. 29-30.</note>
     <note>Skrevet til indvielsen af Holstebros nye biblioteksbygning.</note>
     <note>Først offentliggjort november 1923. Også trykt i ,,Den nye Litteratur'', 26/1 1924.</note>
   </notes>
+  <source pages="29-30">
+    <title>Limfjords-Sange</title>
+    <year>1925</year>
+  </source>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1131,6 +1134,9 @@ saa jer Aftenstund faar Guld i Mund.
   <title>Til Kai Hoffmann</title>
   <subtitle>Paa 50 Aars Fødselsdagen den 31. August 1924.</subtitle>
   <firstline>Ensom du sad ved din luftige Harpe</firstline>
+  <dates>
+    <event>1924-08-31</event>
+  </dates>
   <quality>korrektur1</quality>
 </head>
 <body>

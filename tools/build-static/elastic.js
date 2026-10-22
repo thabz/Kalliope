@@ -13,8 +13,8 @@ import {
 } from './xml.js';
 import elasticSearchClient from '../libs/elasticsearch-client.js';
 import { mapLimit } from './concurrency.js';
-import { textsForWork, worksForPoet } from './anthologies.js';
-import { sourceWorkFilename } from './work-cache.js';
+import { isAnthologyText, textsForWork, worksForPoet } from './anthologies.js';
+import { sourceWorkFilename, sourceWorkKey } from './work-cache.js';
 import { canonicalKeywordId } from './keyword-taxonomy.js';
 
 const headingText = html =>
@@ -99,8 +99,8 @@ const buildElasticsearchTextEntries = (collected, poetIds = null) => {
   return entries.sort((a, b) => a.textEntryKey.localeCompare(b.textEntryKey));
 };
 
-const getChangedElasticsearchTextEntries = textEntries => {
-  const modifiedPoetIds = new Set();
+const getChangedElasticsearchTextEntries = (textEntries, changedPoetIds = []) => {
+  const modifiedPoetIds = new Set(changedPoetIds);
   const modifiedTextEntryKeys = new Set();
 
   textEntries.forEach(entry => {
@@ -183,6 +183,7 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
             id: textEntryKey,
             data: {
               result_type: 'work',
+              index_entry: textEntryKey,
               poet,
               work: workData,
             },
@@ -251,15 +252,26 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
         .join(' ')
         .replace(/<.*?>/g, ' '),
     };
+    const textWork = workMeta.virtualType === 'anthology'
+      ? collected.works.get(sourceWorkKey(collected.texts.get(textId)))
+      : workMeta;
     const data = {
       poet,
-      work: workData,
+      work: {
+        id: textWork.id,
+        poet_id: textWork.poet_id,
+        title: textWork.title,
+        year: textWork.year,
+        status: textWork.status,
+        type: textWork.type,
+      },
       text: textData,
     };
     documents.push({
       id: textId,
       data: {
         result_type: 'text',
+        index_entry: textEntryKey,
         ...data,
       },
     });
@@ -290,7 +302,7 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
         const textMeta = collected.texts.get(textId);
         if (
           textMeta != null &&
-          textMeta.placement === 'author' &&
+          isAnthologyText(textMeta.poetId, textMeta.sourcePoetId) &&
           textMeta.sourcePoetId === poetId &&
           textMeta.sourceWorkId === workId
         ) {
@@ -437,9 +449,12 @@ const update_elasticsearch = async (collected, options = {}) => {
     const {
       modifiedPoetIds,
       entries: changedTextEntries,
-    } = getChangedElasticsearchTextEntries(textEntries);
+    } = getChangedElasticsearchTextEntries(textEntries, new Set([
+      ...(collected.changedWorkPoetIds ?? []),
+      ...(collected.poetMetadataDirty ?? []),
+    ]));
 
-    if (changedTextEntries.length === 0) {
+    if (changedTextEntries.length === 0 && modifiedPoetIds.size === 0) {
       console.log('Skipping Elasticsearch update; no changed text entries');
       return;
     }

@@ -18,6 +18,7 @@ import {
 import { poetName } from './formatting.js';
 import { imageSizeSync } from './image.js';
 import { mapLimit } from './concurrency.js';
+import { escapeXml, parseSourceBibliography } from './source.js';
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -75,7 +76,7 @@ const get_local_picture_content = (pictureNode) => {
     };
   }
   return {
-    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers'])),
+    description: safeTrim(safeGetInnerXMLWithout(pictureNode, ['identifiers', 'transcription'])),
     note: null,
   };
 };
@@ -195,6 +196,12 @@ const titleText = title => {
     `<content>${titleWithoutNotes.title}</content>`,
     'text/xml'
   );
+  for (const overline of getElementsByTagName(document, 'o')) {
+    const letters = safeGetText(overline)
+      .replace(/\S/gu, '$&\u0304')
+      .normalize('NFC');
+    overline.parentNode.replaceChild(document.createTextNode(letters), overline);
+  }
   return safeGetText(document.documentElement);
 };
 
@@ -209,16 +216,20 @@ const effectiveTextTitles = ({ firstline, title, indextitle, linktitle }) => ({
   linkTitle: linktitle ?? indextitle ?? title ?? firstline,
 });
 
-const extractSubtitles = (head, tag = 'subtitle', collected) => {
+const extractSubtitles = (head, tag = 'subtitle', collected, fragmentContext = {}) => {
   let subtitles = null;
   const subtitle = getElementByTagName(head, tag);
   if (subtitle && getElementsByTagName(subtitle, 'line').length > 0) {
     subtitles = getElementsByTagName(subtitle, 'line').map(s => {
-      return htmlToXml(safeGetInnerXML(s), collected, true);
+      return htmlToXml(safeGetInnerXML(s), collected, true, {
+        ...fragmentContext, blockType: tag,
+      });
     });
   } else if (subtitle) {
     const subtitleString = safeGetInnerXML(subtitle);
-    subtitles = [htmlToXml(subtitleString, collected, true)];
+    subtitles = [htmlToXml(subtitleString, collected, true, {
+      ...fragmentContext, blockType: tag,
+    })];
   }
   return subtitles;
 };
@@ -238,6 +249,10 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
   const identifiers = getIdentifiers(pictureNode, identifierAllowlist.picture);
   if (src != null) {
     const { description, note } = get_local_picture_content(pictureNode);
+    const transcriptionNode = getChildByTagName(pictureNode, 'transcription');
+    const transcription = transcriptionNode == null
+      ? null
+      : transcriptionNode.textContent.trim();
     const lang = safeGetAttr(pictureNode, 'lang') || 'da';
     if (src.charAt(0) !== '/') {
       src = srcPrefix + '/' + src;
@@ -253,6 +268,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       content_lang: 'da',
       content_html: htmlToXml(description, collected),
       note_html: htmlToXml(note, collected),
+      transcription,
       identifiers,
       primary,
     };
@@ -288,12 +304,9 @@ const getNoteType = note => {
 };
 
 // context contains keys for any `${var}` that's to be replaced in the note texts.
-const get_notes = (head, collected, context = {}) => {
+const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
   const notes = getChildByTagName(head, 'notes');
-  if (notes == null) {
-    return [];
-  }
-  return getChildrenByTagName(notes, 'note').map(note => {
+  const resultNotes = (getChildrenByTagName(notes, 'note') ?? []).map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
     const type = getNoteType(note);
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
@@ -307,7 +320,9 @@ const get_notes = (head, collected, context = {}) => {
       content_lang: lang,
       content_html: htmlToXml(
         replaceContextPlaceholders(safeGetInnerXML(note)),
-        collected
+        collected,
+        false,
+        { ...fragmentContext, blockType: 'note' },
       ),
     };
     if (unknownOriginalByPoetId != null) {
@@ -316,6 +331,21 @@ const get_notes = (head, collected, context = {}) => {
     }
     return result;
   });
+  if (head?.tagName === 'workhead') {
+    const pseudonyms = new Set(getChildrenByTagName(head, 'source').flatMap(source =>
+      (parseSourceBibliography(source)?.authors ?? [])
+        .filter(author => author.realname != null)
+        .map(author => author.name)
+    ));
+    for (const pseudonym of pseudonyms) {
+      resultNotes.push({
+        type: null,
+        content_lang: 'da',
+        content_html: htmlToXml(`Udgivet under pseudonymet ${escapeXml(pseudonym)}.`, collected),
+      });
+    }
+  }
+  return resultNotes;
 };
 
 const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
@@ -354,5 +384,6 @@ export {
   get_notes,
   get_pictures,
   get_picture,
+  get_local_picture_content,
   validate_picture_attrs,
 };

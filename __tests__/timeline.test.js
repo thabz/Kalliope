@@ -6,6 +6,47 @@ import {
 } from '../tools/build-static/timeline.js';
 
 describe('timeline helpers', () => {
+  it('preserves publication events when life dates are undocumented', async () => {
+    const poet = {
+      id: 'test-undocumented-dates',
+      type: 'poet',
+      name: { lastname: 'Forfatter' },
+      period: null,
+    };
+    const works = new Map([
+      [`${poet.id}/1671`, { title: 'Første værk', year: '1671', published: '1671' }],
+      [`${poet.id}/1672`, { title: 'Andet værk', year: '1672', published: '1672' }],
+    ]);
+    const timeline = await buildPoetTimelineJson(poet, {
+      workids: new Map([[poet.id, ['1671', '1672']]]),
+      works,
+      timeline: [],
+    });
+
+    expect(timeline.map(item => item.content_html[0][0])).toEqual([
+      'Forfatter: Første værk.',
+      'Forfatter: Andet værk.',
+    ]);
+  });
+
+  it.each([null, {}])('keeps publication events when life dates are unknown (%p)', async period => {
+    const poet = {
+      id: 'test-unknown-dates', type: 'poet', name: { lastname: 'Digter' }, period,
+    };
+    const works = [1840, 1841].map(year => [
+      `${poet.id}/${year}`,
+      { year, published: `${year}-01-01`, title: `Værk ${year}`, has_content: false },
+    ]);
+    const timeline = await buildPoetTimelineJson(poet, {
+      workids: new Map([[poet.id, ['1840', '1841']]]),
+      works: new Map(works), timeline: [],
+    });
+    expect(timeline.map(item => item.date)).toEqual(['1840-01-01', '1841-01-01']);
+    expect(timeline.map(item => item.content_html[0][0])).toEqual([
+      'Digter: Værk 1840.', 'Digter: Værk 1841.',
+    ]);
+  });
+
   it('renders baptism as baptism when no birth date is known', async () => {
     const poet = {
       id: 'test-baptized',

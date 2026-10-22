@@ -518,6 +518,10 @@ at Ungdomskraft dør i Frost ej ud -!
   <title>Fjeldvandet</title>
   <firstline>Inde bag Fjeldenes store</firstline>
   <source pages="25-27"/>
+  <places>
+    <place ref="svartediket" relation="subject" primary="true"/>
+    <place ref="bergen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -684,6 +688,10 @@ Og gennem Taagerne skinner
   <title>Til Løvstakkens Stjerne</title>
   <firstline>I de lyse Nætter</firstline>
   <source pages="32-33"/>
+  <places>
+    <place ref="lovstakken" relation="subject" primary="true"/>
+    <place ref="bergen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -733,6 +741,9 @@ Dødens Blik tør møde -!
   <title>Farvel til Bergen</title>
   <firstline>Du kære, gamle Hansestad</firstline>
   <source pages="34"/>
+  <places>
+    <place ref="bergen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -763,6 +774,9 @@ jeg sender dig, i Morgengry,
   <title>Sognefjorden</title>
   <firstline>Tung af Aartusinders Taushed</firstline>
   <source pages="35"/>
+  <places>
+    <place ref="sognefjord" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -788,6 +802,9 @@ Sognefjordsfjeldenes Gimle.
   <title>Jotunheimen</title>
   <firstline>Fjernt mod Himlens Soldis stiger</firstline>
   <source pages="36-37"/>
+  <places>
+    <place ref="jotunheimen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -827,6 +844,9 @@ men i evig Ro de finder
   <title>Paa Højfjeldet</title>
   <firstline>Jeg kender mig igen! Hid gik min Længsel</firstline>
   <source pages="38-39"/>
+  <places>
+    <place ref="jotunheimen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -874,6 +894,11 @@ Og Natten stiger taus og lys indover
   <title>Og vi vandrede vidt over stenede Ur</title>
   <firstline>Og vi vandrede vidt over stenede Ur</firstline>
   <source pages="40-42"/>
+  <places>
+    <place ref="jotunheimen" relation="setting" primary="true"/>
+    <place ref="gjende" relation="setting"/>
+    <place ref="besseggen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -956,6 +981,9 @@ Som et kølende Pust over brændende Kind
   <title>Paa Galdhøpiggen</title>
   <firstline>Et Hav af snehvide Tinder</firstline>
   <source pages="43"/>
+  <places>
+    <place ref="galdhopiggen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -988,6 +1016,10 @@ Som et kølende Pust over brændende Kind
   <title>Nedover</title>
   <firstline>Saa gaar det ned, i Spring og Løb</firstline>
   <source pages="44-46"/>
+  <places>
+    <place ref="galdhopiggen" relation="setting" primary="true"/>
+    <place ref="jotunheimen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1077,6 +1109,9 @@ ad Aare ses vi! Hils, min Ven,
   <title>Solnedgang over Tonsaasen</title>
   <firstline>Se, Solen har sænket</firstline>
   <source pages="47-49"/>
+  <places>
+    <place ref="tonsasen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1161,6 +1196,9 @@ fra Solgudens Bavn.
   <title>Mjøsen</title>
   <firstline>Det blaaner over Mjøsen</firstline>
   <source pages="50-51"/>
+  <places>
+    <place ref="mjosa" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2601,6 +2639,9 @@ skifter just Ham og samles
     <picture src="nalbandian2019030949-p2.jpg" year="1884" objid="962824" museum="smb">Arnold Böcklin: <i>Der Einsiedler</i>, 1884, olie på panel, 90 × 69 cm. Alte Nationalgalerie, Berlin.</picture>
   </pictures>
   <source pages="120-126"/>
+  <places>
+    <place ref="berlin" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

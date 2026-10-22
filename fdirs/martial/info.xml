@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="martial" country="un" lang="la" type="poet">
+<person id="martial" country="un" nationality="it" lang="la" type="poet">
   <name>
     <lastname>Martial</lastname>
     <fullname>Marcus Valerius Martialis</fullname>
@@ -14,7 +14,6 @@
     </dead>
   </period>
   <literary-periods>la-romersk-litteratur</literary-periods>
-  <works>andre</works>
   <identifiers>
     <wikidata>Q2098</wikidata>
     <wikipedia-da>Marcus Valerius Martialis</wikipedia-da>

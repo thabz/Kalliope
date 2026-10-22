@@ -23,8 +23,29 @@ const pictureProps = (picture, defaultProps) => {
   };
 };
 
-const SidebarPictures = ({ children, pictures = [], lang, ...defaultProps }) => {
-  const renderedPictures = pictures.map((picture, index) => {
+const titlepagePictures = (pictures, work) => {
+  if (work == null) {
+    return pictures;
+  }
+  const titlepageCount = pictures.filter(picture =>
+    picture.transcription != null).length;
+  let titlepageIndex = 0;
+  return pictures.map(picture => {
+    if (picture.transcription == null) {
+      return picture;
+    }
+    titlepageIndex += 1;
+    return {
+      ...picture,
+      titlepageWorkTitle: work.title,
+      titlepageWorkYear: picture.year ?? work.year,
+      titlepageOrdinal: titlepageCount > 1 ? titlepageIndex : null,
+    };
+  });
+};
+
+const SidebarPictures = ({ children, pictures = [], lang, work, ...defaultProps }) => {
+  const renderedPictures = titlepagePictures(pictures, work).map((picture, index) => {
     return (
       <Picture
         key={pictureKey(picture, index)}
@@ -65,4 +86,5 @@ const SidebarPictures = ({ children, pictures = [], lang, ...defaultProps }) => 
   );
 };
 
+export { titlepagePictures };
 export default SidebarPictures;

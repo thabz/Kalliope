@@ -5,9 +5,10 @@
   <year>1910</year>
   <pictures>
     <picture type="frontpage" src="1910-p1.jpg">Forsiden til <i>Pil og Plekter</i>.</picture>
-    <picture type="titlepage" src="1910-p2.jpg">Titelbladet til <i>Pil og Plekter</i> (1910) lyder ,,Pil og Plekter / Digte / af / P. A. Rosenberg // København / Nationale Forfatteres Forlag / 1910''</picture>
+    <picture type="titlepage" src="1910-p2.jpg"><transcription>Pil og Plekter / Digte / af / P. A. Rosenberg // København / Nationale Forfatteres Forlag / 1910</transcription></picture>
   </pictures>
   <source facsimile="11540800303A_color" facsimile-pages-num="352" facsimile-pages-offset="8">P. A. Rosenberg: <i>Pil og Plekter</i>, Nationale Forfatteres Forlag, Kbh., 1910.</source>
+  <errata status="applied" pages="[332]" facsimile-pages="340"/>
 
   <quality>korrektur1,kilde,side</quality>
 </workhead>
@@ -3803,6 +3804,9 @@ I sin Tavles Granit.
   <title>Magdalene Thoreson</title>
   <subtitle>(Ved hendes 80aarige Fødselsdag)</subtitle>
   <firstline>Naar du lader Blikket glide</firstline>
+  <dates>
+    <event>1899-06-03</event>
+  </dates>
   <source pages="187-188"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3829,7 +3833,7 @@ Baaret frem i Sang og Tale.
 Helstøbt, som i disse Tider
 Saare sjælden vel det kjendes,
 Fra de tusend trykte Sider
-Ind din Sjæl i Mindet brændes:<!-- Ind din] I din - efter errata bagerst i bogen -->
+Ind din<footnote type="errata">Ind din] I din</footnote> Sjæl i Mindet brændes:
 Dybe Blik fra milde Øjne,
 Haandfast Tryk af bløde Hænder,
 Ord, som dømmer, for at højne,
@@ -4330,6 +4334,9 @@ Han kjender Gud af mer end Navn.
   <title>Den danske Bondes Frigjørelse</title>
   <subtitle>Festprolog paa Hundredaarsdagen for Stavnsbaandets Løsning, 1888</subtitle>
   <firstline>Der gives Tider, da med Storm og Brand</firstline>
+  <dates>
+    <event>1888-06-20</event>
+  </dates>
   <source pages="210-215"/>
   <keywords>frederik7</keywords>
   <quality>korrektur1,kilde,side</quality>

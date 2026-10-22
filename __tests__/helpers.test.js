@@ -1,4 +1,5 @@
 import { htmlToXml } from '../tools/libs/helpers.js';
+import { parseXMLFragment, safeGetInnerXML } from '../tools/build-static/xml.js';
 
 const collected = {
   texts: new Map(),
@@ -10,6 +11,37 @@ const lineTexts = html => htmlToXml(html, collected).map(([line]) => line);
 
 describe('helpers', () => {
   describe('htmlToXml', () => {
+    it.each(['right', 'center'])('keeps <%s> in a footnote from aligning the prose paragraph', tag => {
+      const html = `grebes han ogsaa stærkt<footnote>En note. <${tag}>W.</${tag}></footnote>.`;
+      expect(htmlToXml(html, collected)).toEqual([
+        [html, { num: 1, html: true }],
+      ]);
+      expect(htmlToXml(`<${tag}>W.</${tag}>`, collected)).toEqual([
+        ['W.', { num: 1, [tag]: true }],
+      ]);
+    });
+
+    it.each(['center', 'right'])('preserves whole-line %s alignment after a page marker', tag => {
+      const pb = '<pb n="94" facs="105.jpg"/>';
+      expect(htmlToXml(`${pb}<nonum><${tag}>VI.</${tag}></nonum>`, collected, true)).toEqual([
+        [`${pb}VI.`, { [tag]: true, html: true }],
+      ]);
+    });
+
+    it.each(['center', 'right'])('preserves %s alignment with a trailing line break', tag => {
+      const pb = '<pb n="247" facs="252.jpg"/>';
+      expect(htmlToXml(`${pb}<${tag}><small>Humle.</small></${tag}><br/>`, collected, true)).toEqual([
+        [`${pb}<small>Humle.</small><br/>`, { num: 1, [tag]: true, html: true }],
+      ]);
+    });
+
+    it.each(['center', 'right'])('keeps adjacent %s elements valid', tag => {
+      const xml = `<${tag}>Tekst</${tag}><${tag}></${tag}>`;
+      expect(htmlToXml(xml, collected, true)).toEqual([
+        [xml, { num: 1, html: true }],
+      ]);
+    });
+
     it('removes inline XML comments', () => {
       expect(lineTexts('Foraaret <!-- section title -->')).toEqual([
         'Foraaret',
@@ -57,6 +89,32 @@ describe('helpers', () => {
       ]);
     });
 
+    it.each(['center', 'right', 'wrap', 'w'])('balances a multi-line <%s> before it reaches the client', tag => {
+      const xml = `<${tag}><w>Første linje</w><br/>\n<w>Anden linje</w></${tag}>`;
+      const lines = htmlToXml(xml, collected, true, {
+        workId: '1807', textId: 'test180701', blockType: 'poetry',
+      });
+      expect(lines.map(([fragment]) => fragment)).toEqual(tag === 'w' ? [
+        '<w><w>Første linje</w><br/></w>',
+        '<w><w>Anden linje</w></w>',
+      ] : [
+        '<w>Første linje</w><br/>',
+        '<w>Anden linje</w>',
+      ]);
+    });
+
+    it('validates prose, quotations, headings, notes and footnotes', () => {
+      const contexts = ['prose', 'epigraph', 'heading', 'note', 'footnote'];
+      contexts.forEach(blockType => {
+        expect(() => htmlToXml('<broken>Første</other>', collected, false, {
+          workId: '1807', textId: 'test180701', blockType,
+        })).toThrow(new RegExp(`værk=1807, tekst=test180701, blok=${blockType}, linje=0:`));
+      });
+      expect(lineTexts('Tekst<note>Første\nAnden</note>')).toEqual([
+        'Tekst<note>Første Anden</note>',
+      ]);
+    });
+
     it('keeps a multi-line footnote valid as one rendered line', () => {
       expect(
         lineTexts(
@@ -67,6 +125,34 @@ describe('helpers', () => {
       ).toEqual([
         'Verslinje<footnote>Første linje anden <span lang="la"><i>linje</i></span>.</footnote>',
         'Næste verslinje',
+      ]);
+    });
+
+    it.each(['note', 'footnote'])('keeps poetry inside a %s separate from the main verse lines', tag => {
+      const note = `<${tag}>Et citat: <poetry>Første citatlinje<br/>  Anden citatlinje</poetry></${tag}>`;
+      const block = parseXMLFragment(`<poetry>Verslinje${note}\nNæste verslinje</poetry>`).documentElement;
+      expect(htmlToXml(safeGetInnerXML(block), collected, true)
+        .map(([fragment]) => fragment)).toEqual([
+        `Verslinje${note}`,
+        'Næste verslinje',
+      ]);
+    });
+
+    it.each(['note', 'footnote'])('preserves verse lines, stanzas and indentation inside a multiline %s', tag => {
+      const verses = '\nFørste citatlinje\n  Anden citatlinje\n\nTredje citatlinje\n';
+      const block = parseXMLFragment(`<poetry>Verslinje<${tag}>Notens\nprosa <poetry lang="da">${verses}</poetry>\nMere prosa.</${tag}>\nNæste verslinje</poetry>`).documentElement;
+      expect(htmlToXml(safeGetInnerXML(block), collected, true)).toEqual([
+        [`Verslinje<${tag}>Notens prosa <poetry lang="da">Første citatlinje<br/>  Anden citatlinje<br/><br/>Tredje citatlinje</poetry> Mere prosa.</${tag}>`, { num: 1, html: true }],
+        ['Næste verslinje', { num: 2 }],
+      ]);
+    });
+
+    it('keeps a stanza number in a note from suppressing the main verse number', () => {
+      const note = '<footnote><poetry>\n1.\nCitatlinje\n</poetry></footnote>';
+      expect(htmlToXml(`1.\nVerslinje${note}\nNæste`, collected, true)).toEqual([
+        ['<versenum>1.</versenum>', { html: true }],
+        ['Verslinje<footnote><poetry>1.<br/>Citatlinje</poetry></footnote>', { num: 1, html: true }],
+        ['Næste', { num: 2 }],
       ]);
     });
 
@@ -86,6 +172,10 @@ describe('helpers', () => {
       expect(
         lineTexts('&lt;er røde af blodet af mænd, der dræbes,&gt;')
       ).toEqual(['&lt;er røde af blodet af mænd, der dræbes,&gt;']);
+    });
+
+    it('keeps ampersands escaped in generated XML fragments', () => {
+      expect(lineTexts('A &amp; B')).toEqual(['A &amp; B']);
     });
 
     it('renders Bible xrefs as links', () => {

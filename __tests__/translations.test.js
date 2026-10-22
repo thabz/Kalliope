@@ -39,4 +39,20 @@ describe('translations helper', () => {
       genetiveLastName: 'de Reboul',
     })).toBe('Rechercher dans les œuvres de Reboul');
   });
+
+  it.each(['fr', 'de'])('replaces repeated poet names in %s mentions introductions', lang => {
+    const introductions = [
+      'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}.',
+      'Her finder du tekster af andre forfattere, som omtaler eller henvender sig til {poetName}, samt oversættelser af digterens tekster til andre sprog.',
+    ];
+    for (const introduction of introductions) {
+      const result = _(introduction, lang, { poetName: 'Hans Hansen Nordrup' });
+      expect(result).not.toContain('{poetName}');
+      expect(result.split('Hans Hansen Nordrup')).toHaveLength(3);
+    }
+  });
+
+  it('preserves replacement characters in placeholder values', () => {
+    expect(_('{value} / {value}', 'da', { value: '$&' })).toBe('$& / $&');
+  });
 });

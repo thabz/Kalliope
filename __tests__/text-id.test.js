@@ -66,6 +66,89 @@ describe('text ids', () => {
     ]);
   });
 
+  it('rejects the section ids used in roerdam/1904a', () => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="roerdam">
+        <workbody>
+          <section id="doedens-skygger"><content/></section>
+          <section id="blandede-digte"><content/></section>
+        </workbody>
+      </kalliopework>
+    `, 'fdirs/roerdam/1904a.xml');
+
+    expect(newTextIdErrors([], parsed.texts)).toEqual([
+      expect.stringContaining('doedens-skygger skal begynde med det effektive digter-id roerdam'),
+      expect.stringContaining('blandede-digte skal begynde med det effektive digter-id roerdam'),
+    ]);
+  });
+
+  it('inherits section authors and allows a nested author override', () => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="antologierdk">
+        <workbody>
+          <section id="antologierdk2026081501">
+            <content>
+              <section id="aarestrup2026081501" author="aarestrup">
+                <content>
+                  <section><content><text id="aarestrup2026081502"/></content></section>
+                  <section id="winther2026081501" author="winther"><content/></section>
+                  <text id="oersted2026081501" author="oersted"/>
+                </content>
+              </section>
+            </content>
+          </section>
+        </workbody>
+      </kalliopework>
+    `);
+
+    expect(parsed.texts.map(({ id, poetId }) => ({ id, poetId }))).toEqual([
+      { id: 'antologierdk2026081501', poetId: 'antologierdk' },
+      { id: 'aarestrup2026081501', poetId: 'aarestrup' },
+      { id: 'aarestrup2026081502', poetId: 'aarestrup' },
+      { id: 'winther2026081501', poetId: 'winther' },
+      { id: 'oersted2026081501', poetId: 'oersted' },
+    ]);
+    expect(newTextIdErrors([], parsed.texts)).toEqual([]);
+  });
+
+  it.each([
+    ['anden2026081501', 'skal begynde'],
+    ['roerdam1904a1', 'YYYYMMDD'],
+    ['roerdam2026023001', 'ugyldige dato'],
+    ['roerdam2026081500', 'positivt løbenummer'],
+  ])('applies the text id rule to section id %s', (id, message) => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="roerdam"><workbody><section id="${id}"/></workbody></kalliopework>
+    `);
+
+    expect(newTextIdErrors([], parsed.texts)).toEqual([
+      expect.stringContaining(message),
+    ]);
+  });
+
+  it('checks sections and texts in the same id namespace', () => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="roerdam">
+        <workbody>
+          <section id="roerdam2026081501"><content><text id="roerdam2026081501"/></content></section>
+        </workbody>
+      </kalliopework>
+    `);
+
+    expect(newTextIdErrors([], parsed.texts)).toEqual([
+      expect.stringContaining('forekommer flere gange'),
+    ]);
+  });
+
+  it('preserves existing section ids when validating a revision', () => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="roerdam"><workbody><section id="gammelt-id"/></workbody></kalliopework>
+    `);
+
+    expect(parsed.texts).toHaveLength(1);
+    expect(newTextIdErrors(parsed.texts, parsed.texts)).toEqual([]);
+  });
+
   it('generates an anthology id from the work author', () => {
     const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-text-id-'));
     const corpusDirectory = path.join(directory, 'fdirs');
@@ -75,7 +158,10 @@ describe('text ids', () => {
       const filename = path.join(anthologyDirectory, 'test.xml');
       fs.writeFileSync(filename, `
         <kalliopework author="antologierdk">
-          <workbody><text id="antologierdk2026081501"/></workbody>
+          <workbody>
+            <text id="antologierdk2026081501"/>
+            <section id="antologierdk2026081503"/>
+          </workbody>
         </kalliopework>
       `);
 
@@ -83,7 +169,7 @@ describe('text ids', () => {
         corpusDirectory,
         dateStamp: '20260815',
         filename,
-      })).toBe('antologierdk2026081502');
+      })).toBe('antologierdk2026081504');
       expect(generateTextId({
         author: 'aarestrup',
         corpusDirectory,

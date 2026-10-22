@@ -2267,7 +2267,14 @@ All verldens missljud öfverrösta.
 <head>
   <title>Ifrån den tid, då dagens stjärna brinner</title>
   <firstline>Ifrån den tid, då dagens stjärna brinner</firstline>
-  <source pages="130-133">Erik Johan Stagnelius: <i>Samlade skrifter</i>, Paula Henrikson (red.), Svenska Akademien, 2013, bd. V.</source>
+  <source pages="130-133">
+    <author>Erik Johan Stagnelius</author>
+    <title>Samlade skrifter</title>
+    <editor type="editor">Paula Henrikson</editor>
+    <volume>V</volume>
+    <publisher>Svenska Akademien</publisher>
+    <year>2013</year>
+  </source>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>

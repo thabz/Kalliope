@@ -2,9 +2,7 @@
 <kalliopework id="1860-20" author="oehlenschlaeger" status="complete" type="poetry" parent="1857-1862">
 <workhead>
   <title>Poetiske Skrifter</title>
-  <subtitle>
-    <line>Tyvende Bind. Digte, Anden Deel.</line>
-  </subtitle>
+  <subtitle>Tyvende Bind. Digte, Anden Deel.</subtitle>
   <linktitle>Samlede Skrifter, 20. Bind</linktitle>
   <toctitle><num>Bind 20.</num>Digte, Anden Deel</toctitle>
   <breadcrumbtitle>Bd. 20</breadcrumbtitle>
@@ -15,7 +13,15 @@
   <pictures>
     <picture src="1860-20-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1860) lyder ,,Oehlenschlägers Digte. // Udgivne / af / F. L. Liebenberg. // Anden Deel. // Kjøbenhavn. / Forlagt af Selskabet til Udgivelse af Oehlenschlägers Skrifter. // Hovedcommissionair: Th. Lind, Store Kjøbmagergade Nr. 6. / 1860.''.</picture>
   </pictures>
-  <source facsimile="130023479606_color" facsimile-pages-num="368" facsimile-pages-offset="16">Adam Oehlenschläger: <i>Poetiske Skrifter</i>, F.L. Liebenberg (red.), Selskabet til Udgivelse af Oehlenschlägers Skrifter, Bd. 20, 1860.</source>
+  <source facsimile="130023479606_color" facsimile-pages-num="368" facsimile-pages-offset="16">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <editor>F. L. Liebenberg</editor>
+    <volume>20</volume>
+    <place>Kjøbenhavn</place>
+    <publisher>Selskabet til Udgivelse af Oehlenschlägers Skrifter</publisher>
+    <year>1860</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -917,6 +923,9 @@ Slaae Hierter, som er Venskab værd.
   <indextitle>Kongens Fødselsdag. Jan. 1810</indextitle>
   <linktitle>Kongens Fødselsdag. Jan. 1810</linktitle>
   <firstline>Glade Chor</firstline>
+  <dates>
+    <event>1810-01-28</event>
+  </dates>
   <source pages="25-26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2696,6 +2705,9 @@ I hans Hal, som paa hans Fødselsdag.
   <indextitle>Sang paa Kongens Fødselsdag. Jan. 1811</indextitle>
   <linktitle>Sang paa Kongens Fødselsdag. Jan. 1811</linktitle>
   <firstline>Nu, danske Mænd ved Egebord</firstline>
+  <dates>
+    <event>1811-01-28</event>
+  </dates>
   <source pages="76-78"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3034,6 +3046,9 @@ Og priis den gode Konning.
   <indextitle>Sang for Skydeselskabet paa tredie Juledag 1811</indextitle>
   <linktitle>Sang for Skydeselskabet paa tredie Juledag 1811</linktitle>
   <firstline>Sildigt i Riddernes dæmrende Tider</firstline>
+  <dates>
+    <event>1811-12-27</event>
+  </dates>
   <source pages="85-87"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3088,6 +3103,9 @@ For Nutidens Stierne, for Fremtidens Haab!
 <head>
   <title>Sang for samme Selskab paa samme Dag</title>
   <firstline>I fordums Tid</firstline>
+  <dates>
+    <event>1811-12-27</event>
+  </dates>
   <source pages="87-88"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5234,6 +5252,9 @@ Fordi han viser Kræfter, som Dyret?
   <title>Den 4de Juni 1815</title>
   <subtitle>I Anledning af den 3die (Fru Frederike Bruns Fødselsdag).</subtitle>
   <firstline>Hvad sørged i Gaar vi for Veiret i Dag?</firstline>
+  <dates>
+    <event>1815-06-03</event>
+  </dates>
   <source pages="141-144"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5415,6 +5436,9 @@ Han signer eders Liv, og kroner eders Dyd.
   <subtitle>ved Kong Frederik den Siettes og Dronning Maria Sophia Frederikas Kroningsfest.</subtitle>
   <toctitle>Folkesang ved samme Fest</toctitle>
   <firstline>Hvi samler sig om gamle Slot</firstline>
+  <dates>
+    <event>1815-07-31</event>
+  </dates>
   <source pages="146-148"/>
   <keywords>frederik6</keywords>
   <quality>korrektur1,kilde,side</quality>
@@ -5847,6 +5871,9 @@ Da drikke med, saa kraftig som i Dag!
   <indextitle>Sang paa vor Konges Fødselsdag. Jan. 1816</indextitle>
   <linktitle>Sang paa vor Konges Fødselsdag. Jan. 1816</linktitle>
   <firstline>I Krigens Larm, naar høit Kartovens Torden</firstline>
+  <dates>
+    <event>1816-01-28</event>
+  </dates>
   <source pages="158-159"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7901,6 +7928,12 @@ Som tør for ham stride.
   <subtitle>Ode paa Reformationens Jubelfest 1817.</subtitle>
   <toctitle>Martin Luther. Ode paa Reformationens Jubelfest 1817</toctitle>
   <firstline>Hvad bebuder i Dagbrækningens Morgenskiær</firstline>
+  <dates>
+    <event>1817-10-31</event>
+  </dates>
+  <notes>
+    <note>Begivenhedsdatoen angiver jubelfestens begyndelse. Digtets indledende kanonsalut ved daggry svarer til festens indvarsling den 31. oktober 1817, jf. <a href="https://danmarkshistorien.lex.dk/Anordning_om_Reformations_Jubelfesten%2C_19._april_1817">anordningen om reformationsjubelfesten</a>, punkt 5. Festen varede til den 2. november.</note>
+  </notes>
   <source pages="216-218"/>
   <keywords>luther</keywords>
   <quality>korrektur1,kilde,side</quality>
@@ -8065,6 +8098,9 @@ Sov sødt, du gode Kunstner, Ven og Fader!
   <indextitle>Sang ved Jubelhøitiden for Præsten Chr. Brøndsted. Sept. 1818</indextitle>
   <linktitle>Sang ved Jubelhøitiden for Præsten Chr. Brøndsted. Sept. 1818</linktitle>
   <firstline>Vil du være stærk og fri</firstline>
+  <dates>
+    <event>1818-09-30</event>
+  </dates>
   <!-- Ikke varianter af:
   oehlenschlaeger2001071004: Uddrag eller genbrug i en anden tekst, ikke en selvstændig variant.
   oehlenschlaeger20190206101: Forskellige sange med genbrugt indledning.
@@ -8694,6 +8730,9 @@ Modtag her Tak af hver en Tunge,
   <indextitle>Sang til Thorvaldsen. Den 16de Oct. 1819</indextitle>
   <linktitle>Sang til Thorvaldsen. Den 16de Oct. 1819</linktitle>
   <firstline>Herr Thorvald drog over salten Hav</firstline>
+  <dates>
+    <event>1819-10-16</event>
+  </dates>
   <pictures>
     <picture artwork="thorvaldsen/1803-jason"/>
   </pictures>
@@ -10085,6 +10124,9 @@ Det er vor Borgerære.
   <indextitle>Anders Sandøe Ørsted. Da hans Venner havde ladet ham male. Marts 1821</indextitle>
   <linktitle>Anders Sandøe Ørsted. Da hans Venner havde ladet ham male. Marts 1821</linktitle>
   <firstline>Du Jordens og Himmelens Datter</firstline>
+  <dates>
+    <event>1821-03-31</event>
+  </dates>
   <pictures>
     <picture artwork="eckersberg/as-oersted-1821"/>
     <!-- TODO: Mail SMK om dette digt, som på siden om portrættet skriver: »Eckersberg modtog betaling for portrættet den 4. april 1821 (jf. Eckersbergs dagbøger, 2009; det fremgår ikke, hvem der betalte beløbet)« ... iflg. dette digt, må det være »hans Venner«. -->
@@ -10309,6 +10351,9 @@ Gid Glæden skienke dem sin Glands!
   <subtitle>Den 11te November 1821.</subtitle>
   <toctitle>Jubelsang til Adam Vilhelm Hauch. Nov. 1821</toctitle>
   <firstline>I Kreds af Mænd at hædre Mænd</firstline>
+  <dates>
+    <event>1821-11-11</event>
+  </dates>
   <source pages="282-284"/>
   <quality>korrektur1,kilde,side</quality>
 </head>

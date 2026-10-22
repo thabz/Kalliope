@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="gruen" country="un" lang="de" type="poet">
+<person id="gruen" country="un" nationality="at" lang="de" type="poet">
   <name>
     <firstname>Anastasius</firstname>
     <lastname>Grün</lastname>
@@ -17,7 +17,6 @@
     </dead>
   </period>
   <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
-  <works>andre</works>
   <identifiers>
     <wikidata>Q79069</wikidata>
     <wikipedia-en>Count Anton Alexander von Auersperg</wikipedia-en>

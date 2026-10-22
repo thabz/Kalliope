@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="runeberg" country="un" lang="sv" type="poet">
+<person id="runeberg" country="un" nationality="fi" lang="sv" type="poet">
   <name>
     <firstname>Johan Ludvig</firstname>
     <lastname>Runeberg</lastname>
@@ -16,7 +16,6 @@
     </dead>
   </period>
   <literary-periods>sv-fi-nationalromantik</literary-periods>
-  <works>1830,1848,andre</works>
   <identifiers>
     <wikidata>Q215339</wikidata>
     <wikipedia-da>Johan Ludvig Runeberg</wikipedia-da>

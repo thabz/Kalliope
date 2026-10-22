@@ -141,6 +141,25 @@ describe('facsimile indentation geometry', () => {
     expect(result.pages[0].measurements[2].classification).toBe('unreliable');
   });
 
+  it('explains why clearance beside a drop capital is not poetic indentation', () => {
+    const lines = linesAt([100, 160, 100]);
+    lines[1].indentation_geometry_safe = false;
+    lines[1].indentation_geometry_issue = 'drop_cap_clearance';
+    const result = analyzeIndentationGeometry({
+      lines,
+      observed_indentation: [0, 1, 0],
+    });
+
+    expect(result.candidates).toEqual([
+      expect.objectContaining({
+        type: 'unreliable_indentation_geometry',
+        verse_line: 2,
+        cause: 'drop_cap_clearance',
+        reason: expect.stringContaining('begyndelseskapitæl'),
+      }),
+    ]);
+  });
+
   it('estimates independent baselines on separate pages', () => {
     const lines = [
       ...linesAt([100, 100, 140]),

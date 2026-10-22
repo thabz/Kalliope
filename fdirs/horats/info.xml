@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="horats" country="un" lang="la" type="poet">
+<person id="horats" country="un" nationality="it" lang="la" type="poet">
   <name>
     <lastname>Horats</lastname>
     <fullname>Quintus Horatius Flaccus</fullname>
@@ -27,5 +27,4 @@
     <teaterleksikon-lex-dk>Quintus_Horatius_Flaccus_Horats</teaterleksikon-lex-dk>
     <gutenberg-org>1790</gutenberg-org>
   </identifiers>
-  <works>sermones1,sermones2,epodi,carmina1,carmina2,carmina3,epistulae1,carmen,epistulae2,carmina4,arspoetica</works>
 </person>

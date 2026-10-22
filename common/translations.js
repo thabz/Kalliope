@@ -106,6 +106,16 @@ const translations = {
     'An overview of museums and collections that own artworks and portraits reproduced on Kalliope. Select a museum to see the associated images.',
   'en*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
     'Here you will find the artworks and portraits from {museumName} that are reproduced on Kalliope.',
+  'en*Her finder du de kunstværker af {poetName}, som er gengivet på Kalliope.':
+    'Here you will find the artworks by {poetName} that are reproduced on Kalliope.',
+  'en*Her finder du litterære værker og kunstværker af {poetName} på Kalliope.':
+    'Here you will find literary works and artworks by {poetName} on Kalliope.',
+  'en*Her finder du links til eksterne ressourcer om {poetName}.':
+    'Here you will find links to external resources about {poetName}.',
+  'en*Der er endnu ingen henvisninger til {poetName} på Kalliope.':
+    'There are no references to {poetName} on Kalliope yet.',
+  'en*Listen viser {genitivePoetName} værkerstitler og udgivelsesår. Teksterne er endnu ikke tilgængelige på Kalliope.':
+    'The list shows the titles and publication years of works by {poetName}. The texts are not yet available on Kalliope.',
   'en*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'A chronological overview of works by {poetName} on Kalliope. Select a work to see its contents and read the texts included in the collection.',
   'en*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
@@ -217,6 +227,16 @@ const translations = {
     'Eine Übersicht über Museen und Sammlungen, die auf Kalliope wiedergegebene Kunstwerke und Porträts besitzen. Wählen Sie ein Museum, um die zugehörigen Bilder zu sehen.',
   'de*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
     'Hier finden Sie die Kunstwerke und Porträts aus {museumName}, die auf Kalliope wiedergegeben sind.',
+  'de*Her finder du de kunstværker af {poetName}, som er gengivet på Kalliope.':
+    'Hier finden Sie die Kunstwerke von {poetName}, die auf Kalliope abgebildet sind.',
+  'de*Her finder du litterære værker og kunstværker af {poetName} på Kalliope.':
+    'Hier finden Sie literarische Werke und Kunstwerke von {poetName} auf Kalliope.',
+  'de*Her finder du links til eksterne ressourcer om {poetName}.':
+    'Hier finden Sie Links zu externen Ressourcen über {poetName}.',
+  'de*Der er endnu ingen henvisninger til {poetName} på Kalliope.':
+    'Auf Kalliope gibt es noch keine Verweise auf {poetName}.',
+  'de*Listen viser {genitivePoetName} værkerstitler og udgivelsesår. Teksterne er endnu ikke tilgængelige på Kalliope.':
+    'Die Liste zeigt die Titel und Erscheinungsjahre der Werke von {poetName}. Die Texte sind auf Kalliope noch nicht verfügbar.',
   'de*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Eine chronologische Übersicht über Werke von {poetName} auf Kalliope. Wählen Sie ein Werk, um dessen Inhalt zu sehen und die in der Sammlung vorhandenen Texte zu lesen.',
   'de*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
@@ -363,6 +383,16 @@ const translations = {
     'Un aperçu des musées et collections qui possèdent les œuvres d’art et portraits reproduits sur Kalliope. Choisissez un musée pour voir les images associées.',
   'fr*Her finder du de kunstværker og portrætter fra {museumName}, som er gengivet på Kalliope.':
     'Vous trouverez ici les œuvres d’art et les portraits de {museumName} reproduits sur Kalliope.',
+  'fr*Her finder du de kunstværker af {poetName}, som er gengivet på Kalliope.':
+    'Vous trouverez ici les œuvres d’art de {poetName} reproduites sur Kalliope.',
+  'fr*Her finder du litterære værker og kunstværker af {poetName} på Kalliope.':
+    'Vous trouverez ici les œuvres littéraires et les œuvres d’art de {poetName} sur Kalliope.',
+  'fr*Her finder du links til eksterne ressourcer om {poetName}.':
+    'Vous trouverez ici des liens vers des ressources externes sur {poetName}.',
+  'fr*Der er endnu ingen henvisninger til {poetName} på Kalliope.':
+    'Il n’y a pas encore de références à {poetName} sur Kalliope.',
+  'fr*Listen viser {genitivePoetName} værkerstitler og udgivelsesår. Teksterne er endnu ikke tilgængelige på Kalliope.':
+    'La liste présente les titres et les années de publication des œuvres de {poetName}. Les textes ne sont pas encore disponibles sur Kalliope.',
   'fr*En kronologisk oversigt over værker af {poetName} på Kalliope. Vælg et værk for at se dets indhold og læse de tekster, der findes i samlingen.':
     'Un aperçu chronologique des œuvres de {poetName} sur Kalliope. Choisissez une œuvre pour voir son contenu et lire les textes présents dans la collection.',
   'fr*En oversigt over Bibelens bøger på Kalliope. Vælg en bog for at se dens indhold og læse de tekster, der findes i samlingen.':
@@ -430,7 +460,7 @@ const _ = (danishString, lang, keys) => {
   if (keys != null) {
     for (var key in keys) {
       if (keys.hasOwnProperty(key)) {
-        translated = translated.replace('{' + key + '}', keys[key]);
+        translated = translated.replaceAll('{' + key + '}', () => keys[key]);
       }
     }
   }

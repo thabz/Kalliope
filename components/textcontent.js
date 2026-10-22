@@ -6,6 +6,45 @@ import { Footnote } from './footnotes.js';
 import * as Links from './links.js';
 import { DOMParser } from '@xmldom/xmldom';
 
+// Split at verse boundaries while reopening inline markup on each line.
+const citationLines = node => {
+  const splitNode = child => {
+    if (child.nodeType === 3) {
+      return child.textContent.split(/\r?\n/).map(text => [child.ownerDocument.createTextNode(text)]);
+    }
+    if (child.nodeName === 'br') {
+      return [[], []];
+    }
+    if (child.childNodes.length === 0 || ['note', 'footnote'].includes(child.nodeName)) {
+      return [[child.cloneNode(true)]];
+    }
+    return splitChildren(child).map(line => {
+      const wrapper = child.cloneNode(false);
+      line.forEach(part => wrapper.appendChild(part));
+      return [wrapper];
+    });
+  };
+  const splitChildren = parent => {
+    const lines = [[]];
+    Array.from(parent.childNodes).forEach(child => {
+      const parts = splitNode(child);
+      lines.at(-1).push(...parts[0]);
+      lines.push(...parts.slice(1));
+    });
+    return lines;
+  };
+  const lines = splitChildren(node);
+  // Newlines immediately inside the poetry tags are XML formatting.
+  const blank = line => line.every(part => part.nodeType === 3 && part.textContent.trim() === '');
+  if (node.firstChild?.nodeType === 3 && /^\r?\n/.test(node.firstChild.textContent) && blank(lines[0])) lines.shift();
+  if (node.lastChild?.nodeType === 3 && /\r?\n$/.test(node.lastChild.textContent) && blank(lines.at(-1))) lines.pop();
+  return lines.map(line => {
+    const fragment = node.ownerDocument.createDocumentFragment();
+    line.forEach(part => fragment.appendChild(part));
+    return fragment;
+  });
+};
+
 // Render xml
 const renderXmlString = (inputString) => {
   const lang = useContext(LangContext);
@@ -159,6 +198,12 @@ const renderXmlString = (inputString) => {
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
+      case 'o':
+        return (
+          <span key={keySeq++} style={{ textDecoration: 'overline' }}>
+            {handle_nodes(node.childNodes)}
+          </span>
+        );
       case 'p':
         return <p>{handle_nodes(node.childNodes)}</p>;
       case 'sup':
@@ -198,6 +243,34 @@ const renderXmlString = (inputString) => {
             {handle_nodes(node.childNodes)}
           </center>
         );
+      case 'poetry': {
+        const inNote = ['note', 'footnote'].includes(node.parentNode?.nodeName);
+        return (
+          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{
+              whiteSpace: 'pre-wrap',
+              marginInlineStart: inNote === true ? '1.5em' : undefined,
+              marginBlockStart: inNote === true ? '0.25em' : undefined,
+            }}>
+            {inNote === true ? citationLines(node).map((line, index) => (
+              <div key={index} className="note-verse-line"
+                style={{ marginInlineStart: '3em', textIndent: '-3em' }}>
+                {line.textContent.trim() === '' ? <br /> : handle_nodes(line.childNodes)}
+              </div>
+            )) : handle_nodes(node.childNodes)}
+          </div>
+        );
+      }
+      case 'epigraph':
+        return (
+          <div
+            key={keySeq++}
+            className="blockquote small"
+            lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{ maxWidth: node.hasAttribute('max-width') ? node.getAttribute('max-width') : '70%' }}>
+            {handle_nodes(node.childNodes)}
+          </div>
+        );
       case 'blockquote':
         const left = node.hasAttribute('left')
           ? node.getAttribute('left')
@@ -210,7 +283,7 @@ const renderXmlString = (inputString) => {
             key={keySeq++}
             style={{
               display: 'block',
-              position: 'absolute',
+              position: 'relative',
               margin: `0 ${right} 0 ${left}`,
             }}>
             {handle_nodes(node.childNodes)}
@@ -330,9 +403,18 @@ const renderXmlString = (inputString) => {
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
       }
       case 'footnote':
-      case 'note':
-        const noteContent = handle_nodes(node.childNodes);
-        return <Footnote key={keySeq++} text={noteContent} />;
+      case 'note': {
+        const note = node.cloneNode(true);
+        const first = note.firstChild;
+        const authorMarker = first?.nodeType === 3
+          ? first.textContent.match(/^\s*(\*+(?:\))?)\s*/)?.[1] ?? null
+          : null;
+        if (authorMarker != null) {
+          first.textContent = first.textContent.replace(/^\s*\*+(?:\))?\s*/, '');
+        }
+        const noteContent = handle_nodes(note.childNodes);
+        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} />;
+      }
       case 'sc':
         return (
           <span key={keySeq++} className="small-caps">
@@ -412,6 +494,15 @@ const TextContent = (props) => {
       const lineOptions = l.length > 1 ? l[1] : {};
       return lineOptions.displayNum != null || lineOptions.margin != null;
     }) != null;
+  const verseLineCount = contentHtml.filter((l) => {
+    const lineOptions = l.length > 1 ? l[1] : {};
+    return lineOptions.num != null;
+  }).length;
+  const indentShortPoem =
+    type === 'poetry' &&
+    showNums === false &&
+    verseLineCount > 0 &&
+    verseLineCount < 5;
 
   if (options.highlight != null) {
     const highlight = options.highlight;
@@ -454,7 +545,10 @@ const TextContent = (props) => {
       }
     }
 
-    if (lineOptions.html) {
+    if (
+      lineOptions.html === true ||
+      /&(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);/iu.test(l[0]) === true
+    ) {
       rendered = renderXmlString(l[0], lang);
     } else {
       rendered = replaceHyphens(l[0]);
@@ -478,6 +572,8 @@ const TextContent = (props) => {
     }
     if (showNums) {
       className += ' line-with-num';
+    } else if (indentShortPoem === true) {
+      className += ' short-poem-line';
     }
 
     if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
@@ -521,20 +617,20 @@ const TextContent = (props) => {
     }
   });
 
-  let quoteClassName = '';
-  if (type === 'quote') {
-    quoteClassName = 'blockquote';
+  let epigraphClassName = '';
+  if (type === 'epigraph') {
+    epigraphClassName = 'blockquote';
   }
 
   let smallClassName = '';
-  if (type === 'quote' || options.fontSize === 'small') {
+  if (type === 'epigraph' || options.fontSize === 'small') {
     smallClassName = ' small';
   }
 
   return (
     <div
       style={style}
-      className={[className, smallClassName, quoteClassName]
+      className={[className, smallClassName, epigraphClassName]
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
@@ -571,7 +667,8 @@ const TextContent = (props) => {
           vertical-align: top;
           margin-top: 0;
         }
-        :global(.line-with-num) {
+        :global(.line-with-num),
+        :global(.short-poem-line) {
           margin-left: 1.5em;
         }
         :global(.prose-paragraph) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="topelius" country="un" lang="sv" type="poet">
+<person id="topelius" country="un" nationality="fi" lang="sv" type="poet">
   <name>
     <firstname>Zacharias</firstname>
     <lastname>Topelius</lastname>
@@ -15,7 +15,6 @@
     </dead>
   </period>
   <literary-periods>sv-fi-nationalromantik</literary-periods>
-  <works>andre</works>
   <identifiers>
     <wikidata>Q139549</wikidata>
     <wikipedia-da>Zacharias Topelius</wikipedia-da>

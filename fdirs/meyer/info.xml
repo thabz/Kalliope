@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="meyer" country="un" lang="de" type="poet">
+<person id="meyer" country="un" nationality="ch" lang="de" type="poet">
   <name>
     <firstname>Conrad F.</firstname>
     <lastname>Meyer</lastname>
@@ -16,7 +16,6 @@
     </dead>
   </period>
   <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
-  <works>andre</works>
   <identifiers>
     <wikidata>Q123261</wikidata>
     <wikipedia-da>Conrad Ferdinand Meyer</wikipedia-da>

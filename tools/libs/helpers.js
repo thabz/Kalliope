@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { createHash } from 'crypto';
 import { DOMParser } from '@xmldom/xmldom';
 import * as bible from './bible-abbr.js';
 import path from 'path';
@@ -129,26 +130,62 @@ const replaceDashes = html => {
   );
 };
 
-const splitMultilineLanguageSpans = html =>
-  html.replace(
-    /<span(\s+[^>]*\blang="[^"]+"[^>]*)>([\s\S]*?)<\/span>/g,
-    (_, attributes, content) => {
-      const openingTag = `<span${attributes}>`;
-      return `${openingTag}${content.replaceAll(
-        '\n',
-        `</span>\n${openingTag}`
-      )}</span>`;
+const balanceMultilineTags = html => {
+  const openTags = [];
+  return html.replace(/<(?:"[^"]*"|'[^']*'|[^'">])*>|\n/g, token => {
+    if (token === '\n') {
+      return openTags.map(tag => `</${tag.name}>`).reverse().join('') +
+        '\n' + openTags.map(tag => tag.opening).join('');
     }
-  );
+    const closing = /^<\/([A-Za-z][\w:-]*)\s*>$/.exec(token);
+    if (closing != null) {
+      if (openTags.at(-1)?.name === closing[1]) openTags.pop();
+    } else if (!token.endsWith('/>')) {
+      const opening = /^<([A-Za-z][\w:-]*)(?:\s|>)/.exec(token);
+      if (opening?.[1] != null) openTags.push({ name: opening[1], opening: token });
+    }
+    return token;
+  });
+};
 
 const collapseMultilineNotes = html =>
   html.replace(
     /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
-    (_, tagName, attributes = '', content) =>
-      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+    (_, tagName, attributes = '', content) => {
+      // Keep note verses inside the enclosing main-text line during splitting.
+      const withVerseBreaks = content.replace(
+        /(<poetry\b[^>]*>)([\s\S]*?)(<\/poetry>)/g,
+        (_, opening, verses, closing) => opening + verses
+          .replace(/\r\n?/g, '\n')
+          .replace(/^\n|\n$/g, '')
+          .replace(/\n/g, '<br/>') + closing,
+      );
+      return `<${tagName}${attributes}>${withVerseBreaks.replace(/\s*\n\s*/g, ' ')}</${tagName}>`;
+    }
   );
 
-const htmlToXml = (html, collected, isPoetry) => {
+const validateContentHtmlFragments = (lines, context = {}) => {
+  lines.forEach(([fragment], lineIndex) => {
+    try {
+      new DOMParser({
+        onError: (level, message) => {
+          if (level === 'error') throw new Error(message);
+        },
+      }).parseFromString(
+        `<content>${fragment}</content>`, 'text/xml',
+      );
+    } catch (error) {
+      const { workId = '?', textId = '?', blockType = '?' } = context;
+      throw new Error(
+        `Ugyldigt content_html-fragment: værk=${workId}, tekst=${textId}, ` +
+        `blok=${blockType}, linje=${lineIndex}: ${JSON.stringify(fragment)} (${error.message})`,
+      );
+    }
+  });
+  return lines;
+};
+
+const htmlToXml = (html, collected, isPoetry, context) => {
   if (html == null) {
     return null;
   }
@@ -158,13 +195,6 @@ const htmlToXml = (html, collected, isPoetry) => {
     .replace(/&lt;/g, escapedLessThanPlaceholder)
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry) {
-    // Marker strofe numre
-    html = html
-      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
-      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
-      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
-  }
   html = html
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
     .replace(
@@ -176,32 +206,39 @@ const htmlToXml = (html, collected, isPoetry) => {
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   html = collapseMultilineNotes(html);
-  let decoded = splitMultilineLanguageSpans(
-    decodeXmlCharacterReferences(
-      replaceDashes(
-        html
-          .replace(/\n *(----*) *\n/g, (match, p1) => {
-            return `\n<hr width="${p1.length}"/>\n`;
-          })
-          .replace(/\n *(====*) *\n/g, (match, p1) => {
-            return `\n<hr width="${p1.length}" class="double"/>\n`;
-          })
-          .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
-            return prefix + '\u00a0'.repeat(2 * spaces.length);
-          })
-          .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
-            // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
-            return `<nonum>${p1}</nonum>`;
-          })
-          .replace(/^\n/, '')
-          .replace(/^ *(<right>.*)$/gm, '$1')
-          .replace(/^ *(<center>.*)$/gm, '$1')
-      )
+  if (isPoetry) {
+    // Marker strofenumre i hovedteksten efter sammenfoldning af noterne.
+    html = html
+      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
+      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
+      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
+  }
+  let decoded = decodeXmlCharacterReferences(
+    replaceDashes(
+      html
+        .replace(/\n *(----*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}"/>\n`;
+        })
+        .replace(/\n *(====*) *\n/g, (match, p1) => {
+          return `\n<hr width="${p1.length}" class="double"/>\n`;
+        })
+        .replace(/^((?:<pb\b[^>]*\/>)*)( +)/gm, (match, prefix, spaces) => {
+          return prefix + '\u00a0'.repeat(2 * spaces.length);
+        })
+        .replace(/^( *[_\*\- ]+ *)$/gm, (match, p1) => {
+          // <nonum> på afskillerlinjer som f.eks. "* * *" eller "___"
+          return `<nonum>${p1}</nonum>`;
+        })
+        .replace(/^\n/, '')
+        .replace(/^ *(<right>.*)$/gm, '$1')
+        .replace(/^ *(<center>.*)$/gm, '$1')
     )
   );
-  decoded = decoded
-    .replaceAll(escapedLessThanPlaceholder, '&lt;')
-    .replaceAll(escapedGreaterThanPlaceholder, '&gt;');
+  decoded = balanceMultilineTags(
+    decoded
+      .replaceAll(escapedLessThanPlaceholder, '&lt;')
+      .replaceAll(escapedGreaterThanPlaceholder, '&gt;')
+  );
 
   while (decoded.match(regexp)) {
     decoded = decoded.replace(regexp, (_, type, id) => {
@@ -300,12 +337,14 @@ const htmlToXml = (html, collected, isPoetry) => {
       options.margin = l.match(/<margin>(.*)<\/margin>/)[1];
       l = l.replace(/<margin>(.*)<\/margin>/, '');
     }
-    if (l.indexOf('<center>') > -1) {
-      l = l.replace('<center>', '').replace('</center>', '');
+    const centerLine = /^((?:<pb\b[^>]*\/>\s*)*)<center>((?:(?!<\/?center>).)*)<\/center>((?:<br\s*\/>)*)$/.exec(l);
+    if (centerLine != null) {
+      l = centerLine[1] + centerLine[2] + centerLine[3];
       options.center = true;
     }
-    if (l.indexOf('<right>') > -1) {
-      l = l.replace('<right>', '').replace('</right>', '');
+    const rightLine = /^((?:<pb\b[^>]*\/>\s*)*)<right>((?:(?!<\/?right>).)*)<\/right>((?:<br\s*\/>)*)$/.exec(l);
+    if (rightLine != null) {
+      l = rightLine[1] + rightLine[2] + rightLine[3];
       options.right = true;
     }
     if (l.indexOf('<wrap>') > -1) {
@@ -315,6 +354,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     if (l.indexOf('<hr ') > -1) {
       options.hr = true;
     }
+    l = l.replace(/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);)/gi, '&amp;');
     // Marker linjer som skal igennem XML parseren client-side.
     if (l.match(/<.*>/)) {
       options.html = true;
@@ -326,7 +366,7 @@ const htmlToXml = (html, collected, isPoetry) => {
     }
   });
 
-  return lines;
+  return validateContentHtmlFragments(lines, context);
 };
 
 const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
@@ -377,6 +417,7 @@ const buildThumbnails = async (
   options = {}
 ) => {
   const tasks = [];
+  const sourceFiles = [];
   const progress = createProgressReporter(
     `Genererede thumbnails i ${topFolder}`,
     100
@@ -407,40 +448,66 @@ const buildThumbnails = async (
         filename.endsWith('.jpg') &&
         !skipRegExps.test(filename)
       ) {
-        const hasModificationCache = isFileModifiedMethod != null;
-        const sourceModified =
-          hasModificationCache && isFileModifiedMethod(fullFilename);
-        const sourceMtime = fileModifiedTime(fullFilename);
-        CommonData.availableImageFormats.forEach((ext, i) => {
-          CommonData.availableImageWidths.forEach(width => {
-            const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-            safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-            const outputMtime = fileModifiedTime(outputfile);
-            if (
-              outputMtime == null ||
-              (hasModificationCache
-                ? sourceModified
-                : sourceMtime > outputMtime)
-            ) {
-              tasks.push(
-                limit(async () => {
-                  const result = await resizeImage(
-                    fullFilename,
-                    outputfile,
-                    width
-                  );
-                  progress.increment();
-                  return result;
-                })
-              );
-            }
-          });
-        });
+        sourceFiles.push({ fullFilename, mtimeMs: stats.mtimeMs });
       }
     });
   };
 
   handleDirRecursive(topFolder);
+  sourceFiles.sort((left, right) => {
+    const mtimeDifference = right.mtimeMs - left.mtimeMs;
+    return mtimeDifference !== 0
+      ? mtimeDifference
+      : left.fullFilename.localeCompare(right.fullFilename);
+  });
+
+  // Content receipts survive interruption independently of the global file cache.
+  // Include implementation and encoder versions so code/settings changes invalidate.
+  const digest = data => createHash('sha256').update(data).digest('hex');
+  const generator = digest(
+    fs.readFileSync(new URL(import.meta.url)) + JSON.stringify(sharp.versions)
+  );
+  safeMkdir('caches/thumbnails');
+  sourceFiles.forEach(({ fullFilename }) => {
+    const source = digest(fs.readFileSync(fullFilename));
+    CommonData.availableImageFormats.forEach(ext => {
+      CommonData.availableImageWidths.forEach(width => {
+        const outputfile = thumbnailOutputPath(fullFilename, width, ext);
+        const receiptPath = `caches/thumbnails/${digest(path.resolve(outputfile))}.json`;
+        const key = digest(JSON.stringify({ source, generator, width, ext }));
+        tasks.push(limit(async () => {
+          let receipt = null;
+          try {
+            receipt = JSON.parse(fs.readFileSync(receiptPath, 'utf8'));
+          } catch (error) {
+            if (error.code !== 'ENOENT' && error instanceof SyntaxError === false) {
+              throw error;
+            }
+          }
+          if (receipt?.key === key && fs.existsSync(outputfile) === true &&
+              receipt.output === digest(fs.readFileSync(outputfile))) {
+            return;
+          }
+          safeMkdir(path.dirname(outputfile));
+          // Keep the extension for Sharp's format selection. Rename only complete
+          // outputs; a receipt is committed only after the output is in place.
+          const temporary = `${outputfile}.tmp-${process.pid}.${ext}`;
+          const temporaryReceipt = `${receiptPath}.tmp-${process.pid}`;
+          try {
+            await resizeImage(fullFilename, temporary, width);
+            const output = digest(fs.readFileSync(temporary));
+            fs.renameSync(temporary, outputfile);
+            fs.writeFileSync(temporaryReceipt, JSON.stringify({ key, output }));
+            fs.renameSync(temporaryReceipt, receiptPath);
+          } finally {
+            fs.rmSync(temporary, { force: true });
+            fs.rmSync(temporaryReceipt, { force: true });
+          }
+          progress.increment();
+        }));
+      });
+    });
+  });
 
   await Promise.all(tasks);
   progress.finish();
@@ -457,6 +524,7 @@ export {
   writeJSON,
   writeText,
   htmlToXml,
+  validateContentHtmlFragments,
   replaceDashes,
   buildThumbnails,
   resizeImage,

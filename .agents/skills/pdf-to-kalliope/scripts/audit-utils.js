@@ -18,8 +18,51 @@ const serializeChildren = node => {
     .join('');
 };
 
+const isPoetryBlock = node => node.nodeName === 'poetry';
+
+const pageBreakKey = markup => /\bfacs="([^"]+)"/u.exec(markup)?.[1] ?? markup;
+
+const explicitPageBreaks = node => {
+  let stream = node;
+  while (stream.parentNode != null &&
+    ['body', 'note', 'footnote'].includes(stream.nodeName) === false) {
+    stream = stream.parentNode;
+  }
+  return new Set((stripNotes(serializeChildren(stream)).match(/<pb\b[^>]*\/>/gu) ?? [])
+    .map(pageBreakKey));
+};
+
+// Older texts can record a physical transition only inside an attached note.
+// Keep it in the parent stream unless that stream has its own marker for the page.
+const inheritedNotePageBreaks = note => {
+  const explicit = explicitPageBreaks(note.parentNode);
+  const serializer = new XMLSerializer();
+  return Array.from(note.getElementsByTagName('pb')).filter(pageBreak =>
+    explicit.has(pageBreakKey(serializer.serializeToString(pageBreak))) === false);
+};
+
+const serializeWithoutNoteText = node => {
+  const raw = serializeChildren(node);
+  if (/<(?:note|footnote)\b/u.test(raw) === false) return raw;
+  const explicit = explicitPageBreaks(node);
+  return raw.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    note => (note.match(/<pb\b[^>]*\/>/gu) ?? [])
+      .filter(pageBreak => explicit.has(pageBreakKey(pageBreak)) === false)
+      .join(''));
+};
+
+const serializeVerseLines = node => {
+  const serialized = serializeWithoutNoteText(node);
+  return ['note', 'footnote'].includes(node.parentNode?.nodeName)
+    ? serialized.replace(/<br\s*\/>\r?\n?/gu, '\n')
+    : serialized;
+};
+
+const stripNotes = text =>
+  text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/g, '');
+
 const normalizeLine = line =>
-  line
+  stripNotes(line)
     .replace(/<pb\b[^>]*\/>/g, '')
     .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&')
@@ -31,7 +74,7 @@ const normalizeLine = line =>
     .trim();
 
 const visibleLines = text =>
-  text
+  stripNotes(text)
     .replace(/\r\n?/g, '\n')
     .split('\n')
     .map(normalizeLine)
@@ -104,8 +147,8 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
   return `${String(Number(match[1]) - 1).padStart(match[1].length, '0')}.jpg`;
 };
 
-const splitBodyPages = body => {
-  const serialized = serializeChildren(body);
+const splitBodyPages = (body, { noteNeutral = false } = {}) => {
+  const serialized = noteNeutral ? serializeWithoutNoteText(body) : serializeChildren(body);
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
   let cursor = 0;
@@ -143,7 +186,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
     const interval = parseSimplePages(pages);
     const body = directChild(entry, 'body');
     if (body == null) continue;
-    const bodyPages = splitBodyPages(body);
+    const bodyPages = splitBodyPages(body, { noteNeutral: true });
     const pbs = Array.from(body.getElementsByTagName('pb'));
     const firstPrintedPage = interval?.label(interval.from) ?? (pages || null);
     const firstFacsimile = facsimileBeforeFirstPb(
@@ -199,7 +242,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   return rows;
 };
 
-const inventoryKey = row => `${row.text_id}:${row.printed_page}`;
+const inventoryKey = row => `${row.text_id}:${row.facsimile ?? row.printed_page}`;
 
 const auditPageInventory = ({ xml, inventory }) => {
   const actual = buildPageInventory({ xml, includeExpectedPages: false });
@@ -244,7 +287,7 @@ const auditPageInventory = ({ xml, inventory }) => {
       issues.push({ rule: 'missing-xml-page', key });
       continue;
     }
-    for (const field of ['facsimile', 'first_line', 'last_line', 'expected_transition']) {
+    for (const field of ['printed_page', 'facsimile', 'first_line', 'last_line', 'expected_transition']) {
       if ((expected[field] ?? null) !== (found[field] ?? null)) {
         issues.push({
           rule: `mismatched-${field.replaceAll('_', '-')}`,
@@ -299,6 +342,9 @@ export {
   buildPageInventory,
   directChild,
   elementChildren,
+  inheritedNotePageBreaks,
+  isPoetryBlock,
+  serializeVerseLines,
   normalizeLine,
   parseSimplePages,
   parseXml,

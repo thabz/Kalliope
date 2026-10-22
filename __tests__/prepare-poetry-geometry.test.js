@@ -38,6 +38,55 @@ const ocrLine = (text, top, left = 300) => ({
 });
 
 describe('forberedelse af helværksgeometri', () => {
+  it('maps explicit note verses separately and carries the main page into the next block', () => {
+    const nestedXml = xml.replace('Første Verslinje', `Første<footnote>Note
+<pb n="9" facs="013.jpg"/><poetry>
+Notens første vers
+    Notens andet vers
+</poetry></footnote> Verslinje`)
+      .replace('</body>', '<poetry>Et senere citat</poetry></body>');
+    const blocks = extractPoetryBlocks(nestedXml);
+    expect(blocks).toHaveLength(3);
+    expect(blocks.map(block => block.blockIndex)).toEqual([1, 2, 3]);
+    expect(blocks[0].lines.map(line => line.facsimile))
+      .toEqual(['012.jpg', '012.jpg', '012.jpg', '013.jpg']);
+    expect(blocks[1].lines.map(line => line.facsimile))
+      .toEqual(['013.jpg', '013.jpg']);
+    expect(blocks[1].lines.map(line => line.indentation)).toEqual([0, 4]);
+    expect(blocks[2].lines[0].facsimile).toBe('013.jpg');
+  });
+
+  it('maps verse lines independently of page breaks inside attached notes', () => {
+    const withNote = xml.replace('Første Verslinje',
+      'Første<footnote>Noten fortsætter<pb n="9" facs="013.jpg"/>paa næste side.</footnote> Verslinje');
+    expect(extractPoetryBlocks(withNote)).toEqual(extractPoetryBlocks(xml));
+  });
+
+  it('does not analyze bibliographic columns as verse', () => {
+    const withNote = xml.replace('Første Verslinje',
+      'Første<footnote><column>Se første udgave, 1820.<br/>Se anden udgave, 1830.</column></footnote> Verslinje');
+    expect(extractPoetryBlocks(withNote)).toEqual(extractPoetryBlocks(xml));
+  });
+
+  it('preserves a legacy page transition recorded only inside a note', () => {
+    const legacy = xml.replace('<pb n="9" facs="013.jpg"/>', '')
+      .replace('Tredje Verslinje',
+        'Tredje Verslinje<footnote>Noten<pb n="9" facs="013.jpg"/> fortsætter.</footnote>');
+    const [block] = extractPoetryBlocks(legacy);
+    expect(block.lines.map(line => line.facsimile))
+      .toEqual(['012.jpg', '012.jpg', '012.jpg', '013.jpg']);
+    expect(block.lines.map(line => line.text))
+      .toEqual(['Første Verslinje', 'Anden Verslinje', 'Tredje Verslinje', 'Fjerde Verslinje']);
+  });
+
+  it('carries a note-only transition in preceding prose into the next poem', () => {
+    const legacy = xml.replace('<poetry>',
+      '<prose>Indledning<footnote>Note<pb n="9" facs="013.jpg"/> fortsat.</footnote></prose><poetry>')
+      .replace('<pb n="9" facs="013.jpg"/>Fjerde', 'Fjerde');
+    expect(extractPoetryBlocks(legacy)[0].lines.map(line => line.facsimile))
+      .toEqual(['013.jpg', '013.jpg', '013.jpg', '013.jpg']);
+  });
+
   it('extracts page-aware verse lines without using whitespace as match text', () => {
     const [block] = extractPoetryBlocks(xml);
 
@@ -233,6 +282,51 @@ describe('forberedelse af helværksgeometri', () => {
     ]);
   });
 
+  it('marks a line displaced around a tall drop capital as unsafe indentation geometry', () => {
+    const dropCapXml = xml.replace(
+      /<poetry>[\s\S]*?<\/poetry>/u,
+      '<poetry>En første linje\nanden linje\ntredje linje</poetry>',
+    ).replace('pages="8-9"', 'pages="8"');
+    const result = preparePoetryGeometry({
+      xml: dropCapXml,
+      variantsByFacsimile: {
+        '012.jpg': [{
+          name: '012-psm3.tsv',
+          lines: [
+            { ...ocrLine('En første linje', 200, 300), height: 82 },
+            ocrLine('anden linje', 264, 385),
+            ocrLine('tredje linje', 330, 300),
+          ],
+        }],
+      },
+    });
+
+    expect(result.blocks[0].lines[1]).toEqual(expect.objectContaining({
+      indentation_geometry_safe: false,
+      indentation_geometry_issue: 'drop_cap_clearance',
+    }));
+  });
+
+  it('measures indentation from the letter after hanging opening punctuation', () => {
+    const quotedXml = xml.replace(
+      /<poetry>[\s\S]*?<\/poetry>/u,
+      '<poetry>„Det er en citeret linje</poetry>',
+    ).replace('pages="8-9"', 'pages="8"');
+    const result = preparePoetryGeometry({
+      xml: quotedXml,
+      variantsByFacsimile: {
+        '012.jpg': [{
+          name: '012-psm3.tsv',
+          lines: [ocrLine('»Det er en citeret linje', 200, 100)],
+        }],
+      },
+    });
+    const [line] = result.blocks[0].lines;
+
+    expect(line.indentation_anchor_adjustment).toBe('hanging_punctuation');
+    expect(line.anchor_left).toBeGreaterThan(line.left);
+  });
+
   it.each([
     {
       name: 'missing',
@@ -337,6 +431,8 @@ describe('forberedelse af helværksgeometri', () => {
     });
 
     expect(result.status).toBe('manual_review');
+    expect(result.blocks[0].stanza_geometry_ready).toBe(false);
+    expect(result.blocks[0].indentation_geometry_ready).toBe(true);
     expect(result.blocks[0].ambiguous).toEqual([
       expect.objectContaining({
         type: 'dense_physical_wrapping',

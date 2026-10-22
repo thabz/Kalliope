@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="mendozab" country="un" nationality="es" lang="es" type="poet">
+  <name>
+    <firstname>Diego</firstname>
+    <lastname>Mendoza de Barros</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>1601</date>
+      <!-- Marcelino Menéndez Pelayo: Bibliografía hispano-latina clásica. Horacio, tomo 3, udg. Enrique Sánchez Reyes, CSIC, 1952, noten om kaptajn Diego de Mendoza Barros efter Juan Quirós de los Ríos. -->
+      <place>Valladolid</place>
+    </dead>
+  </period>
+  <literary-periods>es-guldalder</literary-periods>
+</person>

@@ -9,7 +9,7 @@
     <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
-    <picture type="titlepage" src="1847-p1.jpg">Titelbladet lyder ,,Billeder og Sange / af / P. L. Møller. // Kjøbenhavn. / Forlagt af C. G. Iversen. / Trykt hos Bianco Luno. / 1847.''</picture>
+    <picture type="titlepage" src="1847-p1.jpg"><transcription>Billeder og Sange / af / P. L. Møller. // Kjøbenhavn. / Forlagt af C. G. Iversen. / Trykt hos Bianco Luno. / 1847.</transcription></picture>
   </pictures>
   <source facsimile="11530808155D_color" facsimile-pages-num="296" facsimile-pages-offset="6">P. L. Møller: <i>Billeder og Sange</i>, C. G. Iversen, Kbh., 1847.</source>
 </workhead>
@@ -2919,6 +2919,9 @@ Den sagte vifter til vort Chor:
   <title>Nytaarsaften</title>
   <subtitle>(1842-43)</subtitle>
   <firstline>Havet foragter den Feige, den Sløve</firstline>
+  <dates>
+    <event>1842-12-31</event>
+  </dates>
   <source pages="206-207"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4585,7 +4588,10 @@ Ved hendes Død jeg døer; og kun i Døden
 
 Ak, eied jeg saa bønlig-søde Toner,
   At Laura de tilbagedrog fra Døden,
-  Som <w>Orpheus</w> Eurydike uden <w>Sange;</w><note>Tristemque rogum sine carmine flevit.<br/>    Statius (Silv. 5.)</note>
+  Som <w>Orpheus</w> Eurydike uden <w>Sange;</w><note><poetry lang="la">
+Tristemque rogum sine carmine flevit.
+</poetry>
+    Statius (Silv. 5.)</note>
   O, hvilket Liv i ny og himmelsk Glæde!
   Men skeer det ei, gid en af disse Nætter
   Maa lukke Kilderne til mine Taarer! -
