@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1816-04-danfana" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1816-1817-danfana" sort-order="40">
+<kalliopework id="1816-04-danfana" author="tidsskrifterdk" status="complete" type="periodical" parent="1816-1817-danfana" sort-order="40">
 <workhead>
   <title>Danfana: April 1816</title>
   <breadcrumbtitle>April 1816</breadcrumbtitle>
@@ -15,7 +15,11 @@
   <pictures>
     <picture type="titlepage" primary="true" src="1816-04-danfana-p1.jpg"><transcription>Danfana. / Et Maanedskrift / af / Jens Immanuel Baggesen. / April. // Kjøbenhavn, 1816. / Hos Boas Brünnich, / Løvstræde No. 128.</transcription></picture>
   </pictures>
+  <errata status="none"/>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-23T22:02:31+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="baggesen2026102314" author="baggesen">
@@ -24,7 +28,7 @@
   <subtitle>(Danfanas Hytte-Vise.)</subtitle>
   <firstline>Fanden, fra den Tid han drat</firstline>
   <source pages="289-293" facsimile-pages="308-312"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -140,7 +144,7 @@ Og den døer ei — lever du!
   <title>Danfana-Digtene</title>
   <firstline>For ikke Læseren i Hast at falde lange</firstline>
   <source pages="293" facsimile-pages="312"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -155,8 +159,11 @@ Vi bede meget om at læses et Par Gange.
   <title>Til Skibet, som førte Virgilius over Havet</title>
   <subtitle>(Horazes tredie Ode.)</subtitle>
   <firstline>Nu! saa styre dig Cypria</firstline>
+  <notes>
+    <note unknown-original-by="horats"/>
+  </notes>
   <source pages="294-295" facsimile-pages="313-314"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -214,7 +221,7 @@ Brødehævnerens Arm Hvilen fra Lynildsving.
     <note>To ord er ulæselige i scanningen: først i verset »[ulæseligt] nu jammerlig« på s. 298 og efter »med samt en« på s. 299.</note>
   </notes>
   <source pages="296-299" facsimile-pages="315-318"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -279,7 +286,7 @@ Tager Din Færd med samt en [ulæseligt] i Forsvar!
   <title>Aandelig Naturlov</title>
   <firstline>Jo høiere dit Blik mod Himlen opad luer</firstline>
   <source pages="299" facsimile-pages="318"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -291,11 +298,11 @@ Jo dybere dit Smiil nedad paa Jorden skuer.
 
 <text id="baggesen2026102319" author="baggesen">
 <head>
-  <title>Til Frue Etatsraadinde O****,</title>
+  <title>Til Frue Etatsraadinde O****</title>
   <subtitle>paa hendes Fødselsdag.</subtitle>
   <firstline>I glimrende Sale</firstline>
   <source pages="300-302" facsimile-pages="319-321"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -369,7 +376,7 @@ Til Rose paa Kiærligheds Top!
 <head>
   <firstline>Jeg aldrig meer giør Vers, og slog man mig ihiel!</firstline>
   <source pages="302" facsimile-pages="321"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -392,7 +399,7 @@ Lad være da! Jeg giør dem dog alligevel.
   <title>Poetisk Smagdom</title>
   <firstline>Det Spillende forlyster os i Livet</firstline>
   <source pages="303-304" facsimile-pages="322-323"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -435,7 +442,7 @@ Kun Næb, og Kløer, og Vinger maa det have.
   <title>Forfatteren til sin Muse</title>
   <firstline>Stegen Alders Liv er kort, min Glut</firstline>
   <source pages="304" facsimile-pages="323"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -450,7 +457,7 @@ Læg mig Ungdom nu i hvert Minut!
   <title>Til Nordens Urania</title>
   <firstline>Tør uden ubesindigt Overmod</firstline>
   <source pages="305-306" facsimile-pages="324-325"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -499,7 +506,7 @@ Om tilsmilt ei, dog uforagtet bringe!
   <subtitle>(Med et Exemplar af min Gaade.)</subtitle>
   <firstline>Min ædle Ven! Endskiøndt til Hest</firstline>
   <source pages="307-310" facsimile-pages="326-329"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -585,7 +592,7 @@ For Resten fast til alting trænger.
   <title>Penneprøve</title>
   <firstline>Den, som mig føder, det er Gud, min Herre</firstline>
   <source pages="310" facsimile-pages="329"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -606,7 +613,7 @@ Som Engle leve herlig af, desværre
   </subtitle>
   <firstline>Hvis Musen, ofte munter, tidt bedrøvet</firstline>
   <source pages="311-312" facsimile-pages="330-331"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -640,7 +647,7 @@ Af Zephyrs Flugt, og Erycines Smiil
   <title>Til Bogen</title>
   <firstline>Velkommen da, min Søn, til Lys og Sang</firstline>
   <source pages="312" facsimile-pages="331"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -660,7 +667,7 @@ Dog heller havde seet, at denne Gang
   <subtitle>(Som Overbringer af den i Hast heftede Bog.)</subtitle>
   <firstline>Min store Skovtrold! du, der veed</firstline>
   <source pages="313-315" facsimile-pages="332-334"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -742,7 +749,7 @@ Betænk, at der er Stads derude!
     <note>Omkvædets »La la la« er gentaget som i trykket.</note>
   </notes>
   <source pages="316-317" facsimile-pages="335-336"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -793,14 +800,14 @@ La la la.
 
 <text id="baggesen2026102328" author="baggesen">
 <head>
-  <title>Til Frøken Elina O****,</title>
+  <title>Til Frøken Elina O****</title>
   <subtitle>
     <line>paa hendes Fødselsdag.</line>
     <line>(I et Exemplar af mine Digte.)</line>
   </subtitle>
   <firstline>Den bedste Faders englehulde Datter</firstline>
   <source pages="318" facsimile-pages="337"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -827,7 +834,7 @@ Dig fletter i sit Hierte til en Krands?
   <title>Epistlerne ti Fru Professorinde O******</title>
   <firstline>Hvo laaner i vor Fimbulklaffer-Bye</firstline>
   <source pages="319" facsimile-pages="338"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -847,7 +854,7 @@ Hvis ikke til den ægte, hulde, reene?
   <title>Epistlerne til mig selv</title>
   <firstline>Hvis ingen gider læst os her i Landet</firstline>
   <source pages="319" facsimile-pages="338"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -866,7 +873,7 @@ Der meer vil more dig, end meget andet!
   <subtitle>(Foran Epistlerne.)</subtitle>
   <firstline>Dig, som, Uskyldighedens Engel lig</firstline>
   <source pages="320" facsimile-pages="339"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -896,7 +903,7 @@ Som Fru Cicilia von X.
   <subtitle>(Blot heftede.)</subtitle>
   <firstline>Hvis du, hvem Livets yngste Huldgudinder</firstline>
   <source pages="321" facsimile-pages="340"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -917,7 +924,7 @@ For der at knæle paa den Dag, vi fødtes,
   <title>Til Fru Etatsraadinde B****</title>
   <firstline>Glem aldrig, naar De læser, hvad jeg siger</firstline>
   <source pages="321" facsimile-pages="340"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -937,7 +944,7 @@ En Digter, der sin Salighed kun drømmer.
   <subtitle>I et Exemplar af mine Poetiske Epistler.</subtitle>
   <firstline>Du, hvis Moderfryd, Madonnas lig</firstline>
   <source pages="322" facsimile-pages="341"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -959,7 +966,7 @@ Nu, Dit Øie seer dem, pludselig
   <title>Det indre Qvad</title>
   <firstline>Hvad er Visen, jeg at nynne lærte</firstline>
   <source pages="322" facsimile-pages="341"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -977,7 +984,7 @@ Selv min Vises Fiendes elskte mig.
   <subtitle>(Bordvise.)</subtitle>
   <firstline>Der var en Mand i Østens gamle Dage</firstline>
   <source pages="323-324" facsimile-pages="342-343"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1024,7 +1031,7 @@ Vort Chor med fyldte Glas velsigner dig.
 
 <text id="baggesen2026102337" author="baggesen">
 <head>
-  <title>Rude og Potte,</title>
+  <title>Rude og Potte</title>
   <subtitle>
     <line>eller</line>
     <line>Chrystalline og Charlotte.</line>
@@ -1032,7 +1039,7 @@ Vort Chor med fyldte Glas velsigner dig.
   </subtitle>
   <firstline>Jeg udentvivl har drømt, hvad jeg nu vil</firstline>
   <source pages="325-334" facsimile-pages="344-353"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1262,7 +1269,7 @@ Mens end i Gaar jeg saae i fulde Flor
   <title>Til Flyvedigtene</title>
   <firstline>Hiertefugle, flyver af min Lomme</firstline>
   <source pages="334" facsimile-pages="353"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1284,7 +1291,7 @@ Og forkynder mine hulde Faa
   </subtitle>
   <firstline>Nu vil man høre Skraal og Skrig</firstline>
   <source pages="335-339" facsimile-pages="354-358"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1405,7 +1412,7 @@ Og giør dig gal i hver en anden Flod!
     <note>Et ord i noten på s. 341 efter »bedre sammen end« og et ord efter »Barbarismers ellevilde« på s. 344 er delvis beskadigede i scanningen og ikke rekonstrueret.</note>
   </notes>
   <source pages="339-384" facsimile-pages="358-403"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -1835,7 +1842,7 @@ Det er med andre Ord: Naar Mørket kommer, bliver det lyst — med mindre Forfat
 <head>
   <title>Til Læserne</title>
   <source pages="384" facsimile-pages="403"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
