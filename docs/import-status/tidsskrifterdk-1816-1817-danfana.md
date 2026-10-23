@@ -55,7 +55,7 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 og *Litterariske Nyheder* (side 284–288).
 Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
 (side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
-Det giver foreløbig 85 tekstforekomster i hæfterne. Importen er ikke færdig.
+Det giver foreløbig 111 tekstforekomster i hæfterne. Importen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -149,3 +149,14 @@ individuelt afklaret mod kilden. Hæftets 88 interne sideskift er kontrolleret
 med de præcise facsimilefilnavne. Teksterne har fortsat kun korrektur1, og
 hæftet er `incomplete`; de 20 beskadigede ord i nye martsforekomster og den
 samlede slutattest mangler stadig. Variantkontrollen er gentaget.
+
+April har desuden fået 26 nye tekstforekomster på side 289–339, herunder
+*Fandens Abestreger*, Horaz-oversættelsen, *Medynksskrivelse*, *Smaa Flyvedigte*,
+*Rude og Potte* og *Til mit nattegamle Føl*. De to tidligere aprildigte er
+indflettet på deres fysiske plads i *Smaa Flyvedigte* med bevarede id’er og
+redaktionelle noter. Ni konkrete korrekturfund i disse to tekster er
+uafhængigt verificeret efter rettelse. De 28 indlagte aprilteksters 48
+geometrikandidater er individuelt afklaret; de to beskadigede ord i
+*Medynksskrivelse* er markeret og beskrevet. Den lange aprilartikel og den
+korte afsluttende meddelelse mangler endnu. Variantkontrollen gav ingen
+kandidatpar for de 28 forekomster med førstelinje. Hele testpakken består.
