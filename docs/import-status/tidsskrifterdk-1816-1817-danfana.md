@@ -55,7 +55,7 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 og *Litterariske Nyheder* (side 284–288).
 Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
 (side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
-Det giver foreløbig 111 tekstforekomster i hæfterne. Importen er ikke færdig.
+Det giver foreløbig 113 tekstforekomster i hæfterne. Importen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -76,7 +76,7 @@ har udviskede bogstaver. De eksisterende læsninger bevares med udtrykkelige
 usikkerhedsnoter; der er ikke rekonstrueret tekst fra en anden udgave.
 Farvekilde: <https://www.kb.dk/e-mat/dod/130017630319-color.pdf>.
 
-De resterende hæftetekster fra april og frem, alle relevante trykte rettelser og den samlede
+De resterende hæftetekster fra maj og frem, alle relevante trykte rettelser og den samlede
 slutkontrol mangler fortsat. Værkerne har derfor status `incomplete`, og
 PR’en er fortsat en kladde.
 
@@ -158,5 +158,14 @@ redaktionelle noter. Ni konkrete korrekturfund i disse to tekster er
 uafhængigt verificeret efter rettelse. De 28 indlagte aprilteksters 48
 geometrikandidater er individuelt afklaret; de to beskadigede ord i
 *Medynksskrivelse* er markeret og beskrevet. Den lange aprilartikel og den
-korte afsluttende meddelelse mangler endnu. Variantkontrollen gav ingen
+korte afsluttende meddelelse er også indsat og særskilt gennemgået. Variantkontrollen gav ingen
 kandidatpar for de 28 forekomster med førstelinje. Hele testpakken består.
+
+April indeholder nu alle hæftets 30 tekstposter. Den 46 sider lange
+*Kritisk Vurdering … Nøiere Betragtning* bevarer 45 hovedtekst-sideskift og
+syv i fortsatte originalnoter. Titelhierarki, 24 normale prosaindryk uden
+falske blanklinjer og de to korte slutmeddelelsers ordlyd er kontrolleret.
+Alle 83 kandidater i den ufiltrerede analyse af 76 poesiblokke er individuelt
+afklaret. To falske strofebrud ved side 374 og 375 er fjernet efter direkte
+kildekontrol. Artiklen har to beskadigede ord ud over de to i Medynksskrivelse;
+de er markeret uden rekonstruktion. Hæftet forbliver `incomplete`.
