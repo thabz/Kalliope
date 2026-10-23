@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SourceIcon from './source-icon.js';
 import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
@@ -160,6 +161,9 @@ const renderXmlString = (inputString) => {
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
+      if (/^(?:https?:)?\/\//iu.test(href) && node.textContent.trim() === '↬') {
+        return <SourceIcon key={keySeq++} href={href} lang={lang} />;
+      }
       return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');

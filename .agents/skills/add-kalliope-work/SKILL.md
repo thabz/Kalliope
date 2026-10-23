@@ -51,6 +51,17 @@ audit. Gå til konkrete XML-filer, når kilde-XML eller sammenlignelig markup er
 nødvendig. Dokumentation og validering har forrang for tilfældig ældre praksis.
 Opfind ikke et nyt format, når repositoryet allerede har en etableret løsning.
 
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
+
 ## 2. Indsæt og kontrollér værket
 
 Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:

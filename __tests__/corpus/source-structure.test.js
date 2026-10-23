@@ -115,6 +115,32 @@ describe('work source structure', () => {
     expect(issues.textFollowsNotes).toHaveLength(1);
   });
 
+  it.each(['a', 'xref'])('rejects external linked titles in notes and sources: %s', tag => {
+    const document = parseWorkXml(`<kalliopework><workhead>
+      <source><${tag} href="https://example.org/edition">Udgave</${tag}></source>
+      <note>Gendigtning af <${tag} href="https://example.org/poem">Digtet</${tag}>.</note>
+      <footnote>Jf. <${tag} href="//example.org/edition">Udgaven</${tag}>.</footnote>
+    </workhead></kalliopework>`);
+    expect(collectSourcePolicyIssues('work.xml', document).externalSourceLinks).toHaveLength(3);
+  });
+
+  it('rejects direct external literary texts even behind an icon', () => {
+    const document = parseWorkXml(`<kalliopework><workhead>
+      <note><a href="https://fr.wikisource.org/wiki/Les_Rayons_et_les_Ombres/Guitare">↬</a></note>
+    </workhead></kalliopework>`);
+    expect(collectSourcePolicyIssues('work.xml', document).externalSourceLinks).toHaveLength(1);
+  });
+
+  it('allows scan icons, internal text links, and email in notes', () => {
+    const document = parseWorkXml(`<kalliopework><workhead>
+      <note>Trykt kilde <a href="https://example.org/scan.pdf">↬</a>;
+        <xref poem="original"/> <a href="/da/text/original">Digt</a>
+        <a href="mailto:editor@example.org">Redaktør</a>.</note>
+      <!-- <note><a href="https://example.org/poem">Digt</a></note> -->
+    </workhead></kalliopework>`);
+    expect(collectSourcePolicyIssues('work.xml', document).externalSourceLinks).toEqual([]);
+  });
+
   it('allows internal source links and ignores commented-out markup', () => {
     const document = parseWorkXml(`
       <kalliopework>
@@ -122,7 +148,7 @@ describe('work source structure', () => {
         <workbody>
           <text id="poet1">
             <head>
-              <source href="https://example.org"><a poet="poet">Digter</a>: Udgave</source>
+              <source href="https://example.org"><a poet="poet">Digter</a>: <a href="/da/work/poet/1850">Udgave</a></source>
               <notes><note>Kildekritisk bemærkning.</note></notes>
             </head>
           </text>

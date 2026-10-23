@@ -2,6 +2,7 @@ import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { sourceLinkLabel } from '../common/source-link.js';
 import Source from '../components/source.js';
+import { TextInline } from '../components/textcontent.js';
 
 describe('source link labels', () => {
   it('names Det kongelige Bibliotek for all kb.dk subdomains', () => {
@@ -42,6 +43,16 @@ describe('source link labels', () => {
     expect(sourceLinkLabel('https://www.kb.dk/', 'en')).toBe(
       'Digital source at The Royal Danish Library'
     );
+  });
+
+  it('renders note source icons with the same accessible label and styling', () => {
+    const html = renderToStaticMarkup(
+      <TextInline contentHtml={[[ 'Trykt kilde <a href="https://archive.org/details/example">↬</a>' ]]} />
+    );
+    expect(html).toContain('aria-label="Digital kilde hos Internet Archive"');
+    expect(html).toMatch(/class="[^"]*source-link/);
+    expect(html).toContain('↬</a>');
+    expect(html).toContain('rel="noopener noreferrer"');
   });
 
   it('uses the provider label in the tooltip and accessible link name', () => {

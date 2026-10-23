@@ -13,6 +13,17 @@ original i en nyere udgave. Læs og følg
 samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
 `docs/xml-work-format.md` og `docs/kalliope-masterplan.md` før ændringer.
 
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
+
 ## Arbejdsgang
 
 1. Identificér oversættelsen, dens oversætter, den oplyste originalforfatter og

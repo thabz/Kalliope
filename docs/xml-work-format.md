@@ -823,7 +823,7 @@ Regler:
 Hvis teksten angiver en `href`, tilsidesætter den arvet `href`.
 
 Eksterne links fra en kilde skal ligge i `source/@href`. Et `<source>` må ikke
-indeholde `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
+indeholde eksterne `<a href="...">`; interne Kalliope-links som `<a poet="...">` er
 fortsat tilladt.
 
 Hvis `facsimile-pages` mangler, men `pages` og `facsimile-pages-offset` findes,
@@ -1258,6 +1258,17 @@ Almindelige inline-tags:
 - `<two-columns>` med `<column>`
 - `<img src="..." width="..." alt="..."/>`
 
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
+
 Links:
 
 I værkfiler må links kun bruges i `<note>` og `<footnote>`, ikke direkte i
@@ -1275,7 +1286,7 @@ typemærkede rettelser fra trykte rettelsesark. Linkmetadata som
 <note>Se <a keyword="romantikken">romantikken</a>.</note>
 <note>Se <a dict="...">ordbogsopslaget</a>.</note>
 <note>Se <a work="goethe/1819">West-oestlicher Divan</a>.</note>
-<note>Se <a href="https://...">den eksterne kilde</a>.</note>
+<note>Se den trykte kilde <a href="https://example.org/digitalisering">↬</a>.</note>
 <note>Se <a bible="bibeljohn03,16">Joh 3,16</a>.</note>
 ```
 
