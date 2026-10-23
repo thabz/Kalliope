@@ -32,7 +32,7 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle hæfter efter april er fortsat `incomplete`; deres tidligere
+Alle hæfter efter maj er fortsat `incomplete`; deres tidligere
 delkontroller nedenfor er ikke afsluttende godkendelser.
 
 Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
@@ -109,7 +109,8 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 og *Litterariske Nyheder* (side 284–288).
 Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
 (side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
-Det giver foreløbig 113 tekstforekomster i hæfterne. Importen er ikke færdig.
+Med majs syv nye tekstforekomster er der 120 tekstforekomster i hæfterne.
+Importen af hele årgangen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -130,7 +131,7 @@ har udviskede bogstaver. De eksisterende læsninger bevares med udtrykkelige
 usikkerhedsnoter; der er ikke rekonstrueret tekst fra en anden udgave.
 Farvekilde: <https://www.kb.dk/e-mat/dod/130017630319-color.pdf>.
 
-De resterende hæftetekster fra maj og frem, alle relevante trykte rettelser og den samlede
+De resterende hæftetekster fra juni og frem, de resterende relevante trykte rettelser og den samlede
 slutkontrol mangler fortsat. Værkerne har derfor status `incomplete`, og
 PR’en er fortsat en kladde.
 
@@ -270,3 +271,62 @@ facsimilet. Den lange kritikartikels verscitater er desuden genåbnet og
 strukturkontrolleret under slutreviewet. Hæftet har nu `status="complete"`,
 `korrektur1,korrektur2,kilde,side` på alle tekstposter, `<pagebreaks/>` og
 modelattest. Slutcheckpoint, tests og GitHub CI dokumenteres i PR #2012.
+
+
+## Maj 1816: afsluttende hæftekontrol
+
+Kun majfilen er genindført fra den bevarede stash. Juni- og julikladderne
+forbliver i stashen og indgår ikke i denne etape. Maj har alle ni tekstposter:
+*Thoras* to første sange samt de syv nye *Protaphium*, *Correx med en Trumf
+paa*, *Til Kiøbenhavn*, *Til Sangerinden, Minna Becker*, *Elegie*,
+*Kritisk Vurdering … Tredie og sidste Betragtning* og *Til Boreas*.
+
+De 48 manglende interne sideskift i de to eksisterende *Thora*-sange er
+indsat med konkrete facsimilefilnavne. Elegiens parentetiske undertitel er
+opdelt efter dens tre trykte linjer; det fysisk delte ord »Afskedsdigt«
+er samlet uden linjeskiftebindestreg.
+
+Rettelsen fra PDF-side 499 (trykt 480) vedrører den dobbelttrykte slutstrofe
+på side 469. Den overflødige gentagelse er udeladt og dokumenteret med
+`<footnote type="errata">∅] …</footnote>`; arket er registreret i værkhovedet.
+Majomslaget udelades fortsat efter brugerens udtrykkelige godkendelse.
+
+En udeladt verslinje i *Thoras* første sang på side 391 er indsat efter
+direkte kildekontrol: »Sagde han, nu har jeg bierget mit Kul. En Pibe Tobak nu«.
+Konkrete ord-, tegn- og versrettelser samt 14 kildebelagte tankestreger er
+indført og uafhængigt genkontrolleret. Kildens særlige punktummer i
+»skyndende sig. og« (396) og »de ti. Kulsække« (401) bevares som trykt,
+ligesom pronomenet »han« i »som han spiiste« (404). Ældre redaktionelle
+noter bevares særskilt. Kritikartiklens afsluttende ornament på side 478
+gengives ikke som en selvstændig tekstblok.
+
+Tolv dokumenterede fremhævelser i *Thora* gengives som fed, opret skrift
+frem for kursiv. Den delvis beskadigede legacy-læsning »Grimkul« på side 433
+bevares med en udtrykkelig kildeusikkerhedsnote. Der er intet belæg for at
+normalisere de fem foreløbige forslag om to i stedet for fire mellemrum.
+På side 402 er det større indryk ved »Lumskelig smiled …« derimod målt
+til cirka halvanden gang naboversets, og gengives med seks mod fire
+mellemrum. To resterende citatpar er gengivet med egentlige anførselstegn.
+
+*Thoras* første sang har 339 vers og anden sang 297. Den første sangs
+indledende 11 vers slutter ved et fysisk sideskift uden positivt belæg for
+strofeafstand; den tidligere blanklinje er fjernet. Den tidligere
+reviewoptælling på 338 var forkert; det afsluttende geometrimatch dækker
+alle 339 henholdsvis 297 vers.
+
+Alle ni tekstposter har nu `korrektur1,korrektur2,kilde,side`, og hæftet
+har `status="complete"`, `<pagebreaks/>`, registreret rettelsesark og
+modelattest. 55 poesiblokke, 92 interne sideskift, prosaafsnit, originalnoter,
+typografi og overskrifter er omfattet af den uafhængige kontrol.
+Alle 86 oprindelige *Thora*-fund er afsluttet: 79 verificerede og syv
+afviste. Kritikartiklens 32 sider, inklusive de 24 tidligere ukontrollerede,
+er nu fuldt uafhængigt gennemgået. Ordet efter »det fortalte Dødsfald«
+på side 474 forbliver `[ulæseligt]` med præcis note. Variantkontrollen
+gav ingen uafklarede kandidatpar eller dataproblemer. Slutcheckpoint,
+tests og GitHub CI dokumenteres i PR #2012.
+
+Det samlede slutreview dækker 97 tekstsideforekomster på alle 96 fysiske
+tekstsider samt rettelsesarket som særskilt inventarrække. Alle 42
+strukturkandidater og 1382 OCR-kandidater er afklaret med konkret
+uafhængig kildeevidens. 1541 fund er afsluttet uden åbne eller blot rettede
+punkter. Sideauditen har ingen fejl.
