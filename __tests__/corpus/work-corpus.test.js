@@ -61,6 +61,7 @@ describe('tracked work corpus', () => {
   let filenames;
   let bodyLinkIssues;
   let standaloneFootnoteIssues;
+  let proseFootnoteIssues;
   let emptyAndreFiles;
   let formattingIssues;
   let proseWordDivisionIssues;
@@ -97,6 +98,7 @@ describe('tracked work corpus', () => {
     filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
     standaloneFootnoteIssues = [];
+    proseFootnoteIssues = [];
     emptyAndreFiles = [];
     formattingIssues = [];
     proseWordDivisionIssues = [];
@@ -170,6 +172,11 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      for (const footnote of getElementsByTagNames(workDocument, ['footnote'])) {
+        if (getElementsByTagNames(footnote, ['prose']).length > 0) {
+          proseFootnoteIssues.push(`${filename}: <prose> inside <footnote>`);
+        }
+      }
       if (checksForWorkXml(xml).facsimiles === true) {
         facsimilePageSourceIssues.push(
           ...collectFacsimilePageSourceIssues(filename, workDocument),
@@ -347,6 +354,10 @@ describe('tracked work corpus', () => {
 
   it('attaches poetry footnotes to text or headings', () => {
     expect(standaloneFootnoteIssues).toEqual([]);
+  });
+
+  it('keeps prose wrappers out of all footnotes, including title and subtitle footnotes', () => {
+    expect(proseFootnoteIssues).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {

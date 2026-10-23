@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bronner" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Franz Xaver</firstname>
+    <lastname>Bronner</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1758-12-23</date>
+      <place>Höchstädt an der Donau</place>
+    </born>
+    <dead>
+      <date>1850</date>
+      <place>Aarau</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q91320</wikidata>
+    <gnd>118674315</gnd>
+  </identifiers>
+</person>

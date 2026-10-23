@@ -567,7 +567,7 @@ describe('Check workfiles', () => {
     },
   );
 
-  it.each([',', '?', '!'])(
+  it.each(['?', '!'])(
     'allows a title ending with %s',
     punctuation => {
       const issues = titleMetadataIssues(
@@ -577,6 +577,46 @@ describe('Check workfiles', () => {
       expect(
         issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
       ).toHaveLength(0);
+    },
+  );
+
+  it.each(['toctitle', 'linktitle'])(
+    'rejects a comma inherited from title by the effective %s',
+    type => {
+      const issues = titleMetadataIssues(
+        '<text id="inherited" ignore-tests="title-trailing-punctuation"><head><title>Lida,</title></head></text>',
+      );
+      expect(issues.some(issue => issue.description.includes(`effective ${type}`))).toBe(true);
+    },
+  );
+
+  it('allows a printed title comma when both display titles override it', () => {
+    expect(titleMetadataIssues(
+      '<text id="overridden"><head><title>Lida,</title><toctitle>Lida</toctitle><linktitle>Lida</linktitle></head></text>',
+    )).toEqual([]);
+  });
+
+  it.each([
+    '<firstline>Linje,</firstline>',
+    '<title>Lina’s,<footnote>Note.</footnote></title>',
+    '<title><num>I.</num>Lida,</title><toctitle/><linktitle/>',
+  ])('checks inherited commas after title extraction: %s', fields => {
+    const issues = titleMetadataIssues(`<text id="fallback"><head>${fields}</head></text>`);
+    expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(2);
+  });
+
+  it('uses a clean index title as the link title fallback', () => {
+    expect(titleMetadataIssues(
+      '<text id="indexed"><head><title>Lida,</title><indextitle>Lida</indextitle><toctitle>Lida</toctitle></head></text>',
+    )).toEqual([]);
+  });
+
+  it.each(['kalliopework', 'section'])(
+    'checks inherited display-title commas on %s',
+    type => {
+      const head = type === 'kalliopework' ? 'workhead' : 'head';
+      const issues = titleMetadataIssues(`<${type}><${head}><title>Titel,</title></${head}></${type}>`);
+      expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(2);
     },
   );
 
