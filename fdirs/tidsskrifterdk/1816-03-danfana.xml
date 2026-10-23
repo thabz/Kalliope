@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1816-03-danfana" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1816-1817-danfana" sort-order="30">
+<kalliopework id="1816-03-danfana" author="tidsskrifterdk" status="complete" type="periodical" parent="1816-1817-danfana" sort-order="30">
 <workhead>
   <title>Danfana: Marts 1816</title>
   <breadcrumbtitle>Marts 1816</breadcrumbtitle>
@@ -12,6 +12,10 @@
     <publisher>Boas Brünnich</publisher>
     <year>1816</year>
   </source>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-23T21:50:22+02:00"/>
+  </proofreadings>
   <errata status="applied" pages="[upagineret]" facsimile-pages="206"/>
   <pictures>
     <picture type="titlepage" primary="true" src="1816-03-danfana-p1.jpg"><transcription>Danfana. / Et Maanedskrift / af / Jens Immanuel Baggesen. / Marts. // Kjøbenhavn, 1816. / Hos Boas Brünnich, / Løvstræde No. 128.</transcription></picture>
@@ -22,7 +26,7 @@
 <head>
   <title>Til Danfanas Læsere</title>
   <source facsimile-pages="206"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -38,7 +42,7 @@
   <firstline>Jeg veed, at, selv naar Jordgrav-Klokken gaaer</firstline>
   <source pages="193-196" facsimile-pages="208-211"/>
   <keywords>grundtvig</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -139,12 +143,12 @@ I Død og Liv hinanden Gud befale!
 <text id="baggesen2003021903" author="baggesen">
 <head>
   <title>Kong Salomon og Jørgen Hattemager</title>
-  <subtitle>i Læseverdenen</subtitle>
+  <subtitle>i Læseverdenen.</subtitle>
   <toctitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</toctitle>
   <indextitle>Kong Salomon og Jørgen Hattemager i Læseverdenen</indextitle>
   <firstline>For fattig Folk at spare Hovedbrud</firstline>
   <source pages="197-199" facsimile-pages="212-214"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -210,7 +214,7 @@ Den stille Flodgud hine Fossens Skarer,)
     <note>Sammenlign <xref poem="baggesenandrea1"/>.</note>
   </notes>
   <source pages="199" facsimile-pages="214"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -234,7 +238,7 @@ Hvi griber du mig, som en fiendtlig Piil?
     <note>Trykket er delvis beskadiget i personnavnet efter »Troer man, at« på side 208, i ordet før »Fuglereder« på side 210 og i ordet efter »Braad i« på side 213. Disse ord er ikke rekonstrueret.</note>
   </notes>
   <source pages="200-214" facsimile-pages="215-229"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -599,7 +603,7 @@ End Bagen paa de birkebarkte Daarer.
     <note>I sidste vers er trykket beskadiget efter »Misundelse,«. Af det følgende ord kan kun »de« læses sikkert; resten gengives ikke som en rekonstrueret læsemåde.</note>
   </notes>
   <source pages="214" facsimile-pages="229"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -619,7 +623,7 @@ Hvor baade Peer og Povl gaae-lige vist til Grunde,
   <title>Heautontheorumenos</title>
   <subtitle>
     <line>eller</line>
-    <line>Spøgelset i Kerteminde</line>
+    <line>Spøgelset i Kerteminde.</line>
   </subtitle>
 </head>
 <content>
@@ -627,7 +631,7 @@ Hvor baade Peer og Povl gaae-lige vist til Grunde,
 <head>
   <title>Titelblad</title>
   <source pages="215" facsimile-pages="230"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -651,7 +655,7 @@ Hvor baade Peer og Povl gaae-lige vist til Grunde,
 <head>
   <title>Dedikation</title>
   <source pages="216" facsimile-pages="231"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -665,7 +669,7 @@ Hvor baade Peer og Povl gaae-lige vist til Grunde,
   <title>Prolog</title>
   <firstline>I to tre Hundrede, som giøre mig den Ære</firstline>
   <source pages="217-219" facsimile-pages="232-234"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -744,7 +748,7 @@ Haandgribelige Poesie.
   <title>Drømmen</title>
   <firstline>Mig syntes, som jeg selv, forvandlet af en Mand</firstline>
   <source pages="220-225" facsimile-pages="235-240"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -897,7 +901,7 @@ Den Ord for Ord man nu skal høre) —
     <note>Trykkets »mig Mig Selv« på side 238 er bevaret.</note>
   </notes>
   <source pages="226-239" facsimile-pages="241-254"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1240,7 +1244,7 @@ Heautontheoreomai!“
   <title>Epilog</title>
   <firstline>Den hele Kreds i Drømmen, indtil Fæene</firstline>
   <source pages="239-241" facsimile-pages="254-256"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1297,7 +1301,7 @@ Jeg giver Jer det her til Priis, I Hulde!
   <title>Moral</title>
   <firstline>Hvis nogen seer i dette Speil</firstline>
   <source pages="241" facsimile-pages="256"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1329,7 +1333,7 @@ Det gier jeg netop Læseren at raade.
     <note>Otte ord er delvis beskadigede i scanningen: på side 242 efter »Indførelsen af« og »allehaande«; på 243 før »og Silketoier« og efter »Uden Lignelse:«; på 254 efter »men et«; på 260 efter »genialsk« og »Vi love«; på 281 efter »tilbage til sin«. De er markeret [ulæseligt]; læsemåderne er ikke rekonstrueret.</note>
   </notes>
   <source pages="242-283" facsimile-pages="257-298"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -1672,7 +1676,7 @@ Vi drikke Heltemodets Skaal!
     <note>På side 287 er ordet efter »kaldt« og det følgende ord efter »alskens« delvis udviskede i scanningen.</note>
   </notes>
   <source pages="284-288" facsimile-pages="299-303"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
