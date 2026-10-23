@@ -377,7 +377,7 @@ describe('tracked work corpus', () => {
     expect(andreWorkheadSourceIssues).toEqual([]);
   });
 
-  it('uses source href attributes for external source links', () => {
+  it('uses source icons for external references and keeps literary text links internal', () => {
     expect(externalSourceLinkIssues).toEqual([]);
   });
 

@@ -443,11 +443,57 @@ const collectSourcePolicyIssues = (filename, document) => {
     });
   }
 
+  const isExternalWebLink = href =>
+    /^(?:https?:)?\/\//iu.test(href) &&
+    !/^(?:https?:)?\/\/(?:www\.)?kalliope\.org(?:\/|$)/iu.test(href);
+
+  // These endpoints serve transcribed literary texts, rather than scan pages.
+  const isExternalLiteraryText = href => {
+    let url;
+    try {
+      url = new URL(href, 'https://kalliope.org');
+    } catch {
+      return false;
+    }
+    const host = url.hostname.toLowerCase();
+    const pathname = url.pathname;
+    if (host === 'wikisource.org' || host.endsWith('.wikisource.org')) {
+      // Scan pages, scan indexes and the biographical dictionary are sources.
+      return /^\/wiki\//iu.test(pathname) &&
+        !/^\/wiki\/(?:ADB|Page|Index|File|Image|Livre|Seite|Datei|Side)(?::|%3a)/iu.test(pathname);
+    }
+    return (host === 'writersinspire.org' && pathname.startsWith('/content/')) ||
+      host === 'shakespeare.mit.edu' || host === 'www.bartleby.com' || host === 'bartleby.com' ||
+      (host.endsWith('.perseus.tufts.edu') && pathname.startsWith('/hopper/text')) ||
+      (host === 'texts.alpheios.net' && pathname.startsWith('/text/'));
+  };
+
   Array.from(work.getElementsByTagName('source')).forEach(source => {
-    Array.from(source.getElementsByTagName('a')).forEach(link => {
-      if (link.hasAttribute('href')) {
+    Array.from(source.getElementsByTagName('*')).filter(link => ['a', 'xref'].includes(link.nodeName)).forEach(link => {
+      if (isExternalWebLink(link.getAttribute('href') ?? '')) {
         externalSourceLinks.push(
           `${filename}: use source/@href instead of <a href> inside <source>.`,
+        );
+      }
+    });
+  });
+
+  // Editorial references use the source glyph, never an external linked title.
+  // Source metadata is handled above; internal links and mail links remain legal.
+  ['a', 'xref'].forEach(tagName => {
+    Array.from(work.getElementsByTagName(tagName)).forEach(link => {
+      const href = link.getAttribute('href') ?? '';
+      if (noteAncestor(link) == null || !isExternalWebLink(href)) {
+        return;
+      }
+      if (link.textContent.trim() !== '↬') {
+        externalSourceLinks.push(
+          `${filename}: external references in notes must use the source icon ↬; insert poems internally or cite a printed source.`,
+        );
+      }
+      if (isExternalLiteraryText(href)) {
+        externalSourceLinks.push(
+          `${filename}: do not link directly to an external literary text (${href}); use an internal text or a printed bibliographic reference.`,
         );
       }
     });

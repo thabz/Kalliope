@@ -65,7 +65,7 @@ En trykt kilde citeres i rækkefølgen:
 Brug den trykte publikations titelblad og kolofon som grundlag. Sidetal angives
 i `source/@pages`; et stabilt link til en digitalisering angives i
 `source/@href`. Titlen må ikke omsluttes af et eksternt `<a>`-element. Rendereren
-viser selv den lille klikbare linkpil fra `href`.
+viser selv det krøllede kildeikon `↬` fra `href`.
 
 For et almindeligt publikationsværk står den fulde bibliografiske kilde i
 `<workhead>`, mens hvert digt peger på kilden og angiver sider:
@@ -92,12 +92,23 @@ direkte i hvert berørt digts `<head>`, også når flere digte bruger samme kild
 ```
 
 Interne Kalliope-links som `<a poet="...">` må fortsat bruges i en
-kildeangivelse. Et `<source>` må derimod ikke indeholde `<a href="...">`; det
+kildeangivelse. Et `<source>` må derimod ikke indeholde eksterne `<a href="...">`; det
 eksterne link skal ligge i `source/@href`.
 
 Brug `<source>` til kildeproveniens. En `<note>` må ikke bruges som erstatning
 med formuleringen »Teksten følger ...«. Bevar kun selvstændige tekstkritiske
 eller historiske oplysninger som noter.
+
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
 
 ## Kontrol før aflevering
 
