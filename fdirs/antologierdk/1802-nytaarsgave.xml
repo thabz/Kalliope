@@ -806,7 +806,7 @@ Og sang til krandset Lyras kjælne Toner:
   Sandt han talte. Ømt for dig,
   Lydia, mit Hjerte brænder.
   Ynd en Ild, du selv antænder!
-  Huldt du smile ned til mig<footnote>Denne Sang er en frie Oversættelse af Anakreons 3 Ode.</footnote>.
+  Huldt du smile ned til mig<footnote>Denne Sang er en frie Oversættelse af Anakreons <a poem="anakreontika2025122803">3 Ode</a>.</footnote>.
 
     Han taug, og nu med Vredens mørke Blikke
 En væbnet Yngling mod ham traadte frem.
@@ -911,7 +911,7 @@ Til Lyren han istemte denne Sang:
 <pb n="47" facs="051.jpg"/>  Til Strengenes Klang, den Vildmand jeg skyer,
   Som, følelsløs for de blidere Glæder,
   Tør yppe ved Gjestebud stormende Kiv.
-  O, lader os elske et fredeligt Liv<footnote>Denne Sang er ligeledes en frie Oversættelse af Anakreons 42 Ode.</footnote>.
+  O, lader os elske et fredeligt Liv<footnote>Denne Sang er ligeledes en frie Oversættelse af Anakreons <a poem="anakreontika2025122842">42 Ode</a>.</footnote>.
 
     ”O,” sagde han, ”gid min Philosophie
 ”Dog over alle Hjerter seire kunde!
@@ -1212,7 +1212,7 @@ Han denne Sang til Evans Priis istemte:
   Tømmer Begret, o Venner, ud!
   Druens viinløvbekrandste Gud,
   Glædens spøgende Fader prise
-  Høit til Lyren vor muntre Vise<footnote>Denne Drikkevise er en frie Oversættelse af Anakreons 41 Ode.</footnote>.
+  Høit til Lyren vor muntre Vise<footnote>Denne Drikkevise er en frie Oversættelse af Anakreons <a poem="anakreontika2025122841">41 Ode</a>.</footnote>.
 
 <pb n="63" facs="067.jpg"/>    Saaledes sang Anakreon og stemte
 Derved til dobbelt Glæde Polykrat.
@@ -1358,7 +1358,7 @@ Og rundt om Tronen Jubelfryd udbrede?
   <subtitle>(Efter Kosegarten.)</subtitle>
   <firstline>Skjøn Hedvig var Venners og Slægtningers Fryd</firstline>
   <notes>
-    <note unknown-original-by="kosegarten"/>
+    <note>Gendigtning af Kosegartens <xref type="translation" poem="kosegarten2026102301"/>.</note>
   </notes>
   <source pages="70-85"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1675,6 +1675,9 @@ Den himmelske Brudesang frydfuld de sang.
   <title>Amor er farlig</title>
   <subtitle>(Efter det Italienske.)</subtitle>
   <firstline>At du, o Amor! troeløs er</firstline>
+  <notes>
+    <note>Gendigtning af Marinos <xref type="translation" poem="marino2026102301"/>. De fire indledende ottaver af tredje sang er frit bearbejdet.</note>
+  </notes>
   <source pages="86-88"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2508,7 +2511,7 @@ Hiint røde Lynildsværd ei hæver,
   Som flammer over Hav og Land.
 Han Sygers grumme Hær betvinger:
   De flye for Glimtet af hans Sværd.
-See, Pesten flyer paa Stormens Vinge[?]<note>En blækplet skjuler slutningen af ordet i det benyttede eksemplar; muligvis »Vinger«.</note>
+See, Pesten flyer paa Stormens Vinger
   Foran; hans Aande Gravdamp er.
 
 Hans Blik er Ild, hans Lokker sorte
@@ -2663,7 +2666,10 @@ Til sildig! du eengang med sølvhvide Haar
 <text id="rehling2026102204" author="rehling">
 <head>
   <title>Lille Vilhelm til sin Moder</title>
-  <subtitle>den 26 October 1801. (efter en langvarig Sygdom.)</subtitle>
+  <subtitle>
+    <line>den 26 October 1801.</line>
+    <line>(efter en langvarig Sygdom.)</line>
+  </subtitle>
   <firstline>O Moder! fra min unge Læbe</firstline>
   <dates><event>1801-10-26</event></dates>
   <source pages="137-138"/>
@@ -2717,7 +2723,7 @@ Du hvile trygt ved sønligt Bryst.
   <subtitle>(Efter Kosegarten.)</subtitle>
   <firstline>Vær mig hilset Yngling! over Skabningen du</firstline>
   <notes>
-    <note unknown-original-by="kosegarten"/>
+    <note>Gendigtning af Kosegartens <xref type="translation" poem="kosegarten2026102302"/>. Strofe 5 i udgaven fra 1798 er udeladt.</note>
   </notes>
   <source pages="139-140"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3109,11 +3115,15 @@ Brændende min Sjel paa Læben svæver
 </body>
 </text>
 
-<text id="staffeldt2026102209" author="staffeldt" variant="staffeldt1999030406">
+<text id="staffeldt1999030406" author="staffeldt">
 <head>
   <title><num>IV.</num>Ved Tizians liggende Venus<footnote>Saaledes hedder en nøgen qvindelig Figur af Tizian, som efter en troeværdig Tradition er et Portrait af en urbinisk Hertugs Frille.</footnote></title>
   <firstline>Vellyst her al sin Magie udgød</firstline>
+  <pictures>
+    <picture artwork="kunst/tizian-venere-di-urbino-1538"/>
+  </pictures>
   <source pages="159-160"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3195,6 +3205,9 @@ Og du som døer med hver en Aftenrøde
 <head>
   <title><num>VII.</num>Ved de friske Grave paa Holmens Kirkegaard i Maj 1801</title>
   <firstline>Stands, o Ædling, her din Vandringsstav</firstline>
+  <pictures>
+    <picture artwork="kunst/abildgaard-oceanus-paa-sin-trone-i-havet"/>
+  </pictures>
   <source pages="163-164"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3263,7 +3276,6 @@ Axet til Ambrosia brat forvandler,
 <head>
   <title><num>I.</num>Sang til Sandhed</title>
   <firstline>Stor, o Sandhed, er din Vælde</firstline>
-  <dates><performed>1801-09-30</performed></dates>
   <source pages="166-170"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3366,7 +3378,6 @@ Himles Jubel-Melodier!
 <head>
   <title><num>II.</num>Duet af tvende Ynglinge</title>
   <firstline>Hvi klang saa rørt min Faders Stemme?</firstline>
-  <dates><performed>1801-09-30</performed></dates>
   <source pages="170-172"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3415,7 +3426,6 @@ I Dydens Kamp vi modigt staae!
 <head>
   <title><num>III.</num>Slutnings-Chor</title>
   <firstline>Ophøjede Kundskab om Viisdom og Dyd</firstline>
-  <dates><performed>1801-09-30</performed></dates>
   <source pages="172-172"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
