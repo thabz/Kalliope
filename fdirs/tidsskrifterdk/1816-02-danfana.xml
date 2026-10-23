@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1816-02-danfana" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1816-1817-danfana" sort-order="20">
+<kalliopework id="1816-02-danfana" author="tidsskrifterdk" status="complete" type="periodical" parent="1816-1817-danfana" sort-order="20">
 <workhead>
   <title>Danfana: Februar 1816</title>
   <breadcrumbtitle>Februar 1816</breadcrumbtitle>
@@ -15,6 +15,11 @@
   <pictures>
     <picture type="titlepage" primary="true" src="1816-02-danfana-p1.jpg"><transcription>Danfana. / Et Maanedskrift / af / Jens Immanuel Baggesen. / Februar. // Kjøbenhavn, 1816. / Hos Boas Brünnich, / Løvstræde No. 128.</transcription></picture>
   </pictures>
+  <errata status="none"/>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-23T14:29:12+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="baggesen2003011401" author="baggesen">
@@ -25,7 +30,7 @@
     <event>1816-01-28</event>
   </dates>
   <source pages="97-102" facsimile-pages="108-113"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -154,7 +159,7 @@ Ei Dit Øre for min Sang oplader,
     <note>Sammentrykkene »VorSølvmynts« (side 103), »harQvinden« (104), »DinGaade« og »venligtNik« (106), »skalDu« og »mitSpring« (108) samt »SkiøndtHimlensCherub« og »denSkiultesCirkel« (109) følger trykket.</note>
   </notes>
   <source pages="103-111" facsimile-pages="114-122"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -329,7 +334,7 @@ Sig mig, du Danmarks Skjald, om jeg ei Prisen vandt?
   <subtitle>(Efter Tilsendelsen af ovenstaaende Digt.)</subtitle>
   <firstline>Prisen, ædle Giætterinde</firstline>
   <source pages="112-116" facsimile-pages="123-127"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -438,7 +443,7 @@ Meer end alle Rigsbankdaler,
     <note>Skrevet 20.–21. januar 1816.</note>
   </notes>
   <source pages="117-127" facsimile-pages="128-138"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -563,7 +568,7 @@ Maae med veemodig Lyst jeg selv mod Dig den føre.
     <note>I »Strøetankernes« på side 147 er bogstavet mellem k og r beskadiget i både den sort-hvide scanning og farvescanningen. Den eksisterende læsning e bevares; det følgende n er læseligt i trykket.</note>
   </notes>
   <source pages="128-147" facsimile-pages="139-158"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -850,14 +855,14 @@ Ich fürchte nicht grausame Salben.
   <written>1815-11-15</written>
   <source pages="148-155" facsimile-pages="159-166"/>
   <keywords>grundtvig</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Gaarsdagens Skilderie jeg alt har døiet -
+Gaarsdagens Skilderie jeg alt har døiet —
 Med Lignelsen om Skæven i
 Min Broders Øie paa mit Rimerie,
-Og Bielken i mit eget Blik for Øiet -
+Og Bielken i mit eget Blik for Øiet —
 Thi denne Broder, meere huul, end huld,
 Med Øie paa mig, for at maale
 Hvormegen Spas jeg vel kan taale?
@@ -867,13 +872,13 @@ Mig maaler, min Troe, Skieppen fuld.<footnote>
 Jeg mener med hans egen Alen.“
 </poetry>
 <right>(Rimelige Strøetanker, anden Fortsættelse.)</right></footnote>
-<pb n="149" facs="159.jpg"/>Jeg sad alt - som jeg sad paa Naale -
+<pb n="149" facs="159.jpg"/>Jeg sad alt — som jeg sad paa Naale —
 Som Corfitz med det bare Hoved sad,
-Mens Gunild maalte ham fra Top til Saale -
+Mens Gunild maalte ham fra Top til Saale —
 Ved Enden af det første Blad;
 Nu sidder jeg, som samme stakkels Manden
 Da bort hun gik, at spørge Katten ad,
-Lidt heed om Ørerne - jeg veed ei hvad -
+Lidt heed om Ørerne — jeg veed ei hvad —
 Og hører Got Folk lee, som de var fra Forstanden.
 Naturligviis jeg gjerne vide gad,
 Om jeg, som han, faaer Horn i Panden?
@@ -898,7 +903,7 @@ Den Ubekiendte, der i munter Sang<note>der] dtr</note>
 Mig saa vidundervittig driller,
 At jeg gad drilles tidt i samme Sprog,
 Skiøndt han just ei forgylder sine Piller;
-Han er min Mand med alt det dog -
+Han er min Mand med alt det dog —
 Og ikke, som de andre Smaapoeter,
 Der trodse mig i Spil med lutter Beeter,
 Et sælle Skrog!
@@ -908,8 +913,8 @@ Foruden Rift i Aandens Brog;
 Thi han forstaaer, i Kamp, som egner Helte,
 Mod søden Kniv saa sødt at spænde Belte,
 At hvis han sin, til Hjaltet, i mig jog
-Saa selv jeg tumlede - jeg raabte høit i Tumlen:
-<pb n="151" facs="161.jpg"/>,,Einheriar! jeg seer, du kiender Rumlen!
+Saa selv jeg tumlede — jeg raabte høit i Tumlen:
+<pb n="151" facs="161.jpg"/>„Einheriar! jeg seer, du kiender Rumlen!
 Slaae mig kun frisk ihiel, min Ven!
 Kraft øver sig mod Kraft i Pen mod Pen!
 Valhallas Tyre maae hinanden stange
@@ -945,15 +950,15 @@ Trods Kraftens vilde Nordvinds barske Hinder!
 Den søde Kniv
 Ei flænger blot for Tidsfordriv
 Her neden,
-Men skiærer deilige Figurer ud -
-Den skiærer bort de vilde Snylteskud -
-Og det for lange Skiæg af Dagens Gud -
+Men skiærer deilige Figurer ud —
+Den skiærer bort de vilde Snylteskud —
+Og det for lange Skiæg af Dagens Gud —
 For hvem, min Broer? For Evigheden!
 
-    ,,Hvad er det for en Kniv?'' (saa hører jeg, med Haan
+    „Hvad er det for en Kniv?“ (saa hører jeg, med Haan
 Min Jette spørger neden under Jorden,
 Hvor han har skiult sig for Kritikens Torden)
-,,Kan man den ikke faae til Laan?''
+„Kan man den ikke faae til Laan?“
 Nei! Thor ei laaner gierne bort den Hammer,
 Hvormed han dig og dine rammer!
 Og hendte sig, du fandt den i en Krog,
@@ -977,14 +982,14 @@ Thi, trods din Svaren med en andens Mund,
 Trods din Nedladelse til bare Spanken
 I Eenevældehulen under Banken,
 Jeg nærer dog endnu bestandig Tanken,
-<pb n="155" facs="165.jpg"/>At du er Asa-Loke - trods din Bo -
+<pb n="155" facs="165.jpg"/>At du er Asa-Loke — trods din Bo —
 Du veed nok selv, at der er to!
 Er du, som jeg endnu bestandig vil formode,
 Den gode,
 Saa lad Smaatroldene, du maa foragte selv,
 Ei længer hvisle mig dit Skiælv!
-Men stil dig - Pladsen alt er aaben -
-Som Digterkiæmpe - Skialdhelt - Bardegud -
+Men stil dig — Pladsen alt er aaben —
+Som Digterkiæmpe — Skialdhelt — Bardegud —
 Hvordan du vil, med Stød, med Stik, med Skud
 Men Mand mod Mand, med ædle danske Vaaben!
 </poetry>
@@ -993,7 +998,7 @@ Men Mand mod Mand, med ædle danske Vaaben!
 
 <center><w>Anmærkning.</w></center>
 
-    ,,Der stikker ikke'' siger Wieland etsteds, ,,saa megen <w>Viisdom</w> i den berømte <w>Taushed</w>, som <w>de Viise</w> ville indbilde os, der med <w>intet andet</w> formaae at bevise deres.'' Vi erindre dette i Anledning af den ,,<w>viise</w> oehlenschlägerske <w>Taushed</w>,'' der anprises af Fredsmægleren i Litteraturtidendens Recension af de <w>Poetiske Epistler</w>.
+    „Der stikker ikke „siger Wieland etsteds,“ saa megen <w>Viisdom</w> i den berømte <w>Taushed</w>, som <w>de Viise</w> ville indbilde os, der med <w>intet andet</w> formaae at bevise deres.“ Vi erindre dette i Anledning af den „<w>viise</w> oehlenschlägerske <w>Taushed</w>,“ der anprises af Fredsmægleren i Litteraturtidendens Recension af de <w>Poetiske Epistler</w>.
 ---
 </prose>
 </body>
@@ -1004,7 +1009,7 @@ Men Mand mod Mand, med ædle danske Vaaben!
   <title>Til Den mig ubekiendte Forfatter af „Rimelige Strøe-Tanker ved Jens Baggesens Grav.“</title>
   <firstline>Hvem er du Sphinx, der paa mig stirrer</firstline>
   <source pages="156-167" facsimile-pages="167-178"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1024,27 +1029,27 @@ Som Barmrandsageren kun sømmer,
 Og meer mig dadler end berømmer,
     Min Dommer i mit Hierte lig?
 
-Jeg før har seet dig - om herneden
-    Blandt Efterklangs Pygmæer ei -
+Jeg før har seet dig — om herneden
+    Blandt Efterklangs Pygmæer ei —
 Saa dog etsteds i Evigheden
 Blandt Kiæmperne der vandred heden
     Paa Sangens lyse Kongevei!
-Paa visse Træk - paa visse Blikke -
-    Paa Smilet norskeligen smuult -
-Paa Brynene, der mod mig nikke -
+Paa visse Træk — paa visse Blikke —
+    Paa Smilet norskeligen smuult —
+Paa Brynene, der mod mig nikke —
     Saa siællandsk tørt, og jydehuult,
 Mig synes, grant til Punkt og Prikke
     At kiende Skiemtens Kraftpapa,
     Min Mester in vi comica;
-<pb n="158" facs="168.jpg"/>Og dog - ved Fingeren at stikke
-    I Tiden, jeg nu lever -
+<pb n="158" facs="168.jpg"/>Og dog — ved Fingeren at stikke
+    I Tiden, jeg nu lever —
     Den sunde Sands i Rimerie
     Saavelsom i Kronologie,
     (Hvis Varenad i Poesie
     Jeg aldrig kan gaae reent forbi)
 Mig siger, Holberg er du ikke!
-    Men skiøndt min Sandsen siger: ,,Nei!
-    Ved Holberg! Holberg er det ei!''
+    Men skiøndt min Sandsen siger: „Nei!
+    Ved Holberg! Holberg er det ei!“
 Fornuften (som jeg ogsaa, Kiære,
 Ei holder blot i megen Ære,
     Men selv i meer, end alt Genie,
@@ -1057,13 +1062,13 @@ At det kan ingen anden være!
     Der før mod mig har spidset Pen,
 <pb n="159" facs="169.jpg"/>Kan mindste Gran af Sands alt lære.
 At det er ingen af de andre,
-    Der lod mig, som en Dødning, staae -
-Og lod mig, som Gienganger, vandre -
+    Der lod mig, som en Dødning, staae —
+Og lod mig, som Gienganger, vandre —
     Og lod mig ligge, hvor jeg laae,
 Fordi de, grundende paa Tingen,
 Fandt ud, jeg var aldeles Ingen:
     Et Null af fiendtlig Skumpelskud,
-    Der ei var værdt et halv Skud Krud -
+    Der ei var værdt et halv Skud Krud —
 Det synes mig i mine Lagen,
     (De rene hvide Pialter, som
     Min gamle Moders Fattigdom
@@ -1072,9 +1077,9 @@ Trods Dødens Nat, saa klart, som Dagen.
 
 Skiøndt blandt de Levende jeg tæller
     Endnu paa siællandsk Jord to tre,
-    Der kunde - vilde de - maaskee
+    Der kunde — vilde de — maaskee
 Mig og mit Lunes Mammeseller
-<pb n="160" facs="170.jpg"/>    Faae til, af meer end dem at lee -
+<pb n="160" facs="170.jpg"/>    Faae til, af meer end dem at lee —
 Dem er det dog vist ikke heller!
     Thi de, som gamle kloge Muus
     I Verdens store Prosa-Huus,
@@ -1092,23 +1097,23 @@ Hvem er da du, som her paa Randen
     Hvorpaa kun lidt mig ligger Lav,
 Mig trodsende (som tør hver anden)
     Og Tidens Aand (som evne faa)
-Tør trodse begge? - det vil sige:
+Tør trodse begge? — det vil sige:
 <pb n="161" facs="171.jpg"/>Saavel den Fattige, som Rige,
     Saavel de Store, som de Smaa,
 Med Mod, der synes uden Lige
     Hos een med Livets Buxer paa?
-Kan Thomas Kingo selv opstaae -
+Kan Thomas Kingo selv opstaae —
 Opstanden, Thomas Thaarup blive?
-    Og - hvis jeg det vil lade gaae,
-Og sætte, de er nu i Live -
+    Og — hvis jeg det vil lade gaae,
+Og sætte, de er nu i Live —
     Kan saa naragtigt vel, som saa,
-    Den første - kan i Vers, saa raa,
+    Den første — kan i Vers, saa raa,
 Den anden vel saa smagløst skrive?
     At saare mangen kan endnu
 Saavel det første, som det sidste,
     Foruden Kingo-Psalme-Dyd
     Og uden Thaarup-Harpe-Lyd,
-Det jeg for længe siden vidste -
+Det jeg for længe siden vidste —
     Vor Tids Postadamiter-Skok<footnote>Det modsatte af Fortidens <w>Præadamiter</w>.</footnote>
     Af den Slags Thomassie har nok,
 <pb n="162" facs="172.jpg"/>Der, før den kommer efter Grunden
@@ -1121,18 +1126,18 @@ Som vidner, Mesteren er funden,
     En Tieners Skikkelse tog paa)
 Maa stikke Fingren først i Vunden.
 
-    Hvem er du da? Dit Øiehvelv -
+    Hvem er du da? Dit Øiehvelv —
 Det stive skarpe Blik derunder,
 Som borer sig i mine Vunder,
-    Ligt Selvsamvittighedens Skiælv! -
+    Ligt Selvsamvittighedens Skiælv! —
 Det Blik, som desto mere grunder
 Jo meer det lader som det blunder
-    For blinde Folk i Skiemtens Elv -
-Det: lidt af Nødden let ei knækket -
+    For blinde Folk i Skiemtens Elv —
+Det: lidt af Nødden let ei knækket —
     Det: lidt i Baghaand, lidt i Hu,
-    Der ei for hver er strax til Sku -
-<pb n="163" facs="173.jpg"/>Det: lidt for Kienderen bag Dækket -
-    Det dybere jeg veed ei hvad -
+    Der ei for hver er strax til Sku —
+<pb n="163" facs="173.jpg"/>Det: lidt for Kienderen bag Dækket —
+    Det dybere jeg veed ei hvad —
     Det ægte Tankens: Spørg mig ad!
 Mig nøder til imellemstunder,
     Jo nøiere jeg paa dig seer,
@@ -1144,11 +1149,11 @@ Som mig tilhvisker, det er Mig!
 Som mit forhadte Selv vil lære,
 At det mig selv vel kunde være,
     Fordi det min udvortes Pjalt
-    Indsalter i mit eget Salt -
+    Indsalter i mit eget Salt —
 Fordi det stolt, men uden Pralen,
 Mig maalende med egen Alen,
     Smukt nøder til, at see mig om,
-    Hvormeget end tilkort jeg kom -
+    Hvormeget end tilkort jeg kom —
 Og tirrer baade Povl og Peder
 Med gammeldags Frimodigheder,
 <pb n="164" facs="174.jpg"/>    Der nu er komne reent af Brug,
@@ -1165,8 +1170,8 @@ Fik jeg i Skiemtesproget ikke,
     For saa vidt det er pære dansk;
 Selv større Bøsser maatte klikke
 Med Sigten til dets Punkt og Prikke:
-Den Pære fik selv Evald ikke -
-Den havde Holberg blot i Kikke -
+Den Pære fik selv Evald ikke —
+Den havde Holberg blot i Kikke —
     Og Vessel sigtede paa Fransk.
 Den Skjald, der i Serimner-Truget
 Med pære Genialitet
@@ -1183,7 +1188,7 @@ Til evig Tid den halve Pære.
 Thi hvo kan være Formand i
 Satirisk-komisk Rimerie,
 Og kommandere Skiemtens Hære
-Her paa Parnasset - uden dog
+Her paa Parnasset — uden dog
 At kiendes af hver Skolepog,
 Og giættes, i et Værk paa Prent,
 Af hver en Kakkelovnsstudent?
@@ -1195,7 +1200,7 @@ Trods Mangel selv paa Næstens Lyder,
 Til Brugen af en Høvl saa grov,
 <pb n="166" facs="176.jpg"/>Naar du din Næste vil polere;
 Thi, er du reen, er det vel flere!
-Bliv ved at slænge løs paa mig -
+Bliv ved at slænge løs paa mig —
 Min Arm kan ogsaa røre sig!
 Men skaan de spæde, skaan de gamle,
 Hvis Hænder zittre kun og famle;
@@ -1209,7 +1214,7 @@ Gaae stolt, gaae kiæk paa Frimods Vei!
 Haan Krybet; men hovmod dig ei!
 Slaae Hovmod, hvor den find's, for Panden;
 Thi det er netop selve Fanden!
-Men ellers bland - jeg veed ei hvad -
+Men ellers bland — jeg veed ei hvad —
 Lidt Kiærlighed selv i dit Had!
 Glem ei, naar med en Piil, som saarer,
 Dig Lyset rusted ud mod Daarer,
@@ -1242,7 +1247,7 @@ Er dog et christent Paradiis.
   <title>Gaade-Kampen</title>
   <source pages="168-170" facsimile-pages="179-181"/>
   <keywords>grundtvig</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -1260,7 +1265,7 @@ Da see hvem Gaaden giætted,
 Og hvad dens Sphinx forjætted!
 </poetry>
 <epigraph>
-<pb n="169" facs="179.jpg"/>„Eet er din Gaade,
+<pb n="169" facs="179.jpg"/>„Let er din Gaade,
 „Gestur blinde!
 „Nemt er, at raade
 „Runen derinde.
@@ -1293,7 +1298,7 @@ Hvi vil dit Hierte du dele?
     <note>I den islandske linje »Fell Døgg í diúpa Dalí!« på side 176 er begyndelsen af ordet efter í beskadiget i både den sort-hvide scanning og farvescanningen. Den eksisterende læsemåde bevares, men kan ikke fuldt genkontrolleres mod trykket.</note>
   </notes>
   <source pages="171-182" facsimile-pages="182-193"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -1301,9 +1306,9 @@ Hvi vil dit Hierte du dele?
 <right><w>Røsten i Lyset.</w></right>
 </epigraph>
 <poetry>
-,,Jeg er mig selv en Gaade —''
+„Jeg er mig selv en Gaade —“
 Det har jeg længe vidst;
-,,Til her mig selv at raade''
+„Til her mig selv at raade“
 Hvor længe jeg har Frist?
 Beroer paa Herrens Naade.
 
@@ -1330,7 +1335,7 @@ Men paa din indre Kraft
 Jeg fuldt Beviis har havt.
 Seer ret jeg paa din Næve,
 Den kan vel Mjølner hæve;
-Men - hvordan svinge den?
+Men — hvordan svinge den?
 Det lâr jeg staae derhen.
 Om du, som Odins Kiæmpe,
 Dit eget Mod kan dæmpe?
@@ -1340,7 +1345,7 @@ Til Ragnarokur-Sproget,
 Det, Vali! mærker du!
 
 <pb n="173" facs="183.jpg"/>    Jeg Vali-Magni kalder
-Dig - til jeg veed det Navn
+Dig — til jeg veed det Navn
 Du bærer, i vor Alder,
 I Rokur-Kiøbenhavn;
 Hvis du engang ved Stævne
@@ -1348,7 +1353,7 @@ Paa Ragna-Marken mig
 Vil Vidar-Modi nævne?
 Jeg overlader dig.
 
-    Men - lad os selv os glemme;
+    Men — lad os selv os glemme;
 (Det er vel Gaaden værdt!)
 Og høre Mestrens Stemme,
 Der har os begge lært!
@@ -1359,7 +1364,7 @@ I Gaaden hvad jeg troer.
 Let er min Gaade neppe,
 Som første beste Praas,
 Sat under Haandens Skieppe,
-Hvor Laas for Munden slaaes -
+Hvor Laas for Munden slaaes —
 Hvis ogsaa Gestur blinde
 Den halv i Tanke randt,
 <pb n="174" facs="184.jpg"/>Vist Heidrek ingensinde
@@ -1368,7 +1373,7 @@ Dens Heelbetydning fandt!
     Lidt meer end Ord maa kløve
 Min Giætter, meer end lee,
 Hvis for min Jomfrue-Løve
-Han ei skal staae med Spee -
+Han ei skal staae med Spee —
 Tilkort Philistren kommer,
 Der vil med List derfra;
 Thi Vidar Heltedommer
@@ -1377,7 +1382,7 @@ Har ingen Dalila!
     Du selv, hvo du mon være,
 (Philister er du ei!)
 Om og vi gik i Lære
-Hidtil paa samme Vei -
+Hidtil paa samme Vei —
 Hvis du kun aner Løier
 I hvad du raader halv,
 Med andres Kalve pløier;
@@ -1396,19 +1401,19 @@ Men for den Fromme bliver
 Den vrede Løve tam,
 Og Vinket, hun da giver,
 Er Blikket af et Lam.
-,,Kom nærmere!'' det siger,
-,,Jeg truer ikke dig!
+„Kom nærmere!“ det siger,
+„Jeg truer ikke dig!
 Hvis ei din Knælen sviger,
-Din Beden giætter mig!''
+Din Beden giætter mig!“
 
     Men, hvis du altsaa giætter
 (Tilføier Ikkeblind)
-Paa meer end ,,Væv for Jætter
-Af Edderkoppe-Spind'' -
+Paa meer end „Væv for Jætter
+Af Edderkoppe-Spind“ —
 Hvis bedre selv end Nogen,
 Hvis bedre selv end jeg,
 Du kiender det i Bogen,
-<pb n="176" facs="186.jpg"/>Der over mig slaaer Streg -
+<pb n="176" facs="186.jpg"/>Der over mig slaaer Streg —
 Saa kiæmp mod Gestur blinde,
 Som Gestur Ikkeblind,
 Den fulde Priis at vinde
@@ -1451,15 +1456,15 @@ Paa Tinden sammen sad!
     Tog hver sit Blad fra Læben
 Til meere hellig Sang
 End den, hvori min Stræben
-Derefter hidtil klang -
+Derefter hidtil klang —
     Tog hver sit Baand fra Tungen
 Til Dirren i den Qvalm,
 <pb n="178" facs="188.jpg"/>Hvor nu kun lyder Rungen
-Af brustne Klokkers Malm -
+Af brustne Klokkers Malm —
     Tog hver sin Laas fra Munden
 Til Trudsel i den Sal,
 Hvor Stærkod giøgler, bunden,
-I Larvers Bacchanal -
+I Larvers Bacchanal —
     Tog hver sin Klam fra Struben
 Til Raaben i den Ørk,
 Hvor lurer Ulvens Gluben
@@ -1493,7 +1498,7 @@ Og bød i Fiende-Vrimlen
 Mig venligen Guds Fred?
 Det kanst du ene raade,
 Der gav mig blot en Deel
-Opløsning af min Gaade -
+Opløsning af min Gaade —
 Giv mig dens Løsning heel!
 Vind Prisen fra dem alle,
 Der kiække samle sig
@@ -1524,7 +1529,7 @@ Maa halvt og fare vild!
     I Bogen over Bøger
 Fandt Længslen i mit Bryst
 Den Salighed den søger;
-Men - næsten blot til Lyst;
+Men — næsten blot til Lyst;
 Den Længsel, stilt, forøger
 Min Lyst i Hiernens Vraa
 Til Bogen over Bøger
@@ -1539,23 +1544,23 @@ Sig selv og Engens Lam,
 Ei Hyrdens, der beskytter
 Sin Hiord mod Aande-Glam!
 
-    Jeg gav, hvad den begiærte -
+    Jeg gav, hvad den begiærte —
 Med ingen anden Bog<note>anden] andrn</note>
 Den deler dette Hierte,
 Som den til Himlen drog;
 Men den mit Hoved deeler
 Med hin, hvis Siæle-Skat
 Sokrater og Aureler
-Studerte Dag og Nat -
+Studerte Dag og Nat —
 Den Bog, der Østens Blinde
 Til Krybben viiste Vei;
 Thi Vei jeg ei kan finde
 Hvor Stiernen lyser ei.
 
     Følg mig i Gaaden gierne,
-Trods mangen Krinkelkrog -
+Trods mangen Krinkelkrog —
 Trods mangt et Spind af Hierne
-<pb n="182" facs="192.jpg"/>For den, som blot er klog -
+<pb n="182" facs="192.jpg"/>For den, som blot er klog —
 Følg mig til Qvadets Kierne!
 Og du vil see den Stierne,
 Der Tanken ei bedrog;
@@ -1575,7 +1580,7 @@ Med mig min Hovedbog!
   <title>Vildskjalden</title>
   <firstline>At efter Lov og Regler ei du skriver</firstline>
   <source pages="183" facsimile-pages="194"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1593,7 +1598,7 @@ Men at du selv i Digten ingen giver,
   <firstline>Hin Schiller, denne Göthe paa vor Scene</firstline>
   <source pages="183" facsimile-pages="194"/>
   <keywords>ingemann,oehlenschlaeger,schiller,goethe,klopstock,ewald</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1618,7 +1623,7 @@ Hun udentvivl vil Ingemann den skiænke
     <note>Mottoet stammer fra <xref poem="horats2026010401"/> og kan oversættes ,,Ordets kraft ligger i forbindelsen og rækken''.</note>
   </notes>
   <source pages="184-192" facsimile-pages="195-203"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
