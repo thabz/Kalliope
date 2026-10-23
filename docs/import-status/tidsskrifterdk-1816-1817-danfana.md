@@ -53,7 +53,9 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 *Gaade-Kampen* og *Til Danfanas Læsere*. Marts har nu også
 *Til Danfanas Læsere*, *Apologie for min Vidspilde*, *Sjællandsk Trøst*
 og *Litterariske Nyheder* (side 284–288).
-Det giver foreløbig 77 tekstforekomster i hæfterne. Importen er ikke færdig.
+Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
+(side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
+Det giver foreløbig 85 tekstforekomster i hæfterne. Importen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
 synkroniseret. Den offentlige facsimilekontrol er gennemført uden fejl.
@@ -74,7 +76,7 @@ har udviskede bogstaver. De eksisterende læsninger bevares med udtrykkelige
 usikkerhedsnoter; der er ikke rekonstrueret tekst fra en anden udgave.
 Farvekilde: <https://www.kb.dk/e-mat/dod/130017630319-color.pdf>.
 
-De resterende hæftetekster, alle relevante trykte rettelser og den samlede
+De resterende hæftetekster fra april og frem, alle relevante trykte rettelser og den samlede
 slutkontrol mangler fortsat. Værkerne har derfor status `incomplete`, og
 PR’en er fortsat en kladde.
 
@@ -128,4 +130,22 @@ De tre tidligere martsforekomster på side 193–199 er også uafhængigt
 gennemgået: 12 konkrete rettelsesfund er verificeret, herunder to ord, fem
 sideskift, originalnoter, citatmarkører og indryk. Alle 29 kandidater fra
 den nye ufiltrerede martsanalyse er afklaret mod kilden. De syv indlagte
-martstekster er visuelt gennemgået; de to længere tekster mangler stadig.
+martstekster var dermed visuelt gennemgået før de to længere tekster.
+
+Begge længere martstekster er nu også indsat og uafhængigt kontrolleret.
+Drømmespillet bevarer indre titelblad, dedikation, prolog, Drømmen,
+Gaaden i Drømmen med Chor, epilog og moral som en samlet sektion. De fem
+verseblokke har 66, 133, 326, 44 og 8 vers; den lange, fysisk ombrudte linje
+på side 227 er ét vers. Seks delvis beskadigede ord står som `[ulæseligt]`.
+
+Ludlam-artiklens 42 sider bevarer 16 originale fodnoter og 43 sideskift
+(41 i hovedteksten og to i fortsatte noter), prosastykker, sangcitater og
+dramatisk dialog. Otte beskadigede ord er markeret `[ulæseligt]`. Fire
+konkrete ordrettelser er uafhængigt genkontrolleret efter indsættelsen.
+
+Marts indeholder nu 15 tekstposter og én sektion med alle hæftets tekstdele.
+Alle 42 kandidater i den ufiltrerede strukturkontrol af 17 poesiblokke er
+individuelt afklaret mod kilden. Hæftets 88 interne sideskift er kontrolleret
+med de præcise facsimilefilnavne. Teksterne har fortsat kun korrektur1, og
+hæftet er `incomplete`; de 20 beskadigede ord i nye martsforekomster og den
+samlede slutattest mangler stadig. Variantkontrollen er gentaget.
