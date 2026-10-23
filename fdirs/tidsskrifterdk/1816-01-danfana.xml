@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1816-01-danfana" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1816-1817-danfana" sort-order="10">
+<kalliopework id="1816-01-danfana" author="tidsskrifterdk" status="complete" type="periodical" parent="1816-1817-danfana" sort-order="10">
 <workhead>
   <title>Danfana: Januar 1816</title>
   <breadcrumbtitle>Januar 1816</breadcrumbtitle>
@@ -17,6 +17,9 @@
   </source>
   <errata status="none"/>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-23T14:14:27+02:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -30,7 +33,7 @@
     <note>For Navnets, dets egentlige Betydning, og Indskrænkelse her til samme, mindste Spillerum, skal en seenere Afhandling aflægge Regnskab.</note>
   </notes>
   <source pages="1-8" facsimile-pages="8-15"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -85,7 +88,7 @@ Christianos.</right>
     <note>Første strofe alluderer til Oehlenschlägers <xref poem="oehlenschlaegers-valravnen,81-101"/>.</note>
   </notes>
   <source pages="9-11" facsimile-pages="16-18"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -155,11 +158,14 @@ Og dem er det mig om at giøre.
   <title>Ode til Sommerfuglene</title>
   <subtitle>(<w>Ludvig Heiberg</w> helliget.<footnote>Efter en min lille Søn tilsendt Foræring af hans Insekt-Samling paa Festdagen den 28de October 1815.</footnote>)</subtitle>
   <firstline>I Blomsterengle, som min Aand forynge</firstline>
+  <dates>
+    <event>1815-10-28</event>
+  </dates>
   <notes>
     <note>Baggesen havde med sit digt „Det evige Sindbillede“ æsket det dannede borgerskab til gådeløsning, hvilket afstedkom en del forsøg på løsninger i form af digte — dette, og flere af de følgende digte, er svar på sådanne forsøg.</note>
   </notes>
   <source pages="12-16" facsimile-pages="19-23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -286,7 +292,7 @@ Og fandt en venlig Andagts-Gnist herneden,
   <indextitle>Motto</indextitle>
   <nofirstline/>
   <source pages="17" facsimile-pages="24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -301,7 +307,7 @@ Davus sum, non Oedipus! —
   <title>Sphinx’s Tiltale</title>
   <firstline>Jeg synker dybt og dybere i Sandet</firstline>
   <source pages="19" facsimile-pages="26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -334,7 +340,7 @@ Min Hieroglyph har stemplet alle Dele,
     <note>Verset »SlaaerBoltetræmodBoldt,modSkjoldetSværdet« er sammentrykt uden mellemrum i trykket. Gentagelsen »det det« på side 24 følger ligeledes trykket. Sidste tekstside, side 58, er fejlpagineret 38.</note>
   </notes>
   <source pages="20-58" facsimile-pages="27-65"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1116,7 +1122,7 @@ Du kan ei svare paa dit eget: Hvad?
   <title>Til Sphinx</title>
   <firstline>Hav Tak! Du gamle Sphinx! at Du laae stille</firstline>
   <source pages="59" facsimile-pages="66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1154,7 +1160,7 @@ Jeg tænkte ikke paa de hundred Daler!
   <firstline>Hvad seer jeg? kan et ungt uvæbnet Øie</firstline>
   <source pages="60-66" facsimile-pages="67-73"/>
   <keywords>thiele</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -1470,7 +1476,7 @@ Han paa sin Ven og Tjener, Zephyr, kaldte,
     Til Amors Slot) og saa han til ham talte:
 
 <pb n="75" facs="081.jpg"/>„Iil, Zephyr, iil, og hvisk i hendes Øre
-    Det Ord, som Gaadens Proteus undertvinger;<note>Proteus] Protens</note>
+    Det Ord, som Gaadens Proteus undertvinger;<note>Den tidligere transskription angav rettelsen »Proteus] Protens«; trykket har »Proteus«.</note>
     Men hvisk det saa, at andre ei det høre!“
 
 Knap nærmer Zephyr sig paa lette Vinger,
@@ -1520,7 +1526,7 @@ Selv naar jeg troer at gjætte, hvad betyder
   <subtitle>En philosophisk Ballade.</subtitle>
   <firstline>Imanuel Jens Baggesen</firstline>
   <source pages="77-92" facsimile-pages="84-99"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -1906,7 +1912,7 @@ Let fra den lille mørke Jord,
   <suptitle>Litterariske Nyheder.</suptitle>
   <title>Fiendtlige Fredspræliminarier</title>
   <source pages="93-96" facsimile-pages="100-103"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
