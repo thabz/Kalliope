@@ -465,6 +465,8 @@ id'er, der ikke fandtes i base-committen, håndhæves efter dette format, så
 historiske id-formater fortsat kan bevares uændret.
 Korpustesten sammenligner arbejdsfilerne med den fælles base for `origin/master`
 og `HEAD`, så nye id'er også kontrolleres lokalt inden commit.
+Korpustesten afviser desuden eksisterende tekst- og section-id'er med
+antologipræfiks, når det effektive digter-id tilhører en anden forfatter.
 
 ### Text head
 

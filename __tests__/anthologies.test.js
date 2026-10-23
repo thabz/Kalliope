@@ -257,9 +257,9 @@ describe('antologiplaceringer', () => {
     const toc = build_section_toc(workbody, 'antologierdk');
 
     expect(toc.slice(0, 3).map(item => item.id)).toEqual([
-      'antologierdk2026071901',
-      'antologierdk2026071902',
-      'antologierdk2026071903',
+      'arnesen-kall2026102301',
+      'arnesen-kall2026102302',
+      'arnesen-kall2026102303',
     ]);
   });
 });
