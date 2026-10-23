@@ -32,7 +32,7 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle hæfter efter marts er fortsat `incomplete`; deres tidligere
+Alle hæfter efter april er fortsat `incomplete`; deres tidligere
 delkontroller nedenfor er ikke afsluttende godkendelser.
 
 Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
@@ -222,7 +222,8 @@ falske blanklinjer og de to korte slutmeddelelsers ordlyd er kontrolleret.
 Alle 83 kandidater i den ufiltrerede analyse af 76 poesiblokke er individuelt
 afklaret. To falske strofebrud ved side 374 og 375 er fjernet efter direkte
 kildekontrol. Artiklen har to beskadigede ord ud over de to i Medynksskrivelse;
-de er markeret uden rekonstruktion. Hæftet forbliver `incomplete`.
+de er markeret uden rekonstruktion. Den senere slutkontrol er beskrevet
+i afsnittet »April 1816: afsluttende hæftekontrol« nedenfor.
 
 
 ## Marts 1816: afsluttende hæftekontrol
@@ -245,3 +246,27 @@ dataproblemer; titelblads-JPEG'en matcher den godkendte rammebevarende
 billed-QA. Hæftet har nu `status="complete"`,
 `korrektur1,korrektur2,kilde,side` på alle tekstposter og modelattest.
 Slutcheckpoint, tests og GitHub CI dokumenteres i PR #2012.
+
+
+## April 1816: afsluttende hæftekontrol
+
+Slutkontrollen omfatter alle 30 tekstposter, 76 poesiblokke, 85 interne
+sideskift med præcise facsimilefilnavne samt prosa,
+originalnoter, overskrifter og typografi. Den gentagne variantkontrol gav
+ingen uafklarede kandidatpar eller dataproblemer. Tre afsluttende kommaer
+er fjernet fra katalogtitlerne efter titelreglen; undertitlernes trykte
+tegnsætning bevares. »Epistlerne ti Fru Professorinde O******« bevares som
+trykt. Horazoversættelsen er forbundet med `horats` via den dokumenterede
+mekanisme for originaler, der endnu ikke findes i Kalliope.
+
+De fire beskadigede ord på side 298, 299, 341 og 344 bevares som
+`[ulæseligt]` med præcise noter. Ingen læsemåde er rekonstrueret.
+Titelblads-JPEG'en matcher den godkendte rammebevarende billed-QA.
+Rettelsesarket på PDF-side 499 vedrører side 469 i maj; april har ingen
+relevante trykte rettelser og registreres med `<errata status="none"/>`.
+
+Alle 83 kandidater fra den ufiltrerede helværksanalyse er afklaret mod
+facsimilet. Den lange kritikartikels verscitater er desuden genåbnet og
+strukturkontrolleret under slutreviewet. Hæftet har nu `status="complete"`,
+`korrektur1,korrektur2,kilde,side` på alle tekstposter, `<pagebreaks/>` og
+modelattest. Slutcheckpoint, tests og GitHub CI dokumenteres i PR #2012.
