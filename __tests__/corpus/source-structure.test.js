@@ -131,6 +131,18 @@ describe('work source structure', () => {
     expect(collectSourcePolicyIssues('work.xml', document).externalSourceLinks).toHaveLength(1);
   });
 
+  it.each([
+    'https://fr.wikisource.org/wiki/Livre:Victor_Hugo.djvu',
+    'https://en.wikisource.org/wiki/Page%3APoems.djvu/12',
+    'https://de.wikisource.org/wiki/Seite:Gedichte.djvu/12',
+    'https://de.wikisource.org/wiki/ADB:Hensel,_Louise',
+  ])('allows scan pages and reference works: %s', href => {
+    const document = parseWorkXml(`<kalliopework><workhead>
+      <note>Kilde <a href="${href}">↬</a>.</note>
+    </workhead></kalliopework>`);
+    expect(collectSourcePolicyIssues('work.xml', document).externalSourceLinks).toEqual([]);
+  });
+
   it('allows scan icons, internal text links, and email in notes', () => {
     const document = parseWorkXml(`<kalliopework><workhead>
       <note>Trykt kilde <a href="https://example.org/scan.pdf">↬</a>;

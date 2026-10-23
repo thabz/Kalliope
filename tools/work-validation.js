@@ -448,8 +448,25 @@ const collectSourcePolicyIssues = (filename, document) => {
     !/^(?:https?:)?\/\/(?:www\.)?kalliope\.org(?:\/|$)/iu.test(href);
 
   // These endpoints serve transcribed literary texts, rather than scan pages.
-  const isExternalLiteraryText = href =>
-    /wikisource\.org\/wiki\/(?!ADB:)|writersinspire\.org\/content\/|shakespeare\.mit\.edu\/|bartleby\.com\/|perseus\.tufts\.edu\/hopper\/text|texts\.alpheios\.net\/text\//iu.test(href);
+  const isExternalLiteraryText = href => {
+    let url;
+    try {
+      url = new URL(href, 'https://kalliope.org');
+    } catch {
+      return false;
+    }
+    const host = url.hostname.toLowerCase();
+    const pathname = url.pathname;
+    if (host === 'wikisource.org' || host.endsWith('.wikisource.org')) {
+      // Scan pages, scan indexes and the biographical dictionary are sources.
+      return /^\/wiki\//iu.test(pathname) &&
+        !/^\/wiki\/(?:ADB|Page|Index|File|Image|Livre|Seite|Datei|Side)(?::|%3a)/iu.test(pathname);
+    }
+    return (host === 'writersinspire.org' && pathname.startsWith('/content/')) ||
+      host === 'shakespeare.mit.edu' || host === 'www.bartleby.com' || host === 'bartleby.com' ||
+      (host.endsWith('.perseus.tufts.edu') && pathname.startsWith('/hopper/text')) ||
+      (host === 'texts.alpheios.net' && pathname.startsWith('/text/'));
+  };
 
   Array.from(work.getElementsByTagName('source')).forEach(source => {
     Array.from(source.getElementsByTagName('*')).filter(link => ['a', 'xref'].includes(link.nodeName)).forEach(link => {
