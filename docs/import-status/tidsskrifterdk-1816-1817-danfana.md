@@ -31,8 +31,31 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle øvrige hæfter er fortsat `incomplete`; deres tidligere delkontroller
-nedenfor er ikke afsluttende godkendelser.
+Alle hæfter efter februar er fortsat `incomplete`; deres tidligere
+delkontroller nedenfor er ikke afsluttende godkendelser.
+
+Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
+91 interne sideskift: 85 i hovedteksterne og seks i fortsatte originalnoter.
+97 tekstsideforekomster dækker alle 96 fysiske tekstsider uden huller;
+de to selvstændige digte på side 183 deler samme facsimileside.
+Alle 21 poesiblokke samt prosaafsnit, mottoer, overskrifter og typografi
+er omfattet af den uafhængige kontrol. Mottoets førsteord i
+*Gaade-Kampen* er rettet fra »Eet« til trykkets »Let«. I tre tidligere
+tekstposter er 74 linjers lange streger og citationstegn rettet efter
+konkret sidekontrol; originale og redaktionelle noters indhold er uændret.
+
+De dokumenterede legacy-skader i »Strøetankernes« (147), den islandske
+linje (176) og »spørger du, „hvor« (185) bevares med præcise noter.
+Dokumenterede ældre emendationer, herunder »kildrer« for »smager«, bevares
+udtrykkeligt som emendationer og fremstilles ikke som sikre kildelæsninger.
+Dateringen 20.–21. januar 1816 er fortsat et interval i kildeteksten og noten;
+intet enkelt døgn er opfundet som metadata. Variantkontrollen gav ingen
+uafklarede kandidatpar eller dataproblemer. Februars titelblads-JPEG matcher
+den godkendte rammebevarende billed-QA. Hæftet har `status="complete"`,
+`korrektur1,korrektur2,kilde,side`, `<pagebreaks/>`, ingen relevante rettelsesark
+og modelattest. Slutcheckpoint, tests og GitHub CI dokumenteres i PR #2012.
+
+
 
 ## Kilde og konkret mangel
 
@@ -96,8 +119,8 @@ rammen, er forkastet. Majomslaget er udeladt efter brugerens godkendelse.
 Januars fire tidligere tekstforekomster og oktoberhæftets 30 tidligere
 forekomster er uafhængigt gennemgået mod tekstsiderne. Fundene om ordlyd,
 typografi og præcise sideskift er rettet og genkontrolleret. De nye
-januar- og februartekster er også særskilt uafhængigt korrekturlæst. Dette er ikke en
-færdiggodkendelse af hele januar- eller oktoberhæftet.
+januar- og februartekster er også særskilt uafhængigt korrekturlæst. Januar er efterfølgende færdiggjort som beskrevet ovenfor; oktoberhæftet
+er fortsat ikke færdiggodkendt.
 
 To læsninger i de eksisterende tekster kan ikke fuldt genkontrolleres:
 »suser« i *Ode til Sommerfuglene*, side 13, og »Jesu Christi« i *Elegie*,
