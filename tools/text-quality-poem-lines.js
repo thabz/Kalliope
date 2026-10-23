@@ -377,7 +377,8 @@ const findTitleMetadataFindings = ({
       const title = titleTextWithoutNotes(candidate);
       const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
       const forbiddenComma = type !== 'title' && /,$/u.test(title) === true;
-      const forbiddenOtherPunctuation = punctuationIgnored === false &&
+      const forbiddenOtherPunctuation = ['text', 'kalliopework'].includes(owner.tagName) === true &&
+        punctuationIgnored === false &&
         titleFieldsWithoutTrailingPunctuation.includes(type) === true &&
         /[.:;]$/u.test(title) === true && endsWithAllowedEllipsis === false;
       if (forbiddenComma === true || forbiddenOtherPunctuation === true) {
@@ -395,18 +396,46 @@ const findTitleMetadataFindings = ({
         );
       }
     });
+
+    const title = extractedTitleCandidate(head, 'title');
+    const firstline = extractedTitleCandidate(head, 'firstline');
+    const indextitle = extractedTitleCandidate(head, 'indextitle');
+    const linktitle = extractedTitleCandidate(head, 'linktitle');
+    const toctitle = extractedTitleCandidate(head, 'toctitle');
+    const effectiveTitles = {
+      toctitle: toctitle ?? title ?? firstline ?? linktitle,
+      linktitle: effectiveTextTitles({ firstline, title, indextitle, linktitle }).linkTitle,
+    };
+    Object.entries(effectiveTitles).forEach(([type, candidate]) => {
+      if (candidate == null || ['title', 'firstline'].includes(candidate.type) === false) {
+        return;
+      }
+      if (/,$/u.test(titleTextWithoutNotes(candidate)) === true) {
+        issues.push(titleIssue({
+          file,
+          context,
+          textId,
+          candidate,
+          rule: titleTrailingPunctuationRule,
+          description: `The effective ${type} must not end with a comma (inherited from ${candidate.type}).`,
+        }));
+      }
+    });
   };
 
-  checkTrailingPunctuation({
-    head: workhead,
-    owner: work,
-    textId: 'workhead',
+  [workhead, ...getElementsByTagName(work, 'head')].forEach(head => {
+    if (head != null) {
+      checkTrailingPunctuation({
+        head,
+        owner: head.parentNode,
+        textId: head === workhead ? 'workhead' : safeGetAttr(head.parentNode, 'id'),
+      });
+    }
   });
 
   getElementsByTagName(document, 'text').forEach(text => {
     const head = getChildByTagName(text, 'head');
     const textId = safeGetAttr(text, 'id');
-    checkTrailingPunctuation({ head, owner: text, textId });
     const firstline = extractedTitleCandidate(head, 'firstline');
     const title = extractedTitleCandidate(head, 'title');
     const indextitle = extractedTitleCandidate(head, 'indextitle');

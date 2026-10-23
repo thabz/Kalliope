@@ -736,6 +736,9 @@ Tekster med `skip-index` er undtaget fra kontrollen af indekstitlen, men ikke
 fra kontrollen af linktitlen.
 
 Afsluttende komma er tilladt i `<title>`, uanset om der er en undertitel.
+Når titlen slutter med komma, skal de effektive `toctitle` og `linktitle`
+angives uden komma gennem særskilte titelfelter. Kontrollen gælder også
+fallbacks fra `title` og `firstline`, inklusive værk- og sektionshoveder.
 Andre titelfelter (`<indextitle>`, `<toctitle>`, `<breadcrumbtitle>`,
 `<linktitle>`, `<subtitle>` og `<suptitle>`) må aldrig slutte med komma.
 Kommaforbuddet kan ikke undtages med `ignore-tests`.
@@ -1149,6 +1152,8 @@ indrykning af enkelte verslinjer; `<center>`, `<right>`
 og `<nonum>` kan markere centrering og oplysninger uden for versene.
 `<column>` og `<two-columns>` må ikke bruges i noter: trykkets kolonneopsætning
 overføres ikke til XML. Almindelig notetekst behøver ingen blokmarkering.
+Brug aldrig `<prose>` i en fodnote, heller ikke i titel- eller undertitelfodnoter;
+korpustesten kontrollerer alle fodnoter i værkfilen.
 `<poetry>` må stå direkte i `<body>`, `<note>` eller `<footnote>`;
 `<prose>` og `<epigraph>` skal være direkte børn af `<body>`.
 

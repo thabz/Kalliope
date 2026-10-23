@@ -4,7 +4,7 @@
   <title>Nytaarsgave for Damer</title>
   <year>1792</year>
   <notes>
-    <note>Udgaven har intet trykt årstal eller angivelse af trykkested og udgiver. Det Kgl. Bibliotek registrerer den som årgangen 1792 i Simon Poulsens række. <a href="https://www.danskforfatterleksikon.dk/1850tit/0085/sknr85207.htm">Dansk Forfatterleksikon</a> anfører tilknytningen til samme udgiver som usikker.</note>
+    <note>Udgaven har intet trykt årstal eller angivelse af trykkested og udgiver. Det Kgl. Bibliotek registrerer den som årgangen 1792 i Simon Poulsens række.</note>
   </notes>
   <proofreadings>
     <proofreading model="Codex (GPT-6; modelvariant ikke oplyst)" datetime="2026-10-22T22:31:00+02:00"/>
@@ -75,6 +75,8 @@ Ja Pigernes Sanger faaer Krandsen til Løn.
 <head>
   <title>Den lykkelige Pige,</title>
   <subtitle>en Sang.<footnote>Med Musik af Hr. Capelmester <w>Schulz</w>.</footnote></subtitle>
+  <toctitle>Den lykkelige Pige</toctitle>
+  <linktitle>Den lykkelige Pige</linktitle>
   <firstline>Jeg er ei kiøn; men sund jeg er</firstline>
   <pictures>
     <picture type="illustration" src="1792-nytaarsgave-node-009.jpg">Nodebilag til teksten; musik af J. A. P. Schulz, blad 1 af 2.</picture>
@@ -235,23 +237,17 @@ Held hver, som deres Liige kiende lærte!
   <title>Den nøddebrune Moe</title>
   <subtitle>
     <line>En Ballade,<footnote>
-<prose>
 Dette nu halvfierdehundred Aar gamle Digt findes og indrykket i <w>Prior’s</w> Poesier. Han har <pb n="10" facs="018.jpg"/>bedre udført det; og af denne ypperlige Omarbeidning skal jeg en anden Gang vove at give en Oversættelse. I nærværende har jeg forandret et Sted i den Strophe, hvor hun siger:
-</prose>
 <poetry lang="en">
 And ere we goe a bed or two
 I can provide anone.
 </poetry>
-<prose>
 til:
-</prose>
 <poetry>
 „Af Løv dertil jeg rede vil
 En Seng for os saa blød.”
 </poetry>
-<prose>
 De to hele Stropher, hvori han melder hende, at han har en anden Pige i Skoven, som han holder mere af, og hun svarer, at hun gierne vil være sin Medbeilerskes ydmyge Tienerinde, har jeg bortladt, det ingen delikat Læserinde vil fortryde paa.
-</prose>
 </footnote></line>
     <line>efter The nut brown maid,</line>
     <line>af den gamle engelske Digter Chaucer,</line>
@@ -1158,6 +1154,8 @@ Naar han trykker til sit Bryst
     <line>Sang.<footnote>Med Musik af Hr. Hof-Violon <w>Lorenz</w>.</footnote></line>
     <line>(Efter et Besøg i Hovedstaden.)</line>
   </subtitle>
+  <toctitle>Lina’s</toctitle>
+  <linktitle>Lina’s</linktitle>
   <firstline>Om Hiertet let, i Hu saa glad</firstline>
   <pictures>
     <picture type="illustration" src="1792-nytaarsgave-node-059.jpg">Nodebilag til teksten; musik af Lorenz.</picture>
@@ -1234,10 +1232,9 @@ Ei ønske bedre Dage.
 <head>
   <title>Lida,</title>
   <subtitle>en Ballade.</subtitle>
+  <toctitle>Lida</toctitle>
+  <linktitle>Lida</linktitle>
   <firstline>Som Dagningen yndig og haabefuld</firstline>
-  <notes>
-    <note>På s. 57 er vokalen i »Bevær mig!« utydelig; læsningen er usikker.</note>
-  </notes>
   <source pages="52-64" facsimile-pages="63-75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1354,7 +1351,7 @@ Hans Læbe kun skabt til at smile.
 „Med Folk jeg udsendtes fra Leire:
 „Jeg iler til klagende Kyster ned
 „At bryde de trodsende Venders Fred:
-„Bevær mig! Jeg døe eller seire!”
+„Berør mig! Jeg døe eller seire!”
 
    End blodrød og undrende <w>Lida</w> staaer;
 Dog oplod hun bævende Munden:
@@ -1575,10 +1572,12 @@ Straf, mig Himmel, om jeg usandt siger!
 </body>
 </text>
 
-<text id="antologierdk2026102201" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102201" author="anonym1700dk">
 <head>
   <title>Erindring,</title>
   <subtitle>en Sang.</subtitle>
+  <toctitle>Erindring</toctitle>
+  <linktitle>Erindring</linktitle>
   <firstline>Kom, Erindring om de tabte Dage!</firstline>
   <notes>
     <note>Trykt med signaturen ph.</note>
@@ -1731,7 +1730,7 @@ Sikkert sang jeg da min Freds Forliis.
 </body>
 </text>
 
-<text id="brunf2026102201" author="brunf">
+<text id="anonym1700dk2026102301" author="anonym1700dk">
 <head>
   <title>Alpe-Rosens Skabelse</title>
   <subtitle>
@@ -1743,7 +1742,8 @@ Sikkert sang jeg da min Freds Forliis.
   </subtitle>
   <nofirstline/>
   <notes>
-    <note>Den tyske paralleltekst, »Die Schöpfung der Alpenrose«, findes i Friederike Bruns <i>Gedichte</i> (1795), s. 169–175; se <a href="https://de.wikisource.org/wiki/Die_Sch%C3%B6pfung_der_Alpenrose">tekst og skanning</a>. Denne senere udgave dokumenterer tekstens identitet, men er ikke forlægget for trykket fra 1792. Den danske oversætter er ikke oplyst.</note>
+    <note>Gendigtning af Friederike Bruns <xref type="translation" poem="brunf2026102301"/>.</note>
+    <note>Trykt uden sikkert identificeret oversætter.</note>
   </notes>
   <source pages="73-80" facsimile-pages="84-91"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1815,7 +1815,7 @@ Derfor min Læbe tav; Ædle! mit Hierte nød.
 </body>
 </text>
 
-<text id="antologierdk2026102202" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102202" author="anonym1700dk">
 <head>
   <title>Regnbuen</title>
   <subtitle>en Fabel.</subtitle>
@@ -1867,7 +1867,7 @@ Men den, som ej blendes af Titler og Pragt,
 </body>
 </text>
 
-<text id="antologierdk2026102203" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102203" author="anonym1700dk">
 <head>
   <title>Elegie</title>
   <subtitle>til en lidende Veninde.</subtitle>
@@ -2016,7 +2016,7 @@ Gid vor Ven lyksalig leve
 </body>
 </text>
 
-<text id="antologierdk2026102204" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102204" author="anonym1700dk">
 <head>
   <title>Eensomhed</title>
   <subtitle>en Elegie.</subtitle>
@@ -2078,7 +2078,8 @@ Og min Graad skal tørres paa mit Leer.
   <subtitle>en Fisker-Idyl, efter Bronner.</subtitle>
   <firstline>Hyler, skarpe Nordenvinde</firstline>
   <notes>
-    <note>Gendigtning af Franz Xaver Bronners »Irin« i <i>Fischergedichte und Erzählungen</i> (Zürich, 1787), s. 52–55; se <a href="https://archive.org/details/10106405bsb">digitaliseringen</a>. Liebenberg har versificeret prosaidylen.</note>
+    <note>Gendigtning af Franz Xaver Bronners <xref type="translation" poem="bronner2026102301"/>. Liebenberg har versificeret prosaidylen.</note>
+    <note>Mottoet er fra Rahbeks <xref poem="rahbek2019091906"/>, 4. strofe. Ordlyden afviger fra udgaven fra 1794.</note>
   </notes>
   <source pages="93-100" facsimile-pages="104-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2241,7 +2242,7 @@ Sit Offer, Cypris, bringer dig!
 </body>
 </text>
 
-<text id="antologierdk2026102205" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102205" author="anonym1700dk">
 <head>
   <title>Quatrain</title>
   <subtitle>
@@ -2302,7 +2303,7 @@ Jeg agted’ saa lidet hans Lykke.
 </body>
 </text>
 
-<text id="antologierdk2026102206" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102206" author="anonym1700dk">
 <head>
   <title>Sympathie</title>
   <subtitle>mellem mit Hierte og mit Uhr.</subtitle>
@@ -2398,7 +2399,7 @@ Ak! min Ven, min Ven, min Ven!
 </body>
 </text>
 
-<text id="antologierdk2026102207" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102207" author="anonym1700dk">
 <head>
   <title>Sang</title>
   <firstline>Lyksalig den Moder, som seer i en Søn</firstline>
@@ -2428,7 +2429,7 @@ Men denne lyksalige Moder er jeg!
 </body>
 </text>
 
-<text id="antologierdk2026102208" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102208" author="anonym1700dk">
 <head>
   <title>Den attende October 1788</title>
   <firstline>Hvor findes Jordens Glæder?</firstline>
@@ -2610,7 +2611,7 @@ Og ei Døden selv forskrækker meer.
 </body>
 </text>
 
-<text id="antologierdk2026102209" author="antologierdk" skip-index="true">
+<text id="anonym1700dk2026102209" author="anonym1700dk">
 <head>
   <title>Sanct Hans-Ormen</title>
   <subtitle>en Idyl.</subtitle>
@@ -2643,7 +2644,7 @@ Svagt glimtede den tiltagende Maane giennem Ellebuskenes runde Blade; neppe fik 
   <subtitle>(Efter Voß, til Schulz’s Melodie.)</subtitle>
   <firstline>Hvor Egen løvfuld Arm udbreder</firstline>
   <notes>
-    <note>Gendigtning af Johann Heinrich Voß’ sang »Beschattet von der Pappelweide«, indlagt i <a href="https://projekt-gutenberg.org/authors/johann-heinrich-voss/books/idyllen/chapter/7/">»Die Kirschenpflückerin«</a> (1780). Det konkret benyttede tryk er ikke identificeret.</note>
+    <note>Gendigtning af Johann Heinrich Voß’ <xref type="translation" poem="voss2026102301"/>.</note>
   </notes>
   <source pages="121-123" facsimile-pages="134-136"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3664,9 +3665,6 @@ I Forstands, i Dydens Hæder,
   <title>Alfhild</title>
   <subtitle>en Ballade.</subtitle>
   <firstline>Trolig gaaer Alfhild til Sundets Bred</firstline>
-  <notes>
-    <note>På s. 170 er »klartlig« vanskeligt at læse; trykket kan også læses »klatlig«.</note>
-  </notes>
   <source pages="165-174" facsimile-pages="178-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3812,7 +3810,7 @@ Og svor, kun sin <w>Haralds</w> at blive.
 „Ædel i Livet, i Døden stor! —
 „O! det er min eneste Glæde.”
 
-    Graaden nu frembrød, og klartlig ned
+    Graaden nu frembrød, og klarlig ned
 Af lokkende Blikke den strømmed';
 Sorgen blev rolig, og Dydens Fred
 I <w>Alfhild</w> sin Salighed tømmed'.
