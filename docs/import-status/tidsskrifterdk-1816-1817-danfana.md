@@ -4,6 +4,36 @@ Brugeren har den 22. oktober 2026 udtrykkeligt godkendt: »Fortsæt uden
 majomslaget«. Importen til #1985 fortsætter med denne afgrænsede undtagelse
 fra PDF-skillens stopregel. Omslagets ordlyd rekonstrueres ikke.
 
+## Hæftevis færdiggørelse fra 23. oktober 2026
+
+Hæfterne færdiggøres ét ad gangen, med særskilt commit, push og grøn GitHub
+CI efter hvert hæfte. Rækkefølgen vælges praktisk. Denne session afsluttes
+efter februar 1816; senere hæfter må ikke påbegyndes i sessionen.
+
+Januar 1816 er færdigkontrolleret med alle 11 tekstposter, 85 interne
+sideskift og uafhængig kilde-, struktur- og typografikontrol. De 95 fysiske
+tekstsider er dækket; den blanke trykte side 18 er særskilt registreret.
+Thieles sidste tekstside er trykt 38, logisk 58, og har præcis
+facsimilereference `064.jpg`. Alle 49 kandidater fra helværksanalysen er
+afklaret med individuelle kildedispositioner. Variantkontrollen gav ingen
+uafklarede kandidatpar og ingen dataproblemer. Heibergs eksisterende
+variantrelation bevares.
+
+De to beskadigede legacy-læsninger »suser« (side 13) og »Jesu Christi«
+(side 66) bevares med deres præcise usikkerhedsnoter. Slutdispositionen
+bekræfter dokumentationen af kildeskaden, ikke de udviskede bogstaver.
+Ingen tekst er rekonstrueret. Heibergs gamle rettelsesnote »Proteus] Protens«
+er bevaret som historisk oplysning og præciseret: trykket har »Proteus«.
+Odededikationens festdag 28. oktober 1815 er også registreret som
+begivenhedsdato. Titelbladets eksisterende, rammebevarende JPEG matcher
+billed-QA'ens godkendte SHA-256.
+
+Januar har `status="complete"`, alle tekstposter har
+`korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
+Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
+Alle øvrige hæfter er fortsat `incomplete`; deres tidligere delkontroller
+nedenfor er ikke afsluttende godkendelser.
+
 ## Kilde og konkret mangel
 
 - KB: <https://www.kb.dk/e-mat/dod/130017630319-bw.pdf>, januar–juni 1816,
