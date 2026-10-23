@@ -7,8 +7,9 @@ fra PDF-skillens stopregel. Omslagets ordlyd rekonstrueres ikke.
 ## Hæftevis færdiggørelse fra 23. oktober 2026
 
 Hæfterne færdiggøres ét ad gangen, med særskilt commit, push og grøn GitHub
-CI efter hvert hæfte. Rækkefølgen vælges praktisk. Denne session afsluttes
-efter februar 1816; senere hæfter må ikke påbegyndes i sessionen.
+CI efter hvert hæfte. Rækkefølgen vælges praktisk. Sessionen med januar og februar er afsluttet.
+Brugeren har derefter bestilt de næste tre hæfter: marts, april og maj 1816.
+Hvert hæfte færdiggøres og publiceres med grøn CI, før arbejdet går videre.
 
 Januar 1816 er færdigkontrolleret med alle 11 tekstposter, 85 interne
 sideskift og uafhængig kilde-, struktur- og typografikontrol. De 95 fysiske
@@ -31,7 +32,7 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle hæfter efter februar er fortsat `incomplete`; deres tidligere
+Alle hæfter efter marts er fortsat `incomplete`; deres tidligere
 delkontroller nedenfor er ikke afsluttende godkendelser.
 
 Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
@@ -199,9 +200,9 @@ konkrete ordrettelser er uafhængigt genkontrolleret efter indsættelsen.
 Marts indeholder nu 15 tekstposter og én sektion med alle hæftets tekstdele.
 Alle 42 kandidater i den ufiltrerede strukturkontrol af 17 poesiblokke er
 individuelt afklaret mod kilden. Hæftets 88 interne sideskift er kontrolleret
-med de præcise facsimilefilnavne. Teksterne har fortsat kun korrektur1, og
-hæftet er `incomplete`; de 20 beskadigede ord i nye martsforekomster og den
-samlede slutattest mangler stadig. Variantkontrollen er gentaget.
+med de præcise facsimilefilnavne. Variantkontrollen er gentaget. Den senere
+afsluttende kontrol og dispositionen af de 20 beskadigede ord er beskrevet
+i afsnittet »Marts 1816: afsluttende hæftekontrol« nedenfor.
 
 April har desuden fået 26 nye tekstforekomster på side 289–339, herunder
 *Fandens Abestreger*, Horaz-oversættelsen, *Medynksskrivelse*, *Smaa Flyvedigte*,
@@ -222,3 +223,25 @@ Alle 83 kandidater i den ufiltrerede analyse af 76 poesiblokke er individuelt
 afklaret. To falske strofebrud ved side 374 og 375 er fjernet efter direkte
 kildekontrol. Artiklen har to beskadigede ord ud over de to i Medynksskrivelse;
 de er markeret uden rekonstruktion. Hæftet forbliver `incomplete`.
+
+
+## Marts 1816: afsluttende hæftekontrol
+
+Alle 15 tekstposter er færdigkontrolleret. De 101 tekstsideforekomster dækker
+97 fysiske tekstsider: den upaginerede læsermeddelelse og side 193–288.
+Alle 17 poesiblokke, prosaafsnit, originalnoter, overskrifter og typografi
+er omfattet af den uafhængige kildekontrol. 88 interne sideskift har præcise
+facsimilefilnavne, og `<pagebreaks/>` er registreret. Alle 42 kandidater fra
+den ufiltrerede helværksanalyse er afklaret. Undertitlen »i Læseverdenen.«
+har fået sit trykte slutpunktum; det samme gælder sektionsundertitlen
+»Spøgelset i Kerteminde.«. Begge rettelser fra PDF-side 206 er indført
+med typed erratafodnoter, og rettelsesarket er registreret i værkhovedet.
+
+De 20 beskadigede ord i de nye martsforekomster bevares som `[ulæseligt]`
+med præcise noter. Slutdispositionen godkender dokumentationen af kildeskaden,
+ikke en rekonstrueret læsemåde. Ældre redaktionelle noter er bevaret.
+Den gentagne variantkontrol gav ingen uafklarede kandidatpar eller
+dataproblemer; titelblads-JPEG'en matcher den godkendte rammebevarende
+billed-QA. Hæftet har nu `status="complete"`,
+`korrektur1,korrektur2,kilde,side` på alle tekstposter og modelattest.
+Slutcheckpoint, tests og GitHub CI dokumenteres i PR #2012.
