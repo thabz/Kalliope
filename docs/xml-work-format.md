@@ -448,15 +448,16 @@ winther2018081002
 
 Det effektive digter-id findes i elementets eget `author`, derefter i den
 nærmeste omsluttende sektions `author` og ellers i værkets
-`kalliopework/@author`. En tekst uden arvet eller eget `author` i et værk med
-`author="antologierdk"` får derfor eksempelvis id'et
-`antologierdk2026081501`. Løbenumre må ikke genbruges, hvis en tekst slettes
+`kalliopework/@author`. Antologi-id’er som `antologierdk` må aldrig bruges
+som præfiks for tekst- eller section-id’er. Ved ukendt forfatter angives en
+passende `anonym*`-post som `author`, fx `author="anonym1700dk"` og
+`id="anonym1700dk2026081501"`. Løbenumre må ikke genbruges, hvis en tekst slettes
 eller sammenlægges. Tekster og sektioner deler id-navnerum og løbenumre.
 
 Næste ledige id kan genereres uden at ændre værkfilen:
 
 ```sh
-npm run new-text-id -- fdirs/antologierdk/1872.xml
+npm run new-text-id -- fdirs/antologierdk/1872.xml --author anonym1800dk
 npm run new-text-id -- fdirs/antologierdk/1872.xml --author aarestrup
 ```
 
@@ -466,7 +467,8 @@ historiske id-formater fortsat kan bevares uændret.
 Korpustesten sammenligner arbejdsfilerne med den fælles base for `origin/master`
 og `HEAD`, så nye id'er også kontrolleres lokalt inden commit.
 Korpustesten afviser desuden eksisterende tekst- og section-id'er med
-antologipræfiks, når det effektive digter-id tilhører en anden forfatter.
+antologipræfiks i alle tilfælde, også ved ukendt forfatter og `skip-index="true"`.
+Id-generatoren afviser ligeledes antologipræfikser.
 
 ### Text head
 

@@ -7,12 +7,11 @@ import {
 } from '../../tools/validate-new-text-ids.js';
 
 describe('tracked work corpus text and section ids', () => {
-  it('never uses an anthology id for a text or section with an identified poet', () => {
+  it('never uses an anthology id for any text or section', () => {
     const issues = loadTrackedWorkFiles().flatMap(({ content, filename }) =>
       parseWorkTextIds(content, filename).texts,
-    ).filter(({ id, poetId }) =>
-      /^antologier[a-z]*\d/u.test(id) === true &&
-      id.startsWith(poetId) !== true,
+    ).filter(({ id }) =>
+      id.startsWith('antologier') === true,
     ).map(({ filename, id, poetId }) => `${filename}: ${id} belongs to ${poetId}`);
 
     expect(issues).toEqual([]);
