@@ -34,6 +34,21 @@ describe('text ids', () => {
       .toContain('oersted');
   });
 
+  it.each(['text', 'section'])('rejects anthology prefixes even for existing unindexed %s elements', element => {
+    const parsed = parseWorkTextIds(`
+      <kalliopework author="antologierdk"><workbody>
+        <${element} id="antologierdk20261024201904" skip-index="true"/>
+      </workbody></kalliopework>
+    `);
+
+    expect(newTextIdErrors(parsed.texts, parsed.texts)).toEqual([
+      expect.stringContaining('må ikke bruge antologipræfiks'),
+    ]);
+    expect(() => nextTextId({
+      poetId: 'antologierdk', dateStamp: '20261024', existingIds: [],
+    })).toThrow('Antologipræfiks');
+  });
+
   it('does not reuse a gap in the daily sequence', () => {
     expect(nextTextId({
       poetId: 'oersted',
@@ -86,7 +101,7 @@ describe('text ids', () => {
     const parsed = parseWorkTextIds(`
       <kalliopework author="antologierdk">
         <workbody>
-          <section id="antologierdk2026081501">
+          <section id="anonym1700dk2026081501" author="anonym1700dk">
             <content>
               <section id="aarestrup2026081501" author="aarestrup">
                 <content>
@@ -102,7 +117,7 @@ describe('text ids', () => {
     `);
 
     expect(parsed.texts.map(({ id, poetId }) => ({ id, poetId }))).toEqual([
-      { id: 'antologierdk2026081501', poetId: 'antologierdk' },
+      { id: 'anonym1700dk2026081501', poetId: 'anonym1700dk' },
       { id: 'aarestrup2026081501', poetId: 'aarestrup' },
       { id: 'aarestrup2026081502', poetId: 'aarestrup' },
       { id: 'winther2026081501', poetId: 'winther' },
@@ -149,7 +164,7 @@ describe('text ids', () => {
     expect(newTextIdErrors(parsed.texts, parsed.texts)).toEqual([]);
   });
 
-  it('generates an anthology id from the work author', () => {
+  it('requires a poet or anonymous author when generating an anthology text id', () => {
     const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-text-id-'));
     const corpusDirectory = path.join(directory, 'fdirs');
     const anthologyDirectory = path.join(corpusDirectory, 'antologierdk');
@@ -165,11 +180,17 @@ describe('text ids', () => {
         </kalliopework>
       `);
 
-      expect(generateTextId({
+      expect(() => generateTextId({
         corpusDirectory,
         dateStamp: '20260815',
         filename,
-      })).toBe('antologierdk2026081504');
+      })).toThrow('Antologipræfiks');
+      expect(generateTextId({
+        author: 'anonym1700dk',
+        corpusDirectory,
+        dateStamp: '20260815',
+        filename,
+      })).toBe('anonym1700dk2026081501');
       expect(generateTextId({
         author: 'aarestrup',
         corpusDirectory,
