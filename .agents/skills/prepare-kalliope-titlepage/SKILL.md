@@ -12,11 +12,13 @@ Create a faithful `p1` image from the actual printed title page. Read
 
 For a title page from a verified KB digitalization with a library stamp, read
 [KB stamp removal](references/kb-stamps.md) before the geometry workflow.
-Use an image-editing tool only to supply a local replacement, then compose it
-through a mask onto the original. All pixels outside the mask must remain
-identical in the lossless working image. Retain the stamp if print cannot be
-preserved. Always disclose removal or an unresolved stamp in the PR handoff;
-no extra approval is needed for a verified, successful edit.
+Prefer a direct ImageGen edit of the whole title-page image, requesting only
+removal of the identified stamp and preservation of the printed content and
+page appearance. Use the best visually checked result directly; do not add a
+local mask/compositing pass or require pixel identity outside the stamp.
+Retain the stamp if the original print cannot be preserved. Always disclose
+removal or an unresolved stamp in the PR handoff; no extra approval is needed
+for a verified, successful edit.
 
 The source PDF and facsimile pages remain unchanged. Other title pages retain
 the geometry-only workflow below.

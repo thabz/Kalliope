@@ -59,17 +59,20 @@ Agenten kontrollerer digitalisering, udgave og side; en KB-URL alene er ikke
 bevis for billedets proveniens.
 
 Følg [titelblad-skillens stempelprocedure](../.agents/skills/prepare-kalliope-titlepage/references/kb-stamps.md).
-Et genereret forslag må kun bidrage med pixels inden for en lokal maske på
-originalen. Bevar trykt tekst og illustration, også inde i stempelområdet.
-Kontrollér pixelidentitet uden for masken i det tabsfrie arbejdsbillede og
-kontrollér tryk, stempelrester og overgangen visuelt. Hvis trykket ikke kan
-bevares, beholdes stemplet, og begrænsningen rapporteres.
+Brug en direkte ImageGen-redigering med instruktion om kun at fjerne stemplet
+og bevare tryk, illustrationer, komposition og papirpræg. Det første direkte
+resultat foretrækkes, når det består den visuelle kontrol; der skal ikke tilføjes
+en lokal maskesammensætning eller kræves pixelidentitet uden for stemplet.
+
+Sammenhold hele det redigerede titelblad med kilden, og kontrollér stempelområdet
+særskilt. Afvis ændret tryk eller uvedkommende synlige ændringer. Hvis nødvendigt
+prøves en ny, målrettet redigering fra originalen. Kan trykket ikke bevares,
+beholdes stemplet, og begrænsningen rapporteres.
 
 Et vellykket indgreb kræver ikke særskilt godkendelse, men skal altid oplyses i
 PR-afleveringen med KB-kilde og stemplets placering. Original-PDF og faksimilesider
 ændres aldrig. Retoucheringen foretages før den sædvanlige geometriske behandling;
-den tilsidesætter ikke billed-QA eller beskæringsgrænserne. Pixelidentiteten gælder
-før rotation, beskæring og den afsluttende JPEG-komprimering.
+den tilsidesætter ikke billed-QA eller beskæringsgrænserne.
 
 ## Kvalitetskontrol
 

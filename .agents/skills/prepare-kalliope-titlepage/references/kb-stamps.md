@@ -11,66 +11,53 @@ request. Disclose the intervention in the delivering PR every time, including
 the title/page, KB source and location of the removed stamp. If removal would
 require reconstructing or changing print, retain the stamp and report why.
 
-## Local edit, original page
+## Direct image edit
 
 1. Keep the source immutable and work on a copy in scratch. Inspect it before
-   using the available image-editing tool (for example ImageGen). Request only
+   using ImageGen (or the available equivalent image-editing tool). Request only
    removal of the identified library stamp with matching aged paper texture.
-   Explicitly preserve all text, illustration, border, crop, geometry and other
-   paper features. If the editing tool is unavailable, retain the stamp and
-   report it; do not silently substitute a different restoration method.
-2. Treat the generated image as a source of replacement pixels only. Never use
-   the generated whole page as the result: even a plausible image may have
-   changed unrelated text or illustration.
-3. Prepare a grayscale mask in the original image's coordinates. Black means
-   copy the original, white means use the replacement, and intermediate values
-   feather the transition. Keep all nonzero pixels within the necessary stamp
-   area; feathering must not leak into unrelated areas. Protect original print
-   by making those pixels black in the mask, including print inside the stamp
-   area. A darkness threshold alone does not prove that print is protected.
-4. Ensure the proposal aligns with the source and has the same dimensions. A
-   differently sized proposal may be resized separately only when the geometry
-   still aligns; never resize or warp the original to match the proposal.
-   If alignment or protection of the print is uncertain, keep the stamp.
-5. Compose a new, lossless PNG and a scratch verification report:
+   Explicitly preserve every printed letter, illustration, border, crop,
+   geometry, colour and other paper features. If the tool is unavailable,
+   retain the stamp and report it.
+2. Prefer the first direct edited result when it passes visual inspection.
+   This is the intended method, as in the accepted Nytaarsgave 1798 example:
+   the direct ImageGen result was preferred over the subsequent local
+   mask/compositing experiment. Use the edited image itself, not a patch
+   transferred onto the original. Do not add a mask/compositing pass or require
+   pixel-for-pixel identity outside the stamp.
+3. Compare the entire edited title page with the source, then inspect the
+   stamp area closely. Check all printed text, illustration, borders,
+   composition and paper appearance, as well as stamp remnants and unnatural
+   restoration. The generated page is not automatically a faithful copy.
+   Reject results that alter original print or introduce unrelated visible
+   changes. If necessary, make a targeted new attempt from the original;
+   do not repeatedly regenerate or restore an already edited result.
+4. Keep the best successful result. Do not generate extra variants or impose
+   a local pixel-preservation technique merely because the tool changed pixel
+   values. Never reconstruct missing printed content to get a clean page.
 
-   ```shell
-   node .agents/skills/prepare-kalliope-titlepage/scripts/compose-stamp-retouch.js \
-     SOURCE.jpg GENERATED.png MASK.png SCRATCH/without-stamp.png \
-     'https://www.kb.dk/e-mat/dod/BOOK.pdf' SCRATCH/stamp-retouch.json
-   ```
+Example prompt:
 
-   The helper accepts only HTTPS KB URLs, but cannot verify image provenance,
-   title-page identity or the semantic contents of the mask. Those remain the
-   agent's responsibility. It refuses overwrites, dimension mismatches and
-   empty/whole-page masks. It blends decoded sRGB pixels, reopens the encoded
-   PNG and requires zero changed pixels outside the mask. The report records
-   input/output hashes, dimensions, changed bounds and pixel counts. It does
-   not claim that printed content has been visually checked.
-6. Inspect the whole result and the stamp area against the source. Check that
-   the stamp is removed, the transition is unobtrusive and every printed detail
-   remains intact. Narrow the mask or reject the edit if it changes print.
-   Do not treat the numeric report as a substitute for this check.
+> Remove only the blue library stamp below the publisher line. Fill its area
+> with matching aged paper texture. Preserve every printed letter, punctuation,
+> engraved illustration, border, signature, page stain, crop and composition.
+> No other restoration, enhancements, new text or changes to the title page.
 
-## Finish the title page
+## Finish and disclose
 
-Perform this step before the ordinary geometry workflow so its lossless PNG
-can be the input to `analyze`, `render` and `qa`, followed by a single final JPEG
-encoding. Keep the source, generated proposal, mask and reports in scratch;
-commit only the final image and necessary publication metadata.
+Use the successful edit as the input to the ordinary geometry workflow,
+retaining a lossless working image until final JPEG export. The existing crop
+limits and geometry QA are unchanged; an old geometry report cannot attest a
+subsequently edited file. Do not claim deterministic pixel preservation for a
+generative edit. Never replace or retouch the source PDF or facsimile pages.
 
-Retouch verification does not relax crop limits or bypass geometry QA. An old
-geometry report is bound to its input and output hashes and cannot attest a
-subsequently edited file. Pixel identity outside the mask applies to the
-lossless working image before rotation, cropping and final JPEG compression.
-Never replace or retouch the source PDF or the publication's facsimile pages.
-
-In the PR handoff, state for example:
+Keep sources, generated alternatives and reports in scratch. Commit only the
+final image and necessary publication metadata. In the PR handoff, state for
+example:
 
 > Titelbladet stammer fra KB's [digitalisering]. Biblioteksstemplet under
-> forlagslinjen er fjernet med en lokal maske. PNG-kontrollen fandt 0 ændrede
-> pixels uden for masken; trykket og overgangen er kontrolleret visuelt.
-> Originalfaksimilen er bevaret.
+> forlagslinjen er fjernet med ImageGen. Resultatet er sammenholdt visuelt med
+> kilden, herunder hele trykket og illustrationerne. Originalfaksimilen er bevaret.
 
 Use that wording only when those checks were actually performed. Record a
-retained stamp or failed attempt in the handoff instead of claiming removal.
+retained stamp or failed attempt instead of claiming successful removal.
