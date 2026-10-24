@@ -1,4 +1,4 @@
 interface:
   display_name: "Klargør Kalliope-titelblad"
-  short_description: "Ret og beskær et scannet titelblad trofast"
-  default_prompt: "Brug $prepare-kalliope-titlepage til at rette, beskære og kvalitetskontrollere dette titelblad."
+  short_description: "Ret, beskær og fjern lokale KB-biblioteksstempler"
+  default_prompt: "Brug $prepare-kalliope-titlepage til at rette, beskære og kvalitetskontrollere dette titelblad; fjern kun eventuelle biblioteksstempler, hvis kilden er verificeret som KB, og dokumentér indgrebet i PR-afleveringen."
