@@ -330,3 +330,32 @@ tekstsider samt rettelsesarket som særskilt inventarrække. Alle 42
 strukturkandidater og 1382 OCR-kandidater er afklaret med konkret
 uafhængig kildeevidens. 1541 fund er afsluttet uden åbne eller blot rettede
 punkter. Sideauditen har ingen fejl.
+
+
+## Farvefacsimiler og målrettet ordkontrol, 24. oktober 2026
+
+Efter brugerens anvisning er begge publicerede facsimilesæt genudtrukket
+fra KB's `130017630319-color.pdf` (603 sider) og
+`130017630327-color.pdf` (511 sider), inklusive alle 10026 miniaturebilleder.
+De eksisterende facsimile-id’er og sidemappingen er bevaret. Alle 1114 sider
+er sammenholdt med det hidtidige sæt; de 19 svage billedmatch er visuelt
+kontrolleret og er samme fysiske sider. Kildehenvisningerne i de 11 hæfter
+peger nu på farve-PDF’erne.
+
+Kun de 31 tidligere problematiske ord er derefter genundersøgt med
+farveudsnit og nærmeste sammenhæng. Ingen ny OCR eller fuld tekstkorrektur
+er kørt. Ti sikre læsninger er krydskontrolleret og indført:
+
+- Marts: »indianske« (210), »Sværmerier« (228), »Mig« (232),
+  »aandelige« (242), »Bomulds-« (243), »Læseren« (260), »Mand« (281)
+  og »uforbedrelig« (287). Kommaet efter den tidligere markering før
+  »øvende« er fjernet: trykket har »Mig øvende, med Overmod i Bringen,«.
+- April: trykkets »Gudle« (298) og »Eenaftenslæsningen« (341).
+  Formen »Gudle« er ikke normaliseret.
+
+Seks noter er begrænset til de tilbageværende usikre steder. Marts har
+nu 12 og april to `[ulæseligt]`-markeringer. De øvrige problematiske
+læsninger i januar, februar og maj kan fortsat ikke genkontrolleres
+bogstav for bogstav og bevares med deres usikkerhedsnoter. I alt er
+21 af de 31 problemsteder fortsat usikre. Ingen læsning er rekonstrueret
+fra en anden udgave, forventet ordlyd eller OCR.
