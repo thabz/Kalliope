@@ -904,7 +904,11 @@ Brug kun `max-width`, når et langt motto skal begrænses yderligere.
 Et `<epigraph>` markeres efter sin funktion som motto og må stå før, mellem
 eller efter tekstens øvrige blokke, også foran en intern scene eller sang.
 Et citat er ikke i sig selv et motto. Indlejrede digte og verscitater bruger
-`<poetry>`, mens prosacitater bruger `<prose>`. Skift mellem disse bloktyper
+`<poetry>`, mens prosacitater kan markeres med `<blockquote>` i `<prose>`.
+`<blockquote>` indrykkes som standard fire tegn (`4ch`), vises med 90 %
+skriftstørrelse og får en kvart linjes luft før og efter (`0.25lh`).
+Attributterne `left` og `right` kan angive andre vandrette indryk.
+Skift mellem `<prose>` og `<poetry>`
 inden for samme `<body>`, når prosaen indeholder vers.
 
 Eksempel:

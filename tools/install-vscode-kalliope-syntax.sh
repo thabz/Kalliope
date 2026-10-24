@@ -1,8 +1,13 @@
 #!/bin/sh
 set -eu
 
-extension_source=$(CDPATH= cd -- "$(dirname -- "$0")/vscode-kalliope-syntax" && pwd)
+extension_source="$HOME/src/kalliope/tools/vscode-kalliope-syntax"
 extension_target="$HOME/.vscode/extensions/thabz.kalliope-syntax"
+
+if [ ! -f "$extension_source/package.json" ]; then
+  echo "Kalliope extension not found: $extension_source" >&2
+  exit 1
+fi
 
 if [ -e "$extension_target" ] && [ ! -L "$extension_target" ]; then
   echo "Refusing to replace existing non-symlink: $extension_target" >&2
