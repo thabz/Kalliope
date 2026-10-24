@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smithc" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>Charlotte</firstname>
+    <lastname>Smith</lastname>
+    <christened>Charlotte Turner</christened>
+  </name>
+  <period>
+    <born>
+      <date>1749-05-04</date>
+      <place>London</place>
+    </born>
+    <dead>
+      <date>1806-10-28</date>
+      <place>Tilford</place>
+    </dead>
+  </period>
+  <literary-periods>gb-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q442902</wikidata>
+    <viaf>39513727</viaf>
+    <gnd>119420546</gnd>
+  </identifiers>
+</person>
