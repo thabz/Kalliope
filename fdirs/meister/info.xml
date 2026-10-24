@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="meister" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Christoph Georg Ludwig</firstname>
+    <lastname>Meister</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1738-08-12</date>
+      <place>Halle an der Saale</place>
+    </born>
+    <dead>
+      <date>1811-01-26</date>
+      <place>Bremen</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q55123078</wikidata>
+    <gnd>116870761</gnd>
+  </identifiers>
+</person>
