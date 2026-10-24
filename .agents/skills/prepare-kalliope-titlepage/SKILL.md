@@ -1,12 +1,25 @@
 ---
 name: prepare-kalliope-titlepage
-description: Straighten, crop and verify a scanned Kalliope title page without altering its printed content. Use for title-page JPEGs and during PDF-to-Kalliope imports; do not use for graphic front covers, portraits or generative restoration.
+description: Straighten, crop and verify a scanned Kalliope title page without altering its printed content. Use for title-page JPEGs and during PDF-to-Kalliope imports, with optional localized removal of library stamps from verified KB title pages. Do not use for graphic front covers, portraits or general restoration.
 ---
 
 # Prepare a Kalliope title page
 
 Create a faithful `p1` image from the actual printed title page. Read
 `docs/titelbladsbilleder.md` before processing the image.
+
+## Optional KB library-stamp removal
+
+For a title page from a verified KB digitalization with a library stamp, read
+[KB stamp removal](references/kb-stamps.md) before the geometry workflow.
+Use an image-editing tool only to supply a local replacement, then compose it
+through a mask onto the original. All pixels outside the mask must remain
+identical in the lossless working image. Retain the stamp if print cannot be
+preserved. Always disclose removal or an unresolved stamp in the PR handoff;
+no extra approval is needed for a verified, successful edit.
+
+The source PDF and facsimile pages remain unchanged. Other title pages retain
+the geometry-only workflow below.
 
 ## Workflow
 
@@ -62,9 +75,9 @@ as dark edge artifacts.
   scanner bed, dark scanner strips and other background outside the page.
 - Never crop printed text, ornament, a printed border or physical source
   evidence.
-- Do not use ImageGen, Repair, cloning, denoising, sharpening, colour changes
-  or upscaling. The tool performs geometry only and writes one high-quality
-  JPEG encoding.
+- Apart from the narrowly scoped KB stamp-removal step above, do not use
+  ImageGen, Repair, cloning, denoising, sharpening, colour changes or upscaling.
+  The geometry tool remains unchanged and writes one high-quality JPEG encoding.
 - This v1 does not correct keystone perspective, curved pages or locally wavy
   baselines. Leave the candidate in scratch and report `manual-review` when a
   single rotation cannot make the text horizontal.

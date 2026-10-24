@@ -12,7 +12,7 @@ skal fjernes. Hele den fysiske bogside skal samtidig bevares, inklusive dens
 naturlige papirmarginer.
 
 Kildens tekst, ornamentik, trykte rammer, pletter, papirfarve og andre fysiske
-spor er en del af facsimilet. De må ikke repareres væk.
+spor er en del af facsimilet. De må ikke repareres væk, bortset fra den afgrænsede undtagelse for KB-biblioteksstempler nedenfor.
 
 ## Klassificér kilden før behandling
 
@@ -47,8 +47,29 @@ Titelbladet må ikke:
 - perspektivkorrigeres automatisk, når tekstlinjerne konvergerer eller siden er
   buet;
 - skarpnes, udglattes, støjreduceres eller farvekorrigeres;
-- retoucheres med Repair-, klonings- eller generative værktøjer;
+- retoucheres med Repair-, klonings- eller generative værktøjer, bortset fra KB-stempelundtagelsen nedenfor;
 - få rekonstrueret eller på anden måde nydannet tekst.
+
+## Biblioteksstempler på KB-titelblade
+
+På verificerede titelblade fra Det Kgl. Biblioteks digitaliseringer må et
+biblioteksstempel fjernes lokalt, når det oprindelige tryk kan bevares.
+Undtagelsen gælder ikke andre institutioners billeder eller anden restaurering.
+Agenten kontrollerer digitalisering, udgave og side; en KB-URL alene er ikke
+bevis for billedets proveniens.
+
+Følg [titelblad-skillens stempelprocedure](../.agents/skills/prepare-kalliope-titlepage/references/kb-stamps.md).
+Et genereret forslag må kun bidrage med pixels inden for en lokal maske på
+originalen. Bevar trykt tekst og illustration, også inde i stempelområdet.
+Kontrollér pixelidentitet uden for masken i det tabsfrie arbejdsbillede og
+kontrollér tryk, stempelrester og overgangen visuelt. Hvis trykket ikke kan
+bevares, beholdes stemplet, og begrænsningen rapporteres.
+
+Et vellykket indgreb kræver ikke særskilt godkendelse, men skal altid oplyses i
+PR-afleveringen med KB-kilde og stemplets placering. Original-PDF og faksimilesider
+ændres aldrig. Retoucheringen foretages før den sædvanlige geometriske behandling;
+den tilsidesætter ikke billed-QA eller beskæringsgrænserne. Pixelidentiteten gælder
+før rotation, beskæring og den afsluttende JPEG-komprimering.
 
 ## Kvalitetskontrol
 
@@ -61,7 +82,7 @@ går automatisk videre, når analysen har status `candidate`, QA har status
 3. Scannerbed og fremmede kanter er fjernet.
 4. Hele bogsiden og dens naturlige marginer er bevaret.
 5. Ingen tekst, ornamentik eller trykt ramme er beskåret eller ændret.
-6. Farve, tone, slid og papirspor svarer til kilden.
+6. Farve, tone, slid og papirspor svarer til kilden, med undtagelse af et dokumenteret, lokalt fjernet KB-biblioteksstempel.
 7. Outputtet er ikke opskaleret, højst 5% er beskåret fra venstre kant, top og
    bund, og højst 8% er beskåret fra højre kant efter rotationen.
 
