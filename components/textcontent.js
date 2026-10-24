@@ -278,7 +278,7 @@ const renderXmlString = (inputString) => {
       case 'blockquote':
         const left = node.hasAttribute('left')
           ? node.getAttribute('left')
-          : '50%';
+          : '4ch';
         const right = node.hasAttribute('right')
           ? node.getAttribute('right')
           : '0';
@@ -288,7 +288,9 @@ const renderXmlString = (inputString) => {
             style={{
               display: 'block',
               position: 'relative',
-              margin: `0 ${right} 0 ${left}`,
+              margin: `0.25lh ${right} 0.25lh ${left}`,
+              fontSize: '0.9em',
+              textIndent: 0,
             }}>
             {handle_nodes(node.childNodes)}
           </blockquote>
