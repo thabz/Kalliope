@@ -18,24 +18,24 @@ Ingen sider, nodebilag eller rettelsesark mangler. Værket forbliver
 - KB-kataloghenvisning, udgivelsesmetadata, forfattersignaturer og
   tekstlige variantrelationer er kontrolleret.
 
+## Seneste brugerreview
+
+- Brugeren har bekræftet læsningerne på s. 104 og 198. På s. 198 er
+  »Naar kun den Skjønne Svanebarm« indsat, og skadesnoten er fjernet.
+- Brugeren har valgt det direkte ImageGen-redigerede titelblad som den
+  foretrukne version. Det er indsat som `1798-nytaarsgave-p1.jpg` med
+  transskription. Biblioteksstemplet er fjernet; originalfaksimilen er uændret.
+  Den tidligere automatiske beskæringskandidat blev afvist af QA og bruges ikke.
+- Faksimilekontrollen og GitHub CI bestod på commit `6e6f74c5d`; den tidligere
+  serverblokering er løst.
+- »Venskabs Værd« er forbundet med den nu indsatte tyske original hos Meister.
+
 ## Åbne punkter
 
-- **Titelblad:** QA for den automatisk fundne beskæring kræver manuel kontrol
-  (10,86 % fjernet fra højre kant mod grænsen 8 %). Ingen kandidat er
-  promoveret, og `p1` mangler. Der må ikke indsættes en reference til et
-  ikke-eksisterende billede eller lempes på QA-grænserne for at få pass.
-- **Faksimiler:** sider og thumbnails er genereret lokalt. Serveren
-  `jec@10.0.0.5:/Volumes/Alma/Faksimiler` svarer `No route to host`, også via
-  Katholt.local og IPv6. Offentligt `000.jpg` og thumbnail giver 404.
-  Synkronisering og `npm run check-facsimiles` skal bestå før færdigstatus.
-- **S. 104, Til Erycine, `sander20261024201901`:** i/j i »Kjærlighed« kan
-  ikke afgøres sikkert i de to scanninger. Den foreløbige læsning er bevaret.
-- **S. 198, Monjourdans Afskedssang, `frankenau20261024201905`:** ordets
-  begyndelse før »Svanebarm« er beskadiget. `[…]jønne` og en fodnote viser
-  kildens begrænsning. Et andet eksemplar bør undersøges; en senere variants
-  læsning må ikke indsættes som rekonstruktion.
-- **Korrekturafslutning:** de to kildefund og faksimilefejlen blokerer det
-  afsluttende reviewcheckpoint. Der er ikke tilføjet `korrektur2` eller attest.
+- **Korrekturafslutning:** XML har fortsat `status="incomplete"`,
+  `korrektur1,kilde,side` og ingen modelattest. Brugerens bekræftede læsninger
+  erstatter ikke dokumentation for det afsluttende, uafhængige modelcheckpoint.
+  Afklar eller gennemfør dette før `korrektur2`, modelattest og kompletstatus.
 
 ## Redaktionelle valg
 
@@ -56,6 +56,6 @@ korrekturrapporter, `findings.jsonl`, `inventory-all-reviewed.jsonl`,
 `structure-final.json` og genererede faksimiler i `facsimiles/`.
 Disse maskin- og billedfiler er ikke en del af repositoryet.
 
-Efter kildeafklaring genkontrolleres de ændrede steder uafhængigt, relevante
+Ved korrekturafslutningen genkontrolleres de ændrede steder uafhængigt, relevante
 audits genkøres, og det frosne checkpoint oprettes fra den endelige tilstand.
 Kør `make test`, faksimilekontrollen og GitHub CI før færdigmelding.
