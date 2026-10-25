@@ -1024,10 +1024,11 @@ Misantrop, der griner ondt!
 </body>
 </text>
 
-<text id="barfod2026102503">
+<!-- Trykkets »et et godt Stykke borte« på s. 51 er en tilsigtet ordgentagelse. -->
+<text id="barfod2026102503" ignore-tests="repeated-adjacent-word">
 <head>
   <title>San Antonio</title>
-  <firstline>Puerto de Santa Maria! — —</firstline>
+  <nofirstline/>
   <source pages="51-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1437,7 +1438,7 @@ Hverken til Mennesker, Gud eller Fanden.
 <text id="barfod2026102505">
 <head>
   <title>Digtere</title>
-  <firstline>Gud Fader bevares! sagde Redaktøren og proppede</firstline>
+  <nofirstline/>
   <source pages="87-95"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1805,10 +1806,11 @@ Pralhans, plat og uden Lige!
 </body>
 </text>
 
-<text id="barfod2026102507">
+<!-- Trykkets »om De vil kalde det det« på s. 116 er en tilsigtet ordgentagelse. -->
+<text id="barfod2026102507" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Mesteren</title>
-  <firstline>Mesteren lagde Penneskaftet tilrette mellem Fingrene</firstline>
+  <nofirstline/>
   <source pages="111-120"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2173,7 +2175,7 @@ fanger <i>den</i> os dog tilsidst!
 <text id="barfod2026102509" ignore-tests="sss">
 <head>
   <title>Prinsesse Karneval</title>
-  <firstline>Midt gennem Karnevalets spraglede Festgøgl, midt</firstline>
+  <nofirstline/>
   <source pages="137-143"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
