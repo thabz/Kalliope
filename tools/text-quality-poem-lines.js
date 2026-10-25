@@ -790,7 +790,8 @@ const findPoemLineFindingsInText = ({
 }) => {
   const issues = [];
   const ignoredTests = ignoredTestsAtLine(context);
-  const lineData = context.lines;
+  const checkedData = removeRegionContentKeepingLines(data, /<!--[\s\S]*?-->/gu);
+  const lineData = checkedData.split('\n');
 
   for (const rule of regexps) {
     const regexp = rule.regexp;
@@ -803,7 +804,7 @@ const findPoemLineFindingsInText = ({
       continue;
     }
 
-    if (regexp.test(data)) {
+    if (regexp.test(checkedData)) {
       lineData.forEach((line, lineIndex) => {
         if (
           regexp.test(line) &&

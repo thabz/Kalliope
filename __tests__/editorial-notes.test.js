@@ -56,6 +56,24 @@ describe('editorial note provenance', () => {
     expect(html).toContain('href="#note-3"');
   });
 
+  it('hides correction comments without changing other footnote numbers', () => {
+    const plain = 'Ord<footnote>Første.</footnote> og tekst<footnote>Anden.</footnote>';
+    const corrected = plain.replace('Ord', 'Ord<!-- Rettelsesark: Ord] Trykfejl -->');
+    const html = inlineNotes(corrected);
+    expect(html).toBe(inlineNotes(plain));
+    expect(html).not.toContain('Rettelsesark');
+    expect(html).not.toContain('Trykfejl');
+    expect(html).toContain('href="#note-2"');
+    expect(html).not.toContain('href="#note-3"');
+  });
+
+  it.each([false, true])('preserves spacing and structure through build conversion (poetry=%s)', isPoetry => {
+    const plain = '  Første linje og ord\nAnden linje\n\nTredje linje<footnote>Trykt.</footnote>';
+    const corrected = plain.replace('linje og', 'linje<!-- Rettelsesark: linje] fejl --> og')
+      .replace('Tredje', '<!-- Rettelsesark: Tredje] Anden -->Tredje');
+    expect(htmlToXml(corrected, {}, isPoetry)).toEqual(htmlToXml(plain, {}, isPoetry));
+  });
+
   it('translates the explanation for the English interface', () => {
     const html = renderToStaticMarkup(<LangContext.Provider value="en"><Note editorial>Note.</Note></LangContext.Provider>);
     expect(html).toContain('Kalliope editorial note');

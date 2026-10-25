@@ -418,3 +418,14 @@ Et citat
     expect(formatWorkXml(formatWorkXml(xml))).toBe(xml);
   });
 });
+
+
+describe('correction comments', () => {
+  it('preserves inline positions, verse lines and stanzas', () => {
+    const poetry = '<poetry>\nOrd<!-- Rettelsesark: Ord] Fejl --> og tekst\nAnden linje\n\nTredje<!-- Rettelsesark: ∅] ord --> linje\n</poetry>';
+    const xml = `<kalliopework>\n<workhead>\n  <title>Test</title>\n</workhead>\n<workbody>\n<text>\n<body>\n${poetry}\n</body>\n</text>\n</workbody>\n</kalliopework>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(poetry);
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+});

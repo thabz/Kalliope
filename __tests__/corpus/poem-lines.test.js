@@ -57,6 +57,12 @@ describe('Check workfiles', () => {
     expect(issues.filter(issue => issue.rule === 'line-leading-punctuation').map(issue => issue.textId)).toEqual(['workhead', 'part']);
   });
 
+  it('ignores correction readings while still checking the surrounding text', () => {
+    const data = '<text><body><poetry>God,<!-- Rettelsesark: ,] ∅ --> tekst\n<!-- Rettelsesark: Himmel] Himmmel -->\nFejl , her</poetry></body></text>';
+    const issues = findPoemLineFindingsInText({ file: 'test.xml', data, lang: 'da', shouldUseModernFrenchPunctuationSpacing: false });
+    expect(issues).toEqual([expect.objectContaining({ rule: 'space-before-comma-with-markup', line: 3 })]);
+  });
+
   it('has no poem-line quality issues', () => {
     const issues = collectPoemLineQualityFindings();
     if (issues.length > 0) {
