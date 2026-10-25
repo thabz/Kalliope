@@ -4,7 +4,7 @@
   <title>En ny Samling Digte</title>
   <year>1861</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Noter med en foranstillet asterisk er Plougs egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1861-p1.jpg"><transcription>Poul Rytter's / Viser og Vers // Udgivne / af / C. Ploug. // Tredie Samling. // Forlagsbureauet i Kjøbenhavn. / (G. E. C. Gad. Gyldendalske Boghandling. C. C. Lose &amp; Delbanco.) // Thieles Bogtrykkeri. / 1861.</transcription></picture>
@@ -737,7 +737,7 @@ Fjendeskaren, som bryder Din Fred og Din Ret.
   <toctitle><num>6.</num>Vort Land, vort Land, vort Fædreland!</toctitle>
   <firstline>Vort Land, vort Land, vort Fædreland!</firstline>
   <notes>
-    <note>Inspireret af Johan Ludvig Runebergs finske nationalsang <xref poem="runeberg20190313"/>.</note>
+    <note editorial="true">Inspireret af Johan Ludvig Runebergs finske nationalsang <xref poem="runeberg20190313"/>.</note>
   </notes>
   <source pages="26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1122,7 +1122,7 @@ Til vor Efterslægt i Sommerpragt!
     <event>1861-06-05</event>
   </dates>
   <notes>
-    <note>Se folkevisen <xref poem="folkeviser2018041022"/>.</note>
+    <note editorial="true">Se folkevisen <xref poem="folkeviser2018041022"/>.</note>
   </notes>
   <source pages="38-39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1350,7 +1350,7 @@ Har i Eders Sjæle fæstet Rod!
 Viis i Eders Gjerning, at der banker
 Udi Eders Bryst det samme Blod!
 
-Ja, naar ,,Danmark deiligst Vang og Vænge''<note>Laurids Koks <xref poem="kok1999030201"/>.</note>
+Ja, naar ,,Danmark deiligst Vang og Vænge''<note editorial="true">Laurids Koks <xref poem="kok1999030201"/>.</note>
 Atter er i Nød og Fare stædt,
 Og det kalder sine raske Drenge
 Ud at værge for sin gode Ret,
@@ -1370,7 +1370,7 @@ At han syngende i Døden gaaer!
     <event>1858-07-06</event>
   </dates>
   <notes>
-    <note>H.W. Bissens statue <i>Den danske Landsoldat</i> blev afsløret 6/7 1858 på pladsen ved Prinsens Port i Fredericia. Plougs sange blev afsunget i den anledning.</note>
+    <note editorial="true">H.W. Bissens statue <i>Den danske Landsoldat</i> blev afsløret 6/7 1858 på pladsen ved Prinsens Port i Fredericia. Plougs sange blev afsunget i den anledning.</note>
   </notes>
   <pictures>
     <picture artwork="bissen/landsoldat-1850" />
@@ -3040,8 +3040,8 @@ Høilovet Hans Navn skal være!''
   <indextitle>Anna Nielsen</indextitle>
   <firstline>Det høie Nordens Sangmø staaer og græder</firstline>
   <notes>
-    <note>Anna Nielsen (1803-56) var ved siden af <a person="heibergjohanne">Johanne Luise Heiberg</a> datidens betydeligste skuespillerinde på Det kongelige Teater.</note>
-    <note type="credits">Indtastet af Sven Sørensen.</note>
+    <note editorial="true">Anna Nielsen (1803-56) var ved siden af <a person="heibergjohanne">Johanne Luise Heiberg</a> datidens betydeligste skuespillerinde på Det kongelige Teater.</note>
+    <note editorial="true" type="credits">Indtastet af Sven Sørensen.</note>
   </notes>
   <pictures>
     <picture artwork="kunst/loeffler-anna-nielsen-1836" />
@@ -3079,7 +3079,7 @@ I alle Skikkelserne, hun fremstilled.
 Randt hendes eget varme Hjerteblod.
 
 Fordi hun kunde ned i Dybet dykke
-Af <w>Valborgs</w> og af <w>Signes</w> Kjærlighed,<note>Signe i <a poet="oehlenschlaeger">Oehlenschlägers</a> <i>Hagbarth og Signe.</i> Fru Heiberg påpeger med rette at Anna Nielsen aldrig havde udført denne rolle, men at Ploug ikke desto mindre ,,udødeliggjorde dette hendes Spil som Signe i bunden Stil'' (<i>Et Liv</i>, udg. 1944, bind 2, side 326 med note).</note>
+Af <w>Valborgs</w> og af <w>Signes</w> Kjærlighed,<note editorial="true">Signe i <a poet="oehlenschlaeger">Oehlenschlägers</a> <i>Hagbarth og Signe.</i> Fru Heiberg påpeger med rette at Anna Nielsen aldrig havde udført denne rolle, men at Ploug ikke desto mindre ,,udødeliggjorde dette hendes Spil som Signe i bunden Stil'' (<i>Et Liv</i>, udg. 1944, bind 2, side 326 med note).</note>
 Fordi hun kunde rumme <w>Julies</w> Lykke,
 Og kunde maale, hvad <w>Elvira</w> led;
 Fordi hun var en Dronning af Guds Naade
@@ -3114,7 +3114,7 @@ Den Herlighed og Ære, som er <w>sand</w>.
   <indextitle>Nicolai Peter Nielsen</indextitle>
   <firstline>Jarl Hakon sover i den sorte Kiste</firstline>
   <notes>
-    <note>Nicolai Peter Nielsen (1795-1860), skuespiller og teaterinstruktør.</note>
+    <note editorial="true">Nicolai Peter Nielsen (1795-1860), skuespiller og teaterinstruktør.</note>
   </notes>
   <source pages="104-105"/>
   <keywords>oehlenschlaeger</keywords>
@@ -5180,7 +5180,7 @@ Nysgjerrige Qvinder og Børn.
   <title>Fru Kerjean</title>
   <firstline>Hist i Bretagnes Hertugdom</firstline>
   <notes>
-    <note>* Sagnet læses i: Emile Souvestre, Le foyer breton. I, S. 180.</note>
+    <note>Sagnet læses i: Emile Souvestre, Le foyer breton. I, S. 180.</note>
   </notes>
   <source pages="183-200"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5331,7 +5331,7 @@ Men Vennerne ham spurgte tidt,
 Hvorfor hans Dame ei kom hid
 Til Aands og Skjønheds Væddestrid;
 Og da det sande Svar han gav,
-At Fru Françéza<note>Françéza] Franzésa</note> havde frit
+At Fru Françéza<note editorial="true">Françéza] Franzésa</note> havde frit
 For Hoffets Lyst valgt Hjemmets Krav,
 Saa mumled En, det kom vel af
 At hun var Aand og Skjønhed kvit.
@@ -5658,7 +5658,7 @@ For Tepperne, han hitted paa.
 Saa reiste Hr. Aiguillon
 Bort til Versailles og Paris.
 Hans Blaargarnstepper fandt et Hjem
-I Hytterne udi Leon,<note>* Et af Bretagnes fire Bispedommer.</note>
+I Hytterne udi Leon,<note>Et af Bretagnes fire Bispedommer.</note>
 Hvor hendes Haand uddelte dem.
 Der væves de den Dag idag,
 Der varme de endnu hver Nat
@@ -5679,7 +5679,7 @@ Den gode Frue paa Kerjean.
   <title>Cordouan</title>
   <firstline>Med Stemme lav og Øiet sænket</firstline>
   <notes>
-    <note>Cordouanfyrtårnet blev bygget i 1584 og står endnu.</note>
+    <note editorial="true">Cordouanfyrtårnet blev bygget i 1584 og står endnu.</note>
   </notes>
   <pictures>
     <picture src="plough2018031468-p1.jpg">Claude Châtillon: <i>L'Exellent bastiment de la tour ou phanal de Cordouan par Claude Chatillon</i>, begyndelsen af 1600-tallet, gravering af Jacques Poinssart.</picture>

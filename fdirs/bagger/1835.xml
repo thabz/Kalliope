@@ -4,8 +4,8 @@
   <title>Havets Konge</title>
   <year>1835</year>
   <notes>
-    <note>Værkets motto er ,,Store Bøger kjøber Ingen // Smaat og godt er hele Tingen.''</note>
-    <note>Indtastet af Carsten Wiedemann efter førstetrykket.</note>
+    <note editorial="true">Værkets motto er ,,Store Bøger kjøber Ingen // Smaat og godt er hele Tingen.''</note>
+    <note type="credits" editorial="true">Indtastet af Carsten Wiedemann efter førstetrykket.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1835-p1.jpg"><transcription>Havets Konge. // Et Eventyr / af / Johannes Harring.</transcription></picture>
@@ -24,7 +24,7 @@
   <title>Havets Konge</title>
   <firstline>Kom, hvis til Ørkenøerne du vil</firstline>
   <notes>
-    <note type="credits">Bidrag fra Carsten Wiedemann</note>
+    <note editorial="true" type="credits">Bidrag fra Carsten Wiedemann</note>
   </notes>
   <quality>korrektur1,kilde</quality>
 </head>

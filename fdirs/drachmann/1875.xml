@@ -7,8 +7,8 @@
     <openlibrary-work>OL3078309W</openlibrary-work>
   </identifiers>
   <notes>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
-    <note>Gengivet efter førsteudgaven af Holger Drachmann:  <i>Dæmpede Melodier</i>, Den gyldendalske Boghandel, Kbh., 1875.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Gengivet efter førsteudgaven af Holger Drachmann:  <i>Dæmpede Melodier</i>, Den gyldendalske Boghandel, Kbh., 1875.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1875-p1.jpg"><transcription>Dæmpede Melodier. / Nyere Digte / af / Holger Drachmann. // Med illustrationer af Forfatteren // Kjøbenhavn. / Forlagt af den gyldendalske Boghandels Forlag (F. Hegel). / Trykt hos J. Jørgensen &amp; Co. / 1875.</transcription></picture>
@@ -2620,7 +2620,7 @@ En Haabende blandt Haabets sidste Rester.
   <title>Et Aftenbillede</title>
   <firstline>Se Solen synker. Vidt i Luften runger</firstline>
   <notes>
-    <note>Citatet stammer fra Goethes digt <xref poem="goethe2018012902,9-12"/>.</note>
+    <note editorial="true">Citatet stammer fra Goethes digt <xref poem="goethe2018012902,9-12"/>.</note>
   </notes>
   <source pages="106-120"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3068,7 +3068,7 @@ Og Svaret det samme: Stene!
   <toctitle>Den sidste Sorte-Fods Klagesang</toctitle>
   <firstline>Hvor i fredlyst Urskovsstilhed</firstline>
   <notes>
-    <note>Citatet stammer fra Goethes digt <xref poem="goethe2018012901,198-201"/>.</note>
+    <note editorial="true">Citatet stammer fra Goethes digt <xref poem="goethe2018012901,198-201"/>.</note>
   </notes>
   <source pages="124-138"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

@@ -4,7 +4,7 @@
   <title>Digte</title>
   <year>1828</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1828-p1.jpg"><transcription>Digte, / af / Christian Winther. //  Kjöbenhavn. / Forlagt paa C. A. Reitzels Forlag / i Sabritius de Tengnagels Bogtrykkeri / 1828.</transcription></picture>
@@ -18,7 +18,7 @@
   <title>Studentervise</title>
   <firstline>Her under Nathimlens rolige Skygge</firstline>
   <notes>
-    <note>Skrevet på Regentsen i 1820.</note>
+    <note editorial="true">Skrevet på Regentsen i 1820.</note>
   </notes>
   <source pages="3-4"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -168,8 +168,8 @@ Evigt er hans Tanke!
   <title>Fadderne synge</title>
   <firstline>Du lille Purk udi din Vuggeseng</firstline>
   <notes>
-    <note>Skrevet 1822 da Isaac og Cathrine Sidenius' førstefødte, Jakob, skulle døbes. Cathrine var <a person="moellerpm">Poul Martin Møllers</a> yngre søster og altså Winthers stedsøster.</note>
-    <note>Digtets melodi, metrik og refræn er baseret på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    <note editorial="true">Skrevet 1822 da Isaac og Cathrine Sidenius' førstefødte, Jakob, skulle døbes. Cathrine var <a person="moellerpm">Poul Martin Møllers</a> yngre søster og altså Winthers stedsøster.</note>
+    <note editorial="true">Digtets melodi, metrik og refræn er baseret på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
   <source pages="9-11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -303,7 +303,7 @@ En dyb Betydning være?
 
 <nonum><center>2.</center></nonum>
 
-See her vort Livsens Skuespil<note>Winther parafraserer i det følgende <a poet="shakespeare">Shakespeare</a>s As You Like It, II,viii: 'All the world's a stage'</note>
+See her vort Livsens Skuespil<note editorial="true">Winther parafraserer i det følgende <a poet="shakespeare">Shakespeare</a>s As You Like It, II,viii: 'All the world's a stage'</note>
 I flere skjønne Acter:
 Først Barnet i sin Ammes Arm
 Med Skraal og sære Fagter.
@@ -2360,7 +2360,7 @@ Han skreeg fra Skudens Speil:
 <head>
   <title>Træsnit</title>
   <notes>
-    <note>Mottoet af Christian von Hamle lyder ,,Wo sich vier Arme, geschliessen in ein, / Nie süssre Freude die Sonne überschein; / Da wird gedrucket von zweien Herzen nah', / Laub war nie so dünne, dess Statt man funde da.''</note>
+    <note editorial="true">Mottoet af Christian von Hamle lyder ,,Wo sich vier Arme, geschliessen in ein, / Nie süssre Freude die Sonne überschein; / Da wird gedrucket von zweien Herzen nah', / Laub war nie so dünne, dess Statt man funde da.''</note>
   </notes>
   <source pages="91-154"/>
 </head>
@@ -2629,7 +2629,7 @@ Han presser hendes Haand til sin bankende Barm,
 Han rører sine Læber, hun hører knap hans Ord,
 Han fæster saa undseeligt sit Øie mod Jord.
 
-''Her er jeg, skjøn Anne, du kjender mig saa vel,<note>''Her] Her</note>
+''Her er jeg, skjøn Anne, du kjender mig saa vel,<note editorial="true">''Her] Her</note>
 Vil du min Huustrue være, meer end min halve Sjæl?
 Ak, hvis du siger nei! - jeg veed ei, hvor det er fat,
 Jeg haver ikke Ro, hverken Dag eller Nat!''
@@ -3527,7 +3527,7 @@ Med Hjertet fuldt af Vemod og trofast Kjærlighed.
   <title>Asbjørn og Thora</title>
   <firstline>Høstsolen blinker liflig, frisk blæser Østenvind</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="137-143"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3722,7 +3722,7 @@ Ak! det er Asbjørn Bonde og Thora, hans Brud!
   <title>Martin og Marie</title>
   <firstline>Min Søn! seer du ei Søen? den vælter Bølgen sort</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="144-148"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

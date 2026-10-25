@@ -4,7 +4,7 @@
   <title>Udvalgte Digte</title>
   <year>1897</year>
   <notes>
-    <note>Foreløbigt udvalg af 15 digte. Teksternes rækkefølge er ikke kontrolleret mod udgaven.</note>
+    <note editorial="true">Foreløbigt udvalg af 15 digte. Teksternes rækkefølge er ikke kontrolleret mod udgaven.</note>
   </notes>
   <source>
     <author id="heibergjl">J. L. Heiberg</author>
@@ -22,7 +22,7 @@
   <title>Amor hos Bacchus</title>
   <firstline>Tys! Hvo banker paa Døren? Hvad seer jeg?</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -176,7 +176,7 @@ End een eneste Dag leve med Sundhed og fri.
   <firstline>Vær hilset, Lys fra Sandheds Væld</firstline>
   <notes>
     <note>1839</note>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -410,7 +410,7 @@ Evig, mens Tiderne vexlende gaae!
   </subtitle>
   <firstline>Saa fik du mig dog fat! Din Haand mit Kors berørte</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -485,7 +485,7 @@ Du, som var ellers glemt, i Krøniken skal mindes
   <title>Himmelsk Kjærlighed</title>
   <firstline>Jord og Himmel ere skilt som tvende</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -580,7 +580,7 @@ Hvor mit Hjerte har sit rette Hjem!
   <title>Til Lanterna-magica-Doublanten i Sorøe</title>
   <firstline>Fætter, hvad skal Enden blive</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <keywords>oehlenschlaeger</keywords>
@@ -675,7 +675,7 @@ Mig den ei! den er ei stor.
 
 Sorae tenebris demersus,
 Nød du tynd Celebritet;
-Facit indignatio versus,<note>"Nedsunken i Sorøs mørke ... skaber harmen versene" (allusion til Juvenal, <i>Satirae,</i> I,79)</note>
+Facit indignatio versus,<note editorial="true">"Nedsunken i Sorøs mørke ... skaber harmen versene" (allusion til Juvenal, <i>Satirae,</i> I,79)</note>
 Jeg har gjort dig til Poet.
 
 Hvis din Barm en Gnist kun gjemmer
@@ -955,8 +955,8 @@ Vor Turnering er en Fest!
   </subtitle>
   <firstline>Det tydske Sprog er ei min Sag</firstline>
   <notes>
-    <note>Se <a person="gierlew">Andreas Chr. Gierlew</a>.</note>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true">Se <a person="gierlew">Andreas Chr. Gierlew</a>.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1023,7 +1023,7 @@ Vil gjøre her i Tidens Pressen.
   <subtitle>Til Deres Kongelige Høiheder, Prinds Frederik Carl Christian og Prindsesse Vilhelmine Marie.</subtitle>
   <firstline>Paa Engen hvile de Taager graae</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1073,8 +1073,8 @@ Tør offres Danmarks Haab af Skjalden.
   </subtitle>
   <firstline>Den femte Marts er kommen igjen</firstline>
   <notes>
-    <note>Weyse er komponisten <a person="weyse">C. E. F. Weyse</a>.</note>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true">Weyse er komponisten <a person="weyse">C. E. F. Weyse</a>.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1192,8 +1192,8 @@ Af evige Toner flettet.
   <title>Uranienborg</title>
   <firstline>Du Vandringsmand ved Søen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
-    <note>Digtet blev først trykt 1814 i tidsskriftet <i>Athene</i>.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true">Digtet blev først trykt 1814 i tidsskriftet <i>Athene</i>.</note>
   </notes>
   <pictures>
     <picture src="heiberg2001123107-p1.jpg">Billede af Uranienborg</picture>
@@ -1328,7 +1328,7 @@ Den synker i sin Død!
   <title>Det, som min Læbe</title>
   <firstline>Det, som min Læbe stammer svagt</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1388,7 +1388,7 @@ Din Hemmelighed kjender jeg!
   <title>Der er i Himlen en Dreng saa smuk</title>
   <firstline>Der er i Himlen en Dreng saa smuk</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1447,7 +1447,7 @@ Mig lærte han.
   <title>Barcarole</title>
   <firstline>Lette Bølge! Naar du blaaner</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,korrektur2,kilde</quality>
@@ -1489,7 +1489,7 @@ Kun et Billed og et Navn.
   <title>Naar Aftenglands og Morgenrøde</title>
   <firstline>Naar Aftenglands og Morgenrøde</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1533,7 +1533,7 @@ Da er det Tid, og da mødes man glad.
   <title>I Dandsen du mig møder</title>
   <firstline>I Dandsen du mig møder</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -1558,7 +1558,7 @@ Man løser hvad man binder.
 Vi tabe hvad vi kaare;
 "Farvel" er Livets Ord;
 I hvert et flygtigt Spoer
-Er lagt en Afskedstaare.<note>'Elskovstaare' rettet til 'Afskedstaare', efter Heibergs Poetiske Skrifter, VII, 1862, pp.161-163. Ibid., IX, pp. 44-45 skriver dog 'Elskovstaare', men vi vurderer 'Afskedstaare' til at være mest korrekt.</note>
+Er lagt en Afskedstaare.<note editorial="true">'Elskovstaare' rettet til 'Afskedstaare', efter Heibergs Poetiske Skrifter, VII, 1862, pp.161-163. Ibid., IX, pp. 44-45 skriver dog 'Elskovstaare', men vi vurderer 'Afskedstaare' til at være mest korrekt.</note>
 
 Du bort fra mig dig fjerner;
 Farvel, forlad din Ven!
@@ -1582,7 +1582,7 @@ I Lys af andre Stjerner.
   <title>Konning Volmer</title>
   <firstline>Konning Volmer drager afsted paa Jagt</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>

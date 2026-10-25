@@ -8,6 +8,7 @@ import Note from '../components/note.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
 import { TextInline } from '../components/textcontent.js';
 import LangContext from '../common/LangContext.js';
+import WorkPage from '../pages/work.js';
 
 const parse = xml => new DOMParser().parseFromString(xml, 'text/xml').documentElement;
 
@@ -58,5 +59,27 @@ describe('editorial note provenance', () => {
   it('translates the explanation for the English interface', () => {
     const html = renderToStaticMarkup(<LangContext.Provider value="en"><Note editorial>Note.</Note></LangContext.Provider>);
     expect(html).toContain('Kalliope editorial note');
+  });
+
+  it('keeps the source marker when a mixed note is split, without attributing editorial stars to the author', () => {
+    const html = inlineNotes('Ord<note>* Trykt note.</note><note editorial="true">[Tilføjelse.]</note><note editorial="true">* Førstetrykkets læsemåde.</note>');
+    expect(html.match(/title="Forfatterens note"/g)).toHaveLength(1);
+    expect(html.match(/>Kalliope</g)).toHaveLength(2);
+    expect(html).toContain('* Førstetrykkets læsemåde.');
+    expect(html).toContain('href="#note-3"');
+  });
+
+  it.each(['applied', 'reviewed'])('labels the generated correction-sheet explanation (%s)', status => {
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da">
+        <WorkPage lang="da" poet={{ id: 'test', country: 'dk', name: { firstname: 'Test' } }}
+          work={{ id: '1900', title: 'Test', year: '1900', sources: { default: { source: 'Trykt kilde.' } } }}
+          notes={[]} pictures={[]} toc={[]}
+          errata={[{ status, facsimile: 'scan', facsimilePageCount: 10, facsimilePages: [9], pages: '8' }]} />
+      </LangContext.Provider>
+    );
+    expect(html.match(/data-tooltip="Kalliopes redaktionelle note"/g)).toHaveLength(1);
+    expect(html).toContain('Rettelseslisten');
+    expect(html).toContain('Trykt kilde.');
   });
 });

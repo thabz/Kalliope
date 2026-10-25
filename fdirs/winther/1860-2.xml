@@ -399,7 +399,7 @@ Til Hjertet atter tale.
   <title>Til en Digter</title>
   <firstline>Hvis Du vil synge Dig til Glæde</firstline>
   <notes>
-    <note>Første citat er fra Poul Martin Møllers <xref poem="moellerpm20010502514"/>.</note>
+    <note editorial="true">Første citat er fra Poul Martin Møllers <xref poem="moellerpm20010502514"/>.</note>
     <!-- Andet motto er fra "Fragmenter", #5, Efterladte Skrifter, 1856, Bd. 1 eller 2. -->
   </notes>
   <source pages="17-18"/>
@@ -1558,7 +1558,7 @@ O, Liv! din bittre Jammer!
   <title>Peter Oluf Brøndsted</title>
   <firstline>Mens Skovens Træer sig afklæde</firstline>
   <notes>
-    <note>Peter Oluf Brøndsted (1780-1842), dansk klassisk arkæolog.</note>
+    <note editorial="true">Peter Oluf Brøndsted (1780-1842), dansk klassisk arkæolog.</note>
   </notes>
   <pictures>
     <picture artwork="jensenca/broendsted-1827" type="illustration"/>
@@ -1772,7 +1772,7 @@ En evig Kjærligbeds Skjærsommer!
   <linktitle>Farvel til D. G. Monrad</linktitle>
   <firstline>Saa Du vil drage fra vor gamle Stad</firstline>
   <notes>
-    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+    <note editorial="true">D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
   </notes>
   <pictures>
     <picture artwork="hansenc/monrad-1846" />
@@ -2143,7 +2143,7 @@ Har Du ei andre, tag saa <w>denne!</w>
   <title>Døgnet</title>
   <firstline>Morgenstund med Guld i Mund!</firstline>
   <notes>
-    <note>Se Grundtvigs <xref poem="grundtvigandresalmera16"/> og Ingemanns <xref poem="ingemann1837b5"/>.</note>
+    <note editorial="true">Se Grundtvigs <xref poem="grundtvigandresalmera16"/> og Ingemanns <xref poem="ingemann1837b5"/>.</note>
   </notes>
   <source pages="82-83"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2411,7 +2411,7 @@ Og Lærkerne <w>slaae</w>.
     <event>1843-08-18</event>
   </dates>
   <notes>
-    <note>Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
+    <note editorial="true">Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
   </notes>
   <source pages="91-92"/>
   <keywords>balladestrofe</keywords>
@@ -2475,14 +2475,14 @@ For mig og for mit Minde!
     <event>1849-08-18</event>
   </dates>
   <notes>
-    <note>Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
+    <note editorial="true">Digtet er skrevet til Winthers svigerinde, Thora Elvine Lütthans, ,,Wilhelmine'', født 18. august 1819.</note>
   </notes>
   <source pages="93-94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Vi boe paa <w>Deiligheden</w><note>* <w>Deiligheden</w>, et Boelsted, beliggende ved en Vig af Isefjord.</note> - det er sandt!
+Vi boe paa <w>Deiligheden</w><note><w>Deiligheden</w>, et Boelsted, beliggende ved en Vig af Isefjord.</note> - det er sandt!
 Hvorhen vi gaae, i Dal, paa Høie,
 I Skov, ved Sø, til hver en Kant
 En Skjønhed lukker op sit Øie.
@@ -3364,7 +3364,7 @@ Han slumred helst om Vintren ind,
 Og vaagned først ved Vaarens Tid,
 Naar Solen skinned varm og blid.
 Han fulgte strengt hvad <w>Kempis</w> lær'
-,,Kom ei for tidt de Store nær!''<note>* <i>Coram proceribus non freqventer appareas.</i></note>
+,,Kom ei for tidt de Store nær!''<note><i>Coram proceribus non freqventer appareas.</i></note>
 (Og tænker man paa Kirsebær,
 Saa maa man sige, hvad man vil,
 Han har jo nogen Grund dertil.)
@@ -3770,7 +3770,7 @@ Mit eget Fond var ikke stort,
 Jeg gjorde, hvad der før er gjort;
 Jeg rapsed hist og her i Smug,
 Hvad bedst sig egned til mit Brug;
-Hos Norske<note>Norsk] norsk</note>, Franske, Italienske
+Hos Norske<note editorial="true">Norsk] norsk</note>, Franske, Italienske
 Hos Britter, Græker, Tydske, Svenske
 Jeg fouragerte, gjorde Bytte
 Og drog mig flittigt Alt til Nytte.
@@ -5831,7 +5831,7 @@ Saa troer jeg, Alt med det Bedste ender!
   <toctitle>Parabel af Fr. Rückert (oversat)</toctitle>
   <firstline>I Syrien, i Ørkens Sand</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2001102431"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2001102431"/>.</note>
   </notes>
   <source pages="207-210"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5940,7 +5940,7 @@ Som du paa Gravens Bred kan sanke.
   <title><num>1.</num>Guldalderen</title>
   <firstline>Guldalderen er ei forsvundet</firstline>
   <notes>
-    <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2026072301"/>.</note>
+    <note editorial="true">Gendigtning af Rückerts <xref type="translation" poem="rueckert2026072301"/>.</note>
   </notes>
   <source pages="211-212"/>
   <keywords>balladestrofe</keywords>
@@ -5981,7 +5981,7 @@ Enhver sin egen gyldne Tid.
   <title><num>2.</num>Faunen</title>
   <firstline>Til Faun mig Himlen skabde</firstline>
   <notes>
-    <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2018101001"/>.</note>
+    <note editorial="true">Gendigtning af Rückerts <xref type="translation" poem="rueckert2018101001"/>.</note>
   </notes>
   <source pages="212-213"/>
   <keywords>balladestrofe</keywords>
@@ -6041,7 +6041,7 @@ Sit Taareoffer faae.
   <subtitle>Efter Geijer</subtitle>
   <firstline>Kun femten Aar gammel jeg Stuen fandt trang</firstline>
   <notes>
-    <note>Gendigtning af Erik Gustaf Geijer: <xref type="translation" poem="geijer2018081001"/>.</note>
+    <note editorial="true">Gendigtning af Erik Gustaf Geijer: <xref type="translation" poem="geijer2018081001"/>.</note>
   </notes>
   <source pages="214-219"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6194,7 +6194,7 @@ Men den Tappres Minde - skal stande.
   <subtitle>Efter J. E. Stagnelius</subtitle>
   <firstline>Alt fra den Tid, naar Dagens Stjerne brænder</firstline>
   <notes>
-    <note>Gendigtning af Erik Johan Stagnelius: <xref type="translation" poem="stagnelius2018081001"/>.</note>
+    <note editorial="true">Gendigtning af Erik Johan Stagnelius: <xref type="translation" poem="stagnelius2018081001"/>.</note>
   </notes>
   <source pages="220-223"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6340,7 +6340,7 @@ Et ærligt Hjerte, og min hulde, kloge Pige,
   <subtitle>Efter Rückert</subtitle>
   <firstline>Hør nu, hvordan Hankatten, ført ved Rævens List</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2018101101"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2018101101"/>.</note>
   </notes>
   <source pages="225-227"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6410,7 +6410,7 @@ Er altsaa dog, at jeg maa Kattens Datter fæste.
   <subtitle>Efter Stollberg</subtitle>
   <firstline>See, Natten gryer</firstline>
   <notes>
-    <note>Oversættelse af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2018081001"/>.</note>
+    <note editorial="true">Oversættelse af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2018081001"/>.</note>
   </notes>
   <source pages="228-229"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6456,7 +6456,7 @@ Har Nattevagt!
   <title><num>1.</num>Af mine Taarer spirer</title>
   <firstline>Af mine Taarer spirer</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102203"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102203"/>.</note>
   </notes>
   <source pages="230"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6481,7 +6481,7 @@ Huldt Nattergalens Sang.
   <title><num>2.</num>En Rose, en Lille, en Sol og en Due</title>
   <firstline>En Rose, en Lille, en Sol og en Due</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102204"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102204"/>.</note>
   </notes>
   <source pages="230"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6503,7 +6503,7 @@ Paa eengang er Due, Sol, Rose og Lilie.
   <title><num>3.</num>Min Sjel jeg vil neddukke</title>
   <firstline>Min Sjel jeg vil neddukke</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102208"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102208"/>.</note>
   </notes>
   <source pages="231"/>
   <keywords>balladestrofe</keywords>
@@ -6529,7 +6529,7 @@ I underfuld Elskovsstund.
   <title><num>4.</num>Alt længe Jorden var saa gnidsk</title>
   <firstline>Alt længe Jorden var saa gnidsk</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102230"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102230"/>.</note>
   </notes>
   <source pages="231"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6559,7 +6559,7 @@ Min Hjertens kjære, saa sød og aimabel.
   <title><num>5.</num>Af min uhyre Smerte</title>
   <firstline>Af min uhyre Smerte</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102235"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102235"/>.</note>
   </notes>
   <source pages="232"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6584,7 +6584,7 @@ Alt, hvad de saae derinde.
   <title><num>6.</num>Og vidste Blomsterne spæde</title>
   <firstline>Og vidste Blomsterne spæde</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102223"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102223"/>.</note>
   </notes>
   <source pages="232"/>
   <keywords>balladestrofe</keywords>
@@ -6615,7 +6615,7 @@ Og sønderknust min Barm.
   <title><num>7.</num>De sad og drak ved en Theedisk</title>
   <firstline>De sad og drak ved en Theedisk</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102263"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102263"/>.</note>
   </notes>
   <source pages="233"/>
   <keywords>balladestrofe</keywords>
@@ -6656,7 +6656,7 @@ Om <w>din</w> Elskov Sladderen løs.
   <title><num>8.</num>Skjønne, klare, gyldne Stjerne!</title>
   <firstline>Skjønne, klare, gyldne Stjerne!</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018121001"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2018121001"/>.</note>
   </notes>
   <source pages="234"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6676,7 +6676,7 @@ Hjertesyg og bleg og tro.
   <title><num>9.</num>Philistre i Kistekjoler</title>
   <firstline>Philistre i Kistekjoler</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102236"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102236"/>.</note>
   </notes>
   <source pages="234"/>
   <keywords>balladestrofe</keywords>
@@ -6712,7 +6712,7 @@ Og gjør min Barm saa veeg.
   <title><num>10.</num>Da Linden blomstrede, Fuglene sang</title>
   <firstline>Da Linden blomstrede, Fuglene sang</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102226"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102226"/>.</note>
   </notes>
   <source pages="235"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6737,7 +6737,7 @@ Du nikkede høflig det høfligste Nik.
   <title><num>11.</num>See! Øinenes Violer blaae</title>
   <firstline>See! Øinenes Violer blaae</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102244"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102244"/>.</note>
   </notes>
   <source pages="235"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6758,7 +6758,7 @@ Men <w>Hjertets Blomst</w> er gaaet ud.
   <title><num>12.</num>Jeg har Dig elsket, jeg elsker Dig end!</title>
   <firstline>Jeg har Dig elsket, jeg elsker Dig end!</firstline>
   <notes>
-    <note>Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102243"/>.</note>
+    <note editorial="true">Gendigtning af Heinrich Heines <xref type="translation" poem="heine2001102243"/>.</note>
   </notes>
   <source pages="235-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6786,7 +6786,7 @@ Den store Elskovs-Vunde.
   <title>Efter det Tydske</title>
   <firstline>Ingen Ild, ingen Brand</firstline>
   <notes>
-    <note>Gendigtning den tyske folkevise <xref type="translation" poem="anonym2018091601"/>.</note>
+    <note editorial="true">Gendigtning den tyske folkevise <xref type="translation" poem="anonym2018091601"/>.</note>
   </notes>
   <source pages="237"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7426,7 +7426,7 @@ Saaledes, som det her nu findes.
   <subtitle>Efter Goethe</subtitle>
   <firstline>Hvilken Gudinde</firstline>
   <notes>
-    <note>Oversættelse af Goethes <xref type="translation" poem="goethe2018101101"/>.</note>
+    <note editorial="true">Oversættelse af Goethes <xref type="translation" poem="goethe2018101101"/>.</note>
   </notes>
   <source pages="262-265"/>
   <quality>korrektur1,kilde,side,korrektur2</quality>
@@ -7530,7 +7530,7 @@ Trøstende - Haabet!
   <subtitle>Efter Goethe</subtitle>
   <firstline>Bedæk du kun din Himmel, Zeus!</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2000010808"/>.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2000010808"/>.</note>
   </notes>
   <source pages="266-268"/>
   <quality>korrektur1,kilde,side,korrektur2</quality>
