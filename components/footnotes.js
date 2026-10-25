@@ -1,3 +1,4 @@
+import EditorialNoteLabel from './editorial-note-label.js';
 import React, { useContext, useEffect, useState } from 'react';
 
 class Footnotes {
@@ -6,8 +7,8 @@ class Footnotes {
   number = () => {
     return this._footnotes.length;
   };
-  registrer = (footnote, text, authorMarker) => {
-    this._footnotes.push({ footnote, text, authorMarker });
+  registrer = (footnote, text, authorMarker, editorial) => {
+    this._footnotes.push({ footnote, text, authorMarker, editorial });
     return this._footnotes.length;
   };
   unregister = (footnote) => {
@@ -20,7 +21,7 @@ class Footnotes {
 
 const FootnoteContext = React.createContext();
 
-const Footnote = ({ text, authorMarker = null }) => {
+const Footnote = ({ text, authorMarker = null, editorial }) => {
   const footnotes = useContext(FootnoteContext);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ const Footnote = ({ text, authorMarker = null }) => {
     };
   });
 
-  const number = footnotes.registrer(this, text, authorMarker);
+  const number = footnotes.registrer(this, text, authorMarker, editorial);
   const anchor = `note-${number}`;
   return (
     <sup
@@ -58,6 +59,7 @@ const FootnoteList = () => {
               {footnote.authorMarker}
             </span>
           )}
+          {footnote.editorial === true ? <EditorialNoteLabel /> : null}
           {text}
         </div>
       </div>

@@ -75,6 +75,10 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   blanklinjer, hvor trykket viser ekstra lodret afstand. OCR-opdelingen må ikke
   styre strukturen; se `docs/xml-work-format.md` og
   `docs/facsimile-korrektur.md`;
+- markér Kalliopes egne redaktionelle noter og fodnoter med `editorial="true"`,
+  også forlægsangivelser og oversættelseshenvisninger. Attributten kombineres
+  med en eventuel `type`; tilføj den ikke til kildens trykte noter eller ved
+  ukendt ophav. Se `docs/xml-work-format.md`;
 - opret eller opdatér værkmetadata og nødvendige personmetadata;
 - kontrollér titel, forfatter, udgivelsesår, forlag eller trykkested, bind og
   andre bibliografiske oplysninger mod kilden;

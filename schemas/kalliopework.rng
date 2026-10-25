@@ -239,6 +239,7 @@
 
   <define name="note">
     <element name="note">
+      <optional><attribute name="editorial"><value>true</value></attribute></optional>
       <optional>
         <attribute name="space" ns="http://www.w3.org/XML/1998/namespace">
           <choice>
@@ -630,7 +631,7 @@
     </element>
   </define>
   <define name="br"><element name="br"><ref name="simpleElement"/></element></define>
-  <define name="footnote"><element name="footnote"><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
+  <define name="footnote"><element name="footnote"><optional><attribute name="editorial"><value>true</value></attribute></optional><optional><attribute name="type"><value>errata</value></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="biblio"><element name="biblio"><ref name="simpleElement"/></element></define>
   <define name="asterism"><element name="asterism"><ref name="simpleElement"/></element></define>
   <define name="blockquote">

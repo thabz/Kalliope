@@ -109,3 +109,8 @@ Kalliopes software er GPL-2.0. Korpusset består hovedsageligt af public
 domain-tekster, men rettigheder til kilder, redaktionelt materiale, billeder og
 tredjepartsdata kan variere. Kildeoplysninger og kreditering skal bevares, og
 genbrugsretten skal vurderes for den konkrete anvendelse.
+
+Metadata-noter i tekst-JSON kan have det valgfrie booleske felt
+`editorial: true`, når noten er tilføjet af Kalliopes redaktion. Uden feltet
+vises intet mærkat; fraværet fastslår ikke notens ophav. Inline-noter i
+`content_html` bevarer den tilsvarende XML-attribut `editorial="true"`.

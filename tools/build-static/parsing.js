@@ -325,6 +325,9 @@ const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
         { ...fragmentContext, blockType: 'note' },
       ),
     };
+    if (safeGetAttr(note, 'editorial') === 'true') {
+      result.editorial = true;
+    }
     if (unknownOriginalByPoetId != null) {
       result.type = 'unknown-original';
       result.unknownOriginalBy = collected.poets.get(unknownOriginalByPoetId);
