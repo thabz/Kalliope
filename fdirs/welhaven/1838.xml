@@ -7,7 +7,7 @@
     <openlibrary-work>OL12610508W</openlibrary-work>
   </identifiers>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source>"Samlede Skrifter I-VIII af J.S. Welhaven", Den Gyldendalske Boghandel, 1867, bind III.</source>
   <quality>korrektur1,kilde</quality>
@@ -3291,7 +3291,7 @@ Hun har i Himlens Fred
 En Barm at hvile ved;
 En Fryd er hist oprunden
 Af hendes Modersmerte:
-<w>Andreas</w><note>Se digtet <xref poem="welhaven2001060702"/>.</note>, Du har funden
+<w>Andreas</w><note editorial="true">Se digtet <xref poem="welhaven2001060702"/>.</note>, Du har funden
 Og lagt til hendes Hjerte!
 </poetry>
 </body>
@@ -5295,7 +5295,7 @@ og som en vaarlig Storm har plukket af.
   <title>Goliath</title>
   <firstline>Liden Goliath lod til at blive en Rise</firstline>
   <notes>
-    <note>Se <xref bible="bibel1samuel17"/>.</note>
+    <note editorial="true">Se <xref bible="bibel1samuel17"/>.</note>
   </notes>
   <quality>korrektur1,kilde</quality>
 </head>

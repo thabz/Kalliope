@@ -4,9 +4,9 @@
   <title>Smaadigte og Reiseminder</title>
   <year>1832</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, B. S. Ingemann: <i>Smaadigte og Reiseminder</i>, Andreas Seidenlin, Kbh., 1832. Kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er Ingemanns egne.</note>
-    <note>»Reiseminder fra Italien« er én stor episk fortælling med indsatte digte, hvilket ikke egner sig til Kalliopes format. Den kunstige opdeling af Reiseminderne i mindre tekster og den dermed kunstige indholdsfortegnelse er vores beklagelige kompromis.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, B. S. Ingemann: <i>Smaadigte og Reiseminder</i>, Andreas Seidenlin, Kbh., 1832. Kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Ingemanns egne.</note>
+    <note editorial="true">»Reiseminder fra Italien« er én stor episk fortælling med indsatte digte, hvilket ikke egner sig til Kalliopes format. Den kunstige opdeling af Reiseminderne i mindre tekster og den dermed kunstige indholdsfortegnelse er vores beklagelige kompromis.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1832-p1.jpg"><transcription>Smaadigte / og / Reiseminer // af / B. S. Ingemann. // Kjöbenhavn 1832. / Trykt og forlagt af Andreas Seidelin, / Hof- og Universitets - Bogtrykker.</transcription></picture>
@@ -1065,7 +1065,7 @@ Naar lyksaligst han det greb.
     <nonum><small>som holdte sig paa Marken og holdte Nattevagt over deres Hjord. </small></nonum>
     <nonum><small>Og see! Herrens Engel stod over dem og Herrens </small></nonum>
     <nonum><small>Klarhed skinnede om dem.</small></nonum>
-    <nonum><right><small>Lucas E. 2 C. 8. 9. V.<note>Cf. <xref bible="bibellukas02,8-9"/>.</note></small></right></nonum>
+    <nonum><right><small>Lucas E. 2 C. 8. 9. V.<note editorial="true">Cf. <xref bible="bibellukas02,8-9"/>.</note></small></right></nonum>
 
 Vær stille, Jorderige!
     Tie, Verden! med din Larm!
@@ -1146,8 +1146,8 @@ Frelst' er al Verdens Sjæle —
   <firstline>To Engle Smaa</firstline>
   <notes>
     <note>* Efter en Muhamedaners mundtlige Fortælling til en dansk Reisende i Grækenland (Hr. Licent. Theologiæ Ferdinand Fenger).</note>
-    <note type="credits">Bidrag fra Britte Rahbek.</note>
-    <note>En gave til religionshistoriker J. Ferdinand Fenger, mens han er på rejse i Grækenland 1831, fra en tyrkisk lærd Mehemet Effendi. Der findes 9 melodier fra 1832-1935.</note>
+    <note editorial="true" type="credits">Bidrag fra Britte Rahbek.</note>
+    <note editorial="true">En gave til religionshistoriker J. Ferdinand Fenger, mens han er på rejse i Grækenland 1831, fra en tyrkisk lærd Mehemet Effendi. Der findes 9 melodier fra 1832-1935.</note>
   </notes>
   <source pages="49-50"/>
   <quality>korrektur1</quality>
@@ -2353,7 +2353,7 @@ I dit Liv fra Hjertets Kilde.
 
 Og som Røst fra dybe Hav
 Klang din Sang mig i det Fjerne,
-Hist ved Klopstocks<note><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> stille Grav
+Hist ved Klopstocks<note editorial="true"><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> stille Grav
 Og i Glands af Sydens Stjerne.
 Under Nordens Sneesky glad,
 Her jeg ved din Arne sad,
@@ -3426,7 +3426,7 @@ Lytter sortøiet Signora i Skjul til de fremmede Sange.
   <title>Aftensang paa Taget</title>
   <firstline>Over Hav og Bjerg og Flod</firstline>
   <notes>
-    <note>Skrevet under opholdet på Capri sammen med fru Bürgel og hendes fire halvvoksne døtre i marts 1819.  Melodi af Heise.</note>
+    <note editorial="true">Skrevet under opholdet på Capri sammen med fru Bürgel og hendes fire halvvoksne døtre i marts 1819.  Melodi af Heise.</note>
   </notes>
   <source pages="140-141"/>
   <places>
@@ -4477,7 +4477,7 @@ Sig blander tungt Farvel med Afskedssangen.
     <written>1819-04-21</written>
   </dates>
   <notes>
-    <note>Ingemanns note: »Til Familien <i>Bügel</i>, Moderen og de fire Døtre, i hvis Selskab jeg havde foretaget Reisen fra Rom til Neapel og tilbage til Rom.«</note>
+    <note editorial="true">Ingemanns note: »Til Familien <i>Bügel</i>, Moderen og de fire Døtre, i hvis Selskab jeg havde foretaget Reisen fra Rom til Neapel og tilbage til Rom.«</note>
   </notes>
   <source pages="192-194"/>
   <keywords>rom,balladestrofe</keywords>

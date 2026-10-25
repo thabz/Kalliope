@@ -4,8 +4,8 @@
   <title>Løvfald</title>
   <year>1855</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er Møllers egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Møllers egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1855-p1.jpg"><transcription>Løvfald. / Digte af Otto Sommer, / udgivne af H. P. Holst. // Kjøbenhavn. / Bernhard Bendix' Forlag. / Salig (?) B. Salomons Tryk. / 1855.</transcription></picture>
@@ -239,7 +239,7 @@ Og en liden Dreng i dit Følge!
 ,,Men næner man Tvivl om din Alder og Stand,
 Du snildt Erkjendelsen hindre;
 Thi Ingen indlader hun, siger man,
-Som har under syvti Vintre.''<note>Vintre.''] Vintre.</note>
+Som har under syvti Vintre.''<note editorial="true">Vintre.''] Vintre.</note>
 
 
 VI.
@@ -2215,7 +2215,7 @@ Roer i den sin elskte Biondinetta!''
   <subtitle>(Mon habit)</subtitle>
   <firstline>O, vær mig tro, som du paa mig kan stole</firstline>
   <notes>
-    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2001081901"/>.</note>
+    <note editorial="true">Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2001081901"/>.</note>
   </notes>
   <source pages="117-119"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2279,7 +2279,7 @@ Min gamle Ven, vi følges til min Grav!
   </subtitle>
   <firstline>Ved Bordet, sødt beruust af Elskov</firstline>
   <notes>
-    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010302"/>.</note>
+    <note editorial="true">Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010302"/>.</note>
   </notes>
   <source pages="119-122"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2355,7 +2355,7 @@ Flyv bort, slyv bort, og stig i Himlen ind!
   <subtitle>(les étoiles qui filent)</subtitle>
   <firstline>Du siger, Hyrde, at sin Stjerne</firstline>
   <notes>
-    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010301"/>.</note>
+    <note editorial="true">Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2018010301"/>.</note>
   </notes>
   <source pages="123-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2437,7 +2437,7 @@ Et Glimt, — som ikke meer er til!''
   <subtitle>af Victor Hugo.</subtitle>
   <firstline>Kun ham! overalt kun ham! — hvor helst mit Hjerte banker</firstline>
   <notes>
-    <note>Gendigtning af Victor Hugo: <xref type="translation" poem="hugo20180206"/>.</note>
+    <note editorial="true">Gendigtning af Victor Hugo: <xref type="translation" poem="hugo20180206"/>.</note>
   </notes>
   <source pages="127-135"/>
   <keywords>tasso,virgil</keywords>
@@ -2455,8 +2455,8 @@ Naar dette Kæmpenavn, som i et Lyshav svømmer,
 Majestætisk og stort sig slynger i mit Vers.
 
 Hist jeg ham rette seer Haubitsens kjække Buer, —
-Paa Kongemorderes Bud hans Staalhaand Folket kuer,<note>13 Vendemiaire.</note> -
-Tribuners golde Magt han hist til Jorden slaaer.<note>18 Brumaire.</note>
+Paa Kongemorderes Bud hans Staalhaand Folket kuer,<note editorial="true">13 Vendemiaire.</note> -
+Tribuners golde Magt han hist til Jorden slaaer.<note editorial="true">18 Brumaire.</note>
 Her Consul, ung og stolt, af vaagne Nætter tæret,
 Mens en Keiserdrøm vidunderfuld i Sjælen ham gjæred, —
   Bleg, med de lange, sorte Haar.
@@ -2905,7 +2905,7 @@ Naar Regimentet, der nævnes, hun ikke kjender.
 Ind i Marthes lille Stue træder
 Onkelen en Dag, og siger: Veed du,
 For at naae det Maal, du efterstræber,
-Der behøves tusinde Pistoler.<note>En Pistol er en forældet Benævnelse for ti Francs.</note>
+Der behøves tusinde Pistoler.<note editorial="true">En Pistol er en forældet Benævnelse for ti Francs.</note>
 Og du snart vil have dem, min Datter,
 Lille Sum kan voxe. Vi vil ikke
 Sælge Huset; regn kun ud: med Summen
@@ -3535,7 +3535,7 @@ Om Alt hvad vi læse, høre og see,
 Om hvad der bør skee og ikke skee,
 Har du som enhver Philister;
 Men bryd dig ei om din egen Dom
-Før<note>Før] For</note> du har <w>været</w> Minister.
+Før<note editorial="true">Før] For</note> du har <w>været</w> Minister.
 
 
 VI.

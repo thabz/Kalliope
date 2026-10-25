@@ -12,8 +12,8 @@
   <firstline>Jyden han æ stærk aa sej</firstline>
   <notes>
     <note>Tekst og Melodi skrevet til det paatænkte Hohøj-Møde 1846.</note>
-    <note>Første gang trykt i <i>Aalborg Stiftstidende</i>, 11. maj 1849.</note>
-    <note>DSLs udgave baserer sig på Blichers manuskript fra 1846, og ikke det senere tryk i Aalborg Stiftstidende, som indeholder små afvigelser.</note>
+    <note editorial="true">Første gang trykt i <i>Aalborg Stiftstidende</i>, 11. maj 1849.</note>
+    <note editorial="true">DSLs udgave baserer sig på Blichers manuskript fra 1846, og ikke det senere tryk i Aalborg Stiftstidende, som indeholder små afvigelser.</note>
   </notes>
   <source pages="294">
     <title>Digte og Noveller</title>
@@ -51,7 +51,7 @@ Haall sæ ve, te aalt faagoer!
   <firstline>De Refsnæsdrenge, de Samsøpiger</firstline>
   <notes>
     <note>1842</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -89,8 +89,8 @@ I slynge dem væk og beholde jer Kans.
   <title>I Skanderborrig Enge</title>
   <firstline>I Skanderborrig Enge</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
-    <note><a poet="boerup">Morten Børup</a> (ca. 1446–1526) var rektor for Aarhus Katedralskole og digter af latinske vers og skuespil.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true"><a poet="boerup">Morten Børup</a> (ca. 1446–1526) var rektor for Aarhus Katedralskole og digter af latinske vers og skuespil.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -190,7 +190,7 @@ i Stedet for dem at slaa.
   <firstline>Ud gaar du nu paa Livets Vej</firstline>
   <notes>
     <note>1829</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>

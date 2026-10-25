@@ -8,8 +8,8 @@
   <breadcrumbtitle>Bd. 1</breadcrumbtitle>
   <year>1868</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1868-p1.jpg"><transcription>Psalmer / og / aandelige Sange. / af / Nik. Fred. Sev. Grundtvig. // Første Deel. / Sangværket. // Kjøbenhavn. / Michaelsen &amp; Tillige. K. Schønberg. / Thieles Bogtrykkeri. / 1868.</transcription></picture>
@@ -1060,7 +1060,7 @@ Det i vor Æt nedarves!
   <title><num>4.</num>Som den gyldne Soel udbryder</title>
   <firstline>Som den gyldne Soel udbryder</firstline>
   <notes>
-    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+    <note editorial="true">'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
   </notes>
   <source pages="28-30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1334,7 +1334,7 @@ Din Kirke vil forklare!
 </head>
 <body>
 <poetry>
-Her er Guds Huus og Himlens Dør,<note>Cf. <xref bible="bibel1mose28,17"/>.</note>
+Her er Guds Huus og Himlens Dør,<note editorial="true">Cf. <xref bible="bibel1mose28,17"/>.</note>
 Og ellers ingensteder,
 I Øst og Vest, i Syd og Nør,
 Det er min Arilds-Hæder;
@@ -2184,7 +2184,7 @@ Tusind Tak for Christjan-Stammen,
 Groet af dem alle sammen!
 
 Ja, for os faldt Maale-Snore
-Liflig mellem Bølger blaa,<note>Cf. <xref bible="bibelsalme16,6"/>.</note>
+Liflig mellem Bølger blaa,<note editorial="true">Cf. <xref bible="bibelsalme16,6"/>.</note>
 Klart det blev, den evig Store
 Elsker meest paa Jord de Smaa,
 Lader her, til deres Tarv,
@@ -2295,7 +2295,7 @@ Med Venner i Lys vi tale!
   <firstline>For al den Deel, som Gud har gjort</firstline>
   <notes>
     <note>* En omarbeidelse af Brorsons: "Op al den Ting som Gud har gjort"</note>
-    <note>Cf. Brorsons <xref poem="brorson1739b1"/>.</note>
+    <note editorial="true">Cf. Brorsons <xref poem="brorson1739b1"/>.</note>
   </notes>
   <source pages="59-62"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2904,7 +2904,7 @@ Vil jer paa Hænder bære!
   <title><num>24.</num>Var I ikke Galilæer</title>
   <firstline>Var I ikke Galilæer</firstline>
   <notes>
-    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+    <note editorial="true">'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
   </notes>
   <source pages="74-77"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3022,7 +3022,7 @@ Overstod vi Faren?
 Slap vor Sjæl, foruden Tant,
 Som en Fugl af Snaren?
 Blev til Drøm al Fiendens Daad,
-Stranded Achitofels Raad<note>Cf. <xref bible="bibel2samuel15,31"/>.</note>
+Stranded Achitofels Raad<note editorial="true">Cf. <xref bible="bibel2samuel15,31"/>.</note>
 Paa vor skjulte Klippe?
 
 Ja, saavist som Fugl er fri,
@@ -3081,7 +3081,7 @@ Vinter aldrig mere!
   <title><num>26.</num>Hos Herren paa det Høie</title>
   <firstline>Hos Herren paa det Høie</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelmatt17"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelmatt17"/>.</note>
   </notes>
   <source pages="78-80"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4222,7 +4222,7 @@ Salighed af Naade!
   <title><num>40.</num>Verden er, som Man den tager</title>
   <firstline>Verden er, som Man den tager</firstline>
   <notes>
-    <note>Sven Sørensen skriver: ,,Se Rahbeks digt <xref poem="rahbek2001062308"/> med samme førstelinie. Er der tale om en travesti heraf, eller er identiteten tilfældig?''</note>
+    <note editorial="true">Sven Sørensen skriver: ,,Se Rahbeks digt <xref poem="rahbek2001062308"/> med samme førstelinie. Er der tale om en travesti heraf, eller er identiteten tilfældig?''</note>
   </notes>
   <source pages="106-108"/>
   <keywords>helpwanted</keywords>
@@ -4864,7 +4864,7 @@ Naar bag Sky vi Maanen skimter!
 
 O, lad Troen sig nedsænke
 Dybt i Jordans rene Flod!
-Lad os ei med Naman tænke:<note>Cf. <xref bible="bibel2konge05,1-14"/>.</note>
+Lad os ei med Naman tænke:<note editorial="true">Cf. <xref bible="bibel2konge05,1-14"/>.</note>
 Hver en Strøm er lige god!
 Lad ei Fienden os indskyde,
 Lidt det er dit Ord at lyde!
@@ -4884,7 +4884,7 @@ Han har Lyset, han har Aanden,
 Derfor Alt kan Barne-Haanden!
 
 Jesus! ja, Du vil jo være
-I os Herlighedens Haab,<note>Cf. <xref bible="bibelkolossen01,27"/>.</note>
+I os Herlighedens Haab,<note editorial="true">Cf. <xref bible="bibelkolossen01,27"/>.</note>
 Fødes, til Gud Faders Ære,
 Hos os i hver Barne-Daab,
 Voxe hos os allesammen
@@ -5430,7 +5430,7 @@ Smelte kiærlig sammen!
 <body>
 <poetry>
 Dig rumme ei Himle,
-Og Himlenes Himle,<note>Cf. <xref bible="bibel1konge08,27"/>.</note>
+Og Himlenes Himle,<note editorial="true">Cf. <xref bible="bibel1konge08,27"/>.</note>
 Vor Herre fuldstor!
 Saa ei er at tale
 Om Høielofts Sale
@@ -5750,7 +5750,7 @@ Til for dit Aasyn de kronede staae!
   <firstline>Giv mig, Gud, en Psalme-Tunge</firstline>
   <notes>
     <note>* Efter den <a bible="bibelsalme92">92. Davids-Psalme</a>.</note>
-    <note>I udgaven af dette digt som blev trykt i <i>Nordisk Kirketidende</i>, 1836 findes 8. strofe som: »Om end giennem Dage haarde, / Blomstre skal i dine Gaarde / Hvert et Hjerte-Skud, / Bære Frugt paa gamle Dage, / Medens Bjerg og Skov gientage: / Eiegod er Gud!«</note>
+    <note editorial="true">I udgaven af dette digt som blev trykt i <i>Nordisk Kirketidende</i>, 1836 findes 8. strofe som: »Om end giennem Dage haarde, / Blomstre skal i dine Gaarde / Hvert et Hjerte-Skud, / Bære Frugt paa gamle Dage, / Medens Bjerg og Skov gientage: / Eiegod er Gud!«</note>
   </notes>
   <source pages="142-143"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6015,7 +6015,7 @@ Guds Aand dig hjelpe frem!
   <firstline>Din Kirke-Mark, o Gud!</firstline>
   <notes>
     <note>* Efter Kingos: O Gud, hvor jammerlig, din Kirke-Ager sig, I disse Tider finder</note>
-    <note>Cf. <xref bible="bibelmatt13,24-30"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelmatt13,24-30"/>.</note>
   </notes>
   <source pages="148-150"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6767,7 +6767,7 @@ Deres Sjæl er i Guds Haand,
 De bedrøver ei Hans Aand!
 Laster ei hans Ledebaand.
 
-Født af Kiødet er dog Kiød,<note>Cf. <xref bible="bibeljohannes03,5-6"/>.</note>
+Født af Kiødet er dog Kiød,<note editorial="true">Cf. <xref bible="bibeljohannes03,5-6"/>.</note>
 Frugt af Synd og Frø til Død;
 Fødsel kun af Vand og Aand
 Løser Synds og Dødens Baand,
@@ -7174,7 +7174,7 @@ Ei mægte I at binde
 Den store Konges Ord!
 Nei, for den Samson briste
 Maae Reeb og seie Kviste,
-Som Traad og Siv og Straa!<note>Cf. <xref bible="bibeldommer16,8ff"/>.</note>
+Som Traad og Siv og Straa!<note editorial="true">Cf. <xref bible="bibeldommer16,8ff"/>.</note>
 
 Hvad Fængslerne fuldtætte,
 Med firedobbelt Vagt,
@@ -7208,7 +7208,7 @@ Thi selv i Helved findes
 Ei Lænken, hvormed bindes
 Kan Haand og Mund paa Gud!
 
-Som Paulus i sin Lænke,<note>Cf. <xref bible="bibel2timoteus02,9"/>.</note>
+Som Paulus i sin Lænke,<note editorial="true">Cf. <xref bible="bibel2timoteus02,9"/>.</note>
 Ved Satans Stol i Rom,
 Vi sige skal og tænke,
 Med Tak til Gud, derom:
@@ -10277,7 +10277,7 @@ Halleluja, Halleluja,
   <title><num>113.</num>Min Mund og mit Hjerte</title>
   <firstline>Min Mund og mit Hjerte</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelrom10,9ff"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelrom10,9ff"/>.</note>
   </notes>
   <source pages="255-256"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10973,7 +10973,7 @@ Ham, som gjorde Alting godt!
   <firstline>Himlene, Herre, fortælle din Ære</firstline>
   <notes>
     <note>* Af den <a bible="bibelsalme19">19. Davids-Psalme</a></note>
-    <note>Cf. <xref bible="bibelsalme19"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelsalme19"/>.</note>
   </notes>
   <source pages="273-274"/>
   <quality>korrektur1,kilde,side</quality>
@@ -11675,7 +11675,7 @@ Hans Kiærlighed dulme din Smerte!
   <firstline>Foragter ei de ringe Dage!</firstline>
   <notes>
     <note>* Efter Propheten <a bible="bibelzakarias04">Sacharias 4</a></note>
-    <note>Cf. <xref bible="bibelzakarias04,6-10"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelzakarias04,6-10"/>.</note>
   </notes>
   <source pages="290-292"/>
   <quality>korrektur1,kilde,side</quality>
@@ -11768,7 +11768,7 @@ Og folde sig i Lampens Glands!
   <firstline>Blomstre som en Rosen-Gaard</firstline>
   <notes>
     <note>* Efter Propheten <a bible="bibelesajas35">Esaias 35.</a></note>
-    <note>Cf. <xref bible="bibelesajas35"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelesajas35"/>.</note>
   </notes>
   <source pages="292-296"/>
   <quality>korrektur1,kilde,side</quality>
@@ -11936,7 +11936,7 @@ Dødens Drot og Mørkets Rige!
   <title><num>134.</num>Denne er Dagen, som Herren har gjort</title>
   <firstline>Denne er Dagen, som Herren har gjort!</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelsalme118,24-29"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelsalme118,24-29"/>.</note>
   </notes>
   <source pages="296-297"/>
   <quality>korrektur1,kilde,side</quality>
@@ -12837,8 +12837,8 @@ Virker salig Hjertens-Fryd!
   <title><num>146.</num>En Sæde-Mand gik ud at saae</title>
   <firstline>En Sæde-Mand gik ud at saae</firstline>
   <notes>
-    <note>Cf. <xref bible="bibellukas08,4-15"/>.</note>
-    <note>Salmenummeret fejltrykt som 164.</note>
+    <note editorial="true">Cf. <xref bible="bibellukas08,4-15"/>.</note>
+    <note editorial="true">Salmenummeret fejltrykt som 164.</note>
   </notes>
   <source pages="318-320"/>
   <quality>korrektur1,kilde,side</quality>
@@ -12896,7 +12896,7 @@ I Tro og Haab og Kiærlighed
 Det Maal opnaaes, hvortil der løbes!
 
 Med Grad-Forskiel i Herlighed,
-Vor Faders Huus har Sale mange,<note>Cf. <xref bible="bibeljohannes14,2"/>.</note>
+Vor Faders Huus har Sale mange,<note editorial="true">Cf. <xref bible="bibeljohannes14,2"/>.</note>
 Men overalt er Liv og Fred,
 Og evigsøde Fryde-Sange!
 </poetry>
@@ -13652,7 +13652,7 @@ Vær velkommen til os Smaa,
   <firstline>Sanddru og Fredegod!</firstline>
   <notes>
     <note>* Af den Angel-Sachsiske Messiade i Exeter-Bogen</note>
-    <note>Strofe 13, vers 3: <a bible="bibelezekiel44">Ezechiel 44</a></note>
+    <note editorial="true">Strofe 13, vers 3: <a bible="bibelezekiel44">Ezechiel 44</a></note>
   </notes>
   <source pages="338-340"/>
   <quality>korrektur1,kilde,side</quality>
@@ -14010,7 +14010,7 @@ Som sang for os saa frydelig!
   <firstline>Et Barn er født i Bethlehem</firstline>
   <notes>
     <note>* Ny Bearbeidelse af vor gamle Jule-Sang, oprindelig paa Munke-Latin "Puer, natus in Bethlehem"</note>
-    <note>I andre udgaver findes 11. strofe som: »For Frelser bold og Broder blid, / Broder blid, / Vi synge da til evig Tid: / Halleluja, Halleluja!«</note>
+    <note editorial="true">I andre udgaver findes 11. strofe som: »For Frelser bold og Broder blid, / Broder blid, / Vi synge da til evig Tid: / Halleluja, Halleluja!«</note>
   </notes>
   <source pages="346-348"/>
   <quality>korrektur1,kilde,side</quality>
@@ -14167,7 +14167,7 @@ Med hans Søn den kiære!
 Herre! dine Hænders Værk
 Er vi allesammen,
 Vi er svage, du er stærk,
-Du er Ja og Amen;<note>Cf. <xref bible="bibel2korint01,19ff"/>.</note>
+Du er Ja og Amen;<note editorial="true">Cf. <xref bible="bibel2korint01,19ff"/>.</note>
 For os du dalede,
 For os du blegnede,
 Lad os ei forfare!
@@ -14184,7 +14184,7 @@ Med din Engle-Skare!
   <firstline>Et lidet Barn saa lystelig</firstline>
   <notes>
     <note>* Luthers Vers "Ein Kindelein so löbelich"</note>
-    <note>Gendigtning af Luthers <xref type="translation" poem="luther2002010601"/>.</note>
+    <note editorial="true">Gendigtning af Luthers <xref type="translation" poem="luther2002010601"/>.</note>
   </notes>
   <source pages="351"/>
   <quality>korrektur1,kilde,side</quality>
@@ -14786,7 +14786,7 @@ Saa frydelig sig skynde!
   <firstline>Fryd dig ved Guds Behag</firstline>
   <notes>
     <note>* Kingos "Fryd dig i Guds Behag," lidt forandret</note>
-    <note>Salmenummeret fejltrykt som 167.</note>
+    <note editorial="true">Salmenummeret fejltrykt som 167.</note>
   </notes>
   <source pages="365-366"/>
   <quality>korrektur1,kilde,side</quality>
@@ -15010,7 +15010,7 @@ Svøber, Torne, Kors og Glavind!
 Ræven i sin Røver-Kule
 Haver bedre Leilighed,
 Og paa Kvisten vilde Fugle,
-End paa Jorden af du veed!<note>Cf. <xref bible="bibellukas09,58"/>.</note>
+End paa Jorden af du veed!<note editorial="true">Cf. <xref bible="bibellukas09,58"/>.</note>
 Af dit eget Folke-Færd
 Agtes du kun Døden værd,
 Kaldes kun paa Korsets Throne
@@ -15201,7 +15201,7 @@ Klart nu skinner Nytaars-Ny!
   <firstline>I denne søde Jule-Tid</firstline>
   <notes>
     <note>* Brorsons Velbekiendte, næsten uforandret</note>
-    <note>Cf. Brorsons <xref poem="brorson1732a1"/>.</note>
+    <note editorial="true">Cf. Brorsons <xref poem="brorson1732a1"/>.</note>
   </notes>
   <source pages="375-377"/>
   <quality>korrektur1,kilde,side</quality>
@@ -15488,7 +15488,7 @@ Da aldrig blandt os være!
   <firstline>Davids faldefærdig' Hytte!</firstline>
   <notes>
     <note>* Fru Boies, i den Guldbergske Psalme-Bog No. 76, gjort lidt istand</note>
-    <note>Salmenummeret fejltrykt som 168.</note>
+    <note editorial="true">Salmenummeret fejltrykt som 168.</note>
   </notes>
   <source pages="382-383"/>
   <quality>korrektur1,kilde,side</quality>
@@ -16137,7 +16137,7 @@ Giør Frelseren kronede Dage!
   <firstline>Bøi dig for din Konge, Sjæl!</firstline>
   <notes>
     <note>* Af Ingemanns "Glæd dig Zion, glæd dig Jord"</note>
-    <note unknown-original-by="ingemann" />
+    <note editorial="true" unknown-original-by="ingemann" />
   </notes>
   <source pages="398-399"/>
   <quality>korrektur1,kilde,side</quality>
@@ -16171,7 +16171,7 @@ Hosianna i det Høie!
   <firstline>Jeg som et Barn mig glæde vil</firstline>
   <notes>
     <note>* Ingemanns Jule-Sang med et Par Smaa-Ændringer</note>
-    <note unknown-original-by="ingemann" />
+    <note editorial="true" unknown-original-by="ingemann" />
   </notes>
   <source pages="399-400"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17075,7 +17075,7 @@ Evig ved din Høire-Haand!
   <firstline>O Gud, min Gud og Fader!</firstline>
   <notes>
     <note>* Den <a bible="bibelsalme22">22. Davids-psalme</a>, frit oversat</note>
-    <note>Cf. <xref bible="bibelsalme22"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelsalme22"/>.</note>
   </notes>
   <source pages="422-426"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17269,7 +17269,7 @@ Sin Throne med Glands at beklæde!
   <firstline>Stat op i Gry, min Gud! stat op!</firstline>
   <notes>
     <note>* Den <a bible="bibelsalme68">68. Davids-Psalme</a>, christelig benyttet</note>
-    <note>Cf. <xref bible="bibelsalme68"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelsalme68"/>.</note>
   </notes>
   <source pages="427-430"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17411,8 +17411,8 @@ Døde for os, saa vi leve med dig!
   <firstline>Med sin Alabaster-Krukke</firstline>
   <notes>
     <note>* Efter den Græske Sang i Dimmel-Ugen</note>
-    <note>Cf. <xref bible="bibellukas07,36-50"/>.</note>
-    <note>Synges palmesøndag</note>
+    <note editorial="true">Cf. <xref bible="bibellukas07,36-50"/>.</note>
+    <note editorial="true">Synges palmesøndag</note>
   </notes>
   <source pages="431-433"/>
   <quality>korrektur1,kilde,side</quality>
@@ -17595,8 +17595,8 @@ Din Langmodighed er stor!
   <firstline>For den soleklare Gud</firstline>
   <notes>
     <note>* Efter Græske vers</note>
-    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
-    <note>Herfra stammer verset <i>Som et stille offerlam</i>, DDS 173.</note>
+    <note editorial="true">'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+    <note editorial="true">Herfra stammer verset <i>Som et stille offerlam</i>, DDS 173.</note>
   </notes>
   <source pages="435-437"/>
   <quality>korrektur1,kilde,side</quality>
@@ -18507,7 +18507,7 @@ Skiøndt jeg maa som Blomsten visne,
 Skiøndt min Haand og Barm maa isne,
 Du, jeg troer, kan det saa mage,
 At jeg Døden ei skal smage,
-Du betalde Syndens Sold!<note>Cf. <xref bible="bibelrom6,23"/>.</note>
+Du betalde Syndens Sold!<note editorial="true">Cf. <xref bible="bibelrom6,23"/>.</note>
 
 Ja, jeg troer paa Korsets Gaade,
 Giør det, Frelser, af din Naade!
@@ -19602,7 +19602,7 @@ Den Mindste, Ham har kiær!
   <firstline>Navnet over alle Navne</firstline>
   <notes>
     <note>* Watts <a poem="watts2026081302">"Dearest of all the names above"</a> frit oversat.</note>
-    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+    <note editorial="true">'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
   </notes>
   <source pages="482"/>
   <quality>korrektur1,kilde,side</quality>
@@ -19750,7 +19750,7 @@ Hans Gave er et Gylden-Aar,
 Livsaligt, evig godt!
 
 I Lysets Aander, Engle-Chor!
-Lovsynger "Gud med os,"<note>Cf. <xref bible="bibelmatt01,23"/>.</note>
+Lovsynger "Gud med os,"<note editorial="true">Cf. <xref bible="bibelmatt01,23"/>.</note>
 Som reiste op den faldne Jord,
 Al Mørkheds Magt til Trods!
 </poetry>
@@ -20592,7 +20592,7 @@ Med Straale-Krands paa Rosen-Sky!
   <firstline>Hjelp Gud, at jeg nu kunde</firstline>
   <notes>
     <note>* vor egen Gamle, med samme Begyndelse gjort i Fængsel, nu læmpelig ændret</note>
-    <note>Hvem kan forklare hvad Grundtvigs note ovenfor betyder? Send svaret til jesper@kalliope.org.</note>
+    <note editorial="true">Hvem kan forklare hvad Grundtvigs note ovenfor betyder? Send svaret til jesper@kalliope.org.</note>
   </notes>
   <source pages="506-508"/>
   <keywords>helpwanted</keywords>
@@ -21690,7 +21690,7 @@ Torne-Kronen dyrebar!
   <title><num>283.</num>Over Krybben Korset svæver</title>
   <firstline>Over Krybben Korset svæver</firstline>
   <notes>
-    <note>'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
+    <note editorial="true">'Korsets Ord' alluderer til <xref bible="bibel1korint01,18"/>: 'Thi Korsets Ord er vel for dem, som fortabes, en Daarskab, men for dem, som frelses, for os er det en Guds Kraft.' <i>Ordbog over det danske sprog</i> [under <i>Kors,</i> sp. 143] angiver at talen er om 'Kristi ord paa korset.' Men dette er en ren misforståelse: Meningen er 'ordet om korset,' (således da også i 1948-oversættelsen af Ny Testamente), eller, frit oversat, 'forkyndelsen af Kristi død på korset.' (Der er ingen vidnesbyrd om at Paulus har kendt evangeliernes traditioner om Jesu ord på korset.) - Sven Sørensen</note>
   </notes>
   <source pages="534-535"/>
   <quality>korrektur1,kilde,side</quality>
@@ -21959,7 +21959,7 @@ Dit Navn velsignet være!
   <firstline>Som den gyldne Soel frembryder</firstline>
   <notes>
     <note>* Kingos Berømte, for en Deel omsat</note>
-    <note>Cf. Kingos <xref poem="kingo2001071402"/>.</note>
+    <note editorial="true">Cf. Kingos <xref poem="kingo2001071402"/>.</note>
   </notes>
   <source pages="540-542"/>
   <quality>korrektur1,kilde,side</quality>
@@ -22151,7 +22151,7 @@ Jesus stod i Morgen-Røde!
   <firstline>Hører, I, som græde</firstline>
   <notes>
     <note>* Brorsons med samme Begyndelse, tildeels omarbeidet</note>
-    <note>Cf. Brorsons <xref poem="brorson1739a9"/>.</note>
+    <note editorial="true">Cf. Brorsons <xref poem="brorson1739a9"/>.</note>
   </notes>
   <source pages="545-547"/>
   <quality>korrektur1,kilde,side</quality>
@@ -22731,7 +22731,7 @@ I Jesu Navn og syng med os:
   <firstline>Lyse Morgen er oprunden</firstline>
   <notes>
     <note>* Af Ingemanns Paaske-Sang uforandret</note>
-    <note>Note til strofe 2, vers 4: Mens han alt paa Lysets Vinge overfarer Jord og Hav!</note>
+    <note editorial="true">Note til strofe 2, vers 4: Mens han alt paa Lysets Vinge overfarer Jord og Hav!</note>
   </notes>
   <source pages="559-560"/>
   <quality>korrektur1,kilde,side</quality>
@@ -22776,7 +22776,7 @@ Engle-Røst fra Graven toner!
   <firstline>Hørt det har jeg, Han opstod</firstline>
   <notes>
     <note>* Ogsaa Ingemanns uforandret</note>
-    <note unknown-original-by="ingemann" />
+    <note editorial="true" unknown-original-by="ingemann" />
   </notes>
   <source pages="560-561"/>
   <quality>korrektur1,kilde,side</quality>
@@ -22820,8 +22820,8 @@ Salig, hellig og forklaret!
   <firstline>Har Sorg og Frygt mit Lys udslukt</firstline>
   <notes>
     <note>* Ingemanns uforandret</note>
-    <note>Note til strofe 4, vers 6: Lær mig at troe hvad ei jeg saae, og Vidnesbyrd at lide paa</note>
-    <note unknown-original-by="ingemann" />
+    <note editorial="true">Note til strofe 4, vers 6: Lær mig at troe hvad ei jeg saae, og Vidnesbyrd at lide paa</note>
+    <note editorial="true" unknown-original-by="ingemann" />
   </notes>
   <source pages="561-562"/>
   <quality>korrektur1,kilde,side</quality>
@@ -23993,7 +23993,7 @@ Der Guds-Hvilen jeg skal finde!
   <firstline>Drag, Jesus, mig</firstline>
   <notes>
     <note>* Brorsons med samme Begyndelse, saa smaat forandret</note>
-    <note>Cf. Brorsons <xref poem="brorson1739a11"/>.</note>
+    <note editorial="true">Cf. Brorsons <xref poem="brorson1739a11"/>.</note>
   </notes>
   <source pages="590"/>
   <quality>korrektur1,kilde,side</quality>
@@ -24276,7 +24276,7 @@ Dele skal din Herlighed.
   <firstline>Hos Gud, før Verdens Grund blev lagt</firstline>
   <notes>
     <note>* Ingemanns Himmelfarts-Sang "Fuldendt er Naadens store Værk" med Udeladelse af første Vers</note>
-    <note>[1] Den Haand, som tæmmed Storm og Hav; [2] Himlen vinker, Herlighedens Krone blinker; [3] Velsignelse paa Jorderig endnu din Haand udbreder; [4] Forjættet har du os din Aand; [5] Herre! stig da paa din Throne; [6] Jesus aldrig Jorden glemmer.</note>
+    <note editorial="true">[1] Den Haand, som tæmmed Storm og Hav; [2] Himlen vinker, Herlighedens Krone blinker; [3] Velsignelse paa Jorderig endnu din Haand udbreder; [4] Forjættet har du os din Aand; [5] Herre! stig da paa din Throne; [6] Jesus aldrig Jorden glemmer.</note>
   </notes>
   <source pages="596-597"/>
   <quality>korrektur1,kilde,side</quality>
@@ -25988,7 +25988,7 @@ Og vi blev Fiendens Bytte!
 Hellig-Aand! vor Sorg Du slukke!
 Vor Mørkladenhed giør klar!
 Livets Kilde Du oplukke!
-Davids-Nøgelen Du har.<note>Cf. <xref bible="bibelaabenbaringen03,7"/>.</note>
+Davids-Nøgelen Du har.<note editorial="true">Cf. <xref bible="bibelaabenbaringen03,7"/>.</note>
 Giv os, Trøster i al Nød,
 Lys for Mørke, Liv for Død!
 
@@ -26270,7 +26270,7 @@ Jesus, Dødens Bane-Mand!
   <title><num>364.</num>Helgen her og Helgen hisset</title>
   <firstline>Helgen her og Helgen hisset</firstline>
   <notes>
-    <note>Ch. Wesleys "The saints on earth and those above" frit oversat og forøget</note>
+    <note editorial="true">Ch. Wesleys "The saints on earth and those above" frit oversat og forøget</note>
   </notes>
   <source pages="641-642"/>
   <quality>korrektur1,kilde,side</quality>
@@ -26310,7 +26310,7 @@ Banet see vi Arke-Vad!
 Til vi samles efter Haanden,
 Ret i Livets Kilde-Vang,
 Mødes her og hist i Aanden
-Daglig vi med Moses sang!<note>Cf. <xref bible="bibelaabenbaringen15,3"/> og <xref bible="bibel2mose15"/>.</note>
+Daglig vi med Moses sang!<note editorial="true">Cf. <xref bible="bibelaabenbaringen15,3"/> og <xref bible="bibel2mose15"/>.</note>
 </poetry>
 </body>
 </text>
@@ -27503,7 +27503,7 @@ Sandhedens Vidne og Kiærligheds Tolk!
   <firstline>Fra Himlen Herrens Aand nedfoer</firstline>
   <notes>
     <note>* Ingemanns Pindse-Sang uforandret</note>
-    <note unknown-original-by="ingemann" />
+    <note editorial="true" unknown-original-by="ingemann" />
   </notes>
   <source pages="668-669"/>
   <quality>korrektur1,kilde,side</quality>
@@ -27779,7 +27779,7 @@ Den mesterlig forklarer!
   <title><num>393.</num>Talsmand! som paa Jorderige</title>
   <firstline>Talsmand! som paa Jorderige</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelrom8,26"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelrom8,26"/>.</note>
   </notes>
   <source pages="675-677"/>
   <quality>korrektur1,kilde,side</quality>

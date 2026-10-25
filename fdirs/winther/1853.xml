@@ -4,7 +4,7 @@
   <title>Nye Digtninger</title>
   <year>1853</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1853-p1.jpg">Titelbladet til <i>Nye Digtninger</i> (1853) lyder ,,Nye Digtninger, / af / Christian Winther. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt i Bianco Lunos Bogtrykkeri. / 1853.''</picture>
@@ -106,7 +106,7 @@ Er Hjertesuk og Smil og Sange!
   <title>Til J.</title>
   <firstline>Læg Vedbendranken om min Hat</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="6-7"/>
   <keywords>balladestrofe</keywords>
@@ -750,7 +750,7 @@ Med Fruer, Frøkner, Riddersmænd
 I Folkemund var talt og sagt
   Heel Meget om en hemmelig Magt,
 Som lured hist blandt vilde Fjelde
-Og øved der sin skumle Vælde.<note>Vælde] Væde</note>
+Og øved der sin skumle Vælde.<note editorial="true">Vælde] Væde</note>
 For Korsets stærke Banner did
   Den flygtet var i fordums Tid;
 Og Alt, hvad der i Landet skeete
@@ -830,7 +830,7 @@ Den samme Vei jeg tog igjen,
 Jeg vilde gribe til mit Sværd, -
   Da vaagned jeg og fandt mig her.
 See nu! min gyldne Ring jeg byder
-  Den, som mit Drømmesyn udtyder!''<note>udtyder!,,] udtyder!''</note>
+  Den, som mit Drømmesyn udtyder!''<note editorial="true">udtyder!,,] udtyder!''</note>
 
 Og det var Ridder, det var Svend,
   De faldt i dybe Tanker hen;
@@ -1608,7 +1608,7 @@ Arve skal i Dag <w>min</w> Søn!''
   <title>Skatten</title>
   <firstline>Nei, Karen! gaae ei bort i Nat</firstline>
   <notes>
-    <note>Motivet som er taget fra folkesagnene findes også i Winthers <xref poem="winther2002021791"/> og Oehlenschlägers <xref poem="oehlenschlaeger2001052803"/>.</note>
+    <note editorial="true">Motivet som er taget fra folkesagnene findes også i Winthers <xref poem="winther2002021791"/> og Oehlenschlägers <xref poem="oehlenschlaeger2001052803"/>.</note>
   </notes>
   <source pages="69-78"/>
   <keywords>balladestrofe</keywords>
@@ -1854,7 +1854,7 @@ I Mangel af den anden!''
   <title>Den rige Frøken</title>
   <firstline>Det var just en St. Hansdag</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Oprindeligt indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="79-96"/>
   <quality>korrektur1,korrektur2,kilde</quality>
@@ -1882,7 +1882,7 @@ Hverken Rist eller Ro.
 Nys stod han paa <w>Trefoldighed</w>
 Hos ham ved høien Mast,
 Og blæste kjæk Trompeten,
-Mens Gothens Hjerne brast.<note>Allusion til Ewalds <xref poem="ewlad1999022205"/>.</note>
+Mens Gothens Hjerne brast.<note editorial="true">Allusion til Ewalds <xref poem="ewlad1999022205"/>.</note>
 Nu var han atter hjemme
 Paa den saftgrønne Ø,
 Og havde sig trolovet
@@ -2886,7 +2886,7 @@ Mit eget Fond var ikke stort,
 Jeg gjorde, hvad der før er gjort;
 Jeg rapsed hist og her i Smug,
 Hvad bedst sig egned til mit Brug;
-Hos Norske<note>Norsk] norsk</note>, Franske, Italienske
+Hos Norske<note editorial="true">Norsk] norsk</note>, Franske, Italienske
 Hos Britter, Græker, Tydske, Svenske
 Jeg fouragerte, gjorde Bytte
 Og drog mig flittigt Alt til Nytte.

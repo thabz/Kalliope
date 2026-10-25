@@ -1126,6 +1126,9 @@ Attributter paa `<note>`:
 - `editorial="true"`: markerer en redaktionel note fra Kalliope og viser mærkatet
   »Kalliope«. Kan også bruges på `<footnote>` og kombineres med `type`.
   Udelad attributten på forfatterens egne noter og ved ukendt ophav.
+  Ved blandede noter udskilles selvstændige Kalliope-tilføjelser som egne,
+  mærkede noter. Et tilføjet link alene ændrer ikke en trykt notes ophav.
+  Se `docs/editorial-notes-audit.md` for korpusgennemgangen og dens undtagelser.
 - `lang`: sprog for noten; default er `da`.
 - `unknown-original-by`: digter-id. Giver noten typen `unknown-original` og bruges som oversaettelsesreference.
 

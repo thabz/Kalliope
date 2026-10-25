@@ -4,8 +4,8 @@
   <title>Nogle Digte</title>
   <year>1835</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med foranstillet asterisk er forfatterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
     <picture src="1835-p1.jpg">Titelbladet til <i>Nogle Digte</i> (1835) lyder ,,Nogle Digte / af / Christian Winther. // Non è figlia del Sol la Musa mia, / Ne ha cetra d'oro o d'ebano contesta: / È rozza villanuella, e si trastulla / Cantando a aria, conforme le frulla. / Niccolò Forteguerri. // Kjøbenhavn. / Forlagt af Universitets-Boghandler C. A. Reitzel. / Trykt hos Bianco Luno &amp; Schneider. / 1835.''</picture>
@@ -204,7 +204,7 @@ De faldne Danskes Minde;
 Hans Børn vi saae, - en broget Rad
 Paa Kongens Torv derhjemme,
 Og spørges: hvor han ellers qvad?
-Maa vi ei Hirschholm glemme.<note>Henrik Hertz: <xref poem="hertz2018083002"/>.</note>
+Maa vi ei Hirschholm glemme.<note editorial="true">Henrik Hertz: <xref poem="hertz2018083002"/>.</note>
 
 Men, at ei Sydens kjælne Klang
 Os skal hans Længsel røve,
@@ -463,7 +463,7 @@ Og - et Hjertes Helligdom.
   <subtitle>Fra Studenterne til Etatsraad J. W. Hornemann, 1834</subtitle>
   <firstline>Egen staaer saa kold og bar</firstline>
   <notes>
-    <note>Jens Wilken Hornemann (1770-1841), botaniker, professor i botanik, direktør for Botanisk Have, udgiver af Flora Danica og også etatsråd fra 1829.</note>
+    <note editorial="true">Jens Wilken Hornemann (1770-1841), botaniker, professor i botanik, direktør for Botanisk Have, udgiver af Flora Danica og også etatsråd fra 1829.</note>
     <!-- Malet af Constantin Hansen i 1830, men kan kun finde en s/h gengivelse. https://commons.m.wikimedia.org/wiki/File:Jens_Wilken_Hornemann.jpg og http://www.kb.dk/images/billed/2010/okt/billeder/object149554/da/ -->
   </notes>
   <source pages="18-19"/>
@@ -562,7 +562,7 @@ I Salighed foreente af din Haand.
   <firstline>Guldalderen er ei forsvundet</firstline>
   <notes>
     <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <a poem="winther2018081807"><i>Manden med Kamelen</i></a> findes oversat i min tidligere Samling 1832.</note>
-    <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2026072301"/>.</note>
+    <note editorial="true">Gendigtning af Rückerts <xref type="translation" poem="rueckert2026072301"/>.</note>
   </notes>
   <source pages="22-23"/>
   <keywords>balladestrofe</keywords>
@@ -605,7 +605,7 @@ Enhver sin egen gyldne Tid.
   <firstline>Til Faun mig Himlen skabde</firstline>
   <notes>
     <note>* Guldalderen og Faunen, af samme Forfatter, hvis østerlandske Parabel om <a poem="winther2018081807"><i>Manden med Kamelen</i></a> findes oversat i min tidligere Samling 1832.</note>
-    <note>Gendigtning af Rückerts <xref type="translation" poem="rueckert2018101001"/>.</note>
+    <note editorial="true">Gendigtning af Rückerts <xref type="translation" poem="rueckert2018101001"/>.</note>
   </notes>
   <source pages="23-24"/>
   <keywords>balladestrofe</keywords>
@@ -1179,8 +1179,8 @@ Over mig og min Seng!
   <firstline>Hvorfor nu Maanen gaaer paa Himlen</firstline>
   <notes>
     <note>* Ideen er laant af Johannes Falks ,,Grotesken''; Digtet blev paa en Aftenunderholdning fremsagt ved nu afdøde kongl. Skuespiller Hr. Carl Winsløv.</note>
-    <note>Johannes Daniel Falk (1768-1826), tysk udgiver og digter.</note>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true">Johannes Daniel Falk (1768-1826), tysk udgiver og digter.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
     <!-- TODO: Find Johannes Daniel Falks digte ,,Grotesken''. -->
   </notes>
   <source pages="47-51"/>
@@ -1224,7 +1224,7 @@ Der gaaer ei meget Klæde til;
 Kom hid, jeg strax dig maale vil!
 See saa, - Vorherre dig bevare!
 Gaa nu og skin, - kom saa igjen.
-Lys kjønt for Jorden<footnote type="errata">Jorden] Verden</footnote> hist, vor Ven,
+Lys kjønt for Jorden<footnote editorial="true" type="errata">Jorden] Verden</footnote> hist, vor Ven,
 At den kan Lygteskatten spare;
 Hvo ret sin Næste tjene vilde,
 End aldrig kommen er for silde!''
@@ -1408,7 +1408,7 @@ Dig skal i Graven følge.
   </subtitle>
   <firstline>Skjøndt forvænt til By og Buur</firstline>
   <notes>
-    <note>Melodi som Bellmans <xref poem="bellman2001061342"/>.</note>
+    <note editorial="true">Melodi som Bellmans <xref poem="bellman2001061342"/>.</note>
   </notes>
   <source pages="56-69"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1514,7 +1514,7 @@ To - det er dog Flere, det kan De ei nægte? -
          ,,Rene Harmonie!''
 
    ,,Siig mig, hvor De sad og skrev
-   ,,Hiint forfløine Fuglebrev?''<note><i>Hiint forfløine Fuglebrev</i>: der alluderes til Winthers <xref poem="winther1999032205"/>.</note>
+   ,,Hiint forfløine Fuglebrev?''<note editorial="true"><i>Hiint forfløine Fuglebrev</i>: der alluderes til Winthers <xref poem="winther1999032205"/>.</note>
    Det var der paa Skrænt, ved Broen,
          Hvor nu Koen
          Langsomt drev.
@@ -1922,7 +1922,7 @@ Omtrent mellem Lee og græde.
 ,,Ja, hør du, Emil! du skal gaae med.
 Som Brødre vi bør holde sammen;
 Her er ei længer vort blivende Sted,
-Hist finde vi Trøst og Gammen.''<note>Gammen.''] Gammen.</note>
+Hist finde vi Trøst og Gammen.''<note editorial="true">Gammen.''] Gammen.</note>
 
 Den Lille han saae paa de nye Skoe,
 Og glatted sin Blouses Folder:
@@ -2360,7 +2360,7 @@ Graaulvens Sang og Skræk og Nød
 Og Bjørnens Dands i Lunden.
 
 Men Drengen var, da han blev stor,
-En Grenadeer<footnote type="errata">Grenadeer] Greenadeer</footnote> saa bister; -
+En Grenadeer<footnote editorial="true" type="errata">Grenadeer] Greenadeer</footnote> saa bister; -
 Af Bjørnens Pels var Huens Foer,
 Af Ulvens hans Tornister.
 </poetry>
@@ -2373,7 +2373,7 @@ Af Ulvens hans Tornister.
   <firstline>Glimrende Hækken bæved</firstline>
   <notes>
     <note>* Skrevet i Høst 1834.</note>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="95-120"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3008,7 +3008,7 @@ Som laae for hendes Fod.
   <title>De to Cousiner</title>
   <firstline>Ei langt fra Hovedstadens Muur</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="121-135"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3029,7 +3029,7 @@ End slumre Lærkens Sange.
 
 Der er saa ængsteligt, saa tyst,
 Med Graat er Himlen tjeldet;
-Nysgjerrigt taus, som hvidskende,<footnote type="errata">hvidskende] hviskende</footnote>
+Nysgjerrigt taus, som hvidskende,<footnote editorial="true" type="errata">hvidskende] hviskende</footnote>
 Staaer Gran mod Granen hældet.
 
 De stige ned af Hest og Vogn
@@ -3481,7 +3481,7 @@ Men Æren - dig betalde.
 
 Du tør mig dømme, - Hine ei, -
 De veed ei, hvad de gjøre!
-Saa svar mig: veeg jeg fra din<footnote type="errata">din] min</footnote> Vei?
+Saa svar mig: veeg jeg fra din<footnote editorial="true" type="errata">din] min</footnote> Vei?
 Og hvor vil du mig føre?'' -
 
 Men det blev ikke mere lyst
@@ -3497,7 +3497,7 @@ Hver Dag blev Svøben større.
 Da kaldte han en Nat paa Ham,
 Hvis Navn jeg tør ei nævne;
 Han kom i al sin Rædselsbram
-Ind gjennem<footnote type="errata">gjennem] igjennem</footnote> Murens Revne.
+Ind gjennem<footnote editorial="true" type="errata">gjennem] igjennem</footnote> Murens Revne.
 
 ,,Jeg knuser ei dit sorte Buur, -
 Dertil jeg er for ringe;
@@ -3880,7 +3880,7 @@ Stig Hvides Been har lagt.
   <notes>
     <note>* See Mnskpt. Nr. 782 paa det store kongelige Bibliothek, =Holger Parsbergs= Slægtebog 1671. ,,Hr. Peder Axelsøns (Thotts) Daatter, som hedde Fru =Kristine=, hun var tvende Gange gift, for hendes første Giftermaal da var der megen Klammeri: thi hun var Hr. Holger Munk trolovet af hendes Slægt og Venner, men Kongen og Dronningen tog hende med Magt fra hendes Villie, og nøde hende til at have Een, hedde Jep Muus, hvilken var ikke af saa høi Stamme. Efter hende er kommen det Ordsprog, man siger: ,,Arte dig Kobbernagle, du ligger udi Guld lagt:'' Thi hun gav ham en Guldring, laae en Kobbernagle udi fæst. Med denne Jep Muus fik hun to Børn; de døde strax, og det var hende kjært. Siden slog Hr. Holger Munk ham ihjel, og fik Fru Kirstine, o. s. v.''</note>
     <note>* Gant, Ørn, Bjørn, Mormand, Rosenkrands o.s. v. Allusioner til danske Adelsslægter og deres Skjoldmærker. - ,,Det Abild vil jeg skudde kjæk'' etc. See Hvidtfeldt Pag. 643.</note>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="157-188"/>
   <quality>korrektur1,kilde</quality>
@@ -4562,7 +4562,7 @@ Kan du jo takke Gud, jeg kom!''
    Det Aften var; Høstsolen alt
 Bag Nattens brune Teppe faldt;
 Tykt Mørke dækked Skov og Slot,
-Rigt<footnote type="errata">Rigt] Riigt</footnote> guldbrodeert var Himlens Blaat.
+Rigt<footnote editorial="true" type="errata">Rigt] Riigt</footnote> guldbrodeert var Himlens Blaat.
 Paa Høien hist, hvor smalle Sti
 Langs Søen slynger sig forbi,
 En Vandrer eensom stille stod,
@@ -4641,7 +4641,7 @@ Det var de Tvendes Brudenat!
   <title>Det første Møde</title>
   <firstline>See, Sneen lægger sin Pude</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="191-199"/>
   <keywords>balladestrofe</keywords>
@@ -4872,7 +4872,7 @@ Hvad faaer jeg nu for min Sang?
   <title>Besøget</title>
   <firstline>I Dalen der, hvor Veien bugter</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="200-204"/>
   <quality>korrektur1,kilde</quality>
@@ -4986,7 +4986,7 @@ Med salig Frihed til min Barm.
   <title>Hjemreisen</title>
   <firstline>Din Moder mener selv, at bedst</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="205-214"/>
   <quality>korrektur1,kilde</quality>
@@ -5229,7 +5229,7 @@ Og Balder, Pudelhunden.
   <title>Tordenveiret om Natten</title>
   <firstline>Staa op, Annette! - Barn! det tordner</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="215-218"/>
   <quality>korrektur1,kilde</quality>
@@ -5316,7 +5316,7 @@ Min Elsktes Læber kysset har.
   <title>Vandring til Landsbyen</title>
   <firstline>Jo, du skal kjønt spadsere med</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="219-221"/>
   <keywords>balladestrofe</keywords>
@@ -5392,7 +5392,7 @@ Her boer en - Kurvemager.
   <title>Kanefarten</title>
   <firstline>Nu god Nat! - Gaa ind, min Frue!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="222-234"/>
   <quality>korrektur1,kilde</quality>
@@ -5448,7 +5448,7 @@ See, hvor dybt sørgmodig hælder
 Granens Top, med Snee beladt;
 Hør, hvor muntert vore Bjelder
 Ringle gjennem Skov og Krat;
-Sælsomt<footnote type="errata">Sælsomt] Selsomt</footnote> disse Ellestammer
+Sælsomt<footnote editorial="true" type="errata">Sælsomt] Selsomt</footnote> disse Ellestammer
 Dandse os i Rad forbi,
 Maanens Flammer
 Fylder Alt med Trylleri.
@@ -5695,7 +5695,7 @@ Ak, hvad er det for et Brev?''
   <title>Den sidste Aften</title>
   <firstline>Jeg spænder min Spore, jeg griber min Hat</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen. <!-- Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="235-238"/>
   <quality>korrektur1,kilde</quality>

@@ -4,9 +4,9 @@
   <title>Digte</title>
   <year>1847</year>
   <notes>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
-    <note>Titelbladets motto stammer fra Goethes <xref poem="goethe2000010806,37-42"/>.</note>
-    <note type="credits">Bidrag fra Henrik Nielsen</note>
+    <note editorial="true">Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Titelbladets motto stammer fra Goethes <xref poem="goethe2000010806,37-42"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen</note>
   </notes>
   <pictures>
     <picture src="1847-p1.jpg">Titelbladet til <i>Digte</i> (1847) lyder ,,Digte / af / G.V. Blom. // Und wie von Alters her im Stillen, / Ein Liebewerk, nach eignem Willen, / Der Philosoph, der Dichter sehuf; / So wirst du schönste Gunst erzielen: / Denn edlen Seelen vorzufühlen / Ist wünschenswerthester Beruf. / Goethe. // Kjöbenhavn / F. H. Eibe. - Trykt hos Louis Klein. / 1847''.</picture>
@@ -776,7 +776,7 @@ Vend da min Fakkel, o Död!
   <title>Sönderknuselse</title>
   <firstline>Far Verden, farvel</firstline>
   <notes>
-    <note>Se Kingos <xref poem="kingo1681a2"/>.</note>
+    <note editorial="true">Se Kingos <xref poem="kingo1681a2"/>.</note>
   </notes>
   <source pages="35-38"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1806,7 +1806,7 @@ Og min Lyst din egen Glædes Speil.
   <title>En Hverdagshistorie</title>
   <firstline>Ung Adolf paa Herregaarden</firstline>
   <notes>
-    <note>Se <xref poem="heine2002020345"/> af Heinrich Heine.</note>
+    <note editorial="true">Se <xref poem="heine2002020345"/> af Heinrich Heine.</note>
   </notes>
   <source pages="79-84"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2906,7 +2906,7 @@ Finder der en jordisk Evighed.
   <subtitle>(Efter Byron.)</subtitle>
   <firstline>Farvel, farvel! min Födestrand</firstline>
   <notes>
-    <note>Originalen stammer fra <xref poem="byron2018072802,118-197"/> i Byrons <i>Childe Harold's Pilgramage</i> (1812-18).</note>
+    <note editorial="true">Originalen stammer fra <xref poem="byron2018072802,118-197"/> i Byrons <i>Childe Harold's Pilgramage</i> (1812-18).</note>
   </notes>
   <source pages="130-134"/>
   <quality>korrektur1,kilde,side</quality>

@@ -83,8 +83,8 @@ Hans Alder høiloves som Fredegods Tid!
   </dates>
   <notes>
     <note>1850</note>
-    <note>Dette digt, som handler om slaget ved Isted, 24.-25. juli 1850, har samme førstelinje som Bødtchers digt <xref poem="boedtcher2003010301"/> om udfaldet fra Fredericia i 1849. Man gætter på at Grundtvig bevidst eller ubevidst her citerer Bødtcher.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Dette digt, som handler om slaget ved Isted, 24.-25. juli 1850, har samme førstelinje som Bødtchers digt <xref poem="boedtcher2003010301"/> om udfaldet fra Fredericia i 1849. Man gætter på at Grundtvig bevidst eller ubevidst her citerer Bødtcher.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -179,9 +179,9 @@ fik deres Lejested!
   <title>Indskriften paa Oddens Mindestøtte</title>
   <firstline>De Snekker mødtes i Kveld paa Hav</firstline>
   <notes>
-    <note>Først trykt i dagbladet <i>Dagen</i> 6. marts 1810.</note>
-    <note>Se også Grundtvigs <xref poem="grundtvig2002010101"/>.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Først trykt i dagbladet <i>Dagen</i> 6. marts 1810.</note>
+    <note editorial="true">Se også Grundtvigs <xref poem="grundtvig2002010101"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <pictures>
     <picture src="grundtvig2002042702-p1.jpg">Mindestøtten på Oddens kirkegård over de faldne på linieskibet <i>Prinds Christian Frederik</i> i slaget ved Sjællands Odde den 22. marts 1808.</picture>
@@ -212,7 +212,7 @@ Fædrenes værdige Sønner.
   <firstline>Et jævnt og muntert, virksomt Liv paa Jord</firstline>
   <notes>
     <note>1839</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -253,7 +253,7 @@ og lige liflig er dens Aftenrøde.
   <title>I gamle Dage det var engang</title>
   <firstline>I gamle Dage det var engang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -366,8 +366,8 @@ Han sov hen, som Soel i Høst gaaer ned!
   <title>Højskolesang</title>
   <firstline>Hvad Solskin er for den sorte Muld</firstline>
   <notes>
-    <note>Skrevet til en skoleindvielse i Sjolte, sommeren 1856.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Skrevet til en skoleindvielse i Sjolte, sommeren 1856.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -492,7 +492,7 @@ Jul giør lyksaligt Nytaar.
   <title>Jyllands Priis</title>
   <firstline>Der er et Land saa kosteligt</firstline>
   <notes>
-    <note>Strofe 1-10 af digtet »Et Blad af Jyllands Rimkrønike« fra <i>Heimdall</i> (1815). Her hengivet efter den tekstkritiske udgave på grundtvigsværker.dk <a href="http://www.grundtvigsværker.dk">↬</a>.</note>
+    <note editorial="true">Strofe 1-10 af digtet »Et Blad af Jyllands Rimkrønike« fra <i>Heimdall</i> (1815). Her hengivet efter den tekstkritiske udgave på grundtvigsværker.dk <a href="http://www.grundtvigsværker.dk">↬</a>.</note>
   </notes>
 </head>
 <body>
@@ -585,7 +585,7 @@ Alt over brune Hede.
   <title>Nordens Aand</title>
   <firstline>Gik jeg drømmende i Lunden</firstline>
   <notes>
-    <note>Første gang trykt i <i>Den Nordiske Kirke-Tidende</i> 10/8 1834.</note>
+    <note editorial="true">Første gang trykt i <i>Den Nordiske Kirke-Tidende</i> 10/8 1834.</note>
   </notes>
   <source href="http://www.grundtvigsværker.dk">Grundtvigsværker.dk.</source>
 </head>

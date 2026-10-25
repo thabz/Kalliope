@@ -4,8 +4,8 @@
   <title>Efterladte Digte</title>
   <year>1879</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet * er udgiverens, F.L. Liebenbergs, anmærkninger. Noter med foranstillet ** er Christian Winthers egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet * er udgiverens, F.L. Liebenbergs, anmærkninger. Noter med foranstillet ** er Christian Winthers egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1879-p1.jpg"><transcription>Efterladte Digte / af / Christian Winther. // Udgivne / ved / F. L. Liebenberg. // Kjøbenhavn. / P. G. Philipsens Forlag. / 1879.</transcription></picture>
@@ -140,8 +140,8 @@ Det er <w>vort</w> Himmerige.
   <toctitle>Til H. C. Andersen (i hans Album). Apr. 1833</toctitle>
   <firstline>Flyv over Rhinen til Paris</firstline>
   <notes>
-    <note>Stambogsblad som Winther sendte til HCA med et brev (trykt i <i>Breve fra og til Christian Winther,</i> ed. M. Borup (1974), bind 1, side 87), da denne skulle rejse til Paris og Italien.</note>
-    <note>Bidrag fra Svend Andersen</note>
+    <note editorial="true">Stambogsblad som Winther sendte til HCA med et brev (trykt i <i>Breve fra og til Christian Winther,</i> ed. M. Borup (1974), bind 1, side 87), da denne skulle rejse til Paris og Italien.</note>
+    <note editorial="true">Bidrag fra Svend Andersen</note>
   </notes>
   <source pages="8"/>
   <keywords>andersen,stambog</keywords>
@@ -872,7 +872,7 @@ At Du paa Klinten fæster Rod.
   </dates>
   <notes>
     <note>* Christian Winthers Steddatter.</note>
-    <note>Femhammer ↄ: femdalerseddel.</note>
+    <note editorial="true">Femhammer ↄ: femdalerseddel.</note>
   </notes>
   <source pages="37"/>
   <quality>korrektur1,kilde,side</quality>
@@ -912,7 +912,7 @@ Og derfor Du faaer her
     <event>1855-02-07</event>
   </dates>
   <notes>
-    <note>Der menes formodenligt H.E. Freund, ikke G.C. Freund.</note>
+    <note editorial="true">Der menes formodenligt H.E. Freund, ikke G.C. Freund.</note>
   </notes>
   <source pages="38"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3420,7 +3420,7 @@ Tung er den Sti, Du vandrer paa.
 
 Der Noget er, som hedder <w>Haab,</w>
 Paakaldt af tusind Hjerters Raab;
-      Men, ak! de Fleste,<note>Fleste] fleste</note>
+      Men, ak! de Fleste,<note editorial="true">Fleste] fleste</note>
       For ei at briste,
 Maae dukke dybt i Taalmods Daab.
 

@@ -343,6 +343,7 @@ const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
     for (const pseudonym of pseudonyms) {
       resultNotes.push({
         type: null,
+        editorial: true,
         content_lang: 'da',
         content_html: htmlToXml(`Udgivet under pseudonymet ${escapeXml(pseudonym)}.`, collected),
       });

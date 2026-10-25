@@ -4,8 +4,8 @@
   <title>Poetiske Forsøg</title>
   <year>1797</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
     <picture src="1797-p1.jpg">Titelbladet til <i>Poetiske Forsøg</i> (1797) lyder ,,Poetiske / Forsög / af / M.C. Bruun / Förste Deel. // Paa A. Soldinds Forlag.''.</picture>
@@ -525,7 +525,7 @@ Snart i Triumf du seer os igjen.
   <subtitle>frit oversat</subtitle>
   <firstline>Tænke hvo der vil paa Krig!</firstline>
   <notes>
-    <note>Gendigtning af Anakreontika <xref type="translation" poem="anakreontika2025122826"/>.</note>
+    <note editorial="true">Gendigtning af Anakreontika <xref type="translation" poem="anakreontika2025122826"/>.</note>
   </notes>
   <source pages="26-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -610,7 +610,7 @@ En Skaal for vort Selskab, vor Bye og vort Land.
   <title>Til Erato</title>
   <firstline>Du, som i Cytheres Myrthegange</firstline>
   <notes>
-    <note>Mottoet stammer fra Friedrich Leopold Graf zu Stolbergs <xref poem="stolberg2018052901,12"/>.</note>
+    <note editorial="true">Mottoet stammer fra Friedrich Leopold Graf zu Stolbergs <xref poem="stolberg2018052901,12"/>.</note>
   </notes>
   <source pages="30-31"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -789,7 +789,7 @@ Som mit, saa varmt, saa tro! -
   </subtitle>
   <firstline>Forlad i Dag dit gamle Yndlingsland</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010303"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010303"/>.</note>
   </notes>
   <source pages="37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -916,7 +916,7 @@ Vore Børnebørn en saadan Sang:
 ,,Hjerters fulde Salighed.
 ,,Dengang vidste Jordens Skjønne
 ,,Trofast Elskov at belønne
-,,Med en lige Kjerlighed.''<note>'' tilføjet</note>
+,,Med en lige Kjerlighed.''<note editorial="true">'' tilføjet</note>
 Saa, saa vilde, deres Sange lyde,
 Lad det skee, o milde Jupiter!
 Hvor vil det i Skyggers Land mig fryde,
@@ -962,7 +962,7 @@ Ana»
   <subtitle>Efterlignet</subtitle>
   <firstline>Du om franske Krigen skriver</firstline>
   <notes>
-    <note>Gendigtning af Anakreontika <xref type="translation" poem="anakreontika2025122816"/>.</note>
+    <note editorial="true">Gendigtning af Anakreontika <xref type="translation" poem="anakreontika2025122816"/>.</note>
   </notes>
   <source pages="45-46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1033,7 +1033,7 @@ Bliid, som du, men dobbelt skiøn?
   </subtitle>
   <firstline>Roser alt krandse den skyggende Hække</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="48-49"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1080,7 +1080,7 @@ Alkjærlige Moder, vi drikke din Skaal.
   </subtitle>
   <firstline>Det var hans Røst, som klang!</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelhoej02,8-14"/> og <xref bible="bibelhoej08,1-3"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelhoej02,8-14"/> og <xref bible="bibelhoej08,1-3"/>.</note>
   </notes>
   <source pages="50-53"/>
   <keywords>herder</keywords>
@@ -1163,7 +1163,7 @@ Han om min Barm!<note>* Lad forskruede Munkehjerner paatvinge Højsangen hvad fo
   </subtitle>
   <firstline>Jeg er en Pige, flink og frie</firstline>
   <notes>
-    <note>Efter Gotters <xref type="translation" poem="gotter2018062101"/>.</note>
+    <note editorial="true">Efter Gotters <xref type="translation" poem="gotter2018062101"/>.</note>
   </notes>
   <source pages="54-55"/>
   <keywords>balladestrofe</keywords>
@@ -1251,7 +1251,7 @@ Og hvad vil du have meer?
   <subtitle>Frit efter Gotter</subtitle>
   <firstline>Jeg kiendte ei fordum til Kjerligheds Magt</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Wilhelm Gotter: <xref type="translation" poem="gotter2025081401"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Wilhelm Gotter: <xref type="translation" poem="gotter2025081401"/>.</note>
   </notes>
   <source pages="58"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1414,7 +1414,7 @@ O, sødt, som Dands og Leeg, vil dette Syn dig glæde.
   </subtitle>
   <firstline>Hun bruger hver en Konst, som vittig Skjønhed ejer</firstline>
   <notes>
-    <note>Oversættelse af Tasso: <xref type="translation" poem="tasso2018062204" /> fra <i>Gerusalemme liberata</i> (1581).</note>
+    <note editorial="true">Oversættelse af Tasso: <xref type="translation" poem="tasso2018062204" /> fra <i>Gerusalemme liberata</i> (1581).</note>
   </notes>
   <source pages="65-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1951,7 +1951,7 @@ Kom, o kom til Hjelp i Kampen nu! -
   <subtitle>Et Fragment af Sapho, oversat.</subtitle>
   <firstline>Guders Lige tykkes han mig at være</firstline>
   <notes>
-    <note>Siden er fejlnummeret 94.</note>
+    <note editorial="true">Siden er fejlnummeret 94.</note>
   </notes>
   <source pages="95"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2006,8 +2006,8 @@ Tilintetgjør det, hvad din Mund befaler.
   <title>Afsked med Viisdommen</title>
   <firstline>Fly, Viisdom, fly! Din høje Stemme</firstline>
   <notes>
-    <note>Mottoet lyder i H.E. Butlers oversættelse ,,He errs that seeks to set a term to the frenzy of love; true love hath no bound.''</note>
-    <note>Siden 97 er fejlnummeret 79.</note>
+    <note editorial="true">Mottoet lyder i H.E. Butlers oversættelse ,,He errs that seeks to set a term to the frenzy of love; true love hath no bound.''</note>
+    <note editorial="true">Siden 97 er fejlnummeret 79.</note>
   </notes>
   <source pages="97-99"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2072,7 +2072,7 @@ Og døe i elsket Qval! .........
   <subtitle>frit oversat</subtitle>
   <firstline>Jeg evig elsket har, jeg endnu elsker Eder</firstline>
   <notes>
-    <note>Gendigtning af Petrarcas <xref type="translation" poem="petrarca2018062301"/>.</note>
+    <note editorial="true">Gendigtning af Petrarcas <xref type="translation" poem="petrarca2018062301"/>.</note>
   </notes>
   <source pages="100-101"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2107,8 +2107,8 @@ Paa eet af disse Steder snart jeg døer.
   <subtitle>1ste Bogs 1ste Ode</subtitle>
   <firstline>Du gamle Kongers Afkom, o Mæcen</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010304"/>.</note>
-    <note>Sideangivelsen "102" er fejltrykt som "210".</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010304"/>.</note>
+    <note editorial="true">Sideangivelsen "102" er fejltrykt som "210".</note>
   </notes>
   <source pages="102-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2165,7 +2165,7 @@ Med løftet Nakke jeg mod Himlens Stjerner slaaer
   <subtitle>Horaz's 2den Bogs 8de Ode</subtitle>
   <firstline>Hvis kun den mindste Straf for spottet Eed</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010305"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010305"/>.</note>
   </notes>
   <source pages="105-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2216,7 +2216,7 @@ I dine Tryllegarn skal lokke hen.
   <subtitle>15de Epode</subtitle>
   <firstline>Nat var det, og blandt mindre Stjerner smilte</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010306"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010306"/>.</note>
   </notes>
   <source pages="107-108"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2264,7 +2264,7 @@ Da Raden at belee tilkommer mig;
   <subtitle>Horaz's 23de Ode i første Bog</subtitle>
   <firstline>Du fly'r for mig, o Chloe! liig en Hind</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010301"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010301"/>.</note>
   </notes>
   <source pages="109"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2295,7 +2295,7 @@ For dig at gaae ved Elskers Arm.
   <subtitle>1ste Bogs 5te Ode</subtitle><!-- Bogs] Binds iflg. errata -->
   <firstline>Hvo er den salveduftende Yngling, som</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010302"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010302"/>.</note>
     <note>* Det Metrum, hvori jeg har oversat, er saadant<br/>o - o - o - o o - o -<br/>o - o - o - o o - o -<br/>&#160;&#160;&#160;&#160;o - o - o - o - o -<br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;o - o o - o o -</note>
   </notes>
   <source pages="110-111"/>
@@ -2332,7 +2332,7 @@ Min vaade Dragt jeg hængte, Neptunus, i
   <subtitle>4de Bogs 13de Ode</subtitle>
   <firstline>Himlen hørte min Bøn, Lyda, ja Himlen</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010307"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010307"/>.</note>
   </notes>
   <source pages="112-113"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2383,7 +2383,7 @@ Alder, for at hver rask Yngling kan see, vist ei
   <subtitle>Den 1ste Bogs 9de Ode</subtitle>
   <firstline>Du seer, at Snee bedækker vore Høje</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010308"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010308"/>.</note>
   </notes>
   <source pages="114-115"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2430,7 +2430,7 @@ Som hun med Kys indløse maae af dig.
   <subtitle>2den Bogs 12te Ode</subtitle>
   <firstline>Ei Numantiners aldrig trætte Mod</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010309"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010309"/>.</note>
   </notes>
   <source pages="116-117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2475,7 +2475,7 @@ Mig selv at give kjerlig haster.
   <subtitle>2den Bogs 19de Ode</subtitle>
   <firstline>Seet, har jeg Bacchus! Tro mig, o Efterslægt!</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010310"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010310"/>.</note>
   </notes>
   <source pages="118-120"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2503,7 +2503,7 @@ Besynge maa, den thebaniske Kongeborgs
       Som din Foragter Lykurgus straffed'.
 
 Du styrer Strømme, styrer den vilde Søe;
-Du, ravende paa eensomme<note>eensomme] eensamme</note> Viinbjerge,
+Du, ravende paa eensomme<note editorial="true">eensomme] eensamme</note> Viinbjerge,
     Med Slangeknuder, uden Skade,
       Knytter bistoniske Qvinders Lokker.
 
@@ -2531,7 +2531,7 @@ Da du, med Guldhorn prydet, tilbagekom;
   <subtitle>1ste Bogs 4de Ode</subtitle>
   <firstline>Den strænge Vinterkuld nu jages</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010311"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010311"/>.</note>
   </notes>
   <source pages="121-123"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2548,7 +2548,7 @@ Velsigner Arnestedets Lue;
 Ei Engen hvid af Riimfrost er.
 Nu Elskovs Dronning, Aphrodite
 I Maanskin fører Dandsens Chor
-Med Vexelslag paa grønnen Jord<note>Med] med</note>
+Med Vexelslag paa grønnen Jord<note editorial="true">Med] med</note>
 Den yndigsmilende Carite
 Og Nympher sætte skjønne Fod;
 Mens i Cyklopers tunge Smedde,
@@ -2633,7 +2633,7 @@ O <w>Nøisomhed!</w> Min matte Røst,
 Naar Dødens Nat omhyller Øjet,
 End lisple skal: Jeg døer fornøjet. -
 
-    O trefold salig den, hvis Barm<note>Linjeskift indsat.</note>
+    O trefold salig den, hvis Barm<note editorial="true">Linjeskift indsat.</note>
 Du til din Helligdom indvier;
 Der stolte Ønskers vilde Larm
 Ved din den milde Stemme tier.
@@ -2686,7 +2686,7 @@ Boer skummelt Qval i deres Sjel.
 Jo meer den har, jo meer den savner,
 Sin Lykkes og sit Ønskes Træl.
 
-    Ja, tit paa Glædens Hav vi svømme<note>Linjeskift indsat.</note>,
+    Ja, tit paa Glædens Hav vi svømme<note editorial="true">Linjeskift indsat.</note>,
 Og tørste dog. Mod Himmelen
 Vi styre, ak! men vore Drømme
 Os i en Afgrund drage hen.
@@ -2786,7 +2786,7 @@ Mig skjermende ved Siden gaae!
   <subtitle>frit oversat</subtitle>
   <firstline>Gud er min Hyrde! Fra de nøgne Heder</firstline>
   <notes>
-    <note>Se <xref bible="bibelsalme23"/>.</note>
+    <note editorial="true">Se <xref bible="bibelsalme23"/>.</note>
   </notes>
   <source pages="132-133" facsimile-pages="144-145" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2922,7 +2922,7 @@ Om ej eengang hiinsides dunkel Gravnat,
   </subtitle>
   <firstline>Du, som det rullende Aar med guddommelig Aande besjæler!</firstline>
   <notes>
-    <note>Gendigtning af James Thomson: <xref type="translation" poem="thomson2018070101"/>.</note>
+    <note editorial="true">Gendigtning af James Thomson: <xref type="translation" poem="thomson2018070101"/>.</note>
   </notes>
   <source pages="138-147" facsimile-pages="150-159" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2936,7 +2936,7 @@ Markerne rødme af Blomster, og Luften er qvæqende Balsom,
 Echo paa Bjergene vandrer omkring; mildt Lundene smile;
 Fryd udspender hvert Bryst, og hver Nerve bævrer af Vellyst.
 Gud! din Herligheds Glands gienstraaler den ildrige Sommer;
-Alting gjennemopgløder din Soel med Modenheds<note>Modenheds] Modendenheds</note> Fylde,
+Alting gjennemopgløder din Soel med Modenheds<note editorial="true">Modenheds] Modendenheds</note> Fylde,
 Ofte jeg hører din Røst i Tordeners døvende Bulder,
 Ofte i Bækkenes Hvisken og Lundenes hellige Susen.
 Nu i den frugtrige Høst din ugrændsede Godhed indbyder
@@ -3037,7 +3037,7 @@ Kom da, o kom at begrunde hans Priis, veltalende Taushed!
   <subtitle>Af F. L. Stolberg. Oversat.</subtitle>
   <firstline>Udød'lige Yngling</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolberg2018073101"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolberg2018073101"/>.</note>
   </notes>
   <source pages="148-151" facsimile-pages="160-163" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3223,7 +3223,7 @@ Triumph! Det store Sekel kommer.
   </subtitle>
   <firstline>Kom, hulde Frihed, kom, Naturens høie Datter!</firstline>
   <notes>
-    <note>Gendigtning af Marie-Joseph Chénier: <xref type="translation" poem="chenier2018083101"/>.</note>
+    <note editorial="true">Gendigtning af Marie-Joseph Chénier: <xref type="translation" poem="chenier2018083101"/>.</note>
   </notes>
   <source pages="157-159" facsimile-pages="169-171" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3438,7 +3438,7 @@ Den kysselige Rosenmund jeg qvæder.
   <subtitle>Af Kellgren. Oversat.</subtitle>
   <firstline>Hvor længe tænker du Zemire, vel</firstline>
   <notes>
-    <note>Gendigtning af Johan Henric Kellgren (1751-1795): <xref type="translation" poem="kellgren2018073101"/>.</note>
+    <note editorial="true">Gendigtning af Johan Henric Kellgren (1751-1795): <xref type="translation" poem="kellgren2018073101"/>.</note>
   </notes>
   <source pages="168-170" facsimile-pages="180-182" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3489,14 +3489,14 @@ Zemire, alt forgaaer. En Nat ... et køligt Drag.
     Corallen blegner! Rosen falder! -
 
 Tag nu din fordums gode Ven,
-Det Speil, der viste dig som en Gudinde;<note>Gudinde] Gudjnde</note>
+Det Speil, der viste dig som en Gudinde;<note editorial="true">Gudinde] Gudjnde</note>
 End tager du det modig, men ....
 Hvor vil du skiælve ved at finde
 En Kjærling blot igien?
 Da skal din hverdags Klage blive:
 ,,Natur, hvor grusom dog din Deling er?
 ,,Hvi skal du ømt Begjær foruden Ungdom give,
-,,Hvi Ungdom uden ømt Begjær?''<note>Begjær?'']Begjær?</note>
+,,Hvi Ungdom uden ømt Begjær?''<note editorial="true">Begjær?'']Begjær?</note>
 </poetry>
 </body>
 </text>
@@ -3507,7 +3507,7 @@ Da skal din hverdags Klage blive:
   <subtitle>Efter Kellgren. Oversat</subtitle>
   <firstline>Ensom i min Hyttes Favn</firstline>
   <notes>
-    <note>Gendigtning af Johan Henric Kellgren: <xref type="translation" poem="kellgren2018073102"/>.</note>
+    <note editorial="true">Gendigtning af Johan Henric Kellgren: <xref type="translation" poem="kellgren2018073102"/>.</note>
   </notes>
   <source pages="171-172" facsimile-pages="183-184" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3548,7 +3548,7 @@ Uden dig jeg snart blev kjed.
   <subtitle>Oversat fra Tydsk</subtitle>
   <firstline>Forglem ej mig, naar Glæder mod dig smile</firstline>
   <notes>
-    <note>Gendigtning af <xref type="translation" poem="anonym2019021901"/>.</note>
+    <note editorial="true">Gendigtning af <xref type="translation" poem="anonym2019021901"/>.</note>
   </notes>
   <source pages="173-174" facsimile-pages="185-186" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3923,7 +3923,7 @@ Her det henrykte Hjertes milde Varme
 I konstløs Strengeleeg sig først udgjød.
 Da hvirvled' sig paa Crocus-Slette Dandsen,
 Paa Lillje-Høje svævede dens Fied.
-Og halv forstyrret gleed Kiærmindekrandsen.<note><w>Kjærminde</w> d. e. Forglemmigei, efter Professor <w>Viborgs</w> Forslag.</note>
+Og halv forstyrret gleed Kiærmindekrandsen.<note editorial="true"><w>Kjærminde</w> d. e. Forglemmigei, efter Professor <w>Viborgs</w> Forslag.</note>
 Paa hede Barm fra brune Lokker ned.
     Men du især forskiønned' hine Dage,
 <w>O Amor</w>, Menneskers og Guders Lyst.
@@ -3972,7 +3972,7 @@ Atter en Verden staae frem ved det besjælende Smil?
   <subtitle>Efter Göthe</subtitle>
   <firstline>Viger, o Sorger, fra mig, men ak, den støvklædte Pilgrim</firstline>
   <notes>
-    <note>Gendigtning af Goethe: <xref type="translation" poem="goethe2025081401"/>.</note>
+    <note editorial="true">Gendigtning af Goethe: <xref type="translation" poem="goethe2025081401"/>.</note>
   </notes>
   <source pages="193" facsimile-pages="205" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4020,7 +4020,7 @@ Og sønderslide mig en Evighed af Smerte,
   <subtitle>Efter Kleist</subtitle>
   <firstline>O Flaske, fuld med Saft af rhinske Druer</firstline>
   <notes>
-    <note>Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2018080101"/>.</note>
+    <note editorial="true">Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2018080101"/>.</note>
   </notes>
   <source pages="195-196" facsimile-pages="207-208" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4070,7 +4070,7 @@ Du fælde Taarer paa min Grav.
   <subtitle>Efter Lessing</subtitle>
   <firstline>Saa godt, som nogen Doktor, skal jeg lære</firstline>
   <notes>
-    <note>Gendigtning af Lessings <xref type="translation" poem="lessing2002080156"/>.</note>
+    <note editorial="true">Gendigtning af Lessings <xref type="translation" poem="lessing2002080156"/>.</note>
   </notes>
   <source pages="197-198" facsimile-pages="209-210" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4248,7 +4248,7 @@ Der svires, der dandses. Med Venner og Piger
   <subtitle>Af Hölty. Oversat</subtitle>
   <firstline>Hvorfor med Griller Sindet plage</firstline>
   <notes>
-    <note>Gendigtning af Ludwig Hölty: <xref type="translation" poem="holty2018070701"/></note>
+    <note editorial="true">Gendigtning af Ludwig Hölty: <xref type="translation" poem="holty2018070701"/></note>
   </notes>
   <source pages="205-206" facsimile-pages="217-218" />
   <keywords>balladestrofe</keywords>
@@ -4295,8 +4295,8 @@ Thi vil jeg nyde fro dens Gode,
   <subtitle>Melodie. Nu bort med Alskens Politik</subtitle>
   <firstline>Her handles ei om Politik</firstline>
   <notes>
-    <note>Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
-    <note>Hjælp Kalliope. Første ord i fjerde linje er ulæseligt i nærværende kilde. Kender nogen en bedre kilde?</note>
+    <note editorial="true">Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
+    <note editorial="true">Hjælp Kalliope. Første ord i fjerde linje er ulæseligt i nærværende kilde. Kender nogen en bedre kilde?</note>
   </notes>
   <source pages="207-209" facsimile-pages="219-221" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4560,7 +4560,7 @@ Til evig Tid fordømme?
   <linktitle>Oversættelse af Petrarchas: Chiare, freshe e dolci acque</linktitle>
   <firstline>Klare, kjølige, liflige Kilde</firstline>
   <notes>
-    <note>Oversættelse af Petrarcas <xref type="translation" poem="petrarca2018051201"/></note>
+    <note editorial="true">Oversættelse af Petrarcas <xref type="translation" poem="petrarca2018051201"/></note>
   </notes>
   <source pages="218-221" facsimile-pages="230-233" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4825,7 +4825,7 @@ Og paa elysisk Rosenslette
   </subtitle>
   <firstline>O, see den skjønneste blant dine Dage!</firstline>
   <notes>
-    <note unknown-original-by="coupigny" />
+    <note editorial="true" unknown-original-by="coupigny" />
   </notes>
   <source pages="230-232" facsimile-pages="242-244" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5014,7 +5014,7 @@ Men Skjændsel og Udyd hos Trældommen boer.
 Vee den, som tør Nordboen prøve at kue
 Til Trældom og Kryben ved Svig eller Magt!
 Hver Mand skal opstaae mod Tyrannen, og skue
-Hans<note>Hans] Haus</note> Trusler med Roe og hans Guld med Foragt,
+Hans<note editorial="true">Hans] Haus</note> Trusler med Roe og hans Guld med Foragt,
 Og snart under Tronens det rygende Gruus
 Begræde han skal sin Afsindigheds Ruus.
 
@@ -5141,7 +5141,7 @@ Saa kommer han, til sine hundred Riger
 At føje Dannemark. - Hvo kan modstaae ham?
 Den Strøm af Sejr! Det Ocean af Magt!
 Lombarders, Saraceners, Saxers Rædsel!
-Europa<note>Europa] Euorpa</note> har ei kunnet. Danmark kan. -
+Europa<note editorial="true">Europa] Euorpa</note> har ei kunnet. Danmark kan. -
     Ja, du mit Land, uundertvungne Land!
 Dit Skjød skal feige Slaver ei vanære!
 Ei fremmed Hersker plante skal sit Banner

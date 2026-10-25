@@ -4,8 +4,8 @@
   <title>Lyriske Portrætter</title>
   <year>1898</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
     <picture src="1898-p1.jpg">Titelbladet til <i>Lyriske Portrætter</i> (1898) lyder ,,Lyriske / Portrætter / af / S. Schandorph // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Fr. Bagges Bogtrykkeri / 1898''.</picture>
@@ -157,11 +157,11 @@ af de mange Digterstemmers Kor.
 Snart det græske Fjeld du hørte bæve
 klangfuldt under Vingehestens Hov,
 snart igennem Sjællands Skovbund svæve
-Hjortens Flugt<note>Christian Winther: <a work="winther/1855"><i>Hjortens Flugt</i> (1855)</a>.</note> paa ,,vingelette Klov''.
-Heibergs<note><a poet="heibergjl">J.L. Heiberg</a></note> sikre Taktstok saa du føre
+Hjortens Flugt<note editorial="true">Christian Winther: <a work="winther/1855"><i>Hjortens Flugt</i> (1855)</a>.</note> paa ,,vingelette Klov''.
+Heibergs<note editorial="true"><a poet="heibergjl">J.L. Heiberg</a></note> sikre Taktstok saa du føre
 an den broget-skjønne Symfoni;
 særlig nød du tidt med Kenderøre
-Ludvig Bødtchers<note><a poet="boedtcher">Ludvig Bødtcher</a>.</note> Fløjtemelodi.
+Ludvig Bødtchers<note editorial="true"><a poet="boedtcher">Ludvig Bødtcher</a>.</note> Fløjtemelodi.
 
 Skønhed al din Gerning, stor og lille,,
 gav et eget Præg, en nobel Stil,
@@ -190,7 +190,7 @@ evig unge - gamle Digterven!
   <subtitle>1872</subtitle>
   <firstline>De fagre Syner fra de dybe Drømme</firstline>
   <notes>
-    <note>Andreas Peter Berggreen (1801-1880), dansk komponist, som bla. komponerede musikken til flere af Oehlenschlägers arbejder.</note>
+    <note editorial="true">Andreas Peter Berggreen (1801-1880), dansk komponist, som bla. komponerede musikken til flere af Oehlenschlägers arbejder.</note>
   </notes>
   <source pages="9-11"/>
   <keywords>oehlenschlaeger</keywords>
@@ -620,7 +620,7 @@ Aandens klare Dagny over Nord!
   <title>Kristian Mantzius</title>
   <firstline>Vi kender den, den kostelige Skare</firstline>
   <notes>
-    <note>Kristian Andreas Leopold Mantzius (1819-1879), kongelig skuespiller.</note>
+    <note editorial="true">Kristian Andreas Leopold Mantzius (1819-1879), kongelig skuespiller.</note>
   </notes>
   <pictures>
     <picture artwork="bloch/mantzius-1853"/>
@@ -1297,7 +1297,7 @@ beundrer jeg mest din Kærligheds Vælde.
   <subtitle>1815-1884</subtitle>
   <firstline>Høj over Bryst og bred over Skulder</firstline>
   <notes>
-    <note>Jørgen Matthias Christian Schiødte (1815-1884), dansk zoolog.</note>
+    <note editorial="true">Jørgen Matthias Christian Schiødte (1815-1884), dansk zoolog.</note>
   </notes>
   <source pages="56-62"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1506,7 +1506,7 @@ En Duft som en Haves i Somren fløj om i den dæmrende Stue;
 mildt og vémodig kølet var Farvernes hede Lue.
 
 <w>Det</w> fine, det aandfulde Hoved laa lænet til Puden hvid,
-øjet var stort og glansfuldt som midt i hans<note>hans] han</note> fejreste Tid;
+øjet var stort og glansfuldt som midt i hans<note editorial="true">hans] han</note> fejreste Tid;
 damasceneragtig var Tungen beredt til Turnering
 og gav mig, straks da jeg kom, en lille satirisk Servering:
 
@@ -1674,7 +1674,7 @@ hilse kære gamle Hegels Grav.
     <event>1885-05-14</event>
   </dates>
   <notes>
-    <note>J.P.E. Hartmann (1805-1900), komponist.</note>
+    <note editorial="true">J.P.E. Hartmann (1805-1900), komponist.</note>
   </notes>
   <source pages="73-74"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2038,7 +2038,7 @@ den fine, gode Digterpræst.
   <toctitle>Chr. Berg</toctitle>
   <firstline>Det var en mægtig Kraft, som sank</firstline>
   <notes>
-    <note>Christen Berg (1829-1891), politiker.</note>
+    <note editorial="true">Christen Berg (1829-1891), politiker.</note>
   </notes>
   <source pages="90-93"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2133,7 +2133,7 @@ ham har de lagt i Graven/1
   <toctitle>Jul. Lange</toctitle>
   <firstline>Hvor hans Tanke dog var lys og blank!</firstline>
   <notes>
-    <note>Julius Lange (1838-1896), kunsthistoriker.</note>
+    <note editorial="true">Julius Lange (1838-1896), kunsthistoriker.</note>
   </notes>
   <source pages="94-96"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2205,7 +2205,7 @@ klare Hoved, fuld af herlig Ild!
   <toctitle>I. L. Phister</toctitle>
   <firstline>Med Fiskebensskørt, med Allongeparyk</firstline>
   <notes>
-    <note>Joakim Ludvig Phister (1807-1896), skuespiller.</note>
+    <note editorial="true">Joakim Ludvig Phister (1807-1896), skuespiller.</note>
   </notes>
   <source pages="97-100"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2291,7 +2291,7 @@ Phisters Minde skal funkle.
   <subtitle>1896</subtitle>
   <firstline>Jeg sidder i Stuen, er træt, er mat</firstline>
   <notes>
-    <note>Olaf Rye Poulsen (1849-1923), kongelig skuespiller.</note>
+    <note editorial="true">Olaf Rye Poulsen (1849-1923), kongelig skuespiller.</note>
   </notes>
   <source pages="101-102"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2374,7 +2374,7 @@ Et Folkeskrig fik bevinget Ord:
 deres som gnaved det orede Brød,
 til alle Landets Kanter det foer,
 at nu forlangte de Mørbraden rød:
-,,De engelske Socialisters''.<note>Cf. Drachmanns <xref poem="drachmann1999031701"/>.</note>
+,,De engelske Socialisters''.<note editorial="true">Cf. Drachmanns <xref poem="drachmann1999031701"/>.</note>
 
 Der kendtes en Kraft, vi ej længe fornam
 den kløvede Taagen kvalm.

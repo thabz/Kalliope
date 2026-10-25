@@ -113,7 +113,7 @@ Vogted Du trolig bag Bøgenes Krands.
   <title>Fædrelandssang</title>
   <firstline>Morgendug, der sagte bæver i den lune Vind</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
     <!-- Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 247-248. -->
   </notes>
   <source pages="4-5"/>
@@ -445,7 +445,7 @@ Og sænkes i Glemselens Vande.
   <subtitle>En Bondekarls Sang af et utrykt Lystspil</subtitle>
   <firstline>Paa Vossevangen der vil jeg boe</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
     <!--  Carsten Hauch: <i>Udvalgte Skrifter</i>, I-III, Poul Schjærf (red.), Holbergselskabet, Kbh., 1926-29, bd. III, pp. 251-252. -->
   </notes>
   <source pages="17-18"/>
@@ -1066,7 +1066,7 @@ Speiler sig Lysets Pragt.
   <title>Afsked fra Verden</title>
   <firstline>Det er paa Tiden, bort jeg vandre maa</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="47-48"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1101,7 +1101,7 @@ Det sees ei heller i de Vises Skrifter.
 Dog var der Een, hvis Øie længer saae,
 Hvis Ord skal staae, naar Jordens Kløgt forsvinder,
 ,,Hvo ikke bli'er som en af disse Smaa,''
-Saa talte han, ,,ei Himlens Veie finder.''<note>Cf. <xref bible="bibelmatt18,3"/>.</note>
+Saa talte han, ,,ei Himlens Veie finder.''<note editorial="true">Cf. <xref bible="bibelmatt18,3"/>.</note>
 
 Du Frelsens Aand, forlad da Du mig ei!
 Og tag den Kundskab bort, der mig forvilder!
@@ -1118,7 +1118,7 @@ Igjennem Dødens Nat til Livets Kilder!
   <toctitle>Et mystisk Digt (efter Novalis)</toctitle>
   <firstline>Naar Tal ikke meer og ei Figurer</firstline>
   <notes>
-    <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
+    <note editorial="true">Gendigtning af Novalis' <xref type="translation" poem="novalis2019010901"/>.</note>
   </notes>
   <source pages="49"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1148,7 +1148,7 @@ Det forvildede Væsen bort fra Jord.
   <toctitle>En lille Drengs Klage (efter Rückert)</toctitle>
   <firstline>Svalen har bedraget</firstline>
   <notes>
-    <note>Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121110"/>.</note>
+    <note editorial="true">Gendigtning af Rückert: <xref type="translation" poem="rueckert2018121110"/>.</note>
   </notes>
   <source pages="50"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1175,7 +1175,7 @@ Er jeg af Længsel død.
   <toctitle>Tillid til Gud (efter Paul Gerhard)</toctitle>
   <firstline>Befal hvad Du mon eie</firstline>
   <notes>
-    <note>Fri gendigtning af Paul Gerhardts <xref type="translation" poem="gerhardt2026072601"/>.</note>
+    <note editorial="true">Fri gendigtning af Paul Gerhardts <xref type="translation" poem="gerhardt2026072601"/>.</note>
   </notes>
   <source pages="51-54"/>
   <quality>korrektur1,kilde,side</quality>

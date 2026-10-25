@@ -78,7 +78,7 @@ const WorkPage = (props) => {
     );
   });
   const renderedErrata = errata.map((entry, index) => (
-    <Note key={`errata-${index}`} type="errata">
+    <Note key={`errata-${index}`} type="errata" editorial>
       <FacsimileLink
         poetId={poet.id}
         facsimile={entry.facsimile}

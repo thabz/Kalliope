@@ -5,7 +5,7 @@
   <subtitle>Tegnede med Blæk og Pen</subtitle>
   <year>1833</year>
   <notes>
-    <note>Noter med en foranstillet asterisk er Andersens egne.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Andersens egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1833-p1.jpg"><transcription>Aarets tolv Maaneder, / Tegnede med Blæk og Pen / af / H. C. Andersen. // Kjøbenhavn, 1833. / Paa Universitets-Boghandler C. A. Reitzels Forlag. / Trykt hos P. N. Jørgensen.</transcription></picture>
@@ -56,7 +56,7 @@ Men i Dit Øie: Fader-Kjærlighed.
   <title>Januar</title>
   <firstline>Et Hjem for Samojed og Pescheræ</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,- Nyfødt Aaret er vorden! / Stolt, med den flagrende Lok, i Storm og i Blæst, / Paa sin vingede Hest / Jager Tiden hen over Jorden - !''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,- Nyfødt Aaret er vorden! / Stolt, med den flagrende Lok, i Storm og i Blæst, / Paa sin vingede Hest / Jager Tiden hen over Jorden - !''.</note>
   </notes>
   <source pages="3-10"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -133,7 +133,7 @@ Til Frihed, Kraft og Kjærlighed.
 Det yngste Barn vel græder meest,
 Men har det derfor Sorger fleest?
 
-<nonum><center><b>Det gamle Aar</b><footnote>Disse Digte ere skrevne i Sommeren 1832. Begivenhederne, det gamle Aar omtale, gaae saaledes, som man seer, paa Aaret 1831.</footnote>.</center></nonum>
+<nonum><center><b>Det gamle Aar</b><footnote editorial="true">Disse Digte ere skrevne i Sommeren 1832. Begivenhederne, det gamle Aar omtale, gaae saaledes, som man seer, paa Aaret 1831.</footnote>.</center></nonum>
 
 Hvor mellem Myrter og glødende Frugter
 I Bugter
@@ -280,7 +280,7 @@ Og Danmark kan det første Grønt fremvise!
   <title>Februar</title>
   <firstline>Maanen, som en Havfrue, fra den fjerne Old</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,- Mark og Enge dækkes af den hvide Snee, / Paa de døde Blomster vil ei Livet see; / Dog, mens Vinterkulden trykker Jordens Kyst, / Anelse og Længsel fylder hvert et Bryst -!''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,- Mark og Enge dækkes af den hvide Snee, / Paa de døde Blomster vil ei Livet see; / Dog, mens Vinterkulden trykker Jordens Kyst, / Anelse og Længsel fylder hvert et Bryst -!''.</note>
   </notes>
   <source pages="13-22"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -439,7 +439,7 @@ Først, naar Krattet springer ud,
 Og det nye Grønt vi finde,
 Alt det gamle Løv forsvinde.
 Fast det staaer fra Top til Rod;
-Thi vor Herre er saa god<footnote>et Sagn.</footnote>!
+Thi vor Herre er saa god<footnote editorial="true">et Sagn.</footnote>!
 
 <pb n="19" facs="030.jpg"/><nonum><center><b>Postkarlen.</b></center></nonum>
 
@@ -488,7 +488,7 @@ Gjennem mangt et Hjerte gik.
 Herren selv, som kjender Trangen,
 Havde under Psalmesangen
 Dækket det mod Ild og Landse,
-Bag ved Sneens hvide Skandse<footnote>Et Folkesagn.</footnote>.
+Bag ved Sneens hvide Skandse<footnote editorial="true">Et Folkesagn.</footnote>.
 
 <pb n="21" facs="032.jpg"/><nonum><center><b>Fuglene.</b></center></nonum>
 
@@ -534,7 +534,7 @@ Mit Hjertes blodige Straale?
   <title>Marts</title>
   <firstline>Mægtigt Vaarens Pulse banke</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Livets Frihed, Jordens Baand, / Kamp imellem Form og Aand.''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Livets Frihed, Jordens Baand, / Kamp imellem Form og Aand.''.</note>
   </notes>
   <source pages="25-34"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -784,7 +784,7 @@ Nei, fra det Indre Kraften sig bevæger!
   <title>April</title>
   <firstline>O, April! en deilig Maaned</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,- Frihed, synger Du, April! / Med nyfødt Grønt og Sommer-Smiil.''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,- Frihed, synger Du, April! / Med nyfødt Grønt og Sommer-Smiil.''.</note>
   </notes>
   <source pages="37-46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -915,7 +915,7 @@ Og Hædersstøtte Galgen blev,
 Thi bøiede sig hver en Fri
 Ærbødigt, mens han gik forbi,
 Og aarle, alt ved Lærkens Slag,
-Den stod bekrandset næste Dag.<footnote>Historisk Sandhed.</footnote>
+Den stod bekrandset næste Dag.<footnote editorial="true">Historisk Sandhed.</footnote>
 Jeg satte mig paa Støtten lidt,
 Og sang mit Friheds Qvirrevit!
 
@@ -1020,9 +1020,9 @@ Leger da heroppe med sit lange Haar.
 Hver April hun bringer, under Bølge-Sang,
 Danmark Friheds-Krandsen af sit grønne Tang;
 <pb n="46" facs="057.jpg"/>Og mens Vinter-Kysten blomstrer smukt igjen,
-Synger Danmarks Frelse ved Niels Ebbesen;<footnote>Det var den 1ste April, (1340) at Niels Ebbesen slog Grev Geert og frelste Danmark fra dets Undertrykkere.</footnote>
+Synger Danmarks Frelse ved Niels Ebbesen;<footnote editorial="true">Det var den 1ste April, (1340) at Niels Ebbesen slog Grev Geert og frelste Danmark fra dets Undertrykkere.</footnote>
 Synger Brittens Skjændsel og hans fule Smiil,
-Mens hun skjænker Danmark Krandsen for April!<footnote>Slaget paa Kjøbenhavns Rhed den 2den April 1801.</footnote>
+Mens hun skjænker Danmark Krandsen for April!<footnote editorial="true">Slaget paa Kjøbenhavns Rhed den 2den April 1801.</footnote>
 </poetry>
 </body>
 </text>
@@ -1032,7 +1032,7 @@ Mens hun skjænker Danmark Krandsen for April!<footnote>Slaget paa Kjøbenhavns 
   <title>Mai</title>
   <firstline>Hver Maaned har sin Characteer</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Du skiønne Mai! af Dig jeg veed, / At Poesie er Kiærlighed.''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Du skiønne Mai! af Dig jeg veed, / At Poesie er Kiærlighed.''.</note>
   </notes>
   <source pages="49-54"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1169,7 +1169,7 @@ At Poesie er Kjærlighed!
   <title>Juni</title>
   <firstline>De høie Popler hæve sig saa slanke</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Glemt er nu Vaarens Kamp og Vinter-Sorgen, / Til Glæde sig forvandler hvert et Suk. / Skjøn som en Brud, den anden Bryllups-Morgen, / Ei længer Barn, og dog saa ung og smuk, / Den skjønne Junimaaned til os kommer; / Det er Skærsommer! -''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Glemt er nu Vaarens Kamp og Vinter-Sorgen, / Til Glæde sig forvandler hvert et Suk. / Skjøn som en Brud, den anden Bryllups-Morgen, / Ei længer Barn, og dog saa ung og smuk, / Den skjønne Junimaaned til os kommer; / Det er Skærsommer! -''.</note>
   </notes>
   <source pages="57-66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1466,10 +1466,10 @@ Har dog ingen Mage!
   <title>Juli</title>
   <firstline>Gjærdet staaer med vilde Roser</firstline>
   <notes>
-    <note>Digtet indledes med mottoerne: ,,- Alting svulmer, alting gynger, / Bølge, Luft og Hierte synger / Høit din Priis, Du stolte Hav.'' og ,,- Armen jeg om Vennen slynger, / Hiertet sig til Hiertet klynger; / Hver en Sorg, som Barmen tynger, / Svinder hen i Blomsterduft!''.</note>
-    <note>Strofe 13-16 er kommenteret af Wilhelm von Rosen i "H.C. Andersens forelskelse i Ludvig Müller ...", <i>Kritik</i> 73/1985. "Eduard" (strofe 15) er Edvard Collin.</note>
-    <note><i>Samlede Skrifter</i> gav senere teksten titlen <i>Sommerflugt og Hvile</i>.</note>
-    <note type="credits">Bidrag fra Sven Andersen</note>
+    <note editorial="true">Digtet indledes med mottoerne: ,,- Alting svulmer, alting gynger, / Bølge, Luft og Hierte synger / Høit din Priis, Du stolte Hav.'' og ,,- Armen jeg om Vennen slynger, / Hiertet sig til Hiertet klynger; / Hver en Sorg, som Barmen tynger, / Svinder hen i Blomsterduft!''.</note>
+    <note editorial="true">Strofe 13-16 er kommenteret af Wilhelm von Rosen i "H.C. Andersens forelskelse i Ludvig Müller ...", <i>Kritik</i> 73/1985. "Eduard" (strofe 15) er Edvard Collin.</note>
+    <note editorial="true"><i>Samlede Skrifter</i> gav senere teksten titlen <i>Sommerflugt og Hvile</i>.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Andersen</note>
   </notes>
   <source pages="69-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1670,7 +1670,7 @@ Svulme, døe i Kjærlighed!
   <title>August</title>
   <firstline>Ja, Øieblikket ene er det just</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Blomsten dufter, for at brydes! / Frugten modnes, for at nydes! / - Lev og nyd! trara! trara!''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Blomsten dufter, for at brydes! / Frugten modnes, for at nydes! / - Lev og nyd! trara! trara!''.</note>
   </notes>
   <source pages="79-84"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1813,7 +1813,7 @@ Lev og nyd, trara, trara!"
   <title>September</title>
   <firstline>Septembers herlige Natur</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Den skiønne Sommer fra os gaaer, / En Afskedsfest den giver; / Thi staaer den i sin Farvepragt. / Saadan, i kongelige Dragt, / Gik Jephtas Datter smykket / Did hen, hvor Døden bygged'.''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Den skiønne Sommer fra os gaaer, / En Afskedsfest den giver; / Thi staaer den i sin Farvepragt. / Saadan, i kongelige Dragt, / Gik Jephtas Datter smykket / Did hen, hvor Døden bygged'.''.</note>
   </notes>
   <source pages="87-90"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1936,7 +1936,7 @@ Vor Sjæl til Gud indvier.
   <title>October</title>
   <firstline>Storken er reist til fremmed' Land, Spurven boer i dens Rede</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,- Du har ei Ro, ei Smerte / Tomt er der i dit Hjerte; / Saa døsigt Taagen ligger / Rundt om det visne Krat! -''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,- Du har ei Ro, ei Smerte / Tomt er der i dit Hjerte; / Saa døsigt Taagen ligger / Rundt om det visne Krat! -''.</note>
   </notes>
   <source pages="93-98"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2068,7 +2068,7 @@ Der ei Barnet græder!
   <title>November</title>
   <firstline>Her November har sin Throne</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Tredje Reeb ind! - - Op at beslaae Mersseilet! - / Ha, alle Djævle, hvilken Nat! -''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Tredje Reeb ind! - - Op at beslaae Mersseilet! - / Ha, alle Djævle, hvilken Nat! -''.</note>
   </notes>
   <source pages="101-114"/>
   <places>
@@ -2125,7 +2125,7 @@ Manden bortskjar alle Touge,
 Undersøgte Alting nøie,
 Haabede, naar Vraget sank,
 Baaden, frelst fra Dybets Hvirvler,
-Let dem bar paa Havets Flade<footnote>Efter en lignende Situation hos Cooper.</footnote>.
+Let dem bar paa Havets Flade<footnote editorial="true">Efter en lignende Situation hos Cooper.</footnote>.
 Men eet Toug sig for ham skjulte,
 Livet hang ved dette ene.
 Tause sad de, Alt var stille;
@@ -2297,7 +2297,7 @@ Thi Roserne voxe i Dale.
 <pb n="109" facs="120.jpg"/>Lad Verden mig Alting betage,
 Lad Tornene rive og nage.
 Lad Hjertet daane og briste,
-Min Rose jeg aldrig vil miste!"<footnote>Brorson.</footnote>
+Min Rose jeg aldrig vil miste!"<footnote editorial="true">Brorson.</footnote>
 
 <nonum><center><b>De onde Aander.</b></center></nonum>
 
@@ -2401,7 +2401,7 @@ Og I Andre, som vil følge,
 Vorder Taage! kom som Munke,
 Mens bag Kappen Sværdet blinker.
 Saadan vi den glade Blodnat,
-Vor November-Farce spille,<footnote>Den 21de Novbr. 1286 myrdedes Erik Glipping i Finnerup.</footnote>
+Vor November-Farce spille,<footnote editorial="true">Den 21de Novbr. 1286 myrdedes Erik Glipping i Finnerup.</footnote>
 Mens en Natmand med Familie
 Gaaer i Storm og Blæst paa Heden,
 Og forfærdes, naar han seer os
@@ -2467,7 +2467,7 @@ Kold og hvid, som Kommandanten.
   <title>December</title>
   <firstline>Dybt i mit Hjerte, hvor hun boer</firstline>
   <notes>
-    <note>Digtet indledes med mottoet: ,,Hver sorgfuld Sjæl, bliv karsk og glad, / Ryst af din tunge Smerte, / Et Barn er født i Davids Stad, / Til Trøst for hvert et Hierte.''.</note>
+    <note editorial="true">Digtet indledes med mottoet: ,,Hver sorgfuld Sjæl, bliv karsk og glad, / Ryst af din tunge Smerte, / Et Barn er født i Davids Stad, / Til Trøst for hvert et Hierte.''.</note>
   </notes>
   <source pages="117-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

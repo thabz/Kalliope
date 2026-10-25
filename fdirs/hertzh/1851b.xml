@@ -4,7 +4,7 @@
   <title>Digte fra forskjellige Perioder, Deel II</title>
   <year>1851</year>
   <notes>
-    <note>Noter med foranstillet asterisk er forfatterens egne.</note>
+    <note editorial="true">Noter med foranstillet asterisk er forfatterens egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1851b-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
@@ -161,7 +161,7 @@ En Kjærligheds-Erklæring er til Eder.
   <subtitle>Til en Veninde.</subtitle>
   <firstline>Hos alle Dødelige</firstline>
   <notes>
-    <note>Trykt første gang i <i>Nytaarsgave fra danske Digtere</i>, Fjerde Aargang, 1838, under titlen <i>Til **</i>. Det er samme sted anført at digtet er skrevet 1835.</note>
+    <note editorial="true">Trykt første gang i <i>Nytaarsgave fra danske Digtere</i>, Fjerde Aargang, 1838, under titlen <i>Til **</i>. Det er samme sted anført at digtet er skrevet 1835.</note>
   </notes>
   <source pages="6-8"/>
   <quality>korrektur1,kilde,side</quality>
@@ -795,7 +795,7 @@ Og de andre Fugle smaa, som tale.
   <toctitle><num>II.</num>Ridderens Frierie</toctitle>
   <firstline>En deilig, ung Ridder i Lunden mon gaae</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1575,7 +1575,7 @@ Ak, forskrive mig til Fanden!
   <title>Skriftemaalet</title>
   <firstline>Pater Joseph! laan mig Øre!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="63-69"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2073,7 +2073,7 @@ Som et lykkeligt Moment.
   <subtitle>Til Melodie af Fredm. Epistl. 55.</subtitle>
   <firstline>Luften er blaa</firstline>
   <notes>
-    <note>Cf. Bellmans <xref poem="bellman2001061355"/>.</note>
+    <note editorial="true">Cf. Bellmans <xref poem="bellman2001061355"/>.</note>
   </notes>
   <source pages="82-87"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2470,7 +2470,7 @@ Vi seile og vi roe! :,:
   <toctitle><num>III.</num>Ligevægten</toctitle>
   <firstline>Vi sidde sammen som vi kan bedst</firstline>
   <notes>
-    <note>Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    <note editorial="true">Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
   <source pages="98-101"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3285,7 +3285,7 @@ Hen til de dunkle,
 Skyggende Skove,
 Lokked' af Fuglens
 Fløitende Røst.
-Hist under Hlesey<note>Læsø</note>,
+Hist under Hlesey<note editorial="true">Læsø</note>,
 Bænked' i Ægirs
 Gjæstmilde Haller,
 Guderne sad; -

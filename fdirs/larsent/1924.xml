@@ -5,8 +5,8 @@
   <subtitle>Oversættelse fra Græsk (Aiolisk)</subtitle>
   <year>1924</year>
   <notes>
-    <note>Noter med foranstillet * er Thøger Larsens egne.</note>
-    <note type="credits">Bidrag fra Henrik W. Gade.</note>
+    <note editorial="true">Noter med foranstillet * er Thøger Larsens egne.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik W. Gade.</note>
   </notes>
   <quality>korrektur1</quality>
 </workhead>
@@ -16,7 +16,7 @@
 <head>
   <title>Indledning</title>
   <notes>
-    <note>Det oversatte Ovid-citat er fra <xref poem="ovid2026083018,33-34"/>.</note>
+    <note editorial="true">Det oversatte Ovid-citat er fra <xref poem="ovid2026083018,33-34"/>.</note>
   </notes>
   <source pages="5-8">Thøger Larsen: <i>Sapfos Digte</i>, Lemvig, 1924.</source>
   <quality>korrektur1,kilde</quality>
@@ -337,7 +337,7 @@ Ve for Adonis.
 <body>
 <poetry>
 - - -
-Kypris<note>Afrodite.</note>! og han<note>Kharaxos.</note> fandt dig [end mere spydig]
+Kypris<note editorial="true">Afrodite.</note>! og han<note editorial="true">Kharaxos.</note> fandt dig [end mere spydig]
 og [de andre] brystede sig [og sagde]:
 ,,Saadan fik da <i>Dorikha</i> sig paany den
       [ønskede] Elskov.''
@@ -459,7 +459,7 @@ fulgte, og særskilt fulgte dem Peramos-Døtrene.<note>* Priamos' Døtre.</note>
 - - - -
 Flokken af ældre Kvinder et Skrig opløftede,
 Mændene hæved en tonende herlig Takkesang
-op mod den Pilen langt udslyngende Lyregud<note>Apollon.</note>
+op mod den Pilen langt udslyngende Lyregud<note editorial="true">Apollon.</note>
 priste guddommelig Hektor og hans Andromakhe.
 </poetry>
 </body>
@@ -700,7 +700,7 @@ Nattergalen, som Vaaren saa lifligt bebuder ......
 </head>
 <body>
 <poetry>
-Areus<note>Ares</note> siger, at han kan styre Afaistos<note>Hefaistos</note> med Vold.
+Areus<note editorial="true">Ares</note> siger, at han kan styre Afaistos<note editorial="true">Hefaistos</note> med Vold.
 </poetry>
 </body>
 </text>
@@ -909,7 +909,7 @@ Græsset maatte der
   <title>XXXV</title>
   <firstline>Dersom Zeus vilde give Blomsternes</firstline>
   <notes>
-    <note>Ovenstaaende tilskriver Jacob Stählin Sapfo og opfatter det som Prosa. Jeg har forsøgt at inddele det i verslinjer.</note>
+    <note editorial="true">Ovenstaaende tilskriver Jacob Stählin Sapfo og opfatter det som Prosa. Jeg har forsøgt at inddele det i verslinjer.</note>
   </notes>
   <source pages="43">Thøger Larsen: <i>Sapfos Digte</i>, Lemvig, 1924.</source>
   <quality>korrektur1,kilde,side</quality>

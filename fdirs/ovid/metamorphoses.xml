@@ -5,8 +5,8 @@
   <title>Metamorphoses</title>
   <year>ca. 0008</year>
   <notes>
-    <note>Den latinske tekst følger Hugo Magnus' udgave fra 1892. Vers, der i Perseus' TEI-kilde kun står som redaktionelt forkastede læsninger i apparatet, er udeladt. Udgavens versnumre er bevaret.</note>
-    <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
+    <note editorial="true">Den latinske tekst følger Hugo Magnus' udgave fra 1892. Vers, der i Perseus' TEI-kilde kun står som redaktionelt forkastede læsninger i apparatet, er udeladt. Udgavens versnumre er bevaret.</note>
+    <note editorial="true" type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
   </notes>
   <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi006">
     <author>P. Ovidius Naso</author>

@@ -4,8 +4,8 @@
   <title>Digte. Første Deel</title>
   <year>1811</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd citeret i digtnoten, så læseren selv kan vurdere berretigelsen af en emendation.</note>
-    <note>Noter med en foranstillet asterisk er Ingemanns egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun indlysende fejl er rettet og i alle tilfælde med originalens ordlyd citeret i digtnoten, så læseren selv kan vurdere berretigelsen af en emendation.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Ingemanns egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1811-p1.jpg"><transcription>Digte / af / B. S. Ingemann. // Første Deel. // Kjøbenhavn 1811. / Trykt paa Forfatterens Forlag / hos Boas Brünnich.</transcription></picture>
@@ -354,7 +354,7 @@ Og Vraget monne — forgaae.
   <subtitle>[Efter Voß.]</subtitle>
   <firstline>Med Purpurdragt i Lundens Fred</firstline>
   <notes>
-    <note unknown-original-by="voss" />
+    <note editorial="true" unknown-original-by="voss" />
   </notes>
   <source pages="16-17"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1058,7 +1058,7 @@ Thi vil vi ride om Kap."
 Og sporede han sin Vallak snel.
 Hr. Sem spored Abildgraae,
 Og rede de over Sten og Stub,
-Af Flint<note>Flint] Fluit</note> sprang de Funker smaae.
+Af Flint<note editorial="true">Flint] Fluit</note> sprang de Funker smaae.
 
 Saa fore de over Stub og Sten,
 Af Flint sprang de Funker smaa;
@@ -1133,7 +1133,7 @@ Det trilled paa Jorden ned.
 Den tredie Gang, der de sammenfoer,
 De Sværde farvedes røde.
 Og Hjelmen brast, og Panderne brast,
-Og de slog hinanden<note>hinanden] hianden</note> tildøde.
+Og de slog hinanden<note editorial="true">hinanden] hianden</note> tildøde.
 
 Og det var Maria den væne Møe,
 Randt Taare paa Liliekind;
@@ -1195,7 +1195,7 @@ Meer, end alle Himlens Engle ere.
   <title>Pigen</title>
   <firstline>Der dandser en Pige for hver Mands Dør</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="57-58"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1251,7 +1251,7 @@ Mon <w>Haab</w> ikke være den Pigelils Navn?
   <subtitle>[Efter <w>Hagedorn</w>.]</subtitle>
   <firstline>Kom skjønne Søn af skjønneste Gudinde!</firstline>
   <notes>
-    <note>Gendigtning af Hagedorns <xref type="translation" poem="hagedorn2018031501"/>.</note>
+    <note editorial="true">Gendigtning af Hagedorns <xref type="translation" poem="hagedorn2018031501"/>.</note>
   </notes>
   <source pages="59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1309,7 +1309,7 @@ Det beklemte Hjerte er tilbage.
   </subtitle>
   <firstline>Elisa stod, saa skjøn, saa huld</firstline>
   <notes>
-    <note>Fri gendigtning af Gottfried August Bürgers gotiske ballade <xref type="translation" poem="burger2018041201"/>.</note>
+    <note editorial="true">Fri gendigtning af Gottfried August Bürgers gotiske ballade <xref type="translation" poem="burger2018041201"/>.</note>
   </notes>
   <source pages="61-66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1456,7 +1456,7 @@ Saa blomstrede Kinden halv hvid og halv rød,
 Med klaren Sølvstemme sang Pigen saa huld,
 Og holdt udi Haanden en Cither af Guld.
 
-"O! du Pieride! o! Helicons Møe!<note>"O! du] O! du</note>
+"O! du Pieride! o! Helicons Møe!<note editorial="true">"O! du] O! du</note>
 O himmelske Lod ved dit Hjerte at døe,"
 Saa sang jeg, og vilde alt ile didhen,
 Da greb mig i flagrende Lokker en Ven.
@@ -1549,7 +1549,7 @@ Ved Siden reed Vasaller fem,
   Med Rustninger ildrøde,
 Og røde Hingste bare dem;
   De Fyrstens Vink adløde.
-Med Huj- og Hurra-Raab<note>Hurra-Raab] Hurra Raab</note> til Mord,
+Med Huj- og Hurra-Raab<note editorial="true">Hurra-Raab] Hurra Raab</note> til Mord,
 De gjennem Tyrkens Lande foer,
   Og brændte, røved, sloge,
   I hvor de saa hendroge.
@@ -2021,7 +2021,7 @@ Grib Sværdet! og hævn mig og Niddingen knus!
   <subtitle>[Sommer 1808.]</subtitle>
   <firstline>Hvi funkler Herthas Dal saa rød</firstline>
   <notes>
-    <note>Mottoet stammer fra <a poet="schiller">Schillers</a> <i>Die Jungfrau von Orleans</i>, I, 5.</note>
+    <note editorial="true">Mottoet stammer fra <a poet="schiller">Schillers</a> <i>Die Jungfrau von Orleans</i>, I, 5.</note>
   </notes>
   <source pages="94-96"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2433,7 +2433,7 @@ Og bag ved Graven rinder ingen Graad.
   <title>Den unge Harpenspiller</title>
   <firstline>Skjøn er du, Ungdoms gyldne Tid!</firstline>
   <notes>
-    <note>Mottoet stammer fra Wielands <xref poem="wieland2001102404,39-41"/>.</note>
+    <note editorial="true">Mottoet stammer fra Wielands <xref poem="wieland2001102404,39-41"/>.</note>
   </notes>
   <source pages="113-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2946,7 +2946,7 @@ Jeg vil dig ikke misunde. Ei er min Phyllis
 Liig Amaryllis i Skjønhed, og hun maa kjendes
 Før hun skal elskes; men derfor takker jeg Himlen,
 Derfor er Uroe mig fremmed; ikke jeg frygter,
-Sommerfuglssværmen<note>Sommerfuglssværmen] Sommerfulgssværmen</note> min Reseda søger: den har ei
+Sommerfuglssværmen<note editorial="true">Sommerfuglssværmen] Sommerfulgssværmen</note> min Reseda søger: den har ei
 Glimmer for Øyet; men Fryd for det følen-Hjerte.
 Gak kun, min Tityrus! men kom her atter tilbage,
 Naar disse Hjorde er uddød, og deres Afkom
@@ -3022,7 +3022,7 @@ Der den Godes Aand forklaret svæve,
   <subtitle>[Efter Stolberg.]</subtitle>
   <firstline>Du, som med tindrende Lys bringer den rolige Aften!</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold zu Stolberg-Stolbergs <xref type="translation" poem="stolbergf2018040901"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold zu Stolberg-Stolbergs <xref type="translation" poem="stolbergf2018040901"/>.</note>
   </notes>
   <source pages="140-142"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3310,7 +3310,7 @@ O! skjønne <w>Fremtid!</w> jeg skuer dig,
 - Saa Sangeren atter udbrød, —
 Dog maatte du evig for Støvet vige,
 Og kunde han ei dine Høye bestige,
-Du trylled ham dog fra Indbildningens<note>Indbildningens] Irbildningens</note> Rige,
+Du trylled ham dog fra Indbildningens<note editorial="true">Indbildningens] Irbildningens</note> Rige,
     Og fjernet din Himmel han nød.
 Bortflygret var Slumren, og Drømmene veeg;
 Tit Skjalden dem minded ved Strængeleeg.
@@ -3491,7 +3491,7 @@ Til Taageluften fra din Himmel gaae.
   <subtitle>[Parabel.]</subtitle>
   <firstline>En Snekke jeg skuer paa gyngende Vande</firstline>
   <notes>
-    <note>Mottoet er første strofe af Novalis' <xref poem="novalis2005060512,1-4"/>.</note>
+    <note editorial="true">Mottoet er første strofe af Novalis' <xref poem="novalis2005060512,1-4"/>.</note>
   </notes>
   <source pages="163-166"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4326,7 +4326,7 @@ Om Træet, som harmonisk yndigt qvæder,
 Om gyldne Kildevæld saa underlig!
 Siig, Billedet, som spøgende fremtræder
 I farvede og lette Drømmeklæder,
-Er Sandheds Møe,<note>Møe,] Møe.</note> som svæver frem til Dands
+Er Sandheds Møe,<note editorial="true">Møe,] Møe.</note> som svæver frem til Dands
 I Halvgudinders Blomsterkrands.
 
 En Konning sad saa stolt paa høyen Throne,
@@ -4440,7 +4440,7 @@ Samt Vise, som udloe den Daad.
 Blandt dem, som født i Armods ringe Bolig,
 Naturen Meget, Lykken — Intet gav,
 Var tvende Ynglinge, som hidtil rolig
-Opfyldte virksom<note>virksom] virsom</note> Livets første Krav;
+Opfyldte virksom<note editorial="true">virksom] virsom</note> Livets første Krav;
 De havde ingen Fader, ingen Moder,
 De dyrked Jorden, nød dens simple Goder:
 Et sparsomt Brød, fortjent i Ansigtssved
@@ -4722,7 +4722,7 @@ Da sang bag Buskene hiin gamle Qvinde;
     Og en liden Himlens Engel
     Boer i Blomsten underfuld.
 
-    Let adspredes<note>adspredes] adfredes</note> Taageluften
+    Let adspredes<note editorial="true">adspredes] adfredes</note> Taageluften
     Trindt om Blomsterdronningen,
     Sagte hvidsker Engelen,
     Aander sødt i Rosenduften:
@@ -5082,7 +5082,7 @@ Og vred det ved Qvad i Troldomsring:
     Hvo løser det Bundne?
     Hvo kalder tilbage der Svundne?
     Dands lystig! thi Sejren er vor.
-    Hvo<note>Hvo] Hvv</note> vækker de Stene?
+    Hvo<note editorial="true">Hvo] Hvv</note> vækker de Stene?
     Det Himmelske Rene;
     Men det er ei mere paa Jord. -
 
@@ -5927,7 +5927,7 @@ Tre Gange jeg adspørger dig.
     Som i Regnbuen tabe sig
     I een de Farver alle.
     Du Oceanet nævne mig,
-    Hvori de Floder falde!''<note>falde!''] falde!</note>
+    Hvori de Floder falde!''<note editorial="true">falde!''] falde!</note>
 
 Og Parizade svared: ''jeg skal sige
 Dig Navnet paa hiint underfulde Land;
@@ -6097,7 +6097,7 @@ Den qvad i Jubelmelodie;
   Velkommen blege Himmelbrud!
   Triumph! du haver overvundet,
   Triumph! du haver Skakten fundet,
-  Triumph! du holdt din Prøve ud.''<note>ud.''] ud.</note>
+  Triumph! du holdt din Prøve ud.''<note editorial="true">ud.''] ud.</note>
 </poetry>
 </body>
 </text>

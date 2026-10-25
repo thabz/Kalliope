@@ -4,7 +4,7 @@
   <title>Viser og Vers</title>
   <year>1852</year>
   <notes>
-    <note>Noter med en foranstillet asterisk er Hostrups egne.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Hostrups egne.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1852-p1.jpg"><transcription>Viser og Vers, / nogle Minder fra et Studenterliv, / af / C. Hostrup. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1852.</transcription></picture>
@@ -387,7 +387,7 @@ og derfor en Skaal til hans Ære!
   <toctitle><num>1.</num>Lad andre prise Forstandens Spil</toctitle>
   <firstline>Lad andre prise Forstandens Spil</firstline>
   <notes>
-    <note>Digtets metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    <note editorial="true">Digtets metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
   <source pages="19-20"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1955,9 +1955,9 @@ og Verden er vor.
   <title>Fodrejsen</title>
   <firstline>Man maa rejse tilfods for at sprænge med Hast</firstline>
   <notes>
-    <note>Af J. Chr. Hostrups <i>Eventyr paa Fodreisen</i> (I,4) 1848.</note>
+    <note editorial="true">Af J. Chr. Hostrups <i>Eventyr paa Fodreisen</i> (I,4) 1848.</note>
     <!-- Findes under titlen »Studenterne« i <i>Fest-Sange</i>, udg. af Arthur Arnholtz, Karl Clausen og Finn Viderø, 1947. -->
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="88-89"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2161,7 +2161,7 @@ trofast Stræben for sin Ven.
   <toctitle><num>2.</num>En Gadevise</toctitle>
   <firstline>Nu vil jeg synge om Karen</firstline>
   <notes>
-    <note>Findes med titlen »Visen om Karen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Visen om Karen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="96-97"/>
   <quality>korrektur1,kilde,side</quality>

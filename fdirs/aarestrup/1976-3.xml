@@ -499,8 +499,8 @@ Uden Strenghed, med en venlig Villie!
   <title>Luca Signorelli</title>
   <firstline>I Salens dybe Skygge</firstline>
   <notes>
-    <note>Tidligere udgave findes.</note>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true">Tidligere udgave findes.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="20-24"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -641,7 +641,7 @@ Og Konstens Hellighed.
   <title>Fjeldspringet</title>
   <firstline>Hvor Granskoven kneiser langs op af Bjergets Skrint</firstline>
   <notes>
-    <note>Trykt i <i>Aftenblad</i>, 12. Oct. 1823 og i <i>Hundrede Romanzer</i>, 1836.</note>
+    <note editorial="true">Trykt i <i>Aftenblad</i>, 12. Oct. 1823 og i <i>Hundrede Romanzer</i>, 1836.</note>
   </notes>
   <source pages="25-27"/>
   <keywords>romance</keywords>
@@ -717,7 +717,7 @@ Og fandt i tapper Fægtning paa eengang deres Død.
   <title>Sidskensang</title>
   <firstline>Du er, min Tro, en underlig Pog</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Aftenblad</i>, 8. Aug 1823.</note>
+    <note editorial="true">Tidligere trykt i <i>Aftenblad</i>, 8. Aug 1823.</note>
   </notes>
   <source pages="28-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -916,7 +916,7 @@ En Myg paa sit Blad?
   <title>Nøddevise</title>
   <firstline>I Skov, hvor Bøssen knalder</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="35-38"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1078,7 +1078,7 @@ Meer end ti kan svare paa.
   <title>Børnepsalme</title>
   <firstline>Lover Gud! - I Barndoms stille</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Sange ved Blegdamsskolens Eksamen</i>, 1820 og i <i>Nyt Aftensblad</i>, 27. Maj 1826.</note>
+    <note editorial="true">Tidligere trykt i <i>Sange ved Blegdamsskolens Eksamen</i>, 1820 og i <i>Nyt Aftensblad</i>, 27. Maj 1826.</note>
   </notes>
   <source pages="41"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1118,7 +1118,7 @@ Alt er skjønt - vi gaae med Gud!
   <title>Torsten og Trine</title>
   <firstline>Ved Lysets svage Lue, bag lukte Vindveskud</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Aftenblad</i>, 10. Oct. 1823.</note>
+    <note editorial="true">Tidligere trykt i <i>Aftenblad</i>, 10. Oct. 1823.</note>
   </notes>
   <source pages="42-43"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1313,7 +1313,7 @@ At kunne tænke paa dig!
   <subtitle>Til Oehlenschläger</subtitle>
   <firstline>Naturen i vort Nord</firstline>
   <notes>
-    <note>Manuskriptet er dateret 1827.</note>
+    <note editorial="true">Manuskriptet er dateret 1827.</note>
   </notes>
   <source pages="48-50"/>
   <keywords>oehlenschlaeger</keywords>
@@ -1591,8 +1591,8 @@ Kan du faae Kysset først?
   <title>Havfruen</title>
   <firstline>Fisker, ved din Baad paa Sandet</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1836.</note>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true">Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1836.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="59-63"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1815,7 +1815,7 @@ Som igjennem Viisdoms Briller.
   <title>Nordexpeditionen</title>
   <firstline>Femten Somre var den Fagre</firstline>
   <notes>
-    <note>Captain Ross: britisk polarforsker, der forgæves søgte efter Nordvestpassagen.</note>
+    <note editorial="true">Captain Ross: britisk polarforsker, der forgæves søgte efter Nordvestpassagen.</note>
   </notes>
   <source pages="67-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2055,7 +2055,7 @@ Pater Hugo følger med.''
   <title>Til en Veninde</title>
   <firstline>Der er en Trolddom paa din Læbe</firstline>
   <notes>
-    <note><a poet="winther">Christian Winther</a>s forlovede, Sophie Hansen, betagede Aarestrup og siges at være inspirationen til dette digt.</note>
+    <note editorial="true"><a poet="winther">Christian Winther</a>s forlovede, Sophie Hansen, betagede Aarestrup og siges at være inspirationen til dette digt.</note>
   </notes>
   <pictures>
     <picture artwork="jensenca/sophie-hansen-1832"/>
@@ -2364,7 +2364,7 @@ Til Dommedag dem vækker.
   <subtitle>† 1832</subtitle>
   <firstline>Den tunge Regnsky hænger over Vandet</firstline>
   <notes>
-    <note>Lægen Aarestrup ledsagede i 1832 komtesse Amalie Raben fra Aalholm på en helbredsrejse gennem Tyskland til Böhmen og Østrig, hvor hun døde.</note>
+    <note editorial="true">Lægen Aarestrup ledsagede i 1832 komtesse Amalie Raben fra Aalholm på en helbredsrejse gennem Tyskland til Böhmen og Østrig, hvor hun døde.</note>
   </notes>
   <source pages="86-87"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2584,7 +2584,7 @@ At jeg er resigneret.
     <event>1833-02-28</event>
   </dates>
   <notes>
-    <note>Fødselsdagsdigt til Aarestrups hustru Caroline, d. 28. februar, 1833.</note>
+    <note editorial="true">Fødselsdagsdigt til Aarestrups hustru Caroline, d. 28. februar, 1833.</note>
   </notes>
   <source pages="94-95"/>
   <keywords>balladestrofe</keywords>
@@ -2666,8 +2666,8 @@ I Armene paa en, som døde, lad mig hvile!
   <title>Til Vinterveiret</title>
   <firstline>Grimme Jotun, som fra Fjeldet</firstline>
   <notes>
-    <note>Brix skriver, at et vers er udfaldet i strofe 5: "[vers 6-7] synes at have været: A du [lumskeligen bag] / [Koften] har en Sneebold færdig:".</note>
-    <note>Tidligere trykt i <i>Nyt Aftenblad</i>, 7. maj 1825.</note>
+    <note editorial="true">Brix skriver, at et vers er udfaldet i strofe 5: "[vers 6-7] synes at have været: A du [lumskeligen bag] / [Koften] har en Sneebold færdig:".</note>
+    <note editorial="true">Tidligere trykt i <i>Nyt Aftenblad</i>, 7. maj 1825.</note>
   </notes>
   <source pages="97-99"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2805,7 +2805,7 @@ Og hvert Minut faldt Stjerneskud.
   <title>Til Elskov</title>
   <firstline>Første Elskov! Unge Sjæles Møde</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Aftensblad</i>, 3. Oct 1823.</note>
+    <note editorial="true">Tidligere trykt i <i>Aftensblad</i>, 3. Oct 1823.</note>
   </notes>
   <source pages="102"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2845,7 +2845,7 @@ Kan ei savnes varme, lyse Dage.
   <title>Mary</title>
   <firstline>Hvad tykkes dig om hende, Jack</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="103-106"/>
   <keywords>balladestrofe</keywords>
@@ -3367,7 +3367,7 @@ Han er altfor klog til Byttet.
   <title>Eremitten</title>
   <firstline>Tak for Bægret af din Kilde</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="124-125"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3432,7 +3432,7 @@ Nu vil jeg forsøge dette.
   <title>Silhouetter af en Præstefamilie</title>
   <firstline>I høie Hvedebølger, imellem Rug og Byg</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="126-128"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3507,7 +3507,7 @@ Jeg skrev hende dette ubetydelige Digt!
   <title>Ved en Vens Hjemkomst</title>
   <firstline>Velkommen tilbage, hvor Øen har lagt</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="129-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3567,7 +3567,7 @@ Velkommen hjem i din landlige Stue!
   <title>Elegie</title>
   <firstline>Af mangen gravitetisk Sjæl, hvor tidt</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="131-132"/>
   <keywords>elegi</keywords>
@@ -3637,7 +3637,7 @@ I din anakreontisk-skjønne Skygge?
   <title>Aturernes Grave</title>
   <firstline>Alle Folk i Maypures</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="133-135"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3955,9 +3955,9 @@ Var I blot vingede og nydelige.
   <title>Charlottenlund</title>
   <firstline>Paa Høien der, ja rigtig, min Moer</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
-    <note>Cf. Bellmans <xref poem="bellman2001061382"/>.</note>
-    <note>Både stemning og melodi er efter Carl Michaël Bellmans ,,Fredmans Epistel nr. 36'' (,,Vår Ulla låg i sängen och sof.''). Aarestrup har i øvrigt oversat selvsamme digt under titlen <xref poem="aarestrup2001061101"/>.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true">Cf. Bellmans <xref poem="bellman2001061382"/>.</note>
+    <note editorial="true">Både stemning og melodi er efter Carl Michaël Bellmans ,,Fredmans Epistel nr. 36'' (,,Vår Ulla låg i sängen och sof.''). Aarestrup har i øvrigt oversat selvsamme digt under titlen <xref poem="aarestrup2001061101"/>.</note>
   </notes>
   <source pages="145-152"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4202,7 +4202,7 @@ Saa, din Kjeltring, kjør!
   <title>Dyrehaugen</title>
   <firstline>Slip mig, Drenge! I splitte mig Kjolen og Kraven!</firstline>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
   <source pages="153-159"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4608,7 +4608,7 @@ Og derfor egentlig et Fæ.
   <title>Brønden</title>
   <firstline>Som denne Brønd, den dybe</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1835.</note>
+    <note editorial="true">Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1835.</note>
   </notes>
   <source pages="171"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4643,7 +4643,7 @@ Svinder dit Billed ikke.
   <title>I en Landsbykirke</title>
   <firstline>Vi sad i Landsbykirken</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1837.</note>
+    <note editorial="true">Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1837.</note>
   </notes>
   <source pages="172-175"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4918,7 +4918,7 @@ Faldt, Engel, dig om Halsen!
   <title>Distraction</title>
   <firstline>Da Don Alonso fandt</firstline>
   <notes>
-    <note>Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1837.</note>
+    <note editorial="true">Tidligere trykt i <i>Nytaarsgave fra danske Digtere</i>, 1837.</note>
   </notes>
   <source pages="182-183"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4983,7 +4983,7 @@ Saa kan jeg ei fortælle.
   <title>Platanen</title>
   <firstline>Det Træ, som her mod Himlen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="184-185"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5043,7 +5043,7 @@ Og Dødens Slummer med dig!''
   <title>Den Sovende</title>
   <firstline>Karether rulled i Sandet</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="186"/>
   <keywords>balladestrofe</keywords>
@@ -5084,7 +5084,7 @@ De blændende Arme lagt.
   <title>En Soirée</title>
   <firstline>Med Hænderne paa Ryggen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="187-190"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6524,7 +6524,7 @@ Over det elskede Støv flyde den strømmende Graad.
   <title>Thorvaldsen</title>
   <firstline>Raab Hurra kun fra Øster og til Vester!</firstline>
   <notes>
-    <note>Fire sonnetter som er trykt i <i>Kjøbenhavnsposten</i>, 11. Oktober 1838.  En senere rettet renskrift af disse fire samt een ekstra tilføjet sonnet findes som <xref poem="aarestrup1838-56a3"/> i <i>Utrykte digte</i> (1838-56).</note>
+    <note editorial="true">Fire sonnetter som er trykt i <i>Kjøbenhavnsposten</i>, 11. Oktober 1838.  En senere rettet renskrift af disse fire samt een ekstra tilføjet sonnet findes som <xref poem="aarestrup1838-56a3"/> i <i>Utrykte digte</i> (1838-56).</note>
   </notes>
   <source pages="239-241"/>
   <keywords>lejlighedsdigtning,rom,thorvaldsen,sonnet</keywords>
@@ -6960,7 +6960,7 @@ Dine gode Engle, de døde!
     <event>1841-04-20</event>
   </dates>
   <notes>
-    <note>Biskop Rasmus Møller, 1763-1842, fader til <a person="moellerpm">Poul Martin Møller</a> og stedfader til <a person="winther">Christian Winther</a>.</note>
+    <note editorial="true">Biskop Rasmus Møller, 1763-1842, fader til <a person="moellerpm">Poul Martin Møller</a> og stedfader til <a person="winther">Christian Winther</a>.</note>
   </notes>
   <source pages="254-256"/>
   <quality>korrektur1,korrektur2</quality>
@@ -7213,7 +7213,7 @@ Der vaier Kongeflaget, der signes Eders Navn!
   <subtitle>(til Magister D. G. Monrad.)</subtitle>
   <firstline>Nattens Gudinde henad Himlen svæved</firstline>
   <notes>
-    <note>D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+    <note editorial="true">D. G. Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
   </notes>
   <source pages="263-265"/>
   <quality>korrektur1,korrektur2</quality>
@@ -7255,7 +7255,7 @@ Min Hilsen med! - Og medens Alle bæve,
 Han steg med Lyset op paa Bordets Skive,
 Og lod sin Haand henover Kalken svæve -
 
-<num>VIII</num>,,<w>Mene, mene, tekel, upharsin!</w>''<note>Se <xref bible="bibeldaniel05,25-28"/>.</note> vare
+<num>VIII</num>,,<w>Mene, mene, tekel, upharsin!</w>''<note editorial="true">Se <xref bible="bibeldaniel05,25-28"/>.</note> vare
 De Ord, som han paa Husets Dække tegned,
 Imedens om hans Knæ min Børneskare
 Og alt mit Tyende af Rædsel blegned.

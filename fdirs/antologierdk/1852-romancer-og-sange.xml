@@ -5,7 +5,7 @@
   <year>1852</year>
   <source><title>Romancer og Sange</title><editor>Musikforeningen</editor><place>København</place><publisher>C.C. Lose &amp; Delbanco</publisher><year>1852</year></source>
   <notes>
-    <note>Melodierne er komponeret af C.E.F. Weyse; sangteksterne har forskellige forfattere.</note>
+    <note editorial="true">Melodierne er komponeret af C.E.F. Weyse; sangteksterne har forskellige forfattere.</note>
   </notes>
 </workhead>
 <workbody>
@@ -15,8 +15,8 @@
   <title>Vise af Festen paa Kenilworth</title>
   <firstline>Brødre, meget langt herfra</firstline>
   <notes>
-    <note>Af en opera, baseret på Walter Scott</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Af en opera, baseret på Walter Scott</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -57,8 +57,8 @@ ligge skal saa langt herfra!
   <title>Romance af Festen paa Kenilworth</title>
   <firstline>Hyrden græsser sine Faar</firstline>
   <notes>
-    <note>Af en opera, baseret på Walter Scotts roman <i>Kenilworth</i> (1821).</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Af en opera, baseret på Walter Scotts roman <i>Kenilworth</i> (1821).</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -104,9 +104,9 @@ er det fagreste Træ i Lunden.
   <subtitle>Efter Schiller</subtitle>
   <firstline>Den mørke Nat forsvunden er</firstline>
   <notes>
-    <note>Nogen sådan morgensang findes ikke i Shakespeares <i>Macbeth.</i> Den er indlagt i Foersoms oversættelse i stedet for en komisk portnerscene som man fandt anstødelig, i Macbeth, II, 3: <b>MacDuff:</b> What three things does drink especially provoke? <b>Porter:</b> Marry, sir, nose-painting, sleep, and urine. Lechery, sir, it provokes, and unprovokes; it provokes the desire, but it takes away the performance [...]</note>
-    <note>Oversættelse af Schillers <xref type="translation" poem="schiller2005060501"/>.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Nogen sådan morgensang findes ikke i Shakespeares <i>Macbeth.</i> Den er indlagt i Foersoms oversættelse i stedet for en komisk portnerscene som man fandt anstødelig, i Macbeth, II, 3: <b>MacDuff:</b> What three things does drink especially provoke? <b>Porter:</b> Marry, sir, nose-painting, sleep, and urine. Lechery, sir, it provokes, and unprovokes; it provokes the desire, but it takes away the performance [...]</note>
+    <note editorial="true">Oversættelse af Schillers <xref type="translation" poem="schiller2005060501"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -140,7 +140,7 @@ see op end i Guds Himle blaae!
   <firstline>Duftende Enge og kornrige Vange</firstline>
   <notes>
     <note>1819.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -180,10 +180,10 @@ Himlen velsigne vor Drot og vort Land!
   <title>Signelil</title>
   <firstline>Signelil sad i Kakkelovnskrog</firstline>
   <notes>
-    <note>Af Serverus S. (pseudonym)</note>
-    <note>Først trykt i <i>Hertha: En Samling af Digte.</i> Udgivet af Rasm. Nyerup, <year>1817</year>.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
-    <note>Iflg. <i>Danmarks Melodibog</i> (ca. 1903) findes strofe 4 også som: Døren gik op, og blodig og bleg / Ridderens Gjenfærd sig viste, / Stirred på Signelil, sukked og skreg: "Ak, hun til døde sig spiste! / Var det din Troskab, du falske Mø! / Burde du ikke af Kærlighed dø, / Som det var Skik udi Norden?" / Bleg sank han atter i Jorden.</note>
+    <note editorial="true">Af Serverus S. (pseudonym)</note>
+    <note editorial="true">Først trykt i <i>Hertha: En Samling af Digte.</i> Udgivet af Rasm. Nyerup, <year>1817</year>.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Iflg. <i>Danmarks Melodibog</i> (ca. 1903) findes strofe 4 også som: Døren gik op, og blodig og bleg / Ridderens Gjenfærd sig viste, / Stirred på Signelil, sukked og skreg: "Ak, hun til døde sig spiste! / Var det din Troskab, du falske Mø! / Burde du ikke af Kærlighed dø, / Som det var Skik udi Norden?" / Bleg sank han atter i Jorden.</note>
   </notes>
   <source/>
   <quality>korrektur1,kilde</quality>
@@ -219,7 +219,7 @@ Himmelen sig forbarme!
 
 Mod'ren af Skræk fik Apoplexie,
 livløs hun segned paa Tillie.
-Midnattens Maane gik Ruden forbi,<note>Parodierer Baggesens <xref poem="baggesen2002031404"/>.</note>
+Midnattens Maane gik Ruden forbi,<note editorial="true">Parodierer Baggesens <xref poem="baggesen2002031404"/>.</note>
 saae paa den stakkels Familie.
 Maanen vender sit Ansigt bort,
 Natten bliver nu ravnesort,

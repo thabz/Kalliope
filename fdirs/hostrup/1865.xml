@@ -4,9 +4,9 @@
   <title>Poetiske Skrifter</title>
   <year>1865</year>
   <notes>
-    <note>Kun afsnittet ,,Nyere Viser og Vers'' er gengivet her.</note>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er Oehlenschlägers egne.</note>
+    <note editorial="true">Kun afsnittet ,,Nyere Viser og Vers'' er gengivet her.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er Oehlenschlägers egne.</note>
   </notes>
   <pictures>
     <picture src="1865-p1.jpg">Titelbladet til <i>Poetiske Skrifter</i> (1865) lyder ,,Poetiske Skrifter / af / C. Hostrup. // Sjette Bind. // Feriegjæsterne. Dramatiske Smaating. Nyere Viser og Vers. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1865.''.</picture>
@@ -323,7 +323,7 @@ Skaal for Banden og dens Kaptajn
   <subtitle>Mel. Lær mig, o Skov, at visne glad</subtitle>
   <firstline>Var det et Hjerte sløvt og træt?</firstline>
   <notes>
-    <note>Frederik Kraft (1823-1854), dansk landsskabsmaler.</note>
+    <note editorial="true">Frederik Kraft (1823-1854), dansk landsskabsmaler.</note>
   </notes>
   <source pages="130"/>
   <quality>korrektur1,kilde,side</quality>
@@ -924,9 +924,9 @@ og end i femogtyve vær
   <toctitle><num>1.</num>O Silkeborg! i Rosenskjær</toctitle>
   <firstline>O Silkeborg! i Rosenskjær</firstline>
   <notes>
-    <note>Da Hostrup i 1856 kom til Silkeborg som præst, var byen på 1200 indbyggere. To år efter skrev han denne vise.</note>
-    <note type="credits">Bidrag fra Jørgen Poulsen.</note>
-    <note>Findes med titlen »Silkeborgs herlighed« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Da Hostrup i 1856 kom til Silkeborg som præst, var byen på 1200 indbyggere. To år efter skrev han denne vise.</note>
+    <note editorial="true" type="credits">Bidrag fra Jørgen Poulsen.</note>
+    <note editorial="true">Findes med titlen »Silkeborgs herlighed« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="145-146"/>
   <quality>korrektur1,kilde,side</quality>
@@ -988,7 +988,7 @@ Ja leve han, som har det bygt,
   <toctitle><num>2.</num>I Dødens Fred laa Silkeborg</toctitle>
   <firstline>I Dødens Fred laa Silkeborg</firstline>
   <notes>
-    <note>Findes med titlen »De første Silkeborgere« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »De første Silkeborgere« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="146-148"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1055,7 +1055,7 @@ vor Moder Eva ære.
   </subtitle>
   <firstline>Nys vi skued mellem Skov og Bakke</firstline>
   <notes>
-    <note>Hjælp Kalliope. Mail venligst til jesper@kalliope.org, hvis du har en anden kilde til dette digt, hvor linjerne 23 og 25 kan læses.</note>
+    <note editorial="true">Hjælp Kalliope. Mail venligst til jesper@kalliope.org, hvis du har en anden kilde til dette digt, hvor linjerne 23 og 25 kan læses.</note>
   </notes>
   <source pages="148-149"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1086,10 +1086,10 @@ Travle Jyder, sværmende Studenter,
 kan de søbe ret af samme Fad?
 - Kjære Fugle, som saa liflig sjunge,
 husk, I gjæste Danmarks yngste By!
-?? der er ?? nok ?? en vi er unge,<note>Denne linje er i kilden desværre ulæseligt.</note>
+?? der er ?? nok ?? en vi er unge,<note editorial="true">Denne linje er i kilden desværre ulæseligt.</note>
 ogsaa vi os svinge kan mod Sky.
 
-?? vor Ungdom jordedes paa Heden,<note>Denne linje er i kilden desværre også ulæseligt.</note>
+?? vor Ungdom jordedes paa Heden,<note editorial="true">Denne linje er i kilden desværre også ulæseligt.</note>
 i vort Bryst vi hegned den et Sted,
 nu den stiger syngende af Reden,
 vil I flyve? - Godt! vi flyve med.
@@ -1123,7 +1123,7 @@ glad i den skal unge Hjerter slaae!
   <toctitle><num>1.</num>Til Kong Frederik den Syvende</toctitle>
   <firstline>Den lille By, som paa dit Tog</firstline>
   <notes>
-    <note>Findes med titlen »Til Kong Frederik den syvende« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Til Kong Frederik den syvende« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="150-151"/>
   <keywords>frederik7</keywords>
@@ -1177,7 +1177,7 @@ og gjæsted ham i Sandet!
   <toctitle><num>2.</num>Paa Himmelbjerget 1861</toctitle>
   <firstline>Du, som bytted Nattergalen</firstline>
   <notes>
-    <note>Findes med titlen »Kong Frederik på Himmelbjærget« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Kong Frederik på Himmelbjærget« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="151-152"/>
   <keywords>frederik7</keywords>
@@ -1315,7 +1315,7 @@ som har Herren kjær.
   <toctitle><num>1.</num>See, hvor Sejling Præstegaard</toctitle>
   <firstline>See, hvor Sejling Præstegaard</firstline>
   <notes>
-    <note>Findes med titlen »Præsten i Sejling« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Præsten i Sejling« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="154-155"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1377,8 +1377,8 @@ leve Lyset, leve Fruen!
   <toctitle><num>2.</num>Skat Rørdam sidder i Bure</toctitle>
   <firstline>Skat Rørdam sidder i Bure</firstline>
   <notes>
-    <note>Cf. folkevisen <xref poem="svend-vonved"/>.</note>
-    <note>Findes med titlen »Skat Rørdams bryllup« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Cf. folkevisen <xref poem="svend-vonved"/>.</note>
+    <note editorial="true">Findes med titlen »Skat Rørdams bryllup« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="156-157"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1449,7 +1449,7 @@ saa lang og livsalig er Sommerens Vej.
   <toctitle><num>3.</num>De Piger gaaer og synge</toctitle>
   <firstline>De Piger gaaer og synge</firstline>
   <notes>
-    <note>Findes med titlen »Gildet på Øland« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Gildet på Øland« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="157-160"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1541,7 +1541,7 @@ Gud glæde dem, de unge To!
   <firstline>Paa Green sig gynged Fuglen let</firstline>
   <notes>
     <note>* Brudgommen var Lærer ved en Bonde-Højskole.</note>
-    <note>Findes med titlen »Ungersvenden og fuglen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Ungersvenden og fuglen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="160-162"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1594,7 +1594,7 @@ Og hør, du lille favre Fugl!
   flyv med til Hytten god,
 du vække der med Frydesang
   Smaablomster for min Fod,
-du som kvidrede saa frydelig.<note>frydelig.] frydelig</note>
+du som kvidrede saa frydelig.<note editorial="true">frydelig.] frydelig</note>
 
 Du synge Guds den klare Sol
   til Ungersvendens Vraa,
@@ -1630,8 +1630,8 @@ den som kvidrede saa frydelig.
   <toctitle><num>5.</num>Skjøn Jomfru ganger i Løvets Skjul</toctitle>
   <firstline>Skjøn Jomfru ganger i Løvets Skjul</firstline>
   <notes>
-    <note>Melodi som folkevisen <xref poem="folke2000012902"/>.</note>
-    <note>Findes med titlen »Ved et norsk-dansk bryllup« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Melodi som folkevisen <xref poem="folke2000012902"/>.</note>
+    <note editorial="true">Findes med titlen »Ved et norsk-dansk bryllup« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="162-165"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1640,7 +1640,7 @@ den som kvidrede saa frydelig.
 <poetry>
     Skjøn Jomfru ganger i Løvets Skjul,
         Bøgen staaer dejlig og grøn,
-    hun synger omkap med den glade Fugl.<note>hun] un</note>
+    hun synger omkap med den glade Fugl.<note editorial="true">hun] un</note>
 Den Sommer og den Mø saa vel kunne sammen.
 
     Skjøn Jomfru standser paa hviden Sand,
@@ -1864,7 +1864,7 @@ kan aande dig din Sang tilbage!
   <toctitle><num>1.</num>Paa Himmelbjerget 1862</toctitle>
   <firstline>O Danmark, med din Blomsterkyst</firstline>
   <notes>
-    <note>Findes med titlen »Danmarks værn« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Danmarks værn« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="169-170"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1921,7 +1921,7 @@ Selv kæmpe de Danske for Danmark.
   <toctitle><num>2.</num>I Frederiksborg 1863</toctitle>
   <firstline>Du Havfrue fiin, som paa Bølgen klar</firstline>
   <notes>
-    <note>Findes med titlen »Den tyske kærlighed« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Den tyske kærlighed« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="170-171"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2087,7 +2087,7 @@ og dybt han sukked til Livets Drot:
     ,,Nu, Herre! jeg din vil blive.
 O giv mig blot hvad de Ringeste faae;
 ja, Herre! lad kun mit Værk forgaae,
-    men hold du mig<note>mig] mi</note> selv i Live.''
+    men hold du mig<note editorial="true">mig] mi</note> selv i Live.''
 
 Ej Sangen meer fra hans Læbe lød,
     bort Tryllesynet var faret;
@@ -2287,7 +2287,7 @@ og Sværdet har sjunget en trøstelig Sang
   </subtitle>
   <firstline>Af Sorg os Hjertet bæver</firstline>
   <notes>
-    <note>Rasmus Secher Malthe (1829-1893), dansk billedhugger.</note>
+    <note editorial="true">Rasmus Secher Malthe (1829-1893), dansk billedhugger.</note>
   </notes>
   <source pages="180-181"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2487,9 +2487,9 @@ thi du der bag var vor egen Drot
     <event>1864-06-05</event>
   </dates>
   <notes>
-    <note>Den 18. april 1864 stormede preusserne Dybbøl Skanser, og med 4800 dræbte, sårede og fanger opgav Danmark videre at forsvare skanserne. For at mindes stemningen skrev Hostrup en sang.</note>
-    <note>Cf. Laurids Koks <xref poem="kok1999030201"/>.</note>
-    <note type="credits">Bidrag fra Jørgen Poulsen.</note>
+    <note editorial="true">Den 18. april 1864 stormede preusserne Dybbøl Skanser, og med 4800 dræbte, sårede og fanger opgav Danmark videre at forsvare skanserne. For at mindes stemningen skrev Hostrup en sang.</note>
+    <note editorial="true">Cf. Laurids Koks <xref poem="kok1999030201"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Jørgen Poulsen.</note>
   </notes>
   <source pages="185-186"/>
   <quality>korrektur1,kilde,side</quality>

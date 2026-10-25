@@ -29,8 +29,8 @@
   <title>Min søde Jomfrue Oxenbøll</title>
   <firstline>Min søde Jomfrue Oxenbøll!</firstline>
   <notes>
-    <note>1778. Manuskript i NkS 2632, 4°, Kgl. Bibl. - Citeret i L. L. Albertsen, <i>Immanuel,</i> 1991, p.27.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">1778. Manuskript i NkS 2632, 4°, Kgl. Bibl. - Citeret i L. L. Albertsen, <i>Immanuel,</i> 1991, p.27.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="27">
     <author>Leif Ludwig Albertsen</author>
@@ -70,7 +70,7 @@ Og altsaa Billioner Tak!
   <title>Det fortvivlede Mord</title>
   <firstline>Hvad Ondt kan Spil dog ikke foraarsage!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <source>Jens Baggesen: <i>Komiske Fortællinger og Æventyr</i>, bd. I, udgivet af E. Rørdam, Wilhelm Priors Hofboghandel, København, 1899.</source>
   <quality>korrektur1,kilde</quality>
@@ -197,7 +197,7 @@ Min Læser! da gaa bort - og gjør som han.
   </subtitle>
   <firstline>Nu ligger han da død, begravet</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -458,7 +458,7 @@ Og som jer Medynk hielpe kan!
   <title>Til General-Krigscommissair Astrup</title>
   <firstline>Tak, kiære Ven! for Bladet du mig sendte</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -695,7 +695,7 @@ Hver Fødselsdag i Spøg kan skiænke dig!
   <firstline>Jeg troede Rygtet ei, der spredte sig</firstline>
   <notes>
     <note>*) I Anledning af, hvad han veed nok selv, Aftenen d. 5te Februar efter hans saakaldte Triumf.</note>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <keywords>oehlenschlaeger</keywords>
   <quality>korrektur1</quality>
@@ -874,7 +874,8 @@ Smile Kunstneren Løn; savnes og selv de Faa,
   <title>Kritikens Smil</title>
   <firstline>Parnassets Maske-Fæe</firstline>
   <notes>
-    <note>* I Anledning af de sidste anonyme, pseudonyme, og kakonyme Galde-Forsøg i et vist guult Maanedskrift. [dvs. <i>Athene</i>].</note>
+    <note>* I Anledning af de sidste anonyme, pseudonyme, og kakonyme Galde-Forsøg i et vist guult Maanedskrift.</note>
+    <note editorial="true"> [dvs. <i>Athene</i>].</note>
   </notes>
   <pictures>
     <picture src="baggesen2003021201-p1.jpg">Faksimile af digtet, side 1/2.</picture>
@@ -886,7 +887,7 @@ Smile Kunstneren Løn; savnes og selv de Faa,
 <body>
 <poetry>
 Parnassets Maske-Fæe
-Saa længe raabte Bæ<note>Alluderer til Wessels fortælling <xref poem="wessel2002092101"/>.</note>
+Saa længe raabte Bæ<note editorial="true">Alluderer til Wessels fortælling <xref poem="wessel2002092101"/>.</note>
     Til Reglerne,
 At Phøbus sendte vred
 En skiemtsom Muse ned
@@ -1338,7 +1339,7 @@ Skal Veemods vakte Skiald <i>lydt</i> reise Dig et Minde
   <title>Til min dyrebare Datter Frederike fød Balle</title>
   <firstline>Aaret før den hulde døde</firstline>
   <notes>
-    <note>Dedikation i et eksemplar af Baggesens <i>Ungdomsarbeider</i> (1791), citeret i K.F. Plesners <i>Baggesen-Bibliografi</i>, Kbh. 1943, side 72. En anden dedikation i samme eksemplar, ,,Til min dyrebare Kone Sophie fød Haller'' dateret ,,D. 1<sup>te</sup> Jan. 1798 ~'' citerer sidste strofe af <xref poem="baggesen2002092804"/>.</note>
+    <note editorial="true">Dedikation i et eksemplar af Baggesens <i>Ungdomsarbeider</i> (1791), citeret i K.F. Plesners <i>Baggesen-Bibliografi</i>, Kbh. 1943, side 72. En anden dedikation i samme eksemplar, ,,Til min dyrebare Kone Sophie fød Haller'' dateret ,,D. 1<sup>te</sup> Jan. 1798 ~'' citerer sidste strofe af <xref poem="baggesen2002092804"/>.</note>
   </notes>
   <source pages="72">
     <author>K. F. Plesner</author>

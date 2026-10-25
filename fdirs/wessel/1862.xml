@@ -4,8 +4,8 @@
   <title>Samlede Digte</title>
   <year>1862</year>
   <notes>
-    <note>Noter med foranstillet asterisk * er digteren eller udgiverens egne.</note>
-    <note type="credits">Bidrag fra Brian Bentsen, hvor andet ikke er angivet.</note>
+    <note editorial="true">Noter med foranstillet asterisk * er digteren eller udgiverens egne.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen, hvor andet ikke er angivet.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1862-p1.jpg"><transcription>J. H. Wessels / samlede Digte. // Udgivne af J. Levin. // Med Digterens Portrait og Facsimile. // Kjøbenhavn. / C. A. Reitzels Forlag. / Thieles Bogtrykkeri. / 1862.</transcription></picture>
@@ -40,8 +40,8 @@
   <title>Gaffelen</title>
   <firstline>Jeg synger om, dog nei; jeg ligefrem fortæller</firstline>
   <notes>
-    <note>Det franske stykke i P.L. Møllers oversættelse: Den Kaal en Smag jo har fast som et Vomitiv, / Jeg seer ei, hvor ved den man holde kan sit Liv. / Ja, sagde Jupiter, i Gudesuppens Sted / Er Kaalen vistnok slet; - for Velanstændighed, / Min Søn, af denne Kaal dog lidt man nyde maa. / Men apropos, hvad skal i Hast jeg hitte paa, / For disse brave Folk at lønne med Honneur? / Hvis ellers saadan Kaal fortjener en Douceur? / Saa svarede Mercur: du kan jo spørge dem, / Og naadigst lade dem med Ønsker komme frem.</note>
-    <note><i>Gaffelen</i> blev trykt første gang i <i>Viborger Samler</i> 1781 og anden gang i <i>Allehaande</i> 1781.</note>
+    <note editorial="true">Det franske stykke i P.L. Møllers oversættelse: Den Kaal en Smag jo har fast som et Vomitiv, / Jeg seer ei, hvor ved den man holde kan sit Liv. / Ja, sagde Jupiter, i Gudesuppens Sted / Er Kaalen vistnok slet; - for Velanstændighed, / Min Søn, af denne Kaal dog lidt man nyde maa. / Men apropos, hvad skal i Hast jeg hitte paa, / For disse brave Folk at lønne med Honneur? / Hvis ellers saadan Kaal fortjener en Douceur? / Saa svarede Mercur: du kan jo spørge dem, / Og naadigst lade dem med Ønsker komme frem.</note>
+    <note editorial="true"><i>Gaffelen</i> blev trykt første gang i <i>Viborger Samler</i> 1781 og anden gang i <i>Allehaande</i> 1781.</note>
   </notes>
   <source pages="75-78"/>
   <keywords>aleksandrin</keywords>
@@ -65,7 +65,7 @@ For en Forandrings Skyld og Tanker at forslaae,
 At foretage sig en Lysttour ned til Jorden,
 Hvor Majestæterne fandt alting saa i Orden,
 At Jupiter tilsidst brød ud i disse Ord:
-,,Hr. Pope har sagt sandt: det er den bedste Jord.''<note>Jupiter har læst Alexander Popes <i>Essay on Man</i>, et filosofisk læredigt  der demonstrerer at verdensordenen er den bedst mulige (,,Whatever <i>is</i>, is <i>Right</i>'') og at menneskets begrænsede erkendelsesmæssige formåen og almindelige dårskab forhindrer os i at indse det.</note>
+,,Hr. Pope har sagt sandt: det er den bedste Jord.''<note editorial="true">Jupiter har læst Alexander Popes <i>Essay on Man</i>, et filosofisk læredigt  der demonstrerer at verdensordenen er den bedst mulige (,,Whatever <i>is</i>, is <i>Right</i>'') og at menneskets begrænsede erkendelsesmæssige formåen og almindelige dårskab forhindrer os i at indse det.</note>
 Han sagde vistnok meer, men til den største Skade
 For Læseren, for mig, for Jordens Overflade,
 Er denne liden Stump deraf kun bleven giemt,
@@ -222,7 +222,7 @@ At ikke skaffe Næsten Barn,
   <title>Hundemordet</title>
   <firstline>At Mennesker af Dyr saa tidt</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="80-83"/>
   <quality>korrektur1,kilde,side</quality>
@@ -396,7 +396,7 @@ Fra Posten hans.
   <title>Det Stiaalne Taft</title>
   <firstline>En vittig Kræmmer fik engang en Kunde</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="86-88"/>
   <quality>korrektur1,kilde,side</quality>
@@ -582,7 +582,7 @@ De passer jo ei mine Hænder.''
   <subtitle>Non est in Medico, semper relevetur ut æger</subtitle>
   <firstline>Den, som Naturen holde vil i Live</firstline>
   <notes>
-    <note>Det latinske citat er fra Ovids <xref poem="ovid2026083021,17"/> og betyder: Det står ikke i lægens magt at helbrede enhver syg.</note>
+    <note editorial="true">Det latinske citat er fra Ovids <xref poem="ovid2026083021,17"/> og betyder: Det står ikke i lægens magt at helbrede enhver syg.</note>
   </notes>
   <source pages="91-95"/>
   <quality>korrektur1,kilde,side</quality>
@@ -711,7 +711,7 @@ Jeg ingen mere sund og ingen bedre veed.
   <title>Posthuuset</title>
   <firstline>Man har Beviis nok paa</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="95-100"/>
   <quality>korrektur1,kilde,side</quality>
@@ -772,7 +772,7 @@ Hvad, i min Tieneste, I har at giøre.'' -
 ,,Min Mad slap mig paa Reisen lidt for Tiden.
 Maae a æ Frokost faae, den være nok saa liden?'' -
 ,,Den faaer I nok dernede,
-Kun ubekymret vær.'' -<note>vær.''] vær''</note>
+Kun ubekymret vær.'' -<note editorial="true">vær.''] vær''</note>
 ,,Ah! Hosbond! Gud velsigne Jer!'' -
 Den sultne Jyde gik,
 Sin Mættelse til Fylde fik,
@@ -1069,7 +1069,7 @@ Naar du betaler vel.
   </subtitle>
   <firstline>Den kolde Statsmand troer</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="105-107"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1157,7 +1157,7 @@ Den Tigers Hierte har, som ei. undskylder det.
   </subtitle>
   <firstline>Rom blev ei bygget paa en Dag</firstline>
   <notes>
-    <note>Ovid-citatet er fra <xref poem="ovid2026083004,145-146"/> og betyder: Han løftede de af døden tyngede øjne.</note>
+    <note editorial="true">Ovid-citatet er fra <xref poem="ovid2026083004,145-146"/> og betyder: Han løftede de af døden tyngede øjne.</note>
   </notes>
   <source pages="108-110"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1470,7 +1470,7 @@ Han kom, det er en trolig Sag.
 De spiste lidt, de drak, og kyste.
 Snart ventet Paradisisk Lyst
 Som Ild i deres Øine lyste.
-For trangt for Elskov deres Bryst.<note>Levin har her: ,,For trangt for Kierlighed var deres Bryst.'' og bemærker: ,,Optaget efter Udgaven 1787 i Stedet for Wessels Ord: For trangt for Elskov deres Bryst.'' Han retter dog i senere udgaver tilbage til Wessels ord og sætter et ,,[var]'' ind efter ,,Elskov''.</note>
+For trangt for Elskov deres Bryst.<note editorial="true">Levin har her: ,,For trangt for Kierlighed var deres Bryst.'' og bemærker: ,,Optaget efter Udgaven 1787 i Stedet for Wessels Ord: For trangt for Elskov deres Bryst.'' Han retter dog i senere udgaver tilbage til Wessels ord og sætter et ,,[var]'' ind efter ,,Elskov''.</note>
 Tilsidst den gamle fromme Moder
 Dem for sit Selskab giorde frie;
 Hun gik til Sengs mod Klokken Tie,
@@ -1583,7 +1583,7 @@ Som aldrig elsker uden Præst.
 
 
 <nonum><center><i>III</i></center></nonum>
-<nonum><center><small>Sunt in amore dolores.</small><note>På dansk: Der er smerter i kærligheden.</note></center></nonum>
+<nonum><center><small>Sunt in amore dolores.</small><note editorial="true">På dansk: Der er smerter i kærligheden.</note></center></nonum>
 
 Som sagt: den Herre skrev;
 Men Svaret udeblev.
@@ -1770,7 +1770,7 @@ Hun sagde tit, ,,fordi din Moder var et Skarn.''
 Hun mod sig selv var haard, som Pinitenter sømmer;
 Men, Læser! jeg saa strængt ei hende dømmer.
 Vide
-Vort Nummer femtens siette Side.<note>Omtrent l. 27ff.</note>
+Vort Nummer femtens siette Side.<note editorial="true">Omtrent l. 27ff.</note>
 Den Søn var nu alt tretten Aar,
 Og lignede sin Fader paa et Haar.
 Hvem Drængens Fader var, behøves ei at sige.
@@ -1994,7 +1994,7 @@ Hvad Alexander voved' før!
 <poetry>
 En fornem Herre, from, men ikke super-klog,
 Til Tiener fik et stakkels Fiog.
-De andre Herrens Dommerstikker<note>Senere udgaver har ,,Domestikker''.</note>
+De andre Herrens Dommerstikker<note editorial="true">Senere udgaver har ,,Domestikker''.</note>
 Strax mærke, at han dybt ei stikker,
 Og, gik i Huset noget galt,
 Paa Jørgen Skylden faldt.
@@ -2122,7 +2122,7 @@ Og saa afsiger denne Dom:
 For al Undskyldning læns,
 Og her for Retten selv bekiendte,
 Han Anders Pedersen til Evigheden sendte;
-Men da i vores Bye een Smed vi ikkun have,<note>een] en</note>
+Men da i vores Bye een Smed vi ikkun have,<note editorial="true">een] en</note>
 Jeg maatte være reent af Lave,
 Ifald jeg vilde see ham død.
 Men her er to, som bager Brød.''
@@ -2151,7 +2151,7 @@ Den kommer, naar du mindst den tænker nær.
   <subtitle>Effodiuntur opes, irritamenta malorum</subtitle>
   <firstline>Der var tre friske Fyrer</firstline>
   <notes>
-    <note>Mottoet betyder omtrent: Rigdomme graves op, lokker til forbrydelse.</note>
+    <note editorial="true">Mottoet betyder omtrent: Rigdomme graves op, lokker til forbrydelse.</note>
   </notes>
   <source pages="138-141"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2342,8 +2342,8 @@ End hvad du fordre vil for Dito til Bormester.
   <subtitle>Quæ quibus antiferam?</subtitle>
   <firstline>Hver Konstner har sit Sprog</firstline>
   <notes>
-    <note>Mottoet betyder: Hvad skal jeg foretrække for hvad?</note>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true">Mottoet betyder: Hvad skal jeg foretrække for hvad?</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="144-146"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2353,7 +2353,7 @@ End hvad du fordre vil for Dito til Bormester.
 Hver Konstner har sit Sprog,
 Hvorpaa Ukyndighed ei bliver klog.
 En Billedhugger og en Maler
-For Mængden tit det Labelænske taler;<note><i>Det Labelænske</i>, Norvagisme, Pluddervælsk, uforstaaeligt Sprog.</note>
+For Mængden tit det Labelænske taler;<note editorial="true"><i>Det Labelænske</i>, Norvagisme, Pluddervælsk, uforstaaeligt Sprog.</note>
 Og et Beviis derpaa
 Vi strax vil faae. -
 
@@ -2480,7 +2480,7 @@ De kom, og bankede paa Bentes Dør.
 ,,Vil han, min lille Faer! her uden for lidt vente,
 Imens jeg skal den gamles Svar indhente,
 Og Jomfruens, om hvad dem best anstaaer.''
-,,Ja gaae kun, Moer!'' var Drængens Svar.<note>kun] hun</note>
+,,Ja gaae kun, Moer!'' var Drængens Svar.<note editorial="true">kun] hun</note>
 Hun fra ham Tøiet taer,
 Og gaaer. Strax fik hun Bent i Tale,
 For hvilken hun med Graad begyndte at afmale,
@@ -2989,7 +2989,7 @@ Jeg gider ikke repetere.
   <title>Observationen</title>
   <firstline>Istemme Sørgetone</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="164-167"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3097,7 +3097,7 @@ Det snart forvandlet blev til: <i>vær saa god min Mand!</i>
   <firstline>En Jyde var</firstline>
   <!-- Ikke en variant af wessel1999100401: Citat eller genbrug i et andet digt, ikke en tekstvariant. -->
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="167-170"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3204,8 +3204,8 @@ Og med Rigsdalers Tab en kiøn jeg stod da nu.''
   <firstline>En Jyde var</firstline>
   <!-- Ikke en variant af wessel1999093001: Citat eller genbrug i et andet digt, ikke en tekstvariant. -->
   <notes>
-    <note>Titlen betyder: lykkelig er den, som andres farer gør forsigtig.</note>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true">Titlen betyder: lykkelig er den, som andres farer gør forsigtig.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="170-173"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3943,7 +3943,7 @@ Betalte Veddemaal, og gik ei glade bort.
   <title>Relata refero</title>
   <firstline>Den følgende Historie er sand</firstline>
   <notes>
-    <note>Titlen betyder: Jeg fortæller historien som jeg har hørt den.</note>
+    <note editorial="true">Titlen betyder: Jeg fortæller historien som jeg har hørt den.</note>
   </notes>
   <source pages="193-196"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4238,7 +4238,7 @@ Til Iis blev Vand igien.
   <title>Mosters Pølser</title>
   <firstline>Hvis den er sand, jeg sandt fortæller</firstline>
   <notes>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="202-204"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4404,7 +4404,7 @@ Hun Beileren nu gav sit Ja,
 Hvorpaa han svarte nei,
 Og gik sin Vei.
 
-Duo opposita, contra se posita, clarius iilucescunt.<note>På dansk: To modsatte, sat over for hinanden, lyser klart.</note>
+Duo opposita, contra se posita, clarius iilucescunt.<note editorial="true">På dansk: To modsatte, sat over for hinanden, lyser klart.</note>
 </poetry>
 </body>
 </text>
@@ -4415,7 +4415,7 @@ Duo opposita, contra se posita, clarius iilucescunt.<note>På dansk: To modsatte
   <subtitle>Impromtu</subtitle>
   <firstline>At gavne og fornøie</firstline>
   <notes>
-    <note>Titlen er et citat fra Horats' <xref poem="horats2026010401"/>: Den nåede det ypperste, der forenede det nyttige med det behagelige.</note>
+    <note editorial="true">Titlen er et citat fra Horats' <xref poem="horats2026010401"/>: Den nåede det ypperste, der forenede det nyttige med det behagelige.</note>
   </notes>
   <source pages="207-208"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4461,7 +4461,7 @@ Som man saa ofte seer.
   <subtitle>Impromtu for en Præmie i et Selskab</subtitle>
   <firstline>Jeg havde netop lært at gaae</firstline>
   <notes>
-    <note>Titlen betyder: Ingen regel uden undtagelse.</note>
+    <note editorial="true">Titlen betyder: Ingen regel uden undtagelse.</note>
   </notes>
   <source pages="209-210"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4549,7 +4549,7 @@ Hun sagde, ganske spodsk og suur:
   <firstline>Du, dobbelt skiøn, fordi jeg sov!</firstline>
   <notes>
     <note>* Dette Digt skulde have til Overskrift: <i>Ode</i>, som Digteren havde kaldt det.</note>
-    <note type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Hans Jørgen Jørgensen.</note>
   </notes>
   <source pages="213-218"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4621,7 +4621,7 @@ Som en uhældig Lue nærte,
 Og som forgiæves Suk fortærte,
 At gyde Lægedom og Trøst,
 
-    Hans Grumme skabes om i Hast,<note>Grumme] grumme</note>
+    Hans Grumme skabes om i Hast,<note editorial="true">Grumme] grumme</note>
 Hun med Citheres Smiil ham vinker,
 Og Ømhed i hver Mine blinker,
 Og Himlen i hvert Øiekast.
@@ -4720,7 +4720,7 @@ Mit Blod blev Iis! O! frels mig Gud!
   </subtitle>
   <firstline>Hvor! Damon, raaber Du</firstline>
   <notes>
-    <note>Mottoet fra 3. Bogs 16. Ode betyder omtrent: De, som stræber efter meget, savner meget. Glæde sig den, som Gud med nøjsom hånd gav, hvad tilstrækkeligt er.</note>
+    <note editorial="true">Mottoet fra 3. Bogs 16. Ode betyder omtrent: De, som stræber efter meget, savner meget. Glæde sig den, som Gud med nøjsom hånd gav, hvad tilstrækkeligt er.</note>
   </notes>
   <source pages="218-221"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5000,7 +5000,7 @@ Er: Vor Konge troe at være.
     <performed>1780-10-13</performed>
   </dates>
   <notes>
-    <note>Ifølge Frederik Schyberg: <i>Den store Teaterrejse</i> (1943) var alle de optrædende personer skuespillere på Det kongelige Teater: Frederik Schwarz (1753-1838); Birgitte Christine Winther (1751-1809); Catharine Møller (senere gift Frydendahl) (1760-1831); Inger Birgitte Aaslew (senere gift Clausen) (1762-1843); Iver Hesselberg Urberg (1744-1802); Nicolai Elsberg (1749-1802); Joachim Daniel Preisler (1755-1809); Søren Suhm (1742-83); Niels Hansen (1747-1828).</note>
+    <note editorial="true">Ifølge Frederik Schyberg: <i>Den store Teaterrejse</i> (1943) var alle de optrædende personer skuespillere på Det kongelige Teater: Frederik Schwarz (1753-1838); Birgitte Christine Winther (1751-1809); Catharine Møller (senere gift Frydendahl) (1760-1831); Inger Birgitte Aaslew (senere gift Clausen) (1762-1843); Iver Hesselberg Urberg (1744-1802); Nicolai Elsberg (1749-1802); Joachim Daniel Preisler (1755-1809); Søren Suhm (1742-83); Niels Hansen (1747-1828).</note>
   </notes>
   <source pages="227-233"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5298,7 +5298,7 @@ Velsignet være <i>Juliane!</i>
   <title>Til Hr. Jens Baggesen</title>
   <firstline>Ved Salig Rasmus Langeland</firstline>
   <notes>
-    <note><a poet="baggesen">Baggesen</a> føjede i sin udgave af Wessels digte følgende anmærkning til digtet: ,,Denne unge Versemagers Ubetydelighed havde vist ikke skaffet ham et Brev fra vor udødelige Wessel, og deri en Opmuntring af større Vægt, end alle Journalisters Roes, dersom ikke samme var blevet mishandlet af en ubeføiet Dommer. Maaskee min Sygdom i samme Tid, og øvrige, ikke meget lykkelige, Tilstand, har bidraget til en Compliment, som jeg slet ikke fortiener; thi vor Digters Hierte var ligesaa ualmindeligt som hans Hoved.''</note>
+    <note editorial="true"><a poet="baggesen">Baggesen</a> føjede i sin udgave af Wessels digte følgende anmærkning til digtet: ,,Denne unge Versemagers Ubetydelighed havde vist ikke skaffet ham et Brev fra vor udødelige Wessel, og deri en Opmuntring af større Vægt, end alle Journalisters Roes, dersom ikke samme var blevet mishandlet af en ubeføiet Dommer. Maaskee min Sygdom i samme Tid, og øvrige, ikke meget lykkelige, Tilstand, har bidraget til en Compliment, som jeg slet ikke fortiener; thi vor Digters Hierte var ligesaa ualmindeligt som hans Hoved.''</note>
   </notes>
   <source pages="235-236"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5321,7 +5321,7 @@ Da <i>Baggesen</i> gav ud sit Manifest.
 Thi, naar man tabe skal, at tabe uden Slag
 Er efter mine Tanker bedst.
 Rivalen er for stærk og jeg for svag,
-Han stiger i sin Flugt, jeg daler;<note>Allusion til <xref bible="bibeljohannes03,30"/>.</note>
+Han stiger i sin Flugt, jeg daler;<note editorial="true">Allusion til <xref bible="bibeljohannes03,30"/>.</note>
 Men dalende jeg har det Haab, den Trøst,
 At tit jeg læse skal hans Vers med Lyst.
 
@@ -5353,7 +5353,7 @@ Som, for du vittig var, i dig Misdæder fandt!
   <title>Brev</title>
   <firstline>Min kiære Hr. Svoger, velædle Student!</firstline>
   <notes>
-    <note>Digtet er udeladt i udgaven af 1901.</note>
+    <note editorial="true">Digtet er udeladt i udgaven af 1901.</note>
   </notes>
   <source pages="237"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5426,7 +5426,7 @@ Medynksom slænger han sin Bog,
 Og siger haant: det stakkels Drog
     Har svedet nok for de Fadaiser.
 
-Vi svede ei, Hr. Holck og jeg;<note>Hans Holck, se note til <xref poem="wesselsmaaversc2"/>.</note>
+Vi svede ei, Hr. Holck og jeg;<note editorial="true">Hans Holck, se note til <xref poem="wesselsmaaversc2"/>.</note>
 Sandt nok, paa vores jevne Vei
     Vi kan imellem ennuyere;
 Men det slet intet koster ham,
@@ -5517,7 +5517,7 @@ Maae naae fortiente varigt Held!
   <title>Geburtsdags-Carmen</title>
   <firstline>Siig, svøbt i sorte Stormsky'r, Tordnens Gud!</firstline>
   <notes>
-    <note>Digtet er udeladt i udgaven af 1901.</note>
+    <note editorial="true">Digtet er udeladt i udgaven af 1901.</note>
   </notes>
   <source pages="241-242"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5663,7 +5663,7 @@ Naar det Helveds Ønske kroner.
   <title>Om en Jødepige</title>
   <firstline>Jeg synger, som jeg kan, om en ebraisk Skiønhed</firstline>
   <notes>
-    <note>Josias Leopold Bynch (1747-1779) var en af Wessel bekendt smudsforfatter.</note>
+    <note editorial="true">Josias Leopold Bynch (1747-1779) var en af Wessel bekendt smudsforfatter.</note>
   </notes>
   <source pages="245-246"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5722,7 +5722,7 @@ At hun mig ikke meer skal Hemistichen skiænde. - - -
   <title>Vaaren</title>
   <firstline>Fast hele Jordens Kreds udraaber Vaarens Pragt</firstline>
   <notes>
-    <note>Parodierer bla. Tullins <xref poem="tullinandrea1"/>.</note>
+    <note editorial="true">Parodierer bla. Tullins <xref poem="tullinandrea1"/>.</note>
   </notes>
   <source pages="247-248"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6255,7 +6255,7 @@ Med Glæde jeg igien skal see
     <event>1782-02-23</event>
   </dates>
   <notes>
-    <note>,,Paa Sammes'', dvs. på hustruens fødselsdag, jvf. forrige digt i samlingen. Jonas er digterens søn (blåøjet, forældrene havde begge brune øjne).</note>
+    <note editorial="true">,,Paa Sammes'', dvs. på hustruens fødselsdag, jvf. forrige digt i samlingen. Jonas er digterens søn (blåøjet, forældrene havde begge brune øjne).</note>
   </notes>
   <source pages="260"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6474,7 +6474,7 @@ Aldrig kunne Venskab holde.
   <title>Ligeledes</title>
   <firstline>Tør jeg besvære Aftenposten</firstline>
   <notes>
-    <note>,,Ligeledes'', dvs. som forrige digt i samlingen indrykket i Aftenposten</note>
+    <note editorial="true">,,Ligeledes'', dvs. som forrige digt i samlingen indrykket i Aftenposten</note>
   </notes>
   <source pages="263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6498,7 +6498,7 @@ Hr. Medicus! Løgn i jer Hals!
   <title>Til Agent Holck</title>
   <firstline>Agent Holck</firstline>
   <notes>
-    <note>Hans Holck (1726-83), foretagsom filantrop og skribent, udgav <i>Kiøbenhavns Aften-Post</i> fra 1772 (bladet, som i daglig tale kaldtes <i>Aftenposten,</i> ophørte først i 1810). ,,Agent'' var en titel som tildeltes større handelsmænd.</note>
+    <note editorial="true">Hans Holck (1726-83), foretagsom filantrop og skribent, udgav <i>Kiøbenhavns Aften-Post</i> fra 1772 (bladet, som i daglig tale kaldtes <i>Aftenposten,</i> ophørte først i 1810). ,,Agent'' var en titel som tildeltes større handelsmænd.</note>
   </notes>
   <source pages="264"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6909,7 +6909,7 @@ Jeg offrer dig alt mit og - lidt af andres til.
   <title>Caspar Wessel</title>
   <firstline>Han tegner Landkort og læser Loven</firstline>
   <notes>
-    <note>Caspar Wessel er digterens bror og han huskes i matematikken som den første der afbildede de komplekse tal i en plan (opdaget i 1797 og trykt i 1799).</note>
+    <note editorial="true">Caspar Wessel er digterens bror og han huskes i matematikken som den første der afbildede de komplekse tal i en plan (opdaget i 1797 og trykt i 1799).</note>
   </notes>
   <source pages="270"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6952,7 +6952,7 @@ Conferenceraaden beholder dog sin Smag.
   <title>Til Viintapper Lunds Svend</title>
   <firstline>Hør du søde rare Fyr</firstline>
   <notes>
-    <note>Jvf. næste digt i samlingen.</note>
+    <note editorial="true">Jvf. næste digt i samlingen.</note>
   </notes>
   <source pages="271"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6974,7 +6974,7 @@ Og jeg kun den ene har.
   <title>Svar i Svendens Navn</title>
   <firstline>Søde rare Wessel, Faer</firstline>
   <notes>
-    <note>Svarer forrige digt i samlingen.</note>
+    <note editorial="true">Svarer forrige digt i samlingen.</note>
   </notes>
   <source pages="271"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7104,7 +7104,7 @@ Og det var Alt.
   <title>Under Londemanns Portrait</title>
   <firstline>Man sukker, for han er ei meer</firstline>
   <notes>
-    <note>Skrevet 1784 om den store skuespiller Geert Londemann (bl.a. Holberg-roller), død 1773.</note>
+    <note editorial="true">Skrevet 1784 om den store skuespiller Geert Londemann (bl.a. Holberg-roller), død 1773.</note>
   </notes>
   <source pages="273"/>
   <keywords>gravskrift</keywords>

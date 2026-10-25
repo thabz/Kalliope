@@ -4,8 +4,8 @@
   <title>Nytaarsgave for 1815</title>
   <year>1815</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Noter med en foranstillet asterisk er digterens egne.</note>
   </notes>
   <pictures>
     <picture src="1815-p1.jpg">Første titelblad lyder ,,Nytaarsgave / for 1815. // En Samling af Digte / af / R. Frankenau / Dr. Med. // Kiøbenhavn. / Forlagt af Fr. Brummer. / Trykt hos C. Græbe.''</picture>
@@ -409,7 +409,7 @@ Alt forandres, Muldrer, og forgaaer!''
 Der hvor under blanke Marmorbuer
 Kongers Konges Lovsang vældig lød,
 der hvor svøbt i Glands af Guldets Luer
-<w>Krucks</w> forvovne Pensel Skræk indgiød<note>Cancellieraad <w>Kruck</w> havde i den afbrændte Slotskirke, malet en Scene forstillende den i Bibelen saa kaldede <w>Dommedag</w>, hvor Helvedes Luer vare saaledes fremstillede, at man for frugtsommelige Koners Skyld, maatte lade trække et Dække derover.<br/><right><w>S. Pontoppidans Atlas.</w></right></note>,
+<w>Krucks</w> forvovne Pensel Skræk indgiød<note editorial="true">Cancellieraad <w>Kruck</w> havde i den afbrændte Slotskirke, malet en Scene forstillende den i Bibelen saa kaldede <w>Dommedag</w>, hvor Helvedes Luer vare saaledes fremstillede, at man for frugtsommelige Koners Skyld, maatte lade trække et Dække derover.<br/><right><w>S. Pontoppidans Atlas.</w></right></note>,
 der en Taare sig af Øiet stiæler
 naar for hine grædske Capitæler
 Konstens varme Elsker frygtsom seer
@@ -611,8 +611,8 @@ dit, og dine Rosers Muld!
   <subtitle>(efter Göthe)</subtitle>
   <firstline>Veed du den Zone, hvor Citronen groer?</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref poem="goethe2001111901" type="translation" />.</note>
-    <note type="credits">Bidrag fra Margit Ammentorp</note>
+    <note editorial="true">Gendigtning af Goethes <xref poem="goethe2001111901" type="translation" />.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp</note>
   </notes>
   <source pages="30-32"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1195,7 +1195,7 @@ og høit til Glædens Priis min Harpe slaae. -
   <subtitle>1798</subtitle>
   <firstline>Jeg veed en Blomst i Floras Have</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="60-61"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1215,7 +1215,7 @@ Den ei som Hyacinten falder,
 af Rosens Død den intet veed.
 Den trodser Undergang og Alder
 i Evighed.
-Naar<note>Naar] naar</note> Haanden som dig rækked’ den
+Naar<note editorial="true">Naar] naar</note> Haanden som dig rækked’ den
 i Graven visnet længe hviler,
 dens friske Krone evig smiler:
 glem ei din Ven!
@@ -1380,7 +1380,7 @@ og Sole og Planeter flye.
 </head>
 <body>
 <poetry>
-Elise! siig<note>siig] slig</note> hvor er hiint blide Smiil
+Elise! siig<note editorial="true">siig] slig</note> hvor er hiint blide Smiil
 hvormed hvert Hierte du forstod at bøie?
 siig, hvo har slukt den himmelskiønne Ild
 hvis Trylleglands fremstraaled' af dit Øie?
@@ -1531,7 +1531,7 @@ Amors underfulde Magt til Priis;
 Pige, derfor ei endnu du hørte
 mig at sukke ømt paa Elskerviis;
 dog - hvis een, som dine Ynder pryde
-mig et Smiil, et Haandtryk vilde yde<note>yde] ybe</note>,
+mig et Smiil, et Haandtryk vilde yde<note editorial="true">yde] ybe</note>,
 sikkert sang jeg da min Freds Forliis.
 </poetry>
 </body>
@@ -2076,7 +2076,7 @@ Dog Maanen høit paa Himlen blinker
 og snart skal Midnat slaae,
 og Natviolens Duft os vinker
 til Hvile hen at gaae.
-Sov<note>Sov] sov</note> født til næste Morgengry
+Sov<note editorial="true">Sov] sov</note> født til næste Morgengry
 og vaagn til Fryd paa ny!
 </poetry>
 </body>
@@ -2180,7 +2180,7 @@ som er mod al sin Skabning eiegod,
 og spørge der, om han som Livets Fader
 gav Loven Ret at fordre Død og Blod?
 omsonst med Blok og Øxe Loven truer Enhver
-enhver mod<note>mod? Kilden ulæselig</note> eget Foster væbnet Haand,
+enhver mod<note editorial="true">mod? Kilden ulæselig</note> eget Foster væbnet Haand,
 Fortvivlelsen for ingen Piinsel gruer,
 naar først den løser Moderhiertets Baand.
 Med meer end Bøddelsværdets Hvashed taler
@@ -2209,7 +2209,7 @@ jeg er for evig hos min Gud, og dig. -
   <subtitle>(efter v. Salis)</subtitle>
   <firstline>I yndig Dragt, saa hvidt og rødt</firstline>
   <notes>
-    <note>Oversættelse af Salis' <xref type="translation" poem="salis2018040301"/>.</note>
+    <note editorial="true">Oversættelse af Salis' <xref type="translation" poem="salis2018040301"/>.</note>
   </notes>
   <source pages="109-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2988,7 +2988,7 @@ vær hilset du yndede Vaar! -
   <subtitle>(efter Matthisson)</subtitle>
   <firstline>I Vesten Skyens Purpur taber sig</firstline>
   <notes>
-    <note>Oversættelse af Friedrich von Matthisson: <xref type="translation" poem="matthisson2019060401"/>.</note>
+    <note editorial="true">Oversættelse af Friedrich von Matthisson: <xref type="translation" poem="matthisson2019060401"/>.</note>
   </notes>
   <source pages="150-156"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3232,7 +3232,7 @@ skal giennemstrømme alle Zoner.
   <title>Til Venskab</title>
   <firstline>Smiil, Venskab! til vort Samfund ned</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="163-165"/>
   <keywords>drikkevise</keywords>
@@ -3506,7 +3506,7 @@ hvor de, mod Fienden staae!
   <subtitle>(efter Hølty)</subtitle>
   <firstline>Hvo vilde sig med Griller plage</firstline>
   <notes>
-    <note>Gendigtning af L. C. H. Hölty: <xref type="translation" poem="holty2018070701"/>.</note>
+    <note editorial="true">Gendigtning af L. C. H. Hölty: <xref type="translation" poem="holty2018070701"/>.</note>
   </notes>
   <source pages="176-177"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3655,7 +3655,7 @@ for evig der at nyde Dydens Løn.
   <firstline>Giennem Hedenfarne Aar tilbage</firstline>
   <notes>
     <note>* [<i>Kom</i>] En Stad i Persien.</note>
-    <note>Gendigtning af Johann Daniel: »Falk Die heiligen Gräber zu Kom«, Leipzig, 1796.</note>
+    <note editorial="true">Gendigtning af Johann Daniel: »Falk Die heiligen Gräber zu Kom«, Leipzig, 1796.</note>
     <!-- TODO: Find originalen -->
   </notes>
   <source pages="183-231"/>
@@ -3677,7 +3677,7 @@ Hæld Profeten! ton'd ham imøde,
 Hosianna! jubled' hvert et Land.
 Styrtet af <w>Jehovahs</w> Tordenstraale,
 <w>Lucifer</w> maae Havets Dybhed maale,
-først ved Bierget <w>Cabbes</w> landed han -<note>See Tyrkernes <w>Alkoran</w> (Bibel).</note>
+først ved Bierget <w>Cabbes</w> landed han -<note editorial="true">See Tyrkernes <w>Alkoran</w> (Bibel).</note>
 
 Haand i Haand de søgte <w>Kom</w> og knæled'
 og til Dagens Ende begge dvæled'
@@ -3791,7 +3791,7 @@ griber huld min Haand, ''Ved Zoroastes
 ''ryster nu, han seer Tyrannen segnet
 ''de forhadte Trældoms Lænker af.
 
-Sagte! hvisked jeg [???]<note>Kilden desværre ulæselig.<!-- TODO: Find ny kilde --></note> intet Øre
+Sagte! hvisked jeg [???]<note editorial="true">Kilden desværre ulæselig.<!-- TODO: Find ny kilde --></note> intet Øre
 maae, hvad mellem os vi tale, høre,
 seer du Folket, og hiin Dervischsværm;
 og han smiled': ''Os kan intet ramme
@@ -3807,7 +3807,7 @@ og han smiled': ''Os kan intet ramme
 
 Neppe <w>Mirzas</w> Tale var til Ende,
 see saa rasler der, sig begge vende,
-did hvorfra sig Larmen hør [???]<note>Kilden desværre ulæselig.<!-- TODO: Find ny kilde --></note>
+did hvorfra sig Larmen hør [???]<note editorial="true">Kilden desværre ulæselig.<!-- TODO: Find ny kilde --></note>
 og en Hund med hvide Løvelokker,
 og et Halsbaand tæt behængt med Klokker
 for de tvende Pilegrime stod.
@@ -4589,8 +4589,8 @@ evig Salighed din hulde Siæl! -
   <subtitle>(efter Hølty).</subtitle>
   <firstline>Dandser Majen skiøn imøde!</firstline>
   <notes>
-    <note>Fri gendigtning af Ludwig Christoph Heinrich Hölty: <xref type="translation" poem="holty2019060401"/>.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true">Fri gendigtning af Ludwig Christoph Heinrich Hölty: <xref type="translation" poem="holty2019060401"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="238-240"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4646,7 +4646,7 @@ mangen Blomst paa Eders Hat.
 <body>
 <poetry>
 Endnu et Qvad om dig du stolte Borg
-og<note>og] rg</note> siden intet Slag paa Harpen mere;
+og<note editorial="true">og] rg</note> siden intet Slag paa Harpen mere;
 af Jorden snart den vil forsvunden være,
 medtag til Afsked Siælens dybe Sorg. - -
 
@@ -5101,7 +5101,7 @@ Dit Navn til sildig Fremtid naae.
     <event>1805-05-09</event>
   </dates>
   <notes>
-    <note>Bernt Anker (1746-1805), norsk handelsmagnat.</note>
+    <note editorial="true">Bernt Anker (1746-1805), norsk handelsmagnat.</note>
   </notes>
   <source pages="263-264"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5225,7 +5225,7 @@ Det ønske vi.
 </head>
 <body>
 <poetry>
-Samles hid til Venskabs Kiæde<note>Kiæde] Kiæe</note>
+Samles hid til Venskabs Kiæde<note editorial="true">Kiæde] Kiæe</note>
 Hver som hylder tro vort Lag;
 Alle Hjerter aande Glæde
 Paa vort Samfunds første Dag!
@@ -5310,7 +5310,7 @@ Fra Læben, enig Jubel lyder,
 Den hulde Maane blid og klar
 Omstraaler hvert fortroligt Par.
 
-Den blide Sommers lyse Tide er<note>er] ee</note> omme,
+Den blide Sommers lyse Tide er<note editorial="true">er] ee</note> omme,
     Alt Aft'nen vorder mørk og lang;
 Saa vore Dages Høst vil komme,
     Og fordre streng vor Svanesang.
@@ -5410,8 +5410,8 @@ Og stemmer Alle, Alle i:
   <subtitle>Mel. Giver i Bollen og Glasset frembær.</subtitle>
   <firstline>Lystig min Broder! og lystig igien!</firstline>
   <notes>
-    <note>Ogsaa bekjendt under denne Begyndelse: Punktuli!  Punktuli! lystig min Ven</note>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Ogsaa bekjendt under denne Begyndelse: Punktuli!  Punktuli! lystig min Ven</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="277-279"/>
   <keywords>drikkevise</keywords>
@@ -5466,7 +5466,7 @@ Skaal hver, som klinker, og stemmer i med mig:
   <title>Trindt om os lyder englemild</title>
   <firstline>Trindt om os lyder englemild</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="279-281"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5509,7 +5509,7 @@ Før du fra Venskab, Kys, og Spøg maae døe!
   <title>Det skummende Bæger begynde sin Gang</title>
   <firstline>Det skummende Bæger begynde sin Gang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="281-282"/>
   <keywords>drikkevise</keywords>
@@ -5604,7 +5604,7 @@ Den hvide med den røde!
   <subtitle>Mel. Det skummende Bæger begynde etc.</subtitle>
   <firstline>Lad Mennesker dræbes, og Riger forgaae!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="285-287"/>
   <keywords>drikkevise</keywords>
@@ -5655,7 +5655,7 @@ Den frydløse Dag er for evig fortabt.
   <title>Langt meer end Guld er Druen værd</title>
   <firstline>Langt meer end Guld er Druen værd</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="287-288"/>
   <keywords>drikkevise</keywords>
@@ -5748,7 +5748,7 @@ Nag til Fryd kun Daaren har.
   <subtitle>Mel. Ich bin der Vogelfänger, ja.</subtitle>
   <firstline>Høit leve, hvo ved Bægerklang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="291-292"/>
   <keywords>drikkevise</keywords>
@@ -5769,7 +5769,7 @@ Høit leve, hvo i muntert Lag
 Til Maade alt giør med!
 Han end saa mangen lystig Dag
 Kan træde Glædens Fied.
-Thi række<note>række] rakke</note> Broder Brødre Haand
+Thi række<note editorial="true">række] rakke</note> Broder Brødre Haand
 At knytte Maadeligheds Baand!
 Ja leve, hvo i muntert Lag
 Til Maade alt giør med!
@@ -5824,7 +5824,7 @@ Den samme smiler aldrig meer.
   <title>Velkommen enhver, som har Druesaft kier!</title>
   <firstline>Velkommen Enhver, som har Druesaft kier!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="294-296"/>
   <keywords>drikkevise</keywords>
@@ -5886,7 +5886,7 @@ Gid immer, gid immer, gid immer saa var!
   </subtitle>
   <firstline>Snart er din Ungdomstid forsvunden</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="296-298"/>
   <keywords>drikkevise</keywords>
@@ -6100,7 +6100,7 @@ Dette Samfund varigt Held!
   <subtitle>Mel. Yndig og riig paa Fryd er Jorden</subtitle>
   <firstline>Timen til Fryd os atter kalder</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="306-308"/>
   <keywords>drikkevise</keywords>
@@ -6551,7 +6551,7 @@ Omslynget af en fræk Forførers Arme.
 
 En maaneklar og sværmersk Time var
 Den Talisman maaskee, som hende rørte;
-Saa mangt<note>mangt] mnngt</note> et Hierte Maanen daaret har,
+Saa mangt<note editorial="true">mangt] mnngt</note> et Hierte Maanen daaret har,
 O! spar ei Taaren over den Forførte! -
 
 Den saae saa mangen kiæk og kraftfuld Arm
@@ -6650,7 +6650,7 @@ O! denne Trøst er Salighed!
   <subtitle>(Efter det Tydske.)</subtitle>
   <firstline>Ei blot for denne Sorgens Dal</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="332-334"/>
   <!-- TODO: Find originalen -->
@@ -6818,7 +6818,7 @@ At vi uden Uroe, uden Klage,
   <title>Carl Frederik Dichmans Minde helliget</title>
   <firstline>Over mine trætte Øienlaage</firstline>
   <notes>
-    <note>Carl Frederik Dichman (1763-1806), lærer og sproglig forfatter.</note>
+    <note editorial="true">Carl Frederik Dichman (1763-1806), lærer og sproglig forfatter.</note>
   </notes>
   <source pages="339-341"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
