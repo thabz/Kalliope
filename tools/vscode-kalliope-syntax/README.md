@@ -44,7 +44,10 @@ Facsimilen åbnes i et panel ved siden af XML-editoren. Når panelet er åbent,
 opdateres det automatisk, når cursoren flyttes til en anden tekst. Panelet kan
 lukkes som en almindelig editorfane. Hver facsimileside skaleres efter panelets
 tilgængelige højde, så hele siden er synlig; tekster med flere sider kan rulles
-sidevis.
+sidevis. Brug −/+ i panelets top eller hold Alt nede og rul op/ned over
+facsimilen for at zoome ind/ud. Zoomniveauet går fra 50 % til 400 % og
+nulstilles til 100 %, når panelet skifter sider. Cursorbevægelser på samme side bevarer zoomniveauet.
+100 % viser hele siden som udgangspunkt.
 
 Extensionen finder siderne ud fra tekstens `<head><source>` og værkets
 `<workhead><source>`. Normalt beregnes facsimilesiden fra `pages` og
