@@ -8,7 +8,7 @@
     <picture src="1858-p1.jpg">Titelbladet til <i>Sang og Sagn</i> (1858) lyder ,,Sang og Sagn. // Af / Christian Winther. // Andet, forøgede Oplag. // Kjøbenhavn. / P. G. Philipsens Forlag. / Thieles Bogtrykkeri. / 1858.''.</picture>
   </pictures>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse. Noter med foranstillet asteriks er Winthers egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <source facsimile="115408015254_color" facsimile-pages-num="230" facsimile-pages-offset="14">Christian Winther: <i>Sang og Sagn</i>, 2. forøgede oplag, P.G. Philipsen, Kbh., 1858.</source>
 </workhead>
@@ -274,7 +274,7 @@ Hil være vor Mester! vor Stolthed i Nord!
   <subtitle>Ved et Bal i Studenterforeningen</subtitle>
   <firstline>For Skjønheds rige Blomsterflor</firstline>
   <notes>
-    <note>* Sangen er skrevet til Dandsemusik og blev, under selve Dandsen, udført af et Chor.</note>
+    <note>Sangen er skrevet til Dandsemusik og blev, under selve Dandsen, udført af et Chor.</note>
   </notes>
   <source pages="11-12"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1109,7 +1109,7 @@ Mig vinked Haabets Flag.
   <title>Serenade</title>
   <firstline>Hvor er Du, Camilla?</firstline>
   <notes>
-    <note>* ,,Denne røde Neglike eller Rose,'' - fortalte en ung Mand mig, - ,,som min Herre seer de unge Piger her i Carrara bære over det høire Øre mellem Lokkerne, have de faaet af deres Elskere.  Ved Processioner, Spadseregange eller andre Lejligheder, naar man tør nærme sig hinanden, rækker man sin Udvalgte Blomsten som en taus Erklæring.  Forærer hun den bort til een eller anden medfølgende Veninde, betyder det et Afslag; sættes den derimod paa sin Plads i Haaret, da er man lykkelig. Er der kommet en Kurre paa Traaden mellem et Par, saa sættes Blomsten i Beltet ved venstre Side, ved Hjertet; det betyder stor Sorg! Igaar Aftes, da jeg fulgte Dem, min Herre, omkring, forsømte jeg et Stævnemøde ved Processionen, og da jeg senere indfandt mig ved min Elskedes Vindue, kastede hun mig Rosen i Ansigtet.''</note>
+    <note>,,Denne røde Neglike eller Rose,'' - fortalte en ung Mand mig, - ,,som min Herre seer de unge Piger her i Carrara bære over det høire Øre mellem Lokkerne, have de faaet af deres Elskere.  Ved Processioner, Spadseregange eller andre Lejligheder, naar man tør nærme sig hinanden, rækker man sin Udvalgte Blomsten som en taus Erklæring.  Forærer hun den bort til een eller anden medfølgende Veninde, betyder det et Afslag; sættes den derimod paa sin Plads i Haaret, da er man lykkelig. Er der kommet en Kurre paa Traaden mellem et Par, saa sættes Blomsten i Beltet ved venstre Side, ved Hjertet; det betyder stor Sorg! Igaar Aftes, da jeg fulgte Dem, min Herre, omkring, forsømte jeg et Stævnemøde ved Processionen, og da jeg senere indfandt mig ved min Elskedes Vindue, kastede hun mig Rosen i Ansigtet.''</note>
   </notes>
   <source pages="44-47"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1195,7 +1195,7 @@ Den glimrer fra Grenen
   <subtitle>Efter Grimms Kinder- u. Hausmärchen</subtitle>
   <firstline>Engang i længst forsvunden Tid</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="48-61"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1245,7 +1245,7 @@ For Gjester af et saadant Slags!''
 Da vendte Gud ham Ryggen strax, -
 Og flyttede sin trætte Fod
 Til Hytten, som ved Veien stod.
-Dens Væg var Leer, dens Tag var Straa,<note>Citat fra Thaarups <xref poem="thaarup1999101801"/>.</note>
+Dens Væg var Leer, dens Tag var Straa,<note editorial="true">Citat fra Thaarups <xref poem="thaarup1999101801"/>.</note>
 Men Storkens Rede laae derpaa;
 Thi Storken vil saa gjerne boe,
 Hvor der er huuslig Fred og Ro.
@@ -1657,8 +1657,8 @@ Om ham og om hans Sang.
   <title>Sangerens Lykke</title>
   <firstline>Paa Montferrat i den gyldne Sal</firstline>
   <notes>
-    <note>* Fremsagt paa en Aftenunderholdning af kongl. Skuespillerinde, Madame <w>Nielsen.</w></note>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note>Fremsagt paa en Aftenunderholdning af kongl. Skuespillerinde, Madame <w>Nielsen.</w></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="66-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2061,7 +2061,7 @@ Fortøiet og vel tilhavns!
   <toctitle>Vikingen (oversat)</toctitle>
   <firstline>Kun femten Aar gammel, mig Stuen blev trang</firstline>
   <notes>
-    <note>Gendigtning af Erik Gustaf Geijer: <xref type="translation" poem="geijer2018081001"/>.</note>
+    <note editorial="true">Gendigtning af Erik Gustaf Geijer: <xref type="translation" poem="geijer2018081001"/>.</note>
   </notes>
   <source pages="82-87"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2215,7 +2215,7 @@ Men den Tappres Minde - skal stande.
   <toctitle>Vinteren i Norden (oversat)</toctitle>
   <firstline>Alt fra den Tid, naar Dagens Stjerne brænder</firstline>
   <notes>
-    <note>Gendigtning af Erik Johan Stagnelius: <xref type="translation" poem="stagnelius2018081001"/>.</note>
+    <note editorial="true">Gendigtning af Erik Johan Stagnelius: <xref type="translation" poem="stagnelius2018081001"/>.</note>
   </notes>
   <source pages="88-92"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2330,7 +2330,7 @@ Fremglimter du paa Tidens Strøm og - flyer.
   <toctitle>Til Fru K. M. Rahbek (oversat)</toctitle>
   <firstline>Naar fjernt min Fod en fremmed Jordbund trykker</firstline>
   <notes>
-    <note>* <w>Orellana</w> var Secretair ved den dengang herværende spanske Legation. Een af hans Forfædre fulgte Ferdinand Cortez paa hans eventyrlige Tog mod Mexiko.</note>
+    <note><w>Orellana</w> var Secretair ved den dengang herværende spanske Legation. Een af hans Forfædre fulgte Ferdinand Cortez paa hans eventyrlige Tog mod Mexiko.</note>
   </notes>
   <source pages="94"/>
   <keywords>rahbekk</keywords>
@@ -2366,8 +2366,8 @@ Et ærligt Hjerte, og min hulde, kloge Pige,
   <toctitle>Hankattens Frieri (oversat)</toctitle>
   <firstline>Hør nu, hvordan Hankatten, ført ved Rævens List</firstline>
   <notes>
-    <note>* af ,,Brahmanische Erzählungen'' [af Fr. Rückert.]</note>
-    <note>Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2018101101"/>.</note>
+    <note>af ,,Brahmanische Erzählungen'' [af Fr. Rückert.]</note>
+    <note editorial="true">Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2018101101"/>.</note>
   </notes>
   <source pages="94-96"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2436,8 +2436,8 @@ Er altsaa dog, at jeg maa Kattens Datter fæste.
   <title>En Novelle</title>
   <firstline>Et Helved lued i mit Bryst</firstline>
   <notes>
-    <note>* Midt i en Skov i Sjælland - fortælles der - ligger et Huus saa eensomt og afsides, at dets Beboere slet intet erfarede om Fjendens Ankomst og Færd 1807 paa Øen, før denne allerede var rømmet.</note>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
+    <note>Midt i en Skov i Sjælland - fortælles der - ligger et Huus saa eensomt og afsides, at dets Beboere slet intet erfarede om Fjendens Ankomst og Færd 1807 paa Øen, før denne allerede var rømmet.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901. --></note>
   </notes>
   <source pages="97-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3390,7 +3390,7 @@ Hun hvisked i min Favn: ,,<w>Jeg vil!</w>''
   <title><num>1.</num>Min Sang er mat. Jeg føler Tiden tvinger</title>
   <firstline>Min Sang er mat. Jeg føler Tiden tvinger</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="133"/>
   <keywords>sonnet</keywords>
@@ -3424,7 +3424,7 @@ Jeg veed, du følger mig paa denne Vandring,
   <title><num>2.</num>Man skal i Tide trække sig tilbage</title>
   <firstline>Man skal i Tide trække sig tilbage</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="134"/>
   <keywords>sonnet</keywords>
@@ -3458,7 +3458,7 @@ Til vaagent Liv jeg reiser mig af Drømmen,
   <title><num>3.</num>Men saa - jeg nægter ei - var det ret yndigt</title>
   <firstline>Men saa - jeg nægter ei - var det ret yndigt</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="135"/>
   <keywords>sonnet</keywords>
@@ -3492,7 +3492,7 @@ Jomæn! Jeg hører Tiden tale myndigt:
   <title><num>4.</num>Da ubevidst jeg sang og sad alene</title>
   <firstline>Da ubevidst jeg sang og sad alene</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="136"/>
   <keywords>sonnet</keywords>
@@ -3526,7 +3526,7 @@ Da hjalp det ei, hvad Deiligt jeg opsnuste,
   <title><num>5.</num>Jeg vil ei trøste mig som Andre flere</title>
   <firstline>Jeg vil ei trøste mig som Andre flere</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="137"/>
   <keywords>sonnet</keywords>
@@ -3565,7 +3565,7 @@ Til <w>Dig</w> jeg tyer, naar Alderen mig tvinger,
   <toctitle>En Stemme fraoven. Sonet til J</toctitle>
   <firstline>Jeg reiste mig saa let fra Smertebaaren</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="138"/>
   <keywords>sonnet</keywords>
@@ -3599,7 +3599,7 @@ Min moderlige Søster! Du skal vende
   <title>Det bløde Skind</title>
   <firstline>Hen over Sneen sprang og løb</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="139-141"/>
   <keywords>balladestrofe</keywords>
@@ -3665,7 +3665,7 @@ Omkring din Skulder, Hals og Kind!
   <title>Stilhed og Saltvand</title>
   <firstline>O, Stilhed! tankerige Ord!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="142-143"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

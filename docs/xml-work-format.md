@@ -181,22 +181,26 @@ Brug kun `none`, når der ikke findes et rettelsesark. Ved fund angives ét
 element pr. ark. Brug `applied`, når sikre rettelser er indført i teksten,
 og `reviewed`, når arket er gennemgået, men ingen sikre rettelser berører
 de inkluderede tekster. `reviewed` er relevant for udvalg og kræver ikke
-kunstige rettelser eller `type="errata"`-fodnoter. Tentative forslag fra
+kunstige rettelser eller rettelseskommentarer. Tentative forslag fra
 udgiveren kan dokumenteres i almindelige noter uden at ændre hovedteksten.
 `pages` følger trykkets sideangivelse, også når den
 er redaktionelt sat i kantede parenteser. Brug `pages="[upagineret]"`, når
 rettelsesblokken står på et blad uden sidetal; `facsimile-pages` er et enbaseret
 sideinterval. Ved flere kilder peger `in` på et `<source id="…">` i samme
-`<workhead>`. Rettelserne indføres i de berørte tekster med en fodnote på
+`<workhead>`. Rettelserne indføres i de berørte tekster med en usynlig XML-kommentar på
 samme linje:
 
 ```xml
-Med magisk Kunst<footnote type="errata">Kunst] Kraft</footnote> jeg ved din Side staar.
+Med magisk Kunst<!-- Rettelsesark: Kunst] Kraft --> jeg ved din Side staar.
 ```
 
 Venstre side af `]` er Kalliopes rettede læsemåde, højre side er trykkets
 oprindelige læsemåde. Brug `∅` for en manglende læsemåde ved tilføjelse eller
-sletning. Alle `type="errata"`-fodnoter skal have begge sider af `]` udfyldt.
+sletning. Alle rettelseskommentarer skal have begge sider af `]` udfyldt med forskellige
+læsemåder. `applied` kræver mindst én gyldig rettelseskommentar, og kommentarer
+kræver en `applied`-registrering. Rettelsesfodnoter er ikke tilladt i værker.
+Kommentarerne skal stå inline og må ikke ændre mellemrum, verslinjer eller
+strofer. De vises hverken som tekst eller notemarkører.
 Værknoten med facsimilelink bygges automatisk af `<errata>`; skriv den ikke
 også manuelt.
 
@@ -1126,6 +1130,13 @@ Attributter paa `<note>`:
 - `editorial="true"`: markerer en redaktionel note fra Kalliope og viser mærkatet
   »Kalliope«. Kan også bruges på `<footnote>` og kombineres med `type`.
   Udelad attributten på forfatterens egne noter og ved ukendt ophav.
+  Ved blandede noter udskilles selvstændige Kalliope-tilføjelser som egne,
+  mærkede noter. Et tilføjet link alene ændrer ikke en trykt notes ophav.
+  Brug ikke indledende asterisker til at skelne forfatternoter fra Kalliopes
+  noter; markeringen og den almindelige notenummerering varetager dette.
+  Bevar særskilte ophavsoplysninger, hvis den trykte udgivers noter skal
+  skelnes fra digterens. Stjerner med andre funktioner berøres ikke.
+  Se `docs/editorial-notes-audit.md` for korpusgennemgangen og dens undtagelser.
 - `lang`: sprog for noten; default er `da`.
 - `unknown-original-by`: digter-id. Giver noten typen `unknown-original` og bruges som oversaettelsesreference.
 

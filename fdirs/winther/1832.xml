@@ -4,9 +4,8 @@
   <title>Digte, gamle og nye</title>
   <year>1832</year>
   <notes>
-    <note>* Førhen utrykte Stykker ere de i Indholdslisten med * betegnede.</note>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note>Førhen utrykte Stykker ere de i Indholdslisten med * betegnede.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1832-p1.jpg">Titelbladet til <i>Digte, gamle og nye</i> (1832) lyder ,,Digte, / gamle og nye, / af / Christian Winther. // Kjøbenhavn, 1832. / Trykt på Universitetsboghandler C. A. Reitzels Forlag / hos P. R. Jørgensen.''</picture>
@@ -502,7 +501,7 @@ En dyb Betydning være?
 
 <nonum><center>2.</center></nonum>
 
-See her vort Livsens Skuespil<note>Winther parafraserer i det følgende <a poet="shakespeare">Shakespeare</a>s As You Like It, II,viii: 'All the world's a stage'</note>
+See her vort Livsens Skuespil<note editorial="true">Winther parafraserer i det følgende <a poet="shakespeare">Shakespeare</a>s As You Like It, II,viii: 'All the world's a stage'</note>
 I flere skjønne Acter:
 ,,Først Barnet i sin Ammes Arm
 ,,Med Skraal og sære Fagter.
@@ -762,7 +761,7 @@ Og saa er mit Levnetsløb til Ende.
   <title>Ved Fredrik Kulaus Grav</title>
   <firstline>Vi bringe dig, o! kolde Jord, det varme</firstline>
   <notes>
-    <note>Daniel Friedrich Kuhlau (1786-1832), var Danmarks fremmeste romantiske komponist.</note>
+    <note editorial="true">Daniel Friedrich Kuhlau (1786-1832), var Danmarks fremmeste romantiske komponist.</note>
   </notes>
   <source pages="28-29"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1192,7 +1191,7 @@ Disse Taarer er min Trøst.
   <toctitle>Parabel af Fr. Rückert (oversat)</toctitle>
   <firstline>I Syrien, i Ørkens Sand</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2001102431"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Rückert: <xref type="translation" poem="rueckert2001102431"/>.</note>
   </notes>
   <source pages="44-47"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2719,7 +2718,7 @@ De smaa Jesuiter.
 </head>
 <body>
 <poetry>
-Mit første Brev var jo fra Kiel?<note>Cf. <xref poem="winther1999070604"/>.</note>
+Mit første Brev var jo fra Kiel?<note editorial="true">Cf. <xref poem="winther1999070604"/>.</note>
 Men dette er fra Byen,
 Hvor Münstren som en Poppelpiil
 Er voxet op i Skyen.
@@ -2815,7 +2814,7 @@ Jeg gav dem til en Deilighed,
 Jeg kunde mig ei bare.
 
 Derfor min Straf jeg skulde faae,
-Da over <w>Engelsryggen</w><note>* Monte S. Angelo.</note>
+Da over <w>Engelsryggen</w><note>Monte S. Angelo.</note>
 Til Døden træt jeg maatte gaae
 Og støtte mig til Krykken.
 
@@ -2830,7 +2829,7 @@ Jeg tænkde, naaer man Maalet jo
 For al sit Hjertes Længsel.
 
 Men hyllet tæt i Røg og Damp,
-Som Christian den Fjerde,<note>Henviser til Johannes Ewalds <xref poem="ewlad1999022205"/>.</note>
+Som Christian den Fjerde,<note editorial="true">Henviser til Johannes Ewalds <xref poem="ewlad1999022205"/>.</note>
 Ei Blikket, trods den svære Kamp,
 Gik over Alpens Gjærde.
 
@@ -3128,7 +3127,7 @@ La du, da dui, da du etc.
 
 En Krop saa rank, som Fyrren hist,
 En Flætning tyk og lang,
-En Fod saa<footnote type="errata">saa] faa</footnote> let som Fugl paa Qvist,
+En Fod saa<!-- Rettelsesark: saa] faa --> let som Fugl paa Qvist,
 En Røst, som Klokkeklang,
 To Øine, som to sorte Bær,
 Og Kinden rund og rød, -
@@ -3824,7 +3823,7 @@ Hans Hoved laae paa et Anker.
   <title>Sauvegarden</title>
   <firstline>Trompeten skingred, og Kartoven</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
   </notes>
   <source pages="143-147"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3947,7 +3946,7 @@ Saa hævner han sig sikkert snart.
   <title>Min Moster og jeg</title>
   <firstline>Min Mosters Gaard den laae paa Skrinten</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- oprindeligt efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- oprindeligt efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
   </notes>
   <source pages="148-153"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3956,7 +3955,7 @@ Saa hævner han sig sikkert snart.
 <body>
 <poetry>
 Min Mosters Gaard den laae paa Skrinten
-Ved Bredden af en skovkrandst<footnote type="errata">skovkrandst] stovkrandst</footnote> Bugt,
+Ved Bredden af en skovkrandst<!-- Rettelsesark: skovkrandst] stovkrandst --> Bugt,
 Og vis-a-vis saa fjernt paa Klinten
 En anden Borg sig reiste smukt;
 De stod og vexled' kjælne Blikke
@@ -4099,7 +4098,7 @@ Et lille Brev ved Siden laae:
   <subtitle>(1829)</subtitle>
   <firstline>Hans Haar var Snee, hans Ryg var bøiet</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
   </notes>
   <source pages="154-158"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4414,7 +4413,7 @@ Og Kjærligheds Mirakel.
   <toctitle>* Haren</toctitle>
   <firstline>Ak, bedste Hr. Cornilsen!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- oprindeligt efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- oprindeligt efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
   </notes>
   <source pages="165-175"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4718,7 +4717,7 @@ Og Stadsen var forbi.
   <toctitle>* Doris og Fætter Jean</toctitle>
   <firstline>Det er en ganske vakker Fyr</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.<!-- Oprindelige indtastet efter Chr. Winther: <i>Fortællinger paa Vers</i>, udgivet Gyldendalske Boghandels Forlag, Kjøbenhavn, 1901.--></note>
   </notes>
   <source pages="176-179"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4842,7 +4841,7 @@ Du eier vist den ægte!''
   <toctitle>* Rosen</toctitle>
   <firstline>Og hende saae du ikke?</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp</note>
   </notes>
   <source pages="180-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5087,7 +5086,7 @@ Og til Dandsens muntre Fryd!''
 Kongen talde; - Jægerskaren
 Svinger ind paa Slottets Plads,
 Og paa Vogne følge Haren,
-Hjorten og<footnote type="errata">og] eg</footnote> den vilde Bas.
+Hjorten og<!-- Rettelsesark: og] eg --> den vilde Bas.
 
 Slottet kneised strunkt med Vælde,
 Ungdomsstærkt, skjøndt graat af Ælde,
@@ -5317,7 +5316,7 @@ Om Vorfrues strænge Hævn.
   <title>Træsnit</title>
   <source pages="197-280"/>
   <notes>
-    <note>Mottoet af Christian von Hamle lyder ,,Wo sich vier Arme, geschliessen in ein, / Nie süssre Freude die Sonne überschein; / Da wird gedrucket von zweien Herzen nah', / Laub war nie so dünne, dess Statt man funde da.''</note>
+    <note editorial="true">Mottoet af Christian von Hamle lyder ,,Wo sich vier Arme, geschliessen in ein, / Nie süssre Freude die Sonne überschein; / Da wird gedrucket von zweien Herzen nah', / Laub war nie so dünne, dess Statt man funde da.''</note>
   </notes>
 </head>
 <content>
@@ -5749,7 +5748,7 @@ Vi spille Guldtavl ved Malvasier og Klaret.''
 
 Da reisde hun sit Hoved, slog Lokken fra sin Kind,
 Hun smilde med sit Øie, saa listefuld i Sind.
-Hvor gule var'<footnote type="errata">var'] vare</footnote> de Lokker, som rundt om Panden laae,
+Hvor gule var'<!-- Rettelsesark: var'] vare --> de Lokker, som rundt om Panden laae,
 Og saa disse Øine, - hvor friske og hvor blaae!
 
 ,,Jeg er kuns Bondepige, men I en Ridder stolt,
@@ -5787,7 +5786,7 @@ Det sætte I for Knæ, og bryde det brat;
 Og ned maa I styrte eders stolte Ridderhuus,
 Og lade Plougen vandre over Grundmurens Gruus!''
 
-Da straalede<footnote type="errata">straalede] straalde</footnote> hans Ansigt med Høihed og Ro,
+Da straalede<!-- Rettelsesark: straalede] straalde --> hans Ansigt med Høihed og Ro,
 Han mærkede klarligt, hun var sin Kjærest tro:
 ,,Jeg seer, liden Else, du kan dig fra mig snoe,
 Thi Skjoldet maa jeg bære, i Huset vil jeg boe!
@@ -6013,7 +6012,7 @@ Hun veed, at du vil være Allerkjæresten min!
 
 Den næste Middag stod jeg da, og ventede min Ven,
 Hvor Huulveien slynger sig imellem Buske hen;
-Natregnens Skyer hang i Luften mild og luun, <note>Natregnens ] i førstetrykket ved trykfejl: Naturens (påpeget af Winther i et brev af 10. jan. 1822)</note>
+Natregnens Skyer hang i Luften mild og luun, <note editorial="true">Natregnens ] i førstetrykket ved trykfejl: Naturens (påpeget af Winther i et brev af 10. jan. 1822)</note>
 Paa Gadekjæret vipped' knap det fine Gaaseduun.
 
 Da sprang den grønne Junker frem af grønne Krat og Siv,
@@ -6483,7 +6482,7 @@ Med Hjertet fuldt af Vemod og trofast Kjærlighed.
   <title>Asbjørn og Thora</title>
   <firstline>Høstsolen blinker liflig, frisk blæser Østenvind</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="246-253"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6678,7 +6677,7 @@ Ak! det er Asbjørn Bonde og Thora, hans Brud!
   <title>Martin og Marie</title>
   <firstline>Min Søn! seer du ei Søen? den vælter Bølgen sort</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="254-258"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6976,7 +6975,7 @@ Og kyssed mig, og sagde saa venlig disse Ord:
   <toctitle>* Rudolf og Bertha</toctitle>
   <firstline>I Skoven Stormen suser, og hvirvler Sneen hvid</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="265-271"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7152,7 +7151,7 @@ Thi - dødfrossen stod han, men - trofast paa sin Vagt.
   <toctitle>* Jacob og Lone</toctitle>
   <firstline>Hvor Landeveien løber midt i Tersingeby</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="272-280"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

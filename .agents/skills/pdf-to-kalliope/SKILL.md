@@ -239,7 +239,7 @@ Inspect every page for a printed correction sheet. Record each sheet as a
 separate `page_type: "errata"` row in the reviewed inventory, including its
 facsimile filename, even though the sheet is never a standalone Kalliope text.
 Apply every relevant correction to the affected text and attach a
-`<footnote type="errata">corrected] printed</footnote>` at the correction.
+`<!-- Rettelsesark: corrected] printed -->` at the correction.
 Register the sheet in `<workhead>` as documented in `docs/xml-work-format.md`.
 If no sheet exists, register `<errata status="none"/>`. A discovered sheet that
 has not been applied blocks completion and the review checkpoint.

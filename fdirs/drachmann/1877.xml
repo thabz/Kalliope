@@ -7,8 +7,8 @@
     <openlibrary-work>OL3078339W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Gengivet efter førsteudgaven af Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</note>
-    <note type="credits">Tilføjet af Henrik Nielsen.</note>
+    <note editorial="true">Gengivet efter førsteudgaven af Holger Drachmann: <i>Sange ved Havet. - Venezia</i>, Gyldendalske Boghandels Forlag, Kbh., 1877.</note>
+    <note editorial="true" type="credits">Tilføjet af Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture type="frontpage" src="1877-p1.jpg">Forsiden til <i>Sange ved Havet</i> (1877).</picture>
@@ -1313,7 +1313,7 @@ De var ude med Baaden, han og Flere,
 Det var Jevndøgnstider, og Søen brød,
 Jollen smak over; de laa og flød
 En Stund i Vandet, et Par Timers Frist.
-Saa drukned de Alle, suksomsive<note>suksomsive] sucsomsive</note>,
+Saa drukned de Alle, suksomsive<note editorial="true">suksomsive] sucsomsive</note>,
 Og <w>han</w> tilsidst.
 De kom vel iland, men ingen ilive.
 
@@ -3180,7 +3180,7 @@ Saa bliver Rejsen den sidste!
   <title>Ved Skarritsøen</title>
   <firstline>Jeg ser ivejret fra de hvide Blade</firstline>
   <notes>
-    <note>Citatet stammer Goethes <xref poem="goethe2001061618"/> fra <i>Faust</i> (1808).</note>
+    <note editorial="true">Citatet stammer Goethes <xref poem="goethe2001061618"/> fra <i>Faust</i> (1808).</note>
   </notes>
   <source pages="154-160"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

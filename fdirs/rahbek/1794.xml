@@ -4,8 +4,8 @@
   <title>Poetiske Forsøg</title>
   <year>1794</year>
   <notes>
-    <note>Samlingen bærer tilegnelsen ,,Sin mangeaarige / Ven, Opmuntrer og Veileder / Magdalus Cold / helliger / disse Sanges Camene / nærværende Forsøg. // Ihr kleines Lied wird nicht empor / Verwegen fliegen an des Donurers Wagen. / Es säuselt um der Freundschaft Ohr. / Gotters Gedichte.''</note>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Samlingen bærer tilegnelsen ,,Sin mangeaarige / Ven, Opmuntrer og Veileder / Magdalus Cold / helliger / disse Sanges Camene / nærværende Forsøg. // Ihr kleines Lied wird nicht empor / Verwegen fliegen an des Donurers Wagen. / Es säuselt um der Freundschaft Ohr. / Gotters Gedichte.''</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1794-p1.jpg">Titelbladet til <i>Poetiske Forsøg</i> (1794) lyder ,,Poetiske Førsøg. / Mariehöien. // Første Deel. / Kiøbenhavn, / forlagt af Hof- og Universitetsboghandler J. F. Schultz. / 1794.''</picture>
@@ -153,7 +153,7 @@ Med Danmarks Held og Hæder!
   <title>Vennesang</title>
   <firstline>Barndoms Lyst, og Barndoms Smerte</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="9-11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -332,7 +332,7 @@ De vi har, og end kan faae!
   <subtitle>efter Eschenborg.</subtitle>
   <firstline>Stille Veemods søde Taarer rinde</firstline>
   <notes>
-    <note>Oversættelse og fri bearbejdelse af Eschenburg: <xref type="translation" poem="eschenburg2026081101"/>.</note>
+    <note editorial="true">Oversættelse og fri bearbejdelse af Eschenburg: <xref type="translation" poem="eschenburg2026081101"/>.</note>
   </notes>
   <source pages="18-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -459,8 +459,8 @@ Ved din Elises ømme Bryst!
   <subtitle>efter Kelgreen.</subtitle>
   <firstline>Hver, som hylder muntre Glæder</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
-    <note>Gendigtning af Johan Henric Kellgrens <xref type="translation" poem="kellgren2026072301"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Gendigtning af Johan Henric Kellgrens <xref type="translation" poem="kellgren2026072301"/>.</note>
   </notes>
   <source pages="25-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -521,8 +521,8 @@ Leve hver, som har dem kiær!
   <subtitle>efter Øverbek.</subtitle>
   <firstline>Brødre! Hvorfor flyde</firstline>
   <notes>
-    <note>Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="28-31"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -749,7 +749,7 @@ Lykkelig og glad som Du!
   <subtitle>efter Bürger.</subtitle>
   <firstline>O Lalage! hvo danned' dig</firstline>
   <notes>
-    <note unknown-original-by="burger" />
+    <note editorial="true" unknown-original-by="burger" />
   </notes>
   <source pages="41-43"/>
   <!-- TODO: ingemann2018040908 omtaler også Lalage -->
@@ -900,7 +900,7 @@ Nyd længe dit Venskabs, din Kiærligheds Løn!
   <subtitle>tildeels efter det tydske.</subtitle>
   <firstline>Min Sang, min Lina, er for dig!</firstline>
   <notes>
-    <note>Se Goethes <xref poem="goethe2019091401"/>.</note>
+    <note editorial="true">Se Goethes <xref poem="goethe2019091401"/>.</note>
   </notes>
   <source pages="48-51"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -986,7 +986,7 @@ Men evig skal jeg synge dig.
   <subtitle>Efter Voss</subtitle>
   <firstline>Den første Sang i Vennelag</firstline>
   <notes>
-    <note>Gendigtning af Johann Heinrich Voß' <xref type="translation" poem="voss2019122301"/>.</note>
+    <note editorial="true">Gendigtning af Johann Heinrich Voß' <xref type="translation" poem="voss2019122301"/>.</note>
   </notes>
   <source pages="52-54"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1116,7 +1116,7 @@ Skiønhed, Ynde, Aand og Dyd.
   <title>Vennesang</title>
   <firstline>En Skaal for Hver, hvis Hjerte og hvis Haand</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="59-60"/>
   <keywords>drikkevise</keywords>
@@ -1251,7 +1251,7 @@ Vi broderlige, nu hinanden give Hænder;
   <subtitle>efter Voss.</subtitle>
   <firstline>O hvor lykkelig er den</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold zu Stolbergs <xref type="translation" poem="stolbergf2026072301"/>. Rahbeks forfatterangivelse »efter Voss« er fejlagtig.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold zu Stolbergs <xref type="translation" poem="stolbergf2026072301"/>. Rahbeks forfatterangivelse »efter Voss« er fejlagtig.</note>
   </notes>
   <source pages="66-68"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1375,7 +1375,7 @@ Vor gode Konges Skaal.
   <title>Vennesang</title>
   <firstline>Lad os drikke</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="73-74"/>
   <keywords>drikkevise</keywords>
@@ -1464,7 +1464,7 @@ Til norske Selskabs Skaal.
   <title>Der var engang en tapper Mand</title>
   <firstline>Der var engang en tapper Mand</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="78-80"/>
   <keywords>drikkevise</keywords>
@@ -1564,7 +1564,7 @@ Lad os leve, døe deri.
   <title>Drikkevise</title>
   <firstline>Kom Brødre! lad os drikke!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="83-85"/>
   <keywords>drikkevise</keywords>
@@ -1620,7 +1620,7 @@ Thi drikke vi!
   <title>Selskabssang</title>
   <firstline>De Mennesker vide saa lidt, hvad de vil</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="86-87"/>
   <keywords>drikkevise</keywords>
@@ -1661,8 +1661,8 @@ Vi Glade, vi viise, vi Venner! vor Skaal!
   <title>Candidat-Vise</title>
   <firstline>For Studiegaardens Dogmatik</firstline>
   <notes>
-    <note>Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Melodi som Rahbeks <xref poem="rahbek2001061307"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="88-90"/>
   <keywords>hagehorn,anakreon,vibe,horats,drikkevise</keywords>
@@ -1714,7 +1714,7 @@ Til Candidatens Skaal.
   <title>Drikkevise</title>
   <firstline>Der var en Lov i Grækenland</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="91-92"/>
   <keywords>drikkevise</keywords>
@@ -1751,7 +1751,7 @@ Er vi dog meget viisere.
   <title>Drikkevise for et Mandfolkelag</title>
   <firstline>Skal den hedde viis, som det ei rører</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="93-94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1842,7 +1842,7 @@ Erkiændtlige drikke vi samtlig din Skaal.
   <title>Drikkesang</title>
   <firstline>Vinen er i Fryd og Smerte</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="97-98"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1878,7 +1878,7 @@ Det er evigt Venskabs Skaal.
   <title>Selskabssang</title>
   <firstline>Lad miltsyge Daarer bagtale vor Jord!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="99-100"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1890,7 +1890,7 @@ Jeg finder den ikke saa slem, som man troer;
 Thi spire end hist og her Tornene frem,
 Da smile de herligste Roser blandt dem,
 Og Sagen er kun, som vor Vessel har sagt:
-Bryd Rosen, men tag dig for Tornen i Agt!<note>Se Johan Herman Wessels <xref poem="wessel2002092206"/>.</note>
+Bryd Rosen, men tag dig for Tornen i Agt!<note editorial="true">Se Johan Herman Wessels <xref poem="wessel2002092206"/>.</note>
 
 At Hofmænd os svige med slibrige Ord,
 Det volder man selv, som de Rørkiæppe troer;
@@ -1986,7 +1986,7 @@ Skaal for dem, vi fik af den!
   <subtitle>Efter Voß</subtitle>
   <firstline>Brødre! hører Stormen tude</firstline>
   <notes>
-    <note unknown-original-by="voss" />
+    <note editorial="true" unknown-original-by="voss" />
   </notes>
   <source pages="104-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2018,7 +2018,7 @@ Ei en Taar vi ville levne;
 Veed da ingen, hvad han hedde?
 Vi i vore Glas vil leede;
 Sandhed boer saa tit i Puns,
-Søg da der, men søg til Bunds.<note><i>Bunds:</i> kilde ulæselig.</note>
+Søg da der, men søg til Bunds.<note editorial="true"><i>Bunds:</i> kilde ulæselig.</note>
 
 Dog hans Navn giør ei til Tingen,
 Skaalen lige godt er meent;
@@ -2047,7 +2047,7 @@ Klink! og drik! men drik til Bunds.
   <subtitle>1790</subtitle>
   <firstline>Nu bort med alskens Politik</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="107-109"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2098,7 +2098,7 @@ Han gaaer i deres Spor!
   <title>Selskabssang</title>
   <firstline>Verden er, som man den tager</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="110-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2230,7 +2230,7 @@ Til Lutherdommens Ære.
   <title>Drikkesang</title>
   <firstline>Alting paa Jorden er kun Fias</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="117-119"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2287,7 +2287,7 @@ Paa Elskov Viin og Venskab nær.
   <title>Selskabssang</title>
   <firstline>I Ungdoms Vaar</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="120-121"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2329,7 +2329,7 @@ Evig den blomstre blandt os her,
   <title>Drikkesang</title>
   <firstline>Hvis jeg var riig, saa raabe alle Munde</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="122-124"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2497,7 +2497,7 @@ Ad det Maal, vi sigte til.
   <title>Drikkesang</title>
   <firstline>De gode Gamle sang saa tit</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="131-133"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2552,7 +2552,7 @@ Før samme Skaal vi stemte i
   <title>Selskabssang</title>
   <firstline>At vi ere Børn tilsammen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="134-136"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2607,7 +2607,7 @@ Skaal for hver, som leger med!
   <title>Balvise</title>
   <firstline>Naar heele sit Levnet man nøie beseer</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="137-138"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2651,7 +2651,7 @@ De Skiønnes, de Venners, de Dandsendes Skaal!
   <subtitle>1788</subtitle>
   <firstline>Sørge, hvo sørge vil!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="139-141"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2702,8 +2702,8 @@ Naboe! din Skaal!
   <title>Selskabssang</title>
   <firstline>At intet er saa sundt, som Glæde</firstline>
   <notes>
-    <note>Vers 2 findes i senere udgaver som ,,Har Tode sagt paa smuk Latin'' hvor Tode er <a poet="tode">J.C. Tode</a>.</note>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Vers 2 findes i senere udgaver som ,,Har Tode sagt paa smuk Latin'' hvor Tode er <a poet="tode">J.C. Tode</a>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="142-143"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2713,7 +2713,7 @@ Naboe! din Skaal!
 At intet er saa sundt, som Glæde,
 Man os har sagt paa godt Latin;
 Og heele Verden, tør jeg vedde,
-Vil have<note>have] hove</note> denne Medicin.
+Vil have<note editorial="true">have] hove</note> denne Medicin.
 Det bliver da kun Spørgsmaal her:
 Fra hvilket Apothek den er?
 
@@ -2758,7 +2758,7 @@ Til Glædens og til Venskabs Skaal.
 <body>
 <poetry>
 Lad andre raabe paa Sommeren,
-Langt bedre have<note>have] hove</note> vi Vintrens Dage;
+Langt bedre have<note editorial="true">have] hove</note> vi Vintrens Dage;
 Den Sommer adskiller Ven fra Ven,
 Men Vintren bringer dem smukt tilbage.
   Og Vise lære,
@@ -2915,7 +2915,7 @@ Vi agted' saa lidet paa Spradernes Skrub
   <subtitle>efter det svenske.</subtitle>
   <firstline>Mit Levnet bestandig har sandet</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="152-155"/>
   <!-- TODO: Find originalen (ukendt svensk) -->
@@ -2985,7 +2985,7 @@ For Tiden min Levetraad af.
   <title>Drankerromance</title>
   <firstline>Det hændte sig engang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="156-158"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3338,7 +3338,7 @@ Du er den, jeg sukker for.
   <subtitle>efter Kleist</subtitle>
   <firstline>Hun borte er! forgiæves er min Klage!</firstline>
   <notes>
-    <note>Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2019091801"/>.</note>
+    <note editorial="true">Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2019091801"/>.</note>
   </notes>
   <source pages="174-175"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3384,7 +3384,7 @@ Og sukked' Lalage!
   <subtitle>efter Göthe.</subtitle>
   <firstline>En Natfiol saa ydmyg stod</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019091802"/>.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2019091802"/>.</note>
   </notes>
   <source pages="176-177"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3494,7 +3494,7 @@ At du, min Ven! blev lykkelig.
   <subtitle>efter Berqvin.</subtitle>
   <firstline>Sov bedste Dreng! du sidste Glæde</firstline>
   <notes>
-    <note>Gendigtning af Arnaud Berquins <xref type="translation" poem="berquin2026072301"/>.</note>
+    <note editorial="true">Gendigtning af Arnaud Berquins <xref type="translation" poem="berquin2026072301"/>.</note>
   </notes>
   <source pages="182-184"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3741,7 +3741,7 @@ Saa strede de Nordmænd for Norge.
   <title>Efter Miller</title>
   <firstline>Den heele Landbye samler sig</firstline>
   <notes>
-    <note>Gendigtning af Johann Martin Millers <xref type="translation" poem="miller2019122302"/>.</note>
+    <note editorial="true">Gendigtning af Johann Martin Millers <xref type="translation" poem="miller2019122302"/>.</note>
   </notes>
   <source pages="194-198"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3837,7 +3837,7 @@ Og bort fra denne Verden mig
   <subtitle>efter Bürger.</subtitle>
   <firstline>Nys drømte jeg ved Midnatsstund</firstline>
   <notes>
-    <note>Gendigtning af Bürgers <xref type="translation" poem="burger2019091901"/>.</note>
+    <note editorial="true">Gendigtning af Bürgers <xref type="translation" poem="burger2019091901"/>.</note>
   </notes>
   <source pages="199-201"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

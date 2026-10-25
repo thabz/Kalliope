@@ -258,7 +258,7 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
-      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")/.test(xml)) {
+      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")|<!--\s*Rettelsesark\b/iu.test(xml)) {
         errataIssues.push(...validateErrata(parseWorkXml(xml).documentElement, filename));
       }
       redundantTextTitleMetadataIssues.push(
@@ -412,7 +412,7 @@ describe('tracked work corpus', () => {
     expect(pageBreakIssues).toEqual([]);
   });
 
-  it('requires applied errata and well-formed errata footnotes', () => {
+  it('requires applied errata and well-formed correction comments', () => {
     expect(errataIssues).toEqual([]);
   });
 

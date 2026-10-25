@@ -8,9 +8,6 @@
   <identifiers>
     <openlibrary-work>OL10659887W</openlibrary-work>
   </identifiers>
-  <notes>
-    <note>Noter med foranstillet asterisk er forfatterens egne. </note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1922-p1.jpg"><transcription>HELGE RODE / DEN STILLE HAVE // GYLDENDALSKE BOGHANDEL - NORDISK / FORLAG - KJØBENHAVN - KRISTIANIA / LONDON - BERLIN - MDCCCCXXII</transcription></picture>
   </pictures>
@@ -367,7 +364,7 @@ I
 
 Nej se dog Himmelhvælvets skyfri Pande.
 Hvor er vi nu? — O milde Vest og Øst! Sejl
-langsomt Jord paa disse smule<footnote type="errata">smule] smulte</footnote> Vande,
+langsomt Jord paa disse smule<!-- Rettelsesark: smule] smulte --> Vande,
 læg ind i Havn ved denne skønne Kyst.
 
 Vor store Baad gaar fremad saligt baaren
@@ -481,7 +478,7 @@ Ring om din ædle Armods rige Fryd.
 Ak, søde Syn i Engen og i Parken,
 ved Slottets Port og ved det mindste Bol.
 Kornblomst og Valmu staar i Hvedemarken,
-klædte i Himmelfløjl og Skarlagsol<footnote type="errata">Skarlagsol] Skarlagensol</footnote>.
+klædte i Himmelfløjl og Skarlagsol<!-- Rettelsesark: Skarlagsol] Skarlagensol -->.
 
 Den gode Kløver med sin bramfri Rødme
 skjulte sig helst; men maa dog være med
@@ -1046,7 +1043,7 @@ Der sad den Gamle med sin Stab,
 som i en Kæmpeblomst.
 
 Han sad helt bred og mindetung,
-som den der snart har set det alt<footnote type="errata">set det alt] set alt</footnote>,
+som den der snart har set det alt<!-- Rettelsesark: set det alt] set alt -->,
 men vennesæl og hjerteung,
 saa snart der blot blev kaldt.
 
@@ -1373,7 +1370,7 @@ Fred og Enighed i Norden.
   <title>Livets Farvelad</title>
   <firstline>Ved Festen fik en Moder Bud</firstline>
   <notes>
-    <note>* Sange fra ,,Moderen'' gengives her, tildels i udvidet og revideret Form.</note>
+    <note>Sange fra ,,Moderen'' gengives her, tildels i udvidet og revideret Form.</note>
   </notes>
   <source pages="87-88"/>
 </head>
@@ -1769,7 +1766,7 @@ Danmark, paa dit Alter!
   </subtitle>
   <firstline>Imellem nøgne Vægge</firstline>
   <notes>
-    <note>Vedr. tilegnelsen, se Poul Martin Møllers <xref poem="moellerpm2001052550"/>.</note>
+    <note editorial="true">Vedr. tilegnelsen, se Poul Martin Møllers <xref poem="moellerpm2001052550"/>.</note>
   </notes>
   <source pages="107-108"/>
 </head>
@@ -1915,7 +1912,7 @@ saa ske det som Du vil.
   <title>Min Fader</title>
   <firstline>Nu er jeg ældre end min Fader var</firstline>
   <notes>
-    <note>Helge Rodes fader var <a poet="rodeg">Gotfred Rode</a> (1830-1878).</note>
+    <note editorial="true">Helge Rodes fader var <a poet="rodeg">Gotfred Rode</a> (1830-1878).</note>
   </notes>
   <source pages="114-116"/>
 </head>

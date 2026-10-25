@@ -92,6 +92,9 @@ it('generates one work note per pseudonym across sources while preserving other 
     'Udgivet under pseudonymet Tredje navn.',
   ]);
   expect(notes[1].type).toBe('credits');
+  expect(notes.slice(2).every(note => note.editorial === true)).toBe(true);
+  expect(notes[0]).not.toHaveProperty('editorial');
+  expect(notes[1]).not.toHaveProperty('editorial');
   expect(notes[2]).toMatchObject({ type: null, content_lang: 'da' });
 });
 

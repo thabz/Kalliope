@@ -4,8 +4,8 @@
   <title>Curieuse Poëtiske Skrifter</title>
   <year>1732</year>
   <notes>
-    <note>Samlet og udgivet af <a poet="hofman">Hans de Hofman</a>, på titelbladet betegnet H. H.</note>
-    <note>Side 57 er fejlpagineret 65 og håndrettet til 57; side 226 er fejlpagineret 225. Registeret angiver side 149 for begyndelsen af Pastor Fido-uddragene, som begynder på side 145, og side 156 for dødsdigtet, som står på side 155.</note>
+    <note editorial="true">Samlet og udgivet af <a poet="hofman">Hans de Hofman</a>, på titelbladet betegnet H. H.</note>
+    <note editorial="true">Side 57 er fejlpagineret 65 og håndrettet til 57; side 226 er fejlpagineret 225. Registeret angiver side 149 for begyndelsen af Pastor Fido-uddragene, som begynder på side 145, og side 156 for dødsdigtet, som står på side 155.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1732-p1.jpg"><transcription>Hr. Wilhelm Heltis / Fordum / Hans Kongl. Majests. / Conferentz- Etats- og Justitz-Raad, / Deputerede for Financerne og / Assessor i Cammer-Collegio, / Curieuse / Poëtiske / Skrifter, / Hvilke / Ved adskillige Leyligheder af ham selv er / udgivne, men nu, saavel efter hans Venners / som efter andre Fornemme Liebhabers / Forlængsel, ere samlede og til / Trykken befordret, / Af / H. H. // Kiøbenhavn, 1732. / Trykt og bekostet af Herman Henrich Rotmer, og findes hos hannem tilkiøbs, / paa Graa-brødre Torv.</transcription></picture>
@@ -26,7 +26,7 @@
   <title>Godvillig Læsere</title>
   <firstline>Godvillig Læsere! Den Sæd forgieves bliver</firstline>
   <notes>
-    <note>Versforordet er signeret H. H. Udgiveren identificeres som Hans de Hofman i Dansk Biografisk Leksikon <a href="https://biografiskleksikon.lex.dk/Hans_de_Hofman">↬</a>.</note>
+    <note editorial="true">Versforordet er signeret H. H. Udgiveren identificeres som Hans de Hofman i Dansk Biografisk Leksikon <a href="https://biografiskleksikon.lex.dk/Hans_de_Hofman">↬</a>.</note>
   </notes>
   <source facsimile-pages="10-11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -81,7 +81,7 @@ I Mandens lærde Skrift, vi Tiden kand fordøye;
   </subtitle>
   <firstline>Hvad siges kand er sagt, hvad skrives kand, er skrevet</firstline>
   <notes>
-    <note>Fraktur-undertitlens ordlyd på kan ikke læses sikkert i det tilgængelige facsimile.</note>
+    <note editorial="true">Fraktur-undertitlens ordlyd på kan ikke læses sikkert i det tilgængelige facsimile.</note>
   </notes>
   <source pages="1-2" facsimile-pages="14-15"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -122,7 +122,7 @@ Een Lære-Klud, hvorpaa jeg mig har villet øve;
   </subtitle>
   <firstline>Alle Ting paa denne Jord</firstline>
   <notes>
-    <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100601"/>.</note>
+    <note editorial="true">Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100601"/>.</note>
   </notes>
   <source pages="2-31" facsimile-pages="15-44"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1351,7 +1351,7 @@ For dig ald Jorden sig og Himlen skal nedbøye,
   </subtitle>
   <firstline>Den første Verden sig til mange Kongeriger</firstline>
   <notes>
-    <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100602"/>.</note>
+    <note editorial="true">Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100602"/>.</note>
   </notes>
   <source pages="32-49" facsimile-pages="45-62"/>
   <places>
@@ -2071,7 +2071,7 @@ Dermed er Jacob fast til tvende Koner bundet,
   </subtitle>
   <firstline>Et smukt og artigt Par, saa smukt som var at finde</firstline>
   <notes>
-    <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100603"/>.</note>
+    <note editorial="true">Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100603"/>.</note>
   </notes>
   <source pages="49-52" facsimile-pages="62-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2210,7 +2210,7 @@ Hvordan et Ægte-Par hinanden bør at ære,
   <title>Kone-Market</title>
   <firstline>Der er et deyligt Land i Indien at finde</firstline>
   <notes>
-    <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100604"/>.</note>
+    <note editorial="true">Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100604"/>.</note>
   </notes>
   <source pages="53-61" facsimile-pages="66-74"/>
   <places>
@@ -2583,7 +2583,7 @@ Som giør et Ægteskab, det maae du selv betænke,
   <title>Rhodope</title>
   <firstline>Udi det feede Land, hvor Floden Nilus flyder</firstline>
   <notes>
-    <note>Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100605"/>.</note>
+    <note editorial="true">Gendigtning af Jacob Cats: <xref type="translation" poem="cats2026100605"/>.</note>
   </notes>
   <source pages="62-144" facsimile-pages="75-157"/>
   <places>
@@ -5819,7 +5819,7 @@ Af dennem hver og een man hørde Jammers-Klage,
   <subtitle>Act. I. Scen. I.</subtitle>
   <firstline>O! Sylvio, hvortil har Himlen da udgydet</firstline>
   <notes>
-    <note>Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100601"/>. Helt udelader Silvios svar og forkorter Lincos replikker.</note>
+    <note editorial="true">Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100601"/>. Helt udelader Silvios svar og forkorter Lincos replikker.</note>
   </notes>
   <source pages="145-149" facsimile-pages="158-162"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5997,7 +5997,7 @@ Som lader jo sin Siæl af Kiærlighed indtage,
 
   <firstline>Ach! smukke grønne Lund! eensomme taugse Skygge</firstline>
   <notes>
-    <note>Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100602"/>.</note>
+    <note editorial="true">Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100602"/>.</note>
   </notes>
   <source pages="149-151" facsimile-pages="162-164"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6111,7 +6111,7 @@ I den Sted jeg min Død, hvert Øyeblik maae smage,
   <title>Past. Fido. Act. 3. Scen. 4</title>
   <firstline>Falder Synden da saa sød</firstline>
   <notes>
-    <note>Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100603"/>. Respons-delen har ingen tilsvarende replik på dette sted i originalen.</note>
+    <note editorial="true">Gendigtning af Giovanni Battista Guarini: <xref type="translation" poem="guarini2026100603"/>. Respons-delen har ingen tilsvarende replik på dette sted i originalen.</note>
   </notes>
   <source pages="151-152" facsimile-pages="164-165"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6145,7 +6145,7 @@ Med Naturen vil vor Død.
   <title>Belle fleurs, charmant ombrage</title>
   <firstline>Smukke Blomster mig behage</firstline>
   <notes>
-    <note>Første strofe er en fri gendigtning af Philippe Quinault: <xref type="translation" poem="quinault2026100601"/>. Anden strofe er en religiøs omskrivning.</note>
+    <note editorial="true">Første strofe er en fri gendigtning af Philippe Quinault: <xref type="translation" poem="quinault2026100601"/>. Anden strofe er en religiøs omskrivning.</note>
   </notes>
   <source pages="152-153" facsimile-pages="165-166"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6182,7 +6182,7 @@ Gud skal eene mig behage,
   <title>Des Houlieres</title>
   <firstline>I smukke Faar og Lam, som lystige og glade</firstline>
   <notes>
-    <note>Gendigtning af Antoinette Deshoulières: <xref type="translation" poem="deshoulieres2020010201"/>.</note>
+    <note editorial="true">Gendigtning af Antoinette Deshoulières: <xref type="translation" poem="deshoulieres2020010201"/>.</note>
   </notes>
   <source pages="153-155" facsimile-pages="166-168"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6310,7 +6310,7 @@ SYLVIA de andre tvende
 </head>
 <body>
 <poetry>
-Hvad kiender Verden til<footnote>til] lit</footnote> den Ting, man Døden kalder,
+Hvad kiender Verden til<footnote editorial="true">til] lit</footnote> den Ting, man Døden kalder,
 Vel siger mangen een, ham Døden overfalder;
      Enddog den med ham selv af Moders Liv udkom,
      Og med ham overalt i Verden sværmer om.

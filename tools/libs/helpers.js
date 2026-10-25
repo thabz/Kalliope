@@ -196,6 +196,8 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
   html = html
+    // Correction comments are inline documentation; preserve surrounding whitespace.
+    .replace(/<!--\s*Rettelsesark:[\s\S]*?-->/g, '')
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
     .replace(
       /(^|::NEWLINE-PLACEHOLDER::)[ \t]*<!--.*?-->[ \t]*(::NEWLINE-PLACEHOLDER::|$)/g,

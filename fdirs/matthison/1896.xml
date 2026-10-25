@@ -4,8 +4,7 @@
   <title>Stjærnerne</title>
   <year>1896</year>
   <notes>
-    <note>Samlingen bærer dedikationen ,,Hendes Naade Fru Baronesse Siegfriede Reedtz-Thott, f. Komtesse Rantzau venligst og ærbødigst tilegnet.''</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Samlingen bærer dedikationen ,,Hendes Naade Fru Baronesse Siegfriede Reedtz-Thott, f. Komtesse Rantzau venligst og ærbødigst tilegnet.''</note>
     <!-- TODO: Henvisning til Michelangelos motto på titelbladet. -->
   </notes>
   <pictures>
@@ -426,7 +425,7 @@ og Lærkesangen klinger.
   <title>Stemninger</title>
   <firstline>Du tifold lykkelige By, hvis Mure hegne</firstline>
   <notes>
-    <note>Mottoet stammer fra Staffeldts <xref poem="staffeldt1999080701,23-24"/>.</note>
+    <note editorial="true">Mottoet stammer fra Staffeldts <xref poem="staffeldt1999080701,23-24"/>.</note>
   </notes>
   <source pages="25-27"/>
   <quality>korrektur1,kilde,side</quality>
@@ -999,7 +998,7 @@ Solkongen stiger - Taagesløret letter.
 </head>
 <body>
 <poetry>
-Som Strehlenau<note>* Niembsch Edler von Strehlenau (kaldet <a poet="lenau">Nicolaus Lenau</a>), østerrigsk Digter, f. 1802 i Csatad,  d. 1850.</note> i Tungsind hyllet ind,
+Som Strehlenau<note>Niembsch Edler von Strehlenau (kaldet <a poet="lenau">Nicolaus Lenau</a>), østerrigsk Digter, f. 1802 i Csatad,  d. 1850.</note> i Tungsind hyllet ind,
 jeg blunder sødt ved Arnens kvalte Luer,
 hvor jeg dit dronningfine Ansigt skuer
 med Smilet paa din foraarsunge Kind.

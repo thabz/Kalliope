@@ -30,8 +30,8 @@
   <title>Melodiens Almagt</title>
   <firstline>O du, som skabte blide Melodier</firstline>
   <notes>
-    <note>Første gang trykt i <a person="rahbek">Rahbeks</a> <i>Charis</i> i 1800.</note>
-    <note>Bidrag fra Henrik Nielsen</note>
+    <note editorial="true">Første gang trykt i <a person="rahbek">Rahbeks</a> <i>Charis</i> i 1800.</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen</note>
   </notes>
   <source pages="1-3"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -88,7 +88,7 @@ Og Broderkiærlighed i Mandens Barm;
 Stærkt spænde sig de senefulde Arme,
 Og slaae med Kæmpevældens hele Harm:
 <w>Forfærdet blegnede Tyranner vige</w>,
-<w>Marseillerhymnen<note>Cf. <xref poem="lisle2001112501"/></note> vandt de franske Krige</w>,
+<w>Marseillerhymnen<note editorial="true">Cf. <xref poem="lisle2001112501"/></note> vandt de franske Krige</w>,
 <w>Og Frihedshymner evig vinde vil</w>,
 <w>Saalænge Mod og Frihedsaand er til</w>.
 
@@ -329,8 +329,8 @@ At signes i dit Aftenskiær.
   <title>Drikkevise</title>
   <firstline>At opmuntre Folk til at drikke</firstline>
   <notes>
-    <note>Særskilt tryk: <i>Drikkevise. af A. Øhlenschlæger, Litteratus. Kbhn. Trykt hos K. H. Seidelin.</i></note>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Særskilt tryk: <i>Drikkevise. af A. Øhlenschlæger, Litteratus. Kbhn. Trykt hos K. H. Seidelin.</i></note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="9-11"/>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
@@ -470,8 +470,8 @@ Din <w>sieldne</w> Sang de Danske gav!''
     <event>1800-11-26</event>
   </dates>
   <notes>
-    <note>Særskilt tryk: <i>Drikke-Vise for Dreiers Klub, i Anledning af den 26de November 1800. Kbhn. 1800. Trykt hos K. H. Seidelin. Paa Klubbens Bekostning.</i></note>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Særskilt tryk: <i>Drikke-Vise for Dreiers Klub, i Anledning af den 26de November 1800. Kbhn. 1800. Trykt hos K. H. Seidelin. Paa Klubbens Bekostning.</i></note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="13-15"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -837,8 +837,8 @@ Men meer endnu med din Poesie.
   <toctitle>Hymne til Glæden. (Efter Schiller.)</toctitle>
   <firstline>Glæde, Lynglimt fra det Høie!</firstline>
   <notes>
-    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001101701"/>.</note>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Gendigtning af Schillers <xref type="translation" poem="schiller2001101701"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="23-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1553,7 +1553,7 @@ Før jeg finder.
   <title>Til Apol</title>
   <firstline>Du lange, laurbærkrandste Dreng</firstline>
   <notes>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="43-47"/>
   <keywords>balladestrofe</keywords>
@@ -2144,7 +2144,7 @@ Blidelig os samle.
   <title>Den frembrydende Vaar</title>
   <firstline>Engene grønnes, og Skovenes Kroner</firstline>
   <notes>
-    <note>Digteren som hyldes i de sidste to strofer er <a person="ewald">Johannes Ewald</a>.</note>
+    <note editorial="true">Digteren som hyldes i de sidste to strofer er <a person="ewald">Johannes Ewald</a>.</note>
   </notes>
   <source pages="59-61"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2326,7 +2326,7 @@ Snart synker jeg i eders Favn.
   <toctitle>Den Tillidsfulde. (Efter Horats.)</toctitle>
   <firstline>Den, som er uden Synd og Last</firstline>
   <notes>
-    <note>Variation over Horats' <xref type="translation" poem="horats2026010314"/>.</note>
+    <note editorial="true">Variation over Horats' <xref type="translation" poem="horats2026010314"/>.</note>
   </notes>
   <source pages="64-66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2558,7 +2558,7 @@ Fordi jeg eengang har drømt om Dagen.
   <title>Til Rimer</title>
   <firstline>Rimer! du maa takke mig</firstline>
   <notes>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="70-71"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2827,7 +2827,7 @@ Og takked Gud, fordi jeg var saa stum.
   <toctitle>Biergmands-Liv. (Efter Novalis.)</toctitle>
   <firstline>Den over Jorden byder</firstline>
   <notes>
-    <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060502"/>.</note>
+    <note editorial="true">Gendigtning af Novalis' <xref type="translation" poem="novalis2005060502"/>.</note>
   </notes>
   <source pages="78-79"/>
   <keywords>balladestrofe</keywords>
@@ -2900,7 +2900,7 @@ Den glade Jordens Drot.
   <toctitle>Landlivets Glæder. (Efter Horats.)</toctitle>
   <firstline>Lyksalig den, som til det Bedre</firstline>
   <notes>
-    <note>Gendigtning af Horats' <xref type="translation" poem="horats2026010315"/>.</note>
+    <note editorial="true">Gendigtning af Horats' <xref type="translation" poem="horats2026010315"/>.</note>
   </notes>
   <source pages="80-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3008,7 +3008,7 @@ I Juni aagred han igien.
   <subtitle>(Efter Hölty.)</subtitle>
   <firstline>Sørgeligt og dæmpet Klokken toner</firstline>
   <notes>
-    <note>Gendigtning af Hölty: <xref type="translation" poem="holty2019020401"/>.</note>
+    <note editorial="true">Gendigtning af Hölty: <xref type="translation" poem="holty2019020401"/>.</note>
   </notes>
   <source pages="83-85"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3095,7 +3095,7 @@ Og i disse Lindekroner bygge
   <title>Wiedewelt</title>
   <firstline>Natten blinker</firstline>
   <notes>
-    <note><i>Johannes Wiedewelt</i> (1731-1802) var en dansk billedhugger og forfatter. Han udførte bla. statuen ,,Troskab'' på Frihedsstøtten.</note>
+    <note editorial="true"><i>Johannes Wiedewelt</i> (1731-1802) var en dansk billedhugger og forfatter. Han udførte bla. statuen ,,Troskab'' på Frihedsstøtten.</note>
   </notes>
   <pictures>
     <picture src="oehlen1999062833-p1.jpg" museum="fnm">Peder Als: <i>Portræt af Johannes Wiedewelt</i>, 1766, olie på lærred.</picture>
@@ -3197,7 +3197,7 @@ Stirrer hun hen paa den sorte Sø.
   <title>Den poetiske Billedjæger</title>
   <firstline>Mangen Aftenstund</firstline>
   <notes>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="88-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3503,7 +3503,7 @@ Himlen rolig er hvalt, lære ham Andagt og Tro.
   <title>Petrarcas Canzone ved Vaucluse-Kilden</title>
   <firstline>Sølvbæk, I Bølger milde</firstline>
   <notes>
-    <note>Gendigtning fra Petrarcas <xref type="translation" poem="petrarca2018051201"/>.</note>
+    <note editorial="true">Gendigtning fra Petrarcas <xref type="translation" poem="petrarca2018051201"/>.</note>
   </notes>
   <source pages="97-99"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3716,7 +3716,7 @@ Koldt spotter Elskovs Navn.
   <toctitle>Viinguden. (Efter Novalis)</toctitle>
   <firstline>Paa grønne, varme Bierge fødes</firstline>
   <notes>
-    <note>Gendigtning af Novalis' <xref type="translation" poem="novalis2005060501"/>.</note>
+    <note editorial="true">Gendigtning af Novalis' <xref type="translation" poem="novalis2005060501"/>.</note>
   </notes>
   <source pages="103-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4832,7 +4832,7 @@ Jeg havde mig udbedt af Bouillon en Smule;
 Jeg var ei ganske vel, jeg hørte Vinden kule.
 Jeg sad Odysseus liig, paa Dansk, som han paa Græsk.
 Jeg tænkte: Bouillon kan hielpe dig, skiøndt Flesk
-Ei Grethe meget hialp i <w>Elskov uden Strømper</w>.<note>Wessels <a work="wessel/1772"><i>Kierlighed uden Strømper</i> (1772)</a>.</note>
+Ei Grethe meget hialp i <w>Elskov uden Strømper</w>.<note editorial="true">Wessels <a work="wessel/1772"><i>Kierlighed uden Strømper</i> (1772)</a>.</note>
 Bestandig tænkte jeg: Hvis Vandet Kiolen krymper!
 Jeg fat paa Skeen tog, det smagte mig bon bon;
 Naturlig faldt mig ind - Gotfred af Bouillon.
@@ -6316,7 +6316,7 @@ Den sidste, store Aftensang,
 Som rørt vi sang for mangen Ven,
 Som siunges skal for os igien:
 
-Hvo veed, hvor nær mig er min Ende?<note>Cf. Frederik Rostgaards <xref poem="rostgaard2019022601"/>.</note>
+Hvo veed, hvor nær mig er min Ende?<note editorial="true">Cf. Frederik Rostgaards <xref poem="rostgaard2019022601"/>.</note>
 See, Tiden meget hurtig gaaer.
 Hvor let og snart kan det sig hænde.
 At jeg herfra at vandre faaer!
@@ -8299,7 +8299,7 @@ Af sit skiønne Paradiis.
 Stiernen, som saa rød er blevet,
 Er den blodige Rubin,
 Som for Beltsazar har skrevet:
-Mene Tekel Upharsin.<note><i>Mene Tekel Uphrasin</i> betyder vejet og fundet for let, cf. <xref bible="bibeldaniel05,25-28"/>.</note>
+Mene Tekel Upharsin.<note editorial="true"><i>Mene Tekel Uphrasin</i> betyder vejet og fundet for let, cf. <xref bible="bibeldaniel05,25-28"/>.</note>
 
 <nonum><center><w>Mennesket.</w></center></nonum>
 Vee mig! Vee! de skarpe Tiørne
@@ -8744,7 +8744,7 @@ Omringe mig paa ny.
     <event>1804-10-19</event>
   </dates>
   <notes>
-    <note><a poet="rahbekk">Kamma Rahbek</a> (1775-1829) var søster til Oehlenschlägers senere hustru Christiane.</note>
+    <note editorial="true"><a poet="rahbekk">Kamma Rahbek</a> (1775-1829) var søster til Oehlenschlägers senere hustru Christiane.</note>
   </notes>
   <source pages="246-247"/>
   <keywords>rahbekk,dante,petrarca,cervantes,calderone</keywords>
@@ -9846,8 +9846,8 @@ Maria Danebod!
   <toctitle>Med en Guldhalskiæde. (Efter Goethe)</toctitle>
   <firstline>Maa jeg med dette Blad dig byde</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019021501"/>.</note>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2019021501"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="278"/>
   <keywords>balladestrofe</keywords>
@@ -9880,8 +9880,8 @@ Om du en Slags Betænkning har.
   <toctitle>Blindebuk. (Efter Goethe)</toctitle>
   <firstline>Livsalige Belinde!</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2019020301"/>.</note>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2019020301"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="279"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
