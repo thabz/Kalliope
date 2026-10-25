@@ -103,6 +103,24 @@ describe('text page breadcrumbs', () => {
     expect(Client.poet).not.toHaveBeenCalled();
   });
 
+  it('shows the editorial label before a translation source under Forlæg', async () => {
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      notes: [{ type: 'translation-source', editorial: true, content_lang: 'da',
+        content_html: [['Gendigtning af Antonio Fogazzaros originaltekst.']] }],
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    const section = [...html.matchAll(/<section\b[^>]*>(.*?)<\/section>/g)]
+      .map(match => match[1]).find(content => content.includes('>Forlæg<'));
+    expect(section).toContain('>Kalliope<');
+    expect(section).toContain('Gendigtning af Antonio Fogazzaros originaltekst.');
+    expect(section.indexOf('>Kalliope<')).toBeLessThan(section.indexOf('Gendigtning af'));
+  });
+
   it('renders edition, mention and translation citations with the same bibliography', async () => {
     const ref = {
       id: 'other', title: 'De to Røvere', poet: 'Adam Oehlenschläger', poetId: poet.id,

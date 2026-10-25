@@ -69,7 +69,7 @@ const WorkPage = (props) => {
 
   const renderedNotes = notes.map((note, i) => {
     return (
-      <Note key={'note' + i} type={note.type}>
+      <Note key={'note' + i} type={note.type} editorial={note.editorial}>
         <TextContent
           contentHtml={note.content_html}
           contentLang={note.content_lang}

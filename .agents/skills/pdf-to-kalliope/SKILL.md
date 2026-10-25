@@ -1285,6 +1285,11 @@ Inspect comparable corpus examples when the correct representation is unclear.
 
 ## 13. Place notes and footnotes correctly
 
+Mark notes and footnotes added by Kalliope with `editorial="true"`, including
+source-text identifications and translation references. Preserve any existing
+`type` attribute. Do not mark notes transcribed from the source or notes of
+unknown provenance. Follow `docs/xml-work-format.md` for the XML syntax.
+
 Distinguish among:
 
 - notes applying to the entire work

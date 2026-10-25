@@ -35,6 +35,7 @@ const translations = {
   'en*Gendigtninger': 'Adaptations',
   'en*Note': 'Note',
   'en*Noter': 'Notes',
+  'en*Kalliopes redaktionelle note': 'Kalliope editorial note',
   'en*Forlæg': 'Source text',
   'en*Kilde': 'Source',
   'en*Digital kilde': 'Digital source',

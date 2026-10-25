@@ -37,7 +37,7 @@ const About = (props) => {
   );
   const renderedNotes = keyword.notes.map((note, i) => {
     return (
-      <Note key={'note' + i}>
+      <Note key={'note' + i} editorial={note.editorial}>
         <TextContent
           key="notes"
           contentHtml={note.content_html}

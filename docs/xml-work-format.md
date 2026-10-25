@@ -1123,6 +1123,9 @@ fodnoter i selve brødteksten kan fortsat staa direkte i tekstblokkene.
 Attributter paa `<note>`:
 
 - `type`: bruges fx til `credits` og `source`.
+- `editorial="true"`: markerer en redaktionel note fra Kalliope og viser mærkatet
+  »Kalliope«. Kan også bruges på `<footnote>` og kombineres med `type`.
+  Udelad attributten på forfatterens egne noter og ved ukendt ophav.
 - `lang`: sprog for noten; default er `da`.
 - `unknown-original-by`: digter-id. Giver noten typen `unknown-original` og bruges som oversaettelsesreference.
 

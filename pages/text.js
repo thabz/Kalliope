@@ -324,7 +324,7 @@ const TextPage = (props) => {
       .filter((note) => note.type !== 'unknown-original')
       .map((note, i) => {
         return (
-          <Note key={keyPrefix + i} type={note.type}>
+          <Note key={keyPrefix + i} type={note.type} editorial={note.editorial}>
             <TextContent
               contentHtml={note.content_html}
               contentLang={note.content_lang}
@@ -361,7 +361,7 @@ const TextPage = (props) => {
         }
       );
       return (
-        <Note key={'unknown' + i} type={'unknown-original'}>
+        <Note key={'unknown' + i} type={'unknown-original'} editorial={note.editorial}>
           <>
             <TextContent
               contentHtml={[[html, { html: true }]]}

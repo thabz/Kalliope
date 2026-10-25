@@ -417,7 +417,7 @@ const renderXmlString = (inputString) => {
           first.textContent = first.textContent.replace(/^\s*\*+(?:\))?\s*/, '');
         }
         const noteContent = handle_nodes(note.childNodes);
-        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} />;
+        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} editorial={node.getAttribute('editorial') === 'true'} />;
       }
       case 'sc':
         return (
