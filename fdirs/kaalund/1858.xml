@@ -8,8 +8,8 @@
     <runeberg-book>etforaar</runeberg-book>
   </identifiers>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture src="1858-p1.jpg">Titelbladet til <i>Et Foraar</i> (1858) lyder ,,Et Foraar. // Digte, / ældre og nyere / af / H. V. Kaalund. // Kjøbenhavn. / Jacob Lunds Forlag. — Louis Kleins Bogtrykkeri. / 1858.''.</picture>
@@ -327,7 +327,7 @@ Jord til en Grav!
   <title>Hilsen til Thorvaldsen</title>
   <firstline>Vær velkommen Søn af gamle Norden</firstline>
   <notes>
-    <note>Billedhuggeren <a person="thorvaldsen">Bertel Thorvaldsen</a> (1770-1844) vendte i 1838 tilbage til Danmark fra Rom, hvor han havde boet og virket i fyrre år.</note>
+    <note editorial="true">Billedhuggeren <a person="thorvaldsen">Bertel Thorvaldsen</a> (1770-1844) vendte i 1838 tilbage til Danmark fra Rom, hvor han havde boet og virket i fyrre år.</note>
   </notes>
   <source pages="13-15"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2467,7 +2467,7 @@ Ham syntes Folk dernede saa underlige smaae.
 Selv Keiseren, den mægtige, blev ganske lillebitte;
 Blytækkeren ham kunde blandt Vrimlen neppe hitte.
 
-Ham, hvem man kaldte stor, hvis Magt var uhyre<note>uhyre] nhyre</note>,
+Ham, hvem man kaldte stor, hvis Magt var uhyre<note editorial="true">uhyre] nhyre</note>,
 Saae ud fra Taarnets Spiir kun som en lille Myre.
 
 Paa Pladsen foran Templet, der sad han paa Stolen;
@@ -3848,7 +3848,7 @@ Og trssted sig ved Nattergalens Trille.
   <title>Keiserkronen</title>
   <firstline>See, hvilken Blomst, hvor rank og skjøn!</firstline>
   <notes>
-    <note>* Paa Bagsiden af hvert af Keiserkronens Blomsterblade findes en Fordybning, som indeslutter en stor, klar Draabe.</note>
+    <note>Paa Bagsiden af hvert af Keiserkronens Blomsterblade findes en Fordybning, som indeslutter en stor, klar Draabe.</note>
   </notes>
   <source pages="140"/>
   <keywords>balladestrofe</keywords>
@@ -4218,7 +4218,7 @@ Mens Vandet kjøligt i den ydre strømmed,
 I hiin man skued en Kanarifugl,
 I denne nogle gyldne Fiske svømmed.
 
-De dreiede<note>dreiede] driede</note> og drejede sig om,
+De dreiede<note editorial="true">dreiede] driede</note> og drejede sig om,
 Ret som de Verden ei et Blik gad skjænke;
 Det gik i samme dumme Kredsgang, som
 De følte sig for stolte til at tænke.
@@ -5339,7 +5339,7 @@ Mig til Manden, som jeg ikke elsker.''
   <subtitle>(Efter Daumer)</subtitle>
   <firstline>Ned paa Olympos' høie Top</firstline>
   <notes>
-    <note>Gendigtning af Georg Friedrich Daumers <xref type="translation" poem="daumer2026072301"/>.</note>
+    <note editorial="true">Gendigtning af Georg Friedrich Daumers <xref type="translation" poem="daumer2026072301"/>.</note>
   </notes>
   <source pages="197-198"/>
   <quality>korrektur1,kilde,side</quality>

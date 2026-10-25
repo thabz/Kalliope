@@ -1,0 +1,836 @@
+{
+  "reviewDate": "2026-10-25",
+  "baseCommit": "800ccf89c",
+  "inventoryHash": "fb6aa2d073b478345346259d1dfac52d610d55888702252f954d8a25408d8c5a",
+  "groups": [
+    {
+      "reason": "Kort forklaring, henvisning eller identifikation uden sikker angivelse af ophav i XML eller den gennemgåede importhistorik.",
+      "files": {
+        "fdirs/aakjaer/1906.xml": [
+          {
+            "scope": "aakjaer2000092426",
+            "hash": "b0acfcd4c1b3c8ea7307cd273aa063c65b23ddad653aa08c0981a9c5e343f6a8"
+          }
+        ],
+        "fdirs/aakjaer/1910.xml": [
+          {
+            "scope": "aakjaer2002072719",
+            "hash": "9b973f872c15619c32ae7e87b0f0fea08ad3ba4e8dc9814c5751472d11091161"
+          }
+        ],
+        "fdirs/aakjaer/1924.xml": [
+          {
+            "scope": "aakjaer2001072202",
+            "hash": "2be4b7c9b88fb174af0ded1bd802f0d43c8fd4ec424d6233242fa643f0fa8f04"
+          }
+        ],
+        "fdirs/aarestrup/1976-1.xml": [
+          {
+            "scope": "aarestrup200209298",
+            "hash": "4ff4893806c001017e2821f8b9983a48c6b2f4caf7f26486674b012f11f647aa"
+          }
+        ],
+        "fdirs/aarestrup/1976-4.xml": [
+          {
+            "scope": "aarestrup1999030304",
+            "hash": "87741a4b36819f4a95d0241f3ef88406f8d23a2750dd5c6f71d82445d2740f62"
+          }
+        ],
+        "fdirs/anonym1700de/andre.xml": [
+          {
+            "scope": "anonym2018091601",
+            "hash": "2ffdf466c535e4591c98cb9c7ee82124259ac128d6febabc86fa34925c34d104"
+          }
+        ],
+        "fdirs/antologierdk/1914-dansk-renaissance-digtning.xml": [
+          {
+            "scope": "bachjn2002103101",
+            "hash": "0ef769df7c7c32c589cc84eab1d3edcc492d24313493fc8d59efc01ddb457b39"
+          },
+          {
+            "scope": "bachjn2002103102",
+            "hash": "b1c8f3774054599c7b854f3d94d27ed67d6294552c3bba525d3847cb813d8d2f"
+          }
+        ],
+        "fdirs/arentzen/1888.xml": [
+          {
+            "scope": "arentzen20190112110",
+            "hash": "911b64c7dd7e3532a747f7516da6ca93d8cf11a7bf25e646d7705e99c799eafc"
+          }
+        ],
+        "fdirs/baggesen/1791.xml": [
+          {
+            "scope": "baggesen2019080336",
+            "hash": "32fc924d49812b9e36cc7e37786f44769f918d261bcbca8d637fd541fd75c0ac"
+          }
+        ],
+        "fdirs/baggesen/1845-1.xml": [
+          {
+            "scope": "baggesen200111109",
+            "hash": "6680a7d264380cdd8d72e53d4f2f9b3fdbc0ff1770759a263d56d93c96e1306d"
+          },
+          {
+            "scope": "baggesen200111109",
+            "hash": "b2d2fe58cd9afb51976e75cc511aed3901ae4a3ed43f8f5819adc077f13699bd"
+          },
+          {
+            "scope": "baggesen200111109",
+            "hash": "9faf54272c05d360f1d96a98552fbc1867d60216bd8be44850a9b1cd1dc8c0da"
+          }
+        ],
+        "fdirs/bang/p1879.xml": [
+          {
+            "scope": "bang1999050202",
+            "hash": "c987783d178bb59dcf39c90c714e2e2964114f8f05d187d64a2707877d7f6355"
+          }
+        ],
+        "fdirs/brorson/1951-3.xml": [
+          {
+            "scope": "brorson1765a3",
+            "hash": "67dfa5a79ccb3548c486715e0e768e0b20283fc73cc567d49cf27e0cdabe99b6"
+          }
+        ],
+        "fdirs/burns/andre.xml": [
+          {
+            "scope": "burns2006071601",
+            "hash": "25bb770281a20811ad619463319d0389c94340768ab8fbc874276b5b887897b5"
+          },
+          {
+            "scope": "burns2006071601",
+            "hash": "58c15aa3ed9d2d9b98882c146ccfd674db06151aa2441dc62767482e54ed339d"
+          },
+          {
+            "scope": "burns2006071601",
+            "hash": "0bd5aba3d222bcf607dbdd451e04a1f7ccfd4b4836d961796efa85f60fcc30fc"
+          },
+          {
+            "scope": "burns2006071601",
+            "hash": "d5e90303ba5f8797119d275f2937f5b9f2194f87ab10f6c48beebe2ceec67d8e"
+          },
+          {
+            "scope": "burns2006071601",
+            "hash": "b1983aed75e12805007d12abf79c7a604128b82c098318405dfcb9e8975643d2"
+          }
+        ],
+        "fdirs/claussen/1930.xml": [
+          {
+            "scope": "claussen20010414b31",
+            "hash": "f8304e765d128184abd4494618bd616f5befa0f2c43a6a0110c97132958d02c7"
+          },
+          {
+            "scope": "claussen20010414b31",
+            "hash": "32fea678eb445db5a9f86ab7bf69538e481fe952f808d3f7bcc2be49a0a0a3c4"
+          }
+        ],
+        "fdirs/cowper/andre.xml": [
+          {
+            "scope": "cowper2019013101",
+            "hash": "2b2108485f894ffecef5a1b28add312703a552098511fef3e39a75e57d7f3022"
+          }
+        ],
+        "fdirs/folkeviser/folke.xml": [
+          {
+            "scope": "folke2001032504",
+            "hash": "27b1225b932c5289080f1c2a77397eb1b433a1654c26bf7de7fe8b6d6b3e9dbc"
+          },
+          {
+            "scope": "folke2001032505",
+            "hash": "93f2bd8c6a4b13346f29c2db688617c3167fb0e5484ed7f7d1493ca30f784137"
+          }
+        ],
+        "fdirs/frandsen/1556.xml": [
+          {
+            "scope": "frandsen2003032303",
+            "hash": "290503dfd8a3c60b5ed5f49d309b5b8d30908bf3338bf6cc25e9aed5897fc11c"
+          }
+        ],
+        "fdirs/goethe/andre.xml": [
+          {
+            "scope": "goethe2003060101",
+            "hash": "f84f1fcad1ae3afc33ea7fee2924f255508ec0864cb171272b2f664aff65844b"
+          }
+        ],
+        "fdirs/heibergjl/andre.xml": [
+          {
+            "scope": "heibergjl2001061601",
+            "hash": "3b7b377141fbe26d5390f109e534676a26e66fdd75bed06bd0da0c53633bf2e6"
+          }
+        ],
+        "fdirs/hervey/andre.xml": [
+          {
+            "scope": "hervey2019090301",
+            "hash": "b4ed8802b08ee24053c6a7c3db5e14458ae7d959e355b287cb80aa95b0d3611d"
+          }
+        ],
+        "fdirs/holst/1843.xml": [
+          {
+            "scope": "holst2001042501",
+            "hash": "808d942ccbcd8297f556d0d39c11fc271f3555ad7a3591f7c5d712133f0281da"
+          }
+        ],
+        "fdirs/larsent/1920.xml": [
+          {
+            "scope": "larsent200103048",
+            "hash": "e71c39b68fa89420db40d4ee251dc8339634e9bcf481df83c754a59a271541a3"
+          }
+        ],
+        "fdirs/munk/1944.xml": [
+          {
+            "scope": "munk2017090207",
+            "hash": "69aaca82c6547e14c3e4d1064f70af653e6aa1d3f50c4fafa9b919fa8a647917"
+          }
+        ],
+        "fdirs/mylius/1904.xml": [
+          {
+            "scope": "mylius2017110519",
+            "hash": "60bea6ab3ea844d598fbf2d8f98944207bb36719e2cc3e6e3e59cf5ea889c7c0"
+          }
+        ],
+        "fdirs/oehlenschlaeger/1860-22.xml": [
+          {
+            "scope": "oehlenschlaeger2019021836",
+            "hash": "36a8ff5eaa61664f8fe87934f3bc2b26508fae7d801f26e14bbb8bd54ab78465"
+          },
+          {
+            "scope": "oehlenschlaeger2019021836",
+            "hash": "ebe19a453877abdcd05017874358b481d854445c0468fcc7516324c10156a342"
+          },
+          {
+            "scope": "oehlenschlaeger2019021836",
+            "hash": "db024fc4ccc8bebf60b3e61f43789dfa9287ca0f60db7b8debb0fa74a905fcc9"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "d5e81d97e0f0e99ba17456fdd4c374edfcb35b698086e682e9d3167f92f808bb"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "fde379ade419bb9e850f73d8154c7aea13c542534acceffbe9aa8d3859e06576"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "6296d1914f82de4c8bd4b991612440b0df9fe30577687e6cf90a3078c2bb5d1a"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "f23e0b5b054f6708c11921afcd56bb1d9efe7582166cf7b7e2e8b3471719dcc8"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "15d02a25222dc0a469e45a8a0a643688a9e695fbc64989eb4a929efcb293bd99"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "58d4970a1e0f6de1ebfbb187759673937e3b94ead7c6864894a8bfd79029c69c"
+          },
+          {
+            "scope": "oehlenschlaeger2019021871",
+            "hash": "c1b4f1df0b9a97093cb15bc58d8e318bfa19e638b0a2da38dd74273f139bd17d"
+          }
+        ],
+        "fdirs/pope/andre.xml": [
+          {
+            "scope": "pope2018122801",
+            "hash": "be80ff48c9d1dee00f3b0160aa67b153fbb6b2bfea007a38fd934618d93da58d"
+          },
+          {
+            "scope": "pope2018122801",
+            "hash": "802127eb97c0eaa7afb9ffef75986520c6a33eda58c7ed27dfd15f1790381e66"
+          },
+          {
+            "scope": "pope2018122801",
+            "hash": "5f7c333dc48fbc4a161556c65dd584a4878a44f79f6389f82bfa3c671bd89655"
+          }
+        ],
+        "fdirs/rahbek/1817.xml": [
+          {
+            "scope": "rahbek2019021302",
+            "hash": "9e06058dc9d9f19348f6b9963161efb6eef7f00263988bb06bb82199a7b971a9"
+          }
+        ],
+        "fdirs/reenberg/1972.xml": [
+          {
+            "scope": "reenberg2002103106",
+            "hash": "338b47acaa5bc8140d6fc9ac9e815637efbc16820c074379c423b9b798672319"
+          }
+        ],
+        "fdirs/richardt/1895-2.xml": [
+          {
+            "scope": "richardt2019073172",
+            "hash": "3c94253651a2887d276d180d95f2affa9896e75744fbb029d8ffd81debf0fcfe"
+          }
+        ],
+        "fdirs/rilke/andre.xml": [
+          {
+            "scope": "rilke2002080303",
+            "hash": "a8e234126b47ef7da450728d10c69ab67dee1323b3d270a046e67f8af4e8d4a6"
+          }
+        ],
+        "fdirs/schandrup/andre.xml": [
+          {
+            "scope": "schandrup2002032901",
+            "hash": "0fcc64acc46ae1fc4c7d5920f7e3c0ef3b60443e285d8ea11c1c621b12ca1759"
+          }
+        ],
+        "fdirs/stub/1972-2.xml": [
+          {
+            "scope": "stub2026101301",
+            "hash": "7214d4f3bf73974f9a14f04a70527a62f34839795347d18d0c5df32aef5108a0"
+          },
+          {
+            "scope": "stub2026101301",
+            "hash": "85c134b7c31ab33591041d0f4b0b6221843b10e01e4569fb030ffb5ff5c45f15"
+          },
+          {
+            "scope": "stub2026101301",
+            "hash": "9fb22ce6c2c5d124f287e5f9aa762718305796cef0c2f98d5c46963fd6207114"
+          }
+        ],
+        "fdirs/terkelsen/1648.xml": [
+          {
+            "scope": "terkelsen2001030801",
+            "hash": "1d96dedbf4c09739da198ada7f93e22d5afab8213e824fd2919abe9130687564"
+          }
+        ],
+        "fdirs/wessel/1772.xml": [
+          {
+            "scope": "wessel1999030802a",
+            "hash": "3268ac45b07b2d165eae1e6e53472e7dd12d7209a70964fbd68d186054f9fc35"
+          },
+          {
+            "scope": "wessel1999030802a",
+            "hash": "c70f65c8785c046b1075c018b5f9a63caa80ac49623247f23d7023cc355eaf75"
+          },
+          {
+            "scope": "wessel2002092101j",
+            "hash": "b1167b5b2019b0dad51e611ceec07de263050f4933f8ef9b4ad0987eaad66d86"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "Kort datering uden oplysning om, hvorvidt den er overført fra trykket eller tilføjet af Kalliope.",
+      "files": {
+        "fdirs/aakjaer/1916.xml": [
+          {
+            "scope": "aakjer2000042204",
+            "hash": "f69a14e911e9a3c70ab4046cf5049aefc110674dd7b560c7efcafa09e40704ac"
+          }
+        ],
+        "fdirs/aakjaer/andre.xml": [
+          {
+            "scope": "aakjaer2002051806",
+            "hash": "deba8a65c008f3a52c2563337463d139f4c83b4054352d36e36ad38a49f67ea5"
+          }
+        ],
+        "fdirs/aarestrup/1863.xml": [
+          {
+            "scope": "aarestrup2002022004",
+            "hash": "b93010b99a31e1f533736097ac3a88757ef9b0d8d39a96966dbad9ea885f6738"
+          }
+        ],
+        "fdirs/aarestrup/1976-5.xml": [
+          {
+            "scope": "aarestrup2019020217",
+            "hash": "b93010b99a31e1f533736097ac3a88757ef9b0d8d39a96966dbad9ea885f6738"
+          }
+        ],
+        "fdirs/andersen/1847.xml": [
+          {
+            "scope": "andersen2001122902",
+            "hash": "90c4b5b87c9d6d54959d0237b466be078d356f3379f16e7b5d2c81d3309cda5f"
+          }
+        ],
+        "fdirs/andersen/andre.xml": [
+          {
+            "scope": "andersen2001122901",
+            "hash": "a347a67faee507ba7257845c1318e6c9b80acd2ca6adaca441813cd16571fa23"
+          }
+        ],
+        "fdirs/antologierdk/1852-romancer-og-sange.xml": [
+          {
+            "scope": "jetsmark2001123001",
+            "hash": "5d81cedfe0e4402da50b0410593e5c3182dbc23fc6a08a3c9f3803bb83970024"
+          }
+        ],
+        "fdirs/antologierdk/1947-fest-sange.xml": [
+          {
+            "scope": "frankenau2001122801",
+            "hash": "f95692fa49baad69558aa72a04c83d787d55ae2d6c873b6c305626d26688ba12"
+          }
+        ],
+        "fdirs/beranger/1839.xml": [
+          {
+            "scope": "beranger2018010302",
+            "hash": "ee74526644d80e0b5a2b4cd07142f298740d661d9ee0f7ccaa0ea2cb42d0b59f"
+          },
+          {
+            "scope": "beranger2018010301",
+            "hash": "2aad0032927fd35745a2002fde446853d572d3d0c834a37394bf2abc298376f8"
+          }
+        ],
+        "fdirs/bergsoe/1867.xml": [
+          {
+            "scope": "bergsoe1999110901",
+            "hash": "a5c5963b81a7b368d22bf6c58de298f41bc1f5874f468e784416b316e08920ea"
+          }
+        ],
+        "fdirs/blicher/andre.xml": [
+          {
+            "scope": "blicher2002050901",
+            "hash": "90c4b5b87c9d6d54959d0237b466be078d356f3379f16e7b5d2c81d3309cda5f"
+          },
+          {
+            "scope": "blicher2002050903",
+            "hash": "78bcc2ed07ca574b2a1cbd4cd31cb9601f9432eb21f5062760cdd8f065fcade6"
+          }
+        ],
+        "fdirs/boyecj/andre.xml": [
+          {
+            "scope": "boyecj2002050901",
+            "hash": "0bb42895b3d0c0bde46ede577308052ffde319935c8151e83cee65f4d47b30cf"
+          }
+        ],
+        "fdirs/brorson/1951-2.xml": [
+          {
+            "scope": "brorsonandrea2",
+            "hash": "c2dd5c3eca0e36989fb12b2948adcbe128f06182c451a5bd97dbfc4d47e3711c"
+          }
+        ],
+        "fdirs/byron/andre.xml": [
+          {
+            "scope": "byron2019021201",
+            "hash": "ccf2d54686a2a4e6898bc0652861605b07770570fe0b5101538e41aef6e31c03"
+          }
+        ],
+        "fdirs/carducci/andre.xml": [
+          {
+            "scope": "carducci2001122501",
+            "hash": "9323b5788525cc280412e1b211c7c1cb057d446cb173465113aee2d084d8b07e"
+          }
+        ],
+        "fdirs/claudius/andre.xml": [
+          {
+            "scope": "claudius2001091301",
+            "hash": "323fd19d5afce078814f52a7f8a0de2721661f84cf4e71b726e515af8c028aa0"
+          },
+          {
+            "scope": "claudius2001102301",
+            "hash": "a0e97b318c090a7b64031332f2b5ee2b761e6f22c72e0f112d257dcd0ff17640"
+          }
+        ],
+        "fdirs/drachmann/1910.xml": [
+          {
+            "scope": "drachmann2002041301",
+            "hash": "8e5d0651790e32b7567febc3adbc47bf0d24d49ec873be800f22954d006ca31a"
+          }
+        ],
+        "fdirs/ewald/1969-1.xml": [
+          {
+            "scope": "ewald2005052114",
+            "hash": "6f59a85f67c6bdf1c1a7da90d2b05c14ad7406384fe5fde40add285e2b09679d"
+          }
+        ],
+        "fdirs/ewald/1969-2.xml": [
+          {
+            "scope": "ewald2005052112",
+            "hash": "dca40dc0eaa540d1ad51c568061544af003faf7c3a382ebd194295e9023c94a5"
+          },
+          {
+            "scope": "ewald2005052105",
+            "hash": "a3d131421f6fb2c641f62afcc36e99fbcdb4f2a0ba0114ef98a835924baf5cac"
+          },
+          {
+            "scope": "ewald2002122003",
+            "hash": "a3d131421f6fb2c641f62afcc36e99fbcdb4f2a0ba0114ef98a835924baf5cac"
+          }
+        ],
+        "fdirs/ewald/1969-3.xml": [
+          {
+            "scope": "ewald1999081402",
+            "hash": "895f8bcbe47a2fb3c3090de7fbff544848a06d0ff2757f83fcb9668711e9a423"
+          },
+          {
+            "scope": "ewald2001070101",
+            "hash": "5aab8aef3a1c61e59faafff6e757b60c55772ebc368cc081126f8e6fdccd4ce3"
+          },
+          {
+            "scope": "ewald2005052107",
+            "hash": "6398f2b89d7d803f7538d41b2b4648b70d1e2e8a569ba080395900ba7e511624"
+          },
+          {
+            "scope": "ewald2002122001",
+            "hash": "7e7994f98d6296dbe765d1644914f2a412a03512ae608d54c995598ba10bd264"
+          },
+          {
+            "scope": "ewald2005051802",
+            "hash": "68f48bb9fc53a2d8a027437d4245f28ed4585d97163892207c1c1147e7d7a0ae"
+          },
+          {
+            "scope": "ewald2002122002",
+            "hash": "7e7994f98d6296dbe765d1644914f2a412a03512ae608d54c995598ba10bd264"
+          },
+          {
+            "scope": "ewald2005052103",
+            "hash": "91a376fe2946d440457f25cc5128d557601c07bb7703c670bd2168df26ef879c"
+          },
+          {
+            "scope": "ewald2005052104",
+            "hash": "6f59a85f67c6bdf1c1a7da90d2b05c14ad7406384fe5fde40add285e2b09679d"
+          }
+        ],
+        "fdirs/ewald/1969-5.xml": [
+          {
+            "scope": "ewald2000070902",
+            "hash": "66fd1b3fca4ae636bdab9351f736ddb5193852e1a3ef3ad6f1b432feb555393d"
+          },
+          {
+            "scope": "ewald1999092201",
+            "hash": "9f594232bc16ad4589be525d3a2f14312ae09168e87f5988edd0ec3dc166501d"
+          },
+          {
+            "scope": "ewald2005052113",
+            "hash": "a3d131421f6fb2c641f62afcc36e99fbcdb4f2a0ba0114ef98a835924baf5cac"
+          }
+        ],
+        "fdirs/goethe/andre.xml": [
+          {
+            "scope": "goethe2000010801",
+            "hash": "41ba7e9f881838db0593ed5f26e4f8237b2dbbacadb985be1e1252551deb1e40"
+          }
+        ],
+        "fdirs/grundtvig/1810a.xml": [
+          {
+            "scope": "grundtvig2002010101",
+            "hash": "381c1b2e4a37a0edaf1f98749116e2c597609ea53cebb369c020496ea85982be"
+          }
+        ],
+        "fdirs/grundtvig/andre.xml": [
+          {
+            "scope": "grundtvig2002042701",
+            "hash": "dabb6ba5c793fb810d4b81619510cceccef5e3e1117d1b1ad751967f5e93ed9b"
+          },
+          {
+            "scope": "grundtvig2002050101",
+            "hash": "17e1794c7281c047fb27cdee2356aaddce62be78471b580ae4d4b5030147c472"
+          }
+        ],
+        "fdirs/heibergjl/1897.xml": [
+          {
+            "scope": "heiberg2002011303",
+            "hash": "17e1794c7281c047fb27cdee2356aaddce62be78471b580ae4d4b5030147c472"
+          }
+        ],
+        "fdirs/hoelderlin/1826.xml": [
+          {
+            "scope": "hoelderlin2000010501",
+            "hash": "5ea6b66d806e493c662837821bce96c35067dbce798075b95b309c8199767741"
+          },
+          {
+            "scope": "hoelderlin2000010504",
+            "hash": "c7a7e85e29d059b972fe7fd98a4868408e999b58ac297bd4852395e01bbfe97b"
+          }
+        ],
+        "fdirs/holty/andre.xml": [
+          {
+            "scope": "holty2001122801",
+            "hash": "fc798c2b2dc6ba59610af905757067e7eecd5756843f669bd7f6f45ae301ba04"
+          }
+        ],
+        "fdirs/hostrup/1884.xml": [
+          {
+            "scope": "hostrup2003011501",
+            "hash": "d9ccf19657396c22e85cb7f1e6c42a6887d0ffb827a1caf65f73b8753842fc88"
+          },
+          {
+            "scope": "hostrup2002050902",
+            "hash": "a9b1210f0d1f4e8d59ff192e297f237d02203af18d0f23bdad00d72bedfecd05"
+          },
+          {
+            "scope": "hostrup2002050903",
+            "hash": "20dc48444318823231521e3a37dc6dc2f11e2f308a6305ad987760efa6a1b385"
+          }
+        ],
+        "fdirs/ingemann/andre.xml": [
+          {
+            "scope": "ingemann2012050801",
+            "hash": "b5531a83afa196babe5f67d706d507524bf675be8fbd1afeeb51a7d0b5db0731"
+          }
+        ],
+        "fdirs/jacobsen/1928-4.xml": [
+          {
+            "scope": "jacobsen2001090103",
+            "hash": "3bbdc04abcafc1e679b9025d2943b4e145888b1c424f0b1646929f8a1c47eab2"
+          },
+          {
+            "scope": "jacobsen2001090102",
+            "hash": "738f7dfeb3c18db4f30297d979bc169a9236872ccac8df7f29f1577b9f8bcaeb"
+          },
+          {
+            "scope": "jacobsen2001090101",
+            "hash": "738f7dfeb3c18db4f30297d979bc169a9236872ccac8df7f29f1577b9f8bcaeb"
+          }
+        ],
+        "fdirs/klopstock/andre.xml": [
+          {
+            "scope": "klopstock2001102305",
+            "hash": "532eab76c00ab7813b7a94779cdefc32ff34da9aa10cb76267bcb933927dc4d1"
+          },
+          {
+            "scope": "klopstock2001102306",
+            "hash": "db6df28b6ee4f1d6cd45447170e098ec3ebdb91c8eb680eda2e9368f47394abf"
+          },
+          {
+            "scope": "klopstock2001102307",
+            "hash": "240efcd80eef866ccab24bbd06b3834da5189eb23df0c6571aae6732a79181ed"
+          },
+          {
+            "scope": "klopstock2001102308",
+            "hash": "db4b7bfa9253c4fd603f34814d5d40b3ae9c0b6306e626642bf8dfc223888211"
+          },
+          {
+            "scope": "klopstock2001102310",
+            "hash": "532eab76c00ab7813b7a94779cdefc32ff34da9aa10cb76267bcb933927dc4d1"
+          },
+          {
+            "scope": "klopstock2001102311",
+            "hash": "a4fe33422a76b268dc06c4e734d907fc30bd5245903506123ce2fb7a038538a0"
+          },
+          {
+            "scope": "klopstock2001102313",
+            "hash": "f199660840cdb2f3c85770bb50bb32834d201ed5978511e57e1e4c4a9ef39f2e"
+          },
+          {
+            "scope": "klopstock2001102314",
+            "hash": "d2f9a5e43dc2ce284bffde5d47a17687335da05bb6fa923d3562bc065ee0410a"
+          },
+          {
+            "scope": "klopstock2001102315",
+            "hash": "532eab76c00ab7813b7a94779cdefc32ff34da9aa10cb76267bcb933927dc4d1"
+          },
+          {
+            "scope": "klopstock2001102316",
+            "hash": "81362cb38e4e11055a9c0ec140c15d2f79216de7ae5939cbf0b991bb9e1b7f47"
+          },
+          {
+            "scope": "klopstock2001102317",
+            "hash": "a4fe33422a76b268dc06c4e734d907fc30bd5245903506123ce2fb7a038538a0"
+          },
+          {
+            "scope": "klopstock2001102318",
+            "hash": "70f37b27a1f1b26302968bfcad3d8d34b7ab3819e69b55862936d53fab0b4a60"
+          },
+          {
+            "scope": "klopstock2001102319",
+            "hash": "532eab76c00ab7813b7a94779cdefc32ff34da9aa10cb76267bcb933927dc4d1"
+          },
+          {
+            "scope": "klopstock2001102320",
+            "hash": "240efcd80eef866ccab24bbd06b3834da5189eb23df0c6571aae6732a79181ed"
+          },
+          {
+            "scope": "klopstock2001102320b",
+            "hash": "06984682a81b75c65e8e8e7769053df2a811704f4d519e425e422809db3b419c"
+          },
+          {
+            "scope": "klopstock2001102321",
+            "hash": "bbe268a983386df9afb3d92182e34ce119ddb8f782166c006942c8f0fa1ef424"
+          },
+          {
+            "scope": "klopstock2001102322",
+            "hash": "3487c3db7c388ddcc6a5659d49afa3539f669594c030dd35e93875da276320fc"
+          },
+          {
+            "scope": "klopstock2001102323",
+            "hash": "932fc56273d57a9f71ac3c76ce4e85438d605332d29c31ed16b8b2a460c1704e"
+          },
+          {
+            "scope": "klopstock2001102324",
+            "hash": "0951104b893447dc0ae76cea62b6ce1704cebbcf6e218c187da91a25fb840e31"
+          },
+          {
+            "scope": "klopstock2001102325",
+            "hash": "b7f7d128fbbb050d69154080745ba4baf9cc8a11f466e29c788c006b44565b23"
+          },
+          {
+            "scope": "klopstock2001102326",
+            "hash": "cb16bac1dc3de5e965f485e6d87a8d78ec6cde03f31ba6e82cb487c635e0e2db"
+          },
+          {
+            "scope": "klopstock2001102327",
+            "hash": "8499cc11866b94584e2e4a463b17eadc2e0a11588fd6b311141d563be7977ab2"
+          }
+        ],
+        "fdirs/luther/salmer.xml": [
+          {
+            "scope": "luther2000070915",
+            "hash": "efcf042f187f8326a230d10c356b1dea76872a42417eebcd2f4af436dea6b149"
+          }
+        ],
+        "fdirs/michaelis/andre.xml": [
+          {
+            "scope": "michaelis2002040101",
+            "hash": "a0eaee2a782ed4539bdd8de894322a2fcaa5dfb07923c9a6f4405762afaae3a5"
+          }
+        ],
+        "fdirs/nordrup/andre.xml": [
+          {
+            "scope": "nordrup2002032901",
+            "hash": "4ecb7fe4a3480b0635e53d6d5880b5e48d60c043375abb18ae68c89390b4d811"
+          }
+        ],
+        "fdirs/plough/andre.xml": [
+          {
+            "scope": "ploug2001123001",
+            "hash": "236cfc2f774dd1f69b6e7250a8c7319f13df8830cf9997954c7d0946b6eb7097"
+          }
+        ],
+        "fdirs/richardt/andre.xml": [
+          {
+            "scope": "richardt2002022301",
+            "hash": "7e38ae4840a00df42224f7e4c702d267c9ee19fabaae0f847fa478331629111e"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "Kort datering uden dokumenteret ophav.",
+      "files": {
+        "fdirs/aarestrup/1976-2.xml": [
+          {
+            "scope": "aarestrup2019012728",
+            "hash": "405506f79e95152a6587cd3e0d39eef1635fb6b7158e7adfbdd90a4e64ff0cf1"
+          }
+        ],
+        "fdirs/blicher/andre.xml": [
+          {
+            "scope": "blicherandrea0",
+            "hash": "9a86702c00931f765618910d59030939a8847db63e9b5a29e4c2ecb4b159a647"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "Ordforklaring: uklart om ordlyden er Kalliopes bearbejdning eller overført fra udgavens kommentarapparat. Værkets henvisning til Simonsen fastslår ikke den enkelte notes ophav.",
+      "files": {
+        "fdirs/antologierdk/1969-dansk-barokdigtning-1.xml": [
+          {
+            "scope": "reenberg2002111701",
+            "hash": "06cf76df2650d68203376e3390859e079c2a9f8831e79edf7554e9b9060684c2"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "3145fe7959d6b761c0bca8744d9862bee1b1d899e08703e55b3b0ccd314a4769"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "76f91d0895ea152538f724f0de20cd97d3aa98edfa066beaeeb67aefa8906316"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "3caed1296113fdda37299e4956b00ec89b7a7fdd24712ea18bdf32d2f4af141a"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "8040f71dc238739bea3ed70829352eef21b3aa372f78b8ebae434d9dc911c945"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "76bc17154d06a2fb23ae5e3ffa8a2b02026c6f749df385de6d751369f62bdd40"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "b3e54430e2f9f3aebead49643adfca6ac07407b7ddc6dc07f0e56a4d64e62bc0"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "9674f2fd37e2068ee977f39ddc6f6c5863f8ccadd6a490b2ab553766398715a6"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "ebfa4c09385acc3af4cfae55c4b068f9a0fe611cff46a2af7dc6d1a01d8d34bb"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "b5cf93fb4b8b25e16830a1ed1168600a1cccb8e46355e7e9afa6289740fe729a"
+          },
+          {
+            "scope": "reenberg2002111701",
+            "hash": "1a5bbaddb9c9318ce32a6dff988d3226d349250d3fdca4a5f59145ccb5e72af6"
+          }
+        ],
+        "fdirs/antologierdk/1982-verdslig-barok.xml": [
+          {
+            "scope": "reenberg2002110204",
+            "hash": "4e0780248071fbd05b1bd734f50647140ffc30d302ed9a49bfcfd864e4b9d66e"
+          },
+          {
+            "scope": "reenberg2002110204",
+            "hash": "f7678c30781b72122f61c7123e277f1e9954c508735a9d9d39e28f4029866540"
+          },
+          {
+            "scope": "reenberg2002110204",
+            "hash": "7c3dcf846088ba3196495d9e58bbeed3df435fda95c10984b3a9677d74129797"
+          },
+          {
+            "scope": "reenberg2002110205",
+            "hash": "8db93bc5bda84499c41c6bdd03c7ac621bfc9a3aa00c0446d8749d28fc29850b"
+          },
+          {
+            "scope": "reenberg2002110205",
+            "hash": "f13062e1207e98f09bd7ab3517c4667d1aaf9f57291196b74ca9e3c1c8d69464"
+          },
+          {
+            "scope": "reenberg2002110205",
+            "hash": "c88e8809abd684a9070e6a03f3fcb5c0bba148f0bcce46f67bb8763891bf1b07"
+          },
+          {
+            "scope": "reenberg2002110205",
+            "hash": "5a878c34994239227d409cc3375f2995b1a97420fd82d6d22c2771dcbc2f4cf3"
+          }
+        ]
+      }
+    },
+    {
+      "reason": "Mulig overført udgivertekst eller tredjepartstekst; ophavet kan ikke fastslås sikkert ud fra XML og den gennemgåede importhistorik.",
+      "files": {
+        "fdirs/brun/andre.xml": [
+          {
+            "scope": "brun2005071001",
+            "hash": "4741b90a74662d259996c213a39531be6eaa6dd00d6763dae4412727d2b3538c"
+          }
+        ],
+        "fdirs/ingemann/1837h.xml": [
+          {
+            "scope": "ingemann2005051605",
+            "hash": "fff092cb23dd154e4607fd09e859fd315e68d75c037b1a4c08f3e29eb44ba30e"
+          }
+        ],
+        "fdirs/ingemann/andre.xml": [
+          {
+            "scope": "work",
+            "hash": "c7fc4c377d58c4b3c759d7ed3409b0021b7227c4f6b5d8fb50ee372c979f7095"
+          }
+        ],
+        "fdirs/larsent/1925.xml": [
+          {
+            "scope": "larsent2001070312",
+            "hash": "2dc5889cc9a25dfe688105436e61663806732580bde4db2cfef3c43f954c1127"
+          }
+        ],
+        "fdirs/montgomery/1825.xml": [
+          {
+            "scope": "mont2000070901",
+            "hash": "116ac09f78aa1629c913ef4d1aa75586eb2939353f3666cf92af7a679f41abc5"
+          }
+        ],
+        "fdirs/mueller/1833.xml": [
+          {
+            "scope": "work",
+            "hash": "a4c36490a6131ff1f7d02c1fe7d4ae499064e274bb700f849533bbaf3136de79"
+          }
+        ]
+      }
+    }
+  ]
+}

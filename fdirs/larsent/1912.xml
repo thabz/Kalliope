@@ -7,8 +7,7 @@
     <picture type="titlepage" src="1912-p1.jpg"><transcription>Thøger Larsen / Bakker og Bølger / Digte // Kjøbenhavn og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / MDCCCCXII</transcription></picture>
   </pictures>
   <notes>
-    <note>Noter med foranstillet * er Thøger Larsens egne.</note>
-    <note>Bidrag fra Henrik Nielsen.</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122436957605763" facsimile="11530807498A_color" facsimile-pages-num="124" facsimile-pages-offset="6">
     <author id="larsent">Thøger Larsen</author>
@@ -270,7 +269,7 @@ sig med Fortabelsens Styrke.
   <subtitle><i>(En ung Mand til en ung Kvinde ved Søen)</i></subtitle>
   <firstline>Paa skønne Ben du skrider mod Søen blaa</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="20-21"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -503,7 +502,7 @@ strømmer nu Asiens Piger af Senge.
   <title>Jørgen Brønlund</title>
   <firstline>Mer ene var aldrig</firstline>
   <notes>
-    <note>Se evt. <a person="mylius">Mylius-Erichsens</a> biografi.</note>
+    <note editorial="true">Se evt. <a person="mylius">Mylius-Erichsens</a> biografi.</note>
   </notes>
   <source pages="30-32"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -711,7 +710,7 @@ og lukker Døren for de sorte Nætter.
   <subtitle>Kantate ved Studentersamfundets Rusfest Den 23. September 1911.</subtitle>
   <firstline>Solglimt fra de gamle Floder</firstline>
   <notes>
-    <note>* Et indlagt ældre Digt er her udeladt.</note>
+    <note>Et indlagt ældre Digt er her udeladt.</note>
   </notes>
   <source pages="40-46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1660,7 +1659,7 @@ Sultanens Taarn i røde Baand af Gry.
 Jeg rørt af Dagnings venstre Haand har drømt,
 en Stemme kurrede i Kroen ømt:
 »Op mine smaa, og kom med eders Skaal,
-før Fadet for den bedste Vin er tømt.«<note><i>Dagningens venstre Haand</i>, senere ændret til »Den falske Dagning« - en Lysning over Horisonten før den sande Dagning, velkendt Fænomen i Østerlandene.</note>
+før Fadet for den bedste Vin er tømt.«<note editorial="true"><i>Dagningens venstre Haand</i>, senere ændret til »Den falske Dagning« - en Lysning over Horisonten før den sande Dagning, velkendt Fænomen i Østerlandene.</note>
 
 <nonum>3.</nonum>
 Ved første Hanegal en søvnig Trop
@@ -1672,19 +1671,19 @@ vi vaagner aldrig mer ved Morgen op.«
 Nu vækker Nytaar gammel Drift af Blund -
 den tankefulde fandt en ensom Stund,
 mens Moses' »hvide Haand« af Vaarens Gren
-sprang ud - og Jesus aanded op af Grund.<note><i>Nytaaret</i> begynder i Persien ved Foraarsjævndøgn.<br/><i>Moses' hvide Haand</i> (<xref bible="bibel2mose04,6"/>) betegner Blomstring. Perserne mente, Jesu helbredende Magt boede i hans Aande.</note>
+sprang ud - og Jesus aanded op af Grund.<note editorial="true"><i>Nytaaret</i> begynder i Persien ved Foraarsjævndøgn.<br/><i>Moses' hvide Haand</i> (<xref bible="bibel2mose04,6"/>) betegner Blomstring. Perserne mente, Jesu helbredende Magt boede i hans Aande.</note>
 
 <nonum>5 (A 5, B 5).</nonum>
 Irám er med dens Roser sunken ned,
 og Jamshyds hellige Skaal, hvor ingen veed.
 Men endnu svulmer Druen som tilforn,
-og mangen Have gror ved Søens Bred.<note><i>Irám</i> plantet af Kong Shaddad, og nu sunken et Steds i Arabiens Sandørkener.<br/> <i>Jamshyd's hellige Skaal</i> kaldes i den engelske Tekst »Jamshyd's Seven-ring'd Cup.« De syv Ringe var Symboler paa de 7 Himle, de 7 Planeter, de 7 Have osv. Den var en » Divining Cup« (Spaadomsskaal eller Tempelskaal).</note>
+og mangen Have gror ved Søens Bred.<note editorial="true"><i>Irám</i> plantet af Kong Shaddad, og nu sunken et Steds i Arabiens Sandørkener.<br/> <i>Jamshyd's hellige Skaal</i> kaldes i den engelske Tekst »Jamshyd's Seven-ring'd Cup.« De syv Ringe var Symboler paa de 7 Himle, de 7 Planeter, de 7 Have osv. Den var en » Divining Cup« (Spaadomsskaal eller Tempelskaal).</note>
 
 <nonum>6.</nonum>
 Og David tier. Men med Kvidder fin
 paa Pehlevi om »Vin, Vin, Vin - <i>rød</i> Vin!«
 styrker en Nattergal den stille Gløds
-Inkarnation i Rosernes Karmin.<note>I den engelske Tekst (B) staar:
+Inkarnation i Rosernes Karmin.<note editorial="true">I den engelske Tekst (B) staar:
 <poetry lang="en">
 »Wine! Wine! Wine!
 Red Wine!« - the Nightingale cries to the Rose
@@ -1714,7 +1713,7 @@ vil lade Kaikobad og Jamshyd dø.
 Ja, lad dem dø. Og følg saa med mig, du!
 Lad fare Kaikobad og Kaikhosru!
 Lad Zál og Rustum prale, som de vil!
-Tænk ej paa Hátims Nadver mere nu!<note><i>Zal</i>, Rustums Fader. Rustum, Persiens »Herkules«. <i>Hátin Tái</i>, en kendt østerlandsk Type paa Gavmildhed.</note>
+Tænk ej paa Hátims Nadver mere nu!<note editorial="true"><i>Zal</i>, Rustums Fader. Rustum, Persiens »Herkules«. <i>Hátin Tái</i>, en kendt østerlandsk Type paa Gavmildhed.</note>
 
 <nonum>11 (A 10).</nonum>
 Saa vandrer vi, hvor Græsset sparsomt staar,
@@ -1750,7 +1749,7 @@ sin Time eller to - og drog sin Vej.
 Løven og Øglen ejer hvert Gemak,
 hvor Jamshyd fordum funklede og drak.
 Uænset stamper nu Vildæslets Hov,
-hvor Bahram Jæger Jorden om sig trak.<note><i>Jamshyd</i>. Persepolis kaldes ogsaa <i>Takht-i-Jamshyd</i> c: Jamshyds Trone. Jamshyd, »Kong Herlig« (King Splendid), af det mytiske <i>Peshdádiske</i> Dynasti skal ifølge »Sháhnáma« have grundlagt og bygget Persepolis. Efter andre Sagn er Pyramidebyggeren, Sagn kongen Ján-Ibn-Ján, der levede »før Adam,« Byens Grundlægger. Dens virkelige Grundlægger er sandsynligvis Dareios I, som i hvert Fald udvidede den.<br/> <i>Bahrám Gúr</i> - den store Jæger (»Bahram af Vildæslet«), en sassanidisk Hersker, der forfølgende sin »Gúr« forsvandt i en Mose, som de persiske Bønder endnu paaviser tillige med tre Taarnruiner fra hans 7 Slotte, af hvilke hver havde huset en Elskerinde.<br/> Mr. Binning fandt - iflg. Fitzgerald - blandt forskellige Strofer af Hafiz og andre, indskrevne af en eller anden Omstrejfers Haand iblandt Persepolis' Ruiner, en Rubai, der kan gengives saaledes:
+hvor Bahram Jæger Jorden om sig trak.<note editorial="true"><i>Jamshyd</i>. Persepolis kaldes ogsaa <i>Takht-i-Jamshyd</i> c: Jamshyds Trone. Jamshyd, »Kong Herlig« (King Splendid), af det mytiske <i>Peshdádiske</i> Dynasti skal ifølge »Sháhnáma« have grundlagt og bygget Persepolis. Efter andre Sagn er Pyramidebyggeren, Sagn kongen Ján-Ibn-Ján, der levede »før Adam,« Byens Grundlægger. Dens virkelige Grundlægger er sandsynligvis Dareios I, som i hvert Fald udvidede den.<br/> <i>Bahrám Gúr</i> - den store Jæger (»Bahram af Vildæslet«), en sassanidisk Hersker, der forfølgende sin »Gúr« forsvandt i en Mose, som de persiske Bønder endnu paaviser tillige med tre Taarnruiner fra hans 7 Slotte, af hvilke hver havde huset en Elskerinde.<br/> Mr. Binning fandt - iflg. Fitzgerald - blandt forskellige Strofer af Hafiz og andre, indskrevne af en eller anden Omstrejfers Haand iblandt Persepolis' Ruiner, en Rubai, der kan gengives saaledes:
 <poetry>
 Jeg saa de Søjler hæve sig endnu,
 hvor Konger laa for Dør med tynget Hu.
@@ -1775,7 +1774,7 @@ fra Læber, der engang fik ømme Kys.
 Min Elskede! Fyld Skaalen, hvor <i>Idag</i>
 er fri for Fremtids Frygt og Fortids Nag.
 <i>Imorgen</i>? Da er jeg kanske Mig Selv
-med syv Aartusinders <i>Igaar</i> lagt bag.<note><i>Syv Aartusinders Igaar</i>, et Aartusinde for hver Planet.</note>
+med syv Aartusinders <i>Igaar</i> lagt bag.<note editorial="true"><i>Syv Aartusinders Igaar</i>, et Aartusinde for hver Planet.</note>
 
 <nonum>20.</nonum>
 Se - nogle, til hvis Fane dyrt vi svor,
@@ -1799,7 +1798,7 @@ al Vin, al Verden og al Evighed.
 Til dem, der gør sig med <i>Idag</i> Besvær,
 og dem, der rastløst mod <i>Imorgen</i> ser,
 raaber en Muezzin fra Mørkets Taarn:
-»I Daarer! Ingen Løn I finder der.«<note><i>Muezzin</i>, en, der raaber til Bøn fra Moskeens Taarn.</note>
+»I Daarer! Ingen Løn I finder der.«<note editorial="true"><i>Muezzin</i>, en, der raaber til Bøn fra Moskeens Taarn.</note>
 
 <nonum>24.</nonum>
 De hellige og vise Mænd, hvis Ord
@@ -1829,7 +1828,7 @@ Jeg drager bort, som Vinden gennem Ørk -
 Fra Dybets syvende Port jeg Slaaen skød,
 steg til Saturn, mens undervejs jeg brød
 saa mangen Gaades Segl, men ej det Segl,
-der lukker for vor Skæbne og vor Død.<note><i>Saturn</i>: Herskeren i den syvende Himmel (Datidens »yderste Planet«).</note>
+der lukker for vor Skæbne og vor Død.<note editorial="true"><i>Saturn</i>: Herskeren i den syvende Himmel (Datidens »yderste Planet«).</note>
 
 <nonum>29.</nonum>
 Der var en Dør, min Evne aabned ej,
@@ -1847,7 +1846,7 @@ formummede i Slæb af Dag og Nat.
 Da fra det DIG I MIG, som hyller ind
 bag Slør sin Virken, bad jeg: »Giv mit Sind
 en Lygte her i Mørket.« Og det lød
-som fra derude: JEG I DIG <i>er blind</i>.«<note>DIG OG MIG: Alnaturen og Individet. <i>Du</i> og <i>jeg</i> i Strofe 29 har egentlig samme Betydning, men denne synes ikke der at udvide Følelsen. Snarere synes den simple Opfattelse af »Du og jeg« som Ord, henvendte fra det ene Menneske til andet, at gribe stærkest.<br/> Strofe 31 kan efter Udgave A gengives saaledes:
+som fra derude: JEG I DIG <i>er blind</i>.«<note editorial="true">DIG OG MIG: Alnaturen og Individet. <i>Du</i> og <i>jeg</i> i Strofe 29 har egentlig samme Betydning, men denne synes ikke der at udvide Følelsen. Snarere synes den simple Opfattelse af »Du og jeg« som Ord, henvendte fra det ene Menneske til andet, at gribe stærkest.<br/> Strofe 31 kan efter Udgave A gengives saaledes:
 <poetry>
 »Da raabte jeg mod Himlens Hvælving klar:
 »O sig mig, hvilken Lygte Skæbnen har
@@ -1872,7 +1871,7 @@ Jeg kyssede dens kolde Læbe ømt:
 Ja, fyld min Skaal! Hvi spilde mere Mod
 paa Tid, som skubber Verden fra vor Fod?
 Ufødt <i>Imorgen</i> og et dødt <i>Igaar</i> -
-hvi ænse dem, naar blot <i>Idag</i> er god?<note>Denne Strofe og Strofe 46 er vistnok to Varianter af samme Rubai. I de to benyttede Udgaver findes i hver kun den ene af dem.</note>
+hvi ænse dem, naar blot <i>Idag</i> er god?<note editorial="true">Denne Strofe og Strofe 46 er vistnok to Varianter af samme Rubai. I de to benyttede Udgaver findes i hver kun den ene af dem.</note>
 
 <nonum>35 (A 47).</nonum>
 Og ender Vin og Kyssets Salighed
@@ -1884,7 +1883,7 @@ og mindre bli'r du ej i Evighed.
 Naar Englen med det sorte Bægers Blink
 da finder dig ved Flodens Sommerbrink -
 kys kun den Skaal, som gør din Mund til Muld,
-og tøm den uden Skælven paa hans Vink.<note><i>Englen</i> er Azräel, som ifølge en østerlandsk Legende mildner sin Mission ved, idet han rækker Dødens Skaal, samtidig at holde et Æble fra Livets Træ for den døendes Næsebor.</note>
+og tøm den uden Skælven paa hans Vink.<note editorial="true"><i>Englen</i> er Azräel, som ifølge en østerlandsk Legende mildner sin Mission ved, idet han rækker Dødens Skaal, samtidig at holde et Æble fra Livets Træ for den døendes Næsebor.</note>
 
 37 (B 44).
 Thi kunde Sjælen Støvet af sig flaa
@@ -1896,13 +1895,13 @@ i Lerets Hylster længere at gaa?
 Det er kun Teltet, hvor en Sultan bor
 en Dag paa Vej til Riget under Jord.
 Sultanen rejser, og en sort Ferrásh
-bereder Teltet for en ny Beboer.<note><i>Ferrásh</i> c: Tæppebreder.</note>
+bereder Teltet for en ny Beboer.<note editorial="true"><i>Ferrásh</i> c: Tæppebreder.</note>
 
 <nonum>39 (B 46).</nonum>
 Og frygt kun ej, at Livet efter vort
 vil miste noget, naar vi rejser bort.
 Den evige Sáki har af Bobler blæst
-utallige lig os - og farer fort.<note><i>Sáki</i> c: Vinskænker (her kvindelig).</note>
+utallige lig os - og farer fort.<note editorial="true"><i>Sáki</i> c: Vinskænker (her kvindelig).</note>
 
 <nonum>40 (B 47).</nonum>
 Naar du og jeg forlængst bag Sløret gled,
@@ -1920,13 +1919,13 @@ mod <i>Intets</i> Morgengry af Sted, af Sted!
 Et Haar maaske adskiller Falsk og Sandt;
 maaske et enkelt Ciffer, ingen fandt,
 var Nøglen til de skjulte Skatte - ja
-kanhænde <i>Mesteren</i> gik midt iblandt.<note><i>Et enkelt Ciffer</i>. I den engelske Tekst staar: »a single Alif«.</note>
+kanhænde <i>Mesteren</i> gik midt iblandt.<note editorial="true"><i>Et enkelt Ciffer</i>. I den engelske Tekst staar: »a single Alif«.</note>
 
 <nonum>43 (B 51).</nonum>
 <i>Han Selv</i> fordulgt i alles Aarer gaar;
 han gækker al den Søgen, <i>vi</i> formaar,
 tager hver Ham - fra Máh til Máhi - se,
-han skifter dem, de dør; men <i>han</i> bestaar.<note><i>Fra Máh til Máhi</i> c: fra Fisk til Maane.</note>
+han skifter dem, de dør; men <i>han</i> bestaar.<note editorial="true"><i>Fra Máh til Máhi</i> c: fra Fisk til Maane.</note>
 
 <nonum>44 (B 52).</nonum>
 Et Gaaders Nu saa svinde som et Skælv
@@ -1944,7 +1943,7 @@ og op mod Himlens lukte Dør du ser
 Om mine Regnestykker Rygtet gaar,
 at de har skabt et mer nøjagtigt Aar -
 ak nej; jeg strøg kun af min Almanak
-Ufødt og Dødt: <i>Imorgen</i> og <i>Igaar</i>.<note>Omar var en af de 8 lærde Mænd, der fik Hvervet at forbedre den gamle Kalender (Jamshyd's Kalender), hvorved en ny Tidsberegning indførtes, der endog overgik den julianske i Nøjagtighed.</note>
+Ufødt og Dødt: <i>Imorgen</i> og <i>Igaar</i>.<note editorial="true">Omar var en af de 8 lærde Mænd, der fik Hvervet at forbedre den gamle Kalender (Jamshyd's Kalender), hvorved en ny Tidsberegning indførtes, der endog overgik den julianske i Nøjagtighed.</note>
 
 <nonum>47 (B 55).</nonum>
 Jeg holdt et Gilde nys med Svir og Sang,
@@ -1962,7 +1961,7 @@ forvandler Livets graa Metal til Guld.
 Hvor sælsomt, at de mange, som før mig
 befôr den Dal, som Solen kender ej
 blev alle borte. Jeg har aldrig hørt
-fra nogen, der har vandret denne Vej.<note>Denne Strofe er i nærv. Oversættelse lempet en Smule efter E. Heron-Allen's Gengivelse i rytmisk Prosa af Omars originale Rubai.</note>
+fra nogen, der har vandret denne Vej.<note editorial="true">Denne Strofe er i nærv. Oversættelse lempet en Smule efter E. Heron-Allen's Gengivelse i rytmisk Prosa af Omars originale Rubai.</note>
 
 <nonum>50 (A 26, B 63).</nonum>
 Kom til Khayyam den vise hid og hør:
@@ -1974,7 +1973,7 @@ Den Blomst, som een Gang blomstred, evigt dør.
 Lad Kævlet koge! Gaa af Taabens Vej,
 naar han med Universet gør Staahej!
 Og lad os øve - i en Vrøvlets Krog -
-den muntre Leg, som overdriver <i>dig</i>!<note>Frit oversat. Udgaven A har de to første Linjer saaledes:
+den muntre Leg, som overdriver <i>dig</i>!<note editorial="true">Frit oversat. Udgaven A har de to første Linjer saaledes:
 <poetry lang="en">
 »But leave the Wise to wrangle, and with me
 The Quarrel of the Universe let be.«
@@ -1984,7 +1983,7 @@ The Quarrel of the Universe let be.«
 Thi mellem Himlens Hvælv og Jordens Ring
 et Intet staar forklædt i alle Ting.
 Og i en Sal, hvis Lampe er en Sol,
-gaar vi som Skyggebilleder omkring.<note>Den engelske Strofe hentyder her til en indisk Tryllelygte <i>Fánúsi khiyál</i>, der endnu bruges i Indien. En med Billeder bemalet cylindrisk Skærm drejes rundt om Lyset, der kaster Skyggebillederne ud. Fitzgerald har følgende Varianter af Strofen:<br/> A.
+gaar vi som Skyggebilleder omkring.<note editorial="true">Den engelske Strofe hentyder her til en indisk Tryllelygte <i>Fánúsi khiyál</i>, der endnu bruges i Indien. En med Billeder bemalet cylindrisk Skærm drejes rundt om Lyset, der kaster Skyggebillederne ud. Fitzgerald har følgende Varianter af Strofen:<br/> A.
 <poetry lang="en">
 »For in and out, above, about, below,
 »Tis nothing but a Magic Shadow-show,
@@ -2015,7 +2014,7 @@ som Dommedagen truer med sin Brand.
 Du, som af muddret Ler gav Manden Liv
 og gav ham Eden, Slangen og - en Viv!
 Naar han for dig af Synder sodet staar,
-tilgiv hinanden, du og han - tilgiv!<note><i>»En Viv«</i> er tilføjet i den danske Oversættelse. Den engelske Tekst siger (A): »O du, som skabte Manden af daarlig Jord, og som med Eden testamenterede ham Slangen« - (eller »lod ham arve Slangen«) osv. Denne Strofe skal ikke findes hos Omar, men være digtet »i Omars Aand« af Fitzgerald selv.</note>
+tilgiv hinanden, du og han - tilgiv!<note editorial="true"><i>»En Viv«</i> er tilføjet i den danske Oversættelse. Den engelske Tekst siger (A): »O du, som skabte Manden af daarlig Jord, og som med Eden testamenterede ham Slangen« - (eller »lod ham arve Slangen«) osv. Denne Strofe skal ikke findes hos Omar, men være digtet »i Omars Aand« af Fitzgerald selv.</note>
 
 <nonum><center>* * *</center></nonum>
 

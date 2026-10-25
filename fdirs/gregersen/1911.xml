@@ -208,7 +208,7 @@ har vi Vaar.
   <subtitle>(Musik af J. P. E. Hartmann.)</subtitle>
   <firstline>Vintergæk, Vintergæk</firstline>
   <notes>
-    <note type="credits">Bidrag fra Ejnar Pedersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Ejnar Pedersen.</note>
   </notes>
   <source pages="15"/>
   <quality>korrektur1,kilde,side</quality>
@@ -352,7 +352,7 @@ ak, hvor gerne jeg dog vilde,
   <subtitle>(Musik af J. P. E. Hartmann)</subtitle>
   <firstline>Du blaa Viol, du bly Viol</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="20"/>
   <quality>korrektur1,kilde,side</quality>
@@ -421,7 +421,7 @@ og i Haabet synge Vaaren ind!''
   <title>Anemone</title>
   <firstline>Anemone, skær og hvid</firstline>
   <notes>
-    <note type="credits">Bidrag fra Ejnar Pedersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Ejnar Pedersen.</note>
   </notes>
   <source pages="23"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1516,7 +1516,7 @@ dejlige Danmark, i Glæde og Sorg!
 <body>
 <poetry>
 Vort Land, vort Land, vort fagre Hjem,
-vort Fædreland!,<note>Cf. Carl Plougs <xref poem="plough2018031415"/>.</note>
+vort Fædreland!,<note editorial="true">Cf. Carl Plougs <xref poem="plough2018031415"/>.</note>
 Med Skovens Bryn og Markens Bræm,
 med Taarn og Tind du stiger frem
 af blanke Bølgers Silkegem,
@@ -2042,7 +2042,7 @@ Vejen gaar let, naar du synger dertil.
   <subtitle>(Emanuel Geibel)</subtitle>
   <firstline>Saa meget har paa Jord mig frydet</firstline>
   <notes>
-    <note>Gendigtning af Emanuel Geibel: <xref type="translation" poem="geibel2019051302"/>.</note>
+    <note editorial="true">Gendigtning af Emanuel Geibel: <xref type="translation" poem="geibel2019051302"/>.</note>
   </notes>
   <source pages="85-88"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2505,7 +2505,7 @@ hvor det er født som Herskerinde.
 I Skolen alt de unges Røst
 skal sige i den tyske Tunge:
 ,,Ich bin ein Preusse!''
-O, men tyst ,,Der er et yndigt Land''<note>Cf. Oehlenschlägers <xref poem="oehlen1999062847"/>.</note> de sjunge.
+O, men tyst ,,Der er et yndigt Land''<note editorial="true">Cf. Oehlenschlägers <xref poem="oehlen1999062847"/>.</note> de sjunge.
 
 Men strøg de Flaget paa Jer Stang,
 og om vort Maal de dybt foragter,
@@ -3349,7 +3349,7 @@ som for de lyse, milde Melodier
 som Bøgesus en dansk Skærsommerdag.
 
 Hav Tak fra mig, fordi du fra det lave
-bar ,,Vintergækken'' og ,,den bly Viol''<note>* <a poem="gregersen2006081401">,,Vintergæk''</a> og <a poem="gregersen2002050902">,,Viol''</a>, to af mine Digte, som J. P. E. H. har komponeret Musik til.</note>
+bar ,,Vintergækken'' og ,,den bly Viol''<note><a poem="gregersen2006081401">,,Vintergæk''</a> og <a poem="gregersen2002050902">,,Viol''</a>, to af mine Digte, som J. P. E. H. har komponeret Musik til.</note>
 og andre fler’ ind i din lyse Have,
 saa de sprang ud i Varmen af din Sol.
 
@@ -4086,7 +4086,7 @@ Himlens Fred i Jordens Dragt.
   <subtitle>Mel. af V. G.</subtitle>
   <firstline>Der er noget i Luften</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="158-159"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4240,7 +4240,7 @@ og hvisker: ,,Nu alle skal synge og le,
 og ingen maa sulte og fryse.''
 
 Velsignede Jul, du har Roser i Gem:
-,,Den yndigste Rose er funden,''<note>Cf. <xref poem="brorson1732a5"/>.</note>
+,,Den yndigste Rose er funden,''<note editorial="true">Cf. <xref poem="brorson1732a5"/>.</note>
 med Fred i sin Skygge, den løfter sig frem
 og lokker os Sangen af Munden,
 saa kling da, I Toner, bryd jublende frem

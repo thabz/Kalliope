@@ -9,10 +9,9 @@
     <proofreading model="gpt-5.6-sol" datetime="2026-09-04T17:56:17+02:00"/>
   </proofreadings>
   <notes>
-    <note>Dedikationen lyder ,,H. W. Ribers / ædle Veninde / og / Velynderinde / Frue Baronesse Lövenskiold / hvis ærefylde Godhed / for ham / end ikke kiölnedes / ved hans Död // i hans Navn / ærbödigen og erkiendtligen / helliget / af hans Venner / og / Udgivere / L. C. Sander. K. L. Rahbek</note>
-    <note>Teksten fölger Hans Riber: <i>Samlede Digte</i>, Simon Poulsens Forlag, Kbh., 1803.</note>
-    <note>Stavemåde og tegnsætning fölger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Dedikationen lyder ,,H. W. Ribers / ædle Veninde / og / Velynderinde / Frue Baronesse Lövenskiold / hvis ærefylde Godhed / for ham / end ikke kiölnedes / ved hans Död // i hans Navn / ærbödigen og erkiendtligen / helliget / af hans Venner / og / Udgivere / L. C. Sander. K. L. Rahbek</note>
+    <note editorial="true">Teksten fölger Hans Riber: <i>Samlede Digte</i>, Simon Poulsens Forlag, Kbh., 1803.</note>
+    <note editorial="true">Stavemåde og tegnsætning fölger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1803-p1.jpg" type="titlepage"><transcription>Hans Wilhelm Ribers / samlede Digte. // Förste Deel. // (med Digterens Portrait) // Kjöbenhavn, 1803. / Paa Hofboghandler Simon Poulsens Forlag, / trykt hos Bogtrykker og Skriftstöber K. H. Seidelin.</transcription></picture>
@@ -107,7 +106,7 @@ Og naar Aftenstiernen venlig blinker,
 Glad der overskue Dagens Fryd;
 </poetry>
 <prose>
-eller han skildrer sin sande Ven, og i ad­skillige Henseender sit Forbillede, <i>Edv. Storm</i><note>Se <a poet="storm">Edvard Storm</a>.</note>
+eller han skildrer sin sande Ven, og i ad­skillige Henseender sit Forbillede, <i>Edv. Storm</i><note editorial="true">Se <a poet="storm">Edvard Storm</a>.</note>
 </prose>
 <poetry font-size="small">
 I Trang og Smerter skreed han frem
@@ -315,10 +314,10 @@ men aldeles i <i>sin</i> Verden, maatte vor glade, huuslige, nöjsomme, for alle
   Desmere uoverlagt vil det maaske findes af  Undertegnede, at han paa sin mangeaarige academiske Ven Forlæggerens Anmodning, paatog sig, i denne Oversættelse at giöre de Forandringer og Tilsætninger, som den seneste Udgave af dette fortryllende Digt giorde fornödne, naar danske Læsere skulde have det fuldstændigt, og saaledes, som den tydske Digter har givet den sidste Haand, og optaget det i sine Digte; og dobbelt uoverlagt vil det lettelig synes, naar man veed, hvorlidet han har Aarsag til at vente, at Hexametrets Camene skal være ham gunstig. Gierne vil han og tilstaae, at han, da han tog sig det paa, höit kun forestilte sig, at det hele vilde blive maaskee et halvhundrede Vers, der da ved Stierner <pb n="XL" facs="055.jpg"/>eller andre Bogtrykkertegn, kunde udpeeges fra Ribers; og da han endelig saae sin Vildfarelse heri, var ikke blot Löftet givet, men Arbeidet begyndt, og kunde ikke uden megen Vidtlöftighed afbrydes eller omgiöres; han maatte altsaa fortsætte dette ham sandelig ikke lette Arbeide. Ikke frygter han for, at Ribers vennehulde Skygge, om den endog paa hiin Side Graven bekymrede sig om saadanne jordiske Smaating, skulde optage ham dette Fælledsskab ilde; dertil have de arbeidet formeget i Forening, dertil have de giensidig for megen vitterlig og uvitterlig Deel i en ikke ubetydelig Part af hinandens Arbeider; og elskede Riber sin Voss, og Vosses Luise formeget, til ikke heller at vilde, at hans Landsmænd skulde læse den fuldstæn­dig, om det end ikke havde været en Vens Haand, der udfyldte det manglende; heller ikke skal Undertegnede i mindste Maade for­tryde paa, naar Konstdommerne yttre, at hans
 Fordanskning staaer langt tilbage for Ribers; <pb n="XLI" facs="056.jpg"/>her var ikke Spörgsmaal om nogen Væddestrid; men blot om at tilsætte det manglende; Pub­likum i Almindelighed, smigrer han sig, vil tilgive Manglerne i hans Arbeid med Hensyn til hans Hensigt, som ene var at tilfredsstille, hvad han ansaa for dets lovlige Krav.
 
-  Endnu snarere troer han at torde giöre sig Haab om, at man vil billige, at han for Fuldstændigheds Skyld, har forved Idyllen <i>de Frigivne</i> sat dens Pendant eller Contrast, <i>de Vornede</i>, og forved <i>Luise</i>, dens Prologus <i>den 70 Aars Geburtsdag</i>, begge fordanskede af hans og Ribers inderlig elskede og ærede Ven, Digteren Pram<note>Se <a poet="pram">Christen Henriksen Pram</a>.</note>; som en reen Forseelse föler han sig derimod forpligtet at afbede, at han af de Afskrifter, der af Ribers Papirer bleve ham tilstillede, har ladet sig forlede til at indrykke Sangen: <i>Vi bringe dig med Sang og Dands</i> særskilt blandt de lyriske Digte, uden at komme ihu, at den i anden Deel nok engang i tilhörende Idyl maatte aftrykkes.
+  Endnu snarere troer han at torde giöre sig Haab om, at man vil billige, at han for Fuldstændigheds Skyld, har forved Idyllen <i>de Frigivne</i> sat dens Pendant eller Contrast, <i>de Vornede</i>, og forved <i>Luise</i>, dens Prologus <i>den 70 Aars Geburtsdag</i>, begge fordanskede af hans og Ribers inderlig elskede og ærede Ven, Digteren Pram<note editorial="true">Se <a poet="pram">Christen Henriksen Pram</a>.</note>; som en reen Forseelse föler han sig derimod forpligtet at afbede, at han af de Afskrifter, der af Ribers Papirer bleve ham tilstillede, har ladet sig forlede til at indrykke Sangen: <i>Vi bringe dig med Sang og Dands</i> særskilt blandt de lyriske Digte, uden at komme ihu, at den i anden Deel nok engang i tilhörende Idyl maatte aftrykkes.
 <pb n="XLII" facs="057.jpg"/>  Det Digt, der fölger ovenpaa Vosses Luise er egentlig aftrykt, fordi det var det, hvormed vor afdöde Ven, som begyndende Digter, fremstilledes for Publikum af <i>Erland Siversen</i> (Edv. Storm), der udgav det i Foreening med sine Fabler og Fortællinger efter Gellerts Maade p. p. Saa godt som paa engang betraadde disse tvende sande litterariske Jævninge Banen, Haand i Haand vandrede de den sam men, ikke længe efter hinanden forlode de den! O at deres broderlige Samvandring maatte være et Mönster for deres Konstbrödre!
 
-  Maaske venter Læseren endnu, og ikke ganske uden Föie et Par kritiske Ord over Ribers poetiske Værdie. Hans store og umiskiendelige Fortieneste var uden tvivl hans Iver for Sprogets Reenhed, uagtet maaske nu og da Dictionen har lidt noget derunder; et udansk Ord, en urigtig Ordföining skulde ikke lettelig undslippe ham, om han endog derved <pb n="XLIII" facs="058.jpg"/>skulde nu og da gribe til et upoetisk Udtryk; ogsaa har han saavel ved sit Exempel, som ved sine Recensioner, og Især ved sine Raad bidraget meget til, at Grammatiken i adskillige Stykker holdes mere i Ære  end for en Snees Aar siden var i Skik. I Psalmecommissionen giorde han især ved denne Paapassenhed megen Nytte, ligesom og ingen kunde være mere aarvaagen end han mod alt, hvad der paa nogen Maade kunde smage af mystisk eller papistisk Suurdei, alt, hvad der kun gav Öret Lyd, eller i det höieste Phantasien halv­dunkle Skyggebilleder, istæden for at give Hiertet Fölelser, og Forstanden Begreber. I hans alvorlige Digte böder en synderlig elskværdig Hiertelighed paa Savnet af lidenskabelig Ild, og i de faa muntre Forsög, vi have fra ham, savne vi over Hans godmodige Jovia­ litet, neppe Satirens Salt, det gaaer os med dem, som Haste<note>Se <a poet="haste">Peder Horrebow Haste</a>.</note>, i det han, vor Ven til Ære skrev i Iris, rigtig anmærker om hans Conversation; vi lee med, uagtet, eller maaskee fordi <pb n="XLIIII" facs="059.jpg"/>han af Hiertet leer först. Hans Versification var arbeidet med Flid, uden at være correct, hvorvel han i sin sidste Epoke fik heldigere Greb herpaa; med faa Ord, om end kun ven­skabelig Partiskhed kunde æske Rang for ham blandt vore store Digtere, kan ikke uden eensidig Ubillighed nægte ham Sted mellem vore gode.
+  Maaske venter Læseren endnu, og ikke ganske uden Föie et Par kritiske Ord over Ribers poetiske Værdie. Hans store og umiskiendelige Fortieneste var uden tvivl hans Iver for Sprogets Reenhed, uagtet maaske nu og da Dictionen har lidt noget derunder; et udansk Ord, en urigtig Ordföining skulde ikke lettelig undslippe ham, om han endog derved <pb n="XLIII" facs="058.jpg"/>skulde nu og da gribe til et upoetisk Udtryk; ogsaa har han saavel ved sit Exempel, som ved sine Recensioner, og Især ved sine Raad bidraget meget til, at Grammatiken i adskillige Stykker holdes mere i Ære  end for en Snees Aar siden var i Skik. I Psalmecommissionen giorde han især ved denne Paapassenhed megen Nytte, ligesom og ingen kunde være mere aarvaagen end han mod alt, hvad der paa nogen Maade kunde smage af mystisk eller papistisk Suurdei, alt, hvad der kun gav Öret Lyd, eller i det höieste Phantasien halv­dunkle Skyggebilleder, istæden for at give Hiertet Fölelser, og Forstanden Begreber. I hans alvorlige Digte böder en synderlig elskværdig Hiertelighed paa Savnet af lidenskabelig Ild, og i de faa muntre Forsög, vi have fra ham, savne vi over Hans godmodige Jovia­ litet, neppe Satirens Salt, det gaaer os med dem, som Haste<note editorial="true">Se <a poet="haste">Peder Horrebow Haste</a>.</note>, i det han, vor Ven til Ære skrev i Iris, rigtig anmærker om hans Conversation; vi lee med, uagtet, eller maaskee fordi <pb n="XLIIII" facs="059.jpg"/>han af Hiertet leer först. Hans Versification var arbeidet med Flid, uden at være correct, hvorvel han i sin sidste Epoke fik heldigere Greb herpaa; med faa Ord, om end kun ven­skabelig Partiskhed kunde æske Rang for ham blandt vore store Digtere, kan ikke uden eensidig Ubillighed nægte ham Sted mellem vore gode.
 <right><i>K. L. Rahbek.</i></right>
 
 ---
@@ -430,7 +429,7 @@ Fölg med Venner, hvor Naturen vinker,
 Og naar Aftenstiernen venlig blinker,
   Glad du overskue Dagens Fryd!
 
-<pb n="8" facs="073.jpg"/>Og naar nu en Kreds af ædle Qvinder,<note>Qvinder,]Qvinder.</note>
+<pb n="8" facs="073.jpg"/>Og naar nu en Kreds af ædle Qvinder,<note editorial="true">Qvinder,]Qvinder.</note>
   Som Naturens Skiönhed kaldte did,
 Deler eders Fryd, som troe Veninder;
   O! da er dig Skiebnen tifold blid!
@@ -440,7 +439,7 @@ Vil du yndes af Naturens Datter,
   Selv du vorde da Naturens Sön!
 
 Held mig! jeg har nydt Naturens Glæde;
-  Thi paa <w>Fredriks-Yndest</w><note>* Etatsraad <sc>Aaskovs</sc> Gaard mellem Fredensborg og Asminderöd.</note> er dens Boe;
+  Thi paa <w>Fredriks-Yndest</w><note>Etatsraad <sc>Aaskovs</sc> Gaard mellem Fredensborg og Asminderöd.</note> er dens Boe;
 Her er Dyds og Vids og Venskabs Sæde;
   Her er giestfri Lyst og nöisom Roe.
 Du, som döver mig med vranten Klage,
@@ -694,7 +693,7 @@ Herlig smiler Pigens Blik!
   <toctitle>Det store Halleluja, efter Claudius</toctitle>
   <firstline>För Verdens Alt blev skabt</firstline>
   <notes>
-    <note unknown-original-by="claudius" />
+    <note editorial="true" unknown-original-by="claudius" />
   </notes>
   <source in="bd1" pages="21-26"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -849,7 +848,7 @@ Dig prise vi evindelig.
   <toctitle>Jesu Opstandelse, en Cantate</toctitle>
   <firstline>Græder, Adams Sönner! græder!</firstline>
   <notes>
-    <note>. Med Musik af Hr. Etatsraad Ryge.</note>
+    <note editorial="true">. Med Musik af Hr. Etatsraad Ryge.</note>
   </notes>
   <source in="bd1" pages="27-33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1357,7 +1356,7 @@ Den Dag, da Iver for dens Ære
   <toctitle>Til Kronprindsen, efter Stolberg</toctitle>
   <firstline>Ei för min Harpe löd for den Mægtige</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090404"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090404"/>.</note>
   </notes>
   <source in="bd1" pages="50-54"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1516,7 +1515,7 @@ Gud signe vor elskede <sc>Fredrik</sc>!
     <event>1788-12-07</event>
   </dates>
   <notes>
-    <note>En manglende</note>
+    <note editorial="true">En manglende</note>
   </notes>
   <source in="bd1" pages="57-60"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1614,7 +1613,7 @@ Til Ære for Freden og <sc>Fredrik</sc>.
     <event>1794-12-28</event>
   </dates>
   <notes>
-    <note>* Afsiunge i Lyngbye-Kirke paa Begravelses-Dagen den 28 December 1794.</note>
+    <note>Afsiunge i Lyngbye-Kirke paa Begravelses-Dagen den 28 December 1794.</note>
   </notes>
   <source in="bd1" pages="61-64"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1767,7 +1766,7 @@ Selv kronet Böddel ei at ære,
   <toctitle>De frigivne, efter Voss</toctitle>
   <firstline>Vi bringe dig med Sang og Dands</firstline>
   <notes>
-    <note>Gendigtning af Voß: <xref type="translation" poem="voss2020012701"/>.</note>
+    <note editorial="true">Gendigtning af Voß: <xref type="translation" poem="voss2020012701"/>.</note>
   </notes>
   <source in="bd1" pages="68-71"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1909,8 +1908,8 @@ Og engang sikkert vi til Lön
   <toctitle>Den frie Mand, efter Pfeffel</toctitle>
   <firstline>Hvo er den frie Mand?</firstline>
   <notes>
-    <note>Gendigtning af Pfeffel: <xref type="translation" poem="pfeffel2020012701"/>.</note>
-    <note type="credits">Indtastet af Sven Sørensen.</note>
+    <note editorial="true">Gendigtning af Pfeffel: <xref type="translation" poem="pfeffel2020012701"/>.</note>
+    <note editorial="true" type="credits">Indtastet af Sven Sørensen.</note>
   </notes>
   <source in="bd1" pages="74-76"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2133,7 +2132,7 @@ Dydens Venner! eders Taarer væde
   <toctitle>Tröst i mange slags Lidelser, efter Overbeck</toctitle>
   <firstline>Mange bittre Taarer</firstline>
   <notes>
-    <note>Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
+    <note editorial="true">Gendigtning af Christian Adolph Overbeck: <xref type="translation" poem="overbeck2019091401"/>.</note>
   </notes>
   <source in="bd1" pages="84-86"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2203,7 +2202,7 @@ Hisset han istemmer
   <toctitle>Selskabssang, efter Claudius</toctitle>
   <firstline>Brödre op! drikker Viin!</firstline>
   <notes>
-    <note unknown-original-by="claudius"/>
+    <note editorial="true" unknown-original-by="claudius"/>
   </notes>
   <source in="bd1" pages="87-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2485,7 +2484,7 @@ Dette Baand erindre dig, Mandinde!
   <toctitle>Phidile, efter Claudius</toctitle>
   <firstline>Jeg var i min Uskyldighed</firstline>
   <notes>
-    <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
+    <note editorial="true">Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="100-102"/>
   <keywords>balladestrofe</keywords>
@@ -2548,7 +2547,7 @@ Slet ikke, - og han flöi afsted;
   <toctitle>Phidile, efter Brudevielsen, efter samme</toctitle>
   <firstline>O Præstemand! Gud signe dig!</firstline>
   <notes>
-    <note>Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
+    <note editorial="true">Gendigtning af Matthias Claudius: <xref type="translation" poem="claudius2001102204"/>.</note>
   </notes>
   <source in="bd1" pages="103-104"/>
   <keywords>balladestrofe</keywords>
@@ -2595,7 +2594,7 @@ Faaer een afos da Dödens Bud,
   <toctitle>En daglig Sang, efter samme</toctitle>
   <firstline>Som Barnets Hierte glæder sig</firstline>
   <notes>
-    <note>Gendigtning af Matthias Claudius' <xref type="translation" poem="claudius2026090401"/>.</note>
+    <note editorial="true">Gendigtning af Matthias Claudius' <xref type="translation" poem="claudius2026090401"/>.</note>
   </notes>
   <source in="bd1" pages="105-107"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2654,7 +2653,7 @@ Du föder Spurven paa mit Tag!
   <title>Klubsang</title>
   <firstline>Enhver, hvis Siel er stemt til jevne Glæder</firstline>
   <notes>
-    <note type="credits">Teksten indtastet af Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Teksten indtastet af Margit Ammentorp.</note>
   </notes>
   <source in="bd1" pages="108-110"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2715,7 +2714,7 @@ Og selv med sölvgraae Isse skal vi frydes
   <toctitle>Fostbrödresang</toctitle>
   <firstline>Som Mænd og Brödre vi samles her</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source in="bd1" pages="111-112"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3274,9 +3273,9 @@ Fra Hovedstadens Daarskabj
 Hvor alt er stort og prægtigt
 Og stivt og flaut og kiedsomt,
 Ud til det jævne Glostrup,
-Til <sc>Peder Ibsens</sc> Bolig<note>* Hvor de unge Folk skulde boe.</note>.
+Til <sc>Peder Ibsens</sc> Bolig<note>Hvor de unge Folk skulde boe.</note>.
 Jeg hörer, og jeg seer dig
-At stikke Bancosedler<note>* Som Kobberstikker ved den Slesvig-Holsteenske Bank.</note>
+At stikke Bancosedler<note>Som Kobberstikker ved den Slesvig-Holsteenske Bank.</note>
 Og giöre mörke Taler,
 Og synge <sc>Steiles</sc> Vise
 Og <sc>Claudius's</sc>> Viser,
@@ -3800,8 +3799,8 @@ Og Broderhierter vor Barndoms Glæder
   <toctitle>Sang, efter Hagedorn</toctitle>
   <firstline>Til Viindruens Priis</firstline>
   <notes>
-    <note>Gendigtning af Friedrich von Hagedorn: <xref type="translation" poem="hagedorn2020041701"/>.</note>
-    <note type="credits">Teksten indtastet af Margit Ammentorp og oversættelserne af en anonym bidragyder.</note>
+    <note editorial="true">Gendigtning af Friedrich von Hagedorn: <xref type="translation" poem="hagedorn2020041701"/>.</note>
+    <note editorial="true" type="credits">Teksten indtastet af Margit Ammentorp og oversættelserne af en anonym bidragyder.</note>
   </notes>
   <source in="bd1" pages="161-162"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3813,42 +3812,42 @@ Sang hver paa sin Viis,
   Druider og Barder og Magi.
 At hvert Ord var sandt,
 Jeg ofte befandt,
-  <i>Recubans sub tegmine fagi.</i><note>Hvilende under bögens krone</note>.
+  <i>Recubans sub tegmine fagi.</i><note editorial="true">Hvilende under bögens krone</note>.
 
 Ven! drik du mig til,
 Og derpaa vi vil
-  <i>Circumdare brachia collo.</i><note>Omgive arme med halsen (sic!)</note>.
+  <i>Circumdare brachia collo.</i><note editorial="true">Omgive arme med halsen (sic!)</note>.
 Forskriv mig fra Rhin
 Den herlige Viin!
-  <i>Et eris mihi magnus Apollo.</i><note>Og du vil for mig være den store Apollon.</note>.
+  <i>Et eris mihi magnus Apollo.</i><note editorial="true">Og du vil for mig være den store Apollon.</note>.
 
 Den fylder med Lyst
 Sin Lovsangers Bryst
-  <i>Corpusqve animusque juvantur</i>,<note>Og både krop og sind vil glædes.</note>
+  <i>Corpusqve animusque juvantur</i>,<note editorial="true">Og både krop og sind vil glædes.</note>
 <pb n="162" facs="227.jpg"/>Og troe du mig, den
 Er Kierligheds Ven,
-  <i>Et in una sede morantur.</i><note>Og hvile os sammen.</note>
+  <i>Et in una sede morantur.</i><note editorial="true">Og hvile os sammen.</note>
 
 En Sandhed det er,
 Det tilstaaer Enhver:
-  <i>Tot sunt in amore dolores.</i><note>Så mange pinsler er der i kærlighed.</note>
+  <i>Tot sunt in amore dolores.</i><note editorial="true">Så mange pinsler er der i kærlighed.</note>
 Dog skrækkes vi ei:
 Vi fölge vor Vei,
-  <i>Nostros agitamus amores.</i><note>Lad os vække vore lidenskaber</note>
+  <i>Nostros agitamus amores.</i><note editorial="true">Lad os vække vore lidenskaber</note>
 
 Nu, Skaal for din Glut,
 Hun er nok lidt but,
-  <i>Durus pater, ipsa severa.</i><note>Streng fader, slavinden selv</note>
+  <i>Durus pater, ipsa severa.</i><note editorial="true">Streng fader, slavinden selv</note>
 Hun piner dig lidt,
 Du sukker saa tit:
-  <i>Nimium mihi casta Neæra!</i><note>Du alt for fromme Næeer!</note>
+  <i>Nimium mihi casta Neæra!</i><note editorial="true">Du alt for fromme Næeer!</note>
 
 Ved Spog og ved Viin
 Du muntre dit Sind,
-  <i>Corpus, animumqve labantem</i>,<note>Vaklende både hvad angår krop og sind</note>
+  <i>Corpus, animumqve labantem</i>,<note editorial="true">Vaklende både hvad angår krop og sind</note>
 Sluk Sorgen kun ned,
 Naar Phyllis er vred,
-  <i>Miserum si spernit amantem.</i><note>Stakkels den elskede, hvis hun forsmår ham</note>
+  <i>Miserum si spernit amantem.</i><note editorial="true">Stakkels den elskede, hvis hun forsmår ham</note>
 </poetry>
 </body>
 </text>
@@ -3869,7 +3868,7 @@ Naar Phyllis er vred,
   <toctitle>Epistel til Phæbe, efter Pheffel</toctitle>
   <firstline>I Dag alt fiorten Aar! min kiere Datter!</firstline>
   <notes>
-    <note>Gendigtning af Gottlieb Konrad Pfeffel: <xref type="translation" poem="pfeffel2020012702"/>.</note>
+    <note editorial="true">Gendigtning af Gottlieb Konrad Pfeffel: <xref type="translation" poem="pfeffel2020012702"/>.</note>
   </notes>
   <source in="bd1" pages="165-180"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4207,7 +4206,7 @@ I min og i min kiere Doris’ Grav! -
   <toctitle>Raad til en ung Pige, efter samme</toctitle>
   <firstline>O hör af mig, Belinde! Vennens Raad</firstline>
   <notes>
-    <note>Gendigtning efter George Lytteltons <xref type="translation" poem="lyttelton2026090401"/>. Riber anfører samtidig »efter samme«, dvs. efter Gottlieb Konrad Pfeffel.</note>
+    <note editorial="true">Gendigtning efter George Lytteltons <xref type="translation" poem="lyttelton2026090401"/>. Riber anfører samtidig »efter samme«, dvs. efter Gottlieb Konrad Pfeffel.</note>
   </notes>
   <source in="bd1" pages="181-188"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4371,7 +4370,7 @@ De Regler for at tækkes, som jeg gav dig.
   <toctitle>Bramin, efter samme</toctitle>
   <firstline>En Brame listede sig ved sin Stav</firstline>
   <notes>
-    <note>Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2026090401"/>.</note>
+    <note editorial="true">Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2026090401"/>.</note>
   </notes>
   <source in="bd1" pages="189-191"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4441,7 +4440,7 @@ Et Blik, som meer end Daab indvied’ ham.
   <toctitle>Om Persiflage, efter L. Stolberg</toctitle>
   <firstline>For Mennesket er ingen Ting saa hellig</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090403"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090403"/>.</note>
   </notes>
   <source in="bd1" pages="192-195"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4520,8 +4519,8 @@ Thi Moderen har kaldt det Persiflage.
   <toctitle>Afbigten, efter samme</toctitle>
   <firstline>Saurin, en af de ældste, gode Hyrder</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090401"/>.</note>
-    <note>Mottoet er Horats, <i>Epistler</i> 1,19,19–20: <span lang="la"><i>O imitatores, servum pecus, ut mihi saepe bilem, saepe iocum vestri movere tumultus!</i></span> Det betyder omtrent: »O efterabere, I trælleflok, hvor har jeres spektakel ofte vakt min galde, ofte min latter!« Stolberg og Riber udelader de indledende ord <span lang="la"><i>O imitatores, servum pecus</i></span>; hos begge står desuden <span lang="la"><i>jocum</i></span> for <span lang="la"><i>iocum</i></span>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090401"/>.</note>
+    <note editorial="true">Mottoet er Horats, <i>Epistler</i> 1,19,19–20: <span lang="la"><i>O imitatores, servum pecus, ut mihi saepe bilem, saepe iocum vestri movere tumultus!</i></span> Det betyder omtrent: »O efterabere, I trælleflok, hvor har jeres spektakel ofte vakt min galde, ofte min latter!« Stolberg og Riber udelader de indledende ord <span lang="la"><i>O imitatores, servum pecus</i></span>; hos begge står desuden <span lang="la"><i>jocum</i></span> for <span lang="la"><i>iocum</i></span>.</note>
   </notes>
   <source in="bd1" pages="196-200"/>
   <keywords>lessing,gellert</keywords>
@@ -4624,7 +4623,7 @@ Ved Nysekrud fordrives denne Galskab.
   <toctitle>Kilden, efter samme</toctitle>
   <firstline>Som fordum i den folkerige Stad</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020012801"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolberg: <xref type="translation" poem="stolbergf2020012801"/>.</note>
   </notes>
   <source in="bd1" pages="201-206"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4693,7 +4692,7 @@ Gridsk snapper efter hule Pennefiær,
 Hvormed skalkagtig Dreng, som rev den bort
 Fra kierlig Moders Pleie, mader den.
 Maaskee jeg og i Blinde havde snappet,
-Om ikke Hellas<note>. Grækenland.</note> i sit Moder-Skiöd
+Om ikke Hellas<note editorial="true">. Grækenland.</note> i sit Moder-Skiöd
 Mild havde vugget og opfostret mig,
 Oplyst mit Öie, fört mig under Træer,
 Som stedse aande liflig Duft og Kölhed,
@@ -4746,7 +4745,7 @@ Höit brusende slaaer op mod sandig Bred.
   <toctitle>Spillesygen, efter samme</toctitle>
   <firstline>Ja Daarlighed har mange, mange Biælder</firstline>
   <notes>
-    <note>Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090402"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090402"/>.</note>
   </notes>
   <source in="bd1" pages="207-214"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4970,7 +4969,7 @@ Han stiller ham med Digterkraft for Öie
 Det Hæld, ham venter i hans nye Bolig,
 Hvor han for alskens Sorg er rolig
 Kan ærlig af sit Haandværk nære sig;
-Men Snedker Jens, er ubevægelig!<note>ubevægelig] nbevægelig</note>
+Men Snedker Jens, er ubevægelig!<note editorial="true">ubevægelig] nbevægelig</note>
 Enhver hvis Hierte var en Smule mindre ömt
 End <sc>Hielpsoms</sc>, havde ganske vist udtömt
 Al sin Taalmodighed, og veddt sig til en anden,
@@ -5023,8 +5022,8 @@ Og gaaer som lydig Hund, ind i sit eget Huus.
   <toctitle>De Vornede, efter Voss</toctitle>
   <firstline>Pindsen bli’r klar. Der er ingen Rand om Maanen, der funkler</firstline>
   <notes>
-    <note>* Denne og den tredie Idyl er, den förste som Sidestykke til <w>de Frigivne</w>, og den tredie, som Indledning til Luise, aftrykte her skiöndt af en anden Oversætter, med dennes Tilladelse.</note>
-    <note>Gendigtning af Voß: <xref type="translation" poem="voss2020020503"/>.</note>
+    <note>Denne og den tredie Idyl er, den förste som Sidestykke til <w>de Frigivne</w>, og den tredie, som Indledning til Luise, aftrykte her skiöndt af en anden Oversætter, med dennes Tilladelse.</note>
+    <note editorial="true">Gendigtning af Voß: <xref type="translation" poem="voss2020020503"/>.</note>
   </notes>
   <source in="bd2" pages="3-17"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5228,7 +5227,7 @@ Pots! Han prygler os krumme og lamme. Pasop! efter Skimlen!
   <toctitle>De Frigivne, efter Voss</toctitle>
   <firstline>See kun det hvide Spektakel, som rasler henne i Busken!</firstline>
   <notes>
-    <note>Gendigtning af Voß: <xref type="translation" poem="voss2020020504"/>.</note>
+    <note editorial="true">Gendigtning af Voß: <xref type="translation" poem="voss2020020504"/>.</note>
   </notes>
   <source in="bd2" pages="18-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5464,7 +5463,7 @@ Kom mig ikke, og syng, som vor hæse Degn synger Amen!
   <toctitle>Den 70 Geburtsdag, ligeledes</toctitle>
   <firstline>Böiet over Postillen, ved Ovnens varmende Side</firstline>
   <notes>
-    <note>Fri gendigtning af Voß: <xref type="translation" poem="voss2020020501"/>.</note>
+    <note editorial="true">Fri gendigtning af Voß: <xref type="translation" poem="voss2020020501"/>.</note>
   </notes>
   <source in="bd2" pages="31-42"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5631,7 +5630,7 @@ Saae han op, og han hang i hans Börns omfavnende Arme.
   <toctitle>Förste Idyl, Festen i Skoven</toctitle>
   <firstline>Under det tætte Skiul af to bredbladede Linde</firstline>
   <notes>
-    <note>Originalen er Johann Heinrich Voß' <i>Luise. Ein ländliches Gedicht in drei Idyllen</i>.</note>
+    <note editorial="true">Originalen er Johann Heinrich Voß' <i>Luise. Ein ländliches Gedicht in drei Idyllen</i>.</note>
   </notes>
   <source in="bd2" pages="45-96"/>
   <keywords>ewald,thaarup,pram,storm,baggesen,zetlitz,troiel,holty</keywords>
@@ -5975,7 +5974,7 @@ Sover, og vaagner styrket og mere forstandige Börn lille!
 Alle glædes vi da, naar Herrens Morgen har vakt os.
 Da erfare vi og, at Gud ei seer paa Personer.
 Men at hvo ham frygter og giör hvad Ret er, ham tækkes
-Iblandt alle Folk<note>* Petri Ord: <a bible="bibelapostlene10,34-35">Ap. G. 10, 34. 35.</a></note>. O Gud! da glædes vi alle,
+Iblandt alle Folk<note>Petri Ord: <a bible="bibelapostlene10,34-35">Ap. G. 10, 34. 35.</a></note>. O Gud! da glædes vi alle,
 Alle, som giorde Godt i Enfoldighed; glædes med <sc>Petrus</sc>,
 <sc>Moses</sc>, <sc>Confuts</sc>, og <sc>Homer</sc>, den elskende, og <sc>Zoroaster</sc>,
 Og ham der döde for Sandhed, med <sc>Sokrates</sc>, og med den ædle
@@ -7266,8 +7265,8 @@ Tryllende dæmper Musik Anfægtninger, selv af den Onde,
 Kiedsomhed, Sladder, Bagtalelse, plagende Trang med;
 Frydefuldt stemmer den Hiertet og hæver til modige Dyder
 Nu daj lad Glassene fyldes! Ved deres herlige Sölvklang
-Vil vi istemme en Bryllupssang af Voss<note><a poet="voss">Johann Heinrich Voß</a> (1751-1826).</note>, den Eutiner
-<pb n="179" facs="466.jpg"/>Som vor Broder Hiort<note>Victor Christian Hjort (1765-1818), på dette tidspunkt residerende kapellan i Tårnby på Amager.</note> paa Amager smukt har fordansket<note>* Denne Oversættelse findes i <i>Nyeste Samling af Selskabssange, især for blandede Selskaber</i>, S. 107. Da Visen egentlig er giort til denne Idyl, mener jeg, den og burde staae her. Jeg har betient mig af Hr. <sc>Hiorts</sc> Oversættelse, fordi jeg ikke troede at kunne levere en bedre. Den sidste Strophe har Hr. Oversætteren forandret, for at Visen kunne blive almindelig brugbar; her har jeg naturligvis fulgt Originalen. H. W. R.</note>
+Vil vi istemme en Bryllupssang af Voss<note editorial="true"><a poet="voss">Johann Heinrich Voß</a> (1751-1826).</note>, den Eutiner
+<pb n="179" facs="466.jpg"/>Som vor Broder Hiort<note editorial="true">Victor Christian Hjort (1765-1818), på dette tidspunkt residerende kapellan i Tårnby på Amager.</note> paa Amager smukt har fordansket<note>Denne Oversættelse findes i <i>Nyeste Samling af Selskabssange, især for blandede Selskaber</i>, S. 107. Da Visen egentlig er giort til denne Idyl, mener jeg, den og burde staae her. Jeg har betient mig af Hr. <sc>Hiorts</sc> Oversættelse, fordi jeg ikke troede at kunne levere en bedre. Den sidste Strophe har Hr. Oversætteren forandret, for at Visen kunne blive almindelig brugbar; her har jeg naturligvis fulgt Originalen. H. W. R.</note>
 Rask til Klaveret <sc>Amalia</sc>! kommer saa han her til Vaaren
 Giv ham <sc>Luise</sc>, mit Barn! det betingede Kys og endnu eet!
   Saa talte fyrige Olding, og Moderen Glassene fyldte
@@ -7334,7 +7333,7 @@ Taug dets Toner; <sc>Amalia</sc> klinkede med til Lykönskning :
     Alfader signe Eder her!
     I Himmelen han Eder signe!
     Nu klinker, Venner! Bryder ud :
-    Hæld, Hæld vor Brudgom og hans Brud!<note>Originalen er Voß' <i>Hochzeitslied</i> med førstelinjen ,,Wohl, wohl dem Manne für und für''.</note>
+    Hæld, Hæld vor Brudgom og hans Brud!<note editorial="true">Originalen er Voß' <i>Hochzeitslied</i> med førstelinjen ,,Wohl, wohl dem Manne für und für''.</note>
 <pb n="183" facs="470.jpg"/>Da i Sangen nu Glassene löd’ med liflige Samklang;
 Hörtes udenfor Vindvet de gennemtrængende Toner
 Af Fiol og Trompet og Valdhorn og brummende Basse,
@@ -7409,11 +7408,11 @@ Letter Aanden for trangbrystet Olding, giör smidige Fingre.
 Fader! I har dog vel Intet mod dette Bryllup at sige?
 <pb n="189" facs="476.jpg"/>Nu er det for silde; jeg gav et Par Gange Agt paa,
 Naar jeg lyste <sc>Luise</sc> af Prækestolen hvordan I
-Ved Ieres<note>Jeres]Ieres</note> Pille tog Huen af, og folded andægtig
+Ved Ieres<note editorial="true">Jeres]Ieres</note> Pille tog Huen af, og folded andægtig
 Zittrende Hænder, det löd som I holdt en Deel af min Datter.
   Derpaa svarede ham den Gamle med skinnende Sölvhaar:
 Faer! jeg bar med Skam mit graae Haar, dersom mit Hierte
-Var saa forstokket, at jeg ei glædedes over Jer<note>Jer]Ier</note> Datter,
+Var saa forstokket, at jeg ei glædedes over Jer<note editorial="true">Jer]Ier</note> Datter,
 Hende, som er saa dydig og saa gudfrygtig, saa venlig!
 Spörg hver Siel her i Byen! I skal forundre Jer over,
 Hvad de alt har at fortælle om lille <sc>Jomfrue</sc> Luise.
@@ -7490,7 +7489,7 @@ Menneskets eget fortrolige Sprog, naar Ordene lyde.
 Spil mig da nu en Sang, til Forandring, enten af <sc>Händel</sc>,
 <sc>Reichardt</sc>, <sc>Gluck</sc> og <sc>Emanuel Bach</sc>, og vor herlige Mester
 <sc>Schulz</sc>, som <sc>Luther</sc> selv vist qvædede efter paa Orglet.
-Syng mig: ,,Som Barnets Hierte'' af <sc>Claudius</sc><note>Cf. <xref poem="riber2020032738"/></note>, eller vor Bordsang,
+Syng mig: ,,Som Barnets Hierte'' af <sc>Claudius</sc><note editorial="true">Cf. <xref poem="riber2020032738"/></note>, eller vor Bordsang,
 <pb n="196" facs="483.jpg"/>Saa vor Olding böd, og villig fulgte de Andre.
 Men först reiste sig den gamle forstandige Husmoer.
 Og hun böied’ sit Hoved til Datterens blomstrende Kind, og
@@ -7584,7 +7583,7 @@ Efter de Flygtende löd' nu Fryderaab, Latter og Haandklap.
   </subtitle>
   <toctitle>Boraasiaden, et comisk Heltedigt i 4 Sange oversat af det svenske</toctitle>
   <notes>
-    <note>Oversættelse af Olof Rudbeck den yngstes <a work="rudbeck/1776"><i>Boråsiade</i> (1776)</a>.</note>
+    <note editorial="true">Oversættelse af Olof Rudbeck den yngstes <a work="rudbeck/1776"><i>Boråsiade</i> (1776)</a>.</note>
   </notes>
   <source in="bd2" pages="203-272"/>
 </head>
@@ -7612,7 +7611,7 @@ Den Fornöielse, jeg fandt ved dette komiske Helte-Digts Læsning, bevægede mig
   <linktitle>Boraasiaden, förste Sang</linktitle>
   <firstline>Jeg synger om Boraas, og til den Heltes Ære</firstline>
   <notes>
-    <note>Gendigtning af første sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090401"/>.</note>
+    <note editorial="true">Gendigtning af første sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090401"/>.</note>
   </notes>
   <source in="bd2" pages="207-222"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7826,7 +7825,7 @@ Og Himlen speiler sig i Vandets stille Pragt.
   <linktitle>Boraasiaden, anden Sang</linktitle>
   <firstline>Paa Stadens store Torv man allerede skuer</firstline>
   <notes>
-    <note>Gendigtning af anden sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090402"/>.</note>
+    <note editorial="true">Gendigtning af anden sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090402"/>.</note>
   </notes>
   <source in="bd2" pages="223-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8004,7 +8003,7 @@ Skal dette blot sit Sted blandt Rendsteenskrige faae.
   <linktitle>Boraasiaden, tredie Sang</linktitle>
   <firstline>Da Tvedragt, blodbestænkt, udspredte Raserie</firstline>
   <notes>
-    <note>Gendigtning af tredje sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090403"/>.</note>
+    <note editorial="true">Gendigtning af tredje sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090403"/>.</note>
   </notes>
   <source in="bd2" pages="237-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8097,7 +8096,7 @@ Med tætte Kiæmpeslag han grumt omkring sig svinger,
 Ved dennes Side streed en <sc>Jan</sc> fra Hagelbæk,
 Som Vaarens Guder smuk, som Krigens Guddom kiæk.
 Ei nok for ham sin Roes af Qvindeskiönhed söge,
-Vil han sin<note>sin] sim</note> Skiönheds Priis ved Tapperhed foröge:
+Vil han sin<note editorial="true">sin] sim</note> Skiönheds Priis ved Tapperhed foröge:
 Ulykkelige <sc>Jan</sc>, dig til Boraas hendrog
 Dit alt for tappre Mod i dette Vaabentog.
 <sc>Jan Hök</sc> og Skrædder <sc>Berg</sc> de tumle for hans Hænder,
@@ -8237,7 +8236,7 @@ Blant Hiorden bryder ind, nedlægger og fordriver.
   <linktitle>Boraasiaden, fjerde Sang</linktitle>
   <firstline>I Vester-Gothlands Favn ved Væners klare Vig</firstline>
   <notes>
-    <note>Gendigtning af fjerde sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090404"/>.</note>
+    <note editorial="true">Gendigtning af fjerde sang af Olof Rudbeck den yngres <xref type="translation" poem="rudbeck2026090404"/>.</note>
   </notes>
   <source in="bd2" pages="255-272"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

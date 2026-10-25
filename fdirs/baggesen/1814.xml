@@ -16,8 +16,8 @@
   <subtitle>Til Frøken Adelaide Brun</subtitle>
   <firstline>Du med Edens reene Melodier</firstline>
   <notes>
-    <note>Adelaide (Ida) Brun er datter af <a person="brunf">Friederike Brun</a>.</note>
-    <note>Førstetrykket i tidsskriftet <i>Athene</i>, juli 1813, har titlen »Frierbrevet« med undertitlen »Til Frøken Adelaide Brun. Kiøbenhavn, d. 15. Marts 1813.«</note>
+    <note editorial="true">Adelaide (Ida) Brun er datter af <a person="brunf">Friederike Brun</a>.</note>
+    <note editorial="true">Førstetrykket i tidsskriftet <i>Athene</i>, juli 1813, har titlen »Frierbrevet« med undertitlen »Til Frøken Adelaide Brun. Kiøbenhavn, d. 15. Marts 1813.«</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -87,8 +87,8 @@ Jeg er din Veninde - <i>Poesie.</i>
   <subtitle>Til Digteren Øhlenschlæger</subtitle>
   <firstline>Jeg er ei rigtig i min Krop</firstline>
   <notes>
-    <note>Fodnoten er Baggesens egen.</note>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true">Fodnoten er Baggesens egen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source><i>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</i>, Ved A. Arlaud, Kjøbenhavn. Forlagt af I. H. Schubothes Boghandel. Græbes Bogtrykkeri. 1891.</source>
   <quality>korrektur1,kilde</quality>
@@ -154,7 +154,7 @@ Med Sluddren i Billetten her!
     <event>1813-06-03</event>
   </dates>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <pictures>
     <picture artwork="lund/sophienholm"/>
@@ -247,7 +247,7 @@ Blot - en Taare og et Smiil!
   </subtitle>
   <firstline>Ihvo du er paa denne Jord</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -938,8 +938,8 @@ Og syng den Vise til min Roes:
   </subtitle>
   <firstline>O! du, som staaer i Krig og Fred</firstline>
   <notes>
-    <note>Fodnoten er Baggesens egen.</note>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true">Fodnoten er Baggesens egen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -1666,7 +1666,7 @@ Thi det fik ellers aldrig Ende.
   </subtitle>
   <firstline>Dig, mellem mine danske Læserinder</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -1751,7 +1751,7 @@ Paa den af Digteren til Musen stiaalne Sang.
   </subtitle>
   <firstline>Du, som til Seinens Harpes Klang</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -2013,8 +2013,8 @@ At skrive nogen blot Kopie.
   </subtitle>
   <firstline>At Skrædder i Korsøer et Skrædder-Embryon</firstline>
   <notes>
-    <note>Fodnoten er Baggesens egen.</note>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true">Fodnoten er Baggesens egen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -2248,7 +2248,7 @@ Alvorlig den Uskyldige velsigne.
   </subtitle>
   <firstline>Jeg skriver dig igien et Brev</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -2448,7 +2448,7 @@ Derfor forvar mig den, som sagt!
   </subtitle>
   <firstline>Ved mine sidste Samlinger af Ord</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -2606,7 +2606,7 @@ Er reent forbi.
   </subtitle>
   <firstline>Cicilia! jeg zittrer ved</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -2677,7 +2677,7 @@ Faaer Krampe, Sting, og Slag, og døer.
   </subtitle>
   <firstline>Tak for den Tilskrivt, som din Skiærts</firstline>
   <notes>
-    <note type="credits">Indtastet af Svend Andersen.</note>
+    <note editorial="true" type="credits">Indtastet af Svend Andersen.</note>
   </notes>
   <source>
     <title>Riimbreve og Poetiske Epistler af Jens Baggesen. Første Samling 1784 - 1808.</title>
@@ -3023,7 +3023,7 @@ Og vov dig sielden til det Mindre.
   <indextitle>Alleenekampen eller Apologie for Litteraturbladene</indextitle>
   <firstline>I Trende, hvor som helst, hvem her med reene Haand</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -3329,7 +3329,7 @@ Naar Sangforfølgelsen bag Graven er forbi.
   <subtitle>Til Professor Olufsen i Kiøbenhavn</subtitle>
   <firstline>Sex Uger - naar jeg seer tilbage</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -3609,7 +3609,7 @@ Jeg levet har for høit, før jeg blev fød.
 At jeg har ganske glemt mit Forlivs Herlighed:
 Slemt gaaer det; men det gik dog endnu værre,
 Hvis jeg erindred mine Himmelfied.
-Skiøndt Klopstocks<note><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> arme Diævel opad Dage
+Skiøndt Klopstocks<note editorial="true"><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> arme Diævel opad Dage
 Jeg ligner i Melankolie,
 Han meere dog, end jeg, var at beklage;
 Thi Mindet af hans Englemaskepie
@@ -3728,9 +3728,9 @@ Men hils især med meer end alle Kys
   <firstline>Hvilken Najas tør sin Skaal vel gyde</firstline>
   <!-- Ikke en variant af baggesen2002092812: Citat eller genbrug i et andet digt, ikke en tekstvariant. -->
   <notes>
-    <note>Citerer Baggesens <xref poem="baggesen2002092812"/>.</note>
-    <note>,,De følgende Breve'', dvs. ned til og med <i>Hilsenen fra Hovedstaden</i>.</note>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true">Citerer Baggesens <xref poem="baggesen2002092812"/>.</note>
+    <note editorial="true">,,De følgende Breve'', dvs. ned til og med <i>Hilsenen fra Hovedstaden</i>.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -3794,7 +3794,7 @@ Disse Rosers Torne saare sødt,
 Trods hvert Sting af dyb veemodig Smerte,
 Hvert et evigungt uskyldigt Hierte,
 Som for Livets Liv er ikke dødt.
-Altsaa, trods det gamle Sprog af Tode,*)<note>*) Hvorlænge vil Forfatteren af Ungdomsarbeiderne vedblive at være ung?</note>
+Altsaa, trods det gamle Sprog af Tode,*)<note>Hvorlænge vil Forfatteren af Ungdomsarbeiderne vedblive at være ung?</note>
 Trods min Alder og min Stand,
 Som i denne Pakke lâr formode
 Klagesang og Læredigt og Ode
@@ -3875,7 +3875,7 @@ Til Sophienholm jeg her fandt Mage:
 Leved flot i Sang og Viin og Kage,
 Og i alt, hvad, som De veed, kan smage
 Got en stakkels Troubadour.
-Datteren, som Rimet kalder Lotte,*)<note>*) Det kalder hende ogsaa Line, som man vil see.</note>
+Datteren, som Rimet kalder Lotte,*)<note>Det kalder hende ogsaa Line, som man vil see.</note>
 Da den Yndiges Beskedenhed,
 Hvis jeg hendes Navn Dem vilde blotte,
 Sikkerlig min Muse blev lidt vreed -
@@ -3933,7 +3933,7 @@ Udentvivl veed meer end jeg.
   <subtitle>Til Frøken Ellina v. Astrup</subtitle>
   <firstline>Min elskede - (bliv ikke bange!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4055,7 +4055,7 @@ Og som dig snart vil nynne noget meere.
   <subtitle>Til Fru v. Astrup, paa hendes Fødselsdag</subtitle>
   <firstline>Tre Gange jeg i Morges anraabt har</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4117,7 +4117,7 @@ Det ellers fra?
   <subtitle>Til Samme</subtitle>
   <firstline>Nu har jeg spiist og slukket Tørsten efter</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4330,7 +4330,7 @@ Med blotte Ord har smigret mig?
   </subtitle>
   <firstline>Sextendedeelen kun af en fortryllende Maaned</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4370,7 +4370,7 @@ Danmarks yndigste Møer og Danmarks ædleste Koner,
   </subtitle>
   <firstline>Hvis nogensinde var i noget Huus</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4537,7 +4537,7 @@ Naar man er overmaade død.
   <subtitle>Til samme</subtitle>
   <firstline>Nys skreg jeg ud min Glædes Raserie</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -4673,7 +4673,7 @@ Hvad Musen dig herefter skriver.
   <subtitle>Til Kammerjunker Jacob v. Benzon i Odensee</subtitle>
   <firstline>Du, som blandt alle Nordens Mænd</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <keywords>grundtvig</keywords>
   <quality>korrektur1</quality>
@@ -4990,7 +4990,7 @@ Herfra til Kiøbenhavn igien.
   <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
   <firstline>O du, dit Kiøns, det elskeliges, Ziir!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -5006,12 +5006,12 @@ I største Hast, og ikke blot for Skiærts,
 Men selv for Alvor, uden Blusel byde?
 Et Spil som det, hvortil en Gaas i Vand
 Med lige Held og Ynde var istand -
-Et Offer, ligt de Karper, man os byder,<note>Allusion til Wessels <xref poem="19990208005"/>.</note>
+Et Offer, ligt de Karper, man os byder,<note editorial="true">Allusion til Wessels <xref poem="19990208005"/>.</note>
 Hvor Næsen spidset var paa tørre Jyder
 (Jeg elsker nemlig tørre Jyder meer
 End Karper, som af Lignelsen De seer),
 En Røgelse som den af brændte Vinger,
-Naar Klopstock<note><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> alt for nær en Claus sig svinger
+Naar Klopstock<note editorial="true"><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note> alt for nær en Claus sig svinger
 I Dufte, Dampen lig af jordisk Tak,
 Der stiger op til Himlen i Tobak -
 Et Digt som det af Hamp ombord paa Skude -
@@ -5077,7 +5077,7 @@ I sød Uddunsten ei kan give Luft.
   <subtitle>Til Frøken Ellina v. Astrup i Elleskov</subtitle>
   <firstline>Umuelig kan jeg lade reise</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -5168,7 +5168,7 @@ Min søde Line, slut dig til!
   <subtitle>Til Fru v. Astrup i Elleskov</subtitle>
   <firstline>Skiøndt fiernet fra min Sangs Elysium</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -5297,7 +5297,7 @@ Er ikke synderligen at beklage.
   <indextitle>Hesten Abildgraa eller Loven er ærlig</indextitle>
   <firstline>Min vakkre Nathanson, der (som jeg troer</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <pictures>
     <picture artwork="eckersberg/familien-nathanson-1818" />
@@ -5549,7 +5549,7 @@ Saa dog (da denne Plads er, troer jeg, end in blanco)
   <indextitle>Min Gienganger-Spøg, eller Den søde Kniv</indextitle>
   <firstline>Der er, min Stoud, en Ven i Kiøbenhavn</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -5560,7 +5560,7 @@ Saa dog (da denne Plads er, troer jeg, end in blanco)
 Med hvem jeg blev bekiendt, til mit og Landets Gavn,
 Paa Reisen, som blev, troer jeg, giort og prentet,
 Imellem Juul og Fastelavn,
-Sidstleden, Aaret før Bombardementet - *)<note>*) Med denne saakaldte Reise meener Riimbrevskriveren den berygtede Gienganger, som udkom 1806, og opbragte alle Parnassets Høkere, Bryggere og Brændeviinsmænd imod ham.</note>
+Sidstleden, Aaret før Bombardementet - *)<note>Med denne saakaldte Reise meener Riimbrevskriveren den berygtede Gienganger, som udkom 1806, og opbragte alle Parnassets Høkere, Bryggere og Brændeviinsmænd imod ham.</note>
 En Ven, der sladdre kan for ti - og lyve
 For tyve -
 Saa got som nogen i min Fødestavn:
@@ -5622,7 +5622,7 @@ Naar Bakkehunden i mig bliver vred,
 Den gamser rigtig nok (der klæder den ei ilde),
 Men Gamset bliver, som De veed,
 Et Kys, formedelst den Omstændighed,
-Hvorom jeg i en anden Kiliade **)<note>**) See Riimbrevet til Professor Olufsen.</note>
+Hvorom jeg i en anden Kiliade **)<note>See Riimbrevet til Professor Olufsen.</note>
 Paa et Par Sider eller Blade,
 Hvis jeg ei husker feil, har givet alt Beskeed.
 Jeg overalt i Grunden ei kan hade -
@@ -5956,7 +5956,7 @@ Sig styrtende med Skiold og Spyd deri.
   <subtitle>Til General-Krigs-Commissair Astrup, paa Aarets, hans Kones, og hans Søns Fødselsdag</subtitle>
   <firstline>Naar jeg lidt dybt paa det, jeg sidder i</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -6039,7 +6039,7 @@ Af Eriksens, hvorefter jeg er kræsen -
 Og som i Forgemakket der
 Min Kræsenhed blev doppelt kiær -
 Med Smil - o! hvilket Smil! - som det af Josephs Fader,
-Da han i Labans Pebringe *) paa Luur<note>*) Et fordums Annex til Andersskov.</note>
+Da han i Labans Pebringe *) paa Luur<note>Et fordums Annex til Andersskov.</note>
 Til Jomfru Rachel giorde Cour -
 Men de Kong David egne milde Lader,
 Naar foran Arken, i de hellige Parader,
@@ -6065,7 +6065,7 @@ Mig ventet sligt et doppelt Glædesstød;
 Jeg trodser nu herefter Fru Pandora.
 Bespiist i Aftes af din Kones røde Grød,
 Beskiænket af dig selv, beruust af Yndigheder,
-"Som den maa være blind, der ei kan see hos Eder",<note>Wessel-citat, se <xref poem="19990208009"/>.</note>
+"Som den maa være blind, der ei kan see hos Eder",<note editorial="true">Wessel-citat, se <xref poem="19990208009"/>.</note>
 Lykønskt af Salomon, misundt af Povl og Peder -
 Hvor skulde jeg, med slig en Stierne fød,
 Herefter kunde lide Nød
@@ -6088,7 +6088,7 @@ Lig salig Lazarus i Abrams Skiød.
   <subtitle>Til Conferentsraad Schlegel i Odense</subtitle>
   <firstline>Som Resultat af dit til visse heel Trebazizke</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -6101,7 +6101,7 @@ Mit (gid jeg torde sige: ligesaa
 Sit store Mønster lignende!) Horaziske
 Poetiske Raadspørgsmaal om:
 Hvad i den Sag pro Syngen, contra Qvækken
-Der kunde giøres ved Setines-Bækken? *)<note>*) Setines. En ussel lille Kiøbstæd, hvor Athene tilforn har staaet.</note>
+Der kunde giøres ved Setines-Bækken? *)<note>Setines. En ussel lille Kiøbstæd, hvor Athene tilforn har staaet.</note>
 Er paa Parnasset fældet denne Dom,
 Hvis troe Kopie, som den er kommen mig tilhænde,
 Jeg hoslagt har den Ære dig at sende.
@@ -6120,12 +6120,11 @@ Ved nemlig ei blot Alvor saa som saa,
 Men Skiemt og noget at forstaae.
 
      Dog - skulde du vel troe det? - her i Landet,
-    Og her i Byen, som af Holbergs **) Salt<note>**)
-<poetry lang="la">
+    Og her i Byen, som af Holbergs **) Salt<note><poetry lang="la">
 - qui sale multo
 Urbem perfricuit -
 </poetry>
-Hor.</note><note>Citatet fra Horats stammer fra <xref poem="horats2026010405"/> og kan oversættes ,,som med megen bidende vittighed skurede byen.''</note>
+Hor.</note><note editorial="true">Citatet fra Horats stammer fra <xref poem="horats2026010405"/> og kan oversættes ,,som med megen bidende vittighed skurede byen.''</note>
 Blev giennemgnidt saa herlig overalt
 Som ingen anden og som intet andet -
 Hvor daglig Føde bleven er hans Spøg -
@@ -6193,7 +6192,7 @@ Og nu maaskee opholder sig i Fyen.
   <subtitle>Til Cancellieraad Lautrup</subtitle>
   <firstline>Du melder mig, angaaende de Klæder</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -6378,8 +6377,8 @@ Indtil jeg synder næste Gang.
   baggesen2019080323: Citat eller genbrug i et andet digt, ikke en tekstvariant.
   -->
   <notes>
-    <note>Cf. Baggesens oprindelige <xref poem="baggesen2019080323"/>.</note>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true">Cf. Baggesens oprindelige <xref poem="baggesen2019080323"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -6391,12 +6390,12 @@ Da jeg i Sloikjol paa en Kaalstok reed,
 Mens ofte løbsk foran mig løb en Trille
 Til Skræk for Kiøkkenhavens Ærtebed -
 Da Taarnborgs Bredde var mig fierne Kyster,
-Og Halskovs Lygte*) var mig Jordens Pol;<note>*) Fyret paa Pynten udenfor Korsøer.</note>
+Og Halskovs Lygte*) var mig Jordens Pol;<note>Fyret paa Pynten udenfor Korsøer.</note>
 Og jeg "Kom fremmed" legte med min Søster
 I samme Værelse fra Stol til Stol -
 Da vi gik samme Vei, paa Gaasestien,
 Bag efter Giæslingerne Par og Par,
-Og tog os vel i Agt for Ælling-Lien**)<note>**) Handelen dengang paa Norge har udentvivl bragt denne Benævnelse paa den Deel af  Fæstningsgravene, Ællingerne pladskede i, til min Fødebye.</note>
+Og tog os vel i Agt for Ælling-Lien**)<note>Handelen dengang paa Norge har udentvivl bragt denne Benævnelse paa den Deel af  Fæstningsgravene, Ællingerne pladskede i, til min Fødebye.</note>
 Og Randen af det sænkte Bryggerkar -
 Da jeg til heldig Fangst var tidt paa Nippen,
 Med Faldehat, paa Sommerfuglejagt;

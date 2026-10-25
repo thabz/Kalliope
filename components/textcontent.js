@@ -410,14 +410,15 @@ const renderXmlString = (inputString) => {
       case 'note': {
         const note = node.cloneNode(true);
         const first = note.firstChild;
-        const authorMarker = first?.nodeType === 3
+        const editorial = node.getAttribute('editorial') === 'true';
+        const authorMarker = editorial === false && first?.nodeType === 3
           ? first.textContent.match(/^\s*(\*+(?:\))?)\s*/)?.[1] ?? null
           : null;
         if (authorMarker != null) {
           first.textContent = first.textContent.replace(/^\s*\*+(?:\))?\s*/, '');
         }
         const noteContent = handle_nodes(note.childNodes);
-        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} editorial={node.getAttribute('editorial') === 'true'} />;
+        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} editorial={editorial} />;
       }
       case 'sc':
         return (
