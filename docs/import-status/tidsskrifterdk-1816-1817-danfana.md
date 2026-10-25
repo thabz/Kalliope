@@ -32,7 +32,7 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle hæfter efter juni er fortsat `incomplete`; deres tidligere
+Alle hæfter efter juli er fortsat `incomplete`; deres tidligere
 delkontroller nedenfor er ikke afsluttende godkendelser.
 
 Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
@@ -109,7 +109,7 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 og *Litterariske Nyheder* (side 284–288).
 Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
 (side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
-Med majs syv og junis 11 nye tekstforekomster er der 131 tekstforekomster i hæfterne.
+Med majs syv, junis 11 og julis seks nye tekstforekomster er der 137 tekstforekomster i hæfterne.
 Importen af hele årgangen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
@@ -131,7 +131,7 @@ har udviskede bogstaver. De eksisterende læsninger bevares med udtrykkelige
 usikkerhedsnoter; der er ikke rekonstrueret tekst fra en anden udgave.
 Farvekilde: <https://www.kb.dk/e-mat/dod/130017630319-color.pdf>.
 
-De resterende hæftetekster fra juli og frem, de resterende relevante trykte rettelser og den samlede
+De resterende hæftetekster fra august og frem, de resterende relevante trykte rettelser og den samlede
 slutkontrol mangler fortsat. Værkerne har derfor status `incomplete`, og
 PR’en er fortsat en kladde.
 
@@ -413,3 +413,93 @@ dispositioneret med direkte kildeevidens. Den semantiske sideaudit,
 variantkontrollen, tekstkvalitetskontrollen, XML-valideringen og `make test`
 er gennemført; endelig commit- og CI-status føres i PR #2012.
 Juli og senere hæfter forbliver uafsluttede og er ikke ændret her.
+
+
+## CI-integration med master efter juni
+
+Master er flettet ind efter juni-committen. Fire endnu ikke mergede
+Danfana-id’er kolliderede med de allerede publicerede id’er i
+*Nytaarsgave 1792*. Danfanas `baggesen2026102201`–`baggesen2026102204`
+er derfor flyttet til `baggesen20261022101`–`baggesen20261022104`.
+De 63 oprindelige legacy-id’er og Nytaarsgavens publicerede id’er er bevaret.
+Ingen tekst, side, note eller korrekturattest er ændret ved id-rettelsen.
+
+Det afsluttende komma i Thieles januartitel er fjernet fra titelmetadata
+efter den gældende titelregel; den diplomatiske brødtekst er uændret.
+
+
+## Juli 1816: fuld kontrol mod farve-PDF
+
+Juli er færdiggjort efter grøn CI for juni og master-integrationen på
+`adfd55874` (run `40175760705`). Arbejdet fortsætter direkte på
+`tidsskrifter-danfana` efter brugerens anvisning, ét hæfte ad gangen og
+med grøn CI før det næste. Den midlertidige juni-PR #2043 er lukket.
+
+Alle syv tekstposter er indsat og kontrolleret: *Thora* VI–VIII,
+*Til min Thora*, *Den nyeste skiønne Litteratur*, det eksisterende
+*Riim-Trøstebrev* og prosameddelelsen *Seneste Parnassiske Nyhed*.
+Seks forekomster er nye. Den eksisterende teksts id og redaktionelle noter
+bevares. Hæftet har 101 tekstsideforekomster på alle 100 fysiske
+tekstsider, syv poesiblokke og 94 præcise interne sideskift. De tre
+*Thora*-sange har 301, 289 og 401 fortløbende heksametre uden blanke
+strofeskel. Falske skel ved sideskift er fjernet efter kildekontrol;
+kildens indrykkede fortælleafsnit bevares med fire mellemrum.
+
+Den autoritative kilde er KB's farve-PDF
+<https://www.kb.dk/e-mat/dod/130017630327-color.pdf>, PDF-sider 8–107.
+Den første tekstside er unummereret og registreres bibliografisk som s. 1;
+facsimilelinket åbner på `007.jpg`, og der er ikke indsat en kunstig
+sideskiftemarkør ved tekstens begyndelse. Alle sider er fuldt genlæst
+mod farvekilden i uafhængige reviewersessioner. To friske farvebaserede
+OCR-pass, PSM 3 og 6, dækker alle 100 sider og leverer slutanalysens
+geometri. Første producentgennemgang og tidligere delreviews er bevaret
+som historik; sort-hvid-OCR er ikke autoritativ for slutlæsningerne.
+
+Rettelsesarket nederst på s. 100, PDF107 (`106.jpg`), er kontrolleret og
+registreret som `errata applied`, aldrig som tekstpost. Alle tre rettelser
+på s. 26 og 43 er indført med typed errata-fodnoter. Fodnoternes højresider
+følger de faktiske oprindelige vers: s. 26 har ikke det ekstra komma,
+som rettelsesarket citerer, og »blidt« på s. 43 er med lille begyndelsesbogstav
+i versets sammenhæng. Sletningen af »om hans« på næste vers er markeret
+med `∅] om hans`.
+
+*Riim-Trøstebrev* har fået sine otte manglende sideskift. De 35 kildebelagte
+rettelser af streger og citationstegn er genkontrolleret; Arlauds
+redaktionelle note er ordret bevaret. De to oprindelige trykte noter er
+ordret transskriberet som fodnoter uden trykte markører, herunder trykkets
+»Skiemtedigt« på s. 99. Titel og de tre følgende undertitellinjer følger
+rubrikkerne på s. 91 uden sammenlægning. Det latinske Horats-motto i
+*Den nyeste skiønne Litteratur* er mærket `lang="la"`, og personen er
+registreret som nøgleord. Trykkets »De de« i undertitlen på s. 79 bevares
+med præcis note og afgrænset tekstkvalitetsundtagelse.
+
+19 helordsmarkeringer bevarer `[ulæseligt]` efter farvekontrollen:
+*Thora* VI s. 1, 8 og 22 (fire), VII s. 33 (én), VIII s. 51, 54, 56,
+60, 63, 66 og 73 (ti) samt *Den nyeste skiønne Litteratur* s. 86 (fire).
+De konkrete sidenoter står i teksthovederne. På s. 33 og 54 kan o/ø i
+»Skoster«/»Skøster« ikke afgøres sikkert; de to tryksteder er ikke udfyldt
+ud fra hinanden. På s. 51 er førsteglyffen i den tidligere kladdes
+»leiforme« usikker mellem f og langt s; ordet er ikke erstattet af en
+form gættet ud fra betydningen. På s. 73 er det sikkert læselige
+selvstændige »i« indført mellem to usikre ordsteder. Ingen manglende
+bogstaver er rekonstrueret.
+
+Julis titelblad er udskiftet med farve-PDF'ens indlejrede billede. Det er
+rettet 1,16 grader op uden opskalering og uden beskæring i den trykte
+ramme; billed-QA har status `pass`. Ordlyd og bibliografiske oplysninger er
+visuelt kontrolleret. De allerede publicerede farvefacsimiler og alle
+miniaturebilleder er bevaret med uændrede side-id’er; den fulde
+checksum-kontrol fra juni gælder fortsat for de samme filer.
+
+Alle 38 aktuelle strukturkandidater og 1257 OCR-signaler er individuelt
+dispositioneret. Fundregisteret har 1396 afsluttede poster: 100 verificerede,
+1295 afviste og én tilbagetrukket. Alle poesiblokke har visuelle registre,
+og både prosa, motto, originalnoter og typografi er omfattet. Den semantiske
+sideaudit dækker 101 forekomster med nul fejl. Variantkontrollen har ingen
+åbne kandidater eller dataproblemer. XML, tekstkvalitetskontrol og `make test`
+er gennemført; endeligt checkpoint, commit og CI dokumenteres i PR #2012.
+Hæftet har begge korrekturflag, modelattest og `status="complete"`.
+
+Slutreview og frosset checkpoint: `/tmp/danfana-1985/final-july-peer/`.
+Uafhængige reviewområder: `final-july-thora67/`, `final-july-thora8/` og
+`final-july-other/`. August og senere hæfter er ikke ændret i denne session.
