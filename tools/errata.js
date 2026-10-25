@@ -63,19 +63,34 @@ const validateErrata = (work, filename, { requireDeclaration = false } = {}) => 
 
   const errataFootnotes = Array.from(work.getElementsByTagName('footnote'))
     .filter(node => node.getAttribute('type') === 'errata');
-  if (applied.length > 0 && errataFootnotes.length === 0) {
-    issues.push(`${filename}: <errata status="applied"/> kræver mindst én <footnote type="errata">`);
+  if (errataFootnotes.length > 0) {
+    issues.push(`${filename}: rettelsesfodnoter er ikke tilladt i værker; brug <!-- Rettelsesark: rettet] trykt -->`);
   }
-  if (applied.length === 0 && errataFootnotes.length > 0) {
-    issues.push(`${filename}: <footnote type="errata"> kræver <errata status="applied"/>`);
-  }
-  errataFootnotes.forEach((note, index) => {
-    const text = note.textContent.trim().replace(/\s+/g, ' ');
-    const match = /^([^\]]+)\] ([^\]]+)$/.exec(text);
-    if (match == null || match[1].trim() === '' || match[2].trim() === '' || match[1] === match[2]) {
-      issues.push(`${filename}: errata-fodnote ${index + 1} skal have formen rettet] trykt`);
+  const comments = [];
+  const collectComments = node => {
+    for (const item of Array.from(node.childNodes ?? [])) {
+      if (item.nodeType === 8 && /^\s*Rettelsesark\b/iu.test(item.data)) {
+        comments.push(item.data.trim());
+      }
+      collectComments(item);
+    }
+  };
+  collectComments(work);
+  let validComments = 0;
+  comments.forEach((text, index) => {
+    const match = /^Rettelsesark: ([^\]\r\n]+)\] ([^\]\r\n]+)$/.exec(text);
+    if (match == null || match[1].trim() === '' || match[2].trim() === '' || match[1].trim() === match[2].trim()) {
+      issues.push(`${filename}: rettelseskommentar ${index + 1} skal have formen Rettelsesark: rettet] trykt med forskellige læsemåder`);
+    } else {
+      validComments += 1;
     }
   });
+  if (applied.length > 0 && validComments === 0) {
+    issues.push(`${filename}: <errata status="applied"/> kræver mindst én gyldig rettelseskommentar`);
+  }
+  if (applied.length === 0 && comments.length > 0) {
+    issues.push(`${filename}: rettelseskommentar kræver <errata status="applied"/>`);
+  }
   return issues;
 };
 

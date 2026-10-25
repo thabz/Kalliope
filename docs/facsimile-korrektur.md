@@ -35,7 +35,7 @@ til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
 Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
 `<workhead>`, og alle relevante rettelser skal indføres med
-`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+`<!-- Rettelsesark: rettet] trykt -->` ved tekststedet. Arket må
 ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
 
 En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
