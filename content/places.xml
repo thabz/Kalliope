@@ -91,6 +91,11 @@
     <wikidata>Q241744</wikidata>
     <type>town</type>
   </place>
+  <place id="arno">
+    <name>Arno</name>
+    <type>river</type>
+    <parent ref="italy"/>
+  </place>
   <place id="arqua-petrarca">
     <name>Arquà Petrarca</name>
     <wikidata>Q34638</wikidata>
@@ -145,6 +150,10 @@
     <alias>Baia</alias>
     <parent ref="italy"/>
   </place>
+  <place id="balkans">
+    <name>Balkan</name>
+    <type>region</type>
+  </place>
   <place id="baltic-sea">
     <name>Østersøen</name>
     <canonical-name>Baltic Sea</canonical-name>
@@ -159,6 +168,11 @@
     <name>Basel</name>
     <wikidata>Q78</wikidata>
     <type>city</type>
+  </place>
+  <place id="belgrade">
+    <name>Belgrad</name>
+    <type>city</type>
+    <parent ref="serbia"/>
   </place>
   <place id="bergen">
     <name>Bergen</name>
@@ -245,6 +259,11 @@
     <alias>Fiume Brenta</alias>
     <parent ref="italy"/>
   </place>
+  <place id="brixen">
+    <name>Brixen</name>
+    <type>town</type>
+    <parent ref="italy"/>
+  </place>
   <place id="burg-adolfseck">
     <name>Burg Adolfseck</name>
     <wikidata>Q1010663</wikidata>
@@ -281,6 +300,11 @@
     <name>Cannes</name>
     <wikidata>Q39984</wikidata>
     <type>city</type>
+    <parent ref="france"/>
+  </place>
+  <place id="cap-esterel">
+    <name>Kap Esterel</name>
+    <type>headland</type>
     <parent ref="france"/>
   </place>
   <place id="capri">
@@ -334,6 +358,11 @@
     <type>palace</type>
     <alias>Charlottenlund</alias>
     <parent ref="denmark"/>
+  </place>
+  <place id="chianti">
+    <name>Chianti</name>
+    <type>region</type>
+    <parent ref="italy"/>
   </place>
   <place id="christiansdal">
     <name>Christiansdal</name>
@@ -414,6 +443,10 @@
     <alias>Danewerk</alias>
     <parent ref="duchy-schleswig"/>
   </place>
+  <place id="danube">
+    <name>Donau</name>
+    <type>river</type>
+  </place>
   <place id="darmstadt">
     <name>Darmstadt</name>
     <wikidata>Q2973</wikidata>
@@ -475,6 +508,11 @@
     <alias>Maria Einsideln</alias>
     <alias>Einsideln</alias>
   </place>
+  <place id="eisack">
+    <name>Eisack</name>
+    <type>river</type>
+    <parent ref="italy"/>
+  </place>
   <place id="england">
     <name>England</name>
     <wikidata>Q21</wikidata>
@@ -505,6 +543,11 @@
     <alias>Faareveile</alias>
     <parent ref="langeland"/>
     <note>Fårevejle på Langeland.</note>
+  </place>
+  <place id="faenza">
+    <name>Faenza</name>
+    <type>city</type>
+    <parent ref="italy"/>
   </place>
   <place id="farum">
     <name>Farum</name>
@@ -599,6 +642,11 @@
     <parent ref="zealand"/>
     <note>Lokaliteten ved Furesøen nordvest for København.</note>
   </place>
+  <place id="fribourg">
+    <name>Fribourg</name>
+    <type>city</type>
+    <parent ref="switzerland"/>
+  </place>
   <place id="funen">
     <name>Fyn</name>
     <canonical-name>Funen</canonical-name>
@@ -619,6 +667,11 @@
     <alias>Liri-Garigliano</alias>
     <alias>Liris</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="gedser">
+    <name>Gedser</name>
+    <type>town</type>
+    <parent ref="denmark"/>
   </place>
   <place id="genzano-di-roma">
     <name>Genzano di Roma</name>
@@ -897,6 +950,11 @@
     <type>manor</type>
     <alias>Hindsgavl Slot</alias>
   </place>
+  <place id="hoch-eppan">
+    <name>Hoch-Eppan</name>
+    <type>castle</type>
+    <parent ref="italy"/>
+  </place>
   <place id="hokksund">
     <name>Hokksund</name>
     <wikidata>Q1310876</wikidata>
@@ -910,6 +968,14 @@
     <type>historical region</type>
     <alias>Holsteen</alias>
     <parent ref="germany"/>
+  </place>
+  <place id="hungary">
+    <name>Ungarn</name>
+    <type>country</type>
+  </place>
+  <place id="hvidbjerg-vejle">
+    <name>Hvidbjerg ved Vejle Fjord</name>
+    <type>hill</type>
   </place>
   <place id="iceland">
     <name>Island</name>
@@ -996,6 +1062,11 @@
     <wikidata>Q25389</wikidata>
     <type>peninsula/region</type>
     <parent ref="denmark"/>
+  </place>
+  <place id="kalemegdan">
+    <name>Kalemegdan</name>
+    <type>park</type>
+    <parent ref="belgrade"/>
   </place>
   <place id="kalo-castle">
     <name>Kalø Slot</name>
@@ -1309,6 +1380,11 @@
     <alias>Marmore-vandfaldet</alias>
     <parent ref="terni"/>
   </place>
+  <place id="mecklenburg">
+    <name>Mecklenburg</name>
+    <type>region</type>
+    <parent ref="germany"/>
+  </place>
   <place id="mediterranean-sea">
     <name>Middelhavet</name>
     <canonical-name>Mediterranean Sea</canonical-name>
@@ -1381,6 +1457,11 @@
     <type>cliff</type>
     <alias>Möens Klint</alias>
     <parent ref="denmark"/>
+  </place>
+  <place id="monte-amiata">
+    <name>Monte Amiata</name>
+    <type>mountain</type>
+    <parent ref="italy"/>
   </place>
   <place id="monte-cavo">
     <name>Monte Cavo</name>
@@ -1754,6 +1835,11 @@
     <alias>Roeskilde-Domkirke</alias>
     <parent ref="roskilde"/>
   </place>
+  <place id="rostock">
+    <name>Rostock</name>
+    <type>city</type>
+    <parent ref="germany"/>
+  </place>
   <place id="round-tower-copenhagen">
     <name>Rundetårn</name>
     <canonical-name>Rundetaarn</canonical-name>
@@ -1822,12 +1908,21 @@
     <alias>Samsøe</alias>
     <parent ref="denmark"/>
   </place>
+  <place id="san-galgano-abbey">
+    <name>San Galgano</name>
+    <type>abbey</type>
+    <parent ref="italy"/>
+  </place>
   <place id="san-pietro-in-montorio">
     <name>San Pietro in Montorio</name>
     <wikidata>Q1258576</wikidata>
     <type>church</type>
     <alias>St. Pietro Montorio</alias>
     <parent ref="rome"/>
+  </place>
+  <place id="sava">
+    <name>Sava</name>
+    <type>river</type>
   </place>
   <place id="scania">
     <name>Skåne</name>
@@ -1866,6 +1961,10 @@
     <alias>Christiansborg</alias>
     <parent ref="copenhagen"/>
     <note>Den bygning der eksisterede i 1842; brændte 1884.</note>
+  </place>
+  <place id="serbia">
+    <name>Serbien</name>
+    <type>country</type>
   </place>
   <place id="seville">
     <name>Sevilla</name>
@@ -2123,6 +2222,10 @@
     <parent ref="norway"/>
     <note>Stedet er sikkert fra titlen, men et egnet Wikidata-item for landskabet/lokaliteten blev ikke verificeret; stationen og sanatoriet er andre entiteter og bruges ikke.</note>
   </place>
+  <place id="trelde-naes">
+    <name>Trelde Næs</name>
+    <type>headland</type>
+  </place>
   <place id="trieste">
     <name>Trieste</name>
     <wikidata>Q546</wikidata>
@@ -2136,6 +2239,11 @@
     <type>city</type>
     <alias>Trolhättan</alias>
     <parent ref="sweden"/>
+  </place>
+  <place id="tuscany">
+    <name>Toscana</name>
+    <type>region</type>
+    <parent ref="italy"/>
   </place>
   <place id="tusculum">
     <name>Tusculum</name>
@@ -2181,6 +2289,11 @@
     <wikidata>Q12404</wikidata>
     <type>canton</type>
   </place>
+  <place id="valby">
+    <name>Valby</name>
+    <type>district</type>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="vallo-castle">
     <name>Vallø Slot</name>
     <canonical-name>Vallø Castle</canonical-name>
@@ -2213,6 +2326,10 @@
     <alias>Vetteren</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="vejle-fjord">
+    <name>Vejle Fjord</name>
+    <type>fjord</type>
+  </place>
   <place id="velletri">
     <name>Velletri</name>
     <wikidata>Q189236</wikidata>
@@ -2242,6 +2359,11 @@
     <wikidata>Q641</wikidata>
     <type>city</type>
     <alias>Venezia</alias>
+    <parent ref="italy"/>
+  </place>
+  <place id="verona">
+    <name>Verona</name>
+    <type>city</type>
     <parent ref="italy"/>
   </place>
   <place id="vesuvius">
@@ -2309,6 +2431,11 @@
     <alias>Wreta</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="warnemuende">
+    <name>Warnemünde</name>
+    <type>district</type>
+    <parent ref="rostock"/>
+  </place>
   <place id="wiesbaden">
     <name>Wiesbaden</name>
     <wikidata>Q1721</wikidata>
@@ -2328,6 +2455,10 @@
     <wikidata>Q3852</wikidata>
     <type>city</type>
   </place>
+  <place id="zagreb">
+    <name>Zagreb</name>
+    <type>city</type>
+  </place>
   <place id="zealand">
     <name>Sjælland</name>
     <canonical-name>Zealand</canonical-name>
@@ -2340,6 +2471,11 @@
     <alias>Siælland</alias>
     <alias>Solund</alias>
     <parent ref="denmark"/>
+  </place>
+  <place id="zemun">
+    <name>Zemun</name>
+    <type>district</type>
+    <parent ref="belgrade"/>
   </place>
   <place id="zug">
     <name>Zug</name>
