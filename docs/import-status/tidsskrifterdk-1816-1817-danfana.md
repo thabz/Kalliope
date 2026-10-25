@@ -503,3 +503,27 @@ Hæftet har begge korrekturflag, modelattest og `status="complete"`.
 Slutreview og frosset checkpoint: `/tmp/danfana-1985/final-july-peer/`.
 Uafhængige reviewområder: `final-july-thora67/`, `final-july-thora8/` og
 `final-july-other/`. August og senere hæfter er ikke ændret i denne session.
+
+
+## Efterkorrektur af juni og juli 1816
+
+Thora-sangene er samlet i ikke-linkbare sektioner med særskilte
+indholdsfortegnelsestitler. Sommerdigte-sektionens id er fjernet, og
+henvisningen »S. 444« i noten til »Den døende Harpeklang« linker til majhæftets
+»Elegie«. Kalliopes egne noter og rettelsesfodnoter er markeret med
+`editorial="true"`; kildens egne noter er bevaret uden markøren.
+
+Efter brugerens rettelser er noternes sidetal ajourført. De sidste syv
+`[ulæseligt]` i Thora er derefter afklaret med støtte i *Jens Baggesens danske
+Værker*, anden udgave ved August Baggesen, bind VIII, C. A. Reitzel,
+Kjøbenhavn, 1846: »natlige« (s. 227), »blødende« (s. 272), »Didkomst«
+(s. 275), »Ringen«, »slænge den« og »Klæben« (s. 280). De relevante
+bogstavrester og linjer er sammenholdt med Danfanas farvefacsimile,
+henholdsvis s. 518 samt s. 60, 66 og 73; Danfanas øvrige stavning,
+tegnsætning og verslinjer er bevaret. Opslagene er visuelt kontrolleret i
+brugerens lokale PDF *Danske Værker - Bind 07-08.pdf*; den er hentet fra
+Google Books, id `hDQYAAAAYAAJ`.
+
+To ulæselige steder på s. 86 i »Den nyeste skiønne Litteratur« er fortsat
+markeret; teksten er ikke lokaliseret i den senere udgave ved denne kontrol.
+De er ikke udfyldt ved gæt ud fra sammenhængen.
