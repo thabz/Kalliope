@@ -26,6 +26,21 @@ describe('first transition to complete for facsimile works', () => {
     expect(validateFacsimileCompletion({ baseXml: null, headXml: work({ proofreadings }) })).toEqual([]);
   });
 
+  it('accepts a named human attesting completed manual proofreading', () => {
+    const proofreadings = '<proofreadings><proofreading reviewer="Jesper Christensen" datetime="2026-10-16T08:00:00+02:00"/></proofreadings>';
+    expect(validateFacsimileCompletion({ baseXml: null, headXml: work({ proofreadings }) })).toEqual([]);
+  });
+
+  it.each([
+    ['reviewer=" "', 'mangler modelnavn eller navn på manuel korrekturlæser'],
+    ['model="gpt-6" reviewer="Jesper Christensen"', 'enten model eller reviewer'],
+  ])('rejects an invalid manual attribution: %s', (attributes, message) => {
+    const proofreadings = `<proofreadings><proofreading ${attributes} datetime="2026-10-16T08:00:00+02:00"/></proofreadings>`;
+    expect(validateFacsimileCompletion({ baseXml: null, headXml: work({ proofreadings }) })).toEqual([
+      expect.stringContaining(message),
+    ]);
+  });
+
   it('requires an attestation and every quality flag on every text', () => {
     const errors = validateFacsimileCompletion({
       baseXml: work({ status: 'incomplete' }),
