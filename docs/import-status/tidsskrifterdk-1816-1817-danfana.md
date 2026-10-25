@@ -32,7 +32,7 @@ billed-QA'ens godkendte SHA-256.
 Januar har `status="complete"`, alle tekstposter har
 `korrektur1,korrektur2,kilde,side`, og den uafhængige korrektur er attesteret.
 Aktuel test-, checkpoint-, commit- og CI-status føres i PR #2012.
-Alle hæfter efter maj er fortsat `incomplete`; deres tidligere
+Alle hæfter efter juni er fortsat `incomplete`; deres tidligere
 delkontroller nedenfor er ikke afsluttende godkendelser.
 
 Februar 1816 er ligeledes færdigkontrolleret med alle 12 tekstposter og
@@ -109,7 +109,7 @@ motto, indledningssonet, 77 oktaver og slutsonet. Februarkladderne omfatter desu
 og *Litterariske Nyheder* (side 284–288).
 Desuden er hele *Heautontheorumenos eller Spøgelset i Kerteminde*
 (side 215–241) og *Kritisk Vurdering … Ludlams Hule* (242–283) indsat.
-Med majs syv nye tekstforekomster er der 120 tekstforekomster i hæfterne.
+Med majs syv og junis 11 nye tekstforekomster er der 131 tekstforekomster i hæfterne.
 Importen af hele årgangen er ikke færdig.
 
 Alle 1114 facsimilesider og tilhørende miniaturebilleder er genereret og
@@ -131,7 +131,7 @@ har udviskede bogstaver. De eksisterende læsninger bevares med udtrykkelige
 usikkerhedsnoter; der er ikke rekonstrueret tekst fra en anden udgave.
 Farvekilde: <https://www.kb.dk/e-mat/dod/130017630319-color.pdf>.
 
-De resterende hæftetekster fra juni og frem, de resterende relevante trykte rettelser og den samlede
+De resterende hæftetekster fra juli og frem, de resterende relevante trykte rettelser og den samlede
 slutkontrol mangler fortsat. Værkerne har derfor status `incomplete`, og
 PR’en er fortsat en kladde.
 
@@ -359,3 +359,57 @@ læsninger i januar, februar og maj kan fortsat ikke genkontrolleres
 bogstav for bogstav og bevares med deres usikkerhedsnoter. I alt er
 21 af de 31 problemsteder fortsat usikre. Ingen læsning er rekonstrueret
 fra en anden udgave, forventet ordlyd eller OCR.
+
+
+## Juni 1816: afsluttende kontrol mod farve-PDF
+
+Juni er indsat med alle 12 tekstposter på s. 481–576: *Thora*, tredje til
+femte sang, samt de ni tekster under *Sommerdigte*. 11 forekomster er nye;
+*De atten Eller* beholder sit eksisterende id og sine noter. Thieles
+*Til sin Psyche* har egen forfatterangivelse. Hæftet omfatter 97
+tekstsideforekomster på 96 fysiske sider, 24 poesiblokke og 85 interne
+sideskift. Hæftet har `status="complete"`, begge korrekturflag og modelattest.
+
+Den autoritative kilde er KB's farve-PDF
+<https://www.kb.dk/e-mat/dod/130017630319-color.pdf>. Alle 96 tekstsider er
+fuldt genlæst mod denne kilde i uafhængige reviewersessioner; en tidligere
+sort-hvid-gennemgang bruges alene som hjælp. Alle ord, vers, strofer,
+indryk, overskrifter, originalnoter og typografiske fremhævelser er
+sammenholdt med farvesiderne. To friske OCR-pass, PSM 3 og 6, er kørt på
+samtlige 96 farvesider, og den afsluttende helværksanalyse bruger deres
+farvebaserede geometri. Den tidligere læsning »betalende« på s. 484 er
+trukket tilbage; farvekilden viser »befalende«.
+
+Junis titelblads-JPEG er udskiftet med farve-PDF'ens indlejrede billede.
+Hele kildens ramme bevares uden opskalering; det automatiske forslag om at
+beskære i den venstre ramme er ikke anvendt. Billed-QA har status `pass`.
+Titelbladets ordlyd og bibliografiske oplysninger er visuelt kontrolleret.
+Alle 1114 facsimilesider, 10026 miniaturebilleder og begge PDF-filer er
+kontrolleret mod farveudgaverne, både i den lokale facsimilemappe og ved
+checksum-sammenligning med serveren. Der er ingen afvigelser.
+
+27 ordmarkeringer bevarer `[ulæseligt]`, fordi den fulde ordform ikke kan
+læses sikkert i farvekilden: *Thora* III på s. 487, 496 og 497 (fire),
+IV på s. 503, 506, 514, 515, 517 og 518 (ni), V på s. 525, 526, 535 og
+538 (ti), *Digtarterne* på s. 544 og 551 (to), *Ode* på s. 553 (ét)
+og *Til sin Psyche* på s. 576 (ét). Teksthovedernes noter angiver de
+konkrete sider. Den tidligere uunderbyggede slutning »Lunde,« på s. 576
+er erstattet af en helordsmarkør uden tilføjet tegnsætning. Ingen manglende
+bogstaver er rekonstrueret.
+
+Trykkets »lidt lidt igien ti sig selv« på s. 527 og »Er det det samme« på
+s. 549 bevares med præcise noter og afgrænsede tekstkvalitetsundtagelser.
+»Til Fru H********« er forbundet som variant med det senere tryk
+`baggesen2002112628`; egen ordlyd og struktur følger fortsat juni 1816.
+*Den døende Harpeklang* registrerer Baggesen som forfatter til den endnu
+ikke indsatte tyske original; kildens egen note og majhæftets elegi
+dokumenterer relationen. Et afsluttende ornament på s. 552 er udeladt.
+
+Reviewmateriale og frosset checkpoint ligger i
+`/tmp/danfana-1985/final-june-peer/`, med de tre uafhængige reviewområder
+`final-june-thora34/`, `final-june-thora5/` og `final-june-summer/`.
+De 38 aktuelle strukturkandidater og 987 OCR-signaler er individuelt
+dispositioneret med direkte kildeevidens. Den semantiske sideaudit,
+variantkontrollen, tekstkvalitetskontrollen, XML-valideringen og `make test`
+er gennemført; endelig commit- og CI-status føres i PR #2012.
+Juli og senere hæfter forbliver uafsluttede og er ikke ændret her.
