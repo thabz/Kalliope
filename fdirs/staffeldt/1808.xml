@@ -9,8 +9,7 @@
   <notes>
     <note editorial="true">Staffeldt anmærker ,,Ved en Fejltagelse ere to eller tre, men heller ikke fleere allerede bekiendte Digte atter aftrykte i denne forresten aldeles nye Samling.'' Til afsnittet »Sonnetter« nævner han ,,De ere, saavel som deres bekiendte Forgiængere, for den største Deel blevne til paa Reiser, hvor Indtrykkenes hastige Følge i korte Intervaller ogsaa avlede Trangen til en kortere, dog derfor ikke mindre fuldendt, Form for Opbevarelsen. Tillige kunne de ansees som <w>Sprogstudier</w>.''</note>
     <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note editorial="true">Noter med en foranstillet asterisk er Staffeldts egne.</note>
-    <note editorial="true">Bidraget af Henrik Nielsen med hjælp fra Brian Bentsen og Sven Sørensen.</note>
+    <note type="credits" editorial="true">Bidraget af Henrik Nielsen med hjælp fra Brian Bentsen og Sven Sørensen.</note>
   </notes>
   <source facsimile="115408007390_color" facsimile-pages-num="436" facsimile-pages-offset="24">Schack Staffeldt: <i>Nye Digte</i>, Den academiske Boghandling, Kiel, 1808.</source>
   <quality>korrektur1,kilde,side</quality>
@@ -527,7 +526,7 @@ Det atter sig en Foraarskrands vil binde
 For atter den at drysse ned
 Og skjule den unydte Frugt dermed.
 Siig, om ei skjønnere i dulgte Dale
-Den ømme Vaillants Lilje staaer,<note>* <w>Vaillant's Lillie</w>. Ingen Følende kan uden Rørelse læse denne Rejsendes skiønne Beskrivelse af en forunderlig deilig, i en africanisk Udørk forborgen, Lillie.</note>
+Den ømme Vaillants Lilje staaer,<note><w>Vaillant's Lillie</w>. Ingen Følende kan uden Rørelse læse denne Rejsendes skiønne Beskrivelse af en forunderlig deilig, i en africanisk Udørk forborgen, Lillie.</note>
 End i Konges Urtegaard
 For snart at visne i hans Sale?
 Hvad vil den Lilje blomstre for i Løn?
@@ -1035,7 +1034,7 @@ Tøv, ømme Rosenmø! — Forgjæves!
   <title>Forvandlingerne</title>
   <firstline>Saa herligt, som Martyren i sit Blod</firstline>
   <notes>
-    <note>* Om dette Digt er en lov- og følgelig betydningsløs Phantasieleeg, eller en Cyclus af mystiske Tegn, samlede under philosophisk Anskuelse til en Mythus, vover Digteren ikke meer at afgiøre. Her aner han kun sig selv.</note>
+    <note>Om dette Digt er en lov- og følgelig betydningsløs Phantasieleeg, eller en Cyclus af mystiske Tegn, samlede under philosophisk Anskuelse til en Mythus, vover Digteren ikke meer at afgiøre. Her aner han kun sig selv.</note>
     <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="51-56"/>
@@ -2653,9 +2652,9 @@ Italienske Sonnetter, saadanne, som Guden dem aander,
 Videre, Mus og Skaar af Gudernes smuldrende Templer,
   Mangt et campanisk Kar, mangen en liden Penat;
 Men iblant andre Mærker, som standse det flaggrende Minde,
-  Er der en Myrtegreen, plukket i Galliens Stad,<note>* <w>Galliens Stad</w>. Lyon.</note>
+  Er der en Myrtegreen, plukket i Galliens Stad,<note><w>Galliens Stad</w>. Lyon.</note>
 Hvor den mandige Rhone med den jomfrulige Saone,
-  Tvende Elskende<note>* <w>Tvende Elskende</w>. Hvo kiender dem ikke af Yorik?</note> liig, blandede vorde til Eet.
+  Tvende Elskende<note><w>Tvende Elskende</w>. Hvo kiender dem ikke af Yorik?</note> liig, blandede vorde til Eet.
 Naar jeg i Haanden den tager og af mit inderste Øje
   Veemodstaarernes Dug rinder paa Bladene ned,
 Trylles jeg? er det en Drøm? Da vaagne de visnende Trevle
@@ -2703,7 +2702,7 @@ Thi nedlagdes de begge i samme Gravsted paa Højen,
   <title>Tidens Sejer</title>
   <firstline>Vaaren ned i Straaler stiger</firstline>
   <notes>
-    <note>* En Efterligning.</note>
+    <note>En Efterligning.</note>
   </notes>
   <source pages="170-171"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2806,7 +2805,7 @@ Favnes ikkun i din Bo.
   <title>Camoens</title>
   <firstline>Det ei var Søvnen, som saa blødt omslynger</firstline>
   <notes>
-    <note>* <w>Camoens</w>, udtal Camøings, i to Stavelser. En Tradition ligger til Grund for Hungerdøden i denne Digtning. Historisk sandt er det ikke desmindre, at denne ligesaa ynksom beundringsværdige Digter, efter at have befundet sig i den uforsonlige Conflict mellem Genialitet og Verdenspraxis, omsider døde i en offentlig Stiftelse for Brøstfældige og Nødlidende.</note>
+    <note><w>Camoens</w>, udtal Camøings, i to Stavelser. En Tradition ligger til Grund for Hungerdøden i denne Digtning. Historisk sandt er det ikke desmindre, at denne ligesaa ynksom beundringsværdige Digter, efter at have befundet sig i den uforsonlige Conflict mellem Genialitet og Verdenspraxis, omsider døde i en offentlig Stiftelse for Brøstfældige og Nødlidende.</note>
   </notes>
   <source pages="175-199"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4817,7 +4816,7 @@ Thi vil jeg Sorgen bære, Fortvivlelsen under mig binde,
   <title>Krigssang for den danske Hær</title>
   <firstline>I Leding, i Leding enhver, enhver</firstline>
   <notes>
-    <note>* Kronprindsen har befalet denne og den følgende Sang at trykkes og uddeeles i Hæren.</note>
+    <note>Kronprindsen har befalet denne og den følgende Sang at trykkes og uddeeles i Hæren.</note>
     <note editorial="true">Melodien som Schillers <xref poem="schiller2001102413"/>.</note>
   </notes>
   <source pages="277-279"/>
@@ -5037,7 +5036,7 @@ Og sinder Himlens Fryd i Dydens Graad.
   <subtitle>den 31 Juli</subtitle>
   <firstline>O læg din søde Vellyd paa min Læbe</firstline>
   <notes>
-    <note>* Kronprindsens og Kronprindsessens Formælingsdag.</note>
+    <note>Kronprindsens og Kronprindsessens Formælingsdag.</note>
   </notes>
   <source pages="289-291"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5097,7 +5096,7 @@ Syng Danmarks Fryd — min Guddom staaer dig bi!
   <title>Blomsterne</title>
   <firstline>I Dannerkongens yndefulde Have</firstline>
   <notes>
-    <note>* Det større Publikum bedes at tilgive dette lille Digts Aftrykning blot for den mindre Kreds, der kiender sammes Anledning og Udtydning.</note>
+    <note>Det større Publikum bedes at tilgive dette lille Digts Aftrykning blot for den mindre Kreds, der kiender sammes Anledning og Udtydning.</note>
   </notes>
   <source pages="292-294"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5358,7 +5357,7 @@ Nej, den flyver, mine Blikke
   <subtitle>Et Eventyr</subtitle>
   <firstline>Kong Haddings Blik kun Rædsler møder</firstline>
   <notes>
-    <note>* Paa et Par historiske Træk nær, et puurt Eventyr, hvis Betydning, forudsat det har en saadan, kun bør anes med barnlig Eenfold. Det philosophisk-poetiske <s>chiaro-oscuro</s> kræver en ligesaa nænsom Fornemmelse som Behandling.</note>
+    <note>Paa et Par historiske Træk nær, et puurt Eventyr, hvis Betydning, forudsat det har en saadan, kun bør anes med barnlig Eenfold. Det philosophisk-poetiske <s>chiaro-oscuro</s> kræver en ligesaa nænsom Fornemmelse som Behandling.</note>
   </notes>
   <source pages="305-327"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6692,7 +6691,7 @@ Og i Samtids Omfavn dem foreene,
 
    Skulde Øret ogsaa trylles ved
 En bestandig Anadyomene,
-   Søsteren til hiin ved Arnos Bred.<note>* Dengang!</note>
+   Søsteren til hiin ved Arnos Bred.<note>Dengang!</note>
 </poetry>
 </body>
 </text>
@@ -7036,7 +7035,7 @@ Thi det Kjendtes Grændser sig udvide,
 Og der tvivles ei, at hun itide
    Det opsøgte Indien vil naae.
 
-Men ved hilset Godthaabsforbjerg<note>* La montagne.</note> standse
+Men ved hilset Godthaabsforbjerg<note>La montagne.</note> standse
    Storm og Bølger Togets lette Fart,
 Rædsom Nat indhyller Scenen; snart
 

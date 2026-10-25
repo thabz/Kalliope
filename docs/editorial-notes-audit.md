@@ -6,7 +6,7 @@ værkhoveder, teksthoveder, titler, mottoer, prosa og vers. Biografier,
 leksikonartikler og interne person-/stedmetadata indgår ikke.
 
 Udgangspunktet var 15.033 noter i 916 værkfiler. Fem blandede noter er delt,
-så slutresultatet er **15.038 noter: 8.862 mærkede Kalliope-noter,
+så resultatet før oprydningen nedenfor var **15.038 noter: 8.862 mærkede Kalliope-noter,
 6.015 bevarede kilde-/tredjepartsnoter og 161 noter med uafklaret ophav**.
 Kildegruppen omfatter også litterære oversættelser i notefelter og overførte
 produktionsmeddelelser; de tilskrives ikke Kalliopes redaktion.
@@ -14,6 +14,38 @@ produktionsmeddelelser; de tilskrives ikke Kalliopes redaktion.
 Dette er en gennemgang af noternes ophav, ikke en ny fuldstændig
 facsimilekorrektur af værkerne. Manglende markering betyder fortsat ikke i sig
 selv, at en note er forfatterens.
+
+## Oprydning i overflødige markører
+
+Efter ophavsgennemgangen er 113 rene forklaringsnoter om asterisker fjernet.
+I 11 andre noter er kun den overflødige forklaringssætning fjernet; oplysninger
+om stavemåde, udgaver, udeladte tekster, digtmarkører og fejlnummerering er
+bevaret. Fire forklaringer er omskrevet uden stjerner for at bevare oplysningen
+om den trykte udgivers ophav. To yderligere forklaringer i ental er forkortet.
+
+1.977 indledende asteriskmarkører er fjernet fra kilde- og tredjepartsnoter,
+herunder én inde i et link. I `winther/1879` er de tidligere enkelt- og
+dobbeltstjerner erstattet af navnene F.L. Liebenberg og Christian Winther
+på de enkelte noter, så sondringen mellem de to ophav bevares.
+
+Stjerner i tekstkritiske noter i `baggesen/1815`, inde i noternes indhold
+og ved digtmarkører er bevaret: de kan have andre funktioner end ophav.
+Den almindelige notenummerering beregnes fortsat af renderingen; XML'ens
+noter og placeringer er bevaret bortset fra de 113 forklaringsnoter.
+
+Fem krediteringer i fire værkfiler med formuleringen »Ranet fra Brian
+Bentsens The Pierian Spring« er ændret til »Bidrag fra Brian Bentsen.«
+og angivet med `type="credits"`. Stavemåden er dokumenteret i både
+`content/about/thanks_da.xml`, `content/about/thanks_en.xml` og eksisterende
+krediteringer. De gamle weblinks i disse fem krediteringer er fjernet.
+Yderligere 92 eksisterende bidragsnoter i 64 filer har fået
+`type="credits"`, herunder »Tilføjet af Henrik Nielsen«, indtastningsnoter
+og tak for bidrag. Noter om historiske bidrag til trykte samlinger og
+faglige kommentarer med en underskrift er ikke behandlet som krediteringer.
+
+Det aktuelle inventar er **14.925 noter: 8.749 mærkede Kalliope-noter,
+6.015 kilde-/tredjepartsnoter og 161 uafklarede noter**. Undtagelserne er
+uændrede; kun inventarets samlede fingeraftryk er opdateret.
 
 ## Reproducerbart inventar
 
@@ -29,10 +61,10 @@ fysisk linje/kolonne, nulbaseret noteindeks inden for filen, tekst-id (`scope`),
 indhold, markering og indholdshash. `scope: "work"` betegner værkniveauet.
 Indholdshashen ser bort fra `editorial="true"`, også i indlejrede noter.
 
-Inventarets SHA-256 efter gennemgangen er:
+Inventarets SHA-256 efter gennemgangen og oprydningen er:
 
 ```text
-d43b59340d87b32986dc080a67a65ea45b3bcd8a9992905e0138e9f0cc44fff8
+fb6aa2d073b478345346259d1dfac52d610d55888702252f954d8a25408d8c5a
 ```
 
 Fingeraftrykket omfatter noternes rækkefølge, fil, tekst-id, indhold og
@@ -50,7 +82,9 @@ exitkode 1 og skal vurderes igen.
 
 ## Gennemgåede grupper
 
-Grupperne nedenfor er gensidigt udelukkende og dækker hele inventaret.
+Grupperne nedenfor er gensidigt udelukkende og dækker inventaret før
+oprydningen. De dokumenterer grundlaget for ophavsvurderingen; efter
+fjernelsen af erklæringer og stjerner omgrupperer rapportværktøjet noterne.
 Gruppebetegnelserne er arbejdshjælp; de er ikke generelle beviser for ophav.
 
 | Gruppe i værktøjet | Kalliope | Kilde/øvrige | Uafklaret |
