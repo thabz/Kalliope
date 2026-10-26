@@ -98,9 +98,14 @@ Her bliver det Satyre, der Pasqvil.
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Epigrammer</title>
+</head>
+<content>
+
 <text id="tode2026102603" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>1.</num>En Sladrers Gravskrift</title>
   <firstline>O! hvorfor lod man denne Steen ei melde</firstline>
   <source pages="4"/>
@@ -118,7 +123,6 @@ Omstændeligt det Hele dig fortælle.
 
 <text id="tode2026102604" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>2.</num>Junkeren og Harlequin</title>
   <firstline>Siig, Kiære, hvad der Aarsag var</firstline>
   <source pages="4-5"/>
@@ -126,15 +130,18 @@ Omstændeligt det Hele dig fortælle.
 </head>
 <body>
 <poetry>
-<nonum><center>Junkeren.</center></nonum>
+<nonum><center><w>Junkeren.</w></center></nonum>
 Siig, Kiære, hvad der Aarsag var,
 At han blev alle Folkes Nar.
-<nonum><center>Harlequin.</center></nonum>
+
+<nonum><center><w>Harlequin.</w></center></nonum>
 Een Grund dertil os begge drev;
 Af Mangel Folkes Nar jeg blev.
-<pb n="5" facs="009.jpg"/><nonum><center>Junkeren.</center></nonum>
+
+<pb n="5" facs="009.jpg"/><nonum><center><w>Junkeren.</w></center></nonum>
 Hvad skal det sige, min god’ Mand?
-<nonum><center>Harlequin.</center></nonum>
+
+<nonum><center><w>Harlequin.</w></center></nonum>
 Jeg mangler Brød, og De Forstand.
 </poetry>
 </body>
@@ -142,7 +149,6 @@ Jeg mangler Brød, og De Forstand.
 
 <text id="tode2026102605" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>3.</num>Til to Søstre</title>
   <firstline>I skiønne Søstre, skulde I begiære</firstline>
   <source pages="5"/>
@@ -160,7 +166,6 @@ Til Krig det aldrig kom.
 
 <text id="tode2026102606" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>4.</num>Junker Slenzes Hævn</title>
   <firstline>De Herrer aldrig bede mig til Giæst</firstline>
   <source pages="5"/>
@@ -176,6 +181,9 @@ Og der, foruden mig, slet ingen gaaer til Giæst.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="tode2026102607" author="tode">
 <head>
@@ -440,6 +448,9 @@ for den Rige Sølv kan faae.
   <title>Vaaren</title>
   <subtitle>(Efter det Svenske.)</subtitle>
   <firstline>I Naturen hersker Freden blid</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Hummels <xref type="translation" poem="hummel2026102601"/>.</note>
+  </notes>
   <source pages="18-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -506,14 +517,14 @@ aldrig friste nogenslags Forvandling.
   </subtitle>
   <firstline>Du vil da, fiernet langt fra Elskovs Glæder</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="tasso"/>
+    <note editorial="true">Gendigtning af Tassos <xref type="translation" poem="tasso2026102601"/>. Uddraget slutter med Dafnes »Ostinata che sei.«</note>
   </notes>
   <source pages="21-32"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 Du vil da, fiernet langt fra Elskovs Glæder,
 henleve dine unge Aar? og ej
 Du nævnes vil med søde Modernavn?
@@ -521,7 +532,7 @@ Ej see din ynderige, spæde Afkom
 Dig, spøgende, omringe? O Du Daare,
 jeg beder Dig, lad slig Beslutning fare!
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 Lad andre hylde Amors Nydelser
 — Hvis eller nogen sand, han yde kan —
 <pb n="22" facs="026.jpg"/>Det Liv, jeg fører, mig behager bedst:
@@ -533,7 +544,7 @@ Ja naar kun Skoven ikke mangler Vildt,
 og Kaageret forsynet er med Pile,
 jeg og ej frygter, mig skal mangle Moerskab.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 En tosset Moerskab! og et smagløst Liv!
 Du kjender intet bedre, derfor dette
 behager Dig; Den første Jordens Slægt,
@@ -554,7 +565,7 @@ med Ruelse og Anger vilde sukke:
 Du Dig betænke dog! For sildig at
 fortryde sine Fejl, det nytter ej.
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 Naar, angrende, Du hører mig gientage
 de Ord, Du veed saa herlig at belægge,
 da skal og Floden mod dens første Kilde
@@ -563,7 +574,7 @@ for Lammet; Støveren for bange Hare;
 Delphinen tye til Bjergets høje Top,
 og Bjørnen ned til Havets dybe Bund.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 Jeg nøje kjender den Gienstridighed.
 Som Du nu er, jeg fordum var; saaledes
 <pb n="24" facs="028.jpg"/>og mine Ansigtstræk! saa blond mit Haar!
@@ -616,7 +627,7 @@ Du da tilmode? og med hvilke Øjne
 Vil Du ham see at være lykkelig
 udi en andens Favn, og Dig foragtet?
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 Med sig og med sin Elskov lad Aminta
 kuns handle som ham synes bedst! mig rager
 det ej; og naar han blot ej bliver min
@@ -624,44 +635,44 @@ det ej; og naar han blot ej bliver min
 ham eje hvo der vil; og om han end
 blev min, jeg hans dog aldrig blive kan.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 Men Grunden til dit Had?
 
-<pb n="27" facs="031.jpg"/><nonum><center>Silvia.</center></nonum>
+<pb n="27" facs="031.jpg"/><nonum><center><w>Silvia.</w></center></nonum>
                       Hans Kierlighed.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 En yndig Fader til en grusom Søn!
 Naar saae man vel det tamme Lam at avle
 den glubske Tiger, eller Svanen ud
 at klække Ravne? Hvis Du ej Dig Selv,
 da mig Du skuffe vil!
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
                       Hans Kierlighed
 min Ærbarhed fornærmer, og han var
 mig kjær, saalænge som han vilde, hvad
 jeg ville selv.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
             Du vil Din egen Skade.
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 O tie dog stille, eller, hvis Du venter
 jeg svare skal, da tael om andre Ting!
 
-<pb n="28" facs="032.jpg"/><nonum><center>Dafnis.</center></nonum>
+<pb n="28" facs="032.jpg"/><nonum><center><w>Dafnis.</w></center></nonum>
 Nej see, hvor trodser ei den unge Moe!
 Du i det mindste dog mig svare, hvis
 en anden Elsker fremstod, vilde Du,
 som denne, ham begegne og modtage?
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 Ja hver og en, som vilde mig berøve
 min Kydskhed, ja enhver, som Du tør kalde
 min Elsker, men som er en Fiende.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 Du troer da, Bukken hade kan sin Gied,
 Og Tyren Qvien, Duen kjælne Mage?
 Og dette blide, ynderige Foraar,
@@ -692,11 +703,11 @@ dens sagte, stille Suk Du skulde høre,
 Og Du vil da for Planten staae tilbage?
 Nej sligt et daarligt Forsæt Du forlade!
 
-<nonum><center>Silvia.</center></nonum>
+<nonum><center><w>Silvia.</w></center></nonum>
 Velan! naar først jeg hører Planten sukke,
 jeg ei uvillig skal til Elskov være.
 
-<nonum><center>Dafnis.</center></nonum>
+<nonum><center><w>Dafnis.</w></center></nonum>
 Du spøger med et velmeent givet Raad;
 Med spodsk Foragt Du leer ad mine Grunde;
 og, som Din Døvhed, er Din Blindhed stor.
@@ -741,6 +752,9 @@ Gjenstridige du er!
   <title>Midnatsang i Lappmarken</title>
   <subtitle>(Efter Skjöldebrand.)</subtitle>
   <firstline>Paa disse Fjelde, Øjet vendt fra Jorden</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Skjöldebrands <xref type="translation" poem="skjoldebrand2026102601"/>.</note>
+  </notes>
   <source pages="33-34"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -834,6 +848,9 @@ husk, vort Hjertes sidste Ord var — Tak!
   <title>Oldingen til Ungdommen</title>
   <subtitle>(Fra det Svenske.)</subtitle>
   <firstline>For Dig — som for Alle — letsvævende Moe</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Choræus’ <xref type="translation" poem="choraeus2026102601"/>.</note>
+  </notes>
   <source pages="38-39"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -869,9 +886,14 @@ han ender vist Legen med Taarer.
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Ved en huuslig Fest</title>
+</head>
+<content>
+
 <text id="hjortvk2026102601" author="hjortvk">
 <head>
-  <suptitle>Ved en huuslig Fest</suptitle>
   <title><num>I.</num>Epilog til Tilskuerne</title>
   <subtitle>efter at Sølvbrylluppet var opført.</subtitle>
   <firstline>Undselig træder Dalmer frem igien</firstline>
@@ -919,7 +941,6 @@ For disse Godes Held!
 
 <text id="hjortvk2026102602" author="hjortvk">
 <head>
-  <suptitle>Ved en huuslig Fest</suptitle>
   <title><num>II.</num>Til Hymen</title>
   <firstline>O du, som lønner alle Dyder</firstline>
   <source pages="42-43"/>
@@ -960,7 +981,6 @@ Sign Brudeparret faderlig!
 
 <text id="hjortvk2026102603" author="hjortvk">
 <head>
-  <suptitle>Ved en huuslig Fest</suptitle>
   <title><num>III.</num>Ved Bordet</title>
   <firstline>Glædens Harmonier lyde</firstline>
   <source pages="44-46"/>
@@ -976,7 +996,7 @@ Sandsen for de rene Glæder,
 Huslig Kierlighed bereder,
   Tabes ei, mens Hiertet slaaer.
 
-<nonum><center>Chor.</center></nonum>
+<nonum><center><w>Chor.</w></center></nonum>
 Sandsen for de rene Glæder,
 Huslig Kierlighed bereder,
   Tabes ei, mens Hiertet slaaer.
@@ -989,7 +1009,7 @@ Hymen, under muntre Dandse,
 Vandt til Kredsen favre Krandse;
   Slyngede om os sit Baand.
 
-<nonum><center>Chor.</center></nonum>
+<nonum><center><w>Chor.</w></center></nonum>
 Hymen, under muntre Dandse,
 Vandt til Kredsen favre Krandse;
   Slyngede om os sit Baand.
@@ -1002,7 +1022,7 @@ Synger Alle ham til Hæder;
 Thi han adler vore Glæder,
   Med sit hulde Velbehag.
 
-<nonum><center>Chor.</center></nonum>
+<nonum><center><w>Chor.</w></center></nonum>
 Fro vi synge Hymens Hæder;
 Thi han adler vore Glæder,
   Med sit hulde Velbehag.
@@ -1015,13 +1035,16 @@ Venner os den hellig være!
 Jubler høit til Hymens Ære;
   I vor Barm hans Glæder boe!
 
-<nonum><center>Chor.</center></nonum>
+<nonum><center><w>Chor.</w></center></nonum>
 Huslighed os hellig være!
 Høit vi juble den til Ære;
   I vor Barm dens Glæder boe.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="weinwich2026102602" author="weinwich">
 <head>
@@ -1992,9 +2015,14 @@ At i dit Alters blide Ly
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Epigrammer</title>
+</head>
+<content>
+
 <text id="tode2026102610" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>1.</num>Daphne og Iris</title>
   <firstline>D. Hvad har du giort ved Stax, min Pige?</firstline>
   <source pages="103"/>
@@ -2015,7 +2043,6 @@ I. Jeg dig skal Grunden sige.
 
 <text id="tode2026102611" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>2.</num>Amor og Digteren</title>
   <firstline>D. Hvad! Amor lægger sig til Hvile</firstline>
   <source pages="103"/>
@@ -2034,7 +2061,6 @@ A. Ja, jeg kan tage mig et Blund.
 
 <text id="tode2026102612" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>3.</num>Venskab</title>
   <firstline>Venskab, rene Hierters Fryd</firstline>
   <source pages="104"/>
@@ -2052,7 +2078,6 @@ Derfor sees den ikke meer.
 
 <text id="tode2026102613" author="tode">
 <head>
-  <suptitle>Epigrammer</suptitle>
   <title><num>4.</num>Den blinde Kiøber</title>
   <firstline>A. Du stakkels blinde Mand, hvad skal det dog betyde</firstline>
   <source pages="104"/>
@@ -2069,6 +2094,9 @@ A. Du er da mangen anden lig,
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="koren2026102604" author="koren">
 <head>
@@ -2113,13 +2141,13 @@ tag dig, som nu, enhver Ting let!
 </head>
 <body>
 <poetry>
-<nonum><center>Chor.</center></nonum>
+<nonum><center><w>Chor.</w></center></nonum>
 Vaagn ved Nordens høie Jubeltone,
   Vaagn i Glædens Arme, Festens Dag!
   Flet din Rosenkrands om Hyttens Tag
 Og om Stadens gyldne Taarnekrone!
 
-<nonum><center>Dania.</center></nonum>
+<nonum><center><w>Dania.</w></center></nonum>
 Skue, Fyrste, ned! Af fulde Lader
 Og Stæders Porte, hvor den stærke Flid,
 Den snilde Kunst hver Krands hang hen,
@@ -2154,7 +2182,7 @@ Da fierne Tiders Morgenrøde
 Prophetisk sang jeg Furens Grøde
   Og Hyttens trygge Hæld.
 
-<nonum><center>Landets Skytsgud.</center></nonum>
+<nonum><center><w>Landets Skytsgud.</w></center></nonum>
 Fra Heclas Top, hvor røde Ildstrøm
 Af iiskoldt Munding springer,
 Til hist, hvor i sit Sølverfavn
@@ -2240,9 +2268,14 @@ Døe, Liv! bød Sang og Psalter,
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Sonnetter</title>
+</head>
+<content>
+
 <text id="staffeldt2026102606" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>I.</num>Til Nemesis</title>
   <firstline>Skiebnens Datter, haard som den og kold</firstline>
   <source pages="114"/>
@@ -2273,7 +2306,6 @@ Naar Du paa Beundrings Høie leder
 
 <text id="staffeldt2026102607" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>II.</num>Vedbendet</title>
   <firstline>Høit ved Manddoms Ægeporte, hvor</firstline>
   <source pages="115"/>
@@ -2304,7 +2336,6 @@ Og min Frugt i Fødselen fortærer.
 
 <text id="staffeldt2026102608" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>III.</num>I en baiersk Kirke</title>
   <subtitle>1797.</subtitle>
   <firstline>Aldrig Dydens Mod og Uskylds Glæde</firstline>
@@ -2336,7 +2367,6 @@ Og i Vanvids Labyrint udskeier.
 
 <text id="staffeldt2026102609" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>IV.</num>Menneskebanen</title>
   <firstline>Hvergang jeg det Savnede opnaaer</firstline>
   <source pages="117"/>
@@ -2367,7 +2397,6 @@ Dog omsonst! Med alle Glæders Følge
 
 <text id="staffeldt2026102610" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>V.</num>Udsigt over Arnodalen fra Apenninerne</title>
   <subtitle>1799.</subtitle>
   <firstline>Langt fra disse Egne Nød og Møie</firstline>
@@ -2399,7 +2428,6 @@ Bønner, Ønsker, Suk og Tak, som svæve
 
 <text id="staffeldt2026102611" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>VI.</num>Til Egeria</title>
   <firstline>Viisdoms Nymphe, som paa denne Klode</firstline>
   <source pages="119"/>
@@ -2430,7 +2458,6 @@ Da skal Jordens Millioner vinde
 
 <text id="staffeldt2026102612" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>VII.</num>Den større Achill</title>
   <subtitle>I en Ruin.</subtitle>
   <firstline>Eensomhed i Nelders brede Giord</firstline>
@@ -2462,7 +2489,6 @@ Dybt i det Betragtningen mig holder,
 
 <text id="staffeldt2026102613" author="staffeldt">
 <head>
-  <suptitle>Sonnetter</suptitle>
   <title><num>VIII.</num>Phantasos’s Rige</title>
   <firstline>Her springer Hændelsen af sine Baand</firstline>
   <source pages="121"/>
@@ -2490,6 +2516,9 @@ Og Frygt og Anger hylende forvilder
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="tode2026102614" author="tode">
 <head>
@@ -2824,7 +2853,7 @@ Thi Solskin, Blomster og en Viv
 </head>
 <body>
 <poetry>
-<nonum><center>Ynglingen.</center></nonum>
+<nonum><center><w>Ynglingen.</w></center></nonum>
   Velkomne Bud fra Fryd og Vaar,
 Naturens førstefødte Spæde,
   Som hist i Græsset eene staaer
@@ -2832,7 +2861,7 @@ Til alle bløde Hierters Glæde:
   O Martsfiol! jeg plukker dig,
   Og intet skal forhindre mig.
 
-<nonum><center>Martsfiolen.</center></nonum>
+<nonum><center><w>Martsfiolen.</w></center></nonum>
   O nei! lad mig i Vinden her
 Bortdufte mine skiulte Dage,
   Til de blaae Søstre ere der,
@@ -2840,7 +2869,7 @@ Da kan du jo os alle tage,
   Men lad mig nyde Livet, før
   Jeg ak! igien det tabe bør.
 
-<nonum><center><pb n="140" facs="144.jpg"/>Ynglingen.</center></nonum>
+<nonum><center><pb n="140" facs="144.jpg"/><w>Ynglingen.</w></center></nonum>
   O lille Blomst! du rører mig,
 Men veed du vel, hvorom du beder?
   O kiendte du den Lod, jeg dig
@@ -2862,7 +2891,7 @@ Skiøndt tusind Elskende det sige:
   Ved hendes Øie og dit Blad
   To Søstersiæle skilles ad.
 
-<nonum><center><pb n="141" facs="145.jpg"/>Martsfiolen.</center></nonum>
+<nonum><center><pb n="141" facs="145.jpg"/><w>Martsfiolen.</w></center></nonum>
   Saa pluk mig da, og lad mig sødt
 I hendes Barm udaande Livet!
   Ikkun til Jorden blev jeg født,
@@ -2870,7 +2899,7 @@ Men Himmelen er Døden givet,
   O pluk mig snart og viid, jeg er
   Gienfødt, ad Aare atter her.
 
-<nonum><center>Digteren.</center></nonum>
+<nonum><center><w>Digteren.</w></center></nonum>
   Den rørte Yngling Blomsten brød
 Og taus sin <w>Celia</w> den bragte:
   I hendes Barm den i sin Død
@@ -2958,9 +2987,14 @@ Hvis Savn ledsager mine Dage,
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Smaadigte</title>
+</head>
+<content>
+
 <text id="olsengh2026102601" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>I.</num>Bøn til Ove Malling</title>
   <firstline>Malling! jeg nyligen fandt en Yngling sukkende tælle</firstline>
   <source pages="146"/>
@@ -2978,7 +3012,6 @@ Hvis Savn ledsager mine Dage,
 
 <text id="olsengh2026102602" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>II.</num>Speilskiønhed og Karakteerskiønhed</title>
   <firstline>Skiøn er den sorgglade Vaar, der pranger med duftende Blomster!</firstline>
   <source pages="147"/>
@@ -2994,7 +3027,6 @@ Skiøn er den sorgglade Vaar, der pranger med duftende Blomster!
 
 <text id="olsengh2026102603" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>III.</num>Til Frue D. under Prøve-Aftrykket af hendes Faders Kobberstik</title>
   <firstline>Skyggen finder Du her af en elsket og elskelig Fader —</firstline>
   <source pages="147"/>
@@ -3010,7 +3042,6 @@ Skyggen finder Du her af en elsket og elskelig Fader —
 
 <text id="olsengh2026102604" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>IV.</num>Gyngebrettet</title>
   <firstline>Som paa det troløse Bret to sprættende Poge sig gynge —</firstline>
   <source pages="148"/>
@@ -3028,7 +3059,6 @@ Saaledes gynge Despoten og Trællen — det værdige Par — sig;
 
 <text id="olsengh2026102605" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>V.</num>Philosophens Apologie</title>
   <firstline>Sandhed han tolker og Frihed — hvi skielder Du ham da? — ”Han feiler” —</firstline>
   <source pages="148"/>
@@ -3044,7 +3074,6 @@ Sandhed han tolker og Frihed — hvi skielder Du ham da? — ”Han feiler” �
 
 <text id="olsengh2026102606" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>VI.</num>Efter Bembo over Raphael</title>
   <firstline>Denne hiin Raphael er, ved hvis Kunst Naturen befrygted'</firstline>
   <source pages="149"/>
@@ -3060,7 +3089,6 @@ Denne hiin Raphael er, ved hvis Kunst Naturen befrygted'
 
 <text id="olsengh2026102607" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>VII.</num>Sokrates’s Bøn</title>
   <firstline>Giv os det Gode, hvad enten vi bede derom eller ikke!</firstline>
   <source pages="149"/>
@@ -3076,7 +3104,6 @@ Giv os det Gode, hvad enten vi bede derom eller ikke!
 
 <text id="olsengh2026102608" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>VIII.</num>Efter Plato</title>
   <firstline>Viis mig en Træl, der ikke har Blod tilfælles med Konger</firstline>
   <source pages="150"/>
@@ -3092,7 +3119,6 @@ Viis mig en Træl, der ikke har Blod tilfælles med Konger,
 
 <text id="olsengh2026102609" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>IX.</num>Sjælens Treenighed</title>
   <firstline>Trende vidne i Sjælen: det Skiønne, det Gode, det Sande!</firstline>
   <source pages="150"/>
@@ -3108,7 +3134,6 @@ Trende vidne i Sjælen: det Skiønne, det Gode, det Sande!
 
 <text id="olsengh2026102610" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>X.</num>Frihedstræet</title>
   <firstline>Frihedstræet tilforn blev pleiet af Britter allene —</firstline>
   <source pages="151"/>
@@ -3124,7 +3149,6 @@ Frihedstræet tilforn blev pleiet af Britter allene —
 
 <text id="olsengh2026102611" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XI.</num>Lyksalighed</title>
   <firstline>Bygger vel Storken sin Rede paa Møllens Vinge — hvi bygger</firstline>
   <source pages="151"/>
@@ -3142,7 +3166,6 @@ Kun i dit indre Jeg Du finder de høie Akkorder,
 
 <text id="olsengh2026102612" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XII.</num>Det poetiske Ekko</title>
   <firstline>Sød er Klangen af Meierens Jern i den svulmende Kornvang</firstline>
   <source pages="152"/>
@@ -3160,7 +3183,6 @@ O! men tredobbelt sød for min Aand er den høiere Gienklang
 
 <text id="olsengh2026102613" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XIII.</num>I Anledning af et Ordsprog</title>
   <firstline>Lang er Kunsten og Livet er kort, saa lyder dit Ordsprog —</firstline>
   <source pages="152"/>
@@ -3176,7 +3198,6 @@ Lang er Kunsten og Livet er kort, saa lyder dit Ordsprog —
 
 <text id="olsengh2026102614" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XIV.</num>Høimod og Ædelmod</title>
   <firstline>Stor du er, om med Veldaad du ærligen møder din Fiende</firstline>
   <source pages="153"/>
@@ -3192,7 +3213,6 @@ Stor du er, om med Veldaad du ærligen møder din Fiende,
 
 <text id="olsengh2026102615" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XV.</num>Paa en Faders Spørgsmaal, hvad han skulde lære sin Søn</title>
   <firstline>Lær ham at vorde lyksalig ved Lidet, og dydig ved Meget</firstline>
   <source pages="153"/>
@@ -3208,7 +3228,6 @@ Lær ham at vorde lyksalig ved Lidet, og dydig ved Meget;
 
 <text id="olsengh2026102616" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XVI.</num>Til Forældrene Schow</title>
   <subtitle>ved deres eneste Datters Død d. 10 Mart. 1804.</subtitle>
   <firstline>Græder, nedbøiede Par! den skiønneste Blomst i Jer Have</firstline>
@@ -3236,7 +3255,6 @@ O! men mindes derhos, at den ømmelig elskede Plante
 
 <text id="olsengh2026102617" author="olsengh">
 <head>
-  <suptitle>Smaadigte</suptitle>
   <title><num>XVII.</num>Den gamle og den nye Philosophie</title>
   <firstline>Sokrates Philosophien fra Himlen nedkaldte paa Jorden</firstline>
   <source pages="155"/>
@@ -3249,6 +3267,9 @@ O! men mindes derhos, at den ømmelig elskede Plante
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="rehling2026102601" author="rehling">
 <head>
@@ -3645,12 +3666,18 @@ Paa Uendeligheds Havblik forgaaer mit Selv,
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Elegier.</title>
+</head>
+<content>
+
 <text id="oehlenschlaeger2026102601" author="oehlenschlaeger" variant="oehlen2002101203">
 <head>
-  <suptitle>Elegier.</suptitle>
   <title><num>I.</num>Ewald</title>
   <firstline>Ewald, naar dig jeg mindes, da mørknes mit Øie med Taarer</firstline>
   <source pages="176-180"/>
+  <keywords>ewald</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3784,6 +3811,9 @@ Vil jeg svimle med dig, ak for at glemme Homer.
 </body>
 </text>
 
+</content>
+</section>
+
 <text id="rehling2026102603" author="rehling">
 <head>
   <title>Anden Aprils Minde</title>
@@ -3910,12 +3940,15 @@ med den ny frembrudte Dag! —
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>Digte.</title>
+  <subtitle>Efter det tydske.</subtitle>
+</head>
+<content>
+
 <text id="schoenberg2026102602" author="schoenberg">
 <head>
-  <suptitle>
-    <line>Digte.</line>
-    <line>Efter det tydske.</line>
-  </suptitle>
   <title><num>1.</num>Den digtende Dreng</title>
   <subtitle>Romanze.</subtitle>
   <firstline>Ei sky du Amor!</firstline>
@@ -4016,11 +4049,17 @@ som jeg forstod og sagde:
 </body>
 </text>
 
+</content>
+</section>
+
 <text id="schoenberg2026102605" author="schoenberg">
 <head>
   <title>Turtelduen</title>
   <subtitle>Efter Lidner.</subtitle>
   <firstline>Turtelduen foer tilbage</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Lidners <xref type="translation" poem="lidner2026102601"/>.</note>
+  </notes>
   <source pages="200-202"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4138,6 +4177,9 @@ dog, som Zefir mellem Harpens Strænge,
   <title>Til den Ukjendte</title>
   <subtitle>(Efter Kosegarten.)</subtitle>
   <firstline>Hviler du aldrig ophøiede, evige</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Kosegartens <xref type="translation" poem="kosegarten2026102601"/>. Oversættelsen ændrer enkelte billeder og strofernes rækkefølge.</note>
+  </notes>
   <source pages="206-210"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4318,6 +4360,9 @@ Dødens Kalk er ofte sød at drikke.
   <title>Nattesuk</title>
   <subtitle>(Efter Luis de Leon.)</subtitle>
   <firstline>Naar jeg paa Himlens Høie</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af de første tre strofer af Fray Luis de Leóns <xref type="translation" poem="luisdeleon2026102601"/>.</note>
+  </notes>
   <source pages="215-216"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4347,7 +4392,7 @@ Ah! skal jeg længe her i Fængslet græde?
 <text id="staffeldt2026102622" author="staffeldt">
 <head>
   <title>Serenade</title>
-  <subtitle>(Guerras civiles de Granada, cap. VI,)</subtitle>
+  <subtitle>(Guerras civiles de Granada, cap. VI.)</subtitle>
   <firstline>Taare, som ei overvinder</firstline>
   <source pages="217"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4549,9 +4594,14 @@ over Askens lune Hvilested!
 </body>
 </text>
 
+<section level="3">
+<head>
+  <title>I Stambøger.</title>
+</head>
+<content>
+
 <text id="haste2026102606" author="haste">
 <head>
-  <suptitle>I Stambøger.</suptitle>
   <title><num>1.</num>Til en ung Pige</title>
   <subtitle>(For en Olding.)</subtitle>
   <firstline>En gammel Mand Dig hilser, unge Pige!</firstline>
@@ -4633,6 +4683,9 @@ mig — og denne matte Varselstemme.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="schoenberg2026102606" author="schoenberg">
 <head>

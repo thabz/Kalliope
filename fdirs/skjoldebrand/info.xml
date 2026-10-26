@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="skjoldebrand" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Anders Fredrik</firstname>
+    <lastname>Skjöldebrand</lastname>
+  </name>
+  <!-- Livsdata: https://www.vitterhetsakademien.se/ledamoter/ledamoter/skjoldebrand-anders-fredrik.html -->
+  <period>
+    <born>
+      <date>1757-07-14</date>
+    </born>
+    <dead>
+      <date>1834-08-23</date>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+</person>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hummel" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Arvid David</firstname>
+    <lastname>Hummel</lastname>
+  </name>
+  <!-- Livsdata: Svenska män och kvinnor, bd. 3, s. 558, https://runeberg.org/smok/3/0620.html -->
+  <period>
+    <born>
+      <date>1778-04-30</date>
+      <place>Göteborg</place>
+    </born>
+    <dead>
+      <date>1836-10-20</date>
+      <place>Ekenäs</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+</person>
