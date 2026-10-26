@@ -890,3 +890,11 @@ Brugeren har udtrykkeligt bedt om commit og push ved færdiggørelsen.
 Brugerens visuelle titelbladskontrol, vurdering af emendationsnoterne,
 de skjulte strofegrænser samt afsluttende stikprøver står fortsat åbne.
 Tidligere hæfters kildeskader og redaktionelle valg ovenfor er uændrede.
+
+Første CI på `227d377dc` fandt en manglende litterær periode i den nye
+Gutfeld-post. Den lokale kørsel havde ikke medtaget den endnu usporede
+personfil. Posten er rettet til `dk-oplysningstid`, som understøttes af DBL’s
+beskrivelse af hans oplysningsprægede forfatterskab. Hele `make test` består
+igen med personfilen under Git-kontrol: 133 testsuiter og 2221 tests. XML/RELAX NG
+og `git diff --check` består også. Et nyt frosset checkpoint for metadatarettelsen
+er verificeret umiddelbart før den korrigerende commit.
