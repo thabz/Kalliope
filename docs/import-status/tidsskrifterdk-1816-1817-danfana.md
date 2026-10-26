@@ -675,3 +675,11 @@ to tilbagetrukne; ingen åbne eller blot rettede fund.
 Brugeren har gennemgået ændringen og godkendt commit og push. Commit og
 GitHub CI-status føres i PR #2012. Frosset slutcheckpoint er oprettet og
 verificeret i `/tmp/danfana-september-2012/checkpoint.json`.
+
+Septembers ni kildebelagte tekstkvalitetssignaler har afgrænsede
+`ignore-tests`-undtagelser på de fire berørte tekstposter: `internal-uppercase`
+og `single-circumflex-a-in-text` på Sæmund, sidstnævnte også på Ellemoseloven,
+samt `repeated-adjacent-word` på As-Kløver-Troen og Oplysning om de Ti.
+Undtagelserne registrerer de ovenfor dokumenterede kildeformer; ingen
+brødtekst, sideskift, strofer eller indryk er ændret. Den første CI-kørsel
+standsede på de ni signaler, før undtagelserne var registreret.
