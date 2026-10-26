@@ -15,6 +15,15 @@ export const Paging = (props) => {
   const { prev, next } = props;
 
   const onKeyUp = (e) => {
+    if (
+      e.defaultPrevented === true ||
+      e.metaKey === true ||
+      e.ctrlKey === true ||
+      e.altKey === true ||
+      e.shiftKey === true
+    ) {
+      return;
+    }
     if (e.keyCode === 37) {
       // Left cursor key
       if (prev != null && window && !window.searchFieldHasFocus) {

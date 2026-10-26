@@ -145,6 +145,15 @@ const PictureOverlay = ({ pictures, startIndex, closeCallback }) => {
   };
 
   const onKeyUp = (e) => {
+    if (
+      e.defaultPrevented === true ||
+      e.metaKey === true ||
+      e.ctrlKey === true ||
+      e.altKey === true ||
+      e.shiftKey === true
+    ) {
+      return;
+    }
     if (e.keyCode === 27) {
       hideOverlay(e);
     } else if (e.keyCode === 37) {
