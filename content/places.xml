@@ -74,6 +74,14 @@
     <type>continental region</type>
     <alias>America</alias>
   </place>
+  <place id="andalusia">
+    <name>Andalusien</name>
+    <canonical-name>Andalusia</canonical-name>
+    <wikidata>Q5783</wikidata>
+    <type>region</type>
+    <alias>Andalucía</alias>
+    <parent ref="spain"/>
+  </place>
   <place id="apennines">
     <name>Apenninerne</name>
     <canonical-name>Apennines</canonical-name>
@@ -504,6 +512,13 @@
     <alias>Maria Einsideln</alias>
     <alias>Einsideln</alias>
   </place>
+  <place id="el-puerto-de-santa-maria">
+    <name>El Puerto de Santa María</name>
+    <wikidata>Q203040</wikidata>
+    <type>town</type>
+    <alias>Puerto de Santa Maria</alias>
+    <parent ref="andalusia"/>
+  </place>
   <place id="england">
     <name>England</name>
     <wikidata>Q21</wikidata>
@@ -709,6 +724,12 @@
     <type>commune</type>
     <alias>Gens</alias>
   </place>
+  <place id="giralda">
+    <name>Giralda</name>
+    <wikidata>Q834479</wikidata>
+    <type>bell tower</type>
+    <parent ref="seville"/>
+  </place>
   <place id="gjende">
     <name>Gjende</name>
     <wikidata>Q585209</wikidata>
@@ -845,6 +866,12 @@
     <name>Grindelwald</name>
     <wikidata>Q64004</wikidata>
     <type>municipality</type>
+  </place>
+  <place id="guadalquivir">
+    <name>Guadalquivir</name>
+    <wikidata>Q14309</wikidata>
+    <type>river</type>
+    <parent ref="spain"/>
   </place>
   <place id="gudbrandsdalen">
     <name>Gudbrandsdalen</name>
@@ -1934,6 +1961,12 @@
     <alias>Samsøe</alias>
     <parent ref="denmark"/>
   </place>
+  <place id="san-juan-de-aznalfarache">
+    <name>San Juan de Aznalfarache</name>
+    <wikidata>Q1611693</wikidata>
+    <type>town</type>
+    <parent ref="andalusia"/>
+  </place>
   <place id="san-pietro-in-montorio">
     <name>San Pietro in Montorio</name>
     <wikidata>Q1258576</wikidata>
@@ -2251,6 +2284,12 @@
     <alias>Tonsaasen</alias>
     <parent ref="norway"/>
     <note>Stedet er sikkert fra titlen, men et egnet Wikidata-item for landskabet/lokaliteten blev ikke verificeret; stationen og sanatoriet er andre entiteter og bruges ikke.</note>
+  </place>
+  <place id="torre-del-oro">
+    <name>Torre del Oro</name>
+    <wikidata>Q943873</wikidata>
+    <type>tower</type>
+    <parent ref="seville"/>
   </place>
   <place id="trieste">
     <name>Trieste</name>

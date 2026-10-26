@@ -22,6 +22,9 @@
     <written>1911-03-03</written>
   </dates>
   <source pages="5"/>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -61,6 +64,10 @@ blandt Kundskabstræets Grène!!
   <title>En Morgenstund</title>
   <firstline>Der var Formiddagssol i Sevillas Park</firstline>
   <source pages="6"/>
+  <places>
+    <place ref="seville" relation="setting" primary="true"/>
+    <place ref="giralda" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -143,6 +150,9 @@ Og nu bør de - roligt - i kommende Aar
   <title>Zarza</title>
   <firstline>Jeg laa og saa paa det blaagrønne Vand</firstline>
   <source pages="8-10"/>
+  <places>
+    <place ref="el-puerto-de-santa-maria" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -215,6 +225,11 @@ dør jeg i Drøm om den Eftermiddag
   <title>Spansk</title>
   <firstline>Ved San Juan de Aznalfarache</firstline>
   <source pages="10-11"/>
+  <places>
+    <place ref="san-juan-de-aznalfarache" relation="setting" primary="true"/>
+    <place ref="seville" relation="mentioned"/>
+    <place ref="guadalquivir" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -278,6 +293,12 @@ forstaar med Yppighed sin Dragt at bære.
   <title>Paa Guadalquivir</title>
   <firstline>Ro, ro - langsomt frem</firstline>
   <source pages="12-13"/>
+  <places>
+    <place ref="guadalquivir" relation="setting" primary="true"/>
+    <place ref="seville" relation="setting"/>
+    <place ref="torre-del-oro" relation="mentioned"/>
+    <place ref="giralda" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -537,6 +558,9 @@ de rislende Vandstrømme kime - - -
   <title>Sorte Gitta</title>
   <firstline>Der var engang en Konge</firstline>
   <source pages="19-25"/>
+  <places>
+    <place ref="andalusia" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -768,6 +792,9 @@ Højt over hendes Hoved
   <title>Vifter</title>
   <firstline>Din Kærlighèd er evig - - Gudbevares</firstline>
   <source pages="26-31"/>
+  <places>
+    <place ref="guadalquivir" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -985,6 +1012,9 @@ hade i Kærlighèd - og elske i Had!
     <written>1910-07-04</written>
   </dates>
   <source pages="32"/>
+  <places>
+    <place ref="seville" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
