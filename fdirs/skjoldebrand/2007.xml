@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="andre" author="skjoldebrand" status="incomplete" type="poetry">
+<kalliopework id="2007" author="skjoldebrand" status="incomplete" type="poetry">
 <workhead>
-  <title>Andre digte</title>
+  <title>I Norrlandsstäder och Lapplandsbygd år 1800</title>
+  <year>2007</year>
   <pagebreaks/>
+  <source facsimile="2007-uddrag" facsimile-pages-num="1" facsimile-pages-offset="-121" href="https://www.lenvik-museum.no/meny5/Samisk%20historie/1800_Forsstroems_Dagbok_1800.pdf#page=122">
+    <author>Johan Erik Forsström</author>
+    <title>I Norrlandsstäder och Lapplandsbygd år 1800. Johan Erik Forsströms dagbok öfver resan i Norrland och Finnmarken 1800 och i Roslagen 1801</title>
+    <edition>Digital gengivelse af Nationalförlagets udgave, Stockholm, 1917, med indledning af Nils Ahnlund</edition>
+    <publisher>Lenvik Museum</publisher>
+    <year>2007</year>
+  </source>
 </workhead>
 <workbody>
 <text id="skjoldebrand2026102601" lang="sv">
@@ -12,13 +20,7 @@
   <notes>
     <note editorial="true">Forsström gengiver sangen under 25. august 1800 efter en afskrift fra major Lagerberg og oplyser, at Skjöldebrand skrev og komponerede den året før. Den digitale gengivelses »af unden« er samlet til »afunden«.</note>
   </notes>
-  <source facsimile="2007-uddrag" facsimile-pages="1" href="https://www.lenvik-museum.no/meny5/Samisk%20historie/1800_Forsstroems_Dagbok_1800.pdf#page=122" pages="122">
-    <author>Johan Erik Forsström</author>
-    <title>I Norrlandsstäder och Lapplandsbygd år 1800. Johan Erik Forsströms dagbok öfver resan i Norrland och Finnmarken 1800 och i Roslagen 1801</title>
-    <edition>Digital gengivelse af Nationalförlagets udgave, Stockholm, 1917, med indledning af Nils Ahnlund</edition>
-    <publisher>Lenvik Museum</publisher>
-    <year>2007</year>
-  </source>
+  <source pages="122"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
