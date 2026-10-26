@@ -27,8 +27,12 @@ ikke et understøttet checkpoint.
 
 Thumbnails skrives atomisk og får individuelle kvitteringer i
 `caches/thumbnails/`. Kvitteringerne kontrollerer kildeindhold, genereringskode,
-Sharp-versioner, format, bredde og outputindhold. Færdige thumbnails kan derfor
+Sharp-versioner, format, bredde og outputindhold. Kun billedfunktionens kode
+indgår i genereringsnøglen; ændringer i andre hjælpefunktioner udløser ikke
+ny billedgenerering. Færdige thumbnails kan derfor
 genbruges efter en afbrydelse; manglende eller beskadigede outputs genbygges.
+Originalbilleder læses og hashes først, når deres opgaver starter i køen, så
+genereringen ikke venter på indlæsning af hele billedsamlingen.
 Uden kvitteringer genbygges thumbnails én gang. Slet `caches/thumbnails/` for
 at tvinge ny generering.
 
