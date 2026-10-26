@@ -43,8 +43,20 @@ describe('epigraph rendering', () => {
       collected, false,
     )} />);
     expect(html).toContain('position:relative');
+    expect(html).toContain('margin:0.25lh 0 0.25lh 10%');
     expect(html).not.toContain('position:absolute');
     expect(html).toContain('</blockquote>Efter citatet.');
+  });
+
+  it('gives prose quotations a modest indent, smaller type and quarter-line spacing by default', () => {
+    const html = renderToStaticMarkup(<TextContent type="prose" contentHtml={htmlToXml(
+      'Før citatet.<blockquote>Et <i>citat</i>.</blockquote>Efter citatet.',
+      collected, false,
+    )} />);
+    expect(html).toContain('margin:0.25lh 0 0.25lh 4ch');
+    expect(html).toContain('font-size:0.9em');
+    expect(html).toContain('text-indent:0');
+    expect(html).toContain('Et <i>citat</i>.</blockquote>Efter citatet.');
   });
 
   it('renders a section epigraph in mixed content', () => {
