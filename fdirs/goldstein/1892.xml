@@ -44,6 +44,7 @@ Maleren Edv. Munch
 <head>
   <title>Hinc illæ lacrymæ</title>
 </head>
+<content>
 
 <text id="goldstein2026102602" variant="goldstein2019041201">
 <head>
@@ -543,7 +544,8 @@ med bristet Haab . . . Bryd med din Elskerinde.
 </body>
 </text>
 
-<text id="goldstein2026102619">
+<!-- Facsimile s. 28: Vâr er trykt med cirkumfleks. -->
+<text id="goldstein2026102619" ignore-tests="single-circumflex-a-in-text">
 <head>
   <title>To Sonetter til en Ven</title>
   <subtitle>II.</subtitle>
@@ -561,8 +563,8 @@ naar Kærlighedens Drifter frem er gækket —
 til brunstig Tvekamp af Naturen ægget,
 hvor Hadets Bavn som Arnelue brænder.
 
-Vår Dig! Nu gælder det! Ti Kampen ender
-ej, før den ene segner pandeflækket,
+Vâr Dig! Nu gælder det! Ti Kampen ender
+ej, før den ene segner pandeflækket.
 — Som Kamppris rækkes Sejerherren, stækket,
 en livsgold Lede af Naturens Hænder.
 
@@ -577,7 +579,8 @@ men Hunnens Gift . . . Bryd med Din Elskerinde!
 </body>
 </text>
 
-<text id="goldstein2026102620" variant="goldstein2019041218">
+<!-- Facsimile s. 30: den blandede a/â-form naâr er trykt sådan. -->
+<text id="goldstein2026102620" variant="goldstein2019041218" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
 <head>
   <title>Elskov er som —</title>
   <firstline>Elskov er som Syfilis</firstline>
@@ -651,6 +654,7 @@ Guldbladenes Sitren forraader:
 </body>
 </text>
 
+</content>
 </section>
 
 <text id="goldstein2026102622" variant="goldstein2019041220">
@@ -831,7 +835,8 @@ Glød avler Is, Is avler Glød,
 </body>
 </text>
 
-<text id="goldstein2026102623">
+<!-- Facsimile s. 52: alle alle er trykt som gentagelse. -->
+<text id="goldstein2026102623" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Slutningsfragment</title>
   <firstline>Og de raabte</firstline>
