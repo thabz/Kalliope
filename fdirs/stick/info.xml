@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Navn og levetid: https://runeberg.org/hemforf/8/0054.html -->
+<!-- Navn og dødsår: https://runeberg.org/hemforf/8/0054.html
+     Fødselsdato og fødested: Falk-Jensen og Hjorth-Nielsen, Candidati og examinati juris 1736–1936, IV (1958), s. 154: https://www.rosekamp.dk/Juris_web/juris4_OK.pdf -->
 <person id="stick" country="dk" lang="da" type="poet">
   <name>
     <firstname>Andreas Quirin</firstname>
@@ -7,7 +8,8 @@
   </name>
   <period>
     <born>
-      <date>?</date>
+      <date>1783-01-09</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1807</date>

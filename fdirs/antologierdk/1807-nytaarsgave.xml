@@ -10,9 +10,6 @@
     <printer>Breinholm</printer>
     <year>1806</year>
   </source>
-  <notes>
-    <note>Årgang 1807 udkom i 1806, jf. Dansk Forfatterleksikons periodikaregister <a href="https://danskforfatterleksikon.dk/1850p/p85190.htm">↬</a>. Titelbladet bærer årgangstallet 1807.</note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1807-nytaarsgave-p1.jpg">
       <transcription>Nytaarsgave / 1807 / Samlet og udgivet / af / Hofboghandler Simon Poulsen // trykt hos Breinholm. // Dyd // Paa Udgiverens Forlag.</transcription>
@@ -160,7 +157,7 @@ Haand i Haand vi for vor Dommer staae!
 </body>
 </text>
 
-<section id="olsengh2026102501" author="olsengh">
+<section author="olsengh" level="2">
 <head>
   <title>Smaadigte</title>
 </head>
@@ -845,7 +842,7 @@ som en Drøm i Harpens Klang.
   <title>Brødrene</title>
   <subtitle>En peruviansk Fortælling</subtitle>
   <notes>
-    <note>Ifølge bogens register er fortællingen fordansket af P. Poulsen og sangene af <a poet="primon">C. F. Primon</a>.</note>
+    <note editorial="true">Ifølge bogens register er fortællingen fordansket af P. Poulsen og sangene af <a poet="primon">C. F. Primon</a>.</note>
   </notes>
   <source pages="34-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1325,7 +1322,7 @@ Det Haab er Trøst, i det Du drager hen.
   <title>Det Hellige og Helligste</title>
   <firstline>Hvad er Helligt? Det, hvis Baand mange Siæle forener</firstline>
   <notes>
-    <note unknown-original-by="goethe"/>
+    <note editorial="true">Gendigtning af to distika i Goethes <xref type="translation" poem="goethe2020030501,131-134"/>.</note>
   </notes>
   <source pages="81"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1348,7 +1345,7 @@ Stedse dybere følt, stedse end stærkere binder.
   <title>Ridder Ebbesen</title>
   <firstline>I Waldemars Tid var en Ridder saa bold</firstline>
   <notes>
-    <note>I bogens register står: »(Denne Sang blev digtet i Randers Dagen, hvorpaa Professor <w>Sanders</w> Sørgespil Niels Ebbesen blev opført af Instrukteur <w>Schwartzes</w> Nationaltheater, og var bestemt til at skulle afsynges i Randers Klub.)«</note>
+    <note editorial="true">I bogens register står: »(Denne Sang blev digtet i Randers Dagen, hvorpaa Professor <w>Sanders</w> Sørgespil Niels Ebbesen blev opført af Instrukteur <w>Schwartzes</w> Nationaltheater, og var bestemt til at skulle afsynges i Randers Klub.)«</note>
   </notes>
   <source pages="82-84"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1416,7 +1413,7 @@ Som hugged’ en Voldsmand fra Throne.
     for unge Fruentimmere,
     til hver Uge i Aaret 1807.</subtitle>
     <notes>
-      <note>Ifølge bogens register fordansket af P. Poulsen. Originalens forfatter er ikke angivet.</note>
+      <note editorial="true">Ifølge bogens register fordansket af P. Poulsen. Originalens forfatter er ikke angivet.</note>
     </notes>
     <source pages="85-116"/>
     <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1743,7 +1740,7 @@ at vor Yndling først gik bort!
 </body>
 </text>
 
-<section id="schoenberg2026102506" author="schoenberg">
+<section author="schoenberg" level="2">
 <head>
   <title>Sonnetter</title>
 </head>
@@ -1875,6 +1872,7 @@ Ak! med Fortids Mørke svandt dens Dyder! —
   <title>Hertha’s Sangere</title>
   <firstline>Med sin flammende Aand paa Fantasos dristige Vinger</firstline>
   <source pages="129-130"/>
+  <keywords>ewald,tullin,thaarup,wessel,pram,rahbek,baggesen,oehlenschlaeger</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1950,6 +1948,9 @@ sødt lokke de Perler ned i dens Guld.
   <title>Sneefoget</title>
   <subtitle>Et Epigram efter det Engelske.</subtitle>
   <firstline>Misundelig fra Himlen denne Snee</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af den anonyme <xref type="translation" poem="anonymuk2026102601"/>.</note>
+  </notes>
   <source pages="133"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1969,7 +1970,7 @@ bortsmelted’ skamfuld i — en Taare.
   <subtitle>(efter Horaz, II. Bogs 10. Ode.)</subtitle>
   <firstline>Den, som forvoven steile Field bestiger</firstline>
   <notes>
-    <note unknown-original-by="horats"/>
+    <note editorial="true">Gendigtning af Horats’ <xref type="translation" poem="horats2026102601"/>.</note>
   </notes>
   <source pages="133-135"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2085,7 +2086,7 @@ Giøre Døden til et venligt Blund!
   <title>Pompeji og Herkulaneum</title>
   <firstline>Hvad Underværk er ej skeet? Vi bønfaldt om kjølige Kilder</firstline>
   <notes>
-    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001102408"/>.</note>
+    <note editorial="true">Gendigtning af Schillers <xref type="translation" poem="schiller2001102408"/>.</note>
   </notes>
   <source pages="140-145"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2331,7 +2332,7 @@ og stæk hans letsindige Vinger.
   <title>Pilgrimssang</title>
   <firstline>End i Livets Foraarsdage</firstline>
   <notes>
-    <note unknown-original-by="schiller"/>
+    <note editorial="true">Gendigtning af Schillers <xref type="translation" poem="schiller2026102601"/>.</note>
   </notes>
   <source pages="154-156"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2434,7 +2435,7 @@ Og om fyrgetyve Aar du høre
   <title>Gravskrivt over en Phlegmaticus</title>
   <firstline>Her lagdes hen til stille Fred</firstline>
   <notes>
-    <note>Ifølge registeret efter det Tydske; originalens forfatter er ikke angivet.</note>
+    <note editorial="true">Ifølge registeret »efter det Tydske«; originalens forfatter er ikke angivet.</note>
   </notes>
   <source pages="159"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2464,7 +2465,7 @@ Thi opstaae han ej kan.
   <title>Vandreren og Aftenstjernen</title>
   <firstline>O blide Sværmeriers Ven!</firstline>
   <notes>
-    <note>Ifølge registeret efter Grosser; originalens forfatter er ikke sikkert identificeret.</note>
+    <note editorial="true">Ifølge registeret efter Grosser; originalens forfatter er ikke sikkert identificeret.</note>
   </notes>
   <source pages="160-163"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

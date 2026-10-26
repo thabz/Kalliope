@@ -21,13 +21,14 @@ jest.mock('fs', () => ({
   existsSync: () => true,
 }));
 
-import { loadCachedJSON, writeCachedJSON } from '../tools/libs/caching.js';
+import { isFileModified, loadCachedJSON, writeCachedJSON } from '../tools/libs/caching.js';
 import { loadText } from '../tools/libs/helpers.js';
 import { build_poets_first_pass } from '../tools/build-static/poets.js';
 
 describe('poet metadata after automatic work discovery', () => {
   const info = '<person id="poet" country="dk" lang="da" type="poet"><name><lastname>Test</lastname></name></person>';
   beforeEach(() => {
+    isFileModified.mockReset().mockReturnValue(false);
     writeCachedJSON.mockClear();
     loadCachedJSON.mockReturnValue([['poet', { id: 'poet', has_poems: false, has_works: false }]]);
     loadText.mockImplementation(filename => filename.endsWith('info.xml') ? info : '<kalliopework><poetry>Vers</poetry></kalliopework>');
@@ -50,5 +51,13 @@ describe('poet metadata after automatic work discovery', () => {
   it('keeps cached metadata when both files and work membership are unchanged', () => {
     build_poets_first_pass({ workids: new Map([['poet', []]]), changedWorkPoetIds: new Set() });
     expect(writeCachedJSON).not.toHaveBeenCalled();
+  });
+
+  it.each(['bio.xml', 'events.xml'])('refreshes the biography menu flag after %s changes', filename => {
+    loadCachedJSON.mockReturnValue([['poet', { id: 'poet', has_biography: false }]]);
+    isFileModified.mockImplementation((...filenames) => filenames.includes(`fdirs/poet/${filename}`));
+    const poets = build_poets_first_pass({ workids: new Map([['poet', []]]) });
+    expect(poets.get('poet').has_biography).toBe(true);
+    expect(writeCachedJSON).toHaveBeenCalled();
   });
 });

@@ -146,12 +146,15 @@ const build_poets_first_pass = collected => {
       throw new Error(`Missing info.xml in fdirs/${id}.`);
     }
     const relevantFiles = [
+      'tools/build-static/poets.js',
       infoFilename,
       catalogFilename,
       `fdirs/${id}/bibliography-primary.xml`,
       `fdirs/${id}/bibliography-secondary.xml`,
       `fdirs/${id}/artwork.xml`,
       `fdirs/${id}/portraits.xml`,
+      `fdirs/${id}/bio.xml`,
+      `fdirs/${id}/events.xml`,
     ];
     const relevantFilesModified = isFileModified(...relevantFiles);
     const worksModified = collected.changedWorkPoetIds?.has(id) === true;
