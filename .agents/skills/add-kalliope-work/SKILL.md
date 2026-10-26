@@ -125,6 +125,12 @@ læseren. Noter, der kan stå som en del af overleveringen i PR'en, skal stå i
 PR-beskrivelsen og må ikke skrives som noter i værkerne. Det gælder fx
 arbejdsstatus, indlæsningsomfang, manglende tekstkontrol og opgaver til senere.
 
+Når en kildebekræftet særhed håndteres med `ignore-tests`, må der ikke
+tilføjes en læserrettet note om, at trykkets ordlyd eller gentagelse er
+bevaret. Det gælder fx »Trykkets gentagne ‘De de’ er bevaret«.
+Testundtagelsen hører til i XML-attributten; en eventuel begrundelse hører
+til i PR-overleveringen eller en XML-kommentar.
+
 ## 3. Håndtér tvivl eksplicit
 
 Forsøg først at afklare et spørgsmål ud fra kilden, repositoryets konventioner
