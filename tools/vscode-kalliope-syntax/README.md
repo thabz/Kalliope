@@ -15,12 +15,12 @@ Kør installationsscriptet fra roden af Kalliope-repositoriet:
 tools/install-vscode-kalliope-syntax.sh
 ```
 
-Scriptet opretter et symbolsk link fra VS Codes extension-mappe til
-workspace-versionen:
+Scriptet opretter et symbolsk link fra VS Codes extension-mappe til den
+stabile checkout i `~/src/kalliope`, også når scriptet køres fra et worktree:
 
 ```text
 ~/.vscode/extensions/thabz.kalliope-syntax
-  -> tools/vscode-kalliope-syntax
+  -> ~/src/kalliope/tools/vscode-kalliope-syntax
 ```
 
 Genstart derefter VS Code. Man kan også vælge `Developer: Reload Window` i
@@ -30,6 +30,7 @@ kan finde den lokale `facsimiles`-mappe og bruge indstillingerne i
 
 Installationsscriptet skal normalt kun køres én gang pr. maskine. Fordi
 installationen er et symbolsk link, bliver ændringer i extensionens kildekode
+i `~/src/kalliope`
 tilgængelige efter `Developer: Reload Window`; den skal ikke geninstalleres.
 
 ## Vis en facsimile
