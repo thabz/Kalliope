@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Navn og levetid: https://runeberg.org/hemforf/3/0332.html -->
+<person id="gunnerus" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Niels Tønder Lund</firstname>
+    <lastname>Gunnerus</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1786</date>
+    </born>
+    <!-- Dansk Forfatterleksikon, med henvisning til Personalhistorisk Tidsskrift 1945, 11. række, bind 6, s. 77: ca. 1811–1813. -->
+    <dead>
+      <date>ca. 1811</date>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+</person>
