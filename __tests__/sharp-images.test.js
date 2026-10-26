@@ -95,6 +95,40 @@ describe('sharp image helpers', () => {
     );
   });
 
+  it('starts writing thumbnails before reading the next source image', async () => {
+    process.chdir(tmpdir);
+    fs.mkdirSync('public/images/poet', { recursive: true });
+    const first = 'public/images/poet/first.jpg';
+    const second = 'public/images/poet/second.jpg';
+    await createJpeg(first, 320, 180);
+    await createJpeg(second, 320, 180);
+    fs.utimesSync(second, new Date('2000-01-01'), new Date('2000-01-01'));
+    const events = [];
+    const read = fs.readFileSync;
+    const rename = fs.renameSync;
+    const readSpy = jest.spyOn(fs, 'readFileSync').mockImplementation((file, ...args) => {
+      if (file === first || file === second) {
+        events.push(file);
+      }
+      return read(file, ...args);
+    });
+    const renameSpy = jest.spyOn(fs, 'renameSync').mockImplementation((from, to) => {
+      if (to.endsWith('.jpg')) {
+        events.push('output');
+      }
+      return rename(from, to);
+    });
+    try {
+      await buildThumbnails('public/images', () => true);
+      expect(events.indexOf('output')).toBeLessThan(events.indexOf(second));
+      expect(events.filter(event => event === first)).toHaveLength(1);
+      expect(events.filter(event => event === second)).toHaveLength(1);
+    } finally {
+      readSpy.mockRestore();
+      renameSpy.mockRestore();
+    }
+  });
+
   it('keeps existing thumbnails when the source mtime changes without content changes', async () => {
     process.chdir(tmpdir);
     fs.mkdirSync('public/images/poet', { recursive: true });

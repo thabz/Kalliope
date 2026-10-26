@@ -1,3 +1,4 @@
+import { resizeImage } from './resize-image.js';
 import fs from 'fs';
 import { createHash } from 'crypto';
 import { DOMParser } from '@xmldom/xmldom';
@@ -371,33 +372,6 @@ const htmlToXml = (html, collected, isPoetry, context) => {
   return validateContentHtmlFragments(lines, context);
 };
 
-const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
-  try {
-    const resizeOptions = {
-      width: maxWidth,
-      withoutEnlargement: true,
-    };
-    if (options.fit != null) {
-      const metadata = await sharp(inputfile).metadata();
-      const squareSize = Math.min(
-        maxWidth,
-        metadata.width ?? maxWidth,
-        metadata.height ?? maxWidth
-      );
-      resizeOptions.width = squareSize;
-      resizeOptions.height = squareSize;
-      resizeOptions.fit = options.fit;
-    }
-    const image = sharp(inputfile).resize(resizeOptions);
-    image.jpeg({ quality: options.quality ?? 82 });
-    await image.toFile(outputfile);
-    return outputfile;
-  } catch (err) {
-    console.log(err);
-    console.log(outputfile);
-    throw err;
-  }
-};
 
 const thumbnailConcurrency = Math.max(
   1,
@@ -464,20 +438,26 @@ const buildThumbnails = async (
   });
 
   // Content receipts survive interruption independently of the global file cache.
-  // Include implementation and encoder versions so code/settings changes invalidate.
+  // Hash only image generation: unrelated XML helper edits must not invalidate images.
   const digest = data => createHash('sha256').update(data).digest('hex');
   const generator = digest(
-    fs.readFileSync(new URL(import.meta.url)) + JSON.stringify(sharp.versions)
+    fs.readFileSync(new URL('./resize-image.js', import.meta.url)) +
+      JSON.stringify(sharp.versions)
   );
   safeMkdir('caches/thumbnails');
   sourceFiles.forEach(({ fullFilename }) => {
-    const source = digest(fs.readFileSync(fullFilename));
+    let source = null;
     CommonData.availableImageFormats.forEach(ext => {
       CommonData.availableImageWidths.forEach(width => {
         const outputfile = thumbnailOutputPath(fullFilename, width, ext);
         const receiptPath = `caches/thumbnails/${digest(path.resolve(outputfile))}.json`;
-        const key = digest(JSON.stringify({ source, generator, width, ext }));
         tasks.push(limit(async () => {
+          // Read each source only when its first queued output starts, so a cold
+          // build can encode immediately instead of hashing the entire collection.
+          if (source === null) {
+            source = digest(fs.readFileSync(fullFilename));
+          }
+          const key = digest(JSON.stringify({ source, generator, width, ext }));
           let receipt = null;
           try {
             receipt = JSON.parse(fs.readFileSync(receiptPath, 'utf8'));
