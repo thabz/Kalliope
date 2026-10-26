@@ -2586,7 +2586,7 @@ Der er Kræfter endnu i Norden!
 </head>
 <content>
 
-<text id="drachmann2026102674">
+<text id="drachmann2026102674" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Ungdom</title>
   <subtitle>Den gamle Mesters Syn.</subtitle>
@@ -14034,7 +14034,7 @@ Der fordrer højest Offer her paa Jord.
 </body>
 </text>
 
-<text id="drachmann2026102653">
+<text id="drachmann2026102653" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Syvende Sang</title>
   <firstline>Der sidder en gammel Kvinde</firstline>
@@ -16052,7 +16052,7 @@ Det er min simple Tanke.
 </body>
 </text>
 
-<text id="drachmann2026102659">
+<text id="drachmann2026102659" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Mellem Dragoner</title>
   <firstline>I Marts, da Isen just var brækket op</firstline>
@@ -16535,7 +16535,7 @@ Wessel blev udnævnt til Orlogs-Kaptajn —
 </body>
 </text>
 
-<text id="drachmann2026102662">
+<text id="drachmann2026102662" ignore-tests="single-circumflex-a-in-text">
 <head>
   <title>I Chaluppen</title>
   <firstline>Kong Karl er kommen fra Tyrkens Land —</firstline>
