@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="luisdeleon" country="un" nationality="es" lang="es" type="poet">
+  <name>
+    <firstname>Fray Luis de</firstname>
+    <lastname>León</lastname>
+  </name>
+  <!-- Livsdata: https://bvpb.mcu.es/es/consulta_aut/registro.do?id=47475 -->
+  <period>
+    <born>
+      <date>1527</date>
+      <place>Belmonte</place>
+    </born>
+    <dead>
+      <date>1591-08-23</date>
+      <place>Madrigal de las Altas Torres</place>
+    </dead>
+  </period>
+  <literary-periods>es-guldalder</literary-periods>
+</person>
