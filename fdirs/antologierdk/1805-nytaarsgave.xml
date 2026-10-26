@@ -1064,7 +1064,8 @@ hinandens Ven, Raadgiver vær.
 </body>
 </text>
 
-<text id="tode2026102609" author="tode">
+<!-- »og gradatim og« på s. 56 er kildekontrolleret; sprogfilteret fjerner det latinske ord og giver falsk »og og«. -->
+<text id="tode2026102609" author="tode" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Et Eventyr</title>
   <subtitle>af Krønikedigteren Münchhausen.</subtitle>
