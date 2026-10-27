@@ -104,9 +104,6 @@ digtere.
 - Når brugeren beder om at få fikset et GitHub issue, skal arbejdet udføres i et
   nyt worktree og afsluttes med en PR. Agenten har i denne arbejdsgang automatisk
   godkendelse til at committe og pushe de nødvendige ændringer for at oprette PR'en.
-- Uden for arbejdsgangen for GitHub issue-fixes må agenten aldrig committe, pushe
-  eller amende kodeændringer, før brugeren eksplicit har læst ændringen og bedt om
-  commit/push. Det gælder også opdateringer til eksisterende PR-branches.
 - Agenten må aldrig oprette en commit med Codex, OpenAI eller en anden agent som
   author eller committer. Før hver commit skal agenten kontrollere den effektive
   Git-identitet og bruge repositoryejerens allerede konfigurerede navn og

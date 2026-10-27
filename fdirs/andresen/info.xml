@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="andresen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Claus</firstname>
+    <lastname>Andresen</lastname>
+  </name>
+  <!-- Livsdata: C. Behrend, »En bornholmsk Degn og Digter«, Bornholmske Samlinger VI (1911), s. 81. Fødestedet er usikkert. -->
+  <period>
+    <born>
+      <date>1751</date>
+    </born>
+    <dead>
+      <date>1816-06-01</date>
+      <place>Østerlars</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
