@@ -1,7 +1,8 @@
-# Minerva 1785: digtudvalg fra de første tre hæfter
+# Minerva 1785: digtudvalg fra første bind
 
-PR'en opretter *Minerva* som tidsskrift under `tidsskrifterdk` med hæfterne
-juli, august og september 1785. Udvalget omfatter 21 digtposter i den
+PR'en opretter *Minerva* som tidsskrift under `tidsskrifterdk` med
+*Første Bind* (1785). Bindet har tre øverste sektioner for juli-, august-
+og septemberhæfterne. Udvalget omfatter 21 digtposter i den
 bevarede hovedtekst: fem i juli, ni i august og syv i september. Begge
 bidrag med titlen *Brevvexling* er på vers og er medtaget. Hæfternes
 prosabidrag er uden for opgaven.
@@ -41,6 +42,19 @@ epigrammer er ikke rekonstrueret.
   bd. II, [s. 762](https://runeberg.org/halvforf/2/0768.html) og
   [s. 763](https://runeberg.org/halvforf/2/0769.html).
 
+## Bindinddeling
+
+Den oprindelige udgivelses bindinddeling bruges som bibliografisk enhed.
+`fdirs/tidsskrifterdk/1785-minerva-01.xml` indeholder første bind med de tre
+månedshæfter som øverste sektioner. Hæfternes eksisterende afdelinger er
+bevaret som undersektioner. Tidsskriftets hovedfil henviser til bindet.
+De tre tidligere selvstændige hæftefiler er erstattet af bindfilen.
+
+Bindet har ét fælles titelblad, én bibliografisk kilde og én registrering
+af augusthæftets rettelsesark. Hæfternes separate paginering bevares i
+teksterne sammen med de præcise facsimileintervaller. Alle 21 tekstposter,
+deres id'er, noter, kvalitetsflag og relationer er uændrede ved samlingen.
+
 ## Digtposter
 
 | Hæfte | Trykte sider | Digte |
@@ -74,8 +88,8 @@ Skanningens ekstra kopier af september side 62–63 mellem side 55 og 56 er
 udeladt fra teksten. De normale eksemplarer af disse sider er medtaget.
 
 Titelbladet er rettet op og beskåret efter titelbladsarbejdsgangen og har
-bestået billed-QA. Alle tre hæfter henviser til det faktiske fælles
-bindtitelblad. Der er ikke fremstillet tænkte hæfteforsider.
+bestået billed-QA. Det fælles bindtitelblad er registreret én gang på
+bindet. Der er ikke fremstillet tænkte hæfteforsider.
 
 ## Kendte mangler
 
@@ -93,7 +107,7 @@ bindtitelblad. Der er ikke fremstillet tænkte hæfteforsider.
   sjette strofes andet vers er skjult af en fold og markeret
   `[ulæseligt]`. Et andet eksemplar af samme tryk kan afklare ordet.
 
-Hæfterne står fortsat som `incomplete`, med `korrektur1,kilde,side`.
+Bindet står fortsat som `incomplete`, med `korrektur1,kilde,side` på teksterne.
 Der er ikke tilføjet `korrektur2` eller en modelattest: læsehullerne er
 åbne, og reviewsessionerne har ikke oplyst et sikkert præcist model-ID.
 PR'en må ikke beskrives som en fuldstændig import af de tre hæfter.
@@ -118,3 +132,12 @@ sidebilleder og alle 361 thumbnails i bredden 250 er kontrolleret med HTTP
 Repositoryets offentlige facsimiletjek består også: 592 facsimiler med
 1.184 repræsentative billedfiler kontrolleret. Den tidligere
 serverblokering er dermed bortfaldet.
+
+Efter omlægningen til bind er XML-validering, `make test`, statisk build,
+tekstkvalitetskontrol og offentligt facsimiletjek gennemført med exitkode 0.
+Testpakken har fortsat 133 beståede suiter og 2.221 beståede tests.
+Den byggede indholdsfortegnelse og korpuseksporten indeholder ét bind,
+tre hæftesektioner og alle 21 digtposter. En direkte sammenligning bekræfter,
+at hver komplet tekstpost er byte for byte identisk med de tidligere
+hæftefiler. Den værkafgrænsede variantkontrol giver ingen nye kandidater
+eller advarsler.
