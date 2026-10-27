@@ -92,10 +92,6 @@ bindtitelblad. Der er ikke fremstillet tænkte hæfteforsider.
 - **September, Nancy, side 87 (fejltrykt 89), PDF-side 322:** slutordet i
   sjette strofes andet vers er skjult af en fold og markeret
   `[ulæseligt]`. Et andet eksemplar af samme tryk kan afklare ordet.
-- **Facsimileupload:** alle 361 billeder og thumbnails er genereret
-  lokalt, men den dokumenterede server `jec@10.0.0.5` svarer »No route to
-  host«. Upload og det obligatoriske offentlige facsimiletjek kan først
-  afsluttes, når serveren er tilgængelig. Facsimilemetadata er bevaret.
 
 Hæfterne står fortsat som `incomplete`, med `korrektur1,kilde,side`.
 Der er ikke tilføjet `korrektur2` eller en modelattest: læsehullerne er
@@ -114,5 +110,11 @@ normale testopsætning. Tekstkvalitetskontrollen finder ingen fejl. Det statiske
 gennemført med exitkode 0 med samme miljøindstillinger som CI
 (`KALLIOPE_SKIP_ELASTICSEARCH=true`, `KALLIOPE_SKIP_IMAGE_THUMBNAILS=true`). Den
 kildebelagte gentagelse »aldrig aldrig« i Fayes digt er dokumenteret som en
-navngiven undtagelse. Det offentlige facsimiletjek fejler endnu med HTTP
-404, fordi uploaden er blokeret som beskrevet ovenfor.
+navngiven undtagelse.
+
+Facsimilefilerne er nu offentligt tilgængelige. Den samlede PDF, alle 361
+sidebilleder og alle 361 thumbnails i bredden 250 er kontrolleret med HTTP
+200 og filstørrelse svarende til de lokale filer: 723 filer uden afvigelser.
+Repositoryets offentlige facsimiletjek består også: 592 facsimiler med
+1.184 repræsentative billedfiler kontrolleret. Den tidligere
+serverblokering er dermed bortfaldet.
