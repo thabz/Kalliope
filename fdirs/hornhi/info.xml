@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hornhi" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Iver</firstname>
+    <lastname>Horn</lastname>
+  </name>
+  <!-- Livsdata og forfatterskab: J. B. Halvorsen, Norsk Forfatter-Lexikon 1814–1880, bd. II, s. 762–763. -->
+  <period>
+    <born>
+      <date>1761-10-28</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1836-03-13</date>
+      <place>Tønsberg</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
