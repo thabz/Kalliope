@@ -822,7 +822,7 @@ Er det ei nok, saa meer en anden Gang.
   <subtitle>Efter det niende Stykke i Stolbergs Jamber</subtitle>
   <firstline>O kunde jeg som til et Høitidsgilde</firstline>
   <notes>
-    <note unknown-original-by="stolbergf" editorial="true"/>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026102701"/>.</note>
   </notes>
   <source pages="53-59" facsimile-pages="170-176"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1021,7 +1021,7 @@ Til Regnskyl styrter Bygningen omkuld.
   <firstline>Du vil forgieves kalde mig tilbage</firstline>
   <dates><event>1785-03-01</event></dates>
   <notes>
-    <note>(See Julii Hæfte Side 55.)</note>
+    <note>(See <a poem="pram2026102701">Julii Hæfte Side 55.</a>)</note>
     <note editorial="true">Tilskrevet Pram i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), under »Brevvexling«.</note>
   </notes>
   <source pages="60-66" facsimile-pages="177-183"/>
@@ -1281,7 +1281,7 @@ Meer end dig i hende der.
   <title>Horaz og Lydia</title>
   <firstline>Før, naar jeg henrykt ved dit Bryst</firstline>
   <notes>
-    <note editorial="true"><xref type="translation" poem="horats2026010312"/></note>
+    <note editorial="true">Gendigtning af Horats’ <xref type="translation" poem="horats2026010312"/>.</note>
   </notes>
   <source pages="69-71" facsimile-pages="186-188"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1344,6 +1344,7 @@ Skal Døden selv din Elskte blive sød.
   <subtitle>(Til Baggesen efter en Sygdom.)</subtitle>
   <firstline>Klinger Bragas Harper! lyder Jubeltoner!</firstline>
   <source pages="71-72" facsimile-pages="188-189"/>
+  <keywords>baggesen</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1539,7 +1540,8 @@ Ras Himmel! lad din Lynild slaae!
   </subtitle>
   <firstline>Saurin, en af de ædle, gode Hyrder</firstline>
   <notes>
-    <note editorial="true"><xref type="translation" poem="stolbergf2026090401"/></note>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2026090401"/>.</note>
+    <note editorial="true">Mottoet er fra Horats’ <xref poem="horats2026102701,19-20"/>, vers 19–20.</note>
   </notes>
   <source pages="77-80" facsimile-pages="194-197"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2368,6 +2370,9 @@ Sit sidste Suk: Gud! du er Kierlighed.
   <title>Udsigter over mit Liv</title>
   <subtitle>Tilegnet mine Venner i Danmark.</subtitle>
   <firstline>Den synker alt blandt Vester Havets Bølger</firstline>
+  <notes>
+    <note editorial="true">Mottoet er fra Ovids <xref poem="ovid2026102701,65-68"/>, vers 65–68.</note>
+  </notes>
   <source pages="72-81" facsimile-pages="307-316"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2735,7 +2740,7 @@ Da blev det <span lang="fr">sans Façon</span> affskaffet overalt.
   <title>Nancy</title>
   <firstline>Har Jorden ingen mere Fred for mig?</firstline>
   <notes>
-    <note editorial="true">På side 87 (fejltrykt 89) er slutningen af andet vers i sjette strofe skjult af en fold; det berørte ord er markeret [ulæseligt].</note>
+    <note editorial="true">På side 87 (fejltrykt 89) er slutningen af andet vers i sjette strofe skjult af en fold; det berørte ord (forkyndte) er indsat fra en anden udgave.</note>
   </notes>
   <source pages="85-88" facsimile-pages="320-323"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2784,7 +2789,7 @@ Et venligt Ord med hendes søde Røst
 Opfyldte mig med Himlens beste Lyst.
 
 <pb n="89 [87]" facs="321.jpg"/>  Men falske Dyder straalte Øiet af,
-Og Hiertet haaner dem, som det [ulæseligt].
+Og Hiertet haaner dem, som det forkyndte,
 Det var et Lais Smil, det Smil jeg yndte,
 Sirenesang, som jeg henreves af;
 Nei! ikke troner Dyden paa vor Jord,
