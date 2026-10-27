@@ -110,7 +110,9 @@ sidebilleder og reviewerfiler er ikke en del af Git-ændringen.
 
 `make test` er gennemført med exitkode 0: 133 beståede testsuiter og 2.221
 beståede tests; én suite og ni tests er sprunget over af repositoryets
-normale testopsætning. Tekstkvalitetskontrollen finder ingen fejl. Den
+normale testopsætning. Tekstkvalitetskontrollen finder ingen fejl. Det statiske build er også
+gennemført med exitkode 0 med samme miljøindstillinger som CI
+(`KALLIOPE_SKIP_ELASTICSEARCH=true`, `KALLIOPE_SKIP_IMAGE_THUMBNAILS=true`). Den
 kildebelagte gentagelse »aldrig aldrig« i Fayes digt er dokumenteret som en
 navngiven undtagelse. Det offentlige facsimiletjek fejler endnu med HTTP
 404, fordi uploaden er blokeret som beskrevet ovenfor.
