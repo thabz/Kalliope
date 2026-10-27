@@ -1445,16 +1445,16 @@ Nej, jeg vil ej som den klagende staa,
 <text id="drachmann2026102624" variant="drachmann2018051027">
 <head>
   <title>Koral</title>
-  <firstline>Den bomstrende Sommer blev kædet til Høst</firstline>
+  <firstline>Den blomstrende Sommer blev kædet til Høst</firstline>
   <notes>
-    <note editorial="true">»bomstrende« står sådan i trykket.</note>
+    <note editorial="true">blomstrende] bomstrende</note>
   </notes>
   <source pages="29-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Den bomstrende Sommer blev kædet til Høst,
+Den blomstrende Sommer blev kædet til Høst,
   Til Død, hvad der var i Live.
   Sorg skal følge paa Lyst,
   Stille, Du bankende Bryst!
@@ -6621,6 +6621,7 @@ Imod Syden de fri Longobarder.
 
 <text id="drachmann2026102694" variant="drachmann2019101719">
 <head>
+  <suptitle>†</suptitle>
   <title>Chr. Winther</title>
   <subtitle>(Ved Digterens Jordefærd i Paris, December 1876).</subtitle>
   <firstline>Støvet krævede sin Ret</firstline>
@@ -6973,6 +6974,9 @@ Mens Sol gaar bag den danske Scene ned.
   <title>Kong Karl den Tolvte bæres over Grænsen</title>
   <subtitle>(Til G. O. Cederströms Maleri).</subtitle>
   <firstline>Blød og tavs er Bjergets Sti</firstline>
+  <pictures>
+    <picture src="drachmann1999111027-p1.jpg" museum="natmus.se" objid="18366">Gustaf Cederström (1845-1933): <i>Karl XII:s likfärd</i>, 1878, oliemaleri, 256 × 370 cm.</picture>
+  </pictures>
   <source pages="219-221"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -15586,7 +15590,6 @@ Sandheden, Livet. I Stedet er traadt
 Smaathakket Ondskab, gemytlig Passiar,
 Kævl over Øl og Vrøvl ved Cigar,
 Alvor i Smørret og Rugen.
-
 <pb n="443" facs="450.jpg"/>Smørret og Rugen: Respekt for de to!
 Det er vor Nerve og det er vor Kilde;
 Men vi har lagt os i Smørret til Ro:
