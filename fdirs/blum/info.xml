@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blum" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Joachim Christian</firstname>
+    <lastname>Blum</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1739-11-19</date>
+      <place>Rathenow</place>
+    </born>
+    <dead>
+      <date>1790-08-28</date>
+      <place>Rathenow</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <gnd>116207469</gnd>
+  </identifiers>
+</person>
