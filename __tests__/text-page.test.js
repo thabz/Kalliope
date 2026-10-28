@@ -157,6 +157,33 @@ describe('text page breadcrumbs', () => {
     }
   });
 
+  it.each([
+    { facsimile: null, facsimilePageCount: null, facsimilePages: [9, 12] },
+    { facsimile: 'scan', facsimilePageCount: null, facsimilePages: [9, 12] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [0, 1] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [13, 14] },
+  ])('renders the text and external source without an available local facsimile (%j)', async facsimile => {
+    const digitalUrl = 'https://www.digitale-sammlungen.de/en/view/bsb11939631?page=9';
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      blocks: [{ type: 'poetry', lines: [['En linje fra digtet.']] }],
+      source: {
+        source: 'Friedrich Leopold Graf zu Stolberg: <i>Jamben</i>, 1784.',
+        pages: '7-10', digitalUrl, ...facsimile,
+      },
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    expect(html).toContain('En linje fra digtet.');
+    expect(html).toContain(`href="${digitalUrl}"`);
+    expect(html.replace(/<[^>]*>/g, '')).toContain('Jamben, 1784, s. 7–10.');
+    expect(html).not.toContain('/static/facsimiles/');
+  });
+
   it.each(['poet', 'person'])('omits the current author link in sources and facsimile captions (%s)', async attribute => {
     Client.text.mockResolvedValue({ ...textData, text: {
       ...textData.text,
@@ -178,5 +205,6 @@ describe('text page breadcrumbs', () => {
     expect(sidebar.match(/href="\/da\/works\/liebenberg"/g)).toHaveLength(2);
     expect(sidebar).toContain('href="https://www.kb.dk/source"');
     expect(sidebar).toContain('s. 10–12.');
+    expect(sidebar).toContain('/static/facsimiles/oehlenschlaeger/scan/t/000-w800.jpg');
   });
 });

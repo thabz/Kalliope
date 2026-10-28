@@ -399,17 +399,24 @@ const TextPage = (props) => {
 
   let textPictures = [...text.pictures];
 
-  if (text.source != null && text.source.facsimilePages != null) {
+  const firstPageNumber = text.source?.facsimilePages?.[0];
+  const facsimilePageCount = text.source?.facsimilePageCount;
+  if (
+    text.source?.facsimile != null &&
+    Number.isInteger(firstPageNumber) &&
+    Number.isInteger(facsimilePageCount) &&
+    firstPageNumber >= 1 &&
+    firstPageNumber <= facsimilePageCount
+  ) {
     function pad(num, size) {
       var s = num + '';
       while (s.length < size) s = '0' + s;
       return s;
     }
-    const firstPageNumber = text.source.facsimilePages[0];
     let facsimilePictures = [];
-    const facsimilePoetId = text.source.facsimilePoetId || poet.id;
+    const facsimilePoetId = text.source.facsimilePoetId ?? poet.id;
     const srcPrefix = `https://kalliope.org/static/facsimiles/${facsimilePoetId}/${text.source.facsimile}`;
-    for (let i = 0; i < text.source.facsimilePageCount; i++) {
+    for (let i = 0; i < facsimilePageCount; i++) {
       facsimilePictures.push({
         src: srcPrefix + '/' + pad(i, 3) + '.jpg',
         content_html: [[sourceText, { html: true }]],
