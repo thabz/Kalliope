@@ -60,6 +60,14 @@ samlingen ikke er indsat; der er ikke tilføjet `korrektur2`.
 Andre udgaver er først sammenlignet efter det kildebaserede udkast og har
 ikke leveret tekst til de beskadigede steder.
 
+Efter den samtidige indfletning af *Charis 1801* er syv kolliderende
+Minerva-id’er flyttet til ledige løbenumre: `lundca2026102801` →
+`lundca2026102804`, `lundca2026102802` → `lundca2026102805`,
+`pram2026102801` → `pram2026102802` og `rahbek2026102801`–`04` →
+`rahbek2026102806`–`09`. De gamle id’er tilhører nu Charis-teksterne og
+kan derfor ikke bruges som aliaser. *Vurderingen* har dermed
+`rahbek2026102806`, og *Afslaget til Zimmermann* `rahbek2026102807`.
+
 ## Korrektur og facsimile
 
 Alle 422 PDF-sider er gennemset på kontaktark for indhold og rettelsesark.
@@ -123,8 +131,17 @@ Arbejdsfilerne indgår ikke i Git-ændringen.
 Sideankeraudit består med 90 kontrollerede tekstsideposter og ingen
 afvigelser. Repositoryets offentlige facsimiletjek består med 595
 facsimiler og 1.190 repræsentative billedfiler. `make test` består med
-133 testsuiter og 2.232 tests; én suite og ni tests er sprunget over af
+133 testsuiter og 2.235 tests; én suite og ni tests er sprunget over af
 repositoryets normale opsætning. Statisk build består med
 `KALLIOPE_SKIP_ELASTICSEARCH=true` og
 `KALLIOPE_SKIP_IMAGE_THUMBNAILS=true`. Den afsluttende variantkontrol
 har ingen nye kandidater eller advarsler efter de indsatte forbindelser.
+
+Efter oprettelsen af *Jamben* og rettelsen af id-konflikterne er det statiske
+build kørt igen med de samme to miljøflag og exitkode 0. Korpuseksporten
+indeholder alle seks Jamben-tekster; de genererede oversættelsesrelationer
+forbinder Rahbeks nye id’er og `riber2026102802` med de korrekte originaler
+under `stolbergf/1784`. XML, de 33 sideskift og bevarelsen af de fire flyttede
+digtes ordlyd er kontrolleret. Jambens variant- og OCR-kandidatrapporter
+finder ingen nye kandidater; helværksanalysens 12 struktur- og geometri-
+kandidater er disponeret mod facsimilet.
