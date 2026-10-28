@@ -73,31 +73,41 @@ Som Brødre vi i Nøden prøved’.
   <source pages="4"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<w>Honorius den Anden,</w> Fyrste over Monaco.<br/>
-<w>Hercules Grimaldi de Montor,</w> hans Søn.<br/>
-<w>Algarotti,</w><br/>
-<w>Florino,</w> } hans Fortrolige.<br/>
-<w>Don Alvarez de Luna,</w> Høistcommanderende over de spanske Tropper paa Monaco.<br/>
-<w>Donna Alcadia,</w> hans Datter.<br/>
-<w>Leonora,</w> hendes Duenna.<br/>
-<w>Don Diego,</w> Grand d’Espagne.<br/>
-<w>Bragas,</w> en Geistlig.<br/>
-<w>Velino,</w> en Enke.<br/>
-<w>Giovanni,</w><br/>
-<w>Clara,</w> } hendes Børn.<br/>
-<w>Spirona,</w> hendes Naboerske.<br/>
-<w>Coello,</w> en Jæger.<br/>
-<w>Pachecho,</w> en fordums Bandit-Høvding.<br/>
-<w>Strozi,</w><br/>
-<w>Bojardo,</w> } Banditer.<br/>
-<w>Lozetto,</w> Don Diegos Tjener.<br/>
-Borgere, Jægere og Qvinder af Folket.
-
-<center><small>(Handlingen foregaaer i Staden Monaco 1641.)</small></center>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><w>Honorius den Anden,</w></role> <roleDesc>Fyrste over Monaco.</roleDesc></castItem>
+<castItem><role><w>Hercules Grimaldi de Montor,</w></role> <roleDesc>hans Søn.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Algarotti,</w></role></castItem>
+<castItem><role><w>Florino,</w></role></castItem>
+<roleDesc>hans Fortrolige.</roleDesc>
+</castGroup>
+<castItem><role><w>Don Alvarez de Luna,</w></role> <roleDesc>Høistcommanderende over de spanske Tropper paa Monaco.</roleDesc></castItem>
+<castItem><role><w>Donna Alcadia,</w></role> <roleDesc>hans Datter.</roleDesc></castItem>
+<castItem><role><w>Leonora,</w></role> <roleDesc>hendes Duenna.</roleDesc></castItem>
+<castItem><role><w>Don Diego,</w></role> <roleDesc>Grand d’Espagne.</roleDesc></castItem>
+<castItem><role><w>Bragas,</w></role> <roleDesc>en Geistlig.</roleDesc></castItem>
+<castItem><role><w>Velino,</w></role> <roleDesc>en Enke.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Giovanni,</w></role></castItem>
+<castItem><role><w>Clara,</w></role></castItem>
+<roleDesc>hendes Børn.</roleDesc>
+</castGroup>
+<castItem><role><w>Spirona,</w></role> <roleDesc>hendes Naboerske.</roleDesc></castItem>
+<castItem><role><w>Coello,</w></role> <roleDesc>en Jæger.</roleDesc></castItem>
+<castItem><role><w>Pachecho,</w></role> <roleDesc>en fordums Bandit-Høvding.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Strozi,</w></role></castItem>
+<castItem><role><w>Bojardo,</w></role></castItem>
+<roleDesc>Banditer.</roleDesc>
+</castGroup>
+<castItem><role><w>Lozetto,</w></role> <roleDesc>Don Diegos Tjener.</roleDesc></castItem>
+<castItem type="list"><role>Borgere, Jægere og Qvinder af Folket.</role></castItem>
+</castList>
+<set rend="center">
+<p><small>(Handlingen foregaaer i Staden Monaco 1641.)</small></p>
+</set>
+</front>
 </text>
 
 <text id="rousing2026090203" skip-index="true">

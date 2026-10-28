@@ -144,9 +144,11 @@ const build_person_or_keyword_refs = (collected) => {
           const fromPoetId = fromText == null ? poetId : fromText.poetId;
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
+          const front = getChildByTagName(text, 'front');
           const linkedPoetIds = new Set();
           const notes = [
             ...getElementsByTagNames(head, ['note', 'picture']),
+            ...getElementsByTagNames(front, ['note', 'footnote']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
           notes.forEach((note) => {

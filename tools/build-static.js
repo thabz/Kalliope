@@ -1,3 +1,4 @@
+import { buildTextBlocks } from './build-static/text-blocks.js';
 import fs from 'fs';
 import { changedDateTextIds } from './build-static/related-dates.js';
 import { execSync } from 'child_process';
@@ -284,7 +285,8 @@ const handle_text = async (
     collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
-      'tools/build-static/textrefs.js',
+      'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js',
+      'tools/libs/helpers.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -528,31 +530,13 @@ const handle_text = async (
     toc = build_section_toc(content, sourcePoetId);
   } else {
     // prose or poem
-    const body = getChildByTagName(text, 'body');
-    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'epigraph']).map(
-      (block) => {
-        const type = tagName(block);
-        const rawBlock = safeGetInnerXML(block);
-        footnotes_count += (rawBlock.match(/<footnote\b|<note\b/g) || [])
-          .length;
-        has_footnotes =
-          has_footnotes === true ||
-          rawBlock.indexOf('<footnote') !== -1 ||
-          rawBlock.indexOf('<note') !== -1;
-        const fontSize = safeGetAttr(block, 'font-size');
-        const maxWidth = safeGetAttr(block, 'max-width');
-        const options = { fontSize, maxWidth };
-        return {
-          type,
-          lines: htmlToXml(rawBlock, collected, type === 'poetry', {
-            workId: sourceWorkId,
-            textId,
-            blockType: type,
-          }),
-          options,
-        };
-      },
-    );
+    blocks = buildTextBlocks(text, collected, { workId: sourceWorkId, textId });
+    for (const block of blocks) {
+      const noteCount = block.lines.reduce((count, [line]) =>
+        count + (line.match(/<footnote\b|<note\b/g) ?? []).length, 0);
+      footnotes_count += noteCount;
+      has_footnotes = has_footnotes === true || noteCount > 0;
+    }
   }
   mkdirp.sync(foldername);
   const notes = get_notes(head, collected, {}, fragmentContext);
@@ -965,6 +949,8 @@ const works_first_pass = (collected) => {
     'tools/build-static/edition-reference.js',
     'tools/build-static/source.js',
     'tools/build-static/work-metadata.js',
+    'tools/build-static/text-blocks.js',
+    'tools/libs/helpers.js',
   );
   const force_reload =
     texts.size === 0 ||

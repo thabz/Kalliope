@@ -33,6 +33,7 @@
         <ref name="content"/>
         <ref name="head"/>
         <ref name="body"/>
+        <ref name="front"/>
         <ref name="title"/>
         <ref name="year"/>
         <ref name="subtitle"/>
@@ -182,8 +183,76 @@
           <ref name="poetry"/>
           <ref name="prose"/>
           <ref name="epigraph"/>
+          <ref name="castList"/>
         </choice>
       </zeroOrMore>
+    </element>
+  </define>
+
+  <!-- TEI P5 drama vocabulary, integrated with Kalliope's text entries. -->
+  <define name="front">
+    <element name="front">
+      <oneOrMore><choice>
+        <ref name="castList"/>
+        <ref name="set"/>
+        <ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castInline"><zeroOrMore><ref name="castInlineNode"/></zeroOrMore></define>
+  <define name="castInlineNode">
+    <choice>
+      <text/>
+      <ref name="b"/><ref name="i"/><ref name="w"/><ref name="sc"/>
+      <ref name="span"/><ref name="small"/><ref name="s"/>
+      <ref name="sup"/><ref name="sub"/><ref name="u"/><ref name="o"/>
+      <ref name="br"/><ref name="pb"/><ref name="note"/><ref name="footnote"/>
+    </choice>
+  </define>
+
+  <define name="castHead">
+    <element name="head"><ref name="castInline"/></element>
+  </define>
+
+  <define name="castList">
+    <element name="castList">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <optional><ref name="castHead"/></optional>
+      <oneOrMore><choice>
+        <ref name="castItem"/><ref name="castGroup"/><ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castGroup">
+    <element name="castGroup">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <oneOrMore><choice>
+        <ref name="castHead"/><ref name="castItem"/><ref name="castGroup"/>
+        <ref name="roleDesc"/><ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castItem">
+    <element name="castItem">
+      <optional><attribute name="type"><choice>
+        <value>role</value><value>list</value>
+      </choice></attribute></optional>
+      <zeroOrMore><choice>
+        <ref name="role"/><ref name="roleDesc"/><ref name="castInlineNode"/>
+      </choice></zeroOrMore>
+    </element>
+  </define>
+
+  <define name="sub"><element name="sub"><ref name="castInline"/></element></define>
+  <define name="role"><element name="role"><ref name="castInline"/></element></define>
+  <define name="roleDesc"><element name="roleDesc"><ref name="castInline"/></element></define>
+  <define name="set">
+    <element name="set">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <oneOrMore><element name="p"><ref name="castInline"/></element></oneOrMore>
     </element>
   </define>
 

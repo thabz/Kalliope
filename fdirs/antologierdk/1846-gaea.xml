@@ -1119,22 +1119,26 @@ Et lyrisk Udbrud kaster hermed
   <source pages="51" facsimile-pages="63"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<b>Sokrates.</b><br />
-<b>Xantippe,</b> hans Hustru.<br />
-<b>Psyche</b> deres Datter.<br />
-<b>Anytos.</b><br />
-<b>Melitos.</b><br />
-<b>Lykon.</b> } Sokrates’s Anklagere.<br />
-<b>Menas,</b> en rig Handelsmand.<br />
-<b>Prokles,</b> hans Søn, Yngling, Billedhugger, Psyches Elsker.<br />
-<b>Kryphon,</b> Offerpræst og Augur.<br />
-<b>Atheniensiske Borgere.</b>
-
-<center>Scenen er i Athen.</center>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><b>Sokrates.</b></role></castItem>
+<castItem><role><b>Xantippe,</b></role> <roleDesc>hans Hustru.</roleDesc></castItem>
+<castItem><role><b>Psyche</b></role> <roleDesc>deres Datter.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Anytos.</b></role></castItem>
+<castItem><role><b>Melitos.</b></role></castItem>
+<castItem><role><b>Lykon.</b></role></castItem>
+<roleDesc>Sokrates’s Anklagere.</roleDesc>
+</castGroup>
+<castItem><role><b>Menas,</b></role> <roleDesc>en rig Handelsmand.</roleDesc></castItem>
+<castItem><role><b>Prokles,</b></role> <roleDesc>hans Søn, Yngling, Billedhugger, Psyches Elsker.</roleDesc></castItem>
+<castItem><role><b>Kryphon,</b></role> <roleDesc>Offerpræst og Augur.</roleDesc></castItem>
+<castItem type="list"><role><b>Atheniensiske Borgere.</b></role></castItem>
+</castList>
+<set rend="center">
+<p>Scenen er i Athen.</p>
+</set>
+</front>
 </text>
 
 <text ignore-tests="repeated-adjacent-word" id="bredahl20260814113" author="bredahl">
