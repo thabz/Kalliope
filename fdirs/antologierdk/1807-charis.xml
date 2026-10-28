@@ -760,7 +760,7 @@ At bringe hende Blomster maatte lære!
 </body>
 </text>
 
-<text id="rahbek20261028713" author="rahbek">
+<text id="rahbek20261028713" author="rahbek" ignore-tests="repeated-adjacent-word">
 <head>
   <suptitle>
     <line>Til</line>
@@ -1285,7 +1285,7 @@ Lev,.....
 </body>
 </text>
 
-<text id="oehlenschlaeger20261028719" author="oehlenschlaeger" variant="oehlenschlaeger2019022030">
+<text id="oehlenschlaeger20261028719" author="oehlenschlaeger" variant="oehlenschlaeger2019022030" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Skov-Kirken</title>
   <subtitle>(En Romance.)</subtitle>
