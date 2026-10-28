@@ -168,6 +168,16 @@ Hver af dem kan indeholde:
 - `<date>`: dato, typisk `YYYY`, `YYYY-MM` eller `YYYY-MM-DD`.
 - `<place>`: stednavn.
 
+For `type="person"` og `type="poet"` kræves en fødsels- eller dåbsdato og en
+dødsdato. Brug `<date>?</date>`, når datoen ikke er registreret; udelad ikke
+perioden eller datofeltet. Korpustesten håndhæver dette krav. Samlinger og
+kunstnerposter er ikke omfattet af kravet.
+
+Når fødselsåret er ukendt, men dødsåret kendes, vises navnets leveår som
+`(† 1695)` eller fx `(† c. 1700)` ved et omtrentligt dødsår. Når begge år er
+ukendte, vises `(Ukendt levetid)`. Mellemrummet efter `†` er fast (U+00A0),
+så tegnet holdes sammen med årstallet.
+
 `<place>` kan have attributten `inon`:
 
 ```xml
