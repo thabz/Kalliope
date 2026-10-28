@@ -63,6 +63,7 @@ For Huldgudinden Du den selv frembære.
   </subtitle>
   <firstline>Mørk Aarets første Morgenstund fremsteeg</firstline>
   <source pages="1-20" facsimile-pages="25-44"/>
+  <keywords>tode</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -585,6 +586,7 @@ Ak — under, under mig at græde.
   <subtitle>(For i et Exemplar af Samsøes Skrifter.)</subtitle>
   <firstline>Ven! som fortolked’ Melpomenes Savn</firstline>
   <source pages="32" facsimile-pages="56"/>
+  <keywords>falsen,samsoe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -718,6 +720,7 @@ Held enhver, som dig tilbeder!
   <subtitle>(helliget Jens Baggesen.)</subtitle>
   <firstline>Blid, Maane! løfter Du Dit Hoved op</firstline>
   <source pages="38-49" facsimile-pages="62-73"/>
+  <keywords>baggesen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1051,7 +1054,7 @@ Ak, ei allene Dit Ord, men Exempel i Vandel og Adfærd
   <firstline>Sejersæl Frieheds Røst os aabner Ærens Bane</firstline>
   <notes>
     <note editorial="true">Gendigtning af Marie-Joseph Chéniers <xref type="translation" poem="chenier2020011001"/>.</note>
-    <note editorial="true">Trykkets fællesklammer mellem Folket og Krigerne er gengivet som to stemmer med de fælles ord gentaget i begge.</note>
+    <note editorial="true">Trykkets fællesklammer mellem Folket og Krigerne er gengivet med / mellem de alternative ord; de fælles ord står kun én gang.</note>
   </notes>
   <source pages="58-66" facsimile-pages="82-90"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1073,19 +1076,11 @@ I Tyranner! gaaer ned i Jer Grav!
     Som Helte for Friehed at døe!
 
 <nonum><center><w>Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte,
-Gaaer at seire paa Land og paa Søe,
-Gaaer at stride for Friehed som Helte,
-Som Helte for Friehed at døe.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte,
-For at seire paa Land og paa Søe,
-O! for Friehed vi stride som Helte,
-Som Helte for Friehed vi døe.
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte,
+Gaaer / For at seire paa Land og paa Søe,
+Gaaer at stride for Friehed / O! for Friehed vi stride som Helte,
+Som Helte for Friehed at / vi døe.
 
 <pb n="60" facs="083.jpg"/><nonum><center><w>En Moder.</w></center></nonum>
 Langt fra os være Sorg og feige Qvinders Smerte!
@@ -1101,13 +1096,8 @@ Det tilhører Jert Fædreneland.
 Op spænder Sværd o. s. v.
 
 <nonum><center><w>Almindeligt Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte! &amp;c.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte! &amp;c.
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte! &amp;c.
 
 <pb n="61" facs="084.jpg"/><nonum><center><w>Tvende Oldinge.</w></center></nonum>
 Disse Sværd’, unge Mænd! er’ Eders Fædres Gaver;
@@ -1123,13 +1113,8 @@ Naar Tyrannerne er’ ikke meer.
 Op spænder Sværd o. s. v.
 
 <nonum><center><w>Almindeligt Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte o. s. v.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte o. s. v.
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte o. s. v.
 
 <pb n="62" facs="085.jpg"/><nonum><center><w>En Yngling.</w></center></nonum>
 Taaler ei, tappre Mænd! man svage Børn os kalder!
@@ -1148,13 +1133,8 @@ O for Friehed vi stride som Helte,
 Som Helte for Friehed vi døe.
 
 <pb n="63" facs="086.jpg"/><nonum><center><w>Almindeligt Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte, o. s. v.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte, o. s. v.
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte, o. s. v.
 
 <nonum><center><w>Tvende Hustruer.</w></center></nonum>
 Ja til Kamp! ja til Strid! som nye Spartanerinder,
@@ -1170,13 +1150,8 @@ Eders Hævnere under vort Bryst.
 Op! spænder Sværd &amp;c.
 
 <pb n="64" facs="087.jpg"/><nonum><center><w>Almindeligt Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte, &amp;c.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte, &amp;c.
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte, &amp;c.
 
 <nonum><center><w>En ung Pige.</w></center></nonum>
 Endnu kiende vi ei til Hymens søde Lænker,
@@ -1191,13 +1166,8 @@ Som for Friehed og Ligheden slaaer.
 <nonum><center><w>Chor af unge Piger.</w></center></nonum>
 Op spænder Sværd &amp;c.
 
-<pb n="65" facs="088.jpg"/><two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte, &amp;c.
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte, &amp;c.
-</column></two-columns>
+<pb n="65" facs="088.jpg"/><nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte, &amp;c.
 
 <nonum><center><w>Tre Krigere.</w></center></nonum>
 Hør vor Eed, Frieheds Gud! ved dette Staal vi sværge,
@@ -1216,19 +1186,11 @@ For at seire paa Land og paa Søe.
 Som Helte for Friehed vi døe.
 
 <nonum><center><w>Almindeligt Chor.</w></center></nonum>
-<two-columns><column>
-<nonum><center>Folket.</center></nonum>
-Op! spænder Sværd ved det mandige Bælte,
-Gaaer at seire paa Land og paa Søe!
-Gaaer at stride for Friehed som Helte,
-Som Helte for Friehed at døe!
-</column><column>
-<nonum><center>Krigerne.</center></nonum>
-Vi spænde Sværd ved det mandige Bælte,
-For at seire paa Land og paa Søe!
-O for Friehed vi stride som Helte,
-Som Helte for Friehed vi døe!
-</column></two-columns>
+<nonum><center>Folket. / Krigerne.</center></nonum>
+Op! spænder / Vi spænde Sværd ved det mandige Bælte,
+Gaaer / For at seire paa Land og paa Søe!
+Gaaer at stride for Friehed / O for Friehed vi stride som Helte,
+Som Helte for Friehed at / vi døe!
 </poetry>
 </body>
 </text>
@@ -1543,6 +1505,10 @@ saa sømmer det Mænd i vort Norden.
   <title>Reisebeskrivelse</title>
   <subtitle>af den Svenske Digter Paykull.<footnote>Originalen er hidtil utrykt; men Digteren gav mig, ved sit Ophold her i Sommeren 96, med Stykket selv fri Raadighed over Brugen af Oversættelsen.</footnote></subtitle>
   <firstline>Paa Rejsen om Germanjens Lande</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Gustaf von Paykulls <xref type="translation" poem="paykull2026102801"/>.</note>
+    <note editorial="true">Den svenske tekst er indsat efter den senere trykte udgave fra 1814. Dens indledningsstrofe findes ikke i denne gendigtning, som ifølge oversætterens note bygger på en utrykt tekst modtaget fra Paykull i 1796.</note>
+  </notes>
   <source pages="83-86" facsimile-pages="107-110"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1613,7 +1579,7 @@ i Cederen paa Libanon!
 Got! men endnu er eet at haabe. Derpaa vil han byde:
 ”Kommer, Fornuftige! frem, lige her for mig at staae!”
 
-<nonum><right>φæ — φο.</right></nonum>
+<nonum><right>φα — φο.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -1626,6 +1592,7 @@ Got! men endnu er eet at haabe. Derpaa vil han byde:
     <written>1796-07-02</written>
   </dates>
   <source pages="87-89" facsimile-pages="111-113"/>
+  <keywords>paykull</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1729,7 +1696,7 @@ Lad Elskovs daarlige Foragter græde —
 Epigrammer! dog ej saa frække! — ”Hvorfor ej? Vi ere
 ”Overskrivterne kun; Verden Kapitlerne har!”
 
-<nonum><right>φæ — φο.</right></nonum>
+<nonum><right>φα — φο.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -1882,6 +1849,7 @@ Da har du <w>Bakkehuus</w>, hvor du har Hiem.
 <body>
 <poetry>
 <nonum><small>Mel. Og Odin han sendte Hermoder afsted.</small></nonum>
+
 Og det vel omtrent monne være eet Aar,
 Da hørtes Hr. <w>Marqvard</w> at sige:
 ”Farvel Directeurskab og Corpus og Gaard!
@@ -2336,6 +2304,7 @@ Froe vi samles hist i Glædens Hjem.
     <event>1796-01-01</event>
   </dates>
   <source pages="122" facsimile-pages="146"/>
+  <keywords>samsoe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3306,7 +3275,7 @@ De bede tidt for Dig, med Venskabs fulde Varme:
 Jertegns Billeder; Ven! fra Fuskeres Værksteder komme,
 Fostre af Aand og af Kunst bleve for Pøbel ej til.
 
-<nonum><right>φæ — φο.</right></nonum>
+<nonum><right>φα — φο.</right></nonum>
 </poetry>
 </body>
 </text>
