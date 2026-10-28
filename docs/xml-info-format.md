@@ -168,10 +168,10 @@ Hver af dem kan indeholde:
 - `<date>`: dato, typisk `YYYY`, `YYYY-MM` eller `YYYY-MM-DD`.
 - `<place>`: stednavn.
 
-For `type="person"` og `type="poet"` kræves en fødsels- eller dåbsdato og en
-dødsdato. Brug `<date>?</date>`, når datoen ikke er registreret; udelad ikke
-perioden eller datofeltet. Korpustesten håndhæver dette krav. Samlinger og
-kunstnerposter er ikke omfattet af kravet.
+Alle poster undtagen `type="collection"` kræver en fødsels- eller dåbsdato og
+en dødsdato. Kravet gælder også kunstnerposter (`type="artist"`). Brug
+`<date>?</date>`, når datoen ikke er registreret; udelad ikke perioden eller
+datofeltet. Korpustesten håndhæver dette krav.
 
 Når fødselsåret er ukendt, men dødsåret kendes, vises navnets leveår som
 `(† 1695)` eller fx `(† c. 1700)` ved et omtrentligt dødsår. Når begge år er

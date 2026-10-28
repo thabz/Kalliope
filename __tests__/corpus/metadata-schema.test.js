@@ -108,7 +108,7 @@ describe('info.xml RELAX NG schema', () => {
     expect(missingLiteraryPeriods).toEqual([]);
   });
 
-  it('requires birth or baptism and death dates for people and poets, using ? when unknown', () => {
+  it('requires birth or baptism and death dates for every non-collection entry, using ? when unknown', () => {
     const missingDates = [];
 
     infoXmlFiles().forEach(filename => {
@@ -116,7 +116,7 @@ describe('info.xml RELAX NG schema', () => {
         fs.readFileSync(filename, 'utf8'), 'text/xml'
       ).documentElement;
       const type = person.getAttribute('type');
-      if (type !== 'person' && type !== 'poet') {
+      if (type === 'collection') {
         return;
       }
       const period = person.getElementsByTagName('period')[0];
