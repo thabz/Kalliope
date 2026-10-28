@@ -607,7 +607,8 @@ Naar jeg mig nægtet Krands seer Venners Tinding pryde.
 </body>
 </text>
 
-<text id="pram202610281001" author="pram">
+<!-- Facsimile s. 35 har den gentagne ordlyd »Alle alle Dyders favre Klynge«. -->
+<text id="pram202610281001" author="pram" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Hymne til Harmonien</title>
   <firstline>Hvad var alle Jordens Glæder</firstline>
