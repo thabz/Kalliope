@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="catul" country="un" nationality="it" lang="la" type="poet">
+  <name>
+    <lastname>Catul</lastname>
+    <fullname>Gajus Valerius Catullus</fullname>
+  </name>
+  <!-- Livsdata: Kristoffer Maribo, Catul, Lex, https://lex.dk/Catul -->
+  <period>
+    <born>
+      <date>ca. -0084</date>
+      <place>Verona</place>
+    </born>
+    <dead>
+      <date>ca. -0054</date>
+      <place>Rom</place>
+    </dead>
+  </period>
+  <literary-periods>la-romersk-litteratur</literary-periods>
+  <identifiers>
+    <lex-dk>Catul</lex-dk>
+  </identifiers>
+</person>
