@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="krusel" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Lauritz</firstname>
+    <lastname>Kruse</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-09-06</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1839-02-19</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Lauritz_Kruse</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>KLauridsKruse</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
