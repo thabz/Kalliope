@@ -42,6 +42,21 @@ Der oprettes ingen tom decembersektion. *Morgenen*s vers står på s.
 Otte sikre variantrelationer forbinder digtene med eksisterende udgaver.
 Prams *Bøn* forbindes med Popes *The universal prayer*, Ribers *Spillesygen*
 med Stolbergs *Der Frohn* og *Om Persifflage* med *Ueber den Persifflage*.
+Rahbeks *Vurderingen* forbindes med *Die Schäzung* (s. 32–37), og
+*Afslaget til Zimmermann* med *Die Weigerung. An Zimmermann* (s. 76–80).
+Begge originaler er transskriberet og læst mod 1784-trykkets elleve sider.
+
+Stolbergs *Jamben*, Weidmanns Erben og Reich, Leipzig, 1784,
+[↬](https://www.digitale-sammlungen.de/en/view/bsb11939631), oprettes som
+`stolbergf/1784` med seks tekster i trykkets rækkefølge: II, III, VII, IX,
+X og XIII. Fire eksisterende tekster flyttes fra `andre.xml` med bevarede
+tekst-id'er og ordlyd; de to Rahbek-originaler tilføjes. Værket har fælles
+kilde, kontrolleret og transskriberet titelblad samt 33 interne sideskift
+på de 39 medtagne tekstsider. Enkelte indryk og en afsnitsgrænse i
+*Der Widerruf* er justeret mod facsimilet. Andre tekstudgaver af Stolberg
+bliver i `andre.xml`. *Jamben* står som `incomplete`, fordi resten af
+samlingen ikke er indsat; der er ikke tilføjet `korrektur2`.
+
 Andre udgaver er først sammenlignet efter det kildebaserede udkast og har
 ikke leveret tekst til de beskadigede steder.
 
