@@ -36,8 +36,8 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
 3. Foretræk oversætterens dokumenterede trykte udgave eller den nærmeste
    samtidige trykte udgave med samme tekstlige form. Hvis ingen af dem er
    tilgængelige, må en troværdig nyere trykt eller digital udgave bruges, når
-   originalteksten stadig kan identificeres sikkert; dokumentér da, at kilden
-   er nyere. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
+   originalteksten stadig kan identificeres sikkert; dokumentér den nyere kilde
+   på originalteksten og i PR-beskrivelsen. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
    Vælg ikke automatisk den ældste version.
 4. Opret normalt den valgte publikation som et selvstændigt værk
    hos originalforfatteren. Brug samtidig `$add-kalliope-work`; brug også
@@ -59,6 +59,11 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
    Skriv digternavnet som almindelig tekst, aldrig som person- eller digterlink.
    Kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+   Forlægsnoten beskriver relationen. Måltekstens registrerede udgave, kilde og
+   indførelse beskrives på målteksten selv, ikke ved det indgående link.
+   Skriv fx ikke »Originalteksten er registreret efter udgaven fra 1847.« i
+   oversættelsens note. Historiske oplysninger om oversætterens benyttede
+   forlæg og tekstlige forskelle kan fortsat beskrives i forlægsnoten.
    Brug aldrig et bart digtlink som note.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål

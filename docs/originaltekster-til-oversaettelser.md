@@ -32,7 +32,8 @@ Det historisk korrekte forlæg foretrækkes, men er ikke et adgangskrav: manglen
 på det må ikke blokere for indsættelsen af en original, som kan identificeres
 sikkert i en nyere udgave. Den ældste udgave har ingen automatisk forrang. En
 senere redaktionel eller moderniseret tekst må kun bruges, når forskellene ikke
-skaber tvivl om identifikationen; angiv da tydeligt, at kilden er nyere.
+skaber tvivl om identifikationen; dokumentér den nyere kilde på originalteksten
+og i PR-beskrivelsen.
 
 Kontrollér bibliografiske oplysninger mod titelblad, kolofon,
 bibliotekskatalog eller en tilsvarende autoritativ kilde. Hvis valget kræver
@@ -60,6 +61,14 @@ også tilladt, ligesom præciseringer og flere digtlinks i samme note. Digttitle
 og citationstegnene leveres af linkets visning. Digternavnet skrives som almindelig tekst;
 kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. En note må ikke kun bestå af
 et digtlink; forfatterens navn alene er heller ikke en forklaring.
+
+Forlægsnoten beskriver relationen mellem teksterne. Oplysninger om måltekstens
+registrerede udgave, kilde eller indførelse hører hjemme på målteksten selv,
+ikke i den henvisende note. Skriv fx ikke »Originalteksten er registreret efter
+udgaven fra 1847.« i oversættelsens forlægsnote. Oplysningerne skal kunne ændres
+på målteksten uden at efterlade forældede beskrivelser ved de indgående links.
+Dokumenterede oplysninger om oversætterens historiske brug af et forlæg og
+tekstlige forskelle er fortsat relevante for relationen.
 
 Eksisterende relationer migreres ikke automatisk. Ret dem kun, når opgaven og
 kildegrundlaget giver belæg for en mere præcis relation.
