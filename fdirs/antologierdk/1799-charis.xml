@@ -23,8 +23,9 @@
   </source>
 </workhead>
 <workbody>
+<!-- Kildebekræftet ordgentagelse på trykside 23: Ønske Ønske. -->
 
-<text id="rein202610291001" author="rein">
+<text id="rein202610291001" author="rein" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Tilbageblik fra Evigheden</title>
   <subtitle>
@@ -2004,7 +2005,9 @@ Vorde Bakkehusets Pryd!
 </body>
 </text>
 
-<text id="abrahamson202610291001" author="abrahamson">
+<!-- Kildebekræftet ordgentagelse på trykside 95: Hierte Hierte. -->
+
+<text id="abrahamson202610291001" author="abrahamson" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Livets Fryd</title>
   <subtitle><w>Til Rahbek.</w></subtitle>
