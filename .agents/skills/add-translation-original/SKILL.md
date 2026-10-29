@@ -51,11 +51,13 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    Kalliopes gældende oversættelsesrelation. Opret ikke en generisk relation til
    digteren. En nyere udgave må være relationens mål, når teksten matcher
    sikkert, og det historiske forlæg ikke er tilgængeligt.
-   Angiv altid forlægget med formuleringen »Gendigtning af [forfatterens navn
-   i genitiv] [digtlink].«, fx:
+   Forlægsnoten skal nævne den kendte originalforfatter og forklare relationen til
+   digtlinket, fx:
    `<note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>`.
+   »Oversættelse af«, »Gendigtning af« og »Fri gendigtning af« er eksempler,
+   ikke en udtømmende liste. Præciseringer og flere digtlinks er tilladt.
    Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
-   Brug ikke et bart digtlink eller »Oversættelse af …« som forlægsnote.
+   Brug aldrig et bart digtlink som note.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.

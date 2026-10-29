@@ -1322,13 +1322,17 @@ skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
 <note>Se <xref poem="schiller2018011501"/>.</note>
-<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Gendigtning af Heines <xref type="translation" poem="heine..."/>.</note>
 <note>Se <xref keyword="romantikken"/>.</note>
 <note>Se <xref dict="..."/>.</note>
 <note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
+En forlægsnote skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
+»Oversættelse af«, »Gendigtning af« eller »Fri gendigtning af«. Fri formulering,
+præciseringer og flere digtlinks er tilladt. Noter med digtlinks må ikke kun
+indeholde selve linket. Se `docs/originaltekster-til-oversaettelser.md`.
 
 ## Linjenummerering og layout-tags
 
