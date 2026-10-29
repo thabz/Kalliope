@@ -56,6 +56,9 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    `<note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>`.
    »Oversættelse af«, »Gendigtning af« og »Fri gendigtning af« er eksempler,
    ikke en udtømmende liste. Præciseringer og flere digtlinks er tilladt.
+   Vælg frit fuldt navn eller efternavn alene efter sammenhængen. »Byron«,
+   »Schiller« og »Goethe« er tilstrækkeligt; brug mere af navnet, når et
+   efternavn som »Møller« kan pege på flere personer.
    Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
    Skriv digternavnet som almindelig tekst, aldrig som person- eller digterlink.
    Kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.

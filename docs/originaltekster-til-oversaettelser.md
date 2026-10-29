@@ -62,6 +62,11 @@ og citationstegnene leveres af linkets visning. Digternavnet skrives som alminde
 kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. En note må ikke kun bestå af
 et digtlink; forfatterens navn alene er heller ikke en forklaring.
 
+Både fuldt navn og efternavn alene er tilladt. Vælg efter sammenhængen:
+»Byron«, »Schiller« og »Goethe« kan stå alene, mens fx »Møller« kan kræve mere
+af navnet for at identificere personen entydigt. Der kræves ikke konsekvent
+brug af hverken fuldt navn eller efternavn alene.
+
 Forlægsnoten beskriver relationen mellem teksterne. Oplysninger om måltekstens
 registrerede udgave, kilde eller indførelse hører hjemme på målteksten selv,
 ikke i den henvisende note. Skriv fx ikke »Originalteksten er registreret efter

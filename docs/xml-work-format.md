@@ -1334,6 +1334,8 @@ En forlægsnote skal nævne originalforfatteren, når denne er kendt, og forklar
 præciseringer og flere digtlinks er tilladt. Noter med digtlinks må ikke kun
 indeholde selve linket. Digternavnet skrives som almindelig tekst;
 kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+Fuldt navn og efternavn alene er begge tilladt; vælg efter sammenhængen og
+brug mere af navnet, når efternavnet kan være tvetydigt, fx »Møller«.
 Oplysninger om måltekstens registrerede udgave og kilde hører til på målteksten. Se `docs/originaltekster-til-oversaettelser.md`.
 
 ## Linjenummerering og layout-tags
