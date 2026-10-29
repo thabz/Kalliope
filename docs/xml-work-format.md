@@ -1392,20 +1392,59 @@ Eksempler på de forskellige markeringer (ikke et sammenhængende tekstuddrag):
 **Rollelister og fortaler** er paratekst. Registrér dem som `<text
 skip-index="true">` med deres sædvanlige `id`, så de bevares i værkets
 indholdsfortegnelse uden at optræde i titel- og førstelinjeindekset.
-Rollelisten »De Talende« har brødtekst i `<prose>`; dette tag udelukker
-ikke i sig selv teksten fra indeks. Formatér listen med ét rolleled pr.
-linje, `<br/>` mellem leddene og fremhævede navne efter kilden, fx:
+Nye og omarbejdede rollelister bruger TEI P5's elementer `castList`,
+`castItem`, `castGroup`, `role`, `roleDesc` og `set`. Bevar tekstens id,
+kilde, kvalitetsmærker og placering i værket. En selvstændig rolleliste får
+`<front>` efter tekstens metadatahoved; en `<body>` er kun nødvendig, hvis
+teksten også har almindeligt indhold. `castList` kan desuden stå direkte i
+`body`, fx mellem et argument og dialogen i en samlet dramatisk tekst.
 
 ```xml
-<prose>
-<b>Gorm hin Gamle,</b> Leirekonge.<br/>
-<b>Thyra Danebod,</b> hans Dronning.
-</prose>
+<text id="grundtvig2026091320" skip-index="true">
+<head>
+  <title>De Talende</title>
+</head>
+<front>
+<castList>
+<castItem><role><b>Gorm hin Gamle,</b></role> <roleDesc>Leirekonge.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Knud Daneast,</b></role></castItem>
+<castItem><role><b>Harald Blaatand,</b></role></castItem>
+<roleDesc>deres Sønner.</roleDesc>
+</castGroup>
+<castItem type="list"><role>Hirdmænd.</role></castItem>
+</castList>
+<set>
+<p>Handlingens tid og sted efter kilden.</p>
+</set>
+</front>
+</text>
 ```
 
-En fælles klamme kan gengives med `}` ved den fælles beskrivelse efter
-det sidste navn, som i `grundtvig2026091320` i `fdirs/grundtvig/1861.xml`.
-Arbejdsmarkører som `[shared brace: ...]` må aldrig stå i den færdige tekst.
+- `castList` har eventuelt et indledende `head` med den trykte overskrift.
+  Brug ikke både dette og teksthovedets `title` til samme synlige overskrift;
+  teksthovedet kan have `linktitle`, når overskriften står i listen.
+- `castItem` bevarer blandet indhold: kommaer, kolon og anden tegnsætning
+  mellem `role` og `roleDesc` skal skrives i XML. Visningen tilføjer intet.
+- En kollektiv rolle får `type="list"`. En post kan have kun `role`, kun
+  `roleDesc` eller almindelig tekst efter TEI. Fremhævelser som `b`, `i`,
+  `w`, `small` og `sc` står inde i navn eller beskrivelse.
+- `castGroup` kan indeholde andre grupper. `rend="braced"` forbinder
+  personerne med en fælles `roleDesc` med en højreklamme i variabel højde.
+  Uden `braced` vises grupperingen uden klamme. Brug aldrig løse `}` eller
+  arbejdsmarkører som `[shared brace: ...]` til denne funktion.
+- `rend="smallcaps"` på `castList` eller `castGroup` giver kapitæler.
+  `rend` er en mellemrumsadskilt liste af typografiske anvisninger.
+- `set` står i `front` og indeholder et eller flere `p` med handlingens
+  ramme. `rend="center"` bevarer en centreret rammebeskrivelse.
+- `front`, `castList`, `castGroup` og `set` står i kolonne 0. Hvert
+  `castItem` står på én XML-linje; lange beskrivelser må ombrydes uden at
+  skabe verslinjer. `pb` og noter bevares også i personlisten.
+
+Schemaet er `schemas/kalliopework.rng`; der findes ingen aktiv DTD.
+Syntaksen følger [TEI P5's personlister](https://tei-c.org/release/doc/tei-p5-doc/en/html/DR.html#DRcast).
+SVG-klammen dannes kun ved rendering og gemmes aldrig i XML eller ren tekst.
+
 En fortale med indlagte vers kan fortsat have både `<prose>` og `<poetry>`.
 
 ## Typiske valideringer og faldgruber

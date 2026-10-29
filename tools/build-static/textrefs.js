@@ -115,8 +115,10 @@ const build_textrefs = collected => {
         .forEach(text => {
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
+          const front = getChildByTagName(text, 'front');
           const notes = [
             ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(front, ['note', 'footnote']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
           notes.forEach(note => {

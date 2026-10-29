@@ -1723,21 +1723,27 @@ Blandt mine Fædres lyngbegroede Grave.
   <source pages="75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<small><w>Sigurd</w> Lejrekonge.<br/>
-<w>Alf</w><br/>
-<w>Alger</w><br/>
-<w>Sivald</w> } hans Sønner.<br/>
-<w>Signe,</w> hans Datter.<br/>
-<w>Habor</w><br/>
-<w>Helvin</w><br/>
-<w>Hogen</w> } Sønner af den norske Konge Hamund.<br/>
-<w>Alvilde</w> Skjoldmøe Alfs Elskede.<br/>
-<w>Hildiger</w> Saxisk Kongesøn.<br/>
-<w>Belvise</w> en Olding.</small>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><small><w>Sigurd</w></small></role> <roleDesc><small>Lejrekonge.</small></roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><small><w>Alf</w></small></role></castItem>
+<castItem><role><small><w>Alger</w></small></role></castItem>
+<castItem><role><small><w>Sivald</w></small></role></castItem>
+<roleDesc><small>hans Sønner.</small></roleDesc>
+</castGroup>
+<castItem><role><small><w>Signe,</w></small></role> <roleDesc><small>hans Datter.</small></roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><small><w>Habor</w></small></role></castItem>
+<castItem><role><small><w>Helvin</w></small></role></castItem>
+<castItem><role><small><w>Hogen</w></small></role></castItem>
+<roleDesc><small>Sønner af den norske Konge Hamund.</small></roleDesc>
+</castGroup>
+<castItem><role><small><w>Alvilde</w></small></role> <roleDesc><small>Skjoldmøe Alfs Elskede.</small></roleDesc></castItem>
+<castItem><role><small><w>Hildiger</w></small></role> <roleDesc><small>Saxisk Kongesøn.</small></roleDesc></castItem>
+<castItem><role><small><w>Belvise</w></small></role> <roleDesc><small>en Olding.</small></roleDesc></castItem>
+</castList>
+</front>
 </text>
 
 <text id="blicher2026090822">

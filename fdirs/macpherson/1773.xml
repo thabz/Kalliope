@@ -233,7 +233,7 @@ Sacred Texts | Legends/Sagas
 <text id="macpherson2026101804" lang="en">
 <head>
   <title>Comala, a Dramatic Poem</title>
-  <source pages="203-208"/>
+  <source pages="203-208" href="https://archive.org/details/poemsofossiantr00macp/page/n214/mode/1up"/>
 </head>
 <body>
 <prose>
@@ -243,22 +243,22 @@ Sacred Texts | Legends/Sagas
 
 This poem is valuable on account of the light it throws on the antiquity of Ossian's compositions. The Caracul mentioned here is the same with Caracalla, the son of Severus, who, in the year 211, commanded an expedition against the Caledonians. The variety of the measure shows that the poem was originally set to music, and perhaps presented before the chiefs upon solemn occasions. Tradition has handed down the story more complete than it is in the poem. &quot;Comala, the daughter of Sarno, king of Inistore, or Orkney Islands, fell in love with Fingal, the son of Comhal, at a feast, to which her father had invited him [Fingal, B. III.] upon his return from Lochlin, after the death of Agandecca. Her passion was so violent, that she followed him, disguised like a youth, who wanted to be employed in his wars. She was soon discovered by Hidallan, the son of Lamor, one of Fingal's heroes, whose love she had slighted some time before. Her romantic passion and beauty recommended her so much to the king, that he had resolved to make her his wife; when news was brought him of Caracul's expedition. He marched to stop the progress of the enemy, and Comala attended him. He left her on a hill, within sight of Caracul's army, when he himself went to battle, having previously promised, if he survived, to return that night.&quot; The sequel of the story may be gathered from the poem itself.
 
-<center><i>The Persons</i>.</center>
-
-FINGAL
-
-MELILCOMA
-
-<center>}Daughters of Morni.</center>
-
-HIDALLAN
-
-DERSAGRENA
-
-COMALA
-
-BARDS.
-
+</prose>
+<castList>
+<head>
+  <i>The Persons</i>.
+</head>
+<castItem><role>FINGAL.</role></castItem>
+<castItem><role>HIDALLAN.</role></castItem>
+<castItem><role>COMALA.</role></castItem>
+<castGroup rend="braced">
+<castItem><role>MELILCOMA,</role></castItem>
+<castItem><role>DERSAGRENA,</role></castItem>
+<roleDesc>Daughters of Morni.</roleDesc>
+</castGroup>
+<castItem type="list"><role>BARDS.</role></castItem>
+</castList>
+<prose>
 <i>Dersagrena</i>. The chase is over. No noise on Erdven but the torrent's roar! Daughter of Morni, come from Crona's banks. Lay down the bow and take the harp. Let the night come on with songs; let our joy be great on Ardven.
 
 <i>Melilcoma</i>. Night comes on apace, thou blue-eyed maid! gray night grows dim along the plain, I saw a

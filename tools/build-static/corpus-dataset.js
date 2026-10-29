@@ -1,3 +1,4 @@
+import { DOMParser } from '@xmldom/xmldom';
 import { sourceWorkKey } from './work-cache.js';
 import crypto from 'crypto';
 import fs from 'fs';
@@ -39,6 +40,15 @@ const compactObject = (record) => Object.fromEntries(
 );
 
 const normalizeLine = (line) => {
+  if (Array.isArray(line)) {
+    // The static text API uses [XML fragment, options] tuples. Preserve word
+    // boundaries between cast entries while keeping inline words together.
+    const xml = String(line[0] ?? '').replace(/<br\s*\/>/g, ' ').replace(
+      /<\/?(?:castItem|castGroup|castList|head|p)(?:\s[^>]*)?>/g, ' $& ',
+    );
+    return new DOMParser().parseFromString(`<content>${xml}</content>`, 'text/xml')
+      .documentElement.textContent;
+  }
   if (typeof line === 'string') {
     return line;
   }

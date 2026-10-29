@@ -1,3 +1,4 @@
+import { CastList, CastGroup } from './cast-list.js';
 import Link from 'next/link';
 import SourceIcon from './source-icon.js';
 import { useContext } from 'react';
@@ -178,6 +179,22 @@ const renderXmlString = (inputString) => {
 
   const handle_node = (node) => {
     switch (node.nodeName) {
+      case 'front':
+        return <div key={keySeq++} className="text-front">{handle_nodes(node.childNodes)}</div>;
+      case 'castList':
+        return <CastList key={keySeq++} node={node} renderNode={handle_node} />;
+      case 'castGroup':
+        return <CastGroup key={keySeq++} node={node} renderNode={handle_node} />;
+      case 'castItem':
+        return <div key={keySeq++} className="cast-item">{handle_nodes(node.childNodes)}</div>;
+      case 'role':
+        return <span key={keySeq++} className="cast-role">{handle_nodes(node.childNodes)}</span>;
+      case 'roleDesc':
+        return <span key={keySeq++} className="cast-role-desc">{handle_nodes(node.childNodes)}</span>;
+      case 'set':
+        return <div key={keySeq++} className={`cast-setting${node.getAttribute('rend')?.split(/\s+/).includes('center') === true ? ' cast-setting--center' : ''}`}>{handle_nodes(node.childNodes)}</div>;
+      case 'head':
+        return <div key={keySeq++} className="cast-group__head">{handle_nodes(node.childNodes)}</div>;
       case 'br':
         return <br key={keySeq++} />;
       case '#text':
@@ -209,7 +226,7 @@ const renderXmlString = (inputString) => {
           </span>
         );
       case 'p':
-        return <p>{handle_nodes(node.childNodes)}</p>;
+        return <p key={keySeq++}>{handle_nodes(node.childNodes)}</p>;
       case 'sup':
         return <sup key={keySeq++}>{handle_nodes(node.childNodes)}</sup>;
       case 'sub':
@@ -583,7 +600,7 @@ const TextContent = (props) => {
       className += ' short-poem-line';
     }
 
-    if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
+    if ((type === 'poetry' || type === 'epigraph') && !lineOptions.wrap && !lineOptions.hr) {
       lineInnerClass += ' inner-poem-line';
       className += ' poem-line';
       return (
