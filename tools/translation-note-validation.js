@@ -25,6 +25,9 @@ export const collectTranslationNoteIssues = (filename, document, authorForText) 
     }
     const translations = poemLinks.filter(link => link.getAttribute('type') === 'translation');
     if (translations.length === 0) continue;
+    if (links.some(link => link.tagName !== 'xref' || link.hasAttribute('poem') === false)) {
+      issues.push(`${location}kun <xref poem="..."/> må være klikbare i en forlægsnote; skriv digternavnet som almindelig tekst.`);
+    }
     let explanation = normalize(prose.textContent);
     for (const link of translations) {
       const author = authorForText(link.getAttribute('poem').split(',')[0]);
@@ -32,9 +35,6 @@ export const collectTranslationNoteIssues = (filename, document, authorForText) 
         issues.push(`${location}kan ikke finde forfatter til forlæg ${link.getAttribute('poem')}.`);
         continue;
       }
-      const linkedAuthor = links.some(item =>
-        item.getAttribute('poet') === author.id || item.getAttribute('person') === author.id,
-      );
       let namedAuthor = false;
       for (const name of author.names) {
         if (name.trim().length === 0) continue;
@@ -42,13 +42,9 @@ export const collectTranslationNoteIssues = (filename, document, authorForText) 
         if (pattern.test(normalize(prose.textContent))) namedAuthor = true;
         explanation = explanation.replace(pattern, ' ');
       }
-      if (author.anonymous !== true && linkedAuthor === false && namedAuthor === false) {
+      if (author.anonymous !== true && namedAuthor === false) {
         issues.push(`${location}forlægsnote mangler digternavn (${author.names[0]}).`);
       }
-    }
-    // Person links may supply their label during rendering, just like poem links.
-    for (const link of linksIn(prose).filter(link => link.hasAttribute('person') || link.hasAttribute('poet'))) {
-      explanation = explanation.replace(normalize(link.textContent), ' ');
     }
     if ((explanation.match(/\p{L}+/gu) ?? []).some(word => ['af', 'og', 's'].includes(word) === false) === false) {
       issues.push(`${location}forlægsnote mangler en forklaring af relationen.`);

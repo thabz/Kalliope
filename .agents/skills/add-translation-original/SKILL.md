@@ -57,6 +57,8 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    »Oversættelse af«, »Gendigtning af« og »Fri gendigtning af« er eksempler,
    ikke en udtømmende liste. Præciseringer og flere digtlinks er tilladt.
    Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
+   Skriv digternavnet som almindelig tekst, aldrig som person- eller digterlink.
+   Kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
    Brug aldrig et bart digtlink som note.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål

@@ -1332,7 +1332,8 @@ skal den ligesom `<a>` placeres i en note eller fodnote:
 En forlægsnote skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
 »Oversættelse af«, »Gendigtning af« eller »Fri gendigtning af«. Fri formulering,
 præciseringer og flere digtlinks er tilladt. Noter med digtlinks må ikke kun
-indeholde selve linket. Se `docs/originaltekster-til-oversaettelser.md`.
+indeholde selve linket. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. Se `docs/originaltekster-til-oversaettelser.md`.
 
 ## Linjenummerering og layout-tags
 

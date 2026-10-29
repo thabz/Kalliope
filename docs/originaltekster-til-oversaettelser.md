@@ -57,7 +57,8 @@ Forlægsnoten skal nævne originalforfatteren, når denne er kendt, og forklare 
 `<note>Oversættelse af Goethes <xref type="translation" poem="..."/>.</note>`.
 »Gendigtning af«, »Fri gendigtning af« og andre forklarende formuleringer er
 også tilladt, ligesom præciseringer og flere digtlinks i samme note. Digttitlen
-og citationstegnene leveres af linkets visning. En note må ikke kun bestå af
+og citationstegnene leveres af linkets visning. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. En note må ikke kun bestå af
 et digtlink; forfatterens navn alene er heller ikke en forklaring.
 
 Eksisterende relationer migreres ikke automatisk. Ret dem kun, når opgaven og

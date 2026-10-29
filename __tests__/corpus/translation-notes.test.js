@@ -24,11 +24,30 @@ describe('explanatory translation notes', () => {
     'Fri gendigtning af dele af Goethes', 'Efter Goethe',
     'De sidste ti vers bygger på Goethes',
     'Gendigtning af Johann Wolfgang von Goethes',
-    'Gendigtning af <a poet="goethe">Goethes</a>',
-    'Gendigtning af <xref person="goethe"/>',
     'Oversættelse\n af  Goethes',
-  ])('allows free wording and author markup: %s', prefix => {
+  ])('allows free wording and plain author names: %s', prefix => {
     expect(inspect(`<note>${prefix} <xref type="translation" poem="original"/>.</note>`)).toEqual([]);
+  });
+
+  it.each([
+    '<a poet="goethe">Goethes</a>',
+    '<a person="goethe">Goethes</a>',
+    '<xref person="goethe"/>',
+    '<xref poet="goethe"/>',
+    '<a href="https://example.org">Goethes</a>',
+    '<a href="/da/works/goethe">Goethes</a>',
+  ])('rejects clickable author names: %s', name => {
+    expect(inspect(`<note>Gendigtning af ${name} <xref type="translation" poem="original"/>.</note>`))
+      .toEqual(expect.arrayContaining([expect.stringContaining('kun <xref')]));
+  });
+
+  it.each([
+    '<xref keyword="romantikken"/>',
+    '<a poem="second">Digt</a>',
+    '<a href="https://example.org/scan.pdf">↬</a>',
+  ])('rejects other clickable references in translation notes: %s', link => {
+    expect(inspect(`<note>Efter Goethe <xref type="translation" poem="original"/>. Se ${link}.</note>`))
+      .toEqual([expect.stringContaining('kun <xref')]);
   });
 
   it('preserves printed quotations and explicit cross-reference labels', () => {
@@ -48,7 +67,7 @@ describe('explanatory translation notes', () => {
       .toEqual([expect.stringContaining('mangler digternavn')]);
   });
 
-  it.each(['Goethes', 'Af Goethe', '<a poet="goethe">Goethe</a>'])('requires an explanation beyond the name: %s', prefix => {
+  it.each(['Goethes', 'Af Goethe'])('requires an explanation beyond the name: %s', prefix => {
     expect(inspect(`<note>${prefix} <xref type="translation" poem="original"/>.</note>`))
       .toEqual([expect.stringContaining('forklaring af relationen')]);
   });
@@ -73,7 +92,7 @@ describe('explanatory translation notes', () => {
 
   it('does not mistake poem titles for surrounding prose or author names', () => {
     expect(inspect('<note>Oversættelse af <a type="translation" poem="original">Goethes digt</a>.</note>'))
-      .toEqual([expect.stringContaining('mangler digternavn')]);
+      .toEqual(expect.arrayContaining([expect.stringContaining('mangler digternavn')]));
   });
 
   it('does not enforce translation requirements on other notes or unknown originals', () => {
