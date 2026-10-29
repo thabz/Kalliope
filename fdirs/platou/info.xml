@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="platou" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Ludvig Stoud</firstname>
+    <lastname>Platou</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-03-28</date>
+    </born>
+    <dead>
+      <date>1833-11-30</date>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+  <!-- Livsdata: https://snl.no/Ludvig_Platou -->
+</person>
