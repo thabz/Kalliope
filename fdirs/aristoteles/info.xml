@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="aristoteles" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <lastname>Aristoteles</lastname>
+  </name>
+  <period>
+    <born>
+      <date>-0384</date>
+    </born>
+    <dead>
+      <date>-0322</date>
+    </dead>
+  </period>
+  <literary-periods>grc-arkaisk-og-klassisk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q868</wikidata>
+    <viaf>7524651</viaf>
+    <lex-dk>Aristoteles</lex-dk>
+  </identifiers>
+</person>
