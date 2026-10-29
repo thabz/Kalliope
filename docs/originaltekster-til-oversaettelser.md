@@ -67,6 +67,10 @@ registrerede udgave, kilde eller indførelse hører hjemme på målteksten selv,
 ikke i den henvisende note. Skriv fx ikke »Originalteksten er registreret efter
 udgaven fra 1847.« i oversættelsens forlægsnote. Oplysningerne skal kunne ændres
 på målteksten uden at efterlade forældede beskrivelser ved de indgående links.
+Undlad også generiske forbehold som »det benyttede eksemplar er ikke
+dokumenteret« og »oversætterens benyttede udgave er ikke identificeret« i
+forlægsnoten. Dokumentér udgavevalget og usikkerheden på originalteksten og i
+PR-beskrivelsen.
 Dokumenterede oplysninger om oversætterens historiske brug af et forlæg og
 tekstlige forskelle er fortsat relevante for relationen.
 

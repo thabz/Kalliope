@@ -62,7 +62,10 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    Forlægsnoten beskriver relationen. Måltekstens registrerede udgave, kilde og
    indførelse beskrives på målteksten selv, ikke ved det indgående link.
    Skriv fx ikke »Originalteksten er registreret efter udgaven fra 1847.« i
-   oversættelsens note. Historiske oplysninger om oversætterens benyttede
+   oversættelsens note. Undlad også generiske forbehold som »det benyttede
+   eksemplar er ikke dokumenteret« og »oversætterens benyttede udgave er ikke
+   identificeret«; dokumentér udgavevalget på originalteksten og i PR-beskrivelsen.
+   Historiske oplysninger om oversætterens benyttede
    forlæg og tekstlige forskelle kan fortsat beskrives i forlægsnoten.
    Brug aldrig et bart digtlink som note.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
