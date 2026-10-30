@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { metricalDiagramsAsNonVerse } from './metrical-diagrams.js';
 
 const minimumRunLength = 3;
 const maximumPatternLength = 8;
@@ -61,7 +62,7 @@ const parseBody = body => {
     throw new TypeError('Inputfeltet "body" skal være en streng.');
   }
 
-  const lines = body.replace(/\r\n?/gu, '\n').split('\n');
+  const lines = metricalDiagramsAsNonVerse(body).replace(/\r\n?/gu, '\n').split('\n');
   const verseLines = [];
   const sections = [];
   let pendingHeading = null;
