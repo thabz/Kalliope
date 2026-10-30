@@ -663,12 +663,14 @@ Koldt spotter Elskers Navn.
   <suptitle>Til</suptitle>
   <title>min Fødeegn</title>
   <subtitle>(Oversat.)</subtitle>
+  <toctitle>Min Fødeegn</toctitle>
+  <indextitle>Min Fødeegn</indextitle>
+  <linktitle>Min Fødeegn</linktitle>
   <firstline>Du, som min Barndom gav din Omsorg og dit Stempel</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="tegner">Oversættelse af Esaias Tegnérs »Till min hembygd« (1804).</note>
+    <note editorial="true">Oversættelse af Esaias Tegnérs <xref type="translation" poem="tegner2026103001"/>.</note>
   </notes>
   <source pages="45-49" facsimile-pages="49-53"/>
-  <keywords>tegner</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -867,7 +869,13 @@ Skal Haabet dog opløfte mig. —
   <suptitle>Til</suptitle>
   <title>en fornem Herre</title>
   <subtitle>(Efter det svenske.)</subtitle>
+  <toctitle>En fornem Herre</toctitle>
+  <indextitle>En fornem Herre</indextitle>
+  <linktitle>En fornem Herre</linktitle>
   <firstline>Ag gyldne Tigger! og vær stor!</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Johan Henric Kellgrens <xref type="translation" poem="kellgren2026103001"/>.</note>
+  </notes>
   <source pages="53" facsimile-pages="57"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1336,7 +1344,7 @@ Indflettet med en lille blaa Kierminde.
 </body>
 </text>
 
-<section>
+<section level="3">
 <head>
   <title>Den bortløbne Amor</title>
 </head>
@@ -1387,10 +1395,9 @@ Flere, hvis ham selv du bringer her.
   <subtitle>(Efter Tasso.)</subtitle>
   <firstline>Troer du ikke, Moder, at din Søn</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="tasso">Fri gendigtning af Amors tale i prologen til Torquato Tassos <i>Aminta</i>.</note>
+    <note editorial="true">Fri gendigtning af et afsnit af Torquato Tassos <xref type="translation" poem="tasso2026103001,35-40"/> til <i>Aminta</i>.</note>
   </notes>
   <source pages="177" facsimile-pages="181"/>
-  <keywords>tasso</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1436,10 +1443,9 @@ I dit Øie har han skiult sig.
   <subtitle>(Efter Marino.)</subtitle>
   <firstline>Mere Søgen ei behøves nu</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="marino">Fri gendigtning af Giambattista Marinos »Scherzo tirato dall’Amor fuggitivo di Mosco«, <i>La Lira</i>, anden del, madrigal V. I Charis gemmer Amor sig i talerens hjerte.</note>
+    <note editorial="true">Fri gendigtning af Giambattista Marinos <xref type="translation" poem="marino2026103001"/>. Hos Marino skjuler Amor sig i kvindens øjne; i Charis i talerens hjerte.</note>
   </notes>
   <source pages="178" facsimile-pages="182"/>
-  <keywords>marino</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
