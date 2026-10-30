@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1765" author="antologiergb" status="incomplete" type="anthology">
+<kalliopework id="1767" author="antologiergb" status="incomplete" type="anthology">
 <workhead>
   <title>Reliques of Ancient English Poetry</title>
-  <year>1765</year>
+  <year>1767</year>
   <identifiers>
     <wikidata>Q2142806</wikidata>
     <openlibrary-work>OL4840678W</openlibrary-work>
   </identifiers>
-  <notes>
-    <note editorial="true">Antologien udkom første gang i 1765. Kalliope bringer foreløbig fem tekster. »Child Waters«, »Cupid and Campaspe« og »Love will find out the Way« følger 2. udgave, bind 3 (1767); kildeudgaven til »The Child of Elle« og »Edom O’ Gordon« er ikke identificeret.</note>
-  </notes>
-  <source id="uidentificeret">
-    <title>Reliques of Ancient English Poetry</title>
-    <editor id="percy" type="editor">Thomas Percy</editor>
-  </source>
-  <source id="1767-bd3" href="https://en.wikisource.org/wiki/Index:Percy%27s_Reliques_of_Ancient_English_Poetry,_Volume_3,_1767.djvu">
+  <source id="1767" href="https://en.wikisource.org/wiki/Reliques_of_Ancient_English_Poetry">
     <title>Reliques of Ancient English Poetry</title>
     <editor id="percy" type="editor">Thomas Percy</editor>
     <edition>2. udg.</edition>
-    <volume>3</volume>
     <place>London</place>
     <publisher>J. Dodsley</publisher>
     <year>1767</year>
@@ -26,11 +18,24 @@
 </workhead>
 <workbody>
 
+<section>
+<head>
+  <title>Bind I</title>
+</head>
+<content>
 <text id="percy2019090802" author="percy">
 <head>
   <title><num>XI.</num>The Child of Elle</title>
   <firstline>On yonder hill a castle standes</firstline>
-  <source in="uidentificeret"/>
+  <source href="https://archive.org/details/reliquesancient29percgoog" pages="107-115">
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+    <edition>2. udg.</edition>
+    <volume>1</volume>
+    <place>London</place>
+    <publisher>J. Dodsley</publisher>
+    <year>1767</year>
+  </source>
 </head>
 <body>
 <poetry>
@@ -292,7 +297,10 @@ My lovelye Emmeline."
   <title><num>XII.</num>Edom O' Gordon</title>
   <subtitle>A Scottish Ballad</subtitle>
   <firstline>It fell about the Martinmas</firstline>
-  <source in="uidentificeret"/>
+  <source>
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+  </source>
 </head>
 <body>
 <poetry>
@@ -479,11 +487,19 @@ He's wroken his dear ladìe.
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Bind III</title>
+</head>
+<content>
 <text author="anonymuk" id="anonymuk2026102401" skip-index="true">
 <head>
-  <title>Child Waters</title>
+  <title><num>IX.</num>Child Waters</title>
   <firstline>Childe Waters in his stable stoode</firstline>
-  <source in="1767-bd3" pages="54-61"/>
+  <source in="1767" pages="54-61"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -710,7 +726,7 @@ And the bridall and the churchinge bothe
 <head>
   <title><num>XVI.</num>Cupid and Campaspe</title>
   <firstline>Cupid and my Campaspe playd</firstline>
-  <source in="1767-bd3" pages="82"/>
+  <source in="1767" pages="82"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -737,7 +753,7 @@ She won, and Cupid blind did rise.
 <head>
   <title><num>III.</num>Love will find out the Way</title>
   <firstline>Over the mountains</firstline>
-  <source in="1767-bd3" pages="238-239"/>
+  <source in="1767" pages="238-239"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -789,6 +805,9 @@ But you’ll ne’er stop a lover:
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>
