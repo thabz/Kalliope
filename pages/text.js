@@ -64,7 +64,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', showPoet = false }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -75,16 +75,20 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
       );
     }
 
+    const poetPrefix = showPoet === true && ref.poet != null && ref.poet.trim().length > 0
+      ? `${ref.poet}: `
+      : null;
     if (ref.citation != null) {
       return (
         <div className="reference" key={ref.id}>
+          {poetPrefix}
           <TextInline contentHtml={[[removeSourcePoetLinks(ref.citation, currentPoetId), { html: true }]]} />
         </div>
       );
     }
 
     const metadata = [];
-    if (ref.poetId !== currentPoetId) {
+    if (poetPrefix == null && ref.poetId !== currentPoetId) {
       metadata.push(ref.poet);
     }
     if (ref.work != null) {
@@ -93,6 +97,7 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
 
     return (
       <div className="reference" key={ref.id}>
+        {poetPrefix}
         <Link
           href={Links.textURL(lang, ref.id)}
           className="reference-title">
@@ -515,6 +520,7 @@ const TextPage = (props) => {
             contentLang={text.content_lang}
             currentPoetId={poet.id}
             spacing="5px"
+            showPoet={true}
           />
         </MetadataGroup>
       ) : null}
