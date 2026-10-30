@@ -6,6 +6,7 @@ import {
   visibleLines,
 } from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
 import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { analyzeIndentation } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-indentation.js';
 import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
 import {
   updateFinding,
@@ -254,6 +255,15 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
 });
 
 describe('whole-work structure wrapper', () => {
+  it('uses the same verse and indentation counts when a poem starts with a metrical diagram', () => {
+    const body = '<metrik>_ u _\n_ _</metrik>\nFørste vers\n    Andet vers';
+    const xml = `<kalliopework><workbody><text id="diagram"><head><title>Digt</title></head><body><poetry>${body}</poetry></body></text></workbody></kalliopework>`;
+    const [poem] = analyzeWholeWork(xml).poems;
+    expect(poem.stanza.verse_line_count).toBe(2);
+    expect(poem.stanza.observed_stanza_lengths).toEqual([2]);
+    expect(poem.indentation.indentation_profile).toEqual([0, 4]);
+    expect(analyzeIndentation({ body }).indentation_profile).toEqual([0, 4]);
+  });
   it('counts note poetry separately without adding its paragraphs or page breaks to the main poem', () => {
     const xml = workXml.replace('Første linje', `Første<footnote>Notens prosa
 

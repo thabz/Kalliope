@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { metricalDiagramsAsNonVerse } from './metrical-diagrams.js';
 
 const knownForms = [
   {
@@ -58,7 +59,7 @@ const parseBody = body => {
     throw new TypeError('Inputfeltet "body" skal være en streng.');
   }
 
-  const lines = body.replace(/\r\n?/g, '\n').split('\n');
+  const lines = metricalDiagramsAsNonVerse(body).replace(/\r\n?/g, '\n').split('\n');
   const stanzaLengths = [];
   const stanzas = [];
   let currentLines = [];
