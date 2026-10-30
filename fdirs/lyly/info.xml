@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lyly" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Lyly</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1554 ca.</date>
+    </born>
+    <dead>
+      <date>1606</date>
+    </dead>
+  </period>
+  <literary-periods>gb-renaessance</literary-periods>
+  <!-- Livsdata: https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/580984217 -->
+</person>
