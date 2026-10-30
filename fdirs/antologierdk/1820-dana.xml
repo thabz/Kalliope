@@ -1724,7 +1724,8 @@ Leed ham og os, o Herre!
 </body>
 </text>
 
-<text id="haste2026103001" author="haste">
+<!-- Trykkets »med med« på side 57 er kontrolleret mod facsimilen. -->
+<text id="haste2026103001" author="haste" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Til min Hustru</title>
   <subtitle>Den 6 Decbr. 1813.</subtitle>
