@@ -83,6 +83,9 @@ digtere.
 
 ## Git og GitHub
 
+- Når en kodeændring medfører ændringer i UI, skal PR'en altid ledsages af
+  et skærmskud af den ændrede visning. Indsæt skærmskuddet i PR-beskrivelsen,
+  så ændringen kan vurderes direkte i PR'en.
 - Kør `make test`, før der oprettes en PR. Kommandoen skal afslutte med
   exitkode 0; der kræves ikke andre testkommandoer, medmindre en relevant
   specialdokumentation udtrykkeligt angiver dem.
