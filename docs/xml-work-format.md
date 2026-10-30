@@ -322,6 +322,11 @@ referencefelter bevares. Det samme `citation`-felt bruges i `refs` og
 `translations`. Ændringer i en udgaves kildefiler genopbygger også
 henvisningerne hos de øvrige varianter og de tekster, som udgaven henviser til.
 
+Under »Gendigtninger« viser tekstsiden desuden gendigtningens digternavn
+efterfulgt af kolon foran den linkede titel, fx `Lyder Sagen: »Til en ung
+Pige«, i: …`. Navnet hentes fra tekstforekomstens effektive forfatter, også
+når kilden er en antologi med en anden redaktør.
+
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
 kun `<wikidata>` tilladt:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1803-charis" author="antologierdk" status="incomplete" type="anthology" parent="1797-1807-charis">
+<kalliopework id="1803-charis" author="antologierdk" status="complete" type="anthology" parent="1797-1807-charis">
 <workhead>
   <title>Charis</title>
   <year>1803</year>
@@ -18,6 +18,10 @@
   </source>
   <pagebreaks/>
   <errata status="none"/>
+  <proofreadings>
+    <!-- Modelbetegnelsen er dokumenteret som GPT-6; præcis variant er ikke oplyst. Tidspunktet er det afsluttende reviewcheckpoint. -->
+    <proofreading model="gpt-6" datetime="2026-10-29T11:51:28.222Z"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="rein20261029101" author="rein">
@@ -588,7 +592,7 @@ den hvide Rose — sige nok!
   </subtitle>
   <firstline>Hvi flagrer du i denne Rosenhæk</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="gessner"/>
+    <note editorial="true">Gendigtning af Salomon Gessners <xref type="translation" poem="gessner2026103001"/>.</note>
   </notes>
   <source pages="46-49" facsimile-pages="50-53"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1018,7 +1022,7 @@ fordi jeg eengang har drømt om Dagen.
   <subtitle>(Efter Gotter.)</subtitle>
   <firstline>Tier Klager! standser Taare</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="gotter"/>
+    <note editorial="true">Gendigtning af Friedrich Wilhelm Gotters <xref type="translation" poem="gotter2026103001"/>.</note>
   </notes>
   <source pages="67-68" facsimile-pages="71-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1190,9 +1194,6 @@ I Morgen staaer Tornen igien!
   <title>Rosen</title>
   <subtitle>(Efter Steffens.)</subtitle>
   <firstline>Ved gamle Borg</firstline>
-  <notes>
-    <note editorial="true" unknown-original-by="steffens"/>
-  </notes>
   <source pages="74-76" facsimile-pages="78-80"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1493,6 +1494,7 @@ Thi han hører Dødens Stemme kalde:
   <subtitle>Et Brev til Digteren Pram.</subtitle>
   <nofirstline/>
   <source pages="87-126" facsimile-pages="91-130"/>
+  <keywords>pram</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
