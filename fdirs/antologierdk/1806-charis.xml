@@ -185,7 +185,8 @@ Slip mig aldrig af din Arm!
 </body>
 </text>
 
-<text id="zetlitz2026103001" author="zetlitz">
+<!-- Facsimile s. 24: Ønske Ønske er trykt gentagelse. -->
+<text ignore-tests="repeated-adjacent-word" id="zetlitz2026103001" author="zetlitz">
 <head>
   <title>Ønsker</title>
   <firstline>Mens Blod og Safter let i unge Aarer flyde</firstline>
@@ -1478,7 +1479,8 @@ Og Livets sidste Stund saa blid skal være,
 </body>
 </text>
 
-<text id="rahbek2026103002" author="rahbek">
+<!-- Facsimile s. 108 og 115: inden inden og at at er trykt; tyske indskud giver desuden et falsk eller eller-signal. -->
+<text ignore-tests="repeated-adjacent-word" id="rahbek2026103002" author="rahbek">
 <head>
   <title>Minnehold</title>
   <subtitle>
@@ -1661,7 +1663,8 @@ Hviske sagte, Han er død!
 </body>
 </text>
 
-<text id="mynster2026103002" author="mynster">
+<!-- Facsimile s. 142: Timen Timen er trykt gentagelse. -->
+<text ignore-tests="repeated-adjacent-word" id="mynster2026103002" author="mynster">
 <head>
   <title>Nattetanker</title>
   <subtitle>(Aarets sidste Nat.)</subtitle>
