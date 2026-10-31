@@ -77,3 +77,10 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
 
 Følg repositoryets godkendelsesregler for commit, push og PR. Skillen giver
 ikke selv yderligere tilladelse til eksterne ændringer.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Efter tekstimport: kør `npm run person-editorial` og afstem dokumenterede
+ønskematch med `npm run person-editorial -- --reconcile`.

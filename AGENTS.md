@@ -11,6 +11,9 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 ## Repository-skills
 
+- Brug `$add-kalliope-person` ved personoprettelse og målrettet berigelse.
+- Brug `$add-person-portrait` ved portrætsøgning, portrætmetadata og square-beskæring.
+
 - Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
   en pull request.
 - Brug også `$pdf-to-kalliope`, når kilden er en komplet scannet PDF, der skal
