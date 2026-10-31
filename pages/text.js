@@ -5,7 +5,7 @@ import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
-import { appendSourcePages, removeSourcePoetLinks } from '../common/source-reference.js';
+import { appendSourcePages, removeBibliographyLinks, removeSourcePoetLinks } from '../common/source-reference.js';
 import _ from '../common/translations.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
@@ -387,7 +387,7 @@ const TextPage = (props) => {
   if (text.source != null) {
     const source = text.source;
     if (source.source != null && source.source.length > 0) {
-      sourceText = appendSourcePages(removeSourcePoetLinks(source.source, poet.id), source.pages);
+      sourceText = appendSourcePages(removeBibliographyLinks(source.source), source.pages);
       renderedSource = (
         <Source
           contentHtml={[[sourceText, { html: true }]]}

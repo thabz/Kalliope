@@ -248,9 +248,11 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`
   og `year` er valgfrie og kan forekomme højst én gang. Alle felter indeholder
   ikke-tom ren tekst. År kan bevare usikkerhed, fx `[1804]`.
-- `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
-  gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
-  vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- `author`, `editor` og `translator` kan gentages. `id` er valgfrit og bevares
+  i metadata. Kildevisningen gengiver personnavne og publikationstitler uden
+  links; digitaliseringen linkes med kildeikonet fra `source/@href`. Det gælder
+  også ældre fritekstkilder. Antologikilder har ingen `author`; samlere angives
+  som `editor`.
 - `author` kan have `realname="…"` ved udgivelse under pseudonym eller en anden
   navneform. Elementets tekst er udgivelsesnavnet, og `realname` er det navn,
   der vises i parentes: `<author id="larsent" realname="Thøger Larsen">Thøger
