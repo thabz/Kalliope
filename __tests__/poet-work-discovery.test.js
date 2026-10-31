@@ -121,4 +121,18 @@ describe('poet metadata after automatic work discovery', () => {
     });
   });
 
+  it('keeps gallery portraits without generating a square portrait', async () => {
+    fileExists.mockImplementation(filename => filename === 'fdirs/poet/portraits.xml');
+    loadText.mockImplementation(filename => filename.endsWith('info.xml')
+      ? info
+      : '<pictures><picture src="family.jpg">Familieportræt</picture></pictures>');
+    const poets = await build_poets_first_pass({ workids: new Map([['poet', []]]), changedWorkPoetIds: new Set(['poet']) });
+    expect(poets.get('poet')).toMatchObject({
+      has_portraits: true,
+      has_square_portrait: false,
+      square_portrait: null,
+    });
+    expect(resizeImage).not.toHaveBeenCalled();
+  });
+
 });

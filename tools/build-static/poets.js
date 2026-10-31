@@ -175,9 +175,6 @@ const build_poets_first_pass = async collected => {
       continue;
     }
     found_changes = true;
-    if (hasPortraits === true && squarePortrait == null) {
-      throw `${id} har portræt men ikke square-portrait`;
-    }
     const doc = loadXMLDoc(infoFilename);
     const p = getChildByTagName(doc, 'person');
     const country = safeGetAttr(p, 'country');
