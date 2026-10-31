@@ -214,7 +214,7 @@ describe('text page breadcrumbs', () => {
     expect(html).not.toContain('/static/facsimiles/');
   });
 
-  it.each(['poet', 'person'])('omits the current author link in sources and facsimile captions (%s)', async attribute => {
+  it.each(['poet', 'person'])('omits bibliographic links in sources and facsimile captions (%s)', async attribute => {
     Client.text.mockResolvedValue({ ...textData, text: {
       ...textData.text,
       source: {
@@ -232,7 +232,8 @@ describe('text page breadcrumbs', () => {
     const sidebar = html.match(/<aside\b[^>]*>(.*?)<\/aside>/)[1];
     expect(sidebar).not.toContain('href="/da/works/oehlenschlaeger"');
     expect(sidebar.match(/<b>Adam Oehlenschläger<\/b>: <i>Digte<\/i>/g)).toHaveLength(2);
-    expect(sidebar.match(/href="\/da\/works\/liebenberg"/g)).toHaveLength(2);
+    expect(sidebar).not.toContain('href="/da/works/liebenberg"');
+    expect(sidebar.match(/udg\. af F\. L\. Liebenberg/g)).toHaveLength(2);
     expect(sidebar).toContain('href="https://www.kb.dk/source"');
     expect(sidebar).toContain('s. 10–12.');
     expect(sidebar).toContain('/static/facsimiles/oehlenschlaeger/scan/t/000-w800.jpg');
