@@ -88,6 +88,11 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   anvendte digitalisering eller det anvendte facsimile;
 - kontrollér alle interne referencer og id'er, herunder varianter, personer,
   kilder og billeder;
+- tilføj relevante personnøgleord i tekstens `<keywords>`, når teksten har en
+  dokumenterbar relation til andre digtere eller personer, som allerede findes
+  i Kalliope. Slå deres eksisterende person-id op. Gentag ikke personer, der
+  allerede er linket i tekstens noter, og opret ikke nye personer som led i
+  nøgleordsregistreringen. Følg `docs/keyword-system.md`;
 - kør den værkafgrænsede variantkontrol nedenfor og gennemgå kandidaterne;
 - formatér og validér med repositoryets aktuelle værktøjer;
 - kør hele testpakken før PR-oprettelse, som krævet af `AGENTS.md`;
