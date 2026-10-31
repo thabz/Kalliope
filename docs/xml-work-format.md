@@ -1448,3 +1448,14 @@ Buildet tjekker blandt andet:
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
 - `content/keywords/rom.xml`: billeder via `artwork`.
 - `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+
+## Bibliografiske blankværker
+
+Et dokumenteret hovedværk kan registreres med `status="incomplete"`, normalt
+`workhead` og tomt `<workbody/>`. Opret ingen tomme `<text>`-poster.
+Sådanne værker kan modtage værklinks, men tæller ikke som indsat digttekst.
+Ved personoprettelse undersøges både gældende videnskabelig standardudgave og
+forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
+Ved PR-forberedelsen efter tekstimport køres `npm run person-editorial` samlet
+mod et opdateret JSONL-korpus, så mulige opfyldelser af tekstønsker opdages.
+Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.

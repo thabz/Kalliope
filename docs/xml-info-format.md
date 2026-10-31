@@ -359,3 +359,10 @@ Bemærk:
 - `fdirs/abildgaard/info.xml`: kunstner (`type="artist"`).
 - `fdirs/folkeviser/info.xml`: samlings-/collection-lignende data.
 - `fdirs/christian7/info.xml`: person med kroningsdata.
+
+## Dokumenteret forgæves biografisøgning
+
+Alle nye egentlige personer kræver en synlig, ikke-tom biografi eller en
+`biography-status` efter `docs/person-editorial.md`. Samleposter undtages.
+Markøren er redaktionelle metadata; den opretter ikke en biografiside og
+ændrer ikke `has_biography`. Opret aldrig en tom `bio.xml` som negativt fund.

@@ -39,7 +39,8 @@
     "check-text-quality": "node tools/check-text-quality.js",
     "sync-literary-registers": "node tools/sync-literary-registers.js",
     "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
-    "collect-dbl": "node tools/collect-dbl.js"
+    "collect-dbl": "node tools/collect-dbl.js",
+    "person-editorial": "node tools/person-editorial.js"
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.9.12",
