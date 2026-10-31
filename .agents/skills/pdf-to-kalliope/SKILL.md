@@ -431,6 +431,14 @@ The published attestation contains only `model` and an ISO 8601 `datetime`
 with timezone. Do not add a hash, sidecar reference or automatic invalidation
 metadata to it. Preserve older attestations when a later model adds another.
 
+Resolve the reviewer's exact model using **Modeloplysninger og
+korrekturattester** in the repository's `AGENTS.md` before declaring the
+model unavailable. Relevant `turn_context` records in that reviewer's local
+session log can supply the model and reasoning effort; current configuration
+defaults alone do not establish a historical reviewer's identity. Record this
+provenance in the scratch review report, keeping reasoning effort separate
+from the model name. A producer's identity is not automatically the reviewer's.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.
