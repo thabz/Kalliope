@@ -194,9 +194,6 @@ const build_poets_first_pass = collected => {
       }
     }
     const has_square_portrait = square_portrait != null;
-    if (has_portraits && !has_square_portrait) {
-      throw `${id} har portræt men ikke square-portrait`;
-    }
 
     const firstname = safeGetText(nameE, 'firstname');
     const lastname = safeGetText(nameE, 'lastname');

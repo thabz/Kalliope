@@ -5,12 +5,12 @@ jest.mock('../tools/libs/caching.js', () => ({
   force_reload: false,
 }));
 jest.mock('../tools/libs/helpers.js', () => ({
-  fileExists: () => false,
+  fileExists: jest.fn(() => false),
   loadText: jest.fn(),
   fileModifiedTime: () => null,
   safeMkdir: () => {},
   writeJSON: () => {},
-  resizeImage: () => {},
+  resizeImage: jest.fn(),
 }));
 jest.mock('../tools/build-static/literary-periods.js', () => ({
   catalogFilename: 'catalog.json',
@@ -22,7 +22,7 @@ jest.mock('fs', () => ({
 }));
 
 import { isFileModified, loadCachedJSON, writeCachedJSON } from '../tools/libs/caching.js';
-import { loadText } from '../tools/libs/helpers.js';
+import { fileExists, loadText, resizeImage } from '../tools/libs/helpers.js';
 import { build_poets_first_pass } from '../tools/build-static/poets.js';
 
 describe('poet metadata after automatic work discovery', () => {
@@ -30,6 +30,8 @@ describe('poet metadata after automatic work discovery', () => {
   beforeEach(() => {
     isFileModified.mockReset().mockReturnValue(false);
     writeCachedJSON.mockClear();
+    fileExists.mockReset().mockReturnValue(false);
+    resizeImage.mockClear();
     loadCachedJSON.mockReturnValue([['poet', { id: 'poet', has_poems: false, has_works: false }]]);
     loadText.mockImplementation(filename => filename.endsWith('info.xml') ? info : '<kalliopework><poetry>Vers</poetry></kalliopework>');
   });
@@ -60,4 +62,19 @@ describe('poet metadata after automatic work discovery', () => {
     expect(poets.get('poet').has_biography).toBe(true);
     expect(writeCachedJSON).toHaveBeenCalled();
   });
+
+  it('keeps gallery portraits without generating a square portrait', () => {
+    fileExists.mockImplementation(filename => filename === 'fdirs/poet/portraits.xml');
+    loadText.mockImplementation(filename => filename.endsWith('info.xml')
+      ? info
+      : '<pictures><picture src="family.jpg">Familieportræt</picture></pictures>');
+    const poets = build_poets_first_pass({ workids: new Map([['poet', []]]), changedWorkPoetIds: new Set(['poet']) });
+    expect(poets.get('poet')).toMatchObject({
+      has_portraits: true,
+      has_square_portrait: false,
+      square_portrait: null,
+    });
+    expect(resizeImage).not.toHaveBeenCalled();
+  });
+
 });

@@ -79,7 +79,8 @@ const build_person_or_keyword_refs = (collected) => {
     : new Map(
         loadCachedJSON('collected.person_or_keyword_refs_by_file') || []
       );
-  const forced_reload = refsByFile.size === 0;
+  const collectorChanged = isFileModified('tools/build-static/mentions.js');
+  const forced_reload = refsByFile.size === 0 || collectorChanged === true;
 
   let found_changes = false;
   const regexps = [
@@ -97,10 +98,6 @@ const build_person_or_keyword_refs = (collected) => {
     { regexp: /xref bible="(?<poem>[^",]*)/g, type: 'text' },
     { regexp: /a ()person="([^"]*)"/g, type: 'person' },
     { regexp: /a ()poet="([^"]*)"/g, type: 'person' },
-    {
-      regexp: /note ()unknown-original-by="([^",]*)/g,
-      type: 'unknown-original',
-    },
     { regexp: /picture[^>]*()artist="([^"]*)"/g, type: 'person' },
     {
       regexp: /picture[^>]*\s(?:artwork|ref)="([^"]*)"/g,
@@ -144,12 +141,15 @@ const build_person_or_keyword_refs = (collected) => {
           const fromPoetId = fromText == null ? poetId : fromText.poetId;
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
-          const linkedPoetIds = new Set();
           const notes = [
             ...getElementsByTagNames(head, ['note', 'picture']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
           notes.forEach((note) => {
+            const originalPoetId = safeGetAttr(note, 'unknown-original-by');
+            if (originalPoetId != null) {
+              register(originalPoetId, fromId, 'translation', null);
+            }
             regexps.forEach((rule) => {
               let match;
               while (
@@ -163,7 +163,6 @@ const build_person_or_keyword_refs = (collected) => {
                     const toPoetId = toText.poetId;
                     if (toPoetId !== fromPoetId) {
                       // Skip self-refs
-                      linkedPoetIds.add(toPoetId);
                       register(toPoetId, fromId, refType, toPoemId);
                     }
                   } else {
@@ -174,9 +173,6 @@ const build_person_or_keyword_refs = (collected) => {
                 } else if (rule.type === 'person') {
                   const toPoetId = match[2];
                   register(toPoetId, fromId, 'mention');
-                } else if (rule.type === 'unknown-original') {
-                  const toPoetId = match[2];
-                  register(toPoetId, fromId, 'translation', null);
                 } else if (rule.type === 'pictureref') {
                   const pictureRef = match[1];
                   if (!pictureRef.match('/')) {
@@ -202,11 +198,6 @@ const build_person_or_keyword_refs = (collected) => {
               const keywordId = keyword.trim();
               if (keywordId.length === 0) {
                 return;
-              }
-              if (linkedPoetIds.has(keywordId)) {
-                throw new Error(
-                  `${filename} ${fromId}: Overflødig keyword-reference ${keywordId}`
-                );
               }
               register(keywordId, fromId, 'mention');
             });

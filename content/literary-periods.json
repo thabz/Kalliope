@@ -21,6 +21,30 @@
       ]
     },
     {
+      "id": "grc-hellenistisk-og-senantik-litteratur",
+      "tradition": "grc",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Græsk litteratur fra hellenismen til senantikken",
+        "en": "Greek literature from the Hellenistic period to Late Antiquity",
+        "fr": "Littérature grecque de l’époque hellénistique à l’Antiquité tardive",
+        "de": "Griechische Literatur vom Hellenismus bis zur Spätantike"
+      },
+      "sortYear": -323,
+      "sources": [
+        {
+          "title": "Kathryn Gutzwiller: A Guide to Hellenistic Literature (2007)",
+          "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9780470690185"
+        },
+        {
+          "title": "Perseus Catalog: Rufinus (Epigrammatist)",
+          "url": "https://catalog.perseus.org/catalog/urn%3Acite%3Aperseus%3Aauthor.1226"
+        }
+      ]
+    },
+    {
       "id": "la-romersk-litteratur",
       "tradition": "la",
       "countries": [
@@ -682,6 +706,30 @@
         {
           "title": "Swedish literature",
           "url": "https://www.britannica.com/art/Swedish-literature"
+        }
+      ]
+    },
+    {
+      "id": "sv-fi-oplysningstid",
+      "tradition": "sv-fi",
+      "countries": [
+        "un"
+      ],
+      "title": {
+        "da": "Finlandssvensk oplysningstid",
+        "en": "Finland-Swedish Enlightenment",
+        "fr": "Lumières finlandaises de langue suédoise",
+        "de": "Finnlandschwedische Aufklärung"
+      },
+      "sortYear": 1720,
+      "sources": [
+        {
+          "title": "Vesa Oittinen: Philosophy in Finland 1200–1850",
+          "url": "https://filosofia.fi/fi/arkisto/philosophy-finland-1200-1850"
+        },
+        {
+          "title": "Rhetoric and Scientia Civilis at the Royal Academy of Turku, 1777–1804",
+          "url": "https://researchportal.helsinki.fi/sv/publications/rhetoric-and-scientia-civilis-at-the-royal-academy-of-turku-17771/"
         }
       ]
     },

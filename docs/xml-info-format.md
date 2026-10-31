@@ -329,7 +329,7 @@ Buildet udleder en række booleans fra `info.xml` og nabofiler:
 - `has_biography`: findes `bio.xml`, lokal `events.xml`, eller brugbar fødsels-/dødsperiode.
 - `has_mentions`: udledes senere fra referencer og bibliografier.
 
-Hvis en person har `portraits.xml`, skal der være mindst et `square-src`, ellers fejler buildet.
+Portrætter kan registreres uden `square-src`, når der ikke ønskes et repræsentativt sideikon eller social portrait.
 
 ## Valideringer og faldgruber
 
@@ -343,7 +343,7 @@ Buildet tjekker blandt andet:
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
 - lokale litteraturperioder skal passe til personens `country`.
-- Hvis `portraits.xml` findes, skal der være et square-portræt.
+- `square-src` er valgfri; uden den genereres intet square-portræt.
 - Alle XML-filer i digtermapperne skal have en understøttet funktion; værker registreres automatisk.
 
 Bemærk:
