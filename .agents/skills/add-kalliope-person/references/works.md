@@ -14,5 +14,6 @@ vaudeviller, enkeltstående lejlighedsdigte og lignende småarbejder.
 Undgå dubletter og opret aldrig `works` i `info.xml`.
 
 Et blankværk kan modtage et værklink, men opfylder ikke et ønske om et digt.
-Efter enhver egentlig tekstimport køres ønskerapporten og sikre match afstemmes
-med `npm run person-editorial -- --reconcile`.
+Ved PR-forberedelsen efter egentlig tekstimport køres `npm run person-editorial`
+samlet mod et opdateret JSONL-korpus. Sikre match afstemmes med
+`npm run person-editorial -- --reconcile`; se `docs/person-editorial.md`.

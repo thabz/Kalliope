@@ -60,9 +60,11 @@ med bindestreg. Omtalen markeres med
 Flere omtaler kan pege på samme ønske; undgå dubletter efter identitetskontrol.
 Markøren må ikke indeholde links eller andre ønskemarkører.
 
-Efter enhver tekstimport køres `npm run person-editorial`. Rapporten matcher
-forfatter og normaliseret titel/navnevariant eller førstelinje mod det senest
-byggede JSONL-korpus; et friskt static-build kræves for nyimporterede tekster.
+Som forberedelse til en PR med tekstimport køres `npm run person-editorial`
+samlet for PR’ens ændringer. Rapporten køres ikke af `build-static` og skal ikke
+køres efter hver enkelt tekst eller hvert build. Den matcher forfatter og
+normaliseret titel/navnevariant eller førstelinje mod JSONL-korpus. Brug et
+static-build, der indeholder PR’ens nyimporterede tekster, før rapporten køres.
 Matcher er kun kandidater, også ved ét enkelt titelmatch. Ved usikker
 identifikation forbliver ønsket åbent med forklaring i `source`.
 

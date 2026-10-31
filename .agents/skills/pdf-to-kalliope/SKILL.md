@@ -1378,8 +1378,10 @@ Resolve named authors, translators, editors and other persons through the
 JSONL corpus following `AGENTS.md` and `docs/corpus-dataset.md`; inspect
 specific XML when necessary. Do not create duplicates for name variants.
 Use `$add-kalliope-person` only when a person needs creation or enrichment.
-After importing texts, run `npm run person-editorial`; reconcile confirmed
-wish targets with `npm run person-editorial -- --reconcile`.
+When preparing the PR after text import, run `npm run person-editorial` once
+for the PR’s changes against an up-to-date JSONL corpus; reconcile confirmed
+wish targets with `npm run person-editorial -- --reconcile`. See
+`docs/person-editorial.md`. The report does not run after every build.
 
 ## 17. Investigate translations and originals
 

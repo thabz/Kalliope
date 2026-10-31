@@ -1451,5 +1451,6 @@ Et dokumenteret hovedværk kan registreres med `status="incomplete"`, normalt
 Sådanne værker kan modtage værklinks, men tæller ikke som indsat digttekst.
 Ved personoprettelse undersøges både gældende videnskabelig standardudgave og
 forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
-Efter tekstimport køres `npm run person-editorial`, så mulige opfyldelser af
-tekstønsker opdages. Se `docs/person-editorial.md`.
+Ved PR-forberedelsen efter tekstimport køres `npm run person-editorial` samlet
+mod et opdateret JSONL-korpus, så mulige opfyldelser af tekstønsker opdages.
+Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
