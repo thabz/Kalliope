@@ -157,6 +157,36 @@ describe('text page breadcrumbs', () => {
     }
   });
 
+  it('prefixes translations with their poets, including anthology contributions and older references', async () => {
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      translations: [
+        {
+          id: 'sagen-translation', title: 'Til en ung Pige',
+          poet: 'Lyder Sagen', poetId: 'sagen',
+          citation: '<a poem="sagen-translation">»Til en ung Pige«</a>, i: <i>Charis for 1803</i>, red. af K. L. Rahbek, 1803, s. 133.',
+        },
+        {
+          id: 'schaldemose-translation', title: 'Til en Pige',
+          poet: 'Frederik Schaldemose', poetId: 'schaldemose', work: 'Anakreon (1824)',
+        },
+      ],
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    const section = [...html.matchAll(/<section\b[^>]*>(.*?)<\/section>/g)]
+      .map(match => match[1]).find(content => content.includes('>Gendigtninger<'));
+    const sectionText = section.replace(/<[^>]*>/g, '');
+    expect(sectionText).toContain('Lyder Sagen: »Til en ung Pige«, i: Charis for 1803');
+    expect(sectionText).toContain('Frederik Schaldemose: »Til en Pige«');
+    expect(sectionText).not.toContain('K. L. Rahbek: »');
+    expect(section.match(/Frederik Schaldemose/g)).toHaveLength(1);
+    expect(section).toContain('Anakreon (1824)');
+  });
+
   it.each([
     { facsimile: null, facsimilePageCount: null, facsimilePages: [9, 12] },
     { facsimile: 'scan', facsimilePageCount: null, facsimilePages: [9, 12] },

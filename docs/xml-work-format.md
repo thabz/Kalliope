@@ -322,6 +322,11 @@ referencefelter bevares. Det samme `citation`-felt bruges i `refs` og
 `translations`. Ændringer i en udgaves kildefiler genopbygger også
 henvisningerne hos de øvrige varianter og de tekster, som udgaven henviser til.
 
+Under »Gendigtninger« viser tekstsiden desuden gendigtningens digternavn
+efterfulgt af kolon foran den linkede titel, fx `Lyder Sagen: »Til en ung
+Pige«, i: …`. Navnet hentes fra tekstforekomstens effektive forfatter, også
+når kilden er en antologi med en anden redaktør.
+
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
 kun `<wikidata>` tilladt:
@@ -1322,13 +1327,21 @@ skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
 <note>Se <xref poem="schiller2018011501"/>.</note>
-<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Gendigtning af Heines <xref type="translation" poem="heine..."/>.</note>
 <note>Se <xref keyword="romantikken"/>.</note>
 <note>Se <xref dict="..."/>.</note>
 <note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
+En forlægsnote skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
+»Oversættelse af«, »Gendigtning af« eller »Fri gendigtning af«. Fri formulering,
+præciseringer og flere digtlinks er tilladt. Noter med digtlinks må ikke kun
+indeholde selve linket. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+Fuldt navn og efternavn alene er begge tilladt; vælg efter sammenhængen og
+brug mere af navnet, når efternavnet kan være tvetydigt, fx »Møller«.
+Oplysninger om måltekstens registrerede udgave og kilde hører til på målteksten. Se `docs/originaltekster-til-oversaettelser.md`.
 
 ## Linjenummerering og layout-tags
 
