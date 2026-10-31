@@ -91,12 +91,17 @@ billed-QA. Der er intet særskilt grafisk omslag.
 
 ## Relationer og personer
 
-Rahbeks første note peger på `lundca20261028325` i januar 1786, den anden
+Rahbeks første note peger på `lundca202610281004` i januar 1786, den anden
 på `lundca2026103102` i februar 1788. Noternes trykte ordlyd er bevaret.
 *Lunden* og *Den Dødes Igienkomst* er forbundet med deres eksisterende
 varianter. Luxdorphs latinske original er forbundet med alle tre danske
 oversættelser i dette bind. Den værkafgrænsede variantkontrol fandt ingen
 yderligere kandidater.
+
+Fjorten endnu upublicerede tekst-id'er fra 1786-kladden har fået højere
+løbenumre, fordi andre imports siden kladdens oprettelse har brugt højere
+numre samme oprettelsesdato. Interne henvisninger er opdateret. Ordlyd og
+tekststruktur er uændret.
 
 Weyer, Luxdorph og Suhm er oprettet med dokumenterede livsdata og bibliografi.
 Luxdorph har fuld DBL2-biografi og Suhm fuld DBL1-biografi; begge har
