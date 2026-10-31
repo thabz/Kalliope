@@ -178,8 +178,8 @@ const build_todays_events_json = async (collected) => {
                   b.event.context.poet.id
                 );
               });
-            if (weighted.length > 0) {
-              const event = weighted[0].event;
+            for (const candidate of weighted) {
+              const event = candidate.event;
               const poet = event.context.poet;
               let content_html = null;
               const primary_portrait = (
@@ -202,6 +202,7 @@ const build_todays_events_json = async (collected) => {
                   date: event.date,
                 };
                 add_event(lang, `${mm}-${dd}`, data);
+                break;
               }
             }
           }
