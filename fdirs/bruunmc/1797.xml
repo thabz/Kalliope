@@ -3824,14 +3824,18 @@ Kun et Øjeblik tilbage? -
 <head>
   <title>Baand</title>
   <firstline>Vil du slippe mig</firstline>
+  <notes>
+    <note editorial="true">Mottoet henviser til Tibuls <xref poem="tibullus2026103101,55"/>.</note>
+  </notes>
   <source pages="186-187" facsimile-pages="198-199" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
+<epigraph lang="la">
 <nonum><right><i>Metenent vinctum formosæ vincla puellæ.</i></right></nonum>
 <nonum><right><i>Tibul.</i></right></nonum>
-
+</epigraph>
+<poetry>
 Vil du slippe mig
 Udaf Tryllelænken?
 Nei, i Tryllelænken
@@ -4020,18 +4024,20 @@ Og sønderslide mig en Evighed af Smerte,
   <firstline>O Flaske, fuld med Saft af rhinske Druer</firstline>
   <notes>
     <note editorial="true">Gendigtning af Ewald Christian von Kleist: <xref type="translation" poem="kleiste2018080101"/>.</note>
+    <note editorial="true">Mottoet er fra Lygdamus’ <xref poem="lygdamus2026103102,1-4"/>, overleveret i Tibuls tredje bog.</note>
   </notes>
   <source pages="195-196" facsimile-pages="207-208" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
+<epigraph lang="la">
 <nonum><right><i>Candide Liber ades. Sic sit tibi mystica vitis,</i></right></nonum>
 <nonum><right><i>Semper, sic edera tempora vincta feras.</i></right></nonum>
 <nonum><right><i>Auser et ipse meum pariter medicando dolorem.</i></right></nonum>
 <nonum><right><i>Sæpe tuo cecidit munere victus Amor.</i></right></nonum>
 <nonum><right><i>Tibul.</i></right></nonum>
-
+</epigraph>
+<poetry>
 O Flaske, fuld med Saft af rhinske Druer,
     I alle Smerter du min Trøst!
 Lyksalig den, som Dine Smile skuer,

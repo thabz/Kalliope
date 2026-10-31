@@ -431,6 +431,11 @@ The published attestation contains only `model` and an ISO 8601 `datetime`
 with timezone. Do not add a hash, sidecar reference or automatic invalidation
 metadata to it. Preserve older attestations when a later model adds another.
 
+When preparing a proofreading attestation, read
+[Modeloplysninger ved korrekturattestation](references/model-attestation.md)
+to resolve the reviewer's exact model and record its provenance. Follow that
+lookup before declaring the model unavailable.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.

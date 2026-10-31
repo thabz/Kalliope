@@ -295,6 +295,45 @@
           "text": "Vänskapen"
         }
       ]
+    },
+    {
+      "id": "luxdorph-tossernes-lyksalighed",
+      "poetId": "luxdorph",
+      "title": "Tossernes Lyksalighed",
+      "source": "R. Paulli: Dansk Biografisk Leksikon, 2. udg., XIV (1938), s. 609. Dansk Forfatterleksikon bekræfter den særskilte Sorøe-udgave fra 1764. Digtteksten er ikke indsat.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/luxdorph/bio.xml",
+          "text": "Tossernes Lyksalighed"
+        }
+      ]
+    },
+    {
+      "id": "polignac-anti-lucretius",
+      "poetId": "polignac",
+      "title": "Anti-Lucretius sive de deo et natura",
+      "status": "open",
+      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XIX, s. 357, nævner læredigtet. Originaludgaven fra 1747 er registreret som blankværk. Ingen selvstændig tekstpost i Kalliopes korpus.",
+      "mentions": [
+        {
+          "file": "fdirs/polignac/bio.xml",
+          "text": "Anti-Lucretius sive de deo et natura"
+        }
+      ]
+    },
+    {
+      "id": "sturluson-hattatal",
+      "poetId": "sturluson",
+      "title": "Háttatal",
+      "status": "open",
+      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XXI, s. 846–848, nævner kvadet; Faulkes’ videnskabelige udgave, 2. udgave 2007, er registreret som blankværk. Ingen selvstændig tekstpost i Kalliopes korpus.",
+      "mentions": [
+        {
+          "file": "fdirs/sturluson/bio.xml",
+          "text": "Háttatal"
+        }
+      ]
     }
   ]
 }
