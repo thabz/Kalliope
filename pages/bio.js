@@ -109,23 +109,18 @@ export const PersonMeta = ({ poet, lang }) => {
   );
 };
 
-const PersonPortrait = ({ portraits, poet, lang }) => {
-  if (!poet.has_portraits || portraits == null) {
+export const PersonPortrait = ({ portraits, poet, lang }) => {
+  if (poet.has_portraits !== true || portraits == null || portraits.length === 0) {
     return null;
   }
-  let primaryIndex = 0;
-  const primary = portraits.filter((p, i) => {
-    if (p.primary == true) {
-      primaryIndex = i;
-    }
-    return p.primary;
-  })[0];
+  const primaryIndex = portraits.findIndex(p => p.primary === true);
+  const startIndex = primaryIndex === -1 ? 0 : primaryIndex;
   return (
     <Picture
       pictures={portraits}
-      startIndex={primaryIndex}
+      startIndex={startIndex}
       lang={lang}
-      contentLang={primary.content_lang || 'da'}
+      contentLang={portraits[startIndex].content_lang ?? 'da'}
     />
   );
 };

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gottsched" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Christoph</firstname>
+    <lastname>Gottsched</lastname>
+    <alternative>Gotsched</alternative>
+  </name>
+  <!-- Livsdata og identitet: https://www.deutsche-biographie.de/sfz69932.html -->
+  <period>
+    <born>
+      <date>1700-02-02</date>
+    </born>
+    <dead>
+      <date>1766-12-12</date>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <gnd>118541013</gnd>
+  </identifiers>
+</person>

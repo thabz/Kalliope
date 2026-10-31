@@ -1,3 +1,4 @@
+import { stripWishMarkers } from '../person-editorial.js';
 import { htmlToXml } from '../libs/helpers.js';
 import {
   getChildByTagName,
@@ -36,7 +37,7 @@ export const buildBiographies = (bio, collected) => {
       const head = getChildByTagName(biography, 'head');
       const body = getChildByTagName(biography, 'body');
       return {
-        content_html: trimBlankLines(htmlToXml(safeGetInnerXML(body), collected)),
+        content_html: trimBlankLines(htmlToXml(stripWishMarkers(safeGetInnerXML(body)), collected)),
         content_lang: safeGetAttr(body, 'lang') ?? 'da',
         sources: buildSources(head, collected),
       };

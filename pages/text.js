@@ -5,7 +5,7 @@ import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
-import { appendSourcePages, removeSourcePoetLinks } from '../common/source-reference.js';
+import { appendSourcePages, removeBibliographyLinks, removeSourcePoetLinks } from '../common/source-reference.js';
 import _ from '../common/translations.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
@@ -64,7 +64,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', showPoet = false }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -75,16 +75,20 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
       );
     }
 
+    const poetPrefix = showPoet === true && ref.poet != null && ref.poet.trim().length > 0
+      ? `${ref.poet}: `
+      : null;
     if (ref.citation != null) {
       return (
         <div className="reference" key={ref.id}>
+          {poetPrefix}
           <TextInline contentHtml={[[removeSourcePoetLinks(ref.citation, currentPoetId), { html: true }]]} />
         </div>
       );
     }
 
     const metadata = [];
-    if (ref.poetId !== currentPoetId) {
+    if (poetPrefix == null && ref.poetId !== currentPoetId) {
       metadata.push(ref.poet);
     }
     if (ref.work != null) {
@@ -93,6 +97,7 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px' }) => {
 
     return (
       <div className="reference" key={ref.id}>
+        {poetPrefix}
         <Link
           href={Links.textURL(lang, ref.id)}
           className="reference-title">
@@ -382,7 +387,7 @@ const TextPage = (props) => {
   if (text.source != null) {
     const source = text.source;
     if (source.source != null && source.source.length > 0) {
-      sourceText = appendSourcePages(removeSourcePoetLinks(source.source, poet.id), source.pages);
+      sourceText = appendSourcePages(removeBibliographyLinks(source.source), source.pages);
       renderedSource = (
         <Source
           contentHtml={[[sourceText, { html: true }]]}
@@ -515,6 +520,7 @@ const TextPage = (props) => {
             contentLang={text.content_lang}
             currentPoetId={poet.id}
             spacing="5px"
+            showPoet={true}
           />
         </MetadataGroup>
       ) : null}

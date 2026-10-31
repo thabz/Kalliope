@@ -248,9 +248,11 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`
   og `year` er valgfrie og kan forekomme højst én gang. Alle felter indeholder
   ikke-tom ren tekst. År kan bevare usikkerhed, fx `[1804]`.
-- `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
-  gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
-  vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- `author`, `editor` og `translator` kan gentages. `id` er valgfrit og bevares
+  i metadata. Kildevisningen gengiver personnavne og publikationstitler uden
+  links; digitaliseringen linkes med kildeikonet fra `source/@href`. Det gælder
+  også ældre fritekstkilder. Antologikilder har ingen `author`; samlere angives
+  som `editor`.
 - `author` kan have `realname="…"` ved udgivelse under pseudonym eller en anden
   navneform. Elementets tekst er udgivelsesnavnet, og `realname` er det navn,
   der vises i parentes: `<author id="larsent" realname="Thøger Larsen">Thøger
@@ -321,6 +323,11 @@ udgivelsesoplysninger. I tekst-JSON får poster i `variants` et valgfrit
 referencefelter bevares. Det samme `citation`-felt bruges i `refs` og
 `translations`. Ændringer i en udgaves kildefiler genopbygger også
 henvisningerne hos de øvrige varianter og de tekster, som udgaven henviser til.
+
+Under »Gendigtninger« viser tekstsiden desuden gendigtningens digternavn
+efterfulgt af kolon foran den linkede titel, fx `Lyder Sagen: »Til en ung
+Pige«, i: …`. Navnet hentes fra tekstforekomstens effektive forfatter, også
+når kilden er en antologi med en anden redaktør.
 
 
 En kilde kan have typevaliderede eksterne identifikatorer. I første version er
@@ -1322,13 +1329,21 @@ skal den ligesom `<a>` placeres i en note eller fodnote:
 
 ```xml
 <note>Se <xref poem="schiller2018011501"/>.</note>
-<note>Gendigtning af <xref type="translation" poem="heine..."/>.</note>
+<note>Gendigtning af Heines <xref type="translation" poem="heine..."/>.</note>
 <note>Se <xref keyword="romantikken"/>.</note>
 <note>Se <xref dict="..."/>.</note>
 <note>Se <xref bible="bibeljohn03,16"/>.</note>
 ```
 
 `type="translation"` paa digtlinks bruges til oversaettelsesrelationer.
+En forlægsnote skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
+»Oversættelse af«, »Gendigtning af« eller »Fri gendigtning af«. Fri formulering,
+præciseringer og flere digtlinks er tilladt. Noter med digtlinks må ikke kun
+indeholde selve linket. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+Fuldt navn og efternavn alene er begge tilladt; vælg efter sammenhængen og
+brug mere af navnet, når efternavnet kan være tvetydigt, fx »Møller«.
+Oplysninger om måltekstens registrerede udgave og kilde hører til på målteksten. Se `docs/originaltekster-til-oversaettelser.md`.
 
 ## Linjenummerering og layout-tags
 
@@ -1435,3 +1450,14 @@ Buildet tjekker blandt andet:
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
 - `content/keywords/rom.xml`: billeder via `artwork`.
 - `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+
+## Bibliografiske blankværker
+
+Et dokumenteret hovedværk kan registreres med `status="incomplete"`, normalt
+`workhead` og tomt `<workbody/>`. Opret ingen tomme `<text>`-poster.
+Sådanne værker kan modtage værklinks, men tæller ikke som indsat digttekst.
+Ved personoprettelse undersøges både gældende videnskabelig standardudgave og
+forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
+Ved PR-forberedelsen efter tekstimport køres `npm run person-editorial` samlet
+mod et opdateret JSONL-korpus, så mulige opfyldelser af tekstønsker opdages.
+Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.

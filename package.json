@@ -7,7 +7,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=20.18.1"
+    "node": ">=22.0.0"
   },
   "browserslist": [
     "defaults",
@@ -39,7 +39,8 @@
     "check-text-quality": "node tools/check-text-quality.js",
     "sync-literary-registers": "node tools/sync-literary-registers.js",
     "collect-wikidata": "node tools/data/indsamling/wikidata/collect.mjs",
-    "collect-dbl": "node tools/collect-dbl.js"
+    "collect-dbl": "node tools/collect-dbl.js",
+    "person-editorial": "node tools/person-editorial.js"
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.9.12",
@@ -47,8 +48,8 @@
     "mkdirp": "^0.5.1",
     "next": "^16.3.8",
     "p-limit": "^2.2.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "sharp": "^0.35.5"
   },
   "devDependencies": {

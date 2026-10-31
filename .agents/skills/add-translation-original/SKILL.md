@@ -36,8 +36,8 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
 3. Foretræk oversætterens dokumenterede trykte udgave eller den nærmeste
    samtidige trykte udgave med samme tekstlige form. Hvis ingen af dem er
    tilgængelige, må en troværdig nyere trykt eller digital udgave bruges, når
-   originalteksten stadig kan identificeres sikkert; dokumentér da, at kilden
-   er nyere. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
+   originalteksten stadig kan identificeres sikkert; dokumentér den nyere kilde
+   på originalteksten og i PR-beskrivelsen. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
    Vælg ikke automatisk den ældste version.
 4. Opret normalt den valgte publikation som et selvstændigt værk
    hos originalforfatteren. Brug samtidig `$add-kalliope-work`; brug også
@@ -51,14 +51,38 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    Kalliopes gældende oversættelsesrelation. Opret ikke en generisk relation til
    digteren. En nyere udgave må være relationens mål, når teksten matcher
    sikkert, og det historiske forlæg ikke er tilgængeligt.
-   Angiv altid forlægget med formuleringen »Gendigtning af [forfatterens navn
-   i genitiv] [digtlink].«, fx:
+   Forlægsnoten skal nævne den kendte originalforfatter og forklare relationen til
+   digtlinket, fx:
    `<note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>`.
+   »Oversættelse af«, »Gendigtning af« og »Fri gendigtning af« er eksempler,
+   ikke en udtømmende liste. Præciseringer og flere digtlinks er tilladt.
+   Vælg frit fuldt navn eller efternavn alene efter sammenhængen. »Byron«,
+   »Schiller« og »Goethe« er tilstrækkeligt; brug mere af navnet, når et
+   efternavn som »Møller« kan pege på flere personer.
    Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
-   Brug ikke et bart digtlink eller »Oversættelse af …« som forlægsnote.
+   Skriv digternavnet som almindelig tekst, aldrig som person- eller digterlink.
+   Kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+   Forlægsnoten beskriver relationen. Måltekstens registrerede udgave, kilde og
+   indførelse beskrives på målteksten selv, ikke ved det indgående link.
+   Skriv fx ikke »Originalteksten er registreret efter udgaven fra 1847.« i
+   oversættelsens note. Undlad også generiske forbehold som »det benyttede
+   eksemplar er ikke dokumenteret« og »oversætterens benyttede udgave er ikke
+   identificeret«; dokumentér udgavevalget på originalteksten og i PR-beskrivelsen.
+   Historiske oplysninger om oversætterens benyttede
+   forlæg og tekstlige forskelle kan fortsat beskrives i forlægsnoten.
+   Brug aldrig et bart digtlink som note.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.
 
 Følg repositoryets godkendelsesregler for commit, push og PR. Skillen giver
 ikke selv yderligere tilladelse til eksterne ændringer.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Ved PR-forberedelsen efter tekstimport: kør `npm run person-editorial` samlet
+for PR’ens ændringer mod et opdateret JSONL-korpus, og afstem dokumenterede
+ønskematch med `npm run person-editorial -- --reconcile`. Se
+`docs/person-editorial.md`; rapporten køres ikke efter hvert build.
