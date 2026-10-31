@@ -8,7 +8,8 @@
   <pictures>
     <picture src="1964-1-p1.jpg" type="titlepage" primary="true"><transcription>ESAIAS TEGNÉRS / SAMLADE DIKTER // UTGIVNA AV / TEGNÉRSAMFUNDET // I. 1798—1808 / REDIGERAD AV FREDRIK BÖÖK // CWK GLEERUP LUND</transcription></picture>
   </pictures>
-  <source href="https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb126528-faksimil">
+  <!-- Facsimileuddrag: original-PDF'ens sider 10–11 og 138–140. -->
+  <source href="https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb126528-faksimil" facsimile="1964-1-uddrag" facsimile-pages-num="5" facsimile-pages-offset="-120">
     <author id="tegner">Esaias Tegnér</author>
     <title>Esaias Tegnérs samlade dikter</title>
     <editor>Tegnérsamfundet</editor>
@@ -25,7 +26,7 @@
 <head>
   <title>Till min hembygd</title>
   <firstline>Du som min barndom gaf din omsorg och din stämpel</firstline>
-  <source pages="123-125" facsimile-pages="138-140" href="https://litteraturbanken.se/export/faksimil/lb126528.pdf#page=138"/>
+  <source pages="123-125" facsimile="1964-1-uddrag" facsimile-pages="3-5" href="https://litteraturbanken.se/export/faksimil/lb126528.pdf#page=138"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -58,7 +59,7 @@ Och rundar i ett drag hvart ax som kröner jorden:
     Då dagen sjelf, med Skördarn i förbund,
     Stjäl hälften bort utaf sin hvilas stund.
 
-<pb n="124" facs="138.jpg"/>Skön är din Vinter sjelf. Jag såg, jag såg ju Hjelten.
+<pb n="124" facs="003.jpg"/>Skön är din Vinter sjelf. Jag såg, jag såg ju Hjelten.
 En drifva i sitt skägg, en tallkrans kring sitt hår
 Han far, och silfverkorn kring dina lundar sår,
 Och med förfrusen hand strör liljor öfver fälten:
@@ -93,7 +94,7 @@ Att resa herrskande bland böljors skum sin spira;
     Ej speglad mer i Insjöns lugn, hvars brädd
     Är i en gördel utaf klippor klädd.
 
-<pb n="125" facs="139.jpg"/>Dig, som min Hembygd ger så rikt åt mödans händer,
+<pb n="125" facs="004.jpg"/>Dig, som min Hembygd ger så rikt åt mödans händer,
 Tyranners burna skräck och åldrig frihets värn,
 Förgömda Klippans son, jag helsar dig, o Jern!
 Som förr med hämden gick att stycka Latiens länder:

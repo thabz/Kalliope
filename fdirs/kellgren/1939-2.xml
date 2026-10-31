@@ -8,7 +8,8 @@
   <pictures>
     <picture src="1939-2-p1.jpg" type="titlepage" primary="true"><transcription>SAMLADE SKRIFTER / AV / JOHAN HENRIK KELLGREN // ANDRA DELEN / DIKTER FRÅN OCH MED STOCKHOLMS / POSTENS BEGYNNANDE ÅR 1778 // UTGIVNA AV / SVERKER EK OCH ALLAN SJÖDING // STOCKHOLM / ALBERT BONNIERS FÖRLAG</transcription></picture>
   </pictures>
-  <source href="https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb114764-faksimil">
+  <!-- Facsimileuddrag: original-PDF'ens sider 4–5 og 187. -->
+  <source href="https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb114764-faksimil" facsimile="1939-2-uddrag" facsimile-pages-num="3" facsimile-pages-offset="-171">
     <author id="kellgren">Johan Henrik Kellgren</author>
     <title>Samlade skrifter</title>
     <editor>Sverker Ek</editor>
@@ -25,7 +26,7 @@
 <head>
   <title><num>LXIII.</num>Til en förnäm Herre</title>
   <firstline>Åk, gyllne Tiggare, var stor</firstline>
-  <source pages="174" facsimile-pages="187" href="https://litteraturbanken.se/export/faksimil/lb114764.pdf#page=187"/>
+  <source pages="174" facsimile="1939-2-uddrag" facsimile-pages="3" href="https://litteraturbanken.se/export/faksimil/lb114764.pdf#page=187"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
