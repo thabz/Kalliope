@@ -36,6 +36,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/originaltekster-til-oversaettelser.md` ved opsporing, udvælgelse,
   indsættelse eller kildeangivelse af originaltekster til oversættelser
 
+- `docs/person-editorial.md` ved biografistatus, tekstønsker og deres afstemning
+
 ## GitHub
 
 - Issues, PR-titler og PR-beskrivelser skrives på dansk.

@@ -188,3 +188,12 @@ udført, det resterende menneskelige arbejde er konkret, lokaliseret og
 overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
 for få sekunder vise, hvad der er indsat, kilden, hvad Agent har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Ved PR-forberedelsen efter tekstimport: kør `npm run person-editorial` samlet
+for PR’ens ændringer mod et opdateret JSONL-korpus, og afstem dokumenterede
+ønskematch med `npm run person-editorial -- --reconcile`. Se
+`docs/person-editorial.md`; rapporten køres ikke efter hvert build.
