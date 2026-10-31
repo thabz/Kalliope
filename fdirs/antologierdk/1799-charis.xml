@@ -38,16 +38,16 @@
   </subtitle>
   <firstline>Til Sang igien, o Nordens Sanggudinde!</firstline>
   <notes>
-    <note editorial="true">Det græske motto er gengivet med de sikkert læselige bogstaver. Trykkets små accent- og åndingstegn er flere steder utydelige og er derfor udeladt; de er ikke rekonstrueret fra en anden udgave. Trykkets mediale σ i tredje linjes første ord og den manglende elisionsapostrof efter αραιτ er bevaret.</note>
+    <note editorial="true">Citat fra Euripides’ <i>Orestes</i>, vers 1–3.</note>
   </notes>
   <source pages="1-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="el">
-Ουκ εστιν ουδεν δεινον, ωδε ειπειν επος,
-Ουδε παθος ουδε συμφορα θεηλατος
-Ησ ουκ αν αραιτ αχθος ανθρωπου φυσις.
+Οὐκ ἔστιν οὐδὲν δεινὸν, ὧδε εἰπεῖν ἔπος,
+Οὐδὲ πάθος οὐδὲ συμφορὰ θεήλατος
+ἧς οὐκ ἂν ἄραιτ᾽ ἄχθος ἀνθρώπου φύσις.
 <right><i>Euripidis Orest.</i></right>
 </epigraph>
 <poetry>
@@ -639,12 +639,13 @@ Saa bad jeg, og det store Forhæng faldt —
 </body>
 </text>
 
-<text id="rahbek202610291001" author="rahbek">
+<text id="rahbek202610292013" aliases="rahbek202610291001" author="rahbek">
 <head>
   <title>Til O. J. Samsøe</title>
   <subtitle>(For i et Exemplar af den danske Tilskuer 1793).</subtitle>
   <firstline>Ei eene os til Held vi sattes her</firstline>
   <source pages="31-32"/>
+  <keywords>samsoe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -872,7 +873,7 @@ Os til dit Alter vinker.
 </body>
 </text>
 
-<text id="rahbek202610291002" author="rahbek">
+<text id="rahbek202610292014" aliases="rahbek202610291002" author="rahbek">
 <head>
   <title>Vise</title>
   <firstline>Da Glæden til Jorden som Pillegrim kom</firstline>
@@ -973,7 +974,7 @@ Blidt svinde for Eder i Held og i Lyst
 </body>
 </text>
 
-<text id="rahbek202610291003" author="rahbek">
+<text id="rahbek202610292015" aliases="rahbek202610291003" author="rahbek">
 <head>
   <title>De Herrer Originaler</title>
   <subtitle>
@@ -982,9 +983,10 @@ Blidt svinde for Eder i Held og i Lyst
   </subtitle>
   <firstline>Nei! aldrig, aldrig, Corali!</firstline>
   <notes>
-    <note editorial="true">Undertitlen angiver et svensk forlæg, som ikke er identificeret.</note>
+    <note editorial="true">Gendigtning af Axel Gabriel Silfverstolpes <xref type="translation" poem="silverstolpe2026103101"/>. Rahbek har ændret flere personnavne og tilpasset enkelte hentydninger til danske forhold.</note>
   </notes>
   <source pages="46-61"/>
+  <keywords>fontaine</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1350,7 +1352,7 @@ Vred Hunden skreg: ””gaae, Klodrian!
 </body>
 </text>
 
-<text id="rahbek202610291004" author="rahbek" variant="rahbek2020010449">
+<text id="rahbek202610292016" aliases="rahbek202610291004" author="rahbek" variant="rahbek2020010449">
 <head>
   <title>Fordum</title>
   <subtitle>
@@ -1414,7 +1416,7 @@ Og som jeg ønsker Eder det.
 </body>
 </text>
 
-<text id="rahbek202610291005" author="rahbek">
+<text id="rahbek202610292017" aliases="rahbek202610291005" author="rahbek">
 <head>
   <title>Siden</title>
   <subtitle>
@@ -1423,6 +1425,7 @@ Og som jeg ønsker Eder det.
   </subtitle>
   <firstline>Jeg veed det sikkert, Ven, at Lessings Nathan vil</firstline>
   <source pages="67-68"/>
+  <keywords>lessing</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1453,7 +1456,7 @@ Det Venneminde kierlig vil mig yde:
 </body>
 </text>
 
-<text id="rahbek202610291006" author="rahbek">
+<text id="rahbek202610292018" aliases="rahbek202610291006" author="rahbek">
 <head>
   <title>Snart</title>
   <subtitle>
@@ -1462,6 +1465,7 @@ Det Venneminde kierlig vil mig yde:
   </subtitle>
   <firstline>Troe ei, jeg glemmer, vennehulde Pige!</firstline>
   <source pages="69-70"/>
+  <keywords>hoeghguldbergf</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1496,7 +1500,7 @@ Saa ømt, saa froe, som Ungdoms første være! —
 </body>
 </text>
 
-<text id="rahbek202610291007" author="rahbek" variant="rahbek2020010461">
+<text id="rahbek202610292019" aliases="rahbek202610291007" author="rahbek" variant="rahbek2020010461">
 <head>
   <title>Nu</title>
   <subtitle>Den 19 October 1797.</subtitle>
@@ -1548,7 +1552,7 @@ Os Himlen mange, mange Dage give!
 </body>
 </text>
 
-<text id="thaarup202610291001" author="thaarup" variant="thaarup20260820137">
+<text id="thaarup202610292007" aliases="thaarup202610291001" author="thaarup" variant="thaarup20260820137">
 <head>
   <title>Ved Madam Bodenhoffs Grav</title>
   <firstline>Du, som Jordens Held og Ære</firstline>
@@ -1577,7 +1581,7 @@ Som er intet Savn og Ønske værd.
 </body>
 </text>
 
-<text id="sander202610291001" author="sander" variant="sander20260823139">
+<text id="sander202610292004" aliases="sander202610291001" author="sander" variant="sander20260823139">
 <head>
   <title>Dødens Vuggevise</title>
   <firstline>Jeg haver en Vugge, saa varm, og saa tæt</firstline>
@@ -1616,7 +1620,7 @@ Saa kom da, jeg lægger i Vuggen dig ned
 </body>
 </text>
 
-<text id="rahbek202610291008" author="rahbek">
+<text id="rahbek202610292020" aliases="rahbek202610291008" author="rahbek">
 <head>
   <title>Fattigvise</title>
   <firstline>Saa svandt vor Aften hen i Glæde</firstline>
@@ -1735,16 +1739,16 @@ At, Venner! I, som elske huuslig Glæde,
 </body>
 </text>
 
-<text id="rahbek202610291009" author="rahbek">
+<text id="rahbek202610292021" aliases="rahbek202610291009" author="rahbek">
 <head>
   <title>Raad til unge Digtere</title>
   <subtitle>efter Paykull.</subtitle>
   <firstline>I unge Skialde! samler eder</firstline>
   <notes>
-    <note unknown-original-by="paykull"/>
-    <note editorial="true">Forlægget er Gustaf von Paykulls »<span lang="sv">Råd till unga poeter</span>«. Se det senere optryk i <i><span lang="sv">Samlade svenska skrifter</span></i>, første delen, Uppsala 1814, s. 1 ff. <a href="https://litteraturbanken.se/export/faksimil/lb2429033.pdf">↬</a></note>
+    <note editorial="true">Gendigtning af Gustaf von Paykulls <xref type="translation" poem="paykull2026103101"/>. Rahbeks femte strofe om Apollo og Daphne findes ikke i Paykulls omarbejdede version fra 1814.</note>
   </notes>
   <source pages="81-86"/>
+  <keywords>bruunmc,horats,racine,tasso,anakreon,ewald,tibullus,pram,lundca</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1870,6 +1874,7 @@ Hvad er der Krandsens Ære vel?
   <subtitle>da han blev meere end Tilskuer.</subtitle>
   <firstline>Ven Rahbek! kommer dette Brev for silde</firstline>
   <source pages="87-93"/>
+  <keywords>rahbek,voltaire,fontaine</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2016,6 +2021,7 @@ Vorde Bakkehusets Pryd!
   <subtitle><w>Til Rahbek.</w></subtitle>
   <firstline>Fryd Dig ved Livet!</firstline>
   <source pages="94-95"/>
+  <keywords>rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2186,7 +2192,7 @@ Men haane den kun Æslet kan”.
 </body>
 </text>
 
-<text id="rahbek202610291010" author="rahbek">
+<text id="rahbek202610292022" aliases="rahbek202610291010" author="rahbek">
 <head>
   <title>Midas</title>
   <subtitle>
@@ -2195,7 +2201,7 @@ Men haane den kun Æslet kan”.
   </subtitle>
   <firstline>Kong Midas udi Lydien</firstline>
   <notes>
-    <note editorial="true">Det svenske forlæg er den usignerede »<span lang="sv">Midas. Grekisk Saga</span>«, <i><span lang="sv">Läsning i blandade ämnen</span></i> 1797, nr. 7–8, s. 70–75. Georg Adlersparre var tidsskriftets udgiver; det dokumenterer ikke, at han skrev teksten. <a href="https://runeberg.org/lasbland/1797/0634.html">↬</a></note>
+    <note editorial="true">Gendigtning af den usignerede <xref type="translation" poem="anonym1700se2026103101"/>.</note>
   </notes>
   <source pages="101-109"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2383,8 +2389,7 @@ Ei sat til Høibords, men i Agt.
   <subtitle>(efter Kellgren).</subtitle>
   <firstline>Skilt fra sin ømme Elskerinde</firstline>
   <notes>
-    <note unknown-original-by="kellgren"/>
-    <note editorial="true">Forlægget er Johan Henric Kellgrens »<span lang="sv">Det Egentliga Ordet</span>«, <i><span lang="sv">Samlade skrifter</span></i>, s. 590. <a href="https://archive.org/details/samladeskrifter00kellgoog/page/n598/mode/1up">↬</a></note>
+    <note editorial="true">Gendigtning af Johan Henric Kellgrens <xref type="translation" poem="kellgren2026103101"/>.</note>
   </notes>
   <source pages="110-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2464,14 +2469,13 @@ Ved gavnlig Daad, utrættet Flid,
 </body>
 </text>
 
-<text id="rahbek202610291011" author="rahbek">
+<text id="rahbek202610292023" aliases="rahbek202610291011" author="rahbek">
 <head>
   <title>En Moders Raad til sin Datter</title>
   <subtitle>(efter Frue Lengreens svenske Original).</subtitle>
   <firstline>Jeg seer min Betty blive stor</firstline>
   <notes>
-    <note unknown-original-by="lenngren"/>
-    <note editorial="true">Forlægget er Anna Maria Lenngrens »<span lang="sv">Några ord till min k. dotter, ifall jag hade någon</span>« (1798), med førstelinjen »<span lang="sv">Min kära Betti!</span>«. Se <i><span lang="sv">Skalde-försök</span></i>, Stockholm 1846. <a href="https://litteraturbanken.se/export/faksimil/lb2501942.pdf">↬</a></note>
+    <note editorial="true">Gendigtning af Anna Maria Lenngrens <xref type="translation" poem="lenngren2026103101"/>.</note>
   </notes>
   <source pages="114-122"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2699,6 +2703,7 @@ Sov, beste Pige! vaagn ei meer. —
   <title>Kleons Sommeraften</title>
   <firstline>O Fred, som over Jorden breder Dig</firstline>
   <source pages="125-129"/>
+  <keywords>florian</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2869,7 +2874,7 @@ Lyde til Dannemarks Styreres Hæder
 </body>
 </text>
 
-<text id="rahbek202610291012" author="rahbek">
+<text id="rahbek202610292024" aliases="rahbek202610291012" author="rahbek">
 <head>
   <title>Barselgilde Vise</title>
   <firstline>Det er en hæslig Mode vorden</firstline>
@@ -2928,7 +2933,7 @@ Leve, og vorde sin Faders Glæde!
 </body>
 </text>
 
-<text id="pram202610291001" author="pram">
+<text id="pram202610292002" aliases="pram202610291001" author="pram">
 <head>
   <title>Bornholmsk Sang</title>
   <firstline>Naar Daarer bestandig, tidt kloge Folk med</firstline>
@@ -2996,6 +3001,7 @@ Og Venskab ved Dyd veed at vinde!
   <title>Til Rahbeks Hustrue</title>
   <firstline>Indskrænket til min tarvelige Boelig</firstline>
   <source pages="139-143"/>
+  <keywords>rahbekk,rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3104,7 +3110,7 @@ Et sikkert Lye for Venskab er at finde.
 </body>
 </text>
 
-<text id="rahbek202610291013" author="rahbek">
+<text id="rahbek202610292025" aliases="rahbek202610291013" author="rahbek">
 <head>
   <title>Vennesang</title>
   <subtitle>til en nygift Landskabsmaler.</subtitle>
@@ -3155,14 +3161,13 @@ Som du kan skildre den.
 </body>
 </text>
 
-<text id="schmidtf202610291001" author="schmidtf">
+<text id="schmidtf202610292002" aliases="schmidtf202610291001" author="schmidtf">
 <head>
   <title>Vuggevise</title>
   <subtitle>efter Claudius’s <span lang="de">die Mutter bey der Wiege.</span></subtitle>
   <firstline>Sov søde Dreng — Gud signe Dig!</firstline>
   <notes>
-    <note unknown-original-by="claudius"/>
-    <note editorial="true">Forlægget er Matthias Claudius’ »<span lang="de">Die Mutter bey der Wiege</span>«, med førstelinjen »<span lang="de">Schlaf, süßer Knabe, süß und mild!</span>«.</note>
+    <note editorial="true">Gendigtning af Matthias Claudius’ <xref type="translation" poem="claudius2026103101"/>.</note>
   </notes>
   <source pages="146"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3196,6 +3201,7 @@ Har Du hans Hierte kun.
   <title>I et Exemplar af Voß’s Luise</title>
   <firstline>Hvis ei al Verden tager Feil</firstline>
   <source pages="147"/>
+  <keywords>voss</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3217,7 +3223,7 @@ Og siig nu selv, om jeg tog Feil
 </body>
 </text>
 
-<text id="rahbek202610291014" author="rahbek">
+<text id="rahbek202610292026" aliases="rahbek202610291014" author="rahbek">
 <head>
   <title>Chloe og Lyda</title>
   <subtitle>En Efterligning.</subtitle>
@@ -3228,7 +3234,7 @@ Og siig nu selv, om jeg tog Feil
 <body>
 <poetry>
 Til Chloe maae i Allenstund
-Almont med Flor og Gazer rende;
+Aumont med Flor og Gazer rende;
 Sig Lyda klæder i Cartun;
 Men i Cartun jeg elsker hende!
 
@@ -3323,6 +3329,7 @@ End alt, hvad Chloe har at give.
   <subtitle>til Rahbek, som Ægtemand.</subtitle>
   <firstline>Med sund Fornuft, og egen Ville</firstline>
   <source pages="153-155"/>
+  <keywords>rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3358,18 +3365,18 @@ I Kamp mod Generalstaten;
 Han har kun sig at bære paa<footnote>Man kiender <span lang="la">Simonidis omnia mea mecum porto.</span></footnote>;
 Men du nu tvende bære maae.
 Nei kiære Rahbek! du var galen.
-<pb n="155" facs="178.jpg"/>     En anden ved et Ægtebaand
-   Langt mindre Fare skulde løbe;
-   Men Rahbek! hvor du gav din Haand,
-   Der maatte være <w>Held</w> at kiøbe.
-   Du kiender jo den Grund saa vel,
-   Som Tvivl om Evigheden nærte
-   I Desmoulins’s<footnote>Her er Camille Desmoulins egne Ord hvortil dette Sted sigter: <span lang="fr">Je ne dirai qu’un mot de ma femme. J’avois toujours cru à l’immortalité de l’ame. Aprez tant de sacrifices d’interêts personnels, que j’avois fait à la liberté et au bonheur du peuple, je me disois au fort de la persécution: Il faut bien, que les récompenses attendent la vertu ailleurs. Mais mon mariage est si heureux, mon bonheur domestique si grand, que j’ai craint d’avoir reçu ma récompense sur la terre, et j’avois perdu ma demonstration de l’immortalité. <i>Le vieux Cordelier No. 5.</i></span></footnote> det ædle Hierte,
-   Da Sandheden hans Liv begiærte.
-   I lige Værd, og lige Held,
-   Jeg spaaer dig samme Tvivlsmaals Væld.
+<pb n="155" facs="178.jpg"/>En anden ved et Ægtebaand
+Langt mindre Fare skulde løbe;
+Men Rahbek! hvor du gav din Haand,
+Der maatte være <w>Held</w> at kiøbe.
+Du kiender jo den Grund saa vel,
+Som Tvivl om Evigheden nærte
+I Desmoulins’s<footnote>Her er Camille Desmoulins egne Ord hvortil dette Sted sigter: <span lang="fr">Je ne dirai qu’un mot de ma femme. J’avois toujours cru à l’immortalité de l’ame. Aprez tant de sacrifices d’interêts personnels, que j’avois fait à la liberté et au bonheur du peuple, je me disois au fort de la persécution: Il faut bien, que les récompenses attendent la vertu ailleurs. Mais mon mariage est si heureux, mon bonheur domestique si grand, que j’ai craint d’avoir reçu ma récompense sur la terre, et j’avois perdu ma demonstration de l’immortalité. <i>Le vieux Cordelier No. 5.</i></span></footnote> det ædle Hierte,
+Da Sandheden hans Liv begiærte.
+I lige Værd, og lige Held,
+Jeg spaaer dig samme Tvivlsmaals Væld.
 
-<nonum><right><w>L***g*. H***d.</w></right></nonum>
+<nonum><w>L***g*. H***d.</w></nonum>
 </poetry>
 </body>
 </text>
@@ -3529,6 +3536,7 @@ Din Moder jo vanger hos dig!
   </subtitle>
   <firstline>O Guldberg! sande Rosernes Poet</firstline>
   <source pages="163-167"/>
+  <keywords>hoeghguldbergf,rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3611,7 +3619,7 @@ Naar jeg Dig selv blant mine Læger seer.
 </body>
 </text>
 
-<text id="rahbek202610291015" author="rahbek">
+<text id="rahbek202610292027" aliases="rahbek202610291015" author="rahbek">
 <head>
   <title>Til Læseren!</title>
   <source facsimile-pages="195-196"/>
