@@ -153,3 +153,16 @@ sidekontrol, individuelle fund og dispositioner, struktur- og
 geometrirapporter samt titelblads-QA ligger i
 `/private/tmp/minerva-1788/`. PDF og alle facsimiler er synkroniseret med
 Kalliopes offentlige server. OCR og scratchmateriale er ikke med i Git.
+
+
+## Folkeviseforbindelsen i Den Dødes Igienkomst
+
+Rahbeks 1788-tekst `rahbek2026103101` og 1794-varianten `rahbek2019091971`
+er forsynet med en redaktionel henvisning til *Moderen under Mulde*
+(DgF 89), `folkeviser2018041054`. Børnenes gråd, moderens tilbagekomst,
+den ældste datters tvivl ved hendes blege ansigt, de borttagne bolster og
+børnene på strå samt hanegalet viser et sikkert fælles visestof.
+Navne, børneantal og den udformede slutning er forskellige. Linket beskriver
+derfor forholdet til visetypen; det identificerer ikke optegnelsen i vores
+1882-kilde som Rahbeks konkrete trykte forlæg. Den gamle TODO i 1794-teksten
+er fjernet.
