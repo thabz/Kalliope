@@ -49,4 +49,3 @@ jq -c 'select(.type == "turn_context") | {
   effort: (.payload.effort // .payload.reasoning_effort)
 }' /sti/til/den-matchende-sessionslog.jsonl | tail -n 10
 ```
-
