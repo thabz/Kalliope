@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import { parseXml, hasBiography, checkCoverage, checkWishes, reconcileWishes, stripWishMarkers, loadPeople, readTexts } from '../tools/person-editorial.js';
+import { loadTrackedWorkFiles } from '../tools/libs/work-files.js';
+import { resolveAuthorId } from '../tools/build-static/anthologies.js';
+import { getChildByTagName } from '../tools/build-static/xml.js';
+import { parseXml, hasBiography, checkCoverage, checkWishes, reconcileWishes, stripWishMarkers, loadPeople } from '../tools/person-editorial.js';
 const person = (body = '<span data-wish="p-song"><i>Song</i></span>') => ({
   id: 'p', filename: 'fdirs/p/bio.xml',
   info: parseXml('<person type="poet"/>'),
@@ -68,12 +71,26 @@ describe('wanted texts', () => {
   });
 });
 
-it('validates the corpus and editorial registers, including untracked new people', async () => {
+it('validates the corpus and editorial registers without generated datasets, including untracked new people', () => {
   const people=loadPeople(process.cwd());
   const baseline=JSON.parse(fs.readFileSync('tools/data/biography-backlog.json','utf8'));
   const r=JSON.parse(fs.readFileSync('tools/data/wanted-texts.json','utf8'));
   expect(checkCoverage(people,baseline).errors).toEqual([]);
-  expect(checkWishes(people,r,r.entries.length === 0 ? [] : await readTexts(process.cwd())).errors).toEqual([]);
+  // CI runs before build-static. Validate confirmed targets from source XML;
+  // candidate discovery is tested with fixtures and remains a PR preparation step.
+  const targetIds = new Set(r.entries.map(wish => wish.targetId).filter(id => id != null));
+  const targets = targetIds.size === 0 ? [] : loadTrackedWorkFiles().flatMap(({ content }) => {
+    const work = parseXml(content).documentElement;
+    return Array.from(work.getElementsByTagName('text'))
+      .filter(text => targetIds.has(text.getAttribute('id')) === true &&
+        text.getAttribute('skip-index') !== 'true' &&
+        getChildByTagName(text, 'body')?.textContent.trim().length > 0)
+      .map(text => ({
+        id: text.getAttribute('id'),
+        poet_id: resolveAuthorId(text, work.getAttribute('author')),
+      }));
+  });
+  expect(checkWishes(people,r,targets).errors).toEqual([]);
   let previous;
   try { previous=JSON.parse(execFileSync('git',['show','HEAD:tools/data/biography-backlog.json'],{encoding:'utf8',stdio:['ignore','pipe','ignore']})); } catch { previous=null; }
   if (previous != null) expect(baseline.filter(id=>previous.includes(id) === false)).toEqual([]);
