@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lygdamus" country="un" nationality="it" lang="la" type="poet">
+  <name>
+    <lastname>Lygdamus</lastname>
+  </name>
+  <!-- Navnet betegner forfatterstemmen i Corpus Tibullianum III,1-6; identitet og datering er omstridt. Kilder: https://catalog.perseus.org/catalog/urn:cite:perseus:author.862 og https://academic.oup.com/book/40538/chapter-abstract/347864878. -->
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>la-romersk-litteratur</literary-periods>
+  <biography-status status="not-found" checked-on="2026-10-31">
+    <checked-source id="salmonsen2">Registeret i bind XVI går fra Lygdamis til Lygeum; intet selvstændigt opslag om Lygdamus. Han omtales i Tibullus-opslaget, bind XXIII, s. 437.</checked-source>
+    <checked-source id="salmonsen-supplement">Registeret i bind XXVI ved Ly har intet opslag om Lygdamus.</checked-source>
+    <checked-source id="salmonsen4">Siderne ved Luv–Lyssa, sp. 2824-2838, er undersøgt uden et opslag om Lygdamus.</checked-source>
+    <note>Ingen selvstændig biografi fundet i de relevante tilladte Salmonsen-udgaver. DBL er fravalgt, fordi navnet betegner en antik latinsk digter uden dansk biografisk tilknytning. Den usikre identitet giver ikke grundlag for bestemte livsdata eller et dokumenteret portræt.</note>
+  </biography-status>
+</person>

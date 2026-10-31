@@ -120,9 +120,9 @@ de uafhængige sideinventarer. Disse heuristikflag er ikke rettet ved at
 
 Otte sikre variantrelationer til eksisterende Kalliope-tekster er indsat
 efter sammenligning af de færdige kildeafskrifter. Brevet er forbundet med
-Voltaires originaltekst og Landmanden med Höltys. Rahbeks frie Tibull-gendigtning
-har en relation til originalforfatteren, men ingen udokumenteret forbindelse
-til en bestemt originalversion. Tibul er oprettet som person med livsdata
+Voltaires originaltekst og Landmanden med Höltys. Rahbeks frie Tibull-gendigtning er forbundet med første elegi i første bog,
+indsat efter den latinske Bipontinerudgave fra 1783. Originaludvalget og de
+øvrige Tibul-henvisninger er dokumenteret nedenfor. Tibul er oprettet som person med livsdata
 fra [Lex](https://lex.dk/Tibul). De tyske forlæg til Storms to digte er ikke
 sikkert identificeret; trykkets angivelse »Efter det Tydske« er bevaret.
 
@@ -171,3 +171,62 @@ Frisk OCR, kildebilleder, sideinventarer, individuelle fundregistre,
 struktur- og geometrirapporter samt titelblads-QA ligger i
 `/private/tmp/minerva-1786/`. PDF'er, OCR og scratchbilleder er ikke med i Git.
 De lokale facsimilefiler ligger i worktreets ignorerede `facsimiles/`.
+
+
+## Originaler fra Corpus Tibullianum (1783)
+
+`fdirs/tibullus/1783.xml` indeholder tre komplette elegier fra
+*Catullus, Tibullus, Propertius cum Galli fragmentis et Pervigilio Veneris*,
+Societas Bipontina, *Editio accurata*, Biponti, Typographia Societatis, 1783.
+[Kilde: Bayerische Staatsbibliothek, Bibl.Mont. 355](https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10712170-9).
+Publikationen er kun delvist indført og har derfor `incomplete`-status.
+
+| Original | Tekst-id | Trykte sider | BSB-billeder | Henvisninger i korpus |
+| --- | --- | --- | --- | --- |
+| I,1 | tibullus2026103101 | 101–103 | 165–167 | Rahbeks gendigtninger fra 1786 og 1802; mottoet i Bruuns *Baand* |
+| III,3 | lygdamus2026103101 | 147–148 | 211–212 | Baggesens *Elskerens Ønske* |
+| III,6 | lygdamus2026103102 | 153–155 | 217–219 | Titelbladsmottoet til Baggesens *Katten* og mottoet til Bruuns *Elskers-Sang til Viinflasken* |
+
+III,3 og III,6 registreres med Lygdamus som forfatterangivelse, i overensstemmelse
+med [Perseus' autoritetspost](https://catalog.perseus.org/catalog/urn:cite:perseus:author.862)
+og [den videnskabelige behandling af Lygdamus-elegierne](https://academic.oup.com/book/40538/chapter-abstract/347864878).
+Navnets historiske identitet og digtenes datering er omstridt; livsdata er
+ikke gættet. Negative biografisøgninger er registreret i personmetadata.
+
+Korpussøgningen begyndte i JSONL-filerne. Da de genererede fuldtekstfelter
+ikke rummede mottoerne, blev kilde-XML derefter undersøgt for navneformer og
+karakteristiske latinske formuleringer. Rahbek-versionerne er sikre frie
+gendigtninger af I,1: guldmotivet, kærligheden frem for rigdom, den elskedes
+sorg ved digterens død og opfordringen til at skåne hans maner følger samme
+forløb. Baggesens III,3 kan identificeres gennem hele rækken af bønner,
+rigdomseksempler og slutbønnen til kærligheds- og dødsguddommene. Mottoerne
+svarer til I,1,55, III,6,1–4 og III,6,13–17. Charis-versionen af Bruuns
+*Baand* har ikke mottoet; den eksisterende variantrelation bevares.
+
+Heynes udgave fra 1777 blev fundet i HathiTrusts katalog og Google Books,
+men et anvendeligt facsimile blev ikke tilgængeligt ad disse veje. Den
+tilgængelige latinske udgave fra 1783 foretrækkes frem for den nyere
+Perseus/Postgate-tekst fra 1915. Den tyske oversættelse fra 1783 hos e-rara
+blev fravalgt som kilde til den latinske original. Det er ikke dokumenteret,
+at Rahbek eller de øvrige danske digtere brugte netop Bipontinerudgaven.
+
+Alle otte relevante tekstsider og titelbladet er visuelt kontrolleret.
+Frisk Tesseract-OCR og BSB's hOCR gav kildekladder; Perseus blev derefter
+brugt som sammenligningshjælp. Udgavens egne læsemåder er bevaret, også hvor
+de afviger fra Postgate. De 180 verslinjer, distichernes indryk, fem interne
+sideskift og asteriskerne i trykket er kontrolleret. Helværksanalysens indrykningskandidat i I,1 er afklaret mod billederne:
+hele digtet veksler mellem heksameter og indrykket pentameter, også over
+trykstedets skillemærke. De tre meldinger om manglende billedgeometri er
+dispositioneret ved manuel kontrol af de otte sidebilleder; der er ikke kørt
+en automatisk geometrianalyse. Første korrektur er
+registreret; der er ikke udført en uafhængig anden korrektur.
+
+BSB's søgbare OCR for hele bindet er undersøgt efter `errata`, `emendanda`
+og `corrigenda`; intet rettelsesark blev fundet. Titelblad, indledningssider
+og bindets sidste sider er desuden undersøgt. Der attesteres ikke en fuld
+sidegennemgang af de udeladte tekster.
+
+De to latinske mottoer hos Bruun er flyttet til `epigraph lang="la"`.
+17 hidtil nummererede attributioner i Minerva bind III og XI er pakket ind
+i `nonum`; en kontrol af alle tre importerede Minerva-bind fandt derefter
+ingen `right`-attributioner uden denne indpakning.
