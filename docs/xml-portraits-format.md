@@ -31,11 +31,10 @@ Den samme formatter og kontrol gælder `artwork.xml`.
 
 Roden er altid `<pictures>`, og hvert portræt er et `<picture>`.
 
-Buildet kræver:
-
-- mindst ét `<picture primary="true">`
-- højst ét primært portræt
-- mindst ét portræt med `square-src`, fordi der skal kunne laves social portrait
+Buildet tillader højst ét primært portræt. Både `primary` og `square-src` er
+valgfrie. Et familieportræt eller et barndomsportræt kan dermed vises i galleriet
+uden at blive valgt som digterens repræsentative portræt, sideikon eller social
+portrait.
 
 ## Lokale portrætter
 
@@ -188,7 +187,7 @@ omkring 82. Hold kildefilen lille; normalt bør den være under 350 KiB.
 
 Regler:
 
-- Hvis `portraits.xml` findes, skal mindst et billede have `square-src`.
+- `square-src` er valgfri. Uden den genereres intet social portrait eller sideikon.
 - Det første fundne `square-src` bruges.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
@@ -234,14 +233,16 @@ Eksempel:
 
 ## Primary
 
-Der må kun være ét primært portræt:
+Der må højst være ét primært portræt:
 
 ```xml
 <picture src="p1.jpg" primary="true" square-src="p1-square.jpg">...</picture>
 ```
 
-`primary` påvirker rækkefølge/visning på biografisiden. Hvis ingen eller flere har
-`primary="true"`, fejler buildet.
+`primary` vælger startbilledet i galleriet på biografisiden og gør portrættet
+berettiget til automatisk visning under **I dag**. Uden `primary` starter galleriet
+ved det første billede, men billederne bruges ikke automatisk under **I dag**.
+Hvis flere billeder har `primary="true"`, fejler buildet.
 
 ## Registrering i collected.artwork
 
@@ -260,8 +261,8 @@ så XML kan skrive:
 
 ## Kendte faldgruber
 
-- `primary="true"` skal findes præcis én gang.
-- Mindst ét billede skal have `square-src`.
+- `primary="true"` må højst findes én gang.
+- Angiv kun `square-src`, når der er et egnet repræsentativt portræt.
 - `artwork="..."` skal pege på et kendt artwork-id.
 - Lokale `src`-billeder skal ligge i `public/images/<id>/`.
 - `square-src` skal også ligge i `public/images/<id>/`.
@@ -276,3 +277,4 @@ så XML kan skrive:
 - `fdirs/steffens/portraits.xml`: portræt udelukkende via artwork.
 - `fdirs/hugo/portraits.xml`: lokalt portræt, som også genbruges fra keyword-data.
 - `fdirs/luther/portraits.xml`: Cranach-billede via `kunst/cranach-luther`.
+- `fdirs/lundca/portraits.xml`: familieportræt uden primary og square portrait.

@@ -14,15 +14,8 @@ jest.mock('../tools/libs/helpers.js', () => ({
 }));
 
 jest.mock('../tools/build-static/xml.js', () => ({
-  loadXMLDoc: () => null,
-  safeGetText: () => null,
-  safeGetAttr: () => null,
-  getElementsByTagNames: () => [],
-  getElementsByTagName: () => [],
-  getChildrenByTagName: () => [],
-  getChildByTagName: () => null,
-  safeGetOuterXML: () => '',
-  safeGetInnerXML: () => '',
+  ...jest.requireActual('../tools/build-static/xml.js'),
+  loadXMLDoc: jest.fn(() => null),
 }));
 
 import {
@@ -31,9 +24,11 @@ import {
   writeJSON,
 } from '../tools/libs/helpers.js';
 import {
+  isFileModified,
   loadCachedJSON,
   writeCachedJSON,
 } from '../tools/libs/caching.js';
+import { loadXMLDoc, parseXMLFragment } from '../tools/build-static/xml.js';
 import {
   build_person_or_keyword_refs,
   build_mentions_data,
@@ -64,6 +59,10 @@ const work = (id, year) => ({
 
 describe('mentions data', () => {
   beforeEach(() => {
+    isFileModified.mockReset();
+    isFileModified.mockReturnValue(false);
+    loadXMLDoc.mockReset();
+    loadXMLDoc.mockReturnValue(null);
     fileExists.mockReturnValue(false);
     removeFile.mockClear();
     writeJSON.mockClear();
@@ -198,6 +197,93 @@ describe('mentions data', () => {
       'aarestrup2018110521'
     );
     expect(data.translations[0].translated.poem.id).toBe('reboul2019013101');
+  });
+
+  it.each([
+    '<note unknown-original-by="reboul"/>',
+    '<note editorial="true" unknown-original-by="reboul"/>',
+    '<note unknown-original-by="reboul" editorial="true"/>',
+    "<note editorial='true'\n unknown-original-by='reboul'/>",
+  ])('viser oversættelsen uden kendt original med %s', (note) => {
+    fileExists.mockReturnValue(true);
+    loadXMLDoc.mockReturnValueOnce(parseXMLFragment(`
+      <kalliopework>
+        <workbody>
+          <text id="aarestrup2018110521">
+            <head><notes>${note}</notes></head>
+            <body/>
+          </text>
+        </workbody>
+      </kalliopework>
+    `));
+    const collected = buildCollected();
+    collected.workids = new Map([['aarestrup', ['1863']]]);
+
+    build_person_or_keyword_refs(collected);
+    const data = build_mentions_data(
+      collected.poets.get('reboul'), 'reboul', collected, () => []
+    );
+
+    expect(data.translations).toHaveLength(1);
+    expect(data.translations[0].translation.poem.id).toBe('aarestrup2018110521');
+    expect(data.translations[0].translated).toBeUndefined();
+  });
+
+  it('genlæser uændrede værker, når indsamlingen er ændret', () => {
+    loadCachedJSON.mockImplementation((key) => {
+      if (key === 'collected.person_or_keyword_refs_by_file') {
+        return [['fdirs/aarestrup/1863.xml', []]];
+      }
+      return [];
+    });
+    isFileModified.mockImplementation(
+      filename => filename === 'tools/build-static/mentions.js'
+    );
+    fileExists.mockReturnValue(true);
+    loadXMLDoc.mockReturnValueOnce(parseXMLFragment(`
+      <kalliopework>
+        <workbody>
+          <text id="aarestrup2018110521">
+            <head><notes><note editorial="true" unknown-original-by="reboul"/></notes></head>
+            <body/>
+          </text>
+        </workbody>
+      </kalliopework>
+    `));
+    const collected = buildCollected();
+    collected.workids = new Map([['aarestrup', ['1863']]]);
+
+    build_person_or_keyword_refs(collected);
+
+    expect(collected.person_or_keyword_refs.get('reboul').translation).toEqual([
+      { translationPoemId: 'aarestrup2018110521', translatedPoemId: null },
+    ]);
+  });
+
+  it('tillader et person-keyword sammen med et link til personens digt', () => {
+    fileExists.mockReturnValue(true);
+    loadXMLDoc.mockReturnValueOnce(parseXMLFragment(`
+      <kalliopework>
+        <workbody>
+          <text id="aarestrup2018110521">
+            <head>
+              <notes><note>Se <xref poem="reboul2019013101"/>.</note></notes>
+              <keywords>reboul</keywords>
+            </head>
+            <body/>
+          </text>
+        </workbody>
+      </kalliopework>
+    `));
+    const collected = buildCollected();
+    collected.workids = new Map([['aarestrup', ['1863']]]);
+
+    build_person_or_keyword_refs(collected);
+
+    expect(collected.person_or_keyword_refs.get('reboul')).toEqual({
+      mention: ['aarestrup2018110521'],
+      translation: [],
+    });
   });
 
   it('viser mentions fra den primære variant', () => {
