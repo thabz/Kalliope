@@ -3,6 +3,10 @@
 <workhead>
   <title>Charis</title>
   <year>1797-1807</year>
+  <notes>
+    <note editorial="true">Der udkom ingen årgang for 1798.</note>
+    <note editorial="true">Facsimilerne er udarbejdet af Niels Jensen fra Dansk Forfatterleksikon.</note>
+  </notes>
   <source>
     <title>Charis</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
@@ -13,8 +17,13 @@
 </workhead>
 <workbody>
 <subwork ref="1797-charis"/>
+<subwork ref="1799-charis"/>
 <subwork ref="1800-charis"/>
 <subwork ref="1801-charis"/>
+<subwork ref="1802-charis"/>
+<subwork ref="1803-charis"/>
 <subwork ref="1804-charis"/>
+<subwork ref="1805-charis"/>
+<subwork ref="1806-charis"/>
 </workbody>
 </kalliopework>

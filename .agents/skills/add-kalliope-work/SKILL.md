@@ -88,6 +88,11 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   anvendte digitalisering eller det anvendte facsimile;
 - kontrollér alle interne referencer og id'er, herunder varianter, personer,
   kilder og billeder;
+- tilføj relevante personnøgleord i tekstens `<keywords>`, når teksten har en
+  dokumenterbar relation til andre digtere eller personer, som allerede findes
+  i Kalliope. Slå deres eksisterende person-id op. Gentag ikke personer, der
+  allerede er linket i tekstens noter, og opret ikke nye personer som led i
+  nøgleordsregistreringen. Følg `docs/keyword-system.md`;
 - kør den værkafgrænsede variantkontrol nedenfor og gennemgå kandidaterne;
 - formatér og validér med repositoryets aktuelle værktøjer;
 - kør hele testpakken før PR-oprettelse, som krævet af `AGENTS.md`;
@@ -188,3 +193,12 @@ udført, det resterende menneskelige arbejde er konkret, lokaliseret og
 overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
 for få sekunder vise, hvad der er indsat, kilden, hvad Agent har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Ved PR-forberedelsen efter tekstimport: kør `npm run person-editorial` samlet
+for PR’ens ændringer mod et opdateret JSONL-korpus, og afstem dokumenterede
+ønskematch med `npm run person-editorial -- --reconcile`. Se
+`docs/person-editorial.md`; rapporten køres ikke efter hvert build.

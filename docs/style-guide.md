@@ -36,6 +36,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 - `docs/originaltekster-til-oversaettelser.md` ved opsporing, udvælgelse,
   indsættelse eller kildeangivelse af originaltekster til oversættelser
 
+- `docs/person-editorial.md` ved biografistatus, tekstønsker og deres afstemning
+
 ## GitHub
 
 - Issues, PR-titler og PR-beskrivelser skrives på dansk.
@@ -75,6 +77,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   `content/keywords/*.xml`, `content/about/*.xml` og `fdirs/<id>/portraits.xml`.
 - Husk at `<picture artwork="...">` og `<picture portrait="...">` er referencer; metadata
   bør normalt ligge på det refererede billede i `artwork.xml` eller `portraits.xml`.
+- Registrér kun hver lokal billedfil én gang. Genbrug billedet med `artwork`-
+  eller `portrait`-referencer i stedet for flere direkte registreringer.
 - `fdirs/<id>/portraits.xml` refererer lokale filer med filnavn, fx `src="p1.jpg"` og `square-src="p1-square.jpg"`.
 - Den faktiske fil for `fdirs/<id>/portraits.xml` skal derfor være `public/images/<id>/p1.jpg`.
 - Square portraits er normalt manuelt beskårne kvadratiske billeder og skal også ligge i `public/images/<id>/`.

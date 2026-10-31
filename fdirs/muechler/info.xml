@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="muechler" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Karl Friedrich</firstname>
+    <lastname>Müchler</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1763-09-02</date>
+      <place>Stargard</place>
+    </born>
+    <dead>
+      <date>1857-01-12</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q1374429</wikidata>
+    <viaf>39387690</viaf>
+    <gnd>117147443</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-10-31">
+    <checked-source id="salmonsen2">Salmonsen 2, bind XVII og supplementets register.</checked-source>
+    <checked-source id="salmonsen-supplement">Intet relevant personopslag i supplementets alfabetiske register.</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsen, opslagene omkring Mühlhausen, Müller og Munch.</checked-source>
+    <note>Intet personopslag om Karl Friedrich Müchler fundet i de kontrollerede alfabetiske opslag under Müchler, Muchler eller Muechler. DBL 1–2 er ikke anvendt, da personen er en udenlandsk forfatter uden dokumenteret dansk biografisk tilknytning.</note>
+  </biography-status>
+</person>
