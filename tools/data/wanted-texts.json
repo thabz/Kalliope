@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "aakjaer-gravskrift-her-standsed-de-glade-klange",
+      "poetId": "aakjaer",
+      "title": "Her standsed de glade Klange",
+      "firstline": "Her standsed de glade Klange",
+      "status": "open",
+      "source": "Chr. Rimestads Aakjær-biografi i Dansk biografisk Lexikon, 2. udgave, bind I, s. 20–29, citerer Aakjærs vers på gravstenen ved Jenle. Versene er bevaret som citat i biografien, men ingen selvstændig tekstpost er identificeret ved titel-, førstelinje- og tekstsøgning i Aakjærs korpus og XML. Den senere import skal dokumentere kilden til gravskriften og dens verslinjer.",
+      "mentions": [
+        {
+          "file": "fdirs/aakjaer/bio.xml",
+          "text": "Her standsed de glade Klange, her sattes mit Livsens Maal, det er Asken af usungne Sange, der hviler i denne Skaal"
+        }
+      ]
+    },
+    {
+      "id": "grundtvig-koeligt-falder-aftenduggen",
+      "poetId": "grundtvig",
+      "title": "Køligt falder Aftenduggen",
+      "status": "open",
+      "source": "Biografien omtaler denne aftensang særskilt sammen med Som Dug paa slagne Enge. Sidstnævnte findes som Livs-Ordet og er linket, mens denne tekst ikke er identificeret ved titel-/førstelinjeopslag og kontrol af Grundtvigs XML. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Køligt falder Aftenduggen"
+        }
+      ],
+      "firstline": "Køligt falder Aftenduggen"
+    },
+    {
+      "id": "grundtvig-kongehaand-og-folkestemme",
+      "poetId": "grundtvig",
+      "title": "Kongehaand og Folkestemme",
+      "status": "open",
+      "source": "Biografien identificerer digtet som en af Grundtvigs friheds- og oplysningssange fra 1839. Ingen tilsvarende tekst identificeret i JSONL eller Grundtvigs XML; enkelte forekomster af ordet Kongehaand er ikke dette digt. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379. Identificeret som 28de Mai (1839), SJ 624.3, i Grundtvigs Værker: https://www.xn--grundtvigsvrker-7lb.dk/pdf/1839_624_3_txt.pdf .",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Kongehaand og Folkestemme"
+        }
+      ],
+      "aliases": [
+        "Konge-Haand og Folke-Stemme",
+        "28de Mai"
+      ],
+      "firstline": "Konge-Haand og Folke-Stemme"
+    },
+    {
+      "id": "grundtvig-til-min-lise-bryllupsdagen-1844",
+      "poetId": "grundtvig",
+      "title": "Til min Lise paa Bryllupsdagen 1844",
+      "status": "open",
+      "source": "Biografien angiver den konkrete titel og året og karakteriserer digtet ved den blege rose. Ikke identificeret i korpus ved titel-, motiv- og XML-kontrol. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Til min Lise paa Bryllupsdagen 1844"
+        }
+      ]
+    },
+    {
+      "id": "grundtvig-klara",
+      "poetId": "grundtvig",
+      "title": "Klara",
+      "status": "open",
+      "source": "Biografien identificerer digtet Klara og citerer Da mig traf et kulsort Øje; citatet beskrives som et minde fra Englandsrejsen 1830. Hverken titel eller dette citat er identificeret i Grundtvigs eksisterende tekster. Citatet registreres ikke som sikker førstelinje. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Klara"
+        }
+      ]
+    },
+    {
+      "id": "grundtvig-havfrusangen",
+      "poetId": "grundtvig",
+      "title": "Havfrusangen",
+      "status": "open",
+      "source": "Biografien omtaler udtrykkeligt Digtet Havfrusangen fra salmesommeren på Strandvejen og citerer Hvert et Fødenød skal dø. Ikke identificeret i det eksisterende korpus ved titel-/citatopslag og XML-kontrol; andre havfruepassager er ikke identitetsbevis. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Havfrusangen"
+        }
+      ]
+    },
+    {
+      "id": "grundtvig-dansk-ravnegalder",
+      "poetId": "grundtvig",
+      "title": "Dansk Ravnegalder",
+      "status": "open",
+      "source": "Biografien identificerer et spådomskvad, først udgivet 1909, med handling i samme år. Ikke identificeret i JSONL eller Grundtvigs XML. Titel og datering skelner det fra andre digte om ravne eller samtidens folkeånder. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Dansk Ravnegalder"
+        }
+      ]
+    },
+    {
+      "id": "grundtvig-faederneland-ved-den-boelgende-strand",
+      "poetId": "grundtvig",
+      "title": "Fæderneland ved den bølgende Strand",
+      "status": "open",
+      "source": "Biografien omtaler både det personlige digt fra 1844 og sangens brug 1848. Danmarks Haab indeholder det særskilt citerede Muldjord i Bryst ser den Høje med Lyst, men den her omtalte sang er ikke identificeret i korpus; titel- og tekstkontrol er foretaget i Grundtvigs XML. Omtalt i: Vilh. Andersen in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. VIII, pp. 356-379.",
+      "mentions": [
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Fæderneland ved den bølgende Strand"
+        },
+        {
+          "file": "fdirs/grundtvig/bio.xml",
+          "text": "Fæderneland ved den bølgende Strand"
+        }
+      ],
+      "aliases": [
+        "Fædreland ved den bølgende Strand"
+      ]
+    },
+    {
+      "id": "ingemann-dannevang-med-groenne-bred",
+      "poetId": "ingemann",
+      "title": "Dannevang med grønne Bred",
+      "status": "open",
+      "source": "Biografien fremhæver sangen blandt ungdomssamlingernes kendte digte. Thorvaldsens Museums manuskript m33, nr. 42, identificerer sangen og henviser til Julegave (1816): https://arkivet.thorvaldsensmuseum.dk/dokumenter/m33%2Cnr.42 . Værkposten Danevang (1823) er tom og opfylder ikke tekstønsket. Omtalt i: Paul V. Rubow in: Dansk biografisk Leksikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. XI, pp. 191-200.",
+      "mentions": [
+        {
+          "file": "fdirs/ingemann/bio.xml",
+          "text": "Dannevang med grønne Bred"
+        }
+      ],
+      "aliases": [
+        "Danevang med grønne Bred"
+      ],
+      "firstline": "Danevang med grønne Bred"
+    },
+    {
+      "id": "grundtvig-til-bernhard-ingemann",
+      "poetId": "grundtvig",
+      "title": "Til Bernhard Ingemann",
+      "status": "open",
+      "source": "Ingemann-biografien henviser konkret til Poetiske Skrifter, bind V, s. 62. Grundtvigs Værker identificerer dette digt ved samme sidetal (SJ 346), førstetryk 1869 med en dedikation fra 1818: https://www.xn--grundtvigsvrker-7lb.dk/pdf/1869_346_txt.pdf . Biografiens placering ved hjemkomsten 1819 bruges derfor ikke som sikker datering. Ingen tekst identificeret i Kalliopes Grundtvig-korpus ved titel-/variantopslag og XML-kontrol.",
+      "mentions": [
+        {
+          "file": "fdirs/ingemann/bio.xml",
+          "text": "Til Bernhard I."
+        }
+      ],
+      "aliases": [
+        "Til Bernhard I."
+      ],
+      "firstline": "Her kommer Thorkild Dane"
+    },
+    {
+      "id": "baggesen-knud-vidfadmes-hjemve",
+      "poetId": "baggesen",
+      "title": "Knud Vidfadmes Hjemve",
+      "status": "open",
+      "source": "Biografien opregner Hjemve som et særskilt patriotisk digt ved siden af Knud Vidfadmes Svanesang og Flaskebrevet. De to sidstnævnte findes i korpus og er linket; Hjemve er ikke identificeret ved titel-/variantopslag og kontrol af Baggesens XML. Omtalt i: Paul V. Rubow in: Dansk biografisk Lexikon, Gyldendalske Boghandels Forlag, Kbh., 2. udg., 1932-44, bd. II, pp. 15-27.",
+      "mentions": [
+        {
+          "file": "fdirs/baggesen/bio.xml",
+          "text": "Knud Vidfadmes Hjemve"
+        }
+      ]
+    },
+    {
+      "id": "leopold-byxorna",
+      "poetId": "leopold",
+      "title": "Byxorna",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Byxorna"
+        }
+      ]
+    },
+    {
+      "id": "leopold-egle-og-annette",
+      "poetId": "leopold",
+      "title": "Eglé og Annette",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Eglé og Annette"
+        }
+      ]
+    },
+    {
+      "id": "leopold-forsynen",
+      "poetId": "leopold",
+      "title": "Försynen",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Försynen"
+        }
+      ]
+    },
+    {
+      "id": "leopold-fortjanesten",
+      "poetId": "leopold",
+      "title": "Förtjänesten",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Förtjänesten"
+        }
+      ]
+    },
+    {
+      "id": "leopold-mina-nya-rum",
+      "poetId": "leopold",
+      "title": "Mina nya rum",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Mina nya rum"
+        }
+      ]
+    },
+    {
+      "id": "leopold-ode-kronprinsens-fodelse",
+      "poetId": "leopold",
+      "title": "Ode med anledning af kronprinsens födelse",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Ode med anledning af kronprinsens födelse"
+        }
+      ]
+    },
+    {
+      "id": "leopold-predikaren",
+      "poetId": "leopold",
+      "title": "Predikaren",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Predikaren"
+        }
+      ]
+    },
+    {
+      "id": "leopold-religionen",
+      "poetId": "leopold",
+      "title": "Religionen",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Religionen"
+        }
+      ]
+    },
+    {
+      "id": "leopold-skaldebref-til-kongen",
+      "poetId": "leopold",
+      "title": "Skaldebref",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus. Biografiens generiske titel og kongelige adressat identificerer ikke sikkert et bestemt versbrev; ønsket forbliver åbent indtil den konkrete tekst er afklaret.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Skaldebref"
+        }
+      ]
+    },
+    {
+      "id": "leopold-vanskapen",
+      "poetId": "leopold",
+      "title": "Vänskapen",
+      "source": "J. Cl.: Leopold, Salmonsens Konversationsleksikon, 2. udg., XV, 1923, s. 686. Omtalt i biografien; ingen konkret tekst i Kalliopes nuværende Leopold-korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/leopold/bio.xml",
+          "text": "Vänskapen"
+        }
+      ]
+    },
+    {
+      "id": "luxdorph-tossernes-lyksalighed",
+      "poetId": "luxdorph",
+      "title": "Tossernes Lyksalighed",
+      "source": "R. Paulli: Dansk Biografisk Leksikon, 2. udg., XIV (1938), s. 609. Titlen og forfatteren er identificeret med teksten i Sorøe-udgaven fra 1764, s. 180–189, efter KB’s digitalisering, Alma 99122554090405763.",
+      "status": "fulfilled",
+      "mentions": [
+        {
+          "file": "fdirs/luxdorph/bio.xml",
+          "text": "Tossernes Lyksalighed"
+        }
+      ],
+      "targetId": "luxdorph2026103103"
+    },
+    {
+      "id": "polignac-anti-lucretius",
+      "poetId": "polignac",
+      "title": "Anti-Lucretius sive de deo et natura",
+      "status": "open",
+      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XIX, s. 357, nævner læredigtet. Originaludgaven fra 1747 er registreret som blankværk. Ingen selvstændig tekstpost i Kalliopes korpus.",
+      "mentions": [
+        {
+          "file": "fdirs/polignac/bio.xml",
+          "text": "Anti-Lucretius sive de deo et natura"
+        }
+      ]
+    },
+    {
+      "id": "sturluson-hattatal",
+      "poetId": "sturluson",
+      "title": "Háttatal",
+      "status": "open",
+      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XXI, s. 846–848, nævner kvadet; Faulkes’ videnskabelige udgave, 2. udgave 2007, er registreret som blankværk. Ingen selvstændig tekstpost i Kalliopes korpus.",
+      "mentions": [
+        {
+          "file": "fdirs/sturluson/bio.xml",
+          "text": "Háttatal"
+        }
+      ]
+    }
+  ]
+}

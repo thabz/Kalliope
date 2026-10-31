@@ -95,6 +95,39 @@ describe('antologiplaceringer', () => {
     expect(toc[0].content[0].id).toBe('solnedgang');
   });
 
+  it('viser digternavne i antologier, også med nedarvet sektionsforfatter', () => {
+    const doc = new DOMParser().parseFromString(
+      `<kalliopework author="hansenfj" type="anthology"><workbody>
+        <text id="own"><head><title>Eget bidrag</title></head></text>
+        <section author="guest"><head><title>Afsnit</title></head><content>
+          <text id="guest"><head><title>Gæstebidrag</title></head></text>
+          <text id="missing" author="missing"><head><title>Uafklaret</title></head></text>
+          <text id="collection" author="collection"><head><title>Uden digter</title></head></text>
+        </content></section>
+      </workbody></kalliopework>`, 'text/xml'
+    );
+    const poets = new Map([
+      ['hansenfj', { name: { firstname: 'F. J.', lastname: 'Hansen' } }],
+      ['guest', { name: { lastname: 'Gæst' } }],
+      ['collection', { type: 'collection', name: { firstname: 'Antologier' } }],
+    ]);
+    const workbody = getChildByTagName(doc.documentElement, 'workbody');
+    const toc = build_section_toc(workbody, 'hansenfj', poets);
+    expect(toc[0].authorName).toBe('F. J. Hansen');
+    expect(toc[1]).not.toHaveProperty('authorName');
+    expect(toc[1].content[0].authorName).toBe('Gæst');
+    expect(toc[1].content[1]).not.toHaveProperty('authorName');
+    expect(toc[1].content[2]).not.toHaveProperty('authorName');
+    expect(build_section_toc(
+      doc.getElementsByTagName('content')[0], 'hansenfj', poets
+    )[0].authorName).toBe('Gæst');
+
+    doc.documentElement.removeAttribute('type');
+    const ordinaryToc = build_section_toc(workbody, 'hansenfj', poets);
+    expect(ordinaryToc[0]).not.toHaveProperty('authorName');
+    expect(ordinaryToc[1].content[0].authorName).toBe('Gæst');
+  });
+
   it('medtager en prosatekst i værkets indholdsfortegnelse', () => {
     const doc = new DOMParser().parseFromString(
       `<kalliopework author="molbech">

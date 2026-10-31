@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1779" author="herder" status="incomplete" type="poetry">
 <workhead>
-  <title>Volkslieder II</title>
+  <title>Volkslieder</title>
+  <subtitle>
+    <line>Nebst untermischten andern Stücken.</line>
+    <line>Zweiter Theil.</line>
+  </subtitle>
   <year>1779</year>
+  <source href="https://archive.org/details/HerderVolkslieder177892Bde">
+    <author id="herder">Johann Gottfried Herder</author>
+    <title>Volkslieder. Nebst untermischten andern Stücken</title>
+    <volume>2</volume>
+    <place>Leipzig</place>
+    <publisher>Weygandsche Buchhandlung</publisher>
+    <year>1779</year>
+  </source>
+  <pagebreaks/>
 </workhead>
+<workbody>
+<text id="herder2026103001">
+<head>
+  <title><num>15.</num>Weg der Liebe</title>
+  <subtitle>
+    <line>Englisch.</line>
+    <line>Erster Theil.</line>
+  </subtitle>
+  <firstline>Ueber die Berge</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af den engelske vise <xref type="translation" poem="anonymuk2026103001"/>.</note>
+  </notes>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ueber die Berge,
+    Ueber die Wellen,
+Unter den Gräbern,
+    Unter den Quellen,
+Ueber Fluthen und Seen,
+    In der Abgründe Steg,
+Ueber Felsen, über Höhen,
+    Findt Liebe den Weg!
+
+In Ritzen, in Falten,
+    Wo der Feurwurm nicht liegt,
+In Höhlen, in Spalten,
+    Wo die Fliege nicht kriecht,
+Wo Mücken nicht fliegen
+    Und schlüpfen hinweg;
+Kommt Liebe, sie wird siegen
+    Und finden den Weg!
+
+<pb n="42" facs="429.jpg"/>Sprecht, Amor sey nimmer
+    Zu fürchten, das Kind!
+Lacht über ihn immer
+    Als Flüchtling, als blind
+Und schließt ihn durch Riegel
+    Vom Taglicht hinweg;
+Durch Schlösser und Siegel
+    Findt Liebe den Weg.
+
+Wenn Phönix und Adler
+    Sich unter euch beugt,
+Wenn Drache, wenn Tyger
+    Gefällig sich neigt,
+Die Löwin läßt kriegen
+    Den Raub sich hinweg;
+Kommt Liebe, sie wird siegen
+    Und finden den Weg.
+</poetry>
+</body>
+</text>
+
+</workbody>
 </kalliopework>
