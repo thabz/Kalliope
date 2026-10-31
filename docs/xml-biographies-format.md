@@ -75,3 +75,16 @@ standardkilde, når der findes et sikkert identificeret personopslag. Følg i
 begge tilfælde den særskilte arbejdsgang i
 [`docs/salmonsen-biographies.md`](salmonsen-biographies.md), herunder kravet om
 kontrol mod facsimilen og fuldstændig transskription.
+
+## Interne henvisninger og manglende digte
+
+I nye eller bearbejdede biografier linkes alle sikkert identificerede omtaler
+af eksisterende tekster, værker og personer med `<a poem="id">ordlyd</a>`,
+`<a work="person/vaerk">ordlyd</a>` og `<a person="id">ordlyd</a>`.
+Bevar kildens ordlyd og typografi; brug ikke `<xref>` til disse henvisninger.
+Manglende digte registreres som højt ønskede tekster efter
+`docs/person-editorial.md`; `<span data-wish="id">ordlyd</span>` er en
+redaktionel markør, som fjernes ved rendering uden at ændre indholdet.
+Tilladte biografikilder er udelukkende de udgaver nævnt ovenfor. Andre kræver
+brugerens godkendelse. Eksisterende biografier gennemgås ved bearbejdning,
+ikke som en automatisk global omskrivning.

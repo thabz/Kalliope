@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1765" author="antologiergb" status="incomplete" type="anthology">
+<kalliopework id="1767" author="antologiergb" status="incomplete" type="anthology">
 <workhead>
   <title>Reliques of Ancient English Poetry</title>
-  <year>1765</year>
+  <year>1767</year>
   <identifiers>
     <wikidata>Q2142806</wikidata>
     <openlibrary-work>OL4840678W</openlibrary-work>
   </identifiers>
-  <notes>
-    <note editorial="true">Antologien udkom første gang i 1765. Kalliope bringer foreløbig tre tekster. »Child Waters« følger 2. udgave, bind 3 (1767); kildeudgaven til »The Child of Elle« og »Edom O’ Gordon« er ikke identificeret.</note>
-  </notes>
-  <source id="uidentificeret">
-    <title>Reliques of Ancient English Poetry</title>
-    <editor id="percy" type="editor">Thomas Percy</editor>
-  </source>
-  <source id="1767-bd3" href="https://en.wikisource.org/wiki/Index:Percy%27s_Reliques_of_Ancient_English_Poetry,_Volume_3,_1767.djvu">
+  <source id="1767" href="https://en.wikisource.org/wiki/Reliques_of_Ancient_English_Poetry">
     <title>Reliques of Ancient English Poetry</title>
     <editor id="percy" type="editor">Thomas Percy</editor>
     <edition>2. udg.</edition>
-    <volume>3</volume>
     <place>London</place>
     <publisher>J. Dodsley</publisher>
     <year>1767</year>
@@ -26,11 +18,24 @@
 </workhead>
 <workbody>
 
+<section>
+<head>
+  <title>Bind I</title>
+</head>
+<content>
 <text id="percy2019090802" author="percy">
 <head>
   <title><num>XI.</num>The Child of Elle</title>
   <firstline>On yonder hill a castle standes</firstline>
-  <source in="uidentificeret"/>
+  <source href="https://archive.org/details/reliquesancient29percgoog" pages="107-115">
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+    <edition>2. udg.</edition>
+    <volume>1</volume>
+    <place>London</place>
+    <publisher>J. Dodsley</publisher>
+    <year>1767</year>
+  </source>
 </head>
 <body>
 <poetry>
@@ -292,7 +297,10 @@ My lovelye Emmeline."
   <title><num>XII.</num>Edom O' Gordon</title>
   <subtitle>A Scottish Ballad</subtitle>
   <firstline>It fell about the Martinmas</firstline>
-  <source in="uidentificeret"/>
+  <source>
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+  </source>
 </head>
 <body>
 <poetry>
@@ -479,11 +487,19 @@ He's wroken his dear ladìe.
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Bind III</title>
+</head>
+<content>
 <text author="anonymuk" id="anonymuk2026102401" skip-index="true">
 <head>
-  <title>Child Waters</title>
+  <title><num>IX.</num>Child Waters</title>
   <firstline>Childe Waters in his stable stoode</firstline>
-  <source in="1767-bd3" pages="54-61"/>
+  <source in="1767" pages="54-61"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -705,6 +721,170 @@ And the bridall and the churchinge bothe
 </poetry>
 </body>
 </text>
+
+<text id="lyly2026103001" author="lyly">
+<head>
+  <title><num>XVI.</num>Cupid and Campaspe</title>
+  <firstline>Cupid and my Campaspe playd</firstline>
+  <source in="1767" pages="82"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<sc>Cupid</sc> and my Campaspe playd
+At cardes for kisses; Cupid payd:
+He stakes his quiver, bow and arrows,
+His mothers doves, and teame of sparrows;
+Loses them too; then down he throws
+The coral of his lippe, the rose
+Growing on’s cheek, (but none knows how)
+With these, the crystal of his browe,
+And then the dimple of his chinne;
+All these did my Campaspe winne.
+At last he set her both his eyes,
+She won, and Cupid blind did rise.
+  O Love! has she done this to thee?
+  What shall, alas! become of mee?
+</poetry>
+</body>
+</text>
+
+<text id="anonymsco2026103001" author="anonymsco" lang="en">
+<head>
+  <title><num>XI.</num>Waly Waly, Love be bonny</title>
+  <subtitle>A Scottish Song</subtitle>
+  <firstline>O Waly waly up the bank</firstline>
+  <notes>
+    <note lang="en">This is a very ancient song, but we could only give it from modern copies. Some editions instead of the four last lines in the second stanza have these, which have too much merit to be wholly suppressed,
+<poetry>
+“Whan cockle shells turn siller bells,
+    “And muscles grow on every tree,
+“When frost and snaw sall warm us aw’,
+    “Than sall my love prove true to me.”
+</poetry>
+See the <i>Orpheus Caledonius</i>, &amp;c.</note>
+    <note lang="en"><i>Arthur-seat</i> mentioned in ver. 17. is a hill near <i>Edinborough</i>; at the bottom of which is <i>St. Anthony’s well</i>.</note>
+  </notes>
+  <source href="https://archive.org/details/reliquesofancien1767perc/page/n190/mode/1up" pages="143-145">
+    <title>Reliques of Ancient English Poetry</title>
+    <editor id="percy" type="editor">Thomas Percy</editor>
+    <edition>2. udg.</edition>
+    <volume>3</volume>
+    <place>London</place>
+    <publisher>J. Dodsley</publisher>
+    <year>1767</year>
+  </source>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+O Waly waly up the bank,
+    And waly waly down the brae,
+And waly waly yon burn side,
+    Where I and my love wer wont to gae.
+I leant my back unto an aik,
+    I thought it was a trusty tree;
+But first it bow’d, and syne it brak,
+    Sae my true love did lightly me.
+
+O waly, waly, gin love be bonny,
+    A little time while it is new,
+But when its auld, it waxeth cauld,
+    And fades awa’ like morning dew.
+<pb n="144" facs="191.jpg"/>O wherfore shuld I busk my head?
+    Or wherfore shuld I kame my hair?
+For my true love has me forsook,
+    And says he’ll never loe me mair.
+
+Now Arthur-seat sall be my bed,
+    The sheets sall neir be fyl’d by me:
+Saint Anton’s well sall be my drink,
+    Since my true love has forsaken me.
+Marti’mas wind, whan wilt thou blaw,
+    And shake the green leaves aff the tree?
+O gentle death, whan wilt thou cum?
+    For of my life I am wearie.
+
+Tis not the frost, that freezes fell,
+    Nor blawing snaws inclemencie;
+Tis not sic cauld, that makes me cry,
+    But my loves heart grown cauld to me.
+Whan we came in by Glasgowe town,
+    We were a comely sight to see,
+My love was cled i’ th’ black velvet,
+    And I my sell in cramasie.
+
+But had I wist, before I kisst,
+    That love had been sae ill to win;
+I had lockt my heart in a case of gowd,
+    And pinnd it with a siller pin.
+<pb n="145" facs="192.jpg"/>Oh oh! if my young babe were born,
+    And set upon the nurses knee,
+And I my sell were dead and gane!
+    For a maid again Ise never be.
+</poetry>
+</body>
+</text>
+
+<text id="anonymuk2026103001" author="anonymuk">
+<head>
+  <title><num>III.</num>Love will find out the Way</title>
+  <firstline>Over the mountains</firstline>
+  <source in="1767" pages="238-239"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<sc>Over</sc> the mountains,
+    And over the waves;
+Under the fountains,
+    And under the graves;
+Over floods that are deepest,
+    Which Neptune obey;
+Over rocks that are steepest,
+    Love will find out the way.
+
+Where there is no place
+    For the glow-worm to lye;
+Where there is no space
+    For receipt of a fly;
+<pb n="239" facs="287.jpg"/>Where the midge dares not venture,
+    Lest herself fast she lay;
+If love come, he will enter,
+    And soon find out his way.
+
+You may esteem him
+    A child for his might;
+Or you may deem him
+    A coward from his flight;
+But if she, whom love doth honour,
+    Be conceal’d from the day,
+Set a thousand guards upon her,
+    Love will find out the way.
+
+Some think to lose him,
+    By having him confin’d;
+And some do suppose him,
+    Poor thing, to be blind;
+But if ne’er so close ye wall him,
+    Do the best that you may,
+Blind love, if so ye call him,
+    Will find out his way.
+
+You may train the eagle
+    To stoop to your fist;
+Or you may inveigle
+    The phenix of the east;
+The lioness, ye may move her
+    To give o’er her prey;
+But you’ll ne’er stop a lover:
+    He will find out his way.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
 
 </workbody>
 </kalliopework>

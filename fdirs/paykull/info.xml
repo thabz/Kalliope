@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="paykull" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Gustaf von</firstname>
+    <lastname>Paykull</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1757-08-21</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1826-01-28</date>
+      <place>Valloxsäby</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <gnd>121197638</gnd>
+  </identifiers>
+</person>

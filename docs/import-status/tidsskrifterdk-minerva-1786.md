@@ -6,6 +6,11 @@ Begge bind er oprettet under `tidsskrifterdk` og forbundet med tidsskriftets
 eksisterende overværk. Prosa og omslagsdigte er fravalgt efter opgavens
 redaktionelle afgrænsning. Bind 1 og 2 indgår ikke i denne ændring.
 
+PR'en er siden udvidet med bind XI fra 1788 og Rahbeks to teksthenvisninger.
+Den nye [importstatus for 1788](tidsskrifterdk-minerva-1788.md) beskriver
+udvidelsen og den seneste samlede validering. Tibul har i den forbindelse
+også fået sin fulde Salmonsen-biografi.
+
 ## Kilder
 
 *Minerva, et Maanedskrift*, bind III–IV. Kiøbenhavn, Johan Frederik Schultz,
