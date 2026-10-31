@@ -9,7 +9,6 @@ import {
 } from '../libs/caching.js';
 import {
   fileExists,
-  fileModifiedTime,
   safeMkdir,
   writeJSON,
   resizeImage,
@@ -55,17 +54,14 @@ export const parsePoetNationality = (id, country, nationality) => {
   return nationality;
 };
 
-const create_poet_square_thumb = (poetId, square_path) => {
-  const path = `public/images/${poetId}/${square_path}`;
+const createPoetSquareThumb = async (poetId, squareSource, forceRebuild) => {
+  const path = `public/images/${poetId}/${squareSource}`;
   const destFolder = `public/generated/images/${poetId}/social`;
   const jpegPath = `${destFolder}/${poetId}.jpg`;
-  const destinationModifiedTime = fileModifiedTime(jpegPath);
-  if (
-    destinationModifiedTime == null ||
-    fileModifiedTime(path) > destinationModifiedTime
-  ) {
+  const sourceModified = isFileModified(path);
+  if (forceRebuild === true || sourceModified === true || fileExists(jpegPath) === false) {
     safeMkdir(destFolder);
-    resizeImage(path, jpegPath, 600, { fit: 'cover', quality: 82 });
+    await resizeImage(path, jpegPath, 600, { fit: 'cover', quality: 82 });
   }
   return `/generated/images/${poetId}/social/${poetId}.jpg`;
 };
@@ -104,7 +100,7 @@ const literaryPeriodForApi = period => ({
   title: period.title,
 });
 
-const build_poets_first_pass = collected => {
+const build_poets_first_pass = async collected => {
   // Returns {has_poems: bool, has_prose: bool,
   //  has_texts: bool, has_works: bool}
   const hasTexts = (poetId, workIds) => {
@@ -140,7 +136,7 @@ const build_poets_first_pass = collected => {
     : new Map(loadCachedJSON('collected.poets') || []);
   const force_reload = collected_poets.size === 0;
   let found_changes = false;
-  all_poet_ids().forEach(id => {
+  for (const id of all_poet_ids()) {
     const infoFilename = `fdirs/${id}/info.xml`;
     if (!fs.existsSync(infoFilename)) {
       throw new Error(`Missing info.xml in fdirs/${id}.`);
@@ -158,10 +154,30 @@ const build_poets_first_pass = collected => {
     ];
     const relevantFilesModified = isFileModified(...relevantFiles);
     const worksModified = collected.changedWorkPoetIds?.has(id) === true;
+
+    // Refresh the generated image even when cached person metadata is unchanged.
+    // Editing a crop does not require an accompanying portraits.xml change.
+    const portraitsFilename = `fdirs/${id}/portraits.xml`;
+    const hasPortraits = fileExists(portraitsFilename);
+    let squarePortrait = null;
+    if (hasPortraits === true) {
+      const portraitsDoc = loadXMLDoc(portraitsFilename);
+      const squareSource = getElementsByTagName(portraitsDoc, 'picture')
+        .map(picture => safeGetAttr(picture, 'square-src'))
+        .find(source => source != null);
+      if (squareSource != null) {
+        squarePortrait = await createPoetSquareThumb(id, squareSource,
+          globalForceReload === true ||
+          isFileModified(portraitsFilename, 'tools/build-static/poets.js'));
+      }
+    }
     if (force_reload === false && relevantFilesModified === false && worksModified === false) {
-      return;
+      continue;
     }
     found_changes = true;
+    if (hasPortraits === true && squarePortrait == null) {
+      throw `${id} har portræt men ikke square-portrait`;
+    }
     const doc = loadXMLDoc(infoFilename);
     const p = getChildByTagName(doc, 'person');
     const country = safeGetAttr(p, 'country');
@@ -180,22 +196,6 @@ const build_poets_first_pass = collected => {
     }
     if (!isKnownPoetLanguage(lang)) {
       throw `${id} har ukendt sprog: ${lang}`;
-    }
-
-    let square_portrait = null;
-    const has_portraits = fileExists(`fdirs/${id}/portraits.xml`);
-    if (has_portraits) {
-      const portraitsDoc = loadXMLDoc(`fdirs/${id}/portraits.xml`);
-      const squares = getElementsByTagName(portraitsDoc, 'picture')
-        .map(p => safeGetAttr(p, 'square-src'))
-        .filter(s => s != null);
-      if (squares.length > 0) {
-        square_portrait = create_poet_square_thumb(id, squares[0]);
-      }
-    }
-    const has_square_portrait = square_portrait != null;
-    if (has_portraits && !has_square_portrait) {
-      throw `${id} har portræt men ikke square-portrait`;
     }
 
     const firstname = safeGetText(nameE, 'firstname');
@@ -260,7 +260,7 @@ const build_poets_first_pass = collected => {
       ...(nationality == null ? {} : { nationality }),
       lang,
       type,
-      square_portrait,
+      square_portrait: squarePortrait,
       name: {
         firstname,
         lastname,
@@ -272,8 +272,8 @@ const build_poets_first_pass = collected => {
       },
       period,
       literary_periods,
-      has_portraits,
-      has_square_portrait,
+      has_portraits: hasPortraits,
+      has_square_portrait: squarePortrait != null,
       has_works: has.has_works,
       has_poems: has.has_poems,
       has_indexed_poems: has.has_poems,
@@ -290,7 +290,7 @@ const build_poets_first_pass = collected => {
           period.dead.date !== '?'),
     };
     collected_poets.set(id, poet);
-  });
+  }
   if (found_changes) {
     writeCachedJSON('collected.poets', Array.from(collected_poets));
   }
