@@ -138,12 +138,22 @@ efter »aldrig fuldkommen« dækket af en plet. Kun slutningen »tes« er læsel
 Teksten har derfor `[…]tes` og en præcis tekstkritisk note. Et andet eksemplar
 af samme tryk er nødvendigt for at afklare resten; ingen læsning er gættet.
 
-Begge værker står som `incomplete`, med `korrektur1,kilde,side` på alle
-25 tekster. De uafhængige sessioner har gennemført deres kildekontrol, men
-deres præcise model-ID er ikke tilgængeligt. Derfor er der ikke opfundet en
-modelattestation eller tilføjet `korrektur2`. Fuld korrekturstatus kræver en
-ny, dokumenteret kontrol, som kan afgive den krævede præcise attestation.
-Udvalget må ikke beskrives som en fuldt attesteret import.
+Alle 25 tekster har nu `korrektur1,korrektur2,kilde,side`. Reviewernes egne
+sessionslogge dokumenterer `gpt-6.1-sol` med reasoning-niveau `high`; den
+tidligere antagelse om et utilgængeligt model-id er dermed afklaret.
+Modelnavne er læst fra `turn_context`, og attestationstidspunkterne kommer
+fra de afsluttende `task_complete`-poster, ikke fra filernes ændringstid:
+
+| Bind og reviewer | Afsluttet, UTC |
+| --- | --- |
+| III, januar–februar | 2026-10-28T17:07:39.486Z |
+| III, marts | 2026-10-28T17:11:20.448Z |
+| IV | 2026-10-28T17:07:56.621Z |
+
+Disse tre modelattester er indsat i værkernes `<workhead>`. De senere
+id-ændringer og denne tilføjelse ændrer alene metadata og henvisninger;
+den korrekturlæste ordlyd og struktur er uændret. Begge værker står fortsat
+som `incomplete`, og PR'en er en kladde med de øvrige udeståender ovenfor.
 
 ## Validering og lokalt materiale
 

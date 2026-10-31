@@ -111,13 +111,23 @@ tidligere del af PR'en har desuden fået sin fulde Salmonsen-biografi.
 Blankværker er bibliografiske registreringer, ikke påstande om indsat tekst.
 Luxdorphs *Tossernes Lyksalighed* er registreret som et åbent tekstønske.
 
-## Udestående
+## Korrekturattester
 
-De uafhængige sessioners præcise model-id er ikke tilgængeligt. De har
-udført kildekontrollen, men ingen præcis modelattestation kan afgives.
-Værket står derfor som `incomplete`, og alle 20 tekster har
-`korrektur1,kilde,side`. `korrektur2` og `complete` kræver en ny kontrol,
-der kan levere den krævede attestation. PR'en forbliver en kladde.
+Alle 20 tekster har nu `korrektur1,korrektur2,kilde,side`. Begge uafhængige
+revieweres egne sessionslogge dokumenterer `gpt-6.1-sol` med reasoning-niveau
+`high`. Modelnavnet kommer fra `turn_context`; tidspunktet kommer fra
+reviewerens afsluttende `task_complete`-post:
+
+| Reviewer | Afsluttet, UTC |
+| --- | --- |
+| Kildeinventar og tekster 1–16 | 2026-10-31T11:09:04.786Z |
+| Viserne og den overlappende Spurren-side | 2026-10-31T11:11:26.543Z |
+
+Begge modelattester er indsat i `<workhead>`. Ordlyd, struktur og
+kildesideskift er uændret. Værket står fortsat som `incomplete`, og PR'en
+forbliver en kladde med de øvrige redaktionelle udeståender.
+
+## Udestående
 
 Signaturerne J. G og R…… samt de tre visers forfattere er uafklarede.
 Yderligere attribution kræver en dokumenteret bibliografisk kilde.

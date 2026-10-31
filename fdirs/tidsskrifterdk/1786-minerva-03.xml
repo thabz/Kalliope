@@ -5,6 +5,10 @@
   <breadcrumbtitle>Tredie Bind (1786)</breadcrumbtitle>
   <year>1786</year>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-28T17:07:39.486Z"/>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-28T17:11:20.448Z"/>
+  </proofreadings>
   <errata status="none"/>
   <notes>
     <note editorial="true">Udvalg af bindets digte. Prosabidrag er ikke medtaget.</note>
@@ -39,7 +43,7 @@
     <note editorial="true">Tilskrevet Christen Andersen Lund i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 146.</note>
   </notes>
   <source pages="87-95" facsimile-pages="93-101"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -260,7 +264,7 @@ Vor usle Jord er ikke Taarer værd.
     <note editorial="true">Trykt med forfatterangivelsen »af C. Pram.«. I noten til »Værk af sande Mesterhaand« på s. 111 [110] er begyndelsen af et ord dækket af en plet; kun slutningen »tes« kan læses.</note>
   </notes>
   <source pages="95-112" facsimile-pages="101-118"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -604,7 +608,7 @@ Og Dyden skal dit Savn med Taarer hædre,
     <note editorial="true">Tilskrevet Edvard Storm i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 245.</note>
   </notes>
   <source pages="218-221" facsimile-pages="226-229"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -704,7 +708,7 @@ Har ei det ringeste af al vor Fryd.
     <note editorial="true">Tilskrevet Thomas Thaarup i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 253.</note>
   </notes>
   <source pages="221-231" facsimile-pages="229-239"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1036,7 +1040,7 @@ Først paa Jordens sidste Dag!
   <subtitle>Gevars Datter.</subtitle>
   <firstline>Herr Torgrim var fra Værmeland</firstline>
   <source pages="232-245" facsimile-pages="240-255"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -1367,7 +1371,7 @@ I dette fæle Kammer.
   <title>Høsten</title>
   <firstline>Høsten har jaget den yndige Sommer</firstline>
   <source pages="246-247" facsimile-pages="256-257"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1432,7 +1436,7 @@ Som og vaare døde.
     <note editorial="true">Tilskrevet Jonas Rein i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 208.</note>
   </notes>
   <source pages="351-365" facsimile-pages="363-377"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="de">
@@ -1743,7 +1747,7 @@ Og tætte Grøde tungt for Vinden bøie sig.
   <firstline>Blandt Folkets Fryde-Sang og festlig Glæde</firstline>
   <dates><performed>1786-02-01</performed></dates>
   <source pages="365-366" facsimile-pages="377-378"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1782,7 +1786,7 @@ Selv Christians Fødselsdag ved den skal hædret være.
     <note editorial="true">Tilskrevet Gerhard Faye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 76.</note>
   </notes>
   <source pages="366-377" facsimile-pages="378-389"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2079,7 +2083,7 @@ Som Verden tilbeder, som kalder sig Smag,
     <note editorial="true">Tilskrevet Edvard Storm i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 245.</note>
   </notes>
   <source pages="377-383" facsimile-pages="389-395"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2248,7 +2252,7 @@ Maa give Gienlyd i hans bange Siel.
   <subtitle>En Fortælling.</subtitle>
   <firstline>Da engang i et fremmed Land</firstline>
   <source pages="383-385" facsimile-pages="395-397"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2313,7 +2317,7 @@ Gid du maae Verden længe gavne!
   <title>En Haandfuld Tanker til Vedkommende</title>
   <firstline>I dadle mig, at jeg er stolt</firstline>
   <source pages="385-386" facsimile-pages="397-398"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2354,7 +2358,7 @@ Og aldrig var en Skurk, som I.
   <title>Over Peer Fløi<footnote>Det rette Sammenhæng med denne Peer Fløi har jeg længe ønsket mig underrettet om. Saavidt jeg erindrer, <pb n="387" facs="398.jpg"/>staaer der noget om ham i den lille Piece, kaldet <w>Kiøbenhavns Beskrivelse.</w> Men da denne ikkun fortiener meget liden Troværdighed, saa er jeg uvis, om denne saa kaldte Peer Fløi, der har været personlig kiendt af mange troeværdige gamle Folk, som jeg har levet med, og hvilke have fortalt mig hans Eventyr, dog uden, saavidt jeg erindrer, selv at have været Øievidner — om han virkelig har fløiet, og med hvad Fartøi. Maaskee dette kunde give Anledning til den rette historiske Sandheds Opdagelse — Og hvi skulde vi ikke have vor Peer Fløi, ligesaavel som Creta sin Ikarus, og Frankerige sin Pilatre de Rosier og Romain?</footnote></title>
   <firstline>For alle Ting, min Søn! hør: vogt dig for at snyde!</firstline>
   <source pages="386-387" facsimile-pages="398-399"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2379,7 +2383,7 @@ Fordi han løi.
   <title>Bonden og Svalen</title>
   <firstline>Endogsaa du, huusvante Svale</firstline>
   <source pages="387-388" facsimile-pages="399-400"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2408,7 +2412,7 @@ Hos dig, saa kommer jeg igien.
   <title>En Fortælling</title>
   <firstline>I Dalens skyggefulde Lund</firstline>
   <source pages="388-389" facsimile-pages="400-401"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2449,7 +2453,7 @@ Jeg Bog — mig selv — i Elskov glemte.
   <title>Epigram</title>
   <firstline>Fødselen som Tærning falder</firstline>
   <source pages="389" facsimile-pages="401"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2470,7 +2474,7 @@ Som er født til Kierlighed.
     <note editorial="true">Tilskrevet Jens Baggesen i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 14.</note>
   </notes>
   <source pages="390-392" facsimile-pages="402-404"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

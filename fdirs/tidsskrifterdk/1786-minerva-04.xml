@@ -5,6 +5,9 @@
   <breadcrumbtitle>Fierde Bind (1786)</breadcrumbtitle>
   <year>1786</year>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-28T17:07:56.621Z"/>
+  </proofreadings>
   <errata status="reviewed" pages="852" facsimile-pages="448"/>
   <notes>
     <note editorial="true">Udvalg af bindets digte. Prosabidrag er ikke medtaget.</note>
@@ -36,7 +39,7 @@
   <subtitle>fra hans Hustrue<footnote>Rostgaards Historie er for bekiendt til, at jeg skulde <pb n="496" facs="091.jpg"/>have nødig her at anføre den. Holberg fortæller den i sin Danmarks Histories 3die Deel. — Brevet skulde være skrevet efter Rostgaards Flugt til Kiøbenhavn, da man havde fundet hans Hest ihielskudt ved en Mose, paa en Tiid, da hans Kone endnu var i Uvished, om han levede; da Steenvinkel var henrettet, og Gerner, Tuxen og de andre ventede paa samme Skiebne. — Smaae Feil imod Historien pleier man at tilgive i Vers, — For Resten frygter jeg, det ogsaa her bliver nødvendigt at bede Læseren erindre sig, hvem det er her taler. I vore Tider vilde det være meget upassende, om man tillod sig saadanne Udtryk imod vort Naboeriges fredelige Konge, som Rostgaards Kone nødvendig maatte bruge imod sit Fædrenelands Undertrykker. L.</footnote>.</subtitle>
   <firstline>Om Skiebnen ei alt endte dine Dage</firstline>
   <source pages="495-501" facsimile-pages="91-97"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -183,7 +186,7 @@ Snart følger jeg dig, om du er ei meer.
   </subtitle>
   <firstline>Man synger næstendeels om alt paa Jorden</firstline>
   <source pages="501-526" facsimile-pages="97-122"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -781,7 +784,7 @@ Bevingede, bekiendte lille Gud!
   <subtitle>ved et privat Theaters Slutning.</subtitle>
   <firstline>Almægtig er o Vaar din skiønne Stemme!</firstline>
   <source pages="526-527" facsimile-pages="122-123"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -834,7 +837,7 @@ O kommer med det Vennesind tilbage,
   </subtitle>
   <firstline>Hvor Søvnens store Sanger sover</firstline>
   <source pages="672-674" facsimile-pages="268-270"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -926,7 +929,7 @@ Apollo dig en Krands skal række
     <note editorial="true">Tilskrevet Gerhard Faye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 76.</note>
   </notes>
   <source pages="756-765" facsimile-pages="352-361"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1217,7 +1220,7 @@ Og taget hans Morder af Dage.
     <note editorial="true">Gendigtning af Voltaires <xref type="translation" poem="voltaire2026090501"/>.</note>
   </notes>
   <source pages="782-789" facsimile-pages="378-385"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1363,7 +1366,7 @@ Vær Cæsar her; men uden Cæsars Feil!
     <note editorial="true" unknown-original-by="tibullus"/>
   </notes>
   <source pages="792-796" facsimile-pages="388-392"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1502,7 +1505,7 @@ Og bliv ham evig kier, som du er mig!
     <note editorial="true">Gendigtning af Höltys <xref type="translation" poem="holty2026100301"/>.</note>
   </notes>
   <source pages="797-800" facsimile-pages="393-396"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
