@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="toexen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>J.K. Blok</firstname>
+    <lastname>Tøxen</lastname>
+    <fullname>Jørgen Karstens Blok Tøxen</fullname>
+    <pseudonym>Waldemar Ebbesen</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1776-02-09</date>
+      <place>Rødding</place>
+    </born>
+    <dead>
+      <date>1848-02-04</date>
+      <place inon="on">Frederiksberg</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q12318759</wikidata>
+    <wikipedia-da>J.K. Blok Tøxen</wikipedia-da>
+    <viaf>107263303</viaf>
+    <gnd>14058305X</gnd>
+    <!-- ISNI: 000000007713979X (Wikidata P213; formatet har endnu intet ISNI-felt). -->
+    <biografisk-leksikon-lex-dk>J.K._Blok_Tøxen</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>TJKBlokToexen</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

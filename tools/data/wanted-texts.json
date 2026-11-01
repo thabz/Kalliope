@@ -660,6 +660,33 @@
           "text": "Ønsket"
         }
       ]
+    },
+    {
+      "id": "toexen-formaelingsdigt-1828",
+      "poetId": "toexen",
+      "title": "Formælingsdigt til Frederik Carl Christian",
+      "source": "F. Rønning: Dansk biografisk Lexikon, 1. udgave, bind 17, 1903, s. 634. Omtalt som et lyrisk digt fra 1828; ingen tekstforekomst fundet i Kalliopes JSONL-korpus ved identitetskontrol 2026-11-01.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/toexen/bio.xml",
+          "text": "Formælingsdigt til Frederik Carl Christian"
+        }
+      ]
+    },
+    {
+      "id": "eystein-lilja",
+      "poetId": "eystein",
+      "title": "Lilja",
+      "source": "F. J.: Salmonsens Konversationsleksikon, 2. udgave, bind 7, 1918, s. 631. Originalen er indført efter Finnus Johannæus: Historia ecclesiastica Islandiæ, bind 2, Havniæ, 1774, s. 398–446.",
+      "status": "fulfilled",
+      "mentions": [
+        {
+          "file": "fdirs/eystein/bio.xml",
+          "text": "Lilja"
+        }
+      ],
+      "targetId": "eystein2026110101"
     }
   ]
 }
