@@ -25,8 +25,10 @@ portræt som primært; bevar det eksisterende valg, medmindre opgaven tilsiger a
 
 Billedteksten skal være kort og kildebaseret. Gentag ikke museum og numre,
 som visningen tilføjer fra metadata. Ved et originalt portrætfotografi vises
-fotografens navn som kunstner. Fotografen bag en affotografering af et maleri,
-en skulptur eller et andet kunstværk registreres kun i en XML-kommentar ved
+fotografens navn som kunstner. Oplysninger om et fotografisk forlæg, som
+kunstneren har brugt til at skabe værket, bevares også i billedteksten,
+inklusive forlægsfotografens navn. Kreditering af en senere affotografering
+af det færdige kunstværk gemmes i en XML-kommentar ved
 billedet. Rettigheds- og licensoplysninger skal også ligge i XML-kommentarer,
 aldrig i billedtekst, `description`, `picture-note` eller andre felter, der
 vises i grænsefladen. Denne regel gælder al kunst og alle billeder i Kalliope,

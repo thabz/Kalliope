@@ -63,8 +63,10 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
-- Ved et originalt fotografi vises fotografens navn som kunstner. Oplysninger
-  om fotografen bag en affotografering af et andet kunstværk samt alle
+- Ved et originalt fotografi vises fotografens navn som kunstner. Et
+  fotografisk forlæg, som kunstneren har brugt til at skabe værket, beskrives
+  også i billedteksten, inklusive forlægsfotografens navn. Oplysninger om
+  senere affotograferinger af det færdige kunstværk samt alle
   rettigheds- og licensoplysninger gemmes i XML-kommentarer direkte ved
   billedet. De må ikke ligge i billedtekster eller andre felter, der vises i
   grænsefladen. Reglen gælder alle billeder og al kunst i Kalliope, uanset
