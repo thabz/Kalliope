@@ -6,7 +6,7 @@
   <breadcrumbtitle>Syvende Bind (1816)</breadcrumbtitle>
   <year>1816</year>
   <pagebreaks/>
-  <errata status="reviewed" facsimile-pages="600"/>
+  <errata status="reviewed" pages="[upagineret]" facsimile-pages="600"/>
   <proofreadings>
     <proofreading model="gpt-6.1-sol" datetime="2026-11-01T18:28:40+00:00"/>
   </proofreadings>
@@ -102,10 +102,14 @@ Der vil see tusind Sekler svinde.
 </poetry>
 </body>
 </text>
+
 <text id="ingemann20261101701" author="ingemann">
 <head>
   <title>Afskeds-Sang</title>
-  <subtitle><line>til Adam Oehlenschläger</line><line>ved hans Bortreise.</line></subtitle>
+  <subtitle>
+    <line>til Adam Oehlenschläger</line>
+    <line>ved hans Bortreise.</line>
+  </subtitle>
   <subtitle>Mel. Vil du være stærk og fri rc.</subtitle>
   <firstline>Drager bort af Danalund</firstline>
   <source pages="548-549" facsimile-pages="559-560"/>
@@ -161,6 +165,7 @@ Nu lev vel! du kiære Skiald!
 </poetry>
 </body>
 </text>
+
 <section id="hauch20261101701" author="hauch" level="1" variant="hauch2019010402">
 <head>
   <title>Søfarten</title>
@@ -207,6 +212,7 @@ Fletter dem løst i en Krands, og binder dem flygtigt med Straa fast.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101703">
 <head>
   <title>Bierne</title>
@@ -221,6 +227,7 @@ Andre sidde paa Vagt, vise den truende Braad.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101704">
 <head>
   <title>Gallisk Epigram</title>
@@ -235,6 +242,7 @@ Stedse du sidder paa Vagt, viser mig stedse din Braad.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101705">
 <head>
   <title>Til Læseren</title>
@@ -251,6 +259,7 @@ Vindene gynge paa Sø. Skibet er taklet og klart.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101706">
 <head>
   <title>Digtertiden</title>
@@ -269,6 +278,7 @@ Hilser den spraglede Vaar rask med de bugede Seil!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101707">
 <head>
   <title>Dioskurerne</title>
@@ -283,6 +293,7 @@ Ledas Sønner dig ei lyse i stormende Nat.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101708">
 <head>
   <title>Goethe</title>
@@ -297,6 +308,7 @@ Polydeukes, dig vist avled olympiske Zeus!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101709">
 <head>
   <title>Schiller</title>
@@ -311,6 +323,7 @@ Hiin fik den fuldendte Kraft, du fik den himmelske Flugt.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101710">
 <head>
   <title>Den advarende Muse</title>
@@ -325,6 +338,7 @@ Dem at forevige? Sligt overlad mig og dem selv!“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101711">
 <head>
   <title>Fortrøstning</title>
@@ -339,6 +353,7 @@ Lad Epigrammet sig da tumle med Voven omkring.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101712">
 <head>
   <title>Digtets Bestanddele</title>
@@ -353,6 +368,7 @@ Kold er taagede Sø, Bølgen er Vand kun og Salt.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101713">
 <head>
   <title>Sirenerne</title>
@@ -367,6 +383,7 @@ Stiger forført du i Land, dræbt er din høiere Sands.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101714">
 <head>
   <title>Harpyerne</title>
@@ -381,6 +398,7 @@ Alt at bedærve med Smuds har Recensenterne Ret.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101715">
 <head>
   <title>Første Konstdommer</title>
@@ -395,6 +413,7 @@ Hvor er den vingede Flugt, hvor er din krogede Klo?
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101716">
 <head>
   <title>Svar</title>
@@ -409,6 +428,7 @@ Intet Under da hvis Vingen bli’er frygtsom og vaad.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101717">
 <head>
   <title>Anden Konstdommer</title>
@@ -423,6 +443,7 @@ Kradse det efter i Sand, vildt med forvirrede Træk.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101718">
 <head>
   <title>Svar</title>
@@ -437,6 +458,7 @@ Kiernen kaster du bort, Skallen du knækker med Flid.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101719">
 <head>
   <title>Hele Flokken</title>
@@ -451,6 +473,7 @@ Vingernes susende Slag, støder i Dybet han ned!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101720">
 <head>
   <title>Formodning</title>
@@ -465,6 +488,7 @@ Hundenes biæffende Chor lære mig, Scylla er nær.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101721">
 <head>
   <title>Charybdis</title>
@@ -479,6 +503,7 @@ Visselig bedre det var, lod jeg den miislige Fart.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101722">
 <head>
   <title>Musen</title>
@@ -493,8 +518,11 @@ Men er først Reisen begyndt, Faren bør møde Foragt.
 </poetry>
 </body>
 </text>
+
 <section id="hauch20261101799" level="2">
-<head><title>Sphinx</title></head>
+<head>
+  <title>Sphinx</title>
+</head>
 <content>
 <text id="hauch20261101723">
 <head>
@@ -510,6 +538,7 @@ Hvis ei din kløgtige Sands ahner min indre Natur.“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101724">
 <head>
   <title>Havet</title>
@@ -524,6 +553,7 @@ Udvortes Taushed og Ro, indvortes giærende Kamp.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101725">
 <head>
   <title>Anden Gaade</title>
@@ -538,6 +568,7 @@ Fløttende aldrig sin Fod, følgende stedse Dit Fied.“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101726">
 <head>
   <title>Echo</title>
@@ -552,6 +583,7 @@ Og i Tonernes Strøm smelter det haarde Metal.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101727">
 <head>
   <title>Tredie Gaade</title>
@@ -566,6 +598,7 @@ Der, naar han vaagner til Liv, indvier Livet til Død!“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101728">
 <head>
   <title>Magneten</title>
@@ -582,8 +615,10 @@ Ak! saa kom dog engang! bind os vor Viden til Eet.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 <text id="hauch20261101729">
 <head>
   <title>Kiønnene</title>
@@ -598,6 +633,7 @@ Thi en Evighed hist har de at ene sig i.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101730">
 <head>
   <title>Øiet</title>
@@ -615,6 +651,7 @@ Og til det steenkolde Field bandt mig den grusomme Zeus.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101731">
 <head>
   <title>Øret</title>
@@ -630,6 +667,7 @@ Skuer end videre hun, fatter dog dybere Jeg.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101732">
 <head>
   <title>Følelse</title>
@@ -648,6 +686,7 @@ Og jeg føler det dybt: Sproget er ikke for mig.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101733">
 <head>
   <title>Phantasie</title>
@@ -662,6 +701,7 @@ Og som de svæve forbi, tegner jeg dristig dem hen.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101734">
 <head>
   <title>Forstand</title>
@@ -676,6 +716,7 @@ Tanken er rolig og fast, flydende kun er din Drøm.“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101735">
 <head>
   <title>Konstnerskiebne</title>
@@ -694,6 +735,7 @@ Fiern den herakliske Kraft, Formen staaer huul kun igien.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101736">
 <head>
   <title>Den bedste Verden</title>
@@ -710,6 +752,7 @@ Her det og ingensteds er, alt som du Sagen vil see.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101737">
 <head>
   <title>Forskiel</title>
@@ -724,6 +767,7 @@ Andre mangle den reent: det er de rigeste, Ven!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101738">
 <head>
   <title>Det sidste Maal</title>
@@ -738,6 +782,7 @@ Men, Mathesis, da er ogsaa dit Rige forbi.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101739">
 <head>
   <title>Hexametret</title>
@@ -752,6 +797,7 @@ Stedse forandret, min Gang ligner dog stedse sig selv.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101740">
 <head>
   <title>Aarsagen</title>
@@ -766,6 +812,7 @@ Derfor jeg lagde mig blidt Skialden i smilende Mund.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101741">
 <head>
   <title>Den antike Poesie</title>
@@ -780,6 +827,7 @@ offrede Seerens Blik Sangen den straalende Gud.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101742">
 <head>
   <title>Homer</title>
@@ -794,6 +842,7 @@ Paa Hexametrets Flugt, spreder Dit Lys overalt.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101743">
 <head>
   <title>Hans Efterfølgere</title>
@@ -808,6 +857,7 @@ Tid, og saa gaaer det vel, til Tid og Natur er forbi.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101744">
 <head>
   <title>Henriaden</title>
@@ -822,6 +872,7 @@ Broget, og kold, dog med Konst klippet af Glimmerpapiir.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101745">
 <head>
   <title>Forsvar</title>
@@ -836,6 +887,7 @@ Helios kommer med Kraft, flux er Forgyldningen væk.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101746">
 <head>
   <title>Den moderne Digter</title>
@@ -850,6 +902,7 @@ Bedre jeg tabte Dit Ord, skuende kun Din Idee.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101747">
 <head>
   <title>Ditto</title>
@@ -864,6 +917,7 @@ Indhylle meget i lidt, see! det er Konsten, min Ven!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101748">
 <head>
   <title>Det omvendte Genie</title>
@@ -878,6 +932,7 @@ I den hele Natur seer du en visnende Green.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101749">
 <head>
   <title>Det indskrænkede Blik</title>
@@ -892,6 +947,7 @@ Ak! af det Hele, min Ven! neppe Du seer et Par Fnug.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101750">
 <head>
   <title>Barndommen</title>
@@ -906,6 +962,7 @@ Sku du saavidt som du vil, barnlig bli’er stedse Dit Blik.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101751">
 <head>
   <title>Atheisten</title>
@@ -920,6 +977,7 @@ At den hele Natur mangler Betydning som du.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101752">
 <head>
   <title>Til ...</title>
@@ -934,6 +992,7 @@ Konsten lad tale, min Ven! Konstneren skiuler sig helst.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101753">
 <head>
   <title>Den Skyldfrie</title>
@@ -948,6 +1007,7 @@ Har du en Skade, du snart mærker den trykkende Sko.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101754">
 <head>
   <title>Philosophie</title>
@@ -962,6 +1022,7 @@ Barnet at danne til Mand, Natten at føre til Lys.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101755">
 <head>
   <title>Poesie</title>
@@ -976,6 +1037,7 @@ Manden at bøie til Barn, Solstik at dæmpe ved Nat.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101756">
 <head>
   <title>Udvei</title>
@@ -990,6 +1052,7 @@ Kan du det ikke, nu vel, stræb da saa høit som du kan.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101757">
 <head>
   <title>Epilog</title>
@@ -1004,6 +1067,7 @@ Stormen har lagt sig til Ro, Bølgerne bæve dog end.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101758">
 <head>
   <title>Den Videlystne</title>
@@ -1018,6 +1082,7 @@ Seer du det Gamle med Sands kommer det Nye af sig selv.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101759">
 <head>
   <title>Forsigtighedsregel</title>
@@ -1032,6 +1097,7 @@ Sad jeg først engang i Buur, kom jeg saa let ei derfra.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101760">
 <head>
   <title>Svar</title>
@@ -1046,6 +1112,7 @@ Svinger du Vingen med Kraft, standser dig Regelen ei.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101761">
 <head>
   <title>Øiemed</title>
@@ -1060,6 +1127,7 @@ Efter andre dig snildt, uden at tabe dig selv.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101762">
 <head>
   <title>Barnet</title>
@@ -1074,6 +1142,7 @@ Dengang jeg giorde det Løfte, det stedse være mig helligt:
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101763">
 <head>
   <title>Ynglingen</title>
@@ -1088,6 +1157,7 @@ Ak! men Helios dog stedse laae fiernt, som tilforn.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101764">
 <head>
   <title>Manden</title>
@@ -1102,6 +1172,7 @@ Dog er det Synet til Lyst, viden at gaae over Jord.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101765">
 <head>
   <title>Oldingen</title>
@@ -1116,6 +1187,7 @@ Fulgt af det uvisse Blik, taber i Taager omkring.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101766">
 <head>
   <title>Religion</title>
@@ -1130,6 +1202,7 @@ Slukt er det Grønne bag Sky, Stiernen er tændt i det Blaae.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101767">
 <head>
   <title>Stiernerne</title>
@@ -1144,6 +1217,7 @@ Dog det er Sandsebedrag, selv du kun seiler mod Øst.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101768">
 <head>
   <title>Ildkuglen</title>
@@ -1158,6 +1232,7 @@ Stille, Distiker, snart øine I Sky kun og Damp.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101769">
 <head>
   <title>Compasset</title>
@@ -1172,6 +1247,7 @@ Bort fra Himlen! I Distiker! Husk, I ere jo Søemænd!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101770">
 <head>
   <title>Genierne</title>
@@ -1186,6 +1262,7 @@ Distiker! dog ei til os; ak! thi de øine os ei.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101771">
 <head>
   <title>Phantasie</title>
@@ -1200,6 +1277,7 @@ Vingernes dristige Slag bære til Æthren dig flux.“
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101772">
 <head>
   <title>Fornuft</title>
@@ -1214,6 +1292,7 @@ Lykkes Kronions Æt, at det skal lykkes Enhver?
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101773">
 <head>
   <title>Sværmeri</title>
@@ -1228,6 +1307,7 @@ Sligt Eder fører kun til Lethe og Aidis Borg!
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101774">
 <head>
   <title>Den Vidtbereiste</title>
@@ -1242,6 +1322,7 @@ Men trods det udvortes Lys, Siælen blev mørk, som tilforn.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101775">
 <head>
   <title>Pallas</title>
@@ -1256,6 +1337,7 @@ Thi fra mit Indre det sprang, væbnet i skabende Kraft.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101776">
 <head>
   <title>Uveiret</title>
@@ -1270,6 +1352,7 @@ Høisler med svovlblaa Glimt over formørkede Grund.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101777">
 <head>
   <title>Dets Aarsag</title>
@@ -1284,6 +1367,7 @@ Stiernens glandsfulde Blik køles i Ætherens Strøm.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101778">
 <head>
   <title>Svulst</title>
@@ -1302,6 +1386,7 @@ Og seer du nærmere til, Farverne spille paa Steen.
 </poetry>
 </body>
 </text>
+
 <text id="hauch20261101779">
 <head>
   <title>Vendekredsen</title>
@@ -1317,8 +1402,10 @@ Ustraffet seiler den ei, trodsende, over mig hen.
 </poetry>
 </body>
 </text>
+
 </content>
 </section>
+
 <text id="oehlenschlaeger20261101701" author="oehlenschlaeger" variant="oehlenschlaeger2019020698">
 <head>
   <title>Charlotte Schimmelmann</title>
@@ -1364,5 +1451,6 @@ Tænker paa Glæden, Du nød, ved de kierlige Skytsengles Side,
 </poetry>
 </body>
 </text>
+
 </workbody>
 </kalliopework>
