@@ -136,6 +136,21 @@ De skjules for frontend og kan læses i Git, fx:
 
 Kommentarer er ikke en del af de renderede billedfelter, så de når ikke ud til brugerne.
 
+Fotografens navn vises som kunstner, når selve værket er et fotografi af
+personen. Ved en affotografering af et maleri, en skulptur eller et andet
+kunstværk gemmes fotografoplysningerne i en XML-kommentar direkte ved
+billedet. Alle rettigheds- og licensoplysninger gemmes ligeledes i
+XML-kommentarer. De må ikke stå i billedteksten, `description`, `picture-note`
+eller andre offentlige felter. Reglen gælder alle billeder i Kalliope,
+også uden for `portraits.xml`, jf. `docs/style-guide.md`.
+
+```xml
+<picture src="p1.jpg">
+  Kunstner: <i>Portræt</i>, år, maleri.
+  <!-- Affotografering: fotografens navn. Rettigheder og licens: dokumenterede oplysninger og kilde. -->
+</picture>
+```
+
 ## Museumsdata
 
 Lokale portrætter kan få eksternt museumslink via attributter:

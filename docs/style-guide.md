@@ -63,6 +63,12 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Ved et originalt fotografi vises fotografens navn som kunstner. Oplysninger
+  om fotografen bag en affotografering af et andet kunstværk samt alle
+  rettigheds- og licensoplysninger gemmes i XML-kommentarer direkte ved
+  billedet. De må ikke ligge i billedtekster eller andre felter, der vises i
+  grænsefladen. Reglen gælder alle billeder og al kunst i Kalliope, uanset
+  hvilken XML-fil billedet er registreret i.
 - Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
   kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
   Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.

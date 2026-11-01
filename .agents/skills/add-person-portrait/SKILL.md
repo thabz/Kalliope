@@ -24,7 +24,14 @@ Kontrollér visuelt både originalen og den kvadratiske fil. Markér præcis ét
 portræt som primært; bevar det eksisterende valg, medmindre opgaven tilsiger andet.
 
 Billedteksten skal være kort og kildebaseret. Gentag ikke museum og numre,
-som visningen tilføjer fra metadata. Formatér med metadataformatter og kør
+som visningen tilføjer fra metadata. Ved et originalt portrætfotografi vises
+fotografens navn som kunstner. Fotografen bag en affotografering af et maleri,
+en skulptur eller et andet kunstværk registreres kun i en XML-kommentar ved
+billedet. Rettigheds- og licensoplysninger skal også ligge i XML-kommentarer,
+aldrig i billedtekst, `description`, `picture-note` eller andre felter, der
+vises i grænsefladen. Denne regel gælder al kunst og alle billeder i Kalliope,
+ikke kun portrætter; se `docs/style-guide.md`.
+Formatér med metadataformatter og kør
 `make test`. Dokumentér kilde, filvalg, beskæring og eventuelle usikkerheder.
 Hvis ingen brugbar kilde findes, rapportér resultatet uden tom `portraits.xml`.
 Levering og Git-handlinger følger den overordnede opgave; ændr ikke dagsikoner
