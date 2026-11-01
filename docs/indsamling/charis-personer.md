@@ -50,7 +50,7 @@ Alle syv nye billeder og deres kvadratiske udsnit er visuelt kontrolleret. Filer
 | --- | --- | --- |
 | `boufflers` | [File:Le ch.er de Boufflers (BM 1901,1022.96).jpg](https://commons.wikimedia.org/wiki/File%3ALe_ch.er_de_Boufflers_%28BM_1901%2C1022.96%29.jpg) | Public domain; British Museum, 1901,1022.96. |
 | `gessner` | [File:Anton Graff Salomon Gessner.jpg](https://commons.wikimedia.org/wiki/File%3AAnton_Graff_Salomon_Gessner.jpg) | Public domain; Anton Graff, 1765–1766, Landesmuseum Zürich. |
-| `hertzjm` | [File:Jens Michael Hertz 2022 Ribe Domkirke.jpg](https://commons.wikimedia.org/wiki/File%3AJens_Michael_Hertz_2022_Ribe_Domkirke.jpg) | Foto: Hjart, 2022, CC BY-SA 4.0; kreditering og licenslink i billedteksten. |
+| `hertzjm` | [File:Jens Michael Hertz 2022 Ribe Domkirke.jpg](https://commons.wikimedia.org/wiki/File%3AJens_Michael_Hertz_2022_Ribe_Domkirke.jpg) | Foto: Hjart, 2022, CC BY-SA 4.0; kreditering og licens via det linkede kildeopslag. |
 | `lenngren` | [File:Anna Maria Lenngren (from Svenska Familj-Journalen).png](https://commons.wikimedia.org/wiki/File%3AAnna_Maria_Lenngren_%28from_Svenska_Familj-Journalen%29.png) | Public domain; Evald Hansens træsnit, Svenska Familj-Journalen. |
 | `malling` | [File:Ove Malling som ældre.jpg](https://commons.wikimedia.org/wiki/File%3AOve_Malling_som_%C3%A6ldre.jpg) | Public domain; C.A. Jensen, 1830, Frederiksborg. Foto: Saddhiyama, frigivet til public domain. |
 | `munchjs` | [File:Jacob Munch - Johan Storm Munch - Norsk portrettarkiv - Riksantikvaren - M000470 (cropped).jpg](https://commons.wikimedia.org/wiki/File%3AJacob_Munch_-_Johan_Storm_Munch_-_Norsk_portrettarkiv_-_Riksantikvaren_-_M000470_%28cropped%29.jpg) | Public domain; Jacob Munch, 1821, Norsk portrettarkiv, M000470. |
