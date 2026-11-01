@@ -16,6 +16,7 @@ import {
   get_pictures,
   stripTitleNotes,
 } from './parsing.js';
+import { poetNameString } from '../../components/poetname-helpers.js';
 import { workName } from './formatting.js';
 import { sortWorks } from '../../common/worksort.js';
 import {
@@ -29,11 +30,18 @@ import {
 } from './xml.js';
 import {
   worksForPoet,
+  textsForWork,
+  resolveAuthorId,
 } from './anthologies.js';
 
 // Rekursiv function som bruges til at bygge værkers indholdsfortegnelse,
 // men også del-indholdstegnelser til de linkbare sektioner som har en id.
-const build_section_toc = (section, workAuthorId = null) => {
+const build_section_toc = (section, workAuthorId = null, poets = new Map()) => {
+  let work = section;
+  while (work != null && tagName(work) !== 'kalliopework') {
+    work = work.parentNode;
+  }
+  const isAnthology = safeGetAttr(work, 'type') === 'anthology';
   let poems = [];
   let proses = [];
   let toc = [];
@@ -49,7 +57,14 @@ const build_section_toc = (section, workAuthorId = null) => {
         firstline ??
         extractTitle(head, 'linktitle');
       const toctitle = extractTitle(head, 'toctitle') || title;
+      const authorId = resolveAuthorId(part, workAuthorId);
+      const poet = poets.get(authorId);
+      const authorName = poet?.name != null && poet.type !== 'collection' &&
+        (isAnthology === true || authorId !== workAuthorId)
+        ? poetNameString(poet)
+        : '';
       toc.push({
+        ...(authorName.length > 0 ? { authorName } : {}),
         type: 'text',
         id: textId,
         title: htmlToXml(stripTitleNotes(toctitle).title),
@@ -58,7 +73,8 @@ const build_section_toc = (section, workAuthorId = null) => {
     } else if (partName === 'section') {
       const subtoc = build_section_toc(
         getChildByTagName(part, 'content'),
-        workAuthorId
+        workAuthorId,
+        poets
       );
       const head = getChildByTagName(part, 'head');
       const level = parseInt(safeGetAttr(part, 'level') || '1');
@@ -102,7 +118,11 @@ const build_works_toc = async (collected) => {
   const workFilesForPoet = (poetId) => {
     return Array.from(
       new Set(
-        worksForPoet(collected, poetId).flatMap(work => work.sourceFiles || [])
+        worksForPoet(collected, poetId).flatMap(work => [
+          ...(work.sourceFiles ?? []),
+          ...textsForWork(collected, poetId, work.id)
+            .map(text => `fdirs/${text.poetId}/info.xml`),
+        ])
       )
     ).filter(fileExists);
   };
@@ -167,7 +187,7 @@ const build_works_toc = async (collected) => {
         pictures: [],
       };
     }
-    let toc = build_section_toc(workbody, poetId);
+    let toc = build_section_toc(workbody, poetId, collected.poets);
     let subworks = extract_subworks(poetId, workbody, collected);
     return { lines, toc, subworks, notes, pictures, errata };
   };
@@ -181,6 +201,7 @@ const build_works_toc = async (collected) => {
       isFileModified(
         'tools/build-static/toc.js',
         'tools/build-static/parsing.js',
+        'components/poetname-helpers.js',
         'tools/build-static/source.js',
         'common/worksort.js',
         'tools/errata.js',

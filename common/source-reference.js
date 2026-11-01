@@ -1,5 +1,18 @@
 import { DOMParser } from '@xmldom/xmldom';
 
+export const removeBibliographyLinks = reference => {
+  const root = new DOMParser().parseFromString(`<source>${reference}</source>`, 'text/xml').documentElement;
+  const links = Array.from(root.getElementsByTagName('*'))
+    .filter(node => node.tagName === 'a' || node.tagName === 'xref');
+  for (const link of links) {
+    while (link.firstChild != null) {
+      link.parentNode.insertBefore(link.firstChild, link);
+    }
+    link.parentNode.removeChild(link);
+  }
+  return Array.from(root.childNodes, node => node.toString()).join('');
+};
+
 export const removeSourcePoetLinks = (reference, poetId) => {
   if (poetId == null) {
     return reference;

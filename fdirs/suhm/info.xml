@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="suhm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter Frederik</firstname>
+    <lastname>Suhm</lastname>
+    <pseudonym>Philalethus</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1728-10-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1798-09-07</date>
+      <place>Øverød</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q977261</wikidata>
+    <biografisk-leksikon-lex-dk>P.F._Suhm</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

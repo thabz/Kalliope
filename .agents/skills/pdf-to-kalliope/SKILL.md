@@ -431,6 +431,11 @@ The published attestation contains only `model` and an ISO 8601 `datetime`
 with timezone. Do not add a hash, sidecar reference or automatic invalidation
 metadata to it. Preserve older attestations when a later model adds another.
 
+When preparing a proofreading attestation, read
+[Modeloplysninger ved korrekturattestation](references/model-attestation.md)
+to resolve the reviewer's exact model and record its provenance. Follow that
+lookup before declaring the model unavailable.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.
@@ -1374,40 +1379,14 @@ Also inspect for:
 
 ## 16. Resolve persons through the existing corpus
 
-Whenever the publication names or refers to a poet, author, translator, editor
-or other relevant person, search the existing Kalliope corpus before creating
-anything new.
-
-This is especially important for:
-
-- translated poems
-- adaptations
-- mottoes and quotations
-- dedications
-- texts by contributors other than the work's primary author
-- notes that mention another poet
-
-Follow `AGENTS.md` for corpus lookup.
-
-Use the generated database `public/api/kalliope.sqlite` as the first choice
-when the required information is available there. Read
-`docs/sqlite-index.md` first.
-
-Use source XML after the database lookup when necessary to confirm:
-
-- the correct person ID
-- name variants
-- pseudonyms
-- initials
-- historical spellings
-- existing relationships
-- current markup conventions
-
-Do not create a duplicate person because the printed name differs from the
-preferred corpus name.
-
-If a new person genuinely must be created, follow all current person-format,
-source and validation rules.
+Resolve named authors, translators, editors and other persons through the
+JSONL corpus following `AGENTS.md` and `docs/corpus-dataset.md`; inspect
+specific XML when necessary. Do not create duplicates for name variants.
+Use `$add-kalliope-person` only when a person needs creation or enrichment.
+When preparing the PR after text import, run `npm run person-editorial` once
+for the PR’s changes against an up-to-date JSONL corpus; reconcile confirmed
+wish targets with `npm run person-editorial -- --reconcile`. See
+`docs/person-editorial.md`. The report does not run after every build.
 
 ## 17. Investigate translations and originals
 

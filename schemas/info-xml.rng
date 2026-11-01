@@ -23,8 +23,23 @@
           <ref name="period"/>
           <ref name="literary-periods"/>
           <ref name="identifiers"/>
+          <ref name="biography-status"/>
         </choice>
       </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="biography-status">
+    <element name="biography-status">
+      <attribute name="status"><value>not-found</value></attribute>
+      <attribute name="checked-on"><data type="date" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/></attribute>
+      <oneOrMore>
+        <element name="checked-source">
+          <attribute name="id"><choice><value>dbl1</value><value>dbl2</value><value>salmonsen2</value><value>salmonsen-supplement</value><value>salmonsen4</value><value>erslew</value><value>ehrencron-mueller</value></choice></attribute>
+          <text/>
+        </element>
+      </oneOrMore>
+      <element name="note"><text/></element>
     </element>
   </define>
 

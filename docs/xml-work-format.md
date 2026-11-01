@@ -248,9 +248,11 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 - `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`
   og `year` er valgfrie og kan forekomme højst én gang. Alle felter indeholder
   ikke-tom ren tekst. År kan bevare usikkerhed, fx `[1804]`.
-- `author`, `editor` og `translator` kan gentages. `id` er valgfrit; navnet
-  gengives som angivet og linkes, når personen findes i Kalliope. Ukendte id'er
-  vises uden link. Antologikilder har ingen `author`; samlere angives som `editor`.
+- `author`, `editor` og `translator` kan gentages. `id` er valgfrit og bevares
+  i metadata. Kildevisningen gengiver personnavne og publikationstitler uden
+  links; digitaliseringen linkes med kildeikonet fra `source/@href`. Det gælder
+  også ældre fritekstkilder. Antologikilder har ingen `author`; samlere angives
+  som `editor`.
 - `author` kan have `realname="…"` ved udgivelse under pseudonym eller en anden
   navneform. Elementets tekst er udgivelsesnavnet, og `realname` er det navn,
   der vises i parentes: `<author id="larsent" realname="Thøger Larsen">Thøger
@@ -1448,3 +1450,14 @@ Buildet tjekker blandt andet:
 - `fdirs/hugo/portraits.xml`: portraetter, inkl. genbrugt keyword-billede.
 - `content/keywords/rom.xml`: billeder via `artwork`.
 - `content/about/tags.xml`: aeldre, kommenteret oversigt over inline-tags.
+
+## Bibliografiske blankværker
+
+Et dokumenteret hovedværk kan registreres med `status="incomplete"`, normalt
+`workhead` og tomt `<workbody/>`. Opret ingen tomme `<text>`-poster.
+Sådanne værker kan modtage værklinks, men tæller ikke som indsat digttekst.
+Ved personoprettelse undersøges både gældende videnskabelig standardudgave og
+forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
+Ved PR-forberedelsen efter tekstimport køres `npm run person-editorial` samlet
+mod et opdateret JSONL-korpus, så mulige opfyldelser af tekstønsker opdages.
+Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
