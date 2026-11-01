@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1799-charis" author="antologierdk" status="incomplete" type="anthology" parent="1797-1807-charis">
+<kalliopework id="1799-charis" author="antologierdk" status="complete" type="anthology" parent="1797-1807-charis">
 <workhead>
   <title>Charis</title>
   <year>1799</year>
   <notes>
-    <note editorial="true">Det lyriske indhold er gengivet i sin helhed. Prosa er kun medtaget i udvalg.</note>
+    <note editorial="true">Værkets indhold er gengivet i sin helhed med undtagelse af den indledende almanak.</note>
     <note editorial="true">Facsimilen er udarbejdet af Niels Jensen fra Dansk Forfatterleksikon.</note>
   </notes>
   <pagebreaks/>
@@ -3536,8 +3536,11 @@ Din Moder jo vanger hos dig!
     <line>Hr. <w>F.-Høegh Guldberg.</w></line>
   </subtitle>
   <firstline>O Guldberg! sande Rosernes Poet</firstline>
+  <notes>
+    <note editorial="true">Den »rørende Fortælling« henviser til F. Høegh-Guldbergs <xref poem="hoeghguldbergf202610281001"/> i <i>Charis for 1797</i>, s. 1–20. Digtet er tilegnet Tode og slutter med en hilsen i anledning af hans sygdom.</note>
+  </notes>
   <source pages="163-167"/>
-  <keywords>hoeghguldbergf,rahbek</keywords>
+  <keywords>rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

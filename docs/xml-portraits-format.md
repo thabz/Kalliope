@@ -114,6 +114,13 @@ Brug i så fald hellere den samme `artwork="..."` direkte.
 
 ## Billedtekst og noter
 
+Medtag dokumenterede fysiske mål i billedteksten som højde × bredde med
+enhed, fx `80 × 60 cm`. Søg målene i katalog- eller museumsopslaget, og
+bevar dem ved senere redigering. Angiv, om målene gælder billedflade, blad
+eller ramme, når kilden skelner. Hvis målene ikke kan dokumenteres, gemmes
+den oplysning i en XML-kommentar ved billedet. Filens pixelmål er ikke
+værkets fysiske mål.
+
 Den enkle form er tekst direkte i `<picture>`:
 
 ```xml
@@ -135,6 +142,23 @@ De skjules for frontend og kan læses i Git, fx:
 ```
 
 Kommentarer er ikke en del af de renderede billedfelter, så de når ikke ud til brugerne.
+
+Fotografens navn vises som kunstner, når selve værket er et fotografi af
+personen. Et fotografisk forlæg, som kunstneren har brugt til at skabe
+værket, beskrives også i billedteksten, inklusive forlægsfotografens navn.
+Ved senere affotograferinger af det færdige kunstværk gemmes
+fotografoplysningerne i en XML-kommentar direkte ved
+billedet. Alle rettigheds- og licensoplysninger gemmes ligeledes i
+XML-kommentarer. De må ikke stå i billedteksten, `description`, `picture-note`
+eller andre offentlige felter. Reglen gælder alle billeder i Kalliope,
+også uden for `portraits.xml`, jf. `docs/style-guide.md`.
+
+```xml
+<picture src="p1.jpg">
+  Kunstner: <i>Portræt</i>, år, maleri.
+  <!-- Affotografering: fotografens navn. Rettigheder og licens: dokumenterede oplysninger og kilde. -->
+</picture>
+```
 
 ## Museumsdata
 

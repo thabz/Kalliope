@@ -76,6 +76,21 @@ begge tilfælde den særskilte arbejdsgang i
 [`docs/salmonsen-biographies.md`](salmonsen-biographies.md), herunder kravet om
 kontrol mod facsimilen og fuldstændig transskription.
 
+### Reservekilder
+
+Når de relevante opslag i DBL 1.–2. udgave, Salmonsen 2. udgave,
+supplementet og Den nye Salmonsen (4. udgave) er undersøgt uden en brugbar
+biografisk fremstilling, må disse to reservekilder bruges:
+
+- Th. H. Erslew: *Almindeligt Forfatter-Lexicon*.
+- H. Ehrencron-Müller: *Forfatterlexikon omfattende Danmark, Norge og Island
+  indtil 1814*.
+
+Dokumentér hvilke foretrukne kilder der er undersøgt, og hvorfor
+reservekilden bruges. Kontrollér teksten mod facsimilen, og angiv forfatter,
+værk, bind, år og sider i biografiens `<head><source>`. Reservekilderne
+erstatter ikke en brugbar biografi fra de foretrukne leksika.
+
 ## Interne henvisninger og manglende digte
 
 I nye eller bearbejdede biografier linkes alle sikkert identificerede omtaler
@@ -85,6 +100,6 @@ Bevar kildens ordlyd og typografi; brug ikke `<xref>` til disse henvisninger.
 Manglende digte registreres som højt ønskede tekster efter
 `docs/person-editorial.md`; `<span data-wish="id">ordlyd</span>` er en
 redaktionel markør, som fjernes ved rendering uden at ændre indholdet.
-Tilladte biografikilder er udelukkende de udgaver nævnt ovenfor. Andre kræver
-brugerens godkendelse. Eksisterende biografier gennemgås ved bearbejdning,
+Tilladte biografikilder er de ovennævnte leksika efter den angivne
+prioritering. Andre kræver brugerens godkendelse. Eksisterende biografier gennemgås ved bearbejdning,
 ikke som en automatisk global omskrivning.

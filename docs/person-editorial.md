@@ -17,7 +17,9 @@ søgning kræves. Kun skjulte biografier opfylder ikke kravet.
 ```
 
 Tilladte kilde-id'er: `dbl1`, `dbl2`, `salmonsen2`, `salmonsen-supplement`,
-`salmonsen4`. Undersøg de relevante tilladte kilder, og begrund udeladelser i
+`salmonsen4`, `erslew` og `ehrencron-mueller`. De sidste to er reservekilder
+efter prioriteringen i `docs/xml-biographies-format.md`. Undersøg de relevante
+tilladte kilder, og begrund udeladelser i
 noten. En gyldig markør kræver reel dato, mindst én kontrolleret kilde og
 ikke-tom begrundelse; undersøgelsens tilstrækkelighed vurderes redaktionelt.
 Markør og synlig biografi må ikke findes samtidig. Metadataformatter bruges

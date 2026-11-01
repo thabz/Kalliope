@@ -1,8 +1,13 @@
 # Biografi
 
 Læs `docs/xml-biographies-format.md` og `docs/person-editorial.md`.
-Kun DBL 1.–2. udgave, Salmonsen 2. udgave, supplementet og Den nye Salmonsen
-(4. udgave) er tilladt. Andre tekstkilder kræver brugerens godkendelse.
+Brug DBL 1.–2. udgave, Salmonsen 2. udgave, supplementet og Den nye Salmonsen
+(4. udgave) efter dokumentationens prioritering. Når de relevante opslag i
+disse kilder er undersøgt uden en brugbar biografi, er Th. H. Erslews
+*Almindeligt Forfatter-Lexicon* og H. Ehrencron-Müllers *Forfatterlexikon
+omfattende Danmark, Norge og Island indtil 1814* tilladte reservekilder.
+Dokumentér den forgæves søgning og begrund valget af reservekilde.
+Andre tekstkilder kræver brugerens godkendelse.
 Brug dokumentationens prioritering, signaturkontrol og fulde facsimilekorrektur.
 Ved OCR/PDF køres `tools/ocr-environment` først.
 
