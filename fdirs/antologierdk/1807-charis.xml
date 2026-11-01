@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1807-charis" author="antologierdk" status="incomplete" type="anthology" parent="1797-1807-charis">
+<kalliopework id="1807-charis" author="antologierdk" status="complete" type="anthology" parent="1797-1807-charis">
 <workhead>
   <title>Charis</title>
   <breadcrumbtitle>1807</breadcrumbtitle>
   <year>1807</year>
   <notes>
-    <note editorial="true">Det lyriske indhold er gengivet i sin helhed. Prosa er kun medtaget i udvalg.</note>
+    <note editorial="true">Værkets indhold er gengivet i sin helhed med undtagelse af almanakken.</note>
     <note editorial="true">Facsimilen er udarbejdet af Niels Jensen fra Dansk Forfatterleksikon.</note>
   </notes>
   <pictures>
@@ -25,6 +25,7 @@
   <errata status="none"/>
   <proofreadings>
     <proofreading model="gpt-6" datetime="2026-10-28T18:15:22+01:00"/>
+    <proofreading model="gpt-6.1-sol" datetime="2026-10-31T23:36:32+01:00"/>
   </proofreadings>
 </workhead>
 <workbody>
@@ -566,6 +567,8 @@ For lyksaligt elsket Par.
 <head>
   <title>I</title>
   <subtitle>Den 12te August, 1805.</subtitle>
+  <indextitle>O! du; hvis Blik saa venligt smiler</indextitle>
+  <linktitle>O! du; hvis Blik saa venligt smiler</linktitle>
   <firstline>O! du; hvis Blik saa venligt smiler</firstline>
   <dates>
     <event>1805-08-12</event>
@@ -617,6 +620,8 @@ Om Henriettes skiønne Liv!
 <head>
   <title>II</title>
   <subtitle>Den 12te August, 1806.</subtitle>
+  <indextitle>Som blide Morgendrømme svinde</indextitle>
+  <linktitle>Som blide Morgendrømme svinde</linktitle>
   <firstline>Som blide Morgendrømme svinde</firstline>
   <dates>
     <event>1806-08-12</event>
@@ -686,6 +691,7 @@ I elsket og elskværdig Kreds!
     <event>1806-10-19</event>
   </dates>
   <source pages="49-52" facsimile-pages="53-56"/>
+  <keywords>rahbekk</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -770,6 +776,7 @@ At bringe hende Blomster maatte lære!
   <title>E. Falsens og hans værdige Hustrues Sølvbryllup</title>
   <firstline>Hvo kan os Grønt og Blomster finde</firstline>
   <source pages="53-54" facsimile-pages="57-58"/>
+  <keywords>falsen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -820,8 +827,7 @@ End længe længe Løn den være
   <subtitle>(Efter det Svenske.)</subtitle>
   <firstline>Lille Signe, forehold ei mig</firstline>
   <notes>
-    <note editorial="true">Gendigtning af Michaël Choræus’ »Barnsligheten«, i <i>Samlade skaldestycken</i>, Örebro, N. M. Lindh, 1815, nr. 26.</note>
-    <note editorial="true" unknown-original-by="choraeus"/>
+    <note editorial="true">Gendigtning af Michaël Choræus’ <xref type="translation" poem="choraeus2026103101"/>.</note>
   </notes>
   <source pages="55-56" facsimile-pages="59-60"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -949,7 +955,7 @@ Du milde Kiæmper med det gyldne Haar.
   <subtitle>(Romance efter Franzén.)</subtitle>
   <firstline>Jeg har i Hytten, hvor jeg boer</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="franzen"/>
+    <note editorial="true">Gendigtning af Franzéns <xref type="translation" poem="franzen2026103101"/>.</note>
   </notes>
   <source pages="61-63" facsimile-pages="65-67"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1010,6 +1016,7 @@ O! fik jeg engang saadan Mage?
   </subtitle>
   <firstline>Du, som mellem Sanggudinder</firstline>
   <source pages="64-65" facsimile-pages="68-69"/>
+  <keywords>rahbekk,rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1114,175 +1121,154 @@ For den glade Seiervinder.
 </body>
 </text>
 
-<text id="hoeghguldbergf202610281010" author="hoeghguldbergf">
+<text id="rahbek2026103102" author="rahbek" ignore-tests="comma-period">
 <head>
-  <title>For Selvhad, Haan og Last blev den forførte Nar</title>
-  <firstline>For Selvhad, Haan og Last blev den forførte Nar</firstline>
-  <notes>
-    <note editorial="true">Motto til K. L. Rahbeks »Perdita Bedreværd«. Forfatteren er angivet i trykket.</note>
-  </notes>
-  <source pages="69" facsimile-pages="73"/>
+  <title>Perdita Bedreværd</title>
+  <subtitle>
+    <line>en ikke ualmindelig Historie.</line>
+    <line>(Fortalt i Breve.)</line>
+  </subtitle>
+  <nofirstline/>
+  <source pages="69-126" facsimile-pages="73-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
-<poetry>
+<epigraph>
 For Selvhad, Haan og Last blev den forførte Nar,
   Med mildest Spøgenavn Forføreren blev nævnet:
+<right><w>F. H. Guldberg.</w></right>
+</epigraph>
+<prose>
 
-<right>F. H. Guldberg.</right>
-</poetry>
-</body>
-</text>
 
-<text id="berquin20261028902" author="berquin" lang="fr">
-<head>
-  <title>Dors mon enfant! clos ta paupiere</title>
-  <firstline>Dors mon enfant! clos ta paupiere</firstline>
-  <notes>
-    <note editorial="true">Fransk sangincipit af Arnaud Berquin, citeret i K. L. Rahbeks »Perdita Bedreværd«.</note>
-    <note editorial="true">Uddrag af <xref type="quote" poem="berquin2026072301"/>.</note>
-  </notes>
-  <source pages="83" facsimile-pages="87"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-<i>Dors mon enfant! clos ta paupiere</i>
-</poetry>
-</body>
-</text>
+<center><b>H**d E**t.</b> til Udgiveren af Charis.</center>
 
-<text id="rahbek202610281015" author="rahbek">
-<head>
-  <title>Sov bedste Dreng! du sidste Glæde</title>
-  <firstline>Sov bedste Dreng! du sidste Glæde</firstline>
-  <notes>
-    <note editorial="true">Omkvæd fra K. L. Rahbeks »Vuggevise« efter Arnaud Berquin, citeret i fortællingen »Perdita Bedreværd«.</note>
-    <note editorial="true">Jævnfør <xref type="quote" poem="rahbek2019091966"/>.</note>
-    <note editorial="true">Gendigtning af Berquins <xref type="translation" poem="berquin2026072301"/>.</note>
-  </notes>
-  <source pages="84" facsimile-pages="88"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
+Sikkerlig undrer du dig, gamle Ven! at jeg skriver dig til under et litterarisk Firma; det er, veed du, ikke den Slags Correspondance, jeg pleier at være saa sysselsat med; men der er i dette Øieblik noget paa mit Hierte, der saaledes har nedtynget det, at jeg maa skaffe <pb n="70" facs="073.jpg"/>det Luft; noget, der saa usigelig har virket paa mig, og efter min Følelse saaledes maatte virke paa alle ikke aldeles fordærvede Mennesker, naar det blot blev fortalt, som det burde fortælles, og som jeg rigtig nok ikke seer mig istand til at fortælle det, jeg der ikke er vant til at skrive andet end Handelsbreve og Vexler: Jeg besluttede derfor at nedlægge det i den Barm; giør du derved, hvad dig godt synes.
+    Jeg har, som jeg troer nylig at have sagt dig, da omsider ladet mig overtale til at blive Fattigforstander i ** District. Jeg har ikke glemt, hvad du, sagtens ikke ganske uden Føie, sagde: at jeg, i saa Fald maatte vogte mig, de Fattige ikke blev mine Forstandere, isteden for jeg deres; vist nok er den ikke blot oeconomiske, men den endnu skrækkeligere physiske og moralske Elendighed, man derved bliver Vidne til, og det saa ofte uden at være istand til at raade i det mindste tilstrækkelig Bod derpaa, et sørgeligt, et martrende Syn, der bliver dobbelt nagende og knusende, naar man nu, hvad mig i Følge mit dobbelte Kald saa <pb n="71" facs="074.jpg"/>ofte vederfares, lige fra disse Jammerens Vraaer kommer hen i eet af Overdaadighedens Afgudstempler, og finder med ublu Ødselhed henkastet, maaskee for sine Fødder, en langt større Sum, end der udkrævedes til at afhielpe for hele Maaneder en heel Families Nød, eller vel endog aldeles at frelse den for Undergang; og naar man saa ydermeer betænker, føler, at dette endda langt fra ikke er Rigdoms værste, skiændigste, afskyeligste Misbrug, at den saa ofte, ikke nøiet med ikke at forekomme Laster, anvendes til umiddelbar at befordre dem, at <w>kiøbe</w>, som jeg kan huske, du et Sted efter en af dine Gamle kalder det, <w>Skiændsel i dyre Domme</w>; at det maaskee ikke var en overdreven Paastand, ”at der inden Kiøbenhavns Volde aarlig anvendes en større Summe paa at udbrede Ryggesløshed og Liderlighed ɔ: Elendighed, end paa at afhielpe den . . . . .” Dog lad mig nu ikke moralisere, som en Tilskuer eller en Aftensangspræst; jeg vil blot fortælle; Betragtningerne, og Anvendelserne lægge du til, hvor du finder fornødent.
+<pb n="72" facs="075.jpg"/>    Med alt dette, min Ven! har dette ubehagelige Forstanderskab ogsaa sin saare interessante Side; den trøstelige Erfaring, at selv der, hvor Hielp er ugiørlig eller forgiæves, den gode Villie saa ofte er Lindring og Trøst; at det langt fra ikke altid er ved at tage i Lommen, man giør sig meest velkommen; at et venligt, deeltagende, medynksomt Ord i rette Tid mangengang er virksommere og velgiødigere end Penge, det, det holder skadesløs for mange Sorgesyner; ogsaa er i Dag første Gang jeg har endt mine Forstanderbesøg med tungere Hierte, end jeg begyndt dem; første Gang, jeg har angret, at have paataget mig denne Pligt. Dog nei! lad mig ikke angre det. Noget lader jo dog vel endog her sig udrette til det bedre. Lindre lader sig dog vel, hvad ikke lader sig hæve.
+    Jeg veed ikke, om du tilfældigviis veed, at jeg har den Lykke, at vor flinke, driftige og menneskekiærlige Broder *** er Fattiglæge i det District, hvor jeg er Forstander; jeg har altid, som du veed, yndet og agtet ham før; <pb n="73" facs="076.jpg"/>men i denne vor nye Forbindelse faaer jeg ham hver Dag kiærere; og det synes næsten, som det gik ham omtrent ligedan med mig. I Morges fik jeg en Sæddel fra ham, om jeg ikke vilde møde ham i et Huus, han angav mig, hvor han var bleven kaldet til en fattig Patientinde, der var ikke ved sin Samling, og som Huusfolkene derfor vilde have paa Sancthans Hospital, hvortil han imidlertid, saa meget han paaskiønnede de der skete Forbedringer, og saa sand Agtelse han havde for Stiftelsens fortrefflige Læge, ikke gierne vilde beslutte sig, inden i det mindste jeg havde seet til hende, og talt med ham først.
+    Saasnart jeg da havde i Morges læst min Post, gik jeg derhen, og blev af en vederstyggelig raffineret Sladderkiærling, der fortalte mig meget om sit gode Hierte, og det stakkels Fruentimmer, og alt hvad hun havde giort for hende, og at man ikke kunde altid, som man vilde, og kort sagt, at Directionen maatte nu være saa god, at skille hende af med hende, ført op paa noget, som Vertinden kaldte en <pb n="74" facs="077.jpg"/>Qvistsal, men som ethvert andet Menneske neppe vilde have kaldet andet, end et Hul under Taget. Der laae paa Levningerne af noget gammelt raaddent Halm, paa et uselt Fielleleie, som Vertinden kaldte en Alcove, og hvor det blæste ind, og regnede ned giennem det brøstfældige Tag, skiult af nogle Laser, der kaldtes Sengeklæder, og nogle Pialter, der, saa skiøre og forslidte de vare, kiendelig sporedes at være Levninger fra langt bedre Dage, den ulykkelige Patientinde. Hun laae ganske stille, da vi traadde ind, med Ansigtet vendt imod Væggen; ved Lyden af vore Trin, eller rettere Vertindens, der ikke gik nær saa sagte som jeg, reiste hun Hovedet, uden dog at vende det tilside hen mod os, og sagde: Sagte, sagte! den sover. ”Aah Sladder!” skreeg nu den bittre Vertinde i en Tone, saa jeg glemte mig selv, og tog hende saa kraftig i Armen, at hun ganske forbløffet vendte sig til mig, og sagde: men min Gud! kiere Hr. **! det er jo ikke andet, end nogle Klude, hun ligger med i Armen, den stakkels vanvittige Tosse! hun <pb n="75" facs="078.jpg"/>var jo saa lykkelig, at Barnet døde paa Hospitalet, saasnart det var fød.”
+    Jeg traadde nu hen til Sengen, og saae, det var sandt, som hun sagde. Det var nogle sammenvrøvlede Klude, som dem, man i Ammestuerne pleier at give de Smaae til at lege med, hun havde i sin Arm, og laae og dæggede, og hyssede for, som om det ved vort Komme var blevet forstyrret i sin Søvn. Jeg kan ikke beskrive dig, hvor dette Syn slog mig, og hvor forbittret jeg altsaa blev paa Vertinden, som nu troede sig fuldkommen retfærdiggiort, faldt i sin gamle Hagaastone igien, og skreeg: Nu see, der seer nu Hr. Forstanderen selv, det er ikke andet end hendes Fianteri, hun ligger der med; see, saadan kan hun nu ligge hele halve Dage, og saa kan man ikke faae eet Ord af hende, saalænge hun har det at ligge og dangle med. Naa! hør nu, vend sig nu om og snak med Hr. Forstanderen!” Allerede var jeg i Begreb med at vilde tage Tag i Kiærlingen paa ny, da den Ulykkelige med en ubeskrivelig Kraft foer op, med <pb n="76" facs="079.jpg"/>den ene Arm trykkede det formeente Barn op til sit Bryst paa den Side, der vendte fra os, og med den anden bødede for sig; i det hun raabte: lad mig beholde mit Barn! o det har kostet mig nok! nok! nok! det har kostet mig nok! nok! nok! og jeg har jo intet andet tilbage. Med eet slog hun sine ubeskrivelig deilige store blaae Øine op paa os, og ligesom hensunken i Tanker, og halv ubevidst mumlede i en spørgende Tone eengang efter den anden: tilbage? tilbage? tilbage? og ved hver Gang hun gientog sit Spørgsmaal, blev hendes Øine kiendelig mattere, og hendes Tone dybere, og tilsidst næsten ganske uhørlig. Med eet begyndte hun nu at ryste med Hovedet, og stirre stivt, og som aldeles uden Bevidsthed, hen for sig, i det der eengang efter den anden af den ubevægelig aabnede Mund udslap et halvqvalt: Nei! Nei! Nei! ikke! aldrig, aldrig tilbage! Hun kastede sig derpaa ned paa Leiet igien, trykkede Kludebarnet med begge sine Arme op til sit Bryst, og stak hæftig og lydelig i at græde.
+<pb n="77" facs="080.jpg"/>    Denne Scene rystede mig saaledes, at jeg maatte træde fra Sengen hen i det Glug, som udentvivl skulde hedde et Qvistvindue, hvis ellers fire sprukne og skidne Rudestumper, der bævede hver i sin Krog af den raadne Karm, og hvis hyppige Gab Papiirlapper og Klude, og hvad det videre var, der holdt Lyset ude, og lod Vinden ind, forgiæves søgte at dække, kunde give nogen Adkomst til dette Navn. Der stod jeg for at dølge eller dæmpe mine Taarer, da i det samme vor Ven Lægen traadde ind. ”Naa! skraldede hiin modbydelige Stemme ham imøde: Naa! Gudskeelov, De er her ogsaa, saa bliver vi da vel af med det Huuskors.” ”Her bliver hun ikke, det kan De være vis paa, svarte Doctoren i en Tone, der ved sin første Lyd overtydede mig om, jeg ikke havde giort Vertinden Uret i noget af det, jeg af hendes hele Mine og Tone havde tænkt mig om hende — ”har hun sovet noget i Nat?” ”Jo! jo! sagde Vertinden noget forlegen: sove giør hun ret godt.” I det samme traadde Lægen hen til Vinduet, hvor jeg stod, men <pb n="78" facs="081.jpg"/>til min store Forundring isteden for at tage min Haand, som jeg rakte ham, greb en Mixturflaske, som der stod i Vinduet, og næsten uden at kaste et Øie paa den, holdt den for Øinene af Kiærlingen, og sagde med saa dæmpet en Stemme, at jeg var bange, han vilde kastet hende den i Hovedet: Fanden veed I, enten hun har sovet eller ikke! de Penge, jeg gav Jer i Gaar til en Vaagekone hos hende i Nat, har I efter Jer Sædvane stukket i Jer Lomme. Mixturen, som hun skulde have hver Time, er jo ikke rørt, siden jeg selv gav hende af den i Aftes. Nu og hvordan blev det da, med det, jeg sagde, hun skulde have at drikke?” ”Det staaer derhenne paa Bordet, sagde Kierlingen, som endnu ikke havde fattet sig, og pegede paa et Skaar af en gammel Spølkum.” ”Det kalder jeg skident Skyllevand, sagde Lægen, og det var Bouillon, eller Havresuppe, jeg gav Jer Penge til.” Af bare Beængstelse fik nu Kierlingen hele sin Frækhed igien. ”Jo! sagde hun: nu har man ikke andet at tage vare i et Huus, end at staae paa Pinde for at <pb n="79" facs="082.jpg"/>varte <w>saadan En</w> op. Jo! da havde man noget at bestille.”
+    Jeg saae nu paa vor Ven, at han var saa opbragt, saa jeg fandt det raadeligt at blande mig deri, at han ikke skulde forgribe sig paa hende; jeg traadde derfor imellem, og sagde med en temmelig bestemt Tone: ”<w>Saadan en</w>, Madam! er en Ulykkelig, som De skylder Agt og Medlidenhed.” ”Ja pyt! faldt hun mig med stigende Frækhed i Ordet, en Ulykkelig! o jo vist! nei Herr Doctoren veed bedre, hvad <w>saadan en</w> er; man kiender nok de unge Doctorer; ellers havde han nok ikke været saa rap til at gribe i Lommen.” Du veed, der er ingen Ting, der forbittrer mig mere, end naar Nederdrægtighed vil tillægge en goddædig og menneskekiærlig Handling lumpne Grunde. Jeg traadde altsaa tet hen for hende, med Hænderne dybt begravne i Lommen, som du har anmærket, min Maade er, naar jeg er bange for, de skulde lade sig friste til at komme i Brug, og sagde: Det er nok bedst, De gaaer, Madam! og lader Doctoren og mig <pb n="80" facs="083.jpg"/>ene snakke med den Syge. ”O ja! sagde hun, og neiede ganske spodsk for mig, og trak paa hvert Ord, som hun skulde tælle mig Bogstaverne til: O ja! ligesaameget, som De befaler; bare hun kommer mig her af Huset.” ”Det, kan De være vis paa — svarte jeg i det, jeg tvang mig med yderste Møie — hun ikke skal blive eet Øieblik længere, end til vi kan faae aftalt, hvor hun skal hen.” ”Hvor hun skal hen — faldt hun mig med sin naturlige Skiændegiæsttone i Ordet igien: ih det kan der jo aldrig være to Spørgsmaale om, hvor hun skal hen; paa Hospitalet skal hun; der er Plads til saadanne Tøse.”
+    Disse Ord hørte den Syge, der hidtil aldeles ikke videre havde tegnet til at mærke vor Samtale, end at hun, naar vi blev mere høirøstede, noget stærkere hyssede for sit Dukkebarn, som paa det det ikke skulde forstyrres i sin Søvn; med eet lagde hun det nu, satte sig overende paa sit Leie og med foldede Hænder, og i den meest giennemtrængende Tone begyndte at bede: ”O Nei! Nei! ikke til <pb n="81" facs="084.jpg"/>Hospitalet! der skal jeg aldrig komme mere Nei! nei! til min Grav, men ikke til Hospitalet! der vilde de tage mit Barn fra mig, og sagde, det var dødt, dødt, dødt! o nei! nei! tro mig, der skal jeg aldrig mere komme!” ”Nei! nei! min Gode! sagde jeg, og vilde snakke hende tilrette. De skal ikke komme paa Hospitalet, vær De kun roelig! De skal ikke!” ”Jo! nu skal hun nok see Hr. Forstanderen bryder sig om hendes Fiantesnak, begyndte nu Vertinden igien; men inden hun fik sin Periode halv til Ende, var hun ude af Dørren, og vor Ven stod ved min Side, at hielpe mig med den arme Patientinde, der ovenpaa den hæftige Sindsbevægelse fik et meget stærkt Krampetilfælde.
+    Vi havde en temmelig haard Dyst med hende. Saasnart hun var kommen nogenlunde til Rolighed igien, raadslog vi, hvad der var ved hende at giøre. At hun ligesaalidet kunde blive, hvor hun var, som bringes ud paa Hospitalet, derom var vi lettelig enige; ved kom, som ogsaa Lægen oplyste mig, den <pb n="82" facs="085.jpg"/>forfærdelige Modbydelighed, hun viiste derfor, egentlig af, at hun i sin Forvildelse troede, det var til Fødselsstiftelsen, hun skulde bringes igien; og at hun altsaa meende, man tillagde hende et nyt <w>Feiltrin</w> og et nyt <w>Fald</w>. Men at der ved det Sted, der egentlig taltes om, maatte for hende hæfte sig endnu mere smertelige og skrækkelige Ideeassociationer, var umiskiendeligt. Til Lykke erindrede jeg mig en meget skikkelig gammel Kone, der i mange Aar havde tient hos mine Svigerforældre, og som jeg vidste, havde et Værelse tilovers, hun gierne vilde have leiet ud, og hvor jeg var overbeviist om, den Syge vilde finde al den Pleie og Oppasning, hun kunde ønske sig. Da det var betænkeligt, saavel at lade den stakkels Syge ligge ene efter et saa hæftigt Anfald, hvoraf man kunde befrygte Recidiver, som at overlade hende i den lumpne Vertindes Hænder, enedes vi om, at i det vor Ven gik ud at faae Hospitalsportechaisen til at flytte hende i, skulde han underveis gaae op til Konen, der kiendte ham fra vores af, og giøre Aftale <pb n="83" facs="086.jpg"/>med hende, at hun holdt alting istand til ufortøvet at modtage den Syge; og imidlertid skulde jeg blive derhenne.
+    Jeg satte mig da hen i en Krog, hvor jeg, uden stort at falde hende i Øinene, kunde holde Øie med hende; og, da jeg saae, hun laae ganske stille, gav jeg mig til at blade i det fierde Bind af de saa kaldte iversenske Poesiesamling, som jeg, da jeg havde isinde at gaae lige fra mit Sygebesøg ud paa ** til min Familie, havde stukket i Lommen, at læse underveis. Jeg veed ikke, om det var Tilfældet, eller ubevidst Valg, der just slog Oversættelsen af Berqvins deilige: <span lang="fr"><i>Dors mon enfant! clos ta paupiere</i><note editorial="true">Uddrag af Berquins <xref poem="berquin2026072301"/>.</note></span> op for mig. Jeg kan ikke sige, jeg læste den; for det havde jeg i det Øieblik ikke Samling til; men jeg stirrede paa den, medens mit fulde Hierte af Alt det, jeg havde været Vidne til, sammensatte en anden, maaskee ikke mindre rørende Klagesang, hvis jeg havde haft Ord at indklæde og udtrykke, hvad jeg følte. Men tænk dig nu, om det ikke maatte være for mig, som et rædsomt <pb n="84" facs="087.jpg"/>Kogleri, da hun i det samme begyndte at nynne for sit Kludebarn, og midt imellem de forvirrede Sangstumper af thaarupske, og baggesenske, guldbergske, og frankenauske, og dine Sange, med eet faldt ind med Omqvædet af den Sang, jeg havde for mig, og sang:
+</prose>
 <poetry>
 Sov bedste Dreng! du sidste Glæde,
     Den haarde Skiæbne under mig;
 Sov bedste Dreng! hold op at græde,
-    Bedrøv mig ikke med dit Skrig.
+    Bedrøv mig ikke med dit Skrig.<note editorial="true">Omkvæd fra Rahbeks <xref poem="rahbek2019091966"/> efter Berquins <xref poem="berquin2026072301"/>.</note>
 </poetry>
-</body>
-</text>
+<prose>
+og det paa den Melodie, som jeg med saa megen Føie kunde troe ikke at være kiendt uden for vor Kreds! Som ude af mig selv foer jeg op af min Stoel hen til Sengen, ængstlig for at gienkiænde, jeg kunde ikke vide, hvem af vor Vennecirkel.
+    Jeg afbrydes; en af dine Venner, har du engang sagt mig, erklærer det for en Lykke ved Forretningslivet, at det saa siælden levner en Tid og Sands til at sørge; jeg kan ikke heri sympathisere med ham; thi for mig er det dets tungeste Forbandelse, at det saa sielden under os Frist til at være Menneske. Lev vel, og elsk din Ven.
+<right><b>H***d E**t</b></right>
 
-<text id="anonym1800se20261028904" author="anonym1800se" lang="sv">
-<head>
-  <title>Hörar nu til</title>
-  <firstline>Hörar nu til</firstline>
-  <notes>
-    <note editorial="true">Tre vers af en gammel svensk drikkevise, citeret i K. L. Rahbeks »Perdita Bedreværd«. Forfatteren er ikke angivet.</note>
-  </notes>
-  <source pages="97" facsimile-pages="101"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
+
+<pb n="85" facs="088.jpg"/><center><b>H***d E**t</b> til Udgiveren af Charis.</center>
+<center>(Andet Brev.)</center>
+
+    Jeg begriber overmaade lettelig, min Ven! at din Forventning ved den Maade, hvorpaa jeg nødtes at afbryde forrige Brev, ikke er mindre ængstlig spændt, end min var, hvo dog dette Fruentimmer kunde være, der efter den Omstændighed med den saavidt kiendte Melodie at slutte, neppe kunde være os fremmed; ogsaa er jeg fuldkommen sikker paa, du mere end eengang i dine Tanker har giennemløbet det sikkerlig ikke ringe Antal af Letsindigheds, Forfængeligheds, indbildt og digtet Lidenskabs, og nedrig Forførelses Offere, du paa din Vandring i Livet har lært at kiende og ynke, og ved hvis Vanskiæbne og Fordærv jeg saa ofte har seet dit Hierte at bløde. Jeg skynder mig derfor at tage Pennen igien for at ende denne din ængstlige Uvished med at sige dig, at jeg, da jeg — gierne kunde jeg sige med Livet i Hænderne — styrtede hen for Sengen, til min Beroligelse, skiøndt ikke uden Overraskelse er<pb n="86" facs="089.jpg"/>kiendte, at denne arme Ulykkelige i det mindste ikke var nogen Bekiendt. Vel var det mig, som jeg skulde have seet hende tilforn; men jeg erkiendte snart, at hendes Ansigt, saameget det end ved hendes nærværende Sinds og Legems Lidelser var skiemmet, hørte hen mellem dem, som man ved første Øiekast saa let troer at gienkiende, fordi man ikke behøver uden dette til at erkiænde den blide hulde elskelige Siel, der beboer. Meer paafaldende og uforklarligt var mig derimod det Phænomen, at, da i det samme ved en Bevægelse af hendes Hoved en stor Bølge af hendes usigelig deilige lange castaniebrune Haar rullede ned, og slyngede sig om hende overmaade smukke hvide Arm, dette Syn slog mig, som bekiendt, uden at jeg paa nogen Maade vidste, hvor jeg skulde føre det hen; saa meget mere, som jeg paa samme Tid lagde Mærke, til at hendes høist interessante og sonore Stemme og noget udenbyes skiøndt høist urbane Dialect vare mig fuldkommenlig fremmede.
+    Som jeg nu stod og grublede, og ikke var <pb n="87" facs="090.jpg"/>istand til at finde ud af alt dette, kom vor Ven Lægen tilbage, tilligemed Hospitalets Bærestoel, og den gamle Kone, vor Syge skulde henflyttes til, og som var fulgt op med for at samle hendes Tøi og hielpe os at flytte det og hende. Saare snart vilde imidlertid Samlingen og Indpakningen af hendes Tøi være tilendebragt, da det vilde have indskrænket sig til det, den Arme havde paa, og det Kludebarn, hun havde i Armen, havde ikke Giærrighed her selv slaaet sin egen Herre paa Halsen, i det den ærlige Vertinde, da hun saae disse Tilberedelser til Flytningen, fandt for godt at indfinde sig igien for at giøre Indsigelser imod, at ikke det mindste af hendes Tøi maatte flyttes, inden de havde faaet deres Tilgodehavende for Leien. Allerede var vor Ven Lægen ifærd med at betyde hende, at hun havde ganske skikkelig sparet os Umagen med at flytte; og gaae igiennem for hende, saa nogenlunde Stykke for Stykke, at omtrent alt, hvad hun giorde der Stads med, fra et meget kostbart Shawl af, hun havde om sig, <pb n="88" facs="091.jpg"/>og indtil hendes Sko, havde han kiendt hos den Ulykkelige, hvilket da Vertinden igien begyndte at besvare med spidse Anmærkninger over Hr. Doctorens nøie Kiendskab til Jomfruen og alle hendes Ting, da jeg fandt mig nødsaget at træde imellem, og tage til Orde, og spurgte Konen, om hun ikke kiendte mig? Dette Spørgsmaal syntes hun i Begreb at besvare med Complimenter, men jeg brød hende af og sagde: ”Jeg forlanger ligesaalidt, De skal sige mig, hvem jeg er, som jeg troer, De skiøtter om, jeg skal fortælle Dem, hvem De er; det er nok, naar jeg siger Dem, at jeg staaer Dem inde for, hvad De kan have tilgode hos Patientinden, og at De skal faae Deres Penge, saasnart hun kommer sig saavidt, at hun selv nogenlunde kan giøre Rede for, hvad hun troer at være Dem skyldig.” ”Ja! det kan længe vare, sagde hun, og imidlertid . . .” ”Jeg var bleven vred; jeg tog en Halvhundrededaler Sæddel op af Lommen, slængte hen til hende, og sagde: der er halvhundrede Daler; dem kan De tage saalænge; <pb n="89" facs="092.jpg"/>døer hun, kan De beholde dem, og saa troer jeg nok, baade De og Deres Tilgodehavende er mere end betalt; skulde hun komme sig, give vi Afregning.”
+    Til min store Forundring havde Vertinden, i Steden for at tage imod den Halvhundrededalersæddel, jeg havde slængt hen paa en Stoel, meget travelt med at rømme af et gammelt halvt trebenet Bord, der stod for Sengen, som for at faae det til Side, at det ikke skulde staae i Veien, naar den Syge skulde flyttes; imidlertid havde jeg neppe givet mig videre Tanke om det, end at det var den sædvanlige nederdrægtige Tienstfærdighed, der kommer over det Slags Mennesker, naar de seer Penge, havde ikke i det samme den gamle Kone, der nok kiendte Madamen i det mindste af Rygte, og der uden at lade sig mærke med nogen Ting, havde holdt Øie med hende, i det hun vilde sætte Bordet i Qvist-Vinduet, som hun bestandig med en vis Ængstlighed havde gaaet og skottet til, traad imellem, og sagt: Aah nei, lille Madam! vær De saa god, og sæt <pb n="90" facs="093.jpg"/>ikke Bordet saa nær hen for Vinduet, at man kan komme til her; og i det samme skiød hun et Slags Skud tilside, der var i Panelet under Vinduet, og begyndte af det Rum, der var under Taget, at trække en heel Deel Fruentimmerklæder, Linned og andet deslige frem, der deels i Bylter, deels sammenvrøvlet var henputtet, for at flyttes ved Tid og Leilighed.
+    Vertinden, der ved denne Opdagelse kom aldeles ud af sin Fatning, og der mærkede, at alle vore Øine hang paa hende, som de vilde see hende ned i Jorden, blev saa rød i sit Hoved, som dryppende Blod, og gav sig til, for ikke at behøve, at see til nogen af Siderne, at pille Knappenaale op af Gulvet, og stammede: ”Ih see! det var forunderligt! havde hun sit Tøi der? det havde jeg saamænd aldrig drømt om. Ih forunderligt.” ”Ja vist er det forunderligt, sagde Lægen: at hun, som ikke har været af sin Seng i fiorten Dage, har kunde baaret det Lommetørklæde derhen, som jeg blødte over i Gaar; der min Broder! sag<pb n="91" facs="094.jpg"/>de han, og snap hurtig Halvhundrededalersædlen og flyede mig: giem du dine Penge, til Madamen kræver dig. Jeg skulde troe, hun tier, ligesaalænge som vi.”
+    ”Men skal jeg da . . . .” vilde hun nu, skiøndt med kiændelig sagtnende Stemme tage til Gienmæle. ”Ved Forligelses-Commissionen, Madam! faldt vor Ven hende i Ordet: her ønskede vi nu, De lod os være i Fred med den Syge!”
+    Hun drev nu af, mumlende mellem Tænderne, og vi gav os da ifærd med at skulde have den Syge flyttet. Saa bange jeg var, for hvorledes hun vilde optage dette, gik det dog ved den usigelige Tillid, hun havde til vor Ven, og som neppe nogen kan nægte ham, der seer det velsignede Creditiv, Gud har givet ham paa det godne elskelige Ansigt, langt bedre, end jeg havde ventet. Hun spurgte blot, da hun saae, vi lavede os til at flytte hende, hvor hun skulde hen?” ”et Steds, hvor De kan faae det bedre end her,” gav han hende til Svar. ”Men ikke — faldt hun ham i en <pb n="92" facs="095.jpg"/>mørk, og betydende Tone i Ordet: paa Hospitalet! ikke paa Hospitalet! ikke sandt, gode Doctor! Der vil jeg aldrig mere hen, aldrig, aldrig!” ”Nei! min Gode, gav han hende venlig til Svar; det er ikke derhen, vi bringer Dem, tro De mig!” ”troe! troe! troe! gientog hun adskillige Gange med en mørk og betænkelig Stemme: hvem kan man troe?” ”Mig min Gode! sagde han med denne forunderlig uimodstaaelige umiskiendelige Stemme, hvori hans rene ærlige Siel saa umiskiendelig gienlyder. Hun saae et Øieblik paa ham. ”Nu ja da! sagde hun, og det lod, som hun vilde tage hans Haand, han ligesom til Forsikring rakte hende; men i det samme trak hun sin Haand tilbage, slog ad ham, og sagde: Nei! jeg har ingen Haand at give bort mere.” Jeg traadde nu til, og sagde: ”De kan troe, De skal faae det bedre, hvor De kommer hen; her havde De det virkelig ikke godt.” ”Godt! sagde hun, og saae paa mig med et Blik, der gik mig igiennem Sielen: godt har jeg længe, længe ikke havt det! Godt <pb n="93" facs="096.jpg"/>faaer jeg det aldrig, aldrig, aldrig.” ”Ja men dog bedre end her,” sagde jeg. ”Her! sagde hun: her! her var de slemme ved mig. de vilde tage mit Barn fra mig! de sagde, det var dødt! men de sagde jo ogsaa, at <w>han</w> var død! ikke sandt?” Ude af Stand til at besvare dette Spørgsmaal, vinkede jeg ad Lægen, der med sin blide Venlighed traadde til, lod hende tage Barnet i Armen, og giøre sig færdig; da Alting var istand til hendes Flytning. Hun lod sig da uden Vægring bringe ned i Bærestolen; hendes nye Vertinde satte sig i en Kareth med det, vi havde bierget af hendes Tøi, og vi gik bag efter Bærestolen til Fods.
+    Neppe saae vi os ene, før jeg ikke længer kunde tilbageholde min Begiærlighed efter at erfare, hvo denne mig paa eengang saa besynderlig bekiændte og ubekiændte Ulykkelige kunde være. Kiænder du hende ikke, faldt vor Ven mig i Ordet: <w>Perditi Perdita!</w> Atter overraskedes jeg, som af et Kogleri, atter . . . dog, det er nødvendigt, at jeg først giver dig Nøglen til denne Overraskelse.”
+<pb n="94" facs="097.jpg"/>    Du veed, det er Grundsætning hos mig, at man skal see Alt, hvad her offentlig er at see, om man og forudseer, at man vil misbillige det; og maaskee just da saameget mere, for det Folk ikke skal sige, man dadler det, man ikke kiænder. Jeg veed ikke, om du erindrer, at jeg da ogsaa, tilligemed flere af vore fælles Venner, bivaanede de første offentlige Maskerader, af hvilke jeg, skiøndt de da endnu langt fra ikke vare, hvad de siden ere blevne, ogsaa, som du veed, fik meget mere end nok. Paa een af disse Maskerader frapperedes jeg ved Synet af et overmaade smukt Fruentimmer, i en Dragt, som du vilde kalde en Afklædning, og som der sikkerlig udkrævedes hele den moderne Uanstændighed til at kalde anstændig. Det som imidlertid især overraskede mig hos hende, var et usigelig stort og deiligt mørkebrunt Haar, der frit og flagrende i store Lokker og Bølger rullede ned over det dybt nedringede Bryst og Ryg, og som den Skiønne meget ofte, som tilfældig, vidste at slynge om sine snehvide overmaade velskabte <pb n="95" facs="098.jpg"/>Arme, paa en Maade, saa de giensidig hævede hinanden. Nysgierrig efter at vide, hvem dette Fruentimmer kunde være, havde jeg just hændelseviis spurgt vor Ven Lægen, og af ham netop faaet de to selvsamme Ord til Giensvar. Behøver jeg at beskrive dig den forunderlige forfærdelige Virkning det maatte giøre paa mig, saa uimodstaaelig overraskende at henkogles i hiint Øieblik, da hun i Ungdoms, Skiønheds, Overdaads og Forfængeligheds hele Triumph, fulgt af tusende Øine, ledsaget af Mandkiønnets drukne Tilbedelse, af sit eget Kiøns endnu mere smigrende Avind braskede for vore Øine, og nu see hende, syg, fattig, ringeagtet, ulykkelig, en Medlidenheds, og saa godt som en Almissegienstand, kun ved Fremmedes Medynk reddet for at bringes did, hvor Menneskelighedens Elendigste have hiemme; og nu høre de selvsamme Ord sagte som den Gang, og maatte tilstaae sig selv, at det var meget uvist, hvilken af Gangene de vare umodsigeligst smerteligst sande: enten hun var meest forloren i hiin Forfængelighedens og <pb n="96" facs="099.jpg"/>Sandselighedens døvende Hvirvel, eller i sin nærværende Elendighed og Fornedrelse. Disse Forestillinger overvældede, overmandede mig og saaledes, at jeg uden at være istand til at ledsage hende til hendes nye Bopæl, nøiet med, at vide hende under den menneskevenlige Læges og den retskafne gamle Kones omhyggelige Varetægt, gik hiem, og lukkede mig inde paa mit Arbeidsværelse; og alt for fuld af, hvad jeg havde seet, erindret, og følt, til at kunde have nogen Samling til noget Slags Arbeide, maatte, som du saae, skaffe mig Luft ved at skrive til dig.
+    Vor Ven Lægen kommer i dette Øieblik efter Løfte, for at sige mig, hvorledes hun har befundet sig efter Flytningen. Han mener, at hun ved Rolighed, god Pleie og omhyggelig Behandling, vil faae sin Samling igien; men er vi saa visse paa, vi giør hende nogen virkelig Tieneste ved det?
+    Lev vel, og elsk
+<right>din Ven <b>H***d E**t</b></right>
+
+
+<pb n="97" facs="100.jpg"/><center><b>H**d E**t</b> til Udgiveren af Charis.</center>
+<center>(Tredie Brev.)</center>
+
+Du har fuldkommen Ret, min Ven! jeg har været saa omhyggelig for at giøre dig begribeligt, hvorfra jeg kunde gienkiænde det smukke brune Haar om den hvide Arm, at jeg har glemt at oplyse dig om det, der naturligviis maatte ligge dig mere paa Hierte at erfare: hvo den Perdita var, der, uden at være os personlig bekiændt, kunde have levet vor Kreds nær nok, til at kiænde Melodier, som, vi have Grund at formode, ikke lettelig kunne være komne udenfor den, hun, som jeg i to saa høist forskiellige Situationer har været fristet til, at give lige forloren. Ogsaa har du aldeles Ret i, at det umulig kunde være nogen af dem, der i vore tidligere skyldfri sværmende Dage, naar den gammeldags:
+</prose>
+<poetry lang="sv">
 Hörar nu til
 Qvar en som vil
-Drikka sin vakkra Flikkas Skaal
+Dricka sin vackra Flickas Skaal
 </poetry>
-</body>
-</text>
-
-<text id="dryden20261028905" author="dryden" lang="en">
-<head>
-  <title>Happy, happy, happy, pair</title>
-  <firstline>Happy, happy, happy, pair!</firstline>
-  <notes>
-    <note editorial="true">Forkortet citat fra John Drydens »Alexander’s Feast; or, The Power of Musique« (1697), citeret i K. L. Rahbeks »Perdita Bedreværd«.</note>
-  </notes>
-  <source pages="100" facsimile-pages="104"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
+<prose>
+gik rundt i vore Kredse, enten paa Græsk eller <pb n="98" facs="101.jpg"/>Latin betegnedes under dette Navn. Midlertid tilkommer det hende med fuldeste Ret, ogsaa er hun, skiøndt ikke i din Nærværelse, eengang hos os bleven nævnet dermed paa en Maade, som vil stedse blive mig uforglemmelig. Dog — til Sagen, saaledes som jeg fra vor Ven Lægen har den.
+    Sikkerlig har du endnu ikke glemt din og hele vor Vennecirkels gamle Yndling, vor Perditus den kiække, flinke, elskelige, paa flere Aar desværre forsvundne, og i det mindste for Venskab og Fædrelandet forlorne **. Endnu svæver den for mig, den inderlige Glæde, hvormed du modtog ham, da han, hiemkommen med Ære fra en af de Fægtninger, der midt i Fredens Skiød have hævdet Dannemodets gamle Hæder, første Gang igien besøgte vort Vennelag. Ikke længe efter denne hans Hiemkomst kom her, som du maaskee erindrer, fra en af Provindserne en meget smuk Pige til Byen, hvis Skiønhed giorde usædvanlig Opsigt, endog efter at Nyheden var forbi. Hun kom i Følge, jeg veed ikke, hvilket gammelt Slægt<pb n="99" facs="102.jpg"/>skab, eller Giæstevenskab, til at være til Huus hos vor Vens Søster, hvis Huus, som du nok mindes, var Glædens Huus, og muntre Sieles Fristed. Naturligviis blev vor Ven den nykomne Skiønnes faste Ledsager til alle offentlige Steder, alle Forlystelser, hvor han desuden aldrig pleiede at savnes, og ligesaa naturlig kom de ved denne daglige og idelige Omgang meget snart til at staae paa en meget fortrolig Fod med hinanden, og hvad du ligesaa let kan slutte, varede det da heller ikke stort længer, inden Byen formelig trolovede dem med hinanden, inden maaskee endnu nogen af dem selv havde giort sig Tanke derom. Sandt nok er det imidlertid, at, naar jeg erindrer mig ham, og forestiller mig, hvad hun dengang maa have været, vidste jeg heller ikke at kunde tænke mig et smukkere og mere passende Par. Ogsaa kan jeg huske, at engang vi stod og snakkede sammen, og eet af de Mennesker, der veed Alting, og derfor ogsaa det, der er usandt, kom til, og fortalte os, at vor Broder Perditus var forlovet med en overmaa<pb n="100" facs="103.jpg"/>de deilig Pige, som vist mange vilde misunde ham, du med en Varme, som jeg endnu ikke har glemt, brød ham af, og sagde:
+</prose>
+<poetry lang="en">
 Happy, happy, happy, pair!
-None but the brave deserves the fair.
+None but the brave deserves the fair.<note editorial="true">Forkortet citat fra John Drydens »Alexander’s Feast; or, The Power of Musique« (1697).</note>
 </poetry>
-</body>
-</text>
-
-<text id="baggesen202610281017" author="baggesen">
-<head>
-  <title>Furca pellas ex</title>
-  <firstline>Furca pellas ex</firstline>
-  <notes>
-    <note editorial="true">To vers citeret i K. L. Rahbeks »Perdita Bedreværd«, indledt med ordene »Naturen — siger din gamle Ven Baggesen —«.</note>
-  </notes>
-  <source pages="112" facsimile-pages="116"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
+<prose>
+Ak men ogsaa denne din Spaadom er, som man om flere af dine <w>kiærlige Prophetieringer</w> har anmærket, ikke slaaet Feil.
+    Ikke desmindre vedblev vor Perditus at ledsage hende allevegne, og — som det overalt ikke var ham imod at falde i Øinene — viiste han sig med Glæde ved Siden af en Pige, der saaledes tildrog sig den almeene Opmærksomhed. Da han imidlertid, som du veed, ikke behøvede at falde i Øinene blot for en andens Skyld, og da overalt mange af vore Damer, og det af mere end eet Slags, værdigede ham deres særdeles Bevaagenhed, som han vel heller ikke var saa ganske ligegyldig for, saa hændtes det vel ogsaa efterhaanden hyppigere og hyppigere, at han, efter at have i Begyndelsen ladet sig see som hendes Drabant, nu tog sin egen Bane, hvor han igien ikke heller <pb n="101" facs="104.jpg"/>manglede Drabanter; ligesom der paa den anden Side heller ikke fattedes paa dem, der søgte en stor Lyksalighed i at omhvirvle hende. Uden maaskee ret selv at vide hvorfor, eller med hvad Adkomst, faldt de nu paa at tage giensidig hinanden, eller i det mindste hinandens Drabanter, det ilde; man kunde være vis paa, at Perdita fandt ingen Dame mindre smuk, end den Perditus meest havde talt med; ingen at dandse slettere, end dem, med hvem han havde opført Dandse; og paa den anden Side havde den ellers — som alle de Mennesker, Hiertet sidder rigtig — saa fredsomme og lidet trættekjære Perditus, gierne efter hvert Bal, hver Concert, og sikkerlig paa hver Maskerade, en eller to Rencontrer, og det ikke sielden med Mennesker, der ellers vare hans særdeles Venner, men der enten havde taget hende for meget i Øiesyn, eller snakket eller dandset for meget med hende; og, ikke nøiede dermed, søgte hun og han da gierne at hævne dem paa hinanden; han ved at ofre paa det Alter, han kunde vide, der i hendes Øine var det vederstyggeligste <pb n="102" facs="105.jpg"/>Afguderi; hun ved at smile til den Tilbedelse, han fandt den allervanhælligste. Saaledes plagede de dem selv, og hinanden en Tid lang, og fordybede sig tillige derved alt længere og længere i Forlystelsernes og Modelivets Hvirvel, fik daglig hinanden kiærere, og indskiærpede sig daglig mere og mere den meest levende Overbeviisning, hvorlidet de passede for hinanden. ”En Flane! — sagde han daglig til sig selv — det har Smiil til Enhver, og Hierte til Ingen.” ”En Letsindig — sagde hun, da hendes Læber endnu vare for ubesmittede til at nævne det haardere Ord, hendes Hierte blødede ved — hos hvem den første den bedste udsletter mit Billede, og opretter mit Savn.” Men ingen af dem vilde tilstaae sig selv, at denne Opmærksomhed, denne Strænghed mod den andens Feil, var intet uden saaret ved Kiærlighed.
+    Saaledes — fortalte vor Broder Lægen — (thi du vil udentvivl for længe siden have seet, at jeg har al denne Viisdom fra ham, og at det Ovenstaaende hverken var i min Stiil eller i min Aand, og flere Steder deri have gien<pb n="103" facs="106.jpg"/>kiændt hans sædvanlige Scepticismus, der paa ingen Maade vil vide af nogen Kiærlighed uden for Ægtestanden, og lidt nok i den, at sige, men plat væk forklarer alt, hvad man forresten behager at kalde saaledes, som Forfængelighedens, eller Sandselighedens Selvbedrag, og det saa meget des vissere, jo lidenskabeligere, eller, efter hans Udtryk, bindegalere det hedder, og teer sig), saaledes blev deres Forfængelighed en Tidlang ved at martre hinanden, da de mod Enden af Vinteren bleve begge indbudne tilligemed hans Søster paa en af de den Gang giængse saakaldte Familiemaskerader, hvor man sammenlæste efter Sædvane alle dem, man kiendte, der havde Tid og Penge at øde paa det Fias, uagtet de forresten ligesaalidt hørte til Familien, som de, der bedes til Vennefester, til Vennekredsen. Mere end nogensinde var hun den Aften Høitidens Dronning, og havde, ved at spille forskiellige Personer, og spille dem alle med særdeles Munterhed og Liv, saa at sige draget hele Forsamlingen ene om sig. Kun een Maa<pb n="104" facs="107.jpg"/>ske lagde man Mærke til, der ligegyldig, og endog med næsten stødende Kiedsomhed syntes at vende sig bort fra alt, hvad hun foretog; at det var Perditus, faldt man saa meget mindre paa, da man havde seet ham i en meget elegant Domino komme med hende, og derpaa tage bort, under Paaskud, at han uindgaaelig maatte — jeg troer — til os; og da den ubekiændte Maske var i en virkelig sielandsk Bondedragt, hvis hele intet mindre end elegante eller smigrende Udseende syntes at tilkiændegive, at den Maskerede, som formodentlig ikke havde kundet undslaae sig for at være med, hverken havde Raad, Lyst eller Talent til at producere sig paa en fordelagtigere Maade; saameget mere, som man tydelig kunde see, han ikke engang prøvede paa, eller skiøttede om, at spille Dragtens Rolle; siden han paa ingen Maade søgte at antage Gang eller Væsen derefter, og ikke var at formaae til at svare eet Ord. Perdita vilde især adskillige Gange give sig i Kast med ham, men han var om muligt endnu mere kold og maalløs imod hende, end imod nogen af alle de Andre.
+<pb n="105" facs="108.jpg"/>    Endelig hørte de egentlige Maskeradeløier op, og man begyndte at dandse, hvori vor siælandske Bonde tog ligesaaliden Deel, som i hele det øvrige, men vedblev kold og uden mindste Opmærksomhed at gaae op og ned i Salen; adskillige til selve Huset hørende Personer, blandt andre Vertinden, gik hen, at give sig i Snak med ham, beklagede, at han vist kedede sig, tilbøde ham Spilleparti, o. s. v.; men et koldt og taust Buk var alt, hvad der var at bringe ud af ham. I det samme begyndte de at valse; ogsaa her var Perdita, der overalt var berømt, som Byens første Valserinde, Dronningen; allerede havde tree af Ballets Mestervalsere afløst hinanden, og den fierde, hvem hun, i det hun valsede ham forbi, med et Nik havde tilsagt den Lykke, stod i Begreb at træde til, da hiin siælandske Bondemaske, i det hendes forrige Dandser slap hendes Haand, med eet traadde imellem, og greb den; i det hun ufrivillig ligesom dvælede ved Overraskelsen, vilde Expectanten giøre sine Rettigheder giældende, og begyndte at spørge: <pb n="106" facs="109.jpg"/>”hvem er De, min Herre!” men inden han kom videre, havde vor Siællænder til alt Svar revet sin Maske af, og lod sit Ansigt eet Øieblik see.
+    Det var Perditus; paa hans Ansigt stod Skinsyge, Forbittrelse — næsten kunde man sige — Rasenhed saa skrækkelig tegnede, at den Anden taus og som lynslagen traadde tilbage, og at Perdita, næsten uden at vide selv, hvad hun giorde, begyndte at valse, men neppe havde hun giort nogle Trin, før hun bleg og gispende maatte staae stille, og støtte sig paa ham; og i det samme sank afmægtig om i hans Arme.
+    Man fik hende ind i et andet Værelse, og vor Ven Lægen, som til Lykke var tilstede, og som fra Begyndelsen havde havt Mistanke til Bondemasken, og, da han nu gienkiændte Perditus, havde strax formodet det ikke vilde gaae godt, skiøndt det egentlig var ham, han efter hans blodspændte fortrukne Ansigt at dømme, havde frygtet for at see styrte i Convulsioner for deres Fødder, traadde da strax til, og fik hende bragt ind i andet Værelse, hvor da, un<pb n="107" facs="110.jpg"/>der lange og lærerige Afhandlinger om den megen Valsens Usundhed og Farlighed, de ældre Damer igien fik hende tilrette. Midlertid var Siælandsbonden, da Indgangen blev ham formeent i det Værelse, hvor hun bragtes hen, forsvunden; og da man igien kom til Rolighed efter den Forvirring, herved var foraarsaget, saae man, til sin store Forundring, Perditus i sin Stadsuniform og Domino gaae om i Salen med sin Maske i Haanden, og med et Ansigt saa straalende af Glæde, at neppe nogen af dem, der i det Lynglimt, han før lod det see, havde skimtet det, vilde vovet at gienkiende det, Perdita maaskee ene undtagen, saafremt hun ellers var sig bevidst, at hun, i det Øieblik, hun, ængstet af hans voldsomme og krampagtige Bevægelser, og forskrækket ved Forestillingen om det Ansigt, hvoraf hun blot havde seet et Glimt, vaklende støttede sig paa ham, havde nævnt ham to Gange ved hans Fornavn.
+    Perdita kom igien ind i Salen; han traadde hen til hende, for at spørge til hendes Be<pb n="108" facs="111.jpg"/>findende, da han havde hørt, hun ikke havde været vel; med et Haandtryk takkede hun ham for denne Opmærksomhed! videre blev ikke talt imellem dem; men i det hun vendte sig fra ham, trykkede Perditus vor Ven Lægen i sine Arme, og sagde: jeg er den lykkeligste af alle Mennesker. Nu talte de ikke videre sammen, men da de skulde til Bords, vidste Perdita, som inden Freden havde ladet sig engagere af en anden til Borddame, ikke blot at mage det saa, at hun fik Perditus paa den anden Side til Nabo; ligesom han ogsaa igien blandt alle Ballets Damer havde valgt den allerubetydeligste, en halvvoxen Niece af hans Svoger, til sin Naboerske; men da Perdita ydermere havde bestandig en hemmelig Formodning om, at hendes Chapeau, en Flinkfyr af første Klasse, ikke var Perditus tilmaade, vidste hun, ikke længe efter, de havde sat dem, at opdage en for alle andre umærkelig Trækvind, hvor hun sad, saa hun, paa Grund af sin nylige Upasselighed, hvoraf i øvrigt ikke mindste Spor var tilbage, kunde tage Anledning at bytte <pb n="109" facs="112.jpg"/>Plads med Perditi Borddame, hvor intet mistænkeligt Naboskab fandtes paa den anden Side, og hun altsaa var allene for ham.
+    Nu vare de da ret lykkelige — sagde vor Ven Lægen — og da nu ovenikiøbet Perditas egentlige Bordchapeau, stødt over at være bortbyttet af sin Dame, med megen spids Politesse udbad sig af hende, som en Godhed, at han da ogsaa maatte beholde Borddandsen med den Dame, hun havde tiltusket ham, og altsaa hun kom selv til at dandse med Perditus — den usædvanlig lange og talrige Dandserække var for dem som eet Spring; de fløi ikke, de svævede ikke, de bares paa Glædens og Kierligheds Vinger, vilde enhver sige, som ikke lagde Mærke til, at ogsaa tilfredsstillet Forfængelighed har Vinger, der hæve nok saa høit, og svæve nok saa hastig, som nogen anden Lidenskabs; kun Skade, de saa ulykkelig snart blive trætte.
+    Dagen derpaa vedgik Perdita for hans Søster, at de vare forlovede, og Perditus giorde i det mindste for sine nærmeste og nøieste Ven<pb n="110" facs="113.jpg"/>ner, hvoriblandt vor Ven, heller ingen Hemmelighed mere deraf; ogsaa foregik umiddelbar derpaa i begges Forhold en aldeles øiensynlig Forandring; Sværmen, Tummelen, den evige Hvirvel af Adspredelser og Forlystelser, begyndte at kiede hende; en saa elskværdig, saa interessant Mands enthusiastiske Tilbedelse syntes at holde hende langt mere end skadesløs for Savnet af den flygtige Røgelse, der ellers omkaps offredes hende af Væsner, der for det meste i samme Øieblik forsvandt tillige med den; ogsaa for ham maatte det naturligviis være usigelig tillokkende, at see et ualmindelig indtagende, et ualmindelig talentfuld Væsen opbyde hele sin Indtagenhed, alle sine Talenter, for at fortrylle ham. Men desværre — sagde vor Ven — det daglige Brug slider paa Alting, om det saa er Talenter og Elskværdighed; og faaer ingensteds Kierlighedens Enthusiasme snarere udbrændt, end i Kieresteriets Ørkesløshed, hvor den faaer saa hiertelig lidt varig og klækkelig Næring. Tid efter anden begyndte den uafbrudte Ved<pb n="111" facs="114.jpg"/>hængenhed og Opmærksomhed at trætte ham; og selv hendes Armidarolle, saa glimrende, saa fortryllende den i Begyndelsen var, faldt hende dog Tid efter anden besværlig, saameget mere, som hendes hele Publicum bestandig bestod i een og den samme Tilskuer, hvis Beundring hun desuden var vis paa, og vant til. Lidt efter lidt begyndte de begge, uden sagtens at vilde tilstaae dem det selv, at finde det tomt i deres evige Tete a Tetes; og da ydermere for ham frembød sig det rimelige Paaskud, at det ikke uden Skin af Føie kunde tilregnes ham som usel og ubillig Skinsyge, hvis han syntes at uddrage og udeholde hende af de Kredse, hvis Pryd hun tilforn havde været; og da ligeledes hendes Forfængelighed nok ønskede sig Leilighed til at vise, hun ikke blot var istand til at hilde, men og til at holde en saa misundt Tilbeder midt iblandt dem, der ved mere end een Anledning havde viist Lyst til at giøre hende denne Erobring stridig, varede det da heller ikke længe, førend de, ganske som forhen, vare midt inde i Sværmen paa ny. I <pb n="112" facs="115.jpg"/>Førstningen krævede rigtig nok begges Forfængelighed, at de endog midt i de talrigeste og meest glimrende Circler ene vare Alt for hinanden; at han havde kun Øie for hende, ligesom hun allene var til for ham; men Naturen — siger din gamle Ven Baggesen —
+</prose>
 <poetry>
         <span lang="la">Furca pellas ex,</span>
 Hun kommer dog igien, den Hex;
 </poetry>
-</body>
-</text>
-
-<text id="baggesen202610281018" author="baggesen">
-<head>
-  <title>Fylde hver sit Glas til Randen</title>
-  <firstline>Fylde hver sit Glas til Randen</firstline>
-  <notes>
-    <note editorial="true">Et vers fra Jens Baggesens »Skaal for den Elskede«, citeret i K. L. Rahbeks »Perdita Bedreværd«.</note>
-    <note editorial="true">Jævnfør <xref type="quote" poem="baggesen2019080331"/>.</note>
-  </notes>
-  <source pages="115" facsimile-pages="119"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
+<prose>
+og skiøndt jeg, som du veed, ellers ingen synderlig Latiner er, er der dog saameget dansk i dette, at det har altid været mig overmaade forstaaeligt og antageligt. Efterhaanden begyndte det gamle Spil paa ny, hun lod sig atter henrive af den Hvirvel, hvis Middelpunkt hun selv syntes at være; og han fra sin Side, jo større og mere vidtstrakt den Kreds blev, der omhvirvlede hende, jo mere syntes han at drage sig ud derfra, og saae vel nu og efter fordums Skik, som Drabant at omhvirvle en eller anden lidt mindre lysende Stierne, hvor — ham vel ikke saa ganske til Mishag — Drabanten stundum tildrog sig mere Opmærksomhed, end selve Planeten. I Begyndelsen <pb n="113" facs="116.jpg"/>spøgte de med hinanden om disse smaa tilsyneladende Utroskaber; men efterhaanden, som deres Forfængelighed giensidigen mere og mere saaredes derved, blev Spøgen bittrere, og omsider til Alvor. Ogsaa dette havde nu vel i Begyndelsen sin tilsyneladende Fordeel, da det deels bragde noget Liv og nogen Afvexling i Kieresteskabets evindelige Monotonie, deels ogsaa disse Tvistigheder bestandig endtes med Forsoninger, der, som jeg har læst i en gammel Terents, er Kierligheds <w>Fornyelse</w>; men det er dog saadan en egen Sag med de Fornyelser, naar de gaae for tit paa, og Nyheden taber sig naturligviis alt mere og mere; efterhaanden blive Tvistighederne bestandig hyppigere og bittrere, og Forsoningerne i samme Forhold kortere og koldere, og derfra er da kun eet meget kort Skridt til den ulyksalige Chrisis, hvor man giensidig er hinanden til Byrde, og ikke vil tilstaae sig det selv.
+    Med eet forsvandt han, uden at vilde vedgaae sin Grund, enten for hende eller nogen anden, eller maaskee engang for sig selv, midt <pb n="114" facs="117.jpg"/>ud af Hvirvelen, og kastede sig hovedkulds ind i saadanne Forhold, Forbindelser, ja endog Forretninger, der kun levnede ham saare liden Tid til at være hos og om hende; i Begyndelsen fattede og udførte hun vel fra sin Side den kiække Beslutning, ligeledes at drage sig ud af Sværmen, paa det han ikke skulde faae Grund til nogen Anke; men for hende, der uden egentlige Sysler, uden Kaldspligter, dem hun desuden slet ingen Tilbøielighed havde for, levede som Giest i et fremmed og særdeles uhousligt Huus, maatte det eensomme Hiemliv meget snart blive utaaleligt, og Musik, Tegning, Moerskabslæsning, alle dets saakaldte Tidsfordriv, hvad de stedse ere for enhver, der ikke søger andet end Tidsfordriv deri, uudholdelig flaue; meget snart maatte hun altsaa blive keed af at bringe — hvad hun i sit Hierte kaldte, hans Caprice — et Offer, som han end ydermere hverken syntes at fordre eller at paaskiønne. Det var nu lidt efter lidt kommet til den betænkelige Punct i Kieresteriet, hvor Kosenet, som i Hvedebrødsdagene var Hengivelse <pb n="115" facs="118.jpg"/>og Føielighed, med eet bliver Selvstændighed; og hvor man allerede i sit Hierte tilregner sig det som en Fortieneste og næsten som Heroismus, at man ikke bryder et Løfte, som man i Overilelse har givet, og som man angrer, men dog endnu har formegen Ære til at tage tilbage.
+    I denne Tidspunct var engang, under din Sygdom, vor gamle Vennekreds en Aften samlet; med usædvanlig mange af dens ældre Medlemmer, som tilfældig var tilstæde, syntes ogsaa usædvanlig meget af dens gamle Aand, af den underlig halvhoitidelige Jovialitet at være vendt tilbage; blandt Andet faldt da, jeg veed ikke, hvem af vore Ældre paa, at vi efter gammel Skik skulde lade Sangen gaae rundt; og hver efter sin Rad opgive sin Vise; adskillige af vore gamle Sange bleve ved denne Leilighed fremdragne igien; endelig opgav En vore ældre Kivers Yndlingssang:
+</prose>
 <poetry>
-Fylde hver sit Glas til Randen,
+Fylde hver sit Glas til Randen,<note editorial="true">Fra Baggesens <xref poem="baggesen2019080331"/>.</note>
 </poetry>
-</body>
-</text>
-
-<text id="rahbek202610281016" author="rahbek">
-<head>
-  <title>Det var nu ikke mere, som</title>
-  <firstline>Det var nu ikke mere, som</firstline>
-  <notes>
-    <note editorial="true">Fortællerens fire vers i K. L. Rahbeks »Perdita Bedreværd«, indskudt i omtalen af en fremførelse af Baggesens »Skaal for den Elskede«.</note>
-  </notes>
-  <source pages="116" facsimile-pages="120"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
+<prose>
+den gik rundt; og skiøndt vi nok erfoer, at — som det hedder i Visen —
+</prose>
 <poetry>
-Det var nu ikke mere, som
+<pb n="116" facs="119.jpg"/>Det var nu ikke mere, som
 Da den i fordums Tid gik om,
-Og man fik mange kiære Navne
-Paa dem, hver ønskde sig at savne.
+Og man fik mange sære Navne
+Paa dem, hver ønskde sig at favne.
 </poetry>
-</body>
-</text>
-
-<text id="baggesen202610281019" author="baggesen" ignore-tests="comma-period">
-<head>
-  <title>Ud med Navnet! ingen svige</title>
-  <firstline>Ud med Navnet! ingen svige!</firstline>
-  <notes>
-    <note editorial="true">Afbrudt citat fra Jens Baggesens »Skaal for den Elskede« i K. L. Rahbeks »Perdita Bedreværd«.</note>
-    <note editorial="true">Jævnfør <xref type="quote" poem="baggesen2019080331"/>.</note>
-  </notes>
-  <source pages="116" facsimile-pages="120"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
+<prose>
+blev den dog siunget med mere Varme og Ilderlighed, end jeg i rum Tid har været vant til at høre deslige med. Kun vor Perditus sad som hensunken, og taug. Endelig kom Radden til ham; og hans Nabo, der er et af de Mennesker, der hverken har Opmærksomhed eller Sands for sligt, eller engang kunde drømme om, at det var muligt, han her kunde støde paa et Hiertesaar, sang eller rettere skreeg ham med al Overgivenhed til:
+</prose>
 <poetry>
-Ud med Navnet! ingen svige!
+ud med Navnet! ingen svige!<note editorial="true">Fra Baggesens <xref poem="baggesen2019080331"/>.</note>
 Lev,.....
 </poetry>
+<prose>
+da den Anden i det samme foer op som af en Dvale; <w>Perdita!</w> sagde han med et Blik og en Tone, saa Sang og Spøg med eet døde paa Alles Læber, og der blev en ikke umærkelig Pause, inden nogle enkelte adspredte Stemmer samlede sig til, ligesom mechanisk, at fortsætte Melodien uden Ord.
+    Ikke længe efter var det, at den sværmer<pb n="117" facs="120.jpg"/>isk stolte Yngling, træt af at martre og martres uden Udsigt til en bedre Vending, for at komme ud af en selv paalagt Lænke, som han var for ridderlig ærekier til at vilde bryde, søgte og fik Tilladelse til at gaae i fremmed Tieneste. Kort derpaa forsvandt han, og her kom bestemt Efterretning, at han var død; men en af vor Ven S** T***s Skippere, som ikke længe efter Slaget ved Trafalgar blev anholdt i Middelhavet af en engelsk Orlogsmand; og som ved den Dristighed, hvormed han paastod paa sin gode Sag og sine aldeles rigtige og redelige Papirer, var paa Veie at blive temmelig ilde behandlet, fandt uventet blandt de engelske Officierer en kiæk og nidkier Forsvarer i en ukiændt Landsmand, der syntes at nyde særdeles Agtelse ombord, og som, efter hele hans Beskrivelse, neppe kunde være nogen anden, end vor Perditus.
+    Jeg seer nu tilbage paa dette uhyre Brev, og forskrækkes over, at jeg har skrevet saameget; jeg læser det igiennem paa ny, og forundres endnu mere over, hvad jeg har skrevet. <pb n="118" facs="121.jpg"/>Virkelig, min Ven! hvis jeg ikke saae det endnu ganske friske Blæk, og gienkiendte mine egne Bogstaver med alle deres underlige Sving og Trækninger, jeg kunde være fristet til at troe, at jeg virkelig havde skrevet det selv, saa aldeles ikke gienkiender jeg enten mine Ideer, eller min Stiil — ifald du ellers vil tillade mig og mine Lige at have enten Ideer eller Stiil — i den hele Fortælling om vor arme Vens Frieri og Jalousie. Sagen er rigtig nok, at Alt, hvad jeg her har skrevet, egenlig kun er et Gienlyd — skiøndt et svagt Gienlyd — af, hvad vor Ven Lægen, med den ham egne Varme, med den menneskekierlige Bitterhed mod alt det Tant og Daarskab og Selvbedrag, der saa ofte giør Mennesker, og ikke sielden de bedste Mennesker, ulykkelige, sagde mig forleden Aften; jeg gienkiender allevegne hans Meninger, hans Yttringer, hans Tanker, og ofte hans Følelser; kun hans Hierte, og hans Aand, kan jeg ikke ret gienfinde heri.
+    Du seer imidlertid, hvorledes og med hvor <pb n="119" facs="122.jpg"/>megen Ret vor arme Patientinde er kommen til Navnet Perdita, og hvorfor det alle tre Gange, jeg har hørt det, har maattet overraske mig saa skrækkelig; du seer da ogsaa, at denne Perdita ikke er nogen af dem, du har kiændt under dette Navn, som desværre vel torde være almindeligere, end man gierne vil tilstaae sig, da som hele vor nu værende Tone og Tænkemaade ikke kan andet end bidrage til at udbrede.
+    Lev vel, min Ven, og elsk
+<right>Din
+<b>H***d E**t.</b></right>
+
+
+<center><b>H**d E**t.</b> til Udgiveren af Charis.</center>
+<center>(Fierde. Brev.)</center>
+
+Du længes — siger du — usigeligen efter Fortsættelsen af den arme Perditas Ulykkeshistorie; men min Ven! om jeg endog ikke i saa høi Grad manglede de omstændelige og nøiagtige Ef<pb n="120" facs="123.jpg"/>terretninger om de sataniske Kunstgreb, ved hvilke en fiændig Forfører ad Forlystelsers og Overdaads Blomsterstier bragde hende til Fordærvelsens Afgrund, vilde vi da ikke ogsaa her træffe paa en Række af Scener, der udkrævede en Laclos Haand til at kunne, og hans Hierte til at vilde male, Scener, hvorfra vi for ofte i denne Verden med blødende Hierte have bortvendt vort Øie og Hu, til at nogen af os skulde lystes ved at male den anden dem for? De faa Hovedbegivenheder vil jeg imidlertid i Korthed fortælle dig saaledes, som jeg af vor Ven Lægen har erfaret dem. Forgieves har jeg fristet ham til, her selv at tage Pennen, for at brændemærke det Afskum, som deri spiller Hovedrollen, med det Cainsstempel, han saa fuldelig fortiener.
+    Uagtet Perditi Reise aldeles ikke var foregaaet eller ledsaget af noget Slags Brud, uagtet Perdita som tilforn vedblev at ansee for hans saakaldte Kiereste, var Forandringen i deres Forhold dog alt for kiændelig og følelig til, den ikke paa hendes Stilling i hans Sø<pb n="121" facs="124.jpg"/>sters Huus, og hele den Cirkel skulde have en mærkelig Indflydelse.
+    At han var reist for og fra hende, var alt for føleligt til, at ikke især Søsteren, der giorde en Afgud af saa vakker og hyldet en Broder, hvis Glands alt iblandt faldt tilbage paa hende, skulde lade Perdita det føle. Denne blev altsaa alt mere og mere utilfreds i et Huus, hvor hun følte sig alt mere og mere uvelkommen; i denne Tidspunct skal det have været hendes alvorlige Ønske, ja endog hendes Forehavende, at vende tilbage til sin Fødeby og i sin Families Skiød; men da hun, som Fruentimmer, ikke vel kunde reise allene; blev det uheldigviis udsat til Sommerens Ende, da een af hendes Bekiændte agtede at giøre et kort Besøg i Kiøbenhavn, og havde tilbudet sig, at bringe hende hiem med derfra.
+    Vaaren kom; at en saa behagelig, saa almindelig yndet Fremmed, som Perdita, der naturligviis ikke manglede paa Dusineveninder i Hundredetal, heller ikke fattedes paa Indbydelser til, jeg veed ikke hvormange, af de <pb n="122" facs="125.jpg"/>saakaldte Landstæder, der i Stokkeviis, som Paddehatte, paa de senere Aar ere mylrede op af Jorden rundt om Kiøbenhavn, er meget begribeligt; og at hun med Glæde greb denne Leilighed til at udrive sig af Forhold, der allerede i sig selv maatte være hende tilstrækkelig ubehagelige, om de end ikke saa levende mindede hende om, hvad hun havde saa megen Trang til at glemme, er ikke mindre ligefrem; med Glæde flagrede hun da fra Lyststed til Lyststed, og kastede sig i den hele Hvirvel af flaue Adspredelser, vore kiøbenhavnske Matadorer ansee for Landliv.
+    Perditus hørte imidlertid hverken hun eller nogen det mindste fra; Dag fra Dag blev det hende mere og mere indlysende, at det var egenlig hende, han løsrev sig fra, da han forviiste sig fra Fæderneland og Alt, hvad der var ham hidtil saa dyrebart. For at døve de Bebreidelser, hun i sit Hierte vexelviis giorde ham og sig selv, kastede hun sig alt uforsigtigere i Strømmen, og denne henrev hende da omsider i Fordærvelsens Hvirvel. En af vore meest berygte<pb n="123" facs="126.jpg"/>de Forførere, hvem Mammon syntes at have lært alle sine Tyverænker og aabnet alle sine Afgrundsskatte, at han med desrigere og rundere Haand kunde offre til Asmodæus, havde længe med begiærlige Øine forfulgt denne deilige Pige; men saalænge Perditus var til, havde den eneste Grund, der kan holde Nidingen fra det Onde, Frygten, giort ham hende hellig. Nu! da hun var ene, forladt, til Nød kunde troe sig forraadt, nu vaagnede hans Ønsker, og hans Forhaabninger paa ny; meget let fik han hende overtalt til, at tilbringe nogle Dage paa hans fortryllende Villa; under en idelig Kiædedands af overdaadige, larmende, undertiden endog virkelig smagfulde Forlystelser, bleve disse Dage meget lettelig til Uger, medens Ugerne forekom den berusede Pige, der stedse var disse Høitiders virkelige Dronning, hvem han snildelig overdrog, ved sine mangehaande Talenter og Fortrin at give dem deres fornemste Pryd, neppe som saa mange Dage.
+    I denne Hvirvel, hvorpaa neppe nogen Sædernes og Menneskehedens Ven fristes at hæfte <pb n="124" facs="127.jpg"/>sit Øie, tabte vor Ven Lægen hende aldeles af Sigte; kun ved enkelte saadanne Leiligheder, som paa den omtalte offentlige Maskerade, traf han hende siden igien; men i sit Hierte havde alt længe givet hende forloren, om og ikke den saakaldte offentlige Stemme alt tydeligere og lydeligere havde nævnet hende, som hiin rige Vellystlings Frille, der, efter at have lagt sig ud med sin fraværende Familie for denne Forbindelses Skyld, nu paa hans Regning var taget i Kost hos en tienstagtig gammelagtig Frue, som var føielig nok til at lukke sine Øine, naar de tiltrykkedes med Dukater eller Bankosedler; at hun, inden hun sank saa dybt, at modtage sin Underholdning af ham, allerede var blevet et Offer for et ulykkeligt, maaskee af ham med megen Diævlesnedighed forberedet og nyttet Øieblik, derom kan med hendes forrige Æresfølelse, ingen Tvivl være; som det og er afgiort, at Forbittrelse over Perditi Flugt og Taushed, Nag over hendes eget Forhold, Menneskehad og Selvhad, mere end alle Forførerens sataniske Kunster have bidraget til, at give hende i hans Arme.
+<pb n="125" facs="128.jpg"/>    Midt under hiint Drømmeliv, hvori hun søgte at neddysse sine Nag, indløb nu med eet den fra flere Steder bekræftede Tidende, at Perditus udenlands var død; som et Tordenskrald skrækkede det hende op af hendes Bedøvelse; den levende Perditus var i hendes Øine en Troløs; men neppe troede hun ham død, førend hun følte hele Brøden, hele den skrækkelige Utroskab hos sig. Med eet udrev hun sig fra sin Forfører; medtog intet, som i nogen Maade kunde kommet fra ham; og da hun var i en Forfatning, der ikke tillod hende at tænke paa anden Forsørgelse, levede hun af at udsætte og sælge af sine forrige Tiders Overdaadigheder, fast besluttet, efter sin Nedkomst, med sine Hænders Arbeide at erhverve sit Brød, eller at tiene for det, og ved ustraffeligt Forhold, og angerfuld Bod, at afsone, om ikke oprette sit Feiltrin.
+    I denne Stemning gienfandt vor Ven Lægen hende paa Fødselsstiftelsen; ulykkeligviis kom derude en, der mindst drømte om, hvorvidt denne Tidende angik hende, til at fortælle i hendes Nærværelse den Mærkelighed, som just da var Døgnets Nyhed, at den afdøde Perditus var kommet tillive igien. Denne Tidende giorde et skrækkeligt Indtryk paa hende; i hans <pb n="126" facs="129.jpg"/>foregivne Død fandt hun den frygteligste Dom over sig. Hun faldt i hæftige Kramper, og blev forløst med et Barn, som Moderens Sindsrystelser kostede Livet. Da hun forlangte at see det, og man sagde hende, det var dødt, vilde hun ikke troe det, paastod, man sagde Usandt for hende, ligesom med Perditus, og sank hen i en dyb Tungsindighed, der efterhaanden gik over til en stille Vanvid. Midlertid var vor Ven Lægen beordret ud til en By, hvor der havde yttret sig Smitstof. Ved sin Hiemkomst derfra var det, ham blev kaldet til hende, der havde forladt Fødselsstiftelsen, og var flyttet tilbage til sidste Vertinde, der var nedrig nok til at misbruge hendes hielpeløse Forfatning, som ved Mangel og Kummer bestandig forværredes. Enden herpaa veed og giver Gud.
+<right><b>H**d E**t.</b></right>
+
+
+<center><b>Udgiverens Efterskrift.</b></center>
+
+    At disse Breve ikke vare aftrykte, hvis Perdita levede, troer vel enhver; om Perditus vide intet. Den lumpne Forfører lever, Hans Navn er — <w>Legio.</w>
+<right><b>K. R.</b></right>
+</prose>
 </body>
 </text>
 
