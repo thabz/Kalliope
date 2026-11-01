@@ -3,7 +3,8 @@
 <workhead>
   <title>Michaël Choræi samlade skaldestycken</title>
   <year>1815</year>
-  <source href="https://www.gutenberg.org/cache/epub/47799/pg47799-images.html">
+  <errata status="reviewed" pages="XXXIV" facsimile-pages="41"/>
+  <source href="https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb2428160-faksimil" facsimile="1815" facsimile-pages-num="361" facsimile-pages-offset="41">
     <author id="choraeus">Michaël Choræus</author>
     <title>Michaël Choræi samlade skaldestycken</title>
     <editor id="franzen">Frans Michael Franzén</editor>
@@ -24,7 +25,7 @@
 <head>
   <title><num>24.</num>Gubben till Ungdomen</title>
   <firstline>Nå! nå! unga Flicka! det stundar en dag</firstline>
-  <source href="https://www.gutenberg.org/cache/epub/47799/pg47799-images.html#id00449"/>
+  <source pages="120" facsimile-pages="161" href="https://www.gutenberg.org/cache/epub/47799/pg47799-images.html#id00449"/>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -55,6 +56,48 @@ Ve! honom som vishetens råd har försmått,
 Och offrat sin ungdom åt nöjena blott,
 Ej tänkt något ädelt, ej gjort något godt:
 Han slutar visst leken med tårar.
+</poetry>
+</body>
+</text>
+
+<text id="choraeus2026103101" lang="sv">
+<head>
+  <title>Barnsligheten</title>
+  <firstline>Lilla Clara, förebrå ej mig</firstline>
+  <source pages="122-123" facsimile-pages="163-164"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lilla Clara, förebrå ej mig,
+Att jag är så barnslig, Lilla Clara!
+Är jag barn, så liknar jag ju dig:
+Bör jag blygas då att barnslig vara?
+
+Huru böd han, mensklighetens vän?
+Aldrig går hans lärdom ur mitt minne.
+Såsom barn kom du i himmelen,
+Eller var du aldrig än derinne.
+
+Lilla engel, räck din hand åt mig,
+Led mig in i barnens himmel åter:
+Då dess portar låtas upp för dig,
+Glöm ej den, som utanföre gråter.
+
+Gif mig åter min försvunna vår,
+Och dess blommor, och dess lekar, Clara!
+Unna mig att vara tretton år,
+Unna mig som du att lycklig vara.
+
+Dansa glad emot din sommardag!
+Tag mig med dig, Clara, in i ringen,
+Goda, lilla, bland de små mig tag,
+Eller också dansar jag med ingen.
+
+<pb n="123" facs="163.jpg"/>Göm ock denna lilla barnslighet!
+Må vi glädjas, må vi leka, Clara.
+Jag skall låtsa vara din poet,
+Och du skall min sånggudinna vara.
 </poetry>
 </body>
 </text>
