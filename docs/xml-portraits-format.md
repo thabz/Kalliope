@@ -114,6 +114,13 @@ Brug i så fald hellere den samme `artwork="..."` direkte.
 
 ## Billedtekst og noter
 
+Medtag dokumenterede fysiske mål i billedteksten som højde × bredde med
+enhed, fx `80 × 60 cm`. Søg målene i katalog- eller museumsopslaget, og
+bevar dem ved senere redigering. Angiv, om målene gælder billedflade, blad
+eller ramme, når kilden skelner. Hvis målene ikke kan dokumenteres, gemmes
+den oplysning i en XML-kommentar ved billedet. Filens pixelmål er ikke
+værkets fysiske mål.
+
 Den enkle form er tekst direkte i `<picture>`:
 
 ```xml

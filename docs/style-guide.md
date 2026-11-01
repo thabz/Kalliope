@@ -63,6 +63,12 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## Billeder
 
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag dokumenterede fysiske mål i billedteksten som højde × bredde med
+  enhed, fx `80 × 60 cm`. Søg målene i værkets katalog- eller museumsopslag,
+  og bevar dem ved senere metadatarettelser. Skeln mellem billedflade, blad
+  og ramme, når kilden gør det. Hvis målene ikke kan dokumenteres, noteres
+  det i en XML-kommentar ved billedet; brug aldrig filens pixelmål som
+  erstatning for værkets fysiske mål.
 - Ved et originalt fotografi vises fotografens navn som kunstner. Et
   fotografisk forlæg, som kunstneren har brugt til at skabe værket, beskrives
   også i billedteksten, inklusive forlægsfotografens navn. Oplysninger om
