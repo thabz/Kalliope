@@ -39,6 +39,16 @@ describe('person editorial coverage', () => {
     }
     p.info.documentElement.setAttribute('type','collection');expect(checkCoverage([p],[]).errors).toEqual([]);
   });
+  it.each(['erslew', 'ehrencron-mueller'])('accepts a documented unsuccessful search in reserve source %s', sourceId => {
+    const p = person();
+    p.bio = null;
+    const info = `<person id="p" country="dk" lang="da" type="poet"><name><lastname>P</lastname></name><biography-status status="not-found" checked-on="2026-11-01"><checked-source id="${sourceId}">No matching entry</checked-source><note>Preferred sources searched first</note></biography-status></person>`;
+    p.info = parseXml(info);
+    expect(checkCoverage([p], []).errors).toEqual([]);
+    expect(() => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/info-xml.rng', '-'], { input: info, stdio: ['pipe', 'pipe', 'pipe'] })).not.toThrow();
+    p.info.getElementsByTagName('checked-source')[0].setAttribute('id', 'unapproved-source');
+    expect(checkCoverage([p], []).errors).toHaveLength(1);
+  });
 });
 
 describe('wanted texts', () => {

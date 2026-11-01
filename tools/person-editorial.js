@@ -22,7 +22,7 @@ export const stripWishMarkers = xml => {
   return Array.from(doc.documentElement.childNodes).map(serialize).join('');
 };
 
-export const sourceIds = ['dbl1', 'dbl2', 'salmonsen2', 'salmonsen-supplement', 'salmonsen4'];
+export const sourceIds = ['dbl1', 'dbl2', 'salmonsen2', 'salmonsen-supplement', 'salmonsen4', 'erslew', 'ehrencron-mueller'];
 const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value) &&
   Number.isNaN(Date.parse(value)) === false && new Date(value).toISOString().slice(0, 10) === value;
 export const hasBiography = doc => doc != null && elements(doc, 'biography')

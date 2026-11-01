@@ -35,7 +35,7 @@
       <attribute name="checked-on"><data type="date" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/></attribute>
       <oneOrMore>
         <element name="checked-source">
-          <attribute name="id"><choice><value>dbl1</value><value>dbl2</value><value>salmonsen2</value><value>salmonsen-supplement</value><value>salmonsen4</value></choice></attribute>
+          <attribute name="id"><choice><value>dbl1</value><value>dbl2</value><value>salmonsen2</value><value>salmonsen-supplement</value><value>salmonsen4</value><value>erslew</value><value>ehrencron-mueller</value></choice></attribute>
           <text/>
         </element>
       </oneOrMore>
