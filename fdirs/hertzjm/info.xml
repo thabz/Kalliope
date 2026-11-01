@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hertzjm" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>J.M.</firstname>
+    <lastname>Hertz</lastname>
+    <fullname>Jens Michael Hertz</fullname>
+  </name>
+  <!-- Livsdata: Danmarks Kirker, Ribe, s. 815: https://nmdanmarkskirkerprod.blob.core.windows.net/files/Ribe_0813-0818.pdf -->
+  <period>
+    <born>
+      <date>1766-07-26</date>
+      <place>Ørslev ved Vordingborg</place>
+    </born>
+    <dead>
+      <date>1825-06-02</date>
+      <place>Ribe</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q12319390</wikidata>
+    <danskforfatterleksikon-dk>HJMHertz</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
