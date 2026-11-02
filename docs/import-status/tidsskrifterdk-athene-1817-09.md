@@ -1,48 +1,82 @@
-# Athene, bind IX (1817): stoppet import
+# Athene, bind IX (1817): PDF med erstatningssider og digtimport
 
-Status 1. november 2026: **Importen til #2132 er stoppet på grund af
-manglende facsimilesider.** Der er endnu ikke oprettet værk-XML eller
-publiceret billeder fra dette bind. Digtene er ikke transskriberet eller
-korrekturlæst.
+Status 2. november 2026: Importen til #2132 er genoptaget efter brugerens
+udtrykkelige anvisning om at indsætte to tomme erstatningssider for de
+manglende prosasider 128–129. Prosaen indgår ikke i digtudvalget. De blanke
+sider erstatter kun de manglende billedpositioner; ingen tekst er rekonstrueret.
 
-## Kilde
+## Kilde og afledt PDF
 
 *Athene. Et Maanedsskrift*, Niende Bind, Julius–December 1817, udgivet af
 Christian Molbech. Kiøbenhavn, den Gyldendalske Boghandlings Forlag.
 
-- [KB's PDF, 130020878097](https://www.kb.dk/e-mat/dod/130020878097.pdf),
-  625 PDF-sider i den undersøgte fil.
-- SHA-256: `b6ddca64fc37ff38aedb0765025fe3a9fe4e9ba35be9f5cac849c700ac9ec719`.
+- [KB's oprindelige PDF, 130020878097](https://www.kb.dk/e-mat/dod/130020878097.pdf):
+  625 sider, fortsat med det dokumenterede hul.
+- Originalens SHA-256:
+  `b6ddca64fc37ff38aedb0765025fe3a9fe4e9ba35be9f5cac849c700ac9ec719`.
+- [Kalliopes afledte PDF](https://kalliope.org/facsimiles/tidsskrifterdk/1817-athene-09.pdf):
+  627 sider, inklusive de to redaktionelle erstatningssider.
+- Derivatets SHA-256:
+  `46619b3b0a9b1157a24fd26242c95a49ce4ec7ab9bd4552244b2c131ff948196`.
 - [Bibliografisk oversigt](https://danskforfatterleksikon.dk/1850/sk1850aar1813.htm#titelnr123805).
 
-## Dokumenteret hul
+Den oprindelige PDF er bevaret. qpdf har indsat to helt blanke sider efter
+originalens PDF-side 138. Alle 625 originale siders sidedictionaries,
+tekststrømme, billeder og rekursivt refererede ressourcer er sammenlignet
+maskinelt efter normalisering af objektreferencer og er uændrede. De to nye
+sider har hverken tekst- eller billedstrømme. Den offentligt downloadede PDF
+har samme SHA-256 som den kontrollerede lokale fil.
 
-De trykte sider **128–129** mangler mellem følgende to billeder:
+## Det dokumenterede hul og den nye sidemapping
 
-| PDF-side (enbaseret) | Facsimilefil (nulbaseret) | Trykt side | Visuelt indhold |
+| Ny PDF-side | Facsimilefil | Trykt side eller erstatningsposition | Indhold |
 | --- | --- | --- | --- |
 | 138 | `137.jpg` | 127 | Holberg-afhandlingen; brødteksten slutter »At han ogsaa kunde være en«. |
-| 139 | `138.jpg` | 130 | Fortsættelse af afhandlingen; siden begynder »bør upaatvivleligen regnes med blandt hans kritiske Arbejder«. |
+| 139 | `138.jpg` | [128] | Helt blank redaktionel erstatningsside. |
+| 140 | `139.jpg` | [129] | Helt blank redaktionel erstatningsside. |
+| 141 | `140.jpg` | 130 | Fortsættelsen begynder »bør upaatvivleligen regnes med blandt hans kritiske Arbejder«. |
 
-Begge nabosider er åbnet og aflæst direkte som sidebilleder. Springet er
-dermed bekræftet visuelt og bygger ikke alene på OCR. Den berørte tekst
-er prosa, men PDF-skillens stopregel gælder det komplette kildebind.
+Nabosiderne og begge blanke sider er kontrolleret visuelt. Originalens sider
+1–138 har samme position i derivatet; alle efterfølgende originale sider er
+flyttet to pladser. Kalliopes facsimile har 627 billeder og sideoffset 11.
+Det betyder ikke, at KB's originalfil er blevet komplet.
 
-## Udført og udestående
+## Udvælgelse og korrektur
 
-OCR-/PDF-miljøet er kontrolleret. PDF-metadata og det eksisterende tekstlag er
-undersøgt diagnostisk. PDF-siderne 138–140 er gengivet til lokal kontrol;
-138–139 er kontrolleret visuelt. Der er ikke udført frisk OCR, transskription
-eller korrektur af bindets digte. Det fulde sideinventar, kontrol af
-rettelsesark og udvælgelse af digte er ikke afsluttet.
+Hele bindets 625 originale billeder og de to nye blanke sider er gennemgået
+visuelt. Der er ikke fundet yderligere sidehuller eller noget rettelsesark.
+Syv selvstændige digte er udvalgt; de dækker 39 tekst-side-forekomster på
+36 forskellige fysiske sider. Indlagte verskandidater er vurderet særskilt,
+så uddrag, dramareplikker og afbrudte citater ikke bliver selvstændige digte.
 
-Registeret på s. 595–610 har en særskilt, allerede gennemgået
-[registerpakke på samle-issue #2123](https://github.com/thabz/Kalliope/issues/2123#issuecomment-6551625203).
-Pakkens SHA-256-kontrol er bestået, og den genbruges til de øvrige binds
-importer. Det dokumenterer ikke, at hele bind IX er komplet eller korrekturlæst.
+[Registerpakken i #2123](https://github.com/thabz/Kalliope/issues/2123#issuecomment-6551625203)
+er integritetskontrolleret og genbrugt til udvælgelse og registerafstemning.
+Frisk OCR begrænses til de relevante digtsider. Registeret erstatter ikke
+den visuelle gennemgang af resten af bindet.
 
-PDF-skillens stopregel er fulgt ved det bekræftede hul. For at genoptage
-importen skal Agent først finde en komplet digitalisering af samme bind
-eller verificerede billeder af s. 128–129 fra samme udgave og kontrollere
-deres placering. Derefter skal hele bindet inventeres på ny. Ingen tekst
-er rekonstrueret fra andre udgaver; resten af PDF'en er ikke erklæret komplet.
+Der foreligger XML-udkast til alle syv digte i
+`fdirs/tidsskrifterdk/1817-athene-09.xml`, fortsat med `status="incomplete"`.
+Frisk OCR er udført på alle 36 digtsider med otte konfigurationer; alle 288
+kørsler er verificeret. Titelbladet er beskåret og rettet op med bestået QA.
+Facsimiler og thumbnails er publiceret og kontrolleret.
+
+Georg Holger Waage, Nikolai Fogtmann, Børge Anton Hoppe, Frederik Christian
+Sibbern og Moschos er oprettet. De fire først producerede personbiografier
+(Waage, Fogtmann, Hoppe og Moschos) er fuldt uafhængigt korrekturlæst; alle
+fund er rettet og genverificeret. Sibberns fulde DBL1-biografi er
+transskriberet og førstegennemgået på s. 550–560, men afventer afsluttende
+uafhængig kontrol. Hans attribution til det usignerede Frederiksborg er
+sikkert dokumenteret i Erslew, bind III, s. 166.
+
+Færdigstatus og merge afventer fuld uafhængig kontrol af alle syv digtudkast,
+strofer, indryk, typografi og sideskift, afsluttede kandidatregistre og
+reviewcheckpoint samt endelige metadata-, variant- og forlægskontroller.
+Sibberns bibliografiske hovedværker og portrætsøgning er ikke afsluttet.
+Der er ikke tilføjet korrektur2 eller modelattest til digtudkastene.
+
+## Statuscommit og teknisk validering
+
+Snapshot den 2. november 2026: XML-schema, formattering og `git diff --check`
+er kontrolleret. `make test` afsluttede med exitkode 0: 139 testsuiter og
+2354 tests bestod; én eksisterende suite med ni tests blev sprunget over.
+Det er teknisk validering af et uafsluttet tekstudkast, ikke færdig korrektur.
