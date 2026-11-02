@@ -11,7 +11,7 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-01T19:09:00+00:00"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Udvalg af bindets digte med forerindringen til Hakon den Godes Mindesang. Prosaartikler, anmeldelser og indlejrede verscitater er ikke medtaget.</note>
+    <note editorial="true">Alle bindets digte er medtaget med forerindringen til Hakon den Godes Mindesang. Prosaartikler, anmeldelser og indlejrede verscitater er ikke medtaget.</note>
   </notes>
   <pictures>
     <picture src="1817-athene-08-p1.jpg" type="titlepage" primary="true"><transcription>Athene / et Maanedsskrift / udgivet / af / Christian Molbech. // Ottende Bind. // Januar — Junius 1817. // Kiøbenhavn. / Trykt paa den Gyldendalske Boghandlings / Forlag hos P. D. Kiøpping.</transcription></picture>
@@ -487,6 +487,7 @@ Den blege Mund han ei at røre magter.
 Han følger, dog med selsomt vilde Fagter.
 Han følger taus til Gubbens Huus, det røde;
 Den næste Morgen laae han blandt de Døde.
+
 <nonum><right><w>C. Hauch.</w></right></nonum>
 </poetry>
 </body>
@@ -583,12 +584,13 @@ Ei tilbage nu, men frem!
 Jeg maa nyde Reisens Frugter.
 Ak, den er jo dog, i Bugter
 Kun en <w>Omvei</w> til mit Hiem!
+
 <nonum><right><w>A. Oehlenschläger.</w></right></nonum>
 </poetry>
 </body>
 </text>
 
-<section id="magnusson20261101801" author="magnusson" level="2">
+<text id="magnusson20261101801" author="magnusson" lang="da" aliases="magnusson20261101802,magnusson20261101803">
 <head>
   <title>Hakon den Godes Mindesang</title>
   <subtitle>
@@ -597,33 +599,11 @@ Kun en <w>Omvei</w> til mit Hiem!
     <line>oversat</line>
     <line>efter Originalens egne Udtryk og Versemaal.</line>
   </subtitle>
-</head>
-<content>
-<text id="magnusson20261101802" lang="da">
-<head>
-  <title>Forerindring</title>
-  <source pages="310-311" facsimile-pages="321-322"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-Dette mærkelige Digt haves neppe heelt. <w>Hákonarmál</w> var dets oprindelige Titel. Som bekiendt findes Originalen i <w>Snorre Sturlesens norske Kongers Historie</w>, S. 161–4, samt 156–7 i den store Kiøbenhavnske Udgaves 1ste Deel. Den sammesteds befindtlige danske Oversættelse, er ikke passende til vore Tiders Sprog, da det var bleven Oversætteren paalagt at følge det 16de og 17de Aarhundredes Stiil og Skrivemaade. Den giver ei heller rigtigt Begreb om Digterens Udtryk, da hans Omskrivningsmaade tilsidesættes ganske. En ordrettere og læseligere Oversættelse findes i Sandvigs <w>danske Sange af det ældste Tidsrum</w> S. 72–79. Min afviger paa nogle Steder fra begge de førmeldte; Grundene dertil maatte fremsættes i philologiske Anmærkninger, der ikke passe ret vel i et Skrift som dette; men i fornødent Fald kan jeg retfærdiggiøre min Fremgangsmaade.
-  Digtets Metrum er blandet, mod de gamle Skaldes almindelige Vedtægter. Det hører deels til det sexledede, deels til det otteledede <w>Fornyrðalag</w> eller <w>gamle Digtes</w> Versemaal (hvorom Læserne kunne eftersee <w>Nordens gamle Digtekunst</w> af <w>Olafsen</w>, S. 49–56, samt 193).
-<pb n="311" facs="321.jpg"/>  Anledningen til Digtet var denne. Den norske Konge, <w>Hakon</w> (eller <w>Haagen</w>) <w>Adalsteinsfostre</w>, ellers kaldet <w>den gode</w>, faldt i et Slag mod sine egne Brodersønner, som søgte at bemægtige sig Riget, i Aaret 963. Selv var han bleven christnet i England, hvor han var opdragen, men hans Undersaatter vare endnu Hedninger, ligesaavel som Forfatteren til dette Digt, hans kiæreste Skiald, der søgte her at udtrykke sin Sorg over sin Herres Død, samt at vise sine Landsmænd og Troesforvandte, at han, endskiøndt han var Christen, var optagen i de Valhallske Guders Samfund, fordi han havde beskiærmet (eller skaanet) Hedningernes Helligdomme.
-  <w>Eyvinds</w> Tilnavn <w>Skáldaspillir</w> fik han af den Aarsag, at man ansaae ham for en saa fortræffelig Digter, at han ved sin Konst og Berømmelse fordunklede alle samtidige Skialdes Værker og Navne. At dette hans Digt er bleven siunget ved Kong Hakons Begravelse, bliver paa en Maade sandsynligt af følgende Fortællinger hos <w>Snorre</w> (l. c. S. 161.).
-<blockquote>„Kongens Venner førte hans Liig til <w>Sæheim</w> paa Nordhordeland, opførte der en stor Høi og lagde ham deri med hans hele Rustning og hans bedste Klæder, men intet andet Gods. De talede „erfi sang“ over hans Grav, efter Hedningernes Skik, og henviste ham til Valhall. <w>Eyvind Skáldaspillir</w> digtede et Qvad om Kong Hakons Fald, og hans herlige Modtagelse i Valhall. — Det kaldes <w>Hákonarmál</w> og begynder saaledes:“</blockquote>
-</prose>
-</body>
-</text>
-
-<text id="magnusson20261101803" lang="da">
-<head>
-  <toctitle>Hakon den Godes Mindesang</toctitle>
   <firstline>Gothers Gud udsendte</firstline>
   <notes>
     <note editorial="true">Oversættelse af Eyvind Finnssons <xref type="translation" poem="finnsson20261101801"/>.</note>
   </notes>
-  <source pages="312-320" facsimile-pages="323-331">
+  <source pages="310-320" facsimile-pages="321-331">
     <title>Athene. Et Maanedsskrift</title>
     <editor id="molbechsr" type="editor">Christian Molbech</editor>
     <translator id="magnusson">Finnur Magnússon</translator>
@@ -636,8 +616,16 @@ Dette mærkelige Digt haves neppe heelt. <w>Hákonarmál</w> var dets oprindelig
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+<center><b>Forerindring</b></center>
+Dette mærkelige Digt haves neppe heelt. <w>Hákonarmál</w> var dets oprindelige Titel. Som bekiendt findes Originalen i <w>Snorre Sturlesens norske Kongers Historie</w>, S. 161–4, samt 156–7 i den store Kiøbenhavnske Udgaves 1ste Deel. Den sammesteds befindtlige danske Oversættelse, er ikke passende til vore Tiders Sprog, da det var bleven Oversætteren paalagt at følge det 16de og 17de Aarhundredes Stiil og Skrivemaade. Den giver ei heller rigtigt Begreb om Digterens Udtryk, da hans Omskrivningsmaade tilsidesættes ganske. En ordrettere og læseligere Oversættelse findes i Sandvigs <w>danske Sange af det ældste Tidsrum</w> S. 72–79. Min afviger paa nogle Steder fra begge de førmeldte; Grundene dertil maatte fremsættes i philologiske Anmærkninger, der ikke passe ret vel i et Skrift som dette; men i fornødent Fald kan jeg retfærdiggiøre min Fremgangsmaade.
+  Digtets Metrum er blandet, mod de gamle Skaldes almindelige Vedtægter. Det hører deels til det sexledede, deels til det otteledede <w>Fornyrðalag</w> eller <w>gamle Digtes</w> Versemaal (hvorom Læserne kunne eftersee <w>Nordens gamle Digtekunst</w> af <w>Olafsen</w>, S. 49–56, samt 193).
+<pb n="311" facs="321.jpg"/>  Anledningen til Digtet var denne. Den norske Konge, <w>Hakon</w> (eller <w>Haagen</w>) <w>Adalsteinsfostre</w>, ellers kaldet <w>den gode</w>, faldt i et Slag mod sine egne Brodersønner, som søgte at bemægtige sig Riget, i Aaret 963. Selv var han bleven christnet i England, hvor han var opdragen, men hans Undersaatter vare endnu Hedninger, ligesaavel som Forfatteren til dette Digt, hans kiæreste Skiald, der søgte her at udtrykke sin Sorg over sin Herres Død, samt at vise sine Landsmænd og Troesforvandte, at han, endskiøndt han var Christen, var optagen i de Valhallske Guders Samfund, fordi han havde beskiærmet (eller skaanet) Hedningernes Helligdomme.
+  <w>Eyvinds</w> Tilnavn <w>Skáldaspillir</w> fik han af den Aarsag, at man ansaae ham for en saa fortræffelig Digter, at han ved sin Konst og Berømmelse fordunklede alle samtidige Skialdes Værker og Navne. At dette hans Digt er bleven siunget ved Kong Hakons Begravelse, bliver paa en Maade sandsynligt af følgende Fortællinger hos <w>Snorre</w> (l. c. S. 161.).
+<blockquote>„Kongens Venner førte hans Liig til <w>Sæheim</w> paa Nordhordeland, opførte der en stor Høi og lagde ham deri med hans hele Rustning og hans bedste Klæder, men intet andet Gods. De talede „erfi sang“ over hans Grav, efter Hedningernes Skik, og henviste ham til Valhall. <w>Eyvind Skáldaspillir</w> digtede et Qvad om Kong Hakons Fald, og hans herlige Modtagelse i Valhall. — Det kaldes <w>Hákonarmál</w> og begynder saaledes:“</blockquote>
+</prose>
 <poetry>
-Gothers Gud udsendte
+<pb n="312" facs="322.jpg"/>Gothers Gud udsendte
 <w>Gøndul</w> og <w>Skøgul</w><footnote><w>Gøndul</w>, <w>Skøgul</w> og <w>Hilde</w> vare trende af de fornemste Valkyrier.</footnote>
 Konninger at kaare,
 Hvo af <w>Yngves</w> Æt<footnote><w>Yngve</w>, en svensk Konge, som forvexles med Guden <w>Freyr</w>, var Stamfader til <w>Ynglingerne</w>, en Fyrsteslægt, hvortil begge de stridende Hære-Anførere hørte.</footnote>
@@ -804,9 +792,6 @@ Trældom Folket bøier.<footnote>Digteren var meget misfornøiet med Hakons Efte
 </body>
 </text>
 
-</content>
-</section>
-
 <text id="anonym1800dk20261101801" variant="anonym1800dk2026081521" author="anonym1800dk" lang="da">
 <head>
   <title>Ceres’s Klage</title>
@@ -962,6 +947,7 @@ Og i Vaarens Straaledandse
 Læse hvert et følsomt Bryst,
 Som i Høstens visne Krandse,
 Al min Smerte, al min Lyst.
+
 <nonum><right>Fr. H.</right></nonum>
 </poetry>
 </body>
@@ -1048,6 +1034,7 @@ Nær i mit Hierte den Flamme, du tænder!
            Lær mine Hænder
 Dobbelte Greb i din Streng, som udsender
      Pilens og Tonernes Klang!
+
 <nonum><right><w>J. L. Heiberg.</w></right></nonum>
 </poetry>
 </body>
