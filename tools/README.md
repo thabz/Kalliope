@@ -95,16 +95,11 @@ værkfiler, hvor mindst én `<source>` refererer til en fil med endelsen `.pdf`.
 
 ### Biografistatus og tekstønsker
 
-`person-editorial.js` validerer, at alle digtere, kunstnere og øvrige personer
-har en synlig biografi eller dokumenteret forgæves søgning i `info.xml`.
-Kravet håndhæves også af korpustesten i `make test`, uden undtagelseslister.
-Værktøjet validerer desuden tekstønsker og kan forbinde manuelt identificerede
-ønsker med deres konkrete tekster. Se [personstatus](../docs/person-editorial.md).
-
-```sh
-npm run person-editorial -- --check
-npm run person-editorial -- --reconcile
-```
+Korpustesten `__tests__/corpus/biography-coverage.test.js` sikrer, at alle
+digtere, kunstnere og øvrige personer har en synlig biografi eller dokumenteret
+forgæves søgning i `info.xml`, uden undtagelseslister. Den køres med `make test`.
+Tekstønsker valideres og afstemmes med scriptet under `add-kalliope-person`;
+se [personstatus](../docs/person-editorial.md).
 
 ## Redaktionelle værktøjer
 

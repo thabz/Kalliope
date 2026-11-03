@@ -11,60 +11,14 @@ const elements = (node, tag) => Array.from(node.getElementsByTagName(tag));
 const readJson = filename => JSON.parse(fs.readFileSync(filename, 'utf8'));
 const serialize = node => new XMLSerializer().serializeToString(node);
 const normalize = value => value.normalize('NFKC').toLocaleLowerCase('da').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-// Strip editorial wrappers through the DOM so nested typography survives.
-export const stripWishMarkers = xml => {
-  if (xml.includes('data-wish') === false) return xml;
-  const doc = parseXml(`<body>${xml}</body>`);
-  for (const marker of elements(doc, 'span').filter(node => node.hasAttribute('data-wish'))) {
-    while (marker.firstChild != null) marker.parentNode.insertBefore(marker.firstChild, marker);
-    marker.parentNode.removeChild(marker);
-  }
-  return Array.from(doc.documentElement.childNodes).map(serialize).join('');
-};
-
-export const sourceIds = ['dbl1', 'dbl2', 'salmonsen2', 'salmonsen-supplement', 'salmonsen4', 'erslew', 'ehrencron-mueller'];
-const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value) &&
-  Number.isNaN(Date.parse(value)) === false && new Date(value).toISOString().slice(0, 10) === value;
-export const hasBiography = doc => doc != null && elements(doc, 'biography')
-  .some(entry => entry.getAttribute('hidden') !== 'true' &&
-    elements(entry, 'body').some(body => body.textContent.trim().length > 0));
-
-// Source XML is required here: negative research evidence and wish markers are
-// deliberately editorial data, not fields in the public bulk dataset.
 export const loadPeople = root => fs.readdirSync(path.join(root, 'fdirs'), { withFileTypes: true })
   .filter(entry => entry.isDirectory() === true && fs.existsSync(path.join(root, 'fdirs', entry.name, 'info.xml')))
   .map(entry => {
     const filename = `fdirs/${entry.name}/bio.xml`;
     return { id: entry.name,
-      info: parseXml(fs.readFileSync(path.join(root, 'fdirs', entry.name, 'info.xml'), 'utf8')),
       filename,
       bio: fs.existsSync(path.join(root, filename)) ? parseXml(fs.readFileSync(path.join(root, filename), 'utf8')) : null };
   });
-
-export const checkCoverage = people => {
-  const errors = [];
-  for (const person of people) {
-    if (person.info.documentElement.getAttribute('type') === 'collection') continue;
-    const statuses = elements(person.info, 'biography-status');
-    const status = statuses[0];
-    const hasBio = hasBiography(person.bio);
-    if (statuses.length > 1) errors.push(`${person.id}: gentaget biography-status`);
-    if (status != null) {
-      const sources = elements(status, 'checked-source');
-      if (status.getAttribute('status') !== 'not-found' || validDate(status.getAttribute('checked-on')) !== true ||
-        sources.length === 0 || sources.some(source =>
-          sourceIds.includes(source.getAttribute('id')) === false || source.textContent.trim().length === 0) ||
-        elements(status, 'note').some(note => note.textContent.trim().length > 0) !== true) {
-        errors.push(`${person.id}: ugyldig biography-status`);
-      }
-      if (hasBio === true) errors.push(`${person.id}: biografi og negativ status findes samtidig`);
-    }
-    if (hasBio === false && status == null) {
-      errors.push(`${person.id}: mangler biografi eller dokumenteret negativ søgning`);
-    }
-  }
-  return errors;
-};
 
 export async function readTexts(root) {
   const records = [];
@@ -154,14 +108,13 @@ export const reconcileWishes = (people, registry) => {
 
 const main = async () => {
   const args = process.argv.slice(2);
-  if (args.some(arg => ['--check', '--reconcile'].includes(arg) === false) || args.length > 1) throw new Error('Brug: person-editorial [--check|--reconcile]');
+  if (args.some(arg => ['--check', '--reconcile'].includes(arg) === false) || args.length > 1) throw new Error('Brug: wanted-texts.js [--check|--reconcile]');
   const root = process.cwd();
   const people = loadPeople(root);
   const registryFile = path.join(root, 'tools/data/wanted-texts.json');
   const registry = readJson(registryFile);
-  const coverageErrors = checkCoverage(people);
   const wishes = checkWishes(people, registry, registry.entries.length === 0 ? [] : await readTexts(root));
-  const errors = [...coverageErrors, ...wishes.errors];
+  const errors = wishes.errors;
   console.log(JSON.stringify({ wishes: wishes.candidates, errors }, null, 2));
   if (errors.length > 0) { process.exitCode = 1; return; }
   if (args.includes('--reconcile') === true) {

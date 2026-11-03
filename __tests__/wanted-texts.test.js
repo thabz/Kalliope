@@ -3,78 +3,13 @@ import { execFileSync } from 'node:child_process';
 import { loadTrackedWorkFiles } from '../tools/libs/work-files.js';
 import { resolveAuthorId } from '../tools/build-static/anthologies.js';
 import { getChildByTagName } from '../tools/build-static/xml.js';
-import { parseXml, hasBiography, checkCoverage, checkWishes, reconcileWishes, stripWishMarkers, loadPeople } from '../tools/person-editorial.js';
+import { parseXml, checkWishes, reconcileWishes, loadPeople } from '../.agents/skills/add-kalliope-person/scripts/wanted-texts.js';
 const person = (body = '<span data-wish="p-song"><i>Song</i></span>') => ({
   id: 'p', filename: 'fdirs/p/bio.xml',
-  info: parseXml('<person type="poet"/>'),
   bio: parseXml(`<bio><biographies><biography><body>${body}</body></biography></biographies></bio>`),
 });
 const registry = () => ({version: 1, entries: [{id:'p-song', poetId:'p', title:'Song', source:'Printed biography, p. 3', status:'open', mentions:[{file:'fdirs/p/bio.xml',text:'Song'}]}]});
 const texts = [{id:'song1',poet_id:'p',title:'Song'},{id:'song2',poet_id:'p',title:'Song'}];
-
-describe('person editorial coverage', () => {
-  it.each(['poet', 'artist', 'person'])('requires a visible biography or documented research for every %s', type => {
-    const p = person();
-    p.info.documentElement.setAttribute('type', type);
-    expect(checkCoverage([p])).toEqual([]);
-    p.bio = null;
-    expect(checkCoverage([p])).toEqual(['p: mangler biografi eller dokumenteret negativ søgning']);
-    p.bio = person('  ').bio;
-    expect(hasBiography(p.bio)).toBe(false);
-    expect(checkCoverage([p])).toHaveLength(1);
-    p.bio = person().bio;
-    p.bio.getElementsByTagName('biography')[0].setAttribute('hidden', 'true');
-    expect(hasBiography(p.bio)).toBe(false);
-    expect(checkCoverage([p])).toHaveLength(1);
-  });
-
-  it('exempts collections', () => {
-    const p = person();
-    p.bio = null;
-    p.info.documentElement.setAttribute('type', 'collection');
-    expect(checkCoverage([p])).toEqual([]);
-  });
-
-  const negativeResearch = '<biography-status status="not-found" checked-on="2026-10-31"><checked-source id="dbl1">No matching entry</checked-source><note>Alphabetical entries checked</note></biography-status>';
-  it('accepts documented negative research and rejects a simultaneous visible biography', () => {
-    const p = person();
-    p.bio = null;
-    p.info = parseXml(`<person type="artist">${negativeResearch}</person>`);
-    expect(checkCoverage([p])).toEqual([]);
-    p.bio = person().bio;
-    expect(checkCoverage([p]).join()).toMatch(/samtidig/);
-  });
-
-  it.each([
-    ['impossible date', '2026-10-31', '2026-02-30'],
-    ['wrong status', 'not-found', 'pending'],
-    ['missing source', '<checked-source id="dbl1">No matching entry</checked-source>', ''],
-    ['unknown source', 'dbl1', 'unapproved-source'],
-    ['empty source description', 'No matching entry', '  '],
-    ['empty reason', 'Alphabetical entries checked', '  '],
-  ])('rejects negative research with %s', (_description, before, after) => {
-    const p = person();
-    p.bio = null;
-    p.info = parseXml(`<person type="poet">${negativeResearch.replace(before, after)}</person>`);
-    expect(checkCoverage([p])).toEqual(['p: ugyldig biography-status']);
-  });
-
-  it('rejects duplicate research statuses', () => {
-    const p = person();
-    p.bio = null;
-    p.info = parseXml(`<person type="person">${negativeResearch}${negativeResearch}</person>`);
-    expect(checkCoverage([p])).toEqual(['p: gentaget biography-status']);
-  });
-
-  it.each(['erslew', 'ehrencron-mueller'])('accepts a documented unsuccessful search in reserve source %s', sourceId => {
-    const p = person();
-    p.bio = null;
-    const info = `<person id="p" country="dk" lang="da" type="poet"><name><lastname>P</lastname></name>${negativeResearch.replace('dbl1', sourceId)}</person>`;
-    p.info = parseXml(info);
-    expect(checkCoverage([p])).toEqual([]);
-    expect(() => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/info-xml.rng', '-'], { input: info, stdio: ['pipe', 'pipe', 'pipe'] })).not.toThrow();
-  });
-});
 
 describe('wanted texts', () => {
   it('suggests ambiguous matches without automatically fulfilling them', () => {
@@ -101,13 +36,6 @@ describe('wanted texts', () => {
     expect(checkWishes([person()],r,[{id:'other',poet_id:'else'}]).errors.join()).toMatch(/forkert forfatter/);
     expect(checkWishes([person('Different')],registry(),texts).errors.join()).toMatch(/omtalen findes ikke/);
   });
-  it('removes editorial wrappers from rendering without changing inner content', () => {
-    expect(stripWishMarkers('A <span data-wish="p-song"><i>Song</i></span>.')).toBe('A <i>Song</i>.');
-  });
-});
-
-it('requires biography or documented failed research for everyone in the corpus', () => {
-  expect(checkCoverage(loadPeople(process.cwd()))).toEqual([]);
 });
 
 it('validates the wanted-text register without generated datasets', () => {
@@ -130,18 +58,12 @@ it('validates the wanted-text register without generated datasets', () => {
   expect(checkWishes(people,r,targets).errors).toEqual([]);
 });
 
-it('validates negative-status metadata and blank works against the actual schemas', () => {
-  const info='<person id="p" country="dk" lang="da" type="poet"><name><lastname>P</lastname></name><biography-status status="not-found" checked-on="2026-10-31"><checked-source id="dbl1">No matching entry</checked-source><note>Nothing found</note></biography-status></person>';
-  expect(() => execFileSync('xmllint',['--noout','--relaxng','schemas/info-xml.rng','-'],{input:info,stdio:['pipe','pipe','pipe']})).not.toThrow();
-  expect(() => execFileSync('xmllint',['--noout','--relaxng','schemas/kalliopework.rng','-'],{input:'<kalliopework id="w" author="p" status="incomplete" type="poetry"><workhead><title>Collected Works</title><year>1900</year></workhead><workbody/></kalliopework>',stdio:['pipe','pipe','pipe']})).not.toThrow();
-});
-
 it('reconciles through the CLI only after validation, and rejects a later deleted target', async () => {
   const { default: os } = await import('node:os');
   const { default: path } = await import('node:path');
   const { gzipSync } = await import('node:zlib');
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'kalliope-person-'));
-  const tool=path.resolve('tools/person-editorial.js');
+  const tool=path.resolve('.agents/skills/add-kalliope-person/scripts/wanted-texts.js');
   try {
     for (const dir of ['fdirs/p','tools/data','public/api/v1']) fs.mkdirSync(path.join(root,dir),{recursive:true});
     fs.writeFileSync(path.join(root,'fdirs/p/info.xml'),'<person type="poet"/>');
@@ -156,10 +78,6 @@ it('reconciles through the CLI only after validation, and rejects a later delete
     run('--reconcile');const linked=fs.readFileSync(bio,'utf8');
     expect(linked).toContain('<a poem="song1"><i>Song</i></a>');
     run('--reconcile');expect(fs.readFileSync(bio,'utf8')).toBe(linked);
-    fs.mkdirSync(path.join(root, 'fdirs/new-person'));
-    fs.writeFileSync(path.join(root, 'fdirs/new-person/info.xml'), '<person type="poet"/>');
-    expect(() => run('--check')).toThrow();
-    fs.rmSync(path.join(root, 'fdirs/new-person'), { recursive: true });
     fs.writeFileSync(bulk,gzipSync(''));
     expect(()=>run('--check')).toThrow();
   } finally { fs.rmSync(root,{recursive:true,force:true}); }

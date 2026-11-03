@@ -24,5 +24,4 @@ konkret begrundelse i personens `info.xml`. Bevar dato og evidens, når en
 tidligere søgning genbruges; registrér kun faktisk undersøgte kilder. Et
 negativt Salmonsen-fund er kun evidens for Salmonsen, ikke DBL.
 Ved indsættelse af en synlig biografi fjernes den negative status i `info.xml`.
-Den fælles kontrol `npm run person-editorial -- --check` og korpustesten i
-`make test` håndhæver kravet for alle personer uden undtagelser.
+Korpustesten i `make test` håndhæver kravet for alle personer uden undtagelser.

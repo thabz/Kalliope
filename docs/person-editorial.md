@@ -2,7 +2,7 @@
 
 ## Biografidækning
 
-`npm run person-editorial -- --check` validerer alle egentlige personer
+Korpustesten i `make test` validerer alle egentlige personer
 (`poet`, `artist`, `person`), også nye ikke-committede mapper. Samleposter er
 undtaget. En synlig biografi med ikke-tom body eller dokumenteret forgæves
 søgning kræves. Kun skjulte biografier opfylder ikke kravet.
@@ -61,22 +61,19 @@ med bindestreg. Omtalen markeres med
 Flere omtaler kan pege på samme ønske; undgå dubletter efter identitetskontrol.
 Markøren må ikke indeholde links eller andre ønskemarkører.
 
-Som forberedelse til en PR med tekstimport køres `npm run person-editorial`
-samlet for PR’ens ændringer. Rapporten køres ikke af `build-static` og skal ikke
-køres efter hver enkelt tekst eller hvert build. Den matcher forfatter og
+Som forberedelse til en PR med tekstimport bruges tekstønskescriptet under
+`add-kalliope-person` efter
+[skillens værkregistrering](../.agents/skills/add-kalliope-person/references/works.md).
+Rapporten køres samlet for PR'ens ændringer og ikke af `build-static` eller
+efter hver enkelt tekst eller hvert build. Den matcher forfatter og
 normaliseret titel/navnevariant eller førstelinje mod JSONL-korpus. Brug et
 static-build, der indeholder PR’ens nyimporterede tekster, før rapporten køres.
 Matcher er kun kandidater, også ved ét enkelt titelmatch. Ved usikker
 identifikation forbliver ønsket åbent med forklaring i `source`.
 
 Efter manuel identifikation tilføjes `targetId` med det konkrete tekst-id og
-begrundelsen opdateres i `source`. Kør så:
-
-```
-npm run person-editorial -- --reconcile
-```
-
-Kommandoen validerer hele registeret før skrivning, erstatter markørerne med
+begrundelsen opdateres i `source`. Skillens afstemningskommando validerer
+hele registeret før skrivning, erstatter markørerne med
 `<a poem="targetId">` og bevarer indhold og typografi. Status bliver `fulfilled`;
 post og omtaler bevares som historik. Gentagen kørsel er indholdsmæssigt neutral.
 DOM-serialisering kan normalisere XML-syntaks; gennemgå altid diff.

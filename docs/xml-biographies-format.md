@@ -106,8 +106,8 @@ synlig biografi indsættes, fjernes den negative status.
 
 Biografiarbejdet følger `$add-kalliope-person`. Kontrollér nye biografier med
 `xmllint --noout fdirs/<id>/bio.xml` og `git diff --check`, og kør
-`npm run person-editorial -- --check`, `npm run build-static` og `make test`
-før aflevering.
+`npm run build-static` og `make test` før aflevering. Biografikravet
+kontrolleres direkte af korpustesten.
 
 ## Interne henvisninger og manglende digte
 

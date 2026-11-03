@@ -35,8 +35,8 @@ forsideprioritering. Brug værk-skillen ved egentlig tekstimport.
 ## Kontrol og levering
 
 Formatér metadata med `node tools/format-metadata-xml.js <fil>`.
-Kør `npm run person-editorial -- --check` og `make test` samt relevante
-specialkontroller. Gennemgå diff, kilder, identitet og billedresultater.
+Kør `make test` samt relevante specialkontroller. Biografikravet håndhæves af
+korpustesten. Gennemgå diff, kilder, identitet og billedresultater.
 Aflever selvstændige personopgaver som PR med kilder, faktisk udførte kontroller
 og konkrete udeståender. Ved værkimport indgår personarbejdet i samme PR.
 Følg `AGENTS.md` og sessionens autorisation for Git-handlinger og CI.
