@@ -2,7 +2,7 @@
 
 ## Biografidækning
 
-`npm run person-editorial -- --check` validerer alle egentlige personer
+Korpustesten i `make test` validerer alle egentlige personer
 (`poet`, `artist`, `person`), også nye ikke-committede mapper. Samleposter er
 undtaget. En synlig biografi med ikke-tom body eller dokumenteret forgæves
 søgning kræves. Kun skjulte biografier opfylder ikke kravet.
@@ -20,22 +20,21 @@ Tilladte kilde-id'er: `dbl1`, `dbl2`, `salmonsen2`, `salmonsen-supplement`,
 `salmonsen4`, `erslew` og `ehrencron-mueller`. De sidste to er reservekilder
 efter prioriteringen i `docs/xml-biographies-format.md`. Undersøg de relevante
 tilladte kilder, og begrund udeladelser i
-noten. En gyldig markør kræver reel dato, mindst én kontrolleret kilde og
-ikke-tom begrundelse; undersøgelsens tilstrækkelighed vurderes redaktionelt.
+noten. En gyldig markør kræver reel dato, mindst én kontrolleret kilde med en
+ikke-tom beskrivelse og en ikke-tom begrundelse; undersøgelsens
+tilstrækkelighed vurderes redaktionelt.
 Markør og synlig biografi må ikke findes samtidig. Metadataformatter bruges
 uændret. Ingen nye offentlige API-felter indføres.
 
-`tools/data/biography-backlog.json` er den frosne restanceliste ved indførelsen.
-Tilføj aldrig personer til den. `--prune` fjerner afsluttede/slettede restancer;
-kommandoen ændrer ikke biografier eller registrerer en søgning på nogens vegne.
-Tests afviser nye mangler og afsluttede restancer, som ikke er fjernet.
-Når listen er tom, gælder kravet globalt uden undtagelser.
+Korpustesten i `make test` håndhæver kravet for alle egentlige personer uden
+undtagelsesliste og uden genererede data. Biografistatus vedligeholdes kun i
+personens `info.xml`. Når en synlig biografi indsættes, fjernes den negative
+status.
 
-`tools/data/salmonsen-biography-status.json` bevarer kildespecifikke negative
-fund og eksisterende rapportering. Et sådant fund alene opfylder ikke det nye
-krav. Genbrug evidensen ved personundersøgelsen; udvid den med øvrige relevante
-kilder. Ved indsættelse af bio fjernes både generel negativ status og en eventuel
-Salmonsen-post (det eksisterende statusværktøj kontrollerer sidstnævnte).
+Ved overførsel af tidligere søgninger bevares den oprindelige søgedato og
+begrundelse. Registrér kun de kildeundersøgelser, som dokumentationen faktisk
+omfatter. En søgning i Salmonsen er ikke dokumentation for en søgning i DBL;
+nyere og mere omfattende undersøgelser kan opdatere personens status.
 
 ## Ønskeregister
 
@@ -62,22 +61,19 @@ med bindestreg. Omtalen markeres med
 Flere omtaler kan pege på samme ønske; undgå dubletter efter identitetskontrol.
 Markøren må ikke indeholde links eller andre ønskemarkører.
 
-Som forberedelse til en PR med tekstimport køres `npm run person-editorial`
-samlet for PR’ens ændringer. Rapporten køres ikke af `build-static` og skal ikke
-køres efter hver enkelt tekst eller hvert build. Den matcher forfatter og
+Som forberedelse til en PR med tekstimport bruges tekstønskescriptet under
+`add-kalliope-person` efter
+[skillens værkregistrering](../.agents/skills/add-kalliope-person/references/works.md).
+Rapporten køres samlet for PR'ens ændringer og ikke af `build-static` eller
+efter hver enkelt tekst eller hvert build. Den matcher forfatter og
 normaliseret titel/navnevariant eller førstelinje mod JSONL-korpus. Brug et
 static-build, der indeholder PR’ens nyimporterede tekster, før rapporten køres.
 Matcher er kun kandidater, også ved ét enkelt titelmatch. Ved usikker
 identifikation forbliver ønsket åbent med forklaring i `source`.
 
 Efter manuel identifikation tilføjes `targetId` med det konkrete tekst-id og
-begrundelsen opdateres i `source`. Kør så:
-
-```
-npm run person-editorial -- --reconcile
-```
-
-Kommandoen validerer hele registeret før skrivning, erstatter markørerne med
+begrundelsen opdateres i `source`. Skillens afstemningskommando validerer
+hele registeret før skrivning, erstatter markørerne med
 `<a poem="targetId">` og bevarer indhold og typografi. Status bliver `fulfilled`;
 post og omtaler bevares som historik. Gentagen kørsel er indholdsmæssigt neutral.
 DOM-serialisering kan normalisere XML-syntaks; gennemgå altid diff.
