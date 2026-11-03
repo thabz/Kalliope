@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="meisling" country="dk" lang="da" type="poet">
+  <!-- Metadata source: DBL1 XI237–238; birth day is printed7.(ell.6.)Oct1787, so year only. Salmonsen2 XVI852 gives6October. -->
+  <!-- Kilder: https://runeberg.org/dbl/11/0239.html ; https://runeberg.org/dbl/11/0240.html -->
+  <name>
+    <firstname>Simon Sørensen</firstname>
+    <lastname>Meisling</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1787</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1856-04-08</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+</person>

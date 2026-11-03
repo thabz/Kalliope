@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hoppe" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Børge Anton</firstname>
+    <lastname>Hoppe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1796-10-01</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1865-02-28</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <!-- Livsdata: DBL1, bind VIII,1894,s70–71. Erslew, Almindeligt Forfatter-Lexicon,I,1843,s698,angiver hans Vandringer i Sanderumgaards Have,1816, i AtheneIX,s458–465. -->
+</person>
