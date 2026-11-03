@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sibbern" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik Christian</firstname>
+    <lastname>Sibbern</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1785-07-18</date>
+      <place>Christianshavn</place>
+    </born>
+    <dead>
+      <date>1872-12-16</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <gnd>117462160</gnd>
+    <runeberg-org>sibbefre</runeberg-org>
+  </identifiers>
+  <!-- Livsdata: DBL1,XV,1901,s550–560. ErslewIII,1853,s166, https://runeberg.org/almiforf/3/0172.html, krediterer udtrykkeligt Frederiksborg (skrevet1810), AtheneIX554–557. Den trykte tekst er usigneret; kildeeksemplarets håndskrift er kun supplerende evidens. -->
+</person>
