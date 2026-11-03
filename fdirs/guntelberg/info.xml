@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="guntelberg" country="dk" lang="da" type="poet">
+  <!-- Metadata source: DBL1 VI410–411. Death place not established. -->
+  <!-- Kilder: https://runeberg.org/dbl/6/0412.html ; https://runeberg.org/dbl/6/0413.html -->
+  <name>
+    <firstname>Christian Carl Herman Frederik</firstname>
+    <lastname>Güntelberg</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1791-04-27</date>
+      <place>Korsør</place>
+    </born>
+    <dead>
+      <date>1842-11-29</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>GCFGuntelberg</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
