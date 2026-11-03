@@ -18,7 +18,8 @@ translitterér æ/ø/å til ae/oe/aa og øvrige diakritiske tegn til grundbogsta
 Kun ved optaget efternavn tilføjes alle fornavnenes initialer i rækkefølge.
 Bevar eksisterende id'er. Afklar resterende kollisioner med brugeren.
 
-Undersøg biografi efter [biografiarbejdet](references/biography.md).
+Afslut hver ny person med en synlig, ikke-tom biografi eller dokumenteret
+forgæves søgning i `info.xml` efter [biografiarbejdet](references/biography.md).
 Brug `$add-person-portrait` til portrætsøgning og eventuel indsættelse.
 Registrér væsentlige digteriske udgivelser efter
 [værkregistrering](references/works.md). Manglende brugbare kilder skal fremgå
@@ -34,8 +35,8 @@ forsideprioritering. Brug værk-skillen ved egentlig tekstimport.
 ## Kontrol og levering
 
 Formatér metadata med `node tools/format-metadata-xml.js <fil>`.
-Kør `npm run person-editorial -- --check` og `make test` samt relevante
-specialkontroller. Gennemgå diff, kilder, identitet og billedresultater.
+Kør `make test` samt relevante specialkontroller. Biografikravet håndhæves af
+korpustesten. Gennemgå diff, kilder, identitet og billedresultater.
 Aflever selvstændige personopgaver som PR med kilder, faktisk udførte kontroller
 og konkrete udeståender. Ved værkimport indgår personarbejdet i samme PR.
 Følg `AGENTS.md` og sessionens autorisation for Git-handlinger og CI.

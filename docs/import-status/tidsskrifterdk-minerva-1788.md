@@ -145,7 +145,7 @@ og ni tests er sprunget over af den normale opsætning. Den særskilte
 sideopmærkningstest består med 23 tests. Statisk build med
 `KALLIOPE_SKIP_ELASTICSEARCH=true` og
 `KALLIOPE_SKIP_IMAGE_THUMBNAILS=true` består med exitkode 0.
-`npm run person-editorial` mod det opdaterede korpus og den efterfølgende
+Den daværende `npm run person-editorial` mod det opdaterede korpus og den efterfølgende
 `--reconcile` har ingen fejl eller nye ønskematch. `git diff --check` består.
 
 De komplette kildebilleder, friske OCR-filer, 451-siders inventar,

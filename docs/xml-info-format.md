@@ -362,7 +362,7 @@ Bemærk:
 
 ## Dokumenteret forgæves biografisøgning
 
-Alle nye egentlige personer kræver en synlig, ikke-tom biografi eller en
+Alle egentlige personer kræver en synlig, ikke-tom biografi eller en
 `biography-status` efter `docs/person-editorial.md`. Samleposter undtages.
 Markøren er redaktionelle metadata; den opretter ikke en biografiside og
 ændrer ikke `has_biography`. Opret aldrig en tom `bio.xml` som negativt fund.
