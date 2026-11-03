@@ -869,6 +869,38 @@
           "text": "Juvenals"
         }
       ]
+    },
+    {
+      "id": "afzelius-neckens-polska",
+      "poetId": "afzelius",
+      "title": "Neckens polska",
+      "firstline": "Djupt i hafvet på demantehällen",
+      "aliases": [
+        "Näcken",
+        "Djupt i hafvet på demantehällen"
+      ],
+      "source": "Salmonsen2,I,1915,s.291; fuld facsimilekontrol. Digtet navngives med førstelinjen. Identificeret som Necken i Iduna, tredje Hæftet, 1812, s.87–90: førstelinjen Djupt i Hafwet på Demantehällen svarer til biografiens Djupt i Hafvet på Demantehällen; forskellen er historisk w/v. Iduna-tekstens egen fodnote angiver melodien Neckens Polska.",
+      "status": "fulfilled",
+      "mentions": [
+        {
+          "file": "fdirs/afzelius/bio.xml",
+          "text": "Neckens polska »Djupt i hafvet på demantehällen«"
+        }
+      ],
+      "targetId": "afzelius2026110301"
+    },
+    {
+      "id": "soldin-friderichsberg",
+      "poetId": "soldin",
+      "title": "Friderichsberg",
+      "source": "Erslew,Almindeligt Forfatter-Lexicon,III,1853,s.195: Friderichsberg,et Digt, i Nyeste Skilderie af Kjøbenhavn1816,nr.100,104,samt1817,nr.18,20,24. Identificeret som digt i kilden; intet tekstmatch i eksisterende korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/soldin/bio.xml",
+          "text": "Friderichsberg"
+        }
+      ]
     }
   ]
 }

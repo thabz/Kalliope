@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rask" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Rasmus Kristian</firstname>
+    <lastname>Rask</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1787-11-22</date>
+      <place>Brændekilde</place>
+    </born>
+    <dead>
+      <date>1832-11-14</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q310958</wikidata>
+    <wikipedia-da>Rasmus Rask</wikipedia-da>
+    <viaf>37024634</viaf>
+    <gnd>118598341</gnd>
+    <lex-dk>Rasmus_Rask</lex-dk>
+    <biografisk-leksikon-lex-dk>Rasmus_Rask</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>RRasmusRask</danskforfatterleksikon-dk>
+  </identifiers>
+  <!-- Navn og livsdata: Vilh. Thomsen, Dansk biografisk Lexikon, 1. udgave,
+       bind XIII (1899), s. 489–502, https://runeberg.org/dbl/13/0491.html.
+       Dansk versoversættelse: Trymskvide i Idunna for 1812, s. 7–21. -->
+</person>
