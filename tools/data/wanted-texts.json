@@ -871,6 +871,97 @@
       ]
     },
     {
+      "id": "finnsson-haleygjatal",
+      "poetId": "finnsson",
+      "title": "Háleygjatal",
+      "source": "Finnur Jónsson: Salmonsens Konversationsleksikon, 2. udgave, bind VII (1918), s. 632. Fragmentarisk overleveret kvad om Hakon Jarls slægt; ingen tekstforekomst fundet i korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/finnsson/bio.xml",
+          "text": "»Háleygjatal«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-den-bortloebne-eros",
+      "poetId": "moschos",
+      "title": "den bortløbne Eros",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII, 1924, s. 321, https://runeberg.org/salmonsen/2/17/0337.html.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»den bortløbne Eros«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-europe",
+      "poetId": "moschos",
+      "title": "Europe",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Europe er forlæg til Fogtmanns oversættelse i AtheneIX(1817).",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Europe«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-klagesang-over-bion",
+      "poetId": "moschos",
+      "title": "Klagesang over Bion",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Historisk attribution; kontrollér forfatterskab og tekst i moderne kritisk udgave før import.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Klagesang over Bion«"
+        }
+      ]
+    },
+    {
+      "id": "toft-til-johan-ludvig-heiberg",
+      "poetId": "toft",
+      "title": "Til Johan Ludvig Heiberg",
+      "status": "open",
+      "source": "Erslew, Almindeligt Forfatter-Lexicon III (1853), s. 389, anfører digtet i Kjøbenhavns Skilderi 1817, nr. 3. Ingen tilsvarende tekst af Georg Nicolai Toft fundet i det undersøgte korpus på master og #2143. https://runeberg.org/almiforf/3/0395.html",
+      "mentions": [
+        {
+          "file": "fdirs/toft/bio.xml",
+          "text": "Til Johan Ludvig Heiberg"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-frithiofs-saga",
+      "poetId": "boyeae",
+      "title": "Frithiofs Saga",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Frithiofs Saga"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-axel",
+      "poetId": "boyeae",
+      "title": "Axel",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Axel"
+        }
+      ]
+    },
+    {
       "id": "weisse-ohne-lieb-und-ohne-wein",
       "poetId": "weisse",
       "title": "Ohne Lieb, und ohne Wein",

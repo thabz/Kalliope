@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1815-kroningsqvad" author="magnusson" status="incomplete" type="poetry">
+<workhead>
+  <title>Qvæþi í Rúnom</title>
+  <year>1815</year>
+  <!-- Afgrænset udvalg: det islandske kroningsdigt med latinske bogstaver, s. 5–6. Runeoverskriftens paralleltekst er bevaret i titelbladsbilledet; transcription omfatter de latinske bogstavformer. -->
+  <pictures>
+    <picture src="1815-kroningsqvad-p1.jpg" type="titlepage" primary="true"><transcription>QVÆÞI Í RÚNOM / Á KRÝNINGARDAG / FRIDREKS KONUNGS / OK / MARIU DROTTNINGAR / I DANMÖRKO CIƆIƆCCCXV. // QVAD I RUNER, / FORFÆDRENES SPROG OG VERSEMAAL, / I ANLEDNING / AF / KONG FRIDRIKS OG DRONNING MARIAS / KRONINGSDAG / (DEN 31 JULII) 1815. // CARMEN RUNICUM / IN CORONATIONEM / DANIÆ REGIS FRIDERICI VI. / AC / REGINÆ MARIÆ SOPHIÆ FRIDERICÆ / (PRID. CAL. AUG.) MDCCCXV. / LINGVA ET METRO ATAVORUM EXARATUM. // HAVNIÆ. / EDIDIT FINNUS MAGNUSON ISL. / EXCUDIT JOH. FRID. SCHULTZ, REGIS &amp; UNIVERSITATIS TYPOGRAPHUS. / SUMTIBUS LIBRARIÆ GYLDENDALICÆ.</transcription></picture>
+  </pictures>
+  <source href="https://archive.org/details/Qvaethiirunomakr000117757v0FinnReyk" facsimile="1815-kroningsqvad" facsimile-pages-num="20" facsimile-pages-offset="4">Finn Magnussen: <i>Qvæþi í Rúnom á Krýningardag Fridreks Konungs ok Mariu Drottningar í Danmörko</i>, Libraria Gyldendalica, Havniæ, 1815.</source>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-03T13:53:04.896119+00:00"/>
+  </proofreadings>
+</workhead>
+<workbody>
+<text id="magnusson2026110301" lang="is">
+<head>
+  <title>Qvæþi í Rúnom</title>
+  <subtitle>
+    <line>Á Krýníngardag</line>
+    <line><i>Fridreks</i> Konúngs</line>
+    <line>ok</line>
+    <line><i>Marío</i> Drotníngar</line>
+    <line>í Danmavrko, MDCCCXV.</line>
+  </subtitle>
+  <firstline>Kóngr ertv kíörinn, á Þingi</firstline>
+  <source pages="5-6" facsimile-pages="9-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.</center></nonum>
+Kóngr ertv kíörinn, á Þingi,
+Krýndr gætir iöfrasætis,
+Vísar, iarlar, flock þinn fylla,
+Fagvrt þióþar hylli-bióþa;
+Tiþir smvrdra frægstar feþra
+Fridrekr! þreydar byrtaz Yþr,
+Jörþ ok hifin. heimilt géfa
+Háfom Skialdar stól at valda.
+
+<nonum><center>II.</center></nonum>
+Dýr Máría! drotning kæra
+Danamerkvr þér vær yrkiom
+Dástan hróþvr, hulmis ástir
+Hlýtr þú ok metord nýto;
+Móþir gavfguz lands þik leiþir
+Liósvz gift ok tign þú hrósar,
+Danabótar dygdom vnir
+Danaþiód at fornom vana.
+
+<pb n="6" facs="009.jpg"/><nonum><center>III.</center></nonum>
+Dagr! öllom Danalavgom
+Dýr, er vígdir þeirra stýri,
+Úngir þik meþ avldnom saungvom
+Isafoldar synir prísa.
+Ristar skvlo rúnir festa
+Rvnnit svmbl! þitt minnit kvnna,
+Æfinlig í Óþins stafa
+Orþom man þín dýrþ á storþo.
+
+<nonum><center>IV.</center></nonum>
+Heims or avllom hálfom bella
+Híngat lióþ vm ríkit ýngda,
+Gleþiaz Danir fengnom friþi,
+Farsæld, ár ok ró man vara.
+Sól, er rann í dimmo dvala,
+Dagr endor veitti fagr,
+Skyni prýdir Skialdar nidia
+Skæruz gifta veröld mæra.
+
+<nonum><center>V.</center></nonum>
+Fauþordæmom fylgit Bræþvr!
+Fræknir gætit konúngssætis,
+Favlskva blauþan forþiz, elskit
+Feþraslóþar ástir góþar.
+Fróþa, Kristiáns, Friþreks ráþa
+Fánar þannig Dana làni,
+Aldinborgar vísa veldi
+Víkr sízt or norþors ríkiom!
+</poetry>
+</body>
+</text>
+
+</workbody>
+</kalliopework>
