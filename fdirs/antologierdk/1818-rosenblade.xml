@@ -23,23 +23,11 @@
     <identifiers><kb-alma>99122531811205763</kb-alma></identifiers>
   </source>
   <notes>
+    <note editorial="true">Dedikationen lyder: ,,Hendes Høihed Prindsesse Caroline Amalie underdanigst tilegnet.''.</note>
     <note editorial="true">Facsimilet bygger på Det Kgl. Biblioteks eksemplar, suppleret på s. 142–143 fra en anden digitalisering af samme udgave. <a href="https://books.google.com/books?id=27UYVHipzecC&amp;pg=PA142">↬</a></note>
   </notes>
 </workhead>
 <workbody>
-<text id="anonym1800dk2026110301" author="anonym1800dk" skip-index="true">
-<head>
-  <title>Hendes Høihed Prindsesse Caroline Amalie</title>
-  <source facsimile-pages="8"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<center><w>Hendes Høihed<br/>Prindsesse<br/>Caroline Amalie<br/><br/>underdanigst<br/>tilegnet.</w></center>
-</prose>
-</body>
-</text>
-
 <text id="thiele2026110316" author="thiele">
 <head>
   <firstline>Naar Vaaren vaagner i sin hvide Vugge</firstline>
@@ -69,6 +57,8 @@ Thi dybt da under Hjertets snævre Bue,
     I Kjerligheds og Længsels Taarebade,
     Udfolder Hjertets Rose sine Blade!
 
+---
+
 <pb facs="010.jpg"/>Men, naar da siden hen i Somm'rens Dage
     Eroterne med Vestenvinden komme,
     Saa fare de omkring til liden Fromme
@@ -87,6 +77,8 @@ Det seiler i det Blaa paa Ætherbølge,
     Et Digterskib, der vil til Himlen bringe
     Det stille Suk, som her sig maa fordølge.
 
+---
+
 <pb facs="011.jpg"/>Og, naar i Rosenbaad da Sukket stiger
     Igjennem Morgenrød og Aftenrøde,
     Igjennem Nattens Dyb, hvor Stjerner gløde,
@@ -104,6 +96,8 @@ Snart trykker Eros det til Pigens Læbe,
 Dog maa det altid længes, altid stræbe,
     Og altid vugges om paa Længslers Bølge,
     Fordi det ei med Sukket kunde følge.
+
+---
 
 <pb facs="012.jpg"/>O Du, til hvem sig Hjerter nærme stille,
     Saatidt Dit hulde Straaleblik de møde!
@@ -1175,12 +1169,19 @@ Tilbage Drotten vil — omsonst han viger;
 </body>
 </text>
 
-<text id="moellerpm2026110301" author="moellerpm" variant="moellerpm2001052550">
+<text id="moellerpm2001052550" author="moellerpm" aliases="moellerpm2026110301">
 <head>
   <title>Til Laura</title>
   <subtitle>(Sonnett.)</subtitle>
   <firstline>Naar Lyset flammer rødt i dunkle Stue</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
+  </notes>
+  <pictures>
+    <picture src="/images/moellerpm/moellerpm2001052550-p1.jpg">Vilhelm Hammershøi: <i>Poul Møller. ,,Sonetten til Laura''</i>, 1899, blyant, 52,5 × 43 cm.</picture>
+  </pictures>
   <source pages="39" facsimile-pages="56"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1436,13 +1437,12 @@ Jeg gjør dem sgu vist urene.”
 </body>
 </text>
 
-<text id="anonym1800dk2026110303" author="anonym1800dk">
+<text id="wilster2026110301" author="wilster" aliases="anonym1800dk2026110303" variant="wilster2020032503">
 <head>
   <title>Gaade</title>
   <firstline>Hvad egentligt jeg er, er svært at sige</firstline>
   <notes>
-    <note editorial="true">Signeret C. P. Wilster. Forfatteren er ikke sikkert identificeret.</note>
-    <note editorial="true">En senere version findes i Christian Wilsters <i>Digtninger</i> (1827): <xref poem="wilster2020032503"/>.</note>
+    <note editorial="true">Trykkets signatur »C. P. Wilster« må være en fejl for »C. F. Wilster«.</note>
   </notes>
   <source pages="49-50" facsimile-pages="66-67"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1489,7 +1489,7 @@ Dybt i dit Hjerte du mig finde maa! —
   <subtitle>til en Dame, som forlangte en Sonet.</subtitle>
   <firstline>I ønsker en Sonet. Som I befaler!</firstline>
   <notes>
-    <note editorial="true">Oversættelse af den sonet, som i den benyttede originaludgave tilskrives Diego Mendoza de Barros: <xref type="translation" poem="mendozab2026101801"/>.</note>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="mendozab2026101801"/>, tilskrevet Diego Mendoza de Barros. Sonetten er også blevet tilskrevet Diego Hurtado de Mendoza.</note>
   </notes>
   <source pages="51" facsimile-pages="68"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1848,7 +1848,7 @@ Vor Herre vil lade ham løbe paa To.
 </body>
 </text>
 
-<section id="thiele2026110303" author="thiele">
+<section author="thiele">
 <head>
   <title>Forglemmigei</title>
 </head>
@@ -2249,13 +2249,13 @@ Naar Nattergalens Trille
 </body>
 </text>
 
-<text id="anonym1800dk2026110305" author="anonym1800dk">
+<text id="wilster2026110302" author="wilster" aliases="anonym1800dk2026110305">
 <head>
   <title>Sonet</title>
   <subtitle>til den sexaarige Emma.</subtitle>
   <firstline>Hvor kan jeg dig, du søde Barn! forglemme?</firstline>
   <notes>
-    <note editorial="true">Signeret C. P. Wilster. Forfatteren er ikke sikkert identificeret.</note>
+    <note editorial="true">Tilskrevet Christian Frederik Emil Wilster (1797–1840). Digtet er signeret »C. P. Wilster«, ligesom <xref poem="wilster2026110301"/> i nærværende samling, <i>Rosenblade</i> (1818, s. 49). Sonettens tilskrivning bygger på, at sidstnævnte digt senere blev optaget i Wilsters <i>Digtninger</i> (1827, s. 3–4).</note>
   </notes>
   <source pages="84" facsimile-pages="101"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2604,7 +2604,7 @@ Enten du fordrer min Taare
 </body>
 </text>
 
-<section id="soetoft2026110302" author="soetoft">
+<section author="soetoft">
 <head>
   <title>Hyacinthe</title>
 </head>
@@ -3664,43 +3664,28 @@ En andægtig Møe!
 </body>
 </text>
 
-<section id="soetoft2026110321" author="soetoft">
+<text id="soetoft2026110321" author="soetoft" aliases="soetoft2026110322,soetoft2026110323">
 <head>
   <title>Magnetismen</title>
   <subtitle>Tragødie.</subtitle>
-</head>
-<content>
-<text id="soetoft2026110322" author="soetoft" skip-index="true">
-<head>
-  <title>Personer</title>
-  <source pages="134" facsimile-pages="151"/>
+  <firstline>Vil du evigt Øiet lukke?</firstline>
+  <pictures>
+    <picture type="illustration" src="1818-rosenblade-p4.jpg"/>
+  </pictures>
+  <source pages="134-155" facsimile-pages="151-172"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
+<center><w>Personer</w></center><br/>
 <center><w>Vanina.</w></center><br/>
 <center><w>Julius.</w></center><br/>
 <center><w>Orlando.</w></center><br/>
 
 <center>Scenen: en Kirkegaard.</center>
 </prose>
-</body>
-</text>
-
-<text id="soetoft2026110323" author="soetoft">
-<head>
-  <title>Magnetismen</title>
-  <subtitle>Tragødie.</subtitle>
-  <firstline>Vil du evigt Øiet lukke?</firstline>
-  <pictures>
-    <picture type="illustration" src="1818-rosenblade-p4.jpg">Dramatitelblad, s. [133].</picture>
-  </pictures>
-  <source pages="135-155" facsimile-pages="152-172"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<nonum><center><w>Første Scene.</w></center></nonum>
+<pb n="135" facs="151.jpg"/><nonum><center><w>Første Scene.</w></center></nonum>
 <nonum><center><wrap><small>(Man seer Grave paa begge Sider iblandt Blomstertræer. I Baggrunden staaer et Liighuus med Søiler: en Liigkiste sees derinde; den er uden Laag; Vanina ligger deri, og Julius magnetiserer hende knælende ved Kisten. Maanen, som skinner mellem Stammerne, oplyser Scenen).</small></wrap></center></nonum>
 
 <nonum><center><w>Julius.</w></center></nonum>
@@ -4317,9 +4302,6 @@ Som en Blomst den op skal staae!
 </poetry>
 </body>
 </text>
-
-</content>
-</section>
 
 </workbody>
 </kalliopework>

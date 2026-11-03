@@ -76,21 +76,32 @@ med HTTP 200. Der er ikke fundet noget trykt rettelsesark ved sidegennemgangen.
 
 ## Tekster, personer og relationer
 
-XML'en indeholder 55 tekstposter og tre grupperende sektioner. Tilegnelse,
-indledningsdigt, dramaer, eventyr og indlagte vers er medtaget. Indholdsregister,
-kolofon og indbinding er ikke oprettet som litterære tekster. Nodebladet er
-knyttet til sin sang som billede.
+XML'en indeholder 53 tekstposter og to grupperende sektioner. Tilegnelsen
+er registreret som værknote. Indledningsdigt, dramaer, eventyr og indlagte
+vers er medtaget. Indholdsregister, kolofon og indbinding er ikke oprettet
+som litterære tekster. Nodebladet er knyttet til sin sang som billede.
 
 - Indledningsdigtets fire sonetter er kildebestemt til Thiele ved den senere
   optagelse som »Rosenblade« I–IV i *Vragstykker af et Digterskib* (1848).
   Her bevares én tekst, fordi 1818-trykket ikke har delnumre eller andre sikre
-  tekstgrænser mellem siderne. Noten forbinder den med de fire senere afsnit;
+  tekstgrænser mellem siderne. Sonetterne adskilles med `---` og blanklinjer.
+  Noten forbinder dem med de fire senere afsnit;
   der oprettes ikke et misvisende variantlink fra hele forløbet til kun én del.
-- Poul Martin er registreret som Poul Martin Møller.
-- Signaturen C. P. Wilster bevares uden automatisk identitetsmatch.
-  »Gaade« er tekstligt sammenholdt med Christian Wilsters *Digtninger* (1827),
-  s. 3–4; den konkrete senere version er linket i en note. Navneafvigelsen og
-  ophavet til »Sonet / til den sexaarige Emma« er fortsat usikre.
+- Poul Martin er registreret som Poul Martin Møller. »Til Laura« bevarer
+  det eksisterende id `moellerpm2001052550` fra samme kildeudgave;
+  bidragydernote, Hammershøi-billede og sonetnøgleord er overført fra
+  `andre.xml`. »Torbisten og Fluen« bevares derimod som særskilte varianter.
+- Efter brugerens filologiske vurdering er »Gaade« og »Sonet / til den
+  sexaarige Emma« tilskrevet Christian Wilster med id
+  `wilster2026110301` og `wilster2026110302`; de tidligere id
+  bevares som aliases. Trykkets signatur C. P. Wilster er bevaret.
+  »Gaade« er forbundet som variant til *Digtninger* (1827), s. 3–4.
+  Emma-sonettens note forklarer tilskrivningen via samme signatur og
+  henviser til »Gaade«.
+- »Forglemmigei« og »Hyacinthe« er grupperende sektioner uden id.
+  »Magnetismen« er samlet som én tekst under `soetoft2026110321`, inklusive
+  personlisten på s. 134; de to tidligere tekst-id bevares som aliases.
+  Billedteksten på dramatitelbladet er fjernet.
 - »Svanhvide« forbliver anonym. En senere optagelse i Thieles samlinger af
   folkeeventyr er ikke i sig selv belæg for individuelt forfatterskab.
 - Staffeldts eksisterende id `staffeldt2001052705` er bevaret og flyttet fra
@@ -145,7 +156,7 @@ kildegrundlaget identificerbart.
 
 Den afsluttende kontrol omfatter 179 fysiske sider, 161 semantiske sider og
 57 poesiblokke med 2.612 verslinjer. Alle interne sideskift er angivet med
-106 præcist placerede `pb`-markører; `pagebreaks` og `errata status="none"` er
+107 præcist placerede `pb`-markører; `pagebreaks` og `errata status="none"` er
 registreret. Alle prosaafsnits grænser, indryk og afstande samt alle
 verslinjer, strofer, indryk, overskrifter og fremhævelser er sidekontrolleret.
 
