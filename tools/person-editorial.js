@@ -41,12 +41,8 @@ export const loadPeople = root => fs.readdirSync(path.join(root, 'fdirs'), { wit
       bio: fs.existsSync(path.join(root, filename)) ? parseXml(fs.readFileSync(path.join(root, filename), 'utf8')) : null };
   });
 
-export const checkCoverage = (people, baseline) => {
+export const checkCoverage = people => {
   const errors = [];
-  const remaining = [];
-  const ids = new Set(people.map(person => person.id));
-  if (new Set(baseline).size !== baseline.length) errors.push('Gentaget biografirestance');
-  for (const id of baseline) if (ids.has(id) === false) errors.push(`Ukendt biografirestance: ${id}`);
   for (const person of people) {
     if (person.info.documentElement.getAttribute('type') === 'collection') continue;
     const statuses = elements(person.info, 'biography-status');
@@ -54,20 +50,20 @@ export const checkCoverage = (people, baseline) => {
     const hasBio = hasBiography(person.bio);
     if (statuses.length > 1) errors.push(`${person.id}: gentaget biography-status`);
     if (status != null) {
-      const sources = elements(status, 'checked-source').map(source => source.getAttribute('id'));
+      const sources = elements(status, 'checked-source');
       if (status.getAttribute('status') !== 'not-found' || validDate(status.getAttribute('checked-on')) !== true ||
-        sources.length === 0 || sources.some(id => sourceIds.includes(id) === false) ||
+        sources.length === 0 || sources.some(source =>
+          sourceIds.includes(source.getAttribute('id')) === false || source.textContent.trim().length === 0) ||
         elements(status, 'note').some(note => note.textContent.trim().length > 0) !== true) {
         errors.push(`${person.id}: ugyldig biography-status`);
       }
       if (hasBio === true) errors.push(`${person.id}: biografi og negativ status findes samtidig`);
     }
     if (hasBio === false && status == null) {
-      if (baseline.includes(person.id) === true) remaining.push(person.id);
-      else errors.push(`${person.id}: mangler biografi eller dokumenteret negativ søgning`);
-    } else if (baseline.includes(person.id) === true) errors.push(`${person.id}: fjern afsluttet biografirestance`);
+      errors.push(`${person.id}: mangler biografi eller dokumenteret negativ søgning`);
+    }
   }
-  return { errors, remaining };
+  return errors;
 };
 
 export async function readTexts(root) {
@@ -158,22 +154,15 @@ export const reconcileWishes = (people, registry) => {
 
 const main = async () => {
   const args = process.argv.slice(2);
-  if (args.some(arg => ['--check', '--reconcile', '--prune'].includes(arg) === false) || args.length > 1) throw new Error('Brug: person-editorial [--check|--reconcile|--prune]');
+  if (args.some(arg => ['--check', '--reconcile'].includes(arg) === false) || args.length > 1) throw new Error('Brug: person-editorial [--check|--reconcile]');
   const root = process.cwd();
   const people = loadPeople(root);
-  const baselineFile = path.join(root, 'tools/data/biography-backlog.json');
-  const baseline = readJson(baselineFile);
-  if (args.includes('--prune') === true) {
-    const remaining = baseline.filter(id => people.some(person => person.id === id && hasBiography(person.bio) === false && elements(person.info, 'biography-status').length === 0));
-    fs.writeFileSync(baselineFile, `${JSON.stringify(remaining, null, 2)}\n`);
-    return;
-  }
   const registryFile = path.join(root, 'tools/data/wanted-texts.json');
   const registry = readJson(registryFile);
-  const coverage = checkCoverage(people, baseline);
+  const coverageErrors = checkCoverage(people);
   const wishes = checkWishes(people, registry, registry.entries.length === 0 ? [] : await readTexts(root));
-  const errors = [...coverage.errors, ...wishes.errors];
-  console.log(JSON.stringify({ biographyBacklog: coverage.remaining, wishes: wishes.candidates, errors }, null, 2));
+  const errors = [...coverageErrors, ...wishes.errors];
+  console.log(JSON.stringify({ wishes: wishes.candidates, errors }, null, 2));
   if (errors.length > 0) { process.exitCode = 1; return; }
   if (args.includes('--reconcile') === true) {
     const changes = reconcileWishes(people, registry);

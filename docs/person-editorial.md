@@ -20,22 +20,21 @@ Tilladte kilde-id'er: `dbl1`, `dbl2`, `salmonsen2`, `salmonsen-supplement`,
 `salmonsen4`, `erslew` og `ehrencron-mueller`. De sidste to er reservekilder
 efter prioriteringen i `docs/xml-biographies-format.md`. Undersøg de relevante
 tilladte kilder, og begrund udeladelser i
-noten. En gyldig markør kræver reel dato, mindst én kontrolleret kilde og
-ikke-tom begrundelse; undersøgelsens tilstrækkelighed vurderes redaktionelt.
+noten. En gyldig markør kræver reel dato, mindst én kontrolleret kilde med en
+ikke-tom beskrivelse og en ikke-tom begrundelse; undersøgelsens
+tilstrækkelighed vurderes redaktionelt.
 Markør og synlig biografi må ikke findes samtidig. Metadataformatter bruges
 uændret. Ingen nye offentlige API-felter indføres.
 
-`tools/data/biography-backlog.json` er den frosne restanceliste ved indførelsen.
-Tilføj aldrig personer til den. `--prune` fjerner afsluttede/slettede restancer;
-kommandoen ændrer ikke biografier eller registrerer en søgning på nogens vegne.
-Tests afviser nye mangler og afsluttede restancer, som ikke er fjernet.
-Når listen er tom, gælder kravet globalt uden undtagelser.
+Korpustesten i `make test` håndhæver kravet for alle egentlige personer uden
+undtagelsesliste og uden genererede data. Biografistatus vedligeholdes kun i
+personens `info.xml`. Når en synlig biografi indsættes, fjernes den negative
+status.
 
-`tools/data/salmonsen-biography-status.json` bevarer kildespecifikke negative
-fund og eksisterende rapportering. Et sådant fund alene opfylder ikke det nye
-krav. Genbrug evidensen ved personundersøgelsen; udvid den med øvrige relevante
-kilder. Ved indsættelse af bio fjernes både generel negativ status og en eventuel
-Salmonsen-post (det eksisterende statusværktøj kontrollerer sidstnævnte).
+Ved overførsel af tidligere søgninger bevares den oprindelige søgedato og
+begrundelse. Registrér kun de kildeundersøgelser, som dokumentationen faktisk
+omfatter. En søgning i Salmonsen er ikke dokumentation for en søgning i DBL;
+nyere og mere omfattende undersøgelser kan opdatere personens status.
 
 ## Ønskeregister
 

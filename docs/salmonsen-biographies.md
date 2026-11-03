@@ -24,27 +24,17 @@ Projekt Runebergs OCR er et hjælpemiddel. Kontrollér altid facsimilen og:
 
 Opret ikke en tom `bio.xml`, når der ikke findes et kvalificerende opslag.
 
-## Bølgearbejdsgang
+## Registrering og kontrol
 
-1. Vis kandidater med `npm run report-salmonsen-biographies -- --next ANTAL`.
-2. Fordel kandidaterne, og undersøg deres opslag i 2. udgave, supplementet og
-   4. udgave. Alle medarbejdere kan oprette dokumenterede `bio.xml`-filer.
-3. Lad kun bølgens koordinator opdatere
-   `tools/data/salmonsen-biography-status.json` for negative fund. Hver post
-   skal beskrive det kontrollerede fravær eller den konkrete navneforveksling.
-4. Kontrollér nye XML-filer med `xmllint --noout fdirs/<id>/bio.xml` og kør
-   `git diff --check`.
-5. Valider registeret med
-   `npm run report-salmonsen-biographies -- --check` og byg sitet med
-   `npm run build-static`.
+Biografiarbejdet følger `$add-kalliope-person`. Undersøg de relevante opslag
+i 2. udgave, supplementet og 4. udgave. Registrér en forgæves søgning i
+personens `info.xml` efter [personstatus](person-editorial.md), med faktisk
+søgedato, undersøgte kilder og en konkret begrundelse. Hvis en biografi senere
+indsættes, fjernes den negative status.
 
-Et fund er først færdigt, når biografien er en komplet artikel med kildefod,
-eller det negative fund er registreret og valideret.
+Kontrollér nye biografier med `xmllint --noout fdirs/<id>/bio.xml` og
+`git diff --check`, og kør `npm run person-editorial -- --check`,
+`npm run build-static` og `make test` før aflevering.
 
-## Statusværktøjet
-
-Behold `tools/report-salmonsen-biographies.js` og
-`tools/data/salmonsen-biography-status.json` som den fælles fremdriftslog.
-Rapporten viser tre grupper: digtere med biografi, dokumenterede negative fund
-og resterende kandidater. Et id må ikke stå i statusregisteret, når det har en
-`bio.xml`.
+Et fund er færdigbehandlet, når biografien er en komplet artikel med kildefod,
+eller den forgæves søgning er registreret og valideret i personmetadata.

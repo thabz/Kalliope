@@ -93,24 +93,18 @@ end den angivne dato. Tekst-id'er uden en gyldig dato medtages ikke. Datoen i et
 id som `winther2018081001` er `2018-08-10`. `--facsimile-only` medtager kun
 værkfiler, hvor mindst én `<source>` refererer til en fil med endelsen `.pdf`.
 
-### Salmonsen-biografier
+### Biografistatus og tekstønsker
 
-`report-salmonsen-biographies.js` viser fremdriften for biografier til
-udenlandske digtere. Positive fund registreres af digterens `bio.xml`, mens
-kontrollerede negative fund ligger i
-`data/salmonsen-biography-status.json`.
-Den fulde redaktionelle arbejdsgang er beskrevet i
-[Salmonsen-biografier](../docs/salmonsen-biographies.md).
+`person-editorial.js` validerer, at alle digtere, kunstnere og øvrige personer
+har en synlig biografi eller dokumenteret forgæves søgning i `info.xml`.
+Kravet håndhæves også af korpustesten i `make test`, uden undtagelseslister.
+Værktøjet validerer desuden tekstønsker og kan forbinde manuelt identificerede
+ønsker med deres konkrete tekster. Se [personstatus](../docs/person-editorial.md).
 
 ```sh
-npm run report-salmonsen-biographies
-npm run report-salmonsen-biographies -- --check
-npm run report-salmonsen-biographies -- --next 12
+npm run person-editorial -- --check
+npm run person-editorial -- --reconcile
 ```
-
-Den sidste kommando udskriver digter-id, navn og landekode for næste bølge.
-Statusfilen skal kun opdateres af bølgens koordinator, efter arbejdsagenternes
-resultater er samlet.
 
 ## Redaktionelle værktøjer
 

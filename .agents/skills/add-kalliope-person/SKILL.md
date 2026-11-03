@@ -18,7 +18,8 @@ translitterér æ/ø/å til ae/oe/aa og øvrige diakritiske tegn til grundbogsta
 Kun ved optaget efternavn tilføjes alle fornavnenes initialer i rækkefølge.
 Bevar eksisterende id'er. Afklar resterende kollisioner med brugeren.
 
-Undersøg biografi efter [biografiarbejdet](references/biography.md).
+Afslut hver ny person med en synlig, ikke-tom biografi eller dokumenteret
+forgæves søgning i `info.xml` efter [biografiarbejdet](references/biography.md).
 Brug `$add-person-portrait` til portrætsøgning og eventuel indsættelse.
 Registrér væsentlige digteriske udgivelser efter
 [værkregistrering](references/works.md). Manglende brugbare kilder skal fremgå
