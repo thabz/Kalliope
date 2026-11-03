@@ -601,7 +601,7 @@ Den Ros er sød, for den er sand.
   <linktitle>Trymskvide eller Hammerens Hentelse</linktitle>
   <firstline>Vred blev da Vingtor</firstline>
   <notes>
-    <note editorial="true">Oversættelse af det anonyme eddadigt <xref type="translation" poem="eddadigte2026110301"/>. Rask bytter om på guld og sølv i strofe IV og gengiver originalens otte nætter som fire døgn i strofe XXVI og XXVIII.</note>
+    <note editorial="true">Oversættelse af det anonyme eddadigt <xref type="translation" poem="eddadigte2026110301"/>.</note>
   </notes>
   <source pages="7-21" facsimile-pages="128-142"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2529,7 +2529,7 @@ Være det Minde, som pryder min Grav!
   <subtitle>(En Stemme fra Aandeverdenen).</subtitle>
   <firstline>Jeg veed det Land, hvor hine Blomster groer</firstline>
   <notes>
-    <note editorial="true">Mottoet citerer Goethes <xref poem="goethe2001111901"/>. Digtet lader længslen gælde en hinsidig verden.</note>
+    <note editorial="true">Mottoet citerer Goethes <xref poem="goethe2001111901"/>.</note>
   </notes>
   <source pages="112-113" facsimile-pages="233-234"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2732,36 +2732,24 @@ Af viet Skjald at have.
 </body>
 </text>
 
-<section id="anonym1800dk2026110301" author="anonym1800dk">
+<text id="anonym1800dk2026110301" author="anonym1800dk">
 <head>
   <title>Kong Valdemars Datter og Alfors Søn</title>
   <subtitle>
     <line>De gave hinanden deres Tro udi Løn.</line>
     <line>Et Eventyr.</line>
   </subtitle>
-</head>
-<content>
-<text id="nyerup2026110302" author="nyerup">
-<head>
-  <title>Forerindring</title>
-  <source pages="121-122" facsimile-pages="242-243"/>
+  <firstline>Der var en Konning ved Øster-Strand</firstline>
+  <source pages="121-169" facsimile-pages="242-290"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
+<b>Forerindring</b>
+
 Dette Eventyrs Ophav kan man forfølge tilbage i Tiden indtil i det 17de Aarhundrede. Da var det bekjendt ved Egersund i Christiansand Stift. En Ven af Udgiveren har i sin Barndom hørt det i Egnen ved Trondhjem. Vel har han glemt en hel Deel af de Rim, hvori det var forfattet, men selve Historien og Begivenhedernes Følge mindes han tydelig. Han har her søgt at restituere Digtet, ved at beholde saa mange Steder af det oprindelige Poem, som endnu hang fast i hans Hukommelse, og ved, saa godt som muligt, at tillempe Resten derefter. Han troer, at der i en eller anden Krog af <pb n="122" facs="242.jpg"/>det nu af sin litteraire Uvirksomhed, for ikke med Vilje at sige Døsighed, opvakte Norge vil findes en Afskrift af den gamle Fortælling, som ved Trykken vil blive bekjendtgjort. Det vil da være interessant at sammenholde Originalens egne Udtryk med dem, som vor Restaurator har <span lang="la">ex ingenio</span> fældet ind der hvor hans Hukommelse glippede ham.
 <right>R. N.</right>
 </prose>
-</body>
-</text>
-
-<text id="anonym1800dk2026110302" author="anonym1800dk">
-<head>
-  <firstline>Der var en Konning ved Øster-Strand</firstline>
-  <source pages="122-169" facsimile-pages="243-290"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
 Der var en Konning ved Øster-Strand,
 Kong Valdemar hedte den Bolde,
@@ -3687,15 +3675,12 @@ Til Graven os begge mon skjule!“ Amen!
 </body>
 </text>
 
-</content>
-</section>
-
 <text id="zetlitz2026110301" author="zetlitz">
 <head>
   <title>Soldaten Ole til sine Forældre. 1807</title>
   <subtitle>(Fra Garnisonen).</subtitle>
   <firstline>I sidde nok, I kjære Gamle</firstline>
-  <source pages="169-171" facsimile-pages="290-292"/>
+  <source pages="169-174" facsimile-pages="290-295"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3741,19 +3726,9 @@ Lovtakker — end i Graad — hans Raad.
 Min Arv lad gjøre hende rig!
 Til hende kan jeg ikke skrive,
 Kun dertil fattes Modet mig.
-</poetry>
-</body>
-</text>
 
-<text id="zetlitz2026110302" author="zetlitz">
-<head>
-  <title>Svar</title>
-  <firstline>Min Søn! min Søn! Du eneste tilbage</firstline>
-  <source pages="171-174" facsimile-pages="292-295"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
+<nonum><center>Svar</center></nonum>
+
 Min Søn! min Søn! Du eneste tilbage
 Af flere levnet mig, saa tænkte jeg,
 Til Haab og Trøst i tunge Alders Dage —
@@ -3814,7 +3789,7 @@ Guds trygge Varetægt omgjærde Dig!
 <head>
   <title>Anna til Ole</title>
   <firstline>Har Pigen ikke Mandemod</firstline>
-  <source pages="174-175" facsimile-pages="295-296"/>
+  <source pages="174-176" facsimile-pages="295-297"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3844,19 +3819,9 @@ Men om Du tabte Ret til Agt og Ære —
 Ja — jeg tilstaaer det — end jeg elskte Dig;
 Men lykkelig jeg kunde ikke være —
 Før Rygtet om Dit Fald maa fælde mig.
-</poetry>
-</body>
-</text>
 
-<text id="zetlitz2026110304" author="zetlitz">
-<head>
-  <title>Svar</title>
-  <firstline>Min elskte Anna! Tak for ømme, kjære Brev</firstline>
-  <source pages="176" facsimile-pages="297"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
+<pb n="176" facs="296.jpg"/><nonum><center>Svar</center></nonum>
+
 Min elskte Anna! Tak for ømme, kjære Brev.
 Mod glødes ved hvert Ord Du skrev,
 Jeg dobbelt føler, hvad i Dig jeg ejer.
@@ -3967,6 +3932,9 @@ Du Psalmerne modtog med venlige Miner,
 <head>
   <title>Kometen</title>
   <firstline>Hvi hæver Hoben, dorsk og sløvet</firstline>
+  <notes>
+    <note editorial="true">Mottoet citerer begyndelsen af Horats’ <xref poem="horats2026092703"/>.</note>
+  </notes>
   <source pages="180-184" facsimile-pages="301-305"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4058,6 +4026,10 @@ som vil, naar Spurv til Jorden falder,
   <title>Elegie</title>
   <subtitle>(Skrevet ved Ruinerne af Marmortemplet i Kjøbenhavn).</subtitle>
   <firstline>Hvo var Barbaren, som med frække Haand</firstline>
+  <pictures>
+    <picture artwork="soedring/1835-marmorpladsen"/>
+    <picture artwork="kunst/laessoe-marmorpladsen-1838"/>
+  </pictures>
   <source pages="184-187" facsimile-pages="305-308"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4525,7 +4497,7 @@ Det kalde Byens Piger nu Havmandens Graad.
 </body>
 </text>
 
-<section id="oehlenschlaeger2026110304" author="oehlenschlaeger">
+<section author="oehlenschlaeger">
 <head>
   <title>Efter Göthe</title>
 </head>
@@ -4897,9 +4869,6 @@ Lykken er bestandig der.
   <toctitle>Matrosmythologi</toctitle>
   <linktitle>Matrosmythologi</linktitle>
   <firstline>Kraft i Naturen og Ynde man finder</firstline>
-  <notes>
-    <note editorial="true">Et beskadiget ord på side 219 er markeret med [ulæseligt].</note>
-  </notes>
   <source pages="217-220" facsimile-pages="338-343"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4944,7 +4913,7 @@ I hver en Kjelder og Kahyt Symbolerne de staae. :;:
 <pb n="219" facs="341.jpg"/><nonum><center>5.</center></nonum>
 Hvor der end findes lidt Andagt paa Jorden,
     Finder Du Flasken og Glasset i Agt;
-Thi hvor [ulæseligt] synges i Syden og Norden,
+Thi hvor der synges i Syden og Norden,
     Lees eller grædes, staae disse ved Magt.
 Fødes Du — en Flaske tømmes maa —
 Giftes Du — strax Glasset om maa gaae —
