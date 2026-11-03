@@ -687,6 +687,279 @@
         }
       ],
       "targetId": "eystein2026110101"
+    },
+    {
+      "id": "plough-heiberg-mindefest-1891-prolog",
+      "poetId": "plough",
+      "title": "Prolog ved Mindefesten for Johanne Luise Heiberg",
+      "status": "open",
+      "source": "Beskrivende arbejdstitel. P. Hansens biografi om Johanne Luise Heiberg i Dansk biografisk Lexikon, 1. udgave, bind VII (1893), s. 249, angiver, at C. Ploug skrev prolog og epilog til Fantasus’ rolle i Syvsoverdag ved teatrets mindefest 4. januar 1891. Teksterne er ikke identificeret ved gennemgang af titler og førstelinjer i Plougs JSONL-korpus; eksisterende Prolog og Prolog ved den nye Theaterbygnings Indvielse gælder andre anledninger. Senere import skal kontrollere den trykte tekst og dens præcise titel.",
+      "mentions": [
+        {
+          "file": "fdirs/heibergjohanne/bio.xml",
+          "text": "Prolog"
+        }
+      ]
+    },
+    {
+      "id": "plough-heiberg-mindefest-1891-epilog",
+      "poetId": "plough",
+      "title": "Epilog ved Mindefesten for Johanne Luise Heiberg",
+      "status": "open",
+      "source": "Beskrivende arbejdstitel. P. Hansens biografi om Johanne Luise Heiberg i Dansk biografisk Lexikon, 1. udgave, bind VII (1893), s. 249, angiver, at C. Ploug skrev prolog og epilog til Fantasus’ rolle i Syvsoverdag ved teatrets mindefest 4. januar 1891. Teksterne er ikke identificeret ved gennemgang af titler og førstelinjer i Plougs JSONL-korpus; eksisterende Prolog og Prolog ved den nye Theaterbygnings Indvielse gælder andre anledninger. Senere import skal kontrollere den trykte tekst og dens præcise titel.",
+      "mentions": [
+        {
+          "file": "fdirs/heibergjohanne/bio.xml",
+          "text": "Epilog"
+        }
+      ]
+    },
+    {
+      "id": "catul-peleus-og-thetis-bryllup",
+      "poetId": "catul",
+      "title": "Peleus’ og Thetis’ Bryllup",
+      "source": "Salmonsen2 IV (1916), s.653, navngiver Thor Langes danske oversættelse i Opuscula ad Madvigium missa (1876). Ingen tekstforekomst hos Catul i JSONL-korpus; ønsket gælder dette sikkert identificerede digt og dets danske oversættelse.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/catul/bio.xml",
+          "text": "»Peleus’ og Thetis’ Bryllup«"
+        }
+      ]
+    },
+    {
+      "id": "choraeus-lille-clara",
+      "poetId": "choraeus",
+      "title": "Lille Clara, vær ej vred paa mig",
+      "source": "Salmonsen2 IV (1916), s.874, citerer sangens danske begyndelse. Choræus er dokumenteret forfatter; ingen tilsvarende tekst i JSONL-korpus (eneste registrerede digt Gubben till Ungdomen).",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/choraeus/bio.xml",
+          "text": "»Lille Clara, vær ej vred paa mig«"
+        }
+      ]
+    },
+    {
+      "id": "lidner-grefvinnan-spastaras-dod",
+      "poetId": "lidner",
+      "title": "Grefvinnan Spastaras Død",
+      "source": "Salmonsen2 XV (1923), s.778, dokumenterer digtet, 1783, omarbejdet 1786. JSONL-korpus har kun Turtur-Dufvan hos Lidner.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/lidner/bio.xml",
+          "text": "»Grefvinnan Spastaras Død«"
+        }
+      ]
+    },
+    {
+      "id": "lidner-yttersta-domen",
+      "poetId": "lidner",
+      "title": "Yttersta Domen",
+      "source": "Salmonsen2 XV (1923), s.778, dokumenterer det selvstændige store digt. JSONL-korpus har kun Turtur-Dufvan hos Lidner.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/lidner/bio.xml",
+          "text": "»Yttersta Domen«"
+        }
+      ]
+    },
+    {
+      "id": "reinick-der-winter-ist-gekommen",
+      "poetId": "reinick",
+      "title": "Der Winter ist gekommen",
+      "source": "Salmonsens Konversationsleksikon, 2. udg., XIX (1925), s. 1058, nævner sangen som eksempel på Reinicks Maler- og Børnesange. Korpus har kun König Erich; intet titel- eller førstelinjematch. https://runeberg.org/salmonsen/2/19/1092.html",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/reinick/bio.xml",
+          "text": "»Der Winter ist gekommen«"
+        }
+      ]
+    },
+    {
+      "id": "nielsencarl-barnets-sang-til-dukken",
+      "poetId": "nielsencarl",
+      "title": "Barnets Sang til Dukken",
+      "source": "Erslew, Supplement II (1864), s. 537, https://runeberg.org/almiforf/sup2/0545.html, henfører tekstbidraget til Carl Wilhelm Nielsen. Ingen titelmatch blandt hans tekster i JSONL-korpus. Kilden skelner i dette afsnit ikke altid mellem oversættelser og originale sangtekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/nielsencarl/bio.xml",
+          "text": "Barnets Sang til Dukken"
+        }
+      ]
+    },
+    {
+      "id": "nielsencarl-estrella",
+      "poetId": "nielsencarl",
+      "title": "Estrella",
+      "source": "Erslew, Supplement II (1864), s. 537, https://runeberg.org/almiforf/sup2/0545.html, henfører tekstbidraget til Carl Wilhelm Nielsen. Ingen titelmatch blandt hans tekster i JSONL-korpus. Kilden skelner i dette afsnit ikke altid mellem oversættelser og originale sangtekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/nielsencarl/bio.xml",
+          "text": "Estrella"
+        }
+      ]
+    },
+    {
+      "id": "nielsencarl-droemmebilleder",
+      "poetId": "nielsencarl",
+      "title": "Drømmebilleder",
+      "source": "Erslew, Supplement II (1864), s. 537, https://runeberg.org/almiforf/sup2/0545.html, henfører tekstbidraget til Carl Wilhelm Nielsen. Ingen titelmatch blandt hans tekster i JSONL-korpus. Kilden skelner i dette afsnit ikke altid mellem oversættelser og originale sangtekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/nielsencarl/bio.xml",
+          "text": "„Drømmebilleder“"
+        }
+      ]
+    },
+    {
+      "id": "nielsencarl-moellerens-droem",
+      "poetId": "nielsencarl",
+      "title": "Møllerens Drøm",
+      "source": "Erslew, Supplement II (1864), s. 537, https://runeberg.org/almiforf/sup2/0545.html, henfører tekstbidraget til Carl Wilhelm Nielsen. Ingen titelmatch blandt hans tekster i JSONL-korpus. Kilden skelner i dette afsnit ikke altid mellem oversættelser og originale sangtekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/nielsencarl/bio.xml",
+          "text": "„Møllerens Drøm“"
+        }
+      ]
+    },
+    {
+      "id": "nielsencarl-marsch-borgervaebning",
+      "poetId": "nielsencarl",
+      "title": "Marsch for den Kjøbenhavnske Borgervæbning",
+      "source": "Erslew, Supplement II (1864), s. 537, https://runeberg.org/almiforf/sup2/0545.html, henfører tekstbidraget til Carl Wilhelm Nielsen. Ingen titelmatch blandt hans tekster i JSONL-korpus. Kilden skelner i dette afsnit ikke altid mellem oversættelser og originale sangtekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/nielsencarl/bio.xml",
+          "text": "„Marsch for den Kjøbenhavnske Borgervæbning“"
+        }
+      ]
+    },
+    {
+      "id": "faberpd-balvise-o-dans",
+      "poetId": "faberpd",
+      "title": "Balvise med omkvædet »O Dans, du gjør Hjærtet saa let og tilfreds«",
+      "source": "DBL 1. udg., V (1891), s. 9, citerer Faber som forfatter til balviser med dette omkvæd. Ingen af Faber-korpussets to tekster har citatet; Balvise (faberpd2026102101) begynder Kom, Brødre! Her venter en nydelig Tour og er kontrolleret i fuld tekst. Citatet er ikke dokumenteret som førstelinje. https://runeberg.org/dbl/5/0011.html",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/faberpd/bio.xml",
+          "text": "«O Dans, du gjør Hjærtet saa let og tilfreds»"
+        }
+      ]
+    },
+    {
+      "id": "juvenal-menneskenes-oensker-plum",
+      "poetId": "juvenal",
+      "title": "Satire om Menneskenes Ønsker (Frederik Plums oversættelse, 1790)",
+      "source": "DBL 1. udg., XIII (1899), s.181, dokumenterer Plums oversættelse af en satire af Juvenal sammen med en satire af Persius, udgivet 1790. Bogens titel og udgave er bekræftet af den digitale udgave https://books.google.no/books?id=oasWAAAAYAAJ . Ønsket gælder alene Juvenals satire i denne danske oversættelse; der udledes intet satirenummer af den fælles leksikonomtale. Korpus har kun E. Lembckes Brudstykke af Juvenals 6te Satire; ingen Plum-oversættelse. Persius mangler en forfatterpost og er derfor ikke medtaget i dette ønske.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/plum/bio.xml",
+          "text": "Juvenals"
+        }
+      ]
+    },
+    {
+      "id": "finnsson-haleygjatal",
+      "poetId": "finnsson",
+      "title": "Háleygjatal",
+      "source": "Finnur Jónsson: Salmonsens Konversationsleksikon, 2. udgave, bind VII (1918), s. 632. Fragmentarisk overleveret kvad om Hakon Jarls slægt; ingen tekstforekomst fundet i korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/finnsson/bio.xml",
+          "text": "»Háleygjatal«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-den-bortloebne-eros",
+      "poetId": "moschos",
+      "title": "den bortløbne Eros",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII, 1924, s. 321, https://runeberg.org/salmonsen/2/17/0337.html.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»den bortløbne Eros«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-europe",
+      "poetId": "moschos",
+      "title": "Europe",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Europe er forlæg til Fogtmanns oversættelse i AtheneIX(1817).",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Europe«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-klagesang-over-bion",
+      "poetId": "moschos",
+      "title": "Klagesang over Bion",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Historisk attribution; kontrollér forfatterskab og tekst i moderne kritisk udgave før import.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Klagesang over Bion«"
+        }
+      ]
+    },
+    {
+      "id": "toft-til-johan-ludvig-heiberg",
+      "poetId": "toft",
+      "title": "Til Johan Ludvig Heiberg",
+      "status": "open",
+      "source": "Erslew, Almindeligt Forfatter-Lexicon III (1853), s. 389, anfører digtet i Kjøbenhavns Skilderi 1817, nr. 3. Ingen tilsvarende tekst af Georg Nicolai Toft fundet i det undersøgte korpus på master og #2143. https://runeberg.org/almiforf/3/0395.html",
+      "mentions": [
+        {
+          "file": "fdirs/toft/bio.xml",
+          "text": "Til Johan Ludvig Heiberg"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-frithiofs-saga",
+      "poetId": "boyeae",
+      "title": "Frithiofs Saga",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Frithiofs Saga"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-axel",
+      "poetId": "boyeae",
+      "title": "Axel",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Axel"
+        }
+      ]
     }
   ]
 }

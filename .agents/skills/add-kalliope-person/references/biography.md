@@ -19,7 +19,9 @@ omtalerne med `<span data-wish="oenske-id">kildens ordlyd</span>`.
 Kontrollér både ønskerapport og korpusopslag; titelmatch alene er ikke bevis.
 
 Hvis ingen biografi findes efter undersøgelse af de relevante tilladte kilder,
-registreres `biography-status` med dato, undersøgte kilder og begrundelse i
-`info.xml`. Et negativt Salmonsen-fund er kun evidens for Salmonsen, ikke DBL.
-Ved indsættelse af en biografi fjernes negativ status og eventuel restancelistepost;
-fjern også det gamle negative Salmonsen-fund, hvis det findes.
+registreres `biography-status` med faktisk søgedato, undersøgte kilder og
+konkret begrundelse i personens `info.xml`. Bevar dato og evidens, når en
+tidligere søgning genbruges; registrér kun faktisk undersøgte kilder. Et
+negativt Salmonsen-fund er kun evidens for Salmonsen, ikke DBL.
+Ved indsættelse af en synlig biografi fjernes den negative status i `info.xml`.
+Korpustesten i `make test` håndhæver kravet for alle personer uden undtagelser.

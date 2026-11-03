@@ -93,8 +93,9 @@ som litterære tekster. Nodebladet er knyttet til sin sang som billede.
   `andre.xml`. »Torbisten og Fluen« bevares derimod som særskilte varianter.
 - Efter brugerens filologiske vurdering er »Gaade« og »Sonet / til den
   sexaarige Emma« tilskrevet Christian Wilster med id
-  `wilster2026110301` og `wilster2026110302`; de tidligere id
-  bevares som aliases. Trykkets signatur C. P. Wilster er bevaret.
+  `wilster2026110301` og `wilster2026110302`. Emma-sonettens tidligere id
+  bevares som alias; »Gaade«s tidligere anonym-id kan ikke bevares,
+  fordi det allerede bruges i *Athene* på master. Trykkets signatur C. P. Wilster er bevaret.
   »Gaade« er forbundet som variant til *Digtninger* (1827), s. 3–4.
   Emma-sonettens note forklarer tilskrivningen via samme signatur og
   henviser til »Gaade«.
@@ -102,6 +103,8 @@ som litterære tekster. Nodebladet er knyttet til sin sang som billede.
   »Magnetismen« er samlet som én tekst under `soetoft2026110321`, inklusive
   personlisten på s. 134; de to tidligere tekst-id bevares som aliases.
   Billedteksten på dramatitelbladet er fjernet.
+- Otte nye tekst-id’er er omnummereret for at undgå sammenfald med
+  den samtidige *Athene*-import; eksisterende id’er og aliases er reserveret.
 - »Svanhvide« forbliver anonym. En senere optagelse i Thieles samlinger af
   folkeeventyr er ikke i sig selv belæg for individuelt forfatterskab.
 - Staffeldts eksisterende id `staffeldt2001052705` er bevaret og flyttet fra
@@ -131,7 +134,9 @@ DBL3/Wikidata, 6. oktober 1787; DBL1's alternative 7. (eller 6.) oktober
 bevares i den diplomatiske biografitekst.
 
 *Munkelist* og oversættelsen af *Æneiden* er registreret som bibliografiske
-blankværker. *Munkelist*s titelblad viser 1813, selv om den digitale KB-post
+blankværker. Ved sammenføringen med master er de eksisterende id’er
+`meisling/1812` og `meisling/1824` bevaret og beriget med de dokumenterede
+kilder; der er ikke oprettet dobbelte værkposter. *Munkelist*s titelblad viser 1813, selv om den digitale KB-post
 angiver 1818 og DBL1-biografien nævner 1812. Værkets metadata følger
 selve titelbladet; biografiens historiske ordlyd er bevaret. Den undersøgte
 KB-katalogsøgning gav ingen dokumenteret videnskabelig eller forfatterautoriseret
@@ -178,8 +183,11 @@ kontrolleret visuelt og ikke rettet efter forventet betydning.
   2.189 rejected. Ingen åbne eller kun rettede fund. Historiske og erstattede
   kandidat-id'er er bevaret.
 - Almindelig OCR-rapport: ingen kandidater.
-- Variantkontrol: den eneste resterende kandidat er indledningsdigtet over
-  for første senere sonet; den er afvist som helhed/del-relation. Ingen warnings.
+- Variantkontrol: indledningsdigtet over for første senere sonet er afvist
+  som direkte variantrelation mellem helhed og del. Efter omnummereringen
+  viser søgningen desuden tre selvtræffere mod det tidligere genererede
+  korpus (»Svanhvide«, »Hyrdens Morgensang« og »Stjernens Sang«); de er
+  samme tekstforekomster under de tidligere id’er, ikke yderligere varianter.
 - Person-editorial: ingen fejl og ingen nye ønskematch fra importen.
 - Facsimilekontrol: 619 værkfacsimiler og 1.238 offentlige billeder kontrolleret.
-- `make test`: exitkode 0; 139 testsuiter og 2.347 tests bestået (1 suite og 9 tests oversprunget efter repositoryets konfiguration).
+- `make test`: exitkode 0; 139 testsuiter og 2.421 tests bestået (1 suite og 9 tests oversprunget efter repositoryets konfiguration).
