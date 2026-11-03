@@ -93,14 +93,6 @@ end den angivne dato. Tekst-id'er uden en gyldig dato medtages ikke. Datoen i et
 id som `winther2018081001` er `2018-08-10`. `--facsimile-only` medtager kun
 værkfiler, hvor mindst én `<source>` refererer til en fil med endelsen `.pdf`.
 
-### Biografistatus og tekstønsker
-
-Korpustesten `__tests__/corpus/biography-coverage.test.js` sikrer, at alle
-digtere, kunstnere og øvrige personer har en synlig biografi eller dokumenteret
-forgæves søgning i `info.xml`, uden undtagelseslister. Den køres med `make test`.
-Tekstønsker valideres og afstemmes med scriptet under `add-kalliope-person`;
-se [personstatus](../docs/person-editorial.md).
-
 ## Redaktionelle værktøjer
 
 ### Opret digtere, værker og tekster
