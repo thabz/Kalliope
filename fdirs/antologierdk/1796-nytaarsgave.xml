@@ -2087,7 +2087,8 @@ Giør Vaaren dobbelt kiær.
 </body>
 </text>
 
-<text id="tode2026110303" author="tode">
+<!-- Kildens omkvæd gentager dit dit og didl didl ni gange, s. 101–103 (103.jpg–105.jpg). -->
+<text id="tode2026110303" author="tode" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Den altid muntre unge Kone</title>
   <firstline>Der er en ung Kone, heel munter og glad</firstline>
@@ -2881,7 +2882,8 @@ Dig en Større lønne maa.
 </body>
 </text>
 
-<text id="anonym1700dk2026110307" author="anonym1700dk">
+<!-- Kilden trykker det sammensatte ØmhedsTræk med stort T, s. 138 (140.jpg). -->
+<text id="anonym1700dk2026110307" author="anonym1700dk" ignore-tests="internal-uppercase">
 <head>
   <title>Impromtu ved et Løftes Opfyldelse</title>
   <firstline>Lad denne Bagatel, min bedste Ven, Dig sige</firstline>
