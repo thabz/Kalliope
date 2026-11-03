@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1817-athene-09" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1813-1817-athene">
+<kalliopework id="1817-athene-09" author="tidsskrifterdk" status="complete" type="periodical" parent="1813-1817-athene">
 <workhead>
   <title>Athene: Niende Bind</title>
   <subtitle>Et Maanedsskrift</subtitle>
@@ -23,6 +23,9 @@
     <printer>P. D. Kiøpping</printer>
     <year>1817</year>
   </source>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-03T13:32:23.431712+00:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="schaldemose20261102901" author="schaldemose" lang="da">
@@ -30,7 +33,11 @@
   <title>Skabelsen</title>
   <subtitle>(Ovid. Nason. Metamorph. lib. I. v. 5–88).</subtitle>
   <firstline>Førend Hav og Jord og den altbedækkende Himmel</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af vers 5–88 i Ovids <xref type="translation" poem="ovid2026083001"/>.</note>
+  </notes>
   <source pages="164-168" facsimile-pages="175-179"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -81,7 +88,7 @@ Ogsaa Markerne strakte han ud, og Dalene sænkte,
 Skære Himlen, indfattende rundt det hedere Jordstrøg,
 Saa begrændste den ordnende Gud med selvsamme Antal
 Den indsluttede Byrde, og gav den lignende Bælter.
-Ubefoeligt af Hede er det, som i Midten sin Plads fik,
+Ubeboeligt af Hede er det, som i Midten sin Plads fik,
 Tvende bedækkes af evig Snee; mellem disse han skienkte
 Tvende en mildere Himmel med Frost formælende Flammen;
 Over dem er den bølgende Luft, der saameget som Vand er
@@ -126,12 +133,13 @@ Nu forvandlet til Menneskers før ubekiendte Gestalter.
 </body>
 </text>
 
-<text id="oehlenschlaeger20261102901" author="oehlenschlaeger" lang="da">
+<text id="oehlenschlaeger20261102901" author="oehlenschlaeger" lang="da" variant="oehlenschlaeger20190206102">
 <head>
   <title>Martin Luther</title>
   <subtitle>(Ode paa Reformationens Jubelfest, 1817.)</subtitle>
   <firstline>Hvad bebuder i Dagbrækningens Morgenskiær</firstline>
   <source pages="447-450" facsimile-pages="458-461"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -170,7 +178,7 @@ Martyrhelten sig bød frem for det slebne Staal;
 Sank, og troede sig brændt luttret til Helgen alt
 I den grusomme Piinselsild.
 
-Frækhed fulgte paa skum Fordom, og Borgia
+Frækhed fulgte paa skuml Fordom, og Borgia
 Kaptes galen i Rom med en Caligula;
 Slog til hedenske Dirk Nøglen, ham Petrus gav,
 Aabned Rædslernes Kobberport.
@@ -179,6 +187,7 @@ Hvo traf Dragen? — Jeg seer freidig i Baalets Ild
 Bunden fast til sin Pæl, Martins Johannes. — Ak!
 Røgen qvæler hans Røst, styrker hans Heltemod,
 Og hans Tillid til Frelseren.
+
 <pb n="449" facs="459.jpg"/>Thi, almægtige Drot! aldrig Din Miskundheds
 Blik forlader den Slægt, som Du af Støvet drog!
 Silden finder et Skiær, hvor der er Sikkerhed
@@ -191,7 +200,7 @@ Og ham sveg sin Forsigtighed.
 
 See, med jernbundne Skriin sendte sin Tiener han,
 Afladshøkren. Han kom, planted forvovne Kors,
-Haned Troen og Gud, skiændte hans Bedehuus,
+Haaned Troen og Gud, skiændte hans Bedehuus,
 Solgte Lasterne Salighed.
 
 Da — ved Gruben ... Thi bleg blandt Folianterne
@@ -239,12 +248,13 @@ Eder Taarer og Takkefest!
   <subtitle>i Anledning af Reformationsfesten 1817.</subtitle>
   <firstline>Dig vi lovsiunge, Herre, som Solene tændte</firstline>
   <source pages="451-452" facsimile-pages="462-463"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Dig vi lovsiunge, Herre, som Solene tændte!
 Stiernernes Konge, Du, som os Lyset nedsendte!
-      Herre! Dit Bliv!
+      Herre! Dit <w>Bliv!</w>
       Vakte det evige Liv,
       Saligheds Lys Du os tændte.
 
@@ -257,7 +267,7 @@ Du, som lod Sønnen og Aanden til os nedstige!
 Dig vi lovsiunge, Herre, som Lyset bevared,
 Medens Aarhundreders Nat over Jorden er faret!
       Lyste det svagt,
-      Vogtren har du opvakt,
+      Vogteren har du opvakt,
       Du har paa Ny det opklaret.
 
 Verdnernes Fader! Stiernernes Gud i det Høie!
@@ -287,7 +297,11 @@ Knuser Du Jorden, lader Du Himmelen falde,
   <title>Philemon og Baucis</title>
   <subtitle>Ovid. Metam. VIII. 611–724.</subtitle>
   <firstline>Saa Flodguden; han taug, og det selsomme Under forbauset</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af vers 611–724 i Ovids <xref type="translation" poem="ovid2026083008"/>.</note>
+  </notes>
   <source pages="452-458" facsimile-pages="463-469"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -344,7 +358,7 @@ Guderne lagde sig ned. Opkiltet med skiælvende Haand et
 Bord frembær hun, men dette var skiæve paa det tredie Been; en
 Splint det ligede; og da den havde hævet dets Skraahed,
 Og det stod jævnt, aftørredes det med grøn Krusemynte.
-Her Minervas tvefarvede Frugt frembæres ufyltet.
+Her Minervas tvefarvede Frugt frembæres usyltet.
 Og i klar Viinbærme nedlagt høstsamlede Hyben,
 Reddiker og Endiven, derhos en Mængde af tyk Melk;
 Endelig Æg, saa lettelig vendt i den jævnvarme Aske.
@@ -402,7 +416,7 @@ Elskte! i eet fra Læberne lød, og i eet deres Læber
 Skiultes af Løv; mig viiste endnu en Mand fra Tyena
 Side om Side de to Træstammer, de Elskendes Kroppe.
 Værdige Oldinge mig (og Grund var der ei til at lyve)
-Dette fortalte: jeg selv der saae paa Grenene hænge
+Dette fortalte: jeg selv der saae paa Gravene hænge
 Krandse omkring, og i det jeg friske ophængte, jeg sagde:
 Guderne vogte de Fromme, og hvo dem ærer, han æres.
 <nonum><right><w>G. H. Waage.</w></right></nonum>
@@ -416,6 +430,7 @@ Guderne vogte de Fromme, og hvo dem ærer, han æres.
   <subtitle>1816.<footnote>De i dette Stykke udmærkede Ord ere Indskrifter paa de omtalte Steder.</footnote></subtitle>
   <firstline>Venner! kommer, lad os vandre</firstline>
   <source pages="458-465" facsimile-pages="469-476"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 
@@ -634,6 +649,7 @@ Nyde maa, som denne, blid!
     <note editorial="true">Trykt uden signatur. Frederik Christian Sibbern er angivet som forfatter i Erslews <w>Almindeligt Forfatter-Lexicon</w>, III, 1853, s. 166. Kildeeksemplaret har desuden en håndskreven tilskrivning »Fr. Chr. Sibbern« efter digtet. <a href="https://runeberg.org/almiforf/3/0172.html">↬</a></note>
   </notes>
   <source pages="554-557" facsimile-pages="565-568"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -655,7 +671,7 @@ Kun til den Hedengangnes Ære,
 Til fierne Efterslægt at bære
 Et Vidne om den store Drot.
 
-Rundt om det øxler Livets Spil,
+Rundt om det vexler Livets Spil,
 Og Tidens Strøm forbi det glider;
 Det hører den ei mere til,
 Det hører til de svundne Tider.
@@ -721,9 +737,10 @@ Og kom til denne Helligdom!
   </subtitle>
   <firstline>Kypris sendte engang en listig Drøm til Europa</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="moschos">Oversættelse af Moschos’ <w>Europa</w>.</note>
+    <note editorial="true">Oversættelse af Moschos’ <xref type="translation" poem="moschos2026110301"/>. Oversættelsen udelader originalens vers 114–117.</note>
   </notes>
   <source pages="557-565" facsimile-pages="568-576"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -761,7 +778,7 @@ Disse hun altid legede med, naar hun vandred til Dandsen,
 Eller hun brugte det muntrende Bad udi Flodernes Munding,
 Eller og plukte i Eng den yndigt duftende Lilie.
 Nu de viste sig snar; og alle de havde i Haanden
-Hver sin Blomsterkurv: de gik til de grønnenede Enge
+Hver sin Blomsterkurv: de gik til de grønnende Enge
 Langs med Havets Strand, hvor de altid i Skarer kom sammen,
 Frydende sig ved Rosernes Væxt og Bølgernes Susen.
 Selv bar Europa en gylden Kurv, ret værd at beskue:
@@ -784,7 +801,7 @@ Nilen flød som en Sølverstrøm, af Kobber var Koen,
 Og i det funklende Guld saaes Zeus at være afbildet.
 Men paa den rundede Blomsterkurv tæt nedenfor Krandsen
 Hermes afbildet stod; udstrakt ved hans Side paa Jorden
-Argos laae, udstyret med Øine, som kiendte ei Søvnen.
+Argos laae, udrustet med Øine, som kiendte ei Søvnen.
 Da han var dræbt, af hans Purpurblod en Fugl monne opstaae,
 Som sig brystede stolt af Vingernes blomstrende Farver.
 Den udfolded sin Stiert, liig hurtig henfarende Skibe,

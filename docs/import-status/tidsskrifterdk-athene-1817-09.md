@@ -1,6 +1,7 @@
-# Athene, bind IX (1817): PDF med erstatningssider og digtimport
+# Athene, bind IX (1817): færdig digtkorrektur og originaler
 
-Status 2. november 2026: Importen til #2132 er genoptaget efter brugerens
+Status 3. november 2026: Alle syv udvalgte digte er færdigkorrekturlæst i to
+uafhængige sessioner. Importen til #2132 er genoptaget efter brugerens
 udtrykkelige anvisning om at indsætte to tomme erstatningssider for de
 manglende prosasider 128–129. Prosaen indgår ikke i digtudvalget. De blanke
 sider erstatter kun de manglende billedpositioner; ingen tekst er rekonstrueret.
@@ -54,29 +55,61 @@ er integritetskontrolleret og genbrugt til udvælgelse og registerafstemning.
 Frisk OCR begrænses til de relevante digtsider. Registeret erstatter ikke
 den visuelle gennemgang af resten af bindet.
 
-Der foreligger XML-udkast til alle syv digte i
-`fdirs/tidsskrifterdk/1817-athene-09.xml`, fortsat med `status="incomplete"`.
+Alle syv digte i `fdirs/tidsskrifterdk/1817-athene-09.xml` har nu
+`korrektur1,korrektur2,kilde,side`, og værket er `complete` inden for det
+udtrykkeligt beskrevne digtudvalg. Prosaen og kildehullet er fortsat udeladt.
 Frisk OCR er udført på alle 36 digtsider med otte konfigurationer; alle 288
-kørsler er verificeret. Titelbladet er beskåret og rettet op med bestået QA.
-Facsimiler og thumbnails er publiceret og kontrolleret.
+kørsler er verificeret. Titelbladets geometri-QA er bestået. Facsimiler og
+thumbnails er publiceret og kontrolleret.
 
-Georg Holger Waage, Nikolai Fogtmann, Børge Anton Hoppe, Frederik Christian
-Sibbern og Moschos er oprettet. De fire først producerede personbiografier
-(Waage, Fogtmann, Hoppe og Moschos) er fuldt uafhængigt korrekturlæst; alle
-fund er rettet og genverificeret. Sibberns fulde DBL1-biografi er
-transskriberet og førstegennemgået på s. 550–560, men afventer afsluttende
-uafhængig kontrol. Hans attribution til det usignerede Frederiksborg er
-sikkert dokumenteret i Erslew, bind III, s. 166.
+Den nye uafhængige gennemgang omfatter alle 704 metriske vers i otte
+poesiblokke, 39 tekst-sideposter og 36 billeder. Der er indført 11 rettelser:
+Ubeboeligt (166), skuml (448), manglende strofeafstand før side 449, Haaned
+(449), spatieret Bliv! og Vogteren (451), usyltet (455), Gravene (458),
+vexler (555), grønnende (559) og udrustet (560). Trykkets usædvanlige
+»skuml« og »Gravene« er bevaret efter direkte kontrol. Luthers ode har
+19 firelinjede strofer. Hoppe har 7×10 og 13×8 vers; Frederiksborg 8×8.
+Europa har 162 vers fordelt på 20 og 142; trykte ombrud er ikke ekstra vers.
 
-Færdigstatus og merge afventer fuld uafhængig kontrol af alle syv digtudkast,
-strofer, indryk, typografi og sideskift, afsluttede kandidatregistre og
-reviewcheckpoint samt endelige metadata-, variant- og forlægskontroller.
-Sibberns bibliografiske hovedværker og portrætsøgning er ikke afsluttet.
-Der er ikke tilføjet korrektur2 eller modelattest til digtudkastene.
+Alle 598 OCR-kandidater og 20 slutlige strukturkandidater har individuelle,
+afsluttede dispositioner. Alle otte blokke har en uafhængig visuel kontrol af
+strofer og indryk, og hver sidepost har særskilt typografikontrol. Ingen
+åbne korrekturfund resterer. Tre reviewerintervaller fordeler de fysiske
+sider uden overlap; den delte side 452 er tildelt én reviewer.
 
-## Statuscommit og teknisk validering
+Skabelsen er forbundet med Ovids Metamorphoses I, 5–88, og Philemon og Baucis
+med VIII, 611–724, i den allerede indførte Magnus-udgave fra 1892. Europa er
+forbundet med den fulde græske original på 166 vers i Edmonds' *The Greek
+Bucolic Poets* (1916), s. 428–440. Fogtmann udelader originalens vers 114–117;
+den nyere kritiske udgave har også enkelte tekstvalg, som er dokumenteret i
+originalrapporten. Luthers ode er variantforbundet med 1860-forekomsten.
+
+Waage, Fogtmann, Hoppe og Moschos havde allerede fuldt uafhængigt kontrollerede
+biografier. Sibberns fulde DBL1-biografi, s. 550–560, er nu også genlæst;
+»herhjemme« er rettet til trykkets »her hjemme«. Hans attribution til det
+usignerede Frederiksborg er dokumenteret i Erslew III, s. 166. De to
+hovedværker er registreret i førsteudgaver, sidste forfatterautoriserede
+udgaver og moderne standardudgaver (1826/1850, 1861/1870, 1998/2017).
+Et dokumenteret Gemzøe-portræt efter Købke, 1834, SMK KKS7992, er tilføjet
+med fuldt billede og særskilt kvadratisk beskæring.
+
+## Tidligere statuscommit og teknisk validering
 
 Snapshot den 2. november 2026: XML-schema, formattering og `git diff --check`
 er kontrolleret. `make test` afsluttede med exitkode 0: 139 testsuiter og
 2354 tests bestod; én eksisterende suite med ni tests blev sprunget over.
 Det er teknisk validering af et uafsluttet tekstudkast, ikke færdig korrektur.
+
+## Afsluttende validering, 3. november 2026
+
+`make test`: exit 0, 139 suiters/2.421 tests bestået; én suite med ni tests
+sprunget over. Static-build er bestået med Elasticsearch og billedthumbnailbyg
+sprunget over; datasættet er opdateret, og personskillens tekstønskeafstemning
+og check giver ingen fejl eller nye sikre matches. Offentlig facsimilekontrol
+består for 629 værker og 1.258 repræsentative billeder. XML-skema, formatter,
+interne referencer og `git diff --check` er kontrolleret.
+
+De frosne IX- og Qvad-checkpoints ligger uden for repositoryet sammen med de
+individuelle reviewerregistre og er verificeret ved commit/push. Nye originaler
+og det tilbageværende Schreiber-spørgsmål beskrives i
+[originalrapporten](tidsskrifterdk-athene-originaler.md).
