@@ -198,7 +198,7 @@ hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
 
 Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
 Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
-Ved PR-forberedelsen efter tekstimport: kør `npm run person-editorial` samlet
-for PR’ens ændringer mod et opdateret JSONL-korpus, og afstem dokumenterede
-ønskematch med `npm run person-editorial -- --reconcile`. Se
-`docs/person-editorial.md`; rapporten køres ikke efter hvert build.
+Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker efter
+[person-skillens værkregistrering](../add-kalliope-person/references/works.md)
+mod et opdateret JSONL-korpus. Rapporten køres samlet for PR'en og ikke efter
+hvert build.

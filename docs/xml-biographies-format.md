@@ -71,10 +71,8 @@ identitetskontrollere et opslag i 1. eller 2. udgave; Kalliopes biografitekst
 skal i så fald kontrolleres mod den ældre udgave og kildeangives til denne.
 
 For ikke-danske forfattere er Salmonsens Konversationsleksikon en foretrukken
-standardkilde, når der findes et sikkert identificeret personopslag. Følg i
-begge tilfælde den særskilte arbejdsgang i
-[`docs/salmonsen-biographies.md`](salmonsen-biographies.md), herunder kravet om
-kontrol mod facsimilen og fuldstændig transskription.
+standardkilde, når der findes et sikkert identificeret personopslag. Brug kun
+Salmonsens 2. udgave, supplementet eller Den nye Salmonsen (4. udgave).
 
 ### Reservekilder
 
@@ -90,6 +88,26 @@ Dokumentér hvilke foretrukne kilder der er undersøgt, og hvorfor
 reservekilden bruges. Kontrollér teksten mod facsimilen, og angiv forfatter,
 værk, bind, år og sider i biografiens `<head><source>`. Reservekilderne
 erstatter ikke en brugbar biografi fra de foretrukne leksika.
+
+## Transskription og kontrol
+
+Kontrollér personens identitet, ikke blot efternavnet: et opslag kan gælde
+en navnebror, et sted eller et begreb. Projekt Runebergs OCR er et
+hjælpemiddel; kontrollér altid teksten mod facsimilen:
+
+- Transskriber hele personartiklen, også fortsættelser på efterfølgende sider.
+- Stop før næste opslag, og udelad den digitale udgaves navigation.
+- Bevar den historiske ortografi og typografi.
+- Angiv udgave, år, bind og side eller spalte i kildefoden.
+
+En forgæves søgning registreres i personens `info.xml` efter
+[personstatus](person-editorial.md). Opret ikke en tom `bio.xml`. Når en
+synlig biografi indsættes, fjernes den negative status.
+
+Biografiarbejdet følger `$add-kalliope-person`. Kontrollér nye biografier med
+`xmllint --noout fdirs/<id>/bio.xml` og `git diff --check`, og kør
+`npm run build-static` og `make test` før aflevering. Biografikravet
+kontrolleres direkte af korpustesten.
 
 ## Interne henvisninger og manglende digte
 

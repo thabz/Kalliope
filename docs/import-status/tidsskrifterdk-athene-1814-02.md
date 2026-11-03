@@ -85,8 +85,8 @@ ukendt original bevares uden rekonstrueret tekst.
 1.370 OCR-kandidater og alle 76 kandidater fra den ufiltrerede helværksanalyse
 er individuelt disponeret; der er ingen åbne fund. Alle 94 sideposter og
 32 visuelt fastlagte strukturprofiler er dækket af uafhængig korrektur.
-`make test`: 139 testsuiter og 2.361 tests bestået, exit 0 (1 suite og
+`make test`: 139 testsuiter og 2.421 tests bestået, exit 0 (1 suite og
 9 tests sprunget over). Den målrettede pagebreak-test har 23 beståede tests.
 XML-skema, sideaudit og fundregister validerer. Static-build og
-`person-editorial --check/--reconcile` afslutter uden fejl. Offentlig
+tekstønskescriptets `--check`/`--reconcile` afslutter uden fejl. Offentlig
 facsimilekontrol dækker 628 værker og 1.256 repræsentative billeder.
