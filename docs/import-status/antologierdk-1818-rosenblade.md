@@ -103,7 +103,7 @@ som litterære tekster. Nodebladet er knyttet til sin sang som billede.
   »Magnetismen« er samlet som én tekst under `soetoft2026110321`, inklusive
   personlisten på s. 134; de to tidligere tekst-id bevares som aliases.
   Billedteksten på dramatitelbladet er fjernet.
-- Otte nye tekst-id’er er omnummereret for at undgå sammenfald med
+- Ni nye tekst-id’er er omnummereret for at undgå sammenfald med
   den samtidige *Athene*-import; eksisterende id’er og aliases er reserveret.
 - »Svanhvide« forbliver anonym. En senere optagelse i Thieles samlinger af
   folkeeventyr er ikke i sig selv belæg for individuelt forfatterskab.
