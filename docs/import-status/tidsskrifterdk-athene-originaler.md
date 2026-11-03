@@ -3,9 +3,10 @@
 Status 3. november 2026, PR #2143. Alle otte indførte bind er gennemgået for
 oversættelsesangivelser, og de 15 selvstændige digtkandidater i det stoppede
 bind IV er undersøgt ud fra det eksisterende register og diagnostiske materiale.
-Der er tilføjet 12 hele originaldigte/-uddrag, i alt 1.083 vers, og 13 nye
+Der er tilføjet 13 hele originaldigte/-uddrag, i alt 1.107 vers, og 14 nye
 originalrelationer fra de indførte Athene-tekster. Allerede indførte originaler
-er genbrugt. Ét forlæg, »Den fremmede Fugl« efter Schreiber, er fortsat uafklaret.
+er genbrugt. Forlægget til »Den fremmede Fugl« er indført hos Aloys Wilhelm
+Schreiber og forbundet med oversættelsen.
 
 ## Nye tekster og kildevalg
 
@@ -19,6 +20,7 @@ er genbrugt. Ét forlæg, »Den fremmede Fugl« efter Schreiber, er fortsat uafk
 | III: Æneidens siette Sang | `vergil2026110302`, Aeneid VI, 1–211 | Samme, s. 155–161 |211|
 | III: Længsel | `oehlenschlaeger20261103101`, Sehnsucht in Paris | Oehlenschläger, Gedichte, Stuttgart/Tübingen 1817, s. 30–31 |36|
 | III: Il bambino di Ara Celi | `brunf2026110303`, Das Bambino | Brun 1820, s. 63–64 |18|
+| III: Den fremmede Fugl | `schreiber2026110301`, Mit den Wolken hergezogen | Schreiber, Gedichte und Erzählungen, Heidelberg 1812, s. 290–291 |24|
 | V: Qvad | `magnusson2026110301`, Qvæþi í Rúnom | Kroningssmåtrykket, Havniæ 1815, s. 5–6 |40|
 | IX: Europa | `moschos2026110301`, Εὐρώπη | Edmonds, The Greek Bucolic Poets, London/New York 1916, s. 428–440 |166|
 | IV, senere import: Juvenals første Satire | `juvenal2026110301`, Satira I | Hunter, D. Junii Juvenalis et A. Persii Flacci Satiræ, Edinburgh 1806, s. 1–6 |171|
@@ -26,7 +28,7 @@ er genbrugt. Ét forlæg, »Den fremmede Fugl« efter Schreiber, er fortsat uafk
 
 Alle nye publikationer står `incomplete`, fordi kun de relevante tekster er
 indført. Bruns fire tekster udvider det eksisterende 1820-værk i trykkets
-rækkefølge. Syv nye titelblade er indsat med geometri-QA og visuel kontrol;
+rækkefølge. Otte nye titelblade er indsat med geometri-QA og visuel kontrol;
 Bruns eksisterende titelblad er genbrugt. Kroningssmåtrykkets runeoverskrift
 ses i billedet; titelbladstransskriptionen gengiver de latinske bogstavformer.
 
@@ -111,29 +113,64 @@ Nordahl Bruns norske vise, Eyvindr Finnssons Hákonar-mál og Schillers Ceres.
 IV's Sangens Magt kan forbindes med den eksisterende `schiller2026081616`,
 Die Macht des Gesanges, når den danske tekst kan importeres.
 
-## Uafklaret Schreiber-forlæg
+## Schreiber-forlægget indført
 
 »Den fremmede Fugl«, `anonym1800dk2026110302`, III s. 472–473, har seks
-firelinjede strofer og undertitlen »Efter Schreiber«. Der er søgt på
-førstelinje, tyske titelvarianter og særprægede motiver: vandrefugl, ungdommens
-stjerne, håbets fakkel og død under gult egeløv. Aloys Wilhelm Schreiber og
-Christian Schreiber er begge undersøgt; identiteten kan ikke afgøres ud fra
-efternavnet alene. Ingen person eller tekstforbindelse er konstrueret.
+firelinjede strofer og undertitlen »Efter Schreiber«. Originalen er Aloys
+Wilhelm Schreibers unavngivne sang med førstelinjen »Mit den Wolken hergezogen«,
+sunget af en pilgrim i fortællingen *Die drei Geliebten*. Den står i
+*Gedichte und Erzählungen*, Heidelberg, trykt hos Joseph Engelmann, 1812,
+s. 290–291. [Digitalisering hos BSB](https://www.digitale-sammlungen.de/de/view/bsb11419102?page=318,319).
 
-Institutionelle tryk undersøgt diagnostisk og målrettet visuelt: Aloys'
+Titelblad, fortællingens overskrift på s. 280 og hele sangen er kontrolleret
+visuelt i BSB's skanning. Alle seks strofer og 24 vers svarer til den danske
+tekst: fuglens bortrejse fra reden, det fremmede lands manglende forår,
+barndommens stjerne, ønsket om at nå den, den forgæves opstigning og døden
+under egens gule blade. Den danske oversættelse gengiver enkelte billeder
+friere, men identifikationen er sikker. Sangen har ingen selvstændig titel
+eller indholdsfortegnelsespost og ligger i bogens prosadel.
+
+Sangen er indført som `schreiber2026110301` i `fdirs/schreiber/1812.xml`,
+med førstelinjen som titel og en note om placeringen i fortællingen.
+Strofer, indryk og sideskift er bevaret. Værket står `incomplete`, da resten
+af samlingen ikke er indført. Oversættelsen har et konkret original-link.
+
+Personen `schreiber` er oprettet med livsdata fra Otto Biehlers kildebaserede
+undersøgelse (1942) og GND, VIAF og Wikidata. Ingen biografi er fundet i
+Salmonsen 2, supplementet eller 4. udgave; søgningen er dokumenteret i
+`info.xml`. DBL er fravalgt som irrelevant for den tyske forfatter.
+Rijksmuseums portræt RP-P-1914-4012, Edouard Schulers stålstik efter Peroux,
+er indsat med en særskilt kvadratisk beskæring. Ingen af kunstnerne findes
+i Kalliopes personkorpus. Mål og genbrugsstatus følger museets katalog.
+
+Gedichte (1801) og Gedichte (1817), første bind af Poetische Werke, er
+registreret som blankværker med henholdsvis ULB's og BSB's digitaliseringer.
+1817–1818-samlingen er den fundne samlede udgave fra forfatterens levetid;
+ingen nyere videnskabelig standardudgave er fundet i Biehlers eller
+Heidelberger Geschichtsvereins bibliografier. Registreringen af de øvrige
+bind af Poetische Werke er ikke del af denne sangimport.
+
+Den tidligere søgning omfattede diagnostisk og målrettet visuel kontrol af Aloys'
 Gedichte 1801, Gedichte und Erzählungen 1812, Poetische Werke/Gedichte 1817
 samt Christians Gedichte 1805 og Kleine Schriften 1806; desuden relevante
 Morgenblatt-årgange og Biehlers Schreiber-bibliografi. Alle 58 relevante
 OCR-kontekster på 52 forskellige Morgenblatt-sider fra 1814 er manuelt læst
-og individuelt afvist. Flere fugle- og
-længselsdigte er konkret afvist på motivforløb og metrum. Det danske digt
-bevarer kildeangivelsen; forlægget står som det eneste uløste originalspørgsmål.
+og individuelt afvist. Flere fugle- og længselsdigte er konkret afvist på
+motivforløb og metrum. Sangen i fortællingen blev overset ved denne første
+gennemgang af 1812-samlingen; en ny søgning i den gemte OCR viste tekstmatchen.
 
 Novalis er ikke koblet til et vilkårligt originaldigt: Hauchs forfatteranmærkning
 beskriver netop et forsøg på at gengive ånden, ikke ordene. Foersoms Kong David
 i IV er heller ikke uden belæg gjort til en Herder-oversættelse.
 
 ## Kontrol
+
+Schreibers sang er kontrolleret visuelt mod begge kildesider og registreret
+med `korrektur1,kilde,side`. Variantkontrollen gav nul kandidater;
+OCR-kandidatrapporten gav ingen kandidater. Formanalysen bekræfter 24 vers
+fordelt på seks firelinjede strofer. Titelbladets geometrikontrol er bestået,
+og både portræt og kvadratisk beskæring er visuelt kontrolleret.
+Blankværkerne og personposten er valideret mod RELAX NG.
 
 De 12 nye originaler er læst i to uafhængige sessioner mod alle 53 relevante
 kildesider. Frisk OCR med mindst to strategier foreligger for alle sider;

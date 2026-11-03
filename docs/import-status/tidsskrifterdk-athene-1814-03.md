@@ -54,7 +54,12 @@ og Rahbeks forbindelse til Goethes »Jägers Abendlied« er registreret.
 Ved Hauchs »Forskeren« viser overgangen 253/254 og 258/259 ingen positivt
 synlig strofegrænse. Teksten fortsættes konservativt uden tilføjet blanklinje;
 normal sidetop kan ikke bevise en usynlig grænse. Den trykte nummerfejl 190
-ved Æneidens vers 195 er bevaret. De tyske originaler til »Længsel« og
-»Den fremmede Fugl« er fortsatte forskningsspørgsmål; de danske læsninger
-er fuldt kontrollerede. Bruns »Das Bambino von Ara-celi in Rom« er sikkert
+ved Æneidens vers 195 er bevaret. Den tyske original til »Længsel« er et
+fortsat forskningsspørgsmål; den danske læsning er fuldt kontrolleret.
+Forlægget til »Den fremmede Fugl« er identificeret som Aloys Wilhelm Schreibers
+unavngivne sang »Mit den Wolken hergezogen« i *Die drei Geliebten*, trykt i
+*Gedichte und Erzählungen* (1812), s. 290–291. Alle seks strofer er sammenholdt
+med skanningen. Originalen er indført som `schreiber2026110301` og forbundet
+med oversættelsen; kilde og titelblad følger 1812-udgaven.
+Bruns »Das Bambino von Ara-celi in Rom« er sikkert
 identificeret i en senere udgave fra 1817, men er endnu ikke indført i Kalliope.
