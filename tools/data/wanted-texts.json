@@ -687,6 +687,32 @@
         }
       ],
       "targetId": "eystein2026110101"
+    },
+    {
+      "id": "plough-heiberg-mindefest-1891-prolog",
+      "poetId": "plough",
+      "title": "Prolog ved Mindefesten for Johanne Luise Heiberg",
+      "status": "open",
+      "source": "Beskrivende arbejdstitel. P. Hansens biografi om Johanne Luise Heiberg i Dansk biografisk Lexikon, 1. udgave, bind VII (1893), s. 249, angiver, at C. Ploug skrev prolog og epilog til Fantasus’ rolle i Syvsoverdag ved teatrets mindefest 4. januar 1891. Teksterne er ikke identificeret ved gennemgang af titler og førstelinjer i Plougs JSONL-korpus; eksisterende Prolog og Prolog ved den nye Theaterbygnings Indvielse gælder andre anledninger. Senere import skal kontrollere den trykte tekst og dens præcise titel.",
+      "mentions": [
+        {
+          "file": "fdirs/heibergjohanne/bio.xml",
+          "text": "Prolog"
+        }
+      ]
+    },
+    {
+      "id": "plough-heiberg-mindefest-1891-epilog",
+      "poetId": "plough",
+      "title": "Epilog ved Mindefesten for Johanne Luise Heiberg",
+      "status": "open",
+      "source": "Beskrivende arbejdstitel. P. Hansens biografi om Johanne Luise Heiberg i Dansk biografisk Lexikon, 1. udgave, bind VII (1893), s. 249, angiver, at C. Ploug skrev prolog og epilog til Fantasus’ rolle i Syvsoverdag ved teatrets mindefest 4. januar 1891. Teksterne er ikke identificeret ved gennemgang af titler og førstelinjer i Plougs JSONL-korpus; eksisterende Prolog og Prolog ved den nye Theaterbygnings Indvielse gælder andre anledninger. Senere import skal kontrollere den trykte tekst og dens præcise titel.",
+      "mentions": [
+        {
+          "file": "fdirs/heibergjohanne/bio.xml",
+          "text": "Epilog"
+        }
+      ]
     }
   ]
 }
