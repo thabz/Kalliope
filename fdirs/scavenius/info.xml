@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="scavenius" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jacob Brønnum</firstname>
+    <lastname>Scavenius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749-04-02</date>
+      <place>Skagen</place>
+    </born>
+    <dead>
+      <date>1820-06-20</date>
+      <place>Gjorslev</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q6167840</wikidata>
+  </identifiers>
+</person>

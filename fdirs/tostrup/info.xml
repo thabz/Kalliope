@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tostrup" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Peter</firstname>
+    <lastname>Tostrup</lastname>
+  </name>
+  <!-- Fødselsår efter Erslew III (1853), s. 391. Erslew angiver 5. januar; andre registre angiver 1. maj. Dagen er derfor ikke fastlagt her. -->
+  <period>
+    <born>
+      <date>1752</date>
+      <place>Als</place>
+    </born>
+    <dead>
+      <date>1820-09-15</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
