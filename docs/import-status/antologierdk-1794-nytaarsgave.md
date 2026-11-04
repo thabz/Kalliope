@@ -50,10 +50,10 @@ De fem manglende originalrelationer er afklaret tekstligt og indsat:
 | Oversættelse | Original og valgt udgave | Kontrol |
 | --- | --- | --- |
 | `haste2026110310` | Hölty, »Adelstan und Röschen«, *Gedichte* (1783), s. 1–7, `holty2026110401` | TextGrids transskription af 1783-udgaven; 16 × 8 vers. De to danske indledningsstrofer er tilegnelsen til Buchholm. |
-| `riber2026110302` | Voß, »Luise«, *Musen Almanach für 1784*, s. 115–154, `voss2026110401` | Alle 40 tryksider læst mod BSB-faksimilen; 470 heksametre, to trykte fodnoter og alle sideskift. |
-| `bruunmc2026110302` | F. L. Stolberg, »Romanze«, *Gedichte der Brüder Christian und Friedrich Leopold Grafen zu Stolberg* (1779), s. 64–68, `stolbergf2026110401` | TextGrids transskription af 1779-udgaven; 13 × 5 vers. |
-| `anonym1700dk2026110311` | Lidner, »Det lyckliga Bytet«, *Nyare arbeten* (1793), s. 20, `lidner2026110401` | Hele digtet læst mod 1793-faksimilen; 16 vers. |
-| `anonym1700dk2026110312` | Miller, »Die Zufriedenheit«, *Gedichte* (1783), s. 389–391, `miller2026110401` | Alle tre tryksider læst mod BSB-faksimilen; seks strofer à seks vers. Den danske gendigtning følger strofe 1, 2, 4 og 6. |
+| `riber2026110402` | Voß, »Luise«, *Musen Almanach für 1784*, s. 115–154, `voss2026110401` | Alle 40 tryksider læst mod BSB-faksimilen; 470 heksametre, to trykte fodnoter og alle sideskift. |
+| `bruunmc2026110402` | F. L. Stolberg, »Romanze«, *Gedichte der Brüder Christian und Friedrich Leopold Grafen zu Stolberg* (1779), s. 64–68, `stolbergf2026110401` | TextGrids transskription af 1779-udgaven; 13 × 5 vers. |
+| `anonym1700dk2026110411` | Lidner, »Det lyckliga Bytet«, *Nyare arbeten* (1793), s. 20, `lidner2026110401` | Hele digtet læst mod 1793-faksimilen; 16 vers. |
+| `anonym1700dk2026110412` | Miller, »Die Zufriedenheit«, *Gedichte* (1783), s. 389–391, `miller2026110401` | Alle tre tryksider læst mod BSB-faksimilen; seks strofer à seks vers. Den danske gendigtning følger strofe 1, 2, 4 og 6. |
 
 Identifikationen af Millers digt bygger især på forbindelsen mellem lærkens
 sang og arbejdet, nattergalens sang og hvilen, den utilfredse rige og den
@@ -77,8 +77,63 @@ Bruuns »Vel er det lkke« er rettet til »Vel er det ikke«.
 Variantkontrollen giver ingen kandidater for de fem indsatte originaler.
 Helværksanalysen bekræfter Höltys, Stolbergs og Millers strofeomfang uden
 strukturkandidater; Voß er sammenhængende heksametre med dialogindryk.
-Det opdaterede JSONL-korpus er afstemt mod alle 73 tekstønsker uden match
+Det opdaterede JSONL-korpus er afstemt mod alle 74 tekstønsker uden match
 eller valideringsfejl.
+
+## Id-sammenfald med master
+
+CI afslørede sammenfald mellem 40 af 1794-importens nye tekst-id'er og de
+siden indførte 1797- og 1813-årgange. Master er indflettet, og 1794-teksterne
+har fået ledige id'er fra 4. november. Henvisningerne i Bruuns kritik er
+opdateret samtidig. De optagne gamle id'er kan ikke bevares som aliaser. De to øvrige
+anonyme tekster flyttes også til 4. november, fordi deres gamle løbenumre
+ligger under masters højeste nummer for 3. november; deres gamle, ledige
+id'er bevares som aliaser.
+
+| Tidligere id i denne PR | Nyt id |
+| --- | --- |
+| `anonym1700dk2026110301` | `anonym1700dk2026110401` |
+| `anonym1700dk2026110302` | `anonym1700dk2026110402` |
+| `anonym1700dk2026110303` | `anonym1700dk2026110403` |
+| `anonym1700dk2026110304` | `anonym1700dk2026110404` |
+| `anonym1700dk2026110305` | `anonym1700dk2026110405` |
+| `anonym1700dk2026110306` | `anonym1700dk2026110406` |
+| `anonym1700dk2026110307` | `anonym1700dk2026110407` |
+| `anonym1700dk2026110308` | `anonym1700dk2026110408` |
+| `anonym1700dk2026110309` | `anonym1700dk2026110409` |
+| `anonym1700dk2026110310` | `anonym1700dk2026110410` |
+| `bruunmc2026110301` | `bruunmc2026110401` |
+| `bruunmc2026110302` | `bruunmc2026110402` |
+| `bruunmc2026110303` | `bruunmc2026110403` |
+| `buchholm2026110301` | `buchholm2026110401` |
+| `buchholm2026110302` | `buchholm2026110402` |
+| `frankenau2026110301` | `frankenau2026110402` |
+| `frankenau2026110302` | `frankenau2026110403` |
+| `haste2026110301` | `haste2026110402` |
+| `haste2026110302` | `haste2026110403` |
+| `haste2026110303` | `haste2026110404` |
+| `haste2026110304` | `haste2026110405` |
+| `haste2026110305` | `haste2026110406` |
+| `haste2026110306` | `haste2026110407` |
+| `hjortvk2026110301` | `hjortvk2026110401` |
+| `hjortvk2026110302` | `hjortvk2026110402` |
+| `liebenbergmf2026110301` | `liebenbergmf2026110401` |
+| `liebenbergmf2026110302` | `liebenbergmf2026110402` |
+| `rahbek2026110304` | `rahbek2026110404` |
+| `rahbek2026110305` | `rahbek2026110405` |
+| `riber2026110301` | `riber2026110401` |
+| `riber2026110302` | `riber2026110402` |
+| `sander2026110301` | `sander2026110403` |
+| `sander2026110302` | `sander2026110404` |
+| `sander2026110303` | `sander2026110405` |
+| `sander2026110304` | `sander2026110406` |
+| `sander2026110305` | `sander2026110407` |
+| `sander2026110306` | `sander2026110408` |
+| `schmidtf2026110301` | `schmidtf2026110401` |
+| `schmidtf2026110302` | `schmidtf2026110402` |
+| `smidth2026110301` | `smidth2026110401` |
+| `anonym1700dk2026110311` | `anonym1700dk2026110411` (alias bevaret) |
+| `anonym1700dk2026110312` | `anonym1700dk2026110412` (alias bevaret) |
 
 ## Udestående: titelbladsbillede
 
@@ -101,7 +156,7 @@ repositoryet i `/private/tmp/kalliope-2015/`; de er ikke offentlige aktiver.
 
 ## Afsluttede kontroller
 
-- `make test`: 139 testsuiter og 2.424 tests bestået; 9 tests sprunget over.
+- `make test`: 139 testsuiter og 2.431 tests bestået; 9 tests sprunget over.
 - Målrettet sideskiftstest: alle 23 tests bestået.
 - Semantisk sidekontrol: 203 tekstsideposter, ingen afvigelser.
 - Alle 216 aktuelle strukturkandidater og 1.894 historiske OCR-kandidater
