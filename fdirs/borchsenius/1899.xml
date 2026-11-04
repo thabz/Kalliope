@@ -23,21 +23,6 @@
 </workhead>
 <workbody>
 
-<text id="borchsenius2026110301" skip-index="true">
-<head>
-  <title>Til Thor Lange</title>
-  <nofirstline/>
-  <source facsimile-pages="10"/>
-  <keywords>lange</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-Til<br/><center><w>Thor Lange</w></center>
-</prose>
-</body>
-</text>
-
 <text id="borchsenius2026110302" ignore-tests="mixed-aa-circumflex">
 <head>
   <title>Thor Lange</title>
@@ -1811,7 +1796,7 @@ gaa selv, og du skal se, at alt vil gaa.
   </subtitle>
   <firstline>Den bidende Blæst staar barsk og haard</firstline>
   <notes>
-    <note editorial="true">Oversættelse af Carl Snoilskys »Frun på Salshult« (1897).</note>
+    <note editorial="true">Oversættelse af Carl Snoilskys <xref type="translation" poem="snoilsky2026110401"/>.</note>
   </notes>
   <source pages="80-84"/>
   <keywords>snoilsky</keywords>
@@ -1947,7 +1932,7 @@ vi brygger vort Øl og bager vort Brød!«
   <subtitle>Af <w>Viktor Rydberg</w>.</subtitle>
   <firstline>Har du fra vor Barndom Dagen i dit Minde</firstline>
   <notes>
-    <note editorial="true">Oversættelse af Viktor Rydbergs »Barndomspoesien«.</note>
+    <note editorial="true">Oversættelse af Viktor Rydbergs <xref type="translation" poem="rydberg2026110401"/>.</note>
   </notes>
   <source pages="85-90"/>
   <keywords>rydberg</keywords>
@@ -2087,6 +2072,9 @@ Sko og Peberkorn
   <title>En Tilgivelse</title>
   <subtitle>Til V. Irmingers Maleri.</subtitle>
   <firstline>Nu da hun Døden skal friste</firstline>
+  <pictures>
+    <picture artwork="kunst/irminger-en-tilgivelse-1892"/>
+  </pictures>
   <source pages="91-93"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
