@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smithl" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Laurids</firstname>
+    <lastname>Smith</lastname>
+  </name>
+  <!-- Død 22. marts efter DBL3 og Det Kongelige Norske Videnskabers Selskabs medaljeregister; DBL1 har 22. maj. Den ældre biografis trykte dato er bevaret. -->
+  <period>
+    <born>
+      <date>1754-04-12</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1794-03-22</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
