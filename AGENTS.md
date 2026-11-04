@@ -29,6 +29,8 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 ## OCR and PDF tooling
 
+- Basér facsimiler på farveudgaven, når en sådan findes. Brug kun en
+  sort-hvid-udgave, når der ikke findes en farveudgave af den valgte kilde.
 - Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
   eksisterende værktøjer, før et nyt systemværktøj installeres.
 - Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den

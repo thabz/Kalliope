@@ -8,7 +8,7 @@
     <picture type="titlepage" src="1813-frigge-p1.jpg" primary="true"><transcription>Frigge. / Poetisk Nytaarsgave / for / 1813. // Ved / R. Nyerup. // Kjøbenhavn. / Trykt paa Andreas Seidelins Forlag / hos Christopher Græbe.</transcription></picture>
     <picture portrait="rahbek/p3"/>
   </pictures>
-  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122441851805763" facsimile="11520800356D-bw" facsimile-pages-num="329" facsimile-pages-offset="13">
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122441851805763" facsimile="11520800356D-color" facsimile-pages-num="329" facsimile-pages-offset="13">
     <title>Frigge: Poetisk Nytaarsgave for 1813</title>
     <editor id="nyerup">R. Nyerup</editor>
     <place>Kjøbenhavn</place>
@@ -123,6 +123,7 @@ Stolt svømmer hun fra knuste Vrag,
 og Helteskygger hende følge,
 i Haanden slynger hun det danske Flag,
 uplettet vajer det fra sorten Bølge.
+
 <pb n="4" facs="016.jpg"/>Og ilende fra Havn til Havn,
 hun sjunge skal for uoprundne Tider,
 og nævne mangen Ædlings Navn,
@@ -574,7 +575,7 @@ Som vi i Liv og Død hverandre bare til,
 </body>
 </text>
 
-<text id="anonym1500dk2026110301" author="anonym1500dk">
+<text id="folkeviser2026110401" author="folkeviser" variant="folkeviser2018041012">
 <head>
   <title>Kong Hafbur og Herre Kong Sivard</title>
   <firstline>Kong Hafbur og Herre Kong Sivard</firstline>
@@ -1146,7 +1147,6 @@ Hvad heller I vinde mig, eller end saa væn en Mø.
   <firstline>Paa Østeraad sad ung Asloug prud</firstline>
   <notes>
     <note editorial="true">Digtet tilskrives C. E. Steenbloch af Andreas Faye, <i>Norske Sagn</i>, 1833, s. 11–12, der anfører, at forfatteren selv meddelte ham sagnforlægget. <a href="https://www.bokselskap.no/wp-content/themes/bokselskap2/tekster/pdf/norskesagn.pdf">↬</a></note>
-    <note editorial="true">På s. 100 er sluttegnet efter »hør« beskadiget og kan ikke læses sikkert. Det er markeret med [ulæseligt] i teksten.</note>
   </notes>
   <source pages="60-111" facsimile-pages="73-124"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2008,7 +2008,7 @@ Saa ynkelig monne hun græde.
 „Nu maa han til Dommedag Kampesten blive
 „Selv Elskov ej meer’ ham kan røre;
 „Mit Suk til hans Hjerte ej naaer,
-„Thi anden Gang maatte han hør [ulæseligt]
+„Thi anden Gang maatte han hør;
 „Det Navn som hver Jette bæver for.
 „Nu flux jeg forlader min elskede Ø;
 „Saa langt jeg vil bortdrage.
@@ -2557,6 +2557,7 @@ Højt leve de Glades, de Syngendes Tal!
 Gid aldrig vi savne den fyldte Pokal!
     Op, Brødre! vi mindes vort venlige Lag:
     Højt leve vor Klub til Basunernes Dag!
+
 <nonum><right><w>Sander.</w></right></nonum>
 </poetry>
 </body>
@@ -2619,6 +2620,7 @@ Til Himlen skal vor Sang sig hæve;
     Sign Begges Dage, gode Gud!
 O! lad vor Haves Blomsterflor
 Ved Begges Omhu blive stor!
+
 <nonum><right><w>Sander.</w></right></nonum>
 </poetry>
 </body>
@@ -2735,6 +2737,7 @@ Dig, Gud! den Evigvise
 O! lad os frejdigt vandre
 Som Brødre med hverandre
     Igjennem Livet til vor Grav!
+
 <nonum><right><w>Sander.</w></right></nonum>
 </poetry>
 </body>
@@ -2839,6 +2842,7 @@ Strips hader alle Epigrammer,
 De være over hvem de vil;
 <pb n="133" facs="145.jpg"/>Thi hvem end Pilen sigter til,
 ulykkelige Strips den rammer.
+
 <nonum><right><w>Ingemann.</w></right></nonum>
 </poetry>
 </body>
@@ -2882,6 +2886,7 @@ Med ham dandser Uskyld paa Afgrundens Bredder,
     Forbandelse toner Trompeternes Skrald:
 Hvor Hjerterne klappe af syndige Glæder,
     Der Djævlene juble ved Menneskets Fald.
+
 <nonum><right><w>Ingeman.</w></right></nonum>
 </poetry>
 </body>
@@ -2920,6 +2925,9 @@ Hvor Hjerterne klappe af syndige Glæder,
 <text id="soldin2026110301" author="soldin">
 <head>
   <title>Maria-Højen<footnote>Denne, og de to Elskende, der have gjort den saa berømt, har Prof. Rahbek, som bekjendt, allerede for endeel Aar siden besjunget i et fortreffeligt Digt, <w>Marie-Høj</w> kaldet.</footnote></title>
+  <notes>
+    <note editorial="true">Se Rahbeks <xref poem="rahbek2019091973"/> i <i>Poetiske Forsøg</i> (1794).</note>
+  </notes>
   <source pages="142-192" facsimile-pages="155-205"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3264,7 +3272,7 @@ De legte en Leg, Legen var alt udaf Vrede.
   <subtitle>(Efter det Engelske i Percys Reliqves).</subtitle>
   <firstline>Farvel, min hulde Pige!</firstline>
   <notes>
-    <note editorial="true">Gendigtning af den anonyme <xref type="translation" poem="anonym1600uk2026110301"/>. Originalens Phillida er her kaldt Emma.</note>
+    <note editorial="true">Gendigtning af den anonyme <xref type="translation" poem="anonymuk2026110401"/>. Originalens Phillida er her kaldt Emma.</note>
   </notes>
   <source pages="193-197" facsimile-pages="206-210"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3443,6 +3451,7 @@ Hvis Sol i <w>evig</w> Rosenlue gløder.
 O! lad os stræbe frem med rolig Taal!
 Kun den sig Livets Pillegrimsgang forsøder,
 Som drak af Huldgudindens Offerskaal.
+
 <nonum><right><w>N. Fürst.</w></right></nonum>
 </poetry>
 </body>
@@ -3685,7 +3694,7 @@ Og paa det sjunkne Tempels Ruin
 </body>
 </text>
 
-<text id="frankenau2026110301" author="frankenau">
+<text id="frankenau2026110301" author="frankenau" variant="frankenau2019041214">
 <head>
   <title>Andersskovs Kloster</title>
   <subtitle>Et natligt Maleri.</subtitle>
@@ -4527,9 +4536,6 @@ Da liden <w>Lovise</w> er baaren.
   <title>Qvarteersang</title>
   <subtitle>skreven ombord paa Fregatten Najaden i Mai 1804.</subtitle>
   <firstline>Lad Sangen lyde mandig og klar</firstline>
-  <notes>
-    <note editorial="true">Trykket stiller ordene »Dagvagtens« og »Midjenats« over hinanden med fælles klamme i syvende strofe. Alternativt synges verset: »Opvaagner, thi Midjenats Timer er nær!«</note>
-  </notes>
   <source pages="251-254" facsimile-pages="264-267"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4563,9 +4569,9 @@ Og Ynglingen tavs ham ærer.
 O Brødre, lader os følge hint Spor!
 Det leder til Kjækhed og Ære,
 Fra Østen til Vesten, fra Syd og til Nord
-Skal Sømanden hædret være.]
+Skal Sømanden hædret være.
 
-Opvaagner, thi Dagvagtens Timer er nær!
+Opvaagner, thi Dagvagtens/Midjenats Timer er nær!
 Opvaagner af qvægende Hvile!
 Med Kraft og Raskhed paa Dækket her
 Enhver af eder fremile!
@@ -5476,6 +5482,7 @@ Beskjerme den venne <w>Christiane</w>.
   Gud give hver Mand, som kan skjønne derpaa,
   En Lilie saa ædel saa væn og saa tro
 <center>Som <w>Oves Christiane.</w></center>
+
 <nonum><right><w>Sneedorff.</w></right></nonum>
 </poetry>
 </body>
