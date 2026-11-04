@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="fogtmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Nikolai</firstname>
+    <lastname>Fogtmann</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1788-11-16</date>
+      <place>Sønder Bork</place>
+    </born>
+    <dead>
+      <date>1851-09-13</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <!-- Identitet og livsdata: DBL1, bind V, 1891, s. 231–233. Athene IX angiver samme initialer og ansættelse ved Herlufsholm. -->
+</person>

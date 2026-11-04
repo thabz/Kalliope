@@ -871,6 +871,136 @@
       ]
     },
     {
+      "id": "finnsson-haleygjatal",
+      "poetId": "finnsson",
+      "title": "Háleygjatal",
+      "source": "Finnur Jónsson: Salmonsens Konversationsleksikon, 2. udgave, bind VII (1918), s. 632. Fragmentarisk overleveret kvad om Hakon Jarls slægt; ingen tekstforekomst fundet i korpus.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/finnsson/bio.xml",
+          "text": "»Háleygjatal«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-den-bortloebne-eros",
+      "poetId": "moschos",
+      "title": "den bortløbne Eros",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII, 1924, s. 321, https://runeberg.org/salmonsen/2/17/0337.html.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»den bortløbne Eros«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-europe",
+      "poetId": "moschos",
+      "title": "Europe",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Europe er forlæg til Fogtmanns oversættelse i AtheneIX(1817).",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Europe«"
+        }
+      ]
+    },
+    {
+      "id": "moschos-klagesang-over-bion",
+      "poetId": "moschos",
+      "title": "Klagesang over Bion",
+      "source": "K. H.: »Moschos«, Salmonsens Konversationsleksikon, 2. udgave, XVII,1924,s321, https://runeberg.org/salmonsen/2/17/0337.html. Historisk attribution; kontrollér forfatterskab og tekst i moderne kritisk udgave før import.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/moschos/bio.xml",
+          "text": "»Klagesang over Bion«"
+        }
+      ]
+    },
+    {
+      "id": "toft-til-johan-ludvig-heiberg",
+      "poetId": "toft",
+      "title": "Til Johan Ludvig Heiberg",
+      "status": "open",
+      "source": "Erslew, Almindeligt Forfatter-Lexicon III (1853), s. 389, anfører digtet i Kjøbenhavns Skilderi 1817, nr. 3. Ingen tilsvarende tekst af Georg Nicolai Toft fundet i det undersøgte korpus på master og #2143. https://runeberg.org/almiforf/3/0395.html",
+      "mentions": [
+        {
+          "file": "fdirs/toft/bio.xml",
+          "text": "Til Johan Ludvig Heiberg"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-frithiofs-saga",
+      "poetId": "boyeae",
+      "title": "Frithiofs Saga",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Frithiofs Saga"
+        }
+      ]
+    },
+    {
+      "id": "boyeae-axel",
+      "poetId": "boyeae",
+      "title": "Axel",
+      "source": "DBL1 II565 nævner Boyes danske oversættelse. Erslew I189–190 dokumenterer særskilte udgaver. Ingen eksisterende konkret tekst fundet i streaming af texts.jsonl.gz; ingen udenlandsk originalversion forvekslet med oversættelsen.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/boyeae/bio.xml",
+          "text": "Axel"
+        }
+      ]
+    },
+    {
+      "id": "valerius-sanningen",
+      "poetId": "valerius",
+      "title": "Sanningen",
+      "source": "O. Th., Salmonsens Konversationsleksikon, 2. udg., bind 24 (1928), s. 438; selvstændig moralsk digtning omtalt i Valerius-biografien.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/valerius/bio.xml",
+          "text": "Sanningen"
+        }
+      ]
+    },
+    {
+      "id": "valerius-talamodet",
+      "poetId": "valerius",
+      "title": "Tålamodet",
+      "source": "O. Th., Salmonsens Konversationsleksikon, 2. udg., bind 24 (1928), s. 438; selvstændig moralsk digtning omtalt i Valerius-biografien.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/valerius/bio.xml",
+          "text": "Tålamodet"
+        }
+      ]
+    },
+    {
+      "id": "valerius-mannastyrkan",
+      "poetId": "valerius",
+      "title": "Mannastyrkan",
+      "source": "O. Th., Salmonsens Konversationsleksikon, 2. udg., bind 24 (1928), s. 438; selvstændig moralsk digtning omtalt i Valerius-biografien.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/valerius/bio.xml",
+          "text": "Mannastyrkan"
+        }
+      ]
+    },
+    {
       "id": "afzelius-neckens-polska",
       "poetId": "afzelius",
       "title": "Neckens polska",
@@ -906,14 +1036,15 @@
       "id": "fuerst-blondinen",
       "poetId": "fuerst",
       "title": "Blondinen",
-      "source": "Erslew: Almindeligt Forfatter-Lexicon, bind I (1843), s. 475: Fürsts oversættelse efter Göthe i Athene, bind II, s. 553. Ikke identificeret blandt Fürsts tekster ved opslag i JSONL-korpus og hans XML-filer.",
-      "status": "open",
+      "source": "Erslew: Almindeligt Forfatter-Lexicon, bind I (1843), s. 475: Fürsts oversættelse efter Göthe i Athene, bind II, s. 553. Ikke identificeret blandt Fürsts tekster ved opslag i JSONL-korpus og hans XML-filer. Identificeret i Athene II (1814), s. 553–554: samme titel, forfatter og udgave som hos Erslew; undertitlen er Efter Goethe.",
+      "status": "fulfilled",
       "mentions": [
         {
           "file": "fdirs/fuerst/bio.xml",
           "text": "Blondinen"
         }
-      ]
+      ],
+      "targetId": "fuerst2026110301"
     }
   ]
 }
