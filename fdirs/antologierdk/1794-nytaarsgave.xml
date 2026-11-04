@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1794-nytaarsgave" author="antologierdk" status="incomplete" type="anthology" parent="1793-1804-nytaarsgave">
+<kalliopework id="1794-nytaarsgave" author="antologierdk" status="complete" type="anthology" parent="1793-1804-nytaarsgave">
 <workhead>
   <title>Nytaarsgave for Damer</title>
   <year>1794</year>
+  <pictures>
+    <picture type="titlepage" src="1794-nytaarsgave-p1.jpg" primary="true"><transcription>NYTAARSGAVE / FOR / DAMER / 1794. // GRATIERNE / HELLIGET // A. Flint d. &amp; f. / Paa S. Poulsens Forlag.</transcription></picture>
+  </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122048920505763" facsimile="115208002921-color" facsimile-pages-num="215">
     <title>Nytaarsgave for Damer</title>
     <editor>Simon Poulsen</editor>
@@ -16,6 +19,9 @@
   </notes>
   <errata status="none"/>
   <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-03T22:34:40.711Z"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -31,7 +37,7 @@
   <firstline>Blandt Klipper Skaldens Vandring gaaer</firstline>
   <source pages="1-13" facsimile-pages="6-18"/>
   <keywords>frankenau</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -277,7 +283,7 @@ Gud signe ham, den Gieve!
     <note editorial="true">Signeret M. C. Buchholm; i registeret henført til M. S. Buchholm.</note>
   </notes>
   <source pages="14-18" facsimile-pages="19-23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -340,7 +346,7 @@ Beskytter, Fader, Almagts Gud!
   <subtitle>(I et Exemplar af Nytaarsgave for Damer 1793.)</subtitle>
   <firstline>Tag, Pige, denne lille Bog til Minde</firstline>
   <source pages="19" facsimile-pages="24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -371,7 +377,7 @@ Og ynde, huld som Du, min Harpes Klang.
     <picture type="illustration" src="1794-nytaarsgave-noder-20-2.jpg" href="https://www.kb.dk/e-mat/dod/115208002921-color.pdf#page=28">Zinck: nodebilag med angivelsen »Side 20«, bladside 2.<!-- Det trykte nodeblads fysiske mål er ikke dokumenteret. --></picture>
   </pictures>
   <source pages="20-21" facsimile-pages="25-30"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -419,7 +425,7 @@ O! nu har, nu har jeg dig!
   <title>Den yndigste Pige</title>
   <firstline>Yndig er den bange Pige</firstline>
   <source pages="22-26" facsimile-pages="31-35"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -512,7 +518,7 @@ Haandtryk, Kys og Favntag sige:
   <title>Elvina</title>
   <firstline>Elvina gik saa sorrigfuld</firstline>
   <source pages="27-31" facsimile-pages="36-40"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -618,7 +624,7 @@ Ei Vaaren hende saae.
     <picture type="illustration" src="1794-nytaarsgave-noder-32-2.jpg" href="https://www.kb.dk/e-mat/dod/115208002921-color.pdf#page=44">J. A. P. Schulz: nodebilag med angivelsen »Side 32«, bladside 2.<!-- Det trykte nodeblads fysiske mål er ikke dokumenteret. --></picture>
   </pictures>
   <source pages="32-33" facsimile-pages="41-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -667,7 +673,7 @@ Og lønner Flid med Sielero.
   <subtitle>Til dets Forældre.</subtitle>
   <firstline>Sødt hun hviler; Christiane hviler</firstline>
   <source pages="34-36" facsimile-pages="47-49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="fr">
@@ -725,7 +731,7 @@ Og vor Yndling hviler sødt.
   <subtitle>ved Frederiksborg.</subtitle>
   <firstline>Let opvælder din Strøm i Skyggen af duftende Bøge</firstline>
   <source pages="36" facsimile-pages="49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -742,7 +748,7 @@ Let, o Kilde! som du, vort Liv imod Evighed rinde,
   <title>Ved en Vens Død</title>
   <firstline>Fred om hver, som Livets Bane træder!</firstline>
   <source pages="37-38" facsimile-pages="50-51"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -780,7 +786,7 @@ At vi uden Uroe, uden Klage,
   <subtitle>til en hiemreisende Normand.</subtitle>
   <firstline>Salig den, som skuer Fædres Egne</firstline>
   <source pages="38" facsimile-pages="51"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -808,7 +814,7 @@ Trefold salig den, som der kan boe!
     <note editorial="true">Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2020012702"/>.</note>
   </notes>
   <source pages="39-53" facsimile-pages="52-66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1141,7 +1147,7 @@ I min og i min kjære Doris' Grav! —
   <title>Til en dansk Digter</title>
   <firstline>Beundres for sin Lærdom og sit Vid</firstline>
   <source pages="54" facsimile-pages="67"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1166,7 +1172,7 @@ Modtag den, og vær lykkelig ved den! —
   <subtitle>(I et Exemplar af Nytaarsgave for Damer 1793.)</subtitle>
   <firstline>Tid og Storm de seire Graner bøie</firstline>
   <source pages="55-56" facsimile-pages="68-69"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1217,7 +1223,7 @@ At den var saa saare, saare skiøn.
     <picture type="illustration" src="1794-nytaarsgave-noder-57-1.jpg" href="https://www.kb.dk/e-mat/dod/115208002921-color.pdf#page=71">J. A. P. Schulz: nodebilag med angivelsen »Side 57«, bladside 1.<!-- Det trykte nodeblads fysiske mål er ikke dokumenteret. --></picture>
   </pictures>
   <source pages="57-58" facsimile-pages="72-73"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1264,7 +1270,7 @@ Hvis Brud ei strikke kan.
   <title>Berthas Rose</title>
   <firstline>I Aftensvalen Bertha iilte</firstline>
   <source pages="59-60" facsimile-pages="74-75"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1323,7 +1329,7 @@ Thi evig Dydens Roser groe.
     <note editorial="true">Signeret L.</note>
   </notes>
   <source pages="61-63" facsimile-pages="76-78"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1390,7 +1396,7 @@ Søvnens milde Broder vinker
   <subtitle>en Sonnet.</subtitle>
   <firstline>Sundhed aander Held til Ungdoms Dage</firstline>
   <source pages="64" facsimile-pages="79"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1420,7 +1426,7 @@ Roes og Hæder ved hans Urne staae.
   <title>Selskabssang paa .......s Fødselsdag</title>
   <firstline>Længe var Naturen død</firstline>
   <source pages="65-66" facsimile-pages="80-81"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1471,7 +1477,7 @@ Ligne maae den blide Vaar!
   </subtitle>
   <firstline>Vakkre Kone! denne Gang</firstline>
   <source pages="67-69" facsimile-pages="82-84"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1540,7 +1546,7 @@ Du da bliver lykkelig!
   <subtitle>ved hans Reise til Engelland.</subtitle>
   <firstline>Nu, kiære Schwartz, Du snart erfare vil</firstline>
   <source pages="70" facsimile-pages="85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1562,7 +1568,7 @@ Og kom fra Garriks Hiem med Garriks Kunst tilbage!
   <subtitle>(Under et Landskabsmalerie.)</subtitle>
   <firstline>Skiøn som Naturen er Din Siel</firstline>
   <source pages="70" facsimile-pages="85"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1584,7 +1590,7 @@ Nyd Jordens Glæder her, og hist alt Himlens Held!
     <event>1793-02-22</event>
   </dates>
   <source pages="71-72" facsimile-pages="86-87"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1636,7 +1642,7 @@ Da skal Du hædres af enhver;
   </notes>
   <source pages="73-82" facsimile-pages="88-97"/>
   <keywords>buchholm</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="fr">
@@ -1820,7 +1826,7 @@ Og gnistre, som en Glød.
     <note editorial="true">Signeret F. af F-T.</note>
   </notes>
   <source pages="83-84" facsimile-pages="98-99"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1859,7 +1865,7 @@ Og Gud velsigne Dig, min Søn!!
   <title>Vise</title>
   <firstline>Ved Bækkens Bredde lille Grethe</firstline>
   <source pages="85-87" facsimile-pages="100-102"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1920,7 +1926,7 @@ Du dog igien skal see mig her.“
   <title>I en Vens Stambog</title>
   <firstline>Altid naar jeg skuer Aftenrøden</firstline>
   <source pages="87" facsimile-pages="102"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1944,7 +1950,7 @@ Lad mig ei hos Dig opleve den!
     <picture type="illustration" src="1794-nytaarsgave-noder-88-1.jpg" href="https://www.kb.dk/e-mat/dod/115208002921-color.pdf#page=104">Zinck: nodebilag med angivelsen »Side 88«, bladside 1.<!-- Det trykte nodeblads fysiske mål er ikke dokumenteret. --></picture>
   </pictures>
   <source pages="88-89" facsimile-pages="103-106"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1995,7 +2001,7 @@ I Aften jeg dig vist skal finde,
 <head>
   <title>Den gamle og den unge Due</title>
   <source pages="90-91" facsimile-pages="107-108"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -2014,7 +2020,7 @@ I Aften jeg dig vist skal finde,
   <firstline>Af Intet blev Gargil, den Stymper, Herremand</firstline>
   <source pages="91" facsimile-pages="108"/>
   <keywords>ewald</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2037,7 +2043,7 @@ Dig elskede ni himmelsk rene Møer.
     <note editorial="true">Signeret L.</note>
   </notes>
   <source pages="92" facsimile-pages="109"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2069,7 +2075,7 @@ Og Jordens Sorger svinde da ved dit Blik!
   <title>Til Luise</title>
   <firstline>Cagliostro mig i lyse Tryllespeil</firstline>
   <source pages="93" facsimile-pages="110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2088,7 +2094,7 @@ Kan mig min hele Skiebne vise.
   <title>Til Sophie</title>
   <firstline>Sophie tit med Haan til mine Briller seer</firstline>
   <source pages="93" facsimile-pages="110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2115,7 +2121,7 @@ Blandt Jordens Gratier den første Huldgudinde?
   </dates>
   <source pages="94-96" facsimile-pages="111-113"/>
   <keywords>thaarup,baggesen,storm,pram,rahbek</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2166,7 +2172,7 @@ Leve vores gode Fader!
     <note editorial="true">I registeret henført til signaturen M.</note>
   </notes>
   <source pages="97" facsimile-pages="114"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2192,7 +2198,7 @@ Da du blev een af Norges Sønner.
   <subtitle>en Sonnet.</subtitle>
   <firstline>Du, som venligt smiler til den Matte</firstline>
   <source pages="98" facsimile-pages="115"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2223,7 +2229,7 @@ Og som ingen Kummer vækker meer!
   <subtitle>(I en Stambog.)</subtitle>
   <firstline>Maa jeg, gode Line! bør jeg vente</firstline>
   <source pages="99-100" facsimile-pages="116-117"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2267,7 +2273,7 @@ Disse, ikkun disse Ord endnu:
 <head>
   <title>Zephyrens Forvandling</title>
   <source pages="101-102" facsimile-pages="118-119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -2287,7 +2293,7 @@ Disse, ikkun disse Ord endnu:
   <title>De nyere Digteres Skiebne</title>
   <firstline>Vær tusendgange selv Virgil</firstline>
   <source pages="102" facsimile-pages="119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2307,7 +2313,7 @@ Du bliver riig, som Banks<footnote><w>Banks</w>, Europas rigeste Lærde, en Mand
     <note editorial="true">Signeret F. af F-T.</note>
   </notes>
   <source pages="103-104" facsimile-pages="120-121"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2347,7 +2353,7 @@ Du skal et mere værdigt faae.
     <note editorial="true">Signeret M.</note>
   </notes>
   <source pages="104" facsimile-pages="121"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2368,7 +2374,7 @@ Om Daphnes Hierte ligner dig. —
   <title>Bøn til Taalmodighed</title>
   <firstline>Evig herske du paa Jorden</firstline>
   <source pages="105-106" facsimile-pages="122-123"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2426,7 +2432,7 @@ Og din blide Villie skee!
     <note editorial="true">Oversættelse af Friedrich Wilhelm Gotters <xref type="translation" poem="gotter2018062101"/>.</note>
   </notes>
   <source pages="107-108" facsimile-pages="124-125"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2463,7 +2469,7 @@ Vær Engel, hvo som vil!
   <title>Prinds Bradamant</title>
   <firstline>Prinds Bradamant, saa synger Schirachs Muse</firstline>
   <source pages="108" facsimile-pages="125"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2482,7 +2488,7 @@ Den høie Herres lange Øren rammet.
   <title>I Dorines Stambog</title>
   <firstline>Mennesker selv Venne-Navne skifter</firstline>
   <source pages="109-110" facsimile-pages="126-127"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2533,7 +2539,7 @@ Gid Du da maa huske mig, og sige:
     <picture type="illustration" src="1794-nytaarsgave-noder-111-1.jpg" href="https://www.kb.dk/e-mat/dod/115208002921-color.pdf#page=129">J. A. P. Schulz: nodebilag med angivelsen »Side 111«, bladside 1.<!-- Det trykte nodeblads fysiske mål er ikke dokumenteret. --></picture>
   </pictures>
   <source pages="111-112" facsimile-pages="130-131"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2577,14 +2583,14 @@ Snur-rur-rur-rum!
 
 <text id="riber2026110402" variant="riber2020032774" author="riber">
 <head>
-  <title>Lovise<footnote>See <a work="antologierdk/1793-nytaarsgave">Nytaarsgave for Damer. 1793. S. 12.</a></footnote></title>
+  <title>Lovise<footnote>See <a poem="riber2026102101">Nytaarsgave for Damer. 1793. S. 12.</a></footnote></title>
   <subtitle>(efter Voß.)</subtitle>
   <firstline>Under det tætte Skiul af to bredbladede Linde</firstline>
   <notes>
     <note editorial="true">Oversættelse af Johann Heinrich Voß’ <xref type="translation" poem="voss2026110401"/>.</note>
   </notes>
   <source pages="113-147" facsimile-pages="132-166"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3077,7 +3083,7 @@ Og ved Porten modtog dem Passan med venlige Logren.
   <subtitle>(foran i et Exemplar af Stammetræet.)</subtitle>
   <firstline>Chariter i harmonisk Kjæde</firstline>
   <source pages="148" facsimile-pages="167"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3104,7 +3110,7 @@ At du var værd at eie den.
   <title>Amor og Phantasus</title>
   <firstline>Stor er din Magt i Muelighedens Rige</firstline>
   <source pages="149-150" facsimile-pages="168-169"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3155,7 +3161,7 @@ Phantasus’s skiønne Datter var . . . <w>Sophie</w>.
     <note editorial="true">Digtets første side er i trykket fejlagtigt nummereret 153; den svarer til side 151 i årgangens løbende pagination.</note>
   </notes>
   <source pages="151-152" facsimile-pages="170-171"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3202,7 +3208,7 @@ Hun leve, hun leve til Danrigets Lyst!
   <title>Til et Brudepar</title>
   <firstline>Skiøn er Bækken, naar den flyder</firstline>
   <source pages="153-154" facsimile-pages="172-173"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3247,7 +3253,7 @@ Alles Gud velsigne dem!
     <note editorial="true">Signeret M.</note>
   </notes>
   <source pages="154" facsimile-pages="173"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3272,7 +3278,7 @@ Men tale tit.
     <note editorial="true">Fri gendigtning af Friedrich Leopold Stolbergs <xref type="translation" poem="stolbergf2026110401"/>.</note>
   </notes>
   <source pages="155-158" facsimile-pages="174-177"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3365,7 +3371,7 @@ Taareløs og uden Klage,
     <note editorial="true">Gendigtning af Friedrich Wilhelm Gotters <xref type="translation" poem="gotter2025081401"/>.</note>
   </notes>
   <source pages="159" facsimile-pages="178"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3392,7 +3398,7 @@ Hun hang i mit Favntag, o Held mig! o Held!
   <title>Til X. X.</title>
   <firstline>At vandre viis og god igiennem Livet</firstline>
   <source pages="160-161" facsimile-pages="179-180"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3432,7 +3438,7 @@ Og denne skiønne Krands skal fryde mig.
     <note editorial="true">Signeret M.</note>
   </notes>
   <source pages="161" facsimile-pages="180"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3452,7 +3458,7 @@ Gid Held og Glæde følge den!
     <note editorial="true">Signeret M.</note>
   </notes>
   <source pages="161" facsimile-pages="180"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3469,7 +3475,7 @@ En passelig Motion til Vederlag man fik.
   <firstline>Dig, som Pallas med sin Krone vinker</firstline>
   <source pages="162-164" facsimile-pages="181-183"/>
   <keywords>sander</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3550,7 +3556,7 @@ Sagde jeg, og let mit Hierte gik.
     <event>1792-10-26</event>
   </dates>
   <source pages="165-168" facsimile-pages="184-187"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3640,7 +3646,7 @@ Paa nye i hendes Arm!
   <subtitle>(da jeg første Gang saae hende dandse.)</subtitle>
   <firstline>Let i Rækken Minna svæver</firstline>
   <source pages="169-174" facsimile-pages="188-193"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3756,7 +3762,7 @@ Dydens evig skiønne staae!
   </subtitle>
   <firstline>Hvad Venskab er, hvori det vel bestaaer</firstline>
   <source pages="175-177" facsimile-pages="194-196"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3815,7 +3821,7 @@ Og bliv bestandig min Veninde!
   <title>Et Spørgsmaal</title>
   <firstline>Blandt Grækenlands syv store Vise</firstline>
   <source pages="177" facsimile-pages="196"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3836,7 +3842,7 @@ Blandt hele Verdens Konger nu?
     <event>1792-01-01</event>
   </dates>
   <source pages="178" facsimile-pages="197"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3873,7 +3879,7 @@ Maae vorde Deres Hiertes stolte Løn. —
     <note editorial="true">Oversættelse af Bengt Lidners <xref type="translation" poem="lidner2026110401"/>.</note>
   </notes>
   <source pages="179" facsimile-pages="198"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3904,7 +3910,7 @@ Men, Himmel! Liget nu skinbarlig hende svarer:
     <event>1791-03-02</event>
   </dates>
   <source pages="180" facsimile-pages="199"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3937,7 +3943,7 @@ Skal adle Glæden i dit Bryst!
   <title>I R——ks Stambog</title>
   <firstline>Dit Biefald gav mig Mod og Lyst</firstline>
   <source pages="181" facsimile-pages="200"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3969,7 +3975,7 @@ Mig meer end Laurbær-Krandsen glæder.
     <note editorial="true">Forkortet gendigtning af Johann Martin Millers <xref type="translation" poem="miller2026110401"/>.</note>
   </notes>
   <source pages="182-183" facsimile-pages="201-202"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4009,7 +4015,7 @@ Og leve from og lykkelig!
   <title>Det gamle og det nye Bierg</title>
   <firstline>Der var et Bierg i Fablens gamle Dage</firstline>
   <source pages="183" facsimile-pages="202"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4031,7 +4037,7 @@ Og hvad? Kun Krig og Død og tifold Landeplage.
   <title>Vise til Laura</title>
   <firstline>Ifald jeg var som Croesus riig</firstline>
   <source pages="184-185" facsimile-pages="203-204"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4079,7 +4085,7 @@ Og evig dit skal blive.
     <note editorial="true">Omarbejdelse af folkevisen »Troskabsprøven« (DgF 252).</note>
   </notes>
   <source pages="186-189" facsimile-pages="205-208"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

@@ -1,10 +1,9 @@
 # Nytaarsgave for Damer 1794 — importstatus
 
 Arbejdet vedrører #2015. Årgangens 70 tekster er indsat i
-`fdirs/antologierdk/1794-nytaarsgave.xml`. Værket er fortsat `incomplete`,
-fordi titelbladsbilledet afventer manuel billedbehandling efter nedenstående
-QA-resultat. Teksterne har `korrektur1,kilde,side`; færdigstatus og modelattest
-er ikke tildelt.
+`fdirs/antologierdk/1794-nytaarsgave.xml`. Værket er `complete` med
+`korrektur1,korrektur2,kilde,side` og korrekturattest for den dokumenterede,
+uafhængige sidegennemgang med gpt-6.1-sol.
 
 ## Kilde og omfang
 
@@ -135,24 +134,29 @@ id'er bevares som aliaser.
 | `anonym1700dk2026110311` | `anonym1700dk2026110411` (alias bevaret) |
 | `anonym1700dk2026110312` | `anonym1700dk2026110412` (alias bevaret) |
 
-## Udestående: titelbladsbillede
+## Godkendt titelblad og færdigstatus
 
-`prepare-kalliope-titlepage` finder titelbladets papirkant i både farve- og
-sort-hvid-skanningen, men QA returnerer `manual-review`: højre beskæring er
-8,89 %, over skillens grænse på 8 %. Intet `p1`-billede er derfor promoveret,
-og der er ikke lagt en billedreference til et manglende aktiv i XML.
+Brugeren har leveret og godkendt `1794-nytaarsgave-p1.jpg`, 887 × 1503 pixels,
+4. november 2026. Filen er registreret som primært titelblad efter visuel
+kontrol af årgang, titel, tilegnelse, gravørsignatur og forlagsangivelse.
+Billedfilens SHA-256 er `13f7aaee59fdab93957890aade2a47df856a9dd80c620b9a07609d2ecda5ffbe`.
 
-Farveoriginalen er PDF-side 4, 1001 × 1600 pixels. Den analyserede geometri
-er vinkel 0°, beskæring `5,55,907,1465`. Titelbladets tekst er:
+Titelbladets transskription er:
 
-> Nytaarsgave / for / Damer / 1794. / Gratierne / helliget / A. Flint d. & f. /
-> Paa S. Poulsens Forlag.
+> NYTAARSGAVE / FOR / DAMER / 1794. // GRATIERNE / HELLIGET // A. Flint d. & f. / Paa S. Poulsens Forlag.
 
-Næste skridt er manuel vurdering af papirkanten eller et bedre kildebillede,
-derefter titelbladsbillede med kontrolleret transskription og de afsluttende
-kontroller før færdigmarkering. Billedanalysens grænse er ikke omgået.
-Analyse, kandidat, QA, OCR, sideinventar og reviewregistre opbevares uden for
-repositoryet i `/private/tmp/kalliope-2015/`; de er ikke offentlige aktiver.
+Den gemte slutkontrol fra 3. november dokumenterer den uafhængige korrektur.
+Den aktuelle XML er afstemt mod præcis den gennemlæste tekstversion
+(SHA-256 `701496b428c95caad63a85375271f907e8f2b535861bf852ea03902c0137ea3e`).
+Alle 70 tekstkroppes ordlyd er uændret. Efterfølgende ændringer omfatter
+metadata, id'er, links og den brugerbestilte blanklinje før sidste afsnit i
+»Zephyrens Forvandling«. Alle 68 poesistrukturer er uændrede; samtlige
+216 strukturkandidater og deres dispositioner er afstemt med de aktuelle id'er.
+Kvalitetsflag og modelattest bygger på disse eksisterende korrekturregistre.
+
+Den nye kontrol, sideinventaret og det opdaterede checkpoint ligger uden for
+repositoryet i `/tmp/nytaarsgave-1794-completion/`. De oprindelige reviewregistre
+og OCR ligger fortsat i `/private/tmp/kalliope-2015/`.
 
 ## Afsluttede kontroller
 
