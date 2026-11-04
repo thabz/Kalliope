@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <person id="fogtmann" country="dk" lang="da" type="poet">
+  <!-- Livsdata og identitet: L. Koch, DBL1, bd. V (1891), s. 231-233, https://runeberg.org/dbl/5/0233.html. Sangattributionen Fogtmann er kontrolleret i 1821-udgaven og det trykte forfatterregister. -->
   <name>
     <firstname>Nikolai</firstname>
     <lastname>Fogtmann</lastname>
@@ -14,5 +15,8 @@
     </dead>
   </period>
   <literary-periods>dk-guldalder-og-romantik</literary-periods>
-  <!-- Identitet og livsdata: DBL1, bind V, 1891, s. 231–233. Athene IX angiver samme initialer og ansættelse ved Herlufsholm. -->
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Nikolai_Fogtmann</biografisk-leksikon-lex-dk>
+  </identifiers>
+  <!-- Athene IX bekræfter samme initialer og ansættelse ved Herlufsholm. -->
 </person>

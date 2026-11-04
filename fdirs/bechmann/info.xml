@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bechmann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Gram</firstname>
+    <lastname>Bechmann</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1759</date>
+      <place>Byrum, Læsø</place>
+    </born>
+    <baptized>
+      <date>1759-01-17</date>
+    </baptized>
+    <dead>
+      <date>1836-12-31</date>
+      <place>Rårup</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>H.G._Bechmann</biografisk-leksikon-lex-dk>
+  </identifiers>
+  <!-- DBL1 kalder 17. januar dåbsdato, mens DBL3 angiver den som fødselsdato. Den ældre, udtrykkelige dåbsangivelse er bevaret. -->
+  <!-- Til X. X. er signeret H. G. Bechmann i Nytaarsgave for Damer 1794, s. 160–161. Erslew, Almindeligt Forfatter-Lexicon, bd. 1, 1843, s. 90–91, dokumenterer Hans Gram Bechmanns samtidige digteriske bidrag til Minerva, Iris og Poulsens nytårsgaver. -->
+</person>
