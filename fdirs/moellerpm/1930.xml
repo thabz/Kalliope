@@ -44,10 +44,13 @@
 </head>
 <content>
 
-<text id="moellerpm2026110326" variant="moellerpm20010502507">
+<text id="moellerpm20010502507" aliases="moellerpm2026110326">
 <head>
   <title>Før og Nu</title>
   <firstline>Der var en Tid, da vort gamle Land</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="3-4"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -105,11 +108,15 @@ I den øde Luft deres Viser de runge.
 </body>
 </text>
 
-<text id="moellerpm2026110327" variant="moellerpm20010502506">
+<text id="moellerpm20010502506" aliases="moellerpm2026110327">
 <head>
   <title>Holger Danske og Skrædderne</title>
   <firstline>Hr. Holger sad engang og drak</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="5-9"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -292,10 +299,13 @@ En førlig Skrædder fundet.
 </body>
 </text>
 
-<text id="moellerpm2026110328" variant="moellerpm20010502515">
+<text id="moellerpm20010502515" aliases="moellerpm2026110328">
 <head>
   <title>Torbisten og Fluen</title>
   <firstline>Torbisten kravler af mørken Hul</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="10-12"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -399,10 +409,13 @@ Jeg gør dem s'gu vist urene.«
 </body>
 </text>
 
-<text id="moellerpm2026110329" variant="moellerpm20010502513">
+<text id="moellerpm20010502513" aliases="moellerpm2026110329">
 <head>
   <title>St. Laurentius</title>
   <firstline>Bonden beder med liden Ro</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="13-17"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -586,10 +599,13 @@ Naar Folk i Kirken sjunge.
 </body>
 </text>
 
-<text id="moellerpm2026110330" variant="moellerpm20010502505" ignore-tests="repeated-adjacent-word">
+<text id="moellerpm20010502505" aliases="moellerpm2026110330" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Gertrud</title>
   <firstline>Gertrud rider fra Bloksbjærg brat</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="18-20"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -697,10 +713,13 @@ Og gav ham et Spark og lod ham gaa.
 </head>
 <content>
 
-<text id="moellerpm2026110306" variant="moellerpm2002122401" lang="la">
+<text id="moellerpm2002122401" aliases="moellerpm2026110306" lang="la">
 <head>
   <title>Laus Tabaci<footnote><span lang="da"><i>En Oversættelse ved Udgiveren meddeles i Oplysningerne S. 388.</i></span></footnote></title>
   <firstline>Felix ter, qui pusio</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
+  </notes>
   <source pages="21-23"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -782,10 +801,13 @@ Og gav ham et Spark og lod ham gaa.
 </body>
 </text>
 
-<text id="moellerpm2026110307" variant="moellerpm20010502511">
+<text id="moellerpm20010502511" aliases="moellerpm2026110307">
 <head>
   <title>Jægervise</title>
   <firstline>Gennem Moser og raslende Siv vi gaa</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="23-24"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -907,10 +929,19 @@ Det er tungt, man skal gaa hjem alene.
 </body>
 </text>
 
+<section id="moellerpm20010502514" level="2">
+<head>
+  <title>Studentersang</title>
+</head>
+<content>
+
 <text id="moellerpm2026110309" variant="moellerpm20260823206">
 <head>
   <title>Studentersang I</title>
   <firstline>Hel sjælden rørtes Pen og Bog</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="26-28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -977,6 +1008,9 @@ Med Hurra hilset blive.
 <head>
   <title>Studentersang II</title>
   <firstline>Hvad er imod Studentens Kaar</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="28-29"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1035,6 +1069,15 @@ Vort Glas.
 </body>
 </text>
 
+</content>
+</section>
+
+<section id="moellerpm20010502512" level="2">
+<head>
+  <title>Sange til Rahbek</title>
+</head>
+<content>
+
 <text id="moellerpm2026110311">
 <head>
   <title>Sange til Rahbek</title>
@@ -1042,6 +1085,9 @@ Vort Glas.
   <toctitle>Sange til Rahbek, I</toctitle>
   <linktitle>Sange til Rahbek, I</linktitle>
   <firstline>Den Slotsklokke gaar i den ældgamle Lund</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="30-31"/>
   <keywords>rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1055,7 +1101,7 @@ Dybsindig i ensomme Drømme.
 I Slottet der sover en Ridder saa prud.
 Den Ridder var Trolle, men Drengen var Knud.
 
-Saa brat liden Knud ind ad Korsdøren tren,
+Saa brat liden Knud ind ad Korsdøren<note editorial="true">Korsdøren, dvs. kordøren; man skrev tidligere Chorsdør, men da Korsdør kunne misforstås som en sammensætning med 'Kors', blev Kordør den fastslåede form. - Sven Sørensen</note> tren,
 Han ser paa de Ligkister lange.
 Hans Tanker de sværme ved Heltenes Ben;
 Da grunder han tidlig paa Sange.
@@ -1107,6 +1153,9 @@ Saa længe som Jyder det Danske forstaa.
   <toctitle>Sange til Rahbek, II</toctitle>
   <linktitle>Sange til Rahbek, II</linktitle>
   <firstline>En Ridder lig i blanke Vaabenklæder</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="31-32"/>
   <keywords>rahbek</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1151,10 +1200,16 @@ For Danmarks Nestor, til den klare Bund!
 </body>
 </text>
 
-<text id="moellerpm2026110313" variant="moellerpm20010502510">
+</content>
+</section>
+
+<text id="moellerpm20010502510" aliases="moellerpm2026110313">
 <head>
   <title>Sang til Steffens</title>
   <firstline>En Mester i Tankernes Riger</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="32-34"/>
   <keywords>steffens</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1209,11 +1264,14 @@ Vi have din Vugge til Pant.
 </body>
 </text>
 
-<text id="moellerpm2026110314" variant="moellerpm20010502504">
+<text id="moellerpm20010502504" aliases="moellerpm2026110314">
 <head>
   <suptitle>To Studenterdigte</suptitle>
   <title><num>I.</num>Fabel</title>
   <firstline>Ørnen da den ganske Hær</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="34-36"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1302,11 +1360,15 @@ Han er bange for sit Skind,
 </body>
 </text>
 
-<text id="moellerpm2026110315" variant="moellerpm20010502508">
+<text id="moellerpm20010502508" aliases="moellerpm2026110315">
 <head>
   <suptitle>To Studenterdigte</suptitle>
   <title><num>II.</num>Parodi</title>
   <firstline>Der var en Tid, da Jens var meget større</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true">Se Jens Baggesens <xref poem="baggesen2001082701" />.</note>
+  </notes>
   <source pages="36-37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1611,10 +1673,13 @@ Til Graven dækker mine brændte Vinger.
 </body>
 </text>
 
-<text id="moellerpm2026110317" variant="moellerpm20010502503">
+<text id="moellerpm20010502503" aliases="moellerpm2026110317">
 <head>
   <title>Den Enbenede</title>
   <firstline>Fy, skammer jer dog, I uartige Drenge</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="44-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1780,10 +1845,13 @@ Vi ville da sove sammen i Ro,
 </body>
 </text>
 
-<text id="moellerpm2026110318" variant="moellerpm20010502509">
+<text id="moellerpm20010502509" aliases="moellerpm2026110318">
 <head>
   <title>Romance</title>
   <firstline>Da Vaaren med Blomster og Fugle kom</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="48-51"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2663,10 +2731,13 @@ Og skænke dig et Smil til Fosterløn.
 </head>
 <content>
 
-<text id="moellerpm2026110320" variant="moellerpm20010502501">
+<text id="moellerpm20010502501" aliases="moellerpm2026110320">
 <head>
   <title>Af Sted!</title>
   <firstline>Farvel, min velsignede Fødeby</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="72-73"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2723,11 +2794,12 @@ Snart vil flyver af Sted.
 </body>
 </text>
 
-<text id="moellerpm2026110321" variant="moeller1999041501">
+<text id="moeller1999041501" aliases="moellerpm2026110321">
 <head>
   <title>Sonet</title>
   <firstline>I Løvens Fødeland en Jomfru pranger</firstline>
   <source pages="73-74"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2897,19 +2969,24 @@ Den lyder alene sit eget Sind.
 </body>
 </text>
 
-<text id="moellerpm2026110323">
+<section id="moellerpm2026110323" level="2">
 <head>
   <title>Scener i Rosenborg Have</title>
+</head>
+<content>
+
+<text id="moellerpm2001082901">
+<head>
+  <title><num>1.</num>En gammel Pedant</title>
   <firstline>Langs hen med Væggene paa Byens Gade</firstline>
-  <source pages="78-90"/>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="78-79"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<nonum><center>1.</center></nonum>
-
-<nonum><center><i>En gammel Pedant.</i></center></nonum>
-
 Langs hen med Væggene paa Byens Gade
 Jeg som en Hønsetyv mig listed om;
 Her leger jeg nu Skjul iblandt de glade,
@@ -2964,11 +3041,22 @@ Dog, frejdigt Mod! den kække Lykken frister.
 Jeg vover mig fra denne mørke Krog,
 Og ved min Stok mig ganske langsomt lister
 I Gangen mellem dette lange Tog.
+</poetry>
+</body>
+</text>
 
-<nonum><center>2.</center></nonum>
-
-<nonum><center><i>En Tigger.</i></center></nonum>
-
+<text id="moellerpm2001082902">
+<head>
+  <title><num>2.</num>En Tigger</title>
+  <firstline>For mig maa nu Skildvagten blive sort</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="79-81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 For mig maa nu Skildvagten blive sort,
 Saa slap jeg dog gennem Havens Port.
 Naar han efter Trappetøsene kiger,
@@ -3012,7 +3100,7 @@ Men det er da endelig det bedste,
 At deres Kvide faar aldrig Ende,
 Naar de i Helvedes Luer brænde.
 Naar saa jeg Stakkel engang er død
-Og kommet vel i Abrahams Skød,
+Og kommet vel i Abrahams Skød<note editorial="true">Cf. <xref bible="bibellukas16,22"/>.</note>,
 Saa maa de kalde mig for en Slyngel,
 Hvis jeg skal læske dem og der Yngel.
 Her gaar nu og den arbejdende Klasse;
@@ -3024,11 +3112,23 @@ Gud ved, jeg gaar her ej for Behag;
 Men det er jo engang min Bestilling
 At gaa og bede Folk om en Skilling;
 Enhver bør drive sin Næringsvej.
+</poetry>
+</body>
+</text>
 
-<nonum><center>3.</center></nonum>
-
-<nonum><center><i>En Moder med sit Barn, paa en Bænk.</i></center></nonum>
-
+<text id="moellerpm2001082903">
+<head>
+  <title><num>3.</num>En Moder med sit Barn, paa en Bænk</title>
+  <firstline>Sov ind, mit søde Nusseben!</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="81-82"/>
+  <keywords>balladestrofe</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Sov ind, mit søde Nusseben!
 Stil dine Pusselanker.
 I Drømme vil Guds Engel ren
@@ -3068,11 +3168,23 @@ Sov sødt, min eneste, min Søn!
 Naar Søvnen dig forlader,
 Jeg faar et Smil til Vaageløn.
 Saa gaa vi hjem til Fader.
+</poetry>
+</body>
+</text>
 
-<nonum><center>4.</center></nonum>
-
-<nonum><center><i>En Rekonvalescent.</i></center></nonum>
-
+<text id="moellerpm2001082904">
+<head>
+  <title><num>4.</num>En Rekonvalescent</title>
+  <firstline>Jeg tvende Somre laa paa Puden</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="82-84"/>
+  <keywords>balladestrofe</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg tvende Somre laa paa Puden
 Og legte med min Klokkestræng,
 Med lange Klæder ned for Ruden
@@ -3122,11 +3234,22 @@ Ja, Livet blusser, Livet daaner,
 Snart er man Ørn, snart er man Kryb,
 Alt som os mer og mindre laaner
 Hint Livets rige Kildedyb.
+</poetry>
+</body>
+</text>
 
-<nonum><center>5.</center></nonum>
-
-<nonum><center><i>Mads og Mikkel.</i></center></nonum>
-
+<text id="moellerpm2001082905">
+<head>
+  <title><num>5.</num>Mads og Mikkel</title>
+  <firstline>Mads! jeg tror bestemt, du dratter</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="84-85"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><w>Mikkel.</w></center></nonum>
 Mads! jeg tror bestemt, du dratter
 Ned fra denne spinkle Gren.
@@ -3158,11 +3281,22 @@ Skadeæg — du er saa bange!
 Tror du da, jeg er en Tyv?
 Kan du sige mig, hvor mange,
 Skal du faa dem alle syv.
+</poetry>
+</body>
+</text>
 
-<nonum><center>6.</center></nonum>
-
-<nonum><center><i>Hans og Trine.</i></center></nonum>
-
+<text id="moellerpm2001082906">
+<head>
+  <title><num>6.</num>Hans og Trine</title>
+  <firstline>Skønne Sol for alle Sole!</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
+  <source pages="85-90"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><w>Hans.</w></center></nonum>
 Skønne Sol for alle Sole!
 Lille Trine! søde Glut!
@@ -3321,6 +3455,9 @@ Og læste skønne Bøger fra Stadthagen.
 </poetry>
 </body>
 </text>
+
+</content>
+</section>
 
 <text id="moellerpm2026110324" variant="moellerpm2003021402">
 <head>
@@ -3534,10 +3671,13 @@ Og Linden for Dør med sit kulsorte Ris?
 </body>
 </text>
 
-<text id="moellerpm2026110325" variant="moellerpm2001082907">
+<text id="moellerpm2001082907" aliases="moellerpm2026110325">
 <head>
   <title>Kunstneren mellem Oprørerne</title>
   <firstline>Der staar en brunlig Bygning</firstline>
+  <notes>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
+  </notes>
   <source pages="96-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
