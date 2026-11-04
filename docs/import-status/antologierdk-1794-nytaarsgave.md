@@ -43,6 +43,43 @@ originaltekster er registreret. Ukendte signaturer er bevaret uden gættet
 forfatteridentifikation. Hans Gram Bechmann er oprettet med kildebaserede
 metadata, DBL1-biografi og et bibliografisk blankværk for *Evigheden* (1792).
 
+## Supplerende originaltekster, 4. november 2026
+
+De fem manglende originalrelationer er afklaret tekstligt og indsat:
+
+| Oversættelse | Original og valgt udgave | Kontrol |
+| --- | --- | --- |
+| `haste2026110310` | Hölty, »Adelstan und Röschen«, *Gedichte* (1783), s. 1–7, `holty2026110401` | TextGrids transskription af 1783-udgaven; 16 × 8 vers. De to danske indledningsstrofer er tilegnelsen til Buchholm. |
+| `riber2026110302` | Voß, »Luise«, *Musen Almanach für 1784*, s. 115–154, `voss2026110401` | Alle 40 tryksider læst mod BSB-faksimilen; 470 heksametre, to trykte fodnoter og alle sideskift. |
+| `bruunmc2026110302` | F. L. Stolberg, »Romanze«, *Gedichte der Brüder Christian und Friedrich Leopold Grafen zu Stolberg* (1779), s. 64–68, `stolbergf2026110401` | TextGrids transskription af 1779-udgaven; 13 × 5 vers. |
+| `anonym1700dk2026110311` | Lidner, »Det lyckliga Bytet«, *Nyare arbeten* (1793), s. 20, `lidner2026110401` | Hele digtet læst mod 1793-faksimilen; 16 vers. |
+| `anonym1700dk2026110312` | Miller, »Die Zufriedenheit«, *Gedichte* (1783), s. 389–391, `miller2026110401` | Alle tre tryksider læst mod BSB-faksimilen; seks strofer à seks vers. Den danske gendigtning følger strofe 1, 2, 4 og 6. |
+
+Identifikationen af Millers digt bygger især på forbindelsen mellem lærkens
+sang og arbejdet, nattergalens sang og hvilen, den utilfredse rige og den
+afsluttende tak til Gud. Voß' første tekstform er valgt frem for den reviderede
+1795-udgave. De fire nyoprettede delværker er `incomplete`; Hölty-værket var
+allerede en delvis indførelse. De nye faksimiletransskriptioner har én
+producentkorrektur; der er ikke udført en uafhængig anden korrektur af dem.
+Hölty og Stolberg har alene kvalitetsflagene `kilde,side`.
+
+`haste2026110320` er desuden identificeret som en omarbejdelse af
+»Troskabsprøven« (DgF 252). Det svarer til Hastes egen henvisning til Syvs
+fjerde del, nr. LXXX. Sammenlign Anna Munks håndskrift, nr. 26, i
+[KU's udgave af den ældste viseoverlevering](https://cst.dk/dighumlab/duds/DFK/Dorthe/html/MUNK26.htm).
+
+Gotters »Die Tageszeiten der Seele« (`gotter2025081401`) har fået fuld kilde
+til *Gedichte*, bd. 1, Gotha: Carl Wilhelm Ettinger, 1787, s. 39, og et
+[tilgængeligt faksimilelink](https://archive.org/details/gedichte12gott/page/39/mode/1up).
+De 15 vers er genkontrolleret; »Drauf« og »bey« følger denne udgave.
+Bruuns »Vel er det lkke« er rettet til »Vel er det ikke«.
+
+Variantkontrollen giver ingen kandidater for de fem indsatte originaler.
+Helværksanalysen bekræfter Höltys, Stolbergs og Millers strofeomfang uden
+strukturkandidater; Voß er sammenhængende heksametre med dialogindryk.
+Det opdaterede JSONL-korpus er afstemt mod alle 73 tekstønsker uden match
+eller valideringsfejl.
+
 ## Udestående: titelbladsbillede
 
 `prepare-kalliope-titlepage` finder titelbladets papirkant i både farve- og
@@ -64,7 +101,7 @@ repositoryet i `/private/tmp/kalliope-2015/`; de er ikke offentlige aktiver.
 
 ## Afsluttede kontroller
 
-- `make test`: 139 testsuiter og 2.423 tests bestået; 9 tests sprunget over.
+- `make test`: 139 testsuiter og 2.424 tests bestået; 9 tests sprunget over.
 - Målrettet sideskiftstest: alle 23 tests bestået.
 - Semantisk sidekontrol: 203 tekstsideposter, ingen afvigelser.
 - Alle 216 aktuelle strukturkandidater og 1.894 historiske OCR-kandidater
@@ -72,6 +109,6 @@ repositoryet i `/private/tmp/kalliope-2015/`; de er ikke offentlige aktiver.
 - XML-kontrol, kvalitetskontrol og afgrænset repository-OCR-rapport bestået.
 - Variantkontrol: ingen uafklarede kandidater. Tekstønskeregister: ingen match
   eller valideringsfejl.
-- Static-build gennemført; sidste kørsel sprang Elasticsearch over.
+- Static-build gennemført, inklusive korpuseksport og Elasticsearch-opdatering.
 - Faksimilekontrol: 634 faksimiler og 1.268 genererede og synkroniserede
   kontrolbilleder bestået.
