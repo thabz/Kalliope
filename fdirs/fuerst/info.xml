@@ -8,10 +8,24 @@
   <period>
     <born>
       <date>1779</date>
+      <place>København</place>
     </born>
     <dead>
       <date>1857-05-11</date>
+      <place>Wien</place>
     </dead>
   </period>
   <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <!-- Identitet, navneformer og steder kontrolleret mod GND 100130488
+       (https://lobid.org/gnd/100130488) og Thorvaldsens Museums arkiv
+       (https://arkivet.thorvaldsensmuseum.dk/people/fyrst-nicolay).
+       Erslews omtrentlige fødselsår 1790 i 1843-opslaget erstatter ikke
+       1779, der også bekræftes af disse kilder. -->
+  <identifiers>
+    <wikidata>Q92345456</wikidata>
+    <wikipedia-de>Nikolai_Nathan_Fürst</wikipedia-de>
+    <viaf>49564412</viaf>
+    <gnd>100130488</gnd>
+    <danskforfatterleksikon-dk>FNNFurst</danskforfatterleksikon-dk>
+  </identifiers>
 </person>

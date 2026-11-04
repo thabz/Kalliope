@@ -6,12 +6,17 @@
   </name>
   <period>
     <born>
-      <date>1772</date>
+      <date>1772-09-02</date>
+      <place>Lolland</place>
     </born>
     <dead>
-      <date>1830</date>
+      <date>1830-06-01</date>
+      <place>København</place>
     </dead>
   </period>
-  <literary-periods>dk-oplysningstid</literary-periods>
-  <!-- Livsdata: https://arkivet.thorvaldsensmuseum.dk/personer/lundbye-henrik-vilhelm -->
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
+  <!-- Navn, datoer og steder: E. Gigas, DBL1, bindX(1896), s456,
+       https://runeberg.org/dbl/10/0458.html. Identiteten som konsulatssekretær
+       og digter bekræftes af Frigge1813, sIV/251–264, og
+       https://arkivet.thorvaldsensmuseum.dk/personer/lundbye-henrik-vilhelm. -->
 </person>

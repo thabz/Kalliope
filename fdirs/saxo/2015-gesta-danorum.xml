@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="2015-gesta-danorum" author="saxo" status="incomplete" type="prose">
+<workhead>
+  <title>Gesta Danorum</title>
+  <subtitle>The History of the Danes</subtitle>
+  <year>2015</year>
+  <notes>
+    <note editorial="true">Kritisk latinsk tekst ved Karsten Friis-Jensen med engelsk oversættelse ved Peter Fisher. Oxford Medieval Texts, bind I–II. Bind I indeholder fortale og bog I–X, bind II bog XI–XVI.</note>
+  </notes>
+  <source href="https://doi.org/10.1093/actrade/9780198205234.book.1">
+    <author id="saxo">Saxo Grammaticus</author>
+    <editor type="editor">Karsten Friis-Jensen</editor>
+    <translator>Peter Fisher</translator>
+    <title>Gesta Danorum: The History of the Danes</title>
+    <edition>First edition</edition>
+    <volume>I–II</volume>
+    <place>Oxford</place>
+    <publisher>Clarendon Press</publisher>
+    <year>2015</year>
+  </source>
+</workhead>
+<workbody>
+<subwork ref="2015-gesta-danorum-1"/>
+<subwork ref="2015-gesta-danorum-2"/>
+</workbody>
+</kalliopework>
