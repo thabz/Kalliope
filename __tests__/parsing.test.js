@@ -1,12 +1,43 @@
 import { DOMParser } from '@xmldom/xmldom';
+jest.mock('../tools/build-static/image.js', () => ({
+  imageSizeSync: jest.fn(async () => ({ width: 100, height: 80 })),
+}));
 import {
   countHeadingFootnotes,
   effectiveTextTitles,
   extractSubtitles,
   extractTitle,
+  get_picture,
   stripTitleNotes,
   titleText,
 } from '../tools/build-static/parsing.js';
+
+describe('artwork references', () => {
+  const artist = { id: 'roed', name: { firstname: 'Jørgen', lastname: 'Roed' } };
+  const collected = {
+    poets: new Map([[artist.id, artist]]),
+    museums: new Map(),
+    artwork: new Map([['roed/kingo', {
+      artistId: artist.id,
+      src: '/images/roed/kingo.jpg',
+      year: '1869',
+      content_html: [['Thomas Kingo']],
+    }]]),
+  };
+
+  it.each([
+    ['<picture artwork="roed/kingo" primary="true"/>', '1869'],
+    ['<picture artwork="roed/kingo" primary="true" year="1870"/>', '1870'],
+  ])('preserves the artist and inherits the year unless overridden (%s)', async (xml, year) => {
+    const node = new DOMParser().parseFromString(xml, 'text/xml').documentElement;
+    const picture = await get_picture(node, '/images/kingo', collected, message => {
+      throw new Error(message);
+    });
+    expect(picture).toMatchObject({
+      artist, year, primary: true, src: '/images/roed/kingo.jpg',
+    });
+  });
+});
 
 describe('titeludtrækning', () => {
   it('fjerner et tomt nummerfelt fra en indholdsfortegnelsestitel', () => {
