@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schreiber" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Aloys Wilhelm</firstname>
+    <lastname>Schreiber</lastname>
+    <alternative>Alois Wilhelm Schreiber</alternative>
+  </name>
+  <!-- Livsdata: Otto Biehler, Aloys Schreiber 1761–1841. Sein Leben und seine Werke, ZGORh 94 (1942), s. 598–675; https://regionalia.blb-karlsruhe.de/files/27299/BLB_Biehler_Aloys_Schreiber.pdf. Fødselsåret 1761 er dokumenteret ved kirkebogen; ældre opslagsværker har 1763. -->
+  <period>
+    <born>
+      <date>1761-10-12</date>
+      <place>Bühl</place>
+    </born>
+    <dead>
+      <date>1841-10-21</date>
+      <place>Oos</place>
+    </dead>
+  </period>
+  <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q119183</wikidata>
+    <viaf>51954558</viaf>
+    <gnd>100400159</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-03">
+    <checked-source id="salmonsen2">Bind 21, alfabetisk register og opslagene omkring Schreiber på s. 61 undersøgt; intet personopslag om Aloys eller Alois Schreiber.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind 26, alfabetisk register undersøgt; intet opslag om forfatteren.</checked-source>
+    <checked-source id="salmonsen4">Register og de relevante sider omkring Schreiber i Runebergs skanning, billedsider 1475–1479, undersøgt; intet personopslag om forfatteren.</checked-source>
+    <note>Tysk forfatter; DBL og de danske forfatterleksika er ikke relevante biografikilder. Ingen biografi fundet i de foretrukne Salmonsen-udgaver.</note>
+  </biography-status>
+</person>

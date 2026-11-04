@@ -16,6 +16,16 @@ datering, teknik, fysiske mål, kilde, museum, objid/invnr og understøttede ide
 Bevar eksisterende gode portrætter. Genbrug `artwork`-/`portrait`-referencer,
 når billedet allerede er registreret; duplikér ikke deres metadata.
 
+Slå den dokumenterede kunstner eller fotograf op i korpussets
+`public/api/v1/poets.jsonl.gz` efter `docs/corpus-dataset.md`, før portrættet
+registreres. Kontrollér også navnevarianter; et navn alene sikrer ikke identiteten.
+Ved et sikkert match bruges det eksisterende person-id: registrér billedet i
+kunstnerens `artwork.xml`, hvis det ikke allerede findes, og brug en
+`artwork="kunstner-id/billed-id"`-reference i den portrætteredes `portraits.xml`.
+Dermed bliver kunstnernavnet automatisk klikbart; gentag det ikke som almindelig
+tekst i billedteksten. Dokumentér kort, om kunstneren blev fundet i korpusset.
+Uden et sikkert match bevares kildens kunstnernavn som tekst.
+
 Gem billeder under `public/images/<id>/`; `portraits.xml` bruger lokale filnavne.
 Brug ImageMagick til dokumentarisk beskæring og billedbehandling. Bevar motivet;
 generér ikke et erstatningsportræt. Lav en separat kvadratisk beskæring, som
