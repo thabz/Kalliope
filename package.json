@@ -26,6 +26,7 @@
     "new-text-id": "node tools/new-text-id.js",
     "find-variant-candidates": "node tools/find-variant-candidates.js",
     "poetic-form": "node tools/poetic-form/poetic-form.js",
+    "validate-new-picture-metadata": "node tools/validate-new-picture-metadata.js",
     "validate-new-text-ids": "node tools/validate-new-text-ids.js",
     "validate-facsimile-completions": "node tools/validate-facsimile-completions.js",
     "report-ocr-candidates": "DISABLED_TESTS=\"repeated-adjacent-word\" node tools/report-ocr-candidates.js",

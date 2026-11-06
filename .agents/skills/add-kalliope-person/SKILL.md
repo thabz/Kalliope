@@ -40,3 +40,15 @@ korpustesten. Gennemgå diff, kilder, identitet og billedresultater.
 Aflever selvstændige personopgaver som PR med kilder, faktisk udførte kontroller
 og konkrete udeståender. Ved værkimport indgår personarbejdet i samme PR.
 Følg `AGENTS.md` og sessionens autorisation for Git-handlinger og CI.
+
+## Metadatakontrol af nye billeder
+
+Ved tilføjelse af kunst, portrætter eller kunstneriske illustrationer: gennemfør
+kildekontrollen efter `docs/style-guide.md`, og sæt derefter
+`<!-- metadata checked: YYYY-MM-DD -->` i den direkte billedregistrering.
+Referencer og separate kvadratiske beskæringer kræver ikke egen markering.
+Titelbladsscanninger (`type="titlepage"`) og nodegengivelser (`type="score"`)
+er undtaget. Markeringen må ikke genereres uden gennemgangen.
+Ved aflevering kontrolleres nye billedregistreringer med
+`npm run validate-new-picture-metadata -- BASE-REF HEAD`, og den faktisk udførte
+metadatagennemgang af nye kunstneriske billeder angives i PR-checklisten.

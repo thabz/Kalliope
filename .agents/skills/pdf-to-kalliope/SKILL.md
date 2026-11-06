@@ -1896,3 +1896,15 @@ For a complete import, all applicable items below must be true:
 - [ ] The user reviewed the completed change before commit and push.
 - [ ] After approval, the change was committed, pushed and submitted as a
       complete GitHub pull request.
+
+## Metadatakontrol af nye billeder
+
+Ved tilføjelse af kunst, portrætter eller kunstneriske illustrationer: gennemfør
+kildekontrollen efter `docs/style-guide.md`, og sæt derefter
+`<!-- metadata checked: YYYY-MM-DD -->` i den direkte billedregistrering.
+Referencer og separate kvadratiske beskæringer kræver ikke egen markering.
+Titelbladsscanninger (`type="titlepage"`) og nodegengivelser (`type="score"`)
+er undtaget. Markeringen må ikke genereres uden gennemgangen.
+Ved aflevering kontrolleres nye billedregistreringer med
+`npm run validate-new-picture-metadata -- BASE-REF HEAD`, og den faktisk udførte
+metadatagennemgang af nye kunstneriske billeder angives i PR-checklisten.
