@@ -115,17 +115,31 @@ er derfor ikke oprettet som forsidebillede.
 
 ## Kontroller
 
-Efter brugerens ønske om en intern henvisning er Tegnérs *Jätten Finn*
-indsat som `tegner2026110701` i `tegner/andre.xml` fra
-*Sveriges national-litteratur 1500–1900*, bind 8 (Stockholm: Albert Bonniers
-Förlag, 1911), s. 81–85. Alle 132 verslinjer, 22 sekslinjede strofer,
-førstelinjeindryk og kursiveringen af »namn« er læst mod de fem farvescanninger.
-En uafhængig session (`review_jaetten_finn`) har genkontrolleret hele teksten
-og de fire indførte sideskift; sidste genkontrol 6. november 2026 kl. 23:39:44 UTC.
-Der er ingen resterende læsefund. Alle 35 struktur- og geometrikandidater er
-afklaret mod billederne; variantkontrollen fandt ingen kandidater.
+Tegnérs to digte fra `andre.xml` er placeret i den videnskabelige samlede
+udgave, som begyndte i 1964:
+
+- `tegner2019090501`: *Carl XII. På Hans Minnesfest 1818*, bind III
+  (1975), s. 54–55, i `tegner/1975-3.xml`.
+- `tegner2026110701`: *Jätten Finn*, bind V (1990), s. 23–27,
+  i `tegner/1990-5.xml`.
+
+Begge tekster er transskriberet fra de konkrete bind hos Litteraturbanken;
+udgavens ortografi og tegnsætning er kontrolleret mod de syv farvescanninger.
+Alle 56 henholdsvis 132 verslinjer, 7 ottelinjede henholdsvis 22 sekslinjede
+strofer, indryk, sideskift og slutsignaturen »T—r.« er kontrolleret i to
+sessioner. En uafhængig session (`review_jaetten_finn`) har genkontrolleret
+hele teksten; alle tre fund er rettet og verificeret 6. november 2026
+kl. 23:52:28 UTC. Den fysiske ombrydning af »hans ögon förrn månen sig rundat.«
+i *Jätten Finn* er samlet til ét vers efter kildens marginnummerering.
+Der er ingen resterende læsefund; variantkontrollen fandt ingen kandidater.
+
+Teksternes id'er er bevaret, og den nu tomme `andre.xml` er fjernet.
 Noten til *St. Laurentius* lyder: »Tegnérs Jätten Finn baserer sig på samme sagn.«
-Digttitlen bruger `xref` til den nye tekst; der er ingen oversættelsesrelation.
+Digttitlen bruger `xref` til teksten; der er ingen oversættelsesrelation.
+De nye bind er registreret som `incomplete`, da kun de bestilte digte er indsat.
+Titelbladskandidaterne til de to bind blev ikke promoveret, fordi den
+geometriske QA kræver manuel vurdering. Iris bruger fortsat brugerens
+behandlede titelblad som beskrevet ovenfor.
 
 Sideaudit er bestået med 199 poster og ingen afvigelser. Hele facsimilet er
 bygget og synkroniseret; repositoryets facsimilekontrol er bestået. Et fuldt
