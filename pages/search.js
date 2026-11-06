@@ -22,6 +22,14 @@ import ErrorPage from './error.js';
 
 export const totalHitsValue = (hits) => hits.total.value;
 
+export const getDocumentHeight = (document) => Math.max(
+  document.body?.scrollHeight ?? 0,
+  document.body?.offsetHeight ?? 0,
+  document.documentElement?.clientHeight ?? 0,
+  document.documentElement?.scrollHeight ?? 0,
+  document.documentElement?.offsetHeight ?? 0
+);
+
 export const parseKeywordIds = value => {
   if (value == null || value.length === 0) {
     return [];
@@ -47,13 +55,13 @@ export const singleMatchingTextIdResultURL = (lang, query, result) => {
   }
 
   const normalizedQuery = query.trim();
-  const hits = result.hits.hits || [];
+  const hits = result.hits.hits ?? [];
   if (totalHitsValue(result.hits) !== 1 || hits.length !== 1) {
     return null;
   }
 
   const hit = hits[0];
-  const text = hit._source && hit._source.text;
+  const text = hit._source?.text;
   if (
     hit._source == null ||
     hit._source.result_type !== 'text' ||
@@ -101,7 +109,7 @@ const renderHighlightFragment = (line, keyPrefix = '') => {
           acc.highlight = false;
         } else if (part.length > 0) {
           acc.parts.push(
-            acc.highlight ? (
+            acc.highlight === true ? (
               <em key={`${keyPrefix}em-${acc.parts.length}`}>{part}</em>
             ) : (
               part
@@ -166,15 +174,16 @@ export const RenderedHits = ({ hits }) => {
         );
       } else if (hit._source.result_type === 'work') {
         const workURL = Links.workURL(lang, work.poet_id ?? poet.id, work.id);
+        const workTitleHighlight = highlight?.['work.title']?.[0];
         const highlightedWorkTitle =
-          highlight && highlight['work.title']
-            ? renderHighlightFragment(highlight['work.title'][0], hit._id)
+          workTitleHighlight != null
+            ? renderHighlightFragment(workTitleHighlight, hit._id)
             : null;
         item = (
           <div>
             <div className="title">
               <Link href={workURL}>
-                {highlightedWorkTitle || <WorkName work={work} lang={lang} />}
+                {highlightedWorkTitle ?? <WorkName work={work} lang={lang} />}
               </Link>
             </div>
             <div className="poet-and-work">
@@ -191,27 +200,23 @@ export const RenderedHits = ({ hits }) => {
         );
       } else {
         const textURL = Links.textURL(lang, text.id);
+        const textTitleHighlight = highlight?.['text.title']?.[0];
         const highlightedTextTitle =
-          highlight && highlight['text.title']
-            ? renderHighlightFragment(highlight['text.title'][0], hit._id)
+          textTitleHighlight != null
+            ? renderHighlightFragment(textTitleHighlight, hit._id)
             : null;
-        let renderedHighlight = null;
-        if (highlight && highlight['text.content_html']) {
-          // The query is highlighted in each line using <em> by Elasticsearch
-          const lines = highlight['text.content_html'];
-          renderedHighlight = lines.map((line, i) => {
-            return (
-              <div key={i}>
-                {renderHighlightFragment(line, `${hit._id}-${i}`)}
-              </div>
-            );
-          });
-        }
+        // The query is highlighted in each line using <em> by Elasticsearch
+        const lines = highlight?.['text.content_html'] ?? [];
+        const renderedHighlight = lines.map((line, i) => (
+          <div key={i}>
+            {renderHighlightFragment(line, `${hit._id}-${i}`)}
+          </div>
+        ));
         item = (
           <div>
             <div className="title">
               <Link href={textURL}>
-                {highlightedTextTitle || <TextName text={text} />}
+                {highlightedTextTitle ?? <TextName text={text} />}
               </Link>
             </div>
             <div className="hightlights">{renderedHighlight}</div>
@@ -369,7 +374,7 @@ const SearchPage = (props) => {
 
   const fetchMoreItems = async () => {
     if (
-      isFetchingMore ||
+      isFetchingMore === true ||
       totalHits == null ||
       hits.length >= totalHits
     ) {
@@ -399,17 +404,8 @@ const SearchPage = (props) => {
 
   const scrollListener = () => {
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      const body = document.body || {};
-      const html = document.documentElement || {};
-
       // See https://stackoverflow.com/a/1147768/1514022
-      const documentHeight = Math.max(
-        body.scrollHeight || 0,
-        body.offsetHeight || 0,
-        html.clientHeight || 0,
-        html.scrollHeight || 0,
-        html.offsetHeight || 0
-      );
+      const documentHeight = getDocumentHeight(document);
       if (window.pageYOffset + window.innerHeight > documentHeight - 600) {
         fetchMoreItems();
       }
@@ -475,7 +471,7 @@ const SearchPage = (props) => {
     return null;
   }
 
-  const henterFlere = isFetchingMore ? (
+  const henterFlere = isFetchingMore === true ? (
     <div style={{ marginBottom: '500px' }}>Henter flere...</div>
   ) : null;
 
