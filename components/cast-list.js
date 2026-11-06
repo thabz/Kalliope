@@ -23,7 +23,7 @@ export const CastList = ({ node, renderNode }) => {
         }
         .cast-group--braced {
           display: grid;
-          grid-template-columns: minmax(0, max-content) 1.2em minmax(0, 1fr);
+          grid-template-columns: minmax(0, max-content) 0.9em minmax(0, 1fr);
           column-gap: 0.6em;
           align-items: center;
           width: fit-content;
@@ -37,14 +37,19 @@ export const CastList = ({ node, renderNode }) => {
           position: relative;
           min-height: 1.5em;
         }
-        .cast-group__brace svg { position: absolute; width: 100%; height: 100%; inset: 0; }
+        .cast-group__brace svg {
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 4px);
+          inset: 2px 0;
+        }
         .cast-group__description { grid-column: 3; grid-row: 1; min-width: 0; }
         .cast-group__head { grid-column: 1 / -1; }
         .cast-setting { margin-block: 1em; }
         .cast-setting--center { text-align: center; }
         .cast-setting p { margin-block: 0.5em; }
         @media (max-width: 480px) {
-          .cast-group--braced { grid-template-columns: minmax(0, 1fr) 0.8em minmax(0, 1fr); column-gap: 0.3em; }
+          .cast-group--braced { grid-template-columns: minmax(0, 1fr) 0.65em minmax(0, 1fr); column-gap: 0.3em; }
         }
         @media print {
           .cast-group--braced { break-inside: avoid; }
@@ -102,8 +107,8 @@ export const CastGroup = ({ node, renderNode }) => {
     })}
     <div className="cast-group__brace" style={{ gridRow: contentRows }} aria-hidden="true">
       <svg viewBox="0 0 24 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M 2 1 C 14 1 14 4 14 14 L 14 39 C 14 47 18 48 23 50 C 18 52 14 53 14 61 L 14 86 C 14 96 14 99 2 99"
-          fill="none" stroke="currentColor" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+        <path d="M 6 1 C 12 4 15.5 6 15 16 C 14 25 12 34 15 41 C 16.5 46 18 49 20 50 C 18 51 16.5 54 15 59 C 12 66 14 75 15 84 C 15.5 94 12 96 6 99 C 12 96 13.5 94 13 84 C 12 75 10 66 13 59 C 14.5 54 17 51 20 50 C 17 49 14.5 46 13 41 C 10 34 12 25 13 16 C 13.5 6 12 4 6 1 Z"
+          fill="currentColor" stroke="currentColor" strokeWidth="0.75" vectorEffect="non-scaling-stroke" />
       </svg>
     </div>
   </div>;
