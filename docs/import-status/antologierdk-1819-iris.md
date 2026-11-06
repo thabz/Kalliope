@@ -132,6 +132,8 @@ hele teksten; alle tre fund er rettet og verificeret 6. november 2026
 kl. 23:52:28 UTC. Den fysiske ombrydning af »hans ögon förrn månen sig rundat.«
 i *Jätten Finn* er samlet til ét vers efter kildens marginnummerering.
 Der er ingen resterende læsefund; variantkontrollen fandt ingen kandidater.
+Kildens form »DomkyrkoRådet« er genkontrolleret og har en afgrænset
+`internal-uppercase`-undtagelse på `tegner2026110701`.
 
 Teksternes id'er er bevaret, og den nu tomme `andre.xml` er fjernet.
 Noten til *St. Laurentius* lyder: »Tegnérs Jätten Finn baserer sig på samme sagn.«
