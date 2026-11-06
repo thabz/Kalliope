@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hagerup" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Mathias</firstname>
+    <lastname>Hagerup</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1765</date>
+      <place>Bjørnør</place>
+    </born>
+    <dead>
+      <date>1822-11-10</date>
+      <place>Christiania</place>
+    </dead>
+    <!-- DBL1 VI, 482 angiver født 1765. Senere personalstat angiver dåb 6.9.1767; fødselsåret er ikke endeligt afklaret. -->
+  </period>
+</person>
