@@ -8,6 +8,7 @@ const git = (args, options = {}) => execFileSync('git', args, {
 });
 
 const imageRoot = filename => {
+  if (filename === 'content/events.xml' || /^fdirs\/[^/]+\/events\.xml$/.test(filename)) return '';
   if (filename.startsWith('fdirs/')) return `/images/${filename.split('/')[1]}`;
   if (filename.startsWith('content/keywords/')) return '/images/keywords';
   if (filename.startsWith('content/about/')) return '/images/about';
@@ -47,8 +48,8 @@ export const pictureRegistrations = (xml, filename) => {
     throw new Error(`${filename}: ${error.message}`);
   }
   return Array.from(document.getElementsByTagName('picture')).flatMap((picture, index) => {
-    if (['artwork', 'portrait', 'ref'].some(attr => picture.hasAttribute(attr))) return [];
     const artworkFile = path.posix.basename(filename) === 'artwork.xml';
+    // Like the builders, prefer a direct source over any reference attributes.
     const src = artworkFile
       ? `${filename === 'content/artwork.xml' ? '/images/kunst' : imageRoot(filename)}/${picture.getAttribute('id')}.jpg`
       : picture.getAttribute('src');

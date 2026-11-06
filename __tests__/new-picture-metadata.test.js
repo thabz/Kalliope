@@ -49,6 +49,26 @@ describe('new picture metadata', () => {
     expect(check('<picture src="cover.jpg" type="frontpage"/>').errors).toHaveLength(1);
   });
 
+  it.each(['artwork', 'portrait', 'ref'])('checks a direct src even when %s is also present', attr => {
+    const xml = `<picture src="new.jpg" ${attr}="test/old"/>`;
+    const result = check(xml);
+    expect(result.newCount).toBe(1);
+    expect(result.errors).toHaveLength(1);
+    expect(result.errors[0]).toContain('new.jpg');
+    expect(check(`<picture src="new.jpg" ${attr}="test/old">${mark}</picture>`)).toEqual({ errors: [], newCount: 1 });
+  });
+
+  it.each(['content/events.xml', 'fdirs/test/events.xml'])('resolves %s image paths from the public root', filename => {
+    const base = entries('<picture src="kunst/the-globe.jpg"/>', filename);
+    expect(base[0].asset).toBe('/kunst/the-globe.jpg');
+    const absolute = entries('<picture src="/kunst/the-globe.jpg"/>', filename);
+    expect(newPictureErrors(base, absolute)).toEqual({ errors: [], newCount: 0 });
+    const moved = entries('<picture src="/kunst/the-globe.jpg"/>');
+    expect(newPictureErrors(base, moved)).toEqual({ errors: [], newCount: 0 });
+    const different = entries('<picture src="/images/kunst/the-globe.jpg"/>', filename);
+    expect(newPictureErrors(base, different).errors).toHaveLength(1);
+  });
+
   it('resolves implicit artwork paths and normalizes relative paths', () => {
     expect(entries('<picture id="a"/>', 'content/artwork.xml')[0].asset).toBe('/images/kunst/a.jpg');
     const base = entries('<picture src="./a.jpg"/>', 'fdirs/artist/portraits.xml');
