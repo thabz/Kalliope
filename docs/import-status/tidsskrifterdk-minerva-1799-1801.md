@@ -138,7 +138,8 @@ Dokumenterede væsentlige poetiske udgaver er registreret som bibliografiske bla
 
 Frisk OCR er kun brugt som støtte: Kraken på udvalgte fraktursider og parallelle Tesseract-læsninger med dansk og fraktur. Ordlyd, noter, versforløb, pauser, indryk og typografi er læst direkte mod alle relevante kildebilleder. Helværksanalyserne er kørt uden tekstfilter; alle maskinkandidater er individuelt dispositioneret. Separate reviewregistre, sideinventarer, modeloplysninger og kontrolsnapshots ligger i det lokale arbejdsmateriale.
 
-- `make test`: exitkode 0; 140 testsuiter og 2483 tests bestået, 9 tests sprunget over efter repositoryets normale opsætning.
+- `make test`: exitkode 0; 140 testsuiter og 2494 tests bestået, 9 tests sprunget over efter repositoryets normale opsætning.
+- `npm run check-text-quality -- --min-date=2021-01-01`: bestået uden tekstkvalitetsfejl.
 - `npm run build-static`: bestået. Genereret API, indholdsfortegnelse og lokal HTML-respons er kontrolleret for de nye tekster.
 - Facsimiler og thumbnails: bygget og synkroniseret. `npm run check-facsimiles`: 657 facsimiler / 1314 offentlige billedfiler kontrolleret uden fejl.
 - Titelblade: alle 8 p1-billeder visuelt kontrolleret, og titelbladstransskriptionerne sammenholdt med originalerne.
@@ -149,3 +150,7 @@ Frisk OCR er kun brugt som støtte: Kraken på udvalgte fraktursider og parallel
 Korrekturattesterne er modelkorrektur, ikke menneskelig slutkorrektur. Brugerens afsluttende kontrol af titelblade, redaktionelle valg og de to åbne tekststeder fremgår af PR-checklisten.
 
 De særskilte Git-kontroller har valideret alle 76 nye tekst-id’er samt korrekturattester og kvalitetsflag ved overgang til komplette facsimileværker.
+
+CI-kontrollen af nabogentagelser fandt seks trykte gentagelser i fem tekster: »aldrig aldrig« (bind 59, 290), »al al« (bind 59, 300), »Farver Farver« og »Billed Billed« (bind 60, 213), »alle alle« (bind 62, 302) og »snarlig snarlig« (bind 63, 162). Alle fem sider er genlæst direkte; ordlyden bevares. Hver berørt tekst har en dokumenteret undtagelse alene for `repeated-adjacent-word`.
+
+De nye personer har eksplicitte, traditionsspecifikke litteraturperioder. Jón Þorláksson er henført til islandsk oplysningstid; perioden er tilføjet med kildehenvisninger til Ingi Sigurðssons periodeundersøgelse og Ástráður Eysteinssons analyse af Þorlákssons oversættelser. Den parallelle danske oversættelse i bind 61 har en eksplicit henvisning til samme facsimile, så begge sprog bevarer deres selvstændige sideforløb.

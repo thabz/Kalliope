@@ -12,7 +12,7 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:27:30Z"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_005">1800-10</a>, <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_006">1800-11</a>, <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_007">1800-12</a>. 383 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-10 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_005">↬</a>, 1800-11 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_006">↬</a>, 1800-12 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_007">↬</a>. 383 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
   </notes>
   <pictures>
     <picture src="1800-minerva-62-p1.jpg" type="titlepage" primary="true">
@@ -1028,7 +1028,8 @@ Giør Jorden frugtbar, at jeg dig Europæ Tyr for Ploven
 </head>
 <content>
 
-<text id="rahbek2026110607" author="rahbek">
+<!-- Trykt 302, kanonisk facs323.jpg: »alle alle« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="rahbek2026110607" author="rahbek" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Bruti og Mark Antons Taler til det romerske Folk efter Cæsars Død</title>
   <subtitle>af Shakspeers Sørgespil Julius Cæsar 3 Act 2 Scene.</subtitle>

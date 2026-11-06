@@ -12,7 +12,7 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:26:06Z"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_001">1801-01</a>. 112 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-01 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_001">↬</a>. 112 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
   </notes>
   <pictures>
     <picture src="1801-minerva-63-p1.jpg" type="titlepage" primary="true">
@@ -295,7 +295,8 @@ til vor store Mesters Ære!
 </body>
 </text>
 
-<text id="abrahamson2026110601" author="abrahamson">
+<!-- Trykt 162, facs169.jpg: »snarlig snarlig« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="abrahamson2026110601" author="abrahamson" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Sækular-Sang</title>
   <source pages="159-163" facsimile-pages="167-171"/>

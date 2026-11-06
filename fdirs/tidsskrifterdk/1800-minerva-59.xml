@@ -12,7 +12,7 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:25:47Z"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_001">1800-01</a>, <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_002">1800-03</a>. 231 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-01 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_001">↬</a>, 1800-03 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_002">↬</a>. 231 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
   </notes>
   <pictures>
     <picture src="1800-minerva-59-p1.jpg" type="titlepage" primary="true">
@@ -674,7 +674,8 @@ Paa Dydernes Trappe at stige!
 </head>
 <content>
 
-<text id="oehlenschlaeger2026110601" author="oehlenschlaeger">
+<!-- Trykt 290, facs307.jpg: »aldrig aldrig« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="oehlenschlaeger2026110601" author="oehlenschlaeger" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Rosen og Eenighedsblomsten</title>
   <subtitle>
@@ -1033,7 +1034,8 @@ Brug din Gave at behage
 </body>
 </text>
 
-<text id="storm2026110603" author="storm" ignore-tests="repeated-words">
+<!-- Trykt 300, facs317.jpg: »al al« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="storm2026110603" author="storm" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Lænestolen og Tabouretten</title>
   <firstline>En stor udstoppet Lænestøel</firstline>

@@ -11,7 +11,7 @@
   <errata status="applied" pages="127" facsimile-pages="135"/>
   <errata status="reviewed" pages="256" facsimile-pages="264"/>
   <notes>
-    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_003">1800-04</a>, <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_004">1800-06</a>. 248 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-04 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_003">↬</a>, 1800-06 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_004">↬</a>. 248 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
   </notes>
   <pictures>
     <picture src="1800-minerva-60-p1.jpg" type="titlepage" primary="true">
@@ -44,10 +44,12 @@
     <note>At Forfatteren, som i disse Sange vilde skildre den Ædles og den Viises Lykke, har indført dem talende, er skeet for at giøre Skildringen selv mere livelig og mere indtrykkende.</note>
   </notes>
   <source pages="72-74" facsimile-pages="80-82"/>
-  <epigraph lang="la">Integer vitæ scelerisqve parus,</epigraph>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<epigraph lang="la">
+Integer vitæ scelerisqve parus,
+</epigraph>
 <poetry>
 Med Frihed og Freidighed gaaer
 jeg saa gierne min Vei giennem Livet,
@@ -112,10 +114,12 @@ til det ædlere Bliven jeg møder.
   <title>II</title>
   <firstline>Glæden opblomstrer</firstline>
   <source pages="74-75" facsimile-pages="82-83"/>
-  <epigraph lang="la">Nil admirari.</epigraph>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<epigraph lang="la">
+<w>Nil admirari.</w>
+</epigraph>
 <poetry>
     Glæden opblomstrer
     ikke som Markens Pryd,
@@ -324,7 +328,8 @@ Det Lyn, som kaster Egen ned.
 </head>
 <content>
 
-<text id="rahbek2026110605" author="rahbek" ignore-tests="pagebreak-count">
+<!-- Trykt 213, facs220.jpg: »Farver Farver« og »Billed Billed« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="rahbek2026110605" author="rahbek" ignore-tests="pagebreak-count,repeated-adjacent-word">
 <head>
   <title>Om Smag, Fornuft, og Snilde i Digtekunsten</title>
   <subtitle>(Af Gr. Gyllenborgs Forsøg om Skaldekonsten, fierde Sang).</subtitle>
