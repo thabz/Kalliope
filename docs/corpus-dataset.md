@@ -49,7 +49,11 @@ outputfiler, manglende cache og `--force-reload` udløser et nyt eksportbuild.
 - `/api/{poet_id}/mentions.json`: henvisninger og oversættelser.
 
 I tekst-JSON angiver `blocks[].type` bloktypen: `poetry`, `prose` eller
-`epigraph`. `epigraph` bruges til litterære mottoer.
+`epigraph`. `epigraph` bruges til litterære mottoer. Personlister bevares desuden som
+`front` eller `castList` med TEI-struktur i `lines`. Bulkpostens `full_text`
+udtrækker tekst fra de serialiserede linjetupler, inklusive personer og
+fælles beskrivelser, uden XML-markup eller dekorative klammer.
+`skip-index="true"` udelukker fortsat selvstændige rollelister fra bulkdatasættet.
 
 De eksisterende ressourcer er applikationsendpoints. Kun de felter og relationer,
 der er beskrevet i v1-schemaet og datasættets README, er en stabil

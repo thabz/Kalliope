@@ -209,6 +209,11 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   html = collapseMultilineNotes(html);
+  if (['front', 'castList'].includes(context?.blockType)) {
+    // Structural source line breaks are formatting, not separate text lines.
+    // Collapse notes first so embedded note poetry keeps its verse breaks.
+    html = html.trim().replace(/\r?\n/g, ' ');
+  }
   if (isPoetry) {
     // Marker strofenumre i hovedteksten efter sammenfoldning af noterne.
     html = html

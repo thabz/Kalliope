@@ -6722,33 +6722,45 @@ Midgards Stad!
   <source pages="235"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<w>Olaf Tryggvesøn</w>, Konge i Dublin.<br/>
-<w>Hakon Hlade-Jarl</w>, hin Rige kaldet, Norges Behersker.<br/>
-<w>Erling</w>, hans Søn.<br/>
-<w>Thorer Klake</w>, Kiøbmand.<br/>
-<w>Carlshoved</w><br/>
-<w>Jostein</w> } Olafs Frænder.<br/>
-<w>Einar Tambeskiælver</w>, en ung Bueskytte.<br/>
-<w>Bergthor</w>, Smed, Trøndernes Laugmand.<br/>
-<w>Gudrun</w><br/>
-<w>Astrid</w> } hans Døttre.<br/>
-<w>Orm</w><br/>
-<w>Thorvald</w> } deres Fæstemænd.<br/>
-<w>Thora</w>, Jarlens Kiæreste.<br/>
-<w>Tangbrandt</w>, Præst.<br/>
-<w>Anden</w>, en gammel enøiet Mand.<br/>
-<w>Grib</w>, Thorers Træl.<br/>
-<w>Karker</w><br/>
-<w>Stein</w><br/>
-<w>Leif</w> } Jarlens Trælle.<br/>
-<w>Et Bud.</w><br/>
-<w>Inger</w>, Thoras Pige.<br/>
-<w>Hadding</w>, hendes Svend.<br/>
-<w>Præster, Kæmper, Bønder, Trælle</w>.
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><w>Olaf Tryggvesøn</w></role>, <roleDesc>Konge i Dublin.</roleDesc></castItem>
+<castItem><role><w>Hakon Hlade-Jarl</w></role>, <roleDesc>hin Rige kaldet, Norges Behersker.</roleDesc></castItem>
+<castItem><role><w>Erling</w></role>, <roleDesc>hans Søn.</roleDesc></castItem>
+<castItem><role><w>Thorer Klake</w></role>, <roleDesc>Kiøbmand.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Carlshoved</w></role></castItem>
+<castItem><role><w>Jostein</w></role></castItem>
+<roleDesc>Olafs Frænder.</roleDesc>
+</castGroup>
+<castItem><role><w>Einar Tambeskiælver</w></role>, <roleDesc>en ung Bueskytte.</roleDesc></castItem>
+<castItem><role><w>Bergthor</w></role>, <roleDesc>Smed, Trøndernes Laugmand.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Gudrun</w></role></castItem>
+<castItem><role><w>Astrid</w></role></castItem>
+<roleDesc>hans Døttre.</roleDesc>
+</castGroup>
+<castGroup rend="braced">
+<castItem><role><w>Orm</w></role></castItem>
+<castItem><role><w>Thorvald</w></role></castItem>
+<roleDesc>deres Fæstemænd.</roleDesc>
+</castGroup>
+<castItem><role><w>Thora</w></role>, <roleDesc>Jarlens Kiæreste.</roleDesc></castItem>
+<castItem><role><w>Tangbrandt</w></role>, <roleDesc>Præst.</roleDesc></castItem>
+<castItem><role><w>Anden</w></role>, <roleDesc>en gammel enøiet Mand.</roleDesc></castItem>
+<castItem><role><w>Grib</w></role>, <roleDesc>Thorers Træl.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><w>Karker</w></role></castItem>
+<castItem><role><w>Stein</w></role></castItem>
+<castItem><role><w>Leif</w></role></castItem>
+<roleDesc>Jarlens Trælle.</roleDesc>
+</castGroup>
+<castItem><role><w>Et Bud.</w></role></castItem>
+<castItem><role><w>Inger</w></role>, <roleDesc>Thoras Pige.</roleDesc></castItem>
+<castItem><role><w>Hadding</w></role>, <roleDesc>hendes Svend.</roleDesc></castItem>
+<castItem type="list"><role><w>Præster, Kæmper, Bønder, Trælle</w></role> <roleDesc>.</roleDesc></castItem>
+</castList>
+</front>
 </text>
 
 <text id="oehlenschlaeger2026092915">

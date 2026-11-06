@@ -667,20 +667,24 @@ Gud naade dig! hvis du har følt for tungt, — følt for tungt, at det sang en 
   <source pages="23" facsimile-pages="36"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<i>Skibsrheder Nehls Hauge</i><br/>
-<i>Fru Hauge</i><br/>
-<i>Max</i><br/>
-<i>Jack</i> } <small><i>Deres Sønner</i></small><br/>
-<i>Tonny</i><br/>
-<i>Ninetta, <small>Pige fra italiensk Tyrol</small></i><br/>
-<i>En Læge</i><br/>
-<i>En Impressario</i>
-
-<small><i>(Handlingen foregaar i Nutiden — dels i Nordsjælland, dels i Prag, Wien og Tyrol.)</i></small>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><i>Skibsrheder Nehls Hauge</i></role></castItem>
+<castItem><role><i>Fru Hauge</i></role></castItem>
+<castGroup rend="braced">
+<castItem><role><i>Max</i></role></castItem>
+<castItem><role><i>Jack</i></role></castItem>
+<roleDesc><small><i>Deres Sønner</i></small></roleDesc>
+</castGroup>
+<castItem><role><i>Tonny</i></role></castItem>
+<castItem><role><i>Ninetta,</i></role> <roleDesc><i><small>Pige fra italiensk Tyrol</small></i></roleDesc></castItem>
+<castItem><role><i>En Læge</i></role></castItem>
+<castItem><role><i>En Impressario</i></role></castItem>
+</castList>
+<set>
+<p><small><i>(Handlingen foregaar i Nutiden — dels i Nordsjælland, dels i Prag, Wien og Tyrol.)</i></small></p>
+</set>
+</front>
 </text>
 
 <text id="blicherclausen2026092803" ignore-tests="repeated-adjacent-word">
