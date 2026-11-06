@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museums>
+  <museum id="bakkehuset">
+    <name>Bakkehusmuseet</name>
+    <country>dk</country>
+    <link>https://frederiksbergmuseerne.dk/da/bakkehuset/</link>
+  </museum>
   <museum id="hirschsprungske">
     <name>Den Hirschsprungske Samling</name>
     <sort-name>Hirschsprungske Samling, Den</sort-name>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="porthan" country="un" nationality="fi" lang="sv" type="poet">
+  <name>
+    <firstname>Henrik Gabriel</firstname>
+    <lastname>Porthan</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1739-11-08</date>
+      <place>Viitasaari</place>
+    </born>
+    <dead>
+      <date>1804-03-16</date>
+      <place>Åbo</place>
+    </dead>
+  </period>
+  <literary-periods>sv-fi-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q333651</wikidata>
+    <viaf>36908769</viaf>
+    <gnd>118595865</gnd>
+  </identifiers>
+</person>

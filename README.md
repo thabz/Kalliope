@@ -9,9 +9,12 @@ Brug denne arbejdsgang når du udvikler på appen eller redigerer tekster i
 
 Krav:
 
-- Node.js 20 eller nyere
+- Node.js 22 eller nyere (versionen i `.nvmrc` kan vælges med `nvm install`)
 - Docker, hvis Elasticsearch skal køres lokalt via Compose
 - Make til genvejene omkring Docker Compose
+
+React 19's serverrendering bruger `ArrayBuffer.prototype.detached`, som ikke
+findes i Node.js 20. Lokal udvikling, Docker og CI bruger derfor Node.js 22.
 
 Installer afhængigheder:
 

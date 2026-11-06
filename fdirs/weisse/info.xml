@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="weisse" country="de" lang="de" type="poet">
+  <!-- Livsdata: Salmonsen2, bd. XXIV (1928), s. 663-664, https://runeberg.org/salmonsen/2/24/0675.html. -->
+  <name>
+    <firstname>Christian Felix</firstname>
+    <lastname>Weiße</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1726-01-28</date>
+      <place>Annaberg</place>
+    </born>
+    <dead>
+      <date>1804-12-16</date>
+      <place>Leipzig</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+</person>

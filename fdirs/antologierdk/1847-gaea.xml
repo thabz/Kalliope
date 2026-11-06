@@ -44,7 +44,7 @@
   <firstline>Den lille Dreng i Kurven kiger</firstline>
   <pictures>
     <picture src="1847-gaea-illustration-005.jpg" type="illustration">Billedblad før s. 1 i <i>Gæa</i>, 1847.</picture>
-    <picture artwork="kunst/thorvaldsen-kaerlighedens-aldre-1824"/>
+    <picture artwork="thorvaldsen/1824-kaerlighedens-aldre"/>
   </pictures>
   <source pages="1-2" facsimile-pages="7-8"/>
 
@@ -420,6 +420,7 @@ I Høstens Dage, mod sit bedre Hjem.
     <note editorial="true">Rettelsesarkets første henvisning til side 37 gælder side 33, hvor »Himlen« står på den angivne linje 8 fra oven.</note>
   </notes>
   <source pages="11-47" facsimile-pages="17-53"/>
+  <keywords>mynster</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1142,7 +1143,7 @@ Daß einst der Frühling wird siegen!
   <subtitle>Bøhmisk Folkesang</subtitle>
   <firstline>To Aar kun var Barnet</firstline>
   <notes>
-    <note editorial="true">Bøhmisk folkesang, oversat af P. L. Møller, som angivet i årgangens indholdsfortegnelse. Tjekkisk original: <xref type="translation" poem="anonymcz2026101301"/>. Den danske tekst deler flere afvigelser fra den tjekkiske tekst med den tyske oversættelse <xref type="translation" poem="svoboda2026101301"/>; det benyttede eksemplar er ikke dokumenteret.</note>
+    <note editorial="true">Bøhmisk folkesang, oversat af P. L. Møller, som angivet i årgangens indholdsfortegnelse. Tjekkisk original: <xref type="translation" poem="anonymcz2026101301"/>. Den danske tekst deler flere afvigelser fra den tjekkiske tekst med den tyske oversættelse af Václav Alois Svoboda <xref type="translation" poem="svoboda2026101301"/>.</note>
   </notes>
   <source pages="56-57" facsimile-pages="62-63"/>
 
@@ -4739,7 +4740,7 @@ At du ei Vidne til vor Skam skal være!
 
   <pictures>
     <picture src="1847-gaea-illustration-181.jpg" type="illustration">Billedblad før s. 175 i <i>Gæa</i>, 1847.</picture>
-    <picture artwork="kunst/abildgaard-kodros"/>
+    <picture artwork="abildgaard/kodros"/>
   </pictures>
   <source pages="175-194" facsimile-pages="183-202"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6965,7 +6966,7 @@ Mild og yndig med straalende Blik hans blomstrende Hustru.
   <subtitle>Et bøhmisk Sagn.</subtitle>
   <firstline>Da jeg mine Heste græssed, dyssed mig i Søvn en Vind</firstline>
   <notes>
-    <note editorial="true">Bearbejdelse af den bøhmiske folkesang <xref type="translation" poem="anonymcz2026101302"/>. Den danske tekst svarer også til den tyske oversættelse <xref type="translation" poem="svoboda2026101302"/>, blandt andet i brugen af navnet Lise og i slutningen; det benyttede eksemplar er ikke dokumenteret.</note>
+    <note editorial="true">Bearbejdelse af den bøhmiske folkesang <xref type="translation" poem="anonymcz2026101302"/>. Den danske tekst svarer også til den tyske oversættelse af Václav Alois Svoboda <xref type="translation" poem="svoboda2026101302"/>, blandt andet i brugen af navnet Lise og i slutningen.</note>
   </notes>
   <source pages="297-298" facsimile-pages="305-306"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7383,7 +7384,7 @@ Er firsindstyve Mand ombord.
   <subtitle>Fragment efter Byron</subtitle>
   <firstline>Døren gaaer op, Ansigtet er bekjendt</firstline>
   <notes>
-    <note editorial="true">Oversættelse af <xref type="translation" poem="byron2026101301"/>. Fragmentet forkorter enkelte passager i originalen.</note>
+    <note editorial="true">Oversættelse af Byrons <xref type="translation" poem="byron2026101301"/>. Fragmentet forkorter enkelte passager i originalen.</note>
   </notes>
   <source pages="307-310" facsimile-pages="315-318"/>
 

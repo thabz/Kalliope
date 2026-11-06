@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="vergil" country="un" nationality="it" lang="la" type="poet">
+  <name>
+    <lastname>Vergil</lastname>
+    <fullname>Publius Vergilius Maro</fullname>
+    <alternative>Virgil</alternative>
+  </name>
+  <!-- Livsdata og identitet: https://lex.dk/Vergil -->
+  <period>
+    <born>
+      <date>-0070-10-15</date>
+    </born>
+    <dead>
+      <date>-0019-09-21</date>
+    </dead>
+  </period>
+  <literary-periods>la-romersk-litteratur</literary-periods>
+  <identifiers>
+    <lex-dk>Vergil</lex-dk>
+  </identifiers>
+</person>

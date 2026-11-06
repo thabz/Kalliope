@@ -38,6 +38,21 @@ const ocrLine = (text, top, left = 300) => ({
 });
 
 describe('forberedelse af helværksgeometri', () => {
+  it('keeps diagram rows out of OCR verse alignment and carries their page markers', () => {
+    const withDiagram = xml.replace('Første Verslinje',
+      '<metrik>_ u _\n<pb n="8" facs="012.jpg"/>_ _</metrik>\nFørste Verslinje');
+    const [block] = extractPoetryBlocks(withDiagram);
+    expect(block.lines.map(line => line.text)).toEqual([
+      'Første Verslinje', 'Anden Verslinje', 'Tredje Verslinje', 'Fjerde Verslinje',
+    ]);
+    expect(block.lines.map(line => line.indentation)).toEqual([0, 4, 0, 0]);
+    expect(block.lines.map(line => line.facsimile)).toEqual([
+      '012.jpg', '012.jpg', '012.jpg', '013.jpg',
+    ]);
+    expect(block.equipment.map(line => line.text)).toEqual([
+      '_ u _', '_ _', 'Forfatter.',
+    ]);
+  });
   it('maps explicit note verses separately and carries the main page into the next block', () => {
     const nestedXml = xml.replace('Første Verslinje', `Første<footnote>Note
 <pb n="9" facs="013.jpg"/><poetry>

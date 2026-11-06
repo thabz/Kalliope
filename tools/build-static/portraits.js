@@ -27,12 +27,9 @@ const build_portraits_json = async (poet, collected) => {
         return picture;
       }
     );
-    const primaries = result.filter(p => p.primary);
+    const primaries = result.filter(p => p.primary === true);
     if (primaries.length > 1) {
       onError('har flere primary');
-    }
-    if (primaries.length == 0) {
-      onError('mangler primary');
     }
   }
   return result;

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="stein" country="de" lang="de" type="poet">
+  <!-- Livsdata: Friedrich Brandes, ADB 35 (1893), s. 660, https://www.deutsche-biographie.de/sfz81151.html, sammenholdt med GND 131922807. Talisman-tilskrivningen er dokumenteret i Otto Holzapfels Liedverzeichnis. -->
+  <name>
+    <firstname>Karl</firstname>
+    <lastname>Stein</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-06-23</date>
+      <place>Neubrandenburg</place>
+    </born>
+    <dead>
+      <date>1855-02-12</date>
+      <place>Berlin</place>
+    </dead>
+  </period>
+  <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q55193372</wikidata>
+    <gnd>131922807</gnd>
+    <danskforfatterleksikon-dk>u2843</danskforfatterleksikon-dk>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-03">
+    <checked-source id="salmonsen2">Bind XXII (1927), s. 220–223: Stein-opslagene kontrolleret mod facsimiler; Karl Stein (1773–1855) er ikke medtaget.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI (1930), s. 985: intet opslag om forfatteren.</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsen (1949), sp. 4294–4299: Stein-opslagene omfatter andre personer.</checked-source>
+    <checked-source id="dbl1">Navneregistret til bind XVI har alene andre Stein-personer.</checked-source>
+    <checked-source id="dbl2">Søgning efter “Stein, Karl” i den søgbare udgave af bind XXII gav intet match.</checked-source>
+    <note>Tysk forfatter, kendt i dansk oversættelse. De relevante Salmonsen-opslag er gennemgået visuelt; DBL er undersøgt i registre og søgbar tekst. Intet belæg for et dansk, norsk eller islandsk forfatterskab, som kunne begrunde reservekilderne Erslew og Ehrencron-Müller. ADB dokumenterer identiteten, men indgår ikke blandt de tilladte kilder til biografitekst.</note>
+  </biography-status>
+</person>

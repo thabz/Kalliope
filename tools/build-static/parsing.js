@@ -104,7 +104,7 @@ const get_artwork_picture = async (
     artist,
     lang: artwork.lang,
     src: artwork.src,
-    year,
+    year: year ?? artwork.year,
     clipPath,
     size: await imageSizeSync(publicPathFromSrc(artwork.src)),
     remoteUrl: artwork.remoteUrl,

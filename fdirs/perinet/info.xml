@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="perinet" country="un" nationality="at" lang="de" type="poet">
+  <!-- Livsdata: ÖBL 7 (1978), s. 419-420, https://www.biographien.ac.at/oebl/oebl_P/Perinet_Joachim_1763_1816.xml og NDB 20 (2001), s. 186-187. GND/ADB angiver afvigende 1765; dåbsattesten i Wiens Stadt- und Landesarchiv, Mag. ZG, A2, 1446/1786, gengivet på https://www.mozartdocuments.org/documents/early-1787/, bekræfter 1763. -->
+  <name>
+    <firstname>Joachim</firstname>
+    <lastname>Perinet</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1763-10-20</date>
+      <place>Wien</place>
+    </born>
+    <dead>
+      <date>1816-02-04</date>
+      <place>Wien</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q1250334</wikidata>
+    <viaf>2460414</viaf>
+    <gnd>133328260</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-03">
+    <checked-source id="salmonsen2">Bind XVIII (1924), s. 1093: hele det relevante alfabetiske interval ved Perinet kontrolleret mod facsimilet; intet personopslag.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI (1930), s. 864: intet Perinet-opslag i det visuelt kontrollerede interval.</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsen (1949), sp. 3502–3504: hele siden læst; intet personopslag.</checked-source>
+    <note>Østrigsk forfatter uden dokumenteret dansk livs- eller embedstilknytning. DBL1/2 og reservekilderne Erslew og Ehrencron-Müller er derfor ikke anvendt som biografikilder. ÖBL og NDB dokumenterer identiteten, men indgår ikke blandt de tilladte kilder til biografitekst. Ingen tom biografi er oprettet.</note>
+  </biography-status>
+</person>

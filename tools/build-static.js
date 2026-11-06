@@ -140,6 +140,7 @@ import {
   isAnthologyText,
   resolveAuthorId,
   worksForPoet,
+  textsForWork,
 } from './build-static/anthologies.js';
 import {
   obsoleteSourceWorkKeys,
@@ -279,6 +280,10 @@ const handle_text = async (
     ...(placement.sourceFiles ?? sourceFilesForText(textMeta)),
     ...editionSourceFilesForText(sourceTextId, collected),
     ...referenceSourceFilesForText(sourceTextId, collected),
+    ...(textMeta.type === 'section'
+      ? textsForWork(collected, sourcePoetId, sourceWorkId)
+          .map(item => `fdirs/${item.poetId}/info.xml`)
+      : []),
   ];
   if (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
@@ -287,6 +292,7 @@ const handle_text = async (
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js',
       'tools/libs/helpers.js',
+      'tools/build-static/toc.js', 'components/poetname-helpers.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -527,7 +533,7 @@ const handle_text = async (
       throw `fdirs/${sourcePoetId}/${sourceWorkId}: section ${sourceTextId} mangler title.`;
     }
     const content = getChildByTagName(text, 'content');
-    toc = build_section_toc(content, sourcePoetId);
+    toc = build_section_toc(content, sourcePoetId, collected.poets);
   } else {
     // prose or poem
     blocks = buildTextBlocks(text, collected, { workId: sourceWorkId, textId });
@@ -1266,6 +1272,8 @@ const works_second_pass = async (collected) => {
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
         'tools/build-static/textrefs.js',
+        'tools/build-static/toc.js',
+        'components/poetname-helpers.js',
         'common/source-reference.js',
         `fdirs/${poetId}/info.xml`,
         filename,

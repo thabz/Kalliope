@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="aristoteles" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <lastname>Aristoteles</lastname>
+  </name>
+  <period>
+    <born>
+      <date>-0384</date>
+      <place>Stagiros</place>
+    </born>
+    <dead>
+      <date>-0322</date>
+      <place>Chalkis</place>
+    </dead>
+  </period>
+  <literary-periods>grc-arkaisk-og-klassisk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q868</wikidata>
+    <wikipedia-da>Aristoteles</wikipedia-da>
+    <wikipedia-en>Aristotle</wikipedia-en>
+    <wikipedia-fr>Aristote</wikipedia-fr>
+    <wikipedia-de>Aristoteles</wikipedia-de>
+    <viaf>7524651</viaf>
+    <gnd>118650130</gnd>
+    <lex-dk>Aristoteles</lex-dk>
+  </identifiers>
+</person>

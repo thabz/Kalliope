@@ -97,7 +97,7 @@ describe('editorial note provenance', () => {
       </LangContext.Provider>
     );
     expect(html.match(/data-tooltip="Kalliopes redaktionelle note"/g)).toHaveLength(1);
-    expect(html).toContain('Rettelseslisten');
+    expect(html).toContain(status === 'reviewed' ? 'Rettelseslisten' : 'Teksten er rettet efter');
     expect(html).toContain('Trykt kilde.');
   });
 });

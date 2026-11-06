@@ -1,19 +1,8 @@
-import { appendSourcePages } from '../../common/source-reference.js';
+import { appendSourcePages, removeBibliographyLinks } from '../../common/source-reference.js';
 import { poetName, workLinkName } from './formatting.js';
 import { escapeXml, formatSourceBibliography, resolveSourceReference } from './source.js';
 import { sourceWorkKey } from './work-cache.js';
-import { getElementsByTagNames, parseXMLFragment, safeGetAttr, safeGetInnerXML } from './xml.js';
-
-const removeBibliographyLinks = reference => {
-  const doc = parseXMLFragment(`<source>${reference}</source>`);
-  for (const link of getElementsByTagNames(doc.documentElement, ['a', 'xref'])) {
-    while (link.firstChild != null) {
-      link.parentNode.insertBefore(link.firstChild, link);
-    }
-    link.parentNode.removeChild(link);
-  }
-  return safeGetInnerXML(doc.documentElement);
-};
+import { safeGetAttr } from './xml.js';
 
 // Collect references before the output pass so editions do not depend on build order.
 export const resolveEditionSource = ({ sourceNode, workSources, poets }) => ({

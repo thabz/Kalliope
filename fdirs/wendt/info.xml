@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wendt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johann Christian Wilhelm</firstname>
+    <lastname>Wendt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-09-16</date>
+    </born>
+    <dead>
+      <date>1838-03-04</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <gravsted-dk>jcwwendt</gravsted-dk>
+  </identifiers>
+</person>

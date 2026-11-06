@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="owen" country="un" nationality="gb" lang="la" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Owen</lastname>
+    <latin>Joannes Audoenus</latin>
+  </name>
+  <!-- Livsdata og identitet: https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/581545604 -->
+  <period>
+    <born>
+      <date>ca. 1564</date>
+    </born>
+    <dead>
+      <date>ca. 1622</date>
+    </dead>
+  </period>
+  <literary-periods>la-nylatinsk-litteratur</literary-periods>
+  <identifiers>
+    <wikipedia-en>John Owen (epigrammatist)</wikipedia-en>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-10-31">
+    <checked-source id="salmonsen2">Bind XVIII, register og opslag ved Owen, s. 712–714: Richard, Robert, William og Owen Meredith; intet opslag om epigramdigteren John Owen. Heller intet registeropslag under Audoenus i bind I.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI, register ved Owen og Audoenus: intet selvstændigt opslag om epigramdigteren.</checked-source>
+    <checked-source id="salmonsen4">Sp. 3400–3411 er undersøgt; Owen-opslagene vedrører Robert, Ruth Bryan og Wilfred, ikke John Owen.</checked-source>
+    <note>Ingen selvstændig biografi fundet i de relevante tilladte Salmonsen-udgaver. DBL er fravalgt, fordi den walisiske latindigter ikke har dansk eller norsk biografisk tilknytning. Livsdata er usikre; Oxford Dictionary of National Biography angiver 1563/4–1622?.</note>
+  </biography-status>
+</person>

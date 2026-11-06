@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wadum" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jens</firstname>
+    <lastname>Wadum</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1746-01-31</date>
+    </born>
+    <dead>
+      <date>1804-04-18</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Jens_Wadum</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

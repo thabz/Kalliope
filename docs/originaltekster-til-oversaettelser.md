@@ -32,7 +32,8 @@ Det historisk korrekte forlæg foretrækkes, men er ikke et adgangskrav: manglen
 på det må ikke blokere for indsættelsen af en original, som kan identificeres
 sikkert i en nyere udgave. Den ældste udgave har ingen automatisk forrang. En
 senere redaktionel eller moderniseret tekst må kun bruges, når forskellene ikke
-skaber tvivl om identifikationen; angiv da tydeligt, at kilden er nyere.
+skaber tvivl om identifikationen; dokumentér den nyere kilde på originalteksten
+og i PR-beskrivelsen.
 
 Kontrollér bibliografiske oplysninger mod titelblad, kolofon,
 bibliotekskatalog eller en tilsvarende autoritativ kilde. Hvis valget kræver
@@ -52,6 +53,31 @@ oversættelsesrelation, normalt en `<xref type="translation" poem="..."/>` i en
 note. Relationens mål skal være tekst-id'et for den valgte tekstforekomst, ikke
 blot forfatteren. En nyere tekstforekomst kan bruges, når originalværket er
 sikkert identificeret, og et historisk korrekt forlæg ikke er tilgængeligt.
+
+Forlægsnoten skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
+`<note>Oversættelse af Goethes <xref type="translation" poem="..."/>.</note>`.
+»Gendigtning af«, »Fri gendigtning af« og andre forklarende formuleringer er
+også tilladt, ligesom præciseringer og flere digtlinks i samme note. Digttitlen
+og citationstegnene leveres af linkets visning. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. En note må ikke kun bestå af
+et digtlink; forfatterens navn alene er heller ikke en forklaring.
+
+Både fuldt navn og efternavn alene er tilladt. Vælg efter sammenhængen:
+»Byron«, »Schiller« og »Goethe« kan stå alene, mens fx »Møller« kan kræve mere
+af navnet for at identificere personen entydigt. Der kræves ikke konsekvent
+brug af hverken fuldt navn eller efternavn alene.
+
+Forlægsnoten beskriver relationen mellem teksterne. Oplysninger om måltekstens
+registrerede udgave, kilde eller indførelse hører hjemme på målteksten selv,
+ikke i den henvisende note. Skriv fx ikke »Originalteksten er registreret efter
+udgaven fra 1847.« i oversættelsens forlægsnote. Oplysningerne skal kunne ændres
+på målteksten uden at efterlade forældede beskrivelser ved de indgående links.
+Undlad også generiske forbehold som »det benyttede eksemplar er ikke
+dokumenteret« og »oversætterens benyttede udgave er ikke identificeret« i
+forlægsnoten. Dokumentér udgavevalget og usikkerheden på originalteksten og i
+PR-beskrivelsen.
+Dokumenterede oplysninger om oversætterens historiske brug af et forlæg og
+tekstlige forskelle er fortsat relevante for relationen.
 
 Eksisterende relationer migreres ikke automatisk. Ret dem kun, når opgaven og
 kildegrundlaget giver belæg for en mere præcis relation.

@@ -67,4 +67,21 @@ describe('source link labels', () => {
       'aria-label="Digital kilde hos Det kongelige Bibliotek"'
     );
   });
+
+  it('renders bibliographic names and titles as text while retaining the digital source icon', () => {
+    const contentHtml = [[
+      '<a poet="horats">Horace</a>: <a work="horats/epistulae2"><i>Satires &amp; Epistles</i></a>, red. af <a person="editor">H. Rushton Fairclough</a>, overs. af <xref poet="translator">Oversætteren</xref>. <a href="https://example.org">Trykt kilde</a>',
+      { html: true },
+    ]];
+    const original = JSON.stringify(contentHtml);
+    const html = renderToStaticMarkup(
+      <Source contentHtml={contentHtml} href="https://archive.org/details/example" lang="da" />
+    );
+
+    expect(html).toContain('Horace: <i>Satires &amp; Epistles</i>, red. af H. Rushton Fairclough, overs. af Oversætteren. Trykt kilde');
+    expect(html.match(/<a\b/g)).toHaveLength(1);
+    expect(html).toContain('href="https://archive.org/details/example"');
+    expect(html).toContain('aria-label="Digital kilde hos Internet Archive"');
+    expect(JSON.stringify(contentHtml)).toBe(original);
+  });
 });

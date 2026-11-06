@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="polignac" country="un" nationality="fr" lang="la" type="poet">
+  <name>
+    <firstname>Melchior de</firstname>
+    <lastname>Polignac</lastname>
+  </name>
+  <!-- Livsdata og identitet: https://www.academie-francaise.fr/les-immortels/melchior-de-polignac -->
+  <period>
+    <born>
+      <date>1661-10-11</date>
+    </born>
+    <dead>
+      <date>1741-11-20</date>
+    </dead>
+  </period>
+  <literary-periods>la-nylatinsk-litteratur</literary-periods>
+  <identifiers>
+    <wikipedia-fr>Melchior de Polignac</wikipedia-fr>
+  </identifiers>
+</person>

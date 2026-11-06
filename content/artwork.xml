@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
+  <picture id="irminger-en-tilgivelse-1892" year="1892" museum="smk" invnr="KMS1463" href="https://open.smk.dk/artwork/image/KMS1463">
+    Valdemar Irminger: <i>En tilgivelse</i>, 1892, olie på lærred, 61,5 × 79 cm.
+    <!-- Metadata og digital gengivelse: https://api.smk.dk/api/v1/art/?object_number=KMS1463 (kontrolleret 2026-11-04). Erhvervet 1893. -->
+    <!-- SMK angiver public domain: https://creativecommons.org/publicdomain/mark/1.0/. Billedfil: https://api.smk.dk/api/v1/thumbnail/5e04c479-20d2-40b5-89f8-d33f27e49b34.jpg -->
+  </picture>
   <picture id="christian4-isaacsz-1612" subject="christian4" year="1612 ca." museum="fnm">
     Pieter Isaacsz: <i>Christian IV</i>, ca. 1612, olie på panel.
     <!-- Museets offentlige site har ingen individuel katalogpost; inventarnummeret er derfor ikke verificeret. -->
@@ -128,24 +133,55 @@
     <!-- Metadata: https://api.smk.dk/api/v1/art/?object_number=KMS62 -->
   </picture>
   <picture id="bendz-fincks-kaffehus-1832" year="1832" museum="thorvaldsens" invnr="B197" href="https://kataloget.thorvaldsensmuseum.dk/B197">
-    Wilhelm Bendz: <i>Kunstnere i Fincks Kaffehus i München</i>, 1832, olie på lærred, 94,8 × 136,6 cm. Foto: Niels Elswing.
+    Wilhelm Bendz: <i>Kunstnere i Fincks Kaffehus i München</i>, 1832, olie på lærred, 94,8 × 136,6 cm.
     <!-- Digital gengivelse: Niels Elswing / Thorvaldsens Museum, CC0 1.0, Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Wilhelm_Bendz,_Kunstnere_i_Fincks_Kaffehus_i_München,_1832,_B197,_Thorvaldsens_Museum.jpg -->
     <identifiers>
       <wikidata>Q21104395</wikidata>
     </identifiers>
   </picture>
-  <picture id="thorvaldsen-kaerlighedens-aldre-1824" year="1824" museum="thorvaldsens" invnr="A426" href="https://kataloget.thorvaldsensmuseum.dk/A426">
-    Bertel Thorvaldsen: <i>Kærlighedens aldre</i>, 1824, marmorrelief, 52 × 148 cm.
-    <!-- Digital gengivelse: Thorvaldsens Museum. Commons angiver Public Domain Mark 1.0; billedets EXIF angiver Public Domain CC0. Kilde: https://commons.wikimedia.org/wiki/File:Bertel_Thorvaldsen_-_Kærlighedens_Aldre_1824.jpg -->
-    <!-- Digtets identifikation: https://arkivet.thorvaldsensmuseum.dk/dokumenter/udskriv/m33,nr.9 -->
+  <picture id="horace-vernet-storm-1822" year="1822" href="https://commons.wikimedia.org/wiki/File:Avignon_-_Musée_Calvet_-_Joseph_Vernet_attaché_à_un_mat_étudie_les_effets_de_la_tempête_(Horace_Vernet).jpg">
+    Horace Vernet: <i><span lang="fr">Joseph Vernet attaché à un mât étudie les effets de la tempête</span></i>, 1822, olie på lærred, 275 × 336 cm. Musée Calvet, Avignon.
+    <!-- Digital gengivelse: Romainbehar, CC0, Wikimedia Commons (href ovenfor). Mål: Commons-kategorien for maleriet, højde × bredde. -->
+    <identifiers>
+      <wikidata>Q106286331</wikidata>
+    </identifiers>
   </picture>
-  <picture id="abildgaard-kodros" museum="smk" invnr="KKSgb3776" href="https://open.smk.dk/artwork/image/KKSgb3776">
-    Nicolai Abildgaard: <i>Den atheniensiske konge Kodros forlader sit hjem for ukendt at vandre mod fjenderne, til venstre hans kone og søn</i>, udateret, blyant, pen, pensel og brunt blæk, 19,1 × 23,6 cm.
-    <!-- Digital gengivelse: Statens Museum for Kunst, Public Domain Mark 1.0. Metadata og billedkilde: https://api.smk.dk/api/v1/art/?object_number=KKSgb3776 -->
-    <!-- SMK henviser til gengivelsen i Gæa 1847, s. 175, med forbehold mellem denne tegning og Td 539,33. -->
+  <picture id="aarestrup-manuskript-1825-1837" museum="kb">
+    Manuskript. <!-- Manglende entydig KB-katalogmatch; gemt uden object-id indtil bekræftelse. -->
   </picture>
-  <picture id="abildgaard-oceanus-paa-sin-trone-i-havet" museum="smk" invnr="KKSgb3971" href="https://open.smk.dk/artwork/image/KKSgb3971">
-    Nicolai Abildgaard: <i>Oceanus på sin trone i havet</i>, udateret, blyant, pen, brunt blæk, pensel og grå lavering, 21,5 × 16,4 cm. Udkast til et ovalt vægfelt.
-    <!-- Digital gengivelse: Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Nicolai_Abildgaard,_Oceanus_på_sin_trone_i_havet,_,_KKSgb3971,_Statens_Museum_for_Kunst.jpg -->
+  <picture id="aarestrup-manuskript-1999032903" museum="kb">
+    Manuskript. <!-- Manglende entydig KB-katalogmatch; gemt uden object-id indtil bekræftelse. -->
+  </picture>
+  <picture id="martens-pave-leo-xii-1828-1829" museum="smk" invnr="KMS196">
+    Ditlev Martens: <i>Pave Leo Xll aflægger besøg i Thorvaldsens værksteder ved Piazza Barberini, 18. oktober 1826</i>, 1828-29, olie på lærred, 100 × 138 cm.
+  </picture>
+  <picture id="cederstrom-karl-xiis-likfaerd-1878" museum="natmus.se" objid="18366">
+    Gustaf Cederström (1845-1933): <i>Karl XII:s likfärd</i>, 1878, oliemaleri, 256 × 370 cm.
+  </picture>
+  <picture id="hendriksen-billeder-af-hestens-liv" museum="smk" invnr="KKS9570e">
+    F. Hendriksen (stik): <i>Billeder af Hestens Liv</i> efter tegning af Otto Haslund. Følgeblad til <i>Ude og Hjemme</i>, II, p. 151.
+  </picture>
+  <picture id="fitzgerald-rubaiyat-titelblad-1878">
+    Titelbladet til Fitzgeralds amerikanske førsteudgave<i>The Rubáiyát / of / Omar Kháyyam</i>, The Astronomer-Poet of Persia. / Rendered into English Verse / First American. / From the third London Editon / Boston: / Houghton, Osgood and Company. / The Riverside Press, Cambridge. / 1878.
+  </picture>
+  <picture id="burne-jones-the-mirror-of-venus">
+    Sir Edward Coley Burne-Jones: <i>The Mirror of Venus</i>, 1898, olie på lærred, 120 × 200 cm, Gulbenkian Foundation, Lissabon. <a href="https://gulbenkian.pt/museu/en/works_museu/the-mirror-of-venus/">⌘</a>
+  </picture>
+  <picture id="als-johannes-wiedewelt-1766" museum="fnm">
+    Peder Als: <i>Portræt af Johannes Wiedewelt</i>, 1766, olie på lærred.
+  </picture>
+  <picture id="herluf-trolle-1551" museum="fnm">
+    Ukendt kunstner: <i>Herluf Trolle</i>, 1551, olie.
+  </picture>
+  <picture id="birgitte-goeye-1500-tallet" museum="fnm">
+    Ukendt kunstner: <i>Birgitte Gøye</i>, 1500-tallet, olie.
+  </picture>
+  <picture id="rosenfeld-heine-oversaettelser-1876-p13">
+    »To Digte. Af Heinrich Heine. Oversatte af Rosalie Rosenfeld«, <i>Nær og Fjern</i>, 5. Bind, Nr. 203, 21. maj 1876, s. 13.
+  </picture>
+  <picture id="kalliope-digter-illustration"/>
+  <picture id="laessoe-marmorpladsen-1838" year="1838" museum="smk" invnr="KMS339" href="https://open.smk.dk/artwork/image/KMS339">
+    Thorald Læssøe: <i>Parti af Marmorpladsen med ruinerne af den ufuldførte Frederikskirke</i>, 1838, olie på lærred, 72,5 × 92,5 cm.
+    <!-- Kilde og digital gengivelse: SMK Open, https://api.smk.dk/api/v1/art/?object_number=KMS339. Public Domain Mark 1.0: https://creativecommons.org/publicdomain/mark/1.0/. -->
   </picture>
 </pictures>

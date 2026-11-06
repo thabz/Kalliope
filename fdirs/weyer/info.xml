@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="weyer" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Niels</firstname>
+    <lastname>Weyer</lastname>
+  </name>
+  <!-- Livsdata: H. Ehrencron-Müller, Forfatterlexikon IX (1932), s. 52; facsimilet https://runeberg.org/hemforf/9/0066.html er kontrolleret. -->
+  <period>
+    <born>
+      <date>1767-01-25</date>
+      <place>Strømsø</place>
+    </born>
+    <dead>
+      <date>1788-05-08</date>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>WNielsWeyer</danskforfatterleksikon-dk>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-10-31">
+    <checked-source id="dbl1">Intet opslag om Niels eller Nils Weyer i bind XVIII, registeret mellem Wexels og Weyse, eller i tilføjelserne i bind XIX.</checked-source>
+    <checked-source id="dbl2">Bind XXV og supplementbind XXVII undersøgt under Weyer, Niels og Nils; intet relevant opslag.</checked-source>
+    <checked-source id="salmonsen2">Bind XXV har kun navnebroderen Johann Weyer, ikke digteren Niels Weyer.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI, registeret ved Wey og Weygand, undersøgt uden personopslag.</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsen, sp. 4906-4908, undersøgt ved Weygand; intet opslag om digteren.</checked-source>
+    <note>Ingen biografi fundet i de tilladte opslagsværker. Ehrencron-Müllers Forfatterlexikon IX, s. 52-54, dokumenterer identiteten og udgivelserne, men er ikke en tilladt kilde til indsat biografitekst.</note>
+  </biography-status>
+</person>

@@ -30,6 +30,10 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 
 ## Grundregel
 
+Basér facsimiler på farveudgaven, når den findes til den valgte kilde. Brug kun
+sort-hvid-udgaven, når der ikke findes en farveudgave. Kontrollér ved skift af
+PDF, at sidetal, siderækkefølge, kildeintervaller og `pb/@facs` stadig passer.
+
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 

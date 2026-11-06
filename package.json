@@ -7,7 +7,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=20.18.1"
+    "node": ">=22.0.0"
   },
   "browserslist": [
     "defaults",
@@ -29,7 +29,6 @@
     "validate-new-text-ids": "node tools/validate-new-text-ids.js",
     "validate-facsimile-completions": "node tools/validate-facsimile-completions.js",
     "report-ocr-candidates": "DISABLED_TESTS=\"repeated-adjacent-word\" node tools/report-ocr-candidates.js",
-    "report-salmonsen-biographies": "node tools/report-salmonsen-biographies.js",
     "report-keyword-quality": "node tools/report-keyword-quality.js",
     "build-static": "node tools/build-static.js",
     "build-static-force-reload": "node tools/build-static.js --force-reload",
@@ -47,8 +46,8 @@
     "mkdirp": "^0.5.1",
     "next": "^16.3.8",
     "p-limit": "^2.2.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "sharp": "^0.35.5"
   },
   "devDependencies": {

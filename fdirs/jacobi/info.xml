@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="jacobi" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christian Frederik</firstname>
+    <lastname>Jacobi</lastname>
+  </name>
+  <!-- Livsdata og identitet: https://biografiskleksikon.lex.dk/C.F._Jacobi -->
+  <period>
+    <born>
+      <date>1739-03-12</date>
+    </born>
+    <dead>
+      <date>1810-11-11</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>C.F._Jacobi</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

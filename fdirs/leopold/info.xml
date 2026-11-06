@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="leopold" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Gustaf af</firstname>
+    <lastname>Leopold</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1756</date>
+      <place>Stockholm</place>
+    </born>
+    <baptized>
+      <date>1756-04-03</date>
+      <place>Stockholm</place>
+    </baptized>
+    <dead>
+      <date>1829-11-09</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q984681</wikidata>
+    <viaf>56876741</viaf>
+    <gnd>115670785</gnd>
+  </identifiers>
+</person>

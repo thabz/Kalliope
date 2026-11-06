@@ -40,7 +40,14 @@ const TOC = ({ toc, lang, indent }) => {
         return (
           <tr key={id}>
             <td className="num">{prefix}</td>
-            <td>{linkedTitle}</td>
+            <td>
+              {linkedTitle}
+              {item.authorName != null && item.authorName.length > 0 && (
+                <span className="author">
+                  <span className="author-separator">{' — '}</span>{item.authorName}
+                </span>
+              )}
+            </td>
           </tr>
         );
       }
@@ -102,6 +109,23 @@ const TOC = ({ toc, lang, indent }) => {
           :global(.toc) :global(td) {
             line-height: 1.7;
             padding: 0;
+          }
+          :global(.toc) :global(a) {
+            text-decoration: none;
+          }
+          :global(.toc) :global(a:hover) {
+            text-decoration: underline;
+          }
+          :global(.toc) :global(.block),
+          :global(.toc) :global(.prose-paragraph),
+          :global(.toc) :global(.inner-prose-line) {
+            display: inline;
+          }
+          :global(.toc) :global(.author) {
+            color: ${CommonData.lightTextColor};
+          }
+          :global(.toc) :global(.author-separator) {
+            margin: 0 0.3em;
           }
           :global(.nodata) {
             padding: 30px 0;

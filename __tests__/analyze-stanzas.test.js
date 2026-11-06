@@ -13,6 +13,13 @@ const bodyWithStanzas = stanzaLengths => {
 };
 
 describe('stanza candidate analysis', () => {
+  it('excludes single-row and multiline metrical diagrams from verse counts', () => {
+    const body = '<metrik>_ u _</metrik>\n<metrik>_ u\n_ _</metrik>\nFørste vers\nAndet vers';
+    expect(analyzeStanzas({ body })).toMatchObject({
+      verse_line_count: 2,
+      observed_stanza_lengths: [2],
+    });
+  });
   it('keeps a printed omission line inside its stanza', () => {
     const body = 'Første vers\n<nonum>— — — —</nonum>\nAndet vers\n\nTredje vers';
     const result = analyzeStanzas({ body });

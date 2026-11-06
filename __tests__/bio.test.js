@@ -1,5 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server';
-import { BiographyContent, PersonMeta } from '../pages/bio.js';
+import BioPage, { BiographyContent, PersonMeta, PersonPortrait } from '../pages/bio.js';
+import LangContext from '../common/LangContext.js';
 
 const poet = {
   type: 'poet',
@@ -13,6 +14,33 @@ const poet = {
     dead: { date: '1794-07-25', place: 'Paris' },
   },
 };
+
+describe('biography timeline artwork', () => {
+  it('renders the artist and museum links from the timeline image metadata', () => {
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da">
+        <BioPage
+          lang="da"
+          poet={{ ...poet, id: 'chenier', country: 'fr' }}
+          portraits={[]}
+          biographies={[]}
+          identifiers={{}}
+          timeline={[{
+            date: '1801-04-02', type: 'image', is_history_item: true,
+            src: '/images/lorentzen/slaget-paa-rheden-1802.jpg',
+            artist: { id: 'lorentzen', name: { firstname: 'C. A.', lastname: 'Lorentzen' } },
+            museum: { id: 'fnm', name: 'Frederiksborg' },
+            content_html: [['Slaget paa Rheden']], content_lang: 'da',
+            remoteUrl: 'https://example.org/artwork',
+          }]}
+        />
+      </LangContext.Provider>
+    );
+    expect(html).toContain('href="/da/works/lorentzen"');
+    expect(html).toContain('href="/da/museum/fnm"');
+    expect(html).toContain('href="https://example.org/artwork"');
+  });
+});
 
 describe('biography footnotes', () => {
   it('renders an errata note and its numbered footnote without crashing', () => {
@@ -58,5 +86,34 @@ describe('biography person metadata', () => {
     expect(html).toContain('Døbt');
     expect(html).toContain('1/11 1762');
     expect(html).toContain('Konstantinopel');
+  });
+});
+
+
+describe('biography portrait gallery', () => {
+  const family = {
+    src: '/images/poet/family.jpg',
+    primary: false,
+    content_html: [['Familieportræt']],
+    content_lang: 'da',
+  };
+
+  it('renders a gallery without a primary portrait', () => {
+    const html = renderToStaticMarkup(
+      <PersonPortrait poet={{ has_portraits: true }} portraits={[family]} lang="da" />
+    );
+    expect(html).toContain('/images/poet/t/family-w800.jpg');
+    expect(html).toContain('Familieportræt');
+  });
+
+  it('starts at the primary portrait when one is present', () => {
+    const html = renderToStaticMarkup(
+      <PersonPortrait poet={{ has_portraits: true }} portraits={[
+        family,
+        { ...family, src: '/images/poet/adult.jpg', primary: true },
+      ]} lang="da" />
+    );
+    expect(html).toContain('/images/poet/t/adult-w800.jpg');
+    expect(html).not.toContain('/images/poet/t/family-w800.jpg');
   });
 });

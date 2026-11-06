@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="uldall" country="dk" lang="da" type="poet">
+  <!-- Livsdata og identitet: G. L. Wad, DBL1, bd. XVIII (1904), s. 9-10, https://runeberg.org/dbl/18/0011.html. Navneformen Uldal og sangens attribution er kontrolleret i Fader Evans Stambog (1821). -->
+  <name>
+    <firstname>Peter</firstname>
+    <lastname>Uldall</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1743-06-29</date>
+      <place>Assens</place>
+    </born>
+    <dead>
+      <date>1798-11-11</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Peter_Uldall</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

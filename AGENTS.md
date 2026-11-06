@@ -11,6 +11,9 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 ## Repository-skills
 
+- Brug `$add-kalliope-person` ved personoprettelse og målrettet berigelse.
+- Brug `$add-person-portrait` ved portrætsøgning, portrætmetadata og square-beskæring.
+
 - Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
   en pull request.
 - Brug også `$pdf-to-kalliope`, når kilden er en komplet scannet PDF, der skal
@@ -26,6 +29,8 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 ## OCR and PDF tooling
 
+- Basér facsimiler på farveudgaven, når en sådan findes. Brug kun en
+  sort-hvid-udgave, når der ikke findes en farveudgave af den valgte kilde.
 - Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
   eksisterende værktøjer, før et nyt systemværktøj installeres.
 - Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den
@@ -83,6 +88,9 @@ digtere.
 
 ## Git og GitHub
 
+- Når en kodeændring medfører ændringer i UI, skal PR'en altid ledsages af
+  et skærmskud af den ændrede visning. Indsæt skærmskuddet i PR-beskrivelsen,
+  så ændringen kan vurderes direkte i PR'en.
 - Kør `make test`, før der oprettes en PR. Kommandoen skal afslutte med
   exitkode 0; der kræves ikke andre testkommandoer, medmindre en relevant
   specialdokumentation udtrykkeligt angiver dem.

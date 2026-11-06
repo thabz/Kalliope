@@ -1,6 +1,7 @@
 import crypto from 'crypto';
 import fs from 'fs';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
+import { metricalDiagramsAsNonVerse } from './metrical-diagrams.js';
 
 const elementChildren = (node, name = null) =>
   Array.from(node?.childNodes ?? []).filter(
@@ -52,7 +53,7 @@ const serializeWithoutNoteText = node => {
 };
 
 const serializeVerseLines = node => {
-  const serialized = serializeWithoutNoteText(node);
+  const serialized = metricalDiagramsAsNonVerse(serializeWithoutNoteText(node));
   return ['note', 'footnote'].includes(node.parentNode?.nodeName)
     ? serialized.replace(/<br\s*\/>\r?\n?/gu, '\n')
     : serialized;

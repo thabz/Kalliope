@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gessner" country="un" nationality="ch" lang="de" type="poet">
+  <name>
+    <firstname>Salomon</firstname>
+    <lastname>Gessner</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1730-04-01</date>
+    </born>
+    <dead>
+      <date>1788-03-02</date>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <lex-dk>Salomon_Gessner</lex-dk>
+  </identifiers>
+</person>

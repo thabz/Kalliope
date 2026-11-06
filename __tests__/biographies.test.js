@@ -20,3 +20,13 @@ describe('biography builder', () => {
     ]);
   });
 });
+
+it('renders wish labels and internal links with their original wording and typography', () => {
+  const doc = new DOMParser().parseFromString('<bio><biographies><biography><head/><body>Se <span data-wish="missing"><i>Den gamle Titel</i></span>, <a poem="text1">en anden Titel</a>, <a work="p/w">Bogen</a> og <a person="p">Maleren</a>.</body></biography></biographies></bio>', 'text/xml');
+  const result = buildBiographies(getChildByTagName(doc, 'bio'), {texts:new Map()});
+  const rendered = JSON.stringify(result[0].content_html);
+  expect(rendered).not.toContain('data-wish');
+  expect(rendered).toContain('<i>Den gamle Titel</i>');
+  expect(rendered).toContain('en anden Titel');
+  expect(rendered).toContain('Maleren');
+});

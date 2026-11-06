@@ -49,10 +49,7 @@ const loadTimeline = async (filename, collected) => {
           collected,
           onError
         );
-        data.src = picture.src;
-        data.content_lang = picture.content_lang;
-        data.lang = picture.lang;
-        data.content_html = picture.content_html;
+        data = { ...picture, ...data };
       } else {
         data.content_lang = 'da';
         data.lang = 'da';

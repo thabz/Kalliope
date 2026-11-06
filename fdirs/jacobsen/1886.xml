@@ -8,9 +8,12 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-10-19T08:50:32Z"/>
   </proofreadings>
   <errata status="none"/>
+  <notes>
+    <note>Portrættet af Axel Helsted fra 1885 står foran titelbladet.</note>
+  </notes>
   <pictures>
     <picture type="titlepage" src="1886-p1.jpg" primary="true"><transcription>Digte og Udkast / af / J. P. Jacobsen. // Kjøbenhavn. / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn). / Fr. Bagges Bogtrykkeri. / 1886.</transcription></picture>
-    <picture src="p2.jpg" type="illustration" year="1885">Axel Helsted: <i>J. P. Jacobsen</i>, radering. Portrættet står foran titelbladet.</picture>
+    <picture portrait="jacobsen/p2"/>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99125158127305763" facsimile="115208033475-color" facsimile-pages-num="227" facsimile-pages-offset="19">
     <author id="jacobsen">J. P. Jacobsen</author>
