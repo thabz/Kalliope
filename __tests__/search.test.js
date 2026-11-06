@@ -1,6 +1,8 @@
 import { renderToStaticMarkup } from 'react-dom/server';
+import LangContext from '../common/LangContext.js';
 import {
   parseKeywordIds,
+  RenderedHits,
   SearchFilters,
   SearchResultCount,
   singleMatchingTextIdResultURL,
@@ -8,6 +10,30 @@ import {
 } from '../pages/search.js';
 
 describe('search page', () => {
+  test.each([
+    ['artist', 'kroyer', 'P.S. Krøyer', ['Kunstner', 'Artist', 'Künstler', 'Artiste']],
+    ['person', 'heibergjohanne', 'Johanne Luise Heiberg', ['Person', 'Person', 'Person', 'Personne']],
+    ['poet', 'oehlenschlaeger', 'Oehlenschläger', ['Digter', 'Poet', 'Dichter', 'Poète']],
+    ['collection', 'folkeviser', 'Folkeviser', ['Samling', 'Collection', 'Sammlung', 'Collection']],
+    [undefined, 'unknown', 'Ukendt type', ['Person', 'Person', 'Person', 'Personne']],
+  ])('labels %s search results and filters using the registered type', (type, id, fullname, labels) => {
+    const poet = { id, type, name: { firstname: fullname } };
+    ['da', 'en', 'de', 'fr'].forEach((lang, index) => {
+      const html = renderToStaticMarkup(
+        <LangContext.Provider value={lang}>
+          <RenderedHits hits={[{ _id: `poet-${id}`, _source: { result_type: 'poet', poet } }]} />
+        </LangContext.Provider>
+      );
+      expect(html).toMatch(new RegExp(`class="[^"]*result-type[^"]*">${labels[index]}</span>`));
+      expect(html).toContain(fullname);
+      expect(html).toContain(`/${lang}/works/${id}`);
+      const filters = renderToStaticMarkup(
+        <SearchFilters country="all" keywordFilters={[]} lang={lang} poet={poet} query="" />
+      );
+      expect(filters).toContain(`${labels[index]}: ${fullname}`);
+    });
+  });
+
   test('parses unique comma-separated keyword filters', () => {
     expect(parseKeywordIds(' sonnet,elegi,sonnet,, ')).toEqual([
       'sonnet',
@@ -22,7 +48,7 @@ describe('search page', () => {
         country="dk"
         keywordFilters={[{ id: 'sonnet', title: 'Sonet' }]}
         lang="da"
-        poet={{ id: 'oehlenschlaeger', name: { lastname: 'Oehlenschläger' } }}
+        poet={{ id: 'oehlenschlaeger', type: 'poet', name: { lastname: 'Oehlenschläger' } }}
         query="Kærlighed"
       />
     );

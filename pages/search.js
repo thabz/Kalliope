@@ -77,6 +77,16 @@ const ResultTypeLabel = ({ children }) => (
   </span>
 );
 
+const personTypeLabel = (poet, lang) => {
+  const labels = {
+    poet: 'Digter',
+    artist: 'Kunstner',
+    person: 'Person',
+    collection: 'Samling',
+  };
+  return _(labels[poet.type] ?? 'Person', lang);
+};
+
 const renderHighlightFragment = (line, keyPrefix = '') => {
   return line
     .replace(/\s+/g, ' ')
@@ -104,7 +114,7 @@ const renderHighlightFragment = (line, keyPrefix = '') => {
     ).parts;
 };
 
-const RenderedHits = ({ hits }) => {
+export const RenderedHits = ({ hits }) => {
   const lang = useContext(LangContext);
 
   return hits
@@ -145,7 +155,7 @@ const RenderedHits = ({ hits }) => {
               </Link>
             </div>
             <div className="poet-and-work">
-              <ResultTypeLabel>{_('Digter', lang)}</ResultTypeLabel>
+              <ResultTypeLabel>{personTypeLabel(poet, lang)}</ResultTypeLabel>
             </div>
             <style jsx>{`
               .title {
@@ -287,7 +297,7 @@ export const SearchFilters = ({ country, keywordFilters, lang, poet, query }) =>
   if (poet != null) {
     filters.push({
       id: 'poet',
-      label: `${_('Digter', lang)}: ${poetNameString(poet, false, false)}`,
+      label: `${personTypeLabel(poet, lang)}: ${poetNameString(poet, false, false)}`,
       href: Links.searchURL(lang, query, country, null, keywordIds),
     });
   }
