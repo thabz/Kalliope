@@ -3,6 +3,10 @@ import { fileURLToPath } from 'url';
 
 const structuralElements = [
   'body',
+  'front',
+  'castList',
+  'castGroup',
+  'set',
   'content',
   'head',
   'poetry',

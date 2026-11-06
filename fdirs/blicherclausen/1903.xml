@@ -51,24 +51,30 @@
   <source facsimile-pages="16"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<i>Gamle-Fin, Ligkistesnedker</i><br/>
-<i>Ruth</i><br/>
-<i>Fin } hans Børn</i><br/>
-<i>Ingeniør Jack Hauge</i><br/>
-<i>Tuk</i><br/>
-<i>Gerd } hans Børn</i><br/>
-<i>Paolo, en Italienerdreng</i><br/>
-<i>En Ledvogterske</i><br/>
-<i>En Læge</i><br/>
-<i>To Herrer</i><br/>
-<i>En ung Kvinde</i>
-</prose>
-<prose>
-<i>Handlingen foregaar i Nutiden — dels i Danmark, dels i Rom.</i>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><i>Gamle-Fin,</i></role> <roleDesc><i>Ligkistesnedker</i></roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><i>Ruth</i></role></castItem>
+<castItem><role><i>Fin</i></role></castItem>
+<roleDesc><i>hans Børn</i></roleDesc>
+</castGroup>
+<castItem><role><i>Ingeniør Jack Hauge</i></role></castItem>
+<castGroup rend="braced">
+<castItem><role><i>Tuk</i></role></castItem>
+<castItem><role><i>Gerd</i></role></castItem>
+<roleDesc><i>hans Børn</i></roleDesc>
+</castGroup>
+<castItem><role><i>Paolo,</i></role> <roleDesc><i>en Italienerdreng</i></roleDesc></castItem>
+<castItem><role><i>En Ledvogterske</i></role></castItem>
+<castItem><role><i>En Læge</i></role></castItem>
+<castItem type="list"><role><i>To Herrer</i></role></castItem>
+<castItem><role><i>En ung Kvinde</i></role></castItem>
+</castList>
+<set>
+<p><i>Handlingen foregaar i Nutiden — dels i Danmark, dels i Rom.</i></p>
+</set>
+</front>
 </text>
 
 <text id="blicherclausen2026100703" ignore-tests="repeated-adjacent-word">

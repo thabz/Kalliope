@@ -193,16 +193,19 @@ Af alle litterære Arbejder er intet saa utaknemmeligt som Oversættelse af Digt
   <source pages="15" facsimile-pages="52" />
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-Fingal.<br />
-Hidallan.<br />
-Comala.<br />
-Melilcoma<br />
-Dersagrena } Mornis Dottre<br />
-Barder.
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role>Fingal.</role></castItem>
+<castItem><role>Hidallan.</role></castItem>
+<castItem><role>Comala.</role></castItem>
+<castGroup rend="braced">
+<castItem><role>Melilcoma</role></castItem>
+<castItem><role>Dersagrena</role></castItem>
+<roleDesc>Mornis Dottre</roleDesc>
+</castGroup>
+<castItem type="list"><role>Barder.</role></castItem>
+</castList>
+</front>
 </text>
 
 <text id="blicher2026101747" ignore-tests="pagebreak-count">
@@ -2029,7 +2032,6 @@ Hvo triner saa statelig paa <w>Lumon</w> ved de skummende Bølgers Brusen? Hende
 <head>
   <title>Ossians sidste Sang</title>
   <notes>
-    <note editorial="true">Afslutningen fra »Led, o Alpins Søn« findes i versificeret form som <a poem="blicher20030915140">Ossians Svanesang</a> i Digte (1847).</note>
     <note editorial="true">Oversættelse af Macphersons <xref type="translation" poem="macpherson2026101836"/>.</note>
   </notes>
   <source pages="226-243" facsimile-pages="559-576" />

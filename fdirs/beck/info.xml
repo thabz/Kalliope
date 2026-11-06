@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="beck" country="dk" lang="da" type="poet">
+  <!-- Beck er navneformen i Fader Evans Stambog (1821) og Dansk Forfatterleksikon, https://danskforfatterleksikon.dk/1850bib/BBernhHenrBeck.htm. DBL1 har Bech, bd. II (1888), s. 2, med livsdata. -->
+  <name>
+    <firstname>Bernhard Henrik</firstname>
+    <lastname>Beck</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1748</date>
+    </born>
+    <dead>
+      <date>1797-11-07</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>BBernhHenrBeck</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

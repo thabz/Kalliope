@@ -127,7 +127,7 @@ const collectBodyLinkIssues = (filename, document) => {
   ['a', 'xref'].forEach(tagName => {
     Array.from(document.getElementsByTagName(tagName)).forEach(link => {
       if (
-        hasAncestor(link, 'body') !== true ||
+        (hasAncestor(link, 'body') !== true && hasAncestor(link, 'front') !== true) ||
         hasAncestor(link, 'note') === true ||
         hasAncestor(link, 'footnote') === true
       ) {
@@ -567,7 +567,7 @@ const collectPageBreakIssues = (
     const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
       hasAncestor(pageBreak, 'head') === true &&
       hasAncestor(pageBreak, 'footnote') === true;
-    if (hasAncestor(pageBreak, 'body') !== true && inHeadingFootnote !== true) {
+    if (hasAncestor(pageBreak, 'body') !== true && hasAncestor(pageBreak, 'front') !== true && inHeadingFootnote !== true) {
       issues.push(`${filename}: <pb> must occur inside a text body.`);
     }
   });
@@ -635,7 +635,9 @@ const collectPageBreakIssues = (
     const pages = source?.getAttribute('pages') ?? null;
     const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
     const body = directChild(text, 'body');
-    const physicalTransitions = body == null ? [] : Array.from(body.getElementsByTagName('pb'));
+    const front = directChild(text, 'front');
+    const physicalTransitions = [front, body].flatMap(node =>
+      node == null ? [] : Array.from(node.getElementsByTagName('pb')));
     const pageBreakCount = new Set(physicalTransitions.map(pageBreak => {
       const facs = pageBreak.getAttribute('facs');
       return facs != null && facs !== '' ? facs : pageBreak;

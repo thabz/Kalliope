@@ -141,11 +141,8 @@ const Timeline = ({ timeline, lang }) => {
     let html = null;
     if (item.type === 'image' && item.src != null) {
       const picture = {
-        src: item.src,
+        ...item,
         lang: lang,
-        content_lang: item.content_lang,
-        content_html: item.content_html,
-        miniature_content_html: item.miniature_content_html,
       };
       html = (
         <div style={{ paddingTop: '0.37em' }}>

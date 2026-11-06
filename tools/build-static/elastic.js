@@ -196,6 +196,7 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
     }
     const head = getChildByTagName(text, 'head');
     const body = getChildByTagName(text, 'body');
+    const front = getChildByTagName(text, 'front');
     const titleXml = (
       safeGetInnerXML(getChildByTagName(head, 'linktitle')) ||
       safeGetInnerXML(getChildByTagName(head, 'title')) ||
@@ -241,7 +242,7 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
       keyword_ids: keywordsArray,
       keyword_titles: keywordTitles,
       content_html: htmlToXml(
-        (safeGetInnerXML(body) || '')
+        [front, body].map(node => safeGetInnerXML(node) ?? '').join('\n')
           .replace(/<note>.*?<\/note>/g, '')
           .replace(/<footnote>.*?<\/footnote>/g, '')
           .replace(/<.*?>/g, ' '),

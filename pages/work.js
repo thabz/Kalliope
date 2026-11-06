@@ -79,18 +79,27 @@ const WorkPage = (props) => {
   });
   const renderedErrata = errata.map((entry, index) => (
     <Note key={`errata-${index}`} type="errata" editorial>
+      {entry.status === 'reviewed' ? '' : 'Teksten er rettet efter '}
       <FacsimileLink
         poetId={poet.id}
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>
-        Rettelseslisten
-      </FacsimileLink>{' '}
-      {entry.sourceVolume != null ? <>i bind {entry.sourceVolume}, s. </> : <>på s. </>}
-      {entry.pages.replace(/-/g, '–')}{' '}
+        {entry.status === 'reviewed' ? 'Rettelseslisten' : 'rettelseslisten'}
+      </FacsimileLink>
+      {entry.sourceVolume != null || entry.pages !== '[upagineret]' ? (
+        <>
+          {' ('}
+          {entry.sourceVolume != null ? <>bind {entry.sourceVolume}</> : null}
+          {entry.pages !== '[upagineret]' ? (
+            <>{entry.sourceVolume != null ? ', ' : ''}s. {entry.pages.replace(/-/g, '–')}</>
+          ) : null}
+          {')'}
+        </>
+      ) : null}
       {entry.status === 'reviewed'
-        ? 'er gennemgået; ingen sikre rettelser berører de gengivne tekster.'
-        : 'er indført.'}
+        ? ' er gennemgået; ingen sikre rettelser berører de gengivne tekster.'
+        : '.'}
     </Note>
   ));
 

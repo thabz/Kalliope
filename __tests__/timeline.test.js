@@ -1,4 +1,15 @@
+jest.mock('../tools/build-static/xml.js', () => ({
+  ...jest.requireActual('../tools/build-static/xml.js'),
+  loadXMLDoc: jest.fn(),
+}));
+jest.mock('../tools/build-static/parsing.js', () => ({
+  get_picture: jest.fn(),
+}));
+
+import { loadXMLDoc, parseXMLFragment } from '../tools/build-static/xml.js';
+import { get_picture } from '../tools/build-static/parsing.js';
 import {
+  buildGlobalTimeline,
   buildPoetTimelineJson,
   compareNormalizedDate,
   normalizeTimelineDate,
@@ -6,6 +17,30 @@ import {
 } from '../tools/build-static/timeline.js';
 
 describe('timeline helpers', () => {
+  beforeEach(() => {
+    loadXMLDoc.mockReset();
+    get_picture.mockReset();
+  });
+
+  it('retains artist and museum metadata for artwork in historical events', async () => {
+    loadXMLDoc.mockReturnValue(parseXMLFragment(
+      '<events><entry date="1801-04-02" type="image">' +
+      '<picture artwork="lorentzen/slaget-paa-rheden-1802"/>' +
+      '</entry></events>'
+    ));
+    const picture = {
+      src: '/images/lorentzen/slaget-paa-rheden-1802.jpg',
+      artist: { id: 'lorentzen' },
+      museum: { id: 'fnm' },
+      remoteUrl: 'https://example.org/artwork',
+      content_html: [['Slaget paa Rheden']],
+    };
+    get_picture.mockResolvedValue(picture);
+    await expect(buildGlobalTimeline({})).resolves.toEqual([{
+      ...picture, date: '1801-04-02', type: 'image', is_history_item: true,
+    }]);
+  });
+
   it('preserves publication events when life dates are undocumented', async () => {
     const poet = {
       id: 'test-undocumented-dates',

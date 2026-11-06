@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wegener" country="dk" lang="da" type="poet">
+  <!-- Metadata source: DBL1 XVIII348–349; ErslewIII477 explicitly attributes AtheneIII69,352. -->
+  <!-- Kilder: https://runeberg.org/dbl/18/0350.html ; https://runeberg.org/dbl/18/0351.html -->
+  <name>
+    <firstname>Jens Ernst</firstname>
+    <lastname>Wegener</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1781-10-05</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1846-10-15</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>WJErnstWegener</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
