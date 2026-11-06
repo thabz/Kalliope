@@ -202,3 +202,10 @@ Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker efter
 [person-skillens værkregistrering](../add-kalliope-person/references/works.md)
 mod et opdateret JSONL-korpus. Rapporten køres samlet for PR'en og ikke efter
 hvert build.
+
+## Billeder
+
+Når opgaven omfatter kunstbilleder, illustrationer eller kunstneriske forsider,
+brug [fælles billedarbejde](../add-kalliope-picture/SKILL.md)
+(`$add-kalliope-picture`). Titelbladsbehandling følger fortsat
+`$prepare-kalliope-titlepage`.
