@@ -2,6 +2,8 @@
 
 Import til [issue #2091](https://github.com/thabz/Kalliope/issues/2091). Årgangene omfatter bind 57–64; de oprindelige bind og månedshæfter er bevaret under tidsskriftets eksisterende overværk.
 
+PR: [#2181](https://github.com/thabz/Kalliope/pull/2181) (udkast; bind 60 har to ulæselige ord).
+
 ## Afgrænsning og status
 
 76 tekstforekomster: hele digte, sange, epigrammer, versdrama og fabler, herunder hele tekster brugt som eksempler i litteraturteoretiske artikler. Brugerens præcisering er: »Medtag hele digte og fabler; udelad korte verscitater«. De fire prosafabler i bind 59 og Lessings prosafabel i bind 64 er derfor medtaget. Korte verscitater og øvrige prosabidrag er udeladt; nødvendige regier, rollelister og Henriadens indholdsangivelse er bevaret. Omslagsdigte er fortsat uden for det aftalte udvalg.
@@ -145,3 +147,5 @@ Frisk OCR er kun brugt som støtte: Kraken på udvalgte fraktursider og parallel
 - Alle ufiltrerede strukturkandidater er afklaret. Syv fuldstændige reviewcheckpoints er frosset; bind 60 har fortsat de to ovenfor beskrevne åbne tekstfund.
 
 Korrekturattesterne er modelkorrektur, ikke menneskelig slutkorrektur. Brugerens afsluttende kontrol af titelblade, redaktionelle valg og de to åbne tekststeder fremgår af PR-checklisten.
+
+De særskilte Git-kontroller har valideret alle 76 nye tekst-id’er samt korrekturattester og kvalitetsflag ved overgang til komplette facsimileværker.
