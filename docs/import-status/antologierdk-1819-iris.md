@@ -85,8 +85,8 @@ Følgende valg og begrænsninger er bevaret synligt:
   den 7. november 2026; markeringen `[ulæseligt]` og skadesnoten er fjernet.
 - *Naturforskeren* følger trykkets strofer på 2, 5, 6, 10, 3 og 15 linjer.
   En hidtidig blanklinje ved sideskiftet 123/124 er ikke bevaret.
-- *Til nogle Veninder* følger trykkets 16, 8, 8 og 8 linjer; et sideskift
-  skaber ikke en ekstra strofe.
+- *Til nogle Veninder* er opdelt i fem strofer à otte linjer efter brugerens
+  redaktionelle rettelse ved sideskiftet 102/103, efter »Besøge Jorden, himmelfra?«.
 - De trykte former »Vuggenver« i *Skildpaddevise* og »tilHvile« i
   *Retraite* (s. 182) er bevaret efter særskilt billedkontrol.
 
@@ -114,6 +114,18 @@ Det almindelige indbindingsomslag har ingen selvstændig grafisk interesse og
 er derfor ikke oprettet som forsidebillede.
 
 ## Kontroller
+
+Efter brugerens ønske om en intern henvisning er Tegnérs *Jätten Finn*
+indsat som `tegner2026110701` i `tegner/andre.xml` fra
+*Sveriges national-litteratur 1500–1900*, bind 8 (Stockholm: Albert Bonniers
+Förlag, 1911), s. 81–85. Alle 132 verslinjer, 22 sekslinjede strofer,
+førstelinjeindryk og kursiveringen af »namn« er læst mod de fem farvescanninger.
+En uafhængig session (`review_jaetten_finn`) har genkontrolleret hele teksten
+og de fire indførte sideskift; sidste genkontrol 6. november 2026 kl. 23:39:44 UTC.
+Der er ingen resterende læsefund. Alle 35 struktur- og geometrikandidater er
+afklaret mod billederne; variantkontrollen fandt ingen kandidater.
+Noten til *St. Laurentius* lyder: »Tegnérs Jätten Finn baserer sig på samme sagn.«
+Digttitlen bruger `xref` til den nye tekst; der er ingen oversættelsesrelation.
 
 Sideaudit er bestået med 199 poster og ingen afvigelser. Hele facsimilet er
 bygget og synkroniseret; repositoryets facsimilekontrol er bestået. Et fuldt
