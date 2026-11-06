@@ -88,6 +88,12 @@ Følgende valg og begrænsninger er bevaret synligt:
 - De trykte former »Vuggenver« i *Skildpaddevise* og »tilHvile« i
   *Retraite* (s. 182) er bevaret efter særskilt billedkontrol.
 
+CI-tekstkvalitetskontrollen har fire afgrænsede, dokumenterede undtagelser:
+`repeated-adjacent-word` for »den den« (s. 35), »Al al« (s. 49) og
+»og og« (s. 160), samt `internal-uppercase` for »tilHvile« (s. 182).
+Alle fire former er særskilt genkontrolleret mod facsimilet efter CI-signalet.
+Undtagelserne gælder kun de respektive tekstposter; brødteksten er uændret.
+
 ## Udestående titelbladsbillede
 
 Titelbladet på PDF-side 8 er transskriberet og bibliografisk kontrolleret.
