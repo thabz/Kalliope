@@ -42,6 +42,8 @@ uddybende sangnote, dateringer og melodihenvisninger er medtaget.
   genererede korpus finder ingen resterende variantkandidater.
 - *Daphne* er forbundet med den eksisterende latinske Ovid-tekst; det konkrete
   omfang er *Metamorphoses* I, 452–567.
+- Ovid-mottoet til *Retraite* har en dansk redaktionel note med `xref` til
+  *Metamorphoses* VII, v. 293, i den eksisterende latinske tekst.
 - *Et sælsomt Nat-Eventyr* er tilskrevet Hauch med henvisning til Stephan
   Michael Schröders bibliografi i *Literarischer Spuk* (1994), s. 586.
 - Signaturen Joh. Boye under *Retraite* er identificeret som Johannes Boye
