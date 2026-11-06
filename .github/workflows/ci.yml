@@ -42,6 +42,12 @@ jobs:
           HEAD_SHA: ${{ github.sha }}
         run: npm run validate-new-text-ids -- "$BASE_SHA" "$HEAD_SHA"
 
+      - name: Validate new picture metadata
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: npm run validate-new-picture-metadata -- "$BASE_SHA" "$HEAD_SHA"
+
       - name: Validate first facsimile completion
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
