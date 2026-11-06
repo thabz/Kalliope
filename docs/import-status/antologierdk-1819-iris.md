@@ -36,7 +36,8 @@ uddybende sangnote, dateringer og melodihenvisninger er medtaget.
 
 - Hauchs *Naturforskeren* er flyttet fra `hauch/andre.xml` med det eksisterende
   id `hauch2001050101` og den hidtidige bidragyderkreditering bevaret.
-- Hertz' note til `hertz201802209` linker nu til *Hunden til Maanen* i denne udgave.
+- Hertz' trykte fodnote til `hertz201802209` er bevaret uden link; en særskilt
+  redaktionel note henviser med `xref` til *Hunden til Maanen* i denne udgave.
 - Ti tekstligt kontrollerede variantrelationer er indsat. Slutopslaget i det
   genererede korpus finder ingen resterende variantkandidater.
 - *Daphne* er forbundet med den eksisterende latinske Ovid-tekst; det konkrete
