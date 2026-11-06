@@ -1,9 +1,8 @@
 # Iris (1819): kildegrundlag og importstatus
 
-Status 6. november 2026: Hele teksten er indført og gennemgået to gange mod
-facsimilet, med uafhængig slutkorrektur. Importen er fortsat `incomplete`,
-fordi titelbladsbilledets automatiske beskæringskontrol kræver manuel vurdering.
-Der er ikke indsat et titelbladsbillede med en ikke-bestået kontrol.
+Status 7. november 2026: Hele teksten er indført og gennemgået to gange mod
+facsimilet, med uafhængig slutkorrektur. Det brugerbehandlede titelblad er
+indsat efter brugerens udtrykkelige anvisning, og importen er `complete`.
 
 ## Udgave og kilde
 
@@ -79,8 +78,8 @@ Følgende valg og begrænsninger er bevaret synligt:
 
 - Fire usignerede sange er registreret under `anonym1800dk` med udgavenote;
   der er ikke fundet sikker dokumentation for forfatterne.
-- På s. 51 skjuler en blækplet slutningen af ordet efter »naar Du kalde«.
-  `[ulæseligt]` og en redaktionel note markerer skaden uden rekonstruktion.
+- På s. 51 er læsningen »naar Du kalder« indført efter brugerens rettelse
+  den 7. november 2026; markeringen `[ulæseligt]` og skadesnoten er fjernet.
 - *Naturforskeren* følger trykkets strofer på 2, 5, 6, 10, 3 og 15 linjer.
   En hidtidig blanklinje ved sideskiftet 123/124 er ikke bevaret.
 - *Til nogle Veninder* følger trykkets 16, 8, 8 og 8 linjer; et sideskift
@@ -94,18 +93,20 @@ CI-tekstkvalitetskontrollen har fire afgrænsede, dokumenterede undtagelser:
 Alle fire former er særskilt genkontrolleret mod facsimilet efter CI-signalet.
 Undtagelserne gælder kun de respektive tekstposter; brødteksten er uændret.
 
-## Udestående titelbladsbillede
+## Titelbladsbillede
 
 Titelbladet på PDF-side 8 er transskriberet og bibliografisk kontrolleret.
-Billedkandidaten er alene i scratch: `/tmp/kalliope-iris-1819/titlepage/candidate.jpg`.
-Kilden er 1140 × 1827 pixels. Kandidaten bruger rotation −1,84° og beskæring
-`38,93,972,1677` fra det roterede lærred på 1198 × 1863 pixels, uden opskalering.
+Den oprindelige automatiske billedkandidat blev afvist med `manual-review`,
+fordi højre kantbeskæring var 15,69 %, over skillens 8 %-grænse.
 
-QA returnerer `manual-review`: højre kantbeskæring er 15,69 %, over skillens
-8 %-grænse. Venstre, top og bund er henholdsvis 3,17 %, 4,99 % og 4,99 %.
-Efter [titelbladsskillens regel](../../.agents/skills/prepare-kalliope-titlepage/SKILL.md)
-bliver kandidaten derfor i scratch og promoveres ikke. Der mangler en
-beskæring, som består kontrollen, eller en særskilt ændring af billedreglen.
+Brugeren har derefter selv behandlet råbilledet og den 7. november 2026
+udtrykkeligt bedt om at bruge resultatet som titelblad. Den behandlede JPEG
+er kopieret uændret fra skrivebordet til
+`public/images/antologierdk/1819-iris-p1.jpg` uden yderligere billedbehandling.
+Tekst og ornament er visuelt kontrolleret mod råbilledet fra PDF-side 8.
+Den indsatte fil følger brugerens anvisning; den er ikke registreret som en
+automatisk bestået beskæringskontrol.
+
 Det almindelige indbindingsomslag har ingen selvstændig grafisk interesse og
 er derfor ikke oprettet som forsidebillede.
 

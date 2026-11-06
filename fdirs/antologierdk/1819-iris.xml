@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1819-iris" author="antologierdk" status="incomplete" type="anthology">
+<kalliopework id="1819-iris" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>Iris</title>
   <subtitle>En Samling af Poesie og Prosa</subtitle>
@@ -11,6 +11,9 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T21:07:54Z"/>
   </proofreadings>
   <errata status="applied" pages="[upagineret]" facsimile-pages="212"/>
+  <pictures>
+    <picture type="titlepage" src="1819-iris-p1.jpg"><transcription>Iris. // En Samling af Poesie og Prosa. // Udgivet ved J. C. Hauch. // Kiøbenhavn. / Trykt og forlagt af B. Brünnich. / 1819.</transcription></picture>
+  </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122605395205763" facsimile="115208003633-color" facsimile-pages-num="219">
     <title>Iris. En Samling af Poesie og Prosa</title>
     <editor id="hauch">J. C. Hauch</editor>
@@ -572,7 +575,7 @@ Dens Kraft Du sikkert engang sanded';
 Dog maa Du gaae ved Midnatstide
 Hvor Møllens Hiul gaaer rundt for Vandet,
 Hvor Strømmen dybt for Slusen falder.
-Der vil jeg stande, naar Du kalde[ulæseligt]<note editorial="true">Et blækmærke skjuler ordets slutning og tegnsætningen.</note>
+Der vil jeg stande, naar Du kalder
 
 Den Gamle svandt, men halvt kun vaagen
 Mechtilde skialv, forladt af Varme;
