@@ -13,6 +13,10 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 - Brug `$add-kalliope-person` ved personoprettelse og målrettet berigelse.
 - Brug `$add-person-portrait` ved portrætsøgning, portrætmetadata og square-beskæring.
+- Brug `$add-kalliope-picture` ved tilføjelse af kunstbilleder, illustrationer og
+  kunstneriske forsider samt målrettet billedmetadataberigelse. Portræt-skillen
+  bruger den til den fælles billedregistrering; titelbladsbehandling og dagsikoner
+  følger fortsat deres særlige arbejdsgange.
 
 - Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
   en pull request.
