@@ -1272,6 +1272,11 @@ format.
 
 A motto is normally a quotation, not a subtitle.
 
+Always insert a blank line before an attribution or author/translator
+signature, including attributions in mottoes. This is an editorial spacing
+convention even when the print has no extra space; the blank line before an
+attribution does not mark a stanza boundary.
+
 Do not let:
 
 - mottoes
