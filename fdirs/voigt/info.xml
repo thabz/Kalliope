@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="voigt" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Sophia</firstname>
+    <lastname>Voigt</lastname>
+    <fullname>Sophia Voigt</fullname>
+    <pseudonym>Helmina</pseudonym>
+    <pseudonym>Violanta</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1799-01-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <works>1827</works>
+  <identifiers>
+    <danskforfatterleksikon-dk>VSophiaVoigt</danskforfatterleksikon-dk>
+  </identifiers>
+</person>
