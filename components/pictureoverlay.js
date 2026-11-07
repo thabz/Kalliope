@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
+import { pictureCrop } from '../common/picture-crop.js';
 import { CloseButton, DownArrow, LeftArrow, RightArrow } from './icons.js';
 import { FigCaption } from './picture.js';
 import Tooltip from './tooltip.js';
@@ -25,7 +26,8 @@ const ovalIconCenter = (index) => {
 };
 
 const isOvalPicture = (picture) => {
-  return picture.src.indexOf('-oval.jpg') > -1;
+  return picture.src.indexOf('-oval.jpg') > -1 ||
+    picture.clipPath?.startsWith('ellipse(') === true;
 };
 
 const ovalIconStyle = (index) => {
@@ -64,14 +66,20 @@ const BiggerPicture = ({ picture, controls }) => {
   }
 
   let clipPathStyle = {};
-  let clipPathDropShadowStyle = {};
+  let frameStyle = {};
   if (picture.clipPath != null) {
     clipPathStyle = {
       clipPath: picture.clipPath,
       WebkitClipPath: picture.clipPath,
     };
-    clipPathDropShadowStyle = {
-      filter: 'drop-shadow(4px 4px 12px #888)',
+  }
+  const crop = pictureCrop(picture);
+  if (crop != null) {
+    clipPathStyle = { ...clipPathStyle, ...crop.imageStyle };
+    frameStyle = {
+      ...frameStyle,
+      ...crop.frameStyle,
+      width: `min(80vw, ${80 * crop.width / crop.height}vh)`,
     };
   }
 
@@ -81,7 +89,7 @@ const BiggerPicture = ({ picture, controls }) => {
         ovalPicture === true ? ' oval-picture' : ''
       }`}>
       <div className="overlay-image-frame">
-        <div className="overlay-image-shadow" style={clipPathDropShadowStyle}>
+        <div className="overlay-image-shadow" style={frameStyle}>
           <img
             src={fallbackSrc}
             className={imgClassName}
@@ -113,9 +121,6 @@ const BiggerPicture = ({ picture, controls }) => {
         }
         img {
           border: 0;
-        }
-        img {
-          box-shadow: 4px 4px 12px #888;
         }
       `}</style>{' '}
     </figure>

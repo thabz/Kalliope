@@ -70,7 +70,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         subjects,
         year,
         content_raw,
-        content_html: htmlToXml(description, collected),
+        content_html: htmlToXml(description, collected, false, { blockType: 'picture' }),
         note_html: htmlToXml(note, collected),
         identifiers: getIdentifiers(picture, identifierAllowlist.picture),
       };

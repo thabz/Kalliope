@@ -1175,6 +1175,32 @@
         }
       ],
       "targetId": "fuerst2026110301"
+    },
+    {
+      "id": "gyllenborg-arstiderna",
+      "poetId": "gyllenborg",
+      "title": "Årstiderna",
+      "source": "Salmonsen2 X471 nævner digtet som naturskildring; ikke sikkert identificeret blandt de importerede Minerva-tekster.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/gyllenborg/bio.xml",
+          "text": "Årstiderna"
+        }
+      ]
+    },
+    {
+      "id": "hyphoff-aeneide-1-4",
+      "poetId": "hyphoff",
+      "title": "Æneide, I.–IV. Sang",
+      "source": "Erslew1843 I722 dokumenterer Hyphoffs oversættelse af Æneide I–IV i Minerva1803–1805. Disse årgange er uden for denne PR.",
+      "status": "open",
+      "mentions": [
+        {
+          "file": "fdirs/hyphoff/bio.xml",
+          "text": "Virgils Æneide"
+        }
+      ]
     }
   ]
 }

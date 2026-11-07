@@ -11,6 +11,14 @@ const lineTexts = html => htmlToXml(html, collected).map(([line]) => line);
 
 describe('helpers', () => {
   describe('htmlToXml', () => {
+    it('treats caption indentation around metadata comments as XML formatting', () => {
+      const caption = `<!-- metadata checked -->
+    <i>Skúli Thórdarson Thorlacius</i>, ca. 1795,
+    akvarel og grafit på karton.
+    <!-- Kilde og rettigheder. -->`;
+      expect(htmlToXml(caption, collected, false, { blockType: 'picture' }))
+        .toEqual([['<i>Skúli Thórdarson Thorlacius</i>, ca. 1795, akvarel og grafit på karton.', { num: 1, html: true }]]);
+    });
     it.each(['right', 'center'])('keeps <%s> in a footnote from aligning the prose paragraph', tag => {
       const html = `grebes han ogsaa stærkt<footnote>En note. <${tag}>W.</${tag}></footnote>.`;
       expect(htmlToXml(html, collected)).toEqual([
