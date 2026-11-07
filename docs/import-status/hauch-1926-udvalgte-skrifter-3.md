@@ -118,7 +118,8 @@ RELAX NG tillader nu det allerede dokumenterede og renderede `<sub>` i
 almindelig tekst, så indledningens historiske brøkdato kan bevares.
 Sideinventar og historisk OCR-audit håndterer også en personliste i
 `<front>` uden `<body>`. Begge tilfælde har målrettede regressionstests.
-Der er ingen ændring i visningskoden.
+De oprindelige importrettelser ændrede ikke visningskoden. Den efterfølgende
+rettelse af billedtekster er beskrevet nedenfor.
 
 ## Kontroller
 
@@ -132,3 +133,31 @@ bestod med 650 facsimiler og 1.300 kontroller, inklusive den offentlige
 ni tests er sprunget over af repositoryets eksisterende konfiguration.
 Det frosne reviewcheckpoint samler sidejournal, alle kandidatdispositioner
 og de 105 visuelle strukturkontroller. GitHub CI fremgår af PR'en.
+
+## Efterfølgende redaktionel gennemgang
+
+Schjærffs noter er også anbragt ved de relevante tekster: 36 tekstnoter og
+111 fodnoter. Afsnittet *Noter* er bevaret uændret. Hovedteksterne er
+sammenlignet med den gennemgåede import efter fjernelse af de nye fodnoter;
+ordlyd og struktur er uændret. Henvisninger i noterne har fået interne links,
+herunder til de nu indførte tekster *Wandrers Sturmlied* og Horats' Ode I, VII.
+
+*Aftensang* har overtaget id'et `hauch1842a3` og den tidligere redaktionelle
+note; import-id'et er bevaret som alias. Efter flytningen af *Naturforskeren*
+til *Iris* (1819) er Hauchs tomme `andre.xml` slettet. Overflødige serienoter
+er fjernet, og sikre begivenhedsdatoer er tilføjet ved Mynsters død,
+Frederiksborgs brand og naturforskermødets åbning.
+
+Hermansens *Krageflokke* er registreret og vist ved Hostrups *Krager*.
+Originalsiden dokumenterer, at illustrationen stod til Thor Langes
+*Gaaet bort* i *Ude og Hjemme*, 2. april 1882, s. 321. Forbindelsen til
+Hostrups digt er fortsat usikker og fremgår af en redaktionel note.
+
+Indrykning omkring XML-billedtekster og billednoter trimmes nu før
+HTML-konverteringen. Værk- og tekstcache genopbygges ved ændringer i
+billedparseren. En regressionstest kontrollerer billedtekst og billednote;
+browserkontrollen er gemt i
+`docs/screenshots/hostrup-krager-billedtekst.png`.
+
+Efter integration af seneste `master` bestod `make test` med 143 testsuiter
+og 2.533 tests; ni eksisterende tests er sprunget over.

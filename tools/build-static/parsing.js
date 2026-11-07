@@ -69,10 +69,10 @@ const validate_picture_attrs = (pictureNode, onError) => {
 const get_local_picture_content = (pictureNode) => {
   if (getChildByTagName(pictureNode, 'description') != null) {
     return {
-      description: safeGetInnerXML(
+      description: safeTrim(safeGetInnerXML(
         getChildByTagName(pictureNode, 'description')
-      ),
-      note: safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note')),
+      )),
+      note: safeTrim(safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'))),
     };
   }
   return {
