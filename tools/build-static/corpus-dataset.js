@@ -9,7 +9,7 @@ import { loadExternalIdentifiers } from './external-identifiers.js';
 import { poetName } from './formatting.js';
 
 const DATASET_VERSION = 'v1';
-const SCHEMA_VERSION = '1.2.0';
+const SCHEMA_VERSION = '1.3.0';
 const SITE_URL = 'https://kalliope.org';
 const OUTPUT_DIRECTORY = `public/api/${DATASET_VERSION}`;
 const BUILD_STATE_FILE = 'caches/corpus-dataset.json';
@@ -161,6 +161,21 @@ const schema = {
   title: 'Kalliope corpus dataset v1',
   type: 'object',
   '$defs': {
+    catalogueIdentifiers: {
+      type: 'array',
+      minItems: 1,
+      items: {
+        type: 'object',
+        required: ['value'],
+        properties: {
+          value: { type: 'string', pattern: '^[1-9][0-9]*$' },
+          variant: { type: 'string', pattern: '^\\S+$' },
+          witness: { type: 'string', pattern: '^\\S+$' },
+          appendix: { type: 'string', pattern: '^\\S+$' },
+        },
+        additionalProperties: false,
+      },
+    },
     poet: {
       type: 'object',
       required: ['id', 'name', 'country', 'lang', 'type', 'canonical_url'],
@@ -202,6 +217,15 @@ const schema = {
         api_url: { type: 'string', format: 'uri' },
         full_text: { type: 'string' },
         firstline: { type: 'string' },
+        identifiers: {
+          type: 'object',
+          properties: {
+            wikidata: { type: 'string' },
+            'dgf-id': { '$ref': '#/$defs/catalogueIdentifiers' },
+            'dv-id': { '$ref': '#/$defs/catalogueIdentifiers' },
+          },
+          additionalProperties: false,
+        },
         events: {
           type: 'array',
           items: {
@@ -244,6 +268,12 @@ Its optional \`nationality\` field is a modern ISO 3166-1 alpha-2 country code;
 keyed by \`id\`. A text's \`poet_id\` and \`work_id\` reference those files.
 These IDs, relation fields, canonical URLs, and direct API URLs are the v1
 public contract. Other fields may be added compatibly.
+
+Text records may contain \`identifiers\`: \`wikidata\` remains a string;
+\`dgf-id\` and \`dv-id\` are arrays of objects with a positive integer string
+in \`value\` and optional \`variant\`, \`witness\`, and \`appendix\` strings.
+These catalogue numbers are shared classifications, not unique text IDs or
+URL aliases. Qualifiers preserve case and do not form part of the number.
 
 ## Existing JSON resources
 
@@ -375,6 +405,7 @@ const buildTextRecord = (collected, textMeta, textData) => {
     api_url: `${SITE_URL}/${textPath.replace(/^public\//, '')}`,
     full_text: normalizedFullText(textData.text ?? {}),
     keywords: textData.text?.keywords ?? [],
+    identifiers: textData.text?.identifiers ?? textMeta.identifiers,
     source,
     ...buildTextAuditFields(textMeta, textData, source),
     canonical_text_id: textMeta.canonicalTextId ?? textMeta.id,

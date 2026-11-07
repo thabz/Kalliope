@@ -343,6 +343,23 @@
   </define>
   <define name="transcription"><element name="transcription"><text/></element></define>
 
+  <define name="textIdentifiers">
+    <element name="identifiers">
+      <interleave>
+        <optional><ref name="wikidataIdentifier"/></optional>
+        <zeroOrMore><element name="dgf-id"><ref name="catalogueIdentifier"/></element></zeroOrMore>
+        <zeroOrMore><element name="dv-id"><ref name="catalogueIdentifier"/></element></zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+
+  <define name="catalogueIdentifier">
+    <optional><attribute name="variant"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <optional><attribute name="witness"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <optional><attribute name="appendix"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <data type="string"><param name="pattern">[1-9][0-9]*</param></data>
+  </define>
+
   <define name="sourceIdentifiers">
     <element name="identifiers">
       <optional><ref name="wikidataIdentifier"/></optional>
@@ -466,7 +483,14 @@
 
   <define name="prosa"><element name="prosa"><ref name="simpleElement"/></element></define>
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
-  <define name="head"><element name="head"><ref name="headMixed"/></element></define>
+  <define name="head">
+    <element name="head">
+      <interleave>
+        <ref name="headMixed"/>
+        <optional><ref name="textIdentifiers"/></optional>
+      </interleave>
+    </element>
+  </define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
   <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>

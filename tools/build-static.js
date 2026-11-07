@@ -293,7 +293,8 @@ const handle_text = async (
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js',
       'tools/libs/helpers.js',
-      'tools/build-static/toc.js', 'components/poetname-helpers.js',
+      'tools/build-static/toc.js', 'tools/build-static/xml.js',
+      'components/poetname-helpers.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -555,6 +556,7 @@ const handle_text = async (
     section_titles,
     text: {
       id: textId,
+      identifiers: textMeta.identifiers ?? {},
       title: replaceDashes(titleText(title)),
       ...(title.title.indexOf('<') > -1 ?
         { title_html: htmlToXml(title.title, collected, true, {
@@ -956,6 +958,7 @@ const works_first_pass = (collected) => {
     'tools/build-static/edition-reference.js',
     'tools/build-static/source.js',
     'tools/build-static/work-metadata.js',
+    'tools/build-static/xml.js',
     'tools/build-static/text-blocks.js',
     'tools/libs/helpers.js',
   );
@@ -1127,6 +1130,7 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
+          identifiers: getIdentifiers(head, identifierAllowlist.text),
           editionSource: resolveEditionSource({
             sourceNode: getChildByTagName(head, 'source'),
             workSources: editionWorkSources,
