@@ -51,6 +51,34 @@ describe('artwork references', () => {
   });
 });
 
+describe('picture captions', () => {
+  it('keeps XML indentation out of rendered captions and picture notes', async () => {
+    const document = new DOMParser().parseFromString(`
+      <picture src="krager.jpg">
+        <description>
+          O. A. Hermansen: <i>Krageflokke</i>, 1882.
+        </description>
+        <picture-note>
+          Trykt i <i>Ude og Hjemme</i>.
+        </picture-note>
+      </picture>
+    `, 'text/xml');
+    const picture = await get_picture(
+      document.documentElement,
+      '/images/kunst',
+      { museums: new Map() },
+      message => { throw new Error(message); },
+    );
+
+    expect(picture.content_html.map(([line]) => line)).toEqual([
+      'O. A. Hermansen: <i>Krageflokke</i>, 1882.',
+    ]);
+    expect(picture.note_html.map(([line]) => line)).toEqual([
+      'Trykt i <i>Ude og Hjemme</i>.',
+    ]);
+  });
+});
+
 describe('titeludtrækning', () => {
   it('fjerner et tomt nummerfelt fra en indholdsfortegnelsestitel', () => {
     const doc = new DOMParser().parseFromString(

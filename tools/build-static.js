@@ -289,6 +289,7 @@ const handle_text = async (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
     collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
+      'tools/build-static/artwork.js', 'tools/build-static/parsing.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js',
       'tools/libs/helpers.js',
@@ -1269,6 +1270,8 @@ const works_second_pass = async (collected) => {
       const sourceFiles = new Set([
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/artwork.js',
+        'tools/build-static/parsing.js',
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
         'tools/build-static/textrefs.js',

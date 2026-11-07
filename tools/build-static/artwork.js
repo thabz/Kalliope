@@ -10,15 +10,12 @@ import { imageSizeSync } from './image.js';
 import {
   loadXMLDoc,
   safeGetAttr,
-  safeGetInnerXML,
   safeGetInnerXMLWithout,
   getIdentifiers,
   identifierAllowlist,
   getElementsByTagName,
-  getChildByTagName,
-  safeTrim,
 } from './xml.js';
-import { get_picture, validate_picture_attrs } from './parsing.js';
+import { get_local_picture_content, get_picture, validate_picture_attrs } from './parsing.js';
 import { build_museum_url } from './museums.js';
 import { mapLimit } from './concurrency.js';
 
@@ -43,16 +40,7 @@ const readArtworkFile = async (personId, artworkFilename, collected) => {
         // Make sure we rebuild the affected bio page.
         markFileDirty(`fdirs/${subjectId}/portraits.xml`);
       });
-      let description = null;
-      let note = null;
-      if (getChildByTagName(picture, 'description') != null) {
-        description = safeGetInnerXML(
-          getChildByTagName(picture, 'description')
-        );
-        note = safeGetInnerXML(getChildByTagName(picture, 'picture-note'));
-      } else {
-        description = safeTrim(safeGetInnerXMLWithout(picture, ['identifiers']));
-      }
+      const { description, note } = get_local_picture_content(picture);
 
       const src = `/images/${personId}/${pictureId}.jpg`;
       const size = await imageSizeSync(`public${src}`);

@@ -70,7 +70,9 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
   for (const entry of textEntries(document)) {
     const textId = entry.getAttribute('id') ?? '';
     const inventoryRows = byText.get(textId) ?? [];
-    const pages = ocrPageStreams(directChild(entry, 'body'), inventoryRows[0] ?? {});
+    const body = directChild(entry, 'body') ?? directChild(entry, 'front');
+    if (body == null) continue;
+    const pages = ocrPageStreams(body, inventoryRows[0] ?? {});
     const pageOccurrences = new Map();
     pages.forEach((page, pageIndex) => {
       const facsimile = page.metadata?.facsimile;

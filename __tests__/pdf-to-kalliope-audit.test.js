@@ -65,6 +65,26 @@ Sidste linje</poetry></body>
 </kalliopework>`;
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('inventories and checks a standalone cast list without a body', () => {
+    const xml = `<kalliopework id="1929" author="hauch">
+<workhead><title>Digte</title><source facsimile="book" facsimile-pages-num="50"/></workhead>
+<workbody><text id="cast" skip-index="true">
+<head><title>Personerne</title><source pages="3" facsimile-pages="41"/></head>
+<front><castList><castItem><role>John,</role> <roleDesc>en fom gammel Bonde.</roleDesc></castItem></castList></front>
+</text></workbody></kalliopework>`;
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(inventory).toEqual([expect.objectContaining({
+      text_id: 'cast', printed_page: '3', facsimile: '040.jpg',
+      first_line: 'John, en fom gammel Bonde.',
+    })]);
+    expect(historicalOcrCandidates({ xml, inventory })).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        text_id: 'cast', rule: 'likely-long-s-substitution', match: 'fom',
+        printed_page: '3', facsimile: '040.jpg',
+      }),
+    ]));
+  });
+
   it('distinguishes physical pages with a repeated printed page number', () => {
     const xml = workXml.replace('n="12"', 'n="11"');
     const inventory = buildPageInventory({ xml, includeExpectedPages: false }).map(row => ({
