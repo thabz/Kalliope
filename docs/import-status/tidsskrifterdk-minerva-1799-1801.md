@@ -169,10 +169,6 @@ Henvisningen »See dette Maanedsskrift Mai 1799« er forklaret i en Kalliope-not
 
 Portrættet af Skúli Thorlacius har en oval maske uden guldrammen, registreret på kunstværket, så den gælder både biografi, museum og forstørrelse. Layoutet bruger maskens synlige mål. Square-filen ligger hos Thorlacius. Skygger er fjernet også fra masker og forstørrelser. XML-indrykning i billedtekster giver ikke længere ekstra mellemrum. Marginaltekster i digte renderes som formateret tekst, så `<w>` omkring talernavne ikke slipper ud som bogstavelige tags.
 
-![Museumssiden med korrekt maske, bredde og billedtekst uden skygge](../screenshots/minerva-1799-1801-museum.png)
-
-![Talernavne i Turtelduen og Vandreren](../screenshots/minerva-1799-1801-dialog.png)
-
 ## Tilføjede originaltekster
 
 Der er indsat 22 selvstændige originaltekster og konkrete oversættelsesrelationer. De tre allerede trykte originaler på fransk, islandsk og nederlandsk er bevaret med deres relationer. Originalværkerne står som `incomplete`, fordi kun de relevante tekster er medtaget. De nye originaltekster har kvalitetsflaget `kilde`; de er ikke erklæret færdige med to uafhængige korrekturrunder. Minerva-teksternes hidtidige korrekturstatus er bevaret.

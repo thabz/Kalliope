@@ -156,8 +156,7 @@ Hostrups digt er fortsat usikker og fremgår af en redaktionel note.
 Indrykning omkring XML-billedtekster og billednoter trimmes nu før
 HTML-konverteringen. Værk- og tekstcache genopbygges ved ændringer i
 billedparseren. En regressionstest kontrollerer billedtekst og billednote;
-browserkontrollen er gemt i
-`docs/screenshots/hostrup-krager-billedtekst.png`.
+browserkontrollen bekræftede billedtekst uden ekstra mellemrum.
 
 Efter integration af seneste `master` bestod `make test` med 143 testsuiter
 og 2.533 tests; ni eksisterende tests er sprunget over.

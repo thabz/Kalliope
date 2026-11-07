@@ -92,6 +92,8 @@ digtere.
 
 ## Git og GitHub
 
+- Gem aldrig screenshots i repositoryet. Skærmskud til PR'er skal vedhæftes
+  eller hostes uden for Git; lokale arbejdsfiler skal ligge uden for repositoryet.
 - Når en kodeændring medfører ændringer i UI, skal PR'en altid ledsages af
   et skærmskud af den ændrede visning. Indsæt skærmskuddet i PR-beskrivelsen,
   så ændringen kan vurderes direkte i PR'en.
