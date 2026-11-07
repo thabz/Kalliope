@@ -6,7 +6,7 @@ PR: [#2181](https://github.com/thabz/Kalliope/pull/2181) (udkast; bind 60 har to
 
 ## Afgrænsning og status
 
-76 tekstforekomster: hele digte, sange, epigrammer, versdrama og fabler, herunder hele tekster brugt som eksempler i litteraturteoretiske artikler. Brugerens præcisering er: »Medtag hele digte og fabler; udelad korte verscitater«. De fire prosafabler i bind 59 og Lessings prosafabel i bind 64 er derfor medtaget. Korte verscitater og øvrige prosabidrag er udeladt; nødvendige regier, rollelister og Henriadens indholdsangivelse er bevaret. Omslagsdigte er fortsat uden for det aftalte udvalg.
+75 tekstforekomster: hele digte, sange, epigrammer, versdrama og fabler, herunder hele tekster brugt som eksempler i litteraturteoretiske artikler. Brugerens præcisering er: »Medtag hele digte og fabler; udelad korte verscitater«. De fire prosafabler i bind 59 og Lessings prosafabel i bind 64 er derfor medtaget. Korte verscitater og øvrige prosabidrag er udeladt; nødvendige regier, rollelister og Henriadens indholdsangivelse er bevaret. Omslagsdigte er fortsat uden for det aftalte udvalg.
 
 Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet kandidatkontrol, kvalitetsflag og korrekturattest. Bind 60 er `incomplete` på grund af to ulæselige ord; der mangler ingen facsimilesider i det medtagne udvalg.
 
@@ -17,7 +17,7 @@ Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet
 | 59 | Januar–marts 1800 | 37 | [Ll43AAAAMAAJ](https://books.google.com/books?id=Ll43AAAAMAAJ) | 406 | Afsluttet modelkorrektur |
 | 60 | April–juni 1800 | 6 | [G183AAAAMAAJ](https://books.google.com/books?id=G183AAAAMAAJ) | 392 | Ufuldstændigt: to ord |
 | 61 | Juli–september 1800 | 5 | [j183AAAAMAAJ](https://books.google.com/books?id=j183AAAAMAAJ) | 398 | Afsluttet modelkorrektur |
-| 62 | Oktober–december 1800 | 11 | [OmA3AAAAMAAJ](https://books.google.com/books?id=OmA3AAAAMAAJ) | 396 | Afsluttet modelkorrektur |
+| 62 | Oktober–december 1800 | 10 | [OmA3AAAAMAAJ](https://books.google.com/books?id=OmA3AAAAMAAJ) | 396 | Afsluttet modelkorrektur |
 | 63 | Januar–marts 1801 | 6 | [nWA3AAAAMAAJ](https://books.google.com/books?id=nWA3AAAAMAAJ) | 360 | Afsluttet modelkorrektur |
 | 64 | April–juni 1801 | 5 | [MmE3AAAAMAAJ](https://books.google.com/books?id=MmE3AAAAMAAJ) | 356 | Afsluttet modelkorrektur |
 
@@ -34,7 +34,7 @@ Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet
 | 59 / Januari Maaned | kingo | [Gud holdt paa mig, og jeg holdt Christian den femte](https://kalliope.org/da/text/kingo2026110601) | 17 |
 | 59 / Januari Maaned | kingo | [Gak hudeflettet Bog, du tør vel Plaster finde](https://kalliope.org/da/text/kingo2026110602) | 20 |
 | 59 / Januari Maaned | kingo | [Mægtigste Herre og Himmelens Ære!](https://kalliope.org/da/text/kingo2026110603) | 24-29 |
-| 59 / Januari Maaned | kingo | [de svenskes Valet fra Tydskland](https://kalliope.org/da/text/kingo2026110604) | 60-61 |
+| 59 / Januari Maaned | kingo | [De svenskes Valet fra Tydskland](https://kalliope.org/da/text/kingo2026110604) | 60-61 |
 | 59 / Januari Maaned | baggesen | [Kreds-Sang](https://kalliope.org/da/text/baggesen2026110601) | 88-90 |
 | 59 / Februari Maaned | rahbek | [Fronderiet](https://kalliope.org/da/text/rahbek2026110612) | 179-181 |
 | 59 / Februari Maaned | rahbek | [Fuglenes Vittigheds-Academie](https://kalliope.org/da/text/rahbek2026110613) | 181-184 |
@@ -84,7 +84,6 @@ Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet
 | 62 / October 1800 | pram | [Sigrids Sang](https://kalliope.org/da/text/pram2026110601) | 26-27 |
 | 62 / October 1800 | brun | [Den glade Kones Sang](https://kalliope.org/da/text/brun2026110601) | 27-29 |
 | 62 / October 1800 | hoeghguldbergf | [Den gamle Hans](https://kalliope.org/da/text/hoeghguldbergf2026110606) | 29-33 |
-| 62 / October 1800 | hyphoff | [Indhold](https://kalliope.org/da/text/hyphoff2026110601) | 58 |
 | 62 / October 1800 | hyphoff | [Den anden Sang af Voltaires Henriade](https://kalliope.org/da/text/hyphoff2026110602) | 58-73 |
 | 62 / November 1800 | wedel | [I. Idyll](https://kalliope.org/da/text/wedel2026110601) | 104-106 |
 | 62 / November 1800 | wedel | [Den V. Idyll](https://kalliope.org/da/text/wedel2026110602) | 106 |
@@ -120,15 +119,15 @@ Nasjonalbibliotekets april 1800-tryk har afklaret Bornemanns »dig jeg hylder« 
 
 ## Personer, biografier og billeder
 
-12 nye egentlige personer: Bornemann, Niels Blicher, Gyllenborg, Gleim, Willamov, Peter August Wedel, Jacob Zacharias Hyphoff, Christopher Schrøder Andresen, Mathias Hagerup, Jón Þorláksson, Skúli Þórðarson Thorlacius og Niels Christian Larsen. Dertil er oprettet en nederlandsk anonym samlepost. Identiteterne er dokumenteret i personernes metadata og kildebiografier.
+13 nye egentlige personer: Bornemann, Niels Blicher, Gyllenborg, Gleim, Willamov, Peter August Wedel, Jacob Zacharias Hyphoff, Christopher Schrøder Andresen, Mathias Hagerup, Jón Þorláksson, Skúli Þórðarson Thorlacius Niels Christian Larsen og Johann Adolf Schlegel. Dertil er oprettet en nederlandsk anonym samlepost. Identiteterne er dokumenteret i personernes metadata og kildebiografier.
 
-11 hele kildebiografier fra DBL 1, Salmonsen 2 samt reservekilderne Erslew og Ehrencron-Müller er transskriberet og kontrolleret mod facsimiler af to sessioner. Willamovs forgæves biografisøgning er dokumenteret i info.xml. Portrætter er verificeret hos Nationalmuseum (Gyllenborg), Rijksmuseum (Gleim) og Thorvaldsens Museum (Thorlacius, via kunstnerens artwork). Originaler og kvadratiske beskæringer er visuelt kontrolleret; mål, kunstnere og rettigheder er registreret. De øvrige personer har ingen sikkert dokumenteret brugbar portrætfil.
+11 hele kildebiografier fra DBL 1, Salmonsen 2 samt reservekilderne Erslew og Ehrencron-Müller er transskriberet og kontrolleret mod facsimiler af to sessioner. Willamovs og Johann Adolf Schlegels forgæves biografisøgninger er dokumenteret i info.xml. Portrætter er verificeret hos Nationalmuseum (Gyllenborg), Rijksmuseum (Gleim) og Thorvaldsens Museum (Thorlacius, via kunstnerens artwork). Originaler og kvadratiske beskæringer er visuelt kontrolleret; mål, kunstnere og rettigheder er registreret. Johann Adolf Schlegel har desuden fået et dokumenteret portræt af G. W. Thielo. De øvrige personer har ingen sikkert dokumenteret brugbar portrætfil.
 
 Dokumenterede væsentlige poetiske udgaver er registreret som bibliografiske blankværker med tom workbody. Gleims 1811–1813-udgave, Jóns 1842–1843-samling og Willamovs 1779-udgave er posthume; de er ikke betegnet som komplette forfatterautoriserede standardudgaver. For Gyllenborg er 1795-samlingerne, 1797-teaterværkerne og 1798-poetikken registreret særskilt. Ingen gældende komplet kritisk standardudgave kunne sikkert dokumenteres for disse forfatterskaber.
 
 ## Usikkerheder og redaktionelle valg
 
-- Uidentificerede oversættere står under den passende anonyme samlepost. Forbindelser til kendte originalforfattere ligger i noter; der er ikke tilskrevet oversættelser til artiklens forfatter alene på grund af placeringen. Schlegel er bevaret som trykt tilskrivning uden usikker personidentifikation.
+- Uidentificerede oversættere står under den passende anonyme samlepost. Forbindelser til kendte originalforfattere ligger i noter; der er ikke tilskrevet oversættelser til artiklens forfatter alene på grund af placeringen. »Kragen« er identificeret som en fri gendigtning af Johann Adolf Schlegels »Die Krähe«.
 - De samtidige franske, islandske og nederlandske originaler er forbundet med de konkrete danske oversættelser. Islandsk ortografi er bevaret som trykt, uden modernisering. Thorlacius-signaturen er trykt »Th. St.« og bevaret sådan, med forklarende note om personen.
 - Nyerups Peder Andreas Wedel er identificeret som DBL-personen Peter August ved individuelle biografiske kendetegn; P. A. Wedel-signaturen er bevaret. Christopher Schrøder Andresen er en anden end den allerede registrerede Claus Andresen.
 - Hagerups fødselsår 1765 følger DBL 1. En senere bibliografisk oplysning peger på dåb 1767; konflikten er noteret og ikke udjævnet ved et gæt.
@@ -149,8 +148,52 @@ Frisk OCR er kun brugt som støtte: Kraken på udvalgte fraktursider og parallel
 
 Korrekturattesterne er modelkorrektur, ikke menneskelig slutkorrektur. Brugerens afsluttende kontrol af titelblade, redaktionelle valg og de to åbne tekststeder fremgår af PR-checklisten.
 
-De særskilte Git-kontroller har valideret alle 76 nye tekst-id’er samt korrekturattester og kvalitetsflag ved overgang til komplette facsimileværker.
+De særskilte Git-kontroller har valideret alle 75 nye tekstposter samt korrekturattester og kvalitetsflag ved overgang til komplette facsimileværker. Henriade-indledningen er en del af sangen og har ikke et særskilt tekst-id eller alias.
+
+Efterkontrol af Baggesens »Kreds-Sang« på 88–90 har rettet en manglende strofegrænse ved sideskiftet 88→89: digtet har seks strofer à syv vers. Analyseforslaget efter vers 7 var tidligere fejlagtigt afvist alene på grund af manglende synligt strofemellemrum ved sidegrænsen. Kustoderne »Livets« på 88 og »Høit!« på 89 gentager næste sides første ord; de er ikke vers og angiver ikke strofegrænser. Ved 89→90 fortsætter femte strofe med sine sidste tre vers.
 
 CI-kontrollen af nabogentagelser fandt seks trykte gentagelser i fem tekster: »aldrig aldrig« (bind 59, 290), »al al« (bind 59, 300), »Farver Farver« og »Billed Billed« (bind 60, 213), »alle alle« (bind 62, 302) og »snarlig snarlig« (bind 63, 162). Alle fem sider er genlæst direkte; ordlyden bevares. Hver berørt tekst har en dokumenteret undtagelse alene for `repeated-adjacent-word`.
 
 De nye personer har eksplicitte, traditionsspecifikke litteraturperioder. Jón Þorláksson er henført til islandsk oplysningstid; perioden er tilføjet med kildehenvisninger til Ingi Sigurðssons periodeundersøgelse og Ástráður Eysteinssons analyse af Þorlákssons oversættelser. Den parallelle danske oversættelse i bind 61 har en eksplicit henvisning til samme facsimile, så begge sprog bevarer deres selvstændige sideforløb.
+
+
+## Efter brugerens gennemgang
+
+Afsluttende forfattersignaturer og kildeangivelser har fået en blank linje over sig. Reglen er præciseret i `pdf-to-kalliope`, sammen med kontrollen af strofegrænser ved sideskift. De 32 fede underoverskrifter i Niels Blichers »Viisdoms og Dyds Tabel« har blanke linjer omkring sig. Steen Steensen Blichers biografi linker nu til hans far Niels Blicher.
+
+»Viisdoms og Dyds Tabel« har fået 38 redaktionelle henvisningsfodnoter. De kanoniske bibelsteder linker til Kalliopes bibel. Fire citater er fra Siraks Bog, som Kalliope ikke har; disse noter angiver bogen og versene uden at opfinde interne links. Det trykte »Matth. 10« er bevaret, mens noten henviser korrekt til Matthæus 22,39. Den eksisterende stavemåde `efersene` i Kalliopes kapitel-id'er understøttes i bibelhenvisningerne.
+
+Henriadens indholdsangivelse er samlet med anden sang som `hyphoff2026110602`. Det bortfaldne `hyphoff2026110601` er ikke bevaret som alias. Shakespeare-teksten har efter brugerens ønske kun nøgleordet `shakespeare`; den tidligere note om en ukendt original er fjernet.
+
+Henvisningen »See dette Maanedsskrift Mai 1799« er forklaret i en Kalliope-note ved Rahbeks gravskrift. Den gælder artiklen om Nordens Pagt, maj 1799, s. 239–242; den konkrete begyndelsesside er kontrolleret i HathiTrust og linket i noten.
+
+Portrættet af Skúli Thorlacius har en oval maske uden guldrammen, registreret på kunstværket, så den gælder både biografi, museum og forstørrelse. Layoutet bruger maskens synlige mål. Square-filen ligger hos Thorlacius. Skygger er fjernet også fra masker og forstørrelser. XML-indrykning i billedtekster giver ikke længere ekstra mellemrum. Marginaltekster i digte renderes som formateret tekst, så `<w>` omkring talernavne ikke slipper ud som bogstavelige tags.
+
+![Museumssiden med korrekt maske, bredde og billedtekst uden skygge](../screenshots/minerva-1799-1801-museum.png)
+
+![Talernavne i Turtelduen og Vandreren](../screenshots/minerva-1799-1801-dialog.png)
+
+## Tilføjede originaltekster
+
+Der er indsat 22 selvstændige originaltekster og konkrete oversættelsesrelationer. De tre allerede trykte originaler på fransk, islandsk og nederlandsk er bevaret med deres relationer. Originalværkerne står som `incomplete`, fordi kun de relevante tekster er medtaget. De nye originaltekster har kvalitetsflaget `kilde`; de er ikke erklæret færdige med to uafhængige korrekturrunder. Minerva-teksternes hidtidige korrekturstatus er bevaret.
+
+| Forfatter | Originaler | Registreret udgave |
+| --- | --- | --- |
+| Gyllenborg | Andra Sången; Fjerde Sången | *Försök om Skaldekonsten*, Stockholm, Johan A. Carlbohm, 1798, s. 26–46 og 64–78. Farvescanning fra Lund via Alvin, fundet gennem Libris. |
+| Kellgren | Afvunden; Fronderiet; Foglarnes Vitterhets-Academie | *Samlade skrifter* II, Ek og Sjöding, Bonnier, 1939, s. 115–119, 217–218 og 175–178. Litteraturbankens kritiske udgave. De nye tekster har en særskilt kilde uden den eksisterende én-sides facsimilebindings offset. |
+| Gleim | Der Wandrer und die Turteltaube | *Ausgewählte Werke*, Leonhard Lier, Reclam, 1885, s. 140, digital tekst fra TextGrid. Søgning i samtidige fabler hos BSB/Internet Archive gav ingen tilgængelig transskription; den nyere sikkert identificerede udgave er brugt. |
+| Lessing | Merops; Der Esel und das Jagdpferd; Zevs und das Schaf | *Fabeln. Drey Bücher*, Berlin, Voß, 1759, s. 28, 7 og 57–58. DTA. |
+| Willamov | Die Katze, die alte und die junge Maus | *Dialogische Fabeln*, ny forbedret udgave, Berlin, Karl Matzdorff, 1791, s. 27–28. BSB. |
+| Johann Adolf Schlegel | Die Krähe | *Fabeln und Erzählungen*, ved Carl Christian Gärtner, Leipzig, Dyck, 1769, s. 104–105. BSB. Den danske tekst erstatter Haller med Tullin og Ewald. |
+| Florian | L’Amour et sa mère; Myson; Le Grillon; Le Chien coupable; La Guenon, le Singe & la Noix | *Collection complète*, bind 9, Neufchâtel, Louis Fauche-Borel, 1793, s. 131, 98, 92–93, 192–195 og 161. Sidetilknyttet Wikisource-transskription kontrolleret mod trykket. |
+| Gellert | Der Informator | *Sämmtliche Schriften* I, Leipzig, 1769, s. 227–229. Wikisources kildekontrollerede transskription. |
+| Ovid | Oenone Paridi, Heroides V | Ehwald/Merkels Teubner-udgave fra 1907, digitaliseret af Perseus. Udgavens accepterede tekst er bevaret, herunder indrykkede pentametre; forkastede vers og kritisk apparat er udeladt. |
+| Moschos | Eros på flugt; havfragmentet; den pløjende Eros | Edmonds, *The Greek Bucolic Poets*, 1916, s. 422–424, 458 og 460, Perseus. Havdigtet er moderne fragment IV, selv om Minerva kalder det den femte idyl. |
+| Voltaire | Henriaden, anden sang med argument | Molands *Œuvres complètes* VIII, Garnier, 1877, s. 66–87, Wikisource. Samtidige tryk er opsporet hos NYPL og Landesbibliothek Oldenburg; den tilgængelige sidetilknyttede transskription er brugt. Særskilte historiske og tekstkritiske noter fra udgaven er ikke indført. |
+
+De nyere originaludgaver er valgt, hvor en samtidig tekstversion ikke var tilgængelig som egnet transskriptionsgrundlag. Der hævdes ikke, at oversætterne benyttede netop disse senere udgaver. Identifikationen hviler på gennemgående tekstligt sammenfald, karakteristiske formuleringer, begyndelse/slutning og teksternes omfang. Rahbeks fjerde sang er en bearbejdelse med udeladelser og danske tilpasninger.
+
+Johann Adolf Schlegel er oprettet som en særskilt digter med dokumenterede livsdata og portræt af G. W. Thielo. Der findes ikke et personopslag om ham i de undersøgte Salmonsen-udgaver; den negative søgning er registreret. Hans sidste digtsamling fra 1787–1789 og den videnskabeligt ledsagede 1965-genudgivelse af fablerne er registreret som blankværker. August Wilhelm von Schlegel er fortsat en anden person.
+
+
+Den afsluttende `make test` efter gennemgangsrettelserne bestod med 142 testsuiter og 2.503 tests; én suite og ni tests blev som normalt sprunget over. `check-text-quality` fandt ingen fejl. Static-build og ønskeregisterkontrol bestod. Alle nye digt-originaler er kontrolleret for variantkandidater; ingen dubletter blev fundet. Lessings tre prosafabler har efter XML-formatets regel ingen `firstline`; i stedet er deres begyndelser kontrolleret direkte mod det genererede JSONL-korpus uden andre fund end de tre nye tekster.

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useContext, useState } from 'react';
 import CommonData from '../common/commondata.js';
 import * as ImagePaths from '../common/imagepaths.js';
+import { pictureCrop } from '../common/picture-crop.js';
 import LangContext from '../common/LangContext.js';
 import _ from '../common/translations.js';
 import * as Links from './links.js';
@@ -171,7 +172,6 @@ const Picture = ({
   imgClassName,
   hideArtist = false,
   hideMuseum = false,
-  showDropShadow = true,
   clickToZoom = true,
   startIndex = 0,
   sizes = '(max-width: 767px) 47vw, 250px',
@@ -188,22 +188,24 @@ const Picture = ({
   if (picture.src.indexOf('-oval.jpg') > -1) {
     pictureClassName += 'oval-mask';
   }
-  if (showDropShadow == true) {
-    pictureClassName += ' with-drop-shadow';
-  }
   if (clickToZoom == true) {
     pictureClassName += ' clickable';
   }
 
   let clipPathStyle = {};
-  let clipPathDropShadowStyle = {};
+  let frameStyle = {};
   if (picture.clipPath != null) {
     clipPathStyle = {
       clipPath: picture.clipPath,
       WebkitClipPath: picture.clipPath,
     };
-    clipPathDropShadowStyle = {
-      filter: 'drop-shadow(4px 4px 12px #888)',
+  }
+  const crop = pictureCrop(picture);
+  if (crop != null) {
+    clipPathStyle = { ...clipPathStyle, ...crop.imageStyle };
+    frameStyle = {
+      ...frameStyle,
+      ...crop.frameStyle,
     };
   }
 
@@ -246,7 +248,7 @@ const Picture = ({
           sizes={sizes}
           className={pictureClassName}
           onClick={onClick}
-          style={clipPathDropShadowStyle}
+          style={frameStyle}
           imgClassName={pictureClassName}
           imgStyle={clipPathStyle}
           width="100%"
@@ -275,8 +277,6 @@ const Picture = ({
         }
         :global(.sidebar-picture img) {
           border: 0;
-        }
-        :global(.sidebar-picture img.with-drop-shadow) {
         }
         :global(.sidebar-picture img.clickable) {
           cursor: pointer;
