@@ -606,9 +606,14 @@ const TextContent = (props) => {
       return (
         <div
           className={className}
-          data-num={lineOptions.displayNum || lineOptions.margin}
+          data-num={lineOptions.displayNum}
           key={keyPrefix + i}>
           {anchor}
+          {lineOptions.margin != null && (
+            <span className="poem-margin-text">
+              {renderXmlString(lineOptions.margin)}
+            </span>
+          )}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
       );
@@ -679,7 +684,9 @@ const TextContent = (props) => {
           margin-top: 0.25em;
         }
         :global(.poem-line.with-margin-text::before) {
-          content: attr(data-num);
+          display: none;
+        }
+        :global(.poem-margin-text) {
           color: black;
           margin-right: 1em;
           width: 3.5em;

@@ -21,6 +21,7 @@ describe('artwork references', () => {
       artistId: artist.id,
       src: '/images/roed/kingo.jpg',
       year: '1869',
+      clipPath: 'ellipse(31% 33% at 49.5% 51%)',
       content_html: [['Thomas Kingo']],
     }]]),
   };
@@ -35,7 +36,18 @@ describe('artwork references', () => {
     });
     expect(picture).toMatchObject({
       artist, year, primary: true, src: '/images/roed/kingo.jpg',
+      clipPath: 'ellipse(31% 33% at 49.5% 51%)',
     });
+  });
+
+  it('allows a reference to override the artwork mask', async () => {
+    const node = new DOMParser().parseFromString(
+      '<picture artwork="roed/kingo" clip-path="circle(40%)"/>', 'text/xml',
+    ).documentElement;
+    const picture = await get_picture(node, '/images/kingo', collected, message => {
+      throw new Error(message);
+    });
+    expect(picture.clipPath).toBe('circle(40%)');
   });
 });
 

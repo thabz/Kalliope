@@ -988,6 +988,15 @@ the status merely because the analyzer emitted no line-level candidates.
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
 
+At a page boundary, the absence of a visible inter-stanza gap is not evidence
+that the stanza continues: the page layout may conceal the gap. Compare both
+pages together and assess complete verse lines, syntax, rhyme and repeated
+indentation. Establish a boundary from converging source-based evidence;
+equalizing stanza lengths alone is insufficient. Record the reasoning when a
+page boundary conceals the spacing. Exclude catchwords (Danish: kustoder) from
+the verse text: they repeat the next page's opening word and indicate neither
+the presence nor the absence of a stanza boundary.
+
 ### Rerun structural analysis from the final XML
 
 The first analysis performed during transcription is not the final check.
@@ -1144,12 +1153,15 @@ For every poem, record in scratch working data at least:
 - the disposition of every candidate against the page image;
 - the reviewer who performed the visual comparison.
 
-Treat each blank line in `<poetry>` as an editorial claim that the print has a
-visible stanza boundary. Verify every existing XML blank line against the page
-image, and verify conversely that every visible stanza boundary is represented
-in XML. Count the verse lines between boundaries and compare those counts with
-the visual record. Do not infer a boundary from OCR whitespace, OCR text
-blocks, line coordinates, rhyme, metre or a preferred regular form.
+Except for the editorial spacing before signatures and source credits in
+section 12, treat each blank line in `<poetry>` as an editorial claim that the
+print has a visible stanza boundary. Verify every stanza-separating XML blank
+line against the page image, and verify conversely that every visible stanza
+boundary is represented in XML. Count the verse lines between boundaries and
+compare those counts with the visual record. Do not infer a boundary from OCR
+whitespace, OCR text blocks, line coordinates, rhyme, metre or a preferred
+regular form alone. For boundaries concealed by a page break, follow the
+combined-evidence assessment in section 9 rather than requiring a visible gap.
 
 Inspect indentation independently of stanza boundaries. OCR commonly turns an
 indented line into a separate text block; a recurring failure pattern is a
@@ -1272,10 +1284,15 @@ format.
 
 A motto is normally a quotation, not a subtitle.
 
-Always insert a blank line before an attribution or author/translator
-signature, including attributions in mottoes. This is an editorial spacing
-convention even when the print has no extra space; the blank line before an
-attribution does not mark a stanza boundary.
+Always separate a closing author or translator signature (Danish:
+forfattersignatur) or source credit (kildeangivelse) from the poem or prose
+with one blank XML line. Apply the same spacing to attributions in mottoes.
+For a signature or credit spanning several lines, insert the blank line before
+the first line of the block and keep its continuation lines together. Preserve
+the wording, alignment and typographic markup. This is an editorial spacing
+convention even when the print has no extra space; it does not mark a stanza
+boundary. During the final review, inspect the ending of every included poem
+for this spacing, including signatures without `<right>` markup.
 
 Do not let:
 
@@ -1523,6 +1540,8 @@ Explicitly verify that:
 - afterwords are included
 - relevant dedications are included
 - relevant mottoes are included
+- every closing author/translator signature and source credit is separated
+  from the text by one blank XML line, including multiline signature blocks
 - relevant editorial notes are included
 - footnotes have not been dropped
 - no continuation over a page boundary is missing
@@ -1805,9 +1824,11 @@ For a complete import, all applicable items below must be true:
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.
-- [ ] Every XML blank line in `<poetry>` was verified as a visible printed
-      stanza boundary, and every visible printed stanza boundary is represented
-      in XML.
+- [ ] Every stanza-separating XML blank line in `<poetry>` was verified as a
+      visible printed stanza boundary, and every visible printed stanza boundary
+      is represented in XML; boundaries concealed by a page break were assessed
+      as specified in section 9. Editorial spacing before signatures and source
+      credits follows section 12.
 - [ ] Every verse line's horizontal position was visually checked; indented
       lines were not converted to stanza breaks or flattened by OCR.
 - [ ] Every relevant page was visually checked for italic, letterspaced and
@@ -1835,8 +1856,9 @@ For a complete import, all applicable items below must be true:
 - [ ] Every relevant prose text was included as its own text entry.
 - [ ] Every prose paragraph's boundaries, first-line indentation and
       inter-paragraph spacing were visually checked in both proofreading
-      passes; no blank line was added without extra vertical space in the
-      facsimile, and no indent was replaced by a blank line.
+      passes; paragraph spacing follows the facsimile, with the signature/source
+      credit spacing specified in section 12, and no indent was replaced by a
+      blank line.
 - [ ] Physical print-line wraps and page breaks within continuing prose
       paragraphs did not introduce false paragraph boundaries or spacing.
 - [ ] Relevant introductions, prefaces, afterwords, dedications and mottoes were

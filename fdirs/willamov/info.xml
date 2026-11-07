@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="willamov" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Gottlieb</firstname>
+    <lastname>Willamov</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1736-01-15</date>
+      <place>Mohrungen</place>
+    </born>
+    <dead>
+      <date>1777</date>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <gnd>119127776</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-06">
+    <checked-source id="salmonsen2">Index+actualp170facsimile: Willamette followed by Villancico/Villanelle. No Willamov/Willamow/Villamov. https://runeberg.org/salmonsen/2/25/0180.html</checked-source>
+    <checked-source id="salmonsen-supplement">AlphabeticalfullindexsearchedWillam/Villam; noauthorentry; nearbyWillamette/Willandraregisteritems. https://runeberg.org/salmonsen/2/26/</checked-source>
+    <checked-source id="salmonsen4">Actualcolumns4933–4935inspected: WillametteRiver→villanelle/Villani,noWillamov. Adjacentpages1822–25searchedtoo. https://runeberg.org/salmonsen/4/1823.html</checked-source>
+    <note>Tysk digter; intet relevant opslag i de undersøgte Salmonsen-udgaver. Dansk biografisk Lexikon og de danske reservekilder er ikke dækkende standardkilder til denne person. ADB er brugt til identitetskontrol, ikke som biografitekst.</note>
+  </biography-status>
+</person>
