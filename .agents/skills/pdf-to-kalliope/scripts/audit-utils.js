@@ -26,7 +26,7 @@ const pageBreakKey = markup => /\bfacs="([^"]+)"/u.exec(markup)?.[1] ?? markup;
 const explicitPageBreaks = node => {
   let stream = node;
   while (stream.parentNode != null &&
-    ['body', 'note', 'footnote'].includes(stream.nodeName) === false) {
+    ['body', 'front', 'note', 'footnote'].includes(stream.nodeName) === false) {
     stream = stream.parentNode;
   }
   return new Set((stripNotes(serializeChildren(stream)).match(/<pb\b[^>]*\/>/gu) ?? [])
@@ -185,7 +185,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
     const source = directChild(head, 'source');
     const pages = source?.getAttribute('pages') ?? '';
     const interval = parseSimplePages(pages);
-    const body = directChild(entry, 'body');
+    const body = directChild(entry, 'body') ?? directChild(entry, 'front');
     if (body == null) continue;
     const bodyPages = splitBodyPages(body, { noteNeutral: true });
     const pbs = Array.from(body.getElementsByTagName('pb'));

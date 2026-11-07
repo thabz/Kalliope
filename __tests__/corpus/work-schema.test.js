@@ -40,6 +40,13 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
+  it.each(['poetry', 'prose'])('accepts a historical fraction date in %s and nested emphasis', block => {
+    const xml = poetryWork(
+      'Brev af <sup>4</sup>/<sub>12</sub> 1861, <i><sup>4</sup>/<sub>12</sub></i>.',
+    ).replace('<poetry>', `<${block}>`).replace('</poetry>', `</${block}>`);
+    expect(() => validate(xml)).not.toThrow();
+  });
+
   it('validates structured sources, repeated people and legacy sources', () => {
     for (const source of [
       '<source><title>Digte</title></source>',
