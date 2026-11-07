@@ -1923,3 +1923,10 @@ For a complete import, all applicable items below must be true:
 - [ ] The user reviewed the completed change before commit and push.
 - [ ] After approval, the change was committed, pushed and submitted as a
       complete GitHub pull request.
+
+## Billeder
+
+Når opgaven omfatter kunstbilleder, illustrationer eller kunstneriske forsider,
+brug [fælles billedarbejde](../add-kalliope-picture/SKILL.md)
+(`$add-kalliope-picture`). Titelbladsbehandling følger fortsat
+`$prepare-kalliope-titlepage`.

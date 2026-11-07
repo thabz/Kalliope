@@ -40,3 +40,9 @@ korpustesten. Gennemgå diff, kilder, identitet og billedresultater.
 Aflever selvstændige personopgaver som PR med kilder, faktisk udførte kontroller
 og konkrete udeståender. Ved værkimport indgår personarbejdet i samme PR.
 Følg `AGENTS.md` og sessionens autorisation for Git-handlinger og CI.
+
+## Billeder
+
+Ved tilføjelse eller berigelse af kunstbilleder bruges
+[fælles billedarbejde](../add-kalliope-picture/SKILL.md) (`$add-kalliope-picture`).
+Portrætsøgning og beskæring følger fortsat `$add-person-portrait`.

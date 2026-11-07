@@ -302,3 +302,7 @@ så XML kan skrive:
 - `fdirs/hugo/portraits.xml`: lokalt portræt, som også genbruges fra keyword-data.
 - `fdirs/luther/portraits.xml`: Cranach-billede via `kunst/cranach-luther`.
 - `fdirs/lundca/portraits.xml`: familieportræt uden primary og square portrait.
+
+Nye direkte portrætregistreringer kræver metadatagennemgang og kommentaren
+`<!-- metadata checked: YYYY-MM-DD -->` efter `docs/style-guide.md`.
+Markeringen sættes på den refererede billedpost ved brug af artwork-referencer.

@@ -62,6 +62,23 @@ Læs den relevante specialdokumentation før ændringer på området:
 
 ## Billeder
 
+- Nye kunstværker, portrætter og kunstneriske illustrationer skal gennemgås mod
+  museum, Wikidata eller anden dokumenteret kilde. Kontrollér identitet, ophav,
+  datering, teknik, fysiske mål, samling og identifikatorer; indarbejd alle sikre
+  oplysninger og dokumentér væsentlige ubekendte i XML-kommentarer.
+  Afslut gennemgangen med `<!-- metadata checked: YYYY-MM-DD -->` inde i den
+  direkte `<picture>`-registrering med gennemgangens faktiske dato. Eksisterende
+  markeringer umiddelbart efter elementet understøttes også. Markeringen
+  attesterer udført kildegennemgang og må aldrig indsættes automatisk.
+  Reglen gælder også kunstneriske forsider og billeder uden for artwork- og
+  portrætfiler. Referencer (`artwork`, `portrait`, `ref`), titelbladsscanninger
+  (`type="titlepage"`), nodegengivelser (`type="score"`), dagsikoner og separate
+  `square-src`-beskæringer kræver ikke egen markering.
+  CI kontrollerer nye registreringer med
+  `npm run validate-new-picture-metadata -- BASE-REF [HEAD-REF]` (standard: HEAD).
+  Eksisterende umarkerede billeder er ikke omfattet af den nye kontrol;
+  billedomdøbninger og flytninger af registreringer bevarer deres status.
+  Kontrollen beviser markeringens tilstedeværelse, ikke kildegennemgangens kvalitet.
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
 - Medtag dokumenterede fysiske mål i billedteksten som højde × bredde med
   enhed, fx `80 × 60 cm`. Søg målene i værkets katalog- eller museumsopslag,

@@ -39,19 +39,19 @@ Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet
 | 59 / Februari Maaned | rahbek | [Fronderiet](https://kalliope.org/da/text/rahbek2026110612) | 179-181 |
 | 59 / Februari Maaned | rahbek | [Fuglenes Vittigheds-Academie](https://kalliope.org/da/text/rahbek2026110613) | 181-184 |
 | 59 / Februari Maaned | larsen | [Ræhr Sogns Beboeres alvorlige Betænkninger over deres Befrielse fra Hoveriet](https://kalliope.org/da/text/larsen2026110601) | 185-189 |
-| 59 / Marti Maaned | oehlenschlaeger | [Rosen og Eenighedsblomsten](https://kalliope.org/da/text/oehlenschlaeger2026110601) | 288-290 |
+| 59 / Marti Maaned | oehlenschlaeger | [Rosen og Eenighedsblomsten](https://kalliope.org/da/text/oehlenschlaeger2026110609) | 288-290 |
 | 59 / Marti Maaned | storm | [Hunden og Hareungen](https://kalliope.org/da/text/storm2026110601) | 291-292 |
 | 59 / Marti Maaned | ewald | [En Edderfugl var haardt i Klemme](https://kalliope.org/da/text/ewald2026110601) | 293 |
-| 59 / Marti Maaned | anonym 1800dk | [Turtelduen og Vandreren](https://kalliope.org/da/text/anonym1800dk2026110601) | 293-294 |
+| 59 / Marti Maaned | anonym 1800dk | [Turtelduen og Vandreren](https://kalliope.org/da/text/anonym1800dk2026110613) | 293-294 |
 | 59 / Marti Maaned | holberg | [Gederne](https://kalliope.org/da/text/holberg2026110601) | 294-295 |
-| 59 / Marti Maaned | anonym 1800dk | [Merops](https://kalliope.org/da/text/anonym1800dk2026110602) | 295 |
+| 59 / Marti Maaned | anonym 1800dk | [Merops](https://kalliope.org/da/text/anonym1800dk2026110614) | 295 |
 | 59 / Marti Maaned | reenberg | [Hiorten ved Vandet](https://kalliope.org/da/text/reenberg2026110601) | 296-297 |
-| 59 / Marti Maaned | anonym 1800dk | [Katten, den gamle Muus, den unge Muus](https://kalliope.org/da/text/anonym1800dk2026110603) | 297-298 |
+| 59 / Marti Maaned | anonym 1800dk | [Katten, den gamle Muus, den unge Muus](https://kalliope.org/da/text/anonym1800dk2026110615) | 297-298 |
 | 59 / Marti Maaned | storm | [Rosen og Natfiolen](https://kalliope.org/da/text/storm2026110602) | 298-300 |
 | 59 / Marti Maaned | storm | [Lænestolen og Tabouretten](https://kalliope.org/da/text/storm2026110603) | 300-302 |
 | 59 / Marti Maaned | tode | [De glidende Drenge](https://kalliope.org/da/text/tode2026110604) | 302-305 |
 | 59 / Marti Maaned | storm | [Boreas og Phoebus](https://kalliope.org/da/text/storm2026110604) | 305-307 |
-| 59 / Marti Maaned | anonym 1800dk | [Kragen](https://kalliope.org/da/text/anonym1800dk2026110604) | 309-310 |
+| 59 / Marti Maaned | anonym 1800dk | [Kragen](https://kalliope.org/da/text/anonym1800dk2026110616) | 309-310 |
 | 59 / Marti Maaned | anonym 1800dk | [Amor og hans Moder](https://kalliope.org/da/text/anonym1800dk2026110605) | 311-312 |
 | 59 / Marti Maaned | suhm | [Æslet](https://kalliope.org/da/text/suhm2026110601) | 312 |
 | 59 / Marti Maaned | storm | [Ulvenes Rigsdag](https://kalliope.org/da/text/storm2026110605) | 313-314 |
@@ -70,10 +70,10 @@ Syv bind har to fulde modelgennemgange af alle inkluderede tekstsider, afsluttet
 | 59 / Marti Maaned | falsen | [Penias Tak til det danske Folk](https://kalliope.org/da/text/falsen2026110601) | 335-342 |
 | 60 / April 1800 | bornemann | [I](https://kalliope.org/da/text/bornemann2026110601) | 72-74 |
 | 60 / April 1800 | bornemann | [II](https://kalliope.org/da/text/bornemann2026110602) | 74-75 |
-| 60 / April 1800 | rahbek | [Avind](https://kalliope.org/da/text/rahbek2026110604) | 82-96 |
-| 60 / Maj 1800 | rahbek | [Om Smag, Fornuft, og Snilde i Digtekunsten](https://kalliope.org/da/text/rahbek2026110605) | 210-225 |
+| 60 / April 1800 | rahbek | [Avind](https://kalliope.org/da/text/rahbek2026110614) | 82-96 |
+| 60 / Maj 1800 | rahbek | [Om Smag, Fornuft, og Snilde i Digtekunsten](https://kalliope.org/da/text/rahbek2026110615) | 210-225 |
 | 60 / Juni 1800 | anonym 1800fr | [Gravskrift over Mallet Dupan](https://kalliope.org/da/text/anonym1800fr2026110601) | 368 |
-| 60 / Juni 1800 | rahbek | [Gravskrift over Mallet Dupan](https://kalliope.org/da/text/rahbek2026110606) | 368 |
+| 60 / Juni 1800 | rahbek | [Gravskrift over Mallet Dupan](https://kalliope.org/da/text/rahbek2026110616) | 368 |
 | 61 / Juli 1800 | blichern | [Viisdoms og Dyds Tabel](https://kalliope.org/da/text/blichern2026110601) | 79-90 |
 | 61 / August 1800 | blichern | [Ønone til Paris](https://kalliope.org/da/text/blichern2026110602) | 163-173 |
 | 61 / August 1800 | anonym 1800fr | [Ce jeune homme a beaucoup](https://kalliope.org/da/text/anonym1800fr2026110602) | 201 |

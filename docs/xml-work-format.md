@@ -1225,8 +1225,13 @@ Attributter:
 - `year`: aar for billedet.
 - `museum`, `objid`, `invnr`: bruges til museumslinks.
 - `clip-path`: bruges til visuel beskæring.
-- `type`: fri type, fx `titlepage`, `frontpage`, `illustration`.
+- `type`: fri type, fx `titlepage`, `frontpage`, `illustration`, `score`.
+  Brug `score` til nodegengivelser; `illustration` er til kunstneriske illustrationer.
 - `lang`: sprog for lokal billedtekst; default er `da`.
+
+Nye kunstneriske billeder kræver metadatagennemgang og XML-markeringen
+`metadata checked` efter `docs/style-guide.md`. Titelbladsscanninger og
+nodegengivelser er undtaget.
 
 Hvert billede med `type="titlepage"` i et værk skal have præcis én ikke-tom
 `<transcription>` med den trykte ordlyd. Brug `/` mellem trykte linjer og `//`
