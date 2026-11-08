@@ -26,8 +26,9 @@ De fem udfoldelige nodebilag indeholder også sangtekster, men arkene ligger
 foldet i Harvard-scanningen, så teksterne ikke kan læses fuldstændigt. Det
 gælder Heibergs »Ved Poul Möllers Jordefærd«, Geijers »Min hustrus visa«,
 Heibergs »Romance«, Grundtvigs »Modersmaalet« og Strandbergs »Vid ett
-silfverbröllopp«. Andre udgaver af Heibergs jordefærdssang og Grundtvigs
-»Modersmaalet« er allerede tilgængelige i Kalliope og er forbundet i værknoten;
+silfverbröllopp«. Heibergs »Romance« er identificeret som »Kjærligheds Drømme« ved de synlige
+vers på PDF-side 686. Andre udgaver af denne sang, Heibergs jordefærdssang og
+Grundtvigs »Modersmaalet« er tilgængelige i Kalliope og forbundet i værknoten;
 de dokumenterer ikke den utilgængelige ordlyd i netop dette tryk.
 
 Et andet eksemplar fra University of Minnesota findes i
