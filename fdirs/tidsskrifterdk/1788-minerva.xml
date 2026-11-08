@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1788-minerva-11" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1785-1807-minerva">
+<kalliopework id="1788-minerva" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-  <title>Minerva: Januarii, Februarii og Martii 1788</title>
-  <breadcrumbtitle>Januar–marts 1788</breadcrumbtitle>
+  <title>Minerva</title>
   <year>1788</year>
   <pagebreaks/>
+  <errata in="bd11" status="reviewed" pages="427" facsimile-pages="447"/>
   <proofreadings>
+    <!-- Bind 11. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-10-31T11:09:04.786Z"/>
     <proofreading model="gpt-6.1-sol" datetime="2026-10-31T11:11:26.543Z"/>
   </proofreadings>
-  <errata status="reviewed" pages="427" facsimile-pages="447"/>
   <notes>
-    <note editorial="true">Udvalg af bindets digte og versbidrag samt forerindringen til <i>Lunden ved Jægerspriis</i>. Selvstændige prosabidrag er ikke medtaget.</note>
+    <note editorial="true">Bind 11: Udvalg af bindets digte og versbidrag samt forerindringen til <i>Lunden ved Jægerspriis</i>. Selvstændige prosabidrag er ikke medtaget.</note>
   </notes>
   <pictures>
     <picture src="1788-minerva-11-p1.jpg" type="titlepage" primary="true">
       <transcription>Minerva, / et / Maanedskrivt. // Januarii, Februarii og Martii, / 1788. // Kiøbenhavn. / Trykt hos Johan Frederik Schultz, / Universitets Bogtrykker.</transcription>
     </picture>
   </pictures>
-  <source href="https://archive.org/details/minerva-bind-11-1788" facsimile="1788-minerva-11.pdf" facsimile-pages-num="451">
+  <source id="bd11" href="https://archive.org/details/minerva-bind-11-1788" facsimile="1788-minerva-11.pdf" facsimile-pages-num="451">
     <title>Minerva</title>
     <editor id="pram" type="editor">Christen Henriksen Pram</editor>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
@@ -40,7 +40,7 @@
 <head>
   <title>Wilhelm og Margrethe</title>
   <firstline>Den Time var ret snart udrunden</firstline>
-  <source pages="54-57" facsimile-pages="62-65"/>
+  <source in="bd11" pages="54-57" facsimile-pages="62-65"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -142,7 +142,7 @@ I Kierlighed for falske Eeder.
   <notes>
     <note editorial="true">Tilskrevet Frederik Schmidt i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 226.</note>
   </notes>
-  <source pages="58" facsimile-pages="66"/>
+  <source in="bd11" pages="58" facsimile-pages="66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -165,7 +165,7 @@ At — — meest uskyldig er.
   <notes>
     <note editorial="true">Tilskrevet Frederik Schmidt i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 226.</note>
   </notes>
-  <source pages="58" facsimile-pages="66"/>
+  <source in="bd11" pages="58" facsimile-pages="66"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -185,7 +185,7 @@ Thi, Ven, og du er Støvets Søn.
   <title>Ved Gerners Død</title>
   <subtitle>af Hr. Kammerherre Suhm.</subtitle>
   <firstline>Paa Danmarks Skuldre Gerner bragtes til sin Grav</firstline>
-  <source pages="70" facsimile-pages="78"/>
+  <source in="bd11" pages="70" facsimile-pages="78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -202,7 +202,7 @@ Da Himlen smiled', og sit Bifald gav.
   <subtitle>af Hs. Excell. Hr. Geheimeraad Lüxdorph.</subtitle>
   <toctitle>Ved Gerners Død (Ved samme)</toctitle>
   <firstline>Ut Patriæ luctum GERNERI in funere Pallas</firstline>
-  <source pages="70" facsimile-pages="78"/>
+  <source in="bd11" pages="70" facsimile-pages="78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -220,7 +220,7 @@ Vidit, ait similem, si quis, sic dilige vivum.
   <notes>
     <note editorial="true">Oversættelse af Luxdorphs <xref type="translation" poem="luxdorph2026103101"/>.</note>
   </notes>
-  <source pages="70" facsimile-pages="78"/>
+  <source in="bd11" pages="70" facsimile-pages="78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -238,7 +238,7 @@ Hun sagde: Er der En som han, da elsk ham saa i Live.
   <notes>
     <note editorial="true">Oversættelse af Luxdorphs <xref type="translation" poem="luxdorph2026103101"/>.</note>
   </notes>
-  <source pages="71" facsimile-pages="79"/>
+  <source in="bd11" pages="71" facsimile-pages="79"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -253,7 +253,7 @@ Elsk levende, om du ham har, elsk saa den ham er liig.
 <head>
   <title>Ved Gerners Grav</title>
   <firstline>I ham, som god Samvittighed</firstline>
-  <source pages="71" facsimile-pages="79"/>
+  <source in="bd11" pages="71" facsimile-pages="79"/>
   <keywords>macpherson</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -285,7 +285,7 @@ Hver Philosoph en Ideal,
   <notes>
     <note editorial="true">Tilskrevet Christen Andersen Lund i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 147.</note>
   </notes>
-  <source pages="72" facsimile-pages="80"/>
+  <source in="bd11" pages="72" facsimile-pages="80"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -314,7 +314,7 @@ Synge din Triumph — men Barden tier.
 <text id="lundca2026103101" author="lundca">
 <head>
   <title>Forerindring</title>
-  <source pages="189-192" facsimile-pages="197-200"/>
+  <source in="bd11" pages="189-192" facsimile-pages="197-200"/>
   <keywords>horats</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -342,7 +342,7 @@ Neppe har Danmark i noget Fag af Digtekunsten saa mange Mesterstykker at fremvis
     <line>1783.</line>
   </subtitle>
   <firstline>Alt aander Fryd bag Dannerkongens Hegn</firstline>
-  <source pages="192-219" facsimile-pages="200-227"/>
+  <source in="bd11" pages="192-219" facsimile-pages="200-227"/>
   <keywords>pope,holberg,ewald,brahe,frederik3,luther,arrebo,bording,kingo,tullin,young,gerner,griffenfeld,macpherson,thomson,stenersen,jacobi,sturluson</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1043,7 +1043,7 @@ Den Tanke, som min hele-Siel henriver.
 <head>
   <title>Hymne til Taalmodighed</title>
   <firstline>Gudfrygtigheds og Haabets Datter</firstline>
-  <source pages="219-220" facsimile-pages="227-228"/>
+  <source in="bd11" pages="219-220" facsimile-pages="227-228"/>
   <keywords>polignac</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1099,7 +1099,7 @@ Opfostredes blandt Norges Fielde,
 <head>
   <title>Ved W— Bortreise til Dannemark</title>
   <firstline>Langt bort fra Norges elskte Kyst</firstline>
-  <source pages="220-223" facsimile-pages="228-231"/>
+  <source in="bd11" pages="220-223" facsimile-pages="228-231"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1182,7 +1182,7 @@ O glem da ei din Frederik!
   <notes>
     <note editorial="true">Oversættelse af Luxdorphs <xref type="translation" poem="luxdorph2026103101"/>.</note>
   </notes>
-  <source pages="223" facsimile-pages="231"/>
+  <source in="bd11" pages="223" facsimile-pages="231"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1209,7 +1209,7 @@ Elsk — bød hun — saa i Live den, som I hans Lige finde.
   <title>Hymens Fakkel</title>
   <subtitle>(En Romance)</subtitle>
   <firstline>I Fior ved Nytaars Tider</firstline>
-  <source pages="391-394" facsimile-pages="411-414"/>
+  <source in="bd11" pages="391-394" facsimile-pages="411-414"/>
   <keywords>owen</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1325,7 +1325,7 @@ Men jeg har hørt spargeres,
   <notes>
     <note editorial="true">Bygger på visetypen <xref poem="folkeviser2018041054"/> (DgF 89).</note>
   </notes>
-  <source pages="395-398" facsimile-pages="415-418"/>
+  <source in="bd11" pages="395-398" facsimile-pages="415-418"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1430,7 +1430,7 @@ Ei ædlere Kone og Moder end hun.
 <head>
   <title>Spurren og Strudsen</title>
   <firstline>En Spurre gav</firstline>
-  <source pages="398-399" facsimile-pages="418-419"/>
+  <source in="bd11" pages="398-399" facsimile-pages="418-419"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1466,7 +1466,7 @@ Og maal dig saa med mig!
   <title><num>I.</num>De Vover, de trille saa roeligen frem</title>
   <firstline>De Vover, de trille saa roeligen frem</firstline>
   <dates><performed>1788-02-15</performed></dates>
-  <source pages="399-403" facsimile-pages="419-423"/>
+  <source in="bd11" pages="399-403" facsimile-pages="419-423"/>
   <keywords>horats,trojel,vergil</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1599,7 +1599,7 @@ Foreenet med nordisk venskabelig Sang,
   <title><num>II.</num>Dronning blandt de fyenske Steder</title>
   <firstline>Dronning blandt de fyenske Steder</firstline>
   <dates><performed>1788-02-15</performed></dates>
-  <source pages="403-405" facsimile-pages="423-425"/>
+  <source in="bd11" pages="403-405" facsimile-pages="423-425"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1668,7 +1668,7 @@ Harpen, som vi sølvgraae røre,
   <title><num>III.</num>Mindet af Ungdommens sorgløse Glæder</title>
   <firstline>Mindet af Ungdommens sorgløse Glæder</firstline>
   <dates><performed>1788-02-15</performed></dates>
-  <source pages="405-406" facsimile-pages="425-426"/>
+  <source in="bd11" pages="405-406" facsimile-pages="425-426"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1801-minerva-63" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
+<kalliopework id="1801-minerva" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-  <title>Maanedskriftet Minerva</title>
-  <subtitle>Januari, Februari og Marti. 1801.</subtitle>
-  <toctitle>Januar–marts 1801</toctitle>
-  <breadcrumbtitle>Januar–marts 1801</breadcrumbtitle>
+  <title>Minerva</title>
   <year>1801</year>
   <pagebreaks/>
   <errata status="none"/>
   <proofreadings>
+    <!-- Bind 63. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:26:06Z"/>
+    <!-- Bind 64. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:26:06Z"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-01 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_001">↬</a>. 112 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Bind 63: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-01 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_001">↬</a>. 112 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
+    <note editorial="true">Bind 64: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-05 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_002">↬</a>. 114 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
   </notes>
   <pictures>
     <picture src="1801-minerva-63-p1.jpg" type="titlepage" primary="true">
       <transcription>Maanedskriftet / Minerva. // Januari, Februari og Marti, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
+    <picture src="1801-minerva-64-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // April, Maj og Junii, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
   </pictures>
-  <source href="https://books.google.com/books?id=nWA3AAAAMAAJ" facsimile="1801-minerva-63.pdf" facsimile-pages-num="360">
+  <source id="bd63" href="https://books.google.com/books?id=nWA3AAAAMAAJ" facsimile="1801-minerva-63.pdf" facsimile-pages-num="360">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>63 (16. årgangs 3. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1801</year>
+  </source>
+  <source id="bd64" href="https://books.google.com/books?id=MmE3AAAAMAAJ" facsimile="1801-minerva-64.pdf" facsimile-pages-num="356">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>64 (16. årgangs 4. bind)</volume>
     <place>Kiøbenhavn</place>
     <publisher>Directeur Johan Frederik Schultz</publisher>
     <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
@@ -40,7 +53,7 @@
 <text id="thaarup2026110602" author="thaarup" variant="thaarup2026082015">
 <head>
   <firstline>Gud er her! den Ævighøje</firstline>
-  <source pages="1-5" facsimile-pages="9-13"/>
+  <source in="bd63" pages="1-5" facsimile-pages="9-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -207,7 +220,7 @@ Min Sjæl! lov Herren!
   <dates>
     <event>1801-01-25</event>
   </dates>
-  <source pages="144-145" facsimile-pages="152-153"/>
+  <source in="bd63" pages="144-145" facsimile-pages="152-153"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -258,7 +271,7 @@ men du var, og er, og bliver!
   <dates>
     <event>1801-01-25</event>
   </dates>
-  <source pages="145-146" facsimile-pages="153-154"/>
+  <source in="bd63" pages="145-146" facsimile-pages="153-154"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -299,7 +312,7 @@ til vor store Mesters Ære!
 <text id="abrahamson2026110601" author="abrahamson" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Sækular-Sang</title>
-  <source pages="159-163" facsimile-pages="167-171"/>
+  <source in="bd63" pages="159-163" facsimile-pages="167-171"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -463,7 +476,7 @@ Til ham, til ham, til Fredens, Lysets, Frieheds Fader
   <dates>
     <performed>1801-03-14</performed>
   </dates>
-  <source pages="297-298" facsimile-pages="303-304"/>
+  <source in="bd63" pages="297-298" facsimile-pages="303-304"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -506,7 +519,7 @@ o men vore sidste Sukke
   <dates>
     <performed>1801-03-14</performed>
   </dates>
-  <source pages="317-319" facsimile-pages="323-325"/>
+  <source in="bd63" pages="317-319" facsimile-pages="323-325"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -569,6 +582,281 @@ Lysets Ven i Livets Dage
 her vor Læsen! hist vor Ære!
   Raad i Medgang! Trøst i Nød!
 </poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>April 1801</title>
+</head>
+<content>
+
+<text id="falsen2026110602" author="falsen">
+<head>
+  <title>Epilog</title>
+  <subtitle>opført paa den kongelige danske Skueplads, efter Comoedien Tienestefolkenes Skole ved Benefice-Forestillingen til Bedste for Staden Kiøbenhavns almindelige Fattigvæsen, den 18de April 1801.</subtitle>
+  <dates>
+    <performed>1801-04-18</performed>
+  </dates>
+  <source in="bd64" pages="96-98" facsimile-pages="104-106"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><w>Personer:</w></center>
+<w>Philip</w>
+<w>Freeman</w> } af Tienestefolkenes Skole.
+<w>En fattig Mand</w>.
+<w>Thalia</w>.
+</prose>
+<poetry>
+<nonum><wrap><small><pb n="97" facs="104.jpg"/>En offentlig Plads, i Baggrunden sees en Portal eller Indgangen til et Theater, den er aaben, og <w>Thalia</w> viser sig af og til inden for. <w>En fattig Mand</w> sidder afsides ved et Hiørne. <w>Philip</w> kommer ud fra Lovels Huus, (af hvis Tieneste han er jaget bort) han staaer nogle Øieblik og grunder. Idet han begynder at tale, kommer <w>Freeman</w> ligeledes ud fra Lovels Huus — han bliver staaende afsides og hører til.</small></wrap></nonum>
+
+<nonum><center><w>Philip.</w></center></nonum>
+Her staaer jeg, hielpeløs, forladt,
+alt ved min egen Brøde,
+jeg Lykken sige maa god Nat,
+og for mit Galskab bøde.
+Hvad skal jeg nu vel fange an?
+o! giver Raad, om Nogen kan,
+hvis ei, gier mig en Strikke!
+jeg gider ei bag Ploven gaae,
+ved Betlen vil jeg neppe faae
+Tokaierviin at drikke
+<nonum><right><small>(han gaaer sørgmodig ad).</small></right></nonum>
+
+<nonum><center><w>Freeman.</w></center></nonum>
+Vee Daaren, som ved fulde Kruus
+forøder Lykkens Gaver,
+men trefold Vee, naar i et Ruus
+det hele Samfund raver!
+Naar dysset i en Gøgledrøm
+det hvirvles i en evig Strøm
+af nye Daarligheder,
+og kraftløs Usling skielver kun
+for at opvaagne af det Blun
+<pb n="98" facs="105.jpg"/>der skuffer ham med Glæder.
+Den sande Glæde skabte Gud
+at lindre Livets Plage,
+dens Nectar skal, saa lød hans Bud,
+ikkun den Gode smage;
+en venlig Røst fra Himlen lød:
+"i Ansigts Sveed fortær dit Brød,
+"vær glad, i det du gavner"!
+Gud saae sin Gierning, den var skiøn,
+thi gav han Fryd til Idræts Løn,
+kun Daaren Glæde savner.
+
+<nonum><center><w>Den Fattige.</w></center></nonum>
+En Taare dog for nøisomt Brød,
+i skyldfrit Øie blinker . . . .
+
+<nonum><center><w>Thalia</w> <small>(som under foranstaaende Repliker er kommet frem).</small></center></nonum>
+Men Haabets Straale Skyen brød
+og Medynk Lindring vinker;
+blandt Vaabengny, i Farens Nu
+et troefast Folk dig kom ihu,
+og venligt Haanden byder;
+skue Arme i mit Tryllespeil,
+som nyelig viiste Daarers Feil,
+nu Mildheds ædle Dyder!
+
+<nonum><center><w>Den Fattige.</w></center></nonum>
+End hæver sig til Himmelen
+den Armes Bøn med hellig Iver . . .
+kom Velgiorts Løn tifold igien
+fra Glædens milde Giver!
+</poetry>
+</body>
+</text>
+
+<text id="anonym1800nl2026110601" author="anonym1800nl" lang="nl">
+<head>
+  <title>Aan de dappere en Vaderlandslievende Deenen, van den 2de April 1801</title>
+  <dates>
+    <event>1801-04-02</event>
+  </dates>
+  <source in="bd64" pages="99" facsimile-pages="107"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+K'zing in myn Vaderland voor U regtschapen Deenen,
+Voor 't geen Gy op deez' Dag de Waereld hebt getoond;
+Uw Naam en Dapperheid word in Metaal en Steenen
+Aan't Nageslagt vermeld, en door de Deugd bekroond.
+Dacht Parker in de Sond, de Deenen te doen bukken?
+Neen! Gy hebt hem getoond, voor Coppenhagens Strand,
+Toen Hy door Overmagt het Norden sogt te drukken,
+Dat Gy aan Deugd en Trouw uw Leeven had verpand;
+Gy hebt den Dood veragt, toen G'uw als Muuren stelden
+Voor S' Vyands Moord-Geschut; Uw Roem tot hunne Spyt
+Zong men in Zeegenpraal by 't Sneuvlen uwer Helden
+Door t'Vaderlandsche Lied: op Broeders! tot den stryd.
+Hoe d' Uytslag ook mag zyn, de Faam meld reets uw Daden;
+Tot aan de Zuyder Pool de Noorder meld uw Lof:
+De Vyand van uw Roem heeft U met Roem beladen,
+Den Held van Abukir, heeft hier geen Juychens Stof!
+Mogt 't Noordsche Zeeverbond eens 't Britsch Geweld verbreeken!
+Dan reyst een Juych-Stem op, tot boven Lugt en Zwerk,
+Dan ziet Ge op Kronenborg een Zeegen-Vlag opsteeken
+Met deeze goude Spreuk: dit is der Britten Perk.
+
+<nonum><right><i>Een Bataaf.</i></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="hagerup2026110601" author="hagerup">
+<head>
+  <title>Til de tappre og fædrelandelskende Danske</title>
+  <subtitle>Den 2den April.</subtitle>
+  <dates>
+    <event>1801-04-02</event>
+  </dates>
+  <notes>
+    <note editorial="true">Oversættelse af den anonyme nederlandske <xref type="translation" poem="anonym1800nl2026110601"/>.</note>
+  </notes>
+  <source in="bd64" pages="99-100" facsimile-pages="107-108"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg synger i mit Land, o Danske! eders Ære.
+For det, I have viist hiin Redsels Dag, I ere.
+<pb n="100" facs="107.jpg"/>Bekrandsede af Dyd vil eders Navne gaae
+Til Evigheden hen, og der Beundring naae.
+Mon Britten vel har troet? vi have Danske skrækket.
+Nei, eders Torden ham af denne Drøm har vækket.
+I viiste: Overmagt ei Norden Love gier,
+Og Liv i Friheds Kamp med Lyst opofret blier.
+I trodsed Død og Skræk, som Field urokkelige
+Ved rædsom Morder-Ild fra hærdede i Krige;
+Ja selv mens Strømmeblod af eders Helte flød,
+<w>Til Kampen, Brødre! op,</w> i Krigersange lød.
+Hvad end indtræffe kan; alt Rygtet eders Hæder
+Fra fierne Norden hen til Sydens Egn udbreder.
+Og denne Hæder I fra stolte Fiende vandt,
+Ved Kodan Nilens Helt nye Laurber ikke fandt.
+O maatte Nordens Mod dog Brittens Hovmod knække!
+Vidt ville Jubler da sig over Haver strække.
+Og Kronborgs Tordener med Seiersflaget paa
+Tilraabe Albion: Her dine Skranker staae.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Maj 1801</title>
+</head>
+<content>
+
+<text id="andresencs2026110601" author="andresencs">
+<head>
+  <title>Ved Amtmand Christen Heibergs Grav</title>
+  <subtitle>den 29 April 1801.</subtitle>
+  <dates>
+    <event>1801-04-29</event>
+  </dates>
+  <source in="bd64" pages="181-183" facsimile-pages="189-191"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Bort fra Jordens Uroe, Kamp og Møie
+  hen til Fredens lykkelige Land
+iilte Du — dit længselfulde Øie
+  brast — o <w>Heiberg</w>! — ædle Hædersmand.
+
+Blant vort <w>Norges</w> skovbegroede Fielde
+  — Modig, frie og kiek er Fieldets Søn —
+lærte Du hvad Pligt og Sandhed gielde,
+  følte Du at Dydens Lod er skiøn.
+
+Ei til Rang og Rigdom arvebaaren,
+  spildte Du ei favre Ungdoms Tid.
+Mangen Stolt i Lykkens Skiød udkaaren
+  haaner Arbeid, Tænksomhed og Flid.
+
+Ikke Fædres Værd dit Værd bestemte
+  — Det er skiønt at staae paa egen Fod —
+<pb n="182" facs="189.jpg"/>Hvo, som aldrig Dyd og Pligter glemte,
+  han som Du, urokket, mandig stod.
+
+Giennem Trangs og Arbeids tunge Prøve
+  kiemped' Du dig rask og modig frem,
+Arbeid, Troeskab, Dyd Du saaes udøve;
+  Drog som Kongens Mand til <w>Norge</w> hiem.
+
+I det gamle <w>Norges</w> elskte Rige
+  ved din Daad Du blev en æret Mand.
+Ned til Danmarks Sletter Du mon hige,
+  kom som Hædersmand til dette Land.
+
+Her som ædel, trofast Mand Vi finde
+  Dig at virke Landets sande Gavn;
+Derfor — brave <w>Heiberg</w>! Vi dit Minde
+  her velsigne og dit ædle Navn.
+<nonum><center><small>(Taleren trækker en liden Krands frem.)</small></center></nonum>
+
+Denne Krands ei kiøbt ved Blod og Taarer,
+  Venskab for din Dyd dig fletted' den,
+Denne Krands vort ømme Hierte saarer
+  Nu Vi offre Dig den — ædle Ven! —
+<nonum><center><small>(Krandsen lægges paa Kisten).</small></center></nonum>
+
+See! hvor skiøn den Mandens Kiste pryder,
+  Ikke Smiger, ikke Falskhed pynted' den,
+Den dig fletted' dine ædle Dyder,
+  Den er offret af en trofast Ven.
+
+<pb n="183" facs="190.jpg"/>Bedre Krands i Himlens Land dig venter,
+  hvor din glade Siel nu hviler sødt,
+Der Du Løn for alt dit Arbeid henter —
+  — Dine Been i Graven hvile blødt!
+
+<w>Fromme!</w> — I som her saa sorgfuld græde,
+  Hustrue, Børn og Børnebørn dermed —
+O! misunder ei vor Ven sin Glæde;
+  Han gik bort fra Jordens Kamp til Fred.
+
+Der er <w>Fred</w> i Dødens tause Rige —
+  Der er <w>Fred</w> i Gravens stille Roe —
+Der er <w>Fred</w>, hvortil Vi alle hige —
+  Der er salig <w>Fred</w>, hvortil vi iile froe. —
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Junii 1801</title>
+</head>
+<content>
+
+<text id="anonym1800dk2026110612" author="anonym1800dk">
+<head>
+  <title>Zeus og Faaret</title>
+  <notes>
+    <note editorial="true">Oversættelse af Lessings <xref type="translation" poem="lessing2026110703"/>.</note>
+  </notes>
+  <source in="bd64" pages="320-321" facsimile-pages="328-329"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+   Faaret maatte udstaae meget af alle Dyrene. Da traadte det frem for Zeus, og bad at lindre dets Elendighed. Zeus syntes villig, og talte til Faaret: Jeg seer, mit fromme Dyr, at jeg har skabt dig alt<pb n="321" facs="328.jpg"/>for værgeløst: vælg selv, hvorledes jeg skal bedst afhielpe denne Feil: skal jeg forsyne din Mund med skrækkelige Tænder, eller dine Fødder med Kløer? — O nei! sagde Faaret, jeg vil intet have tilfælles med de glubende Dyr: Eller, fortsatte Zeus, skal jeg lægge Gift i dit Spyt? Ak svarede Faaret, de giftige Slanger blive jo hadede saa meget. — Nu hvad skal jeg da? Jeg vil plante Horn paa din Pande, og give din Nakke Styrke. Heller ikke, gode Fader; jeg kunde let blive saa stridig som Bukken. Og alligevel, sagde Zeus, maa du selv kunne skade, naar andre skulde frygte at skade dig. Maa jeg det? sukkede Faaret, o! saa lad mig, gode Fader, blive som jeg er; thi Kraft til at kunne skade, frygter jeg, opvækker Lyst til at ville skade; og det er bedre at lide Uret, end at tilføie Uret. — Zeus signede det fromme Dyr, og det forglemte fra den Tid af at klage”.
+</prose>
 </body>
 </text>
 

@@ -45,13 +45,13 @@ epigrammer er ikke rekonstrueret.
 ## Bindinddeling
 
 Den oprindelige udgivelses bindinddeling bruges som bibliografisk enhed.
-`fdirs/tidsskrifterdk/1785-minerva-01.xml` indeholder første bind med de tre
+`fdirs/tidsskrifterdk/1785-minerva.xml` indeholder første og andet bind med
 månedshæfter som øverste sektioner. Hæfternes eksisterende afdelinger er
-bevaret som undersektioner. Tidsskriftets hovedfil henviser til bindet.
-De tre tidligere selvstændige hæftefiler er erstattet af bindfilen.
+bevaret som undersektioner. Tidsskriftets hovedfil henviser til kalenderåret.
+De tidligere selvstændige hæfte- og bindfiler er erstattet af årgangsfilen.
 
-Bindet har ét fælles titelblad, én bibliografisk kilde og én registrering
-af augusthæftets rettelsesark. Hæfternes separate paginering bevares i
+Første bind har eget titelblad, egen bibliografisk kilde (`bd01`) og én
+registrering af augusthæftets rettelsesark. Hæfternes separate paginering bevares i
 teksterne sammen med de præcise facsimileintervaller. Alle 21 tekstposter,
 deres id'er, noter, kvalitetsflag og relationer er uændrede ved samlingen.
 
