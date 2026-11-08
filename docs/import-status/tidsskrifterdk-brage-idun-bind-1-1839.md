@@ -29,6 +29,11 @@ scanning kunne ikke undersøges: HathiTrusts sidevisning returnerede en
 adgangsblokering. Det er derfor ikke fastslået, om dette eksemplar viser
 nodebladene fuldstændigt.
 
+Et [antikvariatskatalog](https://jonesantikvariat.se/subject/index/2141632997)
+beskriver et fysisk eksemplar af første bind med fem udfoldelige musikbilag
+(katalognummer 102419). Det kan være et spor til de manglende facsimiler;
+beskrivelsen viser ikke selv bilagene og dokumenterer ikke deres læsbarhed.
+
 ## Forudsætning for genoptagelse
 
 Find facsimiler af de udfoldede nodeblade fra samme trykte udgave, og kontrollér
