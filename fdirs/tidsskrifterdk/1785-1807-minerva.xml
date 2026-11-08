@@ -4,25 +4,25 @@
   <title>Minerva</title>
   <subtitle>Et Maanedskrift</subtitle>
   <year>1785-1807</year>
-  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1pioq0f/alma99122755202305763">
-    <title>Minerva</title>
+  <notes>
+    <note editorial="true">Kun digtene er medtaget fra tidsskriftet. Prosaartikler, anmeldelser og andet ikke-poetisk indhold er udeladt i første omgang.</note>
+  </notes>
+  <source href="https://danskforfatterleksikon.dk/1850p/p142364.htm">
+    <title>Minerva. Et Maanedskrift</title>
+    <editor id="pram" type="editor">Christen Henriksen Pram</editor>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <editor>Peter Collett</editor>
     <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1785-1807</year>
   </source>
 </workhead>
 <workbody>
-<subwork ref="1785-minerva-01"/>
-<subwork ref="1785-minerva-02"/>
-<subwork ref="1786-minerva-03"/>
-<subwork ref="1786-minerva-04"/>
-<subwork ref="1788-minerva-11"/>
-<subwork ref="1799-minerva-57"/>
-<subwork ref="1799-minerva-58"/>
-<subwork ref="1800-minerva-59"/>
-<subwork ref="1800-minerva-60"/>
-<subwork ref="1800-minerva-61"/>
-<subwork ref="1800-minerva-62"/>
-<subwork ref="1801-minerva-63"/>
-<subwork ref="1801-minerva-64"/>
+<subwork ref="1785-minerva"/>
+<subwork ref="1786-minerva"/>
+<subwork ref="1788-minerva"/>
+<subwork ref="1799-minerva"/>
+<subwork ref="1800-minerva"/>
+<subwork ref="1801-minerva"/>
 </workbody>
 </kalliopework>
