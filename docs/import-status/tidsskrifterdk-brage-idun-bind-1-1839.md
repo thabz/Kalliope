@@ -31,6 +31,16 @@ vers på PDF-side 686. Andre udgaver af denne sang, Heibergs jordefærdssang og
 Grundtvigs »Modersmaalet« er tilgængelige i Kalliope og forbundet i værknoten;
 de dokumenterer ikke den utilgængelige ordlyd i netop dette tryk.
 
+[Levande musikarvs værkfortegnelse](https://levandemusikarv.se/tonsattare/lindblad-otto/)
+identificerer Strandbergs sang ved begyndelsen »När i morgonandakt« og anfører
+også en københavnsk udgave i *Tre quartetter*, dateret 1839 eller 1840. Det
+er en konkret alternativ kilde at opsøge; hverken teksten eller dens forhold
+til tidsskriftets tryk er endnu kontrolleret i den udgave.
+[Samme institutions katalogpost for Geijers »Min hustrus visa«](https://www.swedishmusicalheritage.com/composers/geijer-erik-gustaf/SMH-W4741-Newer_Songs_for_the_Piano_Book_3_2_Min_hustrus_visa/)
+angiver førstelinjen »Hela verlden löper, sägs det, kring« og en mulig
+Stockholm-udgave fra 1836. Den oplyser ikke, om netop tidsskriftets tekst er
+identisk, og kan derfor ikke alene bruges til at færdiggøre transskriptionen.
+
 Et andet eksemplar fra University of Minnesota findes i
 [HathiTrusts katalog](https://hdl.handle.net/2027/umn.31951000730352f), men
 billederne var blokeret for den automatiske adgang og er ikke kontrolleret.
