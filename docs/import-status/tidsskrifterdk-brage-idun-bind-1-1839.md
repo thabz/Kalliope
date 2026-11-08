@@ -22,5 +22,16 @@ Brøndsteds korte Salmonsen-biografi er suppleret med den foretrukne DBL-kilde.
 Der mangler fortsat de afsluttende dokumenterede kontroller og enkelte
 ophavsafklaringer.
 
+De fem udfoldelige nodebilag indeholder også sangtekster, men arkene ligger
+foldet i Harvard-scanningen, så teksterne ikke kan læses fuldstændigt. Det
+gælder Heibergs »Ved Poul Möllers Jordefærd«, Geijers »Min hustrus visa«,
+Heibergs »Romance«, Grundtvigs »Modersmaalet« og Strandbergs »Vid ett
+silfverbröllopp«. Andre udgaver af Heibergs jordefærdssang og Grundtvigs
+»Modersmaalet« er allerede tilgængelige i Kalliope og er forbundet i værknoten;
+de dokumenterer ikke den utilgængelige ordlyd i netop dette tryk.
+
+Et andet eksemplar fra University of Minnesota findes i
+[HathiTrusts katalog](https://hdl.handle.net/2027/umn.31951000730352f), men
+billederne var blokeret for den automatiske adgang og er ikke kontrolleret.
 Faksimilen og dens miniaturebilleder er genereret og synkroniseret. PR'en er
-fortsat et udkast og repræsenterer ikke en færdig import.
+fortsat et udkast, indtil også sangteksterne kan afklares.
