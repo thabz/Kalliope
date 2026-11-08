@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1839-brage-og-idun-01" author="tidsskrifterdk" status="complete" type="periodical">
+<kalliopework id="1839-brage-og-idun-01" author="tidsskrifterdk" status="complete" type="periodical" parent="1839-1842-brage-og-idun">
 <workhead>
   <title>Brage og Idun: Første Bind</title>
+  <breadcrumbtitle>Første Bind (1839)</breadcrumbtitle>
   <subtitle>Et nordisk Fjærdingårsskrift</subtitle>
   <year>1839</year>
   <pagebreaks/>
@@ -9,7 +10,7 @@
     <proofreading model="gpt-6.1-terra" datetime="2026-11-08T16:39:04Z"/>
   </proofreadings>
   <notes>
-    <note editorial="true">Selvstændige digte fra bindets hovedtekst er medtaget. Prosabidrag og verscitater er udeladt. De udfoldelige nodebilag er udeladt; sangteksterne på dem er delvist skjult i scanningen og er ikke transskriberet. Andre udgaver af <a poem="heibergjl2026101876">Heibergs sang ved Poul Møllers jordefærd</a>, <a poem="heibergjl20261018112">hans Romance</a> og <a poem="modersmaalet">Grundtvigs Modersmaalet</a> findes på Kalliope.</note>
+    <note editorial="true">Selvstændige digte fra bindets hovedtekst er medtaget. Prosabidrag og verscitater er udeladt indtil videre.</note>
   </notes>
   <pictures>
     <picture src="1839-brage-og-idun-01-p1.jpg" type="titlepage" primary="true">
