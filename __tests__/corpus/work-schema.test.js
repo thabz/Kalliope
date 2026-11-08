@@ -28,6 +28,23 @@ describe('kalliopework RELAX NG schema', () => {
     }
   });
 
+  it('accepts catalogue identifiers with independent qualifiers and repeated types', () => {
+    const xml = poetryWork('Vers').replace('<head>', '<head><identifiers>' +
+      '<dgf-id variant="B" witness="b">5</dgf-id>' +
+      '<dv-id>59</dv-id><dgf-id appendix="c">149</dgf-id>' +
+      '<dgf-id witness="b">8</dgf-id><wikidata>Q123</wikidata></identifiers>');
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '<dgf-id>0</dgf-id>', '<dgf-id>01</dgf-id>', '<dv-id>-1</dv-id>',
+    '<dv-id>1.5</dv-id>', '<dgf-id>DgF 5</dgf-id>', '<dgf-id> 5</dgf-id>',
+    '<dgf-id/>', '<dgf-id variant="">5</dgf-id>', '<dgf-id appendix=" ">5</dgf-id>',
+    '<dgf-id bogus="B">5</dgf-id>', '<isbn>1</isbn>',
+  ])('rejects malformed text identifiers: %s', identifier => {
+    expect(() => validate(poetryWork('Vers').replace('<head>', `<head><identifiers>${identifier}</identifiers>`))).toThrow();
+  });
+
   it('accepts documented quotation margins', () => {
     expect(() => validate(poetryWork(
       '<blockquote left="10%" right="0">Citat med <i>kursiv</i>.</blockquote>',

@@ -3,6 +3,8 @@ import zlib from 'zlib';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { DOMParser } from '@xmldom/xmldom';
+import { getIdentifiers, identifierAllowlist } from '../tools/build-static/xml.js';
 import { textPath } from '../common/paths.js';
 import {
   deterministicGzip,
@@ -41,8 +43,13 @@ describe('versioned corpus dataset', () => {
     const authorText = { id: 'one', poetId: 'poet', workId: 'book', title: 'En titel' };
     const unchangedText = { ...authorText, id: 'two', title: 'Anden titel' };
     const publicationText = { ...authorText, id: 'onea', indexable: false };
+    const head = new DOMParser().parseFromString(
+      '<head><identifiers><dgf-id variant="B" witness="b">5</dgf-id>' +
+      '<dgf-id appendix="c">149</dgf-id><dv-id>59</dv-id></identifiers></head>', 'text/xml',
+    ).documentElement;
     const textData = {
       text: {
+        identifiers: getIdentifiers(head, identifierAllowlist.text),
         content_lang: 'da',
         source: { pages: '12–13' },
         blocks: [{ lines: ['En linje', { source: 'En anden linje' }] }],
@@ -68,6 +75,10 @@ describe('versioned corpus dataset', () => {
       expect(readFile).toHaveBeenCalledWith(textPath('two'), 'utf8');
       expect(diskRecords.map(record => record.id)).toEqual(['one', 'two']);
       expect(diskRecords[0]).toEqual(expect.objectContaining({
+        identifiers: {
+          'dgf-id': [{ value: '5', variant: 'B', witness: 'b' }, { value: '149', appendix: 'c' }],
+          'dv-id': [{ value: '59' }],
+        },
         full_text: 'En linje\nEn anden linje',
         source_pages: '12–13',
         has_footnotes: true,

@@ -447,6 +447,39 @@ Attributter paa `<text>`:
   `pagebreak-count` springer kun sammenligningen mellem `source/@pages` og antal
   `<pb>` over for teksten.
 
+#### Tekstens alternative identifikatorer
+
+I tekstens `<head>` kan `<identifiers>` indeholde `<wikidata>`, `<dgf-id>`
+og `<dv-id>`. DgF og DV er forskellige registre; numrene må ikke blandes.
+Beholderen står efter datoer og før noter i den kanoniske formatering.
+
+```xml
+<identifiers>
+  <wikidata>Q123</wikidata>
+  <dgf-id variant="B" witness="b">5</dgf-id>
+  <dv-id>59</dv-id>
+</identifiers>
+```
+
+`dgf-id` og `dv-id` indeholder et normaliseret positivt heltal uden præfiks,
+foranstillede nuller eller blanktegn. Begge kan gentages med forskellige numre,
+og samme nummer kan bruges på flere tekster. Gentagelse af samme nummer i samme
+register på én tekst afvises, også med forskellige attributter.
+
+De valgfrie attributter `variant`, `witness` og `appendix` bevarer særskilt
+variantbetegnelse, vidnebetegnelse og tillægsbetegnelse som ikke-tomme værdier
+uden blanktegn. Store og små bogstaver bevares. Et vidne kan registreres uden
+kendt variant. Eksempelvis er `<dgf-id appendix="c">149</dgf-id>` et tillæg,
+ikke variant C. Attributterne ændrer ikke selve katalognummeret.
+
+Identifikatorerne er valgfrie og opretter hverken aliases, sammenlægninger
+eller `text/@variant`-relationer. Registrér kun kildebelagte oplysninger.
+
+I tekst-API'ets `text.identifiers` og bulkpostens `identifiers` bevares
+`wikidata` som en streng. De to katalogtyper er altid arrays med objekter:
+`{"dgf-id":[{"value":"5","variant":"B","witness":"b"}]}`.
+Nummeret i `value` er en streng; de tre attributter er valgfrie strenge.
+
 #### Tekst-id
 
 Nye id'er på `<text>` og `<section>` består af det effektive digter-id, oprettelsesdatoen i
