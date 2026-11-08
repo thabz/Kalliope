@@ -134,6 +134,7 @@ const safeGetInnerXML = element => {
 };
 
 const identifierAllowlist = Object.freeze({
+  text: ['wikidata', 'dgf-id', 'dv-id'],
   workhead: ['wikidata', 'dbc-work', 'openlibrary-work', 'dansklitteraturshistorie-lex-dk', 'runeberg-book'],
   source: ['wikidata', 'kb-alma', 'dbc-pid', 'openlibrary-edition'],
   picture: ['wikidata', 'smk', 'kid'],
@@ -152,7 +153,11 @@ const safeGetInnerXMLWithout = (element, excludedTags) => {
 };
 
 const getIdentifiers = (element, allowedIds = ['wikidata']) => {
-  const identifiersElement = getChildByTagName(element, 'identifiers');
+  const identifierContainers = getChildrenByTagName(element, 'identifiers') ?? [];
+  if (identifierContainers.length > 1) {
+    throw new Error(`<${element.tagName}> har flere <identifiers>.`);
+  }
+  const identifiersElement = identifierContainers[0];
   if (identifiersElement == null) {
     return {};
   }
@@ -168,7 +173,32 @@ const getIdentifiers = (element, allowedIds = ['wikidata']) => {
       );
     }
     const value = child.textContent.trim();
-    if (value.length > 0) {
+    if (child.tagName === 'dgf-id' || child.tagName === 'dv-id') {
+      if (
+        value !== child.textContent ||
+        /^[1-9][0-9]*$/.test(value) !== true ||
+        Array.from(child.childNodes).some(node => node.nodeType === 1)
+      ) {
+        throw new Error(`<${child.tagName}> skal være et normaliseret positivt heltal.`);
+      }
+      const entry = { value };
+      for (const attribute of Array.from(child.attributes)) {
+        if (
+          ['variant', 'witness', 'appendix'].includes(attribute.name) !== true ||
+          attribute.value.length === 0 ||
+          /\s/u.test(attribute.value) === true
+        ) {
+          throw new Error(`<${child.tagName}> har en ugyldig attribut ${attribute.name}.`);
+        }
+        entry[attribute.name] = attribute.value;
+      }
+      const entries = identifiers[child.tagName] ?? [];
+      if (entries.some(item => item.value === value)) {
+        throw new Error(`<${child.tagName}> gentager nummeret ${value} på samme tekst.`);
+      }
+      entries.push(entry);
+      identifiers[child.tagName] = entries;
+    } else if (value.length > 0) {
       identifiers[child.tagName] = value;
     }
   }
