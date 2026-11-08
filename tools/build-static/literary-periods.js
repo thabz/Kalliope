@@ -7,12 +7,12 @@ const knownCountries = new Set([
 ]);
 const knownTraditions = new Set([
   'dk', 'se', 'no', 'gb', 'de', 'fr', 'us', 'it',
-  'es', 'fa', 'grc', 'la', 'nl', 'is', 'sv-fi',
+  'es', 'fa', 'grc', 'la', 'nl', 'is', 'sv-fi', 'ru',
 ]);
 const traditionCountries = {
   dk: ['dk'], se: ['se'], no: ['no'], gb: ['gb'], de: ['de', 'un'],
   fr: ['fr'], us: ['us'], it: ['it'], es: ['un'], fa: ['un'],
-  grc: ['un'], la: ['un'], nl: ['un'], is: ['is', 'un'], 'sv-fi': ['un'],
+  grc: ['un'], la: ['un'], nl: ['un'], is: ['is', 'un'], 'sv-fi': ['un'], ru: ['un'],
 };
 
 const validateLiteraryPeriods = catalog => {

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="pusjkin" country="ru" lang="ru" type="poet">
+<person id="pusjkin" country="un" nationality="ru" lang="ru" type="poet">
   <name>
     <firstname>Aleksandr Sergejevitj</firstname>
     <lastname>Pusjkin</lastname>
-    <fullname>Aleksandr Sergejevitj Pusjkin</fullname>
   </name>
   <period>
     <born>
@@ -15,6 +14,7 @@
       <place>Sankt Petersborg</place>
     </dead>
   </period>
+  <literary-periods>ru-romantik</literary-periods>
   <identifiers>
     <wikidata>Q7208</wikidata>
     <wikipedia-da>Aleksandr Pusjkin</wikipedia-da>
