@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="broendsted" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peter Oluf</firstname>
+    <lastname>Brøndsted</lastname>
+    <fullname>Peter Oluf Brøndsted</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1780-11-17</date>
+      <place>Fruering</place>
+    </born>
+    <dead>
+      <date>1842-06-26</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q2756009</wikidata>
+    <wikipedia-da>Peter Oluf Brøndsted</wikipedia-da>
+  </identifiers>
+</person>

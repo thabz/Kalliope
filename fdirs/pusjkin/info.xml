@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pusjkin" country="ru" lang="ru" type="poet">
+  <name>
+    <firstname>Aleksandr Sergejevitj</firstname>
+    <lastname>Pusjkin</lastname>
+    <fullname>Aleksandr Sergejevitj Pusjkin</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1799-06-06</date>
+      <place>Moskva</place>
+    </born>
+    <dead>
+      <date>1837-02-10</date>
+      <place>Sankt Petersborg</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q7208</wikidata>
+    <wikipedia-da>Aleksandr Pusjkin</wikipedia-da>
+  </identifiers>
+</person>
