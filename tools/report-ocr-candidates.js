@@ -1,3 +1,4 @@
+import { filterTextElements, textMatches } from './libs/text-ranges.js';
 import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
@@ -83,12 +84,10 @@ const preserveLineBreaks = text =>
   text.replace(/[^\n]/g, match => (match === '\r' ? '\r' : ' '));
 
 const removeIgnoredXml = text =>
-  text
-    .replace(/<!--[\s\S]*?-->/g, preserveLineBreaks)
-    .replace(
-      /<text\b(?=[^>]*\bskip-index="true")[\s\S]*?<\/text>/g,
-      preserveLineBreaks
-    )
+  filterTextElements(
+    text.replace(/<!--[\s\S]*?-->/g, preserveLineBreaks),
+    openingTag => /\bskip-index="true"/.test(openingTag) === false,
+  )
     .replace(/<note\b[\s\S]*?<\/note>/g, preserveLineBreaks)
     .replace(/<footnote\b[\s\S]*?<\/footnote>/g, preserveLineBreaks)
     .replace(/<picture\b[\s\S]*?<\/picture>/g, preserveLineBreaks);
@@ -159,7 +158,7 @@ const workIgnoredTests = text => {
 const lineNumberAt = (text, index) => text.slice(0, index).split('\n').length;
 
 const textBlocks = text =>
-  Array.from(text.matchAll(/<text\b[^>]*>[\s\S]*?<\/text>/g), match => {
+  Array.from(textMatches(text), match => {
     const block = match[0];
     const openingTag = block.match(/<text\b[^>]*>/)?.[0] ?? '';
     const startLine = lineNumberAt(text, match.index);
@@ -444,7 +443,7 @@ const findMojibakeCandidatesInFile = ({ filename, text, minDate = null }) => {
 
   lines.forEach((lineText, index) => {
     const line = index + 1;
-    const block = blocks.find(
+    const block = blocks.findLast(
       candidateBlock =>
         line >= candidateBlock.startLine && line <= candidateBlock.endLine
     );

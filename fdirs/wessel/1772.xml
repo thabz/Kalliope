@@ -314,7 +314,7 @@ Hvormed jeg værdigen kan som din Brudgom staae.
 </body>
 </text>
 
-<text id="19990208005">
+<text id="19990208005" skip-index="true">
 <head>
   <title>Femte Optrin</title>
   <firstline>Skiæbnen bød mig først Johan</firstline>
@@ -326,6 +326,17 @@ Hvormed jeg værdigen kan som din Brudgom staae.
 <nonum><i>Grete</i> (allene.)</nonum>
 
 <nonum><i>Aria</i></nonum>
+</poetry>
+
+<text id="wessel2026110901">
+<head>
+  <title>Aria</title>
+  <firstline>Skiæbnen bød mig først Johan</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Skiæbnen bød mig først Johan,
 Nu mig giver Mads til Mand.
 <pb n="14" facs="019.jpg"/>Naar dig nogen Karper byder,
@@ -336,7 +347,11 @@ Bliver du lidt flau derved;
 Gaaer den tørre Jyde ned,
   Skiæbnen bød mig først Johan,
   Nu mig giver Mads til Mand.
+</poetry>
+</body>
+</text>
 
+<poetry>
 Hvor nødig Hiertet vil dog for Fornuften vige!
 Jeg hører dennes Røst alvorligen at sige:
 Mads blive skal din Mand, men Hiertet siger: Nei -

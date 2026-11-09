@@ -1,3 +1,4 @@
+import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { DOMParser } from '@xmldom/xmldom';
 import {
   pageIntervalError,
@@ -184,7 +185,7 @@ const collectStandaloneFootnoteIssues = (filename, document) => {
 };
 
 const collectTextStructureIssues = (filename, document) => {
-  const issues = [];
+  const issues = Array.from(document.getElementsByTagName('text')).flatMap(text => embeddedTextIssues(text, filename));
 
   Array.from(document.getElementsByTagName('text')).forEach(text => {
     const head = directChild(text, 'head');
