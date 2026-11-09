@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="muellerwi" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Wilhelmine Augusta</firstname>
+    <lastname>Müller</lastname>
+  </name>
+  <!-- Navn og livsdata: Stadtarchiv Karlsruhe, Stadtlexikon, René Gilbert (2016):
+       https://stadtlexikon.karlsruhe.de/index.php/De:Lexikon:bio-0284
+       Født Maisch; udgav sine tidlige digte under dette navn. -->
+  <period>
+    <born>
+      <date>1767-08-28</date>
+      <place>Neipperg</place>
+    </born>
+    <dead>
+      <date>1807-12-12</date>
+      <place>Karlsruhe</place>
+    </dead>
+  </period>
+  <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-09">
+    <checked-source id="salmonsen2">Bind XVII, personregisteret under Müller og siderne 504-505: intet opslag om Wilhelmine Müller, født Maisch.</checked-source>
+    <checked-source id="salmonsen-supplement">Supplementets register under Müller og Maisch: intet opslag om digteren.</checked-source>
+    <checked-source id="salmonsen4">Müller-artiklerne i spalte 3131-3133: intet opslag om Wilhelmine Müller.</checked-source>
+    <note>Tysk digter uden dokumenteret dansk forfatterskab; DBL og de danske forfatterleksika er derfor ikke relevante biografikilder. Stadtarchiv Karlsruhes nyere biografi er brugt til identitetskontrol, ikke gengivet som biografitekst.</note>
+  </biography-status>
+</person>
