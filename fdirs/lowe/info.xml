@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lowe" country="gb" lang="en" type="poet">
+  <name>
+    <firstname>John</firstname>
+    <lastname>Lowe</lastname>
+  </name>
+  <!-- Identitet og livsår: National Library of Scotland, Acc.14338,
+       https://manuscripts.nls.uk/repositories/2/resources/22290 . -->
+  <period>
+    <born>
+      <date>1750</date>
+      <place>Kenmure, Kells, East Galloway</place>
+    </born>
+    <dead>
+      <date>1798</date>
+    </dead>
+  </period>
+  <literary-periods>gb-romantik</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-08">
+    <checked-source id="salmonsen2">Bind 15: navneopslagene under Lowe omfatter Hudson og Robert, ikke John Lowe (1750–1798).</checked-source>
+    <checked-source id="salmonsen-supplement">Bind 26: opslaget under Lowe omfatter H., ikke John Lowe.</checked-source>
+    <checked-source id="salmonsen4">L-bindets OCR er gennemsøgt og spalte 2794–2795 kontrolleret i faksimile: Lowe, Hudson følges af Lovelace, Richard; intet opslag om John Lowe.</checked-source>
+    <note>Salmonsen er undersøgt som standardkilde for udenlandske forfattere. DBL, Erslew og Ehrencron-Müller er fravalgt, da den skotsk-amerikanske digter ikke har et dokumenteret dansk livsforløb. NLS’ manuskriptkatalog, ODNB (17084) og Glasgow Universitets digitalisering af The Bards of Galloway (1889) er brugt til personidentifikation, ikke som biografitekst.</note>
+  </biography-status>
+</person>
