@@ -73,6 +73,12 @@ Som er deres Hyldest og Kiærlighed værd!
   <firstline>Mod Aften tæt ved Landeveien sad</firstline>
   <source pages="3-11" facsimile-pages="8-16"/>
   <keywords>hjortvk</keywords>
+  <places>
+    <place ref="zealand" relation="setting" primary="true"/>
+    <place ref="vallo-forests" relation="mentioned"/>
+    <place ref="copenhagen" relation="mentioned"/>
+    <place ref="baltic-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -265,7 +271,7 @@ Fordi hans Birthemøer lod Skielmen drikke.
 
 <text id="anonym1700dk2026110802" author="anonym1700dk">
 <head>
-  <title>Buggevise<footnote>Efter Melodien til Buggevisen i <w>Peters Bryllup</w>.</footnote></title>
+  <title>Vuggevise<footnote>Efter Melodien til Vuggevisen i <w>Peters Bryllup</w>.</footnote></title>
   <firstline>Stille, Mand! din Unge sover</firstline>
   <source pages="12-13" facsimile-pages="17-18"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -539,6 +545,9 @@ O! gyser, I Døttre, for Pligternes Brud,
   <title>Hiertets Philosophie</title>
   <firstline>Vee den mørke Viismand, der vil ile</firstline>
   <source pages="24-26" facsimile-pages="29-31"/>
+  <places>
+    <place ref="eden" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -766,6 +775,9 @@ Vor Klodes bedste Gave, faaer.
   <subtitle>En Fortælling.</subtitle>
   <firstline>Ved Euphrats sølvblaae Strøm engang</firstline>
   <source pages="34-39" facsimile-pages="39-44"/>
+  <places>
+    <place ref="euphrates" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1581,6 +1593,9 @@ Det er saa sødt, at mindes af den Gode:
   <title>Kleon og Dafne</title>
   <subtitle>(Et Optrin fra Arkadien).</subtitle>
   <source pages="71-74" facsimile-pages="80-83"/>
+  <places>
+    <place ref="arcadia" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1697,6 +1712,10 @@ Maa bringe os Fryd!
     <note editorial="true">Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2026110801"/>.</note>
   </notes>
   <source pages="78-85" facsimile-pages="89-96"/>
+  <places>
+    <place ref="bavaria" relation="setting" primary="true"/>
+    <place ref="isar" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2174,6 +2193,11 @@ Der er, som den, der skal den have.
     <note editorial="true">Oversættelse af Johann Heinrich Voß’ <xref type="translation" poem="voss2026110801"/>.</note>
   </notes>
   <source pages="99-152" facsimile-pages="114-167"/>
+  <places>
+    <place ref="groendal-lovise" relation="setting" primary="true"/>
+    <place ref="eutin" relation="mentioned"/>
+    <place ref="amager" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2951,6 +2975,9 @@ Efter de Flygtende lød' nu Fryderaab, Latter og Haandklap.
   <firstline>Den Dvale, som min Siel laae nedsænkt i</firstline>
   <dates><written>1794-07-30</written></dates>
   <source pages="153" facsimile-pages="168-168"/>
+  <places>
+    <place ref="goettingen" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3238,6 +3265,12 @@ Hvor heedt min Vandel takke dig!
   <firstline>Her Sielen sig i taus Beundring taber</firstline>
   <dates><event>1794-05-21</event></dates>
   <source pages="164" facsimile-pages="179-179"/>
+  <places>
+    <place ref="bellevue-schierensee" relation="subject" primary="true"/>
+    <place ref="herschberg-schierensee" relation="setting"/>
+    <place ref="schierensee" relation="writtenAt"/>
+    <place ref="holstein" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3455,6 +3488,9 @@ Naar, Pige, jeg tilbeder hele dig?
   <title>Amor og Zephyr</title>
   <firstline>Vaarduft svæved' om Bierg og Dal i lange Strækning</firstline>
   <source pages="172-174" facsimile-pages="187-189"/>
+  <places>
+    <place ref="styx" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3696,6 +3732,12 @@ O Gud! hvor er jeg lykkelig.
   <firstline>Ned af Pindus med Charite-Fod</firstline>
   <dates><written>1794-07-17</written></dates>
   <source pages="182-187" facsimile-pages="197-202"/>
+  <places>
+    <place ref="copenhagen" relation="writtenAt" primary="true"/>
+    <place ref="pindus" relation="mentioned"/>
+    <place ref="hippocrene" relation="mentioned"/>
+    <place ref="mount-olympus" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3811,6 +3853,14 @@ Elsk den! O! den trodser Evigheder.
   <subtitle>(Fragment, frit oversat af en Reisendes Brev.)</subtitle>
   <firstline>Saa kom jeg temmelig høit op i Norden</firstline>
   <source pages="188" facsimile-pages="203-203"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="london" relation="mentioned"/>
+    <place ref="paris" relation="mentioned"/>
+    <place ref="vienna" relation="mentioned"/>
+    <place ref="berlin" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3958,6 +4008,9 @@ Hver Ædel den, som Livets Fryd
   </subtitle>
   <firstline>Naturen smiler — Glædens Harmonier</firstline>
   <source pages="193-194" facsimile-pages="208-209"/>
+  <places>
+    <place ref="sahara" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4097,6 +4150,11 @@ Skuer jeg de favre To tillige:
   <firstline>Langt fra Fædres elskte Bolig</firstline>
   <dates><event>1794-07-07</event></dates>
   <source pages="198" facsimile-pages="213-213"/>
+  <places>
+    <place ref="goettingen" relation="writtenAt" primary="true"/>
+    <place ref="hainberg-goettingen" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
