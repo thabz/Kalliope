@@ -1,3 +1,5 @@
+import { filterTextElements } from './libs/text-ranges.js';
+
 const normalizeMinDate = value => {
   if (value == null) {
     return null;
@@ -37,18 +39,11 @@ const textIdMatchesMinDate = (textId, minDate) => {
 const hasPdfFacsimile = data =>
   /<source\b[^>]*\bfacsimile="[^"]*\.pdf(?:"|\s)/iu.test(data);
 
-const preserveLineBreaks = text => text.replace(/[^\n]/g, ' ');
-
 const filterTextDataByMinDate = (data, minDate) => {
-  if (minDate == null) {
-    return data;
-  }
-
-  return data.replace(/<text\b[\s\S]*?<\/text>/g, block => {
-    const textId = block.match(/<text\b[^>]*\sid="([^"]+)"/)?.[1] ?? '';
-    return textIdMatchesMinDate(textId, minDate)
-      ? block
-      : preserveLineBreaks(block);
+  if (minDate == null) return data;
+  return filterTextElements(data, openingTag => {
+    const textId = openingTag.match(/\sid="([^"]+)"/)?.[1] ?? '';
+    return textIdMatchesMinDate(textId, minDate);
   });
 };
 
