@@ -2211,7 +2211,8 @@ End i Venskabs faste Kiede
 </body>
 </text>
 
-<text id="tode2026110908" author="tode">
+<!-- Trykt side 134 (138.jpg) har »paa Øie Øie hviler«; gentagelsen er kildekontrolleret. -->
+<text id="tode2026110908" author="tode" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Waldemar og Gertrud</title>
   <firstline>Som det i Verden pleier tidt at gaae</firstline>
