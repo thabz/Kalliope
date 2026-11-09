@@ -42,6 +42,7 @@ const TOC = ({ toc, lang, indent }) => {
             <td className="num">{prefix}</td>
             <td>
               {linkedTitle}
+              {item.content?.length > 0 && renderItems(item.content, indent + 1, 1)}
               {item.authorName != null && item.authorName.length > 0 && (
                 <span className="author">
                   <span className="author-separator">{' — '}</span>{item.authorName}

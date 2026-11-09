@@ -38,6 +38,7 @@ const knownPoetLanguages = new Set([
   'nl',
   'is',
   'cs',
+  'ru',
   'un',
   'it',
 ]);

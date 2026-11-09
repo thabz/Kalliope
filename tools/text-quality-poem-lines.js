@@ -1,3 +1,4 @@
+import { textMatches } from './libs/text-ranges.js';
 import { discoverPoetFiles } from './libs/poet-files.js';
 import fs from 'fs';
 import path from 'path';
@@ -111,10 +112,7 @@ const findCommonPoetryIndentationFindings = ({
   context = createTextContext(data),
 }) => {
   const issues = [];
-  const textRegexp = /<text\b[^>]*>[\s\S]*?<\/text>/gu;
-  let textMatch;
-
-  while ((textMatch = textRegexp.exec(data)) != null) {
+  for (const textMatch of textMatches(data)) {
     const text = textMatch[0];
     const textWithoutNotes = text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
       note => note.replace(/[^\n]/g, ' '));
@@ -187,7 +185,7 @@ const findPoetrySpacingFindings = ({
   );
   const issues = [];
 
-  for (const text of maskedData.matchAll(/<text\b[^>]*>[\s\S]*?<\/text>/gu)) {
+  for (const text of textMatches(maskedData)) {
     const textId = firstMatch(text[0], /^<text\b[^>]*\sid="([^"]+)"/u);
     for (const block of text[0].matchAll(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu)) {
       const body = block[1];

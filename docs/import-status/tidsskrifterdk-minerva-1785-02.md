@@ -34,8 +34,9 @@ prosaparallel til Prams *Almindelig Bøn*.
 | Oktober | 47–86 | Thomas Moore; Til min Ven W**; Gravene; Spillesygen; Almindelig Bøn oversat efter Pope; Prolog holden paa et Privattheater; Vurderingen; Den kloge Ræv |
 | November | 169–211 | Parenthesen; Jubel; Afslaget til Zimmermann; Til Venus; Over Lydas Canariefugl; Om Persifflage; Til en værdig Kones Fødselsdag; Morgenen; Odsingernes Reise til Friderikssund |
 
-Bindet registreres som `1785-minerva-02` under tidsskriftets fælles
-publikation. Månedshæfter og deres anden afdeling bevares som sektioner.
+Bindet indgår i `1785-minerva` under tidsskriftets fælles
+publikation med egen kilde (`bd02`) og eget titelblad. Månedshæfter og deres
+anden afdeling bevares som sektioner.
 Der oprettes ingen tom decembersektion. *Morgenen*s vers står på s.
 190–207; overskrift og tilhørende trykte note er hentet fra s. 188.
 

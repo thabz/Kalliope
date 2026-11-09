@@ -1,3 +1,5 @@
+import { embeddedContext } from './build-static/embedded-context.js';
+import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { buildTextBlocks } from './build-static/text-blocks.js';
 import fs from 'fs';
 import { changedDateTextIds } from './build-static/related-dates.js';
@@ -291,9 +293,11 @@ const handle_text = async (
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
       'tools/build-static/artwork.js', 'tools/build-static/parsing.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
-      'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js',
+      'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
+      'tools/build-static/embedded-context.js',
       'tools/libs/helpers.js',
-      'tools/build-static/toc.js', 'components/poetname-helpers.js',
+      'tools/build-static/toc.js', 'tools/build-static/xml.js',
+      'components/poetname-helpers.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -555,6 +559,7 @@ const handle_text = async (
     section_titles,
     text: {
       id: textId,
+      identifiers: textMeta.identifiers ?? {},
       title: replaceDashes(titleText(title)),
       ...(title.title.indexOf('<') > -1 ?
         { title_html: htmlToXml(title.title, collected, true, {
@@ -566,6 +571,10 @@ const handle_text = async (
       subtitles,
       suptitles,
       text_type: textType,
+      ...(textMeta.parentTextId != null ? {
+        parent_text_id: textMeta.parentTextId,
+        parent_context: embeddedContext(text),
+      } : {}),
       has_footnotes,
       footnotes_count,
       notes,
@@ -613,7 +622,8 @@ const handle_work = async (work) => {
     let proses = [];
     let toc = [];
 
-    for (const part of getChildren(section)) {
+    for (const part of getChildren(section).filter(node =>
+      tagName(section) !== 'body' || tagName(node) === 'text')) {
       const partName = tagName(part);
         if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
@@ -680,6 +690,12 @@ const handle_work = async (work) => {
               resolve_prev_next,
               section_titles,
             );
+          }
+          const embeddedBody = getChildByTagName(part, 'body');
+          if (embeddedBody != null) {
+            await handle_section(embeddedBody, resolve_prev_next, [
+              ...section_titles, { title: titleText(title), id: textId },
+            ]);
           }
         } else if (partName === 'section') {
           const head = getChildByTagName(part, 'head');
@@ -956,7 +972,8 @@ const works_first_pass = (collected) => {
     'tools/build-static/edition-reference.js',
     'tools/build-static/source.js',
     'tools/build-static/work-metadata.js',
-    'tools/build-static/text-blocks.js',
+    'tools/build-static/xml.js',
+    'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
     'tools/libs/helpers.js',
   );
   const force_reload =
@@ -1092,6 +1109,10 @@ const works_first_pass = (collected) => {
         if (tagName(part) === 'subwork') {
           return;
         }
+        if (tagName(part) === 'text') {
+          const issues = embeddedTextIssues(part, workFilename);
+          if (issues.length > 0) throw new Error(issues.join('\n'));
+        }
         const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
         const title = extractTitle(head, 'title');
@@ -1127,6 +1148,9 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
+          ...(part.parentNode?.nodeName === 'body' && part.parentNode.parentNode?.nodeName === 'text'
+            ? { parentTextId: safeGetAttr(part.parentNode.parentNode, 'id') } : {}),
+          identifiers: getIdentifiers(head, identifierAllowlist.text),
           editionSource: resolveEditionSource({
             sourceNode: getChildByTagName(head, 'source'),
             workSources: editionWorkSources,
@@ -1275,6 +1299,9 @@ const works_second_pass = async (collected) => {
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
         'tools/build-static/textrefs.js',
+        'tools/build-static/text-blocks.js',
+        'tools/build-static/embedded-text.js',
+        'tools/build-static/embedded-context.js',
         'tools/build-static/toc.js',
         'components/poetname-helpers.js',
         'common/source-reference.js',

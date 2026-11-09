@@ -21,6 +21,16 @@ filstørrelser, SHA-256-checksummer, antal poster, relationer og genbrugsnoter.
 
 `id`, `poet_id`, `work_id`, `canonical_text_id`, `canonical_url` og `api_url`
 udgør sammen med de dokumenterede posttyper den offentlige v1-kontrakt.
+Tekstposter kan have det valgfrie felt `identifiers`, som også findes som
+`text.identifiers` i tekst-API'et. `wikidata` er en streng. `dgf-id` og `dv-id`
+er arrays med objekter, fx
+`{"dgf-id":[{"value":"5","variant":"B","witness":"b"}]}`.
+`value` er et normaliseret positivt heltal som streng; `variant`, `witness`
+og `appendix` er valgfrie strenge uden blanktegn og bevarer store og små
+bogstaver. Numrene identificerer fælles katalogtilknytninger og er hverken
+unikke tekst-id'er eller URL-aliaser. Manglende registrering giver ingen
+katalognøgle; tekst-API'et bruger et tomt objekt uden identifikatorer.
+
 Nye valgfrie felter kan tilføjes kompatibelt. Inkompatible ændringer kræver en
 ny major-version i URL'en.
 
@@ -118,3 +128,20 @@ Metadata-noter i tekst-JSON kan have det valgfrie booleske felt
 `editorial: true`, når noten er tilføjet af Kalliopes redaktion. Uden feltet
 vises intet mærkat; fraværet fastslår ikke notens ophav. Inline-noter i
 `content_html` bevarer den tilsvarende XML-attribut `editorial="true"`.
+
+Sammenhængende digte indlejret i andre tekster har eget stabilt tekst-ID og
+samme `work_id` som deres omgivende tekst. De får én selvstændig bulkpost,
+når de er indekserbare; der dannes ingen ekstra udvalgspublikation.
+Tekst-JSON har det valgfrie `text.parent_text_id`, og den omgivende teksts
+blok har `anchor` med digtets ID. I værkets TOC kan en tekstpost have et
+valgfrit `content` med de indlejrede digte.
+
+For indlejrede digte dannes oprindelsesnoten automatisk i sidepanelet og
+slutter med »Læs i sammenhæng«. Registrér ikke en gentagelse af denne note
+som en XML-note. Det valgfrie `text.parent_context` i tekst-JSON indeholder
+`title` og `parts`, der enten har `number` og `unit` (`akt`, `scene`, `optog`
+eller `optrin`) eller en scenetitel i `title`. Metadata udledes af værkets
+og sektionernes titler, den omgivende tekst og den seneste genkendelige
+sceneoverskrift før digtet. Et navngivet underværk som *Freyas Altar*
+foretrækkes frem for samlingens titel. Placering og linktekst gengives på
+sidens sprog; manglende scener udledes ikke af dialogen.

@@ -121,7 +121,13 @@ const build_textrefs = collected => {
             ...getElementsByTagNames(front, ['note', 'footnote']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
-          notes.forEach(note => {
+          notes.filter(note => {
+            let owner = note.parentNode;
+            while (owner != null && ['text', 'section'].includes(owner.nodeName) === false) {
+              owner = owner.parentNode;
+            }
+            return owner === text;
+          }).forEach(note => {
             extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
               const fromId = safeGetAttr(text, 'id');
               fileRefs.push({

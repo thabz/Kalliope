@@ -46,7 +46,7 @@ const build_section_toc = (section, workAuthorId = null, poets = new Map()) => {
   let proses = [];
   let toc = [];
 
-  getChildren(section).forEach((part) => {
+  (getChildren(section) ?? []).forEach((part) => {
     const partName = tagName(part);
     if (partName === 'text') {
       const textId = safeGetAttr(part, 'id');
@@ -63,12 +63,14 @@ const build_section_toc = (section, workAuthorId = null, poets = new Map()) => {
         (isAnthology === true || authorId !== workAuthorId)
         ? poetNameString(poet)
         : '';
+      const embeddedToc = build_section_toc(getChildByTagName(part, 'body'), workAuthorId, poets);
       toc.push({
         ...(authorName.length > 0 ? { authorName } : {}),
         type: 'text',
         id: textId,
         title: htmlToXml(stripTitleNotes(toctitle).title),
         prefix: replaceDashes(toctitle.prefix),
+        ...(embeddedToc.length > 0 ? { content: embeddedToc } : {}),
       });
     } else if (partName === 'section') {
       const subtoc = build_section_toc(
