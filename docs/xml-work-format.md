@@ -158,6 +158,16 @@ har digtets blok et `anchor` med digtets ID. Siden bruger
 kan nu have et valgfrit `content` med deres indlejrede digte. Det offentlige
 v1-bulkformat beholder én post pr. indekserbar tekstforekomst.
 
+For indlejrede digte dannes oprindelsesnoten automatisk i sidepanelet og
+slutter med »Læs i sammenhæng«. Registrér ikke en gentagelse af denne note
+som en XML-note. Det valgfrie `text.parent_context` i tekst-JSON indeholder
+`title` og `parts`, der enten har `number` og `unit` (`akt`, `scene`, `optog`
+eller `optrin`) eller en scenetitel i `title`. Metadata udledes af værkets
+og sektionernes titler, den omgivende tekst og den seneste genkendelige
+sceneoverskrift før digtet. Et navngivet underværk som *Freyas Altar*
+foretrækkes frem for samlingens titel. Placering og linktekst gengives på
+sidens sprog; manglende scener udledes ikke af dialogen.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:

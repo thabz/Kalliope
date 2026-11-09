@@ -1,3 +1,4 @@
+import EmbeddedContextNote from '../components/embedded-context-note.js';
 import Link from 'next/link';
 import Router from 'next/router';
 import { useContext, useEffect } from 'react';
@@ -347,6 +348,10 @@ const TextPage = (props) => {
     'note'
   );
 
+  if (text.parent_text_id != null) {
+    notes.unshift(<EmbeddedContextNote key="embedded-context" text={text} workTitle={work.title} lang={lang} />);
+  }
+
   text.notes
     .filter(
       (note) =>
@@ -604,13 +609,7 @@ const TextPage = (props) => {
         </div>
       );
     });
-    body = <div className="text-content">
-      {text.parent_text_id != null && <p><Link
-        href={`${Links.textURL(lang, text.parent_text_id)}#embedded-${text.id}`}>
-        {_('Læs i sammenhæng', lang)}
-      </Link></p>}
-      {renderedBlocks}
-    </div>;
+    body = <div className="text-content">{renderedBlocks}</div>;
 
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks

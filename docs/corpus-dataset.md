@@ -135,3 +135,13 @@ når de er indekserbare; der dannes ingen ekstra udvalgspublikation.
 Tekst-JSON har det valgfrie `text.parent_text_id`, og den omgivende teksts
 blok har `anchor` med digtets ID. I værkets TOC kan en tekstpost have et
 valgfrit `content` med de indlejrede digte.
+
+For indlejrede digte dannes oprindelsesnoten automatisk i sidepanelet og
+slutter med »Læs i sammenhæng«. Registrér ikke en gentagelse af denne note
+som en XML-note. Det valgfrie `text.parent_context` i tekst-JSON indeholder
+`title` og `parts`, der enten har `number` og `unit` (`akt`, `scene`, `optog`
+eller `optrin`) eller en scenetitel i `title`. Metadata udledes af værkets
+og sektionernes titler, den omgivende tekst og den seneste genkendelige
+sceneoverskrift før digtet. Et navngivet underværk som *Freyas Altar*
+foretrækkes frem for samlingens titel. Placering og linktekst gengives på
+sidens sprog; manglende scener udledes ikke af dialogen.

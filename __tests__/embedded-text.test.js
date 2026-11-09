@@ -100,6 +100,8 @@ describe('contiguous embedded poems', () => {
     expect(buildTextBlocks(parent, collected).filter(block => block.anchor === id)).toHaveLength(1);
     expect(buildTextBlocks(poem, collected)).toHaveLength(1);
     if (work === 'wessel/1772') {
+      expect(poem.getElementsByTagName('title')[0].textContent).toBe('Aria');
+      expect(poem.getElementsByTagName('firstline')[0].textContent).toBe('Skiæbnen bød mig først Johan');
       expect(poem.getElementsByTagName('pb')[0].getAttribute('n')).toBe('14');
       expect(poem.textContent).not.toContain('Hvor nødig Hiertet');
       expect(parent.textContent).toContain('Hvor nødig Hiertet');

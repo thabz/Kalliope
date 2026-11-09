@@ -1,3 +1,4 @@
+import { embeddedContext } from './build-static/embedded-context.js';
 import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { buildTextBlocks } from './build-static/text-blocks.js';
 import fs from 'fs';
@@ -293,6 +294,7 @@ const handle_text = async (
       'tools/build-static/artwork.js', 'tools/build-static/parsing.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
+      'tools/build-static/embedded-context.js',
       'tools/libs/helpers.js',
       'tools/build-static/toc.js', 'tools/build-static/xml.js',
       'components/poetname-helpers.js',
@@ -569,7 +571,10 @@ const handle_text = async (
       subtitles,
       suptitles,
       text_type: textType,
-      ...(textMeta.parentTextId != null ? { parent_text_id: textMeta.parentTextId } : {}),
+      ...(textMeta.parentTextId != null ? {
+        parent_text_id: textMeta.parentTextId,
+        parent_context: embeddedContext(text),
+      } : {}),
       has_footnotes,
       footnotes_count,
       notes,
@@ -1296,6 +1301,7 @@ const works_second_pass = async (collected) => {
         'tools/build-static/textrefs.js',
         'tools/build-static/text-blocks.js',
         'tools/build-static/embedded-text.js',
+        'tools/build-static/embedded-context.js',
         'tools/build-static/toc.js',
         'components/poetname-helpers.js',
         'common/source-reference.js',

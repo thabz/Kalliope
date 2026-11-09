@@ -62,16 +62,34 @@ describe('text page breadcrumbs', () => {
 
   beforeEach(() => jest.clearAllMocks());
 
-  it('links a standalone embedded poem back to its exact position and renders the target anchor', () => {
+  it.each([
+    ['da', 'Fra', '3. akt, 3. scene', 'Læs i sammenhæng'],
+    ['en', 'From', 'act 3, scene 3', 'Read in context'],
+    ['de', 'Aus', '3. Akt, 3. Szene', 'Im Zusammenhang lesen'],
+    ['fr', 'Extrait de l’œuvre', 'acte 3, scène 3', 'Lire dans son contexte'],
+  ])('renders the automatic context note and its link in the sidebar in %s', (lang, from, location, label) => {
     const data = JSON.parse(JSON.stringify(textData));
     data.text.parent_text_id = 'act';
+    data.text.parent_context = {
+      title: 'Ambrosius', parts: [{ number: 3, unit: 'akt' }, { number: 3, unit: 'scene' }],
+    };
     data.text.blocks = [{ type: 'poetry', lines: [['En rose', {}]], options: {}, anchor: 'poem' }];
-    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
-    expect(html).toContain(`/da/text/act#embedded-${data.text.id}`);
-    expect(html).toContain('Læs i sammenhæng');
+    const html = renderToStaticMarkup(<LangContext.Provider value={lang}><TextPage {...data} lang={lang} /></LangContext.Provider>);
+    expect(html).toContain(`/${lang}/text/act#embedded-${data.text.id}`);
     expect(html).toContain('id="embedded-poem"');
-    const english = renderToStaticMarkup(<LangContext.Provider value="en"><TextPage {...data} lang="en" /></LangContext.Provider>);
-    expect(english).toContain('Read in context');
+    expect(html).toContain('sidebar-note-editorial');
+    expect(html.replace(/<[^>]+>/g, '')).toContain(`${from} Ambrosius, ${location}. ${label}`);
+    const body = html.match(/<div class="text-content">([\s\S]*?)<\/div>/)[1];
+    expect(body).not.toContain(label);
+    expect(body).not.toContain('#embedded-');
+    expect(html.split(`>${label}</a>`)).toHaveLength(2);
+  });
+
+  it('uses the work title for existing parent links without freshly built context metadata', () => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.parent_text_id = 'act';
+    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
+    expect(html.replace(/<[^>]+>/g, '')).toContain('Fra Gæa. Læs i sammenhæng');
   });
 
   it('uses the canonical anthology trail while retaining the text author', async () => {
