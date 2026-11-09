@@ -83,6 +83,32 @@ describe('contiguous embedded poems', () => {
     expect(refs.get('stubmoralskea2').mention).not.toContain('molbech2019071604');
   });
 
+  it.each([
+    ['oehlenschlaeger/1805', 'oehlenschlaeger2026110901', 'oehlen2002102202', '12-13'],
+    ['oehlenschlaeger/1805', 'oehlenschlaeger2026110902', 'oehlen2002102402', '52'],
+    ['oehlenschlaeger/1805', 'oehlenschlaeger2026110903', 'oehlen2002102701', '93'],
+    ['wessel/1772', 'wessel2026110901', '19990208005', '13-14'],
+  ])('publishes the selected poem %s/%s under its original scene with its own source pages', (work, id, parentId, pages) => {
+    const doc = parse(fs.readFileSync(`fdirs/${work}.xml`, 'utf8'));
+    const texts = Array.from(doc.getElementsByTagName('text'));
+    const poem = texts.find(node => node.getAttribute('id') === id);
+    const parent = texts.find(node => node.getAttribute('id') === parentId);
+    expect(embeddedTextIssues(poem)).toEqual([]);
+    expect(poem.parentNode.parentNode).toBe(parent);
+    expect(poem.getElementsByTagName('source')[0].getAttribute('pages')).toBe(pages);
+    expect(parent.getAttribute('skip-index')).toBe('true');
+    expect(buildTextBlocks(parent, collected).filter(block => block.anchor === id)).toHaveLength(1);
+    expect(buildTextBlocks(poem, collected)).toHaveLength(1);
+    if (work === 'wessel/1772') {
+      expect(poem.getElementsByTagName('pb')[0].getAttribute('n')).toBe('14');
+      expect(poem.textContent).not.toContain('Hvor nødig Hiertet');
+      expect(parent.textContent).toContain('Hvor nødig Hiertet');
+    }
+    expect(() => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'], {
+      input: doc.toString(), stdio: 'pipe',
+    })).not.toThrow();
+  });
+
   it('keeps the published Molbech IDs once, inside Ambrosius, with valid XML', () => {
     const xml = fs.readFileSync('fdirs/molbech/1877.xml', 'utf8');
     const other = fs.readFileSync('fdirs/molbech/andre.xml', 'utf8');
