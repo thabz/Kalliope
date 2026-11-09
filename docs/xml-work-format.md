@@ -99,6 +99,65 @@ angives direkte i hvert berørt digts `<head>`. Se
 `docs/originaltekster-til-oversaettelser.md` for kildevalg og -angivelse ved
 originaltekster til oversættelser.
 
+## Sammenhængende digte inde i andre tekster
+
+Et digt i fx en dramatisk akt registreres som en `<text>` direkte i aktens
+`<body>`, mellem de omgivende `<prose>`-blokke. Det får eget globalt ID,
+`<head>` og `<body>` med præcis én `<poetry>`-blok. Teksten lagres kun her:
+buildet danner både den selvstændige digtside og gengivelsen i akten.
+Indlejring i noter, i en prosa-/poesiblok eller i endnu et indlejret digt
+understøttes ikke. Afbrudte digte kan ikke samles fra flere passager.
+
+```xml
+<text id="akt" skip-index="true">
+<head>
+  <title>Tredie Akt</title>
+</head>
+<body>
+<prose>
+Dialog før digtet.
+</prose>
+
+<text id="digt" context-font-size="small" context-indent="8" context-quotes="stanzas">
+<head>
+  <firstline>Du deilig Rosenknop</firstline>
+</head>
+<body>
+<poetry>
+Du deilig Rosenknop,
+Lad mig dig ret betragte
+</poetry>
+</body>
+</text>
+
+<prose>
+Dialog efter digtet.
+</prose>
+</body>
+</text>
+```
+
+De valgfrie `context-*`-attributter gælder kun gengivelsen i den omgivende
+tekst: `context-font-size="small"` bruger lille skrift, `context-indent`
+angiver ekstra indryk i samme mellemrumsenheder som brødtekstens indryk,
+og `context-quotes="stanzas"` sætter »…« om hver strofe. De må kun stå på
+indlejrede tekster. Den fælles ordlyd, strofer, tegnsætning og indre typografi
+bevares i begge visninger; citationstegn, der alene indrammer stroferne i
+dramaet, lagres ikke i digtteksten.
+
+Digtet indekseres normalt og vises under sin akt i værkets indholdsfortegnelse.
+Det bliver i samme udgivelse og flyttes ikke til et virtuelt udvalg eller
+*Andre digte*. Metadata fra digtets `<head>` vises kun på dets egen side;
+inline-noter i versene vises også i sammenhængen. Angiv kilde og sidetal på
+samme måde som for andre tekster i udgivelsen. Ved flytning af en tidligere
+kopi bevares dens ID på den indlejrede tekst.
+
+Tekst-API'et får det valgfrie `text.parent_text_id`; på den omgivende tekst
+har digtets blok et `anchor` med digtets ID. Siden bruger
+`#embedded-<id>` som mål for »Læs i sammenhæng«. TOC-poster af typen `text`
+kan nu have et valgfrit `content` med deres indlejrede digte. Det offentlige
+v1-bulkformat beholder én post pr. indekserbar tekstforekomst.
+
 ## Workhead
 
 Almindelige felter i `<workhead>`:

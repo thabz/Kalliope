@@ -62,6 +62,18 @@ describe('text page breadcrumbs', () => {
 
   beforeEach(() => jest.clearAllMocks());
 
+  it('links a standalone embedded poem back to its exact position and renders the target anchor', () => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.parent_text_id = 'act';
+    data.text.blocks = [{ type: 'poetry', lines: [['En rose', {}]], options: {}, anchor: 'poem' }];
+    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
+    expect(html).toContain(`/da/text/act#embedded-${data.text.id}`);
+    expect(html).toContain('Læs i sammenhæng');
+    expect(html).toContain('id="embedded-poem"');
+    const english = renderToStaticMarkup(<LangContext.Provider value="en"><TextPage {...data} lang="en" /></LangContext.Provider>);
+    expect(english).toContain('Read in context');
+  });
+
   it('uses the canonical anthology trail while retaining the text author', async () => {
     Client.text.mockResolvedValue(textData);
     Client.poet.mockResolvedValue(collection);

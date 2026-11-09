@@ -1,4 +1,5 @@
 const translations = {
+  'en*Læs i sammenhæng': 'Read in context',
   'en*Digtere': 'Poets',
   'en*Personer': 'Persons',
   'en*Kunstnere': 'Artists',

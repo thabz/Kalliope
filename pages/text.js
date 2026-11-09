@@ -592,7 +592,7 @@ const TextPage = (props) => {
         ...options,
       };
       return (
-        <div key={type + i}>
+        <div key={type + i} id={block.anchor != null ? `embedded-${block.anchor}` : undefined}>
           <TextContent
             contentHtml={lines}
             contentLang={text.content_lang}
@@ -604,7 +604,13 @@ const TextPage = (props) => {
         </div>
       );
     });
-    body = <div className="text-content">{renderedBlocks}</div>;
+    body = <div className="text-content">
+      {text.parent_text_id != null && <p><Link
+        href={`${Links.textURL(lang, text.parent_text_id)}#embedded-${text.id}`}>
+        {_('Læs i sammenhæng', lang)}
+      </Link></p>}
+      {renderedBlocks}
+    </div>;
 
     ogDescription = OpenGraph.trimmedDescription(
       // Merge blocks
