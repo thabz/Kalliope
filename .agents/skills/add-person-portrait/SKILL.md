@@ -17,11 +17,13 @@ registreringssted, billedtekst, filer, metadatamarkering og validering.
 Når portrættet registreres i en kendt kunstners `artwork.xml`, indsættes en
 `artwork="kunstner-id/billed-id"`-reference i den portrætteredes `portraits.xml`.
 
-Lav en separat kvadratisk beskæring, som bevarer ansigt og væsentlige detaljer,
-og registrér `square-src` efter portrætformatets krav til cirkelkomposition,
-opløsning og filstørrelse. Kontrollér visuelt både originalen og den kvadratiske
-fil. Markér præcis ét portræt som primært; bevar det eksisterende valg,
-medmindre opgaven tilsiger andet.
+Markér højst ét portræt som primært; bevar det eksisterende valg, medmindre
+opgaven tilsiger andet. Lav kun en separat kvadratisk beskæring til det primære
+portræt (`primary="true"`). Registrér `square-src` efter portrætformatets krav
+til cirkelkomposition, opløsning og filstørrelse, og kontrollér både originalen
+og beskæringen visuelt. Ikke-primære portrætter må hverken få `square-src` eller
+en separat square-fil. Ved skift af primært portræt fjernes det tidligere
+portræts `square-src` og beskæringsfil, når filen ikke bruges andetsteds.
 
 Dokumentér kilde, filvalg, beskæring og eventuelle usikkerheder. Hvis ingen
 brugbar kilde findes, rapportér resultatet uden tom `portraits.xml`.
