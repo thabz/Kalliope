@@ -2765,7 +2765,8 @@ Mens Siælen følger Engle-trop.
 </body>
 </text>
 
-<text id="kingo2026111020">
+<!-- S. 102, strofe 4, vers 4: facsimilet har »I mange mange tusind skok!«. -->
+<text id="kingo2026111020" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Dend Syvende Aften-sang</title>
   <firstline>SEe, hvor sig dagen atter skynder</firstline>
