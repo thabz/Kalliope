@@ -1,3 +1,4 @@
+import EmbeddedContextNote from '../components/embedded-context-note.js';
 import Link from 'next/link';
 import Router from 'next/router';
 import { useContext, useEffect } from 'react';
@@ -347,6 +348,10 @@ const TextPage = (props) => {
     'note'
   );
 
+  if (text.parent_text_id != null) {
+    notes.unshift(<EmbeddedContextNote key="embedded-context" text={text} workTitle={work.title} lang={lang} />);
+  }
+
   text.notes
     .filter(
       (note) =>
@@ -592,7 +597,7 @@ const TextPage = (props) => {
         ...options,
       };
       return (
-        <div key={type + i}>
+        <div key={type + i} id={block.anchor != null ? `embedded-${block.anchor}` : undefined}>
           <TextContent
             contentHtml={lines}
             contentLang={text.content_lang}

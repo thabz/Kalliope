@@ -54,6 +54,12 @@
     <wikidata>Q165383</wikidata>
     <type>island</type>
   </place>
+  <place id="amager">
+    <name>Amager</name>
+    <wikidata>Q210396</wikidata>
+    <type>island</type>
+    <parent ref="denmark"/>
+  </place>
   <place id="amalfi">
     <name>Amalfi</name>
     <wikidata>Q80563</wikidata>
@@ -96,6 +102,15 @@
     <wikidata>Q31945</wikidata>
     <type>peninsula</type>
     <parent ref="asia"/>
+  </place>
+  <place id="arcadia">
+    <name>Arkadien</name>
+    <canonical-name>Arcadia</canonical-name>
+    <wikidata>Q12898802</wikidata>
+    <type>historical region</type>
+    <alias>Arkadia</alias>
+    <parent ref="greece"/>
+    <note>Den antikke region, også brugt som litterært hyrdelandskab.</note>
   </place>
   <place id="arco-felice-arch">
     <name>Arco Felice</name>
@@ -181,6 +196,22 @@
     <name>Basel</name>
     <wikidata>Q78</wikidata>
     <type>city</type>
+  </place>
+  <place id="bavaria">
+    <name>Bayern</name>
+    <canonical-name>Bavaria</canonical-name>
+    <wikidata>Q980</wikidata>
+    <type>region</type>
+    <alias>Bøierland</alias>
+    <alias>Bayerland</alias>
+    <parent ref="germany"/>
+  </place>
+  <place id="bellevue-schierensee">
+    <name>Bellevue ved Schierensee</name>
+    <type>summerhouse</type>
+    <alias>Bellevue</alias>
+    <parent ref="herschberg-schierensee"/>
+    <note>Lysthuset i Schmidts »Paa en Pille af Bellevue«, Nytaarsgave for Damer 1795, s. 164. Undertitlen stedfæster det på Herschberg i Schirensee i Holsten.</note>
   </place>
   <place id="bergen">
     <name>Bergen</name>
@@ -489,6 +520,14 @@
     <alias>Schleswig</alias>
     <note>Historisk sted-entitet passende til Oehlenschlägers »I Slesvig«.</note>
   </place>
+  <place id="eden">
+    <name>Eden</name>
+    <canonical-name>Garden of Eden</canonical-name>
+    <wikidata>Q19014</wikidata>
+    <type>mythical place</type>
+    <alias>Edens Have</alias>
+    <note>Det bibelske paradis; ingen moderne geografisk stedfæstelse.</note>
+  </place>
   <place id="egypt">
     <name>Egypten</name>
     <canonical-name>Egypt</canonical-name>
@@ -535,12 +574,26 @@
     <alias>Colli Euganei</alias>
     <parent ref="italy"/>
   </place>
+  <place id="euphrates">
+    <name>Eufrat</name>
+    <canonical-name>Euphrates</canonical-name>
+    <wikidata>Q34589</wikidata>
+    <type>river</type>
+    <alias>Euphrat</alias>
+    <parent ref="asia"/>
+  </place>
   <place id="europe">
     <name>Europa</name>
     <canonical-name>Europe</canonical-name>
     <wikidata>Q46</wikidata>
     <type>continent</type>
     <alias>Evropa</alias>
+  </place>
+  <place id="eutin">
+    <name>Eutin</name>
+    <wikidata>Q490445</wikidata>
+    <type>town</type>
+    <parent ref="holstein"/>
   </place>
   <place id="faarevejle-langeland">
     <name>Fårevejle</name>
@@ -867,6 +920,14 @@
     <wikidata>Q64004</wikidata>
     <type>municipality</type>
   </place>
+  <place id="groendal-lovise">
+    <name>Grøndal (i Lovise)</name>
+    <canonical-name>Grünau (Luise)</canonical-name>
+    <type>literary village</type>
+    <alias>Grøndal</alias>
+    <alias>Grünau</alias>
+    <note>Handlingsstedet i Voß’ Luise og Ribers danske Lovise; ikke identificeret med en virkelig landsby. Den danske navneform fremgår af Nytaarsgave for Damer 1795, s. 99-152; Grünau står i originalen i Der Teutsche Merkur, 1784, s. 97-136.</note>
+  </place>
   <place id="guadalquivir">
     <name>Guadalquivir</name>
     <wikidata>Q14309</wikidata>
@@ -896,6 +957,15 @@
     <type>park</type>
     <alias>Haga</alias>
     <parent ref="stockholm"/>
+  </place>
+  <place id="hainberg-goettingen">
+    <name>Hainberg ved Göttingen</name>
+    <canonical-name>Hainberg (Göttingen)</canonical-name>
+    <wikidata>Q1317524</wikidata>
+    <type>hill</type>
+    <alias>Hainbierget</alias>
+    <alias>Hainen</alias>
+    <parent ref="goettingen"/>
   </place>
   <place id="hamburg">
     <name>Hamborg</name>
@@ -980,11 +1050,27 @@
     <alias>Elsinore</alias>
     <parent ref="denmark"/>
   </place>
+  <place id="herschberg-schierensee">
+    <name>Herschberg ved Schierensee</name>
+    <type>hill</type>
+    <alias>Herschberg</alias>
+    <parent ref="schierensee"/>
+    <note>Stedet for lysthuset Bellevue ifølge undertitlen til Schmidts »Paa en Pille af Bellevue«, Nytaarsgave for Damer 1795, s. 164. Navneformen er bevaret fra trykket.</note>
+  </place>
   <place id="hindsgavl">
     <name>Hindsgavl</name>
     <wikidata>Q10524238</wikidata>
     <type>manor</type>
     <alias>Hindsgavl Slot</alias>
+  </place>
+  <place id="hippocrene">
+    <name>Hippokrene</name>
+    <canonical-name>Hippocrene</canonical-name>
+    <wikidata>Q195848</wikidata>
+    <type>spring</type>
+    <alias>Hippokrene-kilden</alias>
+    <parent ref="greece"/>
+    <note>Musernes kilde på Helikon i græsk mytologi.</note>
   </place>
   <place id="hokksund">
     <name>Hokksund</name>
@@ -1022,6 +1108,13 @@
     <wikidata>Q159548</wikidata>
     <type>city</type>
     <alias>Ingelheim</alias>
+  </place>
+  <place id="isar">
+    <name>Isar</name>
+    <wikidata>Q106588</wikidata>
+    <type>river</type>
+    <alias>Iser</alias>
+    <note>Floden i Østrig og Bayern. I Frands og Nantel identificeres den ud fra digtets bayerske handlingssted, også angivet i Pfeffels original Franz und Nantel.</note>
   </place>
   <place id="ischia">
     <name>Ischia</name>
@@ -1330,6 +1423,12 @@
     <wikidata>Q605839</wikidata>
     <type>island</type>
   </place>
+  <place id="london">
+    <name>London</name>
+    <wikidata>Q84</wikidata>
+    <type>city</type>
+    <parent ref="england"/>
+  </place>
   <place id="lovstakken">
     <name>Løvstakken</name>
     <wikidata>Q15243243</wikidata>
@@ -1520,6 +1619,16 @@
     <alias>Oliebjergets</alias>
     <parent ref="jerusalem"/>
   </place>
+  <place id="mount-olympus">
+    <name>Olympen</name>
+    <canonical-name>Mount Olympus</canonical-name>
+    <wikidata>Q80344</wikidata>
+    <type>mountain</type>
+    <alias>Olympus</alias>
+    <alias>Olympos</alias>
+    <parent ref="greece"/>
+    <note>Også brugt om gudernes bolig i græsk mytologi.</note>
+  </place>
   <place id="murcia">
     <name>Murcia</name>
     <wikidata>Q12225</wikidata>
@@ -1704,6 +1813,14 @@
     <wikidata>Q3437</wikidata>
     <type>city</type>
     <alias>Peruggia</alias>
+  </place>
+  <place id="pindus">
+    <name>Pindos</name>
+    <canonical-name>Pindus</canonical-name>
+    <wikidata>Q201582</wikidata>
+    <type>mountain range</type>
+    <alias>Pindus</alias>
+    <parent ref="greece"/>
   </place>
   <place id="pisa">
     <name>Pisa</name>
@@ -1935,6 +2052,13 @@
     <type>meadow / historic site</type>
     <alias>Rütly</alias>
   </place>
+  <place id="sahara">
+    <name>Sahara</name>
+    <wikidata>Q6583</wikidata>
+    <type>desert</type>
+    <alias>Sahra</alias>
+    <parent ref="africa"/>
+  </place>
   <place id="saint-jean-cliffs">
     <name>Saint-Jean-klipperne</name>
     <canonical-name>Falaises de Saint-Jean</canonical-name>
@@ -1987,6 +2111,13 @@
     <wikidata>Q9009</wikidata>
     <type>city</type>
     <alias>Schafhausen</alias>
+  </place>
+  <place id="schierensee">
+    <name>Schierensee</name>
+    <wikidata>Q560897</wikidata>
+    <type>municipality</type>
+    <alias>Schirensee</alias>
+    <parent ref="holstein"/>
   </place>
   <place id="schleswig">
     <name>Slesvig</name>
@@ -2180,6 +2311,12 @@
     <type>city</type>
     <alias>Stuttsgard</alias>
   </place>
+  <place id="styx">
+    <name>Styx</name>
+    <wikidata>Q8843276</wikidata>
+    <type>mythical river</type>
+    <note>Underverdenens flod i græsk mytologi; ikke en moderne flod af samme navn.</note>
+  </place>
   <place id="svartediket">
     <name>Svartediket</name>
     <wikidata>Q1776629</wikidata>
@@ -2358,6 +2495,16 @@
     <alias>Vallø Stift</alias>
     <parent ref="denmark"/>
   </place>
+  <place id="vallo-forests">
+    <name>Valløskovene</name>
+    <canonical-name>Vallø forests</canonical-name>
+    <type>forest</type>
+    <alias>Vallø-Skov</alias>
+    <alias>Vallø Skov</alias>
+    <parent ref="zealand"/>
+    <note>Skovene under Vallø Stift. Birthe i Nytaarsgave for Damer 1795, s. 5, nævner Vallø-Skov uden at udpege en bestemt del af skovene.</note>
+    <!-- Kilde: https://arkiv.dk/vis/324050 (Vallø Stifts arkivalier, kort over skovene 1797). -->
+  </place>
   <place id="vatican-city">
     <name>Vatikanstaten</name>
     <canonical-name>Vatican City</canonical-name>
@@ -2521,6 +2668,7 @@
     <alias>Sjølund</alias>
     <alias>Sølund</alias>
     <alias>Siælland</alias>
+    <alias>Siæland</alias>
     <alias>Solund</alias>
     <parent ref="denmark"/>
   </place>

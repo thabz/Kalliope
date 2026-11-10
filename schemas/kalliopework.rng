@@ -147,6 +147,9 @@
       <optional><attribute name="skip-index"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
+      <optional><attribute name="context-font-size"><value>small</value></attribute></optional>
+      <optional><attribute name="context-indent"><data type="nonNegativeInteger"/></attribute></optional>
+      <optional><attribute name="context-quotes"><value>stanzas</value></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -185,6 +188,7 @@
           <ref name="prose"/>
           <ref name="epigraph"/>
           <ref name="castList"/>
+          <ref name="textElement"/>
         </choice>
       </zeroOrMore>
     </element>

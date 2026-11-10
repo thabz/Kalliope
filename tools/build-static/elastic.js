@@ -243,6 +243,8 @@ const buildElasticsearchTextEntryDocuments = (collected, entry) => {
       keyword_titles: keywordTitles,
       content_html: htmlToXml(
         [front, body].map(node => safeGetInnerXML(node) ?? '').join('\n')
+          // Nested poem metadata is not part of the enclosing act's full text.
+          .replace(/<head\b[^>]*>[\s\S]*?<\/head>/g, '')
           .replace(/<note>.*?<\/note>/g, '')
           .replace(/<footnote>.*?<\/footnote>/g, '')
           .replace(/<.*?>/g, ' '),

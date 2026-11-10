@@ -128,3 +128,20 @@ Metadata-noter i tekst-JSON kan have det valgfrie booleske felt
 `editorial: true`, når noten er tilføjet af Kalliopes redaktion. Uden feltet
 vises intet mærkat; fraværet fastslår ikke notens ophav. Inline-noter i
 `content_html` bevarer den tilsvarende XML-attribut `editorial="true"`.
+
+Sammenhængende digte indlejret i andre tekster har eget stabilt tekst-ID og
+samme `work_id` som deres omgivende tekst. De får én selvstændig bulkpost,
+når de er indekserbare; der dannes ingen ekstra udvalgspublikation.
+Tekst-JSON har det valgfrie `text.parent_text_id`, og den omgivende teksts
+blok har `anchor` med digtets ID. I værkets TOC kan en tekstpost have et
+valgfrit `content` med de indlejrede digte.
+
+For indlejrede digte dannes oprindelsesnoten automatisk i sidepanelet og
+slutter med »Læs i sammenhæng«. Registrér ikke en gentagelse af denne note
+som en XML-note. Det valgfrie `text.parent_context` i tekst-JSON indeholder
+`title` og `parts`, der enten har `number` og `unit` (`akt`, `scene`, `optog`
+eller `optrin`) eller en scenetitel i `title`. Metadata udledes af værkets
+og sektionernes titler, den omgivende tekst og den seneste genkendelige
+sceneoverskrift før digtet. Et navngivet underværk som *Freyas Altar*
+foretrækkes frem for samlingens titel. Placering og linktekst gengives på
+sidens sprog; manglende scener udledes ikke af dialogen.
