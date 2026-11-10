@@ -212,7 +212,10 @@ omkring 82. Hold kildefilen lille; normalt bør den være under 350 KiB.
 Regler:
 
 - `square-src` er valgfri. Uden den genereres intet social portrait eller sideikon.
-- Det første fundne `square-src` bruges.
+- Kun det primære portræt (`primary="true"`) må have `square-src` og en separat
+  kvadratisk beskæringsfil. Korpustesten håndhæver attributreglen.
+- Ved skift af primært portræt fjernes den tidligere `square-src` og dens
+  beskæringsfil, hvis filen ikke bruges andetsteds.
 - `square-src` er en manuelt beskåret kvadratisk fil, fx `p1-square.jpg`, på
   højst 600 × 600 px.
 
@@ -286,7 +289,7 @@ så XML kan skrive:
 ## Kendte faldgruber
 
 - `primary="true"` må højst findes én gang.
-- Angiv kun `square-src`, når der er et egnet repræsentativt portræt.
+- Angiv kun `square-src` på det primære portræt.
 - `artwork="..."` skal pege på et kendt artwork-id.
 - Lokale `src`-billeder skal ligge i `public/images/<id>/`.
 - `square-src` skal også ligge i `public/images/<id>/`.
