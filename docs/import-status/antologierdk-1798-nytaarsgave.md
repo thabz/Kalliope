@@ -1,61 +1,91 @@
 # Nytaarsgave for Damer 1798: importstatus
 
-Årgangens 45 digte og selvstændige prosaindledning er indført i
-`fdirs/antologierdk/1798-nytaarsgave.xml` fra [KB's farvefaksimile](https://www.kb.dk/e-mat/dod/115208002988-color.pdf).
-Alle 213 PDF-sider er inventorieret; tekstsiderne 1–200 svarer til PDF 6–205.
-Ingen sider, nodebilag eller rettelsesark mangler. Værket forbliver
-`incomplete`, indtil nedenstående punkter er afklaret.
+Status 11. november 2026: Årgangens 45 digte og selvstændige prosaindledning
+er indført og slutkontrolleret mod hele farvefacsimilet. Værket er nu
+`complete`, alle 46 tekstposter har `korrektur1,korrektur2,kilde,side`, og
+værkhovedet indeholder en modelattest for den afsluttende uafhængige kontrol.
 
-## Gennemført
+## Kilde og kontrolomfang
 
-- Frisk Kraken-OCR og Tesseract PSM 3/6 fra 300-DPI-sidebilleder.
-- Kildebaseret transskription og fuld andenlæsning i andre sessioner.
-- Visuel kontrol af alle 47 poesiblokkes strofer og indryk, samt prosaens
-  fire afsnit og den trykte typografi.
-- Individuel vurdering af 1.856 OCR-kandidater og 162 endelige
-  strukturkandidater. Tidligere fund og kandidatdispositioner er bevaret.
-- Semantisk sideaudit af 204 tekst-/sideposter: ingen problemer.
-- KB-kataloghenvisning, udgivelsesmetadata, forfattersignaturer og
-  tekstlige variantrelationer er kontrolleret.
+[KB's farve-PDF](https://www.kb.dk/e-mat/dod/115208002988-color.pdf),
+hentet 11. november 2026: 213 PDF-sider og 20.543.975 bytes.
+SHA-256: `2091f36752b4d36f3693f8235ea0d17fa1c20b2d8d50079a3f0d84cb3a9f76a8`.
+Tryksiderne 1–200 svarer til PDF-side 6–205 og facsimilefilerne
+`005.jpg`–`204.jpg`. Alle øvrige blade, titelblad, register og kolofon er
+også gennemgået. Ingen sider, nodebilag eller rettelsesark mangler.
 
-## Seneste brugerreview
+Den oprindelige import i PR #2040 omfattede frisk Kraken-OCR og Tesseract
+PSM 3/6 samt kildebaseret transskription og andenlæsning. Dens tidligere
+scratchmappe var ikke længere tilgængelig ved slutkontrollen. Sidejournaler,
+kandidatrapporter og kontrollen er derfor genskabt fra den mergede XML og
+PDF'ens indlejrede 300-DPI-farvebilleder. Ny Tesseract-geometri med `dan+frk`,
+PSM 6, understøtter strukturkontrollen; OCR erstatter ikke den direkte læsning.
 
-- Brugeren har bekræftet læsningerne på s. 104 og 198. På s. 198 er
-  »Naar kun den Skjønne Svanebarm« indsat, og skadesnoten er fjernet.
-- Brugeren har valgt det direkte ImageGen-redigerede titelblad som den
-  foretrukne version. Det er indsat som `1798-nytaarsgave-p1.jpg` med
-  transskription. Biblioteksstemplet er fjernet; originalfaksimilen er uændret.
-  Den tidligere automatiske beskæringskandidat blev afvist af QA og bruges ikke.
-- Faksimilekontrollen og GitHub CI bestod på commit `6e6f74c5d`; den tidligere
-  serverblokering er løst.
-- »Venskabs Værd« er forbundet med den nu indsatte tyske original hos Meister.
+## Uafhængig slutkorrektur
 
-## Åbne punkter
+Tre andre sessioner har læst alle 200 tekstsider direkte mod XML'en i
+intervallerne 1–68, 69–138 og 139–200. De har kontrolleret ordlyd,
+tegnsætning, overskrifter, noter, spatiering og kursiv, strofer, indryk,
+prosaafsnit og fysiske sideskift. Kun én editor har ændret XML'en, og
+reviewerne har efterfølgende genåbnet kildesiderne og verificeret rettelserne.
 
-- **Korrekturafslutning:** XML har fortsat `status="incomplete"`,
-  `korrektur1,kilde,side` og ingen modelattest. Brugerens bekræftede læsninger
-  erstatter ikke dokumentation for det afsluttende, uafhængige modelcheckpoint.
-  Afklar eller gennemfør dette før `korrektur2`, modelattest og kompletstatus.
+Alle tre revieweres egne sessionslogs identificerer modellen som
+`gpt-6.1-sol` med reasoning-niveau `low`. Den sidste genkontrol sluttede
+11. november 2026 kl. `10:28:01.372078+00:00`; XML-attesten bruger dette
+tidspunkt. Modellen og tidspunktet attesterer den afsluttende kontrol,
+ikke en efterfølgende automatisk testkørsel.
 
-## Redaktionelle valg
+49 konkrete fund er rettet og genkontrolleret:
 
-»Chor.« står i marginen ved første korvers på s. 191–192. Rendereren kan ikke
-formatere spatiering inde i marginfeltet; position og strofer er bevaret.
-Asterismerne på s. 149 er gengivet som `⁂ ⁂ ⁂`. Registerets s. 146 for
-»Til Agnes« er korrigeret til tekstens faktiske begyndelse på s. 145.
+- 39 udeladte slutsignaturer er gengivet med kildens navne, initialer,
+  spatiering og afstand til teksten.
+- Tre trykte dateringslinjer er genindsat; to yderligere fulde datoer er
+  registreret som tekstmetadata.
+- På s. 25 er slutkommaet efter »Vare« rettet til punktum; på s. 46 er
+  »Litanie« rettet til stort begyndelsesbogstav; på s. 189 er
+  »svinderhen« rettet til »svinder hen«.
+- Asterismerne efter indledningsstrofen i *Jenny* er gengivet som sådanne
+  frem for en vandret streg. Afstanden før Claudius-signaturen er rettet.
+
+Titelbladets ordlyd er genkontrolleret, og versalerne i den bibliografiske
+transskription er normaliseret efter formatreglerne. Billedet er uændret.
+
+## Bevarede redaktionelle valg
+
+Brugerens tidligere godkendte læsninger på s. 104 og 198 er bevaret,
+herunder »Naar kun den Skjønne Svanebarm« på s. 198.
+Det brugerudvalgte titelblad med lokalt fjernet KB-stempel er bevaret;
+originalfacsimilet er uændret.
+
+»Chor.« står i marginen ved første korvers på s. 191–192. Rendereren kan
+ikke formatere spatiering inde i marginfeltet; position og strofer er bevaret.
+Asterismerne på s. 149 gengives som `⁂ ⁂ ⁂`. Registerets s. 146 for
+»Til Agnes« er ikke brugt som begyndelsesside; teksten begynder på s. 145.
 
 Uidentificerede signaturer A., x—y, Heber, T. M., H. W. Lundbye og B. er
 bevaret uden gættede personrelationer. De to tyske forlæg til »Lovtale« er
-ikke identificeret; den trykte Lessing-oplysning er bevaret.
+fortsat ikke identificeret. Eksisterende dokumenterede original- og
+variantrelationer, herunder Meisters »Venskabs Værd«, er bevaret.
 
-## Genoptagelse
+## Validering
 
-Det lokale arbejdsgrundlag ligger i `/private/tmp/kalliope-2019/`: kilde-PDF,
-renderinger, valideret OCR-bundle, transskriptionsforslag, individuelle
-korrekturrapporter, `findings.jsonl`, `inventory-all-reviewed.jsonl`,
-`structure-final.json` og genererede faksimiler i `facsimiles/`.
-Disse maskin- og billedfiler er ikke en del af repositoryet.
+- Semantisk sideaudit: 204 tekst-/sideposter, ingen problemer.
+- Alle 47 poesiblokke med 2.842 verslinjer har selvstændigt visuelt
+  kontrollerede strofelængder og fulde facsimilelister.
+- Alle 179 aktuelle strukturkandidater og 1.868 aktuelle OCR-kandidater er
+  individuelt afklaret mod facsimilet. Historiske kandidatposter bevares
+  særskilt i scratch; ingen konkrete korrekturfund står åbne eller blot rettede.
+- Sidevis typografikontrol og prosaens afsnitskontrol er afsluttet.
+- Repositoryets supplerende OCR-rapport for værket: ingen kandidater.
+- RELAX NG/XML-validering og `git diff --check`: bestået.
+- Årgangens offentlige facsimile og representative thumbnail: bestået kontrol
+  med repositoryets facsimileværktøj.
+- `make test`: exitkode 0; 148 testsuiter og 2.585 tests bestået,
+  én suite og ni tests oversprunget efter projektets konfiguration.
 
-Ved korrekturafslutningen genkontrolleres de ændrede steder uafhængigt, relevante
-audits genkøres, og det frosne checkpoint oprettes fra den endelige tilstand.
-Kør `make test`, faksimilekontrollen og GitHub CI før færdigmelding.
+Det aktuelle kontrolgrundlag ligger midlertidigt i
+`/private/tmp/kalliope-2019-final/`: kilde-PDF, sidebilleder, TSV-geometri,
+sidejournaler, individuelle fund, struktur- og OCR-dispositioner,
+modelproveniens, testlog og frosset reviewcheckpoint. Det er arbejdsfiler og
+indgår ikke i repositoryet. Kildehenvisning og checksum ovenfor identificerer
+PDF'en uafhængigt af scratchmappen.
