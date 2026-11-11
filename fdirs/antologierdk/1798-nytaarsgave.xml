@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1798-nytaarsgave" author="antologierdk" status="incomplete" type="anthology" parent="1793-1804-nytaarsgave">
+<kalliopework id="1798-nytaarsgave" author="antologierdk" status="complete" type="anthology" parent="1793-1804-nytaarsgave">
 <workhead>
   <title>Nytaarsgave for Damer</title>
   <year>1798</year>
   <pictures>
-    <picture src="1798-nytaarsgave-p1.jpg" type="titlepage" primary="true"><transcription>NYTAARSGAVE / FOR / DAMER / 1798. // GRATIERNE / HÆLLIGET // A. Flint d. &amp; f. // Paa S. Poulsens Forlag.</transcription></picture>
+    <picture src="1798-nytaarsgave-p1.jpg" type="titlepage" primary="true"><transcription>Nytaarsgave / for / Damer / 1798. // Gratierne / hælliget // A. Flint d. &amp; f. // Paa S. Poulsens Forlag.</transcription></picture>
   </pictures>
   <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122048920505763" facsimile="115208002988-color" facsimile-pages-num="213" facsimile-pages-offset="5">
     <title>Nytaarsgave for Damer</title>
@@ -15,6 +15,9 @@
   </source>
   <pagebreaks/>
   <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-11T10:28:01.372078+00:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 <text id="haste20261024201901" author="haste">
@@ -26,7 +29,7 @@
   </subtitle>
   <firstline>O Du, som fra Kiærligheds Ambraskjød</firstline>
   <source pages="1-23"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -39,7 +42,7 @@ Som venlige Dyd gjør saa stor og varm!
 Da muligt, naar <w>Jenny</w> Du tænker,
 Mit Offer en Taare Du skjenker.
 
-----
+<nonum><center>⁂ ⁂ ⁂</center></nonum>
 
 <pb n="2" facs="006.jpg"/>Lord <w>Tullney</w> var mægtig i Fædres Egn,
 Og stort var hans Herresæde;
@@ -427,6 +430,8 @@ Da læskede Himlen hans Lue-Tørst;
 Thi Dødstimen kom: da han smil’de først,
 Saa bød han sig baaren i Haven,
 Der døde den Olding paa Graven.
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -441,7 +446,7 @@ Der døde den Olding paa Graven.
   </subtitle>
   <firstline>Du Harpen slaaer, bekranst af Phoebi Glands</firstline>
   <source pages="24"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -462,6 +467,8 @@ Om blot en Skjerv jeg havde at forlise.
 Mit Ønske tag! ynd Draaben af et Hav!
 <w>Vær altid lykkelig, som nu, Louise,
 Og silde skjønne Skarer ved din Grav!</w>
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -472,7 +479,7 @@ Og silde skjønne Skarer ved din Grav!</w>
   <subtitle>Til Frederike R**.</subtitle>
   <firstline>Smigers Trylle-Nectar faaer Du ikke</firstline>
   <source pages="25-26"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -492,7 +499,7 @@ Blev den skjønne Lov for fælleds Liv.
 Men, naar Manden byder Trods til Fare,
 Naar han sveder for at vinde Brød,
 Mildt Naturens Stemme Qvinden bød,
-Troligt paa sit Hjem at tage Vare,
+Troligt paa sit Hjem at tage Vare.
 
 <pb n="26" facs="030.jpg"/>Med et Smiil at jevne Klippe-Veje,
 Og i Storm at yde Sagtmods Raad;
@@ -511,6 +518,8 @@ Denne Dyd til Livets Aftenrøde
 Trodser Armod, Kummer, Uret, Fald —
 Pige, jeg har viist Dig Qvindens Kald:
 Gak det skjønt, som hidindtil, imøde!
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -522,10 +531,12 @@ Gak det skjønt, som hidindtil, imøde!
   <firstline>Fra fjerne Strand en venlig Hilsen lyder</firstline>
   <dates><written>1797-07-01</written></dates>
   <source pages="27-31"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><right>Kiøbenhavn, d. 1 Julii 1797.</right></nonum>
+
 Fra fjerne Strand en venlig Hilsen lyder,
 En Oldings Hjerte, Pige, hilser Dig,
 Og næsten Faderfryd det Hjerte nyder
@@ -628,7 +639,7 @@ Men Summen er af Alt: <w>Vær lykkelig!</w>
   <firstline>Ingen Vennesang om Højtid lyder</firstline>
   <dates><written>1796-12-27</written></dates>
   <source pages="32-36"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -726,6 +737,10 @@ Og naar Dine Purpurlæber blegne,
   Og Du længes efter Fredens Havn,
 Sødt Du hen i Gravens Drømme segne,
   Og opvaagne sødt — i <w>Rikkes</w> Favn!
+
+<nonum>27 Dec. 1796.</nonum>
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -738,7 +753,7 @@ Sødt Du hen i Gravens Drømme segne,
     <note editorial="true">Signeret »A.«.</note>
   </notes>
   <source pages="37-39"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -796,6 +811,8 @@ O Gud! jeg siger ikke Meer;
   Du nok min Mening kjender,
 Og snart lyksalig Brud jeg seer,
   At mig en Mand du sender.
+
+<nonum><right>A.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -806,7 +823,7 @@ Og snart lyksalig Brud jeg seer,
   <firstline>Let, som Vestenvind blandt Roser gaaer</firstline>
   <dates><written>1796-12-26</written></dates>
   <source pages="40-43"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -872,6 +889,10 @@ Allevegne Hjerter Dig skal bie,
 Ej Din Vintertime vorde tung;
 End med Sølvhaar Du skal synes ung,
 Og i Graven hvile sødt, <w>Marie</w>!
+
+<nonum>26 Dec. 1796.</nonum>
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -885,7 +906,7 @@ Og i Graven hvile sødt, <w>Marie</w>!
     <note editorial="true">Signeret »A.«.</note>
   </notes>
   <source pages="44-46"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -925,7 +946,7 @@ Derfor, ædle, skjønne, gode Qvinde,
   I Din Barm, som rummer mangen Ven,
 Ogsaa mig en liden Krog lad finde,
 <pb n="46" facs="050.jpg"/>  Om Du troer, jeg ej vanærer den!
-Og naar jeg fra litanie og Møje
+Og naar jeg fra Litanie og Møje
   Hviler ud i rosen-smykket Grav,
 Kast imellemstunder hid Dit Øje
   Til det Blad, Du venligt her mig gav!
@@ -933,6 +954,8 @@ Ynd det, peeg derpaa, og siig: ”Veninder,
   ”Mange Torne gro’de paa hans Vej;
 ”Blomster ofred’ han til hulde Qvinder:
   ”Her han gav mig en <w>Forgjetmigej</w>.”
+
+<nonum><right>A.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -945,7 +968,7 @@ Ynd det, peeg derpaa, og siig: ”Veninder,
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="47-49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -993,6 +1016,8 @@ Skal ønske sig paa den, det er:
 </poetry>
 <prose>
 (Denne Vise søger en Componist, da Forfatteren ingen Melodie kjender, der passer baade til Stavelsemaalet og Indholdet).
+
+<nonum><right><w>Anton Julius.</w></right></nonum>
 </prose>
 </body>
 </text>
@@ -1002,7 +1027,7 @@ Skal ønske sig paa den, det er:
   <title>Over Nikkes Kanariefugl</title>
   <firstline>Ak! min Fugl fløj ud efter Frihed: nu finder den Døden!”</firstline>
   <source pages="49"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1010,6 +1035,8 @@ Skal ønske sig paa den, det er:
     Yndige, klag ej saa! See, det er Levendes Lod.
 Alle vi stunde til Frihed, men Ingen fandt den i Livet:
     Graven er Tvangens Grav; Døden er Frihedens Vald.
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1023,7 +1050,7 @@ Alle vi stunde til Frihed, men Ingen fandt den i Livet:
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="50-53"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1078,6 +1105,8 @@ Naar, henslængt i en Krog af Verden, jeg sørger og glemmes,
 Den i Veemodens Stund skal tilhviske mig salig Fortrøstning.
 Ja, en hellig Guddom bliver du mig, som Veninde!
 Fast og evig her i mit Hjerte throner dit Tempel.
+
+<nonum><right><w>Anton Julius.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1087,11 +1116,12 @@ Fast og evig her i mit Hjerte throner dit Tempel.
   <title>Brev fra Thrine til Claudius</title>
   <subtitle>paa hans Fødselsdag.</subtitle>
   <firstline>Min gode Mand, jeg gjerne vilde sige</firstline>
+  <dates><written>1797-04-28</written></dates>
   <notes>
     <note editorial="true">Signeret »A.«.</note>
   </notes>
   <source pages="54-56"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1149,6 +1179,8 @@ Som nu, Dig Venner smile blidt imøde,
 Og altid <w>Thrines</w> Ømhed glæde Dig!
 Og ofte lee den skjønne Morgenrøde,
 Som vinked’ Dig til Liv, — til Held for mig!
+
+<nonum><right>A.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -1158,7 +1190,7 @@ Som vinked’ Dig til Liv, — til Held for mig!
   <title>I et ungt Menneskes Stambog</title>
   <firstline>For Venner Du bestemte denne Bog</firstline>
   <source pages="57-59"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1216,6 +1248,8 @@ Om jeg da slumrer hen i Dødens Favn —
 Og Venskabs Taarer ved min Gravhøj rinde,
 Da, W......., tegn et Kors ved dette Navn!
 Følg mine Vennerraad, og elsk mit Minde!
+
+<nonum><right><w>Pavels.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1225,7 +1259,7 @@ Følg mine Vennerraad, og elsk mit Minde!
   <title>Alwyns Reise</title>
   <firstline>Til fremmede Egne</firstline>
   <source pages="60-63"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1300,6 +1334,8 @@ De fremmede Piger
 Tit mindes mig her,
 Men ingen, men ingen
 Som Nina der.
+
+<nonum><right><w>Frankenau.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1309,8 +1345,9 @@ Som Nina der.
   <title>Til Louise N***r</title>
   <subtitle>paa Nytaarsdag 1797.</subtitle>
   <firstline>Timer, Uger, Aar og Sækler ile</firstline>
+  <dates><event>1797-01-01</event></dates>
   <source pages="64-66"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1358,6 +1395,8 @@ Did Du let i Dydens Arme træde!
     Om Din Vandring lejre Glæder sig!
 Silde mange Godes Taarer væde
     Rosmarinen, Venskab yder Dig!
+
+<nonum><right><w>Haste.</w></right></nonum>
 </poetry>
 </body>
 </text>
@@ -1371,7 +1410,7 @@ Silde mange Godes Taarer væde
     <note editorial="true">Signeret »A.«.</note>
   </notes>
   <source pages="67-68"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1411,6 +1450,8 @@ Saa skal jeg sukke til jeg heden træder,
     Og, mæt af Livet, iler af Din Favn;
 Men, tryllet end af Himlens bedste Glæder,
     Jeg tit skal tænke, signe tit Dit Navn.
+
+<nonum><right>A.</right></nonum>
 </poetry>
 </body>
 </text>
@@ -1420,7 +1461,7 @@ Men, tryllet end af Himlens bedste Glæder,
   <title>Intet Forsvar for Hymen</title>
   <firstline>Nej! min Hans! du ej bedrager mig</firstline>
   <source pages="69-76"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1565,6 +1606,8 @@ Selv du snart ved Hymens Alterfod
 For begangne Synd skal gjøre Bod.
 Og, min gode <w>Hans</w>, før dette skeer,
 Ej en Tøddel du fra Viktor seer.
+
+<right><w>V. K. Hjort.</w></right>
 </poetry>
 </body>
 </text>
@@ -1574,7 +1617,7 @@ Ej en Tøddel du fra Viktor seer.
   <title>Til Sophie C**</title>
   <firstline>Fødselsdagen for den Kloge</firstline>
   <source pages="77-81"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1676,7 +1719,7 @@ Skal mig evig skjønsom finde.
   <subtitle>i November 1796.</subtitle>
   <firstline>I Venskabs Navn og paa dets Vink jeg nu fremtræder</firstline>
   <source pages="82-83"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1726,7 +1769,7 @@ Vil de med trofast Aand fremvirke fælleds Glæde,
     <note editorial="true">Gendigtning af James Macphersons <xref type="translation" poem="macpherson2026101818"/>. Uddraget er fortællingen om Komal og Galvina sidst i anden sang af <i>Fingal</i>.</note>
   </notes>
   <source pages="84-89"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1783,6 +1826,8 @@ Slængte han ned; da traf en hvinende Piil ham i Brystet.
 
     Natlige Skipper pløjer den dybe Strøm; i det Fjerne
 Østlige Dagskjær viser hans Blik de grønnende Grave.
+
+<right><w>Anton Julius.</w></right>
 </poetry>
 </body>
 </text>
@@ -1796,7 +1841,7 @@ Slængte han ned; da traf en hvinende Piil ham i Brystet.
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="90-92"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1852,6 +1897,8 @@ Hvo veed, hvor vi i Morgen er,
 Men lever jeg, da vist jeg veed,
 Jeg drikke vil og kysse med;
     Og Linna med vil kysse.
+
+<right><w>Anton Julius.</w></right>
 </poetry>
 </body>
 </text>
@@ -1865,7 +1912,7 @@ Jeg drikke vil og kysse med;
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="93-94"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1890,6 +1937,8 @@ I det de sige: See, det er vor Fader!
     Tak, du gav os ham i Støvets Land!
 Løn hans Faderhjerte, Alles Fader!
     Elske, men ej lønne ham vi kan.
+
+<right><w>Anton Julius.</w></right>
 </poetry>
 </body>
 </text>
@@ -1900,7 +1949,7 @@ Løn hans Faderhjerte, Alles Fader!
   <subtitle>over den skjønne Mode, at sige <w>Du</w><footnote>Adskilligt i dette lille Stykke er laant af to tydske Stykker, det eene af <w>Lessing</w>, det andet af en Ubenævnt.</footnote>.</subtitle>
   <firstline>Da Anno Eet man endnu talte</firstline>
   <source pages="95-98"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1973,7 +2022,7 @@ Mod sligt et saligt Øjeblik.
   <title>Ingen Nytaarsgave</title>
   <firstline>Jeg har ej Guld — jeg intet Guld kan give</firstline>
   <source pages="98"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1994,7 +2043,7 @@ Fra mig Du derfor ingen Gave skuer;
   <title>Amors Pile</title>
   <firstline>Jeg holder det for Tant og Digt</firstline>
   <source pages="99-102"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2069,6 +2118,8 @@ Det har. Paa Læberne den Gud
 Den bedste Piil af alle tager.
 Det er hans rette Kongeskud;
 Derfor det allersødest smager.
+
+<right><w>Tode.</w></right>
 </poetry>
 </body>
 </text>
@@ -2079,7 +2130,7 @@ Derfor det allersødest smager.
   <subtitle>Elegie.</subtitle>
   <firstline>Vee mig! en Piges usle Slave</firstline>
   <source pages="103-106"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2157,6 +2208,8 @@ Hver Nat jeg seer i Nag hensvinde;
    Og hvilken Qval! jeg kan ej trøste dig.
 O! skjælv, jeg er, naar dine Taarer rinde,
    I Graven selv ulykkelig.
+
+<right><w>Sander.</w></right>
 </poetry>
 </body>
 </text>
@@ -2166,7 +2219,7 @@ O! skjælv, jeg er, naar dine Taarer rinde,
   <title>Til Drømmene</title>
   <firstline>I Genier som til mit stille Leje</firstline>
   <source pages="107-110"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2233,6 +2286,8 @@ Og smilende dets Blomsterbane gaae,
 For Spøg og Elskov friske Krandse binde,
 Og højt til Glædens Priis min Harpe slaae.
 
+<right><w>Frankenau.</w></right>
+
 <nonum><center>(Göttingen, i Vinteren 1795;96.)</center></nonum>
 </poetry>
 </body>
@@ -2244,7 +2299,7 @@ Og højt til Glædens Priis min Harpe slaae.
   <subtitle>(Melodie: Paa Jorden Flora’s Ømhed hviler, o. s. v.)</subtitle>
   <firstline>Jeg veed en Blomst i Flora’s Have</firstline>
   <source pages="111-112"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2274,6 +2329,8 @@ Han stolt kan synge Livets Priis,
 Han skrækkes ej af Skjebnens Torden:
 For ham er hver en Krog paa Jorden
 Et Paradiis.
+
+<right><w>Frankenau.</w></right>
 </poetry>
 </body>
 </text>
@@ -2283,7 +2340,7 @@ Et Paradiis.
   <title>Ved Anne Elisabeth Resteds Grav</title>
   <firstline>Ak, Jordens Plager ere mange, mange</firstline>
   <source pages="113-114"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2321,6 +2378,8 @@ Ej Lerkens Slag Dit Øre naaer.
 Did slaaer ej Skjebnens Torden ned;
 Engang skal Gjensyns Timen herlig smile,
 O! denne Trøst er Salighed!
+
+<right><w>Frankenau.</w></right>
 </poetry>
 </body>
 </text>
@@ -2334,7 +2393,7 @@ O! denne Trøst er Salighed!
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="115-119"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
@@ -2354,7 +2413,7 @@ Formodentlig ville danske Piger ikke ugjerne lære at kjende Noget til deres skj
     <note editorial="true">Signeret »Anton Julius.«.</note>
   </notes>
   <source pages="119-122"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2390,6 +2449,8 @@ Eenlig, som Turtelduen paa Tag, jeg længes og klager;
    Medens mit Hjerte slaaer, længes og klage jeg skal.
 Snart, kun snart, man bære mit brustne Hjerte til Graven!
    Verdens Glimmer og Pragt glad vil jeg sige Farvel.
+
+<right><w>Anton Julius.</w></right>
 </poetry>
 </body>
 </text>
@@ -2400,7 +2461,7 @@ Snart, kun snart, man bære mit brustne Hjerte til Graven!
   <subtitle>Helliget Søstrene Thomasine Heiberg og Lise Jørgensen!</subtitle>
   <firstline>O! Deres Navne, Søstre! skal fuldende</firstline>
   <source pages="123-134"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2413,6 +2474,7 @@ At det er <w>Dem</w>, jeg vovsomt malet har!
    Mädchens! ich weiß, was Ihr wehrt seyd! und was Ihr dem Manne seyn könnet, wenn Ihr’s vorzieht, und Euch entschließt, eines Mannes zuwerden! Ihr seyd ihm eine edle Gabe Gottes, und er lebt des noch eins so lange. Er sey reich oder arm, so seyd Ihr ihm ein Trost und machet ihn allezeit frölich. Und darum bewegt sich mein Herz in mir, wenn ich Euch ansehe, und an Euch denke.
    Nun! Ihr seyd in der Welt, und müßet durch, was auch Euer Beruf sey. Gehet in Friede, und seht nicht viel umher!
    Und der Engel der Unschuld begleite Euch!
+
 <right><w>Claudius.</w></right>
 </prose>
 <poetry>
@@ -2615,6 +2677,8 @@ Da vent med Længsels Fryd den skjønne Stund,
 At Livets Vinter flyer for Vaarens Varme!
 Du døer ei, <w>Laura!</w> da! Du slumrer kun!
 Du vaagner, <w>Laura!</w> snart i Fader-Arme!
+
+<right><w>F. Høegh Guldberg.</w></right>
 </poetry>
 </body>
 </text>
@@ -2624,7 +2688,7 @@ Du vaagner, <w>Laura!</w> snart i Fader-Arme!
   <title>Til Blufærdighed</title>
   <firstline>Du, Møens Fryd, du, Qvindens Smykke</firstline>
   <source pages="135-137"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2682,6 +2746,8 @@ Ja, Møens Held og Qvindens Ære,
 Blufærdighed! vi hylde dig.
 For alle Nordens Døttre være
 Du hellig og tilbedelig!
+
+<right><w>Liebenberg.</w></right>
 </poetry>
 </body>
 </text>
@@ -2692,7 +2758,7 @@ Du hellig og tilbedelig!
   <subtitle>Sonnet.</subtitle>
   <firstline>I Glædens blide Foraarsdage</firstline>
   <source pages="138"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2712,6 +2778,8 @@ Elisa! dog din Aand fandt Mod og Styrke.
 I Rædslers Stund, i Vanhelds øde Mørke
 Dit Hjertes fulde Værd vi prøvet har.
 Da blev du os tilfulde dyrebar.
+
+<right><w>Liebenberg.</w></right>
 </poetry>
 </body>
 </text>
@@ -2724,7 +2792,7 @@ Da blev du os tilfulde dyrebar.
     <note editorial="true">Signeret »x — y † Vabc.«.</note>
   </notes>
   <source pages="139-142"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="la">
@@ -2792,6 +2860,8 @@ Naar Du hos mig, hos Dig jeg kunde være —
 Hvi lod Du mig den sjeldne Ædle kjende?
    O dobbelt er jeg nu ulykkelig!
 Min Fryd, min Roe, mit Liv er tabt med hende.
+
+<right>x — y † <w>Vabc.</w></right>
 </poetry>
 </body>
 </text>
@@ -2804,7 +2874,7 @@ Min Fryd, min Roe, mit Liv er tabt med hende.
     <note editorial="true">Signeret »Heber.«.</note>
   </notes>
   <source pages="143-144"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2832,6 +2902,8 @@ Pige! Du vil dog ej frygte den?
    Ønsker Du, at Skyggen skal forsvinde,
 Plant da paa min Høj en Rose hen!
    Lad mig evig leve i Dit Minde!
+
+<right><w>Heber.</w></right>
 </poetry>
 </body>
 </text>
@@ -2845,7 +2917,7 @@ Plant da paa min Høj en Rose hen!
     <note editorial="true">Signeret »Heber.«.</note>
   </notes>
   <source pages="145-146"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2875,6 +2947,8 @@ Bag Gravens Skygge troner blid
    En evig Blomstervaar,
 Liig Maanen der i Dæmringstid
    Bag Granetoppe staaer.
+
+<right><w>Heber.</w></right>
 </poetry>
 </body>
 </text>
@@ -2895,7 +2969,7 @@ Liig Maanen der i Dæmringstid
     <note editorial="true">Jens Smidth er den forfatter, der i andre bidrag i årgangen benytter pseudonymet Anton Julius.</note>
   </notes>
   <source pages="147-185"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3563,7 +3637,7 @@ Men Aage sank i sit eget Sværd.
     <note editorial="true">Gendigtning af Charlotte Smiths <xref type="translation" poem="smithc20261024201901"/>.</note>
   </notes>
   <source pages="186-187"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3581,6 +3655,8 @@ Kummers Søn skal engang i dit Rige
 Glemme denne tunge Prøve-Stand,
 Lyse Klode! snart Du mig modtage!
 Jeg er træt af Jordens megen Plage.
+
+<right>T. M.</right>
 </poetry>
 </body>
 </text>
@@ -3592,12 +3668,14 @@ Jeg er træt af Jordens megen Plage.
   <firstline>I Liv og Død var han sin Ven, som Dyden, troe</firstline>
   <source pages="187"/>
   <keywords>riber</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I Liv og Død var han sin Ven, som Dyden, troe.
 Blid, som hans Hierte, være her hans Roe!
+
+<right><w>Sander.</w></right>
 </poetry>
 </body>
 </text>
@@ -3612,7 +3690,7 @@ Blid, som hans Hierte, være her hans Roe!
     <note editorial="true">Gendigtning af det anonyme digt <xref type="translation" poem="anonymuk2026102402"/>.</note>
   </notes>
   <source pages="188-189"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3631,7 +3709,7 @@ Sin Glut til Barmen trykked’ og klageligen sang:
 „Skiøndt grum han er-dog vidste han hvad vi lide her,
 „Han i sin Favn os værned’ mod barske Nordenveir.
 
-<pb n="189" facs="193.jpg"/>„Du fryser saa min Bedste, dit Liv snart svinderhen.
+<pb n="189" facs="193.jpg"/>„Du fryser saa min Bedste, dit Liv snart svinder hen.
 „O lad min varme Taare oplive dig igien.
 „Men ak omsonst — min Taare jo fryser, før den faldt.
 „O arme, arme Moder du har nu mistet Alt.”
@@ -3640,6 +3718,8 @@ Nu sank hun ned fortvivlet paa sammendrevne Snee,
 Og sønderknust af Smerte bejamred lydt sin Vee.
 Sin Glut hun ved sig lagde; — et Kys paa blege Mund
 Hun trykte — saae mod Himlen — og sank i Dødens Blund.
+
+<right>T. M.</right>
 </poetry>
 </body>
 </text>
@@ -3652,7 +3732,7 @@ Hun trykte — saae mod Himlen — og sank i Dødens Blund.
     <note editorial="true">Signeret »T. M.«.</note>
   </notes>
   <source pages="190"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3670,6 +3750,8 @@ Leve dette Steds Forskiønnerinde!
 Ofte lokke Vaaren hende hid,
 Og ved Synet af sit Værk hun finde
 Lønnen for sin ædle Smag og Flid.
+
+<right>T. M.</right>
 </poetry>
 </body>
 </text>
@@ -3683,7 +3765,7 @@ Lønnen for sin ædle Smag og Flid.
     <note editorial="true">Signeret »H. W. Lundbye.«.</note>
   </notes>
   <source pages="191-192"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3713,6 +3795,8 @@ Thi vi skionne paa dens Glæde.
     Støvets hulde Kald er Fryd,
     Kierlig har Naturen givet
     Dette Bud: Vær klog og nyd!
+
+<right><w>H. W. Lundbye.</w></right>
 </poetry>
 </body>
 </text>
@@ -3725,7 +3809,7 @@ Thi vi skionne paa dens Glæde.
     <note editorial="true">Signeret »B.«.</note>
   </notes>
   <source pages="193-195"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3777,6 +3861,8 @@ Udflyde evig hine Goder,
   Der blande Fryd i Livets Harm.
     Elsk da, og du skal see, min Ven,
     Den gyldne Alders Tid igien.
+
+<right>B.</right>
 </poetry>
 </body>
 </text>
@@ -3791,7 +3877,7 @@ Udflyde evig hine Goder,
     <note editorial="true">Gendigtning af Nicolas Montjourdains <xref type="translation" poem="montjourdain20261024201901"/>. Oversættelsen omfatter de første fem af originalens otte strofer.</note>
   </notes>
   <source pages="196-198"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3839,6 +3925,8 @@ Forlad da ej det fromme Par,
 Din Skiebne du til deres binde!
 Du vorde dem, hvad jeg dem var,
 Og end De Livet sødt vil finde.
+
+<right><w>Frankenau.</w></right>
 </poetry>
 </body>
 </text>
@@ -3852,7 +3940,7 @@ Og end De Livet sødt vil finde.
     <note editorial="true">Gendigtning af Christoph Georg Ludwig Meisters <xref type="translation" poem="meister2026102401"/>.</note>
   </notes>
   <source pages="199-200"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3895,6 +3983,8 @@ Hvor helligt bliver os ei da
 Usminket Venskab her?
 Da, naar engang vi gaae herfra
 Vi aldrig skilles meer!
+
+<right><w>Frankenau.</w></right>
 </poetry>
 </body>
 </text>
