@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museums>
+  <museum id="aros">
+    <name>ARoS Aarhus Kunstmuseum</name>
+    <country>dk</country>
+    <link>https://www.aros.dk/</link>
+  </museum>
   <museum id="bakkehuset">
     <name>Bakkehusmuseet</name>
     <country>dk</country>
