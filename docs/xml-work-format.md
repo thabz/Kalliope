@@ -1222,6 +1222,11 @@ Selve prosateksten.
 `ref` skal pege på et værk-id hos samme digter. Værkfilen skal ligge i
 digterens mappe, hvor den registreres automatisk uden en liste i `info.xml`.
 
+Et underværk må ikke selv indeholde underværker. Værkhierarkiet har højst to
+niveauer; opdel et underværk med `<section>` i stedet. Reglen gælder både
+relationer angivet med `parent` og henvisninger med `<subwork ref="…"/>` og
+kontrolleres af korpustesten.
+
 ## Noter
 
 Noter paa vaerk- og tekstniveau:
