@@ -88,10 +88,18 @@ Af mit Hjerte, hvad angaaer det dig?
 </body>
 </text>
 
-<text id="molbechandrea1">
+<text id="molbechandrea1" variant="molbech2026091152">
 <head>
   <title>Roselil og hendes moder</title>
   <firstline>Roselil og hendes moder</firstline>
+  <notes>
+    <note editorial="true">Forkortet og moderniseret tekstversion.</note>
+    <note editorial="true">Gendigtning efter folkevisen »Redselille og Medelvold« (DgF 271; TSB D 288).</note>
+    <!-- Forlægsrelation: Højskolesangbogens Sanghåndbogen online, »Roselil' og hendes moder«: https://hojskolesangbogen.dk/om-sangbogen/historier-om-sangene/o-r/roselil-og-hendes-moder. Artiklen omtaler flere gamle forlæg; en bestemt DgF-optegnelse er ikke identificeret som Molbechs konkrete forlæg. TSB-nummeret er sammenholdt med SAMLA: https://samla.no/viewer/metadata/1b6b01bb-87ac-42b6-919f-fb0200f916b1/174/. -->
+  </notes>
+  <pictures>
+    <picture artwork="kunst/zahrtmann-roselil-og-hendes-moder-1870"/>
+  </pictures>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -131,9 +139,10 @@ Den ler dog nok bedst, som ler til sidst.
   <firstline>Den kjedsom Vinter gik sin Gang</firstline>
   <notes>
     <note editorial="true">Fra stykket <i>Ambrosius</i>.</note>
-    <note editorial="true">Dette er en omskrevet udgave af Stubs <xref poem="stub2019061413"/>.</note>
+    <note editorial="true">Omskrevet udgave af Ambrosius Stubs <xref poem="stub2019061413"/>.</note>
     <note editorial="true" type="credits">Bidrag fra Jørgen Poulsen.</note>
   </notes>
+  <!-- Den tidligere registrerede længere tekstform er bevaret med sit oprindelige id. Den konkrete kilde til denne moderniserede version er ikke dokumenteret; den må ikke kildeangives som 1877-udgavens afbrudte tekst på s. 17. -->
   <quality>korrektur1</quality>
 </head>
 <body>
