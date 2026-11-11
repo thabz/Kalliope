@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="baggerh" country="dk" lang="da" type="person">
+  <!-- Joh. Baggerus D. i Approbatio til Kingos Anden Part (1681), Samlede Skrifter III (1975), s.132. Identitet og livsdata: DBL1 I (1887), s.424–426, https://runeberg.org/dbl/1/0442.html . -->
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Bagger</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1646-08-23</date>
+    </born>
+    <dead>
+      <date>1693-08-30</date>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q1783353</wikidata>
+    <viaf>2798078</viaf>
+    <gnd>12923916X</gnd>
+  </identifiers>
+</person>
