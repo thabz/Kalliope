@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barfoed" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Peter</firstname>
+    <lastname>Barfoed</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1770-02-15</date>
+      <place>Tirstrup</place>
+    </born>
+    <dead>
+      <date>1841-11-14</date>
+      <place>Faxe</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
