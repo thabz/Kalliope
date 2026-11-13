@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1802-minerva-68" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-<title>Minerva. Bind 68</title>
-<year>1802</year>
-<pagebreaks/>
-<proofreadings><proofreading model="gpt-6.1-sol" datetime="2026-11-13T11:35:16Z"/></proofreadings>
-<errata status="reviewed" pages="[omslagets inderside]" facsimile-pages="369"/>
-<pictures>
-  <picture src="1802-minerva-68-p1.jpg" type="titlepage" primary="true">
-    <transcription>Maanedskriftet / Minerva. // April, Mai og Juni, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
-  </picture>
-</pictures>
-<source href="https://books.google.dk/books?id=JWI3AAAAMAAJ" facsimile="1802-minerva-68" facsimile-pages-num="369">
-<title>Maanedskriftet Minerva</title>
-<editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
-<volume>68 (17. årgangs 4. bind)</volume>
-<place>Kiøbenhavn</place>
-<publisher>Directeur Johan Frederik Schultz</publisher>
-<printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
-<year>1802</year>
-</source>
+  <title>Minerva. Bind 68</title>
+  <year>1802</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T11:35:16Z"/>
+  </proofreadings>
+  <errata status="reviewed" pages="[upagineret]" facsimile-pages="369"/>
+  <pictures>
+    <picture src="1802-minerva-68-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // April, Mai og Juni, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source href="https://books.google.dk/books?id=JWI3AAAAMAAJ" facsimile="1802-minerva-68" facsimile-pages-num="369">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>68 (17. årgangs 4. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1802</year>
+  </source>
 </workhead>
 <workbody>
-<section level="1"><head><title>April 1802</title></head><content>
-<text id="wedel2026111301" author="wedel"><head>
-<title>Selskabs-Sang</title>
-<subtitle>den 2den April 1802.</subtitle>
-<firstline>Mærkværdig for Danske er anden April</firstline>
-<source pages="103-105" facsimile-pages="111-113"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+
+<section level="1">
+<head>
+  <title>April 1802</title>
+</head>
+<content>
+<text id="wedel2026111301" author="wedel">
+<head>
+  <title>Selskabs-Sang</title>
+  <subtitle>den 2den April 1802.</subtitle>
+  <firstline>Mærkværdig for Danske er anden April</firstline>
+  <source pages="103-105" facsimile-pages="111-113"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Mærkværdig for Danske er anden April;
   Udmærket den stedse skal være;
@@ -53,9 +64,8 @@ De Britter de faldt da i hundrede Tal;
   Man kneisende Flag saae nedrasle;
 Og Skibenes Nød, og Selv Nelsonners Qval
   Om Død og Forliis monne varsle.
-<pb n="104" facs="111.jpg"/>
 
-Da Kampen var blevet ret blodig og varm,
+<pb n="104" facs="111.jpg"/>Da Kampen var blevet ret blodig og varm,
   Tre-Kroner begyndte at sprude;
 De Britter da raabte: for kort er vor Arm,
   Vort Haab om at seire er ude.
@@ -84,9 +94,8 @@ Ja hører, I Helte! vi flette en Krands;
   Og den vi taknemlig frembære.
 I ginge til Død som til frydefuld Dands;
   Og Eders skal denne Skaal være!
-<pb n="105" facs="112.jpg"/>
 
-Og Fredrik! Du Dannemarks Glæde og Lyst,
+<pb n="105" facs="112.jpg"/>Og Fredrik! Du Dannemarks Glæde og Lyst,
   En Krands vi Dig, Ædle! og skylde.
 O hør! hvordan her med høit bankende Bryst
   Din Kiækhed og Viisdom vi hylde.
@@ -104,14 +113,30 @@ Uplettet i Fred, og i standende Slag!
 <nonum><small>Staarup Præstegaard i Fyen,</small></nonum>
 <nonum><small>    d. 2den April 1802.</small></nonum>
 <nonum><right><w>P. A. Wedel.</w></right></nonum>
-</poetry></body></text>
-</content></section>
-<section level="1"><head><title>Mai 1802</title></head><content>
-<text id="weinwich2026111301" author="weinwich"><head>
-<title>Lygten</title>
-<subtitle>Efter den 16de af Stolbergs Jamber.</subtitle>
-<firstline>Som efter Kilden længes trætte Hiort</firstline><notes><note editorial="true" unknown-original-by="stolbergf"/></notes>
-<source pages="187-190" facsimile-pages="195-198"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Mai 1802</title>
+</head>
+<content>
+<text id="weinwich2026111301" author="weinwich">
+<head>
+  <title>Lygten</title>
+  <subtitle>Efter den 16de af Stolbergs Jamber.</subtitle>
+  <firstline>Som efter Kilden længes trætte Hiort</firstline>
+  <notes>
+    <note editorial="true" unknown-original-by="stolbergf"/>
+  </notes>
+  <source pages="187-190" facsimile-pages="195-198"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Som efter Kilden længes trætte Hiort,
 og efter Moderen vildfaret Barn,
@@ -205,13 +230,25 @@ snart blier hans Ord en Lygte for vor Fod,
 et Lys paa Eders Vei, i Døden Lys.
 
 <nonum><right>N. H. Weinwich.</right></nonum>
-</poetry></body></text>
-<text id="tidemand2026111302" author="tidemand"><head>
-<title>Sang</title>
-<subtitle><line>paa Enigheds-Selskabets 21de Aars Stiftelsesdag den 9de April 1802.</line><line>af A. Tidemand, Selskabets Secretair.</line></subtitle>
-<firstline>Op, Venner! istemmer en jublende Sang!</firstline>
-<source pages="215-216" facsimile-pages="223-224"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
-<prose><p><small>Mel.: Al Skabningens Herre os skabte til Lyst.</small></p></prose>
+</poetry>
+</body>
+</text>
+
+<text id="tidemand2026111302" author="tidemand">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>paa Enigheds-Selskabets 21de Aars Stiftelsesdag den 9de April 1802.</line>
+    <line>af A. Tidemand, Selskabets Secretair.</line>
+  </subtitle>
+  <firstline>Op, Venner! istemmer en jublende Sang!</firstline>
+  <source pages="215-216" facsimile-pages="223-224"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<small>Mel.: Al Skabningens Herre os skabte til Lyst.</small>
+</prose>
 <poetry>
 Op, Venner! istemmer en jublende Sang!
 Saa hastig kan Tingen forandre sin Gang.
@@ -219,9 +256,8 @@ Nys saae man og hørte kun Feide og Strid;
 Nu glæder sig alle ved Freden saa blid.
 Ja, Himmelens Datter! velsignede Fred!
 Dig er det vi hylde; Dig frydes vi ved! :|:
-<pb n="216" facs="223.jpg"/>
 
-O, længe nu blødte den sørgende Jord!
+<pb n="216" facs="223.jpg"/>O, længe nu blødte den sørgende Jord!
 Og sildig udslettes de blødende Spor;
 Dog, held os, i Norden det vared’ kun kort,
 Før Ufredens Dæmon beskiæmmet veeg bort.
@@ -241,11 +277,18 @@ Til Had mod hinanden? Nei, bort med alt Had!
 Som Brødre vi leve samdrægtig og glad!
 Og Himlen skal krone en Fremfærd saa skiøn,
 Med <w>Fredens</w> og <w>Enigheds</w> herlige Løn! :|:
-</poetry></body></text>
-<text id="krogh2026111301" author="krogh"><head>
-<title>Til Freden ved dens Dagglimt</title>
-<firstline>Hil Dig! blideste blandt Himlens Aander!</firstline>
-<source pages="217-219" facsimile-pages="225-227"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="krogh2026111301" author="krogh">
+<head>
+  <title>Til Freden ved dens Dagglimt</title>
+  <firstline>Hil Dig! blideste blandt Himlens Aander!</firstline>
+  <source pages="217-219" facsimile-pages="225-227"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Hil Dig! blideste blandt Himlens Aander!
 Hil Dig! Fredens hulde Sendebud!
@@ -312,10 +355,17 @@ Troner ene staae ved den!
 Evigt Venskab Jordens Folk forbinde!
 Evig grønnes Fredens skiønne Minde!
 Aldrig visne mere hen!
-</poetry></body></text>
-<text id="krogh2026111302" author="krogh"><head>
-<firstline>I Kampen vi sloge som mandige Helte</firstline>
-<source pages="219-220" facsimile-pages="227-228"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="krogh2026111302" author="krogh">
+<head>
+  <firstline>I Kampen vi sloge som mandige Helte</firstline>
+  <source pages="219-220" facsimile-pages="227-228"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 I Kampen vi sloge som mandige Helte,
 vor Tapperhed Fiendens Overmod fældte,
@@ -360,15 +410,32 @@ vi Glassene glade; lad Britten kun drømme
 om Nelsonske Almagt, og Dannemarks Fald.
 
 <nonum><right><w>M. B. Krogh.</w></right></nonum>
-</poetry></body></text>
-</content></section>
-<section level="1"><head><title>Junii 1802</title></head><content>
-<text id="weinwich2026111302" author="weinwich"><head>
-<title>Klenodiet</title>
-<subtitle>(Efter den siette af Grev F. L. Stolbergs Jamber.)</subtitle>
-<firstline>Hvo der berøvet blev det sande Gode, har</firstline><notes><note editorial="true" unknown-original-by="stolbergf"/></notes>
-<source pages="323-326" facsimile-pages="331-334"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
-<epigraph lang="fr">Ce siecle, auquel nous vivons, est si plombé, que je ne dis pas, l’exécution, mais l’imagination même de la vertu en est à dire.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Junii 1802</title>
+</head>
+<content>
+<text id="weinwich2026111302" author="weinwich">
+<head>
+  <title>Klenodiet</title>
+  <subtitle>(Efter den siette af Grev F. L. Stolbergs Jamber.)</subtitle>
+  <firstline>Hvo der berøvet blev det sande Gode, har</firstline>
+  <notes>
+    <note editorial="true" unknown-original-by="stolbergf"/>
+  </notes>
+  <source pages="323-326" facsimile-pages="331-334"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="fr">
+Ce siecle, auquel nous vivons, est si plombé, que je ne dis pas, l’exécution, mais l’imagination même de la vertu en est à dire.
 
 <nonum><right><w>Montaigne.</w></right></nonum>
 </epigraph>
@@ -447,6 +514,12 @@ Den Næring er for vor Tids onde Dom,
 som Giften i en haanend’ Latter smiler hen.
 
 <nonum><right>N. H. Weinwich.</right></nonum>
-</poetry></body></text>
-</content></section>
-</workbody></kalliopework>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
+</kalliopework>

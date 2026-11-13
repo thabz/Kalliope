@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1802-minerva-67" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-<title>Minerva. Bind 67</title>
-<year>1802</year>
-<pagebreaks/>
-<proofreadings><proofreading model="gpt-6.1-sol" datetime="2026-11-13T11:42:40Z"/></proofreadings>
-<errata status="applied" pages="323" facsimile-pages="383"/>
-<pictures>
-  <picture src="1802-minerva-67-p1.jpg" type="titlepage" primary="true">
-    <transcription>Maanedskriftet / Minerva. // Januar, Februar og Marts, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
-  </picture>
-</pictures>
-<source href="https://books.google.dk/books?id=E2I3AAAAMAAJ" facsimile="1802-minerva-67" facsimile-pages-num="386">
-<title>Maanedskriftet Minerva</title>
-<editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
-<volume>67 (17. årgangs 3. bind)</volume>
-<place>Kiøbenhavn</place>
-<publisher>Directeur Johan Frederik Schultz</publisher>
-<printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
-<year>1802</year>
-</source>
+  <title>Minerva. Bind 67</title>
+  <year>1802</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T11:42:40Z"/>
+  </proofreadings>
+  <errata status="applied" pages="323" facsimile-pages="383"/>
+  <pictures>
+    <picture src="1802-minerva-67-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // Januar, Februar og Marts, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source href="https://books.google.dk/books?id=E2I3AAAAMAAJ" facsimile="1802-minerva-67" facsimile-pages-num="386">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>67 (17. årgangs 3. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1802</year>
+  </source>
 </workhead>
 <workbody>
-<section level="1"><head><title>Januar 1802</title></head><content>
-<text id="anonym1800dk2026111301" author="anonym1800dk"><head>
-<title>Sang</title>
-<subtitle><line>ved Høitideligheden paa Friderichsværk,</line><line>den 19de December 1801.</line></subtitle>
-<firstline>Nys Krigens fortærende Torden</firstline>
-<notes><note editorial="true">Signeret Nansen i trykket. Forfatterens fulde navn er ikke sikkert identificeret.</note></notes>
-<source pages="76-78" facsimile-pages="84-86"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+
+<section level="1">
+<head>
+  <title>Januar 1802</title>
+</head>
+<content>
+<text id="anonym1800dk2026111301" author="anonym1800dk">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>ved Høitideligheden paa Friderichsværk,</line>
+    <line>den 19de December 1801.</line>
+  </subtitle>
+  <firstline>Nys Krigens fortærende Torden</firstline>
+  <notes>
+    <note editorial="true">Signeret Nansen i trykket. Forfatterens fulde navn er ikke sikkert identificeret.</note>
+  </notes>
+  <source pages="76-78" facsimile-pages="84-86"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Nys Krigens fortærende Torden,
 Med Rædselbebudende Brag,
@@ -67,13 +83,22 @@ Som Lynet opblusser den Lue,
 I Kampen om Hæder for Fædreneland. —
 
 <nonum><right>Nansen.</right></nonum>
-</poetry></body></text>
-<text id="anonym1800dk2026111302" author="anonym1800dk"><head>
-<title>Korer for Fredriksværkerne</title>
-<subtitle>den 17 Decbr. 1801.</subtitle>
-<firstline>Med Lyst vi pleie, og med Haab</firstline>
-<notes><note editorial="true">Forfatterens fulde navn er ikke sikkert identificeret.</note></notes>
-<source pages="78-80" facsimile-pages="86-88"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1800dk2026111302" author="anonym1800dk">
+<head>
+  <title>Korer for Fredriksværkerne</title>
+  <subtitle>den 17 Decbr. 1801.</subtitle>
+  <firstline>Med Lyst vi pleie, og med Haab</firstline>
+  <notes>
+    <note editorial="true">Forfatterens fulde navn er ikke sikkert identificeret.</note>
+  </notes>
+  <source pages="78-80" facsimile-pages="86-88"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 <nonum><center>Koer af Jordbrugere.</center></nonum>
 Med Lyst vi pleie, og med Haab
@@ -150,12 +175,19 @@ Da vorder opfyldt Deres Hiertes Begier;
 Thi den kun af Landets Lyksalighed er.
 Men kommer en Fiende, da gribe hver Mand
 Til Vaaben for Dem og for Fædreneland!
-</poetry></body></text>
-<text id="bornemann2026111303" author="bornemann"><head>
-<title>Sang</title>
-<subtitle>Den 29de Januar 1802.</subtitle>
-<firstline>Saa glade vi hilse dig, signende Fred!</firstline>
-<source pages="80-81" facsimile-pages="88-89"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="bornemann2026111303" author="bornemann">
+<head>
+  <title>Sang</title>
+  <subtitle>Den 29de Januar 1802.</subtitle>
+  <firstline>Saa glade vi hilse dig, signende Fred!</firstline>
+  <source pages="80-81" facsimile-pages="88-89"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Saa glade vi hilse dig, signende Fred!
 Som Fuglene Morgenens Røde,
@@ -186,11 +218,18 @@ Det Brødrefolk blomstrer og grønnes.
 <w>Leve hans Søn og hver Dannemand!</w>
 
 <nonum><right>M. H. Bornemann.</right></nonum>
-</poetry></body></text>
-<text id="thaarup2026111301" author="thaarup" variant="thaarup2026082070"><head>
-<title>Sang til Kongens Fødselsdag</title>
-<firstline>Nu tier Krigens Rædseltorden</firstline>
-<source pages="81-82" facsimile-pages="89-90"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="thaarup2026111301" author="thaarup" variant="thaarup2026082070">
+<head>
+  <title>Sang til Kongens Fødselsdag</title>
+  <firstline>Nu tier Krigens Rædseltorden</firstline>
+  <source pages="81-82" facsimile-pages="89-90"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Nu tier Krigens Rædseltorden,
 End spore vi dens grumme Fied.
@@ -198,8 +237,8 @@ Men Freden smiler huld til Jorden,
 Den stegen er fra Himlen ned.
 Den kort vort Fædreland forlod,
 Dens Gienkomst juble vi imod.
-<pb n="82" facs="089.jpg"/>
-O Fred! du Jordens Held beskytter,
+
+<pb n="82" facs="089.jpg"/>O Fred! du Jordens Held beskytter,
 Gid alle Hierter hylde dig!
 Da er i Borg som Armods Hytter
 Enhver Beboer lykkelig.
@@ -228,11 +267,18 @@ Thi synger fro hver Dannemand:
 Du leve Fader Christian.
 
 <nonum><right>T. Thaarup.</right></nonum>
-</poetry></body></text>
-<text id="blichern2026111301" author="blichern"><head>
-<title>En Selskabssang</title>
-<firstline>See! de Nektar-Perler vinke</firstline>
-<source pages="82-85" facsimile-pages="90-93"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="blichern2026111301" author="blichern">
+<head>
+  <title>En Selskabssang</title>
+  <firstline>See! de Nektar-Perler vinke</firstline>
+  <source pages="82-85" facsimile-pages="90-93"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 See! de Nektar-Perler vinke
   Til vort Ønskes <w>første</w> Maal!
@@ -268,9 +314,8 @@ Venner! <w>lystig</w> lad os klinke!
   Det er <w>Munterhedens</w> Skaal!
 Døe kun alt Suurmuulerie!
 Leve <w>Muntre!</w> leve vi! :;:
-<pb n="84" facs="091.jpg"/>
 
-End de klare Perler vinke
+<pb n="84" facs="091.jpg"/>End de klare Perler vinke
   Til vort <w>frydeligste</w> Maal.
 Venner! lad os <w>kiærlig</w> klinke:
   Det er alle <w>Skiønnes</w> Skaal.
@@ -306,11 +351,18 @@ Venner! lad os <w>stolte</w> klinke
 Danmarks hele <w>Helte-Hær!</w>
 
 <nonum><right>N. Blicher.</right></nonum>
-</poetry></body></text>
-<text id="lundnn2026111301" author="lundnn"><head>
-<title>Til gavnlig Virksomhed</title>
-<firstline>O Virksomhed, Himmelens Datter</firstline>
-<source pages="85-87" facsimile-pages="93-95"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="lundnn2026111301" author="lundnn">
+<head>
+  <title>Til gavnlig Virksomhed</title>
+  <firstline>O Virksomhed, Himmelens Datter</firstline>
+  <source pages="85-87" facsimile-pages="93-95"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 O Virksomhed, Himmelens Datter,
   Forlad ei Din hengivne Søn!
@@ -365,9 +417,8 @@ Saa fremmes den Eviges Love,
   Saa ydes Naturen sin Ret,
 Sig Bonden og Fyrsten kan love
   Et Liv, lige frydfuldt og let.
-<pb n="87" facs="094.jpg"/>
 
-O Virksomhed, Himmelens Datter,
+<pb n="87" facs="094.jpg"/>O Virksomhed, Himmelens Datter,
   Forlad ei Din hengivne Søn!
 Høit han Din Lyksalighed skatter,
   — O hør Du hans ivrigste Bøn! —
@@ -377,11 +428,18 @@ Med dem sin Opløsning imøde,
   Og smiler til evige Roe.
 
 <nonum><right>N. Lund.</right></nonum>
-</poetry></body></text>
-<text id="bechmann2026111301" author="bechmann"><head>
-<title>Tvende Sange den 28de og 29de Januar 1802 i Horsens</title>
-<firstline>Saa stemmer op i Glædens Toner</firstline>
-<source pages="87-91" facsimile-pages="95-99"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="bechmann2026111301" author="bechmann">
+<head>
+  <title>Tvende Sange den 28de og 29de Januar 1802 i Horsens</title>
+  <firstline>Saa stemmer op i Glædens Toner</firstline>
+  <source pages="87-91" facsimile-pages="95-99"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Saa stemmer op i Glædens Toner:
   Til Jubel vinker Festens Fryd.
@@ -490,11 +548,18 @@ For Christian og Fredrik Hæders-Skud.
 
 <nonum><right>Hans Gram Bechmann,</right></nonum>
 <nonum><right>Præst i Hiørring.</right></nonum>
-</poetry></body></text>
-<text id="tode2026111301" author="tode"><head>
-<title>Jens Hiernøes Minde</title>
-<firstline>O! kunde mit sielfølte Qvad</firstline>
-<source pages="98-103" facsimile-pages="106-111"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="tode2026111301" author="tode">
+<head>
+  <title>Jens Hiernøes Minde</title>
+  <firstline>O! kunde mit sielfølte Qvad</firstline>
+  <source pages="98-103" facsimile-pages="106-111"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 O! kunde mit sielfølte Qvad
 Til fierne Strande gaae,
@@ -504,9 +569,8 @@ De mindte da hvert ædelt Bryst,
 Hvo os berøvet er;
 Det gienlød da: vor Ven, vor Lyst,
 Vor Hiernøe er ei meer!
-<pb n="99" facs="106.jpg"/>
 
-Ja, skue omkring Dig, og betænk,
+<pb n="99" facs="106.jpg"/>Ja, skue omkring Dig, og betænk,
 Hvad denne Hiernøe var,
 Og hvilken sielden Himlens Skienk
 I ham Du mistet har.
@@ -595,9 +659,8 @@ Sit hæderfulde Embed’ troe,
 Han stod i rædsomt Gab;
 Han havde vovet egen Boe
 At standse Naboes Tab.
-<pb n="102" facs="109.jpg"/>
 
-Det rene Hierte i hans Bryst
+<pb n="102" facs="109.jpg"/>Det rene Hierte i hans Bryst
 For alle aabent stod.
 Enhver at tiene var hans Lyst;
 Hans Siel var eiegod.
@@ -634,13 +697,28 @@ Som han for skiev Misundelse
 Usynelig nu er.
 
 <nonum><right>Tode.</right></nonum>
-</poetry></body></text>
-</content></section>
-<section level="1"><head><title>Februar 1802</title></head><content>
-<text id="sporon2026111301" author="sporon" lang="la"><head>
-<firstline>Elingvis stupet Edvardi nunc funere Pallas</firstline>
-<source pages="210" facsimile-pages="218"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
-<prose lang="la"><p><center>Havniæ d. XLII Febr. a. MCCMII. obiit<br/>JACOBUS EDVARDUS COLBIÖRNSEN<br/>Vir avitæ et arctoæ nobilitatis<br/>Hæres.</center></p></prose>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Februar 1802</title>
+</head>
+<content>
+<text id="sporon2026111301" author="sporon" lang="la">
+<head>
+  <firstline>Elingvis stupet Edvardi nunc funere Pallas</firstline>
+  <source pages="210" facsimile-pages="218"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose lang="la">
+<center>Havniæ d. XLII Febr. a. MCCMII. obiit<br/>JACOBUS EDVARDUS COLBIÖRNSEN<br/>Vir avitæ et arctoæ nobilitatis<br/>Hæres.</center>
+</prose>
 <poetry lang="la">
 Elingvis stupet <sc>Edvardi</sc> nunc funere Pallas,
   Verbaque non damnis invenit apta suis.
@@ -655,11 +733,18 @@ Qvotqvot erunt anni, qvos vivere restat, amici
 
 <nonum><right>moestus posuit</right></nonum>
 <nonum><right><sc>F. G. Sporon.</sc></right></nonum>
-</poetry></body></text>
-<text id="fumars2026111301" author="fumars" lang="fr"><head>
-<title>Edouard Colbiornsen</title>
-<firstline>Juste comme Thémis, aussi respecté qu’elle</firstline>
-<source pages="215" facsimile-pages="223"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="fumars2026111301" author="fumars" lang="fr">
+<head>
+  <title>Edouard Colbiornsen</title>
+  <firstline>Juste comme Thémis, aussi respecté qu’elle</firstline>
+  <source pages="215" facsimile-pages="223"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry lang="fr">
 Juste comme Thémis, aussi respecté qu’elle,
 Digne de ses devoirs, égal à son emploi,
@@ -669,13 +754,21 @@ Par son rare savoir, ses vertus et son zèle
 Il honora son Nom, sa Patrie et son Roi.
 
 <nonum><right><sc>Fumars.</sc></right></nonum>
-</poetry></body></text>
-<text id="schwentzen2026111301" author="schwentzen"><head>
-<title>Sang</title>
-<subtitle>paa Kronprindsens Fødselsdag 1802.</subtitle>
-<firstline>Ei længer brøler Krigens Torden</firstline>
-<source pages="219-221" facsimile-pages="227-229"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
-<epigraph lang="de">— — — Nie fehl’ es unserm Reiche
+</poetry>
+</body>
+</text>
+
+<text id="schwentzen2026111301" author="schwentzen">
+<head>
+  <title>Sang</title>
+  <subtitle>paa Kronprindsens Fødselsdag 1802.</subtitle>
+  <firstline>Ei længer brøler Krigens Torden</firstline>
+  <source pages="219-221" facsimile-pages="227-229"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="de">
+— — — Nie fehl’ es unserm Reiche
 An einem Fürstensohn, der dir an Tugend gleicht!
 
 <nonum><right><i>Wielands Obr.</i> 12.</right></nonum>
@@ -716,19 +809,25 @@ For ham i Takkens høie Tone
   Med hellig Glæde juble vi,
 Og hver som hylder Dydens Throne,
   Oprigtig med os stemme i.
-<pb n="221" facs="228.jpg"/>
 
-Gid længe vi til Held for Norden,
+<pb n="221" facs="228.jpg"/>Gid længe vi til Held for Norden,
   Maae juble for vor Frederik!
 Og lykkeligt hvert Land paa Jorden,
   Der en saa ædel Styrer fik!
 
 <nonum><right>Schwenzen.</right></nonum>
-</poetry></body></text>
-<text id="falsen2026111301" author="falsen"><head>
-<title>Den 23de Februar 1802</title>
-<firstline>Græd Maria ... Modertaarer</firstline>
-<source pages="221-222" facsimile-pages="229-230"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<text id="falsen2026111301" author="falsen">
+<head>
+  <title>Den 23de Februar 1802</title>
+  <firstline>Græd Maria ... Modertaarer</firstline>
+  <source pages="221-222" facsimile-pages="229-230"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Græd <w>Maria</w> ... Modertaarer
 er Naturens milde Bud.
@@ -754,9 +853,8 @@ Dyd og Uskyld’s rene Sæder
 give Diademet Værd;
 deler Fyrsten Folkets Glæder,
 Det i Faren staaer ham nær.
-<pb n="222" facs="229.jpg"/>
 
-Overalt Louises Minde
+<pb n="222" facs="229.jpg"/>Overalt Louises Minde
 bryder Vuggesangen af,
 thi med Dig hver Danneqvinde
 græder ved Din Yndlings Grav.
@@ -777,11 +875,19 @@ Glem ved Fredriks Faderhierte,
 Hvad den tog, for det Den gav!
 
 <nonum><right>Falsen.</right></nonum>
-</poetry></body></text>
-<text id="hjorth2026111301" author="hjorth"><head>
-<title>I samme Anledning</title>
-<firstline>Maria! Nordens Huldgudinde!</firstline>
-<source pages="222-223" facsimile-pages="230-231"/><quality>korrektur1,korrektur2,kilde,side</quality></head><body>
+</poetry>
+</body>
+</text>
+
+<!-- Trykkets bevidste gentagelse »Saare saare« på s. 223 er kontrolleret mod facsimilet. -->
+<text id="hjorth2026111301" author="hjorth" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>I samme Anledning</title>
+  <firstline>Maria! Nordens Huldgudinde!</firstline>
+  <source pages="222-223" facsimile-pages="230-231"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
 <poetry>
 Maria! Nordens Huldgudinde!
 Maria! Fredriks Held og Lyst!
@@ -813,6 +919,12 @@ Ja! Danmarks Graad Dig hellig vær’!
 Dit Hierte dyrebar og kiær!
 
 <nonum><right>L. A. Hiorth.</right></nonum>
-</poetry></body></text>
-</content></section>
-</workbody></kalliopework>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
+</kalliopework>

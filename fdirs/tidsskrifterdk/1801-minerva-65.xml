@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1801-minerva-65" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-<title>Minerva. Bind 65</title>
-<year>1801</year>
-<pagebreaks/>
-<proofreadings><proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:46:36Z"/></proofreadings>
-<errata status="reviewed" pages="[omslagets inderside]" facsimile-pages="2"/>
-<pictures>
-  <picture src="1801-minerva-65-p1.jpg" type="titlepage" primary="true">
-    <transcription>Maanedskriftet / Minerva. // Julii, August og September, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
-  </picture>
-</pictures>
-<source href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_003" facsimile="1801-minerva-65" facsimile-pages-num="372">
-<title>Maanedskriftet Minerva</title>
-<editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
-<volume>65 (17. årgangs 1. bind)</volume>
-<place>Kiøbenhavn</place>
-<publisher>Directeur Johan Frederik Schultz</publisher>
-<printer>Directeur Johan Frederik Schultz, Kongelig og Universitets Bogtrykker</printer>
-<year>1801</year>
-</source>
+  <title>Minerva. Bind 65</title>
+  <year>1801</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:46:36Z"/>
+  </proofreadings>
+  <errata status="reviewed" pages="[upagineret]" facsimile-pages="2"/>
+  <pictures>
+    <picture src="1801-minerva-65-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // Julii, August og September, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_003" facsimile="1801-minerva-65" facsimile-pages-num="372">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>65 (17. årgangs 1. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets Bogtrykker</printer>
+    <year>1801</year>
+  </source>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-<title>Julii 1801</title>
+  <title>Julii 1801</title>
 </head>
 <content>
 
 <text id="barfoed2026111301" author="barfoed">
 <head>
-<title>Min Skierv til danske Søekrigers Hæder</title>
-<subtitle>i Anledning af Slaget ved Kiøbenhavn den 2den April 1801.</subtitle>
-<firstline>Hist kneiser i Vesthavets Vande en Øe</firstline>
-<dates><event>1801-04-02</event></dates>
-<source pages="89-96" facsimile-pages="91-98"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Min Skierv til danske Søekrigers Hæder</title>
+  <subtitle>i Anledning af Slaget ved Kiøbenhavn den 2den April 1801.</subtitle>
+  <firstline>Hist kneiser i Vesthavets Vande en Øe</firstline>
+  <dates><event>1801-04-02</event></dates>
+  <source pages="89-96" facsimile-pages="91-98"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -277,20 +279,20 @@ Du Herre! raader for Seiren.
 
 <section level="1">
 <head>
-<title>August 1801</title>
+  <title>August 1801</title>
 </head>
 <content>
 
 <text id="bornemann2026111301" author="bornemann">
 <head>
-<title>Danmark og Dannerkierlighed</title>
-<subtitle>en Hymne.</subtitle>
-<firstline>Du! vort Gode, Du! vort Kiære</firstline>
-<notes>
-<note>Synges som Schillers Hymne til Glæden.</note>
-</notes>
-<source pages="206-211" facsimile-pages="212-217"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Danmark og Dannerkierlighed</title>
+  <subtitle>en Hymne.</subtitle>
+  <firstline>Du! vort Gode, Du! vort Kiære</firstline>
+  <notes>
+    <note>Synges som Schillers Hymne til Glæden.</note>
+  </notes>
+  <source pages="206-211" facsimile-pages="212-217"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -439,16 +441,16 @@ Signe Kongen og hans Riger!
 
 <section level="1">
 <head>
-<title>September 1801</title>
+  <title>September 1801</title>
 </head>
 <content>
 
 <text id="tidemand2026111301" author="tidemand">
 <head>
-<title>Sang paa Eenigheds-Selskabets 20de Aars Stiftelse-Fest</title>
-<firstline>Paa Reisen over Livets Hav</firstline>
-<source pages="312-314" facsimile-pages="324-326"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sang paa Eenigheds-Selskabets 20de Aars Stiftelse-Fest</title>
+  <firstline>Paa Reisen over Livets Hav</firstline>
+  <source pages="312-314" facsimile-pages="324-326"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -508,13 +510,13 @@ Vi stride skal til sidste Mand!
 
 <text id="rahbek2026111301" author="rahbek">
 <head>
-<title>Løven og Leoparden</title>
-<firstline>En vældig Løve, vidtstrakt Slettes Fyrste</firstline>
-<notes>
-<note editorial="true" unknown-original-by="florian"/>
-</notes>
-<source pages="314-315" facsimile-pages="326-327"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Løven og Leoparden</title>
+  <firstline>En vældig Løve, vidtstrakt Slettes Fyrste</firstline>
+  <notes>
+    <note editorial="true" unknown-original-by="florian"/>
+  </notes>
+  <source pages="314-315" facsimile-pages="326-327"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -562,10 +564,10 @@ Er Pantherdyrs og Biørnes Mellemlande.
 
 <text id="barfoed2026111302" author="barfoed">
 <head>
-<title>I min Ven T**s Stambog da han reiste udenlands 1795</title>
-<firstline>Hvor Troen bygges paa selvgjorte Myndigheder</firstline>
-<source pages="316" facsimile-pages="328"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>I min Ven T**s Stambog da han reiste udenlands 1795</title>
+  <firstline>Hvor Troen bygges paa selvgjorte Myndigheder</firstline>
+  <source pages="316" facsimile-pages="328"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph lang="el">
@@ -599,11 +601,11 @@ Af Sandheds Lys — det Kald er stort — min Ven.
 
 <text id="bornemann2026111302" author="bornemann">
 <head>
-<title>En fransk Religions Sang</title>
-<subtitle>Oversat 1794.</subtitle>
-<firstline>Evige, som Mennesket tilbeder</firstline>
-<source pages="317-318" facsimile-pages="329-330"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>En fransk Religions Sang</title>
+  <subtitle>Oversat 1794.</subtitle>
+  <firstline>Evige, som Mennesket tilbeder</firstline>
+  <source pages="317-318" facsimile-pages="329-330"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>

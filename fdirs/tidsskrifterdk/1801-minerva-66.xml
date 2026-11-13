@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1801-minerva-66" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
 <workhead>
-<title>Minerva. Bind 66</title>
-<year>1801</year>
-<pagebreaks/>
-<proofreadings><proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:56:29Z"/></proofreadings>
-<errata status="none"/>
-<pictures>
-  <picture src="1801-minerva-66-p1.jpg" type="titlepage" primary="true">
-    <transcription>Maanedskriftet / Minerva. // October, November og December, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
-  </picture>
-</pictures>
-<source href="https://books.google.dk/books?id=72E3AAAAMAAJ" facsimile="1801-minerva-66" facsimile-pages-num="360">
-<title>Maanedskriftet Minerva</title>
-<editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
-<volume>66 (17. årgangs 2. bind)</volume>
-<place>Kiøbenhavn</place>
-<publisher>Directeur Johan Frederik Schultz</publisher>
-<printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
-<year>1801</year>
-</source>
+  <title>Minerva. Bind 66</title>
+  <year>1801</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:56:29Z"/>
+  </proofreadings>
+  <errata status="none"/>
+  <pictures>
+    <picture src="1801-minerva-66-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // October, November og December, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source href="https://books.google.dk/books?id=72E3AAAAMAAJ" facsimile="1801-minerva-66" facsimile-pages-num="360">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>66 (17. årgangs 2. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1801</year>
+  </source>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-<title>October 1801</title>
+  <title>October 1801</title>
 </head>
 <content>
 
 <text id="malling2026111301" author="malling">
 <head>
-<title>Sang</title>
-<subtitle>
-<line>ved den for Fattigvæsenet givne Concert i Frue</line>
-<line>Kirke Onsdagen den 28 October,</line>
-<line>Kronprindsesse <w>Maries</w> Fødselsdag.</line>
-</subtitle>
-<firstline>Hun kommer, hyldet, den blide Fred</firstline>
-<dates><performed>1801-10-28</performed></dates>
-<source pages="94-96" facsimile-pages="102-104"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <title>Sang</title>
+  <subtitle>
+    <line>ved den for Fattigvæsenet givne Concert i Frue</line>
+    <line>Kirke Onsdagen den 28 October,</line>
+    <line>Kronprindsesse <w>Maries</w> Fødselsdag.</line>
+  </subtitle>
+  <firstline>Hun kommer, hyldet, den blide Fred</firstline>
+  <dates><performed>1801-10-28</performed></dates>
+  <source pages="94-96" facsimile-pages="102-104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -101,28 +103,28 @@ Hvor til Veldaad er Hierte og trofast Haand.
 
 <section level="1">
 <head>
-<title>November 1801</title>
+  <title>November 1801</title>
 </head>
 <content>
 
 <section level="2">
 <head>
-<title>Den første Acts første Scene af P. Terentii Heautontimorumenos og af Hecyra</title>
-<subtitle>(en Prøve)</subtitle>
+  <title>Den første Acts første Scene af P. Terentii Heautontimorumenos og af Hecyra</title>
+  <subtitle>(en Prøve)</subtitle>
 </head>
 <content>
 
 <text id="hedegaardjc2026111301" author="hedegaardjc">
 <head>
 
-<title><num>I.</num>Heautontimor</title>
+  <title><num>I.</num>Heautontimor</title>
 
-<firstline>Skiøndt vort Bekiendtskab nyelig sluttet blev</firstline>
-<notes>
-<note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
-</notes>
-<source pages="206-214" facsimile-pages="214-222"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <firstline>Skiøndt vort Bekiendtskab nyelig sluttet blev</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
+  </notes>
+  <source pages="206-214" facsimile-pages="214-222"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -406,14 +408,14 @@ til mig herud, og jeg tilsides <w>smutter.</w>
 <text id="hedegaardjc2026111302" author="hedegaardjc">
 <head>
 
-<title><num>II.</num>Hecyra</title>
+  <title><num>II.</num>Hecyra</title>
 
-<firstline>I Sandhed Syra, neppe nogen Skiege</firstline>
-<notes>
-<note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
-</notes>
-<source pages="214-216" facsimile-pages="222-224"/>
-<quality>korrektur1,korrektur2,kilde,side</quality>
+  <firstline>I Sandhed Syra, neppe nogen Skiege</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
+  </notes>
+  <source pages="214-216" facsimile-pages="222-224"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
