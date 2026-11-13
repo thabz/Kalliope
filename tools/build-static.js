@@ -1485,6 +1485,9 @@ const main = async () => {
     mark_ref_destinations_dirty,
     collected,
   );
+  // Make work listings available before the slower text-file generation.
+  // Their metadata is complete after the work and poet first passes.
+  await b('build_poet_works_json', build_poet_works_json, collected);
   await b(
     'build_poets_by_country_json',
     build_poets_by_country_json,
@@ -1503,7 +1506,6 @@ const main = async () => {
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
   await b('works_second_pass', works_second_pass, collected);
-  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',

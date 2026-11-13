@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="graahph" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Peder Hersleb</firstname>
+    <lastname>Graah</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1750-02-01</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1830-12-14</date>
+      <place>Hjørring</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q12331148</wikidata>
+    <wikipedia-da>Peder Hersleb Graah</wikipedia-da>
+    <viaf>120597669</viaf>
+    <biografisk-leksikon-lex-dk>Peder_Hersleb_Graah</biografisk-leksikon-lex-dk>
+  </identifiers>
+  <!-- Livsdata og identitet kontrolleret mod https://runeberg.org/dbl/6/0160.html. -->
+  <!-- Eksterne id’er kontrolleret mod Wikidata Q12331148, herunder navne, fødselsdata og dødsår, 2026-11-13. -->
+</person>

@@ -679,9 +679,9 @@ bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, intern
 tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
 reglen nedenfor.
 
-Hvis en prosatekst ingen trykt overskrift har, kan en kort redaktionel titel
-tilføjes i firkantede klammer. Brug da en `<indextitle>` uden klammer, og
-dokumentér den tilføjede titel ved importen.
+Hvis en tekst ingen trykt overskrift har, angives dens førstelinje i
+`<firstline>`, også ved prosa. Kalliope bruger automatisk førstelinjen som
+titel. Tilføj ikke en redaktionel titel i firkantede klammer.
 
 Brug felterne efter den trykte funktion og placering:
 

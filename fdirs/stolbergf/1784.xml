@@ -4,12 +4,99 @@
   <title>Jamben</title>
   <year>1784</year>
   <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <!-- Anden korrektur af de elleve nyindsatte jamber (I, IV–VI, VIII, XI–XII, XIV–XVII). -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T19:07:09Z"/>
+  </proofreadings>
   <pictures>
     <picture src="1784-p1.jpg" type="titlepage" primary="true" href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=3"><transcription>Jamben / von / Friedrich Leopold Graf zu Stolberg. // Homo sum, humani nihil abs me alienum puto. / TERENTIVS. // Leipzig, / bey Weidmanns Erben und Reich. 1784.</transcription></picture>
   </pictures>
-  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631">Friedrich Leopold Graf zu Stolberg: <i>Jamben</i>, Weidmanns Erben og Reich, Leipzig, 1784.</source>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631" facsimile="1784" facsimile-pages-num="116">Friedrich Leopold Graf zu Stolberg: <i>Jamben</i>, Weidmanns Erben og Reich, Leipzig, 1784.</source>
 </workhead>
 <workbody>
+
+<text id="stolbergf2026111301" lang="de">
+<head>
+  <title><num>I.</num>Die Warnung</title>
+  <subtitle>An Voß.</subtitle>
+  <firstline>Wie komts, o Voß, daß jeder seichte Narr</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=5" pages="3-6" facsimile-pages="5-8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Cave, cave, namque in malos asperrimus
+    Parata tollo cornua,
+Qualis Lycambae spretus infido gener.
+
+<right>HOR.</right>
+</epigraph>
+<poetry>
+Wie komts, o Voß, daß jeder seichte Narr
+In Deutschland deutsche Dichter richten will,
+Und richten darf? daß ihm, so oft ers thut,
+Ein seidner Pöbel lächelt, und die Zunft
+<num>5</num>Der hochgelahrten Schwäzer Beifall schielt?
+Zwar sie vermögen nicht des Dichters Flug
+Zu hemmen, mutig schwingt der Adler sich
+Der Sonne zu, er läst im hohlen Ast
+Den Tagescheuen Kauz und Uhu schrein,
+<num>10</num>Sieht auf den Giftgeschwollnen welschen Hahn,
+Und buntes Hofgevögel nicht herab.
+<pb n="4" facs="005.jpg"/>Zwar sie vermögen nicht des Dichters Glück
+Zu stören, wenn er Frühlingsbienen gleich
+Von Blume fleugt zu Blume, bald am Quell
+<num>15</num>Sich wiegt auf Blütezweigen, bald im Thal
+Den Morgenthau aus jungen Veilchen saugt,
+Und dann den Thau, den gelben Blütenstaub,
+In Honig wandelt der vom Stocke trieft,
+Des Menschen Aug erhellt, sein Herz erfreut.
+<num>20</num>Gott aber gab dem Sonnenadler nicht
+Den Fittig nur und kühnen Stralendurst,
+Er gab ihm auch die scharfbewehrte Klau,
+Und in dem krummen Schnabel schnellen Mord,
+Wenn er herab von seiner Höhe stürzt,
+<num>25</num>Dann steigend triefet von des Hasen Blut.
+Auch trieft die Biene nicht von Honig nur,
+Denn einen scharfen Stachel gab ihr Gott
+Der sich ins Leben träger Hummeln senkt,
+Und glänzendes Geschmeisses, welches selbst
+<num>30</num>Nicht Honig sammelt, den gesammelten
+Umsumst, betastet, und mit Koth beflekt.
+<pb n="5" facs="006.jpg"/>  Der Dichter prangt nicht mit der Leier nur,
+Auf eine scharfe Geissel trozt er auch,
+Und schwinget sie mit angeborner Kraft.
+<num>35</num>Noch will ich warnen, will die Geissel nur
+Dem Auge zeigen: Narren, tretet her,
+Und schaut! — Mit dieser Geissel geisselte
+Der Griech’ Archilochos; er flocht sie selbst
+Aus lang und kurzer Silben Wechselschlag,
+<num>40</num>Schwang hoch den Arm und rasch, daß Griechenland
+Von Kretas Eichen bis zum Hellespont,
+Von Rhodus bis Illyrien erscholl.
+Und dennoch höhnte sein Lykambes, sein
+Die schöne Neobule, gab die Hand
+<num>45</num>Die ihm gehörte einem andern hin,
+Und lachte seiner Lieb’ und seines Grams.
+Ihm floß die Gall’ ins Blut, er geisselte,
+Da troff ihm bittrer Spott und kalter Hohn
+Von seiner Geissel, und Lykambes lief,
+<num>50</num>Mit Blässe der Verzweiflung wie Orest
+Vom Schlangenhaar der Furien geschrekt,
+Im Kreis’ umher. Die schöne Tochter lief
+<pb n="6" facs="007.jpg"/>Wie Jo vor der Brems’ und dem Fantom
+Des Argos, ihre Loken flogen wild,
+<num>55</num>Ihr Auge, Liebewallend sonst, entquoll
+Den gelben Augenliedern; endlich hieng
+Sie vor des Vaters Augen zappelnd da
+An einem Feigenbaum; der Vater wählt
+An einer schwanken Pappel gleichen Tod,
+<num>60</num>Erstarrt und schwankt am Aste hin und her,
+Im eignen Garten scheuer Spazen Schreck.
+</poetry>
+</body>
+</text>
 
 <text id="stolbergf2026090403" lang="de">
 <head>
@@ -28,6 +115,7 @@ A hideous peal, yeth when they list would creep,
 If ought disturb'd their noise, into her womb,
 And kennel there, yet there still bark'd and howl'd
 Within unseen — —
+
 <right>Milton.</right>
 </epigraph>
 <poetry>
@@ -111,6 +199,7 @@ Denn seine Mutter nannt es Persifflage.
 <epigraph lang="la" max-width="90%">
 ut mihi saepe
 Bilem, saepe jocum vestri movere tumultus!
+
 <right>Hor.</right>
 </epigraph>
 <poetry>
@@ -202,6 +291,342 @@ Kein Nieswurz treibet diese Narrheit aus!
 </body>
 </text>
 
+<text id="stolbergf2020012801" lang="de">
+<head>
+  <title><num>IV.</num>Die Quelle</title>
+  <firstline>Wie im Getümmel von der grossen Stadt</firstline>
+  <notes>
+    <note editorial="true">Mottoet er fra Horats’ <xref poem="horats2026102702,2-5"/>, vers 2–5.</note>
+  </notes>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=18" pages="16-21" facsimile-pages="18-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Insanientis dum sapientiae
+Consultus erro, nunc retrorsum
+    Vela dare, atque iterare cursus
+Cogor relictos — —
+
+<right>HOR.</right>
+</epigraph>
+<poetry>
+Wie im Getümmel von der grossen Stadt
+Diogenes bey hellem Sonnenschein
+Mit einer Leuchte in der Hand umher
+Lief, und den Menschen suchte, ihn nicht fand,
+<num>5</num>So lief Jean Jacques umher mit scharfem Blik,
+Und heissem Selendurst, hoch schlug das Herz
+Dem Jüngling und dem Mann, noch hoch dem Greise,
+Er suchte Weisheit, fand sie nicht im Tand
+Der Wisserei, der Schulstaub war ihm Staub;
+<num>10</num>Der Afterweisheit bunter Jahrmarkt, wo
+Der Thorheit Schell’ in allen Winkeln tönt,
+<pb n="17" facs="018.jpg"/>Wo feil der Lehrstul seine Panacee
+Unmündigen anpreiset, wo das Bild
+Der Göttin sich im Narrenmantel bläht,
+<num>15</num>War ihm was dem ein leerer Becher ist
+Der in der Wüste unter heissem Stral
+Des Mittags, nach der Quell im Thale lechzt.
+
+  Wohl dem der an der Quell im Schatten ruht,
+Der Schatten ist kein Traum, die Quelle nicht,
+<num>20</num>Sie floß zu allen Zeiten überall,
+Hier trüber, heller dort, hier schmal, dort breit,
+Genährt vom Himmel und aus tiefem Schoos
+Der heimlichen allnährenden Natur,
+Und wo sie fleust da labet sie und stärkt
+<num>25</num>Den trinkenden mit immer neuer Kraft.
+Doch immer fanden sie nur wenige.
+Denn eitel gräbt der Vorwiz, und wo der
+Den Spaden einsenkt, grüb’ er noch so tief,
+Entquillt dem Boden nie die helle Flut.
+<num>30</num>Doch schreit er jubelnd wenn er feuchten Schlam,
+<pb n="18" facs="019.jpg"/>In welchem nie des Himmels Bild sich zeigt,
+Ausgräbt, und ruft die irrenden herbei,
+Die oft aus Trägheit, oft aus Unverstand,
+Aus seiner Grube schöpfen, und den Quell
+<num>35</num>Bald für ein Mährchen halten, jenem gleich
+Der in Elysium die Schatten tränkt.
+
+  O Einsamkeit, in deinen Thälern fleust
+Der Weisen Labsal, o wer stärket mich
+Dich zu ertragen! nie genügte mir
+<num>40</num>Des Lehrsaals hochgelahrter, leerer Tand,
+Und nie der eitlen Schlüsse hoher Bau.
+Mit Mitleid und Verwundrung sah ich oft
+Pedanten auf erhabnen Sesseln stehn
+Um welche sich der Schwarm der Jugend drängt,
+<num>45</num>Mit offnem Munde der Aufmerksamkeit;
+Den nackten Vögeln in dem Neste gleich,
+Die blind und piepend, mit gedehntem Hals
+Heißhungrig schnappen nach dem hohlen Kiel
+Mit welchem sie der lose Bube nährt,
+<num>50</num>Der sie der Mutterpflege selbst entriß,
+<pb n="19" facs="020.jpg"/>Ich hätte blind vielleicht wie sie geschnappt,
+Wofern nicht Hellas<footnote>Hellas, Griechenland.</footnote> mich auf mildem Schooß
+Gewieget und gesäuget hätte, mir
+Das Aug erhellt, und unter Bäume mich
+<num>55</num>Geführt, die immer Duft und Kühlung wehn,
+An Blüten und an goldnen Früchten reich.
+Nun sucht’ ich auf der Logik Dornen nicht
+Die Rosen welche mir mein Plato gab,
+Und hört’, o Quelle, deinen Silberton.
+<num>60</num>Doch Schwäche hielt mich lang von dir zurück,
+Und wie ein Kind den irren Kräusel treibt,
+So trieb die Thorheit lange mich umher;
+Und wie das Kind dem bunten Drachen folgt,
+Der an dem langen Faden in der Luft
+<num>65</num>Hoch schwebet, und ein Spiel des Windes ist,
+So riß auch bunter Wahn mich hin und her.
+Und izt? — Der Schule Lehrern und dem Pabst
+Ward nur Unfehlbarkeit — Doch sehn ich mich
+Dem mattgejagten Hirsche gleich, nach dir
+<num>70</num>O Quell! nach deinem Thal, o Einsamkeit!
+<pb n="20" facs="021.jpg"/>In deine Schatten nahmst du Numa auf,
+Den Edlen, welcher weinend dich verließ,
+Und auf dem Throne dem er Würde gab
+Sich sehnte nach den Hainen, wo vordem
+<num>75</num>Die Weisheit, in Egeria’s Gestalt,
+Mit ihrem Nektar tränkte seinen Geist.
+Im Sonnenglanz, o Weisheit, straltest du
+Dem Seher Gottes; nicht im lauten Sturm,
+Nicht im Erdbeben und im Feuer nicht,
+<num>80</num>Nein im Gesäusel walltest du ihm sanft
+Vorüber, bei der stillen Felsenkluft,
+Entfernt vom irrejagenden Geräusch.
+Als Gottes Weisheit selbst auf Erden kam,
+Da suchte sie die stillen Wüsten oft,
+<num>85</num>Und weihete zu Paradiesen sie.
+Der Seele Leben athmeten in dir,
+O Einsamkeit! des hohen Alterthums
+Gesunde Söhne, Weise wurden die
+In deinen Schatten, jene Heilige!
+<num>90</num>Dein spottet der moderne Moralist,
+Und bauet ein Gebäu von Pflicht und Recht,
+<pb n="21" facs="022.jpg"/>Wo Schluß auf Schluß sich paßt wie Stein auf Stein;
+Sehr fest vielleicht, wofern der lockre Grund
+Nicht stürzte, wenn der Leidenschaften Strom
+<num>95</num>Hochschwellend an den Sand des Ufers braust!
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111303" lang="de">
+<head>
+  <title><num>V.</num>Die Gözen</title>
+  <firstline>Der ungerechte Richter fragte: Was</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=24" pages="22-26" facsimile-pages="24-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="it">
+Chiama vi il cielo, e intorno vi si gira
+  Mostrandovi le sue bellezze eterne,
+  E l’occhio vostro pure a terra mira.
+
+<right>DANTE.</right>
+</epigraph>
+<poetry>
+Der ungerechte Richter fragte: Was
+Ist Wahrheit? hätt’ er ernsthaft das gefragt,
+An welcher Quelle stand er! silberrein,
+Den Himmel spiegelnd wäre sie geströmt,
+<num>5</num>Und hätt’ auf ewig seinen Durst gelöscht.
+Er trug den Schalk im Herzen, darum ward
+Ihm keine Antwort, niedre Menschenfurcht
+Und Vorurtheil, trieb ihn zum Frevel an.
+Sie treiben tausende zum Frevel an.
+<num>10</num>Der leeren bunten Theidinge sind mehr
+Als Wasserblasen auf des Meeres Strand,
+Und jeder wird begierig nachgehascht.
+Die Thorheit läutet stets zur Kirchmeß ein;
+Gleich feilen Mezen winkt der Lüste Schwarm;
+<pb n="23" facs="024.jpg"/><num>15</num>Der Lorber lokt den Jüngling in das Feld,
+Der nicht für Vaterland und Freiheit kämpft;
+Des Thrones Sklaven lokt ein Ordensband;
+Auf schwarzgeschwollnen Wogen schwebt der Geiz,
+Befrachtet mit dem Tand der Ueppigkeit;
+<num>20</num>Der bleiche Bergmann forscht in tiefer Kluft,
+Und schnappend wie die Muschel die er fing,
+Zieht dort ein Seil den Taucher in das Schiff:
+Hätt’ ich des Priesters Lungen unter dem
+Die Kanzel mit geschnizten Engeln bebt,
+<num>25</num>Wenn er, indem sein Mund die Wahrheit preißt,
+Mit runden Worten seinen Zehnten häuft:
+Ich nennte doch der bunten Gözen nicht
+Den tausendsten dem sich Europa beugt;
+Und minder noch den kleinen Hausgott den
+<num>30</num>Auf eignem Heerde jeder Mensch verehrt,
+Der immer ändernd, ein Chamäleon,
+Die Farbe zeigt in welcher jedes Jahr
+Der Mann erscheinet der ihm Weihrauch streut.
+Denn jedes Alter, Jüngling, Mann und Greis,
+<num>35</num>Verändert seinen Abgott, bis der Tod
+<pb n="24" facs="025.jpg"/>Den lezten stürzt! Bethörter Erdensohn,
+Der hülflos, weinend, nakt, das Licht erblikt,
+Wenn er, nach langen Irren, nicht nur arm,
+Nein, tiefverschuldet in die Grube fährt.
+<num>40</num>Beklag’ ihn, aber weil du lebst nicht dich,
+Der Sklave fröhnte nur dem eitlen Wahn,
+Sein Lohn ist nichtig wie sein Opferrauch.
+Geh, stürze deinen kleinen Hausgott erst,
+Und kniee vor des Volkes Gözen nicht,
+<num>45</num>Verlaß die vielbetretnen Pfad’ und suche
+Die stille Weisheit die sich finden läst,
+Die nicht im Sonnenglanz auf Erden stralt,
+Doch sichern Mondenschein dem der sie sucht,
+(Und Mondenschein ist auch der Sonne Licht)
+<num>50</num>Herunter schimmert, durch die Nacht ihn führt,
+Wo Thoren fallen von dem Dunst getäuscht,
+Der flammend an dem Rand des Pfules tanzt.
+Ein schöner Vollmond scheint in unsrer Nacht,
+Den guten Alten schien sein Antliz nicht,
+<num>55</num>Sie suchten Pfad bey schwachem Sternenschimmer,
+Und o, wie suchten sie! wie riefen sie
+<pb n="25" facs="026.jpg"/>Sich warnend zu! wie mancher Weise ging
+Der Tugend steilen Dornenpfad, und bot
+Entflammten Jünglingen die starke Hand!
+<num>60</num>Wie lehrten sie Verachtung jedes Tands!
+Wie sie der Selbstverleugnung eignen Lohn!
+Wie männlich trozten sie der falschen Scham,
+Der Unverschämtheit Zwillingsschwester, die
+Selbander nun beherrschen unsre Zeit.
+<num>65</num>Denn wer erhebt die Stimme männlich nun
+Im frechen Kreise, wenn der Wahrheit laut
+Gehöhnet wird? Erbarmt des Knaben sich
+Wohl einer, einer sich der Jungfrau, wenn
+Des unbefangnen Ohres keiner schont?
+<num>70</num>Du Vater, ist es dir genug nicht selbst
+Dein Kind zu morden? Bist kein Ungeheur,
+Wenn du die gift’gen Pfeile zischen hörst,
+Und nicht den Schild vor seinem Busen hältst?
+  An Vorurtheilen krankte jede Zeit,
+<num>75</num>Nur unsre lehret, unsre weihet sie!
+Sie scheinen heilig ihr, was heilig ist
+Erreget Spott, wie ein veraltet Kleid,
+<pb n="26" facs="027.jpg"/>Und doch veraltet jeder Wahn dereinst,
+Nur nicht das Heilige, die Wahrheit nicht!
+<num>80</num>Die Wahrheit ist des Geistes Leben, er
+Erkrankt vom Wahn, und Lügen sind ihm Pest.
+Die Wahrheit ist des Himmels erstes Kind,
+Nur sie ist schön, in nakten Reizen schön,
+Wie Eva eh die Schlange sie belog.
+<num>85</num>Wer sie mit Einfalt sucht, mit Inbrunst liebt,
+Den tränket sie, dem öffnet sie den Blick,
+Den hebt sie über jedes Leiden, schenkt
+Geduld im Leben, und im Tode Ruh,
+Der Dämmrung Ruhe vor dem Morgenroth.
+<num>90</num>Nur Einfalt, keusche Einfalt findet sie,
+Einfalt, die in dem reinen Herzen nur
+Mit lautrem Oel der Inbrunst Flamme nährt.
+Der Schule eitler Lehrer sieht sie nicht,
+Dem faul Geschwäz vom kalten Lippen trieft,
+<num>95</num>Er sucht sie nicht, hat seinen Lohn dahin,
+Wenn ihn des Mietlings feiles Blat erhebt,
+Und sein Jahrzehend ihn zum Plato weiht.
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111304" lang="de">
+<head>
+  <title><num>VI.</num>Das Kleinod</title>
+  <subtitle>An F. H. Jacobi.</subtitle>
+  <firstline>Wem wahres Gut entrissen ward, dem bleibt</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=29" pages="27-31" facsimile-pages="29-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="fr">
+Ce siècle auquel nous vivons est si plombé, que
+  je ne dis pas l’exécution, mais l’imagination
+  même de la vertu en est à dire.
+
+<right>MONTAIGNE.</right>
+</epigraph>
+<poetry>
+Wem wahres Gut entrissen ward, dem bleibt
+Oft viel, wenn des Verlusts Gefühl ihm bleibt,
+Drob wache wenn du’s hast, denn das ist dein,
+Kein Schalk entwindets dir, kein König raubts,
+<num>5</num>Es war die Sele des was man dir nahm,
+Erhalte diese, denn es steht bey dir!
+
+  Es bluteten für Freiheit Tausende,
+Nun küssen Tausende der Knechtschaft Joch,
+In diesen starb der Geist der Freiheit aus,
+<num>10</num>Und kein Timoleon kann sie befrein.
+<pb n="28" facs="029.jpg"/>Ein Schweizer, welcher sich nach Ketten sehnt,
+Ist Sklave, wenn er auch in Uri wohnt,
+Und wer in Japan fühlt, des Kaisers Recht
+Sei toller Wahn, der ist in Japan frei.
+
+<num>15</num>  Des Sieges Adler der mit Flammenblick
+Vom Himmel kam, der Helden Haupt umflog,
+Und mit den Flügeln Ländern schattete,
+Ward, wie des Ganges Elefanten, zahm,
+Sein Flug wird nach dem Einmaleins bestimt.
+<num>20</num>Denn Krieg ward nun ein Spiel wie Whist und Schach,
+Und unsre Schlachten würde Filidor<footnote>Der gröste Schachspieler unsrer Zeit.</footnote>
+Gewinnen gegen Spartas Heldenschaar.
+Den Lorber auch? nicht den der Weise giebt,
+Des Tods Verachtung macht den Helden noch,
+<num>25</num>Und wem im Herzen die belebend glüht,
+Der ist auch selbst in dieser Zeit ein Held,
+Wenn auch kein Lorber seine Schläfe kränzt.
+<pb n="29" facs="030.jpg"/>  Kein Pfeil von aussen tödtet das Gefühl
+Des Schönen und des Guten in der Brust,
+<num>30</num>Ein Weiser ist ders in sich trägt, ist Held,
+Er schmacht’ im Kerker, oder führ’ ein Heer.
+Des Ruhms bedarf er nicht, und stralt sein Ruhm
+Dem Zeitgenossen und der Nachwelt Licht,
+So ist es Wohlthat die er giebt, nicht nimt.
+<num>35</num>Wer Brutus einen Mörder schilt, verlezt
+Nicht den der einer Welt die Freiheit gab.
+Der Lorberkranz des grossen Julius
+War gegen Cato’s stilles Selbstgefühl,
+Was gegen diesen Kranz ein Orden ist.
+
+<num>40</num>  Im Herzen lebt die wahre Ehre nur!
+Des Klosters Gitter, und ein hährner Sack,
+Bürgt nicht so sicher für der Nonne Zucht
+Daß nicht ein Wunsch ihr Herz beflecken kann,
+Und vor dem strengen Blick der Weisheit bleibt
+<num>45</num>Ein Mädgen reine Jungfrau im Serrail,
+Die vom Altare weggerissen ward,
+Wenn ihr ein reines Herz im Busen schlägt.
+<pb n="30" facs="031.jpg"/>Kein Zwang beflekt der Unschuld Lilienkranz,
+Von einem leisen Seufzer welkt er hin.
+
+<num>50</num>  O Jugend, Jugend! schone des Gefühls
+Für alles was da gut und edel ist,
+Erhalt die schöne Glut im Herzen rein,
+Und zittre wenn das blaue Flämmchen wankt,
+Es wankt von jedem Hauche ders nicht facht.
+<num>55</num>So lang es hell im Herzen lodert, wärmt
+Es durch und durch den ganzen Menschen, glüht
+In edlen Worten und in edler That,
+Wallt mit des Herzens Blut ins Antliz auf,
+Und stürzt in heissen Thränen aus dem Blick.
+<num>60</num>Der schönen Jungfrau giebt es höhern Reiz,
+Und kräftiget des Jünglings starken Arm.
+Wie Jungfraun wachten bei der Vesta Heerd,
+So wacht bei dieser Glut die edle Scham,
+Im weissen Schleier, mit gesenktem Blick,
+<num>65</num>Und sanfterröthend von dem schönen Stral.
+Wenn diese schlummert so erlischt das Feur!
+Zu glücklich noch wenn nicht die falsche Scham
+<pb n="31" facs="032.jpg"/>Der wahren Stelle nimt, die Asche schürt,
+Und wilde Flammen in dem Herzen nährt;
+<num>70</num>Die lodern schnell empor und hoch, es facht
+Von aussen jeder Wind der Welt sie an!
+Sie nährt das Vorurtheil der losen Zeit,
+Die höhnelnd ihren Gift in Lächeln hüllt.
+</poetry>
+</body>
+</text>
+
 <text id="stolbergf2026102801" lang="de">
 <head>
   <title><num>VII.</num>Die Schäzung</title>
@@ -213,6 +638,7 @@ Kein Nieswurz treibet diese Narrheit aus!
 <epigraph lang="de">
 <span lang="el">Τὸ δὲ φυᾷ κράτιστον ἅπαν·</span>
 Was von der Natur komt ist das beste!
+
 <right>Pindar.</right>
 </epigraph>
 <poetry>
@@ -334,6 +760,57 @@ Dem Pilger der auf dunklen Fluten schwebt.
 </body>
 </text>
 
+<text id="stolbergf2026111305" lang="de">
+<head>
+  <title><num>VIII.</num>Der Wehrwolf</title>
+  <firstline>Wer bist du der gehüllt in dunkle Nacht</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=40" pages="38-39" facsimile-pages="40-41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Verte omnes tete in facies!
+
+<right><sc>Virgilivs.</sc></right>
+</epigraph>
+<poetry>
+Wer bist du der gehüllt in dunkle Nacht,
+Auf mich die Pfeile seines Wizes scheußt?
+O kröchst du, eh sie mich erreichen, nicht
+In deine Höhle schnell zurück, du sähst
+<num>5</num>Wie keiner sich von meinem Blute färbt,
+Wie jeder von der Pallas Aigis prallt,
+Gebogen jeder mir zu Füssen fällt!
+Ists dir vielleicht genug den Aberwiz
+Zu zeigen, und des bösen Herzens Groll?
+<num>10</num>Und hältst du dich für sicher weil du dich
+Im Pöbel kleiner Geister mit verlierst,
+Und deinen Namen Finsterniß umhüllt?
+Deß troze nicht! wofern es mir gefällt,
+So such’ ich dich bei Fobos Fackel auf
+<num>15</num>Und finde dich, wärst du vergraben auch
+<pb n="39" facs="040.jpg"/>Wie in der Erd’ ein Dachs! Und wärest du
+Im dichtesten Gedränge wie ein Staar,
+In fliehender und lauter Vögel Zug,
+Wenn sie des Winters Frost und Hunger fliehn,
+<num>20</num>So holt’ ich dich mit Fobos Pfeil heraus,
+Der nimmer fehlt, und schmerzet wenn er trift.
+
+  Im singen schoß ich, und ich weiß gewiß
+Dein klagendes Geschrei verräth dich bald.
+So fabeln Jäger daß manch altes Weib,
+<num>25</num>Nicht ohne Schuz von Meister Urian,
+Sich in ein Wolfsfell hülle, und umher
+Des Unfugs treibe viel <span lang="la">incognito</span>.
+Doch feure von ererbtem Silber frisch
+Ihr kreuzbezeichnet Schrot durch Pelz und Fell,
+<num>30</num>So schleicht sie lendenlahm der Hütte zu.
+Verrathen durch die Wunden wird sie dann
+Der Vetteln Mährchen und der Buben Spott!
+</poetry>
+</body>
+</text>
+
 <text id="stolbergf2026102701" lang="de">
 <head>
   <title><num>IX.</num>Die Schafpelze</title>
@@ -347,6 +824,7 @@ Dem Pilger der auf dunklen Fluten schwebt.
 Non ti maravigliar . . . . . . . . . .
 In vesta di pastor’ lupi rapaci
 Si veggion per tutti i paschi —
+
 <right>DANTE.</right>
 </epigraph>
 <poetry>
@@ -551,6 +1029,7 @@ Und brüsten auf dem luft’gen Söller sich,
 <body>
 <epigraph lang="la" max-width="90%">
 Strenua nos exercet inertia.
+
 <right>Hor.</right>
 </epigraph>
 <poetry>
@@ -726,6 +1205,345 @@ Die schwarzen Würfel um dein Leben wirft.
 </body>
 </text>
 
+<text id="stolbergf2026111306" lang="de">
+<head>
+  <title><num>XI.</num>Der Prüfstein</title>
+  <firstline>Die guten Alten fabelten es sei</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=61" pages="59-65" facsimile-pages="61-67"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="el">
+Ἡ δὲ ἁρμονία ἐστὶν οὐρανία, τὴν φύσιν ἔχουσα
+θείαν, καὶ καλὴν, καὶ δαιμονίαν.
+</epigraph>
+<epigraph lang="de">
+Die Harmonie ist himmlisch, ihre Natur göttlich, schön und wunderbar.
+
+<right>Plutarch, von der Musik.</right>
+</epigraph>
+<poetry>
+Die guten Alten fabelten es sei
+Der Liebesgöttin und des Kriegsgotts Kind
+Die Harmonie; der Flöte sanften Hauch
+Vermähle mit der Leier Silberton,
+<num>5</num>Und mit der Mädchenstimme süsserm Klang
+Des Himmels Jungfrau in der Mutter Hain,
+Und bebe vor der starren Erzsaat nicht,
+Wenn blutig ihres Vaters Helmbusch weht;
+Sie athme dann Verachtung der Gefahr
+<num>10</num>Ins Herz des Jünglings, daß der schöne Tod
+Ihn reize, giesse durch des Siegers Brust
+<pb n="60" facs="061.jpg"/>Der sanften Wonne Ströme wenn das Weib
+Mit ihrem Säugling ihm entgegen komt,
+Den weichen Arm um seine Rüstung schlingt,
+<num>15</num>An dem nun keine Kette klirren wird,
+Weil seiner Wunde Blut im Schlachtfeld floß.
+
+  Dann über Flöten walte nicht allein,
+Und über Zimbeln und Drommeten sie,
+Sie müsse tief im Herzen jeden Ton
+<num>20</num>Der Seele stimmen, daß ein reiner Klang
+Erschalle, wenn die kleinste Saite bebt,
+Sie misch’ und ordne diese Töne dann
+Nach Weisen göttlicher Philosophie.
+Daß nicht die weiche Flöte Mysiens
+<num>25</num>Zu schmelzend athme, daß zum dorischen
+Gesang die Seele steig’ in stolzer Flut,
+Und schmachtend ebbe zum ionischen
+Gesang! die Götter lauschen, sagten sie,
+Nach solcher Seelensymphonie herab,
+<num>30</num>Und kein Päan ergözt wie dieser sie.
+
+<pb n="61" facs="062.jpg"/>  Ihr guten Alten, noch erhebet mich
+Der Nachhall eurer mächtigen Musik,
+Wenn um mich her die weiche Melodie
+Entnervten Zeiten, bei der Sonne Schein,
+<num>35</num>Zum Schlummer ladet; doch wie selten tönt
+Selbst diese weiche Melodie nur rein,
+Und frey vom Misklang der Empfindelei!
+Uns bleibt nicht mehr die Wahl der Melodie,
+Zu glücklich wenn kein Misklang unser Ohr
+<num>40</num>Verlezet! Jegliches Gefühl das nur
+Im Munde, oder in Gebehrden lebt,
+Auch jenes das im leeren Hirne spukt,
+Wie im verlaßnen Haus’ ein Poltergeist,
+Und auch der Wechselbalg der Fantasie,
+<num>45</num>Der langen Weile Säugling, den der Wahn
+Erzeugte, und Empfindung nennen will,
+Sind Misklang! doch der Gräuel ärgster ist
+Des mannigfalt’gen Misklangs Unmusik
+Der unempfundenen Empfindungen,
+<num>50</num>Die Frankreichs kalte Muse erst ersann,
+Und zahllos wie die Moden von Paris,
+<pb n="62" facs="063.jpg"/>In unsre leeren Schädel schüttete.
+O Schmach, wir taumeln ohne Trunkenheit!
+Dem Narren ähnlich dem man, statt des Weins,
+<num>55</num>Gefärbtes Wasser in dem Becher bot.
+
+  Doch weil noch mancher Jüngling sich im Wein
+Der Leidenschaft berauscht, weil hie und da
+Manch sanftes Mädchen schmilzt von wahrer Glut,
+Ja weil die Thräne edleres Gefühls
+<num>60</num>Noch izt aus manchem schönen Auge bebt,
+So höre Jüngling, höre Mädchen, was
+Ein Freund euch sagt der auf der Jugend Flut
+Vor kurzem hin und her geworfen ward,
+Und nun mit triefendem Gewande hier
+<num>65</num>Entronnen auf der Mannheit Veste steht.
+
+  Empfindung ist das göttlichste Geschenk
+Des Himmels, und je mehr dem Menschen ward,
+Je edler wird er, wenn den schönen Strom
+Die herrschende Vernunft im Bett erhält.
+<pb n="63" facs="064.jpg"/><num>70</num>Die helle Thräne zärtliches Gefühls
+Bei fremder Noth, stürzt nie zu heiß herab
+Auf schöne Wangen; Mädchen, achte nicht
+Des kalten Bruders Spott wenn dir der Tod
+Des Sängers den sein Rohr im Busche traf,
+<num>75</num>Das Auge trübt, und wenn des Gründlings Schmerz
+Dich härmt, der zappelnd an der Angel hängt.
+
+  Empfindung welche ungeheissen komt
+Ist nicht Empfindelei, Empfindelei
+Wird nimmer zur Empfindung, trägt zwar Bild
+<num>80</num>Und Ueberschrift, geprägtem Messing gleich,
+Doch Messing bleibet Messing, Gold ist Gold.
+
+  Kennst du den Prüfstein der des Herzens Gold
+Bewähret? Selbstverleugnung heisset er.
+Was ist die Freundschaft ohne sie? ein Traum!
+<num>85</num>Und Liebe, was? ein toller Fiebertraum!
+Sie flicht des Helden Kranz, des Helden Mut
+<pb n="64" facs="065.jpg"/>Ist ohne sie des welschen Mietlings Mut,
+Der seinen Dolch und seinen Arm dir leiht.
+Ihr Leben tragen beide feil, gleichviel
+<num>90</num>Ob für Zechinen oder einen Thron!
+
+  Du schauderst vor der Prüfung? schaudre nicht,
+Und fasse den Entschluß gerecht zu sein!
+Das gröste Lob zu unsrer Väter Zeit
+War kurz: der Mann ist ein gerechter Mann.
+<num>95</num>Das gröste Lob zu unsrer Mütter Zeit
+War kurz: Voll Einfalt ist und Unschuld sie.
+Izt schmelzen Mann und Weib wie Wachs dahin,
+Wenn bei dem Scheiterhaufen der für sie
+Schon flammte, ihres Volkes Sitten und
+<num>100</num>Den todten Mann zu ehren, mutig sich
+Lanassa stürzet in — des Buhlers Arm.
+Wer spricht von Chatam der im Leben groß,
+Und grösser noch in seinem Tode war?
+Wer vom bescheidnen Helden Washington?
+<num>105</num>Sei König, brich dem Volke deinen Eid,
+<pb n="65" facs="066.jpg"/>Du wirst bewundert, wärst du noch so klein!
+Führ ungerechten Krieg, und werde reich
+Durch Kirchenraub, dein Pöbel staunt dich an.
+Nicht lange, die gerechte Nachwelt nimt
+<num>110</num>Den Prüfstein in die Hand, sie prägt das Gold
+Mit edlem Stempel, falscher Münze drückt
+Ihr sichrer Arm ein daurend Brandmal auf.
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111307" lang="de">
+<head>
+  <title><num>XII.</num>Der Rath</title>
+  <subtitle>An Tobias Mumsen.</subtitle>
+  <firstline>Dank seis den Weisen unsrer Zeit, wir sind</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=68" pages="66-75" facsimile-pages="68-77"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="el">
+Ξέρξης ὀργισθεὶς Βαβυλωνίοις ἀποστᾶσι, καὶ κρατήσας, προσέταξεν ὅπλα μὴ φέρειν, ἀλλὰ ψάλλειν, καὶ αὐλεῖν, καὶ πορνοβοσκεῖν, καὶ καπηλεύειν, καὶ φορεῖν κολπωτοὺς χιτῶνας.
+</epigraph>
+<epigraph lang="de">
+Zürnend auf die Babylonier, welche von ihm abgefallen waren, bezwang Xerxês sie, verbot ihnen Waffen zu tragen, befahl ihnen aber auf Geigen und Flöten zu spielen, Hurenhäuser und Schenken zu besuchen, und Gewande mit weiten Falten zu tragen.
+
+<right>Plutarch in den Sprüchen der Könige u. Feldh.</right>
+</epigraph>
+<poetry>
+Dank seis den Weisen unsrer Zeit, wir sind
+So weit gekommen daß bewiesen ward
+Die Freiheit sei ein Traum, ihr Nam’ ein Schall,
+Des Narren Losung, und des Klugen Spott.
+<pb n="67" facs="068.jpg"/><num>5</num>Die Nacht, in welcher Rom und Griechenland
+Dem Irwisch tappend folgten, ist dahin,
+Wofern sie jemals war; dem Weisen ist
+Es zweifelhaft, denn alle Thaten Roms
+Und Griechenlandes sind vielleicht auch nur
+<num>10</num>Ein Mährchen; kann man wohl mit Nüchternheit
+Des Geistes, glauben, daß dreihundert Mann
+Den Teufel so im Leibe haben, sich
+Gewissem Tode kalt zu wiedmen, nur
+Damit der kleinen Sparta rauhes Volk
+<num>15</num>Bei schwarzer Brüh im irdnen Napfe frei
+Sich träume? Welche Nase wittert hier
+Nicht Lügen? oder wenn von Marathon
+Ein Grieche fabelt daß Miltiadês
+Mit einer Hand voll freier, also schlecht
+<num>20</num>Geordneter, denn Ordnung giebt der Zwang,
+Des grossen Königs ungeheures Volk
+Zertrümmert habe wie ein Fels im Meer
+Den Nachen der auf Wogen hüpft, zerschellt.
+Wer wollte bey der Amme Mährchen sich
+<num>25</num>Zum zweitenmal begeifern wie ein Kind,
+<pb n="68" facs="069.jpg"/>Zu hören was das trunkne Alterthum
+Von Brutus und Timoleon erzählt,
+Von Cato der wie Werther sich entleibt,
+Ein Werther ohne Lotte! wollte denn
+<num>30</num>Ihm Cäsar nicht vergeben? konnt er nicht
+Der ersten einer an dem Hofe sein?
+
+  O Fürsten, Väter Eures Vaterlands!
+Geläng es euch das alberne Gewäsch
+Der Griechen und der Römer allzumal
+<num>35</num>Durch Hand des Büttels zu verbrennen, und
+Auch selbst die Kunde neuer Zeiten so
+Zu säubern, daß nicht ohne Glimpf und Scheu
+Die Wahrheit, wenn sie zu gefährlich ist,
+Erschiene, Väter eures Vaterlands,
+<num>40</num>Ihr säßet ruhiger auf eurem Thron.
+
+  Ich härme manchen Tag und manche Nacht
+Mich schlaflos um das Wohl der Könige,
+Des Seegens Fülle schütten sie aufs Volk,
+Versäumen eigne Ruh und eignes Wohl.
+<pb n="69" facs="070.jpg"/><num>45</num>O dürft ich rathen! zwar ihr hört mich nicht,
+Doch überlaßt mich meinem süssen Wahn,
+Daß von den Weisen die um euren Thron,
+Wie Wasserblasen um die Klippen sind,
+Mich einer hört, und zu gelegner Zeit,
+<num>50</num>Euch ehrerbietig das gehörte sagt.
+
+  Ein jedes Reich hat zween Dämonen, die
+Wie Nacht und Tag im ew’gen Kampfe sind.
+Der eine ist euch dienstbar, und sein Hauch
+Bläßt auf die Völker die seit grauer Zeit,
+<num>55</num>Beglückt durch Euch dem Throne dienstbar sind.
+Ich nenne ihn den nächtlichen, denn Ruh,
+Des Schlummers Ruhe geußt er auf das Volk,
+Es fühlt den heissen Stral des Mittags nicht,
+Der sein Gehirn ihm in dem Schädel dörrt,
+<num>60</num>Es fühlet nicht den Sturm der Winternacht,
+Wenn sein erstarrter Arm im Froste zuckt.
+
+  O selig ist der König, der vom Thron
+Das Schnarchen des gestreckten Volkes hört!
+<pb n="70" facs="071.jpg"/>Neptunus ähnlich wenn der Wogen Schall
+<num>65</num>Die Stufen des Korallenthrons so laut
+Umrauschet, daß des Schiffbruchs Krachen fern
+Von ihm verhallet, und das Angstgeschrei
+Der Scheiternden des Götterohres schont!
+
+  Der andre Dämon ist ein Feind der Ruh,
+<num>70</num>Ein Morgenstern, ein ärger Lucifer!
+Mit seiner Fackel wallet er umher,
+Er stört die Völker aus dem tiefen Schlaf,
+Und weckt er auch nicht gleich ihr schweres Haupt,
+So würkt sein Einfluß doch auf ihren Traum.
+<num>75</num>Auch Träume sind gefährlich! tiefer Schlaf,
+Ja tiefer, schwerer, starrer Schlaf allein,
+In schwarzer Finsterniß, giebt wahre Ruh!
+Und dennoch ist gewisse Sicherheit
+Niemals des Menschen Loos! Es schliefen auch
+<num>80</num>Die Schweizer tiefen, schweren, starren Schlaf,
+Nun wachen sie beim hellen Licht des Tags!
+Ja was beweinenswerth, und seltsam ist,
+Ich hab’ es selbst gesehn, sonst sagt’ ich’s nicht,
+<pb n="71" facs="072.jpg"/>Ich raun es ungern euch und leis ins Ohr:
+<num>85</num>Die Frevler unterstehn sich froh zu sein,
+Und sind die glücklichsten der Sterblichen!
+
+  Auch über Britten waltet Lucifer,
+Zwar streut des Thrones Dämon Mohn und Gold,
+(Denn Gold ist kräftiger als Laudanum)
+<num>90</num>Aus vollen Händen, dennoch wacht das Volk,
+Sein Beyspiel schrecke wie die Schweizer euch.
+
+  Bewahrt vor allem väterlich das Volk
+Was Nerven stählt und Schwung dem Geiste giebt;
+Was frommet ihm des Armes Kraft, seitdem
+<num>95</num>Der Krieg ein Spiel der Kunst geworden ist?
+Und Geist ist ihm gefährlich! Brecht ihm früh
+Den Fittig, weil er noch am Sumpfe klebt,
+Dem Jäger gleich der früh die Schwanen lähmt,
+Daß nicht, wenn er gewafnet wiederkehrt,
+<num>100</num>Der schöne Vogel sich im Silberklang
+Der Lüfte hebe, ihm zum bittern Hohn.
+Versammelt was die Sinne reizen kann
+<pb n="72" facs="073.jpg"/>Um euren Thron, o spart zur Unzeit nicht!
+Ihr spart? für wen? für euer Volk doch nicht?
+<num>105</num>Erweicht durch Ueppigkeit und bunten Tand
+Den Unterthan, denn wer den Sinnen fröhnt,
+Ist kalt für Freiheit und dem Fürsten feil!
+Ruft den Kastraten von der Tiber her,
+Er, ist der beste Bürger eures Reichs,
+<num>110</num>Er singet euren Hof in weiche Ruh,
+Ist leer an Kraft, von Leidenschaften frei,
+Ein solches Volk wär ganz Europa werth
+Für einen König, stürb es nur nicht aus!
+
+  Das Schauspiel kann gefährlich werden! fern
+<num>115</num>Von eurer Bühne schreite Hamlets Geist,
+Kein Odoardo zucke seinen Dolch,
+Es ruhe Göz mit seiner Eisenhand,
+Das weiche Singspiel wieg euch täglich ein
+Mit Frankreichs Tönen und mit Frankreich Wiz.
+<num>120</num>Die welsche Melodie erregt das Herz,
+Weckt die Empfindung, giebt ihr Ebb’ und Flut,
+Und eures Volks Empfindung müsse still,
+<pb n="73" facs="074.jpg"/>Nicht tief, von euch durchschaut, und eingeschränkt
+Wie ein Kanal in euren Gärten sein.
+
+<num>125</num>  Taucht eures Reiches edle Jugend früh
+Ins laue Bad französcher Sitten ein.
+Seid ja den bunten Karten immer hold,
+Ein Volk das täglich spielt gehorchet gern.
+
+  Ihr selber spottet der Religion,
+<num>130</num>Ihr Geist ist Geist der Wahrheit und der Kraft,
+Doch ehrt die Pfaffen, denn sie ehren euch,
+Ihr Geist ist Geist der Schwachheit und des Wahns!
+Von euch gemästet räuchern sie euch gern,
+Und leiten eure Macht vom Himmel her.
+<num>135</num>Den wahren Priester haltet von euch ab,
+Kein Erdenglanz verblendet seinen Blick,
+Und bittre Wahrheit tönt aus seinem Mund.
+
+  Das Füllhorn eurer Gnade schütte Band
+Und Stern und Schlüssel um den Thron umher,
+<num>140</num>Kein Zauber würkt auf kleine Seelen so!
+<pb n="74" facs="075.jpg"/>Er lehrt was klein ist achten, und verschmähn
+Was edel ist, gewöhnt auf Eure Hand
+Hinauf zu schaun, wie buntes Federvieh
+Sich alle Morgen um die goldne Saat
+<num>145</num>Der Hand versammelt die es schlachten wird.
+
+  Der Rechtsgelehrte sonne sich im Glanz
+Der Gunst, und knäte das Gesez wie Wachs.
+Sein Kiel behaupte eures Schwertes Recht,
+Eh ihr im Trüben bei dem Nachbar fischt.
+
+<num>150</num>  Es fröhne kriechend euch der Philosoph,
+Wenn ihm der Jüngling in dem Hörsal lauscht;
+Er wäge Recht der Menschheit und des Throns,
+In Schalen denen ihr den Stempel gabt,
+Nach eures Heiligthumes Sekeln ab.
+
+<num>155</num>  Vor allen steh ein ungeheures Heer
+Bereit auf euren Wink. Wenn auch kein Wolf
+Der Heerde draut, denn unter uns gesagt,
+Die Hunde beissen nicht den Wolf allein.
+<pb n="75" facs="076.jpg"/>Das ist die wahre Weisheit, dieses ist
+<num>160</num>Der Kern der Politik! ein süsser Kern!
+Euch aufbewahrt! indessen nagt das Volk
+Die Zähne sich an harten Schalen stumpf.
+</poetry>
+</body>
+</text>
+
 <text id="stolbergf2026102802" lang="de">
 <head>
   <title><num>XIII.</num>Die Weigerung</title>
@@ -738,6 +1556,7 @@ Die schwarzen Würfel um dein Leben wirft.
 <epigraph lang="la">
 Nunc ego mitibus
 Mutare quaero tristia — —
+
 <right>Hor.</right>
 </epigraph>
 <poetry>
@@ -825,6 +1644,544 @@ O Porcia an Seelenschöne gleich,
 <num>80</num>Voll Lieb und hohes Sinns wie Arria,
 Und Mütter, die geflehet hätten: Kind,
 Erbarme deiner Mutter dich, und stirb!
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111308" lang="de">
+<head>
+  <title><num>XIV.</num>Der zweite Rath</title>
+  <firstline>Ich schlenderte den krummen Erlengang</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=83" pages="81-87" facsimile-pages="83-89"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="de">
+Es ist besser einem Bären begegnen dem die Jungen geraubet sind, denn einem Narren in seiner Narrheit.
+
+<right>Sprüchw. Salom. XVII. 12.</right>
+</epigraph>
+<poetry>
+    Ich schlenderte den krummen Erlengang
+    An meinem kleinen Bache Sorgenlos
+    Hinab, und freute mich des milden Strals
+    Der Abendsonne, die durch helles Laub
+<num>5</num>    Der schlanken Eschen auf die rege Flut
+    Erröthend schien, indeß der Abendhauch
+    Der Rockenblüte thaubenezten Duft
+    In süssen Wallungen herüber blies.
+    Wie selig war ich! mir entschwanden selbst
+<pb n="82" facs="083.jpg"/><num>10</num>    Die süssen Träume meiner Fantasei,
+    Denn hier war mehr als Fantasei! ich war
+    So sehr in Frieden mit der ganzen Welt,
+    Daß mich der Frösche Quacken nicht verdroß,
+    Wiewohl aus schwanken Zweigen hie und da
+<num>15</num>    Der Nachtigallen süsse Klage scholl.
+    Mit leisen Schritten schlich ich einer nach,
+    Und sah die liebe kleine Sängerin,
+    Da watschelte, gleich einer fetten Ente,
+    Ein wohlgenährter Herr zu mir heran
+<num>20</num>    Und lächelte mit glänzendem Gesicht,
+    Aus satter Seele mir.    Was sollt’ ich thun?
+    Er hatte mich gesehn, es schloß zudem
+    Der Bach mich von der linken Seite ein,
+    Und rechts die Saat, und keine Furche bot
+<num>25</num>    Zur schnellen Flucht sich meinem Auge dar.
+
+    Schon stand er da, und so begrüßt er mich:
+Ei ich freue mich von Herzen in der schönen Abendhelle
+Meinem Gönner zu begegnen, schöpft er aus der Dichterquelle?
+<pb n="83" facs="084.jpg"/>Tummeln Sie, mein werthgeschäzter, etwa hier den Pegasum?
+<num>30</num>Glücklicher! mir sind die Musen wie des Baches Fische stumm!
+Ehmals hab’ ich süssen Umgang mit den Musen auch gepflogen,
+Und aus Gotscheds Blumengarten lautern Honig eingesogen.
+Aber andre Jahre sezen unsern Trieben andres Ziel,
+Seit ich mich dem Staate weihte, ruht mein goldnes Saitenspiel.
+
+<num>35</num>    Nun schöpft ich Odem, sucht ein Narr mich heim,
+    So ist’s mir Kühlung in der Hize wenn
+    Er sich in seiner ganzen Narrheit zeigt.
+    Er aber fuhr mit breiten Worten fort,
+    Und seine Rede floß der Gosse gleich,
+<num>40</num>    Die nie erschöpft, und immer seicht und laut,
+    Des vielbetretnen Pflasters Eckstein spült:
+<pb n="84" facs="085.jpg"/>Zwar in meinen Nebenstunden greif’ ich noch zur Jugendleier,
+Zum Exempel dieser Tage läßt mein schweres Amt mich freier,
+Denn im Heumond feiert jährlich nach wohlhergebrachtem Brauch
+<num>45</num>Unser Tribunal, und da des hohen Hundssterns heisser Hauch
+Immer günstig den Poeten ihnen Kraft und Glut gegeben,
+Hab ich, des Pyrmonters wegen, mich aufs stille Land begeben.
+Theils ist dieser Wechsel heilsam und zuträglich der Natur,
+Theils besuchen mich die lieben Musen auf der bunten Flur.
+<num>50</num>Denn ich pflege bei dem Trinken Reim und Bilder zu erhaschen,
+Die Durchlaucht des Fürsten am Geburtstag froh zu überraschen.
+<pb n="85" facs="086.jpg"/>Immer hab’ ich mich beflissen als des hohen Hauses Knecht,
+Selbst die Stunden meiner Muse anzusehn als Fürstenrecht.
+Und zumal in diesen Zeiten da der Geist der Freiheit tobet,
+<num>55</num>Ists ein Wort geredt zu seiner Stunde wenn man Fürsten lobet,
+Wenn man kühn dem Schwindelgeiste eitler Thoren widersteht,
+Und des Thrones heil’ge Rechte zeigt in voller Majestät.
+
+    Er schwieg und harrte meiner Red’, ich sprach:
+    Da Sie ein großer Mann bey Hofe sind,
+<num>60</num>    So kennen Sie des Hofs Bedürfniß auch,
+    Und alle Schwürigkeiten Ihrer Pflicht.
+
+Wohlgesprochen werther Gönner, denn es ist kein Spielgefechte
+<pb n="86" facs="087.jpg"/>Gründlich mit dem Musenkiele zu verfechten heil’ge Rechte!
+Lange schwoll der Strom der Frechheit, und nun stürzt er Dämme um,
+<num>65</num>Da sich Frevler nicht entblöden einem deutschen Publicum
+Solchen Unsinn vorzutragen als mir heute meine Base
+Bei der Brunnenkur im Garten laß nach meinem elften Glase,
+Ihres Vaters wegen schwieg ich, dem auch Rousseau nicht zu frei
+Schreibt, doch ward mir gleich das Wasser in dem Leibe schwer wie Blei!
+<num>70</num>Und ich eilte flugs von dannen; nicht das Wasser, welches stockte,
+Nein verbißner Eifer war es der ins Kabinet mich lockte.
+Reimlos, oder wie ich lieber sagen möchte ungereimt
+Ist die Schrift in welcher Bosheit schwülst’gem Aberwiz entkeimt.
+<pb n="87" facs="088.jpg"/>Diese Misgeburt des Wizes, vom Autore Rath genennet,
+<num>75</num>Gleichet jenen die des Henkers Hand auf freiem Markt verbrennet.
+Im Museum vor’ges Jahres pranget dieses Schmähgedicht,
+Ob sich der Poet genannt hat, sagte mir die Base nicht.
+
+    Ich wandte wieder lächelnd mich zu ihm:
+    Verzeihn Sie dem Museum, denn es muß
+<num>80</num>    Gleich einem Findlingshause manches Kind
+    Aufnehmen. Dieses Vater nannte sich
+    Mit seines ganzen Namens Unterschrift.
+    Er hat die Ehre Sie zu sehn, mein Herr
+    Und eh er Sie verläßt noch einen Rath
+<num>85</num>    Zu geben: Hüten Sie beym Brunnen sich
+    Für Bücher, welche plötzlich Ihren Leib
+    Mit Blei beschweren. Lesen Sie, mein Herr,
+    Siegfried von Lindenberg, <span lang="la">probatum est!</span>
+    Und hiermit wünsch ich Ihnen gute Nacht.
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111309" lang="de">
+<head>
+  <title><num>XV.</num>Der Unterschied</title>
+  <firstline>Die Erde öffnet ihren Mund, und schlingt</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=90" pages="88-95" facsimile-pages="90-97"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="en">
+Oh villain, villain, smiling damned villain!
+My’tables, — meet it is I write it down,
+That one may smile, and smile, and be a villain!
+
+<right><sc>Shakespeare.</sc></right>
+</epigraph>
+<poetry>
+Die Erde öffnet ihren Mund, und schlingt
+In einem Bissen Völkerschaften ein!
+Die hochgethürmten Städte, und das Dorf
+Mit seinen Linden, unter deren Schuz
+<num>5</num>Nun eben eine frohe Knabenschaar
+Mit glatten Kieseln aus dem nahen Bach
+In junger Freude nach dem Ziele warf.
+Des harten Schwelgers vollbesezter Tisch
+<pb n="89" facs="090.jpg"/>Stürzt mit des armen Landmanns Moosdach ein,
+<num>10</num>Der jenes Weinberg diesen Augenblick
+Mit seinem Schweiß begoß, und still zu Gott
+Emporsah, welcher sein geängstet Flehn
+Zugleich mit seines Drängers Troz vernahm,
+Und beide für den Richterstul berief.
+<num>15</num>Wie viele Freuden schlang die Erd’ hinab,
+Doch auch wie viele Noth! Manch frommes Weib
+Weint um den Gatten den sein Feld begrub;
+Doch manches gute Mädchen konnte nur
+Durch schnellen Tod dem vorgezählten Glück
+<num>20</num>Der reichen Heirath, dem verhaßten Bett
+Des Freiers, den aus toller Zärtlichkeit
+Bethörte Eltern wählten, so entgehn.
+Ja sie entrann auf ewig ihm, indeß
+Das fromme Weib den Mann einst finden wird
+<num>25</num>Beim armen Winzer, der dem harten Vogd
+Nicht mehr das thränenvolle Kerbholz zeigt.
+
+  Wer wahre Glut in treuem Herzen hegt,
+Wer oft ergrimmte wenn sein Flammenblick
+<pb n="90" facs="091.jpg"/>Das Nez der List, die Keule der Gewalt,
+<num>30</num>Und beide durch den Wahn geweihet sah,
+Der jammert nicht Gedankenlos und feig
+Mit seidnen Püpchen in dem Vorgemach,
+Wenn auch die Zeitung, selbst das wilde Meer
+Beschämend, ganz Formosa auf einmal
+<num>35</num>Mit Millionen Menschen in sich schlürft.
+Nur säh er lieber dort des Oceans
+Gesperrten Rachen, wo der Schwarzen Volk
+In schattenlosen Inseln, unterm Stral
+Der heissen Sonne von der Heimath fern,
+<num>40</num>Mit Blut des weissen Treibers Geißel färbt,
+Und seiner Doggen Maul wenn einer floh,
+Und bellend ihn die laute Jagd verfolgt,
+Dem mattgejagten Hirsche gleich — Mir fiel
+Die Feder aus der Hand — Gerechter Gott!
+<num>45</num>Es martern Christen ein gestolnes Volk! —
+Weg mit dem Schurken welcher Menschenkauf
+Nicht Diebstahl nennt! — Die Käufer schüzt der Staat!
+Der Staat, das blutbefleckte Ungeheur,
+<pb n="91" facs="092.jpg"/>Das wie Saturnus seine Kinder frißt,
+<num>50</num>Und dennoch wie ein Gott verehret wird.
+Hier weine wem vom Frost der kalten Welt
+Die Thräne nicht erstarrt! Und sieht sein Blick
+Nicht übers Weltmeer, o so schau er hin
+Wo der Leibeigne unter schwerem Joch
+<num>55</num>Sich krümmt, und höre wenn der freche Stolz
+Behauptet, angeboren sei das Joch
+Dem Menschen, gleich als obs im Mutterleib
+Ihm angewachsen wäre! — aber kalt
+Bleibt hier der Weltling den das Zeitungsblatt
+<num>60</num>Zu Thränen zwang. Denn Recht und Unrecht sind
+Ihm leere Namen! nur des Todes Bild
+Erschüttert sein Gebein, des Todes Bild
+Das ihm der Zeitungsschreiber sonder Glimpf
+Und millionenfältig zeigt — indeß
+<num>65</num>Wie bald verschwindet es! Die Oper tilgt
+Die lezten Spuren seiner Angst, und löst
+Mit feilen Thränen einer Bulerin
+In Dido’s Rolle seine Schauer auf.
+<pb n="92" facs="093.jpg"/>Auch ich bedurfte der Erholung hier,
+<num>70</num>Und folge gern dem seidnen Männchen nach,
+Denn wenn die Galle ausgeraset hat,
+So bleibt mir noch das Zwergfell und die Milz.
+Da sizen sie, die kalten Herrchen, nun,
+Und kalte Weibchen sonder Hirn und Herz!
+<num>75</num>Wie glücklich an französischem Gefühl
+Sich zu erwärmen! sizen Affen gleich,
+Die sich im Winter sammeln um das Feur
+Im Walde; schlau genug sich an der Glut
+Zu wärmen, doch zu thierisch eine Glut
+<num>80</num>Zu nähren, springen, wenn die Lohe sinkt,
+Sie neuen Affenstreichen wieder zu.
+Zu schwach auf blut’gen Raub zu gehn, nicht nüz
+Den Pflug zu ziehn, nicht an der Kette wach,
+Leicht wie der Schaum der Wogen und so falsch
+<num>85</num>Verbuhlt und beissig, naschend, schmeichelnd, feig
+Und frostig beide, trennt ein Unterschied
+Den Affen von der Schranze, jener beißt
+In seine Kette, dieser küsset sie.
+<pb n="93" facs="094.jpg"/>Den Affen reizt der rothen Farbe Glanz
+<num>90</num>Zum Zorn, Empfindung reizt des Höflings Spott!
+Sein Lächeln täuscht! Wer immer lächeln kann
+Der ist ein Schalk! Sein glattes Antliz gleicht
+Dem falschen Grund, den helles hohes Gras
+Bedeckt, in ihm versinken Mann und Roß.
+<num>95</num>Der wahre Menschenfreund — kein Weichling kann
+Und kein Gedankenloser Wicht es sein! —
+Wird selten lächeln, scheint vielleicht sogar
+Dem Seelenpöbel oft ein Menschenfeind.
+Der grosse Cato welchen die Natur
+<num>100</num>Zur Probe zeigte, was ein Mensch zu sein
+Vermag, erschreckte blendend seine Zeit
+Mit heissem Stral, doch fühlte seine Zeit
+Er sei der liebevollste Menschenfreund.
+Nur unsre seidne Brut verkennet ihn,
+<num>105</num>Halbseidne Söhne der erschlaften Zeit,
+Denn ungemischte Seid’ ist rein und stark.
+Der Menschenfreund wird nie gleichgültig sein,
+Doch, ich gesteh es gern, er läuft Gefahr,
+Daß überall verstoßen und verkannt,
+<pb n="94" facs="095.jpg"/><num>110</num>Die Menschenliebe sich in Menschenhaß
+Verwandle! Heraklit erfuhr es, und
+Jean Jacques, der Heraklit von unsrer Zeit.
+Die heissre Liebe ward zu grösserm Haß
+Wie Wasser das bey Tag gesiedet hat,
+<num>115</num>In kalten Winternächten ausgesezt
+Vom glatten Spiegel bis zum Grund erstarrt.
+Wohl dem der warmes Herzens noch der Stadt
+Entrinnt, eh dieser Frost im Busen starre!
+Wohl ihm wenn die Natur sein volles Herz
+<num>120</num>Zum Einklang ihrer Liebestöne stimmt!
+Des Waldes Lüft’gen und der helle Bach,
+Wehn Melodieen in die Seele ein,
+Und lösen jedes stickende Gefühl.
+Wenn grosse Seelen, welche hie und da,
+<num>125</num>Wie seltne Riesen doch noch übrig sind,
+Ihn lieben, sinket seine Sele nicht
+In Menschenhaß, der Uebel ärgstes ein.
+Ich danke Gott für mein Geschick! ihr wißts
+O Freunde, daß die helle Thräne oft
+<num>130</num>Aufs Blatt mir stürzte, Menschenliebe mir
+<pb n="95" facs="096.jpg"/>Die schwanke Geißel und den Bogen gab,
+Sie gegen Narren, gegen Schalkheit den!
+Und traf ich manchmal über’s Ziel, verzeiht!
+Ich traute dieser Zeiten Nebel nicht,
+<num>135</num>Dem Schüzen ähnlich der in feuchter Luft
+Die Saite schärfer spannt, und höher zielt.
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111310" lang="de">
+<head>
+  <title><num>XVI.</num>Die Leuchte</title>
+  <firstline>Wie nach dem Quell das müde Reh sich sehnt</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=98" pages="96-101" facsimile-pages="98-103"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Vitam impendere vero.
+</epigraph>
+<poetry>
+Wie nach dem Quell das müde Reh sich sehnt,
+Wie nach der Mutter ein verirrtes Kind,
+So sehnt nach Wahrheit sich der Mensch, wofern
+Sein Geist gesund in reinem Herzen blieb.
+<num>5</num>Mit dieser Sehnsucht sandt’ ihn die Natur
+Ins Erdeleben, welches Freud’ und Harm
+Ihm schenkt. Ob mehr der Freud? ob mehr des Harms?
+Wer mags entscheiden? Dennoch glaub ich sinkt
+Der Freuden Schale öfter als des Harms,
+<num>10</num>Wiewohl das Kind mit nassem Blick den Stral
+<pb n="97" facs="098.jpg"/>Des ersten Lichtes schöpft, den lezten Hauch
+Der Luft, ein banges Röcheln von sich stößt.
+Oft scheint die Zwischenzeit zu kurz, zu lang,
+Doch maß sie der der Sonnenbahnen maß!
+<num>15</num>Dem Wahne scheint sie nur zu kurz, zu lang.
+Du zeihest sie der Kürze, dem der Tag
+Zu lang doch immer scheint, zu lang die Nacht,
+Wiewohl des Leichtsinns bunte Geissel schnell
+Die Stunden von der leeren Scheitel treibt?
+<num>20</num>Du zeihest sie der Länge, dem der Tag
+Zu kurz doch immer scheint, zu kurz die Nacht,
+Dir einen stillen, ernsten Augenblick
+Zu sparen, und die Frage dir zu thun:
+Woher? wohin? es dreht sich unter dir
+<num>25</num>Ein schnelles Mühlenrad, und schwindelnd fällst
+Du da hinab wo dir der kalte Strom
+Die Antwort, eh du fragtest, wirbelnd giebt!
+Wer Wahrheit liebet, und nach Wahrheit forscht,
+Den reisset nicht der Taumel blindlings hin,
+<pb n="98" facs="099.jpg"/><num>30</num>Sein Leben ist kein bunter Larventanz,
+Kein schwerer Fiebertraum; er wandelt oft
+Auf dunkeln Pfaden, freut sich manches Strals
+Der unverhofft aus schwarzen Wolken bricht.
+Erwartet sehnend, aber mit Geduld,
+<num>35</num>Das Morgenroth, und weiß es daß der Stral
+Des blassen Mondes aus der Sonne quoll.
+Er tauschte seine schöne Sternennacht
+Nicht für das Karnavall des Wahnes, nicht
+Für unsrer Afterweisen Lämpchen, nicht
+<num>40</num>Für stolzer Pfaffen Blendlaterne hin.
+Denn beide sehen bei dem trüben Schein
+Nur sich; sie wähnen über ihren Schein
+Hinaus sei eine schwarze Mitternacht.
+Sie wollen leuchten, aber wünschen nicht
+<num>45</num>Den Tag, sie leuchten wie ein faules Holz.
+
+  Der Freigeist, weil er nicht des Mondes Stral
+Mit seinem hohlen Brennglas fassen kann,
+Erkennet seinen Sonnenursprung nicht,
+<pb n="99" facs="100.jpg"/>Sucht gleich dem Uhu siebenfältige Nacht,
+<num>50</num>Im düstern Graun der öden Felsenkluft,
+Und schreckt mit Menschenfeindlichem Geschrei.
+
+  So führen Stolz und Leichtsinn von der Bahn
+Der Weisheit ab; zu bald verlieren wir
+Den Durst nach Wahrheit, von dem Vorurtheil
+<num>55</num>Geblendet, und von eitlem Wahn bethört.
+Es täuscht den edlen Durst ein Taumelkelch,
+Wir trinken Tod in langen Zügen ein!
+Nichts bleibt uns wahr, in nichts die Wahrheit lieb.
+Was edlen Menschen hehr und heilig war,
+<num>60</num>Wird uns ein Spott! die herrliche Natur
+Erstummet und erbleicht für unsern Sinn.
+Der Philosoph, ein trügender Sophist,
+Baut und zerstört sein luftiges System,
+Dem Knaben gleich der Sand am Ufer häuft.
+<num>65</num>Der Dichter spielet dann mit falschem Wiz,
+<pb n="100" facs="101.jpg"/>Denn an dem Stral der Wahrheit nur allein,
+Entlodert jede Fackel des Genies.
+Die Freiheit scheint uns bald ein Jugendrausch,
+Es sinkt das Vaterland herab zum Staat,
+<num>70</num>Ein luftig Wort, das jeden Unsinn weiht,
+Ein leeres Gözenbild, dem Menschenmark
+Geopfert wird, dem Minotauros gleich!
+Der wahre Minotauros unsrer Zeit,
+Der in des Wahnes Labyrinthen thront.
+<num>75</num>Dem wahren abgestorben stirbt der Mensch
+Für jedes edlere Gefühl! Der Stral
+Der unser Haupt erhellet, wärmt das Herz!
+Wahrheit und Lieb entströmen einem Quell,
+Sind beide einer Sonne Licht und Glut.
+
+  <num>80</num>Ihr die mit treuem Herzen Wahrheit forscht,
+Ermüdet nicht! es sank so tief der Mensch,
+Weil er von solcher Höhe sank! er schleußt
+Dem Licht sein Auge das vom Himmel stralt.
+O prüft mit frommer Einfalt dieses Licht!
+<num>85</num>Mit Demut prüft es! Nicht durchs trübe Glaß
+<pb n="101" facs="102.jpg"/>Der Glosse; prüfet selbst das Wort des Herrn,
+Und flehet dem der Sonnen leuchten hieß,
+Der uns den heissen Durst nach Wahrheit gab,
+Bald wird sein Wort des Fusses Leucht’ euch sein,
+<num>90</num>Ein Licht auf eurem Weg, im Tod ein Licht!
+</poetry>
+</body>
+</text>
+
+<text id="stolbergf2026111311" lang="de">
+<head>
+  <title><num>XVII.</num>Das Ungeziefer</title>
+  <firstline>Kaum hatt’ ich meine Leier an die Wand</firstline>
+  <source href="https://www.digitale-sammlungen.de/en/view/bsb11939631?page=104" pages="102-110" facsimile-pages="104-112"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Obscoenae volucres!
+
+<right>Virgilivs.</right>
+</epigraph>
+<poetry>
+Kaum hatt’ ich meine Leier an die Wand
+Apollons aufgehängt um sein Geschoß
+Zu nehmen, als der Bogen schon erscholl.
+Ein schneller Hase ward vom schnellern Pfeil
+<num>5</num>Erreicht, es schüzte nicht den finstern Kauz
+Die nächtliche Behausung seiner Kluft.
+Die Schlange welche zischend schon den Kamm
+Im todten Zaun verbarg, erreichte noch
+Der Flammenpfeil, ihr krummer Rücken wand
+<num>10</num>Sich zagend in den Staub, der Eidechs sagt
+Sie habe noch im dürren Dorn gezischt.
+<pb n="103" facs="104.jpg"/>Das alte Weib im Pelz des Wolfes schlich
+Gelähmt von dannen, und zum erstenmal
+Von eigner Wunde blutig ließ der Wolf
+<num>15</num>Den Schaafpelz fallen den ein Staatsmann fand,
+Der aus dem Schulstaub sich ans Steuer schwang.
+Da rief ein Freund mir diese Worte zu:
+Laß ab von solcher Jagd, auf daß dir nicht
+Apollon zürne, dir die Leier nicht
+<num>20</num>Hinfort versage, weil du sein Geschoß
+Entweihtest, welches wohl den Püthon traf,
+Doch keine Schlange die im Staube kreucht.
+Den Hasen laß dem Junker, mag der Hirt
+Mit seinem treuen Fix den Wolf bestehn,
+<num>25</num>Geh du auf Tiger und auf Löwen zu!
+So sprach mein Freund, und mir gefiel sein Rath.
+Auch hab’ ich nicht der hohen Jagd geschont,
+Wie männiglich bewust, und werde nie
+Der Löwen schonen, ob die Fabel gleich
+<num>30</num>Der Wälder Herrschaft ihnen zugesteht.
+<pb n="104" facs="105.jpg"/>Was kümmert mich die Fabel? aber heut
+Mag Föbos Bogen an dem Stifte ruhn
+Bei seiner Leier; ein geringer Volk
+Als Haas und Kauz und Schlange reizet mich
+<num>35</num>Zur Neugier, und die Lust ganz Waffenlos
+Aus Truz der Löwenhölen einer mich
+Zu nahn, und mit geschliffnem Mikroskop
+Das Ungeziefer, das im gelben Fell
+Des Löwen weidet, und die Fliegen die
+<num>40</num>Sein Haupt umsummen zu beschaun — auf Deutsch,
+Die Schranzen die in Lüsten leben und
+In weichen Kleidern gehen, eines Blicks
+Zu würdigen, doch eines schnellen Blicks.
+Ich habe Flöhe wohl durchs Mikroskop
+<num>45</num>Gesehn, doch werd ich nicht wie Leuenhook
+Acht Tag und Nacht auf meinem Leibe sie
+In warmer Wolle hegen, um zu sehn
+Wie schnell das Ungeziefer sich vermehrt.
+<pb n="105" facs="106.jpg"/>  Wohlan, mit kaumbemerktem Uebergang
+<num>50</num>Komm ich zu Schranzen. — Diese kennen mich,
+Bei meinem Anblick wird sie roth und blaß,
+Wiewohl mir gegen sie kein herbes Wort
+Bisher entfiel, nur einst ein Seitenblick,
+Der kalt und treffend auf das Männchen glitt,
+<num>55</num>Daß ihm das Lächeln auf der Lippe Glanz
+Erstarrte, und im scheuen Blick der Stral,
+Geschmiedet an dem Spiegel, schnell erlosch.
+Er war gekommen Doris zu dem Tanz
+Zu fordern, die mit mir im Fenster stand.
+<num>60</num>Dem Spazen gleich der auf dem Kirschbaum nascht,
+Ward er durch einen Blick zurückgescheucht.
+Der arme Wicht! uns ließ er süssen Duft
+Des Biesems, und zum Tanze blieb ihm nur
+Die alte Phyllis, die das Wintergrün
+<num>65</num>Von ihren Reizen, einem Christbaum gleich,
+Mit buntem Band und leichten Federn schmückt,
+<pb n="106" facs="107.jpg"/>Und gelbe Aepfel unter Flitter hüllt.
+Französische Romane leihen ihr
+Gefühl, sie schmachtet der <span lang="fr">Marquise</span> nach,
+<num>70</num>Und sucht in jedem Fäntchen den <span lang="fr">abbé</span>
+Den Nebenbuhler des <span lang="fr">Vicomte</span>, der
+Großmüthig im Duel dem <span lang="fr">chevalier</span>
+Das Leben schenkte, und im zwölften Theil
+Des Buchs den großen Milord G. erschlug.
+
+  <num>75</num>Dort wanket ihrer Mutter Zeitgenoß,
+Ein Greis der graues Haar mit Schanden birgt.
+Vom Pagen schwang er sich zum höchsten Rang,
+Was sag’ ich schwang? die Raupe schwingt sich nicht!
+In mancher Krümmung wand er sich hinauf,
+<num>80</num>Schon kreucht er um des vierten Königs Thron.
+Der erste gab ihm eine Fahn’ und starb.
+Er witterte den Krieg, verließ das Heer,
+Und diente als Merkur dem neuen Zeus,
+Der nie als Schwan, doch unverwandelt oft
+<pb n="107" facs="108.jpg"/><num>85</num>Als Stier erschien, die Hörner fehlten nicht.
+Ein frommer König folgte diesem nach.
+Die bunte Raupe spann in Heuchelei
+Sich ein, spann keine Seide zwar, doch lag
+Sie sicher bis der fromme König starb.
+<num>90</num>Er flatterte verjünget nun empor,
+Und sonnte sich in seines Königs Gunst.
+Er sonnet noch im hohen Alter, gleich
+Dem Molkendiebe der im späten Herbst,
+Im lauen Stral am glatten Fenster klebt.
+  <num>95</num>Ein kleines feistes Herrchen watschelt dort.
+Der Stern, der über seinem Wanste blizt,
+Ward theur erkauft durch sauren Frohn; der Harm,
+Der Neid, die Angst für einen schnellen Fall,
+Sind angeschrieben im Gesicht, wiewohl
+<num>100</num>Er seine rothen Braunen aufwärts zieht,
+Wenn er zur hohen Tafel geht; er jagt
+Den ganzen Morgen neuen Schwänken nach,
+Und achtets nicht gering ein Hofnarr sein,
+<pb n="108" facs="109.jpg"/>Ein feiger Speichellecker seines Herrn,
+<num>105</num>Des Günstlings und des Aftergünstlings Sklav.
+Er weiß es daß die Staffeln seiner Gunst
+Auf Koth sich gründen, daß der höchste Tritt
+Umsonst ihm eine neue Sprosse beut,
+Wenn unter ihm die schwanke Leiter wankt.
+<num>110</num>O wäre Seladon so klug wie er,
+Er stünde noch; ein Aftergünstling trieb
+Ihn Stufenweiß zurück; zwar Ehrenvoll
+Ward aus dem Glanz des Hofes Seladon
+In der Geschäfte Schatten hingebannt.
+<num>115</num>Er der nicht <w>scheinen</w> konnte, sollte <w>sein</w>,
+Und purzelte nun ohne Stoß herab.
+Was soll er thun? er nimmt zum zweitenmal
+Zum <w>scheinen</w> seine Zuflucht, schwazt von Pflicht
+Und Ehre, dünkt des Staates Opfer sich,
+<num>120</num>Sich jenem Edlen gleich dem Unverstand
+Und Trug das Steuer nahmen, eh das Schiff
+Mit vollen Segeln auf die Sandbank fuhr.
+<pb n="109" facs="110.jpg"/>  Noch mehr veracht’ ich jenen welcher oft
+Der Deutschen Treu im runden Maule führt,
+<num>125</num>Nachlässig schlendert, immer schlecht und recht
+Zu scheinen strebt, und tiefer nur den Schelm
+In feile Einfalt hüllt, dem Räuber gleich
+Der Mordgewehr im Bettelranzen trägt.
+
+  Daß mancher Schalk bei Hofe seine Kunst
+<num>130</num>Versteht, manch feiner Marinelli schlau
+Auf Menschenkentniß und auf Frevel baut,
+Das glaub ich gern, doch sah ich keinen noch.
+Doch Affen, schmeichelnd, boshaft, schadenfroh,
+Und grüne Fliegen, summend um das Aas
+<num>135</num>Des faulen Staates, sah ich tausendmal,
+Und bis zum Eckel schon das erstemal.
+<pb n="110" facs="111.jpg"/>  Ich kann nicht mehr — hier ist das Mikroskop,
+Hier das Insektenzänglein — reiche mir
+Die Fliegenklappe. Affen, bleibt mir weit
+<num>140</num>Vom Leib’, ich hohle sonst die Geißel mir!
 </poetry>
 </body>
 </text>

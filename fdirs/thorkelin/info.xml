@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thorkelin" country="un" lang="da" type="poet" nationality="is">
+  <name>
+    <firstname>Grímur Jónsson</firstname>
+    <lastname>Thorkelin</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1752-10-08</date>
+      <place>Bær ved Hrútafjörður, Island</place>
+    </born>
+    <dead>
+      <date>1829-03-04</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>is-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q3480300</wikidata>
+    <wikipedia-da>Grímur Jónsson Thorkelin</wikipedia-da>
+    <wikipedia-en>Grímur Jónsson Thorkelin</wikipedia-en>
+    <wikipedia-fr>Grímur Jónsson Thorkelin</wikipedia-fr>
+    <gravsted-dk>grimurthorkelin</gravsted-dk>
+    <viaf>49249228</viaf>
+    <gnd>1018682392</gnd>
+    <biografisk-leksikon-lex-dk>G.J._Thorkelin</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>TGJThorkelin</danskforfatterleksikon-dk>
+  </identifiers>
+  <!-- Livsdata og identitet kontrolleret mod https://runeberg.org/dbl/17/0260.html. -->
+  <!-- Eksterne id’er kontrolleret mod Wikidata Q3480300, herunder navne, fødselsdata og dødsår, 2026-11-13. -->
+</person>
