@@ -75,6 +75,11 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   blanklinjer, hvor trykket viser ekstra lodret afstand. OCR-opdelingen må ikke
   styre strukturen; se `docs/xml-work-format.md` og
   `docs/facsimile-korrektur.md`;
+- adskil altid digtets afsluttende forfatter- eller oversættersignatur fra
+  teksten med én blank XML-linje. Ved flerlinjede signaturer sættes blanklinjen
+  før hele signaturblokken; behold linjerne i blokken samlet og bevar
+  signaturens placering og typografi. Kontrollér også centrerede signaturer
+  og signaturer uden `<right>`;
 - markér Kalliopes egne redaktionelle noter og fodnoter med `editorial="true"`,
   også forlægsangivelser og oversættelseshenvisninger. Attributten kombineres
   med en eventuel `type`; tilføj den ikke til kildens trykte noter eller ved

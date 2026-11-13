@@ -447,7 +447,7 @@ describe('tracked work corpus', () => {
     expect(textFollowsNoteIssues).toEqual([]);
   });
 
-  it('does not assign first lines to prose-only texts', () => {
+  it('does not assign first lines to titled prose-only texts', () => {
     expect(textStructureIssues).toEqual([]);
   });
 

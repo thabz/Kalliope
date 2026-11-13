@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hjorth" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Lorentz Andreas</firstname>
+    <lastname>Hjorth</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-12-11</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1838-02-01</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>

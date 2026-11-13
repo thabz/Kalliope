@@ -16,11 +16,6 @@
     <!-- Bind 62. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:27:30Z"/>
   </proofreadings>
-  <notes>
-    <note editorial="true">Bind 59: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-01 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_001">↬</a>, 1800-03 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_002">↬</a>. 231 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
-    <note editorial="true">Bind 60: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-04 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_003">↬</a>, 1800-06 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_004">↬</a>. 248 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
-    <note editorial="true">Bind 62: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-10 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_005">↬</a>, 1800-11 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_006">↬</a>, 1800-12 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_007">↬</a>. 383 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
-  </notes>
   <pictures>
     <picture src="1800-minerva-59-p1.jpg" type="titlepage" primary="true">
       <transcription>Maanedskriftet / Minerva. // Januari, Februari og Marti / 1800. // Udgivet / ved / Knud Lyne Rahbek, / forhen Professor ved Kiøbenhavns Universitet. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz. / Kongelig og Universitets-Bogtrykker.</transcription>
@@ -35,6 +30,7 @@
       <transcription>Maanedskriftet / Minerva. // October, November og December, / 1800. // Udgivet / ved / Knud Lyne Rahbek, / Professor // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz. / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
   </pictures>
+  <!-- Bind 59: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-01 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_001, 1800-03 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_002. 231 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd59" href="https://books.google.com/books?id=Ll43AAAAMAAJ" facsimile="1800-minerva-59.pdf" facsimile-pages-num="406">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
@@ -44,6 +40,7 @@
     <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1800</year>
   </source>
+  <!-- Bind 60: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-04 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_003, 1800-06 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_004. 248 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd60" href="https://books.google.com/books?id=G183AAAAMAAJ" facsimile="1800-minerva-60.pdf" facsimile-pages-num="392">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
@@ -62,6 +59,7 @@
     <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1800</year>
   </source>
+  <!-- Bind 62: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1800-10 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_005, 1800-11 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_006, 1800-12 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880017_007. 383 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd62" href="https://books.google.com/books?id=OmA3AAAAMAAJ" facsimile="1800-minerva-62.pdf" facsimile-pages-num="396">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>

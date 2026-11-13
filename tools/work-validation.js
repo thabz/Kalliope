@@ -190,7 +190,12 @@ const collectTextStructureIssues = (filename, document) => {
   Array.from(document.getElementsByTagName('text')).forEach(text => {
     const head = directChild(text, 'head');
     const body = directChild(text, 'body');
-    if (head == null || body == null || directChild(head, 'firstline') == null) {
+    if (
+      head == null ||
+      body == null ||
+      directChild(head, 'firstline') == null ||
+      directChild(head, 'title') == null
+    ) {
       return;
     }
 
@@ -203,7 +208,7 @@ const collectTextStructureIssues = (filename, document) => {
     ) {
       const textId = text.getAttribute('id') ?? '(missing id)';
       issues.push(
-        `${filename}: text ${textId} has only <prose> in <body> and must not have <firstline> in <head>.`,
+        `${filename}: text ${textId} has a title and only <prose> in <body> and must not have <firstline> in <head>.`,
       );
     }
   });

@@ -93,7 +93,7 @@ describe('work corpus support', () => {
     });
   });
 
-  it('rejects first lines on prose-only text bodies', () => {
+  it('rejects first lines on titled prose-only text bodies', () => {
     const xml = `
       <kalliopework>
         <text id="prose-text">
@@ -104,8 +104,17 @@ describe('work corpus support', () => {
     `;
 
     expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([
-      'work.xml: text prose-text has only <prose> in <body> and must not have <firstline> in <head>.',
+      'work.xml: text prose-text has a title and only <prose> in <body> and must not have <firstline> in <head>.',
     ]);
+  });
+
+  it('allows an untitled prose text to use its first line as its title', () => {
+    const xml = `<kalliopework><text id="prose-text">
+      <head><firstline>Første linje</firstline></head>
+      <body><prose>Første linje i teksten.</prose></body>
+    </text></kalliopework>`;
+
+    expect(collectTextStructureIssues('work.xml', parseWorkXml(xml))).toEqual([]);
   });
 
   it('allows first lines when the body contains poetry', () => {
