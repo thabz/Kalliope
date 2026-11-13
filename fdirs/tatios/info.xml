@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tatios" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <firstname>Achilleus</firstname>
+    <lastname>Tatios</lastname>
+    <alternative>Achilles Tatius</alternative>
+    <christened>Ἀχιλλεὺς Τάτιος</christened>
+  </name>
+  <!-- Livsdata er ikke sikkert bestemt; Salmonsens datering registreres ikke som fødsels- eller dødsår. -->
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>grc-hellenistisk-og-senantik-litteratur</literary-periods>
+</person>
