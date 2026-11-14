@@ -8,6 +8,7 @@ import { analyzeStanzaGeometry } from './analyze-stanza-geometry.js';
 import { analyzeStanzas } from './analyze-stanzas.js';
 import { directChild, isPoetryBlock, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
 import {
+  extractPoetryBlocks,
   loadTsvVariants,
   preparePoetryGeometry,
 } from './prepare-poetry-geometry.js';
@@ -167,6 +168,9 @@ const geometrySummary = preparation => ({
 });
 
 const analyzeWholeWork = (xml, options = {}) => {
+  const runInByBlock = new Map(extractPoetryBlocks(xml).map(block => [
+    `${block.textId}:${block.blockIndex}`, block.runInUnits,
+  ]));
   const preparation = options.variantsByFacsimile == null
     ? null
     : preparePoetryGeometry({
@@ -178,6 +182,7 @@ const analyzeWholeWork = (xml, options = {}) => {
     block,
   ]));
   const poems = poetryBlocks(xml).map(poem => {
+    const runInUnits = runInByBlock.get(`${poem.text_id}:${poem.block_index}`) ?? [];
     const stanza = analyzeStanzas({ body: poem.body });
     const indentation = analyzeIndentation({
       body: poem.body,
@@ -237,8 +242,19 @@ const analyzeWholeWork = (xml, options = {}) => {
       page_break_nonum_starts: poem.page_break_nonum_starts,
       stanza,
       indentation,
+      ...(runInUnits.length === 0 ? {} : {
+        run_in: { unit_count: runInUnits.length, units: runInUnits },
+      }),
       ...(geometry == null ? {} : { geometry }),
       candidates: [
+        ...(runInUnits.length === 0 ? [] : [{
+          source: 'wrapper',
+          type: 'run_in_structure_review',
+          unit_count: runInUnits.length,
+          segment_count: runInUnits.reduce((sum, unit) => sum + unit.segments.length, 0),
+          structure_sha256: sha256(JSON.stringify(runInUnits)),
+          reason: 'Løbende strofer kræver selvstændig facsimilekontrol af fysiske satslinjer, sidefragmenter og førstelinjeindryk; tomme verslinjelister er ikke strukturbevis.',
+        }]),
         ...stanza.candidates.map(candidate => ({
           source: 'stanza',
           ...candidate,

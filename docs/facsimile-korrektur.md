@@ -54,6 +54,29 @@ mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
 læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet
 for at blive skjult med et gæt.
 
+## Løbende strofer i `<wrap>`
+
+En trykt strofe i løbende sats er ikke én verslinje. Helværksanalysen
+registrerer derfor `<wrap>` særskilt som `run_in.units`, med førstelinjeindryk
+og ét tekstfragment per fysisk facsimileside. Et sideskift i et ord forbliver
+inde i ordet. Analysen udsender en `run_in_structure_review`-kandidat;
+en tom liste med observerede verslinjer dokumenterer ikke disse strofer.
+
+Ved slutcheckpointet kræver hver sådan blok desuden
+`visual_run_in_units` i sin uafhængige visuelle strukturkontrol. Listen følger
+XML'ens stroferækkefølge og har `unit_index`, `indentation` og `segments`.
+Hvert segment skal angive `facsimile`, et positivt heltal i
+`physical_line_count` samt kildekontrollerede `first_text` og `last_text`.
+Optæl de faktisk trykte satslinjer på billedet, ikke moderne vers rekonstrueret
+fra skråstreger. Udelad kustoder og sidehoveder. En strofe, der krydser et
+sideskift, har særskilte linjetal og ordankre på begge sider.
+
+Kontrollen sammenholder strofer, indryk og sidefragmenter med XML og afviser
+manglende poster og tomme linje-/ordankre. Den attesterer ikke selve den
+visuelle optællings rigtighed; den skal dokumenteres med direkte
+facsimilekontrol. Den almindelige verslinjegeometri må fortsat ikke bruges som
+bevis for `<wrap>`-indhold, som dens linjemodel ikke matcher.
+
 ## 1. Afgræns arbejdet
 
 Læs altid `AGENTS.md`, `docs/style-guide.md` og den specialdokumentation, som

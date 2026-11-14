@@ -12,6 +12,7 @@ import {
   serializeVerseLines,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
+import { extractRunInUnits } from './run-in-structure.js';
 
 const minimumMatchSimilarity = 0.48;
 const ambiguousMatchMargin = 0.035;
@@ -203,6 +204,7 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
   return {
     lines,
     equipment,
+    runInUnits: extractRunInUnits({ serialized, startingFacsimile }),
     observedBoundaries: [...new Set(observedBoundaries)],
     issues,
     endingFacsimile: currentFacsimile,
