@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hammerich" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Hammerich</lastname>
+    <fullname>Peter Frederik Adolph Hammerich</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1809-08-09</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1877-02-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <!-- Livsdata og fuldt navn: DBL1 VI (1892), s.543–548, https://runeberg.org/dbl/6/0545.html . -->
+  <identifiers>
+    <danskforfatterleksikon-dk>HFrederikHammerichf1809</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

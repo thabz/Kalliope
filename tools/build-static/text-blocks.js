@@ -8,18 +8,34 @@ export const buildTextBlocks = (text, collected, context = {}) => {
     if (node.nodeName === 'front') return [node];
     if (node.nodeName === 'body') {
       return (getChildren(node) ?? []).filter(block =>
-        ['poetry', 'prose', 'epigraph', 'castList', 'text'].includes(block.nodeName));
+        ['poetry', 'prose', 'epigraph', 'castList', 'text', 'pb'].includes(block.nodeName));
     }
     return [];
   });
-  return blocks.flatMap(block => {
+  let pageBreakPrefix = '';
+  const withPageBreaks = xml => {
+    const prefix = pageBreakPrefix;
+    pageBreakPrefix = '';
+    const leadingLines = /^(?:[ \t]*\r?\n|[ \t]*<!--[\s\S]*?-->[ \t]*(?:\r?\n|$))*/u;
+    return xml.replace(leadingLines, leading => {
+      if (prefix !== '' && xml.slice(leading.length).trim().length === 0) {
+        throw new Error('A body page break must precede content.');
+      }
+      return leading + prefix;
+    });
+  };
+  const result = blocks.flatMap(block => {
+    if (block.nodeName === 'pb') {
+      pageBreakPrefix += block.toString();
+      return [];
+    }
     if (block.nodeName === 'text') {
       const id = safeGetAttr(block, 'id');
       const poetry = getChildByTagName(getChildByTagName(block, 'body'), 'poetry');
       return [{
         type: 'poetry',
         anchor: id,
-        lines: htmlToXml(contextPoetry(safeGetInnerXML(poetry), block),
+        lines: htmlToXml(withPageBreaks(contextPoetry(safeGetInnerXML(poetry), block)),
           collected, true, { ...context, textId: id, blockType: 'poetry' }),
         options: {
           fontSize: safeGetAttr(block, 'context-font-size') ?? safeGetAttr(poetry, 'font-size'),
@@ -31,7 +47,7 @@ export const buildTextBlocks = (text, collected, context = {}) => {
     const rawBlock = type === 'castList' ? block.toString() : safeGetInnerXML(block);
     return {
       type,
-      lines: htmlToXml(rawBlock,
+      lines: htmlToXml(withPageBreaks(rawBlock),
         collected, type === 'poetry', { ...context, blockType: type }),
       options: {
         fontSize: safeGetAttr(block, 'font-size'),
@@ -39,6 +55,10 @@ export const buildTextBlocks = (text, collected, context = {}) => {
       },
     };
   });
+  if (pageBreakPrefix !== '') {
+    throw new Error('A body page break must precede a content block.');
+  }
+  return result;
 };
 
 // Presentation belonging to the surrounding drama never changes the shared verse.

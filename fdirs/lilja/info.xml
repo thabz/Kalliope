@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lilja" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Nils</firstname>
+    <lastname>Lilja</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1808</date>
+    </born>
+    <dead>
+      <date>1870</date>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-13">
+    <checked-source id="salmonsen2">Bind 15, register og de relevante alfabetiske facsimilesider er undersøgt uden personopslag.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind 26, register og de relevante alfabetiske facsimilesider er undersøgt uden personopslag.</checked-source>
+    <checked-source id="salmonsen4">Register og de relevante alfabetiske facsimilegrænser er undersøgt uden personopslag.</checked-source>
+    <note>Svensk forfatter. DBL og de dansk-norsk-islandske reserveleksika er ikke anvendt, da de ikke er relevante for dette forfatterskab. Den nye Salmonsens opslag om Gertrud Lilja vedrører en anden person.</note>
+  </biography-status>
+  <!-- Identitet og livsår: https://litteraturbanken.se/författare/LiljaN og https://www.ipni.org/a/5585-1 . Nordisk Familjebok 16, sp.499, trykker 18. oktober 1808; andre kilder har 17. oktober. Kun de uafhængigt bekræftede livsår registreres. -->
+</person>

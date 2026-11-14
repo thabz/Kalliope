@@ -10,6 +10,7 @@ import {
   parseXml,
   isPoetryBlock,
   serializeVerseLines,
+  splitBodyPages,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
 
@@ -230,6 +231,14 @@ const extractPoetryBlocks = xml => {
     );
     let blockIndex = 0;
     const visit = (node, stream) => {
+      if ((node.nodeName === 'text' || node.nodeName === 'prose') &&
+        directChild(node, 'head') != null && directChild(node, 'body') != null) {
+        // The child is analyzed separately; its last physical page still
+        // determines where the surrounding prose or poetry resumes.
+        const lastPage = splitBodyPages(directChild(node, 'body'), { noteNeutral: true }).at(-1);
+        stream.facsimile = lastPage?.transition?.facsimile ?? stream.facsimile;
+        return;
+      }
       if (node.nodeName === 'pb') {
         stream.facsimile = node.getAttribute('facs') ?? stream.facsimile;
         return;
@@ -259,6 +268,9 @@ const extractPoetryBlocks = xml => {
       elementChildren(node).forEach(child => visit(child, stream));
     };
     visit(body, { facsimile: startingFacsimile });
+    // Title and metadata footnotes may contain verse too. Their page stream
+    // starts independently of the body's ending page.
+    visit(head, { facsimile: startingFacsimile });
   });
   return blocks;
 };

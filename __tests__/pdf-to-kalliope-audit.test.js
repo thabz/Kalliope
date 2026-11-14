@@ -6,6 +6,7 @@ import {
   visibleLines,
 } from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
 import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { extractPoetryBlocks } from '../.agents/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js';
 import { analyzeIndentation } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-indentation.js';
 import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
 import {
@@ -63,6 +64,71 @@ Sidste linje</poetry></body>
 </text>
 </workbody>
 </kalliopework>`;
+
+describe('embedded poems in a continuing prose text', () => {
+  const xml = `<kalliopework><workhead>
+<source facsimile-pages-offset="1">Fixture</source></workhead><workbody>
+<text id="parent"><head><source pages="10-12"/></head><body>
+<poetry>Forvers</poetry>
+<prose><pb n="11" facs="011.jpg"/></prose>
+<text id="child"><head><title>Metadata, ikke brødtekst</title>
+<source pages="11-12"/></head><body><poetry>Barnets første linje
+<pb n="12" facs="012.jpg"/>Barnets sidste linje</poetry></body></text>
+<poetry>Eftervers</poetry></body></text>
+<text id="next"><head><source pages="12"/></head>
+<body><poetry>Næste digt</poetry></body></text>
+</workbody></kalliopework>`;
+
+  it('analyzes the child once under its own ID and resumes on its last page', () => {
+    const analysis = analyzeWholeWork(xml);
+    expect(analysis.poems.map(poem => [poem.text_id, poem.block_index]))
+      .toEqual([['parent', 1], ['parent', 2], ['child', 1], ['next', 1]]);
+    const blocks = extractPoetryBlocks(xml);
+    expect(blocks.map(block => [block.textId, block.blockIndex]))
+      .toEqual([['parent', 1], ['parent', 2], ['child', 1], ['next', 1]]);
+    expect(blocks[1].lines[0].facsimile).toBe('012.jpg');
+    expect(blocks[2].lines.map(line => line.facsimile)).toEqual(['011.jpg', '012.jpg']);
+  });
+
+  it('inventories contextual bodies without metadata or false backwards jumps', () => {
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false }).map(row => ({
+      ...row, status: 'reviewed', reviewer: 'independent', disposition: 'Kontrolleret mod facsimile',
+      typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelser',
+    }));
+    expect(inventory.find(row => row.text_id === 'parent' && row.printed_page === '11'))
+      .toMatchObject({ first_line: 'Barnets første linje' });
+    expect(inventory.find(row => row.text_id === 'child'))
+      .toMatchObject({ parent_text_id: 'parent' });
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+    const backwards = xml.replace('Næste digt', '<pb n="11" facs="011.jpg"/>Næste digt');
+    expect(auditPageInventory({ xml: backwards, inventory }).issues)
+      .toEqual(expect.arrayContaining([expect.objectContaining({ rule: 'decreasing-facsimile' })]));
+  });
+
+  it('includes verse in title footnotes under the owning text and its own page stream', () => {
+    const withTitleNote = xml.replace('Metadata, ikke brødtekst',
+      'Titel<footnote><poetry>Notens første vers fom\n<pb n="12" facs="012.jpg"/>Notens sidste vers</poetry></footnote>');
+    expect(analyzeWholeWork(withTitleNote).poems.filter(poem => poem.text_id === 'child')
+      .map(poem => poem.block_index)).toEqual([1, 2]);
+    const blocks = extractPoetryBlocks(withTitleNote).filter(block => block.textId === 'child');
+    expect(blocks.map(block => block.blockIndex)).toEqual([1, 2]);
+    expect(blocks[1].lines.map(line => line.facsimile)).toEqual(['011.jpg', '012.jpg']);
+    expect(blocks[1].lines.map(line => line.text)).toEqual(['Notens første vers fom', 'Notens sidste vers']);
+    expect(historicalOcrCandidates({ xml: withTitleNote })).toEqual(expect.arrayContaining([
+      expect.objectContaining({ text_id: 'child', facsimile: '011.jpg', match: 'fom' }),
+    ]));
+  });
+
+  it('resumes after a child whose physical transition is recorded only in a note', () => {
+    const noteOnlyPageBreak = xml.replace(
+      '<pb n="12" facs="012.jpg"/>Barnets sidste linje',
+      '<footnote>Noten begynder<pb n="12" facs="012.jpg"/>og fortsætter.</footnote>Barnets sidste linje',
+    );
+    const blocks = extractPoetryBlocks(noteOnlyPageBreak);
+    expect(blocks[1].lines[0].text).toBe('Eftervers');
+    expect(blocks[1].lines[0].facsimile).toBe('012.jpg');
+  });
+});
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
   it('inventories and checks a standalone cast list without a body', () => {

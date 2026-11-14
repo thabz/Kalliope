@@ -24,7 +24,7 @@ const stableAnchor = (line, column) => {
   return line.slice(start, column + 48).trim();
 };
 
-const ocrPageStreams = (body, initialPage) => {
+const ocrPageStreams = (body, initialPage, head = null) => {
   const segments = splitBodyPages(body, { noteNeutral: true }).map((page, index) => ({
     ...page,
     metadata: index === 0 ? initialPage : page.transition,
@@ -54,6 +54,7 @@ const ocrPageStreams = (body, initialPage) => {
     Array.from(node.childNodes ?? []).forEach(child => visit(child, stream));
   };
   visit(body, { metadata: initialPage });
+  if (head != null) visit(head, { metadata: initialPage });
   return segments;
 };
 
@@ -72,7 +73,7 @@ const historicalOcrCandidates = ({ xml, inventory = null }) => {
     const inventoryRows = byText.get(textId) ?? [];
     const body = directChild(entry, 'body') ?? directChild(entry, 'front');
     if (body == null) continue;
-    const pages = ocrPageStreams(body, inventoryRows[0] ?? {});
+    const pages = ocrPageStreams(body, inventoryRows[0] ?? {}, directChild(entry, 'head'));
     const pageOccurrences = new Map();
     pages.forEach((page, pageIndex) => {
       const facsimile = page.metadata?.facsimile;

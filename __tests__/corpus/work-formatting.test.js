@@ -4,6 +4,39 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it.each(['text', 'poetry', 'prose', 'epigraph', 'castList'])('allows page-marker prefixes before a %s block', block => {
+    const xml = `<pb facs="001.jpg"/><pb n="3" facs="002.jpg"/><${block}>\n</${block}>\n`;
+    expect(structuralTagsOutsideColumnZero(xml)).toEqual([]);
+  });
+
+  it('still rejects an indented page-marker prefix and a prefix before metadata', () => {
+    for (const xml of ['  <pb facs="001.jpg"/><text>\n</text>\n', '<pb facs="001.jpg"/><head>\n</head>\n']) {
+      expect(structuralTagsOutsideColumnZero(xml)).not.toEqual([]);
+    }
+  });
+
+  it.each([
+    '<head><title>Titel</title></head>',
+    '<head>\n<title>Titel</title>\n<source pages="1"/></head>',
+    '<workhead><title>Værk</title></workhead>',
+  ])('preserves body whitespace after compact metadata: %s', metadata => {
+    const body = `<body>
+<poetry>
+Første vers
+    Indrykket vers
+
+Næste strofe
+</poetry>
+<prose>
+Første afsnit.
+    Indrykket afsnit.
+</prose>
+</body>\n`;
+    const formatted = formatWorkXml(`${metadata}\n${body}`);
+    expect(formatted).toContain(body);
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
   it('preserves verse indentation and page markers in metadata notes', () => {
     const citation = `<footnote>Indledning.
 <poetry lang="de">

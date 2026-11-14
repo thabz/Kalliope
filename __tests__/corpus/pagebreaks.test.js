@@ -30,8 +30,9 @@ describe('page-break markup', () => {
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
   });
 
-  it('allows a source-page transition in a title footnote', () => {
-    const xml = '<kalliopework><workhead><pagebreaks/></workhead><workbody><text><head><title>Digt<footnote>Første side<pb facs="002.jpg"/>Anden side</footnote></title></head><body><poetry>Vers</poetry></body></text></workbody></kalliopework>';
+  it.each(['text', 'section'])('allows a source-page transition in a %s heading footnote', entry => {
+    const content = entry === 'text' ? '<body><poetry>Vers</poetry></body>' : '<content/>';
+    const xml = `<kalliopework><workhead><pagebreaks/></workhead><workbody><${entry}><head><title>Digt<footnote>Første side<pb facs="002.jpg"/>Anden side</footnote></title></head>${content}</${entry}></workbody></kalliopework>`;
     expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
     const invalid = xml.replace('<footnote>', '').replace('</footnote>', '');
     expect(collectPageBreakIssues('work.xml', invalid)).toContain(

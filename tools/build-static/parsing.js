@@ -153,7 +153,7 @@ const extractTitle = (head, type) => {
   if (title == null || title.trim().length === 0) {
     return null;
   }
-  const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
+  const parts = title.match(/<num>([^<]*)<\/num>(.*)$/s);
   if (parts != null && parts[1].trim().length > 0) {
     return {
       prefix: parts[1],
@@ -162,7 +162,7 @@ const extractTitle = (head, type) => {
   } else if (parts != null) {
     return { title: parts[2] };
   }
-  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/);
+  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/s);
   if (emptyNum != null) {
     return { title: emptyNum[1] };
   } else {

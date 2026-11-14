@@ -70,6 +70,26 @@ describe('Check workfiles', () => {
     }
   });
 
+  it('restores a parent exception after a nested text without exempting children or siblings', () => {
+    const data = [
+      '<kalliopework><workbody><text id="parent" ignore-tests="smaa"><body>',
+      '<prose>blaaagtig</prose>',
+      '<text id="child"><body><prose>',
+      'blaaagtig',
+      '</prose></body></text>',
+      '<!-- </text> -->',
+      '<prose>blaaagtig</prose>',
+      '</body></text>',
+      '<text id="sibling"><body><prose>',
+      'blaaagtig',
+      '</prose></body></text></workbody></kalliopework>',
+    ].join('\n');
+    const issues = findPoemLineFindingsInText({
+      file: 'test.xml', data, lang: 'da', shouldUseModernFrenchPunctuationSpacing: false,
+    });
+    expect(issues.filter(issue => issue.rule === 'smaa').map(issue => issue.line)).toEqual([4, 10]);
+  });
+
   it('allows mmm in a correction note marked with a closing bracket', () => {
     const issues = findPoemLineFindingsInText({
       file: 'fdirs/test/notes.xml',

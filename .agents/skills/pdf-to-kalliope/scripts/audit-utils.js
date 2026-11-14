@@ -10,6 +10,18 @@ const elementChildren = (node, name = null) =>
 
 const directChild = (node, name) => elementChildren(node, name)[0] ?? null;
 
+const containingTextEntry = node => {
+  let parent = node?.parentNode;
+  while (parent != null) {
+    if ((parent.nodeName === 'text' || parent.nodeName === 'prose') &&
+      directChild(parent, 'head') != null && directChild(parent, 'body') != null) {
+      return parent;
+    }
+    parent = parent.parentNode;
+  }
+  return null;
+};
+
 const parseXml = xml => new DOMParser().parseFromString(xml, 'text/xml');
 
 const serializeChildren = node => {
@@ -149,7 +161,9 @@ const facsimileBeforeFirstPb = (source, workSource, firstPb, printedPage) => {
 };
 
 const splitBodyPages = (body, { noteNeutral = false } = {}) => {
-  const serialized = noteNeutral ? serializeWithoutNoteText(body) : serializeChildren(body);
+  // Embedded texts render their bodies in context, but not their metadata.
+  const serialized = (noteNeutral ? serializeWithoutNoteText(body) : serializeChildren(body))
+    .replace(/<head\b[^>]*>[\s\S]*?<\/head>/gu, '');
   const pattern = /<pb\b([^>]*)\/>/g;
   const pages = [];
   let cursor = 0;
@@ -227,6 +241,9 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
       rows.push({
         work_file: workFile,
         text_id: textId,
+        ...(containingTextEntry(entry) == null ? {} : {
+          parent_text_id: containingTextEntry(entry).getAttribute('id'),
+        }),
         printed_page: printedPage,
         facsimile: slot.facsimile ?? incrementFacsimile(firstFacsimile, index),
         first_line: lines[0] ?? '',
@@ -262,7 +279,9 @@ const auditPageInventory = ({ xml, inventory }) => {
     if (actualKeys.has(key)) issues.push({ rule: 'duplicate-xml-page', key });
     actualKeys.add(key);
     const facsimileNumber = /^(\d+)\.jpg$/i.exec(row.facsimile ?? '')?.[1];
-    if (facsimileNumber != null) {
+    // Parent rows already include embedded bodies in physical page order.
+    // A second inventory of the child must not rewind the surrounding stream.
+    if (facsimileNumber != null && row.parent_text_id == null) {
       const number = Number(facsimileNumber);
       if (previousFacsimile != null && number < previousFacsimile.number && !orderExceptions.has(key)) {
         issues.push({ rule: 'decreasing-facsimile', key, previous: previousFacsimile.label, actual: row.facsimile });
@@ -341,6 +360,7 @@ const sha256 = value => crypto.createHash('sha256').update(value).digest('hex');
 export {
   auditPageInventory,
   buildPageInventory,
+  containingTextEntry,
   directChild,
   elementChildren,
   inheritedNotePageBreaks,
