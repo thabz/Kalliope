@@ -1637,3 +1637,20 @@ forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
 Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker med scriptet i
 `add-kalliope-person` mod et opdateret JSONL-korpus, så mulige opfyldelser
 opdages. Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
+
+## Udførlige titelpartier
+
+Et valgfrit `<titleblock>` efter `<title>` i `<head>` eller `<workhead>`
+erstatter visningen af titel, overtitel og undertitel på læsesiden.
+`<title>` bevarer den normaliserede titel til søgning og navigation.
+Titelblokken gengiver kildens versaler og typografi.
+
+Blokken indeholder ordnede `<part type="main|sub|dedication|byline|tune|imprint">`.
+Hver del indeholder enten `<line>` til bevidst linjedeling eller `<p>` til
+sammenhængende prosa. Rent typografiske orddelinger samles. `align` kan være
+`left`, `center` eller `right` (standard `left`); `size` kan være `small`,
+`normal` eller `large` (standard `normal`). Eksisterende inline-typografi,
+sprogmarkeringer og fodnoter understøttes. De erstattede subtitle/suptitle-
+felter udelades, så den fulde gengivelse kun vedligeholdes ét sted.
+Buildets tekst- og værk-JSON har et valgfrit `title_block` med delene og deres
+indholdsblokke; det offentlige JSONL-format er uændret.

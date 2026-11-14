@@ -206,7 +206,7 @@ const titleText = title => {
 };
 
 const countHeadingFootnotes = head =>
-  ['title', 'subtitle'].reduce((count, tag) => {
+  ['titleblock', 'title', 'subtitle'].reduce((count, tag) => {
     const heading = getChildByTagName(head, tag);
     return count + getElementsByTagName(heading, 'footnote').length;
   }, 0);
@@ -390,4 +390,18 @@ export {
   get_picture,
   get_local_picture_content,
   validate_picture_attrs,
+};
+
+export const extractTitleBlock = (head, collected, context = {}) => {
+  const block = getElementByTagName(head, 'titleblock');
+  if (block == null) return null;
+  return getElementsByTagName(block, 'part').map(part => ({
+    type: part.getAttribute('type'),
+    align: part.getAttribute('align') ?? 'left',
+    size: part.getAttribute('size') ?? 'normal',
+    blocks: Array.from(part.childNodes).filter(node => node.nodeType === 1).map(node => ({
+      type: node.nodeName,
+      content: htmlToXml(safeGetInnerXML(node), collected, node.nodeName === 'line', context),
+    })),
+  }));
 };
