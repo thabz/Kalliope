@@ -20,7 +20,7 @@
       <transcription>Et / Hundrede Udvalde / Danske Viser / Om / Allehaande merkelige Krigs- / Bedrivt og anden selsom Eventyr / Som sig her udi Riget / Ved / Gamle Kemper/ Navnkun- / dige Konger/ og ellers fornemme / Personer begivet haver/ af Arilds / Tid til denne nærværende Dag. / Forøgede med det / Andet Hundrede Viser / Om / Danske Konger / Kæmper og Andre / Samt hosføjede Antegnelser / Til Lyst og Lærdom. / Med Kongl. Majest. allernaadigste Frjhed. // Kiøbenhavn / Forlagde og Trykte hos Joh. Phil. Bockenhoffer / Kongl. Majest. og Univ. Bogtrycker/ Aar 1695.</transcription>
     </picture>
     <picture type="illustration" src="1695-frontispice.jpg" year="1695" href="https://www.kb.dk/e-mat/dod/115308003761-color.pdf#page=8">
-      Frontispice med tre krigere og titel i en kartouche. Usigneret kobberstik, 1695. Originalens højde: 140 mm.
+      Frontispice. Usigneret kobberstik, 1695. Originalens højde: 140 mm.
       <!-- Kilde: KB, signatur 53,-89 8°, PDF-side 8; samme motiv i Gustav Henningsen: »Vedel og Syv og bogtrykkerne«, Danske Studier 1959, s. 66 og fig. 18, s. 80: usigneret kobberstukket titelblad, originalhøjde 140 mm. https://tidsskrift.dk/danskestudier/article/download/159253/201182/352832#page=28 -->
       <!-- Kunstner og stikker er ikke identificeret; ingen sikker person at slå op i korpusset. Udgivelsesåret er sikkert, men pladens fremstillingstid er ikke dokumenteret særskilt. Bredde, plademål og bladformat er ikke dokumenteret; Henningsens 128 × 79 mm er bogens tekstkolumne, ikke billedets mål. Intet særskilt billedinventarnummer fundet. -->
       <!-- Historisk stik i public domain. Digitalisering: Det Kgl. Bibliotek. Farvefacsimilens trykte billedflade er bevaret ved dokumentarisk beskæring 1360×2320+35+5, uden retouchering eller genereret indhold. Frontispicen er ikke en forside; p2 er derfor ikke brugt. -->
@@ -761,7 +761,7 @@ End Gjerningen var/ udi Land og By.
 <!-- Kildekontrol PDF62/64: RöRICH har lille ö i versaloverskriften; »Er at at sige« er trykt med begge at. De to navngivne OCR-undtagelser bevarer kildens ordlyd. -->
 <text id="vedel2026111403" author="vedel" variant="vedel1999123001" ignore-tests="internal-uppercase,repeated-adjacent-word">
 <head>
-  <title>Danske Kongers Nafne og Tal</title>
+  <title><num>I.</num>Danske Kongers Nafne og Tal</title>
   <firstline>Alting af Gud/ i Himmel oc Jord/</firstline>
   <notes>
     <note editorial="true">I denne udgave er strofen om Frederik III tilføjet før den afsluttende strofe. Ophavet til denne udvidelse er ikke fastslået.</note>
@@ -774,8 +774,7 @@ End Gjerningen var/ udi Land og By.
 Enddog at der opregnis udi den anden Part af denne Bog/ fast alle de fornemste Viser/ som ere lagde om vore Danske Konger og Dronninger/ og deris Forvandte/ saa kunde dog icke efterladis/ at sætte her i Begyndelsen denne Digt/ som er saa got som ickun et Register paa alle Danske Kongers Nafne/ som hafve regieret her udi Riget/ fra den første Dan og indtil vor Tjd. Aarsagen dertil er denne/ at disse Viser i denne Bog holdis for Historiske Viser/ og ende og vende meste Parten paa vore Danske Konger/ Ja og nogle af de Ældste ere holdne og regnede for Kæmper/ som de ogsaa udi Sandhed vare mægtige Strids-Høfdinger/ som Krønicken udviser. Hvor om mand skal hafve baade om dennem og de andre Konger videre Beretning. Thi udi disse korte Vers kunde icke meere indtvingis/ end der er befattet. Saa ere og her icke alle vore Danske Konger opregnede/ men de alleeniste/ som det <center>gemeene Tal medfører. Hvor om paa en anden sted grundeligere vil forhandlis.</center>
 </prose>
 <poetry>
-<pb n="3" facs="057.jpg"/><nonum><center>1.</center></nonum>
-Alting af Gud/ i Himmel oc Jord/
+<pb n="3" facs="057.jpg"/>Alting af Gud/ i Himmel oc Jord/
 Regieris alt ved hans kraftige Ord/
 Som hand det self monne skabe/
 Uden hans Forsyn og Guddoms Magt/
@@ -1643,7 +1642,7 @@ Med hannem i Evighed lefve.
 
 <text id="folkeviser2026111401" author="folkeviser" variant="vedel2000010201">
 <head>
-  <title>Hertugen reed fra Colding</title>
+  <title><num>II.</num>Hertugen reed fra Colding</title>
   <firstline>Hertugen hand red fra Colding By</firstline>
   <source pages="25-27" facsimile-pages="80-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1653,7 +1652,6 @@ Med hannem i Evighed lefve.
 Der hafver og været En/ som gierne ville hafve alle vore Danske Konger udi en Digt/ men som mig siunes/ da hafver hand tagen sig Vandet ofver Hofvedet. Men efterdi det er jo ogsaa lofværdigt at giøre sit beste i et stort Arbeyd/ hafver vi icke forskut denne Digt. Men bedret noget der paa og ladet dend saa løbe hen med udi Tallet. Ellers maa den Gunstige og Fromme Læsere tage alting i den beste Meening. Hvem det icke vil giøre/ Hand kand dog altid efter sin bidske Natur/ faa noget at mangle paa.
 </prose>
 <poetry>
-<nonum><center>II.</center></nonum>
 <wrap>1. Hertugen hand red fra Colding By/ og indtil Obenraa: Her holder Hertugens Mænd. Hannem mødte en Kierling var u-sky/som der gaar Savnen fra: De komme icke end.</wrap>
 
     <wrap>2. Og hør du gode gammel Kierling/ du est en kundige Qvinde: Her holder Hert: Mænd. Jeg beder du vilt icke dølie for mig/ det længste at du kand minde: De komme icke end.</wrap>
@@ -1702,7 +1700,7 @@ Der hafver og været En/ som gierne ville hafve alle vore Danske Konger udi en D
 <!-- Trykket har tre a i maaa i strofe18, native085.jpg; bevares kildebaseret. -->
 <text id="folkeviser2026111402" ignore-tests="smaa" author="folkeviser" variant="vedel2000010202">
 <head>
-  <title>De Longobarders Udgang af Danmarck</title>
+  <title><num>III.</num>De Longobarders Udgang af Danmarck</title>
   <firstline>Der boede en Konning i Danmarck</firstline>
   <source pages="28-33" facsimile-pages="83-88"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1743,7 +1741,6 @@ Og hvad som her følger meere med/ eftersom og i Visen fortælles/ og icke endnu
     Efter at disse tvende Hofvitsmænd Ebbe og Aage vare hendøde/ toge de Hamunder Aagsøn til Konning/ og hafde saa efter hannem i midlertid/ førend de komme i Italien til Albuinum/ ti Konger/ som førde adskillige Krig med adskillige Landskaff og adskillige Lycke. Med Albuino vare de Tive Konger indtil Kong Desiderium/ som Keyser Karl Magnus ofvervand/ der de hafde regeret udi Longobardia Fire Aar og to Hundrede.
 </prose>
 <poetry>
-<nonum><center>III.</center></nonum>
 <wrap>Der boede en Konning i Danmarck/ Konning Snie loed hand sig kalde: Hunger og Nød var i hans Land/ og stoer Mijstrøst med alle. De maa saa vel i Danmarck.</wrap>
 
     <wrap>2. Hand skref der Lov baade Haard og streng/ den skulde den Menige Mand holde/ Til Druckenskaf/ Gestebud og Fraadserj/ sig ingen fordviste skulde. De maa.</wrap>
@@ -1825,7 +1822,7 @@ Og hvad som her følger meere med/ eftersom og i Visen fortælles/ og icke endnu
 
 <text id="folkeviser2026111403" author="folkeviser" variant="vedel2000012802">
 <head>
-  <title>Langbeen Risers og Tidrich Berlandsens Kamp</title>
+  <title><num>IV.</num>Langbeen Risers og Tidrich Berlandsens Kamp</title>
   <firstline>Konning Tidrick sidder udi Bern</firstline>
   <source pages="34-41" facsimile-pages="89-96"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1835,7 +1832,6 @@ Og hvad som her følger meere med/ eftersom og i Visen fortælles/ og icke endnu
 Der er mange Viser og Digt lagd om Konning Tidrich af Bern paa adskillige Tungemaal. Saa hafve vi Danske og haft vore indfødde Kæmper udi hans Færd. Hvorledis her om være kand med Historien/lader jeg hver sin Meening. Noget maa her om hafve været. Thi Røgen (som mand pleyer at sige) kommer gierne fra Brandene. Og Herr Tidrich af Bern/ hafver icke alleeniste været vort Folck forvant med Sproget alleeniste/ men ogsaa i andre maader/ holden Kundskaf med dennem/ at de hafve været med hannem udi Krig og Orlog naar der gafves Aarsag til. Thi vore gamle Forfædre hafver giort mange Tog der ud af Riget/ og indfaldet udi andre Herrers og Kongers Land/ og dennem tvingd under sig. Undertiden hafve vel Herrer og Førster begiert deris Hielp/ mod deris Fiender/ naar de kunde dennem self icke bestaa/ og hafve der ofver indlagt stoer Prjs og Seyr ved den Danske Magt. Saa hafver det og været meget brugeligt udi gamle Dage/ at baade hine unge Adels Burse/ og andre Stridkiere Vovehalse her af Riget ere uddragne at forsøge sig og lade see deris Manddom/ og der ofver indlagt stoer Ære/ og ere komne til statkelige Giftermaal/ eller forhverfvet kostelige Bytte. Dog Manddoms Ære og Dad/ hafver gielt mest i de Dage. Langbeen Riser som almindeligen næfnis i denne Vise/meener jeg at være Risers Nafn. Thi Riser paa gammel Danske bemercker Kæmper/saavelsom paa Tydske Sprog. Saa som vi faa at høre om Bermer Rise her efter/ som mand ellers kalder Bermeris/ og mand af den Tydske Digt kand see om Konning Tidericks/ og Mester Hildebrands Kamp imod Risen Egenot/ &amp;c. Hvad Vidrich Verlandssøns Nafn og Fødestæd saa og hvad Bern er anrørendis/ Findis ydermeere her udi neste Femte og den Tiende efterfølgendis Viser.
 </prose>
 <poetry>
-<nonum><center>IV.</center></nonum>
 <wrap>Konning Tidrick sidder udi Bern/ Hand roser af sin Vælde: Saa mangen hafver hand tvungen/ Baade Kæmper og raske Helte. Der stan<pb n="35" facs="089.jpg"/>der en Borg heder Bern/og der boer i Konning Tidrick.</wrap>
 
     <wrap>2. Konning Tidrick stander paa Bern/ Og seer hand ud saa vide: GUd gifve jeg viste de Hellede saa stercke/ mig torde i Marcken bide. Der stander en Borg for Bern/ Og der boer udi Konning Tidrick.</wrap>
@@ -1953,7 +1949,7 @@ Der er mange Viser og Digt lagd om Konning Tidrich af Bern paa adskillige Tungem
 
 <text id="folkeviser2026111404" author="folkeviser" variant="vedel2000012801">
 <head>
-  <title>En Vise om de fornemste gamle Kæmper/ og om Sivard Snaren Svends Kamp med Herr Humble</title>
+  <title><num>V.</num>En Vise om de fornemste gamle Kæmper/ og om Sivard Snaren Svends Kamp med Herr Humble</title>
   <firstline>De vare siv og sivsindstive</firstline>
   <source pages="41-49" facsimile-pages="96-104"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1966,7 +1962,6 @@ Denne er fast den ældste Kæmpe-Vise/ som af Arilds Tjd her indtil hafver være
     Saa hafver og icke Skaane været foruden Kæmper/ som det mange stycker udvise/ og end besynderligen her ved Søllesborg Ore/ og fremdeelis udi Bleging og omliggende Egn/ der som hine store Klipper og Kæmpesteene findis med Rune-Bogstafver paa/ &amp;c. Hvor om paa en andensted.
 </prose>
 <poetry>
-<nonum><center>V.</center></nonum>
 <wrap>De vare siv og sivsindstive/ der de droge ud fra Hald: Og der de komme til Bratingsborg/ der sloge de deris Tield. Det donner under Roß/ de Danske Hofmænd der de udride.</wrap>
 
     <wrap>2. Kong Nilavs stander paa høyen Tind/ og seer hand ud saa vide: Hvi monne de Kæmper hafve deris Lif saa fal/ at dem lyster her at stride. Det donner under Roß/ de Danske.</wrap>
@@ -2490,7 +2485,7 @@ Her efter følger tre Viser om Heldt Hogen og Frue Grimild/ om hvilken Saxo Gram
 
 <text id="folkeviser2026111409" author="folkeviser" variant="vedel2000020501">
 <head>
-  <title>En Vise om Mester Hildebrand</title>
+  <title><num>X.</num>En Vise om Mester Hildebrand</title>
   <firstline>Jeg vil mig af Landet ride</firstline>
   <source pages="66-71" facsimile-pages="121-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2502,7 +2497,6 @@ Det lader sig ansee/at denne Mester Hildebrand hafver været med udi mange Kæmp
     Men at Hildebrand kaldis icke Hertug eller Første/men Mester/er at agte at Mester Nafn gafvis i fordum Dage/gamle og ypperlige forfarne Fyrster/Høfdinger og kloge Mænd. Som det endnu en Del brugeligt er hos Frankrigs og Valland paa denne Dag.
 </prose>
 <poetry>
-<nonum><center>X.</center></nonum>
 <wrap>Jeg vil mig af Landet ride/det sagde Mester Hildebrand: hvem mig den Vey vilde vise/Til Bern udi Greckeland. Hand er mig ukyndig vorden/udi saa mangen god Dag/Fire og tredve Aare/Fru Judte jeg icke saa.</wrap>
 
     <wrap>2. Vilt du dig til Bern udride/det svarede Hertug Abelon: Dig møder paa den Hede/en Ridder snild og ung: Dig møder paa den Marck/hin unge Herr Allebrand: Det du varst end self tolfte/vægt kommer du icke frem.</wrap>
@@ -2548,7 +2542,7 @@ Det lader sig ansee/at denne Mester Hildebrand hafver været med udi mange Kæmp
 
 <text id="folkeviser2026111410" author="folkeviser" variant="vedel2000020503">
 <head>
-  <title>Ulf van Jern</title>
+  <title><num>XI.</num>Ulf van Jern</title>
   <firstline>Det var ungen Ulf van Jern</firstline>
   <source pages="71-77" facsimile-pages="126-132"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2559,7 +2553,6 @@ Denne er ogsaa en meget gammel Kæmpe Vise/om Ulf von Jern eller Van Bern: Hvorl
     <center>Til denne Vise findis tvende slags Omqvædning/som mand kalder/Hvilcke vi begge/sette til hver Mands Kaar.</center>
 </prose>
 <poetry>
-<nonum><center>XI.</center></nonum>
 <wrap>Det var ungen Ulf van Jern/hand ganger for Kongen at stande: Ville I laane mig af eders Mænd/min Faders Død at hefne. Det klager den Svend som fangen ligger paa Heden.</wrap>
 
     <wrap>2. Jeg vil laane dig af mine Mænd/og self vil jeg dig følge: Beder du Vidrich Verlandsøn/saa fremmer du din Villie. Men hand bærer Guld og Armor paa sin Haand.</wrap>
@@ -2681,7 +2674,7 @@ Denne er ogsaa en meget gammel Kæmpe Vise/om Ulf von Jern eller Van Bern: Hvorl
 
 <text id="folkeviser2026111411" author="folkeviser" variant="vedel2000020502">
 <head>
-  <title>Sterck Tidrick og Olger Danske</title>
+  <title><num>XII.</num>Sterck Tidrick og Olger Danske</title>
   <firstline>Sterck Tidrick boer sig udi Bern</firstline>
   <source pages="77-80" facsimile-pages="132-135"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2691,8 +2684,7 @@ Denne er ogsaa en meget gammel Kæmpe Vise/om Ulf von Jern eller Van Bern: Hvorl
 Hvad denne Vise om Tidrick van Bern og Kong Olger Danske er anrørendis/er vanskeligt at dømme paa/hvorledis den sticker sig til de gamle Historier. Thi den merckelige Krigs Første Tiderich van Bern/døde der mand skref efter Guds Byrd/5 Hundret siu og Tive. Og Olger Danske som meenis at hafve været Kong Gotrichs Søn/lefvede udi Keyser Karl Magnus Tid hen ved 800 Aar efter Christi Fødsel. Dog om denne vidtberømte Heldt findis adskillige Meninger og Digt/som dog icke alle komme ofver et med hver andre. Vore Forfædre ville her med gifve tilkiend/at Danmark er et frit Kongerige/og aldrig hafver været udi nogen fremmet Herres Vold eller rolig og langvarig Hefvd; Ey helder nogen Tid været Skatskyldig andre fremmede Førster/Men meget meere haft Magt og Herredom ofver andre Landskaf/af hvilke de hafve opbaaren Aarlig Skat og anden Herlighed/<center>som adskillig Landskafs Historier nocksom udvise/og i sin Tid videre skal omtalis.</center>
 </prose>
 <poetry>
-<pb n="78" facs="132.jpg"/><nonum><center>XII.</center></nonum>
-<wrap>Sterck Tidrick boer sig udi Bern/med atten Brødre giefve; Hver af dem hafde Sønner Tolf/stoer Manddom monne de bedrifve. Nu stander Striden Norden under Jutland.</wrap>
+<pb n="78" facs="132.jpg"/><wrap>Sterck Tidrick boer sig udi Bern/med atten Brødre giefve; Hver af dem hafde Sønner Tolf/stoer Manddom monne de bedrifve. Nu stander Striden Norden under Jutland.</wrap>
 
     <wrap>2. Systere saa hafver hand femten/og hver hafver Sønner Tolf; Den yngste hun hafver tretten/de reddes icke for deris Lif. Nu stander Striden Norden under Danmark.</wrap>
 
@@ -2755,7 +2747,7 @@ Hvad denne Vise om Tidrick van Bern og Kong Olger Danske er anrørendis/er vansk
 
 <text id="folkeviser2026111412" author="folkeviser" variant="vedel2000072807">
 <head>
-  <title>Løwens og Kong Tiderichs Kamp imod Lind-Ormen</title>
+  <title><num>XIII.</num>Løwens og Kong Tiderichs Kamp imod Lind-Ormen</title>
   <firstline>Det var Mester Kong Tidrich</firstline>
   <source pages="81-85" facsimile-pages="136-140"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2765,7 +2757,6 @@ Hvad denne Vise om Tidrick van Bern og Kong Olger Danske er anrørendis/er vansk
 Her hafver vi atter en gammel Digt/om den Nafnkundige Konning Tidrich/hvorledis hand frelser Løven fra Lind-Ormen/og kommer self der ofver udi stoer Vaade og Lifs Fare. Saa at Lindormen ogsaa vorder hannem mægtig/men ofvervindis dog paa det sidste af sin egen Fange/og dræbis tillige udi Bierget med sine Ellefve Unger. Løven beviser Konning Tiderich Tro og Tacknemmelighed for beviste Velgierninger/forhielper hannem ud af Bierget/tager hannem paa sin Bag/og bærer hannem hiem til sit Kongelige Huus og Slot. Hvad her kand være om i Sandhed/er troligt/at de gamle hafve holden denne Eventyr for et Tacknemmeligheds Efterkersiun. Som mand endnu daglige formercker/at umælende Bæster kunde undertiden meere skiønne paa Velgierninger/end fornuftige Mennisker.
 </prose>
 <poetry>
-<nonum><center>XIII.</center></nonum>
 <wrap>Det var Mester Kong Tidrich/hand skulde fra Bern udride: Der fant hand den Løve og lede Lind-Orm/saa ynckelig monne de stride. Den Lindorm hand tog en af.</wrap>
 
     <wrap>2. De stride i Dage/de stride i to/den tredie Dag til qvelde: Det da var den lede Lindorm/den Løve i Græsset felde. Den Lindorm hand tog en af.</wrap>
@@ -2851,7 +2842,7 @@ Her hafver vi atter en gammel Digt/om den Nafnkundige Konning Tidrich/hvorledis 
 
 <text id="folkeviser2026111413" author="folkeviser" variant="vedel2000022806">
 <head>
-  <title>Burmand og Olger Danske</title>
+  <title><num>XIV.</num>Burmand og Olger Danske</title>
   <firstline>Burmand holder i Fielden ud</firstline>
   <source pages="85-89" facsimile-pages="140-144"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2861,7 +2852,6 @@ Her hafver vi atter en gammel Digt/om den Nafnkundige Konning Tidrich/hvorledis 
 Hedenske Kæmper hafve været holden i gamle Dage saa vederstyggelige som halve Trolde. Hvilcket her sees udi Burmand/som Kong Olger Danske her ofvervinder/Og frelser Jomfru Gloriant sin gode Ven Kong Karls Festemøe/som Visen siger. Men med Islands Konning som skulde være hendis Fader/holder jeg fore/at maa forstaaes nogen anden/hvo der nu været hafver. Det er icke mueligt/og icke helder fornøden/at vide eller randsage alting til Pricke/besynderlig i saadan Poetiske Legeverk/som er ickun mest henrettet til en ærlig og liflig Tids-Fordrif.
 </prose>
 <poetry>
-<nonum><center>XIV.</center></nonum>
 <wrap>Burmand holder i Fielden ud/hand lader sin Skiold vel skinne: Sender hand Bud til Islands Kong/om hand hafver Daatter hin veneste. Olger Danske hand vant Seyr af Burmand.</wrap>
 
     <wrap>2. Hør du Islands Konning god/du hør hvad jeg siger dig: Du skalt gifve mig din Daatter/Eller skifte dine Lande med mig. Olger Danske hand vand Seyr.</wrap>
@@ -2933,7 +2923,7 @@ Hedenske Kæmper hafve været holden i gamle Dage saa vederstyggelige som halve 
 
 <text id="folkeviser2026111414" author="folkeviser" variant="vedel2000022801">
 <head>
-  <title>Bermerijs og Orm unger Svend</title>
+  <title><num>XV.</num>Bermerijs og Orm unger Svend</title>
   <firstline>Det var høyen Bermerijs</firstline>
   <source pages="89-94" facsimile-pages="144-149"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2943,7 +2933,6 @@ Hedenske Kæmper hafve været holden i gamle Dage saa vederstyggelige som halve 
 Denne Digt er fast af lige Eventyr giort/som Burmands Vise. Bermerijs beyler til Daner Konnings Daatter/men Orm unger Svend falder imellem/og laaner sin Stif-Faders Sværd Birting: Med hvilcket hand slaar hannem ihiel udi Kamp. Siden kommer hand i færd med Bermerijs Søster-Søn Jord af Valland/hvilcken som spodteligen berømmer sig der af/at hand hafver slaget hans Fader Kong Sigfred af Irland ihiel. Dette fortryder Orm unger Svend/og derfore gifver sig i Kamp med hannem/og dræber hannem med alle sine Svenne. Hvo denne Kong Sigfred hafver værit/der om veed mand ingen egentlig beskeden. Men udi Irland hafver været Konger/som mand hafver kaldet Gorm/Orm og Gormund/som en deel ere komne af Danmark. Hvilcket Giraldus Cambrensis og andre Historie-Skrifvere gifve tilkiende/og ydermeere paa en anden Tid skal forklaris.
 </prose>
 <poetry>
-<nonum><center>XV.</center></nonum>
 <wrap>Det var høyen Bermerijs/hand voxte ofver alle Mure: Hand var galen og aldrig viis/Ingen Mand kunde hannem styre. Men Skofven stander all udi Blomster.</wrap>
 
     <wrap>2. Hand var galen og aldrig viis/og ingen Mand kunde hannem raade: Men hafde hand lenge i Danmark blefvet/da hafde det været stor Skade. Men Skofven stander all udi Blomster.</wrap>
@@ -3051,7 +3040,7 @@ Denne Digt er fast af lige Eventyr giort/som Burmands Vise. Bermerijs beyler til
 
 <text id="folkeviser2026111415" author="folkeviser" variant="vedel2000022805">
 <head>
-  <title>Svend Vonved</title>
+  <title><num>XVI.</num>Svend Vonved</title>
   <firstline>Svend Vonved sidder i Bure</firstline>
   <source pages="94-103" facsimile-pages="149-158"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3061,7 +3050,6 @@ Denne Digt er fast af lige Eventyr giort/som Burmands Vise. Bermerijs beyler til
 Denne Vise siungis icke af en som af anden/og giøris stoer Forskiel baade paa Nafn og denne Svend Vonveds Bedrift. Nogle kalder hannem Svend Urmand eller Normand/og hans Moder Frue Ermelin. Nogle kalde hende Frue Adelin/og fortelle denne hendis Søns Færd og Bedrift anderledis. Men Summen og Meeningen her paa er kurteligen denne/at hans Moder Adelin/ryster og afferdiger hannem med en underlig Signelse/at hand skal drage ud at hefne sin Faders Død. Og hand drager ud i fremmede Egn/og kommer der først i færd med Herr Thule Vang/og sine Tolf Sønner/hvilcke hand ofvervinder og dræber. Dernest kommer <pb n="95" facs="149.jpg"/>Diure Karl af Jagt imod hannem/og der de kunde icke anderledis foreenis om Byttet/da slaae de hver anden en Kamp til/udi hvilcken Her Dyre Karl blifver paa det sidste slagen. Saaledis hefner hand sin Faders Kong Esmers Død paa hannem/og rider saa frem bedre udi Landet/og kommer først i færd med Tre Hyrder/den eene efter den anden. Den første som ingen vis Beskeden gifver fra sig/den dræber hand. Den anden gifver hand en Guldring/fordi hand viser ham til Tyge Nold og hans Tolf Sønner/hvilcke maatte alle holde for hannem og miste deris Lif. Den tredie Hyrde gifver hand nogle vise og subtillige Spørsmaal fore/til hvilcke hand svarer/og viser hannem Veyen til Sønderborg. Denne Hyrde begafver hand med et Guld-Armbaand/og drager saa til Sønderborg/dræber der Herr Randulf med sine Kæmper. Paa det allersidste kommer hand i færd med en Kæmpe/som viser hannem hvor Vidrich Verlandsøn er. Denne begafver hand ogsaa med en Guldring/og drager saa til Vidrich/og blifver kiend af hannem for sin Søster-Søn. Der hand en kort Tid hafver dveld her/forlengis hannem til sin Moder/og drager saa hiem og betaler hende af/med sine Troldqvinder/og fester sig Kong Sigfreds Daatter.
 </prose>
 <poetry>
-<nonum><center>XVI.</center></nonum>
 <wrap>Svend Vonved sidder i Bure/hand slaar Guld-Harpen prude: Hand slaar Guld-Harpen under Skind/hans Moder kom der gangendis ind. See dig ud Svend Vonved.</wrap>
 
     <wrap>2. Ind kom hans Moder Adelin/hun maatte vel være en Dronning fin: Du skalt dig Svend Venved udride/med rige Kæmper at stride. See dig ud Svend.</wrap>
@@ -3215,7 +3203,7 @@ Denne Vise siungis icke af en som af anden/og giøris stoer Forskiel baade paa N
 
 <text id="folkeviser2026111416" author="folkeviser" variant="vedel2000022804">
 <head>
-  <title>Sivard Snaren Svend</title>
+  <title><num>XVII.</num>Sivard Snaren Svend</title>
   <firstline>Sivard hand slog sin Stif-Fader ihiel alt for sin Moders beste; Og nu lyster Sivard til Hofve at ride</firstline>
   <source pages="103-105" facsimile-pages="158-160"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3225,7 +3213,6 @@ Denne Vise siungis icke af en som af anden/og giøris stoer Forskiel baade paa N
 Udi denne Vise gifvis tilkiende/hvad Sivard Snaren Svends Endeligt hafver været. At hans Moder hafver afferdiget hannem med sin Hest Gnaamand/hvilcken render saa lenge med hannem ofver Bierge og Dale/indtil saa lenge hand kommer paa Danner Kongens/sin Morbroders Huus og Slot/og øfvet der Hofverck med hver andre/indtil paa det sidste at de begge omkommer elendeligen/ etc.
 </prose>
 <poetry>
-<nonum><center>XVII.</center></nonum>
 <wrap>Sivard hand slog sin Stif-Fader ihiel alt for sin Moders beste; Og nu lyster Sivard til Hofve at ride/og Lycken saa vil hand friste. Saa listelig render hand Graamand under Sivard.</wrap>
 
     <wrap>2. Det var Sivard Snaren Svend/gaar for sin Moder at staa; Hvad helder skal jeg fra eder ride/eller skal jeg til Hofve gaa.</wrap>
@@ -3273,7 +3260,7 @@ Udi denne Vise gifvis tilkiende/hvad Sivard Snaren Svends Endeligt hafver været
 
 <text id="folkeviser2026111417" author="folkeviser" variant="vedel2000022803">
 <head>
-  <title>Mimmering Tandt</title>
+  <title><num>XVIII.</num>Mimmering Tandt</title>
   <firstline>Mimmering var den mindste Mand</firstline>
   <source pages="106-108" facsimile-pages="161-163"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3283,7 +3270,6 @@ Udi denne Vise gifvis tilkiende/hvad Sivard Snaren Svends Endeligt hafver været
 Om liden Mimmering Tandt blef rørt tilforn udi den siette Vise. Enddog hand hafver været liden/saa hafver hand dog holdet sig til de beste/og indlagt Æyer med de Ridvifste. Her kommer hand i færd med en Kæmpe som spotter hannem fordi hand var icke saa voren i Kroppen. Men hand lærer denne Kæmpe/at Styrcke og Manddom ere icke bunden udi Skindet og Kiødet/men bestaar meget meere udi mandelige Hierter/Mod og Behændighed. Hand kommer paa det sidste i Kamp med Vidrich Verlandsøn/hvilcke sverge sig i Staldbroderskaf/dog det varer ick lenge/som det pleyet almindeligen at gaa til med store Herrer/hvilcke for Ærgierrigheds skyld icke gierne ville vige hver andre/ etc.
 </prose>
 <poetry>
-<nonum><center>XVIII.</center></nonum>
 <wrap>Mimmering var den mindste Mand/som fødder var i Konning Karls Land. Mine skøniste Jomfruer.</wrap>
 
     <wrap>2. Den mindste Mand som fødder var/i Kong Karls Land: Førend hand blef til Verden baaren/da var hans Klæder til hannem skaaren. Mine.</wrap>
@@ -3327,7 +3313,7 @@ Om liden Mimmering Tandt blef rørt tilforn udi den siette Vise. Enddog hand haf
 
 <text id="folkeviser2026111418" author="folkeviser" variant="vedel2000022802">
 <head>
-  <title>Berner Riis og Orm unger Svend</title>
+  <title><num>XIX.</num>Berner Riis og Orm unger Svend</title>
   <firstline>Det var høyen Berner Riis</firstline>
   <source pages="108-113" facsimile-pages="163-168"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3337,7 +3323,6 @@ Om liden Mimmering Tandt blef rørt tilforn udi den siette Vise. Enddog hand haf
 Her hafver vi atter en anden Vise om Berner Rijs og Orm unger Svend/noget anderledis end den vi hafve først tilforn. Meeningen er fast eens udi begge/men Nafn og Omstænde ulige. Jeg holder fore/at det som mand siger almindeligen/Bermer Rijs skal være Berner Riise/at hand hafver været en Berner Lands Kæmpe. Thi Rise bemercker dog ellers Kæmpe paa vort Danske Sprog. Derfore følger jeg denne Meening/og lader hver sin egen uformeent. Det gielder dog icke saa høyt at giøre her saa vid Vey af/enten ved Nafns eller Omstends Forandring.
 </prose>
 <poetry>
-<nonum><center>XIX.</center></nonum>
 <wrap>Det var høyen Berner Riis/hand var saa stoer en Uhyre: Hand var grum og der til leed/ingen Mand kunde hannem styre. Men Skofven staar all udi Blomster:</wrap>
 
     <wrap>2. Det var høyen Berner Riis/hand lader de Brefve skrifve: Og sender hand dennem Danner Konning/og lader hannem saa tilbyude. Men.</wrap>
@@ -3437,7 +3422,7 @@ Her hafver vi atter en anden Vise om Berner Rijs og Orm unger Svend/noget anderl
 
 <text id="folkeviser2026111419" author="folkeviser" variant="vedel2000030201">
 <head>
-  <title>Hvitting Helfredsøn og Isald Konning</title>
+  <title><num>XX.</num>Hvitting Helfredsøn og Isald Konning</title>
   <firstline>Kongen raader for Borgen</firstline>
   <source pages="113-119" facsimile-pages="168-174"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3447,7 +3432,6 @@ Her hafver vi atter en anden Vise om Berner Rijs og Orm unger Svend/noget anderl
 Konning Tidrich berømmer sig af sin Manddom og megen Vælde/og meener at hand skal icke hafve sin Lige udi noget Land. Der af yppis en Krig/at Bran Herr Vifferlin siger hannem af Konning Isald udi Bertings Land/som vel kunde hevdes ved hannem udi Styrcke og Velde. Hvilcket fortryder Konning Tiderich/og giører strax rede med alle sine Kæmper/og drager ind i Kong Isalds Land/og ofvervinder hannem med alle sine Kæmper. Her opregnis fast alle de gamle Kæmper/som udi fordoms Tid hafve været Nafnkundige af Manddoms merckelige Bedrift. Hvis Nafne og Skioldemercke ere tilforn opregnede udi den femte Vise udi denne Bog.
 </prose>
 <poetry>
-<nonum><center>XX.</center></nonum>
 <wrap>Kongen raader for Borgen/og saa for alle Land: Og saa for mangen rasker Helde/med dragen Sværd i Haand. Meden Kongen raader for Borgen.</wrap>
 
     <wrap><pb n="114" facs="168.jpg"/>2. Lad den Bonde raade for sin Bo/den Hofmand fore sin Hest: Kongen udaf Danmarck/hand raader for Borg og Feste. Meden Kongen raader for Borgen.</wrap>
@@ -3559,7 +3543,7 @@ Konning Tidrich berømmer sig af sin Manddom og megen Vælde/og meener at hand s
 
 <text id="folkeviser2026111420" author="folkeviser" variant="vedel2000030202">
 <head>
-  <title>Liden Grimmer og Kamper af Birtings Land</title>
+  <title><num>XXI.</num>Liden Grimmer og Kamper af Birtings Land</title>
   <firstline>Grimmer hand gaar paa Gulfvet</firstline>
   <source pages="119-122" facsimile-pages="174-177"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3569,7 +3553,6 @@ Konning Tidrich berømmer sig af sin Manddom og megen Vælde/og meener at hand s
 Denne Digt er fast lige eens Meening med Burmands og Berner Rijses Viser. Thi her paa endis de gamle Kæmpers Kamp meste parten/at de slaaes enten for Styrcke skyld at bevise/eller Land at eye/eller Frenders Død at hefne/eller og for Jomfruer deris Ære skyld. Er vel mueligt/at en deel/saa skeed er i Sandhed/og en part er ogsaa tilset af hine gamle Danske Skialdrer og Sangemestere/ etc. Vimmings Høy som her nefnis/holder jeg fore/at ligge udi Skaane/som enten Vimmings Høy Øster eller Vestre Kircke nu ligge. Hvor udaf Vimmings Høy Herret hafver sit Nafn. Og findis der udi den liden Aa/som løber ned til Dybeck/ved Axel Veyen en stor Kampesteen med Rune Bogstafver paa/som videre skal omtales udi Danmarckes Riges Beskrifvelse og Antiqvitatibus Danicis.
 </prose>
 <poetry>
-<nonum><center>XXI.</center></nonum>
 <wrap>Grimmer hand gaar paa Gulfvet/hand kand vel leeg med Sværd; I gifve os Jomfru Ingeborg/Udi vor Herris Færd. Nu seyler hand Grimmer af Landet.</wrap>
 
     <wrap>2. Mig tyckis du est saa liden/du kand dig icke omhugge; Hvor du kommer blant andre Kæmper/de drifver dig alt til rygge. Nu seyler hand Grimmer af Landet.</wrap>
@@ -3625,7 +3608,7 @@ Denne Digt er fast lige eens Meening med Burmands og Berner Rijses Viser. Thi he
 
 <text id="folkeviser2026111421" author="folkeviser" variant="vedel2000030205">
 <head>
-  <title>Tord af Hafsgaard og Tosse Grefve</title>
+  <title><num>XXII.</num>Tord af Hafsgaard og Tosse Grefve</title>
   <firstline>Det var Tord af Hafsgaard</firstline>
   <source pages="122-125" facsimile-pages="177-180"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3635,7 +3618,6 @@ Denne Digt er fast lige eens Meening med Burmands og Berner Rijses Viser. Thi he
 Tord af Hafsgaard sender sin Broder ofver til Norge til Tosse Grefven om sin Hammer som hand hafver funden. Hvilcken hand ingenlunde vil antvorde fra sig med andre Vilkaar/end at de skulle gifve hannem deris Søster/Jomfru Fridlefsborg til Egte. Men de skuffe hannem/og sende deris Fader udi hans Sted/saa at der holdis et selsomt Bryllup/at Bruden slaar Brudgommen og Giesterne ihiel/og drager saa der fra med Hammeren etc. Er fast lige eens Digt og Fabel med Grefve Guncelings Vise/som er tilforn omskrefvet.
 </prose>
 <poetry>
-<nonum><center>XXII.</center></nonum>
 <wrap>Det var Tord af Hafsgaard/rider ofver de grønne Enge: Det tabte hand sin Hammer af Guld/Og borte var den saa lenge. Saa vinder mand Sverckind.</wrap>
 
     <wrap>2. Det var Tord af Hafsgaard/hand taler til Broder sin: Du skalt fare til Nordnes Field/og liuse efter Hammer min. Saa vinder mand.</wrap>
@@ -3695,7 +3677,7 @@ Tord af Hafsgaard sender sin Broder ofver til Norge til Tosse Grefven om sin Ham
 
 <text id="folkeviser2026111422" author="folkeviser" variant="vedel2000030203">
 <head>
-  <title>Alf i Odderskier</title>
+  <title><num>XXIII.</num>Alf i Odderskier</title>
   <firstline>Alf hand boer i Oddeskier</firstline>
   <source pages="125-128" facsimile-pages="180-183"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3705,7 +3687,6 @@ Tord af Hafsgaard sender sin Broder ofver til Norge til Tosse Grefven om sin Ham
 Alf eller Ulf i Odderskier hafver tvende Sønner/Helmer Kamp og Angelfyr. De bedis begge til Kongens Daatter af Opsal. Og kommer der ofver udi saa haard en Kamp at de paa begge sider gifver hver andre deris Bane Saar. Og end kommer Faderen til dennem/førend de døe/og dræber self udi sin Harm Helmer Kamp/og begge Brødre blifve saa lagd udi en Graf. Blandis her Historie og Fabel tilsammen/som udi saadanne Digt brugeligt er.
 </prose>
 <poetry>
-<nonum><center>XXIII.</center></nonum>
 <wrap>Alf hand boer i Oddeskier/er rig og bold med alle: Saa raske da hafver <!-- Rettelsesark: hand Sønner] hans Sønner -->hand Sønner to/de lade sig Kæmper kalde. Og nu drifver Ulfven paa hviden Sand for Norden.</wrap>
 
     <wrap>2. Alf hand boer i Odderskier/hand hafver de Sønner saa snilde: De ville til Kongens Daatter bede/alt udaf Opsals Felde. Og nu drifver Ulfven paa hviden Sand for Norden.</wrap>
@@ -3759,7 +3740,7 @@ Alf eller Ulf i Odderskier hafver tvende Sønner/Helmer Kamp og Angelfyr. De bed
 
 <text id="folkeviser2026111423" author="folkeviser" variant="vedel2000030204">
 <head>
-  <title>Svend Felding</title>
+  <title><num>XXIV.</num>Svend Felding</title>
   <firstline>Svend Felding hand sider paa Helsingborg</firstline>
   <source pages="128-133" facsimile-pages="183-188"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3770,7 +3751,6 @@ Om denne Svend Felding/ hvo og hveden hand hafver været/ ere adskillige Meening
     Der findis endda en anden Vise om Svend Felding/som vi sætte her næst efter/paa det mand kand see/at der uden Tvil hafver været en Slegt her udi Riget. Og er mueligt den første der hafver været en Slegfred af Kongelig Stamme/som vi her efter i samme Vise skulle faa at høre.
 </prose>
 <poetry>
-<nonum><center>XXIV.</center></nonum>
 <wrap>Svend Felding hand sider paa Helsingborg/og roser hand af sin Færd: Og hand var sig baade mild og blid/hand giordet sig med sit Sverd.</wrap>
 
     <wrap>2. Svend Felding lofver sig en Pillegrims gang/alt ind til Rom at gange: Og det lofvet hver Danske Pillegrim/at hand skulde did komme.</wrap>
@@ -3870,7 +3850,7 @@ Om denne Svend Felding/ hvo og hveden hand hafver været/ ere adskillige Meening
 
 <text id="folkeviser2026111424" author="folkeviser" variant="vedel2000031102">
 <head>
-  <title>Svend Felding fører Dronning Judte ind i Danmarck</title>
+  <title><num>XXV.</num>Svend Felding fører Dronning Judte ind i Danmarck</title>
   <firstline>Der stunder indtil Danmarck</firstline>
   <source pages="133-138" facsimile-pages="188-193"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3880,7 +3860,6 @@ Om denne Svend Felding/ hvo og hveden hand hafver været/ ere adskillige Meening
 At denne Svend Felding skal være den samme som den formere Vise omtaler/siunis icke troligt. Thi denne Historie lader sig ansee at være noget yngre end den anden formere Digt. Om det hafver været den unge Svend Felding eller en anden nefnd efter dennem eller udi Slegten/lader jeg hver sin Meening. Dog stemmer vel ofver et/med den almindelige Tale/ <pb n="134" facs="188.jpg"/>at hand hafver været Slegfred/og dog i stoer Ære/Agt og Myndighed. Som det var Sædvanligt med Fredle-Børn/baade her udi Riget og i Norge udi gamle Dage. Det siunis at der er kommen en Nag imellem hannem og den unge Dronning/som hand hafver ført Kongen i Landet/og den kand icke endis/med mindre end at hun giører en af sine beste Kæmper ud paa hannem/som biuder hannem til Kamp. Udi hvilcken Kamp Herr Svend beholder Marcken/og dræber Herr Peder Kæmpe/en af hendis fornemste Mænd hun hafver ført i Landet med sig. Hvor udaf hun haardelige fortørnis/dog hun icke kand fremme sin Villie som det tilbørligen er/at hvercken de Høye eller Lave lade sig tage Regimentet fra/af den forderfvelige Eva/om hvilcken der siges: <span lang="la">Qvia obedivisti voci uxoris tuæ &amp;c.</span> Derfore kom all Ulycke.
 </prose>
 <poetry>
-<nonum><center>XXV.</center></nonum>
 <wrap>Der stunder indtil Danmarck/saa mangen ærlig Mand; Did komme fleere Tydske Riddere/end jeg nu nefne kand. De stunde indtil Danmarck.</wrap>
 
     <wrap>2. Det var Danner Konning/hand heder paa Svenne to; I bede Herr Svend Felding/i Salen for mig indgaa.</wrap>
@@ -3974,7 +3953,7 @@ At denne Svend Felding skal være den samme som den formere Vise omtaler/siunis 
 
 <text id="folkeviser2026111425" author="folkeviser" variant="vedel2000031104">
 <head>
-  <title>Her Ribolts Kamp med Dragen og Aller hin stærcke</title>
+  <title><num>XXVI.</num>Her Ribolts Kamp med Dragen og Aller hin stærcke</title>
   <firstline>Jeg seer saa mangt et Orlog Skib</firstline>
   <source pages="138-142" facsimile-pages="193-197"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3984,7 +3963,6 @@ At denne Svend Felding skal være den samme som den formere Vise omtaler/siunis 
 Hvo denne Konning af Opsal eller Aller hafver været/kand intet visst foregifvis. Maa vel ske/denne er en Svensker <pb n="139" facs="193.jpg"/>Digt/uden Tvil gammel/som siunis af denne Eventyr/om denne Drage/som mand i fordum Tid hafver haft meget at skaffe med. At mand meente der skulde været saadanne Diur til/som skulde ligge under Jorden udi store Bierge/paa Guld og Sølf og saadanne dyrebar liggendefæ. Hafver dog ickun været Sathans Sværi/som hand hafver koglet med for dem som lefvede udi den Hedenske Blindhed og Vildfarelse/&amp;c.
 </prose>
 <poetry>
-<nonum><center>XXVI.</center></nonum>
 <wrap>Jeg seer saa mangt et Orlog Skib/under deris forgyldene Brande: Der er Aller Kæmpe hin stercke/hand agter sig hid til Lande. Det v. h. r. r. e.</wrap>
 
     <wrap>2. Kaste de deris Ancker paa den Grund/de glæddis ved den Hafn: Tog hand Aller Ahre i Haand/hand sprang af fremmer Stafn.</wrap>
@@ -4075,7 +4053,7 @@ Her indtil hafve vi hørt de fornemste gamle Kæmpe-Viser/som gengs hafve været
 <content>
 <text id="folkeviser2026111426" author="folkeviser" variant="vedel2000031101">
 <head>
-  <title>Eline Bondens Hustru af Villenskof</title>
+  <title><num>I.</num>Eline Bondens Hustru af Villenskof</title>
   <firstline>Der ligger en Vold i Vester Haf</firstline>
   <source pages="143-147" facsimile-pages="198-202"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4086,7 +4064,6 @@ Udi denne og disse Ni eller Ti efterfølgende Viser/gifves saare megen Underligh
 </prose>
 
 <poetry>
-<nonum><center>I.</center></nonum>
 <wrap>Der ligger en Vold i Vester Haf/der agter en Bonde at bygge: Hand fører did baade Høg og Hund/og agter om Vinteren der at ligge. De vilde Diur og Diurene udi Skofven.</wrap>
 
     <wrap>2. Hand tager med sig baade Hund og Hane/hand agtet der lenger at være: De vilde Diur i Skofven ere/de gifve fast ofver hannem kære.</wrap>
@@ -4168,7 +4145,7 @@ Udi denne og disse Ni eller Ti efterfølgende Viser/gifves saare megen Underligh
 
 <text id="folkeviser2026111427" author="folkeviser" variant="vedel2000031103">
 <head>
-  <title>Germand Gladen Svend</title>
+  <title><num>II.</num>Germand Gladen Svend</title>
   <firstline>Kongen og vor unge Dronning</firstline>
   <source pages="147-152" facsimile-pages="202-207"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4179,7 +4156,6 @@ Selsom og underlige Indfald hafve vore gamle Danske Poeter hafd. Atskillige Even
 </prose>
 
 <poetry>
-<nonum><center>II.</center></nonum>
 <wrap>Kongen og vor unge Dronning/de side ofver breden Bord: De blefve dem saa mangt at tale/alt om den salte Søferd. Saa flyfver hand ofver ad Riin.</wrap>
 
     <wrap><pb n="148" facs="202.jpg"/>2. Kongen og vor unge Dronning/de seylede sig ofver Haf: Saa ilde var det for dennem begge/at Dronningen icke hiemme blef. Saa flyfver hand ofver ad Riin.</wrap>
@@ -4285,7 +4261,7 @@ Selsom og underlige Indfald hafve vore gamle Danske Poeter hafd. Atskillige Even
 
 <text id="folkeviser2026111428" author="folkeviser" variant="vedel2000032703">
 <head>
-  <title>Verner Rafn</title>
+  <title><num>III.</num>Verner Rafn</title>
   <firstline>Rafnen hand fløyer op Aften</firstline>
   <source pages="152-156" facsimile-pages="207-211"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4296,7 +4272,6 @@ Denne Vise følger den forgangen fast udi Meeningen og Digt. Vil og det samme pa
 </prose>
 
 <poetry>
-<nonum><center>III.</center></nonum>
 <wrap>Rafnen hand fløyer op Aften/om Dagen hand icke maa: Den skal hafve den krancke Lycke/den gode kand icke faa. Men Rafnen fløyer om Aften.</wrap>
 
     <wrap>2. Alt fløyer Vilden Verner Rafn/saa høyt ofver de Mure: Der blef hand var stolten Irmindlin/saa sørgendis i hendis Bure.</wrap>
@@ -4364,7 +4339,7 @@ Denne Vise følger den forgangen fast udi Meeningen og Digt. Vil og det samme pa
 
 <text id="folkeviser2026111429" author="folkeviser" variant="vedel2000032704">
 <head>
-  <title>Dalby Biern</title>
+  <title><num>IV.</num>Dalby Biern</title>
   <firstline>Der gaar en Biørn paa Dalby Hede</firstline>
   <source pages="156-159" facsimile-pages="211-214"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4375,7 +4350,6 @@ Hvor udaf saadanne Digt ere tagne/kand mand fast ingen Beskeeden vide. Hvad held
 </prose>
 
 <poetry>
-<nonum><center>IV.</center></nonum>
 <wrap>Der gaar en Biørn paa Dalby Hede/hand er baade sterck og feed: Øxen og Heste dem legger hand øde. Men vi bære Fryden i Danmarck.</wrap>
 
     <wrap><pb n="157" facs="211.jpg"/>2. Øxen og Heste dem legger hand øde: De Bønder de kære fast ilde ved/at dem skal tvinge den Biørn saa led. Men vi bære Fryden i Danmarck.</wrap>
@@ -4437,7 +4411,7 @@ Hvor udaf saadanne Digt ere tagne/kand mand fast ingen Beskeeden vide. Hvad held
 
 <text id="folkeviser2026111430" author="folkeviser" variant="vedel2000032701">
 <head>
-  <title>Hedebyes Giengangere</title>
+  <title><num>V.</num>Hedebyes Giengangere</title>
   <firstline>Jeg reed mig ad qvelde</firstline>
   <source pages="159-161" facsimile-pages="214-216"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4448,7 +4422,6 @@ Det eene som det andet Fabel og Eventyr/digtet af hine gamle Skialdrer. At mand 
 </prose>
 
 <poetry>
-<nonum><center>V.</center></nonum>
 <wrap>Jeg reed mig ad qvelde/jeg lagde min Hest udi Helde. Saa vide da ganger der Ord af.</wrap>
 
     <wrap>2. At qvelde/jeg lagde min Hest i Helde. Jeg lagde mit Hofvet til en Tue/saa gierne da vilde jeg der sofve. Saa vide da ganger der.</wrap>
@@ -4486,18 +4459,17 @@ Det eene som det andet Fabel og Eventyr/digtet af hine gamle Skialdrer. At mand 
 
 <text id="folkeviser2026111431" author="folkeviser" variant="vedel2000032702">
 <head>
-  <title>Rosmer Hafmand</title>
+  <title><num>VI.</num>Rosmer Hafmand</title>
   <firstline>Der boer en Frue i Danmarck</firstline>
   <source pages="161-164" facsimile-pages="216-219"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
-Om denne Rosmer eller Rismer ere trende Viser lagde/hver med sin Omqvedning/saa almindelig hafver det været med saadan Getteri og Kogle-Spill i gamle Dage. Ja hvad ville vi tale paa de Gamle/Efterdi vi udi vor Tid hafve baade seet og hørt dennem/som lode sig understaa/at de skulde hafd Kundskaf med saadanne Haftrolde. Thi udi Sandhed maa mand vel saa kalde dennem/efterdi det befindis udi Sandhed/at være ickun Sathans Spøgelsegi[ulæseligt]ng<footnote editorial="true">Vokalen efter »gi« er utydelig i det benyttede eksemplar; den kan ligne ü eller ø.</footnote>/hand kand jo forskabe sig til Liusens Engel/hvorfore skulde hand icke giøre udi Hafvet og paa Jorden/det som argere og slemmer er,
+Om denne Rosmer eller Rismer ere trende Viser lagde/hver med sin Omqvedning/saa almindelig hafver det været med saadan Getteri og Kogle-Spill i gamle Dage. Ja hvad ville vi tale paa de Gamle/Efterdi vi udi vor Tid hafve baade seet og hørt dennem/som lode sig understaa/at de skulde hafd Kundskaf med saadanne Haftrolde. Thi udi Sandhed maa mand vel saa kalde dennem/efterdi det befindis udi Sandhed/at være ickun Sathans Spegelfegting/hand kand jo forskabe sig til Liusens Engel/hvorfore skulde hand icke giøre udi Hafvet og paa Jorden/det som argere og slemmer er,
 </prose>
 
 <poetry>
-<nonum><center>VI.</center></nonum>
 <wrap>Der boer en Frue i Danmarck/Frue Hillers lille lader hun sig kalde: Hun lader bygge en Borg af ny/den skinner ofver Danmarck med alle. De maa saa vel i Danmarck.</wrap>
 
     <wrap>2. Hendis Døttre blefve hende staalne fra/hun ledte efter dem saa vide: Dis lenger hun ledte dis <pb n="162" facs="216.jpg"/>mindre hun fant/sig self til Angest og Qvide. De maa saa vel i Danmarck.</wrap>
@@ -4563,7 +4535,7 @@ Om denne Rosmer eller Rismer ere trende Viser lagde/hver med sin Omqvedning/saa 
 
 <text id="folkeviser2026111432" author="folkeviser" variant="vedel2000042201">
 <head>
-  <title>Den Anden Vise om Rosmer Hafmand</title>
+  <title><num>VII.</num>Den Anden Vise om Rosmer Hafmand</title>
   <firstline>Bucke Been og Elfver Steen</firstline>
   <source pages="164-167" facsimile-pages="219-222"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4574,8 +4546,7 @@ Ligervis som de findis udi sig self/saa sætte vi disse Tre Viser den eene efter
 </prose>
 
 <poetry>
-<pb n="165" facs="219.jpg"/><nonum><center>VII.</center></nonum>
-<wrap>Bucke Been og Elfver Steen/og fleer kand jeg icke nefne: De lode sig bygge saa haard en Knar/til Island monne de stefne. Jeg bryder aldrig min Tro.</wrap>
+<pb n="165" facs="219.jpg"/><wrap>Bucke Been og Elfver Steen/og fleer kand jeg icke nefne: De lode sig bygge saa haard en Knar/til Island monne de stefne. Jeg bryder aldrig min Tro.</wrap>
 
     <wrap>2. De støde Skibet i Hafvet ud/det brommet som Biørnen hin vrede; Høfden Gaas til Grunden sanck/det voldte Trolden hin lede. Jeg nimmer aldrig.</wrap>
 
@@ -4633,7 +4604,7 @@ Ligervis som de findis udi sig self/saa sætte vi disse Tre Viser den eene efter
 <text id="folkeviser2026111433" author="folkeviser" variant="vedel2000042207">
 <head>
   <!-- Rettelsesark: Havmand] Hofmand -->
-  <title>Den Tredie Vise om Rosmer Havmand</title>
+  <title><num>VIII.</num>Den Tredie Vise om Rosmer Havmand</title>
   <firstline>Iselands Konning lader bygge et Skib</firstline>
   <source pages="167-170" facsimile-pages="222-225"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4644,7 +4615,6 @@ Uden Tvil hafve atskillige Poeter og Danske Skialder/tagen sig fore en slags Eve
 </prose>
 
 <poetry>
-<nonum><center>VIII.</center></nonum>
 <wrap>Iselands Konning lader bygge et Skib/saa nær ved Islands side; Og der det gamle Raad var død/det gick de Svenne til Qvide. Der de finge Fred/udi Hafvet ud/da seylde de Normænd.</wrap>
 
     <wrap>2. Rosmer løber i Hafvet ud/og monne min Konst icke due; Alle de Skib vette hand til Grund/de vare vel siu sinde tiue</wrap>
@@ -4696,7 +4666,7 @@ Uden Tvil hafve atskillige Poeter og Danske Skialder/tagen sig fore en slags Eve
 
 <text id="folkeviser2026111434" author="folkeviser" variant="vedel2000042202">
 <head>
-  <title>Elver Høy</title>
+  <title><num>IX.</num>Elver Høy</title>
   <firstline>Jeg lagde mit Hofvet til Elver Høy</firstline>
   <source pages="170-171" facsimile-pages="225-226"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4707,7 +4677,6 @@ Hvad saadanne Spøgeri hafver paa sig/ordelis vidtløftig paa andre Stæder. Hvo
 </prose>
 
 <poetry>
-<nonum><center>IX.</center></nonum>
 <wrap>Jeg lagde mit Hofvet til Elver Høy/mine Øyne de finge en Dvale: Der kom gangendis Toe Jomfruer frem/som gierne vilde med mig tale. Siden jeg hende først saae.</wrap>
 
     <wrap>2. Den eene klapped mig ved hviden Kind/den anden hvisket mig i Øre: Du stat op favren unger Svend/om du vilt Dantzen røre.</wrap>
@@ -4737,7 +4706,7 @@ Hvad saadanne Spøgeri hafver paa sig/ordelis vidtløftig paa andre Stæder. Hvo
 
 <text id="folkeviser2026111435" author="folkeviser" variant="vedel2000042206">
 <head>
-  <title>Saa vinder den Svend sin Jomfru</title>
+  <title><num>X.</num>Saa vinder den Svend sin Jomfru</title>
   <firstline>Jeg tog Øxen paa min Bag</firstline>
   <source pages="172-173" facsimile-pages="227-228"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4748,7 +4717,6 @@ Maa vel ske at vore gamle Danske Poeter hafve villet forstaa noget andet under d
 </prose>
 
 <poetry>
-<nonum><center>X.</center></nonum>
 <wrap>Jeg tog Øxen paa min Bag/jeg vilde det Træ nedfelde; Der kom den Svend som Skofven aatte/hand stack sit Skaft imellem. Saa vinder den Svend sin Jomfru</wrap>
 
     <wrap>2. Hugger du ned min Fæderne Skof/og giører du mig den Vold; Falder det Træ og hører jeg det/saa dyre skalt du det undgielde. Saa vinder den.</wrap>
@@ -4770,7 +4738,7 @@ Maa vel ske at vore gamle Danske Poeter hafve villet forstaa noget andet under d
 
 <text id="folkeviser2026111436" author="folkeviser" variant="vedel2000042203">
 <head>
-  <title>Grefvens Daatters af Vendel ulyckelige Giftermaal</title>
+  <title><num>XI.</num>Grefvens Daatters af Vendel ulyckelige Giftermaal</title>
   <firstline>Jeg blef født saa spæd udi Bur</firstline>
   <source pages="173-175" facsimile-pages="228-230"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4781,7 +4749,6 @@ Udi denne Digt er opsæt Lyckens og Ulyckens Spegel. Denne unge Frøicken var le
 </prose>
 
 <poetry>
-<nonum><center>XI.</center></nonum>
 <wrap>Jeg blef født saa spæd udi Bur/blant Fruer og andre Møer; Svøbte de mig udi Silcke Lagen/og saa udi Skarlagen reed. Der ingen Mand skulde min Sorg alt vide.</wrap>
 
     <wrap>2. Saa tidlige fick jeg Stif-Moder/hun var mig icke god; Hun lagde mig i et forgyldte Skrin/hun skiød mig ud for Flod.</wrap>
@@ -4840,7 +4807,7 @@ Udi denne Digt er opsæt Lyckens og Ulyckens Spegel. Denne unge Frøicken var le
 <!-- PDF231/trykt176, strofe6: kilden trykker med med; uafhængigt nativekontrolleret. -->
 <text id="folkeviser2026111437" author="folkeviser" ignore-tests="repeated-adjacent-word" variant="vedel2000042204">
 <head>
-  <title>Erland Kongens Søn tager Eline unge Arrelvolds Moder til Egte</title>
+  <title><num>XII.</num>Erland Kongens Søn tager Eline unge Arrelvolds Moder til Egte</title>
   <firstline>De Kongens Mænd ride paa Volde</firstline>
   <source pages="176-181" facsimile-pages="231-234"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4851,7 +4818,6 @@ Nogle Danske Viser/som indholde gamle Historiske Bedrift/ere en deel om Elskofs 
 </prose>
 
 <poetry>
-<nonum><center>XII.</center></nonum>
 <wrap>De Kongens Mænd ride paa Volde/de lede baade Hiorte og Hind; De funde under den Lind saa grøn/et saa lidet Kind. Udi Loftet der sofver stolten Eline.</wrap>
 
     <wrap>2. Toge de op denne lille Mand/svøbte hannem i Kaaben blaa; Førde de hannem til Kongens Gaard/de lode hannem Fostermoder faa.</wrap>
@@ -4923,7 +4889,7 @@ Nogle Danske Viser/som indholde gamle Historiske Bedrift/ere en deel om Elskofs 
 
 <text id="folkeviser2026111438" author="folkeviser" variant="vedel2000042205">
 <head>
-  <title>Orm unger Svend</title>
+  <title><num>XIII.</num>Orm unger Svend</title>
   <firstline>Det da var den gamle Grefve</firstline>
   <source pages="181-186" facsimile-pages="234-239"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4934,7 +4900,6 @@ At der hafver været stoer Venskab i fordum Tid imellem Danmarckis og Engelands 
 </prose>
 
 <poetry>
-<nonum><center>XIII.</center></nonum>
 <wrap>Det da var den gamle Grefve/hand vogner om midie Nat: Fortalde hand Dronningen sine stercke Drømme/baade skøt og ofver brat. Af Engeland.</wrap>
 
     <wrap>2. Mig tycktis det jeg paa Vandet var/hos dig Allerkieriste min: Der kom skridendis en Orm frem/hand vilde mig Freden formeene. Af Jutland.</wrap>
@@ -5020,7 +4985,7 @@ At der hafver været stoer Venskab i fordum Tid imellem Danmarckis og Engelands 
 
 <text id="folkeviser2026111439" author="folkeviser" variant="vedel2000050404">
 <head>
-  <title>S. Oluf Konning i Norge</title>
+  <title><num>XIV.</num>S. Oluf Konning i Norge</title>
   <firstline>Oluf Konning og hans Broder</firstline>
   <notes>
     <note editorial="true">Sidetallets sidste ciffer på PDF-side 244 er ikke sikkert læseligt; sidens placering svarer til s. 191.</note>
@@ -5034,7 +4999,6 @@ Denne Vise om Sanct Oluf Konge i Norge/er en Poetiske og icke en Historiske Digt
 </prose>
 
 <poetry>
-<nonum><center>XIV.</center></nonum>
 <wrap>Oluf Konning og hans Broder/de trættis dem om Norge Skier. Det er saa favrt i Trondhiem at hvile.</wrap>
 
     <wrap>2. Hans Broder/de trættis om Norge Skier. Hvilcken af os best seyle kand/hand skal være Kong i Norgis Land. Det er saa favrt i Trondhiem at hvile.</wrap>
@@ -5140,22 +5104,20 @@ Denne Vise om Sanct Oluf Konge i Norge/er en Poetiske og icke en Historiske Digt
 
 <text id="folkeviser2026111440" author="folkeviser" variant="vedel2000050401">
 <head>
-  <title>En anden Vise om St. Oluf Konning i Norge</title>
+  <title><num>XV.</num>En anden Vise om St. Oluf Konning i Norge</title>
   <firstline>Det var Sanct Oluf Konning saa bold</firstline>
   <notes>
     <note editorial="true">Sidetallets sidste ciffer på PDF-side 244 er ikke sikkert læseligt; sidens placering svarer til s. 191.</note>
-    <note editorial="true">Et svagt trykt ord foran »Naade« på s. 191 er markeret som ulæseligt.</note>
   </notes>
   <source pages="191-194" facsimile-pages="244-247"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <prose>
-At mand hafver tillagt St. Oluf/at hand skal hafve haft saa meget at bestille med disse Trolde/som udi Viserne omtalis/holder jeg fore/at skal forstaais der ved/at hand formedelst Guds reene Ord/som hand skikkede og forfremmede i Norge/Island og andre omliggende Øer/hafver forhindret Satans Svøgeri/hvor med de onde Aander hafve forførd den simpel Almue i gamle Dage i Norge/saa vel som udi andre Landskab/under Hedenskabs Vildfarelse og Blindhed. Saa at Satan icke hafver haft den Magt siden den Tid/som hand hafde tilforn hos Vantroens Børn. Saa findis vel ogsaa udi S. Olufs Historie/at hand ofte hafver været i stoer Lifs-Fare/og er der af dog underligen hiulpet/udi Mirackels-Viis/af Guds [ulæseligt]derlige<footnote editorial="true">Ordets begyndelse er utydelig i det benyttede eksemplar; slutningen »derlige« kan læses.</footnote> Naade og synderlige Undsetning. Hvilcket med <pb n="192" facs="244.jpg"/>disse Digt gifvis tilkiende/at den som sig forlader paa Gud/blifver icke forlat/men fanger Magt og Seervinding ved HErrens Nafn/som er det faste Taarn/til hvilcket den Retfærdige flyer/og blifver hiulpen.
+At mand hafver tillagt St. Oluf/at hand skal hafve haft saa meget at bestille med disse Trolde/som udi Viserne omtalis/holder jeg fore/at skal forstaais der ved/at hand formedelst Guds reene Ord/som hand skikkede og forfremmede i Norge/Island og andre omliggende Øer/hafver forhindret Satans Svøgeri/hvor med de onde Aander hafve forførd den simpel Almue i gamle Dage i Norge/saa vel som udi andre Landskab/under Hedenskabs Vildfarelse og Blindhed. Saa at Satan icke hafver haft den Magt siden den Tid/som hand hafde tilforn hos Vantroens Børn. Saa findis vel ogsaa udi S. Olufs Historie/at hand ofte hafver været i stoer Lifs-Fare/og er der af dog underligen hiulpet/udi Mirackels-Viis/af Guds skinbarlige Naade og synderlige Undsetning. Hvilcket med <pb n="192" facs="244.jpg"/>disse Digt gifvis tilkiende/at den som sig forlader paa Gud/blifver icke forlat/men fanger Magt og Seervinding ved HErrens Nafn/som er det faste Taarn/til hvilcket den Retfærdige flyer/og blifver hiulpen.
 </prose>
 
 <poetry>
-<nonum><center>XV.</center></nonum>
 <wrap>Det var Sanct Oluf Konning saa bold/hand raader for Norges Land: Guds Lov hand styret og Rætten hand bød/skulde holde baade Qvinde og Mand. Der skinner Soel som Guld hin røde udi Trondhiem.</wrap>
 
     <wrap>2. St. Oluf lader sig en Snecke bygge/det skeede udi Marstrand: Hand agter sig til Hornelummer/de Trolde til megen vaande.</wrap>
@@ -5199,7 +5161,7 @@ At mand hafver tillagt St. Oluf/at hand skal hafve haft saa meget at bestille me
 
 <text id="folkeviser2026111441" author="folkeviser" variant="vedel2000050405">
 <head>
-  <title>St. Knud Konning udi Danmarck</title>
+  <title><num>XVI.</num>St. Knud Konning udi Danmarck</title>
   <firstline>Solen skinner saa klar om Dagen</firstline>
   <source pages="194-199" facsimile-pages="247-252"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5219,7 +5181,6 @@ Hvad som denne Konning Knuds Historie er anrørendis/er den yderligen beskrefven
 </prose>
 
 <poetry>
-<nonum><center>XVI.</center></nonum>
 <wrap>Solen skinner saa klar om Dagen/alting gifver hun goed styrcke/det er nu kommen saa vel i Lag/at borte er Natten hin mørcke. Den ædle Herre de vog med Uræt.</wrap>
 
     <wrap>2. Danmarck sig glæder og fryder med skil/og stander i feiriste Grøde: Utydske og Trolde ere slagne ihiel/og Afguderi er øde. Den ædle Herre de vog med Uræt.</wrap>
@@ -5319,7 +5280,7 @@ Hvad som denne Konning Knuds Historie er anrørendis/er den yderligen beskrefven
 
 <text id="folkeviser2026111442" author="folkeviser" variant="vedel2000050406">
 <head>
-  <title>St. Knud Hertig</title>
+  <title><num>XVII.</num>St. Knud Hertig</title>
   <firstline>Nu ville vi qvæde om Hertug Knud</firstline>
   <source pages="199-201" facsimile-pages="252-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5330,7 +5291,6 @@ Denne Hertug Knud var Konning Erick Eyegods Søn/som var St. Knud Konges Broder/
 </prose>
 
 <poetry>
-<nonum><center>XVII.</center></nonum>
 <wrap>Nu ville vi qvæde om Hertug Knud/det beste vi kunde paa finde: Hand var ofver Slesvig en Herre prud/trofast af Hierte og Sinde.</wrap>
 
     <wrap><pb n="200" facs="252.jpg"/>2. Urætvished den lagde hand ned/med sine <!-- Rettelsesark: Retvise] urætvise -->Retvise Domme: Saa mangen Mand der glædes ved/og mest udaf de Fromme.</wrap>
@@ -5376,7 +5336,7 @@ Denne Hertug Knud var Konning Erick Eyegods Søn/som var St. Knud Konges Broder/
 
 <text id="folkeviser2026111443" author="folkeviser" variant="vedel2000050403">
 <head>
-  <title>Kong Erich Emune og Sorte Plog</title>
+  <title><num>XVIII.</num>Kong Erich Emune og Sorte Plog</title>
   <firstline>Aarlig om Morgen Lercken hun sang</firstline>
   <source pages="201-205" facsimile-pages="254-258" first-n="101"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5387,7 +5347,6 @@ Denne Konning Erick Emunes Historie beskrifver Saxo udi sin Krønickes Fiortende
 </prose>
 
 <poetry>
-<nonum><center>XVIII.</center></nonum>
 <wrap>Aarlig om Morgen Lercken hun sang/under saa grøn en Lide: Herr Carl klæder sig for sin Seng. Kongen af Dannemarck lader det hefne.</wrap>
 
     <wrap>2. Hand drog paa sin Skiorte saa skiøn/under saa grøn en Lide: Der til skucken Trøye med Silcke grøn. Kongen af Dannemarck.</wrap>
@@ -5455,7 +5414,7 @@ Denne Konning Erick Emunes Historie beskrifver Saxo udi sin Krønickes Fiortende
 
 <text id="folkeviser2026111444" author="folkeviser" variant="vedel2000050402">
 <head>
-  <title>Herr Tidmand</title>
+  <title><num>XIX.</num>Herr Tidmand</title>
   <firstline>Aarle om Morgen det var Dag</firstline>
   <source pages="205-206" facsimile-pages="258-259"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5466,7 +5425,6 @@ Denne Herr Tidmands Vise/sætte vi nest hos Sorte Plogs Vise/af denne Aarsage/at
 </prose>
 
 <poetry>
-<nonum><center>XIX.</center></nonum>
 <wrap>Aarle om Morgen det var Dag/Herr Tidmand klæder sig for sin Seng/og hand drog i sin Skiorte saa skiøn. Det lofver alle de Sønderbo.</wrap>
 
     <wrap>2. Hand drog i sin Skiorte skiøn/og Silcke Trøye var herlige grøn: De Buckeskinds Støfle snørde hand ad Been.</wrap>
@@ -5492,7 +5450,7 @@ Denne Herr Tidmands Vise/sætte vi nest hos Sorte Plogs Vise/af denne Aarsage/at
 
 <text id="folkeviser2026111445" author="folkeviser" variant="vedel2000061801">
 <head>
-  <title>Unge Svercke/ Konning udi Sverrig</title>
+  <title><num>XX.</num>Unge Svercke/ Konning udi Sverrig</title>
   <firstline>Det var unge Svercke</firstline>
   <source pages="206-211" facsimile-pages="259-264"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5503,7 +5461,6 @@ Udi Sverrig var stor U-eenighed/imellem Konning Erichs og Konning Karls Afkom/so
 </prose>
 
 <poetry>
-<nonum><center>XX.</center></nonum>
 <wrap>Det var unge Svercke/ gaar for Dan Konning at stande; Min ædle Herre I det icke fortryde/ jeg klager for eder min Vaande. Thi føre de Ridder deris Skiolde/ der græder saa mangen.</wrap>
 
     <wrap>2. Min Fader er slagen ihiel med Svig/ og jeg af Landet drefven: Dan Konning I laane mig af eders Mænd/ jeg kand det ærligen hefne.</wrap>
@@ -5589,7 +5546,7 @@ Udi Sverrig var stor U-eenighed/imellem Konning Erichs og Konning Karls Afkom/so
 
 <text id="folkeviser2026111446" author="folkeviser" variant="vedel2000061802">
 <head>
-  <title>En unger Frøicken føres af Danmarck til Sverrig</title>
+  <title><num>XXI.</num>En unger Frøicken føres af Danmarck til Sverrig</title>
   <firstline>Min Herre hafver fest en Rosens Blomme</firstline>
   <source pages="211-214" facsimile-pages="264-267"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5600,8 +5557,7 @@ Hvis Daatter denne unge Danske Frøicken hafde været/ eller paa hvad Tid hun er
 </prose>
 
 <poetry>
-<pb n="212" facs="264.jpg"/><nonum><center>XXI.</center></nonum>
-<wrap>Min Herre hafver fest en Rosens Blomme/ Christ unde hende vel til Sverrig at komme. Det hielper saa lidet at qvide.</wrap>
+<pb n="212" facs="264.jpg"/><wrap>Min Herre hafver fest en Rosens Blomme/ Christ unde hende vel til Sverrig at komme. Det hielper saa lidet at qvide.</wrap>
 
     <wrap>2. En Rosens Blomme/ Christ unde hende vel til Sverrig at komme: Der til svarede den Ridder saa rig/ Min Herre lader hente den Jomfru hid.</wrap>
 
@@ -5662,7 +5618,7 @@ Hvis Daatter denne unge Danske Frøicken hafde været/ eller paa hvad Tid hun er
 
 <text id="folkeviser2026111447" author="folkeviser" variant="vedel2000061803">
 <head>
-  <title>Konning Valdamar afferdiger sine Legater efter Dronning Dagmar</title>
+  <title><num>XXII.</num>Konning Valdamar afferdiger sine Legater efter Dronning Dagmar</title>
   <firstline>Konning Valdemar og Herr Strange</firstline>
   <source pages="214-219" facsimile-pages="267-272"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5673,7 +5629,6 @@ Konning Valdamar/ Valdamars Søn/ som kaldes Valde<pb n="215" facs="267.jpg"/>ma
 </prose>
 
 <poetry>
-<nonum><center>XXII.</center></nonum>
 <wrap>Konning Valdemar og Herr Strange/ de sidde ofver breden Bord: Og de begyndte indbyrdis at tale/ saa mangt et gammelt Ord. Der seyler Herr Strange imod Dronning Dagmar.</wrap>
 
     <wrap>2. Hør du Herr Strange hvad jeg siger dig/ du skalt fare af Landet ud: Og du skalt fare til Behmer Land/ og hente min unge Brud.</wrap>
@@ -5759,7 +5714,7 @@ Konning Valdamar/ Valdamars Søn/ som kaldes Valde<pb n="215" facs="267.jpg"/>ma
 
 <text id="folkeviser2026111448" author="folkeviser" variant="vedel2000061804">
 <head>
-  <title>Dronning Dagmars Hiemferd til Danmarck</title>
+  <title><num>XXIII.</num>Dronning Dagmars Hiemferd til Danmarck</title>
   <firstline>Det var Behmer Lands Dronning</firstline>
   <source pages="219-222" facsimile-pages="272-275"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5770,7 +5725,6 @@ Det er vist og sant som mand siger/ at mand trær gierne som mand er kommen af. 
 </prose>
 
 <poetry>
-<nonum><center>XXIII.</center></nonum>
 <wrap>Det var Behmer Lands Dronning/ hun tager sin Daatter at lære: Naar du kommer i Danmarck ind/ dig vides baade Hæder oc Ære. Den Frøicken kom af ædle Behmer Land.</wrap>
 
     <wrap><pb n="220" facs="272.jpg"/>2. Og naar du kommer i Danmarck ind/ da vidis dig Hæder og Ære: Du lad icke Skat ofver Bønderne skrifve/ saa hafve de dig saa kiære. Den Frøicken kom af ædle Behmer Land.</wrap>
@@ -5818,7 +5772,7 @@ Det er vist og sant som mand siger/ at mand trær gierne som mand er kommen af. 
 
 <text id="folkeviser2026111449" author="folkeviser" variant="vedel2000061805">
 <head>
-  <title>Drottning Dagmar spaaes af en Haffrue/ at hun skal døe udi Barnfødsel</title>
+  <title><num>XXIV.</num>Drottning Dagmar spaaes af en Haffrue/ at hun skal døe udi Barnfødsel</title>
   <firstline>Dan Konning hand lader en Haffru grive</firstline>
   <source pages="222-224" facsimile-pages="275-277"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5829,7 +5783,6 @@ Det som ellers almindeligen sigis/ at alle Emtyr/ som vi kalde/ det er Eventyrs 
 </prose>
 
 <poetry>
-<nonum><center>XXIV.</center></nonum>
 <wrap>Dan Konning hand lader en Haffru grive/ den Haffru dantzer paa Tillie: Og den lader hand i Taarnet knibe/ for hun icke fremmet hans Villie.</wrap>
 
     <wrap>2. Dronningen heder paa Svenne to/ den Haffru dantzer paa Tillie: I bede den Haffru for mig indgaa/ for hun skal fremme min Villie.</wrap>
@@ -5877,7 +5830,7 @@ Det som ellers almindeligen sigis/ at alle Emtyr/ som vi kalde/ det er Eventyrs 
 
 <text id="folkeviser2026111450" author="folkeviser" variant="vedel2000061806">
 <head>
-  <title>Dronning Dagmars dødelige Afgang</title>
+  <title><num>XXV.</num>Dronning Dagmars dødelige Afgang</title>
   <firstline>Dronning Dagmar ligger i Ribe siug</firstline>
   <source pages="224-228" facsimile-pages="277-281"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5888,7 +5841,6 @@ Ligerviis som tilforen er omtalet/ at de som danske Viser hafve giort/ hafve bru
 </prose>
 
 <poetry>
-<nonum><center>XXV.</center></nonum>
 <wrap>Dronning Dagmar ligger i Ribe siug/ til Ringsted monne de hende vente; Alle de Fruer i Danmarck ere/ dem lader hun til sig hente. Udi Ringsted hvilis Dronning Dagmar.</wrap>
 
     <wrap>2. I hente mig fire/ I hente mig fem/ I hente mig af de Vise: I hente mig liden Kirstine/ og Herre Carls Søster af Riise.</wrap>
@@ -5972,7 +5924,7 @@ Ligerviis som tilforen er omtalet/ at de som danske Viser hafve giort/ hafve bru
 
 <text id="folkeviser2026111451" author="folkeviser" variant="vedel2000061807">
 <head>
-  <title>Dronning Berngerd</title>
+  <title><num>XXVI.</num>Dronning Berngerd</title>
   <firstline>Aarle om Morgenen langt før Dag</firstline>
   <source pages="229-231" facsimile-pages="282-284"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5983,7 +5935,6 @@ Rygtet/ pleyer mand at sige/ følger Manden til Huset. Saa gaar det her til med 
 </prose>
 
 <poetry>
-<nonum><center>XXVI.</center></nonum>
 <wrap>Aarle om Morgenen langt før Dag/ Morgen-Gafve hun kræfvede for sig: Gifve I mig kiære Herre Samsø/ og en Guldkrone af hver en Møe. Vee da vorde hende Berngerd.</wrap>
 
     <wrap>2. Kongen svarede hand Berngerd saa/ Jomfrue noget mindre I bede maa: Der er saa mangen fattig Møe/ formaar det ey alt for sin Død. Vee da vorde hende Berngerd.</wrap>
@@ -6027,7 +5978,7 @@ Rygtet/ pleyer mand at sige/ følger Manden til Huset. Saa gaar det her til med 
 
 <text id="folkeviser2026111452" author="folkeviser" variant="vedel2000061809">
 <head>
-  <title>Konning Waldemars Fengsel</title>
+  <title><num>XXVII.</num>Konning Waldemars Fengsel</title>
   <firstline>Jeg vil eder en Vise qvæde</firstline>
   <source pages="231-234" facsimile-pages="284-287"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6043,7 +5994,6 @@ Hvad Aarsag der hafver været til Konning Waldemars Fængsel/ findis icke udi Vi
 </poetry>
 
 <poetry>
-<nonum><center>XXVII.</center></nonum>
 <wrap>Jeg vil eder en Vise qvæde/ om I ville den ellers høre: HERre GUD gifve Landet motte stande udi Fred/ og Kongen sin Villie at giøre/ I rider ey.</wrap>
 
     <wrap>2. Der var en Konning i Danmarck/ Kong Waldemar riig og bold: Nock saa hafde hand Borg og Feste/ baade Land og Riger i Vold.</wrap>
@@ -6087,7 +6037,7 @@ Hvad Aarsag der hafver været til Konning Waldemars Fængsel/ findis icke udi Vi
 
 <text id="folkeviser2026111453" author="folkeviser" variant="vedel2000061810">
 <head>
-  <title>S. Erich Konning udi Danmarck</title>
+  <title><num>XXVII.</num>S. Erich Konning udi Danmarck</title>
   <firstline>Som Cain begyndte imod Broder sin</firstline>
   <source pages="234-237" facsimile-pages="287-290"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6098,7 +6048,6 @@ Aar efter Guds Byrd 1250. Neste Aften for S. Laurits Dag/ blef denne fromme Herr
 </prose>
 
 <poetry>
-<nonum><center>XXVII.</center></nonum>
 <wrap>Som Cain begyndte imod Broder sin/ Abel hin gode og fromme: Lagde sig der efter med Falsk og Svig/ uskyldeligen hannem omkomme. Saa falsk hand Broderlag rørte.</wrap>
 
     <wrap>2. Som Cain begyndte med Mord og Drab/ paa sin egen Broder at Feide: Saa findis endnu hans Lige fleere/ som i hans Fodspor træde.</wrap>
@@ -6156,7 +6105,7 @@ Efterdi her talis meget om vore Danske Konger/ og deris forvandte/ staaes det ic
 
 <text id="folkeviser2026111454" author="folkeviser" variant="vedel2000061811">
 <head>
-  <title>Den første Vise om Marsk Stig Anderssøn/ Hvorledis at Konning Erich Glevping besof hans Huus-Frue/ udi midlertid/ at hand var udi Sverrig i Leding</title>
+  <title><num>XXIX.</num>Den første Vise om Marsk Stig Anderssøn/ Hvorledis at Konning Erich Glevping besof hans Huus-Frue/ udi midlertid/ at hand var udi Sverrig i Leding</title>
   <subtitle>Hvorledis at Konning Erich Glepping besof hans Huus-Frue/ udi midlertid/ at hand var udi Sverrig i Leding.</subtitle>
   <firstline>Marsk Stig hand ud af Landet foer</firstline>
   <source pages="237-243" facsimile-pages="290-296"/>
@@ -6168,7 +6117,6 @@ De Viser som ere lagde om Marsk Stig/ de hafve altid været meget gængse her ud
 </prose>
 
 <poetry>
-<nonum><center>XXIX.</center></nonum>
 <wrap>Marsk Stig hand ud af Landet foer/ Og vand baade Hæder og Ære: Hiemme sidder Herr Kong Erick/ hand locker hans Hiertens Kiære. Men Fruen sidder i Siæland/ saa mangt der hun sørger.</wrap>
 
     <wrap>2. Kongen hand skrifver Herr Marsk Stig til/ hand skulde hans Høfvitzmand være: der stund hand borte i Leding var/ hand Voldtog hans hiertens kiære. Men Fruen sidder i Siæland.</wrap>
@@ -6268,7 +6216,7 @@ De Viser som ere lagde om Marsk Stig/ de hafve altid været meget gængse her ud
 
 <text id="folkeviser2026111455" author="folkeviser" variant="vedel2000061812">
 <head>
-  <title>Den Anden Vise om Herr Marsk Stig/ hvorledis hand paa Viborg Lands-Ting gaf Kong Erich Sag/ at hand hafde Voldtaget hans Huusfrue/ og derfore opsagde hannem all Huldskaf og Mandskaf</title>
+  <title><num>XXX.</num>Den Anden Vise om Herr Marsk Stig/ hvorledis hand paa Viborg Lands-Ting gaf Kong Erich Sag/ at hand hafde Voldtaget hans Huusfrue/ og derfore opsagde hannem all Huldskaf og Mandskaf</title>
   <subtitle>hvorledis hand paa Viborg Lands-Ting gaf Kong Erich Sag/ at hand hafde Voldtagen hans Huusfrue/ og derfore opsagde hannem all Huldskaf og Mandskaf.</subtitle>
   <firstline>Marsk Stig vogner om midie Nat</firstline>
   <source pages="243-247" facsimile-pages="296-300"/>
@@ -6280,7 +6228,6 @@ Tilforn er rørt om Herr Marsk Stigs Afkom/ og hvorledis at Konning Erick Gleppi
 </prose>
 
 <poetry>
-<nonum><center>XXX.</center></nonum>
 <wrap>Marsk Stig vogner om midie Nat/ og taler hand til sin Kiære: Leg mig hafver drømt saa underlig/ GUD raade hvad det skal være. Min ædle Herre hin unge Herr Marsk Stig.</wrap>
 
     <wrap>2. Jeg drømte om mit store Skib/ var vorden saa <pb n="244" facs="296.jpg"/>liden en Baad: Borte var Stafn og Styre med alle/ og Landet kunde vi icke faa. Min ædle Herre hin unge Herr Marsk Stig.</wrap>
@@ -6358,7 +6305,7 @@ Tilforn er rørt om Herr Marsk Stigs Afkom/ og hvorledis at Konning Erick Gleppi
 
 <text id="folkeviser2026111456" author="folkeviser" variant="vedel2000072401">
 <head>
-  <title>Den Tredie Vise om Marsk Stig/ hvorledis hand slog Konning Erick ihiel i Finderup</title>
+  <title><num>XXXI.</num>Den Tredie Vise om Marsk Stig/ hvorledis hand slog Konning Erick ihiel i Finderup</title>
   <firstline>De ere saa mange i Danmarck</firstline>
   <source pages="247-253" facsimile-pages="300-306"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6369,7 +6316,6 @@ Der Herr Marsk Stig hafde lofligen undsagt Konning Erick/ som vi nu hafve hørt/
 </prose>
 
 <poetry>
-<nonum><center>XXXI.</center></nonum>
 <wrap>De ere saa mange i Danmarck/ som alle ville Herrer være: Og de ride dennem til Riber By/ og loede sig Klæder skiære. Og nu staar Landet udi Vaade.</wrap>
 
     <wrap>2. De loede sig Klæder skiære af ny/ udi graa Munckenis Lige: Det giorde de icke af anden Sag/ de agtet deris Herrer at svige.</wrap>
@@ -6452,7 +6398,7 @@ Der Herr Marsk Stig hafde lofligen undsagt Konning Erick/ som vi nu hafve hørt/
 
     <wrap>41. Saa fast hug hand udi vreden Borde/ saa fast i haarden Balck: Og hand hug hid og hand hug did/ hand varde hannem som en Skalck.</wrap>
 
-    <wrap>42. De stunge hannem ind ad Bryste Been/ at Hiertet [ulæseligt]<footnote editorial="true">Ordet efter »Hiertet« er beskadiget og ulæseligt i det benyttede eksemplar.</footnote> kunde mest: Med sextan og fyrretifve dødelige Saar/ saa ynckelig blef hand læjt.</wrap>
+    <wrap>42. De stunge hannem ind ad Bryste Been/ at Hiertet som de<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 235, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=286">↬</a></footnote> kunde mest: Med sextan og fyrretifve dødelige Saar/ saa ynckelig blef hand læjt.</wrap>
 
     <wrap>43. De stunge til hannem med Sværd og Spiud/ de gafve hannem ingen Frist: Der de hafde veyet den ædle Herre/ saa søgte hver til sin Hest.</wrap>
 
@@ -6478,7 +6424,7 @@ Der Herr Marsk Stig hafde lofligen undsagt Konning Erick/ som vi nu hafve hørt/
 <!-- Kildekontrol PDF306/trykt253: »at at« er faktisk trykt over to linjer og bevares. -->
 <text id="folkeviser2026111457" author="folkeviser" ignore-tests="repeated-adjacent-word" variant="vedel2000072402">
 <head>
-  <title>Den Fierde Vise om Marsk Stig/ hvorledis hand med sin Anhang drager ind paa Hielm/ og bygger der et Slot/ hvis Grundvold sees der endnu paa denne Dag</title>
+  <title><num>XXXII.</num>Den Fierde Vise om Marsk Stig/ hvorledis hand med sin Anhang drager ind paa Hielm/ og bygger der et Slot/ hvis Grundvold sees der endnu paa denne Dag</title>
   <firstline>De vare vel siu og siu sindtisve</firstline>
   <source pages="253-257" facsimile-pages="306-310"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6489,8 +6435,7 @@ Der Konning Erick var slagen/ som er omtalet/ strax paa andet Aar der efter blef
 </prose>
 
 <poetry>
-<pb n="254" facs="306.jpg"/><nonum><center>XXXII.</center></nonum>
-<wrap>De vare vel siu og siu sindtisve/ de mødtis paa den Hede: Hvad skulle vi nu begynde for Raad/ den Herre er slagen til døde. Men vi ere drefven af Danmarck.</wrap>
+<pb n="254" facs="306.jpg"/><wrap>De vare vel siu og siu sindtisve/ de mødtis paa den Hede: Hvad skulle vi nu begynde for Raad/ den Herre er slagen til døde. Men vi ere drefven af Danmarck.</wrap>
 
     <wrap>2. Den Herre er slagen og lagt udi Lig/ vi hafve vor Fred forbrudt: Vi kunde i Riget ey bygge eller boe/ vi ere af Landet udskudt.</wrap>
 
@@ -6557,7 +6502,7 @@ Der Konning Erick var slagen/ som er omtalet/ strax paa andet Aar der efter blef
 
 <text id="folkeviser2026111458" author="folkeviser" variant="vedel2000072403">
 <head>
-  <title>Den Femte Vise om Marsk Stigs Døttre</title>
+  <title><num>XXXIII.</num>Den Femte Vise om Marsk Stigs Døttre</title>
   <firstline>Marsk Stig hafver de Døttre to</firstline>
   <source pages="257-261" facsimile-pages="310-314"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6572,7 +6517,6 @@ Naar Bisen er død/ da flyer Bierne vilde/ som mand pleyer at sige. Saa er der g
 </poetry>
 
 <poetry>
-<nonum><center>XXXIII.</center></nonum>
 <wrap>Marsk Stig hafver de Døttre to/ saa krancke Skæben monne de faa; Den Eldste tog den Yngste om Haand. Og de fore vide om Verden.</wrap>
 
     <wrap>2. Den Eldste tog den Yngste ved Haand/ saa gunge de dem til Sverrigs Land; Kong Byrge hand <pb n="258" facs="310.jpg"/>kom fra Stefne hiem. Og de foere vide om Verden.</wrap>
@@ -6646,7 +6590,7 @@ Naar Bisen er død/ da flyer Bierne vilde/ som mand pleyer at sige. Saa er der g
 
 <text id="folkeviser2026111459" author="folkeviser" variant="vedel2000072404">
 <head>
-  <title>Den Siette Vise om Marsk Stig</title>
+  <title><num>XXXIV.</num>Den Siette Vise om Marsk Stig</title>
   <firstline>Og der gaar dantz paa Riber Gade</firstline>
   <source pages="261-263" facsimile-pages="314-316"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6657,7 +6601,6 @@ Tilforne er omtalet/ hvorledis Marsk Stig med sine Anhængere hafver hefnd sig p
 </prose>
 
 <poetry>
-<nonum><center>XXXIV.</center></nonum>
 <wrap>Og der gaar dantz paa Riber Gade/ Slottet det er vundet: Der dantze Riddere baade siu og glade. For Erick Konge hin unge/ med dem saa vare de.</wrap>
 
     <wrap>2. Der gaar Dantz paa Riber Bro/ Slottet det er vundet: Der dantzer Riddere med udhuggen Skoe. For Erick Konge hin unge.</wrap>
@@ -6703,7 +6646,7 @@ Tilforne er omtalet/ hvorledis Marsk Stig med sine Anhængere hafver hefnd sig p
 
 <text id="folkeviser2026111460" author="folkeviser" variant="vedel2001020408">
 <head>
-  <title>Den sivende Vise/ hvorledis Ranild blifver udlegger med sin Festemøe Algrefvens Daatter</title>
+  <title><num>XXXV.</num>Den sivende Vise/ hvorledis Ranild blifver udlegger med sin Festemøe Algrefvens Daatter</title>
   <firstline>Ranild beder legge Sadel paa Hest</firstline>
   <source pages="263-264" facsimile-pages="316-317"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6714,7 +6657,6 @@ Det lader sig ansee af denne Vise/ at Ranild Kong Ericks Smaadreng/ hafver være
 </prose>
 
 <poetry>
-<nonum><center>XXXV.</center></nonum>
 <wrap>Ranild beder legge Sadel paa Hest/ det er mig ofte førre sagt/ hin rige Algrefve vil jeg geste: Enddog jeg er udlagt af Venner og Frender mine.</wrap>
 
     <wrap>2. Og Ranild kom der ridendis i Gaard/ det er mig ofte førre sagt/ udstod Algrefven var svøbt i Maard.</wrap>
@@ -6744,7 +6686,7 @@ Det lader sig ansee af denne Vise/ at Ranild Kong Ericks Smaadreng/ hafver være
 
 <text id="folkeviser2026111461" author="folkeviser" variant="vedel2001020409">
 <head>
-  <title>Den Ottende Vise/hvorledis Ranild Jonsøn steylis for Roeskilde</title>
+  <title><num>XXXVI.</num>Den Ottende Vise/hvorledis Ranild Jonsøn steylis for Roeskilde</title>
   <firstline>Det springer nu saa vide om Land</firstline>
   <source pages="264-266" facsimile-pages="317-319"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6755,7 +6697,6 @@ Mand meener at der skulde været tvende Ranilder med/ at slaa Kong Erick ihiel. 
 </prose>
 
 <poetry>
-<nonum><center>XXXVI.</center></nonum>
 <wrap>Det springer nu saa vide om Land/ at Ranild er tagen til fange: Hand hafde icke kommet fra Hielm i Aar/ hafde hand vist det skulde saa gange: Nu giøris paa Ranild det ynckelige Mord/ som hannem er spaad for lange.</wrap>
 
     <wrap>2. Ranild ind ad Dørren træn/ hand bød god Dag sin Herre: Og saa hver den ærlige Hofmand/ som tiener til Hofve med Ære: Christ vogte hver Dannemands kiære Barn/ fra Ulycke fri at være.</wrap>
@@ -6781,7 +6722,7 @@ Mand meener at der skulde været tvende Ranilder med/ at slaa Kong Erick ihiel. 
 
 <text id="folkeviser2026111462" author="folkeviser" variant="vedel2001020407">
 <head>
-  <title>Dronning Ingeborg/Erick Menveds</title>
+  <title><num>XXXVII.</num>Dronning Ingeborg/Erick Menveds</title>
   <firstline>Det var Her Konning Erick</firstline>
   <source pages="266-269" facsimile-pages="319-322"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6792,7 +6733,6 @@ Konning Erick Menved var ickun tolf Aar gammel der hans Fader blef slagen/ og bl
 </prose>
 
 <poetry>
-<nonum><center>XXXVII.</center></nonum>
 <wrap>Det var Her Konning Erick/ hand reed sig under Øe: Feste hand sig Jomfrue Ingeborg/ hun var saa væn en Møe. I bede for dem som Krunen skal bære.</wrap>
 
     <wrap>2. Det da var den Svendske Dronning/ Hun tager sin Daatter at lære: Skalt du Dronning i Danmarck blifve/ lad Bonden icke ofver dig kiære: I bede for dem som Krunen skal bære.</wrap>
@@ -6834,7 +6774,7 @@ Konning Erick Menved var ickun tolf Aar gammel der hans Fader blef slagen/ og bl
 
 <text id="folkeviser2026111463" author="folkeviser" variant="vedel2001020708">
 <head>
-  <title>Konning Erick tog ind udi Meckelborger Land</title>
+  <title><num>XXXVIII.</num>Konning Erick tog ind udi Meckelborger Land</title>
   <firstline>Kongen lader biude ofver alt sit Land</firstline>
   <source pages="269-271" facsimile-pages="322-324"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6845,7 +6785,6 @@ Denne Vise slutis at være lagt om Kong Erick Menveds Tog udi Meckelborg. Thi ha
 </prose>
 
 <poetry>
-<nonum><center>XXXVIII.</center></nonum>
 <wrap>Kongen lader biude ofver alt sit Land/ hand lader dem der til vare/ først hans Riddere og saa hans Mænd/ at de skulle med hannem fare. Hand agter ind til Vendiske Land/ som ligger under Danmarcks Krune: Det er saa ilde gangen i Haand/ det klagis saa mangelunde. Mand hørde der sigis af/ Konning Erick førde saa stærck en Hær/ alt ofver det Øster Haf.</wrap>
 
     <wrap><pb n="270" facs="322.jpg"/>2. For Hviddangers lagde de ind deris Skib/ de loede deris Harnske did hente: Det raade GUd Fader i Himmerig/ naar vi skulle dennem vente. De seylede ofver den salte Søe/ de Danske vare fro og glade: Danmarck dennem strax af siune gick/ Christ haf lof/ der de qvade. Alt med saa megen Sømme/ og der de komme for Rostock ind/ de fafnet saa vel deris komme.</wrap>
@@ -6865,7 +6804,7 @@ Denne Vise slutis at være lagt om Kong Erick Menveds Tog udi Meckelborg. Thi ha
 
 <text id="folkeviser2026111464" author="folkeviser" variant="vedel2000092103">
 <head>
-  <title>Kong Byrge i Sverrige lader tvende sine Brødre svelte ihiel udi Fengsel</title>
+  <title><num>XXXIX.</num>Kong Byrge i Sverrige lader tvende sine Brødre svelte ihiel udi Fengsel</title>
   <firstline>Frue Ingeborg hafver de Brødre Tre</firstline>
   <source pages="271-278" facsimile-pages="324-331"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6876,7 +6815,6 @@ Dette grueligt Mord/ som Kong Byrge i Sverrig/ lod giøre paa sine to Brødre He
 </prose>
 
 <poetry>
-<nonum><center>XXXIX.</center></nonum>
 <wrap>Frue Ingeborg hafver de Brødre Tre/ for Sverrigs Krune deris Lif lode de: For usand Sag saa blefve <!-- Rettelsesark: de Herrer undlifvet] de Herrer alle undlifvet -->de Herrer undlifvet.</wrap>
 
     <wrap>2. De Brødre tre/ for Sverriges Krune deris Lif lode de: De Herrer skulde til Sverrige ride/ Fru Ingeborg bad dennem hiemme bide.</wrap>
@@ -6998,7 +6936,7 @@ Dette grueligt Mord/ som Kong Byrge i Sverrig/ lod giøre paa sine to Brødre He
 
 <text id="folkeviser2026111465" author="folkeviser" variant="vedel2000092101">
 <head>
-  <title>Kong Hogen Hogensøns dødelig Afgang udi Kirckevog paa Ørcknøe</title>
+  <title><num>XL.</num>Kong Hogen Hogensøns dødelig Afgang udi Kirckevog paa Ørcknøe</title>
   <firstline>Det er nu skeed udi vor Tid</firstline>
   <source pages="278-281" facsimile-pages="331-334"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7009,7 +6947,6 @@ Om Norske Konger ere lagt mange skønne Digt af Landsens indfødde Skialdrer. So
 </prose>
 
 <poetry>
-<nonum><center>XL.</center></nonum>
 <wrap>Det er nu skeed udi vor Tid/ som spaad hafver været for lange: Den ædle Helled Herre Hogen/ hand hafver under sig Norge fangen. Og saar er min Haand af min Brynie.</wrap>
 
     <wrap>2. Biuder hand ud ofver Norges Rige/ saa mangen Velbyrdig Mand: baade med Skib og Verie god/ hand agter sig til Skotland. Og saar er min Haand af min Brynie.</wrap>
@@ -7073,7 +7010,7 @@ Om Norske Konger ere lagt mange skønne Digt af Landsens indfødde Skialdrer. So
 
 <text id="folkeviser2026111466" author="folkeviser" variant="vedel2000092102">
 <head>
-  <title>Grefve Gert af Holsten blifver slagen af Her Niels Jepssøn udi Randers</title>
+  <title><num>XLI.</num>Grefve Gert af Holsten blifver slagen af Her Niels Jepssøn udi Randers</title>
   <firstline>Grefven samler alle sine Mænd</firstline>
   <source pages="281-290" facsimile-pages="334-343"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7084,7 +7021,6 @@ Efter Kong Erick Menveds død/ kom hans Broder Christopher til Kongeligt Regimen
 </prose>
 
 <poetry>
-<nonum><center>XLI.</center></nonum>
 <wrap>Grefven samler alle sine Mænd/ hand drager af Sleßvig frem; Og aldrig saae nogen Mand fleere slig/ enten før eller siden dem.</wrap>
 
     <wrap>2. Grefven drog i Danmarck ind/ hannem fulde saa faur en Skare: Fire Bannere og Fire og Tive/ hvo torde imod hannem fare.</wrap>
@@ -7260,7 +7196,7 @@ Efter Kong Erick Menveds død/ kom hans Broder Christopher til Kongeligt Regimen
 
 <text id="folkeviser2026111467" author="folkeviser" variant="vedel2000110901">
 <head>
-  <title>Herr Niels Bugge blifver slagen imod Kongelige Leide</title>
+  <title><num>XLII.</num>Herr Niels Bugge blifver slagen imod Kongelige Leide</title>
   <firstline>Herr Bugge hand bygger op Hald med Ære</firstline>
   <source pages="291-297" facsimile-pages="344-350"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7271,7 +7207,6 @@ Tilforen blef rørt om den skadelige Feide/ som Kong Christoffer blef ført udi 
 </prose>
 
 <poetry>
-<nonum><center>XLII.</center></nonum>
 <wrap>Herr Bugge hand bygger op Hald med Ære/ hand agter den icke i fremmet Mands Være. De ride saa fri giennem Danmarck.</wrap>
 
     <wrap>2. Hald med Ære/ hand agter den icke i fremmet Mands Være: Herr Bugge sidder ofver sit brede Bord/ Kongen af Danmarck sender hannem Ord.</wrap>
@@ -7383,7 +7318,7 @@ Tilforen blef rørt om den skadelige Feide/ som Kong Christoffer blef ført udi 
 
 <text id="folkeviser2026111468" author="folkeviser" variant="vedel2000110902">
 <head>
-  <title>Kongens Søn af Engeland</title>
+  <title><num>XLIII.</num>Kongens Søn af Engeland</title>
   <firstline>Kongens Søn af Engeland</firstline>
   <source pages="297-302" facsimile-pages="350-355"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7394,7 +7329,6 @@ Hvo denne Kongens Søn af Engeland hafver været/ formeldis icke udi Visen/ ey h
 </prose>
 
 <poetry>
-<nonum><center>XLIII.</center></nonum>
 <wrap>Kongens Søn af Engeland/ hannem skinner Guld paa hviden Haand/ Og hannem skinner Guld paa Sadelbue: Men Børen blæser dennem Vesten ind for Danmarck.</wrap>
 
     <wrap><pb n="298" facs="350.jpg"/>2. Og hannem skinner Guld paa Sadelbue/ hand hafver Trolofvet saa stolt en Jomfrue: Den Kongens Søn lader vircke en Knar. Men Børen blæser dennem Vesten ind for Danmarck.</wrap>
@@ -7486,7 +7420,7 @@ Hvo denne Kongens Søn af Engeland hafver været/ formeldis icke udi Visen/ ey h
 
 <text id="folkeviser2026111469" author="folkeviser" variant="vedel2000110903">
 <head>
-  <title>Dronning Margrete Waldemars Daatter/ ofvervinder og fanger Konning Albret af Sverrige</title>
+  <title><num>XLIV.</num>Dronning Margrete Waldemars Daatter/ ofvervinder og fanger Konning Albret af Sverrige</title>
   <firstline>En standende Strid i Sverrige</firstline>
   <source pages="302-308" facsimile-pages="355-361"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7497,7 +7431,6 @@ Anno Domini 1363. blef Konning Albret Hertug Albrets Søn af Meckelborg indført
 </prose>
 
 <poetry>
-<nonum><center>XLIV.</center></nonum>
 <wrap>En standende Strid i Sverrige/ og saa i Vester Gytland: Konning Albret og hans gode Hofmænd/ da agte sig ud af Land. Fordi da ligger Svenden udi Bøien.</wrap>
 
     <wrap>2. Og det springer nu saa vide/ saa vide om Sverrigs Krone: Konning Albret med Rytter og Knegte/ og de ville ind til Skaane.</wrap>
@@ -7603,7 +7536,7 @@ Anno Domini 1363. blef Konning Albret Hertug Albrets Søn af Meckelborg indført
 
 <text id="folkeviser2026111470" author="folkeviser" variant="vedel2000110904">
 <head>
-  <title>Konning Christoffer nedlegger de oprørske Bønder udi Nørre Jutland</title>
+  <title><num>XLV.</num>Konning Christoffer nedlegger de oprørske Bønder udi Nørre Jutland</title>
   <firstline>Hertugen udaf Beier Land</firstline>
   <source pages="308-310" facsimile-pages="361-363"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7614,7 +7547,6 @@ Efter at Konning Christoffer var kommen til Kongeligt Regimente/ efter sin Morbr
 </prose>
 
 <poetry>
-<nonum><center>XLV.</center></nonum>
 <wrap>Hertugen udaf Beier Land/ hand er en Herre saa rig: Der er ingen udi all den Egn/ som hannem kand være lig.</wrap>
 
     <wrap>2. Det var Kong Christoffer hin bolde/ hand skref de Brefve omkring: Biuder hand dermed alle sine Mænd/ at de møde hannem til Tinge.</wrap>
@@ -7662,7 +7594,7 @@ Efter at Konning Christoffer var kommen til Kongeligt Regimente/ efter sin Morbr
 
 <text id="folkeviser2026111471" author="folkeviser" variant="vedel2000110905">
 <head>
-  <title>Konning Christian den Første blifver Herr Jfver Axelsøn vred/ for sin Ustadighed</title>
+  <title><num>XLVI.</num>Konning Christian den Første blifver Herr Jfver Axelsøn vred/ for sin Ustadighed</title>
   <firstline>Det var Herr Ifver Axelsøn</firstline>
   <source pages="310-313" facsimile-pages="363-366"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7673,7 +7605,6 @@ Udi imidlertid at den store Ueenighed og Oprør hafver været udi Sverrige/ udi 
 </prose>
 
 <poetry>
-<nonum><center>XLVI.</center></nonum>
 <wrap>Det var Herr Ifver Axelsøn/ Hand sider paa Gudland Skære: Hand siger hand vil til Sverrige fare/ og hente sin Hiertens Kiære. Herr Ifver hand bryder den stercke Bølge for Gudøland.</wrap>
 
     <wrap>2. Herr Ifver hand seyler til Stockholms By/ Carl Knudsøns Daatter at gieste. Det sige alle som det hør eller spør/ det blifver icke for hans beste. Herr Ifver hand bryder.</wrap>
@@ -7721,7 +7652,7 @@ Udi imidlertid at den store Ueenighed og Oprør hafver været udi Sverrige/ udi 
 
 <text id="folkeviser2026111472" author="folkeviser" variant="vedel2000110906">
 <head>
-  <title>Konning Hans fæster Fræcken Kirstine/ Churførstens Hertug Ernstis Daatter af Saxen</title>
+  <title><num>XLVII.</num>Konning Hans fæster Fræcken Kirstine/ Churførstens Hertug Ernstis Daatter af Saxen</title>
   <firstline>Konning Hans hand sider paa Kiøbenhafn</firstline>
   <source pages="313-318" facsimile-pages="366-371"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7732,7 +7663,6 @@ Aar efter GUds Byrd/ 1477/ sende Konning Christian den Første sine Legater til 
 </prose>
 
 <poetry>
-<nonum><center>XLVII.</center></nonum>
 <wrap>Konning Hans hand sider paa Kiøbenhafn/ hand lader de Lønbrefve skrifve: Og sender hand dennem til Nørre Jutland/ Herr Erick Ottesøn at gieste.</wrap>
 
     <wrap>2. Det var Herr Erick Ottesøn/ der hand de Lønbrefve saae: Hand skød Varafvel og Terning fra sig/ bad sadele Ganger graa.</wrap>
@@ -7818,7 +7748,7 @@ Aar efter GUds Byrd/ 1477/ sende Konning Christian den Første sine Legater til 
 
 <text id="folkeviser2026111473" author="folkeviser" variant="vedel2000110907">
 <head>
-  <title>Konning Hans drager ind i Dytmersken/ og mister et stort Antal Krigs-Folck</title>
+  <title><num>XLVIII.</num>Konning Hans drager ind i Dytmersken/ og mister et stort Antal Krigs-Folck</title>
   <firstline>De Fugle hafve faat saa underlig et Raad</firstline>
   <source pages="318-320" facsimile-pages="371-373"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7829,7 +7759,6 @@ Denne Digt er lagt om den Krig som K. Hans med sin Broder Hertug Frederich af Ho
 </prose>
 
 <poetry>
-<nonum><center>XLVIII.</center></nonum>
 <wrap>De Fugle hafve faat saa underlig et Raad/ de vilde saa gierne hafve af den Braad; Som var opædt og alt fortær'd/ for langen Tid af en anden Herd; Og mangen Mand kom til Vaande.</wrap>
 
     <wrap>2. Og der kom fluende en Flock af Star/ de viste ey Veyen hvort de vilde fare; De hafde i agt at flue saa gent/ hafde det icke blefven dem formeent; De maatte der blifve paa Hede.</wrap>
@@ -7861,7 +7790,7 @@ Denne Digt er lagt om den Krig som K. Hans med sin Broder Hertug Frederich af Ho
 
 <text id="folkeviser2026111474" author="folkeviser" variant="vedel2000110908">
 <head>
-  <title>Konning Christian den Fangen</title>
+  <title><num>XLIX.</num>Konning Christian den Fangen</title>
   <firstline>Christe GUd jeg vil dig ære</firstline>
   <notes>
     <note editorial="true">Trykkets indledning tilskriver kun tentativt visen til Christian II: »meenis at skulde være digtet af«.</note>
@@ -7875,7 +7804,6 @@ Denne Vise/ meenis at skulde være digtet af Konning Christian den Anden/ udi hv
 </prose>
 
 <poetry>
-<nonum><center>XLIX.</center></nonum>
 <wrap>Christe GUd jeg vil dig ære/ for din Naade og Miskund: Dog Lycken monne fra mig være/ som mig gaf Konge Nafn. Ofver tre Konge-Riger/ af hvilcke jeg maatte undvige: Med Hustru og Børn saa skiønne/ HERre tag mig til Naade igien.</wrap>
 
     <wrap>2. Jeg hafver ogsaa forlaaren min Dronning kysk og reen: Af Keyserlig Blod var baaren/ Elisa<pb n="321" facs="373.jpg"/>beth Allerkiæriste min: Hun hafde ingen skyld med alle/ lad hende dig vel befalde: Vær hende Miskundelig/ thi Skylden findis all hos mig.</wrap>
@@ -7903,7 +7831,7 @@ Denne Vise/ meenis at skulde være digtet af Konning Christian den Anden/ udi hv
 
 <text id="folkeviser2026111475" author="folkeviser" variant="vedel2000110909">
 <head>
-  <title>Konning Friderich den Først annammes efter Kong Christian II. til Konning udi Danmarck</title>
+  <title><num>L.</num>Konning Friderich den Først annammes efter Kong Christian II. til Konning udi Danmarck</title>
   <firstline>Alle smaa Fugle i Skofven er</firstline>
   <source pages="322-324" facsimile-pages="375-377"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7914,8 +7842,7 @@ Efter at Konning Christian II. var rømt af Danmarck/ blef hans Farbroder Konnin
 </prose>
 
 <poetry>
-<pb n="323" facs="375.jpg"/><nonum><center>L.</center></nonum>
-<wrap>Alle smaa Fugle i Skofven er/ de gifver paa Høgen stor Klage: Hand rifver af dem baade Feire og Dun/ og vil dem af Skofven jage. Men Ørnen bygger i Felden ud.</wrap>
+<pb n="323" facs="375.jpg"/><wrap>Alle smaa Fugle i Skofven er/ de gifver paa Høgen stor Klage: Hand rifver af dem baade Feire og Dun/ og vil dem af Skofven jage. Men Ørnen bygger i Felden ud.</wrap>
 
     <wrap>2. Saa fløye de op i Eege-Top/ de lagde et Raad paa ny; Hvorledis de skulde en Konning faa/ dem kunde fra Høgen fri.</wrap>
 
@@ -7958,7 +7885,7 @@ Efter at Konning Christian II. var rømt af Danmarck/ blef hans Farbroder Konnin
 
 <text id="folkeviser2026111476" author="folkeviser" variant="vedel2000110910">
 <head>
-  <title>Konning Christian III. veljes til Konge udi Danmarck/ og fordrifver med stoer Lycke Grefve Christoffer af Oldenborg/ med sine Anhængere</title>
+  <title><num>LI.</num>Konning Christian III. veljes til Konge udi Danmarck/ og fordrifver med stoer Lycke Grefve Christoffer af Oldenborg/ med sine Anhængere</title>
   <firstline>Udi Øfrigheds Vold at være</firstline>
   <source pages="325-330" facsimile-pages="378-383"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7969,7 +7896,6 @@ EFter at Konning Friderich var hendød Anno Domini 1533/ stod Danmarckis Rige pa
 </prose>
 
 <poetry>
-<nonum><center>LI.</center></nonum>
 <wrap>Udi Øfrigheds Vold at være/ er sandelig skicket af GUd: Hvem dem icke holder i Ære/ hand giør imod Guds Bud. Thi vil jeg trolig raade/ baade ædel/ Fattig og Rige/ Speyle sig udi mange <pb n="326" facs="378.jpg"/>Lands Skade/ der ofver er kommen i Vaade/ af Oprørisk Uchristeligt Svig.</wrap>
 
     <wrap>2. Der mand skref Tusind Fem hundrede/ og tre og Tredive Aar/ blefve Danske Mand saare bekymrede/ der de deris Konning ombaar: Den Christelig Første og Herre/ ved Nafn Konning Frederich/ Rigens Raad strax sammen komme/ en Konning at keyse til fromme/ efter Rigens gamle Skick.</wrap>
@@ -8021,7 +7947,7 @@ EFter at Konning Friderich var hendød Anno Domini 1533/ stod Danmarckis Rige pa
 
 <text id="bredal2026111401" author="bredal" variant="vedel2000110911a">
 <head>
-  <title>Konning Christian III. Christelig Afgang af denne Verden</title>
+  <title><num>LII.</num>Konning Christian III. Christelig Afgang af denne Verden</title>
   <firstline>Vi kunde formercke baade Aarle og silde</firstline>
   <source pages="330-335" facsimile-pages="383-388"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8032,7 +7958,6 @@ DEr Konning Christian III. hafde regeret gandske Christeligen og vel udi Danmarc
 </prose>
 
 <poetry>
-<nonum><center>LII.</center></nonum>
 <wrap>Vi kunde formercke baade Aarle og silde/ at hvo vel lefver døer aldrig ilde/ Døden kand hannem ey Skade giøre: Saa monne det Konning Christian gaa/ en salig Afgang den monne hand faa/ som vi nu fanger at høre.</wrap>
 
     <wrap>2. Paa Kolding-Huus det Slot med Ære/ Den Dag nest efter Jule Aften monne være/ begynte den Herre og sagde: Hos mig hafver været en Ven saa god/ hand hafver mig trøstet med et frit Mod/ det mig gandske vel behagede.</wrap>
@@ -8088,7 +8013,7 @@ DEr Konning Christian III. hafde regeret gandske Christeligen og vel udi Danmarc
 
 <text id="folkeviser2026111477" author="folkeviser" variant="vedel2000110911">
 <head>
-  <title>Konning Friderich II. med sine Farbrødre tvinger de ulydige Dytmersker under sig med Krigs-Magt</title>
+  <title><num>LIII.</num>Konning Friderich II. med sine Farbrødre tvinger de ulydige Dytmersker under sig med Krigs-Magt</title>
   <firstline>Vol an</firstline>
   <source pages="335-340" facsimile-pages="388-393"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8099,7 +8024,6 @@ Tilforn er omtalet/ hvorledis at Konning Hans for 50 Aar forleden/ førde et meg
 </prose>
 
 <poetry>
-<nonum><center>LIII.</center></nonum>
 <wrap>Vol an/ vol an udi Guds Nafn/ af Krig og Feide giør vi af Safn/ som nylige er skeed for sande: De Rytter og Knegte hafve vunden stor Priis/ med Vaaben og Verje efter Krigs viis/ udi de Dytmerske Lande.</wrap>
 
     <wrap>2. Der mand skref tusind fire hundert Aar/ fire og halfierdesindstive det var/ saae mand en Konning ud<pb n="336" facs="388.jpg"/>ride: Af Dannemarck med Pilegrims Staf/ hand agtet sig til den Hellige Graf/ den Reyse blef kyndt saa vide.</wrap>
@@ -8173,7 +8097,7 @@ Tilforn er omtalet/ hvorledis at Konning Hans for 50 Aar forleden/ førde et meg
 
 <text id="folkeviser2026111478" author="folkeviser" variant="vedel2000110912">
 <head>
-  <title>Om det merckelige Falckenbergs Slag/ som Konning Friderich II. beholdt imod de Svenske/ den 20 Octobris/ Anno Domini 1565</title>
+  <title><num>LV.</num>Om det merckelige Falckenbergs Slag/ som Konning Friderich II. beholdt imod de Svenske/ den 20 Octobris/ Anno Domini 1565</title>
   <firstline>Vel er det sande i Lesten staar</firstline>
   <source pages="341-354" facsimile-pages="394-407"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8187,7 +8111,6 @@ Om den langvarige Svenske Feide/ som sig udi vor Tid hafver begifven/ ere vel al
 </poetry>
 
 <poetry>
-<nonum><center>LV.</center></nonum>
 <wrap>Vel er det sande i Lesten staar/ den stercke sit Huus at giemme: Men kommer der den som meere formaar/ da trengis den Stercke at rømme.</wrap>
 
     <wrap>2. Der JEsus Christus Guds ævig Søn/ slog sig med Diefvelens Rige: Da fald os til den Seyr saa skiøn/ og hin den stercke maatte vige.</wrap>
@@ -8449,7 +8372,7 @@ Om den langvarige Svenske Feide/ som sig udi vor Tid hafver begifven/ ere vel al
 
 <text id="folkeviser2026111479" author="folkeviser" variant="vedel2000110913">
 <head>
-  <title>Konning Christian IV. udvald Konge til Danmarck og Norge/ &amp;c. beklager sin Herre Faders Afgang/ og fortrøster sig paa GUd/ efter som hans Sprog og Symbolum liuder</title>
+  <title><num>LV.</num>Konning Christian IV. udvald Konge til Danmarck og Norge/ &amp;c. beklager sin Herre Faders Afgang/ og fortrøster sig paa GUd/ efter som hans Sprog og Symbolum liuder</title>
   <firstline>Christe GUd og Mand jeg maa dig klage</firstline>
   <source pages="354-356" facsimile-pages="407-409"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8464,8 +8387,7 @@ GAndske saare klageligt og sørgeligt er det for menige Danmarckis Indbyggere/ a
 </prose>
 
 <poetry>
-<pb n="355" facs="407.jpg"/><nonum><center>LV.</center></nonum>
-<nonum><center>1.</center></nonum>
+<pb n="355" facs="407.jpg"/><nonum><center>1.</center></nonum>
 <w>C</w>hriste GUd og Mand jeg maa dig klage/
 <w>H</w>vad Sorg mig hendis i Ungdoms Dage/
 <w>R</w>aadløs staar jeg i Vaande/
@@ -8565,7 +8487,7 @@ Altid at digte/ hver efter sin Sæd.
 
 <text id="folkeviser2026111480" author="folkeviser" ignore-tests="title-trailing-punctuation" variant="vedel2001010204">
 <head>
-  <title>Spanie Land og Mycklegaard/ &amp;c.</title>
+  <title><num>I.</num>Spanie Land og Mycklegaard/ &amp;c.</title>
   <firstline>Spanie Land og Myklegaard</firstline>
   <source pages="357-363" facsimile-pages="410-416"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8576,8 +8498,7 @@ Denne er ogsaa en gammel Dansk Vise/som haver altid været almindelig her udi Ri
 </prose>
 
 <poetry>
-<pb n="358" facs="410.jpg"/><nonum><center>I.</center></nonum>
-<wrap>Spanie Land og Myklegaard/ de ligge saa langt af Lee: De Herrer sende hver andre Bud/ der af saa yppis deris Vrede. De ædelige Sønner og de rige.</wrap>
+<pb n="358" facs="410.jpg"/><wrap>Spanie Land og Myklegaard/ de ligge saa langt af Lee: De Herrer sende hver andre Bud/ der af saa yppis deris Vrede. De ædelige Sønner og de rige.</wrap>
 
     <wrap>2. Det var Knud af Myklegaard/ hand taler til Broder sin: Og du skalt indtil Spanie Land/ og føre did Sendebrefve mine.</wrap>
 
@@ -8690,7 +8611,7 @@ Denne er ogsaa en gammel Dansk Vise/som haver altid været almindelig her udi Ri
 
 <text id="folkeviser2026111481" author="folkeviser" variant="vedel2001010203">
 <head>
-  <title>Herr Jon Rimaardsøns Skriftemaal og Endeligt</title>
+  <title><num>II.</num>Herr Jon Rimaardsøns Skriftemaal og Endeligt</title>
   <firstline>Snecken hun ligger paa Lande</firstline>
   <source pages="363-367" facsimile-pages="416-420"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8716,7 +8637,6 @@ Tvende Omqveddninge ere sæt til denne Vjse/ som den og ellers siunges anderledi
 </prose>
 
 <poetry>
-<nonum><center>II.</center></nonum>
 <wrap>Snecken hun ligger paa Lande/ og Græsset under hende groer: Og hende styrde aldrig saa rask en Hofmand/ siden hende styrde Herre Jon. Men Søen hun tager saa mangen.</wrap>
 
     <wrap>2. Dan Konning hand sidder udi Ribe/ og skrifver hand ud saa vide: Hand biuder alle sine gode Hofmænd/ af Styreshafn sig udrede.</wrap>
@@ -8790,7 +8710,7 @@ Tvende Omqveddninge ere sæt til denne Vjse/ som den og ellers siunges anderledi
 
 <text id="folkeviser2026111482" author="folkeviser" variant="vedel2001010201">
 <head>
-  <title>Liden Danved og unge Svend Trøst</title>
+  <title><num>III.</num>Liden Danved og unge Svend Trøst</title>
   <firstline>Hvad skal jeg i Danmarck</firstline>
   <source pages="367-370" facsimile-pages="420-423"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8801,7 +8721,6 @@ Det er icke usandt mand siger/at føre sviger de Sorne end de Baarne/og at Blode
 </prose>
 
 <poetry>
-<nonum><center>III.</center></nonum>
 <wrap>Hvad skal jeg i Danmarck/ deris Brynie ere mig for tunge: De Danske Hofmænd de spotte <pb n="368" facs="420.jpg"/>mig/ for jeg kand icke deris Tunge. Men jeg nimmer aldrig goden Danske.</wrap>
 
     <wrap>2. Det var ungen Dareved/ hand lader legge Sadel paa Hest/ Jeg vil ride til Borreby/ Min kiere Moder at geste.</wrap>
@@ -8859,7 +8778,7 @@ Det er icke usandt mand siger/at føre sviger de Sorne end de Baarne/og at Blode
 
 <text id="folkeviser2026111483" author="folkeviser" variant="vedel2001010202">
 <head>
-  <title>Palle/ Baar og Liden/ tre Brødre dræbe hver anden</title>
+  <title><num>IV.</num>Palle/ Baar og Liden/ tre Brødre dræbe hver anden</title>
   <firstline>Liden hand rider til Tinge</firstline>
   <source pages="370-371" facsimile-pages="423-424"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8870,7 +8789,6 @@ Undertiden er det saa som sagd er/ at Brødre ere hin anden tryggeste/men det ve
 </prose>
 
 <poetry>
-<nonum><center>IV.</center></nonum>
 <wrap>Liden hand rider til Tinge/lader skue sine dødelig Saar; Og det giorde mig aldrig nogen Verdsens Mand/ foruden min Broder Baar. Der de icke ride maatte.</wrap>
 
     <wrap><pb n="371" facs="423.jpg"/>2. Opstod unge Herre Baar/ og biuder hand for sig Lov: Og jeg biuder dig baade Guld og Sølf/ der til min Fæderns Skov. Der de icke ride maatte.</wrap>
@@ -8898,7 +8816,7 @@ Undertiden er det saa som sagd er/ at Brødre ere hin anden tryggeste/men det ve
 
 <text id="folkeviser2026111484" author="folkeviser" variant="vedel2001020701">
 <head>
-  <title>Nilaus Baggisøn og brune Herr Erick</title>
+  <title><num>V.</num>Nilaus Baggisøn og brune Herr Erick</title>
   <firstline>Det var Nilaus Baggisøn</firstline>
   <source pages="372-373" facsimile-pages="425-426"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8909,7 +8827,6 @@ Af ringe Aarsage kommer ofte stor Trætte/som blifver Mennisken indbyrdis til st
 </prose>
 
 <poetry>
-<nonum><center>V.</center></nonum>
 <wrap>Det var Nilaus Baggisøn/ hand beder legge Sadel paa Hest: Og vi ville ride os op paa Land/ hin brune Herr Erick at Gieste. De Herrer ligge slagne paa Volden i saa saare.</wrap>
 
     <wrap>2. Herr Nilaus og hans gode Hofmænd/de komme der ridendis i Gaard/ Og ude stoed brune Herr Erick/ hand var vel svøbt i Maard. De Herrer.</wrap>
@@ -8937,7 +8854,7 @@ Af ringe Aarsage kommer ofte stor Trætte/som blifver Mennisken indbyrdis til st
 
 <text id="folkeviser2026111485" author="folkeviser" variant="vedel2001020702">
 <head>
-  <title>Stolt Signild hielper sin Broder af Døds-Nød</title>
+  <title><num>VI.</num>Stolt Signild hielper sin Broder af Døds-Nød</title>
   <firstline>Stolte Signild lader brygge og blande Viin</firstline>
   <source pages="373-375" facsimile-pages="426-428"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8948,7 +8865,6 @@ Qvinder kunde ogsaa giøre Mands Gierning: Som vi see baade af denne Digt og and
 </prose>
 
 <poetry>
-<nonum><center>VI.</center></nonum>
 <wrap>Stolte Signild lader brygge og blande Viin/ saa faur da falder den Rhin: Hun biuder hendis Broder hiem til sin. Udi Brynie alle.</wrap>
 
     <wrap><pb n="374" facs="426.jpg"/>2. Og de skienckte Miød og de skienckte Viin/ saa faur da falder den Rhin: De skienckte saa lenge som Solen skin. Udi Brynie alle.</wrap>
@@ -8992,7 +8908,7 @@ Qvinder kunde ogsaa giøre Mands Gierning: Som vi see baade af denne Digt og and
 
 <text id="folkeviser2026111486" author="folkeviser" ignore-tests="title-trailing-punctuation" variant="vedel2001020703">
 <head>
-  <title>Søster spurde hun anden/ &amp;c.</title>
+  <title><num>VII.</num>Søster spurde hun anden/ &amp;c.</title>
   <firstline>Søster spurde hun anden</firstline>
   <source pages="375-378" facsimile-pages="428-431"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9003,8 +8919,7 @@ Det som tilforne rørt er om Signild hendis Manddom/sees ogsaa her det samme om 
 </prose>
 
 <poetry>
-<pb n="376" facs="428.jpg"/><nonum><center>VII.</center></nonum>
-<wrap>Søster spurde hun anden/ for den der mig hafver lofvet i Løn: Og vilt du dig icke Mande. Hun boer under Skofven i saa grønnen.</wrap>
+<pb n="376" facs="428.jpg"/><wrap>Søster spurde hun anden/ for den der mig hafver lofvet i Løn: Og vilt du dig icke Mande. Hun boer under Skofven i saa grønnen.</wrap>
 
     <wrap>2. Jeg vil mig icke gifte under Øe/for den der mig hafver lofvet i Løn: Før jeg faar hefnd min Faders Død. Hun boer under Skofven.</wrap>
 
@@ -9055,7 +8970,7 @@ Det som tilforne rørt er om Signild hendis Manddom/sees ogsaa her det samme om 
 
 <text id="folkeviser2026111487" author="folkeviser" variant="vedel2001020704">
 <head>
-  <title>Daatter spurde hun Moder</title>
+  <title><num>VIII.</num>Daatter spurde hun Moder</title>
   <firstline>Daatter spurde hun Moder</firstline>
   <source pages="378-380" facsimile-pages="431-433"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9072,7 +8987,6 @@ Din Fiendis Konst og aabenbar Feide.
 </poetry>
 
 <poetry>
-<nonum><center>VIII.</center></nonum>
 <wrap>Daatter spurde hun Moder/ der falder saa faur en Rim: Hafde jeg aldrig nogen Broder. Saa vel da ganges der Dantzen.</wrap>
 
     <wrap>2. Brødre dem aatte du bolde/ der falder saa faur en Rim: De ere dem i Grefvens Volde.</wrap>
@@ -9114,7 +9028,7 @@ Din Fiendis Konst og aabenbar Feide.
 
 <text id="folkeviser2026111488" author="folkeviser" variant="vedel2001020707">
 <head>
-  <title>Herr Thule Vognsøn med sine Brødre slaar Herr Graa-Svend ihiel/ og hefner sin Faders Død</title>
+  <title><num>IX.</num>Herr Thule Vognsøn med sine Brødre slaar Herr Graa-Svend ihiel/ og hefner sin Faders Død</title>
   <firstline>I Lunde Kircke der yppis en Stefn</firstline>
   <source pages="380-384" facsimile-pages="433-437"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9125,7 +9039,6 @@ Disse tvende Adels Herrer hafver begge boed og bygt udi Lunde Sogn i Vester Herr
 </prose>
 
 <poetry>
-<nonum><center>IX.</center></nonum>
 <wrap>I Lunde Kircke der yppis en Stefn/ og der rider til baade Ridder og Svenne/Ridder og Svenne Jomfruer og Møer/ den Danske Dronning i Skarlagen rød. Lefver hand Thule Vognsøn/ og det skal hefnis.</wrap>
 
     <wrap><pb n="381" facs="433.jpg"/>2. Jomfruer og Møer/ og Dansken Dronning i Skarlagen rød: Frue Mette lille lader en Guld-Stoel giøre/ lader den i Lunde Kircke indføre. Lefver hand Thule Vognsøn/ og det skal hefnis.</wrap>
@@ -9193,7 +9106,7 @@ Disse tvende Adels Herrer hafver begge boed og bygt udi Lunde Sogn i Vester Herr
 
 <text id="folkeviser2026111489" author="folkeviser" variant="vedel2001020706">
 <head>
-  <title>Og jeg stod for min Herris Bord</title>
+  <title><num>X.</num>Og jeg stod for min Herris Bord</title>
   <firstline>Og jeg stod for min Herris Bord</firstline>
   <source pages="384-386" facsimile-pages="437-439"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9204,7 +9117,6 @@ Hvad heller denne Vise skal være Eventyrs Digt eller Sandsagn/kand vel tvilis. 
 </prose>
 
 <poetry>
-<nonum><center>X.</center></nonum>
 <wrap>Og jeg stod for min Herris Bord/ jeg skienckte baade Miød og Viin: Og da kom mig de Tidende fore/ at slagen var Broder min. Jeg maatte icke Fred for Sverrigis Konning nyde.</wrap>
 
     <wrap>2. Og saa fulde jeg min Herre til Seng/ der til hans Kiære til Hvile: Saa ledde jeg ud min gode Hest/ lagde paa forgyldene Mile.</wrap>
@@ -9240,7 +9152,7 @@ Hvad heller denne Vise skal være Eventyrs Digt eller Sandsagn/kand vel tvilis. 
 
 <text id="folkeviser2026111490" author="folkeviser" variant="vedel2001020705">
 <head>
-  <title>Herr Verner undkommer af Lindholms Huus med Liste fra Frue Ingeborg</title>
+  <title><num>XI.</num>Herr Verner undkommer af Lindholms Huus med Liste fra Frue Ingeborg</title>
   <firstline>Paa Lindholm Huus</firstline>
   <source pages="386-388" facsimile-pages="439-441"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9251,7 +9163,6 @@ Hvo denne Herr Verner eller Frue Ingeborg hafver været/eller om hvilcket Huus d
 </prose>
 
 <poetry>
-<nonum><center>XI.</center></nonum>
 <wrap>Paa Lindholm Huus/ de Svenne de dricke og giøre got Rus; De Svenne de dricke og giøre sig glad/ saa giør Herr Verner i Tornet sad. De Fruer kunde aldrig giemme saa riger en Fange.</wrap>
 
     <wrap>2. De Svenne de giøre dem glad/ saa giorde og Herr Verner i Taarnet sad; Frue Ingeborg vogner/og op hun saae/ hvilcken af mine Møer der qvæder saa. De Fruer kunde aldrig giemme.</wrap>
@@ -9293,7 +9204,7 @@ Hvo denne Herr Verner eller Frue Ingeborg hafver været/eller om hvilcket Huus d
 
 <text id="folkeviser2026111491" author="folkeviser" variant="vedel2001010205">
 <head>
-  <title>Oluf Strangesøn/ og unge Hafburd</title>
+  <title><num>XII.</num>Oluf Strangesøn/ og unge Hafburd</title>
   <firstline>Det var Oluf Strangesøn</firstline>
   <source pages="388-391" facsimile-pages="441-444"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9304,7 +9215,6 @@ Almindeligen pleyer det saa at gaa/at den som Trætten først ypper/og fordrer e
 </prose>
 
 <poetry>
-<nonum><center>XII.</center></nonum>
 <wrap>Det var Oluf Strangesøn/ og saa hin unge Hafburd: Og de tiente dennem saa lenge i Daner <pb n="389" facs="441.jpg"/>Kongens Gaard. Saa brender deris Gods inde paa Ryland.</wrap>
 
     <wrap>2. Og de tiente dennem saa lenge/ paa Danner Kongens beste: Saa yppede de dennem en Trætte/ om begge deris gode Heste.</wrap>
@@ -9360,7 +9270,7 @@ Almindeligen pleyer det saa at gaa/at den som Trætten først ypper/og fordrer e
 
 <text id="folkeviser2026111492" author="folkeviser" variant="vedel2001010206">
 <head>
-  <title>Herr Ofve blifver slagen af Herr Torkild ved Ydsted i Skaane</title>
+  <title><num>XIII.</num>Herr Ofve blifver slagen af Herr Torkild ved Ydsted i Skaane</title>
   <firstline>Herr Ofve hand vogner om Midienat</firstline>
   <source pages="391-395" facsimile-pages="444-448"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9371,7 +9281,6 @@ Herr Ofve eller Herr Aage som andre hannem kalder/ hafver formodet sig alt for m
 </prose>
 
 <poetry>
-<nonum><center>XIII.</center></nonum>
 <wrap>Herr Ofve hand vogner om Midienat/ sine stercke Drømme siger hand saa brat. Herr Ofvis Svenne ride vilde igiennem Skofven.</wrap>
 
     <wrap>2. Om Midienat/sine stercke Drømme siger hand saa brat: Mig tycktes at de Biørne tre/ alt for min Seng saa stode de.</wrap>
@@ -9435,7 +9344,7 @@ Herr Ofve eller Herr Aage som andre hannem kalder/ hafver formodet sig alt for m
 
 <text id="folkeviser2026111493" author="folkeviser" variant="vedel2001010207">
 <head>
-  <title>Minder Herr Alf/ Grefve af Tunsberg/ steylet for Helsingborg</title>
+  <title><num>XIV.</num>Minder Herr Alf/ Grefve af Tunsberg/ steylet for Helsingborg</title>
   <firstline>Herr Alf hand er en Edeling</firstline>
   <source pages="395-397" facsimile-pages="448-450"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9446,8 +9355,7 @@ Tilforn er omtalt i hvorledis de Norske hafde giort Herr Marsk Steg hielp udi de
 </prose>
 
 <poetry>
-<pb n="396" facs="448.jpg"/><nonum><center>XIV.</center></nonum>
-<wrap>Herr Alf hand er en Edeling/ baade til Stefne og saa til Ting. Kiende I Alf.</wrap>
+<pb n="396" facs="448.jpg"/><wrap>Herr Alf hand er en Edeling/ baade til Stefne og saa til Ting. Kiende I Alf.</wrap>
 
     <wrap>2. Herr Alf hand lader en Snecke bo/hand vil baade røfve og ro. Kiende I Alf.</wrap>
 
@@ -9496,7 +9404,7 @@ Tilforn er omtalt i hvorledis de Norske hafde giort Herr Marsk Steg hielp udi de
 
 <text id="folkeviser2026111494" author="folkeviser" variant="vedel2001020404">
 <head>
-  <title>Den anden Vise om Minder Herr Alf/ Grefve udi Tunsbierg</title>
+  <title><num>XV.</num>Den anden Vise om Minder Herr Alf/ Grefve udi Tunsbierg</title>
   <firstline>Alf hand er i Norge Land fød</firstline>
   <source pages="397-400" facsimile-pages="450-453"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9507,7 +9415,6 @@ Hvad denne Grefve Herr Alf Ellingsøns Historie er anrørendis/ er tilforn nocks
 </prose>
 
 <poetry>
-<nonum><center>XV.</center></nonum>
 <wrap>Alf hand er i Norge Land fød/ hannem lyster der intet at være: Hand hafver vel femtan Herreder i Leen/hand kand sig der af nære.</wrap>
 
     <wrap><pb n="398" facs="450.jpg"/>2. Alf hand ganger paa grønnen Vold/ og læser hand der sin Tide: Der møder hannem Bendit Rimaardsøn/ hans Skæben vare hannem icke blide.</wrap>
@@ -9559,7 +9466,7 @@ Hvad denne Grefve Herr Alf Ellingsøns Historie er anrørendis/ er tilforn nocks
 
 <text id="folkeviser2026111495" author="folkeviser" ignore-tests="title-trailing-punctuation" variant="vedel2001020405">
 <head>
-  <title>De Røfvere ligge for Norden Skov/ &amp;c.</title>
+  <title><num>XVI.</num>De Røfvere ligge for Norden Skov/ &amp;c.</title>
   <firstline>De Røfvere ligge for Norden Skov</firstline>
   <source pages="400-403" facsimile-pages="453-456"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9570,7 +9477,6 @@ Det endis alt der paa/som tilforn er sagt/ at Gud er Taalsgod/ og langmodig. Men
 </prose>
 
 <poetry>
-<nonum><center>XVI.</center></nonum>
 <wrap>De Røfvere ligge for Norden Skov/ og Skoven er deris Skiul: Om Natten gaa de til Bondens Gaard/ de dricke med hannem god Juul. De Røfvere de hvile for Norden under Skofven.</wrap>
 
     <wrap>2. Og de gaa dennem til Bondens Gaard/ med skarpe Spiud i Hænde: Du gifve os af din Jule-Tønde/ du est vor skylde Frende. De Røfvere.</wrap>
@@ -9642,7 +9548,7 @@ Det endis alt der paa/som tilforn er sagt/ at Gud er Taalsgod/ og langmodig. Men
 
 <text id="folkeviser2026111496" author="folkeviser" variant="vedel2001020406">
 <head>
-  <title>Herr Tidmand blifver halshuggen for Bondens Hustru hand voldtog</title>
+  <title><num>XVII.</num>Herr Tidmand blifver halshuggen for Bondens Hustru hand voldtog</title>
   <firstline>De Hofmænd sidde i Roskilde By</firstline>
   <source pages="404-407" facsimile-pages="457-460"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9653,7 +9559,6 @@ Vi finde Tvende Viser af en Meening/ som begge hafve været gengs her udi Riget/
 </prose>
 
 <poetry>
-<nonum><center>XVII.</center></nonum>
 <wrap>De Hofmænd sidde i Roskilde By/ de dricke til Dagen giøris lius: Saa giør og ungen Herr Tidemand/til Hesten er hand saa fus. I ride nu til Linden med.</wrap>
 
     <wrap>2. Det var unge Herre Tidemand/ hand rider giennem Rosens Lund: Der møder hannem Bondens venne Hustru/ alt i saa onder en Stund. I ride nu til Linden med.</wrap>
@@ -9715,7 +9620,7 @@ Vi finde Tvende Viser af en Meening/ som begge hafve været gengs her udi Riget/
 
 <text id="folkeviser2026111497" author="folkeviser" variant="vedel2001020401">
 <head>
-  <title>Erick Pychesøn blifver halshuggen til Stockholm</title>
+  <title><num>XVIII.</num>Erick Pychesøn blifver halshuggen til Stockholm</title>
   <firstline>De Bønder de klage dem op paa Land</firstline>
   <source pages="407-410" facsimile-pages="460-463"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9726,7 +9631,6 @@ Denne efterfølgendis Vise qvædis almindeligen om Erick Styggesøn/ og meenis a
 </prose>
 
 <poetry>
-<nonum><center>XVIII.</center></nonum>
 <wrap>De Bønder de klage dem op paa Land/ de Hofmænd der de udride: De klage sig for Erick Pychesøn/ hand maatte sin Leyde icke nyde. I Dalen der kommer hand aldrig.</wrap>
 
     <wrap>2. Men det var Erick Pychesøn/ hand skulde til Klosteret fare: Der møder hannem her Carl Knudsøn/som HErre Gud loed det saa være.</wrap>
@@ -9766,7 +9670,7 @@ Denne efterfølgendis Vise qvædis almindeligen om Erick Styggesøn/ og meenis a
 
 <text id="folkeviser2026111498" author="folkeviser" ignore-tests="title-trailing-punctuation" variant="vedel2001020402">
 <head>
-  <title>Hans Skrifver hand tiener/ &amp;c.</title>
+  <title><num>XIX.</num>Hans Skrifver hand tiener/ &amp;c.</title>
   <firstline>Hans Skrifver hand tiener i Kongens Gaard</firstline>
   <source pages="410-412" facsimile-pages="463-465"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -9777,7 +9681,6 @@ Der hafver været tvende Nafnkundige Skrifvere paa en kort Tid paa Kiøbenhafns 
 </prose>
 
 <poetry>
-<nonum><center>XIX.</center></nonum>
 <wrap>Hans Skrifver hand tiener i Kongens Gaard/ hand tiener sin Herre det beste hand formaar/ der om saa ville vi siunge: Der tiene saa mange i Kongens Gaard/ men somme de lagde hannem Had paa/ med falske Hierter og Tunge.</wrap>
 
     <wrap>2. Hans Skrifver gaar for sin Herre at staa/ville I mig høre hvad Retten formaa/ jeg haver eder tient med Ære: Jeg hafver eder tient uden Falsk og Svig/ som Gud skal være trofast mod mig/ naar jeg skal Lifvet ombære.</wrap>
@@ -10217,13 +10120,6 @@ Og geder drev ved stranden.
     Efterkommerne have tidt taged af disse og andre gamle viser og underligen omstøbt dennem/ saasom det og her er skeet/ hvor der sees forandring paa Navne/ Omstændigheder og andet meere/ ligesom Regner/ hvilken her kaldes Regenfred (om hvilken i vore og fremmede Historier) skulde tient da i K. Sigurs Hof/ der hand selv var en vældig Konge over Danmark og flere Lande. Item at hand ledte saa mange aar efter hende/ og siden førde hende bort til Hest og ej til skibs/ dog begge deele kunde skee/ først det ene/ saa det andet. Saa kaldes hun her Svanelild/ Men af Saxo Svanlaug/ og <pb n="429" facs="481.jpg"/>ellers i andre gamle Skrivter/ Aslaug. Svane haver været ret et Kvindenavn fordom brugeligt hos os/ som sees heraf og andre viser. Item Edda. Svanhilde Dottr Sigurdar hun var alra kvenna fegurst. Men Svanhvide eller Svanhvitar var et almindeligt Kvindenavn/ saa og Svanleda og Svanhild. Hun var en Konge-Daatter og dog maa vogte geder/ ligesom Syrithe/ K. Sivalds Dotter/ Item Regner og Torald/ den Svenske K. Hundings Sønner bleve tvungne af deres stivmoder til at vogte fæ. Saxo 1. og 7. Bog. Visen lyder saaledis:
 </prose>
 
-<text id="folkeviser20261114199" author="folkeviser">
-<head>
-  <firstline>Det springer nu saa vide</firstline>
-  <source pages="429-431" facsimile-pages="482-484"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
 <wrap>Det springer nu saa vide/ Saa vidt over alle land; Kong Sigurd haver sin dotter mist/ Hun blev hannem staalen fra. I meden jeg rider selv eene.</wrap>
 
@@ -10261,10 +10157,8 @@ Og geder drev ved stranden.
 
     <wrap><pb n="431" facs="483.jpg"/>18. Nu haver jomfru Svanelild/ Forvunden ald sin kvide/ Hun sover i saa gladelige/ ved sin Konges side. I meden jeg rider selv eene.</wrap>
 </poetry>
-</body>
-</text>
-
 <prose>
+
     Der findes og en anden Vise siden/ som og nogenledis kommer overeens hermed. Men flere saadanne korte Viser i et Sangvers/ baade Regners/ Aslavgs og hans Sønners/ findes i Kong Regners Saga/ og i Haandskrevne Norske Krønike. o. a. f.
 </prose>
 </body>
@@ -10307,7 +10201,7 @@ Og geder drev ved stranden.
 
     <wrap>14. Vi hugge med kaarde/ Der fienden erfarde Vort vaabenbrag; Hvo ikke undflyde/Men os vild’ anbyde/ Ej saae mere dag. Det var som at kysse En enke ung; Vi monne dem tysse I søvnen tung.</wrap>
 
-    <wrap>15. Vi hugge med kaarde/ Her[ulæseligt]<footnote editorial="true">Teksten efter »Her« er afskrabet og ulæselig i det benyttede eksemplar.</footnote> haarde/ Og brugte been: Paa Ørkeners lande Ragvalder forsande Fik dødsens meen; Da greeb der stor kvide Dend høge flok/ Thi Ragvald i stride Dem skaffed nok.</wrap>
+    <wrap>15. Vi hugge med kaarde/ Hertiof sig<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 404, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=453">↬</a></footnote> haarde/ Og brugte been: Paa Ørkeners lande Ragvalder forsande Fik dødsens meen; Da greeb der stor kvide Dend høge flok/ Thi Ragvald i stride Dem skaffed nok.</wrap>
 
     <wrap>16. Vi hugge med kaarde/ Den eene tvert over Dend anden laa: Irernes Herre Tord’ ikke udskære Sin fiendes bag. Af krager og ravne K. Marstens krop/ Med flere mand savner/ Der aades op.</wrap>
 
@@ -10509,17 +10403,7 @@ Min aldreigi finna.
 Denne gamle text vilde jeg uden riim lige efter ordene udsætte/ at den disbedre kunde forstaaes/ saaledis.
 </prose>
 
-<text id="folkeviser20261114200" author="folkeviser" lang="da">
-<head>
-  <firstline>Hvad er i Verden bedre</firstline>
-  <notes>
-    <note editorial="true">Dansk oversættelse af <xref type="translation" poem="folkeviser20261114198"/>. Oversætteren er ikke navngivet i trykket.</note>
-  </notes>
-  <source pages="446" facsimile-pages="499"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
+<poetry lang="da">
 Hvad er i Verden bedre/
 End en faver Viv?
 Det betænker Skalden vel.
@@ -10529,10 +10413,9 @@ Men jeg bær den tunge sorg/ at
 Nu folket forsamles/
 Jeg kand min kjerest ikke finde.
 </poetry>
-</body>
-</text>
 
 <prose lang="da">
+
 <center>Antegnelser:</center>
 
     Denne Vise sang Kong Magnus af Norge til Mathild/ Kejserens Dotter. Men om det skulde saa i Sandhed være tilgaaet tviler jeg meget om/ i betænkning/ at K. Magnus Barfod var neppe 20 aar gammel der hand kom til regementet/hvilket hand forestod i 10 aar/og imidlertid fik Mar<pb n="447" facs="499.jpg"/>grete Fredkolle/ K. Inges Dotter af Sverrig til Dronning/ som blev kalled Fredkolla/ fordi ved det giftermaal stiftedes fred igen mellem rigerne. Hvorom alting er/ saa er det snart lige meget/ enten det er saa eller ikke. Thi de gamle have ofte selv optænkt slige Kjerligheds Skrivter og Viser/hvoraf vi have ikkun her det eene Sangvers; de andre 2/ med dette/ findes i Haandskrevne N. Krønike/ med mere og rettere paa mange steder/ end i den Trykte. Saadant er og det Gamle Sniars Kvæde/som bestaar af 80 Sang-vers/ men de 2 første ere som Fortalen til det andet og give tilkiende/ at Mesteren herfor haver digtet Visen/ til sin Kjerestes Tidsfordriv/saaledis:
@@ -11074,7 +10957,7 @@ Om denne Her Sone/og andet som her findes/angaaende <pb n="469" facs="521.jpg"/>
 
     <wrap>33. Vare min Herre her hiemme/Du skulde hend’ ej saa nemme.</wrap>
 
-    <wrap>34. Jeg siger/som [ulæseligt]<footnote editorial="true">Et afskrabet felt mellem »som« og »mon meene« er ulæseligt i det benyttede eksemplar.</footnote> mon meene/Du skuld ej tage hende saa ene. De hviles op under Øland.</wrap>
+    <wrap>34. Jeg siger/som jeg<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 439, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=488">↬</a></footnote> mon meene/Du skuld ej tage hende saa ene. De hviles op under Øland.</wrap>
 </poetry>
 
 <prose>
@@ -13744,7 +13627,7 @@ Her findes Tyre Danebods Berømmelse med Danevirkes Opbyggelse. Om hende haver S
 
     <wrap>6. Saa snart hans fiend efter kom/ Baade saa grumme og lede/ De dræbte et uskyldigt lam/ De finge derfor Guds vrede/ Der var jammer og sorrig stor/ Udi Guds Huus giorde de det mord/ De toge dend Herre af live/ Det var stor ynk at se der paa/ Sønnen udi moderens Liv laa/ Hans siel med Faderen mon blive.</wrap>
 
-    <wrap>7. Knud glædes nu foruden ende/ Udi himmerig hand den [ulæseligt]<footnote editorial="true">En del af teksten er beskadiget og ulæselig i det benyttede eksemplar.</footnote>/ Saa stor Guds plage mon <pb n="588" facs="640.jpg"/>dem hende/ Dend Herre som vilde pine/ Deris sind vaandes mangelund/ Somme druknede i samme stund/ Fleere deres tunger aade/ Du jordede Knud i Othense by/ Der giorde hand jertegn ny/ Det skeede aldt med Guds naade.</wrap>
+    <wrap>7. Knud glædes nu foruden ende/ Udi himmerig hand den kand finde<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 549, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=600">↬</a></footnote>/ Saa stor Guds plage mon <pb n="588" facs="640.jpg"/>dem hende/ Dend Herre som vilde pine/ Deris sind vaandes mangelund/ Somme druknede i samme stund/ Fleere deres tunger aade/ Du jordede Knud i Othense by/ Der giorde hand jertegn ny/ Det skeede aldt med Guds naade.</wrap>
 
     <wrap>8. Danmark Danmark din priis er stor/ Du tør dig ej forfærde/ Du haver udi himmeriges Koor/ En naadig Gud og HErre/ Og mange tusinde helgen fleere/ De prisede Gud og hannem ære/ thi skaltu det sind føre/ Og i Danmarks Herrer gode/ Hielper nu vel at styre og raade/ At vi Guds villie giøre.</wrap>
 
@@ -13786,7 +13669,7 @@ Der findes og en Vise i det forrige Hundret/ lagd om Kong Knud/ som vel begyndes
 
     <wrap>8. Det første liden Kirsten hun sømmen fik/ Hun strax ind til sin foster-moder gik.</wrap>
 
-    <wrap>9. [ulæseligt]<footnote editorial="true">En del af teksten er beskadiget og ulæselig i det benyttede eksemplar.</footnote> I kiender mig raad/ <pb n="590" facs="642.jpg"/>Sømmen hun blev mig sendt udi gaar. Dend sommer og den eng/ saa vel kunde sammen.</wrap>
+    <wrap>9. Min foster-moder kier/<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 551, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=602">↬</a></footnote> I kiender mig raad/ <pb n="590" facs="642.jpg"/>Sømmen hun blev mig sendt udi gaar. Dend sommer og den eng/ saa vel kunde sammen.</wrap>
 
     <wrap>10. Hør du liden Kirsten/ skik sømmen fra dig/ Hun er dig sent til spot/ tro mig.</wrap>
 
@@ -13849,7 +13732,7 @@ Herr Esbern Snare og hans Broder Biskop Axel eller Absalon vare af Jislandsk Her
 
     <wrap>6. Dronningen blegnet i rosens kind/ Min ædelig Herre hvi forakter I mig?</wrap>
 
-    <wrap>7. Dronningen slog sin haand imod bord/ Saa sand [ulæseligt]<footnote editorial="true">En del af teksten er beskadiget og ulæselig i det benyttede eksemplar.</footnote></wrap>
+    <wrap>7. Dronningen slog sin haand imod bord/ Saa sandelig skal jeg hevne de ord.<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 553, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=604">↬</a></footnote></wrap>
 
     <wrap><pb n="592" facs="644.jpg"/>8. Kong Waldemar skulde i Leding fare/ Herr Buris skulde tage landet vare. Saa herlig kunde hun raade de Runner.</wrap>
 
@@ -13909,7 +13792,7 @@ Herr Esbern Snare og hans Broder Biskop Axel eller Absalon vare af Jislandsk Her
 
     <wrap>36. De møttes paa den høyelofts svale/ Saa sørgeligen monne de sammen tale.</wrap>
 
-    <wrap>37. Der med toge de hinanden i arm/ De daanede b[ulæseligt]<footnote editorial="true">En del af teksten er beskadiget og ulæselig i det benyttede eksemplar.</footnote></wrap>
+    <wrap>37. Der med toge de hinanden i arm/ De daanede begge af hiertens harm.<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 554, digitaliseret af Nasjonalbiblioteket. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=605">↬</a></footnote></wrap>
 
     <wrap><pb n="594" facs="646.jpg"/>38. Det Ord det var da gangen Omkring/ Kong Waldemar kom fra Leding hiem. Saa herlig kunde hun raade de Runner.</wrap>
 
@@ -13999,7 +13882,7 @@ Herr Esbern Snare og hans Broder Biskop Axel eller Absalon vare af Jislandsk Her
 
     <wrap>81. Hand ynser saa ofte hendes sang/ Fast meere saae hand paa hendes gang.</wrap>
 
-    <wrap>82. Saa maalte h[ulæseligt]<footnote editorial="true">En del af teksten er beskadiget og ulæselig i det benyttede eksemplar.</footnote> belte i sær/ Hand kunde dog intet [ulæseligt]</wrap>
+    <wrap>82. Saa maalte hand hinde med<footnote editorial="true">Det beskadigede tekststed er suppleret efter 1764-udgaven, s. 557, digitaliseret af Nasjonalbiblioteket. I 1764-udgaven står »Saa maatte han hinde med belte i sær, Han kunde dog intet kiende der.«; de bevarede former »maalte« og »Hand« i 1695-trykket er fastholdt. <a href="https://www.nb.no/items/95e571d48eec8344afef9589612d0109?page=608">↬</a></footnote> belte i sær/ Hand kunde dog intet kiende der.</wrap>
 
     <wrap><pb n="597" facs="649.jpg"/>83. Skam faa du Sophi Dronning min/ Saa haver du løyed paa liden Kirstin. Saa herlig kunde hun raade de Runner.</wrap>
 
@@ -17781,6 +17664,7 @@ Men Daner-Konning kom/ lev sund og Sejersæl.
 </text>
 
 <prose>
+
     Elvekongens Datter/Ellefrue og Ellekone kaldes den/som bedrager mandfolk/og Ellen eller Elven/som bedrager Kvindfolk/er et Spøgeri/fordom meget gængse/hvorom nu i dette klare Evangelii Lys ey meget høres. Mand taler og om Elve-bøger/som de gave undertiden bort til dem/hvilke de elskede/hvoraf de kunde spaa om allehaande tilkommende Ting.
     Den som var forfærd af dem/kaldtes Ellevild/og sagdes om dem at Ellen legte med dem. Men denne Her Oluf er her ilde medhandlet og Elleskudt/fordi hand ej vilde ellers/eller være i denne Elvedands med disse Ellefolk.
 </prose>
