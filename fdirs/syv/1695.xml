@@ -741,7 +741,8 @@ End Gjerningen var/ udi Land og By.
 </body>
 </text>
 
-<text id="vedel2026111403" author="vedel" variant="vedel1999123001">
+<!-- Kildekontrol PDF62/64: RöRICH har lille ö i versaloverskriften; »Er at at sige« er trykt med begge at. De to navngivne OCR-undtagelser bevarer kildens ordlyd. -->
+<text id="vedel2026111403" author="vedel" variant="vedel1999123001" ignore-tests="internal-uppercase,repeated-adjacent-word">
 <head>
   <title><num>I.</num>Danske Kongers Nafne og Tal</title>
   <firstline>Alting af Gud/ i Himmel oc Jord/</firstline>
@@ -752,7 +753,7 @@ End Gjerningen var/ udi Land og By.
 </head>
 <body>
 <prose>
-Enddog at der opregnis udi den anden Part af denne Bog/ fast alle de fornemste Viser/ som ere lagde om vore Danske Konger og Dronninger/ og deris Forvandte/ saa kunde dog icke efterladis/ at sætte her i Begyndelsen denne Digt/ som er saa got som ickun et Register paa alle Danske Kongers Nafne/ som hafve regieret her udi Riget/ fra den første Dan og indtil vor Tjd. Aarsagen dertil er denne/ at disse Viser i denne Bog holdis for Historiske Viser/ og ende og vende meste Parten paa vore Danske Konger/ Ja og nogle af de Ældste ere holdne og regnede for Kæmper/ som de ogsaa udi Sandhed vare mægtige Strids-Høfdinger/ som Krønicken udviser. Hvor om mand skal hafve baade om dennem og de andre Konger videre Beretning. Thi udi disse korte Vers kunde icke meere indtvingis/ end der er befattet. Saa ere og her icke alle vore Danske Konger opregnede/ men de alleeniste/ som det gemeene Tal medfører. Hvor om paa en anden sted grundeligere vil forhandlis.
+Enddog at der opregnis udi den anden Part af denne Bog/ fast alle de fornemste Viser/ som ere lagde om vore Danske Konger og Dronninger/ og deris Forvandte/ saa kunde dog icke efterladis/ at sætte her i Begyndelsen denne Digt/ som er saa got som ickun et Register paa alle Danske Kongers Nafne/ som hafve regieret her udi Riget/ fra den første Dan og indtil vor Tjd. Aarsagen dertil er denne/ at disse Viser i denne Bog holdis for Historiske Viser/ og ende og vende meste Parten paa vore Danske Konger/ Ja og nogle af de Ældste ere holdne og regnede for Kæmper/ som de ogsaa udi Sandhed vare mægtige Strids-Høfdinger/ som Krønicken udviser. Hvor om mand skal hafve baade om dennem og de andre Konger videre Beretning. Thi udi disse korte Vers kunde icke meere indtvingis/ end der er befattet. Saa ere og her icke alle vore Danske Konger opregnede/ men de alleeniste/ som det <center>gemeene Tal medfører. Hvor om paa en anden sted grundeligere vil forhandlis.</center>
 </prose>
 <poetry>
 <pb n="3" facs="057.jpg"/>Alting af Gud/ i Himmel oc Jord/
@@ -1119,8 +1120,8 @@ Da jeg hafde vundet saa mangt et Land/
 Sin Søster Søn Ring giorde mig Modstand/
 Jeg blef der vi saa stride.
 
-<nonum><center>XL. HETTE</center></nonum>
-<nonum><center>XLI. OLUF FROCKNE. (Hetthe</center></nonum>
+<nonum><center>XL. HETTE<footnote>(Hetthe</footnote></center></nonum>
+<nonum><center>XLI. OLUF FROCKNE.</center></nonum>
 
     43. Kong Haralds Kæmpinde mig Dronning
 Danmarck at styre Kong Ring tilsette/
@@ -1526,7 +1527,7 @@ Hand stoed saa høy Eventyre.
     87. Siden Oluff var død Magretis Søn
 Hun keiste mig Frende i kuld og køn/
 Tre Kongeriger at tage:
-Der jeg blef U-eens alt med mit Raad/
+Der jeg blef Ueens alt med mit Raad/
 Jeg drog til Gudland med Rigens Clenod/
 Og kom icke meere tilbage.
 
@@ -1617,6 +1618,839 @@ Danmarckis Riges Formyndere være/
 Vi kunde hans Ord beholde og Fred/
 Elske Ræt og god Samdrægtighed/
 Med hannem i Evighed lefve.
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111401" author="folkeviser" variant="vedel2000010201">
+<head>
+  <title><num>II.</num>Hertugen reed fra Colding</title>
+  <firstline>Hertugen hand red fra Colding By</firstline>
+  <source pages="25-27" facsimile-pages="80-82"/>
+</head>
+<body>
+<prose>
+Der hafver og været En/ som gierne ville hafve alle vore Danske Konger udi en Digt/ men som mig siunes/ da hafver hand tagen sig Vandet ofver Hofvedet. Men efterdi det er jo ogsaa lofværdigt at giøre sit beste i et stort Arbeyd/ hafver vi icke forskut denne Digt. Men bedret noget der paa og ladet dend saa løbe hen med udi Tallet. Ellers maa den Gunstige og Fromme Læsere tage alting i den beste Meening. Hvem det icke vil giøre/ Hand kand dog altid efter sin bidske Natur/ faa noget at mangle paa.
+</prose>
+<poetry>
+<wrap>1. Hertugen hand red fra Colding By/ og indtil Obenraa: Her holder Hertugens Mænd. Hannem mødte en Kierling var u-sky/som der gaar Savnen fra: De komme icke end.</wrap>
+
+    <wrap>2. Og hør du gode gammel Kierling/ du est en kundige Qvinde: Her holder Hert: Mænd. Jeg beder du vilt icke dølie for mig/ det længste at du kand minde: De komme icke end.</wrap>
+
+    <wrap>3. Sanden vil jeg dig kiere Søn sige/ jeg vil icke at dig live: Her holder Hertugens Mænd/ Mig mindes vel Konger i Dannemarck/ henved Halffemtesindstive. De komme.</wrap>
+
+    <wrap>4. Og først da mindis mig hannem Kong Dan/ hand var her Konning først: Hhhm. Efter hannem kom Humble og Lother hans Sønner/ og saa Her Skiold den Drost. De komme.</wrap>
+
+    <wrap><pb n="26" facs="080.jpg"/>5. Mig mindis og hannem Luse Kong/ hand var Konning under Ø: Her h H m. Saa mangen U-low den lagde hand paa/ Saa skammelig fick hand død: De komme.</wrap>
+
+    <wrap>6. Saa mindis jeg Gram med sin Guldkølf og sexten de Konger vare: h h h m. Som førde Krig til Land og Vand/ Indtil Kong Fridlef hin snare: De komme icke end.</wrap>
+
+    <wrap>7. Saa da kom hans Fader Kong Frode/ hand ligger ved Være Bro: h h h m. Og da blef fød den Høyestes Søn/ Som Kiød og Blod tog paa. De komme icke end.</wrap>
+
+    <wrap>8. Fra Frode til Gøtrick mindis mig ræt/ vare Konger 8 og tive: h h h. Saa vise i Sind saa stercke i Mod/ Som Klercker der af mon skrifve. De komme icke.</wrap>
+
+    <wrap>9. End vare de Ellefve Konger vist/ som Kronen hafde at eye: h h h. Føre Gorm hin grumme kam lackendis frem/ Hand ligger i Jelling Høye. De komme icke end.</wrap>
+
+    <wrap>10. Hans Dronning hede Thyre Danbod/ hun bygde Closter og Kircker: h h. Da var jeg en halfvoxen Mø/ bar Steen til Danevircke.</wrap>
+
+    <wrap>11. Mig mindis og Kong Harald Blaatand/ Svend Tiugskeg var hans Søn: her h h m. Knud hin store og hans Søn Knud haarde/ Engeland nappet der af Røn.</wrap>
+
+    <wrap>12. Magnus hin gode af Norge hid kom/ hand stridde paa Lærskofs hede: h h. Svend Estrichsøn var en Konge saa lærd/ hafde hand kundet stilt sin Vrede.</wrap>
+
+    <wrap><pb n="27" facs="081.jpg"/>13. Hans fire Sønner Harald og Knud/ i Otthense som blef slagne: h h. Oluf Hunger og Erick Ejegod/ de blefve til Konger tagne.</wrap>
+
+    <wrap>14. Kong Nilavs og Kong Erick Emun/ Erick Lam hin milde og spage: Kong Valdemar fick da Riget allene/ som Svend og Knud omdroge.</wrap>
+
+    <wrap>15. Mig mindis Knud og Valdemar Seyr/ S. Erick og Abel umilde: Christopffer og hans Søn Erick Glepping/ Marsk Stig ved Lifvet skilde.</wrap>
+
+    <wrap>16. Saa kom Mendvid og Kong Christopffer Vereger den beste Blomme: hans Daatter var Dronning Margrete/ vi begge af en Rod komme.</wrap>
+
+    <wrap>17. Mig tyckis du est en Kierling led/ du est saa gammel en Qvinde: Jeg vil ride mig til Hedeby/ en venner der at finde. De komme.</wrap>
+
+    <wrap>18. Icke er jeg Kierling gammel og graa/ at jeg bar Staf og Pose: h h. Icke est du helder Ridder god/ for du hafver stribede Hoser.</wrap>
+
+    <wrap>19. Icke da er jeg en Mareminde/ at jeg hafver runcken Laar: h h. Og icke da est du Ridder bold/ for du hafver kruset Haar.</wrap>
+
+    <wrap>20. Hertugen tog sin Hest med Spore/ hand lod at Veyen dønne: h h h m. Kierligen snørde sine Støfle ad Been/ hun lod fast efter lønne.</wrap>
+
+    <wrap>21. Hertugen reed og saa fast hand rende/ Kierlingen løb langt omkring: Her h Hert. Mænd. End <block-center>kom hun til Urnehofvet/ førend Dommeren sætte Lands-Ting. De komme icke end.</block-center></wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111402" author="folkeviser" variant="vedel2000010202">
+<head>
+  <title><num>III.</num>De Longobarders Udgang af Danmarck</title>
+  <firstline>Der boede en Konning i Danmarck</firstline>
+  <source pages="28-33" facsimile-pages="83-88"/>
+</head>
+<body>
+<prose>
+Denne Vise er lagd og digtet om de Longobarders Udfærd af Danmarck. Aarsagen til deris Vandring sætter Saxo vor Danske Historieskrifver/ ind i Kong Snies Tid/ som regerede her Riget hen ved 600. Aar efter Christi Fødsel. Saa af Aars Tjd og Tal følges icke eller rimer sig ofver et med det som af andre skrifvis om den Tid at de komme først udi Italien/ og indtoge Lombardien. Hvilcket skeede paa det Aar efter Christi Fødsel 568. Om hvilcken Uligelighed giøris behof Videre Forklaring/som icke er fornøden paa denne sted.
+    Hvad som disse Longobarders Nafn og Fæderne-Land er anrørendis/ ere og icke heller alle Skribentere lige ens med hver andre. Men de maa disputere her om saa meget som de ville/ saa er Nafnet dog alligevel af Danske Oprindelse. Hvad heller mand vil at de skulde kaldes af deris lange Barder eller Breder/det er Øre/ som mand endnu næfner i Norge/eller lange Halbarder som Kongens Drabantere gierne bære/ eller af hine lange Barder og Border/ det er Jest og haarde Aggre/ som Istævon hafve Nafn af/ at de der paa hafve boed i Stæden af Marsi hafve boet paa Mersk Landet. Som her om videligere skal en andensteds ordelis i sin Tjd.
+    Men at de ere udgangne først af disse Lande/ vidner deris Tungemaal og Sæder. Saa og adskillige Skribentere Paulus Diaconus og andre. Udi besynderlighed bær her om Vidnisbyrd den gamle Gudlandske Krønicke/ skrefvet paa gamle Riim/ iblant andet med disse Ord:
+</prose>
+<poetry>
+Ebbe og Aage de Hellede saa fro/
+Siden de for Hunger af Skaane drog/
+Da skedis de nest vorum gute Gutland/
+Med gamle og ungum Qvindum og Mand/
+Derum Sneckum vorum halffierdum Sti/
+Og Hundrum Mandum inden hverum de.
+De nefnde sig Vinilende jag sege kand/
+Efter Ebbe som kom af Vendelbo Land.
+Meden Aage var einum Gøding Kener/
+Dog de varum baadum einum Moder Søner.
+</poetry>
+<prose>
+Item/ følger iblant andet fremdeelis;
+</prose>
+<poetry>
+<pb n="29" facs="083.jpg"/>So lodum de sik Longumbarder kaldum/
+Panonien bestridde de ok met allum/
+Ok togum saa ind om Vallandum dernest/
+Der timedis dennem Lukkum allum best.
+Hed er vel skrefvet/ hed er vel spurt/
+Hvad de hafver siden mandelikum giort.
+Og men siden de inden Vallandum kom/
+Hed er vel kind allum Verldum om.
+</poetry>
+<prose>
+Og hvad som her følger meere med/ eftersom og i Visen fortælles/ og icke endnu her/ men paa en anden beleyligere Sted skal videre forklares.
+    Efter at disse tvende Hofvitsmænd Ebbe og Aage vare hendøde/ toge de Hamunder Aagsøn til Konning/ og hafde saa efter hannem i midlertid/ førend de komme i Italien til Albuinum/ ti Konger/ som førde adskillige Krig med adskillige Landskaff og adskillige Lycke. Med Albuino vare de Tive Konger indtil Kong Desiderium/ som Keyser Karl Magnus ofvervand/ der de hafde regeret udi Longobardia Fire Aar og to Hundrede.
+</prose>
+<poetry>
+<wrap>Der boede en Konning i Danmarck/ Konning Snie loed hand sig kalde: Hunger og Nød var i hans Land/ og stoer Mijstrøst med alle. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>2. Hand skref der Lov baade Haard og streng/ den skulde den Menige Mand holde/ Til Druckenskaf/ Gestebud og Fraadserj/ sig ingen fordviste skulde. De maa.</wrap>
+
+    <wrap>3. Men GUd forøgte sin Hefn og Straf/fra Aar til Aar dismeere: Jorden loed sig bruge der til/ ingen Frugt saa vil hun bære.</wrap>
+
+    <wrap>4. Kong Snie til sig forsamlet sit Raad/ den Dom monne de afsige: Den Tredie Part af Folcket alt/ dem skulde mand dræbe tillige. De maa saa vel i Danmarck.</wrap>
+
+    <wrap><pb n="30" facs="084.jpg"/>5. Tredie Part af Folcket i Landet var/ det skulde mand slaa til døde. Thi de hafde icke til Gud deris Haab/ at hand saa mange kunde føde. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>6. Ebbe og Aage vare ypperste i Raad/ de vare to Hellede bolde: Deris Moder hede Gambaruck/ som de dette Oplag fortalde.</wrap>
+
+    <wrap>7. Udi Jutland boede den Vise Frue/ hun var de Vendelboders Ære: Saa ilde behagede hun dette Raad/ hun soer det skulde icke saa være. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>8. Et slemmer Mord er aldrig hørt/ end I ville nu lade giøre: Forbyde det GUD denne Tidende ond/ Vore Fiender skulle komme til Øre. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>9. Ville I mig lyde og følge mit Raad/ jeg vil eder bedre undervise: Lodden I kaste paa gamle og unge/ hvilcken Part af Landet skal reise. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>10. Mig tyckis at være den beste Paafund/ enddog jeg er en Qvinde: I lade dem seyle af Landet ud/ at de kunde Søen ofvervinde. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>11. Alle da tycktis dem raadeligt/ den vise Tale at følge: Saa snart var Lodden paa Folcket kast/ Og Skibene lagt for Bølge. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>12. Lodden den falt som den kunde best/ de Unge maatte sig ryste: Af Landet skulde de fare bort/ og Lycken maatte de friste.</wrap>
+
+    <wrap>13. Ebbe og Aage vare ey sene i Færd/ de lode de<pb n="31" facs="085.jpg"/>ris Faner flye: Snecker saa hafde de store og stercke/ icke mindre end halffierdesindstive. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>14. Ebbe hand førde de Juder med sig/ en Vendelbo loed sig kalde: Fra Skafven lagde den Første ud/ for Skaane lode de Seylet falde. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>15. Aage hans Broder ey dveldis ved/ med Gyndingerne frem monne fige: Af Halland og Blekinde fulde det med/ ret Mand og alle tillige. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>16. For Cimbrishafn de ginge til Skibs/Det var saa faver en Skare: Kongen og hans ædle Raad/ de bode dem alle vel fare. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>17. Saa seylede de først til Gutlands Vig/ paa Maanats Tide end mindre: De fafnet deris komme som de kunde best/ for Landmænd de hver anden kiende. De maa saa.</wrap>
+
+    <wrap>18. De dvelde hos dennem udi Maaneder to/ og lode sig der vel pleie: Et Tusind Mand udi Snecker Ti/ at følge var der til reede. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>19. Til Ryland sætte de deris Kaas/ der kastis deris Ancker paa Sande: Den meenige Mand forskingredis strax/ de maatte dem gaa til Haande. De maa saa.</wrap>
+
+    <wrap>20. Lycken var dennem baade mild og god/ stoer Seyer der de finge: De dveldis i Ryland nogle faa Aar/ Og icke end meget længe. De maa saa vel i Danmarck.</wrap>
+
+    <wrap><pb n="32" facs="086.jpg"/>21. Med Herre Skiold og Manddoms Magt/ monne de sig Veyen rede: I hvor de skulde i Marcken slages/ deris Styrcke de beteede.</wrap>
+
+    <wrap>22. Lange Breder og Halfbarder brugte de mest/ de lange Karle og bolde: Thi kallede mand dem de Longobarder/ det Nafn og endnu beholde: De maa saa vel.</wrap>
+
+    <wrap>23. Aage og Ebbe de døde dem fra/saa saare monne de det klage: En Hofvitsmand skulde de keise af ny/ førend de kunde fremdrage. De maa saa.</wrap>
+
+    <wrap>24. Hagelmunder hede den Høfding fin/ som de til Konning udvalde: For hans Manddom og dydelig Sind/ Monne hand dem vel befalde.</wrap>
+
+    <wrap>25. Med hannem vunde de Prjs og Seyer/Hvor de droge frem med alle: Der hand var død og lagt i Liig/ En anden de strax omtalde. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>26. Saa droge de frem fra Land til Land/Forsøgte hvad Lycken vilde gifve: Paa sidste komme de i Panonien ind/ der lystet dem da at blifve. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>27. Med Herulers Haab hulde de en Strid/ monne dennem saa Mandeligen tvinge: Med Gepiders Hær giorde de ogsaa/ Baade Bytte og Seyer de finge.</wrap>
+
+    <wrap>28. Albuinus var deris Konning gief/hans Nafn er kiend saa vide: Hand drog der Romerske Magt imod/ Hand lærde dem ret at stride. De maa saa.</wrap>
+
+    <wrap>29. Paphie den meget berømde Stad/ Belagdt hand tre Aar end meere: Hand vand den Stad med stor Umag/ med andre Stæder fleere. De maa saa vid.</wrap>
+
+    <wrap><pb n="33" facs="087.jpg"/>30. For Mande Liste/ for Sverd og Pil/ kunde hand sig vel forvare: For Qvinde Svig og lønlig Had/ fald hand i Dødsens Snare. De maa saa.</wrap>
+
+    <wrap>31. Rosemunda hed hans Dronning snild/ hun kunde den Falskhed raade: Hun loed sin Herre i Søfnen slaa/ der var icke anden Naade: De maa saa vel i Danmarck.</wrap>
+
+    <wrap>32. Siden togis til Konger igien/ den ene efter den anden i Sæde: De Romere tycktis da være got/ lade fare den lange Feide.</wrap>
+
+    <wrap>33. Saa giordis der den stadige Fred/ som mand vel meente hin trygge: Men tiden lærde det anderledis/ paa den var icke at bygge.</wrap>
+
+    <wrap>34. De Romere bare der ved stor Nag/ at see de fremmede Geste: Thi falde de dem saa ofte i Land/ og Krigen med dennem friste.</wrap>
+
+    <wrap>35. Der de icke self af egen Mact/ dem kunde i Orlog bestande: De badis om Hielp af Keyser Karl/ hand kom af fremmede Lande.</wrap>
+
+    <wrap>36. Naar mange Muus ere om en Kat/ da nødis hand til at vige/Saa gick det med vore Longobarder/ for Sanden maa jeg det sige. De maa saa.</wrap>
+
+    <wrap>37. Saa lagdis da ned deris Kongelig Nafn/Landet monne de beholde: Som de hafde i to Hundrede Aar/ under deris Haand at volde. De maa saa vel i Danmarck.</wrap>
+
+    <wrap>38. Landet bærer Nafn paa denne Dag/ og saa til Verdens Ende: Den Danske Adel og Ridderskaff lader sig endnu der kiende. De maa saa vel i Danmarck.</wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111403" author="folkeviser" variant="vedel2000012802">
+<head>
+  <title><num>IV.</num>Langbeen Risers og Vidrich Verlandsens Kamp</title>
+  <firstline>Konning Tidrick sidder udi Bern</firstline>
+  <source pages="34-41" facsimile-pages="89-96"/>
+</head>
+<body>
+<prose>
+Der er mange Viser og Digt lagd om Konning Tidrich af Bern paa adskillige Tungemaal. Saa hafve vi Danske og haft vore indfødde Kæmper udi hans Færd. Hvorledis her om være kand med Historien/lader jeg hver sin Meening. Noget maa her om hafve været. Thi Røgen (som mand pleyer at sige) kommer gierne fra Brandene. Og Herr Tidrich af Bern/ hafver icke alleeniste været vort Folck forvant med Sproget alleeniste/ men ogsaa i andre maader/ holden Kundskaf med dennem/ at de hafve været med hannem udi Krig og Orlog naar der gafves Aarsag til. Thi vore gamle Forfædre hafver giort mange Tog der ud af Riget/ og indfaldet udi andre Herrers og Kongers Land/ og dennem tvingd under sig. Undertiden hafve vel Herrer og Førster begiert deris Hielp/ mod deris Fiender/ naar de kunde dennem self icke bestaa/ og hafve der ofver indlagt stoer Prjs og Seyr ved den Danske Magt. Saa hafver det og været meget brugeligt udi gamle Dage/ at baade hine unge Adels Burse/ og andre Stridkiere Vovehalse her af Riget ere uddragne at forsøge sig og lade see deris Manddom/ og der ofver indlagt stoer Ære/ og ere komne til statkelige Giftermaal/ eller forhverfvet kostelige Bytte. Dog Manddoms Ære og Dad/ hafver gielt mest i de Dage. Langbeen Riser som almindeligen næfnis i denne Vise/meener jeg at være Risers Nafn. Thi Riser paa gammel Danske bemercker Kæmper/saavelsom paa Tydske Sprog. Saa som vi faa at høre om Bermer Rise her efter/ som mand ellers kalder Bermeris/ og mand af den Tydske Digt kand see om Konning Tidericks/ og Mester Hildebrands Kamp imod Risen Egenot/ &amp;c. Hvad Vidrich Verlandssøns Nafn og Fødestæd saa og hvad Bern er anrørendis/ Findis ydermeere her udi neste Femte og den Tiende efterfølgendis Viser.
+</prose>
+<poetry>
+<wrap>Konning Tidrick sidder udi Bern/ Hand roser af sin Vælde: Saa mangen hafver hand tvungen/ Baade Kæmper og raske Helte. Der stan<pb n="35" facs="089.jpg"/>der en Borg heder Bern/og der boer i Konning Tidrick.</wrap>
+
+    <wrap>2. Konning Tidrick stander paa Bern/ Og seer hand ud saa vide: GUd gifve jeg viste de Hellede saa stercke/ mig torde i Marcken bide. Der stander en Borg for Bern/ Og der boer udi Konning Tidrick.</wrap>
+
+    <wrap>3. Det svarede Mester Hildebrand/ Hand viste at Orloge og stride: Der ligger en Kæmpe paa Birtings Bierg/ tør du hannem væcke og bide. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>4. Hør du Mester Hildebrand/du est den Kæmpe saa sterck: Du skalt ride fremmerst i Skofven i Dag/ Og føre vort Skioldemercke. Der stander en.</wrap>
+
+    <wrap>5. Der til svaret Mester Hildebrand/ Hand var en Kæmpe saa Vijs: Herre jeg fører icke eders Skioldemercke i Dag/thi mig sømmer icke den Prjs. Der stander en Borg for Bern og der boer i Konning T.</wrap>
+
+    <wrap>6. Det svaret Vidrich Verlandssøn/ Hand talde af fuld god Hue: Jeg vil være den første i Hofven i Dag/ igiennem de Birtings Skoffve. Der stander en Borg for Bern og der boer i Kon: Tidrick.</wrap>
+
+    <wrap>7. Det meldte hand Vidrich Verlandsen/ hand svarede det af Vrede: De Smede-Svenne mit Sverd saa smede/ det bider saa vel paa Staal som Klæde.</wrap>
+
+    <wrap>8. De vare vel Tre Hundret Kæmper/ de droge til Birtings Land: De ledte efter Langbeen Riser/ da hannem paa Skofven fand. Der stander en.</wrap>
+
+    <wrap>9. Det svared Vidrich Verlandssøn/vi ville prøfve et underligt Spil: I lade mig ride i Skofven først/Om I tro mig der til. Der stander en Borg.</wrap>
+
+    <wrap><pb n="36" facs="090.jpg"/>10. I holder her alle Danner Kongens Mænd/ Op under disse grønne Tvede/imeden jeg rider i Skoven frem/ Jeg vil os Veyen oplede.</wrap>
+
+    <wrap>11. Det var Vidrick Verlandsen/ Hand rider i Skoven frem/ Der fand hand saa liden en Sti/ som neder til Riser rand.</wrap>
+
+    <wrap>12. Det da svaret Konning Tidrick/ jeg siger her saa for mig: Finder du Langbeen Riser/du dølie det icke for mig/ Der stander en Borg for Bern/ og der boer i Konning Tidrick.</wrap>
+
+    <wrap>13. Det var Vidrich Verlandsen/ hand kom paa Birtings Hede: Der fant hand Langbeen Riser/ hand laa baade sort og leed. Der stander en Borg.</wrap>
+
+    <wrap>14. Det var Vidrich Verlandsøn/ hand stødte paa Riser med Skafft: Du vaagne op Langbeen Riser/ Mig tyckis du sofver vel hart. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>15. Her hafver jeg ligget i mange Aar/ Og hviltis paa vildende Hede: Her kom aldrig den Kæmpe frem/ der mig torde væcke og bide. Der stander.</wrap>
+
+    <wrap>16. Her holder jeg Vidrich Verlandsøn/ med Sverd saa got ved Side: Jeg skal dig af Søfnen opvæcke/ Saa saare da skalt du svide. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>17. Det var Langbeen Riser/ hand vincket op med sit Øye: Hveden kommer os denne Svend/ der saadanne Ord lader lyde.</wrap>
+
+    <wrap>18. Verland hede hand Fader min/en Smed var hand saa skien: Bodild hede min Moder/ en Konning Datter ven.</wrap>
+
+    <wrap>19. Skrepping heder mit fuld gode Skiold/Der <pb n="37" facs="091.jpg"/>er udi mangen Pil skot: Blanck saa kaldis min stolte Hielm/ saa manget et Sverd hafver bredt. Der stander en Borg for Bern/ og der boer i K. Tidrick.</wrap>
+
+    <wrap>20. Skimming heder min ædle Hest. Er fød paa vilden Stold: Mimmering kalder mand mit Sverd/ er herd i Kæmpe-Blod. Der stander en Borg.</wrap>
+
+    <wrap>21. Self heder jeg Vidrich Verlandsøn/ udi Jern saa er jeg klæd: Staar du icke op/ paa din lange Been/ jeg giør dig visselig vred. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>22. Hør du Langbeen Riser/jeg vil icke at dig lyve: Kongen holder her uden for Skofven/ du skalt hannem Skatten gifve. Der stander en Borg for.</wrap>
+
+    <wrap>23. Alt det Guld som jeg eier/ det giemmer jeg med stor Ære: Det vinder icke en stolt Dreng af mig/ og det skal ingen Mand spørre. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>24. Saa Ung og liden som jeg er/ Skalt du mig her nu finde: Dit Hofvet vil jeg hugge dig fra/ og saa dit megit Guld vinde. Der stander.</wrap>
+
+    <wrap>25. Det var Langbeen Riser/ hannem lyster icke længer at sofve: Ride fra mig du unge Heldt/om dig lyster længer at lefve. Der stander en Borg.</wrap>
+
+    <wrap>26. Skimming sprang op med begge sine Been/ Mit paa Risers Side: Sønder da ginge hans Ribbeen siu/ og saa begyndte de at stride. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>27. Det var Langbeen Riser/greb sin Staalstang i Hænde: Hand slog et Slag efter Vidrich/ at Stangen i Bierget vende. Der stander.</wrap>
+
+    <wrap>28. Det var Langbeen Riser/ hand agtet at slaa <pb n="38" facs="092.jpg"/>saa vist: Hesten løb hannem rammet af/ det første Slag hand miste. Der stander en Borg.</wrap>
+
+    <wrap>29. Det melte Langbeen Riser/ og hand tog til at Jammer: Nu ligger min Stang udi Bierget fast/ som den var slagen med Hammer. Der stander.</wrap>
+
+    <wrap>30. Vidrich loed sig icke forsømme/ hand var saa modig i Hue: Vel op Skimming vendt dig om/ og monne du Mimmering noget due. Der stander en Borg for Bern/og der boer.</wrap>
+
+    <wrap>31. Hand tog Mimmering i baade sine Hænder/ til Langbeen Riser hand rende: Hand hug saa dybt i Bryst/ at Odden i Tarmene vende. Der stander.</wrap>
+
+    <wrap>32. Da fick Langbeen Riser Saar/ og vognet af første Søfn: Saa gierne hafde hand det vedergiort/ kunde hand hafve faaet den Øfne. Der stander en Borg for Bern/ og der boer.</wrap>
+
+    <wrap>33. Forbandet være du Vidrich/og saa dit Sverd ved din Side: Du hafver giort mig Saar i mit Bryst/ der af saa yppis min Qvide. Der stander en Borg for Bern/og der.</wrap>
+
+    <wrap>34. Jeg skal hugge dig Riser saa smaa/ som løst blæs iblant Støf: Uden du viser mig dit Liggende Fæ/ Som du hafver i denne Skof. Der stander en Borg for Bern/og der boer.</wrap>
+
+    <wrap>35. Du lade det Vidrich Verlandsøn/ du hug mig icke til Døde. Jeg vil vise dig til det Huus/er kract med Guld hin røde. Der stander.</wrap>
+
+    <wrap>36. Vidrich reed og Riser krøb/ saa vit ind ad de Skofve: de funde det Huus med røde Guld tagt/ det skinde som brændende Lue. Der stander.</wrap>
+
+    <wrap>37. Her er inde meget meere Guld/end i dette Land <pb n="39" facs="093.jpg"/>kand være: Du tag her fra den store Steen/ du løft af Hengsel disse Dørre. Der stander.</wrap>
+
+    <wrap>38. Det svared Vidrich Verlandsen/ hand frygtede for det Gilde: Der pleyer ingen vijs Kæmpe/ sin Styrcke paa Steene at spilde. Der stander.</wrap>
+
+    <wrap>39. Det er i din mindste Konst/ du kand din Hest vel vende: Jeg vil giøre meere med Fingre to/ end du med begge dine Hænder: Der stander.</wrap>
+
+    <wrap>40. Saa tog hand den store Steen/ hand løfte den paa sin Hærde: Fuld vel Vidrich Verlandsøn/ hand agtet hannem saa ond en Fred. Der stander en Borg for Bern/og der.</wrap>
+
+    <wrap>41. Her er inde meget meere Guld/ end Femten Konger formaa: Hør du Vidrich Verlandsøn/du skalt her først indgaa. Der stander en.</wrap>
+
+    <wrap>42. Det svaret Vidrich Verlandsøn/hand kiende saa vel hans Snild: Du skalt self her først indgaa/ thi det er en Kæmpe sæd.</wrap>
+
+    <wrap>43. Det var Langbeen Riser/ hand ind at Dørren saa: Vidrich hug med begge Hænder/ hand hug hannem Hofvedet fra. Der stander en Borg.</wrap>
+
+    <wrap>44. Saa tog hand det Mande Blod/smurde sig og sin Hest: Saa reed hand til Kong Tidrich/ sagde sig at være skammelig læst. Der stander en Borg for Bern/og der boer i Konning Tidrick.</wrap>
+
+    <wrap>45. Saa tog hand den døde Krop/ og reyste den til en Eeg: Saa reed hand tilbage igien/sagde af denne underlige Leeg. Der stander en.</wrap>
+
+    <wrap>46. Her holde I alle mine Staldbrødre gode/alt under denne grønne Lide: Langbeen Riser hafver mig slaget i Dag/det er min største Qvide.</wrap>
+
+    <wrap><pb n="40" facs="094.jpg"/>47. Hafver du faaet baade Hug og Slag af Riser/ da er det ilde: Vi ville ride til Bern igien/ og ingen Mand her meere spilde. Der stander.</wrap>
+
+    <wrap>48. Du vend dig Konning Tidrick/du vend dig snart med mig: Alt det Guld som Riser hafde/der vil jeg vise dig. Der stander en Borg for Bern/og der boer i Konning Tidrick.</wrap>
+
+    <wrap>49. Hafver du slagen Riser i Dag/ det spøris ofver Land saa vide: Den Kæmpe fødis icke i Verden til/du maa jo vel med stride. Der stander.</wrap>
+
+    <wrap>50. Det var Konning Tidricks Mænd/ der de monne Riser see: Saa lode de ad Skofven staa/ Mand maatte vel ad dennem lee. Der stander.</wrap>
+
+    <wrap>51. De meente Riser skulde forvist sine lange Been efter dem strecke: Ingen af dem saa torde hannem bie/og ingen saa vilde hannem væcke. Der stander en Borg for Bern/Og der.</wrap>
+
+    <wrap>52. Det var Vidrich Verlandsøn/hand giorde der af stor Spee: Hvor skulde I hannem lefvendis bie/ I tør hannem icke døder see. Der stander.</wrap>
+
+    <wrap>53. Vidrich stødte paa Kroppen med skaft/ saa Hofvedet dref i Marck: Det maa jeg for sandingen sige/Riser var en Kæmpe saa sterck. Der stander.</wrap>
+
+    <wrap>54. Saa toge de hans meget røde Guld/de bytte det der paa stand: Vidrich hørde den beste Part til/ Hand hverfvet det med sin Haand. Der stander.</wrap>
+
+    <wrap>55. Icke var hannem saa meget om Bytte/ den Seyr laa hannem i Sinde: At det kunde spørres til Danmarck/ hand Langbeen Riser monne ofvervinde. Der stander en Borg for Bern/og der boer paa Konning Tidrick.</wrap>
+
+    <wrap><pb n="41" facs="095.jpg"/>56. Saa glade rede de til Bern igien/ Konning Tidrick glæddis allermest: Tog hand til sig Vidrick Verlandsøn/ Maatte følge hannem allernest. Der stander en Borg for Bern/ Og der boer paa Konning Tidrick.</wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111404" author="folkeviser" variant="vedel2000012801">
+<head>
+  <title><num>V.</num>En Vise om de fornemste gamle Kæmper/og om Sivard Snaren Svends Kamp med Herr Humble</title>
+  <firstline>De vare siv og sivsindstive</firstline>
+  <source pages="41-49" facsimile-pages="96-104"/>
+</head>
+<body>
+<prose>
+Denne er fast den ældste Kæmpe-Vise/ som af Arilds Tjd her indtil hafver været meget brugt i Danmarck. Her indføris de fornemste Kæmpers Nafn og Skioldemercke som ellers i andre Digt og Viser mangesteds berøris. Sivard Snaren Svend binder disse Kæmper til Kamp/ og Lodden falder paa Unge Humble/ som hand siden ofvervinder/ og dog skiencker hannem vunden Spil af Haanden/ som mand pleyer at sige. Hand skiencker hannem Skimming sin Hest igien/ som hand hafver laant af Vidrich Verlandsøn/ og lader sig fange og binde af hannem med Villie/ men der hand seer Vidrich kommer/ da oprycker hand Egen som hand stoed bunden til/ og gaar til sin Herris Gaard &amp;c. Humble holder jeg fore/ at denne Unge Kæmpe skal kaldis/ og icke Hummerlummer. Thi Humble er et gammelt Dansk Nafn/ som det sees af Kong Dans Fader Humble/ Af hvilcken Humble Ore i Sieland ved Ringsted hafver faaet sit Nafn. Vidrich som her og andensteds næfnis med Verlandsøns Tilnafn almindeligen/ meene nogle at skulde kaldis Vidrich Villandsøn/ og at hand skulde været fød i det merckelige store Herret udi Skaane som endnu kaldis Villandsherret/ og ligger begrafven paa denne Side Søllesborgs Ore/ ved Sissebeck Mølle/ som de store Steene staa tilsiune paa denne Dag.
+    Hvad som Stæderne Hald og Brattingsborg er anrørendis/ veed jeg icke om mand skal tage det Slot Hald derfore/ at Herr Bugge siden hafver fordret og stercket det med ny Bygning i sin Tid. Bratingsborg holder mand fore/ at skulde være det Slot som ligger saa got som mit paa Samsø/ved Tranberg Kircke/ der som mand endnu seer hine saare dybe trefolde <pb n="42" facs="096.jpg"/>Grafver og Volde med Muur/ paa denne Dag. Nogle meente at Bratensborg skulle ligget udi Ifvenis/ Norden for Ifvø/der som mand endnu paa denne Dag kand see Grundvolden og Muurene/ naar Vandet er klart og Aadelveyen løber der til/ en stor hul Vey fra Skofven af Vesten i Østen/ som i fordum Dage hafver været tør/ førend Slottet er ødelagt. Til dis ydermeere Vidnisbyrd fører Villands Herret en Hammer udi sit Signet til Her Vidrich Villandsens Amindelse.
+    Hvad her om kand være/lader jeg hver sin Meening. Sant og vister det/at der hafver boet merckeligt og sterckt Folck baade paa Samsø og de andre omliggendis Øer/ som klarlige kand sees af allehaande sandfærdige Fodspor end ogsaa af de tvende Voldstæder/ som tvende andre Slotte Vestborg og Hiorteholm hafve staaet/ og været befæstiget med Grafver og Volde/ som endnu staa igien. Og hafve Kæmperne og andre Orlogs Mænd gierne boet paa saadanne Øer i gamle Dage/ fordi de letteligen kunde oprette sig gode Befæstninger/ og hafve her snart udflugt til Søen/at søge efter Rof og Bytte/som forhverfvedis i Krig og Orlog/ og mand lefvede der mest af i gamle Dage.
+    Saa hafver og icke Skaane været foruden Kæmper/ som det mange stycker udvise/ og end besynderligen her ved Søllesborg Ore/ og fremdeelis udi Bleging og omliggende Egn/ der som hine store Klipper og Kæmpesteene findis med Rune-Bogstafver paa/ &amp;c. Hvor om paa en andensted.
+</prose>
+<poetry>
+<wrap>De vare siv og sivsindstive/ der de droge ud fra Hald: Og der de komme til Bratingsborg/ der sloge de deris Tield. Det donner under Roß/ de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>2. Kong Nilavs stander paa høyen Tind/ og seer hand ud saa vide: Hvi monne de Kæmper hafve deris Lif saa fal/ at dem lyster her at stride. Det donner under Roß/ de Danske.</wrap>
+
+    <wrap><pb n="43" facs="097.jpg"/>3. Hør du Sivard Snaren Svend/ og du hafver vancket saa vide: Du skalt friste disse Kæmpers Vaaben/og til dem under Tielden ride. Det donner under Roß/ de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>4. Det var Sivard Snaren Svend/ hand ind under Tielden treen: I ere min Herre vel kommen/ I Danske Kongers Mænd. Det donner.</wrap>
+
+    <wrap>5. I lade det eder icke fortycke/ I tage det icke for Spee: Dysten saa ville vi sammen prøfve/ eders Vaaben I lade mig see. Det donner under.</wrap>
+
+    <wrap>6. Der stander i det første Skiold/en Løve vel saa bert: Med Kronen af det røde Guld/ det er Kong Didrichs Merck. Det donner under.</wrap>
+
+    <wrap>7. Der skinner i det andet Skiod/ en Hammer og en Tange: Den fører Vidrich Verlandsøn/ hand slaar og griber ingen til Fange. Det donner.</wrap>
+
+    <wrap>8. Der skinner i det tredie Skiold/ en Gam saa rød som Guld: Den fører Helled Hogen/ hand er en Kæmpe til fulde. Det donner under.</wrap>
+
+    <wrap>9. Der skinner i det fierde Skiold/ en Ørn og hand er rød: Den fører hand Olger Danske/ hand hugger de Kæmper til døde. Det donner.</wrap>
+
+    <wrap>10. Der skinner i det femte Skiold/siddendis Høg paa Hald: Den fører Mester Hildebrand/hand vofver med Kæmper et Fald. Det donner under.</wrap>
+
+    <wrap>11. Der skinner i det siette Skiold/ Linden den er grøn: Den fører unge Hr Humble/ Dronning Elenes ældste Søn. Det donner under.</wrap>
+
+    <wrap>12. Der stander i det sivende Skiold/ en skiøn forgylden Spor: Den fører hand Herr Hogen/ fordi hand vilde vildere vorde. Det donner.</wrap>
+
+    <wrap><pb n="44" facs="098.jpg"/>13. Der skinner i det ottende Skiold/ tre Pile og de ere hvide: Dem førte hand Vidrich Herr Stagesøn/ mand maa vel paa hannem lide. Det donner under Roß/de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>14. Der stander i den niende Skiold/ Ulfven alt saa sterck: Den fører hand Unge Ulf van Jern/hand brugte saa stort Hofverck. Det donner under.</wrap>
+
+    <wrap>15. Der stander i den tiende Skiold/ en Fedel og en Bue: Den fører hand Falqvor Spillemand/ hand vilde dricke og icke sofve. Det donner.</wrap>
+
+    <wrap>16. Der skinner i det ellefte Skiold/ en Lindorm end saa leed: Den fører Orm unger Svend/ hand frygter for ingen Mands Vrede. Det donner.</wrap>
+
+    <wrap>17. Der kom frem det tolfte Skiold/ der skinner paa brendende Brand: Den fører hand Bran van Vifferlin giennem Herrers og Førsters Land.</wrap>
+
+    <wrap>18. Der stander i det trettende Skiold/ en Tavl saa rød af Guld: Den fører Harald Gridske/ hand er en Stoldbroder huld. Det donner.</wrap>
+
+    <wrap>19. Der stander i den fiortende Skiold/en Kappe og en Kølfve: Dem fører den Munck Broder Alsing/ hand kunde de Kæmper stille. Det donner.</wrap>
+
+    <wrap>20. Hand hafver en Skareknif ved hans Side/ Skalerne ere af Bly: Liden Knif er icke uden ellefve Alne lang/ Som dingler ved hans Side.</wrap>
+
+    <wrap>21. Der lagdis frem den femtende Skiold/ der skinner tre dragne Sverd: Dem fører Eslemer Kongens Sønner/ i alle deris Herrefærd. Det donner.</wrap>
+
+    <wrap>22. Der blef seet det sextende Skiold/ en Rafn med Vinger hin brune: Den fører Rigen Raavengaard/ som vel kunde digte og rune. Det donner.</wrap>
+
+    <wrap><pb n="45" facs="099.jpg"/>23. Der skinner paa det syttende Skiold/ Hesten i saa hvid: Den førde Grefve Herr Guncelin/hand beder slaa og icke bide. Det donner under Roß/de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>24. Der skinner i det attende Skiold/et Vildsvin og en Mand: Det fører den Grefve af Biergelide/ sit Svard vel røre kand. Det donner.</wrap>
+
+    <wrap>25. Der skinner i det nittende Skiold/ en Hund og en saa rask: Den fører Høsteen Kæmpe/ hand er en Vovehals uden falsk. Det donner.</wrap>
+
+    <wrap>26. Der skinner i den tivende Skiold/ en Rose iblant de Rijs: Hvor Herr Normand kommer i Strid/ der vinder hand stor Priis. Det donner.</wrap>
+
+    <wrap>27. Der stander i det neste Skiold/ en Kedel er af Kaaber: Den fører Herr Mogens Olgersen/ hand vinder baade Slotte og Borge.</wrap>
+
+    <wrap>28. Indkom andet og tivende Skiold/ med Sundheds forgyldte Mercke: Det førde hand Herr Asbiørn Milde/ hand lærer de Kæmpers Ryg at vercke. Det donner under Roß.</wrap>
+
+    <wrap>29. Det var det tredie til tivende Skiold/en Arm udi en Lencke: Den førde hand Alver Lange hand pleyer for Kæmper at skiencke. Det donner.</wrap>
+
+    <wrap>30. Der skinner i det neste Skiold/Der skinner i et Svard/Det fører Hr. Humle Jersing/ Hand er det fuld vel Værd.</wrap>
+
+    <wrap>31. Der skin i femt’ og tivende Skiold/ En Falck og den er graa/Den fører Kæmpen allerbest/ Som kaldis Herr Iver Blaa.</wrap>
+
+    <wrap>32. Der skin i siett’ og tivende Skiold/Der skinner i et Spyd;Det fører hand lille Minering Tand/ For ingen Mand vil hand fly.</wrap>
+
+    <wrap><pb n="46" facs="100.jpg"/>33. Der kom frem det sidste Skiold/ det var en Falck saa hvid: Den fører Sivard Snaren Svend/ fordi hand vilde altid stride. Det donner under Roß/ de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>34. Slig Kæmpe og Mercke var her/ hvo kand dem alle fortælle. Det var Sivard Snaren Svend/ hand kunde icke længer dvele. Det donner.</wrap>
+
+    <wrap>35. Er her nogen af Kongens Mænd/ som Dysten lyster at ride: Hand tøfve/ og icke forlænge/ hand møde mig paa denne Hede.</wrap>
+
+    <wrap>36. Hvilcken af eder i Danske Hofmænd/som Dysten kand ride best. Med hannem saa vil jeg ride i Dag/ om begge vore gode Heste.</wrap>
+
+    <wrap>37. De Kæmper kaste Terning paa Tafle Bord/ de Terning rand saa vide: Og det falt unge Humle til/ hand skulde med Sivard ride. Det donner.</wrap>
+
+    <wrap>38. Her Humble slog det Taflebord sammen/hand lystet icke længer at lege: Det vil jeg for sanden sige/ hans Kinder blefve saa blege. Det donner.</wrap>
+
+    <wrap>39. Det var ungen Humble/hand gaar den Fruerstue omkring: Saa gaar hand i Høyloft/ for Kong Vidrich ind. Det donner under Roß.</wrap>
+
+    <wrap>40. Hør du Vidrich Verlandsøn/ du est saa fri en Mand: Du laane mig Skimming i Dag/ jeg sætter dig derfor Pant.</wrap>
+
+    <wrap>41. Icke fanger du af Skimming i Dag/foruden du sætter got Pant: Løkning Skof og femten Borge/ de beste udi dit Land.</wrap>
+
+    <wrap>42. Otte Borge de rigeste i Birtings Land/ dem sætter jeg dig til feste: Der til min Søster den Lille vjaand/ mig tyckis hun er den beste. Det donner.</wrap>
+
+    <wrap><pb n="47" facs="101.jpg"/>43. Sivard hand er en sierblind Svend/ hand seer icke sit Glavind til Ende: Fanger hand Skimming nogen Skade i Dag/ du bøder det icke med alle dine Fiender. Det donner under Roß/ de Danske Hofmænd der de udride.</wrap>
+
+    <wrap>44. Saa løber Spæret i Sivards Haand/som Kringlen ringler i Spore: Du vocte dig unge Herr Humble/du kommer icke for den Daare.</wrap>
+
+    <wrap>45. Borge ni og Riddere siu/ dem sætter jeg dig til Pand: Fanger Skimming nogen Skade i dag/ du tag min yngste Søster paa Haand.</wrap>
+
+    <wrap>46. Vare nu alle disse Bierge af Guld/ og alt dette Vand var Vin: Det vilde jeg icke hafve for Skimming i dag/Jeg tacker Gud hand er min.</wrap>
+
+    <wrap>47. Saa satte hand sig paa Skimmings Bag/ saa gladelig monne hand ride: Skimming tycktis det underlig at være/At hannem stod Spore i Side.</wrap>
+
+    <wrap>48. Der skinner paa Humbles forgyldte Skiold/ som Solen om Midsommers Tide: HERre Gud naade mig fattige Svend/skal jeg her holde og bie.</wrap>
+
+    <wrap>49. Det første Red de sammen red/ de Hellede vare baade saa stercke: Sønder gick Humbles Sadel Ring/hans Skiold saa langt i Marcke.</wrap>
+
+    <wrap>50. Mig tyckis du est en faur unger Svend/ din Hest kand du vel ride: Stat du af og giørde din Hest/Et Stød vil jeg dig bie. Det donner.</wrap>
+
+    <wrap>51. Det andet Red de sammen red/ de vare to Kæmper baade: da brast begge deris Sadle i to/ og Humble for Sadel Bue. det donner under.</wrap>
+
+    <wrap>52. Nu hafver jeg dig fra Hesten skut/ nu hafver jeg vundet din Hest: Sig mig gode unge Humble hveden du kommen est.</wrap>
+
+    <wrap><pb n="48" facs="102.jpg"/>53. Nu hafver jeg vundet af dig Priis/Og Skimming hand er min: Sig mig ungen øske Svend/ af Slect og Afkom din. det donner under Roß/de danske Kæmper der de dysten ride.</wrap>
+
+    <wrap>54. Kong Abelon er min Fader/En Konge ofver Biertings Land: Dronning Eline er min Moder/ det siger jeg dig for sand. det donner under.</wrap>
+
+    <wrap>55. Dronning Eline er min Moder/ En Dronning gief og fiin: Konning Abelon Haarde Staal/ saa kaldis Fader min.</wrap>
+
+    <wrap>56. Self da heder jeg unge Herr Humble/ En Kæmpe ofver Biertings Land: Af Kæmpe Slect saa viit berømt/ som nogen Mand reyse kand.</wrap>
+
+    <wrap>57. Er Kong Abelon din Fader kier/da est du min Frende: da gifver jeg dig din Hest igien/jeg dig icke førre kiende. det donner under Roß.</wrap>
+
+    <wrap>58. Er Dronning Eline din Moder bold/ hun er min fuld god Ven: Saa tage du nu Skiming igien/du est min Systersøn. det donner under.</wrap>
+
+    <wrap>59. Tage nu begge Skiolde Remer/du binder mig til denne Eeg: og rid saa til Kong Tidrich/ du sig du vandst den Leeg. det donner under.</wrap>
+
+    <wrap>60. Indkom yngste Humble/ var klæd i Kiortel grøn: Nu hafver jeg vundet min Hest igien/ og bunden den skellie Svend. det donner under.</wrap>
+
+    <wrap>61. Indkom Humble i Støfle og Spor/ hand kaste sit Sverd paa Bord: Sivard staar i Skofven bunden/hand taler icke end et Ord. det donner.</wrap>
+
+    <wrap>62. Jeg hafver været mig i den Lund/og fanget den Kæmpe god: Tog jeg Sivard Snaren Svend/ bant hannem ved Eege Rod. det donner.</wrap>
+
+    <wrap><pb n="49" facs="103.jpg"/>63. Hør du unge Herr Humble/ og du farer alt med Tant: Det var alt med Villie giort/ om du Sivard bandst. det donner under Roß/ de danske Kæmper der de dysten ride.</wrap>
+
+    <wrap>64. Det var Vidrich Verlandsøn/og hand vilde alting vide: Jeg rider mig i Rosens Lund/ og seer hvor Sivard monne lide. det donner under.</wrap>
+
+    <wrap>65. Vidrich taler til sin Dreng/ legge Sadel paa Ganger graa: Jeg vil mig i Marcken udride/ og see hvor Sivard maa. det donner under Roß.</wrap>
+
+    <wrap>66. Sivard hand stander udi Lunden/og seer hand Vidrich ride: Finder mig Vidrich bunden her/ hand hugger mig Refbeen fra Side.</wrap>
+
+    <wrap>67. Frem ad lacket Vidrich Verlandsøn/ Skimming monne under hannem skride: Sivard rycker op Eegen med Roed/ hand torde hannem icke bide.</wrap>
+
+    <wrap>68. Dronning staar i høye Loft/og seer hun ud saa vide: Hissed kommer Sivard Snaren Svend/ med Eegen ved sin Side. det donner under.</wrap>
+
+    <wrap>69. Det svarede Dronning Elene/ Der hun saae Sivard komme/ Saa mænd du giorde det af Nød/ Du togst op telige blomme. det donner under.</wrap>
+
+    <wrap>70. Kongen stander ved Borgeleed udi sin Brynne saa ny: Hissed kommer Sivard Snaren Svend/ hand fører os Sommer i By. det donner under.</wrap>
+
+    <wrap>Der gaar Dantz paa Bratings Borg/ der dantzer de stercke Heldte: Der dantzer Sivard den <block-center>sterblind Svend/ med Eegen under sit Belte: Det donner under Roß/ de Danske Hofmænd de sammen ride.</block-center></wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111405" author="folkeviser" variant="vedel2000012803">
+<head>
+  <title><num>VI.</num>Om Grefve Guncelin/ hvorledis hand slog Tilventin ihiel/ og ofvervant Herr Ifver Blaa/ og fick hans Søster Salenta/ og giorde siden et merckeligt Kæmpe-Bryllup med hende</title>
+  <firstline>Det var Grefve Herr Guncelin</firstline>
+  <source pages="50-53" facsimile-pages="105-108"/>
+</head>
+<body>
+<poetry>
+<wrap>Det var Grefve Herr Guncelin/ Hand taler til Moder sin: Jeg vil ride mig op paa Land/ og friste Manddom min. Vel op førre Dag/ vi komme vel ofver den Hede.</wrap>
+
+    <wrap>2. Vilt du ride dig op paa Land/ og siger du mig saa: Da skal jeg gifve dig Fole god/ som mand kalder Karl hin graa. Vel op førre dag/vi komme.</wrap>
+
+    <wrap>3. Da skal jeg gifve dig Hest saa god/ som mand kalder Karl hin graa: Aldrig tør du spænde Spor om Fod/ ey heller drage Hielm paa. Vel op førre.</wrap>
+
+    <wrap>4. Ingen Kæmpe tør du stæde/ og ingen reddis fra; Førend du møder den Kæmpe/ som mand kalder Ifver Blaa. Vel op førre dag/vi komme.</wrap>
+
+    <wrap>5. Det var Grefve Herr Guncelin/hand rider under grønne Lide; Der møder hannem liden Tilventin/ hand bad hannem holde og bide. Vel op førre.</wrap>
+
+    <wrap>6. Vel mødt ungen Tilventin/ og hvor laa du i Nat; Jeg laa mig paa Bratensborg/mand hugger der Ild af Hat. Vel op førre dag/ vi komme vel.</wrap>
+
+    <wrap>7. Det var Grefve Herr Guncelin/ hand blickt under Hielm hin røde; Som men ved liden Tilventin/du taler din egen Død. Vel op førre dag.</wrap>
+
+    <wrap>8. Det var Grefve Herr Guncelin/ hand sit Sverd uddrog; Det var liden Tilventin/ hand i stycke hug. Vel op førre dag/ vi komme vel ofver.</wrap>
+
+    <wrap>9. Saa reed hand til Bratensborg/ hand stødte <pb n="51" facs="105.jpg"/>paa Port med Skaft; Er her nogen Kæmpe ind/som fegte tør af Magt. Vel op førre dag/ vi komme vel ofver den Hede.</wrap>
+
+    <wrap>10. Det var Herr Ifver Blaa/ hand vende sig i Vester; hielp nu Ulf og Asmer Grib/jeg hører Kæmpe Røst. Vel op førre dag/vi komme vel ofver.</wrap>
+
+    <wrap>11. Det var Herr Ifver Blaa/ hand saae sig ud i Øster; hielp mig Otthin du kand best/ jeg hører Herr Guncelins Røst. Vel op førre dag/ vi.</wrap>
+
+    <wrap>12. Det var Grefve Herr Guncelin/ kaste Hielm ofver hviden Hals; Det da hørde hans Moder kier/ ofver trende tylte Land vel. Vel op førre dag.</wrap>
+
+    <wrap>13. Den Frue hun vogner om medie Nat/ og taler hun til sin Herre; Raade nu den øfverste Gud/ alt for vor Søn hans Færd. Vel op førre dag.</wrap>
+
+    <wrap>14. Det første Red de sammen red/ de Hellede vare baade saa stercke; Stack hand Herr Ifver Blaa/ hand dref saa langt i Marck. Vel op førre.</wrap>
+
+    <wrap>15. Hør du Grefve Herr Guncelin/og vilt du lade mig lefve; Jeg hafver mig en Festemøe/ og den vil jeg dig gifve. Vel op førre dag.</wrap>
+
+    <wrap>16. Icke vil jeg din Festemøe/i Egteskab vil jeg lefve; Gif mig Salenta Søster din/med hende lader jeg mig nøye. Vel op førre dag.</wrap>
+
+    <wrap>17. Saa red de til Bryllup/som de kunde allermest; De bøde der til de Kæmper/som de kunde allerflest. Vel op førre dag/ vi komme vel.</wrap>
+
+    <wrap>18. De bøde Vidrich Verlandsøn/sterck Tidrich ud af Bern; De bøde did Holger Danske/for hand vilde stride saa gierne. Vel op førre dag/ vi.</wrap>
+
+    <wrap>19. De bøde Sivard Snaren Svend/hand skul<pb n="52" facs="106.jpg"/>de for Bruden ride; Saa kom Langbeen Risse/hand skulde hos Brudgommen side. Vel op førre dag/vi komme vel ofver den Hede.</wrap>
+
+    <wrap>20. De bøde ind Mester Hildebrand/ hand bar for Bruden Bluß; Og hannem fulde de Kæmper Tolf/ de drucke og giorde got Ruß. Vel op førre.</wrap>
+
+    <wrap>21. Did kom Folqvar Spillemand/ hannem maatte de Kæmper lide; Did kom Kong Sigfred Horn/ sig self til Angest og Qvide. Vel op.</wrap>
+
+    <wrap>22. Der var stolt Fru Grimild/ og hun skulde Bruden rede; De lode hendis Fødder med Jern beslaa/hendis Fingre med Staal omsmede. Vel op.</wrap>
+
+    <wrap>23. Der kom frem Frue Giurde Hette/ hun boede for Norden Field; hun drack og hun dantzet/ det hafde saa got et Held. Vel op førre dag.</wrap>
+
+    <wrap>24. Der kom ind Fru Bryniel/ hun skar for Bruden Mad; Hende fulde siu smaa Terner/ iblant de Kæmper de sade. Vel op førre dag.</wrap>
+
+    <wrap>25. De fulde Bruden udi Kammeret ind/ at æde der Frokost; Hun aad der op fire Tønder Grød/de smagte hende allerbest. Vel op førre dag.</wrap>
+
+    <wrap>26. Vel sexten Oxe Kroppe tog hun der til/ og aatten Svine Flycke; Siu Tønder Øll drack hun der til/ førre hun tog til at hicke.</wrap>
+
+    <wrap>27. Saa fulde de Bruden til Salen hen/ da tru det saa fast hendis Skind; de hugge vel femten Alne af Muur/ førre de kunde trenge hende ind.</wrap>
+
+    <wrap>28. De løde Bruden til Brudebænk/saa sagt de sette hende ned; Bencken var af Marmersteen/ den refnet i Jorden ned. Vel op førre dag/vi komme.</wrap>
+
+    <wrap>29. De lagde for hende den beste Mad/hun aad og <pb n="53" facs="107.jpg"/>drack icke minde; Femten Øxen og Ti fede Svin det tæret den Møre Qvinde. Vel op førre dag/ vi komme vel ofver den Hede.</wrap>
+
+    <wrap>30. Det da gaf den Brudgom act/ hand hagde det icke vel; Aldrig saae jeg saa unger en Brud/ der giorde i Fadet bedre skiel. Vel op førre dag.</wrap>
+
+    <wrap>31. Op da sprunge de Kæmper/ og sammen der de rycte; Hvad helder ville vi kaste med Stang/ eller og riddeligen fegte. Vel op førre dag.</wrap>
+
+    <wrap>32. De Kæmper begyndte Kredsen at skrifve/ alt paa den grønne Marck: Det giorde de den Unge Brud til Ære/ Lod see det store Hofværck. Vel op førre dag/ vi komme vel ofver den Hede.</wrap>
+
+    <wrap>33. Den unge Brud sprang fra Brudebænk/hun hafde to Hænder sløfve; Til hende sprang Langbeen Risse/ god Eventyr monne de prøfve. Vel op.</wrap>
+
+    <wrap>34. Der dantzede Bord og der dantzede Benck og Ilden fløy af Hat; Ud da løbe de Kæmper gode/ og hielp nu Moder Skrat. Vel op førre dag.</wrap>
+
+    <wrap>35. Da begyndtis en stercker Red/ fra Ribe og indtil Slie; Den mindste Kæmpe i Dantzen var/ var Femten Alne under Knæ. Vel op førre dag/vi.</wrap>
+
+    <wrap>36. Den mindste Kæmpe i Dantzen var/ var lille Mimmering Tand; Hand var i denne Hedenske Flock/ den eeniste Christen Mand. Vel op førre dag/vi komme vel ofver den Heede.</wrap>
+</poetry>
+</body>
+</text>
+
+<text id="vedel2026111404" author="vedel" skip-index="true">
+<head>
+  <title>Tre Viser om Frue Grimild og hendis Brødre</title>
+  <nofirstline/>
+  <source pages="53-54" facsimile-pages="108-109"/>
+</head>
+<body>
+<prose>
+Her efter følger tre Viser om Heldt Hogen og Frue Grimild/ om hvilken Saxo Grammaticus skrifver udi sin 30 Bog/ udi S. Knud Hertugis og Martyris Historie. Hvor <pb n="54" facs="108.jpg"/>af er lettelige at mercke/ at denne Digt er meget gammel. Men hvad som Grimmilds og hendis Herkomstis Historie er aarørendis/vil det falde forlangt/den her at beskrifve/ og kommer dog frem paa en anden og beleiligere Tid og Sted. Hendis Fader var Nøgling/som og kaldtis Niding/og bode paa den Øe/imellem Kiøbenhavn og Kroneborg/som kaldtis Hvæn/af Jomfru Hvenild/ med hvilken Heldt Hogen aflede sin Søn Rancke. Paa denne Øe kand mand endnu see Voldstede/ Grafver og Grundmaal/som i Fordum Tid hafve standen disse Fire Slotte/Nørborg/Sønderborg/Karlshøy og Hammer. Her bode Fru Grimild/som hafde først til Egte Herr Sigferd Horn/som videligen omtalis udi Heldenbog. Men til sin anden Gift/indbød hun begge sine Brødre Herr Hogen og Herr Folqvard/ og loed dem begge dræbe/som Visen indeholder. Dog den Hvænske Krønicke holder noget anderledis/og siger: Der Folqvard hafde slaget Fru Grimilds Kæmper ihiel/som hun hafde udsæt paa hannem/at hans Brødre var slaged paa Nørborg/af de andre Kæmper. Og derved harmedis hand saare at hand drack et Horn fuldt udaf de Dødis Blod/og døde saa hos de andre Kæmper. Saa drog hun og saa til Nørborg/og der hun formerckte/at Helt Hogen hafde faaet ofverhaand ofver Nørborgs Kæmper/da giorde hun Pagt med hannem/at der som hendis Kæmper slog hannem først en gang til Jorden/da skulde hand icke meere staa op/Men verrie slag som hand kunde best. Der med gick den listige Qvinde til/og loed strøe Erter paa vaade Huder udi Porten/og der grebe tre Kæmper tillige Helt Hogen an/og slog hannem paa Knæene/og fick der sit Banesaar/slog dog tilforn Kæmperne ihiel/og aflede paa Sønderborg med Jomfru Hvenild/efter Grimilds Samtycke/en Søn/paa det/det mægtige og ædle Kæmpe Slægt skulde icke aldeles undergaa. Denne Helt Hogens Søn/ved Nafn Rancke/hefnde sin Faders og Farbroders Død paa Grimild sin Farsøster/hvilcken hand udførde med sig til Hammershøy/at vise hende Nidings Skat/som hans Fader hafde efterladt hannem Nøgelen til. <center>Thi der hand var kommen ind i Bierget med hende/da løb hand self ud/og lugte Dørren for hende/saa blef hun der siddendis/og døde af Hunger.</center>
+</prose>
+</body>
+</text>
+
+<text id="folkeviser2026111406" author="folkeviser" variant="vedel20000102804">
+<head>
+  <title><num>VII.</num>Den første Vise om Frue Grimild og Helde Hogen</title>
+  <firstline>Det var stolte Fru Grimild</firstline>
+  <source pages="55-59" facsimile-pages="110-114"/>
+</head>
+<body>
+<poetry>
+<wrap>Det var stolte Fru Grimild/ hun lader Miøden blande: hun biuder til sig de raske Riddere/ af alle fremmede Lande.</wrap>
+
+    <wrap>2. Hun bad dem komme og icke dvele/ til Orlog og til Krig: Det var Hellede Hogen/ forlod sit unge Lif.</wrap>
+
+    <wrap>3. Det var Hellede Hogen/ hand gaar ud ved Strand: Fandt hand da den Ferge Karl/ alt paa den hvide Sand.</wrap>
+
+    <wrap>4. Hør du goden Ferge Karl/ du før mig ofver Sund/jeg gifver dig min gode Guldring/ hand veyer vel femten Pund.</wrap>
+
+    <wrap>5. Jeg fører dig icke ofver Sund/alt for dit Guld saa rød: Kommer du til Hvenilds Land/da blifver du slagen til død.</wrap>
+
+    <wrap>6. Det var Hellede Hogen/ hand sit Sverd uddrog: Det var den uselige Fergemand/ hand Hofvedet afhug.</wrap>
+
+    <wrap>7. Hand strøg Guldringen af sin Arm/hand gaf den Ferge Karls Vif: Det skalt du hafve til Vennegafve/ for Fergemands unge Lif.</wrap>
+
+    <wrap>8. Det var Hellede Hogen/vancker ud med den Strand: Fandt hand paa den Haf-Frue/som hviltis paa hviden Sand.</wrap>
+
+    <wrap>9. Hel dig/ hel dig/kiære Haf-Frue/du est en konstig Vif: Kommer jeg til Hvenilds Land/kand jeg beholde mit Lif.</wrap>
+
+    <wrap>10. Borge hafver du bolde/og meget Guld saa <pb n="56" facs="110.jpg"/>rød: Kommer du til Hvenøe Land/ der blifver du slagen død.</wrap>
+
+    <wrap>11. Det var Hellede Hogen/ saa snart sit Sverd uddrog: Det var den uselige Haf-Frue/ hand hende Hofvedet fra hug.</wrap>
+
+    <wrap>12. Saa tog hand det blodige Hofvet/kaste det ud for Sund: Skød hand Kroppen efter/ de samledis baade paa Bund.</wrap>
+
+    <wrap>13. Herr Grimmer og Herr Gerrner/ de skøde den Snecke fra Land: Vred saa var dem Vejret og sterck saa var dem Vand.</wrap>
+
+    <wrap>14. Vred saa var dem Vejret/og sterck saa var dem Vand: Sønder da gick goden Jern-Aare/udi Hellede Hogens Haand.</wrap>
+
+    <wrap>15. Sønder gick stercken Jerne-Aare/i Hellede Hogens Haand: Med to forgyldte Skiolde/styret de Herrer sig til Land.</wrap>
+
+    <wrap>16. Der de nu komme til Lande/der skiuret de deris Sverd: Der stod saa stolt en Jomfru/hun saae alt paa deris Færd.</wrap>
+
+    <wrap>17. Hun var smal i Midie/ til maade var hun lang: Korr var hun i Lifve/hun prøfvet en Jomfru Gang.</wrap>
+
+    <wrap>18. De gaa dem til Nørborg/ som Porten var vaar at staa: Hvor ere nu den Portener/som her skulde vare paa.</wrap>
+
+    <wrap>19. Her da ere den Portener/som ligger til Vegt og Vern; Viiste jeg hveden I kommer vare/eders Bud var jeg saa gierne.</wrap>
+
+    <wrap>20. Hid saa ere vi kommen/af trinde Thylte Land; Frue Grimild ere vor Søster/og nu siger jeg dig sand.</wrap>
+
+    <wrap><pb n="57" facs="111.jpg"/>21. Ind da kom den Portener/og stedis hand for Bord: Hand var snild i Tunge/hand kunde vel tøye sine Ord.</wrap>
+
+    <wrap>22. Hand var snild i Tunge/hand kunde vel tøye Ord: Her holder uden fore vor Port/to saa Velbyrdig Mænd.</wrap>
+
+    <wrap>23. Her holder uden fore Port/to saa Velbyrdige Mænd: Den eene hand fører en Fedel/den anden en forgyldte Hielm.</wrap>
+
+    <wrap>24. Hand fører ingen Fedel for nogen Herre Løn: Hveden de ere kommen/de ere to Hertuge Børn.</wrap>
+
+    <wrap>25. Det var stolte Fru Grimild/hun svøber sit Hofvet i Skind: Saa gaar hun i Borggaard/hun biuder sine Brødre ind.</wrap>
+
+    <wrap>26. Ville I gaa i Stuen/og dricke Miød og Vin: En Silcke Seng om I ville sofve/og tvende Jomfruer mine.</wrap>
+
+    <wrap>27. Det var stolt Fru Grimild/svøber sit Hofvet i Skind: Saa gaar hun i Steen-Stuen/før alle sine Kæmper ind.</wrap>
+
+    <wrap>28. Her side I alle mine Mænd/ dricke baade Miød og Vin: Hvo vil Helled Hogen slaa/all kieriste Broder min.</wrap>
+
+    <wrap>29. Hvo denne Pris vil forhverfve/slaa Helled Hogen til død: Hand skal raade for mine Borge/og drage mit Guld saa rød.</wrap>
+
+    <wrap>30. Til da svaret en Kæmpe/en Hefding for et Land: Den Pris vil jeg indtage/forvist med denne fri Haand.</wrap>
+
+    <wrap>31. Den Pris vil jeg forhverfve/slaa Helled Hogen til døde: Saa skal jeg raade for dine Borge/og føre dit Guld saa rød.</wrap>
+
+    <wrap><pb n="58" facs="112.jpg"/>32. Der til svaret Folqvar Spillemand/med sin store Jernstang: Alt skal jeg dig mercke/førend du kommer her frem.</wrap>
+
+    <wrap>33. Hand slog af det første Slag/Femten Kæmper de laae: Ha ha Folqvard Spillemand/hvor rører du din Fedelbue.</wrap>
+
+    <wrap>34. Saa slog hand de Kæmper/hand giorde der af en Bro: Og den var baade bred og lang/hand giorde dem stoer Uro.</wrap>
+
+    <wrap>35. For ofven vare de Huder/For neden Erter smaa: det volte Helled Hogen/hand falt der først paa.</wrap>
+
+    <wrap>36. Det var Helled Hogen/hend vilde igien opstaa: holt du nu kiere Broder/du veedst hvad Sag der var.</wrap>
+
+    <wrap>37. Holt nu allkieriste Broder min/du holdt saa vel din Tro: Det første du monne til Jorden falde/du vilde ret aldrig opstaa.</wrap>
+
+    <wrap>38. Saa trøst var Helled Hogen/hand vilde ey rygge sine Ord: hand stod paa baade sine Knæ/der hand fick Banesaar.</wrap>
+
+    <wrap>39. End vog hand tre Kæmper/de vare icke af de mindste: Saa gick hand til Hammeren/sin Faders Skat monne finde.</wrap>
+
+    <wrap>40. End var Lycken hannem saa blid/hand fick den Jomfruis Efn: det var stolten Hvenild/hand aflet med hende en Søn.</wrap>
+
+    <wrap>41. Rancke heede den Kæmpe/hand hefnde sin Faders Død: Grimild qvaldis af Hungers Qvide/hos Nidings Skat uden Brød.</wrap>
+
+    <wrap>42. Saa drog hand af Landet ud/til Bern i Lombardi: der var hand hos danske Mænd/og lod sin Manddom tee.</wrap>
+
+    <wrap><pb n="59" facs="113.jpg"/>43. Hans Moder blef hiemme igien/der af fick Hven sit Nafn: Blant Riddere og blant Kæmper/gaar der saa vit af Safn.</wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111407" author="folkeviser" variant="vedel2000012805">
+<head>
+  <title><num>VIII.</num>Dend Anden Vise om Frue Grimild og hendis Brødre</title>
+  <firstline>Det var stolte Frue Grimild</firstline>
+  <source pages="59-62" facsimile-pages="114-117"/>
+</head>
+<body>
+<poetry>
+<wrap>Det var stolte Frue Grimild/hun lader baade brygge og blande: Det var saa mangen fri Hellede/hun Budet efter sende.</wrap>
+
+    <wrap>2. Du bed dem komme til Orlog/du bed dem komme til Krig: der skal saa mangen fri Helled/miste sit unge Lif.</wrap>
+
+    <wrap>3. Det var Hellede Hogens Moder/hun drømte saa underligt: At den gode Fole styrte/som mand skulde hannem udride.</wrap>
+
+    <wrap>4. Den Drøm hand hafver at søde/min kiere Søn gif dem gem: Vockte dig fore din Søster/hun er saa falsk og slem.</wrap>
+
+    <wrap>5. Det var Helled Hogen/hand reed frem med den Strand: Hand fandt paa den Mare Vif/legte der paa hviden Sand.</wrap>
+
+    <wrap>6. Sig mig det gode Mare/du est en sandsage Vijs: Skal jeg slaaes paa Hvenske Land/og voge de Kæmper med Pris.</wrap>
+
+    <wrap>7. Hør du Helled Hogen/du est en Ridder bold: Nock saa hafver du Lande self/der til stoer Ære og Vold.</wrap>
+
+    <wrap>8. Du hafver baade Guld og Sølf/der til baade Borge og Fæste: Kommer du paa Hvenske Land/det blifver icke for dit beste.</wrap>
+
+    <wrap><pb n="60" facs="114.jpg"/>9. Du hafver Gods og Vælde/og der til meget Guld rød: Kommer du til Hvoen i Aar/du blifver der slagen til døde.</wrap>
+
+    <wrap>10. Det var Hellede Hogen/hand vredis ved det Ord: hand slog den arme Mare Vif/falt ned til sorten Jord.</wrap>
+
+    <wrap>11. Ligge du der og hvil/du fule og lede Spaa-Qvinde: Fuld vel veed jeg at verie mig/og Seyer af Kæmper vinde.</wrap>
+
+    <wrap>12. De rede uden for den Port/jo to saa herlige Mænd: De vare vel klædde i Silcke/deris Heste ginge alt udi spring.</wrap>
+
+    <wrap>13. De sloge paa de Porte/det giald ind i det Slot: hvor est du Portener/hvi da lader du icke op.</wrap>
+
+    <wrap>14. Det da meldte den Portener/saa listelig under sit Skind/jeg tør icke for min Frue/lade nogen Fremmet ind.</wrap>
+
+    <wrap>15. Hand gick til Frue Grimild/spurde hende saa brad: Her holder to Ridder for vor Borg/de bede mig strax oplade.</wrap>
+
+    <wrap>16. Det da svaret Frue Grimild/det er Folqvard Spillemand: Det er Helled Hogen/begge mine Brødre forsande.</wrap>
+
+    <wrap>17. Neder ginge Fruer og Jomfruer/de stødde da Ridderis Gang: De vare smale i Midie/og vel til Maade lange.</wrap>
+
+    <wrap>18. Det var stolt Frue Grimild/slog ofver sig Skarlagen Skind; Saa gaar hun ud i Gaarde/og bad de Hellede ind.</wrap>
+
+    <wrap>19. Her er Lov og Borgstue Ræt/at ingen Sverd maa drage; Mig tyckis det saa ilde være/siden Kong Sigfred blef slagen.</wrap>
+
+    <wrap><pb n="61" facs="115.jpg"/>20. Jeg vog da Kong Sigfred/alt med min egen Haand; Jeg vog og Kong Otterlin/hand var saa sterck en Mand.</wrap>
+
+    <wrap>21. Da miste jeg min Brynie god/der til min Ganger graa: Udi de kolde Vintre/der vi for Troien laa.</wrap>
+
+    <wrap>22. Hun fulde hannem paa den Sal/Til Hundrede Kæmper sine: Alle stode de imod de Riddere to/med dragne Sværd i Hænde.</wrap>
+
+    <wrap>23. Er her nogen Kæmpe iblant/som æde mit Brød: Der tør slaa min Broder/jeg gifver hannem Guld saa rød.</wrap>
+
+    <wrap>24. Det da hørde Folqvard Spillemand/saa snart ofver Bordet sprang: hannem glide Sværd af Skede/de Døre af Hængsel sanck.</wrap>
+
+    <wrap>25. Der hand fick den store Staalstang/og da blef hand saa glad: hand slog vel femten Kæmper/af Manddoms Styrcke og Slag.</wrap>
+
+    <wrap>26. Eya sagde Folqvard Spillemand/nu gaaer min Fædel ræt: Da slog Helled Hogen/vel tive i samme Fred.</wrap>
+
+    <wrap>27. Det var stolte Frue Grimild/hun giorde sig saa vred: Langt helder maatte du hieme været/end du til os udred.</wrap>
+
+    <wrap>28. Her er vel Hundrede Encker/førend du lader denne Strijd: Det svared Helled Hogen/det hafver du self saa stilt.</wrap>
+
+    <wrap>29. Det var Helled Hogen/hand løfte op Hielmen sin: Jeg brænder alt saa saare/Under haarden Brynie min.</wrap>
+
+    <wrap>30. Jeg er baade træt og Mød/af gandske Hier<pb n="62" facs="116.jpg"/>te min: Gifve det Gud Fader i Himmerig/jeg hafde et Horn med Vin.</wrap>
+
+    <wrap>31. Hand strøg op sit Hielment/hand drack af Manddeblod: <span lang="la">In Nomine Domini</span>, var Heldt Hogens Ord.</wrap>
+
+    <wrap>32. Nu ligge alle Grimilds Kæmper/slagne døde til Jord: Det hafver Helled Hogen/alt med sin Broder giort.</wrap>
+
+    <wrap>33. Gud naade dig Folqvard Spillemand/som her hos ligger i Lig: Du brugte din gode Staalstang/og det var uden Svig.</wrap>
+
+    <wrap>34. Vel fire tivi falt der for en/de kunde icke for hannem staae: Dem vog hand som en Kæmpe/førre hand paa Jorden laa.</wrap>
+
+    <wrap>35. Ah hierte kiere Broder/uselig jeg hid reiste: Saa kranck var mig i Skæben/at jeg dig her skulde miste.</wrap>
+
+    <wrap>36. Lefver jeg enten Dag eller Nat/førend de gaa til ende: Min Søster skal det gielde/jeg skal hende slae eller brende.</wrap>
+
+    <wrap>37. Den krancke Skæben kom/og slogs hun der til: Grimild lod Kong Hogens Søn/i Bierget svelte ihiel.</wrap>
+</poetry>
+</body>
+</text>
+
+<text id="folkeviser2026111408" author="folkeviser" variant="vedel2000012806">
+<head>
+  <title><num>IX.</num>Den Tredie Vise om samme Grimilds Forræderj imod sine Brødre</title>
+  <firstline>Slig Kæmper som Helled Hogen</firstline>
+  <source pages="62-66" facsimile-pages="117-121"/>
+</head>
+<body>
+<poetry>
+<wrap>Slig Kæmper som Helled Hogen/og hans Broder Folqvard Spillemand-Hvor finder mand dennem/der neffne kand.</wrap>
+
+    <wrap>2. Frem da traad hun Bodild/Helled Hogens Moder: Mig tyckis det de Foler/at de alle døde vare.</wrap>
+
+    <wrap><pb n="63" facs="117.jpg"/>3. Drømmen kand jeg fuld vel raade/jeg hafver der til Forstand; Komme I til Hvenske Land/det skader for mangen Mand.</wrap>
+
+    <wrap>4. De Herrer monne udride/som Strømmen den rand Stride/der funde de en Mare Qvinde/sof under de grønne Lide.</wrap>
+
+    <wrap>5. Vaag op/vaag op Mare Qvinde/du skiøne deilig Vif; Drager jeg til Hvenske Lande/monne jeg fordøie mit Lif.</wrap>
+
+    <wrap>6. Vend dig Helled Hogen/du est en Knect saa bold: Du hafver paa dit eget Land/saa mange Borge og Vold.</wrap>
+
+    <wrap>7. Du drag hiem til dit eget Land/lad fare denne Kæmpe Kif; Kommer du til din Søster/det koster dit unge Lif.</wrap>
+
+    <wrap>8. Det var Helled Hogen/og hand sit Sværd uddrog; Det var den usle Mare Vind/hand Hofvedet afhug.</wrap>
+
+    <wrap>9. Nu er jeg spaad/nu est du blaa; End drager jeg til Hvenske Land/Om jeg kand Børen faa.</wrap>
+
+    <wrap>10. Frem da ride de Hellede to/de funde den Fergemands Huus; Stat op goden Fergemand/og gack her ud til os.</wrap>
+
+    <wrap>11. Hør du hvad jeg siger dig/du før mig ofver Sund; Jeg gifver dig min gode Guldring/hand veyer vel femten Pund.</wrap>
+
+    <wrap>12. Haf du self din Guldring/jeg maa den icke eye; Jeg kommer aldrig i den Stad/jeg bær jo for hannem Qvide.</wrap>
+
+    <wrap>13. Jeg kommer aldrig i den Stad/jeg lider jo for hende Nød; Jeg fører dig icke ofver i Dag/Frue Grimild mig det forbød.</wrap>
+
+    <wrap><pb n="64" facs="118.jpg"/>14. Helled Hogen blef saa vred/alt baade i Hu og Mod; hand hug den Fergemand Hofvedet fra/saa viit da stanck hans Blod.</wrap>
+
+    <wrap>15. Saa kaste hand det blodige Hofvet/mit udi Øresund: Saa kaste hand Kroppen efter/hand bad dem findis ved Bund.</wrap>
+
+    <wrap>16. Her Gynther og der Herr Gerlof/de styret det Skib fra Land; Der de komme paa midie Sund/da reyste dem Veyret til Haand.</wrap>
+
+    <wrap>17. Sønder da ginge de Ahrer/udi Folqvard Spillemands Haand: Helled Hogen styrde med sit Skiold/det Skib med rød til Land.</wrap>
+
+    <wrap>18. Der kaste de deris Ancker/Alt paa den hvide Sand; Det var Hellede Hogen/hand træn der først paa Land.</wrap>
+
+    <wrap>19. De andre tøfvede icke ret lenge/men hver som hand kunde best; Rystede sig mandelig/og Folqvard Spillemand mest.</wrap>
+
+    <wrap>20. Ude da stander den Karer/hand trampler paa de Tinde; Her er kommen paa vort Land/to saa stolte Ædelinge.</wrap>
+
+    <wrap>21. Her er kommen paa vort Land/Kæmper og saa modige Mænd; De ere klædde i Jern/deris Heste komme springende frem.</wrap>
+
+    <wrap>22. Den eene hand fører en Høg/der skinner Guld i hans Skiold; Den anden fører en Fædel/en Hertugis Søn saa bold.</wrap>
+
+    <wrap>23. Ud da staar Fru Grimild/hun kunde vel føye sine Ord; Hand fører ingen Fædel/eller tiener for Herre Bord.</wrap>
+
+    <wrap>24. De ere to friske Hellede/to ædle Hertugs <pb n="65" facs="119.jpg"/>Børn; De ere icke ukiende/vi ere tre Syskinde Barn.</wrap>
+
+    <wrap>25. Det var Grefve Herr Guncelin/hand taler til sine Mænd: Her kommer Helled Hogen i Dag/vi holde med hannem en Rend.</wrap>
+
+    <wrap>26. Vi ville fegte med dem i Dag/og slaa dem alle til døde: Saa maa vi volde hans grønne Skov/der til det Guld saa rød.</wrap>
+
+    <wrap>27. Frue Grimild gaar sine Brødre imod/stoer Falsk var der for haande: I være vel kommen/foruden Helled Hogen alleene.</wrap>
+
+    <wrap>28. Det da melte Hellede Hogen/for inden ved den Dør: det vil jeg med eder voge/om I jo ellers tør.</wrap>
+
+    <wrap>29. Ud da ginge de Sværde/saa saare fast de sprunge: Alle lide dem haardeligen ilde/den gammel saa vel som den unge.</wrap>
+
+    <wrap>30. Sønder gick det gode Sværd/i Folqvard Spillemands Haand: Hand saae sig ofver den Dør/hand ramte en stoer Staalstang.</wrap>
+
+    <wrap>31. Hand slog i det første Slag/vel siu saa raske Hofmænd: I Drottens eget Nafn sagde hand/nu blifver min Fædel kiend.</wrap>
+
+    <wrap>32. Nu gaar min Fædel/I dantze og springe omkring: Mig svedis af stoer Arbeyd/for inden min Brynie Ring.</wrap>
+
+    <wrap>33. Det var Herr Kong Guncelin/hand traad til Grimild frem: Hielp nu mod disse Hellede haarde/eller skillie os af med dem.</wrap>
+
+    <wrap>34. I slaa nu alle mine gode Mænd/som jeg gifver Brød/I lade jo icke af/før Folqvard ligger død.</wrap>
+
+    <wrap>35. Hør du Søster Grimild/mig huggis saa dy<pb n="66" facs="120.jpg"/>be Vunder: Du varst mig aldrig tro eller god/som jeg det nu befinder.</wrap>
+
+    <wrap>36. Jeg hafver nu vaaget/i Dage og Nætter siu: Jeg hefner vist min Bane/førend jeg mister mit Lif.</wrap>
+
+    <wrap>37. Mit dyre Sværd er borte/og gode Jernstang i tu: Min Sorrig vilde jeg forglemme kunde jeg Verie faa.</wrap>
+
+    <wrap>28. Det svarede unge Obbe Jern/hand stod hannem alt saa nær: Jeg laaner dig mit gode Sværd/min Broder hafde saa kiær.</wrap>
+
+    <wrap>39. Mig tyckis du est en Helled from/Og der til meget sterck: Det kand jeg foruden falsk/alt paa din Fædelbue mercke.</wrap>
+
+    <wrap>40. Jeg tacker dig unge Obbe Jern/du est en Kæmpe saa rig: Jeg og alle mine Brødre/tiene dig igien uden Svig.</wrap>
+
+    <wrap>41. Saa hug hand Folqvard/det hørdis saa høyt udi Sky: Helder vilde hand mandelig døe/End skammelig rømme og fly.</wrap>
 </poetry>
 </body>
 </text>
