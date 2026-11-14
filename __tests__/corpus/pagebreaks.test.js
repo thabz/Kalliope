@@ -1,6 +1,92 @@
 import { collectPageBreakIssues } from '../../tools/work-validation.js';
 
 describe('page-break markup', () => {
+  const irregularWork = (markers, source = 'pages="176-180" facsimile-pages="10-12"') => `
+    <kalliopework><workhead><pagebreaks count-by="facsimile"/></workhead>
+    <workbody><text id="poem"><head><source ${source}/></head>
+    <body><poetry>Begyndelse
+${markers}
+</poetry></body></text></workbody></kalliopework>`;
+
+  it('counts actual physical transitions when printed pagination skips numbers', () => {
+    expect(collectPageBreakIssues('work.xml', irregularWork(
+      '<pb n="179" facs="010.jpg"/>Fortsættelse\n<pb n="180" facs="011.jpg"/>Slutning',
+    ))).toEqual([]);
+  });
+
+  it('requires every physical page, including the correct endpoints, in facsimile counting mode', () => {
+    for (const markers of [
+      '<pb n="179" facs="010.jpg"/>Fortsættelse',
+      '<pb n="179" facs="010.jpg"/>Fortsættelse\n<pb n="180" facs="012.jpg"/>Forkert side',
+    ]) {
+      expect(collectPageBreakIssues('work.xml', irregularWork(markers))).toContain(
+        'work.xml: text poem must mark every physical transition in facsimile-pages="10-12" exactly once (parallel note streams may repeat a transition).',
+      );
+    }
+  });
+
+  it('requires a physical range even when a printed range or count exception exists', () => {
+    const xml = irregularWork('<pb n="179" facs="010.jpg"/>Fortsættelse', 'pages="176-180"')
+      .replace('<text id="poem">', '<text id="poem" ignore-tests="pagebreak-count">');
+    expect(collectPageBreakIssues('work.xml', xml)).toContain(
+      'work.xml: text poem requires a numeric facsimile-pages interval for count-by="facsimile".',
+    );
+  });
+
+  it('allows parallel note streams to mark the same physical transition', () => {
+    const xml = irregularWork('<pb n="179" facs="010.jpg"/>Fortsættelse<footnote>Note<pb n="179" facs="010.jpg"/>Notefortsættelse</footnote>\n<pb n="180" facs="011.jpg"/>Slutning');
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+  });
+
+  it('orders explicitly corrected pagination while retaining the printed label', () => {
+    const xml = irregularWork('<pb n="200" facs="020.jpg"/>A\n<pb n="101" corrected-n="201" facs="021.jpg"/>B\n<pb n="202" facs="022.jpg"/>C',
+      'pages="199-202" facsimile-pages="20-23"');
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+    expect(collectPageBreakIssues('work.xml', xml.replace('n="202"', 'n="200"'))).toContain(
+      'work.xml: pb/@n must not decrease within a text: 101 [201] before 200.',
+    );
+  });
+
+  it('records a misprinted first-page label without inventing a boundary at text start', () => {
+    const xml = irregularWork('<pb n="611" facs="663.jpg"/>A\n<pb n="612" facs="664.jpg"/>B\n<pb n="613" facs="665.jpg"/>C',
+      'pages="610-613" first-n="630" facsimile-pages="663-666"');
+    expect(collectPageBreakIssues('work.xml', xml)).toEqual([]);
+    expect(collectPageBreakIssues('work.xml', xml.replace('n="611"', 'n="609"'))).toContain(
+      'work.xml: pb/@n must not decrease within a text: 630 [610] before 609.',
+    );
+  });
+
+  it('does not let physical counting hide a regression from the first printed page', () => {
+    expect(collectPageBreakIssues('work.xml', irregularWork(
+      '<pb n="101" facs="010.jpg"/>A\n<pb n="180" facs="011.jpg"/>B',
+    ))).toContain('work.xml: pb/@n must not decrease within a text: 176 before 101.');
+  });
+
+  it.each([
+    'pages="610-613" first-n="610" facsimile-pages="663-666"',
+    'pages="610-613" first-n="abc" facsimile-pages="663-666"',
+    'first-n="630" facsimile-pages="663-666"',
+    'pages="610-613" first-n="630"',
+  ])('rejects an ungrounded first-page correction: %s', source => {
+    expect(collectPageBreakIssues('work.xml', irregularWork('', source))).toContain(
+      'work.xml: source/@first-n requires a different Arabic first-page label, a nominal Arabic pages interval, and a facsimile-pages interval.',
+    );
+  });
+
+  it.each([
+    'n="101" corrected-n="101" facs="010.jpg"',
+    'n="101" corrected-n="0" facs="010.jpg"',
+    'n="101" corrected-n="0201" facs="010.jpg"',
+    'n="101" corrected-n="abc" facs="010.jpg"',
+    'n="ci" corrected-n="201" facs="010.jpg"',
+    'corrected-n="201" facs="010.jpg"',
+    'n="101" corrected-n="201"',
+  ])('rejects an invalid pagination correction: %s', attributes => {
+    expect(collectPageBreakIssues('work.xml', irregularWork(`<pb ${attributes}/>Ord`))).toContain(
+      'work.xml: pb/@corrected-n requires a different positive Arabic number, an Arabic pb/@n, and a numeric pb/@facs.',
+    );
+  });
+
   it('requires indentation on a new page to follow the page break', () => {
     const xml = `<kalliopework><workbody><text><body><poetry>
     <pb n="2"/>Indrykket linje

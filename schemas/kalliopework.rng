@@ -286,6 +286,7 @@
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
+      <optional><attribute name="first-n"><data type="nonNegativeInteger"/></attribute></optional>
       <choice>
         <ref name="inlineWithoutLineMarkers"/>
         <ref name="sourceBibliography"/>
@@ -460,6 +461,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="corrected-n"><data type="positiveInteger"/></attribute></optional>
       <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -638,7 +640,7 @@
       </element>
     </element>
   </define>
-  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><optional><attribute name="count-by"><value>facsimile</value></attribute></optional><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="inlineWithoutLineMarkers">
     <zeroOrMore>

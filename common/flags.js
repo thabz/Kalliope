@@ -9,6 +9,7 @@ export const flagMap = Object.freeze(Object.assign(Object.create(null), {
   it: '🇮🇹',
   es: '🇪🇸',
   nl: '🇳🇱',
+  be: '🇧🇪',
   gr: '🇬🇷',
   ir: '🇮🇷',
   fi: '🇫🇮',

@@ -62,6 +62,15 @@ const parseFacsimilePageNumber = value => {
   return match == null ? null : parseInt(match[1], 10);
 };
 
+const parsePhysicalPageInterval = value => {
+  const interval = parsePageInterval(value);
+  return interval != null && interval.from > 0 &&
+    Number.isSafeInteger(interval.from) === true &&
+    Number.isSafeInteger(interval.to) === true &&
+    /^\d+(?:\s*[-–]\s*\d+)?$/.test(value ?? '') === true
+    ? interval : null;
+};
+
 const standalonePageBreaks = xml => {
   const pattern = /<pb\b[^>]*\/>[ \t]*(?=\r?\n|$)/g;
   return Array.from(xml.matchAll(pattern)).map(match => ({
@@ -528,6 +537,9 @@ const collectPageBreakIssues = (
   const work = document.documentElement;
   const declarations = Array.from(document.getElementsByTagName('pagebreaks'));
   const issues = [];
+  const countByFacsimile = declarations.some(declaration =>
+    declaration.parentNode.nodeName === 'workhead' &&
+    declaration.getAttribute('count-by') === 'facsimile');
 
   indentedPageBreaks(xml).forEach(({ line, markup }) => {
     issues.push(
@@ -603,6 +615,25 @@ const collectPageBreakIssues = (
 
   textEntries(document).forEach(text => {
     const previousPrintedPages = new Map();
+    const head = directChild(text, 'head');
+    const source = head == null ? null : directChild(head, 'source');
+    const pages = source?.getAttribute('pages') ?? '';
+    const interval = /^\d+(?:\s*[-–]\s*\d+)?$/.test(pages) === true
+      ? parsePageInterval(pages) : null;
+    const firstLabel = source?.getAttribute('first-n') ?? null;
+    const firstLabelIsValid = firstLabel != null && /^\d+$/.test(firstLabel) === true &&
+      Number.isSafeInteger(Number(firstLabel)) === true && interval != null &&
+      Number(firstLabel) !== interval.from &&
+      parsePhysicalPageInterval(source?.getAttribute('facsimile-pages')) != null;
+    if (firstLabel != null && firstLabelIsValid === false) {
+      issues.push(`${filename}: source/@first-n requires a different Arabic first-page label, a nominal Arabic pages interval, and a facsimile-pages interval.`);
+    }
+    if (interval != null && (countByFacsimile === true || firstLabelIsValid === true)) {
+      previousPrintedPages.set(text, {
+        number: interval.from,
+        label: firstLabelIsValid === true ? `${firstLabel} [${interval.from}]` : String(interval.from),
+      });
+    }
     const visitedPagesByStream = new Map();
     Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
       const stream = noteAncestor(pageBreak) ?? text;
@@ -617,19 +648,34 @@ const collectPageBreakIssues = (
       }
       const previousPrintedPage = previousPrintedPages.get(stream) ?? null;
       const printedLabel = pageBreak.getAttribute('n');
-      const printedPage =
+      const originalPrintedPage =
         printedLabel == null ? null : parseArabicPageNumber(printedLabel);
+      const correctedLabel = pageBreak.getAttribute('corrected-n');
+      const hasCorrection = correctedLabel != null;
+      const correctionIsValid = hasCorrection === true &&
+        /^[1-9]\d*$/.test(correctedLabel) === true &&
+        Number.isSafeInteger(Number(correctedLabel)) === true &&
+        originalPrintedPage != null &&
+        Number(correctedLabel) !== originalPrintedPage &&
+        parseFacsimilePageNumber(pageBreak.getAttribute('facs') ?? '') != null;
+      if (hasCorrection === true && correctionIsValid === false) {
+        issues.push(`${filename}: pb/@corrected-n requires a different positive Arabic number, an Arabic pb/@n, and a numeric pb/@facs.`);
+      }
+      const printedPage = correctionIsValid === true
+        ? Number(correctedLabel) : originalPrintedPage;
+      const orderedLabel = correctionIsValid === true
+        ? `${printedLabel} [${correctedLabel}]` : printedLabel;
       if (
         printedPage != null &&
         previousPrintedPage != null &&
         printedPage < previousPrintedPage.number
       ) {
         issues.push(
-          `${filename}: pb/@n must not decrease within a text: ${previousPrintedPage.label} before ${printedLabel}.`,
+          `${filename}: pb/@n must not decrease within a text: ${previousPrintedPage.label} before ${orderedLabel}.`,
         );
       }
       if (printedPage != null) {
-        previousPrintedPages.set(stream, { label: printedLabel, number: printedPage });
+        previousPrintedPages.set(stream, { label: orderedLabel, number: printedPage });
       }
     });
   });
@@ -648,6 +694,21 @@ const collectPageBreakIssues = (
       const facs = pageBreak.getAttribute('facs');
       return facs != null && facs !== '' ? facs : pageBreak;
     })).size;
+    if (countByFacsimile === true) {
+      const interval = parsePhysicalPageInterval(facsimilePages);
+      if (interval == null) {
+        issues.push(`${filename}: text ${textId} requires a numeric facsimile-pages interval for count-by="facsimile".`);
+        return;
+      }
+      const actualFacsimiles = new Set(physicalTransitions.map(pageBreak =>
+        parseFacsimilePageNumber(pageBreak.getAttribute('facs') ?? '')));
+      if (actualFacsimiles.size !== interval.to - interval.from ||
+          Array.from(actualFacsimiles).some(page =>
+            page == null || page < interval.from || page >= interval.to)) {
+        issues.push(`${filename}: text ${textId} must mark every physical transition in facsimile-pages="${facsimilePages}" exactly once (parallel note streams may repeat a transition).`);
+      }
+      return;
+    }
     const intervalSource = pages ?? facsimilePages;
     const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =

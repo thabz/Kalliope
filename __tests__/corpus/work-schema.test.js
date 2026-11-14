@@ -21,6 +21,19 @@ describe('kalliopework RELAX NG schema', () => {
 
   const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
 
+  it('accepts physical page counting and an explicit correction to a printed page number', () => {
+    expect(() => validate(sourceWork('<pagebreaks count-by="facsimile"/>'))).not.toThrow();
+    expect(() => validate(poetryWork('Ord<pb n="101" corrected-n="201" facs="253.jpg"/>ord'))).not.toThrow();
+    expect(() => validate(sourceWork('<source pages="610-613" first-n="630" facsimile-pages="663-666"/>'))).not.toThrow();
+  });
+
+  it('rejects unsupported page counting modes and non-positive corrected page numbers', () => {
+    expect(() => validate(sourceWork('<pagebreaks count-by="unknown"/>'))).toThrow();
+    for (const value of ['0', '-1', '201.5', 'abc']) {
+      expect(() => validate(poetryWork(`<pb n="101" corrected-n="${value}" facs="253.jpg"/>Ord`))).toThrow();
+    }
+  });
+
   it('accepts a positive sort-order and rejects non-positive values', () => {
     expect(() => validate(sourceWork('').replace('<kalliopework ', '<kalliopework sort-order="10" '))).not.toThrow();
     for (const value of ['0', '-1', '1.5', 'abc']) {
