@@ -1,3 +1,4 @@
+import TitleBlock from '../components/titleblock.js';
 import EmbeddedContextNote from '../components/embedded-context-note.js';
 import Link from 'next/link';
 import Router from 'next/router';
@@ -231,6 +232,7 @@ const RelatedDateTexts = ({ texts, lang }) => {
 };
 
 const TextHeading = ({ text }) => {
+  if (text.title_block != null) return <TitleBlock parts={text.title_block} lang={text.content_lang} />;
   let className = 'text-heading';
 
   const subtitles = (text.subtitles || []).map((t, i) => {

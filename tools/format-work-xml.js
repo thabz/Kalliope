@@ -49,6 +49,7 @@ const metadataFields = [
   'rhyme',
   'source',
   'structure',
+  'titleblock',
   'subtitle',
   'suptitle',
   'syllables',
@@ -60,6 +61,7 @@ const metadataFields = [
 const textHeadMetadataOrder = [
   'suptitle',
   'title',
+  'titleblock',
   'subtitle',
   'toctitle',
   'indextitle',

@@ -1,3 +1,4 @@
+import { extractTitleBlock } from './build-static/parsing.js';
 import { embeddedContext } from './build-static/embedded-context.js';
 import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { buildTextBlocks } from './build-static/text-blocks.js';
@@ -568,6 +569,7 @@ const handle_text = async (
       : {}),
       title_prefix: title.prefix,
       linktitle: replaceDashes(titleText(linktitle)),
+      title_block: extractTitleBlock(head, collected, fragmentContext),
       subtitles,
       suptitles,
       text_type: textType,
@@ -1078,7 +1080,8 @@ const works_first_pass = (collected) => {
         id: workId,
         poet_id: poetId,
         title,
-        subtitles,
+        title_block: extractTitleBlock(head, collected),
+      subtitles,
         toctitle,
         linktitle,
         breadcrumbtitle,
