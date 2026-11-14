@@ -138,7 +138,11 @@ const validateWholeWorkCandidates = ({ analysis, workXml, findings }) => {
     expectedPoems.delete(poemKey);
     if (expected == null ||
         JSON.stringify(poem.stanza) !== JSON.stringify(expected.stanza) ||
-        JSON.stringify(poem.run_in) !== JSON.stringify(expected.run_in) ||
+        JSON.stringify(poem.run_in == null ? null : {
+          unit_count: poem.run_in.unit_count, units: poem.run_in.units,
+        }) !== JSON.stringify(expected.run_in == null ? null : {
+          unit_count: expected.run_in.unit_count, units: expected.run_in.units,
+        }) ||
         JSON.stringify(poem.page_breaks) !== JSON.stringify(expected.page_breaks)) {
       errors.push(`digtet ${poem.text_id ?? '?'} svarer ikke til aktuel XML`);
     }

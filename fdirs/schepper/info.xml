@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schepper" country="un" nationality="be" lang="la" type="poet">
+  <name>
+    <firstname>Cornelis Duplicius de</firstname>
+    <lastname>Schepper</lastname>
+    <fullname>Cornelius Scepperus</fullname>
+  </name>
+  <period>
+    <born>
+      <date>c.1502</date>
+      <place>Nieuwpoort</place>
+    </born>
+    <dead>
+      <date>1555</date>
+      <place>Antwerpen</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q2296251</wikidata>
+    <gnd>119818507</gnd>
+  </identifiers>
+  <!-- Identitet og livsdata: ADB XXXI (1890), s. 93–97,
+https://de.wikisource.org/wiki/ADB:Schepper,_Cornel_Duplicius_von
+samt Van der Aa XVII.I (1874), s. 307–314,
+https://www.dbnl.org/tekst/aa__001biog20_01/aa__001biog20_01_0543.php
+Fødselsåret varierer i litteraturen; ingen præcis fødselsdato er fastslået.
+Flandern er repræsenteret ved den moderne landekode be.
+Syv 1695, s. 617, oplyser den latinske originals ophavsmand som Cor. Scepperus;
+den danske oversætter er ikke navngivet. -->
+  <biography-status status="not-found" checked-on="2026-11-14">
+    <checked-source id="dbl1">Bind XV’s artikelregister er undersøgt under Schepper, Scepper og Duplicius; mellem Schepelern og Scherbech findes intet relevant personopslag.</checked-source>
+    <checked-source id="dbl2">Bind XX og XXI samt supplementbind XXVII er undersøgt i digitaliseret fuldtekst under Schepper, Scepper og Duplicius; ingen navnetræf eller biografisk artikel fundet.</checked-source>
+    <checked-source id="salmonsen2">Bind XX’s artikelregister og de relevante alfabetiske sider er undersøgt under Scepper og Schepper; intet personopslag fundet.</checked-source>
+    <checked-source id="salmonsen-supplement">Supplementets artikelregister er undersøgt efter navneformerne; intet relevant opslag fundet.</checked-source>
+    <checked-source id="salmonsen4">Det relevante alfabetiske afsnit fra Scavenius til Schlesien er undersøgt; Schepelern efterfølges af Scherer uden Schepper-opslag.</checked-source>
+    <note>Søgningen gælder selvstændige biografiske opslag, ikke samtlige omtaler. Den flamske diplomat og latindigter er dokumenteret i ADB og Van der Aa; deres biografitekster er ikke overtaget, da de ligger uden for Kalliopes tilladte biografikilder. Erslew og Ehrencron-Müller er ikke anvendt som biografikilder til dette fremmedsprogede, flamske forfatterskab. Ingen biografi er konstrueret af metadata.</note>
+  </biography-status>
+</person>

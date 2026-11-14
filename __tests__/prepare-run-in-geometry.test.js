@@ -1,5 +1,6 @@
 import { extractPoetryBlocks } from '../.agents/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js';
 import { prepareRunInGeometry, physicalRows } from '../.agents/skills/pdf-to-kalliope/scripts/prepare-run-in-geometry.js';
+import { validateWholeWorkCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/review-checkpoint.js';
 import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
 
 const work = body => `<kalliopework><workhead/><workbody><text id="outer"><head><source facsimile-pages="1-2"/></head><body>${body}</body></text></workbody></kalliopework>`;
@@ -49,6 +50,20 @@ describe('running stanza OCR geometry', () => {
     ]) } });
     expect(units(report)[0].segments[0].status).toBe('ambiguous');
     expect(prepareRunInGeometry({ xml }).status).toBe('manual_review');
+  });
+
+  it('validates current structure with attached OCR evidence and still detects changed units', () => {
+    const xml = work('<poetry><wrap>En lang strofe med mange ord</wrap></poetry>');
+    const analysis = analyzeWholeWork(xml, { variantsByFacsimile: {
+      '000.jpg': variant([row('En lang strofe med mange ord', 50)]),
+    } });
+    const findings = analysis.poems.flatMap(poem => poem.candidates.map(candidate => ({
+      candidate_id: candidate.candidate_id, status: 'verified',
+    })));
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings })).toEqual([]);
+    analysis.poems[0].run_in.units[0].text = 'Forkert tekst';
+    expect(validateWholeWorkCandidates({ analysis, workXml: xml, findings }))
+      .toContain('digtet outer svarer ikke til aktuel XML');
   });
 
   it('flags equally good OCR passes that disagree on physical row count', () => {
