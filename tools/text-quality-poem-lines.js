@@ -646,27 +646,30 @@ const findMissingModernFrenchSpacing = data => {
 };
 
 const ignoredTestsAtLine = context => {
-  const partRegexp = /<(?:text|section)\b[^>]*>/g;
+  const partRegexp = /<(\/?)(?:text|section)\b[^>]*>/g;
   const ignoredAtLine = [];
-  let currentIgnoredTests = [];
+  const ignoredStack = [];
   let partIndex = 0;
-  const parts = Array.from(context.data.matchAll(partRegexp));
+  const withoutComments = context.data.replace(/<!--[\s\S]*?-->/gu,
+    comment => comment.replace(/[^\n]/g, ' '));
+  const parts = Array.from(withoutComments.matchAll(partRegexp));
 
   context.lineStarts.forEach(lineStart => {
     while (partIndex < parts.length && parts[partIndex].index <= lineStart) {
-      const ignoreTestsMatch = parts[partIndex][0].match(
-        /\signore-tests="([^"]*)"/
-      );
-      currentIgnoredTests =
-        ignoreTestsMatch == null
+      const part = parts[partIndex];
+      if (part[1] === '/') {
+        ignoredStack.pop();
+      } else if (/\/\s*>$/u.test(part[0]) === false) {
+        const ignoreTestsMatch = part[0].match(/\signore-tests="([^"]*)"/);
+        ignoredStack.push(ignoreTestsMatch == null
           ? []
-          : ignoreTestsMatch[1]
-              .split(',')
-              .map((testName) => testName.trim())
-              .filter((testName) => testName.length > 0);
+          : ignoreTestsMatch[1].split(',')
+              .map(testName => testName.trim())
+              .filter(testName => testName.length > 0));
+      }
       partIndex += 1;
     }
-    ignoredAtLine.push(currentIgnoredTests);
+    ignoredAtLine.push(ignoredStack.at(-1) ?? []);
   });
 
   return ignoredAtLine;

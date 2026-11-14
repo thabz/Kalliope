@@ -183,13 +183,16 @@
         </attribute>
       </optional>
       <zeroOrMore>
-        <choice>
-          <ref name="poetry"/>
-          <ref name="prose"/>
-          <ref name="epigraph"/>
-          <ref name="castList"/>
-          <ref name="textElement"/>
-        </choice>
+        <group>
+          <zeroOrMore><ref name="pb"/></zeroOrMore>
+          <choice>
+            <ref name="poetry"/>
+            <ref name="prose"/>
+            <ref name="epigraph"/>
+            <ref name="castList"/>
+            <ref name="textElement"/>
+          </choice>
+        </group>
       </zeroOrMore>
     </element>
   </define>

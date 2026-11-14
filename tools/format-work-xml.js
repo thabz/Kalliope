@@ -106,7 +106,10 @@ export const structuralTagsOutsideColumnZero = xml => {
 
   while ((match = anyStructuralTagPattern.exec(structure)) != null) {
     const lineStart = xml.lastIndexOf('\n', match.index - 1) + 1;
-    if (match.index !== lineStart) {
+    const prefix = structure.slice(lineStart, match.index);
+    const followsPageBreaks = /^(?:<pb\b[^>]*\/>)+$/u.test(prefix) &&
+      /^<(?:text|poetry|prose|epigraph|castList)(?:[ \t>/])/u.test(match[0]);
+    if (match.index !== lineStart && followsPageBreaks === false) {
       violations.push(xml.slice(lineStart, xml.indexOf('\n', match.index)));
     }
   }
@@ -256,10 +259,11 @@ const indentMetadata = xml => {
 
   return protectedXml.split('\n').map(line => {
     const content = line.trimStart();
+    const closesMetadata = /<\/(?:head|workhead)>/.test(content);
 
     if (/^<(?:head|workhead)(?:[ \t>])/.test(content)) {
       metadataDepth = 0;
-      withinMetadata = true;
+      withinMetadata = closesMetadata === false;
       return line;
     }
     if (/^<\/(?:head|workhead)>/.test(content)) {
@@ -287,6 +291,10 @@ const indentMetadata = xml => {
       content.includes(`</${openingTag[1]}>`) !== true
     ) {
       metadataDepth += 1;
+    }
+    if (closesMetadata === true) {
+      metadataDepth = 0;
+      withinMetadata = false;
     }
 
     return formatted;

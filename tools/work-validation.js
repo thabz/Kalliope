@@ -570,7 +570,8 @@ const collectPageBreakIssues = (
         `${filename}: pb/@facs must use a numeric JPEG filename: ${facs}`,
       );
     }
-    const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
+    const inHeadingFootnote = (hasAncestor(pageBreak, 'text') === true ||
+      hasAncestor(pageBreak, 'section') === true) &&
       hasAncestor(pageBreak, 'head') === true &&
       hasAncestor(pageBreak, 'footnote') === true;
     if (hasAncestor(pageBreak, 'body') !== true && hasAncestor(pageBreak, 'front') !== true && inHeadingFootnote !== true) {

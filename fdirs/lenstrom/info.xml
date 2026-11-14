@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lenstrom" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Julius</firstname>
+    <lastname>Lénström</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1811-05-07</date>
+      <place>Gävle</place>
+    </born>
+    <dead>
+      <date>1893-04-06</date>
+      <place>Väster-Löfsta</place>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-13">
+    <checked-source id="salmonsen2">Bind 15, register og de relevante alfabetiske facsimilesider er undersøgt uden personopslag.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind 26, register og de relevante alfabetiske facsimilesider er undersøgt uden personopslag.</checked-source>
+    <checked-source id="salmonsen4">Register og de relevante alfabetiske facsimilegrænser er undersøgt uden personopslag.</checked-source>
+    <note>Svensk forfatter. DBL og de dansk-norsk-islandske reserveleksika er ikke anvendt, da de ikke er relevante for dette forfatterskab.</note>
+  </biography-status>
+  <!-- Navneform fra eget titelblad til Lyriska förstlingar og Litteraturbanken. Livsdata: Nordisk Familjebok 16, sp.172, https://runeberg.org/nfbp/0106.html . -->
+</person>

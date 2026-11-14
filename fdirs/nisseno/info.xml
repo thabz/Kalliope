@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nisseno" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Ole Hartvig</firstname>
+    <lastname>Nissen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1815-04-17</date>
+      <place>Melhus</place>
+    </born>
+    <dead>
+      <date>1874-02-04</date>
+      <place>Christiania</place>
+    </dead>
+  </period>
+  <literary-periods>no-nationalromantik</literary-periods>
+  <!-- Identitet som Brages H. Nissen: J.B. Halvorsen, Norsk Forfatter-Lexikon IV, s.293, https://runeberg.org/halvforf/4/0299.html . Livsdata: Salmonsen2 XVII (1924), s.979–980. -->
+  <identifiers>
+    <wikidata>Q110676</wikidata>
+    <viaf>78760041</viaf>
+    <gnd>121673657X</gnd>
+  </identifiers>
+</person>

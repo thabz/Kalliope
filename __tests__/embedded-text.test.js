@@ -27,6 +27,59 @@ Og visner.</poetry></body></text>
 const lines = blocks => blocks.flatMap(block => block.lines.map(([line]) => line)).join('\n');
 
 describe('contiguous embedded poems', () => {
+  it.each(['   ', '\n<!-- source note -->\n   '])('rejects a page marker without following block content: %j', empty => {
+    const doc = parse(`<text><head><title>Digt</title></head><body><pb facs="002.jpg"/><poetry>${empty}</poetry></body></text>`);
+    expect(() => buildTextBlocks(doc.documentElement, collected)).toThrow('must precede content');
+  });
+
+  it('attaches a parent page marker after leading comment lines without numbering an empty verse', () => {
+    const doc = parse('<text><head><title>Digt</title></head><body><pb facs="002.jpg"/><poetry>\n<!-- source note -->\nFørste vers\nAndet vers</poetry></body></text>');
+    const block = buildTextBlocks(doc.documentElement, collected)[0];
+    expect(block.lines.map(([line, options]) => [line, options.num])).toEqual([
+      ['<pb facs="002.jpg"/>Første vers', 1],
+      ['Andet vers', 2],
+    ]);
+  });
+
+  it('keeps parent page transitions before embedded verse and the next prose block', () => {
+    const doc = fixture();
+    const [act, poem] = Array.from(doc.getElementsByTagName('text'));
+    const body = act.getElementsByTagName('body')[0];
+    const blank = doc.createElement('pb');
+    blank.setAttribute('facs', '001.jpg');
+    const start = doc.createElement('pb');
+    start.setAttribute('n', '3');
+    start.setAttribute('facs', '002.jpg');
+    body.insertBefore(blank, poem);
+    body.insertBefore(start, poem);
+    const after = doc.createElement('pb');
+    after.setAttribute('n', '4');
+    after.setAttribute('facs', '003.jpg');
+    body.insertBefore(after, act.getElementsByTagName('prose')[1]);
+    const withMarkers = parse(doc.toString());
+    const [parentWithMarkers, childWithMarkers] = Array.from(withMarkers.getElementsByTagName('text'));
+    const context = buildTextBlocks(parentWithMarkers, collected);
+    expect(context.map(block => block.type)).toEqual(['prose', 'poetry', 'prose']);
+    expect(context[1].lines[0][0]).toContain('<pb facs="001.jpg"/><pb n="3" facs="002.jpg"/>');
+    expect(context[1].lines[0][0]).toContain('»En <i>rose</i>');
+    expect(context[2].lines[0][0]).toContain('<pb n="4" facs="003.jpg"/>Efter digtet.');
+    expect(lines(buildTextBlocks(childWithMarkers, collected))).not.toContain('<pb');
+  });
+
+  it('allows body page markers before content blocks but rejects a trailing marker', () => {
+    const doc = fixture();
+    doc.documentElement.removeAttribute('author');
+    const body = doc.getElementsByTagName('body')[0];
+    const marker = doc.createElement('pb');
+    marker.setAttribute('facs', '002.jpg');
+    body.insertBefore(marker, doc.getElementsByTagName('text')[1]);
+    const xml = () => `<kalliopework id="1900" author="molbech"><workhead><title>Digte</title><year>1900</year></workhead>${doc}</kalliopework>`;
+    const validate = () => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'], {input: xml(), stdio: 'pipe'});
+    expect(validate).not.toThrow();
+    body.appendChild(marker.cloneNode(false));
+    expect(validate).toThrow();
+  });
+
   it('uses the same verse in both views, with contextual styling only in the act', () => {
     const doc = fixture();
     const [act, poem] = Array.from(doc.getElementsByTagName('text'));
