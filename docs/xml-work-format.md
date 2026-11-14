@@ -1065,7 +1065,9 @@ Sidste verslinje på den trykte side
 Attributterne har forskellig betydning:
 
 - `n`: den nye trykte sides nummer eller trykte sidebetegnelse. Attributten kan
-  udelades, når siden ikke har en trykt betegnelse.
+  udelades, når siden ikke har en trykt betegnelse, eller den ikke kan læses
+  sikkert. Beskriv en usikker trykt betegnelse i en kildebaseret note frem for
+  at indsætte det forventede tal som en sikker læsning.
 - `facs`: det obligatoriske filnavn på facsimilebilledet for den nye side, fx
   `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
   facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
@@ -1113,6 +1115,29 @@ en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
 rækkefølgekontrol. Sideskift inde i hver note kontrolleres i deres egen
 rækkefølge, fordi en slutnote kan være trykt senere end det vers, dens
 notemarkør er knyttet til.
+
+Ved dokumenteret fejltrykt arabisk sidetal bevares det faktisk trykte tal i
+`n`. Angiv det tilsigtede tal særskilt med `corrected-n`, fx
+`<pb n="101" corrected-n="201" facs="253.jpg"/>`. Rettelsen skal være
+kontrolleret mod facsimilet og forklaret i værkets eller tekstens noter.
+`corrected-n` skal være et andet positivt arabisk heltal; det kræver både et
+arabisk `n` og et numerisk facsimilefilnavn. Rækkefølgekontrollen bruger det
+tilsigtede tal, mens det trykte tal bevares uændret. `source/@pages` kan da
+angive det tilsigtede bibliografiske interval; noten forklarer afvigelsen.
+Hvis fejltallet står på tekstens første side, bruges i stedet
+`<source pages="610-613" first-n="630" facsimile-pages="663-666"/>`.
+`first-n` bevarer det faktisk trykte arabiske tal; intervallet er det
+tilsigtede. Der indsættes fortsat ikke et kunstigt `<pb>` ved tekststart.
+Sideinventaret bevarer både `printed_page` og, ved rettelse, `corrected_page`.
+
+Når pagineringen springer tal over eller på anden måde ikke svarer til de
+fysiske sider, bruges `<pagebreaks count-by="facsimile"/>`. Hver tekst skal
+da have et positivt numerisk `source/@facsimile-pages`-interval. Kontrollen
+kræver præcis alle fysiske overgange i intervallet, med de korrekte nulbaserede
+filnumre; et tilsvarende antal forkerte sider accepteres ikke. Hovedtekst og
+parallelle noter må markere samme overgang. Denne kontrol kan ikke slås fra
+med `ignore-tests="pagebreak-count"`. Uden `count-by` gælder den hidtidige
+optælling efter det trykte sideinterval.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
