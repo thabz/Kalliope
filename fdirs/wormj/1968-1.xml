@@ -1097,7 +1097,8 @@ Til himlen ham indlucher.
 </body>
 </text>
 
-<text id="wormj2026111403">
+<!-- Kildekontrol s. 171 og 179: »hâr« og »fort fort« er trykt sådan. -->
+<text id="wormj2026111403" ignore-tests="single-circumflex-a-in-text,repeated-adjacent-word">
 <head>
   <title>Horologium Regium</title>
   <subtitle>
@@ -1952,7 +1953,8 @@ Hand Stride selff med dig imod din Fiendis Lejer/
 </body>
 </text>
 
-<text id="wormj2026111406">
+<!-- Kildekontrol s. 292: »Jeg Jeg« er trykt sådan. -->
+<text id="wormj2026111406" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Wiborigs Welkom</title>
   <subtitle>
