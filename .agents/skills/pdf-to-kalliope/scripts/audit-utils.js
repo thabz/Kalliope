@@ -21,6 +21,21 @@ const serializeChildren = node => {
 
 const isPoetryBlock = node => node.nodeName === 'poetry';
 
+// A nested text owns its own poetry. Parent entries retain only their direct
+// textual stream, including poems inside notes belonging to that stream.
+const ownedPoetryBlocks = entry => Array.from(entry.getElementsByTagName('poetry'))
+  .filter(poetry => {
+    let ancestor = poetry.parentNode;
+    while (ancestor != null && ancestor !== entry) {
+      if (['text', 'prose'].includes(ancestor.nodeName) === true &&
+        directChild(ancestor, 'head') != null && directChild(ancestor, 'body') != null) {
+        return false;
+      }
+      ancestor = ancestor.parentNode;
+    }
+    return ancestor === entry;
+  });
+
 const pageBreakKey = markup => /\bfacs="([^"]+)"/u.exec(markup)?.[1] ?? markup;
 
 const explicitPageBreaks = node => {
@@ -370,6 +385,7 @@ export {
   isPoetryBlock,
   serializeVerseLines,
   normalizeLine,
+  ownedPoetryBlocks,
   parseSimplePages,
   parseXml,
   readJsonLines,

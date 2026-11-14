@@ -5,8 +5,9 @@ import { fileURLToPath } from 'url';
 import { analyzeIndentation } from './analyze-indentation.js';
 import { analyzeIndentationGeometry } from './analyze-indentation-geometry.js';
 import { analyzeStanzaGeometry } from './analyze-stanza-geometry.js';
+import { prepareRunInGeometry } from './prepare-run-in-geometry.js';
 import { analyzeStanzas } from './analyze-stanzas.js';
-import { directChild, isPoetryBlock, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
+import { directChild, ownedPoetryBlocks, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
 import {
   extractPoetryBlocks,
   loadTsvVariants,
@@ -125,8 +126,7 @@ const poetryBlocks = xml => {
   return textEntries(document).flatMap(entry => {
     const textId = entry.getAttribute('id') ?? '';
     const source = directChild(directChild(entry, 'head'), 'source');
-    return Array.from(directChild(entry, 'body')?.getElementsByTagName('*') ?? [])
-      .filter(isPoetryBlock)
+    return ownedPoetryBlocks(directChild(entry, 'body') ?? entry)
       .map((poetry, blockIndex) => ({
         text_id: textId,
         pages: source?.getAttribute('pages') ?? null,
@@ -177,6 +177,12 @@ const analyzeWholeWork = (xml, options = {}) => {
       xml,
       variantsByFacsimile: options.variantsByFacsimile,
     });
+  const runInPreparation = options.variantsByFacsimile == null ? null : prepareRunInGeometry({
+    xml, variantsByFacsimile: options.variantsByFacsimile,
+  });
+  const runInGeometryByBlock = new Map((runInPreparation?.blocks ?? []).map(block => [
+    `${block.text_id}:${block.block_index}`, block,
+  ]));
   const geometryByBlock = new Map((preparation?.blocks ?? []).map(block => [
     `${block.text_id}:${block.block_index}`,
     block,
@@ -243,7 +249,9 @@ const analyzeWholeWork = (xml, options = {}) => {
       stanza,
       indentation,
       ...(runInUnits.length === 0 ? {} : {
-        run_in: { unit_count: runInUnits.length, units: runInUnits },
+        run_in: { unit_count: runInUnits.length, units: runInUnits,
+          ...(runInPreparation == null ? {} : { geometry: runInGeometryByBlock.get(`${poem.text_id}:${poem.block_index}`) ?? null }),
+        },
       }),
       ...(geometry == null ? {} : { geometry }),
       candidates: [

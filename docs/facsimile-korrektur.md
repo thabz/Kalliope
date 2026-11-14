@@ -62,6 +62,15 @@ og ét tekstfragment per fysisk facsimileside. Et sideskift i et ord forbliver
 inde i ordet. Analysen udsender en `run_in_structure_review`-kandidat;
 en tom liste med observerede verslinjer dokumenterer ikke disse strofer.
 
+Når helværksanalysen får en TSV-mappe, matcher den desuden hvert sidefragment
+mod sammenhængende fysiske OCR-linjer i `run_in.geometry`. Matchningen følger
+sidens rækkefølge og genbruger ikke linjer til flere strofer. Rapporten angiver
+valgt OCR-pass, linjebokse, faktisk matchet linjetal og konkurrerende placeringer
+eller pass med forskelligt linjetal. Manglende og tvetydige match kræver manuel
+kontrol. OCR-geometrien erstatter ikke den uafhængige visuelle optælling.
+Indlejrede tekster ejer deres egne digtblokke og tælles ikke igen under
+hovedteksten; deres sideskift føres videre til hovedtekstens efterfølgende blokke.
+
 Ved slutcheckpointet kræver hver sådan blok desuden
 `visual_run_in_units` i sin uafhængige visuelle strukturkontrol. Listen følger
 XML'ens stroferækkefølge og har `unit_index`, `indentation` og `segments`.
