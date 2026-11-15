@@ -6,7 +6,6 @@
   <year>1816</year>
   <pictures>
     <picture type="titlepage" src="1816h-p1.jpg"><transcription>Hyrden af Tolosa / Tragoedie / af / B. S. Ingemann. // Kiöbenhavn. / Trykt og forlagt af Boas Brünnich. / 1816. // Angelo sc.</transcription></picture>
-    <picture artwork="lorentzen/scene-fra-hyrden-af-tolosa"/>
   </pictures>
   <proofreadings>
     <proofreading model="gpt-6.1-sol" datetime="2026-11-15T07:20:07+00:00"/>
@@ -2035,6 +2034,9 @@ Den Udvei maa en — <w>Diævel</w> have viist dem.
 <text id="ingemann2026111505">
 <head>
   <title>Tredie Akt</title>
+  <pictures>
+    <picture artwork="lorentzen/scene-fra-hyrden-af-tolosa"/>
+  </pictures>
   <source pages="82-118" facsimile-pages="89-125"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
