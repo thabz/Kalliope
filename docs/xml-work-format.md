@@ -178,7 +178,9 @@ Almindelige felter i `<workhead>`:
 - `<toctitle>`: titel i indholdsfortegnelser, hvis den skal afvige fra `<title>`.
 - `<linktitle>`: titel i links, hvis den skal afvige.
 - `<breadcrumbtitle>`: titel i breadcrumbs, hvis den skal afvige.
-- `<notes>`: noter om hele vaerket.
+- `<notes>`: noter om hele vaerket. `<note>` i `<workhead>` må ikke være tom;
+  whitespace, kommentarer og tom typografisk markup tæller ikke som indhold.
+  Korpustesten håndhæver reglen.
 - `<pictures>`: billeder knyttet til hele vaerket.
 - `<source>`: kildeangivelser, som tekster kan arve eller referere til.
 - `<dates>`: datoer for vaerket.
