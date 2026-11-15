@@ -33,7 +33,7 @@ The normal deliverables are:
 - a JPEG of a separate graphic front cover when one exists
 - a precise PR handoff for genuine unresolved questions
 - a clean, validated repository change
-- a complete GitHub pull request after user approval
+- a complete GitHub pull request
 
 ## Eksterne kildehenvisninger
 
@@ -155,10 +155,9 @@ Do not fabricate XML or commit scratch OCR files just to create a PR.
 This blocked handoff replaces the normal completion requirements in sections
 19–24 and the definition of done below. Run the full repository test suite
 before creating the PR, report its actual result, and retain the repository's
-commit/push approval rules. Where approval is still needed, present the
-prepared incomplete change and report for approval, then create the PR after
-approval. Do not continue importing while waiting. Do not publish incomplete
-facsimile assets merely to satisfy the normal completion workflow.
+commit/push authorization rules and the user's existing authorization.
+Do not publish incomplete facsimile assets merely to satisfy the normal
+completion workflow.
 
 ## 1. Establish the repository context
 
@@ -1742,12 +1741,12 @@ Report concisely:
 - remaining questions documented in the PR handoff
 - exact files intended for the commit
 
-Do not commit, amend or push until the user has explicitly reviewed the change
-and requested commit/push, as required by `AGENTS.md`.
+Follow `AGENTS.md` and the user’s existing authorization for commit, amend and
+push. This skill adds no separate requirement for user review or approval.
 
-## 24. Create the GitHub pull request after approval
+## 24. Create the GitHub pull request
 
-After explicit user approval:
+When the work is ready and commit/push are authorized:
 
 1. Generate the complete facsimile directory from the source PDF with the
    repository's facsimile tool.
@@ -1920,8 +1919,7 @@ For a complete import, all applicable items below must be true:
 - [ ] `git diff --check` passes.
 - [ ] Temporary OCR and scratch files were removed.
 - [ ] The final diff contains only intended files.
-- [ ] The user reviewed the completed change before commit and push.
-- [ ] After approval, the change was committed, pushed and submitted as a
+- [ ] The change was committed, pushed and submitted as a
       complete GitHub pull request.
 
 ## Billeder
