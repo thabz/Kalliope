@@ -57,6 +57,10 @@ Hvad jeg bærer paa i mit stille Sind,
   <title>Mine Troesforvandte</title>
   <firstline>Jeg søgte Jer atten hundrede Aar</firstline>
   <source pages="6" facsimile-pages="10"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -114,6 +118,10 @@ Om Bogen i Jerusalems Skomagers Lomme?
   <title>Fædrenelandet</title>
   <firstline>Jeg hørte dem sjunge i Øst og i Vest</firstline>
   <source pages="8" facsimile-pages="12"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -141,6 +149,9 @@ Det Folk, Gud Herren har elsket meest,
   <title>Vennerne</title>
   <firstline>De skilles med Sorg; de mødes med Fryd</firstline>
   <source pages="9" facsimile-pages="13"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -195,6 +206,11 @@ Selv tykkes mit Liv mig en underlig Drøm,
   <title>Paa Sletten</title>
   <firstline>Er det Sarons Slette, jeg vandrer paa</firstline>
   <source pages="11" facsimile-pages="15"/>
+  <places>
+    <place ref="sharon-plain" relation="mentioned"/>
+    <place ref="judean-mountains" relation="mentioned"/>
+    <place ref="mount-carmel" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -281,6 +297,10 @@ Christenqvinden græder stille,
   <title>Østvinden</title>
   <firstline>Jeg lytter med Lyst, naar det lufter fra Øst</firstline>
   <source pages="14" facsimile-pages="18"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+    <place ref="sharon-plain" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -308,6 +328,9 @@ Dog — Paradiisluftning henflyer over Strand;
   <title>Barnet</title>
   <firstline>Barn med kulsort Haar og Øie</firstline>
   <source pages="15" facsimile-pages="19"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -436,6 +459,9 @@ Jeg evig paa Jorden skal vandre —
   <title>Ved Kildemarkedet</title>
   <firstline>Ved Kilden de dandse paa maigrøn Eng</firstline>
   <source pages="20" facsimile-pages="24"/>
+  <places>
+    <place ref="kidron-valley" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -495,6 +521,9 @@ For Lovens Spot jeg takked sjelefro:
   <title>Ungdomsdrømme</title>
   <firstline>Endnu jeg hører Nattergale sjunge</firstline>
   <source pages="22-27" facsimile-pages="26-31"/>
+  <places>
+    <place ref="jericho" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -628,6 +657,9 @@ Med Elskovstaarer i det sorte Øie.
   <title>Brudeskaren</title>
   <firstline>Paa Veien gaaer jeg med Stav og Hund</firstline>
   <source pages="28" facsimile-pages="32"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -660,6 +692,10 @@ Ak! dengang var jeg i Paradiis —
   <title>Ved Crucifixet</title>
   <firstline>Hvorhen jeg vandrer, seer jeg hiin Prophet</firstline>
   <source pages="29-31" facsimile-pages="33-35"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+    <place ref="golgotha" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -732,6 +768,12 @@ Jeg hvileløs bortvandrer gjennem Tiden.
   <title>Vandringsaar</title>
   <firstline>Jeg Brakken i Zions Stad forlod</firstline>
   <source pages="32" facsimile-pages="36"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+    <place ref="kidron-valley" relation="setting"/>
+    <place ref="mount-lebanon" relation="setting"/>
+    <place ref="golgotha" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -759,6 +801,9 @@ Hvert hundred Aar maa jeg did igjen
   <title>Hjemmet</title>
   <firstline>Hvor er min Brakke i Zions Stad</firstline>
   <source pages="33" facsimile-pages="37"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -786,6 +831,9 @@ Og <w>han</w>, som de troe ved hans Side sad —
   <title>Ved det røde Hav</title>
   <firstline>Jeg atter vandrer, hvor Mose Stav</firstline>
   <source pages="34" facsimile-pages="38"/>
+  <places>
+    <place ref="red-sea" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1185,6 +1233,9 @@ Deri han dig spænder, ubændige Hav!
   <title>Hieorosolyma est perdita</title>
   <firstline>Hep!&quot; synge nu atter de christne Smaa</firstline>
   <source pages="51" facsimile-pages="55"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1207,6 +1258,9 @@ Steen kun den gamle Jøde af Huus!
   <title>Mit Modersmaal</title>
   <firstline>Jeg min Sjæl vil udaande med Eloahs Ord</firstline>
   <source pages="52" facsimile-pages="56"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1446,6 +1500,9 @@ Min Sjæl maa mellem Dyb og Himmel vanke.
   <title>Menneskets Kundskab</title>
   <firstline>Arabens Hingst sin Rytters Stemme kjender</firstline>
   <source pages="61" facsimile-pages="65"/>
+  <places>
+    <place ref="egypt" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1587,6 +1644,9 @@ Men — under Teltet ingen Sjæl jeg kjender.
   <title>Vinterdrømmen</title>
   <firstline>Høit over Canaans Strande</firstline>
   <source pages="67" facsimile-pages="71"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1713,6 +1773,9 @@ Hvor Bjerget kneised mod Sky, skal Hvalerne svømme.
   <title>Det evige Folk</title>
   <firstline>Jeg saae Jerusalem falde</firstline>
   <source pages="72" facsimile-pages="76"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1737,6 +1800,9 @@ Paa Verdens Grav end staaer den evige Jøde.
   <title>Enthusiasterne</title>
   <firstline>I Zions Stad Propheter sang</firstline>
   <source pages="73" facsimile-pages="77"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2018,6 +2084,9 @@ Een Guddomstanke Tankeverdner avler;
   <title>I Pestens Tid</title>
   <firstline>Til Costnitz har jeg sat min Stav; trindt Isra&#x27;ls Arner ryge</firstline>
   <source pages="84-86" facsimile-pages="88-90"/>
+  <places>
+    <place ref="konstanz" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2130,6 +2199,12 @@ Een Aand kun har Mindesmærker —
   <title>Israels Velsignelse</title>
   <firstline>Hvor er din Velsignelse? Abrahams Slægt</firstline>
   <source pages="90-91" facsimile-pages="94-95"/>
+  <places>
+    <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2266,6 +2341,11 @@ Til <w>mig</w> vil aldrig Dødninghovedet smile.
   <title>Thabor</title>
   <firstline>Over Viinløvsalene steeg min Fod</firstline>
   <source pages="95" facsimile-pages="99"/>
+  <places>
+    <place ref="mount-tabor" relation="subject" primary="true"/>
+    <place ref="kishon" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2298,6 +2378,9 @@ Ak! — Sky nu skjuler mit Thabor og Israels Drømme.
   <title>Den hjemvandrende Israelit</title>
   <firstline>Hvorhen, o Rabbi, med Alderdomsqval</firstline>
   <source pages="96" facsimile-pages="100"/>
+  <places>
+    <place ref="valley-of-jehoshaphat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2461,6 +2544,10 @@ Jeg hørte Livets Røst igjen
   <title>Rabbi Ismael Ben Elisas Børn</title>
   <firstline>Over Ypperstepræstens Børn Israel sørger</firstline>
   <source pages="103-104" facsimile-pages="107-108"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2566,6 +2653,11 @@ Jeg er, hvad du dig kaldte, Mand fra Stubben!
   <title>Den bedende Jødinde</title>
   <firstline>Igiennem Brækkens Skodde Lyset glimter</firstline>
   <source pages="107-108" facsimile-pages="111-112"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2654,6 +2746,10 @@ Og kalde dig til Helligdommens Glæde.
   <title>Befrielsens Ord</title>
   <firstline>Min Mund vil Herrens store Ting udtone</firstline>
   <source pages="111-112" facsimile-pages="115-116"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="mount-tabor" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
