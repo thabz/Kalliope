@@ -838,6 +838,11 @@ skal Danmark lægge Fold til Fold
   <title>Zachæus</title>
   <firstline>Det var sig Zachæus fra Jericho</firstline>
   <source pages="43-49"/>
+  <places>
+    <place ref="jericho" relation="setting"/>
+    <place ref="kidron-valley" relation="mentioned"/>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -111,7 +111,7 @@ const isVerseLine = serialized => {
     !/^<wrap(?:\s|>)/u.test(trimmed) &&
     !/^<right(?:\s|>)/u.test(trimmed) &&
     !/^<hr(?:\s|\/|>)/u.test(trimmed) &&
-    !/^-{3,}$/u.test(trimmed) &&
+    !/^(?:-{3,}|={4})$/u.test(trimmed) &&
     plainText(trimmed).trim() !== '';
 };
 
@@ -121,7 +121,7 @@ const isStructuralDivider = serialized => {
     /^<wrap(?:\s|>)/u.test(trimmed) ||
     /^<right(?:\s|>)/u.test(trimmed) ||
     /^<hr(?:\s|\/|>)/u.test(trimmed) ||
-    /^-{3,}$/u.test(trimmed);
+    /^(?:-{3,}|={4})$/u.test(trimmed);
 };
 
 const isNumberedSectionDivider = serialized => {

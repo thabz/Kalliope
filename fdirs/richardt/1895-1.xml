@@ -2654,6 +2654,9 @@ men hist i Koret Christus staar og kalder.
   <title>Ved det døde Hav</title>
   <firstline>Du døde Hav, hvi vinker Du</firstline>
   <source pages="74-76"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2711,6 +2714,10 @@ hvis Bad kan igjenføde.
   <title>I Nazareth</title>
   <firstline>Mellem disse grønne Høje</firstline>
   <source pages="76-78"/>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="mount-tabor" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2793,6 +2800,11 @@ Ham som er Alverdens Bøn.
   <title>Thabor</title>
   <firstline>Paa Esdralonsletten, hvor Vaaren holder Fest</firstline>
   <source pages="78-80"/>
+  <places>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+    <place ref="mount-tabor" relation="subject" primary="true"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2855,6 +2867,10 @@ viis mig min Frelser, hos Ham tør jeg dø.
   <title>Hjemvee</title>
   <firstline>Aftenvind, med dine svale</firstline>
   <source pages="80-82"/>
+  <places>
+    <place ref="sharon-plain" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4510,6 +4526,9 @@ vor Frelser og vor Gud!
     <event>1864-06-26</event>
   </dates>
   <source pages="127-129"/>
+  <places>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7291,6 +7310,9 @@ din Halvmaanering!
   <title>Normannen</title>
   <firstline>Imellem isgraa Fjelde</firstline>
   <source pages="204-213"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8094,6 +8116,9 @@ ja var det for at dø i samme Stund!
   <title><num>III.</num>Ved Billed-Egen</title>
   <firstline>Hvor lider Du min Datter</firstline>
   <source pages="229-239"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
