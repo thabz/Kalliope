@@ -1,3 +1,4 @@
+import TitleBlock from '../components/titleblock.js';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -196,10 +197,10 @@ const WorkPage = (props) => {
       selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>
-          <SubHeading>
+          {work.title_block != null ? <TitleBlock parts={work.title_block} lang={lang} /> : <SubHeading>
             <WorkName work={work} lang={lang} />
             <WorkSubtitles work={work} lang={lang} />
-          </SubHeading>
+          </SubHeading>}
           {table}
           <style jsx>{`
             :global(.nodata) {

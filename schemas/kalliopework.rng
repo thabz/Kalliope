@@ -36,6 +36,7 @@
         <ref name="front"/>
         <ref name="title"/>
         <ref name="year"/>
+        <ref name="titleblock"/>
         <ref name="subtitle"/>
         <ref name="suptitle"/>
         <ref name="firstline"/>
@@ -752,4 +753,10 @@
       <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
+<define name="titleblock"><element name="titleblock"><oneOrMore><element name="part">
+<attribute name="type"><choice><value>main</value><value>sub</value><value>dedication</value><value>byline</value><value>tune</value><value>imprint</value></choice></attribute>
+<optional><attribute name="align"><choice><value>left</value><value>center</value><value>right</value></choice></attribute></optional>
+<optional><attribute name="size"><choice><value>small</value><value>normal</value><value>large</value></choice></attribute></optional>
+<choice><oneOrMore><element name="line"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore><oneOrMore><element name="p"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore></choice>
+</element></oneOrMore></element></define>
 </grammar>
