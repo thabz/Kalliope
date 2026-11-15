@@ -8,7 +8,7 @@ export default function TitleBlock({ parts, lang, heading = 'h2' }) {
       {parts.map((part, i) => {
         const Tag = part.type === 'main' ? heading : 'div';
         return (
-          <Tag key={i} style={{ textAlign: part.align, fontSize: sizes[part.size], fontWeight: 'normal', margin: '0 0 1em', lineHeight: 1.6 }}>
+          <Tag key={i} style={{ textAlign: part.align, fontSize: sizes[part.size], fontWeight: 'normal', margin: part.type === 'main' ? 0 : '0 0 1em', lineHeight: 1.6 }}>
             {part.blocks.map((block, j) => {
               const Block = part.type === 'main' ? 'span' : block.type === 'p' ? 'p' : 'div';
               return <Block key={j} style={{ display: 'block', margin: j > 0 && block.type === 'p' ? '1em 0 0' : 0 }}>
