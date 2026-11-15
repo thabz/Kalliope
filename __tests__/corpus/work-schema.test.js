@@ -64,10 +64,8 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
-  it('accepts overlines containing letters, emphasis and source page markers', () => {
-    expect(() => validate(poetryWork(
-      'h<o>a</o> ſøn th<o><i>m</i><pb facs="006.jpg"/></o>',
-    ))).not.toThrow();
+  it('rejects obsolete overline markup', () => {
+    expect(() => validate(poetryWork('h<o>a</o>ns'))).toThrow();
   });
 
   it.each(['poetry', 'prose'])('accepts a historical fraction date in %s and nested emphasis', block => {

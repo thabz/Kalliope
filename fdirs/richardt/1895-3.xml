@@ -958,6 +958,10 @@ til Hjertet bliver stille!
   <title>Johannes i Fængslet</title>
   <firstline>Hvor Asfalt-Søen ruller sit tunge</firstline>
   <source pages="28-40"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8390,6 +8394,9 @@ og ender med en Takkesang.
   <title>Niniveh</title>
   <firstline>I Flodlandet, Evfrat og Tigris' Land</firstline>
   <source pages="241-248"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>

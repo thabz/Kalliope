@@ -1073,13 +1073,7 @@ con li occhi vòlti a chi del fango ingozza.
   <title>Canto VIII</title>
   <firstline>Io dico, seguitando, ch'assai prima</firstline>
   <pictures>
-    <picture src="dante2005050108-p1.jpg" museum="louvre" objid="cl010065871" invnr="INV 3820">
-      Eugène Delacroix: <i>La Barque de Dante</i>, 1822, olie på lærred, 189×246 cm.
-      <!-- metadata checked: 2026-07-16 -->
-      <identifiers>
-        <wikidata>Q2354251</wikidata>
-      </identifiers>
-    </picture>
+    <picture artwork="delacroix/barque-de-dante-1822"/>
     <picture src="dante2005050108-p2.jpg" museum="orsay" objid="dante-et-virgile-153692">
       William-Adolphe Bouguereau: <i>Dante et Virgile</i>, 1850, olie på lærred, 280.5×225.3 cm.
       <!-- metadata checked: 2026-07-16 -->
@@ -3450,6 +3444,9 @@ ond'io da li 'ncarcati mi parti'
 <head>
   <title>Canto XXIV</title>
   <firstline>In quella parte del giovanetto anno</firstline>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>

@@ -11,12 +11,8 @@ const validateIndexTitleMarkup = (
   title,
   textId,
   filename,
-  { allowOverlines = false } = {},
 ) => {
-  const remainingMarkup = allowOverlines === true
-    ? title.replace(/<\/?o\s*\/?>/g, '')
-    : title;
-  if (remainingMarkup.includes('<')) {
+  if (title.includes('<')) {
     throw new Error(`${textId} har markup i titlen i ${filename}`);
   }
 };

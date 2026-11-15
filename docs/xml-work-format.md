@@ -178,7 +178,9 @@ Almindelige felter i `<workhead>`:
 - `<toctitle>`: titel i indholdsfortegnelser, hvis den skal afvige fra `<title>`.
 - `<linktitle>`: titel i links, hvis den skal afvige.
 - `<breadcrumbtitle>`: titel i breadcrumbs, hvis den skal afvige.
-- `<notes>`: noter om hele vaerket.
+- `<notes>`: noter om hele vaerket. `<note>` i `<workhead>` må ikke være tom;
+  whitespace, kommentarer og tom typografisk markup tæller ikke som indhold.
+  Korpustesten håndhæver reglen.
 - `<pictures>`: billeder knyttet til hele vaerket.
 - `<source>`: kildeangivelser, som tekster kan arve eller referere til.
 - `<dates>`: datoer for vaerket.
@@ -662,7 +664,7 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 </subtitle>
 ```
 
-`<title>` må indeholde tekst, `<footnote>`, `<o>` til trykte forkortelsesstreger
+`<title>` må indeholde tekst, `<footnote>`
 og et `<num>`-prefix uden indlejret markup. `<toctitle>` må desuden bruge
 `<w>` og `<i>`. Andre typografiske tags er ikke tilladt i `<title>` uden for
 fodnoter, og `<indextitle>` og
@@ -1407,11 +1409,10 @@ ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er til
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
-- `<o>`: en streg over de omfattede bogstaver, fx `h<o>a</o>` ved en
-  trykt forkortelsesstreg. Bogstaverne bevares uden at opløse forkortelsen.
-  Elementet renderes med CSS `text-decoration: overline`.
-  I titlers rene tekst til indeks og links bevares stregen som en kombinerende
-  macron (U+0304).
+- Trykte forkortelsesstreger skrives med U+0305 COMBINING OVERLINE efter
+  det omfattede bogstav, fx `ha̅ns` (`ha\u0305ns` i JavaScript). Bogstaverne
+  bevares uden at opløse forkortelsen. Brug samme Unicode-tegn i titler,
+  førstelinjer og brødtekst; egentlige makroner bevares som makroner.
 - `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
   at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
 - `<s>` og `<small>`: lille skrift. Gennemstregning angives med `<strike>`.
@@ -1637,3 +1638,20 @@ forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
 Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker med scriptet i
 `add-kalliope-person` mod et opdateret JSONL-korpus, så mulige opfyldelser
 opdages. Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
+
+## Udførlige titelpartier
+
+Et valgfrit `<titleblock>` efter `<title>` i `<head>` eller `<workhead>`
+erstatter visningen af titel, overtitel og undertitel på læsesiden.
+`<title>` bevarer den normaliserede titel til søgning og navigation.
+Titelblokken gengiver kildens versaler og typografi.
+
+Blokken indeholder ordnede `<part type="main|sub|dedication|byline|tune|imprint">`.
+Hver del indeholder enten `<line>` til bevidst linjedeling eller `<p>` til
+sammenhængende prosa. Rent typografiske orddelinger samles. `align` kan være
+`left`, `center` eller `right` (standard `left`); `size` kan være `small`,
+`normal` eller `large` (standard `normal`). Eksisterende inline-typografi,
+sprogmarkeringer og fodnoter understøttes. De erstattede subtitle/suptitle-
+felter udelades, så den fulde gengivelse kun vedligeholdes ét sted.
+Buildets tekst- og værk-JSON har et valgfrit `title_block` med delene og deres
+indholdsblokke; det offentlige JSONL-format er uændret.

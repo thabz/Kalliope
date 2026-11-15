@@ -1,17 +1,1949 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1833" author="ingemann" status="incomplete" type="poetry">
+<kalliopework id="1833" author="ingemann" status="complete" type="poetry">
 <workhead>
-  <title>Blade af Jerusalems Skomagers Lommebog eller Ahasverus</title>
+  <title>Blade af Jerusalems Skomagers Lommebog</title>
   <year>1833</year>
-  <quality>korrektur1</quality>
+  <pictures>
+    <picture type="titlepage" src="1833-p1.jpg" primary="true">
+      <transcription>Blade / af / Jerusalems Skomagers / Lommebog / udgivne / af / B. S. Ingemann. // Kjøbenhavn 1833. / Trykt og forlagt af Andreas Seidelin, / Hof- og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source href="https://www.kb.dk/e-mat/dod/115308068703.pdf" facsimile="115308068703" facsimile-pages-num="118" facsimile-pages-offset="4">
+    <author id="ingemann">B. S. Ingemann</author>
+    <title>Blade af Jerusalems Skomagers Lommebog</title>
+    <place>Kjøbenhavn</place>
+    <publisher>Andreas Seidelin</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1833</year>
+  </source>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-15T08:30:44+01:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
+
+<text id="ingemann2026111576">
+<head>
+  <title>Mit Costume</title>
+  <subtitle>(Til det ** de Aarhundredes Børn).</subtitle>
+  <firstline>Hvi løbe I for mig, I kloge Smaa</firstline>
+  <source pages="5" facsimile-pages="9"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvi løbe I for mig, I kloge Smaa!
+    Jeg har jo afraget mit Skjæg,
+Har Filtehat, Fipkjole, Beensække paa
+    Med jert vise Aarhundredes Præg.
+
+Jeg teer mig jo som en anstændig Mand,
+    Der kun reiser til Fods for Motion;
+I seer jo, jeg har min fulde Forstand,
+    Er en meget maneerlig Person.
+
+Hvad jeg bærer paa i mit stille Sind,
+    Derom I spørge vist ei.
+(Al Verdens Sorg er som Veir og Vind —
+    Min følger mig evig paa Vei).
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111577">
+<head>
+  <title>Mine Troesforvandte</title>
+  <firstline>Jeg søgte Jer atten hundrede Aar</firstline>
+  <source pages="6" facsimile-pages="10"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg søgte Jer atten hundrede Aar
+    I al Verdens Riger og Lande;
+Jeg fandt eders Næser; jeg fandt eders Haar;
+    Jeg Jer kjendte paa Øie og Pande.
+
+Og Næsen var krum, som i Abrahams Tid:
+    Den naaede Jer næsten til Munden;
+Den spidsed sig fiffig med Kløgt og med Vid;
+    Men Jehovas Aand var forsvunden.
+
+Som Isaaks var Haaret ravnsort endnu;
+    Som Jacobs var Øine og Pander;
+Men Zion kom ei eders Sjæle ihu,
+    Ei Landet, som Jordan vander.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111578">
+<head>
+  <title>Til dem, der engang maatte læse min Lommebog</title>
+  <firstline>Ærbødigst Hilsen til hver Læser, jeg venter</firstline>
+  <source pages="7" facsimile-pages="11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ærbødigst Hilsen til hver Læser, jeg venter!
+Baade lykkelige Mennesker og — Recensenter:
+(Baade dem, der kan glædes ved Poesien,
+Og dem, der maae nøies med hvad Feil der er i'en —
+Samt med Ufeilbarligheden i Theorien).
+    Tillad mig her, i et Slags Prolog,
+Om ei just at rose min egen Bog,
+Saa dog at bevidne, hvad bedst jeg kan vide:
+Den er heelt udskrevet af min venstre Side.
+Behager den ei Alle, naar den kommer for Dagen,
+Gjør det (mellem os sagt) ikke stort til Sagen.
+Jeg har mange Aarhundreders Publicummer seet:
+Hvad eet har beundret, har et andet udleet;
+Een Slægt vil grine, og en anden vil græde;
+Hver Fugl med sit eget Næb dog maa qvæde.
+Hvorfra skulde al den Enighed komme
+Om Bogen i Jerusalems Skomagers Lomme?
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111579">
+<head>
+  <title>Fædrenelandet</title>
+  <firstline>Jeg hørte dem sjunge i Øst og i Vest</firstline>
+  <source pages="8" facsimile-pages="12"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg hørte dem sjunge i Øst og i Vest
+    Om Paradiset blandt Lande:
+Hver Fugl sin egen Rede fandt bedst
+    Paa Bjerg og ved nøgne Strande.
+
+Og lige Ret jeg dem Alle gav:
+    Hver Sjæl sit Fædreland priste;
+Men fredløs foer over Bjerg og Hav
+    Den evige Landsforviste.
+
+Paa Zion græsser Osmannens Hest
+    Og ved Genesarets Bredder —
+Det Folk, Gud Herren har elsket meest,
+    Veed ei hvad Fædreland hedder.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111580">
+<head>
+  <title>Vennerne</title>
+  <firstline>De skilles med Sorg; de mødes med Fryd</firstline>
+  <source pages="9" facsimile-pages="13"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De skilles med Sorg; de mødes med Fryd;
+    De tale om Frænder og Venner;
+Det klinger mig som en fremmed Lyd:
+    Mig Ingen i Verden kjender.
+
+De græde ved Frænders og Venners Grav;
+    Og Graven sig mild oplukker.
+Jeg stirrer paa Tidens det øde Hav —
+    En Evighed i mig sukker.
+
+Jeg seer paa Slægternes store Strøm;
+    Jeg lytter til Vennerøster:
+Det klinger som tusindaarsgamle Drøm
+    Fra Canaans hellige Kyster.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111581">
+<head>
+  <title>Mit Billede</title>
+  <firstline>De skye mig, naar de mit Aasyn see</firstline>
+  <source pages="10" facsimile-pages="14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De skye mig, naar de mit Aasyn see:
+    Det ligner en udhugget Steen;
+Men nævner jeg mig, de Forstandige lee:
+    Min Jammer troer ikke Een.
+
+Mit Liv dem tykkes et Sagn, fuldsært,
+    Mit Billed en mørk Phantasie,
+Et Eventyr, Ammen har Børnene lært,
+    En Drøm, som er længst forbi.
+
+Tidt staaer jeg selv ved den klare Strøm
+    Og stirrer heelt tvivlsom deri:
+Selv tykkes mit Liv mig en underlig Drøm,
+    Mit Billed — min Sjæls Phantasie.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111582">
+<head>
+  <title>Paa Sletten</title>
+  <firstline>Er det Sarons Slette, jeg vandrer paa</firstline>
+  <source pages="11" facsimile-pages="15"/>
+  <places>
+    <place ref="sharon-plain" relation="mentioned"/>
+    <place ref="judean-mountains" relation="mentioned"/>
+    <place ref="mount-carmel" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Er det Sarons Slette, jeg vandrer paa?
+    Hist Havet heelt mægtigt bruser —
+Judæas Bjerge i Øst jeg saae —
+    Fra Carmel Sydvinden suser.
+
+Men Lilliemarken jeg skuer ei —
+    Her Sarons Roser ei gløde —
+Ei dufter paa tulipanskiøn Vei
+    Narcissen i Morgenrøde.
+
+Paa Sletten gaaer jeg i fremmed Land;
+    Judæas Bjerge forsvinde —
+Mit Carmel flyver fjernt over Strand
+    Med Taagen for Nordens Vinde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111583">
+<head>
+  <title>Ved Kjæret</title>
+  <firstline>Ved Gadekjæret Drengen staaer</firstline>
+  <source pages="12" facsimile-pages="16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ved Gadekjæret Drengen staaer;
+    I Haanden glad han klapper:
+Hans Barneskib paa Kjæret gaaer
+    Til Gaasen Skibet snapper.
+
+Som han, jeg stod ved Ramas Park;
+    — Jeg mindes Barnedrømmen —
+En Mandelskal var Noahs Ark,
+    Og Parken Syndflodstrømmen.
+
+Paa Strømmen flød min frelste Skat,
+    Den stod paa grønne Tue:
+Græstuen var mit Ararat;
+    En Fjær var Arkens Due.
+
+Og Oliebladet mangled ei:
+    Det bar jeg selv i Munden.
+Til Paradiset fandt jeg Vei
+    Igjennem Uskyldslunden.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111584">
+<head>
+  <title>Paa Kirkegaarden</title>
+  <firstline>Over Grave Maanen glider</firstline>
+  <source pages="13" facsimile-pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Over Grave Maanen glider —
+    Sagte hviske Nattens Vinde.
+Christenqvinden Hænder vrider
+    Ved det hvide Marmorminde.
+
+"Ak! for tidlig!" Qvinden græder,
+    "Ak! for tidlig bleeg i Døden!"
+Frem af mørke Busk jeg træder:
+    "Tør du see paa Jordalsjøden?"
+
+"Bedre tidlig, end forsilde!"
+    Hvisker Jøden og bortvanker.
+Christenqvinden græder stille,
+    Troer, jeg var kun — hendes Tanker.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111585">
+<head>
+  <title>Østvinden</title>
+  <firstline>Jeg lytter med Lyst, naar det lufter fra Øst</firstline>
+  <source pages="14" facsimile-pages="18"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+    <place ref="sharon-plain" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg lytter med Lyst, naar det lufter fra Øst;
+    Den Luftning meest mig husvaler:
+Den bringer mig Hilsen fra Canaans Kyst,
+    Og om Sarons Roser den taler.
+
+Granatæbleskoven den sused forbi,
+    Over Ramas Figentrælunde;
+Den hvisker om Grotten ved Bjergtemplets Sti,
+    Hvor David og Salomon blunde.
+
+Om Hvilen hist i forjættede Land
+    Det toner i Østvindens Susen;
+Dog — Paradiisluftning henflyer over Strand;
+    Men Dybet kun svarer med Brusen.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111586">
+<head>
+  <title>Barnet</title>
+  <firstline>Barn med kulsort Haar og Øie</firstline>
+  <source pages="15" facsimile-pages="19"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Barn med kulsort Haar og Øie!
+    Nik kun til den gamle Mand!
+Seer jeg paa dit Aasyn nøie,
+    Rachels Smiil jeg mindes kan.
+
+Rachel med de Øine sorte —
+    Var det ikke saa hun hed?
+Sang hun ei i Zions Porte?
+    Ak! jeg selv det meer ei veed.
+
+Blik og Sang jeg husker nøie —
+    Navnet ei jeg mindes kan.
+— Barn med kulsort Haar og Øie!
+    Fly ei for den gamle Mand!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111587">
+<head>
+  <title>De Udvalgte</title>
+  <firstline>Nu munter, Gamle! fra Stad til Stad</firstline>
+  <source pages="16" facsimile-pages="20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu munter, Gamle! fra Stad til Stad!
+    See frisk paa Menneskevrimlen!
+De Udvalgtes Skare sig tumler heelt glad
+    Og gjør sikker Regning paa Himlen.
+
+Om Kjærlighed præke de Christne nok;
+    Dog Jøde og Hedning de hade;
+For den hele retfærdiggjorte Flok
+    Skal Himmerigs Port sig oplade.
+
+Med Troen det er eders egen Sag;
+    Troer kun hvad I vil, Børnlille!
+End farer Jehova med Jer i Mag;
+    Men hans eget Folk gik det ilde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111588">
+<head>
+  <title>Guldkalven</title>
+  <firstline>Er Israels Guldkalvedands forbi</firstline>
+  <source pages="17" facsimile-pages="21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Er Israels Guldkalvedands forbi?
+    Jeg seer den blandt Herrer og Slaver;
+Men nu der vist ingen Synd er deri:
+    Den dandses af Bisper og Paver.
+
+Jeg Christen med Jøde og Hedning seer
+    I Dandsen, blandt Fyrster med Kroner;
+Men Kalven ei skjuler i Ørken sig meer:
+    Paa Huusgudealtre den throner.
+
+Den flyver al Verden om i Papiir;
+    Omkap den med Statsgjælden voxer.
+Den Gud er den hele Christenheds Ziir
+    Og større, end tusinde Oxer.
+
+Om Kalven jeg selv har dandset engang:
+    Den Lyst i Blodet os stikker.
+I Dybet har Guldgudens Røst end Klang;
+    Dens Støv Dødsslangen end drikker.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111589">
+<head>
+  <title>Da jeg var Saduceer</title>
+  <firstline>Min Sjæl ei rømmer sin Bolig</firstline>
+  <source pages="18-19" facsimile-pages="22-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Sjæl ei rømmer sin Bolig
+    Før Verdenslampen gaaer ud.
+Med <w>Sadoc</w><footnote>Stifteren af Saducæernes Sect.</footnote> jeg, streng og rolig,
+    Opfylder de Vises Bud.
+
+Paa Jorden min Aand har hjemme;
+    Den fjerne Himmel er Luft;
+De Slægter, Gravene gjemme,
+    Ei aande Paradiisduft.
+
+For Løn kun træller en Slave;
+    For Straf kun gruer en Træl;
+Fra Ormen i Beenrad-Grave
+    Oprinder ei Livsens Væld.
+
+<pb n="19" facs="022.jpg"/>Om Aander og Engleskarer
+    Den Syge drømmer heelt fro;
+Som Veiret hans Sjæl henfarer
+    Og døer i sin Barnetro.
+
+Jeg drømmer om ingen Himmel;
+    Jeg venter paa ingen Løn.
+Henfar kun, Menneskevrimmel!
+    Opfyldt er min eneste Bøn.
+
+Døe, døe skal alle de Andre:
+    Den Største, jeg saae, foer hen —
+Jeg evig paa Jorden skal vandre —
+    <w>Han</w> kommer dog aldrig igjen.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111590">
+<head>
+  <title>Ved Kildemarkedet</title>
+  <firstline>Ved Kilden de dandse paa maigrøn Eng</firstline>
+  <source pages="20" facsimile-pages="24"/>
+  <places>
+    <place ref="kidron-valley" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ved Kilden de dandse paa maigrøn Eng
+    Ved Honningkagernes Boder;
+Der rider en lille Jødedreng
+    Paa Kjep mellem Fader og Moder.
+
+Jeg seer paa den lille Jødedreng;
+    Mig selv paa Kjephest jeg skuer;
+Jeg mindes Legen ved Kedrons Eng
+    Under Almerankernes Buer.
+
+Paa Palmestokken heelt fro jeg reed;
+    Min Hest jeg vanded i Bækken;
+Paa Zahras Honningebrød jeg beed;
+    Jeg reed gjennem Ysophækken.
+
+Der Zions Døttre dandsed og sang;
+    Der toned saa deilige Stemmer —
+Der saae jeg Rachel for første Gang.
+    Ak! aldrig det Barn jeg glemmer.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111591">
+<head>
+  <title>Min Broders Enke</title>
+  <firstline>Jeg Sarons Rosenknop forlod</firstline>
+  <source pages="21" facsimile-pages="25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg Sarons Rosenknop forlod;
+    Dog glemt var Rachel ei, skjøndt hun var liden;
+Som Brud min Broders Enke for mig stod;
+    Men — Rachel stod i Tankens Slør ved Siden.
+
+Rabbinen nævned Lovens Ord;
+    Min Broders Enke frygtsom til mig blinked.
+"Endnu min Brudehimmels Ceder<footnote>I visse Egne i Judæa plantede man en Ceder for hver Dreng, der fødtes, og et Grantræ for hver Pige, der fødtes; af disse Træer dannedes siden den saakaldte Brudehimmel, hvorunder Vielsen forrettedes.</footnote> groer" —
+    Min Broders Enke smiled taus og vinked.
+
+Hun sjæleglad afdrog min Sko<footnote>Talmudisk Skik, naar en Broder ikke opfylder den mosaiske Lov, der forpligter ham til at ægte sin Broders barnløse Enke.</footnote>;
+    Hun — spytted ud<footnote>Talmudisk Skik, naar en Broder ikke opfylder den mosaiske Lov, der forpligter ham til at ægte sin Broders barnløse Enke.</footnote> for mig med lønlig Glæde.
+For Lovens Spot jeg takked sjelefro:
+    En større Lov var i vor Sjæl tilstede.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111592">
+<head>
+  <title>Ungdomsdrømme</title>
+  <firstline>Endnu jeg hører Nattergale sjunge</firstline>
+  <source pages="22-27" facsimile-pages="26-31"/>
+  <places>
+    <place ref="jericho" relation="setting" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Endnu jeg hører Nattergale sjunge;
+Bag Haslen hviske elskovsglad de Unge.
+
+Min Sjæl bortflyer paa Nattergaletoner
+Til Elskovslundens stille Palmekroner.
+
+Engeddi<footnote>Ved Jericho eller Palmestaden.</footnote> Lund har Høstens Løv ei tabt
+Før Herren har dens Foraarsløvsal skabt.
+
+Igaar foer Vinter-Regnskyl over Skoven;
+Idag er Vaarens Telt udspændt foroven.
+
+Paa Rankers Bjerg mod Sky min Sang sig svinger;
+Som Ørknens Hjort jeg over Bjerget springer.
+
+Paa Dalens Anemone Bien surrer;
+Paa Oliegrenen Turtelduen kurrer.
+
+<pb n="23" facs="026.jpg"/>For Herrens Pust sig Bjergets Ceder rører;
+Bag Ysophækken Englerøst jeg hører.
+
+O! skjønne Røst fra Løvsalsfestens Dage!
+Jeg hører Palmestadens Datters Klage:
+
+"Gazellen springer alt paa grønne Enge —
+"Men, Zions Søn! hvi tøver du saa længe?"
+
+====
+
+Jeg tøver ei: jeg som Gazellen springer;
+Jeg over Ysophækken glad mig svinger.
+
+Jeg i Cypressers dunkle Gang indtræder:
+Der Palmstadens skjønne Datter græder.
+
+Sit Turteldueøie hun tilslører;
+Hun ei min Gang paa Blomstertæppet hører.
+
+Forglemt hun i Cypressers Lye vil græde;
+Men — i min Arm hun springer op med Glæde.
+
+====
+
+<pb n="24" facs="027.jpg"/>    "Nu vil jeg leve, Zions Søn!
+"Nu vil jeg ikke døe af Graad og Smerte:
+"Din Palmeblomst jeg kysset har iløn;
+"Din Myrthadusk end dufter ved mit Hjerte.
+
+    "Med Blomsterbrevet Duen fløi
+"Fra Zions Søn til Palmestadens Datter:
+"Skovduen kurrer paa vor Palmehøi!
+"See! Hjertet Blomsterbrevets Gaade fatter."
+
+====
+
+Ak! frygted du for Portens Vægter ei?
+Og ei for Speiderblik i Palmestaden?
+
+"Den barske Vægter slumred paa min Vei;
+"Paa Nattens Vinger fløi jeg gjennem Gaden.
+"Mit Jomfruslør var om min Kind;
+"Med Sløret vifted vaarlig Nattevind;
+"En Vaar opblomstred i mit Sind —
+"Og Engle bar mig gjennem Palmestaden."
+
+====
+
+<pb n="25" facs="028.jpg"/>Ak! frygted du for Nattens Rovdyr ei?
+Og ei for Beduinens Røverkule?
+
+"Schakalen tuded paa min Vei,
+"Og Løven brummed bister i sin Hule;
+"Men paa min løndomsfulde Gang
+"Jeg nynned salomonisk Elskovssang —
+"Og Aandefyrsten Nattens Aander tvang;
+"De maatte Palmestadens Datter skjule."
+
+====
+
+Ak! skjælved du for Nattens Aander ei?
+Og ei for Skyggen, som din Gang tilslørte?
+
+"Natuglen tuded paa min Vei,
+"Og Ædderslangen ved min Fod sig rørte;
+"Men Hymnen steeg fra Hjertedybets Grund,
+"Eloahs Priis udtoned fra min Mund —
+"Høit Nattergalen slog i Palmers Lund —
+"Ei Uglens Skrig, ei Slangens Sang jeg hørte."
+
+====
+
+<pb n="26" facs="029.jpg"/>Men frygter du mit Favntag ei?
+Og skjælver du ei for min Elskovslue?
+
+"Nei, Zions Søn! du elsker mig — o, nei!
+"Kan Lillien ved sin Elskers Hjerte grue?
+"Paa Sarons Slette Rosen staaer;
+"I Rosenbusken Elskovsfuglen slaaer —
+"Til Himmelteltet Duft og Tone naaer —
+"Og Himlens Englebørn til Sletten skue."
+
+====
+
+En hellig Myrrhahave er du mig —
+Et Paradiis, som Lyscheruben freder.
+Livsbrønden i din Barm tilhyller sig;
+Men over Brøndens Segl vidunderlig
+Sig Livets Træ med Himmelfrugter breder.
+
+Liig Sulamith du for mig staaer,
+Liig Salomons udødelige Skjønne;
+En Høisang toner, hvor du gaaer:
+Hver Nattergal i Palmelunden slaaer,
+Naar Rachels Fod hendandser i det Grønne.
+
+<pb n="27" facs="030.jpg"/>Gazellens Vaardands er din Gang
+Paa Myrrhabjerge og paa Virakhøie.
+Jeg hørte Vaarens Harpers Klang:
+Det Palmestadens Datter var, som sang,
+Med Elskovstaarer i det sorte Øie.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111593">
+<head>
+  <title>Brudeskaren</title>
+  <firstline>Paa Veien gaaer jeg med Stav og Hund</firstline>
+  <source pages="28" facsimile-pages="32"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa Veien gaaer jeg med Stav og Hund;
+    Forbi mig Vognene fare.
+Skalmeien klinger i grønne Lund —
+    Ak! det var en Brudeskare.
+
+Jeg ogsaa har været en Brudgom glad:
+    Jeg under dem vel den Glæde;
+Fra Templet gik jeg i Zions Stad;
+    Jeg skreeg af Fryd i hvert Stræde.
+
+I Skomagerbrakken jeg græd af Lyst:
+    Mig salved Fader og Moder;
+Og Rachel trykte mig til sit Bryst;
+    Mig kroned Søster og Broder.
+
+Vi sang i Brakken Eloahs Priis,
+    Og Glasset de sønderbrøde.
+Ak! dengang var jeg i Paradiis —
+    I Pilatus's Dage de døde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111594">
+<head>
+  <title>Ved Crucifixet</title>
+  <firstline>Hvorhen jeg vandrer, seer jeg hiin Prophet</firstline>
+  <source pages="29-31" facsimile-pages="33-35"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+    <place ref="golgotha" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.</center></nonum>
+
+Hvorhen jeg vandrer, seer jeg hiin Prophet;
+Han har min Skjæbne paa min Pande seet.
+
+Han var Jehovadommens sidste Tolk;
+Blodtaarer græd han over Isra'ls Folk.
+
+Ved Døren stod jeg med mit Barn paa Arm:
+I Zions Stad lød Rachaskrig og Larm.
+
+Propheten vandred stille til sin Død;
+Men Rachaskriget i min Sjæl gjenlød.
+
+Jeg havde raabt Hosanna paa hans Vei;
+Men Ørnens Træl han hjalp til Frihed ei.
+
+Jeg havde kastet Palmer for hans Fod;
+Nu raabte jeg: korsfæst! udtap hans Blod!
+
+<pb n="30" facs="033.jpg"/>Jeg havde drømt om Magt og Rigdom før;
+Jeg havde drømt om evigt Liv paa Jord.
+
+Nu var Prophetens Ord mig Løgn og Svig:
+Mit mindste Barn jeg lærte Rachaskrig.
+
+Jeg skreeg, mens Blodet randt fra Kronens Tjørn:
+"Det komme over os og vore Børn!"
+
+Propheten ved min Tærskel Hvile tog;
+Med Læsten paa hans Tjørnekrands jeg slog.
+
+Hver Morgen kommer jeg mit Ord ihu:
+"Gaa, gaa hvor du skal hen! hvi tøver du!"
+
+Hver Morgen svarer i min Sjæl min Dommer:
+"Jeg gaaer; men du skal vente til jeg kommer."
+
+====
+
+<pb n="31" facs="034.jpg"/><nonum><center>II.</center></nonum>
+
+Mit yngste Barn jeg lærte Rachaskrig;
+Den Lille lærte aldrig Meer af mig.
+
+Jeg kasted Barnet fra min Arm med Gru —
+Det skriger Racha i min Sjæl endnu.
+
+Jeg vandred fra de Store, fra de Smaa:
+Ei Børn, ei Hustru meer mit Øie saae.
+
+Paa Hovedpandestedet mørk jeg stod;
+Men paa mit Hoved faldt Prophetens Blod.
+
+I himmelsk Fred jeg saae hans Aasyn smile;
+Jeg saae hans Hoved bøie sig til Hvile.
+
+Min Fred bortfoer; jeg smiled aldrig siden;
+Jeg hvileløs bortvandrer gjennem Tiden.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111595">
+<head>
+  <title>Vandringsaar</title>
+  <firstline>Jeg Brakken i Zions Stad forlod</firstline>
+  <source pages="32" facsimile-pages="36"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+    <place ref="kidron-valley" relation="setting"/>
+    <place ref="mount-lebanon" relation="setting"/>
+    <place ref="golgotha" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg Brakken i Zions Stad forlod;
+    Saa lystelig sang mine Drenge.
+Jeg bandt Sandalen under min Fod;
+    Paa Vandring var jeg saa længe.
+
+Jeg kjøled min Pande i Kedrons Bæk;
+    Ved Libanon ei jeg hviled;
+Fra Golgatha tumled jeg bort med Skræk —
+    Til Verdens Ende jeg iled.
+
+Men hvor jeg flygter i Verden hen,
+    Mod Libanon seer jeg tilbage.
+Hvert hundred Aar maa jeg did igjen
+    Og mindes de gamle Dage.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111596">
+<head>
+  <title>Hjemmet</title>
+  <firstline>Hvor er min Brakke i Zions Stad</firstline>
+  <source pages="33" facsimile-pages="37"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor er min Brakke i Zions Stad?
+    Hvor er mine muntre Drenge?
+Hist, hvor med Kaiphas' Saaler jeg sad,
+    Nu Jøder og Christne de hænge.
+
+Hist Salomons Tempel paa Moria stod —
+    Til Bøn nu Osmanen der ringer.
+Hist vi udgjøde hiin Rabbis Blod;
+    Der Pilgrimmens Psalter nu klinger.
+
+Bort, bort igjen fra den gamle Stad!
+    Her throner Jehova ei længer;
+Og <w>han</w>, som de troe ved hans Side sad —
+    Ei meer til min Tærskel trænger.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111597">
+<head>
+  <title>Ved det røde Hav</title>
+  <firstline>Jeg atter vandrer, hvor Mose Stav</firstline>
+  <source pages="34" facsimile-pages="38"/>
+  <places>
+    <place ref="red-sea" relation="setting" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg atter vandrer, hvor Mose Stav
+    Adskilte de dybe Vande:
+Her Pharaos Hære forsvandt i Grav;
+    Hist stolt Pyramiderne stande.
+
+De Sjæle, som Oxe og Slange tilbad,
+    Har Mindesmærker paa Jorden;
+Men de, som ved Tabernaklet sad,
+    Flye spredte, som Spurve i Torden.
+
+De bygge under den Fremmedes Tag;
+    De spottes af usle Drenge;
+Ret aldrig meer vi leve den Dag,
+    Vi ei til Dødsfjender trænge.
+
+Det Folk, som var den Høiestes Tolk,
+    Maa fredløs, som jeg, omvandre.
+Gaaer saa det med Herrens udkaarne Folk —
+    Hvor vil det gaae med de Andre!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111598">
+<head>
+  <title>Læreaar</title>
+  <firstline>Jeg har de Vises Skoler besøgt</firstline>
+  <source pages="35" facsimile-pages="39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg har de Vises Skoler besøgt;
+    Jeg udforsker Tingenes Grunde:
+Jeg Kundskabens Lod udkaster med Kløgt;
+    Ret aldrig dog vil det bunde.
+
+De Vise forkaste vor gamle Tro;
+    Mig hjælper den vel ei længer;
+Men Viisdommen giver mig ingen Ro:
+    Til Hjernen den kun mig trænger.
+
+En Pilgrim lover mig Fred paa Jord
+    Og Haab om Himmerigs Rige.
+Hvad baader det, om jeg hans Lærdom troer,
+    Men hader den dog tillige.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann2026111599">
+<head>
+  <title>Udgydelsestrang</title>
+  <firstline>Til Luft Vulkanen trænger</firstline>
+  <source pages="36-37" facsimile-pages="40-41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Til Luft Vulkanen trænger,
+    Som taug i tusind Aar;
+Ildfangen Bjerget sprænger,
+    Om Verden saa forgaaer.
+
+Ildfangen i mit Hjerte
+    Laae lænket tusind Aar;
+Med Bjergevægt af Smerte
+    Min Sjæl dog ei forgaaer.
+
+Med Verden paa sin Skulder
+    Ei Atlas sank i Grav;
+Kun Luft med Tordenbulder
+    Forlanger Bjerg og Hav.
+
+Høit Tordenskyen sjunger;
+    Ei Dybet savner Røst;
+Huult Afgrundssangen runger
+    Fra de Fordømtes Bryst.
+
+<pb n="37" facs="040.jpg"/>Orkanen mig omsuser
+    I Ørknens Ocean —
+Et Hav i Sjælen bruser —
+    Min Røst! bliv en Orkan!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115100">
+<head>
+  <title>Mit Publicum</title>
+  <firstline>Til Christen ei jeg tale vil</firstline>
+  <source pages="38" facsimile-pages="42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Til Christen ei jeg tale vil
+    Og ei til Jøde meer:
+Kun for mig selv min Sjæl er til,
+    Hvor ingen Sjæl jeg seer.
+
+De Døde høre ei min Røst,
+    Og de, som leve nu,
+De sankes snart, som Straa i Høst,
+    Med Veir og Vind ihu.
+
+For de Ufødtes Sjæl og Sind
+    Er ingen Røster til;
+I deres Dyb jeg seer dog ind —
+    Til dem jeg tale vil.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115101">
+<head>
+  <title>Min Fortrolige</title>
+  <firstline>Den Slægt, jeg taler til, har end ei Øre</firstline>
+  <source pages="39" facsimile-pages="43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Den Slægt, jeg taler til, har end ei Øre:
+Ufødte Venner kan min Røst ei høre.
+
+Een Ven jeg har i Verden dog tilbage;
+Han mindes maa min Røst fra gamle Dage.
+
+Han er ei Christen, og han er ei Jøde;
+I Hedningtroen heller ei han døde.
+
+Han døer fast aldrig, troer jeg, før vi begge
+Tilsammen os engang til Hvile lægge.
+
+Naturens gamle Kæmpeaand mig følger
+Igjennem Tiders Storm og Slægters Bølger.
+
+Den Ven blev alle tusind Aar den samme:
+I Oldingsbryst han gjemmer Ynglingsflamme.
+
+Han skal, som jeg, til Tidens Grav henvandre —
+Vi To maae nu dog vel forstaae hverandre!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115102">
+<head>
+  <title>Til Solen</title>
+  <firstline>Gamle Yngling! hvor du brænder</firstline>
+  <source pages="40-41" facsimile-pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Gamle Yngling! hvor du brænder!
+    Jeg er kold; men du er heed.
+Mon du Ahasverus kjender?
+    Mon du om min Vandring veed?
+
+Meer du saae, end jeg har skuet,
+    Gløder dog heelt glad endnu;
+Dig har Verden bedre huet:
+    Ret sangvinisk smiler du.
+
+Paa vor sære Tumleklode
+    Seer du end med Ungdomsild:
+Daarer, Vise, Onde, Gode
+    End du hilser lige mild.
+
+Kold du er dog vist igrunden,
+    Seer phlegmatisk paa os ned;
+Jeg har Heklas Ild i Bunden,
+    Er maaskee kun alt for heed.
+
+<pb n="41" facs="044.jpg"/>Gamle Ven! du blev ei gnaven,
+    Blev ei træt paa høie Sti.
+Vi har lige langt til Graven —
+    Lær mig din Philosophie!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115103">
+<head>
+  <title>Til Maanen</title>
+  <firstline>Med dig jeg dog harmonerer meer</firstline>
+  <source pages="42" facsimile-pages="46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Med dig jeg dog harmonerer meer,
+    Du Jomfru i Sølvflors-Slør!
+Tungsindig du gjennem Skyen seer
+    Paa Jøden, som aldrig døer.
+
+En aldrende Jomfru du er jo nu,
+    Er vel fri for Kjærlighedsqval —
+Mon du kommer din Ungdoms Tid ihu?
+    Du er altid lidt sentimental.
+
+Ak ja, Sligt ei er i Mode meer:
+    Det kaldes nu tomt Sværmerie.
+Den solide Mand dine Drømme udleer;
+    Dog — jeg elsker din Drøms Phantasie.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115104">
+<head>
+  <title>Til Stjernerne</title>
+  <firstline>I har fulgt mig; I mig kjender</firstline>
+  <source pages="43-44" facsimile-pages="47-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I har fulgt mig; I mig kjender;
+    I mig vise Vei hver Nat;
+I var mine fuldtroe Venner:
+    I kun har mig ei forladt.
+
+Lige smaa endnu I tindre —
+    Lige store, mener jeg:
+Synes her det Store mindre,
+    Det bekymrer Jer vist ei.
+
+Hvad jeg Stort paa Jord har fundet,
+    Var for eders Blik vist smaat —
+Ak! det er nu Alt forsvundet —
+    I Jer conservere godt.
+
+Gaaer den hele Jord i Smulder,
+    Med dens Glæde, med dens Qval —
+Bagatel! den Smule Bulder
+    Naaer ei eders Dandsesal.
+
+<pb n="44" facs="047.jpg"/>Jeg forstaaer Jer, gamle Venner!
+    Eders Smiil er Ironie.
+Alt hvad her kan skee, jeg kjender —
+    Jeg beundrer det — som I.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115105">
+<head>
+  <title>De Ufødtes Rige</title>
+  <firstline>Mit gamle Øie Fremtids Slægter søger</firstline>
+  <source pages="45-46" facsimile-pages="49-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mit gamle Øie Fremtids Slægter søger;
+Jeg forsker i Beskikkelsernes Bøger.
+
+Ufødt, mit Haab sig skjuler i det Fjerne;
+Mit Blik vil gjennembore Jordens Kjærne.
+
+Jeg stirrer ned til de Ufødtes Rige;
+Jeg vil i deres stille Nat nedstige.
+
+Min Tanke sig i Mulmets Dyb forvilded:
+Jeg skuer intet Aasyn, intet Billed.
+
+Men de Ufødtes Røster kan jeg høre:
+Et Sjælehav henbruser for mit Øre.
+
+Det Hav er dybt, forventningsfuldt og øde:
+Det gjemmer hvad Aartusinder skal føde.
+
+Om Livets Løndom hviske Fremtidsstemmer;
+Jeg Skabningens Forventningssuk fornemmer.
+
+<pb n="46" facs="049.jpg"/>Med mørke Talers Hvisken her det suser;
+Tilblivelsernes Ocean henbruser.
+
+Med de Ufødtes Haab min Længsel haaber;
+Jeg venter til Eloahs Stemme raaber.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115106">
+<head>
+  <title>Natten</title>
+  <firstline>Jeg vil opsøge dig, du gamle Nat</firstline>
+  <source pages="47" facsimile-pages="51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg vil opsøge dig, du gamle Nat!
+    Jeg vil mig hvile i din Mørkheds Hule.
+Af Gang min Fod er træt; min Sjæl er mat;
+    Dybt i dit Skjød jeg vil mit Aasyn skjule.
+
+For dig kun jeg oplade vil min Mund;
+    Til dig kun vil min Sjæl sin Røst udsende:
+Siig, Nat! siig, drømmer du om Morgenstund?
+    Siig, drømmer du om Dage uden Ende?
+
+Forkynd — hvis Lyd af Røst din Taushed brød —
+    Bebud — hvis Stemmer i din Afgrund løde —
+Hvormange Dage slumre i dit Skjød?
+    Hvormange Dages Nætter skal du føde?
+
+Svar! venter end Aarhundreder paa Liv?
+    Skal end Aartusinder af dem udvælde?
+— Ak, først naar Herren trættes ved sit: Bliv!
+    Skal dette Hoved sig til Hvile hælde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115107">
+<head>
+  <title>Stjernemoderen<footnote>ɔ: Maanen.</footnote></title>
+  <firstline>Siig, Nattevandrerinde! hvi du sørger</firstline>
+  <source pages="48" facsimile-pages="52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Siig, Nattevandrerinde! hvi du sørger?
+    Siig, Stjernemoder! hvi er du bedrøvet?
+Har Natten dine ældste Børn dig røvet?
+    Om dine Sønners Grav du Dybet spørger.
+
+Du seer ei deres Stjerneøine spille —
+    Ak, Oceanet har din Fryd begravet:
+Derfor saa bleeg du stirrer ned paa Havet;
+    Derfor du gjennem Natten gaaer saa stille.
+
+I Sølverflor dit Aasyn du tilslører.
+    Vær trøstig, Stjernemoder! sørg ei længer!
+Dit Veemodsblik til Himmelthronen trænger:
+    Eloah dine Børn fra Dybet fører.
+
+Paa Himmelbanen sjunkne Stjerner stige;
+    Hist Sorgen sig i stille Fryd forklarer.
+Men — mine Børn! hvor eders Sjæl henfarer,
+    Kan Jord og Hav og Himmel mig ei sige.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115108">
+<head>
+  <title>Ved det oprørte Hav</title>
+  <firstline>Vil du Jorden opsluge? du brusende Hav</firstline>
+  <source pages="49-50" facsimile-pages="53-54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Vil du Jorden opsluge? du brusende Hav!
+Har du glemt Prophetens mægtige Stav?
+
+Er du voxet fra Kjeppen og Riset nu?
+Kommer ei din Herre og Mester ihu?
+
+Har du glemt, din Arm stod stiv, som en Muur,
+For hans Aande, som tæmmer din vilde Natur?
+
+See! han, som knytter Syvstjernens Baand,
+Han vugger dig, som et Barn, i sin Haand.
+
+Han revser dig saa du mod Stjernerne tyer;
+Dog aldrig hans mægtige Haand du flyer.
+
+Din Gangvogn han satte ved Afgrundens Bred;
+Han Klipper gav dig at lege med.
+
+Men tæmmer du ei dit ubændige Sind,
+Han spærrer dig atter i Vuggen ind.
+
+<pb n="50" facs="053.jpg"/>See! Pantseret glindser om Orions Bryst;
+Han Vinter bringer til Nordpolens Kyst.
+
+Der ryster han Iisplade-Pantseret af;
+Deri han dig spænder, ubændige Hav!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115109">
+<head>
+  <title>Hieorosolyma est perdita</title>
+  <firstline>Hep!&quot; synge nu atter de christne Smaa</firstline>
+  <source pages="51" facsimile-pages="55"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+"Hep!" synge nu atter de christne Smaa:
+    De vide ei hvad det betyder;
+Det Spotords Rædsel mit Øie saae:
+    Som Israels Dødssuk det lyder.
+
+Fortabt er Jorsal og lagt i Gruus!
+    Ak! det har jeg vidst saa længe.
+Steen kun den gamle Jøde af Huus!
+    Men — syng ei hiint Ord, Smaadrenge!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115110">
+<head>
+  <title>Mit Modersmaal</title>
+  <firstline>Jeg min Sjæl vil udaande med Eloahs Ord</firstline>
+  <source pages="52" facsimile-pages="56"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg min Sjæl vil udaande med Eloahs Ord,
+    Med de Toner, som skabte Himmel og Jord;
+Men forstummet paa Jord er Schadai Tunge:
+    Kun fra Tidernes Dyb mine Raab gjenrunge.
+
+Der ruller en Strøm fra Aartusinders Grav;
+    I min Sjæl der henbruser et tonende Hav:
+Hver Bølge er levende Daad, som bortrinder;
+    Hver Tone er Billed, hvert Billed er Minder.
+
+Med det Livs-Ocean vil jeg blande min Røst;
+    Det mig svarer med Klang fra Propheternes Bryst;
+Det opløser min Sjæl i mildttonende Sukke,
+    Med de Sange, min Moder sang ved min Vugge.
+
+Jeg fornemmer det atter, det levende Ord —
+    I min Sjæl det gjenskaber Himmel og Jord.
+Med det henfarne Israels Røst vil jeg sjunge
+    Og med Zions Døttres Sang paa min Tunge.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115111">
+<head>
+  <title>Vor Udlændigheds-Poesie</title>
+  <firstline>Hvor er nu dine Propheter, mit Folk</firstline>
+  <source pages="53" facsimile-pages="57"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor er nu dine Propheter, mit Folk!
+    Hvor er dine Zebaoths-Skjalde!
+Fandt ei Eloah en eneste Tolk
+    I Aartusinder blandt Eder alle?
+
+Blev Israels Aand — blev vor Sjæl adspredt?
+    Blev Skjæg kun og Kroppe tilbage?
+Har ei et eneste Øie seet
+    Med Blikket fra Sangkongens Dage?
+
+Har ei en eneste Sjæl havt Røst
+    Til Høisang med Salomons Tunge?
+Var ei der Klang i et eneste Bryst
+    Til Verden at gjennemrunge?
+
+Ak! Klang af Sølv kun og Guldets Klang
+    Og Gjenklang af fremmede Bjælder —
+Det var, mit Folk, din Udlændigheds-Sang —
+    Ak! i Gruben saae jeg Jer heller.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115112">
+<head>
+  <title>Morgenrøden</title>
+  <firstline>End seer jeg Glandsen fra Jehovas Throne</firstline>
+  <source pages="54" facsimile-pages="58"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+End seer jeg Glandsen fra Jehovas Throne —
+    Hiint Glimt dog af hans Herlighed jeg skuer:
+Et Blink kun, Herre! fra din Straalekrone!
+    Og Verdenshavet gløder i dets Luer.
+
+Med Skyggen ufødt Morgenhind end strider:
+    Med bøiet Knæ og Hoved Fostret venter
+Sin Fødselsstund. Endnu ei Sol fremskrider;
+    Og angest bæve alle Elementer.
+
+Jeg bæver ei: den sidste Dag jeg venter;
+    Bag Havet tøver Zebaoths-Vasallen —
+Smelt, Uriel! smelt Verdens Elementer!
+    Min Dag først gryer — er Jord og Himmel falden.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115113">
+<head>
+  <title>Ved Solens Opgang</title>
+  <firstline>Skjøn er du dog, evige Himmeltelt</firstline>
+  <source pages="55" facsimile-pages="59"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Skjøn er du dog, evige Himmeltelt!
+    Høiherlig udspændtes din Bue.
+Der staaer han atter, den straalende Helt,
+    Med sit Harnisk af blinkende Lue.
+
+Skjøn er du dog, grønnende duftende Jord!
+    Du Skammel for Zebaoths-Foden!
+Paa Bjerg og paa Hav jeg opdager hans Spor;
+    Jeg fornemmer hans Gang over Kloden.
+
+Kun Sømmen jeg seer af hans Klædebon;
+    Men Uendelighed den udfolder.
+Paa Cherubernes Vinger sig løfter min Aand;
+    Fast Støvlarven Sjælen dog holder.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115114">
+<head>
+  <title>Jord og Himmel</title>
+  <firstline>Jeg gaaer som en Skygge al Verden omkring</firstline>
+  <source pages="56" facsimile-pages="60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg gaaer som en Skygge al Verden omkring,
+    Et Støvgran er Jorden i Himlenes Ring.
+Jeg selv er et Gran paa den rullende Jord;
+    Men Uendelighed i min Tanke dog boer.
+
+Henrul kun, du Sandskorn, hvorpaa jeg staaer!
+    Henflyv i det Dyb, som min Tanke ei naaer!
+Min Sjæl er en Himmel i Himlenes Ring,
+    Et Jordgran er Larven, her pusler omkring.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115115">
+<head>
+  <title>Elohimernes Undergang</title>
+  <firstline>I Oceanet sig hver Kilde taber</firstline>
+  <source pages="57-58" facsimile-pages="61-62"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I Oceanet sig hver Kilde taber;
+Sig Blomsteraanden troer Naturens Skaber.
+
+Vil Straalen stolt sig fra sin Sol løsrive,
+Sin Guddomsglands den maa i Mulm opgive.
+
+Derfor paa Jord ei Elohimer bygge;
+Ei boe de meer i Palmelundens Skygge.
+
+Ei meer de Smaa med underfulde Gave
+Kan skabe Blomster i Jehovas Have.
+
+Ei Figentræets dunkelgrønne Krone
+Er meer sin lille Guds Pallads og Throne.
+
+Ei Sarons Rose Blomsterguden skjuler:
+Til Ørknen flyer han og til Klippens Huler.
+
+De store Himmelfyrster ham forfølge;
+Cheruber jage ham paa Havets Bølge.
+
+<pb n="58" facs="061.jpg"/>Fra Jorden flygter Elohimers Skare;
+Paa Taageskyer de til Himlen fare.
+
+Bag Himmelkongens Forhæng de sig gjemme
+Og lytte til den store Dommers Stemme.
+
+Den Uudforskeliges Raad de høre;
+Hans Aasyns Herlighed de vil afsløre.
+
+Men, o! hiin Glands selv ei Cheruben taaler —
+Og Elohimer smelte i hans Straaler.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115116">
+<head>
+  <title>Dødstanken</title>
+  <firstline>Hvor er den Vandringsmand, som aldrig trættes</firstline>
+  <source pages="59-60" facsimile-pages="63-64"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor er den Vandringsmand, som aldrig trættes?
+Hvor er den Livets Gjest, som aldrig mættes?
+
+Hvor er den Sjæl, som saae og elsked Døden?
+Dens Braad selv gjennemborer Jorsalsjøden.
+
+Jeg stirrer paa de mørke Sjæles Skare:
+Til Belial i Gruben de nedfare.
+
+Jeg seer Palladset med de Huler sorte;
+Jeg hører Klang af Mulmpalladsets Porte.
+
+Jeg Fængslet seer, hvor Døren ei oplukkes:
+I Mulm jeg skimter Flammen, som ei slukkes.
+
+Fra Dødens Skyggers Dal jeg Hvislen hører:
+Der Ormen, som ei døer, sig evig rører.
+
+Med Skræk min Sjæl fra Gruben sig opsvinger;
+Paa grønne Jord Gravklokken evig ringer.
+
+<pb n="60" facs="063.jpg"/>Med Blomsterslør Eloah Gruben dølger;
+Men Gravens Klokkeklang hver Sjæl forfølger.
+
+Paa Verdens store Gravsteen ei jeg hviler;
+Mit Blik henover Sky og Stjerne iler.
+
+Mit Øie søger over Sky og Stjerne
+Den Vei, hvor Enoch flygted i det Fjerne.
+
+Jeg leder efter Jacobs Himmelstige:
+Gaaer der en Himmelbro fra Dødens Rige?
+
+Jeg mod Elias' Himmelkarm henstirrer;
+Men Blikket sig i Taagers Hav forvirrer.
+
+Hos Abraham Jehovas Venner bygge;
+Men hvor gaaer Veien til hans Palmers Skygge?
+
+Udødelig, med Dødens mørke Tanke,
+Min Sjæl maa mellem Dyb og Himmel vanke.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115117">
+<head>
+  <title>Menneskets Kundskab</title>
+  <firstline>Arabens Hingst sin Rytters Stemme kjender</firstline>
+  <source pages="61" facsimile-pages="65"/>
+  <places>
+    <place ref="egypt" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Arabens Hingst sin Rytters Stemme kjender;
+    Men ei Rabbinen veed hvad Fuglen synger.
+Graa Slange skifter Ham og sig forynger;
+    Men ei den Vise veed hvor Livet ender.
+
+Ægyptens Stork veed Vei til Vaar og Sommer;
+    Strandmaagen søger Lye, før Storm udbryder;
+I Skyen stirrer blege Stjernetyder;
+    Men Lynet knuser ham, før Tordnen kommer.
+
+Snild Ædderkoppen veed naar Veiret skifter;
+    Klog Hunden Nattens Gjenfærd seer og tuder.
+Vi spørge hvad Elisas Syn bebuder;
+    Men — Evighedens Forhæng har ei Rifter.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115118">
+<head>
+  <title>Paradiis-Cheruben</title>
+  <firstline>Paa helligt Bjerg Cheruben staaer</firstline>
+  <source pages="62-63" facsimile-pages="66-67"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa helligt Bjerg Cheruben staaer,
+    Hvor Paradiset ender.
+Hans Glavinds Flamme Skyen naaer;
+    Dybt under ham det brænder.
+
+Han svæver over Dybets Glød
+    Paa Himmelluftens Vinger;
+Fra Østens Port til Aftenrød
+    Cheruben Rædsel bringer.
+
+Hver Skabnings-Drot hans Aasyn flyer;
+    Hver Magt sin Urglands skuer:
+Ræd flyer vanslægtet Ørn og Tyr;
+    Med Løven Manden gruer.
+
+Som Tyr, som Løve, Ørn og Mand,
+    Cheruben seer paa Jorden;
+Hans Blik er Himmellynets Brand;
+    Hans Røst er Skyens Torden.
+
+<pb n="63" facs="066.jpg"/>Hans Billed er en Gaade mørk;
+    Hans Glands hvert Øie blænder:
+Han kjender Kundskabstræets Ørk;
+    Han Livets Løndom kjender.
+
+Han veed hvad ingen Tunges Ord
+    I Verden aabenbarer;
+Men rædsom, underfuld og stor,
+    Han Livets Træ bevarer.
+
+— Jeg Paradiis-Cheruben saae;
+    Jeg saae hans Glavinds Flamme;
+Jeg Stjernen saae, han peged paa;
+    Men — Gaaden blev den samme.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115119">
+<head>
+  <title>Tordenveiret i Staden</title>
+  <firstline>Fra Skolen løber Barnet glad</firstline>
+  <source pages="64-65" facsimile-pages="68-69"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fra Skolen løber Barnet glad;
+    Høit støier Drengevrimlen.
+Jeg stille staaer i fremmed Stad;
+    Jeg stirrer op mod Himlen.
+
+Guds Lyn jeg seer med hellig Gru;
+    Jeg skjælver for hans Torden:
+"Jehovas Røst i Skymulm nu
+    "Henruller over Jorden.
+
+"Mod Dybet styrter Dagens Helt:
+    "I Knæ Solenglen segner.
+"Hist Stjernemoder i sit Telt
+    "For Herrens Vrede blegner."
+
+""Aa, Snak! Vorherre blie'r ei vred""
+    — De christne Drenge skrige —
+""Det tordner kun, og Sol gaaer ned,
+    ""Og Maanen vil opstige.
+
+<pb n="65" facs="068.jpg"/>""Staa, Jøde! staa paa dine Been!
+    ""Vi skal Physik dig lære:
+""Ei et electrisk Phoenomeen
+    ""Vorherres Røst kan være.""
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115120">
+<head>
+  <title>Himmelteltet</title>
+  <firstline>Min Sjæl henflyve vil til Palmeskoven</firstline>
+  <source pages="66" facsimile-pages="70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Min Sjæl henflyve vil til Palmeskoven:
+Udspændt er store Himmeltelt foroven.
+
+Paa Bjergekrandsen hist ved Verdens Ender
+Befæstes Teltet af Eloahs Hænder.
+
+Jeg under høit Paulun hans Gang fornemmer;
+Eet Reisetag al Verdens Sjæle gjemmer.
+
+Høit flagrer Teltet. — See! det Farve skifter —
+Regnstrømmen rigt udvælder af dets Rifter.
+
+Nu sammenrulles Teltet, som et Klæde:
+I hver dets Fold er skjult en Verdens Glæde.
+
+Hver Morgen Herren store Telt udspænder;
+Men — under Teltet ingen Sjæl jeg kjender.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115121">
+<head>
+  <title>Vinterdrømmen</title>
+  <firstline>Høit over Canaans Strande</firstline>
+  <source pages="67" facsimile-pages="71"/>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Høit over Canaans Strande,
+    Høit over Dødens Dal
+Af Livets klare Vande
+    Gud hvælvet har sin Sal.
+
+Mod hiint Pallads jeg stirrer
+    Ved lukte Paradiis;
+Men Gru mit Syn forvirrer:
+    Palladset blev mig — Iis.
+
+Med iisnet Sjæl jeg skuer
+    Paa Livsens frosne Strøm —
+Smelt, Syn, hvorfor jeg gruer!
+    Fly, kolde Vinterdrøm!
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115122">
+<head>
+  <title>Paa Havet</title>
+  <firstline>I tause Nat paa stille Hav jeg farer</firstline>
+  <source pages="68" facsimile-pages="72"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I tause Nat paa stille Hav jeg farer;
+Foroven glimte Zebaoths Hærskarer.
+
+Den christne Styrmand Havnefyret peiler;
+Til Hjemmets Havn, til Viv og Børn han seiler.
+
+<w>Han</w> seer paa Naalen og Kompassets Streger;
+<w>Jeg</w> seer hvor strenge Orion henpeger.
+
+Med Stjernebæltet fra Eloahs Hænder,
+Gaaer Vinterenglen did, hvor Verden ender.
+
+Ham følger Himlens store Krigerskare;
+Til Dommens Dag de over Jorden fare.
+
+Jeg følger Himmelhæren — i det Fjerne;
+Men i <w>mit</w> Øie tindrer ingen Stjerne.
+
+Jeg knuser kun en Taare, der frembryder:
+Her Ingen drømmer om hvad den betyder.
+
+Den brave Styrmand mig paa Skuldren klapper:
+— "Du drukner ikke, Jøde! vær kun tapper!"
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115123">
+<head>
+  <title>Theokratiet</title>
+  <firstline>Hvor straaler Himmelspiret nu paa Jord</firstline>
+  <source pages="69-70" facsimile-pages="73-74"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor straaler Himmelspiret nu paa Jord?
+Hvor er nu Folkets Lov en Guddoms Ord?
+
+Hvor bærer en usynlig Konge Kronen?
+Hvor bøier sig et Folk for Almagtsthronen?
+
+Hvor straaler Lys og Ret og Frihed ud
+Fra Guddomspagtens himmelklare Bud?
+
+Hvo lytter nu til skjulte Guddoms Røst
+Med Helligdomsklenodet paa sit Bryst?
+
+Hvo kan ved Urim og ved Thummim spørge
+Med Undertroen, som bortaander Bjerge?
+
+Klenodet faldt af Fyrstepræstens Bryst;
+Selv Isra'l hører ei sin Konges Røst.
+
+Paa Chesils<footnote>Orion.</footnote> Stjernegjord Klenodet flammer
+Med Ædelstenene af Isra'ls Stammer.
+
+<pb n="70" facs="073.jpg"/>Fjernt straaler Spiret i Jehovas Hænder;
+Det straale skal, naar Jord og Himmel brænder.
+
+For Himmelspiret troer sig Verden fri:
+— Sin egen Lænke Jorden jubler i.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115124">
+<head>
+  <title>Idag og Imorgen</title>
+  <firstline>Al Verdens Fyrster sig reise</firstline>
+  <source pages="71" facsimile-pages="75"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+      Al Verdens Fyrster sig reise;
+          Frem Folkene storme til Krig.
+      Idag de Mægtige kneise —
+          Imorgen ligge de Liig.
+Idag og Imorgen er Draaber i Evigheds Strømme.
+
+      Et Blink for Jehovas Øie
+          Er Dag og tusinde Aar:
+      Imorgen skal Bonden pløie,
+          Hvor Keiseren throned igaar.
+Hvor Bjerget kneised mod Sky, skal Hvalerne svømme.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115125">
+<head>
+  <title>Det evige Folk</title>
+  <firstline>Jeg saae Jerusalem falde</firstline>
+  <source pages="72" facsimile-pages="76"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+      Jeg saae Jerusalem falde;
+          I Lænker mit Folk jeg saae.
+      Hvor blev de Seirherrer alle?
+          Jeg saae deres Slægt forgaae;
+Men paa deres Grav end staaer den vandrende Jøde.
+
+      Hvert Folk paa Jord skal forsvinde —
+          Udslettes skal deres Spor;
+      Ei Abrahams Slægt og Minde
+          Forgaaer før Himmel og Jord:
+Paa Verdens Grav end staaer den evige Jøde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115126">
+<head>
+  <title>Enthusiasterne</title>
+  <firstline>I Zions Stad Propheter sang</firstline>
+  <source pages="73" facsimile-pages="77"/>
+  <places>
+    <place ref="jerusalem" relation="setting" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    I Zions Stad Propheter sang;
+        Det lød fra Strand til Strand;
+    Det i Aartusinder gjenklang;
+        Men — i Propheters Fædreland
+Fløi Muld og Stene mod Prophetens Pande.
+
+    — Muld Jorden har til Aandens Tolk,
+        Og Steen til hver Prophet,
+    Til hver begeistret Sjæl en Dolk,
+        Iisgrave til hver heed Poet,
+Og — Vand til alle Himmelildens Brande.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115127">
+<head>
+  <title>I Ørkenen</title>
+  <firstline>Igiennem Ørknen Caravanen drager</firstline>
+  <source pages="74" facsimile-pages="78"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Igiennem Ørknen Caravanen drager;
+    Ismaelitten lurer i sin Hule.
+For Tigren maa sig Ørknens Røver skjule;
+    Men Elephanten stribet Tiger jager.
+
+I stille Nat jeg Caravanen følger.
+    Den rige Kjøbmand paa Kamelen sukker:
+For Røverøiet han sin Skat tillukker;
+    For Tigerblikket han sit Aasyn dølger.
+
+Den rige Kjøbmands Frygt jeg ikke kjender;
+    Dog Frygt og Haab jeg deelte med ham gjerne:
+Om Hjemmets Vei han spørger Ørkens Stjerne;
+    — Min Reise og min Ørken aldrig ender.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115128">
+<head>
+  <title>Jødegaden</title>
+  <firstline>Mit Folk til Strædet drives — og leer</firstline>
+  <source pages="75" facsimile-pages="79"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mit Folk til Strædet drives — og leer;
+    Min Sjæl udbryder i Flamme:
+Er der ingen Ørkner i Verden meer?
+    Skovæslet gjør Jer til Skamme.
+
+Skovæslet glad til sin Ørken tyer:
+    Der Driverens Raab forstummer;
+Den vilde Oxe fra Aaget flyer;
+    Fri Bjørn i Bjerghulen brummer.
+
+Det tamme Qvæg gaaer i Stalden ind
+    Og æder i Baasen sin Føde;
+Men fri flyver Ørnen til Fjeldets Tind,
+    Skal end han svelte tildøde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115129">
+<head>
+  <title>Vægterraabet</title>
+  <firstline>I Mulm jeg vandrer i fremmed Stad</firstline>
+  <source pages="76" facsimile-pages="80"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I Mulm jeg vandrer i fremmed Stad;
+    Trygt sover Christen og Jøde;
+Natvægteren synger sit gamle Qvad;
+    Jeg vil ogsaa et Raab udstøde.
+
+Af Dvale jeg vil dig vække, mit Folk!
+    Af Dødsblund Alverdens Slægter:
+Jeg er den evige Jordbrands Tolk;
+    Jeg er Jordnattens evige Vægter.
+
+Den ulmer i Dybet den lønlige Brand;
+    Men med Kroppene Sjælene blunde.
+Gjennem Verden gaaer der en fredløs Mand;
+    Han raaber hvortil det mon stunde.
+
+Til Midnat det stunder i Tidernes Gang —
+    Det stunder til Døden og Dommen!
+Ei tier den evige Natvægters Sang
+    Før den evige Morgen er kommen.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115130">
+<head>
+  <title>Livsbekymring</title>
+  <firstline>De slide, de slæbe, de betle for Brød</firstline>
+  <source pages="77" facsimile-pages="81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De slide, de slæbe, de betle for Brød;
+For Livet de trælle til deres Død.
+
+I Livsbekymring de sig nedsænke;
+Men paa Livet — har de ei Tid at tænke.
+
+Den Livsbekymring jeg kjender ei:
+Mit Brød jeg finder, som Spurv paa Vei.
+
+Døer hele Verden af Hungersnød,
+Jeg overlever den — uden Brød.
+
+Aartusinder kan sig i Grav nedsænke,
+Paa Livet jeg har god Tid at tænke.
+
+Dog, ak! det er mig til liden Baade:
+Min <w>Tanke</w> løser ei Livets Gaade.
+</poetry>
+</body>
+</text>
 
 <text id="ingemann1833a0">
 <head>
   <title>Dødningedandsen</title>
   <firstline>Med Store og Smaa gaaer Dandsen fuldtbrav</firstline>
-  <quality>korrektur1</quality>
+  <source pages="78-79" facsimile-pages="82-83"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -35,15 +1967,48 @@ I Hopsavalts gaaer det til gamle Musik;
 Den Knokkelmand fløiter, med klapprende Nik;
   Han munter med Knoklerne rangler.
 
-Til Hvile han bringer hver dandsende Sjæl;
+<pb n="79" facs="082.jpg"/>Til Hvile han bringer hver dandsende Sjæl;
   Fast Ingen ved Dandsen sig glæder:
 Den ærlige Knokkelmand griner lidt fæl;
   Bleeg Bruden ham følger og græder.
 
-Men - udenfor Dandsen en Reisende staaer;
+Men — udenfor Dandsen en Reisende staaer;
   Hans Øie ret aldrig kan græde:
-Al Verden bortdandser - tilbage jeg gaaer -
+Al Verden bortdandser — tilbage jeg gaaer —
   Jeg er glemt i den store Kjæde.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115132">
+<head>
+  <title>Vor Liigsteen</title>
+  <firstline>Foragt ei Israels store Skygge</firstline>
+  <source pages="80" facsimile-pages="84"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Foragt ei Israels store Skygge!
+I Slægter, som paa vor Liigsteen bygge!
+
+Over Abrahams, Isaaks og Jacobs Been
+Staaer Verdensbygningens Hjørnesteen.
+
+Med Eloahs Haand den er hugget ud
+Af Paradiisfjeldenes Marmorbrud.
+
+Fra Klippen det evige Livsvæld sprang;
+I dens Kløfter himmelske Røster sang.
+
+Den hvælved sig til en Tempelhal;
+Ei Stenen knustes i dybest Fald.
+
+End skjuler den store Paradiissteen
+En Verden med vore Fædres Been.
+
+Den skjuler det Største, Jorden saae —
+End hviler al Verdens Storhed derpaa.
 </poetry>
 </body>
 </text>
@@ -52,12 +2017,13 @@ Al Verden bortdandser - tilbage jeg gaaer -
 <head>
   <title>Livsmaalet</title>
   <firstline>Mod Livet de Ufødte frem sig stride</firstline>
-  <quality>korrektur1</quality>
+  <source pages="81-82" facsimile-pages="85-86"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Mod Livet de Ufødte frem sig stride;
-Men - hvad de kæmpe for, de ikke vide.
+Men — hvad de kæmpe for, de ikke vide.
 
 Mod Døden frem de Fødte gaae iblinde;
 Hvorhen de gaae, dem rinder ei i Sinde.
@@ -69,7 +2035,7 @@ Frem Tidens Slægter fare og forsvinde;
 Mod lønligt Maal de storme frem iblinde.
 
 Paa Daarers Færd selv Daarer see med Latter:
-Ideens Stridsmand ei Ideen fatter.
+Ideens Stridsmænd ei Ideen fatter.
 
 Feltherren veed hvorhen hans Hære fare;
 Derom ei spørger blinde Krigerskare.
@@ -77,11 +2043,700 @@ Derom ei spørger blinde Krigerskare.
 Paa Strængen Bueskytten Pilen satte;
 Sit Maal den naaer, men kan det selv ei fatte.
 
-Solstraalen skal til Verdens Ende fare,
+<pb n="82" facs="085.jpg"/>Solstraalen skal til Verdens Ende fare,
 Men ei sin egen Klarhed sig forklare.
 
 Som mig Jehova tænkte, skal jeg vanke;
-Men - Herren kjender ene heelt sin Tanke.
+Men — Herren kjender ene heelt sin Tanke.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115134">
+<head>
+  <title>Basunfesten</title>
+  <firstline>I fremmed Land jeg hører Festbasuner</firstline>
+  <source pages="83" facsimile-pages="87"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I fremmed Land jeg hører Festbasuner:
+  Jehovas Folk end mindes Dommens Dag;
+Vi faste i Udlændigheds Pauluner;
+  For Zebaoth indstævnes Folkets Sag.
+
+Besegles skal forvist vor Dom foroven,
+  Hvis ei vort Suk til Dommerteltet naaer.
+Blev Staven knuust, som fordum kløved Voven?
+  Mon aldrig meer den Vand af Klippen slaaer?
+
+Een Guddomstanke Tankeverdner avler;
+  Det Træ ei døer, Jehova aanded paa:
+"I Pagtens Ark de brudte Lovens Tavler
+  Ved Siden af de hele Tavler laae."
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115135">
+<head>
+  <title>I Pestens Tid</title>
+  <firstline>Til Costnitz har jeg sat min Stav; trindt Isra&#x27;ls Arner ryge</firstline>
+  <source pages="84-86" facsimile-pages="88-90"/>
+  <places>
+    <place ref="konstanz" relation="setting" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Til Costnitz har jeg sat min Stav; trindt Isra'ls Arner ryge;
+Ved Nat de Paaskelammets Blod paa Dør og Stolper stryge.
+
+Dødsenglen gaaer fra Huus til Huus; de Christne døe af Pesten;
+Dødsenglen gaaer hver Dør forbi, hvor Isra'l feirer Festen.
+
+Men i den pestbefængte Stad, blandt Liig og Dødens Jammer,
+Skafotter jeg paa Gaden seer: høit Kjætterbaalet flammer.
+
+"Ha, brænd hvo ei vil døbes flux!" — de christne Munke skrige —
+"Os Jøden kogled Pesten hid fra Helvedfyrstens Rige."
+
+<pb n="85" facs="088.jpg"/>"Det Folk, som myrdet har Guds Søn, forpester alle Lande:
+"De har forgiftet Livets Væld og alle Brøndes Vande."
+
+Fra Pinebænk til Daaben flyer hver Jøde, som bekjender;
+Dog see! hvo staaer paa Taget hist? trindt Huset om ham brænder.
+
+I Paaskefestens Bøntalar med Helligdommens Traade
+Rabbinen seer paa Folket ned; han betler ei om Naade.
+
+Han svinger Faklen i sin Haand; han høit blandt Flammer raaber:
+"Endnu jeg paa Jehova troer; jeg paa Messias haaber."
+
+"Igaar jeg feig afsvoer min Tro; idag jeg døer som Jøde:
+"Jeg selv har tændt mit Offerbaal, vil mit Paulun udgløde."
+
+<pb n="86" facs="089.jpg"/>"Fornam I hvad histnede skreeg? Nei, det var Sang, ei Jammer —
+"Min Hustru, mine Børn ei skreeg — de sang i Offerflammer."
+
+Han styrter sig i Luen ned. Snart Christenstaden brænder.
+Fra store Offerfest jeg gaaer. Idag mit Folk jeg kjender.
+
+Hist blusser Synagogens Tag; men frie paa Flammevinger
+Fra pestbefængte Christenstad Jehovas Børn sig svinger.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115136">
+<head>
+  <title>Jehovas Krige</title>
+  <firstline>Har Zebaoth med Verden sluttet Fred</firstline>
+  <source pages="87-88" facsimile-pages="91-92"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Har Zebaoth med Verden sluttet Fred?
+  Forliges nu Eloah med de Onde?
+Kan Sol og Maane nu gaae rolig ned
+  Og see Jehovas Stjerner gaae tilgrunde?
+
+Er Zebaoths Bedrifter glemt paa Jord?
+  Leer Gog og Magog af Jehovas Seire?
+Har Verden glemt, den fødtes ved Ord,
+  Og at et Aandepust den kan bortveire?
+
+Endnu jeg Zebaoths Herskarer seer:
+  I Herrens Leir, som Vagtblus, Verdner brænder;
+Hans Haand ei Sol og Maane standser meer;
+  Han trænger ei til Sværd i Josva-Hænder.
+
+End hører jeg Eloahs Seierssang:
+  Orkaner sjunge Zebaoths Bedrifter;
+Men saaret Orm han skaaner paa sin Gang;
+  Ei Tanden, som end ryger, han udvifter.
+
+<pb n="88" facs="091.jpg"/>Dødsenglen farer over Verdner hen;
+  Aartusinder henflye med deres Hære.
+— Skal Tidens Himmeltegn opstaae igjen?
+  Skal Jacobs Sønner Seierskroner bære?
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115137">
+<head>
+  <title>Berømmelsen</title>
+  <firstline>Om evig Hæder de tale</firstline>
+  <source pages="89" facsimile-pages="93"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Om evig Hæder de tale,
+  Om Vidner paa Daad og Aand;
+Med Ildskrift Navne de male
+  Med Magtens og Konstens Haand.
+
+Paa Tidens Værker de pege
+  Og paa deres Storbedrift —
+Snart Børnebørnene lege
+  Med Fædrenes Krands og Skrift.
+
+Udslettes skal deres Værker;
+  Selv Navn og Minde forgaaer.
+Een Aand kun har Mindesmærker —
+  Den Aand ingen Sjæl forstaaer.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115138">
+<head>
+  <title>Israels Velsignelse</title>
+  <firstline>Hvor er din Velsignelse? Abrahams Slægt</firstline>
+  <source pages="90-91" facsimile-pages="94-95"/>
+  <places>
+    <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+  Hvor er din Velsignelse? Abrahams Slægt!
+Hvor er nu din Forlødsret blandt Folkenes Stammer?
+  Din Arv blev en Fjær paa Beskikkelsens Vægt;
+Din Førstefødselsret blev Haan og Trældom og Jammer.
+
+  Liig Havets Sandskorn blev Stammens Blade udbredte;
+Liig Himlens Stjerner blev Israels Tal;
+  Men over al Verden, som Støv, blev de Stjerner adspredte —
+Som Sand paa Gulv i Verdensbygningens Hal.
+
+  Som Rubens Magt foer vor Herlighed hen —
+Som et Bølgebjerg, der stolt forbi os henbrused.
+  Ei Simeons Morderslægt kom til Hæder igjen;
+Brat Levi Klenod paa Orkanens Vinger hensused.
+
+  Til Ræv blev Judas stolte Løve omskabt;
+Og Sebulons Skibes Skat blev til pjaltede Klæder.
+  Ved Thabors Kilder er Isascars Huusfred tabt;
+Fra Libanon Dan ei meer som Samson optræder.
+
+<pb n="91" facs="094.jpg"/>  Gads glubende Løvenavn blev til Spot;
+Og Assers Oliebrød blev Udlændigheds Krummer.
+  Den kronede Josephs Bjerg og himmelske Slot
+Blev til Ringheds Dal og smudsige Stræders Kummer.
+
+  End Zion staaer; end lever Benjamins Gud;
+End Jacobs Sønners store Gud er den samme;
+  Men Benjamins Arv er kastet til Hundene ud;
+Over Jorden henkastet, haanes Abrahams Stamme.
+
+  Ved Genesarets Søe Terebinthen grønnes endnu;
+Men Naphtali Grene visne i fremmede Lande.
+  End kommer Eloah Libanons Viinstok ihu;
+Men Ephraims Ranke tørres ved golde Strande.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115139">
+<head>
+  <title>Fredens Rige</title>
+  <firstline>Kom Fredens Fyrste til Krigens Land</firstline>
+  <source pages="92" facsimile-pages="96"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kom Fredens Fyrste til Krigens Land,
+  Hvi seer jeg da ei hans Daad?
+Hvor leger Barnet med Øglens Tand
+  Og med Basiliskens Braad?
+
+Hvor lyder Løven Smaadrengens Røst
+  Og deler Hjordenes Ro?
+Hvor hviler Lammet ved Ulvens Bryst,
+  Og Kiddet ved Parderens Klo?
+
+Hvor boer et retfærdigt Folk under Sol?
+  Hvor hersker Zebaoths Aand?
+Hvor hviler Kongen paa Davids Stol
+  Med Salomons Spiir i Haand?
+
+Høit Ulve skrige om himmelsk Fred
+  Og myrde hvert Lam paa Jord.
+— Paa Basiliskernes Kjærlighed
+  Det braadstungne Barn ei troer.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115140">
+<head>
+  <title>Eremitten</title>
+  <firstline>Paa steile Fjeld ved Gemsens vilde Sti</firstline>
+  <source pages="93-94" facsimile-pages="97-98"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa steile Fjeld ved Gemsens vilde Sti
+Jeg Eremittens Hytte gaaer forbi.
+
+Der sidder han en Fodsbred fra sin Grav
+Og stirrer ud paa Sky og øde Hav.
+
+Ei Menneskenes travle Færd han seer;
+Ei sit Aarhundreds Røst han hører meer.
+
+Graaskjægget Hage i sin Haand han hviler;
+Det er som Dødninghovedet til ham smiler.
+
+Ved Bogen Timeglasset for ham staaer;
+Han spørger ei hvorhen <w>min</w> Vandring gaaer.
+
+Han spørger ei om Krig og Fred paa Jord;
+Han spilder ei paa nogen Sjæl et Ord.
+
+Han har vel sagt Alt, hvad han her vil sige;
+Han veed vel, Kroget bliver dog ei lige.
+
+<pb n="94" facs="097.jpg"/>Dog kjendsk og mørkt er dette Aasyn ei:
+Med Klarheds Glands det straaler paa min Vei.
+
+Ei ned han seer paa Verden med Foragt;
+Han opad seer med Seierherrens Magt.
+
+<w>Hans</w> Sjæl har Fred: hans Øie sælsomt smiler —
+Hans Blik paa — Crucifixets Billed hviler.
+
+Ha, bort! — <w>den</w> Eremit har ingen Nød:
+Her hverken Liv han savner — eller Død.
+
+Med Himlen har han Samfund i sin Tanke —
+Kun Een skal evig uden Samfund vanke.
+
+Kun Verdens-Eremitten eensom gaaer;
+Den Bog, <w>jeg</w> læser i — ei Ende faaer.
+
+Hvert Sandskorn i mit Timeglas nedrinder
+Med et Aarhundreds Enevandrings-Minder.
+
+<w>Min</w> Sjæl ei kjender Fred, <w>min</w> Fod ei Hvile;
+Til <w>mig</w> vil aldrig Dødninghovedet smile.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115141">
+<head>
+  <title>Thabor</title>
+  <firstline>Over Viinløvsalene steeg min Fod</firstline>
+  <source pages="95" facsimile-pages="99"/>
+  <places>
+    <place ref="mount-tabor" relation="subject" primary="true"/>
+    <place ref="kishon" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+  Over Viinløvsalene steeg min Fod;
+Jeg min Stav havde sat over Olietræernes Skove;
+  I Dybet henbrused Kisons hellige Flod;
+Høit Thabors Fugle sang over Kedumims Vove.
+
+  Her toned Deborahs Seierssang:
+Her priiste mit Folks Heltinde Zebaoths Seier;
+  Her Baraks Helterøst i Stjerne klang
+Om Hedningens Hær, som Kisons Strømme bortfeier.
+
+  Mit Øie har skuet Thabors Glands —
+Min Sjæl har sig frydet ved Jordens Deiligheds Krone:
+  I Forjættelsens Land hæver Bjergenes Bjerg sin Krands;
+Paa vor Herligheds Bjerg straaler Guld fra Eloahs Throne.
+
+  Forneden blinke Søer og Hav;
+Mellem grønnende Græsgange Jordan snoer sine Strømme.
+  Et Paradiisland Eloah Israel gav —
+Ak! — Sky nu skjuler mit Thabor og Israels Drømme.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115142">
+<head>
+  <title>Den hjemvandrende Israelit</title>
+  <firstline>Hvorhen, o Rabbi, med Alderdomsqval</firstline>
+  <source pages="96" facsimile-pages="100"/>
+  <places>
+    <place ref="valley-of-jehoshaphat" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvorhen, o Rabbi, med Alderdomsqval —
+  Med Tværsæk og Vandringsstav?
+"Jeg vandre vil til Josaphats Dal:
+  "Der vil jeg mig kjøbe en Grav."
+
+Ak! Rabbi! dig selv du ei bære kan —
+  Dog Byrden dig tynger som Steen —
+"Til Hjem og Grav i forjættet Land
+  "Jeg bærer min Faders Been."
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115143">
+<head>
+  <title>Sabbathen</title>
+  <firstline>Sex Dage samled&#x27; de; nu kan de hvile</firstline>
+  <source pages="97-98" facsimile-pages="101-102"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Sex Dage samled' de; nu kan de hvile:
+Sabbathens Børn fra travle Gjerning ile.
+
+Fra Gaden kan jeg gjennem Ruden skue:
+Det glimter festligt i Rabbinens Stue.
+
+I Bønnens Festtalar, med Lovens Traade,
+Graaskjægget Olding priser Hvilens Naade.
+
+Huuspatriarken Viinpokalen hæver:
+Sabbath-Indvielsen paa Læben svæver.
+
+Han Zebaoths-Velsignelsen udsjunger;
+Det toner fromt fra Børnebørne-Tunger.
+
+En sagte Mumlen over Jorden farer:
+I Himlen bede Lys-Seraphers Skarer.
+
+Til Dybet fare Verdens Plageaander;
+Men selv i Dybet ingen Sjæl sig vaander.
+
+<pb n="98" facs="101.jpg"/>Naar Hviledagens store Fred udtales,
+Hver Sjæl, som brænder, kjøles og husvales.
+
+Een Sjæl kun uden Hvile fort maa vandre —
+Sabbath og Hviledag — er for de Andre.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115144">
+<head>
+  <title>Min Moders Huus</title>
+  <firstline>Fra Menneskenes Bolig taus jeg gaaer</firstline>
+  <source pages="99-100" facsimile-pages="103-104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fra Menneskenes Bolig taus jeg gaaer:
+Den Slægt, som lever nu, mig ei forstaaer.
+
+Fra deres snevre Vraaer vil jeg flye;
+Jeg til min gamle Moders Huus vil tye.
+
+Det Huus er større, end al Verdens Byer:
+Nomadens Hyttetag er Himlens Skyer.
+
+Mit Reisetelt er spændt fra Pol til Pol;
+Til Lamper har jeg Maane her og Sol.
+
+Mit Sovekammer er den grønne Dal;
+Min Synagog er Skovens Tempelsal —
+
+Og Folket med Eloahs Priis paa Tunge
+Er alle Fugle, som i Luften sjunge.
+
+Med Trækfuglskaren over Bjerg og Dal
+Jeg vandrer til min Moders Sommersal.
+
+Ei meer forladt, ei ene meer jeg gaaer:
+Her rører sig en Aand, som mig forstaaer.
+
+<pb n="100" facs="103.jpg"/>Til Markens Blomst, til Skov og Søe jeg taler,
+Og tusind Røsters Svar min Sjæl husvaler.
+
+Den gamle Skov mit Afgrunds-Suk forstaaer;
+Den svarer venligt som for tusind Aar.
+
+Jeg kjender Stormens Stemme, naar den suser;
+Det dybe Hav sin Løndom mig tilbruser.
+
+I Klippens Huler og ved Fjeldets Strømme
+Jeg lytter til min gamle Moders Drømme.
+
+Hun drømmer end om skjulte Harpers Klang
+I Dybets Brusen og i Kildens Sang.
+
+Hvor Skyens høie Billedverden flyer,
+Hun drømmer store Verdens-Eventyr.
+
+Med hendes Tanker er min Sjæl fortrolig —
+Jeg er et Barn endnu i hendes Bolig.
+
+Mit Reisetelt fra Pol til Pol er hendes —
+End kjærlig ved sit gamle Barn hun kjendes.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115145">
+<head>
+  <title>Skindød</title>
+  <firstline>Jeg saae paa Menneskenes Færd</firstline>
+  <source pages="101-102" facsimile-pages="105-106"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg saae paa Menneskenes Færd;
+  Jeg saae al Verdens Id:
+Den var mig intet Haansmiil værd
+  Med al dens Larm og Strid.
+
+Jeg hørte Menneskenes Ord;
+  Jeg Daarers Røst fornam:
+Som Bjælders Klang hvert Ord henfoer,
+  Som Hyrdehundens Glam.
+
+Jeg saae hvad deres Vise skrev,
+  Jeg hørte Døgnets Sang;
+En Lyd kun i mit Øre blev,
+  Og den som Spot mig klang.
+
+Fra Folk til Folk jeg vandred om;
+  Jeg elsked ikke Een:
+Mit Blik var Iis; min Sjæl var tom;
+  Mit Aasyn blev til Steen.
+
+<pb n="102" facs="105.jpg"/>Kold sank jeg til min Moders Bryst,
+  Sank død til Jordens Skjød;
+Til Liv mig vakte Vaarens Røst:
+  Min Moder var ei død.
+
+Jeg græd — og Stenen smelted hen
+  I Aasyn og i Bryst:
+Jeg hørte Livets Røst igjen
+  I alle Sjæles Røst.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115146">
+<head>
+  <title>Rabbi Ismael Ben Elisas Børn</title>
+  <firstline>Over Ypperstepræstens Børn Israel sørger</firstline>
+  <source pages="103-104" facsimile-pages="107-108"/>
+  <places>
+    <place ref="rome" relation="setting" primary="true"/>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Over Ypperstepræstens Børn Israel sørger,
+Naar om Zions Pryd, naar om Sarons Rose jeg spørger.
+
+Ben Elisas Søn mit Øie tvinger til Graad;
+Ben Elisas Datter! for dig er min Kind end vaad.
+
+Til Tyrannernes Stad er de ført til Trældom og Jammer;
+I Hedningers Vold er de slæbt fra Templets Flammer.
+
+Om Israels Fald to stolte Romere tale;
+Med Byttet fra Zions Stad de Mægtige prale:
+
+"Mig tjener en Træl af Ypperstepræsters Blod;
+"Ei skjønnere Slave tvætter Keiserens Fod."
+
+"Jeg kjøbte ved Zions Muur sortøiet Jødinde;
+"Ei Mage til Deilighed skal du i Verden finde."
+
+"Af skjønnest Bytte lad herligst Rigdom udspringe!
+"Tilsammen ved Nat vi Træl og Trælqvinde bringe!"
+
+<pb n="104" facs="107.jpg"/>Liig Fugle, i Buur de kostbare Fanger er sat:
+De stolte Herrer vil dele Afkommens Skat.
+
+Fra mørke Krog i Natten lyder en Klage:
+"Skal Ypperstepræstens Søn en Trælqvinde tage?"
+
+Fra fjerne Krog i Fængslet jamrer en Stemme:
+"Skal Zions Datter sin hellige Høihed glemme?"
+
+Den hele Nat de sukke ved mørke Muur;
+Den hele Nat de græde i dunkle Buur.
+
+Ved Morgengry de kjendes med Sorg og Glæde;
+De kaste sig i hinandens Arm og græde.
+
+Ben Elisas Barns Sorg med Taaren bortrandt:
+Ben Elisas Børn græd — til Livet forsvandt.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115147">
+<head>
+  <title>Skystøtten</title>
+  <firstline>Til Morgenrødens Purpurtelt jeg skuer</firstline>
+  <source pages="105" facsimile-pages="109"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Til Morgenrødens Purpurtelt jeg skuer;
+Bag Taagers Bjerg et Hav af Straaler luer.
+
+Skystøtten hist fra Isra'ls Ørk jeg skimter;
+Jehovas Herlighed fra Skyen glimter.
+
+Jeg fra min Ørken store Navn udraaber;
+Mit Aasyn bader sig i Duggens Draaber.
+
+Fra Skyens Støtte ingen Røst jeg hørte;
+Men Himmellivet i min Sjæl sig rørte.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115148">
+<head>
+  <title>Veiens Søn</title>
+  <firstline>Fra Ørkenens Oase bort jeg iler</firstline>
+  <source pages="106" facsimile-pages="110"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fra Ørkenens Oase bort jeg iler;
+Paa grønne Stub sig træt Araber hviler.
+
+Hvo er du? — spørger jeg — du Mand paa Stubben!
+"En Veiens Søn, hvem Veiens Traad er sluppen"<footnote>ɔ: en Reisende uden Reisepenge.</footnote>.
+
+Kun fattig Vandrers Hverdagsord jeg hører;
+Heelt underligt det Ord min Sjæl dog rører.
+
+Min sidste Reise-Dirhem<footnote>en arabisk Mynt.</footnote> jeg ham rækker:
+Hans Veitraad atter gylden sig udstrækker.
+
+I Karavanseriet<footnote>Herberget.</footnote> glad han hviler,
+Mens jeg i veiløs Labyrinth heniler.
+
+Jeg er, hvad du dig kaldte, Mand fra Stubben!
+— "En Veiens Søn, hvem Veiens Traad er sluppen."
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115149">
+<head>
+  <title>Den bedende Jødinde</title>
+  <firstline>Igiennem Brækkens Skodde Lyset glimter</firstline>
+  <source pages="107-108" facsimile-pages="111-112"/>
+  <places>
+    <place ref="jerusalem" relation="subject" primary="true"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Igiennem Brækkens Skodde Lyset glimter;
+Forinden salomonisk Brud jeg skimter.
+
+Jeg mindes Palmens Vært ved Jordans Vande;
+Jeg Sarons Lillier seer paa hvælvet Pande.
+
+Den sorte Lok omslager stolte Nakke,
+Liig Ravnens Vingers Glands paa Zions Bakke.
+
+For Isra'ls Møe er Synagogen lukket;
+Fra lønligt Kammer stiger Jomfrusukket.
+
+I fattigt Huus for lukket Dør og ene
+Staaer Østens Møe i Glands af Ædelstene.
+
+Med Dronningsmykket og i gyldne Klæder,
+Mod Jorsals Gruus hun stirrer hen og græder.
+
+Hun græder ei for Guld og Ædelstene:
+For Zion græder Zions Datter ene.
+
+<pb n="108" facs="111.jpg"/>Landflygtig skjuler hun misundte Lykke;
+Hun barnlig for Jehova sig vil smykke.
+
+Det Hjem, hun aldrig saae, hun dog ei glemmer;
+Hun Isra'ls fangne Døttres Sang istemmer:
+
+"Ved Babels Strømme vi paa Zion tænkte —
+"Paa Vidiens Green vi vore Harper hængte" —
+
+— — O, Davids Folk! i Sorgen priis din Lykke!
+End dine Børn sig for Jehova smykke.
+
+Har Børnesjæle Taarer for din Trængsel,
+End Livets Væld fremqvælder i dit Fængsel.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115150">
+<head>
+  <title>Templet og Ypperstepræsten</title>
+  <firstline>Hvor staaer vor Konges Throne nu paa Jord</firstline>
+  <source pages="109-110" facsimile-pages="113-114"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor staaer vor Konges Throne nu paa Jord?
+Hvor straaler Templet, hvor i Lys han boer?
+Hvor tone Røsterne fra Elohim?
+Hvor bæres Pagtens Ark af Cherubim?
+Hvor hviler Loven over Verdens Love
+I helligt Lye af Jordens Palmers Skove?
+
+Opløft dit Hoved, Israel, fra Jord!
+<w>Hist</w> straaler Templet, hvor din Konge boer;
+Hist tone Røsterne fra Elohim!
+Hist bæres Pagtens Ark af Cherubim;
+Hist hviler Loven over Verdens Love
+I evigt Lye af Himmelpalmers Skove.
+
+Men, o! — hvor staaer han Helligdommens Præst?
+Hvo kalder os til Friheds Løvsalsfest?
+Hvo bærer Urimsmykket paa sit Bryst?
+Hvo hører, viis og reen, Eloahs Røst?
+Hvo kan hans Røst i Sky og Flamme fatte?
+Hvo kan os aabne Helligdommens Skatte?
+
+<pb n="110" facs="113.jpg"/>Vent, Israel, din store Løvsalsfest!
+Forvent i fremmed Land din Fyrstepræst!
+Med Isra'ls Stammers Navne paa sit Bryst
+I Sky han lytter til Eloahs Røst;
+Af Sky han vil i Templets Dør fremtræde
+Og kalde dig til Helligdommens Glæde.
 </poetry>
 </body>
 </text>
@@ -90,11 +2745,16 @@ Men - Herren kjender ene heelt sin Tanke.
 <head>
   <title>Befrielsens Ord</title>
   <firstline>Min Mund vil Herrens store Ting udtone</firstline>
-  <quality>korrektur1</quality>
+  <source pages="111-112" facsimile-pages="115-116"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="mount-tabor" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Min Mund vil Herrens store Ting udtone -
+Min Mund vil Herrens store Ting udtone —
 Min Røst vil stige til Eloahs Throne.
 
 Det store Ord jeg føler paa min Tunge,
@@ -103,7 +2763,7 @@ Som Evighedens Sjæle skal udsjunge.
 Det Ord forklarer Tidens mørke Tale;
 Det vækker døde Verdners Aand af Dvale.
 
-Det toner fjernt fra Paradiisets Have;
+Det toner fjernt fra Paradisets Have;
 Det toner fra Propheters sjunkne Grave.
 
 Det staaer i Helligdommens gamle Skrifter;
@@ -113,12 +2773,12 @@ Et himmelsk Syn fra Jorsals Grav jeg skuer:
 Høit Stjerneskriften over Thabor luer.
 
 Jeg læser Navnet over alle Navne;
-Jeg seer en Favn al Verdens Sjæle favne.
+Jeg seer een Favn al Verdens Sjæle favne.
 
 Jeg seer det gamle Himmeltelt i Flammer;
 Det nye indslutter alle Slægters Stammer.
 
-Jeg Templet seer, som ingen Haand nedriver;
+<pb n="112" facs="115.jpg"/>Jeg Templet seer, som ingen Haand nedriver;
 Jeg hører Ordet, som hver Død opliver.
 
 Jeg hører det i de Ufødtes Stemmer;
@@ -127,10 +2787,10 @@ Tilblivelsernes Ocean det gjemmer.
 Den gamle Nat det i sit Dyb bevarer
 Og for Aartusinder det aabenbarer.
 
-Høit Paradiischeruben det udtaler -
+Høit Paradiischeruben det udtaler —
 Selv de Fordømtes Sjæle det husvaler.
 
-Det Himmel, Jord og Afgrund gjennemrunger -
+Det Himmel, Jord og Afgrund gjennemrunger —
 Og salig er hver Sjæl, som det udsjunger.
 
 Mit Israel, mit Folk! kan du ei høre
@@ -140,7 +2800,7 @@ Først naar det Ord dit Hjerte gjennemtrænger,
 Ei hvileløs paa Jord jeg vandrer længer.
 
 Med dig jeg salig skal det Ord udsige:
-Vor Konge <i>har</i> os kaldet til sit Rige!
+Vor Konge har os kaldet til sit Rige!
 </poetry>
 </body>
 </text>

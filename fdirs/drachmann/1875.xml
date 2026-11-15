@@ -605,7 +605,25 @@ Og gav saa Skjæbnen en i Sinkadusen.
 <head>
   <title>Fra Verdens-Kunstudstillingen</title>
   <firstline>Jeg seer endnu de billedfyldte Sale</firstline>
+  <!-- Begivenhedsdatoen er udstillingens åbning, ikke digtets affattelsesdato eller Drachmanns besøgsdato. -->
+  <dates><event>1873-05-01</event></dates>
+  <notes>
+    <note editorial="true">Digtet skildrer verdensudstillingen i Wien i 1873.</note>
+  </notes>
+  <!-- Den fandt sted i Prater fra 1. maj til 2. november; se WienTourismus’ historiske oversigt <a href="https://www.wien.info/en/art-culture/vision/worlds-fair-435328">↬</a>. Den franske afdeling omfattede elleve malerier af <a person="delacroix">Eugène Delacroix</a>; se <i>France : Œuvres d’art et manufactures nationales</i> (1873), s. 103–104, nr. 185–195 <a href="https://archive.org/details/franceoeuvresdar00vien/page/103/mode/2up">↬</a>. -->
+  <!-- Skildringen af familien med det nyfødte barn svarer til <i>Les Natchez</i> (nr. 188). Den korsfæstede Kristus svarer sandsynligvis til <i>La mort du Christ</i> (nr. 187): katalogets ejer Fanien findes også i proveniensen for Walters-museets <i>Christ en croix</i>. Fiskerbåden svarer sandsynligvis til <i>Jésus endormi dans la barque pendant la tempête sur le lac de Génezareth</i> (nr. 189): katalogets »Fremyn« kan forbindes med Frémy, som ejede Walters-museets version fra 1865; se <i>Delacroix</i> (Metropolitan Museum of Art, 2018), kat. 131 <a href="https://resources.metmuseum.org/resources/metpublications/pdf/Delacroix.pdf">↬</a>. -->
+  <!-- Medea-motivet er katalogets <i>Médée</i> (nr. 194), ejet af Beleys. Den gengivne Lille-version fra 1838 illustrerer motivet; den er ikke identificeret som Wien-eksemplaret. Løven og araberen svarer til <i>Lion déchirant le corps d’un arabe</i> (nr. 191), ejet af Moujean. Det gengivne maleri i Oslo har en »Monjean« i museets proveniens og er sandsynligvis samme værk; navnevarianten er ikke endeligt afklaret. -->
+  <pictures>
+    <picture artwork="delacroix/natchez-1835"/>
+    <picture artwork="delacroix/christ-en-croix-1846"/>
+    <picture artwork="delacroix/christ-genezareth-1854"/>
+    <picture artwork="delacroix/medee-1838"/>
+    <picture artwork="delacroix/lion-1847"/>
+  </pictures>
   <source pages="24-32"/>
+  <places>
+    <place ref="sea-of-galilee" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

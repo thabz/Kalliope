@@ -71,6 +71,14 @@ digtere.
 
 ## XML-data
 
+- Agenttilføjede noter må kun indeholde korte, konkrete fakta, som er direkte
+  dokumenteret i en verificeret, offentligt tilgængelig internetkilde. Angiv
+  kilden. Agenter må aldrig tilføje referater, analyser, fortolkninger eller
+  forklaringer af værkets indhold, heller ikke med henvisning til eksterne
+  analyser. Begrundelser for agentens redaktionelle valg hører til i
+  PR-beskrivelsen, ikke i værkets noter. Reglen gælder nye agenttilføjede
+  noter; kildens oprindelige noter og fodnoter bevares.
+
 - Værker registreres automatisk fra `<kalliopework>`-filer i digtermappen.
   Opret aldrig `<works>` i `info.xml`; elementet er ulovligt i RELAX NG.
   XML-filer skal være værker eller en dokumenteret metadatafil efter

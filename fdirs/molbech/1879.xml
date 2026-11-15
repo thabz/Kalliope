@@ -282,6 +282,9 @@ Straaler <w>Fromhed</w> som en Perle reen.
   <title>Daaben</title>
   <firstline>Hvor mod Jordans Strande</firstline>
   <source pages="12-23" facsimile-pages="25-36"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1050,6 +1053,9 @@ Sig bag dens lette Fjed.
   <title>Den utroe Kvinde</title>
   <firstline>Høit lyste Solen paa Judæas Himmel</firstline>
   <source pages="40-44" facsimile-pages="53-57"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1488,6 +1494,9 @@ Under ham laa Havets stille Liv.
   <title>Lazarus’s Opvækkelse</title>
   <firstline>Hvor Kedrons Slette smiler</firstline>
   <source pages="55-67" facsimile-pages="68-80"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1797,6 +1806,9 @@ Af de Trende fulgt, igjennem Haven.
   <title>Jesus i Gethsemane</title>
   <firstline>Jesus vandrer gjennem Nattens Stille</firstline>
   <source pages="67-72" facsimile-pages="80-85"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1941,6 +1953,9 @@ Med et Kys forraader han sin Lærer.
   <title>Jesu Død</title>
   <firstline>Græd, Jerusalem! lyt til min Harpes Toner</firstline>
   <source pages="73-83" facsimile-pages="86-96"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7263,6 +7278,9 @@ Og er en venlig Saga, der gjemmer den Ædles Minde.
   <subtitle>1848.</subtitle>
   <firstline>Der er en Gud, som over Danmark vaager</firstline>
   <source pages="266-269" facsimile-pages="279-282"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7377,6 +7395,9 @@ Der er en Gud, som over Danmark vaager.
     <event>1844-03-24</event>
   </dates>
   <source pages="270-274" facsimile-pages="283-287"/>
+  <places>
+    <place ref="kidron-valley" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
