@@ -65,6 +65,7 @@ describe('tracked work corpus', () => {
   let standaloneFootnoteIssues;
   let proseFootnoteIssues;
   let emptyAndreFiles;
+  let emptyWorkheadNoteIssues;
   let formattingIssues;
   let proseWordDivisionIssues;
   let pageBreakIssues;
@@ -102,6 +103,7 @@ describe('tracked work corpus', () => {
     standaloneFootnoteIssues = [];
     proseFootnoteIssues = [];
     emptyAndreFiles = [];
+    emptyWorkheadNoteIssues = [];
     formattingIssues = [];
     proseWordDivisionIssues = [];
     pageBreakIssues = [];
@@ -200,6 +202,15 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      for (const workhead of getElementsByTagNames(workDocument, ['workhead'])) {
+        for (const note of getElementsByTagNames(workhead, ['note'])) {
+          // References and images can render content without literal XML text.
+          const renderedElements = getElementsByTagNames(note, ['xref', 'picture', 'img', 'asterism']);
+          if (note.textContent.trim().length === 0 && renderedElements.length === 0) {
+            emptyWorkheadNoteIssues.push(`${filename}: Tom <note> i <workhead>.`);
+          }
+        }
+      }
       for (const text of getElementsByTagNames(workDocument, ['text', 'prose'])) {
         if (text.hasAttribute('id')) textAuthors.set(text.getAttribute('id'), resolveAuthorId(text, filename.split('/')[1]));
       }
@@ -361,6 +372,10 @@ describe('tracked work corpus', () => {
 
   it('contains tracked work files', () => {
     expect(filenames.length).toBeGreaterThan(0);
+  });
+
+  it('does not contain empty notes in workhead', () => {
+    expect(emptyWorkheadNoteIssues).toEqual([]);
   });
 
   it('does not contain empty andre.xml files', () => {
