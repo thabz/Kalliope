@@ -1518,6 +1518,9 @@ Det fattes her en Hytte!
     <note>Efter den <a bible="bibelsalme137">137de Davids-Psalme</a></note>
   </notes>
   <source pages="39-41"/>
+  <places>
+    <place ref="babylon" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3170,6 +3173,9 @@ I Herrens Kirke-By!
   <title><num>27.</num>Kom, lader os bygge</title>
   <firstline>Kom, lader os bygge</firstline>
   <source pages="81-83"/>
+  <places>
+    <place ref="babylon" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4984,6 +4990,9 @@ Det Løsen, os aabner den herlige Stad!
     <note><a bible="bibel2konge05">2 Kong. B. 5</a></note>
   </notes>
   <source pages="124-126"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5087,6 +5096,9 @@ I Guddoms-Trillingnavnet!
     <note>Omarbeidelse af Kingos: Mig lyster nu at træde, Hen ned til Jordans vand</note>
   </notes>
   <source pages="126-127"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11576,6 +11588,9 @@ Vær Selv blandt os tilstæde!
     <note>Af den <a bible="bibelsalme41">41.</a> og <a bible="bibelsalme42">42.</a> Davids-Psalme</note>
   </notes>
   <source pages="287-290"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11766,6 +11781,12 @@ Og folde sig i Lampens Glands!
     <note editorial="true">Cf. <xref bible="bibelesajas35"/>.</note>
   </notes>
   <source pages="292-296"/>
+  <places>
+    <place ref="sharon-plain" relation="mentioned"/>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12421,6 +12442,9 @@ Dødens Skræk og Mørkets Gru!
   <title><num>141.</num>Jesus, Moses og Elias</title>
   <firstline>Jesus, Moses og Elias</firstline>
   <source pages="308-312"/>
+  <places>
+    <place ref="mount-tabor" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12906,6 +12930,9 @@ Og evigsøde Fryde-Sange!
     <note>Efter den <a bible="bibelsalme72">72. Davids-Psalme</a></note>
   </notes>
   <source pages="320-321"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -24389,6 +24416,10 @@ Siger: hvil med salig Glæde!
   <title><num>327.</num>Gud-Fader udsendte sit Naadens-Ord</title>
   <firstline>Gud-Fader udsendte sit Naadens-Ord</firstline>
   <source pages="599-600"/>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -24436,6 +24467,9 @@ I Himmels og Jords Eenbaarne!
     <note>Propheten <a bible="bibelezekiel17">Ezechiel i det 17.</a>, christelig forklaret</note>
   </notes>
   <source pages="600-602"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -25713,6 +25747,9 @@ Som dig skiænked Paradis!
     <note>Af den Latinske Kirke-Sang "Qvam dilecta Tabernacula"</note>
   </notes>
   <source pages="629-631"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -26313,6 +26350,9 @@ Daglig vi med Moses sang!<note editorial="true">Cf. <xref bible="bibelaabenbarin
     <note>Decourcys "Head of the church triumphant" fordansket og klaret</note>
   </notes>
   <source pages="642-643"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -27077,6 +27117,9 @@ Lovsynge Herrens Bord!
     <note>Luther's "Christ unser Herr zum Jordan kam" frit fordansket</note>
   </notes>
   <source pages="659-661"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

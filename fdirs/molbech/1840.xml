@@ -267,6 +267,9 @@ Straaler Fromhed som en Perle reen.
   <title>Daaben</title>
   <firstline>Hvor mod Jordans Strande</firstline>
   <source pages="8-17"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1043,6 +1046,9 @@ Sig bag dens lette Fied.
   <title>Den utroe Qvinde</title>
   <firstline>Høit lyste Solen paa Judæas Himmel</firstline>
   <source pages="34-38"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1481,6 +1487,9 @@ Under ham laae Havets stille Liv.
   <title>Lazarus's Opvækkelse</title>
   <firstline>Hvor Kedrons Slette smiler</firstline>
   <source pages="50-60"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1792,6 +1801,9 @@ Af de Trende fulgt, igiennem Haven.
   <title>Jesus i Gethsemane</title>
   <firstline>Jesus vandrer giennem Nattens Stille</firstline>
   <source pages="61-66"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1944,6 +1956,9 @@ Knap det Dyb af Synd, hans Hierte nærer!
   <title>Jesu Død</title>
   <firstline>Græd, Jerusalem! lyt til min Harpes Toner</firstline>
   <source pages="67-76"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
