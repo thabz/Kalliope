@@ -33,6 +33,21 @@ const serializeChildren = node => {
 
 const isPoetryBlock = node => node.nodeName === 'poetry';
 
+// A nested text owns its own poetry. Parent entries retain only their direct
+// textual stream, including poems inside notes belonging to that stream.
+const ownedPoetryBlocks = entry => Array.from(entry.getElementsByTagName('poetry'))
+  .filter(poetry => {
+    let ancestor = poetry.parentNode;
+    while (ancestor != null && ancestor !== entry) {
+      if (['text', 'prose'].includes(ancestor.nodeName) === true &&
+        directChild(ancestor, 'head') != null && directChild(ancestor, 'body') != null) {
+        return false;
+      }
+      ancestor = ancestor.parentNode;
+    }
+    return ancestor === entry;
+  });
+
 const pageBreakKey = markup => /\bfacs="([^"]+)"/u.exec(markup)?.[1] ?? markup;
 
 const explicitPageBreaks = node => {
@@ -170,14 +185,16 @@ const splitBodyPages = (body, { noteNeutral = false } = {}) => {
   let transition = null;
   for (const match of serialized.matchAll(pattern)) {
     pages.push({ content: serialized.slice(cursor, match.index), transition });
-    const n = /\bn="([^"]*)"/.exec(match[1])?.[1] ?? null;
-    const facs = /\bfacs="([^"]*)"/.exec(match[1])?.[1] ?? null;
+    const n = /(?:^|\s)n="([^"]*)"/.exec(match[1])?.[1] ?? null;
+    const correctedN = /(?:^|\s)corrected-n="([^"]*)"/.exec(match[1])?.[1] ?? null;
+    const facs = /(?:^|\s)facs="([^"]*)"/.exec(match[1])?.[1] ?? null;
     const before = serialized.slice(Math.max(0, match.index - 1), match.index);
     const afterIndex = match.index + match[0].length;
     const after = serialized.slice(afterIndex, afterIndex + 1);
     transition = {
       markup: match[0],
       printed_page: n,
+      ...(correctedN == null ? {} : { corrected_page: correctedN }),
       facsimile: facs,
       kind: /[\p{L}\p{N}]/u.test(before) && /[\p{L}\p{N}]/u.test(after)
         ? 'pb-within-word'
@@ -193,6 +210,8 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
   const document = parseXml(xml);
   const rows = [];
   const workhead = directChild(document.documentElement, 'workhead');
+  const countByFacsimile = directChild(workhead, 'pagebreaks')
+    ?.getAttribute('count-by') === 'facsimile';
   for (const entry of textEntries(document)) {
     const textId = entry.getAttribute('id') ?? '';
     const head = directChild(entry, 'head');
@@ -203,26 +222,43 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
     if (body == null) continue;
     const bodyPages = splitBodyPages(body, { noteNeutral: true });
     const pbs = Array.from(body.getElementsByTagName('pb'));
-    const firstPrintedPage = interval?.label(interval.from) ?? (pages || null);
+    const nominalFirstPage = interval?.label(interval.from) ?? (pages || null);
+    const firstPrintedPage = source?.getAttribute('first-n') ?? nominalFirstPage;
     const firstFacsimile = facsimileBeforeFirstPb(
       source,
       sourceForText(workhead, source),
       pbs[0],
-      firstPrintedPage,
+      nominalFirstPage,
     );
     const actualSlots = bodyPages.map((page, index) => ({
       page,
       printedPage: index === 0 ? firstPrintedPage : page.transition?.printed_page,
+      correctedPage: index === 0
+        ? (firstPrintedPage !== nominalFirstPage ? nominalFirstPage : null)
+        : page.transition?.corrected_page,
       facsimile: index === 0 ? firstFacsimile : page.transition?.facsimile,
       expectedTransition: index === 0 ? 'text-start' : page.transition?.kind,
     }));
     let slots = actualSlots;
-    if (includeExpectedPages && interval != null) {
+    const physicalInterval = parseSimplePages(source?.getAttribute('facsimile-pages'));
+    if (includeExpectedPages === true && countByFacsimile === true && physicalInterval != null) {
+      const actualByFacsimile = new Map(actualSlots.map(slot => [slot.facsimile, slot]));
+      const expectedFacsimiles = Array.from(
+        { length: physicalInterval.to - physicalInterval.from + 1 },
+        (_, index) => incrementFacsimile(firstFacsimile, index),
+      );
+      slots = expectedFacsimiles.map((facsimile, index) => actualByFacsimile.get(facsimile) ?? {
+        page: { content: '', transition: null }, printedPage: null, facsimile,
+        expectedTransition: index === 0 ? 'text-start' : 'pb',
+      });
+      const expectedSet = new Set(expectedFacsimiles);
+      slots.push(...actualSlots.filter(slot => expectedSet.has(slot.facsimile) === false));
+    } else if (includeExpectedPages === true && interval != null) {
       const expectedLabels = Array.from(
         { length: interval.to - interval.from + 1 },
         (_, index) => interval.label(interval.from + index),
       );
-      const actualByLabel = new Map(actualSlots.map(slot => [slot.printedPage, slot]));
+      const actualByLabel = new Map(actualSlots.map(slot => [slot.correctedPage ?? slot.printedPage, slot]));
       slots = expectedLabels.map((printedPage, index) => {
         const actual = actualByLabel.get(printedPage);
         return actual ?? {
@@ -233,7 +269,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
         };
       });
       const expectedSet = new Set(expectedLabels);
-      slots.push(...actualSlots.filter(slot => !expectedSet.has(slot.printedPage)));
+      slots.push(...actualSlots.filter(slot => !expectedSet.has(slot.correctedPage ?? slot.printedPage)));
     }
     slots.forEach((slot, index) => {
       const { page, printedPage } = slot;
@@ -245,6 +281,7 @@ const buildPageInventory = ({ xml, workFile = null, includeExpectedPages = true 
           parent_text_id: containingTextEntry(entry).getAttribute('id'),
         }),
         printed_page: printedPage,
+        ...(slot.correctedPage == null ? {} : { corrected_page: slot.correctedPage }),
         facsimile: slot.facsimile ?? incrementFacsimile(firstFacsimile, index),
         first_line: lines[0] ?? '',
         last_line: lines.at(-1) ?? '',
@@ -288,8 +325,9 @@ const auditPageInventory = ({ xml, inventory }) => {
       }
       previousFacsimile = { number, label: row.facsimile };
     }
-    if (/^\d+$/.test(row.printed_page ?? '')) {
-      const number = Number(row.printed_page);
+    const orderedPage = row.corrected_page ?? row.printed_page;
+    if (/^\d+$/.test(orderedPage ?? '')) {
+      const number = Number(orderedPage);
       const previous = previousPrintedByText.get(row.text_id);
       if (previous != null && number < previous.number && !orderExceptions.has(key)) {
         issues.push({ rule: 'decreasing-printed-page', key, previous: previous.label, actual: row.printed_page });
@@ -307,7 +345,7 @@ const auditPageInventory = ({ xml, inventory }) => {
       issues.push({ rule: 'missing-xml-page', key });
       continue;
     }
-    for (const field of ['printed_page', 'facsimile', 'first_line', 'last_line', 'expected_transition']) {
+    for (const field of ['printed_page', 'corrected_page', 'facsimile', 'first_line', 'last_line', 'expected_transition']) {
       if ((expected[field] ?? null) !== (found[field] ?? null)) {
         issues.push({
           rule: `mismatched-${field.replaceAll('_', '-')}`,
@@ -367,6 +405,7 @@ export {
   isPoetryBlock,
   serializeVerseLines,
   normalizeLine,
+  ownedPoetryBlocks,
   parseSimplePages,
   parseXml,
   readJsonLines,

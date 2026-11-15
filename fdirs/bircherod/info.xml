@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bircherod" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Hans Husvig</firstname>
+    <lastname>Bircherod</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1663-01-01</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1720-12-20</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <!-- Hans (Johannes) Husvig identificeres i DBL3 under Jens Jensen Bircherod;
+       DBL1 har selvstændig artikel, II (1888), s. 289–290.
+       Navneformen Johannes Jensøn i Syvs approbation er sønnens latinske
+       Johannes og patronym; faderen Jens Jensen døde 1686.
+       https://biografiskleksikon.lex.dk/Jens_Jensen_Bircherod -->
+  <!-- Portrætsøgning 2026-11-13 på Hans Bircherod og Hans Husvig Bircherod:
+       intet sikkert identificeret portræt fundet. Ingen billedfil oprettet. -->
+</person>

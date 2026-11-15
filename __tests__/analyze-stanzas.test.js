@@ -13,6 +13,12 @@ const bodyWithStanzas = stanzaLengths => {
 };
 
 describe('stanza candidate analysis', () => {
+  it('excludes printed double rules from verses and stanzas', () => {
+    expect(analyzeStanzas({ body: 'Første\nAnden\n\n====\n\nTredje\nFjerde' })).toMatchObject({
+      verse_line_count: 4,
+      observed_stanza_lengths: [2, 2],
+    });
+  });
   it('excludes single-row and multiline metrical diagrams from verse counts', () => {
     const body = '<metrik>_ u _</metrik>\n<metrik>_ u\n_ _</metrik>\nFørste vers\nAndet vers';
     expect(analyzeStanzas({ body })).toMatchObject({

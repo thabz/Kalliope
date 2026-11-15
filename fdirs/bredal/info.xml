@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bredal" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Niels</firstname>
+    <lastname>Bredal</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>dk-renaessance-og-reformation</literary-periods>
+  <!-- Vejles skolemester i 1500-tallet, ikke Niels Andreas Bredal (1841–1888)
+       eller Niels Krog Bredal (1732/33–1778). Ehrencron-Müller II (1925),
+       s. 44–45, angiver intet sikkert fødsels- eller dødsår, men endnu i live 1578. -->
+  <!-- Biografikilder gennemgået 2026-11-14: DBL1 III's register og Salmonsen2
+       III, s. 897, har intet relevant personopslag. DBL2 IV (1934), s. 42,
+       har Albert Fabritius' korte slægtsomtale, men ikke skolevirksomheden,
+       digtningen eller værkerne; supplementet til Salmonsen2 XXVI, s. 157,
+       og Den nye Salmonsen (1949), sp. 553, har heller ikke en digterbiografi.
+       Ehrencron-Müller bruges derfor som dokumenteret reservekilde.
+       DBL2's oplysning om Vinding 1526 og død efter 1576 sammenflettes ikke
+       med reserven til sikre livsdata.
+       https://www.rosekamp.dk/DBL_All/DBL_4_text.pdf
+       https://runeberg.org/hemforf/2/0054.html -->
+  <!-- Portrætsøgning 2026-11-14: navnet med skolemester/portræt samt
+       KB, arkiv.dk, Portraitindex og SMK gav intet sikkert identificeret
+       portræt af 1500-tallets skolemester. Maleren Niels Andreas Bredal,
+       kunstneren Niels Bredal (1772–1831) og lokale navnebrødre er afvist.
+       Ingen billedfil eller tom portraits.xml oprettet. -->
+</person>

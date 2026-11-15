@@ -36,6 +36,7 @@
         <ref name="front"/>
         <ref name="title"/>
         <ref name="year"/>
+        <ref name="titleblock"/>
         <ref name="subtitle"/>
         <ref name="suptitle"/>
         <ref name="firstline"/>
@@ -78,7 +79,6 @@
         <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
-        <ref name="o"/>
         <ref name="num"/>
         <ref name="nonum"/>
         <ref name="resetnum"/>
@@ -214,7 +214,7 @@
       <text/>
       <ref name="b"/><ref name="i"/><ref name="w"/><ref name="sc"/>
       <ref name="span"/><ref name="small"/><ref name="s"/>
-      <ref name="sup"/><ref name="sub"/><ref name="u"/><ref name="o"/>
+      <ref name="sup"/><ref name="sub"/><ref name="u"/>
       <ref name="br"/><ref name="pb"/><ref name="note"/><ref name="footnote"/>
     </choice>
   </define>
@@ -289,6 +289,7 @@
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
+      <optional><attribute name="first-n"><data type="nonNegativeInteger"/></attribute></optional>
       <choice>
         <ref name="inlineWithoutLineMarkers"/>
         <ref name="sourceBibliography"/>
@@ -463,6 +464,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="corrected-n"><data type="positiveInteger"/></attribute></optional>
       <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -641,7 +643,7 @@
       </element>
     </element>
   </define>
-  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><optional><attribute name="count-by"><value>facsimile</value></attribute></optional><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="inlineWithoutLineMarkers">
     <zeroOrMore>
@@ -658,7 +660,6 @@
         <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
-        <ref name="o"/>
         <ref name="num"/>
         <ref name="resetnum"/>
         <ref name="margin"/>
@@ -705,7 +706,6 @@
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
-  <define name="o"><element name="o"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
   <define name="nonum">
     <element name="nonum">
@@ -753,4 +753,10 @@
       <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
+<define name="titleblock"><element name="titleblock"><oneOrMore><element name="part">
+<attribute name="type"><choice><value>main</value><value>sub</value><value>dedication</value><value>byline</value><value>tune</value><value>imprint</value></choice></attribute>
+<optional><attribute name="align"><choice><value>left</value><value>center</value><value>right</value></choice></attribute></optional>
+<optional><attribute name="size"><choice><value>small</value><value>normal</value><value>large</value></choice></attribute></optional>
+<choice><oneOrMore><element name="line"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore><oneOrMore><element name="p"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore></choice>
+</element></oneOrMore></element></define>
 </grammar>
