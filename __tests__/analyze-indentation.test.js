@@ -19,6 +19,9 @@ const poetryBodiesFromXml = xml =>
   );
 
 describe('indentation profile parsing', () => {
+  it('excludes printed double rules from indentation profiles', () => {
+    expect(parseBody('Første\n====\n  Anden').verseLines.map(line => line.indentation)).toEqual([0, 2]);
+  });
   it('records leading spaces for every verse line', () => {
     const parsed = parseBody('Ingen\n  To\n\n    Fire');
 

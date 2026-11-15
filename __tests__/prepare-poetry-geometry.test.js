@@ -38,6 +38,11 @@ const ocrLine = (text, top, left = 300) => ({
 });
 
 describe('forberedelse af helværksgeometri', () => {
+  it('treats a printed double rule as equipment rather than a verse', () => {
+    const [block] = extractPoetryBlocks(xml.replace('Tredje Verslinje', '====\nTredje Verslinje'));
+    expect(block.lines).toHaveLength(4);
+    expect(block.equipment.map(line => line.text)).toContain('====');
+  });
   it('keeps diagram rows out of OCR verse alignment and carries their page markers', () => {
     const withDiagram = xml.replace('Første Verslinje',
       '<metrik>_ u _\n<pb n="8" facs="012.jpg"/>_ _</metrik>\nFørste Verslinje');
