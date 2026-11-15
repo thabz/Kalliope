@@ -21,6 +21,9 @@
   <title>Ninive</title>
   <firstline>Hvis i Verden en Stad</firstline>
   <source pages="1-4"/>
+  <places>
+    <place ref="tigris" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

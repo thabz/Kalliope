@@ -394,6 +394,7 @@ Hil dig lyksalige Viv! - fort Vandrer fra fremmede Stad!
   <places>
     <place ref="hamburg" relation="subject" primary="true"/>
     <place ref="ottensen" relation="mentioned"/>
+    <place ref="elbe" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5753,6 +5754,7 @@ Brune Øine tindre under nikkende Hat.''
     <place ref="gex" relation="setting"/>
     <place ref="simplon-pass" relation="subject" primary="true"/>
     <place ref="milan" relation="setting"/>
+    <place ref="mount-ararat" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7066,6 +7068,9 @@ Visselig kom jeg da nu til Konstens Fædreneland.
   <title>Regndagen</title>
   <firstline>Er det Sommer og Vinter paa eengang her?</firstline>
   <source in="bd2" pages="65-67"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7172,6 +7177,9 @@ Aldrig glemmer jeg dog hiin Nat i fremmede Land.
   <subtitle>[til Rom.]</subtitle>
   <firstline>Cabriolet man her benævner ziirligen Bukken</firstline>
   <source in="bd2" pages="70-74"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7265,6 +7273,7 @@ Hvordan Alting saa er - saa gaaer du dog nu i Rom.
   <source in="bd2" pages="75-76"/>
   <places>
     <place ref="rome" relation="subject" primary="true"/>
+    <place ref="tiber" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7319,6 +7328,7 @@ Men tit jeg gaaer fra Høi til Høi, og seer og veed ei hvad.
   <source in="bd2" pages="77-84"/>
   <places>
     <place ref="rome" relation="subject" primary="true"/>
+    <place ref="tiber" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8307,6 +8317,7 @@ Vist grumt hans Bande hævner ham nu paa Neapels Vei.
   <source in="bd2" pages="122-124"/>
   <places>
     <place ref="rome" relation="subject" primary="true"/>
+    <place ref="tiber" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8405,6 +8416,9 @@ Minde om Sjælens Fred, og Lysets evige Seir.
   <title>Hjemmet</title>
   <firstline>Blev nu Roma dit Hjem? kan her dog Norden du glemme?</firstline>
   <source in="bd2" pages="127"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9703,6 +9717,7 @@ Hvor Sorg og Glæde leger Skjul i barnlige Natur.
   <source in="bd2" pages="187-245"/>
   <places>
     <place ref="rome" relation="subject" primary="true"/>
+    <place ref="tiber" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

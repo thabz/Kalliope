@@ -2000,6 +2000,10 @@ Härmed jag jetten slår till döds, som äter folk.
   <nofirstline/>
   <source pages="225-232" facsimile-pages="242-249"/>
   <keywords>rueckert</keywords>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2014,6 +2018,10 @@ Härmed jag jetten slår till döds, som äter folk.
 <head>
   <firstline>Seer du langs med Gangas Strömme</firstline>
   <source pages="227-232" facsimile-pages="244-249"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3282,6 +3290,10 @@ Som endnu er ganske röde.
   <!-- PDF-siderne 529–580 er skanningsdubletter; teksten følger 284–528 og 581–669, og pb springer over dubletterne. -->
   <source pages="257-590" facsimile-pages="284-669"/>
   <keywords>saxo,sturluson,steffens,rahbek,nyerup,thiele,oehlenschlaeger,ingemann,grundtvig,brahe,geijer,runeberg,holberg,wessel,bellman,atterbom,tegner,schiller,goethe,luther</keywords>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5396,6 +5408,9 @@ For Landet ved de dybe Sunde!
 <head>
   <firstline>Med sin eviggrönne Krone</firstline>
   <source pages="581-585" facsimile-pages="660-664"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

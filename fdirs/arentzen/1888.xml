@@ -3923,6 +3923,9 @@ en Psyche med brudte Vinger.
   <title>Arnold fra Brescia</title>
   <firstline>Rødmende straaler den østlige Himmel</firstline>
   <source pages="137-139"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7223,6 +7226,9 @@ Koralen spiller.
     <note editorial="true">Johan Rantzau (1492-1565), feltherre for <a person="frederik1">Frederik I</a> og <a person="christian3">Christian III.</a></note>
   </notes>
   <source pages="259-260"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

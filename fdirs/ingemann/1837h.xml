@@ -37,6 +37,9 @@
   <firstline>Vær hilset, mit gamle Fædreland</firstline>
   <source pages="5-6"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="denmark" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -221,6 +224,10 @@ Hvergang jeg skued en liden Dreng,
   <firstline>Ved Leire græsse nu Faar paa Vold</firstline>
   <source pages="12-13"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="zealand" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -266,6 +273,9 @@ Og hvergang jeg hørte Skjoldets Klang
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="14"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -296,6 +306,9 @@ De flyvende Skyer peged jeg paa.
   <title>Feerne ved Holgers Vugge</title>
   <firstline>Sex Feer stod ved min Vugge og sang</firstline>
   <source pages="15-16"/>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -347,6 +360,9 @@ Hvad Feerne saaede med Sang i mit Bryst.
   <title>Anelsen i Guder-Lunden</title>
   <firstline>I Herthas susende Skove</firstline>
   <source pages="17-18"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -389,6 +405,11 @@ Dog dybest klang mig de Stemmer,
     <note>Den store Saxernes Høvding; han blev overvunden af Keiser Carl den Store, og søgte Tilflugt og Hjelp hos Kong Gøttrik i Danmark, som efter Krønikerne var Holger Danskes Fader, og som paa den Tid, da han bestreed Carl den Store, her antages at have været den mægtigste Fyrste i Danmark og beklædet Overkongethronen paa Leire.</note>
   </notes>
   <source pages="19-21"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="isefjord" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -468,6 +489,10 @@ Men Dankongen trodsed den Keiser,
   </notes>
   <source pages="22-23"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -506,6 +531,10 @@ Jeg tænkte paa Danmarks Sangfuglevang
   <firstline>Der fløi gjennem Verden en Tanke</firstline>
   <source pages="24-25"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="rhine" relation="setting"/>
+    <place ref="ingelheim-am-rhein" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -637,6 +666,9 @@ Hele Verden saae <b>Eginhards</b> Lykke.
   </notes>
   <source pages="31-33"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -710,6 +742,9 @@ Brat smelted Keiserens Hjerte —
   <firstline>Carl seired ved Romas Porte</firstline>
   <source pages="34"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -740,6 +775,10 @@ Den Vei til Seier og Hæder
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="35-37"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -933,6 +972,9 @@ Hun smiled og sang, og hun rakte mig Haand;
   <title>Det Skjønneste</title>
   <firstline>Til Rosengaarden gik jeg i Jomfruens Baand</firstline>
   <source pages="43"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1011,12 +1053,17 @@ Sjæl! du flyvende Sjæl! du kjærlige høie!
   </notes>
   <source pages="46-48"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Der klang til Danmark en Kæmpesang
-  Om Burmand og Holger Danske<footnote>See Kæmpevisen hos Peder Syv.</footnote>.
+  Om Burmand og Holger Danske<footnote>See <a poem="folkeviser2026111413">Kæmpevisen hos Peder Syv</a>.</footnote>.
 Der Burmand jeg hilsed første Gang,
   Det skete med Staal og Handske.
 
@@ -1076,6 +1123,9 @@ Mit Glavind splintred hans Pandebrask —
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="49-51"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1148,6 +1198,9 @@ Roland sprængte Holgers Fængsel —
   <title>Kroningsdagen</title>
   <firstline>Der var Pragt i Pavestaden</firstline>
   <source pages="52"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1183,6 +1236,10 @@ Men blandt alle Skjønne smiled
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="53-54"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1231,6 +1288,9 @@ De græd ved mit Bryst bag Romas Port;
   <firstline>Jeg stod i den venlige Sommerqvel</firstline>
   <source pages="55-56"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="italy" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1461,6 +1521,9 @@ Ad Dværgenes Avindsblik vi loe
   <firstline>Carolus bar Verdenskronen</firstline>
   <source pages="66-67"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="paris" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1760,6 +1823,10 @@ Om Sol og Maane spurgte jeg ikke.
   <firstline>I Modgang loe jeg vel mangen Gang</firstline>
   <source pages="78-80"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="spain" relation="setting"/>
+    <place ref="ebro" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1879,6 +1946,11 @@ Hvor Maurerne peeb og hvor Frankerne sang.
   <title>Seiersfesten i Saragossa</title>
   <firstline>Saragossa saae jeg prange</firstline>
   <source pages="83-84"/>
+  <places>
+    <place ref="zaragoza" relation="setting"/>
+    <place ref="ebro" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1934,6 +2006,10 @@ Saae mit Øie glad tilsammen
   <firstline>Høit paa Pyrenæers Fjelde</firstline>
 
   <source pages="85-92"/>
+  <places>
+    <place ref="pyrenees" relation="setting"/>
+    <place ref="roncesvalles" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2178,6 +2254,9 @@ Roland i hans Haand lod falde —
   <title>Erkebisp Turpin</title>
   <firstline>Vi sørged for de Døde</firstline>
   <source pages="95-96"/>
+  <places>
+    <place ref="roncesvalles" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2230,6 +2309,9 @@ Turpin gik stille til sin Grav med Krykke.
   <title>De elleve Jævningers Jordefærd</title>
   <firstline>Fahner vifted over Skjolde</firstline>
   <source pages="97-98"/>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2284,6 +2366,9 @@ Aldrig Verdens Hersker glemte
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="101-102"/>
+  <places>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2386,6 +2471,9 @@ Mit Korsbanner vaied i Lunden.
   <title>Nattebesøget paa Kongsgaarden</title>
   <firstline>Jeg stod paa Leireborgen</firstline>
   <source pages="105-107"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2507,6 +2595,9 @@ Jeg veed, hans Aand er ei ægte;
   </notes>
   <source pages="109-111"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2577,6 +2668,15 @@ Lystig mod Østerlide
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="112-113"/>
+  <places>
+    <place ref="baltic-sea" relation="setting"/>
+    <place ref="kattegat" relation="setting"/>
+    <place ref="north-sea" relation="setting"/>
+    <place ref="spain" relation="setting"/>
+    <place ref="africa" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+    <place ref="provence" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2619,6 +2719,11 @@ Mod Landet, det fjerne, hvor Palmerne groe,
   <title>Østerlide</title>
   <firstline>Østerlide! Østerlide</firstline>
   <source pages="114-116"/>
+  <places>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="eden" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2685,6 +2790,10 @@ Sang jeg høit paa Verdens Hav.
   <source pages="117-118"/>
   <places>
     <place ref="mount-lebanon" relation="setting"/>
+    <place ref="mount-sinai" relation="setting"/>
+    <place ref="bethlehem" relation="setting"/>
+    <place ref="golgotha" relation="setting"/>
+    <place ref="france" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2766,6 +2875,12 @@ Jeg mente, Guds Haves Porte
   </notes>
   <source pages="120-123"/>
   <keywords>knittelvers</keywords>
+  <places>
+    <place ref="euphrates" relation="setting"/>
+    <place ref="tigris" relation="setting"/>
+    <place ref="bamyan" relation="setting"/>
+    <place ref="himalayas" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2871,6 +2986,8 @@ End mindes jeg hiin Stund med Lyst:
   <keywords>knittelvers</keywords>
   <places>
     <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="golgotha" relation="mentioned"/>
+    <place ref="roncesvalles" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2924,6 +3041,11 @@ De Sjæle, Holger elsked meest,
   <title>Felttoget i Orienten</title>
   <firstline>Før fulgte jeg Carolus ved Elben og ved Rhin</firstline>
   <source pages="126-127"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="rhine" relation="mentioned"/>
+    <place ref="himalayas" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2975,6 +3097,11 @@ Selv tog jeg kun Krandsen, skjøn Gloriant mig bandt.
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
   <source pages="128"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3001,6 +3128,9 @@ Arkens Due kom med Oliebladet —
   <title>Afskeden i Bamyan</title>
   <firstline>Tre Dage var jeg atter i Bamyan Gjest</firstline>
   <source pages="129-130"/>
+  <places>
+    <place ref="bamyan" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3062,6 +3192,10 @@ De Sjæle, jeg gjenfavner i Himmerig dog vist.
   </notes>
   <source pages="133-134"/>
   <keywords>knittelvers</keywords>
+  <places>
+    <place ref="himalayas" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3218,6 +3352,11 @@ Jeg vaagned ene. Min Hingst laae død.
   <title>Reisen til Vidunderlandet</title>
   <firstline>Jeg Kroner havde vundet, men gav dem bort igjen</firstline>
   <source pages="139-144"/>
+  <places>
+    <place ref="himalayas" relation="setting"/>
+    <place ref="avalon" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3360,6 +3499,9 @@ Hvor Avalun opstiger af Verdensdybets Søe,
   <title>Festen paa Avalun</title>
   <firstline>I Sommernatsfest paa Morganas Øe</firstline>
   <source pages="145-146"/>
+  <places>
+    <place ref="avalon" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3570,6 +3712,10 @@ Som udfolder sig til Klarhed i mit Liv og i mit Folk.
   <title>Holger ved Mindernes Kilde</title>
   <firstline>Hvor Oberon lever, hiin Hjerterigets Drot</firstline>
   <source pages="154-156"/>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="isefjord" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3636,6 +3782,11 @@ Ud skjød jeg min Snekke; jeg seiled bort igjen —
   </notes>
   <source pages="157-160"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="france" relation="setting"/>
+    <place ref="denmark" relation="setting"/>
+    <place ref="great-britain" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

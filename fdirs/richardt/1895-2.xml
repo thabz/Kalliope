@@ -979,6 +979,7 @@ hen at see ham, før jeg døer!
     <place ref="mount-carmel" relation="mentioned"/>
     <place ref="mount-tabor" relation="mentioned"/>
     <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="tigris" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6121,6 +6122,9 @@ med den, Sankt Stefans Øje saae!
     <event>1877-11-21</event>
   </dates>
   <source pages="183-184"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6623,6 +6627,9 @@ den lukker op for Naaden.
   <linktitle>Asenindens Føl</linktitle>
   <firstline>De flokkedes omkring Ham</firstline>
   <source pages="197-199"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

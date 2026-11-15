@@ -625,6 +625,9 @@ Det er den Skat, der er os ene kiær.
   <firstline>Med Seier krandset stod den svenske Hær</firstline>
   <source pages="264-270" facsimile-pages="295-301"/>
 
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -986,6 +989,10 @@ Hver Livets Malm i din Bölgegrav
   <firstline>Jag stod på kusten af mitt fosterland</firstline>
   <source pages="275-287" facsimile-pages="306-318"/>
 
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3489,6 +3496,9 @@ Og alle til Enighed före!
   <subtitle>(Dansk Folkevise.)</subtitle>
   <firstline>Den Nordsö! det er et uroligt Vand</firstline>
   <source pages="594-597" facsimile-pages="647-650"/>
+  <places>
+    <place ref="north-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

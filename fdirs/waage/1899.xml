@@ -1237,6 +1237,9 @@ og kun kunde dø i Flammer!
   <title>Stavnsbaand</title>
   <firstline>Du skal ære din Fa’r, du skal ære din Mo’r</firstline>
   <source pages="67-68"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1507,6 +1510,7 @@ et Dryp i Nirvanas bundløse Flod!
   <source pages="78-79"/>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="ganges" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

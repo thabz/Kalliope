@@ -814,6 +814,9 @@ sidereis transit patriosque adit inpiger ortus.
 <head>
   <title>Liber II</title>
   <firstline>Regia Solis erat sublimibus alta columnis</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>kilde</quality>
 </head>
 <body>
@@ -11246,6 +11249,9 @@ mutat Horamque vocat, quae nunc dea iuncta Quirino est.
 <head>
   <title>Liber XV</title>
   <firstline>Quaeritur interea quis tantae pondera molis</firstline>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>kilde</quality>
 </head>
 <body>

@@ -693,6 +693,10 @@ vi drikke hans Minde i Dag!
   <title>Guarinos</title>
   <firstline>Der stod en Strid ved Ronceval</firstline>
   <source pages="37-43"/>
+  <places>
+    <place ref="roncesvalles" relation="setting"/>
+    <place ref="zaragoza" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1706,6 +1710,9 @@ mens andre ei forgaae
   <title>Rom</title>
   <firstline>O Vandringsmand! du søger Rom i Rom</firstline>
   <source pages="94-95"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
