@@ -655,7 +655,6 @@ const handle_work = async (work) => {
             stripTitleNotes(indextitle).title,
             textId,
             `${poetId}/${workId}.xml`,
-            { allowOverlines: explicitIndexTitle == null },
           );
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
