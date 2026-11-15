@@ -2834,6 +2834,9 @@ Der Herzallerliebsten Gesicht.
   <title>Auf Flügeln des Gesanges</title>
   <toctitle><num>IX</num>Auf Flügeln des Gesanges</toctitle>
   <firstline>Auf Flügeln des Gesanges</firstline>
+  <places>
+    <place ref="ganges" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -4642,6 +4645,9 @@ Die mich so elend gemacht.
   <title>Wir saßen am Fischerhause</title>
   <toctitle><num>VII</num>Wir saßen am Fischerhause</toctitle>
   <firstline>Wir saßen am Fischerhause</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -7159,6 +7165,9 @@ Und vor Entsetzen bin ich aufgewacht.
 <head>
   <title>Donna Clara</title>
   <firstline>In dem abendlichen Garten</firstline>
+  <places>
+    <place ref="zaragoza" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

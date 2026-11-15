@@ -4612,6 +4612,13 @@ Be it as if I were with you. (Be not too certain but I am now with you.)
 <head>
   <title>Salut au Monde!</title>
   <firstline>O take my hand Walt Whitman!</firstline>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="pyrenees" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -13494,6 +13501,9 @@ Which let us go forth in the bold day and write.
 <head>
   <title>Passage to India</title>
   <firstline>Singing my days</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -18205,6 +18215,9 @@ Hast thou no soul? Can I not know, identify thee?
 <head>
   <title>Old Chants</title>
   <firstline>An ancient song, reciting, ending</firstline>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

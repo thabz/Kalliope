@@ -1171,6 +1171,9 @@ Blodet og Livet strømmed da ud.
   <title>Hinduerens Tro</title>
   <firstline>Lytter Alle til min Tale</firstline>
   <source pages="40-45"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>kilde,side,korrektur1</quality>
 </head>
 <body>
@@ -2880,6 +2883,12 @@ Og sjunge mit Navn for en yngre Old!
   <firstline>I kjender Alle den berømte Cid!</firstline>
   <source pages="107-123"/>
   <!-- Første Kalliope-version efter Carl Bagger: <i>Udvalgte Skrifter</i>, Oskar Schlichtkrull, Holbergselskabet, Kbh., 1928, pp. 213-227. -->
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
+    <place ref="pyrenees" relation="mentioned"/>
+    <place ref="zaragoza" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

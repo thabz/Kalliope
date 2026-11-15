@@ -511,6 +511,9 @@ Som Gjenlyd fra Skyggernes Land!
   <title><num>3.</num>Det Næste jeg mindes</title>
   <firstline>Det Næste jeg mindes</firstline>
   <source pages="19-38"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2791,6 +2794,9 @@ Som flyve i Paradis ind!
   <title><num>8.</num>Det Sidste jeg mindes</title>
   <firstline>Det Sidste jeg mindes</firstline>
   <source pages="111-129"/>
+  <places>
+    <place ref="mount-ararat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

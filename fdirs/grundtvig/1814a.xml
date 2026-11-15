@@ -226,6 +226,9 @@ Herrens Lignelse og Syner skue;
   <places>
     <place ref="roskilde" relation="subject" primary="true"/>
     <place ref="roskilde-cathedral" relation="setting"/>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

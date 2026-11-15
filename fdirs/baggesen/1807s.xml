@@ -3399,6 +3399,8 @@ Den Lov, jeg gav mig selv, den Lov, som frelste mig:
   <places>
     <place ref="rome" relation="subject" primary="true"/>
     <place ref="paris" relation="subject" primary="true"/>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3560,6 +3562,7 @@ Er tilsidst <i>det sande Rom!</i>
     <place ref="rubicon" relation="subject" primary="true"/>
     <place ref="rome" relation="setting"/>
     <place ref="paris" relation="setting"/>
+    <place ref="tiber" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4420,6 +4423,9 @@ Vor Kronprinds <i>Frederiks</i>, hvis Uniform jeg bær!
   </subtitle>
   <firstline>Den er der da, den frygtede blandt Dage</firstline>
   <source pages="295-308"/>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

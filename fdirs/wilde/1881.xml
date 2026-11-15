@@ -77,6 +77,10 @@ God knows it I am with them, in some things.
 <head>
   <title>Ave Imperatrix</title>
   <firstline>Set in this stormy Northern sea</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -934,6 +938,9 @@ Ah, God! Ah, God! those dear Hellenic hours
 <head>
   <title>Rome Unvisited</title>
   <firstline>The corn has turned from grey to red</firstline>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

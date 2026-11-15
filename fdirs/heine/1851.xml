@@ -150,6 +150,9 @@ Unter seinem Regimente.
 <head>
   <title>Der weiße Elefant</title>
   <firstline>Der König von Siam, Mahawasant</firstline>
+  <places>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4939,6 +4942,7 @@ Und nicht auf dem Gipfel.
   <firstline>In Arabiens Märchenbuche</firstline>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

@@ -565,6 +565,9 @@ Ingen, der gaar forbi, véd, hvem han har forladt.
   <title>I Kampagnen</title>
   <firstline>Over de vide Vange stryger fra Ostia Vinden</firstline>
   <source pages="30-31"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

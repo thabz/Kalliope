@@ -113,6 +113,9 @@ The boat has gone.
 <head>
   <title>Mutilation</title>
   <firstline>A thick mist-sheet lies over the broken wheat</firstline>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

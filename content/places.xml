@@ -164,6 +164,11 @@
     <alias>Østerrige</alias>
     <parent ref="europe"/>
   </place>
+  <place id="avalon">
+    <name>Avalon</name>
+    <type>mythical island</type>
+    <alias>Avalun</alias>
+  </place>
   <place id="aversa">
     <name>Aversa</name>
     <wikidata>Q19279</wikidata>
@@ -196,6 +201,11 @@
     <alias>Baltic Sea</alias>
     <alias>Østersø</alias>
     <alias>Østerhav</alias>
+  </place>
+  <place id="bamyan">
+    <name>Bamyan</name>
+    <type>city</type>
+    <alias>Bamiyan</alias>
   </place>
   <place id="basel">
     <name>Basel</name>
@@ -525,6 +535,10 @@
     <alias>Schleswig</alias>
     <note>Historisk sted-entitet passende til Oehlenschlägers »I Slesvig«.</note>
   </place>
+  <place id="ebro">
+    <name>Ebro</name>
+    <type>river</type>
+  </place>
   <place id="eden">
     <name>Eden</name>
     <canonical-name>Garden of Eden</canonical-name>
@@ -562,6 +576,11 @@
     <type>town</type>
     <alias>Puerto de Santa Maria</alias>
     <parent ref="andalusia"/>
+  </place>
+  <place id="elbe">
+    <name>Elben</name>
+    <type>river</type>
+    <alias>Elbe</alias>
   </place>
   <place id="england">
     <name>England</name>
@@ -729,6 +748,10 @@
     <wikidata>Q203942</wikidata>
     <type>mountain</type>
     <parent ref="jotunheimen"/>
+  </place>
+  <place id="ganges">
+    <name>Ganges</name>
+    <type>river</type>
   </place>
   <place id="garigliano-river">
     <name>Garigliano</name>
@@ -1061,6 +1084,10 @@
     <alias>Herschberg</alias>
     <parent ref="schierensee"/>
     <note>Stedet for lysthuset Bellevue ifølge undertitlen til Schmidts »Paa en Pille af Bellevue«, Nytaarsgave for Damer 1795, s. 164. Navneformen er bevaret fra trykket.</note>
+  </place>
+  <place id="himalayas">
+    <name>Himalaya</name>
+    <type>mountain range</type>
   </place>
   <place id="hindsgavl">
     <name>Hindsgavl</name>
@@ -1636,6 +1663,10 @@
     <alias>Morocco</alias>
     <parent ref="africa"/>
   </place>
+  <place id="mount-ararat">
+    <name>Ararat</name>
+    <type>mountain</type>
+  </place>
   <place id="mount-carmel">
     <name>Karmel</name>
     <type>mountain range</type>
@@ -1671,6 +1702,10 @@
     <alias>Olympos</alias>
     <parent ref="greece"/>
     <note>Også brugt om gudernes bolig i græsk mytologi.</note>
+  </place>
+  <place id="mount-sinai">
+    <name>Sinai Bjerg</name>
+    <type>biblical mountain</type>
   </place>
   <place id="mount-tabor">
     <name>Tabor</name>
@@ -1751,6 +1786,10 @@
     <alias>Norderhoug</alias>
     <alias>Norderhovg</alias>
     <parent ref="ringerike"/>
+  </place>
+  <place id="north-sea">
+    <name>Nordsøen</name>
+    <type>sea</type>
   </place>
   <place id="norway">
     <name>Norge</name>
@@ -1920,6 +1959,10 @@
     <alias>Provença</alias>
     <parent ref="france"/>
   </place>
+  <place id="pyrenees">
+    <name>Pyrenæerne</name>
+    <type>mountain range</type>
+  </place>
   <place id="randers">
     <name>Randers</name>
     <wikidata>Q27168</wikidata>
@@ -2024,6 +2067,11 @@
     <wikidata>Q1467860</wikidata>
     <type>region</type>
     <parent ref="norway"/>
+  </place>
+  <place id="roncesvalles">
+    <name>Roncesvalles</name>
+    <type>locality/pass</type>
+    <alias>Ronceval</alias>
   </place>
   <place id="ronciglione">
     <name>Ronciglione</name>
@@ -2458,6 +2506,15 @@
     <alias>Thyland</alias>
     <parent ref="jutland"/>
   </place>
+  <place id="tiber">
+    <name>Tiberen</name>
+    <type>river</type>
+    <alias>Tiber</alias>
+  </place>
+  <place id="tigris">
+    <name>Tigris</name>
+    <type>river</type>
+  </place>
   <place id="tivoli">
     <name>Tivoli</name>
     <wikidata>Q159605</wikidata>
@@ -2725,6 +2782,11 @@
     <name>Worms</name>
     <wikidata>Q3852</wikidata>
     <type>city</type>
+  </place>
+  <place id="zaragoza">
+    <name>Zaragoza</name>
+    <type>city</type>
+    <alias>Saragossa</alias>
   </place>
   <place id="zealand">
     <name>Sjælland</name>

@@ -2,30 +2,52 @@
 <kalliopework id="1837h" author="ingemann" status="complete" type="poetry">
 <workhead>
   <title>Holger Danske</title>
+  <subtitle>Et Digt</subtitle>
   <year>1837</year>
-  <quality>korrektur1</quality>
+  <source facsimile="1837h" facsimile-pages-num="171" facsimile-pages-offset="1">
+    <author id="ingemann">B. S. Ingemann</author>
+    <title>Holger Danske. Et Digt</title>
+    <place>Kjøbenhavn</place>
+    <publisher>Andreas Seidelin</publisher>
+    <printer>Andreas Seidelin, Hof- og Universitets-Bogtrykker</printer>
+    <year>1837</year>
+  </source>
+  <pictures>
+    <picture type="titlepage" src="1837h-p1.jpg">
+      <transcription>Holger Danske. // Et Digt / af / B. S. Ingemann. // Kjøbenhavn 1837. / Trykt og forlagt af Andreas Seidelin, / Hof- og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-15T18:45:44.588251+00:00"/>
+  </proofreadings>
+  <pagebreaks/>
+  <errata status="applied" pages="[upagineret]" facsimile-pages="165"/>
 </workhead>
 <workbody>
 
 <section level="1">
 <head>
-  <toctitle>I. Hjemmet. Udgang i Verden.</toctitle>
+  <toctitle>I. Hjemmet. Udgang i Verden</toctitle>
 </head>
 <content>
 
 <text id="ingemann1837ha1">
 <head>
   <title>Hilsen til Frænderne</title>
-  <firstline>Vær hilset, mit gamle Fædreland!</firstline>
+  <firstline>Vær hilset, mit gamle Fædreland</firstline>
+  <source pages="5-6"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1</quality>
+  <places>
+    <place ref="denmark" relation="subject"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Vær hilset, mit gamle Fædreland!
   Du kjender mig vel ei ganske?
 Engang jeg var en navnkundig Mand:
-  De kaldte mig <i>Holger Danske</i>.
+  De kaldte mig <b>Holger Danske</b>.
 
 Med mig drev Lykken et underligt Spil:
   Hvert Barn mit Navn skulde kjende;
@@ -37,7 +59,7 @@ Mit Liv blev givet et sælsomt Kaar:
 Og død kan jeg synes i tusind Aar,
   Men dog i Løndom mig rører.
 
-Jeg lever i Danskens Hjerte og Sind,
+<pb n="6" facs="006.jpg"/>Jeg lever i Danskens Hjerte og Sind,
   Jeg lever paa Folkets Tunge.
 Kom ei jeg i Verdenskrøniken ind,
   Dog Skjaldene om mig sjunge.
@@ -52,7 +74,7 @@ Mit Navn hver Bonde kjender endnu,
 Mit Levnet kommer hver Dansk ihu,
   Som glædes ved Folkeaanden.
 
-Du veed det, Landsmand! Jeg er ei død:
+Du veed det, Landsmand! jeg er ei død:
   Med Kraft jeg kommer tilbage;
 Jeg er din fuldtroe Hjelper i Nød
   Paa Dannemarks gamle Dage.
@@ -67,36 +89,30 @@ Jeg er din fuldtroe Hjelper i Nød
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="7"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Hvergang jeg seer over Marken,
-Hvor Kæmpehøien end staaer,
+  Hvor Kæmpehøien end staaer,
 Mit tusindaars Hjerte sig rører
-Alt som jeg var elleve Aar.
+  Alt som jeg var elleve Aar.
 
 Jeg maa opstige paa Høien
-Og see paa de Stene graae;
+  Og see paa de Stene graae;
 Paa mægtige Overligger
-Jeg atter mig hvile maa.
+  Jeg atter mig hvile maa.
 
 Og suser der over Skoven
-I Bøgenes Fødeland,
+  I Bøgenes Fødeland,
 Og bruser det dybt fra Voven,
-Jeg nikker til Skov og Strand.
+  Jeg nikker til Skov og Strand.
 
 Ret aldrig Hjertet forgjetter
-Den Høi, den Skov og den Strand -
+  Den Høi, den Skov og den Strand.
 Endnu har min Sjæl dog hjemme
-I Kæmpernes Fædreland
+  I Kæmpernes Fædreland.
 </poetry>
 </body>
 </text>
@@ -104,41 +120,35 @@ I Kæmpernes Fædreland
 <text id="ingemann2002011503">
 <head>
   <title>Fordum og nu</title>
-  <firstline>Kæmperne var heelt vilde</firstline>
+  <firstline>Kæmperne vare heelt vilde</firstline>
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="8"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Kæmperne var heelt vilde;
-De Karle jeg mindes vel.
+Kæmperne vare heelt vilde;
+  De Karle jeg mindes vel.
 De meente det dog ei ilde
-Fordi de slog Folk ihjel.
+  Fordi de slog Folk ihjel.
 
-De brummed med Skæg om Munden;
-Men ærlig var deres Id.
+De brummed med Skjæg om Munden;
+  Men ærlig var deres Id.
 Godmodig var dog igrunden
-Min Landsmand fra Arilds Tid.
+  Min Landsmand fra Arilds Tid.
 
-Nu er mine Børn heelt tamme:
-Nu brumme de kun saa smaat.
+Nu er mine Børn heelt tamme;
+  Nu brumme de kun saa smaat.
 Men Blodet er dog det samme:
-End kæmpe de ganske godt.
+  End kæmpe de ganske godt.
 
 Nu er de heelt fine og snilde,
-Nu Tiden har dem poleert;
+  Nu Tiden har dem poleert;
 Mit Folk dog ei mener det ilde
-Fordi de har sig barbeert.
+  Fordi det har sig barbeert.
 </poetry>
 </body>
 </text>
@@ -147,7 +157,8 @@ Fordi de har sig barbeert.
 <head>
   <title>Sangens Fugl</title>
   <firstline>Til Sagn og Sange og Eventyr</firstline>
-  <quality>korrektur1</quality>
+  <source pages="9"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -172,44 +183,37 @@ Hvor Sangen trænger til Barnets Sind
 <text id="ingemann2005051101">
 <head>
   <title>Holgers Sang om hans Moder</title>
-  <firstline>Jeg sprang til Verden - jeg var ej sen -</firstline>
-  <source pages="14">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Jeg sprang til Verden; jeg var ei seen</firstline>
+  <source pages="10-11"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg sprang til Verden - jeg var ej sen -
-   Jeg sprælled paa Moders Skød,
-Min Styrke volded min Moder Men:
-   Hun favned mig og - var død.
+Jeg sprang til Verden; jeg var ei seen;
+  Jeg sprælled paa Moders Skjød.
+Min Styrke volded min Moder Meen:
+  Hun favned mig og — var død.
 
 Den Dag, de gav mig i Verden Navn,
-   Kær Moder paa Baaren laa;
+  Kjær Moder paa Baaren laae;
 Den eneste Gang, hun tog mig i Favn,
-   Jeg mangen Gang tænkte paa.
+  Jeg mangengang tænkte paa.
 
 Jeg greb kun efter Livet med Lyst:
-   Hvad Verden mig gav, jeg tog;
-Jeg died ved tvende Ammers Bryst;
-   Den ene kun lidt forslog.
+  Hvad Verden gav mig, jeg tog;
+Jeg died ved tvende Ammers Bryst:
+  Den Ene kun lidt forslog.
 
-Fuldstærk jeg blev ved de stærkes Barm,
-   Fulddansk ved det danske Brød;
-Men kærligst favned mig dog hin Arm,
-   Som favned mig stiv og død.
+Fuldstærk jeg blev ved de Stærkes Barm,
+  Fulddansk ved det danske Brød;
+Men kjærligst favned mig dog hiin Arm,
+  Som favned mig stiv og død.
 
-En Krigsmand blev jeg, helt barsk og streng;
-   Dog blev jeg om Hjertet blød,
-Hver Gang jeg skued en liden Dreng,
-   Som sprælled paa Moders Skød.
+<pb n="11" facs="011.jpg"/>En Krigsmand blev jeg, heelt barsk og streng;
+  Dog blev jeg om Hjertet blød,
+Hvergang jeg skued en liden Dreng,
+  Som sprælled paa Moders Skjød.
 </poetry>
 </body>
 </text>
@@ -218,8 +222,13 @@ Hver Gang jeg skued en liden Dreng,
 <head>
   <title>Holger Danskes Vugge</title>
   <firstline>Ved Leire græsse nu Faar paa Vold</firstline>
+  <source pages="12-13"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1</quality>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="zealand" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -243,7 +252,7 @@ I Vuggen hørte jeg Harpers Klang
 Det var de danske Skjalde, der sang
   Om Kæmpedrotter paa Leire.
 
-I Vuggen smelted en Sang i mit Bryst,
+<pb n="13" facs="013.jpg"/>I Vuggen smelted en Sang i mit Bryst,
   Liig Havfrustemmer fra Voven:
 Det var de danske Jomfruers Røst
   Fra Fruersalen i Skoven.
@@ -263,34 +272,31 @@ Og hvergang jeg hørte Skjoldets Klang
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="14"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Hvad Holger Danske hørte og saae,
-Han aned i Barne-Drømme.
+Hvad Holger Danske hørte og saae
+  Han aned i Barne-Drømme.
 Hvad Skjæbne jeg skulde i Verden faae
 Blev sjunget mig, der jeg i Vuggen laae
-Ved Isefjordsbølgernes Strømme.
+  Ved Isefjordsbølgernes Strømme.
 
 De Toner jeg kunde ei selv forstaae;
-De klang baade stærke og ømme;
+  De klang baade stærke og ømme;
 Men Ammerne sad og lyded derpaa.
 Jeg strakte ud mine Hænder smaa
-Og greb efter Syner i Drømme.
+  Og greb efter Syner i Drømme.
 
 Jeg Bjerge med deilige Slotte saae
-Paa tonende Skyer svømme;
+  Paa tonende Skyer svømme;
 Opslog jeg Øiet, var Himlen blaa,
-De flyvende Skyer peged jeg paa -
-Til Liv blev de levende Drømme.
+De flyvende Skyer peged jeg paa.
+  Til Liv blev de levende Drømme.
 </poetry>
 </body>
 </text>
@@ -298,56 +304,52 @@ Til Liv blev de levende Drømme.
 <text id="ingemann2005051102">
 <head>
   <title>Feerne ved Holgers Vugge</title>
-  <firstline>Seks Feer stod ved min Vugge og sang</firstline>
-  <source pages="16-18">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Sex Feer stod ved min Vugge og sang</firstline>
+  <source pages="15-16"/>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Seks Feer stod ved min Vugge og sang;
-Det underfuldt gennem mit Liv genklang.
+Sex Feer stod ved min Vugge og sang;
+Det underfuldt gjennem mit Liv gjenklang.
 
 Om Nordens Kraft og Fædrenes Mod
 Klang Kæmpesangen til Marv og Blod.
 
 Den toned stolt med Valkyrierøst
-Fra <w>Gloriandes</w> pansrede Bryst.
+Fra <b>Gloriandes</b> pantsrede Bryst.
 
-Og Sværdet, min Haand paa <w>Ronceval</w> svang,
+Og Sværdet, min Haand paa <b>Ronceval</b> svang,
 Alt klirred i Skjoldmøens Vuggesang.
 
-Hvad Tid og Stund det store maa ske,
-Det ved den gunstige Lejligheds Fe:
+Hvad Tid og Stund det Store maa skee,
+Det veed den gunstige Leiligheds Fee:
 
-Vis, <w>Palestina</w> ved Vuggen sang
+Viis <b>Palestina</b> ved Vuggen sang
 Om Klarhed i Tidernes dunkle Gang.
 
 Og rolig i Verdens fredløse Id
-Jeg greb Bedriftens gunstige Tid.
+Jeg greeb Bedriftens gunstige Tid.
 
-Om Sejrens Lykke, om Laurens Krans
-Sang <w>Pharamunda</w> i Morgenglans.
+<pb n="16" facs="016.jpg"/>Om Seirens Lykke, om Laurens Krands
+Sang <b>Pharamunda</b> i Morgenglans.
 
-Men <w>Meliora</w> gav lystigt Sind:
+Men <b>Meliora</b> gav lystigt Sind,
 Hun aanded Roser paa Barnets Kind.
 
-<w>Persina</w> hvisked, kærlig og øm,
-Om Kærlighedslykkens anende Drøm.
+<b>Persina</b> hvisked, kjærlig og øm,
+Om Kjærlighedslykkens anende Drøm.
 
 Men Dybets Dyb i Naturens Bryst
-Fuldtonig klang i <w>Morganas</w> Røst.
+Fuldtonig klang i <b>Morganas</b> Røst.
 
 Hvad Tryllerøst sang mig i Sjælen ind,
 Blev Tryllegaver i Barnets Sind.
 
-Til Idræt voksed, med Liv og Lyst,
+Til Idræt voxed, med Liv og Lyst,
 Hvad Feerne saaede med Sang i mit Bryst.
 </poetry>
 </body>
@@ -357,44 +359,40 @@ Hvad Feerne saaede med Sang i mit Bryst.
 <head>
   <title>Anelsen i Guder-Lunden</title>
   <firstline>I Herthas susende Skove</firstline>
-  <source pages="18-19">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="17-18"/>
+  <places>
+    <place ref="isefjord" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I Herthas susende Skove
-   Stod gamle Guder af Sten.
-Ved Issefjorddybets Vove
-   Laa blodige Offerben.
+  Stod gamle Guder af Steen.
+Ved Isefjorddybets Vove
+  Laa blodige Offerben.
 Der strenge Norner henfore
-   Ved Nat over Borg og Hav;
+  Ved Nat over Borg og Hav;
 Og Røster, alvorlig store,
-   Udgik fra Kæmpernes Grav.
+  Udgik fra Kæmpernes Grav.
 
 Men naar det rødmed i Øster,
-   Og Fuglen i Skoven sang,
+  Og Fuglen i Skoven sang,
 Der tusind mildere Røster
-   Igennem Naturen klang.
+  Igjennem Naturen klang.
 Det hvisked i Offerlunden,
-   Hvor Holger Danske blev fød:
-,,Ny Jord af Hav er oprunden -
-   Den gamle Verden er død!''
+  Hvor Holger Danske blev fød:
+”Ny Jord af Hav er oprunden —
+  Den gamle Verden er død.”
 
-Jeg sad hos de stærke Ammer
-   Paa Borgen ved Skov og Fjord;
+<pb n="18" facs="018.jpg"/>Jeg sad hos de stærke Ammer
+  Paa Borgen ved Skov og Fjord;
 Jeg lytted i dunkle Kammer
-   Til Sangen om gamle Nord.
+  Til Sangen om gamle Nord.
 Den Sang vel aldrig jeg glemmer:
-   Den klang mig som Nornerøst:
+  Den klang mig som Nornerøst;
 Dog dybest klang mig de Stemmer,
-   Som lønligst smelted mit Bryst.
+  Som lønligst smelted mit Bryst.
 </poetry>
 </body>
 </text>
@@ -402,81 +400,82 @@ Dog dybest klang mig de Stemmer,
 <text id="ingemann2005051104">
 <head>
   <title>Holgers Sang om Wittekind</title>
-  <firstline>I Trug paa Issefjordvoven</firstline>
-  <source pages="19-21">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>I Trug paa Isefjordvoven</firstline>
+  <notes>
+    <note>Den store Saxernes Høvding; han blev overvunden af Keiser Carl den Store, og søgte Tilflugt og Hjelp hos Kong Gøttrik i Danmark, som efter Krønikerne var Holger Danskes Fader, og som paa den Tid, da han bestreed Carl den Store, her antages at have været den mægtigste Fyrste i Danmark og beklædet Overkongethronen paa Leire.</note>
+  </notes>
+  <source pages="19-21"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="isefjord" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-I Trug paa Issefjordvoven
-   Jeg gynged mangen Stund:
+I Trug paa Isefjordvoven
+  Jeg gynged mangen Stund;
 Og Ulveungen fra Skoven
-   Den blev Holger Danskes Hund.
+  Den blev Holger Danskes Hund.
 Jeg rusked Bæstet i Øre;
-   Vi sad under Bord med Lyst.
+  Vi sad under Bord med Lyst.
 Der fik jeg en Dag at høre
-   Den store Wittekinds Røst.
+  Den store Wittekinds Røst.
 
-Jeg saa hin Kæmpe, fuldmodig,
-   Ved Lejrekongens Bord.
-Men Kæmpens Hjælm var blodig;
-   Han mæled og saa mod Jord:
-,,Mig fulgte Guder til Sejre;
-   Nu er jeg en hjemløs Gæst:
-Mig fulgte kun til Lejre
-   Mit Sværd og min gode Hest.
+Jeg saae hiin Kæmpe, fuldmodig,
+  Ved Leirekongens Bord.
+Men Kæmpens Hjelm var blodig;
+  Han mæled og saae mod Jord:
+”Mig fulgte Guder til Seire;
+  ”Nu er jeg en hjemløs Giest:
+”Mig fulgte kun til Leire
+  ”Mit Sværd og min gode Hest.”
 
-,,For Irminsulens Ære
-   Jeg blødte mangen Gang.
-Jeg knuste Kejserens Hære;
-   Mit Navn havde mægtig Klang.
-For første Gang jeg leder
-   Om Værn mod Mandevold;
-Med Blusel Wittekind beder
-   Om Skærm under Daneskjold.''
+<pb n="20" facs="020.jpg"/>”For Irminsulens<footnote>Den store saxiske Afguds Billede.</footnote> Ære
+  ”Jeg blødte mangen Gang.
+”Jeg knuste Keiserens Hære;
+  ”Mit Navn havde mægtig Klang.
+”For første Gang jeg leder
+  ”Om Værn mod Mandevold;
+”Med Blusel Wittekind beder
+  ”Om Skjærm under Daneskjold.”
 
-Dankongen brat sig rejser;
-   Han mæler et mægtigt Ord:
-,,Jeg værger dig mod hver Kejser
-   Og mod hver Jætte paa Jord.
-Lad komme tusind Hære!
-   Lad lyne al Verdens Spjud!
-Ved Thor og Dankongens Ære!
-   Jeg jager min Gæst ej ud.''
+Dankongen brat sig reiser;
+  Han mæler et mægtigt Ord:
+”Jeg værger dig mod hver Keiser
+  ”Og mod hver Jætte paa Jord.
+”Lad komme tusind Hære!
+  ”Lad lyne al Verdens Spjud!
+”Ved Thor og Dankongens Ære!
+  ”Jeg jager min Giest ei ud.”
 
-Det Ord blev ej til Skamme:
-   Kong Gøttrik i Harnisk for.
-Mod Kejserens Oriflamme
-   Han kæmped med Tyr og Thor.
-Karl vendte brat sin Ganger;
-   Det blev ham en blodig Dag.
-Til Hævn han knuste Fanger
-   Og Guder med Økseslag.
+Det Ord blev ei til Skamme:
+  Kong Gøttrik i Harnisk foer.
+Mod Keiserens Oriflamme<footnote>Det hellige Banner, siden de franske Kongers Palladium.</footnote>
+  Han kæmped med Tyr og Thor.
+<pb n="21" facs="021.jpg"/>Carl vendte brat sin Ganger;
+  Det blev ham en blodig Dag.
+Til Hævn han knuste Fanger<footnote>4500 hedenske Saxer.</footnote>
+  Og Guder med Øxeslag.
 
-En Dag i Lejre-Hallen
-   Stod Sakslands Wittekind:
-,,Nu Irminsulen er falden!
-   Min Gud var døv og blind.
-Han aldrig mer sig rejser:
-   Os knuste Kristgudens Fod;
-<w>Han</w> bøjer mig ved den Kejser,
-   Som døber Verden i Blod.''
+En Dag i Leire-Hallen
+  Stod Saxlands Wittekind:
+”Nu Irminsulen er falden;
+  ”Min Gud var døv og blind.
+”Han aldrig meer sig reiser:
+  ”Os knuste Christgudens Fod;
+”<b>Han</b> bøier mig ved den Keiser,
+  ”Som døber Verden i Blod.”
 
 Der Holger Danske var liden,
-   Han hørte Wittekinds Ord.
+  Han hørte Wittekinds Ord.
 Det Ord jeg tyded siden;
-   Jeg saa den mægtiges Spor.
-Højt Kirketaarnet knejser,
-   Hvor Irminsulen stod;
-Men Dankongen trodsed den Kejser,
-   Som døbte Verden i Blod.
+  Jeg saae den Mægtiges Spor.
+Høit Kirketaarnet kneiser,
+  Hvor Irminsulen stod;
+Men Dankongen trodsed den Keiser,
+  Som døbte Verden i Blod.
 </poetry>
 </body>
 </text>
@@ -488,42 +487,40 @@ Men Dankongen trodsed den Kejser,
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="22-23"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="lejre" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Kong Gøttrik sad ene paa Leire Borg,
-Og mørk var Dankongens Sind.
+  Og mørk var Dankongens Sind.
 Den Stund, jeg blev fød, jeg voldte ham Sorg:
-Ret aldrig han klapped min Kind.
+  Ret aldrig han klapped min Kind.
 
 Ret aldrig han saae paa Sønnen med Lyst,
-Der voldte sin Moders Død.
+  Der voldte sin Moders Død.
 Hvergang han hørte min stærke Røst,
-Han ønsked jeg ei var fød.
+  Han ønsked, jeg var ei fød.
 
 Dankongen gav mig i Stifmoders Magt;
-Den Nød jeg døied dog kort:
+  Den Nød jeg døied dog kort:
 Kong Gøttrik svoer med Keiseren Pagt;
-Mig gav han til Gidsel bort.
+  Mig gav han til Gidsel bort.
 
 Jeg voxte op i Keiserens Gaard,
-Langt borte fra Danmarks Strand;
+  Langt borte fra Danmarks Strand;
 Men hvergang Svalen qviddred om Vaar,
-Den sang om mit Fædreland.
+  Den sang om mit Fædreland.
 
-Og hvergang Sommerens Lærke sang,
-Og Svanen seiled i Sø,
+<pb n="23" facs="023.jpg"/>Og hvergang Sommerens Lærke sang,
+  Og Svanen seiled i Sø,
 Jeg tænkte paa Danmarks Sangfuglevang
-Og Havet ved Bøgenes Ø.
+  Og Havet ved Bøgenes Øe.
 </poetry>
 </body>
 </text>
@@ -531,64 +528,61 @@ Og Havet ved Bøgenes Ø.
 <text id="ingemann2005051106">
 <head>
   <title>Daaben i Rin</title>
-  <firstline>Der fløj gennem Verden en Tanke</firstline>
-  <source pages="22-23">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Der fløi gjennem Verden en Tanke</firstline>
+  <source pages="24-25"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <places>
+    <place ref="rhine" relation="setting"/>
+    <place ref="ingelheim-am-rhein" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Der fløj gennem Verden en Tanke;
-   Dens Vinge var blodig rød:
-<w>Carolus</w>, hin store Franke,
-   Har voldet sin Broders Død.
+Der fløi gjennem Verden en Tanke;
+  Dens Vinge var blodig rød:
+<b>Carolus</b>, hiin store Franke,
+  Har voldet sin Broders Død.
 
-Jeg saa ham en Pinsemorgen;
-   Der døbtes Sakser i Rin.
+Jeg saae ham en Pindsemorgen;
+  Der døbtes Saxer i Rhin.
 Han kom fra Ingelheim-Borgen
-   Alt med Mester Alcuin.
+  Alt med Mester Alcuin.
 
 I Bog var Britten hans Mester;
-   Men Drotten var størst blandt Mænd.
-Blandt Skjalde, Vismænd og Præster
-   Han knæled med Sværd ved Lænd.
+  Men Drotten var størst blandt Mænd.
+Blandt Skjalde, Viismænd og Præster
+  Han knæled med Sværd ved Lænd.
 
 Jeg kunde hans Andagt høre,
-   Mens Sværdet mod Stenen klang;
-Men sært mig skurred i Øre,
-   Hvad Fuglen i Løndom sang.
+  Mens Sværdet mod Stenen klang;
+Men sært mig skurred i Øre
+  Hvad Fuglen i Løndom sang.
 
-Jeg skøtter ej Kejserens Trone.
-   Jeg sparker hans Tro med Fod,
+<pb n="25" facs="025.jpg"/>Jeg skjøtter ei Keiserens Throne,
+  Jeg sparker hans Tro med Fod,
 Klæber der ved hans Krone
-   En Draabe af Broderblod.
+  En Draabe af Broderblod.
 
-Jeg saa Carolus i Øjet;
-   Det var som en aaben Bog.
-Jeg saa, hans Tro var ej løjet;
-   <w>Den</w> Drot sin Broder ej slog.
+Jeg saae Carolus i Øiet:
+  Det var som en aaben Bog.
+Jeg saae, hans Tro var ei løiet:
+  <b>Den</b> Drot sin Broder ei slog.
 
-Jeg saa den mægtiges Pande;
-   Jeg æred den Højheds Aand,
+Jeg saae den Mægtiges Pande;
+  Jeg æred den Høiheds Aand,
 Der tvang Longobarders Lande
-   Og lagde Vildmænd i Baand.
+  Og lagde Vildmænd i Baand.
 
-Mod Karl blev Kæmper til Dværge;
-   Dog mildt var hans Øjesyn.
-Med Troen, som løfter Bjærge,
-   Hans Blik mig slog som et Lyn.
+Mod Carl blev Kæmper til Dværge;
+  Dog mildt var hans Øiesyn.
+Med Troen, som løfter Bjerge,
+  Hans Blik mig slog som et Lyn.
 
-Jeg kunde det ej udgranske;
-   Det gik over <w>min</w> Forstand:
-I Rinen sprang Holger Danske -
-   Sprang op som en Kristenmand.
+Jeg kunde det ei udgrandske;
+  Det gik over <b>min</b> Forstand:
+I Rhinen sprang Holger Danske —
+  Sprang op som en Christenmand.
 </poetry>
 </body>
 </text>
@@ -597,65 +591,58 @@ I Rinen sprang Holger Danske -
 <head>
   <title>Skriveren og Kejserens Datter</title>
   <firstline>Jeg stod en Vinteraften i Frankernes Stad</firstline>
-  <source pages="23-25">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="26-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg stod en Vinteraften i Frankernes Stad
-   Ved den fremmede Flod.
-Kejseren var kommen. Aachenseren var glad.
-   Blandt Væbnerne jeg stod;
-Holger Danske var Kejserens Gissel.
+  Ved den fremmede Flod.
+Keiseren var kommen. Aachenseren var glad.
+  Blandt Væbnerne jeg stod;
+Holger Danske var Keiserens Gidsel.
 
-Det glimted over Floden fra Kejserens Gaard;
-   Der var Dans; der var Spil.
-Lettest fløj Prinsessen med Perler i sit Haar;
-   Med Gammen saa jeg til;
-Men lyksaligst var Kejserens Skriver.
+Det glimted over Floden fra Keiserens Gaard.
+  Der var Dands; der var Spil.
+Lettest fløi Prindsessen med Perler i sit Haar;
+  Med Gammen saae jeg til.
+Men lyksaligst var Keiserens Skriver.
 
-Prinsessen dansed dejligt i Skriverens Arm
-   Paa det straalende Slot.
-<w>Alor</w> Longobarden stod bleg og gul af Harm
-   Men jeg dem undte godt:
-Skønne Viser sang Kejserens Skriver.
+Prindsessen dandsed deiligt i Skriverens Arm
+  Paa det straalende Slot.
+<b>Alor</b> Longobarden stod bleeg og guul af Harm;
+  Men jeg dem undte godt:
+Skjønne Viser sang Keiserens Skriver.
 
-Jeg stod i Vinternatten ved Fruernes Hal
-   Paa den nyfaldne Sne.
-<w>Emma</w> skjalv for Æren; hun bæved for sin Skjald;
-   Det ingen maatte se -
-Hun fra Buret bar Kejserens Skriver.
+<pb n="27" facs="027.jpg"/>Jeg stod i Vinternatten ved Fruernes Hald
+  Paa den nyfaldne Snee.
+<b>Emma</b> skjalv for Æren; hun bæved for sin Skjald;
+  Det Ingen maatte see:
+Hun fra Buret bar Keiserens Skriver.
 
-I Natten paa Altanen jeg Kejseren saa;
-   Han ej mæled et Ord.
-<w>Alor</w> Longobarden stod gul og saa derpaa;
-   Men Døden jeg ham svor.
-Longobarden bar Kejserens Banner.
+I Natten paa Altanen jeg Keiseren saae;
+  Han ei mæled et Ord.
+<b>Alor</b> Longobarden stod guul og saae derpaa;
+  Men Døden jeg ham svoer.
+Longobarden bar Keiserens Banner.
 
 Jeg gik den anden Aften i Frankernes Stad
-   Blandt Drabanternes Hær.
-Kejseren i Raadet hos Ærkebispen sad;
-   Paa Borgen blinked Sværd.
-Der var mørkt i den mægtiges Haller.
+  Blandt Drabanternes Hær.
+Keiseren i Raadet hos Ærkebispen sad;
+  Paa Borgen blinked Sværd.
+Der var mørkt i den Mægtiges Haller.
 
-Jeg hørte, hvor de mumled i Frankernes Maal
-   Ved den fremmede Flod.
-<w>Alor</w> Longobarden red gul og bleg i Staal;
-   Jeg Frankerne forstod;
-Højt de mumled om Kejserens Vrede.
+Jeg hørte hvor de mumled i Frankernes Maal
+  Ved den fremmede Flod.
+<b>Alor</b> Longobarden reed guul og bleeg i Staal;
+  Jeg Frankerne forstod;
+Høit de mumled om Keiserens Vrede.
 
-Jeg stod den tredje Aften i Kejserens Gaard
-   Ved den straalende Hal.
-Kejserens Datter bar Brudekrans i Haar -
-   Og Brudgom var hans Skjald.
-Hele Verden saa <w>Eginhards</w> Lykke.
+<pb n="28" facs="028.jpg"/>Jeg stod den tredie Aften i Keiserens Gaard
+  Ved den straalende Hal.
+Keiserens Datter bar Brudekrands i Haar,
+  Og Brudgom var hans Skjald.
+Hele Verden saae <b>Eginhards</b> Lykke.
 </poetry>
 </body>
 </text>
@@ -665,7 +652,7 @@ Hele Verden saa <w>Eginhards</w> Lykke.
 
 <section level="1">
 <head>
-  <toctitle>II. Holgers Ungdom.</toctitle>
+  <toctitle>II. Holgers Ungdom</toctitle>
 </head>
 <content>
 
@@ -677,77 +664,74 @@ Hele Verden saa <w>Eginhards</w> Lykke.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="31-33"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Kong Gøttrik brød Tro og Love,
-Og Keiseren var os gram.
+Kong Gøttrik brød Tro og Love<footnote>Efter Krønikerne havde Kong Gøttrik skamskændet enten Keiserens Gesandter eller Gidslerne.</footnote>,
+  Og Keiseren var os gram.
 Jeg kunde for Harm ei sove,
-Og rød var min Kind af Skam.
+  Og rød var min Kind af Skam.
 
 Jeg fulgte den store Keiser
-Til Rom mod Barbarers Vold.
+  Til Rom mod Barbarers<!-- Rettelsesark: Barbarers] Avarers --> Vold.
 Med Keiserens Banner kneiser
-Lombarden med Drage-Skjold.
+  <b>Lombarden</b> med Drage-Skjold.
 
 Jeg saae paa Lombardens Øie,
-Han tænkte paa Svig og Sned.
-Jeg agted paa Skjelmen nøie:
-I Dyst han Banneret smed.
+  Han tænkte paa Sviig og Sneed.
+Jeg agted paa Skjælmen nøie:
+  I Dyst han Banneret smeed.
 
-Hver Christen veg med de Franske;
-De Vantroe med Seir foer frem.
-Ei ænsed de Holger Danske;
-Mit Glavind dog sang med Klem.
+<pb n="32" facs="032.jpg"/>Hver Christen veeg med de Franske;
+  de Vantroe<!-- Rettelsesark: de Vantroe] Avaren --> med Seir foer frem.
+Ei ændsed de Holger Danske;
+  Mit Glavind dog sang med Klem.
 
 Det sang for Lombardens Øre,
-Og Sjælen med Gru han slap.
-- Lad mig Standarden nu føre!
-Jeg sprang paa hans Ganger rap.
+  Og Sjælen med Gru han slap.
+— Lad mig Standarten nu føre!
+  Jeg sprang paa hans Ganger rap.
 
-Hans Guldhjelm dækked mig Panden,
-Hans Brynie klang om mit Bryst.
+Hans Guldhjelm dækked mig Panden;
+  Hans Brynie klang om mit Bryst.
 Gjenfunden var Bannersmanden;
-Hans Skjold var fremmerst i Dyst.
+  Hans Skjold var fremmerst i Dyst.
 
-Høit pristes Lombarder-Skjelmen;
-Jeg svinged hans Bannerstang.
+Høit pristes Lombarder-Skjælmen;
+  Jeg svinged hans Bannerstang.
 Jeg loe paa Dansk under Hjelmen,
-Og atter mit Glavind sang.
+  Og atter mit Glavind sang.
 
 Det sang, som Liigklokken ringer,
-Hvor Vildmænd Keiseren bandt.
-Fri, svang sig Carl paa min Springer,
-Og store Seier vi vandt.
+  Hvor Vildmænd Keiseren bandt.
+Fri svang sig Carl paa min Springer,
+  Og store Seier vi vandt.
 
-For Seiren priste de Franske
-Lombarden, jeg gav sin Rest;
+<pb n="33" facs="033.jpg"/>For Seiren priste de Franske
+  Lombarden, jeg gav sin Rest;
 Bag Hjelmen loe Holger Danske:
-Jeg kjendte Lombarden bedst.
+  Jeg kjendte Lombarden bedst.
 
 Ei kjendte mig Keiserens Øie;
-Han var mig til Døden gram.
+  Han var mig til Døden gram.
 Mit Knæ saa maatte jeg bøie;
-Jeg Ridderslaget fornam:
+  Jeg Ridderslaget fornam:
 
-,,Lombard! Du var tro og ærlig,
-Og Mod du har som en Fransk;
-Som Tydsken du hjalp mig kjærlig,
-Og ei som en troløs Dansk.'' -
+”Lombard! du var tro og ærlig,
+  ”Og Mod du har som en Fransk;
+”Som Tydsken du hjalp mig kjærlig,
+  ”Og ei som en troløs Dansk” —
 
 Op sprang jeg med Fryd og Smerte,
-Jeg nævned mit danske Navn;
-Brat smelted Keiserens Hjerte -
-Han tog Holger Danske i Favn.
+  Jeg nævned mit danske Navn;
+Brat smelted Keiserens Hjerte —
+  Han tog Holger Danske i Favn.
 </poetry>
 </body>
 </text>
@@ -755,34 +739,30 @@ Han tog Holger Danske i Favn.
 <text id="ingemann2005051105">
 <head>
   <title>Holger Danskes Bro</title>
-  <firstline>Karl sejred ved Romas Porte</firstline>
-  <source pages="27">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Carl seired ved Romas Porte</firstline>
+  <source pages="34"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Karl sejred ved Romas Porte,
-   Og Holger Danske var med.
-Paa Hingste vilde og sorte,
-   For Ørknens Sønner af Sted.
+Carl seired ved Romas Porte,
+  Og Holger Danske var med.
+Paa Hingste, vilde og sorte,
+  Foer Ørknens Sønner afsted.
 
-Barbaren svinged sin Lanse
-   Med kristne Hoveder paa.
-Jeg lærte min Hingst at danse
-   Paa Purpur og Silke blaa.
+Barbaren<!-- Rettelsesark: Barbaren] Avaren --> svinged sin Landse
+  Med christne Hoveder paa.
+Jeg lærte min Hingst at dandse
+  Paa Purpur og Silke blaa.
 
 I Purpur og Silkeklæder
-   Laa Lig under Hestesko.
-Den Vej til Sejer og Hæder
-   Blev kaldt Holger Danskes Bro.
+  Laae Liig under Hestesko.
+Den Vei til Seier og Hæder
+  Blev kaldt Holger Danskes Bro.
 </poetry>
 </body>
 </text>
@@ -794,71 +774,69 @@ Den Vej til Sejer og Hæder
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="35-37"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg saae Fyrst Carvel ved Tiberens Rand;
-Paa Spyd ham naaede min Handske.
+Jeg saae Fyrst <b>Carvel</b> ved Tiberens Rand;
+  Paa Spyd ham naaede min Handske.
 Jeg stævned den asiatiske Mand
-Til Holmgang med Holger Danske.
+  Til Holmgang med Holger Danske.
 
-Fyrst Carvel red til sit gyldne Telt,
-Der sad den indiske Skjønne:
-,,Den bedste Ridder og største Helt
-Skal Hindostans Lillie lønne!''
+Fyrst Carvel reed til sit gyldne Telt;
+  Der sad den indiske Skjønne:
+”Den bedste Ridder og største Helt
+  ”Skal Hindostans Lillie lønne.”
 
 Trompeter skingred fra Hær til Hær;
-I Midten flød Tiberens Vove.
+  I Midten flød Tiberens Vove.
 Høit mellem Hærenes Banner og Spær
-Laa Øen med Olieskove.
+  Laae Øen med Olieskove.
 
 Paa Øen fegted vi, Bryn mod Bryn,
-Og Gnister foer os af Øie;
+  Og Gnister foer os af Øie;
 I Luften mødtes Sværdenes Lyn:
-Stor Hede maatte vi døie.
+  Stor Hede maatte vi døie.
 
-Den deilige Gloriant saae derpaa;
-I Lokkerne fletted hun Krandsen.
+<pb n="36" facs="036.jpg"/>Den deilige Gloriant saae derpaa;
+  I Lokkerne fletted hun Krandsen.
 Med Seirherren skulde Prindsessen gaae
-Fra Valen til Bryllupsdandsen.
+  Fra Valen til Bryllupsdandsen.
 
-Fra Teltet saae hun vort Ridderspil -
-Mig undte hun ei saa ilde;
+Fra Teltet saae hun vort Ridderspil!
+  Mig undte hun ei saa ilde;
 Men Ørknens Ridder blikked hun til
-Med Øine kjærlighedsmilde.
+  Med Øine kjærlighedsmilde.
 
 Alt fik jeg til Asiaten Ram,
-Da blinked Landser fra Skoven;
-Hans Venner frelste hans Liv med Skam -
-Til Skændsel blev Ridderloven.
+  Da blinked Landser fra Skoven;
+Hans Venner frelste hans Liv med Skam;
+  Til Skændsel blev Ridderloven.
 
 Dog før jeg faldt i de Vantroes Vold,
-Det kosted blodige Pander;
-Mod Fyrsten jeg kyled mit knuste Skjold:
-,,Slig Seier min Gud forbander!''
+  Det kosted blodige Pander;
+Mod Fyrsten jeg slyed mit knuste Skjold:
+  ”Slig Seier min Gud forbander.”
 
-Jeg saae hans Kind: den var rød som Blod -
-Jeg Flammen saae i hans Øie.
+Jeg saae hans Kind: den var rød som Blod,
+  Jeg Flammen saae i hans Øie.
 Hvad stolt han mæled, jeg ei forstod;
-Jeg agted hans Ære føie.
+  Jeg agted hans Ære føie.
 
-Brat Fyrsten jeg paa Araberen saae;
-Den fløi som med Svalevinger.
+<pb n="37" facs="037.jpg"/>Brat Fyrsten jeg paa Araberen saae;
+  Den fløi som med Svalevinger.
 Hvor Flodens dybeste Strømme gaae,
-Bortsvømmed Ørkenens Springer.
+  Bortsvømmed Ørkenens Springer.
 
 De Vantroe studsed. Der var stor Larm.
-Kun lidet glæded dem Seiren:
+  Kun lidet glæded dem Seiren:
 Fyrst Carvel kjøled i Floden sin Harm;
-Han svømmed til - Christenleiren.
+  Han svømmed til — Christenleiren.
 </poetry>
 </body>
 </text>
@@ -866,59 +844,52 @@ Han svømmed til - Christenleiren.
 <text id="ingemann2005051201">
 <head>
   <title>Holger og Prinsesse Gloriant</title>
-  <firstline>Blandt Hedninger laa jeg i Bast og Baand</firstline>
-  <source pages="29-31">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Blandt Hedninger laae jeg i Bast og Baand</firstline>
+  <source pages="38-39"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Blandt Hedninger laa jeg i Bast og Baand;
-   Jeg bandte de vantro Sjæle.
-Da løstes jeg af saa dejlig en Haand,
-   Og mildere blev mit Mæle.
+Blandt Hedninger laae jeg i Bast og Baand;
+  Jeg bandte de vantroe Sjæle.
+Da løstes jeg af saa deilig en Haand,
+  Og mildere blev mit Mæle.
 
-Prinsesse Gloriant for mig stod;
-   Fra Kinden løfted hun Sløret.
+Prindsesse Gloriant for mig stod;
+  Fra Kinden løfted hun Sløret.
 Hun Lyren slog ved sin Fanges Fod;
-   Helt sødt det klang mig i Øret.
+  Heelt sødt det klang mig i Øret.
 
-Hun sang om Ørknens ranke Søn,
-   Hun sang om sin hjertenskære.
-Hun sang om Kærligheds skønne Løn;
-   Hun sang om Troskab og Ære.
+Hun sang om Ørkenens ranke Søn,
+  Hun sang om sin Hjertenskjære.
+Hun sang om Kjærligheds skjønne Løn;
+  Hun sang om Troskab og Ære.
 
-Hun sang om den elskedes Blomsterbrev:
-   Nys kom det paa Duens Vinge.
-Et Laurbærblad hun fra Myrten rev;
-   Det skulde hun Dansken bringe:
+Hun sang om den Elskedes Blomsterbrev:
+  Nys kom det paa Duens Vinge.
+Et Laurbærblad hun fra Myrthen rev;
+  Det skulde hun Dansken bringe:
 
-,,Min Ørn er fløjet til Kejserens Haand;
-   Selv bandt han sin Fod med Ære:
-Til Nordens Bjørn er løst af sit Baand,
-   Vil Ørnen Lænkerne bære.''
+<pb n="39" facs="039.jpg"/>”Min Ørn er fløiet til Keiserens Haand;
+  ”Selv bandt han sin Fod med Ære:
+”Til Nordens Bjørn er løst af sit Baand,
+  ”Vil Ørnen Lænkerne bære.”
 
-Jeg lytted til den dejliges Røst;
-   Jeg saa i de Øjne sorte;
+Jeg lytted til den Deiliges Røst;
+  Jeg saae i de Øine sorte;
 I Fangetaarnet sad jeg med Lyst;
-   Skønt klang mig Fængselets Porte.
+  Skjønt klang mig Fængselets Porte.
 
-Med Alvor mænged jeg Skæmt iblandt:
-   Jeg priste mit Bur med Gammen.
+Med Alvor mænged jeg Skjemt iblandt:
+  Jeg priste mit Bur med Gammen.
 Jeg æred Ørnen, som selv sig bandt;
-   Med Magt saa dulgte jeg Flammen.
+  Med Magt saa dulgte jeg Flammen.
 
-Jeg saa paa Prinsessen rolig og mild,
-   Hver Gang hun sang i mit Fængsel;
-Men - aldrig var jeg i hedere Ild,
-   Og aldrig i større Trængsel.
+Jeg saae paa Prindsessen rolig og mild,
+  Hver Gang hun sang i mit Fængsel;
+Men — aldrig var jeg i hedere Ild,
+  Og aldrig i større Trængsel.
 </poetry>
 </body>
 </text>
@@ -930,34 +901,28 @@ Men - aldrig var jeg i hedere Ild,
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="40"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Sjæle-Gammen i min Trængsel,
-   Hvor de milde Toner klang!
+  Hvor de milde Toner klang!
 Kjære Lyd af rustne Hængsel!
-   Solglimt gjennem dunkle Gang!
+  Solglimt gjennem dunkle Gang!
 Deilighed i skumle Fængsel,
-   Hvor den vantroe Skjønne sang!
+  Hvor den vantroe Skjønne sang!
 Sjæle-Gammen i min Trængsel,
-   Hvor de milde Toner klang.
+  Hvor de milde Toner klang!
 
 Fryd og Trængsel hos Veninden
-   Med den underfulde Røst!
+  Med den underfulde Røst!
 Ild i Sjælen! Smiil paa Kinden!
-   Spøg paa Læben! Storm i Bryst!
-Fred foruden - Kamp forinden -
-   Det var Smerte - Det var Lyst.
+  Spøg paa Læben! Storm i Bryst!
+Fred foruden — Kamp forinden —
+  Det var Smerte; det var Lyst.
 Fryd og Trængsel hos Veninden
-   Med den underfulde Røst!
+  Med den underfulde Røst!
 </poetry>
 </body>
 </text>
@@ -969,41 +934,35 @@ Fryd og Trængsel hos Veninden
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="41-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 De Døgn, jeg sad i Fængsel, jeg giver ei bort
-For en Sommer fuldskjøn i det Grønne;
+  For en Sommer fuldskjøn i det Grønne;
 Mig Dagen var stakket, og Natten var kort:
-Jeg tænkte paa den fremmede Skjønne.
+  Jeg tænkte paa den fremmede Skjønne.
 
 Hver Dag jeg hørte Sangen fra Gloriants Bryst,
-Og min Sjæl var som Fugl i det Grønne.
+  Og min Sjæl var som Fugl i det Grønne.
 Om Natten jeg drømte om Sangen med Lyst;
-Jeg drømte om den fremmede Skjønne.
+  Jeg drømte om den fremmede Skjønne.
 
 Jeg tænkte med al Ære; jeg drømte med Tugt,
-Som en Fugl om en Blomst i det Grønne.
+  Som en Fugl om en Blomst i det Grønne.
 Kun Ulv spiler Kloen, naar Lammet er smukt;
-Men Ridder bærer Sværd for de Skjønne.
+  Men Ridder bærer Sværd for de Skjønne.
 
 Hver Aften hun mig bandt i mit Fangenskabs Baand;
-Jeg det bar som en Falk i det Grønne.
+  Jeg det bar som en Falk i det Grønne.
 Min Læbe kun rørte den Deiliges Haand;
-Da rødmed vel den fremmede Skjønne.
+  Da rødmed vel den fremmede Skjønne.
 
-Hver Morgen, naar hun løste sin Fange af Baand,
-Var hun selv som en Fugl i det Grønne.
+<pb n="42" facs="042.jpg"/>Hver Morgen, naar hun løste sin Fange af Baand,
+  Var hun selv som en Fugl i det Grønne.
 Hun smiled og sang, og hun rakte mig Haand;
-Min Elskov var dog stum hos den Skjønne.
+  Min Elskov var dog stum hos den Skjønne.
 </poetry>
 </body>
 </text>
@@ -1012,7 +971,11 @@ Min Elskov var dog stum hos den Skjønne.
 <head>
   <title>Det Skjønneste</title>
   <firstline>Til Rosengaarden gik jeg i Jomfruens Baand</firstline>
-  <quality>korrektur1</quality>
+  <source pages="43"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1042,92 +1005,41 @@ Meer skjønt dog var Jomfruens tindrende Blik,
 <text id="ingemann1837ha5">
 <head>
   <title>Gloriants Priis</title>
-  <firstline>Haand! du deilige Haand, som leged paa Strænge!</firstline>
-  <quality>korrektur1</quality>
+  <firstline>Haand! du deilige Haand, som leged paa Strænge</firstline>
+  <source pages="44-45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Haand! du deilige Haand, som leged paa Strænge!
 Under dig bæved Strængerne saligt og længe.
-  Svimmel endnu
-  Kommer min Sjæl dig ihu,
+        Svimmel endnu
+        Kommer min Sjæl dig ihu,
 Haand! du deilige Haand, som leged paa Strænge!
 
 Røst! du herlige Røst! dybttonende Stemme!
 Aldrig den fangne Ridder kunde dig glemme.
-  Hvor du henklang,
-  Smelted du Hierter i Sang -
+        Hvor du henklang,
+        Smelted du Hjerter i Sang —
 Røst! du herlige Røst! dybttonende Stemme!
 
 Barm! blufærdige Barm, som strengt dig tilhylled,
 Medens dit Hav af Toner Fangen fortrylled!
-  Drømme blev Sang,
-  Fulgte din bølgende Gang,
+        Drømme blev Sang,
+        Fulgte din bølgende Gang,
 Barm! blufærdige Barm, som strengt dig tilhylled!
 
-Øine! deilige Øie, funklende, sorte!
+<pb n="45" facs="045.jpg"/>Øine! deilige Øine, funklende, sorte!
 I eders Blik var Glands fra Himmerigs Porte.
-  Fast i den Glands
-  Gik jeg fra Samling og Sands -
-Øine! deilige Øie, funklende, sorte!
+        Fast i den Glands
+        Gik jeg fra Samling og Sands —
+Øine! deilige Øine, funklende, sorte!
 
 Sjæl! du flyvende Sjæl! du kjærlige høie!
 Du var i Haand og i Røst, i Barm og i Øie.
-  Dig jeg endnu
-  Kommer graahærdet ihu -
+        Dig jeg endnu
+        Kommer graahærdet ihu —
 Sjæl! du flyvende Sjæl! du kjærlige høie!
-</poetry>
-</body>
-</text>
-
-<text id="ingemann2002011514">
-<head>
-  <title>Holgers Drøm i Fængslet</title>
-  <firstline>Ei Sol i Taarnet jeg skimted</firstline>
-  <notes>
-    <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
-  </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
-</head>
-<body>
-<poetry>
-Ei Sol i Taarnet jeg skimted
-Ei Luft eller lyse Strand;
-I Sjælen dog Sollys glimted:
-Den fløi til mit Fædreland.
-
-Naar Fangen lukte sit Øie,
-Min Sjæl blev en vinget Dreng;
-Den fløi mellem Kæmpehøie
-Ved Hav over Sjølunds Eng.
-
-Hvad Skjønt jeg skimted i Drømme
-Dengang jeg i Vuggen laae,
-Opdukked af Livets Strømme,
-Naar dybt i dets Væld jeg saae.
-
-Jeg hørte de gamle Sange
-Om Kæmpernes Liv i Nord;
-Jeg glemte, jeg selv var Fange:
-Jeg fulgte Kæmpernes Spor.
-
-Jeg fløi med Slægternes Sjæle
-Igjennem ufødte Tid,
-Og selv Aartusinders Mæle
-Besang mine Fædres Id.
-
-Jeg var en lyksalig Fange:
-Et Folk mig slutted i Favn;
-Og stolt i Fremtidens Sange
-Jeg hørte mit danske Navn.
 </poetry>
 </body>
 </text>
@@ -1135,72 +1047,70 @@ Jeg hørte mit danske Navn.
 <text id="ingemann2002011505">
 <head>
   <title>Holger Danske og Burmand</title>
-  <firstline>Her klang til Danmark en Kæmpesang</firstline>
+  <firstline>Der klang til Danmark en Kæmpesang</firstline>
   <notes>
-    <note editorial="true">Se folkevisen <xref poem="folke2018040401"/>.</note>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="46-48"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Her klang til Danmark en Kæmpesang
-Om Burmand og Holger Danske.
-Der Burmand jeg hilsed første Gang
-Det skete med Staal og Handske.
+Der klang til Danmark en Kæmpesang
+  Om Burmand og Holger Danske<footnote>See <a poem="folkeviser2026111413">Kæmpevisen hos Peder Syv</a>.</footnote>.
+Der Burmand jeg hilsed første Gang,
+  Det skete med Staal og Handske.
 
-Det gjaldt Klenodet for større Glands,
-End Kronen, Keisere bære:
+Det gjaldt Klenodet med større Glands,
+  End Kronen, Keisere bære:
 Det gjaldt den favreste Brudekrands
-Og Jomfru Gloriants Ære.
+  Og Jomfru Gloriants Ære.
 
 For Klaffer græd Jomfru Gloriant;
-Jeg saae den Deiliges Jammer.
+  Jeg saae den Deiliges Jammer.
 For Æren jeg satte mit Hoved i Pant;
-Jeg sprang fra mit Fængselskammer.
+  Jeg sprang fra mit Fængselskammer.
 
 Jeg mødte Kæmpens glubende Blik;
-Min Handske fløi mod hans Tunge:
-Jeg vilde ham lære - med bedre Skik
-Om ædle Jomfruer sjunge.
+  Min Handske fløi mod hans Tunge:
+Jeg vilde ham lære med bedre Skik
+  Om ædle Jomfruer sjunge.
 
-Ret aldrig hørte jeg værre Mund;
-Ei saae jeg sortere Beiler:
+<pb n="47" facs="047.jpg"/>Ret aldrig hørte jeg værre Mund;
+  Ei saae jeg sortere Beiler:
 Med Burmands Mæle tuder en Hund,
-Naar Maanen i Skyen seiler.
+  Naar Maanen i Søen seiler.
 
 Med Tænder bed han mit Ridderpant;
-Vildt flammed Øinenes Lue.
-Jeg red mod Lybiens Elefant
-Til Kamp for Hindostans Due.
+  Vildt flammed Øinenes Lue.
+Jeg reed mod Lybiens Elefant
+  Til Kamp for Hindostans Due.
 
 Vi stred paa Øen i Tiberens Flod
-I Olieskovenes Skygge.
+  I Olieskovenes Skygge.
 Paa Kinden randt mig det unge Blod;
-Men det var mit Hæderssmykke.
+  Men det var mit Hæderssmykke.
 
 Prindsesse Gloriant saae derpaa;
-Fjernt saae det Krigernes Hære.
+  Fjernt saae det Krigernes Hære.
 Den sorte Burmand blev rød og blaa
-Alt for den Deiliges Ære.
+  Alt for den Deiliges Ære.
 
 Tre Dage skifted vi Hug og Stik;
-Vi drabelig Landserne svunge.
+  Vi drabelig Landserne svunge.
 Dog Burmand aldrig med bedre Skik
-Fik lært at beile og sjunge.
+  Fik lært at beile og sjunge.
 
-Hans krumme Klinge var fra Damask;
-Hans Stridshingst var af de Spanske.
-Mit Glavind splintred hans Pandebrask -
-Det Glavind var af de Danske.
+<pb n="48" facs="048.jpg"/>Hans krumme Klinge var fra Damask;
+  Hans Stridshingst var af de Spanske.
+Mit Glavind splintred hans Pandebrask —
+  Det Glavind var af de Danske.
 </poetry>
 </body>
 </text>
@@ -1212,76 +1122,73 @@ Det Glavind var af de Danske.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="49-51"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Burmand laae paa Tiberøen,
-Svømmed i sit sorte Blod.
+  Svømmed i sit sorte Blod.
 Holger hilsed Fyrstemøen;
-Hos min døde Hingst jeg stod.
+  Hos min døde Hingst jeg stod.
 
 Over Kæmpen foer den Spanske,
-Hingsten med det ædle Blod.
+  Hingsten med det ædle Blod.
 Paa dens Ryg sprang Holger Danske,
-Svømmed over Tibrens Flod.
+  Svømmed over Tiberns Flod.
 
 Fængslet vented mig før Aften;
-Vel jeg kom mit Ord ihu.
+  Vel jeg kom mit Ord ihu.
 Rask henrev mig Ungdomskraften:
-Sol var langt fra Hav endnu.
+  Sol var langt fra Hav endnu.
 
 Hingsten sprang til Keiserleiren;
-Kort jeg var min Keisers Gjest.
+  Kort jeg var min Keisers Giest.
 Til mit Fangetaarn, trods Seiren,
-Vendte jeg min spanske Hest.
+  Vendte jeg min spanske Hest.
 
-Hil jer! - klang min Røst mod Leiren -
-Lykken fulgte mig idag.
-Roland! hent imorgen  Seiren!
-Sving den store Keisers Flag!
+<pb n="50" facs="050.jpg"/>Hil Jer! — klang min Røst mod Leiren —
+  Lykken fulgte mig idag.
+Roland! hent imorgen Seiren!
+  Sving den store Keisers Flag!
 
 Følg ham, Jævnings-Tylvt af Helte!
-Iver! Oliver! Turpin!
+  Iver! Oliver! Turpin!
 Hertug Samson! stram dit Bælte!
-Sving dit Ridderspær, Gerin!
+  Sving dit Ridderspær, Gerin!
 
-Raske Ottum! Slyng din Landse!
-Op, hver Løve, stærk og stor!
+Raske Ottum! slyng din Landse!
+  Op, hver Løve, stærk og stor!
 Wolter! lad din Ganger dandse!
-Reis dig, Ridderskabets Flor!
+  Reis dig, Ridderskabets Flor!
 
 Og der Holgers Røst forstummed,
-Bruste Leiren, som et Hav.
+  Bruste Leiren, som et Hav.
 Kampens stærke Løver brummed;
-Carl et mægtigt Vink dem gav.
+  Carl et mægtigt Vink dem gav.
 
 Roland svinged Oriflammen;
-Hæren reiste sig med Lyst.
+  Hæren reiste sig med Lyst.
 Til mit Fangetaarn med Gammen
-Red jeg rask med Solen Dyst.
+  Reed jeg rask med Solen Dyst.
 
-Atter knirked Taarnets Hængsel;
-Fjernt Prindsessen for mig sang.
+<pb n="51" facs="051.jpg"/>Atter knirked Taarnets Hængsel;
+  Fjernt Prindsessen for mig sang.
 Holger drømte glad i Fængsel,
-Vaktes brat ved Vaabenklang.
+  Vaktes brat ved Vaabenklang.
 
 Det var Keiserleirens Helte,
-Roland, Oliver, Turpin;
-Mure hørte jeg dem vælte -
-Det var Samson og Gerin.
+  Roland, Oliver, Turpin;
+Mure hørte jeg dem vælte —
+  Det var Samson og Gerin.
 
 Der blev Jubel efter Trængsel:
-Keiser Carl var Pavens Gjest.
-Roland sprængte Holgers Fængsel -
-Jeg kom med til Kroningsfest.
+  Keiser Carl var Pavens Giest.
+Roland sprængte Holgers Fængsel —
+  Jeg kom med til Kroningsfest.
 </poetry>
 </body>
 </text>
@@ -1290,37 +1197,33 @@ Jeg kom med til Kroningsfest.
 <head>
   <title>Kroningsdagen</title>
   <firstline>Der var Pragt i Pavestaden</firstline>
-  <source pages="38-39">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="52"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Der var Pragt i Pavestaden;
-   Alle Romas Klokker klang.
+  Alle Romas Klokker klang.
 Der var Glædeslarm paa Gaden;
-   Alle Romas Klerker sang.
+  Alle Romas Klerker sang.
 
 Paven satte Verdenskronen
-   Paa den største Kejsers Haar.
-Holger Danske stod ved Tronen,
-   Hvor St. Peders-Stolen staar.
+  Paa den største Keisers Haar.
+Holger Danske stod ved Thronen,
+  Hvor St. Peders-Stolen staaer.
 
 Roland stod ved Holgers Side
-   Og Fyrst Karvel uden Baand.
+  Og Fyrst Carvel uden Baand.
 Ørknens Søn med Ord fuldblide
-   Rakte mig sin Heltehaand.
+  Rakte mig sin Heltehaand.
 
-Skønne Øjne paa os hviled;
-   Der var Elskovsblik iblandt.
-Men blandt alle skønne smiled
-   Skønnest Jomfru Gloriant.
+Skjønne Øine paa os hviled;
+  Der var Elskovsblik iblandt.
+Men blandt alle Skjønne smiled
+  Skjønnest Jomfru Gloriant.
 </poetry>
 </body>
 </text>
@@ -1328,55 +1231,53 @@ Men blandt alle skønne smiled
 <text id="ingemann2002011502">
 <head>
   <title>Brudeparret</title>
-  <firstline>Keiseren undte Fyrst Carvel det godt</firstline>
+  <firstline>Keiseren undte Fyrst Carvel godt</firstline>
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="53-54"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Keiseren undte Fyrst Carvel det godt:
-Han vilde til Daab ham tvinge;
+Keiseren undte Fyrst Carvel godt:
+  Han vilde til Daab ham tvinge;
 Med Daab han loved ham Lehn og Slot.
-Det agted Hedningen ringe:
+  Det agted Hedningen ringe:
 
-,,Frihed er bedre i Tigerens Ørk,
-End Lænker i Herskerens Sale!''
+”Frihed er bedre i Tigerens Ørk,
+  End Lænker i Hjertens Sale.”
 Brat Keiserens store Pande blev mørk;
-Det var ham en dristig Tale.
+  Det var ham en dristig Tale.
 
 Keiseren saae Jomfru Gloriant;
-Han nikked til Holger Danske:
-,,Eders er Jomfrukrandsen, I vandt -
-I greb den med Ridderhandske.''
+  Han nikked til Holger Danske:
+”Eders er Jomfrukrandsen, I vandt —
+  I greb den med Ridderhandske.”
 
 Holger blev som et dryppende Blod;
-Til Jorden slog jeg mit Øie:
-,,Er Keiser Carl Holger Danske god,
-En Bøn saa vil I mig føie.''
+  Til Jorden slog jeg mit Øie:
+”Er Keiser Carl Holger Danske god,
+  En Bøn saa vil I mig føie.”
 
-Keiseren nikked. Jeg blev fuldglad:
-,,Hr. Keiser! Und mig en Gammen!
+<pb n="54" facs="054.jpg"/>Keiseren nikked. Jeg blev fuldglad:
+  ”Hr. Keiser! und mig en Gammen!
 Lad mig ei skille de Sjæle ad,
-Vor Herre vil have tilsammen!
+  Vor Herre vil have tilsammen!”
 
-,,Vil I høre min førte Bøn,
-Tving ei til Troen den Brave!
+”Vil I høre min første Bøn,
+  Tving ei til Troen den Brave!
 Giv Hindostans Mø til Ørkenens Søn!
-Og gjør ikke Ørnen til Slave!''
+  Og gjør ei Ørnen til Slave!”
 
 Bønnen hued ei Keiseren stort;
-Dog frie han bød dem bortdrage.
+  Dog frie han bød dem bortdrage.
 De græd ved mit Bryst bag Romas Port;
-Det mindes jeg alle Dage.
+  Det mindes jeg alle Dage.
 </poetry>
 </body>
 </text>
@@ -1384,64 +1285,60 @@ Det mindes jeg alle Dage.
 <text id="ingemann2005051501">
 <head>
   <title>Trylleslottet</title>
-  <firstline>Jeg stod i den venlige Sommerkvæld</firstline>
-  <source pages="40-41">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Jeg stod i den venlige Sommerqvel</firstline>
+  <source pages="55-56"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <places>
+    <place ref="italy" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg stod i den venlige Sommerkvæld
-   Paa Fjældet ved Vælsklands Strande.
-Et Sejl mig vinked et fjernt Farvel
-   Og dukket i blinkende Vande.
+Jeg stod i den venlige Sommerqvel
+  Paa Fjeldet ved Vælsklands Strande.
+Et Seil mig vinked et fjernt Farvel
+  Og dukked i blinkende Vande.
 
-Jeg stirred efter det hvide Sejl;
-   Det svandt, hvor Solranden lued.
-Med Sejlet gled over Havets Spejl
-   Den favreste Jomfru, jeg skued.
+Jeg stirred efter det hvide Seil;
+  Det svandt, hvor Solranden lued.
+Med Seilet gleed over Havets Speil
+  Den favreste Jomfru, jeg skued.
 
-Men se! hvor Sejlet og Solen svandt,
-   Opsteg en Stad for mit Øje:
-Af Bølgen vel tusinde Taarne oprandt
-   Med Kroner og gyldne Fløje.
+Men see! hvor Seilet og Solen svandt,
+  Opsteg en Stad for mit Øie:
+Af Bølgen vel tusind Taarne oprandt
+  Med Kroner og gyldne Fløie.
 
 Og Staden var et eneste Slot,
-   Et Slot af tusind Paladser.
-De spilled i Guldglans og Himmelblaat
-   De himmelstræbende Masser.
+  Et Slot af tusind Palladser.
+De spilled i Guldglands og Himmelblaat
+  De himmelstræbende Masser.
 
-Og Slottet stod paa en himmelsk Ø
-   Paa Bjærgets straalende Tinde.
-Altanen sig spejled i glødende Sø;
-   Der stod den dejligste Kvinde.
+<pb n="56" facs="056.jpg"/>Og Slottet stod paa en himmelsk Øe
+  Paa Bjergets straalende Tinde.
+Altanen sig speiled i glødende Søe;
+  Der stod den deiligste Qvinde.
 
-Saa skøn var ej Jomfru Gloriant;
-   Slig Herlighed Jorden ej kender.
+Saa skjøn var ei Jomfru Gloriant;
+  Slig Herlighed Jorden ei kjender.
 Hun stod i Purpurskyens Gevant,
-   Med Krans i vinkende Hænder.
+  Med Krands i vinkende Hænder.
 
-Jeg saa de bølgende Lokkers Strøm -
-   Det dejlige Hoved var bøjet.
+Jeg saae de bølgende Lokkers Strøm;
+  Det deilige Hoved var bøiet.
 Det var som Naturens dybeste Drøm
-   Var malt den skønne i Øjet.
+  Var malt den Skjønne i Øiet.
 
-Det var mig, som kendte jeg Synet godt
-   Alt fra mine Barndomsdrømme.
-I Skyen saa jeg <w>Morganas</w> Slot;
-   Det svømmed paa Rosenstrømme.
+Det var mig som kjendte jeg Synet godt
+  Alt fra mine Barndomsdrømme.
+I Skyen saae jeg <b>Morganas</b> Slot;
+  Det svømmed paa Rosenstrømme.
 
-Med Skyen den dejliges Billed svandt -
-   Til Luft blev Taarne og Fløje;
+Med Skyen den Deiliges Billed svandt —
+  Til Luft blev Taarne og Fløie;
 Men herligt af Sjælens Dyb det oprandt,
-   Hver Gang jeg lukte mit Øje.
+  Hvergang jeg lukte mit Øie.
 </poetry>
 </body>
 </text>
@@ -1451,46 +1348,39 @@ Men herligt af Sjælens Dyb det oprandt,
 
 <section level="1">
 <head>
-  <toctitle>III. Heltelivet.</toctitle>
+  <toctitle>III. Heltelivet</toctitle>
 </head>
 <content>
 
 <text id="ingemann2005051203">
 <head>
-  <title>Holger Danskes Vej</title>
+  <title>Holger Danskes Vei</title>
   <firstline>Jeg frit mig tumled i Verden om</firstline>
-  <source pages="42">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <source pages="59-60"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg frit mig tumled i Verden om;
-   Jeg fulgte mit danske Sind:
-Den Røst, der ærlig fra Hjærtet kom,
-   I brave Hjerter for ind.
+  Jeg fulgte mit danske Sind:
+Den Røst, der ærlig fra Hjertet kom,
+  I brave Hjerter foer ind.
 
-I Skoven klang det, alt som man sang;
-   Det lærte mig store og smaa;
-Mit Skjold og min Livsang gav jeg dog Klang.
-   Og tog, hvad der fulgte paa.
+I Skoven klang det alt som man sang;
+  Det lærte mig Store og Smaa;
+Mit Skjold og min Livsang gav jeg dog Klang,
+  Og tog hvad der fulgte paa.
 
-Den Hedning gav jeg gerne Gudsfred,
-   Der bed for sin Tro som en Hund.
-Den Kristen smed jeg i Dyndet ned,
-   Der kun havde Troen i Mund.
+Den Hedning gav jeg gjerne Gudsfred,
+  Der beed for sin Tro, som en Hund.
+Den Christen smed jeg i Dyndet ned,
+  Der kun havde Troen i Mund.
 
-Blandt Skovens Ulve tuded jeg ej;
-   Til Snoggang stod jeg min Hu.
-Jeg kom dog længst paa den <w>lige</w> Vej;
-   Den Vej ved Dansken endnu.
+<pb n="60" facs="060.jpg"/>Blandt Skovens Ulve tuded jeg ei;
+  Til Snoggang stod ei min Hu.
+Jeg kom dog længst paa den <b>lige</b> Vei;
+  Den Vei veed Dansken endnu.
 </poetry>
 </body>
 </text>
@@ -1502,38 +1392,32 @@ Jeg kom dog længst paa den <w>lige</w> Vej;
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="61-62"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Saa venlig en Drot jeg aldrig saae
 Som Keiser Carl med de Øine blaae;
-Men saae jeg Carolus i Harm opgløde
+Men saae jeg Carolus i Harm opgløde,
 Jeg før vilde Lybiens Parder møde.
 
 Carolus var stor, dog tilmaade lang;
 Om Panden de nødbrune Lokker hang.
-Hans Hoved var rundt, hans Øine var store;
+Hans Hoved var rundt, hans Øine store;
 Paa Ørnevinger hans Tanker fore.
 
 Hans Kind var skarp, mere bruun, end rød;
 I Spøg han Gangerens Hovsko brød.
-I Kraftleg stod han paa høiest Stade
-Og løfted en Ridder i Staal og Plade.
+I Kraftleeg stod han paa høiest Stade
+Og løfted en Ridder i Staal og Plade. —
 
-I Fyrsternes Raad  var Keiseren størst;
-Hvad stort han saae ophøied han først.
-Han sad blandt Skjalde, Viismænd og Præster,
+I Fyrsternes Raad var Keiseren størst;
+Hvad Stort han saae ophøied han først.
+Han sad blandt Skjalde, Viismænd og Præster
 Og æred hver Tankens og Ordets Mester.
 
-I Dyst var Carl en luende Brand:
+<pb n="62" facs="062.jpg"/>I Dyst var Carl en luende Brand:
 Hans Landse nedlyned Hest og Mand;
 Sit Sværd han svinged med Seiersglæde,
 Og Sværdet gjennemskjar Staal som Klæde.
@@ -1549,58 +1433,51 @@ Mod Aanden, jeg saae i den Stores Øie.
 <text id="ingemann2005051601">
 <head>
   <title>De tolv Jævninger</title>
-  <firstline>Tolv Riddere sad ved Kejserens Bord</firstline>
-  <source pages="43-44">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Tolv Riddere sad ved Keiserens Bord</firstline>
+  <source pages="63-64"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Tolv Riddere sad ved Kejserens Bord;
-Den trettende med dem i Kamp udfor.
-Saa længe jeg red med de tolv i Dyst,
-Indtil vi delte Hæder og Lyst.
+Tolv Riddere sad ved Keiserens Bord;
+Den trettende med dem i Kamp udfoer.
+Saalænge jeg reed med de Tolv i Dyst,
+Indtil vi deelte Hæder og Lyst.
 
-<w>Gert</w> leged med Lanser i Dyst fuldsnild;
-Stolt <w>Engeler</w> red med Sang gennem Ild.
-Naar Hertug <w>Samson</w> i Hal indtren,
-Da rysted baade Planker og Sten.
+<b>Geert</b> leged med Landser i Dyst fuldsnild;
+Stolt <b>Engeler</b> reed med Sang gjennem Ild.
+Naar Hertug <b>Samson</b> i Hal indtreen,
+Da rysted baade Planker og Steen.
 
-I Dystløb kom Ingen Hr. <w>Iver</w> nær;
-<w>Berin</w> kunde gribe det flyvende Spær.
-Hr. <w>Bove</w> oprykked Egen med Rod,
-Og <w>Ottum</w> svømmed som Fisk i Flod.
+I Dystløb kom Ingen Hr. <b>Iver</b> nær;
+<b>Berin</b> kunde gribe det flyvende Spær.
+Hr. <b>Bove</b> oprykked Egen med Rod,
+Og <b>Ottum</b> svømmed som Fisk i Flod.
 
-<w>Gerin</w> skød Ørnen i højest Flugt;
-Grev <w>Wolter</w> sprængte hver Port, som var lukt.
+<b>Gerin</b> skjød Ørnen i høiest Flugt;
+Grev <b>Wolter</b> sprængte hver Port, som var lukt.
 Hvor Jomfruer nikked bag Gitter og Stang,
-Som Fugl over Mur sig <w>Oliver</w> svang.
+Som Fugl over Muur sig <b>Oliver</b> svang.
 
-Den største Jævning var from som stærk:
-<w>Turpin</w> bar Panser og Messesærk;
+<pb n="64" facs="064.jpg"/>Den største Jævning var from som stærk:
+<b>Turpin</b> bar Pantser og Messesærk;
 For Hedningsjælene Bispen bad,
 Naar Krop og Hoved han splitted ad.
 
-Den mindste sad øverst ved Kejserens Bord;
-Hans Navn med Ry gennem Verden for:
-Den mindste Jævning, fuldrask og skøn.
-Var <w>Roland</w>, Kejserens Søstersøn.
+Den Mindste sad øverst ved Keiserens Bord;
+Hans Navn med Ry gjennem Verden foer:
+Den mindste Jævning, fuldrask og skjøn,
+Var <b>Roland</b>, Keiserens Søstersøn.
 
 Naar Roland i Fruerstuen sang,
 I Stegerset alle Smaaterner sprang;
-Men blæste Roland til Strid paa Lur,
-Da gungred i Borgen Port og Mur.
+Men blæste Roland til Strid paa Luur,
+Da gungred i Borgen Port og Muur.
 
 De Jævninger glemmer jeg ingen Stund:
-Hin Bisp var en Mand til Haand som til Mund.
+Hiin Bisp var en Mand til Haand, som til Mund.
 Ret aldrig jeg hører et Horn endnu,
-Min Sjæl jo kommer Roland i Hu.
+Min Sjæl jo kommer Roland ihu.
 </poetry>
 </body>
 </text>
@@ -1609,198 +1486,180 @@ Min Sjæl jo kommer Roland i Hu.
 <head>
   <title>Vaabenhvile</title>
   <firstline>Mod Mænd var Holger lidt mut iblandt</firstline>
-  <source pages="45">
-    <author>B. S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Det Reitzelske Forlag</publisher>
-    <year>1893</year>
-  </source>
+  <source pages="65"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Mod Mænd var Holger lidt mut iblandt,
-   Naar Mænd saa skævt til min Lykke.
-Den Krans, mig de skønnes Hænder bandt,
-   Jeg holdt for mit bedste Smykke.
+  Naar Mænd saae skjævt til min Lykke.
+Den Krands, mig de Skjønnes Hænder bandt,
+  Jeg holdt for mit bedste Smykke.
 
 Blandt Mænd bedst hued mig Vaabenklang,
-   Og Harpetoner blandt Fruer.
-Jeg hørte heller Jomfruers Sang
-   End Skraalet i Drikkestuer.
+  Og Harpetoner blandt Fruer.
+Jeg hørte heller Jomfruers Sang,
+  End Skraalet i Drikkestuer.
 
-Var Sværdet paa Kæmpernes Hjælme slidt,
-   Jeg helst det hvæssed hos Skjalden.
-Blandt Trubadurerne sad jeg tit
-   Med Roland i Fruerhallen.
+Var Sværdet paa Kæmpernes Hjelme slidt,
+  Jeg helst det hvæssed hos Skjalden.
+Blandt Troubadourerne sad jeg tidt
+  Med Roland i Fruerhallen.
 
-Vi undte hverandre Æren fro;
-   Vi saa ej skævt til hinanden.
-Ad Dværgenes Avindsblik vi lo
-   Med Jomfruers Krans paa Panden.
+Vi undte hinanden Æren fro;
+  Vi saae ei skjævt til hinanden.
+Ad Dværgenes Avindsblik vi loe
+  Med Jomfruers Krands paa Panden.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051702">
 <head>
-  <title>Triumfdagen</title>
+  <title>Triumphdagen</title>
   <firstline>Carolus bar Verdenskronen</firstline>
-  <source pages="45-46">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <source pages="66-67"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <places>
+    <place ref="paris" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Carolus bar Verdenskronen;
-   Han holdt Triumf i Paris.
-Tre Fyrster knæled for Tronen;
-   Højt Skjaldene sang hans Pris.
+  Han holdt Triumph i Paris.
+Tre Fyrster knæled for Thronen;
+  Høit Skjaldene sang hans Priis.
 
-Blandt Trubadurernes Klynge
-   Jeg stod i den høje Hal.
+Blandt Troubadourernes Klynge
+  Jeg stod i den høie Hal.
 Jeg hørte Eginhard synge;
-   Han var en lyksalig Skjald.
+  Han var en lyksalig Skjald.
 
 Jeg priste Skriverens Lykke,
-   Som Kejserens Datter vandt.
-Selv bar jeg paa Hjælmens Smykke
-   Skøn Gloriants Venskabs-Pant.
+  Som Keiserens Datter vandt.
+Selv bar jeg paa Hjelmens Smykke
+  Skjøn Gloriants Venskabs-Pant.
 
-Jeg saa paa den store Kejser
-   Og Kongerne ved hans Fod.
-Først Maurerkongen sig rejser;
-   Hans Aasyn var rødt som Blod.
+Jeg saae paa den store Keiser
+  Og Kongerne ved hans Fod.
+Først Maurerkongen sig reiser;
+  Hans Aasyn var rødt som Blod.
 
-Han trued med Hævnerblikke,
-   Men Troskabseden han svor.
-Jeg troede <w>Argoland</w> ikke:
-   Med Harm han sluged hvert Ord.
+<pb n="67" facs="067.jpg"/>Han trued med Hævnerblikke,
+  Mens Troskabseden han svor.
+Jeg troede <b>Argoland</b> ikke:
+  Med Harm han sluged hvert Ord.
 
-Lombarderkongen stod bøjet;
-   Fast mindre troede jeg ham:
-Jeg saa <w>Desider</w> i Øjet;
-   Det gløded med dulgte Skam.
+Lombarderkongen stod bøiet;
+  Fast mindre troede jeg ham:
+Jeg saae <b>Desider</b> i Øiet;
+  Det gløded med dulgte Skam.
 
-Den tredje Fyrste helt mægtig
-   Opløfted sin Kæmpehaand.
+Den tredie Fyrste heelt mægtig
+  Opløfted sin Kæmpehaand.
 Hans Ed mig tyktes fuldvægtig;
-   Han svor med frimodig Aand.
+  Han svor med frimodig Aand.
 
-Ham saa jeg, da jeg var liden
-   Og sad med Ulv under Bord.
+Ham saae jeg, da jeg var liden
+  Og sad med Ulv under Bord.
 Nu stod jeg Roland ved Siden
-   Og hørte <w>Wittekinds</w> Ord.
+  Og hørte <b>Wittekinds</b> Ord.
 
-Jeg kunde min Fryd ej dæmpe;
-   Han svor ved den kristne Tro.
-I Knæ sank Tyskernes Kæmpe,
-  For op som en Ridder fro.
+Jeg kunde min Fryd ei dæmpe;
+  Han svor ved den christne Tro.
+I Knæ sank Tydskernes Kæmpe,
+  Foer op som en Ridder fro.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051701">
 <head>
-  <title>Løftet i Lejren</title>
-  <firstline>Kejseren gav mig Borg og Len</firstline>
-  <source pages="47-49">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <title>Løftet i Leiren</title>
+  <firstline>Keiseren gav mig Borg og Lehn</firstline>
+  <source pages="68-71"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Kejseren gav mig Borg og Len
-   Dertil stor Magt og Ære;
-Ej heller var jeg til Orlog sen;
-   Jeg maatte hans Banner bære.
+Keiseren gav mig Borg og Lehn
+  Dertil stor Magt og Ære;
+Ei heller var jeg til Orlog seen;
+  Jeg maatte hans Banner bære.
 
-Brudt var Lombardens Pagt og Ed;
-   Fjernt Maurerkongen fnyste.
-Med Hæder Kejserens Ørne stred;
-   Højt Roland i Kampen lyste.
+Brudt var Lombardens Pagt og Eed;
+  Fjernt Maurerkongen fnyste.
+Med Hæder Keiserens Ørne stred;
+  Høit Roland i Kampen lyste.
 
-Sejren omfløj min Bannerstang,
-   Og Lykkens Fugl min Lanse.
-Paa Borgen Dronningens Møer sang -
-   De smykked min Hjælm med Kranse.
+Seiren omfløi min Bannerstang,
+  Og Lykkens Fugl min Landse:
+Paa Borgen Dronningens Møer sang
+  De smykked min Hjelm med Krandse.
 
-Herrerne saa lidt skævt i Løn,
-   Naar Jomfrusang mig priste;
-Og mindst forlysted Kejserens Søn
-   Den Hæder, han selv forliste.
+Herrerne saae lidt skjævt i Løn,
+  Naar Jomfrusang mig priste;
+Og mindst forlysted Keiserens Søn
+  Den Hæder, han selv forliste.
 
-<w>Carlot</w> var Kejserens Øjesten;
-   Hans Sjæl var Glød og Flamme.
-Mod Himlen knejsed den unge Gren
-   Fra Jordens højeste Stamme.
+<pb n="69" facs="069.jpg"/><b>Carlot</b> var Keiserens Øiesteen;
+  Hans Sjæl var Glød og Flamme.
+Mod Himlen kneised den unge Green
+  Fra Jordens høieste Stamme.
 
-Blæste Roland ved Sejrens Fest,
-   Blev Carlots Blik helt vilde;
-Naar Prinsen sad paa sin Faders Hest,
-   Ham Verden tyktes for lille.
+Blæste Roland ved Seirens Fest,
+  Blev Carlots Blik heelt vilde;
+Naar Prindsen sad paa sin Faders Hest,
+  Ham Verden tyktes for lille.
 
-Kejseren gav jeg glad mit Ord;
-   Det Ord blev svært at holde:
-Ung Carlots Liv trygt Værge jeg svor,
-   Til Holgers Lemmer blev kolde.
+Keiseren gav jeg glad mit Ord;
+  Det Ord blev svært at holde:
+Ung Carlots Liv trygt Værge jeg svoer
+  Til Holgers Lemmer blev kolde.
 
-Carlots Moder en Dag jeg saa;
-   Hun vinked bleg fra Svalen.
-Prinsen for i sin Rustning blaa
-   Med Hæren gennem Dalen.
+Carlots Moder en Dag jeg saae;
+  Hun vinked, bleeg fra Svalen.
+Prindsen foer i sin Rustning blaae
+  Med Hæren igjennem Dalen.
 
-Dejlig blinked i Staalets Glans
-   Den Helt med Jomfrulemmer;
-For Rolands og Holger Danskes Krans
-   Selv Verdenskronen han glemmer.
+Deilig blinked i Staalets Glands
+  Den Helt med Jomfrulemmer;
+For Rolands og Holger Danskes Krands
+  Selv Verdenskronen han glemmer.
 
-Carlot i Slaget vildt fremfor;
-   Sit Liv han agted føje.
-Den Ven, der hjalp ham, Døden han svor;
-   Han blødte med Lyn i Øje.
+<pb n="70" facs="070.jpg"/>Carlot i Slaget vildt fremfoer;
+  Sit Liv han agted føie.
+Den Ven, der hjalp ham, Døden han svoer;
+  Han blødte med Lyn i Øie.
 
-Lidet jeg ænset Drengens Harm;
-   Jeg sejred mod hans Vilje;
+Lidet jeg ændsed Drengens Harm:
+  Jeg seired mod hans Villie;
 Jeg vristed ham ud af Dødens Arm;
-   Han blegned alt som en Lilje.
+  Han blegned alt som en Lilie.
 
 Sværdet han greb fra Jorden brat;
-   Dets Lyn mig for mod Panden.
+  Dets Lyn mig foer mod Panden.
 I Pant jeg havde min Ære sat:
-   Jeg bøded med Skjolderanden.
+  Jeg bøded med Skjolderanden.
 
 Aldrig udholdt jeg værre Dyst:
-   Jeg stod som Marmorstøtte;
+  Jeg stod som Marmorstøtte;
 Mig Pladerne sprang fra Skulder og Bryst;
-   En Stund fuldstille jeg blødte.
+  En Stund fuldstille jeg blødte.
 
-Længe jeg husked den dyre Ed;
-   Jeg kold hvert Saar lod brænde.
-Til sidst blev Holger Danske dog vred,
-   Og brat havde Tvisten Ende.
+Længe jeg husked den dyre Eed;
+  Jeg kold hvert Saar lod brænde.
+Tilsidst blev Holger Danske dog vred,
+  Og brat havde Tvisten Ende.
 
-Aldrig saa jeg en værre Dag:
-   Mit Liv jeg vilde værne;
-Men aldrig slog jeg et værre Slag -
-   Paa Jorden flød <w>Carlots</w> Hjerne.
+<pb n="71" facs="071.jpg"/>Aldrig saae jeg en værre Dag:
+  Mit Liv jeg vilde værne;
+Men aldrig slog jeg et værre Slag:
+  Paa Jorden flød <b>Carlots</b> Hjerne.
 </poetry>
 </body>
 </text>
@@ -1808,54 +1667,47 @@ Men aldrig slog jeg et værre Slag -
 <text id="ingemann2005051603">
 <head>
   <title>Holgers Anger</title>
-  <firstline>Tit jeg stod, hvor Kæmper blødte</firstline>
-  <source pages="49-51">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Tidt jeg stod, hvor Kæmper blødte</firstline>
+  <source pages="72-73"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Tit jeg stod, hvor Kæmper blødte,
-   Dem jeg vog i frejdig Dyst;
-Brustne Øjnes Blik mig mødte -
-   Let dog aanded Holgers Bryst.
+Tidt jeg stod, hvor Kæmper blødte,
+  Dem jeg vog i freidig Dyst;
+Brustne Øines Blik mig mødte —
+  Let dog aanded Holgers Bryst.
 Tungt jeg drog fra Brystet Aanden,
-   Med ung Carlots Lig ved Fod;
+  Med ung Carlots Lig ved Fod;
 Hvor mig Sværdet sank af Haanden,
-   Brændte mig hint unge Blod.
+  Brændte mig hint unge Blod.
 
-Dag blev Nat for Holgers Øje;
-   Syn og Tanke mig forgik.
-Kun et Glimt jeg mindes nøje.
-   Det var Carlots sidste Blik.
+Dag blev Nat for Holgers Øie;
+  Syn og Tanke mig forgik.
+Kun et Glimt jeg mindes nøie:
+  Det var Carlots sidste Blik.
 Ned i Muld jeg stirred længe,
-   Og mit Hoved sank mod Jord.
+  Og mit Hoved sank mod Jord.
 Maanen skinned over Enge;
-   Op fra Carlots Blod jeg for.
+  Op fra Carlots Blod jeg foer.
 
-I min Sjæl der skreg en Stemme;
-   Holgers Bryst den søndersled -
+<pb n="73" facs="073.jpg"/>I min Sjæl der skreg en Stemme;
+  Holgers Bryst den søndersleed —
 Aldrig jeg dens Gru kan glemme:
-   Holger Danske brød sin Ed!
+  Holger Danske brød sin Eed!
 Med det svære Ord paa Hjerte
-   Løfted jeg den faldne Helt.
+  Løfted jeg den faldne Helt.
 Sønnens Lig jeg bar med Smerte
-   Til den store Faders Telt.
+  Til den store Faders Telt.
 
-Der blev Sorg i Kejserlejren;
-   Bleg den høje Hersker stod.
-Sønnen lagde jeg med Sejren
-   Og mit Hoved for hans Fod.
+Der blev Sorg i Keiserleiren;
+  Bleeg den høie Hersker stod.
+Sønnen lagde jeg med Seiren
+  Og mit Hoved for hans Fod.
 Der var Kval og Harm at skue
-   I den store Kejsers Blik.
-Døden saa jeg i dets Lue -
-   Tavs til Fængslets Grav jeg gik.
+  I den store Keisers Blik.
+Døden saae jeg i dets Lue;
+  Taus til Fængslets Grav jeg gik.
 </poetry>
 </body>
 </text>
@@ -1864,53 +1716,46 @@ Døden saa jeg i dets Lue -
 <head>
   <title>Rolands Forbøn</title>
   <firstline>Roland var Holger Danskes Ven</firstline>
-  <source pages="50-51">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <source pages="74-75"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Roland var Holger Danskes Ven.
-   Han naaede knap til min Skulder;
+  Han naaede knap til min Skulder;
 Frankernes mindste Ungersvend
-   Var rappest i Kampens Bulder.
+  Var rappest i Kampens Bulder.
 
-Lystigt han sang i Kejserens Hær;
-   Ret aldrig jeg saa hans Lige:
+Lystig han sang i Keiserens Hær;
+  Ret aldrig jeg saae hans Lige:
 Dyrendal hed hans lange Sværd;
-   Det frelste Kejserens Rige.
+  Det frelste Keiserens Rige.
 
-Hver Gang Roland Dyrendal svang,
-   De stærkeste Kæmper blødte.
+Hvergang Roland Dyrendal svang
+  De stærkeste Kæmper blødte.
 Dødsbud for tusind Øren klang,
-   Naar Roland i Hornet stødte.
+  Naar Roland i Hornet stødte.
 
 Olivant hed hans gyldne Horn;
-   Det blæste han med stor Gammen.
-Mænd han mejed som Bønder Korn,
-   Og Hære blæste han sammen.
+  Det blæste han med stor Gammen.
+Mænd han meied, som Bønder Korn,
+  Og Hære blæste han sammen.
 
-Roland frem for Kejseren sprang;
-   Om Hornet klirred hans Handske;
+<pb n="75" facs="075.jpg"/>Roland frem for Keiseren sprang;
+  Om Hornet klirred hans Handske;
 Dyrendal haardt mod Flisen klang:
-   ,,Jeg borger for Holger Danske!''
+  ”Jeg borger for Holger Danske.”
 
 Roland mæled et Ord fuldtro;
-   Han vilde mig frelst i Nøden.
-Brat han tav dog, helt lidet fro:
-   I Kejserens Blik laa Døden.
+  Han vilde mig frelst i Nøden.
+Brat han taug dog, heelt lidet fro:
+  I Keiserens Blik laae Døden.
 
-Dommen udfor fra Kejserens Mund;
-   Fast værre blev Holgers Trængsel:
+Dommen udfoer fra Keiserens Mund;
+  Fast værre blev Holgers Trængsel:
 Den var Dødsens, der nævned en Stund
-   Mit Navn, mit Liv og mit Fængsel.
+  Mit Navn, mit Liv og mit Fængsel.
 </poetry>
 </body>
 </text>
@@ -1919,60 +1764,54 @@ Den var Dødsens, der nævned en Stund
 <head>
   <title>Holger i Hungerstaarnet</title>
   <firstline>Jeg svelted i Taarnet: det skorted paa Brød</firstline>
-  <source pages="51-52">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="76-77"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg svelted i Taarnet: det skorted paa Brød;
 Dog Hunger var mig den mindste Nød.
-Mit danske Blod mig til Kinden for,
+Mit danske Blod mig til Kinden foer,
 Alt for jeg glemte mit Ridderord.
-Med Harme jeg dybt i min Tunge bed,
-Alt for jeg glemte hin dyre Ed.
-Mod sorten Muld jeg mit Øje vendte:
+Med Harme jeg dybt i min Tunge beed,
+Alt for jeg glemte hiin dyre Eed.
+Mod sorten Muld jeg mit Øie vendte:
 Ung Carlots Blod paa mit Hoved brændte.
 
 En Dag fornam jeg en myndig Røst:
-,,Opløft dit Hoved, og vær fuldtrøst!
-Paa Jorden var ingen Mand saa stor,
-Han brød jo Løftet, sin Gud han svor.
-Slog Verden ej selv Guds Søn ihjel,
-Og frelst hun blev dog alligevel.'' -
-Mod sorten Muld jeg dog Øjet vendte:
+”Opløft dit Hoved og vær fuldtrøst!
+”Paa Jorden var ingen Mand saa stor,
+”Han brød jo Løftet, sin Gud han svoer.
+”Slog Verden ei selv Guds Søn ihjel,
+”Og frelst hun blev dog alligevel” —
+Mod sorten Muld jeg dog Øiet vendte;
 End Carlots Blod paa mit Hoved brændte.
 
-Og atter taled hin stærke Røst:
-,,Opløft dit Hoved, og vær fuldtrøst!
-Se! her staar Ærkebispen, din Ven;
-Den Ed, du brød, jeg heler igen!
-Jeg lover dig Fred fra Paven i Rom,
-Hvad Blod der saa paa dit Hoved vendte:
+<pb n="77" facs="077.jpg"/>Og atter taled hiin stærke Røst:
+”Opløft dit Hoved og vær fuldtrøst!
+”See! her staaer Erkebispen, din Ven;
+”Den Eed, du brød, jeg heler igjen:
+”Jeg lover dig Fred fra Paven i Rom,
+”Hvad Blod der saa paa dit Hoved kom” —
+Mod sorten Muld jeg dog Øiet vendte:
 End Carlots Blod paa mit Hoved brændte.
 
-Da mæled Bispen for tredje Gang:
-,,Din Bod dog vorder fuldstreng og lang, -
-Tre Aar ej Holger Danske skal le
-Og hverken Sol eller Maane se;
-Al Verden skal tro dig af Hunger død,
-Naar <w>Carlots Moder</w> sender dig Brød.''
-Fra sorten Muld jeg mit Øje vendte:
-Det var mig, som Blodet mindre brændte.
+Da mæled Bispen for tredie Gang:
+”Din Bod dog vorder fuldstreng og lang —
+”Tre Aar ei Holger Danske skal lee
+”Og hverken Sol eller Maane see;
+”Al Verden skal troe dig af Hunger død,
+”Naar <b>Carlots Moder</b> sender dig Brød.”
+Fra sorten Muld jeg mit Øie vendte:
+Det var mig som Blodet mindre brændte.
 
 Men Taaren brændte paa Holgers Kind;
-Mig rørte hin sorgslagne Moders Sind:
-Den høje Frue, hvis Søn jeg slog,
+Mig rørte hiin sorgslagne Moders Sind:
+Den høie Frue, hvis Søn jeg slog,
 Fra Dødens Grube min Sjæl opdrog.
 Fuldkarsk jeg greb, i mit Fangebaand,
 Det Brød, der kom fra Dronningens Haand.
-For Vand hun gav mig god Vin til Drikke -
+For Vand hun gav mig god Viin til Drikke —
 Om Sol og Maane spurgte jeg ikke.
 </poetry>
 </body>
@@ -1981,84 +1820,81 @@ Om Sol og Maane spurgte jeg ikke.
 <text id="ingemann2005051801">
 <head>
   <title>Den fangne Holger i Spanieland</title>
-  <firstline>I Modgang lo jeg vel mangen Gang</firstline>
-  <source pages="52-54">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>I Modgang loe jeg vel mangen Gang</firstline>
+  <source pages="78-80"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <places>
+    <place ref="spain" relation="setting"/>
+    <place ref="ebro" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-I Modgang lo jeg vel mangen Gang,
-   Og tit jeg sang i Elende;
-Men aldrig jeg lo, ej heller sang
-   Tre samfulde Aar til Ende.
+I Modgang loe jeg vel mangen Gang,
+  Og tidt jeg sang i Elende;
+Men aldrig jeg loe, ei heller jeg sang
+  Tre samfulde Aar tilende.
 
-Mig Bispen førte, lig Bjørn i Bur,
-   I Løndom med Kejserlejren;
-Og jeg sad stille bag sorten Mur,
-   Naar Hæren stormed til Sejren.
+Mig Bispen førte, liig Bjørn i Buur,
+  I Løndom med Keiserleiren;
+Og jeg sad stille bag sorten Muur,
+  Naar Hæren stormed til Seiren.
 
 I Verden var Holger Danske glemt;
-   Fast død var Æren med Navnet.
-Ved Ebro gik det Kejseren slemt,
-   Mod Mauren blev Dansken savnet.
+  Fast død var Æren med Navnet.
+Ved Ebro gik det Keiseren slemt;
+  Mod Mauren blev Dansken savnet.
 
-,,Var Nordens Vildbas saa sandt ej død''
-   - Saa klang det fra Bispens Tunge -
-,,Fuldvist han hjalp os af denne Nød
-   Og lod nu sit Glavind runge.''
+”Var Nordens Vildbas saasandt ei død”
+  — Saa klang det fra Bispens Tunge —
+”Fuldvist han hjalp os af denne Nød
+  ”Og lod nu sit Glavind runge.”
 
-Brat Kejseren blev som en kalket Mur;
-   Men Roland nikked helt kløgtig:
-,,En levende Bjørn her sidder i Bur;
-   Han tykkes mig fuldt saa dygtig.
+<pb n="79" facs="079.jpg"/>Brat Keiseren blev som en kalket Muur;
+  Men Roland nikked heelt kløgtig:
+”En levende Bjørn her sidder i Buur;
+  ”Han tykkes mig fuldt saa dygtig.”
 
-,,Vil Morbroder høre mit Raad i Dag,
-   Vi løse hin stærke Fange!
-Og komme vi ej med Sejr fra Slag,
-   Jeg selv vil i Buret gange.''
+”Vil Morbroder høre mit Raad idag,
+  ”Vi løse hiin stærke Fange!
+”Og komme vi ei med Seir fra Slag,
+  ”Jeg selv vil i Buret gange.”
 
-Paa Roland stirred Kejseren vist;
-   Han kunde hver Sjæl udgranske:
-,,Saa sandt mig hjælpe hin rige Krist!
-   Den Bjørn er dog Holger Danske.
+Paa Roland stirred Keiseren vist;
+  Han kunde hver Sjæl udgrandske:
+”Saasandt mig hjælpe hiin rige Christ!
+  ”Den Bjørn er dog Holger Danske.”
 
-,,Men har han døjet saa lang en Bod,
-   Og er han ej død af Hunger,
-Sin Krop han vel bærer knap paa Fod,
-   Og mægtigt hans Sværd ej runger.
+”Men har han døiet saa lang en Bod,
+  ”Og er han ei død af Hunger,
+”Sin Krop han bærer vel knap paa Fod,
+  ”Og mægtigt hans Sværd ei runger.”
 
-,,Men var han en fuldtagen Mand endnu,
-   Og gav jeg ham fri med Ære,
-Til Hævn vel før staar Danskerens Hu
-   End til mit Banner at bære.''
+”Men var han en fuldtagen Mand endnu,
+  ”Og gav jeg ham fri med Ære,
+”Til Hævn vel før staaer Danskerens Hu,
+  ”End til mit Banner at bære.”
 
-,,Den Karl er endnu helt vel ved Magt''
-   - Fra Bispens Tunge lød Svaret -
-,,Dog til han har svoret os trofast Pagt,
-   Han sidder fuldtvel forvaret.''
+<pb n="80" facs="080.jpg"/>”Den Karl er endnu heelt vel ved Magt”
+  — Fra Bispens Tunge lød Svaret —
+”Dog til han har svoret os trofast Pagt,
+  ”Han sidder fuldtvel forvaret.”
 
 De gik til Taarnet, hvor Holger sad;
-   De tinged med mig om Pagten.
+  De tinged med mig om Pagten.
 Da sparked jeg Muren ud fuldglad;
-   Dertil min Fod havde Magten.
+  Dertil min Fod havde Magten.
 
-De studsed alle, som saa derpaa;
-   De kendte mig før ej ganske:
-De mente, det var de Mure graa,
-   Der fængslede Holger Danske.
+De studsed Alle, som saae derpaa;
+  De kjendte mig før ei ganske:
+De meente, det var de Mure graae,
+  Der fængslede Holger Danske.
 
-Min Vilje kun var mit Fangebur:
-   Min Synd kun vilde jeg sone.
-Fri gik jeg ud af den sprængte Mur;
-   Fri svor jeg for Kejserens Trone.
+Min Villie kun var mit Fangebuur:
+  Min Synd kun vilde jeg sone.
+Fri gik jeg ud af den sprængte Muur;
+  Fri svoer jeg for Keiserens Throne.
 </poetry>
 </body>
 </text>
@@ -2066,109 +1902,100 @@ Fri gik jeg ud af den sprængte Mur;
 <text id="ingemann2005051508">
 <head>
   <title>Kampen med Maurerne</title>
-  <firstline>Jeg red mellem Roland og Bispen med Lyst</firstline>
-  <source pages="54-55">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Jeg reed mellem Roland og Bispen med Lyst</firstline>
+  <source pages="81-82"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg red mellem Roland og Bispen med Lyst;
+Jeg reed mellem Roland og Bispen med Lyst;
 Med Maurerne holdt vi vældelig Dyst.
-Pamplonas Mure vi styrted i Grus;
-Med Bulder vi kom i Gerona i Hus.
+Pamplonas Mure vi styrted i Gruus;
+Med Bulder vi kom i Gerona i Huus.
 
 Vi tog Barcelona med Fakler i Haand;
-Vi tæmmed de mauriske Tigre med Baand;
-Men før Zaragoza sin Port os oplod,
+Vi tæmmed de mauriske Tigre med Baand.
+Men før Saragossa sin Port os oplod,
 Tre Dage vi farved Ebro med Blod.
 
-Vi kæmped ved Floden tre Nætter i Rad,
-Og Kejseren saa det. Han nikked fuldglad.
-Hvor Olivant skingred, og Dyrendal klang,
+Vi kæmped ved Floden tre Nætter i Rad.
+Og Keiseren saae det. Han nikked fuldglad.
+Hvor Olivant skingred og Dyrendal klang,
 Med Roland jeg først over Murene sprang.
 
-<w>Brifort</w> hed min Ganger; den sprang som en Hjort.
-<w>Courtain</w> hed mit Slagsværd, fordi det var kort.
-Min Ganger var langstrakt, men stakket mit Sværd;
+<b>Brifort</b> hed min Ganger; den sprang som en Hjort.
+<b>Courtain</b> hed mit Slagsværd, fordi det var kort.
+Min Ganger var langstrakt, og stakket mit Sværd;
 Derfor gik jeg Fjenden et Skridt mere nær.
 
-Min Hingst bar ej Rytter, mens jeg laa i Bast;
-Glad fløj han med Holger, hvor Skjoldene brast.
+<pb n="82" facs="082.jpg"/>Min Hingst bar ei Rytter, mens jeg laae i Bast;
+Glad fløi han med Holger, hvor Skjoldene brast.
 Mit Sværd var forrustet; det sang ved mit Greb;
 Paa Maurernes Pander fuldblankt jeg det sleb.
 
 Min Arm havde hvilet tre Somre i Baand;
-Tre Døgn kom ej Banner og Sværd af min Haand.
-Mit Navn var forstummet; nu fik det god Klang.
-Hvor Maurerne peb, og hvor Frankerne sang.
+Tre Døgn kom ei Banner og Sværd af min Haand.
+Mit Navn var forstummet; nu fik det god Klang,
+Hvor Maurerne peeb og hvor Frankerne sang.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051802">
 <head>
-  <title>Sejersfesten i Zaragosa</title>
-  <firstline>Zaragoza saa jeg prange</firstline>
-  <source pages="55-57">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <title>Seiersfesten i Saragossa</title>
+  <firstline>Saragossa saae jeg prange</firstline>
+  <source pages="83-84"/>
+  <places>
+    <place ref="zaragoza" relation="setting"/>
+    <place ref="ebro" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Zaragoza saa jeg prange
-   Med de røde Taarnes Pragt.
+Saragossa saae jeg prange
+  Med de røde Taarnes Pragt.
 Maurerslottets Buegange
-Genlød af de Kristnes Sange.
-   Ridderskabets Flor holdt Vagt.
+Gjenlød af de Christnes Sange.
+  Ridderskabets Flor holdt Vagt.
 
-Der var Sejersfest i Staden;
-   Stenpaladser var vor Lejr.
-Blomster faldt som Sne paa Gaden;
-Tæpper pryded Slotsarkaden.
-   Blege Maurer saa vor Sejr.
+Der var Seiersfest i Staden;
+  Steenpaladser var vor Leir.
+Blomster faldt, som Snee, paa Gaden;
+Tæpper pryded Slotsarcaden.
+  Blege Maurer saae vor Seir.
 
 Der, hvor Ebros Strøm sig kruser
-   Under Marmorborgens Fod,
+  Under Marmorborgens Fod,
 Der, hvor Dag og Nat det bruser,
-Vandspring højt i Hallen suser,
-   Der min store Kejser stod.
+Vandspring høit i Hallen suser,
+  Der min store Keiser stod.
 
-Gennem Guldorangers Haver
-   Blaamænd til Paladset gik.
-Sorte skønne bragte Gaver;
-Konger bøjed Knæ som Slaver
-   For den store Kejsers Blik.
+<pb n="84" facs="084.jpg"/>Gjennem Guldorangers Haver
+  Blaamænd til Palladset gik.
+Sorte Skjønne bragte Gaver;
+Konger bøied Knæ, som Slaver,
+  For den store Keisers Blik.
 
 Ved hans Side stod hans Frænder,
-   Hine tolv med Jævningsnavn.
-Verden deres Navne kender;
+  Hine Tolv med Jævningsnavn.
+Verden deres Navne kjender;
 De var Holger Danskes Venner:
-   Alle tog de mig i Favn.
+  Alle tog de mig i Favn.
 
-Spaniens Døtre os bekransed.
-   Rolands Horn fik lystig Klang;
-Sejersglæden kun han sansed.
-I den høje Sal vi dansed,
-   Hvor de friske Vande sprang.
+Spaniens Døttre os bekrandsed.
+  Rolands Horn fik lystig Klang;
+Seiersglæden kun han sandsed.
+I den høie Sal vi dandsed,
+  Hvor de friske Vande sprang.
 
-Aldrig glemmer jeg hin Gammen
-   I de stolte Maurers Hal.
-Sidste Gang ved Fakkelflammen
-Saa mit Øje glad tilsammen
-   Dem, som faldt paa Ronceval.
+Aldrig glemmer jeg hiin Gammen
+  I de stolte Maurers Hal.
+Sidstegang ved Fakkelflammen
+Saae mit Øie glad tilsammen
+  Dem, som faldt paa Ronceval.
 </poetry>
 </body>
 </text>
@@ -2176,206 +2003,201 @@ Saa mit Øje glad tilsammen
 <text id="ingemann2005051605">
 <head>
   <title>Ronceval</title>
-  <firstline>Højt paa Pyrenæers Fjælde</firstline>
-  <notes>
-    <note>Ronceval (eller Roncevaux) er Navnet paa en lille Dal i Pyrenæerne, nogle Mil Nord for Pamplona; den er bleven udødelig i Frankrigs Historie paa Grund af den frygtelige Ulykke, som fandt Sted dér den 15de August 778, da hele Bagtroppen af Karl den Stores Hær blev nedhugget af Baskerne efter et fortvivlet Forsvar. Blandt de faldne var Markgreven Roland, der snart efter blev besungen i talrige Ridderdigte som Frankrings Nationalhelt.</note>
-  </notes>
-  <source pages="57-62">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Høit paa Pyrenæers Fjelde</firstline>
+
+  <source pages="85-92"/>
+  <places>
+    <place ref="pyrenees" relation="setting"/>
+    <place ref="roncesvalles" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Højt paa Pyrenæers Fjælde
-   Red vi over Sky med Sejr.
+Høit paa Pyrenæers Fjelde
+  Reed vi over Sky med Seir.
 Maurers Skat, vi vandt med Vælde,
-   Fulgte Hæren med vor Lejr.
+  Fulgte Hæren med vor Leir.
 
-Ved den store Kejsers Side
-   Holger red med Bannerstang.
-Lystigt under Bjærgelide
-   Neden for os Roland sang.
+Ved den store Keisers Side
+  Holger reed med Bannerstang.
+Lystig under Bjergelide
+  Nedenfor os Roland sang.
 
-Ved de sorte Fjældes Huler
-   Nys vi red ham glad forbi;
+Ved de sorte Fjeldes Huler
+  Nys vi reed ham glad forbi;
 Der han vented Byttets Muler
-   Paa den snævre Klippesti.
+  Paa den snevre Klippestie.
 
-Muler krøb lig Myrer sorte
-   I de dybe Dales Tragt;
+Muler krøb, liig Myrer sorte,
+  I de dybe Dales Tragt;
 Der, ved tvende Rigers Porte,
-   Ridderskabets Flor holdt Vagt.
+  Ridderskabets Flor holdt Vagt.
 
-Længe Roland blev tilbage
-   I det mørke Ronceval.
-Skyen fløj som skumle Drage
-   Over mørke Klippers Dal.
+<pb n="86" facs="086.jpg"/>Længe Roland blev tilbage
+  I det mørke Ronceval.
+Skyen fløi, som skumle Drage,
+  Over mørke Klippers Dal.
 
-Ej Carolus aned Fare;
-   Tryg den høje Kejser lo.
+Ei Carolus aned Fare;
+  Tryg den høie Keiser loe.
 Under lette Ridderskare
-   Klapred muntre Hingstes Sko.
+  Klappred muntre Hingstes Skoe.
 
 Dæmpet lød der fjerne Toner
-   Bag de sorte Klippers Hegn.
-Var det vilde Bjærg-Vaskoner?
-   Var det falske Maurers Tegn?
+  Bag de sorte Klippers Hegn.
+Var det vilde Bjerg-Vaskoner?
+  Var det falske Maurers Tegn?
 
 Gavalon, fuldsnild og kløgtig,
-   Vist Kejserhæren Vej.
+  Viiste Keiserhæren Vei.
 Han i Fyrsteraad var dygtig;
-   Jævningsnavn han bar dog ej.
+  Jævningsnavn han bar dog ei.
 
 Gavalon med skarpe Blikke
-   Red min store Kejser næst.
+  Reed min store Keiser næst.
 Gavalon jeg troede ikke:
-   Han var Maurerkongens Gæst.
+  Han var Maurerkongers Gjest.
 
-Nys han kom med Guld og Slaver
-   Fra de overvundnes Stad.
-Rigt behængt med Fjendegaver.
-   Han paa Maurerhingsten sad.
+<pb n="87" facs="087.jpg"/>Nys han kom med Guld og Slaver
+  Fra de Overvundnes Stad.
+Rigt behængt med Fjendegaver,
+  Han paa Maurerhingsten sad.
 
 Fra de vilde Baskers Stammer
-   Bar han ydmyg Fredens Gren;
+  Bar han ydmyg Fredens Green;
 Men jeg skimted Hadets Flammer
-   I hans hule Øjesten.
+  I hans hule Øiesteen.
 
-Frem vi red, og tit jeg lytted:
-   Længst forstummed Rolands Sang;
-Toget saa jeg ej med Byttet.
-   Dybt et Horn fra Dalen klang.
+Frem vi reed, og tidt jeg lytted:
+  Længst forstummed Rolands Sang;
+Toget saae jeg ei med Byttet.
+  Dybt et Horn fra Dalen klang.
 
-,,Herre Kejser! Roland kalder'' -
-   Gavalon dog listig lo:
-,,Er det Rolands Horn, der gjalder.
-   Er hans unge Hjerte fro.''
+”Herre Keiser! Roland kalder” —
+  Gavalon dog listig loe:
+”Er det Rolands Horn, der gjalder,
+  ”Er hans unge Hjerte fro.”
 
-Tryg den store Kejser nikked.
-   Frem vi red. - Paa ny det klang.
+Tryg den store Keiser nikked.
+  Frem vi reed. — Paany det klang.
 Blodet mig i Hjernen prikked;
-   Brynjens stærke Ringe sprang.
+  Brynjens stærke Ringe sprang.
 
-,,Roland kalder, Herre Kejser!
-   Hør, han ryster Fjældets Mur!''
-Gavalon helt trodsig knejser:
-   ,,Roland leger kun med Lur.''
+<pb n="88" facs="088.jpg"/>”Roland kalder, Herre Keiser!
+  ”Hør, han ryster Fjeldets Muur!”
+Gavalon heelt trodsig kneiser:
+  ”Roland leger kun med Luur.”
 
-Frem vi red. - Jeg lytted længe.
-   Stum jeg knuged Banrets Stang;
+Frem vi reed. — Jeg lytted længe.
+  Stum jeg knuged Bannerets Stang;
 Blodet vilde Brystet sprænge.
-   Roland blæste tredje Gang.
+  Roland blæste tredie Gang.
 
-Det genlød fra Klippemuren
-   Som en Røst fra Gravens Skød,
-Som han gennem Fjældnaturen
-   Aanded Varslet om sin Død.
+Det gjenlød fra Klippemuren,
+  Som en Røst fra Gravens Skjød,
+Som han gjennem Fjeldnaturen
+  Aanded Varslet om sin Død.
 
 Brat vi vore Hingste vendte;
-   Ned mod Ronceval vi for.
+  Ned mod Ronceval vi foer.
 Sværdet os i Haanden brændte;
-   Ingen mæled mer et Ord.
+  Ingen mæled meer et Ord.
 
 Gavalon kun blev tilbage;
-   Over ham min Ganger sprang.
-Aldrig red jeg Hest saa fage,
-   Aldrig blev min Vej saa lang.
+  Over ham min Ganger sprang.
+Aldrig reed jeg Hest saa fage;
+  Aldrig blev min Vei saa lang.
 
-Tit det klang, som Torden ruller,
-   Der hvor Roland havde kaldt.
-Tit vi hørte hule Bulder,
-   Som de haarde Klipper faldt.
+<pb n="89" facs="089.jpg"/>Tidt det klang, som Torden ruller,
+  Der hvor Roland havde kaldt.
+Tidt vi hørte hule Bulder,
+  Som de haarde Klipper faldt.
 
 Røverfolkets vilde Vrimle
-   Laa i skyhøj Kløft paa Lur.
-Hære hang lig Rovfuglstimle
-   Paa de sorte Fjældes Mur.
+  Laae i skyhøi Kløft paa Luur.
+Hære hang, liig Rovfuglstimle,
+  Paa de sorte Fjeldes Muur.
 
-Ned fra Klippetaarne høje
-   Rulled Sten som Hagl fra Sky.
-Dagen sortned for vort Øje;
-   Frem vi for i Brag og Gny.
+Ned fra Klippetaarne høie
+  Rulled Steen, som Hagl fra Sky.
+Dagen sortned for vort Øie;
+  Frem vi foer i Brag og Gny.
 
 Aldrig glemmer jeg den Jammer,
-   Da vi naaede Ronceval:
+  Da vi naaede Ronceval:
 Slukt var Heltelivets Flammer
-   I de sorte Klippers Dal.
+  I de sorte Klippers Dal.
 
-Lukt var Bispens strenge Øje,
-   Stum hver Jævnings Høvdingerøst.
-Bleg laa mellem Venner høje
-   Oliver med knuset Bryst.
+Lukt var Bispens strenge Øie,
+  Stum hver Jævnings Høvdingsrøst.
+Bleeg laae mellem Venner høie
+  Oliver med knuset Bryst.
 
-Dybt begravet under Stene
-   Laa den halve Kejserhær.
+<pb n="90" facs="090.jpg"/>Dybt begravet under Stene
+  Laae den halve Keiserhær.
 Mellem tvende Klipper ene
-   Roland laa med Horn og Sværd.
+  Roland laae med Horn og Sværd.
 
 Haanden sig om Sværdet krummed;
-   Hornet holdt endnu han fast:
+  Hornet holdt endnu han fast:
 Før dets sidste Klang forstummed,
-   Aaren i hans Pande brast.
+  Aaren i hans Pande brast.
 
-Stum den store Kejser blegned;
-   Alle grued, som det saa.
-Ned blandt Lig Carolus segned;
-   Bleg ved Rolands Bryst han laa.
+Stum den store Keiser blegned;
+  Alle grued, som det saae.
+Ned blandt Liig Carolus segned;
+  Bleeg ved Rolands Bryst han laae.
 
-- Synker Sol, og stiger Maane
-   Over Fjæld og Sø og Dal,
-End jeg ser min Kejser daane
-   Mellem Lig paa Ronceval.
+— Synker Sol og stiger Maane
+  Over Fjeld og Søe og Dal,
+End jeg seer min Keiser daane
+  Mellem Liig paa Ronceval.
 
-Der, hvor gennem mørke Dale
-   Kilden sprang fra Bjærgets Bryst,
+Der, hvor gjennem mørke Dale
+  Kilden sprang fra Bjergets Bryst,
 Vakte jeg hans Sjæl af Dvale,
-   Hørte jeg hans Kæmperøst.
+  Hørte jeg hans Kæmperøst.
 
-,,Hvor er Roland! - brast min Lykke!
-   Hvor er Helteskaren stor!
-Hvor er Verdenstronens Smykke!
-   Hvor er Ridderskabets Flor!
+<pb n="91" facs="091.jpg"/>”Hvor er Roland! — brast min Lykke!
+  ”Hvor er Helteskaren stor!
+”Hvor er Verdensthronens Smykke!
+  ”Hvor er Ridderskabets Flor!”
 
-,,Hvor er eders Høvdingsstave,
-   Samson! Oliver! Gerin!
-Hvor er alle mine brave!
-   Hvor er Wolter og Turpin!''
+”Hvor er eders Høvdingsstave,
+  ”Samson! Oliver! Gerin!
+”Hvor er alle mine Brave!
+  ”Hvor er Wolter og Turpin!”
 
-,,Ingen mer sit Hoved rejser''
-   - Mæled jeg fuldmørk i Hu -
-,,De er faldne, Herre Kejser!
-   Hævnet er de ej endnu.''
+”Ingen meer sit Hoved reiser”
+  — Mæled jeg fuldmørk i Hu —
+”De er faldne, Herre Keiser!
+  ”Hævnet er de ei endnu.”
 
 Fast han knuged flad min Handske,
-   Og jeg blussed ved hans Ord:
-,,Hævn, ja Hævn! - Med Holger Danske
-   Dør først Ridderskabets Flor.''
+  Og jeg blussed ved hans Ord:
+”Hævn, ja Hævn! — Med Holger Danske
+  ”Døer først Ridderskabets Flor.”
 
-- Brat Vaskoners vilde Hære
-   Styrted ned til Rov paa Val.
+— Brat Vaskoners vilde Hære
+  Styrted ned til Rov paa Val.
 Roland hævned vi med Ære:
-   Ronceval blev Hævnens Dal.
+  Ronceval blev Hævnens Dal.
 
-Der blev Brag ved Klippemuren;
-   Der lød Bulder gennem Dal.
-Sværdet klang; men stum var Luren -
-   Roland tav paa Ronceval.
+<pb n="92" facs="092.jpg"/>Der blev Brag ved Klippemuren;
+  Der lød Bulder gjennem Dal.
+Sværdet klang; men stum var Luren:
+  Roland taug paa Ronceval.
 
-Fra min store Kejsers Side
-   Veg ej Holger Danskes Fod.
-Der blev tavst ved Midnatstide;
-   Maanen spejled sig i Blod.
+Fra min store Keisers Side
+  Veeg ei Holger Danskes Fod.
+Der blev taust ved Midnatstide;
+  Maanen speilede sig i Blod.
 
-Dalens Sø laa fjældomgærdet;
-   Baskerhæren saa vi dø:
-De, som ej laa knust for Sværdet,
-   Styrted i den sorte Sø.
+Dalens Søe laae fjeldomgjærdet;
+  Baskerhæren saae vi døe:
+De, som ei laae knuust for Sværdet,
+  Styrted i den sorte Søe.
 </poetry>
 </body>
 </text>
@@ -2383,111 +2205,100 @@ De, som ej laa knust for Sværdet,
 <text id="ingemann2005051604">
 <head>
   <title>Rolands Sværd</title>
-  <firstline>Hver Gang Dyrendal blev nævnet</firstline>
-  <source pages="62-63">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Hvergang Dyrendal blev nævnet</firstline>
+  <source pages="93-94"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Hver Gang Dyrendal blev nævnet,
-   Klang i Verden Rolands Navn.
+Hvergang Dyrendal blev nævnet,
+  Klang i Verden Rolands Navn.
 Først da Rolands Død var hævnet,
-   Tog jeg Heltens Lig i Favn.
+  Tog jeg Heltens Liig i Favn.
 
 Sværdet holdt han fast i Haanden;
-   Odde stod i Fjældets Rift.
+  Odden stod i Fjeldets Rift.
 Panden røbed Helteaanden;
-   Men hvert Træk var marmorstift.
+  Men hvert Træk var marmorstift.
 
 Hjaltet kæmpestærk han klemte
-   Med forstenet Kraft og Marv,
-Som i Døden tro han gemte
-   Til en Ven sin bedste Arv.
+  Med forstenet Kraft og Marv,
+Som i Døden tro han gjemte
+  Til en Ven sin bedste Arv.
 
 Ingen Ridder dog i Hæren
-   Kunde rokke Rolands Sværd.
-Jeg for Sorg ej ænsed Æren;
-   Ingen Ven var mig saa kær.
+  Kunde rokke Rolands Sværd.
+Jeg for Sorg ei ændsed Æren:
+  Ingen Ven var mig saa kjær.
 
-Rolands Haand mod min var lille;
-   Men han var fuldstor en Mand.
+<pb n="94" facs="094.jpg"/>Rolands Haand mod min var lille;
+  Men han var fuldstor en Mand.
 Fastklemt Haand jeg trykte stille,
-   Og mit Øje løb i Vand.
+  Og mit Øie løb i Vand.
 
-Kejser Karl stod dybt nedbøjet;
-   Sorgen knuged svart hans Bryst.
-Ham dog løb ej Vand i Øjet:
-   Stum han stod og uden Trøst.
+Keiser Carl stod dybt nedbøiet;
+  Sorgen knuged svart hans Bryst:
+Ham dog løb ei Vand i Øiet:
+  Stum han stod og uden Trøst.
 
-Sværdet, som vi rørte alle,
-   Sværdet, rigt paa Heltedaad,
-Roland i hans Haand lod falde -
-   Og Carolus brast i Graad.
+Sværdet, som vi rørte Alle,
+  Sværdet, rigt paa Heltedaad,
+Roland i hans Haand lod falde —
+  Og Carolus brast i Graad.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051803">
 <head>
-  <title>Ærkebiskop Turpin</title>
-  <firstline>Vi sørged for de døde</firstline>
-  <source pages="63-64">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <title>Erkebisp Turpin</title>
+  <firstline>Vi sørged for de Døde</firstline>
+  <source pages="95-96"/>
+  <places>
+    <place ref="roncesvalles" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-   Vi sørged for de døde;
+    Vi sørged for de Døde;
 Paa Ronceval de blev blandt Klipper øde.
-   De sorte Fjældes Hule
-Dog skulde Ridderskabets Flor ej skjule.
+    De sorte Fjeldes Hule
+Dog skulde Ridderskabets Flor ei skjule.
 
-   Tolv Lig med Pragt og Ære
+    Tolv Liig med Pragt og Ære
 Til helligt Gravkapel vi vilde bære.
-   Paa Baaren laa de stærke
+    Paa Baarer laae de Stærke
 Med Jævningsnavn og stolte Riddermærke.
 
-   Ung Roland var den første;
+    Ung Roland var den første;
 Men Bispens Kæmpelegem var det største.
-   Vi løfted ham paa Skulder;
+    Vi løfted ham paa Skulder;
 Paa Baaren Bispens Harnisk klang med Bulder.
 
-   Fra Ronceval drog Hæren.
-Paa Heltedøden tænkte jeg - og Æren;
-   Min Skulder bar i Døden
+    Fra Ronceval drog Hæren.
+Paa Heltedøden tænkte jeg og Æren;
+    Min Skulder bar i Døden
 Den fromme Helt, som trøsted mig i Nøden.
 
-   Da hørte jeg hans Stemme:
-,,Hvor færdes jeg? Mig tyktes, jeg var hjemme.'' -
-   Brat standsed Holger Danske;
-Den døde slog i Baaren med sin Handske.
+<pb n="96" facs="096.jpg"/>    Da hørte jeg hans Stemme:
+”Hvor færdes jeg? mig tyktes, jeg var hjemme.”
+    Brat standsed Holger Danske;
+Den Døde slog i Baaren med sin Handske.
 
-   Helt sært vi blev til Mode;
-Med Rædsel fast paa Livet ej vi troede.
-   Vi Baaren tog fra Skulder -
-Højt Ærkebispen rejste sig med Bulder.
+    Heelt sært vi blev tilmode:
+Med Rædsel fast paa Livet ei vi troede.
+    Vi Baaren tog fra Skulder.
+Høit Erkebispen reiste sig med Bulder.
 
-   ,,Den Dysk var haard at døje''
-Saa mæled Bispen med det strenge Øje -
-   ,,Jeg knusted dog ej ganske:
-Jeg bæres i Triumf af Holger Danske.''
+    ”Den Dyst var haard at døie”
+— Saa mæled Bispen med det strenge Øie —
+    ”Jeg knustes dog ei ganske:
+”Jeg bæres i Triumph af Holger Danske.”
 
-   Vi hilste højt med Ære
+    Vi hilste høit med Ære
 Den Helt, vi troede til sin Grav at bære.
-   Vi undte Bispen Lykke;
+    Vi undte Bispen Lykke;
 Turpin gik stille til sin Grav med Krykke.
 </poetry>
 </body>
@@ -2496,48 +2307,44 @@ Turpin gik stille til sin Grav med Krykke.
 <text id="ingemann2002092009">
 <head>
   <title>De elleve Jævningers Jordefærd</title>
-  <firstline>Faner vifted over Skjolde</firstline>
-  <source pages="65">
-    <author>B. S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Det Reitzelske Forlag</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Fahner vifted over Skjolde</firstline>
+  <source pages="97-98"/>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Faner vifted over Skjolde
-   I det store Gravkapel.
-Der laa mine Venner kolde;
-Til de Helte, tro og bolde,
-   Sagde jeg et tungt Farvel.
+Fahner vifted over Skjolde
+  I det store Gravkapel.
+Der laae mine Venner kolde;
+Til de Helte, troe og bolde,
+  Sagde jeg et tungt Farvel.
 
-Gert ej leged mer med Lanse;
-   Han var stum, som lystigst lo;
-Han, som sang i Vaabendanse -
-Han, som fløj mod Jomfrukranse -
-   De var alle bragt til Ro.
+Geert ei leged meer med Landse;
+  Han var stum, som lystigst loe;
+Han, som sang i Vaabendandse —
+Han, som fløi mod Jomfrukrandse —
+  De var Alle bragt til Ro.
 
-Sidste Gang jeg saa de stærke;
-   Fast jeg kendte dem ej mer.
+Sidste Gang jeg saae de Stærke;
+  Fast jeg kjendte dem ei meer.
 Under Sang af Bisp og Klerke
-Hilste jeg hvert Vaabenmærke -
-   Dem jeg aldrig mere ser.
+Hilste jeg hvert Vaabenmærke —
+  Dem jeg aldrig mere seer.
 
-Flyve Ørne over Strande,
-   Tænker jeg paa eders Dyst,
+<pb n="98" facs="098.jpg"/>Flyve Ørne over Strande,
+  Tænker jeg paa eders Dyst,
 Ørne fra Bedriftens Lande!
 Roland med den brustne Pande!
-   Oliver med knuste Bryst!
+  Oliver med knuste Bryst!
 
-Tavs, Carolus sønderklemte
-   Rolands Sværd i Dødens Hal.
-Hjaltet til sin Død han gemte;
+Taus Carolus sønderklemte
+  Rolands Sværd i Dødens Hal.
+Hjaltet til sin Død han gjemte;
 Aldrig Verdens Hersker glemte
-   Dem, som faldt paa Ronceval.
+  Dem, som faldt paa Ronceval.
 </poetry>
 </body>
 </text>
@@ -2554,117 +2361,107 @@ Aldrig Verdens Hersker glemte
 <text id="ingemann2002011518">
 <head>
   <title>Holgers Orlov og Hjemkomst</title>
-  <firstline>Vi red over Bjerg til Keiserens Stad</firstline>
+  <firstline>Vi reed over Bjerg til Keiserens Stad</firstline>
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="101-102"/>
+  <places>
+    <place ref="denmark" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Vi red over Bjerg til Keiserens Stad;
-Der fløi Huer i Luft til hans Ære.
+Vi reed over Bjerg til Keiserens Stad;
+  Der fløi Huer i Luft til hans Ære.
 Paa Verdensthronen Carolus sad;
 Men aldrig blev Keiserens Hjerte glad:
-Han sørged for alle de Kjære.
+  Han sørged for alle de Kjære.
 
 Det blev mig for mørkt i Keiserens Gaard;
-Jeg fik Uro i Blodet i Freden.
+  Jeg fik Uro i Blodet i Freden.
 Mig længtes efter en Dyst fuldhaard:
 I Raaddenskab, tykkes mig, Verden gaaer,
-Naar Sværdet er rustet til Skeden.
+  Naar Sværdet er rustet til Skeden.
 
 Svart længtes jeg efter mit Fædreland;
-Over Hav fløi der Tidender onde:
-,,Kong Gøttrik kæmper mod Oprørsmand;
+  Over Hav fløi der Tidender onde:
+Kong Gottrik kæmper mod Oprørsmand;
 Ei Dankongen slukker den arge Brand;
-Dybt sukker den fattige Bonde.''
+  Dybt sukker den fattige Bonde.
 
-Og Orlov jeg tog af Keiseren brat;
-Som en Fugl fløi min Stavn over Voven.
+<pb n="102" facs="102.jpg"/>Og Orlov jeg tog af Keiseren brat;
+  Som en Fugl fløi min Stavn over Voven.
 Hvor Holger leged med Hund og Kat,
 Der sprang jeg i Land med min Vaabenhat,
-Og Brynierne buldred i Skoven.
+  Og Brynierne buldred i Skoven.
 
-Mig fulgte tre hundrede Kæmper i Jern,
-De bar Landsen i klirrende Handske.
+Mig fulgte tre hundred Kæmper i Jern;
+  De bar Landsen i klirrende Handske.
 Dankongen bragte jeg Skjold og Værn;
-Men Gøttrik var myrdet; hans Sjæl var fjern.
-Hans Øine ei saae Holger Danske.
+Men Gottrik var myrdet; hans Sjæl var fjern —
+  Hans Øine ei saae Holger Danske.
 
 Til Thinge jeg foer. Jeg nævned mit Navn;
-Og de Danske blev lystig tilmode.
+  Og de Danske blev lystig tilmode.
 De bad mig glemme al Harm og Savn;
 De bar Holger Danske trofast i Favn
-Til Thronen, hvor Bøgene groede.
+  Til Thronen, hvor Bøgene groede.
 
-Dog - Sønnen skal hævne Faderens Mord,
-Skal Guds Jord under Fod ham ei brænde!
+Dog Sønnen skal hævne Faderens Mord,
+  Skal Guds Jord under Fod ham ei brænde!
 Den Ærens Lov var gammel i Nord.
 Dyrt svoer jeg at søge Stimandens Spor
-Fra Danmark til Jorderigs Ende.
+  Fra Danmark til Jorderigs Ende.
 </poetry>
 </body>
 </text>
 
-<text id="ingemann2005051502">
+<text id="ingemann2005051502" ignore-tests="smaa">
 <head>
   <title>Holger i Offerlunden</title>
   <firstline>Jeg stod en Sommermorgen i Herthas grønne Lund</firstline>
-  <source pages="67-68">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="103-104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg stod en Sommermorgen i Herthas grønne Lund
    Ved den brusende Fjord.
-Trælle gik til Døden i den favre Morgenstund;
+Trælle gik til Døden i favre Morgenstund;
    Der var blodige Spor.
 Fælt Trællene jamred i Lunden.
 
 Om Livets Lyst de trygled; de skreg til gamle Thor;
-   Men han hørte dem ej.
+   Men han hørte dem ei.
 Ynkelig de skreg til hver Afgud i Nord
-    Paa den blodige Vej.
-Sidst skreg de mit Navn gennem Lunden.
+   Paa den blodige Vei.
+Sidst skreg de mit Navn gjennem Lunden.
 
-De ynkelige Trælle var næppe Livet værd;
+De ynkelige Trælle var neppe Livet værd;
    Jeg blev bister i Hu:
-,,Slagtesvin kun hvine, før Kniven er dem nær -
-   Dansk Dreng ej kender Gru.''
+”Slagtesviin kun hvine, før Kniven er dem nær —
+   Dansk Dreng ei kjender Gru.”
 Der blev tyst som i Graven i Lunden.
 
-Tolv Offerknive blinked i mørke Præsters Haand
-   Ved den blodige Sten.
-Trællene laa tavse som Offerlam i Baand
-   Mellem Øksnenes Ben.
+<pb n="104" facs="104.jpg"/>Tolv Offerknive blinked i mørke Præsters Haaand
+   Ved den blodige Steen.
+Trællene laae tause, som Offerlam i Baand,
+   Mellem Øxnenes Been.
 Det blev mig for skummelt i Lunden.
 
-Ud for mit gode Sværd mig af Balg med meget Hast;
+Ud foer mit gode Sværd mig af Balg med megen Hast;
    Det sused i min Haand.
-Præsterne bortfly'de, og Offerstenen brast -
+Præsterne bortflyede, og Offersteenen brast.
    Saa sprængte jeg hvert Baand.
 Glad Trællene jubled i Lunden.
 
-Men nu var jeg i Aande, og nu jeg gjorde lyst:
+Men nu jeg var i Aande, og nu jeg gjorde lyst:
    Først Asathor jeg vog;
-Saa styrted jeg Odin i Grus ved Fjordens Kyst -
+Saa styrted jeg Odin i Gruus ved Fjordens Kyst.
    Hans Tempel jeg nedslog.
-Mit Korsbanner vajed i Lunden.
+Mit Korsbanner vaied i Lunden.
 </poetry>
 </body>
 </text>
@@ -2672,51 +2469,47 @@ Mit Korsbanner vajed i Lunden.
 <text id="ingemann2005051901">
 <head>
   <title>Nattebesøget paa Kongsgaarden</title>
-  <firstline>Jeg stod paa Lejreborgen</firstline>
-  <source pages="68-70">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Jeg stod paa Leireborgen</firstline>
+  <source pages="105-107"/>
+  <places>
+    <place ref="lejre" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg stod paa Lejreborgen,
-   Jeg saa paa Fjord og Skov.
+Jeg stod paa Leireborgen
+   Jeg saae paa Fjord og Skov.
 Alt for Blodhævnersorgen
-   Ej Holger Danske sov.
+   Ei Holger Danske sov.
 Jeg stirred ud saa vide
    I maaneklare Nat,
 Da stod der ved min Side
    En Mand med Skyggehat.
 
-Jeg saa ham under Hatten:
-   Eet Øje kun jeg saa.
-Høj stod han der i Natten,
-   Med Kaaben, lang og graa.
+Jeg saae ham under Hatten:
+   Eet Øie kun jeg saae.
+Høit stod han der i Natten,
+   Med Kaaben lang og graa.
 Han Billedstenen ligned
    I Odins Offerlund.
 Med Kors mit Bryst jeg signed;
    Han hyled som en Hund.
 
-Fuldsært jeg blev til Mode;
-   Jeg greb dog ej mit Sværd.
+<pb n="106" facs="106.jpg"/>Fuldsært jeg blev tilmode;
+   Jeg greb dog ei mit Sværd.
 Jeg paa Vor Herre troede,
    Stod Satan end mig nær.
-Jeg saa paa Kappemanden;
-   Jeg kendte Odins Præst:
+Jeg saae paa Kappemanden;
+   Jeg kjendte Odins Præst:
 Dødt under Maske-Panden
-   Sad Øjet af en Hest.
+   Sad Øiet af en Hest.
 
-Dog hos det døde Øje
-   der blinked et Par smaa;
-Jeg maalte Karlen nøje -
-   Jeg Offerkniven saa.
-Et Skridt jeg tren tilbage;
+Dog hos det døde Øie
+   Der blinked et Par smaa.
+Jeg maalte Karlen nøie;
+   Jeg Offerkniven saae.
+Et Skridt jeg treen tilbage;
    Jeg lod ham hyle ud.
 Han tuded uden Mage
    Den ynkelige Gud.
@@ -2725,37 +2518,37 @@ Mig lysted dog at høre
    Et Ord med bedre Klang;
 Da lød der for mit Øre
    En myndig Varselsang:
-,,Fly vrede Guders Lunde,
-   Og stands din Vanvids-Daad!
-Tænk aldrig at udgrunde
-   De strenge Norners Raad!''
+”Fly vrede Guders Lunde!
+   ”Og stands din Vanvids-Daad!
+”Tænk aldrig at udgrunde
+   ”De strenge Norners Raad!”
 
-Jeg hørte Hanen gale
-   I Lejredrottens Gaard;
-Og Nattegæstens Tale
+<pb n="107" facs="107.jpg"/>Jeg hørte Haner gale
+   I Leiredrotters Gaard;
+Og Nattegjæstens Tale
    Lød atter dyb og haard:
-,,Hør, Helas Hane galer!
-   Fly brat før Morgenrød!
-Hvis her et Ord du taler -
-   Du dør din Faders Død!''
+”Hør, Helas Hane galer!
+   ”Fly brat før Morgenrød!
+”Hvis her et Ord du taler,
+   ”Du døer din Faders Død.”
 
-Jeg vilde Legen ende:
-   Jeg greb mit gode Sværd -
-Da stod i Hallen trende
-   Med Kapper og med Spær.
-Fra Læben for mig Ordet:
-   ,,I stjal min Faders Liv -
-Her skete Kongemordet
-   Med Odins Offerkniv.''
+Jeg vilde Legen ende;
+   Jeg greb mit gode Sværd;
+Da stod i Hallen Trende
+   med Kapper og med Spær.
+Fra Læben foer mig Ordet:
+   ”I stjal min Faders Liv —
+”Her skete Kongemordet
+   Med Odins Offerkniv.”
 
 Da blinked Spær og Knive
-   Mod Holder Danskes Bryst.
-Kun to vi blev i Live;
-   Kun een bestod den Dyst.
+   Mod Holger Danskes Bryst.
+Kun To vi blev ilive;
+   Kun Een bestod den Dyst.
 Jeg flækked Barke-Panden
    Paa Odins lange Præst;
-Da fly'de ræd den anden -
-   den tredje fik sin Rest.
+Da flyede ræd den Anden —
+   Den Tredie fik sin Rest.
 </poetry>
 </body>
 </text>
@@ -2764,8 +2557,9 @@ Da fly'de ræd den anden -
 <head>
   <title>Holger Danskes Mærke</title>
   <firstline>I alle de Riger og Lande</firstline>
+  <source pages="108"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2781,13 +2575,13 @@ Paa Skjold bar jeg Løverne stærke
 
 Naar Mænd jeg kasted min Handske,
   Opslog jeg min Ridderhjelm;
-Da saae, jeg var Holger Danske
+De saae, jeg var Holger Danske
   Og ingen formummet Skjelm.
 
 Vil Dansken i Verden fegte,
   Men dølger Aasyn og Navn,
-Jeg veed, hans Aand er ei ægte -
-  Jeg tager ham ei i Favn
+Jeg veed, hans Aand er ei ægte;
+  Jeg tager ham ei i Favn.
 </poetry>
 </body>
 </text>
@@ -2799,72 +2593,69 @@ Jeg veed, hans Aand er ei ægte -
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="109-111"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="denmark" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Min Sjæl sig tumled fornøiet:
-Jeg var i mit Fædreland.
+  Jeg var i mit Fædreland.
 Deilig sig speiled i Øiet
-De skovgrønne Øers Strand.
+  De skovgrønne Øers Strand.
 
 Livsalig klang mig ved Kysten
-Den brusende Havfrurøst;
+  Den brusende Havfrurøst;
 Dybere klang mig dog Røsten
-Fra danske Jomfruers Bryst.
+  Fra danske Jomfruers Bryst.
 
 Jeg elsked de grønne Kyster;
-Jeg elsked det store Hav.
+  Jeg elsked det store Hav.
 Høit mig glæded de Røster,
-Der sang over Kæmpers Grav.
+  Der sang over Kæmpers Grav.
 
 Men flagred Løvet i Høsten,
-Foer Trækfugleskarer hen,
+  Foer Trækfugleskarerne hen,
 Øiet dog stirred mod Østen:
-Min Sjæl vilde bort igjen.
+  Min Sjæl vilde bort igjen.
 
-Her kunde jeg dog ei blive;
-Det brændte mig under Fod.
+<pb n="110" facs="110.jpg"/>Her kunde jeg dog ei blive;
+  Det brændte mig under Fod:
 Nordens Aand var ilive;
-Men Dansken mig ei forstod.
+  Men Dansken mig ei forstod.
 
 Endnu klang Piben og Trommen
-I Offerlunden med Gru;
+  I Offerlunden med Gru;
 Hjem var min Sjæl ei kommen:
-Her var mig for mørkt endnu.
+  Her var mig for mørkt endnu.
 
 Jeg kunde lagt Folket øde,
-Og dog deres Tro stod fast.
+  Og dog deres Tro stod fast.
 Niddinger skulde kun bløde;
-Kun Fjendernes Hjerner brast.
+  Kun Fjendernes Hjerner brast.
 
 Blandt hundred Snekker, paa Stavnen
-Jeg stormed i Kampmulm hen.
+  Jeg stormed i Kampmulm hen.
 Seiren fløi med til Havnen;
-Men Holger kom ei igjen.
+  Men Holger kom ei igjen.
 
-Med Sorg fløi Ry gjennem Dale:
-At Holger Danske var død;
+Med Sorg foer Ry gjennem Dale:
+  At Holger Danske var død;
 Høit over Bølger svale
-Jeg seiled dog, sund og rød.
+  Jeg seiled dog, sund og rød.
 
-Paa Thing de hylded min Broder.
-Jeg saae mod Skovkysten hen:
-Danmark er dog min Moder -
-Fuldvist jeg kommer igjen.
+<pb n="111" facs="111.jpg"/>Paa Thing de hylded min Broder.
+  Jeg saae mod Støvskyen hen:
+Danmark er dog min Moder —
+  Fuldvist jeg kommer igjen.
 
 Jeg kommer igjen itide;
-Jeg ligger ei dorsk i Grav!
+  Jeg ligger ei dorsk i Grav.
 Lystig mod Østerlide
-Jeg seiled med Pilgrimsstav.
+  Jeg seiled med Pilgrimstav.
 </poetry>
 </body>
 </text>
@@ -2876,46 +2667,49 @@ Jeg seiled med Pilgrimsstav.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="112-113"/>
+  <places>
+    <place ref="baltic-sea" relation="setting"/>
+    <place ref="kattegat" relation="setting"/>
+    <place ref="north-sea" relation="setting"/>
+    <place ref="spain" relation="setting"/>
+    <place ref="africa" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+    <place ref="provence" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 I Mulm over Bølgernes Bjerge jeg foer;
-Blandt Venner jeg stod paa min flyvende Drage.
+  Blandt Venner jeg stod paa min flyvende Drage.
 Rask fløi jeg med Dragen, i Stormenes Spor,
-Paa Østersø-Dyb, gjennem Sund, gjennem Fjord,
-Og hvor Kattegatsstyrtninger brage.
+Paa Østersø-Dyb, gjennem Sund, gjennem Fjord
+  Og hvor Kattegatsstyrtninger brage.
 
 Helst foer jeg med Dansken til Søhanedyst,
-Og med Provencaler til Palmernes Skove.
+  Og med Provencaler til Palmernes Skove.
 Paa Nordsøen sang Troubadourer med Lyst;
-Ved Spanjernes Bjerge, ved Afrernes Kyst,
-Sang vi høit paa den skummende Vove.
+Ved Spanjernes Bjerge, ved Afrerens Kyst
+  Sang vi høit paa den skummende Vove.
 
 Tolv høibaarne Væbnere Troskab mig svoer;
-Paa Ronceval hevned vi Roland tilsammen.
+  Paa Ronceval hævned vi Roland tilsammen.
 De kom fra Provence; dog John kom fra Nord.
 De dandsed med Sværdklang og Sang i mit Spor;
-Jeg til Riddere slog dem med Gammen.
+  Jeg til Riddere slog dem med Gammen.
 
-Paa Hav holdt vi Messe; ved Mast holdt vi Bøn;
-Blandt Ridderne sang dog ei Præst eller Klerke.
+<pb n="113" facs="113.jpg"/>Paa Hav holdt vi Messe; ved Mast holdt vi Bøn;
+  Blandt Ridderne sang dog ei Præst eller Klerke.
 Bedst messed John Friser, den Konningesøn;
 Ham loved jeg Paradiisfrugter til Løn:
-Han var frommest blandt alle de Stærke.
+  Han var frommest blandt alle de Stærke.
 
 Ei glemte vi Keiserens Jævninger troe;
-Carolus kom ei Holger Danske af Minde.
+  Carolus kom ei Holger Danske af Minde.
 Om Roland jeg sang mellem Jævninger froe;
 Mod Landet, det fjerne, hvor Palmerne groe,
-Fløi vor Sjæl med de susende Vinde.
+  Fløi vor Sjæl med de susende Vinde.
 </poetry>
 </body>
 </text>
@@ -2923,57 +2717,63 @@ Fløi vor Sjæl med de susende Vinde.
 <text id="ingemann1837ha6">
 <head>
   <title>Østerlide</title>
-  <firstline>Østerlide! Østerlide!</firstline>
-  <quality>korrektur1</quality>
+  <firstline>Østerlide! Østerlide</firstline>
+  <source pages="114-116"/>
+  <places>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="eden" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Østerlide! Østerlide!
 Det var vore Drømmes Land.
 Naar vi reed ved Bjergets Side,
-Naar vi sang ved Havets Rand -
+Naar vi sang ved Havets Rand —
   Østerlide! Østerlide!
 Klang det over Bjerg og Strand.
 
 Orienten! Orienten!
 Høit fra Sjæl til Sjæl det klang.
 Naar vi stod paa Bjergeskrænten,
-Naar vi hørte Valfartssang -
+Naar vi hørte Valfartssang —
   Orienten! Orienten!
 Did sig Længselsfuglen svang.
 
-Lyslands-Bjerge! Solglands-Dale!
-Al min Hu til Eder stod -
+<pb n="115" facs="115.jpg"/>Lyslands-Bjerge! Solglands-Dale!
+Al min Hu til Eder stod —
 Høilandskyst med Palmer svale!
 Land med Aserstammens Rod!
-  Lydlands-Bjerge! Solglands-Dale,
+  Lyslands-Bjerge! Solglands-Dale,
 Under Himalayas Fod!
 
 Himalaya! Himalaya!
 Himmelluftnings grønne Vang!
 Ararat og Strelonaia!
 Navne med fortryllet Klang!
-   Himalaya! Himalaya!
+  Himalaya! Himalaya!
 Gloriant for Holger sang.
 
 Cederskove! Palmelunde!
-- Engle sang i Verdens Støi -
+- Engle sang i Verdens Støi —
 Dal, hvor Livets Væld oprunde!
 Bjerg, hvor Arkens Due fløi!
   Cederskove! Palmelunde!
 Myrrhabjerge! Virakshøi!
 
-Paradiset! Paradiset!
+<pb n="116" facs="116.jpg"/>Paradiset! Paradiset!
 Land, hvor Liv og Sol oprandt!
 Sjælens Vugge, høit lovpriset!
-Guddomshave, som forsvandt -
+Guddomshave, som forsvandt —
   Paradiset! Paradiset!
 Veien til dets Port jeg fandt.
 
 Østerlide! Østerlide!
 Kroner for din Glands jeg gav.
 Mod dit Paradiis saa vide
-Saae jeg over Dybets Grav -
+Saae jeg over Dybets Grav —
   Østerlide! Østerlide!
 Sang jeg høit paa Verdens Hav.
 </poetry>
@@ -2987,67 +2787,58 @@ Sang jeg høit paa Verdens Hav.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="117-118"/>
   <places>
     <place ref="mount-lebanon" relation="setting"/>
+    <place ref="mount-sinai" relation="setting"/>
+    <place ref="bethlehem" relation="setting"/>
+    <place ref="golgotha" relation="setting"/>
+    <place ref="france" relation="mentioned"/>
   </places>
-  <quality>korrektur1,kilde</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg stod i de største Underes Land;
-Jeg aanded blandt nye Naturer.
+  Jeg aanded blandt nye Naturer.
 Mit Øie saae, hvad ved Frankers Strand
 Opflammed den stille Pilgrimsmand
-Og de drømmende Troubadourer.
+  Og de drømmende Troubadourer.
 
 Jeg sprang i Land paa den hellige Kyst;
-Jeg steg paa Libanons Høie.
-I Cedrene suste hin stærke Røst,
+  Jeg steg paa Libanons Høie.
+I Cedrene suste hiin stærke Røst,
 Som fyldte med Gaaders Gaade mit Bryst
-Og med Svimmeltaage mit Øie.
+  Og med Svimmeltaage mit Øie.
 
 Jeg gik til de gamle Tordeners Bjerg;
-Den Valfart Vor Herre jeg loved.
-Jeg stod under Lyn paa Sinai Bjerg -
-Da følte jeg, Kæmpen var dog en Dværg -
-Og i Støv jeg bøied mit Hoved.
+  Den Valfart Vor Herre jeg loved.
+Jeg stod under Lyn paa Sinai Bjerg —
+Da følte jeg, Kæmpen var dog en Dværg —
+  Og i Støv jeg bøied mit Hoved.
 
-Mod Bethlehem gik jeg paa nøgne Fod;
-Paa Veien jeg stille dvæled.
+<pb n="118" facs="118.jpg"/>Mod Bethlehem gik jeg paa nøgne Fod;
+  Paa Veien jeg stille dvæled.
 Da fik jeg atter fuldtrøstigt Mod:
 Jeg sang paa Marken, hvor Hyrderne stod;
-Jeg knæled, hvor Magerne knæled.
+  Jeg knæled, hvor Magerne knæled.
 
-Paa Golgatha bad jeg tre Nætter i Rad,
-Tre Døgn jeg knæled ved Graven -
-Da blev mit Hjerte vidunderlig glad.
-Jeg Pintsemorgen paa Hingsten sad -
-Jeg red mod Paradiishaven.
+Paa Golgatha bad jeg tre Nætter i Rad;
+  Tre Døgn jeg knæled ved Graven.
+Da blev mit Hjerte vidunderlig glad:
+Jeg Pintsemorgen paa Hingsten sad —
+  Jeg reed imod Paradiishaven.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2002092008">
 <head>
-  <title>Paradishaab</title>
+  <title>Paradiishaab</title>
   <firstline>Det var mig en trøstig Tanke</firstline>
-  <source pages="76">
-    <author>B. S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Det Reitzelske Forlag</publisher>
-    <year>1893</year>
-  </source>
+  <source pages="119"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3056,17 +2847,17 @@ Det var mig en trøstig Tanke;
 Naar dygtig paa Porten vi banke,
    Saa lukkes vi ogsaa ind.
 
-Jeg lo, naar Stymperne sukked;
-   I Vejr jeg al Tvivl slog hen:
-Blev Paradisporten lukket,
-   Hun kan vel aabnes igen.
+Jeg loe, naar Stymperne sukked;
+   I Veir jeg al Tvivl slog hen:
+Blev Paradiisporten lukket,
+   Hun kan vel aabnes igjen.
 
 Naar Sol over Hav fremglimted
-   I Lyslands-Straalernes Krans,
+   I Lyslands-Straalernes Krands,
 Jeg altid i Verden skimted
-   Et Glimt af Paradisglans.
+   Et Glimt af Paradiisglands.
 
-Og saa jeg i Öjne sorte
+Og saae jeg i Øine sorte
    Med Ild fra Morgenens Hjem,
 Jeg mente, Guds Haves Porte
    Var dog kun lukte paa Klem.
@@ -3077,111 +2868,112 @@ Jeg mente, Guds Haves Porte
 <text id="ingemann2002011520">
 <head>
   <title>Reisen til Bamyan</title>
-  <firstline>Vi red mod Morgen, red mod Øst</firstline>
+  <firstline>Vi reed mod Morgen, reed mod Øst</firstline>
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
+    <note>Hiin ældgamle berømte Stad i Hindostan ved Himalaya-Bjergenes Fod, hvoraf her endnu skal være saa vidunderlige Mindesmærker tilbage med uhyre Tempelgrotter i Fjeldene.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="120-123"/>
   <keywords>knittelvers</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="euphrates" relation="setting"/>
+    <place ref="tigris" relation="setting"/>
+    <place ref="bamyan" relation="setting"/>
+    <place ref="himalayas" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Vi red mod Morgen, red mod Øst.
-Rask Haabet sang i Holgers Bryst:
+Vi reed mod Morgen, reed mod Øst.
+  Rask Haabet sang i Holgers Bryst:
 Kun fremad! frem, hvor Sol opgaaer!
-Tilsidst du Paradiset naaer.
+  Tilsidst du Paradiset naaer.
 
 Vi saae de frie Nomaders Land;
-Vi red igjennem Ørknens Sand.
+  Vi reed igjennem Ørknens Sand.
 Vi fulgte Karavaners Vei;
-Dog - Paradiset saae jeg ei.
+  Dog — Paradiset saae jeg ei.
 
-Blandt Muler gjennem Sander drog
-Kamelers lange Reisetog.
+Blandt Muler gjennem Sandet drog
+  Kamelers lange Reisetog.
 Paa Elefantens øde Sti
-Vi Bjergets Tigre foer forbi.
+  Vi Bjergets Tigre foer forbi.
 
 Schakalen tuded høit i Skov,
-Og Løven brøled efter Rov.
-Mod Øst! mod Øst! Jeg lystig sang -
-Og Hingsten over Slanger sprang.
+  Og Løven brøled efter Rov.
+Mod Øst! mod Øst! Jeg lystig sang —
+  Og Hingsten over Slanger sprang.
 
-En Dag jeg svømmed over Phrat;
-Ved Tigris Bred jeg stod en Nat.
+<pb n="121" facs="121.jpg"/>En Dag jeg svømmed over Phrat;
+  Ved Tigris Bred jeg stod en Nat.
 Jeg aanded paradisisk Luft;
-Dog bort jeg foer i Myrrhaduft.
+  Dog bort jeg foer i Myrrhaduft.
 
 I Ørk, paa Bjerg, i dybe Flod
-Eet Billede for mit Øie stod.
+  Eet Billede for mit Øie stod.
 Paa Flodens Siv jeg Knuder bandt
-Til Hæder for skjøn Gloriant.
+  Til Hæder for skjøn Gloriant.
 
-Vi red mod Morgen, red mod Øst;
-Rask Haabet sang i Holgers Bryst.
+Vi reed mod Morgen, reed mod Øst;
+  Rask Haabet sang i Holgers Bryst.
 Jeg over Palmeskove saae
-Mod Himalayas Bjerge blaae.
+  Mod Himalayas Bjerge blaae.
 
 Til Bjergets Fod vi naaede glad;
-Der laae saa underfuld en Stad:
+  Der laae saa underfuld en Stad:
 I Guldglands under Bjergets Sky
-Laa Bamyan i Morgengry.
+  Laa Bamyan i Morgengry.
 
 Det var som Staden voxed op
-Fra Flodens Dal til Bjergets Top;
+  Fra Flodens Dal til Bjergets Top;
 Blandt Palmer Fjeldpaladser steg.
-I Holgers Bryst lød Strængeleg.
+  I Holgers Bryst lød Strængeleg.
 
-Ved Himalayas Fjeldnatur
-Med sine Tempelgrotters Muur
+<pb n="122" facs="122.jpg"/>Ved Himalayas Fjeldnatur
+  Med sine Tempelgrotters Muur
 Jeg kom ihu en deilig Sang;
-Den fordum i mit Fængsel klang.
+  Den fordum i mit Fængsel klang.
 
-Vi red mod Stadens Mure frem.
-Jeg var i Underværkers Hjem:
+Vi reed mod Stadens Mure frem.
+  Jeg var i Underværkers Hjem:
 Det var som Løven paa mit Skjold
-Opsprængte Stadens Port med Vold.
+  Opsprængte Stadens Port med Vold.
 
 Med ubekjendte Tungers Røst
-Mit Navn gjentoges høit med Lyst.
+  Mit Navn gjentoges høit med Lyst.
 De bar mig til det gyldne Slot
-Og til den største Østens Drot.
+  Og til den største Østens Drot.
 
 Og Drotten var min Hjertensven:
-Mit Øie Carvel saae igjen.
+  Mit Øie Carvel saae igjen.
 Saa skjøn en Dag ei før oprandt:
-Jeg saae igjen skjøn Gloriant.
+  Jeg saae igjen skjøn Gloriant.
 
 De fløi med Jubel til mit Bryst;
-De nævned mig med kjærlig Røst;
+  De nævned mig med kjærlig Røst;
 De skreg af Glæde ved mit Navn;
-De græd af Fryd i Holgers Favn.
+  De græd af Fryd i Holgers Favn.
 
-Jeg saae igjen de Øines Glands,
-Som før mig trylled Sind og Sands;
+<pb n="123" facs="123.jpg"/>Jeg saae igjen de Øines Glands,
+  Som før mig trylled Sind og Sands;
 Hos Østens lykkeligste Søn
-Stod Østens Lillie, rank og skjøn.
+  Stod Østens Lillie, rank og skjøn.
 
 Jeg hørte glad endnu en Gang
-Den underfulde Skjønnes Sang;
+  Den underfulde Skjønnes Sang;
 Endnu den smelted Holgers Bryst;
-Men dyb og stille var min Lyst.
+  Men dyb og stille var min Lyst.
 
 Ved Harpen paa den Skjønnes Skjød
-Der sad en Engel, hvid og rød;
+  Der sad en Engel, hvid og rød;
 Han sprang med Lyst fra Favn til Favn;
-Han lalled ogsaa Holgers Navn.
+  Han lalled ogsaa Holgers Navn.
 
 Og Drengen tog jeg paa min Arm;
-Han leged Skjul ved Holgers Barm.
-End mindes jeg hin Stund med Lyst:
-- Gudsenglen leged i mit Bryst.
+  Han leged Skjul ved Holgers Barm.
+End mindes jeg hiin Stund med Lyst:
+  — Gudsenglen leged i mit Bryst.
 </poetry>
 </body>
 </text>
@@ -3189,62 +2981,57 @@ End mindes jeg hin Stund med Lyst:
 <text id="ingemann2005051503">
 <head>
   <title>Holger hos Fyrst Carvel</title>
-  <firstline>Jeg sad i Hedningsfyrstens Hal</firstline>
-  <source pages="79-80">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
+  <firstline>Jeg sad i Hedningfyrstens Hal</firstline>
+  <source pages="124-125"/>
   <keywords>knittelvers</keywords>
   <places>
     <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="golgotha" relation="mentioned"/>
+    <place ref="roncesvalles" relation="mentioned"/>
   </places>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg sad i Hedningsfyrstens Hal;
-   Jeg sang om Karl og Ronceval.
-I Sjælen blev hver Gnist til Glød;
-   Jeg sang om Rolands Heltedød.
+Jeg sad i Hedningfyrstens Hal;
+  Jeg sang om Carl og Ronceval.
+I Sjælen blev hver Gnist til Glød:
+  Jeg sang om Rolands Heltedød.
 
 Jeg sang om Holgers Valfartsgang
-   Mod Paradisets grønne Vang,
+  Mod Paradisets grønne Vang,
 Om Graven, som jeg sidst kom fra,
-   Om Libanon og Golgatha.
+  Om Libanon og Golgatha.
 
 Og som jeg sang med dygtig Røst,
-   For Hedningfyrsten til mit Bryst.
-Skøn Gloriant i Taarer laa;
-   Saa skøn jeg hende aldrig saa.
+  Foer Hedningfyrsten til mit Bryst.
+Skjøn Gloriant i Taarer laae;
+  Saa skjøn jeg hende aldrig saae.
 
-De laa paa Tæppet ved min Fod;
-   De Hjertets rige Skat oplod.
-Og jeg fornam helt sjælefro,
-   De delte Holger Danskes Tro.
+De laae paa Tæppet ved min Fod;
+  De Hjertets rige Skat oplod.
+Og jeg fornam heelt sjælefro,
+  De deelte Holger Danskes Tro.
 
-Kun eet de savned uden Haab:
-   De længtes efter kraftig Daab.
+<pb n="125" facs="125.jpg"/>Kun Eet de savned uden Haab:
+  De længtes efter kraftig Daab.
 Dog derfor vidste Holger Raad:
-   Jeg tog mig paa hin Klerkedaad.
+  Jeg tog mig paa hin Klerkedaad.
 
-Jeg læste, som jeg husked bedst;
-   Mig tyktes, jeg var ogsaa Præst.
+Jeg læste som jeg husked bedst;
+  Mig tyktes, jeg var ogsaa Præst.
 Jeg gav dem himmelsk Børneret;
-   Jeg spared ej paa hellig Tvæt.
+  Jeg spared ei paa hellig Tvæt.
 
-Jeg gav paa ny de kære Navn
-   Til Løsen i de frelstes Havn.
-Skøn Gloriant beholdt dog sit;
-   Men Drengen døbte jeg med mit.
+Jeg gav paany de kjære Navn
+  Til Løsen i de Frelstes Havn.
+Skjøn Gloriant beholdt dog sit;
+  Men Drengen døbte jeg med mit.
 
 Da blev jeg først for Alvor glad:
-   En kristen Drot i Østen sad;
-De Sjæle, Holger elsked mest,
-   Jeg frelste, som jeg kunde bedst.
+  En christen Drot i Østen sad;
+De Sjæle, Holger elsked meest,
+  Jeg frelste som jeg kunde bedst.
 </poetry>
 </body>
 </text>
@@ -3252,54 +3039,52 @@ De Sjæle, Holger elsked mest,
 <text id="ingemann2005051504">
 <head>
   <title>Felttoget i Orienten</title>
-  <firstline>Før fulgte jeg Carolus ved Elben og ved Rin</firstline>
-  <source pages="80-81">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Før fulgte jeg Carolus ved Elben og ved Rhin</firstline>
+  <source pages="126-127"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="rhine" relation="mentioned"/>
+    <place ref="himalayas" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Før fulgte jeg Carolus ved Elben og ved Rin:
+Før fulgte jeg Carolus ved Elben og ved Rhin:
 Han døbte Hedninghære med Mester Alcuin.
 
-Jeg selv det havde prøvet. Jeg saa, det kunde gaa.
-Helt frejdig tog jeg atter Stridshandkerne paa.
+Jeg selv det havde prøvet. Jeg saae, det kunde gaa.
+Heelt freidig tog jeg atter Stridshandskerne paa.
 
-Det tyktes mig, paa Vejen til Paradiset, smukt,
+Det tyktes mig, paa Veien til Paradiset, smukt,
 Om først jeg sprængte Porten, som Satan har lukt.
 
 Jeg kaldte mine Krigsmænd. Med Carvel holdt jeg Raad.
-Det tyktes dem alle fuldpriselig en Daad.
+Det tyktes dem Alle fuldpriselig en Daad.
 
-De raske Provençaler paa Hingstene sig svang:
+De raske Provencaler paa Hingstene sig svang;
 De vilde hele Verden erobre med Sang.
 
-John Friser blussed ivrigst; paa Gud han stoled mest.
-Den frommed stærke Ridder jeg nævned John Præst.
+<b>John Friser</b> blussed ivrigst; paa Gud han stoled meest.
+Den fromme stærke Ridder jeg nævned <b>John Præst</b>.
 
 Vi drog fra Himalaya med døbte Hindus-Hær;
-Dem, Ordet ej omvendte, vi vendte om med Spær.
+Dem, Ordet ei omvendte, vi vendte om med Spær.
 
-Vi døbte Tibetaner med Palmeskørt om Lænd;
+<pb n="127" facs="127.jpg"/>Vi døbte Tibetaner med Palmeskjørt om Lænd;
 En Dronning lig blandt Bier, der Kvinden sad blandt Mænd.
 
-Tartarers hvide Stammer, Mongolers gule Hær.
+Tartarers hvide Stammer, Mongolers gule Hær,
 Malayers brune Horder vi korsed med Sværd.
 
-Det kosted brodne Pander; dog ærligt var det ment:
-Vist Sjælene blev frelste, om ogsaa lidt sent.
+Det kosted brodne Pander; dog ærligt var det meent:
+Vist Sjælene blev frelste, om ogsaa lidt seent.
 
-Det Tog var ej til Ende, før trende Aar løb om;
-Med Sejer vi tilbage til Gloriant kom.
+Det Tog var ei til Ende, før trende Aar løb om:
+Med Seier vi tilbage til Gloriant kom.
 
-Til Ridderne jeg skænked de Kroner, jeg vandt.
-Selv tog jeg kun Kransen, skøn Gloriant mig bandt.
+Til Ridderne jeg skjænked de Kroner, jeg vandt.
+Selv tog jeg kun Krandsen, skjøn Gloriant mig bandt.
 </poetry>
 </body>
 </text>
@@ -3307,34 +3092,33 @@ Selv tog jeg kun Kransen, skøn Gloriant mig bandt.
 <text id="ingemann2002011521">
 <head>
   <title>Seierskrandsen</title>
-  <firstline>Krands fra Orientens Skove!</firstline>
+  <firstline>Krands fra Orientens Skove</firstline>
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
-  <quality>korrektur1,kilde</quality>
+  <source pages="128"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Krands fra Orientens Skove!
 Lilliebrev fra Ganges dybe Vove!
-Jeg forstod din Blomserrøst.
+  Jeg forstod din Blomsterrøst.
 Laurbærkrands med Himalayaluften!
 Krands med Virak- og med Myrrhaduften!
-Du med Oliebladet kom i Høst.
+  Du med Oliebladet kom i Høst.
 
 Krands fra Fredens Palmeskove!
 Irisbue paa Bedriftens Vove!
-Seierskrands med Perlers Skat!
+  Seierskrands med Perlers Skat!
 Du var med den Frommes Taarer badet.
-Arkens Due kom med Oliebladet -
-Og mit Øie saae mod Ararat.
+Arkens Due kom med Oliebladet —
+  Og mit Øie saae mod Ararat.
 </poetry>
 </body>
 </text>
@@ -3342,20 +3126,16 @@ Og mit Øie saae mod Ararat.
 <text id="ingemann2005051509">
 <head>
   <title>Afskeden i Bamyan</title>
-  <firstline>Tre Dage var jeg atter i Bamyan Gæst</firstline>
-  <source pages="82-83">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Tre Dage var jeg atter i Bamyan Gjest</firstline>
+  <source pages="129-130"/>
+  <places>
+    <place ref="bamyan" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Tre Dage var jeg atter i Bamyan Gæst;
+Tre Dage var jeg atter i Bamyan Gjest;
 Een Ridder kun mig fulgte, og det var John Præst.
 
 De raske Provençaler alt Spirene svang;
@@ -3364,32 +3144,32 @@ De vilde deres Riger regere med Sang.
 Den største Østens Krone blev Friserens Løn;
 Men først han vilde holde i Paradiset Bøn.
 
-Den Herlighed, dog Jorden har ejet engang,
-Jeg tænkte vel kan findes, er Vejen end lang.
+Den Herlighed, dog Jorden har eiet engang,
+Jeg tænkte vel kan findes, er Veien end lang.
 
 Jeg hilsed Kong Carvel; jeg tog ham i min Favn;
-Jeg nævned ham Carolus: det var hans Kristen-Navn.
+Jeg nævned ham Carolus: det var hans Christen-Navn.
 
-For Gloriant jeg bøjed mit Knæ for sidste Gang,
+For Gloriant jeg bøied mit Knæ for sidste Gang,
 Og lydelig Gudsenglen i Hjertet mig sang.
 
-Men aldrig i Verden mit Øje mere saa
-Den Paradisfugl, min Haand ej skulde naa.
+Men aldrig i Verden mit Øie mere saae
+Den Paradiisfugl, min Haand ei skulde naae.
 
-For sidste Gang tog jeg Smaadrengen paa Arm;
+<pb n="130" facs="130.jpg"/>For sidste Gang tog jeg Smaadrengen paa Arm;
 Til Afsked han putted sit Hoved i min Barm.
 
 Jeg kyssed hans Pande og hybenrøde Mund;
 Paa Hingsten jeg svang mig alt i den samme Stund.
 
 Om Paradiset sang ved min Side John Præst;
-Tilbage dog stirred den tankefuld Gæst.
+Tilbage dog stirred den tankefulde Gjest.
 
-Ved Bamyans Port jeg saa endnu en Gang
-Den dejliges Slør, som paa Lansespidsen hang.
+Ved Bamyans Port jeg saae endnu en Gang
+Den Deiliges Slør, som paa Lansespidsen hang.
 
 Paa Bamyans Taarn jeg skimted allersidst
-De Sjæle, jeg genfavner i Himmerig dog vist.
+De Sjæle, jeg gjenfavner i Himmerig dog vist.
 </poetry>
 </body>
 </text>
@@ -3410,57 +3190,102 @@ De Sjæle, jeg genfavner i Himmerig dog vist.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="133-134"/>
   <keywords>knittelvers</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="himalayas" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Der klang et Ord fra Holgers Bryst;
-Det klang med gamle Dages Røst:
-Farvel! det klang mod Syd, mod Nord -
-Mod Himalaya klang hint Ord.
+  Det klang med gamle Dages Røst:
+Farvel! det klang mod Syd, mod Nord —
+  Mod Himalaya klang hiint Ord.
 
 Farvel! jeg sang paa Bjergets Sti;
-I Sangen foer et Liv forbi.
+  I Sangen foer et Liv forbi.
 Det var som alle Traade brast,
-Der bandt min Sjæl til Verden fast.
+  Der bandt min Sjæl til Verden fast.
 
 Farvel! jeg sang i Taagers Dal;
-Det klang som hist paa Ronceval:
+  Det klang som hist paa Ronceval:
 Farvel, du Tid, fuldskjøn og stor,
-Med Carl og Ridderskabets Flor!
+  Med Carl og Ridderkabets Flor!
 
-Farvel, min rige Ungdomslyst,
-Med Jomfrusang og Ridderdyst!
+<pb n="134" facs="134.jpg"/>Farvel, min rige Ungdomslyst,
+  Med Jomfrusang og Ridderdyst!
 Farvel, du høie Stjernekrands,
-Men alle mine Kroners Glands!
+  Med alle mine Kroners Glands!
 
-Farvel! - jeg sang paa øde Sti -
-Er alt Bedriftens Dag forbi?
+Farvel! — jeg sang paa øde Sti —
+  Er alt Bedriftens Dag forbi?
 Har Seirens Ørn min Hjelm forladt?
-Og sjunger Livets Fugl Godnat?
+  Og sjunger Livets Fugl Godnat?
 
 Bortfoer en Slægt med Heltery,
-Som Blad i Skov, som Glimt i Sky?
-Blev Glandsen Skin - det Store smaat?
-Og Verden gammel - Livet graat?
+  Som Blad i Skov, som Glimt i Sky?
+Blev Glandsen Skin — det Store smaat?
+  Og Verden gammel — Livet graat?
 
-Endnu min Kind var bruun og rød:
-Endnu var ei min Ungdom død.
-Mit Haar var guult, min Pande glat -
-Endnu sang Holger ei Godnat.
+Endnu min Kind var bruun og rød;
+  Endnu var ei min Ungdom død.
+Mit Haar var guult, min Pande glat —
+  Endnu sang Holger ei Godnat.
 
-Farvel! jeg sang dog til hin Tid
-Med Jomfrusang og Ridder-Id.
-Tilbage saae min Sjæl endnu -
-Jeg kom en herlig Dag ihu.
+Farvel! jeg sang dog til hiin Tid
+  Med Jomfrusang og Ridderiid.
+Tilbage saae min Sjæl endnu:
+  Jeg kom en herlig Dag ihu.
+</poetry>
+</body>
+</text>
+
+<text id="ingemann20261115166" variant="ingemann2001101101">
+<head>
+  <title>Holgers Sang om Livet</title>
+  <firstline>Jeg saae kun tilbage. Mig Livets Lyst bortklang</firstline>
+  <source pages="135-136" facsimile-pages="136-137"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg saae kun tilbage. Mig Livets Lyst bortklang;
+Da toned mig i Sjælen saa trøstelig en Sang:
+See frem, men ei tilbage! — Hvad Hjertet attraaer,
+Maaskee dog engang under Solen du naaer.
+
+Lad Bølger bortrulle! lad Løvet flagre hen!
+Rask bruser dog Strømmen, frisk Skoven staaer igjen.
+Lad Solen formørkes og Maanen tage af!
+Dog Sol og Maane stiger fuldkarsk over Hav.
+
+Lad rulle det Svundne i Tidernes Elv!
+Det Liv der ei bortfarer, er Sjælen dog selv.
+Har Sjælens Liv ei Ende, saa er der ingen Død,
+Og vi er dog saagodtsom i Paradiset fød.
+
+Der springer en Kilde ved Livstræets Rod:
+I Verdenshavet strømmer Udødeligheds Flod;
+Og Havet ei ældes, og Jordens grønne Øe
+Hver Sommer staaer forynget i livsgrønne Søe.
+
+<pb n="136" facs="136.jpg"/>Een Draabe kun af Kilden, hvor først den udsprang!
+Een Blomst kun af Grenen, hvor Livets Æbler hang!
+Og Haaret aldrig graaner, og Sindet bli'er ei tungt;
+Men Hjertet gløder evig lyksaligt og ungt.
+
+Hvor Livskilden springer, didhen staaer min Hu.
+Hvor Livstræet blomstred, der blomstrer det endnu.
+See frem, men ei tilbage! — Hvad Sjælen attraaer,
+Maaskee dog engang under Solen du naaer.
+
+Men naaer under Solen ei Sjælen hvad den vil —
+Saa er der andre Sole og andre Stjerner til.
+Og slukkes alle Sole og Stjerner engang —
+Dog Livets Kilde springer, hvor evig den sprang.
 </poetry>
 </body>
 </text>
@@ -3468,212 +3293,203 @@ Jeg kom en herlig Dag ihu.
 <text id="ingemann2005051902">
 <head>
   <title>Det lukkede Land</title>
-  <firstline>Vi red i Landet, hvor Sol stod op</firstline>
-  <source pages="85-86">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Vi reed i Landet, hvor Sol stod op</firstline>
+  <source pages="137-138"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Vi red i Landet, hvor Sol stod op,
-   I Ørknens Sand og ved Havets Vove,
-I Flodens Dal og paa Bjærgets Top
-   Og dybt gennem natsorte Skove.
+Vi reed i Landet, hvor Sol stod op,
+  I Ørknens Sand og ved Havets Vove,
+I Flodens Dal og paa Bjergets Top
+  Og dybt gjennem natsorte Skove.
 
 Vi hørte Bøflens og Panterens Røst
-   Og Brøl fra Sjakalens og Tigerens Struber
+  Og Brøl fra Schakalens og Tigerens Struber
 Og Hyl fra Hyæners hungrige Bryst
-   Og Hvislen fra Slangernes Gruber.
+  Og Hvislen fra Slangernes Gruber.
 
 Men lukt var Landet, hvor Fred kan bo,
-   Hvor ej de skrigende Drifter stride,
+  Hvor ei de skrigende Drifter stride,
 Hvor Lammet leger med Løvens Klo,
-   Og Kiddet ved Parderens Side.
+  Og Kiddet ved Parderens Side.
 
-En Nat jeg drømte ved Fjældets Fod:
-   Ved Afgrundsdybet lød Varselsrøster;
-Det var, som ved Verdens Ende jeg stod,
-   Ved Jordlivets yderste Kyster.
+En Nat jeg drømte ved Fjeldets Fod:
+  Ved Afgrundsdybet lød Varselsrøster;
+Det var som ved Verdens Ende jeg stod,
+  Ved Jordlivets yderste Kyster.
 
-Da braged det over Fjældet med Lyn,
-   og spaltet syntes mig Bjærgemuren:
-Et Glanshav blænded mig Sans og Syn -
-   Forklaret var Verdensnaturen.
+<pb n="138" facs="138.jpg"/>Da braged det over Fjeldet med Lyn,
+  Og spaltet syntes mig Bjergemuren:
+Et Glanshav blænded mig Sans og Syn —
+  Forklaret var Verdensnaturen.
 
 Jeg stirred ind i et fremmed Land;
-   Dets Herlighed har i Verden ej Lige.
-Jeg saa, hvad Læber ej nævne kan
-   Og Tunger ret aldrig udsige.
+  Dets Herlighed har i Verden ei Lige.
+Jeg saae, hvad Læber ei nævne kan
+  Og Tunger ret aldrig udsige.
 
-Et Glimt, lig Tankens Lyn i mit Sind -
-   Et Blink - og Glansen var atter slukket.
-Eet Blik kun i Paradishaven ind -
-   Et Nu kun - og Fjældet var lukket.
+Et Glimt, lig Tankens Lyn i mit Sind —
+  Et Blink — og Glansen var atter slukket.
+Eet Blik kun i Paradiishaven ind —
+  Et Nu kun — og Fjeldet var lukket.
 
-Mig syntes, jeg saa i det ene Blink
-   Hvad tusind Liv skulde aabenbare.
-Mig syntes, jeg saa Kerubens Vink;
-   Mit Liv han vilde bevare.
+Mig syntes, jeg saae i det ene Blink
+  Hvad tusind Liv skulde aabenbare.
+Mig syntes, jeg saa Cherubens Vink;
+  Mit Liv han vilde bevare.
 
 Mig syntes, jeg vidste, hvor Kilden flød
-   Med Blomst af Urten, som gror mod Døden.
-Jeg vaagned ene. Min Hingst laa død.
-   Frem gik jeg mod Morgenrøden.
+  Med Blomst af Urten, som groer mod Døden.
+Jeg vaagned ene. Min Hingst laae død.
+  Frem gik jeg mod Morgenrøden.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005052301">
 <head>
-  <title>Rejsen til Vidunderlandet</title>
-  <firstline>Jeg Kroner havde vundet, men gav dem bort igen</firstline>
-  <source pages="87-90">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <title>Reisen til Vidunderlandet</title>
+  <firstline>Jeg Kroner havde vundet, men gav dem bort igjen</firstline>
+  <source pages="139-144"/>
+  <places>
+    <place ref="himalayas" relation="setting"/>
+    <place ref="avalon" relation="setting"/>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Jeg Kroner havde vundet, men gav dem bort igen;
-   Mit Navn fløj med Ry over Jorden.
-Den sidste Ven, mig fulgte, var ogsaa faret hen:
-   - Jeg tænkte paa Folket i Norden.
+Jeg Kroner havde vundet, men gav dem bort igjen;
+  Mit Navn fløi med Ry over Jorden.
+Den sidste Ven, mig fulgte, var ogsaa faret hen;
+  Jeg tænkte paa Folket i Norden.
 
 Hos Havet stod jeg ene, ved Orientens Strand;
-   Jeg steg paa den flydende Snekke
-Den hele vide Verden dog ejed intet Land,
-   Hvor Muld mig i Grav skulde dække.
+  Jeg steeg paa den flydende Snekke.
+Den hele vide Verden dog eied intet Land,
+  Hvor Muld mig i Grav skulde dække.
 
-Jeg vidste ej hvorlunde; det var vist ingen Drøm:
-   Min Fod havde vandret saa vide;
+Jeg vidste ei hvorlunde; det var vist ingen Drøm:
+  Min Fod havde vandret saa vide;
 Mig syntes, jeg var kommen til Paradisets Strøm,
-   Med Glavind og Sværd ved min Side.
+  Med Glavind og Sværd ved min Side.
 
 Mig syntes, jeg var kommen til Paradisets Port;
-   Den stod mellem Afgrund og Himmel.
+  Den stod mellem Afgrund og Himmel.
 Men alt hvad jeg banked, det hjalp dog ikke stort;
-   Ved Afgrunden styrted jeg svimmel.
+  Ved Afgrunden styrted jeg svimmel.
 
-Mig syntes, jeg var tørstig, men Verden var for tør;
-   Dog Tankerne blev mig fuldmilde -
-Og da min Sjæl blev læsket, som ej i Verden før:
-   Jeg øste af Livsstrømmens Kilde.
+<pb n="140" facs="140.jpg"/>Mig syntes, jeg var tørstig, men Verden var for tør;
+  Dog Tankerne blev mig fuldmilde —
+Og da min Sjæl blev lædsket, som ei i Verden før:
+  Jeg øste af Livstrømmens Kilde.
 
-Jeg trode det til visse: jeg aldrig skulde dø;
-   Mit Liv var som Aandens i Norden;
-Min Sjæl var som Folkets paa Daners grønne Ø:
-   Den aldrig udslettes af Jorden.
+Jeg troede det tilvisse: jeg skulde aldrig døe;
+  Mit Liv var som Aandens i Norden;
+Min Sjæl var som Folkets paa Daners grønne Øe:
+  Den aldrig udslettes af Jorden.
 
-Mig lysted nu at sejle til Verdens Ende hen;
-   Helt underligt var jeg til Mode:
-I Syden og Norden jeg ejed ingen Ven;
-   End ej mig de Danske forstode.
+Mig lysted nu at seile til Verdens Ende hen;
+  Heelt underligt var jeg tilmode:
+I Syden og i Norden jeg eied ingen Ven;
+  End ei mig de Danske forstode.
 
-De Mænd, jeg æred højest, de faldt paa Ronceval;
-   Og død var Carolus den Store.
-De kæreste forlod jeg ved Himalayas Dal;
-   - Nu Bølgerne med mig bortfore.
+De Mænd, jeg æred høiest, de faldt paa Ronceval;
+  Og død var Carolus den Store.
+De Kjæreste forlod jeg ved Himalayas Dal;
+  — Nu Bølgerne med mig bortfore.
 
-Orkaner om mig brølte; paa Bølgebjerg jeg for;
-   Og nu blev jeg lystig til Mode.
-Jeg hejsed alle Sejl og jeg kyled bort mit Ror -
-   Til Havet jeg trygt mig betro'de.
+Orkaner om mig brølte; paa Bølgebjerg jeg foer;
+  Og nu blev jeg trøstig tilmode.
+Jeg heised alle Seil, og jeg kyled bort mit Roer;
+  Til Havet jeg tryg mig betroede.
 
-Jeg vidste ej hvorlunde; det var dog ingen Drøm:
-   Mit Skib var blandt Klipper begravet.
-Ud Naglerne var fløjet; hver Planke drev for Strøm;
-   Men jeg red paa Masten i Havet.
+<pb n="141" facs="141.jpg"/>Jeg vidste ei hvorlunde; det var dog ingen Drøm:
+  Mit Skib var blandt Klipper begravet.
+Ud Naglerne var fløiet; hver Planke drev for Strøm;
+  Men jeg reed paa Masten i Havet.
 
-Jeg red som i Triumf til saa underfuld en Ø;
-   Og Øen jeg kendte fuldnøje:
-Der skinned tusind Taarne og spejled sig i Sø
-   Med Kroner og gyldene Fløje.
+Jeg reed som i Triumph til saa underfuld en Øe;
+  Og Øen jeg kjendte fuldnøie:
+Der skinned tusind Taarne og speiled sig i Søe
+  Med Kroner og gyldene Fløie.
 
-Det Slot jeg kendte nøje: jeg før engang det saa,
-   Da svandt det som Sky over Voven.
-Nu stod det for mit Øje; paa Klippetind det laa
-   Med Paladser i Guldæbleskoven.
+Det Slot jeg kjendte nøie; jeg før engang det saae;
+  Da svandt det som Sky over Voven.
+Nu stod det for mit Øie; paa Klippetind det laae
+  Med Palladser i Guldæbleskoven.
 
-Altanen jeg genkendte; den spejled sig i Sø
-   Med Laurer og Myrter saa grønne.
-Der vinked mig fra Svalen paa underfulde Ø
-   Med Kransen den skønneste skønne.
+Altanen jeg gjenkjendte; den speiled sig i Søe
+  Med Laurer og Myrther saa grønne.
+Der vinked mig fra Svalen paa underfulde Øe
+  Med Krandsen den skjønneste Skjønne.
 
-Om Rosenkinden bølged de rige Lokkers Strøm;
-   Det dejlige Hoved var bøjet.
-Det var, som Naturens den hemmeligste Drøm
-   Var malet den skønne i Øjet.
+Om Rosenkinden bølgede de rige Lokkers Strøm;
+  Det deilige Hoved var bøiet.
+Det var som Naturens den hemmeligste Drøm
+  Var maled den Skjønne i Øiet.
 
-Jeg vidste ej hvorlunde - jeg fløj i hendes Favn,
-   Som bar mig usynlige Vinger.
-Hun kransed mine Lokker; hun nævned mig ved Navn;
-   Den klang mig, som Englerøst klinger.
+<pb n="142" facs="142.jpg"/>Jeg vidste ei hvorlunde; jeg fløi i hendes Favn,
+  Som bar mig usynlige Vinger.
+Hun krandsed mine Lokker; hun nævned mig ved Navn;
+  Det klang mig som Englerøst klinger.
 
-,,Jeg saa dig i din Vugge! Jeg saa din Heltegang!''
-   - Saa sang hun den skønneste skønne -
-,,Jeg holder, hvad jeg loved og ved din Vugge sang:
-   Udødeligheds Krans skal dig lønne!
+”Jeg saae dig i din Vugge; jeg saae din Heltegang”
+  — Saa sang hun den skjønneste Skjønne —
+”Jeg holder hvad jeg loved og ved din Vugge sang:
+  ”Udødeligheds Krands skal dig lønne.”
 
-,,Det største var din Attraa; det største blev din Løn;
-   Din Tid dog en Stund du skal glemme.
-Naturen dig kaared til alle Tiders Søn,
-   Og helt skal du Livet fornemme.
+”Det Største var din Attraa; det Største blev din Løn;
+  ”Din Tid dog en Stund du skal glemme.
+”Naturen dig kaared til alle Tiders Søn,
+  ”Og heelt skal du Livet fornemme.”
 
-,,Du øste af den Kilde, du øste af det Væld,
-   Som underfuld Verden forynger.
-Du saa gennem Porten ved Helligdommens Fjæld,
-   Hvor Fuglen i Livstræet synger.
+”Du øste af den Kilde, du øste af det Væld,
+  ”Som underfuld Verden forynger.
+”Du saae gjennem Porten ved Helligdommens Fjeld,
+  ”Hvor Fuglen i Livstræet synger.”
 
-,,Se! derfor skal du leve, naar Verden bliver graa;
-   Mit Liv skal din Sjæl gennemstrømme.
-Til Daad skal du atter med Kæmpekraft udgaa;
-   Til dit Folk dig forstaar, skal du drømme.
+”See! derfor skal du leve, naar Verden bliver graa;
+  ”Mit Liv skal din Sjæl gjennemstrømme.
+”Til Daad skal du atter med Kæmpekraft udgaae;
+  ”Til dit Folk dig forstaaer, skal du drømme.”
 
-,,Hvad Verden kalder Drøm, er dog Sandhed i min Favn,
-   I Naturens forborgneste Rige:
-De hemmeligste Tanker, de hemmeligste Savn
-   Skal til Klarhed fra Dunkelhed stige.
+<pb n="143" facs="143.jpg"/>”Hvad Verden kalder Drøm, er dog Sandhed i min Favn,
+  ”I Naturens forborgneste Rige:
+”De hemmeligste Tanker, de hemmeligste Savn
+  ”Skal til Klarhed fra Dunkelhed stige.”
 
-,,Den Krone, du har vundet, er underfuld og stor;
-   En større dog venter dig siden:
-Dem gemmes ved din Vugge; den straaler højt i Nord -
-   Den er Evighedskernen i Tiden.''
+”Den Krone, du har vundet, er underfuld og stor;
+  ”En større dog venter dig siden:
+”Den gjemmes ved din Vugge; den straaler høit i Nord —
+  ”Den er Evighedskjernen i Tiden.”
 
-Jeg vidste ej hvorlunde; det var dog ingen Drøm:
-   Hvad før jeg kun drømte, var fundet;
+Jeg vidste ei hvorlunde; det var dog ingen Drøm:
+  Hvad før jeg kun drømte var fundet;
 Men dukket var mit Hoved i Glemselens Strøm,
-   Og brat var hvert Minde forsvundet.
+  Og brat var hvert Minde forsvundet.
 
-De gamle Dages Billed fortrulled i et Nu:
-   Carolus og Roland var glemte;
-Skøn Gloriant selv kom mit Sind ej mer i Hu -
-   I Slør laa dog Minderne gemte.
+De gamle Dages Billed bortrulled i et Nu:
+  Carolus og Roland var glemte;
+Skjøn Gloriant selv kom mit Sind ei meer ihu —
+  I Slør laae dog Minderne gjemte.
 
-Jeg leved hos den høje udødelige Fe
-   I Morganas og Alfernes Rige.
-Mit Øre kunde høre, og mit Øje kunde se,
-   Hvad Aartusinder først kan udsige.
+Jeg leved hos den høie udødelige Fee,
+  I Morganas og Alfernes Rige.
+Mit Øre kunde høre, mit Øie kunde see
+  Hvad Aartusinder først kan udsige.
 
-Hvad Skjaldene kun aned, hvad Genien kun saa,
-   Som slumrer i Folkenes Sjæle,
-Det klart i den dejliges dybe Øjne laa,
-   Det klang med den dejliges Mæle.
+<pb n="144" facs="144.jpg"/>Hvad Skjaldene kun aned, hvad Genien kun saae,
+  Som slumrer i Folkenes Sjæle,
+Det klart i den Deiliges dybe Øine laae,
+  Det klang med den Deiliges Mæle.
 
-Magnet-Øen nævnes hin underfulde Ø;
-   Der Seklet som Døgn mig er svundet.
-Hvor Avalun opstiger af Verdensdybets Sø,
-   Mig det dybeste Liv er oprundet.
+Magnet-Øen nævnes hiin underfulde Øe;
+  Der Seclet som Døgn mig er svundet.
+Hvor Avalun opstiger af Verdensdybets Søe,
+  Mig det dybeste Liv er oprundet.
 </poetry>
 </body>
 </text>
@@ -3681,58 +3497,54 @@ Hvor Avalun opstiger af Verdensdybets Sø,
 <text id="ingemann2005051506">
 <head>
   <title>Festen paa Avalun</title>
-  <firstline>I Sommernatsfest paa Morganas Ø</firstline>
-  <source pages="91-92">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>I Sommernatsfest paa Morganas Øe</firstline>
+  <source pages="145-146"/>
+  <places>
+    <place ref="avalon" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-I Sommernatsfest paa Morganas Ø
-   Jeg hilsed Alfernes Konning.
-Skønt Oberon bar paa Sky over Sø
-   Til Festen sin lille Dronning.
+I Sommernatsfest paa Morganas Øe
+  Jeg hilsed Alfernes Konning.
+Skjønt Oberon bar paa Sky over Søe
+  Til Festen sin lille Dronning.
 Han er en Smaadreng med Vinger paa
-   Og Guldkrans i gyldne Lokker.
+  Og Guldkrands i gyldne Lokker.
 Den Drot kan Sjælenes Liv forstaa,
 Som toner fra Fuglestruber smaa
-   Og drømmer i Blomsterklokker.
+  Og drømmer i Blomsterklokker.
 
 I Oberons Blik der tindrer en Ild,
-   Lig Blink fra brændende Kloder;
+  Lig Blink fra brændende Kloder;
 Og tit mod sin Dronning underlig vild
-   Opflammer Morganas Broder.
+  Opflammer Morganas Broder.
 Da er der Storm i Naturens Bryst:
-   Bleg flygter den Lilje-Dronning.
-Men naar de kan høre Morganas Røst.
-Titania kommer igen med Lyst,
-   Genfavnet af Alfers Konning.
+  Bleg flygter den Lillie-Dronning.
+Men naar de kan høre Morganas Røst,
+Titania kommer igjen med Lyst,
+  Gjenfavnet af Alfers Konning.
 
-Da bliver der Fest paa Morganas Ø:
-   Glad hilses Hjerternes Konning;
-Med Natsværmer-Hær paa Sky over Sø
-   Han bærer sin lille Dronning.
+<pb n="146" facs="146.jpg"/>Da bliver der Fest paa Morganas Øe:
+  Glad hilses Hjerternes Konning;
+Med Natsværmer-Hær paa Sky over Søe
+  Han bærer sin lille Dronning.
 Sit gyldne Valdhorn blæser han paa;
-   Hun ryster de gule Lokker.
+  Hun ryster de gule Lokker.
 Det kan hver slumrende Sjæl forstaa:
 Det jubler fra Nattergalstruber smaa;
-   Det dufter fra Liljeklokker.
+  Det dufter fra Lillieklokker.
 
-Titania svæver i Glans saa mild
-   Som Straalen fra Maanernes Kloder.
-I Alfernes Dans ved Lysfugle-Ild
-   Hun favner Morganas Broder.
+Titania svæver i Glands saa mild
+  Som Straalen fra Maanernes Kloder.
+I Alfernes Dands ved Lysfugle-Ild
+  Hun favner Morganas Broder.
 Da er der Fred i Naturens Bryst:
-   Hver Smaablomst nikker og nejer;
-Hvert Træ, hver Busk og hvert Siv faar Røst,
+  Hver Smaablomst nikker og neier;
+Hvert Træ, hver Busk og hvert Siv faaer Røst;
 Paa dansende Bølger sjunger med Lyst
-   Hver Luftning om Kærligheds Sejer.
+  Hver Luftning om Kjærligheds Seier.
 </poetry>
 </body>
 </text>
@@ -3740,72 +3552,65 @@ Paa dansende Bølger sjunger med Lyst
 <text id="ingemann2005052302">
 <head>
   <title>Alfepoesien</title>
-  <firstline>Oberon svang sig op paa mit Skød</firstline>
-  <source pages="92-94">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Oberon svang sig op paa mit Skjød</firstline>
+  <source pages="147-149"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Oberon svang sig op paa mit Skød;
-   Der sad han med Spir og Krone.
+Oberon svang sig op paa mit Skjød;
+  Der sad han med Spiir og Krone.
 Titania sad paa Fjerpuden blød,
-   Paa Guldfasanvingens Trone.
+  Paa Guldfasanvingens Throne.
 Oberon rysted sin gyldne Lok;
-   Hans Krone faldt mig i Haanden.
+  Hans Krone faldt mig i Haanden.
 Glad sang den dansende Alfeflok;
-   Men dybt jeg rørtes i Aanden.
+  Men dybt jeg rørtes i Aanden.
 
-Det var, som Kronen, jeg holdt i Haand,
-   Var hele Naturens Hjerte;
-Det var, som det gyldne magiske Baand
-   Omslutted al Fryd og Smerte.
+Det var som Kronen, jeg holdt i Haand,
+  Var hele Naturens Hjerte;
+Det var som det gyldne magiske Baand
+  Omslutted af Fryd og Smerte.
 Oberon gav mig sin Herskerstav;
-   Hans Spir var en Lotosstængel:
+  Hans Spiir var en Lotusstængel:
 Min Sjæl mig syntes et bundløst Hav,
-   Og Hjertet en mægtig Engel.
+  Og Hjertet en mægtig Engel.
 
-Oberon gav sin Dronning et Nik;
-   Hun fløj fra sin Guldfugltrone.
+<pb n="148" facs="148.jpg"/>Oberon gav sin Dronning et Nik;
+  Hun fløi fra sin Guldfugltrone.
 Hun smiled med sælsomt Maaneskinsblik;
-   I Luften hun svang sin Krone.
+  I Luften hun svang sin Krone.
 Og Kronen blev til et Regnbueslør:
-   Det fløj mellem Jord og Himmel.
-Ret aldrig skued mit Øje før
-   Saa dejlig en Farvevrimmel.
+  Det fløi mellem Jord og Himmel.
+Ret aldrig skued mit Øie før
+  Saa deilig en Farvevrimmel.
 
-Ret aldrig skued mit Øje før
-   Slig Pragt mellem Jord og Himmel:
-Igennem det flyvende Regnbueslør
-   Der skinned en Særsyn-Vrimmel.
-I Lysglans flagred der Piger smaa
-   Med Stjerner paa Sommerfuglvinger.
-Det var, som jeg alle Guds Engle saa;
-   Det klang, som Sfæresang klinger.
+Ret aldrig skued mit Øie før
+  Slig Pragt mellem Jord og Himmel:
+Igjennem det flyvende Regnbueslør
+  Der skinned en Særsyn-Vrimmel.
+I Lysglands flagred der Piger smaa
+  Med Stjerner paa Sommerfuglvinger.
+Det var som jeg alle Guds Engle saae;
+  Det klang som Sphæresang klinger.
 
 Og det var Oberons Horn, som klang;
-   Han stod paa mit Skød og blæste.
-Det var, som hele Naturen sang;
-   I Drengens Øjne jeg læste:
+  Han stod paa mit Skjød og blæste.
+Det var som hele Naturen sang;
+  I Drengens Øjne jeg læste:
 De tindred med tusind Stjerners Ild,
-   Med tusinde Maaners Flammer.
+  Med tusinde Maaners Flammer.
 Den mægtige Klang, snart dyb, snart mild,
-   Udvided mit Hjertekammer.
+  Udvided mit Hjertekammer.
 
-Mig syntes, den hele Verden sang,
-   Og selv jeg højt maatte sjunge.
-Det var, som min Røst i Skyerne klang.
-   Hvert Baand var løst fra min Tunge.
+<pb n="149" facs="149.jpg"/>Mig syntes den hele Verden sang,
+  Og selv jeg høit maatte sjunge.
+Det var som min Røst i Skyerne klang;
+  Hvert Baand var løst fra min Tunge.
 Men Sangen med hele Naturens Røst,
-   Hun Sfæresang uden Lige -
-Den steg fra den skønneste skønnes Bryst -
-   Den klang fra Morganas Rige.
+  Hiin Sphæresang uden Lige —
+Den steg fra den skjønneste Skjønnes Bryst —
+  Den klang fra Morganas Rige.
 </poetry>
 </body>
 </text>
@@ -3814,107 +3619,89 @@ Den steg fra den skønneste skønnes Bryst -
 <head>
   <title>Alfespøgen</title>
   <firstline>Dagenes rullende Strøm bortgik</firstline>
-  <source pages="94-95">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <source pages="150-151"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Dagenes rullende Strøm bortgik;
-   Forglemt var Kamptidens Luer.
+  Forglemt var Kamptidens Luer.
 Forglemt var Heltenes Daad og Skik;
 Da brast et Slør ved Titanias Nik;
-Jeg studsed og saa med smilende Blik
-   En Lejr af Kæmper som Fluer.
+Jeg studsed og saae med smilende Blik
+  En Leir af Kæmper som Fluer.
 
-Jeg saa, hvor Klippen takked sig stejl,
-   I Maanelys Spindelvævs-Telte.
-Paa Søen blev Guldsmedvinger til Sejl;
-Mit Øje saa i et magisk Spejl
-Et Spil af Kæmpers pudsige Fejl,
-   Udført af Puslingehelte.
+Jeg saae, hvor Klippen takked sig steil,
+  I Maanelys Spindelvævs-Telte.
+Paa Søen blev Guldsmedvinger til Seil;
+Mit Øie saae i et magisk Speil
+Et Spil af Kæmpers pudsige Feil,
+  Udført af Puslingehelte.
 
 De snapped Oberon Hornet af Haand;
-   De satte det bagvendt for Munden.
+  De satte det bagvendt for Munden.
 De smælded med Svøbe; de klapped med Vaand;
-Hver Hornet indaanded sin skæmtende Aand;
+Hver Hornet indaanded sin skjemtende Aand;
 Da løsned Naturens Luner hvert Baand,
-   Og Spøgen blev broget i Lunden.
+  Og Spøgen blev broget i Lunden.
 
-Paa Hovedet dansed Vætternes Hær;
-   Forvandlet var alle til Gække.
+<pb n="151" facs="151.jpg"/>Paa Hovedet dandsed Vætternes Hær;
+  Forvandlet var Alle til Gjække.
 Der valsed Smaaharer med Harnisk og Sværd,
-Og Pindsvinet nejed med Vifte og Fjer.
-Godmodigt i venlige Sommernatsskær
-   Klang Latter fra Busk og fra Hække.
+Og Pindsvinet neied med Vifte og Fjer.
+Godmodigt i venlige Sommernatskjær
+  Klang Latter fra Busk og fra Hække.
 
 Den bagvendte Verden forlysted en Stund.
-   Smaaskælmerne tog jeg paa Armen;
-Slet ingen de saared i Gækkenes Lund.
+  Smaaskjelmerne tog jeg paa Armen;
+Slet Ingen de saared i Gjækkenes Lund.
 Men da satte Oberon Hornet til Mund;
-Morgana sang Lunernes Vrimmel i Blund -
-   Og Hjertet sig løfted i Barmen.
+Morgana sang Lunernes Vrimmel i Blund —
+  Og Hjertet sig løfted i Barmen.
 
 Titania Sløret mod Stjernerne svang;
-   Dybt Oberon blæste i Skoven.
-Fluks alle Smaaalfer saa nydelig sprang,
+  Dybt Oberon blæste i Skoven.
+Flux alle Smaaalfer saa nydelig sprang,
 Og Fuglene jubled, og Kilderne sang,
 I Skoven det sused, i Skyen det klang,
-   Og Fiskene leged i Voven.
+  Og Fiskene leged i Voven.
 
 Morgana hæved i Natten sin Røst
-   Med Toner fra Livsstrømmens Kilde.
-Det klang som fra Kærligheds evige Kyst -
+  Med Toner fra Livsstrømmens Kilde.
+Det klang som fra Kjærligheds evige Kyst —
 Da bæved hvert Hjerte af saligste Lyst;
 Hvert Lune blev fromt i Naturens Bryst;
-   De spøgende Alfer blev stille.
+  De spøgende Alfer blev stille.
 </poetry>
 </body>
 </text>
 
 <text id="ingemann2005051505">
 <head>
-  <title>Hvilen paa Morgana</title>
-  <firstline>Sad jeg ved Morganas Side paa den underfulde Ø</firstline>
-  <source pages="95-96">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <title>Hvilen hos Morgana</title>
+  <firstline>Sad jeg ved Morganas Side paa den underfulde Øe</firstline>
+  <source pages="152-153"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Sad jeg ved Morganas Side paa den underfulde Ø -
-Lytted jeg til hendes Tale ved den dybe klare Sø -
-Saa jeg i den skønnes Øjne, hvor et Hav af Tanker laa -
-Kunde Tidens Hjul udrullet, dog det syntes stille staa.
-
-Og som Kernen samlet gemmer Egens Blad og Blomst og Gren,
+Sad jeg ved Morganas Side paa den underfulde Øe,
+Lytted jeg til hendes Tale ved den dybe klare Søe,
+Saae jeg i den Skjønnes Øine, hvor et Hav af Tanker laae —
+Kunde Tidens Hjul udrullet, dog det syntes stille staae.
+Og som Kjærnen samlet gjemmer Egens Blad og Blomst og Green,
 Alle Tanker i min Hjerne sammenslynged sig i een.
 Alle Ønsker i mit Hjerte, alle Haab og alle Savn
 Sammensmelted og opløstes i den ene Tankes Favn.
-
 Det var Fred foruden Lige; det var en lyksalig Ro;
-Det var Hvile, det var Stilhed, som vi hørte Græsset gro.
-Det var, som Alverdenspulsen i mit eget Hjerte slog;
-Det var, som Naturen aanded, naar hun salig Aande drog.
-
-I hvert Ord fra hendes Læbe aanded Sjælen af en Tid.
-Med den store Aandens Vilje, som udpræges i dens Id.
-Hvad de tusind Slægters Sjæle efterstræbe ubevidst,
+Det var Hvile, det var Stilhed, som vi hørte Græsset groe.
+Det var som Alverdenspulsen i mit eget Hjerte slog;
+Det var som Naturen aanded, naar hun salig Aande drog.
+I hvert Ord fra hendes Læbe aanded Sjælen af en Tid,
+Med den store Aandens Villie, som udpræges i dens Id.
+<pb n="153" facs="153.jpg"/>Hvad de tusind Slægters Sjæle efterstræbe ubevidst,
 Blev en Tankesol af Straaler, som udvælded af en Gnist.
-
-- Og jeg saa, hvad selv jeg vilde; hun blev Storhedstankens Tolk,
+Og jeg saae hvad selv jeg vilde; hun blev Storhedstankens Tolk,
 Som udfolder sig til Klarhed i mit Liv og i mit Folk.
 </poetry>
 </body>
@@ -3923,68 +3710,65 @@ Som udfolder sig til Klarhed i mit Liv og i mit Folk.
 <text id="ingemann2005051904">
 <head>
   <title>Holger ved Mindernes Kilde</title>
-  <firstline>Hvor Oberon lever, hin Hjerterigets Drot</firstline>
-  <source pages="96-98">
-    <author>B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor type="editor">Kristoffer Nyrop</editor>
-    <place>Kbh.</place>
-    <publisher>Dansklærerforeningen</publisher>
-    <year>1893</year>
-  </source>
-  <quality>korrektur1,kilde,side</quality>
+  <firstline>Hvor Oberon lever, hiin Hjerterigets Drot</firstline>
+  <source pages="154-156"/>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="isefjord" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Hvor Oberon lever, hin Hjerterigets Drot,
-   Og Titania, Synernes Dronning,
+Hvor Oberon lever, hiin Hjerterigets Drot,
+  Og Titania Synernes Dronning,
 Jeg mødtes paa Morganas vidunderlige Slot
-   Med Arthur, hin herlige Konning.
+  Med Artur hiin herlige Konning.
 
-Vi Daadskraften øved; vi red i mægtig Dyst.
-   Hver Dag vandt vi Hæder og Kranse.
+Vi Daadskraften øved; vi reed i mægtig Dyst.
+  Hver Dag vandt vi Hæder og Krandse.
 Hver Nat der klinged Harper i Lunden med stor Lyst;
-   Da saa vi paa Alfernes Danse.
+  Da saae vi paa Alfernes Danse.
 
-Og Dagene bortsvang sig med Øjeblikkets Flugt,
-   Og Nætternes Fryd havde Vinger.
-Den hele Verden ejer dog intet Liv saa smukt;
-   Men brat som en Sang det bortklinger,
+Og Dagene bortsvang sig med Øieblikkets Flugt,
+  Og Nætternes Fryd havde Vinger.
+Den hele Verden eier dog intet Liv saa smukt;
+  Men brat, som en Sang det bortklinger.
 
-Aarhundreder bortfløj; jeg mærked ej dertil;
-   Da stod jeg en Kvæld ved en Kilde.
+Aarhundreder bortfløi; jeg mærked ei dertil;
+  Da stod jeg en Kvæld ved en Kilde.
 Jeg lytted til Vovernes underlige Spil:
-   De hvisked saa venlige milde.
+  De hvisked saa venlige milde.
 
-Jeg bøjed mit Hoved; jeg aned dog et Savn;
-   - End bar jeg Forglemmelsens Krone:
-Jeg husked end ikke mit gamle danske Navn -
-   Sært rørte mig Bølgernes Tone.
+<pb n="155" facs="155.jpg"/>Jeg bøied mit Hoved; jeg aned dog et Savn;
+  End bar jeg Forglemmelsens Krone:
+Jeg husked end ikke mit gamle danske Navn;
+  Sært rørte mig Bølgernes Tone.
 
-Det var mig, som de hvisked om, hvad jeg havde glemt.
-   Min Guldkrans var trillet i Voven -
+Det var mig som de hvisked om hvad jeg havde glemt.
+  Min Guldkrands var trillet i Voven —
 Brat vaagned hvert Minde, som var i Sjælen gemt,
-   Om Danmark og Issefjordsskoven.
+  Om Danmark og Issefjordskoven.
 
-Jeg mindedes Carolus og Ridderskabets Flor,
-   Og alle de kære, som døde;
-Jeg husked paa mit Navn, og min Længsel blev stor -
-   Da klang det, som Vindharper løde.
+Jeg mindedes Carolus og Ridderkabets Flor,
+  Og alle de Kjære, som døde;
+Jeg husked paa mit Navn, og min Længsel blev stor —
+  Da klang det, som Vindharper løde.
 
-Jeg hørte Morgana; men ej jeg hende saa -
-   Mig favned usynlige Arme:
-,,Nu Timen er kommen - tilbage skal du gaa,
-   Hvor Folkenes Livsbølger larme.
+Jeg hørte Morgana; men ei jeg hende saae;
+  Mig favned usynlige Arme:
+”Nu Timen er kommen; tilbage skal du gaae,
+  ”Hvor Folkenes Livsbølger larme.”
 
-,,Paa ny skal du vandre til mægtig Idræt hen:
-   Dit Folk skal genkende din Stemme.
-Men glemmer det dig atter - jeg favner dig igen;
-   Hvor Aanden har Liv, har du hjemme.''
+”Paany skal du vandre til mægtig Idræt hen;
+  ”Dit Folk skal gjenkjende din Stemme.
+”Men glemmer det dig atter, jeg favner dig igjen;
+  ”Hvor Aanden har Liv, har du hjemme.”
 
-Forsvundet var Slottet - som Skyer for det hen -
-   Og Skibet sig vugged paa Sandet.
-Ud skød jeg min Snække; jeg sejled bort igen -
-   Jeg sejled mod Fædrenelandet.
+<pb n="156" facs="156.jpg"/>Forsvundet var Slottet; som Skyer foer det hen;
+  Og Skibet sig vugged paa Sandet.
+Ud skjød jeg min Snekke; jeg seiled bort igjen —
+  Jeg seiled mod Fædrenelandet.
 </poetry>
 </body>
 </text>
@@ -3996,92 +3780,91 @@ Ud skød jeg min Snække; jeg sejled bort igen -
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Andersen.</note>
   </notes>
-  <source>
-    <author id="ingemann">B.S. Ingemann</author>
-    <title>Holger Danske</title>
-    <editor>Svend Larsen</editor>
-    <publisher>Flensteds Forlag</publisher>
-    <year>1945</year>
-  </source>
+  <source pages="157-160"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde</quality>
+  <places>
+    <place ref="france" relation="setting"/>
+    <place ref="denmark" relation="setting"/>
+    <place ref="great-britain" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 Jeg foer til Idræt; jeg foer til Strid;
-Høit sang jeg atter paa Havet:
+  Høit sang jeg atter paa Havet:
 Det Liv, der drev mig til Manddomsid,
-Var ei med Secler begravet.
+  Var ei med Secler begravet.
 
 Ved Lænd mig klirred mit gamle Sværd,
-Og Løveskjoldet paa Armen;
+  Og Løveskjoldet paa Armen;
 En Skat jeg dog eied, fuldmere værd:
-Den bar jeg lønlig i Barmen.
+  Den bar jeg lønlig i Barmen.
 
 Jeg havde seet, paa Morganas Ø,
-Tilbunds i Naturens Sjæle,
+  Tilbunds i Naturens Sjæle,
 Og hvad der i Verden aldrig kan døe,
-Fik dybest i Hjertet Mæle.
+  Fik dybest i Hjertet Mæle.
 
 Det kaldte mig til udødelig Færd,
-Paa Verdens Øer og Have,
+  Paa Verdens Øer og Have,
 Med Haand og Tunge, med Aand og Sværd,
-Trods Tiders Orme og Grave.
+  Trods Tiders Orme og Grave.
 
-Mig fulgte de store Tiders Aand
-Fra Keiser Carolus' Dage.
+<pb n="158" facs="158.jpg"/>Mig fulgte de store Tiders Aand
+  Fra Keiser Carolus' Dage.
 Klenodet, mig laantes af Alfehaand,
-Skjønt kaldte Livet tilbage.
+  Skjønt kaldte Livet tilbage.
 
-Jeg gjemte til herligst Syn hver Stund
-Titanias Slør ved Barmen.
+Jeg gjemte til herligt Syn hver Stund
+  Titanias Slør ved Barmen.
 Naar Oberonshornet klang for min Mund,
-Til Toner blev Hjertevarmen.
+  Til Toner blev Hjertevarmen.
 
 I Franken jeg landed med Sværd i Haand;
-Derom gik Sagn gjennem Tiden.
+  Derom gik Sagn gjennem Tiden.
 Den døende Gnist af Riddernes Aand
-Udsluktes fast aldrig siden.
+  Udsluktes fast aldrig siden.
 
 Til Danmark foer jeg med Sværd og Skjold,
-Med Oberonshornet for Munden;
+  Med Oberonshornet for Munden;
 Glad Dansken saae mig paa Hav, paa Vold,
-Og altid i Hædersstunden.
+  Og altid i Hædersstunden.
 
 Med store Knud jeg til Bretland foer;
-Jeg stred, hvor Volmerne strede.
+  Jeg stred, hvor Volmerne strede.
 Jeg fulgte den største Dronning i Nord
-Og Helten paa Colberger-Hede.
+  Og Helten paa Colberger-Hede.
 
-Blandt Thingmænd red jeg paa skumhvid Hest,
-Godt Raad jeg dem hvisked i Øret.
+<pb n="159" facs="159.jpg"/>Blandt Thingmænd reed jeg paa skumhvid Hest,
+  Godt Raad jeg dem hvisked i Øret.
 De Nordens Skjalde, jeg undte bedst,
-Jeg laante Hornet og Sløret.
+  Jeg laante Hornet og Sløret.
 
 Tidt seiled jeg til Magnetøen hen,
-Naar Idrætstider var omme;
-Jeg kom dog hvert hundrede Aar igjen,
-Naar Frænder vented mit Komme.
+  Naar Idrætstider var omme;
+Jeg kom dog hvert hundred Aar igjen,
+  Naar Frænder vented mit Komme.
 
 Da sidst jeg stod paa Danrigets Vang,
-Jeg hilsed Drotten hin milde,
+  Jeg hilsed Drotten hiin milde,
 Hvis Røst blandt løste Sjæle mig klang
-Mest dansk fra Tidernes Kilde.
+  Meest dansk fra Tidernes Kilde.
 
 Naar Livet blomstrer i Danskens Sind,
-Og Sangen paa Folkets Tunge,
+  Og Sangen paa Folkets Tunge,
 Fuldklar jeg træder i Livet ind,
-Og Skjaldene om mig sjunge.
+  Og Skjaldene om mig sjunge.
 
 Mit Navn hver Bonde kjender endnu,
-Og glad jeg rækker ham Haanden.
+  Og glad jeg rækker ham Haanden.
 Med Lyst jeg kommer mit Liv ihu:
-Jeg lever i Folkeaanden.
+  Jeg lever med Folkeaanden.
 
-Du veed det, Landsmand! jeg er ei død;
-Med Kraft jeg kommer tilbage:
-Jeg er din fuldtroe Hjælper i Nød
-Paa Dannemarks gamle Dage.
+<pb n="160" facs="160.jpg"/>Du veed det, Landsmand! jeg er ei død;
+  Med Kraft jeg kommer tilbage:
+Jeg er din fuldtroe Hjelper i Nød
+  Paa Dannemarks gamle Dage.
 </poetry>
 </body>
 </text>

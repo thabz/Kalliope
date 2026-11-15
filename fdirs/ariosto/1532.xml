@@ -14,6 +14,9 @@
 <head>
   <title><num>1.</num>Canto primo</title>
   <firstline>Le donne, i cavallier, l'arme, gli amori</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10230,6 +10233,7 @@ ne l'altro canto l'ordine e la mostra.
   <firstline>Nei molti assalti e nei crudel conflitti</firstline>
   <places>
     <place ref="babylon" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -26635,6 +26639,10 @@ quel che per troppo dire accade al vecchio.
 <head>
   <title><num>29.</num>Canto ventinovesimo</title>
   <firstline>O degli uomini inferma e instabil mente!</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

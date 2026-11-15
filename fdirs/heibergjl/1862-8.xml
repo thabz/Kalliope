@@ -1122,6 +1122,9 @@ Stakkels Muse, som maa halte paa elleve Fod!
     <note editorial="true">Gendigtning af Ovid: <xref type="translation" poem="ovid2026101802" />.</note>
   </notes>
   <source pages="63-65" />
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2528,6 +2531,10 @@ Med sine milde Hænder!
   <firstline>Ved Himmalayas Fod, ved Ganges Kilder</firstline>
   <dates><performed>1834-02-09</performed></dates>
   <source pages="139-145" />
+  <places>
+    <place ref="ganges" relation="setting"/>
+    <place ref="himalayas" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

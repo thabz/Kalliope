@@ -4225,6 +4225,9 @@ Fast lig glemte Drømmes Duft? —
   <firstline>Der staar i Syd med den aldrig fordunklede Himmel</firstline>
   <source pages="137-141"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5098,6 +5101,10 @@ Af ingen hun berørtes frækt. Man hørte
     <note editorial="true">Senere trykt i <a work="moellerpl/1847"><i>Billeder og Sange</i> (1847)</a> med titlen »En Guitarspiller« og førstelinjen ændret til ,,Han sidder i Hallen. Trindt omkring''.</note>
   </notes>
   <source pages="167-170"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="north-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9861,6 +9868,9 @@ Den netop Munden lukker.
   <firstline>I Gudelundene, i Hellas' Dale</firstline>
   <source pages="306-307"/>
   <keywords>ottave-rime</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

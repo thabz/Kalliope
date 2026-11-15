@@ -3286,6 +3286,9 @@ Der i dit Fodspor jeg vandred idag, stormægtige Tancred!
   <title>Feelandet</title>
   <firstline>End fjernt dit Billed tryller</firstline>
   <source pages="132-133"/>
+  <places>
+    <place ref="avalon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6010,6 +6013,7 @@ Flygted i hvirvlende Sky og blinked i Lynglands.
     <place ref="italy" relation="subject" primary="true"/>
     <place ref="trieste" relation="writtenAt"/>
     <place ref="adriatic-sea" relation="mentioned"/>
+    <place ref="avalon" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
