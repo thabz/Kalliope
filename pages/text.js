@@ -596,8 +596,13 @@ const TextPage = (props) => {
         highlight: highlightInterval,
         ...options,
       };
+      const previousType = text.blocks[i - 1]?.type;
+      const needsSeparation =
+        ['poetry', 'prose'].includes(type) &&
+        ['poetry', 'prose'].includes(previousType);
       return (
-        <div key={type + i} id={block.anchor != null ? `embedded-${block.anchor}` : undefined}>
+        <div key={type + i} id={block.anchor != null ? `embedded-${block.anchor}` : undefined}
+          style={needsSeparation === true ? { marginTop: '1.5em' } : undefined}>
           <TextContent
             contentHtml={lines}
             contentLang={text.content_lang}
