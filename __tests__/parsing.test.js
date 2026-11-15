@@ -132,10 +132,10 @@ describe('titeludtrækning', () => {
   });
 
   it('bevarer forkortelsesstreger i titlers rene tekst', () => {
-    const title = { title: 'Dan k<o>o</o>ning <o>ſ</o>øn' };
+    const title = { title: 'Dan ko̅ning ſ̅øn' };
 
-    expect(titleText(title)).toBe('Dan kōning ſ\u0304øn');
-    expect(title.title).toBe('Dan k<o>o</o>ning <o>ſ</o>øn');
+    expect(titleText(title)).toBe('Dan ko̅ning ſ̅øn');
+    expect(title.title).toBe('Dan ko̅ning ſ̅øn');
   });
 
   it('bevarer fodnoter i undertitler og deres linjer', () => {

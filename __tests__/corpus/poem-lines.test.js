@@ -335,7 +335,7 @@ describe('Check workfiles', () => {
     'allows printed abbreviation overlines in %s',
     type => {
       expect(titleMetadataIssues(
-        `<text id="abbreviated"><head><${type}>Dan k<o>o</o>ning</${type}></head></text>`,
+        `<text id="abbreviated"><head><${type}>Dan ko̅ning</${type}></head></text>`,
       )).toEqual([]);
     },
   );

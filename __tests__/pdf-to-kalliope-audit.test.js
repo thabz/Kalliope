@@ -748,7 +748,7 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 
 describe('historical OCR candidate profile', () => {
   it('keeps overlined letters inside words while detecting actual OCR errors', () => {
-    const xml = workXml.replace('Første paa elleve', 'h<o>a</o>ns soc1o.ikke');
+    const xml = workXml.replace('Første paa elleve', 'ha̅ns soc1o.ikke');
     const candidates = historicalOcrCandidates({ xml });
 
     expect(candidates).not.toEqual(expect.arrayContaining([

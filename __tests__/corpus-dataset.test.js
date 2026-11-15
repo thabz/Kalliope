@@ -21,6 +21,11 @@ import {
 } from '../tools/build-static/corpus-dataset.js';
 
 describe('versioned corpus dataset', () => {
+  it('preserves abbreviation overlines in exported full text', () => {
+    expect(normalizedFullText({ blocks: [{ lines: ['Dan ko̅ning', 'ha̅ns ſ̅øn'] }] }))
+      .toBe('Dan ko̅ning\nha̅ns ſ̅øn');
+  });
+
   it('exports one anthology text with its poet and physical publication', () => {
     const text = {
       id: 'poem', poetId: 'poet', workId: 'book', title: 'Digt',

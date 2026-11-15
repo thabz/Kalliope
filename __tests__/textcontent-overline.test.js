@@ -5,21 +5,21 @@ import { TextInline } from '../components/textcontent.js';
 describe('text content overlines', () => {
   it('preserves abbreviated letters, long s and adjacent text', () => {
     const html = renderToStaticMarkup(
-      <TextInline contentHtml={[[ 'h<o>a</o> ſøn th<o>m</o>' ]]} />
+      <TextInline contentHtml={[[ 'ha̅ ſøn thm̅' ]]} />
     );
 
     expect(html).toContain(
-      'h<span style="text-decoration:overline">a</span> ſøn th<span style="text-decoration:overline">m</span>'
+      'ha̅ ſøn thm̅'
     );
   });
 
   it('keeps nested emphasis and a source page marker within an overline', () => {
     const html = renderToStaticMarkup(
-      <TextInline contentHtml={[[ '<o><i>m</i><pb facs="006.jpg"/>n</o>' ]]} />
+      <TextInline contentHtml={[[ '<i>m̅</i><pb facs="006.jpg"/>n̅' ]]} />
     );
 
     expect(html).toContain(
-      '<span style="text-decoration:overline"><i>m</i>n</span>'
+      '<i>m̅</i>n̅'
     );
     expect(html).not.toContain('<pb');
   });

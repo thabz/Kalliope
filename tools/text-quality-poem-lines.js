@@ -334,8 +334,8 @@ const findTitleMetadataFindings = ({
       const type = element.tagName;
       const allowsFootnotes = ['title', 'toctitle'].includes(type);
       const allowedFormatting = type === 'toctitle'
-        ? ['w', 'i', 'o']
-        : type === 'title' ? ['o'] : [];
+        ? ['w', 'i']
+        : [];
       const hasDisallowedMarkup = node => getChildren(node).some(child => {
         if (child.tagName === 'footnote') {
           return allowsFootnotes === false;

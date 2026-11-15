@@ -662,7 +662,7 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 </subtitle>
 ```
 
-`<title>` må indeholde tekst, `<footnote>`, `<o>` til trykte forkortelsesstreger
+`<title>` må indeholde tekst, `<footnote>`
 og et `<num>`-prefix uden indlejret markup. `<toctitle>` må desuden bruge
 `<w>` og `<i>`. Andre typografiske tags er ikke tilladt i `<title>` uden for
 fodnoter, og `<indextitle>` og
@@ -1407,11 +1407,10 @@ ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er til
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
-- `<o>`: en streg over de omfattede bogstaver, fx `h<o>a</o>` ved en
-  trykt forkortelsesstreg. Bogstaverne bevares uden at opløse forkortelsen.
-  Elementet renderes med CSS `text-decoration: overline`.
-  I titlers rene tekst til indeks og links bevares stregen som en kombinerende
-  macron (U+0304).
+- Trykte forkortelsesstreger skrives med U+0305 COMBINING OVERLINE efter
+  det omfattede bogstav, fx `ha̅ns` (`ha\u0305ns` i JavaScript). Bogstaverne
+  bevares uden at opløse forkortelsen. Brug samme Unicode-tegn i titler,
+  førstelinjer og brødtekst; egentlige makroner bevares som makroner.
 - `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
   at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
 - `<s>` og `<small>`: lille skrift. Gennemstregning angives med `<strike>`.
