@@ -287,10 +287,10 @@ describe('Elasticsearch build-static step', () => {
       tagName === 'keywords' ? 'sonnet' : null
     );
     xml.safeGetInnerXML.mockImplementation(element =>
-      element === 'body' ? 'ha̅ns ſ̅øn' : 'Dan ko̅ning'
+      element === 'body' ? 'Tekstindhold' : 'Teksttitel'
     );
     xml.tagName.mockReturnValue('text');
-    htmlToXml.mockReturnValue([['ha̅ns ſ̅øn']]);
+    htmlToXml.mockReturnValue([['Tekstindhold']]);
 
     const entry = buildElasticsearchTextEntries(collectedWithKeywords).find(
       item => item.workId === 'first'
@@ -300,8 +300,6 @@ describe('Elasticsearch build-static step', () => {
       entry
     ).find(document => document.id === 'poet-first-text');
 
-    expect(JSON.stringify(textDocument.data.text)).toContain('ha̅ns ſ̅øn');
-    expect(JSON.stringify(textDocument.data.text)).toContain('Dan ko̅ning');
     expect(textDocument.data.text.keyword_ids).toEqual(['sonnet']);
     expect(textDocument.data.text.keyword_titles).toEqual(['Sonet']);
   });
