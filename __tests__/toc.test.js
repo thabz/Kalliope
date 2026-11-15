@@ -4,6 +4,16 @@ import TOC from '../components/toc.js';
 const text = { type: 'text', id: 'poem', title: [['Digt']], prefix: 'I.' };
 
 describe('indholdsfortegnelsens digternavne', () => {
+  it('viser hovedtekstens forfatter før de indlejrede digte', () => {
+    const markup = renderToStaticMarkup(<TOC lang="da" toc={[{
+      ...text, authorName: 'Frederik Hammerich',
+      content: [{ type: 'text', id: 'embedded', title: [['Indlejret digt']] }],
+    }]} />);
+    expect(markup.indexOf('Frederik Hammerich')).toBeLessThan(
+      markup.indexOf('Indlejret digt')
+    );
+  });
+
   it('viser navn og tankestreg uden for titlens link, også i underafsnit', () => {
     const markup = renderToStaticMarkup(<TOC lang="da" toc={[{
       type: 'section', title: [['Afsnit']], content: [{

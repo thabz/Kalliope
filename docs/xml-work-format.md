@@ -152,6 +152,14 @@ inline-noter i versene vises også i sammenhængen. Angiv kilde og sidetal på
 samme måde som for andre tekster i udgivelsen. Ved flytning af en tidligere
 kopi bevares dens ID på den indlejrede tekst.
 
+Et fysisk sideskift præcis før en indlejret tekst eller en anden indholdsblok
+kan stå direkte i den omgivende `<body>`: skriv fx
+`<pb n="259" facs="285.jpg"/><text id="...">` på samme XML-linje.
+Flere tilstødende markører kan registrere mellemliggende blanke sider.
+Markørerne skal efterfølges af en indholdsblok og gælder kun den omgivende
+tekst; de indgår ikke i det indlejrede digts selvstændige tekstkrop.
+Opret ikke en tom prosablok alene for at bære sideskiftet.
+
 Tekst-API'et får det valgfrie `text.parent_text_id`; på den omgivende tekst
 har digtets blok et `anchor` med digtets ID. Siden bruger
 `#embedded-<id>` som mål for »Læs i sammenhæng«. TOC-poster af typen `text`

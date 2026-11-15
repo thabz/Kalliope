@@ -10,6 +10,7 @@ import {
   parseXml,
   isPoetryBlock,
   serializeVerseLines,
+  splitBodyPages,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
 import { extractRunInUnits } from './run-in-structure.js';
@@ -273,6 +274,9 @@ const extractPoetryBlocks = xml => {
       elementChildren(node).forEach(child => visit(child, stream, collect));
     };
     visit(body, { facsimile: startingFacsimile });
+    // Title and metadata footnotes may contain verse too. Their page stream
+    // starts independently of the body's ending page.
+    visit(head, { facsimile: startingFacsimile });
   });
   return blocks.map((block, index) => ({ block, order: sourceOrder.get(index) }))
     .sort((left, right) => left.order - right.order).map(item => item.block);

@@ -7,7 +7,7 @@ import { analyzeIndentationGeometry } from './analyze-indentation-geometry.js';
 import { analyzeStanzaGeometry } from './analyze-stanza-geometry.js';
 import { prepareRunInGeometry } from './prepare-run-in-geometry.js';
 import { analyzeStanzas } from './analyze-stanzas.js';
-import { directChild, ownedPoetryBlocks, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
+import { containingTextEntry, directChild, isPoetryBlock, parseXml, serializeVerseLines, sha256, textEntries } from './audit-utils.js';
 import {
   extractPoetryBlocks,
   loadTsvVariants,
@@ -126,7 +126,11 @@ const poetryBlocks = xml => {
   return textEntries(document).flatMap(entry => {
     const textId = entry.getAttribute('id') ?? '';
     const source = directChild(directChild(entry, 'head'), 'source');
-    return ownedPoetryBlocks(directChild(entry, 'body') ?? entry)
+    return [
+      ...Array.from(directChild(entry, 'body')?.getElementsByTagName('*') ?? []),
+      ...Array.from(directChild(entry, 'head')?.getElementsByTagName('*') ?? []),
+    ]
+      .filter(node => isPoetryBlock(node) && containingTextEntry(node) === entry)
       .map((poetry, blockIndex) => ({
         text_id: textId,
         pages: source?.getAttribute('pages') ?? null,

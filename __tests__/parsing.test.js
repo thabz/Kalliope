@@ -80,6 +80,21 @@ describe('picture captions', () => {
 });
 
 describe('titeludtrækning', () => {
+  it.each([
+    ['<num>8.</num>', '8.'],
+    ['<num/>', undefined],
+  ])('adskiller nummeret fra en titel med flerlinjet versfodnote: %s', (number, prefix) => {
+    const citation = '<footnote>Sidestykke:\n<poetry>\nFørste vers\nAndet vers\n</poetry>\n</footnote>';
+    const doc = new DOMParser().parseFromString(
+      `<head><title>${number}Jungfrun hon går i dansen${citation}</title></head>`,
+      'text/xml'
+    );
+    const title = extractTitle(doc.documentElement, 'title');
+    expect(title.prefix).toBe(prefix);
+    expect(title.title).toBe(`Jungfrun hon går i dansen${citation}`);
+    expect(stripTitleNotes(title).title).toBe('Jungfrun hon går i dansen');
+  });
+
   it('fjerner et tomt nummerfelt fra en indholdsfortegnelsestitel', () => {
     const doc = new DOMParser().parseFromString(
       '<head><toctitle><num></num>Korset og Kronen</toctitle></head>',
