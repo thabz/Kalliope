@@ -65,6 +65,37 @@ Sidste linje</poetry></body>
 </kalliopework>`;
 
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('inventories physical pages without inventing skipped printed numbers', () => {
+    const xml = workXml.replace('<pagebreaks/>', '<pagebreaks count-by="facsimile"/>')
+      .replace('pages="10-12"', 'pages="176-180" facsimile-pages="11-13"')
+      .replace('n="11"', 'n="179"').replace('n="12"', 'n="180"');
+    const rows = buildPageInventory({ xml });
+    expect(rows.map(row => row.printed_page)).toEqual(['176', '179', '180']);
+    expect(rows.map(row => row.facsimile)).toEqual(['010.jpg', '011.jpg', '012.jpg']);
+  });
+
+  it('keeps literal and corrected labels distinct regardless of attribute order', () => {
+    const xml = workXml.replace('pages="10-12"', 'pages="200-202" facsimile-pages="11-13"')
+      .replace('n="11"', 'corrected-n="201" n="101"').replace('n="12"', 'n="202"');
+    const rows = buildPageInventory({ xml });
+    expect(rows).toHaveLength(3);
+    expect(rows[1]).toMatchObject({ printed_page: '101', corrected_page: '201', facsimile: '011.jpg' });
+    const inventory = rows.map(row => ({ ...row, status: 'reviewed', reviewer: 'reader',
+      disposition: 'checked', typography_status: 'reviewed', typography_disposition: 'checked' }));
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+    delete inventory[1].corrected_page;
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'mismatched-corrected-page' }),
+    ]));
+  });
+
+  it('retains a misprinted first label and its nominal reference in the inventory', () => {
+    const xml = workXml.replace('pages="10-12"', 'pages="10-12" first-n="99" facsimile-pages="11-13"');
+    const rows = buildPageInventory({ xml });
+    expect(rows).toHaveLength(3);
+    expect(rows[0]).toMatchObject({ printed_page: '99', corrected_page: '10', facsimile: '010.jpg' });
+  });
+
   it('inventories and checks a standalone cast list without a body', () => {
     const xml = `<kalliopework id="1929" author="hauch">
 <workhead><title>Digte</title><source facsimile="book" facsimile-pages-num="50"/></workhead>
@@ -716,20 +747,6 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
-  it('keeps overlined letters inside words while detecting actual OCR errors', () => {
-    const xml = workXml.replace('Første paa elleve', 'h<o>a</o>ns soc1o.ikke');
-    const candidates = historicalOcrCandidates({ xml });
-
-    expect(candidates).not.toEqual(expect.arrayContaining([
-      expect.objectContaining({ rule: 'singleton', match: 'h' }),
-      expect.objectContaining({ rule: 'suspicious-internal-space', anchor: expect.stringContaining('h a ns') }),
-    ]));
-    expect(candidates).toEqual(expect.arrayContaining([
-      expect.objectContaining({ rule: 'digit-inside-word', match: 'c1' }),
-      expect.objectContaining({ rule: 'period-without-space', match: 'o.i' }),
-    ]));
-  });
-
   it('starts a later note on the page inherited from a legacy note-only transition', () => {
     const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
       .replace('Første linje', 'Første<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote> linje')

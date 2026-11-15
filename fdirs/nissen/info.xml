@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="nissen" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Nicolai</firstname>
+    <lastname>Nissen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1755-07-17</date>
+      <place>Tjørnelund, Sjælland</place>
+    </born>
+    <dead>
+      <date>1815-12-23</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q12315482</wikidata>
+    <wikipedia-da>Hans Nicolai Nissen</wikipedia-da>
+    <viaf>309683993</viaf>
+    <gnd>1055342370</gnd>
+  </identifiers>
+  <!-- Livsdata og identitet kontrolleret mod https://runeberg.org/dbl/12/0299.html. -->
+  <!-- Eksterne id’er kontrolleret mod Wikidata Q12315482, herunder navne, fødselsdata og dødsår, 2026-11-13. -->
+  <!-- Wikidata angiver dødsdagen 22. december; DBL1 og Erslew angiver 23. december 1815, som beholdes her. -->
+</person>

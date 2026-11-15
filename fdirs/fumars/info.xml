@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<person id="fumars" country="dk" lang="fr" type="poet">
+<person id="fumars" country="dk" nationality="fr" lang="fr" type="poet">
   <name>
     <firstname>Étienne</firstname>
     <lastname>Fumars</lastname>
@@ -7,9 +7,19 @@
   <period>
     <born>
       <date>1743-10-22</date>
+      <place>Marseilles omegn</place>
+      <!-- DBL1, bind 5, s. 492: en flække nær Marseille.
+           Kiels universitetskatalog bekræfter nær Marseille og oplyser,
+           at faderen var handelsmand; den præcise by er ikke identificeret.
+           https://cau.gelehrtenverzeichnis.de/4078a538-2442-4e9a-bc44-91922d0d5d9e
+           Gravindskriften siger Marseille (Danmarks Kirker, Reformert Kirke,
+           gravsten nr. 11); derfor registreres kun omegnen som sikkert sted.
+           Kiels katalog daterer professorudnævnelsen til 2. september 1778
+           og ansættelsen i fransk litteratur til 1778-1783. -->
     </born>
     <dead>
       <date>1806-11-30</date>
+      <place>København</place>
     </dead>
   </period>
   <literary-periods>dk-oplysningstid</literary-periods>

@@ -1561,6 +1561,9 @@ Den Aftenstund!!
     <note editorial="true">Sangværk 2, Nr. 15.</note>
   </notes>
   <source pages="42-43"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2987,6 +2990,9 @@ Han nødes til selv dem at fremme.
     <note editorial="true">Grundtvigs Krønikerim til levende Skolebrug 2. Udgave (1842) Side 18, med et nyt Indgangsvers.</note>
   </notes>
   <source pages="78-79"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3465,6 +3471,9 @@ Da stod de ved Nildalens Skiel.
     <note editorial="true">Sangværk 2, Nr. 31.</note>
   </notes>
   <source pages="91-93"/>
+  <places>
+    <place ref="red-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3577,6 +3586,9 @@ Og nu driver Ulven paa hviden Sand fra Norden.
     <note editorial="true">Sangværk 2, Nr. 32.</note>
   </notes>
   <source pages="94-95"/>
+  <places>
+    <place ref="red-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3814,6 +3826,10 @@ Dit Bud vi vil lyde som Guds.
     <note editorial="true">Sangværk 2, Nr. 35.</note>
   </notes>
   <source pages="99-105"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4652,6 +4668,10 @@ Uretfærdigheds Løn er Ulykke.
     <note editorial="true">Sangværk 2, Nr. 36.</note>
   </notes>
   <source pages="123-124"/>
+  <places>
+    <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5015,6 +5035,11 @@ Og blomstre for Hans Øie!
     <note editorial="true">Cf. <xref bible="bibeljosua02"/> og <xref bible="bibelmatt01,5"/>.</note>
   </notes>
   <source pages="133-136"/>
+  <places>
+    <place ref="jericho" relation="setting"/>
+    <place ref="red-sea" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5139,6 +5164,10 @@ Gik deres Arvetal!
     <note editorial="true">Dansk Kirketidende 7, Nr. 39, 1852.</note>
   </notes>
   <source pages="136-138"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5230,6 +5259,10 @@ Hans Kraft man dog maa sande.
     <note editorial="true">Dansk Kirketidende 7, Nr. 39, 1852.</note>
   </notes>
   <source pages="138-141"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5350,6 +5383,9 @@ Seire her i Jesu Navn!
     <note editorial="true">Dansk Kirketidende 7, Nr. 39, 1852 (de to sidste Vers udeladte).</note>
   </notes>
   <source pages="141-143"/>
+  <places>
+    <place ref="jericho" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5421,6 +5457,11 @@ Naar derved den styrter sammen!
     <note editorial="true">Hidtil utrykt.</note>
   </notes>
   <source pages="143-145"/>
+  <places>
+    <place ref="jericho" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5502,6 +5543,10 @@ Guds-Aanden kun færdes med Frihed!
     <note editorial="true">Hidtil utrykt.</note>
   </notes>
   <source pages="145-148"/>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="mount-tabor" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6443,6 +6488,9 @@ Hvad haver saadanne Stridsvaaben døvet?
     <note editorial="true">Krønikerim, 2. Udgave Side 21.</note>
   </notes>
   <source pages="169-171"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6506,6 +6554,9 @@ Forklar hvad evig bliver sandt!
     <note editorial="true">Cf. <xref bible="bibel1konge17"/>.</note>
   </notes>
   <source pages="171-173"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6681,6 +6732,9 @@ Evig i Afgrunden!
     <note editorial="true">Boisens Bibelske Sange Nr. 47.</note>
   </notes>
   <source pages="175-177"/>
+  <places>
+    <place ref="babylon" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6936,6 +6990,9 @@ Almægtig vor Gjenløser!
     <note editorial="true">Krønikerim, 2. Udgave Side 23.</note>
   </notes>
   <source pages="182-183"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6987,6 +7044,9 @@ Hyttetag til Høitidsdage!
     <note editorial="true">Sangværk 2,1. Nr. 6.</note>
   </notes>
   <source pages="183-195"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8167,6 +8227,9 @@ Kun een Gang en Tredages-Kvide!
     <note editorial="true">Festpsalmer, 5. Oplag, 1853, Nr. 712.</note>
   </notes>
   <source pages="214-215"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8246,6 +8309,9 @@ Guds-Husets Dør staae aaben!
     <note editorial="true">Festpsalmer, 7. Oplag, 1856, Nr. 773, dog tildels som ny.</note>
   </notes>
   <source pages="216"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8286,6 +8352,9 @@ Abba! med Sønnen vi raabe.
     <note editorial="true">Dansk Kirketidende 3, Nr. 16, 1848; afkortet mod Slutn.</note>
   </notes>
   <source pages="217-220"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8439,6 +8508,9 @@ Englene pege paa Jesus.
     <note editorial="true">Th. Oldenburk P. Chr. Kierkegaards Nordisk Tidskr. for christelig Theologi 2, Side 165, 1840.</note>
   </notes>
   <source pages="221-225"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8796,6 +8868,9 @@ Livet er Troens Naadeløn!
     <note editorial="true">Dansk Kirketidende 1, Nr. 47, 1846.</note>
   </notes>
   <source pages="230-233"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10876,6 +10951,9 @@ Saa vort Løb med Lyst at ende!
     <note editorial="true">Hagens Psalmer og Rim, Nr. 54, forkortet fra Grundtvigs Kvædlinger (skrevet 1812) Side 320.</note>
   </notes>
   <source pages="282-288"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11621,6 +11699,9 @@ I Guds vor Faders Rige!
     <note editorial="true">Hidtil utrykt.</note>
   </notes>
   <source pages="302-304"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -13091,6 +13172,9 @@ Hvor Livet opstiger af Graven!
     <note editorial="true">Krønikerim, 2. Udg. Side 128.</note>
   </notes>
   <source pages="341-344"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -13237,6 +13321,9 @@ Af Paver og Normanner!
     <note editorial="true">Dansk Kirketidende 1856, Nr. 41, Sp. 641 til 646.</note>
   </notes>
   <source pages="345-351"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

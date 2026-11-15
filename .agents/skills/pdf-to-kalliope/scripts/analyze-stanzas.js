@@ -30,7 +30,7 @@ const isStanzaDivider = line =>
   /<nonum(?:\s|>)/u.test(line) ||
   /^\s*<wrap(?:\s|>)/u.test(line) ||
   /^\s*<right(?:\s|>)/u.test(line) ||
-  /^\s*-{3,}\s*$/u.test(line) ||
+  /^\s*(?:-{3,}|={4})\s*$/u.test(line) ||
   plainText(line) === '';
 
 const cumulativeBoundaries = stanzaLengths => {

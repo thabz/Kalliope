@@ -120,6 +120,8 @@ const FigCaption = (props) => {
           text-decoration: none !important;
         }
         .titlepage-transcription {
+          color: #000;
+          text-decoration: none;
           white-space: pre-wrap;
         }
       `}</style>

@@ -1,3 +1,4 @@
+import { extractTitleBlock } from './build-static/parsing.js';
 import { embeddedContext } from './build-static/embedded-context.js';
 import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { buildTextBlocks } from './build-static/text-blocks.js';
@@ -568,6 +569,7 @@ const handle_text = async (
       : {}),
       title_prefix: title.prefix,
       linktitle: replaceDashes(titleText(linktitle)),
+      title_block: extractTitleBlock(head, collected, fragmentContext),
       subtitles,
       suptitles,
       text_type: textType,
@@ -653,7 +655,6 @@ const handle_work = async (work) => {
             stripTitleNotes(indextitle).title,
             textId,
             `${poetId}/${workId}.xml`,
-            { allowOverlines: explicitIndexTitle == null },
           );
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
@@ -1078,7 +1079,8 @@ const works_first_pass = (collected) => {
         id: workId,
         poet_id: poetId,
         title,
-        subtitles,
+        title_block: extractTitleBlock(head, collected),
+      subtitles,
         toctitle,
         linktitle,
         breadcrumbtitle,
@@ -1485,6 +1487,9 @@ const main = async () => {
     mark_ref_destinations_dirty,
     collected,
   );
+  // Make work listings available before the slower text-file generation.
+  // Their metadata is complete after the work and poet first passes.
+  await b('build_poet_works_json', build_poet_works_json, collected);
   await b(
     'build_poets_by_country_json',
     build_poets_by_country_json,
@@ -1503,7 +1508,6 @@ const main = async () => {
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
   await b('works_second_pass', works_second_pass, collected);
-  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',

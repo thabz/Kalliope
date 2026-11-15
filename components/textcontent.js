@@ -219,12 +219,6 @@ const renderXmlString = (inputString) => {
         return <b key={keySeq++}>{handle_nodes(node.childNodes)}</b>;
       case 'u':
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
-      case 'o':
-        return (
-          <span key={keySeq++} style={{ textDecoration: 'overline' }}>
-            {handle_nodes(node.childNodes)}
-          </span>
-        );
       case 'p':
         return <p key={keySeq++}>{handle_nodes(node.childNodes)}</p>;
       case 'sup':
@@ -647,6 +641,9 @@ const TextContent = (props) => {
   });
 
   let epigraphClassName = '';
+  const centeredProseClassName = type === 'prose' &&
+    contentHtml.some(line => line[1]?.center === true)
+    ? 'centered-prose-block' : null;
   if (type === 'epigraph') {
     epigraphClassName = 'blockquote';
   }
@@ -659,7 +656,7 @@ const TextContent = (props) => {
   return (
     <div
       style={style}
-      className={[className, smallClassName, epigraphClassName]
+      className={[className, smallClassName, epigraphClassName, centeredProseClassName]
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
@@ -727,6 +724,10 @@ const TextContent = (props) => {
         }
         :global(.block) {
           display: inline-block;
+        }
+        :global(.block.centered-prose-block) {
+          display: block;
+          width: 100%;
         }
         :global(.highlighted-line) {
           background-color: rgb(253, 246, 227);

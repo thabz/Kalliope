@@ -71,6 +71,11 @@ med kildeikonet. Dette gælder også originaltekster til oversættelser.
    Historiske oplysninger om oversætterens benyttede
    forlæg og tekstlige forskelle kan fortsat beskrives i forlægsnoten.
    Brug aldrig et bart digtlink som note.
+   Originalteksten må ikke have redaktionelle noter, der peger tilbage på
+   oversættelserne, hverken med links eller omtale af oversættere og deres
+   tekstvalg. Beskriv sådanne forhold i oversættelsens forlægsnote.
+   Bevar selvstændige tekstkritiske og historiske oplysninger om originalen
+   i dens egne noter, fx om beskadiget overlevering eller usikker tilskrivning.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.

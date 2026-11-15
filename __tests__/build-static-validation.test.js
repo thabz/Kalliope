@@ -27,19 +27,9 @@ describe('build-static validation', () => {
     ).not.toThrow();
   });
 
-  it('accepts abbreviation overlines when indexing the printed title', () => {
+  it('rejects obsolete overline markup in index titles', () => {
     expect(() => validateIndexTitleMarkup(
-      'Dan k<o>o</o>ning', 'dan', '1495.xml', { allowOverlines: true },
-    )).not.toThrow();
-  });
-
-  it.each([
-    ['Dan k<o>o</o>ning', false],
-    ['Dan k<o><i>o</i></o>ning', true],
-  ])('rejects unsupported index markup: %s', (title, allowOverlines) => {
-    expect(() => validateIndexTitleMarkup(
-      title, 'dan', '1495.xml', { allowOverlines },
+      'Dan k<o>o</o>ning', 'dan', '1495.xml',
     )).toThrow('har markup i titlen');
   });
-
 });

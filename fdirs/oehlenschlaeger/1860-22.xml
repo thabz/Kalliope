@@ -4724,6 +4724,7 @@ Thi Valdemar arved hans Krone.
   <source pages="124-128"/>
   <places>
     <place ref="soro-abbey-church" relation="setting" primary="true"/>
+    <place ref="kidron-valley" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -8174,6 +8175,9 @@ Danmarks er <w>Held</w>.
   <source pages="213-220"/>
   <keywords>thorvaldsen</keywords>
   <!-- TODO: Find Thorvaldsens værker som nævnes -->
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10776,6 +10780,9 @@ Løn for hans Liv!
   </dates>
   <source pages="283-284"/>
   <keywords>holst,goethe,schiller</keywords>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

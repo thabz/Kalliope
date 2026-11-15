@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sporon" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik Gottlieb</firstname>
+    <lastname>Sporon</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1749</date>
+      <place>Køge</place>
+    </born>
+    <dead>
+      <date>1811-01-31</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <!-- DBL1 angiver 1. maj 1749, Dansk Forfatterleksikon 1. marts. Fødselsåret er sikkert; dagen er ikke afklaret. -->
+</person>

@@ -102,7 +102,6 @@ const build_global_lines_json = (collected) => {
           let line =
             linetype == 'titles' ? textMeta.indexTitle : textMeta.firstline;
           if (line != null) {
-            // firstline is null for prose texts
             let indexableLine = line
               .trim()
               .replace(',', '')

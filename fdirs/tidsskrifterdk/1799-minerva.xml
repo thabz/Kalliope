@@ -12,10 +12,6 @@
     <!-- Bind 58. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:41:59Z"/>
   </proofreadings>
-  <notes>
-    <note editorial="true">Bind 57: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1799-07 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_004">↬</a>, 1799-08 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_005">↬</a>, 1799-09 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_006">↬</a>. 343 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
-    <note editorial="true">Bind 58: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1799-11 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_007">↬</a>, 1799-12 <a href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_008">↬</a>. 214 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret.</note>
-  </notes>
   <pictures>
     <picture src="1799-minerva-57-p1.jpg" type="titlepage" primary="true">
       <transcription>Maanedskriftet / Minerva. // Juli, August og September. / 1799. // Udgivet / de tvende første Hæfter / ved / P. Collet og K. L. Rahbek, / det sidste / ved / Knud Lyne Rahbek, / forhen Professor ved Kiøbenhavns Universitet. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz. / Kongelig og Universitets-Bogtrykker.</transcription>
@@ -24,6 +20,7 @@
       <transcription>Maanedskriftet / Minerva. // October, November og December. / 1799. // Udgivet / ved / Knud Lyne Rahbek, / forhen Professor ved Kiøbenhavns Universitet. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
   </pictures>
+  <!-- Bind 57: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1799-07 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_004, 1799-08 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_005, 1799-09 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_006. 343 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd57" href="https://books.google.com/books?id=Zlw3AAAAMAAJ" facsimile="1799-minerva-57.pdf" facsimile-pages-num="392">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
@@ -34,6 +31,7 @@
     <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1799</year>
   </source>
+  <!-- Bind 58: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1799-11 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_007, 1799-12 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_008. 214 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd58" href="https://books.google.com/books?id=KF03AAAAMAAJ" facsimile="1799-minerva-58.pdf" facsimile-pages-num="402">
     <title>Maanedskriftet Minerva</title>
     <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>

@@ -664,7 +664,7 @@ udelades fra linktitler, indeks og indholdsfortegnelser:
 </subtitle>
 ```
 
-`<title>` må indeholde tekst, `<footnote>`, `<o>` til trykte forkortelsesstreger
+`<title>` må indeholde tekst, `<footnote>`
 og et `<num>`-prefix uden indlejret markup. `<toctitle>` må desuden bruge
 `<w>` og `<i>`. Andre typografiske tags er ikke tilladt i `<title>` uden for
 fodnoter, og `<indextitle>` og
@@ -681,9 +681,9 @@ bevar hver trykt overskriftslinjes ordlyd, historiske stavning, bøjning, intern
 tegnsætning og indbyrdes rækkefølge. Afsluttende tegnsætning normaliseres efter
 reglen nedenfor.
 
-Hvis en prosatekst ingen trykt overskrift har, kan en kort redaktionel titel
-tilføjes i firkantede klammer. Brug da en `<indextitle>` uden klammer, og
-dokumentér den tilføjede titel ved importen.
+Hvis en tekst ingen trykt overskrift har, angives dens førstelinje i
+`<firstline>`, også ved prosa. Kalliope bruger automatisk førstelinjen som
+titel. Tilføj ikke en redaktionel titel i firkantede klammer.
 
 Brug felterne efter den trykte funktion og placering:
 
@@ -1067,7 +1067,9 @@ Sidste verslinje på den trykte side
 Attributterne har forskellig betydning:
 
 - `n`: den nye trykte sides nummer eller trykte sidebetegnelse. Attributten kan
-  udelades, når siden ikke har en trykt betegnelse.
+  udelades, når siden ikke har en trykt betegnelse, eller den ikke kan læses
+  sikkert. Beskriv en usikker trykt betegnelse i en kildebaseret note frem for
+  at indsætte det forventede tal som en sikker læsning.
 - `facs`: det obligatoriske filnavn på facsimilebilledet for den nye side, fx
   `019.jpg`. Angiv kun filnavnet, ikke en sti. Kalliopes genererede
   facsimilefiler er nulbaserede, så PDF-side 20 hedder `019.jpg`.
@@ -1115,6 +1117,29 @@ en markør. Romertalsværdier i `n` indgår ikke i den maskinelle
 rækkefølgekontrol. Sideskift inde i hver note kontrolleres i deres egen
 rækkefølge, fordi en slutnote kan være trykt senere end det vers, dens
 notemarkør er knyttet til.
+
+Ved dokumenteret fejltrykt arabisk sidetal bevares det faktisk trykte tal i
+`n`. Angiv det tilsigtede tal særskilt med `corrected-n`, fx
+`<pb n="101" corrected-n="201" facs="253.jpg"/>`. Rettelsen skal være
+kontrolleret mod facsimilet og forklaret i værkets eller tekstens noter.
+`corrected-n` skal være et andet positivt arabisk heltal; det kræver både et
+arabisk `n` og et numerisk facsimilefilnavn. Rækkefølgekontrollen bruger det
+tilsigtede tal, mens det trykte tal bevares uændret. `source/@pages` kan da
+angive det tilsigtede bibliografiske interval; noten forklarer afvigelsen.
+Hvis fejltallet står på tekstens første side, bruges i stedet
+`<source pages="610-613" first-n="630" facsimile-pages="663-666"/>`.
+`first-n` bevarer det faktisk trykte arabiske tal; intervallet er det
+tilsigtede. Der indsættes fortsat ikke et kunstigt `<pb>` ved tekststart.
+Sideinventaret bevarer både `printed_page` og, ved rettelse, `corrected_page`.
+
+Når pagineringen springer tal over eller på anden måde ikke svarer til de
+fysiske sider, bruges `<pagebreaks count-by="facsimile"/>`. Hver tekst skal
+da have et positivt numerisk `source/@facsimile-pages`-interval. Kontrollen
+kræver præcis alle fysiske overgange i intervallet, med de korrekte nulbaserede
+filnumre; et tilsvarende antal forkerte sider accepteres ikke. Hovedtekst og
+parallelle noter må markere samme overgang. Denne kontrol kan ikke slås fra
+med `ignore-tests="pagebreak-count"`. Uden `count-by` gælder den hidtidige
+optælling efter det trykte sideinterval.
 
 Hvis et lovligt sideinterval undtagelsesvis ikke kan omsættes til
 `slutside - startside` interne markører, kan den konkrete tekst bruge
@@ -1384,11 +1409,10 @@ ikke tomme; selvstændige markører som `<pb/>`, `<br/>` og `<asterism/>` er til
 Almindelige inline-tags:
 
 - `<i>`, `<b>`, `<u>`, `<sup>`, `<sub>`, `<strike>`
-- `<o>`: en streg over de omfattede bogstaver, fx `h<o>a</o>` ved en
-  trykt forkortelsesstreg. Bogstaverne bevares uden at opløse forkortelsen.
-  Elementet renderes med CSS `text-decoration: overline`.
-  I titlers rene tekst til indeks og links bevares stregen som en kombinerende
-  macron (U+0304).
+- Trykte forkortelsesstreger skrives med U+0305 COMBINING OVERLINE efter
+  det omfattede bogstav, fx `ha̅ns` (`ha\u0305ns` i JavaScript). Bogstaverne
+  bevares uden at opløse forkortelsen. Brug samme Unicode-tegn i titler,
+  førstelinjer og brødtekst; egentlige makroner bevares som makroner.
 - `<span lang="sv">`: markerer et inline-tekststykke på et andet sprog uden
   at ændre typografien. Brug ISO 639-1-sprogkoder som `sv`, `de` og `fr`.
 - `<s>` og `<small>`: lille skrift. Gennemstregning angives med `<strike>`.
@@ -1614,3 +1638,20 @@ forfatterautoriseret samlet udgave; forskellige udgaver registreres særskilt.
 Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker med scriptet i
 `add-kalliope-person` mod et opdateret JSONL-korpus, så mulige opfyldelser
 opdages. Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
+
+## Udførlige titelpartier
+
+Et valgfrit `<titleblock>` efter `<title>` i `<head>` eller `<workhead>`
+erstatter visningen af titel, overtitel og undertitel på læsesiden.
+`<title>` bevarer den normaliserede titel til søgning og navigation.
+Titelblokken gengiver kildens versaler og typografi.
+
+Blokken indeholder ordnede `<part type="main|sub|dedication|byline|tune|imprint">`.
+Hver del indeholder enten `<line>` til bevidst linjedeling eller `<p>` til
+sammenhængende prosa. Rent typografiske orddelinger samles. `align` kan være
+`left`, `center` eller `right` (standard `left`); `size` kan være `small`,
+`normal` eller `large` (standard `normal`). Eksisterende inline-typografi,
+sprogmarkeringer og fodnoter understøttes. De erstattede subtitle/suptitle-
+felter udelades, så den fulde gengivelse kun vedligeholdes ét sted.
+Buildets tekst- og værk-JSON har et valgfrit `title_block` med delene og deres
+indholdsblokke; det offentlige JSONL-format er uændret.
