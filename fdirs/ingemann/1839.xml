@@ -4,16 +4,11 @@
   <title>Salomons Ring</title>
   <subtitle>Dramatisk Eventyr med et lyrisk Forspil</subtitle>
   <year>1839</year>
-  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706707305763" facsimile="130023098270_color" facsimile-pages-num="266" facsimile-pages-offset="4">
-    <author id="ingemann">B. S. Ingemann</author>
-    <title>Salomons Ring. Dramatisk Eventyr med et lyrisk Forspil</title>
-    <place>Kjøbenhavn</place>
-    <publisher>Andreas Seidelin</publisher>
-    <printer>Andreas Seidelin</printer>
-    <year>1839</year>
-  </source>
-  <!-- Farvescanningen mangler trykt side 10–11; derfor har sang II ingen facsimilekobling. -->
-  <source id="uden-facsimile" href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706707305763">
+  <!-- KB-facsimilet er suppleret med trykt side 10–11 fra Google-scanningen
+  af University of Virginias eksemplar: uva.x030801851-seq_16.jpg og
+  uva.x030801851-seq_17.jpg, leveret af brugeren. De er indsat som
+  facsimileside 16–17; alle efterfølgende sider er forskudt to pladser. -->
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122706707305763" facsimile="130023098270_color_suppleret" facsimile-pages-num="268" facsimile-pages-offset="6">
     <author id="ingemann">B. S. Ingemann</author>
     <title>Salomons Ring. Dramatisk Eventyr med et lyrisk Forspil</title>
     <place>Kjøbenhavn</place>
@@ -62,8 +57,7 @@ Den Sangkreds om <i>Sulamiths</i> og <i>Salomons Kjærlighed</i>, som her er sti
   <notes>
     <note>Denne Sang staaer udenfor den erotiske Række. (Cnfr. <a bible="bibelsalme127,1-2">Ps. 127, 1-2</a>).</note>
   </notes>
-  <!-- Trykt side 10 mangler i scanningen; kun sangens første side er tilgængelig. -->
-  <source pages="9-10" facsimile-pages="15"/>
+  <source pages="9-10"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -101,7 +95,7 @@ Han giver mig det Alt, mens jeg blunder.
   <title><num>II.</num>Sulamiths Sang i Viinhaven</title>
   <indextitle>Sulamiths Sang i Viinhaven</indextitle>
   <firstline>Jeg har hørt paa Gihon hvad Hyrder sang</firstline>
-  <source in="uden-facsimile" pages="11"/>
+  <source pages="11"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
