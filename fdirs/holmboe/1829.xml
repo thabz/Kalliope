@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1829" author="birgivi" status="incomplete" type="prose">
+<kalliopework id="1829" author="holmboe" status="incomplete" type="prose">
 <workhead>
   <title>Tyrkisk Katekismus</title>
   <subtitle>eller Udtog af Tyrkernes Troeslære</subtitle>
   <year>1829</year>
-  <source href="https://urn.nb.no/URN:NBN:no-nb_digibok_2013091728001">Mohammed Ben Pir Ali Elberkevi: <i>Tyrkisk Katekismus, eller Udtog af Tyrkernes Troeslære</i>, paa Norsk med Anmærkninger udgiven af C. A. Holmboe, H. T. Winthers Forlag, Christiania, 1829.</source>
+  <source href="https://urn.nb.no/URN:NBN:no-nb_digibok_2013091728001">
+    <author id="birgivi">Mohammed Ben Pir Ali Elberkevi</author>
+    <title>Tyrkisk Katekismus, eller Udtog af Tyrkernes Troeslære</title>
+    <translator id="holmboe">C. A. Holmboe</translator>
+    <place>Christiania</place>
+    <publisher>H. T. Winthers Forlag</publisher>
+    <year>1829</year>
+  </source>
   <pagebreaks/>
   <pictures>
     <picture src="1829-p1.jpg" type="titlepage" primary="true"><transcription>Tyrkisk / Katekismus, / eller / Udtog af Tyrkernes Troeslære. // Til Brug for Ungdommen, / forfattet af / Mohammed Ben Pir Ali / Elberkevi. // Paa Norsk med Anmærkninger udgiven / af / C. A. Holmboe, / Professor i de østerlandske Sprog ved Norges / Universitet. // Christiania, / Paa H. T. Winthers Forlag, og trykt i hans Officin / af W. Hartmann. / 1829.</transcription></picture>
   </pictures>
 </workhead>
 <workbody>
-<text id="birgivi2026111609" lang="da">
+<text id="holmboe2026111609" lang="no">
 <head>
   <title>Om Gud</title>
   <subtitle>1.</subtitle>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="2-3"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -25,10 +35,13 @@
 </body>
 </text>
 
-<text id="birgivi2026111610" lang="da">
+<text id="holmboe2026111610" lang="no">
 <head>
   <title>Om Gud</title>
   <subtitle>7.</subtitle>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="6-7"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -39,9 +52,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111601" lang="da">
+<text id="holmboe2026111601" lang="no">
 <head>
   <title>Overilet Dom mod de Troende</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="32"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -52,9 +68,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111602" lang="da">
+<text id="holmboe2026111602" lang="no">
 <head>
   <title>Hyklerie</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="32"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -65,9 +84,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111603" lang="da">
+<text id="holmboe2026111603" lang="no">
 <head>
   <title>Misundelse</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="32-33"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -78,9 +100,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111605" lang="da">
+<text id="holmboe2026111605" lang="no">
 <head>
   <title>Hovmod</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="33"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -91,9 +116,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111604" lang="da">
+<text id="holmboe2026111604" lang="no">
 <head>
   <title>Indbildskhed</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="33"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -104,9 +132,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111606" lang="da">
+<text id="holmboe2026111606" lang="no">
 <head>
   <title>Kjærlighed til Verden</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="33"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -117,9 +148,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111607" lang="da">
+<text id="holmboe2026111607" lang="no">
 <head>
   <title>Herskesyge</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="33-34"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -130,9 +164,12 @@
 </body>
 </text>
 
-<text id="birgivi2026111608" lang="da">
+<text id="holmboe2026111608" lang="no">
 <head>
   <title>Blind Lydighed med Hjertets Lidenskaber</title>
+  <notes>
+    <note editorial="true" unknown-original-by="birgivi"/>
+  </notes>
   <source pages="34"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
