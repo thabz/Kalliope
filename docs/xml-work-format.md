@@ -1257,10 +1257,16 @@ Selve prosateksten.
 `ref` skal pege på et værk-id hos samme digter. Værkfilen skal ligge i
 digterens mappe, hvor den registreres automatisk uden en liste i `info.xml`.
 
-Et underværk må ikke selv indeholde underværker. Værkhierarkiet har højst to
-niveauer; opdel et underværk med `<section>` i stedet. Reglen gælder både
-relationer angivet med `parent` og henvisninger med `<subwork ref="…"/>` og
-kontrolleres af korpustesten.
+Værkhierarkiet har højst tre niveauer, eksempelvis samlet udgivelse →
+afdeling → bind. Brug kun værkniveauer til bibliografisk dokumenterede
+udgivelsesdele; interne digtgrupper, kapitler og lignende opdeles med
+`<section>`. Et fjerde værkniveau er ikke tilladt.
+
+Korpustesten sammenholder relationer angivet med `parent` og henvisninger
+med `<subwork ref="…"/>`. Den afviser ukendte værker, cykler (herunder
+selvreferencer), flere forskellige forældre og kæder med mere end tre
+værkniveauer. En gentaget angivelse af samme relation med både `parent` og
+`<subwork>` er tilladt.
 
 ## Noter
 
