@@ -29,7 +29,8 @@
   <firstline>Reen var Din Sjel, og tillidsfuld Dit Hjerte</firstline>
   <source facsimile-pages="5"/>
   <keywords>drejer</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Reen var Din Sjel, og tillidsfuld Dit Hjerte
@@ -49,7 +50,8 @@ Da bød Din Gud — Din egen Smerte svandt.
 <head>
   <firstline>Min elskede Moder</firstline>
   <source facsimile-pages="9"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Min elskede Moder,</b></center>
@@ -69,7 +71,8 @@ Da bød Din Gud — Din egen Smerte svandt.
   <title>Forerindring</title>
   <source pages="VII-X" facsimile-pages="11-14"/>
   <keywords>drejer</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
     At Valget af de Digte af min Sal. Broder, som i denne Samling udkomme, er saadant, at de, ligesom Digtene i første Samling, ville have <w>Interesse for alle de Læsere, de ere bestemte for,</w> troer jeg at være fuldkommen overbeviist om; og jeg veed, at de ville være for dem Alle et kjært Minde om en tabt Ven.
@@ -140,7 +143,8 @@ Qviescant molliter ossa!
 
 <section id="drejer2026111601">
 
-<head><title>Gjenkaldelsen<!-- Rettelsesark: Gjenkaldelsen] Gjenkaldelse --> til Livet</title>
+<head>
+  <title>Gjenkaldelsen<!-- Rettelsesark: Gjenkaldelsen] Gjenkaldelse --> til Livet</title>
   <subtitle>
     <line>eller</line>
     <line>Logikens Magt,</line>
@@ -152,28 +156,44 @@ Qviescant molliter ossa!
 
 <content>
 
-<text id="drejer2026111602" skip-index="true"><head><firstline>Ludimus calamo</firstline>
-<keywords>horats</keywords>
-<source facsimile-pages="15"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><epigraph lang="la">
+<text id="drejer2026111602" skip-index="true">
+<head>
+  <firstline>Ludimus calamo</firstline>
+  <source facsimile-pages="15"/>
+  <keywords>horats</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
 Ludimus calamo.
 
 <right>Horats.</right>
 </epigraph>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111603" skip-index="true"><head><title>Anmærkning</title>
-<source facsimile-pages="16"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111603" skip-index="true">
+<head>
+  <title>Anmærkning</title>
+  <source facsimile-pages="16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
     Om Anledningen til denne Vaudeville see <w>første Samling af Drejers Digte.</w>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111604" skip-index="true"><head><title>Personerne i Vaudevillen</title>
-<source facsimile-pages="17"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><front>
+<text id="drejer2026111604" skip-index="true">
+<head>
+  <title>Personerne i Vaudevillen</title>
+  <source facsimile-pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<front>
 <castList>
 <castItem><role><w>Den gamle Mand.</w></role></castItem>
 <castItem><role><w>Hans Søn.</w></role></castItem>
@@ -195,14 +215,21 @@ Ludimus calamo.
 
 <section id="drejer2026111605">
 
-<head><title>Første Act</title></head>
+<head>
+  <title>Første Act</title>
+</head>
 
 <content>
 
-<text id="drejer2026111606" skip-index="true"><head><title>Første Scene</title>
+<text id="drejer2026111606" skip-index="true">
+<head>
+  <title>Første Scene</title>
 
-<source pages="5-6" facsimile-pages="19-20"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+  <source pages="5-6" facsimile-pages="19-20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Den gamle Mand</b></center></nonum>
 <nonum><center><wrap><small>(i sin<!-- Rettelsesark: sin] hans --> bekjendte habitus, staaer i Krumgangen tilvenstre, idet Dækket gaaer op, fordybet i Tanker; lidt efter seer han sig om, og faaer Øie paa Tilskuerne, hvorpaa han udbryder):</small></wrap></center></nonum>
 Ak, Goddag, Børnlille! I kjende mig vel knap?
@@ -238,11 +265,17 @@ Vist I til Vildfarelsernes Kundskab da kom!
 <right><small>(Kryber ind i Buskadset.)</small></right>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111607" skip-index="true"><head><title>Anden Scene</title>
-<source pages="6-7" facsimile-pages="20-21"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<text id="drejer2026111607" skip-index="true">
+<head>
+  <title>Anden Scene</title>
+  <source pages="6-7" facsimile-pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Sønnen</b></center></nonum>
 <nonum><center><wrap><small>(ligeledes i sin bekjendte habit, kommer langsomt og grundende ned ad Krumgangen tilhøire).</small></wrap></center></nonum>
 <span lang="en">To be, or not to be, that is the question!</span>
@@ -288,11 +321,17 @@ Der kan jeg meer i Ro philosophere!
 <nonum><right><small>(Gaaer ind i Buskadset.)</small></right></nonum>
 </poetry>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111608" skip-index="true"><head><title>Tredie Scene</title>
-<source pages="8-10" facsimile-pages="22-24"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111608" skip-index="true">
+<head>
+  <title>Tredie Scene</title>
+  <source pages="8-10" facsimile-pages="22-24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Gartneren. Den Forrige.</b></center>
 <center>Gartneren</center>
 <center><small>(som kommer længer nede i Haven, seer ham gaae ind).</small></center>
@@ -336,10 +375,18 @@ Og intet synligt Spor jeg efterlader.
 <center>Gartneren <small>(afsides).</small></center>
     Han er gal! Nu vel! Man maa tude med de Ulve, Man er iblandt. Han snakker paa Vers; jeg vil gjøre det endnu bedre, og synge dem ud. <small>(Seer sig om):</small> Der er dog Ingen her i Nærheden? det var dog saa flaut!
 </prose>
-<prose><center><small><b>Mel.</b> Min Herre! viid, De staaer paa Danmarks Grund.</small></center></prose><text id="drejer2026111631"><head><subtitle>Mel. Min Herre! viid, De staaer paa Danmarks Grund.</subtitle>
-<firstline>Min Herre! viid, det Kongens Have er!</firstline>
-<source pages="9" facsimile-pages="23"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Min Herre! viid, De staaer paa Danmarks Grund.</small></center>
+</prose>
+<text id="drejer2026111631">
+<head>
+  <subtitle>Mel. Min Herre! viid, De staaer paa Danmarks Grund.</subtitle>
+  <firstline>Min Herre! viid, det Kongens Have er!</firstline>
+  <source pages="9" facsimile-pages="23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Min Herre! viid, det Kongens Have er!
 De har vel Lov i Gangen at spadsere;
 Men kommer De mig Træerne for nær,
@@ -348,7 +395,9 @@ Faaer De saa mange Prygl, som De kan bære!
     Og træd mig ei imod i disse Sager!
     Hvad troer De da om Rosen her?
     Er den ei brækket? Hvad behager?
-</poetry></body></text>
+</poetry>
+</body>
+</text>
 
 <poetry>
 <pb n="10" facs="023.jpg"/><nonum><center>Sønnen</center></nonum>
@@ -378,11 +427,17 @@ En Tanke kan ei slaaes, som den ei slaae kan.
 <small>(Han prygler dygtigt paa ham: Sønnen lader sig rolig prygle; lidt efter lidt begynder han dog at ømme sig, og tilsidst giver han et svært Brøl fra sig, og løber skrigende op ad Gangen. Gartneren gaaer brummende bort.)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111609" skip-index="true"><head><title>Fjerde Scene</title>
-<source pages="10-11" facsimile-pages="24-25"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<text id="drejer2026111609" skip-index="true">
+<head>
+  <title>Fjerde Scene</title>
+  <source pages="10-11" facsimile-pages="24-25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Den gamle Mand</b></center></nonum>
 <nonum><center><small>(stikker Hovedet frem af Buskadset tilvenstre).</small></center></nonum>
 Hvilket Skrig og Skraal paa den anden Side hist!
@@ -405,22 +460,34 @@ For at komme frem, naar jeg mærker, det er Tid.
 <nonum><right><small>(Gaaer ind i Buskadset igjen.)</small></right></nonum>
 </poetry>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111610" skip-index="true"><head><title>Femte Scene</title>
-<source pages="11" facsimile-pages="25"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111610" skip-index="true">
+<head>
+  <title>Femte Scene</title>
+  <source pages="11" facsimile-pages="25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Cille Hansdatter</b></center>
 <center><small>(kommer ind i Haven, og gaaer mod Krumgangen tilvenstre.)</small></center>
     Mine Bekjendtere drillede mig, da jeg skulde reise herind, med, at jeg nok fik mig en Kjæreste i Kjøbenhavn; for det, sagde de,<!-- Rettelsesark: sagde de,] sagde de --> fik alle Piger, som kom derind. Men endnu har jeg saamen ikke mærket Noget til ham; <small>(hun sukker)</small> og imorgen skal jeg reise igjen. Jeg listede mig ogsaa derfor herud iaften, for at tage Afsked med Haven — min gamle Tante var taget i Selskab, ellers havde jeg nok ikke faaet Lov til at gaae alene — og til at spadsere med den gamle Spækhøkermadame føler jeg slet ingen Trang. Hvor her dog er deiligt herude iaften. Her vil jeg sætte mig paa denne Bænk.
 <small>(Hun sætter sig paa en Bænk foran i Krumgangen, omtrent ud for, hvor den gamle Mand er skjult.)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111611" skip-index="true"><head><title>Sjette Scene</title>
-<source pages="12-18" facsimile-pages="26-32"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<text id="drejer2026111611" skip-index="true">
+<head>
+  <title>Sjette Scene</title>
+  <source pages="12-18" facsimile-pages="26-32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Sønnen. Den Forrige.</b></center></nonum>
 <nonum><center>Sønnen</center></nonum>
 <nonum><center><wrap><small>(kommer i dybe Tanker ned ad Krumgangen tilvenstre, og nærmer sig efterhaanden Stedet, hvor Cille sidder).</small></wrap></center></nonum>
@@ -470,10 +537,18 @@ Jeg vil min tunge Lod i en Romanze
 Udsynge — det gjør godt at give Hjertet Luft!
 </poetry>
 
-<prose><center><small><b>Mel.</b> I Myrthelunden under Rosens Ly. (Romanze.)</small></center></prose><text id="drejer2026111632"><head><subtitle>Mel. I Myrthelunden under Rosens Ly. (Romanze.)</subtitle>
-<firstline>I Gaarden under Træets nøgne Green</firstline>
-<source pages="13-14" facsimile-pages="27-28"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> I Myrthelunden under Rosens Ly. (Romanze.)</small></center>
+</prose>
+<text id="drejer2026111632">
+<head>
+  <subtitle>Mel. I Myrthelunden under Rosens Ly. (Romanze.)</subtitle>
+  <firstline>I Gaarden under Træets nøgne Green</firstline>
+  <source pages="13-14" facsimile-pages="27-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 I <w>Gaarden</w> under <w>Træets</w> nøgne Green
 Sad Jochum ved sin gamle Faders Side.
 Studenterne var inde hver og een,
@@ -515,7 +590,10 @@ Arrigo Kroppen ham fratog med Eet,
 Og Jochums Aand var ene til paa Jorden!
 </poetry>
 
-</body></text><poetry>
+</body>
+</text>
+
+<poetry>
 <nonum><center><small>(efter en Pause)</small></center></nonum>
 O ja! saa skrækkeligt er Ingen skuffet!
 Saa fælt er Ingen for sin Juleglæde
@@ -551,7 +629,6 @@ For Solens Magt — desmeer min Sjæl opfyldes
 Med Haab og Mod — <small>(pludseligt besindende sig)</small> dog, hvorhen rives jeg?
 Jeg frygter, alt jeg har for meget sagt;
 Jeg kommer ganske ud jo af Costumen!
-
 </poetry>
 <prose>
 <center>Cille.</center>
@@ -599,10 +676,18 @@ Som Zeus’s<!-- Rettelsesark: Zeus’s] Zeu’s --> Søn, den store Alexander!
 <nonum><right><small>(Han kaster sig saa lang han er for hendes Fødder.)</small></right></nonum>
 </poetry>
 
-<prose><center><small><b>Mel.</b> Smukke Pige med det sorte Haar.</small></center></prose><text id="drejer2026111633"><head><subtitle>Mel. Smukke Pige med det sorte Haar.</subtitle>
-<firstline>Smukke Pige med det sorte Haar!</firstline>
-<source pages="16-18" facsimile-pages="30-32"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Smukke Pige med det sorte Haar.</small></center>
+</prose>
+<text id="drejer2026111633">
+<head>
+  <subtitle>Mel. Smukke Pige med det sorte Haar.</subtitle>
+  <firstline>Smukke Pige med det sorte Haar!</firstline>
+  <source pages="16-18" facsimile-pages="30-32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center>Jochum.</center></nonum>
 Smukke Pige med det sorte Haar!
     See dog til mig:
@@ -668,11 +753,20 @@ Gud! hvad hører jeg? O søde Fryd!
 <nonum><center><small>(De udbrede Armene til en Omfavnelse, da pludselig)</small></center></nonum>
 </poetry>
 
-</body></text></body></text>
+</body>
+</text>
 
-<text id="drejer2026111612" skip-index="true"><head><title>Syvende Scene</title>
-<source pages="18" facsimile-pages="32"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+</body>
+</text>
+
+<text id="drejer2026111612" skip-index="true">
+<head>
+  <title>Syvende Scene</title>
+  <source pages="18" facsimile-pages="32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Den gamle Mand</b></center></nonum>
 <nonum><center><small>(træder truende imellem dem).</small></center></nonum>
 Standser, Ulyksalige!<!-- Rettelsesark: Ulyksalige] Ulyksagelige --> <small>(til Cille)</small> O Jomfru! riv Dem dog
@@ -692,7 +786,8 @@ Opslug mig Jord! Ha, knus mig, Himlens Torden!
 <nonum><center><w>Dækket falder.</w></center></nonum>
 </poetry>
 
-</body></text>
+</body>
+</text>
 
 </content>
 
@@ -700,13 +795,20 @@ Opslug mig Jord! Ha, knus mig, Himlens Torden!
 
 <section id="drejer2026111613">
 
-<head><title>Anden Act</title></head>
+<head>
+  <title>Anden Act</title>
+</head>
 
 <content>
 
-<text id="drejer2026111614" skip-index="true"><head><title>Første Scene</title>
-<source pages="19-21" facsimile-pages="33-35"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111614" skip-index="true">
+<head>
+  <title>Første Scene</title>
+  <source pages="19-21" facsimile-pages="33-35"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Christian Lenz. Niels Poet og<!-- Rettelsesark: og] &amp; --> Arrigo.</b></center>
 <center><b>Christian Lenz</b></center>
 <center><wrap><small>(i Uniform, med Sabel &amp;c., kommer inde fra Haven mod Udgangen).</small></wrap></center>
@@ -738,19 +840,33 @@ Opslug mig Jord! Ha, knus mig, Himlens Torden!
 <small>(De gaae ind i Krattet tilvenstre, lidt nærmere mod Udgangen, end den Gamle.)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111615" skip-index="true"><head><title>Anden Scene</title>
-<keywords>baggesen</keywords>
-<source pages="21-22" facsimile-pages="35-36"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111615" skip-index="true">
+<head>
+  <title>Anden Scene</title>
+  <source pages="21-22" facsimile-pages="35-36"/>
+  <keywords>baggesen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Jochum</b></center>
 <center><wrap><small>(kommer gaaende ind i Haven. Hans Blik er vildt, og han synger):</small></wrap></center>
 </prose>
-<prose><center><small><b>Mel.</b> Jeg lagde mit Hoved til Elverhøi. (Kuhlau.)</small></center></prose><text id="drejer2026111634"><head><subtitle>Mel. Jeg lagde mit Hoved til Elverhøi. (Kuhlau.)</subtitle>
-<firstline>Jeg satte min Fod ind i Eveldrup</firstline>
-<source pages="21-22" facsimile-pages="35-36"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Jeg lagde mit Hoved til Elverhøi. (Kuhlau.)</small></center>
+</prose>
+<text id="drejer2026111634">
+<head>
+  <subtitle>Mel. Jeg lagde mit Hoved til Elverhøi. (Kuhlau.)</subtitle>
+  <firstline>Jeg satte min Fod ind i Eveldrup</firstline>
+  <source pages="21-22" facsimile-pages="35-36"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg satte min Fod ind i Eveldrup,
 For til Juul der at gratulere;
 Jeg havde saa tyk og bemavet en Krop,
@@ -782,7 +898,10 @@ For Juul at gratulere.
     Eia, hvor sælsomt et Liv!
 </poetry>
 
-</body></text><poetry>
+</body>
+</text>
+
+<poetry>
 <nonum><right><small>(Pludselig vild.)</small></right></nonum>
 Ha! men jeg være hvad jeg vil! Jeg kan ei,
 Jeg vil ei existere uden hende!
@@ -799,11 +918,17 @@ I hendes Arme maa jeg leve op,
 <nonum><right><small>(Nærmer sig venstre Krumgang.)</small></right></nonum>
 </poetry>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111616" skip-index="true"><head><title>Tredie Scene</title>
-<source pages="22-23" facsimile-pages="36-37"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<text id="drejer2026111616" skip-index="true">
+<head>
+  <title>Tredie Scene</title>
+  <source pages="22-23" facsimile-pages="36-37"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center><b>Den gamle Mand. Den Forrige.</b></center></nonum>
 <nonum><center><b>Den gamle Mand</b></center></nonum>
 <nonum><center><small>(træder ham imøde fra Buskadset).</small></center></nonum>
@@ -842,11 +967,17 @@ Men snart jeg vandrer atter ud i Haven,
 Min Elskede at finde — eller Graven!
 </poetry>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111617" skip-index="true"><head><title>Fjerde Scene</title>
-<source pages="24" facsimile-pages="38"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111617" skip-index="true">
+<head>
+  <title>Fjerde Scene</title>
+  <source pages="24" facsimile-pages="38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Chr. Lenz, Niels Poet og Arrigo</b> <small>(komme frem igjen).</small></center>
 <center><b>Niels Poet.</b></center>
     Hahaha! Nei, det var, Satan sla’ mig! dog Commers! Jeg vilde ikke have troet det, naar jeg ikke havde hørt det med mine egne Ører!
@@ -856,21 +987,33 @@ Min Elskede at finde — eller Graven!
     Ja, det veed jeg ikke. Denne Forliebelse maa være paakommen min gode Jochum fornylig. Saa meget kunde jeg dog forstaae, at hans Elskede maa befinde sig herude i Haven etsteds — tys! der kommer en lille Pige meget dybsindig oppe i Gangen. Det skulde dog vel aldrig være hende? — Lad os løbe ind i Krattet igjen, for ikke at skræmme hende. Maaskee kan vi faae flere Løier. <small>(De gaae ind i Buskadset igjen.)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111618" skip-index="true"><head><title>Femte Scene</title>
-<source pages="24-25" facsimile-pages="38-39"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111618" skip-index="true">
+<head>
+  <title>Femte Scene</title>
+  <source pages="24-25" facsimile-pages="38-39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center>Cille</center>
 <center><wrap><small>(kommer langsomt og dybsindig ned ad Krumgangen tilvenstre, og nærmer sig Bænken fra forrige Act).</small></wrap></center>
     O jeg stakkels ulykkelige Pige! saaledes at bedrages for sin første Kjærlighed! Hvem dog den stygge gamle Mand kunde være? Den grumme Gamle! grum som sorte Broder Knud! — Ja, skjøn Valborg! Du var ikke ulykkeligere, da hiin gamle Nidding traadte imellem Dig og din Axel, og med grusom Kulde sønderskar Dugen. Ak! Du var lykkeligere! Ingen Vilhelm vil syn<pb n="25" facs="038.jpg"/>ge mig ihjel! Jeg vil sætte mig her paa denne Bænk, hvor jeg første Gang saae <w>ham!</w> — hvor han var smuk, med det sorte Halsbind, Papiirsmenagerne og Brillerne! — og tænke paa min korte, saa hastigt svundne Lykke! <small>(Hun sætter sig.)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111619" skip-index="true"><head><title>Sjette Scene</title>
-<source pages="25-28" facsimile-pages="39-42"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111619" skip-index="true">
+<head>
+  <title>Sjette Scene</title>
+  <source pages="25-28" facsimile-pages="39-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Lieutenant<!-- Rettelsesark: Lieutenant] Lieutnant --> Nolimetangere</b></center>
 <center><wrap><small>(kommer fra høire Krumgang ned mod den aabne Plads ved Indgangen).</small></wrap></center>
     Saa staaer da ogsaa Satan i det! Har jeg nu ikke løbet den hele Have rundt for at finde den Tøs, jeg før saae oppe ved Conditorens. Jeg stod et Øieblik og lorgnetterede en Anden, og da jeg vendte mig om igjen, var hun borte. Det var en forbandet kjøn Pige! Hvor mon hun dog kan have forstukket sig?
@@ -884,10 +1027,18 @@ Min Elskede at finde — eller Graven!
     Som han før, da jeg lærte at kjende ham, vil jeg prøve paa at lette mit Hjerte ved en Sang.
 </prose>
 
-<prose><center><small><b>Mel.</b> Jeg gik mig i Lunden en sildig Sommerqvæl. (Kuhlau.)</small></center></prose><text id="drejer2026111635"><head><subtitle>Mel. Jeg gik mig i Lunden en sildig Sommerqvæl. (Kuhlau.)</subtitle>
-<firstline>Jeg gik mig i Rosenborg Have. — Fri og glad</firstline>
-<source pages="25-26" facsimile-pages="39-40"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Jeg gik mig i Lunden en sildig Sommerqvæl. (Kuhlau.)</small></center>
+</prose>
+<text id="drejer2026111635">
+<head>
+  <subtitle>Mel. Jeg gik mig i Lunden en sildig Sommerqvæl. (Kuhlau.)</subtitle>
+  <firstline>Jeg gik mig i Rosenborg Have. — Fri og glad</firstline>
+  <source pages="25-26" facsimile-pages="39-40"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg gik mig i Rosenborg Have. — Fri og glad
 Blandt Træer og blandt duftende Blomster jeg sad.
     Men vogt Dig, vogt Dig, o min Pige! <w>den gamle Mand</w> han seer Dig!
@@ -913,7 +1064,10 @@ Nu aldrig her paa Jorden bli’r Cille mere glad!
     Thi vogt Dig, vogt Dig, o min Pige! <w>den gamle Mand</w> ei seer Dig!
 </poetry>
 
-</body></text><prose>
+</body>
+</text>
+
+<prose>
     Ja gid jeg kunde lukke mine Øine for ham og for Alt paa denne Jord, som nu ingen Glæde har for mig.
 <small>(Hun hælder sig tilbage i Hjørnet af Bænken, og lukker Øinene.)</small>
 <center><b>Lieutn. N.</b></center>
@@ -985,11 +1139,17 @@ Vor Magt er altsaa her saa godt som Nul!
 <small>(Han kysser hende med Magt. Hun udstøder et ængsteligt Skrig, hvorpaa fremkomme)</small>
 </prose>
 
-</body></text>
+</body>
+</text>
 
-<text id="drejer2026111620" skip-index="true"><head><title>Syvende Scene</title>
-<source pages="28-39" facsimile-pages="42-53"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><prose>
+<text id="drejer2026111620" skip-index="true">
+<head>
+  <title>Syvende Scene</title>
+  <source pages="28-39" facsimile-pages="42-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
 <center><b>Chr. Lenz. Niels Poet. Arrigo. De Forrige.</b></center>
 <center><b>Chr. Lenz.</b></center>
     Hvad er her paafærde?
@@ -1001,10 +1161,18 @@ Vor Magt er altsaa her saa godt som Nul!
     Hvorledes, min Herre! — <small>(Gjenkjendende ham.)</small> Aha! Lieutenant<!-- Rettelsesark: Lieutenant] Lieutnant --> No — — <small>(Han rømmer sig.)</small>
 </prose>
 
-<prose><center><small><!-- Rettelsesark: ∅] Mel. -->Folkemelodie.</small></center></prose><text id="drejer2026111636"><head><subtitle><!-- Rettelsesark: ∅] Mel. -->Folkemelodie.</subtitle>
-<firstline>Godaften, min Hr. Lieutenant! Hvordan staaer det til?</firstline>
-<source pages="29" facsimile-pages="43"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><!-- Rettelsesark: ∅] Mel. -->Folkemelodie.</small></center>
+</prose>
+<text id="drejer2026111636">
+<head>
+  <subtitle><!-- Rettelsesark: ∅] Mel. -->Folkemelodie.</subtitle>
+  <firstline>Godaften, min Hr. Lieutenant! Hvordan staaer det til?</firstline>
+  <source pages="29" facsimile-pages="43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Godaften, min Hr. Lieutenant!<!-- Rettelsesark: Lieutenant] Lieutnant --> Hvordan staaer det til?
 Har nu igjen den Onde havt med Dem sit Spil?
         Heisaafalderaldera!
@@ -1012,7 +1180,10 @@ Har nu igjen den Onde havt med Dem sit Spil?
 Har nu igjen den Onde havt med Dem sit Spil?
 </poetry>
 
-</body></text><prose>
+</body>
+</text>
+
+<prose>
 <center><b>Lieutn. N.</b> <small>(trodsig).</small></center>
     Min Herre! understaaer De dem at tale saaledes til mig? <w>Uden at være Egoist, turde jeg vel paastaae at kunne gjøre lige saa gode Vers, som de, De der brækker af Dem</w> — men jeg værdiger Dem ikke at svare paa Vers! Jeg er Officeer<!-- Rettelsesark: Officeer] Offisceer -->. Hav Respect for min Kjole, Knægt!
 <center><b>Chr. Lenz</b> <small>(rolig).</small></center>
@@ -1088,10 +1259,18 @@ Saa meget, som vi hidtil Dem forbanded!
     Velan da! saa hør nu efter!
 </prose>
 
-<prose><center><small><b>Mel.</b> Komme Hvo som komme kan.</small></center></prose><text id="drejer2026111637"><head><subtitle>Mel. Komme Hvo som komme kan.</subtitle>
-<firstline>Kommer, Jochum! Gamle Mand!</firstline>
-<source pages="32-34" facsimile-pages="46-48"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Komme Hvo som komme kan.</small></center>
+</prose>
+<text id="drejer2026111637">
+<head>
+  <subtitle>Mel. Komme Hvo som komme kan.</subtitle>
+  <firstline>Kommer, Jochum! Gamle Mand!</firstline>
+  <source pages="32-34" facsimile-pages="46-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Kommer, Jochum! Gamle Mand!
 Spidser Eders Øre,
 At jeg Jer forklare kan,
@@ -1157,7 +1336,10 @@ Hellerei tør vrage!
         <w>Sandser ei bedrage!</w>
 </poetry>
 
-</body></text><prose>
+</body>
+</text>
+
+<prose>
 <center><b>Den gamle Mand</b></center>
 <center><small>(efter en Pause — til Arrigo).</small></center>
     Det er altsaa virkelig sandt, at vi ikke ere <w>Tanker?</w>
@@ -1177,10 +1359,18 @@ Hellerei tør vrage!
     Det er jeg jo ogsaa! Dansk Theolog, mit Barn! — Men hvis ellers ikke Seminaristen behager Dig, saa kan jeg da lade Dig vide, at jeg længe har været betænkt paa at changere. Hør kun:
 </prose>
 
-<prose><center><small><b>Mel.</b> I største Hast at kunne tage. (Attestats og Forlovelse.)</small></center></prose><text id="drejer2026111638"><head><subtitle>Mel. I største Hast at kunne tage. (Attestats og Forlovelse.)</subtitle>
-<firstline>Jeg er bestemt. Jeg Doctor vorder</firstline>
-<source pages="35-36" facsimile-pages="49-50"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> I største Hast at kunne tage. (Attestats og Forlovelse.)</small></center>
+</prose>
+<text id="drejer2026111638">
+<head>
+  <subtitle>Mel. I største Hast at kunne tage. (Attestats og Forlovelse.)</subtitle>
+  <firstline>Jeg er bestemt. Jeg Doctor vorder</firstline>
+  <source pages="35-36" facsimile-pages="49-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Jeg er bestemt. Jeg Doctor vorder,
 Curerer rask den hele Egn!
 Troe mig, mit Pund jeg ikke jorder
@@ -1218,7 +1408,10 @@ Ja, faaer han dem i sine Hænder,
 Han vist dem siger Tak for sidst!
 </poetry>
 
-</body></text><prose>
+</body>
+</text>
+
+<prose>
 Seer Du, mit Barn! Doctor vil jeg være! Og tænk Dig saa den skjønne Udsigt! Med det første venter jeg at blive Compagni-Chirurg; og saasnart jeg har taget Examen faaer jeg Bataillons-Chirurgs Characteer — og saa er Du Frue!
 <center>Cille <small>(smilende).</small></center>
     Ja! Det har Du Ret i! Det er jo rigtignok noget ganske Andet; og for det forventede Fruenavns Skyld faaer jeg vel at tage Dig!
@@ -1228,10 +1421,18 @@ Seer Du, mit Barn! Doctor vil jeg være! Og tænk Dig saa den skjønne Udsigt! M
     Nuja! jeg veed det just ikke — det havde maaskee <pb n="37" facs="050.jpg"/>været en delicat Casus nok — men jeg havde maaskee dog raisonneret som saa:
 </prose>
 
-<prose><center><small><b>Mel.</b> Hvis Dig Nogen Karper byder. (Kjærlighed uden Strømper.)</small></center></prose><text id="drejer2026111639"><head><subtitle>Mel. Hvis Dig Nogen Karper byder. (Kjærlighed uden Strømper.)</subtitle>
-<firstline>Hvis man en Student sig venter</firstline>
-<source pages="37" facsimile-pages="51"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><small><b>Mel.</b> Hvis Dig Nogen Karper byder. (Kjærlighed uden Strømper.)</small></center>
+</prose>
+<text id="drejer2026111639">
+<head>
+  <subtitle>Mel. Hvis Dig Nogen Karper byder. (Kjærlighed uden Strømper.)</subtitle>
+  <firstline>Hvis man en Student sig venter</firstline>
+  <source pages="37" facsimile-pages="51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 Hvis man en Student sig venter,
 Men en Semi-Nar kun henter,
   Bliver Man lidt flau derved!
@@ -1240,7 +1441,10 @@ Og er kjed af længer Venten,
   Gaaer Seminaristen med.
 </poetry>
 
-</body></text><prose>
+</body>
+</text>
+
+<prose>
 <center><b>Niels Poet og Arrigo.</b></center>
     Nu, saa tager da hverandre! Brylluppet besørge vi!
 <center>Cille.</center>
@@ -1249,11 +1453,19 @@ Og er kjed af længer Venten,
     Hurra for Niels og Arrigo!
 </prose>
 
-<prose><center><w>Slutnings-Sang</w></center><center><small><b>Mel.</b> Hvad mener Hr. Baronen vel &amp;c.</small></center></prose><text id="drejer2026111640"><head><title>Slutnings-Sang</title>
-<subtitle>Mel. Hvad mener Hr. Baronen vel &amp;c.</subtitle>
-<firstline>Hvad mener min Hr. Lieutenant vel</firstline>
-<source pages="37-39" facsimile-pages="51-53"/>
-<quality>korrektur1,korrektur2,kilde,side</quality></head><body><poetry>
+<prose>
+<center><w>Slutnings-Sang</w></center><center><small><b>Mel.</b> Hvad mener Hr. Baronen vel &amp;c.</small></center>
+</prose>
+<text id="drejer2026111640">
+<head>
+  <title>Slutnings-Sang</title>
+  <subtitle>Mel. Hvad mener Hr. Baronen vel &amp;c.</subtitle>
+  <firstline>Hvad mener min Hr. Lieutenant vel</firstline>
+  <source pages="37-39" facsimile-pages="51-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
 <nonum><center>Arrigo</center></nonum>
 <nonum><center><wrap><small>(gaaer hen til Lieut. N—, som hele Tiden har staaet som paa Naale, og dog ei har turdet gaae — og slaaer ham smilende paa Skuldren).</small></wrap></center></nonum>
 Hvad mener min Hr. Lieutenant<!-- Rettelsesark: Lieutenant] Lieutnant --> vel
@@ -1332,7 +1544,11 @@ Baade Klap at give
 Og — pibe!
 <nonum><center><w>Ende paa anden og sidste Akt.</w></center></nonum>
 </poetry>
-</body></text></body></text>
+</body>
+</text>
+
+</body>
+</text>
 
 </content>
 
@@ -1347,7 +1563,8 @@ Og — pibe!
   <title>Subscriptions-Indbydelse<footnote>Digteren havde nemlig kort før sin Død tænkt paa, selv at udgive en Samling af sine Digte.</footnote></title>
   <firstline>Hver en flot Regentsianer</firstline>
   <source pages="40-44"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Hver en flot Regentsianer,
@@ -1491,7 +1708,8 @@ Som et „Manuscript for Venner.”
   <title>Sang af Studenterchoret</title>
   <firstline>Hvad (glindser just ei) men mylrer hist? —</firstline>
   <source pages="44-45"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Hvad (glindser just ei) men mylrer hist? —
@@ -1534,7 +1752,8 @@ Eller glad for sit Fødeland falder?
   <title>I en Venindes Stambog</title>
   <firstline>Tør Den, hvis Liv, fortroligt med de Døde</firstline>
   <source pages="45-46"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Tør Den, hvis Liv, fortroligt med de Døde,
@@ -1569,7 +1788,8 @@ Tilsmile venligt mig i <w>Deres Minde</w>!
   <dates><event>1835-07-01</event></dates>
   <source pages="46-49"/>
   <keywords>ewald,drikkevise,lejlighedsdigtning</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der staaer et Træ i Regentsens Gaard,
@@ -1669,7 +1889,8 @@ Med varme Træk i Barmen prentet!
 <head>
   <firstline>Een Gang endnu</firstline>
   <source pages="49-50"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Een Gang endnu
@@ -1721,7 +1942,8 @@ O Elskede! modtager!
   <firstline>Skildt fra Dig ved Himm'lands brune Hede” —</firstline>
   <source pages="50-56"/>
   <keywords>elegi</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 „Skildt fra Dig ved Himm'lands brune Hede” —
@@ -1905,7 +2127,8 @@ Ak! men selv<!-- Rettelsesark: men selv] mens selv --> jeg leder tidt om Trøst!
   <firstline>Seer De Snoren med de mange Knuder</firstline>
   <dates><event>1836-04-16</event></dates>
   <source pages="56-58"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Seer De Snoren med de mange Knuder,
@@ -1975,7 +2198,8 @@ Evighedens modne Præg blev røvet.
   <subtitle>Helliget min inderlig elskede Moder.</subtitle>
   <firstline>Solen alt længe sin Hvile nød</firstline>
   <source pages="58-64"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Solen alt længe sin Hvile nød
@@ -2201,7 +2425,8 @@ Gud over Stjernerne boer!
   <title>Tilbageblik</title>
   <firstline>Der staaer et Træ i Gudfaders Gaard</firstline>
   <source pages="65-67"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der staaer et Træ i Gudfaders Gaard,
@@ -2282,7 +2507,8 @@ Velsigner nu hans rørte Hjerte:
   <title>Da et nyt Skib løb af Stabelen</title>
   <firstline>Vi Sømænd gjør ei mange Ord</firstline>
   <source pages="67-69"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Vi Sømænd gjør ei mange Ord,
@@ -2357,7 +2583,8 @@ Og alle Toldbetjente!
   <firstline>Der stander en Bye ved en smilende Aae</firstline>
   <dates><event>1834-01-19</event></dates>
   <source pages="69-72"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der stander en Bye ved en smilende Aae,
@@ -2455,7 +2682,8 @@ Mens de Blikke af Ærlighed funkle:
   <firstline>Der var en Tid, da Kunsten var kun lille</firstline>
   <dates><event>1836-09-28</event></dates>
   <source pages="72-73"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der var en Tid, da Kunsten var kun lille,
@@ -2503,7 +2731,8 @@ I Herrer! gjør Besked ved denne Skaal.
   <firstline>En Søemand gjør ei mange Ord</firstline>
   <dates><event>1836-09-28</event></dates>
   <source pages="73-74"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 En <w>Søemand</w> gjør ei mange Ord,
@@ -2542,7 +2771,8 @@ Selv Lægen gier Exempel.
   <firstline>Der er et Navn, hvis hulde Tone tryller</firstline>
   <dates><event>1835-07-27</event></dates>
   <source pages="75"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der er et Navn, hvis hulde Tone tryller
@@ -2581,7 +2811,8 @@ Og evigung er hendes Kjærlighed<!-- Rettelsesark: Kjærlighed] Kjerlighed -->!
   <firstline>Med fulde Glas og Sangens raske Toner</firstline>
   <source pages="76-77"/>
   <keywords>drikkevise</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Med fulde Glas og Sangens raske Toner
@@ -2635,7 +2866,8 @@ Mod Himlen stige ovenpaa!
   <firstline>Du døbte mig igaar, min Ven!</firstline>
   <dates><event>1833-05-09</event></dates>
   <source pages="77-79"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Du døbte mig igaar, min Ven!
@@ -2721,7 +2953,8 @@ Kom kun med Døbefonten, Far! — —
   <dates><event>1834-01-19</event></dates>
   <source pages="80-82"/>
   <keywords>zetlitz,baggesen,rahbek,drikkevise,lejlighedsdigtning</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der var en Tid, da de Randrusienser,
@@ -2803,7 +3036,8 @@ Thi fylder Glasset, Børn! og høit det hæver:
   <firstline>Der er en Gaard — dens Sted er dybt i Lynget</firstline>
   <dates><event>1834-07-27</event></dates>
   <source pages="82-83"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Der er en Gaard — dens Sted er dybt i Lynget,
@@ -2850,7 +3084,8 @@ Et simpelt <w>Hurra for vor Fa'r og Mo'er!</w>
   <title>Et tungsindigt Øieblik</title>
   <firstline>Længe jaged jeg med Frygt og Angst</firstline>
   <source pages="83-85"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Længe jaged jeg med Frygt og Angst
@@ -2904,7 +3139,8 @@ Som endnu kan blomstre for en Død —
   <dates><written>1836-07-12</written></dates>
   <source pages="85-91"/>
   <keywords>vergil</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <epigraph lang="la">
 O mihi præteritos referat si Jupiter annos!
@@ -3100,7 +3336,8 @@ Naar de kjælent Armen om ham slaaer.
   <firstline>Ak! hvi skulde mørknes saa</firstline>
   <dates><event>1835-06-05</event></dates>
   <source pages="91-93"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Ak! hvi skulde mørknes saa
@@ -3186,7 +3423,8 @@ Ryster hvert et følsomt Hjerte.
   <title>Melancholi</title>
   <firstline>Saa fær da hen, Du sidste Gnist af Glæde</firstline>
   <source pages="93-94"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Saa fær da hen, Du sidste Gnist af Glæde,
@@ -3225,7 +3463,8 @@ Paa Hospitalet dagligt Hjerter briste,
 <head>
   <firstline>Tager ei mit Digt for andet</firstline>
   <source facsimile-pages="110"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Tager<!-- Rettelsesark: Tager] Tages --> ei mit Digt for andet,
@@ -3244,7 +3483,8 @@ Lappede paa Bondens Brøst —
 <head>
   <title>Personerne</title>
   <source facsimile-pages="111"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <front>
 <castList>
 <castItem><role><w>Søren Weier</w>,</role> <roleDesc><span lang="la">Candidatus medicinæ</span> og Landpracticus.</roleDesc></castItem>
@@ -3256,7 +3496,9 @@ Lappede paa Bondens Brøst —
 <castItem><role><w>Thora H.</w> eller Bogstavet.</role></castItem>
 <castItem><role>m. Fl.</role></castItem>
 </castList>
-<set rend="center"><p>Scenen er i Eveldrup. Tiden Juleaften 1834.</p></set>
+<set rend="center">
+<p>Scenen er i Eveldrup. Tiden Juleaften 1834.</p>
+</set>
 </front>
 </text>
 
@@ -3264,7 +3506,8 @@ Lappede paa Bondens Brøst —
 <head>
   <firstline>Tager ei mit Digt for andet</firstline>
   <source facsimile-pages="112"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 Tager ei mit Digt for andet,
@@ -3284,7 +3527,8 @@ Lappede paa Bondens Brøst —
   <title>Første Scene</title>
   <source pages="99-105"/>
   <keywords>oehlenschlaeger,holberg</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Den forpurrede Comoedie.</b></center>
@@ -3296,7 +3540,8 @@ Lappede paa Bondens Brøst —
 <head>
   <firstline>Ih, saa hør mig dog, min Bro’er!</firstline>
   <source pages="99-100"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 <nonum><center><small><w>Mel.</w> Dibbelts Præludere-Wals.</small></center></nonum>
@@ -3363,7 +3608,8 @@ Mindre Klogt?
 <head>
   <firstline>Den vise Jule-Gubbe gaaer</firstline>
   <source pages="104"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 <nonum><center><small><w>Mel.</w> Min salig Kone, troer jeg vist.</small></center></nonum>
@@ -3410,7 +3656,8 @@ Vor Ungdoms Stadighed fortryde!
 <head>
   <title>Anden Scene</title>
   <source pages="105-122"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>De Forrige. Søren Weier.</b></center>
@@ -3442,7 +3689,8 @@ Vor Ungdoms Stadighed fortryde!
 <head>
   <firstline>Komme Hvo som komme kan!</firstline>
   <source pages="109"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 <nonum><center><small><w>Mel.</w> Komme Hvo som komme kan.</small></center></nonum>
@@ -3474,7 +3722,8 @@ Er, og stedse var, den.
 <head>
   <firstline>Jeg dem alle kjøbe vil!</firstline>
   <source pages="109-111"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 <nonum><center><small><w>Mel.</w> af Don Juan.</small></center></nonum>
@@ -3599,14 +3848,18 @@ Saa tag dem da!
 <center><b>Sabulon</b></center>
 <center><wrap><small>(tager noget Klingende og slaaer paa, gaaende omkring paa Theatret).</small></wrap></center>
 </prose>
-<pb n="118" facs="131.jpg"/><text id="drejer20261116225">
+<prose>
+<pb n="118" facs="131.jpg"/><center><small><w>Mel.</w> Midnatstimen i Taarnet slaaer.</small></center>
+</prose>
+<text id="drejer20261116225">
 <head>
+  <subtitle>Mel. Midnatstimen i Taarnet slaaer.</subtitle>
   <firstline>Stænder-Valgenes Time slaaer!</firstline>
   <source pages="118"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
-<nonum><center><small><w>Mel.</w> Midnatstimen i Taarnet slaaer.</small></center></nonum>
 „Stænder-Valgenes Time slaaer!
 Flux udi denne Stund
 Samle sig Alle fra Syd og Nord,
@@ -3668,7 +3921,8 @@ Som eier Huus og Grund!
 <head>
   <title>Fjerde Scene</title>
   <source pages="122"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Jomfrue Misle.</b></center>
@@ -3681,7 +3935,8 @@ Som eier Huus og Grund!
 <head>
   <title>Femte Scene</title>
   <source pages="122-123"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Thora H—. Den Forrige.</b></center>
@@ -3706,7 +3961,8 @@ Som eier Huus og Grund!
 <head>
   <title>Sjette Scene</title>
   <source pages="124-128"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><wrap><small>(Hele Personalet fra de foregaaende Scener komme ind igjen med et langt Bord, som de opstille, samt Stole &amp;c. Derpaa banke de Søm &amp;c. i; Alt til Husets Ziir og Beqvemmelighed. Efterat de stiltiende have arbeidet noget, tie Hamrene, og da siger)</small></wrap></center>
@@ -3716,7 +3972,8 @@ Som eier Huus og Grund!
   <linktitle>Vi hamre og tømre saa stærkt som vi kan</linktitle>
   <firstline>Vi hamre og tømre saa stærkt som vi kan</firstline>
   <source pages="124-125"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <poetry>
 <nonum><center><b>Mats Wiingaard.</b></center></nonum>
@@ -3864,7 +4121,8 @@ Om, <w>hvilket af de Stykker der skal vælges?</w>
 <head>
   <title>Syvende Scene</title>
   <source pages="128-129"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Jomfrue Misle. De Forrige.</b></center>
@@ -3892,7 +4150,8 @@ Om, <w>hvilket af de Stykker der skal vælges?</w>
 <head>
   <title>Ottende Scene</title>
   <source pages="129-130"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>De Forrige uden Misle.</b></center>
@@ -3926,7 +4185,8 @@ Om, <w>hvilket af de Stykker der skal vælges?</w>
 <head>
   <title>Niende Scene</title>
   <source pages="130-132"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality></head>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
 <body>
 <prose>
 <center><b>Søren Weier</b> <small>(alene).</small></center>
