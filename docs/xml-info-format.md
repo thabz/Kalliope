@@ -73,7 +73,7 @@ Landekoder, som buildet accepterer i dag:
 
 Nationaliteter skal findes i flagopslaget i `common/flags.js`. Det understøtter
 `dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `be`, `gr`, `ir`, `fi`, `is`,
-`ch`, `at`, `pt` og `cz`. Fx bevarer Runeberg sin gruppering under »andre«:
+`ch`, `at`, `pt`, `cz` og `tr`. Fx bevarer Runeberg sin gruppering under »andre«:
 
 ```xml
 <person id="runeberg" country="un" nationality="fi" lang="sv" type="poet">

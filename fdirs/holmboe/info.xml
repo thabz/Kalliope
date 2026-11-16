@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="holmboe" country="no" lang="no" type="person">
+  <!-- Identitet og livsdata: Salmonsens Konversationsleksikon, 2. udgave, XI (1921), s. 651–652, https://runeberg.org/salmonsen/2/11/0659.html -->
+  <name>
+    <firstname>Christopher Andreas</firstname>
+    <lastname>Holmboe</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1796-03-19</date>
+      <place>Vang i Valdres</place>
+    </born>
+    <dead>
+      <date>1882-04-02</date>
+      <place>Christiania</place>
+    </dead>
+  </period>
+</person>

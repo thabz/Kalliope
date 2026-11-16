@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="birgivi" country="un" nationality="tr" lang="un" type="person">
+  <!-- Navn og livsdata: Emrullah Yüksel, TDV İslâm Ansiklopedisi (1992), https://islamansiklopedisi.org.tr/birgivi -->
+  <name>
+    <firstname>Mehmed</firstname>
+    <lastname>Birgivî</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1523-03-27</date>
+      <place>Balıkesir</place>
+    </born>
+    <dead>
+      <date>1573-09</date>
+    </dead>
+  </period>
+  <biography-status status="not-found" checked-on="2026-11-16">
+    <checked-source id="salmonsen2">Undersøgt navneformerne Birgivi, Birgivî, Berkevi og Elberkevi i de relevante bindregistre; intet personopslag fundet.</checked-source>
+    <note>Osmannisk forfatter uden for de danske forfatterleksikas område. Ingen brugbar biografi fundet i Salmonsen; moderne biografiske metadata er dokumenteret i TDV İslâm Ansiklopedisi.</note>
+  </biography-status>
+</person>

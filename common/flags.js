@@ -19,6 +19,7 @@ export const flagMap = Object.freeze(Object.assign(Object.create(null), {
   at: '🇦🇹',
   pt: '🇵🇹',
   cz: '🇨🇿',
+  tr: '🇹🇷',
 }));
 
 export const poetFlag = poet => {
