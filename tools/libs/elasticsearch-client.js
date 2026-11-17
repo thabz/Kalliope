@@ -222,10 +222,12 @@ class ElasticSearchClient {
 
   async refreshIndex(index) {
     const URL = `${URLPrefix}/${index}/_refresh`;
-    const res = await requestWithRetry(URL, {
-      method: 'POST',
-    });
-    return res.json();
+    const res = await requestWithRetry(URL, { method: 'POST' });
+    const result = await res.json();
+    if ((result._shards?.failed ?? 0) > 0) {
+      throw new Error(`Elasticsearch refresh ${URL} failed: ${JSON.stringify(result)}`);
+    }
+    return result;
   }
 
   async deleteByQuery(index, query) {
@@ -237,7 +239,11 @@ class ElasticSearchClient {
       },
       body: JSON.stringify({ query }),
     });
-    return res.json();
+    const result = await res.json();
+    if (result.timed_out === true || (result.failures?.length ?? 0) > 0 || (result.version_conflicts ?? 0) > 0) {
+      throw new Error(`Elasticsearch delete ${URL} failed: ${JSON.stringify(result)}`);
+    }
+    return result;
   }
 
   deletePoet(index, poetId) {
