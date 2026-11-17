@@ -54,6 +54,12 @@ Profilér et fuldt build med `make profile-build-static`. CPU-profilen
 (`.cpuprofile`) og logs (`build.log` og `image-build.log`) gemmes i en ny
 mappe under `caches/profiles/`.
 
+Thumbnail-trinnet logger cachehits, læste bytes og delarbejdets tider. Ved behov
+for fuld indholdskontrol og reparation af billeder køres
+`node tools/build-static.js --verify-image-thumbnails --timings`. Se
+[`docs/thumbnail-cache.md`](docs/thumbnail-cache.md) for integritetsmodel, cache
+og reproducerbare målinger.
+
 ## Forespørgsler i korpusdata
 
 Static-buildet opretter et versionsmærket korpusdatasæt som JSONL-gzipfiler i
