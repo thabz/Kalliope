@@ -403,6 +403,9 @@ Til Hjertet atter tale.
     <!-- Andet motto er fra "Fragmenter", #5, Efterladte Skrifter, 1856, Bd. 1 eller 2. -->
   </notes>
   <source pages="17-18"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3140,6 +3143,9 @@ I Tide! - Nu det er forsilde! -
   <title>Fragmenter af Reinekes Memoirer</title>
   <firstline>En Dag, da Reinke laae og sov</firstline>
   <source pages="119-145"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -6198,6 +6204,9 @@ Men den Tappres Minde - skal stande.
     <note editorial="true">Gendigtning af Erik Johan Stagnelius: <xref type="translation" poem="stagnelius2018081001"/>.</note>
   </notes>
   <source pages="220-223"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -80,6 +80,9 @@ Tænk paa Jesus; det var ham, der sagde:
   <title>Jesu Fødsel</title>
   <firstline>Kommen er den store Time</firstline>
   <source pages="5-11" facsimile-pages="18-24"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -284,6 +287,7 @@ Straaler <w>Fromhed</w> som en Perle reen.
   <source pages="12-23" facsimile-pages="25-36"/>
   <places>
     <place ref="jordan-river" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -592,6 +596,7 @@ Der at reise Aanden fra dens Fald.
   <source pages="23-33" facsimile-pages="36-46"/>
   <places>
     <place ref="himalayas" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1058,6 +1063,7 @@ Sig bag dens lette Fjed.
   <source pages="40-44" facsimile-pages="53-57"/>
   <places>
     <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1958,6 +1964,7 @@ Med et Kys forraader han sin Lærer.
   <source pages="73-83" facsimile-pages="86-96"/>
   <places>
     <place ref="kidron-valley" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -6005,6 +6012,10 @@ Hvordan saa Fremtiden ruller sin Tærning.
     <performed>1849-11-14</performed>
   </dates>
   <source pages="219-220" facsimile-pages="232-233"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6208,6 +6219,9 @@ Nu er Mindernes Drapa forbi.
   <subtitle>Ved Studentermødet 1862.</subtitle>
   <firstline>Hil dig, Huus med trende Haller, stjerneklare Nord</firstline>
   <source pages="226-227" facsimile-pages="239-240"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

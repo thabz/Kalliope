@@ -2469,6 +2469,9 @@ Ret altid hang der en Guldskilling paa! —
   <title>Helenes Kilde</title>
   <firstline>De Vover rulle</firstline>
   <source pages="89-95"/>
+  <places>
+    <place ref="helene-spring" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3742,6 +3745,9 @@ Som ofte maa finde sin Lige!
   <subtitle>Mel.: Der var engang en tapper Mand.</subtitle>
   <firstline>Her bör man ret ved dette Bord</firstline>
   <source pages="140-142"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

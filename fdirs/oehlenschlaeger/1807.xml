@@ -106,6 +106,9 @@
   <title>Første Sang</title>
   <firstline>Et Sagn fuld værd at høre</firstline>
   <source pages="3-22"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -708,6 +711,9 @@ Og stirred i svarten Nat.
   <title>Anden Sang</title>
   <firstline>I Rosgas Kammersale</firstline>
   <source pages="25-46"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1360,6 +1366,9 @@ Mod Utgards skumle Stad.
   <title>Tredie Sang</title>
   <firstline>Nu stimled alle Jetter</firstline>
   <source pages="49-72"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2042,6 +2051,9 @@ Heel lysteligt man loe.
   <title>Fierde Sang</title>
   <firstline>Ved næste Morgengrye</firstline>
   <source pages="75-100"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2814,6 +2826,9 @@ Da Thor paa Sletten stod.
   <title>Femte Sang</title>
   <firstline>Naar over stille Bølger</firstline>
   <source pages="103-127"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3585,6 +3600,9 @@ Chor af <w>Alfer, Mennesker</w> og <w>Skygger</w>.
   <title>Baldur hin Gode</title>
   <firstline>Vær hilset i den aarle Morgen, elskte Søn!</firstline>
   <source pages="133-232"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6768,6 +6786,9 @@ Midgards Stad!
   <title>Hakon Jarl hin Rige</title>
   <firstline>Hør, hvor de støie! hvilken Lystighed!</firstline>
   <source pages="237-423"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

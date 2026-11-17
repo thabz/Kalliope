@@ -810,6 +810,9 @@ Bliver jeg dog ei confus.
   <title>Helenes Grav</title>
   <firstline>Høit oppe i Sjælland, øverst mod Nord</firstline>
   <source pages="28-30"/>
+  <places>
+    <place ref="tisvilde" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -1498,6 +1501,9 @@ Ham og hans Hustru, Mathilde.
   <subtitle>†</subtitle>
   <firstline>Just som Morgenen hævede høit sin funklende Fakkel</firstline>
   <source pages="55-57"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

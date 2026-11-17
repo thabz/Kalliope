@@ -1883,6 +1883,9 @@ et Kuld af Sønner, trofast, sundt og kjækt!
     <event>1875-05-25</event>
   </dates>
   <source pages="72-73"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2095,6 +2098,9 @@ de forente Rigers Bryllupsdag!
     <event>1876-02-19</event>
   </dates>
   <source pages="80-81"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2623,6 +2629,9 @@ ej Røver raner den ved Dag
   </dates>
   <source pages="99-103"/>
   <keywords>oehlenschlaeger</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

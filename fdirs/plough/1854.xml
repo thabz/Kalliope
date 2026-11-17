@@ -582,6 +582,7 @@ Det trofaste Folk paa Norges Kyst!
   <source pages="19"/>
   <places>
     <place ref="charlottenlund" relation="setting" primary="true"/>
+    <place ref="fyris" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -808,6 +809,9 @@ Og naar os Livets Alvor kalder!
   <title>For Norden</title>
   <firstline>Hvor de hvide Bræer skinne</firstline>
   <source pages="26-27"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1767,6 +1771,9 @@ Saadan skal I komme tilbage!
   <firstline>Skjaldernes Adam er død!</firstline>
   <source pages="57-62"/>
   <keywords>oehlenschlaeger</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3720,6 +3727,9 @@ En Fremtid hviler der af Seir og Ære.
   <title>Peder Tordenskjold</title>
   <firstline>I Nord er Vikingaanden født og baaren</firstline>
   <source pages="129-132"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

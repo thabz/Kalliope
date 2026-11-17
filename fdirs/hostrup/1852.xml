@@ -98,6 +98,9 @@ ak! men kun Studenterhavre.
   <title>Regensvise</title>
   <firstline>Man boer saa godt i Regensens Gaard</firstline>
   <source pages="7-8"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -907,6 +910,9 @@ som deler vore lyse Drømme!
   <subtitle>I Christiania 1851</subtitle>
   <firstline>Mulmet sank, det svale</firstline>
   <source pages="42-43"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3183,6 +3189,9 @@ Kling klang! — i Graven bliver lagt!
   </subtitle>
   <firstline>Regensens Provst saa mangen en Gang</firstline>
   <source pages="129-131"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

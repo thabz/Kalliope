@@ -460,6 +460,13 @@
     <parent ref="odense"/>
     <note>Christiansdal er et historisk navn knyttet til Dalum.</note>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q861363 -->
+  <place id="christianshavn">
+    <name>Christianshavn</name>
+    <wikidata>Q861363</wikidata>
+    <type>neighborhood</type>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="church-of-our-lady-copenhagen">
     <name>Vor Frue Kirke</name>
     <canonical-name>Church of Our Lady</canonical-name>
@@ -804,6 +811,14 @@
     <wikidata>Q26503</wikidata>
     <type>island</type>
     <alias>Fyen</alias>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1154899 -->
+  <place id="fyris">
+    <name>Fyrisån</name>
+    <wikidata>Q1154899</wikidata>
+    <type>river</type>
+    <alias>Fyris</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="galdhopiggen">
     <name>Galdhøpiggen</name>
@@ -1160,6 +1175,14 @@
     <alias>Großes Fass</alias>
     <parent ref="heidelberg"/>
   </place>
+  <!-- Kilde: https://trap.lex.dk/Sankt_Helene_Kilde -->
+  <place id="helene-spring">
+    <name>Sankt Helene Kilde</name>
+    <type>spring</type>
+    <alias>St. Helenes Kilde</alias>
+    <alias>Helene Kilde</alias>
+    <parent ref="tisvilde"/>
+  </place>
   <place id="helsingborg">
     <name>Helsingborg</name>
     <wikidata>Q25411</wikidata>
@@ -1198,6 +1221,14 @@
     <alias>Hippokrene-kilden</alias>
     <parent ref="greece"/>
     <note>Musernes kilde på Helikon i græsk mytologi.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q12317772 -->
+  <place id="hojerup-old-church">
+    <name>Højerup Gamle Kirke</name>
+    <wikidata>Q12317772</wikidata>
+    <type>church</type>
+    <alias>Højerup Kirke</alias>
+    <parent ref="stevns-klint"/>
   </place>
   <place id="hokksund">
     <name>Hokksund</name>
@@ -1271,6 +1302,14 @@
     <type>town/comune</type>
     <parent ref="italy"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q835708 -->
+  <place id="jelling">
+    <name>Jelling</name>
+    <wikidata>Q835708</wikidata>
+    <type>town</type>
+    <alias>Jellinge</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="jericho">
     <name>Jeriko</name>
     <type>city</type>
@@ -1294,6 +1333,13 @@
     <type>mountain region</type>
     <parent ref="norway"/>
     <note>Geographic mountain region, not the national-park item.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q104028 -->
+  <place id="judea">
+    <name>Judæa</name>
+    <wikidata>Q104028</wikidata>
+    <type>historical region</type>
+    <alias>Judæ</alias>
   </place>
   <place id="judean-mountains">
     <name>Judæas Bjerge</name>
@@ -1319,6 +1365,14 @@
     <wikidata>Q25389</wikidata>
     <type>peninsula/region</type>
     <parent ref="denmark"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q26345 -->
+  <place id="kalmar">
+    <name>Kalmar</name>
+    <wikidata>Q26345</wikidata>
+    <type>city</type>
+    <alias>Calmar</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="kalo-castle">
     <name>Kalø Slot</name>
@@ -1654,6 +1708,14 @@
     <alias>Malaga</alias>
     <parent ref="spain"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q184492 -->
+  <place id="malaren">
+    <name>Mälaren</name>
+    <wikidata>Q184492</wikidata>
+    <type>lake</type>
+    <alias>Mälar</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="mannheim">
     <name>Mannheim</name>
     <wikidata>Q2119</wikidata>
@@ -1890,6 +1952,12 @@
     <alias>Norderhovg</alias>
     <parent ref="ringerike"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q52062 -->
+  <place id="nordic-countries">
+    <name>Norden</name>
+    <wikidata>Q52062</wikidata>
+    <type>region</type>
+  </place>
   <place id="north-sea">
     <name>Nordsøen</name>
     <type>sea</type>
@@ -2106,6 +2174,14 @@
   <place id="red-sea">
     <name>Det Røde Hav</name>
     <type>sea</type>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1819210 -->
+  <place id="regensen">
+    <name>Regensen</name>
+    <wikidata>Q1819210</wikidata>
+    <type>student residence</type>
+    <alias>Regentsen</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="reggio-emilia">
     <name>Reggio Emilia</name>
@@ -2572,6 +2648,14 @@
     <alias>Île Saint-Pierre</alias>
     <parent ref="lake-biel"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1614152 -->
+  <place id="stevns-klint">
+    <name>Stevns Klint</name>
+    <wikidata>Q1614152</wikidata>
+    <type>cliff</type>
+    <alias>Stevens Klint</alias>
+    <parent ref="zealand"/>
+  </place>
   <place id="stjerneborg">
     <name>Stjerneborg</name>
     <wikidata>Q142658</wikidata>
@@ -2697,6 +2781,14 @@
     <name>Tigris</name>
     <type>river</type>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q656733 -->
+  <place id="tisvilde">
+    <name>Tisvilde</name>
+    <wikidata>Q656733</wikidata>
+    <type>town</type>
+    <alias>Tidsvilde</alias>
+    <parent ref="zealand"/>
+  </place>
   <place id="tivoli">
     <name>Tivoli</name>
     <wikidata>Q159605</wikidata>
@@ -2795,6 +2887,15 @@
     <canonical-name>Canton of Uri</canonical-name>
     <wikidata>Q12404</wikidata>
     <type>canton</type>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q177860 -->
+  <place id="valhalla">
+    <name>Valhal</name>
+    <wikidata>Q177860</wikidata>
+    <type>mythical place</type>
+    <alias>Valhalle</alias>
+    <alias>Valhalla</alias>
+    <alias>Walhalla</alias>
   </place>
   <place id="valley-of-jehoshaphat">
     <name>Josafats Dal</name>

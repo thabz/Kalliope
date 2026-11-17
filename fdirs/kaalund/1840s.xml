@@ -345,6 +345,9 @@ Der brænder det ved Dag og Nat endnu.
   <title>Menneskets Skabelse</title>
   <firstline>Engang paa Dovres Klippeblok</firstline>
   <source pages="11-16"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1900,6 +1903,7 @@ Da over Dig Du selv vil bryde Staven!
     <place ref="mount-ararat" relation="mentioned"/>
     <place ref="tiber" relation="mentioned"/>
     <place ref="himalayas" relation="mentioned"/>
+    <place ref="jelling" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3659,6 +3663,9 @@ Hvormed hun den bedre kan pryde<note>Hun er der ikke meer.</note>.
   <title>Thussekæmpen Hrugners Vædderidt til Valhalla</title>
   <firstline>Odin reed fra Gudehjem</firstline>
   <source pages="146-150"/>
+  <places>
+    <place ref="valhalla" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3797,6 +3804,9 @@ Vee, da skal jeg komme!''
   <title>Thors Kamp med Hrugner og Mokkurkalf</title>
   <firstline>Da Jetterne nu hørte</firstline>
   <source pages="151-156"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

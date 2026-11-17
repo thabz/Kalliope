@@ -8,6 +8,9 @@
   <proofreadings>
     <proofreading model="gpt-6.1-sol" datetime="2026-11-16T16:29:47+01:00"/>
   </proofreadings>
+  <notes>
+    <note><w>Folkesangene:</w> I 1 er tildeels første Vers, i 2: første Vers og Omkvædene, i 3: første Vers efter <w>svenske</w> Folkeviser. 1 og 2 findes i Berggreens Melodier III. 28 og I. 21.</note>
+  </notes>
   <pictures>
     <picture type="titlepage" src="1857-p1.jpg" primary="true"><transcription>Digte og Sange / af / Gotfred Rode. // Kjøbenhavn. / Forlagt af den Gyldendalske Boghandling. (F. Hegel.) / Thieles Bogtrykkeri. / 1857.</transcription></picture>
   </pictures>
@@ -21,20 +24,8 @@
   </source>
 </workhead>
 <workbody>
-<text id="rodeg20261116100">
-<head>
-  <firstline>Folkesangene: I 1 er tildeels første Vers, i 2: første Vers og Omkvædene, i 3: første Vers efter svenske Folkeviser</firstline>
-  <source facsimile-pages="12"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<w>Folkesangene:</w> I 1 er tildeels første Vers, i 2: første Vers og Omkvædene, i 3: første Vers efter <w>svenske</w> Folkeviser. 1 og 2 findes i Berggreens Melodier III. 28 og I. 21.
-</prose>
-</body>
-</text>
 
-<section id="rodeg2026111601">
+<section>
 <head>
   <title><num>I.</num>Blandede Digte</title>
 </head>
@@ -80,6 +71,9 @@ Gaaer ad Jacobs-Stigens Trin:
   <title>Fædrelandssang</title>
   <firstline>Vort Hjem er intet Ørneslot</firstline>
   <source pages="10-12" facsimile-pages="16-18"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -135,7 +129,7 @@ Velsignet være Dannevang,
 </body>
 </text>
 
-<section id="rodeg2026111613">
+<section level="2">
 <head>
   <title>Folkesange</title>
 </head>
@@ -294,6 +288,9 @@ Min Elskede, Farvel, Farvel,
   <subtitle>Et Sagn.</subtitle>
   <firstline>Jeg synger om en Kæmpe her</firstline>
   <source pages="18-22" facsimile-pages="24-28"/>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -420,6 +417,10 @@ Naar ej i højre Haand han holdt
   <title>Ved Jellinge</title>
   <firstline>Det tænkte Kong Gorm den bolde</firstline>
   <source pages="23-25" facsimile-pages="29-31"/>
+  <places>
+    <place ref="jelling" relation="subject" primary="true"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -498,6 +499,9 @@ Skulde Christi Kirke
   <title>Julenats-Tanker</title>
   <firstline>Der ganger et Sagn saa vide</firstline>
   <source pages="26-27" facsimile-pages="32-33"/>
+  <places>
+    <place ref="bethlehem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -546,6 +550,9 @@ At Al-Skabningens Forlængsel
   <subtitle>Et Sagn.</subtitle>
   <firstline>For Alverdens Synd og Skam</firstline>
   <source pages="28-29" facsimile-pages="34-35"/>
+  <places>
+    <place ref="golgotha" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -589,6 +596,10 @@ Som den ønsked over Ham.
   <subtitle>Et Sagn.</subtitle>
   <firstline>Der hvor Klinten sig hæver mod Sky</firstline>
   <source pages="30-34" facsimile-pages="36-40"/>
+  <places>
+    <place ref="hojerup-old-church" relation="subject" primary="true"/>
+    <place ref="stevns-klint" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -709,6 +720,13 @@ Højerup Kirke blier aldrig et Rov
   <subtitle>Et Sagn.</subtitle>
   <firstline>Stort Ry der gik fra Sverrigs Strand</firstline>
   <source pages="35-42" facsimile-pages="41-48"/>
+  <places>
+    <place ref="helene-spring" relation="subject" primary="true"/>
+    <place ref="tisvilde" relation="setting"/>
+    <place ref="kattegat" relation="setting"/>
+    <place ref="sweden" relation="setting"/>
+    <place ref="zealand" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -915,6 +933,10 @@ Men vidne dog med mægtig Lov
   <title>Bethlehem</title>
   <firstline>I Stæder, som knejse og straale</firstline>
   <source pages="43" facsimile-pages="49"/>
+  <places>
+    <place ref="bethlehem" relation="subject" primary="true"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -948,6 +970,9 @@ Omkring dit evige Minde.
   <title>Juleaften</title>
   <firstline>Dagen lang var Solen i Skjul</firstline>
   <source pages="44-45" facsimile-pages="50-51"/>
+  <places>
+    <place ref="bethlehem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1355,6 +1380,9 @@ Det vilde Dyr, som i Skoven gaaer,
   <title>I „den lille Skov“</title>
   <firstline>I „den lille Skov“ nærved Øresund</firstline>
   <source pages="60-61" facsimile-pages="66-67"/>
+  <places>
+    <place ref="oresund" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1439,6 +1467,9 @@ De ere Trælle, men du er af Adel.
   <title>En Kat</title>
   <firstline>Og saa kom jeg da ind ad Gaardens Port</firstline>
   <source pages="64-68" facsimile-pages="70-74"/>
+  <places>
+    <place ref="oresund" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1721,7 +1752,7 @@ Og midt i den bittre Kulde
 </content>
 </section>
 
-<section id="rodeg2026111640">
+<section>
 <head>
   <title><num>II.</num>Et Hjertes Kjærlighed</title>
 </head>
@@ -2147,6 +2178,9 @@ Og der flyede jeg, mens Kulden gjennem Aarerne gik,
   <title><num>8.</num>Alvors-Tanker</title>
   <firstline>Jeg tænker paa, hvordan fra Sorgen gjerne</firstline>
   <source pages="96-97" facsimile-pages="102-103"/>
+  <places>
+    <place ref="eden" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2557,7 +2591,7 @@ Did hvor jeg veed, du mig elske maa:
 </content>
 </section>
 
-<section id="rodeg2026111670">
+<section>
 <head>
   <title><num>III.</num>Sange</title>
 </head>
@@ -2569,6 +2603,9 @@ Did hvor jeg veed, du mig elske maa:
   <subtitle>(Marts 1851.)</subtitle>
   <firstline>Der gik Leg paa Mark og Vold</firstline>
   <source pages="117-118" facsimile-pages="123-124"/>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2614,6 +2651,9 @@ Stolte vi dig vie ind
   <subtitle>(1851.)</subtitle>
   <firstline>Jeg veed i Havets Bølger svøbt</firstline>
   <source pages="119-120" facsimile-pages="125-126"/>
+  <places>
+    <place ref="duchy-schleswig" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2672,6 +2712,10 @@ Viig ej, men strid! — jeg veed, hans Grav
   <subtitle>(Stockholm. Juni 1856.)</subtitle>
   <firstline>Frejdigt Sind med os vi lod</firstline>
   <source pages="121-122" facsimile-pages="127-128"/>
+  <places>
+    <place ref="stockholm" relation="writtenAt" primary="true"/>
+    <place ref="nordic-countries" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2723,6 +2767,13 @@ I, som gav vor unge Sjæl
     <event>1856-09-16</event>
   </dates>
   <source pages="123-124" facsimile-pages="129-130"/>
+  <places>
+    <place ref="copenhagen" relation="writtenAt" primary="true"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2774,6 +2825,12 @@ Og Nordens Held gaae frem deraf.
     <event>1856-11-17</event>
   </dates>
   <source pages="125-126" facsimile-pages="131-132"/>
+  <places>
+    <place ref="lund" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2817,6 +2874,9 @@ Og altid som en sluttet Hær
     <event>1857-01-13</event>
   </dates>
   <source pages="127-128" facsimile-pages="133-134"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2865,6 +2925,17 @@ Da Alle flokkes om de Faa,
     <event>1857-06-13</event>
   </dates>
   <source pages="129-132" facsimile-pages="135-138"/>
+  <places>
+    <place ref="uppsala" relation="subject" primary="true"/>
+    <place ref="kalmar" relation="setting"/>
+    <place ref="stockholm" relation="setting"/>
+    <place ref="fyris" relation="setting"/>
+    <place ref="malaren" relation="setting"/>
+    <place ref="djurgarden" relation="setting"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2952,6 +3023,10 @@ Den tog vi af Upsals ærværdige Grund.
   </dates>
   <source pages="133-134" facsimile-pages="139-140"/>
   <keywords>hostrup</keywords>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3017,6 +3092,9 @@ Og vi vil vente Bud fra dig
   </dates>
   <source pages="135-136" facsimile-pages="141-142"/>
   <keywords>krossing</keywords>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3060,6 +3138,9 @@ Fik Barnesind til graanet Haar.
     <event>1856-05-09</event>
   </dates>
   <source pages="137-138" facsimile-pages="143-144"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3255,6 +3336,9 @@ Mine Venner! Snip, Snap, Snude!
   <subtitle>(For Borgerdydskolen paa Christianshavn.)</subtitle>
   <firstline>Man siger, evigt Foraar boer</firstline>
   <source pages="146-147" facsimile-pages="152-153"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
