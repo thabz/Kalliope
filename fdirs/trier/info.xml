@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="trier" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ernst Johannes</firstname>
+    <lastname>Trier</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1837-01-23</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1893-12-29</date>
+      <place>Vallekilde</place>
+    </dead>
+  </period>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Ernst_Trier</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>
