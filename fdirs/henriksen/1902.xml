@@ -1459,6 +1459,11 @@ med Bod for Hjærternes Vunder.
   <title>Fiesole</title>
   <firstline>Højt på Bjærget under Laurers</firstline>
   <source pages="71-72"/>
+  <places>
+    <place ref="fiesole" relation="setting"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="giottos-campanile" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
