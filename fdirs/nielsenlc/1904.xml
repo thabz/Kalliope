@@ -1,7 +1,1174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1904" author="nielsenlc" status="incomplete" type="poetry">
+<kalliopework id="1904" author="nielsenlc" status="complete" type="poetry">
 <workhead>
   <title>Rejsen til Rom</title>
+  <subtitle>Rejserim</subtitle>
   <year>1904</year>
+  <pictures>
+    <picture type="titlepage" src="1904-p1.jpg">
+      <transcription>Rejsen til Rom / Rejserim / af / L. C. Nielsen // København og Kristiania / Gyldendalske Boghandel / Nordisk Forlag / 1904</transcription>
+    </picture>
+    <picture type="frontpage" src="1904-p2.jpg" year="1904">
+      Viggo Pedersen: illustreret omslag, 1904.
+      <!-- Kilde: Det Kgl. Bibliotek, digitalisering 2018 af Rejsen til Rom (1904), PDF side 7, https://www.kb.dk/e-mat/dod/130023303214-color.pdf. Signeret Viggo Pedersen 1904; katalogpost alma99122874712205763 angiver samme illustrator. Rødt tryk efter tegning; den præcise reproduktionsteknik og de fysiske mål er ikke dokumenteret. Eksemplaret tilhører Det Kgl. Bibliotek, signatur 53,-397 8°. Ingen sikker kunstnerpost i Kalliopes personregister. Kunstneren døde 1926 (https://biografiskleksikon.lex.dk/Viggo_Pedersen); digitaliseringens forblad henviser genbrug til biblioteket. -->
+      <!-- metadata checked: 2026-11-17 -->
+    </picture>
+    <picture type="illustration" src="1904-p3.jpg" year="1904">
+      Viggo Pedersen: illustration før titelbladet, 1904.
+      <!-- Kilde: samme KB-digitalisering, PDF side 11. Signeret Viggo Pedersen 1904; sort tryk af omslagets motiv. Den præcise reproduktionsteknik og de fysiske mål er ikke dokumenteret. Samling og proveniens som omslaget; ingen sikker kunstnerpost i Kalliopes personregister. Kunstneren døde 1926 (https://biografiskleksikon.lex.dk/Viggo_Pedersen); digitaliseringens forblad henviser genbrug til biblioteket. -->
+      <!-- metadata checked: 2026-11-17 -->
+    </picture>
+  </pictures>
+  <source href="https://www.kb.dk/e-mat/dod/130023303214-color.pdf" facsimile="130023303214_color" facsimile-pages-num="86" facsimile-pages-offset="8">
+    <author id="nielsenlc">L. C. Nielsen</author>
+    <title>Rejsen til Rom. Rejserim</title>
+    <place>København og Kristiania</place>
+    <publisher>Gyldendalske Boghandel, Nordisk Forlag</publisher>
+    <printer>Langkjærs Bogtrykkeri, København</printer>
+    <year>1904</year>
+    <identifiers><kb-alma>99122874712205763</kb-alma></identifiers>
+  </source>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-17T08:35:36+01:00"/>
+  </proofreadings>
 </workhead>
+<workbody>
+<text id="nielsenlc2026111701">
+<head>
+  <title>Til min Søn Jakob</title>
+  <source facsimile-pages="15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+Til
+    min Søn Jakob
+</prose>
+</body>
+</text>
+
+<text id="nielsenlc2026111702">
+<head>
+  <title>Aften</title>
+  <firstline>Solen sover derude nu</firstline>
+  <source pages="11-12"/>
+  <places>
+    <place ref="italy" relation="subject" primary="true"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Solen sover derude nu
+i Havets vuggende Seng,
+saa kommer Turen nok snart til dig
+at sove, min lille Dreng!
+Dog, ikke før Moder kalder,
+ender vi denne stolte Dag;
+for vi vil nyde hvert Aandedrag,
+saa længe vi kan komme til det —
+Men sove, naar Moder vil det.
+
+Stille bliver der udenfor,
+og stille bliver vi to;
+naar Solen er vugget til Hvile,
+gaar alt, som støjer, til Ro.
+Og støjet, det har vi begge,
+men nu har vi sat os saa stille ned,
+for vi vil rejse saa langt af Sted
+paa Mindernes stærke Vinger,
+der os til Italien bringer.
+
+<pb n="12" facs="019.jpg"/>Ingen rejser saa tit som vi
+men heller ingen saa let;
+vi kunde rejse hver Dag, vi to,
+og dog ikke blive træt.
+Her inde i Faders Stue
+har vi den hele, runde Jord,
+saa vi kan rejse i Syd og Nord,
+hvorhen, hvorhen det os lyster,
+til fremmede Byer og Kyster.
+
+Men tiest vi tar til Italien,
+hvor vi har været en Gang.
+Vi drømmer om alle de gamle Byer,
+om Sol, om Blomster og Sang.
+Vi drømmer om gule Floder,
+om grønne Marker og Bjærge blaa,
+om alle de Ting, vi sammen saa,
+om Vin, som giver os Kræfter —
+Saa sover vi godt derefter!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111703">
+<head>
+  <title><num>I.</num>Rom</title>
+  <firstline>Jeg løfter dig, min lille Dreng</firstline>
+  <source pages="15-17"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="berlin" relation="setting"/>
+    <place ref="brenner-pass" relation="setting"/>
+    <place ref="verona" relation="setting"/>
+    <place ref="pistoia" relation="setting"/>
+    <place ref="florence" relation="setting"/>
+    <place ref="st-peters-basilica" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg løfter dig, min lille Dreng,
+saa rider vi til Rom!
+    Nu skynder vi os sporenstregs,
+    at Mor ej tar dig undervejs,
+    forbi Berlin til Brenner;
+    dér møder os den Varme, som
+    Verona mod os sender!
+
+Verona!
+
+    Kan du høre
+    og huske, hvor det lød
+    den Aften i vort Øre?
+    En Duft, orangesød,
+    gav os fornyet Glæde,
+    saa du holdt op at græde
+    og sov paa Moders Skød!
+
+Saa fløj vi gennem Dalen,
+hvor Luften er som Vin.
+Igen vi op ad Bjærge steg;
+da laa foran os, nattebleg,
+endnu kun halvvejs vækket,
+Pistoja.
+<pb n="16" facs="023.jpg"/>    Togets Hvin
+det gjorde dig forskrækket,
+du vaagnede og skreg!
+
+Men da vi langs med Floden for,
+hvor Figen og Oliven gror,
+og øjnede mod Himlens Blaa
+den store, røde Kuppel staa
+saa majestætisk hvælvet,
+min lille Dreng, da lo du højt,
+som om du kunde ænse,
+vi nærmed os Firenze.
+
+    Skal vi staa af et Øjeblik?
+    Du husker nok den Vej, vi gik
+    til gamle Papa Frasi’s Hus!
+    Hvor du blev bange og konfus,
+    fordi du ej forstod ham,
+    du trak ham i hans hvide Skæg
+    og var uvenlig mod ham.
+
+    Det skal vi gøre godt igen,
+    før Papa Frasi falder hen
+    og dør og skal begraves.
+    For naar man er saa mange Aar
+    og ene mellem andre staar,
+    er det en dobbelt Smærte,
+    at ej en Gang man Godhed faar
+    selv af et Barnehjærte!
+
+<pb n="17" facs="024.jpg"/>    Og saa af Sted igen til Rom!
+    Farvel, Farvel Firenze, som
+    vi ingensinde glemmer!
+    Nu skynder vi os lige lukt
+    til Peterskirken.
+            Se, hvor smukt
+        den løfter sig og stiger
+        højt over Gadevrimlen,
+        som steg den ind i Himlen!
+
+Ak Rom! Ak! Rom!
+
+        Min lille Dreng,
+    vi kan ej rejse længer,
+    fordi din Far faar Vandringsvé,
+    hver Gang han faar det Land at se,
+    hvorved hans Længsel hænger.
+        Nu kalder Mor; du skal i Seng.
+    Saa maa vi ride hjem fra Rom,
+    den samme Vej vi kom!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111704">
+<head>
+  <title><num>II.</num>Firenze</title>
+  <firstline>Far! Hvem er den Mand paa din Væg</firstline>
+  <source pages="21-26"/>
+  <keywords>michelangelo,dante,boccaccio</keywords>
+  <places>
+    <place ref="florence" relation="subject" primary="true"/>
+    <place ref="arno" relation="setting"/>
+    <place ref="fiesole" relation="setting"/>
+    <place ref="tower-of-arnolfo" relation="mentioned"/>
+    <place ref="santa-croce-florence" relation="mentioned"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="giottos-campanile" relation="mentioned"/>
+    <place ref="san-marco-florence" relation="mentioned"/>
+    <place ref="san-lorenzo-florence" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Far! Hvem er den Mand paa din Væg,
+med den rynkede Pande og sorte Skæg?
+
+— Min Dreng, det er Michel Angelo,
+den store Mester, ham kender du jo!
+
+— Sørger han, Far? Eller er han vred?
+Hvorfor sér hans Øjne saadan herned?
+
+— Min lille Dreng, lad os rejse hen
+og se Michel Angelo’s By igen,
+for aldrig saa du en By som den!
+Sid op, sid op, saa sprænger vi bort,
+mens Aftenen sænker sig kold og sort
+over dem, der bliver herhjemme;
+vi to har ej Lyst til at glemme!
+Det regner. Men hellere Kinden vaad
+af Regn end vædet af gavnløs Graad,
+    til mange Taarer har vi ej Raad,
+    vi to, som vil lære at kende
+    Alverden til Verdens Ende!
+
+<pb n="22" facs="029.jpg"/>Nu stryger vi gennem den tunge Luft
+afsted, afsted til Rosernes Duft,
+der svæver langs Arno’s Strømme
+som henfarne Slægters Drømme!
+Vi standser en Stund i Fiesole
+for ud over Blomsternes By at se,
+da vælder os gennem Hjærte
+al Mindernes dybe Ve:
+
+    Dernede, husker du, husker du det,
+    der var det, din Moder lærte
+    din lille Læbe at le!
+    Du laa og leged paa hendes Skød,
+    mens Solen Sundhed over jer gød,
+    og Palmebladene sitred,
+    og Springvandsstraalerne glitred.
+
+Saa aabned din Mor for sit unge Bryst;
+du drak. Hvor drak du af Livsens Lyst,
+som kunde du aldrig stille
+din Tørst i den hvide Kilde!
+Men Moders Mælk og den gode Sol
+de kunde dit Sind dog bøje;
+du lukked tilsidst dit Øje
+saa lydløst som en Viol.
+    Omkring dig steg de høje
+    Kupler, Taarne og Spir mod Sky —
+
+Min Dreng; det var dernede
+            i Michel Angelos By!
+
+<pb n="23" facs="030.jpg"/>    Ser du, hvor stærk den ligger,
+    hvor majestætisk for vor Fod,
+    — en Løveflok, der drikker
+    af Arno’s friske Flod!
+
+    Ja, under Løvens barske Tegn
+    blandt røde Liljers milde Hegn
+    Firenze i sin Magt forstod
+    at skabe Mænd, hvis Styrke
+    den siden kunde dyrke!
+    Dér staar Arnolfos Taarn endnu
+    og knejser;
+    og Santa Croce rejser
+    sig skøn og franciskanergraa,
+    mens Dômens Duer mod Himlen slaa
+    og sætte sig til Hvile
+    paa Giotto’s Kampanile!
+
+Kom, hold min Haand, saa vandrer vi
+ned ad den skønne Skrænt, fordi
+din Mor og jeg har vandret
+en Gang ad denne Sti.
+
+    Hvor lidt her er forandret!
+
+    Den samme Vin i Vinjen gror,
+    den samme lille Bæk sig snor
+    i Dag, som da jeg gik med Mor,
+    ja, som for mer end fem Aarhundred siden.
+    Saa langsomt og saa lidt forandrer Tiden!
+
+<pb n="24" facs="031.jpg"/>Som vi nu gaar her, Skridt for Skridt,
+har fordum Dante gaaet tidt
+og tænkt — og lidt —
+og drømt om Beatrice!
+Og husker du Boccaccio,
+der under Pesten sad og lo?
+Men fremfor alt: Angelico,
+    den blide,
+    der i St. Marco’s Klosterfred
+    har malet sine Syner ned,
+    saa Hjærterne bevæges,
+    og deres Vunder læges!
+
+Firenze!
+
+        Lad os træde
+stilfærdigt som paa helligt Sted;
+saa dyrebar en Glæde
+det er for dig og mig paany
+at se din første Barndoms By
+og lytte til de Klokker,
+der runger højt af Ry!
+
+    Nu tier de! Nu tier de!
+    O, til i Morgen bier de;
+    saa lyder atter deres Slag,
+    og kalder: det er Dag.
+
+<pb n="25" facs="032.jpg"/>Og saadan har de kaldt en Gang
+paa ham, hvis stærke Mejsel klang,
+saa Marmorsplinter om ham sprang
+og føg til fjerne Lande,
+og furede, min Dreng, hans egen Pande!
+    Her stred han med den hvide Sten,
+    til David stod paa sine Ben
+    og stolt og frygtløs mod sin Fjende skued,
+    mens Ild af Ungdom i hans Øjne lued!
+
+Ja, Ungdom!
+
+            Donatello saa
+    den ogsaa i Firenze gaa
+    saa rank og ubekymret,
+    som bar den aldrig Sorg.
+    Han mejsled St. Georg,
+    saa frejdigt ung, saa spænstig stærk,
+    i Stand at øve Underværk,
+    halvt Dreng, halvt Mand,
+                men helt en Adelsvilje,
+— med Blod af Løven og den røde Lilje!
+
+Ak Ungdom!
+
+    Der var Ungdomsmod,
+    den Gang Firenze mægtigt stod,
+    og Ungdomstrang, og Ungdomstrods,
+    — ej Ungdomstrængsel som hos os!
+
+<pb n="26" facs="033.jpg"/>Det skal du mindes til din Død;
+du drak det ind paa Moders Skød,
+mens St. Lorenzo’s Klokker lød:
+    Den Tid, som ej paa Ungdom tror,
+    den bliver glemt, den smuldrer hen,
+                    den levner intet Ry!
+
+    Min Dreng! Det staar der skrevet
+                    i Michel Angelo’s By!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111705">
+<head>
+  <title><num>III.</num>Rom</title>
+  <firstline>Nu lukker Dagen langsomt Øjelaagene</firstline>
+  <source pages="29-31"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="alps" relation="mentioned"/>
+    <place ref="italy" relation="subject"/>
+    <place ref="via-aurora-rome" relation="setting"/>
+    <place ref="villa-borghese-gardens" relation="mentioned"/>
+    <place ref="pincian-hill" relation="setting"/>
+    <place ref="piazza-del-popolo" relation="mentioned"/>
+    <place ref="tiber" relation="setting"/>
+    <place ref="st-peters-basilica" relation="setting"/>
+    <place ref="capitoline-hill" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu lukker Dagen langsomt Øjelaagene
+og gaar til Ro, — som du, min lille Dreng,
+om lidt vil gøre, naar din Moder kalder.
+Det sidste Skær ind i vor Stue falder,
+mens Mørket vokser frem fra alle Krogene.
+— Nu er det Tid for Børn at gaa i Seng!
+
+Men først saa maa vi rejse Romerturen.
+For du kom hjem og var forknyt af Kulde,
+og Vinden tuder stygt, vi faar vist Sne.
+Men Rom har Sol. Og vore Sind er fulde
+af Minder fra det Land, vi fik at se,
+fra Solens Land mod Syd bag Alpemuren.
+
+Nu hilser vi Farvel til Mor,
+Farvel til lille Thora!
+Til Rom, til Rom vi rejser ned,
+og vi tar ind, som Moder ved,
+i Via Aurora.
+    Gamle Angela lukker os ind,
+    hun græder af Glæde, det gode Skind,
+    og knuger dig i sine Arme.
+    Hun mumler dit Navn som en henrykt Mor —
+<pb n="30" facs="037.jpg"/>    — ja, Angela, Angela, du er stor
+    ved din oprigtige Varme!
+
+Vi bor i den samme Stue igen.
+Min Dreng, min Dreng, kan du huske den,
+hvor Solen tindred derinde!
+Saa tidt vi gennem vort Vindu saa:
+
+    Derude Villa Borghese laa
+    med alle de store, stolte Trær,
+    Cypresser, Palmer, Pinjer især
+    og flere, hvis Navn vi ej kender.
+    Og Monte Pincio, hvor vi gik
+    hver Eftermiddag og hørte Musik
+    og saa over Piazza del Popolo,
+    hvor Præsterne vandrede to og to
+    forbi Obelisken, hvor Løverne ligger
+    og udspyr Vand, som Drengene drikker!
+
+Og husker du Tiberens gule Flod,
+der mumled et Sprog, som du ej forstod,
+om Slægter, der længst er døde?
+Langs den vil sammen vi gaa igen.
+    Og saa til Peterskirken hen;
+    dér ligger Folk paa Maven
+    for Paven
+    som hjemme for en Prins.
+<pb n="31" facs="038.jpg"/>    Det har vi to nu ej til Sinds;
+    for vi vil gaa og mindes
+    de Ting, som blev os kære,
+    da første Gang vi saa dem,
+    og lære at forstaa dem!
+    Vi skynder os fra Pavens Stol
+    op til det høje Capitol,
+    hvor Ulvene en Gang holdt Vagt
+    om Romerrigets Ære.
+
+Der gaar en gammel Ulv i Bur,
+forsulten og forkommen,
+og længes mod den fri Natur.
+
+    Ja, saadan er det hele Land:
+    en hungrig Ulv, som ikke kan
+    af Fangenskabet bryde;
+    den knurrer, men maa lyde!
+Det skønne Land, hvis Minder gror
+i Marmor af den magre Jord,
+det Land, som du og jeg og Mor
+vil aldrig kunne glemme!
+
+    — Min Dreng, nu er vi hjemme!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111706">
+<head>
+  <title><num>IV.</num>Fiesole</title>
+  <firstline>Verden er ond. Lad os rejse, min Dreng</firstline>
+  <source pages="35-37"/>
+  <places>
+    <place ref="fiesole" relation="subject" primary="true"/>
+    <place ref="italy" relation="setting"/>
+    <place ref="gotthard-pass" relation="setting"/>
+    <place ref="florence" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Verden er ond. Lad os rejse, min Dreng,
+det er værst at bo mellem Venner!
+    Nu rider vi bort fra den store By,
+    hvis Luft har været saa tung som Bly,
+    til et Land, hvor ingen os kender.
+    Vi rider mod Syd, vi rider mod Vest;
+    at bo mellem fremmede det er dog bedst;
+    vi rider mod fri Horisont,
+        mod Syden,
+        mod Solen,
+    der røgter sin himmelske Dont!
+
+Saa sætter vi over den salte Sø
+og staar i det fremmede Land.
+    Dér spørger de os, hvor vi skal hen,
+    hvor langt vi agter at fare?
+    — Ja, vi har tænkt paa Italien!
+    det vil vi dem roligt svare.
+    Saa ønsker de os godt Rejseheld;
+    vi siger dem Tak og byder Farvel
+    og sporer vor Hest og sprænger af Sted
+        mod Syden,
+        mod Solen,
+    der venter os, før den gaar ned!
+
+<pb n="36" facs="043.jpg"/>    Min Dreng, ak, kender du denne Duft?
+    Og se, hvor lys og liflig en Luft,
+    se Bjærgene, hvor de blaaner!
+    Snart rider vi over den hvide Sne;
+    dér vil vi os vidt over Verden se,
+    før Vejen mod Sønden skraaner.
+
+    Nu standser vi her paa St. Gotthards Tind
+    saa højt over alle Huse.
+        Den vise Vind, den vise Vind
+        den hører vi sagte suse.
+        Den taler til os om mange Ting,
+        for den har været saa vidt omkring,
+        som ingen af os kan komme;
+        i Morges den gennem Firenze strøg,
+        saa Roseduft over Fiesole føg,
+        hvor alle de Munke fromme
+        gik om og lugted af Løg!
+
+Fiesole, Fiesole,
+        der ligger saa lyst paa Højenes Ryg!
+
+        Ja kom, dér rider vi hastigt hen;
+        afsted, afsted til Italien,
+        hvor Sol og Sommer os venter!
+<pb n="37" facs="044.jpg"/>I Aften vi vil i Fiesole gaa,
+hvor store, sorte Cypresser staa,
+og høre dens Klosterklokker,
+    der lokker,
+fra sidst vi lytted derpaa!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111707">
+<head>
+  <title><num>V.</num>Neapel</title>
+  <firstline>Der er en lille Stund igen</firstline>
+  <source pages="41-44"/>
+  <places>
+    <place ref="naples" relation="subject" primary="true"/>
+    <place ref="vesuvius" relation="mentioned"/>
+    <place ref="gulf-of-naples" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    Der er en lille Stund igen,
+    min Dreng, før du skal sove;
+    og Mor har maattet love,
+    at hvis vi kan Neapel naa,
+    før Uhret gir sig til at slaa,
+    saa skal hun ikke hente dig
+    til Sengs, men rolig vente dig.
+
+Neapel!
+
+        Det er ingen Sag
+    for os, som Vejen kender,
+    at naa derned før Uhrets Slag,
+    før Mor dig bort vil bære!
+        Se! Allerede løfter sig
+        langt borte i den skære
+        og milde Luft:
+                    Vesuv!
+<pb n="42" facs="049.jpg"/>    Dens sorte Røg mod Himlen staar
+    som Abels, da han ofred Faar;
+    maaske er den et Offerbaal
+    for alle Verdens Synder!
+
+                    Vi skynder
+    os fremad mod vort Maal!
+
+Neapel!
+
+        Se, der øjner
+    vi Byen langs den havblaa Bugt,
+    blandt Pinjer, der sig højner
+    saa stateligt og smukt.
+    Den gyldne Sol forgylder den,
+    den varme Dis indhyller den,
+    med Blomsterduft fortryller den,
+    den ligner, som den ligger dér,
+    en Pige, der vil vade
+    i Vandet for at bade!
+
+    Vi vandrer i dens Gade,
+    hvor sammen vi har vandret før.
+    Vi standser ved den gamle Dør
+    til Huset, hvor vi boede.
+    Nu er de grønne Skodder stængt,
+    som trætte Øjne, der har tænkt,
+    og som, af Solen stukket,
+    har Laagene tillukket!
+
+<pb n="43" facs="050.jpg"/>Lad os langs Golfen gaa,
+hvor Sejl som Svaner svømme;
+dér er saa godt at drømme,
+naar Himlen er saa fuld af Sol,
+og Bugten er saa blaa.
+
+        Her dufter af Viol!
+        Og kan du høre Guitarklang?
+
+    Min lille Dreng, der var en Gang,
+    din Fader til Neapel kom
+    saa fattig som en Rotte,
+    der aad sin Rede tom.
+    Han var saa syg af Sult og Sol,
+    og svimmel —
+    Da kom der fra Guds Himmel
+    en Duft som af Viol,
+    der mætted ham, beruste ham
+                        og gjorde ham saa kry.
+
+    Og derfor er Neapel hans kæreste By!
+
+Neapel, ak Neapel
+    saa fuld af Synd og Sang! —
+
+        — Min Dreng, nu falder Mørket paa,
+<pb n="44" facs="051.jpg"/>    Vesuv sin Fakkel tænder.
+    Og Moders Uhr er ved at slaa!
+Saa hjem igen! Det kan ej gaa,
+at Moder paa os skænder!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111708">
+<head>
+  <title><num>VI.</num>Genua</title>
+  <firstline>Hvor er det længe, siden</firstline>
+  <source pages="47-51"/>
+  <places>
+    <place ref="genoa" relation="subject" primary="true"/>
+    <place ref="america" relation="mentioned"/>
+    <place ref="mediterranean-sea" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvor er det længe, siden
+vi to har været hjemmefra!
+Min Dreng, jeg tror, vi sprænges,
+saa brusende vi længes!
+    I disse fire Stuer smaa,
+    bag Døre lukt med Laas og Slaa,
+    her gaar vi hele Tiden
+    som Børn, der passes paa!
+    Vi vil ej længer bøje os,
+    men dristigt byde Verden Trods
+    og rejse lige hjemmefra
+    til Genua, til Genua!
+
+Til Genua!
+
+    Hvad tænker Mor,
+    naar hun nu ser os gaa om Bord?
+    Og lille Broder Ebbe?
+<pb n="48" facs="055.jpg"/>        Ak, lille Ebbe, bliv ej vred,
+        fordi vi tar saa langt af Sted,
+        du maatte gerne komme med,
+        men du formaar det næppe.
+        Og det var ogsaa altfor haardt
+        for Mor, hvis alle tre tog bort,
+        og hun blev ene hjemme;
+        det maa du ikke glemme!
+        Nu skynder Far og Jakob sig
+        til Genua og henter dig
+        saa meget, vi kan faa for vore Penge —
+
+— Men du maa være god mod Mor saa længe!
+
+    Til Genua! Til Genua!
+
+        Dér er Kolumbus kommen fra;
+        dér vil vi ned og spørge
+        om Vej til <i>vort</i> Amerika.
+        For vi har maattet sørge,
+        af Fattigdom og smaalig Nød,
+        af daglig Angst for dagligt Brød,
+            af Nag og Nid
+            til hver en Tid,
+        saa vi vil heller finde Død
+        end leve mer i Fængsel
+        med vor Kolumbus-Længsel!
+
+<pb n="49" facs="056.jpg"/>Nu sejler vi vor egen Sø;
+den, der har Mod, kan ikke dø,
+og der er ingen Ting, som skal os skræmme —
+
+— Naar Mor og Ebbe har det godt derhjemme!
+
+Til Genua! Til Genua!
+    Dér er Kolumbus kommen fra;
+    den Gang han var en Dreng som du,
+    da løb han der langs Vandet
+    og legede i Sandet.
+    Maaske vi ser hans Spor endnu
+    af Bølgerne bevaret?
+    I Genua, i Genua
+    dér vil vi søge Svaret!
+
+    Dér har vi Middelhavet,
+    det blide, blaa og vuggende,
+    hvis Bølger sagte sukkende,
+    som om de drømte Drømme,
+    mod Genua strømme!
+
+    Derude sejled Far en Gang.
+    Og Havet nynned paa en Sang
+    om Lykke,
+    og Livet laa foran ham uden Skygge!
+
+<pb n="50" facs="057.jpg"/>Hvad nynner det for dig i Dag
+med sine fine Bølgeslag?
+Min lille Dreng, hvad spaaer det dig
+af godt og ondt paa Livsens Vej?
+Kom, lad os høre efter!
+
+Det hvisker sagte om din Fod:
+        Kolumbusmod! Kolumbusmod!
+
+    Ja, om du blot en Gang forstod
+    de Kræfter,
+    der bruste i hans Blod.
+    For han var stærk, min Dreng, som faa
+    af alle, du skal agte paa,
+    og kan til Bunds du <i>ham</i> forstaa,
+da ved du mer om Livet,
+end det blev Hvermand givet!
+
+I Genua, i Genua
+    de spørger os, hvor <i>vi</i> er fra,
+    og hvad vi har i Sinde?
+    — Det er det Land Amerika,
+    som vi vil se at finde!
+Men ikke det, Kolumbus fandt,
+den Gang han over Havet vandt
+og viste dem, som tvivled,
+han havde talet sandt.
+
+<pb n="51" facs="058.jpg"/>Det er vor egen Lykkes Kyst,
+som vi drog ud at søge:
+    maaske den stiger mørk og stejl
+    op over vrede Vandes Spejl;
+    maaske den glider mild og tyst
+    ind under grønne Bøge!
+
+Maaske! Maaske!
+
+    Min lille Dreng,
+    du skal ej Lykken søge.
+    Den er en Bølge. Tag den!
+    — Ak, se, du griber bag den.
+    Den ruller fra dig, før du tror —
+
+        — Min Dreng, nu kalder Mor!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111709">
+<head>
+  <title><num>VII.</num>Rom</title>
+  <firstline>Nu rider Solen til Vesterland</firstline>
+  <pictures>
+    <picture artwork="thorvaldsen/1803-jason"/>
+  </pictures>
+  <source pages="55-60"/>
+  <keywords>michelangelo,goethe,thorvaldsen</keywords>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="palatine-hill" relation="setting"/>
+    <place ref="colosseum" relation="setting"/>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="roman-forum" relation="setting"/>
+    <place ref="via-sacra" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu rider Solen til Vesterland
+med gylden Hjælm og med Flammespyd,
+saa rider vi to, min Søn, mod Syd
+langt bort over Bjærge og Dale,
+didhen, hvor Stenene tale; —
+derned, derned, hvor Vindenes Sprog
+fortæller om Ting i Historiens Bog,
+som vi to har læst men vil læse paany, —
+— til Rom, til den hellige By!
+
+I Aften vi under os intet Hvil,
+vi rider af Sted de Hundrede Mil,
+saa stærkt, at ingen kan se os,
+og intet ondt kan ske os.
+Moder kalder — vi vender os om
+og raaber Farvel og vinker!
+    Og Have under os blinker.
+    Og Floder under os snor sig.
+    Og Bjærge under os kror sig.
+    Dér løber den Vej, vi én Gang kom!
+    Min Dreng —
+            og dér er Rom!
+
+<pb n="56" facs="063.jpg"/>    Nu blotter vi vort Hoved,
+    som Tusinder før os har gjort,
+    naar de gik ind ad denne Port:
+    — I Rom! Gud være lovet!
+Saa store Mænd har vandret her,
+de drog hertil fra fjern og nær,
+fra Hjem, fra Slægt og Venner;
+fra Nordens Kulde kom de hid
+at søge Sol en stakket Tid;
+fra Øst de kom, fra Vest de kom,
+Alverdens Veje randt mod Rom!
+
+Mod Rom!
+
+            Hvor har det runget
+        forjættende fra Slægt til Slægt!
+        Snart lød det tusindtunget
+        af Pilgrimsskarer sjunget,
+        snart fra en enlig Drømmers Mund
+        som en vemodig Hvisken kun!
+        Og du og jeg, hvor har vi tidt,
+        naar her var mørke Dage,
+        i vore Tanker ønsket os
+        mod Rom, mod Rom at drage!
+
+    Nuvel, saa lad os tage
+    hinandens Haand og vandre ind
+    i Byen med beredte Sind
+<pb n="57" facs="064.jpg"/>            og fryde os
+            og tyde os
+        hvert Bud, den har at byde os.
+        Der taler mer end tusind Aar
+        fra dette Støv, hvorpaa vi gaar;
+        hvo ved, om i dets tørre Smuds
+        ej findes Smuld af Romulus!
+        Thi Støvet er det sikre Sted,
+        hvor alt, som lever, synker ned;
+        selv den, som ejed Kejserkaar,
+        den samme Stodderlod han faar:
+            at vejres hen som Støv en Dag
+            for Vindens lunefulde Jag.
+
+    Det vil vi ikke tænke paa,
+    men trøstigt gennem Gaden gaa
+    og over Livet glæde os,
+    saa langt det vil tilstede os;
+lad saa en anden Slægt en Gang
+som Støv i Støvet træde os!
+
+            Først smager vi den søde Vin.
+        Saa vandrer vi til Palatin,
+        hvor Cæsars Mure knejser
+        i stor og stolt Ruin.
+            Nu bor der ingen Kejser!
+            Forsvunden er den gyldne Pragt
+            som Cæsar selv og Cæsars Magt,
+<pb n="58" facs="065.jpg"/>            men Regn og Sol og Vejr og Vind
+            de løber evigt ud og ind,
+            som om de hørte hjemme!
+        Tidt lyder det ved Midnatstid,
+        som var det Nero’s Stemme,
+        der flakked hid og did!
+
+Ja, Nero!
+        Det var her, han stod
+    en Nat og saa foran sin Fod
+    et Flammehav, et Ocean
+    af Ild, der blodigt brændte.
+    Han hørte, Børn og Kvinder skreg;
+        men skadefro
+        hans Øjne lo,
+        mens Røgens sorte Søjler steg:
+    det var hans egen Haand, som Ilden tændte!
+
+    Og Riger skælved for hans Bud,
+    og Nero troede, han var Gud! — —
+
+        — Min Dreng, det hændte tidt i Rom,
+        og andre Steder Verden om,
+        at den, hvis Hoved Kronen bar,
+        halvt var Forbryder, halvt en Nar
+        men helt sin Magt uværdig!
+        Ja, det kan endnu ofte ske,
+        og du vil daglig faa at se,
+    hvor meget Liv og Lykke gaar tilspilde,
+    fordi de, som har Magten, handler ilde!
+
+<pb n="59" facs="066.jpg"/>Se dig omkring her, hvor vi gaar:
+    Saa mange mørke Minder staar
+    og truer;
+    men højest over alle naar
+    dog Collossæums Buer!
+    De gaber vidt og vældigt dér
+    og vidner om et Blodbegær,
+    som hører svundne Tider til,
+    men driver dog hver Dag sit Spil!
+        Derinde paa det gule Grus
+        paa Liv og Død blev kæmpet;
+        de faldnes Skrig blev dæmpet
+        af Bifaldsstormens Brus.
+
+    O, dette Blod, saa dyrebart,
+    har Menneskene aldrig spart;
+    den stærke slog den svage ned,
+    saa tidt det lod sig gøre.
+        — Den, som forstaar at høre,
+        han faar om sligt Besked!
+
+Men kom, saa vil vi vende os
+    fra denne Blodbeskuen
+    og gennem Titusbuen
+    hen over Forum gaa!
+        Se, disse Fliser, graastensgraa,
+        som du og jeg nu træder paa,
+<pb n="60" facs="067.jpg"/>        dem har forsvundne Slægter slidt,
+        og Legioners tunge Skridt
+        har genlydt tidt,
+        naar de ad Via sacra kom
+        med Sejr igen til Rom!
+
+Ja, Rom!
+        Hvem vandred ikke her!
+        De drog hertil fra fjern og nær,
+        fra Hjem, fra Slægt og Venner.
+        Her vandred Michel-Angelo
+        og Rafaël, de største to.
+        Og han, hvem bedst vi kender:
+        her vandt han dybt i Bjærget ind
+        og hented Jasons gyldne Skind!
+        Og her har Goethe gaaet
+        og grublet — og forstaaet!
+
+Forstaa, min Dreng, lær at forstaa!
+    Saa kan igennem Rom du gaa
+    og læse der om Liv og Død,
+    om Kamp og Sejr, om Magt og Nød
+    alt, hvad din Sjæl kan ønske sig at vide — —
+
+    Forstaa, min Dreng, lær at forstaa i Tide!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111710">
+<head>
+  <title><num>VIII.</num>Venedig</title>
+  <firstline>Jeg ved det; jeg har lovet dig, vi skulde til Venedig</firstline>
+  <source pages="63-68"/>
+  <places>
+    <place ref="venice" relation="subject" primary="true"/>
+    <place ref="brenner-pass" relation="mentioned"/>
+    <place ref="gotthard-pass" relation="setting"/>
+    <place ref="gotthard-rail-tunnel" relation="setting"/>
+    <place ref="lombardy" relation="setting"/>
+    <place ref="st-marks-campanile" relation="mentioned"/>
+    <place ref="st-marks-square" relation="setting"/>
+    <place ref="bridge-of-sighs" relation="setting"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    Jeg ved det; jeg har lovet dig, vi skulde til Venedig;
+    min Dreng, kom sæt dig hos mig, saa drager vi af Sted!
+    Jeg længes ogsaa selv, og i Aften er jeg ledig,
+    og træt af alt det Mørke, vi bliver plaget med.
+Og alle mine Tanker — i Venedig faar de Fred.
+
+    Hvad Vej skal vi nu tage, den gamle over Brenner?
+    Den har vi rejst saa ofte, vi kan den udenad.
+    Nej, vi vil til St. Gotthard, den Vej, du ikke kender,
+    men hvor din Far har været, da han var fri og glad —
+Saa gennem Lombardiet til Lagunernes Stad!
+
+    St. Gotthard! — Har jeg aldrig fortalt dig om den Morgen,
+    jeg vandred ned ad Bjærget, der tindrede af Sne?
+    Jeg gik i Sol og Stilhed, højt hævet over Sorgen,
+    og sang som Gemseskytten og tav og maatte le.
+Der var kun hvide Tinder og Himlens blaa at se.
+
+<pb n="64" facs="071.jpg"/>    Ved Siden af mig bruste en lille Flod ustyrligt;
+    en Ørn saa højt var steget, at den lignede en Stær.
+    Min lille Dreng, da saa jeg: Alt Liv er eventyrligt,
+    og hvis det ikke er det, saa er det intet værd!
+— Jeg blev saa stærk af Lykke og fik Alverden kær.
+
+    Og alle mine Dage, de aabned sig som Gemmer,
+    hvor mange Ting har ligget i lange Tider gemt.
+    Og midt i Sneens Stilhed jeg hørte Lyd af Stemmer,
+    min Far’s og Mor’s og andres, jeg næsten havde glemt.
+Det lød, som Solens Straaler var Strenge, der blev stemt!
+
+    Da blev din Far saa stille. Han løfted sine Arme
+    op mod St. Gotthards tause, snetindrende Tind
+    og loved tyst og helligt at værne om den Varme,
+    som Livets store Sammenhæng gød i hans Hjærte ind. —
+Min Dreng, — det Løfte lægger jeg ogsaa dig paa Sind!
+
+    Ja, vi maa til St. Gotthard! Se der, de hvide Tinder,
+    de glimter allerede i Aftensolens Skær!
+    Og kan du høre Floden, hvor støjende den rinder,
+    som om den vilde raabe: Af Vejen! Jeg er her!
+— højrøstet som et Menneske, der har sig selv for kær.
+
+<pb n="65" facs="072.jpg"/>    Saa ind igennem Tunlen, igennem Bjærgets Hjærte,
+    som fordum laa forstenet i tusindaarigt Hvil;
+    nu jamrer det og synes at vride sig i Smærte,
+    hver Gang det gennembores af Togets tunge Pil,
+der farer frem ustandselig med larmende Il.
+
+    Og ud igen af Mørket! — Hvor aander vi befriet
+    og ser med dobbelt Glæde det høje Himmelblaa!
+    Og Toget jager fremad. Da ligger Lombardiet
+    udbredt for vore Øjne, saa langt som de kan naa.
+Min Dreng, min Dreng, saa herligt et Syn du aldrig saa!
+
+    Se, ud til alle Sider, vidt ud til Himmelranden
+    de grønne, rige Marker af gule Floder delt,
+    og hvide Byer, som ligger og kimer til hinanden
+    og spejder over Landet, om det endnu er helt
+— det Land, som gennem Tiden saa tidt var sønderdelt!
+
+    Vi ruller over Broer, vi suser gennem Vinjer;
+    imellem standser Toget for at trække sit Vejr.
+    Og atter gaar det fremad! Vi ser de første Pinjer
+    og hilser dem velkommen, for de er Sydens Trær.
+Og vi to elsker Syden, vi har vist hjemme dér.
+
+<pb n="66" facs="073.jpg"/>    Da blaaner i det fjerne en smal og sølvblank Strime,
+    som om et Stykke Himmel hen over Jorden laa,
+    og gennem Luften hører vi St. Marcus Klokker kime —
+    Da stiger op af Havet den By, vi vilde naa:
+Venedig, Havets Dronning, som før en Gang vi saa!
+
+        Ja, vi har set Venedig og vandret i dens Gader,
+        vugget paa Kanaler fra Palads til Palads;
+        stumme har vi staaet og stirret paa Façader,
+        bag hvis Søjlerader
+        fordum Fester fejredes ved vinfyldte Glas.
+Se, bag disse Ruder sad Tizian og maled;
+her i denne Højsal stod Dogen og befaled,
+og hans Bud blev adlydt fra Hav og til Hav —
+
+— Ak, nu er Venedig kun Venezia’s Grav!
+
+    Hvor vi vender Øjet, dér møder os kun Minder.
+    Livet selv er standset; skal det røre sig paany?
+    Stille ligger Staden, mens Dagene forsvinder,
+    én for én de rinder
+    farveløse, døde gennem Farvernes By.
+Mindes du Marcuspladsens Skyer af hvide Duer
+i Kreds om Kampanilen, der stod saa stolt, men nu er
+en sørgelig Ruin, en Dynge Sten og Grus?
+
+    — Min Dreng, saaledes segner selv Lykkens største Hus.
+
+<pb n="67" facs="074.jpg"/>Den ranke Kampanile!
+
+    — Ja, husker du de Gange
+    vi gik, din Mor og du og jeg, og drømte ved dens Fod?
+        Gennem Aftnens Stilhed klang Guitarspil og Sange.
+        Imellem blev du bange,
+        ængstet af den Skønhed, din Sjæl jo ej forstod.
+        Tidt kom det mig for, at jeg kunde Hulken høre;
+        Fortidens Røster de runged i mit Øre,
+        højest Colleone’s Kommandostemme bød;
+        men der var ej længer blot én, som ham lød.
+
+    Husker du Gondolerne; de duvede som Svaner,
+    dukked under Broerne og viste sig igen;
+    syngende stod agter en mørk Venezianer,
+    som med sikre Vaner
+    styrede vor Baad ad Kanalvejen hen.
+Vandet laa solblankt, men rugende sort,
+dystert som gemte det Hemmeligheder,
+Menneskeskæbner, det skjuler og freder,
+Minder om Liv, som er stedet til Ro!
+
+        — Saa gled vi ind under Sukkenes Bro.
+
+Sukkenes Bro!
+
+        Ja, min Dreng, du maa vide,
+        her i den By, der blev bygget til Fest,
+<pb n="68" facs="075.jpg"/>    her maatte mange uskyldige lide,
+    tidt maatte Lykken i Lænkerne bide,
+    just som den troede sig højest til Hest.
+        Lyt! Kan du høre, det sukker endnu,
+        Murene, Broen og Kølvandets Bølger —
+        der er en Gru,
+        som overalt sig klagende dølger:
+        Døden, som Livet forfølger!
+
+Sukkenes Bro!
+
+    Ak, min Dreng, du skal mindes,
+    ikke blot her i Venedig den findes,
+    ikke blot her! Overalt — overalt!
+    Selv skal du gaa i dens sukkende Mørke,
+    alle maa gaa der, din Far og din Mor —
+
+          Du vil forstaa det, naar du bliver stor!
+</poetry>
+</body>
+</text>
+
+<text id="nielsenlc2026111711">
+<head>
+  <title>Rejs ud</title>
+  <firstline>Hver Dag kan blive som en Sten</firstline>
+  <source pages="69-70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hver Dag kan blive som en Sten,
+du maa paa Ryggen bære.
+    Den er saa tung, den smærter dig,
+    om nok saa haardt du hærder dig;
+    du flytter møjsomt dine Ben
+    og maa dig Taalmod lære.
+
+Hver Dag kan blive som en Drik,
+der er dig grim og vammel.
+    Med Ulyst du modtager den;
+    det hjælper ej, du vrager den.
+    Det er dig, som en Gift du fik,
+    der gør din Vilje gammel.
+
+Men sker det dig, saa rejs, min Dreng,
+til nye stærke Steder.
+    Ryst Hjemmestøvet af din Fod,
+    rejs ud og rust dit unge Mod,
+    og vær dig selv en Dommer streng
+    og søg dig nye Sæder!
+
+<pb n="70" facs="077.jpg"/>Du kan endnu kun halvt forstaa,
+men siden vil du lære:
+    Rejs ud, mens Verden venter dig;
+    før Gammeldom indhenter dig!
+    Rejs ud! — Naar du er bleven graa,
+    kan du paa Mindet tære!
+</poetry>
+</body>
+</text>
+
+</workbody>
 </kalliopework>
