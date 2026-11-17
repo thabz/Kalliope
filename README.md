@@ -87,6 +87,11 @@ KALLIOPE_SKIP_ELASTICSEARCH=true KALLIOPE_SKIP_IMAGE_THUMBNAILS=true npm run bui
 npm run test-search-integration
 ```
 
+Søgeindekseringen har løbende bulkopbygning og et selvstændigt checkpoint.
+Se [`docs/elasticsearch-build.md`](docs/elasticsearch-build.md) for
+buffergrænser, genoptagelse, logstatistik og før/efter-målinger med
+`tools/measure-elasticsearch.js`.
+
 ## Facsimile-generering
 
 Facsimiler bygges i en separat Docker Compose-service. Læg PDF'er i
