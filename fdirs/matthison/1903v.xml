@@ -1,9 +1,1680 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1903v" author="matthison" status="incomplete" type="poetry">
+<kalliopework id="1903v" author="matthison" status="complete" type="poetry">
 <workhead>
   <title>Vandliljerne</title>
+  <subtitle>
+    <line>En Samling Digte fra Dynastiet Tang’s Tid (618—906 e. Kr.)</line>
+    <line>Med et Tillæg »Chung kuo shi«, indeholdende dels klassiske, dels moderne kinesiske Digte</line>
+  </subtitle>
   <year>1903</year>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-17T06:51:46.065835+00:00"/>
+  </proofreadings>
+  <pictures>
+    <picture type="titlepage" primary="true" src="1903v-p1.jpg">
+      <transcription>Vandliljerne / En Samling Digte / fra / Dynastiet Tang’s Tid / (618—906 e. Kr.) / Med et Tillæg »Chung kuo shi«, indeholdende / dels klassiske, dels moderne kinesiske Digte / oversatte fra Originalsproget ved / Aage Matthison-Hansen // 忠孝傳家國 / 詩書訓子孫 // Retsind og barnlig Fromhed / raade i Hjemmet og Riget. // Kærligheden til Digte / arves fra Slægt til Slægt. / Gl. kinesisk Inskription paa en Tavle / i Nationalmusæet i København // København / Axel Andersens Forlag / Citytrykkeriet / Laur. Madsen &amp; Vald. Carlsen / MDCCCCIII</transcription>
+    </picture>
+    <picture type="frontpage" src="1903v-p2.jpg" year="1903">
+      Forsiden til <i>Vandliljerne</i>.
+      <!-- Kilde: KB’s digitalisering 2019, alma99122627034305763, PDF-side 7. Farvetryk med vandliljer. Usigneret; kunstner, trykteknik og fysiske mål er ikke dokumenteret i digitaliseringen. Ingen sikker kunstneridentitet at slå op i korpus. KB angiver fri onlineadgang; originaludgaven er fra 1903. -->
+      <!-- metadata checked: 2026-11-17 -->
+    </picture>
+  </pictures>
+  <source href="https://www.kb.dk/e-mat/dod/115404004783-color.pdf" facsimile="115404004783_color" facsimile-pages-num="62" facsimile-pages-offset="8">
+    <title>Vandliljerne</title>
+    <translator id="matthison">Aage Matthison-Hansen</translator>
+    <place>København</place>
+    <publisher>Axel Andersens Forlag</publisher>
+    <printer>Citytrykkeriet, Laur. Madsen &amp; Vald. Carlsen</printer>
+    <year>1903</year>
+    <identifiers><kb-alma>99122627034305763</kb-alma></identifiers>
+  </source>
 </workhead>
 <workbody>
+<text id="matthison2026111701" skip-index="true">
+<head>
+  <firstline>Forfatteren af »Japansk Malerkunst«</firstline>
+  <source facsimile-pages="11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>FORFATTEREN AF
+»JAPANSK MALERKUNST«</center>
+
+<center><i>KARL MADSEN</i></center>
+
+<right>TILEGNES</right>
+
+<right>DETTE ARBEJDE</right>
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111702" lang="en">
+<head>
+  <title>Ya-fung passes</title>
+  <firstline>Unfurled are the sails, we leave the land</firstline>
+  <source facsimile-pages="13"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<i>Unfurled are the sails, we leave the land,</i>
+<i>the blowing wind and foaming of the spray</i>
+<i>tells me some story from my native strand</i>
+<i>awakes remembrance of a friend so gay,</i>
+    <i>remembrance of Ya-fung.</i>
+
+<i>A young Chinese, he, whom I liked so well,</i>
+<i>whose words and manners were a wondrous spell,</i>
+<i>left on a steamer Denmarks shore</i>
+    <i>for evermore.</i>
+
+<i>»And shall I never see again</i>
+<i>Ma-tis-An-ssen upon the main!«</i>
+<i>Those words of thine, my friend Ya-fung,</i>
+    <i>the wind has sung.</i>
+
+<i>Thy laughing eyes, thy handsome look,</i>
+<i>with dimpling smiles in every nook,</i>
+<i>were followed by the foaming spray</i>
+    <i>away, away.</i>
+
+<i>You stranded on a foreign coast,</i>
+<i>in darkest Africa a post</i>
+<i>was found in Port Elizabeth</i>
+    <i>— my eyes were wet!</i>
+
+<i>Your travels found a final stop,</i>
+<i>perhaps you see Li-kai’s shop,</i>
+    <i>my home you never see!</i>
+
+<i>From Denmarks shore for ever flung</i>
+    <i>my friend Ya-fung.<footnote><span lang="zh">風</span> fung, a Chinese Character, signifies »wind«. Li-kai’s shop=his parents home in Kuang-dang.</footnote></i>
+
+<nonum><right><i>Aage Matthison-Hansen</i></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="matthison2026111703">
+<head>
+  <title>Forord</title>
+  <source facsimile-pages="14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph>
+»Det menneskelige Hjerte er Grundvolden for vore klassiske Værker.
+
+Spot og Skæmt og fornærmende Udtryk, alt forskønnes af Stilen.
+
+Verden er en uhyre Skueplads, hvor en lang Komedie opføres,
+nu, som fordum, optages Scenen af vore Tvistigheder«.
+
+<right><i>Jüh-kiao-li.</i></right>
+</epigraph>
+<prose>
+    De fleste her oversatte Digte skrive sig fra Dynastiet Tangs Tid, hin mærkelige Kunstens Guldalder, hvor Landets Skønaander samledes ved Minghoangti’s Hof, gjorde Udflugter paa Mei-peisøens Vande eller sad paa et af Kejserens Slotte, digtede og drak Vin af Kopper, der vare »fine som Knivblade og syntes at bestaa af Glasur alene«.<footnote>Karl Madsen: Ill. Tid.</footnote> Der digtedes Sangene om »Porcelænspavillonen«, om »Jadetrappen«, om Kejseren og hans Mandariner (jvf. min Afhandling i »Tilskueren«, Aug. 1892), de bleve straks sungne til Akkompagnement af Luth’en. Malerkunstens Nestor, Wu-tao-tze, vandrede Arm i Arm med Thu-fu og Li-tai-pé i Akademiets Haver, under de blomsterbugnende Træer. Der var Malerier i Digtene og Digte i Malerierne.
+
+<right><i>Aage Matthison-Hansen.</i></right>
+</prose>
+</body>
+</text>
+
+<section>
+<head>
+  <title>Tse-Tié</title>
+</head>
+<content>
+<text id="matthison2026111704">
+<head>
+  <title>Ferskentræsblomsten</title>
+  <source pages="7" facsimile-pages="15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg plukkede en lille Ferskenblomst, og jeg bar den til den unge Pige, hvis Læber er rødere end de smaa Blomster.
+
+    Jeg fangede en sort Svale, og jeg bar den til den unge Pige, hvis Øjenbryn ligner de to Vinger paa en sort Svale.
+
+    Den næste Dag var Blomsten visnet, og Fuglen var fløjet ud ad Vinduet, der vender mod det blaa Bjærg, hvor Ferskenblomsternes Genius bo'r.
+
+    Men den unge Piges Læber var bestandig lige røde, og hendes Øjnes sorte Vinger var ikke fløjet bort.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111705">
+<head>
+  <title>Den daarlige Vej</title>
+  <source pages="7-8" facsimile-pages="15-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg saa en Vej, dunkelt beskygget af de store Træer, en Vej, hegnet af blomstrende Buske.
+
+    Mit Blik trængte ind under den grønne Skyggehvælving og gled langt ned over Vejen.
+
+    Men hvorfor vælge denne Vej? Den fører ikke til hendes Bolig, hvem jeg elsker.
+
+<pb n="8" facs="015.jpg"/>    Da min Tilbedte kom til Verden, klemte de hendes smaa Fødder i Jernæsker; og min Tilbedte spadserer aldrig paa Vejene.
+
+    Da hun kom til Verden, klemte de hendes Hjerte ind i en Jernæske; og hende jeg elsker, vil aldrig komme til at elske mig.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111706">
+<head>
+  <title>Undervejs til Tchi-Li</title>
+  <source pages="8" facsimile-pages="16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg sætter mig paa Vejkanten paa et omstyrtet Træ, og jeg ser ud ad Vejen, som vedbliver at forlænge sig henimod Tchi-Li.
+
+    I Morges straalede den blaa Atlask i mine Sko som Staal, og man kunde følge de sorte Broderiers Tegning.
+
+    Nu er mine Sko dækkede af Vejstøv.
+
+    Den Gang, jeg rejste, lo Solen paa Himlen, Sommerfuglene flagrede omkring mig, og jeg talte de hvide Gaaesurter, der var strøede over Græsset som Haandfulde af Perler.
+
+    Nu er det Aften, og der er ikke flere Gaaseurter.
+
+    Svalerne stryge skyndsomt og lavt forbi, Ravnene skrige paa hverandre for at gaa til Ro, og jeg ser Arbejderne med deres Maatte rullet om Hovedet skynde sig til de nære Landsbyer.
+
+    Men jeg har endnu en lang Vej at vandre.
+
+    Førend jeg kommer til Tchi-Li vil jeg skrive et Digt, et Digt, sorgmodigt som min ensomme Sjæl.
+
+    Og med en vanskelig Rhytme, med en meget vanskelig Rhytme, for at Vejen herfra til Tchi-Li kan synes mig altfor kort.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Li-su-tchon</title>
+</head>
+<content>
+<text id="matthison2026111707">
+<head>
+  <title>Maaneskin paa Havet</title>
+  <source pages="9" facsimile-pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Fuldmaanen er nylig dukket op af Vandet. Havet ligner en stor Plade af Sølv.
+
+    I en Baad drikker nogle Venner Vin af Kopper.
+
+    Idet de betragter de smaa Skyer, som belyste af Maanen, vugger sig i Dans om Bjerget.
+
+    Nogle siger, at det er Kejserens Damer, som skride forbi, klædte i Hvidt.
+
+    Og andre paastaa, at det er en Flugt af Svaner.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tchang-Tsi</title>
+</head>
+<content>
+<text id="matthison2026111708">
+<head>
+  <title>Den dydige Hustru</title>
+  <source pages="9" facsimile-pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Du rækker mig to glimrende Perler; uagtet jeg vender Hovedet bort, blegner mit Hjerte og sitrer uvilkaarligt.
+
+    Et Øjeblik fæster jeg dem paa min Kjole, disse to klare Perler; den røde Silke giver dem rosenfarvede Reflekser.
+
+    Hvorfor kendte jeg dig ikke, førend jeg blev gift! Men fjern dig fra mig, for jeg tilhører en Ægtefælle.
+
+    Se de to skælvende Taarer i Randen af mine Øjenvipper; det er dine Perler, som jeg giver dig tilbage.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Han-U</title>
+</head>
+<content>
+<text id="matthison2026111709">
+<head>
+  <title>En ung Piges Bekymring</title>
+  <source pages="10" facsimile-pages="18"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Maanen belyser den indre Gaard; jeg stikker Hovedet ud af Vinduet, og jeg ser paa Trappens Trin.
+
+    Jeg ser Løvets Blink og jeg ser den dirrende Skygge af Gyngen, som Vinden ryster.
+
+    Jeg gaar ind og lægger mig paa mit Fletværks Leje; Nattens Kølighed har angrebet mig; jeg faar Kuldegys i mit ensomme Værelse.
+
+    Og saa hører jeg Regnen falde i Søen! I Morgen vil min lille Baad være dyngvaad; hvordan skal jeg kunne sejle ud for at plukke Vandliljer?
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Sao-nan</title>
+</head>
+<content>
+<text id="matthison2026111710">
+<head>
+  <title>Mandarinens tre Hustruer</title>
+  <source pages="10-11" facsimile-pages="18-19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><w>Ægtehustruen.</w></center>
+
+    Der er Vin i Koppen, og paa Fadet ligger der Svalereder. Fra Arilds Tid har en Mandarin altid æret sin Ægtehustru.
+
+<center><w>Medhustruen.</w></center>
+
+    Der er Vin i Koppen, og paa Fadet ligger en kraftig fedet Gaas. Naar en Mandarins Kone ikke giver ham Børn, vælger Mandarinen en Medhustru.
+
+<center><w>Tjenestepigen.</w></center>
+
+    Der er Vin i Koppen, og der ligger mange Slags Kræserier paa Fadet. Det er en Mandarin ganske ligegyldigt, om en Kvinde er hans Ægtefælle eller Medhustru, men han forlanger hver Nat en ny Kvinde.
+
+<pb n="11" facs="018.jpg"/><center><w>Mandarinen.</w></center>
+
+    Der er ikke længer Vin i Koppen, og paa Fadet ligger der kun en indtørret Purre. Herud, ud med Jer, sladderagtige Kvindfolk, gør ikke Nar ad en pæn gammel Mand.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tan-jo-su</title>
+</head>
+<content>
+<text id="matthison2026111711">
+<head>
+  <title>En Kvinde foran sit Spejl</title>
+  <source pages="11" facsimile-pages="19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Siddende foran sit Spejl, ser hun ud i Maaneskinnet.
+
+    Det nedrullede Gardin slører Lyset; rundt i Værelset tror man at se Jade brudt i tusinde Korn.
+
+    I Stedet for at kæmme sit Haar, løfter hun det bambusstrengede Forhæng, og Maaneskinnet bryder mere lysende ind,
+
+    som en Kvinde, klædt i Silke, der lader sin Kjole falde.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Su-tong-po</title>
+  <subtitle>1036—1101 (Dyn. Sung).</subtitle>
+</head>
+<content>
+<text id="matthison2026111712">
+<head>
+  <title>Om et Skibs Gyngen, set fra den vestlige Provins</title>
+  <source pages="11-12" facsimile-pages="19-20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    En blaa Damp indhyller det som et tyndt Flor, og en Knipling af Skum omringer det ligesom en Rad hvidgnistrende Tænder.
+
+    Solen hæver sig langsomt, idet den smiler til Havet, og Havet ser ud som et stort Silkeklæde broderet med Guld.
+
+    Fiskene svømme op og puste Bobler i Overfladen som lige saa mange blinkende Perler, og de klare Bølger vugger blidelig Blomsterbaaden.
+
+    Mit Hjerte vrider sig af Smerte ved at se den saa langt fra mig og fastbundet til Bredden ved en Silkesnor.
+
+<pb n="12" facs="019.jpg"/>    Thi der blusser de mest blændende Blomster, der er Vinden krydret og der bor Foraaret.
+
+    Jeg vil synge en Sang paa Vers, slaaende Takt med min Vifte, og den første Svale, som monne flyve forbi, vil jeg bede om at føre min Sang didhen.
+
+    Og jeg vil kaste i Havet en Blomst, som Vinden vil drive hen imod Skibet.
+
+    Skøndt den lille Blomst er død, danser den let paa Vandet; men jeg synger med sorgtung Sjæl.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111713">
+<head>
+  <title>Digteren spadserer over det taagesvøbte Bjerg</title>
+  <source pages="12" facsimile-pages="20"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Digteren vandrer langsommeligt over Bjerget; i det fjerne ser Kampestenene i den taagede Dis ud som slumrende Faareflokke.
+
+    Han er kommen meget træt derop; thi han har drukket megen Vin; og han lægger sig til Hvile paa en Sten.
+
+    Skyerne vugger frem over hans Hoved; han ser dem slutte sig sammen og tilsløre Himlen.
+
+    Saa synger han tungsindigt om, at Efteraaret nærmer sig, at Luften bliver skarp, at det kommende Foraar endnu er langt borte.
+
+    Og de spadserende, som komme for at beundre Naturens Skønhed, omringe ham, idet de klappe i Hænderne, og de udbryder: »Der ligger rigtig en gal Mand!«
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111714">
+<head>
+  <title>Arbejderens Sorgsind</title>
+  <source pages="12-13" facsimile-pages="20-21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Sneen er dalet løselig ned over Markerne som en Sværm Sommerfugle.
+
+<pb n="13" facs="020.jpg"/>    Arbejderen har stillet sin Spade til Side, og han synes, usynlige Traade sammensnorer hans Hjerte.
+
+    Han er bedrovet, for Jorden var hans Veninde, og naar han bøjede sig over den for at betro den det Saakorn, hvortil han knytter sit Haab, gav han den ogsaa sine hemmelige Tanker.
+
+    Og siden hen, naar Frøet havde spiret, genfandt han sine Tanker i fuld Blomstring.
+
+    Og nu — nu skjuler Jorden sig under et Slør af Sne.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111715">
+<head>
+  <title>Fiskeravnen</title>
+  <source pages="13" facsimile-pages="21"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Ensom og ubevægelig staar Høstens Fiskeravn og grunder paa Flodens Bred, og dens runde Øje følger Strømmens Løb.
+
+    Naar til Tider et Menneske spadserer langs Flodbredden, fjerner Fiskeravnen sig langsomt, idet den ryster paa Hovedet;
+
+    Men bag Løvet lurer den paa Vandrerens Bortgang, ti den higer efter atter at se den enstonige Strøms Bølgekrusninger.
+
+    Og om Natten, naar Maanen blinker paa Bølgerne, grubler Fiskeravnen med det ene Ben i Vandet.
+
+    Og det Menneske, som i sit Hjerte bærer paa en stor Kærlighed, følger saaledes en og samme Tankes Bølgekrusninger.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tin-tun-ling</title>
+</head>
+<content>
+<text id="matthison2026111716">
+<head>
+  <title>De smaa Blomster gøre sig lystige over de stive Graner</title>
+  <source pages="13-14" facsimile-pages="21-22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Højt oppe paa Bjerget staa Granerne alvorlige og pansrede med Naale; nedenfor Bjerget udfolde de blændende Blomster sig i Græsset.
+
+<pb n="14" facs="021.jpg"/>    Ved at sammenligne deres duggfriske Klædebon med Granernes skumle Dragt, give de smaa Blomster sig til at lé.
+
+    Og de lette Sommerfugle tage Del i deres Glæde.
+
+    Men en Efteraarsmorgen betragtede jeg Bjerget: Granerne stod ganske klædte i hvidt, tunge og drømmende.
+
+    Jeg maatte forgæves søge nedenfor Bjerget, jeg kunde ikke se de smaa, lattermilde Blomster.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Uan-tié</title>
+</head>
+<content>
+<text id="matthison2026111717">
+<head>
+  <title>En Digter lér i sin Baad</title>
+  <source pages="14" facsimile-pages="22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Den lille rene og rolige Sø ligner en Skaal fyldt med Vand.
+
+    Langs dens Bredder forme Bambusstænglerne sig som Hytter, og Træerne ovenover danne grønne Tagskæg.
+
+    Og de store, spidse Klipper, der staar midt i Blomsterne, minder om Pagoder.
+
+    Jeg lader min Baad glide blødt henover Vandet, og jeg smiler ved at se Naturen saaledes efterligne Menneskene.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tchan-Tiu-Lin</title>
+</head>
+<content>
+<text id="matthison2026111718">
+<head>
+  <title>Jadeperlerne</title>
+  <source pages="14-15" facsimile-pages="22-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg saa Stormandarinen Lo-Wang-Li's første Hustru komme forbi; hun red langs Søen i Alléen, hvor Maanen hvidner Piletræsbladene.
+
+<pb n="15" facs="022.jpg"/>    Undervejs lod hun nogle Jadeperler falde fra sin Hals; en Mand, som var tilstede, samlede dem op og løb henrykt bort.
+
+    Men jeg, jeg tog ikke Perlerne op, fordi jeg kun stirrede paa den unge Kvindes smukke Ansigt, der var hvidere end Maanen paa Piletræsbladene, og jeg fjærnede mig grædende.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111719">
+<head>
+  <title>Pilebladet</title>
+  <source pages="15" facsimile-pages="23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Den unge Pige, som drømmer med Albuen i sit Vindue, elsker jeg ikke for det pragtfulde Hus, som hun ejer ved Bredden af den gule Flod;
+
+    men jeg elsker hende, fordi hun lod et lille Pileblad falde i Strømmen.
+
+    Jeg elsker ikke Østenvinden, fordi den bringer mig Duft fra de blomstrende Ferskentræer, som tilsner Østens Bjerge;
+
+    men jeg elsker den, fordi den har vugget ind til min Baad det lille Pileblad.
+
+    Og det lille Pileblad, det elsker jeg ikke, fordi det minder mig om det lune Foraar, som paany blomstrer frem;
+
+    men jeg elsker det, fordi den unge Pige har ridset et Navn paa det med Spidsen af sin Broderenaal, og fordi det Navn er mit.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Haou-Ti</title>
+</head>
+<content>
+<text id="matthison2026111720">
+<head>
+  <title>Rim</title>
+  <source pages="15-16" facsimile-pages="23-24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Den hvide Rim dækker fuldstændig Buskadserne; de ligne Kvinders pudrede Ansigter.
+
+<pb n="16" facs="023.jpg"/>    Jeg staar ved mit Vindue og ser ud i Haven, og jeg tænker, at Manden uden Kvinden er som en Blomst berøvet de grønne Blade.
+
+    Og for at bortjage den bitre Sørgmodighed, som tager mig fangen,
+
+    skriver jeg med mit Aandedræt min Tanke i den hvide Rim.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Wang-Po</title>
+  <subtitle>(648—676.)</subtitle>
+</head>
+<content>
+<text id="matthison2026111721">
+<head>
+  <title>Den unge Konges Lysthus</title>
+  <source pages="16" facsimile-pages="24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Den unge Konge af Teng boede ved den store Flod i et nydeligt udskaaret Lysthus.
+
+    Kongen var klædt i Atlask, og Prydelser af Jade gyngede ved hans Bælte.
+
+    Men nu slumrer Atlaskdragterne i Ibenholtsskrinene og Jadeprydelserne ligge urørte hen, man ser kun Morgenens blaa Dampe trænge ind ad Dørene og Regnen, som græder hver Aften.
+
+    Skyerne ruller sig sammen over Himlen og sortner det glasklare Vand; thi Kongen er rejst bort.
+
+    Saaledes skrider Maanen over Himlen og forsvinder.
+
+    Og sørgende følger Efteraar paa Efteraar. Hvor er dog Kongen rejst hen?
+
+    Tidligere beundrede han Floden. Det sitrende Vand har ikke bevaret Glansen fra hans Øjne og bevarer han nu Erindringen om Floden?
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tsui-Tchu-Tchi</title>
+</head>
+<content>
+<text id="matthison2026111722">
+<head>
+  <title>Drikkende i Thu-fu’s Hus</title>
+  <source pages="17" facsimile-pages="25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg fyldte min Kop til Randen med en velperset Vin, men da jeg vilde til at drikke var min Kop tom, fordi Trækken fra Vinduet havde blæst Vinen paa Gulvet.
+
+    Naar det regner, er det fordi Vinden vælter de fulde Kopper for de udødelige Vismænd, der beruser sig paa Skyerne, oppe over Bjergene;
+
+    men Markernes Dugg og Flodernes Fugtighed, løftet af Solen, fylder paany Geniernes store Kopper.
+
+    Og der bliver Vin nok tilbage i Thu-fu's Hus til, at jeg kan drikke igen, idet jeg digter Vers til Ære for Skønaanderne og for Kejser Ta-Ming.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Pe-lo-tien</title>
+  <subtitle>(772—846 e. Kr.)</subtitle>
+</head>
+<content>
+<text id="matthison2026111723">
+<head>
+  <title>Paa Vejen til Klosteret</title>
+  <source pages="17" facsimile-pages="25"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Himlen er kølig og Solen lyser ikke, paa Thai-hangs Højder vokser de mørkegrønne Skove.
+
+    De ufarbare Veje, her findes, har man tidt hørt Tale om, nu gaar jeg alene henad dem.
+
+    Er man til Hest, er de smaa Bjerge frosne og tilmed glatte, selv i Zigzag lade de sig ikke bestige.
+
+    Sammenligner man dem med Lidelserne paa Verdens Veje, er de mere jævne end den flade Haand.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111724">
+<head>
+  <title>Svalerne</title>
+  <source pages="18-19" facsimile-pages="26-27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Over Tagspæret bygger et Svalepar, en flagrende Han og Hun.
+
+    De bære Dynd ind imellem to Bjælker, i én Rede avler de fire Børn.
+
+    De fire Børn vokser baade ved Dag og Nat, de kære Stemmer raabe paa Spise.
+
+    De grønne Insekter er ikke lette at fange, Grønskollingerne lade sig aldrig mætte.
+
+    Om ogsaa Næb og Kløer slides op, Hjertets Kraft kan ikke udtømmes.
+
+    I kort Tid flyve de tusinde Gange frem og tilbage, endnu stadig bange for, at der sultes i Reden.
+
+    Tredive Dage i Træk vare de drøje Anstrengelser, Moderen bliver mager, Ungerne lidt efter lidt smækfede.
+
+    Under Kvidder lærer man at tale, enhver Unge maa klø's i sin Fjerklædning.
+
+    En Morgen er Vingerne færdige, Ungerne føres ud i Forgaarden op paa Træernes Kviste,
+
+    de løfte Vingerne, ser sig ikke tilbage, efter Vinden flyver de spredtvis til alle fire Sider.
+
+    Han og Hun synger i Luften, med udpint Stemme kalder de, der vender ingen tilbage.
+
+    Derpaa flyve de hjem i den tomme Rede, hele Natten pippende bedrøvet.
+
+    Svaler, vær ikke bedrøvede! I skulde langt hellere ikke ænse Eders Skæbne.
+
+<pb n="19" facs="026.jpg"/>    Tænk paa den Dag, da I vare unge Fugle, og paa den Tid under høj Flugt vare ulydige mod Eders Moder.
+
+    Fader og Moder, tænk tilbage paa den Tid, og det vil trøste Eder i Eders Sorg.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Li-tai-pé</title>
+  <subtitle>(699—762.)</subtitle>
+</head>
+<content>
+<text id="matthison2026111725">
+<head>
+  <title>Ved Bredden af en Flod</title>
+  <source pages="19" facsimile-pages="27"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Unge Piger ere gaaede ned til Floden; de baner sig Vej mellem Nøkkerosernes buskede Klynger.
+
+    Man ser dem ikke, men man hører dem lé, og Luften parfumeres ved at stryge gennem deres Klæder.
+
+    En ung Rytter kommer forbi langs Bredden, ganske tæt ved de unge Piger.
+
+    Den ene af dem følte sit Hjerte banke, og hendes Ansigt skiftede Farve.
+
+    Men Nøkkerosernes tætte Skov skjuler hende.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111726">
+<head>
+  <title>Porcellænspavillonen</title>
+  <source pages="19-20" facsimile-pages="27-28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Midt ude i den lille kunstige Sø hæver sig en Pavillon af grønt og hvidt Porcellæn; man kommer derud over en Bro af Jade, der krummer sig som en Tigerryg.
+
+    Nogle Venner, iførte lyse Dragter, sidder sammen i denne Pavillon og tømmer Kopper med lunken Vin.
+
+    De samtaler lystigt eller kradser Vers ned, idet de skubber Hattene bagud og smøger deres Ærmer lidt op.
+
+<pb n="20" facs="027.jpg"/>    Og i Søen, hvor den lille omvendte Bro er som en Nymaane af Jade, drikker nogle Venner, klædte i lyse Dragter, med Hovedet nedefter i en Pavillon af Porcellæn.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111727">
+<head>
+  <title>Fuglekvidder om Aftenen</title>
+  <source pages="20" facsimile-pages="28"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Oppe i den friske Luft synge Fuglene gladelig paa de krydsende Grene.
+
+    En ung Kvinde, som bag sit Vindues Fletværk broderer straalende Blomster paa et Silkeklæde, hører Fuglene levelystne kalde paa hverandre i Træerne.
+
+    Hun løfter Hovedet og lader Armene synke; hendes Tanke er draget til ham, som har været borte saa længe.
+
+    »Fuglene forstaa at finde hinanden i Løvværket; men de Taarer, der falder fra de unge Kvinders Øjne som en Uvejrsregn, kalder ikke de fraværende hjem.«
+
+    Hun løfter atter sine Arme og sænker sit Hoved over sit Arbejde.
+
+    »Jeg vil brodere et lille Vers mellem Blomsterne i den Kjole, som jeg syer til ham, og maaske vil Skrifttrækkene minde ham om at komme hjem.«
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111728">
+<head>
+  <title>Fiskeren</title>
+  <source pages="20-21" facsimile-pages="28-29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jorden har drukket Sneen, og nu ser man igen Blommetræets Blomster.
+
+    Pilens Blade ligner nyt Guld, og Søen er som en Sølvsø.
+
+    Det er den Tid, hvor Sommerfuglene, pudrede med svovlfarvet Støv, stemmer deres fløjelsklædte Hoveder mod Blomsternes Hjerte.
+
+<pb n="21" facs="028.jpg"/>    Fiskeren i sin ubevægelige Baad kaster sine Garn, som bryder Vandets Overflade.
+
+    Han tænker paa hende, der bliver hjemme som Svalen i sin Rede, paa hende, som han snart vil gensé, naar han bringer hende Føde, ligesom Hansvalen.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111729">
+<head>
+  <title>Jadetrappen</title>
+  <source pages="21" facsimile-pages="29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    I Fuldmaanens blide Lys stiger Kejserinden op ad sine Jadetrin, der glimter af Dug.
+
+    Kjolens Søm strejfer Trinenes Rand i et let Kys; den hvide Atlask og Jaden ligner hinanden.
+
+    Maanelyset har oversvømmet Kejserindens Værelse; idet hun træder over Tærskelen, bliver hun helt blændet;
+
+    thi, foran Vinduet, paa Forhænget, broderet med Krystalperler, synes hun at se en Klynge Diamanter, der strides om Lyset;
+
+    og paa Gulvets blege Træ laa som en Ring af Stjerner.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111730">
+<head>
+  <title>Nær ved Flodens Munding</title>
+  <source pages="21-22" facsimile-pages="29-30"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    De smaa Bølger glimter i Maanens Skær, som forvandler Vandets glasklare Grønt til Sølv; og man tror at se tusinde Fisk løbe ud imod Havet.
+
+    Jeg er ene i min Baad, som glider langs Flodbredden; af og til dypper jeg mine Aarer i Vandet, Natten og Ensomheden fylder mit Hjerte med Sørgmodighed.
+
+    Men sé, der staar en Hæk af Nøkkeroser med sine Blomster lig tunge Perler; jeg kærtegner den blidelig med mine Aarer.
+
+<pb n="22" facs="029.jpg"/>    Bladenes Brusen lyder som en øm Mumlen, og Blomsterne, som bøje deres smaa, hvide Hoveder, se ud, som de vil tale til mig.
+
+    Nøkkeroserne vil trøste mig, men allerede ved at se dem havde jeg glemt mit Tungsind.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111731">
+<head>
+  <title>De evige Skrifttræk</title>
+  <source pages="22" facsimile-pages="30"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Medens jeg sidder og skriver Vers, ser jeg fra mit Vindue Bambusstænglernes Duven og Svajen; det ser ud som Vand, der gaar i Bølger, og deres Bladknive, som hvæsses mod hverandre, efterligner Vandfaldenes Brusen.
+
+    Jeg lader Skrifttræk falde paa Papiret; set paa Frastand skulde man tro, at Blommetræsblomster falder omvendt i Sne.
+
+    Mandarinorangernes æggende Friskhed forflygtiges, naar en Kvinde bærer dem altfor længe i sit Albueærmes Flor, ligesom den hvide Rim løses op i Solskinnet.
+
+    Men Skrifttrækkene, som jeg lader falde over Papiret, vil aldrig udviskes.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111732">
+<head>
+  <title>Den røde Blomst</title>
+  <source pages="22-23" facsimile-pages="30-31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Medens jeg bedrøvet arbejdede ved mit Vindue, stak jeg mig i Fingeren, og den hvide Blomst, som jeg broderede, blev en rød Blomst.
+
+    Saa kom jeg med Et til at tænke paa ham, der drog bort for at kriges med Oprørerne, det forekom mig, som om hans Blod ogsaa randt, og der faldt Taarer fra mine Øjne.
+
+    Men jeg troede at høre Lyden af hans Hests Hovslag, og jeg rejste mig glædestraalende; det var mit Hjerte, som, idet det slog altfor hurtigt, lignede hans Hests Trampen.
+
+<pb n="23" facs="030.jpg"/>    Jeg sætter mig atter til mit Arbejde tæt ved Vinduet, og mine Taarer broderer Tøjet i Rammen med Perler.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Tche-Tsi</title>
+</head>
+<content>
+<text id="matthison2026111733">
+<head>
+  <title>Til den smukkeste Kvinde i Blomsterbaaden</title>
+  <source pages="23" facsimile-pages="31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Jeg har sunget Sange for dig, idet jeg akkompagnerede mig paa min Ibenholtsfløjte, Sange, hvori jeg fortalte dig om mit Tungsind; men du hørte ikke paa mig.
+
+    Jeg har skrevet Vers, hvor jeg berømmede din Skønhed; men, rystende paa dit Hoved, kastede du i Vandet de hædrende Blade, hvorpaa jeg havde tegnet Skrifttræk.
+
+    Saa gav jeg dig en stor Safir, en Safir, som lignede Nattehimlen, og til Gengæld for den dunkle Safir viser du mig din Munds smaa Perler.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111734">
+<head>
+  <title>Det hvide Blad</title>
+  <source pages="23-24" facsimile-pages="31-32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Med Hovedet støttet paa min Haand betragter jeg Papirsbladet, som bliver ved at være hvidt, siden jeg slog mig ned her.
+
+    Jeg betragter ogsaa Tuschen, som tørres paa min Penselspids.
+
+    Min Tanke synes at slumre; vil min Tanke maaske aldrig vaagne paany?
+
+    Jeg gaar bort over den solhede Slette, og jeg lader mine Hænder stryge hen over høje Græsstraa.
+
+    Paa den ene Side ser jeg den fløjlsbløde Skov, paa den anden de skønt formede Bjerge, pudrede af Sne og røde af Sol.
+
+<pb n="24" facs="031.jpg"/>    Og jeg betragter ogsaa Skyernes langsomme Flugt, og jeg vender hjem igen, forfulgt af Ravnes Skoggerlatter,
+
+    og sætter mig foran Papirsbladet, som bliver ved at være hvidt under min Pensel.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111735">
+<head>
+  <title>Bladet paa Vandet</title>
+  <source pages="24" facsimile-pages="32"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Blæsten rev et Pileblad løs; det faldt flagrende i Søen og gled bort, vugget af Strømmen.
+
+    Tiden har slettet en Erindring ud af mit Hjerte, en Erindring, som kun langsomt lod sig slette ud.
+
+    Henslængt paa Søens Bred, stirrer jeg tungsindigt efter Pilebladet, som rejser langt bort fra det ludende Træ.
+
+    Ti siden jeg har forglemt hende, jeg elskede, drømmer jeg hver en Dag tungsindigt henstrakt ved Søens Bred.
+
+    Og mine Øjne følger stadig Pilebladet, og nu er det naaet tilbage under Træet, og jeg synes Erindringen aldrig er slettet ud af mit Hjerte.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Thu-fu</title>
+  <subtitle>(712—770.)</subtitle>
+</head>
+<content>
+<text id="matthison2026111736">
+<head>
+  <title>Foraarsregnen</title>
+  <source pages="24-25" facsimile-pages="32-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Aa, den kære, lille Regn, som véd saa godt, naar man har Brug for den!
+
+    Den kommer lige ved Foraarstid for at hjælpe det nye Liv med at udfolde sig!
+
+    Den har valgt Natten for at komme ganske sagte med en gunstig Vind; den har vædet alle Ting meget fint og uden Støj.
+
+<pb n="25" facs="032.jpg"/>    Mørke Skyer dreve i Gaar hen over Stien, som fører til min Bolig; kun Blussene paa Flodskibene sprang frem af Mørket som lysende Punkter.
+
+    Nu til Morgen bryde friske Farver frem langt ude over Landet, og jeg ser de smukke Blomster, som smykke de kejserlige Haver, helt overdækkede med straalende Fugtighed.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111737">
+<head>
+  <title>Medens jeg besang Naturen</title>
+  <source pages="25" facsimile-pages="33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Siddende i mit Lysthus ved Vandets Bred iagttog jeg det skønne Vejr; Solen skred langelig vesterpaa over den lysende Himmel.
+
+    Skibene gyngede paa Vandet lettere end Fuglene paa deres Grene, og Efteraarssolen øste Guld i Havet.
+
+    Saa greb jeg min Pensel og bøjet over Papiret, tegnede jeg Skrifttræk som de sorte Haar, en Kvinde fletter med sin Haand;
+
+    og under den gyldne Sol har jeg besunget det skønne Vejr.
+
+    Ved sidste Vers løftede jeg Hovedet; da saa jeg der faldt Regn over Vandet.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111738">
+<head>
+  <title>Paa Floden Tchu</title>
+  <source pages="25" facsimile-pages="33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Min Baad glider i stærk Fart over Floden, og jeg stirrer ned i Vandet.
+
+    Foroven er den høje Himmel, hvor Skyerne gaar.
+
+    Himlen er ogsaa i Floden; naar en Sky gaar forbi Maanen, ser jeg den gaa forbi i Vandet;
+
+    og jeg tror, at min Baad glider paa Himlen.
+
+    Saa drømmer jeg, at min Elskede spejler sig saaledes i mit Hjerte.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111739">
+<head>
+  <title>Efteraars-Fløjten</title>
+  <source pages="26" facsimile-pages="34"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Stakkels Rejsende, langt fra Fædrelandet, uden Penge og uden Venner, hører du ikke mere Modersmaalets bløde Musik.
+
+    Alligevel er Sommeren saa straalende, Naturen udfolder saa megen Rigdom, at du ikke er fattig; og Fuglenes Sang er ikke et fremmed Sprog i dine Øren.
+
+    Men naar du faar at høre Cikadens Skrig, denne Efteraars-Fløjte, naar du faar set Skyerne rullede af Blæst over Himlen, vil din Sorg ikke længer kende nogen Grænse.
+
+    Og idet du holder Haanden for Øjnene, vil du lade din Sjæl flygte til din Hjemstavn.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111740">
+<head>
+  <title>En ung Kvindes Ægtefælle væbner sig til Kamp</title>
+  <source pages="26" facsimile-pages="34"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Nu, Kvinde, stik din lange Naal i Brodererammens røde Silke, og bring hid mine Krigervaaben.
+
+    Kryds selv over mine Lænder de to store Slagsværd, saa at man ser deres rolige Greb rage frem over mine Skuldre.
+
+    Og medens jeg kækt løfter min Lanse, min Lanse, hvis blanke Od slaar saa smilende Saar i de besejrede,
+
+    medens jeg med Lansen i Haand ser dig paa Knæ for mig,
+
+    hægt i mit Bælte den smidige Bue, fra hvilken snart tusend hvislende Pile slynges ud, der, beskrivende en yndefuld Bue i Luften, vil fæste sig dirrende i det blødende Kød.
+
+    Og skælv nu og forføj dig herfra, ti nu kommer det skrækindgydende Ansigt, som jeg vil vise mod Fjenderne!
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111741">
+<head>
+  <title>Sejerherrens Hund</title>
+  <source pages="27" facsimile-pages="35"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    I den store Krig, hvor jeg sloges under det sorte Banner, fik jeg et Saar, men jeg dræbte mange Fjender.
+
+    Helt blodig efter Haandgemænget, løb jeg over Slagmarken, fulgt af min Hund, som havde kæmpet ved min Side.
+
+    Og idet jeg viste min Hund mine Ofres Lig, sagde jeg til den: »Spis!« og idet jeg viste den deres Blod, som endnu strømmede, sagde jeg til den: »Drik!«
+
+    Men det ædle Dyr vilde ikke nedværdige sig til at røre ved de besejredes stygge Lig, og idet den, gabende, rejste sig paa sine Bagben, i Højde med mit aabne Saar,
+
+    var den kun tørstig efter mit eget sejrende og varme Blod, der sydede i Saaret som i en rød Kop.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111742">
+<head>
+  <title>Kejseren</title>
+  <source pages="27" facsimile-pages="35"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Paa en splinterny Guldtrone sidder Himlens Søn, lynende af Juveler, omringet af Mandariner; han synes en Sol, omkranset af Stjerner.
+
+    Mandarinerne taler dybsindigt om dybsindige Sager; men Kejserens Tanke har taget Flugten ud af det aabne Vindue.
+
+    I sit Porcellænslysthus sidder Kejserinden midt imellem sine Kvinder som en prunkende Blomst omgiven af Løv.
+
+    Hun synes, at hendes Elskede dvæler altfor længe i Statsraadet, og i Kedsomhed bevæger hun sin Vifte.
+
+    Et Pust af Vellugt kærtegner Kejserens Ansigt.
+
+    »Min Elskede sender mig ved en Svingning af sin Vifte Duften fra sit Legeme«; og Kejseren skrider, straalende af Juveler, henimod Porcellænslysthuset og overlader de forbløffede Mandariner tavst at betragte hverandre.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111743">
+<head>
+  <title>Til otte store Digtere, som drak sammen</title>
+  <source pages="28-30" facsimile-pages="36-38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><w>Til Tchi-Tchan.</w></center>
+
+    Tchi-Tchan, din Hest er travet bort hurtigere end et Skib for Medbør, og dens gyngende Bevægelser lignede Bølgernes Skvulpen.
+
+    Naar dit Blik faldt paa Jorden, kunde du næppe kende Tingene, som om du havde aabnet Øjnene paa Bunden af Vandet; og du kom skyndsomt hid for at drikke med dine Venner.
+
+<center><w>Til Uan-Tié.</w></center>
+
+    Uan-Tié, jeg raader dig til altid at forblive i Byen Ju-Jan;
+
+    der finder man den bedste Vin i saadan Overflod, at man skulde tro, der fandtes en hel naturlig Sø;
+
+    og det er kun dér, du finder Vin nok til at slukke din svære Tørst.
+
+<center><w>Til Tso-Sian.</w></center>
+
+    Tso-Sian, Vinen falder stadig fra din Kop ned i din Mund som et Vandløb i en Sø.
+
+    Din Strube er som en Flodseng, som kunde løbe mellem to Bjerge, og din Bug er Oceanet, hvori Floden kaster sig.
+
+    Du drikker Vin, som Fiskene indaander Vand; Fiskene faar aldrig for meget Vand, og din store Aand faar aldrig for megen Vin.
+
+<center><w>Til Tsui-Tchu-Tchi.</w></center>
+
+    Tsui-Tchu-Tchi, din Kop er meget større end alle andres.
+
+    Naar du kaster Hovedet tilbage for at drikke, idet du vender det hvide ud af Øjnene, faar du Tid til at sé, om der er Skyer paa Himlen.
+
+    Dit Aasyn er hvidt som Bølgernes Skum, og du ser ud som et Jadetræ, som Vinden farer igennem.
+
+    Naar den duftende Vin skyller ind mellem dine Læber.
+
+<pb n="29" facs="036.jpg"/><center><w>Til Li-Tai-Pé.</w></center>
+
+    Li-Tai-pé, du løfter din Kop, og førend du sætter den igen paa Bordet, har du lavet hundrede Digte.
+
+    Du forlanger ny Vin; men Købmanden er gaaet i Seng, og der faas ikke mere Vin hos ham.
+
+    Himlens Søn, som sejler forbi i sit Skib, beder dig om at møde hos ham; men du svarer: »Jeg holder ikke af de fornemme, og vi sidder her otte Venner.«
+
+    Jeg ved, at du i Vinen finder de udødelige Vises Lyksalighed; men jeg skal ikke tale om det.
+
+<center><w>Til Tsu-Tié.</w></center>
+
+    Tsu-Tié, du bor i den store Pagode; aldrig spiser du Kød, og du drikker kun Vin med Maadehold;
+
+    men du elsker Omgang med Digtere; endskøndt du ikke skriver Vers, og ethvert af dine Ord er et Digt.
+
+<center><w>Til Tan-Jo-Su.</w></center>
+
+    Tan-Jo-Su, efter at du har drukket tre Kopper, begynder du at gruble;
+
+    imod Skik og Brug skubber du din Hat bagud, og du sætter dig til at skrive;
+
+    og Skrifttegnene dukke saa skyndsomt frem paa Papiret, at man tror, man ser Røgskyer fare fra din Pensel.
+
+<center><w>Til Tio-Sui.</w></center>
+
+    Tio-Sui, allerede har du drukket fem Kopper, og du skriver ikke Vers.
+
+    Dine højrøstede Ord vække dine Venner af deres Drømmeri, som Vinden spreder en Sky.
+
+<pb n="30" facs="037.jpg"/>    Allerede rejser de sig fra deres Stole. Hør op at drikke, du som har drukket saa længe; thi det er stærkt paa Tide at bryde op.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111744">
+<head>
+  <title>Efteraarssang<footnote>Digtet i et mongolsk Eksil, hvortil Thu-fu som en kinesisk Ovid var forvist.</footnote></title>
+  <source pages="30-34" facsimile-pages="38-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Bladene løsne sig, visnende under den hvide Rims Krystaller; en kold Blæst stryger gennem Vouchandalen, susende og raslende i Træerne.
+
+    Hidsige og hastige synes den store Flods stedse stigende Bølger at ville taarne sig mod Himlen; Bjærgets Skylag smælte sammen og glide ud i Slettens Taager.
+
+    Idag blomstrer Krysantemumblomsterne; imorgen vil de sidste Blade være faldne.
+
+    Jeg er lig en skrøbelig Baad, som en Kæde lænker til Bredden; mine Tanker vende alene hjem til mit Land.
+
+    Rundt om mig ser jeg, hvorledes Folk skærer sig varme Klæder til den Vinter, som nærmer sig. Op fra Dalen hører jeg Støjen af Vadskerpigerne, der banker Tøj, opsatte paa at faa deres Arbejde endt, for Dagen rinder ud.
+
+    Hvor ofte har jeg, fra Højden af denne afsides Fæstning i Kuei-tcheou, fra det Øjeblik Solen var forsvundet af Horisonten, med Øjnene ledede af Nordens Stjernebilleder, rettet mine Blik mod vor skønne Hovedstad; med Hjertet forpint af Abernes skærende Skrig og fortæret af forgæves Længsel efter en aldrig haabet Hjemrejse.
+
+    Fordum stod jeg i Gunst, i et Palads, smykket med rige Malerier; man afbrændte Røgelse ved mit Komme, og jeg hvilede paa silkespundne Hynder. Og nu bo'r jeg bag et Taarns hvidtede Murtinder, hvor Skildvagterne udsende ulykkevarslende Fløjtesignaler.
+
+<pb n="31" facs="038.jpg"/>    Jeg betragter med flygtigt Blik den vildtvoksende Planteverden paa Klipper, som Maanen belyser, og længere nede, i et Halvlys, den store Flods sandede Øer med deres allerede afblomstrede Sivskove.
+
+    En dyster Dvale ligger Morgen og Aften tungt over de mange Huse indenfor denne Bjergbefæstning; jeg sætter mig paa hundrede forskellige Steder, altid midt i Taagen og Skyerne.
+
+    Hver ny Nat ligner den foregaaende; altid Fiskere i deres Baad, altid udførende det samme Arbejde.
+
+    Og der kommer Svalerne flyvende i Flokke, de er lykkelige, de skulle rejse.
+
+    Jeg har forstaaet at opfylde mine Embedspligter ligesaa godt som Kuang-heng, som dog erhvervede sig et stort Navn; men jeg kunde ikke efterligne Liu-hiang, og som han arbejde for Efterkommerne.
+
+<pb n="32" facs="039.jpg"/>    Jeg tænker paa mine Ungdoms- og Studiekammerater, der i saa stor Mængde har naaet Ære og Berømmelse. Hvormange af dem foretog sig andet end at køre rundt paa de fem Høje for at vise deres flotte Dragter og smukke Heste! Jeg har hørt sige, at i Tchangngan synes man altid at spille Skak.
+
+    Hvormange Begivenheder i en Menneskealder, saa sørgelige, at de næsten ikke er til at bære! Fyrsternes og de Mægtiges Slotte er stadig beboede af nye Herrer; Huer og Moder er meget forskellige fra den gamle Tids.
+
+    Paa Nordens bjergrige Grænselinjer lyder ideligt Gongonger og Trommer; paa Vestens Veje er der kun Heste og Krigskarrer, selv Kejserens Ilbud opholdes længe undervejs.
+
+    Her er der en isnende Stilhed; snart kommer den strenge Aarstid, hvor selve Fiskene holde sig skjulte i det Inderste af deres Smuthuller.
+
+    Ak, mit Land! ak, I Minder om fredelige Dage! nu er der Tid til at drømme om Eder! Jeg tænker først paa Slottet Pong-lai, hvis Indgang vender ud imod Bjerget Nannchan; paa denne kostbare Vase, som løftede sig paa sin Guldstilk, som for at stige til Skyernes Moderbryst og drikke Himlens Dugg.
+
+    Vest for Paladset øjnede man Søen Yao, ved hvis Bredder Vestens Kongemoder steg ned, mod Øst Porten Han-kuan, hvor fordum røde Dampe forkyndte Laotseus Komme.
+
+    Jeg ser atter Vifterne af Fasanfjer bevægede som lette Skyer, og et kongeligt Aasyn nærme sig og Dragens Guldskæl lyne i Solen.
+
+    Jeg er rejst fra alt dette til et øde Land, og mit Livs Aften er hurtig kommet; hvor er den allerede langt borte, den Tid, hvor jeg ledede Avdiensernes Tur, siddende ved Døren med de himmelfarvede Sten! Ligefra disse Bjerges Kløfter til Floden Kio's Kilde, overalt strækker Taagen sig, der fulgte efter <pb n="33" facs="040.jpg"/>de sidste Solskinsdage; den oversvømmer nu det yndige Jagtslot ved Hoangho, tidligere beæret med en højbaaren Gæsts Besøg, og den lille Have i Huyung, hvor triste Nyheder fra Grænserne for første Gang skulde bringes ham.
+
+    Og disse Telte broderede med Perler, disse yndefuldt udskaarne Søjler og disse Indelukker for de sjældne Dyr, og Djonken med Ibenholtsmast, med Sejl af blomstret Atlask, der lod hvide Fugle flagre udover det gennemsigtige Vand.
+
+    O, hvor vemodigt at vende sit Hoved om mod dette Land for alle Glæder, mod dette Tchangngan, Regenternes Bolig fra Oldtidens Dage! Ikke langt derfra ser jeg ogsaa den mægtige Sø, som frembragtes under Dynastiet Han, hvor endnu fornylig Wu-ti’s Bannere bølgede; hvor Stjernebilledet den himmelske Væverske tilbringer de klareste Nætter i Ørkesløshed; medens den store Stenfisk mælder Høstvindens Komme, naar den larmende bevæger sine Finner; de vidtstrakte Vande er for Øjeblikket dækkede som med et sort Slør af Kumiplantens neddryssede Frø; Nøkkerosens Frugt viser sig dér plyndret for det straalende Smykke, som Frosten har røvet den.
+
+    Og jeg, som er skilt fra disse elskede Egne ved ubestigelige Bjerge, jeg er ene med mine Tanker paa Bredden af en oversvømmet Flod.
+
+    Kunde jeg endnu glemme de henrivende Steder i Kuân, hvor en berømmelig Hersker fandt Behag i at bo, hvor Tchongnankædens blaa Bjergtoppe spejlede sig i Mei-peisøens Vande? Ris af udsøgt Sødme voksede der i saadan Overflod, at man lod den ligge paa Markerne til Papegøjerne; den lykkevarslende Fugl Fung-hoang ældedes der i de store Træer uden nogensinde at tænke paa at forlade dem.
+
+    Dér kom ved Foraarstid skønne unge Piger for at le og lege med os paa Søskrænterne; til Venner havde jeg Udødelige; <pb n="34" facs="041.jpg"/>vi tilbragte vore Dage med Udflugter paa Søen; vore Aftener med andre Glæder.
+
+    Allerede havde min heldige Pensel gjort sig bemærket af Kejserrigets Herre.
+
+    Og nu — nu ejer jeg kun Tungsindets Sange, og mit Hoved, der er blevet hvidt, er nedbøjet af Sorg.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <suptitle>中國詩 / Chung Kuo shï</suptitle>
+  <title>Kinesiske Digte</title>
+  <subtitle>
+    <line>For første Gang oversatte fra Originalsproget</line>
+    <line>af Aage Matthison-Hansen</line>
+    <line>Dels nedskrevne efter Hukommelsen af Wong-sung-san, dels forfattede af Djeang-Tseen og Lo-gah-nam</line>
+  </subtitle>
+</head>
+<content>
+<text id="matthison2026111745" skip-index="true">
+<head>
+  <firstline>I Kejser Kwang-ssi’s otte og tyvende Regeringsaar rejste jeg til Danmark</firstline>
+  <source facsimile-pages="43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph>
+<i>»I Kejser Kwang-ssi’s otte og tyvende Regeringsaar rejste jeg til Danmark, og mit Sind blev saa stærkt bevæget, at jeg maatte skrive Vers«.</i>
+
+<right>Djeang-Tseen</right>
+</epigraph>
+</body>
+</text>
+
+<text id="matthison2026111746" lang="en">
+<head>
+  <title>The song of the water-lily</title>
+  <subtitle>A popular song from Tai-wan (Formosa).</subtitle>
+  <firstline>What a fine flower the waterlily is!</firstline>
+  <source facsimile-pages="44"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<i>What a fine flower the waterlily is!</i>
+<i>what a fine flower the waterlily is!</i>
+
+<i>That fine flower has come to my home,</i>
+<i>come to my home like a fairy queen.</i>
+
+<i>She would be a Goddess to every one,</i>
+<i>every home would like to hear her sing:</i>
+    <i>Aia, aia, ayoh!</i><footnote>Translated from the Chinese (Tan-ti’s manuscript), sung by A-yoh in the China-town in Tivoli and by Mrs. Oda Nielsen, the Danish Royal actress.</footnote>
+</poetry>
+</body>
+</text>
+
+<text id="matthison2026111747">
+<head>
+  <title>Ved Bredden af en Indsø</title>
+  <subtitle>
+    <line>af</line>
+    <line>Thu-fu.</line>
+    <line>(712—771.)</line>
+  </subtitle>
+  <firstline>De unge Piger er ude at ro i en lille, slankbygget Baad</firstline>
+  <source pages="37" facsimile-pages="45"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>杜甫詩</nonum>
+小娃撐小艇
+偷採白蓮回
+不解人踪跡
+浮萍一道開。
+</poetry>
+<prose>
+    De unge Piger er ude at ro i en lille, slankbygget Baad,
+
+    de tænker ikke paa at træde paa Mændenes Hjerter med deres smaa Fødder;
+
+    men de bøje sig ud over Rælingen og søge med Hænderne at rykke de hvide Vandliljer til sig under Farten,
+
+    og Blomsterne bøjer sig til Side for dem, medens de langsomt bæres af Strømmen tilbage til deres Hjem.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111748">
+<head>
+  <title>Ved Hoang-ho</title>
+  <subtitle>
+    <line>af</line>
+    <line>Thu-fu.</line>
+  </subtitle>
+  <firstline>Den hvide Sne paa de højeste Bjergtinder gnistrer i Solen</firstline>
+  <source pages="38" facsimile-pages="46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>杜甫詩</nonum>
+白日依山盡
+黃河入海流
+欲窮千里目
+更上一層樓。
+</poetry>
+<prose>
+    Den hvide Sne paa de højeste Bjergtinder gnistrer i Solen.
+
+    Hoang-hofloden bruser majestætisk ud i Havet.
+
+    Du faar Lyst til at kunne se en Horizont, der strækker sig over tusinde Mil,
+
+    og du bliver ved at gaa og gaa fra det ene høje Bjerg til det andet endnu højere.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111749">
+<head>
+  <title>Fasanen</title>
+  <subtitle>
+    <line>af</line>
+    <line>Thu-fu.</line>
+  </subtitle>
+  <firstline>Guldfasanen flyver til Vejrs; men ingen ser den</firstline>
+  <source pages="38" facsimile-pages="46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>杜甫詩</nonum>
+打起黃鶯兒
+莫教枝上啼
+啼時驚妾夢
+不得到遼西
+</poetry>
+<prose>
+    Guldfasanen flyver til Vejrs; men ingen ser den.
+
+    Syngende flyver den imellem Træernes Grene.
+
+    Det er Vaar, og den søger med sin Sang at hidkalde den Mage, der drømmer om den,
+
+    men dens Sang kan ikke naa de fjerne, vestlige Egne.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111750">
+<head>
+  <title>Barnelærdom</title>
+  <subtitle>
+    <line>af</line>
+    <line>Li-tai-pé.</line>
+    <line>(699—762.)</line>
+  </subtitle>
+  <firstline>Fader og Søn sidde og tale sammen under Fyrretræerne, og Barnet spørger Faderen til Raads</firstline>
+  <source pages="39" facsimile-pages="47"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>李太白詩</nonum>
+松下問童子
+言師採藥去
+只在此山中
+雲深不知處。
+</poetry>
+<prose>
+    Fader og Søn sidde og tale sammen under Fyrretræerne, og Barnet spørger Faderen til Raads.
+
+    Deres Tale drejer sig om, hvilke Blomster, der benyttes i lægevidenskabeligt Øjemed.
+
+    Det er Faderens Ønske, at Drengen skal blive en lærd Mand.
+
+    Men Livets Sorger og Bekymringer komme hvirvlende som tætte Skyer, og Drengen glemmer sin Barnelærdom.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111751">
+<head>
+  <title>Aarstiderne</title>
+  <subtitle>
+    <line>af</line>
+    <line>Li-tai-pé.</line>
+  </subtitle>
+  <firstline>Om Foraaret mylre de duftende Blomster op af Jordens Skød</firstline>
+  <source pages="39" facsimile-pages="47"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>李太白詩</nonum>
+春遊芳草地
+夏賞綠荷池
+秋飲黃花酒
+冬吟白雪詩。
+</poetry>
+<prose>
+    Om Foraaret mylre de duftende Blomster op af Jordens Skød.
+
+    Om Sommeren fryde vi os ved Synet af de grønne Vandliljer paa Dammene.
+
+    Om Efteraaret gulne Blomsterne, og vi drikke deres Duft som Vin.
+
+    Om Vinteren tegner den hvide Sne Digte paa Markerne.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111752">
+<head>
+  <title>Hjemvé</title>
+  <subtitle>
+    <line>af</line>
+    <line>Li-tai-pé.</line>
+  </subtitle>
+  <firstline>En lille Dreng rejste fra Hjemmet, voksen og gammel vendte han tilbage</firstline>
+  <source pages="40" facsimile-pages="48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>李太白詩</nonum>
+少小離鄉老大回
+鄉音無改鬢毛催
+兒童相見不相識
+笑問客從何處來
+</poetry>
+<prose>
+    En lille Dreng rejste fra Hjemmet, voksen og gammel vendte han tilbage.
+
+    Hjemmets Sprog er det samme; men hans Haar er blevet hvidt som Silke.
+
+    Den lille Dreng kan genkende alt; men ingen kender længere ham.
+
+    Smilende spørger de Gæsten: Hvor hører du hjemme?
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111753">
+<head>
+  <title>Sejlbaaden</title>
+  <subtitle>
+    <line>af</line>
+    <line>Li-tai-pé.</line>
+  </subtitle>
+  <source pages="41" facsimile-pages="49"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose lang="zh">
+<img src="/images/matthison/1903v-sejlbaaden.jpg" width="180" alt="Bambusskrift fra den trykte kinesiske tekst"/>
+</prose>
+<prose>
+<small>»Bambusvers« (ts’hih-tsze), en Art kinesisk Lapidarskrift.</small>
+</prose>
+<prose>
+    Solen straaler over de høje Bjerge og over de Veje og Stier, der føre ud imod Flodens Munding.
+
+    Skyerne løfte sig og spredes i skraa Striber; men smaa, nydelige Regndraaber vedblive at drysse og ligesom fange Solskinnet i et Net.
+
+    En Baad krydser ude paa Floden, før den endnu har naaet dens Munding, har Vinden faaet Sejlene til at svulme og ført den ud af min Synskres.
+
+    Altfor mange Blomster blomstrer saaledes kun Hælvten af en Dag.
+
+    <small>Determinativer til Bambusdigtet »Sejlbaaden«: Yuen 31,10, jit 72, kao 189, shan 46, lu 157,6, ku 30, chang 168, seay 68,7, yun 173,5, sé 120,5, yu 173, taou 9,8, chuen 159,11, yang 170,9, péen 63,5, chow 137, hang 75,12, t’hu 85,9, wu 86,8, ku 30, kuo 162,9, fêng 182, k’heuen 64,8, tsan 78,8, hua 140,4, pwan 24,3, jit 72, heang 186.</small>
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111754">
+<head>
+  <title>Aanderne nærme sig</title>
+  <subtitle>
+    <line>(Poussah’s laai.)</line>
+    <line>Til et Billede af So’hing<footnote>Billedet ejes af Oversætteren.</footnote></line>
+    <line>af</line>
+    <line>Lo-gah-nam.</line>
+    <line>(Siaou-tse)</line>
+    <line>f. 1858.</line>
+  </subtitle>
+  <firstline>Mandarinen staar bøjet over den mangestrængede Ljung-kum og besjælet af hans Stemning begynder dens Strænge at synge</firstline>
+  <source pages="42" facsimile-pages="50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>羅潤南詩</nonum>
+琴音曲操鳳求凰
+雲想衣裳花想容
+感動寒宮仙女會
+清風明月現真儂
+</poetry>
+<prose>
+    Mandarinen staar bøjet over den mangestrængede Ljung-kum og besjælet af hans Stemning begynder dens Strænge at synge.
+
+    Hans Spil udtrykker hans bevægede Tanker. Det kalder paa de kære afdøde Venner, der svæve ned og besøge ham i hans Stue.
+
+    Himlens Skyer blive til flagrende Klædebon og Havens Blomster forvandles til Ansigter.
+
+    Den blide Aftenluft trænger ind til ham, og Maanen, der netop kaster sit Skær ind ad Vinduet, lyser for ham og hans Gæster.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111755">
+<head>
+  <title>Hjemvé</title>
+  <subtitle>
+    <line>af</line>
+    <line>Djeang-Tseen<footnote>Læge i Kinabyen i Tivoli Sommeren 1902.</footnote></line>
+    <line>(f. 1873.)</line>
+  </subtitle>
+  <firstline>Den kærlige Moders flittige Haand farer ud og ind mellem Silketraadene</firstline>
+  <source pages="43" facsimile-pages="51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>鄭還詩</nonum>
+慈母手中線遊子身上衣
+臨行密密縫意恐遲遲歸
+誰言寸草心報德三春暉
+</poetry>
+<prose>
+    Den kærlige Moders flittige Haand farer ud og ind mellem Silketraadene.
+
+    Hun syer Klæder til Sønnen, der skal ud at rejse.
+
+    Afskedstimen er nær, stadig sidder hun og syer med smaa, omhyggelige Sting.
+
+    Hendes Sind er uroligt; Sønnen kunde blive altfor længe borte fra Hjemmet.
+
+    Græsset og Blomsterne have ingen Fader og Moder, til hvem de kan tolke deres Hjertes Følelser.
+
+    Men en Søn er et Menneske, og han skynder sig at vende hjem til sine kære Forældre.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111756">
+<head>
+  <title>Glæde over Danmark</title>
+  <subtitle>
+    <line>af</line>
+    <line>Djeang Tseen.</line>
+  </subtitle>
+  <firstline>I Tivoli, denne bambusindhegnede Tehave, i det fjerntliggende Amt</firstline>
+  <source pages="44" facsimile-pages="52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>鄭還詩</nonum>
+唐志壺籬洞
+繁華不夜天
+旗懸沽美酒
+花放樂開筵
+火箭高千丈
+車輪轉倒顛
+少長爭盼集
+執手甚纏綿
+</poetry>
+<prose>
+    I Tivoli, denne bambusindhegnede Tehave, i det fjerntliggende Amt,
+
+    er der talrige Adspredelser, mangfoldige Glæder, der bliver det aldrig Nat,
+
+    Stammens Flag vajer paa alle Tage, unge, dejlige Kvinder sælger den brusende Vin.
+
+    Blomsterne aabner deres Bægre, Musiken forkynder, at Festen er begyndt.
+
+    Ildpile stiger højt op i Luften, mindst ti tusinde Fod.
+
+    Bjergets løbske Vogne<footnote>Rutschebanen.</footnote> farer op og ned, fremkaldende et begyndende Vanvid.
+
+    Voksne og Børn puffes mellem hverandre, staar og stirrer med stive Øjne, stimler sammen og spredes.
+
+    De gribe hverandre i Hænderne, sige »Goddag« og »Farvel«, mylrer ud og ind, frem og tilbage i én ustandselig Strøm.
+</prose>
+</body>
+</text>
+
+<text id="matthison2026111757">
+<head>
+  <title>Digtet om Tivoli</title>
+  <subtitle>
+    <line>af</line>
+    <line>Lo-gah-nam.<footnote>Lo-gah-nam var Siaou-tse (siu ts’ai), Landsbylærer og cand. phil., gift med Sangerinden A-yoh. En lille Pige »Hsüt-fei (Sophie) = »den, der kommer flyvende med Sneen«, fødtes af dette Ægteskab i November 1902 under Opholdet i København.</footnote></line>
+  </subtitle>
+  <firstline>Det er dejligt at færdes i Tivoli, midt i den bambusindhegnede Troldskov</firstline>
+  <source pages="45-46" facsimile-pages="53-54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry lang="zh">
+<nonum>羅潤南詩</nonum>
+芝籬幻境一園中
+環樓電火映相紅
+林間酒市香飄味
+木景花開鶴夢濃
+木馬旋車音響切
+遊魚光罩玉玲瓏
+如今逸趣人爭玩
+卻勝中華上苑宮
+</poetry>
+<prose>
+    Det er dejligt at færdes i Tivoli, midt i den bambusindhegnede Troldskov.
+
+    Det i Pagodestil byggede Tetaarn blænder ved sin illuminerede Pragt, de røde Lamper lyser imellem Løvet.
+
+    Under Træerne bølger Folket frem og tilbage eller sætter sig og køber den duftende og liflige Vin.
+
+    Det lysende Vand løfter sig som en Blomst, der folder sig ud, Tranen staar melankolsk og drømmer.
+
+    Vogne fare op og ned under Jadeklokkernes Spil, Heste af Træ drejer sig til klingende Musik.
+
+<pb n="46" facs="053.jpg"/>    Smaa blinkende Fisk svømme i oplyste Kar, naar de bevæge Finnerne, høres en knitrende Lyd, som var det Smykker, der raslede.
+
+    Glade og utvungne færdes Folk imellem hverandre, unge Mænd og unge Kvinder tilkaste hinanden forelskede Blikke.
+
+    Denne Have er endnu skønnere end de kejserlige Haver i Peking.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
 </workbody>
 </kalliopework>
