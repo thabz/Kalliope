@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lester" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Max</firstname>
+    <lastname>Lester</lastname>
+    <pseudonym>Eugen Frank</pseudonym>
+    <pseudonym>Xam</pseudonym>
+  </name>
+  <!-- Identitet, pseudonymer og livsdatoer: https://www.litteraturpriser.dk/aut/LMaxLester.htm; kontrolleret 2026-11-17. -->
+  <period>
+    <born>
+      <date>1866-01-27</date>
+    </born>
+    <dead>
+      <date>1956-07-04</date>
+    </dead>
+  </period>
+  <literary-periods>dk-tidlig-modernisme</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>LMaxLester</danskforfatterleksikon-dk>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-17">
+    <checked-source id="salmonsen4">Opslaget Lester i Den nye Salmonsen, s. 2719–2721 (https://runeberg.org/salmonsen/4/1023.html), gælder Sean Lester, ikke Max Lester.</checked-source>
+    <note>Navnesøgninger efter Max Lester, Lester-Levig og Eugen Frank gav ingen brugbar biografi i de tilladte leksika. Direkte opslag i DBL 1 og Salmonsen 2 samt supplementet kunne ikke fuldføres på grund af forbindelsestimeout hos Runeberg; DBL 2 er heller ikke verificeret. Status dokumenterer den afgrænsede søgning, ikke udtømmende fravær. Andre biografikilder er ikke indsat.</note>
+  </biography-status>
+</person>
