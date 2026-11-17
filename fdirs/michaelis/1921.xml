@@ -3254,6 +3254,14 @@ ved Digtning, Minder og Sprog.
   <title>Romersk Foraar</title>
   <firstline>De hvide Azáleer vandre i Ring</firstline>
   <source pages="148-158"/>
+  <places>
+    <place ref="capitoline-hill" relation="setting"/>
+    <place ref="roman-forum" relation="mentioned"/>
+    <place ref="palatine-hill" relation="setting"/>
+    <place ref="via-sacra" relation="setting"/>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="villa-borghese-gardens" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

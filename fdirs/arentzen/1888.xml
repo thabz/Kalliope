@@ -3125,6 +3125,9 @@ med Lys og Lykke og Fred.
   <firstline>Hvad skal jeg sige? Mine Ord</firstline>
   <source pages="108-110"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="pincian-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3197,6 +3200,12 @@ til mine danske Venner.
   <title>I det gamle Roma</title>
   <firstline>Du, som delte tro min Vandring</firstline>
   <source pages="111-113"/>
+  <places>
+    <place ref="arch-of-titus" relation="mentioned"/>
+    <place ref="colosseum" relation="mentioned"/>
+    <place ref="palatine-hill" relation="mentioned"/>
+    <place ref="roman-forum" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
