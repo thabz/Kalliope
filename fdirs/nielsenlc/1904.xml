@@ -54,6 +54,9 @@ Til
   <title>Aften</title>
   <firstline>Solen sover derude nu</firstline>
   <source pages="11-12"/>
+  <places>
+    <place ref="italy" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -106,6 +109,15 @@ Saa sover vi godt derefter!
   <title><num>I.</num>Rom</title>
   <firstline>Jeg løfter dig, min lille Dreng</firstline>
   <source pages="15-17"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="berlin" relation="setting"/>
+    <place ref="brenner-pass" relation="setting"/>
+    <place ref="verona" relation="setting"/>
+    <place ref="pistoia" relation="setting"/>
+    <place ref="florence" relation="setting"/>
+    <place ref="st-peters-basilica" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -194,6 +206,17 @@ Ak Rom! Ak! Rom!
   <firstline>Far! Hvem er den Mand paa din Væg</firstline>
   <source pages="21-26"/>
   <keywords>michelangelo,dante,boccaccio</keywords>
+  <places>
+    <place ref="florence" relation="subject" primary="true"/>
+    <place ref="arno" relation="setting"/>
+    <place ref="fiesole" relation="setting"/>
+    <place ref="tower-of-arnolfo" relation="mentioned"/>
+    <place ref="santa-croce-florence" relation="mentioned"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="giottos-campanile" relation="mentioned"/>
+    <place ref="san-marco-florence" relation="mentioned"/>
+    <place ref="san-lorenzo-florence" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -358,6 +381,18 @@ mens St. Lorenzo’s Klokker lød:
   <title><num>III.</num>Rom</title>
   <firstline>Nu lukker Dagen langsomt Øjelaagene</firstline>
   <source pages="29-31"/>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="alps" relation="mentioned"/>
+    <place ref="italy" relation="subject"/>
+    <place ref="via-aurora-rome" relation="setting"/>
+    <place ref="villa-borghese-gardens" relation="mentioned"/>
+    <place ref="pincian-hill" relation="setting"/>
+    <place ref="piazza-del-popolo" relation="mentioned"/>
+    <place ref="tiber" relation="setting"/>
+    <place ref="st-peters-basilica" relation="setting"/>
+    <place ref="capitoline-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -445,6 +480,12 @@ vil aldrig kunne glemme!
   <title><num>IV.</num>Fiesole</title>
   <firstline>Verden er ond. Lad os rejse, min Dreng</firstline>
   <source pages="35-37"/>
+  <places>
+    <place ref="fiesole" relation="subject" primary="true"/>
+    <place ref="italy" relation="setting"/>
+    <place ref="gotthard-pass" relation="setting"/>
+    <place ref="florence" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -513,6 +554,11 @@ fra sidst vi lytted derpaa!
   <title><num>V.</num>Neapel</title>
   <firstline>Der er en lille Stund igen</firstline>
   <source pages="41-44"/>
+  <places>
+    <place ref="naples" relation="subject" primary="true"/>
+    <place ref="vesuvius" relation="mentioned"/>
+    <place ref="gulf-of-naples" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -604,6 +650,11 @@ at Moder paa os skænder!
   <title><num>VI.</num>Genua</title>
   <firstline>Hvor er det længe, siden</firstline>
   <source pages="47-51"/>
+  <places>
+    <place ref="genoa" relation="subject" primary="true"/>
+    <place ref="america" relation="mentioned"/>
+    <place ref="mediterranean-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -734,7 +785,15 @@ Maaske! Maaske!
   <title><num>VII.</num>Rom</title>
   <firstline>Nu rider Solen til Vesterland</firstline>
   <source pages="55-60"/>
-  <keywords>michelangelo,goethe</keywords>
+  <keywords>michelangelo,goethe,thorvaldsen</keywords>
+  <places>
+    <place ref="rome" relation="subject" primary="true"/>
+    <place ref="palatine-hill" relation="setting"/>
+    <place ref="colosseum" relation="setting"/>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="roman-forum" relation="setting"/>
+    <place ref="via-sacra" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -910,6 +969,16 @@ Forstaa, min Dreng, lær at forstaa!
   <title><num>VIII.</num>Venedig</title>
   <firstline>Jeg ved det; jeg har lovet dig, vi skulde til Venedig</firstline>
   <source pages="63-68"/>
+  <places>
+    <place ref="venice" relation="subject" primary="true"/>
+    <place ref="brenner-pass" relation="mentioned"/>
+    <place ref="gotthard-pass" relation="setting"/>
+    <place ref="gotthard-rail-tunnel" relation="setting"/>
+    <place ref="lombardy" relation="setting"/>
+    <place ref="st-marks-campanile" relation="mentioned"/>
+    <place ref="st-marks-square" relation="setting"/>
+    <place ref="bridge-of-sighs" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
