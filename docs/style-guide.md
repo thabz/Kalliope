@@ -8,6 +8,9 @@ i specialdokumenterne nedenfor.
 
 Læs den relevante specialdokumentation før ændringer på området:
 
+- `docs/thumbnail-cache.md` ved ændringer i thumbnail-generering, billedcache
+  eller målinger af billedtrinnet
+
 - `docs/kalliope-icons-design.md` ved ændringer i dagsikoner eller
   portrætprioriteringer for **I dag**
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
