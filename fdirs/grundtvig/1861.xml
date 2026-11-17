@@ -39,6 +39,9 @@
   <nofirstline/>
   <source pages="V-XII" facsimile-pages="8-15"/>
   <keywords>oehlenschlaeger,fouque</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -79,6 +82,9 @@ Mai 1861.
   <title>Indgang</title>
   <firstline>Alfader raader</firstline>
   <source  pages="3-8"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -292,6 +298,9 @@ En Terne.
   <title>Sigmund Volsung</title>
   <firstline>Hvad svarer Hunding? vil han giøre Blot</firstline>
   <source  pages="11-37"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1241,6 +1250,7 @@ Jeg griber den med Tro og døer.
   <source pages="41-162"/>
   <places>
     <place ref="mount-sinai" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5274,6 +5284,9 @@ Som aldrig døer og aldrig den fortærer.
   <title>Atle og Gjukungerne</title>
   <firstline>Det ganger nær til Midnat, lader nu</firstline>
   <source pages="165-234"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7587,6 +7600,9 @@ At over alle han sig vil forbarme.
   <title>Gorm hin Gamle</title>
   <firstline>Heel lysteligt det er i Alderdommen</firstline>
   <source in="bd2" pages="3-33"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8644,6 +8660,10 @@ Og jeg maa uden Kæmpemærket døe.
   <title>Harald Blaatand og Palnatoke</title>
   <firstline>Hvad var vel Jomsborg? Kun et Vikingsbøl</firstline>
   <source in="bd2" pages="37-151"/>
+  <places>
+    <place ref="jelling" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12503,6 +12523,9 @@ Tvende Hofgoder.<br/>
   <title>Vagn Aagesen eller Jomsborgs Undergang</title>
   <firstline>Hvad mener du? er dette Skiold nu blankt?</firstline>
   <source in="bd2" pages="155-196"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

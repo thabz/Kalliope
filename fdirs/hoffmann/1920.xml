@@ -26,6 +26,9 @@
   <title>Til Digterne i Norden</title>
   <firstline>I gammel Tid bar Skjaldene, bar Skjaldene i Nord</firstline>
   <source pages="11-12"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1624,6 +1627,9 @@ Skaal Du og Du og Du!
   <title>Norden</title>
   <firstline>Min Sjæl har vendt sig mod Norden</firstline>
   <source pages="94"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

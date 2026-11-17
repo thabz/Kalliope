@@ -4914,6 +4914,7 @@ Himlen med sin Varetægt!
   <source pages="126-136"/>
   <places>
     <place ref="himalayas" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -8830,6 +8831,9 @@ Naar du er der - og Skialden ikke meer.
   <firstline>Naar Skoven grøn i festligt Løv sig klæder</firstline>
   <source pages="230-231"/>
   <keywords>ewald</keywords>
+  <places>
+    <place ref="regensen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9365,6 +9369,7 @@ Og ønske med min Reise mig til Lykke.
   <source pages="244-250"/>
   <places>
     <place ref="oslo" relation="subject" primary="true"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

@@ -2655,6 +2655,9 @@ Farvel min Himmelven! mit Helvede begynder.
   </subtitle>
   <firstline>Jeg lover hermed en Billet</firstline>
   <source pages="175-178"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3052,6 +3055,7 @@ Og kysser Deres Frues skiønne Haand.
   <source pages="202-222"/>
   <places>
     <place ref="paris" relation="subject" primary="true"/>
+    <place ref="regensen" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
