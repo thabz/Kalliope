@@ -650,6 +650,9 @@ Elisabeth! dit Navn mig følge.
   <title>Nøddebo</title>
   <firstline>Kraftigt svungne Bakkedrag</firstline>
   <source pages="41-44"/>
+  <places>
+    <place ref="lake-esrum" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -759,6 +762,9 @@ Som fjern Musik, der klinger over Vandet.
   <title>Ved Esromsø</title>
   <firstline>Der glider blege Skygger over Vandet</firstline>
   <source pages="46-47"/>
+  <places>
+    <place ref="lake-esrum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
