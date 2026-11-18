@@ -1,14 +1,9 @@
 import { resizeImage } from './resize-image.js';
+import { buildThumbnails } from './thumbnails.js';
 import fs from 'fs';
-import { createHash } from 'crypto';
 import { DOMParser } from '@xmldom/xmldom';
 import * as bible from './bible-abbr.js';
-import path from 'path';
-import plimit from 'p-limit';
 import sharp from 'sharp';
-import * as CommonData from '../../common/commondata.js';
-import * as ImagePaths from '../../common/imagepaths.js';
-import { createProgressReporter } from '../build-static/progress.js';
 
 const envInt = (name, fallback) => {
   const value = parseInt(process.env[name], 10);
@@ -375,129 +370,6 @@ const htmlToXml = (html, collected, isPoetry, context) => {
   });
 
   return validateContentHtmlFragments(lines, context);
-};
-
-
-const thumbnailConcurrency = Math.max(
-  1,
-  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
-);
-const limit = plimit(thumbnailConcurrency);
-
-const defaultThumbnailOutputPath = (fullFilename, width, ext) => {
-  return `public${ImagePaths.thumbnailSrc(
-    fullFilename.replace(/^public/, ''),
-    width,
-    ext
-  )}`;
-};
-
-const buildThumbnails = async (
-  topFolder,
-  isFileModifiedMethod,
-  options = {}
-) => {
-  const tasks = [];
-  const sourceFiles = [];
-  const progress = createProgressReporter(
-    `Genererede thumbnails i ${topFolder}`,
-    100
-  );
-  const thumbnailOutputPath =
-    options.thumbnailOutputPath || defaultThumbnailOutputPath;
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    if (!fs.existsSync(dirname)) {
-      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
-      return;
-    }
-    if (dirname.match(/\/social$/)) {
-      return;
-    }
-    fs.readdirSync(dirname).forEach(filename => {
-      if (filename === 't') {
-        return;
-      }
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        sourceFiles.push({ fullFilename, mtimeMs: stats.mtimeMs });
-      }
-    });
-  };
-
-  handleDirRecursive(topFolder);
-  sourceFiles.sort((left, right) => {
-    const mtimeDifference = right.mtimeMs - left.mtimeMs;
-    return mtimeDifference !== 0
-      ? mtimeDifference
-      : left.fullFilename.localeCompare(right.fullFilename);
-  });
-
-  // Content receipts survive interruption independently of the global file cache.
-  // Hash only image generation: unrelated XML helper edits must not invalidate images.
-  const digest = data => createHash('sha256').update(data).digest('hex');
-  const generator = digest(
-    fs.readFileSync(new URL('./resize-image.js', import.meta.url)) +
-      JSON.stringify(sharp.versions)
-  );
-  safeMkdir('caches/thumbnails');
-  sourceFiles.forEach(({ fullFilename }) => {
-    let source = null;
-    CommonData.availableImageFormats.forEach(ext => {
-      CommonData.availableImageWidths.forEach(width => {
-        const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-        const receiptPath = `caches/thumbnails/${digest(path.resolve(outputfile))}.json`;
-        tasks.push(limit(async () => {
-          // Read each source only when its first queued output starts, so a cold
-          // build can encode immediately instead of hashing the entire collection.
-          if (source === null) {
-            source = digest(fs.readFileSync(fullFilename));
-          }
-          const key = digest(JSON.stringify({ source, generator, width, ext }));
-          let receipt = null;
-          try {
-            receipt = JSON.parse(fs.readFileSync(receiptPath, 'utf8'));
-          } catch (error) {
-            if (error.code !== 'ENOENT' && error instanceof SyntaxError === false) {
-              throw error;
-            }
-          }
-          if (receipt?.key === key && fs.existsSync(outputfile) === true &&
-              receipt.output === digest(fs.readFileSync(outputfile))) {
-            return;
-          }
-          safeMkdir(path.dirname(outputfile));
-          // Keep the extension for Sharp's format selection. Rename only complete
-          // outputs; a receipt is committed only after the output is in place.
-          const temporary = `${outputfile}.tmp-${process.pid}.${ext}`;
-          const temporaryReceipt = `${receiptPath}.tmp-${process.pid}`;
-          try {
-            await resizeImage(fullFilename, temporary, width);
-            const output = digest(fs.readFileSync(temporary));
-            fs.renameSync(temporary, outputfile);
-            fs.writeFileSync(temporaryReceipt, JSON.stringify({ key, output }));
-            fs.renameSync(temporaryReceipt, receiptPath);
-          } finally {
-            fs.rmSync(temporary, { force: true });
-            fs.rmSync(temporaryReceipt, { force: true });
-          }
-          progress.increment();
-        }));
-      });
-    });
-  });
-
-  await Promise.all(tasks);
-  progress.finish();
 };
 
 export {

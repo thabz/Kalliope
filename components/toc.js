@@ -16,10 +16,12 @@ const TOC = ({ toc, lang, indent }) => {
           const url = Links.textURL(lang, id);
           shownTitle = <Link href={url}>{renderedTitle}</Link>;
         }
-        const className = `level-${item.level == null ? 1 : item.level}`;
+        const className = `section-heading level-${item.level ?? 1}`;
         return (
           <tr key={i}>
-            <td className="num">{prefix}</td>
+            <td className={id == null ? 'num unlinked' : 'num'}>
+              {prefix != null && <div className={className}>{prefix}</div>}
+            </td>
             <td>
               <h3 className={className}>{shownTitle}</h3>
               {renderItems(
@@ -81,20 +83,20 @@ const TOC = ({ toc, lang, indent }) => {
           :global(table.toc.outer) {
             margin-left: 0;
           }
-          :global(.toc) :global(h3.level-1) {
+          :global(.toc) :global(.section-heading.level-1) {
             font-weight: 300;
             font-size: 22px;
             padding: 0;
             margin: 0;
             margin-top: 10px;
           }
-          :global(.toc) :global(h3.level-2) {
+          :global(.toc) :global(.section-heading.level-2) {
             font-weight: 300;
             font-size: 20px;
             padding: 0;
             margin: 0;
           }
-          :global(.toc) :global(h3.level-3) {
+          :global(.toc) :global(.section-heading.level-3) {
             font-weight: normal;
             font-size: 18px;
             padding: 0;
@@ -106,6 +108,9 @@ const TOC = ({ toc, lang, indent }) => {
             white-space: nowrap;
             padding-right: 5px;
             vertical-align: top;
+          }
+          :global(.toc) :global(td.num.unlinked) {
+            color: inherit;
           }
           :global(.toc) :global(td) {
             line-height: 1.7;

@@ -5905,6 +5905,10 @@ at synge profetisk med jublende Tro
   <title>Helligkilden</title>
   <firstline>Gjennem Hedelyng og Sand</firstline>
   <source pages="185-187"/>
+  <places>
+    <place ref="helene-spring" relation="subject" primary="true"/>
+    <place ref="tisvilde" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8579,6 +8583,9 @@ og sér den skjulte Verdenspendel svinge.
   <firstline>Vil ingen nævne et vækkende Ord!</firstline>
   <year>1863</year>
   <source pages="267-271"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8962,6 +8969,9 @@ som denne maatte fyldes!“
   <title>Rejsetummel</title>
   <firstline>Jeg har rejst! — Jeg har været i fremmede Byer!</firstline>
   <source pages="281-285"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

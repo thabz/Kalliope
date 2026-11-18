@@ -112,6 +112,14 @@
     <parent ref="greece"/>
     <note>Den antikke region, også brugt som litterært hyrdelandskab.</note>
   </place>
+  <place id="arch-of-titus">
+    <name>Titusbuen</name>
+    <canonical-name>Arch of Titus</canonical-name>
+    <wikidata>Q723887</wikidata>
+    <type>triumphal arch</type>
+    <alias>Arco di Tito</alias>
+    <parent ref="rome"/>
+  </place>
   <place id="arco-felice-arch">
     <name>Arco Felice</name>
     <wikidata>Q13178344</wikidata>
@@ -128,6 +136,12 @@
     <name>Ariccia</name>
     <wikidata>Q241744</wikidata>
     <type>town</type>
+  </place>
+  <place id="arno">
+    <name>Arno</name>
+    <wikidata>Q115457</wikidata>
+    <type>river</type>
+    <parent ref="italy"/>
   </place>
   <place id="arqua-petrarca">
     <name>Arquà Petrarca</name>
@@ -320,12 +334,28 @@
     <type>street</type>
     <parent ref="copenhagen"/>
   </place>
+  <place id="brenner-pass">
+    <name>Brennerpasset</name>
+    <canonical-name>Brenner Pass</canonical-name>
+    <wikidata>Q212946</wikidata>
+    <type>mountain pass</type>
+    <alias>Brenner</alias>
+    <alias>Passo del Brennero</alias>
+  </place>
   <place id="brenta-river">
     <name>Brenta</name>
     <wikidata>Q214551</wikidata>
     <type>river</type>
     <alias>Fiume Brenta</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="bridge-of-sighs">
+    <name>Sukkenes Bro</name>
+    <canonical-name>Bridge of Sighs</canonical-name>
+    <wikidata>Q52517</wikidata>
+    <type>bridge</type>
+    <alias>Ponte dei Sospiri</alias>
+    <parent ref="venice"/>
   </place>
   <place id="burg-adolfseck">
     <name>Burg Adolfseck</name>
@@ -364,6 +394,8 @@
     <canonical-name>Capitoline Hill</canonical-name>
     <wikidata>Q34925</wikidata>
     <type>hill</type>
+    <alias>Capitol</alias>
+    <alias>Campidoglio</alias>
     <alias>Kapitolet</alias>
     <alias>Capitolium</alias>
     <parent ref="rome"/>
@@ -438,6 +470,13 @@
     <parent ref="odense"/>
     <note>Christiansdal er et historisk navn knyttet til Dalum.</note>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q861363 -->
+  <place id="christianshavn">
+    <name>Christianshavn</name>
+    <wikidata>Q861363</wikidata>
+    <type>neighborhood</type>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="church-of-our-lady-copenhagen">
     <name>Vor Frue Kirke</name>
     <canonical-name>Church of Our Lady</canonical-name>
@@ -469,6 +508,14 @@
     <alias>Köln</alias>
     <alias>Cologne</alias>
     <parent ref="germany"/>
+  </place>
+  <place id="colosseum">
+    <name>Colosseum</name>
+    <wikidata>Q10285</wikidata>
+    <type>amphitheatre</type>
+    <alias>Collossæum</alias>
+    <alias>Colosseo</alias>
+    <parent ref="rome"/>
   </place>
   <place id="copenhagen">
     <name>København</name>
@@ -650,6 +697,12 @@
     <type>town</type>
     <parent ref="zealand"/>
   </place>
+  <place id="fiesole">
+    <name>Fiesole</name>
+    <wikidata>Q82670</wikidata>
+    <type>city</type>
+    <parent ref="italy"/>
+  </place>
   <place id="florence">
     <name>Firenze</name>
     <canonical-name>Florence</canonical-name>
@@ -667,6 +720,15 @@
     <type>baptistery</type>
     <alias>Dåbskapellet i Firenze</alias>
     <alias>Baptisteriet</alias>
+    <parent ref="florence"/>
+  </place>
+  <place id="florence-cathedral">
+    <name>Domkirken i Firenze</name>
+    <canonical-name>Florence Cathedral</canonical-name>
+    <wikidata>Q191739</wikidata>
+    <type>cathedral</type>
+    <alias>Santa Maria del Fiore</alias>
+    <alias>Duomo di Firenze</alias>
     <parent ref="florence"/>
   </place>
   <place id="fondi">
@@ -760,6 +822,14 @@
     <type>island</type>
     <alias>Fyen</alias>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1154899 -->
+  <place id="fyris">
+    <name>Fyrisån</name>
+    <wikidata>Q1154899</wikidata>
+    <type>river</type>
+    <alias>Fyris</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="galdhopiggen">
     <name>Galdhøpiggen</name>
     <wikidata>Q203942</wikidata>
@@ -797,6 +867,14 @@
     <alias>Geneve</alias>
     <parent ref="switzerland"/>
   </place>
+  <place id="genoa">
+    <name>Genua</name>
+    <canonical-name>Genoa</canonical-name>
+    <wikidata>Q1449</wikidata>
+    <type>city</type>
+    <alias>Genova</alias>
+    <parent ref="italy"/>
+  </place>
   <place id="genzano-di-roma">
     <name>Genzano di Roma</name>
     <wikidata>Q242683</wikidata>
@@ -831,6 +909,14 @@
     <wikidata>Q202451</wikidata>
     <type>commune</type>
     <alias>Gens</alias>
+  </place>
+  <place id="giottos-campanile">
+    <name>Giottos Campanile</name>
+    <canonical-name>Giotto's Campanile</canonical-name>
+    <wikidata>Q1140023</wikidata>
+    <type>bell tower</type>
+    <alias>Campanile di Giotto</alias>
+    <parent ref="florence"/>
   </place>
   <place id="giralda">
     <name>Giralda</name>
@@ -894,6 +980,14 @@
     <type>mountain pass</type>
     <alias>St. Gottard</alias>
     <alias>St. Gotthard</alias>
+  </place>
+  <place id="gotthard-rail-tunnel">
+    <name>Sankt Gotthard-tunnelen</name>
+    <canonical-name>Gotthard Tunnel</canonical-name>
+    <wikidata>Q688618</wikidata>
+    <type>railway tunnel</type>
+    <alias>Gotthardtunnel</alias>
+    <parent ref="switzerland"/>
   </place>
   <place id="grafsnas-castle">
     <name>Gräfsnäs slot</name>
@@ -1005,6 +1099,15 @@
     <alias>Gudenåen</alias>
     <parent ref="jutland"/>
   </place>
+  <place id="gulf-of-naples">
+    <name>Napolibugten</name>
+    <canonical-name>Gulf of Naples</canonical-name>
+    <wikidata>Q201385</wikidata>
+    <type>bay</type>
+    <alias>Neapelbugten</alias>
+    <alias>Golfo di Napoli</alias>
+    <parent ref="mediterranean-sea"/>
+  </place>
   <place id="haga-park">
     <name>Hagaparken</name>
     <canonical-name>Haga Park</canonical-name>
@@ -1092,6 +1195,14 @@
     <alias>Großes Fass</alias>
     <parent ref="heidelberg"/>
   </place>
+  <!-- Kilde: https://trap.lex.dk/Sankt_Helene_Kilde -->
+  <place id="helene-spring">
+    <name>Sankt Helene Kilde</name>
+    <type>spring</type>
+    <alias>St. Helenes Kilde</alias>
+    <alias>Helene Kilde</alias>
+    <parent ref="tisvilde"/>
+  </place>
   <place id="helsingborg">
     <name>Helsingborg</name>
     <wikidata>Q25411</wikidata>
@@ -1130,6 +1241,14 @@
     <alias>Hippokrene-kilden</alias>
     <parent ref="greece"/>
     <note>Musernes kilde på Helikon i græsk mytologi.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q12317772 -->
+  <place id="hojerup-old-church">
+    <name>Højerup Gamle Kirke</name>
+    <wikidata>Q12317772</wikidata>
+    <type>church</type>
+    <alias>Højerup Kirke</alias>
+    <parent ref="stevns-klint"/>
   </place>
   <place id="hokksund">
     <name>Hokksund</name>
@@ -1203,6 +1322,14 @@
     <type>town/comune</type>
     <parent ref="italy"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q835708 -->
+  <place id="jelling">
+    <name>Jelling</name>
+    <wikidata>Q835708</wikidata>
+    <type>town</type>
+    <alias>Jellinge</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="jericho">
     <name>Jeriko</name>
     <type>city</type>
@@ -1226,6 +1353,13 @@
     <type>mountain region</type>
     <parent ref="norway"/>
     <note>Geographic mountain region, not the national-park item.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q104028 -->
+  <place id="judea">
+    <name>Judæa</name>
+    <wikidata>Q104028</wikidata>
+    <type>historical region</type>
+    <alias>Judæ</alias>
   </place>
   <place id="judean-mountains">
     <name>Judæas Bjerge</name>
@@ -1257,6 +1391,14 @@
     <type>forest</type>
     <parent ref="ringsted"/>
     <!-- Kilde: https://kaerehave-skov.dk/ -->
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q26345 -->
+  <place id="kalmar">
+    <name>Kalmar</name>
+    <wikidata>Q26345</wikidata>
+    <type>city</type>
+    <alias>Calmar</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="kalo-castle">
     <name>Kalø Slot</name>
@@ -1533,6 +1675,14 @@
     <wikidata>Q605839</wikidata>
     <type>island</type>
   </place>
+  <place id="lombardy">
+    <name>Lombardiet</name>
+    <canonical-name>Lombardy</canonical-name>
+    <wikidata>Q1210</wikidata>
+    <type>region</type>
+    <alias>Lombardia</alias>
+    <parent ref="italy"/>
+  </place>
   <place id="london">
     <name>London</name>
     <wikidata>Q84</wikidata>
@@ -1599,6 +1749,14 @@
     <type>city</type>
     <alias>Malaga</alias>
     <parent ref="spain"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q184492 -->
+  <place id="malaren">
+    <name>Mälaren</name>
+    <wikidata>Q184492</wikidata>
+    <type>lake</type>
+    <alias>Mälar</alias>
+    <parent ref="sweden"/>
   </place>
   <place id="mannheim">
     <name>Mannheim</name>
@@ -1844,6 +2002,12 @@
     <alias>Norderhovg</alias>
     <parent ref="ringerike"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q52062 -->
+  <place id="nordic-countries">
+    <name>Norden</name>
+    <wikidata>Q52062</wikidata>
+    <type>region</type>
+  </place>
   <place id="north-sea">
     <name>Nordsøen</name>
     <type>sea</type>
@@ -1935,6 +2099,15 @@
     <alias>Pæstum</alias>
     <parent ref="italy"/>
   </place>
+  <place id="palatine-hill">
+    <name>Palatinerhøjen</name>
+    <canonical-name>Palatine Hill</canonical-name>
+    <wikidata>Q200642</wikidata>
+    <type>hill</type>
+    <alias>Palatin</alias>
+    <alias>Palatino</alias>
+    <parent ref="rome"/>
+  </place>
   <place id="paris">
     <name>Paris</name>
     <wikidata>Q90</wikidata>
@@ -1958,6 +2131,20 @@
     <type>city</type>
     <alias>Peruggia</alias>
   </place>
+  <place id="piazza-del-popolo">
+    <name>Piazza del Popolo</name>
+    <wikidata>Q824997</wikidata>
+    <type>square</type>
+    <parent ref="rome"/>
+  </place>
+  <place id="pincian-hill">
+    <name>Pincio</name>
+    <canonical-name>Pincian Hill</canonical-name>
+    <wikidata>Q550215</wikidata>
+    <type>hill</type>
+    <alias>Monte Pincio</alias>
+    <parent ref="rome"/>
+  </place>
   <place id="pindus">
     <name>Pindos</name>
     <canonical-name>Pindus</canonical-name>
@@ -1970,6 +2157,13 @@
     <name>Pisa</name>
     <wikidata>Q13375</wikidata>
     <type>city/comune</type>
+    <parent ref="italy"/>
+  </place>
+  <place id="pistoia">
+    <name>Pistoia</name>
+    <wikidata>Q13376</wikidata>
+    <type>city</type>
+    <alias>Pistoja</alias>
     <parent ref="italy"/>
   </place>
   <place id="ponte-milvio">
@@ -2030,6 +2224,14 @@
   <place id="red-sea">
     <name>Det Røde Hav</name>
     <type>sea</type>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1819210 -->
+  <place id="regensen">
+    <name>Regensen</name>
+    <wikidata>Q1819210</wikidata>
+    <type>student residence</type>
+    <alias>Regentsen</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="reggio-emilia">
     <name>Reggio Emilia</name>
@@ -2103,6 +2305,15 @@
     <type>town/comune</type>
     <alias>Rocca de Papa</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="roman-forum">
+    <name>Forum Romanum</name>
+    <canonical-name>Roman Forum</canonical-name>
+    <wikidata>Q180212</wikidata>
+    <type>forum</type>
+    <alias>Forum</alias>
+    <alias>Foro Romano</alias>
+    <parent ref="rome"/>
   </place>
   <place id="rome">
     <name>Rom</name>
@@ -2248,12 +2459,35 @@
     <type>town</type>
     <parent ref="andalusia"/>
   </place>
+  <place id="san-lorenzo-florence">
+    <name>San Lorenzo i Firenze</name>
+    <canonical-name>Basilica of San Lorenzo, Florence</canonical-name>
+    <wikidata>Q573881</wikidata>
+    <type>basilica</type>
+    <alias>St. Lorenzo</alias>
+    <parent ref="florence"/>
+  </place>
+  <place id="san-marco-florence">
+    <name>San Marco-klosteret i Firenze</name>
+    <canonical-name>Convent San Marco</canonical-name>
+    <wikidata>Q13453381</wikidata>
+    <type>monastery</type>
+    <alias>St. Marco</alias>
+    <parent ref="florence"/>
+  </place>
   <place id="san-pietro-in-montorio">
     <name>San Pietro in Montorio</name>
     <wikidata>Q1258576</wikidata>
     <type>church</type>
     <alias>St. Pietro Montorio</alias>
     <parent ref="rome"/>
+  </place>
+  <place id="santa-croce-florence">
+    <name>Santa Croce i Firenze</name>
+    <canonical-name>Basilica of Santa Croce</canonical-name>
+    <wikidata>Q51177</wikidata>
+    <type>basilica</type>
+    <parent ref="florence"/>
   </place>
   <place id="scania">
     <name>Skåne</name>
@@ -2428,6 +2662,23 @@
     <alias>Sanct Knuds Kirken</alias>
     <parent ref="odense"/>
   </place>
+  <place id="st-marks-campanile">
+    <name>Markuskirkens Campanile</name>
+    <canonical-name>St Mark's Campanile</canonical-name>
+    <wikidata>Q754194</wikidata>
+    <type>bell tower</type>
+    <alias>Campanile di San Marco</alias>
+    <parent ref="venice"/>
+  </place>
+  <place id="st-marks-square">
+    <name>Markuspladsen</name>
+    <canonical-name>Piazza San Marco</canonical-name>
+    <wikidata>Q217527</wikidata>
+    <type>square</type>
+    <alias>Marcuspladsen</alias>
+    <alias>Piazza San Marco</alias>
+    <parent ref="venice"/>
+  </place>
   <place id="st-peters-basilica">
     <name>Peterskirken</name>
     <canonical-name>St. Peter's Basilica</canonical-name>
@@ -2446,6 +2697,14 @@
     <alias>Petersinsel</alias>
     <alias>Île Saint-Pierre</alias>
     <parent ref="lake-biel"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1614152 -->
+  <place id="stevns-klint">
+    <name>Stevns Klint</name>
+    <wikidata>Q1614152</wikidata>
+    <type>cliff</type>
+    <alias>Stevens Klint</alias>
+    <parent ref="zealand"/>
   </place>
   <place id="stjerneborg">
     <name>Stjerneborg</name>
@@ -2572,6 +2831,14 @@
     <name>Tigris</name>
     <type>river</type>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q656733 -->
+  <place id="tisvilde">
+    <name>Tisvilde</name>
+    <wikidata>Q656733</wikidata>
+    <type>town</type>
+    <alias>Tidsvilde</alias>
+    <parent ref="zealand"/>
+  </place>
   <place id="tivoli">
     <name>Tivoli</name>
     <wikidata>Q159605</wikidata>
@@ -2604,6 +2871,14 @@
     <wikidata>Q943873</wikidata>
     <type>tower</type>
     <parent ref="seville"/>
+  </place>
+  <place id="tower-of-arnolfo">
+    <name>Arnolfos Tårn</name>
+    <canonical-name>Torre di Arnolfo</canonical-name>
+    <type>tower</type>
+    <alias>Arnolfos Taarn</alias>
+    <parent ref="florence"/>
+    <!-- Kilde: Musei Civici Fiorentini, https://bigliettimusei.comune.fi.it/31_torre-di-arnolfo/. -->
   </place>
   <place id="trekroner-fort">
     <name>Trekroner Søfort</name>
@@ -2670,6 +2945,15 @@
     <canonical-name>Canton of Uri</canonical-name>
     <wikidata>Q12404</wikidata>
     <type>canton</type>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q177860 -->
+  <place id="valhalla">
+    <name>Valhal</name>
+    <wikidata>Q177860</wikidata>
+    <type>mythical place</type>
+    <alias>Valhalle</alias>
+    <alias>Valhalla</alias>
+    <alias>Walhalla</alias>
   </place>
   <place id="valley-of-jehoshaphat">
     <name>Josafats Dal</name>
@@ -2772,6 +3056,22 @@
     <alias>Vesuvius</alias>
     <parent ref="italy"/>
   </place>
+  <place id="via-aurora-rome">
+    <name>Via Aurora i Rom</name>
+    <canonical-name>Via Aurora</canonical-name>
+    <type>street</type>
+    <alias>Via Aurora</alias>
+    <parent ref="rome"/>
+    <!-- Kilde: Comune di Roma, Dizionario topografico di Roma (1913), https://www.comune.roma.it/web-resources/cms/documents/Dizionario_topografico_di_Roma_1913.pdf. -->
+  </place>
+  <place id="via-sacra">
+    <name>Via Sacra</name>
+    <wikidata>Q655172</wikidata>
+    <type>street</type>
+    <alias>Via sacra</alias>
+    <alias>Sacra Via</alias>
+    <parent ref="rome"/>
+  </place>
   <place id="viborg">
     <name>Viborg</name>
     <wikidata>Q21176</wikidata>
@@ -2798,6 +3098,13 @@
     <type>town</type>
     <alias>Vigersund</alias>
     <parent ref="modum"/>
+  </place>
+  <place id="villa-borghese-gardens">
+    <name>Villa Borghese</name>
+    <canonical-name>Villa Borghese gardens</canonical-name>
+    <wikidata>Q678313</wikidata>
+    <type>park</type>
+    <parent ref="rome"/>
   </place>
   <place id="virgil-tomb">
     <name>Vergils grav</name>

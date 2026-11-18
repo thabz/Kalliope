@@ -64,6 +64,9 @@ Farvet vel, men duftløs Blomsten.
   <title>Jesu Fødsel</title>
   <firstline>Kommen er den store Time</firstline>
   <source pages="1-7"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -269,6 +272,7 @@ Straaler Fromhed som en Perle reen.
   <source pages="8-17"/>
   <places>
     <place ref="jordan-river" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -579,6 +583,7 @@ Der at reise Aanden fra dens Fald.
   <source pages="18-27"/>
   <places>
     <place ref="himalayas" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1051,6 +1056,7 @@ Sig bag dens lette Fied.
   <source pages="34-38"/>
   <places>
     <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1961,6 +1967,7 @@ Knap det Dyb af Synd, hans Hierte nærer!
   <source pages="67-76"/>
   <places>
     <place ref="kidron-valley" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

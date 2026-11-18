@@ -830,6 +830,9 @@ Og før vor Tro vi svigte, vil
   <title>For Upsalenserne</title>
   <firstline>Bag græsklædte Høie der ligger en By</firstline>
   <source pages="36-37"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2110,6 +2113,9 @@ Kun Muldet og Mørkets Magter
   <title>Tidernes Fremgang</title>
   <firstline>En gammel Stamme har i Danmark levet</firstline>
   <source pages="95-101"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2916,6 +2922,9 @@ Nu i mit hele Land.''
   <title>Et Kongesyn</title>
   <firstline>Før Gustav Adolf, Sverigs Konge god</firstline>
   <source pages="130-139"/>
+  <places>
+    <place ref="malaren" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

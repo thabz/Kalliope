@@ -3621,6 +3621,9 @@ Opløser Livets Larm i Harmonie.
   <title>Yduns Opvaagnelse</title>
   <firstline>Jeg vaagned under mit Æbletræ</firstline>
   <source pages="94-97"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4898,6 +4901,9 @@ Du forsmaaer ei vor Forgietmigei.
   </dates>
   <source pages="127-129"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5172,6 +5178,10 @@ I ældste Nordens Helligdom.
   </dates>
   <source pages="134-135"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5475,6 +5485,9 @@ At jeg standser midt i Præknen, som den fulde tydske Præst.<!-- TODO: Henvisni
   </dates>
   <source pages="141-155"/>
   <keywords>oersted,vedel</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6295,6 +6308,7 @@ Med Taarer dig dit Folk forlader;
   <keywords>christian8</keywords>
   <places>
     <place ref="tiber" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -6730,6 +6744,9 @@ Da straffer han ei efter Evne.
   <subtitle>April 1848.</subtitle>
   <firstline>Vil, Bragi! end du ildne mig til Sang?</firstline>
   <source pages="176-178"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8605,6 +8622,9 @@ Hvori du taler, høie Melpomene!
   <title>Græsk og nordisk Mythologie</title>
   <firstline>Du gode Gud, hvor hurtigt svinder Tiden!</firstline>
   <source pages="223-225"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9974,6 +9994,9 @@ Min Bernhard blev min Broder.
     <event>1849-09-09</event>
   </dates>
   <source pages="257-258"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10391,6 +10414,9 @@ Hun lever! hun lever! hun lever!
     <written>1808-06-06</written>
   </dates>
   <source pages="272-273"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

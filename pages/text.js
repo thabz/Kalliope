@@ -607,7 +607,7 @@ const TextPage = (props) => {
           style={needsSeparation === true ? { marginTop: '1.5em' } : undefined}>
           <TextContent
             contentHtml={lines}
-            contentLang={text.content_lang}
+            contentLang={block.content_lang ?? text.content_lang}
             lang={lang}
             options={blockOptions}
             type={type}
