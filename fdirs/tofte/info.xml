@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="tofte" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Betty</firstname>
+    <lastname>Tofte</lastname>
+    <fullname>Betty Kirstine Augusta Tofte</fullname>
+  </name>
+  <!-- Livsdata og fødested: https://danskforfatterleksikon.dk/1850/TBettyTofte.htm -->
+  <period>
+    <born>
+      <date>1876-03-30</date>
+      <place>Stubbekøbing</place>
+    </born>
+    <dead>
+      <date>1956-01-11</date>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q140819830</wikidata>
+    <danskforfatterleksikon-dk>TBettyTofte</danskforfatterleksikon-dk>
+    <runeberg-org>toftebet</runeberg-org>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-18">
+    <checked-source id="dbl2">Dansk Biografisk Leksikon, 2. udgave, bind 24, s. 161–163: den alfabetiske række omkring Tofte indeholder H. M. og Lars Valdemar Tofte, men intet opslag om Betty Tofte. https://www.rosekamp.dk/DBL_All/DBL_24_text.pdf</checked-source>
+    <note>Ingen brugbar biografi fundet i det kontrollerede DBL-bind. DBL 1. udgave afsluttedes før debuten i 1906. Runebergs DBL- og Salmonsen-sider kunne ikke hentes ved denne gennemgang; Salmonsen 2. udgave, supplementet og 4. udgave er derfor ikke verificeret. Dansk Forfatterleksikon dokumenterer identitet og livsdata, men er ikke anvendt som biografitekst.</note>
+  </biography-status>
+</person>
