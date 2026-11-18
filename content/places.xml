@@ -359,6 +359,15 @@
     <wikidata>Q163329</wikidata>
     <type>historical region</type>
   </place>
+  <place id="capitoline-hill">
+    <name>Kapitol</name>
+    <canonical-name>Capitoline Hill</canonical-name>
+    <wikidata>Q34925</wikidata>
+    <type>hill</type>
+    <alias>Kapitolet</alias>
+    <alias>Capitolium</alias>
+    <parent ref="rome"/>
+  </place>
   <place id="capri">
     <name>Capri</name>
     <wikidata>Q173292</wikidata>
@@ -377,6 +386,14 @@
     <type>city</type>
     <parent ref="spain"/>
     <note>Cartagena, Murcia, Spain.</note>
+  </place>
+  <place id="carthage">
+    <name>Kartago</name>
+    <canonical-name>Carthage</canonical-name>
+    <wikidata>Q6343</wikidata>
+    <type>ancient city</type>
+    <alias>Karthago</alias>
+    <alias>Carthago</alias>
   </place>
   <place id="castel-gandolfo">
     <name>Castel Gandolfo</name>
@@ -752,6 +769,16 @@
   <place id="ganges">
     <name>Ganges</name>
     <type>river</type>
+  </place>
+  <place id="garderhoj-fort">
+    <name>Garderhøjfortet</name>
+    <canonical-name>Garderhøj Fort</canonical-name>
+    <wikidata>Q12313518</wikidata>
+    <type>fort</type>
+    <alias>Garderhøjen</alias>
+    <alias>Garderhøj</alias>
+    <parent ref="denmark"/>
+    <!-- Kilde: https://garderhojfort.dk/historien/fortets-historie/ -->
   </place>
   <place id="garigliano-river">
     <name>Garigliano</name>
@@ -1225,6 +1252,12 @@
     <type>peninsula/region</type>
     <parent ref="denmark"/>
   </place>
+  <place id="kaerehave-forest">
+    <name>Kærehave Skov</name>
+    <type>forest</type>
+    <parent ref="ringsted"/>
+    <!-- Kilde: https://kaerehave-skov.dk/ -->
+  </place>
   <place id="kalo-castle">
     <name>Kalø Slot</name>
     <canonical-name>Kalø Castle</canonical-name>
@@ -1245,6 +1278,13 @@
     <wikidata>Q1040</wikidata>
     <type>city</type>
     <alias>Carlsruhe</alias>
+  </place>
+  <place id="kastellet-copenhagen">
+    <name>Kastellet</name>
+    <wikidata>Q221812</wikidata>
+    <type>citadel</type>
+    <alias>Kastelsvolden</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="kattegat">
     <name>Kattegat</name>
@@ -1389,6 +1429,15 @@
     <alias>Bieler-Søe</alias>
     <alias>Lac de Bienne</alias>
     <parent ref="switzerland"/>
+  </place>
+  <place id="lake-esrum">
+    <name>Esrum Sø</name>
+    <canonical-name>Lake Esrum</canonical-name>
+    <wikidata>Q1368515</wikidata>
+    <type>lake</type>
+    <alias>Esromsø</alias>
+    <alias>Esrom Sø</alias>
+    <parent ref="zealand"/>
   </place>
   <place id="lake-lauerz">
     <name>Lauerzersøen</name>
@@ -1654,6 +1703,14 @@
     <wikidata>Q1729630</wikidata>
     <type>mountain</type>
     <alias>Albanerbjerg</alias>
+  </place>
+  <place id="moriah">
+    <name>Moria</name>
+    <canonical-name>Moriah</canonical-name>
+    <type>biblical mountain</type>
+    <alias>Morias</alias>
+    <parent ref="jerusalem"/>
+    <!-- Kilde: https://www.biblegateway.com/passage/?search=2+Chronicles+3%3A1&amp;version=NIV -->
   </place>
   <place id="morocco">
     <name>Marokko</name>
@@ -2548,6 +2605,14 @@
     <type>tower</type>
     <parent ref="seville"/>
   </place>
+  <place id="trekroner-fort">
+    <name>Trekroner Søfort</name>
+    <canonical-name>Trekroner Fort</canonical-name>
+    <wikidata>Q1126084</wikidata>
+    <type>sea fort</type>
+    <alias>Trekroner</alias>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="trieste">
     <name>Trieste</name>
     <wikidata>Q546</wikidata>
@@ -2692,6 +2757,12 @@
     <alias>Venezia</alias>
     <parent ref="italy"/>
   </place>
+  <place id="verona">
+    <name>Verona</name>
+    <wikidata>Q2028</wikidata>
+    <type>city</type>
+    <parent ref="italy"/>
+  </place>
   <place id="vesuvius">
     <name>Vesuv</name>
     <canonical-name>Mount Vesuvius</canonical-name>
@@ -2801,6 +2872,14 @@
     <alias>Siæland</alias>
     <alias>Solund</alias>
     <parent ref="denmark"/>
+  </place>
+  <place id="zion">
+    <name>Zion</name>
+    <type>biblical place</type>
+    <alias>Sion</alias>
+    <parent ref="jerusalem"/>
+    <!-- Kilde: https://www.biblegateway.com/passage/?search=2+Samuel+5%3A7&amp;version=NIV -->
+    <!-- Bibelsk Zion; ingen identifikation med det nutidige Zionsbjerg. -->
   </place>
   <place id="zug">
     <name>Zug</name>

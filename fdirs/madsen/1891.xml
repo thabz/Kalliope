@@ -61,6 +61,9 @@ og alting gaar, som det skulde.
   <subtitle>(Foraaret 1887.)</subtitle>
   <firstline>Der kom atter Ro i Lejren, et Felttog var til Slut</firstline>
   <source pages="3-12"/>
+  <places>
+    <place ref="copenhagen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -243,6 +246,9 @@ over sin egen Skam.
   <title>Fra Esromsø</title>
   <firstline>Snart er den endt, den lyse, varme Dag</firstline>
   <source pages="15-16"/>
+  <places>
+    <place ref="lake-esrum" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -311,6 +317,10 @@ i duftende Rosers Bad.
   <title>Mellem Grave</title>
   <firstline>Over sunkne Mure</firstline>
   <source pages="19-23"/>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -456,6 +466,10 @@ i den lange Vintertid bag Ovndørens Rist.
   <title>Romeo synger til Julie</title>
   <firstline>Der svømmer en Stjærne i Nathimlens dunkelblaa Flod</firstline>
   <source pages="27-31"/>
+  <places>
+    <place ref="verona" relation="setting" primary="true"/>
+    <place ref="mediterranean-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -601,6 +615,10 @@ skal bære mig derover.
   <firstline>Ja, vi elsker dette Landet</firstline>
   <dates><event>1885-06-28</event></dates>
   <source pages="37-39"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="kaerehave-forest" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -712,6 +730,9 @@ som for de sødeste Timer!
   <dates><performed>1886-03-20</performed></dates>
   <source pages="43-45"/>
   <keywords>heibergpa</keywords>
+  <places>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -864,8 +885,13 @@ om eders graanende Dage!
   <title>Henrik Ibsen</title>
   <subtitle>Paa hans tredsinstyveaarige Fødselsdag.</subtitle>
   <firstline>Der stryger fra Synskredsens Søndenbræm</firstline>
+  <!-- Ibsen født 1828-03-20: https://ibsen.uio.no/tidstavle.html -->
+  <dates><event>1888-03-20</event></dates>
   <source pages="52-57"/>
   <keywords>ibsen</keywords>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1146,6 +1172,12 @@ omkap med den kredsende Maage.
   <title>Santa Maria</title>
   <firstline>Og har jeg sløset bort min første Kraft</firstline>
   <source pages="69-70"/>
+  <form>
+    <analysis pattern="sonnet" confidence="1.0"/>
+  </form>
+  <structure>
+    <analysis pattern="4-4-6" confidence="1.0"/>
+  </structure>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1447,6 +1479,11 @@ og i mit Øje kendte jeg en Taare.
   <title>Korsfarere</title>
   <firstline>Der er tusinde Rækker, som vælter sig frem</firstline>
   <source pages="88-93"/>
+  <places>
+    <place ref="jerusalem" relation="mentioned"/>
+    <place ref="gethsemane" relation="mentioned"/>
+    <place ref="golgotha" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1549,6 +1586,10 @@ under Korsets enende Mærke.
   <title>Valgvers</title>
   <firstline>De samles til Valg nu — vel mødt igen —</firstline>
   <source pages="94-97"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="garderhoj-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1946,6 +1987,12 @@ fra Oldefædrenes Dage.
   <title>Kom, lad os hvile —</title>
   <firstline>Kom, lad os hvile paa Bænken, Veninde</firstline>
   <source pages="118-120"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+    <place ref="trekroner-fort" relation="mentioned"/>
+    <place ref="kastellet-copenhagen" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2197,6 +2244,12 @@ Fred og Nytaar og Lykke.
   <title>Ved Babylons Floder</title>
   <firstline>Ved Babylons Floder vi sidder, et Folk, landflygtigt, i Graad</firstline>
   <source pages="133-136"/>
+  <places>
+    <place ref="babylon" relation="setting" primary="true"/>
+    <place ref="jerusalem" relation="subject"/>
+    <place ref="zion" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
