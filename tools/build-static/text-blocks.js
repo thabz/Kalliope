@@ -34,6 +34,7 @@ export const buildTextBlocks = (text, collected, context = {}) => {
       const poetry = getChildByTagName(getChildByTagName(block, 'body'), 'poetry');
       return [{
         type: 'poetry',
+        ...(safeGetAttr(poetry, 'lang') != null ? { content_lang: safeGetAttr(poetry, 'lang') } : {}),
         anchor: id,
         lines: htmlToXml(withPageBreaks(contextPoetry(safeGetInnerXML(poetry), block)),
           collected, true, { ...context, textId: id, blockType: 'poetry' }),
@@ -47,6 +48,7 @@ export const buildTextBlocks = (text, collected, context = {}) => {
     const rawBlock = type === 'castList' ? block.toString() : safeGetInnerXML(block);
     return {
       type,
+      ...(safeGetAttr(block, 'lang') != null ? { content_lang: safeGetAttr(block, 'lang') } : {}),
       lines: htmlToXml(withPageBreaks(rawBlock),
         collected, type === 'poetry', { ...context, blockType: type }),
       options: {

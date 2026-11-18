@@ -62,6 +62,15 @@ describe('text page breadcrumbs', () => {
 
   beforeEach(() => jest.clearAllMocks());
 
+  it('uses the Chinese block language within a Danish text', () => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.content_lang = 'da';
+    data.text.blocks = [{ type: 'poetry', content_lang: 'zh', lines: [['鄭還詩', {}]], options: {} }];
+    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
+    expect(html).toMatch(/class="[^"]*vertical-chinese/);
+    expect(html).toContain('lang="zh"');
+  });
+
   it.each([
     ['da', 'Fra', '3. akt, 3. scene', 'Læs i sammenhæng'],
     ['en', 'From', 'act 3, scene 3', 'Read in context'],

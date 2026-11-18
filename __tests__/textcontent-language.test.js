@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { TextInline } from '../components/textcontent.js';
+import TextContent, { TextInline } from '../components/textcontent.js';
 
 describe('text content language markup', () => {
   it('renders a neutral language span with nested italics', () => {
@@ -47,5 +47,20 @@ describe('text content language markup', () => {
     );
 
     expect(html).toContain('<i lang="fr">Très bien</i>');
+  });
+});
+
+
+describe('Chinese verse layout', () => {
+  it.each([
+    ['poetry', 'zh', true],
+    ['poetry', 'da', false],
+    ['prose', 'zh', false],
+  ])('selects vertical layout for %s in %s', (type, contentLang, vertical) => {
+    const html = renderToStaticMarkup(
+      <TextContent type={type} contentLang={contentLang} contentHtml={[["杜甫詩"], ["小娃撐小艇"]]} />
+    );
+    expect(/class="[^"]*vertical-chinese/.test(html)).toBe(vertical);
+    expect(html.indexOf('杜甫詩')).toBeLessThan(html.indexOf('小娃撐小艇'));
   });
 });
