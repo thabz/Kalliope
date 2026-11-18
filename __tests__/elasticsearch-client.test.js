@@ -20,6 +20,20 @@ describe('Elasticsearch client', () => {
     global.fetch = originalFetch;
   });
 
+  test.each([
+    { timed_out: true },
+    { failures: [{ reason: 'failed shard' }] },
+    { version_conflicts: 1 },
+  ])('rejects an incomplete delete response: %j', async result => {
+    response.json.mockResolvedValueOnce(result);
+    await expect(elasticSearchClient.deletePoet('test-index', 'poet')).rejects.toThrow('Elasticsearch delete');
+  });
+
+  test('rejects partial refresh failures before a checkpoint can be acknowledged', async () => {
+    response.json.mockResolvedValueOnce({ _shards: { failed: 1 } });
+    await expect(elasticSearchClient.refreshIndex('test-index')).rejects.toThrow('Elasticsearch refresh');
+  });
+
   test('creates an accent-insensitive text index', async () => {
     await elasticSearchClient.createIndex('kalliope');
 

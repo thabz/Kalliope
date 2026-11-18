@@ -21,6 +21,9 @@
 <text id="oehlen2001041801" skip-index="true">
 <head>
   <title>Forord</title>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -34,6 +37,9 @@ Aser og Jetter fremstille de to modsatte Naturkræfter: den skabende Skiønne, d
 <head>
   <title>Thor drager paa Eventyr med Loke</title>
   <firstline>Et Sagn, fuld værd at høre</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -585,6 +591,9 @@ Og stirred i svarten Nat.
 <head>
   <title>Kogleriet paa Heden</title>
   <firstline>Som Thor med vaagent Øre</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -1172,6 +1181,9 @@ Mod Utgards skumle Stad.
 <head>
   <title>Thor i Helheim</title>
   <firstline>En Saga fast utrolig</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -1462,6 +1474,9 @@ Den Gud da snarlig stod.
 <head>
   <title>Thor kommer til Utgard</title>
   <firstline>Da laae ret for hans Øie</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -1797,6 +1812,9 @@ Heel lysteligt man loe.
 <head>
   <title>Giøgleriet i Utgard</title>
   <firstline>Da ved de brede Borde</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2492,6 +2510,9 @@ Da Thor paa Sletten stod.
 <head>
   <title>Kogleriet opdages</title>
   <firstline>Da nu den Helt hiin svare</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2827,6 +2848,9 @@ I broget Kløverstraa.
 <head>
   <title>Hiemreisen</title>
   <firstline>Thor monne sig omgiorde</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -3162,6 +3186,9 @@ Der vanked Hug og Stik.
 <head>
   <title>Thor besøger Jetten Hymir</title>
   <firstline>Gud Thor, den Understærke</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -3770,6 +3797,9 @@ Skiuler sig paa fælen Drage.
 <head>
   <title>Loke fatter Elskov til Sif</title>
   <firstline>I Valaskialf sad Loke længe</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4128,6 +4158,9 @@ Bønderdøttre.
   <title>Loke skaffer Aser Klenodier hos Dvergene</title>
   <firstline>Han sad i Hallen og tænkte derpaa</firstline>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4910,6 +4943,9 @@ Og alle Glæder fulgte dem.
 <head>
   <title>Yduns Frelse</title>
   <firstline>Som Vinden blæser hen den lette Sky</firstline>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5242,6 +5278,7 @@ Da han i Lunden fik sin Viv tilbage.
   </source>
   <places>
     <place ref="ganges" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde</quality>
 </head>
@@ -5522,6 +5559,9 @@ Deraf kom din søde Lyst.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5695,6 +5735,9 @@ Nu vil jeg Eder siunge hvad Freiers Øine saae.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5943,6 +5986,9 @@ Fra Valaskialfen tonte; det var en Glædesang.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -6211,6 +6257,9 @@ Hun bringer Elskov Glæde, men Freya Graad og Suk.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -6638,6 +6687,9 @@ Ved Øresundet!
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde</quality>
 </head>
 <body>
@@ -6944,6 +6996,9 @@ Saa Kys, - og saa Uskyldighed!
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -7516,6 +7571,9 @@ Hvor paa Demanter Kilden randt.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -7736,6 +7794,9 @@ Med den livsaligste Drøm skiøn Gerdas bankende Hierte.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -7899,6 +7960,9 @@ Og Fenris fængselbunden.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -8163,6 +8227,9 @@ Da glemte de at de var døde!
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -8859,6 +8926,9 @@ Forkyndte Guders Lyst.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -9392,6 +9462,9 @@ Den høie Jothunbane med Tialf og Loke sad.
     <publisher>Oehlenschläger Selskabet</publisher>
     <year>1976</year>
   </source>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -9691,6 +9764,9 @@ Sig slikked med Grin om den blodige Mund.
     <year>1976</year>
   </source>
   <keywords>terziner</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

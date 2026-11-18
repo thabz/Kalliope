@@ -149,6 +149,9 @@ maa drikke din Skaal i din egen Viin.
   <toctitle><num>5.</num>Stemmer fra Norden</toctitle>
   <firstline>Nordlyset spiller med Tunger af Guld</firstline>
   <source pages="125-126"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1984,6 +1987,9 @@ skal døe under Tydskerens Favnetag.
   </subtitle>
   <firstline>Hvad sjunge de Bølger ved Nordhavets Strand</firstline>
   <source pages="172-173"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

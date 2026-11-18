@@ -1241,6 +1241,9 @@ Hvis Fruen rigtigt jeg kjendte!
   <firstline>Brogaden ude paa Christianshavn</firstline>
   <source pages="70-76"/>
   <keywords>heibergjl,heibergjohanne,gyllembourg,christian9</keywords>
+  <places>
+    <place ref="christianshavn" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2392,6 +2395,9 @@ Saa havde det slet ingen Fare.
   <title>Dus-Kammeraterne</title>
   <firstline>Aaret derefter drog atter jeg bort</firstline>
   <source pages="130-136"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

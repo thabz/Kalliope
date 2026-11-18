@@ -1489,6 +1489,9 @@ Danmark for sin Bror.
   <firstline>Danmark, Land af Hav og Himmel</firstline>
   <!-- Ikke en variant af munk2020011906: Forskellige lejlighedsdigte med fælles indledning. -->
   <source pages="49-50"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
