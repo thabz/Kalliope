@@ -656,7 +656,8 @@ const TextContent = (props) => {
   return (
     <div
       style={style}
-      className={[className, smallClassName, epigraphClassName, centeredProseClassName]
+      className={[className, smallClassName, epigraphClassName, centeredProseClassName,
+        type === 'poetry' && contentLang === 'zh' ? 'vertical-chinese' : null]
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
@@ -758,6 +759,30 @@ const TextContent = (props) => {
           width: calc(100%-7em);
           margin-left: 7em;
           text-indent: -7em;
+        }
+        :global(.block.vertical-chinese) {
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          line-height: 1.1;
+          max-width: 100%;
+          overflow-x: auto;
+        }
+        :global(.vertical-chinese .poem-line) {
+          margin-left: 0;
+          margin-inline-start: 1.5em;
+          white-space: nowrap;
+        }
+        :global(.vertical-chinese .inner-poem-line) {
+          width: auto;
+          margin-left: 0;
+          text-indent: 0;
+        }
+        :global(.vertical-chinese .line-with-num::before) {
+          margin: 0;
+          margin-inline-start: -1.875em;
+          inline-size: 1.875em;
+          block-size: auto;
+          text-orientation: mixed;
         }
         :global(.inner-prose-line) {
           display: inline-block;
