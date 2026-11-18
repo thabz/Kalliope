@@ -20,6 +20,8 @@
     <place ref="helene-spring" relation="mentioned"/>
     <place ref="jelling" relation="mentioned"/>
     <place ref="tisvilde" relation="mentioned"/>
+    <place ref="lake-esrum" relation="mentioned"/>
+    <place ref="kastellet-copenhagen" relation="mentioned"/>
   </places>
   <quality>korrektur1</quality>
 </head>
@@ -685,6 +687,10 @@ maatte lyse for dit Blik!
     <note editorial="true" type="credits">Bidrag fra Thomas Richardt.</note>
   </notes>
   <source>Christian Richardt: <i>Det hellige Land - Dagbog og Digte</i>, 1870.</source>
+  <places>
+    <place ref="zion" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

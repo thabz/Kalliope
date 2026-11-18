@@ -218,6 +218,9 @@ Tie Smerte, stille min Sjæl!
   <firstline>Vinteren hviner Farvel, om Snekken Sneeflokke fyge</firstline>
   <source in="bd1" pages="9-13"/>
   <keywords>klopstock</keywords>
+  <places>
+    <place ref="trekroner-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7274,6 +7277,7 @@ Hvordan Alting saa er - saa gaaer du dog nu i Rom.
   <places>
     <place ref="rome" relation="subject" primary="true"/>
     <place ref="tiber" relation="setting"/>
+    <place ref="capitoline-hill" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7329,6 +7333,7 @@ Men tit jeg gaaer fra Høi til Høi, og seer og veed ei hvad.
   <places>
     <place ref="rome" relation="subject" primary="true"/>
     <place ref="tiber" relation="setting"/>
+    <place ref="capitoline-hill" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

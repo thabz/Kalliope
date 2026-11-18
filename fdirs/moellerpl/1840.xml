@@ -2801,6 +2801,9 @@ Ingen maa længer nu dvæle heroppe. —
   <title>Juli</title>
   <firstline>Hvor Sommeren dufter vidunderlig frisk!</firstline>
   <source pages="92-109"/>
+  <places>
+    <place ref="trekroner-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9901,6 +9904,7 @@ Den netop Munden lukker.
   <keywords>ottave-rime</keywords>
   <places>
     <place ref="tiber" relation="mentioned"/>
+    <place ref="capitoline-hill" relation="setting"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
