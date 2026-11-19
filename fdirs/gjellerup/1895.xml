@@ -4,7 +4,7 @@
   <title>Den ældre Eddas Gudesange</title>
   <year>1895</year>
   <proofreadings>
-    <proofreading model="gpt-6.1-sol" datetime="2026-11-19T22:23:27+00:00"/>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-19T22:29:00+00:00"/>
   </proofreadings>
   <pagebreaks/>
   <errata status="applied" pages="308" facsimile-pages="350"/>
@@ -4571,12 +4571,13 @@ Viserne »Grogalder« og »Fjölsvinnsmál« findes først i Papirhaandskrifter 
 </body>
 </text>
 
-<text id="gjellerup2026111914">
+<text id="gjellerup2026111914" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Fjölsvinnsmál</title>
   <firstline>Hvad er det for Trold, som tøver ved Forgaard</firstline>
   <source pages="233-244" facsimile-pages="275-286"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <!-- Kildekontrol: Side 244, strofe 46.4: »naar En en Anden elsker.« har to forskellige ord med samme bogstaver; kildens ordlyd er bevaret. -->
 </head>
 <body>
 <poetry>
@@ -5611,11 +5612,12 @@ Naar man betænker, at Ragnarokskampen iøvrig er koncentreret til Hovedgudernes
 </body>
 </text>
 
-<text id="gjellerup2026111925">
+<text id="gjellerup2026111925" ignore-tests="repeated-adjacent-word">
 <head>
   <firstline>Disse Anmærkninger bedes supplerede med Indledningerne til de enkelte Kvad</firstline>
   <source pages="313-325" facsimile-pages="355-367"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <!-- Kildekontrol: Side 320: »der ønskes En en Sot paa Halsen,« har to forskellige ord med samme bogstaver; kildens ordlyd er bevaret. -->
 </head>
 <body>
 <prose>
