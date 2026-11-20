@@ -4,6 +4,7 @@
   <title>Poetiske Skrifter</title>
   <year>1805</year>
   <notes>
+    <note>Side 97–100 i anden del mangler i Det Kgl. Biblioteks skanning. <a href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf">↬</a></note>
     <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     <note type="credits" editorial="true"><i>Aladdin</i> er bidraget af Sven Sørensen.</note>
   </notes>
@@ -11,6 +12,25 @@
     <picture type="titlepage" src="1805I-p1.jpg"><transcription>Adam Oehlenschlägers / Poetiske Skrifter. / Første Deel. / Kiøbenhavn, 1805. / Forlagt af Hofboghandler J. H. Schubothe; / trykt hos Andreas Seidelin.</transcription></picture>
     <picture src="1805II-p1.jpg">Titelbladet til anden del af <i>Poetiske Skrifter</i> (1805).<br/>,,Adam Oehlenschlägers / Poetiske Skrifter. / Anden Deel. / Kiøbenhavn, 1805. / Forlagt af Hofboghandler J. H. Schubothe; / trykt hos Andreas Seidelin.''</picture>
   </pictures>
+  <source id="bd1" href="https://www.kb.dk/e-mat/dod/11520805651F-color.pdf" facsimile="1805-1" facsimile-pages-num="515" facsimile-pages-offset="31">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <volume>1</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>J. H. Schubothe</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1805</year>
+  </source>
+  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf" facsimile="1805-2" facsimile-pages-num="445" facsimile-pages-offset="7">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <volume>2</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>J. H. Schubothe</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1805</year>
+  </source>
+  <!-- Anden dels skanning springer fra trykt side 96 (103. PDF-side) til 101 (104. PDF-side). Efter springet er forskydningen 3. -->
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
@@ -25,7 +45,7 @@
 <head>
   <title>Til Danmarks Frederik</title>
   <firstline>Stolt blomstred Danmarks Land fra Arilds Tid</firstline>
-  <source><i>Poetiske Skrifter</i> (1805), I, side iii-xii.</source>
+  <source in="bd1" pages="iii-xii" facsimile-pages="6-15"/>
   <keywords>frederik6</keywords>
   <places>
     <place ref="valhalla" relation="mentioned"/>
@@ -112,7 +132,7 @@ Og ydmygt sig i <i>Dine</i> Laurbær vinde!
 <text id="oehlen2002101101a" skip-index="true">
 <head>
   <title>Fortale</title>
-  <source><i>Poetiske Skrifter</i> (1805), I, side xiii-xxiv.</source>
+  <source in="bd1" pages="xiii-xxiv" facsimile-pages="16-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -136,7 +156,7 @@ Flere Venner, for hvilke Forfatteren havde læst disse Digte, gave ham det Raad,
 <text id="oehlen2002102201" skip-index="true">
 <head>
   <title>Personerne</title>
-  <source pages="2"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="2"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <!-- opstillingen "<i>Henrik, Lars</i>, og <i>to andre</i>, Tienere hos Bilbo." skal forbedres. -->
 </head>
@@ -168,7 +188,7 @@ Chor af Skolebørn og Bønderfolk.
 <text id="oehlen2002102202" skip-index="true">
 <head>
   <title>En Lund</title>
-  <source pages="3-13"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="3-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -372,7 +392,7 @@ Der staaer det! F.R.E.Y.A. Nu lidt Jord i Udhugningen at det kan see brav gammel
 <text id="oehlenschlaeger2026110901" context-indent="4">
 <head>
   <firstline>Den Naadige</firstline>
-  <source pages="12-13"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="12-13"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -415,7 +435,7 @@ Hun smidsker ey
 <text id="oehlen2002102203" skip-index="true">
 <head>
   <title>En Bondestue</title>
-  <source pages="14-19"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="14-19"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -544,7 +564,7 @@ Hun smidsker ey
 <text id="oehlen2002102204" skip-index="true">
 <head>
   <title>Værelse hos Oberstens</title>
-  <source pages="20-45"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="20-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1143,7 +1163,7 @@ Fortræffeligt! Byen jeg skal samle;
 <text id="oehlen2002102401" skip-index="true">
 <head>
   <title>Lunden om Freyas Altar</title>
-  <source pages="46-51"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="46-51"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1270,7 +1290,7 @@ Den tørre Green indfletter sine Arme
 <text id="oehlen2002102402" skip-index="true">
 <head>
   <title>Værelse</title>
-  <source pages="52-58"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="52-58"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1283,7 +1303,7 @@ Den tørre Green indfletter sine Arme
 <text id="oehlenschlaeger2026110902">
 <head>
   <firstline>Ak Elskov! du fryder det unge Bryst</firstline>
-  <source pages="52"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="52"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1448,7 +1468,7 @@ Ak smut kun igiennem de spæde Løv;
   <title>En Ende af Skoven,</title>
   <toctitle>En Ende af Skoven</toctitle>
   <linktitle>En Ende af Skoven</linktitle>
-  <source pages="58-83"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="58-83"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1980,7 +2000,7 @@ Det er forbandet med de blæsende Instrumenter, at man skal bruge Munden til dem
 <text id="oehlen2002102701" skip-index="true">
 <head>
   <title>Lunden om Freyas Altar</title>
-  <source pages="83-93"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="83-93"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2190,7 +2210,7 @@ Om Freyas Altar I alle staae,
 <text id="oehlenschlaeger2026110903" context-indent="12">
 <head>
   <firstline>Haand i Haand</firstline>
-  <source pages="93"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="93"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2231,7 +2251,7 @@ Haand i Haand
 <text id="oehlen2002102801" skip-index="true">
 <head>
   <title>Værelse</title>
-  <source pages="94-102"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="94-102"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2409,7 +2429,7 @@ Jeg haaber, Herr Oberst! at de ikke oftere kalder mig Cujon, hvis jeg flere Gang
 <text id="oehlen2002102802" skip-index="true">
 <head>
   <title>Lunden om Freyas Altar</title>
-  <source pages="102-117"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="102-117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2797,7 +2817,7 @@ Hvor mit Hierte slaaer! Jeg saae et Glimt af ham henne i Skoven. - Jeg tvivler i
 <text id="oehlen2002102803" skip-index="true">
 <head>
   <title>Bondehuset i Skoven</title>
-  <source pages="118-129"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="118-129"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3045,7 +3065,7 @@ Neppe jeg formaaer at tale,
 <text id="oehlen2002102804" skip-index="true">
 <head>
   <title>Lunden om Freyas Altar</title>
-  <source pages="130-140"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="130-140"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3321,7 +3341,7 @@ Neppe jeg formaaer at tale,
 <head>
   <title>Uffe hin Spage</title>
   <firstline>Vermund gammel var og graae</firstline>
-  <source pages="143-164"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="143-164"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3909,7 +3929,7 @@ Og de Danske drog tilbage,
 <head>
   <title>Knud den Store</title>
   <firstline>Kong Knud sad stor og mægtig paa sin Throne</firstline>
-  <source pages="165-169"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="165-169"/>
   <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4030,7 +4050,7 @@ Med disse Ord han af sin Krone spændte,
 <head>
   <title>Borg-Ridderen</title>
   <firstline>Hvor Stormen vældigt tuder</firstline>
-  <source pages="170-175"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="170-175"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4195,7 +4215,7 @@ Fordum, hvor Stormen hviner,
 <head>
   <title>Den gamle Kiæmpe Cometes</title>
   <firstline>Jeg er en gammel Kiæmpe stærk</firstline>
-  <source pages="176-180"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="176-180"/>
   <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4318,7 +4338,7 @@ Da støder jeg med rædsom Gru
 <head>
   <title>Eventyret i den fremmede Stad</title>
   <firstline>Og som jeg nu hen ad Gaden gik</firstline>
-  <source pages="181-185"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="181-185"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4440,7 +4460,7 @@ Jeg raved til Døren med selsomt Mod,
   <notes>
     <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2005060501"/>.</note>
   </notes>
-  <source pages="186-190"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="186-190"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4561,7 +4581,7 @@ Ja i det Fierne er altid nær
   <notes>
     <note editorial="true">I indholdsfortegnelsen følger efter titlen parentesen ,,(ligeledes)'', dvs. som forrige digt også ,,efter Goethe''. Digtet er en gendigtning af <xref type="translation" poem="goethe2005060502"/>.</note>
   </notes>
-  <source pages="191-195"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="191-195"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4702,7 +4722,7 @@ I Røgen luttres Flammers Blik,
   <pictures>
     <picture artwork="kunst/als-johannes-wiedewelt-1766"/>
   </pictures>
-  <source pages="196-199"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="196-199"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4798,7 +4818,7 @@ Taus hun sukker.
 <head>
   <title>Freyas Rok</title>
   <firstline>Naar Natten udruller sit sorte Slør</firstline>
-  <source pages="200-201"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="200-201"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4835,7 +4855,7 @@ Og da nu hver voxen Svend og Møe
   <title>Til Hanna</title>
   <subtitle>I et Exemplar af mine Digte, paa hendes Fødselsdag</subtitle>
   <firstline>November stod saa kold og øde</firstline>
-  <source pages="202-204"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="202-204"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4896,7 +4916,7 @@ Men Blomster maa man Blomster yde;
   <notes>
     <note editorial="true"><a poet="rahbekk">Kamma Rahbek</a> (1775-1829) var søster til Oehlenschlägers senere hustru Christiane.</note>
   </notes>
-  <source pages="205-206"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="205-206"/>
   <keywords>dante,petrarca,cervantes,calderone</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4945,7 +4965,7 @@ En sielden sindrig Smed, Hefaistos Lige,
   <title>Fortrøstning</title>
   <subtitle>Til Henrik Steffens</subtitle>
   <firstline>Naar eensom og allene</firstline>
-  <source pages="207-208"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="207-208"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5005,7 +5025,7 @@ Da giennem Buskens Gitter
   <notes>
     <note editorial="true">Gendigtning fra Petrarcas <xref type="translation" poem="petrarca2018051201"/>.</note>
   </notes>
-  <source pages="209-212"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="209-212"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5091,7 +5111,7 @@ Hvis Skiønhed du, min Sang! besad som Villie,
 <head>
   <title>Violerne</title>
   <firstline>Smaae Violer! o hvor sødt</firstline>
-  <source pages="213-214"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="213-214"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5138,7 +5158,7 @@ Om den lysegule Bund
 <head>
   <title>Vaar-Sang</title>
   <firstline>Nu er da Vaaren kommen</firstline>
-  <source pages="215-217"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="215-217"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5218,7 +5238,7 @@ Og Pan staaer kiæk for Skoven,
     <note editorial="true">I indholdsfortegnelsen følger efter titlen parentesen ,,(efter Novalis)''.</note>
     <note editorial="true">Gendigtning af Novalis' <xref type="translation" poem="novalis2005060501"/>.</note>
   </notes>
-  <source pages="218-220"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="218-220"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5285,7 +5305,7 @@ Ret til hver deilig Mund han skienker
 <head>
   <title>Jule-Vise</title>
   <firstline>Idag nu for næsten to tusinde Aar</firstline>
-  <source pages="221-223"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="221-223"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5360,7 +5380,7 @@ Og saa er vi Hyrder, saa trykker vor Arm
   <notes>
     <note editorial="true"><i>Martin Vahl</i>, botaniker (1749-1804).</note>
   </notes>
-  <source pages="224-226"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="224-226"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5426,7 +5446,7 @@ Ey til Mennesket, men kun til Eder,
 <head>
   <title>Bryllups-Sang af Catullus</title>
   <firstline>Hesper, I Ynglinger! er der, Vel op da! Hesper paa Himlen</firstline>
-  <source pages="227-232"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="227-232"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5523,7 +5543,7 @@ Hymen o Hymenæe! Hymen hil dig fro Hymenæus!
 <head>
   <title>Island</title>
   <firstline>Island! hellige Øe! Ihukommelsens vældigste Tempel!</firstline>
-  <source pages="233-236"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="233-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5576,7 +5596,7 @@ Vend mod Italia det, hør af det undrende Folk:
 <head>
   <title>Evald</title>
   <firstline>Evald! naar dig jeg mindes, da mørknes mit Øye med Taarer</firstline>
-  <source pages="237-240"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="237-240"/>
   <keywords>ewald</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5636,7 +5656,7 @@ Slukked i taagede Tid Fromhedens reneste Ild.
 <head>
   <title>Høsten</title>
   <firstline>Atter jeg skuer dig hist, du dig nærmer, du rynkede Gubbe!</firstline>
-  <source pages="241-246"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="241-246"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5723,7 +5743,7 @@ Elvens fortvivlede Brag! Hornets vildthylende Klang!
 <head>
   <title>Vaaren</title>
   <firstline>Hvilket oplivende Haab trænger ind i det bankende Hierte?</firstline>
-  <source pages="247-250"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="247-250"/>
   <keywords>shakespeare,calderone,petrarca,ariosto</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5791,7 +5811,7 @@ Himlen rolig er hvalt, lære ham Andagt og Troe.
 <head>
   <title>Propertii første Bogs tredie Elegie</title>
   <firstline>Ret som hun smægtende laae, mens paa Havet Theseiske Kiøl gleed</firstline>
-  <source pages="251-254"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="251-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5851,7 +5871,7 @@ Endelig Søvnen mig dækked med sine husvalende Vinger,
   <title>Første Bogs tyvende Elegie</title>
   <toctitle>— Første Bogs tyvende —</toctitle>
   <firstline>For vort bestandige Venskabs Skyld jeg varer dig, Gallus!</firstline>
-  <source pages="255-259"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="255-259"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5917,7 +5937,7 @@ Mind dig, o Gallus! min Sang. Hvis du vil din Elskte bevare,
   <title>Anden Bogs niende Elegie</title>
   <toctitle>— Anden Bogs niende —</toctitle>
   <firstline>Hvo det end var, der først som en Dreng os har malet Gud Amor</firstline>
-  <source pages="260-262"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="260-262"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5955,7 +5975,7 @@ Pigens Ansigt og Haand og de sorte de funklende Øine,
   <title>Anden Bogs tyvende Elegie</title>
   <toctitle>— Anden Bogs tyvende —</toctitle>
   <firstline>Skibet var slagen i Qvag. I en Drøm har jeg seet dig, Veninde!</firstline>
-  <source pages="263-268"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="263-268"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6055,7 +6075,7 @@ Naar kun det klagende Suk, fra den Elskede, naaer til hans Øre,
 <head>
   <title>Indledning</title>
   <firstline>Altsaa skal jeg da nu forlade mit Hiem, og en Reise</firstline>
-  <source pages="271-274"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="271-274"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6112,7 +6132,7 @@ Tag da nu her, uden Spøg, tiltakke med hvad jeg dig byder!
 <head>
   <title>Til Saxo Grammaticus</title>
   <firstline>Gamle Foliobog! nu lukker jeg dit Pergament-Bind</firstline>
-  <source pages="275-276"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="275-276"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6141,7 +6161,7 @@ At sig Oldtid kan blande med Nutid og Nutid med Oldtid,
 <head>
   <title>Roeskilde Landevey</title>
   <firstline>Langsomt, strengt og lige den brede Kongevey fremgaaer</firstline>
-  <source pages="277"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="277"/>
   <places>
     <place ref="roskilde" relation="subject" primary="true"/>
   </places>
@@ -6163,7 +6183,7 @@ Helligt, i Midnattens Stund, først beskygger den lampede Hvælving,
 <head>
   <title>Issefiorden</title>
   <firstline>Du gamle, sølvblaa, stille, klare</firstline>
-  <source pages="278-280"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="278-280"/>
   <places>
     <place ref="isefjord" relation="subject" primary="true"/>
   </places>
@@ -6224,7 +6244,7 @@ Du gamle, sølvblaa, stille, klare
 <head>
   <title>Roeskilde Domkirke</title>
   <firstline>Alt rasler Nøglen i de tunge Døre</firstline>
-  <source pages="281-288"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="281-288"/>
   <keywords>terziner</keywords>
   <places>
     <place ref="roskilde-cathedral" relation="subject" primary="true"/>
@@ -6442,7 +6462,7 @@ Thi I har seet hans Taare kierligt flyde.
 <head>
   <title>Overgang</title>
   <firstline>Ret som den vældige Strøm, der slynger sin kraftige Vand-Arm</firstline>
-  <source pages="289-290"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="289-290"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6465,7 +6485,7 @@ Og den enkelte Blomst, som nu rulles forbi, kun han plukker
 <head>
   <title>Degnen i Kroen</title>
   <firstline>Hurtig sin Hest og sin Hast og Alt blev af Degnen forglemt, da</firstline>
-  <source pages="291"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="291"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6486,7 +6506,7 @@ Havde Chinesernes Thee ey fortrængt dig, vort straalende Miødhorn!
 <head>
   <title>Ringsted</title>
   <firstline>Sildig kom vi med Slud til Ringsted; i dæmrende Kammer</firstline>
-  <source pages="292-293"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="292-293"/>
   <places>
     <place ref="ringsted" relation="subject" primary="true"/>
   </places>
@@ -6512,7 +6532,7 @@ Ak men den grusomme Vært! naar af Kradsningen kied han er bleven
 <head>
   <title>Sigersted</title>
   <firstline>Uafladelig føg for Vinden den taagede Støvregn</firstline>
-  <source pages="294-296"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="294-296"/>
   <places>
     <place ref="sigersted" relation="subject" primary="true"/>
   </places>
@@ -6556,7 +6576,7 @@ Vilde saa gierne seet <i>meer;</i> men Taagen forhindred mit Øye.
 <head>
   <title>Krebs-Huset</title>
   <firstline>Altsaa for Førstegang til et Natteherberg jeg ruller</firstline>
-  <source pages="297"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="297"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6577,7 +6597,7 @@ O lad det samme skee, du evige Fader! naar træt jeg
 <head>
   <title>Morgen-Stunden</title>
   <firstline>Morgenstund Guld har i Mund, saa siger et ældgammelt Ordsprog</firstline>
-  <source pages="298-299"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="298-299"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6608,7 +6628,7 @@ Eos vor Dronning har meldt! Vil I vaagne, Smaablomster og Fugle!
 <head>
   <title>Sorøe</title>
   <firstline>Venligt, Sorøe! dit Aasyn leer, blyfærdig du titter</firstline>
-  <source pages="300-301"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="300-301"/>
   <places>
     <place ref="soro" relation="subject" primary="true"/>
   </places>
@@ -6644,7 +6664,7 @@ Thi hans seneste Lystspil har viist den klygtige Verden:
 <head>
   <title>Anders-Skov</title>
   <firstline>Hist, hvor Høien venlig skraaner</firstline>
-  <source pages="302-306"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="302-306"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6773,7 +6793,7 @@ Hvergang Blomsten Engen spætter,
 <head>
   <title>Slagelse</title>
   <firstline>Hungrige kom vi til Slagelse Bye; hvor nu er et Herberg</firstline>
-  <source pages="307"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="307"/>
   <places>
     <place ref="slagelse" relation="subject" primary="true"/>
   </places>
@@ -6795,7 +6815,7 @@ Viis var Indretningen giort, jeg Vertindens Sindrighed priste.
 <head>
   <title>Corsøer</title>
   <firstline>Her er altsaa den Bye hvor Jens Baggesen fødtes? Hvor liden!</firstline>
-  <source pages="308-309"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="308-309"/>
   <places>
     <place ref="korsor" relation="subject" primary="true"/>
   </places>
@@ -6823,7 +6843,7 @@ Underlig blandede Bye, uagtet din Svaghed og Brusen
 <head>
   <title>Corsøers Fæstning</title>
   <firstline>Bygningen hist, hvor Kanoner er lagt, var fordum et Kloster</firstline>
-  <source pages="310"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="310"/>
   <places>
     <place ref="korsor" relation="subject" primary="true"/>
   </places>
@@ -6843,7 +6863,7 @@ Saadan gaaer Humaniteten frem! I barbariske Tider
 <head>
   <title>Corsøers Kirke</title>
   <firstline>Ind i Kirken jeg treen med Forundring, thi Loftet foroven</firstline>
-  <source pages="311"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="311"/>
   <places>
     <place ref="korsor" relation="subject" primary="true"/>
   </places>
@@ -6870,7 +6890,7 @@ Hvor forunderlig Tiden dog Alt omvælter i Verden.
   <notes>
     <note editorial="true">Michael Gottlieb Birckner (1756-1798), præst og forkæmper for trykkefriheden. Se også Blichers <xref poem="blicher2003091568"/>.</note>
   </notes>
-  <source pages="312"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="312"/>
   <keywords>gravskrift</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -6888,7 +6908,7 @@ Giv da Keiseren det som er Keiserens, Gud det som Guds er,<note editorial="true"
 <head>
   <title>Vinden</title>
   <firstline>Alt kommer an paa Vinden til Søes, tit pludselig slaaer den</firstline>
-  <source pages="313"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="313"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6907,7 +6927,7 @@ Derefter Farten maa rettes; thi Læser! forlad hvis i Digtet
 <head>
   <title>Reisen over Beltet</title>
   <firstline>Med smukke, lange Vers jeg agter at afmale</firstline>
-  <source pages="314-323"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="314-323"/>
   <places>
     <place ref="great-belt" relation="subject" primary="true"/>
   </places>
@@ -7160,7 +7180,7 @@ Til næste christne Land, og dette Land var Fyen.
 <head>
   <title>Reisen fra Nyborg til Svendborg</title>
   <firstline>Som nu i smukke Rime-Vers</firstline>
-  <source pages="324-328"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="324-328"/>
   <places>
     <place ref="nyborg" relation="setting" primary="true"/>
     <place ref="svendborg" relation="setting"/>
@@ -7287,7 +7307,7 @@ Som nu i smukke Rime-Vers,
 <head>
   <title>Svendborg Sund</title>
   <firstline>Saa venlig er Luften, mildt Skyerne staae</firstline>
-  <source pages="329-330"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="329-330"/>
   <places>
     <place ref="svendborg" relation="subject" primary="true"/>
   </places>
@@ -7347,7 +7367,7 @@ Hurah! der er Land, nu er Faren forbi.
 <head>
   <title>Thorsing</title>
   <firstline>Venligen vinkte paa grønnen Strand de knudrede Bøge</firstline>
-  <source pages="331-335"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="331-335"/>
   <places>
     <place ref="taasinge" relation="subject" primary="true"/>
   </places>
@@ -7413,7 +7433,7 @@ Hang den saa rundt om Heltens Hals; og det blomstrende Thorsing
 <head>
   <title>Overfarten fra Vemmenæs til Rudkiøbing</title>
   <firstline>Aldrig krysted mig Søen saa fast i sin svulmende Favn</firstline>
-  <source pages="336-338"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="336-338"/>
   <places>
     <place ref="taasinge" relation="setting" primary="true"/>
     <place ref="rudkobing" relation="setting"/>
@@ -7454,7 +7474,7 @@ Slukøret skyndte jeg mig i Læe: men hvad Guden mig sagde,
 <head>
   <title>Apotheket</title>
   <firstline>Nylig i Rusk og Slud, paa Dybet, af gyngende Bræt slængt</firstline>
-  <source pages="339-343"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="339-343"/>
   <places>
     <place ref="rudkobing" relation="setting" primary="true"/>
   </places>
@@ -7526,7 +7546,7 @@ Ved hans godlidende Skiemt jeg min Træthed og Reise forglemte,
 <head>
   <title>Omskiftning</title>
   <firstline>Ikke længer Hiulet ruller</firstline>
-  <source pages="344-346"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="344-346"/>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -7588,7 +7608,7 @@ I den gamle Bøgeskov,
 <head>
   <title>Faareveile</title>
   <firstline>Hvor Bøgeskoven slipper</firstline>
-  <source pages="347-354"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="347-354"/>
   <keywords>novalis</keywords>
   <places>
     <place ref="faarevejle-langeland" relation="subject" primary="true"/>
@@ -7796,7 +7816,7 @@ Farvel, du stille Have!
 <head>
   <title>Faareveile Skov</title>
   <firstline>Tykke, veldædige Bøge! Mosdækkede Stene!</firstline>
-  <source pages="355-357"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="355-357"/>
   <places>
     <place ref="faarevejle-langeland" relation="setting" primary="true"/>
   </places>
@@ -7856,7 +7876,7 @@ Høit blandt de evige Lys, paa den evige Himmel,
 <head>
   <title>Gibs-Billedet</title>
   <firstline>Men hvo er da den Mand, som staaer</firstline>
-  <source pages="358-360"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="358-360"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7922,7 +7942,7 @@ O staae bestandig hvor du stod,
 <head>
   <title>Morgen-Vandring</title>
   <firstline>Saa huldt til den hellige Bøgeskov</firstline>
-  <source pages="361-365"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="361-365"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8042,7 +8062,7 @@ Saa synge vi Hver vor Skaber glad
 <head>
   <title>Aften-Vandring</title>
   <firstline>Luunt bæved Vinden i de grønne Straae</firstline>
-  <source pages="366-371"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="366-371"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8185,7 +8205,7 @@ Og Døden rækker mig Papaver-Blod.
 <head>
   <title>Freidigt Sommer-Liv</title>
   <firstline>Hvor deilig er Naturen, og hvor rolig!</firstline>
-  <source pages="372-376"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="372-376"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8307,7 +8327,7 @@ Tak for din Gnist af Ild, af Morgenrøde!
 <head>
   <title>Vennernes Ankomst</title>
   <firstline>Søen strammer ud sit Klæde</firstline>
-  <source pages="377-380"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="377-380"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8389,7 +8409,7 @@ Vivat! Ud paa Land de stige.
 <head>
   <title>Sam-Liv</title>
   <firstline>Naar i Naturens muntre Favn</firstline>
-  <source pages="381-385"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="381-385"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8518,7 +8538,7 @@ See! hvor i Aftensolens Guld
 <head>
   <title>Aften-Sang</title>
   <firstline>Hvor sødt i Sommer-Aftenstunden</firstline>
-  <source pages="386-388"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="386-388"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8579,7 +8599,7 @@ O bad mig da i dine Flammer!
 <head>
   <title>Toget til Thorsing</title>
   <firstline>Syng om det hellige Tog, Gudinde!</firstline>
-  <source pages="389-408"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="389-408"/>
   <keywords>heksameter</keywords>
   <places>
     <place ref="taasinge" relation="subject" primary="true"/>
@@ -8859,7 +8879,7 @@ Indtil den rødmende Sol sank ned under dæmrende Skove.
 <head>
   <title>Hiemfarten</title>
   <firstline>Luna! kierlige Møe! Elskovssyg-sødtblegnende Jomfrue, du!</firstline>
-  <source pages="409-411"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="409-411"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8899,7 +8919,7 @@ Nære, dæmrende Strand, giennem det lyskrusede Bølgeskiær.
 <head>
   <title>Katastrophe</title>
   <firstline>Saaledes nu i vexlet Sommerlyst</firstline>
-  <source pages="412-418"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="412-418"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9100,7 +9120,7 @@ Og hermed er min Reise nu forbi.
 <head>
   <title>Christi Fødsel</title>
   <firstline>Hver Vaar, naar Taagerne flygte hen</firstline>
-  <source pages="421-423"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="421-423"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9161,7 +9181,7 @@ Med Virak og duftende Myrrha fyldt.
 <head>
   <title>Maria</title>
   <firstline>Mild og varm</firstline>
-  <source pages="424"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="424"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9188,7 +9208,7 @@ Sødt hun vugger det spæde Noer.
 <head>
   <title>Joseph</title>
   <firstline>Fra forrige Aar</firstline>
-  <source pages="425"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="425"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9211,7 +9231,7 @@ Men en Pleiefader kun.
 <head>
   <title>Christi Manddom</title>
   <firstline>Hvor blevst du hulde Aand?</firstline>
-  <source pages="426-427"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="426-427"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9250,7 +9270,7 @@ Sig blander i din Røst.
 <head>
   <title>Fristelserne i Ørken</title>
   <firstline>Hvi stander du der</firstline>
-  <source pages="428-435"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="428-435"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9409,7 +9429,7 @@ Og tien og tilbeed mig, jeg er den gode Aand.
 <head>
   <title>Johannes den Døber</title>
   <firstline>Lad mine klare, kiølige Draaber</firstline>
-  <source pages="436"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="436"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9436,7 +9456,7 @@ I Skovenes Lye, i den dunkle Grotte,
 <head>
   <title>Christi Daab</title>
   <firstline>Qvægende sødt de klare Perler bæve</firstline>
-  <source pages="437"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="437"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9453,7 +9473,7 @@ Med min husvalede Æther, blaa.
 <head>
   <title>Jesu Lære</title>
   <firstline>Lad mine dunkle, bølgende, grønne Kroner</firstline>
-  <source pages="438-442"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="438-442"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9579,7 +9599,7 @@ Som af Cheruberne synges om Skaberens Throne.
 <head>
   <title>Jesu Mirakler</title>
   <firstline>Hvor Sangersken glædeligt toner</firstline>
-  <source pages="443-446"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="443-446"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9667,7 +9687,7 @@ Og smile til Himmelens Blaa.
   <title>Pharisæeren</title>
   <firstline>Hvad vil du mig, du stolte Sommerstraale?</firstline>
   <!-- Ikke en variant af oehlenschlaeger2019021817: Uddrag eller genbrug i en anden tekst, ikke en selvstændig variant. -->
-  <source pages="447-450"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="447-450"/>
   <keywords>ottave-rime</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -9761,7 +9781,7 @@ En Forsmag paa den Fryd vi hist skal nyde.
 <head>
   <title>Saducæerne</title>
   <firstline>See her os arme Stubber staae</firstline>
-  <source pages="451-452"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="451-452"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9816,7 +9836,7 @@ Det er din hele Eyendom.
 <head>
   <title>Simon Peder</title>
   <firstline>Milde Morgenvinde, linde</firstline>
-  <source pages="453-457"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="453-457"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9920,7 +9940,7 @@ Fisk du ikke meer skal fange, du skal fange Mennesker!
 <head>
   <title>Johannes</title>
   <firstline>Hvad er det hist, som ringer?</firstline>
-  <source pages="458-460"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="458-460"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9995,7 +10015,7 @@ Est du det Lys, det fromme Lys, som flammer.
 <head>
   <title>Den hellige Nadvere</title>
   <firstline>Hvor flygted du, venlige Aand!</firstline>
-  <source pages="461-464"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="461-464"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10104,7 +10124,7 @@ Med Andagt i blinkende Kalk jeg dig kryster.
 <head>
   <title>Judas Iscariothes</title>
   <firstline>Skulde jeg slig Konning ære?</firstline>
-  <source pages="465-470"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="465-470"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10257,7 +10277,7 @@ Blegt og blodigt brustne Legem hænger!
 <head>
   <title>Getsemane og Golgatha</title>
   <firstline>Ey længer Druens Purpur luer</firstline>
-  <source pages="471-475"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="471-475"/>
   <places>
     <place ref="kidron-valley" relation="setting"/>
   </places>
@@ -10380,7 +10400,7 @@ Som Korset hist paa Golgatha.
 <head>
   <title>Disciplenes Jubel-Hymnus</title>
   <firstline>Vi vil ey forsage!</firstline>
-  <source pages="476-480"><i>Poetiske Skrifter</i> (1805), I.</source>
+  <source in="bd1" pages="476-480"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10519,7 +10539,7 @@ Amen! Amen! Amen!
 <text id="oehlen2002101401" skip-index="true">
 <head>
   <title>Vaulundurs Saga</title>
-  <source pages="1-74"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="1-74"/>
   <places>
     <place ref="valhalla" relation="mentioned"/>
   </places>
@@ -10863,7 +10883,7 @@ Da Slagfidur, Eigil og Vaulundur det hørte, bleve de betagne af en stor Glæde;
   <notes>
     <note editorial="true">Saladin] Salladin</note>
   </notes>
-  <source pages="77-78"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="77-78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <front>
@@ -10935,7 +10955,7 @@ Da Slagfidur, Eigil og Vaulundur det hørte, bleve de betagne af en stor Glæde;
 <head>
   <title>Prolog</title>
   <firstline>Du Nordens mørke Møe, Melancholia</firstline>
-  <source pages="79-82"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="79-82"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11019,7 +11039,7 @@ Der sødt har bragt ham til at elske dig!
 <head>
   <title>Ispahan</title>
   <nofirstline/>
-  <source pages="83-88"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="83-88"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11174,7 +11194,7 @@ Jeg arme Mand. O Himmel! jeg faaer Ondt.
 <head>
   <title>Afrika</title>
   <nofirstline/>
-  <source pages="88-92"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="88-92"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11304,7 +11324,7 @@ Her atter i min Haand.
 <head>
   <title>Ispahan</title>
   <nofirstline/>
-  <source pages="93-94"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="93-94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11359,7 +11379,7 @@ Farvel min Mand! Min Mustapha! Farvel.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="94-102"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="94-102" facsimile-pages="101-105"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11623,7 +11643,7 @@ Dog Alt besynderligt i denne Verden.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source pages="102-108"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="102-108" facsimile-pages="105-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11828,7 +11848,7 @@ Farvel saalænge Børn.
 <head>
   <title>En vild Bierg-Egn</title>
   <nofirstline/>
-  <source pages="109-127"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="109-127" facsimile-pages="112-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12358,7 +12378,7 @@ Nu maa jeg gaae; min Fætter venter paa mig.
 <head>
   <title>Det snevre Pas mellem Biergene</title>
   <nofirstline/>
-  <source pages="127-130"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="127-130" facsimile-pages="130-133"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12461,7 +12481,7 @@ Til Støv, du Usle! Stakket var dit Liv.
 <head>
   <title>Trappen af den underjordiske Hule</title>
   <nofirstline/>
-  <source pages="130-134"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="130-134" facsimile-pages="133-137"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12605,7 +12625,7 @@ Hiem, hvor min Moder boer, i Ispahan!
 <head>
   <title>Tidlig Morgen under Solens Opgang</title>
   <nofirstline/>
-  <source pages="135-136"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="135-136" facsimile-pages="138-139"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12658,7 +12678,7 @@ Thi jeg er hungrig; meget, meget hungrig.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source pages="137-144"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="137-144" facsimile-pages="140-147"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12895,7 +12915,7 @@ Nu vil jeg strax gaae ud og sælge Fadet.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="145-147"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="145-147" facsimile-pages="148-150"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12994,7 +13014,7 @@ At snydes af en slig glathaget Tosse.
 <head>
   <title>En fornem Kahn</title>
   <nofirstline/>
-  <source pages="148-153"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="148-153" facsimile-pages="151-156"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13197,7 +13217,7 @@ Og sveder snart sin Elskov ud igien.
 <head>
   <title>En skiøn Plads, noget afsides i Byen</title>
   <nofirstline/>
-  <source pages="154-158"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="154-158" facsimile-pages="157-161"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13337,7 +13357,7 @@ Og skab dig ikke længer som en Nar.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="159-162"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="159-162" facsimile-pages="162-165"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13467,7 +13487,7 @@ I næste Christen-Bod, og stiele Strikken.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source pages="163-173"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="163-173" facsimile-pages="166-176"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13823,7 +13843,7 @@ Saa vil jeg nu da pynte mig en Smule.
 <head>
   <title>Divan</title>
   <nofirstline/>
-  <source pages="173-184"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="173-184" facsimile-pages="176-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14174,7 +14194,7 @@ Jeg maa dog vise Zulima min Gave.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="184-188"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="184-188" facsimile-pages="187-191"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14301,7 +14321,7 @@ At skrive Saadant op, for Livs og Døds Skyld.
 <head>
   <title>Aladdins Kammer</title>
   <nofirstline/>
-  <source pages="188-192"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="188-192" facsimile-pages="191-195"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14408,7 +14428,7 @@ Det syndefulde Støv fra Paradis.
 <head>
   <title>Altanen paa Huset</title>
   <nofirstline/>
-  <source pages="193-194"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="193-194" facsimile-pages="196-197"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14461,7 +14481,7 @@ Nedstyrter Eder flux og knuser mig.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source pages="195-203"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="195-203" facsimile-pages="198-206"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14727,7 +14747,7 @@ Besynderligt! - Kom! Følg mig i mit Divan.
 <head>
   <title>Sultanens Divan</title>
   <nofirstline/>
-  <source pages="204-209"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="204-209" facsimile-pages="207-212"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14916,7 +14936,7 @@ Paa den Galley? Bag efter kommer tyndt Øl!
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source pages="210-221"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="210-221" facsimile-pages="213-224"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15219,7 +15239,7 @@ Ja saa let, min ædle Herre! som Vind kan kruse Vand.
 <head>
   <title>Indgangen til Sultanens Pallads</title>
   <nofirstline/>
-  <source pages="221-223"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="221-223" facsimile-pages="224-226"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15311,7 +15331,7 @@ Vor Sultan og hans Søn Aladdin leve!
 <head>
   <title>Et prægtigt Marmor-Bad</title>
   <nofirstline/>
-  <source pages="224-230"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="224-230" facsimile-pages="227-233"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15499,7 +15519,7 @@ Nu Farvel, du raske Yngling! Nyd din friske Ungdoms Vaar.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source pages="230-232"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="230-232" facsimile-pages="233-235"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15580,7 +15600,7 @@ Skal gribe mig i Faldet, naar jeg snubler.
 <head>
   <title>Nat. Den store Plads uden for Sultanens Slot</title>
   <nofirstline/>
-  <source pages="233-239"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="233-239" facsimile-pages="236-242"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15774,7 +15794,7 @@ Rødkammet Vægter goel. Nu er vor Tid forbi.
 <head>
   <title>Sultanens Harem</title>
   <nofirstline/>
-  <source pages="239-243"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="239-243" facsimile-pages="242-246"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15918,7 +15938,7 @@ At de kan røre Pauker og Trompeter!
 <head>
   <title>Afrika</title>
   <nofirstline/>
-  <source pages="244-247"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="244-247" facsimile-pages="247-250"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16036,7 +16056,7 @@ Indblande Angst og Anger i min Fryd.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="247-251"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="247-251" facsimile-pages="250-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16168,7 +16188,7 @@ At den tolker: Skiønhed, Styrke, Frugtbarhed.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="252-254"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="252-254" facsimile-pages="255-257"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16247,7 +16267,7 @@ Farvel! Imorgen seer du mig igien.
 <head>
   <title>Kahn</title>
   <nofirstline/>
-  <source pages="255-259"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="255-259" facsimile-pages="258-262"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16406,7 +16426,7 @@ Fornøy Jer godt i Byen, mens I er her.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="259-263"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="259-263" facsimile-pages="262-266"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16541,7 +16561,7 @@ Mod Bielken under Loftet. Nu kun frisk!
 <head>
   <title>Gulnares Kammer</title>
   <nofirstline/>
-  <source pages="264-272"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="264-272" facsimile-pages="267-275"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16807,7 +16827,7 @@ Og Slangen kommer frem af sine Huler.
 <head>
   <title>Vild Mark. Nat, Storm og Regn</title>
   <nofirstline/>
-  <source pages="272-275"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="272-275" facsimile-pages="275-278"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16905,7 +16925,7 @@ Det er saa hurtig giort, som det er sagt.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source pages="275-282"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="275-282" facsimile-pages="278-285"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17132,7 +17152,7 @@ Kan gyde Kiøling i min Smertes Vunde.
 <head>
   <title>En skyggefuld, venlig Plads, dybt inde i Skoven</title>
   <nofirstline/>
-  <source pages="282-291"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="282-291" facsimile-pages="285-294"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17408,7 +17428,7 @@ Til Haan for dig! Til Hevn for min Ven!
 <head>
   <title>Et mørkt Fangetaarn</title>
   <nofirstline/>
-  <source pages="291-295"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="291-295" facsimile-pages="294-298"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17537,7 +17557,7 @@ Og bring mig i min elskte Faders Skiød.
 <head>
   <title>Slotspladsen</title>
   <nofirstline/>
-  <source pages="296-304"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="296-304" facsimile-pages="299-307"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17821,7 +17841,7 @@ Blod maa jeg see, før er jeg ikke rolig!
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source pages="305-307"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="305-307" facsimile-pages="308-310"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17920,7 +17940,7 @@ Og spild ey Tiden med Betragtninger.
 <head>
   <title>Morgianes Stue</title>
   <nofirstline/>
-  <source pages="307-311"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="307-311" facsimile-pages="310-314"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18033,7 +18053,7 @@ Gid vel jeg havde ham kun af mit Huus.
 <head>
   <title>Kirkegaarden</title>
   <nofirstline/>
-  <source pages="311-312"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="311-312" facsimile-pages="314-315"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18091,7 +18111,7 @@ Gid vel jeg havde ham kun af mit Huus.
 <head>
   <title>Den store Plads uden for Sultanens Slot</title>
   <nofirstline/>
-  <source pages="313-316"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="313-316" facsimile-pages="316-319"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18211,7 +18231,7 @@ Den arme Stakkel. Gud forbarme sig!
   <toctitle>En afsides Plads uden for Byen</toctitle>
   <linktitle>En afsides Plads uden for Byen</linktitle>
   <nofirstline/>
-  <source pages="316-321"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="316-321" facsimile-pages="319-324"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18383,7 +18403,7 @@ En snellere Befordring faaer du ey.
 <head>
   <title>Afrika</title>
   <nofirstline/>
-  <source pages="322-326"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="322-326" facsimile-pages="325-329"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18503,7 +18523,7 @@ Tilbedte!
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="326-328"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="326-328" facsimile-pages="329-331"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18588,7 +18608,7 @@ Med roligt Smil til bange Drømmers Leye.
 <head>
   <title>Apothek</title>
   <nofirstline/>
-  <source pages="329-333"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="329-333" facsimile-pages="332-336"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18744,7 +18764,7 @@ For ey at støde sine bedste Kunder.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="333-335"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="333-335" facsimile-pages="336-338"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18826,7 +18846,7 @@ At du kan blande Giften aabenlyst.
 <head>
   <title>Cabinettet</title>
   <nofirstline/>
-  <source pages="336-340"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="336-340" facsimile-pages="339-343"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18982,7 +19002,7 @@ Og herligt straaler din gienvundne Lampe.
 <head>
   <title>Den store Sal</title>
   <nofirstline/>
-  <source pages="341-351"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="341-351" facsimile-pages="344-354"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19331,7 +19351,7 @@ Er det at rette ud, hvad Lampens Drot har tænkt.
 <head>
   <title>Ispahan</title>
   <nofirstline/>
-  <source pages="352-360"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="352-360" facsimile-pages="355-363"/>
   <places>
     <place ref="ganges" relation="mentioned"/>
     <place ref="mount-ararat" relation="mentioned"/>
@@ -19578,7 +19598,7 @@ Jeg kunde næsten troe jeg havde Ret.
 <head>
   <title>Mekka</title>
   <nofirstline/>
-  <source pages="360-367"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="360-367" facsimile-pages="363-370"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19790,7 +19810,7 @@ O kommer! lader os endnu engang
 <head>
   <title>Et andet Sted i Staden Mekka</title>
   <nofirstline/>
-  <source pages="368-372"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="368-372" facsimile-pages="371-375"/>
   <places>
     <place ref="red-sea" relation="mentioned"/>
   </places>
@@ -19940,7 +19960,7 @@ Reisen til Gud er altid lykkelig.
 <head>
   <title>Den arabiske Ørk</title>
   <nofirstline/>
-  <source pages="372-373"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="372-373" facsimile-pages="375-376"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19975,7 +19995,7 @@ Mahoms Maane leder sikkert til vort Hiem.
 <head>
   <title>Persien</title>
   <nofirstline/>
-  <source pages="373-377"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="373-377" facsimile-pages="376-380"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20111,7 +20131,7 @@ Hun synger noget! Det maa jeg dog høre.
 <head>
   <title>Fatimes Hytte</title>
   <nofirstline/>
-  <source pages="377-383"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="377-383" facsimile-pages="380-386"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20305,7 +20325,7 @@ Den som forener begge, haaber trygt.
 <head>
   <title>Morgenstund</title>
   <nofirstline/>
-  <source pages="383-388"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="383-388" facsimile-pages="386-391"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20476,7 +20496,7 @@ Har ene høstet Frugt af hendes Ord!
 <head>
   <title>Pladsen uden for Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="389-394"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="389-394" facsimile-pages="392-397"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20682,7 +20702,7 @@ Thi her har Væggene og Muren Øren.
 <head>
   <title>Den store Sal i Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="395-399"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="395-399" facsimile-pages="398-402"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20850,7 +20870,7 @@ Du kiender lidt kun til Aladdins Magt.
 <head>
   <title>Ellemose i Skoven</title>
   <nofirstline/>
-  <source pages="400-402"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="400-402" facsimile-pages="403-405"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20963,7 +20983,7 @@ Hist lønner Allah dig, at du var god.
 <head>
   <title>Den store Sal i Aladdins Pallads. Dag</title>
   <nofirstline/>
-  <source pages="403-407"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="403-407" facsimile-pages="406-410"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21070,7 +21090,7 @@ Lampens Slaver er tillige Slaver af Bestandighed.
 <head>
   <title>Nat. Uden for Fatimes Hytte i Skoven</title>
   <nofirstline/>
-  <source pages="408-416"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="408-416" facsimile-pages="411-419"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21323,7 +21343,7 @@ Kan eengang naae det Maal, den stunder efter.
 <head>
   <title>En Forstue i Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="416-420"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="416-420" facsimile-pages="419-423"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21456,7 +21476,7 @@ Til Lykke, da! Til Lykke! Megen Lykke.
 <head>
   <title>Den store Sal i Aladdins Pallads</title>
   <nofirstline/>
-  <source pages="420-433"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="420-433" facsimile-pages="423-436"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21812,7 +21832,7 @@ Paa Morgianes Grav, ved Hyldetræet.
 <head>
   <title>Epilog</title>
   <nofirstline/>
-  <source pages="434-436"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source in="bd2" pages="434-436" facsimile-pages="437-439"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
