@@ -466,6 +466,10 @@ TSV files as OCR evidence while retaining the bundle's page IDs and hashes. Do
 not copy its sampling heuristic into this skill, infer layout from its TSV
 coordinates or treat its recommended configuration as source authority.
 
+When evaluating a change to the Fraktur OCR workflow, follow
+[the import evaluation protocol](../../../docs/fraktur-import-evaluering.md)
+for end-to-end session measurements and comparison against the reference.
+
 Render the page images used as OCR input at 300 DPI. This requirement applies
 to OCR working images, not to the published facsimile extraction: generate the
 published facsimiles with the repository's ordinary facsimile tool and its
