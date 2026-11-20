@@ -23,6 +23,14 @@
     <alias>Aarhuus</alias>
     <parent ref="jutland"/>
   </place>
+  <place id="aarhus-bay">
+    <name>Aarhus Bugt</name>
+    <wikidata>Q271168</wikidata>
+    <type>bay</type>
+    <alias>Århus Bugt</alias>
+    <parent ref="kattegat"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 69. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="adriatic-sea">
     <name>Adriaterhavet</name>
     <canonical-name>Adriatic Sea</canonical-name>
@@ -87,6 +95,12 @@
     <type>region</type>
     <alias>Andalucía</alias>
     <parent ref="spain"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q12892 -->
+  <place id="antwerp">
+    <name>Antwerpen</name>
+    <wikidata>Q12892</wikidata>
+    <type>city</type>
   </place>
   <place id="apennines">
     <name>Apenninerne</name>
@@ -206,6 +220,12 @@
     <alias>Baia</alias>
     <parent ref="italy"/>
   </place>
+  <place id="bakkehuset">
+    <name>Bakkehuset</name>
+    <type>building</type>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 62, 64. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="baltic-sea">
     <name>Østersøen</name>
     <canonical-name>Baltic Sea</canonical-name>
@@ -320,6 +340,12 @@
     <wikidata>Q159685</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q769680 -->
+  <place id="bornholm">
+    <name>Bornholm</name>
+    <wikidata>Q769680</wikidata>
+    <type>island</type>
   </place>
   <place id="borsen-copenhagen">
     <name>Børsen</name>
@@ -546,6 +572,13 @@
     <alias>Cumæ</alias>
     <parent ref="italy"/>
   </place>
+  <place id="custoza">
+    <name>Custoza</name>
+    <type>village</type>
+    <alias>Custozza</alias>
+    <parent ref="italy"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 26. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="dannevirke">
     <name>Dannevirke</name>
     <canonical-name>Danevirke</canonical-name>
@@ -598,6 +631,12 @@
     <type>historical region</type>
     <alias>Schleswig</alias>
     <note>Historisk sted-entitet passende til Oehlenschlägers »I Slesvig«.</note>
+  </place>
+  <place id="dybbol">
+    <name>Dybbøl</name>
+    <type>locality</type>
+    <parent ref="duchy-schleswig"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 22. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="ebro">
     <name>Ebro</name>
@@ -691,17 +730,41 @@
     <parent ref="langeland"/>
     <note>Fårevejle på Langeland.</note>
   </place>
+  <place id="fakkegrav">
+    <name>Fakkegrav</name>
+    <type>locality</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="fano">
+    <name>Fanø</name>
+    <type>island</type>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 110. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="farum">
     <name>Farum</name>
     <wikidata>Q3554742</wikidata>
     <type>town</type>
     <parent ref="zealand"/>
   </place>
+  <place id="ferrara">
+    <name>Ferrara</name>
+    <type>city</type>
+    <parent ref="italy"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 26. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="fiesole">
     <name>Fiesole</name>
     <wikidata>Q82670</wikidata>
     <type>city</type>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q234 -->
+  <place id="flanders">
+    <name>Flandern</name>
+    <wikidata>Q234</wikidata>
+    <type>region</type>
   </place>
   <place id="florence">
     <name>Firenze</name>
@@ -857,6 +920,13 @@
     <alias>Liri-Garigliano</alias>
     <alias>Liris</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="gauerslund-churchyard">
+    <name>Gauerslund Kirkegård</name>
+    <type>cemetery</type>
+    <alias>Gaverslund Kirkegaard</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 63. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="geneva">
     <name>Genève</name>
@@ -1050,6 +1120,13 @@
     <alias>Groenland</alias>
     <alias>Kalaallit Nunaat</alias>
   </place>
+  <place id="grejs-valley">
+    <name>Grejsdalen</name>
+    <type>valley</type>
+    <alias>Grejs</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="grenaa">
     <name>Grenaa</name>
     <wikidata>Q3619316</wikidata>
@@ -1227,6 +1304,12 @@
     <name>Himalaya</name>
     <type>mountain range</type>
   </place>
+  <place id="himmelbjerget">
+    <name>Himmelbjerget</name>
+    <type>hill</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 59. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="hindsgavl">
     <name>Hindsgavl</name>
     <wikidata>Q10524238</wikidata>
@@ -1241,6 +1324,13 @@
     <alias>Hippokrene-kilden</alias>
     <parent ref="greece"/>
     <note>Musernes kilde på Helikon i græsk mytologi.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1810963 -->
+  <place id="hirschholm-palace">
+    <name>Hirschholm Slot</name>
+    <wikidata>Q1810963</wikidata>
+    <type>palace</type>
+    <alias>Hirschholm</alias>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q12317772 -->
   <place id="hojerup-old-church">
@@ -1408,6 +1498,15 @@
     <alias>Kaløe Slot</alias>
     <alias>Kalø Slotsruin</alias>
     <parent ref="jutland"/>
+  </place>
+  <place id="kalo-vig">
+    <name>Kalø Vig</name>
+    <wikidata>Q1722802</wikidata>
+    <type>bay</type>
+    <alias>Kaløvig</alias>
+    <parent ref="aarhus-bay"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 69. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+    <!-- Identitet og navneform: https://lex.dk/Kalø_Vig. Wikidata: https://www.wikidata.org/wiki/Q1722802 -->
   </place>
   <place id="karise">
     <name>Karise</name>
@@ -1643,6 +1742,12 @@
     <type>town</type>
     <alias>Leire</alias>
     <parent ref="zealand"/>
+  </place>
+  <place id="lille-grundet-hulvej">
+    <name>Lille Grundet Hulvej</name>
+    <type>street</type>
+    <parent ref="vejle"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="little-belt">
     <name>Lillebælt</name>
@@ -1927,6 +2032,12 @@
     <type>mountain</type>
     <alias>Thabor</alias>
   </place>
+  <place id="munkebjerg">
+    <name>Munkebjerg</name>
+    <type>hill</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="murcia">
     <name>Murcia</name>
     <wikidata>Q12225</wikidata>
@@ -2007,6 +2118,13 @@
     <name>Norden</name>
     <wikidata>Q52062</wikidata>
     <type>region</type>
+  </place>
+  <place id="norreskoven-vejle">
+    <name>Nørreskoven ved Vejle</name>
+    <type>forest</type>
+    <alias>Vejle Nørreskov</alias>
+    <parent ref="vejle"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28, 67, 101. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="north-sea">
     <name>Nordsøen</name>
@@ -2166,6 +2284,12 @@
     <alias>Pistoja</alias>
     <parent ref="italy"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q36 -->
+  <place id="poland">
+    <name>Polen</name>
+    <wikidata>Q36</wikidata>
+    <type>country</type>
+  </place>
   <place id="ponte-milvio">
     <name>Ponte Milvio</name>
     <wikidata>Q1127325</wikidata>
@@ -2213,6 +2337,12 @@
   <place id="pyrenees">
     <name>Pyrenæerne</name>
     <type>mountain range</type>
+  </place>
+  <place id="randbol">
+    <name>Randbøl</name>
+    <type>village</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="randers">
     <name>Randers</name>
@@ -2355,6 +2485,12 @@
     <alias>Rosenborg</alias>
     <parent ref="copenhagen"/>
   </place>
+  <place id="rosenvold">
+    <name>Rosenvold</name>
+    <type>manor</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="roskilde">
     <name>Roskilde</name>
     <wikidata>Q26563</wikidata>
@@ -2419,6 +2555,24 @@
     <wikidata>Q688537</wikidata>
     <type>meadow / historic site</type>
     <alias>Rütly</alias>
+  </place>
+  <place id="rungsted">
+    <name>Rungsted</name>
+    <type>locality</type>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 104. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="rungstedlund">
+    <name>Rungstedlund</name>
+    <type>building</type>
+    <parent ref="rungsted"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 61. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q159 -->
+  <place id="russia">
+    <name>Rusland</name>
+    <wikidata>Q159</wikidata>
+    <type>country</type>
   </place>
   <place id="sahara">
     <name>Sahara</name>
@@ -2503,6 +2657,12 @@
     <type>city</type>
     <alias>Schafhausen</alias>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q37620 -->
+  <place id="scheldt">
+    <name>Schelde</name>
+    <wikidata>Q37620</wikidata>
+    <type>river</type>
+  </place>
   <place id="schierensee">
     <name>Schierensee</name>
     <wikidata>Q560897</wikidata>
@@ -2553,6 +2713,15 @@
     <type>plain</type>
     <alias>Saron</alias>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q2475689 -->
+  <place id="shravasti">
+    <name>Shravasti</name>
+    <wikidata>Q2475689</wikidata>
+    <type>archaeological site</type>
+    <alias>Savatthi</alias>
+    <alias>Savatti</alias>
+    <!-- Navneform: https://ignca.gov.in/Asi_data/22017.pdf -->
+  </place>
   <place id="siena">
     <name>Siena</name>
     <wikidata>Q2751</wikidata>
@@ -2579,6 +2748,13 @@
     <type>mountain pass</type>
     <alias>Simplon</alias>
   </place>
+  <place id="skamlingsbanken">
+    <name>Skamlingsbanken</name>
+    <type>hill</type>
+    <alias>Skamlingsbanke</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 22. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="skokloster-castle">
     <name>Skokloster Slot</name>
     <canonical-name>Skokloster Castle</canonical-name>
@@ -2587,10 +2763,24 @@
     <alias>Skogkloster</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="skyttehuset-vejle">
+    <name>Skyttehuset i Vejle</name>
+    <type>building</type>
+    <parent ref="vejle"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="slagelse">
     <name>Slagelse</name>
     <wikidata>Q3414556</wikidata>
     <type>city</type>
+  </place>
+  <place id="soebaekhuset">
+    <name>Søbækshuset</name>
+    <type>building</type>
+    <alias>Søbækhuset</alias>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 61. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+    <!-- Ewalds Søbækshus ved Espergærde: https://trap5.lex.dk/sogn/egebaeksvang-sogn-lynge-kronborg-herred/ -->
   </place>
   <place id="sognefjord">
     <name>Sognefjorden</name>
@@ -2831,6 +3021,13 @@
     <name>Tigris</name>
     <type>river</type>
   </place>
+  <place id="tirsbaek">
+    <name>Tirsbæk</name>
+    <type>manor</type>
+    <alias>Tyrsbæk-Slottet</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28, 70. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q656733 -->
   <place id="tisvilde">
     <name>Tisvilde</name>
@@ -2888,6 +3085,13 @@
     <alias>Trekroner</alias>
     <parent ref="copenhagen"/>
   </place>
+  <place id="trelde-naes">
+    <name>Trelde Næs</name>
+    <type>headland</type>
+    <alias>Trældenæs</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 70. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="trieste">
     <name>Trieste</name>
     <wikidata>Q546</wikidata>
@@ -2895,12 +3099,25 @@
     <alias>Triest</alias>
     <parent ref="italy"/>
   </place>
+  <place id="trinitatis-church-copenhagen">
+    <name>Trinitatis Kirke</name>
+    <type>church</type>
+    <parent ref="copenhagen"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 18, 44-45. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+    <!-- Ewalds grav ved Trinitatis Kirke: https://danmarkskirker.natmus.dk/uploads/tx_tcchurchsearch/KobenhavnBy2_225-398.pdf -->
+  </place>
   <place id="trollhattan">
     <name>Trollhättan</name>
     <wikidata>Q54339</wikidata>
     <type>city</type>
     <alias>Trolhättan</alias>
     <parent ref="sweden"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q43 -->
+  <place id="turkey">
+    <name>Tyrkiet</name>
+    <wikidata>Q43</wikidata>
+    <type>country</type>
   </place>
   <place id="tusculum">
     <name>Tusculum</name>
@@ -3010,6 +3227,27 @@
     <alias>Pays de Vaud</alias>
     <parent ref="switzerland"/>
   </place>
+  <place id="vejle">
+    <name>Vejle</name>
+    <type>city</type>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="vejle-fjord">
+    <name>Vejle Fjord</name>
+    <wikidata>Q3243190</wikidata>
+    <type>fjord</type>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28, 48, 52, 67, 70. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="vejle-river-valley">
+    <name>Vejle Ådal</name>
+    <type>valley</type>
+    <alias>Vejledalen</alias>
+    <alias>Vejle-Dalen</alias>
+    <parent ref="jutland"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28, 101. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
   <place id="velletri">
     <name>Velletri</name>
     <wikidata>Q189236</wikidata>
@@ -3106,6 +3344,12 @@
     <type>park</type>
     <parent ref="rome"/>
   </place>
+  <place id="vinding-school">
+    <name>Vinding Skole</name>
+    <type>school</type>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 78. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+    <!-- Skolens præcise beliggenhed er ikke fastslået; derfor ingen parent eller Wikidata-identifikator. -->
+  </place>
   <place id="virgil-tomb">
     <name>Vergils grav</name>
     <canonical-name>Virgil's Tomb</canonical-name>
@@ -3134,6 +3378,12 @@
     <type>abbey ruin</type>
     <alias>Wreta</alias>
     <parent ref="sweden"/>
+  </place>
+  <place id="vridsloselille">
+    <name>Vridsløselille</name>
+    <type>locality</type>
+    <parent ref="denmark"/>
+    <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 55. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
   <place id="wetterhorn">
     <name>Wetterhorn</name>
