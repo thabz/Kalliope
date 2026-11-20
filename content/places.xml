@@ -96,6 +96,12 @@
     <alias>Andalucía</alias>
     <parent ref="spain"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q12892 -->
+  <place id="antwerp">
+    <name>Antwerpen</name>
+    <wikidata>Q12892</wikidata>
+    <type>city</type>
+  </place>
   <place id="apennines">
     <name>Apenninerne</name>
     <canonical-name>Apennines</canonical-name>
@@ -334,6 +340,12 @@
     <wikidata>Q159685</wikidata>
     <type>town/comune</type>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q769680 -->
+  <place id="bornholm">
+    <name>Bornholm</name>
+    <wikidata>Q769680</wikidata>
+    <type>island</type>
   </place>
   <place id="borsen-copenhagen">
     <name>Børsen</name>
@@ -747,6 +759,12 @@
     <wikidata>Q82670</wikidata>
     <type>city</type>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q234 -->
+  <place id="flanders">
+    <name>Flandern</name>
+    <wikidata>Q234</wikidata>
+    <type>region</type>
   </place>
   <place id="florence">
     <name>Firenze</name>
@@ -1306,6 +1324,13 @@
     <alias>Hippokrene-kilden</alias>
     <parent ref="greece"/>
     <note>Musernes kilde på Helikon i græsk mytologi.</note>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1810963 -->
+  <place id="hirschholm-palace">
+    <name>Hirschholm Slot</name>
+    <wikidata>Q1810963</wikidata>
+    <type>palace</type>
+    <alias>Hirschholm</alias>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q12317772 -->
   <place id="hojerup-old-church">
@@ -2259,6 +2284,12 @@
     <alias>Pistoja</alias>
     <parent ref="italy"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q36 -->
+  <place id="poland">
+    <name>Polen</name>
+    <wikidata>Q36</wikidata>
+    <type>country</type>
+  </place>
   <place id="ponte-milvio">
     <name>Ponte Milvio</name>
     <wikidata>Q1127325</wikidata>
@@ -2537,6 +2568,12 @@
     <parent ref="rungsted"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 61. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q159 -->
+  <place id="russia">
+    <name>Rusland</name>
+    <wikidata>Q159</wikidata>
+    <type>country</type>
+  </place>
   <place id="sahara">
     <name>Sahara</name>
     <wikidata>Q6583</wikidata>
@@ -2620,6 +2657,12 @@
     <type>city</type>
     <alias>Schafhausen</alias>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q37620 -->
+  <place id="scheldt">
+    <name>Schelde</name>
+    <wikidata>Q37620</wikidata>
+    <type>river</type>
+  </place>
   <place id="schierensee">
     <name>Schierensee</name>
     <wikidata>Q560897</wikidata>
@@ -2669,6 +2712,15 @@
     <name>Sarons Slette</name>
     <type>plain</type>
     <alias>Saron</alias>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q2475689 -->
+  <place id="shravasti">
+    <name>Shravasti</name>
+    <wikidata>Q2475689</wikidata>
+    <type>archaeological site</type>
+    <alias>Savatthi</alias>
+    <alias>Savatti</alias>
+    <!-- Navneform: https://ignca.gov.in/Asi_data/22017.pdf -->
   </place>
   <place id="siena">
     <name>Siena</name>
@@ -3060,6 +3112,12 @@
     <type>city</type>
     <alias>Trolhättan</alias>
     <parent ref="sweden"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q43 -->
+  <place id="turkey">
+    <name>Tyrkiet</name>
+    <wikidata>Q43</wikidata>
+    <type>country</type>
   </place>
   <place id="tusculum">
     <name>Tusculum</name>

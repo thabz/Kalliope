@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hopfen" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Hans von</firstname>
+    <lastname>Hopfen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1835-01-03</date>
+      <place>München</place>
+    </born>
+    <dead>
+      <date>1904-11-19</date>
+      <place>Grosslichterfeld</place>
+    </dead>
+  </period>
+  <literary-periods>de-poetisk-realisme-og-naturalisme</literary-periods>
+  <identifiers>
+    <gnd>116981385</gnd>
+  </identifiers>
+</person>
