@@ -351,7 +351,7 @@ const preparePageImage = async (input, root, pageId, options = {}) => {
     .withMetadata({ density: options.dpi ?? defaultDpi })
     .toFile(originalFile);
 
-  const orientation = options.orientation ?? detectCoarseOrientation(originalFile);
+  const orientation = options.orientation ?? detectCoarseOrientation(fs.realpathSync(originalFile));
   const oriented = await sharp(originalFile)
     .rotate(orientation.applied_rotation ?? 0, { background: '#ffffff' })
     .png()
@@ -543,7 +543,7 @@ const selectDensePages = (pages, sampleSize = defaultSampleSize) => {
 };
 
 const sampleBundle = (root, options = {}) => {
-  const resolvedRoot = path.resolve(root);
+  const resolvedRoot = fs.realpathSync(root);
   const bundleFile = path.join(resolvedRoot, 'bundle.json');
   const pagesFile = path.join(resolvedRoot, 'pages.jsonl');
   const bundle = readJson(bundleFile);
@@ -614,7 +614,7 @@ const runRecognition = (root, page, configuration) => {
 };
 
 const recognizeBundle = (root, options = {}) => {
-  const resolvedRoot = path.resolve(root);
+  const resolvedRoot = fs.realpathSync(root);
   const bundleFile = path.join(resolvedRoot, 'bundle.json');
   const bundle = readJson(bundleFile);
   const pages = readJsonLines(path.join(resolvedRoot, 'pages.jsonl'));
