@@ -25,7 +25,7 @@
 </workhead>
 <workbody>
 
-<section id="nielsenlc2026112001">
+<section>
 <head>
   <title>Judas</title>
 </head>
@@ -153,6 +153,9 @@ De kaldte ham Herre og Mester!
   <title><num>IV.</num>Sig mig, — er du af de Venner</title>
   <firstline>Sig mig, — er du af de Venner</firstline>
   <source pages="10-11" facsimile-pages="28-29"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -312,6 +315,10 @@ den, som er lovet os!
   <title><num>VIII.</num>Guds Søn</title>
   <firstline>Guds Søn?</firstline>
   <source pages="18-19" facsimile-pages="36-37"/>
+  <places>
+    <place ref="sea-of-galilee" relation="setting"/>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1150,6 +1157,11 @@ Si . . . ger . . . . de . . . . dét!
   <title><num>XXVIII.</num>Over Judæas Høje</title>
   <firstline>Over Judæas Høje</firstline>
   <source pages="61-62" facsimile-pages="79-80"/>
+  <places>
+    <place ref="judea" relation="setting"/>
+    <place ref="karioth" relation="setting"/>
+    <place ref="jerusalem" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1189,13 +1201,13 @@ i vigende Former staar Klipperne støbt.
 </content>
 </section>
 
-<section id="nielsenlc2026112002">
+<section>
 <head>
   <title>Kain</title>
 </head>
 <content>
 
-<section id="nielsenlc2026112003">
+<section>
 <head>
   <title>I</title>
 </head>
@@ -1404,7 +1416,7 @@ det følger mig — følger — se! — følger mig — se!
 </content>
 </section>
 
-<section id="nielsenlc2026112004">
+<section>
 <head>
   <title>II</title>
 </head>
@@ -1715,7 +1727,7 @@ Ellers myrder du selv! . .
 </content>
 </section>
 
-<section id="nielsenlc2026112005">
+<section>
 <head>
   <title>Spartacus</title>
 </head>
@@ -1880,6 +1892,9 @@ Og Bifaldslarmen brager bag hans Ryg.
   <title><num>III.</num>Paa Capuas Arena</title>
   <firstline>Paa Capuas Arena</firstline>
   <source pages="104-105" facsimile-pages="122-123"/>
+  <places>
+    <place ref="capua" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1923,6 +1938,9 @@ og støder, som om det Udfaldet gælder.
   <title><num>IV.</num>Solen falder. Endnu kæmper</title>
   <firstline>Solen falder. Endnu kæmper</firstline>
   <source pages="106-109" facsimile-pages="124-127"/>
+  <places>
+    <place ref="capua" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2008,6 +2026,9 @@ som en Brændings Brus det lyder:
   <title><num>V.</num>De har skaffet sig Vaaben. Nu er det Nat</title>
   <firstline>De har skaffet sig Vaaben. Nu er det Nat</firstline>
   <source pages="110-111" facsimile-pages="128-129"/>
+  <places>
+    <place ref="thrace" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2050,6 +2071,10 @@ Tusinder undvegne, sovende Fæller.
   <title><num>VI.</num>De har kæmpet og vundet, Slag efter Slag</title>
   <firstline>De har kæmpet og vundet, Slag efter Slag</firstline>
   <source pages="112-114" facsimile-pages="130-132"/>
+  <places>
+    <place ref="alps" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2117,6 +2142,10 @@ Dæmningens Porte:
   <title><num>VII.</num>Kommer de</title>
   <firstline>Kommer de?</firstline>
   <source pages="115-119" facsimile-pages="133-137"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2273,6 +2302,11 @@ Slavernes Overmod voksed ved Sejren.
   <title><num>IX.</num>Crassus har sejret. Der aandes i Rom</title>
   <firstline>Crassus har sejret. Der aandes i Rom</firstline>
   <source pages="123-125" facsimile-pages="141-143"/>
+  <places>
+    <place ref="rome" relation="setting"/>
+    <place ref="thrace" relation="mentioned"/>
+    <place ref="bruttium" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2377,6 +2411,10 @@ og Bjærgenes Tinder flamme.
   <title><num>XI.</num>Spartacus er falden</title>
   <firstline>Spartacus er falden!</firstline>
   <source pages="128-129" facsimile-pages="146-147"/>
+  <places>
+    <place ref="italy" relation="setting"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2409,6 +2447,10 @@ Atter Patricierne frygtløse sover.
   <title><num>XII.</num>Vejen er lang fra Capua</title>
   <firstline>Vejen er lang fra Capua</firstline>
   <source pages="130-131" facsimile-pages="148-149"/>
+  <places>
+    <place ref="capua" relation="setting"/>
+    <place ref="rome" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2446,6 +2488,10 @@ der selv ad Vejen kom.
   <title><num>XIII.</num>Natten gaar bleg og stille</title>
   <firstline>Natten gaar bleg og stille</firstline>
   <source pages="132-134" facsimile-pages="150-152"/>
+  <places>
+    <place ref="campania" relation="setting"/>
+    <place ref="capua" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
