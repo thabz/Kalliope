@@ -36,6 +36,8 @@ opførte digte; der er ikke attesteret fuld facsimilekorrektur.
 - Tre kildeprosastykker er fejlagtigt gråmarkeret som kommentarer på nettet:
   Grímnismǫ́l (»Geirrøðr konungr sat«), Skírnismǫ́l (»Skírnir reið«) og
   Vǫlundarkviða (»Níðuðr konungr gaf«). De er medtaget som prosa.
+- Goðrúnarkviða I 22, s. 267: Heimskringlas `BrynhiIdar` er rettet til
+  trykkets `Brynhildar` efter visuel kontrol; rettelsen er dokumenteret i XML.
 - Fjǫlsvinnsmǫ́l 38, s. 179, har lakunepunkter før et komma. Den lokale
   `space-before-comma`-undtagelse bevarer det kildebekræftede forhold.
 - `is` følger Kalliopes eksisterende sprogkode for oldnordiske/oldislandske
