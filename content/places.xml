@@ -383,6 +383,12 @@
     <alias>Ponte dei Sospiri</alias>
     <parent ref="venice"/>
   </place>
+  <place id="bruttium">
+    <name>Bruttium</name>
+    <type>historical region</type>
+    <parent ref="italy"/>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
+  </place>
   <place id="burg-adolfseck">
     <name>Burg Adolfseck</name>
     <wikidata>Q1010663</wikidata>
@@ -408,6 +414,12 @@
     <type>city</type>
     <alias>Cadiz</alias>
     <parent ref="spain"/>
+  </place>
+  <place id="campania">
+    <name>Campanien</name>
+    <type>historical region</type>
+    <parent ref="italy"/>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="canaan">
     <name>Kanaan</name>
@@ -1508,6 +1520,11 @@
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 69. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
     <!-- Identitet og navneform: https://lex.dk/Kalø_Vig. Wikidata: https://www.wikidata.org/wiki/Q1722802 -->
   </place>
+  <place id="karioth">
+    <name>Karioth</name>
+    <type>biblical settlement</type>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
+  </place>
   <place id="karise">
     <name>Karise</name>
     <wikidata>Q848261</wikidata>
@@ -2065,6 +2082,11 @@
     <type>city</type>
     <alias>Napoli</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="nazareth">
+    <name>Nazareth</name>
+    <type>city</type>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="netherlands">
     <name>Nederlandene</name>
@@ -3004,6 +3026,12 @@
     <wikidata>Q1992413</wikidata>
     <type>museum</type>
     <parent ref="copenhagen"/>
+  </place>
+  <place id="thrace">
+    <name>Trakien</name>
+    <type>historical region</type>
+    <alias>Tracien</alias>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="thy">
     <name>Thy</name>

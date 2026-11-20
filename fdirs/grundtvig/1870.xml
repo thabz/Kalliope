@@ -8877,6 +8877,7 @@ Livet er Troens Naadeløn!
   <places>
     <place ref="jordan-river" relation="mentioned"/>
     <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8991,6 +8992,9 @@ Jordklimpen af Engle omsvævet!
     <note editorial="true">Cf. <xref bible="bibeldaniel02"/></note>
   </notes>
   <source pages="233-235"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
