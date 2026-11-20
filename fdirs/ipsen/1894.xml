@@ -4,6 +4,9 @@
   <title>Ekko</title>
   <subtitle>En Samling Digte</subtitle>
   <year>1894</year>
+  <notes>
+    <note>Dedikation: Den svenske Sonetdigter Grev Carl Snoilsky.</note>
+  </notes>
   <pictures>
     <picture type="titlepage" src="1894-p1.jpg">
       <transcription>Alfred Ipsen // Ekko // En Samling Digte // København / Gyldendalske Boghandels Forlag (F. Hegel &amp; Søn) / Trykt hos J. Jørgensen &amp; Co. (M. A. Hannover) / 1894</transcription>
@@ -25,22 +28,6 @@
   </proofreadings>
 </workhead>
 <workbody>
-
-<text id="ipsen2026111901">
-<head>
-  <firstline>Den svenske Sonetdigter</firstline>
-  <source facsimile-pages="10"/>
-  <keywords>snoilsky</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<sc>Den svenske Sonetdigter</sc>
-
-<right><sc>Grev Carl Snoilsky.</sc></right>
-</prose>
-</body>
-</text>
 
 <text id="ipsen2026111902">
 <head>
@@ -69,6 +56,9 @@ er dog kun som et Ekko af, hvad i Sjælen klang.
   <subtitle>(Hinduisk.)</subtitle>
   <firstline>Det var Kisagotami, den unge Hindupige</firstline>
   <source pages="1-5"/>
+  <places>
+    <place ref="shravasti" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -220,6 +210,9 @@ Tilintetgørelsens og Livets Vej.
   <title>Nutids-Salmer</title>
   <firstline>Der er gennem Verden ej anden Vej</firstline>
   <source pages="6-9"/>
+  <places>
+    <place ref="rubicon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -395,6 +388,9 @@ er Foraarstiden forsvunden.
   <title>Hirschholm</title>
   <firstline>Findes der en stille Plet</firstline>
   <source pages="11-13"/>
+  <places>
+    <place ref="hirschholm-palace" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1521,6 +1517,9 @@ kan vokse en Tomme derved.
   <title>Gennem Flandern</title>
   <firstline>Jeg rejste gennem Flandern en stille, maanelys Nat</firstline>
   <source pages="43-46"/>
+  <places>
+    <place ref="flanders" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2098,6 +2097,9 @@ faaer Glans af Glæden ved Barnets Vugge.
   <title>Vinter-Sange</title>
   <firstline>De store Fugle er fløjet væk</firstline>
   <source pages="61-64"/>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2709,6 +2711,10 @@ Han var et Barn, han kunde ikke andet.
     <note editorial="true">Gendigtning af Carl Snoilskys <xref type="translation" poem="snoilsky2026112001"/>.</note>
   </notes>
   <source pages="77-78"/>
+  <places>
+    <place ref="prague" relation="setting" primary="true"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2890,6 +2896,7 @@ der trygled mig om Brød, . . . at det var mit.
   <title>I Sangens frie Rum</title>
   <firstline>Jeg spænder ud de fjorten vante Strenge</firstline>
   <source pages="85"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2920,6 +2927,7 @@ og stræk Dig ud i Sangens frie Rum.
   <title>Sonetter</title>
   <firstline>Du spørger: Hvorfor skriver Du Sonetter</firstline>
   <source pages="86"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2950,6 +2958,7 @@ mit Billed i en lille, fløjlsgrøn Ramme.
   <title>Høstblomster</title>
   <firstline>Rigt strømmer Sangen ej fra vore Læber</firstline>
   <source pages="87"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2980,6 +2989,7 @@ at disse Blomster ere Aarets sidste. —
   <title>Clair-Obscur</title>
   <firstline>Et Clair-Obscur, hvor Drømmen den har hjemme</firstline>
   <source pages="88"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3010,6 +3020,7 @@ og føler Tidens Magt i al dens Vælde.
   <title>Stemningsløst</title>
   <firstline>Histude Fyrets matte Øje blinker</firstline>
   <source pages="89"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3040,6 +3051,7 @@ en stille, stemningsløs Melankoli.
   <title>Et Alter</title>
   <firstline>Hvor dyb en Fred der er i denne Stue</firstline>
   <source pages="90"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3070,6 +3082,7 @@ og vi har ikke knælet længe, længe.
   <title>Diamanter</title>
   <firstline>Nu lister Skumring frem fra alle Kanter</firstline>
   <source pages="91"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3100,6 +3113,10 @@ med Blikket fast paa Mælkevejens Stribe.
   <title>Der gives visse Ting, man ej kan glemme</title>
   <firstline>Der gives visse Ting, man ej kan glemme</firstline>
   <source pages="92"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="mount-tabor" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3130,6 +3147,7 @@ da Herren talede med Mose Skygge.
   <title>Tilbageblik</title>
   <firstline>Naar Hjertets unge Flyvelyst er mattet</firstline>
   <source pages="93"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3160,6 +3178,7 @@ med al dens Tungsind, Jubel, Storm og Strid.
   <title>Eleonore</title>
   <firstline>Rundt om mig faldt der Sol i gyldne Ringe</firstline>
   <source pages="94"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3190,6 +3209,7 @@ ved Døren ind til Nattens dunkle Veje.
   <title>Med en Digtsamling</title>
   <firstline>I disse Digte er en Andagts Stilhed</firstline>
   <source pages="95"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3220,6 +3240,7 @@ til Arbejdsklokkens klare Stemme kalder.
   <title>Midlertidigt</title>
   <firstline>Imens vi bygge vore Drømmeslotte</firstline>
   <source pages="96"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3250,6 +3271,7 @@ ti der er ingen af os, som behøves.
   <title>Ligfærd</title>
   <firstline>Skarpt skærer Dagen gennem bløde Drømme</firstline>
   <source pages="97"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3280,6 +3302,7 @@ og alle spæde Blomster græde tyst.
   <title>Dagdrømme</title>
   <firstline>Det lyser rødt igennem lune Drømme</firstline>
   <source pages="98"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3310,6 +3333,10 @@ alt, hvad der er paa Tæppets anden Side.
   <title>Granitstudier</title>
   <firstline>Jeg træder paa Granittens Grund den faste</firstline>
   <source pages="99"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="bornholm" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3342,6 +3369,7 @@ og Solens Straale til Farvel ham kysser.
   <title>Julestemning</title>
   <firstline>Nu ringes Julen ind med sejge Tove</firstline>
   <source pages="100"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3372,6 +3400,11 @@ den store, tavse Julestemning ind.
   <title>Hjemtanker</title>
   <firstline>Jeg staaer og stirrer paa den regngraa Schelde</firstline>
   <source pages="101"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="scheldt" relation="setting"/>
+    <place ref="antwerp" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3404,6 +3437,7 @@ det er som skjulte Hænder hjemad drage.
   <title>La Santa</title>
   <firstline>Jeg véd en By med Taarne og med Tinder</firstline>
   <source pages="102"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3443,6 +3477,7 @@ Jeg kalder den La Santa: Mindets By.
   <title>Slet ud de Skel</title>
   <firstline>Slet ud de Skel, som skiller Verden ad</firstline>
   <source pages="105"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3473,6 +3508,10 @@ og Tidens Gud er ingen blodig Gud.
   <title>Demos</title>
   <firstline>Vi var Dig nær, som Moses Kanalandet</firstline>
   <source pages="106"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="canaan" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3505,6 +3544,7 @@ en Fremtidstanke, som vi knæler for.
   <title>Fantaster</title>
   <firstline>Der var en Tid, Nationen var bombastisk</firstline>
   <source pages="107"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3537,6 +3577,7 @@ Vi er Fantaster alle og til Hobe.
   <title>Under Maske</title>
   <firstline>Da Romantikken havde Overtaget</firstline>
   <source pages="108"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3569,6 +3610,7 @@ sig skjuler end de nationale Træk.
   <title>Relativitet</title>
   <firstline>Man troer ej længer paa et absolut</firstline>
   <source pages="109"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3601,6 +3643,7 @@ saa Relativiteterne i Ære!
   <title>Sokratisk</title>
   <firstline>Der var en Tid, da jeg et Standpunkt ejed</firstline>
   <source pages="110"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3633,6 +3676,7 @@ Jeg synes de har allesammen Ret!
   <title>Den lykkelige ene</title>
   <firstline>Saaledes taled Høstens høje Herre</firstline>
   <source pages="111"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3665,6 +3709,24 @@ at være denne lykkelige ene.
   <title>Produktion</title>
   <firstline>Hvert Land paa Jorden producerer sit</firstline>
   <source pages="112"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="germany" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+    <place ref="switzerland" relation="mentioned"/>
+    <place ref="france" relation="mentioned"/>
+    <place ref="england" relation="mentioned"/>
+    <place ref="netherlands" relation="mentioned"/>
+    <place ref="spain" relation="mentioned"/>
+    <place ref="poland" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="turkey" relation="mentioned"/>
+    <place ref="italy" relation="mentioned"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="denmark" relation="subject"/>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3697,6 +3759,10 @@ I Danmark produceres der Doktriner.
   <title>Hvis . . .</title>
   <firstline>Et lille Land, der langsomt smuldrer bort</firstline>
   <source pages="113"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3729,6 +3795,7 @@ men — hvis Forraadnelsen gaaer an fra inden . . .
   <title>Mellem to Tider</title>
   <firstline>Jeg ligger henslængt mellem tvende Tider</firstline>
   <source pages="114"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3759,6 +3826,10 @@ for Lystigheden ovre hos de andre.
   <title>Verdens Daarer</title>
   <firstline>Kun den er stærk, der ret er kold og haard</firstline>
   <source pages="115"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3791,6 +3862,10 @@ end den at have Medynk med de svage.
   <title>Tyranner</title>
   <firstline>Kun Hovmod saa jeg over Verden gro</firstline>
   <source pages="116"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3823,6 +3898,10 @@ saa længe avler Verden og Tyranner.
   <title>Vaabenløse</title>
   <firstline>Hvad andet bliver der til sidst at gøre</firstline>
   <source pages="117"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3855,6 +3934,10 @@ og den, som fødes vaabenløs, maa falde.
   <title>Hvor længe</title>
   <firstline>En vidtstrakt Ørk af Stene, Stene, Stene</firstline>
   <source pages="118"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="antwerp" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3887,6 +3970,7 @@ og vaagner til en frygtelig Opstandelse.
   <title>Os selv</title>
   <firstline>Vi er som syge Børn i Uforstand</firstline>
   <source pages="119"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4001,6 +4085,7 @@ den døer ej ud en Stund den danske Tunge.
   <title>Et Urnekammer</title>
   <firstline>Hvad er vort Liv? En Flammeleg der brænder</firstline>
   <source pages="125"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4033,6 +4118,7 @@ Du askefældes daglig Lag for Lag.
   <title>Et ufuldendt Værk</title>
   <firstline>Det er en stor og højst mærkværdig Bog</firstline>
   <source pages="126"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4063,6 +4149,7 @@ om det var Patos eller Ironi.
   <title>Livets Hus</title>
   <firstline>O Livets Hus med Sale gyldent-mange</firstline>
   <source pages="127"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4093,6 +4180,7 @@ og hugger Haabets Løgn i Spaan og Splinter
   <title>Arkimedes’ Punkt</title>
   <firstline>Jeg ser, hvor Vinden over Sletten vifter</firstline>
   <source pages="128"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4123,6 +4211,7 @@ Giv mig et Sted, som ikke er i Verden.
   <title>Udrykning</title>
   <firstline>Der er en Stimmel gennem Livets Porte</firstline>
   <source pages="129"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4153,6 +4242,7 @@ saa længe Solen ler og Verden varer.
   <title>Klokkeslag</title>
   <firstline>Jeg hører Tidens tunge Klokker slaa</firstline>
   <source pages="130"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4183,6 +4273,7 @@ nedhvirvles Martyrskarerne i Dybet.
   <title>Lejemaal</title>
   <firstline>I denne Verden bo vi som til Leje</firstline>
   <source pages="131"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4213,6 +4304,7 @@ og over dem, der atter Torvet fylder.
   <title>Trøskebro</title>
   <firstline>Alverdens Tryghed er som Trøskebro</firstline>
   <source pages="132"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4243,6 +4335,7 @@ saa kommer Døden ukær og ubuden.
   <title>Aandehænder</title>
   <firstline>Der er en Trolddomsmagt i gamle Bøger</firstline>
   <source pages="133"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4273,6 +4366,7 @@ indtil vor egen Levnetsbog de lukke.
   <title>Vibesang</title>
   <firstline>Uroligt flakkende en Vibe jager</firstline>
   <source pages="134"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4303,6 +4397,7 @@ at Lykken ej paa denne Jord har hjemme.
   <title>Artister</title>
   <firstline>Vi ligne alle hine smaa Artister</firstline>
   <source pages="135"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4333,6 +4428,7 @@ ti hver især med Øjet følger sin.
   <title>Evighed</title>
   <firstline>De levende har ikke Skulderstyrke</firstline>
   <source pages="136"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4363,6 +4459,7 @@ i Graven, hvor de smuldre blandt de andre.
   <title>Den store Frygt</title>
   <firstline>Hver Gang jeg stanser foran Valgets Dør</firstline>
   <source pages="137"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4393,7 +4490,7 @@ Den store Frygt er alt det stores Skaber!
   <title>Mørkt Land</title>
   <firstline>Vildt fyger det med store, hvide Fnokker</firstline>
   <source pages="138"/>
-  <keywords>dante</keywords>
+  <keywords>dante,sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4424,7 +4521,7 @@ I, som indtræde, lader Haabet fare!
   <title>Præster</title>
   <firstline>Naturen ejer ogsaa sine Præster</firstline>
   <source pages="139"/>
-  <keywords>shelley,swinburne,heine</keywords>
+  <keywords>shelley,swinburne,heine,sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4455,6 +4552,10 @@ bagved en Satyrmaske, som hos Heine.
   <title>København</title>
   <firstline>Som dér i Morgensolens Glans Du ligger</firstline>
   <source pages="140"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="copenhagen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4485,6 +4586,7 @@ Du smiler til dem: Kom og lad os lege!
   <title>Kulturfæstning</title>
   <firstline>Jeg elsker denne travle Tumleplads</firstline>
   <source pages="141"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4515,6 +4617,7 @@ i en Slags Fort, en Fæstning for Kulturen.
   <title>En Flane</title>
   <firstline>Hvad er Naturen vel, om ej en Flane</firstline>
   <source pages="142"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4554,6 +4657,10 @@ saa falder Manden redningsløst i Staver.
   <title>En Skriftestol</title>
   <firstline>Til Dig, mit Modersmaal, jeg alt betroer</firstline>
   <source pages="145"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4586,6 +4693,7 @@ at al min Sorg blev udgrædt i dit Skød.
   <title>Runebundet</title>
   <firstline>Hvorfor jeg træder ad en tjørnet Sti</firstline>
   <source pages="146"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4616,6 +4724,7 @@ mod hvilken hele Verden synes ringe.
   <title>En Himmelstige</title>
   <firstline>Nu strømmer Sangen atter fuldt og rigt</firstline>
   <source pages="147"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4646,6 +4755,7 @@ op mod min Længsels gyldne Sommerrige.
   <title>Byen tabes af Syne</title>
   <firstline>Valmueblomster i det grønne Gærde</firstline>
   <source pages="148"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4676,6 +4786,7 @@ som Drøm, der flyer ved Dagens første Komme.
   <title>To Kvinder</title>
   <firstline>Der gaaer en Kvinde ved min højre Side</firstline>
   <source pages="149"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4706,6 +4817,7 @@ og, ikke sandt, I elsker mig jo begge.
   <title>Sprogkunst</title>
   <firstline>At digte er jo egentlig at male</firstline>
   <source pages="150"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4736,6 +4848,7 @@ er vore Dages Sprogkunst uden Farve.
   <title>Konvolvolus</title>
   <firstline>Konvolvolus, Du sommerlige, glade</firstline>
   <source pages="151"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4766,6 +4879,10 @@ man ser, at ingen Sorg dit Hjerte tynger.
   <title>Avrora</title>
   <firstline>Nu kommer Dagen bleg og lyseblaa</firstline>
   <source pages="152"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4798,6 +4915,7 @@ til Enkens og den faderløses Hus.
   <title>Morgenbøn</title>
   <firstline>Guldvinget Dagen hæved sig fra Voven</firstline>
   <source pages="153"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4828,6 +4946,7 @@ det var, som Skoven holdt sin Morgenbøn.
   <title>Rosa mystica</title>
   <firstline>Jeg stod i alle Unders rige Stad</firstline>
   <source pages="154"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4858,6 +4977,7 @@ mens dens Pendulslag dirre i vort Hjerte.
   <title>Tusindgylden</title>
   <firstline>Løft Øjet op til Vinterhimlens Bue</firstline>
   <source pages="155"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4888,6 +5008,10 @@ jeg vandrer trøstig mod et ukendt Maal.
   <title>En Blomstergrund</title>
   <firstline>Mig synes Livet som et kostbart Klæde</firstline>
   <source pages="156"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="antwerp" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4920,6 +5044,7 @@ hvor rigt I overblomstre Grav og Død.
   <title>Menneskenes Søn</title>
   <firstline>Saaledes lode Guderne sig føde</firstline>
   <source pages="157"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4950,6 +5075,10 @@ hun véd det, han er Menneskenes Søn.
   <title>Korsvej</title>
   <firstline>O skønne Haand, som blev af Nagler saaret</firstline>
   <source pages="158"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4981,7 +5110,15 @@ hvordan man lider stolt, hvordan man bær.
 <head>
   <title>Til et Billed af Perugino</title>
   <firstline>Du skønne Engel med de brede Vinger</firstline>
+  <pictures>
+    <!-- Identifikationen som netop dette maleri er sandsynlig; en ekstern kilde, der udtrykkeligt forbinder Ipsens sonet med NG288.2, er ikke dokumenteret. -->
+    <picture artwork="kunst/perugino-aerkeenglen-mikael-1496-1500" primary="true"/>
+  </pictures>
   <source pages="159"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="london" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5014,6 +5151,7 @@ undfangede hans Haand et himmelsk Billed.
   <title>I Høst</title>
   <firstline>Nu stænker Høsten alt sit bronzebrune</firstline>
   <source pages="160"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5044,6 +5182,7 @@ en Herskervillie snoer sin røde Traad.
   <title>Oktober</title>
   <firstline>En ægte Maler fødtes Du Oktober</firstline>
   <source pages="161"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5074,6 +5213,10 @@ og sletter med et Strøg det hele ud.
   <title>Solopgang paa Havet</title>
   <firstline>Rundt om os hviler Havet perlegraat</firstline>
   <source pages="162"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="baltic-sea" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5106,6 +5249,7 @@ mens Kronen blinkende sit Blad bevæger.
   <title>En Slægt</title>
   <firstline>Tag gennem mig, Du Slægt, der en Gang kommer</firstline>
   <source pages="163"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5136,6 +5280,7 @@ af, hvad der en Gang rørte sig hos mange.
   <title>Mit Land</title>
   <firstline>Hvor er det Land, hvor Timen ikke svinder</firstline>
   <source pages="164"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5166,6 +5311,7 @@ ned over Havens fagre Blomsterdrømme.
   <title>Hvidt Lys</title>
   <firstline>Man siger, denne Mand har ingen Tro</firstline>
   <source pages="165"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5196,6 +5342,10 @@ i dette hvidt af himmelfødte Drømme.
   <title>Verdensvandrer</title>
   <firstline>Upløjet ruller Du foran min Dør</firstline>
   <source pages="166"/>
+  <keywords>sonnet</keywords>
+  <places>
+    <place ref="bornholm" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5228,6 +5378,7 @@ og styrket faaer jeg det af Dig tilbage.
   <title>Vær Du mit Liv en Ring af blanke Dage</title>
   <firstline>Vær Du mit Liv en Ring af blanke Dage</firstline>
   <source pages="167"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5258,6 +5409,7 @@ Her hviler én, som sagde Tak for Livet.
   <title>Alfa og Omega</title>
   <firstline>Saa samles alt til sidst til Tak og Lov</firstline>
   <source pages="168"/>
+  <keywords>sonnet</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

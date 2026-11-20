@@ -2115,6 +2115,9 @@ de Stavnsbaand aldrig løses!
   <title>Danmark</title>
   <firstline>Ud for Verdens Herregaarde</firstline>
   <source pages="63-65"/>
+  <places>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8792,6 +8795,7 @@ og Længslerne dybest inde -
   <source pages="253-259"/>
   <places>
     <place ref="lake-esrum" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>

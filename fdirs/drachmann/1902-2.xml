@@ -21,6 +21,9 @@
   <subtitle>Til andet halvbind</subtitle>
   <firstline>Vel mødt igen! — og har man ment mig træt</firstline>
   <source pages="1-7"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
@@ -2538,6 +2541,9 @@ og Don Juan græd, mens den Ed han svor
   <title>Anmærkninger til ottende Sang</title>
   <nofirstline/>
   <source pages="105-110"/>
+  <places>
+    <place ref="turkey" relation="mentioned"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
@@ -2560,6 +2566,9 @@ og Don Juan græd, mens den Ed han svor
     <note editorial="true">Oversættelse af niende sang i Byrons <xref type="translation" poem="byron1999040909"/>.</note>
   </notes>
   <source pages="113-141"/>
+  <places>
+    <place ref="russia" relation="setting"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
@@ -3422,6 +3431,9 @@ skal gøre baade Nerver godt og Hjærne.
   <title>Anmærkninger til niende Sang</title>
   <nofirstline/>
   <source pages="145-151"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
@@ -3447,6 +3459,8 @@ skal gøre baade Nerver godt og Hjærne.
   <source pages="155-184" facsimile-pages="170-199"/>
   <places>
     <place ref="roncesvalles" relation="mentioned"/>
+    <place ref="poland" relation="setting"/>
+    <place ref="russia" relation="setting"/>
   </places>
   <quality>kilde,side</quality>
 </head>
@@ -4350,6 +4364,9 @@ som Rolands Horn i Roncesvalles' Dale.
     <note editorial="true">Oversættelse af ellevte sang i Byrons <xref type="translation" poem="byron1999040911"/>.</note>
   </notes>
   <source pages="193-223" facsimile-pages="208-238"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
@@ -6206,6 +6223,9 @@ og sig Jer Mening saa om vore Tænkere,
     <note editorial="true">Oversættelse af trettende sang i Byrons <xref type="translation" poem="byron1999040913"/>.</note>
   </notes>
   <source pages="275-312" facsimile-pages="294-331"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>kilde,side</quality>
 </head>
 <body>
