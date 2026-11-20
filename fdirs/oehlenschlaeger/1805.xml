@@ -12,8 +12,24 @@
     <picture type="titlepage" src="1805I-p1.jpg"><transcription>Adam Oehlenschlägers / Poetiske Skrifter. / Første Deel. / Kiøbenhavn, 1805. / Forlagt af Hofboghandler J. H. Schubothe; / trykt hos Andreas Seidelin.</transcription></picture>
     <picture src="1805II-p1.jpg">Titelbladet til anden del af <i>Poetiske Skrifter</i> (1805).<br/>,,Adam Oehlenschlägers / Poetiske Skrifter. / Anden Deel. / Kiøbenhavn, 1805. / Forlagt af Hofboghandler J. H. Schubothe; / trykt hos Andreas Seidelin.''</picture>
   </pictures>
-  <source id="bd1" href="https://www.kb.dk/e-mat/dod/11520805651F-color.pdf" facsimile="1805-1" facsimile-pages-num="515" facsimile-pages-offset="31"><i>Poetiske Skrifter</i> (1805), I.</source>
-  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf" facsimile="1805-2" facsimile-pages-num="445" facsimile-pages-offset="7"><i>Poetiske Skrifter</i> (1805), II.</source>
+  <source id="bd1" href="https://www.kb.dk/e-mat/dod/11520805651F-color.pdf" facsimile="1805-1" facsimile-pages-num="515" facsimile-pages-offset="31">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <volume>1</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>J. H. Schubothe</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1805</year>
+  </source>
+  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf" facsimile="1805-2" facsimile-pages-num="445" facsimile-pages-offset="7">
+    <author id="oehlenschlaeger">Adam Oehlenschläger</author>
+    <title>Poetiske Skrifter</title>
+    <volume>2</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>J. H. Schubothe</publisher>
+    <printer>Andreas Seidelin</printer>
+    <year>1805</year>
+  </source>
   <!-- Anden dels skanning springer fra trykt side 96 (103. PDF-side) til 101 (104. PDF-side). Efter springet er forskydningen 3. -->
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
