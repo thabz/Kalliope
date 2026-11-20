@@ -267,7 +267,6 @@ Include, when present and textually relevant:
 - introductions
 - prefaces
 - afterwords
-- dedications
 - mottoes
 - explanatory prose
 - editorial notes
@@ -275,6 +274,12 @@ Include, when present and textually relevant:
 
 A prose introduction must be represented as its own Kalliope text according to
 the current XML format. Do not reduce it to a summary or work-level note.
+
+Dedication leaves must be transcribed as work-level notes in
+`<workhead><notes><note>`, never as separate `<text>` entries. Preserve the
+printed dedication's wording and punctuation; a short label such as
+`Dedikationsblad: »Til min Hustru.«` may identify it. As source text, the
+dedication does not receive `editorial="true"`.
 
 Use the title page, colophon and similar pages as metadata sources even when
 they are not represented as separate texts.
@@ -1860,8 +1865,8 @@ For a complete import, all applicable items below must be true:
       blank line.
 - [ ] Physical print-line wraps and page breaks within continuing prose
       paragraphs did not introduce false paragraph boundaries or spacing.
-- [ ] Relevant introductions, prefaces, afterwords, dedications and mottoes were
-      included.
+- [ ] Relevant introductions, prefaces, afterwords and mottoes were included;
+      dedication leaves were transcribed as work-level notes, not separate texts.
 - [ ] Advertisements were excluded.
 - [ ] The table of contents was excluded as a text.
 - [ ] The title page was transcribed into the work header using readable
