@@ -4503,6 +4503,7 @@ Vil visne, som en Blomst i fremmed Jord.
   <places>
     <place ref="denmark" relation="subject" primary="true"/>
     <place ref="elbe" relation="mentioned"/>
+    <place ref="bornholm" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -13607,6 +13608,7 @@ Det er Herrens eget Bud.
   <source pages="443-604"/>
   <places>
     <place ref="regensen" relation="mentioned"/>
+    <place ref="bornholm" relation="mentioned"/>
   </places>
   <quality>kilde,side</quality>
 </head>

@@ -118,6 +118,9 @@ i Hestenes Haler og Manker.
   <title>Polsk Gudstjeneste</title>
   <firstline>Middagssol i Herregaarden</firstline>
   <source pages="10"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -334,6 +337,9 @@ nu ogsaa spille Lyre -?
   <title>Gamle Hans Mikkelsen</title>
   <firstline>Udenfor Fængslet gaar Mikkelsen Vagt</firstline>
   <source pages="16"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1014,6 +1020,9 @@ og en Femtenpundsgedde paa Nakken.
   <title>Sletten</title>
   <firstline>Jeg aabner, ved Midnat, mit Vindu mod Sletten</firstline>
   <source pages="39-40"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1425,6 +1434,9 @@ stormedes til ét.
   <title>Solnedgang over Polen</title>
   <firstline>Dagen lider, og Solen gaar under</firstline>
   <source pages="55-56"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

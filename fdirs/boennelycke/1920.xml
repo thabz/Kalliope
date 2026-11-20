@@ -2492,6 +2492,9 @@ Storm den kæk i Møde og mød den i et Brag!
   <title>Hilsen til Finland</title>
   <firstline>Som en skyggende Mur stod Rusland rejst</firstline>
   <source pages="123-124"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3247,6 +3250,9 @@ Du fristed mig selv at slaa, og slaa først!
   <title>Europæisk Renaissance</title>
   <firstline>Der drager over Verden en forrygende Vinter</firstline>
   <source pages="155-157"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
