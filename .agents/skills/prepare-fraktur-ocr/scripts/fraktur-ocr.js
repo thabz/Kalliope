@@ -696,6 +696,10 @@ const recognizeBundle = async (root, options = {}) => {
     model: model == null ? null : { ...danishPilotRelease, cache_status: model.cacheStatus },
   };
   bundle.stages.recognize = runs.every(run => run.status === 'complete') ? 'complete' : 'failed';
+  bundle.stages.compare = 'pending';
+  bundle.stages.verify = 'pending';
+  delete bundle.comparison;
+  delete bundle.verification;
   writeJson(bundleFile, bundle);
   return runs;
 };
