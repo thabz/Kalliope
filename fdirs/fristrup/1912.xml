@@ -101,6 +101,9 @@ hvaar Geniusser paa mig ondit titte!
   <title>Vaarbrud</title>
   <firstline>Det sydder og det brækker</firstline>
   <source pages="11"/>
+  <places>
+    <place ref="north-pole" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -253,6 +256,9 @@ til Valdbor: „Mø for alle Blommer“!
   <subtitle>(Et Bellede fra Sidsilien).</subtitle>
   <firstline>Oh, rullende Buller! Ha, rasende Ekko!</firstline>
   <source pages="17"/>
+  <places>
+    <place ref="sicily" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -391,6 +397,14 @@ da ryer Din hele Formue!
   <subtitle>Versefisiert Nutisroman.</subtitle>
   <firstline>Baronæse Elfrida la paa en Kanepe</firstline>
   <source pages="27-34"/>
+  <places>
+    <place ref="paris" relation="setting"/>
+    <place ref="budapest" relation="setting"/>
+    <place ref="denmark" relation="setting"/>
+    <place ref="copenhagen" relation="setting"/>
+    <place ref="hotel-bristol-copenhagen" relation="setting"/>
+    <place ref="india" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -585,6 +599,16 @@ hun har en! Bogen hun kaller:
   <title>Uro paa Balkan</title>
   <firstline>Fordybt i Poesi og Romantek</firstline>
   <source pages="37-38"/>
+  <places>
+    <place ref="balkan" relation="subject" primary="true"/>
+    <place ref="serbia" relation="mentioned"/>
+    <place ref="montenegro" relation="mentioned"/>
+    <place ref="europe" relation="mentioned"/>
+    <place ref="austria" relation="mentioned"/>
+    <place ref="bulgaria" relation="mentioned"/>
+    <place ref="netherlands" relation="mentioned"/>
+    <place ref="amaliegade" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -633,6 +657,13 @@ naar Garden lar sin Hue stolt beondre!
   <title>Stormen mod Kjøbenhavn<footnote>fremsakt af P. Ferd. Vadum ved Festen i Snolderød for Stormens 100aarie Bestaaen.</footnote></title>
   <firstline>Ifal en Svensker spørrer: Hvofor flagres</firstline>
   <source pages="39-40"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="nabolos" relation="setting"/>
+    <place ref="stormgade" relation="setting"/>
+    <place ref="snolderod" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -690,6 +721,11 @@ Fresbægret tømmer vi i Vendskabs Dunst!
   <title>Jisland</title>
   <firstline>Svolm, Jisland, højt paa Polens hvide Spis</firstline>
   <source pages="41"/>
+  <places>
+    <place ref="iceland" relation="subject" primary="true"/>
+    <place ref="north-pole" relation="mentioned"/>
+    <place ref="hekla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -722,6 +758,10 @@ den gamle Øe til Uvikling og Glæde!
   <title>Frægatten Jylland</title>
   <firstline>Siig, skal den fælles? Jylland, skal den fælles?</firstline>
   <source pages="42-43"/>
+  <places>
+    <place ref="heligoland" relation="setting"/>
+    <place ref="frederiksberg-gardens-canals" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -770,6 +810,16 @@ seer ned med Haan paa Mastens fulle Segl.
   <title>Til Frankris Pressedent<footnote>De franske Inpulser har jeg faat af en Svaager, der har ernært sig i længere Tid i Paris som Tilskjærer.</footnote></title>
   <firstline>Jeg er ej Fransmand, siger frit det aabent</firstline>
   <source pages="47-48"/>
+  <places>
+    <place ref="france" relation="subject" primary="true"/>
+    <place ref="paris" relation="mentioned"/>
+    <place ref="loire" relation="mentioned"/>
+    <place ref="notre-dame-paris" relation="mentioned"/>
+    <place ref="seine" relation="mentioned"/>
+    <place ref="madeleine-paris" relation="mentioned"/>
+    <place ref="moulin-rouge" relation="mentioned"/>
+    <place ref="place-de-greve" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -825,6 +875,11 @@ det bør, det vil, det skal, det skulde Du!
   <title>Amandus og Malvina Lillelund</title>
   <firstline>Jeg veed en Mand i Snolderød</firstline>
   <source pages="49-50"/>
+  <places>
+    <place ref="snolderod" relation="setting" primary="true"/>
+    <place ref="europe" relation="mentioned"/>
+    <place ref="north-pole" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -863,6 +918,9 @@ nu jubler til Jer Priis!
   <firstline>Den store Aan med graanet Haar til Priis</firstline>
   <source pages="51"/>
   <keywords>brandes</keywords>
+  <places>
+    <place ref="paris" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -895,6 +953,12 @@ saa Værden jubbler ved din Fakkels Væsen!
   <title>Spanniens Haab</title>
   <firstline>Saa blev han født, den lille spandske Prinds —</firstline>
   <source pages="52"/>
+  <places>
+    <place ref="spain" relation="setting" primary="true"/>
+    <place ref="barcelona" relation="mentioned"/>
+    <place ref="extremadura" relation="mentioned"/>
+    <place ref="catalonia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -927,6 +991,11 @@ oh, løses Spanniens Stivhed ej ad Aare?
   <title>Til Mestermaleren Carl Lund</title>
   <firstline>Engang jeg sel med Ivver førde Pænslen</firstline>
   <source pages="53-54"/>
+  <places>
+    <place ref="round-tower-copenhagen" relation="setting"/>
+    <place ref="north-pole" relation="mentioned"/>
+    <place ref="naples" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -984,6 +1053,11 @@ vor Globus rundt i Rødt og Gult og Blaat!
   <title>Norges Kronprinds</title>
   <firstline>Saa elsket nyddelit af Alle</firstline>
   <source pages="55-56"/>
+  <places>
+    <place ref="norway" relation="setting" primary="true"/>
+    <place ref="dovrefjell" relation="setting"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1075,6 +1149,11 @@ og fløgtet til Dalen, den tystne.
   <firstline>Det var i Juni, Dagen brød den femte</firstline>
   <source pages="63-64"/>
   <keywords>frederik7</keywords>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="skagen" relation="mentioned"/>
+    <place ref="copenhagen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1200,6 +1279,9 @@ og ringlede med Ranglens Buggebjæller!
     </picture>
   </pictures>
   <source pages="68-70"/>
+  <places>
+    <place ref="sengeloese" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1269,6 +1351,14 @@ for Konsten, Lopperne og for — <w>Kameliedamen</w>!
   <title>Helsen til Aarhuus</title>
   <firstline>Hild, Jyllands stolde Hovestad</firstline>
   <source pages="71-72"/>
+  <places>
+    <place ref="aarhus" relation="subject" primary="true"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="kattegat" relation="mentioned"/>
+    <place ref="aarhus-bay" relation="mentioned"/>
+    <place ref="saint-clement-cathedral-aarhus" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1358,6 +1448,15 @@ at hente Seirens Priis til min Sjokei!
   <title>Gjennem Hovestaden</title>
   <firstline>Jeg slentrer langs den gloende Asfalt</firstline>
   <source pages="76-77"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+    <place ref="kongens-nytorv" relation="setting"/>
+    <place ref="dangleterre" relation="setting"/>
+    <place ref="ostergade-copenhagen" relation="setting"/>
+    <place ref="hojbro-plads" relation="setting"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="snolderod" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1415,6 +1514,10 @@ for mig er Snolderød en Lykkestjærne!
   <title>Hansa</title>
   <firstline>Se! der flyver Hansa —!</firstline>
   <source pages="78"/>
+  <places>
+    <!-- Hansas besøg i København i september 1912 er dokumenteret af Nationalmuseet: https://samlinger.natmus.dk/dnt/asset/71345 -->
+    <place ref="copenhagen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1507,6 +1610,10 @@ et liflit Solskindsaar“! med øm Mani.
   <title>Da Stenen lagtes</title>
   <firstline>Da Stenen lagtes ner — det goes i Skeen</firstline>
   <source pages="82"/>
+  <places>
+    <place ref="third-christiansborg-palace" relation="setting" primary="true"/>
+    <place ref="copenhagen" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
