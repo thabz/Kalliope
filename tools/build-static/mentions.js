@@ -44,7 +44,7 @@ const collectPersonOrKeywordRefs = refsByFile => {
     if (type === 'mention') {
       if (
         collection.mention.indexOf(fromPoemId) === -1 &&
-        collection.translation.indexOf(fromPoemId) === -1
+        !collection.translation.some(t => t.translationPoemId === fromPoemId)
       ) {
         collection.mention.push(fromPoemId);
       }
@@ -328,13 +328,8 @@ const build_mentions_data = (
         seenMentionIds.add(id);
         return true;
       })
-      .filter((id) => {
-        const isAlsoTranslation = seenTranslations.has(id);
-        if (isAlsoTranslation) {
-          console.log(`Translation ${id} has superfluous mention.`);
-        }
-        return !isAlsoTranslation;
-      })
+      // En omtale kan komme fra en anden variant af samme oversættelse.
+      .filter((id) => !seenTranslations.has(id))
       .map(build_html);
   }
 

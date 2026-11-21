@@ -155,6 +155,30 @@ describe('mentions data', () => {
     expect(refs.has('bango')).toBe(false);
   });
 
+  it('samler oversættelse og omtale uanset rækkefølgen', () => {
+    const translation = {
+      toKey: 'reboul',
+      fromPoemId: 'aarestrup2018110521',
+      type: 'translation',
+      toPoemId: 'reboul2019013101',
+    };
+    const mention = {
+      toKey: translation.toKey,
+      fromPoemId: translation.fromPoemId,
+      type: 'mention',
+    };
+    for (const entries of [[translation, mention], [mention, translation]]) {
+      const refs = collectPersonOrKeywordRefs(new Map([['1863.xml', entries]]));
+      expect(refs.get('reboul')).toEqual({
+        mention: [],
+        translation: [{
+          translationPoemId: translation.fromPoemId,
+          translatedPoemId: translation.toPoemId,
+        }],
+      });
+    }
+  });
+
   it('indsamler refs fra et nyt værk, selv om filen er uændret', () => {
     loadCachedJSON.mockImplementation((key) => {
       if (key === 'collected.person_or_keyword_refs') {
@@ -183,8 +207,9 @@ describe('mentions data', () => {
     );
   });
 
-  it('viser oversættelser fra den primære variant', () => {
+  it('viser oversættelsen fra den primære variant én gang', () => {
     const collected = buildCollected();
+    collected.person_or_keyword_refs.get('reboul').mention.push('aarestrup2018110521');
     const data = build_mentions_data(
       collected.poets.get('reboul'),
       'reboul',
@@ -197,6 +222,7 @@ describe('mentions data', () => {
       'aarestrup2018110521'
     );
     expect(data.translations[0].translated.poem.id).toBe('reboul2019013101');
+    expect(data.mentions).toEqual([]);
   });
 
   it.each([
