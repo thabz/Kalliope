@@ -109,13 +109,11 @@ const Recommendations = ({ items }) => {
       <ul>
         {items.map(item => (
           <li key={item.id}>
-            <a href={`/${lang}${item.href}`}>
-              <span>
-                <span className="title" lang={item.lang}>{item.title}</span>
-                <span className="poet">{item.poet}</span>
-              </span>
-              {item.image != null ? <img src={item.image} alt="" /> : null}
-            </a>
+            <div>
+              <a href={`/${lang}${item.href}`} lang={item.lang}>{item.title}</a>
+              <div className="poet">{item.poet}</div>
+            </div>
+            {item.image != null ? <img src={item.image} alt="" /> : null}
           </li>
         ))}
       </ul>
@@ -130,8 +128,6 @@ const Recommendations = ({ items }) => {
         }
         li {
           border-bottom: 1px solid rgba(128, 128, 128, 0.35);
-        }
-        a {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -145,9 +141,6 @@ const Recommendations = ({ items }) => {
           flex-shrink: 0;
           object-fit: cover;
           border-radius: 3px;
-        }
-        .title, .poet {
-          display: block;
         }
         .poet {
           font-size: 0.9em;
