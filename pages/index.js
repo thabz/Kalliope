@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { createURL } from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import { latestNewsForDate } from '../common/news.js';
@@ -99,15 +99,29 @@ const TodaysEvents = ({ events }) => {
 
 const Recommendations = ({ items }) => {
   const lang = useContext(LangContext);
+  const [categoryIndex, setCategoryIndex] = useState(0);
   if (items.length === 0) {
     return null;
   }
 
+  const categories = Array.isArray(items[0].items) ? items : [{ items }];
+  const category = categories[categoryIndex % categories.length];
+  const stepCategory = direction => {
+    setCategoryIndex(index => (index + direction + categories.length) % categories.length);
+  };
+
   return (
     <section>
       <SubHeading>{_('Særligt anbefalet', lang)}</SubHeading>
+      {categories.length > 1 ? (
+        <div className="category-picker">
+          <button type="button" aria-label={_('Forrige kategori', lang)} onClick={() => stepCategory(-1)}>←</button>
+          <h3 aria-live="polite" lang="da">{category.title}</h3>
+          <button type="button" aria-label={_('Næste kategori', lang)} onClick={() => stepCategory(1)}>→</button>
+        </div>
+      ) : null}
       <ul>
-        {items.map(item => (
+        {category.items.map(item => (
           <li key={item.id}>
             <div>
               <a href={`/${lang}${item.href}`} lang={item.lang}>{item.title}</a>
@@ -125,6 +139,32 @@ const Recommendations = ({ items }) => {
           list-style: none;
           margin: -22px 0 0;
           padding: 0;
+        }
+        .category-picker {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          margin: -22px 0 12px;
+        }
+        .category-picker + ul {
+          margin-top: 0;
+        }
+        .category-picker h3 {
+          margin: 0;
+          font-size: 1em;
+          font-weight: 600;
+          text-align: center;
+        }
+        .category-picker button {
+          min-width: 36px;
+          min-height: 36px;
+          border: 1px solid rgba(128, 128, 128, 0.35);
+          border-radius: 3px;
+          background: transparent;
+          color: inherit;
+          font-size: 1em;
+          cursor: pointer;
         }
         li {
           border-bottom: 1px solid rgba(128, 128, 128, 0.35);

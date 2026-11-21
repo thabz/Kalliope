@@ -3,8 +3,8 @@ import { poetLastNameString } from '../../components/poetname-helpers.js';
 import { loadJSON, writeJSON } from '../libs/helpers.js';
 
 export const buildRecommendations = ({ texts }) => {
-  const ids = loadJSON('content/recommendations.json');
-  const recommendations = ids.map(id => {
+  const categories = loadJSON('content/recommendations.json');
+  const resolveText = id => {
     if (texts.has(id) === false) {
       throw new Error(`Ukendt tekst-id i content/recommendations.json: ${id}`);
     }
@@ -22,6 +22,10 @@ export const buildRecommendations = ({ texts }) => {
       href: `/text/${id}`,
       image: text.pictures[0]?.src ?? null,
     };
-  });
+  };
+  const recommendations = categories.map(({ title, texts }) => ({
+    title,
+    items: texts.map(resolveText),
+  }));
   writeJSON('public/api/recommendations.json', recommendations);
 };
