@@ -81,7 +81,25 @@ describe('front page without generated API files', () => {
     expect(props.news).toEqual([]);
   });
 
-  it('returns empty data when both requests fail', async () => {
+  it.each([404, 200])('hides recommendations with an empty response or HTTP %i', async (status) => {
+    global.fetch = jest.fn(async (url) =>
+      url.endsWith('/api/recommendations.json') && status === 404
+        ? { ok: false, status }
+        : jsonResponse([])
+    );
+
+    const props = await Index.getInitialProps({ query: { lang: 'da' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da">
+        <Index {...props} />
+      </LangContext.Provider>
+    );
+
+    expect(props.recommendations).toEqual([]);
+    expect(html).not.toContain('Særligt anbefalet');
+  });
+
+  it('returns empty data when all requests fail', async () => {
     global.fetch = jest.fn(async () => {
       throw new Error('API unavailable');
     });
