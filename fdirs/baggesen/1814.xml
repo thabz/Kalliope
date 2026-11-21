@@ -2461,6 +2461,9 @@ Derfor forvar mig den, som sagt!
     <printer>Græbes Bogtrykkeri</printer>
     <year>1891</year>
   </source>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2690,6 +2693,9 @@ Faaer Krampe, Sting, og Slag, og døer.
     <printer>Græbes Bogtrykkeri</printer>
     <year>1891</year>
   </source>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -5173,6 +5179,9 @@ Min søde Line, slut dig til!
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -5554,6 +5563,9 @@ Saa dog (da denne Plads er, troer jeg, end in blanco)
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -5961,6 +5973,9 @@ Sig styrtende med Skiold og Spyd deri.
   <notes>
     <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
+  <places>
+    <place ref="zion" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

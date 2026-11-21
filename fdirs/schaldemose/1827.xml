@@ -1367,6 +1367,9 @@ Det skeede i Tanker, som let kan hænde;
   <title>Femte Bog</title>
   <firstline>Nu bruger Mikkel Ræv sit hele Vid</firstline>
   <source pages="56-71"/>
+  <places>
+    <place ref="flanders" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1766,6 +1769,7 @@ Af ham belønnes med Huld og Naade.
   <source pages="72-83"/>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="flanders" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2948,6 +2952,9 @@ Ret snart I har mig igjen tilbage.”
   <title>Tiende Bog</title>
   <firstline>En hæslig Bog, hvori Poeten slaaer</firstline>
   <source pages="120-135"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

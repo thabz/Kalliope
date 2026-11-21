@@ -8,6 +8,9 @@ i specialdokumenterne nedenfor.
 
 Læs den relevante specialdokumentation før ændringer på området:
 
+- `docs/thumbnail-cache.md` ved ændringer i thumbnail-generering, billedcache
+  eller målinger af billedtrinnet
+
 - `docs/kalliope-icons-design.md` ved ændringer i dagsikoner eller
   portrætprioriteringer for **I dag**
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
@@ -29,6 +32,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   facsimilelinks til Det Kgl. Bibliotek
 - `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
   ændringer i SQLite-buildet eller analyseværktøjer
+- `docs/elasticsearch-build.md` ved ændringer i søgeindeksering, bulkbuffer,
+  indeks-checkpoints eller målinger af Elasticsearch-trinnet
 - `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
   korpusdatasæt eller dets discovery-endpoint
 - `docs/keyword-system.md` ved oprettelse, kategorisering, sammenlægning eller

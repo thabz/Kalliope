@@ -1603,6 +1603,9 @@ Til Lykke med den!
     <note>Efter den <a bible="bibelsalme74">74de Davids-Psalme</a></note>
   </notes>
   <source pages="41-45"/>
+  <places>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -14742,6 +14745,9 @@ Gienføder Fred og Lykke!
     <note>Kingos, med samme Begyndelse, forandret</note>
   </notes>
   <source pages="363-365"/>
+  <places>
+    <place ref="nazareth" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -16581,6 +16587,9 @@ Guds Søn og Aanden ligerviis
   <title><num>201.</num>Nazareth og Bethlehem</title>
   <firstline>Nazareth og Bethlehem!</firstline>
   <source pages="409-410"/>
+  <places>
+    <place ref="nazareth" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

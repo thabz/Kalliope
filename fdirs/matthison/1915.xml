@@ -365,6 +365,9 @@ de høje Træers Sus.
   <title>Bornholm</title>
   <firstline>Jeg kom fra Sjællands kornbevokste Dale</firstline>
   <source pages="11"/>
+  <places>
+    <place ref="bornholm" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -478,6 +481,9 @@ Kunstneren lever og ved han er til.
   <title>Haga</title>
   <firstline>Vejen til Haga er prægtig</firstline>
   <source pages="15"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

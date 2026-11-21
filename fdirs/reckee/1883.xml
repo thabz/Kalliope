@@ -478,6 +478,9 @@ Som nogen Digter kan skrive!
   <title>Ved Afsløringen af Viceprovst Fabricius’ Buste paa Regentsen</title>
   <firstline>Ude Bladet falder</firstline>
   <source pages="20-22"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4852,6 +4855,9 @@ Over sin tabte Krands.
   </dates>
   <source pages="196"/>
   <keywords>sonnet,shakespeare</keywords>
+  <places>
+    <place ref="verona" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

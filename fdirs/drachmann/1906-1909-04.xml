@@ -4419,6 +4419,9 @@ Jeg tænker at høre et Ekko derhjemme.
   <title>Rimbrev til Esrom Sø</title>
   <firstline>Fjernt fra din Strand, i Verdensbyens Gader</firstline>
   <source pages="165-172"/>
+  <places>
+    <place ref="lake-esrum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5975,6 +5978,7 @@ Min ærede Svoger er gal!
   <keywords>byron,shelley</keywords>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -9693,6 +9697,9 @@ Med stormende Hjerte jeg gik?
   <title><num>5.</num>Kan I vel give mig gode Raad</title>
   <firstline>Kan I vel give mig gode Raad</firstline>
   <source pages="270"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17929,6 +17936,9 @@ Det er Marstrands og Admiral Tordenskjolds Skaal!
   <title>Gæstebudet</title>
   <firstline>Vinternat i Residensen</firstline>
   <source pages="491-502"/>
+  <places>
+    <place ref="christianshavn" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

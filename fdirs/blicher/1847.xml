@@ -7498,6 +7498,9 @@ Og i troløs Afgrund segner
   <firstline>Glat var din Kind, da første gang</firstline>
   <source in="bd1" pages="221-223"/>
   <keywords>knittelvers</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -8185,6 +8188,8 @@ Lærken blandt Gravene bygger sit Rede,
     <place ref="copenhagen" relation="setting"/>
     <place ref="ven" relation="setting"/>
     <place ref="kullaberg" relation="setting" primary="true"/>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="carthage" relation="mentioned"/>
   </places>
 </head>
 <body>
@@ -8540,6 +8545,7 @@ Saa staaer dit Rede trygt og fast.
     <place ref="samso" relation="setting"/>
     <place ref="aarhus" relation="setting" primary="true"/>
     <place ref="grenaa" relation="setting"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
 </head>
 <body>
@@ -9254,6 +9260,7 @@ Frihed og Ære og Skjaldesange skal vindes! <note>See <a poem="blicher2019010402
   <source in="bd2" pages="37-51"/>
   <places>
     <place ref="viborg" relation="setting" primary="true"/>
+    <place ref="regensen" relation="mentioned"/>
   </places>
 </head>
 <body>

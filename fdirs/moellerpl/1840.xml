@@ -1112,6 +1112,9 @@ Intet kan et Moderbryst opveje.
   <title>Nordens Pris</title>
   <firstline>Blond er Nordens bolde Søn</firstline>
   <source pages="41-42"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1169,6 +1172,9 @@ Midt imellem begge staar
   <title>Bevæget Liv</title>
   <firstline>Jeg elsker et bevæget Liv</firstline>
   <source pages="43-46"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2798,6 +2804,9 @@ Ingen maa længer nu dvæle heroppe. —
   <title>Juli</title>
   <firstline>Hvor Sommeren dufter vidunderlig frisk!</firstline>
   <source pages="92-109"/>
+  <places>
+    <place ref="trekroner-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5456,6 +5465,9 @@ For alle — paa Latin:
   <title>I en gammel Students Stambog</title>
   <firstline>Af Venskab og af Venner har du nok</firstline>
   <source pages="178-181"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5592,6 +5604,9 @@ Saa napper jer Udsmitteren, den skrækkelige Mand.
   <subtitle>(Den 30te Septbr. 1835.)</subtitle>
   <firstline>Op, gamle Gutter, I, som tidt</firstline>
   <source pages="182-183"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5647,6 +5662,9 @@ Hen over Kroens friske Grav!
     <note editorial="true">Mottoet stammer fra Horats' »Ode 1:18«.</note>
   </notes>
   <source pages="184-187"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5755,6 +5773,10 @@ Som kan djærvt mod Fordom fægte,
   <title>De to Hjem</title>
   <firstline>Der er et Hjem tæt ved runde Taarn</firstline>
   <source pages="187-189"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5844,6 +5866,9 @@ Og lad dem med Regensen leve!
   </subtitle>
   <firstline>Da nuomstunder alle</firstline>
   <source pages="189-191"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6202,6 +6227,9 @@ Og sende din Pris imod Himlens Blaa,
   <firstline>Et Smertens Budskab bæres over Vande</firstline>
   <source pages="200-201"/>
   <keywords>ottave-rime</keywords>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6244,6 +6272,9 @@ Du jydske Hede, dæmp din barske Kulde,
     <note editorial="true">Senere trykt i <a work="moellerpl/1847"><i>Billeder og Sange</i> (1847)</a> med underoverskrifen ,,1837''.</note>
   </notes>
   <source pages="201-204"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6710,6 +6741,9 @@ Stød til! — den er tømt og saa — bort!
   <title>De bortflyttende</title>
   <firstline>O Venner, paa en Skillevej</firstline>
   <source pages="215-216"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6760,6 +6794,9 @@ Og dele vore Ruse.
     <note editorial="true">Senere trykt i <a work="moellerpl/1847"><i>Billeder og Sange</i> (1847)</a> med titlen »Farvel til Regentsen«.</note>
   </notes>
   <source pages="216-218"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9870,6 +9907,7 @@ Den netop Munden lukker.
   <keywords>ottave-rime</keywords>
   <places>
     <place ref="tiber" relation="mentioned"/>
+    <place ref="capitoline-hill" relation="setting"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

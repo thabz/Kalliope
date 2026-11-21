@@ -1216,6 +1216,9 @@ for al Skabningens Sol i Fortærelsens Brand!
   <firstline>Der findes en gammel Vise</firstline>
   <!-- TODO: Find folkevisen »Det haver saa nyligen regnet«. -->
   <source pages="58-60"/>
+  <places>
+    <place ref="lake-esrum" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1531,6 +1534,9 @@ og dikterede dette Brev!
   </notes>
   <source pages="72-77"/>
   <keywords>tasso,ewald,mueller,ariosto,thorvaldsen</keywords>
+  <places>
+    <place ref="lake-esrum" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2721,6 +2727,9 @@ Dem bygges en Sonet af Takkens Ord!
   <toctitle><num>V.</num>Vejle</toctitle>
   <firstline>Som Rosenknoppen, der i Mosset boer</firstline>
   <source pages="127"/>
+  <places>
+    <place ref="jelling" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>

@@ -177,3 +177,11 @@ describe('contiguous embedded poems', () => {
     expect(() => execFileSync('xmllint', ['--noout', '--relaxng', 'schemas/kalliopework.rng', '-'], { input: xml, stdio: 'pipe' })).not.toThrow();
   });
 });
+
+
+it('exports the language of each block independently', () => {
+  const doc = parse('<text><body><poetry lang="zh">鄭還詩</poetry><prose>Dansk tekst.</prose></body></text>');
+  const blocks = buildTextBlocks(doc.documentElement, collected);
+  expect(blocks[0].content_lang).toBe('zh');
+  expect(blocks[1].content_lang).toBeUndefined();
+});

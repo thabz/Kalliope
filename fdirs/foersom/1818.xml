@@ -377,6 +377,9 @@ og hvo Dig <w>følte</w>, Ven! Dig derfor ei forstod.
   <firstline>Ei paa Qvindeviis at græde</firstline>
   <source pages="8-11"/>
   <keywords>abrahamson</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4606,6 +4609,9 @@ en Gave med, hiin Ædles Minde værd?
     <event>1816-05-04</event>
   </dates>
   <source pages="159-162"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5609,6 +5615,9 @@ bidrog vist ei lidet til Stykkets Fald. - Kort efter reiste Thomson udenlands me
     <note editorial="true">Gendigtning af James Thomsons <xref type="translation" poem="thomson2017122901"/>.</note>
   </notes>
   <source in="bd2" pages="9-60"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6806,6 +6815,7 @@ hvor evig Salighed og Elskov herske!
   <source in="bd2" pages="61-110"/>
   <places>
     <place ref="pyrenees" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

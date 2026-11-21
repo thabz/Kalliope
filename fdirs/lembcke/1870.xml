@@ -1538,6 +1538,9 @@ staa med dig og falde!
   <subtitle>(1845.)</subtitle>
   <firstline>De samles trindt i Nordens Land</firstline>
   <source pages="64-66"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2043,6 +2046,9 @@ bor Fredrik den Danskes Minde!
   <title>Danmarks Sorg</title>
   <firstline>Der ruger en Sorg paa Folket; det lytter ej paa Trøst</firstline>
   <source pages="90-92"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

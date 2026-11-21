@@ -2046,6 +2046,9 @@ Jeg tænker at høre et Ekko derhjemme.
   <title>Rimbrev til Esrom Sø</title>
   <firstline>Fjærnt fra din Strand, i Verdensbyens Gader</firstline>
   <source pages="73-84"/>
+  <places>
+    <place ref="lake-esrum" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3587,6 +3590,7 @@ Min ærede Svoger er gal!
   <keywords>byron,hardy,shelley</keywords>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7325,6 +7329,9 @@ med stormende Hjærte jeg gik?
   <title><num>5.</num>Kan I vel give mig gode Raad</title>
   <firstline>Kan I vel give mig gode Raad</firstline>
   <source pages="293"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

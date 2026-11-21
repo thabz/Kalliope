@@ -18,6 +18,9 @@
   <title>Til George Brandes</title>
   <firstline>Ene og uden Støtte, mod Herskerne vendt, jeg stod!</firstline>
   <source pages="i-v" facsimile-pages="15" />
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2133,6 +2136,7 @@ med Galskab at prise.
   <source pages="102-105"/>
   <places>
     <place ref="elbe" relation="mentioned"/>
+    <place ref="poland" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

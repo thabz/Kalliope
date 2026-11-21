@@ -38,6 +38,9 @@ Maaskee torde allerede en Samling af Digte, der ved Indhold og Aand have erhverv
 <head>
   <title>Fortale</title>
   <source pages="VII-XXIV" facsimile-pages="12-29" />
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -517,6 +520,7 @@ K. L. Rahbek.
   <source pages="1-48"/>
   <places>
     <place ref="elbe" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -5743,6 +5747,10 @@ At det trindt om Jorden lyde:
   <title>Opstandelsen</title>
   <firstline>Klag, o Sandhed! for din Ven</firstline>
   <source pages="194-202"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

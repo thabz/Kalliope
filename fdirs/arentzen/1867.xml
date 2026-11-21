@@ -21,6 +21,7 @@
   <source pages="1-4"/>
   <places>
     <place ref="tiber" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
@@ -715,6 +716,9 @@ skjærme sine smaa Forstødte med en mægtig Haand.
   </pictures>
   <!-- Sassoferrato har malet madonnaen med det sovende jesubarn mange gange, men der findes ikke (længere?) en udgave på Pinacoteca Brera i Milano. -->
   <source pages="32-37"/>
+  <places>
+    <place ref="verona" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1095,6 +1099,9 @@ og Sjælen har Dommedag.
   <title>Den Blinde ved Arno</title>
   <firstline>Hver Morgen hisset ved Arnos Flod</firstline>
   <source pages="47-48"/>
+  <places>
+    <place ref="arno" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2574,6 +2581,10 @@ fortabes i Skabningens Sukke.
   <firstline>Nu Juletidens Tryllespil</firstline>
   <source pages="112-117"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="capitoline-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>

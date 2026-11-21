@@ -219,6 +219,9 @@ Vi vil dog leve, vi vil døe for Norden.
   <subtitle>(Paa Kronborg i Juni 1860)</subtitle>
   <firstline>Straal gyldenblank, du Sundets rustne Nøgle!</firstline>
   <source pages="9-10"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2186,6 +2189,9 @@ Naar Du, skjøn Jomfru, Ordet vil udsige.
   <firstline>Der en Sø etsteds i Nordens Lande</firstline>
   <source pages="74"/>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3525,6 +3531,9 @@ Med Fru Margrete og Kong Atterdag.
   <firstline>Jeg bringer Hilsen hid fra Danmarks Land</firstline>
   <source pages="118-124"/>
   <keywords>holberg,oehlenschlaeger</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4023,6 +4032,9 @@ Til atter at lukke Thyras Vold.
   <title>Dronning Margrete</title>
   <firstline>I Roeskilde Kirke hun hviler bag</firstline>
   <source pages="136-144"/>
+  <places>
+    <place ref="kalmar" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4410,6 +4422,9 @@ Thi <w>Munkholm</w> er — Nordens Sanct Helene.
   <title>Sangerens Hustru</title>
   <firstline>Saa lykkelig, som faa blandt Dødelige</firstline>
   <source pages="153-168"/>
+  <places>
+    <place ref="thrace" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

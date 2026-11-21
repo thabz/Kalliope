@@ -357,6 +357,9 @@ Paa den skjældækte Strand.
   <title>Carthago</title>
   <firstline>Dronning Dido forlod</firstline>
   <source pages="14-17"/>
+  <places>
+    <place ref="carthage" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -468,6 +471,9 @@ Strøede Salt paa dets Gruus.
   <title>Philenerne</title>
   <firstline>Paa Carthagos østre Grændse</firstline>
   <source pages="18-20"/>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -537,6 +543,9 @@ Om de to Phileners Troskab.
   <title>Tarpeja</title>
   <firstline>Fæste til det blanke Guldmalm</firstline>
   <source pages="21-22"/>
+  <places>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

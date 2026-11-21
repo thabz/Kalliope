@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="stormhtw" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Theodor</firstname>
+    <lastname>Storm</lastname>
+    <fullname>Hans Theodor Woldsen Storm</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1817-09-14</date>
+      <place>Husum</place>
+    </born>
+    <dead>
+      <date>1888-07-04</date>
+      <place>Hademarschen</place>
+    </dead>
+  </period>
+  <literary-periods>de-poetisk-realisme-og-naturalisme</literary-periods>
+  <identifiers>
+    <gnd>118618725</gnd>
+  </identifiers>
+</person>

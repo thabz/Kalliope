@@ -1,3 +1,6 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 jest.mock('../tools/libs/helpers.js', () => ({
   htmlToXml: jest.fn(),
   replaceDashes: text => text,
@@ -16,10 +19,6 @@ jest.mock('../tools/libs/elasticsearch-client.js', () => ({
   deleteWork: jest.fn(),
   indexExists: jest.fn(),
   refreshIndex: jest.fn(),
-}));
-
-jest.mock('../tools/build-static/concurrency.js', () => ({
-  mapLimit: jest.fn(async (items, fn) => Promise.all(items.map(fn))),
 }));
 
 jest.mock('../tools/build-static/xml.js', () => ({
@@ -46,7 +45,7 @@ import {
   buildElasticsearchTextEntries,
   buildElasticsearchTextEntryDocuments,
   getChangedElasticsearchTextEntries,
-  update_elasticsearch,
+  update_elasticsearch as updateElasticsearch,
 } from '../tools/build-static/elastic.js';
 
 const collected = {
@@ -106,10 +105,29 @@ const bulkDocumentIds = () =>
     call[1].map(document => document.id)
   );
 
+let stateDirectory;
+const update_elasticsearch = (data, options = {}) => updateElasticsearch(data, {
+  ...options, statePath: path.join(stateDirectory, 'index-state.json'),
+});
+
 describe('Elasticsearch build-static step', () => {
   let consoleLog;
+  let readSpy;
+  let statSpy;
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    stateDirectory = fs.mkdtempSync(path.join(os.tmpdir(), 'kalliope-elastic-'));
+    const read = fs.readFileSync;
+    const stat = fs.statSync;
+    const fakeSource = filename => Buffer.from(`${filename}:${isFileModified(filename)}`);
+    readSpy = jest.spyOn(fs, 'readFileSync').mockImplementation((filename, ...args) =>
+      String(filename).startsWith('fdirs/') === true ? fakeSource(filename) : read(filename, ...args));
+    statSpy = jest.spyOn(fs, 'statSync').mockImplementation((filename, ...args) => {
+      if (String(filename).startsWith('fdirs/') === false) return stat(filename, ...args);
+      return { dev: 1n, ino: 1n, size: BigInt(fakeSource(filename).length),
+        mtimeNs: isFileModified(filename) === true ? 2n : 1n,
+        ctimeNs: isFileModified(filename) === true ? 2n : 1n };
+    });
     consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
     jest.clearAllMocks();
     elasticSearchClient.indexExists.mockResolvedValue(true);
@@ -126,10 +144,15 @@ describe('Elasticsearch build-static step', () => {
     );
     xml.safeGetInnerXML.mockImplementation(() => null);
     xml.tagName.mockReset();
+    await update_elasticsearch(collected);
+    jest.clearAllMocks();
   });
 
   afterEach(() => {
     consoleLog.mockRestore();
+    readSpy.mockRestore();
+    statSpy.mockRestore();
+    fs.rmSync(stateDirectory, { recursive: true, force: true });
   });
 
   test('builds stable text entries', () => {
@@ -498,12 +521,9 @@ describe('Elasticsearch build-static step', () => {
     ]);
   });
 
-  test('reindexes all poet works when poet info changed', async () => {
-    isFileModified.mockImplementation((...filenames) =>
-      filenames.includes('fdirs/poet/info.xml')
-    );
-
-    await update_elasticsearch(collected);
+  test('reindexes all poet works when poet metadata changed', async () => {
+    const poet = { ...collected.poets.get('poet'), name: { fullname: 'Nyt navn' } };
+    await update_elasticsearch({ ...collected, poets: new Map([['poet', poet]]) });
 
     expect(elasticSearchClient.deletePoet).toHaveBeenCalledTimes(1);
     expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith(
@@ -525,15 +545,17 @@ describe('Elasticsearch build-static step', () => {
       works: new Map(),
       changedWorkPoetIds: new Set(['poet']),
     });
-    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
-    expect(bulkDocumentIds()).toEqual(['poet-poet']);
+    expect(elasticSearchClient.deleteWork).toHaveBeenCalledWith('kalliope', 'poet', 'first');
+    expect(elasticSearchClient.deleteWork).toHaveBeenCalledWith('kalliope', 'poet', 'second');
+    expect(bulkDocumentIds()).toEqual([]);
     expect(elasticSearchClient.refreshIndex).toHaveBeenCalledWith('kalliope');
   });
 
-  test('reindexes all remaining works when automatic discovery changes membership', async () => {
-    await update_elasticsearch({ ...collected, changedWorkPoetIds: new Set(['poet']) });
-    expect(elasticSearchClient.deletePoet).toHaveBeenCalledWith('kalliope', 'poet');
-    expect(bulkDocumentIds()).toEqual(['poet-poet', 'poet-first', 'poet-second']);
+  test('removes a deleted work while retaining unchanged work documents', async () => {
+    await update_elasticsearch({ ...collected, works: new Map([['poet/first', collected.works.get('poet/first')]]) });
+    expect(elasticSearchClient.deleteWork).toHaveBeenCalledWith('kalliope', 'poet', 'second');
+    expect(elasticSearchClient.deleteWork).toHaveBeenCalledTimes(1);
+    expect(bulkDocumentIds()).toEqual([]);
   });
 
   test('rebuilds the full index when the index is missing', async () => {

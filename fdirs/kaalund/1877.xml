@@ -642,6 +642,10 @@ og seer den skjulte Verdenspendel svinge.
   <subtitle>(I December 1863.)</subtitle>
   <firstline>Vil ingen nævne et vækkende Ord!</firstline>
   <source pages="37-42"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1021,6 +1025,9 @@ som denne maatte fyldes!''
   <title>Rejsetummel</title>
   <firstline>Jeg har rejst! - Jeg har været i fremmede Byer!</firstline>
   <source pages="56-63"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1680,6 +1687,9 @@ til den højeste Ret paa Dommens Dag!
   <title>Elefanten</title>
   <firstline>Den var bragt over Sø og salten Vand</firstline>
   <source pages="90-95"/>
+  <places>
+    <place ref="kastellet-copenhagen" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1929,6 +1939,9 @@ deroppe i sit Tov!
   <title>Manden paa Jageslaget</title>
   <firstline>Fra femte Stokværk til Husets Kvist</firstline>
   <source pages="102-106"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2031,6 +2044,9 @@ og er ikke rigtig i Ho'det.
   <title>Ravnen</title>
   <firstline>Da paa Solferinos Høje Kampens store Stund var nær</firstline>
   <source pages="107-109"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2113,6 +2129,9 @@ og strøm saa i Havet med Ære!
   <title>Da de rev Voldene ned</title>
   <firstline>Hvad gaar der af Dig, min Fødeby?</firstline>
   <source pages="112-120"/>
+  <places>
+    <place ref="kastellet-copenhagen" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

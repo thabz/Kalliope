@@ -67,6 +67,9 @@ Staa fast mit gamle danske Huus!
   <subtitle>(1852.)</subtitle>
   <firstline>Udbrændt er Bannernes blodige Flamme</firstline>
   <source pages="5-6"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -378,6 +381,9 @@ For Bøgen og Birken til lysere Vaar!
   <firstline>Vi Studenter har en Skik</firstline>
   <source pages="18-19"/>
   <keywords>plough</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -555,6 +561,9 @@ Og det var det vi skulde!
   <subtitle>(Marts 1858.)</subtitle>
   <firstline>I Europa, i Europa er der Marked</firstline>
   <source pages="26-27"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -845,6 +854,9 @@ I Naadens Hav udrinde.
   <firstline>Jeg veed en gammel Kirke - dens Taarne er tre</firstline>
   <source pages="38-39"/>
   <keywords>kingo</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

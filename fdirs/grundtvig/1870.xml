@@ -8876,6 +8876,8 @@ Livet er Troens Naadeløn!
   <source pages="230-233"/>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8990,6 +8992,9 @@ Jordklimpen af Engle omsvævet!
     <note editorial="true">Cf. <xref bible="bibeldaniel02"/></note>
   </notes>
   <source pages="233-235"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11963,6 +11968,9 @@ Seierrig for Kronen strider!
     <note editorial="true">Boisens bibelske Sange, Nr. 99.</note>
   </notes>
   <source pages="308-310"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12059,6 +12067,9 @@ Fra Vesten til Nørreleden!
     <note editorial="true">Krønikerim, 2. Udg. 1842, Side 103.</note>
   </notes>
   <source pages="311-312"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -13329,6 +13340,7 @@ Af Paver og Normanner!
   <source pages="345-351"/>
   <places>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

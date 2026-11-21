@@ -26,6 +26,9 @@
   <title>Firenze</title>
   <firstline>Det lufter over Byen, en fin og lunken Vind</firstline>
   <source pages="9"/>
+  <places>
+    <place ref="arno" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -183,6 +186,10 @@ men jeg iled ned til Firenze, til Verden,
   <firstline>Ad Trappetrin, der knirked forraadende, fordømt</firstline>
   <source pages="14-15"/>
   <keywords>michelangelo</keywords>
+  <places>
+    <place ref="arno" relation="setting"/>
+    <place ref="santa-croce-florence" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -299,6 +306,9 @@ de Skyer, de Popler, som drømmer
   <title>Nat i Verona</title>
   <firstline>Nu mørkner det stille ved Floden</firstline>
   <source pages="18"/>
+  <places>
+    <place ref="verona" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -506,6 +516,9 @@ ak, Stuckenberg, Gæsten er brusende kommet,
   <title>Venezia</title>
   <firstline>Det var paa Piazza San Marco</firstline>
   <source pages="25-27"/>
+  <places>
+    <place ref="st-marks-square" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

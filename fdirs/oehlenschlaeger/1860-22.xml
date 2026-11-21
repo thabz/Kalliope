@@ -8186,6 +8186,7 @@ Danmarks er <w>Held</w>.
   <!-- TODO: Find Thorvaldsens værker som nævnes -->
   <places>
     <place ref="babylon" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10246,6 +10247,9 @@ Gud skienker Fremtid Grøde.
   </pictures>
   <source pages="267-277"/>
   <keywords>christian8</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

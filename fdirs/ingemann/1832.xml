@@ -411,6 +411,9 @@ Sprænger dog Dødningens Steen — vækker den gjenfødte Aand.
   </notes>
   <source pages="20-25"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -558,6 +561,9 @@ Og hvor døde Fugle kan sjunge."
   <title>Gjasindas Sang i Norden</title>
   <firstline>Flyver Trækfugl mod Syd, maa jeg sukke</firstline>
   <source pages="26-27"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3165,6 +3171,9 @@ Over din Sjæl. Sov sødelig nu! Vist i Drømme vi sees!
 <head>
   <firstline>Atter en Grændse idag; til Liris Campagnen sig strækker</firstline>
   <source pages="128-129"/>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3347,6 +3356,7 @@ De gyldne Kroner sank i Muld -
   <source pages="134-135"/>
   <places>
     <place ref="vesuvius" relation="subject" primary="true"/>
+    <place ref="nordic-countries" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -4758,6 +4768,7 @@ En Taare jeg i deres Øine saae -
   <keywords>schmidtf</keywords>
   <places>
     <place ref="rome" relation="setting" primary="true"/>
+    <place ref="nordic-countries" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

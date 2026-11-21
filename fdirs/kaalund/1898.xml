@@ -5905,6 +5905,10 @@ at synge profetisk med jublende Tro
   <title>Helligkilden</title>
   <firstline>Gjennem Hedelyng og Sand</firstline>
   <source pages="185-187"/>
+  <places>
+    <place ref="helene-spring" relation="subject" primary="true"/>
+    <place ref="tisvilde" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8579,6 +8583,10 @@ og sér den skjulte Verdenspendel svinge.
   <firstline>Vil ingen nævne et vækkende Ord!</firstline>
   <year>1863</year>
   <source pages="267-271"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8962,6 +8970,9 @@ som denne maatte fyldes!“
   <title>Rejsetummel</title>
   <firstline>Jeg har rejst! — Jeg har været i fremmede Byer!</firstline>
   <source pages="281-285"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9628,6 +9639,7 @@ til den højeste Ret paa Dommens Dag!
   <source pages="304-308"/>
   <places>
     <place ref="livorno" relation="setting"/>
+    <place ref="kastellet-copenhagen" relation="setting"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -9878,6 +9890,9 @@ deroppe i sit Tov!
   <title>Manden paa Dueslaget</title>
   <firstline>Fra femte Stokværk til Husets Kvist</firstline>
   <source pages="313-316"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9980,6 +9995,9 @@ og er ikke rigtig i Ho'det.
   <title>Ravnen</title>
   <firstline>Da paa Solferinos Høje Kampens store Stund var nær</firstline>
   <source pages="317-318"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -10064,6 +10082,7 @@ og strøm saa i Havet med Ære!
   <source pages="320-326"/>
   <places>
     <place ref="copenhagen" relation="subject" primary="true"/>
+    <place ref="kastellet-copenhagen" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

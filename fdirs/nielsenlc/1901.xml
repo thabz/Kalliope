@@ -1430,6 +1430,10 @@ hvad jeg vil se, er alt.
   <title>Titus</title>
   <firstline>Solen, O, min Gud, hvor Solen</firstline>
   <source pages="57"/>
+  <places>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1652,6 +1656,7 @@ I Taushed,
   <source pages="64-69"/>
   <places>
     <place ref="tiber" relation="mentioned"/>
+    <place ref="verona" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1978,6 +1983,9 @@ gaar fra Mulm til Mulm i Stjernebuer.
   <subtitle>(Efter Opførelsen af ,,La cittá morte'')</subtitle>
   <firstline>Mørket er faldet i Rom</firstline>
   <source pages="76-77"/>
+  <places>
+    <place ref="villa-borghese-gardens" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

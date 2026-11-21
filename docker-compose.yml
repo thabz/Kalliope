@@ -48,8 +48,11 @@ services:
       target: static-builder
     profiles:
       - build
+    mem_limit: 4g
+    memswap_limit: 4g
     environment:
       ELASTICSEARCH_URL: http://elasticsearch:9200
+      NODE_OPTIONS: --max-old-space-size=3072
       KALLIOPE_THUMBNAIL_CONCURRENCY: 4
       KALLIOPE_SHARP_CONCURRENCY: 1
       KALLIOPE_SHARP_CACHE_MEMORY: 64

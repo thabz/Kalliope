@@ -61,6 +61,9 @@ Staa fast mit gamle danske Hus!
   <subtitle>(1852.)</subtitle>
   <firstline>Udbrændt er Bavnernes blodige Flamme</firstline>
   <source pages="2-3"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -782,6 +785,9 @@ i Naadens Hav udrinde.
   <subtitle>(Ved Kirkemødet 1857.)</subtitle>
   <firstline>Jeg veed en gammel Kirke - dens Taarne er tre</firstline>
   <source pages="22-23"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2717,6 +2723,7 @@ hvis Bad kan igjenføde.
   <places>
     <place ref="mount-carmel" relation="mentioned"/>
     <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="nazareth" relation="setting"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2870,6 +2877,7 @@ viis mig min Frelser, hos Ham tør jeg dø.
   <places>
     <place ref="sharon-plain" relation="mentioned"/>
     <place ref="jordan-river" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9098,6 +9106,9 @@ Gud signe Jert Mod og Jer Vilje!
   <subtitle>December 1864</subtitle>
   <firstline>Tre raske Drenge var vi</firstline>
   <source pages="260-262"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11016,6 +11027,9 @@ fanges vore Hjerter her i Norge!
   <toctitle><num>2.</num>Nordens Kvinde</toctitle>
   <firstline>Det lysner over Norden fra Frejas blanke Rok</firstline>
   <source pages="313-314"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

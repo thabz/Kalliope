@@ -3125,6 +3125,9 @@ med Lys og Lykke og Fred.
   <firstline>Hvad skal jeg sige? Mine Ord</firstline>
   <source pages="108-110"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="pincian-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3197,6 +3200,12 @@ til mine danske Venner.
   <title>I det gamle Roma</title>
   <firstline>Du, som delte tro min Vandring</firstline>
   <source pages="111-113"/>
+  <places>
+    <place ref="arch-of-titus" relation="mentioned"/>
+    <place ref="colosseum" relation="mentioned"/>
+    <place ref="palatine-hill" relation="mentioned"/>
+    <place ref="roman-forum" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3478,6 +3487,9 @@ Fædres Land!
   <firstline>Nu Juletidens Tryllespil</firstline>
   <source pages="121-125"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6478,6 +6490,9 @@ Fædreneland.
   <title>Bukefalos og Æselet</title>
   <firstline>To Billeder for Aandens Øie træde</firstline>
   <source pages="233"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7044,6 +7059,9 @@ i sidste Straaleskjær.
   <firstline>Ravnen skreg paa en Runesten</firstline>
   <source pages="253-254"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="bornholm" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7106,6 +7124,9 @@ Lurens og Harpens Klang.
   <title>Jons Kapel</title>
   <firstline>Alt Offeralteret, blodbestænkt</firstline>
   <source pages="255-258"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

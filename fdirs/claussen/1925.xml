@@ -306,6 +306,9 @@ hilser et Foraar i Danmark Giovanni, naar Liljerne blomstrer.
   <title>Anraabelse</title>
   <firstline>Har jeg min Bue velspændt og i Koggeret træffende Pile?</firstline>
   <source pages="30-31"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1519,6 +1522,9 @@ Som dette Digt maa trykkes frit - - ,,Maa trykkes''!
   <title>Alle Nordens Fugle</title>
   <firstline>Midt i Nordens stormomsuste Hjørne</firstline>
   <source pages="92-93"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2945,6 +2951,9 @@ strøg mig varsomt paa min hede Kind.
   <title>Russerinden</title>
   <firstline>Det er kun en Pige, der synger</firstline>
   <source pages="158-161"/>
+  <places>
+    <place ref="russia" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

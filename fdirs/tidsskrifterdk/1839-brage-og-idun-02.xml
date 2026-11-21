@@ -2494,6 +2494,9 @@ till Danmarks Oehlenschläger och till Er.
     <performed>1839-05-28</performed>
   </dates>
   <source pages="238-239" facsimile-pages="255-256"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2547,6 +2550,9 @@ Ei Danmark Hjertet glemmer,
     <performed>1839-05-28</performed>
   </dates>
   <source pages="240-241" facsimile-pages="257-258"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3293,6 +3299,11 @@ Som endnu er ganske röde.
   <places>
     <place ref="north-sea" relation="mentioned"/>
     <place ref="tiber" relation="mentioned"/>
+    <place ref="fyris" relation="mentioned"/>
+    <place ref="jelling" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="poland" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4971,6 +4982,9 @@ Interessant var Overgangen mig fra Sverrig gjennem det norske Vermeland til Norg
 <head>
   <firstline>Du Kæmpe fra et længstforsvundet Old</firstline>
   <source pages="508-509" facsimile-pages="587-588"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5111,6 +5125,9 @@ O! ge mig et godt råd! —
 <head>
   <firstline>Vel er det fagert, Svealand</firstline>
   <source pages="538-539" facsimile-pages="617-618"/>
+  <places>
+    <place ref="fyris" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -1446,9 +1446,11 @@ const build_redirects_json = (collected) => {
 };
 
 const build_image_thumbnails = async () => {
+  const verify = process.argv.includes('--verify-image-thumbnails') ||
+    process.env.KALLIOPE_VERIFY_IMAGE_THUMBNAILS === 'true';
   return Promise.all([
-    buildThumbnails('public/images', isFileModified),
-    buildThumbnails('public/kunst', isFileModified),
+    buildThumbnails('public/images', isFileModified, { verify }),
+    buildThumbnails('public/kunst', isFileModified, { verify }),
   ]);
 };
 

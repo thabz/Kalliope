@@ -19,6 +19,10 @@
     <note editorial="true">Den biografiske indledning er underskrevet S. Drejer, N. Levinsen og J. Ostermann.</note>
   </notes>
   <source pages="1-14"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+    <place ref="turkey" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -391,6 +395,9 @@ Snart jeg skuer Axelstad! — Lev vel!
     <event>1829-07-27</event>
   </dates>
   <source pages="23-24"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1757,6 +1764,9 @@ Ei glemmes den Gjæve herinde :
   <subtitle>1832</subtitle>
   <firstline>Studenten gjør ei mange Ord</firstline>
   <source pages="67-69"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1832,6 +1842,9 @@ I festligt Chor at bringe!
   <subtitle>1833</subtitle>
   <firstline>Naar Vinteren breder sit Taage-Flor</firstline>
   <source pages="70-72"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1911,6 +1924,9 @@ Og Philister-Nykken forjage!
   <subtitle>1833</subtitle>
   <firstline>Udi den lærde Republik —</firstline>
   <source pages="72-75"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -2129,6 +2145,10 @@ Vort Samlivs glædelige Frugter!
     <event>1834-07-01</event>
   </dates>
   <source pages="79-82"/>
+  <places>
+    <place ref="regensen" relation="setting" primary="true"/>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
