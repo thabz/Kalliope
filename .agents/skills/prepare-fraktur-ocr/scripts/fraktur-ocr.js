@@ -2,6 +2,7 @@
 
 import crypto from 'crypto';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import { spawnSync } from 'child_process';
 import { fileURLToPath } from 'url';
@@ -13,6 +14,13 @@ const defaultDpi = 300;
 const defaultSampleSize = 5;
 const minimumDenseCharacters = 500;
 const maximumSkew = 3;
+const danishPilotRelease = Object.freeze({
+  version: 'v0.1.0',
+  language: 'dansk_fraktur',
+  engine_version: 'tesseract 5.5.4',
+  url: 'https://github.com/thabz/dansk-fraktur-ocr/releases/download/v0.1.0/dansk_fraktur.traineddata',
+  sha256: '3e5a9c93d57122b6cb63cb60e8cc54cd56067a6a016f0f5b666be028203e57cb',
+});
 const supportedImageExtensions = new Set([
   '.bmp', '.gif', '.jpeg', '.jpg', '.png', '.tif', '.tiff', '.webp',
 ]);
@@ -21,16 +29,16 @@ const usage = () => {
   console.error(`Brug:
   fraktur-ocr.js prepare SOURCE --out-dir DIR [--dpi 300]
   fraktur-ocr.js sample --out-dir DIR [--sample-size 5]
-  fraktur-ocr.js recognize --out-dir DIR [--scope sample|all] [--include-binarized]
+  fraktur-ocr.js recognize --out-dir DIR [--scope sample|all] [--include-binarized | --danish-pilot]
   fraktur-ocr.js compare --out-dir DIR [--ground-truth DIR]
   fraktur-ocr.js verify --out-dir DIR
-  fraktur-ocr.js run SOURCE --out-dir DIR [--ground-truth DIR]`);
+  fraktur-ocr.js run SOURCE --out-dir DIR [--ground-truth DIR] [--danish-pilot]`);
 };
 
 const parseArguments = args => {
   const positionals = [];
   const options = new Map();
-  const booleanOptions = new Set(['include-binarized']);
+  const booleanOptions = new Set(['include-binarized', 'danish-pilot']);
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     if (arg.startsWith('--') === false) {
@@ -70,6 +78,36 @@ const ensureDirectory = directory => fs.mkdirSync(directory, { recursive: true }
 
 const sha256Buffer = buffer => crypto.createHash('sha256').update(buffer).digest('hex');
 const sha256File = filename => sha256Buffer(fs.readFileSync(filename));
+
+const loadDanishPilot = async () => {
+  const cache = process.env.KALLIOPE_OCR_MODEL_CACHE ?? path.join(os.homedir(), '.cache', 'kalliope', 'ocr');
+  const directory = path.resolve(cache, 'dansk-fraktur', danishPilotRelease.version);
+  ensureDirectory(directory);
+  const physicalDirectory = fs.realpathSync(directory);
+  const filename = path.join(physicalDirectory, `${danishPilotRelease.language}.traineddata`);
+  if (fs.existsSync(filename) === true) {
+    if (sha256File(filename) !== danishPilotRelease.sha256) {
+      throw new Error(`Frakturmodellen i cachen har forkert SHA-256: ${filename}`);
+    }
+    return { directory: physicalDirectory, cacheStatus: 'hit' };
+  }
+
+  const response = await fetch(danishPilotRelease.url, { signal: AbortSignal.timeout(60000) });
+  if (response.ok === false) throw new Error(`Hentning af frakturmodel fejlede med HTTP ${response.status}.`);
+  const model = Buffer.from(await response.arrayBuffer());
+  if (sha256Buffer(model) !== danishPilotRelease.sha256) {
+    throw new Error('Den hentede frakturmodel har forkert SHA-256.');
+  }
+  const stagingDirectory = fs.mkdtempSync(path.join(physicalDirectory, '.download-'));
+  const stagedModel = path.join(stagingDirectory, 'model');
+  try {
+    fs.writeFileSync(stagedModel, model);
+    fs.renameSync(stagedModel, filename);
+  } finally {
+    fs.rmSync(stagingDirectory, { recursive: true, force: true });
+  }
+  return { directory: physicalDirectory, cacheStatus: 'downloaded' };
+};
 
 const writeJson = (filename, value) => {
   ensureDirectory(path.dirname(filename));
@@ -351,7 +389,7 @@ const preparePageImage = async (input, root, pageId, options = {}) => {
     .withMetadata({ density: options.dpi ?? defaultDpi })
     .toFile(originalFile);
 
-  const orientation = options.orientation ?? detectCoarseOrientation(originalFile);
+  const orientation = options.orientation ?? detectCoarseOrientation(fs.realpathSync(originalFile));
   const oriented = await sharp(originalFile)
     .rotate(orientation.applied_rotation ?? 0, { background: '#ffffff' })
     .png()
@@ -543,7 +581,7 @@ const selectDensePages = (pages, sampleSize = defaultSampleSize) => {
 };
 
 const sampleBundle = (root, options = {}) => {
-  const resolvedRoot = path.resolve(root);
+  const resolvedRoot = fs.realpathSync(root);
   const bundleFile = path.join(resolvedRoot, 'bundle.json');
   const pagesFile = path.join(resolvedRoot, 'pages.jsonl');
   const bundle = readJson(bundleFile);
@@ -580,7 +618,7 @@ const balancedConfigurations = ({ includeBinarized = false } = {}) => {
   }));
 };
 
-const runRecognition = (root, page, configuration) => {
+const runRecognition = (root, page, configuration, tessdataDirectory) => {
   const started = Date.now();
   const runDirectory = path.join(root, 'ocr', configuration.configuration_id);
   ensureDirectory(runDirectory);
@@ -588,8 +626,13 @@ const runRecognition = (root, page, configuration) => {
   const outputBase = path.join(runDirectory, page.page_id);
   const args = [
     input, outputBase, '-l', configuration.language, '--oem', '1', '--psm', String(configuration.psm),
-    '-c', 'preserve_interword_spaces=1', '-c', 'tessedit_write_images=true', 'txt', 'tsv',
+    '-c', 'preserve_interword_spaces=1', '-c', 'tessedit_write_images=true',
   ];
+  if (tessdataDirectory == null) {
+    args.push('txt', 'tsv');
+  } else {
+    args.push('--tessdata-dir', tessdataDirectory, '-c', 'tessedit_create_txt=1', '-c', 'tessedit_create_tsv=1');
+  }
   const result = runCommand('tesseract', args, { allowFailure: true, cwd: runDirectory });
   const textFile = `${outputBase}.txt`;
   const tsvFile = `${outputBase}.tsv`;
@@ -613,24 +656,50 @@ const runRecognition = (root, page, configuration) => {
   };
 };
 
-const recognizeBundle = (root, options = {}) => {
-  const resolvedRoot = path.resolve(root);
+const recognizeBundle = async (root, options = {}) => {
+  const resolvedRoot = fs.realpathSync(root);
   const bundleFile = path.join(resolvedRoot, 'bundle.json');
   const bundle = readJson(bundleFile);
   const pages = readJsonLines(path.join(resolvedRoot, 'pages.jsonl'));
-  checkDependencies({ recognition: true });
+  const usePilot = options.danishPilot === true;
+  checkDependencies({ recognition: usePilot === false });
+  const engineVersion = commandVersion('tesseract');
+  if (usePilot === true && engineVersion !== danishPilotRelease.engine_version) {
+    throw new Error(`Frakturmodellen kræver ${danishPilotRelease.engine_version}, fandt ${engineVersion}.`);
+  }
+  if (usePilot === true && options.includeBinarized === true) {
+    throw new Error('--danish-pilot og --include-binarized kan ikke kombineres.');
+  }
   const scope = options.scope ?? 'sample';
   if (scope !== 'sample' && scope !== 'all') throw new Error('--scope skal være sample eller all.');
   const selectedPages = scope === 'all' ? pages : pages.filter(page => page.sample?.selected === true);
   if (selectedPages.length === 0) throw new Error('Ingen sider er valgt til OCR. Kør sample først.');
-  const configurations = balancedConfigurations({ includeBinarized: options.includeBinarized === true });
+  const model = usePilot === true ? await loadDanishPilot() : null;
+  const configurations = model == null
+    ? balancedConfigurations({ includeBinarized: options.includeBinarized === true })
+    : [{
+      configuration_id: `dansk-fraktur-${danishPilotRelease.version}-psm6-cleaned`,
+      language: danishPilotRelease.language,
+      psm: 6,
+      variant: 'cleaned',
+    }];
   const runs = [];
   for (const configuration of configurations) {
-    for (const page of selectedPages) runs.push(runRecognition(resolvedRoot, page, configuration));
+    for (const page of selectedPages) runs.push(runRecognition(resolvedRoot, page, configuration, model?.directory));
   }
   writeJsonLines(path.join(resolvedRoot, 'runs.jsonl'), runs);
-  bundle.recognition = { configuration_count: configurations.length, run_count: runs.length, scope };
+  bundle.recognition = {
+    configuration_count: configurations.length,
+    run_count: runs.length,
+    scope,
+    engine_version: engineVersion,
+    model: model == null ? null : { ...danishPilotRelease, cache_status: model.cacheStatus },
+  };
   bundle.stages.recognize = runs.every(run => run.status === 'complete') ? 'complete' : 'failed';
+  bundle.stages.compare = 'pending';
+  bundle.stages.verify = 'pending';
+  delete bundle.comparison;
+  delete bundle.verification;
   writeJson(bundleFile, bundle);
   return runs;
 };
@@ -802,7 +871,11 @@ const verifyBundle = root => {
 const runPipeline = async (source, root, options = {}) => {
   await prepareBundle(source, root, { dpi: options.dpi });
   sampleBundle(root, { sampleSize: options.sampleSize });
-  recognizeBundle(root, { includeBinarized: options.includeBinarized, scope: 'sample' });
+  await recognizeBundle(root, {
+    danishPilot: options.danishPilot,
+    includeBinarized: options.includeBinarized,
+    scope: 'sample',
+  });
   compareBundle(root, { groundTruth: options.groundTruth });
   return verifyBundle(root);
 };
@@ -822,7 +895,11 @@ const main = async () => {
   } else if (command === 'sample') {
     sampleBundle(root, { sampleSize: parsePositiveInteger(options.get('sample-size') ?? defaultSampleSize, '--sample-size') });
   } else if (command === 'recognize') {
-    recognizeBundle(root, { includeBinarized: options.get('include-binarized') === true, scope: options.get('scope') ?? 'sample' });
+    await recognizeBundle(root, {
+      danishPilot: options.get('danish-pilot') === true,
+      includeBinarized: options.get('include-binarized') === true,
+      scope: options.get('scope') ?? 'sample',
+    });
   } else if (command === 'compare') {
     compareBundle(root, { groundTruth: options.get('ground-truth') });
   } else if (command === 'verify') {
@@ -830,6 +907,7 @@ const main = async () => {
   } else if (command === 'run') {
     if (positionals[0] == null) throw new Error('Mangler SOURCE.');
     await runPipeline(positionals[0], root, {
+      danishPilot: options.get('danish-pilot') === true,
       dpi: parsePositiveInteger(options.get('dpi') ?? defaultDpi, '--dpi'),
       groundTruth: options.get('ground-truth'),
       includeBinarized: options.get('include-binarized') === true,
