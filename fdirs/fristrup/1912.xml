@@ -1,9 +1,1583 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1912" author="fristrup" status="incomplete" type="poetry">
+<kalliopework id="1912" author="fristrup" status="complete" type="poetry">
 <workhead>
-  <title>Vadum's Harpe</title>
+  <title>Vadums Harpe</title>
+  <subtitle>Lyrriske Dikte</subtitle>
   <year>1912</year>
+  <pictures>
+    <picture type="titlepage" src="1912-p1.jpg">
+      <transcription>Vadums Harpe // Lyrriske Dikte / af / P. Ferd. Vadum // med et Par Ord om Digteren af P. Fristrup. // Omslag og Vignetter af Digteren selv. // København / E. Jespersens Forlag</transcription>
+    </picture>
+    <picture type="frontpage" src="1912-p2.jpg" year="1912" href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99121955236205763">
+      Farvetrykt omslag til Vadums Harpe, illustreret af P. Fristrup.
+      <!-- Ophavet er angivet på omslaget og titelbladet. Det Kgl. Biblioteks eksemplar 53,-272 8°. Trykmetode og fysiske mål er ikke dokumenteret i katalogposten. -->
+      <!-- metadata checked: 2026-11-21 -->
+    </picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99121955236205763" facsimile="115308055249" facsimile-pages-num="102" facsimile-pages-offset="12">
+    <author id="fristrup" realname="P. Fristrup">P. Ferd. Vadum</author>
+    <title>Vadums Harpe</title>
+    <place>København</place>
+    <publisher>E. Jespersens Forlag</publisher>
+    <printer>A. Rosenbergs Bogtrykkeri</printer>
+    <year>1912</year>
+    <identifiers><kb-alma>99121955236205763</kb-alma></identifiers>
+  </source>
+  <pagebreaks/>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-21T01:07:40+00:00"/>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-21T01:07:41+00:00"/>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-21T01:07:41.041978+00:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
+
+<text id="fristrup2026112101">
+<head>
+  <title>Til mit Potræt</title>
+  <firstline>Jeg er en Alvaarsmand med Romantek</firstline>
+  <pictures>
+    <picture type="illustration" src="1912-selpotraet.jpg" href="https://www.kb.dk/e-mat/dod/115308055249-color.pdf">
+      Selpotræt af P. Ferd. Vadum.
+      <!-- Udgavens unummererede tavle umiddelbart før »Til mit Potræt«. Tavlen er krediteret P. Ferd. Vadum. Originalmedie, datering og fysiske mål er ikke dokumenteret. -->
+      <!-- metadata checked: 2026-11-21 -->
+    </picture>
+  </pictures>
+  <source facsimile-pages="10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er en Alvaarsmand med Romantek,
+min Dikterforsje, oh, det er Posien!
+Jeg hyndefulle Ord paa Læben fek,
+der smager Hjærdet sødt som en Rosin.
+Dog, hvaartil fek vi Smilets brede Træk
+og Latteren i vores Linemænter?
+Oh, for at jage Sorgens Brede væk
+og plukke Glædens Roser, mine Venner!
+
+Tag, Læsser, mod en Sangfuls Jubbeltak,
+naar Du med <w>Vadums Harpe</w> venlig sitter,
+mæns den mod Ruden sine Vinger smak
+og fløjdede en liflig Trillekvidder.
+Hør jeg ej til de Stores Verseri,
+er kuns en lille Præk i Aannens Mitte,
+jeg dog ophiger mod Panassets Sti,
+hvaar Geniusser paa mig ondit titte!
+</poetry>
+</body>
+</text>
+
+<prose id="fristrup2026112134">
+<head>
+  <title>Forord</title>
+  <subtitle><i>Et Par Ord om Digteren:</i></subtitle>
+  <source pages="7-8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<i>Det var i et lille Badehotel oppe ved Kysten at jeg gjorde Bekendtskab med denne Bogs Forfatter. Jeg sad en Solskinsmorgen ude i Haven og opnoterede nogle Indfald, da en Stemme afbryder mig med følgende Bemærkning: „Herren slar nok osse en lille Harpe“? (Jeg gengiver Ordene i det Sprog, jeg hørte). Jeg saa op og faar Øje paa en Person, der i en farveplettet Kittel strøg Verandaen med hertigt Spinatgrønt. Manden var høj, noget benet, men med en sikker og flot Holdning. En vild Manke af Haar flagrede omkring et furet Ansigt og et Par dybe Øjne sendte mig et venligt Blik igennem en Næseklemmer med knækket Glas. Jeg skyndte mig med at benægte at jeg var Lyriker. „Naa ikke? svarede Maleren — „næ, enhver har jo faaet hans Kæphest. Jeg dørker nu Lyrriken — ganske fameliært — mit Digternavn er forresten P. Ferd. Vadum — Di har kaske aldrig hørt det forhen, min Herre“? Nej, det havde jeg ikke, og Kunstneren fortsatte fløjtende sit Arbejde. Men snart optog han igen Traaden, og betroede mig sit Livsløb. Vadum beskæftigede sig med lidt af hvert for at tjene til Brødet, snart ved Malerarbejde, snart som Danselærer og Arrangør af Dilettantforestillinger i Bondebyerne, fordrev Rotter, Mus og Kakkelakker og slog som sagt Harpen i bevingede Øjeblikke. Hans Kone hjalp til ved at virke som Jordemoder blandt Bønderne, men Indtægterne af denne mangeartede Virksomhed var kun smaa paa Grund af de daarlige Tider og den stærke Konkurrence. Yderligere var Familien for kort Tid siden bleven forøget med Tvillinger — begge levede — saa Afkommet nu var naaet op til 14. Men <pb n="8" facs="019.jpg"/>nu skrev Familieforsørgeren paa en Digtsamling, hvortil han satte sit store Haab. Næste Dag forsvandt Vadum fra Hotellet og jeg glemte ham snart. Men i Efteraaret modtager jeg til min Overraskelse Digtsamlingen med et rørende Brev fra P. Ferd. Vadum med indtrængende Anmodning om at skaffe „hans lyrriske Børn en Forligger“. Jeg blev noget forlegen ved dette Tillidshverv og ventede ikke at kunne gøre ham denne Tjeneste. Det lykkedes imidlertid dog — mulig var det de 14 Børn, der bevægede den menneskekærlige Forlægger til at tage Vadum’s Digte, og nu foreligger de altsaa som Bog. I denne har jeg uden Ændringer brugt Digterens egen Ortografi og overraskende Nydannelser af danske Ord i Rimets Tjeneste, da jeg mente, at Lyrikerens Personlighedspræg derved bedst bevaredes.</i>
+    <i>Jeg giver „VADUMS HARPE“ min Anbefaling paa Rejsen ud i Verden, idet jeg haaber, at Yndere af romantisk Poesi i denne nøgterne Tid vil opmuntre en Naturbegavelse til fortsat Produktion, ikke mindst af Hensyn til Familiefaderens store uforsørgede Afkom.</i>
+    <i>Samtidig debuterer P. Ferd Vadum som Illustrator af sit eget Værk, og selv om hans Teknik er noget primitiv, lægger han dog efter min ringe Formening et vist Kompositionstalent for Dagen, der mulig vil gavne hans Poesi.</i>
+
+    <i>Charlottenlund i Oktober 1912.</i>
+
+<right><i>P. FRISTRUP.</i></right>
+</prose>
+</body>
+</prose>
+
+<section>
+<head>
+  <title>Naturlie Stæmninger</title>
+</head>
+<content>
+
+<text id="fristrup2026112102">
+<head>
+  <title>Vaarbrud</title>
+  <firstline>Det sydder og det brækker</firstline>
+  <source pages="11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    Det sydder og det brækker
+    i alle Knoppers Rækker
+og Sneen smælter lisom Duk for Solen —
+    helt op til Polen.
+    Hvofor, hvaarfor?
+          Fordig det er Foraar!
+
+    Det letter og det lysner,
+    ei meer af Fraast vi gysner,
+paa Gaden kryper Herren ud af Pælsen
+    med vendlig Hælsen.
+    Hvofor, hvaarfor?
+          Fordig det er Foraar!
+
+    Det piper og det kvidrer,
+    det grønnes og det spidrer,
+øm paa en Kvist sig Draaslen lysti parre,
+    oh, la den barre!
+    Hvofor, hvaarfor?
+          Fordig det er Foraar!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112103">
+<head>
+  <title>I den lysse Nat</title>
+  <firstline>Skoven løfter sin mørke Ryk</firstline>
+  <source pages="12"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Skoven løfter sin mørke Ryk
+op mellem Havre, Rug og Byg,
+Mosekonen, hun laver Bryk —
+Himlen luer saa rødmeful —
+Luften dufter saa sødmeful!
+
+Om jeg vandrer med Sommersind,
+svingende let min Spansrørspind,
+uden at mærke den minste Vind.
+Nadtergalen er toneful —
+Firmanenten er maaneful.
+
+Stakken vinker mig med sit Hø,
+Koen kalder mig med sit Bøh,
+Møggene stikker mig pø om pø —
+Haanen haavner saa smærteful —
+ej jeg mærker det — hjærteful!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112104">
+<head>
+  <title>Snevær</title>
+  <firstline>Jeg slar Gadinets Folder lidt tilsiddes</firstline>
+  <source pages="13-14"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg slar Gadinets Folder lidt tilsiddes
+og skuer Synnet af den hvide Fraast,
+som op af røde Næver dynghøjt smiddes
+med Skovlen, som har nydt deres Frokost.
+Nu raskt! Fra Krogen frem de Fedtelærs,
+de strukne Moffedisser samt min Hue!
+At vade ud i Sne, det er Kommærs,
+mæns Næsetip og Ører staa i Lue.
+
+I Kulden fra min Læbe toner Sangen
+til Vintrens Priis en hærli Mellodi!
+Kjækt trær jeg til som modi Svend i Gangen
+og som en Tud jeg damper i det Fri.
+Ha! Hva var det? En Bolt min Nakke fik —
+klart stammende fra Skolernes Ellever —
+jeg vredtes ej, men sender dem et Nik,
+sel Mestren blivver Dreng i saadden Snevær!
+
+<pb n="14" facs="025.jpg"/>Hør, Bjælleklang! Hør, Klokketoner rene —!
+En Kane nærmer sig — jeg maa gaa væk —
+midt i den sitter der en Dame ene,
+saa rosenrød med hæklet Ovvertræk.
+Hvaar Hjærtet banker, da fobi hun slingrer,
+jeg helser dyft med Haanen mod min Barm,
+i Moffen putter hun di fine Fingrer,
+men smiler, oh — med Munden ælskovsvarm!
+
+Frys Fraast, sne Sne og bid kuns Kulde,
+jeg ovvermodi leer — haha, haha!
+Har end Du Dine Kakkelone fulle,
+jeg vælger Sneens Fryd, jaja, jaja!
+Lad Oldinger og Bedstemorer graa
+kuns lunke inde deres møre Læmmer,
+paa Issens Speil jeg maa min Lyrre slaa
+til vingelætte Tærners Fulestæmmer!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112105">
+<head>
+  <title>I Blommetidden</title>
+  <firstline>Lad Andre prise Kriens Laubær</firstline>
+  <source pages="15-16"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lad Andre prise Kriens Laubær
+og Bilens Flukt paa Veiens Støv,
+berømme Møens Klindt og Bovbær,
+blodfulle Hestes Vædeløv —
+jeg vil besjunge Blommetidden, —
+den er saa hærlig — sommetidden.
+
+Naar Blommen ful af Sødme revner
+og Pæren svolmer op af Kraft,
+man gærne prøver Tandens Ævner
+og svælger sig i Fruktens Saft,
+naar man med Rette den har plokket,
+eller i Liddenstav den hukket.
+
+<pb n="16" facs="027.jpg"/>Oh, tænk til Vinter, naar at Krukken
+faaer løsnet Pærkamentets Baand,
+Kumpotten paa Assiætten stukken
+af Fruens færstenbløde Haan —
+i Munden Tungen fro sig smækker
+ved Syldetøiet sødt og lækker.
+
+Ja, man forstaar nok, at Prinds Paris
+et Ævle bød Guinder tre,
+saa skjørt og ondelit som klar Iis,
+saa rødt og hvidt som Blod at se —
+at Axel sae da han kommer
+til Valdbor: „Mø for alle Blommer“!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112106">
+<head>
+  <title>Jorskjælv</title>
+  <subtitle>(Et Bellede fra Sidsilien).</subtitle>
+  <firstline>Oh, rullende Buller! Ha, rasende Ekko!</firstline>
+  <source pages="17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Oh, rullende Buller! Ha, rasende Ekko!
+Kom, Du min Hudstru, vi maa stønne os væk, o!
+Før Skostenen vakler, før Vækene brister,
+før Gullet vos sluger og Støvet slaar Gnister.
+Oh, grib vorres Børn med Rædsel i Sindet
+og sjeneer Dig ej for det blottede Linnet.
+Her gjæller det Livet, ej Lægemets Blu,
+fogjæves at rødme med Smærde og Gru!
+Oh, kom, Terpentina, kom, hudsløse Smaa!
+Gesvindt maa vi flye fra den knagende Vraa.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Aannelie Dikte</title>
+</head>
+<content>
+
+<text id="fristrup2026112107">
+<head>
+  <title>Livsens Gaade</title>
+  <firstline>Hvo mange tænker ovver Livsens Gaade</firstline>
+  <source pages="21-22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+„Hvo mange tænker ovver Livsens Gaade“?
+Saa spurde jeg i Bondens lave Gaar,
+hvaar Kale og hvaar Pier sat og aade
+Grødnadderen af Lerets røde Skaar.
+
+Mon disse Indevidder tar og spørrer:
+„Hvofor blev Du til Jorens Værden føt“?
+Ak, nej! de vrager Viisdoms tygge Bøger,
+mæns Tanken kredser omkreng Suul og Kjød.
+
+<pb n="22" facs="033.jpg"/>Og dog, maaskee, hvæm veed, om ei en Lykke
+for dem er denne sløve Dyrriskhed,
+hvaar imod Livsens Gaade haardt mon trøkke
+den fine Nattur, fuld af Lyrriskhed?
+
+Jeg vænner mig med Sorg fra Mælkegrødden
+og synker Hodet med et Vedmods Smiil,
+saa vandrer taus jeg ud i Afdenrødden,
+og grunner under Veiens Taarerpiil!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112108">
+<head>
+  <title>Aan er Makt</title>
+  <firstline>En Stadsmands Or, af Folkets jævne Mitte</firstline>
+  <source pages="23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En Stadsmands Or, af Folkets jævne Mitte,
+opføt i Vadmeel, fostret op med Lyng,
+paa brunen Hede nær ved gullen Klitte
+han lærte Spraagets safdifulle Fynd.
+
+Og Aan han fek, hvaafra ei Nogen veed,
+slikt suges ind med Modermælkens Fedme,
+fra Bondens ulne Faar og Præstens Ged
+hans Liv drog bort til Hærskermaktens Sødme.
+
+Men bag di diamantbeslaade Ordner,
+hvaar Stjærner parre dem med gylne Kors,
+slaer Hjærdets hjemmegorte Slag, som aldrig vorter
+besænkt med Hovmodsdjævelens Akkord.
+
+Med Psalmesang og Bønder paa hans Tunge
+han kjæmper trofast mod Rebællers Haan,
+men Seiren er ham hvis, thi Engle sjunge:
+Som Aan er Makt, saa er og Makten Aan!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112109">
+<head>
+  <title>Eldskov</title>
+  <firstline>Eldskov er som den futtende Gnist</firstline>
+  <source pages="24"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<w>Eldskov</w> er som den futtende Gnist,
+den tænder i alle Ænder,
+Prindsæssen paa Tronen, Pien paa Kvist —
+alle veine det brænner!
+
+<w>Eldskov</w> er som et Vippebrædt —
+Amaar sitter paa Mitten —
+syndig Lyst, oh, den vipper læt,
+ærbar tynger saa tit den.
+
+<w>Eldskov</w> er som et Flyveskiv,
+den svæver saa højt i Vaaren,
+størter dog ner med Skri og Piv —
+og ligger maset paa Joren.
+
+<w>Eldskov</w> er som en høj Paakal,
+fylt med den lifliste Drue —
+faaer Du af den en Pærial —
+da ryer Din hele Formue!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Versefisiert Roman</title>
+</head>
+<content>
+
+<text id="fristrup2026112110" ignore-tests="space-before-question">
+<head>
+  <title>Den farlie Alder</title>
+  <subtitle>Versefisiert Nutisroman.</subtitle>
+  <firstline>Baronæse Elfrida la paa en Kanepe</firstline>
+  <source pages="27-34"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Baronæse Elfrida la paa en Kanepe
+i hendes Pudoar
+og drikker som dagli Vane The
+af kostbart Fajansje saa klar.
+Skjøn var Elfrida, yppi og blød,
+svolmende som en spænt Ballon,
+ravnsorte Bokler om Skoldrene flød,
+Barmen var af udlasteli Fason —
+en Junno i Tyld —
+inu udden Fejltrind og Skyl.
+Men om Øjnenes Nat er der Rønker,
+der fotæller om Smærter, som Sjælen betynger!
+<pb n="28" facs="039.jpg"/>Hva kan hindes Lykke fostørre?
+Jo — hun var naaet — di fyrre!
+<w>Den farlie Alder</w> i Kvinnens Liv,
+der vækker di hengjemte Saftder,
+og tumler med Tankernes sveisende Siv,
+knusser Mostandens Krafter.
+Hvæm var hun gift med? En Baron —
+  forhendværendes Dragon —
+  ulevet Ion —
+en lapset og slapset Mandsling,
+udskikket til den minste Handsling!
+Nu føller hun Nærvernes Kribling
+tar en Roman — af denne herre Knipling —
+men hun kaster atter sin Bog
+  hæn i en Krog —
+hun sig saa oppudsket kjender
+og raaver paa hindes Tjenner:
+  Evan!
+  Ta min Thevand —
+den smager som Skevand!
+Evan ufører Ordren
+og bærer bort den.
+Elfrida ham føler med Blikket
+og vidsker i Løndom: Sikket
+et Skjær af Ungdommens Spændihed!
+sikken Friskhed og sikken Behændihed!
+  Hun kalder ham hid
+  med en Stemme saa blid —
+  Poppellerne blivver store og større —
+  Evan veed ikke, hvad han ska gjørre —
+  hun bredder Armene ud —
+<pb n="29" facs="040.jpg"/>  Evan staaer ikke for Skud —
+  Elskovsens Larve springer af Puppen —
+vi kaster et Slør ovver Grubben — —
+
+Forand Spejlet sitter Elfrida
+og blivver frissert til Mida.
+Bleg er hun og kol; Hvaar fatalt!
+Dette var pinene galt!
+  En Tjenner! som kan bære en Bakke om,
+  men som intet kan snakke om —
+  som er stum
+  og dum!!
+Evan faar en Grassjale
+og maa Slaattet vænde hans Hale —
+  men Baronæsen
+faar hindes storaktie Væsen.
+
+I Salen straaler et fornæmt Selskav
+alle meer eller mindre velhav —
+det er Kammerhære og Sjasdafærre,
+som har den Ærre.
+Paa Bordet staaer alle Elfridas Livrætter
+særvert af Lakøjer i gule Livreer —
+der er Østers, Sadiner og lækkre Kramsfule —
+oh, di burde dem føle skamsfule,
+om di tænkte paa Fatties nærie Savn,
+der skrier om Brød som den hæsende Ravn —
+Fattidomen, som Modet ihjælslaar
+<pb n="30" facs="041.jpg"/>  og kuns kjender Østers som Skældsor.
+  Baronæsen har paa vænstre Haan
+  en Fætter fra Inddiens Ørken,
+  Herren, hves Navn begønder med von,
+  slutter med Skompeter Tørken —
+  Baronen sitter og dvasker
+  og smadsker —
+  nys kom han fra en Dimmemonde —
+  vi vil ham ikke mesonde. — —
+    I et Siddekappenæt
+    drikker man Kafæ omme læt —
+  Elfrida beer hindes Kaveler
+  om at sitte ner,
+  og Fætteren fra Inddien
+  sitter sig hos Elfrida gesvindien —
+  bruun er han som Mokka —
+straalende Ordner dem har han nok a. —
+Hva snakker di om? Om Eventyre
+med Bøsler og andre levende Tyre,
+om gromme Tiggere af begge Kjøn,
+som lure bag Palmer i Løn
+indtil en Kule dem plaffer.
+Om højhalsede Geraffer
+og plettede Jaguare —
+i Inddien der er saagu Fare!
+Elfrida lydter, vild som en Rype:
+  Han er en Thyppe!
+Ska man være Ens — ska det være en Mands —
+Daen derefter er hun hans!
+Baronen og Elfrida blive skildte —
+det var hva di bægge vilde. — —
+
+<pb n="31" facs="042.jpg"/>Vi er i Paris. Sikken en Svære!
+Det kan nok være!
+Den inddiske Greve, som er en Dameven —
+han kan lave den!
+Snart fæster han paa Jardængs Tærasse
+med en ny Mætrasse.
+Baronæsen han gandske forsømmer —
+hun sitter og drømmer
+i derres garnierte Hotel
+om Lykkens fosvinnende Hæld!
+Nys gik fra den skjønne Kvinne
+hindes Veninde,
+Markvise de Vildemære.
+Nu vænder hun sin Spildelære. — —
+  Mosekken er blen Elfridas Lise —
+  den er ju osse saa trøsti tilvise —
+  med Hr. Chopæng hun spilder fiirhændit,
+  ti Frangser Timen hun gir spændit —
+  Schubart og Fugmann
+  di trøller fræm af Pædalen —
+  Her Chopæng er rikdinok ikke valen —
+<pb n="32" facs="043.jpg"/>og han er en klog Mand —
+lidt tynde er nok hans Skanke,
+men en bølgende Manke
+hænger han ner i Øjnene brune
+som en Lakune.
+Til Kjærlighes Toner er bægge parade,
+Amaar dem giver til Priis,
+og i en Doæt af den store Sonnate
+mødes di lisom en Mis!
+
+Nu er vi i Budapæst —
+der er, huha, Fæst!
+Amandus Chopæng ska gi en Konsært,
+men det er kuns sært,
+at Elfrida ej sandser hans Flygel —
+men en vældi Prygel —
+ungarsk Magnet — mon nu hinde hue —
+<pb n="33" facs="044.jpg"/>han flux har plukket den modne Drue!
+En Bjørn — Natturen jo saadne skaber —
+og naar Elfrida ej vil som ham,
+saa vanker der Klø af hans laadne Lapper —
+og det er en navnløs Skam.
+Saa faar hun en Da en sjov Bellæt;
+Den var ju næt!
+Magneten er kuns en gemeen Berrider —
+ah, hvaar det svidder!
+Hun samler sit Gods,
+saa snart hun fik Nys,
+saa kaster hun lods
+med et rasende Fnys! — —
+
+Elfrida er atter i Danmark —
+heelt sløvet af Skoffelsens Vandmagt —
+hun spidser Dinæ i „Bristol“ —
+i Lommen hun har en Pistol!
+<pb n="34" facs="045.jpg"/>Da faar hun med Et en go Idé —
+den ædle, folatte Kvinne —
+i en anden Bælysning hun mon sig se —
+som modærne Fosadterinne!
+Hun iller hjæm. Hun hindes Liv
+vil dikte ner paa Pappiret —
+med Elskovs Blusning, Ballader og Kiv —
+hvodan hun har skifdet og sviret!
+Hun dypper Pænen, begønder Kapitlen —
+først var det Titlen — ?
+hun har en! Bogen hun kaller:
+
+        <w>Den farlie Alder</w>!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Hestorisk Lyrrik</title>
+</head>
+<content>
+
+<text id="fristrup2026112111">
+<head>
+  <title>Uro paa Balkan</title>
+  <firstline>Fordybt i Poesi og Romantek</firstline>
+  <source pages="37-38"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fordybt i Poesi og Romantek
+jeg sitter, mens jeg Hodet har i Haanen,
+man skulde tænke, at da Ro man fek
+til at nedkomme med Praadukt af Aannen.
+Ak nej, i Værdens Menskemyrretuer
+det kribler stadi ved min Dikterfod,
+paa graably Himmel ses ei Regnens Buer
+og Træet vakler i sin dyve Rod.
+
+Da røster af Kannoner min Altan
+jeg springer op og synker Pæneskaftet,
+og stirrer ner i Rætning af Balkan,
+naturlit om af Skræk jeg hade taft det.
+Thi paa den fjærne Hallo seer jeg klart,
+hvaar Serpien til Tandens Rod sig rustner
+at klø Sultaneren med Lynets Fart,
+mens Munternegros Fyrstekinder gustner.
+
+Det er ei for Europa trøsterig
+at skulle padse paa det skomle Hjørne,
+til Grændsen løver hele Østerrig
+<pb n="38" facs="049.jpg"/>og Tænder visser gromt Byldgariens Bjørne.
+Vist Kejser Wilhelm snor hans Ovverskjæg
+mæns Saren kæmper tapperlit ved Møjen,
+Angst Kong Aldfongse stødter sig mod Væg,
+og Hollands Dronning kommer ned ved Støjen!
+
+Kan da ei Jordens Makter holle Fred
+og brue Tropper kuns til Vaktperade,
+mæns Fanemarsen bruser paa Geled
+med Drenge foran til Amallegade?
+Ja, gid engang det komme maa saa hvidt,
+at kuns for Spøg Katovverne de dondre,
+og Pien bludser ved Husarens Snit,
+naar Garden lar sin Hue stolt beondre!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112112">
+<head>
+  <title>Stormen mod Kjøbenhavn<footnote>fremsakt af P. Ferd. Vadum ved Festen i Snolderød for Stormens 100aarie Bestaaen.</footnote></title>
+  <firstline>Ifal en Svensker spørrer: Hvofor flagres</firstline>
+  <source pages="39-40"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ifal en Svensker spørrer: Hvofor flagres,
+og hvofor hænger Skjol ved Skjollets Rand?
+Kan ædle Føllelser, som ellers lagres,
+en herlig Luftning faa ved Orets Brand.
+Og Svaret blivver: Viid, Du blunde Svensker,
+Dit Fæddreland allene Skyllen bær,
+thi glædes derfor alle danske Mensker,
+at nu vi favnes kan til Hjærdet nær.
+
+Men dengang var det Eders Heldt, <w>Carl Gostav</w>,
+som hid paa Skøjter ovver Issen drog
+og brød litsindig Fredens gyldne Bukstav
+for ret at haane gamle Dannebro.
+Ud laa hans Hære foran Byens Porter,
+<pb n="40" facs="051.jpg"/>til Natten kom, <w>den tinde Februvar</w>,
+saa stormede de op i bare Sjorter
+at line Sneen, som dem ovver bar.
+
+Men Byen sov ej mer end højst nøvendit,
+paa Vollene der sto en Borgerstand,
+mæns Damerne paa Sidderne behændit
+Vand paa Madskine gav den svenske Mand.
+Stodenterne lod dem ej længer bede,
+men løv til Skandsen fra Examens Dont,
+hvor <w>Trede Fredrik</w> i hans lune Rede
+paa skomhvid Ganger galoperte rundt.
+
+Da blæste Svenskens Drot til Retirade,
+thi slaade laa hans Gosser paa vor Vold,
+imæns fra Naboløs til Stormens Gade
+de Danske hujede i Natten kold.
+Og Stodder holdt den fine Mand i Varmen,
+en simbel Kælling fik et Dronningkys,
+Risraaden gik med Skræddren under Armen,
+og Printsen talte ømt til Gadens Tøs.
+
+Dog, svenske Broder, Tidderne sjangsere,
+Oh, brød Dig ikke om vor Jubbelfæst!
+For nu vil Du jo ikke storme mere,
+men suppe med os som en elsket Gjæst.
+Hiin Strid den er ju kuns en Fortislævning,
+nu sejret har Din gyllengule Puns,
+I Farmers Sal, som staar paa Vollens Jævning,
+Fresbægret tømmer vi i Vendskabs Dunst!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112113">
+<head>
+  <title>Jisland</title>
+  <firstline>Svolm, Jisland, højt paa Polens hvide Spis</firstline>
+  <source pages="41"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Svolm, Jisland, højt paa Polens hvide Spis,
+brøst Dig med Stolthed ovver Fortis Minder!
+Hvad kan Du gjørre ved Du kuns er Jis,
+saa langt som Du tilbages kan errindre?
+
+Haarføre Mænd med Kraft i Driven kold
+kjækt vader om for Nødtørfts Kost at finde,
+Ultrøien skjærmer varm hans Hjærde bold,
+og Vander dækker for de skarpe Vinde.
+
+Et hærlit Kvinnespind ved Arnens Rok
+med Dusk i Enden paa den fixe Hue,
+fofærdiger det hjæmmegjorte, dog
+for Ælskov Jislands Mø ei monne blue.
+
+Hild Eder, Jislands brave altings Lav,
+som sitter rundt paa Stenes haare Sæde,
+ved Hæklas Spring og Geisers varme Hav
+den gamle Øe til Uvikling og Glæde!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112114">
+<head>
+  <title>Frægatten Jylland</title>
+  <firstline>Siig, skal den fælles? Jylland, skal den fælles?</firstline>
+  <source pages="42-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Siig, skal den fælles? Jylland, skal den fælles?
+Fovandles om til Pæreskibberpram?
+Skal Øl i Strømme ned i Lidkjøv bælles,
+Wessel og Tordensjol til Tort og Skam?
+Nej, der maa offres, kjære Unnersotter,
+drik ikke Spæritus, men Mælk og Vand,
+og ræd fra Skivbrud, danske Patriotter,
+Frægatten, som var med ved <w>Hælgoland</w>!
+
+Der duvede den fræmad som en Svane,
+mæns Portene de fnyste røden Ild
+og rampenerde Fjendens Skraag saadane
+at Besmark skjælved i hans Rænkespil.
+De Gutter blaa i hvide Seglduksbuxer
+<pb n="43" facs="054.jpg"/>og sværtet sorte rent af Kruttets Røi,
+med fiin Fostaaelse sin Chæfs Indstruxer
+uførte glandsfult med et kjækt „Aahøj“!
+
+Oh, gamle <w>Jylland</w>, hvaar Du end mon havne,
+ved Stranden eller Fredriksbers Kanal,
+vil Du Din stolte Fortid aldrig savne,
+men spise Øren ved hvært Tordenstral.
+Du sjunge vil en Sang fra Gallejonen
+og tordne med Dit brede Agterspeil,
+mit i en Tid, hvaar Syklen og Ballonen
+seer ned med Haan paa Mastens fulle Segl.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Personlie Homner</title>
+</head>
+<content>
+
+<text id="fristrup2026112115">
+<head>
+  <title>Til Frankris Pressedent<footnote>De franske Inpulser har jeg faat af en Svaager, der har ernært sig i længere Tid i Paris som Tilskjærer.</footnote></title>
+  <firstline>Jeg er ej Fransmand, siger frit det aabent</firstline>
+  <source pages="47-48"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg er ej Fransmand, siger frit det aabent,
+jeg fik ei <w>Madselliæsens</w> Ild i Daaben
+og ikke <w>Mulliæres</w> Sjæls Bongtong.
+Min franske Viisdom kunde læt beseire
+sel baade <w>Robertspiere</w> og <w>Voltaire</w>
+ja, sel den skønne Madam Mængdenong.
+
+Dog, lydter De, Hr. Pressedent, lit nøire,
+min Lyrre minder Dig om Floden <w>Loire</w>
+og <w>Notterdames</w> høje Kattekump!
+Om Spraagets Kundskab end i Vunde stedtes,
+de Or: <w>Ild bong marchæ, se sjortes fedtes</w>,
+Dem helse skal med underdani Pomp.
+
+Fra <w>Scenens</w> Bred paa Repoblikkens Vegne,
+hvaar Dansen gaar med Liv i <w>Madeleine</w>
+<pb n="48" facs="059.jpg"/>og Messer bedes fromt i <w>Mulæng rutsch</w>,
+De stoldt kom hid med Ærrens Liggejoner,
+motaet af hvidunderlie Toner,
+Oh, disse Toner er — <w>Pardon</w> — min Luths!
+
+Men Tanken gruer, naaer den skuer Madsen
+af Pøbelsæder frækt paa <w>Grevepladsen</w>,
+hvaar Hoder kappes ganske <w>malkontang</w>.
+<w>Marie Antoalet</w> jeg kan ej glemme,
+thi Sjælen stønner tyst: <w>Ui, la femme</w> —
+naar <w>Gillotinen</w> gaar dens skarpe Gang.
+
+Dog, opad Dampen steg Du, <w>Falliæres</w>,
+besindi, værdi, menskeklog med meres,
+og dæmpet Stormens Hylen <w>vola tut</w>!
+Du tæmmed Keiserørnen fast og roli,
+den, som i sin Tid Keiseren <w>Napoli-</w>
+<w>on Boneparde</w> havde fræmad skudt.
+
+<w>Allongs angfæng</w>! Du store Ærresborger,
+glem ved vor Barm di nasionale Sorger.
+trefarvede i Bonden — vullevu:
+Sludt Venskav med di Smaa, som Intet mægter,
+men som med Hældemod i Tanken fægter,
+det bør, det vil, det skal, det skulde Du!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112116">
+<head>
+  <suptitle>Til Jubilæumsparret</suptitle>
+  <title>Amandus og Malvina Lillelund</title>
+  <firstline>Jeg veed en Mand i Snolderød</firstline>
+  <source pages="49-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg veed en Mand i Snolderød,
+der før en væsset Pæn.
+Jeg ved en Viv saa bolleblød
+og færm i Gjerningen.
+
+Han sitter ved hans Skrivrebor
+med Videts store Sax
+og klipper ud af Døjnets Gang
+Aldt, hvad der hænner strax.
+
+Hun svæver fra sit Suppekyd
+paa Vinger som en Vind
+Europa rundt med Nyhedsfryd
+og samler Stoffet ind.
+
+<pb n="50" facs="061.jpg"/>Fandt I ej Vei til Norens Pol,
+Jisbjørnens Paredis,
+saa fandt I Hjærdevaarens Sol
+ved Pæneskaftets Spis.
+
+Hild, <w>Ægdeparret Lillelund</w>,
+Hild <w>Snolderød Avis</w>!
+Af Læssere en Millejon
+nu jubler til Jer Priis!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112117">
+<head>
+  <title>Til Georg Brandis</title>
+  <firstline>Den store Aan med graanet Haar til Priis</firstline>
+  <source pages="51"/>
+  <keywords>brandes</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Den store Aan med graanet Haar til Priis,
+bortfløgtet væk fra Dagens Sjokkelade
+paa Tankens Vinger solo til Paris,
+jeg rækker mine Hænner, et Par flade.
+
+Hværannen Dikter slaet har sin Lyr
+og plokket Spraaget for di bedste Blomster,
+for Dig at hæddre, saa en stakkels Fyr
+paa Kvisten Sukker med de smaa Indkomster.
+
+Dog see, dog hør min Musses Vingefang!
+Hun kommer, Georg, sikken hun kan stirre!
+Nu ringer Poesiens Dingeldang,
+Gulstrængene paa Vadums Harpe dirre.
+
+Oh, store Aan, med graanet Haar til Værs,
+i Støvet lægger jeg med Gruus paa Næsen.
+Fyld væk igen, fyld en Gang til <w>Halfjærds</w>,
+saa Værden jubbler ved din Fakkels Væsen!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112118">
+<head>
+  <title>Spanniens Haab</title>
+  <firstline>Saa blev han født, den lille spandske Prinds —</firstline>
+  <source pages="52"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Saa blev han født, den lille spandske Prinds —
+Ej anede hans Udskyl sel hvodanne!
+Dog, Fruktbarheden svolmer jo gesvindt
+hos Folkeslag i Syndens varme Lande.
+
+Og Tronen røstede af Stoldthed ømt,
+da Ildsalutter skræmmet hvær en Uro,
+fordig det Haab var kommen, som var drømt
+fra Basselona til Extramaduro.
+
+Ind svæver <w>Alfonds</w> med et Fadersmiil,
+den sel skjægløse unge Kattelonier,
+og skjænker Sønnen en Autormobil,
+iagtagende de spandske Ceremonier.
+
+Og indtet Steds i Buggen bliver tørt,
+thi Barneøjet fylles sødt af Taare —
+mæns Hoffet staar i Ettekætten snørt —
+oh, løses Spanniens Stivhed ej ad Aare?
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112119">
+<head>
+  <title>Til Mestermaleren Carl Lund</title>
+  <firstline>Engang jeg sel med Ivver førde Pænslen</firstline>
+  <source pages="53-54"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Engang jeg sel med Ivver førde Pænslen,
+strøg Pottens Oliefarve op og ner,
+og stonddom jeg imællem føller Længslen,
+oh, efder Dig, min Ungdomstis Plaseer!
+Ak, det var kuns Stakitter, Plankeværker,
+jeg fresket lifli op med nyfødt Glands.
+Nu jeg til Harpen dikter Tankeværker,
+mæns Musser — alle Ni — di trær en Dands!
+
+Nattur, oh, Du er gandske vist fotrindli,
+Dig har vi Mensker jo fra første Haan,
+men vredes ei, Du er dog for aldminli
+for Senekonstens malleriske Aan.
+Ner maa Phantasus da fra Loften stie
+og lave om paa det, som der er til,
+naar Æventyrrets store Kommedie
+Kopongens Poblikom man bydde vil.
+
+<pb n="54" facs="065.jpg"/>Da søger Foden op paa Rondetaaren
+i Sneilegang til Mestrens Trylleloft,
+hvaar han befaller højt fra Stundens Maaren,
+mæns Læredet det lydter spænt og groft.
+Hva ska det være? En Aladins Hule?
+En Palmehave uden Restrasion?
+En Norpol kold med Edderdunets Fule,
+Næapel med den gløddende Citron?
+
+Oh, knib ham ej, I rie Deriktore,
+som skommer Gullets Strømme med Rabat.
+Thi hva ska da den store Mester gjøre?
+Han maa ju spare paa Palettens Klat!
+Da blir ei Borgens Torn saa mangekantet,
+og Himlens Blaa blir ej af første Slax,
+det ville Hav leveres ikke vandtæt
+og Markens Korn faar ingen gylne Ax!
+
+Oh, <w>Carel Lund</w>, som Smigrens Or de søde
+har gjort saa gandske volsom sjæleglad,
+som skommet Mælk efder den fede Fløde
+Du faar nu Vadums simble Dikterkvad.
+Sel om jeg var saa viis som viisen Solon,
+jeg fadtet ei, Du male kan saa godt;
+dærfor Dit Konsterry ska flyve, oh, Lund,
+vor Globus rundt i Rødt og Gult og Blaat!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112120">
+<head>
+  <title>Norges Kronprinds</title>
+  <firstline>Saa elsket nyddelit af Alle</firstline>
+  <source pages="55-56"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Saa elsket nyddelit af Alle
+med krøllet Lok paa Færstenkind,
+Du slumret i det gule Pallæ
+med udskylsbarnli Tronesind.
+Ei tænkde Du paa Norges Rie
+ved Barmen af Din Ammepie.
+
+Oh, Fryd! Nu skier Du paa Dovre
+og stirrer Dig fræmdeles om,
+<pb n="56" facs="067.jpg"/>men Affskedslængslen er nu ovre,
+og trøkt Du vænter Folkets Dom.
+Thi een Gang skalst Du Norge styre,
+naar heelt opvoxet er Dit Yddre.
+
+Saa skalst Du krones paa Dit Hode
+og salles paa Din hele Krop,
+mæns Skjalle kvæder Hømningsode
+med ydmykt Blæk til Tronens Top.
+Du Guld udkaster som Betalning
+for Sætterjentens glade Halning.
+
+Dog, Prinds, Du først maa blive dulit,
+thi stil en Tid Din Kongetørst.
+Dog det maa skee saa seent som muglit,
+for Fader skal riggere først.
+Hvis Du kan Norens Riger samle
+Dig rækker Sago Ærrens Pamle!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Folkevisse</title>
+</head>
+<content>
+
+<text id="fristrup2026112121">
+<head>
+  <title>Jisjomfroen</title>
+  <firstline>Jisjomfroen stanner paa Bjærgets Top —</firstline>
+  <source pages="59-60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jisjomfroen stanner paa Bjærgets Top —
+— oh, som saadden en Jomfro kan iisne!
+hver Feber skjælver i Blodets Krop
+og Neglenes Rødder maa visne.
+
+Hun aavner sin Barm af Krøstal og Demant —
+oh, som saadden en Jomfro kan iisne! —
+og vidsker: Oh, Yndling, oh, bliv min Snemand,
+thi elles maa Hjærdet forlisne.
+
+<pb n="60" facs="071.jpg"/>Men hvaar kan man elske en Kvinne af Jis? —
+Oh, som saadden en Jomfro kan iisne! —
+Naar en glødende Pie forvender En hist,
+hvaar Bladene grøndes paa Kvistne!
+
+Jisjomfroen blev til en skrinkrende Fraast —
+oh, som saadden en Jomfro kan iisne! —
+da jeg vænte min     fra den fryssende Post
+og fløgtet til Dalen, den tystne.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Leilihedens Dikte</title>
+</head>
+<content>
+
+<text id="fristrup2026112122">
+<head>
+  <title>For Grunloven<footnote>Kan synkes paa Mellodien: „Der er“.</footnote></title>
+  <firstline>Det var i Juni, Dagen brød den femte</firstline>
+  <source pages="63-64"/>
+  <keywords>frederik7</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det var i Juni, Dagen brød <w>den femte</w>
+af Mørket frem i Solens Kongelys,
+og Fulene til Lovsang Næbbet stemte,
+saa Tidslen skjælvede med bange Gys.
+Thi Danmarks Sjenius med Jubbel nedkom
+og fødte Bly en Grunlov med Hurra,
+som fek en magesløs fra Hjærdet Velkomst
+ved Skagens Bank som og ved Hafnia.
+
+<w>Kong Fredrik</w> stod, hvaar stod dog ikke Drodten
+med Dokkemæntet lisom hans Staty,
+og til Frihedens Mø han smilde saadden,
+at Hjærder sprang imellem Løvers Gny.
+„Pas paaen“! sagde han til Danmarks Borger,
+som hævet sig med valberættet Røst,
+„og kast den ej i Grams til vilde Maarger,
+men la den spire i en frodi Høst“!
+
+<pb n="64" facs="075.jpg"/>Har vi det gort? har vi dens Bude passet,
+har vi dens Garn uredt med nænsom Haan?
+har vi den kjærlit løftet mod Panasset,
+og tyddet viiselit Bukstavens Aan?
+Hvo kan paa Hjærdets Aare Haanen ligge
+og raave: Ja! med Dommedas Basun?
+Tør Du det? Nej! jeg tør det heller ikke,
+men snir mig bort med Hodet ud af Huen.
+
+Det er ej nok, at gaa i lange Baner
+med høj Hat paa og Dannebro paa Snor
+og slynge ud en Skvada mellem Faner
+fra Talerstolens høie Polpetur.
+Det er ei nok at trave baved Plovven
+og fylle Buen med Gulkornets Ax,
+det er ej nok at glemme helt Grunloven,
+som mangen Borger gjør det nutildags.
+
+Nej, op til Horisaanten ska den hæves
+med skylfri Barm til Affsky og til Straf,
+og mellem Mark og Hav ska hærlit leves
+i Takt af Lovens klare Paregraf.
+Lad os med Harme lukke Løgnens Mund i,
+lad os dens Giver sitte paa en Pi-
+destal af Guld tilværs <w>den femte Juni</w> —
+det skal ej skee! som ham det raave vi!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112123">
+<head>
+  <title>Skodaar</title>
+  <firstline>Paa Jorens Bane laver Tidden Modder</firstline>
+  <source pages="65"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa Jorens Bane laver Tidden Modder
+hvær femte Aar i Livsens Almenak,
+thi da intrædder det man kaller Skodaar
+og giver Aardsag til den gamle Snak:
+
+Hvo <w>ni og thyvende</w> til Værden fødtes
+i Februvar ej faar et Liv som vos,
+men af di fire Aar med Kval udstødtes
+og lever kuns i Phantesiens Os.
+
+Hvofor? Ja, derrom grandsker Aaltids Vise
+i Jordens Globus med forstyrret Lup,
+ej ondende dem blot et Maaltids Lise,
+mæns Tanken størter ovver Steen og Stup.
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112124">
+<head>
+  <title>Børnesind</title>
+  <firstline>Vi er saa kloge. Gud, hvaar er vi kloge!</firstline>
+  <source pages="66-67"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Vi er saa kloge. Gud, hvaar er vi kloge!
+Vi tro, vi kan det Hæle uenad,
+vi gjædter Gaader og vi læsser Spraage —
+ja, spør kuns Herren eller Fruen ad!
+    Med Hjærnens snille Kubler
+    ad Eenfol højt vi skrupleer —
+    men snupler
+mit i vors Viisdom tit i Livsens Taage.
+
+<pb n="67" facs="078.jpg"/>Vi mangler Børnesands for Bakketæller,
+dets riige immerglade Udfostand.
+Vi for Udviddenhed sku takke hæller
+end grandske ner i Gruplens dyve Spand.
+    Oh, gid jeg sat paa Dorte
+    midt i min lille Sjorte —
+    langt borte —
+og ringlede med Ranglens Buggebjæller!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112125">
+<head>
+  <title>Praalog</title>
+  <subtitle>
+    <line>ved „<w>Kameliedamen</w>“s Opførelse i Sengeløse i velædit</line>
+    <line>Øjemed, fræmsagt af P. Ferd. Vadum:</line>
+  </subtitle>
+  <firstline>Høistærrede Fosamling —</firstline>
+  <pictures>
+    <picture type="illustration" src="1912-armand-duval.jpg" href="https://www.kb.dk/e-mat/dod/115308055249-color.pdf">
+      P. Ferd. Vadum som Armand Duval i „Kameliedamen“.
+      <!-- Udgavens unummererede tavle i forbladene før smudstitlen. Sceneportrættet er knyttet til »Praalog« via skuespillet og opførelsen nævnt i den trykte undertitel. Fotograf, datering og fysiske mål er ikke dokumenteret. -->
+      <!-- metadata checked: 2026-11-21 -->
+    </picture>
+  </pictures>
+  <source pages="68-70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+  Høistærrede Fosamling —
+ungdomsfreske Ungmø, allerstegne Gamling!
+De kjender Alle Peter Ferdnant Vadum —
+der stammer ned som I fra Eva og fra Adum —
+som Dandselærer, Konstnermaler har han Ry,
+som Kammerjæger med i Sengeløse By.
+Og — hvad min Kone andgaar; er hun højst bekjendt
+som Gjordemoder i hvært Huus omtrent.
+Hun har bragt fræm til Lys og Luft og Lyst
+saa mangt et Sengeløsebarn ved Moders Bryst. —
+Hvofor jeg her fremtræder? Som Praalog!
+At tolke i et aanfult, versefisieret Spraag
+Aardsagen til den Grund, at vi i disse Relgioner
+i Aften bydder Dem — Theaterpretangsioner.
+
+                Hør da:
+
+Vor By er højst idøllisk, abselut agrarisk,
+vor Smør, vor Æggeligning meget exemplarisk,
+<pb n="69" facs="080.jpg"/>og Byen — det bæmerkes gandske komangtarisk
+er — hva Morallen andgaar — ikke særlig — dikkedarisk
+Dog, ærrede Fosamling, her Idøllen stopper,
+thi — reent ud sagt — vi har en Rede fuld af Lopper!
+De lædsker dem med Blodets røde Saft
+og suger Marven af vors bæste Kraft.
+En Loppekrig maa føres, det er Tingen,
+nej, ingen Skaandsel, de ska sprænge over Klingen.
+
+Dog — til at føre Krig behøves — Pengepengepenge!
+Vort Skudespil ska gi den Mønt, hvotil vi trænge.
+Mod Lopper hjælper ei Kinin, ei hæller Brama,
+de ska urøddes af — det frandske Drama!
+Vi da en Ørre vil betale ikke under,
+for hvær en Loppe, som i Døden blonder.
+
+Nu lidt om Støkket. Det er franskt — tildeels —
+Subjæktet har jeg laant hos den berømte <w>Dumads films</w>.
+Det handler om den ædle frandske Dimmemonde —
+et sørrelit, men — om jeg saa maa sige — højst nøvendit Onde —
+Kamelien er Sømbolet paa Bohæmsens Glæder,
+i Blomsterspraag den sier: her er ingen smale Stæder! —
+Min Kone har den store Rulle sig paataget,
+og, derfor jeg garenterer, hun egner sig for Faget.
+Jeg sel er go nok, vær ei haar mod Resten,
+vær mild mod Indsjenuen, thi hun gaar inu til Præsten.
+
+Nu kuns til Sludt: En Tak til Hvær og En,
+der hjalp os til at stille Forestillingen paa Been.
+<pb n="70" facs="081.jpg"/>En særli Tak til Hr. <w>Gaardejer</w> Rasmos Skvat,
+der har sin kumfetable Lo os ovverladt.
+Tak til den stædlie Lokalepræsse,
+som vidste Loppesagen sjurnalistisk Ingterræsse.
+Tak til Enhver, som mødte her paa Pletten
+og udden Gnovseri ved Hullet to Belletten.
+Og hermed mener jeg at have gort Ræklamen
+for Konsten, Lopperne og for — <w>Kameliedamen</w>!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112126">
+<head>
+  <title>Helsen til Aarhuus</title>
+  <firstline>Hild, Jyllands stolde Hovestad</firstline>
+  <source pages="71-72"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hild, Jyllands stolde Hovestad,
+skjønt liggene omkreng en Bukt af Katte-
+gats blanke Baaver, kommendes paa Rad
+og ind mod Havnens Fyrtorn skomhvid skvatte.
+Mæns Klemens Spiir sig hæver imod Loft
+hendfarer under Bron Elektras Sporvovn,
+fra Skosteenspiverne Fabrekkens Doft
+Arbeidets Mand gjør flitti, stærk og aarvaagn.
+
+Et mæktit Gny gik ovver Danas Lund,
+da, <w>Aarhus</w>, Du i Lurens Mundspis støtte,
+bød til Ustelning paa den jydske Grund
+og Lansmænd bonkeviis til Stævning møtte
+med Ost, med Smør, Blanksværte og Konjak
+og med Madskinens pudsede Sylinder,
+imællem Posens Blaat og røden Lak
+man Konstens Mallerir med Øjet finder.
+
+Hvaar stæmningsfult, oh, hvilken Sindets Lyst,
+da op smak Porten ovver bredde Trapper,
+og Kongens ellefandtbeslaade Brøst
+sig blandet mellem Bundens Vadmeelsknapper.
+<pb n="72" facs="083.jpg"/>Da Sangen tonet imod Kubbelen
+fra tusen Struber med sneehvide Huer,
+ej kjendte nogen Grændser Jubbelen
+og ingen Stæder saaes en Mine suur.
+
+Gid, Aarhuus, Aldting for Dig trive maaes,
+gid Dit Tæader stadi maa florere,
+saa mange Mensker ind i det der gaaes,
+til Thalias og Malpromenes Ære.
+Gid Alle bykke paa Dit Fræmtis Værk,
+hvær Arm fra Baghus og hvær Riig fra Forhuus.
+I Loften triller højt den Hedelærk
+en munter Helsen til det travle Aarhuus!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Blandings-Poesi</title>
+</head>
+<content>
+
+<text id="fristrup2026112127">
+<head>
+  <title>Vædeløv</title>
+  <firstline>Til Vædeløv! hvaar tønde Heste springske</firstline>
+  <source pages="75"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Til Vædeløv! hvaar tønde Heste springske
+med blaanede Husare paa sin Ryk,
+vildt haster omkreng Banens Hjørner svingske,
+at see som Seierherrer dem paa Trøk.
+
+Og Spildelysten blusser op som Pinde,
+naar Skimler trækkes ud af Baaserne,
+hos den i Sobel svøbte Selskavskvinne,
+i Haabet om at højne Oddserne!
+
+Nu lydder Singenalet! Faveritten,
+det er <w>Amanda</w> med den sorte Bov,
+men <w>Tulle</w> slar udvændtet hele Skitten,
+og Vinderne di deler deres Rov.
+
+Oh, var en Hoppe Jeg, med klippet Hale,
+jeg kunde ei i Tøjret holle mig!
+men galoperde længe førend alle,
+at hente Seirens Priis til min Sjokei!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112128">
+<head>
+  <title>Gjennem Hovestaden</title>
+  <firstline>Jeg slentrer langs den gloende Asfalt</firstline>
+  <source pages="76-77"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg slentrer langs den gloende <w>Asfalt</w>
+i mine nyfosolde Snørrestøvler,
+og Øjets Blæk det glidder ovver Alt,
+hvaar Damerne smaasludrer og smaavrøvler.
+En Hvespe tynd og her en Bolle sød
+med hule Smiil mit Sind saa ømt fosødmer,
+skjøndt jeg som Barn er føt i Snolderød,
+ej ved min Bugges Dun jeg skamløs rødmer.
+
+Paa Kongens Nytor standser Fodens Gang,
+hvaar „<w>Hesten</w>“ træder paa et faldent Menske,
+mæns Rytteren paa Rykken stod engang
+med Kongesvær i Kamp med gromme Svenske.
+Et Buk for Madjestæten og omkreng,
+mig vinker Borene ved <w>Dangletærre</w> —
+med løftet Barm jeg nydder Ingenting,
+og Alle stirrer paa den slanke Herre!
+
+<pb n="77" facs="088.jpg"/>Om Hjørnet har jeg snart mig freidit skynt,
+sig <w>Østergade</w> bukler som en Slange
+med Speilglasrudder og med kostli Pynt,
+oh, mere, mere end man kan folange!
+En Lugt nu dofter, Billen susser frem,
+nu findes den ei sparsom mer i Noren,
+skindsye ruller Omnibudser hjem,
+imæns af Angst jeg sveder ind til Sjorten.
+
+Jeg aanner atter mit paa <w>Høibroplas</w>,
+hvaar Storkene uspredder deres Vinger,
+bagved mig bykker de et stort Palads,
+mens <w>Apsalon</w> paa Bavbeen Øxen svinger.
+Da seer jeg Skildtet, hvaar der staar: „For Mænd“,
+ned i den Underjordiske jeg farer,
+ej for min Skjærv at give lydt i den,
+et Fredens Paulus jeg mig søger bare!
+
+Oh, der faar Tanken Tid og blidden Ro,
+hjem, hjem til Snolderød den ildsomt svæver,
+til Kykkenhavens Kaal og Hviddero
+bag Huuset, som sin lille Skosteen hæver.
+Der søger Spurren mit paa Gaden glad
+i Hestens Grøde sig den søde Kjærne —
+oh, kald en hærli Sol kuns Axelstad,
+for mig er Snolderød en Lykkestjærne!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112129">
+<head>
+  <title>Hansa</title>
+  <firstline>Se! der flyver Hansa —!</firstline>
+  <source pages="78"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Se! der flyver <w>Hansa</w> —!
+Er det ikke bandsat?
+Med den kække <w>Sæppelin</w>
+kommer ej jeg næppelien —
+tung er Jorens Tue.
+
+Men jeg haandlit smiler!
+Diktertanken piler
+Hansa, Hansa, rask fobi
+op mod Sky saa stolteli —
+løs for hvær en Skrue.
+
+Væk er Grævens Flyver!
+Væk er Gesjongs Yver!
+Byen med di skjønne Spiir,
+Byen med di kjønne Pier —
+nær er Maanens Lue!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112130">
+<head>
+  <title>Ferie!</title>
+  <firstline>Oh! som et Pudst igjennem Livets Siv</firstline>
+  <source pages="79-80"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Oh! som et Pudst igjennem Livets Siv,
+det Or sig stormer til det slidte Hjærde,
+med rastløs Feber man til Tisfodriv
+sin Randsel pakker <w>ind</w> med Længselssmærde.
+
+Jærnbanen fløjder, Skivet slaar en Bak,
+Belletten løses ved de trange Huller,
+og Mærskomspiven stoppes med Tobak,
+naar rask afstæd Kopeerne de ruller.
+
+<pb n="80" facs="091.jpg"/>Sin Skole Læren lukker med Behag,
+Elleven glatter hanses Æselsøren.
+Paa Landet ud! Til Bondens Stud og Plag
+og faae i Solen brunet sig Koløren.
+
+Oh, Ferie, oh, glade Ferie!
+Hvaar Dovvenskaben blir en lifli Lise.
+En ussel Daare er den Gjerie,
+der ikke nænne tør sin Frihed priise!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112131">
+<head>
+  <title>Nydtaarshomne</title>
+  <firstline>Hvem er det, som om Hjørnet donkelt svævet</firstline>
+  <source pages="81"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Hvem er det, som om Hjørnet donkelt svævet
+krumbøiet med utraadte Maarensko?
+Det er <w>det gamle Aar</w>, som ud har levet,
+mæns Tidden Status gjør i Gubbens Bo.
+Hør, Børnelatter! Oh, det er det <w>Nye</w> —
+en stumbet Glut i Sjorte, hvid og rød,
+som muntert er ifær med nu at grye
+med gjemte Sager i hans Taageskjød!
+
+Oh, kan en Lyrres nikkelblanke Strænge
+fremondske Lykkens underfule Væld,
+da skal mit Dikterværktøi bæve længe
+den hele Menskehed til Fryd og Hæld.
+Gid Handel, Vandel, Konsten og Mosikken
+maa blomstre i indbørdes Somsati
+saa vi i Kor ubrydde kan: „Oh, sikken
+et liflit Solskindsaar“! med øm Mani.
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112132">
+<head>
+  <title>Da Stenen lagtes</title>
+  <firstline>Da Stenen lagtes ner — det goes i Skeen</firstline>
+  <source pages="82"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<w>Da Stenen lagtes ner</w> — det goes i Skeen,
+thi Kongehaan omspændte jo dens Skaft;
+da Drodten foran Mængden langsom treen,
+flød Kalkens Læsken som en liflig Saft.
+
+<w>Da Stenen lagtes ner</w> — da lød fra Gipsen
+et Aanesuk igjemmel Muren tværs.
+Det var Apsalon, Krieren og Bipsen,
+hvis Værk ponny sku rejses op tilværs.
+
+<w>Da Stenen lagtes ner</w> — en Stildhed tonet,
+og knapt man kunde Aanne med Besvær,
+men Æresfrykten snart i Hura dronet
+for <w>Krisjans Borg</w> fra Folk og Miletæer!
+</poetry>
+</body>
+</text>
+
+<text id="fristrup2026112133">
+<head>
+  <title>Diktermussen</title>
+  <firstline>Nu faller Pænen mig i Haanen atter</firstline>
+  <source pages="83-84"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu faller Pænen mig i Haanen atter,
+Lyrekkens Musse stiger gradsviis frem
+med Taaregraad og hysteristisk Latter
+hun fyller sødt mit snævre Dikterhjæm.
+Og hendholdsviis med Roser og Fioler
+hun girlanderer mine Bovrioler.
+
+Hvad vidsker ind hun i min Trommehende,
+hvad bringer hun i Favnens hule Skjød?
+hvad slipper ud hun i min Loft for Vinde,
+mæns Vaaren spirer dyft i Muldets Grød?
+Hun ædel Drue, Næktar og Bananer
+paafyller sin Poet i lange Baner.
+
+At Dikte er den Trang blandt andre Trange,
+der ei har Bund i fydsisk Hjærnetrøk,
+<pb n="84" facs="095.jpg"/>men staver ud af Intet Vedmodssange
+som Homlen staver Øl af søden Bryk.
+Ja, Sange, som gjør Sjælen karsk og modi
+til Nadtergalens ondie Melodi.
+
+Lad Døinets Væsener kuns gjøre Bøining
+for Ganens Sandser ved et bovnet Bord!
+Hvad brødder jeg mig om vor Tolds Forhøining,
+Om Bankekrak og Gullets Sørgeflor?
+Fri er som Droslen jeg og frank som Hjærpen,
+jeg eier kuns min Harpe og min Fjærpen.
+
+Jeg elsker blaat det milde lysse Foraar,
+og Anæmonens Doft i Skovens Bund,
+min Musses solforgyldte Bag- og Forhaar,
+og Vandets Spring af Kildens aavne Mund.
+Min Næring er Jorbær med uden Fløde
+og Nattens Duk i Dagens Maarenrøde!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
 </workbody>
 </kalliopework>
