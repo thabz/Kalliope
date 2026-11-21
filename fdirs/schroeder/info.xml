@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schroeder" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Ludvig Peter</firstname>
+    <lastname>Schrøder</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1836-01-19</date>
+      <place>Christianssæde Skovridergaard</place>
+    </born>
+    <dead>
+      <date>1908-02-08</date>
+      <place>Askov</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Ludvig_Schrøder</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>
