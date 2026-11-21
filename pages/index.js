@@ -97,6 +97,60 @@ const TodaysEvents = ({ events }) => {
   );
 };
 
+const Recommendations = ({ items }) => {
+  const lang = useContext(LangContext);
+  if (items.length === 0) {
+    return null;
+  }
+
+  return (
+    <section>
+      <SubHeading>{_('Særligt anbefalet', lang)}</SubHeading>
+      <ul>
+        {items.map(item => (
+          <li key={item.id}>
+            <div>
+              <a href={`/${lang}${item.href}`} lang={item.lang}>{item.title}</a>
+              <div className="poet">{item.poet}</div>
+            </div>
+            {item.image != null ? <img src={item.image} alt="" /> : null}
+          </li>
+        ))}
+      </ul>
+      <style jsx>{`
+        section {
+          margin-bottom: 40px;
+        }
+        ul {
+          list-style: none;
+          margin: -22px 0 0;
+          padding: 0;
+        }
+        li {
+          border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          padding: 8px 0;
+          min-height: 48px;
+        }
+        img {
+          width: 48px;
+          height: 48px;
+          flex-shrink: 0;
+          object-fit: cover;
+          border-radius: 3px;
+        }
+        .poet {
+          margin-top: 6px;
+          font-size: 0.9em;
+        }
+      `}</style>
+    </section>
+  );
+};
+
 const News = ({ news }) => {
   const lang = useContext(LangContext);
 
@@ -161,7 +215,7 @@ const fetchOptionalArray = async (path) => {
 };
 
 let Index = (props) => {
-  const { news, todaysEvents, pagingContext } = props;
+  const { news, recommendations = [], todaysEvents, pagingContext } = props;
   const lang = useContext(LangContext);
 
   const requestPath = `/${lang}/`;
@@ -180,9 +234,14 @@ let Index = (props) => {
         }
       : null;
 
-  const hasNews = news.length > 0;
+  const hasMainContent = news.length > 0 || recommendations.length > 0;
   const hasTodaysEvents = todaysEvents.length > 0;
-  const newsSection = <News news={news} lang={lang} />;
+  const mainContent = (
+    <div>
+      <Recommendations items={recommendations} />
+      <News news={news} />
+    </div>
+  );
   const eventsSection = <TodaysEvents events={todaysEvents} />;
 
   return (
@@ -200,13 +259,13 @@ let Index = (props) => {
             lang
           )}
         </PageLead>
-        {hasNews && hasTodaysEvents ? (
+        {hasMainContent && hasTodaysEvents ? (
           <SidebarSplit sidebar={eventsSection}>
-            <div>{newsSection}</div>
+            {mainContent}
           </SidebarSplit>
         ) : (
           <div>
-            {hasNews ? newsSection : null}
+            {mainContent}
             {hasTodaysEvents ? eventsSection : null}
           </div>
         )}
@@ -242,13 +301,14 @@ Index.getInitialProps = async ({ query: { lang, date } }) => {
       next: `${zeroPad(next.getMonth() + 1)}-${zeroPad(next.getDate())}`,
     };
   }
-  const [todaysEvents, allNews] = await Promise.all([
+  const [todaysEvents, allNews, recommendations] = await Promise.all([
     fetchOptionalArray(`/api/today/${lang}/${dayAndMonth}.json`),
     fetchOptionalArray(`/api/news_${lang}.json`),
+    fetchOptionalArray('/api/recommendations.json'),
   ]);
   const news = latestNewsForDate(allNews, date);
 
-  return { lang, country, news, todaysEvents, pagingContext };
+  return { lang, country, news, recommendations, todaysEvents, pagingContext };
 };
 
 export default Index;
