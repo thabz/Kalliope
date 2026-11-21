@@ -36,7 +36,7 @@
 </head>
 <content>
 
-<text id="dolleris2026111901" skip-index="true">
+<text id="dolleris2026112101" skip-index="true">
 <head>
   <firstline>Vil du synge til Hverdagens Ære</firstline>
   <source facsimile-pages="18"/>
@@ -50,7 +50,7 @@ maa du vælge en festlig Text —
 </body>
 </text>
 
-<text id="dolleris2026111902" ignore-tests="space-before-comma-with-markup">
+<text id="dolleris2026112102" ignore-tests="space-before-comma-with-markup">
 <head>
   <title>Forposter</title>
   <firstline>Mens, som Karusseller</firstline>
@@ -107,7 +107,7 @@ jeg kjender min Pligt
 </body>
 </text>
 
-<text id="dolleris2026111903">
+<text id="dolleris2026112103">
 <head>
   <title>„Frelsens Hær“</title>
   <indextitle>Frelsens Hær</indextitle>
@@ -201,12 +201,17 @@ og Frelserhæren bringe
 </body>
 </text>
 
-<text id="dolleris2026111904">
+<text id="dolleris2026112104">
 <head>
   <title>Nørreskoven ved Vejle</title>
   <firstline>Du dejlige Skov —! dine Bøgetræer</firstline>
   <source pages="14-17"/>
   <keywords>grundtvig</keywords>
+  <places>
+    <place ref="norreskoven-vejle" relation="subject" primary="true"/>
+    <place ref="vejle-fjord" relation="setting"/>
+    <place ref="vejle" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -284,7 +289,7 @@ til <i>Ærens og Hjertets Højesteret!</i>
 </body>
 </text>
 
-<text id="dolleris2026111905">
+<text id="dolleris2026112105">
 <head>
   <title>„Det jydske Paradis“</title>
   <subtitle>
@@ -293,8 +298,21 @@ til <i>Ærens og Hjertets Højesteret!</i>
   </subtitle>
   <indextitle>Det jydske Paradis</indextitle>
   <firstline>Øjner du, hvor Dalens Linje slynger</firstline>
+  <notes>
+    <note editorial="true">Fr. Paludan-Müller: <xref poem="mueller1999091902,1-8"/>.</note>
+  </notes>
   <source pages="18-19"/>
   <keywords>mueller</keywords>
+  <places>
+    <place ref="vejle-fjord" relation="subject" primary="true"/>
+    <place ref="grejs-valley" relation="setting"/>
+    <place ref="vejle" relation="setting"/>
+    <place ref="grejs" relation="setting"/>
+    <place ref="munkebjerg" relation="setting"/>
+    <place ref="rosenvold" relation="setting"/>
+    <place ref="norreskoven-vejle" relation="setting"/>
+    <place ref="vejle-cemetery" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -338,7 +356,7 @@ vi gik ind, hvor Ingen vandrer ud!
 </body>
 </text>
 
-<text id="dolleris2026111906">
+<text id="dolleris2026112106">
 <head>
   <title>Og stod jeg enevældig som Diktator —</title>
   <firstline>Og stod jeg enevældig som Diktator</firstline>
@@ -386,7 +404,7 @@ de raaber paa en Eneste — dig selv!
 </body>
 </text>
 
-<text id="dolleris2026111907">
+<text id="dolleris2026112107">
 <head>
   <title>Knæfald</title>
   <firstline>Min Ryg skal éngang bøjes</firstline>
@@ -443,7 +461,7 @@ skjænk mig hin Livets Løn!
 </body>
 </text>
 
-<text id="dolleris2026111908">
+<text id="dolleris2026112108">
 <head>
   <title>Til Carl Snoilsky</title>
   <subtitle>8. September 1891.</subtitle>
@@ -453,6 +471,17 @@ skjænk mig hin Livets Løn!
   </dates>
   <source pages="25-28"/>
   <keywords>snoilsky,winther</keywords>
+  <places>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="europe" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+    <place ref="vejle-fjord" relation="mentioned"/>
+    <place ref="zealand" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="dybbol-mill" relation="mentioned"/>
+    <place ref="duchy-schleswig" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -529,13 +558,16 @@ der tror, at Aandens Sejersvej
 </body>
 </text>
 
-<text id="dolleris2026111909">
+<text id="dolleris2026112109">
 <head>
   <title>Til Professorinde C. Kaalund</title>
   <subtitle>[I et Expl. af »Pløjetid«.]</subtitle>
   <firstline>Din blev just Lykken at elske og eje</firstline>
   <source pages="29"/>
   <keywords>kaalund</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -553,7 +585,7 @@ Derfor Dig hylder »en Sanger fra Ploven«.
 </body>
 </text>
 
-<text id="dolleris2026111910">
+<text id="dolleris2026112110">
 <head>
   <title>Engle for Ploven</title>
   <firstline>Livsalige Dag!</firstline>
@@ -637,7 +669,7 @@ og raaber: Hurra!
 </body>
 </text>
 
-<text id="dolleris2026111911">
+<text id="dolleris2026112111">
 <head>
   <title>De Maalløse tale</title>
   <subtitle>Ved Forstander Malling Hansens Jordefærd.</subtitle>
@@ -686,7 +718,7 @@ da vil der en Gravtale lyde,
 </body>
 </text>
 
-<text id="dolleris2026111912">
+<text id="dolleris2026112112">
 <head>
   <title>En lystig Sang —</title>
   <firstline>En lystig Sang, I fordrer, jeg skal skrive</firstline>
@@ -734,7 +766,7 @@ trods al vor Blomstring, og trods al vor Væxt!
 </body>
 </text>
 
-<text id="dolleris2026111913">
+<text id="dolleris2026112113">
 <head>
   <title>Og ejed jeg Stormens Lunger —</title>
   <firstline>Og ejed jeg Stormens Lunger</firstline>
@@ -771,7 +803,7 @@ et Svar med Kjærligheds Lue!
 </body>
 </text>
 
-<text id="dolleris2026111914">
+<text id="dolleris2026112114">
 <head>
   <title>Forjættelse</title>
   <firstline>Vi véd, der venter os en Grav</firstline>
@@ -802,7 +834,7 @@ den Verden, der skal komme.
 </body>
 </text>
 
-<text id="dolleris2026111915">
+<text id="dolleris2026112115">
 <head>
   <title>Godt Mod</title>
   <firstline>Min unge varme Rose!</firstline>
@@ -834,7 +866,7 @@ Hurra! for Maalet, jeg har sat.
 </body>
 </text>
 
-<text id="dolleris2026111916">
+<text id="dolleris2026112116">
 <head>
   <title>Højmesse-Text</title>
   <firstline>Lad min Virken dig ære</firstline>
@@ -901,7 +933,7 @@ med en Elskendes Ildhu
 </body>
 </text>
 
-<text id="dolleris2026111917">
+<text id="dolleris2026112117">
 <head>
   <title>Hvad der holder vor Sjæl i Live —</title>
   <firstline>Vi lever af Glæden paa denne Jord —</firstline>
@@ -940,12 +972,21 @@ Naar den er tabt, faar vi stille Uge — — —
 </body>
 </text>
 
-<text id="dolleris2026111918">
+<text id="dolleris2026112118">
 <head>
   <title>Til Vittorio Emanuele</title>
   <firstline>Du, Fyrste! som i Eje</firstline>
   <source pages="48-50"/>
   <keywords>oersted,andersen</keywords>
+  <places>
+    <place ref="denmark" relation="setting" primary="true"/>
+    <place ref="rome" relation="mentioned"/>
+    <place ref="kongeaa" relation="mentioned"/>
+    <place ref="grenen-skagen" relation="mentioned"/>
+    <place ref="gurre-castle" relation="mentioned"/>
+    <place ref="lake-esrum" relation="mentioned"/>
+    <place ref="europe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1007,7 +1048,7 @@ beredes Dig en Fremtid,
 </body>
 </text>
 
-<text id="dolleris2026111919">
+<text id="dolleris2026112119">
 <head>
   <title>Til En, hvis Tanke ledes —</title>
   <firstline>Til En, hvis Tanke ledes</firstline>
@@ -1034,7 +1075,7 @@ og dog blev — Eneboer.
 </body>
 </text>
 
-<text id="dolleris2026111920">
+<text id="dolleris2026112120">
 <head>
   <title>Der dannes Kar til Ære</title>
   <firstline>Der dannes Kar til Ære</firstline>
@@ -1061,7 +1102,7 @@ fattig paa Guld og Glæde,
 </body>
 </text>
 
-<text id="dolleris2026111921">
+<text id="dolleris2026112121">
 <head>
   <title>Nomina sunt odiosa</title>
   <firstline>Han, der var Menneskers Læge</firstline>
@@ -1109,7 +1150,7 @@ jeg atter og atter ham møder:
 </body>
 </text>
 
-<text id="dolleris2026111922">
+<text id="dolleris2026112122">
 <head>
   <title>Til Peter Schram</title>
   <subtitle>Telegram paa hans 70 Aars Fødselsdag.</subtitle>
@@ -1131,7 +1172,7 @@ og dit opladte Øje
 </body>
 </text>
 
-<text id="dolleris2026111923">
+<text id="dolleris2026112123">
 <head>
   <title>Til Emil Poulsen</title>
   <subtitle>Telegram, 16. April 1892.</subtitle>
@@ -1140,6 +1181,9 @@ og dit opladte Øje
     <event>1892-04-16</event>
   </dates>
   <source pages="56"/>
+  <places>
+    <place ref="oslo" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1165,7 +1209,7 @@ skal huskes og æres
 </body>
 </text>
 
-<text id="dolleris2026111924">
+<text id="dolleris2026112124">
 <head>
   <title>Jeg ved, der er Lykke i Menneskers Huse</title>
   <firstline>Jeg véd, der er Lykke</firstline>
@@ -1231,7 +1275,7 @@ trods Dødens Vasal:
 </body>
 </text>
 
-<text id="dolleris2026111925">
+<text id="dolleris2026112125">
 <head>
   <title>Min unge Veninde</title>
   <firstline>Min unge Veninde!</firstline>
@@ -1297,7 +1341,7 @@ hvor Ynde og Skjønhed
 </body>
 </text>
 
-<text id="dolleris2026111926">
+<text id="dolleris2026112126">
 <head>
   <title>Snart lukkes Rosenhaven —</title>
   <firstline>Snart lukkes Rosenhaven</firstline>
@@ -1354,7 +1398,7 @@ husk Barnehavens Laage —
 </body>
 </text>
 
-<text id="dolleris2026111927">
+<text id="dolleris2026112127">
 <head>
   <title>Paa Dommens Dag holdes Regnskab</title>
   <firstline>Paa Dommens Dag holdes Regnskab</firstline>
@@ -1420,7 +1464,7 @@ om jeg frelser mit Menneskeværd!
 </head>
 <content>
 
-<text id="dolleris2026111928" skip-index="true">
+<text id="dolleris2026112128" skip-index="true">
 <head>
   <firstline>men den Frugt, vore Fester skal bære</firstline>
   <source facsimile-pages="82"/>
@@ -1434,12 +1478,15 @@ maa være en Hverdagsvæxt.
 </body>
 </text>
 
-<text id="dolleris2026111929">
+<text id="dolleris2026112129">
 <head>
   <title>Danmark</title>
   <subtitle>(1890.)</subtitle>
   <firstline>Mit Land, som rigt med Mælk og Honning flyder</firstline>
   <source pages="71-73"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1492,7 +1539,7 @@ men Tidens Nu er mer end nogen Drøm:
 </body>
 </text>
 
-<text id="dolleris2026111930">
+<text id="dolleris2026112130">
 <head>
   <title>Vor Ungdom og vor Fremtid</title>
   <subtitle>
@@ -1505,6 +1552,10 @@ men Tidens Nu er mer end nogen Drøm:
   </dates>
   <source pages="74-78"/>
   <keywords>byron</keywords>
+  <places>
+    <place ref="vejle" relation="setting" primary="true"/>
+    <place ref="rungsted" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1593,13 +1644,20 @@ og han vil solforgylde
 </body>
 </text>
 
-<text id="dolleris2026111931">
+<text id="dolleris2026112131">
 <head>
   <title>„Stenene raaber“</title>
   <subtitle>Indledningsdigt til Højskamlings Fremmedbog, 1890.</subtitle>
   <indextitle>Stenene raaber</indextitle>
   <firstline>Danmark, mit Land! saa delt og sønderrevet</firstline>
   <source pages="79-81"/>
+  <places>
+    <place ref="skamlingsbanken" relation="setting" primary="true"/>
+    <place ref="denmark" relation="subject"/>
+    <place ref="dybbol-banke" relation="mentioned"/>
+    <place ref="alssund" relation="mentioned"/>
+    <place ref="sonderborg" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1652,7 +1710,7 @@ lovbundne Færd mod alle Graves Fang —
 </body>
 </text>
 
-<text id="dolleris2026111932">
+<text id="dolleris2026112132">
 <head>
   <title>Den store Timetabel</title>
   <subtitle>Ved Skolemødet i Viborg, den 1.—2. August 1890.</subtitle>
@@ -1662,6 +1720,9 @@ lovbundne Færd mod alle Graves Fang —
     <event>1890-08-02</event>
   </dates>
   <source pages="82-84"/>
+  <places>
+    <place ref="viborg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1723,13 +1784,19 @@ Der er en Dag paa Himlen
 </body>
 </text>
 
-<text id="dolleris2026111933">
+<text id="dolleris2026112133">
 <head>
   <title>Mens Atlanterhavet synger sin evige Verdenssang —</title>
   <subtitle>(Skrevet for Dansk Folkesamfund, 1891).</subtitle>
   <firstline>Derovre bag Golfens Strømme</firstline>
   <source pages="85-87"/>
   <keywords>oersted,winther</keywords>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="golf-stream" relation="mentioned"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="atlantic-ocean" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1782,7 +1849,7 @@ til ham paa de syvti Aar.
 </body>
 </text>
 
-<text id="dolleris2026111934">
+<text id="dolleris2026112134">
 <head>
   <title>Johannes Carsten Hauch</title>
   <subtitle>Ved Hundredaarsfesten for hans Fødsel, den 12. Maj 1890.</subtitle>
@@ -1792,6 +1859,12 @@ til ham paa de syvti Aar.
   </dates>
   <source pages="88-91"/>
   <keywords>hauch</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="stevns-klint" relation="mentioned"/>
+    <place ref="soebaekshuse" relation="mentioned"/>
+    <place ref="soro" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1849,7 +1922,7 @@ vort Navn vil findes skrevet i Slægtens Æresbog.
 </body>
 </text>
 
-<text id="dolleris2026111935">
+<text id="dolleris2026112135">
 <head>
   <title>Bøgernes Verden</title>
   <subtitle>Ved Boghandlermødet i Odense, den 4. August 1891.</subtitle>
@@ -1858,6 +1931,11 @@ vort Navn vil findes skrevet i Slægtens Æresbog.
     <event>1891-08-04</event>
   </dates>
   <source pages="92-94"/>
+  <places>
+    <place ref="odense" relation="setting" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nile" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1910,7 +1988,7 @@ véd, det gik frem i Kundskab og i Kløgt:
 </body>
 </text>
 
-<text id="dolleris2026111936">
+<text id="dolleris2026112136">
 <head>
   <title>Paa Marienlyst</title>
   <subtitle>
@@ -1921,8 +1999,24 @@ véd, det gik frem i Kundskab og i Kløgt:
   <dates>
     <event>1891-08-01</event>
   </dates>
+  <notes>
+    <note editorial="true">Fodnoten om Reitzels boglade henviser til H. C. Andersens <xref poem="andersen2002122745"/>.</note>
+  </notes>
   <source pages="95-97"/>
   <keywords>andersen</keywords>
+  <places>
+    <place ref="marienlyst-helsingor" relation="setting" primary="true"/>
+    <place ref="helsingor" relation="setting"/>
+    <place ref="helsingborg" relation="setting"/>
+    <place ref="oresund" relation="setting"/>
+    <place ref="kronborg-castle" relation="mentioned"/>
+    <place ref="kattegat" relation="mentioned"/>
+    <place ref="hirschholm-palace" relation="mentioned"/>
+    <place ref="gurre-castle" relation="mentioned"/>
+    <place ref="fredensborg-palace-gardens" relation="mentioned"/>
+    <place ref="sofiero-palace" relation="mentioned"/>
+    <place ref="rungsted" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1975,7 +2069,7 @@ Arbejdets dejlige Fane!
 </body>
 </text>
 
-<text id="dolleris2026111937">
+<text id="dolleris2026112137">
 <head>
   <title>Vor Fortids Arbejdssaga —</title>
   <subtitle>(1891.)</subtitle>
@@ -2039,7 +2133,7 @@ Bliv Herre for dit eget Værk, —
 </body>
 </text>
 
-<text id="dolleris2026111938">
+<text id="dolleris2026112138">
 <head>
   <title>Folkenes Verdenssprog</title>
   <subtitle>
@@ -2051,6 +2145,9 @@ Bliv Herre for dit eget Værk, —
     <event>1891-03-19</event>
   </dates>
   <source pages="101-102"/>
+  <places>
+    <place ref="vejle" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2094,7 +2191,7 @@ Blev Du end ene, mens Du gaar mod Høst:
 </body>
 </text>
 
-<text id="dolleris2026111939">
+<text id="dolleris2026112139">
 <head>
   <title>Bøgernes Armée</title>
   <subtitle>Ved Boghandlermødet i Horsens, den 26. Juli 1892.</subtitle>
@@ -2103,6 +2200,9 @@ Blev Du end ene, mens Du gaar mod Høst:
     <event>1892-07-26</event>
   </dates>
   <source pages="103-106"/>
+  <places>
+    <place ref="horsens" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2173,13 +2273,28 @@ en Aandens Baun som Sejerstegn
 </body>
 </text>
 
-<text id="dolleris2026111940">
+<text id="dolleris2026112140">
 <head>
   <title>Vinding Folkehøjskole</title>
   <subtitle>Kantate ved dens 25 Aars Jubilæum, September 1892.</subtitle>
   <firstline>Se paa Solens Timeskive</firstline>
   <source pages="107-117"/>
   <keywords>holberg,oehlenschlaeger</keywords>
+  <places>
+    <place ref="vinding-folk-high-school" relation="subject" primary="true"/>
+    <place ref="vinding-vejle" relation="setting"/>
+    <place ref="vejle-fjord" relation="mentioned"/>
+    <place ref="schlei" relation="mentioned"/>
+    <place ref="skagerrak" relation="mentioned"/>
+    <place ref="dannevirke" relation="mentioned"/>
+    <place ref="sonderborg" relation="mentioned"/>
+    <place ref="broager" relation="mentioned"/>
+    <place ref="dybbol-banke" relation="mentioned"/>
+    <place ref="duchy-schleswig" relation="mentioned"/>
+    <place ref="southern-jutland" relation="mentioned"/>
+    <place ref="kongeaa" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2429,7 +2544,7 @@ naar vort travle Dagværk er forbi!
 </body>
 </text>
 
-<text id="dolleris2026111941">
+<text id="dolleris2026112141">
 <head>
   <title>Sønderjyderne</title>
   <subtitle>Askov og Skibelund, den 24. Juli 1892.</subtitle>
@@ -2438,6 +2553,18 @@ naar vort travle Dagværk er forbi!
     <event>1892-07-24</event>
   </dates>
   <source pages="118-120"/>
+  <places>
+    <place ref="southern-jutland" relation="subject" primary="true"/>
+    <place ref="askov" relation="setting"/>
+    <place ref="skibelund-krat" relation="setting"/>
+    <place ref="glucksburg-castle" relation="mentioned"/>
+    <place ref="kongeaa" relation="mentioned"/>
+    <place ref="dybbol-mill" relation="mentioned"/>
+    <place ref="duchy-schleswig" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="sonderborg" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2517,7 +2644,7 @@ vi ærer Jer, der holder ud
 </head>
 <content>
 
-<text id="dolleris2026111942" skip-index="true">
+<text id="dolleris2026112142" skip-index="true">
 <head>
   <firstline>Jeg sang en Morgen i Skoven</firstline>
   <source facsimile-pages="134"/>
@@ -2537,11 +2664,15 @@ om Lykken paa denne Jord.
 </body>
 </text>
 
-<text id="dolleris2026111943">
+<text id="dolleris2026112143">
 <head>
   <title>Naar Dagens Vexelløb er endt —</title>
   <firstline>Naar Dagens Vexelløb er endt</firstline>
   <source pages="123"/>
+  <places>
+    <place ref="oresund" relation="setting"/>
+    <place ref="jaegersborg-deer-park" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2570,7 +2701,7 @@ min unge Brud, saa god, saa god!
 </body>
 </text>
 
-<text id="dolleris2026111944">
+<text id="dolleris2026112144">
 <head>
   <title>Kom til mig</title>
   <firstline>Kom til mig, naar mit Sind er lyst</firstline>
@@ -2597,7 +2728,7 @@ med Kjærlighedens Navne!
 </body>
 </text>
 
-<text id="dolleris2026111945">
+<text id="dolleris2026112145">
 <head>
   <title>Vi mødtes —</title>
   <firstline>Vi mødtes paa det Jævne, ad Tankens Vej saa tidt —</firstline>
@@ -2639,7 +2770,7 @@ Du er min Lykkebringer, mit Eneste, mit Alt!
 </body>
 </text>
 
-<text id="dolleris2026111946">
+<text id="dolleris2026112146">
 <head>
   <title>Aftenvandring</title>
   <firstline>Du bøjer dit fine Hoved</firstline>
@@ -2676,7 +2807,7 @@ i den videste Verden ud! — — —
 </body>
 </text>
 
-<text id="dolleris2026111947">
+<text id="dolleris2026112147">
 <head>
   <title>Til Hende stod mine Tanker —</title>
   <firstline>Til Hende stod mine Tanker</firstline>
@@ -2718,12 +2849,22 @@ naar jeg er mødig og træt!
 </body>
 </text>
 
-<text id="dolleris2026111948">
+<text id="dolleris2026112148">
 <head>
   <title>Jeg var i Sværtegade —</title>
   <firstline>Jeg var i Sværtegade</firstline>
+  <notes>
+    <note editorial="true">Mottoet er fra Kr. Arentzens <a poem="arentzen2026112101">»Ludvig Bødtcher. En biografisk Pennetegning«</a> i Ludvig Bødtchers <i>Digte ældre og nyere</i>, 4. udgave (1878), s. XVII.</note>
+    <note editorial="true">Fodnoten til »han viede sin Sang« henviser til Ludvig Bødtchers <xref poem="boedtcher2018100931"/> i <i>Sidste Digte</i> (1875), s. 82–83.</note>
+  </notes>
   <source pages="131-134"/>
   <keywords>boedtcher,arentzen</keywords>
+  <places>
+    <place ref="svaertegade-copenhagen" relation="setting" primary="true"/>
+    <place ref="vatican-city" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2813,7 +2954,7 @@ jeg tænker sejersstolt!
 </body>
 </text>
 
-<text id="dolleris2026111949">
+<text id="dolleris2026112149">
 <head>
   <title>Derude bølger Rugen</title>
   <firstline>Derude bølger Rugen</firstline>
@@ -2855,7 +2996,7 @@ den skal idag velsigne
 </body>
 </text>
 
-<text id="dolleris2026111950">
+<text id="dolleris2026112150">
 <head>
   <title>En Sang om Ludvig Adolph</title>
   <subtitle>[Til min Hustru].</subtitle>
@@ -2908,7 +3049,7 @@ som dugges, naar jeg græder,
 </body>
 </text>
 
-<text id="dolleris2026111951">
+<text id="dolleris2026112151">
 <head>
   <title>11. August 1890</title>
   <subtitle>[Med Forglemmigejer].</subtitle>
@@ -2956,7 +3097,7 @@ og alle Haabets Farver om sin Færd!
 </body>
 </text>
 
-<text id="dolleris2026111952">
+<text id="dolleris2026112152">
 <head>
   <title>Hos Dig</title>
   <firstline>Jeg har været Dig nær i din Glæde</firstline>
@@ -2998,7 +3139,7 @@ og din Sjæl afspejles deri!
 </body>
 </text>
 
-<text id="dolleris2026111953">
+<text id="dolleris2026112153">
 <head>
   <title>Naar Verden ser paa mig med lyse Øjne —</title>
   <firstline>Naar Verden ser paa mig med lyse Øjne</firstline>
@@ -3040,7 +3181,7 @@ Hvad end os bringes, Morgen efter Morgen,
 </body>
 </text>
 
-<text id="dolleris2026111954" skip-index="true">
+<text id="dolleris2026112154" skip-index="true">
 <head>
   <firstline>Natten kommer</firstline>
   <source facsimile-pages="158"/>
