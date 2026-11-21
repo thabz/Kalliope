@@ -74,6 +74,12 @@
     <type>town/comune</type>
     <parent ref="italy"/>
   </place>
+  <place id="amaliegade">
+    <name>Amaliegade</name>
+    <type>street</type>
+    <alias>Amallegade</alias>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="amalienborg">
     <name>Amalienborg</name>
     <wikidata>Q211053</wikidata>
@@ -95,6 +101,12 @@
     <type>region</type>
     <alias>Andalucía</alias>
     <parent ref="spain"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q12892 -->
+  <place id="antwerp">
+    <name>Antwerpen</name>
+    <wikidata>Q12892</wikidata>
+    <type>city</type>
   </place>
   <place id="apennines">
     <name>Apenninerne</name>
@@ -220,6 +232,11 @@
     <parent ref="denmark"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 62, 64. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <place id="balkan">
+    <name>Balkan</name>
+    <type>region</type>
+    <parent ref="europe"/>
+  </place>
   <place id="baltic-sea">
     <name>Østersøen</name>
     <canonical-name>Baltic Sea</canonical-name>
@@ -234,6 +251,12 @@
     <name>Bamyan</name>
     <type>city</type>
     <alias>Bamiyan</alias>
+  </place>
+  <place id="barcelona">
+    <name>Barcelona</name>
+    <type>city</type>
+    <alias>Basselona</alias>
+    <parent ref="spain"/>
   </place>
   <place id="basel">
     <name>Basel</name>
@@ -335,6 +358,12 @@
     <type>town/comune</type>
     <parent ref="italy"/>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q769680 -->
+  <place id="bornholm">
+    <name>Bornholm</name>
+    <wikidata>Q769680</wikidata>
+    <type>island</type>
+  </place>
   <place id="borsen-copenhagen">
     <name>Børsen</name>
     <wikidata>Q326528</wikidata>
@@ -371,6 +400,24 @@
     <alias>Ponte dei Sospiri</alias>
     <parent ref="venice"/>
   </place>
+  <place id="bruttium">
+    <name>Bruttium</name>
+    <type>historical region</type>
+    <parent ref="italy"/>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
+  </place>
+  <place id="budapest">
+    <name>Budapest</name>
+    <type>city</type>
+    <alias>Budapæst</alias>
+    <parent ref="hungary"/>
+  </place>
+  <place id="bulgaria">
+    <name>Bulgarien</name>
+    <type>country</type>
+    <alias>Byldgarien</alias>
+    <parent ref="balkan"/>
+  </place>
   <place id="burg-adolfseck">
     <name>Burg Adolfseck</name>
     <wikidata>Q1010663</wikidata>
@@ -396,6 +443,12 @@
     <type>city</type>
     <alias>Cadiz</alias>
     <parent ref="spain"/>
+  </place>
+  <place id="campania">
+    <name>Campanien</name>
+    <type>historical region</type>
+    <parent ref="italy"/>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="canaan">
     <name>Kanaan</name>
@@ -454,6 +507,11 @@
     <type>town/comune</type>
     <alias>Castellamare</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="catalonia">
+    <name>Catalonien</name>
+    <type>region</type>
+    <parent ref="spain"/>
   </place>
   <place id="celle">
     <name>Celle</name>
@@ -567,6 +625,12 @@
     <parent ref="italy"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 26. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <place id="dangleterre">
+    <name>Hotel d’Angleterre</name>
+    <type>hotel</type>
+    <alias>Dangletærre</alias>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="dannevirke">
     <name>Dannevirke</name>
     <canonical-name>Danevirke</canonical-name>
@@ -606,6 +670,12 @@
     <type>island/urban district</type>
     <alias>Diurgaarden</alias>
     <parent ref="stockholm"/>
+  </place>
+  <place id="dovrefjell">
+    <name>Dovrefjell</name>
+    <type>mountain-range</type>
+    <alias>Dovre</alias>
+    <parent ref="norway"/>
   </place>
   <place id="drammen">
     <name>Drammen</name>
@@ -710,6 +780,12 @@
     <type>town</type>
     <parent ref="holstein"/>
   </place>
+  <place id="extremadura">
+    <name>Extremadura</name>
+    <type>region</type>
+    <alias>Extramaduro</alias>
+    <parent ref="spain"/>
+  </place>
   <place id="faarevejle-langeland">
     <name>Fårevejle</name>
     <wikidata>Q12313265</wikidata>
@@ -747,6 +823,12 @@
     <wikidata>Q82670</wikidata>
     <type>city</type>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q234 -->
+  <place id="flanders">
+    <name>Flandern</name>
+    <wikidata>Q234</wikidata>
+    <type>region</type>
   </place>
   <place id="florence">
     <name>Firenze</name>
@@ -827,6 +909,11 @@
     <wikidata>Q21181</wikidata>
     <type>city</type>
     <parent ref="denmark"/>
+  </place>
+  <place id="frederiksberg-gardens-canals">
+    <name>Kanalerne i Frederiksberg Have</name>
+    <type>canal</type>
+    <alias>Fredriksbers Kanal</alias>
   </place>
   <place id="frederiksberg-palace">
     <name>Frederiksberg Slot</name>
@@ -1255,12 +1342,23 @@
     <parent ref="heidelberg"/>
   </place>
   <!-- Kilde: https://trap.lex.dk/Sankt_Helene_Kilde -->
+  <place id="hekla">
+    <name>Hekla</name>
+    <type>volcano</type>
+    <alias>Hækla</alias>
+    <parent ref="iceland"/>
+  </place>
   <place id="helene-spring">
     <name>Sankt Helene Kilde</name>
     <type>spring</type>
     <alias>St. Helenes Kilde</alias>
     <alias>Helene Kilde</alias>
     <parent ref="tisvilde"/>
+  </place>
+  <place id="heligoland">
+    <name>Helgoland</name>
+    <type>island</type>
+    <alias>Hælgoland</alias>
   </place>
   <place id="helsingborg">
     <name>Helsingborg</name>
@@ -1307,7 +1405,20 @@
     <parent ref="greece"/>
     <note>Musernes kilde på Helikon i græsk mytologi.</note>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q1810963 -->
+  <place id="hirschholm-palace">
+    <name>Hirschholm Slot</name>
+    <wikidata>Q1810963</wikidata>
+    <type>palace</type>
+    <alias>Hirschholm</alias>
+  </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q12317772 -->
+  <place id="hojbro-plads">
+    <name>Højbro Plads</name>
+    <type>square</type>
+    <alias>Høibroplas</alias>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="hojerup-old-church">
     <name>Højerup Gamle Kirke</name>
     <wikidata>Q12317772</wikidata>
@@ -1328,6 +1439,19 @@
     <type>historical region</type>
     <alias>Holsteen</alias>
     <parent ref="germany"/>
+  </place>
+  <place id="hotel-bristol-copenhagen">
+    <name>Hotel Bristol</name>
+    <type>hotel</type>
+    <alias>Bristol</alias>
+    <parent ref="copenhagen"/>
+    <!-- Hotel Bristol på Rådhuspladsen er registreret i Københavns Kommunes oversigt: https://www.kk.dk/sites/default/files/2024-07/Oversigt%20over%20pr%C3%A6mieringer%20i%20K%C3%B8benhavns%20Kommune%20i%20%C3%A5rene%201903-2024.pdf -->
+  </place>
+  <place id="hungary">
+    <name>Ungarn</name>
+    <wikidata>Q28</wikidata>
+    <type>country</type>
+    <parent ref="europe"/>
   </place>
   <place id="iceland">
     <name>Island</name>
@@ -1483,6 +1607,11 @@
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 69. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
     <!-- Identitet og navneform: https://lex.dk/Kalø_Vig. Wikidata: https://www.wikidata.org/wiki/Q1722802 -->
   </place>
+  <place id="karioth">
+    <name>Karioth</name>
+    <type>biblical settlement</type>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
+  </place>
   <place id="karise">
     <name>Karise</name>
     <wikidata>Q848261</wikidata>
@@ -1555,6 +1684,12 @@
     <type>castle</type>
     <alias>Koldinghuus</alias>
     <parent ref="jutland"/>
+  </place>
+  <place id="kongens-nytorv">
+    <name>Kongens Nytorv</name>
+    <type>square</type>
+    <alias>Kongens Nytor</alias>
+    <parent ref="copenhagen"/>
   </place>
   <place id="kongsberg">
     <name>Kongsberg</name>
@@ -1750,6 +1885,11 @@
     <wikidata>Q12325428</wikidata>
     <type>manor</type>
   </place>
+  <place id="loire">
+    <name>Loire</name>
+    <type>river</type>
+    <parent ref="france"/>
+  </place>
   <place id="lolland">
     <name>Lolland</name>
     <wikidata>Q605839</wikidata>
@@ -1806,6 +1946,12 @@
     <name>Lüneburg</name>
     <wikidata>Q3920</wikidata>
     <type>city</type>
+  </place>
+  <place id="madeleine-paris">
+    <name>La Madeleine</name>
+    <type>church</type>
+    <alias>Madeleine</alias>
+    <parent ref="paris"/>
   </place>
   <place id="madrid">
     <name>Madrid</name>
@@ -1942,6 +2088,12 @@
     <type>mountain</type>
     <alias>Albanerbjerg</alias>
   </place>
+  <place id="montenegro">
+    <name>Montenegro</name>
+    <type>country</type>
+    <alias>Munternegro</alias>
+    <parent ref="balkan"/>
+  </place>
   <place id="moriah">
     <name>Moria</name>
     <canonical-name>Moriah</canonical-name>
@@ -1957,6 +2109,12 @@
     <type>country</type>
     <alias>Morocco</alias>
     <parent ref="africa"/>
+  </place>
+  <place id="moulin-rouge">
+    <name>Moulin Rouge</name>
+    <type>cabaret</type>
+    <alias>Mulæng rutsch</alias>
+    <parent ref="paris"/>
   </place>
   <place id="mount-ararat">
     <name>Ararat</name>
@@ -2026,6 +2184,11 @@
     <alias>Morat</alias>
     <parent ref="switzerland"/>
   </place>
+  <place id="nabolos">
+    <name>Naboløs</name>
+    <type>street</type>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="naesbyholm">
     <name>Næsbyholm</name>
     <wikidata>Q12329556</wikidata>
@@ -2040,6 +2203,11 @@
     <type>city</type>
     <alias>Napoli</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="nazareth">
+    <name>Nazareth</name>
+    <type>city</type>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="netherlands">
     <name>Nederlandene</name>
@@ -2101,6 +2269,11 @@
     <parent ref="vejle"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28, 67, 101. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <place id="north-pole">
+    <name>Nordpolen</name>
+    <type>geographic-point</type>
+    <alias>Norpol</alias>
+  </place>
   <place id="north-sea">
     <name>Nordsøen</name>
     <type>sea</type>
@@ -2114,6 +2287,12 @@
     <alias>Norrige</alias>
     <alias>Norrigs</alias>
     <alias>Norriges</alias>
+  </place>
+  <place id="notre-dame-paris">
+    <name>Notre-Dame de Paris</name>
+    <type>cathedral</type>
+    <alias>Notterdame</alias>
+    <parent ref="paris"/>
   </place>
   <place id="nyborg">
     <name>Nyborg</name>
@@ -2161,6 +2340,11 @@
     <type>fjord</type>
     <alias>Christianiafiord</alias>
     <alias>Christianiafjorden</alias>
+  </place>
+  <place id="ostergade-copenhagen">
+    <name>Østergade</name>
+    <type>street</type>
+    <parent ref="copenhagen"/>
   </place>
   <place id="ostra-karup">
     <name>Östra Karup</name>
@@ -2258,6 +2442,18 @@
     <type>city</type>
     <alias>Pistoja</alias>
     <parent ref="italy"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q36 -->
+  <place id="place-de-greve">
+    <name>Place de Grève</name>
+    <type>square</type>
+    <alias>Grevepladsen</alias>
+    <parent ref="paris"/>
+  </place>
+  <place id="poland">
+    <name>Polen</name>
+    <wikidata>Q36</wikidata>
+    <type>country</type>
   </place>
   <place id="ponte-milvio">
     <name>Ponte Milvio</name>
@@ -2537,12 +2733,23 @@
     <parent ref="rungsted"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 61. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q159 -->
+  <place id="russia">
+    <name>Rusland</name>
+    <wikidata>Q159</wikidata>
+    <type>country</type>
+  </place>
   <place id="sahara">
     <name>Sahara</name>
     <wikidata>Q6583</wikidata>
     <type>desert</type>
     <alias>Sahra</alias>
     <parent ref="africa"/>
+  </place>
+  <place id="saint-clement-cathedral-aarhus">
+    <name>Aarhus Domkirke</name>
+    <type>cathedral</type>
+    <parent ref="aarhus"/>
   </place>
   <place id="saint-jean-cliffs">
     <name>Saint-Jean-klipperne</name>
@@ -2620,6 +2827,12 @@
     <type>city</type>
     <alias>Schafhausen</alias>
   </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q37620 -->
+  <place id="scheldt">
+    <name>Schelde</name>
+    <wikidata>Q37620</wikidata>
+    <type>river</type>
+  </place>
   <place id="schierensee">
     <name>Schierensee</name>
     <wikidata>Q560897</wikidata>
@@ -2657,6 +2870,23 @@
     <parent ref="copenhagen"/>
     <note>Den bygning der eksisterede i 1842; brændte 1884.</note>
   </place>
+  <place id="seine">
+    <name>Seinen</name>
+    <type>river</type>
+    <alias>Scenen</alias>
+    <parent ref="france"/>
+  </place>
+  <place id="sengeloese">
+    <name>Sengeløse</name>
+    <type>town</type>
+    <parent ref="denmark"/>
+  </place>
+  <place id="serbia">
+    <name>Serbien</name>
+    <type>country</type>
+    <alias>Serpien</alias>
+    <parent ref="balkan"/>
+  </place>
   <place id="seville">
     <name>Sevilla</name>
     <canonical-name>Seville</canonical-name>
@@ -2669,6 +2899,21 @@
     <name>Sarons Slette</name>
     <type>plain</type>
     <alias>Saron</alias>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q2475689 -->
+  <place id="shravasti">
+    <name>Shravasti</name>
+    <wikidata>Q2475689</wikidata>
+    <type>archaeological site</type>
+    <alias>Savatthi</alias>
+    <alias>Savatti</alias>
+    <!-- Navneform: https://ignca.gov.in/Asi_data/22017.pdf -->
+  </place>
+  <place id="sicily">
+    <name>Sicilien</name>
+    <type>island</type>
+    <alias>Sidsilien</alias>
+    <parent ref="italy"/>
   </place>
   <place id="siena">
     <name>Siena</name>
@@ -2696,6 +2941,11 @@
     <type>mountain pass</type>
     <alias>Simplon</alias>
   </place>
+  <place id="skagen">
+    <name>Skagen</name>
+    <type>town</type>
+    <parent ref="jutland"/>
+  </place>
   <place id="skamlingsbanken">
     <name>Skamlingsbanken</name>
     <type>hill</type>
@@ -2721,6 +2971,11 @@
     <name>Slagelse</name>
     <wikidata>Q3414556</wikidata>
     <type>city</type>
+  </place>
+  <place id="snolderod">
+    <name>Snolderød</name>
+    <type>fictional</type>
+    <!-- Den fiktive by i Fristrups Snolderød Avis og Vadums Harpe. Se fdirs/fristrup/bio.xml og Vadums Harpe, s. 49–50 og 76–77. -->
   </place>
   <place id="soebaekhuset">
     <name>Søbækshuset</name>
@@ -2863,6 +3118,12 @@
     <alias>Stockhornet</alias>
     <parent ref="switzerland"/>
   </place>
+  <place id="stormgade">
+    <name>Stormgade</name>
+    <type>street</type>
+    <alias>Stormens Gade</alias>
+    <parent ref="copenhagen"/>
+  </place>
   <place id="strasbourg">
     <name>Strasbourg</name>
     <wikidata>Q6602</wikidata>
@@ -2946,12 +3207,25 @@
     <alias>Teracina</alias>
     <parent ref="italy"/>
   </place>
+  <place id="third-christiansborg-palace">
+    <name>Det tredje Christiansborg</name>
+    <type>palace</type>
+    <alias>Krisjans Borg</alias>
+    <parent ref="copenhagen"/>
+    <!-- Byggeriet 1906–1928 er beskrevet af Folketinget: https://www.ft.dk/folkestyret/folketinget-og-christiansborg/christiansborgs-historie -->
+  </place>
   <place id="thorvaldsen-museum">
     <name>Thorvaldsens Museum</name>
     <canonical-name>Thorvaldsen Museum</canonical-name>
     <wikidata>Q1992413</wikidata>
     <type>museum</type>
     <parent ref="copenhagen"/>
+  </place>
+  <place id="thrace">
+    <name>Trakien</name>
+    <type>historical region</type>
+    <alias>Tracien</alias>
+    <!-- Stednavn i L. C. Nielsen: Tre Mænd, 1897. Kilde: https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122943409205763 -->
   </place>
   <place id="thy">
     <name>Thy</name>
@@ -3060,6 +3334,12 @@
     <type>city</type>
     <alias>Trolhättan</alias>
     <parent ref="sweden"/>
+  </place>
+  <!-- Kilde: https://www.wikidata.org/wiki/Q43 -->
+  <place id="turkey">
+    <name>Tyrkiet</name>
+    <wikidata>Q43</wikidata>
+    <type>country</type>
   </place>
   <place id="tusculum">
     <name>Tusculum</name>

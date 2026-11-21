@@ -24,6 +24,9 @@
   <firstline>Medens Christian Winthers milde Haand</firstline>
   <source pages="I-VI" facsimile-pages="13-18"/>
   <keywords>winther,hertzh,andersen</keywords>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2240,6 +2243,10 @@ Tjene til Papillot.
     <note editorial="true">Mottoet er fra Ovids <xref poem="ovid2026083002,327-328"/>.</note>
   </notes>
   <source pages="80-85"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>kilde,side,korrektur1</quality>
 </head>
 <body>

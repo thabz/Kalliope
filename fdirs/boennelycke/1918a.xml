@@ -101,6 +101,9 @@ Vesterbrogade. Jeg gaar fra Wivels Hjørne ved Bernstorffsgade, Frihedsstøtten,
 <head>
   <title>Sang til en Havn</title>
   <source pages="27-37"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -142,6 +145,9 @@ Gennem det aabne Vindue, hvor den tidlige Formiddags svale Juliluft strømmer in
 <head>
   <title>Sang til en Banegaard</title>
   <source pages="44-48"/>
+  <places>
+    <place ref="turkey" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -453,6 +459,7 @@ Jeg længes til Riga og Libau, til Dnjestr, Dvina og Ukraine. Til Nischni Novgor
   <source pages="114-122"/>
   <places>
     <place ref="north-sea" relation="setting"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -533,6 +540,7 @@ O Ingrid, om vi vidste, hvad du var, da du levede. Dit Sind var Natten, du selv 
   <source pages="129-133"/>
   <places>
     <place ref="tisvilde" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>

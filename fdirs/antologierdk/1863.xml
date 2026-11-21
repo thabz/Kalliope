@@ -903,6 +903,9 @@ Der ved Siden af sin Beiler.
   <title>En polsk Moder</title>
   <firstline>Hvorhen min unge Frue?</firstline>
   <source pages="31-35"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1354,6 +1357,9 @@ Og nu hos Herren Hvilen fundet!“
   <title>Polen</title>
   <firstline>Der er et Land, hvor store dunkle Skove</firstline>
   <source pages="48-49"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

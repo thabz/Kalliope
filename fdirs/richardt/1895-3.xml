@@ -962,6 +962,7 @@ til Hjertet bliver stille!
     <place ref="jordan-river" relation="mentioned"/>
     <place ref="sea-of-galilee" relation="mentioned"/>
     <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
@@ -2115,6 +2116,9 @@ de Stavnsbaand aldrig løses!
   <title>Danmark</title>
   <firstline>Ud for Verdens Herregaarde</firstline>
   <source pages="63-65"/>
+  <places>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8096,6 +8100,9 @@ som frier fra de vilde Vande.
     <event>1888-06-04</event>
   </dates>
   <source pages="232-236"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8792,6 +8799,7 @@ og Længslerne dybest inde -
   <source pages="253-259"/>
   <places>
     <place ref="lake-esrum" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
