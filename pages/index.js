@@ -143,6 +143,7 @@ const Recommendations = ({ items }) => {
           border-radius: 3px;
         }
         .poet {
+          margin-top: 6px;
           font-size: 0.9em;
         }
       `}</style>
