@@ -2,6 +2,17 @@
 
 Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder i dette repository.
 
+## Gennemfør opgaven
+
+- Fortsæt, indtil hele den bestilte leverance er udført og alle krævede
+  kontroller er gennemført. En delimport, en draft-PR eller grøn CI for en
+  delmængde er et mellemtrin. Tag selv næste trin, så længe det er muligt
+  inden for opgaven og den givne tilladelse.
+- Stop kun før færdig levering, hvis brugeren beder om det, eller en konkret
+  blokering forhindrer videre arbejde. Udfør først de dele, der kan
+  gennemføres uafhængigt af blokeringen. Angiv derefter præcist, hvad der
+  mangler, hvad der blokerer, og hvad der kræves for at fortsætte.
+
 ## Dokumentation
 
 - Læs `docs/style-guide.md` før alle ændringer i repositoryet og før oprettelse

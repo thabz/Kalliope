@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1870-nytaarsgave" author="antologierdk" status="incomplete" type="anthology">
+<kalliopework id="1870-nytaarsgave" author="antologierdk" status="complete" type="anthology">
 <workhead>
   <title>Nytaarsgave</title>
   <subtitle>Sælges til Fordel for en fri Skole</subtitle>
@@ -9,9 +9,201 @@
     <picture type="titlepage" src="1870-nytaarsgave-p1a.jpg"><transcription>Gave / til en dansk Friskole. // Med Bidrag af: / N. F. S. Grundtvig, V. Birkedal, C. J. Brandt, / Mads Hansen, C. Hostrup, B. S. Ingemann, J., / Anton Nielsen, Ludv. Schrøder, / og et lille Forord af Ernst Trier. // Kjøbenhavn. / C. J. Elvius’ Bogtrykkeri, Nybrogade 6. / 1870.</transcription></picture>
   </pictures>
   <pagebreaks/>
-  <source href="https://www.kb.dk/e-mat/dod/115208006262.pdf" facsimile="115208006262" facsimile-pages-num="107" facsimile-pages-offset="6"> <title>Nytaarsgave. Sælges til Fordel for en fri Skole</title><editor>Ernst Trier</editor><place>Kjøbenhavn</place><printer>J. C. Elvius’ Bogtrykkeri</printer><year>1870</year></source>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-17T07:46:44+01:00"/>
+  </proofreadings>
+  <source href="https://www.kb.dk/e-mat/dod/115208006262.pdf" facsimile="115208006262" facsimile-pages-num="107" facsimile-pages-offset="6"> <title>Nytaarsgave. Sælges til Fordel for en fri Skole</title><editor id="trier" type="editor">Ernst Trier</editor><place>Kjøbenhavn</place><printer>J. C. Elvius’ Bogtrykkeri</printer><year>1870</year></source>
 </workhead>
 <workbody>
+
+<text id="trier2026111701" author="trier">
+<head>
+  <title>Forord</title>
+  <source facsimile-pages="10-11"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Ofte har jeg hørt vort lille Land rose, fordi man der har et stort Antal Skoler, hvortil vor Almue er tvungen at sende sine Børn. Om nu hele dette tvungne Almueskolevæsen virkelig er saa megen Ros værd, skal jeg her ikke indlade mig paa at drøfte. Sikkert er det imidlertid, at vore Bønder netop paa de Egne, hvor en folkelig Oplysning har trængt igjennem, ikke ere tilfredse dermed; der oprettes da den ene fri Børneskole efter den anden. Det fortjener vor fulde Opmærksomhed; det Særsyn er derved kommet frem, at en ikke ganske lille Dél af vore Bønder, foruden at skatte til den bestaaende Almueskole, frivillig opretholde ved egne Midler den fri Skole ved Siden deraf. Det forekommer mig meget glædeligt; thi saavidt jeg kjender til det, vil det næsten alle Vegne vise sig, at Drivefjedren dertil er Kjærlighed til <pb facs="010.jpg"/>Oplysning og Syn for, at, skal Oplysningen blive til Gavn for Livet, maa den virke i Frihed. Et umiskjendeligt Vidnesbyrd om at det er en Kjærligheds-Sag, er det, at der kræves i Almindelighed en ikke ringe Grad af Opoffrelse baade fra Forældrenes og Lærernes Side, forat disse fri Skoler kunne oprettes og opretholdes. Det erlangtfra saaledes, at det alene er velstaaende Mænd, der ere ivrige for og sætte dem i Værk; det er ligesaa meget Smaafolk, der ere ivrige for Sagen, og jeg kjender Tilfælde, hvor over Halvdelen af de Børn, der søge saadanne Skoler, ere Husmænds Børn. Med Skolestue og alt ydre Tilbehør, maa man i Almindelighed hjælpe sig som man kan bedst. Men ofte voxer Skolen saaledes til, at man maa see at skaffe den sit eget Hus og bedre Lejlighed, end den hidtil under Fremvæksten har kunnet nøjes med, hvor vanskeligt det ofte saa end vil falde
+    Denne lille Bog er udgivet i det Haab, at Salget af den kunde give en Indtægt, der skulde anvendes til at understøtte et saadant Byggeforetagende. Maatte den vinde Yndest hos den danske Læseverden!
+
+<right><b>Ernst Trier.</b></right>
+</prose>
+</body>
+</text>
+
+<text id="grundtvig2026111701" author="grundtvig">
+<head>
+  <title>Kirke-Skibet</title>
+  <firstline>Livet her ret lignes ved</firstline>
+  <source pages="5-8" facsimile-pages="12-15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Livet her ret lignes ved
+Et Skib paa Verdens-Havet,
+Bølge op og Bølge ned,
+I Dybet let begravet,
+Udsat, som Snekken paa sin Færd,
+For Strøm og Storm og blinde Skiær
+Og skrøbelig kun lavet!
+
+Verdens Klogskab raaber ud:
+„Tag vare dig for Dybet,
+Driv med Strømmen, gaa dit Skud,
+Og lær din Kunst af Krybet;
+Ja see dit Snit og pas dit Roer.
+Læg alle Aarer brat ombord,
+Naar Leiligheden vinker“!
+
+Nei, I Folk paa Verdens Ø,
+De Kloge med de Dumme,
+Seiles maa den høie Sø,
+Hvor ranke Bølger skumme,
+<pb n="6" facs="012.jpg"/>Skal Farten lykkes over Strand,
+Skal vi ved Livets faste Land
+Engang vort Anker kaste.
+
+Hør, det toner over Hav
+Som Fugle-Sang i Skoven:
+„Bedre er den aabne Grav
+I Skyen og i Voven;
+End Ulve-Graven svigefuld,
+Hvor Blomster gjøgle over Muld
+Og Orme-Flokken lurer!“
+
+Hør, det toner under Sky
+Som Engle-Sang fra Oven:
+„Tømret er en Ark paa Ny,
+Og den kan trodse Voven,
+Ja, hvor den gaaer i Jesu Navn,
+Den følger Bør til Himmel-Havn,
+Og aldrig den forældes!“
+
+Af et lønligt Kildevæld,
+Som Jordans klare Bølger,
+Sprang en Strøm til Folke-Held,
+Som Arken stadig følger,
+Den skiærer Verdens vilde Hav,
+Og under den slet ingen Grav,
+Kun Naadens Dyb sig dølger!
+
+<pb n="7" facs="013.jpg"/>Rednings-Strøm fra Øst til Vest,
+I Tiden og i Rummet,
+Lige klar i Blik og Blæst,
+Og aldrig overskummet,
+Du stille Vei til Fredens Havn,
+Udsjunge skal dit Gaade-Navn
+De Smaa med Engle-Tunger!
+
+Ark! Du est og underfuld,
+Du bygdes uden Hænder,
+Kosted ikke Sølv og Guld,
+Som Verdens Øie blænder,
+Men kosted Ham, som dig os gav,
+Dog meer end Himmel, Jord og Hav,
+Det Kjæreste han kiender!
+
+Uden Mast og uden Speil,
+Et Vrag dig Verden nævner,
+Uden Anker, uden Seil
+Du over Hav dog stævner,
+Og vakler kun, naar Mand af Jord
+Vil raade med dit fine Roer,
+Til han gaaer over Borde!
+
+Hvad den største Helte-Skjald
+Opdaged kun i Drømme,
+<pb n="8" facs="014.jpg"/>Helgen-Skaren uden Tal
+Lysvaagen skal berømme,
+Det Skib, som selv har Liv og Aand,
+Som trænger ei til Styrmands Haand,
+Og leer ad Hvirvel-Vinde!
+
+Al din Kost er kun et Brød
+Og al din Viin et Bæger,
+Hver en Gjæst i Hungersnød
+Dog føder du og qvæger,
+Som Melet fiint i Enkens Huus
+Og Olien i hendes Kruus
+Dit Forraad ei fortæres!
+
+Komme hver da, som har Lyst,
+Skjøndt Verden spaaer os ilde,
+Til at lande paa den Kyst,
+Hvor Livet har sin Kilde,
+Og troe kun fast paa Herrens Ord,
+Usynlig Han er Selv ombord,
+Som skabde Hav og Snekke.
+
+<nonum><right><b><i>N. F. S. Grundtvig.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="grundtvig2026111702" author="grundtvig" variant="grundtvigandresalmera13">
+<head>
+  <title>Guds Forsyn</title>
+  <firstline>Lille Guds Barn! hvad skader dig?</firstline>
+  <source pages="9-10" facsimile-pages="16-17"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lille Guds Barn! hvad skader dig?
+Tænk paa din Fader i Himmerig!
+Han er saa rig, han er saa god,
+Ingen kan staae Hans Magt imod.
+       O Gud ske Lov!
+
+Føden og Klæden, Huus og Hjem,
+Skulde Guds Børn gaae vild om dem?
+Mennesket lever af Guds Ord,
+Hjemme har Børn, hvor Fader boer.
+       O Gud ske Lov!
+
+Fuglen i Skov, paa Mark og Fjeld,
+Synger i Gry og saa i Kveld,
+Sover saa sødt paa Kampesteen,
+Som under Tag paa Kvist og Green.
+       O Gud ske Lov!
+
+Ikke den pløier eller saaer,
+Lægger ei op fra Aar til Aar,
+Dog hvor Bønder af Hunger døe,
+Finder den lille Fugl et Frø.
+       O Gud ske Lov!
+
+<pb n="10" facs="016.jpg"/>Yndig er Blomsten klædt og boldt,
+Deiligst at see paa Fjeldet goldt,
+Ikke den spinder, ei den syer,
+Dronning er dog dens Dragt for dyr!
+       O Gud ske Lov!
+
+Blomst kommer op, og Blomst gaaer ud,
+Hvad er vel den for Himlens Gud
+Noget at regne mod de Smaae,
+Som for Hans Aasyn evig staae!
+       O Gud ske Lov!
+
+Lille Guds Barn i Verden her!
+Hold dig da til din Fader nær!
+Spørg om Hans Magt og Kjærlighed!
+Stol kun paa Ham og hvil i Fred!
+       O Gud ske Lov!
+
+Føden og Klæden nok du faaer
+Af Ham imorgen som igaar.
+Og naar Hans Sol for dig gaaer ned,
+Arver du al Hans Herlighed.
+       O Gud ske Lov!
+
+<nonum><right><b><i>N. F. S. Grundtvig.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
 
 <section level="1">
 <head>
@@ -28,7 +220,7 @@
   </notes>
   <source pages="11-12" facsimile-pages="18-19"/>
   <keywords>balladestrofe</keywords>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -85,7 +277,7 @@ Og der er ingen Død!
   <toctitle><num>II.</num>Tiden er kommen, jeg gaaer herfra</toctitle>
   <firstline>Tiden er kommen, jeg gaaer herfra</firstline>
   <source pages="13" facsimile-pages="20"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -103,6 +295,730 @@ Ret aldrig vorder begravet.
 
 </content>
 </section>
+
+<text id="trier2026111702" author="trier">
+<head>
+  <firstline>Disse to Digte af Ingemann ere efter hans afdøde Hustrues Udsagn skrevne under hans sidste Sygdom</firstline>
+  <dates>
+    <event>1865-03-09</event>
+  </dates>
+  <source pages="13" facsimile-pages="20"/>
+  <keywords>ingemann</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Disse to Digte af Ingemann ere efter hans afdøde Hustrues Udsagn skrevne under hans sidste Sygdom. Allerede i Foraaret 1865 var Udgivelsen af en lignende Bog som denne paatænkt. Hun gav mig Lov til at bruge dem dertil, men, da det første af dem er et særligt Farvel til hende, først efter hendes Død. I et Brev af 9de Marts 1865 skrev hun til mig: „Det er min Bøn, at dersom Gud ikke er saa naadig at kalde mig til en salig Gjenforening med min Sjæls Elskede, inden Bogen kommer i Trykken, De da vil være saa god, ikke at indføre Digtet.“
+
+<right><b>Ernst Trier.</b></right>
+</prose>
+</body>
+</text>
+
+<text id="brandtcj2026111701" author="brandtcj">
+<head>
+  <title>Bryllupssang i Vår</title>
+  <subtitle>Som: I al sin Glands nu stråler Solen.</subtitle>
+  <firstline>Nu er der lyst i vore Lunde</firstline>
+  <source pages="14-15" facsimile-pages="21-22"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu er der lyst i vore Lunde,
+Og Fugle små med tusind Munde,
+Og Blomsterhær i Skov og Vang
+Udbrede vidt med Duft og Sang,
+At Intet kan dog lignes ved
+Vor Gud og Faders Kærlighed!
+
+Nu er der Klang fra Kirkebuer,
+Hvor Helligåndens Pindseluer
+Gør levende det rige Ord,
+Som lærte Lovsang os i Kor:
+O Intet kan dog lignes ved
+Vor Gud og Faders Kærlighed!
+
+Men for dens Afglands her at finde
+Han skabte kærlig Mand og Kvinde,
+Og knytted dem med Hjerte-Bånd,
+Så de, vejledte af hans Ånd,
+Må leve af, og frydes ved
+Vor Gud og Faders Kærlighed!
+
+<pb n="15" facs="021.jpg"/>Og Kongens Sön af Himmerige,
+Som blev vor Broder, sært at sige,
+Sig fæsted selv en Brud på Jord,
+Og indbød Gæster til sit Bord,
+Der leve af og frydes ved
+Vor Gud og Faders Kærlighed!
+
+Så spring kun ud, I Bøge-Sale!
+Så fald kun, Tåredugg i Dale!
+Syng højt med Tak, hvor Hjerter to
+I Ægtepagt, med fælles Tro,
+Må undres på, men frydes ved
+Vor Gud og Faders Kærlighed!
+
+<nonum><right><b><i>C. J Brandt.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="birkedal2026111701" author="birkedal">
+<head>
+  <title>Ved Kong Frederiks Bisættelse</title>
+  <subtitle>(Skrevet umiddelbart efter Kongens Bisættelse).</subtitle>
+  <firstline>Nu bære de bort Kong Fredriks Liig</firstline>
+  <source pages="16-24" facsimile-pages="23-31"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nu bære de bort Kong Fredriks Liig,
+Det sættes i Gravkapellet,
+Et Hav af Graad over Gravklædets Flig
+Er Folkehjærte-Farvellet.
+
+Saa drage de atter fra Graven bort,
+Hver gaaer til sin vante Virken,
+Og Konge-Kisten i Natten sort
+Staaer med sin Døds-Skat i Kirken.
+
+Men da, naar Midnattens Klokke slaaer,
+Da aabner sig Sarkofagen,
+Kong Fredrik rejser sig op fra Baar
+Og kaster sit Dødning-Lagen.
+
+Han griber Kronhjelm, han griber Skjold,
+Og Pantsret med gyldne Ringe —
+Han staaer som Vale fra Hedenold
+Med Uffe den Spages Klinge.
+
+<pb n="17" facs="023.jpg"/>Saa gaaer han ved Stjernens brudte Skin
+Omkring i Gravkapels-Stuen,
+Han standser ved hvert et Kongeskriin
+Alt under Domkirke-Buen.
+
+Han ryster paa Hov'det ved Fædres Grav:
+„Bliv ved kun, bliv ved at sove!
+Saa bedsk et Ætgods jer Arving I gav,
+Drøm fort i den sorte Alkove!
+
+I luged ej Klinte, I styned ej Tjørn,
+Som Danmark tildøde stinge,
+I stækked ej Fjer paa den tydske Ørn,
+Og lod ej <w>Løverne</w> springe.
+
+I næred Slangen ved Danmarks Barm,
+Som hvisled med Falskheds Tone,
+Skjønt Folket kærligt med trofast Arm
+Jer satte paa Valdemars Trone.
+
+I Oldenborger! jeg var et Skud,
+Det sidste, der førte Staven,
+Jeg vilde sone jer Brøde ud,
+Men sank for tidlig i Graven.
+
+<pb n="18" facs="024.jpg"/>Nu gjalder Luren til sidste Kamp,
+Og under os gynger Jorden, —
+Jeg kan ej sove — hør Fjendens Tramp,
+Paa Grændsen af hele Norden.
+
+Jeg løfter Danebrogs-Mærket rødt,
+Hvor Ransmænd med Løgns-Ord hvæser,
+Og kan I sove — saa sov kun sødt,
+Mens Luren til Stormgang blæser.“
+
+Dog Kongen bøjer med Taarens Dugg
+Sig over en gammel Kiste:
+„Kong Kristian! hører du Danmarks Suk,
+Som skulde dets Hjerte briste?
+
+Op, fjerde Kristian! til Heltefærd,
+Stat op af din Sømands-Køje!
+Da vaagner Kjæmpen, han griber Sværd
+Og aabner sit ene Øie!
+
+Da revner brat Fru Margrethes Skriin,
+Og hun, som derinde blunder,
+Sig rejser med Blus paa Marmorkind,
+Og hvidsker: „Gaaer <w>Norden</w> under?“
+
+<pb n="19" facs="025.jpg"/>Kong Frederik kalder: Kom frem af Muld,
+Du Runemester! af Senge,
+Følg med at skildre i Vinterkuld
+En Daad, som skal mindes længe“!
+
+Ad Kirkegangen de skride hen,
+Portdøren med Gny opspringer,
+Paa hviden Ganger de tause Mænd
+Henfare i Nat, som paa Vinger.
+
+Ved Ringsted-Kirkens stængede Dør
+Der høres Kong Fredriks Raaben:
+„I Volmer-Drotter, kom frem som før,
+Hold Danmarks Haab over Daaben!
+
+Bloddaaben — nu gjælder det onde Kaar,
+Jer Arv vil Venderne spilde“! —
+Da løftes Laaget, — de Tvende staaer,
+Med Hjelmen i Natten silde.
+
+Og Dagmar rejser sig fiin og blød:
+„Min ædelig Herre, I fare;
+At frelse Folket fra Skam og Nød,
+Krist skærme mod Fjendens Snare!“
+
+<pb n="20" facs="026.jpg"/>Der staaer et Ridt ad den Kongevej tyst,
+Ved Absalons Klosterkirke
+Gjenlyder Kong Frederiks klingre Røst:
+„Vi rider til Dannevirke!
+
+Vil du være med, du Biskop god?
+Thi mærker du ej det dønner?
+Dit Banner skal atter farves i Blod
+Af Dannemarks gæve Sønner!
+
+Og du, Kong Valdemar Atterdag,
+Som helede Riget atter,
+Nu vil de slaa dit Kongs-Værk i Kvag,
+Kom nu og følg med din Datter!“
+
+Og Bisp og Konge opstode brat,
+De komme med Sværd ved Bælte:
+„Bisp Axel!“ — „O, du min ædle Drot!“
+Saa tale de gamle Helte!
+
+Og hver en Høj, de komme forbi,
+Sig aabner ved Stjernernes Lue,
+De stærke Kæmper, som sove deri,
+Gaae frem af den tusindaars Tue.
+
+<pb n="21" facs="027.jpg"/>Tavst følge de paa den stille Færd,
+Det er et underligt Møde,
+Om <w>Fredrik</w> fylkes en Aandehær,
+Af <w>dem</w>, som for Dannemark døde!
+
+Ved Havet møder en gammel Ven,
+Hr. Esbern med Blikkets Luer;
+„Jeg spurgte, her er Ufred igjen,
+At <w>Svantevit</w> atter truer.“
+
+Hans Snekke gynger paa Bølgespejl,
+Han selv sig stiller ved Roret,
+Og Børen fylder de hvide Sejl,
+Mens Bølgen lukker for Sporet.
+
+De stige iland ved <w>Sliens</w> Bredd
+Og gaar til det gamle Stade,
+Ved <w>Dannevirke</w>, ved Danmarks Led
+Staae Rækker af „<w>Ryes Brigade</w>.“
+
+Med dybe Saar i Pande og Bryst,
+De skuldre, mens Øiet brænder:
+„Dem fik vi i sidste blodige Dyst,
+Kong Fredrik, mon du os kender?
+
+<pb n="22" facs="028.jpg"/>Vi komme fra Høj paa Mark, ved Hav,
+Vi vente paa Kongevinket,
+Og Løven <w>sidder</w> ej meer paa Grav,
+Nu prøver den Kjæmpespringet.
+
+Kong Fredrik! tag os igjen i Ed,
+Før du dine gamle Drenge,
+Thi nu maa de <w>Døde</w> kjæmpe med,
+Hvis Danmark skal leve længe!“
+
+Saa stige de op paa Thyras Vold,
+Det lysner paa alle Pander,
+Her seer jeg igjen det gamle Skjold,
+Her seer jeg det gamle Banner!
+
+Her stande <w>levende</w> danske Mænd,
+Mine tappre Jenser med Ære;
+Naar Levende, Døde storme frem,
+Maa Sejren vel Danmarks være!
+
+Der staaer paa Toppen den danske Drot
+Og raaber med klare Stemme:
+„Kong Kristian! her er et Stævne godt,
+Her føler jeg mig som hjemme!
+
+<pb n="23" facs="029.jpg"/>Her skal vi købe din Kongering,
+Og Danmarks Hjerte, din Dronning,
+Her stande Folkets Kæmper paa Thing,
+At kejse en staalsat Konning!
+
+Med Sort paa Hvidt jeg dig Kronen tilskrev,
+Her gjælder det om at tegne
+Med blodrøde Træk dit Kongebrev,
+Hvor Kinder rødme og blegne.
+
+Her gjælder det om at sætte ind
+Vort Liv for Volmernes Throne,
+Her gjælder det om med Ædelsind
+At smedde i Blod din Krone.
+
+Kom, stil dig fremmest i Kampens Stund,
+Mig Døde, dig Levende følge,
+Sæt Hejmdals Horn for din Kongemund,
+Blæs Storm over Blodets Bølge!
+
+Saa raaber Kongen fra <w>Slesvigs</w> Kyst,
+Til Kongeborgen det gjalder,
+„Kong Kristian, hører du Fredriks Røst?
+Han kalder, og <w>Dannemark</w> kalder!
+
+<pb n="24" facs="030.jpg"/>Kom hid og slaa med dit gode Sværd,
+Her bli’er du paa Skjolde baaret,
+Her venter Kroningens stolte Færd,
+Her venter dig Heltekaaret!
+
+Det er vel værdt at vove en Dyst
+For Dannemarks Hjerte-Krone,
+Med Manddoms-Gjerning Bryst imod Bryst,
+Alt under Kamplurens Tone!“
+
+<nonum><right><b><i>Vilhelm Birkedal.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="lacour2026111701" author="lacour" ignore-tests="comma-missing-space">
+<head>
+  <title>En dansk Soldat og hans Hustru</title>
+  <subtitle>(Af et Brev).</subtitle>
+  <dates>
+    <event>1864-03-14</event>
+    <event>1864-03-15</event>
+    <event>1864-03-16</event>
+    <event>1864-04-16</event>
+  </dates>
+  <source pages="25-36" facsimile-pages="32-43"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Du har bedet mig om at nedskrive den lille Fortælling, som jeg sidste Foraar fortalte Eder paa Vallekilde Højskole. Her er den nu, om Du ellers vil kjendes ved den; thi Pennen er jo kun en daarlig Erstatning for Ordet, især naar Hjærtet er med.
+    Det var den 16de Marts om Formiddagen, 1864, at 3die Regiment i stærkt Snevejr atter rykkede fra Sønderborg ud til Forposttjeneste foran Dybbøl; inden vi naaede derud, vare Sneskyerne blæste bort, Himlen var klar, Solen skinnede, og det mørke, graa Foraarsvejr, der ellers i hine Dage hvilede over Egnen, var afløst af en klar og let Frostluft. Ogsaa blandt Soldaterne var Stemningen lettere og friskere end almindeligt, thi da vi sidst vare paa Forpost, den 14de og 15de Marts, havde vi havt flere heldige og oplivende Sammenstød med Fjenden; ja, 4de, 5te, 6te og 8de Kompagni havde endog havt <pb n="26" facs="032.jpg"/>en to Timers livlig Fægtning med ham ved Ragebøl, en af de smukkeste Forpostfægtninger, der blev leveret foran Dybbøl, idet det ikke lykkedes Fjenden, trods hans gjentagne Anstrængelser, at trykke de nævnte Kompagnier det mindste ud af deres Forsvarsstilling; desværre var det i denne Fægtning, at den uforsagte og dygtige Premierlieutenant Duus fik sit slemme Skudsaar.
+    Vort Kompagni skulde staa som Piket for Feltvagterne paa høire Fløj, hvoraf Nr. 1, der stod ved Ransgaard og støttede sig til Alssund, førtes af Lieutenant Færck med det halve af 7de Kompagni (Premierl. Drastrup), og Nr. 2, der stod ved Stougaard, af Lieut. Buchhave med den anden Halvdel. Som Piket fik vi Plads ved Batterup med Ordre til med Halvdelen at rykke frem i Fægtningskjæden tilvenstre for Nr. 2, naar Fjenden trængte haardt paa<footnote>De her nævnte 3 Officerer, Drastrup, Buchhave og Færch, rigtige Feltsoldater til at føre og omgaaes vore Jenser, mistede vi senere i Kampen paa Als, — hvor jeg hørte Drastrup sige til sine Folk, idet han rykkede ud med sit Kompagni: „Lad mig nu see, Kammerater, at I slaaes saa at vor gamle Mo,er kan være Eder bekjendt; lov mig blot at I vil følge mig;“ — og de fulgte ham, Kompagniet blev helt oprevet den Dag).</footnote>
+<pb n="27" facs="033.jpg"/>    Kl. 4—5 om Eftermiddagen kom vi i Fægtning, men Fjenden mente ikke noget alvorligt med Angrebet og trak sig snart tilbage, efter at dog først en af disse forvildede Kugler, der udskydes paa Lykke og Fromme uden noget bestemt Maal, havde ramt Lieut. Barner, en stærk, kraftig og modig Soldat, elsket og afholdt af sine Folk og Kammerater som faa andre, og givet ham Banesaaret. Natten faldt paa, Himlen var endnu klar, og man kunde derfor skimte lidt frem foran sig; alt var saa tyst og roligt, Fred hvilede overalt, ikke et Skud afbrød Stilheden. Men pludselig kom en Vedet løbende med Mælding om, at en fremskudt Snigpatrouille under Korporal Leth (en Søn af Præsten i Horne) havde bemærket, at Fjenden i al Stilhed trængte sig frem med flere stærke Kommandoer, og i samme Øieblik underrettede en livlig Skydning fra Vedetkjæden os om, at han havde naaet den. Jeg fik Ordre til at rykke frem i Fægtningen med min Deling; denne bestod, ifølge mit eget Ønske, af ene „Blaakapper“, og jeg vilde ønske, at D’hrr., der have været saa ivrige i at raabe paa disses Ubevægelighed og Ubrugelighed, havde seet den Hurtighed og Orden, <pb n="28" facs="034.jpg"/>hvormed de i Løb rykkede frem i „spredt Orden“ til det Hegn, som vi skulde besætte, og jeg er vis paa, at de samme Herrer vilde have været lidt varsommere i deres Fordømmelse af disse brave Folk, der maaske ikke pralede saa meget af deres Mod og Krigslyst, naar vi laa i Kvarter, fordi de, som i Reglen gifte Mænd, saae med noget større Alvor paa Livet, men som aldrig trykkede sig eller svigtede i Kampen, naar det hed „fremad“.
+    Da vi naaede Hegnet i Højde med Feltvagt Nr. 2, var saavel denne som Nr. 1 i livlig Fægtning, idet de kjæmpende gik tilbage til den egentlige Forsvarsstilling, der her, som saa ofte ved Natfægtninger, var valgt lidt bag Feltvagterne. I de tætte Rækker af Hegn, der laa foran os, hørte vi imidlertid en tydelig Raslen af gjennembrydende Folk; jeg troede, det var vore egne Vedetter, der kom tilbage, men raabte dem forgjæves an to Gange; efter et tredie „Holdt — Hvem der“ vare de imidlertid komne os saa nær, at jeg kunde høre den halvt hviskende Stemme, hvormed deres Befalingsmænd opmandede dem til at gaae rask paa. Det var altsaa Fjenden, vi begyndte at skyde, og nu blev deres stil<pb n="29" facs="035.jpg"/>færdige Kommandoord afløst af en larmende Skjælden, Skrigen og Pryglen for at drive dem ind mod os. Snart havde vi dem inde paa os, det kom til Haandgemæng et Par Steder, men da Feltvagten nu var kommet tilbage i sin Forsvarsstilling, og vi altsaa havde udført vort Hverv, nemlig at understøtte Feltvagten i at indtage denne, gik ogsaa vi tilbage i vor Forsvarsstilling, da vi ellers vilde være blevne helt afskaarne. Fjendens Plan, som var med en Kolonne fra denne Side at komme ind bag Feltvagten Nr. 2 og tage den til Fange helt og holdent, var altsaa fuldstændig mislykket, og det saa at sige uden Tab for os. Fjenden samlede sig nu i en Gaard tæt foran vor nye Fægtningsstilling, og vi fik Lov til at gaa angrebsvis tilværks, men maatte for Angrebsplanens Skyld først nogenlunde kjende den Styrke, Fjenden havde samlet i og omkring Gaarden. En Snigpatrouille skulde altsaa krybe frem til Gaarden; og enhver skjønner let, hvor ulige værre end selve Kampen en slig Sendelse er, og mens der altid ellers mældte sig en Del af mine Folk, naar Patrouiller skulde sendes frem mod Fjenden, og jeg spurgte, hvem der havde Lyst, mældte denne Gang sig kun een, og det var <w>Mogens <pb n="30" facs="036.jpg"/>Kristian Nielsen</w>, Nr. 509, fra Fladbjerg ved Mariager Fjord.
+    Mogens Nielsen var en lille, men firskaaren, bomstærk Karl, modig, rask og altid glad; han havde altid viist sig som en af de kjækkeste, mest ufortrødne og udholdne Soldater, og jo farligere Posterne vare, desto hurtigere var han til at mælde sig frivillig; kom vi i Kvarter eller Bivouak, og alle Mand vare gjennemblødte, trætte og udmattede, saae man ham strax tage fat paa at samle Pinde, faae Ilden til at blusse, og lave noget Varmt til sig og Kammerater. Hans Mod viste sig ogsaa her, thi skjøndt ingen flere mældte sig, vilde han godt krybe ene hen til Gaarden, men til slige farlige Sendelser lod jeg altid 2 følges ad, og for første Gang maatte jeg befale en anden frem for at følge i kort Afstand bag efter ham. Mogens kom ogsaa tilbage med Mældingen; han havde været helt inde ved Fjenden; Gaarden og tildels Haven var fuld. Desværre bar hans Sendelse ingen Frugter, thi inden han kom tilbage, blev det af højere Befalende forbudt os at gjøre Angrebet. Som Mogens var her, saaledes fandt man ham bestandig.
+<pb n="31" facs="037.jpg"/>    Et Par Uger efter, da vi atter skulde paa Forpost, samledes hele Regimentet i tætsluttede Kolonner med en aaben Plads i Midten paa en flad Mark bag Dybbølskandserne. At her skulde foregaa noget Usædvanligt, var tydeligt for alle. Paa Pladsen midt i Regimentet samledes de højere Officerer, Kompagnierne skuldrede, Musikken spillede og frem kaldtes 2 Mand for, i hele Regimentets Paasyn og under dets Honør, af Regiments-Kommandøren at modtage det Danebrogskors, som Kongen havde tildelt dem. Den ene af disse var Nr. 509, Mogens Nielsen; endnu var ingen Menige dekorerede ved vor Bataillon, derfor var Æren saa meget større. Og han bar sit Kors som en rigtig Soldat; — han vedblev at være den „gamle“ Mogens baade i Kampen, og naar vi laa i Barakkerne; han viste det samme Mod, naar vi vare i Skandserne eller Løbegravene paa Dybbølbjerg, og samme Ufortrødenhed med at koge Grød og stege Flæsk, naar vi laa i Hvil; der var næppe heller en Kammerat, der saae skjævt til ham, maaske med Undtagelse af min Fløimand, der ikke rigtig kunde finde sig i, at Mogens nu <pb n="32" facs="038.jpg"/>skulde have Hæderspladsen paa Delingens Fløj, da han kun var saa „kort“.
+    Og i et lille Hus i Fladbjerg By var der Glæde, thi der sad hans fattige men hæderlige Hustru, Dorthe Marie, med sine 3 smaa Børn. Fattigt var der, Avl havde de ikke; Mogens havde væsentlig ernæret sig ved Fiskeri paa Mariager Fjord, og det var kun lige fra Haanden i Munden, saa han kunde ingen Tærepenge efterlade i sit Hjem, da han drog afsted. Dog led de forsaavidt ingen Nød, thi Sognet sørgede for dem, mens han var borte, og da nu Brevet kom om den Hæder, han havde vundet, da blev der naturligvis Glæde.
+    Den 16de April laa vi i Vollerup Barakker. Der blev sagt, at de ældste Aargange af Forstærkningen skulde hjempermitteres, fordi man havde fundet dem ubrugelige. Mogens hørte til disse; — en yngre Forstærkningsmand gjorde ham et godt Tilbud, hvis han vilde bytte med ham; — han tænkte paa sin Fattigdom, og — han byttede, skjøndt han havde en Følelse af det Urigtige, der ligger heri, og skjøndt han ofte havde hørt mig udtale min Fordømmelse af sligt Stillingsvæsen midt under en Krig, hvor man ikke blot sælger sit Arbejde som i <pb n="33" facs="039.jpg"/>Fredens Dage til Parademarsch paa Nørre-Fælled, men hvor man paa en Maade sælger sit Liv. Som sagt, han byttede, men jeg saae ham ikke mere glad. Det første, han imidlertid gjorde, var at kjøbe et Ny Testament til hver af sine Børn; der var netop den Dag en Mand i Lejren, som solgte Andagtsbøger, Psalmebøger og Testamenter.
+    Om Aftenen trak vi over paa Dybbøl. Vi fik vor Plads i Løbegravene mellem Skandserne Nr. 2 og 3. Det var den næstsidste Nat, Dybbøl stod; alt var forfærdelig nedskudt; baade fra Broager og Avnbjerg overdængede de os med Granater; Fjenden var i sine Løbegrave rykket helt ind paa os; han var næppe fjernet 300 Alen fra os. Omtrent Kl. 11 kom Overgeneralens Stabschef, Oberst Stjernholm; han visiterede Befæstningen, spurgte om vi havde kunnet høre noget til at Fjenden gravede Minegang ind mod os, gav Ordre til at der endnu samme Nat skulde begyndes med en Minegang fra vor Skandsegrav ud mod ham, og jeg fik Ordre til at sende en Patrouille frem over Brystværnet hen mod Fjendens Løbegrav for at lytte efter, om Fjenden gravede. Jeg spurgte mine Folk, hvem af dem der vilde <pb n="34" facs="040.jpg"/>gaa, men ingen meldte sig frivillig; jeg spurgte da ligefrem Mogens, men han var for første Gang en anden. Jeg nødsagedes da til som en Befaling at sige til ham og en anden rask Soldat, en kjøbenhavnsk Skomagersvend Olaf, at gaa derud, men gav dem Ordre til at krybe paa alle Fire, for at Fjenden ikke skulde skimte dem mod den temmelig klare Nattehimmel, hvis de gik oprejste; desuden skulde en af dem strax komme tilbage med Melding, og efterat være vendt tilbage til Kammeraten igjen, skulde de begge, ligeledes krybende, vende tilbage, saasnart det gryede ad Dag. — Kl. 2 gryede det, men endnu kom de ikke; først et Kvarterstid efter vendte de tilbage, Olaf krybende langs Jorden, men Mogens derimod gaaende oprejst. De havde næsten naaet vor Løbegrav, da kom et Geværskud fra den tætved liggende Fjende, og — Mogens faldt og vaandede sig i Smerten. Olaf sprang op for at skyde, søgte dernæst at hjælpe den faldne Kammerat, men kunde ikke; 2 Ambulancesoldater maatte frem over Brystværnet for at redde ham tilbage; Fjenden skød nu stærkt paa dem, skjøndt han fuldtvel kunde høre, længere var han jo ikke fra os, at det <pb n="35" facs="041.jpg"/>var Ambulancen. Endelig fik de ham paa Baaren og kom ind over Brystværnet med ham. Han var ramt af en Kugle gjennem Ryggen og jamrede sig stærkt, vedblivende kaldende og jamrende: „Aah, min Kone, aah mine Børn.“
+    Nogle faa Timer efter døde han. Hans Død gik os alle ved Delingen nær til Hjærte; vi havde mistet en af vore bedste Kammerater, — men den næste Dag bragte os jo alle langt større og dybere Sorger; — i Krigens Tummel er der ingen Ro til ret at dvæle ved Sorgen over Tabet af Enkeltmand. Anderledes i det fattige Hus i Fladbjerg; der sad hun som Enke med 3 smaa uforsørgede Børn; Manden borte, Faderen borte. Jeg skrev jævnlig til hende; det lindrede lidt paa den store Sorg at høre et godt og kjærligt Ord om hendes Mogens. Og hun bar og bærer sin Sorg, som det sig sømmer en Dannekvinde, thi var han en brav Soldat, saa er hun en ædel dansk Kvinde, og Du vil sige „Ja“ dertil, kjære Ven, naar jeg nu her sluttelig meddeler Dig et lille Stykke af et Brev, som jeg fik i Begyndelsen af det næste Aar. Jeg havde skrevet til hende om de 3 Testamenter, Mogens kjøbte Dagen før <pb n="36" facs="042.jpg"/>sin Død; og hun skriver da i det nævnte Brev: „Jeg seer hans Tanker har været hos Sinne Smaae Børns opdragelse, at Lede dem igennem Livets besværlighed og søgge tilflugt til Gud Som ogsaa er den Fatiges Enke og Faderløses Trøster og Hjelper. paa ham mod vi bygge vort haab. Min Kjære Mand gik bort og Ane ei at der lod mig en Tung byrde under Hjærtet som jeg Aldrig vove at tilmelde ham formedels Vor Fatigdom og Familien blev større, og tillige med var jeg bange at hans Mod og Standhaftighed som han Skyldte sin Konge og Fødeland skulle giøre ham uddygtig til sin Tjeneste. Altsaa 4 Faderløse Børn hvilken den siste bær min Kjære Mands Nav et ¼ Aar gammel.“
+    See, Kjære Ven, et saadant Minde om en saadan Mand og en saadan Kvinde bør man jo ikke gjemme hos sig selv, har end ikke Lov dertil, det er Folkets Ejendom; derfor fortalte jeg Dine Elever den, og derfor vil det glæde mig, om Du vil give den Plads i den lille Bog for danske Folk, Du er i Færd med at udgive.
+
+<right>Din
+Ven J.</right>
+</prose>
+</body>
+</text>
+
+<text id="schroeder2026111701" author="schroeder">
+<head>
+  <title>Det gjælder om at være sig selv, men tillige om ikke at være sig selv nok</title>
+  <subtitle>(Af L. Schrøder.)</subtitle>
+  <firstline>Der er en gammel dansk Vise, hvori der</firstline>
+  <dates><performed>1868-06-05</performed></dates>
+  <notes>
+    <note>Opskriften til en Tale, jeg holdt den 5. Juni 1868 ved en Folkefest i Skibelund Krat.</note>
+  </notes>
+  <source pages="37-42" facsimile-pages="44-49"/>
+  <keywords>ibsen,bjoernson</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Der er en gammel dansk Vise, hvori der fortælles om Hr. Bondes Søn Ridder Vismer, at han ved Nattetid blev gjæstet af en Ælvefrue, som bød ham ride til Ælvebroen, og næste Dag følte han sig uimodstaaelig draget derhen. Men Hesten snublede under ham, og han sank ned til Ælvehjemmet, hvor den lokkende Skjønne da mødte ham med et Guldbæger i Haanden og med det Spørgsmaal:
+</prose>
+<poetry font-size="small">
+Du sige mig ved den første Skaal,
+Du sige det paa dit Modersmaal!
+Hvor haver Du hjemme paa Verdens Ø?
+Og hvor har Du fundet din Fæstemø?
+</poetry>
+<prose>
+    Hertil svarede da Ridderen, som vi endnu synge:
+</prose>
+<pb n="38" facs="044.jpg"/><poetry font-size="small">
+I Dannemark er jeg født og baaren,
+Og der er alle mine Klæder skaaren,
+Og der har jeg fundet min Fæstemø,
+Med hende vil jeg baade leve og dø.
+</poetry>
+<prose>
+    Men da han havde drukket Vinen, som var krydret med Ælvekorn, og Fruen atter spurgte ham, hvor han var hjemme paa Verdens Ø, og hvor han havde fundet sin Fæstemø, da svarede han:
+</prose>
+<poetry font-size="small">
+I Ælvehjem er jeg født og baaren,
+Og der er alle mine Klæder skaaren,
+Og for mig stander min Fæstemø,
+Med eder vil jeg baade leve og dø.
+</poetry>
+<prose>
+    Han var gaaet fra sine Minder og dermed <w>fra sig selv</w>, hvad der ogsaa paa jævn Dansk udtrykkes ved at blive <w>ællevild</w>.
+    Denne Vise om Hr. Bondes „væneste Søn“ Ridder Vismer er med Rette brugt til at oplyse, hvordan det er gaaet en Dél af det danske Folk, som først blev gjæstet af det fremmede Væsen i lokkende Drømme og siden søgte det, hvor det var at finde, og blev da ved Trylledrikken gjort fremmed for sine Minder, for Fædrelandet og det danske Hjertelag, og dermed for sig selv. Hr. Bondes Sønner er vi forsaavidt alle, som Bonde ikke mindre end Husbonde i gamle Dage var den fælleds Be<pb n="39" facs="045.jpg"/>nævnelse for enhver fri Mand i Landet. Men det var gjerne de dygtigste, de væneste af de gamle Bondesønner, der hævede sig over Mængden, saa de blev Riddere eller Klerke, Kjøbmænd eller Haandværkere i Byerne. Og dem var det især, som den Fristelse kom stærkt over, først i Middelalderens Drømmetid og siden i Nytaarstidens klare Dag, at søge hen til det Fremmede. Af dem især blev derfor mange fremmede for Hjemmet. Til dem især lyder da den stærke Varselsrøst:
+</prose>
+<poetry font-size="small">
+Ej for lidt og ej for meget
+Være Guds dig og dit eget!
+    Da er rigest,
+    Da er ligest
+Danevang et Paradis.
+</poetry>
+<prose>
+    Men Hr. Bondes andre Sønner, der blev i deres Faders Stand, saa de endnu bære hans Navn, de gik heller ikke fri for Fristelsen. Har jeg brugt en gammel dansk Vise til at betegne Fristelsen for dem, som kom til at rage op over den menige Mand, da vil jeg bruge en ganske ny norsk Fortælling til at oplyse, hvad der blev og endnu er Fristelsen for det store menige Folk. Hvad vi her i Danmark kalder at blive ællevild, det kalder man i Norge at <pb n="40" facs="046.jpg"/>blive „<w>bergtagen</w>“. Her er det Ælvekrattet med Ælvebroen, der lokker, hist er det den underlige, storslaaede Bjergnatur, der kan drage et Menneske til sig som med usynlige Baand. Naar et Menneske derfor bliver lokket ud af Sporet, saa siger man i Norge, at han er betaget af Bjerget, han er bergtagen. En af Norges unge kjække Digtere — og af dem har Norge to, hvis Mage Sverigs og Danmarks yngre Mænd ej rumme i deres Midte — Bjørnsons Medbejler og Medkæmper Henrik Ibsen har fortalt om en Mand, der hed Per Gynt, og som blev bergtagen, blev lokket ind i Fjeldet, hvor Dovregubben, Kongen derinde, kaarede ham til sin Svigersøn paa det Vilkaar, at han skulde finde sig i Troldeskik. Dertil hørte ikke blot, at han skulde vænne sig til at nøjes med de tarvelige Retter, Fjeldet havde at byde, og med de Klæder, som virkedes der, samt gaa med Dovregubbens Søndagshale; men han skulde ogsaa tilegne sig Troldenes Tankegang. I den Anledning lærer Dovregubben ham at kjende Forskjellen mellem Mennesker og Trolde, og siger:
+</prose>
+<pb n="41" facs="047.jpg"/><poetry font-size="small">
+Derude, under det skinnende Hvælv
+Mellem Mænd det hedder: Mand, vær dig selv!
+Herinde hos os mellem Troldenes Flok
+Det hedder: Trold, vær dig selv nok!
+<w>Nok</w>, min Søn, det kløvende, stærke
+Ord maa staa i dit Vaabenmærke.
+</poetry>
+<prose>
+    I dette Vers er den anden Slags Forgjørelse af Menneskenaturen betegnet med slaaende Klarhed. Den ene er, at man bliver fremmed for sit eget, idet man vil tilegne sig, hvad der er ens Natur imod. Men den anden er, at man som en Muldvarp kryber i Jorden, fordyber sig i sit eget selv og sneverhjertet udelukker sig fra al Paavirkning af Samfundslivet, der rører sig om en. Er Bonden gaaet mere fri end andre af Landets Borgere for den første Fristelse, saa følger det af den undertrykte Stilling, hvori han gjennem lange Tider har levet, at den anden Fristelse har været stærkest for ham. Derfor er det til ham det lyder:
+</prose>
+<poetry font-size="small">
+Ja frem! thi Maalet Du ikke har naaet
+    Med Sulet paa Bord;
+Fra Frimands-Ret og til Stormands-Daad.
+    Saa gaaer Vejen i Nord.
+Ja frem til Hjælp i den trange Tid,
+    Med Skatten, du har i Gjem,
+Med Folkets slumrende Kraft og Vid —
+    Frem, Bondemand, frem!
+</poetry>
+<prose>
+<pb n="42" facs="048.jpg"/>    Men forresten trænge vi vistnok Alle til at mindes om, at det er Troldekløgt, der siger: <w>vær dig selv nok!</w> Og det er det gode ved disse trange Tider, som vi oplever, men som vi maa se at opleve saaledes, at de bliver os til Velsignelse, det er det gode ved dem, at de kan lære mange Enkeltmænd, at de ikke kan være sig selv nok, at vi maa være mange om at bære Byrden, dersom den ikke skal trykke os til Jorden, — at de kan lære Sønderjyderne, at de ikke kan være sig selv nok, men er kun en Dél af det danske Folk, — at de kan lære alle Danske, at de kan ikke være sig selv nok, men er kun en Dél af den nordiske Folkestamme, — at de kan lære hele Norden, at heller ikke det kan være sig selv nok, men kun kan være og blive sig selv, naar det kan trøste sig ved, at „<w>end lever den Gamle af Dage.</w>“
+</prose>
+</body>
+</text>
+
+<text id="brandtcj2026111702" author="brandtcj">
+<head>
+  <title>Tak til Sønderjyderne</title>
+  <subtitle>Som: Danmark dejligst Vang og Vænge.</subtitle>
+  <firstline>Fædreland med fyldte Vange</firstline>
+  <source pages="43-44" facsimile-pages="50-51"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fædreland med fyldte Vange,
+    Favre Bøgehjem!
+Gennem Sommer-Lyst og Sange
+    Trænger Sukket frem,
+Sukket er en Moders Kvide
+For hvad Datteren maa lide,
+Siger: af et ærligt Hjerte
+    Deler jeg din Smerte!
+
+Fædres Jord kan Voldsmand hærge,
+    Trampe Retten ned,
+Sløjfe Vold og bryde Værge,
+    Krænke Arnens Fred;
+Men hvad ej hans Arm kan række,
+Hvad Gengælderen skal vække,
+Kilden til al Kraft herneden,
+    Det er Kærligheden!
+
+<pb n="44" facs="050.jpg"/>Sønderjylland! du bekender
+    Med saa frit et Mod,
+Trods al Tort af ublu Fjender:
+    Dansk af Byrd og Blod,
+Mens der er en Sjæl ilive,
+Var og er og vil du blive,
+Eet med os i Haab og Minder,
+    Baade Mænd og Kvinder!
+
+Tak for denne stærke, stille
+    Kærlighedens Trods,
+Den er Virket om det lille
+    Fædreland for os,
+Den skal tænde Sol i Vange,
+Saa af Sukket fødes Sange,
+Der skal prise vidt paa Jorden
+    Trofasthed i Norden!
+
+<nonum><right><b><i>C. J. Brandt.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="hostrup2026111701" author="hostrup">
+<head>
+  <title>Et Foredrag om Spøgelser</title>
+  <subtitle>(Af C. Hostrup.)</subtitle>
+  <dates>
+    <event>1849-06-05</event>
+  </dates>
+  <source pages="45-62" facsimile-pages="52-69"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Medens jeg var Præst i Jylland, kom der engang en Huusmand til mig og vilde tale med mig i Eenrum. Det var en Mand fra et Nabosogn, der kom jævnlig i Kirke hos mig og havde faaet Godhed for mig, og nu bad han mig, om jeg oprigtig vilde svare ham paa et Spørgsmaal, han vilde gjøre mig. Det lovede jeg ham da, men det kneb øjensynlig for Manden at komme frem med det, og han bad mig gjentagne Gange om, at jeg endelig ikke maatte blive vred, hvis det var noget, jeg havde lovet at tie stille med. Endelig slap det ud, og jeg blev meget forundret, da han vilde vide, hvad vi Præster sagde, naar vi stod ved en Grav. Det var ikke Ligtalen eller Ritualets Ord: „Af Jord er du kommen osv.“, han spurgte om, nej det var hvad vi sagde i „Hatten“. Saa kom det da frem, at der var mange, som gjorde sig underlige Tanker om <pb n="46" facs="052.jpg"/>hvad det betydede, naar Præsten efter Jordspaakastelsen holdt Hatten for Ansigtet, og at de meente, at han saa sagde noget til den Døde om kjønt at blive hvor han var og ikke gaae igjen, og at det var noget, som Præsten skulde have lært i den sorte Skole. Jeg forsikrede ham paa, at hvor megen Magt den lærde Skole kunde have til at slaae levende Mennesker ihjel og gjøre os selv til Spøgelser, den gav os slet ingen Magt over dem, saa de Trolddomskræfter vi kunde hente derfra, havde grumme lidt at betyde.
+    Imidlertid var det slet ikke saa galt, om nogen af Præsterne her i Landet kunde mane Spøgelser, som Folketroen saa tidt har paastaaet, for der er virkelig saadanne endnu, der kyse mange, og det var nogle af dem, jeg idag vilde tale om. Der siges jo nok, at man ikke skal tale om dem, for saa har de ingen Magt, men jeg har den Overbeviisning, at man netop derved allerbedst tager Magten fra dem. Naar et Par Mennesker en Vinteraften sidde sammen i en halvmørk Stue og fortælle Spøgelsehistorier, saa kjende de fleste, hvorledes det kan løbe os koldt nedad Ryggen, og naar man saa skal ud i Mørket, saa hvisler det paa den ene <pb n="47" facs="053.jpg"/>Side og rasler paa den anden, saa er man slet ikke sikker. Men naar man ved Lys, hvor der er mange tilstede, taler højt om Spøgelser og saa helst leer ad dem, saa tabe de Magten i det mindste for Øjeblikket, og det synes saaledes at være den bedste Vej til efterhaanden at fordrive dem.
+    Der er neppe nogen Egn i Landet, hvor der ikke gaaer Sagn om Spøgelser, saa det synes, som om de hidtil har trivedes altfor vel her i Danmark. Som en Prøve vil jeg fortælle et lille Sagn fra Nordsjælland, hvilket jeg saa vil bruge til Udgangspunkt for hvad jeg idag vil tale om. Der levede i Lille Værløse en Gaardmand, som havde Samkvem med Tyve og Røvere og aldrig gik i Kirke, men var i Bund og Grund en ugudelig Krop. Da han var død og begravet, og Ligfølget vendte hjem for at holde „Artid“ over ham, som man dengang kaldte det, saae de med Forskrækkelse, at den døde Mand sad oppe paa Taget af sit Huus og gloede paa dem, saa at de alle tabte Madlysten og rendte hver til sit. Endelig kom Præsten i Farum da til, og han forstod den sorte Kunst og manede den Døde ned i en Mose og lod saa <pb n="48" facs="054.jpg"/>en spids Pæl ramme ned i Jorden efter ham. Men der var en Kvinde, som forstod Tingen endnu bedre end Præsten, og hun tog en Stoppenaal uden Øje og stak den i Pælen. Da raabte Spøgelset dernede: „det skulde du ikke have gjort, din Hex, ellers skulde jeg nok være kommen hjem før du.“ Men nu maatte han blive, hvor han var.
+    Saadanne Spøgelser, som jeg her har fortalt om, har jeg aldrig seet, og er de til, saa synes de ikke at ville have med mig at gjøre. Derimod har jeg faaet Sigte paa et andet Slags Spøgelser, som endnu husere her i Danmark, og paa dem kan denne Historie godt anvendes. Det gjælder om dem alle, at de i Grunden er døde, de har ingen Ret til at bestaae og røre sig iblandt os, Magten er taget fra dem, saa de har slet ikke mere deraf, end Overtroen vil indrømme dem, men den holder dem ilive som Spøgelser; ja de gaae igjen, til de forsvarlig manes ud. Og blandt dem maa jeg da først nævne Hjemmetydskeriet.
+    Der var jo nemlig en Tid, da Tydskheden her i Landet var en levende Magt, var en bosidden’e Gaardmand, der endog en lang Tid boede i Kongens Gaard og udstrakte <pb n="49" facs="055.jpg"/>derfra sit Herredøm over det hele Folk. Som Gaardmanden i Sognet holdt den til med Tyve og Røvere, thi saaledes har Tydskeren jo altid viist sig mod os, og var i Grunden altid hadet af de Danske, men var dog i uforstyrret Besiddelse af Magten. Saaledes gik det til 1848, da døde Tydskeriet hertillands og blev begravet, men det viste sig snart, at det spøgede endnu og det aldrig mere end i den sidste Krig, thi da var det aabenbart det Spøgelse, der sad og gloede paa dem, som skulde være Førere, saa de listede sig bort fra Danevirke og lod Als stjæle fra sig og forærede Fredericia bort og fik aldrig Mod til at stole paa den Danskhed og Tapperhed, som var i Folket og Hæren.
+    Ja Hjemmetydskeriet spøger endnu og maaskee allermeest paa Taget af Danmarks Huus, blandt de højest stillede, af hvem mange endnu tale med tydsk Tonefald og er tydsk dannede, saa de har grumme svært ved at forstaae, hvad der rører sig i Folket. Hvis Spøgelset endda holdt sig der, var det vel ikke saa farligt, men den tydske Indflydelse spores i alle Samfundets Lag og i alle vore Forhold, allermeest vel i vort Regjeringsvæsen og vort <pb n="50" facs="056.jpg"/>Skolevæsen. Regjeringsvæsenet vil jeg ikke røre ved, jeg kan kun sige, at efter min Mening spøger Tydskheden kjendeligst i det uendelige Skriveri, saa det seer ud for mine Øjne som i et Huus, hvor Hans skal hjælpe Peder og Peder skal hjælpe Kristen, men hvis Kristen ikke var der, saa fik Peder og Hans slet intet at bestille. Men hvad Skolevæsenet angaaer, saa troer jeg nok, at den lærde Skole er meget mere tydsk, end den burde være, og at det endogsaa spøger dygtig i de smaa Almueskoler paa Landet. Ja ogsaa fra Taget af dem gloer det tydske Spøgelse, som man kalder Udenadlæsning, og har ogsaa mellem Landbefolkningen udbredt den Overtro, at hvad man skal lære og kan have Nytte af, det maa være kjedeligt. Den Overtro er hos os udbredt i alle Samfundsklasser, og kommer vistnok deraf, at Tydskerne selv er saa kjedelige, eller i alt Fald altid har været det hos os. Derfor er det Kjedelige kommet til Ære hertillands, hvor man ellers har saa megen Sands for Morskab, og det gjælder om meget af det, som er kjedeligt i Danmark, at det, naar man seer rigtig til, er et tydsk Spøgelse.
+    Men der er et andet Spøgelse, som jeg <pb n="51" facs="057.jpg"/>idag vil henlede Opmærksomheden paa, og som vi nok ikke kan kalde tydsk, skjøndt det, da det var en levende Magt, vel nærmest kom til os fra den Kant, og det er Standsforskjellen. Vi veed, at der i Oldtiden i Norden kun var to Stænder: Bønder og Trælle. Af Bondestanden udviklede sig i Middelalderen Herremændene, hvem Kongen forlenede med Jordegodset, og samtidig med den Stand opkom saa ved Christendommens Indførelse Gejstligheden eller Præstestanden. De to Stænder holdt som oftest sammen og havde Magten; det var dem, der valgte Kongerne, og siden det 12te Aarhundrede havde den egentlige Bondestand ingen Stemme mere i den Sag. Tilsidst opkom Borgerstanden, da Kjøbstæderne dannede sig, men den var ogsaa uden Indflydelse paa Landet i det hele og trivedes kun under Herremændenes og Præsternes Beskyttelse. Ved den lutherske Kirkerensning tabte Gejstligheden sin Magt, saa nu var Adelen ene om den, og Præsterne gik op i Borgerstanden. Endelig ved Enevoldsmagtens Indførelse blev ogsaa Adelen knækket, og saa var Kongen den eneste Magthaver. Han lavede vel en ny Adel af Grever og Baroner, men den havde kun sin Magt af Kongens <pb n="52" facs="058.jpg"/>Naade. Imidlertid var den en Tidlang stor nok, hvad baade Præster og Bønder fik at føle, men altsom Borgerne udviklede sig i Dygtighed, maatte Adelens Iudflydelse tabe sig, og vel gav Frederik den Sjette en Slags Stænderforfatning, men Adskillelsen mellem Stænderne var undergravet, og ved Grundloven af 5te Juni 1849 faldt den heelt bort, saa fra den Tid er der ingen Stænder mere her i Landet.
+    Hvad Standsforskjellen egentlig har at betyde, seer man naturligviis bedst, naar man vender Blikket derhen, hvor den har holdt sig bedre end hos os. Det er saaledes Tilfælde i Sverige, hvor Kongen indtil for faa Aarsiden deelte sin Magt med en Rigsdag, der var valgt af de fire Stænder. Adelen skummede naturligviis Fløden af denne Frihed, saa at hver adelig Familie i Landet kunde sende en Rigsdagsmand til Stokholm, og Bønderne fik naturligviis den tyndeste Mælk, saa der skulde nok et heelt Herreds Bønder til at veje een adelig Familie op, men disse fire Slags Mennesker kunde ikke samles i den samme Sal, de var saa forskjellige, at de ikke kunde dele Luft og Sæder sammen, men havde hver sit Forsamlingssted. De fire Stænder, hvoraf Folket <pb n="53" facs="059.jpg"/>bestod, var ikke Kaster; man kunde stige fra en lavere Stand til en højere, men var det skeet, antog man et nyt Navn. Naar saaledes en Bondedreng, som hed Peder Jønsson, blev Skomagersvend, saa antog han øjeblikkelig et nyt Navn efter eget Valg, og kaldte sig Rosenqvist eller Lilieblad; naar saa hans Søn kom til at studere, saa gik han over i Præstestanden og hed saa Rosén eller Rosander; naar han endelig gjorde Lykke i Verden, saa han blev adlet, maatte han have et nyt Navn, saa blev han til Rosenskøld eller Rosenhjelm. Saadan har det egentlig ogsaa været hos os i tidligere Dage; naar man gik over i en højere Stand, maatte man have nyt Navn, fordi man blev et nyt Slags Mennesker, begyndte et nyt og højere Liv. Derfor sige de Adelige om os Borgere og Bønder, at vi ikke ere fødte, for vi er ikke i deres Øjne komne til det Punkt, da det rette Menneskeliv begynder, vi er ikke rigtig fuldbaarne endnu.
+    Men hos os er der ingen Stænder mere, hos os er der Lighed, og dermed mene vi ikke, at der ikke maa være forskjellige Samfundsklasser, som leve paa forskjellig Viis, eller at der ikke maa være Mennesker, som <pb n="54" facs="060.jpg"/>rage frem og øve større Magt end andre. De gamle Grækere fortalte om en Røver, der havde lavet sig en Jernseng, hvori han lagde dem, som han fangede, og naar de saa var længere end Sengen, hug han en Ende af dem, saa de kunde passe i den, men naar de var kortere, halede han i dem, til de blev lange nok. Den Mand sværmede for Ligheden, han vilde gjøre alle lige store, men vi maa betakke os for at faae den gjennemført paa den Maade. Imidlertid var det saaledes der blev arbejdet for Ligheden i den første franske Omvæltning, hvori man mere og mere slog ind paa den Vej at afhugge alle de Hoveder, der ragede op over de andre, hvad der er meget misligt, da det gaaer ud over de gode Hoveder, som man daarligst kan undvære. Ogsaa hos os har man kunnet spore en Lighedsstræben, der vel ikke var saa blodig, men dog væsentlig gik i samme Retning, idet den sværmede for Middelmaadigheden og vilde kappe de Store og hale i de Smaa, til de alle blev lige lange. Det kan jeg ikke være med til, saa jeg bøjer mig for den Forskjel mellem Store og Smaa, som Gud selv har indført og vi derfor umulig kan ophæve.
+<pb n="55" facs="061.jpg"/>    Men hvori bestaaer da Ligheden. Deri, at der ingen Stænder er mere, at Standsforskjellen er hævet. Deri, at vi alle er fødte, alle er samme Slags Mennesker, alle har samme Ret til at leve og stille Krav til Livet og til at fylde den Plads, som vi due til at fylde; deri, at man ikke behøver at skifte Navn, naar man passer paa en af de større; Navnet Peder Jensen er ligesaa godt, som det, der lugter af Blomster eller skinner af Sølv og Guld; det er kun Manden, der bærer det, som giver det Klang. Og skjøndt der er og maa være forskjellige Samfundsklasser, fordi Arbejdet maa deles og ikke alle due til det samme, saa sige vi: Standsforskjellen er død og skal være det, og hvor den spøger endnu, maa vi see at faae den manet ned og en dygtig Pæl rammet bagefter for at holde den nede. Et saadant Spøgelse er Adelsstoltheden, skjøndt jeg troer, at det hertillands ikke er af de farligste. Adelskab er jo nu hos os ikke andet end en Navneværdi, og at der er nogen, som sætte Priis paa den, gjør jo ikke os andre noget, da vi ikke er nødte til at sætte Priis paa den. Jeg bekjender, at jeg slet ikke forstaaer, hvorfor det er saa rart at være adelig, men kan det for<pb n="56" facs="062.jpg"/>nøje nogen, saa for mig gjerne. Sige de, at jeg ikke er født, saa trøster jeg mig ved, at det ikke er dem, der skal udstede Fødselsattester; har de Lov til at sætte en Krone eller Hjelm i deres Segl, saa kan jeg i mit sætte en Hat eller Kasket, hvad i mine Tanker er ligesaa godt; maa de sætte Topper paa Hovedet af deres Heste, saa kan jeg binde Baand i Halen af mine, om jeg har Lyst til det, og det kan vel være ligesaa glædeligt baade for mig og for Hestene. Derimod er der et andet Spøgelse, som hertillands synes mig farligere, og det er det gejstlige. Gejstligheden er død i Danmark for over trehundrede Aar siden, men den bliver ved at spøge, og om vore Præster, som Sagnet melder, tidligere har forstaaet at mane Spøgelser ned, dette Spøgelse har de ikke haft Held til at faae Bugt med. Endnu raabes der bestandig paa Gejstlighedens Ret, som om der hertillands var en Stand, der havde særegne Rettigheder til at være Folkets og den Enkeltes Formynder i kirkelige Sager, ja som om Præsterne egentlig var en egen Slags Mennesker, der ikke som alle de andre maatte nøjes med den Indflydelse, som deres personlige Dyg<pb n="57" facs="063.jpg"/>tighed og særlige Embedsstilling gav dem i deres Kreds, men var et helligt Broderskab, der raadede for, hvormeget Lys og Luft der maatte lukkes ind i Folkekirken. Men det er et Spøgelse fra Middelalderen, der forsvinder, naar man har tabt Troen paa det, og det var ønskeligt baade for Folket og dets Kirke, om det snart blev saa forsvarlig manet ned, at det aldrig spøgede mere.
+    Vi har hørt, at baade Adel og Gejstlighed spøge efter deres Død, og maatte saa spørge: Gjælder det samme da ikke om de to andre Stænder, som ogsaa nu er døde? er der ikke ogsaa Borger- og Bondespøgelser? Hertil maa vi svare: Jo naturligviis, og det er maaskee de værste. Borger- og Bondestand har jo ikke hos os været Magthavere, det var de ufri Stænder, saa Spøgelset af dem er Trællespøgelser. Naar saaledes Kjøbstadfolk saa grumme gjerne vil i Lag med hvad der er fiint og fornemt, hvad der smager af det adelige, naar de kan blive saa kisteglade over at faae en Smule Rang, saa er det kun, fordi de troe paa Standsforskjellen endnu, uagtet den er hævet, saa er det, fordi de ikke føle sig ligesaa fri og selvstændige og myndige <pb n="58" facs="064.jpg"/>som de fornemme, skjøndt de i Virkeligheden er det, saa er det, fordi deres gamle Ufrihed, som er slaaet ihjel, endnu gaaer og spøger iblandt dem. Og saaledes ogsaa med den Samfundsklasse, vi kalde Bønderne. Bondetrældommen fik sit Banesaar af Frederik den Sjette, da han var Kronprinds, og var der dengang noget Liv i den endnu, saa at Bønderne en Tidlang beholdt Byrder, som vi andre var fri for, og manglede Rettigheder, som vi havde, nu er vi alle lige baade i Byrder og Retligheder, saa det er sikkert, at den er slaaet ihjel tilgavns. Men den spøger endnu. Ikke blot i Kjøbstæderne og Kjøbenhavn, saa der er mange, som endnu see ned paa Bønderne, som om de var en ringere Slags Mennesker, men ogsaa paa Landet, saa der er en stor Deel af Bønderne, som endnu see ned paa sig selv. Jeg saae for mange Aar siden en Komedie hvori der optraadte en Bonde, og han havde det Mundheld: „Ja Bonden, han er nu dum.“ Og det er der mange af Bønderne, som i Grunden istemme, saa de tænke: hvad kommer det vel Bonden ved, hvorledes det gaaer med det hele Land, hvad forstaaer han sig paa det? nej det er han altfor <pb n="59" facs="065.jpg"/>dum til, det maa de Højlærde om. Ja de tænker: en Bonde skal lære at dyrke sin Jord og røgte sit Kvæg, men alt andet er for højt for ham. Det er Træhesten og Ladefogdens Pidsk, det er Bondetrældommen, der spøger endnu, efterat den er død og begravet; de krumme endnu Ryg under Aaget, efterat det er borttaget, saa de ikke faae Mod til at indtage den Plads i Folket, der tilkommer dem. Det kan de naturligviis ikke, før de i Dygtighed kan staae ved Siden af Kjøbstadfolkene, men den Dygtighed maa de som Frimænd skaffe sig og ikke lade sig skræmme af det Spøgelse, der vil indbilde dem, at de har ringere Gaver eller ringere Ret eller ringere Kald end nogen af de andre Samfundsklasser i Danmark.
+    Jeg kunde vel nok nævne andre Spøgelser, som tage Modet fra det danske Folk og tære paa dets Kraft, skjøndt det er kun blodløse Skygger, men for idag vil jeg blive staaende ved dem, jeg har nævnet, og spørge, hvorledes vi skal faae Bugt med dem. Det var Præsten i Farum, der var saa flink til at mane det Spøgelse, jeg fortalte om, og skjøndt vi ikke forstaae den sorte Kunst som han, <pb n="60" facs="066.jpg"/>saa kunde vi Præster dog maaskee gjøre nogen Nytte i en lille Kreds mod den Slags Spøgelser, jeg har nævnet. Vort Vaaben er ikke den sorte Kunst, men den hvide, det er Lysets Kunst, det er Oplysning. Lys kan Spøgelser nemlig ikke lide, det er sikkert nok, de trives kun i Mulmet. Vi kan, hvor der er aabne Øren, med et Ord jage Spøgelset bort, idet det øjeblikkelig flyer for enhver enkelt Lysstraale, der falder paa det, men betage det Evnen til at komme igjen, det kan kun en heel, sund, dansk Oplysning, der bliver Folkets Ejendom, saa det er Pælen, som skal rammes ned efter det.
+    Efter Sagnet var det jo imidlertid ikke nok med den Pæl, thi det var først Konen, der kom bag efter med sin Stoppenaal, som slog Hovedet paa Sømmet. Og det forstaaer jeg saaledes, at vi dog ingen Bugt faae med alt det fæle Spøgeri, før vi faae Kvinderne med ligesaa godt som Mændene. Huuslivet er og bliver dog Vuggen for alle andre menneskelige Forhold paa Jorden, og ethvert nyt Lys som ikke falder gjennem Hjemmets Ruder, ethvert Fremskridt af Folket, hvori Kvinden ikke tager Deel, det bliver kun et mislykket Forsøg, det <pb n="61" facs="067.jpg"/>visner snart som en rodløs Blomst. Selv om en Mand, der faaer Spøgelsefrygten rystet af sig og altsaa ikke blot kaldes fri, men bliver fri, selv om han bliver det i den Grad, at han er meget stærkere, end vi Mænd pleje at være, til at modstaae Paavirkningen af en Hustru, der endnu troer paa disse Spøgelser, saa raader hun dog nærmest for Børnene, og hvad han har manet ned, vil saa komme opigjen i den næste Slægt. Vi Mænd maa ganske vist gjøre det grove Arbejde og ramme Pælen ned, men det forslaaer ikke, naar Kvinden ikke kommer bagefter med det fine, kommer med sin Naal, og først naar det skeer, siger Spøgelset: hvorfor gjorde du det, din Hex! ellers skulde jeg være kommen hjem før du.
+    Der er nemlig i en vis Forstand Stænder endnu, men de er ikke fra Middelalderen, de er fra Verdens Skabelse, og det er de to: Mænd og Kvinder. Alle fribaarne Mænd skal i sig forene alle de fire gamle Stænder: de skal være Bønder, det vil sige: Boende, have Huus og Hjem, de skal være Borgere, saa de føle sig knyttede til og ansvarlige for det store Samfund, som vi kalde Fædrelandet, de skal være Gejstlige, det vil sige: aandelige, <pb n="62" facs="068.jpg"/>thi det er fortrinsviis Mændenes Kald at være Aandens Redskaber, Lysets Bærere her paa Jorden; de skal endelig være Adelige, Herrestanden, ligesom Kvinderne er Fruestanden. Den Standsforskjel mellem Herrestand og Fruestand, mellem de aandelige Mænd og de hjertelige Kvinder vil jeg slet ikke have hævet, og naar man taler andetsteds om selvstændige Borgerrettigheder for Kvinderne, saa er det min Mening, at de to Stænder, ogsaa som det nu er, dele Magten med hinanden, saa det er vanskeligt at sige, hvem af dem der har den største.
+</prose>
+</body>
+</text>
+
+<text id="nielsenanton2026111701" author="nielsenanton">
+<head>
+  <title>Folke-Højskolen</title>
+  <firstline>Jeg gik mig ud paa Marken øde</firstline>
+  <source pages="63-65" facsimile-pages="70-72"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg gik mig ud paa Marken øde,
+Af Kuld var alle de Smaablommer døde,
+Jeg gik mig i Skoven blandt Stammer graa,
+Men aldrig et Blad jeg skued’ derpaa.
+    Mon aldrig det dages?
+
+Ei Glimt jeg saa af Skovens Fugle,
+I sorten Jord de Dyr sig monne skjule;
+I Hjemmet vist Bonden, han sad i Krog
+Og tænkte: Gid Middag var kommet dog!
+    Mon aldrig det dages?
+
+Mit Hjerte blev saa dødt og stille,
+Min Hu den blev saa mod, min Kraft saa lille,
+Da faldt i mit Øre et Fugleslag,
+Det vækkede mig som Tordenens Brag.
+    Mon aldrig det dages?
+
+Og tænk, saa fandt jeg midt paa Hede
+En lille blød og yndig Fuglerede,
+<pb n="64" facs="070.jpg"/>Med levende Unger, saa vævre smaa
+Med Sangfuglenæb, med Fjedrene graa.
+    Mon aldrig det dages?
+
+De Gamle sang med liflig Stemme,
+At Ungerne ret skulde Tonen nemme.
+De sang om den Vaar. sem ivente var,
+Om Blomst og om Blad paa Grenen saa bar.
+    Mon aldrig det dages?
+
+De sang og om den lille Rede:
+Ei andre Fugle skulde der sig brede;
+Langt heller de skulde i Reden dø
+End leve med Skam paa Land og Ø.
+    Mon aldrig det dages?
+
+„Og kommer Ørn, jert Hus at hærge,
+Staa sammen da det lille Hjem at værge;
+Byd Fjenden jert Bryst og jer Næb og Klo,
+Saa skal han vel Moder lade i Ro.“
+    Mon aldrig det dages?
+
+„Men kommer Gøg med venlig Stemme
+Og lader ganske flot som han var hjemme,
+Saa tro ham dog ei, men kast overbord
+Ham selv med hans Æg og hans halvtydske Ord“.
+    Mon aldrig det dages?
+
+<pb n="65" facs="071.jpg"/>Og Ungerne, de kviddred efter,
+Med fulde Bryst, af alle deres Kræfter,
+Om Liv og om Daad, som skal ses engang
+Med Solskin, med Frugt i grønneste Vang.
+    Ret nu vil det dages!
+
+Mit Sind blev glad, min Tanke lettet,
+Det havde de Smaafugle straks udrettet.
+Jeg sagde: Lær rigtig jer Moders Sang
+Og syng den saa lydt i Dannemarks Vang,
+    Saa troer jeg det dages!
+
+<nonum><right><b><i>Anton Nielsen.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="hansenm2026111701" author="hansenm">
+<head>
+  <suptitle>Til</suptitle>
+  <title>Eleverne paa Højskolen i Vallekilde</title>
+  <subtitle>(Ved Pigeskolens Slutning 1867.)</subtitle>
+  <firstline>Jeg gik mig gjennem Skov og Vænge</firstline>
+  <source pages="66-68" facsimile-pages="73-75"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg gik mig gjennem Skov og Vænge
+Og over Kløvermark og Blomsterenge,
+Jeg hørte Smaafuglene sang i Kvæld,
+Og drak af det friske kjølige Væld,
+    Hvor Bøgen den løves.
+
+Og som jeg over Marken vanker
+Og gaaer i mine egne dybe Tanker,
+Da mødte mig En, som var ret min Ven,
+Han vinked mig sagte efter sig hen,
+    Hvor Bøgen den løves.
+
+Han sagde: Kom, jeg véd en Rede
+Med Nattergale-Unger smaa hernede.
+Jeg studsed, men fulgte dog med min Ven,
+Og saa gik vi tyst og stille derhen,
+    Hvor Bøgen den løves.
+
+<pb n="67" facs="073.jpg"/>Jeg vidste knap, om det var Fugle,
+Jeg mente næsten det var Blomster gule.
+Men saa kom de Gamle til Reden hjem,
+Og saa stak de Unge Næbbene frem,
+    Hvor Bøgen den løves.
+
+Og hør, I Fugleunger spæde,
+Nu kan I vorde Danmarks Folk til Glæde,
+For nu kan I synge i Grenenes Ly
+Om Aftenen sént og tidligt i Gry.
+    Hvor Bøgen den løves.
+
+Saa syng om alle kjære Minder
+Og lad os høre, der er danske Kvinder,
+Det mindste Pip—Pip kan vi godt forstaa,
+Og saa maa I frit med Vingerne slaa,
+    Hvor Bøgen den løves.
+
+Og syng om Danmarks Nød og Smerte,
+Og syng os Haab og Trøst ind i vort Hjerte,
+Og syng om en Fremtid saa lys og skjøn,
+Og syng om den Kraft, der spirer iløn,
+    Hvor Bøgen den løves.
+
+Men husk dog paa, der er saa Mange,
+Der vil saa gjerne de smaa Fugle fange,
+<pb n="68" facs="074.jpg"/>De bruge dem kun til at lege med,
+Men gjøre dem dog saa megen Fortræd,
+    Hvor Bøgen den løves.
+
+Og vogt jer vel for Fuglesnarer,
+For Høg og Glente og for andre Farer,
+Men flyv mellem Kirken og Lunden grøn,
+Hvor Danfolket boer i Dalen saa skjøn,
+    Hvor Bøgen den løves.
+
+<nonum><right><b><i>Mads Hansen.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="brandtcj2026111703" author="brandtcj" ignore-tests="mixed-aa-ring">
+<head>
+  <title>Et Foredrag om „Grundtvigianisme,“</title>
+  <subtitle>af <w>C. J. Brandt.</w></subtitle>
+  <toctitle>Et Foredrag om „Grundtvigianisme“</toctitle>
+  <indextitle>Et Foredrag om „Grundtvigianisme“</indextitle>
+  <linktitle>Et Foredrag om „Grundtvigianisme“</linktitle>
+  <firstline>Naturligvis tør jeg ikke tænke på, i en</firstline>
+  <source pages="69-93" facsimile-pages="76-100"/>
+  <keywords>grundtvig,oehlenschlaeger</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Naturligvis tør jeg ikke tænke på, i en lille Timestid endog kun tilnærmelsesvis at udtømme et så rigt Æmne som det er, tilfredsstillende at besvare Spørsmålet, hvad er „Grundtvigianisme“? men jeg er overbevist om, at selv nogle få Vink til en ret Forståelse vil være velkomne, da det er kendeligt, at de er bleven fuldkommen skuffede i deres Forventning, der engang vilde overlade den Sag „til stille Selvoverlevelse,“ og at den Bevægelse, man har givet dette Navn, med hvert År svulmer op som en Flod under sin Vandring, så der er snart ikke den Side eller Del af det åndelige eller borgerlige Liv, der ikke bliver berørt og påvirket deraf, og man kan ikke komme i fine Sale eller i fattige Hytter, ikke gå ombord på Dampskibe eller stige ind i en Jernvejs-Vogn, uden at møde det Spørsmål, hvad Grundtvigianisme er, eller <pb n="70" facs="076.jpg"/>idetmindste komme i Samtale om, hvordan Grundtvigianerne betragter og behandler den eller den Sag.
+    Først vil jeg da minde om, at det er en falsk Beskyldning, når Modstanderne, som tillægger os dette Navn, siger at vi selv har valgt det, og gør os det til en Brøde, at vi kalder os efter et Menneske. Tvertimod er det gået med Navnet „Grundtvigianisme,“ som med de fleste Navne paa „isme,“ at de oprindelig er Øgenavne, Fjenderne har opfundet. Man har dermed villet stemple noget skævt og forkasteligt; men har Sagen været god og er trængt igennem, så er Navnet bleven godkendt af dens Venner, ialfald som en kort Betegnelse af, hvad der ellers krævede en udførligere Beskrivelse, så Øgenavnet foreløbig kunde tage Sigte og sige hvorom Talen var. Dette har især været Tilfældet, hvor Benævnelsen var dannet efter en fremragende Mands Navn, hvormed Modstanderne lettest kunde lægge deres Uvillie, Vennerne lettest deres Kærlighed for Dagen. Man behøver som Exempel kun at tænke på Øgenavnet Lutheraner og det tilsvarende Lutheranisme eller Lutherdom.
+    Øgenavnet „Grundtvigianer“ og „Grundt<pb n="71" facs="077.jpg"/>vigianisme“ er snart gammelt hertillands. Pavels anvender det allerede i sin Dagbog (1812), og J. Paludan-Müller skriver i et Brev til Sibbern 1817 (I. S. 72-73): „Hvad jeg misbilliger hos hint Parti, som udbreder sig mere og mere, og som jeg i Mangel af et mere betegnende kort Udtryk, kalder „Grundtvigianismen“ efter dets mest højrøstede og zelotiske Talsmand i vort Fædreland, er den åbenbare Bestræbelse, at trykke os alle uden Undtagelse i Henseende til Religionsbegreberne 300 År tilbage i Tiden.“ Dermed begynder altså Grundtvigianismens Historie. Derom var Datidens Ordførere enige, at den Retning stilede på at trykke Tiden tilbage til Luthers „Religionsbegreber,“ og Grundtvig indrømmede det for 50 År siden, at han vilde, om han kunde, mane Luthers Tro frem igen. Men, vilde man nutildags møde med den Beskrivelse af Grundtvigianisme, da blev jo blandt andre Norges theologiske Fakultet Grundtvigianere af reneste Vand. Jeg tænker, det vilde korse sig for en sådan Beskyldning og skynde sig at vende Beskrivelsen om, så Grundtvigianerne blev netop dem, der ikke vilde lade sig trykke 3 Århundreder tilbage, ja det er dem der ikke <pb n="72" facs="078.jpg"/>vil nøjes med den rene Lutherdom. Før var de nemlig altfor lutheranske, nu er de ikke nær lutheranske nok. Og det er ikke blot Prof. Caspari og hans norske Venner der finder det, også her i Danmark er det i visse Kredse bleven Mode, at dele Folk i Lutheraner og Grundtvigianer; jeg hørte nylig to Bønder fra Holbæksegnen gøre denne Forskel i Anledning af Valgene til Rigsdagen, og da Røret var om Valgmenigheder, véd jeg Skolelærere, der havde fået det Hverv at samle Underskrifter imod dem, og som tog Sagen paa den Måde, at de gik fra Dør til Dør i Sognet og spurte Beboerne: vil I være Lutheraner eller Grundtvigianer? I første Tilfælde maatte de underskrive Adressen, og det lykkedes jo også, at få slået fast, at idetmindste 4% af Befolkningen vilde blive ved at være „Lutheranere“. Dog bør ingen Statistiker derfor endnu regne de 96% for Grundtvigianere.
+    Dette er dog ikke den eneste Modsigelse man træffer på, når man vil høre sig for, hvad Grundtvigianisme er for noget. Man vil kunne få at høre, at dermed betegnes denne Stædighed, der vil blive ved det gamle, denne halsstarrige Hængen ved Bogstaver, der ikke vil <pb n="73" facs="079.jpg"/>tillade nogen tidsvarende Forandring, om det så bare er at få indskudt et lille „e“, — og så det helt modsatte: nej det er denne løbske Lyst til at omstyrte det gamle, det bestående, denne urolige Higen efter at få noget nyt, at frembringe Røre osv. Grundtvigianismen skal på engang være stokkonservativ og bundradikal, den skildres paa engang som reaktionær og revolutionær. Snart hører man, at Grundtvigianerne er udmærket afrettede, de er ordnede som på en Snor, så når der gives Signal, gør hele Flokken Bevægelsen som på Tælling; når man har talt med en af dem, kender man alles Mening, for de mener ens allesammen, og har derfor en af dem sagt noget, man ikke synes om, skal de have Skam allesammen derfor, — men atter siges der det stikmodsatte: det er kun Individernes, kun de Enkeltes Ret, ikke Samfundet, som disse Mennesker har Øje for, og deraf denne grændseløse Forvirring, hver vil følge sit eget Hoved; deres Utopia er at stifte „et Monarki af Suveræner,“ et Kongedømme, hvori hver Undersåt selv er Konge. Ja man kan blive ganske ør i Hovedet, ved at få alle Modstandernes Beskrivelser og Beskyldninger ført op på et Bret; Grundtvigian<pb n="74" facs="080.jpg"/>ismen må være en ganske mærkværdig Ting, den synes at have løst den vanskelige Opgave, som vore Fædre allerede, efter Peder Lolles Vidnesbyrd, anså for umulig at løse, den at søbe og blæse paa engang. Ja vist er Grundtvigianismen en meget mærkværdig Ting. Enten man vil eller ikke, bliver man nødt til at lægge Mærke til den, den lader dig ikke tie til Døde, og det var ret treffende hvad en Anmelder af Dr. Martensens Stridsskrift mod Grundtvigianismen i sin Tid skrev i „Fædrelandet“, at selv når Modstanderne syntes at have gendrevet alle Grundtvigs Bevisgrunde, — saa „stod han der endda.“
+    Sagen er den, at hvad denne Mand gennem to Menneskealdere har kæmpet for og hvad man har opkaldt efter ham, som den ypperste Herold, er ikke blot et eller flere underholdende Spørsmaal, som de Lærde kan drøfte med Beviser for og imod, men det er en <w>Livsretning</w>, en åndelig Vækkelse, der trods al Modstand gør sig gældende, og gennem Modstanden klares og fastnes. Netop de mangfoldige og yderst forskellige Modstandere er kun Vidnesbyrd om, at det ikke er et eller flere Enkelt-Spørsmål, der er komne under Forhandling, men det er <pb n="75" facs="081.jpg"/>en Bevægelse der kommer frem i alle åndelige Retninger, og der er jo allerede ikke nogen Opgave af Betydning i Kirke, Skole eller Stat, uden at man, og det ikke uden Føje, tror at spore Grundtvigianismen, så inden man ser sig for, er det den, der deler Partierne, afmåler Valpladsen og udgør selv Stridens Kerne.
+    Provst Ingier i Norge skrev for et Par År siden en god lille Bog om „den kirkelige Anskuelse,“ og ytrede blandt andet, at dersom man ved Grundtvigianisme vil betegne alt hvad Grundtvig har levet og virket for, udgør det „en Mangfoldighed af Retninger.“ Dette er forsåvidt rigtigt, som han har omfattet alle åndelige Spørsmål, der er bleven rejste i hans lange Levetid, med varm Deltagelse, sædvanlig har udtalt sig om dem, og som oftest udtalt en fra Mængdens afvigende Mening, som det da gerne er gået således med, at skønt få eller ingen fra først af delte den, kom efterhånden flere og flere til at se Sagen på samme Måde. Men Ingiers Udtryk er iøvrigt ikke ganske heldigt; thi når Udviklingen var nået tilstrækkelig langt frem, og Betragteren stillet i tilbørlig Afstand, for at overse den i sin Helhed, har det netop været kendeligt, at <pb n="76" facs="082.jpg"/>hvad der end har været Tale om, så har den ny, den grundtvigske Betragtningsmaade og de deraf udspringende Bestræbelser gået i en og samme Retning, og dette har da været Grunden til, at man har kunnet give Retningen Navn efter dens dygtigste og varmeste Talsmand. Men mere end <w>Retningen</w> har heller ikke været den samme, thi ellers var ikke alene Opgaverne forskellige til de forskellige Tider, men selv Måden, hvorpå de stræbtes løste, var tidt forskellig, således at på den ene Side, når det som Grundtvig havde kæmpet for, havde gjort sig gældende, ophørte man med at kalde det Grundtvigianisme, og regnede det med til det fælles og almindelige; på den anden Side stillede han da nye Opgaver, belyste dem, stred for dem, og så blev disse ny Æmner regnet til „Grundtvigianisme.“ Deraf det Særsyn, at hvad der for et halvt Århundrede siden blev kaldt med dette Navn, det vil alle nu smile ad, at vore Fædre kunde give et sådant Partinavn, da vi jo alle er enige om den Sag. Grundtvigianismens nuværende kirkelige og folkelige Modstandere vilde for 50 Aar siden alle have fået Navn af Mystikere, Zeloter, Grundtvigianere, dersom de <pb n="77" facs="083.jpg"/>dengang havde vedkendt sig, hvad de nu højtidelig opfører som Værn mod Grundtvigianismen. Ja det er gået således, at mangen en, istedenfor at takke for hvad han på første eller anden Hånd har lært af Grundtvig, føler sig kaldet til dobbelt ivrig at bekæmpe, hvad han endnu ikke har lært og ikke forstået. En sådan Udviklings Gang kan lignes ved en Trappe med Hvilesteder; et Hold af Vandrere har kun Kræfter til at nå det første af disse, og tror naturligvis, at de der mægter at gå højere er vildfarende; der afsættes så et Hold på hvert Hvilested, og de tilbageblivende finder altid, det er Grundtvigianisme, at gå længere end de har kunnet vinde med. Dette Særsyn viser sig slående i vore sidste 50 Års Historie; at undersøge Grunden dertil, vilde her føre os for langt af Vejen, men Kendsgerningen er så iøjnefaldende, at enhver sikkert véd Exempler at stadfæste den med. Der er neppe nogen af den nulevende Slægt i Danmark, der jo er paavirket af Grundtvig, hvad der tidt udtrykkes med, at man føler, man skylder Grundtvig det eller det; men det vil kun sige, man har deltaget i den åndelige Udvikling, der har fundet Sted, er <pb n="78" facs="084.jpg"/>altså bleven påvirket af den Ånd, hvis ypperste Tolk og Talsmand Grundtvig gennem to Menneskealdere har været.
+    Grundtvigianismen er ikke en ny Lærebygning, ikke et nyt System, så mån skulde kunne samle dens Læresætninger, og sige: naar man antager disse, er man Grundtvigianer. Den er meget mere, den er en Livs-Vækkelse, og skønt Modstanderne har dertil knyttet en enkelt Mands Navn, er det klart nok, at denne Mand har selv ikke fra først af haft Klarhed over, hvor det bar hen, og hvad der vilde komme. Han har ikke siddet som en kløgtig Edderkop og beregnet, hvor Traadene skulde knyttes og hvordan de skulde slynges, men han er meget mere <w>bleven brugt</w> i en Højeres Tjeneste, og har derfor undertiden maatte tilstaa, at havde han vidst, hvad han nu vidste, vilde han have gjort det anderledes. Det kaldte de Kloge, at han tog Fejl, og det gjorde han måske, men Ånden tog ikke Fejl, og jeg tænker, det var godt Grundtvig ikke vidste mere, for at han kunde komme til at gøre det, som det skulde være. Når man derfor har bebrejdet Grundtvigianismen og har deri villet se et Tegn paa dens Van<pb n="79" facs="085.jpg"/>magt, at den ikke havde sit System færdigt, da røber det kun, at man har undervurderet dens Betydning, og stillet den jævnsides et eller andet kløgtigt Hoveds Påfund, der har henrykket eller forrykket andre Hoveder en kort Tid, indtil der blev et nyt Korthus opført, der bragte det ældre i Glemsel. Men fordi Grundtvigianismen ikke er en Tankebygning, der lod sig udregne, er den dog alt bleven så gammel, at den har fået Begyndelsen af sin Historie, og Grundtankerne, der har frembragt denne Bevægelse, må kunne lade sig udpege. Thi har Filosoferne deres Tanker, så har Livet sikkerlig også sine, og er de førstes Tanker gerne Hjernespind, der tidt kan spille af Vittighed, så er dettes Tanker Hjertetråde, som har deres eget liflige Farveskær, helst når Tåreduggen endnu hefter ved dem.
+    Men det kan jo synes vanskeligt nok med Bestemthed at pege på disse Grundtanker, og ligesom finde Enheden i Mangfoldigheden; thi ikke mindre, når man ser til Grundtvigs rige Virksomhed gennem hans lange Levnedsløb, end når man hører hvad der føres frem eller vises tilbage som Grundtvigianisme, kan man være forlegen for, hvor man skal begynde, og <pb n="80" facs="086.jpg"/>hvor man skal få en Traad, der kan føre gennem al denne Mangfoldighed. Dog kan man ikke være i Tvivl om, til hvilken Side man skal vende sig, og jeg vil trøstig lade alt det sidste foreløbig ligge, og vende mig til den første, hvor det er lettest at finde Sammenhængen. Her møder egenlig kun én Vanskelighed, som igen ikke såmeget har sin Grund hos Manden selv, som hos hans Venner, idet man vil træffe både Folk, der føler sig tiltalte af Grundtvigs kristelige Vidnesbyrd, og derimod ikke tiltalte, men endog frastødte af hans folkelige Betragtning, og atter andre, hvem denne er forståelig og tiltrækkende, men som lader hans kristelige og kirkelige Virksomhed være upåagtet, ja hvem denne egenlig er en besværlig Tilgift, de helst ville kaste Slør over. Er Grundtvig da en sådan Dobbelthed? Er Præsten Grundtvig og Danskeren Grundtvig to forskellige Herolder, så han har haft én Røst paa Prædikestolen, en anden som folkelig Taler og Skribent? Med andre Ord, er hans kristelige og hans folkelige Betragtning bårne af forskellige Grundtanker, eller kan disse udtales under ét? Det sidste er min Overbevisning, og jeg vil forsøge at gøre det så <pb n="81" facs="087.jpg"/>kort og klart som jeg formår. Jeg tror hele Grundtvigianismens Katekismus lader sig beskrive i tre små Paragrafer:
+      1. <w>Ånd</w> er en Magt.
+      2. <w>Ånd</w> åbenbarer sig i <w>Ordet</w>.
+      3. <w>Ånd</w> virker kun i <w>Frihed</w>.
+    Det er ganske almindelige Sætninger, som, hvis man vil nøjes med at tage dem løselig, sagtens mange vilde indrømme, der vilde grue ved at kaldes Grundtvigianere, og fortjente da heller ikke at bære Hædersnavnet. Det er langtfra at være nogen ny Visdom, men Grundtvigianismen er heller ikke noget nyt. Som Ånden i sit Væsen altid er sig selv lig, så ligner hans Åbenbarelser, almindelig betragtede, det vil sige, sete på Afstand, altid hverandre. Derfor er det i Grunden altid de samme evige Sandheder, der atter gør sig gældende ved hver ny Ånds-Vækkelse. Men såvist som der finder en Udvikling Sted gennem Tidernes Løb, så er Sandheden vistnok i sin Helhed tilstede hver Gang, og det er kun Modtagernes og ikke Giverens Skyld, at den hverken trænger igennem til alle Sider eller på noget Sted i al sin Kraft, så der kræves et nyt Opsving, når den trætte Slægt har hvilet ud og er istand til at gøre <pb n="82" facs="088.jpg"/>det næste Skridt. Og da er det naturligvis en ny Side af Sandheden der så træder mest i Forgrunden og skal læres ved Tilegnelsen, medens det der synes det samme som sidst, ikke er Gentagelse, men dybere Forståelse og rigere Anvendelse. Deraf kommer da blandt andet denne løjerlige Dobbelthed i Angrebene på Grundtvigianismen, at man f. Ex. i dens Forhold til den lutherske Opvækkelse, både kunde beskylde den for at være en Efterlignelse af Reformationen, så den vilde trykke Tiden de tre Århundreder tilbage, og for at den ikke vilde nøjes med Reformationen, men gå ud over den. Der er noget sandt, som har foranlediget denne dobbelte Beskyldning, så medens Grundtvig åbent erklærede, at „den lutherske Reformation skal fortsættes“, svarede han tidlig Modstanderne:
+</prose>
+<poetry font-size="small">
+Kald mig med Spot kun Lutherlil,
+Til Navnet vil jeg svare.
+</poetry>
+<prose>
+Og han var i sin Alderdom så vis i sin Sag, at han på et af de nordiske Kirkemøder udbrød: „ja gid han stod her, den Guds Mand Morten Luther, vi to skulde nok blive enige!“
+    Derfor gør mine tre korte Sætninger slet ikke Krav på at sige noget nyt, men tages de <pb n="83" facs="089.jpg"/>nøje, tror jeg dog de både rammer netop Grundtankerne såvel i N. F. S. Grundtvigs hele lange og indholdsrige Virksomhed, som i hele den åndelige Opvækkelse og Bevægelse, man har givet Navn efter ham, og er derhos rummelige nok til at kunne omspænde både den kristlige og den folkelige Side af Sagen.
+    Til udførlig at påvise dette, behøves sikkerlig længere Tid end der iaften står til min Raadighed, og måske større Tålmodighed end jeg har Ret til at forudsætte hos mine ærede Tilhørere. Men jeg tør dog nok udbede mig deres venlige Opmærksomhed i nogle Øjeblikke, for ligesom indledningsvis at pege på, hvorledes disse tre Grundtoner klinger igen, først den ene, så den anden, så den tredie i de forskellige Afsnit af Grundtvigs eget Liv, og den Virksomhed, han særlig i dem har udfoldet. Det er vistnok ingenlunde min Mening, at de kom frem som et mekanisk 1—2—3, så at han i en given Tid indskærpede den ene, til en anden Tid den anden af disse Sætninger, nej jeg har allerede vedkendt mig den Overbevisning, at hvem der i Sandhed arbejder i Åndens Tjeneste, han har også Sandheden i sin Helhed, men det udelukker ikke, at han <pb n="84" facs="090.jpg"/>til en Tid, og da navnlig i Begyndelsen af sin egen Udvikling måske kun har Øje for en enkelt Side, eller ialfald skarpest og bedst Øje for den, medens den så, under hans egen Væxt, stadig udfolder sig mere for ham.
+    Og således står det nu for mig, at deler man Grundtvigs omtrent 66årige Virksomhed i tre Afdelinger, så hver omspænder lidt over 20 År, så vil man finde, at i den første Treding, hvor Vendepunktet vist må sættes med hans Digt „Nytårsmorgen“ (1824) kæmper han for, at få en åndløs Tid til at fatte, både i kristelig og folkelig Henseende, at „Ånd“ er noget virkeligt, og ikke noget tænkt, ikke noget vi Mennesker opfinder og tillægger dette Navn, men noget, eller rettere nogen, der har Tilværelse udenfor os, og ikke alene er virkelig, men er virksom, så han bruger os, istedenfor at vi skulle tilvejebringe ham, med ét Ord, at Ånd er en <w>Magt</w>. Det er ikke for Deres Fornøjelses Skyld, men for at forøge Deres Kundskaber, hvis De fattes dem, jeg vil råde mine ærede Tilhørere til at læse f. Ex. en eller to selv af de bedre Pindse-Prædikener fra Tiden 1803—23, og jeg turde næsten udsætte Præmier for hvert Spor af Ånd der vil kunne op<pb n="85" facs="091.jpg"/>dages deri. Allerede Navnet er bleven sjældent, men Virkeligheden så godt som aldeles forsvunden. Læs så en Pindseprædiken af Grundtvig af hans bibelske Prædikener 1816, så skal De fornemme, der er en ung Prædikant, som véd hvad Ånd er og gør sit Bedste, for at give sine Tilhørere Indtrykket deraf. Og endnu tidligere, før han selv var greben af den Helligånd, og kunde aflægge Vidnesbyrd om hans Virkelighed og Magt, havde han følt sig greben af Nordens Ånd, og hans Tale og Sang været stilet på, efter Øhlenschlægers Udtryk, „at indgyde Nutid Oldtids Ånd“. I sin Mythologi (1808), i sine Digtninger, f. Ex. Optrin af Nordens Kæmpeliv, i sine talrige Stridsskrifter fra denne hans Ungdomstid stod han altid som en Åndens Kæmpe imod Materialisme og Naturalisme, imod Åndløshed i sine mangehånde Skikkelser. Hans Vidnesbyrd som Præst lød om, at den Helligånd var en personlig Livskraft, der véd af sig selv at sige, en Stormagt, som havde været over de troende Fædre, havde været over M. Luther og var nu over ham og alle troende Kristne, i hvem han begynder og fuldbyrder den gode Gerning. Hans Vidnesbyrd som Skjald lød om, at Nord<pb n="86" facs="092.jpg"/>ens Ånd var den Magt, der havde drevet Forfædrene til Dåd, og skabt deres herlige Digtning. Og det var hans Opgave, under Bøn og Kampe, at vække disse Ånder, eller rettere at vække sine Landsmænd, at vække Nordens Folk af den åndløse Dvale, så de blev atter lydhøre for Åndens Tale og villige til hans Gerning.
+    Ligesom Grundtvig i den Helligånds Tjeneste havde gennempløjet den hellige Skrift, som en tro „Lutheraner“ ikke fri for at tænke, han kunde læse Ånden op af den, så gennempløjede han i Folkeåndens Tjeneste vore boglige Skatte fra Oldtid og Middelalder, og tænkte med disse måtte Folkets Ånd kunne manes op. Men det var under det Kæmpearbejde at fordanske Bjovulfs Drape, Snorres Saga og Saxes pyntelige Latin, at det slog ham selv, det var som en Vandring han gjorde i Åndens Gravkamre, og han tilstod siden, han følte Døds-Kulden dernede. I samme pinlige Stilling som Kristentroens Forsvarere længe havde været, theologisk-lærd at måtte forsvare med Skriftklogskab, hvad dog også de Ulærde, ja de Umyndige skulde kunne trøste sig med i Liv og Død, gik det i hans Vånde op for ham, at Gud havde sørget bedre for sine Børn, så de Enfoldige <pb n="87" facs="093.jpg"/>kunde fatte, hvad der var skjult for de Vise: at Herren er os nær i vor Mund og vort Hjerte i det Troens Ord, vi forkynde. Det blev ham klart, at det Ord, som er hos Gud, og er Gud, at det Ord, som blev Kød, boede iblandt os endnu; at Helligånden åbenbarer sig i Ordet, der følger med de Indstiftelser, som ikke blot de Lærde og Skriftkloge, men som hele Menigheden kender og bekender og er sat til at vogte. — Og vel omtrent samtidig med „Nytårsmorgen“ og „Kirkens Genmæle“, (der i Modsætning til Skrifttheologien lagde Vægten på Herrens Indstiftelser og Troens Ord), fødtes hvad man nu kalder „den frugtbare Højskoletanke“, der har sit Udspring af, at på folkelig Grund forholder det sig ligedan, at Folkeånden åbenbarer sig i Folke-Ordet, det er i Modersmålet, så, skal Folkeånden vækkes, må det ske ved levende Tiltale fra Modersmålet. Hvad der vel sagtens bidrog til hos Grundtvig at skærpe Erkendelsen af, at Ordet er Åndens Åbenbarings-Middel, var at i de samme År blev endogså hans Præstemund så at sige lukket, da han nedlagde Embedet, og han sad i sex År, som en Eremit midt i Hovedstaden mellem sine Bøger, og med sin Pen bevogtet af Poli<pb n="88" facs="094.jpg"/>tiet, så hans Hovedværker, som Efterslægten stedse mere vil lære at beundre (hans Søndagsbog, hans store Mythologi, hans Verdenshistorie efter de bedste Kilder, og Sangværket til den Danske Kirke), fik først Lov at se Dagens Lys, når en Hr. Reiersen havde sat sit „må trykkes“ på dem.
+    Fra nu af er det Pulsåren i al Grundtvigs Virksomhed, at „Ånden åbenbarer sig i Ordet“, og skønt dette jo langtfra er en Afvigelse fra hans tidligere Vidnesbyrd, men en nærmere Udvikling deraf, så det ikke blot erkendes, at Ånd har Virkelighed og en tilsvarende Virksomhed, men der påvises det Virke-Middel, han bruger, så var der dog Mange, der hidtil havde fulgt Grundtvig og betragtet ham som den rette Åndskæmper, men som nu blev stående og kunde ikke følge længere. Rudelbach kom f. Ex. egenlig aldrig videre, thi skønt det endnu varede femten År, før han vendte sine Våben mod sin egen Stridsfælle og Fører, er alle hans Forsøg på at anbefale sine Landsmænd i Tyskland Grundtvigs „Opdagelse“ af Ordets Stilling og Betydning, ligeså mange Åbenbarelser af, at han forstod ham ikke, men blev siddende i Skrift, og kunde <pb n="89" facs="095.jpg"/>ikke skelne Ordet fra sin Skygge. — Striden med Tidens herskende Tankegang brød løs i Kampen med Prof. Clausen, og den fortsattes, ja fortsættes jo egenlig endnu, thi skønt „Grundtvigianismen“ på dette Punkt er trængt betydelig frem og der er gjort den Indrømmelser, som har bragt meget over i den almindelige Bevidsthed, hvad der først tilbagestødtes og afvistes som urimelige Påstande, er Striden dog stående, sålænge man ikke har set, at det Guds Ord, hvormed vi tiltales ved Herrens Indstiftelser, beholder sin Kraft til, som Ånd og Liv, at skabe og skænke, hvad det selv udsiger, og kun da kan være en Livets og Lysets Kilde, for dem der tror på det. Og Striden er stående, sålænge man tror at kunne efterabe Grundtvigs Højskoletanke med en Slags Realskoler til Indprentning af nyttige Kundskaber, istedenfor at vække Folkeånden ved levende Tiltale på Modersmålet med dets Grundskatte, og da være visse på, at det hører til Åndens mindste Kunst, at tilfredsstille den Lærelyst, han selv har vakt.
+    I disse tyve År, fra 1824 til hen i Kristian den Ottendes Regeringstid, falder derfor også såvel de heftige Kampe mellem „den <pb n="90" facs="096.jpg"/>kirkelige Anskuelse“ og „Skrifttheologien“ om Forholdet mellem Guds-Ordet og den hellige Skrift, som Grundtvigs utrættelige Bestræbelser for med Tale og Skrift, med Bøn og Sang at få vore Enevoldskonger til at oprette en Dansk folkelig Højskole, hvor Ordet skulde åbenbare Åndens Magt.
+    Imidlertid kom den politiske Friheds-Udvikling, og alt som den modnedes, mener jeg, indtrådte det tredie Afsnit i Grundtvigs Virksomhed, eller om man vil i Grundtvigianismens Historie, hvis Løsen er: „Ånd virker kun i Frihed“. Det er ikke at forstå, som om Grundtvig ikke før havde haft Øje for åndelig Frihed, han som altid havde elsket den Danske Rimkrønikes: „Frihed er bedre end meget Guld“, og havde længe før han 1832 sang: „Frihed for alt hvad der stammer fra Ånd, som ikke ændres men arges af Bånd“, kæmpet for Frihed på Åndens Enemærker, som det da også stundum blev anerkendt af den politiske Bevægelses Ordførere. Husker jeg ret, var det 1838 der udkom et Nr. af „Københavnsposten“, der begyndte med de Ord, som dengang vakte Opsigt: „Der er Mandfolk nok i Danmark, men der er få Mænd, og blandt disse er N. F. S. <pb n="91" facs="097.jpg"/>Grundtvig“, og påviste så, hvorledes Grundtvig i Kirkekampen havde stridt for Friheden. Forfatteren var den unge Orla Lehmann. Men når Grundtvig desuagtet, og tidt meget skarpt lige til 1848 stillede sig imod den konstitutionelle Frihed, som den kaldtes, da må det vel erindres, at det var Formen for Friheden, hvorom han var uenig med dem der kæmpede derfor, idet han fandt Frihed for det Åndelige langt bedre betrygget under „faderlige“ Enevoldskonger, end under en Statsforfatning, hvor Flertallets Stemme skulde gælde, og satte Frihedens Væsen og den personlige Frihed i, at hver kan få Lov til at tænke, tale og gøre hvad godt han evner, uden at skade eller fornærme andre.
+    Men hvormeget eller lidet det stod i Forbindelse med de udvortes Omstændigheder og Forhold, så er det en Kendsgerning, at de sidste tyve År har „Grundtvigianismen“ især gjort eller stræbt at gøre sig gældende i Frihedsbevægelsen. Og der er da her indtrådt det tilsvarende som på tidligere Trin, at Mænd som hidtil havde fulgt Grundtvig, blev betænkelige, stod stille og kunde ikke følge ham mere. Jeg behøver blot at minde Dem om <pb n="92" facs="098.jpg"/>en Mand, som en stor Del af mine Tilhørere vist selv har kendt, den elskelige Ferd. Fenger, personlig den mest frisindede af alle fribårne og ædle Naturer. Naturligvis vil denne Del af Bevægelsen, ligesålidt og måske endnu mindre end nogen tidligere undlade at skabe Vrængbilleder, og det kan især i Samtidighedens Bølgegang være svært nok for os alle, at holde den rette Kås og at skille Kerne fra Skal, så meget mere som det er sandt, hvad et Ord siger, der idetmindste er så gammelt som Morten Luther, at hvor Vorherre bygger en Kirke, bygger Fanden et Kapel ved Siden. Men det er idetmindste min Overbevisning, og for mig en rig Kilde til Taksigelse, at Han som kommer sin Menighed ihu og fører den efter sin Visdom og Nåde, har ladet Grundtvig blive så gammel iblandt os, uden åndelig at ældes eller afkræftes, fordi han er bleven så forunderlig udrustet til at holde Kåsen. Derfor har det så tidt allerede vist sig, og jeg er vis nok på, det vil fremdeles vise sig, at når hans Friheds-Forslag synes urimelige og ubrugelige, da har det dels sin Grund i, at Fortiden, som fattedes Tro på Åndens Magt, har opdænget en sådan Masse Bolværker om <pb n="93" facs="099.jpg"/>alt åndeligt Liv, som det forfærder dem, der ved Vanens Magt er knyttede til dem, at se nedrevne, og dels deri at vor Tid ikke selv har den Tillid til Ånden, at den tør slippe, hvad den bilder sig ind erstatter, eller dog betrygger og fremmer hans Virksomhed, medens det i Virkeligheden forhindrer og hemmer den. Men har vi selv Tro på, at Ånd er en Magt, som virker, og at han forsmår andre Virkemidler end Ordet, da føler vi også mere og mere, at kun, når vi vil lade være at pånøde ham Krykker, — kun i Tillid, og derfor i Frihed kan det skønnes hvad han formår. Dog denne Erkendelse tør jeg ikke engang forudsætte hos alle mine ærede Tilhørere iaften, thi da måtte de jo allerede være bleven — „Grundtvigianere“.
+</prose>
+</body>
+</text>
+
+<text id="brandtcj2026111704" author="brandtcj">
+<head>
+  <title>Vår og Høst</title>
+  <firstline>Blomster i Vår</firstline>
+  <source pages="94-95" facsimile-pages="101-102"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+    Blomster i Vår,
+Milde Violer i Grönsværets Skød,
+    Smilende spår:
+Sejre vil Livet, hvor Solen frembrød!
+    Løfterne mange
+Lyder i kvidrende Sange!
+
+    Blomster i Høst,
+Varmere Farver og rigere Glands,
+    Öjet til Lyst,
+Stråler så kækt mellem Frugter i Krands,
+    Som om de vidste,
+Kraften er störst på det sidste.
+
+    Verden med Ret
+Ser sig i Spejl på de falmende Løv,
+    Føler så træt,
+Årenes Tal gör afmægtig og sløv;
+    Men i Guds Rige
+Høst er en Vår uden Lige!
+
+<pb n="95" facs="101.jpg"/>    Nyvakte Tro,
+Glad som et Barn, men for Verden lidt sky,
+    Hilser du jo
+Livet, som lædsker med Kilderne ny.
+    O, men tilvisse,
+Större Ting ser du end disse!
+
+    Fremad, ja frem,
+Opad, ja op ad Forklarelsens Bjerg,
+    Hjemad, ja hjem
+Rejser du stærk dig, til Kæmpe fra Dverg,
+    Til du skal smile
+Tryg ved den evige Hvile!
+
+<nonum><right><b><i>C. J. Brandt.</i></b></right></nonum>
+</poetry>
+</body>
+</text>
 
 </workbody>
 </kalliopework>

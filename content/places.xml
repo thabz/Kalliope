@@ -62,6 +62,11 @@
     <wikidata>Q165383</wikidata>
     <type>island</type>
   </place>
+  <place id="alssund">
+    <name>Alssund</name>
+    <type>strait</type>
+    <parent ref="denmark"/>
+  </place>
   <place id="amager">
     <name>Amager</name>
     <wikidata>Q210396</wikidata>
@@ -180,6 +185,15 @@
     <canonical-name>Asia</canonical-name>
     <wikidata>Q48</wikidata>
     <type>continent</type>
+  </place>
+  <place id="askov">
+    <name>Askov</name>
+    <type>village</type>
+    <parent ref="jutland"/>
+  </place>
+  <place id="atlantic-ocean">
+    <name>Atlanterhavet</name>
+    <type>ocean</type>
   </place>
   <place id="augustenborg-palace">
     <name>Augustenborg Slot</name>
@@ -399,6 +413,11 @@
     <type>bridge</type>
     <alias>Ponte dei Sospiri</alias>
     <parent ref="venice"/>
+  </place>
+  <place id="broager">
+    <name>Broager</name>
+    <type>town</type>
+    <parent ref="jutland"/>
   </place>
   <place id="bruttium">
     <name>Bruttium</name>
@@ -696,6 +715,17 @@
     <parent ref="duchy-schleswig"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 22. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <place id="dybbol-banke">
+    <name>Dybbøl Banke</name>
+    <type>hill</type>
+    <parent ref="jutland"/>
+  </place>
+  <place id="dybbol-mill">
+    <name>Dybbøl Mølle</name>
+    <type>windmill</type>
+    <alias>Dybbølbankes Mølle</alias>
+    <parent ref="dybbol-banke"/>
+  </place>
   <place id="ebro">
     <name>Ebro</name>
     <type>river</type>
@@ -904,6 +934,11 @@
     <wikidata>Q12312236</wikidata>
     <type>church</type>
   </place>
+  <place id="fredensborg-palace-gardens">
+    <name>Fredensborg Slotshave</name>
+    <type>garden</type>
+    <parent ref="zealand"/>
+  </place>
   <place id="fredericia">
     <name>Fredericia</name>
     <wikidata>Q21181</wikidata>
@@ -1076,6 +1111,11 @@
     <wikidata>Q11922</wikidata>
     <type>canton</type>
   </place>
+  <place id="glucksburg-castle">
+    <name>Lyksborg Slot</name>
+    <type>castle</type>
+    <parent ref="germany"/>
+  </place>
   <place id="goettingen">
     <name>Göttingen</name>
     <wikidata>Q3033</wikidata>
@@ -1086,6 +1126,11 @@
     <name>Goldau</name>
     <wikidata>Q474619</wikidata>
     <type>village</type>
+  </place>
+  <place id="golf-stream">
+    <name>Golfstrømmen</name>
+    <type>ocean current</type>
+    <parent ref="atlantic-ocean"/>
   </place>
   <place id="golgotha">
     <name>Golgata</name>
@@ -1189,6 +1234,11 @@
     <alias>Groenland</alias>
     <alias>Kalaallit Nunaat</alias>
   </place>
+  <place id="grejs">
+    <name>Grejs</name>
+    <type>village</type>
+    <parent ref="jutland"/>
+  </place>
   <place id="grejs-valley">
     <name>Grejsdalen</name>
     <type>valley</type>
@@ -1202,6 +1252,12 @@
     <type>town</type>
     <alias>Grennaae</alias>
     <parent ref="jutland"/>
+  </place>
+  <place id="grenen-skagen">
+    <name>Grenen</name>
+    <type>headland</type>
+    <alias>Skagens Gren</alias>
+    <parent ref="skagen-odde"/>
   </place>
   <place id="grimsel-pass">
     <name>Grimselpasset</name>
@@ -1253,6 +1309,12 @@
     <alias>Neapelbugten</alias>
     <alias>Golfo di Napoli</alias>
     <parent ref="mediterranean-sea"/>
+  </place>
+  <place id="gurre-castle">
+    <name>Gurre Slot</name>
+    <type>castle ruin</type>
+    <alias>Gurre Slotsruin</alias>
+    <parent ref="helsingor"/>
   </place>
   <place id="haga-park">
     <name>Hagaparken</name>
@@ -1440,6 +1502,11 @@
     <alias>Holsteen</alias>
     <parent ref="germany"/>
   </place>
+  <place id="horsens">
+    <name>Horsens</name>
+    <type>city</type>
+    <parent ref="jutland"/>
+  </place>
   <place id="hotel-bristol-copenhagen">
     <name>Hotel Bristol</name>
     <type>hotel</type>
@@ -1512,6 +1579,11 @@
     <parent ref="italy"/>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q835708 -->
+  <place id="jaegersborg-deer-park">
+    <name>Jægersborg Dyrehave</name>
+    <type>park</type>
+    <parent ref="zealand"/>
+  </place>
   <place id="jelling">
     <name>Jelling</name>
     <wikidata>Q835708</wikidata>
@@ -1683,6 +1755,13 @@
     <wikidata>Q3347392</wikidata>
     <type>castle</type>
     <alias>Koldinghuus</alias>
+    <parent ref="jutland"/>
+  </place>
+  <place id="kongeaa">
+    <name>Kongeå</name>
+    <type>river</type>
+    <alias>Kongeaaen</alias>
+    <alias>Kongeåen</alias>
     <parent ref="jutland"/>
   </place>
   <place id="kongens-nytorv">
@@ -1990,6 +2069,11 @@
     <type>city</type>
     <alias>Manheim</alias>
   </place>
+  <place id="marienlyst-helsingor">
+    <name>Marienlyst</name>
+    <type>locality</type>
+    <parent ref="helsingor"/>
+  </place>
   <place id="marino">
     <name>Marino</name>
     <wikidata>Q242926</wikidata>
@@ -2247,6 +2331,11 @@
     <alias>Nicolai-Taarn</alias>
     <alias>Nikolaj Tårn</alias>
     <parent ref="copenhagen"/>
+  </place>
+  <place id="nile">
+    <name>Nilen</name>
+    <type>river</type>
+    <parent ref="africa"/>
   </place>
   <place id="norderhov">
     <name>Norderhov</name>
@@ -2840,6 +2929,12 @@
     <alias>Schirensee</alias>
     <parent ref="holstein"/>
   </place>
+  <place id="schlei">
+    <name>Slien</name>
+    <type>fjord</type>
+    <alias>Sli</alias>
+    <parent ref="germany"/>
+  </place>
   <place id="schleswig">
     <name>Slesvig</name>
     <canonical-name>Schleswig</canonical-name>
@@ -2946,12 +3041,27 @@
     <type>town</type>
     <parent ref="jutland"/>
   </place>
+  <place id="skagen-odde">
+    <name>Skagens Odde</name>
+    <type>peninsula</type>
+    <parent ref="jutland"/>
+  </place>
+  <place id="skagerrak">
+    <name>Skagerrak</name>
+    <type>strait</type>
+    <alias>Skagerak</alias>
+  </place>
   <place id="skamlingsbanken">
     <name>Skamlingsbanken</name>
     <type>hill</type>
     <alias>Skamlingsbanke</alias>
     <parent ref="jutland"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 22. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="skibelund-krat">
+    <name>Skibelund Krat</name>
+    <type>park</type>
+    <parent ref="jutland"/>
   </place>
   <place id="skokloster-castle">
     <name>Skokloster Slot</name>
@@ -2985,6 +3095,16 @@
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 61. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
     <!-- Ewalds Søbækshus ved Espergærde: https://trap5.lex.dk/sogn/egebaeksvang-sogn-lynge-kronborg-herred/ -->
   </place>
+  <place id="soebaekshuse">
+    <name>Søbækshuse</name>
+    <type>locality</type>
+    <parent ref="zealand"/>
+  </place>
+  <place id="sofiero-palace">
+    <name>Sofiero</name>
+    <type>palace</type>
+    <parent ref="helsingborg"/>
+  </place>
   <place id="sognefjord">
     <name>Sognefjorden</name>
     <canonical-name>Sognefjord</canonical-name>
@@ -2997,6 +3117,11 @@
     <wikidata>Q943209</wikidata>
     <type>volcanic crater</type>
     <parent ref="italy"/>
+  </place>
+  <place id="sonderborg">
+    <name>Sønderborg</name>
+    <type>city</type>
+    <parent ref="denmark"/>
   </place>
   <place id="sonderborg-castle">
     <name>Sønderborg Slot</name>
@@ -3033,6 +3158,11 @@
     <type>town/comune</type>
     <alias>Sorrent</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="southern-jutland">
+    <name>Sønderjylland</name>
+    <type>region</type>
+    <parent ref="jutland"/>
   </place>
   <place id="spain">
     <name>Spanien</name>
@@ -3142,6 +3272,11 @@
     <wikidata>Q8843276</wikidata>
     <type>mythical river</type>
     <note>Underverdenens flod i græsk mytologi; ikke en moderne flod af samme navn.</note>
+  </place>
+  <place id="svaertegade-copenhagen">
+    <name>Sværtegade</name>
+    <type>street</type>
+    <parent ref="copenhagen"/>
   </place>
   <place id="svartediket">
     <name>Svartediket</name>
@@ -3455,6 +3590,11 @@
     <parent ref="jutland"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
   </place>
+  <place id="vejle-cemetery">
+    <name>Vejle Kirkegård</name>
+    <type>cemetery</type>
+    <parent ref="vejle"/>
+  </place>
   <place id="vejle-fjord">
     <name>Vejle Fjord</name>
     <wikidata>Q3243190</wikidata>
@@ -3566,11 +3706,22 @@
     <type>park</type>
     <parent ref="rome"/>
   </place>
+  <place id="vinding-folk-high-school">
+    <name>Vinding Folkehøjskole</name>
+    <type>school</type>
+    <alias>Vinding Højskole</alias>
+    <parent ref="vinding-vejle"/>
+  </place>
   <place id="vinding-school">
     <name>Vinding Skole</name>
     <type>school</type>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 78. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
     <!-- Skolens præcise beliggenhed er ikke fastslået; derfor ingen parent eller Wikidata-identifikator. -->
+  </place>
+  <place id="vinding-vejle">
+    <name>Vinding</name>
+    <type>locality</type>
+    <parent ref="vejle"/>
   </place>
   <place id="virgil-tomb">
     <name>Vergils grav</name>
