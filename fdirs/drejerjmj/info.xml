@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="drejerjmj" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Jakob Mathias Johannes</firstname>
+    <lastname>Drejer</lastname>
+  </name>
+  <!-- Udgiverens navneform Matthias Drejer: titelbladet og Forerindring i Digte. Anden Samling, [1840], https://www.kb.dk/e-mat/dod/115308052110-color.pdf -->
+  <!-- Identitet og livsdata: https://slaegtsbibliotek.dk/911617.pdf s. 67 og https://slaegtsbibliotek.dk/928973.pdf. Første kilde angiver det modstridende fødselsår 1810 (11); derfor er fødselsdatoen ikke fastlagt her. -->
+  <period>
+    <born>
+      <date>?</date>
+      <place>Eveldrup Præstegaard</place>
+    </born>
+    <dead>
+      <date>1862-05-03</date>
+      <place>Bandholm</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <!-- Biografikilder gennemgået 2026-11-16: DBL1 bind IV, DBL2 bind VI, Salmonsen2 bind VI, supplementet og Salmonsen4 har intet selvstændigt opslag. Erslew Supplement I, s. 386–387, bruges derfor som dokumenteret reservekilde i bio.xml. Erslew angiver 1811; Seidelins 1810 (11) lader fødselsåret stå uafklaret i metadata. -->
+  <!-- Portræt- og værksøgning 2026-11-16: intet sikkert portræt, ingen selvstændig videnskabelig standardudgave eller forfatterautoriseret samlet digtudgave fundet. Erslews program fra 1843 er pædagogisk; de tre registrerede avisdigte er tekstønsker, ikke blankværker. -->
+</person>
