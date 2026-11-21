@@ -70,7 +70,7 @@ hvaar Geniusser paa mig ondit titte!
 </body>
 </text>
 
-<prose id="fristrup2026112134">
+<text id="fristrup2026112134">
 <head>
   <title>Forord</title>
   <subtitle><i>Et Par Ord om Digteren:</i></subtitle>
@@ -88,7 +88,7 @@ hvaar Geniusser paa mig ondit titte!
 <right><i>P. FRISTRUP.</i></right>
 </prose>
 </body>
-</prose>
+</text>
 
 <section>
 <head>
@@ -159,7 +159,7 @@ ej jeg mærker det — hjærteful!
 </body>
 </text>
 
-<text id="fristrup2026112104">
+<text id="fristrup2026112104" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Snevær</title>
   <firstline>Jeg slar Gadinets Folder lidt tilsiddes</firstline>
