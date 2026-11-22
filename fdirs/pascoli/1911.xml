@@ -11,6 +11,15 @@
   <title>Paulo Vcello</title>
   <firstline>Di buona ora tornato all’abituro</firstline>
   <source pages="5-23"/>
+  <places>
+    <place ref="florence" relation="setting" primary="true"/>
+    <place ref="florence-san-tommaso" relation="setting"/>
+    <place ref="florence-giotto-campanile" relation="mentioned"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="mugnone" relation="mentioned"/>
+    <place ref="galluzzo" relation="mentioned"/>
+    <place ref="florence-san-marco" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>

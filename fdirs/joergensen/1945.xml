@@ -325,6 +325,10 @@ Syntes du ikke om din fine Dragt?
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026072801"/>.</note>
   </notes>
   <source pages="20"/>
+  <places>
+    <place ref="santa-maria-degli-angeli-assisi" relation="subject" primary="true"/>
+    <place ref="assisi" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -359,6 +363,11 @@ Hav Tak, o Herre, for vor Søster Døden!
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026072802"/>.</note>
   </notes>
   <source pages="21"/>
+  <places>
+    <place ref="fiesole" relation="subject" primary="true"/>
+    <place ref="florence" relation="mentioned"/>
+    <place ref="arno" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -393,6 +402,18 @@ Natur, der evigt i sit Væsen hviler.
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026112209"/>.</note>
   </notes>
   <source pages="22-27"/>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+    <place ref="legnano" relation="subject"/>
+    <place ref="milan-porta-nuova-gate" relation="setting"/>
+    <place ref="milan-sant-ambrogio" relation="mentioned"/>
+    <place ref="como" relation="mentioned"/>
+    <place ref="engadin" relation="mentioned"/>
+    <place ref="pavia" relation="mentioned"/>
+    <place ref="monferrato" relation="mentioned"/>
+    <place ref="lodi-lombardy" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -626,6 +647,15 @@ at kun et fattigt Minde er tilbage.
     <note editorial="true">Gendigtning af Giovanni Pascolis <xref type="translation" poem="pascoli2026112212"/>.</note>
   </notes>
   <source pages="31-49"/>
+  <places>
+    <place ref="florence" relation="setting" primary="true"/>
+    <place ref="florence-san-tommaso" relation="setting"/>
+    <place ref="florence-giotto-campanile" relation="mentioned"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="mugnone" relation="mentioned"/>
+    <place ref="galluzzo" relation="mentioned"/>
+    <place ref="ema" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -951,6 +981,10 @@ der stille sov i det stille Lys af Maanen.
   <subtitle>Af <i>Chateaubriand</i></subtitle>
   <nofirstline/>
   <source pages="53-54"/>
+  <places>
+    <place ref="mississippi-river" relation="mentioned"/>
+    <place ref="florida" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1092,6 +1126,9 @@ Glemsel af alle Ting paa et tilfældigt Leje.
     <note editorial="true">Oversættelse af Baudelaires <xref type="translation" poem="baudelaire2026112218"/>.</note>
   </notes>
   <source pages="60-61"/>
+  <places>
+    <place ref="europe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1155,6 +1192,9 @@ og Himlen er saa graa.
     <note editorial="true">Oversættelse af Verlaines <xref type="translation" poem="verlaine2026112220"/>.</note>
   </notes>
   <source pages="64-66"/>
+  <places>
+    <place ref="golgotha" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1642,6 +1682,9 @@ O Verdens Nætter og Dage! o Verdens Liv og Død!
   <subtitle><i>Folkevise fra Bretagne</i></subtitle>
   <firstline>Fra Himlen højt kom Englebud</firstline>
   <source pages="81-82"/>
+  <places>
+    <place ref="bethlehem" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1697,6 +1740,10 @@ han troede, at det var Jesus Krist.
   <subtitle><i>Sømandsvise fra Bretagne</i></subtitle>
   <firstline>To var vi, vi var ogsaa tre</firstline>
   <source pages="83-85"/>
+  <places>
+    <place ref="groix" relation="mentioned"/>
+    <place ref="auray-sainte-anne" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1778,6 +1825,10 @@ Vinden fra Havet volder al vor Vaade!
     <note editorial="true">Oversættelse af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2026072201"/>.</note>
   </notes>
   <source pages="89-92"/>
+  <places>
+    <place ref="nazareth" relation="setting"/>
+    <place ref="ephesus" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2319,6 +2370,10 @@ og svæver om mig, lindrende og mildt.
     <note editorial="true">Oversættelse af Goethes <xref type="translation" poem="goethe2026110701"/>.</note>
   </notes>
   <source pages="112-116"/>
+  <places>
+    <place ref="castalian-spring" relation="mentioned"/>
+    <place ref="sybaris" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2566,6 +2621,10 @@ over dig derhjemme.
     <note editorial="true">Oversættelse af Esaias Tegnérs <xref type="translation" poem="tegner2026112246"/>.</note>
   </notes>
   <source pages="123-124"/>
+  <places>
+    <place ref="tornio" relation="mentioned"/>
+    <place ref="gibraltar" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2575,7 +2634,7 @@ og i Aarets Grav sank Haab og Mod.
 Timen slaar — og over Verdenshavet
 staar et Nytaar, dryppende af Blod.
 
-Sé Dig om — fra Torneå til Gibraltar,
+Sé Dig om — fra <span lang="sv">Torneå</span> til Gibraltar,
 fra hvor Sol gaar op til ned den gaar —
 hvor, o Frihed, er nu rejst dit Alter?
 Hvor, o Fred, dit Tempel endnu staar?
@@ -2791,6 +2850,9 @@ giv os ej den bitre Død i Vold.
     <note editorial="true">Gendigtning af Cælius Sedulius’ hymne <xref type="translation" poem="hymnila2026112250"/>.</note>
   </notes>
   <source pages="135-136"/>
+  <places>
+    <place ref="bethlehem" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2843,6 +2905,9 @@ nu og altid i allen Stund.
     <note editorial="true">Gendigtning af sekvensen <xref type="translation" poem="hymnila2026112251"/>.</note>
   </notes>
   <source pages="137"/>
+  <places>
+    <place ref="galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

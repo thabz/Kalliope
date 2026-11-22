@@ -12,6 +12,17 @@
   <subtitle>Della «Canzone di Legnano», parte I</subtitle>
   <firstline>Sta Federico imperatore in Como</firstline>
   <source pages="1039-1045"/>
+  <places>
+    <place ref="milan" relation="setting" primary="true"/>
+    <place ref="legnano" relation="subject"/>
+    <place ref="milan-porta-nuova-gate" relation="setting"/>
+    <place ref="milan-sant-ambrogio" relation="mentioned"/>
+    <place ref="como" relation="mentioned"/>
+    <place ref="engadin" relation="mentioned"/>
+    <place ref="pavia" relation="mentioned"/>
+    <place ref="monferrato" relation="mentioned"/>
+    <place ref="lodi-lombardy" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
