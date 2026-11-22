@@ -42,7 +42,8 @@ opførte digte; der er ikke attesteret fuld facsimilekorrektur.
   `space-before-comma`-undtagelse bevarer det kildebekræftede forhold.
 - `is` følger Kalliopes eksisterende sprogkode for oldnordiske/oldislandske
   eddatekster; Finnur Jónsson er udgiver, og forfatterskabet er anonymt.
-- 1932-udgaven og den eksisterende 1787-udgave er lagt under *Den ældre Edda*.
+- 1932-udgaven og den eksisterende 1787-udgave står direkte på værklisten for
+  samlingen *Den ældre Edda*.
   Bogens indholdsfortegnelse har ikke selv overskrifter for gude-/heltedelen;
   der er derfor ikke opfundet sådanne sektionsoverskrifter.
 - Þrymskviða er forbundet som variant med teksten fra 1787. Fem tekster hos
