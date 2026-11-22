@@ -145,7 +145,7 @@ const groupsByLiteraryPeriod = (periods, poets, lang, country) => {
 };
 
 const Poets = (props) => {
-  const { country, poets, periods, groupBy, error } = props;
+  const { country, groups, groupBy, error } = props;
   const lang = useContext(LangContext);
 
   if (error) {
@@ -170,13 +170,6 @@ const Poets = (props) => {
       url: Links.poetsURL(lang, 'period', country),
     },
   ];
-  const groups =
-    groupBy === 'name'
-      ? groupsByLetter(poets, lang, country)
-      : groupBy === 'year'
-        ? groupsByYear(poets, lang, country)
-        : groupsByLiteraryPeriod(periods, poets, lang, country);
-
   let sections = [];
 
   groups.forEach((group) => {
@@ -283,24 +276,22 @@ Poets.getInitialProps = async ({ query: { lang, country, groupBy } }) => {
     groupBy === 'period'
       ? await Promise.all([Client.poets(country), Client.literaryPeriods()])
       : [await Client.poets(country), null];
-  return {
-    lang,
-    country,
-    groupBy,
-    poets:
-      poetsJson.poets == null
-        ? null
-        : poetsJson.poets.map(
-            groupBy === 'period' ? periodPoetListItem : poetListItem
-          ),
-    periods:
-      periodsJson == null
-        ? null
-        : periodsJson.periods.filter(period =>
-            period.countries.includes(country)
-          ),
-    error: poetsJson.error ?? periodsJson?.error,
-  };
+  const error = poetsJson.error ?? periodsJson?.error;
+  if (error != null) {
+    return { lang, country, groupBy, error };
+  }
+
+  const poets = poetsJson.poets.map(
+    groupBy === 'period' ? periodPoetListItem : poetListItem
+  );
+  // Reuse the server's sort order during hydration because collation can vary.
+  const groups =
+    groupBy === 'name'
+      ? groupsByLetter(poets, lang, country)
+      : groupBy === 'year'
+        ? groupsByYear(poets, lang, country)
+        : groupsByLiteraryPeriod(periodsJson.periods, poets, lang, country);
+  return { lang, country, groupBy, groups };
 };
 
 export { groupsByLiteraryPeriod };
