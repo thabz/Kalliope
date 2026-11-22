@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pictures>
+  <picture src="p1.jpg" primary="true" square-src="p1-square.jpg" year="1827" museum="kb">
+    Christian Horneman: <i>Rasmus Nyerup</i>, 1827, pastel.
+    <!-- Billedkilde: Det Kongelige Nordiske Oldskriftselskab, »Arbejdet i Oldsagskommissionens første år«, s. 163, fig. 2, https://www.oldskriftselskabet.dk/CustomerData/Files/Folders/4-aarb%C3%B8ger/20_binder3.pdf#page=7. Billedteksten angiver Det Kgl. Bibliotek som ejer. -->
+    <!-- Museum Odense bekræfter motiv, ophav, datering, teknik og ejer og viser et tættere udsnit, https://museumodense.dk/udgivelser/alle-fynboers-ven/. Museets gengivelse (FM-2009S19) er krediteret Jesper Vang Hansen med copyright hos Odense Bys Museer. -->
+    <!-- Pastellen er public domain. Årbogsfigurens fotograf, genbrugslicens og pastellens fysiske mål, inventarnummer og digitale katalogpost er ikke dokumenteret i de fundne kilder. -->
+    <!-- Square-src er beskåret fra den anden portrætkilde, SMK's litografi KKS11575 (p2.jpg), og viser et udsnit af hoved og skuldre. -->
+    <!-- Christian Horneman (1765–1844) er ikke fundet i Kalliopes personregister. -->
+    <!-- metadata checked: 2026-11-22 -->
+  </picture>
+  <picture src="p2.jpg" year="1826" museum="smk" invnr="KKS11575">
+    Christian Horneman: <i>Rasmus Nyerup</i>, 1826, litografi. Bladmål 345 × 255 mm.
+    <identifiers>
+      <smk>KKS11575</smk>
+    </identifiers>
+    <!-- Billedkilde og katalog: SMK Open, https://open.smk.dk/artwork/image/KKS11575 og https://api.smk.dk/api/v1/art/?object_number=KKS11575. Den Kongelige Kobberstiksamling. SMK mærker billedet Public Domain Mark 1.0. -->
+    <!-- 1826 er SMK's værkdatering. Indskriften på bladet angiver 1828. Thorvaldsens Museums arkiv viser et udsnit af samme blad, https://arkivet.thorvaldsensmuseum.dk/personer/nyerup-rasmus. -->
+    <!-- metadata checked: 2026-11-22 -->
+  </picture>
+</pictures>
