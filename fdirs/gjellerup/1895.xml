@@ -182,10 +182,15 @@ ved Sko og Brog sig Ingen skamme
 </body>
 </text>
 
-<text id="gjellerup2026111902">
+<text id="gjellerup2006041902" aliases="gjellerup2026111902">
 <head>
-  <firstline>Efter Udskillelsen af de indskudte Stykker</firstline>
-  <source pages="1-2" facsimile-pages="43-44"/>
+  <title>Vølvens Spaadom</title>
+  <firstline>Hør mig alle hellige Slægter</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112001"/>.</note>
+    <note editorial="true" type="credits">Indtastet af Iwan Bonnén.</note>
+  </notes>
+  <source pages="1-21" facsimile-pages="43-63"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -205,23 +210,9 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 
     Angaaende de ovenfor nævnte indskudte Stykker og deres Plads i Haandskrifterne henvises til den almindelige Indledning (Paragraphen om Vøluspá.)
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2006041902">
-<head>
-  <title>Vølvens Spaadom</title>
-  <firstline>Hør mig alle hellige Slægter</firstline>
-  <notes>
-    <note editorial="true">Denne tekst findes også oversat af <a poem="larsent2002043001">Thøger Larsen</a>.</note>
-    <note editorial="true" type="credits">Indtastet af Iwan Bonnén.</note>
-  </notes>
-  <source pages="3-21" facsimile-pages="45-63"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<num>1</num><margin>(1)</margin><i>Hør mig alle hellige Slægter,</i>
+<pb n="3" facs="044.jpg"/><num>1</num><margin>(1)</margin><i>Hør mig alle hellige Slægter,</i>
 <i>Heimdals Sønner store og smaa!</i>
 <i>Valfader vil det, vel skal jeg nævne</i>
 <i>Slægters Skjæbner, jeg skued først.</i>
@@ -476,16 +467,20 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 </body>
 </text>
 
-<text id="gjellerup2026111903">
+<text id="gjellerup2026111903" aliases="gjellerup2026111904,gjellerup2026111905,gjellerup2026111906">
 <head>
-  <suptitle>Indskud i Vøluspá</suptitle>
-  <title><num>I.</num>Midnatssol og Maane</title>
+  <title>Indskud i Vøluspá</title>
   <firstline>Sol greb sønden — var Maanens Sinde —</firstline>
-  <source pages="22-23" facsimile-pages="64-65"/>
+  <notes>
+    <note editorial="true">Oversættelse af strofer fra <xref type="translation" poem="eddadigte2026112001"/>.</note>
+  </notes>
+  <source pages="22-27" facsimile-pages="64-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><center>I. Midnatssol og Maane</center></nonum>
+
 <num>5</num><i>Sol greb sønden — var Maanens Sinde —</i>
 <i>med høire Haand om Himmelrand;</i>
 <i>Sol ei vidste, hvor Sal den aatte,</i>
@@ -496,19 +491,10 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 <i>Morgen nævned og Midje-Dag,</i>
 <i>Unnen og Aften, Aar at tælle.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111904">
-<head>
-  <suptitle>Indskud i Vøluspá</suptitle>
-  <title><num>II.</num>Dvergenes Skabelse</title>
-  <firstline>Mødtes Magter til Maalstevnet</firstline>
-  <source pages="23-25" facsimile-pages="65-67"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<nonum><center>II. Dvergenes Skabelse</center></nonum>
+
 <num>9</num><i>Mødtes Magter til Maalstevnet,</i>
 <i>hellige Guder handled derom:</i>
 <i>skulde Dverges Skare skabes</i>
@@ -549,19 +535,10 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 <i>mindes monne, mens Mænd leve,</i>
 <i>Lofars Ahners lange Række.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111905">
-<head>
-  <suptitle>Indskud i Vøluspá</suptitle>
-  <title><num>III.</num>Menneskets Skabelse</title>
-  <firstline>Til der kom tre af deres Tal</firstline>
-  <source pages="26" facsimile-pages="68-68"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="26" facs="067.jpg"/><nonum><center>III. Menneskets Skabelse</center></nonum>
+
 <num>17</num><i>Til der kom tre af deres Tal</i>
 <i>stærke, gode Guder til Hus;</i>
 <i>paa Land fandt de, lidet mægtige,</i>
@@ -572,19 +549,10 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 <i>Aande og Hu, gav Odin og Høner,</i>
 <i>Blod gav Løder og liflig Lød.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111906">
-<head>
-  <suptitle>Indskud i Vøluspá</suptitle>
-  <title><num>IV.</num>Yggdrasil og Nornerne</title>
-  <firstline>Ask veed jeg staa, hedder Yggdrasil</firstline>
-  <source pages="27" facsimile-pages="69-69"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="27" facs="068.jpg"/><nonum><center>IV. Yggdrasil og Nornerne</center></nonum>
+
 <num>19</num><i>Ask veed jeg staa, hedder Yggdrasil,</i>
 <i>Veddet stænket med hvid Væde;</i>
 <i>deden kommer Dugg, i Dale falder; —</i>
@@ -598,10 +566,23 @@ Efter Udskillelsen af de indskudte Stykker (om Midnatssolen og Maanen, om Dverge
 </body>
 </text>
 
-<text id="gjellerup2026111907">
+<text id="gjellerup2002012801" aliases="gjellerup2026111908,gjellerup2026111907">
 <head>
-  <firstline>Vafþruðnesmál (i Codex Regius, efter Hávamál) er et mythologisk-didaktisk Digt</firstline>
-  <source pages="31-32" facsimile-pages="73-74"/>
+  <title>Vafthrudnesmál</title>
+  <firstline>Raad mig nu Frigg, en Fart har jeg for</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112003"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-vafthrudnesmal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Vafthrudnesmál</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 71, facsimile 070.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret 1892. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="31-49" facsimile-pages="73-91"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -614,27 +595,9 @@ Vafþruðnesmál (i Codex Regius, efter Hávamál) er et mythologisk-didaktisk D
     Odins Spørgsmaal (20—54): om Skabningen (20), forskjellige mythologiske Genealogier (22—33), om flere usammenhængende Emner afsluttende med Einherjerne (40), hvorpaa han spørger om, hvorfra Vafthrudner har al denne Kundskab og faar til Svar, at Jætten har været i alle ni Verdener (42—43); de følgende Spørgsmaal angaa alle de sidste Ting, tilsyneladende med Undtagelse af det uforstaaelige og maaske uægte Spørgsmaal og Svar om Møgthrases Møer (48—49); men selv om Tilstanden efter Ragnarok veed Jætten Besked (51); da spørger Gjæsten om, hvad Odin hviskede Balder i Øret, før han lagdes paa Baal <pb n="32" facs="073.jpg"/>— og erkjendende svarer Jætten: hvad du sagde i Sønnens Øre veed Ingen, med feig (dødsviet) Mund mælte jeg om Old-Kundskab.« — Men Tilhørerne, der kjendte Vøluspá, kunde næppe være i Tvivl om, at denne Hemmelighed var Balders egen Gjenfødelse og »den Mægtiges« Komme til den nye Gudestat. —
     Digtet er det ypperste i sin Art. — Ingen anden Literatur har saaledes som den oldnordiske forstaaet at adle en tør Memorial-Poesi alene ved Stilens imponerende Storhed; og denne Egenskab træder intet Steds saa prægtig frem som her. Grimnesmál, der glimrer med mere frodige Enkeltheder, naaer den ikke i Stilens Fasthed og tørre Kraft; ogsaa den simplere Indramning i Vafthrudnesmál slutter sig mere klassisk om Indholdet end Tilfældet er i Grimnesmál. Der maa Odin tilsidst nævne sit Navn, medens han her giver sig tilkjende ved selve Slutningsspørgsmaalet, og Jættens Svar overflødiggjør enhver episk Afslutning — som overhovedet Digtet i sin fuldendte Afrundethed ikke viser ud over sig selv. Overordentlig fint er det Træk, at Odin efter det Spørgsmaal om Jættens Viden, der danner Vendepunktet, i Stedet for det hidtil brugte Indlednings-Stev gjenoptager det betydningsfuldere, rythmisk-pompøse Vandrer-Stev, med hvilket han forkyndte Frigg sin uvægerlige Beslutning at besøge Jætten: — »Fjǫlþ ek fór, fjǫlþ freistaþak — fjǫlþ ek of reynda regen (»Mangt jeg foer« o. s. v.). Man føler, at Afslutningen nærmer sig, og at Odin, vis paa Seiren, bereder sig til Bortgang.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111908" variant="gjellerup2002012801">
-<head>
-  <title>Vafthrudnesmál</title>
-  <firstline>Raad mig nu Frigg, en Fart har jeg for</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-vafthrudnesmal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Vafthrudnesmál</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 71, facsimile 070.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret 1892. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="33-49" facsimile-pages="75-91"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<nonum><center><sc>Odin kvad:</sc></center></nonum>
+<pb n="33" facs="074.jpg"/><nonum><center><sc>Odin kvad:</sc></center></nonum>
 <num>1</num><i>Raad mig nu Frigg, en Fart har jeg for</i>
     <i>til Vafthrudner at vandre;</i>
 <i>I Oldtids-Kundskab kjæmped jeg gjerne</i>
@@ -966,10 +929,26 @@ Vafþruðnesmál (i Codex Regius, efter Hávamál) er et mythologisk-didaktisk D
 </body>
 </text>
 
-<text id="gjellerup2026111926">
+<text id="gjellerup2002012802" aliases="gjellerup2026111928,gjellerup2026111926,gjellerup2026111927,gjellerup2026111929,gjellerup2026111930,gjellerup2026111931,gjellerup2026111932,gjellerup2026111933,gjellerup2026111934,gjellerup2026111935,gjellerup2026111936,gjellerup2026111937">
 <head>
-  <firstline>Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani</firstline>
-  <source pages="53-54" facsimile-pages="95-96"/>
+  <title>Grimnesmál</title>
+  <firstline>Din Brynde, Baal! blusser for brændende</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af <xref type="translation" poem="eddadigte2026112004"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-grimnesmal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Grimnesmál</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 93, facsimile 092.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="53-76" facsimile-pages="95-118"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -979,41 +958,15 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
     Naar N. M. Petersen siger, at Grimnesmáls Moral er: »Øv ingen Udaad! der er en evig usynlig Magt, der vaager og kjender din Gjerning og Straffen <pb n="54" facs="095.jpg"/>følger uudblivelig efter Synden«, — saa maa man vel spørge, hvorledes han uddrager en saadan Moral. Mindst af alt optræde Guderne som Moralens Vogtere i dette Sagn, hvor Odin raader sin Fostersøn til at skille sig af med Broderen og tilrane sig Ene-Herredømmet, og hvor Freya snyder sig til at vinde et Væddemaal, der koster Kong Geirrød Livet.
     Netop denne fuldkomne Mangel paa Moral og Forherligelse af en Hellighed, der ikke i mindste Maade har denne til Betingelse, men er ganske udvortes opfattet (»helligt er Gjærdet«), — borger for den høie, ublandet hedenske Ælde af Digtet eller i alt Fald af det Sagn, hvori det tager sit Udgangspunkt.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111927">
-<head>
-  <title>Kong Rødings Sønner</title>
-  <source pages="55-57" facsimile-pages="97-99"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <prose>
+<pb n="55" facs="096.jpg"/><center>Kong Rødings Sønner</center>
 <i>Kong Røding havde to Sønner; den ene hed Agnar og den anden Geirrød. Agnar var ti Vintre og Geirrød otte Vintre. De to roede i Baad med deres Snører paa Smaafiskeri; Vinden drev dem ud paa Havet. I Natmørket strandede de ved Land og ginge op, funde en Indsidder; der vare de om Vintren. Kjærlingen fostrede Agnar, og Bonden fostrede Geirrød og gav ham Raad. I Vaar flyede fik Bonden dem Skib; og da de, Kjærlingen og</i> <pb n="56" facs="097.jpg"/><i>han, førte dem til Stranden, da mælte Bonden Enetale med Geirrød. De finge Bør og kom til deres Faders Landeplads. Geirrød var foran i Skibet; han sprang op paa Land og stødte Skibet ud og mælte: »Far du nu did, hvor Troldtøi tage dig«. Skibet drev ud paa Havet. Men Geirrød gik op til Gaarden; han blev der vel modtagen, og hans Fader var da død. Blev da Geirrød tagen til Konge og blev en berømmelig Mand.</i>
     <i>Odin og Frigg sadde i Hlidskjalv og saae over alle Verdner. Odin mælte: »Ser du Agnar, din Fostersøn, hvor han avler Børn med en Gyge i Hulen? Men Geirrød, min Fostersøn, er Konge og styrer Landet«. Frigg siger: »Han er en saadan Madgnier, at han piner sine Gjæster, hvis ham tykkes, at for mange komme«.</i> <pb n="57" facs="098.jpg"/><i>Odin siger, at det er den største Løgn; de vædde om denne Sag. Frigg sendte sin Terne Fulla til Geirrød. Hun bad Kongen vare sig, at ikke den tryllekyndige Mand, som der var kommen i Land, skulde forgjøre ham, og sagde det Kjendetegn derpaa, at ingen Hund var saa vild, at den monne springe paa ham. Men det var den største Usandhed, at Kong Geirrød ikke var gjæstfri; og dog lader han lægge Haand paa den Mand, som Hundene ikke vovede sig til. Han var i blaa Kappe og kaldte sig Grimner og sagde ikke mer om sig, skjøndt han blev adspurgt. Kongen lod ham pine til at sige og sætte mellem to Ilde, og sad han der otte Nætter. Kong Geirrød havde da en Søn, ti Vintre gammel og hed Agnar efter hans Broder. Agnar gik til Grimner og gav hannem et fyldt Horn at drikke og sagde, at Kongen gjorde ilde, da han lod ham pine sagesløs. Grimner tømte det; — da var Ilden kommen saa, at Kappen brændte paa Grimner; han kvad:</i>
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111928" variant="gjellerup2002012802">
-<head>
-  <title>Grimnesmál</title>
-  <firstline>Din Brynde, Baal! blusser for brændende</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-grimnesmal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Grimnesmál</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 93, facsimile 092.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="58-62" facsimile-pages="100-104"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<num>1</num><margin>(1)</margin><i>Din Brynde, Baal! blusser for brændende;</i>
+<pb n="58" facs="099.jpg"/><num>1</num><margin>(1)</margin><i>Din Brynde, Baal! blusser for brændende;</i>
     <i>vig fra mig, vævre Lue!</i>
 <i>Skindet svides, skjøndt jeg løfter det,</i>
     <i>Flammen i Kappen fænger.</i>
@@ -1107,18 +1060,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <prose>
     <i>Kong Geirrød sad og havde Sværdet over Knæet og halvt draget. Som han hørte, at Odin var kommen der, da stod han op og vilde tage Odin fra Ilden. Sværdet slap ham af Hænde og vendte Hjaltet nedad. Kongen snublede med Foden og faldt fremover, og Sværdet stod igjennem ham og han fik sin Bane. Odin forsvandt da, og Agnar var Konge der længe efter.</i>
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111929">
-<head>
-  <title>Gude-Boligerne</title>
-  <firstline>Helligt er Land, som jeg ligge ser</firstline>
-  <source pages="63-67" facsimile-pages="105-109"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="63" facs="104.jpg"/><nonum><center>Gude-Boligerne</center></nonum>
+
 <num>1</num><margin>(4)</margin><i>Helligt er Land, som jeg ligge ser</i>
     <i>Aser og Alfer nær;</i>
 <i>men i Thrudhjem Thor skal være,</i>
@@ -1186,18 +1131,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>blandt alle Huse, der have Tag,</i>
     <i>veed jeg min Søns er størst.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111930">
-<head>
-  <title>Om Livet i Valhal</title>
-  <firstline>Andhrimner lader i Eldhrimner</firstline>
-  <source pages="68" facsimile-pages="110-110"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="68" facs="109.jpg"/><nonum><center>Om Livet i Valhal</center></nonum>
+
 <num>1</num><margin>(18)</margin><i>Andhrimner lader i Eldhrimner</i>
     <i>Sækrimner syde,</i>
 <i>bedst af Flesk: men Faa det vide,</i>
@@ -1213,18 +1150,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>jeg ængstes for Hugin, om atter han kommer,</i>
     <i>end mer for Munin jeg ængstes.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111931">
-<head>
-  <title>Om Yggdrasil</title>
-  <firstline>Trende Rødder til tre Sider gaa</firstline>
-  <source pages="69-70" facsimile-pages="111-112"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="69" facs="110.jpg"/><nonum><center>Om Yggdrasil</center></nonum>
+
 <num>1</num><margin>(31)</margin><i>Trende Rødder til tre Sider gaa</i>
     <i>under Yggdrasils Ask;</i>
 <i>under een boer Hel, under anden Rimthurser,</i>
@@ -1254,18 +1183,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>Hjort bider Top og Trøske Stamme,</i>
     <i>Nidhugg nager forneden.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111932">
-<head>
-  <title>Om Solen og om Jords og Himmels Skabelse</title>
-  <firstline>Aarvak og Alsvinn skulle op heden</firstline>
-  <source pages="71-72" facsimile-pages="113-114"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="71" facs="112.jpg"/><nonum><center>Om Solen og om Jords og Himmels Skabelse</center></nonum>
+
 <num>1</num><margin>(37)</margin><i>Aarvak og Alsvinn skulle op heden</i>
     <i>svedige Solen drage;</i>
 <i>under deres Bug har blide Aser</i>
@@ -1293,19 +1214,12 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>af Hjerne-Massen alle de mørke</i>
     <i>Uveirs-Skyer skabtes.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111933">
-<head>
-  <suptitle>Navne-Optællinger</suptitle>
-  <title><num>a.</num>Floderne</title>
-  <firstline>Sid og Vid, Sæken og Æken</firstline>
-  <source pages="72-73" facsimile-pages="114-115"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<nonum><center>Navne-Optællinger</center></nonum>
+
+<nonum><center>a. Floderne</center></nonum>
+
 <num>1</num><margin>(27)</margin><i>Sid og Vid, Sæken og Æken,</i>
 <i>Sval og Gunnthro, Fjørm og Fimbolthul,</i>
     <i>Rin og Rinnande,</i>
@@ -1329,19 +1243,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>Thi Asernes Bro luende brænder,</i>
     <i>hellige Vande hedes.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111934">
-<head>
-  <suptitle>Navne-Optællinger</suptitle>
-  <title><num>b.</num>Gudernes Heste</title>
-  <firstline>Glad og Gyller, Gler og Skeidbrimer</firstline>
-  <source pages="74" facsimile-pages="116-116"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="74" facs="115.jpg"/><nonum><center>b. Gudernes Heste</center></nonum>
+
 <num>4</num><margin>(30)</margin><i>Glad og Gyller, Gler og Skeidbrimer,</i>
     <i>Sølvtop og Siner,</i>
 <i>Gisl og Falhøvne, Guldtop og Letfod,</i>
@@ -1349,19 +1254,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>hver en Dag, naar til Doms de drage,</i>
     <i>til Yggdrasils Ask.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111935">
-<head>
-  <suptitle>Navne-Optællinger</suptitle>
-  <title><num>c.</num>Valhals Skjænkemøer</title>
-  <firstline>Hrist og Mist Mjødhorn mig række</firstline>
-  <source pages="74" facsimile-pages="116-116"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<nonum><center>c. Valhals Skjænkemøer</center></nonum>
+
 <num>5</num><margin>(36)</margin><i>Hrist og Mist Mjødhorn mig række,</i>
     <i>Skeggold og Skøgul;</i>
 <i>Hild og Thrud, Hløkk og Hærfjotur,</i>
@@ -1369,19 +1265,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>Randgrid og Raadgrid og Regenleif</i>
     <i>bringe Einherjer Øl.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111936">
-<head>
-  <suptitle>Navne-Optællinger</suptitle>
-  <title><num>d.</num>De bedste Ting</title>
-  <firstline>Ivaldes Sønner i Oldtid ginge</firstline>
-  <source pages="75" facsimile-pages="117-117"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="75" facs="116.jpg"/><nonum><center>d. De bedste Ting</center></nonum>
+
 <num>6</num><margin>(43)</margin><i>Ivaldes Sønner i Oldtid ginge,</i>
     <i>Skidbladner at skabe;</i>
 <i>det bedste Skib til den skjære Freyr,</i>
@@ -1393,18 +1280,10 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 <i>Bifrost af Broer og Brage af Skjalde,</i>
 <i>Haabrok af Høge, af Hunde Garm.</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111937">
-<head>
-  <title>Odins Navne</title>
-  <firstline>Bileyg, Baaleyg, Bølværk, Fjølner</firstline>
-  <source pages="75-76" facsimile-pages="117-118"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<nonum><center>Odins Navne</center></nonum>
+
 <num>8</num><margin>(47b-48a)</margin><i>Bileyg, Baaleyg, Bølværk, Fjølner,</i>
 <i>Grim og Grimner, Glapsvinn, Fjølsvinn,</i>
 <i>Sidhat, Sidskjæg, Seirfader, Hnikod,</i>
@@ -1432,10 +1311,23 @@ Dette Kvad er i sin oprindelige Kjerne en digterisk seet Odins-Theophani, en Aab
 </body>
 </text>
 
-<text id="gjellerup2026111938">
+<text id="gjellerup2002012803" aliases="gjellerup2026111939,gjellerup2026111938">
 <head>
-  <firstline>Dette Kvad er opbevaret i et arnamagnæansk Haandskrift</firstline>
-  <source pages="79-80" facsimile-pages="121-122"/>
+  <title>Vegtamskvide</title>
+  <firstline>Ginge Aser alle til Thing</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112012"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-vegtamskvide.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Vegtamskvide</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 119, facsimile 118.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="79-84" facsimile-pages="121-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1445,27 +1337,9 @@ Dette Kvad er opbevaret i et arnamagnæansk Haandskrift, hvor det har Overskrift
     Her ligesom i Vafþ. og Grímn. optræder Odin som Vandrer, formummet og under fremmed Navn: Vegtam, Valtams Søn ɔ: Veivant, Krigsvants Søn. Hvilken Vølve det er, som har sin Gravhøi ved den østre Dør af Hels Hus, siges ikke, men Odins Afskedsord kunde tyde paa, at det var selve Hels Moder, Angerboda. Iøvrig synes der her at være en Combination af to forskjellige Forestillinger: den Døde i Høien (den ældste Forestilling) og Hels Dødsrige.
     Ved Textredaktionen har jeg sluttet mig til Grundtvig, hvem ogsaa Sijmons følger, i den Antagelse, at der i Viserne 7 og 9 er faldet en Linie ud; den tilsyneladende Uregelmæssighed af femliniede Viser (som V. 11) forklares tilstrækkelig derved, at den i dem alle enslydende femte Linie betragtedes som et Omkvæd. <pb n="80" facs="121.jpg"/>    Det er ikke usandsynligt, at der efter V. 12 er faldet to Viser ud; nemlig Vølvens Svar og et nyt Odin-Spørgsmaal. Thi V. 13 forudsætter et Spørgsmaal, af hvilket Vølven kan skjønne at Spørgeren er Odin, og Spørgsmaalet i V. 12, der utvivlsomt handler om Rans Døtres (Bølgernes) Klage ved Balders Baalfærd paa hans Skib (hvis Sejlskjøder de kaste mod Himlen) synes ikke at være et saadant, der kun kunde stilles af Alfader. Rimeligvis har Odin her som i Vafthrudnesmál spurgt om, hvad Alfader vilde hviske Balder i Øret, før han lagdes paa Baalet.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111939" variant="gjellerup2002012803">
-<head>
-  <title>Vegtamskvide</title>
-  <firstline>Ginge Aser alle til Thing</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-vegtamskvide.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Vegtamskvide</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 119, facsimile 118.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="81-84" facsimile-pages="123-126"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<num>1</num><i>Ginge Aser alle til Thing</i>
+<pb n="81" facs="122.jpg"/><num>1</num><i>Ginge Aser alle til Thing</i>
 <i>og Asynjer alle til Stevne;</i>
 <i>derom raadslog rige Guder</i>
 <i>hvad Balders tunge Drømme betød.</i>
@@ -1552,10 +1426,23 @@ Dette Kvad er opbevaret i et arnamagnæansk Haandskrift, hvor det har Overskrift
 </body>
 </text>
 
-<text id="gjellerup2026111909">
+<text id="gjellerup2006041901" aliases="gjellerup2026111909">
 <head>
-  <firstline>Om Hávamáls Bestanddele og deres indbyrdes Forhold saavel som om Characteren</firstline>
-  <source pages="87-89" facsimile-pages="129-131"/>
+  <title>Hávamál</title>
+  <firstline>Ved alle Døre, før ind man gaar</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112002"/>.</note>
+    <note editorial="true" type="credits">Indtastet af Iwan Bonnén.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-havamal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Hávamál</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 127, facsimile 126.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret »91«. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="87-127" facsimile-pages="129-169"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1567,30 +1454,9 @@ Om Hávamáls Bestanddele og deres indbyrdes Forhold saavel som om Characteren a
     Efter at hidtil Kampen for Livet har været Emnet, vender Slutnings-Betragtningen sig nu til Livet selv og dets Maal; Livets Værd hævdes og navnlig Helsenens, der dog ikke maa kjøbes med Skam (46), men ogsaa uden Helsen kan man have Glæde af Børn, Frænder, Formue eller — sluttes med Selvbevidsthed — af velgjort Værk (47). Selv med Tab af Rigdom er Livet bedre end Døden, ogsaa Krøblinger kunne endnu være virksomme (48—49), men for den Døde er kun Eftermælet tilbage, hvorfor det er godt at have en Søn, som kan reise Ens Bautasten (50), men kun Daarer tro, at Rigdom er en varig Fordel (51); den mistes og Frænder og Livet selv, men vel-vundet Eftermæle døer aldrig (52—53).
     Hvad de andre Dele af Hávamál angaar vil formentlig en Analyse af deres Indhold enten være overflødig (som ved Odins-Eventyrene) eller dog af ringere Interesse (som ved det mindre betydelige Loddfafnersmál).
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2006041901">
-<head>
-  <title>Hávamál</title>
-  <firstline>Ved alle Døre, før ind man gaar</firstline>
-  <notes>
-    <note editorial="true" type="credits">Indtastet af Iwan Bonnén.</note>
-  </notes>
-  <pictures>
-    <picture type="illustration" src="1895-havamal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Hávamál</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 127, facsimile 126.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret »91«. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="90-127" facsimile-pages="132-169"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<nonum><center>I.</center></nonum>
+<pb n="90" facs="131.jpg"/><nonum><center>I.</center></nonum>
 
 <nonum><center>Sprogenes Bog.</center></nonum>
 
@@ -2520,24 +2386,7 @@ Om Hávamáls Bestanddele og deres indbyrdes Forhold saavel som om Characteren a
 </body>
 </text>
 
-<text id="gjellerup2026111910">
-<head>
-  <firstline>Thor drog fra Østen og kom til et Sund</firstline>
-  <source pages="131-133" facsimile-pages="173-175"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-»Thor drog fra Østen og kom til et Sund; paa den anden Side af Sundet var Færgekarlen med Baaden« — disse Prosalinier indlede Skjændsmaalet mellem Thor og Odin, der her optræder under Navnet Hárbard (ɔ: Graaskjæg — fra Grimnesmál kjendt som et af Odins Tilnavne) og i Skikkelse af en Færgemand, der tjener Hildolf (Krigsulv). Vi vilde imidlertid danne os et ganske feilagtigt Billede af Situationen, hvis vi blev staaende ved et moderne Begreb om en Færgemand som en underordnet Tjenestekarl, der for en ringe Løn satte Veifarende over Sundet, hvilket vilde staa i fuldstændig Modstrid med hans Optræden og med de Eventyr, som han opregner. En fyldig Illustration finde vi i Nibelungensangens Skildring af Burgundernes Overfart over Donau, hvor Hagen raaber paa Gefrats Færgemand, om hvem der siges at han var saa rig, at han ikke behøvede at tjene og sjelden modtog Løn af Nogen, ligesom ogsaa hans Tjenere »havde et stolt Sind«. Donaufærgemanden nægter Hagen Overfart, fordi hans Herrer have mange Fjender, hvorfor han ikke vil føre Fremmede over til deres Land — og paa lignende Maade svarer Hárbard, at hans Herre bød ham ikke at sætte Landstrygere og Hestetyve over, men gode Mænd og saadanne, som vare ham bekjendte. Altsaa snarere en Grændsevogter, udvalgt af Fyrstens Hird, end en Færgemand i almindelig Forstand.
-    Hárbards Trudsel, at han vil vise sig som den haardeste Modstander Thor har mødt, siden han fældede Jætten Hrungner, bringer Thor til at mindes denne Daad og spørge, hvad Berømmeligt den Anden imidlertid har taget sig for, om han har nogen Daad at stille op derimod — hvorefter de begynde at overbyde hinanden. Hárbards Spørgsmaal: »Hvad tog du dig til imens, Thor«, er fuldstændig ulogisk, da Thor jo allerede har besvaret det; men jeg kan ikke med Dr. Finnur Jonsson heri se tilstrækkelig Grund til at anse det for en mekanisk Tilsætning fra senere Tider: i den overlegne Færgemands Mund er denne Skjødesløshed ikke ganske upassende og endnu mindre falder Thor ud af sin Rolle, naar han uden at ane Ondt troskyldig pralende disker op med sin næste Bedrift.
-<pb n="132" facs="173.jpg"/>    Disse Bedrifter vise alle Thor som »Jætters Fjende« og »Menneskets Ven«, der gjør Jorden beboelig og opdyrkelig ved at bekjæmpe de raa Naturdæmoner: »stor vilde Jætternes Æt blive, hvis de alle levede, og ingen Mennesker kunde da bo i Midgaard«. Derimod roser Hárbard sig af hensigtsløse Krigstog og af galante Eventyr. Skjøndt saaledes Thor som Kulturguden maatte synes at have den moralske Berettigelse paa sin Side, er det dog aabenbart at Digtet ikke tilfældig har nævnet sig efter Hárbard men staar paa dennes Standpunkt: i Sangerens Øine har Hárbard den moralske Ret, han er den høibaarne, ædle, overlegne Natur, medens den brave Thor gives til Pris for Latter som en plump Bonde, der forretter nyttigt men lidet berømmeligt Arbeide og forholder sig til sin Modstander som den flittige Haandværker til den frie Kunstner. Naar Uhland i denne Modsætning, som han rigtig har erkjendt, ikke vil se »nogen Spaltning af religiøse Anskuelser«, men kun »det nødvendige ydre Sammenstød af de forskjellige Retninger og Tilstande i den jordiske Tilværelse, som hver er stillet under sin Guds Beskyttelse«, saa er dette aabenbart Kortsynethed, og Müllenhoff har sikkert Ret, naar han siger, at der fra dette Digt falder Lys paa en Side af Nordens religiøse Udvikling, som næppe andet Steds i den Grad er synligt. Digtet er visselig bygget over »en Spaltning i religiøse Anskuelser« nemlig det Opsving, som Odinsdyrkelsen fik med Viking-Tiden i Modsætning til den ældre Thorscultus, som derved kom i Forfald. Herpaa tyder ogsaa Thors Ytring V. 20, at han er fredløs med al sin Æt — i alt Fald ligger det nærmere at opfatte disse Ord historisk-mythisk end natur-mythisk (Torden- og Agerbrugsguden hjemløs i Vintertiden). Det er to Tidsaander, som staa overfor hinanden: den gammeldags, sindige Hjemmeføding, der sidder paa sin Gaard og dyrker sin Jord — og den vidtforfarne, eventyrlystne og erobringsglade Krigeraand. Forfatteren — aandsbeslægtet med ham, der har efterladt os Odins-Eventyrene i Hávamál — staar med Liv og Sjæl paa den Sidstes Side og behandler Thor omtrent som en Nitschianer vilde affærdige det utilitaristiske Moralideal. Iøvrig har han for saa vidt Ret, som Vikingaandens Udlængsel virkelig styrede Norden mod Fremtiden, og den ved ingvæonsk Indflydelse omskabte Odin (Wotan) i sin Dobbeltegenskab af Kriger- og Runegud snart skulde vise sig som Kulturgud i dybere Forstand end Thor nogensinde kunde blive det.
-    Endnu kun nogle Bemærkninger til Belysning af Kvadets noget gaadefulde naturmythiske Elementer. I Begyndelsen siger Hárbard, at Thors Moder er død, og tilsidst viser han ham Vei til Verland hvor Fjørgyn (ɔ: Thors Moder Jorden) gjenfinder sin Søn og viser ham Ætlingernes Veie til Odins Lande. Jorden er død som en Følge af den strænge Vinter, fra hvis Rige Thor kommer (»østfra«), dog er den ikke endelig død, thi ad Veien tilvenstre vil Sønnen atter <pb n="133" facs="174.jpg"/>finde Moderen ilive. »Ved denne møisommelige Omvei — kommenterer Uhland — er efter hele Sammenhængen en ny Pløining og Udsæd at forstaa. For Thor, der kommer østfra, er Veien tilvenstre en sydlig, sommerlig: i Vaarsæden maa Thor søge sin Udvei; Verland er det af Mennesker beboede, opdyrkelige Land; »Ætlingernes Veie til Odins Lande« betegner da Sædens Opadstræben i Lys og Luft, Asernes Gebet i Modsætning til de mørke, isdækte Stier, ad hvilke Thor hidtil har vandret«.
-    Digtets Form er paafaldende, ja i sin Uregelmæssighed enestaaende i nordisk Literatur. Det vil ikke lykkes at inddele det i nogen af de bekjendte Stropher. Rhythmiske, bogstavrimede Prosalinier vexle med Kviðuháttr- eller Ljoðaháttr-Stropher eller med Blandingsformer af disse. At der ikke findes noget Sidestykke til denne frie Form berettiger dog neppe til at forkaste den som forvansket og ved rigoristiske Midler gjennemføre en bestemt Strophe, medens man vel maa anerkjende, at der kan have indsneget sig enkelte Indskud, der da, i Ly af den almindelige Regelløshed, vanskeligere kan paapeges end det er Tilfældet i andre Eddakvad; et saadant er efter Sijmons Mening L. 71—83 »Odin eier Jarlerne — Hvi skulde du over Sundet række«.
-</prose>
-</body>
-</text>
-
-<text id="gjellerup2006071302">
+<text id="gjellerup2006071302" aliases="gjellerup2026111910">
 <head>
   <title>Sangen om Hárbard</title>
   <firstline>Hvo er den Svend blandt Svende, som hinsides Sundet stander</firstline>
@@ -2553,12 +2402,20 @@ Om Hávamáls Bestanddele og deres indbyrdes Forhold saavel som om Characteren a
       <!-- metadata checked: 2026-11-19 -->
     </picture>
   </pictures>
-  <source pages="134-144" facsimile-pages="176-186"/>
+  <source pages="131-144" facsimile-pages="173-186"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+»Thor drog fra Østen og kom til et Sund; paa den anden Side af Sundet var Færgekarlen med Baaden« — disse Prosalinier indlede Skjændsmaalet mellem Thor og Odin, der her optræder under Navnet Hárbard (ɔ: Graaskjæg — fra Grimnesmál kjendt som et af Odins Tilnavne) og i Skikkelse af en Færgemand, der tjener Hildolf (Krigsulv). Vi vilde imidlertid danne os et ganske feilagtigt Billede af Situationen, hvis vi blev staaende ved et moderne Begreb om en Færgemand som en underordnet Tjenestekarl, der for en ringe Løn satte Veifarende over Sundet, hvilket vilde staa i fuldstændig Modstrid med hans Optræden og med de Eventyr, som han opregner. En fyldig Illustration finde vi i Nibelungensangens Skildring af Burgundernes Overfart over Donau, hvor Hagen raaber paa Gefrats Færgemand, om hvem der siges at han var saa rig, at han ikke behøvede at tjene og sjelden modtog Løn af Nogen, ligesom ogsaa hans Tjenere »havde et stolt Sind«. Donaufærgemanden nægter Hagen Overfart, fordi hans Herrer have mange Fjender, hvorfor han ikke vil føre Fremmede over til deres Land — og paa lignende Maade svarer Hárbard, at hans Herre bød ham ikke at sætte Landstrygere og Hestetyve over, men gode Mænd og saadanne, som vare ham bekjendte. Altsaa snarere en Grændsevogter, udvalgt af Fyrstens Hird, end en Færgemand i almindelig Forstand.
+    Hárbards Trudsel, at han vil vise sig som den haardeste Modstander Thor har mødt, siden han fældede Jætten Hrungner, bringer Thor til at mindes denne Daad og spørge, hvad Berømmeligt den Anden imidlertid har taget sig for, om han har nogen Daad at stille op derimod — hvorefter de begynde at overbyde hinanden. Hárbards Spørgsmaal: »Hvad tog du dig til imens, Thor«, er fuldstændig ulogisk, da Thor jo allerede har besvaret det; men jeg kan ikke med Dr. Finnur Jonsson heri se tilstrækkelig Grund til at anse det for en mekanisk Tilsætning fra senere Tider: i den overlegne Færgemands Mund er denne Skjødesløshed ikke ganske upassende og endnu mindre falder Thor ud af sin Rolle, naar han uden at ane Ondt troskyldig pralende disker op med sin næste Bedrift.
+<pb n="132" facs="173.jpg"/>    Disse Bedrifter vise alle Thor som »Jætters Fjende« og »Menneskets Ven«, der gjør Jorden beboelig og opdyrkelig ved at bekjæmpe de raa Naturdæmoner: »stor vilde Jætternes Æt blive, hvis de alle levede, og ingen Mennesker kunde da bo i Midgaard«. Derimod roser Hárbard sig af hensigtsløse Krigstog og af galante Eventyr. Skjøndt saaledes Thor som Kulturguden maatte synes at have den moralske Berettigelse paa sin Side, er det dog aabenbart at Digtet ikke tilfældig har nævnet sig efter Hárbard men staar paa dennes Standpunkt: i Sangerens Øine har Hárbard den moralske Ret, han er den høibaarne, ædle, overlegne Natur, medens den brave Thor gives til Pris for Latter som en plump Bonde, der forretter nyttigt men lidet berømmeligt Arbeide og forholder sig til sin Modstander som den flittige Haandværker til den frie Kunstner. Naar Uhland i denne Modsætning, som han rigtig har erkjendt, ikke vil se »nogen Spaltning af religiøse Anskuelser«, men kun »det nødvendige ydre Sammenstød af de forskjellige Retninger og Tilstande i den jordiske Tilværelse, som hver er stillet under sin Guds Beskyttelse«, saa er dette aabenbart Kortsynethed, og Müllenhoff har sikkert Ret, naar han siger, at der fra dette Digt falder Lys paa en Side af Nordens religiøse Udvikling, som næppe andet Steds i den Grad er synligt. Digtet er visselig bygget over »en Spaltning i religiøse Anskuelser« nemlig det Opsving, som Odinsdyrkelsen fik med Viking-Tiden i Modsætning til den ældre Thorscultus, som derved kom i Forfald. Herpaa tyder ogsaa Thors Ytring V. 20, at han er fredløs med al sin Æt — i alt Fald ligger det nærmere at opfatte disse Ord historisk-mythisk end natur-mythisk (Torden- og Agerbrugsguden hjemløs i Vintertiden). Det er to Tidsaander, som staa overfor hinanden: den gammeldags, sindige Hjemmeføding, der sidder paa sin Gaard og dyrker sin Jord — og den vidtforfarne, eventyrlystne og erobringsglade Krigeraand. Forfatteren — aandsbeslægtet med ham, der har efterladt os Odins-Eventyrene i Hávamál — staar med Liv og Sjæl paa den Sidstes Side og behandler Thor omtrent som en Nitschianer vilde affærdige det utilitaristiske Moralideal. Iøvrig har han for saa vidt Ret, som Vikingaandens Udlængsel virkelig styrede Norden mod Fremtiden, og den ved ingvæonsk Indflydelse omskabte Odin (Wotan) i sin Dobbeltegenskab af Kriger- og Runegud snart skulde vise sig som Kulturgud i dybere Forstand end Thor nogensinde kunde blive det.
+    Endnu kun nogle Bemærkninger til Belysning af Kvadets noget gaadefulde naturmythiske Elementer. I Begyndelsen siger Hárbard, at Thors Moder er død, og tilsidst viser han ham Vei til Verland hvor Fjørgyn (ɔ: Thors Moder Jorden) gjenfinder sin Søn og viser ham Ætlingernes Veie til Odins Lande. Jorden er død som en Følge af den strænge Vinter, fra hvis Rige Thor kommer (»østfra«), dog er den ikke endelig død, thi ad Veien tilvenstre vil Sønnen atter <pb n="133" facs="174.jpg"/>finde Moderen ilive. »Ved denne møisommelige Omvei — kommenterer Uhland — er efter hele Sammenhængen en ny Pløining og Udsæd at forstaa. For Thor, der kommer østfra, er Veien tilvenstre en sydlig, sommerlig: i Vaarsæden maa Thor søge sin Udvei; Verland er det af Mennesker beboede, opdyrkelige Land; »Ætlingernes Veie til Odins Lande« betegner da Sædens Opadstræben i Lys og Luft, Asernes Gebet i Modsætning til de mørke, isdækte Stier, ad hvilke Thor hidtil har vandret«.
+    Digtets Form er paafaldende, ja i sin Uregelmæssighed enestaaende i nordisk Literatur. Det vil ikke lykkes at inddele det i nogen af de bekjendte Stropher. Rhythmiske, bogstavrimede Prosalinier vexle med Kviðuháttr- eller Ljoðaháttr-Stropher eller med Blandingsformer af disse. At der ikke findes noget Sidestykke til denne frie Form berettiger dog neppe til at forkaste den som forvansket og ved rigoristiske Midler gjennemføre en bestemt Strophe, medens man vel maa anerkjende, at der kan have indsneget sig enkelte Indskud, der da, i Ly af den almindelige Regelløshed, vanskeligere kan paapeges end det er Tilfældet i andre Eddakvad; et saadant er efter Sijmons Mening L. 71—83 »Odin eier Jarlerne — Hvi skulde du over Sundet række«.
+</prose>
+
 <poetry>
-<nonum><center>Thor kvad:</center></nonum>
+<pb n="134" facs="175.jpg"/><nonum><center>Thor kvad:</center></nonum>
 <i>Hvo er den Svend blandt Svende, som hinsides Sundet stander?</i>
 
 <nonum><center>Færgekarlen kvad:</center></nonum>
@@ -2829,21 +2686,7 @@ Om Hávamáls Bestanddele og deres indbyrdes Forhold saavel som om Characteren a
 </body>
 </text>
 
-<text id="gjellerup2026111911">
-<head>
-  <firstline>Sangen om hvorledes Thor hentede sin Hammer har sikkert altid hørt til de</firstline>
-  <source pages="147" facsimile-pages="189-189"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-Sangen om hvorledes Thor hentede sin Hammer har sikkert altid hørt til de mest yndede af Eddaens Kvad, blandt hvilke den i Virkeligheden ogsaa saavel ved sin Ælde som ved sin kunstneriske Fuldendthed indtager en første Rangs Plads. Den er den eneste af de egentlige Gudesange, der har efterladt sig et sent middelalderligt Afkom (»Thor fra Havsgaard«) som et Vidnesbyrd om, hvor dybe Rødder dens burleske Humor havde slaaet i Folkebevidstheden; og det fortjener maaske her at erindres, at den er det første Stykke af hele Eddaen, der er trængt ud til en større ikke-skandinavisk Læsekreds, idet den ved Chamissos Oversættelse blev populær i Tydskland.
-    Fortællingens Gang er saa klart og overskuelig, og de oprindelig mythiske Elementer ere gaaet saa restløst op i den episke Omdigtning, at videre indledende Bemærkninger, saa vidt jeg kan skjønne, vilde være overflødige.
-</prose>
-</body>
-</text>
-
-<text id="gjellerup2006071301">
+<text id="gjellerup2006071301" aliases="gjellerup2026111911">
 <head>
   <title>Thrymskvadet</title>
   <firstline>Vred blev Vingthor, da han vaagned</firstline>
@@ -2863,6 +2706,11 @@ Sangen om hvorledes Thor hentede sin Hammer har sikkert altid hørt til de mest 
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+Sangen om hvorledes Thor hentede sin Hammer har sikkert altid hørt til de mest yndede af Eddaens Kvad, blandt hvilke den i Virkeligheden ogsaa saavel ved sin Ælde som ved sin kunstneriske Fuldendthed indtager en første Rangs Plads. Den er den eneste af de egentlige Gudesange, der har efterladt sig et sent middelalderligt Afkom (»Thor fra Havsgaard«) som et Vidnesbyrd om, hvor dybe Rødder dens burleske Humor havde slaaet i Folkebevidstheden; og det fortjener maaske her at erindres, at den er det første Stykke af hele Eddaen, der er trængt ud til en større ikke-skandinavisk Læsekreds, idet den ved Chamissos Oversættelse blev populær i Tydskland.
+    Fortællingens Gang er saa klart og overskuelig, og de oprindelig mythiske Elementer ere gaaet saa restløst op i den episke Omdigtning, at videre indledende Bemærkninger, saa vidt jeg kan skjønne, vilde være overflødige.
+</prose>
+
 <poetry>
 <nonum>1.</nonum>
 <i>Vred blev Vingthor, da han vaagned</i>
@@ -3067,10 +2915,22 @@ Sangen om hvorledes Thor hentede sin Hammer har sikkert altid hørt til de mest 
 </body>
 </text>
 
-<text id="gjellerup2026111922">
+<text id="gjellerup2026111923" aliases="gjellerup2026111922">
 <head>
-  <firstline>Denne Sang har trods sit selvstændige Indhold faaet Form af en Indledning</firstline>
-  <source pages="159-160" facsimile-pages="201-202"/>
+  <title>Hymeskvadet</title>
+  <firstline>Fordum Valguder fangede Vildt</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112007"/>.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-hymeskvadet.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Hymeskvadet</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 199, facsimile 198.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er dateret »92«. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="159-172" facsimile-pages="201-214"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3080,27 +2940,9 @@ Denne Sang har trods sit selvstændige Indhold faaet Form af en Indledning til d
 <pb n="160" facs="201.jpg"/>    Denne Kjedel, som han vinder ved at sønderhugge Glarkalken paa Jættens Hoved, er selve Verdenshavet »som Guden om Foraaret befrier fra de vinterlige Magters Herredømme, idet han gjennembryder dets Isskorpe, og som han derpaa fører til den skjønnere Aarstids Havgud.« (E. Mogk: Mythologie i »Grundriss der germanischen Philologie«.)
     Kvadet viser sig saavel ved sit fuldkomment regelmæssige Metrum som ved sine mange Kjendinger (»Vandkoger« for Kjedel, »Hornenes Høiborg« for Tyrens Hoved etc.) som den yngste af Eddaens Gudesange.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111923">
-<head>
-  <title>Hymeskvadet</title>
-  <firstline>Fordum Valguder fangede Vildt</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-hymeskvadet.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Hymeskvadet</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 199, facsimile 198.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er dateret »92«. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="161-172" facsimile-pages="203-214"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<nonum>1.</nonum>
+<pb n="161" facs="202.jpg"/><nonum>1.</nonum>
 <i>Fordum Valguder fangede Vildt;</i>
 <i>øllystne var de, da æde de skulde;</i>
 <i>Grene de svang, speided i Blod:</i>
@@ -3349,10 +3191,22 @@ Denne Sang har trods sit selvstændige Indhold faaet Form af en Indledning til d
 </body>
 </text>
 
-<text id="gjellerup2026111940">
+<text id="gjellerup2026111941" aliases="gjellerup2026111940">
 <head>
-  <firstline>Kvadet indledes og sættes i udtrykkelig Forbindelse med det foregaaende ved</firstline>
-  <source pages="175-176" facsimile-pages="217-218"/>
+  <title>Loke-Trætten</title>
+  <firstline>Siig mig, Eldir, — gaa ikke eet</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112008"/>.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-loketraetten.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Loketrætten</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 215, facsimile 214.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="175-194" facsimile-pages="217-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3364,27 +3218,9 @@ Kvadet indledes og sættes i udtrykkelig Forbindelse med det foregaaende ved et 
     Det lidet flatterende Lys, som <i>Lokasenna</i> kaster paa den nordiske Gudeverden, kunde føre til — og har ført til — den Antagelse, at Kvadet stammer fra en Tid, da den nordiske Gudetro befandt sig i Opløsningstilstand, ja maaske endogsaa skrev sig fra en Tilhænger af den nye Lære, som gjerne saae de hedenske Guder stillede i Gabestokken. Denne Antagelse er imidlertid uberettiget, da den lægger en ethisk Maalestok til Grund, som er fremmed for al hedensk Mythologie. Forfatteren af Lokasenna behøver ikke at bunde mindre dybt i Hedenskabet end Homer.
     Den afgjørende Rolle, som Thor spiller i »Lokasenna«, berettiger os til at regne dette Kvad med til Thorsangene.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111941">
-<head>
-  <title>Loke-Trætten</title>
-  <firstline>Siig mig, Eldir, — gaa ikke eet</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-loketraetten.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Loketrætten</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 215, facsimile 214.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="177-194" facsimile-pages="219-236"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<nonum><center>Loke kvad:</center></nonum>
+<pb n="177" facs="218.jpg"/><nonum><center>Loke kvad:</center></nonum>
 <nonum>1.</nonum>
 <i>Siig mig, Eldir, — gaa ikke eet</i>
     <i>Fjed længer fremad —!</i>
@@ -3840,24 +3676,13 @@ Kvadet indledes og sættes i udtrykkelig Forbindelse med det foregaaende ved et 
 </body>
 </text>
 
-<text id="gjellerup2026111942">
-<head>
-  <firstline>Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme</firstline>
-  <source pages="197" facsimile-pages="239-239"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et didaktisk Indhold, kun at det sidste ikke rummer mythisk Lærdom men en Sammenstilling af Synonymer, til Dels digteriske Kjendinger — dog alle af usammensat, endnu anskuelig Karakter — der med en vistnok vilkaarlig Opdigtelse gjøres til Tingenes Navne i de forskjellige »Verdener«: Gudeverdenen, Jætteverdenen, Dværgeverdenen o. s. v. Vilkaarligheden viser sig allerede deri, at det har været umuligt for de grundigste Kjendere af nordisk-germansk Mythologi at forbinde noget bestemt Begreb med Adskillelsen mellem Guder, Aser, Vaner (i Vølospá er Guder = Aser + Vaner) og høieste Magter (ginnregin) — ja det er endog øiensynligt, at Rimet i mange Tilfælde har været det eneste Inddelingsprincip; kun undtagelsesvis er en poetisk Stemningsværdi lagt til Grund, som naar de plumpe Jætters Navn paa Skoven »eldi« betegner dens Brændselsværd, medens Alfer nævne den »Fagergrenet«. Det eneste Oprindelige turde være den iøvrig mærkelige Omstændighed, at Nordboerne ligesom Grækerne har ment, at Guderne havde et fra det menneskelige forskjelligt Sprog, en ellers, saavidt jeg veed, enestaaende Anskuelse.
-    Rammen er mere kunstlet end i Vafthrudnesmál. Dvergen Alvis kommer til Thors Hjem, for at føre hans Datter hjem som Brud, i det han beraaber sig paa, at hun allerede er lovet ham, hvad Thor nægter at vide Noget om, da han har været borte fra Hjemmet. Imidlertid vil han give hende til Dvergen, hvis denne kan besvare hans Spørgsmaal om alle Verdner; og han opholder nu Dvergen saalænge med sine Spørgsmaal, til Solen er staaet op og Dvergen forstenes — i Følge en gammel Folketro, som vi gjenfinde i Sangen om Helge Hjørvards Søn, hvor Atle og Helge skjændes saa længe med Troldkvinden Hrimgerd, der vil ødelægge deres Skibe, at Solen staar op, og hun bliver staaende som en Stenstøtte i Havnen. Aandfuldt lakonisk kommenterer N. M. Petersen: »Moral: det er den philologiske Dværgekløgt, der hænger i Ordet og derover glemmer Verden. En Sten er han og en Sten bliver han«.
-</prose>
-</body>
-</text>
-
-<text id="gjellerup2026111943">
+<text id="gjellerup2026111943" aliases="gjellerup2026111942">
 <head>
   <title>Alvismál</title>
   <firstline>Bænke de brede, thi skal nu Brud</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112011"/>.</note>
+  </notes>
   <pictures>
     <picture type="illustration" src="1895-alvismal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
       Lorenz Frølich: illustreret blad til <i>Alvismál</i>, trykt 1895.
@@ -3866,12 +3691,17 @@ Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et
       <!-- metadata checked: 2026-11-19 -->
     </picture>
   </pictures>
-  <source pages="198-206" facsimile-pages="240-248"/>
+  <source pages="197-206" facsimile-pages="239-248"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et didaktisk Indhold, kun at det sidste ikke rummer mythisk Lærdom men en Sammenstilling af Synonymer, til Dels digteriske Kjendinger — dog alle af usammensat, endnu anskuelig Karakter — der med en vistnok vilkaarlig Opdigtelse gjøres til Tingenes Navne i de forskjellige »Verdener«: Gudeverdenen, Jætteverdenen, Dværgeverdenen o. s. v. Vilkaarligheden viser sig allerede deri, at det har været umuligt for de grundigste Kjendere af nordisk-germansk Mythologi at forbinde noget bestemt Begreb med Adskillelsen mellem Guder, Aser, Vaner (i Vølospá er Guder = Aser + Vaner) og høieste Magter (ginnregin) — ja det er endog øiensynligt, at Rimet i mange Tilfælde har været det eneste Inddelingsprincip; kun undtagelsesvis er en poetisk Stemningsværdi lagt til Grund, som naar de plumpe Jætters Navn paa Skoven »eldi« betegner dens Brændselsværd, medens Alfer nævne den »Fagergrenet«. Det eneste Oprindelige turde være den iøvrig mærkelige Omstændighed, at Nordboerne ligesom Grækerne har ment, at Guderne havde et fra det menneskelige forskjelligt Sprog, en ellers, saavidt jeg veed, enestaaende Anskuelse.
+    Rammen er mere kunstlet end i Vafthrudnesmál. Dvergen Alvis kommer til Thors Hjem, for at føre hans Datter hjem som Brud, i det han beraaber sig paa, at hun allerede er lovet ham, hvad Thor nægter at vide Noget om, da han har været borte fra Hjemmet. Imidlertid vil han give hende til Dvergen, hvis denne kan besvare hans Spørgsmaal om alle Verdner; og han opholder nu Dvergen saalænge med sine Spørgsmaal, til Solen er staaet op og Dvergen forstenes — i Følge en gammel Folketro, som vi gjenfinde i Sangen om Helge Hjørvards Søn, hvor Atle og Helge skjændes saa længe med Troldkvinden Hrimgerd, der vil ødelægge deres Skibe, at Solen staar op, og hun bliver staaende som en Stenstøtte i Havnen. Aandfuldt lakonisk kommenterer N. M. Petersen: »Moral: det er den philologiske Dværgekløgt, der hænger i Ordet og derover glemmer Verden. En Sten er han og en Sten bliver han«.
+</prose>
+
 <poetry>
-<nonum><center>Alvis kvad:</center></nonum>
+<pb n="198" facs="239.jpg"/><nonum><center>Alvis kvad:</center></nonum>
 <nonum>1.</nonum>
 <i>Bænke de brede, thi skal nu Brud</i>
     <i>gjøre sig til Reisen rede;</i>
@@ -4119,24 +3949,13 @@ Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et
 </body>
 </text>
 
-<text id="gjellerup2026111944">
-<head>
-  <firstline>Freyr, Njords Søn, havde en Dag sat sig paa Hlidskjalv og saae ud over</firstline>
-  <source pages="209" facsimile-pages="251-251"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-»Freyr, Njords Søn, havde en Dag sat sig paa Hlidskjalv og saae ud over alle Verdner; han saae til Jotunheim og saae der en fager Mø, da hun gik fra sin Faders Hal til Kvindestuen. Deraf fik han stor Hjertekvide. Skirner hed Freyrs Skosvend; Njord bad ham tale med Freyr, og Skade sagde —« — med dette lille Prosastykke indleder Samleren Sangen om Freyrs Kjærlighed til Jættedatteren Gerd, der er saa klar i sin Fortælling, at den fuldstændig taler for sig selv uden at trænge enten til denne Prosaindledning eller til de prosaiske Smaastykker, som Samleren et Par Steder har indskudt. Ligesom det sværmerisk erotiske Indhold, der her for første Gang møder os i Eddaen, saaledes har ogsaa Formen med sine Parallel-Effekter (8—9, 40—42), sine overraskende og uovertræffelige Udtryk for Elskovslængslen og sin ofte høist musikalske Rhythmik et stærkt romantisk Præg, og ofte synes man gjennem Oldsprogets stavrimede Vers at kunne høre den friere Kjæmpevisestrophe klinge.
-    Indholdet er oprindelig en Naturmythe. Jættelandets blændende Skjønhed, hvis hvide Arme faar Hav og Himmel til at lyse, er Sneen paa Bjærgliderne. Himmelguden Freyr forelsker sig i hende og sender sin Tjener »Lyseren«, hvis Beilen den kjølige Skjønne længe modstaar, men som dog tilsidst forstaar at smelte hendes Hjerte, ganske vist mere med Trudsler om Anvendelse af de frygtelige Kræfter, han er i Besiddelse af, end ved rige Løfter om Solguldet (Æblerne og Ringen Drøpner). Denne Skirner er da Vaaren selv med Solstraalens Sværd og Foraarsvinden til Ganger. Mindst synes Trylleilden at passe, der aabenbart er kommet herover fra en beslægtet romantiseret Natur-Mythe (Svipdag—Sigurd; se Indl. til den følg. Sang); et Vink giver den paafaldende Betegnelse »mørk«; paa Grund af det mythiske Element kan der neppe menes, at det sortner for den, der rider igjennem den (som jeg først oversatte »sortnende«); men der maa tænkes paa et skjult Baals Røgmasser — de mørke Sneskyer, der hænge over Bjærgliden og som Vaarsolen gjennemtrænger og Vinden spreder. — I den udsprungne Foraarslund favnes de Elskende.
-</prose>
-</body>
-</text>
-
-<text id="gjellerup2026111945">
+<text id="gjellerup2026111945" aliases="gjellerup2026111944">
 <head>
   <title>Skirners Fart</title>
   <firstline>Stat op Skirner! gak at søge</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112005"/>.</note>
+  </notes>
   <pictures>
     <picture type="illustration" src="1895-skirners-fart.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
       Lorenz Frølich: illustreret blad til <i>Skirners Fart</i>, trykt 1895.
@@ -4145,12 +3964,17 @@ Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et
       <!-- metadata checked: 2026-11-19 -->
     </picture>
   </pictures>
-  <source pages="210-221" facsimile-pages="252-263"/>
+  <source pages="209-221" facsimile-pages="251-263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
+<prose>
+»Freyr, Njords Søn, havde en Dag sat sig paa Hlidskjalv og saae ud over alle Verdner; han saae til Jotunheim og saae der en fager Mø, da hun gik fra sin Faders Hal til Kvindestuen. Deraf fik han stor Hjertekvide. Skirner hed Freyrs Skosvend; Njord bad ham tale med Freyr, og Skade sagde —« — med dette lille Prosastykke indleder Samleren Sangen om Freyrs Kjærlighed til Jættedatteren Gerd, der er saa klar i sin Fortælling, at den fuldstændig taler for sig selv uden at trænge enten til denne Prosaindledning eller til de prosaiske Smaastykker, som Samleren et Par Steder har indskudt. Ligesom det sværmerisk erotiske Indhold, der her for første Gang møder os i Eddaen, saaledes har ogsaa Formen med sine Parallel-Effekter (8—9, 40—42), sine overraskende og uovertræffelige Udtryk for Elskovslængslen og sin ofte høist musikalske Rhythmik et stærkt romantisk Præg, og ofte synes man gjennem Oldsprogets stavrimede Vers at kunne høre den friere Kjæmpevisestrophe klinge.
+    Indholdet er oprindelig en Naturmythe. Jættelandets blændende Skjønhed, hvis hvide Arme faar Hav og Himmel til at lyse, er Sneen paa Bjærgliderne. Himmelguden Freyr forelsker sig i hende og sender sin Tjener »Lyseren«, hvis Beilen den kjølige Skjønne længe modstaar, men som dog tilsidst forstaar at smelte hendes Hjerte, ganske vist mere med Trudsler om Anvendelse af de frygtelige Kræfter, han er i Besiddelse af, end ved rige Løfter om Solguldet (Æblerne og Ringen Drøpner). Denne Skirner er da Vaaren selv med Solstraalens Sværd og Foraarsvinden til Ganger. Mindst synes Trylleilden at passe, der aabenbart er kommet herover fra en beslægtet romantiseret Natur-Mythe (Svipdag—Sigurd; se Indl. til den følg. Sang); et Vink giver den paafaldende Betegnelse »mørk«; paa Grund af det mythiske Element kan der neppe menes, at det sortner for den, der rider igjennem den (som jeg først oversatte »sortnende«); men der maa tænkes paa et skjult Baals Røgmasser — de mørke Sneskyer, der hænge over Bjærgliden og som Vaarsolen gjennemtrænger og Vinden spreder. — I den udsprungne Foraarslund favnes de Elskende.
+</prose>
+
 <poetry>
-<nonum><center>Skade kvad:</center></nonum>
+<pb n="210" facs="251.jpg"/><nonum><center>Skade kvad:</center></nonum>
 <nonum>1.</nonum>
 <i>Stat op Skirner! gak at søge</i>
     <i>Samtale med Sønnen;</i>
@@ -4448,7 +4272,7 @@ Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et
 
 <text id="gjellerup2026111912">
 <head>
-  <firstline>Viserne »Grogalder« og »Fjölsvinnsmál« findes først i Papirhaandskrifter fra</firstline>
+  <title>Svipdagsmál</title>
   <pictures>
     <picture type="illustration" src="1895-svipdagsmal.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
       Lorenz Frølich: illustreret blad til <i>Svipdagsmál</i>, trykt 1895.
@@ -4457,7 +4281,7 @@ Alvismál er Thorsangenes Sidestykke til Vafthrudnesmál. En poetisk Ramme om et
       <!-- metadata checked: 2026-11-19 -->
     </picture>
   </pictures>
-  <source pages="225-228" facsimile-pages="267-270"/>
+  <source pages="225-244" facsimile-pages="267-286"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4472,13 +4296,18 @@ Viserne »Grogalder« og »Fjölsvinnsmál« findes først i Papirhaandskrifter 
     I Fjölsvinn, som har givet Kvadet Navn, er det vel rigtigst kun at se Borgvogteren; at han har et af Odins Navne (den Megetvidende) og minder om Hárbard, kan bero paa hans Rolle og paa den lignende Situation. Men umuligt er det vel heller ikke, at der kan ligge en mythisk Betydning deri, som dog nu neppe længer er gjennemsigtig; at han har bygget Gjærdet af en Lerrises Lemmer tyder dog stærkt paa den oprindelige Guddommelighed.
     Ved Forbindelsen med Freyr-Gerda Mythen og med Sigurd-Brynhild Mythen er Kvadets Naturbillede i det Væsentlige givet. Medens man i den første utvivlsomt har en Foraarsmythe, ere de to andre snarere at opfatte som Solopgangsmyther: naar Naturen efter Natten vaagner til nyt Liv, er det de ensomme, høie Bjergtinder, som først vækkes af Solguden og ligesom befries af en tvungen Dvale, og de opstigende Taager gjennemildnede af de første Solstraaler, synes da at hegne dem med et bølgende Flammehav.
 </prose>
-</body>
-</text>
+
+<prose>
+<pb n="229" facs="270.jpg"/><center>Grogalder</center>
+</prose>
 
 <text id="gjellerup2026111913">
 <head>
   <title>Grogalder</title>
   <firstline>Vaagn op, Groa! du gode, vaagn</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112017"/>.</note>
+  </notes>
   <source pages="229-232" facsimile-pages="271-274"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4573,10 +4402,17 @@ Viserne »Grogalder« og »Fjölsvinnsmál« findes først i Papirhaandskrifter 
 </body>
 </text>
 
+<prose>
+<pb n="233" facs="274.jpg"/><center>Fjölsvinnsmál</center>
+</prose>
+
 <text id="gjellerup2026111914" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Fjölsvinnsmál</title>
   <firstline>Hvad er det for Trold, som tøver ved Forgaard</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112018"/>.</note>
+  </notes>
   <source pages="233-244" facsimile-pages="275-286"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
   <!-- Kildekontrol: Side 244, strofe 46.4: »naar En en Anden elsker.« har to forskellige ord med samme bogstaver; kildens ordlyd er bevaret. -->
@@ -4872,10 +4708,25 @@ Viserne »Grogalder« og »Fjölsvinnsmál« findes først i Papirhaandskrifter 
 </body>
 </text>
 
-<text id="gjellerup2026111915">
+</body>
+</text>
+
+<text id="gjellerup2026111916" aliases="gjellerup2026111915">
 <head>
-  <firstline>Rigsþula, Sangen om Rig, har aabenbart til Formaal at fremstille de forskjellige</firstline>
-  <source pages="247-248" facsimile-pages="289-290"/>
+  <title>Sangen om Rig</title>
+  <firstline>Fordum gik ad grønne Stier</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112015"/>.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-rig.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Sangen om Rig</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 287, facsimile 286.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret 1894. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="247-267" facsimile-pages="289-309"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4885,27 +4736,9 @@ Rigsþula, Sangen om Rig, har aabenbart til Formaal at fremstille de forskjellig
     De forskjellige Udfyldninger og Omsætninger, som Sijmons (væsentlig efter Bugges og Grundtvigs Bemærkninger) dels har optaget dels antydet, anser jeg for at være saa utvivlsomt rigtige og tillige saa vigtige for Digtets Virkning, at jeg ikke har betænkt mig paa at følge dem. Navnlig hører herhen Omsætningen af V. 49—50 til Slutningen (i Hndskr. efter V. 36, om Jarl). Dette Fragment viser os da Rigs Sønnesøn, Jarls Søn, Kon, i hvis Navn allerede <pb n="248" facs="289.jpg"/>Kongetitlen skimtes (Konr ungr, V. 44, 47 — konungr) paa Hærtog mod Dan og Danp. Den første nævner Saxo som Konge (dog uden Titel) af Danmark, der fik sit Navn efter ham, den anden nævnes i Atlakviða 5 som rig paa Gaarde, og i Forbindelse med ham nævnes »den berømte Skov som Mænd kalde Mørkvid«, jvf. myrkvan við i Slutningen af vort Kvad (49, 3; efter Snorre skulde han være en Søn af Rig (Kons Tilnavn), den Første, der kaldtes Konge i Danmark. Utvivlsomt gaar altsaa Digtets Slutning ud paa at sætte Kon i Forbindelse med den danske Old-Kongeslægt — først, som det synes, i Krigsforhold, som dog hos Nordboerne ofte var Indledning til Fostbroderskab og Besvogring.
     Det er netop i denne Retning, at et Par Fragmenter med tilstrækkelig Tydelighed peger, — hvad man ganske vist ikke kunde ane, den Gang de ligesom 49—50 befandt sig paa urette Sted. Linierne »Klarere Bryn, lysere Bryst, hvidere Hals end Vintersne« — her V. 48 — findes i Texten efter V. 28, der herved blev en sexliniet Vise; allerede herved røbede de deres Uægthed, navnlig da Skildringen af Salsfruen ifølge Kvadets hele strenge Parallelisme ikke kunde optage to Viser. Nærmest laa det da at antage, at disse Linier hørte til den tabte Slutning; men Bugge hensatte dem efter V. 47 som to Linier af det sidste Vers af Fuglens Sang, og Rigtigheden af denne Kombination synes mig aldeles utvivlsom. Indførelsen af Fuglestemmen tyder paa et vigtigt nyt Moment, og dette kan ifølge hele Kvadets Gang næppe gaa ud paa andet end paa at skaffe Kon en Hustru; efter at have sunget om Dan og Danps Rigdom og Tapperhed har da Fuglen i de to første Linier af V. 48 sunget om deres Søster (eller Datter), prist hendes Skjønhed og maaske ogsaa nævnet hendes Navn; ganske paa samme Maade se vi jo i Fafnesmál Fuglene vise Sigurd Vei til Brynhild og Gudrun. Og for at Udfaldet ikke skulde være tvivlsomt, havde Linien »bygged sammen, bytted Ringe« forstukket sig i V. 23, hvorfra allerede Sv. Grundtvigs kritiske Blik forviste den; utvivlsomt har Bugge Ret i, at den hører til Slutningen, der altsaa har handlet om Kons Bryllup med en dansk Jomfru, en Søster til Dan og Danp eller en Datter af en af dem. — Den episke Bredde, som Kvadet tager efter Kons Fremtræden, viser, at han er Hovedhelten, saa at ved hans Bryllup den passende Afslutning var naaet. Hele denne Bugges Reconstruction af Rigsþulas Slutning hører til det Genialeste paa Textkritikkens Omraade og bærer i en sjelden Grad Sikkerhedens Præg.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111916">
-<head>
-  <title>Sangen om Rig</title>
-  <firstline>Fordum gik ad grønne Stier</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-rig.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Sangen om Rig</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 287, facsimile 286.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. Tegningen er signeret og dateret 1894. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="249-267" facsimile-pages="291-309"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
-<num>1</num><i>Fordum gik ad grønne Stier</i>
+<pb n="249" facs="290.jpg"/><num>1</num><i>Fordum gik ad grønne Stier</i>
 <i>hin kloge As stærk og aldrende,</i>
 <i>rask og rørig Rig vandrende</i>
 <i>— — — — — — — — — —</i>
@@ -5170,10 +5003,22 @@ Rigsþula, Sangen om Rig, har aabenbart til Formaal at fremstille de forskjellig
 </body>
 </text>
 
-<text id="gjellerup2026111917">
+<text id="gjellerup2026111918" aliases="gjellerup2026111917,gjellerup2026111919">
 <head>
-  <firstline>Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror</firstline>
-  <source pages="271-273" facsimile-pages="313-315"/>
+  <title>Sangen om Hyndla</title>
+  <firstline>Vaagn Møers Mø! vaagn Vennen min</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112013"/>.</note>
+  </notes>
+  <pictures>
+    <picture type="illustration" src="1895-hyndla.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
+      Lorenz Frølich: illustreret blad til <i>Sangen om Hyndla</i>, trykt 1895.
+      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 311, facsimile 310.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
+      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
+      <!-- metadata checked: 2026-11-19 -->
+    </picture>
+  </pictures>
+  <source pages="271-282" facsimile-pages="313-324"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5185,26 +5030,10 @@ Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror paa
     For det Første vilde Udtrykket »min Gjæst« om hendes Følgesvend paa et fremmed Sted være meget slet valgt, saa slet, at det i alt Fald gjør Rettelsen saare mislig. Dernæst er det ikke meget troligt, at Digteren, naar det var hans Mening, at Ottar var aabenlys tilstede, slet ikke indførte ham, ikke gav os nogen som helst Forestilling om, hvorledes han befandt sig i Freyas Følge og endelig under hele Samtalen ikke vidste at tildele ham den ringeste Rolle. Endelig er det paafaldende, i hvilken Grad Digtet ved denne Opfattelse ikke blot taber i Anskuelighed men ogsaa i Originalitet, ja hvorledes endogsaa de logiske Traade briste og alt falder fra hinanden, f. Ex. hvorfor tales der først om et Ridt til Valhal, der ikke synes at blive til Noget, og umiddelbart derefter om Arvestriden mellem Ottar og Angantyr? — Naar man følger Texten, der siger, at Ottar er selve Galten, saa bliver dette ret forklarligt: Freya har haabet at faa Vølven til at ride med og faa hende til underveis at tale om Helteslægter — deriblandt da <pb n="273" facs="314.jpg"/>ogsaa om Ottars; men i et Par Vers, som vistnok maa være faldne ud mellem 8 og 9 (een Linie er sikkert udfalden) vægrer Vølven sig absolut mod at følge og viser at hun veed, at Ottar er Galten. Freya opgiver da al videre Forstillelse som unyttig og forelægger Spørgsmaalet direkte. Jeg kan ikke se Andet, end at den ledende Bevæggrund for den modsatte Opfattelse, med dens Borteskamotering af Galten i V. 46, er Ønsket om at slippe for den barokke eller vel endog anstødelige Forestilling, at Freya kommer ridende paa sin Elsker i en Galts Skikkelse, — hvilket just er det Bedste og Fantasifuldeste i Digtet. —
     Midt i Hyndloljóð er der indskudt en Række Viser, der intetsomhelst har med det Øvrige at gjøre; allerede i Oldtiden blev disse Viser anset for en Interpolation, og det Digt, af hvilke de ere Fragmenter, kaldtes »<w>Den korte Vølospá</w>«; det synes at have omhandlet Guders og dæmoniske Væsners Herkomst og Slægtskabsforhold, og denne genealogiske Charakter gav Anledning til at man opbevarede Brudstykkerne her. Digtet er formodentlig ældre end Hyndloljóð og har høi mythologisk Interesse ved sit Slutningsvers, der formodentlig har skaffet det dets Hædersnavn, da det belyser og bekræfter Slutningsvisen af Vølospá og sammen med denne udgjør det sikre Vidnesbyrd om et Hovedpunkt i den nordiske Eschatologi, her udtrykkelig betegnet som en esoterisk Lære (»Faa se længer o. s. v.), i hvilken man med Urette har set direkte christelig Paavirkning. Man har anset denne Mægtige for at være af jødisk Oprindelse og identisk med Jehova (eller med Christus som Verdensdommer), medens han er en Urgerman (Himmelguden Tivaz) og aabenbart — da han er Hersker i en Gude-Stat — ikke af theistisk Natur (se iøvrig Kommentaren til næstsidste Vise af Vølospá).
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111918">
-<head>
-  <title>Hyndloljoð</title>
-  <firstline>Vaagn Møers Mø! vaagn Vennen min</firstline>
-  <pictures>
-    <picture type="illustration" src="1895-hyndla.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
-      Lorenz Frølich: illustreret blad til <i>Sangen om Hyndla</i>, trykt 1895.
-      <!-- Kilde og ophav: titelbladet angiver Lorenz Frølich; det særskilte billedblad er kontrolleret mod farvescanningen https://www.kb.dk/e-mat/dod/130004860838-color.pdf. Lokal PDF-side 311, facsimile 310.jpg. Kunstneren blev ikke fundet ved navn eller navnevarianter i Kalliopes personkorpus. Gengivelsen er trykt 1895; den nærmere trykteknik, originaltegningens fysiske mål, samling og inventarnummer er ikke dokumenteret. Billedbladets fysiske mål er heller ikke dokumenteret. Ingen sikre individuelle eksterne identifikatorer blev fundet. -->
-      <!-- Digital gengivelse: Det Kgl. Bibliotek. Kunstneren levede 1820-1908 (https://commons.wikimedia.org/wiki/Creator:Lorenz_Frølich); historisk trykt illustration. Ingen særskilt billedlicens er oplyst i den anvendte scanning. -->
-      <!-- metadata checked: 2026-11-19 -->
-    </picture>
-  </pictures>
-  <source pages="274-279" facsimile-pages="316-321"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="274" facs="315.jpg"/><nonum><center>Hyndloljoð</center></nonum>
+
 <nonum><center><sc>Freya kvad:</sc></center></nonum>
 <num>1</num><i>Vaagn Møers Mø! vaagn Vennen min!</i>
 <i>Søster Hyndla, i Hulen boer!</i>
@@ -5316,18 +5145,10 @@ Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror paa
 <i>drikke han skal den dyre Bryg,</i>
 <i>Alle Guder Ottar skjærme!</i>
 </poetry>
-</body>
-</text>
 
-<text id="gjellerup2026111919">
-<head>
-  <title>Indskud i Hyndloljoð</title>
-  <firstline>Somme giver han Seir og Somme Guld</firstline>
-  <source pages="280-282" facsimile-pages="322-324"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
 <poetry>
+<pb n="280" facs="321.jpg"/><nonum><center>Indskud i Hyndloljoð</center></nonum>
+
 <num>3</num><i>Somme giver han Seir og Somme Guld,</i>
 <i>Mæle til Mange, Mandvid til Andre,</i>
 <i>til Kjæmper Bør, Kunst til Skjalde,</i>
@@ -5402,23 +5223,14 @@ Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror paa
 </body>
 </text>
 
-<text id="gjellerup2026111920">
-<head>
-  <firstline>Angaaende dette Fragment se Slutningen af Indledningen til Hyndloljoð</firstline>
-  <source pages="284" facsimile-pages="326-326"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
-<i>Angaaende dette Fragment se Slutningen af Indledningen til Hyndloljoð.</i>
-</prose>
-</body>
-</text>
-
-<text id="gjellerup2026111921">
+<text id="gjellerup2026111921" aliases="gjellerup2026111920">
 <head>
   <title>Den korte Vølospá</title>
   <firstline>De var elve Aser i Tal</firstline>
+  <notes>
+    <note><i>Angaaende dette Fragment se Slutningen af Indledningen til Hyndloljoð.</i></note>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112014"/>.</note>
+  </notes>
   <pictures>
     <picture type="illustration" src="1895-korte-volospa.jpg" href="https://www.kb.dk/e-mat/dod/130004860838-color.pdf">
       Lorenz Frølich: illustreret blad til <i>Den korte Vølospá</i>, trykt 1895.
@@ -5427,12 +5239,12 @@ Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror paa
       <!-- metadata checked: 2026-11-19 -->
     </picture>
   </pictures>
-  <source pages="285-287" facsimile-pages="327-329"/>
+  <source pages="284-287" facsimile-pages="326-329"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
-<num>1</num><i>De var elve Aser i Tal,</i>
+<pb n="285" facs="326.jpg"/><num>1</num><i>De var elve Aser i Tal,</i>
 <i>da paa Baalet Balder segned;</i>
 <i>værdig til Hevner Vale sig tyktes,</i>
 <i>da sin Broders Bane han vog.</i>
@@ -5505,15 +5317,18 @@ Intet af Eddaens Kvad er saa dunkelt som dette, hvilket dog maaske kun beror paa
 </body>
 </text>
 
-<text id="gjellerup2026111924">
+<text id="gjellerup2026111924" aliases="gjellerup2026111925" ignore-tests="repeated-adjacent-word">
 <head>
-  <title>Commentar til Vølospá</title>
+  <title>Anmærkninger</title>
   <firstline>Dels paa Grund af Vølospás Dunkelhed, der mægtigt forøges ved de mange</firstline>
-  <source pages="291-312" facsimile-pages="333-354"/>
+  <source pages="291-325" facsimile-pages="333-367"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
+  <!-- Kildekontrol: Side 320: »der ønskes En en Sot paa Halsen,« har to forskellige ord med samme bogstaver; kildens ordlyd er bevaret. -->
 </head>
 <body>
 <prose>
+<center>Commentar til Vølospá</center>
+
 Dels paa Grund af Vølospás Dunkelhed, der mægtigt forøges ved de mange gængse vrange Forklaringer og Textordninger, dels ogsaa af Hensyn til den overordentlige ja enestaaende Betydning af dette Digt har jeg besluttet mig til ikke her at lade det bero ved enkelte spredte Anmærkninger, men i Stedet derfor at give en fortløbende Commentar, som i det væsentlige er en Forkortelse af Müllenhoffs epokegjørende Fortolkning i hans »Deutsche Alterthumskunde« B. V.
 
     Vise 1, Linie 1. <span lang="is"><i>Hljóðs biðk allar helgar kindir.</i></span> Hljóð er »lyttende Tavshed«. I Tydskland var Præstens Indgangsformel: »<span lang="de">Ich gebiete lust (hlust = hljóð) und verbiete unlust</span>«; ganske lignende lød det ved Romernes hellige Handlinger: <span lang="la"><i>favete lingvis</i></span> og hos Grækerne <span lang="el"><i>εὐφημεῖτε</i></span> ɔ: »begunstiger (Handlingen) med Tungerne«. Vølven henvender denne høitidelige Opfordring til alle Menneskene, »Heimdals Sønner« (efter Mythen i Rigsthula) og kalder dem »hellige Slægter«; men dette Udtryk kan ikke tages i almindelig Betydning, hvorved det vilde blive et tomt <span lang="la"><i>Epitheton ornans</i></span>; Menneskene ere kun hellige i Egenskab af hendes Tilhørere, saalænge de ere under Indvielsen af den hellige Handling (jfr. Latinernes Udtryk »<span lang="la"><i>profani</i></span>« for dem der ikke deltage i Handlingen).
@@ -5611,19 +5426,9 @@ Naar man betænker, at Ragnarokskampen iøvrig er koncentreret til Hovedgudernes
     V. 49 f. Denne Vise, der indfører noget ganske Nyt og altsaa ikke kunde have noget Forbillede i det Foregaaende, har en næsten fuldstændig parallel Modsætning i Slutnings-Visen, et Forhold, som det er af yderste Vigtighed at give nøie Agt paa. Naar man nemlig har mistænkeliggjort V. 49 som et kristeligt Indskud, saa viser dets uopløselige Forbindelse med V. 50, at denne Tvivl ikke blot er textkritisk ubegrundet, men endog textkritisk umulig. Thi at V. 50, om nogen, er hedensk kan Ingen benægte; at ogsaa V. 49 er hedensk i sin Tankegang har man benægtet, men kun af Overfladiskhed. Man oversatte den Mægtige kommer til Stordommen og saae heri Christus, der kommer til Dommedag: en vild Feiltagelse. »Regin forhøier her som ellers Begrebet af det andet Ord, idet det udelukker enhver Sammenligning: . . . han kommer for at holde Ret som ingen Anden.« Men her er ikke Tale om een enkelt Rettergang: hans Dom er Herredømmet. (Ml. Ovs. saa feilagtig som muligt: »Da kommer den Mægtige, naar der mødes til Doms.«) Indholdet af hans Virksomhed er utvivlsom rigtigt betegnet i de to sidste Linier af Visen, som rigtignok kun findes i sene Papirshaandskrifter, og desuden vækker Metrikernes Betænkelighed, hvorfor Hoffory misbilliger, at Mlnhf. har optaget dem i Texten. Men selv om de ei høre hjemme i en Text-Udgave (Sijmons har med Urette end ikke noteret dem blandt Varianterne), saa er der for en Oversætter mindre Betænkelighed ved at medtage dem, da det er saa høist sandsynligt, at de i Indholdet kommer de oprinde<pb n="312" facs="353.jpg"/>lige Linier meget nær — saa at der maaske i en Oversættelse ingen mærkelig Forskjel vilde blive; ja det sidste »Vise-Ord«: »(Vedtægter) som skulle bestaa« danner en Modsætnings-Parallel til det sidste Vise-Ord af 50: »nu maa han synke«, der er i en saa inderlig Forbindelse med hele Forholdet mellem disse to Viser, at det turde tyde paa, at heller ikke Liniernes <w>Ordlyd</w> er ganske uægte. Tilfældig kan den næppe være, og at en Interpolator, der gik ganske selvstændig til Værks, skulde have beflittet sig paa denne Parallelisme, er ikke meget sandsynligt: hos en oprindelig Digter kommer Sligt af sig selv, det opfindes ikke let af En, der udefra kommer til.
     Hvem er denne »Mægtige«? Han omtales endnu eet Sted i den »korte Vøluspá« (Hyndluljóð 44), som ikke vover at nævne ham, og tilføier, at »Faa ser længer frem end til Odins Møde med Ulven«. Den store Vøluspás Vølve hørte til disse Faa. Hans Navn nævner hun vel ikke, men hun kjender ei blot hans Væsen og Virken, — hun veed ogsaa, hvorfra han kommer: <w>fra oven</w>, »fra den samme Høide, hvor den ældste germanske Sol og Himmelgud thronede« — fra den oldgermanske Himmel, thi han er selv »den gjenopstandne store Tius, Irmintiu, den sande Fimboltyr, hvem Odin havde stødt fra Thronen og trængt tilbage, men som aldrig var bleven ganske glemt« (Hoff.). Men vistnok var Vølven ikke blot en af de Faa, der mindedes ham, men en af de Færre, hos hvem denne Forestilling havde religiøs-praktisk Betydning og sikkert den Eneste, hos hvem den affødte en profetisk Inspiration, der i sin Forbindelse af kunstnerisk Urkraft og religiøs-metaphysisk Dybsind i sin Art er enestaaende i Verdensliteraturen.
 </prose>
-</body>
-</text>
 
-<text id="gjellerup2026111925" ignore-tests="repeated-adjacent-word">
-<head>
-  <firstline>Disse Anmærkninger bedes supplerede med Indledningerne til de enkelte Kvad</firstline>
-  <source pages="313-325" facsimile-pages="355-367"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-  <!-- Kildekontrol: Side 320: »der ønskes En en Sot paa Halsen,« har to forskellige ord med samme bogstaver; kildens ordlyd er bevaret. -->
-</head>
-<body>
 <prose>
-Disse Anmærkninger bedes supplerede med Indledningerne til de enkelte Kvad, (i hvilke jeg har forudskikket det, der var Væsentligst for Forstaaelsen) samt for Hávamáls og Grimnesmáls Vedkommende ogsaa med de betreffende Paragrapher i den almindelige Indledning.
+<pb n="313" facs="354.jpg"/>Disse Anmærkninger bedes supplerede med Indledningerne til de enkelte Kvad, (i hvilke jeg har forudskikket det, der var Væsentligst for Forstaaelsen) samt for Hávamáls og Grimnesmáls Vedkommende ogsaa med de betreffende Paragrapher i den almindelige Indledning.
 
 <center>Midnatssol og Maane.</center>
 
