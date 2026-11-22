@@ -46,12 +46,17 @@ opførte digte; der er ikke attesteret fuld facsimilekorrektur.
   samlingen *Den ældre Edda*.
   Bogens indholdsfortegnelse har ikke selv overskrifter for gude-/heltedelen;
   der er derfor ikke opfundet sådanne sektionsoverskrifter.
-- Þrymskviða er forbundet som variant med teksten fra 1787. Fem tekster hos
-  Gjellerup er forbundet med originaler: Vafthrudnesmál, Grimnesmál,
-  Vegtamskvide, Thrymskvadet og Sangen om Hárbard. Gjellerups 32 strofer i
-  Thrymskvadet svarer til 1932-udgavens 34, idet 5+6 og 25+26 er samlet.
-  Grimnesmál omordner store dele i tematiske tillæg. Relationerne identificerer
-  digtene; de hævder ikke, at Gjellerup har benyttet udgaven fra 1932.
+- Þrymskviða er forbundet som variant med teksten fra 1787. Gjellerups
+  1895-udgave har henvisninger fra 17 tekstposter til 16 kvad i 1932-udgaven.
+  Det omfatter den samlede post med indskud i Vøluspá. Indledningsprosaen
+  til Grímnismǫ́l står sammen med kvadet. De tidligere id’er for
+  Vafthrudnesmál, Grimnesmál og Vegtamskvide er videreført i 1895-udgaven.
+- Gjellerups 32 strofer i Thrymskvadet svarer til 1932-udgavens 34, idet
+  5+6 og 25+26 er samlet. Grimnesmál omordner store dele i tematiske tillæg.
+  I Hávamál svarer Gjellerups strofer med marginnumrene 76–77 til 1932-udgavens
+  75–76. I Vølvens Spaadom svarer stroferne om Ymer og Nidhugg til 3 og 66 i
+  1932-udgaven, og stroferne om blandt andet dværgene står i særskilte uddrag
+  hos Gjellerup. Relationerne peger på Finnur Jónssons senere udgave.
 
 ## Resterende agentarbejde før færdigstatus
 
@@ -69,8 +74,6 @@ opførte digte; der er ikke attesteret fuld facsimilekorrektur.
 5. Udfør uafhængig anden korrekturgennemgang, genkontrollér fund, og tilføj
    først derefter kvalitetsflag og korrekturattest. Bevar `status="incomplete"`
    indtil kravene er opfyldt.
-6. Sammenhold Gjellerups Havamál og Vølvens Spaadom med den konkrete udgaves
-   omordninger og udeladelser, før der oprettes yderligere oversættelsesrelationer.
 
 ## Digtinventar
 
