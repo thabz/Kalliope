@@ -132,6 +132,11 @@ Og ydmygt sig i <i>Dine</i> Laurbær vinde!
 <text id="oehlen2002101101a" skip-index="true">
 <head>
   <title>Fortale</title>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/oehlen2002101101a -->
+    <!-- Kilde: https://tekster.kb.dk/text/adl-authors-oehlens-p-root.pdf -->
+    <note editorial="true">Eddadigtet, som Oehlenschläger nævner som forlæg for Vaulundurs Saga, er <xref poem="eddadigte2026112010"/>.</note>
+  </notes>
   <source in="bd1" pages="xiii-xxiv" facsimile-pages="16-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -10539,6 +10544,11 @@ Amen! Amen! Amen!
 <text id="oehlen2002101401" skip-index="true">
 <head>
   <title>Vaulundurs Saga</title>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/oehlen2002101101a -->
+    <!-- Kilde: https://tekster.kb.dk/text/adl-authors-oehlens-p-root.pdf -->
+    <note editorial="true">Fortællingen bygger på <xref poem="eddadigte2026112010"/>.</note>
+  </notes>
   <source in="bd2" pages="1-74"/>
   <places>
     <place ref="valhalla" relation="mentioned"/>

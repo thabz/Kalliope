@@ -37,6 +37,10 @@
 <head>
   <title>Fortale</title>
   <nofirstline/>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091301 -->
+    <note editorial="true">Fortalen nævner kvadene om vølsungerne og niflungerne i <a work="eddadigte/1932">Den ældre Edda</a>.</note>
+  </notes>
   <source pages="V-XII" facsimile-pages="8-15"/>
   <keywords>oehlenschlaeger,fouque</keywords>
   <places>
@@ -1247,6 +1251,12 @@ Jeg griber den med Tro og døer.
 <head>
   <title>Sigurd og Brynhild</title>
   <firstline>Hvad vil du mig? du brede Egetop!</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091306 -->
+    <!-- Kilde: https://www.grundtvigsværker.dk/tekstvisning/19648/0 -->
+    <!-- Kilde: https://www.heimskringla.no/wiki/Heltedigte_(FJ_1907) -->
+    <note editorial="true">Se også eddadigtene <xref poem="eddadigte2026112024"/> og <xref poem="eddadigte2026112028"/>.</note>
+  </notes>
   <source pages="41-162"/>
   <places>
     <place ref="mount-sinai" relation="mentioned"/>
@@ -5283,6 +5293,11 @@ Som aldrig døer og aldrig den fortærer.
 <head>
   <title>Atle og Gjukungerne</title>
   <firstline>Det ganger nær til Midnat, lader nu</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091308 -->
+    <!-- Kilde: https://www.heimskringla.no/wiki/Heltedigte_(FJ_1907) -->
+    <note editorial="true">Se også eddadigtene <xref poem="eddadigte2026112033"/> og <xref poem="eddadigte2026112034"/>.</note>
+  </notes>
   <source pages="165-234"/>
   <places>
     <place ref="valhalla" relation="mentioned"/>
