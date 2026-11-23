@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="pascoli" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Giovanni</firstname>
+    <lastname>Pascoli</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1855-12-31</date>
+      <place>San Mauro di Romagna</place>
+    </born>
+    <dead>
+      <date>1912-04-06</date>
+      <place>Bologna</place>
+    </dead>
+  </period>
+  <literary-periods>it-decadentismo</literary-periods>
+  <identifiers>
+    <wikidata>Q375998</wikidata>
+    <viaf>39397405</viaf>
+  </identifiers>
+</person>

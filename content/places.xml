@@ -123,6 +123,13 @@
     <alias>Augustenborg</alias>
     <parent ref="als"/>
   </place>
+  <place id="auray-sainte-anne">
+    <name>Sainte-Anne-d’Auray</name>
+    <wikidata>Q127862</wikidata>
+    <type>commune</type>
+    <alias>Sancta Anna i Auray</alias>
+    <parent ref="france"/>
+  </place>
   <place id="austria">
     <name>Østrig</name>
     <canonical-name>Austria</canonical-name>
@@ -326,6 +333,14 @@
     <parent ref="spain"/>
     <note>Cartagena, Murcia, Spain.</note>
   </place>
+  <place id="castalian-spring">
+    <name>Kastalias kilde</name>
+    <wikidata>Q152348</wikidata>
+    <type>spring</type>
+    <alias>Kastales Kilde</alias>
+    <alias>Castalian Spring</alias>
+    <parent ref="delphi"/>
+  </place>
   <place id="castel-gandolfo">
     <name>Castel Gandolfo</name>
     <wikidata>Q242105</wikidata>
@@ -405,6 +420,12 @@
     <alias>Köln</alias>
     <alias>Cologne</alias>
     <parent ref="germany"/>
+  </place>
+  <place id="como">
+    <name>Como</name>
+    <wikidata>Q1308</wikidata>
+    <type>city</type>
+    <parent ref="italy"/>
   </place>
   <place id="copenhagen">
     <name>København</name>
@@ -513,6 +534,18 @@
     <type>river</type>
     <parent ref="italy"/>
   </place>
+  <place id="ema">
+    <name>Ema</name>
+    <type>stream</type>
+    <parent ref="tuscany"/>
+  </place>
+  <place id="engadin">
+    <name>Engadin</name>
+    <wikidata>Q22883</wikidata>
+    <type>valley</type>
+    <alias>Engadina</alias>
+    <parent ref="switzerland"/>
+  </place>
   <place id="england">
     <name>England</name>
     <wikidata>Q21</wikidata>
@@ -520,6 +553,12 @@
     <alias>Engelland</alias>
     <alias>Engeland</alias>
     <parent ref="great-britain"/>
+  </place>
+  <place id="ephesus">
+    <name>Efesos</name>
+    <wikidata>Q47611</wikidata>
+    <type>ancient city</type>
+    <alias>Ephesus</alias>
   </place>
   <place id="euganean-hills">
     <name>De euganeiske Bjerge</name>
@@ -555,6 +594,12 @@
     <type>town</type>
     <parent ref="zealand"/>
   </place>
+  <place id="fiesole">
+    <name>Fiesole</name>
+    <wikidata>Q82670</wikidata>
+    <type>town/comune</type>
+    <parent ref="tuscany"/>
+  </place>
   <place id="florence">
     <name>Firenze</name>
     <canonical-name>Florence</canonical-name>
@@ -573,6 +618,39 @@
     <alias>Dåbskapellet i Firenze</alias>
     <alias>Baptisteriet</alias>
     <parent ref="florence"/>
+  </place>
+  <place id="florence-cathedral">
+    <name>Domkirken i Firenze</name>
+    <wikidata>Q191739</wikidata>
+    <type>cathedral</type>
+    <alias>Santa Maria del Fiore</alias>
+    <parent ref="florence"/>
+  </place>
+  <place id="florence-giotto-campanile">
+    <name>Giottos klokketårn</name>
+    <wikidata>Q1140023</wikidata>
+    <type>bell tower</type>
+    <alias>Giottos Taarn</alias>
+    <alias>Campanile di Giotto</alias>
+    <parent ref="florence"/>
+  </place>
+  <place id="florence-san-marco">
+    <name>San Marco i Firenze</name>
+    <wikidata>Q13453381</wikidata>
+    <type>religious complex</type>
+    <parent ref="florence"/>
+  </place>
+  <place id="florence-san-tommaso">
+    <name>San Tommaso i Firenze</name>
+    <wikidata>Q3672120</wikidata>
+    <type>former church</type>
+    <alias>San Tommasos Port</alias>
+    <parent ref="florence"/>
+  </place>
+  <place id="florida">
+    <name>Florida</name>
+    <wikidata>Q812</wikidata>
+    <type>region</type>
   </place>
   <place id="fondi">
     <name>Fondi</name>
@@ -660,6 +738,19 @@
     <type>mountain</type>
     <parent ref="jotunheimen"/>
   </place>
+  <place id="galilee">
+    <name>Galilæa</name>
+    <wikidata>Q83241</wikidata>
+    <type>historical region</type>
+    <alias>Galilaea</alias>
+    <alias>Galilee</alias>
+  </place>
+  <place id="galluzzo">
+    <name>Galluzzo</name>
+    <wikidata>Q1062876</wikidata>
+    <type>locality</type>
+    <parent ref="florence"/>
+  </place>
   <place id="garigliano-river">
     <name>Garigliano</name>
     <wikidata>Q287568</wikidata>
@@ -699,6 +790,11 @@
     <wikidata>Q202451</wikidata>
     <type>commune</type>
     <alias>Gens</alias>
+  </place>
+  <place id="gibraltar">
+    <name>Gibraltar</name>
+    <wikidata>Q1410</wikidata>
+    <type>territory</type>
   </place>
   <place id="gjende">
     <name>Gjende</name>
@@ -800,6 +896,12 @@
     <alias>Bretland</alias>
     <parent ref="europe"/>
   </place>
+  <place id="greccio">
+    <name>Greccio</name>
+    <wikidata>Q224144</wikidata>
+    <type>town</type>
+    <parent ref="italy"/>
+  </place>
   <place id="greece">
     <name>Grækenland</name>
     <canonical-name>Greece</canonical-name>
@@ -836,6 +938,12 @@
     <name>Grindelwald</name>
     <wikidata>Q64004</wikidata>
     <type>municipality</type>
+  </place>
+  <place id="groix">
+    <name>Groix</name>
+    <wikidata>Q70086</wikidata>
+    <type>island</type>
+    <parent ref="france"/>
   </place>
   <place id="gudbrandsdalen">
     <name>Gudbrandsdalen</name>
@@ -1256,6 +1364,12 @@
     <type>manor</type>
     <parent ref="funen"/>
   </place>
+  <place id="legnano">
+    <name>Legnano</name>
+    <wikidata>Q42782</wikidata>
+    <type>town/comune</type>
+    <parent ref="italy"/>
+  </place>
   <place id="lejre">
     <name>Lejre</name>
     <wikidata>Q2689028</wikidata>
@@ -1280,6 +1394,12 @@
     <name>Livorno</name>
     <wikidata>Q6761</wikidata>
     <type>city</type>
+  </place>
+  <place id="lodi-lombardy">
+    <name>Lodi</name>
+    <wikidata>Q6244</wikidata>
+    <type>town/comune</type>
+    <parent ref="italy"/>
   </place>
   <place id="loeberoed-castle">
     <name>Löberöds slott</name>
@@ -1419,11 +1539,34 @@
     <alias>Duomo di Milano</alias>
     <parent ref="milan"/>
   </place>
+  <place id="milan-porta-nuova-gate">
+    <name>Porta Nuova i Milano</name>
+    <wikidata>Q3398707</wikidata>
+    <type>city gate</type>
+    <alias>Porta Nova</alias>
+    <alias>Archi di Porta Nuova</alias>
+    <parent ref="milan"/>
+  </place>
+  <place id="milan-sant-ambrogio">
+    <name>Sant’Ambrogio i Milano</name>
+    <wikidata>Q1071570</wikidata>
+    <type>basilica</type>
+    <alias>Sant’Ambrogio</alias>
+    <parent ref="milan"/>
+  </place>
   <place id="minturnae">
     <name>Minturnae</name>
     <wikidata>Q18170298</wikidata>
     <type>ancient city/archaeological site</type>
     <parent ref="italy"/>
+  </place>
+  <place id="mississippi-river">
+    <name>Mississippifloden</name>
+    <wikidata>Q1497</wikidata>
+    <type>river</type>
+    <alias>Mississippi River</alias>
+    <alias>Mississippi</alias>
+    <alias>Meschacebé</alias>
   </place>
   <place id="mjosa">
     <name>Mjøsa</name>
@@ -1450,6 +1593,13 @@
     <wikidata>Q16525</wikidata>
     <type>mountain</type>
     <alias>Munken</alias>
+  </place>
+  <place id="monferrato">
+    <name>Monferrato</name>
+    <wikidata>Q19868</wikidata>
+    <type>historical region</type>
+    <alias>Montferrat</alias>
+    <parent ref="italy"/>
   </place>
   <place id="mons-klint">
     <name>Møns Klint</name>
@@ -1494,6 +1644,12 @@
     <alias>Oliebjergets</alias>
     <parent ref="jerusalem"/>
   </place>
+  <place id="mugnone">
+    <name>Mugnone</name>
+    <wikidata>Q913286</wikidata>
+    <type>stream</type>
+    <parent ref="tuscany"/>
+  </place>
   <place id="murcia">
     <name>Murcia</name>
     <wikidata>Q12225</wikidata>
@@ -1514,6 +1670,12 @@
     <type>city</type>
     <alias>Napoli</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="nazareth">
+    <name>Nazaret</name>
+    <wikidata>Q430776</wikidata>
+    <type>city</type>
+    <alias>Nazareth</alias>
   </place>
   <place id="netherlands">
     <name>Nederlandene</name>
@@ -1559,6 +1721,13 @@
     <alias>Norrige</alias>
     <alias>Norrigs</alias>
     <alias>Norriges</alias>
+  </place>
+  <place id="nuremberg">
+    <name>Nürnberg</name>
+    <canonical-name>Nuremberg</canonical-name>
+    <wikidata>Q2090</wikidata>
+    <type>city</type>
+    <parent ref="germany"/>
   </place>
   <place id="nyborg">
     <name>Nyborg</name>
@@ -1920,6 +2089,13 @@
     <alias>St. Pietro Montorio</alias>
     <parent ref="rome"/>
   </place>
+  <place id="santa-maria-degli-angeli-assisi">
+    <name>Santa Maria degli Angeli ved Assisi</name>
+    <wikidata>Q2530053</wikidata>
+    <type>basilica</type>
+    <alias>Santa Maria degli Angeli</alias>
+    <parent ref="assisi"/>
+  </place>
   <place id="sava">
     <name>Sava</name>
     <type>river</type>
@@ -2155,6 +2331,12 @@
     <alias>Schweitz</alias>
     <parent ref="europe"/>
   </place>
+  <place id="sybaris">
+    <name>Sybaris</name>
+    <wikidata>Q220583</wikidata>
+    <type>ancient city</type>
+    <parent ref="italy"/>
+  </place>
   <place id="taasinge">
     <name>Tåsinge</name>
     <wikidata>Q402692</wikidata>
@@ -2221,6 +2403,12 @@
     <alias>Tonsaasen</alias>
     <parent ref="norway"/>
     <note>Stedet er sikkert fra titlen, men et egnet Wikidata-item for landskabet/lokaliteten blev ikke verificeret; stationen og sanatoriet er andre entiteter og bruges ikke.</note>
+  </place>
+  <place id="tornio">
+    <name>Torneå</name>
+    <wikidata>Q214021</wikidata>
+    <type>town</type>
+    <alias>Tornio</alias>
   </place>
   <place id="trelde-naes">
     <name>Trelde Næs</name>
