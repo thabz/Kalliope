@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rubetti" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Guido</firstname>
+    <lastname>Rubetti</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1875</date>
+    </born>
+    <dead>
+      <date>1938</date>
+    </dead>
+  </period>
+  <literary-periods>it-decadentismo</literary-periods>
+</person>

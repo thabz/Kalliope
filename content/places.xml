@@ -896,6 +896,12 @@
     <alias>Bretland</alias>
     <parent ref="europe"/>
   </place>
+  <place id="greccio">
+    <name>Greccio</name>
+    <wikidata>Q224144</wikidata>
+    <type>town</type>
+    <parent ref="italy"/>
+  </place>
   <place id="greece">
     <name>Grækenland</name>
     <canonical-name>Greece</canonical-name>
@@ -1715,6 +1721,13 @@
     <alias>Norrige</alias>
     <alias>Norrigs</alias>
     <alias>Norriges</alias>
+  </place>
+  <place id="nuremberg">
+    <name>Nürnberg</name>
+    <canonical-name>Nuremberg</canonical-name>
+    <wikidata>Q2090</wikidata>
+    <type>city</type>
+    <parent ref="germany"/>
   </place>
   <place id="nyborg">
     <name>Nyborg</name>

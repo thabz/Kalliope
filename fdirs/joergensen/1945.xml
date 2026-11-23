@@ -34,6 +34,9 @@
   <title>Sangen om vor Broder Sol</title>
   <subtitle>Af <i>Frans af Assisi</i></subtitle>
   <firstline>Allerhøjeste, almægtige, gode Herre</firstline>
+  <notes>
+    <note>FRANS AF ASSISI, 1182—1226. Paa Italiensk kaldes Digtet almindeligvis <i>Il Cantico delle Creatura.</i></note>
+  </notes>
   <source pages="9-10"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -91,8 +94,12 @@ thi dem kan den anden Død ikke gøre noget Ondt!
   <firstline>O Sjæl, som er velsignet</firstline>
   <notes>
     <note editorial="true">Gendigtning af lauden <xref type="translation" poem="todi2026112202"/>.</note>
+    <note>JACOPONE DA TODI, ca. 1230—1306. Franciskanermunk. Hans berømteste Digt er det latinske <i>Stabat Mater.</i></note>
   </notes>
   <source pages="11-12"/>
+  <places>
+    <place ref="golgotha" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -171,6 +178,9 @@ og saa herske hist med Kriste!
   <title>Længsel efter Kristus</title>
   <subtitle>Af <i>Camilla Battista Varani</i></subtitle>
   <firstline>Hvor end jeg færdes, kun paa ét jeg tænker</firstline>
+  <notes>
+    <note>CAMILLA BATTISTA VARANI, 1458—1527. Hendes Liv er skildet i min Bog „I det høje“, 1908.</note>
+  </notes>
   <source pages="14-16"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -256,6 +266,9 @@ mig snart dit skønne, hellige Aasyn skue!
   <title>Landflygtighed</title>
   <subtitle>Af <i>Guido Rubetti</i></subtitle>
   <firstline>Ak, naar jeg tænker paa det gamle Hjem</firstline>
+  <notes>
+    <note>GUIDO RUBETTI, 1875—1938. Toskaner, kun lidet kendt.</note>
+  </notes>
   <source pages="17-18"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -293,6 +306,9 @@ Ak — spotter Gud et Moderhjærtes Sukke?
   <title>Den lille Dragt</title>
   <subtitle>Af <i>Guido Rubetti</i></subtitle>
   <firstline>Den lille Dragt, som Mamma syede til dig</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Guido Rubettis <xref type="translation" poem="rubetti2026112301"/>. Tidsskriftstrykket har ni strofer, og Jørgensens gendigtning har tre. Det er uvist, hvilken italiensk udgave Jørgensen brugte.</note>
+  </notes>
   <source pages="19"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -323,6 +339,8 @@ Syntes du ikke om din fine Dragt?
   <firstline>Ak, Broder Frans, hvor megen Luft omspændes</firstline>
   <notes>
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026072801"/>.</note>
+    <note>GIOSUÈ CARDUCCI, 1835—1907. Litteraturprofessor i Bologna, fik tildelt Nobelprisen 1906.</note>
+    <note><i>Santa Maria degli Angeli</i> er den Barokkirke, som 1670 blev bygget færdig over det lille Portiuncula-Kapel paa Sletten nedenfor Assisi.</note>
   </notes>
   <source pages="20"/>
   <places>
@@ -361,6 +379,8 @@ Hav Tak, o Herre, for vor Søster Døden!
   <firstline>Fra Fiesole, som sender Blikket vide</firstline>
   <notes>
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026072802"/>.</note>
+    <note><i>Fiesole</i> er en lille ældgammel By i Bjærgene ovenfor Firenze.</note>
+    <note><i>Mino</i>, kaldet <i>da Fiesole</i>, en af de mindre florentinske Billedhuggere fra det 15. Aarh.</note>
   </notes>
   <source pages="21"/>
   <places>
@@ -400,6 +420,7 @@ Natur, der evigt i sit Væsen hviler.
   <firstline>Den tyske Kejser har slaaet Lejr i Como</firstline>
   <notes>
     <note editorial="true">Oversættelse af Giosuè Carduccis <xref type="translation" poem="carducci2026112209"/>.</note>
+    <note><i>Sangen om Legnano.</i> Carducci vilde i et Epos skildre den lombardiske Ligas Kamp mod Frederik Barbarossa og Sejren over ham ved Legnano. Kun det her meddelte Fragment blev skrevet. Digtets Handling er henlagt til Foraaret 1176. I 1162 havde Kejseren ved Udhungring tvunget Milano til Overgivelse, ydmyget dens Borgere og i fem Dage ladet sine Tropper plyndre Byen, hvorefter den blev brændt og alle Mure omstyrtede.</note>
   </notes>
   <source pages="22-27"/>
   <places>
@@ -567,6 +588,7 @@ Og Solen sank bag Resegones Bjærg.
   <firstline>Nu falder Mørket, og jeg</firstline>
   <notes>
     <note editorial="true">Oversættelse af Antonio Fogazzaros <xref type="translation" poem="fogazzaro2020042905"/>.</note>
+    <note>ANTONIO FOGAZZARO, 1844—1911. Mest kendt som Forfatter til den berømte modernistiske Roman „Il Santo“, oversat til Dansk under Titlen „En Helgen“.</note>
   </notes>
   <source pages="28-29"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -618,6 +640,7 @@ Sig mig kun al Ting, Veninde!
   <firstline>Jeg hørte Dig synge. Lykkelig? Hvem ved?</firstline>
   <notes>
     <note editorial="true">Oversættelse af Giovanni Pascolis <xref type="translation" poem="pascoli2026112211"/>.</note>
+    <note>GIOVANNI PASCOLI, 1855—1912. Carduccis Efterfølger som Litteraturprofessor i Bologna.</note>
   </notes>
   <source pages="30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -645,6 +668,16 @@ at kun et fattigt Minde er tilbage.
   <firstline>Det var ej endnu Aften. I sit Hjem</firstline>
   <notes>
     <note editorial="true">Gendigtning af Giovanni Pascolis <xref type="translation" poem="pascoli2026112212"/>.</note>
+    <note><i>Paolo di Dono</i>, ca. 1396—1451, efter sin Forkærlighed for at male Fugle kaldet Paolo Ucello. Hans bedste Arbejder er Freskerne i „den grønne Klostergaard“ ved Santa Maria Novella i Firenze. Maleriet paa Mercato Vecchio, der hvor Broncesvinet staar, blev hans sidste Værk og vakte noget Mishag hos <i>Donatello</i>, den store Billedhugger.</note>
+    <note><i>Filippo Brunelleschi</i>, 1379—1446 byggede Kuplen paa Domkirken i Firenze.</note>
+    <note><i>Donatello</i> 1382—1466.</note>
+    <note><i>Giottos Taarn</i> er Kampanilen ved Siden af Firenzes Domkirke.</note>
+    <note>„<i>Den gamle Tertiar</i>“, d. v. s. Medlem af den af Frans i 1221 stiftede „Tredje Orden“.</note>
+    <note>„<i>Gjorden, der til Hellig Frans mig binder</i>“ er den Snor med tre Knuder, som bæres af Medlemmerne af „Tredje Orden“. Muligvis var Paolo di Dono ikke Tertiar, men han vides at have vist Frans af Assisi megen Dyrkelse, og saa har Pascoli tilladt sig denne digteriske Frihed.</note>
+    <note>„<i>Bernardones Søn</i>“ er en gammel Benævnelse for den hellige Frans, hvis Fader hed Pietro di Bernardone.</note>
+    <note><i>Mugnone</i> er en Biflod til Arno, ligesaa <i>Ema</i>, ved hvilken Landsbyen <i>Galluzzo</i> ligger — eller laa.</note>
+    <note>„<i>Greccios Duer</i>“ fortælles der om i „Fioretti“s 21. Kapitel, se min Overs. af denne Bog, 1944, S. 50; det var Skovduer, som en Dreng havde fanget, men paa Frans’ Bøn forærede ham, hvorefter Frans satte dem i Frihed og byggede Reder til dem. Pascoli henlægger med digterisk Frihed denne Fortælling til Greccio i Rietidalen, hvor Frans i 1223 fejrede Jul ved en Krybbe i en Klippehule (se min „Pilgrimsbogen“ 1903, 3. Udgave 1936, Kap. III—IV).</note>
+    <note>„<i>fem gyldne Stjærner</i>“ er den hellige Frans’ Vunder i Kristi Lignelse paa hans Hænder, Fødder og i Siden, nær ved Hjærtet; paa gamle Altertavler er de ofte malet saadan, at de udsender gyldne Straaler.</note>
   </notes>
   <source pages="31-49"/>
   <places>
@@ -655,6 +688,7 @@ at kun et fattigt Minde er tilbage.
     <place ref="mugnone" relation="mentioned"/>
     <place ref="galluzzo" relation="mentioned"/>
     <place ref="ema" relation="mentioned"/>
+    <place ref="greccio" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -980,6 +1014,10 @@ der stille sov i det stille Lys af Maanen.
   <title>Atalas Sang</title>
   <subtitle>Af <i>Chateaubriand</i></subtitle>
   <nofirstline/>
+  <notes>
+    <note editorial="true">Oversættelse af Chateaubriands <xref type="translation" poem="chateaubriand2026072901"/>, et uddrag af <i>Atala</i> (1801), »Les chasseurs«.</note>
+    <note>CHATEAUBRIAND, FRANÇOIS RENÉ, 1768—1848. Atala er en Indianerpige i Novellen af samme Navn, der udkom 1800.</note>
+  </notes>
   <source pages="53-54"/>
   <places>
     <place ref="mississippi-river" relation="mentioned"/>
@@ -1011,6 +1049,9 @@ der stille sov i det stille Lys af Maanen.
   <title>Maaneskinnet</title>
   <subtitle>Af <i>Aloysius Bertrand</i></subtitle>
   <nofirstline/>
+  <notes>
+    <note>ALOYSIUS BERTRAND, 1807—41, skrev under Pseudonymet Gaspard de la Nuit en Række romantiske Prosadigte, „Fantasier i Rembrandts og Callots Manér“.</note>
+  </notes>
   <source pages="55-56"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1038,6 +1079,7 @@ der stille sov i det stille Lys af Maanen.
   <firstline>O sene Efteraar, o Vinter med vaade Veje</firstline>
   <notes>
     <note editorial="true">Oversættelse af Baudelaires <xref type="translation" poem="baudel1999070213"/>.</note>
+    <note>CHARLES BAUDELAIRE, 1821—1867. Se mine „Essays“, 1906.</note>
   </notes>
   <source pages="57"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1154,6 +1196,7 @@ Glemsel af alle Ting paa et tilfældigt Leje.
   <firstline>Det regner i alle Gader</firstline>
   <notes>
     <note editorial="true">Oversættelse af Verlaines <xref type="translation" poem="verlaine1999070103"/>.</note>
+    <note>PAUL VERLAINE, 1844—1896. Se „Essays“.</note>
   </notes>
   <source pages="62-63"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1353,6 +1396,9 @@ Alt ruller Tordnen — skynd dig hen at bede!
     <note editorial="true">Oversættelse af Verlaines <xref type="translation" poem="verlaine2026072803"/>.</note>
   </notes>
   <source pages="70"/>
+  <places>
+    <place ref="nuremberg" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1387,6 +1433,7 @@ Bed for Kasper, naar han er død!
   <firstline>O Spejl!</firstline>
   <notes>
     <note editorial="true">Gendigtning af Mallarmés <xref type="translation" poem="mallarme2026112224"/>.</note>
+    <note>STÉPHANE MALLARMÉ, 1842—1898.</note>
   </notes>
   <source pages="71-73"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1505,6 +1552,7 @@ som gyldnes blegt af Straaler, der langt og langsomt dø.
   <firstline>Nu græder Aftenhimlen over Middagssolens Død</firstline>
   <notes>
     <note editorial="true">Oversættelse af Stuart Merrills <xref type="translation" poem="merrill2026080101"/>.</note>
+    <note>STUART MERRILL, 1863—1915, Amerikaner af Fødsel, en af de mindre kendte Digtere, der en Tid hørte til den symbolistiske Skole i 1890’ernes franske Litteratur, men siden fjernede sig fra den.</note>
   </notes>
   <source pages="75-77"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1596,6 +1644,9 @@ O Verdens Nætter og Dage! o Verdens Liv og Død!
   <title>Afskeden</title>
   <subtitle>Af <i>Frédéric Mistral</i></subtitle>
   <firstline>Farvel, farvel, Rosette, hør Trommerne gaa!</firstline>
+  <notes>
+    <note>FRÉDÉRIC MISTRAL, 1830—1914, Provences store Digter, der skrev sine Værker i sit Hjemlands Dialekt. Han fik Nobelprisen i 1904. Se min Bog „Af Oliventræets Frugt“, 1925, Kap. XII.</note>
+  </notes>
   <source pages="78"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1823,6 +1874,7 @@ Vinden fra Havet volder al vor Vaade!
   <firstline>Al Glædes Moder, pur og prud</firstline>
   <notes>
     <note editorial="true">Oversættelse af Dante Gabriel Rossettis <xref type="translation" poem="rossettid2026072201"/>.</note>
+    <note>DANTE GABRIEL ROSSETTI, 1828—1882.</note>
   </notes>
   <source pages="89-92"/>
   <places>
@@ -1936,6 +1988,7 @@ til dig og Ham, som du har fød.
   <firstline>I den hvide Tjørnelund</firstline>
   <notes>
     <note editorial="true">Oversættelse af William Morris’ <xref type="translation" poem="morrisw2026072201"/>.</note>
+    <note>WILLIAM MORRIS, 1834—1896. Denne Oversættelse har i mine „Digte 1898“ en noget anden Skikkelse; her den oprindelige.</note>
   </notes>
   <source pages="93-94"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1997,6 +2050,7 @@ hvad efter Død er os bered!
   <firstline>Jeg hørte Leen hvisle</firstline>
   <notes>
     <note editorial="true">Oversættelse af folkevisen <xref type="translation" poem="anonym1700de2026112234"/>.</note>
+    <note>„<i>Des Knaben Wunderhorn</i>“, udgivet i 1806—08 af <i>von Arnim</i> og hans Svoger <i>Clemens Brentano</i>, var den første større Samling af gamle tyske Viser.</note>
   </notes>
   <source pages="97-98"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2151,6 +2205,7 @@ ham, som har mig forført!
   <firstline>Herre, Mester, sé i Naade</firstline>
   <notes>
     <note editorial="true">Oversættelse af Clemens Brentanos <xref type="translation" poem="brentano2026072801"/>.</note>
+    <note>CLEMENS BRENTANO, 1778—1842.</note>
   </notes>
   <source pages="104-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2227,6 +2282,7 @@ Jesus gennem dine Vunder!
   <firstline>Der slaar et Ur langt borte</firstline>
   <notes>
     <note editorial="true">Oversættelse af Eichendorffs <xref type="translation" poem="eichendorff2024060401"/>.</note>
+    <note>JOSEPH v. EICHENDORFF, 1788—1857. Han og Brentano er de ypperste af Tysklands katholske Romantikere.</note>
   </notes>
   <source pages="107-108"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2272,6 +2328,7 @@ og fandt i Himlen ind . . .
   <firstline>Ak, saae du, fulde Maaneskin</firstline>
   <notes>
     <note editorial="true">Oversættelse af et uddrag af Goethes <xref type="translation" poem="goethe20010616"/>.</note>
+    <note>GOETHE, JOH. WOLFFGANG, 1749—1832.</note>
   </notes>
   <source pages="109"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2368,6 +2425,15 @@ og svæver om mig, lindrende og mildt.
   <firstline>Hvem du ej forlader, Genius</firstline>
   <notes>
     <note editorial="true">Oversættelse af Goethes <xref type="translation" poem="goethe2026110701"/>.</note>
+    <note>„<i>Deukalions Dyndflod</i>“ er den græsk-romerske Mythologis Sidestykke til Bibelens Syndflod; Deukalion og hans Kvinde Pyrra var de eneste Mennesker, som overlevede den.</note>
+    <note><i>Python</i> er i den græske Mythologi en Drage, som rugede ved Foden af Parnassos-Bjærget; Apollon dræbte den med et Pileskud fra sin Sølvbue; hvor den døde, anlagde Guden sin Helligdom Delphi.</note>
+    <note><i>Chariter</i>, Grækernes tre Gudinder for kvindelig Ynde, Døtre af Zeus, Apollons og Afrodites Ledsagersker; paa Latin Gratierne.</note>
+    <note><i>Pindar</i>, græsk heroisk Digter fra det 5. Aarh. f. Kr.; har navnlig besunget Olympiadernes Sportshelte.</note>
+    <note><i>Juppiter Pluvius</i>, den regngivende Juppiter, et af Gudens Tilnavne, fordi han bl. a. raadede for Vejrliget.</note>
+    <note><i>Kastales Kilde</i> udsprang paa Delphi-Siden af Parnassos; dens Vand var rensende og skænkede Digtergaven.</note>
+    <note><i>Anakreon</i>, græsk Digter fra det 6. Aarh. f. Kr.</note>
+    <note><i>Sybaris</i>, græsk By paa Sicilien, berømt for sine Indbyggeres Vellevned.</note>
+    <note><i>Theokrit</i>, ca. 324—ca. 265 f. Kr., født paa Sicilien, digtede idyllisk om de sicilianske Hyrders Liv.</note>
   </notes>
   <source pages="112-116"/>
   <places>
@@ -2505,6 +2571,7 @@ til at vade didhen!
   <firstline>Mig drømte, saa sorgfuldt var Maanens Skin</firstline>
   <notes>
     <note editorial="true">Oversættelse af Heinrich Heines <xref type="translation" poem="heine2002020325"/>.</note>
+    <note>HEINRICH HEINE, 1797—1856.</note>
   </notes>
   <source pages="117"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2619,6 +2686,8 @@ over dig derhjemme.
   <firstline>Som en Morder Aaret blev begravet</firstline>
   <notes>
     <note editorial="true">Oversættelse af Esaias Tegnérs <xref type="translation" poem="tegner2026112246"/>.</note>
+    <note>ESAIAS TEGNÉR, 1782—1846.</note>
+    <note><i>Brennussværdet</i> sigter til Sagnet om Gallerfyrsten (Brennus betyder gallisk Høvding i Almindelighed), der efter at have erobret Rom ca. 390 f. Kr. under Forhandlingerne om Ophævelsen af Kapitoliums Belejring formedelst Romernes Erlæggelse af 1000 Pund Guld lagde sit Sværd paa Vægten og udtalte Ordene: <i>Væ victis</i>, Ve de Overvundne! Digtet er skrevet 1807, under Napoleonskrigene.</note>
   </notes>
   <source pages="123-124"/>
   <places>
@@ -2679,6 +2748,7 @@ og det Skønne lever kun i Sang.
   <firstline>Det var i Jordens sidste Vaar</firstline>
   <notes>
     <note editorial="true">Oversættelse af Karlfeldts <xref type="translation" poem="karlfeldt2026072601"/>.</note>
+    <note>ERIK AXEL KARLFELDT, 1864—1931. Det her oversatte Digt er et Brudstykke af Digtkransen „Yttersta domen“ og hedder i Originalen „Ynglingen till flickan“.</note>
   </notes>
   <source pages="125-127"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2740,6 +2810,9 @@ i Herrens Naades Haand.
   <indextitle>Nu lukker sig mit Øje</indextitle>
   <linktitle>Nu lukker sig mit Øje</linktitle>
   <firstline>Far, Far, hvad er det, som knalder — hvad</firstline>
+  <notes>
+    <note>HJALMAR OLDENBURG, svensk-finsk Forfatter. Den almindelige svenske Aftenbøn begynder: „<i>Du som haver barnen kär</i>“.</note>
+  </notes>
   <source pages="128-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2812,6 +2885,7 @@ det sandt, Mor? Hvad siger Du, Far?
   <firstline>Som en Flod med stærke, stride Vande</firstline>
   <notes>
     <note editorial="true">Parafrase af det latinske responsorium <xref type="translation" poem="hymnila2026112249"/>.</note>
+    <note>Den berømte Hymne <i>Media vita</i> tilægges, dog vistnok med Urette, Notker Balbulus († 912; Tilnavnet betyder „den stammende“), Munk i Klostret St. Gallen i Schweiz; han var den første, som indførte rytmiske Sekvenser i Lithurgien, hvorved den middelalderlige Kirkepoesi frigjorde sig fra Oldkirkens antike Digtformer. En Sekvens er en Tekst, som blev underlagt en Række Toner, man oprindeligt sang uden Ord som en rigt varieret Udklang af Halleluja-Sangen; Ordet betyder „følgende“, og Teksten følger altsaa Tonerne; siden blev den en selvstændig Hymneform, der fik en rig Udvikling i Middelalderen. <i>Media vita</i> blev brugt som Slagsang af Korsfarerne; paa Synoden i Köln 1315 blev den forbudt, da man tillagde den magisk Kraft, men endnu i Slaget ved Sempach 1385 sang Schweizerne den.</note>
   </notes>
   <source pages="133-134"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2847,7 +2921,8 @@ giv os ej den bitre Død i Vold.
   <subtitle>Af <i>Cælius Sedulius</i></subtitle>
   <firstline>Fra der, hvor Solen først gaar frem</firstline>
   <notes>
-    <note editorial="true">Gendigtning af Cælius Sedulius’ hymne <xref type="translation" poem="hymnila2026112250"/>.</note>
+    <note editorial="true">Gendigtning af Cœlius Sedulius’ hymne <xref type="translation" poem="hymnila2026112250"/>.</note>
+    <note>Julehymnens første Linje lyder: <i>A solis ortus cardine</i>, og er skrevet af Romeren Cælius Sedulius ved Midten af det 6. Aarh. i samme oldkirkelige Stil som f. Eks. Ambrosius’ Hymner.</note>
   </notes>
   <source pages="135-136"/>
   <places>
@@ -2903,10 +2978,12 @@ nu og altid i allen Stund.
   <firstline>Paaskelammet vi vor Lov frembære</firstline>
   <notes>
     <note editorial="true">Gendigtning af sekvensen <xref type="translation" poem="hymnila2026112251"/>.</note>
+    <note>Paaskesekvensen <i>Victimae paschali laudes</i> tillægges af nogle Forskere Hermannus Contractus (d. e. den lamme), 1031—1054, Munk i Klostret Reichenau paa en Ø i Bodensøen; men af andre vistnok med større Ret hans Samtidige Wipo, Hofkapellan hos Konrad II og Henrik III i Midten af det 11. Aarh.</note>
   </notes>
   <source pages="137"/>
   <places>
     <place ref="galilee" relation="mentioned"/>
+    <place ref="jerusalem" relation="setting"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2997,6 +3074,9 @@ før os frelst af Verden ud.
 <head>
   <title>Noter</title>
   <nofirstline/>
+  <notes>
+    <note editorial="true">Noterne er også indført på deres tekster</note>
+  </notes>
   <source pages="141-145"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

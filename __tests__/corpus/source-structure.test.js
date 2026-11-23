@@ -101,7 +101,10 @@ describe('work source structure', () => {
           <text id="poet1">
             <head>
               <source><a href="https://example.org">Udgave</a></source>
-              <notes><note>Teksten\n  følger denne udgave.</note></notes>
+              <notes>
+                <note>Teksten\n  følger denne udgave.</note>
+                <note>Ordet betyder „følgende“, og Teksten følger altsaa Tonerne.</note>
+              </notes>
             </head>
           </text>
         </workbody>
