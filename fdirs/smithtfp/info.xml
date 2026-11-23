@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="smithtfp" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Troels Frederik Plum</firstname>
+    <lastname>Smith</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1813-12-31</date>
+    </born>
+    <dead>
+      <date>1880-01-24</date>
+      <place>Skælskør</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <gravsted-dk>troelsfrederikplumsmith</gravsted-dk>
+  </identifiers>
+</person>
