@@ -3997,6 +3997,36 @@ Soll es einmal denn sein, so kommt ihr, Sorgen der Liebe,
 </body>
 </text>
 
+<text id="goethe2024052601">
+<head>
+  <title>Herbstgefühl</title>
+  <firstline>Fetter grüne, du Laub’</firstline>
+</head>
+<body>
+<poetry>
+Fetter grüne, du Laub’,
+Am Rebengeländer
+Hier mein Fenster herauf!
+Gedrängter quellet,
+
+Zwillingsbeeren, und reifet
+Schneller und glänzend voller!
+Euch brütet der Mutter Sonne
+Scheideblick, euch umsäuselt
+Des holden Himmels
+
+Fruchtende Fülle;
+Euch kühlet des Mondes
+Freundlicher Zauberhauch,
+Und euch bethauen, ach!
+Aus diesen Augen
+
+Der ewig belebenden Liebe
+Vollschwellende Thränen.
+</poetry>
+</body>
+</text>
+
 <text id="goethe2026110701" lang="de">
 <head>
   <title>Wandrers Sturmlied</title>
@@ -4010,6 +4040,10 @@ Soll es einmal denn sein, so kommt ihr, Sorgen der Liebe,
     <year>1960</year>
   </source>
   <!-- Digital tekst fra TextGrids Digitale Bibliothek; kildeudgaven angives som Berlin 1960 ff. -->
+  <places>
+    <place ref="castalian-spring" relation="mentioned"/>
+    <place ref="sybaris" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

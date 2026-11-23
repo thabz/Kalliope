@@ -124,6 +124,8 @@ Læs den relevante specialdokumentation før ændringer på området:
 ## XML-data
 
 - Hold XML-beskrivelser korte, kildebaserede og i samme stil som omkringliggende filer.
+- Indsæt kun eksisterende biografitekster fra godkendte kilder. AI må aldrig
+  forfatte biografier. Se `docs/xml-biographies-format.md`.
 - Biografiers kilder angives kun i biografiens `<head>` som
   `<source href="…">kildeangivelse</source>`. Udelad `href`, når der ikke findes
   en verificeret digital udgave. URL'en skal som udgangspunkt pege på det konkrete

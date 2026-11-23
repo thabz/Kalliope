@@ -53,6 +53,11 @@ fejlagtig kreditering i `<source>` afklares, før signaturen fjernes.
 
 ## Kildevalg
 
+Biografier må kun indsættes som gengivelser af eksisterende biografitekster
+fra Kalliopes godkendte kilder. AI må aldrig forfatte, omskrive eller
+sammenstykke en biografi, heller ikke på grundlag af verificerede kilder.
+Hvis der ikke findes en biografitekst i en godkendt kilde, udelades biografien.
+
 For danske forfattere er <i>Dansk Biografisk Leksikon</i> (DBL) den foretrukne
 biografikilde. Hvis DBL ikke har et relevant opslag eller ikke giver en
 tilstrækkelig biografisk fremstilling, bruges en artikel fra Salmonsens

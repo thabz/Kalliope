@@ -54,8 +54,13 @@ const validateAttestations = (work, filename) => {
   attestations.forEach((attestation, index) => {
     const label = `${filename}: proofreading ${index + 1}`;
     const model = (attestation.getAttribute('model') ?? '').trim();
+    const reviewer = (attestation.getAttribute('reviewer') ?? '').trim();
     const datetime = attestation.getAttribute('datetime') ?? '';
-    if (model.length === 0) errors.push(`${label} mangler modelnavn`);
+    if (attestation.hasAttribute('model') === true && attestation.hasAttribute('reviewer') === true) {
+      errors.push(`${label} skal angive enten model eller reviewer, ikke begge`);
+    } else if (model.length === 0 && reviewer.length === 0) {
+      errors.push(`${label} mangler modelnavn eller navn på manuel korrekturlæser`);
+    }
     if (timestampWithTimezone.test(datetime) !== true || Number.isNaN(Date.parse(datetime))) {
       errors.push(`${label} har ugyldigt ISO 8601-tidspunkt med tidszone: ${datetime || '(mangler)'}`);
     }
