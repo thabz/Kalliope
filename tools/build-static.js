@@ -132,6 +132,7 @@ import {
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
 import { buildLatestNews } from './build-static/news.js';
+import { buildRecommendations } from './build-static/recommendations.js';
 import {
   buildGlobalTimeline,
   buildPoetTimelineJson,
@@ -1510,6 +1511,7 @@ const main = async () => {
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
   await b('works_second_pass', works_second_pass, collected);
+  await b('buildRecommendations', buildRecommendations, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',
