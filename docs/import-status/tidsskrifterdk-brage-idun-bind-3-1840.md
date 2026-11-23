@@ -9,3 +9,7 @@ Første hæftes indholdsfortegnelse (PDF-s. 15) angiver nodebilaget *En gammel n
 For at genoptage importen skal den trykte forside fotograferes udfoldet, eller der skal findes en komplet scanning af et eksemplar med bilaget udfoldet. Andet hæftes indholdsfortegnelse angiver også stentrykket *Stjernebilledernes Hovedgrupper (efter Stieler)*. Dets placering og gengivelse skal verificeres i den fulde sidegennemgang.
 
 Den eksisterende OCR-tekst blev brugt til at finde indholdsfortegnelser, hæfteskift og rettelsessiden. De kritiske sider ved hæfteskiftet blev kontrolleret visuelt. Transskription og korrektur af versbidragene afventer den komplette kilde.
+
+## Supplerende farveskanning
+
+[Nasjonalbibliotekets eksemplar](https://www.nb.no/items/b3930c23196e19ebaed01253e99b3568) indeholder nodebilagets udfoldede forside på billedside 399 og bagsiden på 400. Det indeholder også stentrykket på billedside 601 og bagsiden på 602. Begge bilag er identificeret visuelt. Importarbejdet er genoptaget med dette eksemplar. Den øvrige sidedækning skal kontrolleres, før transskriptionen begynder.
