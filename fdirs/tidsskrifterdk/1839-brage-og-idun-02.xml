@@ -37,6 +37,17 @@
   </proofreadings>
 </workhead>
 <workbody>
+
+<!-- Hæfternes udgivelsesmåneder følger Henrik Ydes bibliografiske beskrivelse: https://www.grundtvigsværker.dk/biblio/brageidun_biblDesc.xml -->
+
+<section>
+<head>
+  <title>Første hæfte (december 1839)</title>
+  <dates><published>1839-12</published></dates>
+  <source pages="1-256"/>
+</head>
+<content>
+
 <text id="grundtvig2026111301" author="grundtvig">
 <head>
   <title>Völunds Værksted</title>
@@ -3287,6 +3298,17 @@ Som endnu er ganske röde.
 </body>
 </text>
 
+</content>
+</section>
+
+<section>
+<head>
+  <title>Andet hæfte (juni 1840)</title>
+  <dates><published>1840-06</published></dates>
+  <source pages="257-590"/>
+</head>
+<content>
+
 <!-- Tre a’er er kildebekræftet i upaaagtede (s. 345) og blaaagtig (s. 491). De tilstødende gentagelser kan kan (s. 279) og der der (s. 452) er ligeledes kildebekræftede. -->
 <text id="hammerich2026111301" author="hammerich" ignore-tests="smaa,repeated-adjacent-word">
 <head>
@@ -5761,6 +5783,9 @@ Som Dit og mit i Kjærlighed! —
 
 </body>
 </text>
+
+</content>
+</section>
 
 </workbody>
   </kalliopework>
