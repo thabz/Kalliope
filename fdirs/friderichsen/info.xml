@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="friderichsen" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Jacob</firstname>
+    <lastname>Friderichsen</lastname>
+  </name>
+  <!-- Navnet følger Minerva og Nyerups register, s. 86. Livsdata efter Oslo katedralskoles elevregister, nr. 822, s. 292. -->
+  <period>
+    <born>
+      <date>1754-01-28</date>
+      <place>Christiania</place>
+    </born>
+    <baptized>
+      <date>1754-02-04</date>
+      <place>Akershus slotskirke</place>
+    </baptized>
+    <dead>
+      <date>1809</date>
+      <place>Nesna</place>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-23">
+    <checked-source id="dbl1">Søgt på Friderichsen og Frederiksen i registret.</checked-source>
+    <checked-source id="dbl2">Søgt på begge navneformer via Dansk Forfatterleksikons register.</checked-source>
+    <checked-source id="ehrencron-mueller">Bind 3 og supplementet registrerer Johan Friderichsen, en anden person.</checked-source>
+    <note>Nyerups register knytter forfatteren til sangen. Oslo katedralskoles elevregister og Andreas Erlandsens præstehistorie dokumenterer identiteten. Der blev ikke fundet et opslag i de undersøgte biografiske referenceværker.</note>
+  </biography-status>
+</person>
