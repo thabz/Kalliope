@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lidner" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Bengt</firstname>
+    <lastname>Lidner</lastname>
+  </name>
+  <!-- Livsdata: https://litteraturbanken.se/författare/LidnerB/titlar -->
+  <period>
+    <born>
+      <date>1757</date>
+    </born>
+    <dead>
+      <date>1793</date>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+</person>

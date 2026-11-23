@@ -3,7 +3,7 @@
 <workhead>
   <title>Unrhyming Poems (1917-28)</title>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <quality>korrektur1</quality>
 </workhead>
@@ -113,6 +113,10 @@ The boat has gone.
 <head>
   <title>Mutilation</title>
   <firstline>A thick mist-sheet lies over the broken wheat</firstline>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

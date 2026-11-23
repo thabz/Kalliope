@@ -3,9 +3,6 @@
 <workhead>
   <title>Digte fra forskjellige Perioder, Deel II</title>
   <year>1851</year>
-  <notes>
-    <note>Noter med foranstillet asterisk er forfatterens egne.</note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1851b-p1.jpg"><transcription>Digte / fra / forskjellige Perioder / af / Henrik Hertz. // Anden Deel. // Kjøbenhavn. / Forlagt af Universitetsboghandler C. A. Reitzel. / Trykt hos Kgl. Hofbogtrykker Bianco Luno. / 1851.</transcription></picture>
   </pictures>
@@ -161,7 +158,7 @@ En Kjærligheds-Erklæring er til Eder.
   <subtitle>Til en Veninde.</subtitle>
   <firstline>Hos alle Dødelige</firstline>
   <notes>
-    <note>Trykt første gang i <i>Nytaarsgave fra danske Digtere</i>, Fjerde Aargang, 1838, under titlen <i>Til **</i>. Det er samme sted anført at digtet er skrevet 1835.</note>
+    <note editorial="true">Trykt første gang i <i>Nytaarsgave fra danske Digtere</i>, Fjerde Aargang, 1838, under titlen <i>Til **</i>. Det er samme sted anført at digtet er skrevet 1835.</note>
   </notes>
   <source pages="6-8"/>
   <quality>korrektur1,kilde,side</quality>
@@ -795,7 +792,7 @@ Og de andre Fugle smaa, som tale.
   <toctitle><num>II.</num>Ridderens Frierie</toctitle>
   <firstline>En deilig, ung Ridder i Lunden mon gaae</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1293,7 +1290,7 @@ Og holder Stand som før.
   <title>Slottet</title>
   <firstline>Nær ved Arnoflodens Vande</firstline>
   <notes>
-    <note>* Balladen Pag. 138 og Romancen ,,<w>Slottet</w>'' Pag. 51 høre oprindeligt til Operaen, ,,<w>Corsarerne</w>'', og ere de eneste Digte, der i denne Samling ere optagne af mine dramatiske Arbeider. Sujettet til Balladen skyldes iøvrigt et Digt i <w>Fauriels</w> ,,<i>Chants populaires de la Grèce moderne.</i>'' Paris 1824. 2 Vol.</note>
+    <note>Balladen Pag. 138 og Romancen ,,<w>Slottet</w>'' Pag. 51 høre oprindeligt til Operaen, ,,<w>Corsarerne</w>'', og ere de eneste Digte, der i denne Samling ere optagne af mine dramatiske Arbeider. Sujettet til Balladen skyldes iøvrigt et Digt i <w>Fauriels</w> ,,<i>Chants populaires de la Grèce moderne.</i>'' Paris 1824. 2 Vol.</note>
   </notes>
   <source pages="51"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1360,6 +1357,9 @@ Os fører fra Land til Land!
   <firstline>Som en Memnons-Søile, eensom levnet</firstline>
   <source pages="53-55"/>
   <keywords>frederik7</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1575,7 +1575,7 @@ Ak, forskrive mig til Fanden!
   <title>Skriftemaalet</title>
   <firstline>Pater Joseph! laan mig Øre!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="63-69"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2073,7 +2073,7 @@ Som et lykkeligt Moment.
   <subtitle>Til Melodie af Fredm. Epistl. 55.</subtitle>
   <firstline>Luften er blaa</firstline>
   <notes>
-    <note>Cf. Bellmans <xref poem="bellman2001061355"/>.</note>
+    <note editorial="true">Cf. Bellmans <xref poem="bellman2001061355"/>.</note>
   </notes>
   <source pages="82-87"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2110,7 +2110,7 @@ Som naar paa Vagt
 Stundom vi møde
 En Soldat i Søndags-Dragt.
 
-Tag din Raquet!<note>* Navnet paa det Redskab, hvormed Fjerboldten drives iveiret.</note>
+Tag din Raquet!<note>Navnet paa det Redskab, hvormed Fjerboldten drives iveiret.</note>
 Boldten jeg kaster.
 Pas nu paa! Jeg giver Boldten op.
 Ak, det var slet!
@@ -2470,7 +2470,7 @@ Vi seile og vi roe! :,:
   <toctitle><num>III.</num>Ligevægten</toctitle>
   <firstline>Vi sidde sammen som vi kan bedst</firstline>
   <notes>
-    <note>Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    <note editorial="true">Digtets melodi, metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
   <source pages="98-101"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2886,7 +2886,7 @@ Og Kongens Søn hun faaer.
   <subtitle>Efter et Sagn</subtitle>
   <firstline>Slaget var endt. Paa den aabne Mark</firstline>
   <notes>
-    <note>* Sagnet, der ligger til Grund for Digtet ,,<w>Den danske Soldat</w>'' er fortalt i Ugebladet <w>Dannevirke</w>, Slutningen af 1838 eller Begyndelsen af 1839.</note>
+    <note>Sagnet, der ligger til Grund for Digtet ,,<w>Den danske Soldat</w>'' er fortalt i Ugebladet <w>Dannevirke</w>, Slutningen af 1838 eller Begyndelsen af 1839.</note>
   </notes>
   <source pages="117-121"/>
   <quality>korrektur1,kilde,side</quality>
@@ -3261,6 +3261,9 @@ Saa qvad hun over Voven for Kongen.
   <title>Ægirs Gjæstebud</title>
   <subtitle>(Ved et Fest-Maaltid for <w>Oehlenschläger</w> paa hans 70de Fødselsdag. Et stort Malerie, forestillende <w>Ægirs Gjæstebud</w>, var ved denne Leilighed opstillet i Salen.)</subtitle>
   <firstline>Høit over Bifrost</firstline>
+  <dates>
+    <event>1849-11-14</event>
+  </dates>
   <!-- Maleriet eller et skitse dertil var på auktion i 1875 som "W. Marstrand: Ægirs Gjæstebud. Transparentbillede i Limfarve, malet paa Schirting og benyttet til Festen for Oehlenschlæger i 1849." http://www.kunstbib.dk/objekter/auktionskataloger/Auk_0824.pdf -->
   <!-- Kartonen findes på SMK: http://collection.smk.dk/#/detail/KMS3215 ... men er pt. ikke digitaliseret. -->
   <!-- Ikke at forveksle med Constantin Hansen: Ægirs gæstebud fra 1857. http://collection.smk.dk/#/detail/KMS939 -->
@@ -3282,7 +3285,7 @@ Hen til de dunkle,
 Skyggende Skove,
 Lokked' af Fuglens
 Fløitende Røst.
-Hist under Hlesey<note>Læsø</note>,
+Hist under Hlesey<note editorial="true">Læsø</note>,
 Bænked' i Ægirs
 Gjæstmilde Haller,
 Guderne sad; -
@@ -3308,7 +3311,7 @@ Norden af Fjeldet,
 Manet den op fra
 Øe og fra Strand,
 Skjalden at hilse
-(Loptur er bunden)<note>* Loptur ↄ: Loke</note>
+(Loptur er bunden)<note>Loptur ↄ: Loke</note>
 Atter har Aser
 Gjæstet vort Land.
 
@@ -3316,7 +3319,7 @@ Grubleren en Odin
 Signer sin Sanger.
 Frigga og Freia
 Krandse dit Haar.
-Hlorrida<note>* Hlorrida ↄ: Thor.</note> smiler,
+Hlorrida<note>Hlorrida ↄ: Thor.</note> smiler,
 Alt fra din Ungdom
 Skjænkte han Skjalden
 Herlige Kaar.
@@ -3347,7 +3350,7 @@ Undrende Folk!
   <title>Ballade</title>
   <firstline>I Achelos sidder sorgfri</firstline>
   <notes>
-    <note>* Balladen Pag. 138 og Romancen ,,<w>Slottet</w>'' Pag. 51 høre oprindeligt til Operaen, ,,<w>Corsarerne</w>'', og ere de eneste Digte, der i denne Samling ere optagne af mine dramatiske Arbeider. Sujettet til Balladen skyldes iøvrigt et Digt i <w>Fauriels</w> ,,<i>Chants populaires de la Grèce moderne.</i>'' Paris 1824. 2 Vol.</note>
+    <note>Balladen Pag. 138 og Romancen ,,<w>Slottet</w>'' Pag. 51 høre oprindeligt til Operaen, ,,<w>Corsarerne</w>'', og ere de eneste Digte, der i denne Samling ere optagne af mine dramatiske Arbeider. Sujettet til Balladen skyldes iøvrigt et Digt i <w>Fauriels</w> ,,<i>Chants populaires de la Grèce moderne.</i>'' Paris 1824. 2 Vol.</note>
   </notes>
   <source pages="138-139"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4005,7 +4008,7 @@ Bad ham beholde hele Summen.
 ,,Men al min Tid var Sang min Lyst,
 ,,Og Arbeid har mig holdt i Live.
 ,,Nei, jeg maa synge høit i Sky,
-,,Og jeg maa gnide paa min Fedel,<note>* Fedel ↄ: Violin, paa Islandsk <i>fidla</i>, forekommer oftere i vore gamle Folkesange.</note>
+,,Og jeg maa gnide paa min Fedel,<note>Fedel ↄ: Violin, paa Islandsk <i>fidla</i>, forekommer oftere i vore gamle Folkesange.</note>
 ,,Maa stræbe for mit Brød paany,
 ,,Og hamre lystig paa min Kjedel.''
 </poetry>
@@ -4029,7 +4032,7 @@ Og er en Kunst, der aldrig bliver lært.
 Det er et Spring, et Slags Saltomortale,
 Der springes bedst, naar vore Kræfter dale;
 Et Spring, som mangen Krøbling sprang
-Saa sikkert som den salige Paran.<note>* <w>Paran</w>, en i sin Tid berømt Linedandser.</note>
+Saa sikkert som den salige Paran.<note><w>Paran</w>, en i sin Tid berømt Linedandser.</note>
 Thi alle Dødelige have
 Til denne store Kunst en medfødt Gave.
 
@@ -5037,9 +5040,12 @@ Vil Du betroe Dig til en Røst som denne?
   <title>Et Vindselbrev</title>
   <firstline>Ved Gangesflodens Bredder</firstline>
   <notes>
-    <note>* Efter en smuk, gammel Skik, der imidlertid turde være mere bekjendt paa Landet i Danmark end i Kjøbenhavn, lægger man et lille, skrevet Digt sammen i Form af et Vindsel, der bevikles med Traad, Silke eller deslige, og gives (naturligviis til en Dame) og modtages under den Betingelse, at Digtet ikke maa læses, forinden Traaden eller Silken er opbrugt.</note>
+    <note>Efter en smuk, gammel Skik, der imidlertid turde være mere bekjendt paa Landet i Danmark end i Kjøbenhavn, lægger man et lille, skrevet Digt sammen i Form af et Vindsel, der bevikles med Traad, Silke eller deslige, og gives (naturligviis til en Dame) og modtages under den Betingelse, at Digtet ikke maa læses, forinden Traaden eller Silken er opbrugt.</note>
   </notes>
   <source pages="211-215"/>
+  <places>
+    <place ref="ganges" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5469,7 +5475,7 @@ For Sætterfeil saa fri,
 Og ved Din Omhu, Herren være lovet,
 Saa lidt vanheldet af et Bogstav, sat paa Hoved,
 At den hos dem, der dømme Poesie
-Blot efter Trykfeil, kan gaae Ram forbi.<note>* Prof. <w>Holst</w> havde velvillig paataget sig en af Correcturerne af andet Oplag af ,,<w>Stemninger og Tilstande</w>.''</note>
+Blot efter Trykfeil, kan gaae Ram forbi.<note>Prof. <w>Holst</w> havde velvillig paataget sig en af Correcturerne af andet Oplag af ,,<w>Stemninger og Tilstande</w>.''</note>
 
   Men mellem os, jeg mærker vel, hvor kritisk
 For Poesien er vor Tid.

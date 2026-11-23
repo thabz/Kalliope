@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="valerius" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Johan David</firstname>
+    <lastname>Valerius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1776-01-13</date>
+      <place>Göteborg</place>
+    </born>
+    <dead>
+      <date>1852-08-04</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <!-- Salmonsen beskriver digtningen som fortsættelse af den Leopold’ske smag. -->
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q2302669</wikidata>
+    <viaf>56876756</viaf>
+    <gnd>121022439</gnd>
+    <runeberg-org>valerius</runeberg-org>
+  </identifiers>
+</person>

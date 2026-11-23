@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="choraeus" country="se" nationality="fi" lang="sv" type="poet">
+  <name>
+    <firstname>Michaël</firstname>
+    <lastname>Choræus</lastname>
+  </name>
+  <!-- Livsdata: Författarens Lefverne i https://www.gutenberg.org/cache/epub/47799/pg47799-images.html#id00029 -->
+  <period>
+    <born>
+      <date>1774-03-15</date>
+    </born>
+    <dead>
+      <date>1806-06-05</date>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+</person>

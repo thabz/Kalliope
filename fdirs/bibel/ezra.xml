@@ -189,6 +189,9 @@
 <text id="bibelezra05" skip-index="true">
 <head>
   <title>Ezras Bog 5</title>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -255,6 +258,9 @@
 <text id="bibelezra07" skip-index="true">
 <head>
   <title>Ezras Bog 7</title>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

@@ -377,6 +377,9 @@ I Slesvig allerede!
   <toctitle><num>3.</num>Bivouak</toctitle>
   <firstline>Det er en Aften i April</firstline>
   <source pages="25-33"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -424,7 +427,7 @@ Sin Naturalforpleining.
 Feltflasken er i flittig Brug.
 Mens Nogle koge, brase,
 De Andre sidde nok saa luunt
-Og løie sig og dase.<note>* Provindsielle Udtryk for: at dovne.</note>
+Og løie sig og dase.<note>Provindsielle Udtryk for: at dovne.</note>
 
 En nikker med Gevær i Arm,
 En ligger plat paa Maven,
@@ -1659,7 +1662,7 @@ En Sang kun sjelden høster:
 Den blev i Landets Trængselskid
 En Talsmand og en Trøster.
 
-Mens ,,Landsoldaten''<note>Cf. Fabers <xref poem="faber1999071101"/>.</note> muntert klang,
+Mens ,,Landsoldaten''<note editorial="true">Cf. Fabers <xref poem="faber1999071101"/>.</note> muntert klang,
 Og Foraarssolen smilte.
 Vor lille Helt, af Arbeid træt,
 Saa blødt i Græsset hvilte.
@@ -2781,7 +2784,7 @@ Og hilses der med Glædesskrig:
 ,,Hurra, hurra! det dages!''
 
 Fra Sal til Sal, i kraftigt Chor,
-Høit ,,Landsoldaten''<note>Cf. Fabers <xref poem="faber1999071101"/>.</note> toner,
+Høit ,,Landsoldaten''<note editorial="true">Cf. Fabers <xref poem="faber1999071101"/>.</note> toner,
 Accompagneert med Hyl og Skraal
 Af Hospitalets Koner.
 

@@ -7,10 +7,11 @@
     <openlibrary-work>OL810991W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Teksten stammer fra Project Gutenbergs plboss10.txt. Indtastet af Judy Boss (eng003@zeus.uomaha.edu)</note>
+    <note editorial="true" type="credits">Indtastet af Judy Boss (eng003@zeus.uomaha.edu)</note>
   </notes>
   <quality>korrektur1</quality>
   <keywords>blankvers</keywords>
+  <source>Project Gutenberg: plboss10.txt</source>
 </workhead>
 <workbody>
 
@@ -20,6 +21,10 @@
   <toctitle>Book I</toctitle>
   <firstline>Of Mans First Disobedience, and the Fruit</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1903,6 +1908,11 @@ Accurst, and in a cursed hour he hies.
   <toctitle>Book III</toctitle>
   <firstline>Hail holy light, ofspring of Heav'n first-born</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -6841,6 +6851,10 @@ From the thick shade, and ADAM to his Bowre.
   <toctitle>Book VIII</toctitle>
   <firstline>No more of talk where God or Angel Guest</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="tigris" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -9164,6 +9178,12 @@ Of sorrow unfeign'd, and humiliation meek.
   <toctitle>Book X</toctitle>
   <firstline>Thus they in lowliest plight repentant stood</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

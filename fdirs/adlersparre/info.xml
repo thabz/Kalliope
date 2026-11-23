@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="adlersparre" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl August</firstname>
+    <lastname>Adlersparre</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1810-06-07</date>
+      <place>Kristinehamn</place>
+    </born>
+    <dead>
+      <date>1862-05-05</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q5542883</wikidata>
+  </identifiers>
+</person>

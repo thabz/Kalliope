@@ -72,8 +72,8 @@ Landekoder, som buildet accepterer i dag:
 `un` bruges som en praktisk "uden fast landegruppe"-gruppe og sorteres efter danske regler.
 
 Nationaliteter skal findes i flagopslaget i `common/flags.js`. Det understøtter
-`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `gr`, `ir`, `fi`, `is`,
-`ch`, `at`, `pt` og `cz`. Fx bevarer Runeberg sin gruppering under »andre«:
+`dk`, `se`, `no`, `gb`, `de`, `fr`, `us`, `it`, `es`, `nl`, `be`, `gr`, `ir`, `fi`, `is`,
+`ch`, `at`, `pt`, `cz` og `tr`. Fx bevarer Runeberg sin gruppering under »andre«:
 
 ```xml
 <person id="runeberg" country="un" nationality="fi" lang="sv" type="poet">
@@ -167,6 +167,16 @@ Hver af dem kan indeholde:
 
 - `<date>`: dato, typisk `YYYY`, `YYYY-MM` eller `YYYY-MM-DD`.
 - `<place>`: stednavn.
+
+Alle poster undtagen `type="collection"` kræver en fødsels- eller dåbsdato og
+en dødsdato. Kravet gælder også kunstnerposter (`type="artist"`). Brug
+`<date>?</date>`, når datoen ikke er registreret; udelad ikke perioden eller
+datofeltet. Korpustesten håndhæver dette krav.
+
+Når fødselsåret er ukendt, men dødsåret kendes, vises navnets leveår som
+`(† 1695)` eller fx `(† c. 1700)` ved et omtrentligt dødsår. Når begge år er
+ukendte, vises `(Ukendt levetid)`. Mellemrummet efter `†` er fast (U+00A0),
+så tegnet holdes sammen med årstallet.
 
 `<place>` kan have attributten `inon`:
 
@@ -319,7 +329,7 @@ Buildet udleder en række booleans fra `info.xml` og nabofiler:
 - `has_biography`: findes `bio.xml`, lokal `events.xml`, eller brugbar fødsels-/dødsperiode.
 - `has_mentions`: udledes senere fra referencer og bibliografier.
 
-Hvis en person har `portraits.xml`, skal der være mindst et `square-src`, ellers fejler buildet.
+Portrætter kan registreres uden `square-src`, når der ikke ønskes et repræsentativt sideikon eller social portrait.
 
 ## Valideringer og faldgruber
 
@@ -333,7 +343,7 @@ Buildet tjekker blandt andet:
 - `lang` skal være en kendt sprogkode.
 - `literary-periods` skal bestå af kendte periode-id'er.
 - lokale litteraturperioder skal passe til personens `country`.
-- Hvis `portraits.xml` findes, skal der være et square-portræt.
+- `square-src` er valgfri; uden den genereres intet square-portræt.
 - Alle XML-filer i digtermapperne skal have en understøttet funktion; værker registreres automatisk.
 
 Bemærk:
@@ -349,3 +359,10 @@ Bemærk:
 - `fdirs/abildgaard/info.xml`: kunstner (`type="artist"`).
 - `fdirs/folkeviser/info.xml`: samlings-/collection-lignende data.
 - `fdirs/christian7/info.xml`: person med kroningsdata.
+
+## Dokumenteret forgæves biografisøgning
+
+Alle egentlige personer kræver en synlig, ikke-tom biografi eller en
+`biography-status` efter `docs/person-editorial.md`. Samleposter undtages.
+Markøren er redaktionelle metadata; den opretter ikke en biografiside og
+ændrer ikke `has_biography`. Opret aldrig en tom `bio.xml` som negativt fund.

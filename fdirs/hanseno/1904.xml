@@ -625,6 +625,11 @@ men roligt Hjærtet slaar.
   <title>Jødernes Kirkegaard</title>
   <firstline>Det klarede nys, men det mulner igen</firstline>
   <source pages="25-33"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="zion" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1332,7 +1337,7 @@ var Øjnene blanke og haarde,
 og aldrig hun glemte et eneste Nu,
 at kommen hun var for at kaare.
 
-Og ofte hun vakte en dødelig Dyst,<note>Dyst,] Dyst,,</note>
+Og ofte hun vakte en dødelig Dyst,<note editorial="true">Dyst,] Dyst,,</note>
 men selv blev hun aldrig besejret.
 Da nynned min Sjæl i forunderlig Lyst;
 med Ord jeg den evige fejred.

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1787-scots-musical-museum" author="lowe" status="incomplete" type="anthology">
+<workhead>
+  <title>The Scots Musical Museum</title>
+  <subtitle>Vol. I</subtitle>
+  <year>1787</year>
+  <source facsimile="1787-marys-dream" facsimile-pages-num="2" href="https://archive.org/details/scotsmusicalmuv100ingl">
+    <title>The Scots Musical Museum</title>
+    <editor>James Johnson</editor>
+    <volume>I</volume>
+    <place>Edinburgh</place>
+    <publisher>James Johnson</publisher>
+    <year>1787</year>
+  </source>
+  <notes>
+    <note>Eksemplar: National Library of Scotland, Ing.83. Facsimilet omfatter kun de to sider med det indførte digt.</note>
+  </notes>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-08T03:22:51Z"/>
+  </proofreadings>
+</workhead>
+<workbody>
+<text id="lowe2026110801" lang="en">
+<head>
+  <title>Mary’s Dream</title>
+  <firstline>The moon had climb’d the highest hill</firstline>
+  <notes>
+    <note editorial="true">Første strofe er nodeunderlæg til melodisæt nr. 37; stroferne 2–4 er trykt som vers på den følgende side. Registerets fornavn »Alexr.« er fejlagtigt; forfatteren er John Lowe (1750–1798).</note>
+  </notes>
+  <source pages="38-39" facsimile-pages="1-2" href="https://archive.org/details/scotsmusicalmuv100ingl"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+The moon had climb’d the highest hill,
+which rises o’er the source of Dee,
+And from the eastern summit shed
+her silver Light on tow’r and tree:
+When Mary laid her down to sleep,
+Her thoughts on Sandy far at sea;
+When soft and low a voice was heard,
+Say, Mary weep no more for me.
+
+<pb n="39" facs="001.jpg"/><nonum><center>2</center></nonum>
+She from her pillow gently rais’d
+    Her head to ask, who there might be.
+She saw young Sandy shiv’ring stand,
+    With visage pale and hollow eye;
+’O Mary dear, cold is my clay.
+    ’It lies beneath a stormy sea;
+’Far, far from thee, I sleep in death;
+    ’So, Mary, weep no more for me.
+
+<nonum><center>3</center></nonum>
+’Three stormy nights and stormy days
+    ’We toss’d upon the raging main:
+’And long we strove our bark to save,
+    But all our striving was in vain.
+Ev’n then, when horror chill’d my blood,
+    ’My heart was fill’d with love for thee:
+’The storm is past, and I at rest:
+    ’So, Mary, weep no more for me.
+
+<nonum><center>4</center></nonum>
+’O maiden dear, thyself prepare,
+    ’We soon shall meet upon that shore,
+’Where love is free from doubt and care,
+    ’And thou and I shall part no more!
+Loud crow’d the cock, the shadow fled,
+    No more of Sandy could she see;
+But soft the passing spirit said,
+    “Sweet Mary, weep no more for me!”
+</poetry>
+</body>
+</text>
+
+</workbody>
+</kalliopework>

@@ -80,6 +80,9 @@ Tænk paa Jesus; det var ham, der sagde:
   <title>Jesu Fødsel</title>
   <firstline>Kommen er den store Time</firstline>
   <source pages="5-11" facsimile-pages="18-24"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -282,6 +285,10 @@ Straaler <w>Fromhed</w> som en Perle reen.
   <title>Daaben</title>
   <firstline>Hvor mod Jordans Strande</firstline>
   <source pages="12-23" facsimile-pages="25-36"/>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -587,6 +594,10 @@ Der at reise Aanden fra dens Fald.
   <title>Jesus fristes i Ørkenen</title>
   <firstline>Langtfra de rislende Vover</firstline>
   <source pages="23-33" facsimile-pages="36-46"/>
+  <places>
+    <place ref="himalayas" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1050,6 +1061,10 @@ Sig bag dens lette Fjed.
   <title>Den utroe Kvinde</title>
   <firstline>Høit lyste Solen paa Judæas Himmel</firstline>
   <source pages="40-44" facsimile-pages="53-57"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1488,6 +1503,9 @@ Under ham laa Havets stille Liv.
   <title>Lazarus’s Opvækkelse</title>
   <firstline>Hvor Kedrons Slette smiler</firstline>
   <source pages="55-67" facsimile-pages="68-80"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1797,6 +1815,9 @@ Af de Trende fulgt, igjennem Haven.
   <title>Jesus i Gethsemane</title>
   <firstline>Jesus vandrer gjennem Nattens Stille</firstline>
   <source pages="67-72" facsimile-pages="80-85"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1941,6 +1962,10 @@ Med et Kys forraader han sin Lærer.
   <title>Jesu Død</title>
   <firstline>Græd, Jerusalem! lyt til min Harpes Toner</firstline>
   <source pages="73-83" facsimile-pages="86-96"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3705,7 +3730,7 @@ Fødte Verdens rige Hjerte!
   <subtitle>Efter F. Freiligrath.</subtitle>
   <firstline>O, elsk imens du elske kan</firstline>
   <notes>
-    <note>Oversættelse af <xref type="translation" poem="freiligrath2026072601"/>.</note>
+    <note editorial="true">Oversættelse af Ferdinand Freiligraths <xref type="translation" poem="freiligrath2026072601"/>.</note>
   </notes>
   <source pages="140-142" facsimile-pages="153-155"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3818,6 +3843,9 @@ I Tankens Helligdom, der skal de boe;
     <event>1852-12-24</event>
   </dates>
   <source pages="144-146" facsimile-pages="157-159"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4114,6 +4142,9 @@ Paa Søstrene, som boe i Norges Dale.
   <title>Bryllupssang</title>
   <firstline>Ved Esrom Sø gik en Jomfru rank</firstline>
   <source pages="154-155" facsimile-pages="167-168"/>
+  <places>
+    <place ref="lake-esrum" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4670,6 +4701,13 @@ Gaaer jeg, du Skovens Blomst! for dig at finde.
 <head>
   <title>Roselille</title>
   <firstline>Roselille og hendes Moder, de sad over Bord</firstline>
+  <notes>
+    <note editorial="true">Gendigtning efter folkevisen »Redselille og Medelvold« (DgF 271; TSB D 288).</note>
+    <!-- Forlægsrelation: Højskolesangbogens Sanghåndbogen online, »Roselil' og hendes moder«: https://hojskolesangbogen.dk/om-sangbogen/historier-om-sangene/o-r/roselil-og-hendes-moder. Artiklen omtaler flere gamle forlæg; en bestemt DgF-optegnelse er ikke identificeret som Molbechs konkrete forlæg. TSB-nummeret er sammenholdt med SAMLA: https://samla.no/viewer/metadata/1b6b01bb-87ac-42b6-919f-fb0200f916b1/174/. -->
+  </notes>
+  <pictures>
+    <picture artwork="kunst/zahrtmann-roselil-og-hendes-moder-1870"/>
+  </pictures>
   <source pages="171-172" facsimile-pages="184-185"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -5104,6 +5142,9 @@ Jeg siger Eder et ømt Farvel:
   <title>Anangas</title>
   <firstline>Vogt dig, smukke Bajadere</firstline>
   <source pages="188-190" facsimile-pages="201-203"/>
+  <places>
+    <place ref="ganges" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5974,6 +6015,10 @@ Hvordan saa Fremtiden ruller sin Tærning.
     <performed>1849-11-14</performed>
   </dates>
   <source pages="219-220" facsimile-pages="232-233"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6177,6 +6222,9 @@ Nu er Mindernes Drapa forbi.
   <subtitle>Ved Studentermødet 1862.</subtitle>
   <firstline>Hil dig, Huus med trende Haller, stjerneklare Nord</firstline>
   <source pages="226-227" facsimile-pages="239-240"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6272,7 +6320,7 @@ Din og Danmarks Lykke!
     <event>1859-12-17</event>
   </dates>
   <notes>
-    <note>Mottoet er fra Dantes <xref poem="dante2005050184,129"/>.</note>
+    <note editorial="true">Mottoet er fra Dantes <xref poem="dante2005050184,129"/>.</note>
   </notes>
   <pictures>
     <picture artwork="kunst/richardt-frederiksborg-slots-brand-1859"/>
@@ -7256,6 +7304,9 @@ Og er en venlig Saga, der gjemmer den Ædles Minde.
   <subtitle>1848.</subtitle>
   <firstline>Der er en Gud, som over Danmark vaager</firstline>
   <source pages="266-269" facsimile-pages="279-282"/>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7370,6 +7421,9 @@ Der er en Gud, som over Danmark vaager.
     <event>1844-03-24</event>
   </dates>
   <source pages="270-274" facsimile-pages="283-287"/>
+  <places>
+    <place ref="kidron-valley" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { TextInline } from '../components/textcontent.js';
+import TextContent, { TextInline } from '../components/textcontent.js';
 
 describe('text content language markup', () => {
   it('renders a neutral language span with nested italics', () => {
@@ -17,11 +17,50 @@ describe('text content language markup', () => {
     );
   });
 
+  it('renders note citation lines and non-verse labels without raw XML', () => {
+    const html = renderToStaticMarkup(
+      <TextInline contentHtml={[[
+        '<poetry>    Første vers<br/>Andet vers<br/><nonum><right>Kilden.</right></nonum></poetry>',
+      ]]} />
+    );
+
+    expect(html).toContain('white-space:pre-wrap');
+    expect(html).toContain('    Første vers<br/>Andet vers<br/>');
+    expect(html).toContain('Kilden.');
+    expect(html).not.toContain('<code>');
+    expect(html).not.toContain('&lt;nonum');
+  });
+
+  it('keeps normal whitespace handling for ordinary columns', () => {
+    const html = renderToStaticMarkup(
+      <TextInline contentHtml={[[
+        '<column>Se første udgave.<br/>Se anden udgave.</column>',
+      ]]} />
+    );
+    expect(html).not.toContain('white-space');
+    expect(html).toContain('Se første udgave.<br/>Se anden udgave.');
+  });
+
   it('preserves language attributes on italic source text', () => {
     const html = renderToStaticMarkup(
       <TextInline contentHtml={[["<i lang=\"fr\">Très bien</i>"]]} />
     );
 
     expect(html).toContain('<i lang="fr">Très bien</i>');
+  });
+});
+
+
+describe('Chinese verse layout', () => {
+  it.each([
+    ['poetry', 'zh', true],
+    ['poetry', 'da', false],
+    ['prose', 'zh', false],
+  ])('selects vertical layout for %s in %s', (type, contentLang, vertical) => {
+    const html = renderToStaticMarkup(
+      <TextContent type={type} contentLang={contentLang} contentHtml={[["杜甫詩"], ["小娃撐小艇"]]} />
+    );
+    expect(/class="[^"]*vertical-chinese/.test(html)).toBe(vertical);
+    expect(html.indexOf('杜甫詩')).toBeLessThan(html.indexOf('小娃撐小艇'));
   });
 });

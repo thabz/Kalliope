@@ -7,8 +7,8 @@
     <openlibrary-work>OL37257361W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun direkte meningsforstyrrende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note type="credits">Teksten er tilføjet af Henrik Nielsen.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun direkte meningsforstyrrende fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true" type="credits">Teksten er tilføjet af Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture src="1791-p1.jpg">Titelbladet til bind 1, lyder ,,Ungdomsarbeider // af / Jens Baggesen // - Nos hæc novimus esse nihil. / Mart. // Første Deel // Kiøbenhavn, / hos Hof- og Univers. Bogtrykker J. F. Schiltz, / 1791.''.</picture>
@@ -90,7 +90,7 @@ Kun Gratierne tage, for at give!''
 
 ,,Charlotte,'' sang den første, ,,vor Veninde,
     Skal denne Krands af os sig skiænket see!''
-,,Charlotte,'' sang den anden, ,,den skal finde''<note>finde''] finde</note>
+,,Charlotte,'' sang den anden, ,,den skal finde''<note editorial="true">finde''] finde</note>
 ,,Forskiønnet,'' sang den tredie Gudinde -
     ,,Charlotte!'' sang de alle tre.
 
@@ -112,8 +112,8 @@ Med Følelser, som Gratier kun tale,
   </subtitle>
   <firstline>Af alle Tanker, som en Pen</firstline>
   <notes>
-    <note>* Simon Simonsen, velmeriteret Skoleholder i Hulbye. [note til titlen.]</note>
-    <note>* ,,Kan noget være latterligere?'' Jeg begriber egentlig ei hvad min lærde Fætter har villet sige med dette Motto. Enten han mener dermed, at intet kan være latterligere end <i>Forfatteren</i>, eller: end <i>hans Liv og Levnet</i>, eller: end <i>hans Fætter</i>, eller: end <i>begges Anmærkninger</i>, eller: end <i>det alt tilhobe</i>, vil jeg ikke undersøge; men overlader aldeles til Læserens finere Skiønsomhed, at dømme hvad han burde have meent. Ondskabsfuldt synes det altid, og var det ikke min Fætter, der havde skrevet det, havde jeg sandelig neppe ladet det trykke. [note til mottoet.]<br/>B.</note>
+    <note>Simon Simonsen, velmeriteret Skoleholder i Hulbye. [note til titlen.]</note>
+    <note>,,Kan noget være latterligere?'' Jeg begriber egentlig ei hvad min lærde Fætter har villet sige med dette Motto. Enten han mener dermed, at intet kan være latterligere end <i>Forfatteren</i>, eller: end <i>hans Liv og Levnet</i>, eller: end <i>hans Fætter</i>, eller: end <i>begges Anmærkninger</i>, eller: end <i>det alt tilhobe</i>, vil jeg ikke undersøge; men overlader aldeles til Læserens finere Skiønsomhed, at dømme hvad han burde have meent. Ondskabsfuldt synes det altid, og var det ikke min Fætter, der havde skrevet det, havde jeg sandelig neppe ladet det trykke. [note til mottoet.]<br/>B.</note>
   </notes>
   <source in="bd1" pages="1-66"/>
   <quality>korrektur1,kilde,side</quality>
@@ -126,13 +126,13 @@ Med Følelser, som Gratier kun tale,
 Af alle Tanker, som en Pen
 Har af et Blekhorn henslængt paa Papiret
 Mig ingen synes saa bemærkelig som den,
-Hvormed min <i>Callundborgske</i> gode Ven<note>* Hans Mikkelsen, priviligeret Hvidtølsbrygger i Kallundborg.<br/>F.</note>
+Hvormed min <i>Callundborgske</i> gode Ven<note>Hans Mikkelsen, priviligeret Hvidtølsbrygger i Kallundborg.<br/>F.</note>
 Sin Bog om salig <i>Paars</i> har ziret:
 ,,Vort Levned er kun kort! det er mod Evighed
 Som liden Landsbye mod en stor og mægtig Sted.''
     Ak! at jeg med en Hammer denne Tanke
 Dybt ind i manges Pander kunde banke,
-Som op og ned i Buegangen <i>spanke</i>,<note>* Et meget godt <i>Ord</i>, stemplet af Selskabet for de skiønne Videnskaber. See Sapphos Brev til Phaon.</note>
+Som op og ned i Buegangen <i>spanke</i>,<note>Et meget godt <i>Ord</i>, stemplet af Selskabet for de skiønne Videnskaber. See Sapphos Brev til Phaon.</note>
 Og sommetider, hvor de burde gaae,
 Til andres Qval aldeles stille staae;
 Som fra det eene til det andet vanke,
@@ -154,9 +154,16 @@ At svæve Lysets høie Throne nær,
 Og mellem Sole med fortryllet Øre
 Pleiadernes Musik til Engles Sang at høre;
 Som hisset, i Begeistrings Maskepie
-Med hine tit prostitueerte Ni,<note>tit] til</note>
+Med hine tit prostitueerte Ni,<note editorial="true">tit] til</note>
 Forglemmer hvad paa Jorden er et giøre,
-Og drukner Tidens Muus i Sværmerie<note>* Tempus edax rerum. Det er bekiendt, at tiden gnaver alle Ting; man kan derfor ret passende ligne den ved en Muus. Min Fætter synes ellers at have stiaalet dette Billede hos een af de forvovneste Digtere i den høie Poesie, hvis Navn jeg ikke erindrer, og hvis Værker desværre alle ere tabte. Stedet, jeg sigter til, lyder saa:<br/>   Tidens hungrige Muus saa længe paa Melkeveiens Oste<br/>Gnave, til, lidt efter lidt, de smuldre; men Evigheds Kispus<br/>Snapper, een efter anden tilsidst de gnavende Tider - [citerer Baggesens <xref poem="baggesen2002031408"/>, l. 137-39.]<br/>B.</note>
+Og drukner Tidens Muus i Sværmerie<note>Tempus edax rerum. Det er bekiendt, at tiden gnaver alle Ting; man kan derfor ret passende ligne den ved en Muus. Min Fætter synes ellers at have stiaalet dette Billede hos een af de forvovneste Digtere i den høie Poesie, hvis Navn jeg ikke erindrer, og hvis Værker desværre alle ere tabte. Stedet, jeg sigter til, lyder saa:
+<poetry>
+   Tidens hungrige Muus saa længe paa Melkeveiens Oste
+Gnave, til, lidt efter lidt, de smuldre; men Evigheds Kispus
+Snapper, een efter anden tilsidst de gnavende Tider -
+</poetry>
+[citerer Baggesens <xref poem="baggesen2002031408"/>, l. 137-39.]
+B.</note>
 Med Laurer, Lotter, Minner, Marianer,
 Og i den himmelreene Sympathie,
 Som smitter Siel og Krop med Raserie,
@@ -176,8 +183,8 @@ Og i hver Kamp, den være nok saa slem,
 <i>At sløife Hiernen og besætte Maven</i> -
 Ak! at jeg havde kundet banke den
 Ret dybt i Panden paa den gode Ven,
-Hvis Levnet her, til gyseligt Eksempel,<note>her, til] her til,</note>
-Jeg stiller frem i Eftertidens Tempel!<note>* Læseren giør vel i, bestandig at erindre sig, det er en gammel Skoleholder, som taler.<br/>B.</note>
+Hvis Levnet her, til gyseligt Eksempel,<note editorial="true">her, til] her til,</note>
+Jeg stiller frem i Eftertidens Tempel!<note>Læseren giør vel i, bestandig at erindre sig, det er en gammel Skoleholder, som taler.<br/>B.</note>
     I Unge, som endnu ei har begyndt
 Paa gamle Fero, tuli, latum, ferre,
 Hvis Kundskabs Flødeskind endnu er tyndt!
@@ -187,9 +194,9 @@ Studering paa Fornuftens Melk udbreder,
 Og troer, dens søde Melk jer Krop og Sind
 Langt bedre føder, end den sure feder!
 Flyer al <i>Philosophie</i> som Gift og Pest,
-Betragtning, Gransken, Pønsen og deslige;<note>* Cavete, ne qvis vos decipat per philosophiam.<br/>F.</note>
+Betragtning, Gransken, Pønsen og deslige;<note>Cavete, ne qvis vos decipat per philosophiam.<br/>F.</note>
 Og nøies tarvelig med hvad en Præst,
-Og høit en Provst om dit og dat kan sige.<note>* Det er virkelig bedrøveligt at see, hvor meget Studering tager Overhaand i vore Tider, især i disse nordiske Riger. Ved hvert Skridt i de smaa Kiøbstæder møder man en latinsk Skoledreng, og hvor man seer hen i Kiøbenhavn, seer man paa en Student, hvis man ikke seer paa en Professor. Fremmede, som komme hertil, studse ved de mange blege, mørke, søvnige Ansigter, og tænke kun lidt paa, at hele Nationen studerer. Folkets Hang i gamle Dage til Umaadelighed i Miød og Øl har forandret sig til Umaadelighed i Læsning og Grublen, saa at man virkelig kan klage med Seneca: Litterarum intemperantia hodie laboramus.<br/>F.</note>
+Og høit en Provst om dit og dat kan sige.<note>Det er virkelig bedrøveligt at see, hvor meget Studering tager Overhaand i vore Tider, især i disse nordiske Riger. Ved hvert Skridt i de smaa Kiøbstæder møder man en latinsk Skoledreng, og hvor man seer hen i Kiøbenhavn, seer man paa en Student, hvis man ikke seer paa en Professor. Fremmede, som komme hertil, studse ved de mange blege, mørke, søvnige Ansigter, og tænke kun lidt paa, at hele Nationen studerer. Folkets Hang i gamle Dage til Umaadelighed i Miød og Øl har forandret sig til Umaadelighed i Læsning og Grublen, saa at man virkelig kan klage med Seneca: Litterarum intemperantia hodie laboramus.<br/>F.</note>
 Betænker, Eders Lives Tid er kort!
 Og driver den ei hen i Taaget bort
 Med det unyttigste paa hele Jorden;
@@ -201,9 +208,9 @@ Er mere værd end alle lærde Møier,
 End al den dybeste Philosophie,
 Og hele Musechorets Tryllerie,
 Hvorved kun slet man sover og fordøier!
-Med Andagt læser min Biographie!<note>* Jeg kalder den <i>min</i> Biographie, fordi jeg har skrevet den. Saaledes siger man: <i>Plutarks</i> Biographier, uagtet man deri finder slet ingen Efterretninger om <i>Plutark</i>.<br/>F.</note>
+Med Andagt læser min Biographie!<note>Jeg kalder den <i>min</i> Biographie, fordi jeg har skrevet den. Saaledes siger man: <i>Plutarks</i> Biographier, uagtet man deri finder slet ingen Efterretninger om <i>Plutark</i>.<br/>F.</note>
 Der findes hist og her en Deel deri,
-Som i sit hele Lys min Sætning sætter.<note>* <i>,,Sætning sætter.''</i> Det klinger noget haardt Herr Fætter!<br/>B.</note>
+Som i sit hele Lys min Sætning sætter.<note><i>,,Sætning sætter.''</i> Det klinger noget haardt Herr Fætter!<br/>B.</note>
 O! speiler Eder i min stakkels Fætter,
 Som, Himlen veed, dog ikke drev det vidt;
 Men lidt af denne Suurdei, meget lidt,
@@ -224,9 +231,12 @@ Forlader aldrig gode gamle Skikke,
 Og lader Verden rulle, som den kan!
 Mod egen sieldne Kummer holder Stand,
 Og lader ingen andens gaae jer an!
-Og, frem for alting, tænker, <i>tænker ikke!</i><note>* Thaught is trouble to the Head.   Prior.<br/>Jeg haaber, at denne Fætter Simonsens Indledning vil forsone mine alvorlige, rettroende, og prosaiske Læsere med alt det øvrige, og beder dem derfor, at læse den til allersidst. Da den upaatvivlelig er det beste, og maaskee eeneste ret fornuftige i den hele Samling, vilde jeg gierne have anbragt den i Enden; men man forestilte mig, at det var en dødelig Synd imod Lovene for en Bogs Indretning, at sætte Indledningen i Udgangen. Det var at anbringe Kudsken bag paa Kareten, sagde min Fætter. - Det andet er at sætte Styrmanden for i Skibet, sagde jeg. - Det er ikke afgjort, sagde han, at din Bog ligner et Skib, meer end en Karet. - Ganske rigtig, svarte jeg, den ligner ingen af Delene, da den bestaaer af adskillige Stykker, saa meget, som en Krigshær, eller en Samling af Skolebørn, og i begge Tilfælde bør Generalen gaae bag efter, for at holde Styr paa Tropperne. Deri var endda nogen Meening, igientog min Fætter; men min [din?] Indledning skal staae først, fordi jeg vil have man skal læse den. Jeg blev ganske flau ved denne Grund, og indvendte ikke et Ord meer. Det var imidlertid dog artigt nok, om et eller andet philosophiskt Hoved i Sielland vilde paatage sig, at undersøge om en saadan Bog meest ligner et Skib, en Karet, en Krigshær, eller en Flok Skolebørn, og ved samme Leilighed bestemme, hvorvidt Forfatteren ligner meer eller mindre en General, Skolemester, Styrmand eller Kudsk.<br/>B.</note>
+Og, frem for alting, tænker, <i>tænker ikke!</i><note>Thaught is trouble to the Head.   Prior.<br/>Jeg haaber, at denne Fætter Simonsens Indledning vil forsone mine alvorlige, rettroende, og prosaiske Læsere med alt det øvrige, og beder dem derfor, at læse den til allersidst. Da den upaatvivlelig er det beste, og maaskee eeneste ret fornuftige i den hele Samling, vilde jeg gierne have anbragt den i Enden; men man forestilte mig, at det var en dødelig Synd imod Lovene for en Bogs Indretning, at sætte Indledningen i Udgangen. Det var at anbringe Kudsken bag paa Kareten, sagde min Fætter. - Det andet er at sætte Styrmanden for i Skibet, sagde jeg. - Det er ikke afgjort, sagde han, at din Bog ligner et Skib, meer end en Karet. - Ganske rigtig, svarte jeg, den ligner ingen af Delene, da den bestaaer af adskillige Stykker, saa meget, som en Krigshær, eller en Samling af Skolebørn, og i begge Tilfælde bør Generalen gaae bag efter, for at holde Styr paa Tropperne. Deri var endda nogen Meening, igientog min Fætter; men min [din?] Indledning skal staae først, fordi jeg vil have man skal læse den. Jeg blev ganske flau ved denne Grund, og indvendte ikke et Ord meer. Det var imidlertid dog artigt nok, om et eller andet philosophiskt Hoved i Sielland vilde paatage sig, at undersøge om en saadan Bog meest ligner et Skib, en Karet, en Krigshær, eller en Flok Skolebørn, og ved samme Leilighed bestemme, hvorvidt Forfatteren ligner meer eller mindre en General, Skolemester, Styrmand eller Kudsk.<br/>B.</note>
 Men det er nok; thi Tiden løber bort,
-Som <i>Sophocles</i> ret mærkeligen siger:<note>* &#913;&#955;&#953;&#962; &#7972;&#948;&#951; &#947;&#7936;&#961; &#960;&#959;&#955;&#8016;&#962; &#7952;&#954;&#964;&#941;&#964;&#945;&#964;&#945;&#953; &#967;&#961;&#972;&#957;&#959;&#962;<br/>Sophocl. Aj. flagr. in fine v. 1423.</note>
+Som <i>Sophocles</i> ret mærkeligen siger:<note><poetry lang="el">
+&#913;&#955;&#953;&#962; &#7972;&#948;&#951; &#947;&#7936;&#961; &#960;&#959;&#955;&#8016;&#962; &#7952;&#954;&#964;&#941;&#964;&#945;&#964;&#945;&#953; &#967;&#961;&#972;&#957;&#959;&#962;
+</poetry>
+Sophocl. Aj. flagr. in fine v. 1423.</note>
 Og hvad du giør i Verden, giør det kort!
 Den Regel aldrig nogensinde sviger.
 
@@ -240,12 +250,12 @@ Frue <i>Famas</i> Dulcian har ingen Tone.
 Hans Fader var en Mand, hans Moder var en Kone,
 Den Sag er plat;
 Men Hvo der havde dem paa Jorden sat,
-Har Taushed skiult i Glemsels mørke Nat!<note>* Min Fætter gaaer heri for vidt. Jeg har sikkre Efterretninger om, at det og har været en Mand og en Kone.<br/>B.</note>
+Har Taushed skiult i Glemsels mørke Nat!<note>Min Fætter gaaer heri for vidt. Jeg har sikkre Efterretninger om, at det og har været en Mand og en Kone.<br/>B.</note>
 Grundlærde Pennes Myriader
 Formode blot, at brave <i>Lameks</i> Søn,
-Der biergede blandt andet, og vort Kiøn,<note>* Det er bekiendt nok, at <i>Noah</i> biergede i sin Ark mange flere Dyr, end Mennesker. Herved falder mig en Dumhed ind, som mange store Skribentere have giort sig skyldige i, ved at paastaae, at der ingen Fiske var i Arken; ligesom om Karper og Karusser kunde leve i salt Vand?<br/>F.</note>
+Der biergede blandt andet, og vort Kiøn,<note>Det er bekiendt nok, at <i>Noah</i> biergede i sin Ark mange flere Dyr, end Mennesker. Herved falder mig en Dumhed ind, som mange store Skribentere have giort sig skyldige i, ved at paastaae, at der ingen Fiske var i Arken; ligesom om Karper og Karusser kunde leve i salt Vand?<br/>F.</note>
 Herr Kaptein <i>Noah</i> var hans Stammefader -
-Og jeg - jeg finder Hypothesen skiøn.<note>* Der kan imidlertid tvistes meget om denne, som om alle Hypotheser. See alle de Forfattere, som have været skrevet om de forskiællige Folkeslags Herkomst, o. a. f.<br/>B.</note>
+Og jeg - jeg finder Hypothesen skiøn.<note>Der kan imidlertid tvistes meget om denne, som om alle Hypotheser. See alle de Forfattere, som have været skrevet om de forskiællige Folkeslags Herkomst, o. a. f.<br/>B.</note>
     Saa snart han kom til Lyset blev han vranten;
 Han vrippede den Gang han først blev svøbt;
 Han skreeg forskækkelig, da han blev døbt,
@@ -255,14 +265,14 @@ Den onde Aand kom ikke rigtig ud;
 Men at en Stump til Barnets store Plage,
 Af den Ureenes Næse blev tilbage;
 Og den Omstændighed var Aarsag i
-Den megen Synd paa Prent han siden øved,<note>* See alle følgende Stykker i denne Samling.<br/>F.</note>
+Den megen Synd paa Prent han siden øved,<note>See alle følgende Stykker i denne Samling.<br/>F.</note>
 Hvormed han Faer og Moer og Præst og Degn bedrøved,
 For Folk at dysse hen sig Søvnen selv berøved,
 Og med <i>Seline</i>, <i>Cypris</i> og de <i>Ni</i>
 Bedrev Afguderie,
 Alt sammen under Navn af Poesie.
     Det være, som det vil. Enhver i Kirken troede,
-At den urene Aand med Krop og Siel<note>* Man indvende mig ikke, at en Aand har ingen Krop; thi den Sætning er aabenbar falsk, i det mindste om denne Aand, som her tales om. Hvis den urene Aand ingen Krop havde, hvorledes skulde han da kunne fylde en Plads og tage Rummet op i et Barn? Det er bekiendt nok desuden, at den urene Aand stinker, hvilket man dog ikke kan forudsætte om en Aand, der er bare Siel. Dievlene, det er sandt, kunne snærpe sig ind og giøre sig saa bitte smaa, at tre, fire Skokke magelig kunne rummes i et Fingerbøl; men netop det, at de snærpe sig ind, beviser, at de have Kroppe. End ydermere: Dievelen staaer, gaaer, flyver, rider, skyder, galer som en Hane, og brøler som en Løve, taler alle Sprog, æder ikke allene; men sluger; og <i>yngler</i>, efter adskillige Lærefædres Forsikkringer: Den onde Aand overalt er i Grunden aldeles ingen Aand; thi en Aand har hverken Kiød eller Been; og den onde Aand har i høi Grad begge Dele. Det gaaer endog saa vidt, at en Bisp (som best maa vide sligt) har offentlig tilstaaet: at Dievelen var næsten intet andet end bare Kiød.<br/>F.</note>
+At den urene Aand med Krop og Siel<note>Man indvende mig ikke, at en Aand har ingen Krop; thi den Sætning er aabenbar falsk, i det mindste om denne Aand, som her tales om. Hvis den urene Aand ingen Krop havde, hvorledes skulde han da kunne fylde en Plads og tage Rummet op i et Barn? Det er bekiendt nok desuden, at den urene Aand stinker, hvilket man dog ikke kan forudsætte om en Aand, der er bare Siel. Dievlene, det er sandt, kunne snærpe sig ind og giøre sig saa bitte smaa, at tre, fire Skokke magelig kunne rummes i et Fingerbøl; men netop det, at de snærpe sig ind, beviser, at de have Kroppe. End ydermere: Dievelen staaer, gaaer, flyver, rider, skyder, galer som en Hane, og brøler som en Løve, taler alle Sprog, æder ikke allene; men sluger; og <i>yngler</i>, efter adskillige Lærefædres Forsikkringer: Den onde Aand overalt er i Grunden aldeles ingen Aand; thi en Aand har hverken Kiød eller Been; og den onde Aand har i høi Grad begge Dele. Det gaaer endog saa vidt, at en Bisp (som best maa vide sligt) har offentlig tilstaaet: at Dievelen var næsten intet andet end bare Kiød.<br/>F.</note>
 Var ganske jaget ud af sit Hotel;
 (At kalde Fornems Huus <i>Hotel</i>, er Mode,
 Og <i>Satan</i> fornem er, det veed man vel)
@@ -290,7 +300,7 @@ Men Livets Hvidt med Alderen blir sort.
     Fem Aar var omme. Tanken i hans Hierne
 Begyndte meer og meer at spire frem.
 Nu gad han vidst, hvor langt den næste Stierne
-Var fra hans Hiem?<note>* Denne Nød kunde jeg have knækket ham. Huyghen og andre holde <i>Sirius</i> for den nærmeste Fixstierne, og have udregnet, at en Kanonkugle, i bestandig lige Fart, vilde behøve 690,000 Aar, for at naae den; og dog har Huyghen kun angivet dens Frastand fra os 27,664 Gange større end Solens. Bradley og den store Lambert have beviist, at denne Beregning er alt for tarvelig, og med al Sandsynlighed ansat Frastanden 15 Gange større. Den nærmeste Stierne er altsaa i det mindste 8400,000,000,000 Mile fra min Fætters Hiem. O Sirius! O Frastand!<br/>F.</note>
+Var fra hans Hiem?<note>Denne Nød kunde jeg have knækket ham. Huyghen og andre holde <i>Sirius</i> for den nærmeste Fixstierne, og have udregnet, at en Kanonkugle, i bestandig lige Fart, vilde behøve 690,000 Aar, for at naae den; og dog har Huyghen kun angivet dens Frastand fra os 27,664 Gange større end Solens. Bradley og den store Lambert have beviist, at denne Beregning er alt for tarvelig, og med al Sandsynlighed ansat Frastanden 15 Gange større. Den nærmeste Stierne er altsaa i det mindste 8400,000,000,000 Mile fra min Fætters Hiem. O Sirius! O Frastand!<br/>F.</note>
 Og hvad der var bag Plankeværket,
 Som han bag Søen havde mærket? -
 Og om man kunde did i fire Dage gaae? -
@@ -305,7 +315,7 @@ Den, uden Been, saa hurtig rende kunde? -
 Hvor Storken havde faaet fat
 Den lille Søster, han saa længe vented',
 Og som den bragte ham forleden Nat?
-Om alle Mennesker af Storkene blev hented? -<note>* Det vilde være mig en let Sag, at opløse alle disse Problemer, ligesaa net som det første i foregaaende Note; men for at give Læseren noget at øve sin Lærdom og Skarpsindighed paa, vil jeg lade dem staae til videre.<br/>F.</note>
+Om alle Mennesker af Storkene blev hented? -<note>Det vilde være mig en let Sag, at opløse alle disse Problemer, ligesaa net som det første i foregaaende Note; men for at give Læseren noget at øve sin Lærdom og Skarpsindighed paa, vil jeg lade dem staae til videre.<br/>F.</note>
     Den Grublen og den Spørgen satte tit
 Hans Moder i Forlegenhed for Svar;
 Hans Moster fandt, den gik for vidt,
@@ -332,7 +342,7 @@ Strax grublede den lille <i>Petrus</i> paa,
 Hvorledes det gik til, og spurgte saa:
 <i>Hvi fanger Katten Muus? hvi fanger Muus ei Katten?</i>
 Af slige Spørgsmal giorde jeg en Skok;
-Men eene dette syntes mig er nok;<note>* Det synes mig ogsaa. Den der kan giøre eet eeneste saadant Spørsmaal, kan giøre tusinde. Havde noget af min Fætters været halv saa dybsindigt, skulde jeg aldrig have fortrudt, at man lod ham studere.<br/>F.</note>
+Men eene dette syntes mig er nok;<note>Det synes mig ogsaa. Den der kan giøre eet eeneste saadant Spørsmaal, kan giøre tusinde. Havde noget af min Fætters været halv saa dybsindigt, skulde jeg aldrig have fortrudt, at man lod ham studere.<br/>F.</note>
 Min Moder tænkte paa det hele Natten;
 Med Graad hun har mig tit fortalt,
 Hvor vægtigt disse Ord paa hendes Hierte faldt.
@@ -362,7 +372,7 @@ Man stiger snarest, mageligst og best.
 Paa Degnens Ord!''
 Udbrød omsider baade Faer og Moer -
 Og glad blev Pogen -
-Thi <i>Hedninger</i> maae sige hvad de vil,<note>* De gamle Hedninger, og især den hedenske Bormester <i>Cicero</i> har fast overalt talt med megen Agtelse om Læsning og Studeringer: ,,Studia adolescentiam alunt, senectutem oblectant, secundas res ornant, adversis perfugium et solatium præbent.'' o. s. v.<br/>F.</note>
+Thi <i>Hedninger</i> maae sige hvad de vil,<note>De gamle Hedninger, og især den hedenske Bormester <i>Cicero</i> har fast overalt talt med megen Agtelse om Læsning og Studeringer: ,,Studia adolescentiam alunt, senectutem oblectant, secundas res ornant, adversis perfugium et solatium præbent.'' o. s. v.<br/>F.</note>
 Studering er dog bare Børnespil,
 Og læse: Fero, tuli, latum, ferre -
 Hic, hæc, hoc, hujus, horum, harum, horum -
@@ -440,7 +450,7 @@ Der raged til sig <i>Cora</i>, <i>'Biram</i>, <i>Dathan</i>,
 Kong <i>Achab</i>, <i>Zambri</i>, Dronning <i>Jesabel</i>,
 <i>Pilatus</i>, <i>Judas</i>, <i>Mahomet</i>, <i>Voltaire</i>,
 Og fleer, som man ei værdiger den Ære,
-At nævne, skiøndt man veed dem meget vel,<note>* F. Ex. <i>Socinus</i>, <i>Spinoza</i>, og overhovedet alle Hedninger og alle Philosopher.</note>
+At nævne, skiøndt man veed dem meget vel,<note>F. Ex. <i>Socinus</i>, <i>Spinoza</i>, og overhovedet alle Hedninger og alle Philosopher.</note>
 Beslutted' man, med eet at sige Stop
 Til denne kietterske Galop
 Før han med Krop og Siel (som oventil citerte)
@@ -525,7 +535,7 @@ End i forbudne Bog, at vende sidste Blad.
 Det veed jeg nok af modsat Mening være;
 Men ak! men o! Gud naade den,
 Som kun den lærde Verden har til Ven
-Den, for det første, kun er meget lille,<note>* Man maae ikke formænge den <i>lærde</i> Verden med den <i>studeerte</i> Verden. Der er næsten ligesaa stor Afstand fra den Studeerte til den Lærde, som fra den Lærde til den Viise.<br/>F.</note>
+Den, for det første, kun er meget lille,<note>Man maae ikke formænge den <i>lærde</i> Verden med den <i>studeerte</i> Verden. Der er næsten ligesaa stor Afstand fra den Studeerte til den Lærde, som fra den Lærde til den Viise.<br/>F.</note>
 Den, for det andet, er gemeenlig svag,
 Den, for det tredie, sig gierne holder stille,
 Og, for det fierde, gier min Fætter en god Dag.
@@ -539,7 +549,7 @@ I begge lærte man - at giøre Støi,
 Og mellem allehaande Caprioler,
 At bande, kives, baxes, og lidt meer -
 Paa gode danske Skolegangs Maneer.
-Et hundred Børn, som Bier i en Kue,<note>* I Hulbye og andre Landsbyer siger og skriver man <i>Kue</i> istedenfor <i>Kube</i>.</note>
+Et hundred Børn, som Bier i en Kue,<note>I Hulbye og andre Landsbyer siger og skriver man <i>Kue</i> istedenfor <i>Kube</i>.</note>
 Ommylred i den <i>Laves</i> Stue,
 Til riisbevæbnede Despot indtreen,
 Og med en Degne-majestætisk Mine,
@@ -557,7 +567,7 @@ Og hørte denne Christendommens Surren;
 Indtil det høistforønskte Bortgangs Bud
 Adspredte Sværmen, der for Glæde reent af Lave
 Paa Kirkegaarden mellem Fædres Grave
-Med brudne Been ombytted' Hovedbrud.<note>* Dette Sted er, som flere andre, alt for localt.<br/>B.</note>
+Med brudne Been ombytted' Hovedbrud.<note>Dette Sted er, som flere andre, alt for localt.<br/>B.</note>
     Aldeles anderledes var den <i>Høie</i>,
 Hvor med den bare Troe man ikke lod sig nøie.
 En halv Snees Drengebørn af Stand,
@@ -585,7 +595,7 @@ O Himmel! vilde du bønhøre mig,
 Og mild i denne Skoles Himmelglæde
 Ved et Mirakel, eller saa omtrent,
 Mig blot en tolvte Part tilstæde!'' -
-    Et sligt Mirakel var i Byen aldrig hendt;<note>hendt;] hendt</note>
+    Et sligt Mirakel var i Byen aldrig hendt;<note editorial="true">hendt;] hendt</note>
 Den Skole var, som hvert et Himmerige,
 Tilgiængelig allene for de Rige -
 Naturligviis! For intet intet faaes.
@@ -627,7 +637,7 @@ At have klækket ud i cosmopolske Bryst
 En Plan, som har det Heeles Vel for Øiet,
 Og ladet det ved sit Desidero
 Beroe.
-Men denne Statsmand var i dette, som i meere<note>* Min Fætter har Ret. En Skoleholder, og især en Skoleholder, som den her beskrevne, kan gierne kaldes en <i>Statsmand;</i> med mindre man vil nægte, at en Konge kan belægges med dette Navn. Jeg, for min Part, holder for, at det Ordsprog: <i>Spørgsmaal om Kongen er Adel?</i> særdeles passende kan paralleleres med det: <i>Spørgsmaal om Kongen er Statsmand?</i></note>
+Men denne Statsmand var i dette, som i meere<note>Min Fætter har Ret. En Skoleholder, og især en Skoleholder, som den her beskrevne, kan gierne kaldes en <i>Statsmand;</i> med mindre man vil nægte, at en Konge kan belægges med dette Navn. Jeg, for min Part, holder for, at det Ordsprog: <i>Spørgsmaal om Kongen er Adel?</i> særdeles passende kan paralleleres med det: <i>Spørgsmaal om Kongen er Statsmand?</i></note>
 Just skabt til at realisere.
     Der om min Fætters Skrift gik Rye
 I begge Skolerne og i den hele Bye -
@@ -648,7 +658,7 @@ Med slig en Grundighed, at før et Aar var omme
 Han fandtes <i>udlært</i> efter alles Domme -
 Jeg ei beskrive kan, fordi jeg ikke vil.
     Men <i>udlært</i> i Corsøer ei vilde sige meget;
-En critisk Theolog af vores <i>Rørbyes</i> Værd<note>* See Recensionen over <i>Nysa</i> i Kritik og antikritik.</note>
+En critisk Theolog af vores <i>Rørbyes</i> Værd<note>See Recensionen over <i>Nysa</i> i Kritik og antikritik.</note>
 Man der endogsaa havde kaldet <i>lærd</i>
 I Fætters Tid. Oplysningen er steget
 Og, som man siger, dagligdags tiltager
@@ -671,10 +681,10 @@ I vores gode <i>gamle Testament</i>,
 Og <i>Universitetets Fundation</i>,
 Samt al den øvrige Religion,
 Til Harm for hver dens Vægter og Patron,
-I Bund og Grund blir løbet overende.<note>* See Hr. <i>J. H. Rørbyes</i> Erklæring i No. 11. af Kritik og Antikritik Pag. 175. 76. hvis noget af dette Blad endnu svømmer oven paa Lethe.</note>
+I Bund og Grund blir løbet overende.<note>See Hr. <i>J. H. Rørbyes</i> Erklæring i No. 11. af Kritik og Antikritik Pag. 175. 76. hvis noget af dette Blad endnu svømmer oven paa Lethe.</note>
 Oplysning er ret brav til Tid og Sted,
-Naar der er Maade med;<note>med;] med</note>
-Men, naar den gaaer for vidt, som hos de Tydske,<note>* Ikke at tale om de Franske.</note>
+Naar der er Maade med;<note editorial="true">med;] med</note>
+Men, naar den gaaer for vidt, som hos de Tydske,<note>Ikke at tale om de Franske.</note>
 Naar Grublen, om det Sande selv er sandt,
 (Man har jo noget sligt af - denne - <i>Kant</i>,
 Der ingen Ting skal see saa grant?)
@@ -695,13 +705,13 @@ Om ei et Steds imellem begge Poler
 Der skulde gives een endnu, hvor man
 Dog i det mindste vidste <i>meer end han</i>.
     ,,Der gives saadan een, der gives flere;
-Men ak! der hører Penge til;<note>til;] til</note>
+Men ak! der hører Penge til;<note editorial="true">til;] til</note>
 Et fattigt Barn kan ikke strax studere,
 Fordi det vil -
 I <i>Slagelse</i>, min Kiære! for Exempel
 To Miil herfra er sligt et Viisdoms Tempel;
 Men Veien er dertil, som den til Ærens, lang
-Og trang.'' -<note>* Den nye lige Landevei var den gang ikke anlagt.<br/>B.</note>
+Og trang.'' -<note>Den nye lige Landevei var den gang ikke anlagt.<br/>B.</note>
     ,,Den være som den vil! man kan jo rende,
 Naar man har Mod og Lyst, til Verdens Ende -''
 ,,Ret saa! Men det er ikke dermed giort!
@@ -725,10 +735,10 @@ Naar eengang skrevet staar i Skiæbnen <i>,,Gaae!''</i>
 Saa byder al Fornuft omsonst os staae.
     Forgiæves stræbte man, ved Faren at belyse,
 At faae min Fætter til for dette Tog at gyse,
-Anførte ham Exempler sidst og først<note>* Det skulde egentligen hedde først og sidst; men et Hysteron Proteron imellem giør, efter mine Tanker, især i Poesien, en fortræffelig Virkning.<br/>F.</note>
+Anførte ham Exempler sidst og først<note>Det skulde egentligen hedde først og sidst; men et Hysteron Proteron imellem giør, efter mine Tanker, især i Poesien, en fortræffelig Virkning.<br/>F.</note>
 Paa Lærde, som krepeerte var' af Gield,
 Poeter, som omkomne var af Tørst,
-Og andre, som var' sulted reent ihjel;<note>* Historia Litteraria, saa vel den nye, som den gamle, vrimler af slige Exempler.<br/>F.</note>
+Og andre, som var' sulted reent ihjel;<note>Historia Litteraria, saa vel den nye, som den gamle, vrimler af slige Exempler.<br/>F.</note>
 Og viiste ham, som i et Perspectiv,
 Sit hele følgende Studeringsliv -
 Omsonst! han trodsed' alt; han havde lært at fryse,
@@ -748,7 +758,7 @@ Selv i det næste Sekel, gik af Minde,
 Jeg slængte Pennen strax, og angred hvert Minut,
 Jeg havde spildt paa her med Rimets Lage
 At salte hen til Verdens sidste Dage
-Et Levnetsløb, som burde gaae caput!<note>* Nei! kiere Fætter! frygt ikke derfor. Altid skal mit Hierte med Taknemmelighed erindre disse Velgierninger.<br/>B.</note>
+Et Levnetsløb, som burde gaae caput!<note>Nei! kiere Fætter! frygt ikke derfor. Altid skal mit Hierte med Taknemmelighed erindre disse Velgierninger.<br/>B.</note>
     I Tillid til at han og kunde nyde
 Sin Deel i denne giæstfrie Hielpsomhed,
 Og stolende paa hvad der kunde flyde
@@ -760,7 +770,7 @@ Med, efter meget contra, meget pro,
 At skikke ham til denne sorte Skole,
 For paa Latin at lære der den Troe,
 Som hialp saa mangen i den sorte Kiole.
-    Man mærked' og, (imellem os!)<note>* En skiøn Hemmelighed, som man <i>kun</i> betroer <i>Publikum!</i><br/>B.</note>
+    Man mærked' og, (imellem os!)<note>En skiøn Hemmelighed, som man <i>kun</i> betroer <i>Publikum!</i><br/>B.</note>
 At Fætter egentligen var i Grunden
 Langt mindre stærk i Næven end i Munden,
 Et Slags Rhinoceros,
@@ -782,7 +792,7 @@ At han var - et Rhinoceros, som sagt.
     Nu er til Lykke brugeligt paa Landet,
 At, naar et Drengebarn ei duer til andet,
 Og intet Hoved har, selv ikke til en Læst,
-Saa, for at danne det til Lærer eller Præst,<note>* Det er to ganske forskiællige Embeder, som man veed. En Lærer er ikke altid Præst; og en Præst er endnu mindre altid Lærer.<br/>F.</note>
+Saa, for at danne det til Lærer eller Præst,<note>Det er to ganske forskiællige Embeder, som man veed. En Lærer er ikke altid Præst; og en Præst er endnu mindre altid Lærer.<br/>F.</note>
 Man slænger det i den latinske Skole hen.
 Hvad Jorden bruger ei, foræres Himmelen.
 Det synes underligt; men det er intet Under;
@@ -814,7 +824,11 @@ Fortælle hvo der vil, deslige Bagateller.
     Jeg springer Vei og Port til Templet reent forbi,
 Og som <i>Homer</i> (den jeg i alle Stykker
 Gad fulgt) har giort for mig, min Læser rykker
-Med Fætter i en Snup midt ind deri.<note>* - - - - - - festinat &amp; in medias res,<br/>Non secus ac notas, auditorem rapit.<br/>&#160;&#160;&#160;Hor.</note>
+Med Fætter i en Snup midt ind deri.<note><poetry lang="la">
+- - - - - - festinat &amp; in medias res,
+Non secus ac notas, auditorem rapit.
+</poetry>
+&#160;&#160;&#160;Hor.</note>
 Der staaer han. Lad ham staae! Imidlertid
 Vil Læseren og jeg ei tabe reent vor Tid,
 Men see os for i Veien noget om
@@ -837,19 +851,19 @@ Udklækker ei saa mange Stakler,
 Kun <i>Død</i> er dennes Frugt; men hins er <i>Slaverie</i>.
     Regenten, som ved Kunsten, trods Naturen,
 Var bleven dens Tyran
-Var en <i>Pisistratus</i> - Censuren<note>* Om den Tyran <i>Pisistratus</i> kan man læse en Hoben hos Herodotus, Athenæus, Plutarchus, Justinus, Ælianus, o. f. Det smukkeste af alt det man veed om ham fortæller Valerius Maximus i sin 5 Bogs 1 Kapitel. Et ungt Menneske mødte engang Prindsessen hans Datter paa Gaden, og løb til i sin Fortvivlelse eller Henrykkelse, eller rimeligviis begge (quippe amore accensus) og kyste hende. Hans Gemalinde fordrede den forvovne Elskers Liv. <i>,,Skulde vi dræbe dem, som holde af os</i>, svarte Tyrannen, <i>hvad skulle vi da giøre ved dem, som ikke lide os?'' og gav det unge Menneske sin Kiæreste.</i> Slige Tyranner holder jeg meget af.<br/>F.</note>
+Var en <i>Pisistratus</i> - Censuren<note>Om den Tyran <i>Pisistratus</i> kan man læse en Hoben hos Herodotus, Athenæus, Plutarchus, Justinus, Ælianus, o. f. Det smukkeste af alt det man veed om ham fortæller Valerius Maximus i sin 5 Bogs 1 Kapitel. Et ungt Menneske mødte engang Prindsessen hans Datter paa Gaden, og løb til i sin Fortvivlelse eller Henrykkelse, eller rimeligviis begge (quippe amore accensus) og kyste hende. Hans Gemalinde fordrede den forvovne Elskers Liv. <i>,,Skulde vi dræbe dem, som holde af os</i>, svarte Tyrannen, <i>hvad skulle vi da giøre ved dem, som ikke lide os?'' og gav det unge Menneske sin Kiæreste.</i> Slige Tyranner holder jeg meget af.<br/>F.</note>
 Gik ham ærbødigen forbi, som Mand,
 Som Rector, og som Lærd - men nødt til Sværdet
 Af tusind Misbrug, som hans Formand lod
 I Anarkiet fæste Rod,
 Af Iver for sin Pligt han havde hærdet
 Et Henri Quatre-Bryst
-Til <i>Josephs</i> Lyst,<note>* Joseph den anden, som nu skal være død, siger man.<br/>F.<br/>Han er virkelig saa aldeles død, som man kan ønske sig, for over et Aar siden; men i Hulbye har man de udenlanske Efterretninger meget sildig.<br/>B.</note>
+Til <i>Josephs</i> Lyst,<note>Joseph den anden, som nu skal være død, siger man.<br/>F.<br/>Han er virkelig saa aldeles død, som man kan ønske sig, for over et Aar siden; men i Hulbye har man de udenlanske Efterretninger meget sildig.<br/>B.</note>
 Og med en Strænghed uden Lige
 Holdt i bestandig Zittren Skolens Rige.
     Regierte Mennesker til Vederlag regiere,
 Og strængt regierede regiere strængt;
-Tyrannens Slave Træl vil og tyrannisere,<note>Slave] Slaves</note>
+Tyrannens Slave Træl vil og tyrannisere,<note editorial="true">Slave] Slaves</note>
 Trykt vil han trykke, doppelt, trykke meere;
 Hængt Mand vil have hele Verden hængt.
 Man overalt sig kan til denne Sandhed stave:
@@ -860,7 +874,7 @@ Maae man til Vederlag en anden lyde
 Og den, som lyder hist, vil omvendt byde her.
 Jeg veed det med mig selv med hvilken zevsisk Truen
 Jeg ryster min forældede Paryk
-Og slynger Tordenriset rundt i Stuen,<note>* See <i>Homers</i> Beskrivelse paa Jupiter. i. p. l.</note>
+Og slynger Tordenriset rundt i Stuen,<note>See <i>Homers</i> Beskrivelse paa Jupiter. i. p. l.</note>
 Naar <i>Præsten</i> over mig har giort sig alt for tyk.
 Ham <i>Provsten</i> gav formodentlig en Snippe
 Irettesat af <i>Bispen</i>, der
@@ -869,7 +883,7 @@ Den første Høg i dette Høge-Knippe.
 Qvo jure nu <i>den første</i> Første blev?
 Qvo jure den, som ei regieres meer, regierer?
 Der staae vi! Tusind Lærde skrev
-Derover sig og tusind Giæs ihiel<note>* Siger i det mindste 20,000 Penne. Synderligt nok ellers, at det Dyr, som spiller en saa vigtig Rolle i Verdens Oplysning, er eet af de allerdummeste blandt alle fiærede og ufiærede Væsner. Jeg har ofte Umage med at forestille mig dette; og jeg kan umuelig troe, at den Gaas, hvoraf Pennen, der skrev Contrat Social, blev trakt, har været en almindelig Gaas.<br/>F.</note>
+Derover sig og tusind Giæs ihiel<note>Siger i det mindste 20,000 Penne. Synderligt nok ellers, at det Dyr, som spiller en saa vigtig Rolle i Verdens Oplysning, er eet af de allerdummeste blandt alle fiærede og ufiærede Væsner. Jeg har ofte Umage med at forestille mig dette; og jeg kan umuelig troe, at den Gaas, hvoraf Pennen, der skrev Contrat Social, blev trakt, har været en almindelig Gaas.<br/>F.</note>
 <i>For</i> og <i>imod</i> med lige Skiæl,
 Og end, i Mangel af et Himmelbrev,
 Man lige klog derover disputerer.
@@ -883,11 +897,11 @@ Retskaffenhed og Kundskab eene giver,
 Til Zeptret kom,
 Indvortes var i Bund og Grund fordærvet,
 Og <i>Sobradise</i> selv er ikke mer udnervet
-Af Politikens Utugt end det var.<note>* Kongeriget <i>Sobradise</i> skal dog være i en meget jammerlig Forfatning, efter næsten alle Beretningers - Taushed. Siden <i>Cervantes</i>, der i sin udødelige <i>Don Quixotte</i> giorde det den Ære, at ommelde det, har ikke een eeneste Skribent af Betydenhed værdiget det Erindring.<br/>F.</note>
+Af Politikens Utugt end det var.<note>Kongeriget <i>Sobradise</i> skal dog være i en meget jammerlig Forfatning, efter næsten alle Beretningers - Taushed. Siden <i>Cervantes</i>, der i sin udødelige <i>Don Quixotte</i> giorde det den Ære, at ommelde det, har ikke een eeneste Skribent af Betydenhed værdiget det Erindring.<br/>F.</note>
 Nu er det Smørrebrød <i>Pisistratus</i> at være,
 Naar man i et <i>Athen</i> kan styre, raade, lære,
 Og naar en <i>Solon</i> man til Formand har;
-Men i en <i>Hellig-Anders-Skoles</i> Rige,<note>* <i>Hellig Anders</i> er Slagelses Patron. Han indreed alle Byens vidtløftige Marker i een Nat paa et nattegammelt Føl, og var saa hellig, <i>at han kunde hænge sine Handsker paa Solens Straaler</i>. Hans Begravelses Høi er endnu at see paa høire Haand af Veien til Corsøer.<br/>F.</note>
+Men i en <i>Hellig-Anders-Skoles</i> Rige,<note><i>Hellig Anders</i> er Slagelses Patron. Han indreed alle Byens vidtløftige Marker i een Nat paa et nattegammelt Føl, og var saa hellig, <i>at han kunde hænge sine Handsker paa Solens Straaler</i>. Hans Begravelses Høi er endnu at see paa høire Haand af Veien til Corsøer.<br/>F.</note>
 Hvor salig <i>Otto Rud</i> i forudsalig Slum
 Lod fem og syv bestandig være lige,
 Og Peer, som Povl, bestandig være dum,
@@ -901,8 +915,8 @@ Gav Hals og Haand i Skolen over hver
 I alle mindre Klasser. Fiern og nær
 I vores, Pavens, og i Tyrkens Egne,
 I hele Herskeriets Allevegne,
-Hvis Negerhelvedet man gaaer forbi,<note>* Vestindien. Min Fætter har Ret. Det vil falde vanskeligt, saa aldeles at realisere Himmerig nogensteds paa Jorden, som man virkelig har her realiseret Helvede.<br/>B.</note>
-(Og hvo tør vove blot sit Blik deri?)<note>* Min Fætter bliver altid heftig, og taber undertiden al Fatning, naar han kommer paa denne Materie. ,,Forbandede være de Forfattere, som misbruge deres dialectiske Vid under Navn af Philosophie til at forsvare denne diævelske Handel og Behandling, som naar alle Smaating engang ere kastede overbord i Lethe og blot de større Masser blive biergede i Historiens Baad, vil komme Efterverdnen til at gyse for de Aarhundrede, vi have kaldet de meest oplyste.'' Man maae ikke forbande Mennesker, kiere Fætter, sagde jeg. ,,Jeg forbander ikke Mennesker,'', raabte han, ,,jeg forbander disse Forfattere.''<br/>B.</note>
+Hvis Negerhelvedet man gaaer forbi,<note>Vestindien. Min Fætter har Ret. Det vil falde vanskeligt, saa aldeles at realisere Himmerig nogensteds paa Jorden, som man virkelig har her realiseret Helvede.<br/>B.</note>
+(Og hvo tør vove blot sit Blik deri?)<note>Min Fætter bliver altid heftig, og taber undertiden al Fatning, naar han kommer paa denne Materie. ,,Forbandede være de Forfattere, som misbruge deres dialectiske Vid under Navn af Philosophie til at forsvare denne diævelske Handel og Behandling, som naar alle Smaating engang ere kastede overbord i Lethe og blot de større Masser blive biergede i Historiens Baad, vil komme Efterverdnen til at gyse for de Aarhundrede, vi have kaldet de meest oplyste.'' Man maae ikke forbande Mennesker, kiere Fætter, sagde jeg. ,,Jeg forbander ikke Mennesker,'', raabte han, ,,jeg forbander disse Forfattere.''<br/>B.</note>
 Omsonst man leder om dets Mage.
 I dette Øieblik, skiøndt ikke saare frie,
 Jeg i mit hersoms Slaverie
@@ -929,13 +943,13 @@ Een efter anden til ham sagde saa:
 <i>,,Du er Notarius!''</i>
 Hans Hierte skialv af Glæde ved den Ære,
 Som forekom ham ufortient -
-,,Jeg ikke værdig er; men stræbe skal, at lære ...''<note>...''] ...</note>
+,,Jeg ikke værdig er; men stræbe skal, at lære ...''<note editorial="true">...''] ...</note>
 Begyndte han .... ,,Der er en Styver! hent
 Mig strax en Spegesild!'' var Svaret -
 ,,De spøger.'' - ,,Slyngel!'' sagde han
 Som rakte Styveren, ,,nu spøger man
 Med slig en Slyngel? er du vel forvaret
-I Hovedet? Gaae strax!'' - ,,Men om jeg strax ei gik?'' -<note>gik?''] gik?</note>
+I Hovedet? Gaae strax!'' - ,,Men om jeg strax ei gik?'' -<note editorial="true">gik?''] gik?</note>
 Et vældigt Ørefign i samme Øieblik
 Ledsaget af et Skrald af Strube-Torden
 Min arme Fætter lynede til Jorden.
@@ -946,20 +960,20 @@ Den i et enkelt Træk os maler alt.
 Af dennes Sort der gaves daglig mange;
 Men jeg dem ikke her opregne vil -
 Vær ikke bange!
-Der vilde gaae for mange Giæs dertil.<note>* Her følger i min Fætters Manuscript tolv Sider, som jeg, i det mindste ikke for denne Gang, vover at lade trykke. Ikke fordi deri findes det mindste, som jo alle Rescripter, om de end stode ved Magt, vilde rigtig forklarte tillade; men fordi den Lov, som er mig, om ikke min Fætter helligere end alle Politimester-Kiendelser, forbyder mig det. Det er nemlig det store Bud, som rigtig nok ikke staaer paa nogen af de Mosaiske Tavler; men som er indskrevet, eller i det mindste burde være indskrevet i alle christne og hedenske Skribenters Hierter: <i>Kied ingen Læser til Døde</i>. Jeg har frygtet, at dette kunde blive Tilfældet, hvis jeg længer underholdt mine Læsere med et Liv og Levnet, som begyndte skrækkeligen at kiede mig selv. Har jeg taget Feil, skal det være mig inderlig kiert; thi, uagtet jeg ikke selv har skrevet det, er det dog skrevet af en Person der staaer i nøie Forbindelse med mig, og Blodet, som man veed, er, i hvor tyndt det er, dog altid tykkere end Vand.<br/>B.</note>
+Der vilde gaae for mange Giæs dertil.<note>Her følger i min Fætters Manuscript tolv Sider, som jeg, i det mindste ikke for denne Gang, vover at lade trykke. Ikke fordi deri findes det mindste, som jo alle Rescripter, om de end stode ved Magt, vilde rigtig forklarte tillade; men fordi den Lov, som er mig, om ikke min Fætter helligere end alle Politimester-Kiendelser, forbyder mig det. Det er nemlig det store Bud, som rigtig nok ikke staaer paa nogen af de Mosaiske Tavler; men som er indskrevet, eller i det mindste burde være indskrevet i alle christne og hedenske Skribenters Hierter: <i>Kied ingen Læser til Døde</i>. Jeg har frygtet, at dette kunde blive Tilfældet, hvis jeg længer underholdt mine Læsere med et Liv og Levnet, som begyndte skrækkeligen at kiede mig selv. Har jeg taget Feil, skal det være mig inderlig kiert; thi, uagtet jeg ikke selv har skrevet det, er det dog skrevet af en Person der staaer i nøie Forbindelse med mig, og Blodet, som man veed, er, i hvor tyndt det er, dog altid tykkere end Vand.<br/>B.</note>
 
 <nonum><center>*&#160;&#160;&#160;*&#160;&#160;&#160;*&#160;&#160;&#160;*&#160;&#160;&#160;*</center></nonum>
 
     Aar Syttenhundrede og to og firsindstive
 Han endeligen ud af denne Skole slap
-Til <i>Universitetet</i> -  -<note>* Atter en Hiatus - af samme Aarsag.</note>
+Til <i>Universitetet</i> -  -<note>Atter en Hiatus - af samme Aarsag.</note>
 
 <nonum><center>*&#160;&#160;&#160;*&#160;&#160;&#160;*&#160;&#160;&#160;*&#160;&#160;&#160;*</center></nonum>
 
 - - - - Hip som Hap,
 Der efterlod sig en bestandig Slum,
 Hvori han tog (i Drømme, som det hedder)
-Med tredive Samvittigheder<note>* Den praktiske Philosophie antager tredive Samvittigheder (hør Conferenceraad <i>Obeliz's</i> Coll. de XXX Conscientiis). Det er altid got, og især hvad Samvittighed angaaer, at have noget at løbe paa. Man har, foruden denne faste Stok, endnu adskillige andre, f. Ex. Jorddrot-Samvittighed, Recensent-Samvittighed, Capellan-Samvittighed, den gode Samvittighed, som et <i>von</i>, o. s. v. giver. Den, Horaz taler om: Nil conscire sibi, nulla palescere culpa, er, hvis den ellers nogensinde har været i Brug, for længe siden af Moden.</note>
+Med tredive Samvittigheder<note>Den praktiske Philosophie antager tredive Samvittigheder (hør Conferenceraad <i>Obeliz's</i> Coll. de XXX Conscientiis). Det er altid got, og især hvad Samvittighed angaaer, at have noget at løbe paa. Man har, foruden denne faste Stok, endnu adskillige andre, f. Ex. Jorddrot-Samvittighed, Recensent-Samvittighed, Capellan-Samvittighed, den gode Samvittighed, som et <i>von</i>, o. s. v. giver. Den, Horaz taler om: Nil conscire sibi, nulla palescere culpa, er, hvis den ellers nogensinde har været i Brug, for længe siden af Moden.</note>
 <i>Examen philosophicum</i>.
 Hvoraf han vaagned' op til alskens Qvide;
 Nu fik han først tilgavns hvad Verden var at vide,
@@ -974,7 +988,7 @@ Er ikke som det burde være,
 Mindst det, hvorpaa det øvrige beroer:
 <i>Opdragelsen</i>. Ak at jeg denne Tanke
 Med Sandheds egen Hammer kunde banke
-I alle <i>Hoved-Hierner</i> i vort Nord:<note>* Det er reent omsonst at ville banke den i dem, som have Hierne blot i Maven.</note>
+I alle <i>Hoved-Hierner</i> i vort Nord:<note>Det er reent omsonst at ville banke den i dem, som have Hierne blot i Maven.</note>
 At den er overalt det vigtigste paa Jorden
 Til Enkeltes og til det Heles Gavn!
 Og hellig være hver den Ædles Navn,
@@ -1229,7 +1243,7 @@ At passe paa den der med Liv og Siel,
 At ingen fik deraf den mindste Dryp at smage.
    Endskiøndt nu Kiempen holdte Sagen tys,
 Saafik imidlertid dog Asgaards heele Hof
-Ved <b>Fimbulfamber</b><note>* Rygtets Gud.</note> paa en Maade Nys
+Ved <b>Fimbulfamber</b><note>Rygtets Gud.</note> paa en Maade Nys
 Om denne rare Drik, og derved Stof
 Til mangen Prat, Raadslagning og deslige
 Ved Bordet under Bogen <b>Ydrasil,</b>
@@ -1254,7 +1268,7 @@ Og tav, da Kampens Gud brodud som saa:
 "Jeg vil mig selv til denne Reise lave,
 "Og see hvorvidt, min Guddom strækker sig!
 "Det er dog, haaber jeg, et lille Stykke Vei;
-"Sadl <b>Sleipner</b><note>* Odins otteføddede Hest.</note> op! dog nei
+"Sadl <b>Sleipner</b><note>Odins otteføddede Hest.</note> op! dog nei
 "Det ei gaaer an! saa kiender Suttung mig;
 "Sadl Sleipner ei!
 "Jeg vil til Fods! jeg sikkert mig skal skaffe
@@ -1432,7 +1446,7 @@ Men Sagen er at giennembryde det! —
 Og derpaaførte han igiennem mange Huler,
 Hvor Nattens Troldpak sig for Dagens Konge skiuler,
 Herr <b>Bolverk</b> til en Plads saa mørk og gyselig,
-At <b>Miltons</b> Helvede<note>Jvf. Miltons <a work="milton/1667">Paradise Lost (1667)</a>.</note> mod den er Himmerig.
+At <b>Miltons</b> Helvede<note editorial="true">Jvf. Miltons <a work="milton/1667">Paradise Lost (1667)</a>.</note> mod den er Himmerig.
 Her, sagde <b>Bauge</b>, dersom du kan slippe,
 Halvanden Miil omtrent
 Dybt ind i denne gamle Klippe,
@@ -1449,7 +1463,7 @@ Og, vips! i Hullet.
    Der kryber han en Tid omkring -
 I mange underlige Sving;
 (Saa krøb engang for endnu længer siden
-Hans <b>Oncle</b><note>* Jeg har megen Aarsag til at troe, at <b>Odin</b> egentlig var en Søstersøn af Jupiter.</note> gylden, rund, og glat, og liden,
+Hans <b>Oncle</b><note>Jeg har megen Aarsag til at troe, at <b>Odin</b> egentlig var en Søstersøn af Jupiter.</note> gylden, rund, og glat, og liden,
 Igiennem Sprækken af et Tag,
 Ei for, som han, at stiæle Miød,
 Men for at glide ned i sin Tilbedtes Skiød)
@@ -1657,10 +1671,10 @@ Og hvad de først i Hænder fik.
 Om jeg min Læser her fra Hoved ind til Hale
 Den Tvekamp vilde dig omstændeligen male.
 Som satte Nordens Guder selv i Frygt;
-I Hexametrer<note>Mere om <a href="https://kalliope.org/da/keyword/heksameter">heksameteret</a> her.</note> sligt desuden kun kan klinge,
+I Hexametrer<note editorial="true">Mere om <a href="https://kalliope.org/da/keyword/heksameter">heksameteret</a> her.</note> sligt desuden kun kan klinge,
 Og ei i Vers paa Riim, der trættes ud og ind
 Alt efter Musens løierlige Sind,
-Som paa en Fiær af <b>Klopstocks</b><note><a href="https://kalliope.org/da/works/klopstock">Friedrich Gottlieb Klopstock (1724–1803)</a>.</note> Vinge
+Som paa en Fiær af <b>Klopstocks</b><note editorial="true"><a href="https://kalliope.org/da/works/klopstock">Friedrich Gottlieb Klopstock (1724–1803)</a>.</note> Vinge
 Mig ingenlunde vil saa høit i Veiret bringe,
 At Læserne maaskee mig fandt igien
 Nedtumlet i en Sump, som mangen anden Ven.
@@ -1734,7 +1748,7 @@ Nok, at han Drikken lod i Karrene nedglide, —
 Og den som meer derom vil endeligen vide,
 Kan læse det ret net og peent paa Fransk,
 Naar han paa Siden, som i Noten staar, vil kikke
-I Herr Mallets <i>Mythologie celtiqve</i><note>* See <i>Monumens de la Mythologie &amp; de la Poesie des Celtes</i>, pag. 129.</note>,
+I Herr Mallets <i>Mythologie celtiqve</i><note>See <i>Monumens de la Mythologie &amp; de la Poesie des Celtes</i>, pag. 129.</note>,
 Det klinger ikke nar saa smukt paa Dansk.
 I tvende Kar paa saadan Maade flød
 Den af hin Viises Blod og liflig Honning
@@ -1888,26 +1902,27 @@ Hvor vilde jeg da vis paa Digter-Krandsen være!
   <title>Ja og Nei</title>
   <subtitle>
     <line>eller</line>
-    <line>Den hurtige Frier</line>
+    <line>den hurtige Frier.</line>
   </subtitle>
-  <firstline>Man synger næstendeels om Alt paa Jorden</firstline>
+  <firstline>Man synger næstendeels om alt paa Jorden</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
-  <quality>korrektur1</quality>
+  <source in="bd1" pages="115-149" facsimile-pages="135-169"/>
+  <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
 <poetry>
-Man synger næstendeels om Alt paa Jorden
+Man synger næstendeels om alt paa Jorden
 I denne gyldne Tid,
 Da Digtergave her i Norden
 Fast ligesaa almindelig er vorden,
 Som Frihed, Velstand, Smag og Flid.
-Trods Abbeden Du Bos, den Anti-Jyde,
-Som uden ringeste Medlidenhed
+Trods Abbeden <b>Du Bos,</b> den Anti-Jyde,<footnote><span lang="fr">Tout le monde sçait, qu’il n’est sorti des extrêmités du Nord que des Poëtes sauvages, des Versificateurs grossiers et des froids Coloristes. La peinture et la poësie ne se sont approchées du pole plus près que la hauteur de la Hollande.<br/><i>Reflex. crit. sur la poësie et peint. par Mr. l’Abbé du Bos. II part. XIII. sect.</i></span></footnote>
+<pb n="116" facs="135.jpg"/>Som uden ringeste Medlidenhed
 Kom Folk bag Rhin og Fæ i samme Gryde,
 Vi stakkels Danske kom dog ogsaa med
-I Digtekunsten, som i alt det andet;
+I Digtekonsten, som i alt det andet;
 Thi nu, hvorhen man lytter her i Landet,
 Er lutter Harpeklang og Citharlyd,
 Og hvor man vender Øiet hen, man skuer
@@ -1916,279 +1931,262 @@ Som Fluer.
 Man synger Kongens Pris, man synger om sin Pige,
 Om Frihed, om Oplysning, og deslige,
 Om Mod i Krig, og flittig Konst i Fred,
-Om Vaaren, Borgerdyd og Ærlighed,
+Om Vaaren, Borgerdyd og Ærlighed
 Og kort, om ikke fyndig sagt saa lige:
 Man synger, hvad man ikke gider sige,
-Alt hvad man ikke har og hvad man ikke veed.
-Hvor er vel noget Nyt uqvædet før?
-Hvorom har ikke Hiin og Den giort Oder?
-Hvad tænkeligt fra Sirius til Smør,
-Er ikke rimet, eller sat paa Noder,
+Alt hvad man ikke har, og hvad man ikke veed.
+Hvor er vel noget nyt uqvædet før?
+Hvorom har ikke hiin og den giort Oder?
+Hvad tænkeligt, fra Sirius til Smør,
+<pb n="117" facs="136.jpg"/>Er ikke, rimet, eller sat paa Noder,
 I alle Byens Urteboder?
-Og synge noget, som er rent forslidt,
+Og synge noget, som er reent forslidt,
 Jeg ikke gider og har aldrig gidt.
-
-Min Muse har geskiæftig, stakkels Pige!
-Fra Klokken Fem i Morges løbet om
-I hele Mulighedens Rige
-For at faa fat paa noget, som
-Var værdt at svede for i Riim at binde.
+   Min Muse har geskiæftig, stakkels Pige!
+Fra Klokken fem i Morges løbet om
+I hele Muelighedens Rige,
+For at faae fat paa noget, som
+Var værd at svede for i Riim at binde.
 Det splinternye staaer ikke strax paa Pinde.
-Omsider i Kong Jørgens Herredom
+Omsider i Kong <b>Jørgens</b> Herredom
 Hun fandt, hvad dennesinde
-Min Læser om han vil kan ogsaa finde.
-
-Fra Visen om Kong Edvard, god og from,
+Min Læser, om han vil, kan ogsaa finde.
+   Fra Visen om Kong <b>Edvard</b>, god og from,
 Hvis Sønner tre, for Fuglen at begiere,
-Mod hvilke andre kun Canailler ere,
+Mod hvilken andre kun Canailler ere,<footnote>„O! du velsignede Fugl Phøenix! Alle andre Fugle er kun Canailler imod dig!“<br/>Pernille i Com. Julestuen.</footnote>
 Til Dronningen af Saba kom;
-Og til den Bog, hvori Tom Jones søger
-Sin yndige Sophie hist og her
-Mod hvilken alle Verdens slige Bøger
-Hvad andre Fugle mod Fugl Phoenix er;
+<pb n="118" facs="137.jpg"/>Og til den Bog, hvori <b>Tom Jones</b> søger
+Sin yndige <b>Sophie</b> hist og her,
+Mod hvilken alle Verdens slige Bøger,
+Hvad andre Fugle mod Fugl Phønix, er;
 Har, siden jeg kun stak halvanden Alen
 I Luften, ingen Eventyrer saa
 Fortryllet mig, som de, vi faae
 Fra høire Haand ved Siden af Canalen.
-I intet Land saa meget skeer.
-Sandt nok, paa tusend andre Steder
+I intet andet Land saa meget skeer;
+Sandt nok, paa tusind andre Steder
 Man snakker, synger, gifter sig, og leer,
-Forelsker sig, er Pebersvend, og græder,
+Forelsker sig, er Pebersvend og græder,
 Frembringer snart en Bog, et Barn, og saadant meer,
 Dyr nu til Folk, og Folk til Dyr forvandler,
-Blir, spiser, drikker, sover, drømmer, døer!
-Sligt Russ og Dansk og Tydsk, og Flere giør,
-Som ingen Ting - men Engelskmanden handler.
+Blir, spiser, drikker, sover, drømmer, døer;
+Sligt Russ og Dansk og Tydsk, og flere giør,
+Som ingen Ting — men <b>Engelskmanden</b> handler.
 Han giør, som vi, desværre, meget galt;
-Men giør det galt tilgavns, originalt:
-Han giør, som vi, adskilligt viseligt,
+Men giør det galt tilgavns, <b>originalt</b>:
+<pb n="119" facs="138.jpg"/>Han giør, som vi, adskilligt viseligt,
 Elskværdigt, godt; men og guddommeligt:
-Han Alting giør, som vi; men Alt med mere Fynd. -
-
-En skyder sig - o! ja det kan man giøre,
+Han alting giør, som vi; men alt med mere Fynd —
+   Een skyder sig — o! ja! det kan man giøre,
 Naar Lykken bliver stundom alt for tynd;
-Men just fordi man Alt har paa det Tørre
-At skyde sig - det er en engelsk Synd.
-
-Man stundom hænger sig, og Halsen knækker,
-Naar Ynksomhed for vidt Ens Kone strækker,
+Men just fordi man alt har paa det Tørre
+At skyde sig — det er en engelsk Synd<footnote><w>Philip Mordaunt</w> var Synderens Navn. Han var 27 Aar gammel, velskabt, smuk, riig, af adelig Familie, vittig og underholdende i Selskab, og det, som er mere værdt end alt det andet, inderlig elsket af den Yndige, han elskede. Alt dette gav ham saa megen Afsmag for Livet, at han i Fortvivlelse giorde Vers og skiød sig.</footnote>.
+   Man stundom hænger sig, og Halsen knækker,
+Naar Ynksomhed for vidt eens Kone strækker,
 Og Panden derved blir for lig en Skov;
 Men, giøre sligt, fordi hun ikke vilde
-Hvad Hver med Vessel tilstaaer dog er ilde<note>Cf. Wessels <xref poem="wesselfortaellingera2"/>.</note>, -
-Dertil har Engelskmanden ene Lov.
-
-For Elskovs Magt man allevegne bukker;
+Hvad hver med Vessel tilstaaer dog er ilde,<note editorial="true">Cf. Wessels <xref poem="wesselfortaellingera2"/>.</note> —
+Dertil har <b>Engelskmanden</b> ene Lov.<footnote><w>William Smith</w> hed denne løierlige Karl. Han troede med Madame Deshoulieres: <span lang="fr">”qu’a coqueter <pb n="120" facs="139.jpg"/>toute belle est encline,”</span> og at ingen kunde undtages fra denne Hovedregel, uden dumme og stygge. Hans smukke, men dydige Kone blev derfor efterhaanden saa dum og grim i hans Øine, at han hængte sig af Ærgrelse.</footnote>
+<pb n="120" facs="139.jpg"/>   For Elskovs Magt man allevegne bukker;
 Man bliver heed om Hiertet, klager, sukker,
 Man kommer efterhaanden reent i Brand,
 Man hører lidt af Sphærers Harmonier,
 Man brøler Oder, piber Elegier,
 Og mister stundom hele sin Forstand,
 En Bagatel, som oftest. Gaaer det længer,
-Den skiønne siger uophørlig Nei,
+Den Skiønne siger uophørlig Nei,
 Saa bliver man vel og (at sige,
 Naar det for Resten er en velskabt Pige)
 Tilsidst saa vred, at man sig hænger;
-Man mister dog kun Livet i den Leg,
-Tidt og en Bagatel. Har man for store Fødder,
-Og troer det Tyranindens Øie støder,
+Man mister dog kun Livet i den Leeg,
+Tit og en Bagatel. Har man for store Fødder,
+Og troer, det Tyranindens Øie støder,
 Saa høit en Taa paa hver for Amor veg;
-Men - kappe hele Benet, for at vinde
-En umaneerlig, stiv, træbenet Qvinde, -
-Det, seer man strax, det er en engelsk Streg.
-
-Sex Cinquer uophørlig, intet andet!
-Er, som Enhver maa tilstaa reent forbandet;
+Men — kappe hele Benet, for at vinde
+<pb n="121" facs="140.jpg"/>En umaneerlig stiv, træbenet Qvinde, —
+Det, seer man strax, det er en engelsk Streg<footnote>Denne Historie kiende ventelig alle mine Læsere, da den har staaet i <w>Læsecabinet for begge Kiøn</w>, og følgelig er i det mindste et Par Gange fortalt paa Dansk i Forveien.</footnote>.
+   Sex Cinquer uophørlig, intet andet!
+Er, som enhver maa tilstaae, reent forbandet;
 Man fløiter, man skiær Tænder, bliver gal,
 Og løber rasende rundt i den hele Sal,
 For ei at pines af sin Modparts Latter,
-Man bander Pine deux, trois, quatre;
-Ja: tant que vous voulez - men stille staae
+Man bander <b>Pine</b> <span lang="fr">deux, trois, quatre;</span>
+Ja: <span lang="fr">tant que vous voulez!</span><footnote>En spillende Franskmand hørte, at hans Modpart, hver Gang han giorde et ulykkeligt Kast, raabte: <w>Pine Død!</w> da han selv tabte, og tabte glubsk, vilde han overbyde den Danske, og raabte: <span lang="fr">pine deux, pine trois &amp;c.</span></footnote> — men stille staae
 Med Haanden skiult i Barmen hele Tiden;
 Og pille langsomt Hiertet ud af Siden,
-Saa stærkt kan Tab en Engelskmand kun slaae.
-
-Til mange Kneb kan Pengetrang forlede.
+Saa stærkt kan Tab en <b>Engelskmand</b> kun slaae<footnote>Tradicion.</footnote>.
+<pb n="122" facs="141.jpg"/>   Til mange Kneb kan Pengetrang forlede.
 Af Frygt for grumme Creditorers Vrede
-Een lyver Vid og Dyd paa sin Patron
-Og Een gi'r Sniksnak ud paa Subscription,
+Een lyver Vid og Dyd paa sin Patron,
+Og een gi’r Sniksnak ud paa Subscription,
 Og i en Sang, som tidt blev bedre hiemme,
-La'r godt Folk høre paa sin hæse Stemme:
+La’r godt Folk høre paa sin hæse Stemme:
 Ting, rigtig nok, som koste Hovedbrud
-For een og anden ærlig Jyde -
-Men hitte paa at spille Skak med Gud,
-For Erkebispen lempelig at snyde -
-Det, tør jeg vedde To mod Een, ja Tre,
-Var blot en sulten Engelskmands Idee.
-
-Jeg kunde blive ved paa den Maneer
-At ramse op fra nu af og til i Morgen
+For een og anden ærlig Jyde —
+Men hitte paa, at spille Skak med Gud,
+For Erkebispen lempelig at snyde<footnote>Nemlig Erkebispen af Canterbury. En Kiøbmand i London var bleven ruineret. For at sætte sig i Stand igien, behøvede han Penge, og, for at faae disse paa en honet Maade, flyttede han, som Eremit, ud i en Skov, og sad eene der og spillede Skak uophørlig, som han sagde, med Gud. Bemeldte Erkebisp besøgte ham paa sin Tour derforbi, for at see, hvorledes det gik til. Eremiten spillede, trak sine egne Brikker med mueligste Forsigtighed (sagde han) og Guds efter Indskydelse. Medens Bispen saae <pb n="123" facs="142.jpg"/>derpaa, vandt Gud et temmelig stort Spil, som Eremiten betalte ham ved hans til al Lykke nærværende Tiener. Alt dette fandt hans Eminents rimeligt. Men paa Tilbageveien, da Bispen ogsaa saae til ham, tabte Gud et tredive Gange saa stort Spil, som vor Eremit fandt rimeligt, at samme Casserer udbetalte. Bispen maatte giøre det, enten han peeb eller sang; thi de vare ene, og Eremiten var stærkest. See alle engelske og franske Gazetter fra den Tid.</footnote> —
+Det, tør jeg vedde to mod een, ja tre,
+Var blot en sulten <b>Engelskmands</b> Idee.
+<pb n="123" facs="142.jpg"/>   Jeg kunde blive ved paa den Maneer
+At ramse op fra nu og til i Morgen
 Af Engellands Mirakler mange fleer,
 Som for den Menings Grund, at der det meste skeer,
-Tilstrækkeligen kunde være Borgen.
+Tilstrækkeligen kunde være Borgen<footnote>Frankrigs to og tyve Millioner vare dengang endnu ikke opvaagnede af deres Slum.</footnote>.
 Men tag nu blot til Prøve disse fem,
-Min Læser! man maa tænke længer frem,
-Og holde varlig Hus med Tiden.
+Min Læser! man maae tænke længer frem,
+Og holde varlig Huus med Tiden.
 
-          ____________
+---
 
 I London var, for ikke længe siden,
-Iblandt en Hoben andre Ting
-En Kiøbmand, som i Hast maa hedde King,
-For ei med nye Riim at spilde Tiden,
-Naar jeg faaer sagt lidt meer om Manden,
+Iblant en Hoben andre Ting
+<pb n="124" facs="143.jpg"/>En Kiøbmand, som i Hast maae hedde <b>King</b>,
+For ei med nye Riim at spilde Tiden.
+   Naar jeg faaer sagt lidt meer om Manden,
 Man snart vil mærke, hvad han hed
 Er af den mindste Vigtighed:
-Navn er en Bagatel, det har hver Anden;
-Og noget, som man kalder Vid, i Panden,
+Navn er en Bagatel, det har hver anden;
+Men noget, som man kalder Vid, i Panden,
 Og noget, meer end Vid, en Hoben Muld,
 Som andre kaldte fire Tønder Guld,
 Var mere mærkeligt hos Manden;
 For Resten var han virksom i sin Bod,
 Var munter, vittig, artig, smuk og god;
 Men hurtig i sin Dont, som bare Fanden.
-
-Madam! For Himlens Skyld bliv ikke vred!
-Da Korthed er min store Kiæledægge,
+   Madam! for Himlens Skyld bliv ikke vred!
+Da Korthed er min store Kieledægge,
 Jeg havde nær forglemt hertil at lægge
 En vis Omstændighed:
-Endskiøndt i femten Aar multiplicert med to
-Han havde vaaget, drukket, spist og sovet,
-Var han dog ikke gift, og ei engang forlovet.
-,,Det var en Skam!''
+Endskiønt i femten Aar multiplicert med to
+Han havde vaaget, drukket, spiist og sovet,
+<pb n="125" facs="144.jpg"/>Var han dog ikke gift, og ei engang forlovet.
+„Det var en Skam!“
 Ja hvis han Piger saae, som lignte Dem, Madam!
 Man ingenlunde kan undskylde ham.
-
-En Philosoph, hvis Navn jeg ikke lider,
+   En Philosoph, hvis Navn jeg ikke lider,
 Har ikke meget ziirlig sagt:
-,,Hver som fornøiet leve gider,
-Maa sky, som Pest, Herr Hymens Pagt,''
+„Hver som fornøiet leve gider,
+„Maae skye, som Pest, Herr Hymens Pagt,“
 Han siger endnu meget mere
 For at bevise det,
 Som jeg vil ingenlunde repetere.
-En anden Philosoph er mer honet:
+En anden Philosoph er meer honet:
 Hans Ord om denne Sag saaledes lyde:
-,,Gift, eller gift dig ei, det kommer ud paa eet,
-Du begge Dele vil fortryde!''
-Vor Herre veed, om han har Ret.
-Den Tredie meest Levemaade viser:
-,,Det være langt fra mig,'' saa taler han,
-At raade nogen fra den gifte Stand!
-Nei! tvertimod, jeg dette Forsæt priser;
-Men det er altid dog et vigtigt Spring,
-Man giorde derfor uden Tvivl ei ilde,
-Om man sin Livstid derpaa tænke vilde,
-Betænksomhed er en velsignet Ting!''
-
-Om een af disse Misogyners Tanker
+„Gift, eller gift dig ei, det kommer ud paa et,
+„Du begge Dele vil fortryde!“
+Vor Herre veed, om han har ret.
+Den tredie meest Levemaade viser:
+„Det være langt fra mig,“ saa taler han,
+„At raade nogen fra den gifte Stand!
+<pb n="126" facs="145.jpg"/>„Nei! tvertimod, jeg dette Forsæt priser;
+„Men det er altid dog et vigtigt Spring,
+„Man giorde derfor uden Tvivl ei ilde,
+„Om man sin Livstid derpaa tænke vilde,
+„Betænksomhed er en velsignet Ting!“
+   Om een af disse Misogyners Tanker,
 Og Frygt for noget, som han havde hørt,
-Gemeenligen med Ægtestanden vanker
-Til Pebersvendom havde ham forført,
+Gemeenligen med Ægtestanden vanker,
+Til Pebersvendom<footnote>Jeg haaber, at man kan tillade mig dette Ord. <w>Svenddom</w> er rigtig nok for længe siden gaaet af Moden, som overflødigt i vort Sprog, i dets Sted burde vi altsaa efter Horaz’s Regel have et ganske nyt:<br/><span lang="la">— si forte necesse est<br/>Indiciis monstrare recentibus abdita rerum;</span><br/>men netop fordi vi ingen Svende har, har vi naturligviis desto flere Pebersvende; og:<br/><span lang="la">— ego cur, adquirere pauca<br/>si possum, invideor?</span></footnote> havde ham forført,
 Hvad heller, som jeg snarere vil mene,
 Han mellem Vexler, Actier og sligt
-Forglemte reent, at han var ene,
-Det veed jeg ei, og det er ei min Pligt,
+Forglemte reent, at han var eene,
+<pb n="127" facs="146.jpg"/>Det veed jeg ei, og det er ei min Pligt,
 At vide sligt.
 Hans Slægt og Venner uophørlig plagte
-Ham med Erindring om at gifte sig -
+Ham med Erindring om at gifte sig —
 Dog sagte! sagte!
 Der har jeg uden Tvivl forsnakket mig!
-Til Ære for hans Slægt jeg den maa lade,
-At Ingen af den samme derom bade!
+Til Ære for hans Slægt jeg den maae lade,
+At ingen af den samme derom bade;
 Slig Commandeur af fire Tønder Guld
 Bad ingen Slægtning om at fylde Jorden,
-Med mindre Slægtningen var gal og fuld;
+Med mindre Slægtningen var gal og fuld!
 Det strider mod Naturens Orden.
 Vend, hvo som lyster, op og ned paa den;
 Jeg snakker meget heller om igien:
 Kun Venner bade ham, og neppe disse,
 Thi hvis de alle havde bedt min Mand,
-Saa havde han Anmodninger til visse
-Casseret ind fra halve Engelland;
-Da rundt omkring Enhver, der havde Mave,
-(Som næsten alle Britter have)
-Ustridigen var hans hengivne Ven -
+Saa havde han Anmodninger tilvisse
+Casseret ind fra halve Engeland;
+Da rundt omkring enhver, der havde Mave,
+<pb n="128" facs="147.jpg"/>(Som næsten alle Britter have)
+Ustridigen var hans hengivne Ven —
 Den reene Sandhed er, at et Dosin af slige
-Bad ham bestandig, Fleer at giøre lykkelige
+Bad ham bestandig, fleer at giøre lykkelige,
 Og i en lille Slægt, naar han var sovet hen,
 At leve paa en Maade op igien
-Ved Hiælp af en elskværdig lille Pige.
-
-,,Top!'' raabte han engang, jeg vil forsøge det!
-,,Men Sagen er, hvor i en Hast saa lige
-Jeg træffe skal en vakker lille Pige?'' -
-,,Den kan du træffe meget let;''
-Gientog hans Ven, ,,sadl op i Morgen, Broder!
-,,Og rid tre, fire Mil herfra
-Til næste Herregaard, hvor en Papa
-Til tre ret vakre velopdragne Poder
-Af Evakiønnet boer. Hver af de Tre,
-Rød, som en Rose, hvid, som Snee,
-Uskyldig, munter, kiælen, vil henrive
-Din hele Siæl, saasnart du faar at see,
-Hvad jeg omsonst forsøger at beskrive,
-I Hver Modellen til en Gratie.
-Medgift jeg ei kan love dig i Penge;
-Men ellers Alt. - ,,Top! raabte han igien,
-I Morgen galloperer jeg derhen!'' -
-Det er et Ord?'' - ,,Et Ord! Farvel saa længe.''
-
-Om Morgenen derpaa Herr King staar op;
-Sig munter i en Hast paa Hesten svinger
-Den fløj saa let, som om den havde Vinger,
+Ved Hielp af en elskværdig lille Pige.
+   „Top!“ raabte han engang, „jeg vil forsøge det!
+„Men Sagen er, hvor i en Hast saa lige
+„Jeg træffe skal en vakker lille Pige?“ —
+„Den kan du træffe meget let;“
+Gientog hans Ven, „sadl op i Morgen, Broder!
+„Og rid tre, fire Miil herfra
+„Til næste Herregaard, hvor en <b>Papa</b>
+„Til tre ret vakre velopdragne Poder
+„Af Evakiønnet boer. Hver af de tre,
+„Rød, som en Rose, hvid, som Snee,
+„Uskyldig, munter, kielen, vil henrive
+„Din hele Siel, saasnart du faaer at see,
+<pb n="129" facs="148.jpg"/>„Hvad jeg omsonst forsøger at beskrive,
+„I hver Modellen til en Gratie.
+„Medgift jeg ei kan love dig i Penge;
+„Men ellers alt.“ — „Top!“ raabte han igien,
+„I Morgen galloperer jeg derhen!“ —
+„Det er et Ord?“ — „Et Ord! Farvel saa længe.“
+   Om Morgenen derpaa Herr <b>King</b> staaer op;
+Sig munter i en Hast paa Hesten svinger;
+Den fløi saa let, som om den havde Vinger,
 I susende høitbølgende Galop
-Til Herregaardens Port og dermed: Stop!
+Til Herregaardens Port — og dermed: Stop!
 Smaadrengen tager mod den; Herren dandser
-Saa net, saa let ad Køkkentrappen til;
+Saa net, saa let ad Kiøkkentrappen til;
 En lille Landsbyterne der ham standser
-I Farten - thi man er som uden Sandser,
+I Farten — thi man er, som uden Sandser,
 Naar man sig gifte vil,
-Saavelsom naar man hænger sig, desværre! -
-,,Nei! hist er Stuedøren, gode Herre!
-Behag at gaae til den!'' - og han gik ind.
-
-Hans Øjne fem Gestalter der opdage,
+Saavelsom naar man hænger sig, desværre! —
+„Nei! hist er Stuedøren, gode Herre!
+„Behag at gaae til den!“ — og han gik ind.
+<pb n="130" facs="149.jpg"/>   Hans Øine fem Gestalter der opdage,
 Hvoraf de tre
-Undseeligen i Landsbye-Negligee,
+Undseeligen, i Landsbye Negligee,
 Sig neiede, løb bort og rødmede;
-Husherren og hans Frue blev' tilbage:
-,,God Morgen!'' sagde han, - ,,Velkommen!'' sagde de.
-,,Min Herre,'' blev han ved ,,jeg ikke har den Ære
-At kiende Dem, men ønsker det at lære;
-Mig syntes ganske herligt om den Sag,
-At spise Frokost her i Dag;
-Og uden Hensigt syntes det mig ikke;
-De neppe denne giætte kan -
-Jeg altsaa Dem vil sige den; velan! -
-Dog! Strax at sige den kan sig vel ikke skikke;
-Lidt Frokost først! der gives Dit og Dat,
-Som uden Frokost ei fra Læben glider glat.''
-
-Frokosten knap var endt, før Talen gled
-Fra Frierlæben paa den Maade:
-
-,,Af Jordens Rigdom, Ære, Herlighed
-Jeg har saa meget, som jeg vel kan raade;
-Saa meget, som jeg skiøtter om,
-Af Himlens Gaver er min Eiendom;
-Tre, fire Tønder Guld jeg eier, for det Første,
-Min Alders Kraft og Styrke, Nummer To,
-Og for at fylde Tallet, Sindets Ro -
-Een Skat mig mangler kun, og det den allerstørste,
-En Kone, som i kiærlig Sympathie
-Vil dele med mig, til det er forbi,
-Det Tredie, det Andet og det Første.
-De trende Døttre har, og mellem disse tre
-Er een, som dette giøre vil, maaskee;
-Vil De, saa lad mig faae dem strax at see
-I Negligee!
-Thi jeg har andet at bestille,
-End spilde Tiden, hvis de ikke ville.''
-,,Med Glæde! Strax! I dette Øieblik!''
+Huusherren og hans Frue blev’ tilbage:
+„God Morgen!“ sagde han, — „Velkommen!“ sagde de.
+„Min Herre, blev han ved, jeg ikke har den Ære
+„At kiende Dem, men ønsker, det at lære;
+„Mig syntes ganske herligt om den Sag,
+„At spise Frokost her i Dag;
+„Og uden Hensigt syntes det mig ikke;
+„De neppe denne giette kan —
+„Jeg altsaa Dem vil sige den; velan! —
+„Dog! strax at sige den kan sig vel ikke skikke;
+„Lidt Frokost først! der gives dit og dat,
+„Som uden Frokost ei fra Læben glider glat.“
+   Frokosten knap var endt, før Talen gleed
+Fra Frierlæberne paa denne Maade:
+<pb n="131" facs="150.jpg"/>„Af Jordens Rigdom, Ære, Herlighed
+„Jeg har saa meget, som jeg vel kan raade;
+„Saa meget, som jeg skiøtter om,
+„Af Himlens Gaver er min Eiendom;
+„Tre, fire Tønder Guld jeg eier, for det første,
+„Min Alders Kraft og Styrke, Nummer to,
+„Og for at fylde Tallet, Sindets Roe —
+„Een Skat mig mangler kun, og det den allerstørste,
+„En Kone, som i kierlig Sympathie
+„Vil dele med mig, til det er forbi,
+„Det tredie, det andet og det første.
+„De trende Døttre har, og mellem disse tre
+„Er een, som dette giøre vil, maaskee;
+„Vil De, saa lad mig faae dem strax at see
+„I Negligee!
+„Thi jeg har andet at bestille,
+„End spilde Tiden, hvis de ikke ville.“ —
+„Med Glæde! strax! i dette Øieblik!“
 Igientog smukke gamle Mand og Kone;
-Ud smuttede den huuslige Matrone,
+<pb n="132" facs="151.jpg"/>Ud smuttede den huslige Matrone,
 Og ind igien med sine Døttre gik.
-
-I landlig Dragt, med hvide Liin om Panden,
+   I landlig Dragt, med hvide Lin om Panden,
 Hvorunder Haaret sneg sig bølgende
 I brune Lokker ned paa Skuldrene;
 Hver med halvdækket Barm, hvorpaa en Rosenknop
@@ -2196,346 +2194,318 @@ Forsøgte, skinsyg paa sin modne Ven,
 Den lille røde Mund at lukke op,
 For og, trods Sløifen, ret at kysse den;
 Med korte Trøier, af hvis Ærmer stak
-Et Armepar, hvis Mønster du, Seline!
+Et Armepar, hvis Mønster du, <b>Seline</b>!
 (Thi hvad er rundt og hvidt og nydeligt som dine!)
 Din Elsker dølger alt for tidt i Frak;
-Med Skiørter, som i lette Folder gled,
+Med Skiørter, som i lette Folder gleed,
 Lig Sommerskyer forbi Maanen, ned
 Forbi de runde Knæe til Fødderne,
-Stod rødmende, blufærdig smilende,
-Og som jeg ei kan sige det, de Tre
-Jeg glemte Rimet for - ved Siden af hinanden.
-
-Herr King, vor Frier, henrykt stod og saae,
+Stod’ rødmende, blufærdig smilende,
+Og, som jeg ei kan sige det, de tre,
+Jeg glemte Rimet for — ved Siden af hinanden.
+<pb n="133" facs="152.jpg"/>   Herr <b>King</b>, vor Frier, henrykt stod og saae,
 Og saae, og giorde intet meer end saae,
-Og saae sig fast ihiel; thi Siælen flyver
+Og saae sig fast ihiel; thi Sielen flyver
 Ved saadan Leilighed igiennem Øiet hen
-Til det, der blendende fortryller den.
-Spørg Pastor Paris, om jeg lyver?
-
-Han længe stille stod og saae,
+Til det der blendende fortryller den.
+Spørg Pastor <b>Paris</b>, om jeg lyver?
+   Han længe stille stod og saae,
 Og ønskte hemmelig hans hele Krop var Øie
 Fra Top til Taa,
 For ret med dette Syn at kunne sig fornøie.
-,,Ja! saadan kunde jeg nok længe staae,''
-Udbrød han endelig, ,,men her er meer at giøre!
-,,Jeg een maa vælge; thi dem Alle maa
-Jeg venteligen ikke faae,
-Skiøndt det var nemt?
-Hvad mener De? Jeg Loven ei erindrer;
-Thi jeg har den og Alting glemt
-I denne Glands, som for mit Øie tindrer - ''
-
-I Engelland saa lidt, som her,
-Man bruger den herkuliske Maneer,
+„Ja! saadan kunde jeg nok længe staae,“
+Udbrød han endelig, „men her er meer at giøre!
+„Jeg een maae vælge; thi dem alle maae
+„Jeg venteligen ikke faae,
+„Skiøndt det var nemt?
+„Hvad mener De? Jeg Loven ei erindrer;
+„Thi jeg har den og alting glemt
+„I denne Glands, som for mit Øie tindrer —“
+<pb n="134" facs="153.jpg"/>   I Engelland saa lidt, som her,
+Man bruger den herculiske Maneer,
 At skabe Hustruer af trende Piger
 I een og samme Bryllups-Nat;
 Der, som i næsten alle Riger,
 For slig en Heltestreg har Loven Punctum sat.
-Herr King sig altsaa maatte lade nøie
-Med Een;
-Der gives stakkels Mænd, som nok maa døie
+Herr <b>King</b> sig altsaa maatte lade nøie
+Med een;
+Der gives stakkels Mænd, som nok maae døie
 Med den;
 Skiøndt samme stakkels Mænd jeg ei beklager,
 Det deres egen Skyld gemeenlig er;
 Thi Koner ere, som man Koner tager,
-Det seer Enhver.
-
-Men mellem disse Tre var Valget ikke let
+Det seer enhver.
+   Men mellem disse tre var Valget ikke let
 For stakkels Manden,
 Særdeles nu, han saae saa slet,
 Og havde seet sig halvveis fra Forstanden,
 En Ting, som saare let kan skee
-Ved Een at see,
-Ja stundom blot en Halv, endsige Tre.
-Hans Tanker dandsede Kehraus i Panden,
-Som unge Russer med en Perial,
+<pb n="135" facs="154.jpg"/>Ved <b>een</b> at see,
+Ja stundom blot en <b>halv</b>, end sige <b>tre</b>.
+Hans Tanker dandsede <b>Kehraus</b> i Panden,
+Som unge Russer, med en lille Perial,
 Paa et Examensaftens Bal,
 Indtil de bleve ganske trætte.
-
-,,Gid Pokker tænke meer!'' saa tænkte han,
-,,Mig alle Tre de lige vel staaer an,
-Og den jeg faaer, er ventelig den Rette.''
-
-Med dette kloge Forsæt, blev han ved
-Paa denne Viis: ,,Min Herre og Madame!
-,,Hvem af de tre jeg faaer, er mig det samme;
-Og derfor, uden meer Omstændighed,
-Lad den iblandt dem Konelodden ramme,
-Og faa mit Hierte, Haand, et cetera,
-Som først - hør efter, Smukke! siger: Ja!''
-
-Papa, Mama samtykte denne Maade,
+„Gid Pokker tænke meer!“ saa tænkte han,
+„Mig alle tre de ligevel staaer an,
+„Og den, jeg faaer, er ventelig den rette.“
+   Med dette kloge Forsæt, blev han ved
+Paa denne Viis: „Min Herre og Madame!
+„Hvem af de tre, jeg faaer, er mig det samme;
+„Og derfor, uden meer Omstændighed,
+„Lad den iblandt dem Konelodden ramme,
+„Og faae mit Hierte, Haand, et cetera,
+„Som først — hør efter, Smukke! — siger: Ja!“
+   <b>Papa</b>, <b>Mama</b> samtykte denne Maade,
 Som Jupiter, ved Nik;
-,,Hør Piger!'' sagde hun, ,,I nu jer selv maae raade!''
-,,Betænker,'' sagde han, ,,Jer egen Baade!''
-Men et tredoppelt taust undseeligt Blik
+„Hør Piger!“ sagde hun, „I nu jer selv maae raade!“
+<pb n="136" facs="155.jpg"/>„Betænker,“ sagde han, „jer egen Baade!“
+Men et tredobbelt taust undseeligt Blik
 Var alt det Svar de fik.
-Vor Frier stod og stirred' tre Minuter,
+Vor Frier stod og stirred’ tre Minuter,
 Og lytted efter hvor den første Lyd kom fra;
 Men fra de tause purpurrøde Putter
-Kom intet Ja.
-
-,,Saa vil De,'' brød han ud, ,,Dem endelig betænke?
-,,Nu, Herre Gud! Den Ældste vil
-Jeg et Qvarter dertil,
-Men heller ikke meer, taalmodig skienke.
-
-,,Det er for lidt, Herr King!'' gjentog Mama -
-,,Ja jeg kan ingenlunde længer bie;
-Nu Klokken alt er over Ti! - ,,Ja, ja,
-Vi faar at se!'' Følg med, Marie!
-(Saa hed den Ældste, og som virkelig
-Imellem os, Herr King helst ønskte sig
-Og, som jeg har min Grund at mene,
-Han overalt i Grunden ønsked' ene;
-Thi selv uvidende, hvordan det gik
+Kom ingen Ja.
+   „Saa vil De,“ brød han ud, „Dem endelig betænke?
+„Nu, Herre Gud! den ældste vil
+„Jeg et Qvarteer dertil,
+„Men heller ikke meer, taalmodig skienke.“
+   „Det er for lidt, Herr <b>King</b>!“ gientog <b>Mama</b> —
+„Ja! jeg kan ingenlunde længer bie;
+„Nu Klokken alt er over ti!“ — „Ja, ja,
+„Vi faaer at see!“ Følg med, <b>Marie</b>!
+(Saa hed den ældste, og som virkelig,
+Imellem os, Herr <b>King</b> helst ønskte sig,
+Og, som jeg har min egen Grund at mene,
+Han overalt i Grunden ønsked’ eene;
+<pb n="137" facs="156.jpg"/>Thi selv uvidende, hvordan det gik
 I nysbemeldte Stirre-Lytte-Scene,
 Hans længselsfulde lange Blik
-Sneg' sig saa lumskelig til hendes Barm allene,
-Hvorpaa med synderlig Urolighed
-Bouqvetten hævede sig op og ned.) -
-
-Men, man er, frygter jeg, en Smule kied
+Sneg’ sig saa lumskelig til hendes Barm allene,
+Hvorpaa med synderlig Uroelighed
+Bouqvetten hævede sig op og ned.) —
+   Men, man er, frygter jeg, en smule kied
 Af min langagtige Fortællemaade;
 Tilgiv, o Læser! o tilgiv i Naade,
-Om hidindtil det faldt dig lidt vel suurt!
+Om hidindtil det faldt dig lidt vel surt!
 Nu skal det gaae, som det var smurt.
-
-Qvarteret gik; og vips! af Kabinetet
-Mama kom ud igien, og, som en Vind,
+   Qvarteret gik; og, vips! af Kabinettet
+<b>Mama</b> kom ud igien, og, som en Vind,
 Fløi Frieren i hendes Sted derind,
 At see hvad Tanker havde der udrettet:
-,,Nu! Vil De have mig? saa skynd Dem!'' - Nei! -
-Alvorlig? - Virkelig? - ,,De vil det ei?'' -
-Min Herre! - ,,Hvad?'' - Min Herre! - ,,Vil De?'' - Nei!
-,,Ja, ja! saa rider jeg min Vej,''
+„Nu! vil De have mig? saa skynd Dem!“ — <b>Nei!</b> —
+„Alvorlig?“ — Virkelig! — „De vil det ei?“ —
+Min Herre! — „Hvad?“ — Min Herre! — „Vil De“ — <b>Nei!</b> —
+<pb n="138" facs="157.jpg"/>„Ja, ja! saa rider jeg min Vei,“
 Og dermed gik han hurtig ind i Stuen
 Og bød Farvel til Herren og til Fruen.
-
-De maatte lide denne Svigersøn
-Og bade ham bestandigen at bie:
-,,See! Vejret er jo smukt og Vejen skiøn!
-,,Vov et Qvarter endnu! - Gak ind Sophie!
-(Saa hed den anden Datter) - ,,Ja! lad gaae!
-,,Jeg denne Gang endnu forsøge maa!'' -
-Qvarteret gik, som forrige til Ende
+   De maatte lide denne Svigersøn
+Og bade ham indstændigen at bie:
+„See! Veiret er jo smukt og Veien skiøn!
+„Vov et Qvarteer endnu!“ — Gak ind <b>Sophie</b>!
+(Saa hed den anden Datter) — „Ja! lad gaae!
+„Jeg denne Gang endnu forsøge maae!“ —
+Qvarteret gik, som forrige, til Ende,
 Og hurtig Frieren fløi ind til hende,
-Det samme Spørgsmaal: ,,Vil De, eller ei?
-Fik trende Gange repeteret: Nei;
-
-Vor Helt tilbage gik igien i Stuen,
-Og sandt at sige var lidt vred i Huen -
-En Kurv har mangen En i Hov'det Fluer sat;
-Men to - Gud fri mig! jeg blev desperat -
-Det blev alligevel Herr King dog ikke,
+Det samme Spørgsmaal: „Vil De, eller ei?“
+Fik trende Gange repeteret: Nei!
+   Vor Helt tilbage gik igien i Stuen,
+Og sandt at sige, var lidt vred i Huen —
+Een Kurv har mangen en i Hov’det Fluer sat;
+Men to — Gud frie mig! jeg blev desperat —
+Det blev alligevel Herr <b>King</b> dog ikke,
 Han vidste sig i Kurve godt at skikke;
-Det som forvoldt ham stærkest Hiernevrid,
+<pb n="139" facs="158.jpg"/>Det, som forvoldt ham stærkest Hiernevrid,
 Var den uigienkaldelige Tid,
 Og derfor bandte han, med disse Kurvepiger
-Slet Intet meer at foretage sig,
-Endskiønt Forældrene bad inderlig
-Om et Qvarter endnu. Men ak som Vessel siger;
-(Gud glæde ham for Alt, hvad han har sagt!)
-,,O! christen Siæl; hvad nytter al din Banden
-Mod Kiærlighed, mod Skiebnen og mod Fanden?''
-At trodse dem, især den første og den anden
+Slet intet meer at foretage sig,
+Endskiøndt Forældrene bad inderlig
+Om et Qvarteer endnu. Men ak! som Vessel siger:<footnote><span lang="la">In Op. perd.</span></footnote>
+(Gud glæde ham for alt, hvad han har sagt!)
+„O! Christen Siel! hvad nytter al din Banden
+„Mod Kierlighed, mod Skiebnen og mod Fanden?“
+At trodse dem, især den første og den anden,
 Vist ikke staaer i vores Magt;
-Herr King nu skulde giftes, og - giv Agt!
-
-Den yngste Datter var endnu tilbage,
-Som Henriette hed,
+Herr <b>King</b> nu skulde giftes, og — giv Agt!
+   Den yngste Datter var endnu tilbage,
+Som <b>Henriette</b> hed,
 Og efter megen Beden og Umage
-Vor Frier nok engang paa Krogen bed
-Og et Qvarter endnu for hendes Skyld spendeerte,
-Som ei saa snart var endt, før han igien
-Sprang ind og kiæk den tredje Kurv risqveerte.
-
-Han syntes næsten alt at have den,
+Vor Frier nok engang paa Krogen beed,
+Og et Qvarteer endnu for hendes Skyld spendeerte,
+Som ei saasnart var endt, før han igien
+Sprang ind, og kiæk den tredie Kurv risqveerte.
+<pb n="140" facs="159.jpg"/>   Han syntes næsten alt at have den,
 Og spurgte derfor i en rolig Tone:
-,,De vil vel ikke heller være Kone?
-O! skynd Dem, at jeg komme kan herfra
-Med alle mine Kurve! Vil De? - Ja! -
-,,Min Kone være?''  ,,Deres Kone! Ja!'' -
-Det er for Alvor Deres Hiertes Mening?
-Nu! Gud velsigne Dem og mig og vor Forening,
-Et cetera!
-Og dermed Arm i Arm de hopped ind i Stuen.
-
-Fornøiet Herren blev, og glad blev Fruen
+„De vil vel ikke heller være Kone? —
+„O! skynd Dem, at jeg komme kan herfra
+„Med alle mine Kurve! Vil De?“ — <b>Ja!</b> —
+„Min Kone være?“ — „Deres Kone! Ja!“ —
+„Det er for Alvor Deres Hiertes Mening?
+„Nu! Gud velsigne Dem og mig og vor Forening,
+„Et cetera!“
+Og dermed Arm i Arm de hopped’ ind i Stuen.
+   Fornøiet Herren blev, og glad blev Fruen,
 Som sluttede, hvad Læseren nu veed.
-
-,,Ja Sagen mellem os er i sin Rigtighed,''
-Udbrød Herr King, ,,nu mangler os kun Præsten
-,,Og Kongebrev, som snart skal være giort;
-Jeg svinger mig i største Hast paa Hesten
-Og trap, trap, trap, igien til Byen fort;
-I Morgen skal jeg have strax den Ære
-Med begge Dele her igien at være.
-Jeg elsker ikke megen Snak:
-For Frokost Tak!
-De tvende Kurve vil jeg lade hænge;
-Farvel saa længe.
-
-Dermed vor Frier hurtig Afsked tog,
+   „Ja Sagen mellem os er i sin Rigtighed,“
+Udbrød Herr <b>King</b>, „nu mangler os kun Præsten
+„Og Kongebrev, som snart skal være giort;
+„Jeg svinger mig i største Hast paa Hesten
+„Og trap, trap, trap, igien til Byen fort;
+„I Morgen skal jeg have strax den Ære
+<pb n="141" facs="160.jpg"/>„Med begge Dele her igien at være.
+„Jeg elsker ikke megen Snak:
+„For Froekost Tak!
+„De tvende Kurve vil jeg lade hænge;
+„Farvel saa længe!“
+   Dermed vor Frier hurtig Afskeed tog,
 Og som en Piil afsted mod Byen jog.
-Papa, Mama, Sophie, Henriette,
-I Porten noget stod og saa derpaa,
-Til Synet ham ei mere kunde naa.
-Marie derimod - kan Læseren vel giette
+<b>Papa</b>, <b>Mama</b>, <b>Sophie</b>, <b>Henriette</b>,
+I Porten noget stod og saae derpaa,
+Til Synet ham ei mere kunde naae.
+   <b>Marie</b> derimod — kan Læseren vel giette
 Hvor hun imidlertid er smuttet hen?
-Nu, Kiære! kommer først Historien.
-
-Ei langt fra Gaarden, tæt ved Landeveien,
+Nu, Kiere! kommer først Historien.
+   Ei langt fra Gaarden, tæt ved Landeveien,
 Laae mellem nogle Træer en lille Høi.
-I Afskeds Hurlumheiens Støi
+I Afskeeds Hurlumheiens Støi
 Med Bukken, Skraben, Haandtryk, Kyssen, Neien,
-Hun sneg sig bort, og hen til denne fløi -
+Hun sneg sig bort, og hen til denne fløi —
 Af hvilken Aarsag, veed jeg ikke;
-Hvad kan ei stundom unge Piger stikke?
+<pb n="142" facs="161.jpg"/>Hvad kan ei stundom unge Piger stikke?
 Nok sagt, hun sad useet paa sammes Top,
 Og kunde derfra mageligen skue
-Herr King i sin ustansede Galop,
-Saa længe til han blev saa lille som en Flue;
+Herr <b>King</b> i sin ustandsede Galop,
+Saa længe til han blev saa lille, som en Flue;
 Og da hun ikke meer ham øinte noget Sted,
-Steg hun paa Heldingen mod Veien ned'
+Steg hun paa Heldingen mod Veien ned,
 Og satte sig i Græsset der, og græd.
-
-Ulykkelige Kiærlighed!
+   Ulykkelige Kierlighed!
 Hvor kan du Hiernen ei paa Folk forskrue!
 En Elsker sandser, husker ingen Ting,
 Imens du tumler ham omkring
 I Frygtens Sneefog eller Haabets Lue.
-Saaledes gik det denne Gang Herr King;
-To Fierdingvei han alt var galloperet
-Før han med eet, besindte sig,
-At Brudens Fornavn var ham reent uvitterlig
+   Saaledes gik det denne Gang Herr <b>King</b>;
+To Fierdingvei han alt var galloperet,
+Før han, med et, besindte sig,
+At Brudens Fornavn var ham reent uvitterlig,
 Som dog til Kongebrev blev reqvireret.
 Han derfor vendte sig og Hesten om,
-For hendes Navn i største Hast at hente
+<pb n="143" facs="162.jpg"/>For hendes Navn i største Hast at hente,
 Som havde sagt ham Ja. Men da han kom
-Til Høien, hvilken Fryd! Idet han kiendte
-Den ældste Datter, som spadseerte der!
-,,Det sparte mig, ved Gud et helt Qvarter
-At De, min Smukke! just er her tilstede;
-Jeg glemte hendes Navn som gav mig Ja dernede -
-Vil De behage her at sige mig,
-Hvordan det lyder egentlig;
-Thi jeg kan ingenlunde længer bie?''
-,,Min Herre! hendes Navn, som vilde gifte sig
-Med Dem? som elsker Dem?'' - ,,Ja vist!''  ,,Marie.'' -
-,,Saa hedder hun? det kan jeg lide paa? - ''
-,,Som saa!''
-,,Marie? - jeg skal rigtig Navnet giemme.''
-,,Marie, ja! . . . Marie! - Hils der hiemme!''
-
-Og bort han fløi;
-Men mumled' uden et Minut at tie
-,,Marie -
-Marie - hyp! Marie - hop! - Marie!''
-Tak ske dig, lykkelige lille Høi!
-
-Der hiemme var en Praten om den Frier,
+Til Høien, hvilken Fryd! i det han kiendte
+Den ældste Datter, som spadserte der!
+„Det sparte mig, ved Gud, et heelt Qvarteer,
+„At De, min Smukke! just er her tilstæde;
+„Jeg glemte hendes Navn, som gav mig Ja dernede —
+„Vil De behage her at sige mig,
+„Hvordan det lyder egentlig;
+„Thi jeg kan ingenlunde længer bie?“ —
+„Min Herre! hendes Navn, som vilde gifte sig
+„Med Dem? som elsker Dem?“ — „Ja vist!“ „<b>Marie</b>.“ —
+„Saa hedder hun? det kan jeg lide paa? —“
+„Som saa!“ . . .
+„<b>Marie</b>? — jeg skal rigtig Navnet giemme.“
+„<b>Marie</b>, ja! . . . <b>Marie</b>! — Hils der Himme!“
+   Og bort han fløi;
+<pb n="144" facs="163.jpg"/>Men mumled’, uden et Minut at tie,
+„<b>Marie</b> —
+<b>Marie</b> — hyp! <b>Marie</b> — hop! — <b>Marie</b>.“
+Tak skee dig, lykkelige lille Høi!
+   Der hiemme var en Praten om den Frier,
 Om hans forunderlige Hurtighed,
 Hans Skabning, Midler, Væsen, Narrerier,
 Og mange flere Snurrepiberier,
 Hvoraf jeg knap det halve veed:
-Papa holdt for, hans Hest var at beklage;
-(Deri han havde meget Ret)
-Mama fandt ud, at i hans unge Dage
+<b>Papa</b> holdt for, hans Hest var at beklage;
+(Deri han havde megen Ret)
+<b>Mama</b> fandt ud, at i hans unge Dage
 Han havde været nok saa net;
-Sophie paastod, han var alt for lille,
-Og Henriette han for gammel var;
+<b>Sophie</b> paastod, han var alt for lille,
+Og <b>Henriette</b> han for gammel var;
 De begge holdt den Ting for soleklar,
-Han var en lille Smule Nar -
-Marie blot taug ganske stille,
+Han var en lille smule Nar —
+<b>Marie</b> blot taug ganske stille,
 Og lod dem prate sammen hvad de vilde.
-
-Da Dagen var forbi, det blev omsider Nat;
-Og Søstrene, som nu blev ene,
-Fortsatte deres Snak - ,,Men hvordan er det fat,
-Marie? Hvi saa bleg? - jeg skulde mene,''
-Var Henriettes Ord, ,,at det kun tilkom mig
-At blegne her; thi sandt at sige,
-Dengang jeg sagde Ja, jeg arme Pige
-Tog feil.'' - ,,Saa gik det netop dig,
+<pb n="145" facs="164.jpg"/>   Da Dagen var forbi, det blev omsider Nat;
+Og Søstrene, som nu blev eene,
+Fortsatte deres Snak — „Men hvordan er det fat,
+<b>Marie</b>? hvi saa bleg? — „jeg skulde meene,“
+Var Henriettes Ord, „at det kun tilkom mig
+At blegne her; thi, sandt at sige,
+Dengang jeg sagde ja, jeg arme Pige
+Tog feil.“ — „Saa gik det netop dig,
 Som det gik mig;
-Dengang jeg sagde Nei, jeg egentligen vilde'' . . .
-,,Sagt Ja! -
-Ah! ha!''
-Sophie stemte i som tænkes kan: ,,Ha! ha!''
-,,Men hør engang, det end er ei for silde
-Bliv rød igien;
+Dengang jeg sagde nei, jeg egentlig vilde“ . . .
+„Sagt ja! —
+„Ah! ha!“
+<b>Sophie</b> stemmede i, som tænkes kan: „Ha! ha!“
+„Men hør engang det end er ei for silde!
+Bliv rød igien!
 Gaae du for mig til Brudeskamlen hen
-I Morgen!'' sagde Henriette -
-,,Kun Navnet, - hvis han kun ei havde dette?
-,,Hvad Navnet angaar,'' blev Marie ved,
-,,Det har sin Rigtighed,''
-,,Nu det er løierligt,'' udbrød Sophie -
-,,Saa Henriette, veed du hvad,
+I Morgen!“ sagde <b>Henriette</b> —
+„Kun Navnet! — hvis han kun ei havde dette?“
+„Hvad Navnet angaaer,“ blev <b>Marie</b> ved
+<pb n="146" facs="165.jpg"/>„Det har sin Rigtighed.“
+„Nu det er løierligt,“ udbrød <b>Sophie</b> —
+„Saa, <b>Henriette</b>, veed du hvad,
 I Morgen vil vi pynte Søster Rie
-Hvordan vi bær os ad,
-,,Ja! ja!'' - det blev i Hast afhandlet og besluttet,
-Og alle Tre
-Med hi! hi! hi! - ha! ha! - he! he!
-Sig ned i Dynerne (Sov sødt, I Søde!) putted.
-
-Den næste Dag derpaa kom King igien
+Hvordan vi bær os ad,“
+„Ja! ja! — det blev i hast afhandlet og besluttet,
+Og alle tre
+Med hi! hi! hi! — ha! ha! — he! he! —
+Sig ned i Dynerne (sov sødt, I Søde!) putted.
+   Den næste Dag derpaa kom <b>King</b> igien
 Med Præst og Kongebrev. Til Bryllupsfesten
 Var alting færdigt, uden netop den,
 Som skulde krone hele Resten.
-
-Det varte to Qvarteer, det varte tre:
-,,Hvor længe kan dog ogsaa Bruden bie?''
-Da man til sidst fik pludselig at see
-Imellem Henriette og Sophie
-I hvide Bryllupsdragt den rødmende Marie.
-
-Forældrene, som ei begreb
-De trende Søsters overlagte Kneb,
-Og alle Giester studsede ved dette.
-Men King, som troede, Bruden var den Rette,
+   Det varte to Qvarteer, det varte tre:
+„Hvor længe kan dog ogsaa Bruden bie?“
+Da man tilsidst fik pludselig at see
+Imellem <b>Henriette</b> og <b>Sophie</b>
+I hvide Bryllupsdragt den rødmende <b>Marie</b>.
+<pb n="147" facs="166.jpg"/>   Forældrene, som ei begreb
+De trende Søstres overlagte Kneb,
+Og alle Giæster studsede ved dette.
+Men <b>King</b>, som troede, Bruden var den rette,
 Sig nærmede til den, som festlig pyntet var,
 Og vilde have Sagen klar.
-,,Min Herre, det er ikke Henriette.'' -
-,,Nei, det forstaar sig selv.'' - ,,Nu det er underligt
-Hvordan han meer end vi begriber sligt;
-Min Herre! Det er virkelig Marie.'' -
-,,Ja hvem vel ellers.'' - ,,Hun, som sagde Ja,
-De vil jo have?'' - ,,Just! Men hedder da
-Hun Bruden her ei virkelig Marie?''
-,,Jo rigtig nok, men'' - ,,Hvad skal dette Men
-Da sige? Skal jeg nu frie om igien?
-Hvorefter skal vi længer bie,
-Naar Bruden færdig er og Præsten, som skal vie?''
-
-Man Kongebrevet saae, og see! der stod Marie.
+„Min Herre, det er ikke <b>Henriette</b>.“ —
+„Nei det forstaaer sig selv.“ — „Nu det er underligt
+„Hvordan han meer end vi begriber sligt;
+„Min Herre! det er virkelig <b>Marie</b>.“ —
+„Ja hvem vel ellers.“ — „Hun som sagde Ja
+„De vil jo have?“ — „Just! Men hedder da
+„Hun Bruden her, ei virkelig <b>Marie</b>?
+„Jo rigtig nok, men“ — „Hvad skal dette <b>Men</b>
+„Da sige? skal jeg nu frie om igien?
+„Hvorefter skal vi længer bie,
+„Naar Bruden færdig er og Præsten, som skal vie?“ —
+<pb n="148" facs="167.jpg"/>   Man Kongebrevet saae, og see! der stod <b>Marie</b>.
 Man studsede forskrækkelig derved.
 Min Frier blev af al den Studsen kied,
-Til sidst han blev endog en Smule vred.
-Men endelig forklarede Sophie
+Tilsidst han blev endog en smule vred.
+Men endelig forklarede <b>Sophie</b>
 Den hele Sag,
-Til Kings, Papas, Mamas og Hvers Behag:
-,,Thi,'' sagde Henriette, ,,jeg kan bie.'' -
-,,Det haster heller ikke just med mig;
-Men passer allerbedst for dig,
-Min Søster!'' lagde til den skielmske Miss Sophie.
-Historien, de kortsagt, alle led,
+Til <b>Kings</b>, <b>Papas</b>, <b>Mamas</b> og hvers Behag:
+„Thi,“ sagde <b>Henriette</b>, „jeg kan bie.“ —
+„Det haster heller ikke just med mig;
+„Men det sig passer allerbedst for dig,
+„Min Søster!“ lagde til den skielmske Miss <b>Sophie</b>.
+Historien de, kort sagt, alle leed,
 (Gid Læseren det vilde med!)
-Og King blev viet og gift, og glad med sin Marie.
-
-Moralen som heraf kan pilles ud,
+Og <b>King</b> blev viet og gift, og glad med sin <b>Marie</b>.
+   Moralen, som heraf kan pilles ud,
 Med overmaade lidet Hovedbrud
 Er meer end een; jeg kiender, sandt at sige
 Kun faa Historier i Riim saa rige
 Paa reen og fyndig, sand og sund Moral,
-Som denne - Fast af hver en Periode
-Man lære kan Alt hvad man lære skal,
+<pb n="149" facs="168.jpg"/>Som denne — Fast af hver en Periode
+Man lære kan alt hvad man lære skal,
 Naar man har Takt for det moralske Gode.
 Det vigtigste deraf for Brudgom og for Brud
 Vil sikkerlig min Læser selv udfinde,
-Naar han og hun engang faar sligt i Sinde,
-Hvortil dem skienke Held den unge blinde,
+Naar han og hun engang faaer sligt i Sinde,
+Hvortil dem skienke Held den unge, blinde,
 Bevingede, bekiendte lille Gud!
 </poetry>
 </body>
@@ -2712,7 +2682,7 @@ For Resten manglede hun ikke Vid,
 Og man paa hendes Dyd ei noget kunde sige:
 Kun, at hun ei fra Arrilds Tid
 I Grimhed havde havt sin Lige,
-Og fik den heller ei, før Tydsklands Poetinde<note>* Madame <w>Karschinn.</w></note>
+Og fik den heller ei, før Tydsklands Poetinde<note>Madame <w>Karschinn.</w></note>
 Til sommes Lyst og andres Skræk blev til,
 Der, hvis man ellers kan og vil
 Til somme Kobberstykker fæste Troe,
@@ -2823,7 +2793,7 @@ Nedsmilte fordum Kiempernes Betvinger
 Til <b>Baucis</b> og <b>Philemons</b> Fryd.
 Kun den hvis Siel sig op til Himlen svinger
 Med stadig Flugt, og stolt og seierrig
-Seer Mængdens<note>Mængdens] Mægdens</note> Spot og Fordom under sig,
+Seer Mængdens<note editorial="true">Mængdens] Mægdens</note> Spot og Fordom under sig,
 Kan tænke Datteren af dig.
 Guddommelige Dyd!
 Den himmelreene Lyst, at skue Brødres Glæde
@@ -2975,7 +2945,7 @@ Som, for det meste, stod i lige Rad,
 Man spiste god og vel tillavet Mad,
 Og drak sin Miød af skiønt glaseerte Kruse.
 Aar efter Aar den meer oplyste Stad
-Blev smukkere. Rundt om dens venstre<note>venstre] vestre</note> Side
+Blev smukkere. Rundt om dens venstre<note editorial="true">venstre] vestre</note> Side
 En Skov af Skibe saaes, opfyldte med
 De fierne Jordens Egnes Herlighed.
 End skiønnere man saae mod Østerlide
@@ -3093,7 +3063,7 @@ Jeg her min Læser trolig vil levere.
 
 <nonum><center>* * *</center></nonum>
 
-   "Den - hujus døde Christen Smed<note>* Den 28de, om jeg mindes ret; men hun sprag det over, fordi det var trykt med Rommertal XXVIII.</note>
+   "Den - hujus døde Christen Smed<note>Den 28de, om jeg mindes ret; men hun sprag det over, fordi det var trykt med Rommertal XXVIII.</note>
    Den hele Bye til stor Fortræd;
    Han var en brav og nyttig Mand,
    Beslog en Hest med stor Forstand,
@@ -3292,7 +3262,7 @@ Fik Støvlerne fra Knagen ned
 Med al en Hængts Behændighed,
 Og trak dem hurtigt begge paa,
 Og vilde netop til, at gaae —
-Da Jens, som vaagned'<note>vaagned'] vogned'</note> ved den Larm,
+Da Jens, som vaagned'<note editorial="true">vaagned'] vogned'</note> ved den Larm,
 Fik i ham fat med vældig Arm:
 "Fordømte Tyv! som, nyelig hængt,
 "Er end med Tyverie befængt!
@@ -3730,7 +3700,7 @@ At sukke. Maade, Maade, det er Tingen!
 O! troer mig! Men hvis ikke, troer mig ei,
 Mig er det lige meget, sandt at sige,
 Med Tyrannie befæster Eders Rige,
-Saa længe som I<note>I] i</note> kan; men husker paa tillige,
+Saa længe som I<note editorial="true">I] i</note> kan; men husker paa tillige,
 I komme siden til at gaae <b>Constances</b> Vei.
    Saasnart var Elskov ei i hendes Hierte
 En Maaned gammel, før dens hele Hær
@@ -3925,7 +3895,7 @@ Men, ogsaa den tilsidesat,
 Hvortil den Heftighed? Paa denne Maade
 Man ikke lettelig faaer Hierter fat;
 Vælg Dem en anden, hvis jeg Dem maae raade!
-For min Part maae jeg sige Dem<note>Dem] dem</note>,
+For min Part maae jeg sige Dem<note editorial="true">Dem] dem</note>,
 Der bliver aldrig Koner af <b>Constancer,</b>
 Hvis alle giøre, som nu De — <b>Avancer,</b>
 Forlad! jeg, som De seer, er ligefrem.”
@@ -4157,7 +4127,7 @@ Men Dødens Knokler blev paa eengang rappe:
 "Herr Doctor,” skreg den, "det er reent omsonst,
 At prøve paa min Lee at snappe!
 Thi reent ud sagt, at stiæle den,
-Og <b>Køllen</b> fra den gamle Jomfru-Værger,<note>* Hercules.</note>
+Og <b>Køllen</b> fra den gamle Jomfru-Værger,<note>Hercules.</note>
 Og <b>Livets Balsam</b> fra min Fiende <b>Berger,</b>
 Er lige mueligt kiere Ven!
 Jeg raader derfor venligst lad den ligge!”
@@ -4172,7 +4142,7 @@ Med saadan Iver dyrker Dem, som jeg!
 Jeg stiæle fra dem! - ak tilgiv mig, nei!
 Jeg Leen blot en Smule hvæsse vilde,
 Den syntes mig lidt sløv.” — "Nu er jeg død
-I tredsindstyve<note>tredsindstyve] tredsindstive</note> Secler!” hin ubrød,
+I tredsindstyve<note editorial="true">tredsindstyve] tredsindstive</note> Secler!” hin ubrød,
 "Men i min hele Dødstid aldrig Mage
 Jeg funden har til denne Nidkierhed!
 Blandt alle mine Svende, det jeg veed,
@@ -4196,10 +4166,10 @@ I næste Uge —
 De allernaadigst mig en Gave har tildømt,
 Tør jeg mig underdanigst blot udbede
 De denne Lee mig vil tilstede
-Saa længe til De kommer Dem igien?<note>De] de, Dem] dem</note>
+Saa længe til De kommer Dem igien?<note editorial="true">De] de, Dem] dem</note>
 Jeg vist skal giøre mig al tænkelig Umage,
 For med en Eftertryk at bruge den,
-Som om det var Dem<note>Dem] dem</note> selv i Deres Ungkarlsdage.”<note>* Omtrent ved Noahs Tid, da Døden endnu ikke havde fuldt 1700 Aar paa Bagen.</note>
+Som om det var Dem<note editorial="true">Dem] dem</note> selv i Deres Ungkarlsdage.”<note>Omtrent ved Noahs Tid, da Døden endnu ikke havde fuldt 1700 Aar paa Bagen.</note>
    Den kiere Død, i øvrigt ufortalt,
 Har, siger man, med andre Potentater,
 Hvis Blikke maae giennem-overskue Stater
@@ -4301,7 +4271,7 @@ Og i min Skytsaand jeg genkiendte <b>Dig.</b>
   <title>Kirkegaarden i Sobradise</title>
   <firstline>Den hele Verden kiender Sobradise</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <source in="bd1" pages="243-248"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4318,7 +4288,7 @@ Hvori man putted’ alle Kirkens Faar,
 At sige efterhaanden, som de døde —
 Og over hver af sammes Grave laae
 En mindre eller større Steen, hvorpaa
-Man læste Faarets Navn, som her var Ormes<note>Ormes] Orm s</note> Føde.
+Man læste Faarets Navn, som her var Ormes<note editorial="true">Ormes] Orm s</note> Føde.
    Jeg eengang gik som jeg saa ofte gaaer,
 I Tanker over denne Kirkegaard —
 Jeg faldt, og paa en Steen slog halv itu min Næse;
@@ -4353,7 +4323,7 @@ Og om du er til Hest, da hold den om du kan!
 Mod Øster hans Paryk og Maven imod Vester.
 ---
    Jeg sluttede mig til af denne Steen,
-At der Borgmestere<note>Borgmestere] Bormestere</note> kan gives
+At der Borgmestere<note editorial="true">Borgmestere] Bormestere</note> kan gives
 Ei uden Hoved blot; men ogsaa uden Been.
 Jeg dreiede mig om til venstre Side
 Og fik ved næste Blik det følgende at vide.
@@ -5003,7 +4973,7 @@ Slog Eegens Sanger mere sødt;
 Og ved et Blik af hendes Øie,
 Og ved et Tryk af hendes Haand
 Med dobbelt sikker Flugt hans Aand
-Sig hæved'<note>hæved'] hæved</note> henrykt til den Høie;
+Sig hæved'<note editorial="true">hæved'] hæved</note> henrykt til den Høie;
 Den Bæk, hvori hun speilte sig,
 Blev renere ved hendes Blikke;
 Den Torn, som kyste hendes Flig,
@@ -5245,7 +5215,7 @@ Man Roserne paa hendes Kinder
 Saae Dag og Nat at falme hen.
 Den Munterhed, som hende fulgte
 Bestandig før, veg ganske bort;
-Og svagt kun<note>kun] hun</note> Hoffets Blikke dulgte,
+Og svagt kun<note editorial="true">kun] hun</note> Hoffets Blikke dulgte,
 Hvad Konst og Tvang kun skiuler kort.
    Henkastet paa en Sofa, skuer
 Vor <b>Eginhart</b> den Skiønne her;
@@ -5666,7 +5636,7 @@ Fra Jorden til Elysium.
   <title>Drømmene</title>
   <firstline>Fortvivlelse! dig helliges min Sang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <source in="bd2" pages="67-72"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5911,7 +5881,7 @@ Du treffer hende, tænkte han,
 Som kyste dig, og bandt dig Krandse!
 Saa kan du der med hende dandse.
 
-Ved <b>Tartarus</b><note>* Nedgangen til de underjordiske Boeliger.</note> han traf <b>Apoll</b>
+Ved <b>Tartarus</b><note>Nedgangen til de underjordiske Boeliger.</note> han traf <b>Apoll</b>
 (Som faa, maaske slet ingen veed).
 "Min Søn! kom ikke længer ned!
 "Du maa gaae frie for Syndsens Sold,
@@ -5925,7 +5895,7 @@ Maae komme der; hvis ei, Papa!
 Jeg bliver heller i det Lave,
 Hvor jeg kan hende hos mig have.
 
-"Nei!” gientog <b>Phoebus</b><note>* Apollos Fornavn.</note>, "ingen kan
+"Nei!” gientog <b>Phoebus</b><note>Apollos Fornavn.</note>, "ingen kan
 "I Himlen sætte mindste Fod,
 "Hvis Puls ei slaaer af Guders Blod.
 "Min Søn! det gaaer umuelig an!
@@ -5942,7 +5912,7 @@ O! du var aldrig gift, min Fader!
 Ak! uden dig, <b>Eurydice!</b>
 Som Gud jeg blev ulykkelig!
 Jeg heller dele vil med dig
-Et Paradiis i Helvede<note>* De Gamles <w>Elysium</w> laae i de underjordiske Boeliger, Hades, eller Helvede.</note>.
+Et Paradiis i Helvede<note>De Gamles <w>Elysium</w> laae i de underjordiske Boeliger, Hades, eller Helvede.</note>.
 Kun, hvor du smiler, er min Himmel,
 Selv midt i <b>Eumeniders</b> Vrimmel.
 
@@ -5955,7 +5925,7 @@ Hvor hun ham kierlig vented’ længe.
 
 "O! hvor den Spillemand var gal!"
 (Saa griner hist en giftet Flok,
-Og hist en Pebersvende-Flok)<note>Udgiverne af Baggesens <i>Danske Værker</i> retter det første ,,Flok'' til ,,Skok'', for at undgå det identiske rim.</note>
+Og hist en Pebersvende-Flok)<note editorial="true">Udgiverne af Baggesens <i>Danske Værker</i> retter det første ,,Flok'' til ,,Skok'', for at undgå det identiske rim.</note>
 "Han havde vist en Perial!
 "Tilsidesætte Guddom, Throne —
 "Den Nar! — og Alt det for en Kone —
@@ -5976,7 +5946,7 @@ De Stakler Aarsag har at grine;
   <subtitle>(Efter Bürger)</subtitle>
   <firstline>Blandine sad hisset, Lenardo stod her</firstline>
   <notes>
-    <note>Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2019080301"/>.</note>
+    <note editorial="true">Gendigtning af Gottfried August Bürger: <xref type="translation" poem="burger2019080301"/>.</note>
   </notes>
   <source in="bd2" pages="84-104"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6055,7 +6025,7 @@ Da mærktes en Aande, saa kielen og varm -
 
 Og førend en Lyd ham fra Læberne foer,
 Det drukned' i heftige Kysse hvert Ord -
-Og førend det hvisked' ham ham hvidt eller sort,<note>ham] ham ham</note>
+Og førend det hvisked' ham ham hvidt eller sort,<note editorial="true">ham] ham ham</note>
 Med bløde smaae Hænder det trakte ham bort.
 
 Det førte ham tyst i letsvævende Fied:
@@ -6749,7 +6719,7 @@ Ogsaa dette Smil engang forsvinder -
   <subtitle>(Efter Horaz.)</subtitle>
   <firstline>Mig, som en Ven af den rolige Muse</firstline>
   <notes>
-    <note>Variation over Horats' <xref type="translation" poem="horats2026010313"/>.</note>
+    <note editorial="true">Variation over Horats' <xref type="translation" poem="horats2026010313"/>.</note>
   </notes>
   <source in="bd2" pages="125-128"/>
   <keywords>wieland</keywords>
@@ -7292,7 +7262,7 @@ Hvis Godhed mig Vivli har givet!
   <subtitle>(Efter Horaz.)</subtitle>
   <firstline>Du seer hvor slemt den kolde Vinter-Gud</firstline>
   <notes>
-    <note>Variation over Horats' <xref type="translation" poem="horats2026010308"/>.</note>
+    <note editorial="true">Variation over Horats' <xref type="translation" poem="horats2026010308"/>.</note>
   </notes>
   <source in="bd2" pages="153-154"/>
   <quality>korrektur1,kilde,side</quality>
@@ -7747,6 +7717,9 @@ Samlet Værd af Phoebi Skatte
   <title>Selskabs-Sang</title>
   <subtitle>paa Kongens Fødselsdag</subtitle>
   <firstline>Lad Herman von Bremerne kives</firstline>
+  <dates>
+    <event>1784-01-29</event>
+  </dates>
   <source in="bd2" pages="175-181"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7840,7 +7813,7 @@ Og vældige Støtter for Thronen,
 Man agted dem skammelig ringe
    De leved' utaalelig slet —
 Ha! Brødre lad Glassene klinge:
-   Nu Bonden dog eengang skeer Ret.<note>* I Aaret 1784 klang dette Vers saaledes: Der er et Slags Folk under Kronen, / Som, skiøndt de er' Christians Børn, / Og Danske, og Støtter for Thronen, / Og Rigets fornemmeste Værn, / Dog agtes forfærdelig ringe; / Og leve (Gud bedre det!) slet. / Ha! Brødre! Lad Glassene klinge: / Gid Bonden dog eengang skee Ret!</note>
+   Nu Bonden dog eengang skeer Ret.<note>I Aaret 1784 klang dette Vers saaledes: Der er et Slags Folk under Kronen, / Som, skiøndt de er' Christians Børn, / Og Danske, og Støtter for Thronen, / Og Rigets fornemmeste Værn, / Dog agtes forfærdelig ringe; / Og leve (Gud bedre det!) slet. / Ha! Brødre! Lad Glassene klinge: / Gid Bonden dog eengang skee Ret!</note>
 
 Nu, Venner! Pocalen os vinker!
    Op! fyld den til fuldeste Maal!
@@ -8016,7 +7989,7 @@ Jeg skyer og frygter, som selve Fanden —
 Al Jordens Elskov er Skum paa Vand;
    Dens Vellyst opveier ei dens Pine —
 Naar eene Dig jeg kun have kan,
-   Tilbedte, himmelske <b>Caroline!</b><note>* I Tranqvebar skal man have et meget got Billard.</note>
+   Tilbedte, himmelske <b>Caroline!</b><note>I Tranqvebar skal man have et meget got Billard.</note>
 Saa har jeg nok, og for andre Smukke
 Jeg ingentid, som en Nar, skal sukke —
         <b>Sio-po-do!</b>
@@ -8027,7 +8000,7 @@ Basiopo, dolski-o-basi
    Op emmebasi o podol skio!
 Lemme basio podolski, lemme,
 Klemme basio podolske, klemme —
-        <b>Ba-sio-po!</b><note>* "Det mesopotamiske Sprog er et underligt Sprog!" Ulysses hos Holberg.</note>
+        <b>Ba-sio-po!</b><note>"Det mesopotamiske Sprog er et underligt Sprog!" Ulysses hos Holberg.</note>
 </poetry>
 </body>
 </text>
@@ -8104,7 +8077,7 @@ Saa mange Gange kyste han sin Pige,
   <subtitle>(Efter Horaz.)</subtitle>
   <firstline>Før, naar jeg henrykt ved dit Bryst</firstline>
   <notes>
-    <note>Variation over Horats' <xref type="translation" poem="horats2026010312"/>.</note>
+    <note editorial="true">Variation over Horats' <xref type="translation" poem="horats2026010312"/>.</note>
   </notes>
   <source in="bd2" pages="194-196"/>
   <quality>korrektur1,kilde,side</quality>
@@ -8471,7 +8444,7 @@ Saa paa Livets glatte Bane gaae
 <poetry>
 "Elsk Dyden!” lød en ukiendt Røst
 Alt tidlig i mit spæde Bryst -
-   "Vær Dyden troe!"<note>"Vær Dyden troe!"] "Vær Dyden troe!</note> saa bød min Fader -
+   "Vær Dyden troe!"<note editorial="true">"Vær Dyden troe!"] "Vær Dyden troe!</note> saa bød min Fader -
 "Følg Dyden!” bød min Lærer mig,
 "Og du skal blive lykkelig,
    "Hvis aldrig du dens Spor forlader!" -
@@ -8582,7 +8555,7 @@ Vort Nords, den beste Verdens, Ende,
 
 Thi vældig, som en finlandsk Torden,
 Og høi, som en Orcan fra Norden,
-   Og stærk, som Salems Flikkers<note>* Jerusalems Skomagers</note> Skiæg,
+   Og stærk, som Salems Flikkers<note>Jerusalems Skomagers</note> Skiæg,
 Hvis Rødder Evigheden trodser
 Med uforgængelige Flodser,
    Skal Sangen lyde Væg til Væg!
@@ -8603,7 +8576,10 @@ I Himlens store Flødekummer,
 
 Man veed af Hamborgs nye Aviser,
 Fra os til hine Paradiser
-   Er nu, desværre! ingen Fart<note>* Man schreibet von Paris, es habe kein Gefahr<br/>Holberg.</note>
+   Er nu, desværre! ingen Fart<note><poetry lang="de">
+Man schreibet von Paris, es habe kein Gefahr
+</poetry>
+Holberg.</note>
 De Smørret altsaa her ei hente,
 Og det var stygt, at ville vente,
    De skulde spise Brødet bart.
@@ -8653,7 +8629,7 @@ Men mon de dog ei giorde bedre,
 </body>
 </text>
 
-<text id="baggesen2019080349">
+<text id="baggesen2019080349" variant="baggesen2002092508">
 <head>
   <title>Jubelsang til Ballademesteren</title>
   <firstline>Til Pindi stiernekronte Top</firstline>

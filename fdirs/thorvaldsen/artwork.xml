@@ -3,6 +3,11 @@
   <picture id="thaarup-oval" subject="thaarup" year="1790 ca.">
     <i>Thomas Thaarup</i>, 1790'erne, blyant og vandfarve, 10,6×8,9 cm. Teatermuseet i Hofteatret.<!-- https://arkivet.thorvaldsensmuseum.dk/personer/thaarup-thomas -->
   </picture>
+  <picture id="1795-thorlacius" src="1795-thorlacius.jpg" subject="thorlacius" year="1795 ca." museum="thorvaldsens" invnr="C882" href="https://kataloget.thorvaldsensmuseum.dk/C882" clip-path="ellipse(31% 33% at 49.5% 51%)">
+    <!-- metadata checked: 2026-11-06 -->
+    <i>Skúli Thórdarson Thorlacius</i>, ca. 1795, akvarel og grafit på karton, 155 × 125 mm.
+    <!-- Kilde: https://kataloget.thorvaldsensmuseum.dk/C882 . Affotografering: Helle Nanny Brendstrup. CC0 ifølge museets billedmærkning og https://kataloget.thorvaldsensmuseum.dk/kolofon/copyright . -->
+  </picture>
   <picture id="1803-jason" year="1803" museum="thorvaldsens" invnr="A822">
     <i>Jason med det gyldne skind</i>, 1803, marmor, 242cm.
     <identifiers>
@@ -57,8 +62,20 @@
   <picture id="1823-gratierne-og-amor" year="1823" museum="thorvaldsens" invnr="A894">
     <i>Gratierne og Amor</i>, 1820-23, marmor, 172,7cm.
   </picture>
-  <picture id="1824-kaerlighedens-aldre" year="1824" museum="thorvaldsens" invnr="A426">
-    <i>Kærlighedens aldre</i>, 1824, marmor, 52 × 148 cm.
+  <picture id="1824-kaerlighedens-aldre" year="1824" museum="thorvaldsens" invnr="A426" href="https://kataloget.thorvaldsensmuseum.dk/A426">
+    <i>Kærlighedens aldre</i>, 1824, marmorrelief, 52 × 148 cm.
+    <!-- Digital gengivelse: Thorvaldsens Museum. Billedets EXIF angiver Public Domain CC0. Billedkilde: https://kataloget.thorvaldsensmuseum.dk/A426 -->
+    <!-- Digtets identifikation: https://arkivet.thorvaldsensmuseum.dk/dokumenter/udskriv/m33,nr.9 -->
+  </picture>
+  <picture id="1827-1833-kristus" year="1827-1833" href="https://kataloget.thorvaldsensmuseum.dk/AX651">
+    <description>
+      <i>Kristus</i>, 1827–1833, marmor, højde 345 cm. Vor Frue Kirke, København.
+    </description>
+    <!-- Identitet, datering og materiale: https://kataloget.thorvaldsensmuseum.dk/AX651. Katalognummer AX651; katalogets inventarnummer er 99. Placeret ved kirkens alter og del af Kristus og de tolv apostle. Skulpturen står i kirken og registreres derfor ikke som tilhørende Thorvaldsens Museums samling. -->
+    <!-- Højde: https://www.folkekirken.dk/om-folkekirken/vaer-med/kultur/10-danske-kirkekunstnere. Bredde og dybde er ikke dokumenteret. Opstillet i foråret 1839: https://arkivet.thorvaldsensmuseum.dk/comment/21871. Intet særskilt Wikidata-id for dette marmoreksemplar er verificeret. -->
+    <!-- Kunstneren er sikkert identificeret som den eksisterende person thorvaldsen i Kalliopes JSONL-personkorpus. Fotograf: Jakob Faurvig / Thorvaldsens Museum. Fotografiet er mærket Public Domain på katalogsiden; museets vilkår angiver CC0: https://kataloget.thorvaldsensmuseum.dk/kolofon/copyright. -->
+    <!-- Originalfil: https://kataloget.thorvaldsensmuseum.dk/media/2205/download/A82.jpg, 5792 × 8688 pixels. Trods filnavnet viser fotografiet kirkens marmorfigur, hvilket er kontrolleret visuelt mod AX651 og dens alterplacering. Nedskaleret til 1200 × 1800 pixels, JPEG-kvalitet 90, uden beskæring eller retouchering. -->
+    <!-- metadata checked: 2026-11-20 -->
   </picture>
   <picture id="1836-amor-med-lyren" year="1836" museum="thorvaldsens" invnr="A33">
     <i>Amor med Lyren</i>, 1836, marmor, 58,6 cm.

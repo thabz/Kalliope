@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bruunse" country="dk" lang="da" type="poet">
+  <!-- Livsdata og fødenavn: Erslew, Almindeligt Forfatter-Lexicon, bd. I (1843), s. 232, https://runeberg.org/almiforf/1/0238.html. S. E. Bruun-attributionen er kontrolleret i Fader Evans Stambogs trykte forfatterregister. -->
+  <name>
+    <firstname>Sophia Elisabeth</firstname>
+    <lastname>Bruun</lastname>
+    <christened>Sophia Elisabeth Thoroup</christened>
+  </name>
+  <period>
+    <born>
+      <date>1752-09-12</date>
+      <place>Thurebyholm</place>
+    </born>
+    <dead>
+      <date>1830</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>BSophiaElisabethBruun</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

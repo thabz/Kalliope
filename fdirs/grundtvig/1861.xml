@@ -37,8 +37,15 @@
 <head>
   <title>Fortale</title>
   <nofirstline/>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091301 -->
+    <note editorial="true">Fortalen nævner kvadene om vølsungerne og niflungerne i <a work="eddadigte/1932">Den ældre Edda</a>.</note>
+  </notes>
   <source pages="V-XII" facsimile-pages="8-15"/>
   <keywords>oehlenschlaeger,fouque</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -79,6 +86,9 @@ Mai 1861.
   <title>Indgang</title>
   <firstline>Alfader raader</firstline>
   <source  pages="3-8"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -292,6 +302,9 @@ En Terne.
   <title>Sigmund Volsung</title>
   <firstline>Hvad svarer Hunding? vil han giøre Blot</firstline>
   <source  pages="11-37"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1207,32 +1220,48 @@ Jeg griber den med Tro og døer.
   <source pages="40"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<b>Sigurd,</b> Søn af Sigmund.<br/>
-<b>Hjordise,</b> hans Moder.<br/>
-<b>Thora,</b> Hakons Datter, en dansk Prindsesse.<br/>
-<b>Brynhild,</b> Datter af Budle Hunekonge.<br/>
-<b>Odrun,</b> hendes Søster.<br/>
-<b>Gjuke,</b> Konge i Frakland.<br/>
-<b>Grimhild,</b> hans Dronning.<br/>
-<b>Gudrun,</b> deres Datter.<br/>
-<b>Gunnar,</b><br/>
-<b>Høgne,</b><br/>
-<b>Guttorm,</b> } deres Sønner.<br/>
-<b>Fofner,</b><br/>
-<b>Regin,</b> } Sønner af en Jotun Hreidmar.<br/>
-<b>Yrpa,</b> Thorgerd Hørgabruds Søster.<br/>
-<b>Herman.</b>
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><b>Sigurd,</b></role> <roleDesc>Søn af Sigmund.</roleDesc></castItem>
+<castItem><role><b>Hjordise,</b></role> <roleDesc>hans Moder.</roleDesc></castItem>
+<castItem><role><b>Thora,</b></role> <roleDesc>Hakons Datter, en dansk Prindsesse.</roleDesc></castItem>
+<castItem><role><b>Brynhild,</b></role> <roleDesc>Datter af Budle Hunekonge.</roleDesc></castItem>
+<castItem><role><b>Odrun,</b></role> <roleDesc>hendes Søster.</roleDesc></castItem>
+<castItem><role><b>Gjuke,</b></role> <roleDesc>Konge i Frakland.</roleDesc></castItem>
+<castItem><role><b>Grimhild,</b></role> <roleDesc>hans Dronning.</roleDesc></castItem>
+<castItem><role><b>Gudrun,</b></role> <roleDesc>deres Datter.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Gunnar,</b></role></castItem>
+<castItem><role><b>Høgne,</b></role></castItem>
+<castItem><role><b>Guttorm,</b></role></castItem>
+<roleDesc>deres Sønner.</roleDesc>
+</castGroup>
+<castGroup rend="braced">
+<castItem><role><b>Fofner,</b></role></castItem>
+<castItem><role><b>Regin,</b></role></castItem>
+<roleDesc>Sønner af en Jotun Hreidmar.</roleDesc>
+</castGroup>
+<castItem><role><b>Yrpa,</b></role> <roleDesc>Thorgerd Hørgabruds Søster.</roleDesc></castItem>
+<castItem><role><b>Herman.</b></role></castItem>
+</castList>
+</front>
 </text>
 
 <text id="grundtvig2026091306">
 <head>
   <title>Sigurd og Brynhild</title>
   <firstline>Hvad vil du mig? du brede Egetop!</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091306 -->
+    <!-- Kilde: https://www.grundtvigsværker.dk/tekstvisning/19648/0 -->
+    <!-- Kilde: https://www.heimskringla.no/wiki/Heltedigte_(FJ_1907) -->
+    <note editorial="true">Se også eddadigtene <xref poem="eddadigte2026112024"/> og <xref poem="eddadigte2026112028"/>.</note>
+  </notes>
   <source pages="41-162"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5264,7 +5293,15 @@ Som aldrig døer og aldrig den fortærer.
 <head>
   <title>Atle og Gjukungerne</title>
   <firstline>Det ganger nær til Midnat, lader nu</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/grundtvig2026091308 -->
+    <!-- Kilde: https://www.heimskringla.no/wiki/Heltedigte_(FJ_1907) -->
+    <note editorial="true">Se også eddadigtene <xref poem="eddadigte2026112033"/> og <xref poem="eddadigte2026112034"/>.</note>
+  </notes>
   <source pages="165-234"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7550,21 +7587,27 @@ At over alle han sig vil forbarme.
   <source in="bd2" pages="2"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<b>Gorm hin Gamle,</b> Leirekonge.<br/>
-<b>Thyra Danebod,</b> hans Dronning.<br/>
-<b>Knud Daneast,</b><br/>
-<b>Harald Blaatand,</b> } deres Sønner.<br/>
-<b>Klakharald,</b> Thyras Fader, Jarl i Holsteen.<br/>
-<b>Unnt,</b> Erkebisp.<br/>
-<b>Gardur,</b> en Sjællandsfar, Islands Opdager.<br/>
-<b>Eiulf,</b> Gorms Fostbroder.<br/>
-<b>Askield,</b><br/>
-<b>Thormod,</b> } Hofgoder.<br/>
-Hirdmænd.
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><b>Gorm hin Gamle,</b></role> <roleDesc>Leirekonge.</roleDesc></castItem>
+<castItem><role><b>Thyra Danebod,</b></role> <roleDesc>hans Dronning.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Knud Daneast,</b></role></castItem>
+<castItem><role><b>Harald Blaatand,</b></role></castItem>
+<roleDesc>deres Sønner.</roleDesc>
+</castGroup>
+<castItem><role><b>Klakharald,</b></role> <roleDesc>Thyras Fader, Jarl i Holsteen.</roleDesc></castItem>
+<castItem><role><b>Unnt,</b></role> <roleDesc>Erkebisp.</roleDesc></castItem>
+<castItem><role><b>Gardur,</b></role> <roleDesc>en Sjællandsfar, Islands Opdager.</roleDesc></castItem>
+<castItem><role><b>Eiulf,</b></role> <roleDesc>Gorms Fostbroder.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Askield,</b></role></castItem>
+<castItem><role><b>Thormod,</b></role></castItem>
+<roleDesc>Hofgoder.</roleDesc>
+</castGroup>
+<castItem type="list"><role>Hirdmænd.</role></castItem>
+</castList>
+</front>
 </text>
 
 <text id="grundtvig2026091321">
@@ -7572,6 +7615,9 @@ Hirdmænd.
   <title>Gorm hin Gamle</title>
   <firstline>Heel lysteligt det er i Alderdommen</firstline>
   <source in="bd2" pages="3-33"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8596,26 +8642,32 @@ Og jeg maa uden Kæmpemærket døe.
   <source in="bd2" pages="36"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
-<body>
-<prose>
-<b>Harald Blaatand,</b> Danekonge.<br/>
-<b>Svend Tveskiæg,</b> hans Søn.<br/>
-<b>Popo,</b> hans Klerk.<br/>
-<b>Palnatoke,</b> Jomsborgs Høvding.<br/>
-<b>Fiolner,</b> hans Farbroder, Haralds Hirdmand.<br/>
-<b>Vagn Aagesøn,</b> hans Sønnesøn.<br/>
-<b>Bue Digre,</b><br/>
-<b>Sigurd Kappe,</b> } Vesets Sønner fra Borgundarholm.<br/>
-<b>Sigvald,</b><br/>
-<b>Thorkil Høvi,</b> } Strutharalds Sønner fra Skaane.<br/>
-<b>Odinkar,</b> Palnatokes Frænde.<br/>
-<b>Gunnar fra Hlidarende,</b> en Islænder.<br/>
-<b>Haralds Sendebud.</b><br/>
-<b>Svends Sendebud.</b><br/>
-<b>En ukiendt Olding.</b><br/>
-Hofgoder.
-</prose>
-</body>
+<front>
+<castList>
+<castItem><role><b>Harald Blaatand,</b></role> <roleDesc>Danekonge.</roleDesc></castItem>
+<castItem><role><b>Svend Tveskiæg,</b></role> <roleDesc>hans Søn.</roleDesc></castItem>
+<castItem><role><b>Popo,</b></role> <roleDesc>hans Klerk.</roleDesc></castItem>
+<castItem><role><b>Palnatoke,</b></role> <roleDesc>Jomsborgs Høvding.</roleDesc></castItem>
+<castItem><role><b>Fiolner,</b></role> <roleDesc>hans Farbroder, Haralds Hirdmand.</roleDesc></castItem>
+<castItem><role><b>Vagn Aagesøn,</b></role> <roleDesc>hans Sønnesøn.</roleDesc></castItem>
+<castGroup rend="braced">
+<castItem><role><b>Bue Digre,</b></role></castItem>
+<castItem><role><b>Sigurd Kappe,</b></role></castItem>
+<roleDesc>Vesets Sønner fra Borgundarholm.</roleDesc>
+</castGroup>
+<castGroup rend="braced">
+<castItem><role><b>Sigvald,</b></role></castItem>
+<castItem><role><b>Thorkil Høvi,</b></role></castItem>
+<roleDesc>Strutharalds Sønner fra Skaane.</roleDesc>
+</castGroup>
+<castItem><role><b>Odinkar,</b></role> <roleDesc>Palnatokes Frænde.</roleDesc></castItem>
+<castItem><role><b>Gunnar fra Hlidarende,</b></role> <roleDesc>en Islænder.</roleDesc></castItem>
+<castItem><role><b>Haralds Sendebud.</b></role></castItem>
+<castItem><role><b>Svends Sendebud.</b></role></castItem>
+<castItem><role><b>En ukiendt Olding.</b></role></castItem>
+<castItem type="list"><role>Hofgoder.</role></castItem>
+</castList>
+</front>
 </text>
 
 <text id="grundtvig2026091323" ignore-tests="repeated-adjacent-word">
@@ -8623,6 +8675,10 @@ Hofgoder.
   <title>Harald Blaatand og Palnatoke</title>
   <firstline>Hvad var vel Jomsborg? Kun et Vikingsbøl</firstline>
   <source in="bd2" pages="37-151"/>
+  <places>
+    <place ref="jelling" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12482,6 +12538,9 @@ Tvende Hofgoder.<br/>
   <title>Vagn Aagesen eller Jomsborgs Undergang</title>
   <firstline>Hvad mener du? er dette Skiold nu blankt?</firstline>
   <source in="bd2" pages="155-196"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

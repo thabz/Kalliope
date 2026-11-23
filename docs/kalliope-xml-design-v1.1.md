@@ -866,6 +866,15 @@ En `translation-of` uden `target` er ikke gyldig publicerings-XML. Et manglende 
 
 ## 8. `<text>` som tekstforekomst
 
+### Sammenhængende indlejrede digte
+
+En tekstforekomst kan også ligge direkte i en anden teksts `<body>`, fx en
+sang i en dramatisk akt. Den bevarer eget ID og tilhører samme publikation.
+Teksten opbevares én gang og kan læses selvstændigt eller i sammenhængen.
+Første implementation omfatter ét sammenhængende digt med én `<poetry>`-blok;
+afbrudte sange og yderligere indlejringsniveauer er ikke understøttet.
+Se `docs/xml-work-format.md` for konteksttypografi, links og indholdsfortegnelse.
+
 ### Nye attributter
 
 Den nuværende `<text>` har allerede valgfri `id` og `author`. Der tilføjes:

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museums>
+  <museum id="klassik-weimar">
+    <name>Klassik Stiftung Weimar, Museen</name>
+    <country>de</country>
+    <link>https://www.klassik-stiftung.de/</link>
+  </museum>
+  <museum id="aros">
+    <name>ARoS Aarhus Kunstmuseum</name>
+    <country>dk</country>
+    <link>https://www.aros.dk/</link>
+  </museum>
+  <museum id="bakkehuset">
+    <name>Bakkehusmuseet</name>
+    <country>dk</country>
+    <link>https://frederiksbergmuseerne.dk/da/bakkehuset/</link>
+  </museum>
   <museum id="hirschsprungske">
     <name>Den Hirschsprungske Samling</name>
     <sort-name>Hirschsprungske Samling, Den</sort-name>
@@ -655,5 +670,15 @@
     <country>it</country>
     <link>https://gallerieditalia.com/it/</link>
     <deep-link>https://gallerieditalia.com/it/musei-online/opere/${objId}/</deep-link>
+  </museum>
+  <museum id="soro">
+    <name>Sorø Kunstmuseum</name>
+    <country>dk</country>
+    <link>https://sorokunstmuseum.dk/</link>
+  </museum>
+  <museum id="romu">
+    <name>ROMU</name>
+    <country>dk</country>
+    <link>https://romu.dk/</link>
   </museum>
 </museums>

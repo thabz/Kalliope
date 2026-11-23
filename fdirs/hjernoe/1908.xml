@@ -2371,6 +2371,9 @@ for Dig, den kronede Mester!
   <title>Hilsen til Digternes Digter</title>
   <subtitle>(Til Holger Drachmann ved hans 60-aarige Fødselsdag.)</subtitle>
   <firstline>Vær hilset fra Skoven herude</firstline>
+  <dates>
+    <event>1906-10-09</event>
+  </dates>
   <source pages="85"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2397,6 +2400,9 @@ som findes herude i Skovensomheden —
   <subtitle>(da det blev mig fortalt, at han var død.)</subtitle>
   <firstline>Jeg gik under Stjernerne ud —</firstline>
   <source pages="86-87"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

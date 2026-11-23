@@ -493,7 +493,7 @@ forjættelsesrige Stund!
   <title>Sejrs-Bud</title>
   <firstline>Den havde svunget hvasse Sværd</firstline>
   <notes>
-    <note>* Skrevet i Foraaret 1872.</note>
+    <note>Skrevet i Foraaret 1872.</note>
   </notes>
   <source pages="14-20"/>
   <quality>korrektur1,kilde,side</quality>
@@ -974,6 +974,13 @@ hen at see ham, før jeg døer!
   <subtitle>Et bibelsk Heltedigt i ni Sange</subtitle>
   <firstline>Fjenden er i Landet. Assur vælter</firstline>
   <source pages="29-63"/>
+  <places>
+    <place ref="judean-mountains" relation="setting"/>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+    <place ref="tigris" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2125,6 +2132,10 @@ og hvad selv Du gav, - tag det i Gave!
   <title>Peters Befrielse</title>
   <firstline>I Fangelænker Peter laa</firstline>
   <source pages="65-70"/>
+  <places>
+    <place ref="judean-mountains" relation="setting"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2393,6 +2404,11 @@ lær os elske, lær os lide!
   <subtitle>Blade af Constantinopels Krønike</subtitle>
   <firstline>Bosporos, skjønne</firstline>
   <source pages="73-91"/>
+  <places>
+    <place ref="judean-mountains" relation="mentioned"/>
+    <place ref="kidron-valley" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3613,10 +3629,13 @@ der vil komme dog en Pintse!
   <title>Til Overvejelse</title>
   <firstline>Dreng! stig op paa Klippetinden</firstline>
   <notes>
-    <note>* Skrevet i Høsten 1877; meddelt i »Fædrelandet« iste November.</note>
-    <note>Mottoet stammer fra <xref bible="bibel2mose32,6"/>.</note>
+    <note>Skrevet i Høsten 1877; meddelt i »Fædrelandet« iste November.</note>
+    <note editorial="true">Mottoet stammer fra <xref bible="bibel2mose32,6"/>.</note>
   </notes>
   <source pages="111-118"/>
+  <places>
+    <place ref="sharon-plain" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4026,7 +4045,7 @@ blev vi her med Lyst!
 <i>Alfvesta</i>, et heelt Kvarteer!
 Her er Smørrebrød med meer, -
 kan De skaffe os lidt Kaffe?
-Tyve Øre - se saa der!<note>saa] så</note>
+Tyve Øre - se saa der!<note editorial="true">saa] så</note>
 Hvor vi nu tog paa med Et!
 hvor vor Hest maa være svedt,
 som den render, som den brænder,
@@ -4217,6 +4236,9 @@ min Gud, da var Du dér!«
     <event>1875-06-07</event>
   </dates>
   <source pages="129-130"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4960,6 +4982,9 @@ hvor hans Frelste paaskeglædes!
   <firstline>Ak, hvor Sangens Trækfuglskare har forladt os inden kort</firstline>
   <source pages="150-151"/>
   <keywords>mueller</keywords>
+  <places>
+    <place ref="lake-esrum" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5229,6 +5254,9 @@ helst i Skygge Dagen lang!
   <title><num>I.</num>Nisse-Frieri</title>
   <firstline>Far Niss, Far Niss! her ligger jeg</firstline>
   <source pages="158-160"/>
+  <places>
+    <place ref="jelling" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5445,7 +5473,7 @@ og saadan slap vor Padre af sin Klemme.
   <title><num>IV.</num>Naar jeg bli'r stor</title>
   <firstline>Naar jeg bli'r stor</firstline>
   <notes>
-    <note type="credits">Bidrag fra Thomas Richardt.<!-- Oprindeligt efter <i>Digte for Børn</i> (1895), Gyldendalske Boghandel, 1908.--></note>
+    <note editorial="true" type="credits">Bidrag fra Thomas Richardt.<!-- Oprindeligt efter <i>Digte for Børn</i> (1895), Gyldendalske Boghandel, 1908.--></note>
   </notes>
   <source pages="164-165"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6104,6 +6132,9 @@ med den, Sankt Stefans Øje saae!
     <event>1877-11-21</event>
   </dates>
   <source pages="183-184"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6606,6 +6637,9 @@ den lukker op for Naaden.
   <linktitle>Asenindens Føl</linktitle>
   <firstline>De flokkedes omkring Ham</firstline>
   <source pages="197-199"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6904,7 +6938,7 @@ Han har mod Lyset os Vej bered', -
   <title>Præstevalget</title>
   <firstline>I sin Løvhytte sidder den gamle Præst</firstline>
   <notes>
-    <note>* Digtets Motiv er en kirkehistorisk Anekdote om den Würtembergske Psalmedigter F. F. Hiller († 1769). Sagnet er frit omdigtet.</note>
+    <note>Digtets Motiv er en kirkehistorisk Anekdote om den Würtembergske Psalmedigter F. F. Hiller († 1769). Sagnet er frit omdigtet.</note>
   </notes>
   <source pages="205-218"/>
   <quality>korrektur1,kilde,side</quality>
@@ -7375,7 +7409,7 @@ for nu er Vintren død, død.
   <subtitle>Aar 1510.</subtitle>
   <firstline>For Mariekirkens Alter</firstline>
   <notes>
-    <note>* For Digtningen ligger ingen historisk Efterretning til Grund, - men vel en historisk Mulighed.</note>
+    <note>For Digtningen ligger ingen historisk Efterretning til Grund, - men vel en historisk Mulighed.</note>
   </notes>
   <source pages="220-239"/>
   <quality>korrektur1,kilde,side</quality>
@@ -8132,6 +8166,9 @@ graaner af Ælde, men gjemmer Vaar!
   </dates>
   <source pages="244-245"/>
   <keywords>oersted</keywords>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8324,6 +8361,9 @@ Og, synes stundum Svar mod Svar at glamme,
   <title>Theologien</title>
   <firstline>Det Ord, hun hørte bag Judæas Ranker</firstline>
   <source pages="250"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -8653,6 +8693,9 @@ en sagnrig Oldtid fast til Nutid binder.
   <title>Ved Indvielsen af Fredericias nye Skolebygning</title>
   <subtitle>28. September 1880.</subtitle>
   <firstline>Hil Dig vor gamle Skole</firstline>
+  <dates>
+    <event>1880-09-28</event>
+  </dates>
   <source pages="258-259"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8868,6 +8911,9 @@ tro mod det Banner, han hylded som Svend.
   <firstline>En Sangspildigter - bort til Præste-Pligter!</firstline>
   <source pages="264-266"/>
   <keywords>hostrup</keywords>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9488,6 +9534,9 @@ kjender kun af Vintren Hvilen,
   <title>Matthæus</title>
   <firstline>Hvor Bjerg og Bølge knyttes</firstline>
   <source pages="282-283"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10398,6 +10447,11 @@ seet Nedgangs-Timen sammen!
   <title>Herodes' Død</title>
   <firstline>Om Jericho de sidste Straaler sank</firstline>
   <source pages="308-311"/>
+  <places>
+    <place ref="jericho" relation="setting"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11993,6 +12047,9 @@ Guds Salvede! Guds Søn!
   <title>Derfor!</title>
   <firstline>Vor Tro, den er vor Fortids Arv</firstline>
   <source pages="356-357"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -12453,6 +12510,9 @@ det var jo <i>det</i>, som Sæden skulde.
   <title>Under fremmed Navn</title>
   <firstline>Da Himlen og sin Faders Favn</firstline>
   <source pages="367-368"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -13123,11 +13183,11 @@ aldrig Du standse din fribaarne Flugt!
 <nonum><center><i>Efterskrift.</i></center></nonum>
 
 Vingede Ørn med dit »<i>adspicit lucem!</i>«
-Du som har baaret et <i>ducem et fucem</i><note>* Interpretationes. Dux og Fux.</note>
+Du som har baaret et <i>ducem et fucem</i><note>Interpretationes. Dux og Fux.</note>
 (kjære Geheimraad, see det var Latin!) -
 Dig vil vi takke ved funklende Vin!
 Hjælp vore Sønner at knække hver <i>nucem</i>,
-slaas for det Ægte mod alleslags <i>jucem</i><note>* Jux.</note>
+slaas for det Ægte mod alleslags <i>jucem</i><note>Jux.</note>
 vrage det Falske med aandelig Sans -
 »<i>Adspicit lucem!</i>« det straale med Glans!
 </poetry>
@@ -13307,9 +13367,11 @@ Fortjenesten gik reent i Vasken!
   <title><num>II.</num>Tiggeri</title>
   <subtitle>(Til en Skizze af C. Bloch.)</subtitle>
   <firstline>Tommaso har idag havt med sig Lykken</firstline>
+  <pictures>
+    <picture artwork="bloch/dreng-med-macaroni"/>
+  </pictures>
   <source pages="391-392"/>
   <quality>korrektur1,kilde,side</quality>
-  <!-- TODO: Find skitsen. -->
 </head>
 <body>
 <poetry>
@@ -13359,9 +13421,11 @@ det Blik er altfor u-uimodstaaeligt!
   <title><num>III.</num>Dørvogteren</title>
   <subtitle>(Til et Billede af Bloch.)</subtitle>
   <firstline>Hans! Deres Naade! Lad Bob faae sin Mad</firstline>
+  <pictures>
+    <picture artwork="bloch/en-doervogter"/>
+  </pictures>
   <source pages="392-393"/>
   <quality>korrektur1,kilde,side</quality>
-  <!-- TODO: Find skitsen. -->
 </head>
 <body>
 <poetry>

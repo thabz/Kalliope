@@ -13,7 +13,7 @@ import {
   safeGetAttr,
   safeGetOuterXML,
 } from './xml.js';
-import { sourceWorkFilename } from './work-cache.js';
+import { sourceFilesForText, sourceWorkFilename } from './work-cache.js';
 
 const textRefTagRegexp = /<(?:xref|a)\b[^>]*(?:\bpoem|\bbible)="[^"]*"[^>]*>/g;
 
@@ -53,6 +53,14 @@ const collectTextRefs = refsByFile => {
 const refsEqual = (left, right) =>
   JSON.stringify(left || { mention: [], translation: [] }) ===
   JSON.stringify(right || { mention: [], translation: [] });
+
+const referenceSourceFilesForText = (textId, collected) => {
+  const refs = collected.textrefs.get(textId) ?? {};
+  const ids = Array.isArray(refs)
+    ? refs
+    : [...(refs.mention ?? []), ...(refs.translation ?? [])];
+  return [...new Set(ids.flatMap(id => sourceFilesForText(collected.texts.get(id))))];
+};
 
 const markChangedTextRefDestinationsDirty = (
   previousTextrefs,
@@ -107,11 +115,19 @@ const build_textrefs = collected => {
         .forEach(text => {
           const head = getChildByTagName(text, 'head');
           const body = getChildByTagName(text, 'body');
+          const front = getChildByTagName(text, 'front');
           const notes = [
             ...getElementsByTagNames(head, ['note']),
+            ...getElementsByTagNames(front, ['note', 'footnote']),
             ...getElementsByTagNames(body, ['note', 'footnote']),
           ];
-          notes.forEach(note => {
+          notes.filter(note => {
+            let owner = note.parentNode;
+            while (owner != null && ['text', 'section'].includes(owner.nodeName) === false) {
+              owner = owner.parentNode;
+            }
+            return owner === text;
+          }).forEach(note => {
             extractTextRefs(safeGetOuterXML(note)).forEach(ref => {
               const fromId = safeGetAttr(text, 'id');
               fileRefs.push({
@@ -155,4 +171,5 @@ export {
   extractTextRefs,
   markChangedTextRefDestinationsDirty,
   mark_ref_destinations_dirty,
+  referenceSourceFilesForText,
 };

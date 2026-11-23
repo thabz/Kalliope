@@ -7,9 +7,18 @@
     <picture type="titlepage" src="1907-p1.jpg"><transcription>Thøger Larsen / Det Fjerne / Digte // Gyldendalske Boghandel / Nordisk Forlag / MDCCCCVII</transcription></picture>
   </pictures>
   <notes>
-    <note>Bidrag fra Henrik Nielsen.</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen.</note>
   </notes>
-  <source facsimile="115308074978_color" facsimile-pages-num="76" facsimile-pages-offset="4">Thøger Larsen: <i>Det Fjerne</i>, Gyldendalske Boghandel, Kbh., 1905.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122935163405763" facsimile="115308074978_color" facsimile-pages-num="74" facsimile-pages-offset="4">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Det Fjerne</title>
+    <place>København</place>
+    <publisher>Gyldendalske Boghandel – Nordisk Forlag</publisher>
+    <year>1907</year>
+    <identifiers>
+      <kb-alma>99122935163405763</kb-alma>
+    </identifiers>
+  </source>
 </workhead>
 <workbody>
 
@@ -18,6 +27,9 @@
   <title>Drift</title>
   <firstline>Jord, min Moder, Jord, min Moder</firstline>
   <source pages="9-11"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -886,7 +898,7 @@ spejlet i Søer og Bække.
   <title>Walther von der Vogelweide</title>
   <firstline>O Walther i de dødes Land!</firstline>
   <notes>
-    <note><a person="vogelweide">Walther von der Vogelweide</a> (ca. 1165-1230) var en kendt tysk <i>minnesänger</i>.</note>
+    <note editorial="true"><a person="vogelweide">Walther von der Vogelweide</a> (ca. 1165-1230) var en kendt tysk <i>minnesänger</i>.</note>
   </notes>
   <source pages="51-53"/>
   <keywords>knittelvers</keywords>

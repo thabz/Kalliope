@@ -107,6 +107,9 @@ fjærnt som nu i langsom Gustnen døde.
   <title>Nocturne II</title>
   <firstline>Det var en dejlig Sommernat</firstline>
   <source pages="6-14"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1724,6 +1727,9 @@ saa faar du nye Sko med Spænder
   <title>Ode til den hvide Kritik</title>
   <firstline>Hvert Land har sit ottende Underværk</firstline>
   <source pages="92-94"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2105,6 +2111,10 @@ du har jo kun lagt dig i Vinterkvarter.
   <firstline>Saa sad jeg da paany i det forhadte</firstline>
   <source pages="112-133"/>
   <keywords>brandes</keywords>
+  <places>
+    <place ref="zion" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2468,7 +2478,7 @@ den Slægt, hvis Fødder staa paa Fremtidsmaalets Vej.
   <subtitle>Fru Amalie Fibiger, f. Waage, d. 6te April 1880</subtitle>
   <firstline>Mangen Gang, naar paa Foraarets Tærskel April</firstline>
   <notes>
-    <note>Karl Gjellerup voksede op hos Amalie og <a poet="fibiger">Johannes Fibiger</a>.</note>
+    <note editorial="true">Karl Gjellerup voksede op hos Amalie og <a poet="fibiger">Johannes Fibiger</a>.</note>
   </notes>
   <source pages="134-138"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2951,6 +2961,9 @@ hans Kvinder kredensed ham Vinen sød,
   <subtitle>Musik-Text</subtitle>
   <firstline>Solen slukkes, Stjærnen anes</firstline>
   <source pages="161-168"/>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2967,7 +2980,7 @@ ved Tapsus, hvor ved Afskeden Blod for Taarer flød; —
 det stunder mod det sidste, det evige »God Nat!«
 
 »Vor Sag er tabt, vi stanse ej Skæbnens tunge Hjul,
-min Frihed søger ej hos Tyrannens Mildhed Skjul;<note>Skjul] Skju l</note>
+min Frihed søger ej hos Tyrannens Mildhed Skjul;<note editorial="true">Skjul] Skju l</note>
 de sejrrige Vaaben var Guder til Behag,
 men Cato behager den besejrede Sag.
 Med den vil jeg hvile af Kamp og Modgang træt,
@@ -3793,6 +3806,9 @@ men Jorden for mig, til jeg frygtløs dør.
   <subtitle>Paaske 1880</subtitle>
   <firstline>Jeg gik paany i dit Hus at staa</firstline>
   <source pages="204-209"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3910,7 +3926,7 @@ ej Blod af en Gud —
   <title>Tubal-Kain</title>
   <firstline>Det var den Døgnets Time just, i hvilken</firstline>
   <notes>
-    <note>Cf. <xref bible="bibel1mose04,22" /></note>
+    <note editorial="true">Cf. <xref bible="bibel1mose04,22" /></note>
   </notes>
   <source pages="210-238"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4370,7 +4386,7 @@ dybt i den bløde Sandjord havde sat.
   <title>Benedicta</title>
   <firstline>I drømmende Længsler, I spejdende Haab</firstline>
   <notes>
-    <note>Mottoet er den katolske ,,Ave Maria'' bøn, cf. <xref bible="bibellukas01,28"/>.</note>
+    <note editorial="true">Mottoet er den katolske ,,Ave Maria'' bøn, cf. <xref bible="bibellukas01,28"/>.</note>
   </notes>
   <source pages="239-251"/>
   <quality>korrektur1,kilde,side</quality>
@@ -4566,6 +4582,9 @@ hil være dig, Naaderige! velsignet blandt Kvinder paa Jord.
   <title>Tidens Røster</title>
   <firstline>En Røst fra Taagerne til Lysets Hær</firstline>
   <source pages="252-260"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -18,6 +18,7 @@ import {
 import { poetName } from './formatting.js';
 import { imageSizeSync } from './image.js';
 import { mapLimit } from './concurrency.js';
+import { escapeXml, parseSourceBibliography } from './source.js';
 
 const publicPathFromSrc = src => `public${src}`;
 
@@ -68,10 +69,10 @@ const validate_picture_attrs = (pictureNode, onError) => {
 const get_local_picture_content = (pictureNode) => {
   if (getChildByTagName(pictureNode, 'description') != null) {
     return {
-      description: safeGetInnerXML(
+      description: safeTrim(safeGetInnerXML(
         getChildByTagName(pictureNode, 'description')
-      ),
-      note: safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note')),
+      )),
+      note: safeTrim(safeGetInnerXML(getChildByTagName(pictureNode, 'picture-note'))),
     };
   }
   return {
@@ -103,8 +104,8 @@ const get_artwork_picture = async (
     artist,
     lang: artwork.lang,
     src: artwork.src,
-    year,
-    clipPath,
+    year: year ?? artwork.year,
+    clipPath: clipPath ?? artwork.clipPath,
     size: await imageSizeSync(publicPathFromSrc(artwork.src)),
     remoteUrl: artwork.remoteUrl,
     museum: artwork.museum,
@@ -152,7 +153,7 @@ const extractTitle = (head, type) => {
   if (title == null || title.trim().length === 0) {
     return null;
   }
-  const parts = title.match(/<num>([^<]*)<\/num>(.*)$/);
+  const parts = title.match(/<num>([^<]*)<\/num>(.*)$/s);
   if (parts != null && parts[1].trim().length > 0) {
     return {
       prefix: parts[1],
@@ -161,7 +162,7 @@ const extractTitle = (head, type) => {
   } else if (parts != null) {
     return { title: parts[2] };
   }
-  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/);
+  const emptyNum = title.match(/<num\s*\/>\s*(.*)$/s);
   if (emptyNum != null) {
     return { title: emptyNum[1] };
   } else {
@@ -199,7 +200,7 @@ const titleText = title => {
 };
 
 const countHeadingFootnotes = head =>
-  ['title', 'subtitle'].reduce((count, tag) => {
+  ['titleblock', 'title', 'subtitle'].reduce((count, tag) => {
     const heading = getChildByTagName(head, tag);
     return count + getElementsByTagName(heading, 'footnote').length;
   }, 0);
@@ -259,7 +260,7 @@ const get_picture = async (pictureNode, srcPrefix, collected, onError) => {
       remoteUrl,
       museum: collected.museums.get(museumId),
       content_lang: 'da',
-      content_html: htmlToXml(description, collected),
+      content_html: htmlToXml(description, collected, false, { blockType: 'picture' }),
       note_html: htmlToXml(note, collected),
       transcription,
       identifiers,
@@ -299,10 +300,7 @@ const getNoteType = note => {
 // context contains keys for any `${var}` that's to be replaced in the note texts.
 const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
   const notes = getChildByTagName(head, 'notes');
-  if (notes == null) {
-    return [];
-  }
-  return getChildrenByTagName(notes, 'note').map(note => {
+  const resultNotes = (getChildrenByTagName(notes, 'note') ?? []).map(note => {
     const lang = safeGetAttr(note, 'lang') || 'da';
     const type = getNoteType(note);
     const unknownOriginalByPoetId = safeGetAttr(note, 'unknown-original-by');
@@ -321,12 +319,31 @@ const get_notes = (head, collected, context = {}, fragmentContext = {}) => {
         { ...fragmentContext, blockType: 'note' },
       ),
     };
+    if (safeGetAttr(note, 'editorial') === 'true') {
+      result.editorial = true;
+    }
     if (unknownOriginalByPoetId != null) {
       result.type = 'unknown-original';
       result.unknownOriginalBy = collected.poets.get(unknownOriginalByPoetId);
     }
     return result;
   });
+  if (head?.tagName === 'workhead') {
+    const pseudonyms = new Set(getChildrenByTagName(head, 'source').flatMap(source =>
+      (parseSourceBibliography(source)?.authors ?? [])
+        .filter(author => author.realname != null)
+        .map(author => author.name)
+    ));
+    for (const pseudonym of pseudonyms) {
+      resultNotes.push({
+        type: null,
+        editorial: true,
+        content_lang: 'da',
+        content_html: htmlToXml(`Udgivet under pseudonymet ${escapeXml(pseudonym)}.`, collected),
+      });
+    }
+  }
+  return resultNotes;
 };
 
 const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
@@ -367,4 +384,18 @@ export {
   get_picture,
   get_local_picture_content,
   validate_picture_attrs,
+};
+
+export const extractTitleBlock = (head, collected, context = {}) => {
+  const block = getElementByTagName(head, 'titleblock');
+  if (block == null) return null;
+  return getElementsByTagName(block, 'part').map(part => ({
+    type: part.getAttribute('type'),
+    align: part.getAttribute('align') ?? 'left',
+    size: part.getAttribute('size') ?? 'normal',
+    blocks: Array.from(part.childNodes).filter(node => node.nodeType === 1).map(node => ({
+      type: node.nodeName,
+      content: htmlToXml(safeGetInnerXML(node), collected, node.nodeName === 'line', context),
+    })),
+  }));
 };

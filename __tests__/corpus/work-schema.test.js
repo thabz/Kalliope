@@ -21,11 +21,41 @@ describe('kalliopework RELAX NG schema', () => {
 
   const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
 
+  it('accepts physical page counting and an explicit correction to a printed page number', () => {
+    expect(() => validate(sourceWork('<pagebreaks count-by="facsimile"/>'))).not.toThrow();
+    expect(() => validate(poetryWork('Ord<pb n="101" corrected-n="201" facs="253.jpg"/>ord'))).not.toThrow();
+    expect(() => validate(sourceWork('<source pages="610-613" first-n="630" facsimile-pages="663-666"/>'))).not.toThrow();
+  });
+
+  it('rejects unsupported page counting modes and non-positive corrected page numbers', () => {
+    expect(() => validate(sourceWork('<pagebreaks count-by="unknown"/>'))).toThrow();
+    for (const value of ['0', '-1', '201.5', 'abc']) {
+      expect(() => validate(poetryWork(`<pb n="101" corrected-n="${value}" facs="253.jpg"/>Ord`))).toThrow();
+    }
+  });
+
   it('accepts a positive sort-order and rejects non-positive values', () => {
     expect(() => validate(sourceWork('').replace('<kalliopework ', '<kalliopework sort-order="10" '))).not.toThrow();
     for (const value of ['0', '-1', '1.5', 'abc']) {
       expect(() => validate(sourceWork('').replace('<kalliopework ', `<kalliopework sort-order="${value}" `))).toThrow();
     }
+  });
+
+  it('accepts catalogue identifiers with independent qualifiers and repeated types', () => {
+    const xml = poetryWork('Vers').replace('<head>', '<head><identifiers>' +
+      '<dgf-id variant="B" witness="b">5</dgf-id>' +
+      '<dv-id>59</dv-id><dgf-id appendix="c">149</dgf-id>' +
+      '<dgf-id witness="b">8</dgf-id><wikidata>Q123</wikidata></identifiers>');
+    expect(() => validate(xml)).not.toThrow();
+  });
+
+  it.each([
+    '<dgf-id>0</dgf-id>', '<dgf-id>01</dgf-id>', '<dv-id>-1</dv-id>',
+    '<dv-id>1.5</dv-id>', '<dgf-id>DgF 5</dgf-id>', '<dgf-id> 5</dgf-id>',
+    '<dgf-id/>', '<dgf-id variant="">5</dgf-id>', '<dgf-id appendix=" ">5</dgf-id>',
+    '<dgf-id bogus="B">5</dgf-id>', '<isbn>1</isbn>',
+  ])('rejects malformed text identifiers: %s', identifier => {
+    expect(() => validate(poetryWork('Vers').replace('<head>', `<head><identifiers>${identifier}</identifiers>`))).toThrow();
   });
 
   it('accepts documented quotation margins', () => {
@@ -34,9 +64,22 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
+  it('rejects obsolete overline markup', () => {
+    expect(() => validate(poetryWork('h<o>a</o>ns'))).toThrow();
+  });
+
+  it.each(['poetry', 'prose'])('accepts a historical fraction date in %s and nested emphasis', block => {
+    const xml = poetryWork(
+      'Brev af <sup>4</sup>/<sub>12</sub> 1861, <i><sup>4</sup>/<sub>12</sub></i>.',
+    ).replace('<poetry>', `<${block}>`).replace('</poetry>', `</${block}>`);
+    expect(() => validate(xml)).not.toThrow();
+  });
+
   it('validates structured sources, repeated people and legacy sources', () => {
     for (const source of [
       '<source><title>Digte</title></source>',
+      '<source><author realname="Navn">Pseudonym</author><title>Digte</title></source>',
+      '<source><author id="digter" realname="Navn">Pseudonym</author><title>Digte</title></source>',
       '<source><title>Antologi</title><editor type="editor">A</editor><editor>B</editor></source>',
       '<source><author id="digter">Navn</author><editor>A</editor><title>Digte</title><editor id="anden">B</editor><translator>C</translator><edition>2. udgave</edition><volume>1</volume><place>København</place><publisher>Forlag</publisher><printer>Trykkeri</printer><year>[1900]</year><identifiers><kb-alma>123</kb-alma></identifiers></source>',
       '<source>Fritekst <i>titel</i>.</source>', '<source pages="1-2"/>',
@@ -46,6 +89,10 @@ describe('kalliopework RELAX NG schema', () => {
   it.each([
     '<source><title/></source>', '<source><title>  </title></source>',
     '<source><editor>A</editor></source>',
+    '<source><author realname="">Pseudonym</author><title>Digte</title></source>',
+    '<source><author realname="   ">Pseudonym</author><title>Digte</title></source>',
+    '<source><editor realname="Navn">Pseudonym</editor><title>Digte</title></source>',
+    '<source><translator realname="Navn">Pseudonym</translator><title>Digte</title></source>',
     '<source>Fritekst<title>Digte</title></source>',
     '<source><title>Digte</title><year/></source>',
     '<source><title>Digte</title><title>Digte</title></source>',

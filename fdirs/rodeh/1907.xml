@@ -4,7 +4,7 @@
   <title>Digte - gamle og nye</title>
   <year>1907</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1907-p1.jpg">Titelbladet til <i>Digte - gamle og nye</i> (1907) lyder ,,''.</picture>
@@ -1585,6 +1585,9 @@ om en Blomsterskov, en Liljeregn, som glimrer af Dug.
   <title>Sydens og Nordens Sommer</title>
   <firstline>Søster siger Sydens Sommer</firstline>
   <source pages="79-81"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1757,6 +1760,9 @@ smaa, blanke, døde Fiske ind paa Stranden.
   <title>Gule Roser paa Fiesole</title>
   <firstline>Et Vildnis fuldt af Roser</firstline>
   <source pages="85-86"/>
+  <places>
+    <place ref="fiesole" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1836,7 +1842,7 @@ om en solgylden Vin.
 
 I Venezia findes det Vidunderglas
 med en Guldperleglans, der er bristende mild;
-thi af<note>af] al</note> Skønhed fra Plads og Kanal og Palads
+thi af<note editorial="true">af] al</note> Skønhed fra Plads og Kanal og Palads
 har en Kunstner indaandet og skabt dette Spil.
 I en Skal af Krystal
 blusser levende Ild.

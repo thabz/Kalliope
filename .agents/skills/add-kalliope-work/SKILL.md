@@ -51,6 +51,17 @@ audit. Gå til konkrete XML-filer, når kilde-XML eller sammenlignelig markup er
 nødvendig. Dokumentation og validering har forrang for tilfældig ældre praksis.
 Opfind ikke et nyt format, når repositoryet allerede har en etableret løsning.
 
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
+
 ## 2. Indsæt og kontrollér værket
 
 Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
@@ -64,6 +75,15 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   blanklinjer, hvor trykket viser ekstra lodret afstand. OCR-opdelingen må ikke
   styre strukturen; se `docs/xml-work-format.md` og
   `docs/facsimile-korrektur.md`;
+- adskil altid digtets afsluttende forfatter- eller oversættersignatur fra
+  teksten med én blank XML-linje. Ved flerlinjede signaturer sættes blanklinjen
+  før hele signaturblokken; behold linjerne i blokken samlet og bevar
+  signaturens placering og typografi. Kontrollér også centrerede signaturer
+  og signaturer uden `<right>`;
+- markér Kalliopes egne redaktionelle noter og fodnoter med `editorial="true"`,
+  også forlægsangivelser og oversættelseshenvisninger. Attributten kombineres
+  med en eventuel `type`; tilføj den ikke til kildens trykte noter eller ved
+  ukendt ophav. Se `docs/xml-work-format.md`;
 - opret eller opdatér værkmetadata og nødvendige personmetadata;
 - kontrollér titel, forfatter, udgivelsesår, forlag eller trykkested, bind og
   andre bibliografiske oplysninger mod kilden;
@@ -73,6 +93,11 @@ Tilpas arbejdet til kilden og værktypen, men gennemfør alt relevant arbejde:
   anvendte digitalisering eller det anvendte facsimile;
 - kontrollér alle interne referencer og id'er, herunder varianter, personer,
   kilder og billeder;
+- tilføj relevante personnøgleord i tekstens `<keywords>`, når teksten har en
+  dokumenterbar relation til andre digtere eller personer, som allerede findes
+  i Kalliope. Slå deres eksisterende person-id op. Gentag ikke personer, der
+  allerede er linket i tekstens noter, og opret ikke nye personer som led i
+  nøgleordsregistreringen. Følg `docs/keyword-system.md`;
 - kør den værkafgrænsede variantkontrol nedenfor og gennemgå kandidaterne;
 - formatér og validér med repositoryets aktuelle værktøjer;
 - kør hele testpakken før PR-oprettelse, som krævet af `AGENTS.md`;
@@ -102,6 +127,19 @@ en afsluttet variantkontrol. Gentag kontrollen efter ændringer i førstelinjer
 eller forfatterangivelser. Kør kun for værket under arbejde, ikke globalt for
 korpusset. Eksisterende tekster må ikke bruges som grundlag for at kopiere
 transskriptionen fra en anden udgave.
+
+### Redaktionelle noter og PR-overlevering
+
+Tilføj kun redaktionelle noter, når de bidrager med relevant information for
+læseren. Noter, der kan stå som en del af overleveringen i PR'en, skal stå i
+PR-beskrivelsen og må ikke skrives som noter i værkerne. Det gælder fx
+arbejdsstatus, indlæsningsomfang, manglende tekstkontrol og opgaver til senere.
+
+Når en kildebekræftet særhed håndteres med `ignore-tests`, må der ikke
+tilføjes en læserrettet note om, at trykkets ordlyd eller gentagelse er
+bevaret. Det gælder fx »Trykkets gentagne ‘De de’ er bevaret«.
+Testundtagelsen hører til i XML-attributten; en eventuel begrundelse hører
+til i PR-overleveringen eller en XML-kommentar.
 
 ## 3. Håndtér tvivl eksplicit
 
@@ -160,3 +198,19 @@ udført, det resterende menneskelige arbejde er konkret, lokaliseret og
 overskueligt, og alle krævede CI-checks er grønne. PR-beskrivelsen skal inden
 for få sekunder vise, hvad der er indsat, kilden, hvad Agent har kontrolleret,
 hvad der mangler, hvor brugeren skal kigge, og hvilke usikkerheder der findes.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker efter
+[person-skillens værkregistrering](../add-kalliope-person/references/works.md)
+mod et opdateret JSONL-korpus. Rapporten køres samlet for PR'en og ikke efter
+hvert build.
+
+## Billeder
+
+Når opgaven omfatter kunstbilleder, illustrationer eller kunstneriske forsider,
+brug [fælles billedarbejde](../add-kalliope-picture/SKILL.md)
+(`$add-kalliope-picture`). Titelbladsbehandling følger fortsat
+`$prepare-kalliope-titlepage`.

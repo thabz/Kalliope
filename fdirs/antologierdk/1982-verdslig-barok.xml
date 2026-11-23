@@ -16,7 +16,7 @@
   <title>Hvad er min Lefve-tiid</title>
   <firstline>Hvad er min Lefve-tiid</firstline>
   <notes>
-    <note type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 260 som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 260 som tekstgrundlag.</note>
   </notes>
   <source pages="33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -49,7 +49,7 @@ Jeg selv er icke mig.
   <title>Du skiønheds øsse Brynd</title>
   <firstline>Du skiønheds øsse Brynd</firstline>
   <notes>
-    <note type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 259 som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 259 som tekstgrundlag.</note>
   </notes>
   <source pages="33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -112,7 +112,7 @@ Dig høyt at elske ved.
   <title>Caritane</title>
   <firstline>Caritane Falske smucke</firstline>
   <notes>
-    <note type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 405 som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Oslo U.B. Ms. 4° 1403, s. 405 som tekstgrundlag.</note>
   </notes>
   <source pages="33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -197,7 +197,7 @@ Sig(e) kys mig i min rumpe
   <title>Obrist Lieutn: Seehsteds Grafskrifft over hans tjener Cordt</title>
   <firstline>Her ligger Kort</firstline>
   <notes>
-    <note type="source">Antologien angiver Oslo U.B. 8° 27, s. 104<sup>v</sup> som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Oslo U.B. 8° 27, s. 104<sup>v</sup> som tekstgrundlag.</note>
   </notes>
   <source pages="40"/>
   <keywords>gravskrift</keywords>
@@ -226,7 +226,7 @@ Og læg det paa dit Hierte
   <title>Tilgifft for pigerne</title>
   <firstline>Jeg er ey Jærn, ey staal, ey steen</firstline>
   <notes>
-    <note type="source">Antologien angiver Rostg. 2° 132 bl. 76<sup>r</sup> som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Rostg. 2° 132 bl. 76<sup>r</sup> som tekstgrundlag.</note>
   </notes>
   <source pages="64-65"/>
   <quality>korrektur1,kilde,side</quality>
@@ -281,9 +281,9 @@ Min haand derpaa giffv'r ieg til pandt.
   <title>In Memoriam P: Lerche</title>
   <firstline>Den største Snaus i verden var</firstline>
   <notes>
-    <note>Teksten er forfattet 1699.</note>
-    <note>Peder Lerche (1642-1699) var landsdommer ved Viborg.</note>
-    <note type="source">Antologien angiver Nks. 4° 818<sup>b</sup>, s. 72, som tekstgrundlag.</note>
+    <note editorial="true">Teksten er forfattet 1699.</note>
+    <note editorial="true">Peder Lerche (1642-1699) var landsdommer ved Viborg.</note>
+    <note editorial="true" type="source">Antologien angiver Nks. 4° 818<sup>b</sup>, s. 72, som tekstgrundlag.</note>
   </notes>
   <source pages="110-111"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -333,7 +333,7 @@ Vor dødes navn da viid det er
   <title>Daglige Forretninger</title>
   <firstline>Naar Klocken er 6 ieg først vogner op</firstline>
   <notes>
-    <note type="source">Antologien angiver Rostg. 4° 264, s. 50, som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Rostg. 4° 264, s. 50, som tekstgrundlag.</note>
   </notes>
   <source pages="119-120"/>
   <quality>korrektur1,kilde,side</quality>
@@ -391,8 +391,8 @@ At sove, til 6 ieg mig reiser igien.
   <title>Juuletanke</title>
   <firstline>Hvad er Verdens pragt og Vælde</firstline>
   <notes>
-    <note>Forfattet i 1691.</note>
-    <note type="source">Antologien angiver Nks. 4° 4812, s. 205, som tekstgrundlag.</note>
+    <note editorial="true">Forfattet i 1691.</note>
+    <note editorial="true" type="source">Antologien angiver Nks. 4° 4812, s. 205, som tekstgrundlag.</note>
   </notes>
   <source pages="121-122"/>
   <quality>korrektur1,kilde,side</quality>
@@ -437,8 +437,8 @@ Som paa Gud vil sig forlade,
   <title>Panegyricus Generosi Philax</title>
   <firstline>Jeg kravled op af Leje-trang</firstline>
   <notes>
-    <note>Uddrag.</note>
-    <note type="source">Antologien angiver J. J. Høpffner: <i>Udvalde danske Riim</i>, 1728, III, s. 181, som tekstgrundlag.</note>
+    <note editorial="true">Uddrag.</note>
+    <note editorial="true" type="source">Antologien angiver J. J. Høpffner: <i>Udvalde danske Riim</i>, 1728, III, s. 181, som tekstgrundlag.</note>
   </notes>
   <source pages="125-126"/>
   <keywords>balladestrofe</keywords>
@@ -494,9 +494,9 @@ Hand aldrig stander op heraf,
   <title>Til Brostorph d. 26. Dec: 1701</title>
   <firstline>Men naar enhver med sit far vel</firstline>
   <notes>
-    <note>Forfattet 1701.</note>
-    <note>Brostorph er iflg. Simonsen Reenbergs svoger, Brostrup Albertin, godsejer og jurist.</note>
-    <note type="source">Antologien angiver Rostg. 4° 264, s. 148, som tekstgrundlag.</note>
+    <note editorial="true">Forfattet 1701.</note>
+    <note editorial="true">Brostorph er iflg. Simonsen Reenbergs svoger, Brostrup Albertin, godsejer og jurist.</note>
+    <note editorial="true" type="source">Antologien angiver Rostg. 4° 264, s. 148, som tekstgrundlag.</note>
   </notes>
   <source pages="127"/>
   <keywords>balladestrofe</keywords>
@@ -532,10 +532,10 @@ Jeg mig min brudeseng til straf
   <title>Til Brostorph Albertin in Aug: 1703</title>
   <firstline>Lycksalig den som ikke veed</firstline>
   <notes>
-    <note>Skrevet 1703.</note>
-    <note>Noterne  på grundlag af Simonsen.</note>
-    <note>Om Brostorph, se <xref poem="reenberg2002110203"/>.</note>
-    <note type="source">Antologien angiver Rostg. 4° 264, s. 166, som tekstgrundlag.</note>
+    <note editorial="true">Skrevet 1703.</note>
+    <note editorial="true">Noterne  på grundlag af Simonsen.</note>
+    <note editorial="true">Om Brostorph, se <xref poem="reenberg2002110203"/>.</note>
+    <note editorial="true" type="source">Antologien angiver Rostg. 4° 264, s. 166, som tekstgrundlag.</note>
   </notes>
   <source pages="128-130"/>
   <keywords>balladestrofe</keywords>
@@ -606,7 +606,7 @@ I er unyttigt tids fordriv
   <title>Den Daanende og igien Respirerende Brudgom</title>
   <firstline>Vel sov vor Brudgom hen og Dynen sig befaled</firstline>
   <notes>
-    <note type="source">Antologien angiver Add. 2° 167, s. 978, som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Add. 2° 167, s. 978, som tekstgrundlag.</note>
   </notes>
   <source pages="152-153"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -647,7 +647,7 @@ Det rylted for og bag, hun meen det var een Mare,
   <subtitle>Paa Tolbod-Viinhuset, over 2de Officerer som sade og ville giøre Vers</subtitle>
   <firstline>Ja vist saa er de feede</firstline>
   <notes>
-    <note type="source">Antologien angiver Vid. Selskab, Trondheim, Ms. 8° 421, s. 120, som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver Vid. Selskab, Trondheim, Ms. 8° 421, s. 120, som tekstgrundlag.</note>
   </notes>
   <source pages="216"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -676,8 +676,8 @@ Men Kys mig i mit Hul,
   <title>Her er Viin ...</title>
   <firstline>Her er Viin og gode Dage</firstline>
   <notes>
-    <note>Teksten er forfattet omkr. 1707.</note>
-    <note type="source">Antologien angiver Thott 4° 1528 c.v. 10, som tekstgrundlag.</note>
+    <note editorial="true">Teksten er forfattet omkr. 1707.</note>
+    <note editorial="true" type="source">Antologien angiver Thott 4° 1528 c.v. 10, som tekstgrundlag.</note>
   </notes>
   <source pages="217"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -697,7 +697,7 @@ Hver en Pige lader tage
   <title>Til en Pige paa Gierdrup</title>
   <firstline>Nei, Maren I er slem, hvi vil I dog saa true</firstline>
   <notes>
-    <note type="source">Antologien angiver W. Worm: <i>Digte</i>, 1972, s. 25, som tekstgrundlag.</note>
+    <note editorial="true" type="source">Antologien angiver W. Worm: <i>Digte</i>, 1972, s. 25, som tekstgrundlag.</note>
   </notes>
   <source pages="264"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wandalh" country="dk" lang="da" type="person">
+  <!-- DBL, 1. udgave, XVIII (1904), s. 245–248: https://runeberg.org/dbl/18/0247.html
+       Trykkets Johan Wandal er Hans Wandal (1624–1675), biskop over Sjælland 1668–1675.
+       Identiteten er også kontrolleret mod https://biografiskleksikon.lex.dk/Hans_Wandal_-_1624-1675%2C_teolog -->
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Wandal</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1624-01-26</date>
+      <place>Viborg</place>
+    </born>
+    <dead>
+      <date>1675-05-01</date>
+    </dead>
+  </period>
+</person>

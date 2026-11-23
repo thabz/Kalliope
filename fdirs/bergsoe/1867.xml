@@ -4,7 +4,7 @@
   <title>I Ny og Næ</title>
   <year>1867</year>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp og Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp og Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture src="1867-p1.jpg">Forsiden til <i>I Ny og Næ</i> (1867).</picture>
@@ -810,6 +810,9 @@ Bliver jeg dog ei confus.
   <title>Helenes Grav</title>
   <firstline>Høit oppe i Sjælland, øverst mod Nord</firstline>
   <source pages="28-30"/>
+  <places>
+    <place ref="tisvilde" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -1498,6 +1501,9 @@ Ham og hans Hustru, Mathilde.
   <subtitle>†</subtitle>
   <firstline>Just som Morgenen hævede høit sin funklende Fakkel</firstline>
   <source pages="55-57"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2156,6 +2162,10 @@ Og Rom er atter det uhyre Fængsel.
   </pictures>
   <source pages="83-84"/>
   <keywords>ottave-rime,rom</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+    <place ref="pincian-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2302,7 +2312,7 @@ Dem lagde Morgensolen med sine Straaler øde.
     <written>1864-05-06</written>
   </dates>
   <notes>
-    <note>Cf. <xref bible="bibellukas08,52"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibellukas08,52"/>.</note>
   </notes>
   <source pages="89-90"/>
   <quality>korrektur1,kilde</quality>
@@ -3089,6 +3099,9 @@ Men selv han voldte sin Kvide.
   <title>Epigrammer</title>
   <firstline>Man nyser tre Gange, og strax har man sagt</firstline>
   <source pages="124-126"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3738,6 +3751,9 @@ Han mærker dog til Jernet, til Lænken om hans Vinge.
   <title>Den norske Maler</title>
   <firstline>Det var saa stormfuld en Vinterdag</firstline>
   <source pages="149-179"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -12,20 +12,20 @@ describe('side metadata', () => {
     const html = renderToStaticMarkup(
       <Head
         headTitle="Antologitekst"
-        requestPath="/da/text/antologierdk2026071901a"
-        canonicalPath="/da/text/antologierdk2026071901"
+        requestPath="/da/text/arnesen-kall2026102301a"
+        canonicalPath="/da/text/arnesen-kall2026102301"
         noIndex
       />
     );
 
     expect(html).toContain('<meta name="robots" content="noindex,follow"/>');
     expect(html).toContain(
-      '<link rel="canonical" href="https://kalliope.org/da/text/antologierdk2026071901"/>'
+      '<link rel="canonical" href="https://kalliope.org/da/text/arnesen-kall2026102301"/>'
     );
     expect(html).toContain(
-      '<link rel="alternate" hrefLang="en" href="https://kalliope.org/en/text/antologierdk2026071901"/>'
+      '<link rel="alternate" hrefLang="en" href="https://kalliope.org/en/text/arnesen-kall2026102301"/>'
     );
-    expect(html).not.toContain('antologierdk2026071901a');
+    expect(html).not.toContain('arnesen-kall2026102301a');
   });
 
   it('prefixes relative Open Graph images', () => {

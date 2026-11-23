@@ -540,9 +540,12 @@ S. Cataldo. Decbr. 1925.
     <written>1925-12-15</written>
   </dates>
   <notes>
-    <note>Fra "Søndengalm"(1926) pp. 33-35.</note>
-    <note>Først trykt i Lemvig Dagblad 24/12-1925 med titlen "Jul i Italien".</note>
+    <note editorial="true">Først trykt i Lemvig Dagblad 24/12-1925 med titlen "Jul i Italien".</note>
   </notes>
+  <source pages="33-35">
+    <title>Søndengalm</title>
+    <year>1926</year>
+  </source>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
 </head>
 <body>
@@ -652,6 +655,9 @@ S. Cataldo, 30. Decbr. 1925.
 <head>
   <title>Paa Napoli-Golfen</title>
   <firstline>Aftensolen gløder</firstline>
+  <places>
+    <place ref="gulf-of-naples" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1673,6 +1679,9 @@ om ham det besynderligste Minde.
 <head>
   <title>Floras Rejse</title>
   <firstline>Jeg har fulgt i Vaarens</firstline>
+  <places>
+    <place ref="verona" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

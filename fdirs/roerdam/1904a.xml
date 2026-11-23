@@ -1616,6 +1616,8 @@ ned imod de blomstrende Linde!
     <place ref="moen" relation="subject" primary="true"/>
     <place ref="mons-klint" relation="subject"/>
     <place ref="baltic-sea" relation="setting"/>
+    <place ref="poland" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2849,6 +2851,10 @@ så tør vi to gå tilgrunde sammen.
   <firstline>Du spørger efter de Unge —</firstline>
   <source pages="134-148"/>
   <keywords>drachmann</keywords>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

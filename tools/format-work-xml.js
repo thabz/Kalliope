@@ -3,6 +3,10 @@ import { fileURLToPath } from 'url';
 
 const structuralElements = [
   'body',
+  'front',
+  'castList',
+  'castGroup',
+  'set',
   'content',
   'head',
   'poetry',
@@ -30,6 +34,7 @@ const metadataFields = [
   'dates',
   'firstline',
   'form',
+  'identifiers',
   'indextitle',
   'keywords',
   'linktitle',
@@ -44,6 +49,7 @@ const metadataFields = [
   'rhyme',
   'source',
   'structure',
+  'titleblock',
   'subtitle',
   'suptitle',
   'syllables',
@@ -55,6 +61,7 @@ const metadataFields = [
 const textHeadMetadataOrder = [
   'suptitle',
   'title',
+  'titleblock',
   'subtitle',
   'toctitle',
   'indextitle',
@@ -64,6 +71,7 @@ const textHeadMetadataOrder = [
   'nofirstline',
   'year',
   'dates',
+  'identifiers',
   'written',
   'performed',
   'event',
@@ -94,11 +102,16 @@ const adjacentMetadataFieldsPattern = new RegExp(
 
 export const structuralTagsOutsideColumnZero = xml => {
   const violations = [];
+  const structure = xml.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+    note => note.replace(/[^\n]/g, ' '));
   let match;
 
-  while ((match = anyStructuralTagPattern.exec(xml)) != null) {
+  while ((match = anyStructuralTagPattern.exec(structure)) != null) {
     const lineStart = xml.lastIndexOf('\n', match.index - 1) + 1;
-    if (match.index !== lineStart) {
+    const prefix = structure.slice(lineStart, match.index);
+    const followsPageBreaks = /^(?:<pb\b[^>]*\/>)+$/u.test(prefix) &&
+      /^<(?:text|poetry|prose|epigraph|castList)(?:[ \t>/])/u.test(match[0]);
+    if (match.index !== lineStart && followsPageBreaks === false) {
       violations.push(xml.slice(lineStart, xml.indexOf('\n', match.index)));
     }
   }
@@ -225,21 +238,34 @@ const normalizeLineWrappers = xml => xml.split(/\r?\n/).map(line => {
   return `${pageBreakPrefix}${canonicalOpening}${content}${canonicalClosing}`;
 }).join('\n');
 
-const splitPoetryLines = xml =>
-  normalizeLineWrappers(xml)
-    .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
-    .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n');
+const splitPoetryLines = xml => xml
+  .split(/(<(?:note|footnote)\b[^>]*>[\s\S]*?<\/(?:note|footnote)>)/gu)
+  .map(part => /^<(?:note|footnote)\b/u.test(part)
+    ? part
+    : normalizeLineWrappers(part)
+      .replace(/(<poetry(?:[ \t][^<>]*)?>)(?!\r?\n)/g, '$1\n')
+      .replace(/<\/nonum>(?!<resetnum\/>)(?!\r?\n)/g, '</nonum>\n'))
+  .join('');
 
 const indentMetadata = xml => {
+  const verseNotes = [];
+  const protectedXml = xml.replace(/<(note|footnote)\b(?![^>]*\/>)[^>]*>[\s\S]*?<\/\1>/g, note => {
+    if (note.includes('<poetry') !== true) {
+      return note;
+    }
+    const index = verseNotes.push(note) - 1;
+    return `<note>VERSE_NOTE_${index}</note>`;
+  });
   let metadataDepth = 0;
   let withinMetadata = false;
 
-  return xml.split('\n').map(line => {
+  return protectedXml.split('\n').map(line => {
     const content = line.trimStart();
+    const closesMetadata = /<\/(?:head|workhead)>/.test(content);
 
     if (/^<(?:head|workhead)(?:[ \t>])/.test(content)) {
       metadataDepth = 0;
-      withinMetadata = true;
+      withinMetadata = closesMetadata === false;
       return line;
     }
     if (/^<\/(?:head|workhead)>/.test(content)) {
@@ -268,9 +294,14 @@ const indentMetadata = xml => {
     ) {
       metadataDepth += 1;
     }
+    if (closesMetadata === true) {
+      metadataDepth = 0;
+      withinMetadata = false;
+    }
 
     return formatted;
-  }).join('\n');
+  }).join('\n').replace(/<note>VERSE_NOTE_(\d+)<\/note>/g,
+    (_match, index) => verseNotes[Number(index)]);
 };
 
 const tagEnd = (xml, start) => {

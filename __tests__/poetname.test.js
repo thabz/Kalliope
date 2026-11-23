@@ -46,7 +46,7 @@ describe('String method', () => {
       },
     };
     expect(poetNameString(poet, false, true)).toEqual(
-      'Emil Aarestrup (Ukendt år–1856)'
+      'Emil Aarestrup (†\u00a01856)'
     );
   });
   it('uses a baptism date when no birth date is documented', () => {

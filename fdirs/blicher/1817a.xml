@@ -169,6 +169,10 @@ Lærken blandt Gravene bygger sit Rede,
   <title>Første Døgn</title>
   <firstline>Farvel, farvel, du røgindhyllede Tue!</firstline>
   <source pages="5-24" facsimile-pages="16-35"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -593,6 +597,9 @@ Og stille Klager fra alle de sørgende Fjelde.
   <title>Andet Døgn</title>
   <firstline>Saa tidlig paa Dækket? Hvi bæver Smilet ustadigt</firstline>
   <source pages="25-43" facsimile-pages="36-54"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1499,6 +1506,9 @@ Frihed og Ære og Skjaldesange skal vindes!
   <title>Fjerde Døgn</title>
   <firstline>Hvi raaber den Sanger saa højt paa eensomme Hede?</firstline>
   <source pages="67-88" facsimile-pages="78-99"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

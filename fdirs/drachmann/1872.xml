@@ -7,8 +7,8 @@
     <openlibrary-work>OL42650094W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Tilegnelsesbladet lyder ,,Min ven / Dr. Georg Brandes / Tilegnet.''</note>
-    <note>Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Tilegnelsesbladet lyder ,,Min ven / Dr. Georg Brandes / Tilegnet.''</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture src="1872-p1.jpg">Titelbladet til <i>Digte</i> (1872) lyder ,,Digte / af / Holger Drachmann. // Kjøbenhavn. - Andr. Schous Forlag.''.</picture>
@@ -492,7 +492,7 @@ Sukket vider ud sig til et Digt.
   <title>Havet</title>
   <firstline>Klattrende modig fra Sten til Sten</firstline>
   <notes>
-    <note>Citatet refererer til Byrons <xref poem="byron2018072805,1630-1633" /> fra <i>Childe Harold's Pilgrimage</i> (1812-18).</note>
+    <note editorial="true">Citatet refererer til Byrons <xref poem="byron2018072805,1630-1633" /> fra <i>Childe Harold's Pilgrimage</i> (1812-18).</note>
   </notes>
   <source pages="25-29"/>
   <quality>korrektur1,kilde,side</quality>
@@ -702,6 +702,9 @@ Er kastet pænt paa Døren.
   <title>Engelske Socialister</title>
   <firstline>Henover Byens Tage glide</firstline>
   <source pages="34-38"/>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1062,6 +1065,9 @@ Der vil Satorys Liig være Fane og Løsen.
   <title>Novemberstemning (1870)</title>
   <firstline>Dagen er graa; en Taage dækker Staden</firstline>
   <source pages="51-52"/>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1936,6 +1942,9 @@ Et Stjerneskud! mer var det ikke.
   <title>En Nutidsvision</title>
   <firstline>Det er Tusmørkets Time. Den rige Mand har lagt sig</firstline>
   <source pages="94-109"/>
+  <places>
+    <place ref="trekroner-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

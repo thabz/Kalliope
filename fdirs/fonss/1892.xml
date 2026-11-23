@@ -4,8 +4,7 @@
   <title>Trækfugle</title>
   <year>1892</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1892-p1.jpg">Titelbladet til <i>Trækfugle</i> (1892) lyder ,,Trækfugle / Lyriske Digte / af / Otto C. Fønss // Aarhus / Jydsk Forlags-Forretning / (Albert Bayer) / 1892''.</picture>
@@ -428,6 +427,9 @@ hvide Tinder frem af Taagen stige.
   <firstline>Jeg staar i den snævre Celle</firstline>
   <source pages="17-20"/>
   <keywords>luther</keywords>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -667,7 +669,7 @@ og gad dog vidst, om ej tilsidst
 Han titter op — hvor er han smuk —
     med Øjne blanke store
 og hvisker med et ydmygt Suk:
-    <i>»Son' cieco, Signore«!</i><note>* ,,Jeg er blind, Herre''.</note>
+    <i>»Son' cieco, Signore«!</i><note>,,Jeg er blind, Herre''.</note>
 </poetry>
 </body>
 </text>
@@ -1729,6 +1731,9 @@ til at leve endnu en Sommer.
   <title>Fantasi</title>
   <firstline>Der rinder et luende Aftenskjær</firstline>
   <source pages="78-83"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2508,6 +2513,9 @@ et Livets Bud, der finder Svar i Toner:
   <title>Oktoberbilleder</title>
   <firstline>Trækfugleskaren drog til Havs</firstline>
   <source pages="113-125"/>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3702,6 +3710,9 @@ et Frø med Fremtidskimen.
   <subtitle>(Prolog ved en musikalsk Mindefest).</subtitle>
   <firstline>Til Eder, Venner, som kom hid til Huse</firstline>
   <source pages="167-170"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3768,7 +3779,7 @@ Dog, ak! hans Toners Fylde er for rig
 og Sprogets Former fattige og trange.
 Musikken selv en Elvermø er lig,
 hvis Væsen ej i Ord sig lader fange.
-Men luk dit Hjerte<note>Hjerte] Hjrete</note> op for disse Sange:
+Men luk dit Hjerte<note editorial="true">Hjerte] Hjrete</note> op for disse Sange:
 — da løftes dig det store Forhængs Flig,
 og over Døgnets Liv og travle Færden
 et Glimt du skuer af en Skjønhedsverden,

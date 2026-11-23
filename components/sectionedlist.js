@@ -59,7 +59,7 @@ const SectionedList = ({ sections, keyboardNavigation = false }) => {
       );
     });
     return (
-      <div className="list-section" key={i + title}>
+      <div className="list-section" id={group.id} key={i + title}>
         <h3
           id={headingId}
           ref={(heading) => {

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- P. C. Jessen, Postmester, krediteres i Nytaarsgave 1806, registeret PDF 254; digtet s. 101 er knyttet til Kongsberg. Identifikation ved initialer, embede og sted.
+     Navn, dåb og begravelse: Th. Hauch-Fausbøll og H. R. Hiort-Lorenzen: Patriciske Slægter, Anden Samling (1911), s. 81: https://www.ronlev.dk/bibliotek/2674.pdf#page=96
+     Kilden angiver dåb 11. september 1768 og begravelse 22. september 1808; ingen præcis fødsels- eller dødsdato er dokumenteret. -->
+<person id="jessenpc" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Paul Christian</firstname>
+    <lastname>Jessen</lastname>
+  </name>
+  <period>
+    <baptized>
+      <date>1768-09-11</date>
+      <place>København</place>
+    </baptized>
+    <dead>
+      <date>1808</date>
+      <place>Kongsberg</place>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-09">
+    <checked-source id="dbl1">Jessen-navnene i registeret til bind VIII gennemgået; intet opslag om Paul Christian Jessen, postmester i Kongsberg.</checked-source>
+    <checked-source id="dbl2">Navneregisteret på litteraturpriser.dk/hbog/dblJ.htm gennemgået; ingen Paul Christian Jessen. Peter Carl Jessen (1772–1830) er en anden person.</checked-source>
+    <checked-source id="salmonsen2">Jessen-navnene i registeret til bind XIII gennemgået; intet relevant personopslag.</checked-source>
+    <checked-source id="ehrencron-mueller">Jessen-navnene i registeret til bind IV gennemgået; intet opslag om postmesteren.</checked-source>
+    <note>Kun genealogiske oplysninger fundet i Patriciske Slægter, Anden Samling (1911), s. 81. De dokumenterer navn og livsdata, men udgør ingen sammenhængende biografi. Supplementet og Den nye Salmonsen er ikke særskilt undersøgt; søgningen er afgrænset til de nævnte registre og en postmester, der døde 1808.</note>
+  </biography-status>
+</person>

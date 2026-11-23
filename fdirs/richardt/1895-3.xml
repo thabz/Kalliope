@@ -104,7 +104,7 @@ Men hvor dog denne Skomagersvend
         - ja ej Personen,
         men Situationen -
 paa mange Maader gaar igjen!
-En Christian Winther<note><a poet="winther">Christian Winther (1796-1876)</a>.</note> i Paris og Rom,
+En Christian Winther<note editorial="true"><a poet="winther">Christian Winther (1796-1876)</a>.</note> i Paris og Rom,
 - ja næsten hvorsomhelst han kom
 en Smule udenfor sit Hjemlands Grænser -
 han med sin Skat af søde Fugletoner,
@@ -958,6 +958,12 @@ til Hjertet bliver stille!
   <title>Johannes i Fængslet</title>
   <firstline>Hvor Asfalt-Søen ruller sit tunge</firstline>
   <source pages="28-40"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -1779,6 +1785,9 @@ og derfor maa hun <i>takke!</i>
   </dates>
   <source pages="54-60"/>
   <keywords>holberg</keywords>
+  <places>
+    <place ref="mount-ararat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -2107,6 +2116,9 @@ de Stavnsbaand aldrig løses!
   <title>Danmark</title>
   <firstline>Ud for Verdens Herregaarde</firstline>
   <source pages="63-65"/>
+  <places>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -2809,6 +2821,9 @@ at gribes af Guds Naade.
   <title>Skyer</title>
   <firstline>En Hær af Skyer</firstline>
   <source pages="83-84"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -3950,6 +3965,9 @@ som aldrig de Sjæle vil glemme.
   </dates>
   <source pages="116-120"/>
   <keywords>hauch</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -4082,7 +4100,7 @@ som vil med <i>bortvendt</i> Aasyn Fjenden fælde.
   <title>Johan Herman Wessel</title>
   <firstline>Den Wessel, som besværed Aftenposten</firstline>
   <notes>
-    <note>Mottoet er Wessels <xref poem="wesselsmaaversc1"/>.</note>
+    <note editorial="true">Mottoet er Wessels <xref poem="wesselsmaaversc1"/>.</note>
   </notes>
   <source pages="120-122"/>
   <keywords>holberg,ewald</keywords>
@@ -4301,6 +4319,7 @@ Du staa med Studenter i Pagt!
 <head>
   <title>Frederiksborgs Slotsklokker sjunge</title>
   <firstline>Bjergets Løndom var vor Moder</firstline>
+  <dates><event>1859-12-17</event></dates>
   <source pages="126-127"/>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
@@ -4611,6 +4630,9 @@ stige ydmygt og fuldt mod det Høje!
     <event>1887-05-01</event>
   </dates>
   <source pages="134-140"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -6057,7 +6079,7 @@ den har i dit Billed sit Klædemon!
     <event>1887-04-04</event>
   </dates>
   <notes>
-    <note>Ditlev Gothard Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
+    <note editorial="true">Ditlev Gothard Monrad er teologen og politikeren <a person="monrad">Ditlev Gothardt Monrad</a>.</note>
   </notes>
   <source pages="175-176"/>
   <quality>korrektur1,kilde,side,korrektur2</quality>
@@ -6750,6 +6772,9 @@ vor Ærefrygt, Hengivenhed, og Tak!
     <event>1890-08-05</event>
   </dates>
   <source pages="195-201"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8075,6 +8100,9 @@ som frier fra de vilde Vande.
     <event>1888-06-04</event>
   </dates>
   <source pages="232-236"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8389,6 +8417,10 @@ og ender med en Takkesang.
   <title>Niniveh</title>
   <firstline>I Flodlandet, Evfrat og Tigris' Land</firstline>
   <source pages="241-248"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="tigris" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -8765,6 +8797,10 @@ og Længslerne dybest inde -
     <event>1892-05-28</event>
   </dates>
   <source pages="253-259"/>
+  <places>
+    <place ref="lake-esrum" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -9068,6 +9104,9 @@ det gaar dog mod Foryngelsen!
   <title>Bethlehems-Stjernen</title>
   <firstline>Fra Kaldæa i det Fjerne</firstline>
   <source pages="262-263"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side,korrektur2</quality>
 </head>
 <body>
@@ -9125,7 +9164,7 @@ vorde Barn og Gubbe <i>vise!</i>
   <title>Vignetter</title>
   <subtitle>til en Symfoni af Aug. Winding.</subtitle>
   <notes>
-    <note>* Forf.'s sidste Digt, skrevet i Novnr. 1892, 6 Uger før hans Død. Overskrifterne til de enkelte Dele opgivne af Componisten.</note>
+    <note>Forf.'s sidste Digt, skrevet i Novnr. 1892, 6 Uger før hans Død. Overskrifterne til de enkelte Dele opgivne af Componisten.</note>
   </notes>
 </head>
 <content>

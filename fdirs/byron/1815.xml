@@ -146,6 +146,9 @@ And Mockery sits on Salem's throne.
 <head>
   <title>Oh! Weep for Those</title>
   <firstline>Oh! weep for those that wept by Babel's stream</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -172,6 +175,10 @@ Mankind their country - Israel but the grave!
 <head>
   <title>On Jordan's Banks</title>
   <firstline>On Jordan's banks the Arab's camels stray</firstline>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -407,6 +414,9 @@ Or kingly the death, which awaits us to-day!
 <head>
   <title>On the Rivers of Babylon We Sat Down and Wept</title>
   <firstline>We sat down and wept by the waters</firstline>
+  <places>
+    <place ref="babylon" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -439,6 +449,9 @@ And ne'er shall its soft tones be blended
 <head>
   <title>Vision of Belshazzar</title>
   <firstline>The King was on his throne</firstline>
+  <places>
+    <place ref="babylon" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

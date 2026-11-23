@@ -7,6 +7,17 @@ const validateFirstlineMarkup = (firstline, textId, filename) => {
   }
 };
 
+const validateIndexTitleMarkup = (
+  title,
+  textId,
+  filename,
+) => {
+  if (title.includes('<')) {
+    throw new Error(`${textId} har markup i titlen i ${filename}`);
+  }
+};
+
 export {
   validateFirstlineMarkup,
+  validateIndexTitleMarkup,
 };

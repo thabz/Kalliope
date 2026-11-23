@@ -13,6 +13,17 @@ original i en nyere udgave. Læs og følg
 samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
 `docs/xml-work-format.md` og `docs/kalliope-masterplan.md` før ændringer.
 
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
+
 ## Arbejdsgang
 
 1. Identificér oversættelsen, dens oversætter, den oplyste originalforfatter og
@@ -25,8 +36,8 @@ samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
 3. Foretræk oversætterens dokumenterede trykte udgave eller den nærmeste
    samtidige trykte udgave med samme tekstlige form. Hvis ingen af dem er
    tilgængelige, må en troværdig nyere trykt eller digital udgave bruges, når
-   originalteksten stadig kan identificeres sikkert; dokumentér da, at kilden
-   er nyere. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
+   originalteksten stadig kan identificeres sikkert; dokumentér den nyere kilde
+   på originalteksten og i PR-beskrivelsen. Det historisk korrekte forlæg er en prioritet, ikke et adgangskrav.
    Vælg ikke automatisk den ældste version.
 4. Opret normalt den valgte publikation som et selvstændigt værk
    hos originalforfatteren. Brug samtidig `$add-kalliope-work`; brug også
@@ -40,9 +51,43 @@ samt `AGENTS.md`, `docs/style-guide.md`, `docs/alle-danske-digtere.md`,
    Kalliopes gældende oversættelsesrelation. Opret ikke en generisk relation til
    digteren. En nyere udgave må være relationens mål, når teksten matcher
    sikkert, og det historiske forlæg ikke er tilgængeligt.
+   Forlægsnoten skal nævne den kendte originalforfatter og forklare relationen til
+   digtlinket, fx:
+   `<note>Gendigtning af Goethes <xref type="translation" poem="goethe2026101802"/>.</note>`.
+   »Oversættelse af«, »Gendigtning af« og »Fri gendigtning af« er eksempler,
+   ikke en udtømmende liste. Præciseringer og flere digtlinks er tilladt.
+   Vælg frit fuldt navn eller efternavn alene efter sammenhængen. »Byron«,
+   »Schiller« og »Goethe« er tilstrækkeligt; brug mere af navnet, når et
+   efternavn som »Møller« kan pege på flere personer.
+   Digttitlen kommer fra linkets mål; visningen sætter selv »…« omkring den.
+   Skriv digternavnet som almindelig tekst, aldrig som person- eller digterlink.
+   Kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten.
+   Forlægsnoten beskriver relationen. Måltekstens registrerede udgave, kilde og
+   indførelse beskrives på målteksten selv, ikke ved det indgående link.
+   Skriv fx ikke »Originalteksten er registreret efter udgaven fra 1847.« i
+   oversættelsens note. Undlad også generiske forbehold som »det benyttede
+   eksemplar er ikke dokumenteret« og »oversætterens benyttede udgave er ikke
+   identificeret«; dokumentér udgavevalget på originalteksten og i PR-beskrivelsen.
+   Historiske oplysninger om oversætterens benyttede
+   forlæg og tekstlige forskelle kan fortsat beskrives i forlægsnoten.
+   Brug aldrig et bart digtlink som note.
+   Originalteksten må ikke have redaktionelle noter, der peger tilbage på
+   oversættelserne, hverken med links eller omtale af oversættere og deres
+   tekstvalg. Beskriv sådanne forhold i oversættelsens forlægsnote.
+   Bevar selvstændige tekstkritiske og historiske oplysninger om originalen
+   i dens egne noter, fx om beskadiget overlevering eller usikker tilskrivning.
 7. Formatér de ændrede XML-filer, kontrollér diffen og kør hele testpakken.
    Dokumentér søgning, udgavevalg, tekstligt belæg og eventuelle åbne spørgsmål
    i overdragelsen og PR-beskrivelsen.
 
 Følg repositoryets godkendelsesregler for commit, push og PR. Skillen giver
 ikke selv yderligere tilladelse til eksterne ændringer.
+
+## Personarbejde
+
+Brug `$add-kalliope-person`, når en person skal oprettes eller beriges.
+Almindelige opslag efter eksisterende person-id kræver ikke person-skillen.
+Ved PR-forberedelsen efter tekstimport afstemmes tekstønsker efter
+[person-skillens værkregistrering](../add-kalliope-person/references/works.md)
+mod et opdateret JSONL-korpus. Rapporten køres samlet for PR'en og ikke efter
+hvert build.

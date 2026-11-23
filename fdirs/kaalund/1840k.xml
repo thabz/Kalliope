@@ -7,8 +7,8 @@
     <runeberg-book>konghaldan</runeberg-book>
   </identifiers>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note type="credits" editorial="true">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <pictures>
     <picture src="1840k-p1.jpg">Titelbladet til <i>Kong Haldan den Stærke</i> (1840) lyder ,,Kong / Haldan den Stærke. // Romantisk Epos / af / H. W. Kaalund. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler C. Steen. / Trykt i Bianco Lunos bogtrykkeri. / 1840.''.</picture>
@@ -22,6 +22,9 @@
   <title>Forord</title>
   <firstline>Jeg elsker Alt, hvad muntert, stort og smukt</firstline>
   <source pages="1-4"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -115,6 +118,9 @@ Og dermed Ankret lettet: — Gud i Vold!
   <title>Parret paa Leire</title>
   <firstline>Valkyrier i vilden Sky</firstline>
   <source pages="5-7"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -183,6 +189,9 @@ Hos <w>Odin</w> og hos <w>Frigge</w>.
   <title>Haldans Barndom</title>
   <firstline>Med revne Klæder og filtret Haar</firstline>
   <source pages="7-15"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -218,7 +227,7 @@ Der flagrer frisk over Hav og Jord.
 Dog spottet blev han af Kæmpeflok,
 Og <w>Borkord</w> rysted' sin hvide Lok!
 ,,Saa skal da med mig min Slægt døe ud!
-Hvad nytter vel<note>vel] vil</note> sligt et Vandpiilskud?
+Hvad nytter vel<note editorial="true">vel] vil</note> sligt et Vandpiilskud?
 Slight ormhuult Æble med Skrælling rød?
 Til Skam og Sorg blev den Dreng mig fød!''
 
@@ -318,7 +327,7 @@ Men Skjalden høit til sin Harpe kvad:
        Men <w>Gunner</w> lod søge
        I Høi og i Krat,
        Og haaned', som Skjøge,
-       Hver Mø, han fik<note>fik] sik</note> fat.
+       Hver Mø, han fik<note editorial="true">fik] sik</note> fat.
        Han gløded' som Essen,
        Naar Smed hærder Jern,
        Og priist var Prindsessen
@@ -1058,6 +1067,9 @@ Paa Slætten se'r man Solens Guld,
   <title>Haldan ved Maalet for sit Æventyr</title>
   <firstline>Over Fjeldets sorte Stene</firstline>
   <source pages="40-45"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1290,6 +1302,10 @@ En Kampevise han hørte sjunge.
   <title>Borkords sidste Seier</title>
   <firstline>Paa det vide Hav i Norden hærgede en Vikingsmand</firstline>
   <source pages="48-57"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1590,6 +1606,9 @@ Og Gangere og Vaaben.
   <title>Haldan som Lurer</title>
   <firstline>Vildt voxed' Bøg og Ege paa Sjølunds grønne Ø</firstline>
   <source pages="62-67"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1659,7 +1678,7 @@ Led Heltespil og Mjødhorn de Tiden fordrev';
 Og, medens stedse Nogle ved Hallen holdt Vagt,
 De vexelviis sig tumled' paa Eventyr og Jagt.
 
-Men, som nu <w>Haldan</w> titted' paa Luur bag den Hæk,<note>,] .</note>
+Men, som nu <w>Haldan</w> titted' paa Luur bag den Hæk,<note editorial="true">,] .</note>
 Og flyttede ei Foden, skiøndt hans Stolthed hvisked': væk!
 Da svæved' over Tærsklen en Mø, nei! en Alf,
 En straalende <w>Valkyrie</w> fra <w>Odins Valaskjalf</w>.
@@ -1699,7 +1718,7 @@ Hun satte sig fra Siden paa dens Ryg behændig op;
 Saa bar den hende bort bag den skovgro'de Høi,
 Mens Lokkerne og Kaaben for Morgenvinden fløi.
 
-Tilbage stod den Yngling<note>Yngling] Yndling</note> som truffen af et Lyn;
+Tilbage stod den Yngling<note editorial="true">Yngling] Yndling</note> som truffen af et Lyn;
 Det varsom om sig <w>Gefion</w> havde viist for hans Syn:
 ,,Ha!'' raabte han bag Busten: ,,du deilige Mø!
 Med dig maa jeg tale, skal end derfor jeg døe!''
@@ -1946,6 +1965,9 @@ Som død blev han bragt.
   <title>Haldans Kjerlighed</title>
   <firstline>Paa blodig Vinge over Norden</firstline>
   <source pages="75-82"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2138,6 +2160,9 @@ Da hun ei meer sin <w>Odur</w> fandt.
   <title>Drothes Svanesang</title>
   <firstline>Paa sine Snekker Haldan foer</firstline>
   <source pages="82-85"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2352,6 +2377,10 @@ Og en Skaal for de evige Guder!''
   <title>Haldan træffer sin Broder</title>
   <firstline>Paa Garderika's Sletter</firstline>
   <source pages="90-107"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2457,7 +2486,7 @@ Falder af Skovens Træ'r!
 
 Den Mand, der frygter Døden,
 Han lider tifold den!
-Tidt kommer Hjelp<note>Hjelp] Hejlp</note> i Nøden,
+Tidt kommer Hjelp<note editorial="true">Hjelp] Hejlp</note> i Nøden,
 Og Graat blier Godt igjen!
 Paa Farens golde Klipper
 Gro er Haabets grønne Gran!
@@ -2841,6 +2870,9 @@ Om den forsvundne Tid!
   <title>Nyt fra Hjemmet</title>
   <firstline>Saa gik han ned, hvor hans Snekker laae</firstline>
   <source pages="108-116"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3073,6 +3105,10 @@ Han hvisked' og gik i Hallen ind.
   <title>Haldan som ubuden Gjæst</title>
   <firstline>Derinde i sin Helterad</firstline>
   <source pages="116-123"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3135,7 +3171,7 @@ En halv Snees drukne Stemmer.
 
 Da reiste sig den Stærke op;
       Hans Heltekrop
-Forundret man betragted'.<note>betragted'.] betragted.'</note>
+Forundret man betragted'.<note editorial="true">betragted'.] betragted.'</note>
 Alvorlig som en Gravens Aand
 Han Harpen slog med ovet Haand,
 Og skarpt paa Bruden agted':
@@ -3253,7 +3289,7 @@ Med Armen teet om <w>Haldans</w> Liv
 Naar Storm oprører Havet.
 
 Det første Slag Jarl <w>Hunding</w> gjaldt,
-      Med Brøl<note>Brøl] Brol</note> han faldt
+      Med Brøl<note editorial="true">Brøl] Brol</note> han faldt
 Blandt Bænke og blandt Borde.
 Høit dynged' <w>Lysing</w> Liig paa Liig;
 Men tættere med vrede Skrig
@@ -3437,7 +3473,7 @@ Nu dufter Alt i den grønne Sommer!
 Som Trækfugls-Skarer i Vaar og Høst,
 Saa ile Dage med Sorg og Lyst!
       Som Skum paa Strømmen;
-Hvad er vel<note>vel] ve</note> Sandhed og hvad er Drømmen?
+Hvad er vel<note editorial="true">vel] ve</note> Sandhed og hvad er Drømmen?
 
 See, nye Verdner paa andre steg';
 Det er mig Alt som en Bobleleeg!
@@ -3596,7 +3632,7 @@ Naar jeg er lagt i Graven ned!''
 Saa talte han og freidig saae
 Mod Himmelbuens klare Blaa.
 Ad Qveld det lakked' meer og meer,
-Da nærmed' sig den Oprørshær<note>Oprørshær] Oprøshær</note>;
+Da nærmed' sig den Oprørshær<note editorial="true">Oprørshær] Oprøshær</note>;
 I Spidsen raged' <w>Veset</w> op:
 En fire Alens Jette-Krop.
 Stor var vel Fjendens Overmagt,

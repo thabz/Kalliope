@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schlegel" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Adolf</firstname>
+    <lastname>Schlegel</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1721-09-18</date>
+      <place>Meißen</place>
+    </born>
+    <dead>
+      <date>1793-09-16</date>
+      <place>Hannover</place>
+    </dead>
+  </period>
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q70415</wikidata>
+    <viaf>5723688</viaf>
+    <gnd>118607995</gnd>
+  </identifiers>
+  <!-- Identitet og livsdata: https://www.deutsche-digitale-bibliothek.de/person/gnd/118607995 . ADB anfører født eller døbt 18. september; datoen følger DDB/GND. -->
+  <biography-status status="not-found" checked-on="2026-11-07">
+    <checked-source id="salmonsen2">Bind 21, alfabetisk register og opslag s. 11: Schlegel-slægten, August Wilhelm, Dorothea, Friedrich, Johann Elias og Johann Heinrich, men intet personopslag om Johann Adolf. https://runeberg.org/salmonsen/2/21/</checked-source>
+    <checked-source id="salmonsen-supplement">Hele supplementets alfabetiske register undersøgt efter Schlegel; intet opslag. https://runeberg.org/salmonsen/2/26/</checked-source>
+    <checked-source id="salmonsen4">Schlegel-opslagene i sp. 3982–3984 omhandler August Wilhelm, Dorothea, Friedrich og Fritz; Johann Adolf mangler. https://runeberg.org/salmonsen/4/1474.html</checked-source>
+    <note>Tysk digter uden et særskilt opslag i de undersøgte Salmonsen-udgaver. DBL og de danske reserveleksika er ikke relevante standardkilder til denne person. ADB er alene anvendt til identitets- og værkkontrol.</note>
+  </biography-status>
+</person>

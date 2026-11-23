@@ -9,6 +9,8 @@
   </picture>
   <picture id="1812-odysseus-hjemkomst" year="1812" invnr="KMS7256" museum="smk">
     <i>Odysseus' hjemkomst. Motiv fra Odysséen XIX sang</i>, 1812, olie på lærred, 60 × 72 cm.
+    <!-- Kilde: https://api.smk.dk/api/v1/art/?object_number=KMS7256. Nettomål: 60 × 72 cm; bruttomål inklusive ramme: 73,8 × 86,2 × 7,2 cm. De eksisterende nettomål bevares. SMK angiver C.W. Eckersberg, 1812, olie på lærred og public domain: https://creativecommons.org/publicdomain/mark/1.0/. -->
+    <!-- metadata checked: 2026-11-23 -->
     <identifiers>
       <wikidata>Q20354438</wikidata>
     </identifiers>
@@ -16,6 +18,15 @@
   <picture id="thorvaldsen-1814" year="1814" subject="thorvaldsen">
     <i>Bertel Thorvaldsen</i>, 1814, 90 × 74 cm. Kunstakademiet.
     <!-- Findes i tre versioner: 1. Nærværende på Kunstakademiet. 2. Nationalmuseum, Stockholm. https://digitaltmuseum.se/021046502180/den-danske-skulptoren-bertel-thorvaldsen og 3. Glyptoteket. https://artsandculture.google.com/asset/bertel-thorvaldsen/ygFcme7z95CiAg -->
+  </picture>
+  <picture id="marmortrappen-aracoeli-1814" year="1814-1816" museum="smk" invnr="KMS1621" href="https://open.smk.dk/artwork/image/KMS1621">
+    <i>Marmortrappen, som fører op til kirken Santa Maria in Aracoeli i Rom</i>, 1814-1816, olie på lærred, 32,5 × 36,5 cm.
+    <!-- Kilde: SMK, https://api.smk.dk/api/v1/art/?object_number=KMS1621. Billedfil hentet fra SMK. Public domain: https://creativecommons.org/publicdomain/mark/1.0/. -->
+    <identifiers>
+      <wikidata>Q7750274</wikidata>
+    </identifiers>
+    <!-- Kontrolleret mod SMK API: https://api.smk.dk/api/v1/art/?object_number=KMS1621. Identitet, kunstner, datering, teknik og fysiske mål bekræftet; nettomål for malerier, blad- eller plademål for grafik. Wikidata https://www.wikidata.org/wiki/Q7750274 matcher inventarnummer, kunstner og samlingen Statens Museum for Kunst. -->
+    <!-- metadata checked: 2026-11-06 -->
   </picture>
   <picture id="udsigt-gennem-tre-buer-i-colosseum-1815" year="1815" invnr="KMS3123" museum="smk">
     <i>Udsigt gennem tre buer i Colosseums tredje stokværk</i>, 1815, olie på lærred, 32 × 49,5 cm.
@@ -77,5 +88,29 @@
   </picture>
   <picture id="christoffer-wilhelm-eckersberg-sant-agnese-1815" year="1815" museum="smk" invnr="KMS723">
     C.W. Eckersberg: Sant’Agnese fuori le mura, 1815, olie på lærred.
+  </picture>
+  <picture id="odysseus-flygter-fra-polyfem-1812" year="1812" museum="smk" invnr="KKSgb4168" href="https://open.smk.dk/artwork/image/KKSgb4168">
+    <i>Odysseus flygter fra Polyfem</i>, 1812, tegning, blyant, pen, pensel, gråt blæk, grå og brun lavering, bladmål 220 × 331 mm.
+    <!-- Kilde: https://api.smk.dk/api/v1/art/?object_number=KKSgb4168. Kunstner: C.W. Eckersberg; identitet, datering, teknik, bladmål og samling kontrolleret mod SMK. Billedfil: SMK’s originale JPEG af den beskårne scanning, nedskaleret uden yderligere beskæring. Public domain: https://creativecommons.org/publicdomain/mark/1.0/. -->
+    <!-- metadata checked: 2026-11-23 -->
+  </picture>
+  <picture id="telemachos-hos-eumaios-odysseus-1812" year="1812" museum="smk" invnr="KKSgb4180" href="https://open.smk.dk/artwork/image/KKSgb4180">
+    <i>Telemachos møder Odysseus forklædt som tigger hos hyrden Eumaios - Odysseus; fragment af hele kompositionen</i>, 1812, tegning, blyant, pen, pensel, gråt og brunt blæk, grå og brun lavering, bladmål 168 × 108 mm.
+    <!-- Kilde: https://api.smk.dk/api/v1/art/?object_number=KKSgb4180. Kunstner: C.W. Eckersberg; identitet, datering, teknik, bladmål og samling kontrolleret mod SMK. Billedfil: SMK’s originale JPEG af den beskårne scanning, nedskaleret uden yderligere beskæring. Public domain: https://creativecommons.org/publicdomain/mark/1.0/. -->
+    <!-- metadata checked: 2026-11-23 -->
+  </picture>
+  <picture id="telemachos-hos-eumaios-fragment-1812" year="ca. 1812" museum="smk" invnr="KKSgb4181" href="https://open.smk.dk/artwork/image/KKSgb4181">
+    <i>Telemachos møder Odysseus forklædt som tigger hos hyrden Eumaios - Odysseus; fragment af hele kompositionen</i>, ca. 1812, tegning, blyant, pen, pensel, gråt og brunt blæk, grå og brun lavering, bladmål 188 × 113 mm.
+    <!-- Kilde: https://api.smk.dk/api/v1/art/?object_number=KKSgb4181. Kunstner: C.W. Eckersberg; identitet, datering, teknik, bladmål og samling kontrolleret mod SMK. Billedfil: SMK’s originale JPEG af den beskårne scanning, nedskaleret uden yderligere beskæring. Public domain: https://creativecommons.org/publicdomain/mark/1.0/. -->
+    <!-- metadata checked: 2026-11-23 -->
+  </picture>
+  <picture id="odysseus-haevn-over-bejlerne-1814" year="1814" museum="hirschsprungske" href="https://artsandculture.google.com/asset/DgG8fp3XcHnbIA">
+    <i>Odysseus’ hævn over Penelopes bejlere</i>, 1814, maleri, 24 × 42,8 cm.
+    <!-- Kilde: Den Hirschsprungske Samlings katalogpost på Google Arts &amp; Culture, https://artsandculture.google.com/asset/DgG8fp3XcHnbIA. Original katalogtitel: Ulysses’ revenge on Penelope’s suitors. Kunstner, år, samling, motiv og mål bekræftet; præcis teknik og inventarnummer er ikke oplyst i posten. -->
+    <!-- Billedfil: https://commons.wikimedia.org/wiki/File:Christoffer_Wilhelm_Eckersberg_-_Ulysses%27_revenge_on_Penelope%27s_suitors_-_Google_Art_Project.jpg, original 2525 × 1406 pixel. Fotografisk gengivelse fra Google Art Project, public domain/PD-Art: https://creativecommons.org/publicdomain/mark/1.0/. JPEG optimeret uden beskæring. -->
+    <identifiers>
+      <wikidata>Q116939688</wikidata>
+    </identifiers>
+    <!-- metadata checked: 2026-11-23 -->
   </picture>
 </pictures>

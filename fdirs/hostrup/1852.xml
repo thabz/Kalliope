@@ -3,9 +3,6 @@
 <workhead>
   <title>Viser og Vers</title>
   <year>1852</year>
-  <notes>
-    <note>Noter med en foranstillet asterisk er Hostrups egne.</note>
-  </notes>
   <pictures>
     <picture type="titlepage" src="1852-p1.jpg"><transcription>Viser og Vers, / nogle Minder fra et Studenterliv, / af / C. Hostrup. // Kjøbenhavn. / Forlagt af Bog- og Papirhandler F. H. Eibe. / Trykt hos Louis Klein. / 1852.</transcription></picture>
   </pictures>
@@ -101,6 +98,9 @@ ak! men kun Studenterhavre.
   <title>Regensvise</title>
   <firstline>Man boer saa godt i Regensens Gaard</firstline>
   <source pages="7-8"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -153,6 +153,9 @@ den gamle Gaard.
   <title>En Sommerdag i Gaarden</title>
   <firstline>Solen brænder, hver en Sky</firstline>
   <source pages="9-12"/>
+  <places>
+    <place ref="trekroner-fort" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -387,7 +390,7 @@ og derfor en Skaal til hans Ære!
   <toctitle><num>1.</num>Lad andre prise Forstandens Spil</toctitle>
   <firstline>Lad andre prise Forstandens Spil</firstline>
   <notes>
-    <note>Digtets metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
+    <note editorial="true">Digtets metrik og refræn baserer sig på den norske folkevise <xref poem="folkeviserno2018080401"/>.</note>
   </notes>
   <source pages="19-20"/>
   <quality>korrektur1,kilde,side</quality>
@@ -540,7 +543,7 @@ i Drøm og Daad forbinder.
   <subtitle>Paa Hjemrejsen fra Upsala 1843</subtitle>
   <firstline>Nys fløj vi over Skyen et evigt Sekund</firstline>
   <notes>
-    <note>* Paa Upsalarejsen blev holdt Maaltid i forskjellige Hold (Sectioner), og et Par Medlemmer af Bestyrelsen holdt Orden ved Døren til Spisesalen.</note>
+    <note>Paa Upsalarejsen blev holdt Maaltid i forskjellige Hold (Sectioner), og et Par Medlemmer af Bestyrelsen holdt Orden ved Døren til Spisesalen.</note>
   </notes>
   <source pages="27-29"/>
   <quality>korrektur1,kilde,side</quality>
@@ -800,7 +803,7 @@ den bedste Plads dig venter.
   <subtitle>Efter Besøget i Lund 1851</subtitle>
   <firstline>Rejsen er forbi, jeg staaer paa Hjemmets Vang</firstline>
   <notes>
-    <note>* Ved Indvielsen af Studenterforenings-Bygningen i Lund sammenlignede en Taler den med ,,det sköna slottet östan om solen och nordan om jorden'', som omtales i de svenske Folkeeventyr.</note>
+    <note>Ved Indvielsen af Studenterforenings-Bygningen i Lund sammenlignede en Taler den med ,,det sköna slottet östan om solen och nordan om jorden'', som omtales i de svenske Folkeeventyr.</note>
   </notes>
   <source pages="37-39"/>
   <quality>korrektur1,kilde,side</quality>
@@ -910,6 +913,9 @@ som deler vore lyse Drømme!
   <subtitle>I Christiania 1851</subtitle>
   <firstline>Mulmet sank, det svale</firstline>
   <source pages="42-43"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1375,7 +1381,7 @@ skriver med Blod dig dit Rejsepas.
   <subtitle>Foraar 1849</subtitle>
   <firstline>Det var en Skjærtorsdag, Kongedyb bar</firstline>
   <notes>
-    <note>* <w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
+    <note><w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
   </notes>
   <source pages="63-65"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1551,7 +1557,7 @@ og kom som Studenter herhjem igjen!
     <event>1851-07-25</event>
   </dates>
   <notes>
-    <note>* <w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
+    <note><w>Kampen ved Ekkernforde</w> og <w>Slaget ved Isted</w> ere begge skrevne til Forestillinger, som gaves til Fordeel for Invaliderne.</note>
   </notes>
   <source pages="70-73"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1665,7 +1671,7 @@ som aldrig vi kan betale.
   <title>Studentersang</title>
   <firstline>Eensom og mørk og snæver er vor Bolig</firstline>
   <notes>
-    <note>* Studentersang findes i ,,En Spurv i Tranedands.'' Forf. har troet ikke at burde berøve denne lille Samling og dem, som kjøbe den uden at eje hans øvrige Arbejder, de faa selvstændige Viser, der findes i hans Komedier, saameget mere som flere af disse høre til de meest bekjendte Studentersange.</note>
+    <note>Studentersang findes i ,,En Spurv i Tranedands.'' Forf. har troet ikke at burde berøve denne lille Samling og dem, som kjøbe den uden at eje hans øvrige Arbejder, de faa selvstændige Viser, der findes i hans Komedier, saameget mere som flere af disse høre til de meest bekjendte Studentersange.</note>
   </notes>
   <source pages="77"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1955,9 +1961,9 @@ og Verden er vor.
   <title>Fodrejsen</title>
   <firstline>Man maa rejse tilfods for at sprænge med Hast</firstline>
   <notes>
-    <note>Af J. Chr. Hostrups <i>Eventyr paa Fodreisen</i> (I,4) 1848.</note>
+    <note editorial="true">Af J. Chr. Hostrups <i>Eventyr paa Fodreisen</i> (I,4) 1848.</note>
     <!-- Findes under titlen »Studenterne« i <i>Fest-Sange</i>, udg. af Arthur Arnholtz, Karl Clausen og Finn Viderø, 1947. -->
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="88-89"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2103,7 +2109,7 @@ mild er Værtinden, og Værten er glad
   <toctitle><num>1.</num>Til en Natteravn</toctitle>
   <firstline>Kjære Ven! ifald du noksom</firstline>
   <notes>
-    <note>* Det vilde (efter Forf.s Mening) kun lidet gavne denne Samling, om han med ærbar Alvorlighed vilde befrie den for alle Narrestreger; den vilde dog ikke vinde nogen ,,værdig Holdning,,, og den vilde tabe en stor Deel af den Ungdommelighed, som er dens Særkjende. For den som ikke kan taale disse Par Blade, vil formodentlig hele Samlingen alligevel være til Forargelse.</note>
+    <note>Det vilde (efter Forf.s Mening) kun lidet gavne denne Samling, om han med ærbar Alvorlighed vilde befrie den for alle Narrestreger; den vilde dog ikke vinde nogen ,,værdig Holdning,,, og den vilde tabe en stor Deel af den Ungdommelighed, som er dens Særkjende. For den som ikke kan taale disse Par Blade, vil formodentlig hele Samlingen alligevel være til Forargelse.</note>
   </notes>
   <source pages="94-95"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2161,7 +2167,7 @@ trofast Stræben for sin Ven.
   <toctitle><num>2.</num>En Gadevise</toctitle>
   <firstline>Nu vil jeg synge om Karen</firstline>
   <notes>
-    <note>Findes med titlen »Visen om Karen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
+    <note editorial="true">Findes med titlen »Visen om Karen« i <a work="hostrup/1872"><i>Sange og Digte fra tredive År</i> (1872)</a>.</note>
   </notes>
   <source pages="96-97"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2978,6 +2984,9 @@ thi Punschen den gaaer saa let gjennem Munden.
   <title>Tilbageblik</title>
   <subtitle>I Lyceum, Nytaar 1848</subtitle>
   <firstline>Nu det gamle Forhæng falder</firstline>
+  <dates>
+    <event>1848-01-01</event>
+  </dates>
   <source pages="120-122"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -3183,6 +3192,9 @@ Kling klang! — i Graven bliver lagt!
   </subtitle>
   <firstline>Regensens Provst saa mangen en Gang</firstline>
   <source pages="129-131"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3743,6 +3755,9 @@ at prise den norske Kvinde.
   </dates>
   <source pages="152-160"/>
   <keywords>oehlenschlaeger</keywords>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

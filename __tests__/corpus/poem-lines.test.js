@@ -2,6 +2,7 @@ import {
   collectPoemLineQualityFindings,
   findCommonPoetryIndentationFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
 } from '../../tools/text-quality-poem-lines.js';
@@ -21,11 +22,72 @@ const titleMetadataIssues = data =>
   });
 
 describe('Check workfiles', () => {
+  it.each([',', '.', ';', ':', '!', '?'])(
+    'rejects a line starting with %s, including formatted and entity text',
+    punctuation => {
+      for (const content of [punctuation, `  <i>${punctuation}</i>`, `&#${punctuation.codePointAt(0)};`]) {
+        const issues = findLineLeadingPunctuationFindings({
+          file: 'fdirs/test/work.xml',
+          data: `<text id="noisy"><head><subtitle><line>${content} Undertitel</line><line>Anden linje</line></subtitle></head></text>`,
+        });
+        expect(issues).toEqual([expect.objectContaining({
+          rule: 'line-leading-punctuation', textId: 'noisy', line: 1,
+        })]);
+      }
+    },
+  );
+
+  it.each(['Æbler', 'Én sang', '4 Sange', '„Citat“', '(I Hexametre)', '— Replik'])(
+    'allows a line starting with letters, numbers or literary delimiters: %s',
+    content => {
+      expect(findLineLeadingPunctuationFindings({
+        file: 'fdirs/test/work.xml',
+        data: `<text id="valid"><head><subtitle><line><footnote>, note.</footnote>${content}</line><line>Anden linje</line></subtitle></head></text>`,
+      })).toEqual([]);
+    },
+  );
+
+  it('checks lines in work and section headings but ignores comments and ordinary verse', () => {
+    const issues = findPoemLineFindingsInText({
+      file: 'fdirs/test/work.xml',
+      data: '<kalliopework><workhead><subtitle><line>, Værk</line></subtitle></workhead><workbody><section id="part"><head><suptitle><line>. Del</line></suptitle></head></section><!-- <line>, Kommentar</line> --><text id="verse"><body><poetry>\n, verslinje\n</poetry></body></text></workbody></kalliopework>',
+      lang: 'da',
+      shouldUseModernFrenchPunctuationSpacing: false,
+    });
+    expect(issues.filter(issue => issue.rule === 'line-leading-punctuation').map(issue => issue.textId)).toEqual(['workhead', 'part']);
+  });
+
+  it('ignores correction readings while still checking the surrounding text', () => {
+    const data = '<text><body><poetry>God,<!-- Rettelsesark: ,] ∅ --> tekst\n<!-- Rettelsesark: Himmel] Himmmel -->\nFejl , her</poetry></body></text>';
+    const issues = findPoemLineFindingsInText({ file: 'test.xml', data, lang: 'da', shouldUseModernFrenchPunctuationSpacing: false });
+    expect(issues).toEqual([expect.objectContaining({ rule: 'space-before-comma-with-markup', line: 3 })]);
+  });
+
   it('has no poem-line quality issues', () => {
     const issues = collectPoemLineQualityFindings();
     if (issues.length > 0) {
       throw new Error(issues.map(formatPoemLineIssue).join('\n'));
     }
+  });
+
+  it('restores a parent exception after a nested text without exempting children or siblings', () => {
+    const data = [
+      '<kalliopework><workbody><text id="parent" ignore-tests="smaa"><body>',
+      '<prose>blaaagtig</prose>',
+      '<text id="child"><body><prose>',
+      'blaaagtig',
+      '</prose></body></text>',
+      '<!-- </text> -->',
+      '<prose>blaaagtig</prose>',
+      '</body></text>',
+      '<text id="sibling"><body><prose>',
+      'blaaagtig',
+      '</prose></body></text></workbody></kalliopework>',
+    ].join('\n');
+    const issues = findPoemLineFindingsInText({
+      file: 'test.xml', data, lang: 'da', shouldUseModernFrenchPunctuationSpacing: false,
+    });
+    expect(issues.filter(issue => issue.rule === 'smaa').map(issue => issue.line)).toEqual([4, 10]);
   });
 
   it('allows mmm in a correction note marked with a closing bracket', () => {
@@ -158,6 +220,18 @@ describe('Check workfiles', () => {
       }),
     ]);
     expect(issues[0].description).toContain('2 columns');
+  });
+
+  it('checks verses after a note containing poetry without counting the note verses', () => {
+    const plain = '<text id="shifted"><body><poetry>\n  Første\n    Anden\n  Tredje\n</poetry></body></text>';
+    const annotated = plain.replace('Første',
+      'Første<footnote><poetry>Citat uden indryk<br/>Et andet citat</poetry></footnote>');
+    expect(commonIndentationIssues(annotated)).toEqual(commonIndentationIssues(plain));
+  });
+
+  it('retains an unindented main verse following a verse citation in a note', () => {
+    const annotated = '<text id="relative"><body><poetry>\n  Første<footnote><poetry>Citat<br/>Citat</poetry></footnote>\nAnden\n</poetry></body></text>';
+    expect(commonIndentationIssues(annotated)).toEqual([]);
   });
 
   it('allows one-column relative indentation when a verse line starts at zero', () => {
@@ -503,7 +577,7 @@ describe('Check workfiles', () => {
     },
   );
 
-  it.each([',', '?', '!'])(
+  it.each(['?', '!'])(
     'allows a title ending with %s',
     punctuation => {
       const issues = titleMetadataIssues(
@@ -513,6 +587,46 @@ describe('Check workfiles', () => {
       expect(
         issues.filter(issue => issue.rule === 'title-trailing-punctuation'),
       ).toHaveLength(0);
+    },
+  );
+
+  it.each(['toctitle', 'linktitle'])(
+    'rejects a comma inherited from title by the effective %s',
+    type => {
+      const issues = titleMetadataIssues(
+        '<text id="inherited" ignore-tests="title-trailing-punctuation"><head><title>Lida,</title></head></text>',
+      );
+      expect(issues.some(issue => issue.description.includes(`effective ${type}`))).toBe(true);
+    },
+  );
+
+  it('allows a printed title comma when both display titles override it', () => {
+    expect(titleMetadataIssues(
+      '<text id="overridden"><head><title>Lida,</title><toctitle>Lida</toctitle><linktitle>Lida</linktitle></head></text>',
+    )).toEqual([]);
+  });
+
+  it.each([
+    '<firstline>Linje,</firstline>',
+    '<title>Lina’s,<footnote>Note.</footnote></title>',
+    '<title><num>I.</num>Lida,</title><toctitle/><linktitle/>',
+  ])('checks inherited commas after title extraction: %s', fields => {
+    const issues = titleMetadataIssues(`<text id="fallback"><head>${fields}</head></text>`);
+    expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(2);
+  });
+
+  it('uses a clean index title as the link title fallback', () => {
+    expect(titleMetadataIssues(
+      '<text id="indexed"><head><title>Lida,</title><indextitle>Lida</indextitle><toctitle>Lida</toctitle></head></text>',
+    )).toEqual([]);
+  });
+
+  it.each(['kalliopework', 'section'])(
+    'checks inherited display-title commas on %s',
+    type => {
+      const head = type === 'kalliopework' ? 'workhead' : 'head';
+      const issues = titleMetadataIssues(`<${type}><${head}><title>Titel,</title></${head}></${type}>`);
+      expect(issues.filter(issue => issue.rule === 'title-trailing-punctuation')).toHaveLength(2);
     },
   );
 

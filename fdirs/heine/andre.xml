@@ -10,6 +10,9 @@
 <head>
   <title>Im Hafen</title>
   <firstline>Glücklich der Mann, der den Hafen erreicht hat</firstline>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -95,6 +98,9 @@ Dreht sich die ganze betrunkene Welt.
 <head>
   <title>Auf den Flügeln des Gesanges</title>
   <firstline>Auf den Flügeln des Gesanges</firstline>
+  <places>
+    <place ref="ganges" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -224,6 +230,9 @@ Herzekrank und bleich und treu.
 <head>
   <title>Himmel grau und wochentäglich!</title>
   <firstline>Himmel grau und wochentäglich!</firstline>
+  <places>
+    <place ref="elbe" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

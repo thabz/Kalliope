@@ -11,9 +11,17 @@
   <title>Sang for Danske</title>
   <firstline>Der er et Land, dets Sted er høit mod Norden</firstline>
   <notes>
-    <note type="source">Kilde er C. E. F. Weyse: <i>Romancer og Sange</i>, 1852.</note>
-    <note type="credits">Bidrag fra Sven Sørensen</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen</note>
   </notes>
+  <source>
+    <title>Romancer og Sange</title>
+    <author>C. E. F. Weyse</author>
+    <year>1852</year>
+  </source>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -72,7 +80,7 @@ og een den danske Bøn, hvert Hjerte beder:
   <firstline>Dybt hælder Aaret i sin Gang</firstline>
   <notes>
     <note>1833</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <keywords>balladestrofe</keywords>
   <quality>korrektur1</quality>

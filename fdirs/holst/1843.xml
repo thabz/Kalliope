@@ -18,7 +18,7 @@
   <title>Paa Rhinen</title>
   <firstline>Vi seilede ned ad Rhinen</firstline>
   <notes>
-    <note>pp. 1-4</note>
+    <note editorial="true">pp. 1-4</note>
   </notes>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -191,7 +191,7 @@ Da vil Du forstaae, at i disse Ord
   <subtitle>München</subtitle>
   <firstline>Naar Foraaret kommer med Sisgen og Stær</firstline>
   <pictures>
-    <picture src="1873-p3.jpg">Holsts portræt som tegnet af Vilhelm Marstrand i München 1840. Senere trykt i <a work="holst/1873"><i>Fra min Ungdom</i> (1873)</a>.</picture>
+    <picture artwork="marstrand/holst-1840"/>
   </pictures>
   <source pages="51-52">H.P. Holst: <i>Ude og Hjemme</i>, C.A. Reitzels Forlag, Kbh., 1843.</source>
   <keywords>marstrand</keywords>
@@ -244,13 +244,16 @@ Til Rom efter Bryllupsvisen.
   <firstline>Hører I Bifaldets Storm fra det mægtige Amphitheater?</firstline>
   <notes>
     <note>Statue i det capitolinske Museum.</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <pictures>
     <picture src="holst2001042501.jpg" museum="capitolini"><i>Il galata morente</i>.</picture>
   </pictures>
   <source pages="143-154"><i>Ude og Hjemme</i>, 1843.</source>
   <keywords>heksameter</keywords>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

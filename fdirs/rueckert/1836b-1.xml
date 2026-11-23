@@ -6,7 +6,7 @@
   <toctitle><num>1.</num>Erstes Bändchen</toctitle>
   <breadcrumbtitle>Bd. 1</breadcrumbtitle>
   <notes>
-    <note>Rückert, Friedrich: Die Weisheit des Brahmanen. Bd. 1. Leipzig, 1836. In: <a href="http://www.deutschestextarchiv.de/rueckert_brahmane01_1836">Deutsches Textarchiv</a>, abgerufen am 06.10.2019.</note>
+    <note editorial="true">Rückert, Friedrich: Die Weisheit des Brahmanen. Bd. 1. Leipzig, 1836. In: Deutsches Textarchiv <a href="http://www.deutschestextarchiv.de/rueckert_brahmane01_1836">↬</a>, abgerufen am 06.10.2019.</note>
   </notes>
   <year>1836</year>
   <identifiers>
@@ -7224,6 +7224,9 @@ Und Dinge nicht zu thun, die nur fuͤr beide ſind.
 <head>
   <title><num>47.</num>Ein rechter Lehrer iſt, wer pilgernd alle Staͤten</title>
   <firstline>Ein rechter Lehrer iſt, wer pilgernd alle Staͤten</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>

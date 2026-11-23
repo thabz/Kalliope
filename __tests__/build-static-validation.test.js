@@ -1,4 +1,7 @@
-import { validateFirstlineMarkup } from '../tools/build-static/validation.js';
+import {
+  validateFirstlineMarkup,
+  validateIndexTitleMarkup,
+} from '../tools/build-static/validation.js';
 
 describe('build-static validation', () => {
   it('explains how to remove markup from a firstline', () => {
@@ -24,4 +27,9 @@ describe('build-static validation', () => {
     ).not.toThrow();
   });
 
+  it('rejects obsolete overline markup in index titles', () => {
+    expect(() => validateIndexTitleMarkup(
+      'Dan k<o>o</o>ning', 'dan', '1495.xml',
+    )).toThrow('har markup i titlen');
+  });
 });

@@ -1,3 +1,4 @@
+import { textMatches } from './libs/text-ranges.js';
 import { discoverPoetFiles } from './libs/poet-files.js';
 import fs from 'fs';
 import path from 'path';
@@ -111,18 +112,20 @@ const findCommonPoetryIndentationFindings = ({
   context = createTextContext(data),
 }) => {
   const issues = [];
-  const textRegexp = /<text\b[^>]*>[\s\S]*?<\/text>/gu;
-  let textMatch;
-
-  while ((textMatch = textRegexp.exec(data)) != null) {
+  for (const textMatch of textMatches(data)) {
     const text = textMatch[0];
+    const textWithoutNotes = text.replace(/<(note|footnote)\b[^>]*>[\s\S]*?<\/\1>/gu,
+      note => note.replace(/[^\n]/g, ' '));
     const textId = firstMatch(text, /^<text\b[^>]*\sid="([^"]+)"/u);
     const verseLines = [];
     const poetryRegexp = /<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu;
     let poetryMatch;
 
-    while ((poetryMatch = poetryRegexp.exec(text)) != null) {
-      const poetry = poetryContentForIndentation(poetryMatch[1]);
+    while ((poetryMatch = poetryRegexp.exec(textWithoutNotes)) != null) {
+      const contentOffset = poetryMatch.index + poetryMatch[0].indexOf(poetryMatch[1]);
+      const poetry = poetryContentForIndentation(
+        text.slice(contentOffset, contentOffset + poetryMatch[1].length),
+      );
       const poetryStart =
         textMatch.index +
         poetryMatch.index +
@@ -182,7 +185,7 @@ const findPoetrySpacingFindings = ({
   );
   const issues = [];
 
-  for (const text of maskedData.matchAll(/<text\b[^>]*>[\s\S]*?<\/text>/gu)) {
+  for (const text of textMatches(maskedData)) {
     const textId = firstMatch(text[0], /^<text\b[^>]*\sid="([^"]+)"/u);
     for (const block of text[0].matchAll(/<poetry\b[^>]*>([\s\S]*?)<\/poetry>/gu)) {
       const body = block[1];
@@ -281,6 +284,32 @@ const titleIssue = ({ file, context, textId, candidate, rule, description }) => 
   };
 };
 
+const findLineLeadingPunctuationFindings = ({
+  file,
+  data,
+  context = createTextContext(data),
+}) => {
+  const document = parseXMLFragment(data);
+  return getElementsByTagName(document, 'line').flatMap(element => {
+    const content = titleTextWithoutNotes({ title: element.toString() });
+    if (/^[,.;:!?]/u.test(content) === false) {
+      return [];
+    }
+    let owner = element.parentNode;
+    while (owner != null && ['text', 'section', 'workhead'].includes(owner.tagName) === false) {
+      owner = owner.parentNode;
+    }
+    return [titleIssue({
+      file,
+      context,
+      textId: owner == null ? undefined : safeGetAttr(owner, 'id') ?? owner.tagName,
+      candidate: { element },
+      rule: 'line-leading-punctuation',
+      description: 'line must not begin with a comma, period, semicolon, colon, exclamation mark, or question mark.',
+    })];
+  });
+};
+
 const findTitleMetadataFindings = ({
   file,
   data,
@@ -304,7 +333,9 @@ const findTitleMetadataFindings = ({
     ).forEach(element => {
       const type = element.tagName;
       const allowsFootnotes = ['title', 'toctitle'].includes(type);
-      const allowedFormatting = type === 'toctitle' ? ['w', 'i'] : [];
+      const allowedFormatting = type === 'toctitle'
+        ? ['w', 'i']
+        : [];
       const hasDisallowedMarkup = node => getChildren(node).some(child => {
         if (child.tagName === 'footnote') {
           return allowsFootnotes === false;
@@ -323,7 +354,7 @@ const findTitleMetadataFindings = ({
             textId,
             candidate: { element, type },
             rule: 'title-markup',
-            description: `${type} contains disallowed markup; only plain num prefixes${allowsFootnotes === true ? ', footnotes' : ''}${type === 'toctitle' ? ', w and i' : ''} are permitted.`,
+            description: `${type} contains disallowed markup; only plain num prefixes${allowsFootnotes === true ? ', footnotes and o' : ''}${type === 'toctitle' ? ', w and i' : ''} are permitted.`,
           }),
         );
       }
@@ -344,7 +375,8 @@ const findTitleMetadataFindings = ({
       const title = titleTextWithoutNotes(candidate);
       const endsWithAllowedEllipsis = /(?:\.\s*){3,}$/u.test(title);
       const forbiddenComma = type !== 'title' && /,$/u.test(title) === true;
-      const forbiddenOtherPunctuation = punctuationIgnored === false &&
+      const forbiddenOtherPunctuation = ['text', 'kalliopework'].includes(owner.tagName) === true &&
+        punctuationIgnored === false &&
         titleFieldsWithoutTrailingPunctuation.includes(type) === true &&
         /[.:;]$/u.test(title) === true && endsWithAllowedEllipsis === false;
       if (forbiddenComma === true || forbiddenOtherPunctuation === true) {
@@ -362,18 +394,46 @@ const findTitleMetadataFindings = ({
         );
       }
     });
+
+    const title = extractedTitleCandidate(head, 'title');
+    const firstline = extractedTitleCandidate(head, 'firstline');
+    const indextitle = extractedTitleCandidate(head, 'indextitle');
+    const linktitle = extractedTitleCandidate(head, 'linktitle');
+    const toctitle = extractedTitleCandidate(head, 'toctitle');
+    const effectiveTitles = {
+      toctitle: toctitle ?? title ?? firstline ?? linktitle,
+      linktitle: effectiveTextTitles({ firstline, title, indextitle, linktitle }).linkTitle,
+    };
+    Object.entries(effectiveTitles).forEach(([type, candidate]) => {
+      if (candidate == null || ['title', 'firstline'].includes(candidate.type) === false) {
+        return;
+      }
+      if (/,$/u.test(titleTextWithoutNotes(candidate)) === true) {
+        issues.push(titleIssue({
+          file,
+          context,
+          textId,
+          candidate,
+          rule: titleTrailingPunctuationRule,
+          description: `The effective ${type} must not end with a comma (inherited from ${candidate.type}).`,
+        }));
+      }
+    });
   };
 
-  checkTrailingPunctuation({
-    head: workhead,
-    owner: work,
-    textId: 'workhead',
+  [workhead, ...getElementsByTagName(work, 'head')].forEach(head => {
+    if (head != null) {
+      checkTrailingPunctuation({
+        head,
+        owner: head.parentNode,
+        textId: head === workhead ? 'workhead' : safeGetAttr(head.parentNode, 'id'),
+      });
+    }
   });
 
   getElementsByTagName(document, 'text').forEach(text => {
     const head = getChildByTagName(text, 'head');
     const textId = safeGetAttr(text, 'id');
-    checkTrailingPunctuation({ head, owner: text, textId });
     const firstline = extractedTitleCandidate(head, 'firstline');
     const title = extractedTitleCandidate(head, 'title');
     const indextitle = extractedTitleCandidate(head, 'indextitle');
@@ -586,27 +646,30 @@ const findMissingModernFrenchSpacing = data => {
 };
 
 const ignoredTestsAtLine = context => {
-  const partRegexp = /<(?:text|section)\b[^>]*>/g;
+  const partRegexp = /<(\/?)(?:text|section)\b[^>]*>/g;
   const ignoredAtLine = [];
-  let currentIgnoredTests = [];
+  const ignoredStack = [];
   let partIndex = 0;
-  const parts = Array.from(context.data.matchAll(partRegexp));
+  const withoutComments = context.data.replace(/<!--[\s\S]*?-->/gu,
+    comment => comment.replace(/[^\n]/g, ' '));
+  const parts = Array.from(withoutComments.matchAll(partRegexp));
 
   context.lineStarts.forEach(lineStart => {
     while (partIndex < parts.length && parts[partIndex].index <= lineStart) {
-      const ignoreTestsMatch = parts[partIndex][0].match(
-        /\signore-tests="([^"]*)"/
-      );
-      currentIgnoredTests =
-        ignoreTestsMatch == null
+      const part = parts[partIndex];
+      if (part[1] === '/') {
+        ignoredStack.pop();
+      } else if (/\/\s*>$/u.test(part[0]) === false) {
+        const ignoreTestsMatch = part[0].match(/\signore-tests="([^"]*)"/);
+        ignoredStack.push(ignoreTestsMatch == null
           ? []
-          : ignoreTestsMatch[1]
-              .split(',')
-              .map((testName) => testName.trim())
-              .filter((testName) => testName.length > 0);
+          : ignoreTestsMatch[1].split(',')
+              .map(testName => testName.trim())
+              .filter(testName => testName.length > 0));
+      }
       partIndex += 1;
     }
-    ignoredAtLine.push(currentIgnoredTests);
+    ignoredAtLine.push(ignoredStack.at(-1) ?? []);
   });
 
   return ignoredAtLine;
@@ -728,7 +791,8 @@ const findPoemLineFindingsInText = ({
 }) => {
   const issues = [];
   const ignoredTests = ignoredTestsAtLine(context);
-  const lineData = context.lines;
+  const checkedData = removeRegionContentKeepingLines(data, /<!--[\s\S]*?-->/gu);
+  const lineData = checkedData.split('\n');
 
   for (const rule of regexps) {
     const regexp = rule.regexp;
@@ -741,7 +805,7 @@ const findPoemLineFindingsInText = ({
       continue;
     }
 
-    if (regexp.test(data)) {
+    if (regexp.test(checkedData)) {
       lineData.forEach((line, lineIndex) => {
         if (
           regexp.test(line) &&
@@ -780,6 +844,7 @@ const findPoemLineFindingsInText = ({
     ...findCommonPoetryIndentationFindings({ file, data, context }),
     ...findPoetrySpacingFindings({ file, data, context }),
     ...findTitleMetadataFindings({ file, data, context }),
+    ...findLineLeadingPunctuationFindings({ file, data, context }),
   );
 
   return issues;
@@ -924,6 +989,7 @@ export {
   findCommonPoetryIndentationFindings,
   findPoetrySpacingFindings,
   findTitleMetadataFindings,
+  findLineLeadingPunctuationFindings,
   formatPoemLineIssue,
   findPoemLineFindingsInText,
   parsePoetWorkFiles,

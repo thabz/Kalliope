@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="boyeae" country="dk" lang="da" type="poet">
+  <!-- Identitet/livsdata: DBL1 II561–562, https://runeberg.org/dbl/2/0563.html og /0564.html. Pseudonymer: samme værk II564, /0566.html; Athene-tilskrivning: Erslew I190, https://runeberg.org/almiforf/1/0196.html. -->
+  <!-- Perioden er redaktionelt valgt ud fra den dokumenterede virksomhed 1814–1840 og DBL1 II564: Romantikkens Forkæmper. Hans Mikkelsen/Just Justesen er her Boyes holbergske pseudonymer, ikke påstand om eneret til navnene. -->
+  <name>
+    <firstname>Adolph Engelbert</firstname>
+    <lastname>Boye</lastname>
+    <pseudonym>Peter Wegner</pseudonym>
+    <pseudonym>Hans Mikkelsen</pseudonym>
+    <pseudonym>Just Justesen</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1784-02-11</date>
+      <place>Nakskov</place>
+    </born>
+    <dead>
+      <date>1851-11-16</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>BAEBoye</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

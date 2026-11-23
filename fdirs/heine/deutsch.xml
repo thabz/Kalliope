@@ -4,7 +4,7 @@
   <title>Deutschland. Ein Wintermärchen</title>
   <year>1844</year>
   <notes>
-    <note>Tilføjet af Henrik Nielsen.</note>
+    <note type="credits" editorial="true">Tilføjet af Henrik Nielsen.</note>
   </notes>
 </workhead>
 <workbody>
@@ -2190,6 +2190,9 @@ Man heißt sie geräucherte Sprotte.
   <title>Als Republik war Hamburg nie</title>
   <toctitle>Caput XXIII</toctitle>
   <firstline>Als Republik war Hamburg nie</firstline>
+  <places>
+    <place ref="elbe" relation="setting"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -2365,7 +2368,7 @@ Der Sänger, der den Messias besang
 Auf seiner frommen Leier.
 
 Dort auf der Kommode steht noch jetzt
-Die Büste von meinem Klopstock<note><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note>,
+Die Büste von meinem Klopstock<note editorial="true"><a poet="klopstock">F. G. Klopstock (1724-1803)</a>.</note>,
 Jedoch seit Jahren dient sie mir
 Nur noch als Haubenkopfstock.
 
@@ -2608,6 +2611,9 @@ In Reden und in Schriften.
   <title>Die Wangen der Göttin glühten so rot</title>
   <toctitle>Caput XXVI</toctitle>
   <firstline>Die Wangen der Göttin glühten so rot</firstline>
+  <places>
+    <place ref="elbe" relation="setting"/>
+  </places>
 </head>
 <body>
 <poetry>

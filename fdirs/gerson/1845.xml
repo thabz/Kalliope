@@ -15,6 +15,9 @@
   <title>Den trøstende Frelser</title>
   <firstline>Da Frelseren vandrede synligt</firstline>
   <source pages="5-6"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -185,7 +188,7 @@ Han blæste Trompet for Brød.
   <title>Manden i Maanen</title>
   <firstline>Der boer en Mand i Maanen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Jannick Olsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Jannick Olsen.</note>
   </notes>
   <source pages="14"/>
   <quality>korrektur1,kilde,side</quality>

@@ -1,4 +1,26 @@
 import Index from '../pages/index.js';
+import { renderToStaticMarkup } from 'react-dom/server';
+import LangContext from '../common/LangContext.js';
+
+test('forsidens dagsbillede viser museum og link til værksiden', () => {
+  const remoteUrl = 'https://www.npg.org.uk/collections/search/portrait/mw03305';
+  const html = renderToStaticMarkup(
+    <LangContext.Provider value="da">
+      <Index news={[]} todaysEvents={[{
+        type: 'image',
+        src: '/images/hunt/p1.jpg',
+        content_lang: 'da',
+        content_html: [['Benjamin Robert Haydon: Leigh Hunt, ca. 1811.']],
+        museum: { id: 'npg', name: 'National Portrait Gallery, London' },
+        remoteUrl,
+      }]} />
+    </LangContext.Provider>
+  );
+
+  expect(html).toContain('National Portrait Gallery, London');
+  expect(html).toContain('href="/da/museum/npg"');
+  expect(html).toContain(`href="${remoteUrl}"`);
+});
 
 const news = [{ date: '01-01-2020', title: 'Nyhed' }];
 const event = { type: 'text', date: '1900-10-02', content_html: 'Begivenhed' };

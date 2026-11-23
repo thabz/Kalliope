@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hedegaardjc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johan Christian</firstname>
+    <lastname>Hedegaard</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1762-02-21</date>
+      <place>Odense</place>
+    </born>
+    <dead>
+      <date>1831-12-16</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <danskforfatterleksikon-dk>HJohanChristianHedegaard</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

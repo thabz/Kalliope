@@ -10,8 +10,8 @@
   <title>Veris aduentus</title>
   <firstline>In uernalis temporis</firstline>
   <notes>
-    <note>Digtet er forfattet omkring år 1500.</note>
-    <note type="credits">Bidrag fra Ejnar Nørager Pedersen.</note>
+    <note editorial="true">Digtet er forfattet omkring år 1500.</note>
+    <note editorial="true" type="credits">Bidrag fra Ejnar Nørager Pedersen.</note>
     <quality>korrektur1,kilde</quality>
   </notes>
   <source>
@@ -64,8 +64,8 @@ noctis et diei.
   <title>Foraarssang</title>
   <firstline>Vaaren! Vaaren er i Brudd!</firstline>
   <notes>
-    <note>Teksten blev af Morten Børup skrevet på latin (»VERIS ADVENTVS«), som var sproget for alle dannede mænd af den tid. Den ældste kilde til teksten er et manuskript fra Gl. kgl. Samling og oversættelsen her er af Marinus Børup (1891-1959).</note>
-    <note>Se <xref poem="boerup2006060401"/> for den latinske original.</note>
+    <note editorial="true">Teksten blev af Morten Børup skrevet på latin (»VERIS ADVENTVS«), som var sproget for alle dannede mænd af den tid. Den ældste kilde til teksten er et manuskript fra Gl. kgl. Samling og oversættelsen her er af Marinus Børup (1891-1959).</note>
+    <note editorial="true">Se <xref poem="boerup2006060401"/> for den latinske original.</note>
     <!-- Efter Billen -->
   </notes>
 </head>

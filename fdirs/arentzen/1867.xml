@@ -4,8 +4,7 @@
   <title>Ny Digtsamling</title>
   <year>1867</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er Arentzens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1867-p1.jpg"><transcription>Ny Digtsamling / af / Kristian Arentzen. // Kjøbenhavn / O. B. Wroblewskys Forlag. / G. S. Wibes Bogtrykkeri. / 1867.</transcription></picture>
@@ -20,6 +19,10 @@
   <title>Arnold fra Brescia</title>
   <firstline>Rødmende straaler den østlige Himmel</firstline>
   <source pages="1-4"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -277,6 +280,9 @@ Vincent!
   <title>Johan Rantzau</title>
   <firstline>Han sad som en rødmusset, trettenaars Pog</firstline>
   <source pages="13-15"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -710,6 +716,9 @@ skjærme sine smaa Forstødte med en mægtig Haand.
   </pictures>
   <!-- Sassoferrato har malet madonnaen med det sovende jesubarn mange gange, men der findes ikke (længere?) en udgave på Pinacoteca Brera i Milano. -->
   <source pages="32-37"/>
+  <places>
+    <place ref="verona" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -779,10 +788,10 @@ smykket med Statuers Hær.
 
 Pinakotheket ei mindre os glæder.
 Hagar forstødes, og Ismael græder,
-Sara sig bortvender streng<note>* Maleri af Guercino.</note>.
+Sara sig bortvender streng<note>Maleri af Guercino.</note>.
 Yndigt Madonna med Uskyld i Øiet
 sidder med moderlig Kjærlighed bøiet
-over sin slumrende Dreng<note>* Maleri af Sassoferrato.</note>.
+over sin slumrende Dreng<note>Maleri af Sassoferrato.</note>.
 
 Hist i Verona vi undrende skued
 Amfitheatret, som mægtigt sig bued;
@@ -856,7 +865,7 @@ skriv saa lidt langt og lidt snart!
   <subtitle>(Efter Goethe)</subtitle>
   <firstline>Bedæk din Himmel, Zeus!</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2000010808"/>.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2000010808"/>.</note>
   </notes>
   <source pages="38-40"/>
   <quality>korrektur1,korrektur2,side,side</quality>
@@ -1090,6 +1099,9 @@ og Sjælen har Dommedag.
   <title>Den Blinde ved Arno</title>
   <firstline>Hver Morgen hisset ved Arnos Flod</firstline>
   <source pages="47-48"/>
+  <places>
+    <place ref="arno" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -1266,7 +1278,7 @@ I med mig følge maa
 Ved liflig Malvasier
 vi Tiden skal forslaae.«
 Den brave Abbed stønner:
-»Eheu!<note>* Ak!</note> jeg stakkels Mand,
+»Eheu!<note>Ak!</note> jeg stakkels Mand,
 som op af Eders Trappe
 ei mere vinde kan.
 
@@ -1294,7 +1306,7 @@ Nu skal Du faae en Medhjælp,
 som Du vil frydes ved.«
 Den svære Smed sig nærmer,
 sortsmudset, med et Grin.
-»Ja, ora et <w>labora</w>!<note>* Bed og <w>arbeid</w>!</note>
+»Ja, ora et <w>labora</w>!<note>Bed og <w>arbeid</w>!</note>
 det er min Medicin.
 
 I Skole flux Du lage
@@ -2557,7 +2569,7 @@ til Bølgernes Vuggesange.
 
 Ja, lad din Aand paa sin vilde Flugt
 som Maagen paa Bølgen sig vugge —
-da skal dit Suk harmonisk og<note>og] ag</note> smukt
+da skal dit Suk harmonisk og<note editorial="true">og] ag</note> smukt
 fortabes i Skabningens Sukke.
 </poetry>
 </body>
@@ -2569,6 +2581,10 @@ fortabes i Skabningens Sukke.
   <firstline>Nu Juletidens Tryllespil</firstline>
   <source pages="112-117"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="capitoline-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
 <body>
@@ -2609,7 +2625,7 @@ mod Stalden og mod Krybben frem,
 hvor Jesusbarnet smiled.
 
 Jeg springer over al den Stads,
-Maria maggiore<note>* Kirke i Rom.</note>
+Maria maggiore<note>Kirke i Rom.</note>
 med sagte Vals og anden Spas
 i Juletiden gjorde.
 
@@ -2671,7 +2687,7 @@ som paa Theatrets Scene.
 En Kæmpedukke var Enhver,
 med Klæder udstafferet:
 som Du kan tænke Dig, især
-»bambino«<note>* ↄ: Barnet.</note> dog brillered.
+»bambino«<note>ↄ: Barnet.</note> dog brillered.
 
 Og bagest var et Landskab smukt
 med Palmer og deslige,
@@ -2915,6 +2931,11 @@ min Hustrus velsignede Arme.
 <head>
   <title>Vølund</title>
   <firstline>Ensom jeg sidder</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/arentzen2018022837 -->
+    <!-- Kilde: https://heimskringla.no/wiki/V%C3%B8lund -->
+    <note editorial="true">Se også <xref poem="eddadigte2026112010"/>.</note>
+  </notes>
   <source pages="125-129"/>
   <quality>korrektur1,korrektur2,side,side</quality>
 </head>
@@ -3234,10 +3255,10 @@ ei var ilde!
 Mod os kommer en Mand,
 og, som Hund, følger bagefter Grisen.
 Høit i Tiggernes Land
-om en »mezzo bajoc«<note>* ↄ: En Skilling.</note> lyder Visen,
+om en »mezzo bajoc«<note>ↄ: En Skilling.</note> lyder Visen,
 medens Store som Smaa
 med et »Yes!« la’er forstaae,
-at dem gjester en »forestiere«<note>* ↄ: fremmed Reisende, der næsten altid i Italien antages for en Englænder.</note> —
+at dem gjester en »forestiere«<note>ↄ: fremmed Reisende, der næsten altid i Italien antages for en Englænder.</note> —
 mon de skjønne derpaa
 som en Ære?
 
@@ -3547,7 +3568,7 @@ og Guddomsflammer
 skjultes i Sjælen,
 skjøndt Taager dem dækked.
 Sæmunds Geni
-haandgribeligt var<note>* Han var et mekanisk Geni.</note> —
+haandgribeligt var<note>Han var et mekanisk Geni.</note> —
 og dog den Dummeste
 troede sig klogere!
 
@@ -3603,7 +3624,7 @@ den iblandt dem,
 der ikke Bagagen —
 skjøndt hans egen! —
 ordner paa Hesten
-ganske som Andre<note>* Paa Island, hvor alle Reiser foretages til Hest, gjælder det at ordne Bagagen ligeligt paa begge sider af Hesten, som bærer den.</note>.
+ganske som Andre<note>Paa Island, hvor alle Reiser foretages til Hest, gjælder det at ordne Bagagen ligeligt paa begge sider af Hesten, som bærer den.</note>.
 
 Muldvarpesjælen
 i Menneskehammen
@@ -3769,10 +3790,10 @@ Jubelen rystede Syden og Norden,
 Frihedshymnen hæved sig, gjenfødt, mod Sky.
 Kun et Moment — Bourgeoiskongen staaer,
 kløgtig og fed, og beregner Procenter,
-og »Adam Homo«<note>Paludan-Müllers <a work="mueller/1842"><i>Adam Homo</i> (1842)</a>.</note> kom ud i det Aar,
+og »Adam Homo«<note editorial="true">Paludan-Müllers <a work="mueller/1842"><i>Adam Homo</i> (1842)</a>.</note> kom ud i det Aar,
 dengang da vi blev Studenter.
 
-Tidsaldren ligned »en Sjæl efter Døden«<note>Heibergs »En Sjæl efter Døden« findes i <a work="heibergjl/1841"><i>Nye Digte</i> (1841)</a>.</note>,
+Tidsaldren ligned »en Sjæl efter Døden«<note editorial="true">Heibergs »En Sjæl efter Døden« findes i <a work="heibergjl/1841"><i>Nye Digte</i> (1841)</a>.</note>,
 Johan Ludvigs mesterlig fine Portræt.
 Goldschmidt, »Corsaren«, var Trøster i Nøden:
 Witz’en smelded lystig — en broget Raket!
@@ -3808,7 +3829,7 @@ Held over Danmark, vor Moder!
   <subtitle>(Efter Goethe)</subtitle>
   <firstline>Gud signe Dig, unge Kvinde</firstline>
   <notes>
-    <note>Gendigtning af Goethes <xref type="translation" poem="goethe2018050901"/>.</note>
+    <note editorial="true">Gendigtning af Goethes <xref type="translation" poem="goethe2018050901"/>.</note>
   </notes>
   <source pages="165-174"/>
   <quality>korrektur1,korrektur2,side,side</quality>
@@ -4136,7 +4157,7 @@ med Drengen paa Armen!
   <subtitle>(Efter Byron)</subtitle>
   <firstline>Skjøndt for Solen nu Skyerne drage</firstline>
   <notes>
-    <note>Gendigtning af Byrons <xref type="translation" poem="byron2002021401"/>.</note>
+    <note editorial="true">Gendigtning af Byrons <xref type="translation" poem="byron2002021401"/>.</note>
   </notes>
   <source pages="175-177"/>
   <quality>korrektur1,korrektur2,side,side</quality>

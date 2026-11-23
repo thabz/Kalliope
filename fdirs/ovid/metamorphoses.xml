@@ -5,8 +5,8 @@
   <title>Metamorphoses</title>
   <year>ca. 0008</year>
   <notes>
-    <note>Den latinske tekst følger Hugo Magnus' udgave fra 1892. Vers, der i Perseus' TEI-kilde kun står som redaktionelt forkastede læsninger i apparatet, er udeladt. Udgavens versnumre er bevaret.</note>
-    <note type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
+    <note editorial="true">Den latinske tekst følger Hugo Magnus' udgave fra 1892. Vers, der i Perseus' TEI-kilde kun står som redaktionelt forkastede læsninger i apparatet, er udeladt. Udgavens versnumre er bevaret.</note>
+    <note editorial="true" type="credits">Digital tekst fra Perseus Digital Library, udgivet under licensen CC BY-SA 3.0 US.</note>
   </notes>
   <source href="https://catalog.perseus.tufts.edu/catalog/urn:cts:latinLit:phi0959.phi006">
     <author>P. Ovidius Naso</author>
@@ -814,6 +814,9 @@ sidereis transit patriosque adit inpiger ortus.
 <head>
   <title>Liber II</title>
   <firstline>Regia Solis erat sublimibus alta columnis</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>kilde</quality>
 </head>
 <body>
@@ -3938,6 +3941,9 @@ raucaque garrulitas studiumque inmane loquendi.”
 <head>
   <title>Liber VI</title>
   <firstline>Praebuerat dictis Tritonia talibus aures</firstline>
+  <places>
+    <place ref="thrace" relation="setting"/>
+  </places>
   <quality>kilde</quality>
 </head>
 <body>
@@ -11246,6 +11252,9 @@ mutat Horamque vocat, quae nunc dea iuncta Quirino est.
 <head>
   <title>Liber XV</title>
   <firstline>Quaeritur interea quis tantae pondera molis</firstline>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>kilde</quality>
 </head>
 <body>

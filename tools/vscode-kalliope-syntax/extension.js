@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const { createHash, randomBytes } = require('crypto');
 const vscode = require('vscode');
 const { resolveFacsimileForPosition } = require('./facsimile.cjs');
 
@@ -105,6 +106,10 @@ const facsimileHtml = (webview, document, result) => {
 </html>`;
   }
 
+  const nonce = randomBytes(16).toString('hex');
+  const pageKey = createHash('sha256')
+    .update(JSON.stringify([document.fileName, result.poetId, result.facsimile, result.pages.map(page => page.filename)]))
+    .digest('hex');
   const images = result.pages
     .map(page => {
       const src = pageImageUri(webview, document, result, page);
@@ -119,12 +124,18 @@ const facsimileHtml = (webview, document, result) => {
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${cspSource} https:; style-src ${cspSource} 'unsafe-inline';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${cspSource} https:; script-src 'nonce-${nonce}'; style-src ${cspSource} 'unsafe-inline';">
   <style>
     html, body { height: 100%; }
     body { display: flex; flex-direction: column; margin: 0; font-family: var(--vscode-font-family); color: var(--vscode-foreground); background: var(--vscode-editor-background); }
     header { flex: 0 0 auto; padding: 12px 16px; border-bottom: 1px solid var(--vscode-panel-border); background: var(--vscode-editor-background); }
     h1 { margin: 0; font-size: 15px; line-height: 1.35; font-weight: 600; }
+    .zoom-controls { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+    button { color: var(--vscode-button-foreground); background: var(--vscode-button-background); border: 0; border-radius: 3px; padding: 3px 10px; font: inherit; cursor: pointer; }
+    button:hover { background: var(--vscode-button-hoverBackground); }
+    button:focus-visible { outline: 1px solid var(--vscode-focusBorder); outline-offset: 2px; }
+    button:disabled { opacity: 0.5; cursor: default; }
+    output { min-width: 4ch; text-align: center; font-variant-numeric: tabular-nums; }
     .meta { margin-top: 4px; font-size: 12px; color: var(--vscode-descriptionForeground); }
     main { flex: 1 1 auto; min-height: 0; box-sizing: border-box; overflow: auto; padding: 16px; }
     figure { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; margin: 0 0 18px; }
@@ -136,8 +147,49 @@ const facsimileHtml = (webview, document, result) => {
   <header>
     <h1>${escapeHtml(result.title || result.textId || 'Kalliope facsimile')}</h1>
     <div class="meta">${escapeHtml(result.poetId)}/${escapeHtml(result.facsimile)} · side ${escapeHtml(result.facsimilePages.join('-'))}</div>
+    <div class="zoom-controls" role="group" aria-label="Zoom">
+      <button id="zoom-out" type="button" aria-label="Zoom ud" title="Zoom ud (Alt + rul ned)">−</button>
+      <output id="zoom-level" aria-label="Zoomniveau">100 %</output>
+      <button id="zoom-in" type="button" aria-label="Zoom ind" title="Zoom ind (Alt + rul op)">+</button>
+    </div>
   </header>
   <main>${images}</main>
+  <script nonce="${nonce}">
+    const vscode = acquireVsCodeApi();
+    const main = document.querySelector('main');
+    const zoomOut = document.getElementById('zoom-out');
+    const zoomIn = document.getElementById('zoom-in');
+    const zoomLevel = document.getElementById('zoom-level');
+    const pageKey = '${pageKey}';
+    const savedState = vscode.getState();
+    const savedZoom = savedState?.pageKey === pageKey ? savedState.zoom : 100;
+    let zoom = Number.isFinite(savedZoom) ? Math.min(400, Math.max(50, savedZoom)) : 100;
+    const renderZoom = () => {
+      const width = Math.max(1, main.clientWidth - 32) * zoom / 100;
+      const height = Math.max(1, main.clientHeight - 32) * zoom / 100;
+      document.querySelectorAll('figure').forEach(figure => {
+        figure.style.width = width + 'px';
+        figure.style.height = height + 'px';
+      });
+      zoomLevel.textContent = zoom + ' %';
+      zoomOut.disabled = zoom <= 50;
+      zoomIn.disabled = zoom >= 400;
+      vscode.setState({ zoom, pageKey });
+    };
+    const changeZoom = delta => {
+      zoom = Math.min(400, Math.max(50, zoom + delta));
+      renderZoom();
+    };
+    zoomOut.addEventListener('click', () => changeZoom(-10));
+    zoomIn.addEventListener('click', () => changeZoom(10));
+    main.addEventListener('wheel', event => {
+      if (event.altKey === false || event.deltaY === 0) return;
+      event.preventDefault();
+      changeZoom(event.deltaY < 0 ? 10 : -10);
+    }, { passive: false });
+    new ResizeObserver(renderZoom).observe(main);
+    renderZoom();
+  </script>
 </body>
 </html>`;
 };
@@ -159,7 +211,7 @@ const updateFacsimilePanel = editor => {
       'Kalliope facsimile',
       vscode.ViewColumn.Beside,
       {
-        enableScripts: false,
+        enableScripts: true,
         localResourceRoots: [vscode.Uri.file(resolveLocalRoot(document))],
       }
     );
@@ -168,7 +220,7 @@ const updateFacsimilePanel = editor => {
     });
   } else {
     facsimilePanel.webview.options = {
-      enableScripts: false,
+      enableScripts: true,
       localResourceRoots: [vscode.Uri.file(resolveLocalRoot(document))],
     };
   }

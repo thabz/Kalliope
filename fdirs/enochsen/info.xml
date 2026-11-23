@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="enochsen" country="dk" lang="la" type="poet">
+  <!-- Isaach Enochi, latinsk æredigt dateret Chregome 26.juli1681, Samlede Skrifter III (1975), s.149–150. Identitet: Isach Enochsen Jyllinge, Kregme-Vinderød-præst fra1671, https://wiberg-net.dk/696-Kregme.htm . Fødselsår er usikkert. Dødsåret1697 i Wiberg-net kan ikke fastholdes: Frederik Rønning, Den Grundtvigske Slægt (1904), s.7–8, https://runeberg.org/rfgrundtvi/0015.html og https://runeberg.org/rfgrundtvi/0016.html dokumenterer breve og kontrakt fra marts1702 og dødsfald kort efter. -->
+  <name>
+    <firstname>Isak</firstname>
+    <lastname>Enochsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>1702</date>
+    </dead>
+  </period>
+  <literary-periods>dk-barok</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-11">
+    <checked-source id="dbl1">Søgt i den digitale udgaves opslag efter Isak/Isaach/Isach Enochsen, Enochi og Jyllinge; intet selvstændigt biografisk opslag fundet.</checked-source>
+    <checked-source id="dbl2">Søgt i Rosekamps digitaliserede udgave efter Enochsen og Jyllinge med Isach; intet identificeret biografisk opslag.</checked-source>
+    <checked-source id="salmonsen2">Søgt i Runebergs digitale Salmonsen efter Enochsen og Isak Jyllinge; intet relevant personopslag fundet.</checked-source>
+    <note>Navne- og levetidsoplysninger er dokumenteret i kildekommentaren. Rønnings slægtshistorie er brugt til identitets- og datokontrol; den er ikke transskriberet som biografi. Intet selvstændigt supplement- eller fjerdeudgaveopslag identificeret ved navnesøgning.</note>
+  </biography-status>
+</person>

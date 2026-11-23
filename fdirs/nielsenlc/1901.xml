@@ -4,7 +4,7 @@
   <title>Vaardigte</title>
   <year>1901</year>
   <notes>
-    <note>Udgivelsen er upagineret. I nærværende udgave er indholdsfortegnelsen udnævnt til side 1 og så fremdeles.</note>
+    <note editorial="true">Udgivelsen er upagineret. I nærværende udgave er indholdsfortegnelsen udnævnt til side 1 og så fremdeles.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1901-p1.jpg"><transcription>L. C. Nielsen / Vaardigte // Gyldendalske Boghandels / Forlag * København MCMI</transcription></picture>
@@ -1027,7 +1027,7 @@ du tog den i dine Hænder
   <subtitle>(Af en Kantate ved Mindefesten paa Universitetet.)</subtitle>
   <firstline>Døden gaar mellem Mennesker og søger de bedste ud</firstline>
   <notes>
-    <note>A. D. Jørgensen (1840-97), historiker.</note>
+    <note editorial="true">A. D. Jørgensen (1840-97), historiker.</note>
   </notes>
   <source pages="42-43"/>
   <keywords>lejlighedsdigtning</keywords>
@@ -1430,6 +1430,10 @@ hvad jeg vil se, er alt.
   <title>Titus</title>
   <firstline>Solen, O, min Gud, hvor Solen</firstline>
   <source pages="57"/>
+  <places>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1650,6 +1654,10 @@ I Taushed,
   <title>Rejserim</title>
   <firstline>Jeg løfter dig, min lille Dreng</firstline>
   <source pages="64-69"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+    <place ref="verona" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1975,6 +1983,9 @@ gaar fra Mulm til Mulm i Stjernebuer.
   <subtitle>(Efter Opførelsen af ,,La cittá morte'')</subtitle>
   <firstline>Mørket er faldet i Rom</firstline>
   <source pages="76-77"/>
+  <places>
+    <place ref="villa-borghese-gardens" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

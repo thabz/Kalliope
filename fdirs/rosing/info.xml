@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rosing" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Michael</firstname>
+    <lastname>Rosing</lastname>
+    <fullname>Hans Peter Michael Rosing</fullname>
+    <pseudonym>M. R.</pseudonym>
+    <pseudonym>En Student</pseudonym>
+  </name>
+  <period>
+    <born>
+      <date>1830-11-20</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1904-12-12</date>
+      <place>Sorø</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <gravsted-dk>hanspetermichaelrosing</gravsted-dk>
+    <biografisk-leksikon-lex-dk>Michael_Rosing_-_forfatter</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

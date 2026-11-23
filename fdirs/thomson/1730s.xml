@@ -7,8 +7,8 @@
     <openlibrary-work>OL17966069W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Winter blev udgivet i 1726, Summer i 1727, Spring i 1728 og Autumn udkom med den samlede udgivelse af <i>The Seasons</i> i 1730.</note>
-    <note>Nærværende udgave følger 1730-teksten.</note>
+    <note editorial="true">Winter blev udgivet i 1726, Summer i 1727, Spring i 1728 og Autumn udkom med den samlede udgivelse af <i>The Seasons</i> i 1730.</note>
+    <note editorial="true">Nærværende udgave følger 1730-teksten.</note>
   </notes>
   <source href="https://en.wikisource.org/wiki/The_Seasons_(Thomson)">James Thomson: <i>The Seasons</i>.</source>
   <pictures>
@@ -1221,6 +1221,10 @@ To scenes where love and bliss immortal reign.
       </identifiers>
     </picture>
   </pictures>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="campania" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -4563,6 +4567,10 @@ And let me never, never stray from thee!
 <head>
   <title>Winter</title>
   <firstline>See, Winter comes to rule the varied year</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

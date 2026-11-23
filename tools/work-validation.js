@@ -1,3 +1,4 @@
+import { embeddedTextIssues } from './build-static/embedded-text.js';
 import { DOMParser } from '@xmldom/xmldom';
 import {
   pageIntervalError,
@@ -61,6 +62,15 @@ const parseFacsimilePageNumber = value => {
   return match == null ? null : parseInt(match[1], 10);
 };
 
+const parsePhysicalPageInterval = value => {
+  const interval = parsePageInterval(value);
+  return interval != null && interval.from > 0 &&
+    Number.isSafeInteger(interval.from) === true &&
+    Number.isSafeInteger(interval.to) === true &&
+    /^\d+(?:\s*[-–]\s*\d+)?$/.test(value ?? '') === true
+    ? interval : null;
+};
+
 const standalonePageBreaks = xml => {
   const pattern = /<pb\b[^>]*\/>[ \t]*(?=\r?\n|$)/g;
   return Array.from(xml.matchAll(pattern)).map(match => ({
@@ -106,7 +116,7 @@ const facsimileSourceId = pageBreak => {
   const textEntry = textEntryAncestor(pageBreak);
   const head = textEntry == null ? null : directChild(textEntry, 'head');
   const source = head == null ? null : directChild(head, 'source');
-  return source?.getAttribute('in') ?? '';
+  return source?.getAttribute('facsimile') ?? source?.getAttribute('in') ?? '';
 };
 
 const parseWorkXml = xml =>
@@ -127,7 +137,7 @@ const collectBodyLinkIssues = (filename, document) => {
   ['a', 'xref'].forEach(tagName => {
     Array.from(document.getElementsByTagName(tagName)).forEach(link => {
       if (
-        hasAncestor(link, 'body') !== true ||
+        (hasAncestor(link, 'body') !== true && hasAncestor(link, 'front') !== true) ||
         hasAncestor(link, 'note') === true ||
         hasAncestor(link, 'footnote') === true
       ) {
@@ -184,12 +194,17 @@ const collectStandaloneFootnoteIssues = (filename, document) => {
 };
 
 const collectTextStructureIssues = (filename, document) => {
-  const issues = [];
+  const issues = Array.from(document.getElementsByTagName('text')).flatMap(text => embeddedTextIssues(text, filename));
 
   Array.from(document.getElementsByTagName('text')).forEach(text => {
     const head = directChild(text, 'head');
     const body = directChild(text, 'body');
-    if (head == null || body == null || directChild(head, 'firstline') == null) {
+    if (
+      head == null ||
+      body == null ||
+      directChild(head, 'firstline') == null ||
+      directChild(head, 'title') == null
+    ) {
       return;
     }
 
@@ -202,7 +217,7 @@ const collectTextStructureIssues = (filename, document) => {
     ) {
       const textId = text.getAttribute('id') ?? '(missing id)';
       issues.push(
-        `${filename}: text ${textId} has only <prose> in <body> and must not have <firstline> in <head>.`,
+        `${filename}: text ${textId} has a title and only <prose> in <body> and must not have <firstline> in <head>.`,
       );
     }
   });
@@ -443,11 +458,57 @@ const collectSourcePolicyIssues = (filename, document) => {
     });
   }
 
+  const isExternalWebLink = href =>
+    /^(?:https?:)?\/\//iu.test(href) &&
+    !/^(?:https?:)?\/\/(?:www\.)?kalliope\.org(?:\/|$)/iu.test(href);
+
+  // These endpoints serve transcribed literary texts, rather than scan pages.
+  const isExternalLiteraryText = href => {
+    let url;
+    try {
+      url = new URL(href, 'https://kalliope.org');
+    } catch {
+      return false;
+    }
+    const host = url.hostname.toLowerCase();
+    const pathname = url.pathname;
+    if (host === 'wikisource.org' || host.endsWith('.wikisource.org')) {
+      // Scan pages, scan indexes and the biographical dictionary are sources.
+      return /^\/wiki\//iu.test(pathname) &&
+        !/^\/wiki\/(?:ADB|Page|Index|File|Image|Livre|Seite|Datei|Side)(?::|%3a)/iu.test(pathname);
+    }
+    return (host === 'writersinspire.org' && pathname.startsWith('/content/')) ||
+      host === 'shakespeare.mit.edu' || host === 'www.bartleby.com' || host === 'bartleby.com' ||
+      (host.endsWith('.perseus.tufts.edu') && pathname.startsWith('/hopper/text')) ||
+      (host === 'texts.alpheios.net' && pathname.startsWith('/text/'));
+  };
+
   Array.from(work.getElementsByTagName('source')).forEach(source => {
-    Array.from(source.getElementsByTagName('a')).forEach(link => {
-      if (link.hasAttribute('href')) {
+    Array.from(source.getElementsByTagName('*')).filter(link => ['a', 'xref'].includes(link.nodeName)).forEach(link => {
+      if (isExternalWebLink(link.getAttribute('href') ?? '')) {
         externalSourceLinks.push(
           `${filename}: use source/@href instead of <a href> inside <source>.`,
+        );
+      }
+    });
+  });
+
+  // Editorial references use the source glyph, never an external linked title.
+  // Source metadata is handled above; internal links and mail links remain legal.
+  ['a', 'xref'].forEach(tagName => {
+    Array.from(work.getElementsByTagName(tagName)).forEach(link => {
+      const href = link.getAttribute('href') ?? '';
+      if (noteAncestor(link) == null || !isExternalWebLink(href)) {
+        return;
+      }
+      if (link.textContent.trim() !== '↬') {
+        externalSourceLinks.push(
+          `${filename}: external references in notes must use the source icon ↬; insert poems internally or cite a printed source.`,
+        );
+      }
+      if (isExternalLiteraryText(href)) {
+        externalSourceLinks.push(
+          `${filename}: do not link directly to an external literary text (${href}); use an internal text or a printed bibliographic reference.`,
         );
       }
     });
@@ -476,6 +537,9 @@ const collectPageBreakIssues = (
   const work = document.documentElement;
   const declarations = Array.from(document.getElementsByTagName('pagebreaks'));
   const issues = [];
+  const countByFacsimile = declarations.some(declaration =>
+    declaration.parentNode.nodeName === 'workhead' &&
+    declaration.getAttribute('count-by') === 'facsimile');
 
   indentedPageBreaks(xml).forEach(({ line, markup }) => {
     issues.push(
@@ -518,10 +582,11 @@ const collectPageBreakIssues = (
         `${filename}: pb/@facs must use a numeric JPEG filename: ${facs}`,
       );
     }
-    const inHeadingFootnote = hasAncestor(pageBreak, 'text') === true &&
+    const inHeadingFootnote = (hasAncestor(pageBreak, 'text') === true ||
+      hasAncestor(pageBreak, 'section') === true) &&
       hasAncestor(pageBreak, 'head') === true &&
       hasAncestor(pageBreak, 'footnote') === true;
-    if (hasAncestor(pageBreak, 'body') !== true && inHeadingFootnote !== true) {
+    if (hasAncestor(pageBreak, 'body') !== true && hasAncestor(pageBreak, 'front') !== true && inHeadingFootnote !== true) {
       issues.push(`${filename}: <pb> must occur inside a text body.`);
     }
   });
@@ -551,23 +616,67 @@ const collectPageBreakIssues = (
 
   textEntries(document).forEach(text => {
     const previousPrintedPages = new Map();
+    const head = directChild(text, 'head');
+    const source = head == null ? null : directChild(head, 'source');
+    const pages = source?.getAttribute('pages') ?? '';
+    const interval = /^\d+(?:\s*[-–]\s*\d+)?$/.test(pages) === true
+      ? parsePageInterval(pages) : null;
+    const firstLabel = source?.getAttribute('first-n') ?? null;
+    const firstLabelIsValid = firstLabel != null && /^\d+$/.test(firstLabel) === true &&
+      Number.isSafeInteger(Number(firstLabel)) === true && interval != null &&
+      Number(firstLabel) !== interval.from &&
+      parsePhysicalPageInterval(source?.getAttribute('facsimile-pages')) != null;
+    if (firstLabel != null && firstLabelIsValid === false) {
+      issues.push(`${filename}: source/@first-n requires a different Arabic first-page label, a nominal Arabic pages interval, and a facsimile-pages interval.`);
+    }
+    if (interval != null && (countByFacsimile === true || firstLabelIsValid === true)) {
+      previousPrintedPages.set(text, {
+        number: interval.from,
+        label: firstLabelIsValid === true ? `${firstLabel} [${interval.from}]` : String(interval.from),
+      });
+    }
+    const visitedPagesByStream = new Map();
     Array.from(text.getElementsByTagName('pb')).forEach(pageBreak => {
       const stream = noteAncestor(pageBreak) ?? text;
+      const visited = visitedPagesByStream.get(stream) ?? new Set();
+      const facs = pageBreak.getAttribute('facs');
+      if (facs != null && facs !== '') {
+        if (visited.has(facs)) {
+          issues.push(`${filename}: duplicate pb/@facs within one text stream: ${facs}.`);
+        }
+        visited.add(facs);
+        visitedPagesByStream.set(stream, visited);
+      }
       const previousPrintedPage = previousPrintedPages.get(stream) ?? null;
       const printedLabel = pageBreak.getAttribute('n');
-      const printedPage =
+      const originalPrintedPage =
         printedLabel == null ? null : parseArabicPageNumber(printedLabel);
+      const correctedLabel = pageBreak.getAttribute('corrected-n');
+      const hasCorrection = correctedLabel != null;
+      const correctionIsValid = hasCorrection === true &&
+        /^[1-9]\d*$/.test(correctedLabel) === true &&
+        Number.isSafeInteger(Number(correctedLabel)) === true &&
+        originalPrintedPage != null &&
+        Number(correctedLabel) !== originalPrintedPage &&
+        parseFacsimilePageNumber(pageBreak.getAttribute('facs') ?? '') != null;
+      if (hasCorrection === true && correctionIsValid === false) {
+        issues.push(`${filename}: pb/@corrected-n requires a different positive Arabic number, an Arabic pb/@n, and a numeric pb/@facs.`);
+      }
+      const printedPage = correctionIsValid === true
+        ? Number(correctedLabel) : originalPrintedPage;
+      const orderedLabel = correctionIsValid === true
+        ? `${printedLabel} [${correctedLabel}]` : printedLabel;
       if (
         printedPage != null &&
         previousPrintedPage != null &&
         printedPage < previousPrintedPage.number
       ) {
         issues.push(
-          `${filename}: pb/@n must not decrease within a text: ${previousPrintedPage.label} before ${printedLabel}.`,
+          `${filename}: pb/@n must not decrease within a text: ${previousPrintedPage.label} before ${orderedLabel}.`,
         );
       }
       if (printedPage != null) {
-        previousPrintedPages.set(stream, { label: printedLabel, number: printedPage });
+        previousPrintedPages.set(stream, { label: orderedLabel, number: printedPage });
       }
     });
   });
@@ -579,8 +688,28 @@ const collectPageBreakIssues = (
     const pages = source?.getAttribute('pages') ?? null;
     const facsimilePages = source?.getAttribute('facsimile-pages') ?? null;
     const body = directChild(text, 'body');
-    const pageBreakCount =
-      body == null ? 0 : body.getElementsByTagName('pb').length;
+    const front = directChild(text, 'front');
+    const physicalTransitions = [front, body].flatMap(node =>
+      node == null ? [] : Array.from(node.getElementsByTagName('pb')));
+    const pageBreakCount = new Set(physicalTransitions.map(pageBreak => {
+      const facs = pageBreak.getAttribute('facs');
+      return facs != null && facs !== '' ? facs : pageBreak;
+    })).size;
+    if (countByFacsimile === true) {
+      const interval = parsePhysicalPageInterval(facsimilePages);
+      if (interval == null) {
+        issues.push(`${filename}: text ${textId} requires a numeric facsimile-pages interval for count-by="facsimile".`);
+        return;
+      }
+      const actualFacsimiles = new Set(physicalTransitions.map(pageBreak =>
+        parseFacsimilePageNumber(pageBreak.getAttribute('facs') ?? '')));
+      if (actualFacsimiles.size !== interval.to - interval.from ||
+          Array.from(actualFacsimiles).some(page =>
+            page == null || page < interval.from || page >= interval.to)) {
+        issues.push(`${filename}: text ${textId} must mark every physical transition in facsimile-pages="${facsimilePages}" exactly once (parallel note streams may repeat a transition).`);
+      }
+      return;
+    }
     const intervalSource = pages ?? facsimilePages;
     const expected = expectedPageBreakCount(intervalSource);
     const ignorePageBreakCount =

@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { metricalDiagramsAsNonVerse } from './metrical-diagrams.js';
 
 const minimumRunLength = 3;
 const maximumPatternLength = 8;
@@ -53,7 +54,7 @@ const isStanzaDivider = line =>
   /<nonum(?:\s|>)/u.test(line) ||
   /^\s*<wrap(?:\s|>)/u.test(line) ||
   /^\s*<right(?:\s|>)/u.test(line) ||
-  /^\s*-{3,}\s*$/u.test(line) ||
+  /^\s*(?:-{3,}|={4})\s*$/u.test(line) ||
   plainText(line) === '';
 
 const parseBody = body => {
@@ -61,7 +62,7 @@ const parseBody = body => {
     throw new TypeError('Inputfeltet "body" skal være en streng.');
   }
 
-  const lines = body.replace(/\r\n?/gu, '\n').split('\n');
+  const lines = metricalDiagramsAsNonVerse(body).replace(/\r\n?/gu, '\n').split('\n');
   const verseLines = [];
   const sections = [];
   let pendingHeading = null;

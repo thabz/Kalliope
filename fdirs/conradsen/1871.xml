@@ -1,9 +1,1631 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1871" author="conradsen" status="incomplete" type="poetry">
+<kalliopework id="1871" author="conradsen" status="complete" type="poetry">
 <workhead>
   <title>Kjærlighedsdigte</title>
+  <subtitle>Af Tibullus. Oversatte i Originalens Versemaal af Karl Conradsen.</subtitle>
   <year>1871</year>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-03T10:46:37Z"/>
+  </proofreadings>
+  <errata status="none"/>
+  <notes>
+    <note>Udgivet til Minde om Oversætteren.</note>
+  </notes>
+  <pictures>
+    <picture type="titlepage" src="1871-p1.jpg" primary="true"><transcription>Kjærlighedsdigte / af / Tibullus. // Oversatte i Originalens Versemaal / af / Karl Conradsen. / † // Hver sin Gave jo fik. Den Elsker, / som haanligt forkastes, / komme til mig om Raad. Aaben er / stedse min Dør. / Tibull. I, 4, 77. // Kjøbenhavn. / L. A. Jørgensens Forlag. / 1871.</transcription></picture>
+  </pictures>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99127572800405763" facsimile="130026505561-color" facsimile-pages-num="95" facsimile-pages-offset="13">
+    <author>Tibullus</author>
+    <translator id="conradsen">Karl Conradsen</translator>
+    <title>Kjærlighedsdigte</title>
+    <place>Kjøbenhavn</place>
+    <publisher>L. A. Jørgensens Forlag</publisher>
+    <printer>Bianco Lunos Bogtrykkeri ved F. S. Muhle</printer>
+    <year>1871</year>
+  </source>
 </workhead>
 <workbody>
+<text id="anonym1800dk2026110313" author="anonym1800dk" skip-index="true">
+<head>
+  <title>[Indledning]</title>
+  <indextitle>Indledning</indextitle>
+  <source pages="I-VI" facsimile-pages="8-13"/>
+  <keywords>tibullus,vergil,horats,ovid,grimurthomsen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<w>Albius Tibullus</w> levede paa Kejser Avgusts Tid. Efter rasende Borgerkrige, under hvilke der hverken havde været Sikkerhed for Liv eller Ejendom, var der nu kommet en fredelig Tid, og Alt vendte tilbage til fastere Former; samtidige Digtere forherlige derfor ogsaa Avgust som en Gud og spaa om en snart indtrædende Guldalder. Man var kjed af de blodige Rædsler og vendte sig til Livets mildere Sider: Virgilius priste Landvæsenet og opmuntrede dertil, Horatius fremstillede i en underholdende Form en Verdensmands Livsfilosofi, og Tibullus, Propertius og Ovidius skildrede Kjærligheden i Held og Modgang, med sin Fryd og Smerte; det var virkelig den romerske Literaturs gyldne Tid. Tibullus var i Besiddelse af Lykkens fleste Gaver, var rigt udstyret med Aands og Legems Fortrin, var af Stand og havde nogen Formue. Et vakkert Brev til Tibullus fra hans Ven Horatius skildrer ham som smuk og rig og med Forstand <pb n="II" facs="008.jpg"/>paa at bruge sin Formue, som en Mand af et ædelt Sindelag og med en højere Stræben. Tibullus døde i en temmelig ung Alder kort efter Virgilius omtrent 19 Aar før Chr. Ligesom Horatius og Virgilius fandt en mægtig Beskytter i Avgusts Ven, den rige Mæcenas, saaledes sluttede Tibullus sig til <w>Messalla Corvinus</w>, der var en af Roms ædleste og dygtigste Mænd og i Besiddelse af alsidig Dannelse (Taler, Historiker, Digter). Messalla blev i Aaret 30 f. Chr. af Avgust sendt mod Aqvitanerne i Sydfrankrig, der havde gjort Oprør, og efter at have dæmpet dette til Orienten. Efter indtrængende Opfordring af Messalla, der vel søgte saaledes at skaffe sin Ven større Anseelse og Rigdom, fulgte Tibullus ham paa det første Felttog; men paa Rejsen til det andet maatte han syg blive tilbage paa Corcyra (Korfu). Dermed var hans Krigerliv endt, og han udtaler aabent, hvor lidet det stemmede med hans Tilbøjeligheder. Han satte ikke som den praktiske Romer i Almindelighed Livets Lykke i Rigdom og Hæder, men indviede sit Liv til Digtekunst og Kjærlighed; allerede Horatius’ Brev anerkjender hans poetiske Geni, og senere gav den skarpsindige romerske Literator Qvintilian ham den første Plads imellem de romerske Forfattere, som havde <pb n="III" facs="009.jpg"/>skrevet i samme Digtart som Tibullus; i det sidste Forhold synes derimod den ellers gavmilde Lykke at have været ham ublid, idetmindste er der mere Klage end Glæde i Digtene, som skildre hans Kjærligheds Skjæbne.
+    Man vil maaske med nogen Forundring mærke, at disse Digte henvende sig til «<w>frie Kvinder</w>», og med en senere Tids Sædeligheds Fordringer for Øje bryde Staven over en saadan Kjærlighed, skjønt man ikke kan negte, at den udtaler sig med en dyb Inderlighed, der er langt ophøjet over en egoistisk Sandselighed. Men for at bedømme denne Sag rigtigt maa man se hen til de historiske Forhold, den vil da ligesom Slaveriet vise sig som et nødvendigt Moment, om end som et Onde i Oldtidens Civilisation, som man dog er enig om at beundre. Hører man Oldtidsforfatteres beundrende Ytringer, skjønt blandede med skarpt nedsættende Udtalelser, om disse <w>Hetærer</w> (Veninder), som Grækerne kaldte dem, og seer man, hvilken Stilling i Oldtidens Liv de indtoge, hvorledes Grækenlands ypperste Mænd bejlede til deres Yndest, hvorledes Perikles forskjød sin Hustru for at ægte Hetæren Aspasia, til hvis Tale Athens mest begavede Aander, deriblandt Sokrates, lyttede som Disciple, hvorledes man efter Døden oprejste <pb n="IV" facs="010.jpg"/>dem pragtfulde Mindesmærker o. s. v.,<footnote>Man kan søge Oplysninger om Hetærerne f. Ex. i O. Kjærs Studier af Oldtidslivet.</footnote> saa nødes man til at erkjende, at disse Præstinder for en Kjærlighed udenfor Ægteskabet ikke alle kunne stilles paa samme Trin, at der over Hoben af løsagtige Kvinder, Fløjtespillersker og Dandserinder hæver sig ædlere Skikkelser. Den Dyrkelse, hvorfor de vare Gjenstand, forstaaer man, naar man seer hen til Kvindens Stilling paa denne Tid. Hustruen var da ikke stort mere end den øverste Slavinde, altid indesluttet i Husets Indre som den orientalske Kvinde i Harem, uden Dannelse og Samkvæm med højere Interesser. Her kunde der da ikke være Tale om et Ægteskab i sand Betydning, om end Forbindelsen var nok saa meget helliget ved Statens Love. Hetæren med sin Skjønhed, sine Talenter (der fandtes ypperlige Kunstnerinder iblandt dem), sin udviklede Aand, sin Sands for Mandens højeste Interesser og sit Conversationstalent blev i Virkeligheden den, der kom til at hævde Kvindens og Kjærlighedens Betydning. I Rom kaldtes de fritlevende Kvinder <w><span lang="la">meretrices</span></w>, et plumpt Navn (Kvinder, for hvem Kjærligheden var et Erhverv), her <pb n="V" facs="011.jpg"/>havde Husets Frue altid havt en anseet Stilling, og Hetærelivet var som meget Andet nærmest et Laan fra Grækerne (Navnene ere græske). At man i Rom ved Siden af den egenlige højtideligt indviede Forbindelse ogsaa kjendte lavere Former af Ægteskab, kunde synes at gjøre saadanne friere Forbindelser mindre anstødelige, men Staten satte dog ved at forordne en egen Dragt og paa andre Maader et Skjændselsmærke paa disse Kvinder. At Elskerindens Havesyge i disse Kjærlighedsforbindelser meget ofte kunde ødelægge den unge Mands Formue, og hendes Troløshed bringe ham til Fortvivlelse, udelukker ikke, at der undertiden kunde være Aand og sand Kjærlighed i dem, hvad Digternes Sange, og ikke mindst Tibullus’, synes at vise.
+    Det er maaske en Smule overdrevent, naar en nyere Kritiker (Dr. Grimur Thomsen i Dansk Maanedsskrift) med Henblik paa den nyere Lyrik, i Gjennemsnit taget, siger, at et Distichon af Tibullus opvejer mange Bind «Lyriske Digte», og i Oversættelse maa Meget desuden gaa tabt; men vistnok fortjene disse Digte af Tibullus, selv i vor Tid, der har mange Aarhundreders aandelige Rigdom forud for hin Digters Tid, at kjendes af det Publicum, hvis Interesse for Literaturen er mere end ephemer, og det synes ikke <pb n="VI" facs="012.jpg"/>at være overflødigt at importere disse fordringsløse Kjærlighedspoesier nu, da Muserne synes kun at stemme Lyren til alvorligere Toner. Enhver vil vist føle sig tiltalt af disse idylliske Billeder fra Landet, af de livlige Skildringer af Kjærlighedsintriguerne, af den varme Følelse, der glad eller bedrøvet er en Udtalelse af et fuldt Hjerte og ikke trænger til mer eller mindre heldige Symboler og Allegorier for i dem ligesom at hvile ud. Den, der kan en Smule Latin, vil naturligvis gjøre bedst i at benytte Oversættelsen til at gaa til Originalen selv.
+</prose>
+</body>
+</text>
+
+<section>
+<head>
+  <title>Delia</title>
+</head>
+<content>
+
+<text id="conradsen2026110302">
+<head>
+  <title><num>1.</num>Rigdom, skinnende Guld en Anden sig gjerne maa sanke</title>
+  <firstline>Rigdom, skinnende Guld en Anden sig gjerne maa sanke</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026103101"/>.</note>
+  </notes>
+  <source pages="3-6"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Rigdom, skinnende Guld en Anden sig gjerne maa sanke,
+eje umaadeligt Gods, Marker, der bugner af Sæd,
+naar det skal kjøbes med Kamp og med Frygt for Fjendernes Nærhed,
+og naar Trompeten til Strid kalder ham op af hans Søvn.
+Heller jeg nøjes med Armod, naar fredeligt Livet henrinder,
+medens et hyggeligt Baal altid paa Arnen er tændt.
+Lad mig som Bonde kun plante de slyngende Ranker i Tide
+og med min øvede Haand vældige Frugttræers Skud!
+Haabet svigte mig ikke, det yde mig Kornet i Dynger
+stadigt og lade mit Kar fyldes af Mosten saa fed!
+Fromt jeg bøjer mig jo, naar jeg skuer de viede Krandse
+hænge paa Sten ved en Vej eller om Pælen paa Mark;
+Førstegrøden af Frugter, saa saare mig Aaret dem bringer,
+sætter for Landmandens Gud altid som Offer jeg frem;
+<w>Ceres</w>, lyshaarede Frue, jeg fletter af Ax fra min Ager
+Krandse til dig, dermed smykker jeg Tempelets Dør;
+rødbemalet som Vogter i Haven <w>Priapus</w> skal stande,
+skræmme med frygtelig Le Fuglene bort fra min Frugt.
+<pb n="4" facs="016.jpg"/><w>Larer</w>, skjærmende Guder, som fordum vogted min Rigdom,
+vogter min fattige Mark! Tager de Gaver, jeg har!
+Fordum en Kalv jeg slagted til Offer for talrige Hjorder,
+nu for min Jordlod smal ofrer jeg ikkun et Kid.
+Kiddet jeg ofrer jer nu, mens Bondeknøsene rundtom
+raabe: Skjænker os Korn, skjænker os rigelig Vin!
+Endelig lærte jeg Kunsten fornøjet med Lidet at leve,
+aldrig jeg mer for Erhverv rejser til fremmede Land.
+Hundestjernen og Sommerens Brand mig driver til Skyggen
+hist i Træernes Ly, der hvor en Bæk gaaer forbi.
+Dog vil ej fornem jeg være, men stundom Spaden jeg griber,
+driver med Pigkjæppen frem Studenes nølende Spand;
+finder engang jeg et Lam eller Gedekid, Moderen glemte,
+svøber jeg Kappen derom, bær’ det omhyggeligt hjem.
+Skaaner dog, Tyve, min fattige Hjord! O, skaaner den, Ulve!
+Søger I Bytte, velan, hærger den Rigeres Flok!
+Hvert Aar holder jeg Renselsesfest, min Hyrde sig renser,
+selv jeg bestænker med Mælk <w>Pales</w>, den venlige Gud
+Guder, besøger mit fattige Bord, modtager min Gave!
+Skaalen er ren, skjønt af Ler. Guder, foragter den ej!
+Skaaler af Ler kun brugte jo Bonden i tidligste Dage,
+selv han laved sig dem, Leret jo formedes let.
+Stor mine Fædres Ejendom var, men jeg savner den ikke,
+Laden i Oldefa’ers Tid rummed en rigelig Høst.
+Dog i min snevre Mark har jeg nok; jeg har nok, naar mig undes
+<pb n="5" facs="017.jpg"/>Hvilen i Fred og Ro, Søvn i min tilvante Seng.
+O, hvilken Fryd paa Lejet at høre, hvor Vindene rase,
+medens man trykker sin Viv tæt i den kjærlige Favn;
+eller naar Vinterens Storm nedøser sin Hagel, mens roligt
+Øjet man lukker til Søvn, lullet af dryppende Regn!
+Dette jeg ønsker for mig. — Lad hver, som kan taale det vilde
+Hav og den skyllende Regn, kjøbe sig Guldet saa dyrt!
+Heller Alverdens Rigdom af Guld og Smaragder jeg mister,
+end at min Rejse skal Sorg volde min elskede Mø.
+Du, <w>Messalla</w>, til Kampen maa gaa i Land og paa Vove,
+at med dit Bytte fra Krig herligt dit Hus kan staa smykt;
+jeg holdes fængslet herhjemme med Baand af den skjønneste Pige,
+sidde som Vogter jeg maa foran den grusomme Dør.
+Aldrig om Hæder jeg bryder mig, <w>Delia</w>! Kan jeg kun stedse
+være hos dig, lad dem saa kalde mig treven og fej.
+Elskede, staa for mit Øje, naar Dødens Time sig nærmer,
+lad mig holde dig ømt da med min svigtende Haand!
+Da vil du græde for mig. Naar mit Lig da lægges paa Baalet,
+kysser du tidt det med Sorg, Taaren vil falde derpaa.
+Da vil du græde for mig: ej kold som Jernet er Barmen,
+og i dit kjærlige Bryst Hjertet er ikke af Sten.
+Yngling og Pige, ja hver, som var med i Kredsen om Baalet —
+Ingen med taareløst Blik vender tilbage derfra.
+Krænk ej den Døde med Sorg! Nej, skaan dine fyldige Lokker,
+<w>Delia</w>, skaan dem, og hør, skaan dog den dejlige Kind!
+<pb n="6" facs="018.jpg"/>End er det Tid, medens Skjæbnen er mild, lad os elske hinanden!
+Snart kommer Døden, i Mulm indhyllet, rædsom at se;
+Alderdomsmathed om lidt vil liste sig over os — Elskov
+og det forelskede Sprog klæder ej Haar, som er graat.
+Elskovs Leg maa man øve som ung. Da bryder man Døren
+op hos en Pige — for Spøg ægger man ofte til Kiv.
+Her er jeg dygtig Soldat eller Fører. — Trompeter og Faner,
+bort! De Mænd, som har Lyst, vinde hos Eder sig Saar,
+Vinde tillige sig Guld! Jeg med tarveligt Kaar er fornøjet,
+viser mod Rigdom Foragt, viser mod Hunger Foragt.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110303">
+<head>
+  <title><num>2.</num>Du, Messalla, med Vennerne bort over Bølgerne drager</title>
+  <firstline>Du, Messalla, med Vennerne bort over Bølgerne drager</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110303"/>.</note>
+  </notes>
+  <source pages="7-10"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Du, <w>Messalla</w>, med Vennerne bort over Bølgerne drager,
+Jeg kan ej følge jer. Dog, mindes med Kjærlighed mig!
+Her i <w>Phæaciens</w> fremmede Land jeg holdes af Sygdom.
+Skaan mig, rædsomme Død! Haanden udstrækker du gridsk.
+Skaan mig, rædsomme Død! Min Moder er her ikke hos mig,
+kan ikke samle fra Baal sorrigfuld Asken i Flig;
+Søster er borte, kan ej den bestænke med duftende Vande,
+sidde med udslagne Haar grædende foran min Grav;
+<w>Delia</w> savner jeg ogsaa. Dengang fra Byen jeg bortdrog,
+spurgte hun, er mig fortalt, samtlige Guder tilraads;
+Spaadomslodder udtrak hun saa tidt hos Knøsen paa Gaden,
+stadigen — efter hans Ord — Varselet heldigt faldt ud.
+Alt for min Hjemkomst talte, dog aldrig lod hun sig trøste;
+men da jeg rejste, med Graad stirred hun efter mig hen.
+Hende jeg trøsted — men selv, uagtet mit Hus var beskikket,
+søgte jeg, plaget af Angst, hindrende Paaskud paany.
+Fuglenes Varsler Skylden jeg gav eller skræmmende Jertegn
+eller <w>Saturnus’</w> Dag, som mig at rejse forbød.
+Ak, hvor tidt undskyldte mig dog et sørgeligt Varsel,
+at — paa Vejen afsted — snubled i Døren min Fod. —
+<pb n="8" facs="020.jpg"/>Ingen vove paa Rejser sig ud, naar <w>Amor</w> det negter,
+ellers fornemme han vil, Guden var Rejsen imod.
+Hjælper mig <w>Isis</w> vel nu, min <w>Delia</w>? Hjælper det noget,
+Bronceranglen saa tidt klirrede vildt i din Haand?
+Hjælper det vel, at du fromt til Festen baded dit Legem,
+at du — jeg husker det — sov altid alene den Nat?
+Hjælp mig, Gudinde, da nu! (At du mægter at hjælpe, bevidne
+Billeder rundt i dit Hus, Gaver til Tak for din Hjælp.)
+Da vil <w>Delia</w> nok dig yde med Tak, hvad hun loved,
+og i den linnede Dragt sidde ved Tempelets Dør.
+Dagligen to Gange sees letkjendelig hun i din Skare,
+hvor hun med udslaget Haar synger dig Hymner til Pris.
+Kunde blot selv i mit Hus jeg for Fædreneguderne knæle,
+ofre min ældgamle <w>Lar</w> maanedlig Røgelsens Duft! —
+Tænk, hvor herligt et Liv, da <w>Saturnus</w> var Hersker, og førend
+Vejene vidt og bredt førte til Fremmedes Land,
+førend Planken endnu bød Trods de blaalige Bølger,
+og før den mægtige Vind tog i de svulmende Sejl,
+førend den flakkende Skipper sig hented fra fremmede Strande
+Vinding, med ukjendt Fragt stuvende Lastrummet fuldt.
+Dengang tynged ej Aag paa Tyrens kraftige Nakke;
+Hestens tæmmede Mund tygged ej Bidslet endnu;
+Huset behøved ej Dør, og der sattes ej Stene paa Marken
+til et betryggende Skjel mod en tilgrændsende Jord;
+Honning man let i Træerne fandt, paa Mælk var man sikker,
+<pb n="9" facs="021.jpg"/>Faarene, hvor man dem traf, Yveret rakte Enhver;
+ej var der Kamp eller Hævn eller Krig; ej kjendte man Sværdet,
+hamret af Smeden med Kløgt — ak, den usalige Kløgt!
+Nu, medens <w>Juppiter</w> hersker, man skuer kun Myrden og Blodbad,
+Havsnød — kort, overalt tusinde Veje til Død.
+Skaan mig, Fader! min Sjæl ej nages af Anger for Mened,
+ej med ugudelig Spot krænked jeg Gudernes Magt.
+Men, er min Tid udrunden, de Aar, mig Skjæbnen bestemte,
+sætter en Sten paa min Grav, ridser en Indskrift paa den:
+«Herunder hviler <w>Tibullus</w>, ham Dødens Grusomhed bortrev,
+medens paa Rejsen han tro fulgte <w>Messalla</w>, sin Ven.»
+<w>Venus</w> vil venlig føre min Sjæl til <w>Elysiums</w> Sletter
+(altid jeg fulgte jo tro <w>Amors</w> huldsalige Bud).
+Der er Ringdands og syngende Chor. Trindt flagrer der Fugle,
+mens de med Struberne smaa kvidre den yndigste Sang.
+Jorden dyrker man ej, men den bærer dog Casia villig
+og paa den yppige Grund duftende Roser i Flor.
+Ynglinger lege med Piger i Kreds med Hænder i Hænder
+fletted’; men <w>Amor</w>, den Skjælm, blander sig ofte deri.
+Her er Elskerens Hjem, som faldt for den graadige Dødsgud;
+Kjærligheds Myrtekrands bær’ han til Pryd om sit Haar.
+Men Forbrydernes Sted ligger fjernt i det dybeste Mørke
+skjult; der bruser forbi Flodernes begsorte Vand.
+Der er <w>Tisiphone</w> rasende vild, de bugtede Slanger
+er hendes Haar; i Skræk flygter Forbrydernes Hob.
+<pb n="10" facs="022.jpg"/>Porten er kobberbeslagen, den sorte <w>Cerberus</w> ligger
+stadigt paa Vagt: i dens Gab hvisler der Slangernes Braad.
+Niddingen fræk <w>Ixion</w>, der strakte sin Arm efter <w>Juno</w>,
+Pinefuldt drejes omkring der paa det hurtige Hjul.
+Kæmpestor ligger <w>Tityus</w> der, ni Marker han dækker,
+Gribbenes Flok hver Dag hakker hans Lever til Straf.
+<w>Tantalus</w> staaer til Hagen i Vand; saa snart han vil drikke,
+synker Bølgen, der grumt narrer hans tørstige Mund.
+<w>Danaus’</w> grusomme Døtre, som trodsede <w>Venus</w>, maa øse
+Vandet fra <w>Lethes</w> Flod op i det hullede Sold.
+Derhen jeg ønsker Enhver, som traadte min Elskov i Vejen,
+hver, som med Skadefryd saa Krigstog spilde min Tid.
+Vær mig, <w>Delia</w>, tro! Lad stadigt den gamle Morlille
+følge dig, ivrig forvist vogte din Ære hun vil.
+Æventyr kan hun fortælle til Moro, naar I har Lys tændt,
+mens ved den snurrende Rok Traaden hun spinder saa lang,
+Ternen sidder ved Siden og sysler med trykkende Dagværk,
+stadigt nikker hun mer, Hænderne synker i Skjød.
+Da vil jeg komme med Et, jeg vil ikke forud det melde,
+men du skal studsende tro, ned jeg fra Himlen er sendt.
+Il mig imøde da strax, som du er, med Lokkerne løste
+og paa den nøgne Fod, <w>Delia</w>, kjæreste Mø!
+Gid den maa snarlig komme, den Dag! — Kom, Rosen-<w>Aurora</w>!
+Morgenstjerne! din Vogn føre paa Himlen den frem.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110304">
+<head>
+  <title><num>3.</num>Stærkere Vin! — Medens Smerten er ny, skal Vinen den dulme</title>
+  <firstline>Stærkere Vin! — Medens Smerten er ny, skal Vinen den dulme</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110302"/>. Oversættelsen udelader originalens vers 25–26.</note>
+  </notes>
+  <source pages="11-15"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Stærkere Vin! — Medens Smerten er ny, skal Vinen den dulme,
+at paa mit Øje saa mat Slummer kan sænke sig ned.
+Men naar min Tinding beruses af Vin, maa Ingen mig vække.
+Und min Kjærlighed Ro, den er ulykkelig nu!
+Thi under streng Bevogtning man holder min elskede Pige,
+Døren for Huset er stærk, lukt med ubrydelig Laas.
+Dør, som er mig saa grum, til Straf skal du pidskes af Regnen,
+skal efter <w>Juppiters</w> Bud rammes af Lyn, han har sendt.
+Dør, opluk dig alene for mig — min Klage dig røre —
+pib med Hængselet ej, naar jeg dig aabner i Løn!
+Hvis i mit Vanvid nys jeg skjældte dig ud, saa tilgiv mig!
+Over mit Hoved selv komme, hvad Ondt jeg har sagt!
+Husk dog endelig paa, hvor tidt, hvor meget jeg bønfaldt,
+medens jeg hængte paa Karm blomstrende Krandse til Pynt!
+<w>Delia</w>, vær dog ikke forknyt, men nar din Bevogter!
+vov det! <w>Venus</w> selv kommer de Kjække til Hjælp.
+<w>Venus</w> hjælper, naar Døren er ny, som Ynglingen stormer,
+hjælper, naar Pigen fra Dør trækker den stængende Slaa;
+<w>Venus</w> lærer fra Lejet umærkeligt bort sig at snige
+<pb n="12" facs="024.jpg"/>lærer at liste sig frem stille med lydløse Trin,
+lærer, naar Manden er hos, at tale med Vink og med Fagter,
+tolke med aftalt Tegn lønligen Kjærligheds Ord.
+Dog hun lærer ej Alle, kun den, der rask og forvoven
+rejser fra Lejet sig flink midt i den bælmørke Nat.
+Skjærmet af <w>Venus</w> han gaaer, Banditter møde ham ikke,
+som ham saare med Dolk, røve ham Klæder og Pung.
+Hver, som har Elskov i Hjertet, kan gaa saa trygt — han er hellig —
+hen overalt, bør ej frygte for Overfald mer.
+Vinternætternes stivnende Frost, den skader mig ikke,
+Regnens strømmende Skyl, det gjør mig slet ingen Men;
+gjerne jeg døjer Strabads — blot <w>Delia</w> aabner mig Døren,
+kalder mig ind med Vink (tavst er Fingerens Sprog). —
+Lukker Øjnene til, hvis I møde mig, Mand eller Kvinde!
+<w>Venus</w> byder: fordølg Elskerens lønlige Vej!
+Skræmmer ham ej ved Føddernes Larm, udspørger ham ikke,
+bort med Faklen fra ham, bort med det spejdende Blik!
+Om du ham dog tilfældigvis seer, saa røb det dog ikke,
+sig — og besværg det endog dyrt: du har glemt det igjen.
+Sladrer Nogen derom, saa hævner det visselig <w>Venus</w>.
+Husk, hun er født af Blod, født af det rasende Hav!
+Men, om ogsaa man sladrer, saa troer din Mand det dog ikke,
+det har en troldkyndig Hex lovet mig sikkert og vist.
+— Og jeg har seet, at Stjernerne selv adlød hendes Villie;
+<pb n="13" facs="025.jpg"/>Floden forandrer sit Løb flux ved den koglende Sang;
+Jorden aabner sig brat, og af Gravene Skygger sig rejse;
+Lig, som brændtes paa Baal, kaldes tillive igjen;
+Underverdenens Hær gaaer frem ved de magiske Sange;
+stænker hun den med en Saft, synker den nedad igjen;
+vil hun, driver hun bort de mørknende Skyer fra Himlen;
+vil hun, kalder hun frem Sneen i Sommerens Tid;
+Ene hun kjender endnu <w>Medeas</w>, Giftblanderskens, Urter;
+ene hun tæmme formaaer <w>Hekates</w> rasende Hund. —
+Trylleformler hun gav mig, dermed kan Manden du blænde.
+Sig dem tre Gange frem, naar du har sagt dem, saa spyt!
+Saa vil han slet Ingen tro, der Ondt om os ham beretter,
+ikke sig selv, hvis han saa, hvordan vi favnedes ømt.
+Tag dog aldrig en Anden til Elsker! Det mærker din Mand strax.
+Husk, det gjælder kun mig, at han har mistet hver Sands!
+Hexen mig sagde, hun mægted endog — kan jeg tro det? — at løse,
+enten med Sang eller Urt, Kjærlighedslænken, jeg bær’.
+Ind hun mig vied ved Faklernes Blus. Til Troldommens Guder
+har hun en maaneklar Nat ofret et sortuldet Lam.
+Kjærlighedslænken ej løs! — jeg bad — bind dermed os begge! —
+Kunde jeg skilles fra dig, aldrig jeg vilde det dog.
+Haard som Jern var jo den, som, uagtet han kunde dig eje,
+hellere rejste til Krig bort efter Bytte, den Nar!
+Lad da kun ham med Sejr forfølge de fjendlige Skarer,
+<pb n="14" facs="026.jpg"/>rejse sin krigerske Lejr paa den erobrede Grund,
+lad ham sidde paa Gangeren rap, af Alle beundret,
+ganske bedækket med Guld, ganske bedækket med Sølv!
+Er jeg, min <w>Delia</w>, kun hos dig, skal jeg Studene gjerne
+spænde for Plov og, som vant, vogte paa Bjerget min Hjord.
+Undes mig kun at holde dig tæt i mit kjærlige Favnlag,
+hviler jeg sødt, om jeg saa sover paa Jorden saa haard.
+Sengen med Purpur opredt, hvad er den uden Kjærligheds Lykke?
+Natten er kjærkommen ej, thi den henvaages i Graad.
+Søvnen kommer ej did trods Dyner og brogede Tæpper,
+ja, trods Springvandets mildt dyssende, stille Musik. —
+Naar har, mægtige <w>Venus</w>, min Tale fornærmet din Guddom?
+Voldte da Tungen min Straf ved et ugudeligt Ord?
+Klager man over, at jeg gik besmittet ind i dit Tempel,
+at fra dit Alter min Haand røved den hellige Krands?
+Dersom en Synd jeg begik, vil i Templet jeg angerfuld knæle,
+der bønfalde med Kys Tærskelens hellige Sten,
+henad Gulvet jeg ydmyg paa Knæ vil slæbe mig fremad
+og imod Tempelets Dør støde mit Hoved i Sorg.
+Du, som med Skadefryd leer ad min Ulykke, vogt dig; thi snarlig
+kan dog en Gud, ja fler, ogsaa mod dig vorde grum.
+Mangen, jeg spotte har seet ad Elskov og Ynglingers Klager,
+bøjed som Olding selv Nakken for Kjærligheds Aag;
+Elskovs Ord med skjælvende Røst han prøved at stamme,
+<pb n="15" facs="027.jpg"/>vilde saa gjerne lidt net ordne det graanende Haar;
+Skam han satte tilside, den Skjønnes Dør han belejred,
+midt mellem Sværmen paa Torv holdt hendes Terne han fast.
+Saa man forliebt en Olding, da stimled Ynglinger, Drenge
+om ham og spytted i Barm (Varslet jo holdes for slemt).
+Skaan mig, <w>Venus</w>! jeg tjente dig jo med Hengivenhed stedse.
+Vær ej grusom! stik ej selv dine Lader i Brand!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110305">
+<head>
+  <title><num>4.</num>Amor, stadigt paany mig lokker et Smil paa dit Aasyn</title>
+  <firstline>Amor, stadigt paany mig lokker et Smil paa dit Aasyn!</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110305"/>.</note>
+  </notes>
+  <source pages="16-19"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<w>Amor</w>, stadigt paany mig lokker et Smil paa dit Aasyn!
+Følger jeg Stakkel, du snart viser dig fjendlig og grum.
+Sig, hvorfor piner du mig? Eller vinder du glimrende Hæder,
+dersom en dødelig Mand segner for dig, for en Gud?
+Snarer lægges der nu for min Fod, og <w>Delia</w> snedig
+favner — jeg véd ej hvem — ømt i den skjulende Nat.
+Rigtignok negter hun det; men hun negter saa meget — hvo troer det?
+Saaledes altid om mig negter hun kjækt for sin Mand.
+Selv jeg Usalige lærte jo hende, hvorledes man skuffer
+Vogternes Blik. Ak, nu vendes min List mod mig selv.
+Paaskud lærte hun da til at ligge om Natten alene,
+aabned øvet en Dør, uden at Hængselet peb.
+Havde paa Huden jeg trykket et Mærke, naar heftigt jeg kyssed,
+skaffed jeg Urter og Saft, hurtigt det Pletten tog bort.
+Men uforsigtige Mand, som ejer den snedige Pige!
+Før maa du spærre for mig, holdes hun kun til sin Pligt!
+Tag dig iagt, naar du seer, at hun taler med Ynglinger længe,
+seer, at hun løser sin Dragt, blotter sin dejlige Barm!
+Vink hun bruger, pas paa! Naar Vin der paa Bordpladen spildes,
+væder hun Fingren deri, skriver saa listeligt Ord.
+<pb n="17" facs="029.jpg"/>Vogt dig, naar hun gaaer ud, om hun siger endog, <w>Bona-Dea’s</w>
+Fest skal fejres, hvortil Adgang er lukket for Mænd.
+Vil du betro det til mig — jeg følger med hende til Altret
+uden at frygte, jeg skal straffes med Øjnenes Tab. —
+Ofte, jeg husker, jeg holdt hendes Haand med det fiffige Paaskud,
+at jeg beundred en Ring eller den udskaarne Sten;
+ofte ved Vinen jeg fik dig i Søvn, jeg sejred ved Drikken,
+Vand jeg i Bægeret kom, derfor berustes jeg ej.
+Narred jeg dig, var Skylden ej min. Tilgiv! Jeg bekjender!
+<w>Amor</w> bød. Mod en Gud Ingen kan hæve sin Arm.
+Aabent Alting bekjende jeg vil. Det var mig, som om Natten
+altid var Skyld, at din Hund gjorde saa rasende Larm.
+Har du vel Gavn af den yndige Viv? Du forstaaer ej at vogte
+Skatten. Forgjæves, jo pyt, sætter du Slaa for din Dør.
+Kysser hun dig, hun længes dog kun efter ham, som er borte,
+ofte forstiller hun sig, klager med Et, hun har Ondt.
+Satte du mig til at vogte — de strengeste Slag vil jeg taale,
+gjerne jeg finder mig i, Lænken mig lægges om Fod —
+skulde jeg holde dem borte, de fine Herrer, som kruse
+pænt deres Haar, og hvis Dragt falder i Folder saa flot.
+Møder os Nogen paa Vej, og vil slippe for Kiv, maa han standse,
+holde sig fjernt eller og dreje om Hjørnet i Hast.
+Saaledes <w>Amors</w> Bud det befaler. En mægtig Præstinde,
+oplært af Guderne selv, spaa’de mig det i sin Sang
+(fyldt af <w>Bellona’s</w> begejstrende Kraft hun frygter ej længer
+<pb n="18" facs="030.jpg"/>Ildens fortærende Magt, Slag af den snoede Pidsk.
+Rasende saarer hun selv med Øxen, uden at skades,
+Armen og stænker i Hast Guddommens Billed med Blod.
+Saaledes slaaer hun med Saar i sin Barm, med Saar i sin Side,
+hører Gudindens Bud, spaaer om den kommende Tid):
+«Vogter jer vel for at krænke den Mø, som vogtes af <w>Amor</w>,
+ellers vil bittert engang Straffen nok lære jer det!
+Prøv at røre! Dit Gods vil da svinde, som Blodet udstrømmer
+rask af mit Saar, og som her Asken adspredes af Vind.»
+<w>Delia</w>, dig forkyndte hun ogsaa Straf, jeg ej mindes;
+hvis du Brøden begaaer, ønsker jeg Straffen dog mild.
+Skaansel jeg skylder ej dig, men din ædle, bedagede Moder
+mildner mit Sind, kun hun Vreden at stille formaaer;
+tidt hun i Mørket mig leder til dig og lønligt, med Skjælven,
+lægger hun tavs min Haand, knyttende Pagten, i din,
+venter om Natten ved Døren og viger ej fra den. I Afstand
+mærker mit Komme hun strax, Fodtrinnet kjender hun godt.
+Skjæbnen forlænge dit Liv, du kjære Matrone! Jeg delte
+glad mine Fremtids Aar, lod det sig gjøre, med dig.
+Altid jeg elske dig vil og for din Skyld elske din Datter;
+hvad der saa skeer, dit Blod, husker jeg dog, at hun er.
+Lær hende trofast at være, som var hun min Hustru, med Haaret
+ærbart bundet i Svøb, Fødderne hilded i Slæb!
+Streng være Loven for mig til Gjengjæld! At rose de Andre
+være forment, hvis jeg ej ønsker et straffende Blik.
+<pb n="19" facs="031.jpg"/>Skjønt jeg er brødefri, blot hun formoder, jeg er hende troløs,
+maa hun langs Gaden mig dog slæbe ved Haaret afsted. —
+<w>Delia</w>, Guder forbyde, jeg slog dig nogentid! — Greb mig
+Vanvid saa, vil jeg før, at jeg var født uden Haand.
+Haard er jeg ikke, jeg tvinger dig ej. Kun gjensidig Elskov
+knytte dig fast til min Sjæl, trofast, om end jeg er fjern!
+Den, der var troløs mod Alle, maa fattig, af Alderdom bøjet,
+spinde den snoede Traad, Stakkel, med skjælvende Haand.
+Trællende surt ved sin Væv fastbinder hun Rendingens Traade,
+renser med Kartens Tand Ulden af snehvide Faar.
+Ynglinger Arm i Arm med Skadefryd spotte den Gamle,
+raabe: Skjønt Nøden er stor, har hun den ærligt fortjent.
+<w>Venus</w> høit fra <w>Olymp</w> hendes Graad urokket beskuer,
+varsler for Andre, hvor grum Straffen for Troløshed er.
+Truslerne gjælder ej dig. Vi, <w>Delia</w>, begge vil være,
+selv naar Lokken er graa, Vidner om Kjærligheds Magt.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110306">
+<head>
+  <title><num>5.</num>Ak jeg var stolt, jeg praled saa rask, at om Skilsmisse fra dig</title>
+  <firstline>Ak jeg var stolt, jeg praled saa rask, at om Skilsmisse fra dig</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110304"/>.</note>
+  </notes>
+  <source pages="20-23"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ak jeg var stolt, jeg praled saa rask, at om Skilsmisse fra dig
+brød jeg mig lidt; men nu mistet min Kjækhed jeg har.
+Uro mig tumler omkring, som en Top paa Jorden sig snurrer
+rask, naar den øvede Dreng driver den rundt med sin Pidsk.
+Plag mig, Trodsige, pin mig nu kun, forbyd mig at tale
+stolt herefter og tæm Tungens for dristige Sprog!
+Skaan dog heller, jeg beder ved Nætternes lønlige Favntag
+og ved dit Hoved, som tæt <w>Venus</w> lagde til mit!
+Husk, da du mat paa Lejet laa strakt af den hæslige Feber,
+saa var det mig, hvis Bøn frelste fra Døden dit Liv.
+Medens den gamle Hex fremmumled de magiske Sange,
+svang jeg et Røgelsekar fuldt af det rensende Svovl.
+Omhu jeg bar for din Søvn, til de skrækkende Drømme jeg ofred
+Kornene blanded’ med Salt; aldrig de skaded mig da.
+Selv med Klædningen løst og med Offerbaandet om Panden
+nifold Offer ved Nat har jeg til <w>Trivia</w> bragt.
+Intet jeg spared; men, ak, nu nyder en Anden din Elskov;
+hvad mine Bønner har frelst, ejer den Heldige nu.
+Dog i min Daarskab jeg drømte mig da, naar bare du frelstes,
+Livets Lykke, men ak, Guderne vilde det ej:
+<pb n="21" facs="033.jpg"/>Jeg skulde dyrke min Jord, du, <w>Delia</w>, Opsynet føre,
+hvergang man tærsked vort Korn, tørret af varmende Sol;
+du skulde Druernes Saft i Lædersækkene gjemme
+samt den hvideste Most, perset af hurtige Fod;
+du skulde tælle vort Kvæg. Til den kjærlige Husmoders Arme
+Trællens snaksomme Purk vilde med Munterhed ty.
+Fromt vilde Bondens Gud du for Vinhøst Druerne bringe,
+Offerretter for Kvæg, Ax for det høstede Korn,
+du skulde Tyendet styre, du passed det Hele med Omhu,
+Intet i Huset var jeg, dog det fornøjed mig just.
+Og naar min Ven <w>Messalla</w> saa kom, de sødeste Frugter
+plukked du, <w>Delia</w>, selv strax fra dit ypperste Træ,
+travl for den herlige Mand du sørged og viste ham Hæder,
+selv du dækkede Bord, varted ved Maaltidet op.
+Saaledes drømte jeg da, men Billedet fejes af Vinde
+bort til <w>Armenien</w> hist, Røgelsers duftende Hjem.
+Ofte jeg søgte med Druen at jage paa Flugt mine Sorger,
+men i min Kjærligheds Nød blandtes med Taarer min Vin.
+Ofte jeg slynged min Arm om en Anden, men nærved et Favnlag
+randt du mig atter i Hu, Elskoven glemte jeg rent.
+Pigen forlod mig da vred og raabte, jeg vist var forhexet;
+i sin Fortrydelse dig klaged for Troldom hun an.
+Ej dog koglende Sang, men dit Aasyn, Armenes Skjønhed,
+Lokkernes lysgule Strøm Skyld i Fortryllelsen var.
+<w>Thetis</w>, Havets Gudinde, du ligner, da hun til <w>Pelevs</w>
+<pb n="22" facs="034.jpg"/>fordum paa bidslet Delfin red over blaalige Hav.
+Ak, min Skade var den, han var rig, den Bejler, som vandt dig,
+snedig Koblersken var, hun, som forvoldte mit Fald.
+Gid den Kvinde til Straf sig af blodige Spiser maa nære,
+Bægre med Galde fyldt tømme med Blodet om Mund!
+Gid en Spøgelsehær, som med Hylen forbander sin Skjæbne,
+om hende flagre, fra Tag skræmme Natuglernes Skrig!
+Dreven af rasende Sult hun Græsset fra Gravene rive,
+Aadslet, den graadige Ulv levned, hun søge som Kost!
+Gid hun maa styrte med Hylen afsted gjennem Byernes Gader
+nøgen, gid Hundenes Flok hende forfølge saa bidsk!
+Guden gi’er Tegn; det skeer! En Elsker beskjærmes af Himlen,
+<w>Venus</w> hævner et Brud, naar det var ikke forskyldt.
+<w>Delia</w>, hør ikke paa, hvad Hexen pengegridsk raader!
+Tro mig, med Gaver kan ej Kjærlighed længe bestaa!
+Tag dig en Fattig til Elsker! Han holder sig tæt ved din Side,
+aldrig forlader han dig, tjener dig stadigen tro.
+Tag dig en Fattig til Elsker! Han følger dig tro gjennem Trængsel,
+baner dig Vej, og mod Tryk skjærmer han dig med sin Arm.
+Tag dig en Fattig til Elsker! Han følger dig lønligt til Venner,
+løser fra snehvid Fod Baandet, som holder din Sko.
+Ak, jeg spilder min Sang. Din Dør dog aabner sig ikke,
+rørt af mit Ord; med en fuld Haand maa man banke derpaa.
+Du, som har hendes Yndest, maa frygte den selvsamme Skjæbne,
+Lykken jo flyver forbi let paa det rullende Hjul.
+<pb n="23" facs="035.jpg"/>Visselig ej uden Grund en Mand ved Døren man ofte
+seer, lidt kigger han frem, løber saa atter igjen,
+lader, som om han gaaer Huset forbi, men naar Gaden er øde,
+kommer han atter igjen, hoster ved Døren til Tegn.
+Vistnok en hemmelig Elsker, som Noget har for! Medens Tid er,
+nyd din Lykke, min Ven! Søen er rolig endnu.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Freden og Landet</title>
+</head>
+<content>
+
+<text id="conradsen2026110307">
+<head>
+  <title><num>6.</num>Rædsomme Sværd! den Mand, hvis Kløgt I skylde jert Ophav</title>
+  <firstline>Rædsomme Sværd! den Mand, hvis Kløgt I skylde jert Ophav</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110307"/>.</note>
+  </notes>
+  <source pages="27-29"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Rædsomme Sværd! den Mand, hvis Kløgt I skylde jert Ophav,
+grusom visselig var, koldt var hans Hjerte som Jern.
+Drab nu begyndte for Menneskers Æt og blodige Krige,
+nu der en kortere Vej gik til den hæslige Død.
+Dog, han voldte det ej, hin Ulyksalige: Værget
+smeddet mod Rovdyrs Vold vendte vi selv til Fordærv.
+Guldtørst! Brøden er din, ei kjendtes jo Krigene fordum,
+dengang da skaaret af Træ Bægret ved Maaltidet stod;
+Borgmur, Pæle til Værn ej kjendtes, men Hyrden sig rolig
+strakte til Ro paa Mark mellem de brogede Faar.
+Var jeg blot dengang født, ukjendt med de hæslige Vaaben,
+banked ej Hjertet af Skræk nu ved Trompeternes Klang.
+Nu man mig slæber til Krig. Maaske blandt Fjender en Kriger
+bærer det Spyd, som snart borer sig ind i mit Bryst.
+Skjærmer mig, Fædreneguder! Ved jer jeg trivedes fordum,
+da jeg som Pog end løb legende rundt ved jer Fod.
+Støtterne skares af Ved af et ældgammelt Træ — men I skjæmmes
+ikke derved, I stod saadan i Fædrenes Hus.
+<pb n="28" facs="040.jpg"/>Løfterne bedre man holdt, dengang i den fattige Bolig
+Guden stod skaaren i Træ, tarvelig kun i sin Pynt.
+Ham forsoned man let, naar man bragte ham Druen til Offer
+eller en Krands til hans Haar, prunkløst flettet af Ax.
+Glad over tilmaalt Held kom Husfader til ham med Kagen,
+bagved tripped hans Glut bærende Honningen pænt. —
+<w>Larer</w>! skjærmer min Krop for den kobberhvæssede Spydsod!
+Da som Offer en Gris faaer I fra Landmandens Sti.
+Selv jeg følger, min Dragt er tvættet saa hvid, om min Tinding
+slynge sig Myrter; en Kurv smykket med Myrter jeg bær’.
+Gid jeg maa vinde jer Yndest! Lad <w>Mars</w> en Anden kun hædre,
+lad ham, tapper i Strid, fælde den fjendlige Helt.
+Helst jeg drikker i Fred, medens Krigeren sine Bedrifter
+melder mig stolt og med Vin tegner en Lejr paa mit Bord.
+Afsind er det i Krigen den hæslige Død sig at hente,
+tidsnok kommer jo den, listende lønligt sig frem;
+thi dernede man finder ej Korn eller Ranker, men <w>Charon</w>,
+Færgemanden paa <w>Styx</w>, <w>Cerberus</w>, Hunden saa glubsk;
+der ved det dunkle Vand omsværme Skyggerne gustne,
+Haaret er hæslig forbrændt, Kinden er blegnet af Skræk. —
+Bedre det tykkes mig dog: i sin fattige Hytte, med Afkom
+rigt velsignet, at naa Oldingens rolige Fred.
+Faderen Faar og Sønniken Lam til Græsningen driver,
+Moderen varmer imens Vand til et kvægende Bad.
+Gid kun saadan min Tinding maa krandses af snehvide Lokker,
+<pb n="29" facs="041.jpg"/>mens jeg for lyttende Kreds Oldingens Minder forny’r.
+<w>Freden</w> velsigne min Mark! Thi Freden, den lyse Gudinde,
+tvang først Plovstudens Hals under det krummede Aag,
+Freden gav Rankerne Kraft, den bevarede Saften af Druer,
+Sønnen nød nu den Vin, Faderen gjemte paa Kar.
+Freden for Hakken og Ploven er god, men den voldsomme Krigers
+grusomme Sværd i en Krog dækkes med tærende Rust.
+Bonden fra Festen i Lunden hjemager en Smule beruset,
+Kvinden er med, og af Børn svingende fuld er hans Vogn.
+<w>Venus</w>, din hidsige Kiv nu raader, og Pigerne græde,
+hin blev trukken i Haar, denne fik Døren brudt op.
+Pigen græder, han slog hendes Kind; men han, der har sejret,
+græder dog med, hans Haand var i hans Rasen for stærk.
+Amor er kaad, han i Striden forsyner dem begge med Skjældsord,
+sidder saa rolig og kold, medens de skjændes omkaps.
+Hvo der sin Pige kan slaa, som Sten eller Jern maa han være,
+fræk han Guderne selv gjerne fra Himmelen jog.
+Nok, at man river med Vold hendes fineste Klædning i Stykker,
+nok, at man splitter saa kaad Haaret, som pynteligt sad!
+Taarerne flyde. Hold op! Du er lykkelig, dersom din Pige
+møder din Vrede med Graad, ej med en haanende Trods.
+Mand med den voldsomme Haand, grib hellere Skjoldet og Landsen!
+<w>Venus</w> er mild, gaa bort! Langt er fra hende din Plads. —
+Fred, du milde Gudinde med Ax i din Haand og med Frugter
+stabled’ i Klædningens Flig, kom! Kom naadig til os!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110308">
+<head>
+  <title><num>7.</num>Kjære Forsamling, vær tavs! Vi Markindvielsen fejre</title>
+  <firstline>Kjære Forsamling, vær tavs! Vi Markindvielsen fejre</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110308"/>.</note>
+  </notes>
+  <source pages="30-33"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kjære Forsamling, vær tavs! Vi Markindvielsen fejre
+efter den ældgamle Skik, Fædrene gav os i Arv.
+Kommer nu, Guder! Og slyng om din Tinding, hornede <w>Bacchus</w>,
+Drueklaserne!  Flet, <w>Ceres</w>, Ax om dit Haar!
+Jorden paa Festens Dag skal hvile, Dyrkeren hvile;
+Plovjern hænge vi hen, standse med mattende Slid.
+Løser nu Baandet om Aag! Nu ved Krybberne fyldte med Foder
+Studene ledige bør staa med de krandsede Horn.
+Gjerning til Ære for Guder er tilladt ene; lad Ternen
+hvile fra daglig Dont Ulden at spinde paa Rok.
+Eder ogsaa jeg viser herfra, forlader vort Alter,
+I, hvem Venus inat skjænkede Kjærligheds Fryd!
+Guderne Kydskhed forlange. Hidkommer i tvættede Klæder,
+øser af Vandet i Bæk, loer eders Hænder deri!
+Seer I, det viede Lam gaaer hen til Altrets Flammer!
+Hvidklædt følger en Sværm, Krands af Oliven den bær’.
+Fædreneguder! Vi rense vor Jord, vi rense dens Dyrker!
+Driver da bort fra vor Marks Grændseskjel Ondt og Fortræd!
+Lader ej Marken i Høst os skuffe med Ax, der er golde,
+lader ej Lammet med Skræk flygte for Ulven saa rap!
+<pb n="31" facs="043.jpg"/>Da vil Bonden, i Lid til de bugnende Marker, i Festdragt
+rejse det flammende Baal, øge det stadigt med Ved;
+rundtom Trællenes Flok oprejser sig Hytter af Løvværk,
+spøgende muntert (et Tegn, Herren er ogsaa tilfreds).
+Gid vort Ønske maa fremmes! Dog seer blot, Offerets Indvold
+varsler om Fremtiden godt, lover os Gudernes Gunst.
+Slæber <w>Falerneren</w> hid, en gammel, som Røgen har mildnet!
+Hid med <w>Chieren</w>, kom, løser nu Dunkenes Baand!
+Dagen skal hædres ved Vin, og paa Festen Ingen sig skamme
+bør ved en Rus, naar han tung slingrer paa Benene lidt.
+«Leve <w>Messalla</w>» det Ønske skal stadigt ved Bægrene lyde;
+skjønt han er fjern, om hans Navn drejer sig Samtalen kun.
+Sejerhædret du blev ved Triumfen nys, Aqvitaners
+Overvinder, og stolt pryder du Fædrenes Slægt.
+Tanken om dig skal fylde mit Bryst, naar Landmandens Guder
+nu jeg bringer vor Tak glad i den festlige Sang.
+Landet jeg priser i Sang og Landets Guder. De gav os
+bedre Føde; thi før aad vi kun Olden som Dyr;
+de have lært os af Bjælker i Lag at tømre vor Bolig,
+dernæst at tække med Løv Huset saa tarveligt bygt;
+de først avede Tyren til føjelig Trældom i Aaget,
+de først satte paa Vogn Hjulenes rullende Par.
+Raahedens Tid forsvandt.  Frugtbærende Træer man planted,
+Haven, vandet med Kunst, bragte nu rigeligt ind,
+gyldne Druer blev perset med Fod og ydede Saften,
+<pb n="32" facs="044.jpg"/>i den oplivende Vin kom dog ædrueligt Vand.
+Marken hvert Aar sin Grøde nu bar, naar de glødende Straaler
+bøjede nedad mod Jord Agerens guldgule Haar.
+Blomsternes Saft om Vaaren den flyvende Bi til sin Kube
+bar, og med Honningen sød fyldte den Cellerne der,
+Bonden tilfreds med sin Høst efter Plovens stadige Møje
+kvad sin kunstløse Sang nu til en jævn Melodi.
+Mættet og glad han paa Fløjten af Straa ledsagede Sangen,
+naar han taknemmelig kvad smykkede Guder til Pris.
+Bonden bemaled sit Ansigt med Rødt, naar han fejred med Chorsang,
+<w>Bacchus</w>, din Fest (dog endnu Kunsten var lidet forsøgt),
+fik saa til Lønning en Buk — en dengang betydelig Gave;
+rig var Folden, som gav Bukken, den Faarenes Drot.
+Ude paa Landet hver Knøs af Foraarsblomster nu fletted
+Krandse, smykkede fromt ældgamle <w>Larer</w> dermed.
+Ude paa Landet nu gik i den bløde, snehvide Kofte
+Faaret; Ulden, den bar, skaffede Pigerne Slid;
+den var Aarsag til kvindelig Dont, til Rok og til Spinden,
+Tommelfingeren flink snurred nu Tenen omkring;
+mangen Væverske nu, oplært af den travle <w>Minerva</w>,
+muntert sang ved sin Dont, klaprende gik hendes Væv.
+Ude paa Landet <w>Cupido</w> blev født blandt ustyrlige Hopper
+hist ved den kornrige Mark mellem de stimlende Faar.
+Der han øved sig først med den end ej prøvede Bue;
+ak, han er vorden forvist øvet og sikker paa Haand!
+<pb n="33" facs="045.jpg"/>Ikke som forhen er Dyr nu hans Maal. Men Piger at ramme,
+det er hans Fryd, og med Haan tæmmer han trodsige Mænd.
+Ynglingers Gods han forøder. For umilde Skjønheders Døre
+nøder han Oldinger tidt til en forsmædelig Bøn.
+Vej han viser, naar Pigen i Mørket sig hemmeligt lister,
+slumrende Vogter forbi, ene til Ynglingen hen,
+naar hun med ængstelig Frygt først prøver, før Foden hun sætter,
+famler med Hænderne frem gjennem det natlige Mulm.
+Ve jer Stakler, hvem Guden er grum og plager bestandigt!
+Held dig, hvis Amor til dig kommer mildtviftende, blid!
+Guddom, kom til vort festlige Lag! Dog, læg dine Pile,
+gjem dine Fakler, og hør, skjul disse rædsomme Blus!
+Synger til Pris for den fejrede Gud! Paakalder for Hjorden
+aabenlydt alle hans Hjælp — lønligen hver for sig selv,
+eller og aabenlydt. Ingen jo hører; den lystige Skare
+samt Krumfløjten idag døver hvert Øre med Larm.
+Leger med Fryd! Snart Natten sit Spand fremdriver, de gyldne
+Stjerner i jublende Dands følge bag Moderens Vogn.
+Snarlig den tavse Søvn med de dunkle Vinger nu kommer,
+Drømme, sortslørede, snart rave bedøvede frem.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Nemesis</title>
+</head>
+<content>
+
+<text id="conradsen2026110309">
+<head>
+  <title><num>8.</num>Trældom, jeg seer, er min Lod, og en Herskerinde jeg fik nu</title>
+  <firstline>Trældom, jeg seer, er min Lod, og en Herskerinde jeg fik nu</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110310"/>.</note>
+  </notes>
+  <source pages="37-39"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Trældom, jeg seer, er min Lod, og en Herskerinde jeg fik nu.
+Frihed, nedarvet i Slægt, dig maa jeg byde Farvel!
+Trældom, sørgelig Trældom er min, jeg bindes af Lænker,
+aldrig Amor (o Nød!) slapper de trykkende Baand.
+Kjærligheds Flamme mig grumt (har jeg dette fortjent, har jeg syndet?)
+brænder. Tag Fakkelen bort, grusomme Pige! Ak ve!
+O, langt hellere dog end saadanne Smerter at føle
+vilde som Sten jeg staa hist paa det snedækte Bjerg
+eller som Skjæret i Hav, der af Vindene skrækkeligt pidskes,
+rammes af Bølgernes Kast, naar de slaa Snekker i Kvag!
+Sorgfulde Dagene gaa, mer sorgfulde Nætterne mørke;
+ak, hver Time mig nu rækker en Bitterhedsdrik.
+Hverken gavne mig Vers eller Sangenes Ophav <w>Apollo</w>;
+stadigt hun krummer sin Haand, Penge forlanger hun kun.
+Bort, I <w>Muser</w>, kun bort, naar Intet en Elsker I hjælpe!
+Ej for at prise med Sang Krigen jeg dyrker jer fromt,
+Solens Vandring jeg aldrig besang eller Maanen, der kjører
+Banen tilende, sit Spand vender og driver det hjem.
+<pb n="38" facs="050.jpg"/>Nej, til min Elskede frem skal Sangen bane mig Adgang.
+Bort, I Muser, kun bort, dersom den evner ej det!
+Dersom kun Udaad og Mord kan skaffe de Gaver, hun kræver,
+(ellers ved stængede Dør grædende ligge jeg maa),
+hvis jeg maa røve den kostbare Skat fra de hellige Templer,
+<w>Venus</w>, da gjælder det dig først, dig krænker mit Rov.
+Du til Forbrydelser raader, en Herskerinde du gav mig,
+gridsk efter Guld. Saa føl Tempelranerens Haand! —
+Død over Hver, som samler de kostbare grønne Smaragder,
+Hver, som snehviden Uld farver med Purpuret skjønt!
+Dette samt straalende Perler fra røden Hav og de dyre
+Klæder af Silke har voldt, Piger paa Guldet er gridsk.
+Dette fordærved dem snart, og med Slaa blev Døren nu stænget,
+Hunden ved Indgangen nu lænkedes fast som en Vagt.
+Dog har du bare tilstrækkeligt Guld, gi’er Vogteren efter,
+Slaaen ej spærrer din Vej, Hunden endogsaa bli’er tavs.
+Ak, den Magt, der har skjænket en gjerrig Pige en Guddoms
+Skjønhed, har sænket en Skat ned mellem Dynger af Ondt.
+Derfor der lyder nu Trætter og Graad, ja det har forvoldet,
+at Gud <w>Amor</w> blev trindt ildeberygtet hos Hver.
+Pige, der viser hver Elsker, som overbydes af Andre,
+bort, gid Luer og Storm røve de Skatte, du vandt!
+Ildebranden vil sikkert med Fryd af Ynglinger skues,
+ingen vil, ivrig til Hjælp, gyde paa Flammerne Vand.
+Kommer saa Døden engang, er der Ingen, Ingen, som sørger,
+<pb n="39" facs="051.jpg"/>Ingen, som hædrer dit Lig, naar det skal bæres til Grav. —
+Nej, er Pigen huldsalig, ej gjerrig, da — selv om hun leved
+hundred Aar — vil Enhver græde ved flammende Baal;
+og mod sin Ungdomselskede tro vil mangen en Olding
+rejse paa Graven en Sten, smykke den aarlig med Krands,
+ønske, naar bort han gaaer: Gid roligt og stille du hvile,
+Jorden favne dig ømt, dække din Aske med Fred! —
+Sandhed er min Formaning, men Sandhed gavner mig ikke.
+Søger jeg Elskov, vel, hun har Betingelsen sat.
+Dersom hun byder mig sælge mit Hus, min Fædrenebolig,
+<w>Larer</w>, lystrende da stiller jer frem til Auction!
+<w>Circes</w>, <w>Medeas</w> Gift, <w>thessaliske</w> Troldhexes Urter,
+Elskovsdrikken, med List brygget af Hoppernes Mælk,
+Tusinde Troldoms-Urter — kan, <w>Nemesis</w>, gjerne du blande;
+seer jeg dit kjærlige Smil, tømmer jeg Drikken paa Stand.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110310">
+<head>
+  <title><num>9.</num>Macer drager i Krig. Hvordan gaaer det med Amor, den kjælne</title>
+  <firstline>Macer drager i Krig. Hvordan gaaer det med Amor, den kjælne?</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110311"/>.</note>
+  </notes>
+  <source pages="40-42"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<w>Macer</w> drager i Krig. Hvordan gaaer det med <w>Amor</w>, den kjælne?
+Følger han med, har han kjækt Rustning om Skulderen lagt?
+Er det hans Agt at drage ved Mandens Side med Vaaben
+snart ad Vejen saa lang, snart over vildene Hav? —
+Hævn dig, mægtige Barn, dit rolige Liv han foragted,
+kald du Flygtningen strengt under din Fane paany!
+Men, er du skaansom mod Krigere, vel, saa vil jeg være Kriger,
+vil som simpel Soldat hente mig Vandet i Hjelm.
+Jeg vil til Lejren. Farvel jeg <w>Venus</w> og Pigerne byder.
+Kræfter fattes mig ej, følge Trompeten jeg vil.
+— Ak Praleri! Hvor prægtigt de lukkede Døre kan standse,
+hvergang jeg taler saa kjækt, Ordenes dristige Strøm.
+Ofte jeg svor: Nej aldrig igjen til Døren jeg kommer;
+ærlig var Eden — og dog Foden tilbage mig trak.
+<w>Amor</w>, Tyran! gid jeg snart saa Pilene — grusomme Vaaben! —
+sønderbrudte, gid snart Faklerne slukte jeg saa!
+Thi mig Stakkel du piner; mig selv du nøder at ønske
+Ondt, aftvinger min Mund Vanvids bespottende Ord.
+Endt havde Døden forlængst min Kval, naar ej Haabet: «Imorgen
+bedre det bli’er» mit Liv næred med skuffende Trøst.
+<pb n="41" facs="053.jpg"/><w>Haabet</w> gi’er Bonden sit Brød, thi Haabet til pløjede Furer
+Sæden betroer, som rigt gives med Renter igjen;
+Haabet Fuglene fanger i Snaren og Fisken med Snøren,
+(Krogen saa liden og tynd skjules af Maddingen først);
+Haabet trøster en Fange, som bindes af vægtige Lænker,
+klirrer end Jernet om Ben, synger han dog ved sit Slid.
+Haabet lover mig <w>Nemesis’</w> Gunst. Selv giver hun Afslag.
+Grusomme Pige, byd ej selve Gudinden dog Trods!
+Skaan mig, hør dog min Bøn ved din Søsterlils tidlige Dødsbaal!
+Gid hun hvile med Fred, favnet af Graven saa ømt!
+Helligt mig er hendes Minde, til Graven bringer jeg Gaver,
+Krands jeg hænger derom, dugget af Taarer, jeg græd.
+Hen til Gravhøjen flygte jeg vil, hendes Aske, den tavse,
+ydmyg anraaber jeg der, klager for hende min Nød.
+Stadigt taaler hun ej, hendes Ven maa græde for din Skyld.
+Hør gjennem mig hendes Røst: Vær imod Elskeren mild!
+Vogt dig! Trodser du Skyggen, da sender den plagende Drømme.
+Slumrer du, staaer ved din Seng Søster, — et sørgeligt Syn —
+som hun styrtet i knusende Fald fra det taarnhøje Vindu’
+kom til Dødsrigets Vand ganske besudlet med Blod . . . .
+Holdt! Jeg vil ikke forny min Elskedes grusomme Smerte;
+jeg er ej værd, at hun græd ikkun en eneste Gang.
+Hun er for god til med Taarer at skjæmme de livfulde Blikke.
+Koblersken kun er mig fjendsk, Pigen er Godheden selv.
+Mig viser Koblersken bort, men lønligt Breve for Andre
+<pb n="42" facs="054.jpg"/>bringer hun skjult ved Barm frem og tilbage saa tidt.
+Ofte, skjønt godt jeg fornemmer min Elskedes Stemme derinde,
+spærrer hun Døren mig dog, negter dig hjemme saa fræk.
+Ofte, naar natligt Stævne mig lovedes, melder hun enten,
+Pigen er syg, eller og, ikke for Trusler hun tør.
+Sorger nage mig da; fortvivlet Sindet mig maler,
+hvo der har Pigen i Favn, ak, og de tusinde Kys.
+Koblersken da jeg forbander. Opfyldte kun Guder mit Ønske,
+ja, blot den ringeste Del, fik hun af Græmmelse nok.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Neæra</title>
+</head>
+<content>
+
+<text id="conradsen2026110311">
+<head>
+  <title><num>10.</num>Andre Kvinder end jeg skal aldrig dele dit Leje»</title>
+  <firstline>Andre Kvinder end jeg skal aldrig dele dit Leje»</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110306"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="45-46"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+«Andre Kvinder end jeg skal aldrig dele dit Leje»
+Det din Betingelse var, dengang os Elskov forbandt.
+Du mig behager alene; for mit Syn gives der ingen
+Pige forresten, som kan kaldes en Skjønhed hos os.
+Gid det var muligt, at mig alene du tyktes saa dejlig,
+Andre slet ikke smuk! Saaledes sikker jeg var.
+Ikke misundes jeg vil. Bort, Folks lovprisende Sladder!
+Hver, der er virkelig vis, fryder sig tavs i sit Sind.
+Glad nu kunde jeg leve saa fjernt i Skovenes Tykning,
+der hvor aldrig en Vej trædes af Menneskefod.
+Du er min Lindring i Sorger, mit Lys i det natlige Mørke,
+du er mig Selskab nok selv paa det ensomste Sted!
+Sendtes end ned til <w>Tibullus</w> en Elskerinde fra Himlen,
+sendtes forgjæves hun dog. <w>Venus</w>, din Magt var for svag.
+Det jeg sværger dig, Pige, ved <w>Juno’s</w> hellige Guddom,
+hvem du blandt Guderne mest dyrker som ypperst i Magt!
+— Hvad har jeg Daare dog gjort! Ak, Pantet giver jeg fra mig.
+Eden var taabelig. Før næred du Frygt, det var godt.
+<pb n="46" facs="058.jpg"/>Nu kan frejdig du være, kan uden Bekymring mig plage.
+Tungen med Sladder igjen voldte mig Stakkel Fortræd. —
+Alt, hvad du byder, jeg gjør; din, din vil stedse jeg være,
+vante Trældom hos dig finder jeg villig mig i.
+Bunden jeg sidder ved Altret for Elskovs høje Gudinde;
+<w>Venus</w>, mod Uret streng, er mod den Ydmyge mild.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110312">
+<head>
+  <title><num>11.</num>Nej, det forbyde dog Guder! Gid aldrig Drømmen opfyldes</title>
+  <firstline>Nej, det forbyde dog Guder! Gid aldrig Drømmen opfyldes</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Lygdamus’ <xref type="translation" poem="lygdamus2026110301"/>.</note>
+  </notes>
+  <source pages="47-50"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Nej, det forbyde dog Guder! Gid aldrig Drømmen opfyldes,
+som en ulykkelig Søvn stilled for Sjælen inat.
+Overtroiske bort! Beholder de skuffende Syner,
+kræver dog aldrig af mig virkelig Tillid til dem!
+Sandhed varsle kun Guder, Indvoldene Fremtid bebude,
+Sandhedens Varsler deri skuer <w>Etruskerens</w> Kunst.
+Men i den gjøglende Nat os Tilfældets Drømme bedaare,
+derved til unødig Frygt drives et ængsteligt Sind;
+men til Bekymring er Mennesket skabt, og de natlige Varsler
+soner han fromt med Korn blandet med knitrende Salt.
+Dog — hvad rettest nu kaldes — om Sandhedens Varsler man hører,
+eller man lyster at tro, skuffende Drømme, paa jer:
+Lad, <w>Lucina</w>, som Tomhed de natlige Rædsler forsvinde,
+lad min Sjæl uden Grund ængstes — uskyldig den er;
+aldrig endnu forsandt er med Niddingedaad den beplettet,
+Tungen ej fræk har talt mægtige Guder til Spot. —
+Natten paa Himlens Vej havde kjørt sit mulmsorte Firspand,
+badede Hjulene nu just i den blaalige Strøm;
+Søvnen — for Sindets Bekymring en kvægende Guddom — ej dyssed
+end mig i Søvn; han gaaer Kummerens Bolig forbi.
+Dengang <w>Phøbus</w> alt højt fra sin himmelske Bane nedskued,
+<pb n="48" facs="060.jpg"/>sildig Slummer da først lukked mit Øje saa mat.
+Pludselig — tyktes det mig — en Yngling stod i min Bolig,
+Lavren, Kydskhedens Tegn, rundt om hans Tinding var snoet.
+Aldrig Verden endnu saa herlig en Skikkelse skued,
+Billedhuggerens Kunst viser ej saadant et Værk.
+Halsen var slank, paa den nedbølgede Lokkerne lange,
+brune som Myrternes Bær, Salve der drypped fra dem;
+Legemet straaled af Glands, som Maanen lyser i Natten,
+over den snehvide Hud bredte sig Rosernes Skjær,
+ret som naar Jomfruen først man fører til Brudgommens Kammer,
+Aasynet blusser, paa Kind maler sig Roser saa skjønt,
+eller naar Piger i Krands Amarant med Lillier flette,
+eller som Æblet hvidt rødmer i Efteraarstid.
+Kappen var prægtig og lang, i Folder den leged om Anklen,
+det var Dragten, der ret smykked den dejlige Krop.
+Men om hans venstre Skulder der hang den klingende Lyra
+(Skildpaddeskal med Guld indlagt, et kosteligt Værk);
+denne han slog, da i Kamret han tren, med Elfenbensplektret,
+medens den herligste Sang lød med hans tonende Røst.
+Dengang Haanden nu hvilte, der Lyren lod klinge til Sangen,
+lød med den blideste Røst Talen, der varsled om Ondt:
+Hil dig! Du Guden er kjær; thi <w>Bacchus</w>, <w>Phøbus</w> og <w>Muser</w>
+ynde tilsammen en Skjald, som har os dyrket saa fromt.
+Dog hvad den kommende Time vil bringe, sige dig ikke
+<w>Bacchus</w>, <w>Semeles</w> Søn, — <w>Musernes</w> kyndige Chor.
+<pb n="49" facs="061.jpg"/>Mig kun Faderen Magt til at skue det Kommende skjænkte,
+Skjæbnens mægtige Lov, Hvad der i Fremtid er skjult.
+Tillidsfuld lyt til mit Ord, min aldrig svigende Spaadom,
+hør, hvad den <w>cynthiske</w> Gud taler med varslende Mund!
+Hun, du elsker saa højt, som aldrig en Moder sin Datter,
+aldrig en Mand berust elsked en Skjønhed endnu;
+hun, for hvem du bestormer med Bønner de himmelske Magter;
+hun, der er Skyld, at i Sorg Dag efter Dag rinder hen,
+og at om Natten, naar Søvn dig i Mulmets Klædebon hyller,
+Gjøglebilleders Hær daarer med Tomhed din Sjæl;
+hun, dine Sange saa tidt have prist, den skjønne <w>Neæra</w>,
+Hu til en Anden har sat, ønsker at elskes af ham.
+Troløs i Sindet hun er, omtumlet af Uro bestandigt,
+vil ikke kydsk som din Viv nøjes med tarveligt Kaar.
+Ak, hvilken haardhjertet Slægt! dit Navn er Falskhed, o Kvinde!
+Dø burde Hver, som har lært troløst Bedrag mod en Mand.
+Dog — deres Sind omskiftes jo let — maaske hun bevæges.
+Bønfald ideligt, stræk knælende Hænderne ud!
+<w>Amor</w>, den grusomme Gud, os vænner til drøje Strabadser,
+<w>Amor</w>, den grusomme Gud, vænner os ogsaa til Hug.
+Selv har jeg vogtet engang <w>Admetus’</w> snehvide Kvier
+(ej kun et Sagn uden Grund, digtet til Moro, det er),
+kunde med Lyraens Klang ej fryde mig mer, ikke længer
+lokke til Sangene frem Strengenes svarende Lyd;
+ikkun paa Fløjtens hullede Rør Melodier jeg spilled,
+<pb n="50" facs="062.jpg"/>jeg, som er <w>Juppiters</w> Søn, født af <w>Latona</w> — en Gud.
+Kjærlighed ikke du kjender, hvis, Yngling, du negter at bære
+Pagtens tyngende Baand, naar Elskerinden er vred.
+Nej, betænk dig kun ikke! Formild hendes Strenghed ved Klager!
+Haarde Hjerter saa tidt bøjes af mindelig Bøn.
+Troer hun, at Sandheds Varsler fra hellige Templer der lyder,
+saa forkynd hende nu dette fra Sanggudens Mund:
+«Selve den <w>Delosfødte</w> forjætter dig Pagten med denne,
+Lykke hertil. Men vend ej til en Anden din Hu!»
+Knap var det talt, før den døsige Søvn bortsvandt som en Taage. —
+Ak, lad mit Øje dog ej skue den Ulykkesdag!
+Aldrig tænke jeg kunde, din Vilje var modsat min Vilje,
+tænke, dit Hjertes Dyb rummed en Brøde saa stor.
+Thi du stammer dog ikke fra Havets vældige Vover,
+ej fra <w>Chimæra</w>, der vild sprudede Flammer af Gab,
+ikke fra <w>Cerberus</w>, Hunden med Trillinge-Hoved og Tunge,
+rundtom hvis rædsomme Krop Slangernes Vrimmel sig snoer.
+Ikke fra <w>Skylla</w> du stammer, hint Udyr, Kvinde foroven,
+nedentil Hund. Ej har vilden Løvinde dig født,
+heller ej <w>Skythiens</w> Land eller <w>Afrikas</w> sandige Strande,
+nej, men et Dannelsens Hjem, aldrig Haardhjertetheds Ly;
+du har til Moder jo faaet den kjærligste Kvinde blandt alle,
+faaet til Fader en Mand, elskelig stedse som faa. —
+Grusomme Drømme, jert Varsel afvende da Guderne naadigt!
+Flyver kun magtløse bort, Vindene givne til Leg!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110313">
+<head>
+  <title><num>12.</num>Straalende Liber, o kom! — Gid Ranken stedse dig smykke</title>
+  <firstline>Straalende Liber, o kom! — Gid Ranken stedse dig smykke</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Lygdamus’ <xref type="translation" poem="lygdamus2026103102"/>.</note>
+  </notes>
+  <source pages="51-53"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Straalende <w>Liber</w>, o kom! — Gid Ranken stedse dig smykke,
+og om din Tinding sig tæt Vedbendekrandsene sno!
+Driv mine Sorger paa Flugt, helbred mit lidende Hjerte!
+Ofte din Gave vandt Sejr, Kjærligheds Gud maatte fly. —
+Fyld vore Bægre, min Dreng, da til Randen med kostelig Drue,
+rask, med din villige Haand, skjænk os <w>Falerneren</w> i!
+Bort, I Bekymringers trykkende Hær, bort, nagende Sorger!
+Straalende <w>Phøbus</w>, o bring heldige Varsler idag!
+Kjæreste Venner, I kjende min Plan, saa hjælper mig trofast!
+Jeg skal styre, men rask følger mig nu, alle Mand!
+Let er ved Vinens Kamp vor Bedrift; men vægrer sig Nogen,
+gid hans Skjønne ham maa hemmeligt svige til Straf!
+<w>Amor</w> gjør Sjælen saa rig; men han knækker den Trodsiges Modstand,
+kuer ham, sender ham saa hen til den Skjønne som Træl;
+gule Løvinder han tæmmer, han tvinger <w>Armeniens</w> Tiger,
+selv i det vildeste Bryst Hjertet bli’er blødt ved hans Magt.
+Dette, ja mere Gud <w>Amor</w> formaaer. — Men I glemmer jo <w>Bacchus</w>,
+kræver dog Vin! Er et tomt Bæger da Noget for jer?
+Velvillig, aldrig bister er <w>Liber</w> mod Alle, der dyrke
+ham og dyrke hans Vin (Munterhed gjemmes i den),
+<pb n="52" facs="064.jpg"/>mens han fortørnes paa hver, der er evig og altid alvorlig.
+Frygter du Guddommens Magt, naar han fortørnes, saa drik!
+Alle vi kjende hans Straffe, hans mægtige Trusler, thi <w>Penthevs</w>
+faldt jo for Moderens Haand, blev hendes blodige Rov.
+Frygten for Straf ej nærme sig os, men den troløse Pige
+føle, den krænkede Gud sender en frygtelig Hævn!
+Ak, hvad ønsker jeg dog, jeg Afsindige! — Luftige Skyer,
+fører med Vindene bort mine letsindige Ord!
+Sluktes endog i dit Hjerte for mig al Ømhed, <w>Neæra</w>,
+Lykken følge dig dog, Fremtiden vorde dig lys!
+Dog mine Venner, lad Timerne gaa med det lystige Gilde,
+efter langsommelig Tid kom dog en glædelig Dag! —
+Ak, hvor vanskeligt dog at hykle den Fryd, man ej føler,
+haardt at finde paa Skjæmt, naar man har Kummer i Sind!
+Ikke saa let er et Smil, naar det kun er Aasynets Maske,
+Rusens lystige Spøg klinger den Sørgende hult.
+Dog tør jeg klage, jeg Stakkel? Nej, bort I skjændige Sorger,
+Fader <w>Lenæus</w> kan ej lide det klagende Sprog.
+Hører Formaningen nu (Held den, der belært af en Andens
+Lidelser mægter at fri sig fra den samme Fordærv!):
+Lad jer ej fange, naar Armene blødt om Halsen sig klynge,
+vogt jer, naar Tungen, den Strik, beder saa kjælent og mildt!
+Om ved sit Øjenpar kjært den Lumske sværger jer Troskab,
+eller ved <w>Juno</w> selv eller ved <w>Venus</w> endog,
+troer hende aldrig! Thi <w>Juppiter</w> selv ad Elskendes Mened
+<pb n="53" facs="065.jpg"/>leer kun, uændset til Leg giver han Vindene den.
+Hvorfor bestandigt da klage for Løfter af Pigen, der sveg mig?
+Nej Tungsindighed bort, Alvors Tale farvel!
+— Ak, at hvile hos dig i de lange Nætter, at vaage
+Med dig Dagen saa lang længes nu svarligt mit Sind.
+Troløse Pige, forskyldte jeg det? Jeg var værdig din Elskov,
+troløse Pige — men dog stadigt, skjønt troløs, mig kjær!
+<w>Bacchus</w> elsker <w>Najaden</w>. Aa, skynd dig, langsomme Tjener,
+bland med det mildnende Vand Vinen, der længe blev gjemt!
+Om den ustadige Pige forsømmer vort Lag, Kammerater,
+higende nu (hvo véd) efter den Fremmedes Favn,
+spilder jeg Natten dog ikke med Sorg, gjentagende Navnet
+stadigt med Suk. Nej, Dreng, skjænk os en stærkere Vin!
+Ak, gid jeg længe før havde salvet med kostelig <w>Nardus</w>
+Tindingens Lok og om Haar flettet den duftende Krands!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Marathus og Pholoe</title>
+</head>
+<content>
+
+<text id="conradsen2026110314">
+<head>
+  <title><num>13.</num>Altfor godt jeg forstaaer, hvad Elskerens Vinken betyder</title>
+  <firstline>Altfor godt jeg forstaaer, hvad Elskerens Vinken betyder</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110306"/>.</note>
+  </notes>
+  <source pages="57-60"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Altfor godt jeg forstaaer, hvad Elskerens Vinken betyder,
+véd, hvad han siger, naar mildt hviskende lyde hans Ord.
+Spaadomslodder ej lærte mig det eller Dyrenes Indvold,
+Fuglenes varslende Sang aldrig bebuded mig det.
+<w>Venus</w> mig lærte det selv — og mangfoldige Slag har det kostet,
+mens hendes Fange jeg var, fængslet af tryllende Baand.
+<w>Marathus</w>, dølg det ej længer, thi Guden piner dig dobbelt,
+mærker han, tvungen du kun bøjer dig under hans Aag!
+Troer du, det hjælper, at tidt du kruser de villige Lokker,
+sætter dit Haar med Kunst, ændrer det hurtigt igjen,
+og at du maler din Kind med det friskeste Rødt, eller øvet
+med din kunstfærdige Haand klipper og glatter hver Negl?
+Kjortel du skifter forgjæves, forgjæves du skifter din Kappe,
+og du forgjæves din Fod presser i smalleste Sko.
+Hun er jo smuk, om hun kommer endog, før hun vasked sit Aasyn,
+før hun — det kræver jo Tid — fletted sit straalende Haar. —
+Har dig en Hex med sin koglende Sang, med sin bleggule Gifturt
+bundet med Troldomskunst skjult i det natlige Mulm?
+<pb n="58" facs="070.jpg"/>(Koglende Sange jo lokke fra Nabomarkerne Kornet,
+koglende Sange paa Flugt jage den giftige Snog.
+Koglende Sange forsøge fra Himmelvogn Maanen at drage,
+Kobberbækkeners Klang skræmmer dog Troldommen bort.)
+Dog har min Klage vel Grund, at Urter og Sang dig bedaared?
+Skjønheden selv er jo nok, bruger ej Troldommens Hjælp.
+Kun en Berøring var Skyld, der var Troldom i Kysset, du røved,
+Knæ du stødte mod Knæ, strax brød Bedaarelsen ud.
+<w>Pholoe</w>, tænk dig dog om, vær mild mod en Yngling, som elsker!
+<w>Venus</w> rammer med Hævn Pigen, hvis Adfærd er grum.
+Kræv ej Gaver af ham! Men betale maa Knarken med Graahaar,
+ønsker hans isnede Krop Kjærligheds Fryd i din Favn.
+Mer end Guld er en Yngling med glat og straalende Aasyn,
+ej han med strittende Skjæg slikker din Hud ved sit Kys.
+Derfor slyng om hans Hals din Arm, den snehvide, bløde!
+Kongers Rigdom er kun værd et foragteligt Blik.
+<w>Venus</w> er snild, til Ynglingen hen, som blusser af Elskov,
+fører hun dig, og Bryst trykker hun tæt imod Bryst.
+Brændende Kys i aandeløs Kamp med mødende Læber
+giver du ham, paa hans Hals trykker du Mærker med Tand.
+Guld og Juveler ej glæder en Mø, naar om Natten alene
+fryse hun maa; naar hun ej tænder et Hjerte i Brand.
+Ungdom og Kjærligheds Fryd for sent vi kalde tilbage,
+naar først Alderdomstid farver vor Isse med Graat.
+Skjønhed kunstle vi frem, og for Aarenes Hærgen at skjule
+<pb n="59" facs="071.jpg"/>bruge vi Nøddernes Skal snildt til at farve vort Haar.
+Skimtes et Haar, som er hvidt, oprykkes det ivrigt med Rode,
+Hudens Rynker maa bort, Sminken forynger igjen.
+Pige, din Ungdoms Vaar slaaer end i fejreste Blomstring,
+nyd den da nu; husk paa, hurtigt den glider forbi!
+Plag ej <w>Marathus</w> mer! Ved en Yngling at kue du vinder
+Hæder dig ej. Vær haard, Pige, mod Oldinger kun!
+Skaan ham, husk han er svag! Hans Kind er gusten, dog Sygdom
+bleged den ikke, men kun Kjærligheds tærende Glød.
+Stakkelen tidligt og sent udbryder i sørgende Klager,
+skjønt du er fjern, og hans Graad strømmer i rigeligt Væld.
+«Ak, hun foragter mig kun», er hans Ord, «Bevogtningen skuffed
+ellers hun let; er der Lyst, lærer nok <w>Amor</w> os Kneb.
+Lønlig Elskov kjender jeg godt, uhørlig min Aande
+drage jeg kan, uden Lyd røver jeg tusinde Kys,
+selv i Midnattens Mulm kan jeg liste mig sagte til Kamret,
+aabne saa lønligt en Dør uden en Knirken af Laas.
+Dog hvad gavner mig Stakkel min Kløgt, hun foragter min Elskov,
+grusomme Pige, hun stolt river sig løs af min Favn.
+Sætter engang hun mig Stævne, hun pludselig narrer mig troløs;
+Natten jeg spilder saa tidt, vaagende holder jeg Vagt,
+bilder mig ind, at hun kommer. Saasnart der rører sig Noget,
+troer jeg: det Fodtrin er, sagte hun lister sig hid.»
+Stands dine Taarer, min Ven! Hendes Hjerte du rører dog ikke,
+Øjnene mattes kun mer, svulne ved idelig Graad.
+<pb n="60" facs="072.jpg"/>Pige, betænk, for Guder forhadt er den trodsige Hovmod;
+tænk ej, at Røgelsens Duft soner Fortørnelsen let! —
+<w>Marathus</w> ogsaa har spottet engang ulykkelig Elskov
+(bag ham — han aned det ej — stod der en hævnende Gud),
+skadefro lo han saa tidt ad Kjærlighedsklager og Taarer,
+spildte med Paaskud lumsk Elskerens kostbare Tid.
+Nu hver Trodsen han hader, ja nu det ham Ærgrelse volder,
+hvergang en haardnakket Dør spærres af stængende Slaa. —
+Husk, der venter dig Straf, hvis du ej aflægger din Grumhed!
+Visselig ønsker du da Tiden tilbage, som svandt.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section>
+<head>
+  <title>Cerinthus og Sulpicia</title>
+</head>
+<content>
+
+<text id="conradsen2026110315">
+<head>
+  <title><num>14.</num>Mægtige Mars! For at ære din Fest er Sulpicia pyntet</title>
+  <subtitle>(Tibullus til Sulpicia.)</subtitle>
+  <firstline>Mægtige Mars! For at ære din Fest er Sulpicia pyntet</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110301"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="63-64"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Mægtige <w>Mars</w>! For at ære din Fest er <w>Sulpicia</w> pyntet.
+Har du Forstand, saa kom selv ned nu fra Himlen og se!
+<w>Venus</w> tilgiver det nok. Men vogt dig dog, Vældige, vogt dig,
+at i Beundringen ej Sværdet dig synker af Haand.
+Vid, at ved Øjnenes Ild, for Guder i Flammer at sætte,
+<w>Amor</w>, den grusomme Gud, tænder sit Fakkelpar an;
+hvad hun sysler end med, hvorhen sine Fjed hun saa vender,
+følges af Ynde hun dog, lønligt hun smykkes derved;
+løser hun Hovedets Baand, hende klæde de bølgende Lokker,
+smykker hun kunstigt sit Haar, Pynten fortryller Enhver;
+Hjerter hun tænder i Brand, naar i Purpurkaaben hun pranger,
+Hjerter hun tænder, naar kun simpelt i Hvidt hun er klædt.
+Saadan en Magt <w>Vertumnus</w> kun har paa højen <w>Olympus</w>:
+tusindfold smykker han sig; tusindfold Ynde han har.
+Hun fortjener alene blandt Pigerne Gaver fra Tyrus,
+Uldtøjet blødt, som i dyr Farve blev dypped saa tidt;
+eje hun burde, hvad hist paa <w>Arabiens</w> duftende Sletter
+Dyrkeren samler, en Skat Virak og Røgelse fin,
+<pb n="64" facs="076.jpg"/>alle de Perler, som henne ved <w>Indiens</w> rødlige Strandbred,
+nærmest ved Østens Sol, samles af brunlige Mænd.
+Priser da hende — du <w>Phøbus</w>, saa stolt af Skildpaddelyren,
+samt I Muser — med Sang nu paa den festlige Dag!
+Gid hun i mangt et Aar maa nyde den vanlige Hyldest;
+thi mer værdig jer Sang finder I aldrig en Mø!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110316">
+<head>
+  <title><num>15.</num>Fødselsdagen er kommen, lad heldige Varsler kun lyde</title>
+  <subtitle>(Tibullus til Cerinthus.)</subtitle>
+  <firstline>Fødselsdagen er kommen, lad heldige Varsler kun lyde</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Tibuls <xref type="translation" poem="tibullus2026110309"/>. Originalens Cornutus er her ændret til Cerinthus.</note>
+  </notes>
+  <source pages="64-65"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Fødselsdagen er kommen, lad heldige Varsler kun lyde,
+vogter nu Tungen Hver, I som ved Alteret staa!
+Fromt skal et Offer af Virak og Røgelse dufte paa Arnen,
+Gaver, <w>Araberen</w> hid sender fra Rigdommens Land.
+«<w>Genius</w>, kom til din Fest, sku venligen ned paa vor Hylding!
+Bløde Krandse til Pryd slyng om dit hellige Haar!
+Ned fra Tindingens Lok lad dryppe den klareste Salve!
+Mæt dig med Kagen og nyd naadig den ofrede Vin!»
+Gid han, <w>Cerinthus</w>, vil skjænke dig mild, hvad helst du dig ønsker!
+Nu, hvi tøver du dog? — Bed kun, han giver det nok!
+Vel mig aner, du ønsker en Hustru trofast og kjærlig.
+Vær kun rolig!  Forvist Guderne mærked det alt.
+Højere tykkes dig det end Alverdens kornrige Marker,
+<pb n="65" facs="077.jpg"/>Alt hvad af driftige Mænd pløjes ved Studenes Kraft;
+mer end Perlernes Skatte ved <w>Indiens</w> heldige Strande
+hisset, hvor Havet mod Øst farver sin Bølge med Rødt. —
+Ønsket er hørt! Flyv, <w>Amor</w>, da hid paa din ilsomme Vinge,
+bring til en Ægteskabspagt herlige Lænker af Guld,
+Lænker, som binder endnu, naar Alderdom kommer, den sløve,
+furende Kinderne dybt, farvende Lokkerne graa! —
+Varsel om Fremtidslykke dig <w>Genius</w> bringe, han Afkom
+skjænke dig! Smaabørns Flok tumle sig snart ved din Fod!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110317">
+<head>
+  <title><num>16.</num>Juno, Fødselsgudinde, modtag den begavede Piges</title>
+  <firstline>Juno, Fødselsgudinde, modtag den begavede Piges</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110305"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="65-66"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<w>Juno</w>, Fødselsgudinde, modtag den begavede Piges
+Røgelseoffer, med spæd Haand hun frembærer det fromt!
+Din er hun helt idag, hun har pyntet sig glad til din Ære,
+værd at skue hun nu vilde for Alteret staa.
+Spørges, hvorfor hun sig smykked, paa dig, Gudinde, hun peger;
+En der dog findes, hvem og lønligen tækkes hun vil.
+Hjælp Gudinde, lad Ingen de Tvende, som elske, dog skille,
+slyng om Ynglingens Bryst ogsaa Gjenkjærligheds Baand!
+Slut denne herlige Pagt! Der findes til Elskov dog Ingen
+ham mer værdig end hun, hende mer værdig end han.
+Lad ej den spejdende Vogter i Kjærlighedsrusen dem gribe,
+<pb n="66" facs="078.jpg"/><w>Amor</w> indgive dem selv tusinde listige Kneb!
+Bønhør Ønskerne! Kom i den purpurstraalende Kaabe,
+kydske Gudinde!  Trefold ofre vi Kager og Vin. —
+Omsorgsfuld hendes Moder sin Datter til Ønskerne raader,
+dog — alt voxen — hun selv beder om Andet i Løn.
+Hjertet brænder i Barm som flagrende Luer paa Altret;
+men, om det flammer end hedt, Lægedom ønsker hun ej. —
+Dag, vær Ynglingen kjær! Naar Aaret atter oprinder,
+Kjærlighedspagten endnu, styrket ved Ønsker, bestaa!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110318">
+<head>
+  <title><num>17.</num>Elskovstimen tilsidst da kom — hvis jeg dulgte det længer</title>
+  <subtitle>(Sulpicia til Cerinthus.)</subtitle>
+  <firstline>Elskovstimen tilsidst da kom — hvis jeg dulgte det længer</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Sulpicias <xref type="translation" poem="sulpicia2026110301"/>.</note>
+  </notes>
+  <source pages="66"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Elskovstimen tilsidst da kom — hvis jeg dulgte det længer,
+blues jeg maatte vel mer, end om jeg røber det nu.
+<w>Venus</w> længe med Sange jeg bønfaldt, til hun bevæget
+bragte mig Ynglingen kjær, lagde ham tæt til min Favn.
+<w>Venus</w> sit Løfte har holdt; hun gjerne maa røbe min Elskov,
+hvis der er Piger, som ej nøde saa salig en Fryd.
+Nylig til Brevets Segl at betro det jeg frygted, at Ingen
+skulde det læse, før han, han, der er min, fik det læst.
+Dog — jeg fortryder ej Elskovs Synd; den ærbare Mine
+kjeder mig kun. Hvad saa? Var vi hinanden ej værd?
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110319">
+<head>
+  <title><num>18.</num>Lad mig saasandt, min Sol, ej elskes længer saa kjærligt</title>
+  <subtitle>(Sulpicia til Cerinthus.)</subtitle>
+  <firstline>Lad mig saasandt, min Sol, ej elskes længer saa kjærligt</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Sulpicias <xref type="translation" poem="sulpicia2026110302"/>.</note>
+  </notes>
+  <source pages="67"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Lad mig saasandt, min Sol, ej elskes længer saa kjærligt,
+som det forgangen Dag tyktes mig dog, at jeg blev,
+om i min Ungdoms forviltrede Tid en Gjerning jeg finder,
+som jeg maa sige saa haardt volder Fortrydelse mig,
+som at jeg Natten igaar lod ene dig vente. Jeg ønsked
+blot, at min Kjærligheds Ild ej skulde røbe sig helt.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110320">
+<head>
+  <title><num>19.</num>Skaan min Yngling paa Jagten, Vildorne, hvis Hjem er en græsrig</title>
+  <subtitle>(Sulpicia til Cerinthus.)</subtitle>
+  <firstline>Skaan min Yngling paa Jagten, Vildorne, hvis Hjem er en græsrig</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110302"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="67-68"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Skaan min Yngling paa Jagten, Vildorne, hvis Hjem er en græsrig
+Eng eller Hulen fjernt hist paa det skyggende Bjerg;
+vov ej til Kamp mod ham at hvæsse de farlige Tænder!
+<w>Amor</w> hans Vogter er. Guden bevare mig ham!
+Dog, han fjernes fra mig, hans Jagtlyst driver afsted ham.
+Gid dog Skoven forsvandt eller gid Hunden var død!
+Vanvid, sælsomme Lyst! — med Jægergarnet at lukke
+Højenes Krat; man kun river jo Haanden tilblods.
+Kan det da more med List til Rovdyrs Huler at trænge,
+medens den piggede Tjørn saarer det snehvide Ben?
+Dog jeg gjerne, <w>Cerinthus</w>, hvis sammen vi blot kunde færdes,
+<pb n="68" facs="080.jpg"/>selv de snoede Reb bar over Bjergenes Aas,
+gjerne jeg Sporene søgte af Hjorten, den rappeste Løber,
+eller fra Jernlænken løs slap jeg den hurtige Hund.
+Skoven blev snart mig kjær, hvis man kunde fortælle, jeg hvilte
+der ved Jægernes Garn kjærligt, min Sol, i din Favn.
+Kom da Vildbassen did til Indhegningen, kunde den gjerne
+uskadt fly, naar den kun ikke forstyrred vor Fryd. —
+Dog uden mig ingen Elskov! Du kydsk maa lyde <w>Diana</w>!
+Spænd dine Fangegarn ud, Yngling, med Haand, som er kydsk!
+Lister en Kvinde sig ind i det Hjerte, som mig du har givet,
+gid hun i Rovdyrs Vold sønder maa flænges med Gru!
+Hør mig, overlad blot denne Jagtens Færd til din Fader,
+skynd dig tilbage saa selv her til min kjærlige Favn!
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110321">
+<head>
+  <title><num>20.</num>Dagen, der skjænked mig dig, min Cerinthus, den er mig hellig</title>
+  <subtitle>(Sulpicia til Cerinthus.)</subtitle>
+  <firstline>Dagen, der skjænked mig dig, min Cerinthus, den er mig hellig</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110304"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="68-69"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Dagen, der skjænked mig dig, min <w>Cerinthus</w>, den er mig hellig,
+altid i Festernes Tal visselig regnes den skal.
+Dengang du fødtes, blev Trældom paany af <w>Parcer</w> forjættet
+Pigernes Flok, og de gav dig en forfærdelig Magt.
+Mer end dem alle jeg brænder, <w>Cerinthus</w>, dog brænder jeg gjerne,
+naar kun Elskov har tændt Hjertet til Gjengjæld hos dig.
+Gjengjæld Kjærlighed tro! Ved Elskovs lønlige Gaver,
+<pb n="69" facs="081.jpg"/>hør mig, ved Øjnenes Lys og ved din <w>Genius</w>, hør!
+Herlige <w>Genius</w>, tag imod Røgelsen naadig og bønhør,
+dersom ved Tanken om mig Hjertet ham luer i Bryst!
+Dog, om hans Higen alt nu til en fremmed Elskov sig vender,
+hør mig, Guddom, saa drag bort fra Forræderens Tag!
+Vær dog, <w>Venus</w>, retfærdig! I ligelig Trældom du holde
+lænkede begge, hvis ej, løse den Lænke, jeg bær’!
+Helst dog kraftige Baand os begge sammen maa knytte,
+at vore Hjerter ej mer Tiden at løse formaaer.
+Ynglingen ønsker det Samme som jeg, men dølger det mere,
+saadanne Kjærligheds Ord offenligt blues han ved.
+Bønhør, <w>Genius</w>, Ønsket alligevel, enten han beder
+lydeligt eller i Løn; Guderne mærke dog Alt.
+</poetry>
+</body>
+</text>
+
+<text id="conradsen2026110322">
+<head>
+  <title><num>21.</num>Kom med din Hjælp, o Phøbus, som pranger med bølgende Lokker</title>
+  <firstline>Kom med din Hjælp, o Phøbus, som pranger med bølgende Lokker</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af det anonymt overleverede <xref type="translation" poem="pseudotibullus2026110303"/> i Corpus Tibullianum.</note>
+  </notes>
+  <source pages="69-70"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Kom med din Hjælp, o <w>Phøbus</w>, som pranger med bølgende Lokker,
+kom til den yndige Mø, driv hendes Sygdom paa Flugt!
+Skynd dig! tro mig, o <w>Phøbus</w>, du aldrig vil angre din Gjerning,
+at du din lægende Haand har paa den Dejlige lagt!
+Mægtig beskjærm hendes Legem mod gusten Tæring, lad aldrig
+Lemmernes snehvide Hud visne for Sygdommens Skjær!
+Ondet, hun nu maa lide, samt Alt, vi med Bæven kun ane,
+<pb n="70" facs="082.jpg"/>skyl det til Havet afsted nedad en rivende Strøm!
+Guddom, kom! Bring naadigen med de Safter, de Sange,
+som den udmattede Krop styrke med kvægende Ro!
+Pin ej Ynglingen mer, som for Pigens Skjæbne sig ængster,
+som for sin Elskedes Liv tusinde Løfter nu gjør!
+Stundom beder han fromt; men stundom mod evige Guder
+bryder i Trusler han ud: syg er hans Elskede jo. —
+Bort med Frygten, <w>Cerinthus</w>, thi Guder ej Elskende plage!
+Er kun din Kjærlighed tro, frelses din Pige forvist.
+Taarer behøves ej nu; nej, Tid er det først til at græde,
+skulde hun vorde mod dig ikke saa kjærlig som nu.
+Nu er ganske hun din, hendes ærlige Hjerte kun rummer
+dig. Forgjæves med Haab sidder nu Bejlernes Flok. —
+<w>Phøbus</w>, o hjælp! Du her kan vinde dig glimrende Hæder,
+frelser fra Sygdom du En, vækker du Tvende til Liv.
+Da vil du vorde navnkundig og glad, naar kappevis begge
+bringe til Altret med Fryd Ofret, som lovet dig var;
+Gudernes hellige Kreds vil kalde Phøbus lyksalig,
+hver vil ønske, han selv ejed din mægtige Kløgt.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<text id="anonym1800dk2026110314" author="anonym1800dk" skip-index="true">
+<head>
+  <title>Forklaringer</title>
+  <source pages="71-76"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    1. <w>Træpælen</w> er Markskjel, indviet til Grændseguden Terminus, <w>Stenen</w> paa Vejen var ligeledes helliget en Guddom (Trivia el. Hekate, se Digt 3). Ved <w>Landmandens Gud</w> kan tænkes paa Silvanus, der er Skovens Gud, men ogsaa velsigner Markerne og beskjærmer Hjorderne. <w>Ceres</w> var Gudinde for Kornet og Agerdyrkning. <w>Priapus</w>, der oprindelig var kommen fra Lilleasien, var Gud for Frugtbarhed. <w>Larer</w> vare en Art skjærmende Alfer for Huset og dets Beboere, de fremstilledes som smukke Ynglinger med Skjænkehorn og Skaaler, og deres Billeder (malede eller i Billedhuggerarbejde) fandtes i Huset ofte i et særegent lille Kapel med Alter ved; man ofrede dem hyppigt Krandse og Røgelse, en Gang aarligt en Gris. <w>Pales</w> var en gammel italiensk Guddom, der beskyttede Kvæget, og til hvis Ære den romerske Landmand holdt en Fest med ublodigt Offer i April Maaned, Hyrderne rensede sig ved at springe over et Baal af brændende Halm; denne Dyrkelse vedligeholdtes efter den gamle Skik, uagtet man vidste saa lidt om denne Guddom, at den snart omtales som Gud, snart som Gudinde.
+    2. <w>Phæacien</w>, der omtales i de homeriske Sange, mente man senere at finde i Øen Corcyra. Den almindeligste <w>Begravelsesmaade</w> i Oldtiden var at brænde Ligene paa et Baal, hvorefter de nærmeste Slægtninge samlede Aske og Ben, kom det i en Krukke og heldte vellugtende Vande derover, Krukken (af Ler, Sten eller Metal) hensattes derpaa i Begravelsen, der saaledes kunde rumme et stort <pb n="72" facs="084.jpg"/>Antal Lig (Familier, ja hele Begravelsescorporationer). Romerne havde en særegen Art Orakler ved flere Templer, nemlig <w>Lodder</w> med Bogstaver paa, der efter at være udtrukne tydedes af Præsterne; men man fandt ogsaa mange private Orakler af samme Art, paa de mest besøgte Steder i Byen sade Drenge med saadanne. I det Hele taget agtede man meget paa alleslags <w>Varsler</w>; der var af Staten ansat egne Præster, som toge Varsler af Lyn og andre Himmelfænomener, af Fuglenes Flugt, af de hellige Hønses Æden; ved Ofringer undersøgte man altid det slagtede Dyrs Lever (D. 7 og 11) og agtede ligeledes paa Ordvarsler, hvorfor man altid begyndte en Fest med Opfordring til de Tilstedeværende om at vogte sig for at forstyrre Festen ved Ord, der kunde varsle ilde (D. 7 og 15).  <w>Saturnus</w> var Verdensherskeren af den ældre Gudeslægt, der blev stødt fra Magten af hans Søn <w>Juppiter</w>; til hans Tid henlagde man den Guldalder, som alle Folkeslag have tænkt sig ved Tidernes Begyndelse.  Saturnus’ Dag er Lørdagen, der for Romerne egenlig ikke havde noget Helligt ved sig; men allerede paa Augusts Tid opholdt der sig mange Jøder i Rom, og jødiske Forestillinger, deriblandt om Hviledagens Helligholdelse, havde trængt sig ind hos Romerne, især hos Kvinderne, da man i Hedenskabets synkende Tid greb efter fremmede Religioner. Saaledes var Dyrkelsen af den ægyptiske <w>Isis</w>, Frugtbarhedens Gudinde, bleven almindelig; hun dyrkedes med Optog, mange Ceremonier og Hymner Morgen og Aften, og der brugtes herved et eget Instrument, en Ramme med løst indsatte Stænger, der klirrede, naar det rystedes (hvorfor Grækerne kaldte det Sistron «Rangle»).  Isisdyrkernes Dragt var linned (ægyptisk), og de ansaa det Uldne (Romernes væsenligste Klædningsstof) for urent. Til Tak for Gudernes Hjælp i Sygdom eller anden Fare plejede man i deres Templer at ophænge Malerier, der forestillede den Nød, hvoraf man var frelst, eller andre Billeder (f. Ex. Afbildninger i Ler af den Legemsdel, hvori man havde været syg), saaledes som det endnu er Skik ved Helgenes Altre i de katholske Lande. <w>Venus</w>, Juppiters Datter (efter et andet Sagn opstegen af Havets Skum, D. 3) var Gudinde for Skjønhed og Ynde og beskjærmede de Elskede, hendes Søn <w>Amor</w> opvakte Kjærlighed med sine Pile og Fakler. <w>Elysium</w> er Navnet paa Grækernes Paradis, der tænktes som en herlig Ø i <pb n="73" facs="085.jpg"/>Havet mod Vest. <w>Casia</w>: Kaneltræet. Forbrydernes Sted, <w>Tartarus</w>, laa lige saa langt under Jorden, som Himlen var over denne, og gjennemstrømmedes af flere Floder, deriblandt <w>Styx</w>, over hvilken de Døde førtes paa <w>Charons</w> Færge (D. 6), og <w>Lethe</w>, Glemselens Flod. <w>Tisiphone</w> var en af Furierne, de Skrækgudinder, der forfulgte Forbryderen. <w>Cerberus</w> var en Hund med tre Hoveder, som bevogtede Indgangen til Underverdenen. <w>Ixion</w>, en thessalsk Konge, havde villet omfavne Juppiters Hustru Juno, men et Skybillede traadte i hendes Sted; til Straf blev han i Tartarus bunden til et Hjul, som stadigt drejedes rundt. <w>Tityus</w>, Jordens Søn, havde villet krænke Latona (D. 11). <w>Tantalus</w>, Konge i Lilleasien, havde været Gudernes Ven, men røbet deres Hemmeligheder. De saakaldte Danaider, Døtre af Ægypteren <w>Danaus</w>, bleve af deres Fætre tvungne til Ægteskab, men myrdede (paa én nær) deres Mænd i Brudenatten; de straffedes i Tartarus med at øse Vand op i et hullet Kar, som de saaledes aldrig kunde fylde; ogsaa de øvrige Straffe betegne en haabløs, uendelig Pinsel. De Exempler, Tibullus har valgt, ere i Overensstemmelse med Digtet, fra Saadanne, der have begaaet Forbrydelser mod Kjærligheden. <w>Aurora</w>: Morgenrøden.
+    3. <w>Medea</w> var den grusomme Kongedatter i Sagnlandet Kolchis, der ved sin Troldom hjalp Helten Iason, som hun elskede, til at dræbe Dragen og vinde det gyldne Skind, men senere i Skinsyge myrdede sine Børn med ham. <w>Hekate</w> var en hemmelighedsfuld Gudinde i Underverdenen, der paakaldtes ved Troldom om Natten paa Korsveje; Romerne kaldte hende som Korsvejenes Gudinde <w>Trivia</w> (D. 5), som Drømmenes Gudinde <w>Lucina</w> (D. 11). At spytte paa Noget er i Folkeovertroen hyppigt et Middel til at afvende onde Varsler derfra.
+    4. <w>Bona-Dea</w> «den gode Gudinde» skjænkede Frugtbarhed og blev Familielivets Beskytterinde; hun dyrkedes af de romerske gifte Koner ved en Fest om Natten i et Hus, der maatte forlades af alle Mænd, ja hvor selv alle Billeder, der forestillede mandlige Figurer, tilhylledes. Den Mand, der vovede sig herind, maatte frygte Gudindens Vrede, der kunde slaa ham med Blindhed. Dog denne Fest havde allerede tabt sin kydske Karakter, utugtige Kvinder og Mænd i <pb n="74" facs="086.jpg"/>Fruentimmerklædning snege sig derind. <w>Bellona</w> er Krigens vilde Gudinde, hendes Begejstring betegner her Spaadomsaand i Almindelighed. Den <w>lange Kjole</w> og <w>Hovedbind</w> var den fribaarne Kvindes Kjendemærke, løse Kvinder skulde bære en kortere Dragt. Paa <w>Olymp</w>, et Bjerg i Grækenland, tænkte man sig Gudernes Bolig.
+    5. Offerdyret bestrøedes med grovtmalet <w>Korn</w>, blandet med Salt. <w>Thetis</w>, en mægtig Havnymfe, ægtede den thessalske Konge Pelevs, deres Søn var Helten Achillevs.
+    6. <w>Mars</w> var oprindelig en landlig Gud, men da den græske Mythologi fik Indgang og fordunklede den romerske, blev han Krigsgud.
+    7. Festen, ved hvilken Markerne rensedes, holdtes i Maj Maaned; Digteren paakalder Kornets Gudinde <w>Ceres</w> og Vinens Gud <w>Bacchus</w> (en Søn af Juppiter og <w>Semele</w>, D. 11), hvem Grækerne fra gammel Tid fremstillede med Horn ligesom Satyrerne i hans Følge. Den fortræffelige <w>Falernervin</w> kom fra Campanien i Syditalien, <w>Chiervinen</w> fra en Ø ved Lilleasiens Kyst; man blandede ofte disse sammen. Man holdt af at gjemme Vinen over Kjøkkenet eller andensteds, hvor den kunde gjennemtrænges af Røg, da man mente, den saa hurtigere blev gammel. Fra Chorsangene ved Bacchusfesten afleder man Skuespillets Oprindelse, selve Ordet Tragedie kommer af Tragos (en Buk). <w>Minerva</w>, Juppiters Datter, var Gudinde for Visdom, for Kunst og Haandværk, især for kvindelig Dont. <w>Cupido</w> (Attraa) var et andet Navn for Amor.
+    8. <w>Apollo</w>, en Søn af Juppiter og Latona (D. 11) og født paa Øen Delos i Archipelagus (derfor kaldes han den deliske, den <w>Delosfødte</w> og efter et Bjerg paa Øen den cynthiske, D. 11), var Poesiens Gud og ledsagedes af <w>Muserne</w>, de ni Gudinder for de forskjellige Kunster. Han beskrives i Digt 11 med den lange Dragt, som Sangere og Musikere bare, og med Lyren, der var skjænket ham af Hermes (Mercurius), som havde opfundet den ved at trække Strenge over en Skildpaddeskal. Han havde Tilnavnet <w>Phøbus</w> (den Straalende), der dog ogsaa tillægges Solen. Perlerne kom fra det saakaldte <w>røde Hav</w>, hvorved man i Oldtiden forstod, ikke hvad vi kalde saaledes, men Bugten imellem Persien og Indien (den persiske Havbugt); se D. 14 og 15. <w>Circe</w> var den Gudinde, der forvandlede Odyssevs’ Stalbrødre <pb n="75" facs="087.jpg"/>til Svin. <w>Thessalien</w> var rigt paa kraftige Urter og berygtet for Troldom.
+    9. <w>Haabet</w> dyrkedes som Gudinde ligesom Freden (D. 6).
+    10. <w>Juno</w> var Juppiters mægtige Hustru, Himlens Dronning, Kvindernes, især Ægteskabets, Beskytterinde.
+    11. Fra <w>Etruskerne</w>, som boede nord for Rom (i Toskana) og havde en ældgammel Kultur, havde Romerne laant Meget, især paa Religionens Omraade; derfra kom Sandsigere, som udtydede Varslerne af Offerdyrenes Indvolde. <w>Lavren</w> kaldes Kydskhedens Tegn ifølge Sagnet om Nymfen Dafne, der bly flygtede for Guden Apollo, der elskede hende, og da hun standsedes af en Flod, bønfaldt Juppiter, der forvandlede hende til et Lavrbærtræ. <w>Plektret</w> var en lille Stav, hvormed Lyren spilledes. <w>Admetus</w> var en thessalsk Konge, hvis Hjorder Apollo maatte vogte til Straf for et Drab. <w>Chimæra</w> var et ildsprudende Uhyre i Lilleasien, «fortil en Løve, bagtil en Drage, i Midten en Ged», som blev dræbt af Bellerofon. <w>Skylla</w>, nærved Messinastrædet, var en af de Rædsler, som mødte Odyssevs paa hans møjsommelige Hjemfart; da han sejlede forbi, greb hun sex af hans Rejsefæller, som hun slugte. <w>Skythien</w> kaldtes det af nomadiske Folkestammer beboede Land uden bestemte Grændser nord for det sorte og kaspiske Hav.
+    12. <w>Liber</w> (Befrieren) og <w>Lenæus</w> (Vinperseren) ere Tilnavne til Bacchus. Dennes Dyrkelse fandt i Begyndelsen Modstand flere Steder, saaledes ogsaa hos Kong <w>Penthevs</w> i Theben; men da Kvinderne i bacchantisk Begejstring fejrede Gudens Dyrkelse paa Bjergene i Nærheden, og han, for at modsætte sig det, vovede sig ind imellem dem, antog hans egen Moder ham i Raseriet for et vildt Dyr og sønderrev ham. <w>Bacchus</w> (Vinguden) elsker <w>Najaden</w> (en Vandnymfe) d. v. s. Vinen maa blandes med Vand. <w>Nardus</w> kaldtes flere Planter, hvoraf man lavede vellugtende Olie.
+    14. <w>Mars</w> var den gamle romerske Nationalgud, hans Fest fejredes den 1ste Marts, med hvilken Maaned Aaret i ældre Tid begyndte. <w>Vertumnus</w> var Gud for Aarets Omskiftninger og skjænkede Aarstidernes forskjellige Gaver.  Purpuret var opfundet i Phønicien, hvor den mægtige Handelsstad <w>Tyrus</w> laa ved Middelhavet.
+    15 er (ligesom D. 16 og 20) til Ære for Fødselsdagen; paa <pb n="76" facs="088.jpg"/>denne ofredes til Menneskets skjærmende Aand, der ledsagede det fra Vuggen til Graven og ved Manden kaldtes <w>Genius</w>, ved Kvinden <w>Juno</w>; man fejrede Dagen med en munter Fest.
+    19. <w>Diana</w>, Apollos Søster, var Gudinde for Jagten og for de vilde Dyr; hun var evig Jomfru.
+    20. <w>Parcer</w>: Skjæbnens Gudinder, man tænkte sig dem spindende Menneskets Livstraad.
+    21. <w>Phøbus</w> d. v. s. Apollo, var ogsaa Lægekunstens Gud, og Æskulap, der almindelig nævnes som saadan, var hans Søn.
+    Hvad Navnenes Udtale angaaer, have følgende <w>Tonen paa første Stavelse</w>: alle Tostavelsesnavne (undtagen Olymp) samt: Cerberus, Danaus, Delia, Genius, Hekate, Juppiter, Marathus, Nemesis, Pholoe, Tantalus, Tityus, Trivia; Aqvitaner og Bona-Dea have Tonen paa <w>næstsidste Stavelse</w>, de andre paa <w>næstførste</w>.
+</prose>
+</body>
+</text>
+
+<text id="anonym1800dk2026110315" author="anonym1800dk" skip-index="true">
+<head>
+  <title>[Afvigelser fra Oversætterens Haandskrift]</title>
+  <indextitle>Afvigelser fra Oversætterens Haandskrift</indextitle>
+  <source facsimile-pages="92-93"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+    Følgende Steder i Oversætterens Haandskrift er der afveget fra ved Udgivelsen:
+
+S. 5, L. 11: at med dit Bytte fra Krig herligt kan prange dit Hus;
+    — L. 15: saa lad dem
+S. 6, L. 1: elske hverandre!
+S. 7, L. 13: Alt for min Hjemkomst var,
+S. 9, L. 2: Aldrig var Kamp
+S. 16, L. 4: naar for din Guddomsmagt segner en dødelig Mand?
+S. 17, L. 2 f. n.: lært af Guderne selv,
+S. 27, L. 8: da ved Maaltidet stod Bægeret skaaret af Træ;
+S. 28, L. 1—2: da der stod i den fattige Bolig<br/>    ikkun et Billed af Træ, styret saa tarveligt ud.
+    — L. 5: til dig
+S. 29, L. 5: Sønnen nu nød
+    — L. 11: en blev
+S. 38, L. 9—8, f. n.:<br/>    Ak, den Magt, der har skjænket guddommelig Skjønhed en gjerrig Pige,
+S. 39, L. 2: Nej, var Pigen
+    — L. 6 f. n.: Dersom du
+S. 40, L. 11: Ak Praleri! Men prægtigt
+S. 41, L. 4 f. n.: værd, hun
+S. 45, L. 3 f. n.: som du
+S. 48, L. 6: Halsen var slank, derpaa
+S. 49, L. 4: hør, hvad med sanddru Mund taler den cynthiske Gud!
+<pb facs="092.jpg"/>S. 50, L. 8 f. n.: et Udyr,
+S. 51, L. 8: Straalende Phøbus, bring
+    — L. 12: maa ham
+S. 52, L. 6: føle, hvad frygtelig Hævn sender den krænkede Gud!
+S. 53, L. 2 f. n.: længe tilforn
+S. 63, L. 2: Skjønner du ret, saa kom selv nu fra Himlen og se!
+S. 65, L. 1 f. n.: Lad dem i Kjærlighedsrusen den spejdende Vogter ej gribe,
+S. 66, L. 4: sin Datter Ønskerne raader,
+S. 68, L. 12: overlad blot disse Jagtens Sysler din Fader,
+S. 69, L. 11: offenligt blues han ved saadanne Kjærligheds Ord.
+S. 70, L. 2 f. n.: Gudernes hellige Kreds vil Phøbus kalde lyksalig,
+</prose>
+</body>
+</text>
+
 </workbody>
 </kalliopework>

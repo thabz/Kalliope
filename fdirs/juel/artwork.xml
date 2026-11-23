@@ -21,9 +21,6 @@
       <wikidata>Q20433666</wikidata>
     </identifiers>
   </picture>
-  <picture id="klopstock-oval" year="1779 ca." subject="klopstock">
-    <i>Friedrich Gottlieb Klopstock</i>, ca. 1779.
-  </picture>
   <picture id="rothe-oval" year="1780 ca." subject="rothe" museum="fnm" invnr="a-4152">
     <i>Tyge Jesper Rothe</i>, ca. 1780, olie på lærred.
   </picture>
@@ -45,6 +42,21 @@
   <picture id="christian7-1789" year="1789" subject="christian7">
     <i>Christian VII</i>, 1789. Rosenborg Slot.
   </picture>
+  <!-- Billedfil: https://commons.wikimedia.org/wiki/File:Hans_Christian_Sneedorff_(1759-1824),,_Danish_naval_officer.jpg
+  Commons angiver public domain, PD-Art (PD-old-70); fotografen er ikke oplyst.
+  Identitet, kunstner og datering kontrolleret mod samme maleri i
+  Marinehistorisk Tidsskrift 1994, nr. 2, s. 50-51, fig. 7:
+  https://www.marinehist.dk/MHT/1994-2-MHT.pdf#page=22
+  Her angives privat eje. Olie er dokumenteret hos C. J. Anker:
+  Dansk kontreadmiral og kadetchef Hans Christian Sneedorff:s personlighed
+  og virksomhed 1759-1824 (1884), s. 20:
+  https://runeberg.org/hsneedorff/0040.html
+  Fysiske mål har ikke kunnet dokumenteres i de kontrollerede opslag. -->
+  <picture id="1789-sneedorff" year="ca. 1789" subject="sneedorffhc">
+    <i>Hans Christian Sneedorff</i>, ca. 1789, oliemaleri. Privat eje.
+    <!-- Samme maleri genkontrolleret visuelt mod Marinehistorisk Tidsskrift 1994, nr. 2, s. 51, fig. 7: https://www.marinehist.dk/MHT/1994-2-MHT.pdf#page=22. Her bekræftes Jens Juel, ca. 1789 og privat eje. Anker (1884), s. 20, bekræfter olieportrættet fra 1789: https://runeberg.org/hsneedorff/0040.html. Fysiske mål, ejerens navn og sikkert Wikidata-værkmatch er fortsat ikke dokumenteret. -->
+    <!-- metadata checked: 2026-11-06 -->
+  </picture>
   <picture id="klopstock-oval" year="1779 ca." subject="klopstock" museum="fnm" invnr="a-2569">
     <i>Friedrich Gottlieb Klopstock</i>, ca. 1779.
   </picture>
@@ -52,6 +64,22 @@
     <i>Forfatteren Peter Andreas Heiberg</i>, ca. 1790-1799, olie på lærred.
     <identifiers>
       <wikidata>Q55411525</wikidata>
+    </identifiers>
+  </picture>
+  <picture id="suhm-1790-1799" href="https://commons.wikimedia.org/wiki/File:PF_Suhm3.jpg" year="1790-1799" subject="suhm">
+    <i>Peter Frederik Suhm</i>, maleri, gengivet i Chr. Bruuns <i>P. F. Suhm</i> (1898).
+  </picture>
+  <picture id="suhm-1798-oval" year="ca. 1798" subject="suhm" museum="fnm" invnr="a-4700" clip-path="ellipse(50% 50% at 50% 50%)">
+    <i>Peter Frederik Suhm</i>, ca. 1798, olie på lærred.
+    <!-- Kilde: brugerens foto af maleriet (3553B1DC-065D-4382-A2EA-02BF7336D0E7_1_105_c.jpeg) og det tilhørende museumsskilt (F4642817-C90A-41A5-9133-86F825866E8F_1_105_c.jpeg). Skiltet dokumenterer identitet, Jens Juel som kunstner, datering, teknik og samling. Rammens inventarskilt læses a.4700, her normaliseret til a-4700. Kunstneren er identificeret som den eksisterende person juel i korpusdatasættet. -->
+    <!-- Fysiske mål, selvstændigt museumsobjektlink og sikkert Wikidata-værkmatch har ikke kunnet dokumenteres ved kildegennemgangen. Supplerende opslag: https://www.hovedstadshistorie.dk/indre-by/suhmsgade/ angiver samme motiv, kunstner, ca. 1798 og samling; https://biografiskleksikon.lex.dk/P.F._Suhm/ omtaler de ovale replikker på Frederiksborg og Det Kgl. Bibliotek. -->
+    <!-- Affotografering: foto leveret af brugeren; fotografens navn og særskilt fotolicens er ikke oplyst. Jens Juels maleri er uden ophavsret. Dokumentarisk beskæring: 474 × 584 px fra (159, 158) i fotoet på 768 × 1024 px; oval maske langs lærredets indvendige kant med hvid baggrund uden ramme. Motiv og farver er bevaret. Kvadratisk ansigtsudsnit: 380 × 380 px fra (210, 170), registreret i Suhms portraits.xml. -->
+    <!-- metadata checked: 2026-11-10 -->
+  </picture>
+  <picture id="tode-vaerksted" museum="fnm" invnr="a-6176" subject="tode">
+    <i>Johan Clemens Tode</i>, værkstedsarbejde, omkr. 1700. Frederiksborg.
+    <identifiers>
+      <wikidata>Q51225498</wikidata>
     </identifiers>
   </picture>
 </pictures>

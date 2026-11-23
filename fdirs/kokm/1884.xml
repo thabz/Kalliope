@@ -1653,6 +1653,10 @@ Mørket sig sænker, jeg Intet kan se!
   <firstline>Hvor sparsomt hen over Kridt og Flint</firstline>
   <source pages="80-82"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="hojerup-old-church" relation="subject" primary="true"/>
+    <place ref="stevns-klint" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1710,6 +1714,9 @@ Bølgerne larme vilde!
   <title>Farisæeren</title>
   <firstline>Guds Enbaarne sad i Synagogen</firstline>
   <source pages="83-90"/>
+  <places>
+    <place ref="kidron-valley" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1903,6 +1910,9 @@ Faldt Farisæeren og brast i Graad:
   <title>Mose Død</title>
   <firstline>Op ad Nebobjergets Side</firstline>
   <source pages="91-101"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2155,6 +2165,7 @@ Du en naadig Dommer fik!''
   <title>Pavlus i Athen</title>
   <firstline>Som en Lavine, der sit Skred begynder</firstline>
   <source pages="102-106"/>
+  <keywords>sappho</keywords>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

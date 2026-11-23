@@ -478,6 +478,9 @@ Som nogen Digter kan skrive!
   <title>Ved Afsløringen af Viceprovst Fabricius’ Buste paa Regentsen</title>
   <firstline>Ude Bladet falder</firstline>
   <source pages="20-22"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1453,7 +1456,7 @@ Det Hele er mit alene!
   <linktitle>Moder! Moder! Den sorte Kat</linktitle>
   <firstline>Moder! Moder! Den sorte Kat</firstline>
   <notes>
-    <note type="credits">Bidrag fra Kirsten Gundel.</note>
+    <note editorial="true" type="credits">Bidrag fra Kirsten Gundel.</note>
   </notes>
   <source pages="64"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1670,7 +1673,7 @@ O, det <w>kan</w> jeg ikke forstaae!
   <linktitle>O, hold op at gjøre mig saa bange!</linktitle>
   <firstline>O, hold op at gjøre mig saa bange!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Susanne Gregersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Susanne Gregersen.</note>
   </notes>
   <source pages="73-74"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2148,7 +2151,7 @@ Fra Balsaminer og Levkøi,
 Fra Blomsten paa din egen Lind
 Hvisker det: Somren drager ind!
 
-Det er en Nat<footnote type="errata">Det er en Nat] Det er Nat</footnote>, hvor man faaer Lyst
+Det er en Nat<!-- Rettelsesark: Det er en Nat] Det er Nat -->, hvor man faaer Lyst
 At drømme ved Naturens Bryst,
 Hvor tusind Tanker gaae igjen
 Og svæve for mit Øie hen
@@ -4852,6 +4855,9 @@ Over sin tabte Krands.
   </dates>
   <source pages="196"/>
   <keywords>sonnet,shakespeare</keywords>
+  <places>
+    <place ref="verona" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -152,7 +152,7 @@ en Konge for Muligheder.
   <title>I</title>
   <linktitle>I Landet Nod, I</linktitle>
   <notes>
-    <note>Cf. <xref bible="bibel1mose04,22" /></note>
+    <note editorial="true">Cf. <xref bible="bibel1mose04,22" /></note>
   </notes>
   <source pages="13-18"/>
   <quality>korrektur1,kilde,side</quality>
@@ -834,6 +834,9 @@ ham.
   <linktitle>Judas og Caiphas</linktitle>
   <firstline>Er Du endnu hos den Mester</firstline>
   <source pages="49-51"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

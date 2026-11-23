@@ -1,3 +1,4 @@
+import TitleBlock from '../components/titleblock.js';
 import * as Client from '../common/client.js';
 import * as OpenGraph from '../common/opengraph.js';
 import _ from '../common/translations.js';
@@ -46,8 +47,10 @@ const WorkPage = (props) => {
 
   const sources = Object.entries(work.sources ?? {}).filter(
     ([, source]) =>
-      (source.source != null && source.source.length > 0) ||
-      source.digitalUrl != null
+      source.errataOnly !== true && (
+        (source.source != null && source.source.length > 0) ||
+        source.digitalUrl != null
+      )
   );
   const renderedSources = sources.length > 0 ? (
     <Note type="source">
@@ -67,7 +70,7 @@ const WorkPage = (props) => {
 
   const renderedNotes = notes.map((note, i) => {
     return (
-      <Note key={'note' + i} type={note.type}>
+      <Note key={'note' + i} type={note.type} editorial={note.editorial}>
         <TextContent
           contentHtml={note.content_html}
           contentLang={note.content_lang}
@@ -76,16 +79,28 @@ const WorkPage = (props) => {
     );
   });
   const renderedErrata = errata.map((entry, index) => (
-    <Note key={`errata-${index}`} type="errata">
-      Trykkets{' '}
+    <Note key={`errata-${index}`} type="errata" editorial>
+      {entry.status === 'reviewed' ? '' : 'Teksten er rettet efter '}
       <FacsimileLink
         poetId={poet.id}
         facsimile={entry.facsimile}
         pageCount={entry.facsimilePageCount}
         firstPage={entry.facsimilePages[0]}>
-        rettelsesliste
-      </FacsimileLink>{' '}
-      på s. {entry.pages} er indført.
+        {entry.status === 'reviewed' ? 'Rettelseslisten' : 'rettelseslisten'}
+      </FacsimileLink>
+      {entry.sourceVolume != null || entry.pages !== '[upagineret]' ? (
+        <>
+          {' ('}
+          {entry.sourceVolume != null ? <>bind {entry.sourceVolume}</> : null}
+          {entry.pages !== '[upagineret]' ? (
+            <>{entry.sourceVolume != null ? ', ' : ''}s. {entry.pages.replace(/-/g, '–')}</>
+          ) : null}
+          {')'}
+        </>
+      ) : null}
+      {entry.status === 'reviewed'
+        ? ' er gennemgået; ingen sikre rettelser berører de gengivne tekster.'
+        : '.'}
     </Note>
   ));
 
@@ -182,10 +197,10 @@ const WorkPage = (props) => {
       selectedMenuItem="works">
       <SidebarSplit sidebar={sidebar}>
         <div>
-          <SubHeading>
+          {work.title_block != null ? <TitleBlock parts={work.title_block} lang={lang} /> : <SubHeading>
             <WorkName work={work} lang={lang} />
             <WorkSubtitles work={work} lang={lang} />
-          </SubHeading>
+          </SubHeading>}
           {table}
           <style jsx>{`
             :global(.nodata) {

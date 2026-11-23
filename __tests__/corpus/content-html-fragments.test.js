@@ -1,3 +1,4 @@
+import { buildTextBlocks } from '../../tools/build-static/text-blocks.js';
 import { XMLSerializer } from '@xmldom/xmldom';
 import { loadTrackedWorkFiles } from '../../tools/libs/work-files.js';
 import { htmlToXml } from '../../tools/libs/helpers.js';
@@ -21,15 +22,18 @@ describe('renderable work corpus fragments', () => {
       for (const entry of Array.from(document.getElementsByTagName('*'))) {
         if (entry.nodeName !== 'text' && entry.nodeName !== 'prose') continue;
         const body = child(entry, 'body');
-        if (body == null) continue;
+        if (body == null && child(entry, 'front') == null) continue;
         const textId = entry.getAttribute('id') ?? '?';
         const head = child(entry, 'head');
-        const blocks = children(body).filter(node =>
-          ['poetry', 'prose', 'epigraph'].includes(node.nodeName));
+        try {
+          buildTextBlocks(entry, collected, { workId, textId });
+        } catch (error) {
+          issues.push(`${filename}: ${error.message}`);
+        }
         const headings = children(head).filter(node =>
           ['title', 'subtitle', 'suptitle'].includes(node.nodeName));
         const notes = children(child(head, 'notes')).filter(node => node.nodeName === 'note');
-        for (const node of [...blocks, ...headings, ...notes]) {
+        for (const node of [...headings, ...notes]) {
           const blockType = node.nodeName;
           try {
             htmlToXml(innerXml(node), collected, blockType === 'poetry', {

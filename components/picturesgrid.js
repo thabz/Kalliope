@@ -1,4 +1,5 @@
 import Picture from '../components/picture.js';
+import { pictureCrop } from '../common/picture-crop.js';
 
 const mainMaxWidthPx = 880;
 const mainHorizontalPaddingPx = 40;
@@ -29,8 +30,8 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
     let height = 0;
     items.forEach((item) => {
       if (item.picture != null && item.picture.size != null) {
-        height =
-          (item.picture.size.height / item.picture.size.width) * item.width;
+        const size = pictureCrop(item.picture) ?? item.picture.size;
+        height = (size.height / size.width) * item.width;
       }
     });
     return height;
@@ -60,7 +61,8 @@ const PicturesGrid = ({ lang, poet, artwork, hideArtist, hideMuseum }) => {
         row.push({ width: gutterWidth });
         currentWidth += gutterWidth;
       }
-      const width = (maxHeight / picture.size.height) * picture.size.width;
+      const size = pictureCrop(picture) ?? picture.size;
+      const width = (maxHeight / size.height) * size.width;
       row.push({ picture, width });
       currentWidth += width;
       if (currentWidth >= viewportWidth) {

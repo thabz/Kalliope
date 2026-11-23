@@ -7,8 +7,7 @@
     <openlibrary-work>OL45729431W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1842-p1.jpg">Titelbladet til <i>Valkyrien Gøndul</i> (1842) lyder ,,Valkyrien Gøndul // Et nordisk Digt / af / H. V. Kaalund. // Kjøbenhavn. / Bog- og Papirhandler C. Steens Forlag. / B. Schlesinger'ske Bogtrykkeri ved N. H. Stenderup. / 1842.''</picture>
@@ -1271,7 +1270,7 @@ Med Sigurlina, hans stolte Dronning.
 Paa Vikingstog i hans Ungdomstid
 Han bragte hende til Norden hid.
 Hun var en Datter af Sydens Zoner.
-Blandt dunkle Myrther og blandt Citroner,<note>Henviser til Goethes <xref poem="goethe2001111901,1-4"/>.</note>
+Blandt dunkle Myrther og blandt Citroner,<note editorial="true">Henviser til Goethes <xref poem="goethe2001111901,1-4"/>.</note>
 Hun badede sig i salten Sø,
 Da fanged Kæmpen den nøgne Mø,
 Og Havet maatte hun med ham pløie.
@@ -1394,6 +1393,9 @@ Men hvad den tænkte, Alfader veed.
   <title>Hogne reiser</title>
   <firstline>Hedin, nu rødmer Rønnen i Høsten</firstline>
   <source pages="50-56"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1699,7 +1701,7 @@ Der dandsede Hildur og Nordmanden sammen
     Ved Langildens Glands,
 Som Flammen, der dandser med Flammen.
 
-Fra Lyren<note>* Aabningen i Taget.</note> steg baade Røg og Ange,
+Fra Lyren<note>Aabningen i Taget.</note> steg baade Røg og Ange,
 Mens Natten gjentoned af Heltenes Sange;
     Høit klang til Lyst
     Den mægtige Røst,
@@ -1719,6 +1721,9 @@ I det Fjerne monne bortrulle.
   <title>Hedin og Hilde</title>
   <firstline>Skjøn Hilde, hører du Lærken, den slaaer sin Foraarssang!</firstline>
   <source pages="64-70"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1895,6 +1900,9 @@ Men Vætterne fra Skoven gjentoge - ,,for silde.''
   <title>Hedin og Sigurlina</title>
   <firstline>Nu slumrer Hilde med sine Møer</firstline>
   <source pages="71-75"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2187,6 +2195,9 @@ Naar den visner; skal du græde
   <title>Gensynet</title>
   <firstline>Lavt flagrede Svalen</firstline>
   <source pages="83-94"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3490,7 +3501,7 @@ Heltenes Flok
 Springer som Burre
 For Drengenes Stok;
 Raslende Spyd,
-Kampen dernede,<note>dernede] deroede</note>,
+Kampen dernede,<note editorial="true">dernede] deroede</note>,
 Herlige Lyd!
 Den er vor Glæde,
 Den er vor Fryd!
@@ -3691,6 +3702,9 @@ Udbredt er Christendommens milde Fred,
   <title>Mythernes Transfiguration</title>
   <firstline>Det bankede høit paa Valhals Dør</firstline>
   <source pages="145-154"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

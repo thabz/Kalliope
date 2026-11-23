@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="afzelius" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Arvid August</firstname>
+    <lastname>Afzelius</lastname>
+  </name>
+  <!-- Præcise datoer og fødested: Svenskt biografiskt lexikon, opslag A August Afzelius, sammenholdt med Salmonsen2,I,s.291. SBLs egen indeksvisning: https://sok.riksarkivet.se/sbl/Search.aspx?t=1&amp;yrke=Tecknare. -->
+  <period>
+    <born>
+      <date>1785-05-06</date>
+      <place>Fjällåkra</place>
+    </born>
+    <dead>
+      <date>1871-09-25</date>
+      <place>Enköping</place>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <!-- Redaktionel periodeinddeling: Folkevisedigtning og götisk/nationalromantisk virksomhed i Iduna samt samarbejdet med Geijer, dokumenteret i Salmonsen2,I,1915,s291. -->
+  <identifiers>
+    <wikidata>Q717133</wikidata>
+    <wikipedia-da>Arvid August Afzelius</wikipedia-da>
+    <wikipedia-en>Arvid August Afzelius</wikipedia-en>
+    <runeberg-org>afzearau</runeberg-org>
+  </identifiers>
+</person>

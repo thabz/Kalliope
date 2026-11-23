@@ -5,7 +5,7 @@
   <subtitle>Et Rim</subtitle>
   <year>1824</year>
   <notes>
-    <note>Opdelingen i navngivne kapitler er en ren redaktionel opfindelse for at lette brugen af den digitale tekst. I Grundtvigs tekst er kapitlerne blot adskilt med delestreger.</note>
+    <note editorial="true">Opdelingen i navngivne kapitler er en ren redaktionel opfindelse for at lette brugen af den digitale tekst. I Grundtvigs tekst er kapitlerne blot adskilt med delestreger.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1824-p1.jpg"><transcription>Nyaars-Morgen. // Et Rim / af / Nik. Fred. Sev. Grundtvig, / Præst. // Solen skinner saa klar om Dag, / Alting giver hun god Størke; / Det er nu kommet saa vel i Lag, / At borte er Natten hin mørke! / Kæmpe-Viserne. // Kiøbenhavn. / Trykt hos Directeur Jens Hostrup Schultz, / Kongelig og Universitets-Bogtrykker. / 1824.</transcription></picture>
@@ -18,6 +18,9 @@
 <head>
   <title>Fortale</title>
   <source pages="I-XXI" facsimile-pages="7-27"/>
+  <places>
+    <place ref="christianshavn" relation="writtenAt" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -511,6 +514,9 @@ Som Gjenlyd fra Skyggernes Land!
   <title><num>3.</num>Det Næste jeg mindes</title>
   <firstline>Det Næste jeg mindes</firstline>
   <source pages="19-38"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2791,6 +2797,9 @@ Som flyve i Paradis ind!
   <title><num>8.</num>Det Sidste jeg mindes</title>
   <firstline>Det Sidste jeg mindes</firstline>
   <source pages="111-129"/>
+  <places>
+    <place ref="mount-ararat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

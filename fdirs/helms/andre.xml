@@ -63,8 +63,11 @@ Der raader for Danmarks Sag.
   <title>En svensk Konstabel fra Sverrig</title>
   <firstline>Nu vil jeg indvie jer i</firstline>
   <notes>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="boyej" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johannes</firstname>
+    <lastname>Boye</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1756-12-19</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1830-02-01</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q5584148</wikidata>
+    <biografisk-leksikon-lex-dk>Johannes_Boye</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>BJohannesBoye</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

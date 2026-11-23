@@ -7,7 +7,7 @@
     <openlibrary-work>OL38748W</openlibrary-work>
   </identifiers>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <quality>korrektur1</quality>
 </workhead>
@@ -1154,6 +1154,9 @@ Of horses and horses of the sea, white horses.
 <head>
   <title>Wisdom</title>
   <firstline>The true faith discovered was</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

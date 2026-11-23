@@ -9,14 +9,17 @@ export const flagMap = Object.freeze(Object.assign(Object.create(null), {
   it: '🇮🇹',
   es: '🇪🇸',
   nl: '🇳🇱',
+  be: '🇧🇪',
   gr: '🇬🇷',
   ir: '🇮🇷',
   fi: '🇫🇮',
+  ru: '🇷🇺',
   is: '🇮🇸',
   ch: '🇨🇭',
   at: '🇦🇹',
   pt: '🇵🇹',
   cz: '🇨🇿',
+  tr: '🇹🇷',
 }));
 
 export const poetFlag = poet => {

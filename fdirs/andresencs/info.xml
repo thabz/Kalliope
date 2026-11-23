@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="andresencs" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christopher Schrøder</firstname>
+    <lastname>Andresen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1760-04-03</date>
+      <place>Rønne</place>
+    </born>
+    <dead>
+      <date>1832-05-18</date>
+      <place>Kjærteminde</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>

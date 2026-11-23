@@ -31,9 +31,20 @@ The normal deliverables are:
 - translation and original-work relations where they can be established
 - a JPEG of the title page
 - a JPEG of a separate graphic front cover when one exists
-- explicit XML `TODO:` notes for genuine unresolved questions
+- a precise PR handoff for genuine unresolved questions
 - a clean, validated repository change
-- a complete GitHub pull request after user approval
+- a complete GitHub pull request
+
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
 
 ## Authority and required documentation
 
@@ -144,10 +155,9 @@ Do not fabricate XML or commit scratch OCR files just to create a PR.
 This blocked handoff replaces the normal completion requirements in sections
 19–24 and the definition of done below. Run the full repository test suite
 before creating the PR, report its actual result, and retain the repository's
-commit/push approval rules. Where approval is still needed, present the
-prepared incomplete change and report for approval, then create the PR after
-approval. Do not continue importing while waiting. Do not publish incomplete
-facsimile assets merely to satisfy the normal completion workflow.
+commit/push authorization rules and the user's existing authorization.
+Do not publish incomplete facsimile assets merely to satisfy the normal
+completion workflow.
 
 ## 1. Establish the repository context
 
@@ -228,7 +238,7 @@ Inspect every page for a printed correction sheet. Record each sheet as a
 separate `page_type: "errata"` row in the reviewed inventory, including its
 facsimile filename, even though the sheet is never a standalone Kalliope text.
 Apply every relevant correction to the affected text and attach a
-`<footnote type="errata">corrected] printed</footnote>` at the correction.
+`<!-- Rettelsesark: corrected] printed -->` at the correction.
 Register the sheet in `<workhead>` as documented in `docs/xml-work-format.md`.
 If no sheet exists, register `<errata status="none"/>`. A discovered sheet that
 has not been applied blocks completion and the review checkpoint.
@@ -257,7 +267,6 @@ Include, when present and textually relevant:
 - introductions
 - prefaces
 - afterwords
-- dedications
 - mottoes
 - explanatory prose
 - editorial notes
@@ -265,6 +274,12 @@ Include, when present and textually relevant:
 
 A prose introduction must be represented as its own Kalliope text according to
 the current XML format. Do not reduce it to a summary or work-level note.
+
+Dedication leaves must be transcribed as work-level notes in
+`<workhead><notes><note>`, never as separate `<text>` entries. Preserve the
+printed dedication's wording and punctuation; a short label such as
+`Dedikationsblad: »Til min Hustru.«` may identify it. As source text, the
+dedication does not receive `editorial="true"`.
 
 Use the title page, colophon and similar pages as metadata sources even when
 they are not represented as separate texts.
@@ -291,9 +306,9 @@ public/images/<poet-id>/<work-id>-p1.jpg
 ```
 
 The title page image is required for every imported work unless the source
-genuinely contains no title page. In that exceptional case, add an explicit
-`TODO:` note and explain the limitation in the review summary and PR
-description.
+genuinely contains no title page. In that exceptional case, explain the
+limitation in the review summary and PR description; do not add a work note
+for this handoff information.
 
 The JPEG must represent the printed title page itself. Do not generate it from
 the PDF's OCR layer. Use `$prepare-kalliope-titlepage` and follow
@@ -420,6 +435,11 @@ The published attestation contains only `model` and an ISO 8601 `datetime`
 with timezone. Do not add a hash, sidecar reference or automatic invalidation
 metadata to it. Preserve older attestations when a later model adds another.
 
+When preparing a proofreading attestation, read
+[Modeloplysninger ved korrekturattestation](references/model-attestation.md)
+to resolve the reviewer's exact model and record its provenance. Follow that
+lookup before declaring the model unavailable.
+
 ## 4. Ignore the PDF's existing OCR layer
 
 The PDF may contain an OCR text layer, but it is known to be unreliable.
@@ -511,7 +531,7 @@ substitutions. Historical forms such as `høi`, `skiøn`, `kiær`, `giøre` and
 `maaskee` may be correct in the source, and a modern spelling or dictionary
 cannot overrule the facsimile. Check the complete local context, capitalization,
 word boundary and printed glyph before changing XML. If the facsimile does not
-settle the reading, preserve the uncertainty with a `TODO:` note or finding
+settle the reading, preserve the uncertainty in a finding and the PR handoff
 rather than guessing.
 
 The detailed general rules for facsimile proofreading, stanza structure,
@@ -653,8 +673,8 @@ lines to produce a clearer, shorter or more distinctive catalogue title. The
 table of contents is supporting evidence only and cannot overrule the heading
 on the text's own first page. A heading for an internal division belongs in the
 body using the documented heading structure rather than being promoted into
-the text metadata. Record a `TODO:` note or finding when the hierarchy cannot
-be established safely; do not resolve uncertainty by inventing a title.
+the text metadata. Record a finding for the PR handoff when the hierarchy
+cannot be established safely; do not resolve uncertainty by inventing a title.
 
 Check both the first and last relevant page directly. A presumed page range or
 table of contents may be wrong.
@@ -725,11 +745,27 @@ Actively determine, as applicable:
 Do not leave metadata absent merely because finding it requires a corpus
 lookup.
 
-Do not fabricate metadata when no responsible answer exists. Use an explicit
-`TODO:` note for a genuine unresolved editorial question.
+Do not fabricate metadata when no responsible answer exists. Document the
+unresolved editorial question in the PR handoff.
 
 Titles and first lines must remain free of XML markup when the current format
 requires plain text.
+
+### Numbered poems without a title
+
+A simple number alone is not a usable text title. When a poem has only a
+number instead of a printed title, use the number as a `<num>` prefix followed
+by the poem's first line inside `<title>`. Always put a period after the
+number inside `<num>`, for example `<num>1.</num>`. Keep `<firstline>` as plain text.
+For example, `aarestrup2026102002` must use:
+
+```xml
+<title><num>1.</num>En deilig Aften, stille, sølvklart Vandet</title>
+<firstline>En deilig Aften, stille, sølvklart Vandet</firstline>
+```
+
+Apply this rule to every such poem in the work, including numbered sequences
+inside sections; never leave `<title>1</title>` or an equivalent bare number.
 
 Title metadata must also omit terminal punctuation. Remove a final period,
 comma, colon, semicolon, question mark or exclamation mark from `title` and its
@@ -956,6 +992,15 @@ the status merely because the analyzer emitted no line-level candidates.
 Continue structural analysis across page breaks. A page break is not in itself
 a stanza break.
 
+At a page boundary, the absence of a visible inter-stanza gap is not evidence
+that the stanza continues: the page layout may conceal the gap. Compare both
+pages together and assess complete verse lines, syntax, rhyme and repeated
+indentation. Establish a boundary from converging source-based evidence;
+equalizing stanza lengths alone is insufficient. Record the reasoning when a
+page boundary conceals the spacing. Exclude catchwords (Danish: kustoder) from
+the verse text: they repeat the next page's opening word and indicate neither
+the presence nor the absence of a stanza boundary.
+
 ### Rerun structural analysis from the final XML
 
 The first analysis performed during transcription is not the final check.
@@ -1112,12 +1157,15 @@ For every poem, record in scratch working data at least:
 - the disposition of every candidate against the page image;
 - the reviewer who performed the visual comparison.
 
-Treat each blank line in `<poetry>` as an editorial claim that the print has a
-visible stanza boundary. Verify every existing XML blank line against the page
-image, and verify conversely that every visible stanza boundary is represented
-in XML. Count the verse lines between boundaries and compare those counts with
-the visual record. Do not infer a boundary from OCR whitespace, OCR text
-blocks, line coordinates, rhyme, metre or a preferred regular form.
+Except for the editorial spacing before signatures and source credits in
+section 12, treat each blank line in `<poetry>` as an editorial claim that the
+print has a visible stanza boundary. Verify every stanza-separating XML blank
+line against the page image, and verify conversely that every visible stanza
+boundary is represented in XML. Count the verse lines between boundaries and
+compare those counts with the visual record. Do not infer a boundary from OCR
+whitespace, OCR text blocks, line coordinates, rhyme, metre or a preferred
+regular form alone. For boundaries concealed by a page break, follow the
+combined-evidence assessment in section 9 rather than requiring a visible gap.
 
 Inspect indentation independently of stanza boundaries. OCR commonly turns an
 indented line into a separate text block; a recurring failure pattern is a
@@ -1240,6 +1288,16 @@ format.
 
 A motto is normally a quotation, not a subtitle.
 
+Always separate a closing author or translator signature (Danish:
+forfattersignatur) or source credit (kildeangivelse) from the poem or prose
+with one blank XML line. Apply the same spacing to attributions in mottoes.
+For a signature or credit spanning several lines, insert the blank line before
+the first line of the block and keep its continuation lines together. Preserve
+the wording, alignment and typographic markup. This is an editorial spacing
+convention even when the print has no extra space; it does not mark a stanza
+boundary. During the final review, inspect the ending of every included poem
+for this spacing, including signatures without `<right>` markup.
+
 Do not let:
 
 - mottoes
@@ -1257,6 +1315,11 @@ text block.
 Inspect comparable corpus examples when the correct representation is unclear.
 
 ## 13. Place notes and footnotes correctly
+
+Mark notes and footnotes added by Kalliope with `editorial="true"`, including
+source-text identifications and translation references. Preserve any existing
+`type` attribute. Do not mark notes transcribed from the source or notes of
+unknown provenance. Follow `docs/xml-work-format.md` for the XML syntax.
 
 Distinguish among:
 
@@ -1285,7 +1348,7 @@ previous transcription without checking it against the printed note.
 
 Preserve the association between each marker and its note.
 
-## 14. Mark unresolved questions with XML TODO notes
+## 14. Document unresolved questions in the PR handoff
 
 Do not hide uncertainty behind a plausible guess.
 
@@ -1297,32 +1360,19 @@ Try first to resolve a doubtful place by:
 4. checking another copy or scan of the same physical edition when available
 5. checking relevant corpus examples or bibliographic evidence
 
-When a rare question still cannot be resolved responsibly, insert an XML note
-at the most relevant location.
-
-The note text must begin exactly with uppercase `TODO:` followed by a concise,
-actionable description.
-
-Example:
-
-```xml
-<note>TODO: Tvivl om sidste ord i verslinjen; kontrollér originalen manuelt.</note>
-```
-
-A `TODO:` note may be placed:
-
-- in the work header for a work-level problem
-- in a text header for a poem-level or prose-level problem
-- at the relevant point in the body when the XML format permits it
-
-Use the note placement and syntax supported by current Kalliope XML.
+When a rare question still cannot be resolved responsibly, document it in the
+PR handoff with the precise XML location, printed page, facsimile page and
+required follow-up. Do not insert an XML `TODO:` note for information that can
+stay in the PR handoff. Add an editorial note to a work only when it contributes
+relevant information for the reader, following
+[the editorial-note rule](../add-kalliope-work/SKILL.md#redaktionelle-noter-og-pr-overlevering).
 
 Continue processing the rest of the publication after recording a local
 uncertainty. Do not stop the entire import for an isolated doubt that can be
 reviewed manually later. Missing facsimile pages are not a local uncertainty;
 apply the immediate stop and blocked-import PR procedure above.
 
-Do not use `TODO:` as a substitute for ordinary research or proofreading.
+Do not use the handoff as a substitute for ordinary research or proofreading.
 
 ## 15. Extract dates and other textual metadata
 
@@ -1355,40 +1405,14 @@ Also inspect for:
 
 ## 16. Resolve persons through the existing corpus
 
-Whenever the publication names or refers to a poet, author, translator, editor
-or other relevant person, search the existing Kalliope corpus before creating
-anything new.
-
-This is especially important for:
-
-- translated poems
-- adaptations
-- mottoes and quotations
-- dedications
-- texts by contributors other than the work's primary author
-- notes that mention another poet
-
-Follow `AGENTS.md` for corpus lookup.
-
-Use the generated database `public/api/kalliope.sqlite` as the first choice
-when the required information is available there. Read
-`docs/sqlite-index.md` first.
-
-Use source XML after the database lookup when necessary to confirm:
-
-- the correct person ID
-- name variants
-- pseudonyms
-- initials
-- historical spellings
-- existing relationships
-- current markup conventions
-
-Do not create a duplicate person because the printed name differs from the
-preferred corpus name.
-
-If a new person genuinely must be created, follow all current person-format,
-source and validation rules.
+Resolve named authors, translators, editors and other persons through the
+JSONL corpus following `AGENTS.md` and `docs/corpus-dataset.md`; inspect
+specific XML when necessary. Do not create duplicates for name variants.
+Use `$add-kalliope-person` only when a person needs creation or enrichment.
+When preparing the PR after text import, reconcile text wishes following
+[the person skill's work registration](../add-kalliope-person/references/works.md)
+against an up-to-date JSONL corpus. Run the report once for the PR's changes,
+not after every build.
 
 ## 17. Investigate translations and originals
 
@@ -1418,8 +1442,8 @@ evidence.
 When the original author is known but the precise original cannot be found, use
 the existing Kalliope mechanism for an unknown original where applicable.
 
-Add a `TODO:` note when the remaining uncertainty requires manual editorial
-review.
+Document remaining uncertainty requiring manual editorial review in the PR
+handoff, rather than adding a work note about the task.
 
 ## 18. Detect variants and duplicates
 
@@ -1520,6 +1544,8 @@ Explicitly verify that:
 - afterwords are included
 - relevant dedications are included
 - relevant mottoes are included
+- every closing author/translator signature and source credit is separated
+  from the text by one blank XML line, including multiline signature blocks
 - relevant editorial notes are included
 - footnotes have not been dropped
 - no continuation over a page boundary is missing
@@ -1717,15 +1743,15 @@ Report concisely:
 - referenced persons resolved
 - translations and originals identified
 - validation and tests run
-- remaining `TODO:` notes
+- remaining questions documented in the PR handoff
 - exact files intended for the commit
 
-Do not commit, amend or push until the user has explicitly reviewed the change
-and requested commit/push, as required by `AGENTS.md`.
+Follow `AGENTS.md` and the user’s existing authorization for commit, amend and
+push. This skill adds no separate requirement for user review or approval.
 
-## 24. Create the GitHub pull request after approval
+## 24. Create the GitHub pull request
 
-After explicit user approval:
+When the work is ready and commit/push are authorized:
 
 1. Generate the complete facsimile directory from the source PDF with the
    repository's facsimile tool.
@@ -1758,7 +1784,7 @@ The PR description must state concretely:
 - how the title-page geometry and crop were checked
 - which persons, translations and originals were resolved
 - which validation and tests were run
-- any remaining `TODO:` notes
+- any remaining questions documented in the PR handoff
 
 Every PR originating from a GitHub issue must include `Fixes #123` with the
 actual issue number in its description from creation, including draft PRs and
@@ -1802,9 +1828,11 @@ For a complete import, all applicable items below must be true:
 - [ ] Every relevant page was checked directly against the facsimile.
 - [ ] Every poetry block has a visual structure record covering its complete
       page range, observed stanza lengths and observed indentation.
-- [ ] Every XML blank line in `<poetry>` was verified as a visible printed
-      stanza boundary, and every visible printed stanza boundary is represented
-      in XML.
+- [ ] Every stanza-separating XML blank line in `<poetry>` was verified as a
+      visible printed stanza boundary, and every visible printed stanza boundary
+      is represented in XML; boundaries concealed by a page break were assessed
+      as specified in section 9. Editorial spacing before signatures and source
+      credits follows section 12.
 - [ ] Every verse line's horizontal position was visually checked; indented
       lines were not converted to stanza breaks or flattened by OCR.
 - [ ] Every relevant page was visually checked for italic, letterspaced and
@@ -1832,12 +1860,13 @@ For a complete import, all applicable items below must be true:
 - [ ] Every relevant prose text was included as its own text entry.
 - [ ] Every prose paragraph's boundaries, first-line indentation and
       inter-paragraph spacing were visually checked in both proofreading
-      passes; no blank line was added without extra vertical space in the
-      facsimile, and no indent was replaced by a blank line.
+      passes; paragraph spacing follows the facsimile, with the signature/source
+      credit spacing specified in section 12, and no indent was replaced by a
+      blank line.
 - [ ] Physical print-line wraps and page breaks within continuing prose
       paragraphs did not introduce false paragraph boundaries or spacing.
-- [ ] Relevant introductions, prefaces, afterwords, dedications and mottoes were
-      included.
+- [ ] Relevant introductions, prefaces, afterwords and mottoes were included;
+      dedication leaves were transcribed as work-level notes, not separate texts.
 - [ ] Advertisements were excluded.
 - [ ] The table of contents was excluded as a text.
 - [ ] The title page was transcribed into the work header using readable
@@ -1878,8 +1907,8 @@ For a complete import, all applicable items below must be true:
 - [ ] Notes applying to a whole poem are placed in the text header.
 - [ ] Full dates and other discoverable metadata were extracted according to
       current rules.
-- [ ] Genuine unresolved questions are marked with explicit XML notes beginning
-      `TODO:`.
+- [ ] Genuine unresolved questions are documented precisely in the PR handoff;
+      operational handoff notes are absent from the work XML.
 - [ ] The complete XML validates.
 - [ ] OCR candidate checks were reviewed.
 - [ ] OCR, page, stanza, indentation and typography candidate totals equal
@@ -1895,6 +1924,12 @@ For a complete import, all applicable items below must be true:
 - [ ] `git diff --check` passes.
 - [ ] Temporary OCR and scratch files were removed.
 - [ ] The final diff contains only intended files.
-- [ ] The user reviewed the completed change before commit and push.
-- [ ] After approval, the change was committed, pushed and submitted as a
+- [ ] The change was committed, pushed and submitted as a
       complete GitHub pull request.
+
+## Billeder
+
+Når opgaven omfatter kunstbilleder, illustrationer eller kunstneriske forsider,
+brug [fælles billedarbejde](../add-kalliope-picture/SKILL.md)
+(`$add-kalliope-picture`). Titelbladsbehandling følger fortsat
+`$prepare-kalliope-titlepage`.

@@ -1,4 +1,9 @@
+import { extractTitleBlock } from './build-static/parsing.js';
+import { embeddedContext } from './build-static/embedded-context.js';
+import { embeddedTextIssues } from './build-static/embedded-text.js';
+import { buildTextBlocks } from './build-static/text-blocks.js';
 import fs from 'fs';
+import { changedDateTextIds } from './build-static/related-dates.js';
 import { execSync } from 'child_process';
 import path from 'path';
 import mkdirp from 'mkdirp';
@@ -57,6 +62,7 @@ import {
 import { build_sitemap_xml } from './build-static/sitemap.js';
 import { buildBiographies } from './build-static/biographies.js';
 import { build_keywords } from './build-static/keywords.js';
+import { canonicalKeywordId } from './build-static/keyword-taxonomy.js';
 import { build_about_pages } from './build-static/about.js';
 import { build_portraits_json } from './build-static/portraits.js';
 import { build_todays_events_json } from './build-static/today.js';
@@ -87,7 +93,6 @@ import { flushImageSizeCache, imageSizeSync } from './build-static/image.js';
 import {
   poetName,
   workName,
-  workLinkName,
 } from './build-static/formatting.js';
 import {
   pageIntervalError,
@@ -113,13 +118,17 @@ import {
 } from './build-static/source.js';
 import { mapLimit } from './build-static/concurrency.js';
 import { createProgressReporter } from './build-static/progress.js';
-import { validateFirstlineMarkup } from './build-static/validation.js';
+import {
+  validateFirstlineMarkup,
+  validateIndexTitleMarkup,
+} from './build-static/validation.js';
 import { build_works_toc, build_section_toc } from './build-static/toc.js';
 import { update_elasticsearch } from './build-static/elastic.js';
 import { loadExternalIdentifiers } from './build-static/external-identifiers.js';
 import {
   build_textrefs,
   mark_ref_destinations_dirty,
+  referenceSourceFilesForText,
 } from './build-static/textrefs.js';
 import { build_anniversaries_ical } from './build-static/ical.js';
 import { buildLatestNews } from './build-static/news.js';
@@ -134,6 +143,7 @@ import {
   isAnthologyText,
   resolveAuthorId,
   worksForPoet,
+  textsForWork,
 } from './build-static/anthologies.js';
 import {
   obsoleteSourceWorkKeys,
@@ -272,11 +282,23 @@ const handle_text = async (
   const sourceFiles = [
     ...(placement.sourceFiles ?? sourceFilesForText(textMeta)),
     ...editionSourceFilesForText(sourceTextId, collected),
+    ...referenceSourceFilesForText(sourceTextId, collected),
+    ...(textMeta.type === 'section'
+      ? textsForWork(collected, sourcePoetId, sourceWorkId)
+          .map(item => `fdirs/${item.poetId}/info.xml`)
+      : []),
   ];
   if (
     !collected.poetMetadataDirty?.has(textMeta.poetId) &&
+    collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
+      'tools/build-static/artwork.js', 'tools/build-static/parsing.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
+      'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
+      'tools/build-static/embedded-context.js',
+      'tools/libs/helpers.js',
+      'tools/build-static/toc.js', 'tools/build-static/xml.js',
+      'components/poetname-helpers.js',
       'common/source-reference.js', ...sourceFiles)
   ) {
     return;
@@ -312,8 +334,15 @@ const handle_text = async (
   const headingFootnoteCount = countHeadingFootnotes(head);
 
   let keywordsArray = [];
-  if (keywords) {
-    keywordsArray = keywords.split(',').map((k) => {
+  if (keywords != null && keywords.length > 0) {
+    const seenKeywordIds = new Set();
+    keywordsArray = keywords.split(',').map(rawKeywordId => {
+      const inputId = rawKeywordId.trim();
+      const k =
+        collected.poets.has(inputId) === false &&
+        collected.keywords.has(inputId) === true
+          ? canonicalKeywordId(inputId, collected.keywords)
+          : inputId;
       let type = null;
       let title = null;
       if (collected.poets.get(k) != null) {
@@ -331,6 +360,12 @@ const handle_text = async (
         type,
         title,
       };
+    }).filter(keyword => {
+      if (seenKeywordIds.has(keyword.id)) {
+        return false;
+      }
+      seenKeywordIds.add(keyword.id);
+      return true;
     });
   }
 
@@ -369,24 +404,7 @@ const handle_text = async (
       // vil vi kun vise den ældste variant.
       return primaryTextVariantId(id, collected) === id;
     })
-    .map((id) => {
-      const meta = collected.texts.get(id);
-      const poet = poetName(collected.poets.get(meta.poetId));
-      const work =
-        meta.workId === 'andre' ?
-          null
-        : workLinkName(
-            collected.works.get(sourceWorkKey(meta)),
-          );
-
-      return {
-        id,
-        title: meta.title,
-        poet,
-        poetId: meta.poetId,
-        work,
-      };
-    });
+    .map(id => buildEditionReference(collected.texts.get(id), collected));
   let refsArray = buildRefsArray(textRefIdsByType.mention || []);
   let translationsArray = buildRefsArray(textRefIdsByType.translation || []);
 
@@ -521,34 +539,16 @@ const handle_text = async (
       throw `fdirs/${sourcePoetId}/${sourceWorkId}: section ${sourceTextId} mangler title.`;
     }
     const content = getChildByTagName(text, 'content');
-    toc = build_section_toc(content, sourcePoetId);
+    toc = build_section_toc(content, sourcePoetId, collected.poets);
   } else {
     // prose or poem
-    const body = getChildByTagName(text, 'body');
-    blocks = getChildrenByTagNames(body, ['poetry', 'prose', 'epigraph']).map(
-      (block) => {
-        const type = tagName(block);
-        const rawBlock = safeGetInnerXML(block);
-        footnotes_count += (rawBlock.match(/<footnote\b|<note\b/g) || [])
-          .length;
-        has_footnotes =
-          has_footnotes === true ||
-          rawBlock.indexOf('<footnote') !== -1 ||
-          rawBlock.indexOf('<note') !== -1;
-        const fontSize = safeGetAttr(block, 'font-size');
-        const maxWidth = safeGetAttr(block, 'max-width');
-        const options = { fontSize, maxWidth };
-        return {
-          type,
-          lines: htmlToXml(rawBlock, collected, type === 'poetry', {
-            workId: sourceWorkId,
-            textId,
-            blockType: type,
-          }),
-          options,
-        };
-      },
-    );
+    blocks = buildTextBlocks(text, collected, { workId: sourceWorkId, textId });
+    for (const block of blocks) {
+      const noteCount = block.lines.reduce((count, [line]) =>
+        count + (line.match(/<footnote\b|<note\b/g) ?? []).length, 0);
+      footnotes_count += noteCount;
+      has_footnotes = has_footnotes === true || noteCount > 0;
+    }
   }
   mkdirp.sync(foldername);
   const notes = get_notes(head, collected, {}, fragmentContext);
@@ -560,6 +560,7 @@ const handle_text = async (
     section_titles,
     text: {
       id: textId,
+      identifiers: textMeta.identifiers ?? {},
       title: replaceDashes(titleText(title)),
       ...(title.title.indexOf('<') > -1 ?
         { title_html: htmlToXml(title.title, collected, true, {
@@ -568,9 +569,14 @@ const handle_text = async (
       : {}),
       title_prefix: title.prefix,
       linktitle: replaceDashes(titleText(linktitle)),
+      title_block: extractTitleBlock(head, collected, fragmentContext),
       subtitles,
       suptitles,
       text_type: textType,
+      ...(textMeta.parentTextId != null ? {
+        parent_text_id: textMeta.parentTextId,
+        parent_context: embeddedContext(text),
+      } : {}),
       has_footnotes,
       footnotes_count,
       notes,
@@ -618,7 +624,8 @@ const handle_work = async (work) => {
     let proses = [];
     let toc = [];
 
-    for (const part of getChildren(section)) {
+    for (const part of getChildren(section).filter(node =>
+      tagName(section) !== 'body' || tagName(node) === 'text')) {
       const partName = tagName(part);
         if (partName === 'text') {
           const textId = safeGetAttr(part, 'id');
@@ -630,7 +637,8 @@ const handle_work = async (work) => {
             extractTitle(head, 'title') ??
             firstline ??
             extractTitle(head, 'linktitle');
-          const indextitle = extractTitle(head, 'indextitle') || title;
+          const explicitIndexTitle = extractTitle(head, 'indextitle');
+          const indextitle = explicitIndexTitle ?? title;
           const toctitle = extractTitle(head, 'toctitle') || title;
           if (indextitle == null) {
             throw `${textId} mangler førstelinje, indextitle, title og linktitle i ${poetId}/${workId}.xml`;
@@ -643,9 +651,11 @@ const handle_work = async (work) => {
           if (firstline != null && firstline.title.trim().length === 0) {
             throw `${textId} har blank førstelinje i ${poetId}/${workId}.xml`;
           }
-          if (stripTitleNotes(indextitle).title.indexOf('>') > -1) {
-            throw `${textId} har markup i titlen i ${poetId}/${workId}.xml`;
-          }
+          validateIndexTitleMarkup(
+            stripTitleNotes(indextitle).title,
+            textId,
+            `${poetId}/${workId}.xml`,
+          );
           if (toctitle == null) {
             throw `${textId} mangler toctitle, firstline, title og linktitle i ${poetId}/${workId}.xml`;
           }
@@ -681,6 +691,12 @@ const handle_work = async (work) => {
               resolve_prev_next,
               section_titles,
             );
+          }
+          const embeddedBody = getChildByTagName(part, 'body');
+          if (embeddedBody != null) {
+            await handle_section(embeddedBody, resolve_prev_next, [
+              ...section_titles, { title: titleText(title), id: textId },
+            ]);
           }
         } else if (partName === 'section') {
           const head = getChildByTagName(part, 'head');
@@ -948,6 +964,7 @@ const works_first_pass = (collected) => {
   const dates = globalForceReload
     ? new Map()
     : new Map(loadCachedJSON('collected.dates') || []);
+  const previousDates = structuredClone(dates);
 
   let found_changes = false;
   const anthologyCodeModified = isFileModified(
@@ -956,6 +973,9 @@ const works_first_pass = (collected) => {
     'tools/build-static/edition-reference.js',
     'tools/build-static/source.js',
     'tools/build-static/work-metadata.js',
+    'tools/build-static/xml.js',
+    'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
+    'tools/libs/helpers.js',
   );
   const force_reload =
     texts.size === 0 ||
@@ -1059,7 +1079,8 @@ const works_first_pass = (collected) => {
         id: workId,
         poet_id: poetId,
         title,
-        subtitles,
+        title_block: extractTitleBlock(head, collected),
+      subtitles,
         toctitle,
         linktitle,
         breadcrumbtitle,
@@ -1089,6 +1110,10 @@ const works_first_pass = (collected) => {
         }
         if (tagName(part) === 'subwork') {
           return;
+        }
+        if (tagName(part) === 'text') {
+          const issues = embeddedTextIssues(part, workFilename);
+          if (issues.length > 0) throw new Error(issues.join('\n'));
         }
         const head = getChildByTagName(part, 'head');
         const firstline = extractTitle(head, 'firstline');
@@ -1125,6 +1150,9 @@ const works_first_pass = (collected) => {
         }
         const baseText = {
           id: textId,
+          ...(part.parentNode?.nodeName === 'body' && part.parentNode.parentNode?.nodeName === 'text'
+            ? { parentTextId: safeGetAttr(part.parentNode.parentNode, 'id') } : {}),
+          identifiers: getIdentifiers(head, identifierAllowlist.text),
           editionSource: resolveEditionSource({
             sourceNode: getChildByTagName(head, 'source'),
             workSources: editionWorkSources,
@@ -1227,6 +1255,8 @@ const works_first_pass = (collected) => {
     works.set(fullWorkId, data);
   });
 
+  sortCollectedDates(dates);
+  collected.changedDateTextIds = changedDateTextIds(previousDates, dates);
   if (found_changes || anthologyCodeModified) {
     writeCachedJSON('collected.texts', Array.from(texts));
     writeCachedJSON('collected.works', Array.from(works));
@@ -1266,8 +1296,16 @@ const works_second_pass = async (collected) => {
       const sourceFiles = new Set([
         'tools/build-static.js',
         'tools/build-static/anthologies.js',
+        'tools/build-static/artwork.js',
+        'tools/build-static/parsing.js',
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
+        'tools/build-static/textrefs.js',
+        'tools/build-static/text-blocks.js',
+        'tools/build-static/embedded-text.js',
+        'tools/build-static/embedded-context.js',
+        'tools/build-static/toc.js',
+        'components/poetname-helpers.js',
         'common/source-reference.js',
         `fdirs/${poetId}/info.xml`,
         filename,
@@ -1280,13 +1318,19 @@ const works_second_pass = async (collected) => {
         editionSourceFilesForText(text.sourceTextId ?? text.id, collected).forEach(sourceFile =>
           sourceFiles.add(sourceFile)
         );
+        referenceSourceFilesForText(text.sourceTextId ?? text.id, collected).forEach(sourceFile =>
+          sourceFiles.add(sourceFile)
+        );
       });
       const poetMetadataModified = sourceTexts.some(text =>
         collected.poetMetadataDirty?.has(text.poetId)
       );
       const sourceChanged = collected.changedSourceWorkKeys.has(`${poetId}/${workId}`);
+      const relatedDatesChanged = sourceTexts.some(text =>
+        collected.changedDateTextIds.has(text.sourceTextId ?? text.id)
+      );
       const sourceFilesModified = isFileModified(...sourceFiles);
-      if (sourceChanged === false && !poetMetadataModified && sourceFilesModified === false) {
+      if (sourceChanged === false && !poetMetadataModified && sourceFilesModified === false && relatedDatesChanged === false) {
         return;
       }
       let doc = loadXMLDoc(filename);
@@ -1383,6 +1427,14 @@ const build_news = (collected) => {
 const build_redirects_json = (collected) => {
   let redirects = {};
   buildTextAliasRedirects(redirects, collected.texts);
+  collected.keywords.forEach((keyword, keywordId) => {
+    if (keyword.canonicalId != null) {
+      supportedLanguages.forEach(lang => {
+        redirects[`/${lang}/keyword/${keywordId}`] =
+          `/${lang}/keyword/${keyword.canonicalId}`;
+      });
+    }
+  });
   collected.poets.forEach((poet, poetId) => {
     if (!poet.has_works && !poet.has_artwork) {
       supportedLanguages.forEach((lang) => {
@@ -1394,9 +1446,11 @@ const build_redirects_json = (collected) => {
 };
 
 const build_image_thumbnails = async () => {
+  const verify = process.argv.includes('--verify-image-thumbnails') ||
+    process.env.KALLIOPE_VERIFY_IMAGE_THUMBNAILS === 'true';
   return Promise.all([
-    buildThumbnails('public/images', isFileModified),
-    buildThumbnails('public/kunst', isFileModified),
+    buildThumbnails('public/images', isFileModified, { verify }),
+    buildThumbnails('public/kunst', isFileModified, { verify }),
   ]);
 };
 
@@ -1435,6 +1489,9 @@ const main = async () => {
     mark_ref_destinations_dirty,
     collected,
   );
+  // Make work listings available before the slower text-file generation.
+  // Their metadata is complete after the work and poet first passes.
+  await b('build_poet_works_json', build_poet_works_json, collected);
   await b(
     'build_poets_by_country_json',
     build_poets_by_country_json,
@@ -1453,7 +1510,6 @@ const main = async () => {
   collected.keywords = await b('build_keywords', build_keywords, collected);
   await b('build_poet_lines_json', build_poet_lines_json, collected);
   await b('works_second_pass', works_second_pass, collected);
-  await b('build_poet_works_json', build_poet_works_json, collected);
   await b('build_works_toc', build_works_toc, collected);
   collected.timeline = await b(
     'buildGlobalTimeline',
@@ -1469,6 +1525,10 @@ const main = async () => {
   await b('build_redirects_json', build_redirects_json, collected);
   await b('build_sitemap_xml', build_sitemap_xml, collected);
   await b('build_anniversaries_ical', build_anniversaries_ical, collected);
+  // Publish the discovery registry only after all text outputs are complete.
+  // Commit file hashes last: interruption before that leaves inputs dirty.
+  flushImageSizeCache();
+  writeCachedJSON('poet-files', collected.poetFilesCache);
   refreshFilesModifiedCache();
   if (skipImageThumbnails) {
     console.log('Skipping image thumbnail build.');
@@ -1487,7 +1547,6 @@ const main = async () => {
   }
   refreshFilesModifiedCache();
   flushImageSizeCache();
-  writeCachedJSON('poet-files', collected.poetFilesCache);
   if (showTimings) {
     print_benchmarking_results();
   }

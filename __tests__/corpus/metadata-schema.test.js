@@ -108,6 +108,33 @@ describe('info.xml RELAX NG schema', () => {
     expect(missingLiteraryPeriods).toEqual([]);
   });
 
+  it('requires birth or baptism and death dates for every non-collection entry, using ? when unknown', () => {
+    const missingDates = [];
+
+    infoXmlFiles().forEach(filename => {
+      const person = new DOMParser().parseFromString(
+        fs.readFileSync(filename, 'utf8'), 'text/xml'
+      ).documentElement;
+      const type = person.getAttribute('type');
+      if (type === 'collection') {
+        return;
+      }
+      const period = person.getElementsByTagName('period')[0];
+      const born = period?.getElementsByTagName('born')[0];
+      const baptized = period?.getElementsByTagName('baptized')[0];
+      const dead = period?.getElementsByTagName('dead')[0];
+
+      [['born/baptized', born ?? baptized], ['dead', dead]].forEach(([event, element]) => {
+        const date = element?.getElementsByTagName('date')[0]?.textContent.trim();
+        if (date == null || date.length === 0) {
+          missingDates.push(`${filename}: ${event}/date mangler; brug ? ved ukendt dato`);
+        }
+      });
+    });
+
+    expect(missingDates).toEqual([]);
+  });
+
   it('validates all tracked info.xml files', () => {
     const files = infoXmlFiles();
 

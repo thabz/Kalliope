@@ -4,7 +4,7 @@
   <title>Digte</title>
   <year>1912</year>
   <notes>
-    <note>Værket bærer mottoet ,,Spire, grønnes, gro af Muld, / ranke sig mod Solens Guld. / Vokse, visne, slænges hen - / dø og blive Muld igen.''</note>
+    <note editorial="true">Værket bærer mottoet ,,Spire, grønnes, gro af Muld, / ranke sig mod Solens Guld. / Vokse, visne, slænges hen - / dø og blive Muld igen.''</note>
   </notes>
   <pictures>
     <picture src="1912-p1.jpg">Forsiden til <i>Digte</i> (1912).</picture>
@@ -270,6 +270,9 @@ Hvor jeg kender jer og elsker jer og lider med jer alle.
   <title>Buddasmilet</title>
   <firstline>Jeg har længtes længe, længe</firstline>
   <source pages="14-15"/>
+  <places>
+    <place ref="ganges" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1013,6 +1016,9 @@ Vor Herre! - Giv os i Dag . . . . .
   <title>Den hellige Jul</title>
   <firstline>Der drog en besværet Kvinde frem</firstline>
   <source pages="38-40"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

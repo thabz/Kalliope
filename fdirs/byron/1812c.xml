@@ -3,10 +3,8 @@
 <workhead>
   <title>Childe Harold's Pilgrimage</title>
   <year>1812-18</year>
-  <notes>
-    <note>Teksten stammer fra <a href="http://www.gutenberg.org/ebooks/5131">Project Gutenberg</a>.</note>
-  </notes>
   <quality>korrektur1</quality>
+  <source href="http://www.gutenberg.org/ebooks/5131">Project Gutenberg, e-bog 5131</source>
 </workhead>
 <workbody>
 
@@ -15,7 +13,7 @@
   <title>To Ianthe</title>
   <firstline>Not in those climes where I have late been straying</firstline>
   <notes>
-    <note>* Lady Charlotte Harley, daughter of the Earl of Oxford.</note>
+    <note>Lady Charlotte Harley, daughter of the Earl of Oxford.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -78,6 +76,9 @@ Though more than Hope can claim, could Friendship less require?
 <head>
   <title>Canto the First</title>
   <firstline>Oh, thou, in Hellas deemed of heavenly birth</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1344,6 +1345,7 @@ Ere Greece and Grecian arts by barbarous hands were quelled.
 <head>
   <title>Canto the Second</title>
   <firstline>Come, blue-eyed maid of heaven!—but thou, alas</firstline>
+  <keywords>sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -4058,6 +4060,9 @@ As, with a sigh, I deem thou mightst have been to me!
 <head>
   <title>Canto the Fourth</title>
   <firstline>I stood in Venice, on the Bridge of Sighs</firstline>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

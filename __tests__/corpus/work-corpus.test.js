@@ -1,3 +1,4 @@
+import { collectTranslationNoteIssues } from '../../tools/translation-note-validation.js';
 import { discoverPoetFiles } from '../../tools/libs/poet-files.js';
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync } from 'fs';
@@ -59,9 +60,12 @@ const hyphenatedCoordinationWords = new Set([
 
 describe('tracked work corpus', () => {
   let filenames;
+  let translationNoteIssues;
   let bodyLinkIssues;
   let standaloneFootnoteIssues;
+  let proseFootnoteIssues;
   let emptyAndreFiles;
+  let emptyWorkheadNoteIssues;
   let formattingIssues;
   let proseWordDivisionIssues;
   let pageBreakIssues;
@@ -97,7 +101,9 @@ describe('tracked work corpus', () => {
     filenames = works.map((work) => work.filename);
     bodyLinkIssues = [];
     standaloneFootnoteIssues = [];
+    proseFootnoteIssues = [];
     emptyAndreFiles = [];
+    emptyWorkheadNoteIssues = [];
     formattingIssues = [];
     proseWordDivisionIssues = [];
     pageBreakIssues = [];
@@ -121,6 +127,32 @@ describe('tracked work corpus', () => {
     unindexedAnthologyTexts = [];
     wrappedSeparatorIssues = [];
 
+    const textAuthors = new Map();
+    const referenceDocuments = [];
+    const authorCache = new Map();
+    const authorForText = id => {
+      const poetId = textAuthors.get(id);
+      if (poetId == null) return null;
+      if (authorCache.has(poetId) === false) {
+        const info = parseWorkXml(readFileSync(`fdirs/${poetId}/info.xml`, 'utf8'));
+        const name = getElementByTagName(info.documentElement, 'name');
+        const part = tag => getElementByTagName(name, tag)?.textContent.trim() ?? '';
+        const firstname = part('firstname');
+        const lastname = part('lastname');
+        const names = [
+          [firstname, lastname].filter(value => value.length > 0).join(' '),
+          lastname, lastname.split(/\s+/u).at(-1) ?? '',
+          ...['fullname', 'realname', 'pseudonym', 'christened'].map(part),
+        ];
+        // Single given names also serve as established author names (e.g. Dante).
+        if (/^\p{L}+$/u.test(firstname)) names.push(firstname);
+        authorCache.set(poetId, {
+          id: poetId, names,
+          anonymous: info.documentElement.getAttribute('type') === 'collection',
+        });
+      }
+      return authorCache.get(poetId);
+    };
     works.forEach(({ content: xml, filename }) => {
       if (xml.includes('<nonum><center>---</center></nonum>')) {
         xml.split('\n').forEach((line, index) => {
@@ -170,6 +202,36 @@ describe('tracked work corpus', () => {
       }
 
       const workDocument = parseWorkXml(xml);
+      for (const workhead of getElementsByTagNames(workDocument, ['workhead'])) {
+        for (const note of getElementsByTagNames(workhead, ['note'])) {
+          // References and images can render content without literal XML text.
+          const renderedElements = getElementsByTagNames(note, ['xref', 'picture', 'img', 'asterism']);
+          if (note.textContent.trim().length === 0 && renderedElements.length === 0) {
+            emptyWorkheadNoteIssues.push(`${filename}: Tom <note> i <workhead>.`);
+          }
+        }
+      }
+      for (const text of getElementsByTagNames(workDocument, ['text', 'prose'])) {
+        if (text.hasAttribute('id')) textAuthors.set(text.getAttribute('id'), resolveAuthorId(text, filename.split('/')[1]));
+      }
+      const referenceDocument = parseWorkXml('<kalliopework/>');
+      for (const note of getElementsByTagNames(workDocument, ['note', 'footnote'])) {
+        if (getElementsByTagNames(note, ['a', 'xref']).some(link => link.hasAttribute('poem')) === false) continue;
+        let owner = note.parentNode;
+        while (owner != null && owner.hasAttribute?.('id') !== true) owner = owner.parentNode;
+        const entry = referenceDocument.createElement('text');
+        entry.setAttribute('id', owner?.getAttribute('id') ?? 'work');
+        entry.appendChild(referenceDocument.importNode(note, true));
+        referenceDocument.documentElement.appendChild(entry);
+      }
+      if (referenceDocument.documentElement.childNodes.length > 0) {
+        referenceDocuments.push({ filename, document: referenceDocument });
+      }
+      for (const footnote of getElementsByTagNames(workDocument, ['footnote'])) {
+        if (getElementsByTagNames(footnote, ['prose']).length > 0) {
+          proseFootnoteIssues.push(`${filename}: <prose> inside <footnote>`);
+        }
+      }
       if (checksForWorkXml(xml).facsimiles === true) {
         facsimilePageSourceIssues.push(
           ...collectFacsimilePageSourceIssues(filename, workDocument),
@@ -189,10 +251,17 @@ describe('tracked work corpus', () => {
           'prose',
           'epigraph',
         ])) {
-          if (block.parentNode?.tagName !== 'body') {
+          const notePoetry = block.tagName === 'poetry' &&
+            ['note', 'footnote'].includes(block.parentNode?.tagName);
+          if (block.parentNode?.tagName !== 'body' && notePoetry === false) {
             nestedBodyBlockIssues.push(
               `${filename}: <${block.tagName}> inside <${block.parentNode?.tagName}>`
             );
+          }
+        }
+        for (const note of getElementsByTagNames(body, ['note', 'footnote'])) {
+          if (getElementsByTagNames(note, ['column', 'two-columns']).length > 0) {
+            nestedBodyBlockIssues.push(`${filename}: column layout inside <${note.tagName}>`);
           }
         }
       }
@@ -244,7 +313,7 @@ describe('tracked work corpus', () => {
       }
 
       const checks = checksForWorkXml(xml);
-      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")/.test(xml)) {
+      if (/<(?:errata\b|footnote\b[^>]*\btype="errata")|<!--\s*Rettelsesark\b/iu.test(xml)) {
         errataIssues.push(...validateErrata(parseWorkXml(xml).documentElement, filename));
       }
       redundantTextTitleMetadataIssues.push(
@@ -292,10 +361,21 @@ describe('tracked work corpus', () => {
         );
       }
     });
+    translationNoteIssues = referenceDocuments.flatMap(({ filename, document }) =>
+      collectTranslationNoteIssues(filename, document, authorForText),
+    );
+  });
+
+  it('explains poem references and names translation source authors', () => {
+    expect(translationNoteIssues).toEqual([]);
   });
 
   it('contains tracked work files', () => {
     expect(filenames.length).toBeGreaterThan(0);
+  });
+
+  it('does not contain empty notes in workhead', () => {
+    expect(emptyWorkheadNoteIssues).toEqual([]);
   });
 
   it('does not contain empty andre.xml files', () => {
@@ -314,7 +394,7 @@ describe('tracked work corpus', () => {
     expect(poetryBoundaryBlankLineIssues).toEqual([]);
   });
 
-  it('keeps poetry, prose, and epigraph as sibling body blocks', () => {
+  it('keeps body blocks separate and permits poetry, but not column layout, in notes', () => {
     expect(nestedBodyBlockIssues).toEqual([]);
   });
 
@@ -340,6 +420,10 @@ describe('tracked work corpus', () => {
 
   it('attaches poetry footnotes to text or headings', () => {
     expect(standaloneFootnoteIssues).toEqual([]);
+  });
+
+  it('keeps prose wrappers out of all footnotes, including title and subtitle footnotes', () => {
+    expect(proseFootnoteIssues).toEqual([]);
   });
 
   it('keeps links out of work body text', () => {
@@ -370,7 +454,7 @@ describe('tracked work corpus', () => {
     expect(andreWorkheadSourceIssues).toEqual([]);
   });
 
-  it('uses source href attributes for external source links', () => {
+  it('uses source icons for external references and keeps literary text links internal', () => {
     expect(externalSourceLinkIssues).toEqual([]);
   });
 
@@ -378,7 +462,7 @@ describe('tracked work corpus', () => {
     expect(textFollowsNoteIssues).toEqual([]);
   });
 
-  it('does not assign first lines to prose-only texts', () => {
+  it('does not assign first lines to titled prose-only texts', () => {
     expect(textStructureIssues).toEqual([]);
   });
 
@@ -394,7 +478,7 @@ describe('tracked work corpus', () => {
     expect(pageBreakIssues).toEqual([]);
   });
 
-  it('requires applied errata and well-formed errata footnotes', () => {
+  it('requires applied errata and well-formed correction comments', () => {
     expect(errataIssues).toEqual([]);
   });
 

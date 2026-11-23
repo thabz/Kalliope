@@ -8,7 +8,7 @@
     <openlibrary-work>OL52659W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Gaflet fra <a href="http://promo.net/pg/">Project Gutenberg</a>. Originalt redigeret af Michael Pullen.</note>
+    <note editorial="true">Gaflet fra Project Gutenberg <a href="http://promo.net/pg/">↬</a>. Originalt redigeret af Michael Pullen.</note>
   </notes>
   <quality>korrektur1</quality>
 </workhead>
@@ -3079,6 +3079,9 @@ Was bedeutet dieser Traum?
 <head>
   <title>Hatem</title>
   <firstline>Dies zu deuten, bin erbötig!</firstline>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -3735,6 +3738,8 @@ Für Liebende ist Bagdad nicht weit.
 <text id="goethe20000829118">
 <head>
   <title>Mag sie sich immer ergänzen,</title>
+  <toctitle>Mag sie sich immer ergänzen</toctitle>
+  <linktitle>Mag sie sich immer ergänzen</linktitle>
   <firstline>Mag sie sich immer ergänzen</firstline>
   <quality>korrektur1</quality>
 </head>

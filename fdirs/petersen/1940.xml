@@ -82,7 +82,7 @@ To ord af en dæmpet tale - resten i dis bevaret,
 mens dagen svandt som en vingefjer, der falder paa ørnens flugt.
 Det tøvende: - Maaske fordi -!  steg mod en haandfuld stjerner
 - skrev sig selv med stjerneskær ind i hvert enkelt bryst.
-Saa var det nat - af dem, der blidt brummende staar og kvæmer
+Saa var det nat - af dem, der blidt brummende staar og kværner
 fred i al tvivlens dyst.
 
 Med ekko af talens visdom var tusmørkets stilhed svanger:
@@ -148,7 +148,7 @@ sort brød og velsignet sult og træthed til nattens blund
 samt værn nok for nøgenhed - det lover jeg med min mund.
 Hold hus med hjertet, jeg gav jer med - om graa eller lyse dage.
 I fik det rent som et stjernedryp spildt paa en natblaa sky.
-Men den eneste ting forlanger jeg: rent vil jeg ha5 det tilbage,
+Men den eneste ting forlanger jeg: rent vil jeg ha’ det tilbage,
 den dag vi ses paany.
 </poetry>
 </body>
@@ -159,6 +159,9 @@ den dag vi ses paany.
   <title>Elegi</title>
   <firstline>De bad mig: lev dit liv som før</firstline>
   <source pages="12"/>
+  <places>
+    <place ref="flanders" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -861,9 +864,12 @@ Mizpas skønneste rose - næppe endnu foldet ud,
   <subtitle>Anden Samuels bog 21:20.</subtitle>
   <firstline>Hver krigsbulletin fra Gob og fra Gat</firstline>
   <notes>
-    <note>Cf. <xref bible="bibel2samuel21,20"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibel2samuel21,20"/>.</note>
   </notes>
   <source pages="40-41"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

@@ -7,7 +7,7 @@
     <openlibrary-work>OL7648095W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Dette er en korrekturlæst udgave af teksten hos <a href="http://www.adl.dk/">Arkiv for Dansk Litteratur</a>.</note>
+    <note editorial="true">Dette er en korrekturlæst udgave af teksten hos Arkiv for Dansk Litteratur <a href="http://www.adl.dk/">↬</a>.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1921-p1.jpg"><transcription>Sophus Michaëlis / Romersk Foraar / og andre Digte / Andet Oplag / Gyldendalske Boghandel · Nordisk / Forlag · København · Kristiania / Berlin · London · MDCCCCXXI</transcription></picture>
@@ -1521,6 +1521,10 @@ naar Eros sprænger frem med sit Firspand uden Tøjler.
   <title>O stumme Venner —</title>
   <firstline>O stumme Venner i min stille Stue</firstline>
   <source pages="75-76"/>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1680,7 +1684,7 @@ og gid min Fremtid bringe jer min Tak!
   <title>Ødipus paa Højen</title>
   <firstline>Solen synker i sit Baal</firstline>
   <notes>
-    <note>Rudolph Christopher Puggaard Tegner (1873-1950), billedhugger.</note>
+    <note editorial="true">Rudolph Christopher Puggaard Tegner (1873-1950), billedhugger.</note>
   </notes>
   <!-- Udkommenteret da billedet er gået i stykker
   <pictures>
@@ -1845,7 +1849,7 @@ og høre Sfærernes Musik tilsidst.
   <title>Rodin</title>
   <firstline>Af Stenbruddet strækker en Skaberhaand sin Klo</firstline>
   <notes>
-    <note>François-Auguste-René Rodin (1840-1917), fransk billedhugger.</note>
+    <note editorial="true">François-Auguste-René Rodin (1840-1917), fransk billedhugger.</note>
   </notes>
   <pictures>
     <picture src="michaelis2003090702-p1.jpg">Auguste Rodin: <i>Balzac</i>, 1898.</picture>
@@ -3250,6 +3254,14 @@ ved Digtning, Minder og Sprog.
   <title>Romersk Foraar</title>
   <firstline>De hvide Azáleer vandre i Ring</firstline>
   <source pages="148-158"/>
+  <places>
+    <place ref="capitoline-hill" relation="setting"/>
+    <place ref="roman-forum" relation="mentioned"/>
+    <place ref="palatine-hill" relation="setting"/>
+    <place ref="via-sacra" relation="setting"/>
+    <place ref="arch-of-titus" relation="setting"/>
+    <place ref="villa-borghese-gardens" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

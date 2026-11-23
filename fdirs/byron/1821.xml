@@ -179,7 +179,7 @@ Is it not so, my Tory, ultra-Julian?
 <head>
   <title>Canto the First</title>
   <firstline>I want a hero: an uncommon want</firstline>
-  <keywords>calderon</keywords>
+  <keywords>calderon,sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2187,6 +2187,10 @@ For God's sake, reader! take them not for mine.
 <head>
   <title>Canto the Second</title>
   <firstline>Oh ye! who teach the ingenuous youth of nations</firstline>
+  <keywords>sappho</keywords>
+  <places>
+    <place ref="turkey" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -4142,6 +4146,7 @@ For them and theirs with all who deign to read.
 <head>
   <title>Canto the Third</title>
   <firstline>Hail, Muse! et cetera.- We left Juan sleeping</firstline>
+  <keywords>sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -5266,6 +5271,7 @@ From Aristotle passim.- See poietikes.
 <head>
   <title>Canto the Fourth</title>
   <firstline>Nothing so difficult as a beginning</firstline>
+  <keywords>sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -6330,6 +6336,10 @@ Till what is call'd in Ossian the fifth Juan.
 <head>
   <title>Canto the Fifth</title>
   <firstline>When amatory poets sing their loves</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="turkey" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -7771,6 +7781,9 @@ You 'll pardon to my muse a few short naps.
 <head>
   <title>Canto the Sixth</title>
   <firstline>There is a tide in the affairs of men</firstline>
+  <places>
+    <place ref="tigris" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -9654,6 +9667,10 @@ The death-cry drowning in the battle's roar.
 <head>
   <title>Canto the Eigth</title>
   <firstline>Oh blood and thunder! and oh blood and wounds!</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -10934,6 +10951,9 @@ And made a vow to shield her, which he kept.
 <head>
   <title>Canto the Ninth</title>
   <firstline>Oh, Wellington! (or 'Villainton'- for Fame</firstline>
+  <places>
+    <place ref="russia" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -11710,6 +11730,11 @@ To take a quiet ride in some green Lane.
 <head>
   <title>Canto the Tenth</title>
   <firstline>When Newton saw an apple fall, he found</firstline>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+    <place ref="poland" relation="setting"/>
+    <place ref="russia" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

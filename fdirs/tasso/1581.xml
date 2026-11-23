@@ -12,6 +12,9 @@
 <head>
   <title>Canto primo</title>
   <firstline>Canto l'arme pietose e 'l capitano</firstline>
+  <places>
+    <place ref="mount-lebanon" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6272,6 +6275,9 @@ d'orribile armonia che 'l mondo assorda.
 <head>
   <title>Canto ottavo</title>
   <firstline>Già cheti erano i tuoni e le tempeste</firstline>
+  <places>
+    <place ref="thrace" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11135,6 +11141,10 @@ vincer la rabbia de le stelle e 'l fato.
 <head>
   <title>Canto quattordicesimo</title>
   <firstline>Usciva omai dal molle e fresco grembo</firstline>
+  <places>
+    <place ref="mount-carmel" relation="setting"/>
+    <place ref="mount-lebanon" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11857,6 +11867,9 @@ si ritrasse il buon vecchio a i suoi riposi.
 <head>
   <title>Canto quindicesimo</title>
   <firstline>Già richiamava il bel nascente raggio</firstline>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

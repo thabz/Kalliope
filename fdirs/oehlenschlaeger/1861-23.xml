@@ -31,6 +31,9 @@
   <firstline>Hæver nu Stemmen fro til Sang</firstline>
   <source pages="1-3"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -104,6 +107,9 @@ De ved dig vorde Fremtiden kiære.
   <firstline>Sculptur og Tonekunst og Poesie</firstline>
   <source pages="3-4"/>
   <keywords>thorvaldsen,weyse</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -219,7 +225,7 @@ Endnu kan hamle op med dine.
 
 Thi skiøndt du giennem<w>hegler</w> mig,
 Og troer <w>ham</w> ene værdig dig,
-Som rev mig ned i sin ,,Danfana''<note><a poet="baggesen">Jens Baggesen</a> indgav sine indlæg i digterfejden i sit månedsskrift »Danafana«.</note> -
+Som rev mig ned i sin ,,Danfana''<note editorial="true"><a poet="baggesen">Jens Baggesen</a> indgav sine indlæg i digterfejden i sit månedsskrift »Danafana«.</note> -
 Mon ,,Sokrates'' og ,,Tordenskiold''
 Og mangen Helt fra Hedenold
 Fordunkles af - ,,Fata Morgana''?
@@ -239,6 +245,9 @@ Fordunkles af - ,,Fata Morgana''?
     <event>1841-06-26</event>
   </dates>
   <source pages="6-10"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -755,6 +764,7 @@ Her signe vi, vor høie Giest!
     <event>1841-11-08</event>
   </dates>
   <source pages="20-22"/>
+  <keywords>mynster</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -822,14 +832,18 @@ Med trofaste Venner din Glæde!
   <subtitle>Paa hans Fødselsdag den 17de November.</subtitle>
   <firstline>Jeg tidligt hørte Brøndsted nævne</firstline>
   <notes>
-    <note>Oehlenschläger rejste gennem Europa med filologen Georg Köes og arkæologen P. O. Brøndsted i årene 1810-12.</note>
+    <note editorial="true">Oehlenschläger rejste gennem Europa med filologen Georg Köes og arkæologen P. O. Brøndsted i årene 1810-12.</note>
   </notes>
   <pictures>
     <picture artwork="jensenca/broendsted-1827"/>
     <picture artwork="thorvaldsen/1803-jason"/>
   </pictures>
   <source pages="22-23"/>
-  <keywords>goethe,koes,thorvaldsen</keywords>
+  <keywords>goethe,koes,thorvaldsen,broendsted</keywords>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -942,7 +956,7 @@ Regner jeg dit Hierte.
   <subtitle>Febuar 1842.</subtitle>
   <firstline>Nys, Sorgens Harpe! hængte jeg dig hen -</firstline>
   <notes>
-    <note>Peter Frederik (Friderich) Wulff (1774-1842), søofficer, digter og oversætter, hvor især oversættelserne af Shakespeare vandt anerkendelse.</note>
+    <note editorial="true">Peter Frederik (Friderich) Wulff (1774-1842), søofficer, digter og oversætter, hvor især oversættelserne af Shakespeare vandt anerkendelse.</note>
   </notes>
   <source pages="25-27"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1272,12 +1286,13 @@ Ved store Thorvalds Form i Leer.
   </dates>
   <!-- Ikke en variant af oehlenschlaeger2019021885: Forskellige tekster med fælles indledning. -->
   <source pages="33-35"/>
+  <keywords>broendsted</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
 <nonum><center><w>Før Talen</w></center></nonum>
-Hvo veed hvor nær mig er min Ende?<note>Cf. Frederik Rostgaards <xref poem="rostgaard2019022601"/>.</note>
+Hvo veed hvor nær mig er min Ende?<note editorial="true">Cf. Frederik Rostgaards <xref poem="rostgaard2019022601"/>.</note>
 Hver christen Siæl vel spørge maa;
 Thi Støvets Tant kan <w>den</w> ei blænde,
 Hvis Blik i Evigheden saae.
@@ -1611,7 +1626,8 @@ Og dem, som tidligst hendes Hierte vandt.
   </subtitle>
   <firstline>Da sidst vi sad ved dette Bord</firstline>
   <dates>
-    <event>1842-09-22</event>
+    <performed>1842-09-22</performed>
+    <event>1842-09-18</event>
   </dates>
   <source pages="42-43"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1663,7 +1679,8 @@ Glem ei det gamle Gilde!
   <subtitle>Af en Tale, holden i Anledning af Kongens Fødselsdag ved Universitetsfesten den 28de September 1842.</subtitle>
   <firstline>Almægtige Gud! skienk Danerkongen Lykke</firstline>
   <dates>
-    <event>1842-09-28</event>
+    <performed>1842-09-28</performed>
+    <event>1842-09-18</event>
   </dates>
   <source pages="44-45"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2240,7 +2257,8 @@ Men I forsmaaer ei denne Tak.
   </subtitle>
   <firstline>I Oldtid, selv blandt Kæmper vilde</firstline>
   <dates>
-    <event>1843-09-22</event>
+    <performed>1843-09-22</performed>
+    <event>1843-09-18</event>
   </dates>
   <source pages="58-59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2386,7 +2404,7 @@ Thi Rummet skiller ikke Søn fra Fader.
   <subtitle>(Efter Claudius.)</subtitle>
   <firstline>Først under Hiertet bærer</firstline>
   <notes>
-    <note>Gendigtning af Claudius' <xref type="translation" poem="claudius2001102220"/>.</note>
+    <note editorial="true">Gendigtning af Claudius' <xref type="translation" poem="claudius2001102220"/>.</note>
   </notes>
   <source pages="62"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2420,6 +2438,8 @@ Og kommer ei tilbage.
     <line>med ,,Tolf svenska Sänger'', komponerede af A. P. Berggreen.</line>
     <line>(I Componistens Navn.)</line>
   </subtitle>
+  <toctitle>Til Prinds Oscar</toctitle>
+  <linktitle>Til Prinds Oscar</linktitle>
   <firstline>Musik, du skiønne Kunst! Den store Klynge</firstline>
   <source pages="63-64"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2814,7 +2834,7 @@ Vær da skiønnest du selv Kunstnerens Minde!
     <event>1844-04-22</event>
   </dates>
   <notes>
-    <note>Frederik Christian Olsen (1802-1874), skolemand og litteraturhistoriker, som i 1844 udnævntes til rektor for Viborg Katedralskole.</note>
+    <note editorial="true">Frederik Christian Olsen (1802-1874), skolemand og litteraturhistoriker, som i 1844 udnævntes til rektor for Viborg Katedralskole.</note>
   </notes>
   <source pages="73-75"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3601,6 +3621,9 @@ Opløser Livets Larm i Harmonie.
   <title>Yduns Opvaagnelse</title>
   <firstline>Jeg vaagned under mit Æbletræ</firstline>
   <source pages="94-97"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3837,7 +3860,8 @@ For Bøgeskoven vil hans Hierte slaae.
   </subtitle>
   <firstline>Nys tømte vi det fulde Maal</firstline>
   <dates>
-    <event>1845-09-25</event>
+    <performed>1845-09-25</performed>
+    <event>1845-09-18</event>
   </dates>
   <source pages="101-102"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3888,7 +3912,7 @@ Lang Tid forenet være!
   <title>Jenny Lind</title>
   <firstline>Hvor er min Melpomene flygtet hen?</firstline>
   <notes>
-    <note>Jenny Lind (1820-887), svensk operasangerinde, kendt som ,,den svenske nattergal'' og i øvrigt <a poet="andersen">H.C. Andersens</a> store ugengældte kærlighed.</note>
+    <note editorial="true">Jenny Lind (1820-887), svensk operasangerinde, kendt som ,,den svenske nattergal'' og i øvrigt <a poet="andersen">H.C. Andersens</a> store ugengældte kærlighed.</note>
   </notes>
   <source pages="102-105"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4018,7 +4042,7 @@ Ei Melpomene synger Svanesang.
     <event>1845-11-06</event>
   </dates>
   <notes>
-    <note>Johannes Reinhardt (1776-1845), norskfødt zoolog.</note>
+    <note editorial="true">Johannes Reinhardt (1776-1845), norskfødt zoolog.</note>
   </notes>
   <source pages="105-106"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4143,7 +4167,7 @@ Hans Skaal med Fryd de gamle Venner drikke.
   <subtitle>(Efter Beranger.)</subtitle>
   <firstline>Kom, min Hund! vi vil meer ei klage</firstline>
   <notes>
-    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019022001"/>.</note>
+    <note editorial="true">Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019022001"/>.</note>
   </notes>
   <source pages="108-110"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4224,7 +4248,7 @@ Knap i Morgen det tørre Brød.
   <subtitle>(Efter Beranger.)</subtitle>
   <firstline>Der var en Konning i Thulevæng</firstline>
   <notes>
-    <note>Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019022002"/>.</note>
+    <note editorial="true">Gendigtning af Pierre-Jean de Béranger: <xref type="translation" poem="beranger2019022002"/>.</note>
   </notes>
   <source pages="111-112"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4633,7 +4657,8 @@ For Falsen og hans Rosenkrantz.
   </subtitle>
   <firstline>Da Axel havde Byen grundet</firstline>
   <dates>
-    <event>1846-09-24</event>
+    <performed>1846-09-24</performed>
+    <event>1846-09-18</event>
   </dates>
   <source pages="121-122"/>
   <keywords>christian8</keywords>
@@ -4813,6 +4838,9 @@ Glem, Adolph! ei, han var din Ven og Frænde.
     <line>Den 28de Juni 1847.</line>
   </subtitle>
   <firstline>Hvergang Ydun kommer</firstline>
+  <dates>
+    <event>1847-06-28</event>
+  </dates>
   <source pages="125-126"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4873,6 +4901,9 @@ Du forsmaaer ei vor Forgietmigei.
   </dates>
   <source pages="127-129"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5147,6 +5178,10 @@ I ældste Nordens Helligdom.
   </dates>
   <source pages="134-135"/>
   <keywords>thorvaldsen</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5418,7 +5453,7 @@ I et eensomt Kammer viste man mig Struensees Portrait,
 Smukt og blond - som Een, der tog sig denne Verden saare let.
 
 Ogsaa var jeg længer ude, skiøndt det køligt var i Veiret;
-Bregentved sin Jarl lykønsked, Moltkes Fødselsdag blev feiret.<note>Cf. <xref poem="oehlenschlaeger2019022178"/>.</note>
+Bregentved sin Jarl lykønsked, Moltkes Fødselsdag blev feiret.<note editorial="true">Cf. <xref poem="oehlenschlaeger2019022178"/>.</note>
 Mig Grevinden havde budet, Skarer kom fra mangt et Sogn,
 Og fra Kiøge did jeg aged ud i Grevens egen Vogn.
 
@@ -5445,10 +5480,19 @@ At jeg standser midt i Præknen, som den fulde tydske Præst.<!-- TODO: Henvisni
   </subtitle>
   <firstline>Hiemkommen fra en Reise, skiøn og glædelig</firstline>
   <dates>
-    <event>1847-09-23</event>
+    <performed>1847-09-23</performed>
+    <event>1847-09-18</event>
   </dates>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/oehlenschlaeger2019022180 -->
+    <!-- Kilde: https://books.openbookpublishers.com/10.11647/obp.0308.02.pdf -->
+    <note editorial="true">Citatet fra Edda svarer til slutningen af strofe 118 i <xref poem="eddadigte2026112002"/>.</note>
+  </notes>
   <source pages="141-155"/>
   <keywords>oersted,vedel</keywords>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5918,7 +5962,8 @@ Fordi den fremmer Aandens Tarv: det Høieste.
   </subtitle>
   <firstline>I gamle danske Skyttelag</firstline>
   <dates>
-    <event>1847-09-23</event>
+    <performed>1847-09-23</performed>
+    <event>1847-09-18</event>
   </dates>
   <source pages="156-157"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6026,11 +6071,17 @@ Min Sang til din Dryade!
 <head>
   <title>Skandinavernes Juleaften i Rom, 1847</title>
   <firstline>I Kunstens sydligskiønne Land</firstline>
+  <dates>
+    <event>1847-12-24</event>
+  </dates>
   <begivenhed>
     <event>1847-12-24</event>
   </begivenhed>
   <source pages="158-160"/>
   <keywords>rom,thorvaldsen</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6260,6 +6311,10 @@ Med Taarer dig dit Folk forlader;
   </dates>
   <source pages="165-171"/>
   <keywords>christian8</keywords>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6345,7 +6400,7 @@ Som første Christian, didhen monne drage,
     Men for i Tiden snildt at gaae tilbage;
 
 At skue Kunst i herligt Eftermæle;
-    At nyde Livet, hvor Citronen groer<note>Cf. Goethes <xref poem="goethe2001111901"/>.</note>;
+    At nyde Livet, hvor Citronen groer<note editorial="true">Cf. Goethes <xref poem="goethe2001111901"/>.</note>;
     For ved Neapels skiønne Strand at dvæle;
 
 At lytte fro til Sang og Velklangsord;
@@ -6694,6 +6749,9 @@ Da straffer han ei efter Evne.
   <subtitle>April 1848.</subtitle>
   <firstline>Vil, Bragi! end du ildne mig til Sang?</firstline>
   <source pages="176-178"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7567,7 +7625,7 @@ Vi hented hid, og de blev Musers Gave;
 Og ret godt trivedes i Kuld og Blæsten
 Trimetret, Hexametret, Anapæsten.
 
-Og hvor Citronen groer, Orangen gløder,<note>Henviser til Goethes <xref poem="goethe2001111901,1-2"/>.</note>
+Og hvor Citronen groer, Orangen gløder,<note editorial="true">Henviser til Goethes <xref poem="goethe2001111901,1-2"/>.</note>
 Terzinens Høiklang blot ei Øret møder.
 Ottaverimet ogsaa vort er vorden.
 For koldt for ingen Digterblomst er Norden.
@@ -7847,7 +7905,7 @@ Hver slet for sig, naar Herredømmet gives.
 Cholerisk er den Ild og Heftigheden,
 Som danner Helt og Skiald i Krig og Freden.
 
-Sangvinsk<note>Sangvinsk] Sangvisk</note> dig Blodet let i Aaren flyder,
+Sangvinsk<note editorial="true">Sangvinsk] Sangvisk</note> dig Blodet let i Aaren flyder,
 Med Munterhed du Livets Gode nyder;
 Og melancholsk du føler Støvets Lænker,
 I stierneklare Nat paa Himlen tænker.
@@ -8390,7 +8448,7 @@ Sprang ud, og blev den kongelige Lilie,
 Der over Schillers Kiste Pladen kaster
 Hver Sommer med fornyet Alabaster.
 
-Rongsteds Lyksalighed<note>Cf. <xref poem="ewaldandrea4"/>.</note>, som Ewald digted
+Rongsteds Lyksalighed<note editorial="true">Cf. <xref poem="ewaldandrea4"/>.</note>, som Ewald digted
 I sin Elendighed! du har ei svigtet;
 Geniet dækte Sorgens sorte Mose
 Med Skiønheds uforgængelige Rose.
@@ -8569,6 +8627,9 @@ Hvori du taler, høie Melpomene!
   <title>Græsk og nordisk Mythologie</title>
   <firstline>Du gode Gud, hvor hurtigt svinder Tiden!</firstline>
   <source pages="223-225"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8703,7 +8764,7 @@ Livsgaaderne bag Dødens, Gravens Huler.
 Naar Hamlets Fader kommer - myrdet, jordet,
 Naar Bancos Liig vi see ved Spisebordet;
 Da er det - naar den ei af Lamhed hærdes -
-Vor egen Aand, som før sig selv forfærdes.
+Vor egen Aand, som for sig selv forfærdes.
 </poetry>
 </body>
 </text>
@@ -8909,7 +8970,7 @@ En Petitmaitre kun ved dette tabte,
 Som Unaturens pæne Kiæledægge,
 Med falske Lokker og forlorne Lægge.
 
-Mon Goethes <w>Götz</w><note><a poet="goethe">Goethe</a> udgav i 1773 sit drama <i>Götz von Berlichingen</i> baseret på den virkelige <a poet="goetz">Gottfried von Berlichingens (1480-1562)</a> selvbiografi.</note> i Prosa savner Kronen,
+Mon Goethes <w>Götz</w><note editorial="true"><a poet="goethe">Goethe</a> udgav i 1773 sit drama <i>Götz von Berlichingen</i> baseret på den virkelige <a poet="goetz">Gottfried von Berlichingens (1480-1562)</a> selvbiografi.</note> i Prosa savner Kronen,
 Fordi den savner Versifikationen?
 Er Shakespeare tragisk ei i mangen Scene,
 Hvor uden Vers hans Genius staaer ene?
@@ -9186,7 +9247,7 @@ Og, fremfor Alting, i den samme Stue.
 Og fem Personer, og, hvad mindst man venter,
 Det halve Par af dem blot Confidenter;
 Mens Alt Alexandrinen sammenrymper,
-Fast som i <w>Kiærlighed foruden Strømper</w>.<note>Cf. Wessels <a work="wessel/1772"><i>Kierlighed uden Strømer</i> (1772)</a>.</note>
+Fast som i <w>Kiærlighed foruden Strømper</w>.<note editorial="true">Cf. Wessels <a work="wessel/1772"><i>Kierlighed uden Strømer</i> (1772)</a>.</note>
 
 Den Smag var fransk. Med Nattergalens Triller
 Sang i den tydske Skov nu Goethe, Schiller.
@@ -9498,6 +9559,9 @@ Fromt at tilbede Diævlen som Vorherre?
   <firstline>Skiøndt Victor Hugo tydske Sprog forsmaaede</firstline>
   <source pages="246-247"/>
   <keywords>hugo,webner,muellner,grillparzer,corneille,racine</keywords>
+  <places>
+    <place ref="carthage" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9613,7 +9677,7 @@ Skiøndt altid ei som Scenernes Beregner.
 To store Tydskere maae vi ei glemme,
 Som hæved deres skiønne Skialdestemme;
 Den første, mindre tragisk og pathetisk,
-I Götz<note><a poet="goethe">Goethe</a> udgav i 1773 sit drama <i>Götz von Berlichingen</i> baseret på den virkelige <a poet="goetz">Gottfried von Berlichingens (1480-1562)</a> selvbiografi.</note> og Faust guddommelig poetisk.
+I Götz<note editorial="true"><a poet="goethe">Goethe</a> udgav i 1773 sit drama <i>Götz von Berlichingen</i> baseret på den virkelige <a poet="goetz">Gottfried von Berlichingens (1480-1562)</a> selvbiografi.</note> og Faust guddommelig poetisk.
 
 Mens Goethes Aand henreves af Naturen,
 Høit blæste Schiller som en Helt i Luren.
@@ -9938,6 +10002,9 @@ Min Bernhard blev min Broder.
     <event>1849-09-09</event>
   </dates>
   <source pages="257-258"/>
+  <places>
+    <place ref="malaren" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9997,7 +10064,8 @@ Til Hiertet atter jer trykke.
   </subtitle>
   <firstline>Med Høitid, Brødre! samle</firstline>
   <dates>
-    <event>1849-10-11</event>
+    <performed>1849-10-11</performed>
+    <event>1849-10-06</event>
   </dates>
   <source pages="259-260"/>
   <keywords>frederik7</keywords>
@@ -10354,6 +10422,9 @@ Hun lever! hun lever! hun lever!
     <written>1808-06-06</written>
   </dates>
   <source pages="272-273"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

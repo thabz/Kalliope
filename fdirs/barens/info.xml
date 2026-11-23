@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barens" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Johan Hendrich</firstname>
+    <lastname>Bärens</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-08-26</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1813-07-05</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q12319905</wikidata>
+    <wikipedia-da>Johan Hendrich Bärens</wikipedia-da>
+    <viaf>81435965</viaf>
+    <gnd>137212992</gnd>
+  </identifiers>
+  <!-- Livsdata og identitet kontrolleret mod https://runeberg.org/dbl/3/0303.html. -->
+  <!-- Eksterne id’er kontrolleret mod Wikidata Q12319905, herunder navne, fødselsdata og dødsår, 2026-11-13. -->
+</person>

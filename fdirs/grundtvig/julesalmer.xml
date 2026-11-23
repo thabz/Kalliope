@@ -12,8 +12,11 @@
   <subtitle><i>(Kingos, med samme Begyndelse, forandret)</i></subtitle>
   <firstline>Nu kom her Bud fra Engle-Kor</firstline>
   <notes>
-    <note>Cf. <xref bible="bibellukas01,26-38"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibellukas01,26-38"/>.</note>
   </notes>
+  <places>
+    <place ref="nazareth" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

@@ -98,7 +98,9 @@ export const newTextIdErrors = (baseTexts, headTexts) => {
   });
 
   headTexts
-    .filter(text => baseIds.has(text.id) !== true)
+    .filter(text => baseIds.has(text.id) !== true ||
+      text.id.startsWith('antologier') === true ||
+      text.poetId.startsWith('antologier') === true)
     .forEach(text => {
       const error = textIdError(text);
       if (error != null) {

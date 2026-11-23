@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="schjaerff" country="dk" lang="da" type="person">
+  <name>
+    <firstname>Poul</firstname>
+    <lastname>Schjærff</lastname>
+    <fullname>Poul Christian Schjærff</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1890-06-20</date>
+      <place>Sorø</place>
+    </born>
+    <dead>
+      <date>1974-02-06</date>
+    </dead>
+  </period>
+  <!-- Navn og livsdata: https://danskforfatterleksikon.dk/1850/SPoulSchjaerff.htm
+       Udgiver af Hauchs Udvalgte Skrifter I–III (1926–29), herunder indledning
+       og bemærkninger til bind III. Registreret som person, ikke som digter.
+       Portrætsøgning 2026-11-07 i Arkiv.dk og almindelig websøgning gav intet
+       sikkert identificeret og anvendeligt portræt. -->
+  <biography-status status="not-found" checked-on="2026-11-07">
+    <checked-source id="dbl1">Navnefortegnelsen til bind XV, Scalabrini–Skanke, er undersøgt på Runeberg; intet opslag om Poul Schjærff.</checked-source>
+    <checked-source id="dbl2">Den digitaliserede tekst i bind XXI, Schack–Siegumfeldt, og supplementet i bind XXVII er søgt efter Schjærff, Schjaerff, Schjerff og Schjærf; intet identificeret personopslag.</checked-source>
+    <checked-source id="salmonsen2">Navnefortegnelsen til bind XXI, Schinopsis–Spektrum, er undersøgt; intet opslag om Poul Schjærff.</checked-source>
+    <checked-source id="salmonsen-supplement">Navnefortegnelsen til supplementet, bind XXVI, er undersøgt uden et identificeret opslag.</checked-source>
+    <checked-source id="salmonsen4">Det relevante alfabetiske afsnit omkring Schjellerup i spalterne 3982–3984 er undersøgt i den digitaliserede tekst; intet opslag om Poul Schjærff.</checked-source>
+    <note>Der er ikke fundet en brugbar biografi i de tilladte leksika. Erslew og Ehrencron-Müller dækker forfatterskaber før hans levetid og er ikke relevante reservekilder. Dansk Forfatterleksikon er anvendt til navne og livsdata, ikke som kopieret biografitekst.</note>
+  </biography-status>
+</person>

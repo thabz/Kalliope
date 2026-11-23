@@ -4,12 +4,21 @@
   <title>Slægternes Træ</title>
   <year>1914</year>
   <notes>
-    <note>Tilføjet af Henrik Nielsen efter <i>Slægternes Træ - Digte</i>, Gyldendalske Boghandel/Nordisk Forlag, København og Kristania, 1914.</note>
+    <note type="credits" editorial="true">Tilføjet af Henrik Nielsen efter <i>Slægternes Træ - Digte</i>, Gyldendalske Boghandel/Nordisk Forlag, København og Kristania, 1914.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1914-p1.jpg"><transcription>Thøger Larsen / Slægternes Træ / Digte // Gyldendalske Boghandel · Nordisk / Forlag · Kjøbenhavn og Kristiania / MDCCCCXIV</transcription></picture>
   </pictures>
-  <source facsimile="11530807499D_color" facsimile-pages-num="142" facsimile-pages-offset="6">Thøger Larsen: <i>Slægternes Træ</i>, Gyldendalske Boghandel, Kbh., 1914.</source>
+  <source href="https://soeg.kb.dk/permalink/45KBDK_KGL/1o797oc/alma99122436591605763" facsimile="11530807499D_color" facsimile-pages-num="140" facsimile-pages-offset="6">
+    <author id="larsent">Thøger Larsen</author>
+    <title>Slægternes Træ</title>
+    <place>Kjøbenhavn og Kristiania</place>
+    <publisher>Gyldendalske Boghandel – Nordisk Forlag</publisher>
+    <year>1914</year>
+    <identifiers>
+      <kb-alma>99122436591605763</kb-alma>
+    </identifiers>
+  </source>
   <quality>korrektur1,kilde,side</quality>
 </workhead>
 <workbody>
@@ -25,7 +34,7 @@
   <title>Den danske Sommer</title>
   <firstline>Danmark, nu blunder den lyse Nat</firstline>
   <notes>
-    <note>Første gang trykt i Politiken 13. juli 1914.</note>
+    <note editorial="true">Første gang trykt i Politiken 13. juli 1914.</note>
   </notes>
   <source pages="9-10"/>
   <quality>korrektur1,korrektur2,korrektur3,kilde,side</quality>
@@ -696,7 +705,7 @@ smykker en Sommerdag i vort Nord.
   <title>Sommernatssang</title>
   <firstline>I den frodige Nat, i Skærsommernatsluft</firstline>
   <notes>
-    <note>Se også <xref poem="larsent2001070116"/>.</note>
+    <note editorial="true">Se også <xref poem="larsent2001070116"/>.</note>
   </notes>
   <source pages="41-42"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1414,6 +1423,11 @@ frem mod Glædens Dage.
 <text id="larsent2002042805" skip-index="true">
 <head>
   <title>Forord til Vølvens Spaadom</title>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/larsent2002042805 -->
+    <!-- Kilde: https://heimskringla.no/wiki/V%C7%ABlusp%C7%AB%CC%81 -->
+    <note editorial="true">Forordet handler om <xref poem="eddadigte2026112001"/>.</note>
+  </notes>
   <source pages="77-79"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1441,9 +1455,14 @@ frem mod Glædens Dage.
   <title>Vølvens Spaadom</title>
   <firstline>Hør mig nu alle</firstline>
   <notes>
-    <note>Denne tekst findes også oversat af <a poem="gjellerup2006041902">Karl Gjellerup</a>.</note>
+    <!-- Kilde: https://kalliope.org/da/text/larsent2002043001 -->
+    <note editorial="true">I noten om »aldrnári« henviser Larsen til <xref poem="eddadigte2026112011"/> og <xref poem="eddadigte2026112003"/>.</note>
+    <note editorial="true">Oversættelse af <xref type="translation" poem="eddadigte2026112001"/>.</note>
   </notes>
   <source pages="81-101"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

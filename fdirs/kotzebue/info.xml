@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kotzebue" country="de" lang="de" type="poet">
+  <name>
+    <firstname>August Friedrich Ferdinand von</firstname>
+    <lastname>Kotzebue</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-05-03</date>
+      <place>Weimar</place>
+    </born>
+    <dead>
+      <date>1819-03-23</date>
+      <place>Mannheim</place>
+    </dead>
+  </period>
+  <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
+  <identifiers>
+    <gnd>118565796</gnd>
+  </identifiers>
+</person>

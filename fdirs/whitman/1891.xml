@@ -4,7 +4,7 @@
   <title>Leaves of Grass</title>
   <year>1891-92</year>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source>Walt Whitman: <i>Poetry and Prose</i>, ed. Justin Kaplan, The Library of America, 1996.</source>
   <quality>korrektur1,kilde</quality>
@@ -38,7 +38,7 @@ Signing for Soul and Body, set to them my name,
 <head>
   <title>Forbemærkning</title>
   <notes>
-    <note>Whitmans "concluding words" er <xref poem="whitman2001060991"/>.</note>
+    <note editorial="true">Whitmans "concluding words" er <xref poem="whitman2001060991"/>.</note>
   </notes>
   <quality>korrektur1,kilde</quality>
 </head>
@@ -4217,6 +4217,9 @@ I am to see to it that I do not lose you.
 <head>
   <title>This Moment Yearning and Thoughtful</title>
   <firstline>This moment yearning and thoughtful sitting alone</firstline>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -4612,6 +4615,15 @@ Be it as if I were with you. (Be not too certain but I am now with you.)
 <head>
   <title>Salut au Monde!</title>
   <firstline>O take my hand Walt Whitman!</firstline>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="pyrenees" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -6324,6 +6336,10 @@ Shapes bracing the earth and braced with the whole earth.
 <head>
   <title>Song of the Exposition</title>
   <firstline>Ah little recks the laborer</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="moriah" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -7553,6 +7569,8 @@ Through angers, losses, ambition, ignorance, ennui, what you are picks its way.
 <head>
   <title>France,</title>
   <subtitle>The 18th Year of these States.</subtitle>
+  <toctitle>France</toctitle>
+  <linktitle>France</linktitle>
   <firstline>A great year and place</firstline>
   <quality>korrektur1,kilde</quality>
 </head>
@@ -8596,6 +8614,8 @@ You are mighty cute - and here is one of your bargains.
 <head>
   <title>Europe,</title>
   <subtitle>The 72d and 73d Years of These States.</subtitle>
+  <toctitle>Europe</toctitle>
+  <linktitle>Europe</linktitle>
   <firstline>Suddenly out of its stale and drowsy lair, the lair of slaves</firstline>
   <quality>korrektur1,kilde</quality>
 </head>
@@ -13487,6 +13507,9 @@ Which let us go forth in the bold day and write.
 <head>
   <title>Passage to India</title>
   <firstline>Singing my days</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -18198,6 +18221,9 @@ Hast thou no soul? Can I not know, identify thee?
 <head>
   <title>Old Chants</title>
   <firstline>An ancient song, reciting, ending</firstline>
+  <places>
+    <place ref="roncesvalles" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

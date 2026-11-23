@@ -2,6 +2,17 @@
 
 Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder i dette repository.
 
+## Gennemfør opgaven
+
+- Fortsæt, indtil hele den bestilte leverance er udført og alle krævede
+  kontroller er gennemført. En delimport, en draft-PR eller grøn CI for en
+  delmængde er et mellemtrin. Tag selv næste trin, så længe det er muligt
+  inden for opgaven og den givne tilladelse.
+- Stop kun før færdig levering, hvis brugeren beder om det, eller en konkret
+  blokering forhindrer videre arbejde. Udfør først de dele, der kan
+  gennemføres uafhængigt af blokeringen. Angiv derefter præcist, hvad der
+  mangler, hvad der blokerer, og hvad der kræves for at fortsætte.
+
 ## Dokumentation
 
 - Læs `docs/style-guide.md` før alle ændringer i repositoryet og før oprettelse
@@ -12,6 +23,13 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
   i formen `YYYYMMDD` og et tocifret løbenummer, fx `merrill2026080101`.
 
 ## Repository-skills
+
+- Brug `$add-kalliope-person` ved personoprettelse og målrettet berigelse.
+- Brug `$add-person-portrait` ved portrætsøgning, portrætmetadata og square-beskæring.
+- Brug `$add-kalliope-picture` ved tilføjelse af kunstbilleder, illustrationer og
+  kunstneriske forsider samt målrettet billedmetadataberigelse. Portræt-skillen
+  bruger den til den fælles billedregistrering; titelbladsbehandling og dagsikoner
+  følger fortsat deres særlige arbejdsgange.
 
 - Brug `$add-kalliope-work`, når et nyt værk skal indsættes og afleveres som
   en pull request.
@@ -28,6 +46,8 @@ Disse regler gælder for AI-agenter og automatiserede assistenter, der arbejder 
 
 ## OCR and PDF tooling
 
+- Basér facsimiler på farveudgaven, når en sådan findes. Brug kun en
+  sort-hvid-udgave, når der ikke findes en farveudgave af den valgte kilde.
 - Kør `tools/ocr-environment` som første trin ved OCR- og PDF-opgaver. Kontrollér
   eksisterende værktøjer, før et nyt systemværktøj installeres.
 - Kraken er den foretrukne OCR-motor til historiske tryk og fraktur. Brug den
@@ -64,6 +84,14 @@ digtere.
 
 ## XML-data
 
+- Agenttilføjede noter må kun indeholde korte, konkrete fakta, som er direkte
+  dokumenteret i en verificeret, offentligt tilgængelig internetkilde. Angiv
+  kilden. Agenter må aldrig tilføje referater, analyser, fortolkninger eller
+  forklaringer af værkets indhold, heller ikke med henvisning til eksterne
+  analyser. Begrundelser for agentens redaktionelle valg hører til i
+  PR-beskrivelsen, ikke i værkets noter. Reglen gælder nye agenttilføjede
+  noter; kildens oprindelige noter og fodnoter bevares.
+
 - Værker registreres automatisk fra `<kalliopework>`-filer i digtermappen.
   Opret aldrig `<works>` i `info.xml`; elementet er ulovligt i RELAX NG.
   XML-filer skal være værker eller en dokumenteret metadatafil efter
@@ -72,8 +100,9 @@ digtere.
 
 - Et trykt rettelsesark skal altid opdages ved sidegennemgangen og alle dets
   relevante rettelser indføres før færdigstatus. Registrér arket som `<errata>`
-  i `<workhead>`, og mærk hver rettelse med `<footnote type="errata">` i formen
-  `rettet] trykt`. Arket må aldrig oprettes som en selvstændig tekstpost.
+  i `<workhead>`, og mærk hver rettelse med XML-kommentaren
+  `<!-- Rettelsesark: rettet] trykt -->`. Arket må aldrig oprettes som en
+  selvstændig tekstpost.
 - Angiv altid `lang` med en ISO 639-1-sprogkode på `<epigraph>`, når mottoet ikke
   er på dansk. Gennemgå korte mottoer og enkeltord manuelt; dansk- og
   norskprægede historiske sprogformer må ikke mærkes uden en sikker vurdering.
@@ -84,6 +113,11 @@ digtere.
 
 ## Git og GitHub
 
+- Gem aldrig screenshots i repositoryet. Skærmskud til PR'er skal vedhæftes
+  eller hostes uden for Git; lokale arbejdsfiler skal ligge uden for repositoryet.
+- Når en kodeændring medfører ændringer i UI, skal PR'en altid ledsages af
+  et skærmskud af den ændrede visning. Indsæt skærmskuddet i PR-beskrivelsen,
+  så ændringen kan vurderes direkte i PR'en.
 - Kør `make test`, før der oprettes en PR. Kommandoen skal afslutte med
   exitkode 0; der kræves ikke andre testkommandoer, medmindre en relevant
   specialdokumentation udtrykkeligt angiver dem.
@@ -105,9 +139,6 @@ digtere.
 - Når brugeren beder om at få fikset et GitHub issue, skal arbejdet udføres i et
   nyt worktree og afsluttes med en PR. Agenten har i denne arbejdsgang automatisk
   godkendelse til at committe og pushe de nødvendige ændringer for at oprette PR'en.
-- Uden for arbejdsgangen for GitHub issue-fixes må agenten aldrig committe, pushe
-  eller amende kodeændringer, før brugeren eksplicit har læst ændringen og bedt om
-  commit/push. Det gælder også opdateringer til eksisterende PR-branches.
 - Agenten må aldrig oprette en commit med Codex, OpenAI eller en anden agent som
   author eller committer. Før hver commit skal agenten kontrollere den effektive
   Git-identitet og bruge repositoryejerens allerede konfigurerede navn og

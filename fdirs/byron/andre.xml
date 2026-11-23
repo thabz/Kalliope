@@ -11,7 +11,7 @@
   <title>To my son</title>
   <firstline>Those flaxen locks, those eyes of blue</firstline>
   <notes>
-    <note>Skrevet 1807, først trykt i 1830.</note>
+    <note editorial="true">Skrevet 1807, først trykt i 1830.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -66,6 +66,7 @@ Will ne'er desert its pledge, my Boy!
 <head>
   <title>The isles of Greece</title>
   <firstline>The isles of Greece!</firstline>
+  <keywords>sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -190,7 +191,7 @@ Dash down yon cup of Samian wine!
   <title>The Girl of Cadiz</title>
   <firstline>Oh never talk again to me</firstline>
   <notes>
-    <note>Skrevet 1809.</note>
+    <note editorial="true">Skrevet 1809.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>
@@ -295,10 +296,14 @@ I only feel – Farewell! – Farewell!
 <head>
   <title>Parisina</title>
   <firstline>It is the hour when from the boughs</firstline>
+  <source>
+    <title>The works of Lord Byron</title>
+    <editor>Ernest Hartley Coleridge</editor>
+    <volume>3</volume>
+    <publisher>John Murray</publisher>
+    <year>1898</year>
+  </source>
   <!-- Ikke en variant af byron1999041112: Det korte digt er et uddrag af Parisina, ikke en tekstvariant. -->
-  <notes>
-    <note>Fra <i>The works of Lord Byron</i>, Ernest Hartley Coleridge (ed.), volume 3. John Murray, 1898.</note>
-  </notes>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1175,7 +1180,7 @@ Earth is no desert—e’en to me.
   <linktitle>Answer To A Beautiful Poem, Entitled “The Common Lot.”</linktitle>
   <firstline>Montgomery! true, the common lot</firstline>
   <notes>
-    <note>Cf. James Montgomery: <xref poem="montgomery2019090701"/>.</note>
+    <note editorial="true">Cf. James Montgomery: <xref poem="montgomery2019090701"/>.</note>
   </notes>
 </head>
 <body>
@@ -1493,7 +1498,7 @@ So, midst the withered waste of life, those tears would flow to me.
   <title>Childe Harold's Good Night</title>
   <firstline>Adieu, adieu! my native shore</firstline>
   <notes>
-    <note>Fra <i>Childe Harold's Pilgrimage</i>, Canto I.</note>
+    <note editorial="true">Fra <i>Childe Harold's Pilgrimage</i>, Canto I.</note>
   </notes>
 </head>
 <body>
@@ -1621,6 +1626,9 @@ Reflect on me as on the dead,
   <title>The Vision of Judgment</title>
   <firstline>Saint Peter sat by the celestial gate</firstline>
   <source href="http://www.jacklynch.net/Texts/vision.html">George Gordon Byron: <i>The Vision of Judgment</i>.</source>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -2691,6 +2699,9 @@ I left him practising the hundredth psalm.
 <head>
   <title>Ode to Napoleon Buonaparte</title>
   <firstline>Tis done—but yesterday a King!</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="olsen" country="no" lang="da" type="poet">
+  <!-- Metadata source: Salmonsen2 XVIII474–475. Vaarblomsten author identified independently by KB catalog and Thorvaldsens Museum. Distinct from olsengh. -->
+  <!-- Kilder: https://runeberg.org/salmonsen/2/18/0506.html ; https://runeberg.org/salmonsen/2/18/0507.html -->
+  <name>
+    <firstname>Andreas Schram</firstname>
+    <lastname>Olsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1791-02-16</date>
+      <place>Bergen</place>
+    </born>
+    <dead>
+      <date>1845-04-03</date>
+      <place>Larvik</place>
+    </dead>
+  </period>
+  <literary-periods>no-nationalromantik</literary-periods>
+</person>

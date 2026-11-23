@@ -6,10 +6,14 @@ import { fileURLToPath } from 'url';
 import {
   directChild,
   elementChildren,
+  inheritedNotePageBreaks,
   parseXml,
-  serializeChildren,
+  isPoetryBlock,
+  serializeVerseLines,
+  splitBodyPages,
 } from './audit-utils.js';
 import { parseTesseractTsv } from './analyze-stanza-geometry.js';
+import { extractRunInUnits } from './run-in-structure.js';
 
 const minimumMatchSimilarity = 0.48;
 const ambiguousMatchMargin = 0.035;
@@ -108,7 +112,7 @@ const isVerseLine = serialized => {
     !/^<wrap(?:\s|>)/u.test(trimmed) &&
     !/^<right(?:\s|>)/u.test(trimmed) &&
     !/^<hr(?:\s|\/|>)/u.test(trimmed) &&
-    !/^-{3,}$/u.test(trimmed) &&
+    !/^(?:-{3,}|={4})$/u.test(trimmed) &&
     plainText(trimmed).trim() !== '';
 };
 
@@ -118,7 +122,7 @@ const isStructuralDivider = serialized => {
     /^<wrap(?:\s|>)/u.test(trimmed) ||
     /^<right(?:\s|>)/u.test(trimmed) ||
     /^<hr(?:\s|\/|>)/u.test(trimmed) ||
-    /^-{3,}$/u.test(trimmed);
+    /^(?:-{3,}|={4})$/u.test(trimmed);
 };
 
 const isNumberedSectionDivider = serialized => {
@@ -137,7 +141,8 @@ const countIndentation = serialized => {
 const pbPattern = /<pb\b[^>]*\bfacs="([^"]+)"[^>]*\/>/gu;
 
 const parsePoetryElement = ({ poetry, startingFacsimile }) => {
-  const serialized = serializeChildren(poetry).replace(/\r\n?/gu, '\n');
+  const serialized = serializeVerseLines(poetry)
+    .replace(/\r\n?/gu, '\n');
   const lines = [];
   const equipment = [];
   const observedBoundaries = [];
@@ -200,6 +205,7 @@ const parsePoetryElement = ({ poetry, startingFacsimile }) => {
   return {
     lines,
     equipment,
+    runInUnits: extractRunInUnits({ serialized, startingFacsimile }),
     observedBoundaries: [...new Set(observedBoundaries)],
     issues,
     endingFacsimile: currentFacsimile,
@@ -214,40 +220,66 @@ const extractPoetryBlocks = xml => {
     directChild(node, 'head') != null && directChild(node, 'body') != null
   );
   const blocks = [];
+  const sourceOrder = new Map();
+  const poetryOrder = new Map(Array.from(document.getElementsByTagName('poetry')).map((node, index) => [node, index]));
   entries.forEach(entry => {
     const body = directChild(entry, 'body');
     const head = directChild(entry, 'head');
     const source = directChild(head, 'source');
     if (body == null) return;
     const firstPb = body.getElementsByTagName('pb')[0] ?? null;
-    let currentFacsimile = initialFacsimile(
+    const startingFacsimile = initialFacsimile(
       source,
       sourceForText(workhead, source),
       firstPb,
     );
     let blockIndex = 0;
-    elementChildren(body).forEach(child => {
-      if (child.nodeName === 'poetry') {
+    const visit = (node, stream, collect = true) => {
+      if (node !== entry && ['text', 'prose'].includes(node.nodeName) === true &&
+        directChild(node, 'head') != null && directChild(node, 'body') != null) {
+        const nestedBody = directChild(node, 'body');
+        const nestedSource = directChild(directChild(node, 'head'), 'source');
+        stream.facsimile = initialFacsimile(nestedSource,
+          sourceForText(workhead, nestedSource), nestedBody.getElementsByTagName('pb')[0]) ?? stream.facsimile;
+        visit(nestedBody, stream, false);
+        return;
+      }
+      if (node.nodeName === 'pb') {
+        stream.facsimile = node.getAttribute('facs') ?? stream.facsimile;
+        return;
+      }
+      if (node.nodeName === 'note' || node.nodeName === 'footnote') {
+        const noteStream = { facsimile: stream.facsimile };
+        elementChildren(node).forEach(child => visit(child, noteStream, collect));
+        const inheritedFacsimile = inheritedNotePageBreaks(node).at(-1)?.getAttribute('facs');
+        if (inheritedFacsimile != null && inheritedFacsimile !== '') {
+          stream.facsimile = inheritedFacsimile;
+        }
+        return;
+      }
+      if (collect === true && isPoetryBlock(node)) {
         blockIndex += 1;
         const parsed = parsePoetryElement({
-          poetry: child,
-          startingFacsimile: currentFacsimile,
+          poetry: node,
+          startingFacsimile: stream.facsimile,
         });
-        currentFacsimile = parsed.endingFacsimile;
+        sourceOrder.set(blocks.length, poetryOrder.get(node));
         blocks.push({
           textId: entry.getAttribute('id') ?? '',
           pages: source?.getAttribute('pages') ?? null,
           blockIndex,
           ...parsed,
         });
-      } else {
-        const pageBreaks = Array.from(child.getElementsByTagName('pb'));
-        const facsimile = pageBreaks.at(-1)?.getAttribute('facs') ?? null;
-        if (facsimile != null) currentFacsimile = facsimile;
       }
-    });
+      elementChildren(node).forEach(child => visit(child, stream, collect));
+    };
+    visit(body, { facsimile: startingFacsimile });
+    // Title and metadata footnotes may contain verse too. Their page stream
+    // starts independently of the body's ending page.
+    visit(head, { facsimile: startingFacsimile });
   });
-  return blocks;
+  return blocks.map((block, index) => ({ block, order: sourceOrder.get(index) }))
+    .sort((left, right) => left.order - right.order).map(item => item.block);
 };
 
 const operationPriority = operation => ({

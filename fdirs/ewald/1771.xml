@@ -5,9 +5,14 @@
   <subtitle>Et Passions-Oratorium</subtitle>
   <year>1771</year>
   <notes>
-    <note type="credits">Indtastet af Henrik Nielsen.</note>
-    <note>Teksten er rettet ind efter <i>Den danske lyrik</i>, bind 1 (»Før 1800«), red. F.J. Billeskov Jansen, 1963.</note>
+    <note editorial="true" type="credits">Indtastet af Henrik Nielsen.</note>
   </notes>
+  <source>
+    <title>Den danske lyrik. Før 1800</title>
+    <editor type="editor">F.J. Billeskov Jansen</editor>
+    <volume>1</volume>
+    <year>1963</year>
+  </source>
 </workhead>
 <workbody>
 
@@ -17,7 +22,7 @@
   <subtitle>Et Passions Oratorium</subtitle>
   <firstline>O Nat! - Nu seer jeg Dig! - nu seer jeg Intet!</firstline>
   <notes>
-    <note>Trykt i <i>Bibliothek for nyttige Skrifter</i>, 1772, nr. 21.</note>
+    <note editorial="true">Trykt i <i>Bibliothek for nyttige Skrifter</i>, 1772, nr. 21.</note>
   </notes>
   <!-- Elendig udgave snuppet fra Billeskov -->
 </head>

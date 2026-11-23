@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="munchjs" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Johan Storm</firstname>
+    <lastname>Munch</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1778-08-31</date>
+    </born>
+    <dead>
+      <date>1832-01-26</date>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid,no-nationalromantik</literary-periods>
+  <!-- Livsdata: https://snl.no/Johan_Storm_Munch -->
+</person>

@@ -267,7 +267,7 @@ Og hvisker svagt, som med en barnlig Mund:
   <subtitle>(Skrevet som Musiktext)</subtitle>
   <firstline>Med en svag og uvant Tunge</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <source pages="13-17"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -885,7 +885,7 @@ Ganske tæt ved hendes Side;
 Og som Snoge Træets Rødder
 Krybe under Løvets Hang,
 For at hindre hendes Gang
-Og forvikle hendes Fødder.<note>Fødder] Födder</note>
+Og forvikle hendes Fødder.<note editorial="true">Fødder] Födder</note>
 
 Barnet sig i Smerte vaander,
 See, da glemmer hun sin Nød,
@@ -1182,7 +1182,7 @@ Han standsede med Haanden lagt paa Brystet.
 Og da hans Blod nu flød med svalet Varme,
 Begyndte Annas Seng sin Tryllemagt,
 Den tog imod ham i sin hvide Pragt,
-Saa blødt og kjærligt, som en Moders Arme<note>Arme.] Arme</note> -
+Saa blødt og kjærligt, som en Moders Arme<note editorial="true">Arme.] Arme</note> -
 
 Seent slumred han, og ud paa Natten silde
 Lød tyst fra Loftet sagte, sagte Trin, -
@@ -1466,6 +1466,9 @@ Og Byrden svandt, som hidtil havde tynget.
   <firstline>Hiin stille Sommeraftenstund</firstline>
   <source pages="59-60"/>
   <keywords>christian8</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1780,6 +1783,9 @@ Engang ved Graven Jer fortælle Resten.
   <firstline>I Sjælens Dyb er en urolig Flamme</firstline>
   <source pages="71-72"/>
   <keywords>oehlenschlaeger</keywords>
+  <places>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1828,7 +1834,7 @@ Som fødte Danmark Romantikens Vaar!
   <title>I A. Oehlenschlägers Album</title>
   <firstline>Forgjeves har jeg brudt min Hjerne</firstline>
   <notes>
-    <note>Album er i denne sammenhæng et <i>album amicorum</i>, hvilket er den latinske betegnelse for en stambog.</note>
+    <note editorial="true">Album er i denne sammenhæng et <i>album amicorum</i>, hvilket er den latinske betegnelse for en stambog.</note>
   </notes>
   <source pages="73"/>
   <keywords>stambog,oehlenschlaeger</keywords>
@@ -1862,10 +1868,13 @@ Er intet Blad saa tungt som mit!
   <title>Sang ,,Den 8de Marts''</title>
   <firstline>Vexlende med Sang og Viin</firstline>
   <notes>
-    <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+    <note editorial="true">8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
   </notes>
   <source pages="74-76"/>
   <keywords>rom</keywords>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1933,6 +1942,10 @@ Med vort Hjertes Helligdom!
   <title>Mundus og Paulina</title>
   <firstline>I stille Flammer sank den gyldne Sol</firstline>
   <source pages="77-89"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2281,6 +2294,9 @@ Naar Solen engang spreder alle Taager!
   <firstline>Men, Hr. Kunstner, seer jeg ret?</firstline>
   <source pages="90-93"/>
   <keywords>rom</keywords>
+  <places>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2746,7 +2762,7 @@ Paa Trappens sidste Trin. -
 Det var et Høitidsskue!
 Syv kunstigskaarne Fade
 Med Løvværk og med Blade
-Gik langs ved Grottens Rund<note>Rund] Rand</note>
+Gik langs ved Grottens Rund<note editorial="true">Rund] Rand</note>
 Og laae i Bjergets Bue
 Som i en Jættes Mund.
 
@@ -2913,6 +2929,9 @@ Jeg saae ham aldrig meer. -
   <firstline>Velkommen Juul! Du hver en Alders Glæde!</firstline>
   <source pages="115-116"/>
   <keywords>rom,thorvaldsen</keywords>
+  <places>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2967,6 +2986,9 @@ Hvormed vi hilse paa den søde Juul!
   <firstline>Som onde Dunster svæve over Graven</firstline>
   <source pages="117-120"/>
   <keywords>rom</keywords>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3067,7 +3089,7 @@ Mens Aftensolens Lue kysser Fjeldet!
   <title>Morgen i Nemi</title>
   <firstline>Lyt, Albert! det er sikkert Dag</firstline>
   <notes>
-    <note>Nemi er en middelalderby ved en kratersø i Albanerbjergene 25 km sydøst for Rom. Albert henviser til maleren <a person="kuchler">Albert Küchler (1803-1886)</a>, der ligesom Bødtcher tilhørte den danske kunstnergruppe omkring <a person="thorvaldsen">Thorvaldsen</a> i Rom.</note>
+    <note editorial="true">Nemi er en middelalderby ved en kratersø i Albanerbjergene 25 km sydøst for Rom. Albert henviser til maleren <a person="kuchler">Albert Küchler (1803-1886)</a>, der ligesom Bødtcher tilhørte den danske kunstnergruppe omkring <a person="thorvaldsen">Thorvaldsen</a> i Rom.</note>
   </notes>
   <source pages="121-124"/>
   <keywords>rom</keywords>
@@ -3181,7 +3203,7 @@ Hen mod Evighedens Land!
     <event>1833-01-28</event>
   </dates>
   <notes>
-    <note>28/1 er <a person="frederik6">Frederik 6.</a>s fødselsdag.</note>
+    <note editorial="true">28/1 er <a person="frederik6">Frederik 6.</a>s fødselsdag.</note>
   </notes>
   <source pages="125-126"/>
   <keywords>rom,frederik6</keywords>
@@ -3374,10 +3396,13 @@ I denne store Elskovstaare!
   <title>Paa Fregatten Bellona i Nordsøen 1835</title>
   <firstline>Du Bølge fra den danske Kyst</firstline>
   <notes>
-    <note>,,Danmarks Vei til Magt og Ære'' er en allusion til Ewalds <xref poem="ewlad1999022205"/>. ,,Kunstneren'' er Thorvaldsen, hvis værker fregatten Bellona bragte til Danmark.</note>
+    <note editorial="true">,,Danmarks Vei til Magt og Ære'' er en allusion til Ewalds <xref poem="ewlad1999022205"/>. ,,Kunstneren'' er Thorvaldsen, hvis værker fregatten Bellona bragte til Danmark.</note>
   </notes>
   <source pages="133-134"/>
   <keywords>frederik6,thorvaldsen</keywords>
+  <places>
+    <place ref="north-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3559,7 +3584,7 @@ Drev Baaden vildsom hen ad Søen med den Døde.
     <event>1828-03-08</event>
   </dates>
   <notes>
-    <note>8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
+    <note editorial="true">8. marts fejrede Thorvaldsen sin romerske fødselsdag.</note>
   </notes>
   <pictures>
     <picture artwork="thorvaldsen/1803-jason"/>
@@ -3613,9 +3638,7 @@ Med flammende Begeistring tømmes ud!
   <pictures>
     <picture artwork="lundbye/1846-piazza-barberini" />
     <picture artwork="marstrand/piazza-barberini-1840erne" />
-    <picture src="boedtcher1870a22-p1.jpg" museum="smk" invnr="KMS196">
-      Ditlev Martens: <i>Pave Leo Xll aflægger besøg i Thorvaldsens værksteder ved Piazza Barberini, 18. oktober 1826</i>, 1828-29, olie på lærred, 100 × 138 cm.
-    </picture>
+    <picture artwork="kunst/martens-pave-leo-xii-1828-1829"/>
   </pictures>
   <source pages="142-147"/>
   <!-- https://commons.m.wikimedia.org/wiki/File:Fontana_del_Tritone_Rome_19c.jpg -->
@@ -3845,6 +3868,9 @@ Jeg flyer din Honning, som forgifter Sorgen!
   <title>Athenodorus</title>
   <firstline>I Rom gik atter Ry af fjerne Sejre</firstline>
   <source pages="151-165"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4536,7 +4562,7 @@ Til Aandens Flugt gaaer atter frem!
   <subtitle>(Til en Musik af Kuhlau)</subtitle>
   <firstline>Træk mig frem min Brune</firstline>
   <notes>
-    <note>Daniel Friedrich Kuhlau (1786-1832), var Danmarks fremmeste romantiske komponist.</note>
+    <note editorial="true">Daniel Friedrich Kuhlau (1786-1832), var Danmarks fremmeste romantiske komponist.</note>
   </notes>
   <source pages="179-181"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5775,6 +5801,9 @@ Og, Lorenzo, al din Pragt!
   <firstline>Nys svulmed kjækt den gamle Tibers Strømme</firstline>
   <source pages="229-230"/>
   <keywords>rom,balladestrofe</keywords>
+  <places>
+    <place ref="capitoline-hill" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

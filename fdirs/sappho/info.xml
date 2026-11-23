@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sappho" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <lastname>Sappho</lastname>
+    <alternative>Sapfo</alternative>
+    <alternative>Sapho</alternative>
+    <christened>Σαπφώ</christened>
+  </name>
+  <!-- Levetiden er usikker. Ca. 630–570 f.Kr. efter Bodil Due, Sapfo, Lex: https://lex.dk/Sapfo (afsnittet Liv). Salmonsen angiver kun virksom omkring 600 f.Kr. -->
+  <period>
+    <born>
+      <date>ca. -0630</date>
+      <place>Lesbos</place>
+    </born>
+    <dead>
+      <date>ca. -0570</date>
+    </dead>
+  </period>
+  <literary-periods>grc-arkaisk-og-klassisk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q17892</wikidata>
+    <wikipedia-da>Sapfo</wikipedia-da>
+    <wikipedia-en>Sappho</wikipedia-en>
+    <wikipedia-fr>Sappho</wikipedia-fr>
+    <wikipedia-de>Sappho</wikipedia-de>
+    <viaf>78770488</viaf>
+    <gnd>118605534</gnd>
+    <lex-dk>Sapfo</lex-dk>
+  </identifiers>
+</person>

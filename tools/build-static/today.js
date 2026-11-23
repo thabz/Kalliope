@@ -44,6 +44,8 @@ const build_todays_events_json = async (collected) => {
   if (
     !missingLanguageOutput &&
     !isFileModified(
+      'tools/build-static/today.js',
+      'content/museums.xml',
       portraitPrioritiesFilename,
       ...poet_info_files,
       ...portrait_descriptions
@@ -176,8 +178,8 @@ const build_todays_events_json = async (collected) => {
                   b.event.context.poet.id
                 );
               });
-            if (weighted.length > 0) {
-              const event = weighted[0].event;
+            for (const candidate of weighted) {
+              const event = candidate.event;
               const poet = event.context.poet;
               let content_html = null;
               const primary_portrait = (
@@ -193,13 +195,14 @@ const build_todays_events_json = async (collected) => {
               }
               if (primary_portrait != null) {
                 const data = {
+                  ...primary_portrait,
                   type: 'image',
-                  src: primary_portrait.src,
                   content_html,
                   content_lang: lang,
                   date: event.date,
                 };
                 add_event(lang, `${mm}-${dd}`, data);
+                break;
               }
             }
           }

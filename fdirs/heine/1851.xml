@@ -150,6 +150,9 @@ Unter seinem Regimente.
 <head>
   <title>Der weiße Elefant</title>
   <firstline>Der König von Siam, Mahawasant</firstline>
+  <places>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1249,6 +1252,9 @@ Es sind nun dreißig Jahre her.
 <head>
   <title>Zwei Ritter</title>
   <firstline>Crapülinski und Waschlapski</firstline>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3831,6 +3837,9 @@ Ihr einen Reim ins Album setzt.
 <head>
   <title>An die Jungen</title>
   <firstline>Laß dich nicht kirren, laß dich nicht wirren</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4191,6 +4200,9 @@ Ja, das versteht sich, dort sehn wir uns wieder.
 <head>
   <title><num>III.</num>Auferstehung</title>
   <firstline>Posaunenruf erfüllt die Luft</firstline>
+  <places>
+    <place ref="valley-of-jehoshaphat" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4931,6 +4943,10 @@ Und nicht auf dem Gipfel.
 <head>
   <title>Prinzessin Sabbath</title>
   <firstline>In Arabiens Märchenbuche</firstline>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5378,6 +5394,9 @@ Töten uns, doch niemals richten. -
   <indextitle>Bei den Wassern Babels saßen</indextitle>
   <linktitle>Bei den Wassern Babels saßen</linktitle>
   <firstline>Bei den Wassern Babels saßen</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5626,6 +5645,9 @@ Auf den Knien Jerusalems.
   <indextitle>Nach der Schlacht bei Arabella</indextitle>
   <linktitle>Nach der Schlacht bei Arabella</linktitle>
   <firstline>Nach der Schlacht bei Arabella</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6315,6 +6337,10 @@ Man den Mohren zu Corduba.
 <head>
   <title>Disputation</title>
   <firstline>In der Aula zu Toledo</firstline>
+  <places>
+    <place ref="valley-of-jehoshaphat" relation="mentioned"/>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

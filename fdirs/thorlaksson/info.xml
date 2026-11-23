@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="thorlaksson" country="un" lang="is" nationality="is" type="poet">
+  <name>
+    <firstname>Jón</firstname>
+    <lastname>Þorláksson</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1744-12-13</date>
+      <place>Selárdalur</place>
+    </born>
+    <dead>
+      <date>1819-10-21</date>
+      <place>Bægisá</place>
+    </dead>
+  </period>
+  <literary-periods>is-oplysningstid</literary-periods>
+</person>

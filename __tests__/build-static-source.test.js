@@ -209,6 +209,20 @@ describe('structured bibliographic sources', () => {
 
 
 describe('work source metadata before output and caching', () => {
+  it.each([false, true])('keeps errata sources separate unless also used by a text (%s)', usedByText => {
+    const work = new DOMParser().parseFromString(`
+      <kalliopework><workhead>
+        <source><title>Bind I</title></source>
+        <source id="corrections"><title>Bind III</title></source>
+        <errata status="reviewed" in="corrections"/>
+      </workhead><workbody>
+        ${usedByText === true ? '<text><head><source in="corrections"/></head></text>' : ''}
+      </workbody></kalliopework>`, 'text/xml').documentElement;
+    const { sources } = buildWorkSourceMetadata(work, new Map(), 'test.xml');
+    expect(sources.default.errataOnly).toBeUndefined();
+    expect(sources.corrections.errataOnly === true).toBe(usedByText === false);
+  });
+
   it('preserves identifiers and facsimile metadata through JSON cache serialization', () => {
     const work = new DOMParser().parseFromString(`
       <kalliopework><workhead>

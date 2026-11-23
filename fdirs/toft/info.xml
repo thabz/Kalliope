@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="toft" country="dk" lang="da" type="poet">
+  <!-- Metadata source: Erslew, bind III,1853,s.389; exact AtheneIII59–66 attribution. -->
+  <!-- Kilder: https://runeberg.org/almiforf/3/0395.html -->
+  <name>
+    <firstname>Georg Nicolai</firstname>
+    <lastname>Toft</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1793-07-25</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1830-03-21</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+</person>

@@ -4,8 +4,8 @@
   <title>Sværdtid er endt -</title>
   <year>1920</year>
   <notes>
-    <note>Afsnit II indledes med mottoet ,,Det er det store gyldne Aar, / med Flaget højt paa Danmarks Gaard, / da skilte Brødre mødes, / og Danmark atter fødes.''</note>
-    <note>Afsnit III indledes med mottoet ,,Sværdtid er endt, / det er Plovtid paany / Vennetid, Frændetid, / Grotid og Gry.''</note>
+    <note editorial="true">Afsnit II indledes med mottoet ,,Det er det store gyldne Aar, / med Flaget højt paa Danmarks Gaard, / da skilte Brødre mødes, / og Danmark atter fødes.''</note>
+    <note editorial="true">Afsnit III indledes med mottoet ,,Sværdtid er endt, / det er Plovtid paany / Vennetid, Frændetid, / Grotid og Gry.''</note>
   </notes>
   <pictures>
     <picture src="1920-p1.jpg">Titelbladet til <i>Sværdtid er endt -</i> (1920) lyder ,,Kai Hoffmann / Sværdtid er endt - / Digte // V. Pios Boghandel - Povl Branner / Nørregade - København / MDCCCCXX''.</picture>
@@ -26,6 +26,9 @@
   <title>Til Digterne i Norden</title>
   <firstline>I gammel Tid bar Skjaldene, bar Skjaldene i Nord</firstline>
   <source pages="11-12"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -747,6 +750,9 @@ Der staar altid en Front mellem Syd og Nord -
     <line>Musik af Hugo Seligmann</line>
   </subtitle>
   <firstline>O nye Aar, kom nye Aar</firstline>
+  <dates>
+    <event>1918-01-01</event>
+  </dates>
   <source pages="51-52"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1621,6 +1627,9 @@ Skaal Du og Du og Du!
   <title>Norden</title>
   <firstline>Min Sjæl har vendt sig mod Norden</firstline>
   <source pages="94"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

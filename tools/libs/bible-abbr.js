@@ -48,6 +48,7 @@ const abbrevations = {
   '2korint': '2 Kor',
   galaterne: 'Gal',
   efeserne: 'Ef',
+  efersene: 'Ef', // Kalliopes eksisterende kapitel-id'er bruger denne stavemåde.
   filipperne: 'Fil',
   kolossen: 'Kol',
   '1tessa': '1 Tess',

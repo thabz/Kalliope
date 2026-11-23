@@ -214,7 +214,7 @@ Thi juble dem i Møde Musasønner.
   <linktitle>Pebersvenden og Ægtemanden. Sept. 1822</linktitle>
   <firstline>Det vise Varselsraad, min Ven!</firstline>
   <notes>
-    <note>Peder Hjort (1793-1871), sprogmand, litteraturhistoriker, lektor i Sorø.</note>
+    <note editorial="true">Peder Hjort (1793-1871), sprogmand, litteraturhistoriker, lektor i Sorø.</note>
   </notes>
   <source pages="5-6"/>
   <keywords>holberg</keywords>
@@ -463,7 +463,7 @@ Naar os de ei meer begræde.
   <toctitle>Til Emma (Efter Schiller.)</toctitle>
   <firstline>I det Taagegraa, det Fierne</firstline>
   <notes>
-    <note>Gendigtning af Schillers <xref type="translation" poem="schiller2001102420"/>.</note>
+    <note editorial="true">Gendigtning af Schillers <xref type="translation" poem="schiller2001102420"/>.</note>
   </notes>
   <source pages="12"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -591,7 +591,8 @@ Og var ei ene meer''.
   <linktitle>Sang i Anledning af Kongens Fødselsdag. Febr. 1823</linktitle>
   <firstline>For Fredrik, Fædrelandets Ven</firstline>
   <dates>
-    <event>1823-02-02</event>
+    <performed>1823-02-02</performed>
+    <event>1823-01-28</event>
   </dates>
   <!-- Ikke en variant af oehlenschlaeger2019020637: Forskellige lejlighedssange med fælles indledning. -->
   <source pages="15-16"/>
@@ -639,7 +640,7 @@ Med Lyst.
   <subtitle>I et Exemplar af den latinske Grammatik.</subtitle>
   <firstline>En Gave her, min Hans! du fik</firstline>
   <notes>
-    <note type="credits">Bidrag fra Henrik Nielsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Henrik Nielsen.</note>
   </notes>
   <source pages="16-18"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -976,6 +977,9 @@ Himlen dig altid dem gladere skienke!
   </subtitle>
   <toctitle>Til en ung pige</toctitle>
   <firstline>Juli er skiønneste Maaned i Aaret</firstline>
+  <dates>
+    <event>1823-07-30</event>
+  </dates>
   <source pages="24-25"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1077,6 +1081,9 @@ Som Himlen i Naturen seer.
   <indextitle>Prinds Christian Frederiks Fødselsdag. Sept. 1823</indextitle>
   <linktitle>Prinds Christian Frederiks Fødselsdag. Sept. 1823</linktitle>
   <firstline>Siølunda glædes atter</firstline>
+  <dates>
+    <event>1823-09-18</event>
+  </dates>
   <source pages="27-28"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1152,6 +1159,9 @@ Er Folkets Kiærlighed.
   <indextitle>Sang i Anledning af Dronningens og Kronprinsessens Fødselsfest. Ovt. 1823</indextitle>
   <linktitle>Sang i Anledning af Dronningens og Kronprinsessens Fødselsfest. Ovt. 1823</linktitle>
   <firstline>Hæver, o Brødre! forenede Stemmer</firstline>
+  <dates>
+    <event>1823-10-28</event>
+  </dates>
   <source pages="29-30"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1201,6 +1211,9 @@ De bedste Demanter i Frederiks Spiir.
   <subtitle>Da Hans Høihed Prinds Christian havde hædret Digteren med disse Gaver.</subtitle>
   <firstline>At bruge sin Tid, og sit Lys holde tændt</firstline>
   <source pages="30-31"/>
+  <places>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1259,7 +1272,7 @@ Til Døden jeg er dig forbunden.
   <toctitle>Ved Callisens Grav. Febr. 1824</toctitle>
   <firstline>Naar skal da min Tid faae Ende?</firstline>
   <notes>
-    <note>Henrich Callisen (1740-1824), dansk læge og kirurg.</note>
+    <note editorial="true">Henrich Callisen (1740-1824), dansk læge og kirurg.</note>
   </notes>
   <source pages="32-33"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1445,6 +1458,9 @@ Som nu!
   <indextitle>Prinds Christian Frederiks Fødselsdag. Sept. 1824</indextitle>
   <linktitle>Prinds Christian Frederiks Fødselsdag. Sept. 1824</linktitle>
   <firstline>September! med de gyldne Dage</firstline>
+  <dates>
+    <event>1824-09-18</event>
+  </dates>
   <source pages="36-37"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1677,6 +1693,9 @@ Aarhundreder den smykke med Vaarens friske Green!
   <indextitle>Sang i Anledning af Kongens Fødselsfest. Jan. 1825</indextitle>
   <linktitle>Sang i Anledning af Kongens Fødselsfest. Jan. 1825</linktitle>
   <firstline>Nu Festens Horn med ædel Drik vi fylde</firstline>
+  <dates>
+    <event>1825-01-28</event>
+  </dates>
   <source pages="42-43"/>
   <keywords>frederik6,balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2088,7 +2107,7 @@ Vor Formand og vor Broder!
     <event>1825-09-04</event>
   </dates>
   <notes>
-    <note>Anna Nielsen (1803-1856, gift Wexschall i 1823), dansk skuespillerinde.</note>
+    <note editorial="true">Anna Nielsen (1803-1856, gift Wexschall i 1823), dansk skuespillerinde.</note>
   </notes>
   <pictures>
     <picture artwork="kunst/loeffler-anna-nielsen-1836" />
@@ -2411,6 +2430,9 @@ Og kun i Kiærlighed er Gud!
   </dates>
   <source pages="61-64"/>
   <keywords>goethe,schiller,kant,trojel,thaarup,storm,zetlitz,tode,frederik6</keywords>
+  <places>
+    <place ref="ebro" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2680,6 +2702,9 @@ Med begejstret Stemme siunger:
   <indextitle>Sang for Landcadetterne i Anledning af Kongens Fødselsdag. Jan. 1826</indextitle>
   <linktitle>Sang for Landcadetterne i Anledning af Kongens Fødselsdag. Jan. 1826</linktitle>
   <firstline>O, Gud! du, som bestemte mig</firstline>
+  <dates>
+    <event>1826-01-28</event>
+  </dates>
   <source pages="68-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2750,6 +2775,9 @@ De unge Danmarks Sønner.
   <indextitle>Sang for Enigheds-Selskabet paa Kongens Fødselsfest. Jan 1826</indextitle>
   <linktitle>Sang for Enigheds-Selskabet paa Kongens Fødselsfest. Jan 1826</linktitle>
   <firstline>Enighedens Skiønne Navn</firstline>
+  <dates>
+    <event>1826-01-28</event>
+  </dates>
   <source pages="69-70"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2806,6 +2834,10 @@ I dit elskte Leire!
   <indextitle>Cantate i Anledning af Kongens Fødselsdag. Jan. 1826</indextitle>
   <linktitle>Cantate i Anledning af Kongens Fødselsdag. Jan. 1826</linktitle>
   <firstline>Lyd høit, vor Sang!</firstline>
+  <dates>
+    <performed>1826-02-04</performed>
+    <event>1826-01-28</event>
+  </dates>
   <source pages="71-72"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3312,6 +3344,9 @@ Og hun maaskee er langt derfra.
     <event>1826-09-18</event>
   </dates>
   <source pages="85-86"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3380,7 +3415,7 @@ Velsignelse sender fra Sky.
     <event>1826-10-09</event>
   </dates>
   <notes>
-    <note>Jens Wilken Hornemann (1770-1841), botaniker, professor i botanik, direktør for Botanisk Have, udgiver af Flora Danica og også etatsråd fra 1829.</note>
+    <note editorial="true">Jens Wilken Hornemann (1770-1841), botaniker, professor i botanik, direktør for Botanisk Have, udgiver af Flora Danica og også etatsråd fra 1829.</note>
   </notes>
   <source pages="86-87"/>
   <keywords>pram</keywords>
@@ -3434,7 +3469,7 @@ Om dette sieldne Blomsterbed.
     <event>1826-10-15</event>
   </dates>
   <notes>
-    <note>Rasmus Nyerup (1759-1829), litteraturhistoriker, sprogforsker og bibliotekar.</note>
+    <note editorial="true">Rasmus Nyerup (1759-1829), litteraturhistoriker, sprogforsker og bibliotekar.</note>
   </notes>
   <source pages="87-90"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3690,7 +3725,7 @@ Og finder kun en Versemager.
   <toctitle>Carl Maria Webers Minde. Nov. 1826</toctitle>
   <firstline>Den hulde Tone lyder, og forstummer</firstline>
   <notes>
-    <note>Carl Maria Friedrich Ernst von Weber (1786-1826), tysk romantisk komponist.</note>
+    <note editorial="true">Carl Maria Friedrich Ernst von Weber (1786-1826), tysk romantisk komponist.</note>
   </notes>
   <source pages="95-96"/>
   <keywords>ottave-rime</keywords>
@@ -4109,7 +4144,7 @@ Svinger Haabet op til Gud.
   <toctitle>Joachim Conrad Oehlenschläger. Mai 1827</toctitle>
   <firstline>Den unge Mai udspringer atter fro</firstline>
   <notes>
-    <note>Adam Oehlenschlägers fader, Joachim Conrad Oehlenschläger (1748-1827), var slotsforvalter på Frederiksborg Slot og organist ved Frederiksborg Kirke.</note>
+    <note editorial="true">Adam Oehlenschlägers fader, Joachim Conrad Oehlenschläger (1748-1827), var slotsforvalter på Frederiksborg Slot og organist ved Frederiksborg Kirke.</note>
   </notes>
   <source pages="106-110"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4542,6 +4577,9 @@ Vær da vor Tolk, hvor ei Læben har Ord.
   <indextitle>Prindsesse Caroline Amalias Fødselsdag. Juni 1828</indextitle>
   <linktitle>Prindsesse Caroline Amalias Fødselsdag. Juni 1828</linktitle>
   <firstline>Vor Amalias Fødselsfest</firstline>
+  <dates>
+    <event>1828-06-28</event>
+  </dates>
   <source pages="117-119"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4669,7 +4707,7 @@ Ustyrret Ro, da man mit Scepter brød.
 Jeg kan, hvad end ei nogen Konge kunde:
 Forlade glad min kongelige Stand;
 Mit Kongedom, min Magt en Anden unde.
-Og synge: Leve værdig Eftermand!''<note>Citerer Wessels <xref poem="wesselblandedea7"/>.</note>
+Og synge: Leve værdig Eftermand!''<note editorial="true">Citerer Wessels <xref poem="wesselblandedea7"/>.</note>
 
 Saa Wessel sang. Hvad kan vel bedre synge
 Den Fugledrot, som stander ved sit Maal?
@@ -4877,6 +4915,11 @@ Himlen med sin Varetægt!
   <toctitle>Danrigets Lykønskninger. Nov. 1828</toctitle>
   <firstline>Blandt alle Nords udstrakte Lande</firstline>
   <source pages="126-136"/>
+  <places>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5909,7 +5952,7 @@ Humanitetens Lilie der sin Stængel
   Staaer over Øresund.
 
 Nu længer ei med dundrende Kartover
-  Staaer Christian ved sin høie Mast;<note>Cf. Ewalds <xref poem="ewlad1999022205"/>.</note>
+  Staaer Christian ved sin høie Mast;<note editorial="true">Cf. Ewalds <xref poem="ewlad1999022205"/>.</note>
   Ei bære frosne Vover
   Carl Gustavs Kæmpelast.
 
@@ -6162,6 +6205,9 @@ Til vordende Slægters Beundring og Lyst!
     <event>1829-09-18</event>
   </dates>
   <source pages="160-162"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6553,7 +6599,8 @@ Naar du har tonet ved min Grav!
   <linktitle>Sang i Anledning af Kongens Fødselsfest. Febr. 1830</linktitle>
   <firstline>Blomstrer den varme, den kraftige Sommer</firstline>
   <dates>
-    <event>1830-02-04</event>
+    <performed>1830-02-04</performed>
+    <event>1830-01-28</event>
   </dates>
   <source pages="171"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7457,7 +7504,7 @@ Men ei med egen Sod at plette Hæder.
   <toctitle>Niebuhr. Jan. 1831</toctitle>
   <firstline>Europas Himmel graaner Aar for Aar</firstline>
   <notes>
-    <note>Barthold Georg Niebuhr (1776-1831), tysk statsmand og historiker. Søn af Carsten Niebuhr (1733-1815), tysk landmåler og eneste overlevende af den videnskabelige ekspedition (1761-1767) udsendt af <a person="frederik5">Frederik V</a> til Yemen og den nære Orient.</note>
+    <note editorial="true">Barthold Georg Niebuhr (1776-1831), tysk statsmand og historiker. Søn af Carsten Niebuhr (1733-1815), tysk landmåler og eneste overlevende af den videnskabelige ekspedition (1761-1767) udsendt af <a person="frederik5">Frederik V</a> til Yemen og den nære Orient.</note>
   </notes>
   <source pages="195-196"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -7478,7 +7525,7 @@ Som Niebuhrs Død. Han var et Kæmpelys.
 Skiøndt ofte Sygdom trued ham med Gys,
 Han brændte mægtig for hver Videnskab.
 Opfødt ved Daddelfrugt i Morgenland,
-Han drak af Kilden, hvor Ferdusi<note>Ferdosi (født omkr. 940, persisk: فردوسی), persisk digter.</note> drak;
+Han drak af Kilden, hvor Ferdusi<note editorial="true">Ferdosi (født omkr. 940, persisk: فردوسی), persisk digter.</note> drak;
 Han i sin Vandringstaske Blomsten stak,
 Og tog den gierne med til Tiberstrand.
 
@@ -7489,7 +7536,7 @@ Og paa hvert grønsværdækket Architrav.
 Nys Sandhed han i Eventyret saae,
 Nu blev Historien ham Eventyr;
 Og mangt et Træk skarpsynet han fornyer,
-Som selv en Livius<note>Titus Livius (59 f.Kr. - 17), romersk historiker.</note> ei tænkte paa.
+Som selv en Livius<note editorial="true">Titus Livius (59 f.Kr. - 17), romersk historiker.</note> ei tænkte paa.
 
 Hvo troer, at han, som Smag i Digtning fandt,
 Som lytted barnligrørt til Bækkens Fald,
@@ -7528,7 +7575,7 @@ Og Mnemosyne glemmer ei sit Savn.
   <toctitle>Schimmelmann. Febr. 1831</toctitle>
   <firstline>Sølyst! yndigt over Vandet</firstline>
   <notes>
-    <note>Ernst Heinrich lensgreve von Schimmelmann (1747-1831), dansk-tysk greve og politiker.</note>
+    <note editorial="true">Ernst Heinrich lensgreve von Schimmelmann (1747-1831), dansk-tysk greve og politiker.</note>
   </notes>
   <pictures>
     <picture artwork="jensenca/schimmelmann-1827"/>
@@ -7553,7 +7600,7 @@ Men i Fald du meer vil græde,
 Hamadryas! græd af Glæde:
 Schimmelmann har Palmen vundet,
 Hisset har han atter fundet
-Sin Emilie<note>Se Prams <xref poem="pram2018071803"/>.</note>, Charlotte
+Sin Emilie<note editorial="true">Se Prams <xref poem="pram2018071803"/>.</note>, Charlotte
 Langt fra denne dunkle Grotte.
 
   Da Emilies unge Hierte
@@ -8003,7 +8050,7 @@ Der sammenknytter denne Vennekiæde!
   <subtitle>Ballade.</subtitle>
   <firstline>Jeg gik mig ud over Byens Bro</firstline>
   <notes>
-    <note type="credits">Bidrag fra Svend Olav Andersen.</note>
+    <note editorial="true" type="credits">Bidrag fra Svend Olav Andersen.</note>
   </notes>
   <source pages="209-213"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8286,7 +8333,8 @@ Endskiøndt du denne Gang ei heller Noget fik.
   <linktitle>Sange for Skydeselskabet. Febr. 1833</linktitle>
   <firstline>Mens Oprørsaanden fiernt og nær</firstline>
   <dates>
-    <event>1833-02-07</event>
+    <performed>1833-02-07</performed>
+    <event>1833-01-28</event>
   </dates>
   <source pages="217-219"/>
   <keywords>frederik6</keywords>
@@ -8735,7 +8783,7 @@ Overrasker med Guds Kiærlighed.
   <title>Min Faders ældste Portrait</title>
   <firstline>Du hænger der igien, du gamle Billed</firstline>
   <pictures>
-    <picture src="oehlenschlaeger20190216117-p1.jpg" year="1785">Peder Faxøe: <i>Joachim C. Oehlenschläger</i>, 1785. Bakkehusmuseet.</picture>
+    <picture src="oehlenschlaeger20190216117-p1.jpg" year="1785" museum="bakkehuset">Peder Faxøe: <i>Joachim C. Oehlenschläger</i>, 1785.</picture>
   </pictures>
   <source pages="228-229"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -8787,6 +8835,9 @@ Naar du er der - og Skialden ikke meer.
   <firstline>Naar Skoven grøn i festligt Løv sig klæder</firstline>
   <source pages="230-231"/>
   <keywords>ewald</keywords>
+  <places>
+    <place ref="regensen" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9322,6 +9373,7 @@ Og ønske med min Reise mig til Lykke.
   <source pages="244-250"/>
   <places>
     <place ref="oslo" relation="subject" primary="true"/>
+    <place ref="valhalla" relation="mentioned"/>
   </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -9511,7 +9563,7 @@ Du skued i din gyldne Drøm.
 Gak ind, du høie Skialdekonning!
 Og stem din blanke Strængeleg;
 Der venter Saga dig, din Dronning,
-Med Kronen fra den norske Eeg.''<note>Welhavens digt kendes også som <xref poem="welhaven2001060903"/> fra <i>Digte</i> (1838).</note>
+Med Kronen fra den norske Eeg.''<note editorial="true">Welhavens digt kendes også som <xref poem="welhaven2001060903"/> fra <i>Digte</i> (1838).</note>
 
 ---
 
@@ -9547,7 +9599,7 @@ Paa Fredriksberg, det skiønne,
 Jeg Havet saae, den svenske Kyst
 Fra mine Bakker grønne.
 
-Der Edvard Storm<note>Digteren <a poet="storm">Edvard Storm</a> (1749-94), norsk forfatter og pædagog.</note> mig traf som Pog
+Der Edvard Storm<note editorial="true">Digteren <a poet="storm">Edvard Storm</a> (1749-94), norsk forfatter og pædagog.</note> mig traf som Pog
 Paa Siællands lave Bakke;
 Han tog og satte mig til Bog,
 Ham skal jeg evig takke.
@@ -9562,7 +9614,7 @@ Om Field, hvor Stormen tuder;
 Han lærte Skialden allerførst
 At kiende Nordens Guder.
 
-Derpaa den ædle Dichman<note>C.F. Dichman (1763-1806), norsk sprogfilosof og lærer.</note> kom,
+Derpaa den ædle Dichman<note editorial="true">C.F. Dichman (1763-1806), norsk sprogfilosof og lærer.</note> kom,
 En Normand, ikke mindre;
 Han viste mig i Verden om,
 Hvor Tidens Stierner lindre.
@@ -9697,7 +9749,7 @@ Snart er Koen ganske kullet, snart med Knap for Kæmpehorn.
 
   See, der stander Biælkehuset! Stedse jeg det mindes vil.
 Der for Norges ædle Sønner læste jeg mit Sørgespil:
-Der de hørte min <w>Margreta</w><note>Tragedien <i>Dronning Margretha</i> havde premiere på Det kongelige Teater den 4. december 1833.</note>; der dem Skialden første Gang
+Der de hørte min <w>Margreta</w><note editorial="true">Tragedien <i>Dronning Margretha</i> havde premiere på Det kongelige Teater den 4. december 1833.</note>; der dem Skialden første Gang
 Tolked med sin egen Stemme blussende sin egen Sang.
 Og i deres stærke Haandtryk og i deres milde Blik
 Rigelige Tak jeg høsted, hæderlige Løn jeg fik.
@@ -9811,7 +9863,7 @@ Og trænger du til en begeistrende Sang
 Om Fjelde fra Skabelsens vildeste Dage,
 Med dampende Fosse, med Stenenes Hang,
 Hvis Afgrunde spotte den Styrtendes Klage -
-Hornelen af Friman<note><a poet="frimannc">Claus Frimanns</a> prisdigt og literære gennembrud »Fieldet Horneelen i Norge« fra 1776.<!-- TODO: Tilføj Claus Frimanns digt. --></note>du her kan indkile;
+Hornelen af Friman<note editorial="true"><a poet="frimannc">Claus Frimanns</a> prisdigt og literære gennembrud »Fieldet Horneelen i Norge« fra 1776.<!-- TODO: Tilføj Claus Frimanns digt. --></note>du her kan indkile;
 Saa sparer du mig et halvt Hundrede Mile.
 
 En anden Gang kommer den studsende Skiald,
@@ -9842,7 +9894,7 @@ Og Elven nedskyller med Vældet
 Fra Stenens romantiske Blok;
 Og Boligen, simpel, men ædel,
 Er yndig og rummelig stor.
-Her Herman, den kraftige Wedel<note>Herman Wedel Jarlsberg (1779-1840), norsk greve og statsmand.</note>
+Her Herman, den kraftige Wedel<note editorial="true">Herman Wedel Jarlsberg (1779-1840), norsk greve og statsmand.</note>
 Omfavnet af Biergene boer.
 
 Men han er paa Reisen, ei hiemme.
@@ -9942,7 +9994,7 @@ Af Urnaturens Haand fremstillet,
 Før Kunstens Haand en Pensel fandt -
 
 Mon da du end Krogkleven saae?
-Nei! beed din <w>Dahl</w><note>J.C. Dahl (1788-1857), norsk maler.</note>, og lad ham male,
+Nei! beed din <w>Dahl</w><note editorial="true">J.C. Dahl (1788-1857), norsk maler.</note>, og lad ham male,
 Hvad mægter ingen Digters Tale,
 Den kongelige Klippevraa.
 Selv vil jeg under vaade Green
@@ -9994,7 +10046,7 @@ Og vinke ham til Paradiis.
   <title>Maleren</title>
   <firstline>Stille! hvad finder jeg der? Der sidder i Sandhed en Maler</firstline>
   <notes>
-    <note>J.P. Møller (1783-1854), dansk landskabsmaler.</note>
+    <note editorial="true">J.P. Møller (1783-1854), dansk landskabsmaler.</note>
   </notes>
   <source pages="262-263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -10872,7 +10924,7 @@ Og glæder mig - saa sikker og saa hiemme.
   Skiøndt ung min Røst jeg blandte med din Stemme,
 
 Kan jeg dog meer ei Biergmands-Livet prise.
-  ,,Wer ihre Tiefen mißt, ist Herr der Erde,''<note>Fra Novalis' <xref poem="novalis2005060502"/> som den yngre Oehlenschläger oversatte i <xref poem="oehlenschlaeger2001053003"/>.</note>
+  ,,Wer ihre Tiefen mißt, ist Herr der Erde,''<note editorial="true">Fra Novalis' <xref poem="novalis2005060502"/> som den yngre Oehlenschläger oversatte i <xref poem="oehlenschlaeger2001053003"/>.</note>
   Det skrev med flygtig Griffel du paa Flise.
 
 Ei Dybet glæde kan, men kun forfærde.
@@ -11124,7 +11176,7 @@ Med den varme Kingos Ord
 Til den skiønne Melodie,
 Som giør Siælen hellig fri,
 Gienklang af den Kraftens-Ode:
-,,Nu vel an! vær frisk til Mode.''<note>Der sigtes formentligt til Kingos salme <xref poem="kingo2001071402"/>, som synges på netop denne melodi.</note>
+,,Nu vel an! vær frisk til Mode.''<note editorial="true">Der sigtes formentligt til Kingos salme <xref poem="kingo2001071402"/>, som synges på netop denne melodi.</note>
 
 Styrket Kirken jeg forlader
 Ved den fromme Talers Kraft.

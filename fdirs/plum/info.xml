@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="plum" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik</firstname>
+    <lastname>Plum</lastname>
+  </name>
+  <!-- Livsdata: https://biografiskleksikon.lex.dk/Frederik_Plum -->
+  <period>
+    <born>
+      <date>1760-10-12</date>
+    </born>
+    <dead>
+      <date>1834-01-18</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>Frederik_Plum</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

@@ -4,7 +4,7 @@
   <title>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler</title>
   <year>1881</year>
   <notes>
-    <note>Første bind. Samlet af Lauritz N. V. Balslev og M. E. Matthiessen.</note>
+    <note editorial="true">Første bind. Samlet af Lauritz N. V. Balslev og M. E. Matthiessen.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1881-p1.jpg"><transcription>100 Sange til Brug ved Foredragsmøder og andre Sammenkomster samt i Skoler. Samlede af Lauritz N. V. Balslev og M. E. Matthiessen. Første Bind. Odense. Den Miloske Boghandel. 1881.</transcription></picture>
@@ -25,11 +25,11 @@
 </workhead>
 <workbody>
 
-<text id="antologierdk2026090602" author="antologierdk" skip-index="true">
+<text id="balslevlnv2026102401" author="balslevlnv" skip-index="true">
 <head>
   <title>Forord</title>
   <notes>
-    <note>Underskrevet Lauritz N. V. Balslev og M. E. Matthiessen.</note>
+    <note editorial="true">Underskrevet Lauritz N. V. Balslev og M. E. Matthiessen.</note>
   </notes>
   <source facsimile-pages="8"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1629,6 +1629,9 @@ tunge Slag drøned’ over Heden,
   <title><num>29.</num>Isted-Slaget</title>
   <subtitle>Norsk Folkemelodi.</subtitle>
   <firstline>Det var en Sommermorgen</firstline>
+  <dates>
+    <event>1850-07-25</event>
+  </dates>
   <source pages="45-46"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1868,7 +1871,7 @@ Fædrelandets Tak jer bringe.
 </body>
 </text>
 
-<text id="drachmann2026090601" author="drachmann" variant="drachmann2001112501">
+<text id="drachmann2026090601" author="drachmann" variant="drachmann2018020713">
 <head>
   <title><num>34.</num>De sønderjyske Piger</title>
   <subtitle>Mel. af Hillebrandt.</subtitle>
@@ -2148,6 +2151,9 @@ værn om vort herlige og ældgamle Nord!
   <subtitle>Mel. af H. Tofte.</subtitle>
   <firstline>Hvor de hvide Bræer skinne</firstline>
   <source pages="58-59"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2277,6 +2283,9 @@ læg os Ordet, som er Daad!
   <subtitle>Som: Og det var i Aaret 1807.</subtitle>
   <firstline>En Skaal for det blinkende Søernes Baand</firstline>
   <source pages="61-62"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2346,6 +2355,9 @@ med dem vil vi kæmpe og sejre!
   <subtitle>Mel. af B. Crusell.</subtitle>
   <firstline>Længe var Nordens</firstline>
   <source pages="63"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2377,6 +2389,9 @@ Folkenes Sag.
   <subtitle>Mel. af Stunz.</subtitle>
   <firstline>Unge Gjenbyrds Liv i Norden!</firstline>
   <source pages="63-64"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3238,6 +3253,9 @@ med røde Roser fletter hun nu sine gule Haar.
   <subtitle>Mel. af Lindblad.</subtitle>
   <firstline>Vintren rasat ut bland våra fjällar</firstline>
   <source pages="84-85"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4490,7 +4508,7 @@ til det elskte fjærne.
 </body>
 </text>
 
-<text id="antologierdk2026090601" author="antologierdk" skip-index="true">
+<text id="anonym1800dk2026102409" author="anonym1800dk" skip-index="true">
 <head>
   <title><num>94.</num>Aftenen i Hjemmet</title>
   <subtitle>Som: Det er saa yndigt at følges ad.</subtitle>
@@ -4576,7 +4594,7 @@ fra Paradiset i Østen.
   <subtitle>Egen Mel.</subtitle>
   <firstline>Naar Solen ganger til Hvile</firstline>
   <notes>
-    <note>Af Valdemar Adolph Thisted. Melodi af Sophie Dedekam.</note>
+    <note editorial="true">Af Valdemar Adolph Thisted. Melodi af Sophie Dedekam.</note>
   </notes>
   <source pages="117-118"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

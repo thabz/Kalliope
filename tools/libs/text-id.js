@@ -40,6 +40,9 @@ export const normalizeDateStamp = value => {
 };
 
 export const textIdError = ({ id, poetId }) => {
+  if (id.startsWith('antologier') === true || poetId.startsWith('antologier') === true) {
+    return `Tekst-id'et ${id} må ikke bruge antologipræfiks; angiv digterens id eller en anonym*-post ved ukendt forfatter.`;
+  }
   if (poetId.length === 0) {
     return `Teksten ${id} har intet effektivt digter-id.`;
   }
@@ -76,6 +79,9 @@ export const textIdParts = ({ id, poetId }) => {
 };
 
 export const nextTextId = ({ poetId, dateStamp, existingIds }) => {
+  if (poetId.startsWith('antologier') === true) {
+    throw new Error('Antologipræfiks er ikke tilladt; angiv --author med digterens id eller en anonym*-post ved ukendt forfatter.');
+  }
   if (poetId.length === 0) {
     throw new Error('Digter-id må ikke være tomt.');
   }

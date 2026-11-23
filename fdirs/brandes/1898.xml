@@ -2188,6 +2188,9 @@ og fik Absolutionen forud.
     <written>1871-07-07</written>
   </dates>
   <source pages="97-98"/>
+  <places>
+    <place ref="st-marks-square" relation="writtenAt"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2815,6 +2818,9 @@ i stille Lykke lagde han sin Haand.
   <title>Jusja</title>
   <firstline>Ja, kjære, du var Drømmen</firstline>
   <source pages="123-125"/>
+  <places>
+    <place ref="poland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2939,7 +2945,7 @@ det alt er dit, kun dit, fordi kun du kan elske.
   <indextitle>Til en Søster 1-2</indextitle>
   <firstline>Du ene, du kjære</firstline>
   <notes>
-    <note>Mottoet er de to første verslinjer af Algernon Charles Swinburnes dedikation ,,To Joseph Mazzini'' i <i>Songs Before Sunrise</i> (1871): <xref poem="swinburne2026090701"/>.</note>
+    <note editorial="true">Mottoet er de to første verslinjer af Algernon Charles Swinburnes dedikation ,,To Joseph Mazzini'' i <i>Songs Before Sunrise</i> (1871): <xref poem="swinburne2026090701"/>.</note>
   </notes>
   <source pages="128-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>

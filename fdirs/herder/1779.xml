@@ -1,7 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kalliopework id="1779" author="herder" status="incomplete" type="poetry">
 <workhead>
-  <title>Volkslieder II</title>
+  <title>Volkslieder</title>
+  <subtitle>
+    <line>Nebst untermischten andern Stücken.</line>
+    <line>Zweiter Theil.</line>
+  </subtitle>
   <year>1779</year>
+  <source href="https://archive.org/details/HerderVolkslieder177892Bde">
+    <author id="herder">Johann Gottfried Herder</author>
+    <title>Volkslieder. Nebst untermischten andern Stücken</title>
+    <volume>2</volume>
+    <place>Leipzig</place>
+    <publisher>Weygandsche Buchhandlung</publisher>
+    <year>1779</year>
+  </source>
+  <pagebreaks/>
 </workhead>
+<workbody>
+<text id="herder2026103001">
+<head>
+  <title><num>15.</num>Weg der Liebe</title>
+  <subtitle>
+    <line>Englisch.</line>
+    <line>Erster Theil.</line>
+  </subtitle>
+  <firstline>Ueber die Berge</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af den engelske vise <xref type="translation" poem="anonymuk2026103001"/>.</note>
+  </notes>
+  <source pages="41-42"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ueber die Berge,
+    Ueber die Wellen,
+Unter den Gräbern,
+    Unter den Quellen,
+Ueber Fluthen und Seen,
+    In der Abgründe Steg,
+Ueber Felsen, über Höhen,
+    Findt Liebe den Weg!
+
+In Ritzen, in Falten,
+    Wo der Feurwurm nicht liegt,
+In Höhlen, in Spalten,
+    Wo die Fliege nicht kriecht,
+Wo Mücken nicht fliegen
+    Und schlüpfen hinweg;
+Kommt Liebe, sie wird siegen
+    Und finden den Weg!
+
+<pb n="42" facs="429.jpg"/>Sprecht, Amor sey nimmer
+    Zu fürchten, das Kind!
+Lacht über ihn immer
+    Als Flüchtling, als blind
+Und schließt ihn durch Riegel
+    Vom Taglicht hinweg;
+Durch Schlösser und Siegel
+    Findt Liebe den Weg.
+
+Wenn Phönix und Adler
+    Sich unter euch beugt,
+Wenn Drache, wenn Tyger
+    Gefällig sich neigt,
+Die Löwin läßt kriegen
+    Den Raub sich hinweg;
+Kommt Liebe, sie wird siegen
+    Und finden den Weg.
+</poetry>
+</body>
+</text>
+
+<text id="herder2026111601" variant="herder2001082507" lang="de">
+<head>
+  <title><num>5.</num>Edward</title>
+  <subtitle>Schottisch.</subtitle>
+  <firstline>Dein Schwert, wie ists von Blut so roth?</firstline>
+  <source pages="207-209" facsimile-pages="595-597"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Dein Schwert, wie ists von Blut so roth?
+        Edward, Edward!
+Dein Schwert, wie ists von Blut so roth,
+    Und gehst so traurig her? — O!
+O ich hab geschlagen meinen Geyer todt,
+        Mutter, Mutter!
+O ich hab geschlagen meinen Geyer todt,
+    Und keinen hab ich wie Er — O!
+
+Dein’s Geyers Blut ist nicht so roth,
+        Edward, Edward!
+Dein’s Geyers Blut ist nicht so roth,
+    Mein Sohn, bekenn mir frey — O!
+O ich hab geschlagen mein Rothroß todt,
+        Mutter, Mutter!
+O ich hab geschlagen mein Rothroß todt.
+    Und ’s war so stolz und treu — O!
+
+<pb n="208" facs="595.jpg"/>Dein Roß war alt und hasts nicht noth,
+        Edward, Edward!
+Dein Roß war alt und hasts nicht noth,
+    Dich drückt ein ander Schmerz — O!
+O ich hab geschlagen meinen Vater todt,
+        Mutter, Mutter!
+O ich hab geschlagen meinen Vater todt,
+    Und weh, weh ist mein Herz — O!
+
+Und was für Buße willt du nun thun?
+        Edward, Edward!
+Und was für Buße willt du nun thun?
+    Mein Sohn bekenn mir mehr — O!
+Auf Erden soll mein Fuß nicht ruhn,
+        Mutter, Mutter!
+Auf Erden soll mein Fuß nicht ruhn,
+    Will gehn fern übers Meer — O!
+
+Und was soll werden dein Hof und Hall!
+        Edward, Edward!
+Und was soll werden dein Hof und Hall?
+    So herrlich sonst und schön — O!
+Ich laß es stehn, bis es sink und fall’,
+        Mutter Mutter!
+<pb n="209" facs="596.jpg"/>Ich laß es stehn, bis es sink und fall’,
+    Mag nie es wieder sehn — O!
+
+Und was soll werden dein Weib und Kind?
+        Edward, Edward!
+Und was soll werden dein Weib und Kind,
+    Wann du gehst über Meer? — O!
+Die Welt ist groß, laß sie bettlen drinn,
+        Mutter, Mutter!
+Die Welt ist groß, laß sie bettlen drinn,
+    Ich seh sie nimmermehr — O!
+
+Und was willt du lassen deiner Mutter theur?
+        Edward, Edward!
+Und was willt du lassen deiner Mutter theur?
+    Mein Sohn, das sage mir — O!
+Fluch will ich Euch lassen und höllisch Feur,
+        Mutter, Mutter!
+Fluch will ich Euch lassen und höllisch Feur,
+    Denn ihr, ihr riethets mir! — O!
+</poetry>
+</body>
+</text>
+
+</workbody>
 </kalliopework>

@@ -32,7 +32,8 @@ Det historisk korrekte forlæg foretrækkes, men er ikke et adgangskrav: manglen
 på det må ikke blokere for indsættelsen af en original, som kan identificeres
 sikkert i en nyere udgave. Den ældste udgave har ingen automatisk forrang. En
 senere redaktionel eller moderniseret tekst må kun bruges, når forskellene ikke
-skaber tvivl om identifikationen; angiv da tydeligt, at kilden er nyere.
+skaber tvivl om identifikationen; dokumentér den nyere kilde på originalteksten
+og i PR-beskrivelsen.
 
 Kontrollér bibliografiske oplysninger mod titelblad, kolofon,
 bibliotekskatalog eller en tilsvarende autoritativ kilde. Hvis valget kræver
@@ -53,6 +54,31 @@ note. Relationens mål skal være tekst-id'et for den valgte tekstforekomst, ikk
 blot forfatteren. En nyere tekstforekomst kan bruges, når originalværket er
 sikkert identificeret, og et historisk korrekt forlæg ikke er tilgængeligt.
 
+Forlægsnoten skal nævne originalforfatteren, når denne er kendt, og forklare relationen, fx
+`<note>Oversættelse af Goethes <xref type="translation" poem="..."/>.</note>`.
+»Gendigtning af«, »Fri gendigtning af« og andre forklarende formuleringer er
+også tilladt, ligesom præciseringer og flere digtlinks i samme note. Digttitlen
+og citationstegnene leveres af linkets visning. Digternavnet skrives som almindelig tekst;
+kun digtlinks på formen `<xref poem="..."/>` må være klikbare i forlægsnoten. En note må ikke kun bestå af
+et digtlink; forfatterens navn alene er heller ikke en forklaring.
+
+Både fuldt navn og efternavn alene er tilladt. Vælg efter sammenhængen:
+»Byron«, »Schiller« og »Goethe« kan stå alene, mens fx »Møller« kan kræve mere
+af navnet for at identificere personen entydigt. Der kræves ikke konsekvent
+brug af hverken fuldt navn eller efternavn alene.
+
+Forlægsnoten beskriver relationen mellem teksterne. Oplysninger om måltekstens
+registrerede udgave, kilde eller indførelse hører hjemme på målteksten selv,
+ikke i den henvisende note. Skriv fx ikke »Originalteksten er registreret efter
+udgaven fra 1847.« i oversættelsens forlægsnote. Oplysningerne skal kunne ændres
+på målteksten uden at efterlade forældede beskrivelser ved de indgående links.
+Undlad også generiske forbehold som »det benyttede eksemplar er ikke
+dokumenteret« og »oversætterens benyttede udgave er ikke identificeret« i
+forlægsnoten. Dokumentér udgavevalget og usikkerheden på originalteksten og i
+PR-beskrivelsen.
+Dokumenterede oplysninger om oversætterens historiske brug af et forlæg og
+tekstlige forskelle er fortsat relevante for relationen.
+
 Eksisterende relationer migreres ikke automatisk. Ret dem kun, når opgaven og
 kildegrundlaget giver belæg for en mere præcis relation.
 
@@ -65,7 +91,7 @@ En trykt kilde citeres i rækkefølgen:
 Brug den trykte publikations titelblad og kolofon som grundlag. Sidetal angives
 i `source/@pages`; et stabilt link til en digitalisering angives i
 `source/@href`. Titlen må ikke omsluttes af et eksternt `<a>`-element. Rendereren
-viser selv den lille klikbare linkpil fra `href`.
+viser selv det krøllede kildeikon `↬` fra `href`.
 
 For et almindeligt publikationsværk står den fulde bibliografiske kilde i
 `<workhead>`, mens hvert digt peger på kilden og angiver sider:
@@ -92,12 +118,23 @@ direkte i hvert berørt digts `<head>`, også når flere digte bruger samme kild
 ```
 
 Interne Kalliope-links som `<a poet="...">` må fortsat bruges i en
-kildeangivelse. Et `<source>` må derimod ikke indeholde `<a href="...">`; det
+kildeangivelse. Et `<source>` må derimod ikke indeholde eksterne `<a href="...">`; det
 eksterne link skal ligge i `source/@href`.
 
 Brug `<source>` til kildeproveniens. En `<note>` må ikke bruges som erstatning
 med formuleringen »Teksten følger ...«. Bevar kun selvstændige tekstkritiske
 eller historiske oplysninger som noter.
+
+## Eksterne kildehenvisninger
+
+Vis eksterne kildehenvisninger med Kalliopes krøllede kildeikon `↬`, aldrig
+som tekstlinks. Brug `source/@href` til tekstens kilde; i en selvstændig
+historisk eller tekstkritisk note står citationen som tekst efterfulgt af
+`<a href="https://example.org/digitalisering">↬</a>`. Interne tekstlinks er tilladt.
+Link aldrig direkte til digte på eksterne hjemmesider, heller ikke med et ikon.
+Indsæt digtet på Kalliope og link internt, eller giv en bibliografisk henvisning
+til en trykt kilde. Et link til digitaliseringen af den trykte kilde må vises
+med kildeikonet. Dette gælder også originaltekster til oversættelser.
 
 ## Kontrol før aflevering
 

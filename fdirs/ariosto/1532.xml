@@ -4,7 +4,7 @@
   <title>Orlando Furioso</title>
   <year>1532</year>
   <notes>
-    <note>Første udgave af <i>Orlando Furioso</i> i 40 sange udkom 1516. Denne, tredje og sidste udgave, i 46 sange, udkom 8. september 1532.</note>
+    <note editorial="true">Første udgave af <i>Orlando Furioso</i> i 40 sange udkom 1516. Denne, tredje og sidste udgave, i 46 sange, udkom 8. september 1532.</note>
   </notes>
   <source href="http://www.gutenberg.org/files/3747/3747-0.txt">Ludovico Ariosto: <i>Orlando Furioso</i>.</source>
 </workhead>
@@ -14,6 +14,9 @@
 <head>
   <title><num>1.</num>Canto primo</title>
   <firstline>Le donne, i cavallier, l'arme, gli amori</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5952,6 +5955,9 @@ Quel che seguì, ne l'altro canto è scritto.
 <head>
   <title><num>9.</num>Canto nono</title>
   <firstline>Che non può far d'un cor ch'abbia suggetto</firstline>
+  <places>
+    <place ref="antwerp" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -10228,6 +10234,10 @@ ne l'altro canto l'ordine e la mostra.
 <head>
   <title><num>14.</num>Canto quattordicesimo</title>
   <firstline>Nei molti assalti e nei crudel conflitti</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -19127,6 +19137,9 @@ Di quel ch'avvenne, all'altro canto io parlo.
 <head>
   <title><num>22.</num>Canto ventiduesimo</title>
   <firstline>Cortesi donne e grate al vostro amante</firstline>
+  <places>
+    <place ref="thrace" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -23185,6 +23198,9 @@ di questo canto, e riposarmi chieggio.
 <head>
   <title><num>26.</num>Canto ventiseiesimo</title>
   <firstline>Cortesi donne ebbe l'antiqua etade</firstline>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -26629,6 +26645,10 @@ quel che per troppo dire accade al vecchio.
 <head>
   <title><num>29.</num>Canto ventinovesimo</title>
   <firstline>O degli uomini inferma e instabil mente!</firstline>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -30174,6 +30194,9 @@ Quel che seguì dirò ne l'altro canto.
 <head>
   <title><num>33.</num>Canto trentatreesimo</title>
   <firstline>Timagora, Parrasio, Polignoto</firstline>
+  <places>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -31337,6 +31360,9 @@ finire il canto, e riposar mi voglio.
 <head>
   <title><num>34.</num>Canto trentaquattresimo</title>
   <firstline>Oh famelice, inique e fiere arpie</firstline>
+  <places>
+    <place ref="thrace" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

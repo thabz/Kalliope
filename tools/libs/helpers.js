@@ -1,12 +1,9 @@
+import { resizeImage } from './resize-image.js';
+import { buildThumbnails } from './thumbnails.js';
 import fs from 'fs';
 import { DOMParser } from '@xmldom/xmldom';
 import * as bible from './bible-abbr.js';
-import path from 'path';
-import plimit from 'p-limit';
 import sharp from 'sharp';
-import * as CommonData from '../../common/commondata.js';
-import * as ImagePaths from '../../common/imagepaths.js';
-import { createProgressReporter } from '../build-static/progress.js';
 
 const envInt = (name, fallback) => {
   const value = parseInt(process.env[name], 10);
@@ -150,8 +147,17 @@ const balanceMultilineTags = html => {
 const collapseMultilineNotes = html =>
   html.replace(
     /<(footnote|note)(\s+[^>]*)?>([\s\S]*?)<\/\1>/g,
-    (_, tagName, attributes = '', content) =>
-      `<${tagName}${attributes}>${content.replace(/\s*\n\s*/g, ' ')}</${tagName}>`
+    (_, tagName, attributes = '', content) => {
+      // Keep note verses inside the enclosing main-text line during splitting.
+      const withVerseBreaks = content.replace(
+        /(<poetry\b[^>]*>)([\s\S]*?)(<\/poetry>)/g,
+        (_, opening, verses, closing) => opening + verses
+          .replace(/\r\n?/g, '\n')
+          .replace(/^\n|\n$/g, '')
+          .replace(/\n/g, '<br/>') + closing,
+      );
+      return `<${tagName}${attributes}>${withVerseBreaks.replace(/\s*\n\s*/g, ' ')}</${tagName}>`;
+    }
   );
 
 const validateContentHtmlFragments = (lines, context = {}) => {
@@ -185,14 +191,9 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     .replace(/&lt;/g, escapedLessThanPlaceholder)
     .replace(/&gt;/g, escapedGreaterThanPlaceholder);
   const regexp = /<xref.*?(digt|poem|keyword|work|bible|dict)=['"]([^'"]*)['"][^>]*>/;
-  if (isPoetry) {
-    // Marker strofe numre
-    html = html
-      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
-      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
-      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
-  }
   html = html
+    // Correction comments are inline documentation; preserve surrounding whitespace.
+    .replace(/<!--\s*Rettelsesark:[\s\S]*?-->/g, '')
     .replace(/\n/g, '::NEWLINE-PLACEHOLDER::')
     .replace(
       /(^|::NEWLINE-PLACEHOLDER::)[ \t]*<!--.*?-->[ \t]*(::NEWLINE-PLACEHOLDER::|$)/g,
@@ -203,6 +204,18 @@ const htmlToXml = (html, collected, isPoetry, context) => {
     })
     .replace(/::NEWLINE-PLACEHOLDER::/g, '\n');
   html = collapseMultilineNotes(html);
+  if (['front', 'castList', 'picture'].includes(context?.blockType)) {
+    // Structural source line breaks are formatting, not separate text lines.
+    // Collapse notes first so embedded note poetry keeps its verse breaks.
+    html = html.trim().replace(/\r?\n[ \t]*/g, ' ');
+  }
+  if (isPoetry) {
+    // Marker strofenumre i hovedteksten efter sammenfoldning af noterne.
+    html = html
+      .replace(/^(\d+\.?)\s*$/gm, '<versenum>$1</versenum>')
+      .replace(/^[ \t]*([IVXLCDM]+\.?) *$/gm, '<versenum>$1</versenum>')
+      .replace(/^\[(\d+\.?)\]\s*$/gm, '<versenum>[$1]</versenum>');
+  }
   let decoded = decodeXmlCharacterReferences(
     replaceDashes(
       html
@@ -357,133 +370,6 @@ const htmlToXml = (html, collected, isPoetry, context) => {
   });
 
   return validateContentHtmlFragments(lines, context);
-};
-
-const resizeImage = async (inputfile, outputfile, maxWidth, options = {}) => {
-  try {
-    const resizeOptions = {
-      width: maxWidth,
-      withoutEnlargement: true,
-    };
-    if (options.fit != null) {
-      const metadata = await sharp(inputfile).metadata();
-      const squareSize = Math.min(
-        maxWidth,
-        metadata.width ?? maxWidth,
-        metadata.height ?? maxWidth
-      );
-      resizeOptions.width = squareSize;
-      resizeOptions.height = squareSize;
-      resizeOptions.fit = options.fit;
-    }
-    const image = sharp(inputfile).resize(resizeOptions);
-    image.jpeg({ quality: options.quality ?? 82 });
-    await image.toFile(outputfile);
-    return outputfile;
-  } catch (err) {
-    console.log(err);
-    console.log(outputfile);
-    throw err;
-  }
-};
-
-const thumbnailConcurrency = Math.max(
-  1,
-  parseInt(process.env.KALLIOPE_THUMBNAIL_CONCURRENCY, 10) || 1
-);
-const limit = plimit(thumbnailConcurrency);
-
-const defaultThumbnailOutputPath = (fullFilename, width, ext) => {
-  return `public${ImagePaths.thumbnailSrc(
-    fullFilename.replace(/^public/, ''),
-    width,
-    ext
-  )}`;
-};
-
-const buildThumbnails = async (
-  topFolder,
-  isFileModifiedMethod,
-  options = {}
-) => {
-  const tasks = [];
-  const sourceFiles = [];
-  const progress = createProgressReporter(
-    `Genererede thumbnails i ${topFolder}`,
-    100
-  );
-  const thumbnailOutputPath =
-    options.thumbnailOutputPath || defaultThumbnailOutputPath;
-  const pipeJoinedExts = CommonData.availableImageFormats.join('|');
-  const skipRegExps = new RegExp(`-w\\d+\\.(${pipeJoinedExts})$`);
-
-  const handleDirRecursive = dirname => {
-    if (!fs.existsSync(dirname)) {
-      console.log(`${dirname} mangler, så genererer ingen thumbs deri.`);
-      return;
-    }
-    if (dirname.match(/\/social$/)) {
-      return;
-    }
-    fs.readdirSync(dirname).forEach(filename => {
-      if (filename === 't') {
-        return;
-      }
-      const fullFilename = path.join(dirname, filename);
-      const stats = fs.statSync(fullFilename);
-      if (stats.isDirectory()) {
-        handleDirRecursive(fullFilename);
-      } else if (
-        stats.isFile() &&
-        filename.endsWith('.jpg') &&
-        !skipRegExps.test(filename)
-      ) {
-        sourceFiles.push({ fullFilename, mtimeMs: stats.mtimeMs });
-      }
-    });
-  };
-
-  handleDirRecursive(topFolder);
-  sourceFiles.sort((left, right) => {
-    const mtimeDifference = right.mtimeMs - left.mtimeMs;
-    return mtimeDifference !== 0
-      ? mtimeDifference
-      : left.fullFilename.localeCompare(right.fullFilename);
-  });
-
-  sourceFiles.forEach(({ fullFilename, mtimeMs: sourceMtime }) => {
-    const hasModificationCache = isFileModifiedMethod != null;
-    const sourceModified =
-      hasModificationCache && isFileModifiedMethod(fullFilename);
-    CommonData.availableImageFormats.forEach(ext => {
-      CommonData.availableImageWidths.forEach(width => {
-        const outputfile = thumbnailOutputPath(fullFilename, width, ext);
-        safeMkdir(outputfile.replace(/\/[^\/]+?$/, ''));
-        const outputMtime = fileModifiedTime(outputfile);
-        if (
-          outputMtime == null ||
-          (hasModificationCache
-            ? sourceModified
-            : sourceMtime > outputMtime)
-        ) {
-          tasks.push(
-            limit(async () => {
-              const result = await resizeImage(
-                fullFilename,
-                outputfile,
-                width
-              );
-              progress.increment();
-              return result;
-            })
-          );
-        }
-      });
-    });
-  });
-
-  await Promise.all(tasks);
-  progress.finish();
 };
 
 export {

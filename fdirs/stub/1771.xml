@@ -4,7 +4,7 @@
   <title>Arier og andre poetiske Stykker</title>
   <year>1771</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture type="titlepage" src="1771-p1.jpg"><transcription>Arier / og andre / Poetiske Stykker. // Af / Ambr. Stub. // Kiöbenhavn 1771. / Trykt hos H. J. Graae, boende ved Gammel / Strand.</transcription></picture>
@@ -41,9 +41,12 @@ Forfatteren af denne Samling, er <sc>Ambrosius Stub</sc>, hvis Levnets Löb inde
   <title>Tanker</title>
   <firstline>Hvad regner Naturens Ransagere op</firstline>
   <notes>
-    <note>Cf. <xref bible="bibel1korint02,2"/></note>
+    <note editorial="true">Cf. <xref bible="bibel1korint02,2"/></note>
   </notes>
   <source pages="7-8"/>
+  <places>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -102,11 +105,14 @@ See, der er den i din Haand,
 </body>
 </text>
 
-<text id="stub2019061403" variant="stubgudeligea2">
+<text id="stub2019061403" aliases="stubgudeligea2">
 <head>
   <title>Aria</title>
   <subtitle><i>Melod.</i> Söde Jesu, ald min tragten, etc.</subtitle>
   <firstline>För din hellig Lyst blev syndig</firstline>
+  <notes>
+    <note editorial="true">Cf. <xref bible="bibel1mose3,6-24"/></note>
+  </notes>
   <source pages="10-11"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -151,7 +157,7 @@ Han bar Medynk, han blev mild.
 </body>
 </text>
 
-<text id="stub2019061404" variant="stubgudeligea3">
+<text id="stub2019061404" aliases="stubgudeligea3">
 <head>
   <title>Aria</title>
   <firstline>Höye Gud! vor Fald desværre</firstline>
@@ -245,7 +251,7 @@ I din Synds forfulnet Söle!
   <title>Aria</title>
   <firstline>Bedrövet Verdens Glæde!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Jan Anton Hartogsveld.</note>
+    <note editorial="true" type="credits">Bidrag fra Jan Anton Hartogsveld.</note>
     <!-- Oprindelig kilde er <i>Samlede Digte</i>, v. Henning Fonsmark, Hans Reitzel 1961, pp. 11-12. -->
   </notes>
   <source pages="16-18"/>
@@ -448,9 +454,12 @@ I Gud og <i>Jesu</i> alle Ting,
   <title>Aria</title>
   <firstline>Giv Sag og Sögsmaal, naar du vil</firstline>
   <notes>
-    <note>Mottoet stammer fra <xref bible="bibel1johannes02,1"/>.</note>
+    <note editorial="true">Mottoet stammer fra <xref bible="bibel1johannes02,1"/>.</note>
   </notes>
   <source pages="25-27"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -513,7 +522,7 @@ At jeg kan vinde Himmerig
   <suptitle>Act IV, 12. Der er ikke Salighed i nogen anden etc.</suptitle>
   <firstline>Eya! hvor Synden trykker</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelapostlene04,12"/></note>
+    <note editorial="true">Cf. <xref bible="bibelapostlene04,12"/></note>
   </notes>
   <source pages="28-30"/>
   <quality>korrektur1,kilde,side</quality>
@@ -587,12 +596,12 @@ Saa har jeg Himmerig.
 </body>
 </text>
 
-<text id="stub2019061406" variant="stubgudeligea5">
+<text id="stub2019061406" aliases="stubgudeligea5">
 <head>
   <suptitle>Der er ey noget andet Navn under Himmelen, som er givet etc.</suptitle>
   <firstline>Et varigt Vel er dog engang at finde</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelapostlene04,12"/></note>
+    <note editorial="true">Cf. <xref bible="bibelapostlene04,12"/></note>
   </notes>
   <source pages="31-32"/>
   <quality>korrektur1,kilde,side</quality>
@@ -640,7 +649,7 @@ Lad mig her værdelig mit Navn af <i>Christo</i> bære,
   <title>Aria</title>
   <firstline>En Röver og til Paradiis</firstline>
   <notes>
-    <note>Mottoet er <xref bible="bibellukas23,43"/>.</note>
+    <note editorial="true">Mottoet er <xref bible="bibellukas23,43"/>.</note>
   </notes>
   <source pages="33-34"/>
   <quality>korrektur1,kilde,side</quality>
@@ -695,7 +704,7 @@ Min Frelser! frels min Siel fra Sathans Röver-Kloe.
   <suptitle><i>Math</i>. 27, 46, <i>Jesus</i> raabte höyt og sagde: Min Gud, min Gud etc.</suptitle>
   <firstline>O! höye Raab, hvis lige aldrig hörtes</firstline>
   <notes>
-    <note>Mottoet er <xref bible="bibelmatt27,46"/>.</note>
+    <note editorial="true">Mottoet er <xref bible="bibelmatt27,46"/>.</note>
   </notes>
   <source pages="35-36"/>
   <quality>korrektur1,kilde,side</quality>
@@ -711,7 +720,7 @@ Min Gud! min Gud! hvi har du (i din Vrede)
 Forladt mig nu i Helveds grusom Heede?
 
 <nonum><center>2.</center></nonum>
-Ald Verdens Synd gik <i>Jesus</i> her i möde<note>möde] mòde</note>
+Ald Verdens Synd gik <i>Jesus</i> her i möde<note editorial="true">möde] mòde</note>
   Ald Syndens Straf blev nu paa <i>Jesum</i> lagt,
 Ald Straffens Vee betog ham för han döde;
   Ja evig Död blev her af Livet smagt;
@@ -751,7 +760,7 @@ Skal naae din Gud og finde Himlen aaben.
   <title>Aria</title>
   <firstline>Lyksalig endte Dag! min Frelser endte sine Dage</firstline>
   <notes>
-    <note>Mottoet er <xref bible="bibellukas23,46"/>.</note>
+    <note editorial="true">Mottoet er <xref bible="bibellukas23,46"/>.</note>
   </notes>
   <source pages="37-38"/>
   <quality>korrektur1,kilde,side</quality>
@@ -906,7 +915,7 @@ Den skal findes værd at ære,
 </body>
 </text>
 
-<text id="stub2019061409" variant="stubmoralskea0">
+<text id="stub2019061409" aliases="stubmoralskea0">
 <head>
   <firstline>Hvad render j Verdens Olympiske Giekke</firstline>
   <source pages="45"/>
@@ -976,7 +985,7 @@ Midt paa Bölgen, midt paa Isen
 </head>
 <body>
 <poetry>
-Jeg har kun<note>kun] knn</note> Dyden kiær,
+Jeg har kun<note editorial="true">kun] knn</note> Dyden kiær,
     Den blinde Elskov driller
     Den volder Hiernen Griller,
 Ja Hiertet seer i sær,
@@ -1054,12 +1063,12 @@ Her hviler en lyksalig, trods Lykkens Laan og Krav.
 </body>
 </text>
 
-<text id="stub2019061413" variant="stub1999080201">
+<text id="stub2019061413" aliases="stub1999080201">
 <head>
   <title>Aria</title>
   <firstline>Den kiedsom Vinter gik sin Gang</firstline>
   <notes>
-    <note type="credits">Bidrag fra Søren Mogensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Søren Mogensen.</note>
   </notes>
   <source pages="52-56"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1296,12 +1305,12 @@ Liig, ærlig, kiærlig, vil du meer, saa lev, og döe med mig.
 </body>
 </text>
 
-<text id="stub2019061415" variant="stubmoralskea3">
+<text id="stub2019061415" variant="stub2026101270">
 <head>
   <title>Aria</title>
   <firstline>Ey saa hvi tripper du saa fast</firstline>
   <notes>
-    <note type="credits">Bidrag fra Brian Bentsen.</note>
+    <note editorial="true" type="credits">Bidrag fra Brian Bentsen.</note>
   </notes>
   <source pages="63-64"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1348,6 +1357,9 @@ Den eene Ungdom har den anden höyt behov;
   <indextitle>Til Kong Friderich den Femte</indextitle>
   <linktitle>Til Kong Friderich den Femte</linktitle>
   <firstline>O Tvilling-Rigets Födsels-Dag!</firstline>
+  <dates>
+    <event>1753-03-31</event>
+  </dates>
   <source pages="65-66"/>
   <keywords>frederik5</keywords>
   <quality>korrektur1,kilde,side</quality>
@@ -1373,7 +1385,7 @@ Monarchens Moder, Nordens Held
     <sc>Sophie Magdalene</sc>!
 Hun leve vore Önsker op,
 Saa stiger Konge-Stammens Top,
-    Og Hun seer fleere Greene. :,:<note>Manglenende <i>:,:</i> tilføjet</note>
+    Og Hun seer fleere Greene. :,:<note editorial="true">Manglenende <i>:,:</i> tilføjet</note>
 
 Ufödtes Herlighed staae grön,
 Og blomstre ved vor Konges Sön
@@ -1399,7 +1411,7 @@ Regieres i lyksalig Stand
 </body>
 </text>
 
-<text id="stub2019061416" variant="stubmoralskea7">
+<text id="stub2019061416" aliases="stubmoralskea7">
 <head>
   <title>Betænkning over Tiden</title>
   <firstline>Hver Time er forgyldt og Viiseren tillige</firstline>
@@ -1417,7 +1429,7 @@ Saa merkte vi tilgavns, hvad Klokken den var slagen.
 </body>
 </text>
 
-<text id="stub2019061417" variant="stubmoralskea4">
+<text id="stub2019061417" aliases="stubmoralskea4">
 <head>
   <title>Aria</title>
   <firstline>Jeg laver tynd Caffe</firstline>
@@ -1485,7 +1497,7 @@ Forsigtighed lykkes ved Roeret paa Vandet!
   Oprigtighed havne med Gods i Behold!
 Velsignelse fölge med alle de Vahre!
 Hvis Eiermænd erlig vil unde og svare
-  Den Told, som bör<note>bör] bòr</note> Told!<note>Allusion til <xref bible="bibelrom13,7"/>.</note>
+  Den Told, som bör<note editorial="true">bör] bòr</note> Told!<note editorial="true">Allusion til <xref bible="bibelrom13,7"/>.</note>
 </poetry>
 </body>
 </text>
@@ -1534,7 +1546,7 @@ Af Frue Mama!
 </body>
 </text>
 
-<text id="stub2019061421" variant="stubmoralskea11">
+<text id="stub2019061421" aliases="stubmoralskea11">
 <head>
   <title>En Drikke-Skaal</title>
   <subtitle>giort <i>ex tempore</i> til <i>Neuberg</i>, som var Commanderende General i Fyen.</subtitle>
@@ -1554,7 +1566,7 @@ Hans Fiender blive sorte!
 </body>
 </text>
 
-<text id="stub2019061422" variant="stubmoralskea6">
+<text id="stub2019061422" aliases="stubmoralskea6">
 <head>
   <title>Til Prinds Friderich</title>
   <firstline>Rare Printz! to Rigers Glæde!</firstline>
@@ -1644,7 +1656,7 @@ Dit Velstands Blomster, som et Löv
 </body>
 </text>
 
-<text id="stub2019061424" variant="stubmoralskea12">
+<text id="stub2019061424" aliases="stubmoralskea12">
 <head>
   <title>Paa en Flaske, hvori laae en lille Elling i Spiritus, som var skabt med 2 hoveder</title>
   <indextitle>Paa en Flaske</indextitle>
@@ -1668,7 +1680,7 @@ Der födes uden Hovet.
 </body>
 </text>
 
-<text id="stub2019061425" variant="stubmoralskea13">
+<text id="stub2019061425" variant="stub2026101239">
 <head>
   <title>Tanker</title>
   <subtitle>
@@ -1693,7 +1705,7 @@ Saa eenes Tre Meeninger vel i et Sprog.
 </body>
 </text>
 
-<text id="stub2019061426" variant="stubmoralskea14">
+<text id="stub2019061426" aliases="stubmoralskea14">
 <head>
   <title>Taksigelse for den</title>
   <subtitle>ved foregaaende Vers forhvervede Gave.</subtitle>
@@ -1746,7 +1758,7 @@ Der spillet mangen een med Hierter og blev beet.
   </subtitle>
   <firstline>Jeg seer dit Konstverk, store Gud</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelsalme73,25"/></note>
+    <note editorial="true">Cf. <xref bible="bibelsalme73,25"/></note>
   </notes>
   <source pages="79-80"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1910,7 +1922,7 @@ Og være mig imod,
   <suptitle>Fader forlad dem etc. <i>Luc.</i> XXIII. v. 34.</suptitle>
   <firstline>Prent selv Immanuel</firstline>
   <notes>
-    <note>Mottoet er <xref bible="bibellukas23,34"/>.</note>
+    <note editorial="true">Mottoet er <xref bible="bibellukas23,34"/>.</note>
   </notes>
   <source pages="85"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1944,7 +1956,7 @@ Jeg er dog ey forladt.
             Nöd og Plage
         Nesten altiid fölger dem.
 En om Morgenen kan vandre
-    Sterk og saftig<note>saftig] faftig</note>, som en Eeg,
+    Sterk og saftig<note editorial="true">saftig] faftig</note>, som en Eeg,
 Aftenen kan ham forandre
     Til at ligge död og bleg.'
 

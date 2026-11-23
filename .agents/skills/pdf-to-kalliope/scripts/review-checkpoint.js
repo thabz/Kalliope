@@ -9,7 +9,11 @@ import { DOMParser } from '@xmldom/xmldom';
 import { child, children, facsimileInterval } from '../../../../tools/errata.js';
 import { validateFindings } from './findings-register.js';
 
-const git = (root, args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' });
+const git = (root, args) => execFileSync('git', args, {
+  cwd: root,
+  encoding: 'utf8',
+  maxBuffer: 128 * 1024 * 1024,
+});
 
 const facsimileNumber = value => Number(/^(\d+)\.jpg$/i.exec(value ?? '')?.[1] ?? NaN);
 const requiredCandidateKinds = ['ocr', 'page', 'stanza', 'indentation', 'typography'];
@@ -18,7 +22,7 @@ const validateErrataInventory = (inventory, workXml) => {
   if (workXml == null) return [];
   const work = new DOMParser().parseFromString(workXml, 'text/xml').documentElement;
   const declarations = children(child(work, 'workhead'), 'errata');
-  const applied = declarations.filter(node => node.getAttribute('status') === 'applied');
+  const applied = declarations.filter(node => ['applied', 'reviewed'].includes(node.getAttribute('status')));
   const errataPages = inventory.filter(page => page.page_type === 'errata');
   const issues = [];
   errataPages.forEach(page => {
@@ -134,6 +138,11 @@ const validateWholeWorkCandidates = ({ analysis, workXml, findings }) => {
     expectedPoems.delete(poemKey);
     if (expected == null ||
         JSON.stringify(poem.stanza) !== JSON.stringify(expected.stanza) ||
+        JSON.stringify(poem.run_in == null ? null : {
+          unit_count: poem.run_in.unit_count, units: poem.run_in.units,
+        }) !== JSON.stringify(expected.run_in == null ? null : {
+          unit_count: expected.run_in.unit_count, units: expected.run_in.units,
+        }) ||
         JSON.stringify(poem.page_breaks) !== JSON.stringify(expected.page_breaks)) {
       errors.push(`digtet ${poem.text_id ?? '?'} svarer ikke til aktuel XML`);
     }
@@ -183,6 +192,10 @@ const validateWholeWorkCandidates = ({ analysis, workXml, findings }) => {
   return errors;
 };
 
+const normalizeRunInAnchor = text => text.toLocaleLowerCase('da-DK')
+  .normalize('NFKC').replace(/^\s*\d+[.]?\s*/u, '')
+  .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
 const validateVisualStructureReviews = ({ analysis, reviews, producer }) => {
   if (!Array.isArray(analysis?.poems)) return [];
   const errors = [];
@@ -207,6 +220,41 @@ const validateVisualStructureReviews = ({ analysis, reviews, producer }) => {
     if (JSON.stringify(review.visual_stanza_lengths) !==
         JSON.stringify(poem.stanza.observed_stanza_lengths)) {
       errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, har strofelængder som ikke stemmer med facsimilekontrollen`);
+    }
+    if (poem.run_in != null) {
+      const observed = review.visual_run_in_units;
+      const expected = poem.run_in.units;
+      if (Array.isArray(observed) === false || observed.length !== expected.length) {
+        errors.push(`digtet ${poem.text_id}, blok ${poem.block_index}, mangler visuel kontrol af alle løbende strofer`);
+      } else {
+        expected.forEach((unit, index) => {
+          const actual = observed[index];
+          if (actual?.unit_index !== unit.unit_index || actual.indentation !== unit.indentation ||
+              Array.isArray(actual.segments) === false || actual.segments.length !== unit.segments.length) {
+            errors.push(`digtet ${poem.text_id}, løbende strofe ${unit.unit_index}, har forkert indryk eller sidefragmenter`);
+            return;
+          }
+          unit.segments.forEach((segment, segmentIndex) => {
+            const seen = actual.segments[segmentIndex];
+            if (Number.isFinite(facsimileNumber(segment.facsimile)) === false ||
+                seen?.facsimile !== segment.facsimile ||
+                Number.isSafeInteger(seen?.physical_line_count) === false || seen.physical_line_count < 1 ||
+                typeof seen?.first_text !== 'string' || seen.first_text.trim() === '' ||
+                typeof seen?.last_text !== 'string' || seen.last_text.trim() === '') {
+              errors.push(`digtet ${poem.text_id}, løbende strofe ${unit.unit_index}, mangler fysiske satslinjer og ordankre`);
+            } else {
+              const actualText = normalizeRunInAnchor(segment.text);
+              const first = normalizeRunInAnchor(seen.first_text);
+              const last = normalizeRunInAnchor(seen.last_text);
+              if (first === '' || last === '' ||
+                  `${actualText} `.startsWith(`${first} `) === false ||
+                  ` ${actualText}`.endsWith(` ${last}`) === false) {
+                errors.push(`digtet ${poem.text_id}, løbende strofe ${unit.unit_index}, har ordankre som ikke stemmer med XML`);
+              }
+            }
+          });
+        });
+      }
     }
     if (!Array.isArray(review.facsimiles) || review.facsimiles.length === 0 ||
         review.facsimiles.some(facsimile => !Number.isFinite(facsimileNumber(facsimile)))) {

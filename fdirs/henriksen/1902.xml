@@ -1420,6 +1420,9 @@ så langt, så langt af Led.
   <title>Jul</title>
   <firstline>Skin over Verden, du Stjærne hvid</firstline>
   <source pages="69-70"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1459,6 +1462,11 @@ med Bod for Hjærternes Vunder.
   <title>Fiesole</title>
   <firstline>Højt på Bjærget under Laurers</firstline>
   <source pages="71-72"/>
+  <places>
+    <place ref="fiesole" relation="setting"/>
+    <place ref="florence-cathedral" relation="mentioned"/>
+    <place ref="giottos-campanile" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1550,7 +1558,7 @@ i Lys af den evige Sne.
 Så vide drog jeg over Hav og Land
 og over vilde Bjærges tavse Øde;
 med Øret fuldt af store Floders Brus
-jeg så det Land, hvor Guldoranger gløde.<note>Henviser til Goethes <xref poem="goethe2001111901"/>.</note>
+jeg så det Land, hvor Guldoranger gløde.<note editorial="true">Henviser til Goethes <xref poem="goethe2001111901"/>.</note>
 
 Snart er jeg hjemme. I det årle Gry
 jeg spejder over blygrå Bølgerygge;

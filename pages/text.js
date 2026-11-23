@@ -1,3 +1,5 @@
+import TitleBlock from '../components/titleblock.js';
+import EmbeddedContextNote from '../components/embedded-context-note.js';
 import Link from 'next/link';
 import Router from 'next/router';
 import { useContext, useEffect } from 'react';
@@ -5,7 +7,7 @@ import * as Client from '../common/client.js';
 import LangContext from '../common/LangContext.js';
 import * as OpenGraph from '../common/opengraph.js';
 import { pluralize } from '../common/strings.js';
-import { appendSourcePages, removeSourcePoetLinks } from '../common/source-reference.js';
+import { appendSourcePages, removeBibliographyLinks, removeSourcePoetLinks } from '../common/source-reference.js';
 import _ from '../common/translations.js';
 import { textCrumbs } from '../components/breadcrumbs.js';
 import { FootnoteContainer, FootnoteList } from '../components/footnotes.js';
@@ -64,7 +66,7 @@ const Bladrer = (props) => {
   );
 };
 
-const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = false }) => {
+const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', showPoet = false }) => {
   const lang = useContext(LangContext);
   const renderedRefs = refs.map((ref, i) => {
     if (Array.isArray(ref)) {
@@ -75,16 +77,20 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = f
       );
     }
 
-    if (editions === true && ref.citation != null) {
+    const poetPrefix = showPoet === true && ref.poet != null && ref.poet.trim().length > 0
+      ? `${ref.poet}: `
+      : null;
+    if (ref.citation != null) {
       return (
         <div className="reference" key={ref.id}>
+          {poetPrefix}
           <TextInline contentHtml={[[removeSourcePoetLinks(ref.citation, currentPoetId), { html: true }]]} />
         </div>
       );
     }
 
     const metadata = [];
-    if (ref.poetId !== currentPoetId) {
+    if (poetPrefix == null && ref.poetId !== currentPoetId) {
       metadata.push(ref.poet);
     }
     if (ref.work != null) {
@@ -93,6 +99,7 @@ const Refs = ({ refs, contentLang, currentPoetId, spacing = '16px', editions = f
 
     return (
       <div className="reference" key={ref.id}>
+        {poetPrefix}
         <Link
           href={Links.textURL(lang, ref.id)}
           className="reference-title">
@@ -225,6 +232,7 @@ const RelatedDateTexts = ({ texts, lang }) => {
 };
 
 const TextHeading = ({ text }) => {
+  if (text.title_block != null) return <TitleBlock parts={text.title_block} lang={text.content_lang} />;
   let className = 'text-heading';
 
   const subtitles = (text.subtitles || []).map((t, i) => {
@@ -324,7 +332,7 @@ const TextPage = (props) => {
       .filter((note) => note.type !== 'unknown-original')
       .map((note, i) => {
         return (
-          <Note key={keyPrefix + i} type={note.type}>
+          <Note key={keyPrefix + i} type={note.type} editorial={note.editorial}>
             <TextContent
               contentHtml={note.content_html}
               contentLang={note.content_lang}
@@ -341,6 +349,10 @@ const TextPage = (props) => {
     text.notes.filter((note) => note.type !== 'translation-source'),
     'note'
   );
+
+  if (text.parent_text_id != null) {
+    notes.unshift(<EmbeddedContextNote key="embedded-context" text={text} workTitle={work.title} lang={lang} />);
+  }
 
   text.notes
     .filter(
@@ -361,7 +373,7 @@ const TextPage = (props) => {
         }
       );
       return (
-        <Note key={'unknown' + i} type={'unknown-original'}>
+        <Note key={'unknown' + i} type={'unknown-original'} editorial={note.editorial}>
           <>
             <TextContent
               contentHtml={[[html, { html: true }]]}
@@ -382,7 +394,7 @@ const TextPage = (props) => {
   if (text.source != null) {
     const source = text.source;
     if (source.source != null && source.source.length > 0) {
-      sourceText = appendSourcePages(removeSourcePoetLinks(source.source, poet.id), source.pages);
+      sourceText = appendSourcePages(removeBibliographyLinks(source.source), source.pages);
       renderedSource = (
         <Source
           contentHtml={[[sourceText, { html: true }]]}
@@ -399,17 +411,24 @@ const TextPage = (props) => {
 
   let textPictures = [...text.pictures];
 
-  if (text.source != null && text.source.facsimilePages != null) {
+  const firstPageNumber = text.source?.facsimilePages?.[0];
+  const facsimilePageCount = text.source?.facsimilePageCount;
+  if (
+    text.source?.facsimile != null &&
+    Number.isInteger(firstPageNumber) &&
+    Number.isInteger(facsimilePageCount) &&
+    firstPageNumber >= 1 &&
+    firstPageNumber <= facsimilePageCount
+  ) {
     function pad(num, size) {
       var s = num + '';
       while (s.length < size) s = '0' + s;
       return s;
     }
-    const firstPageNumber = text.source.facsimilePages[0];
     let facsimilePictures = [];
-    const facsimilePoetId = text.source.facsimilePoetId || poet.id;
+    const facsimilePoetId = text.source.facsimilePoetId ?? poet.id;
     const srcPrefix = `https://kalliope.org/static/facsimiles/${facsimilePoetId}/${text.source.facsimile}`;
-    for (let i = 0; i < text.source.facsimilePageCount; i++) {
+    for (let i = 0; i < facsimilePageCount; i++) {
       facsimilePictures.push({
         src: srcPrefix + '/' + pad(i, 3) + '.jpg',
         content_html: [[sourceText, { html: true }]],
@@ -486,7 +505,6 @@ const TextPage = (props) => {
         <MetadataGroup title={_('Andre udgaver', lang)} printHidden>
           <Refs
             refs={text.variants}
-            editions
             contentLang={text.content_lang}
             currentPoetId={poet.id}
           />
@@ -509,6 +527,7 @@ const TextPage = (props) => {
             contentLang={text.content_lang}
             currentPoetId={poet.id}
             spacing="5px"
+            showPoet={true}
           />
         </MetadataGroup>
       ) : null}
@@ -579,11 +598,16 @@ const TextPage = (props) => {
         highlight: highlightInterval,
         ...options,
       };
+      const previousType = text.blocks[i - 1]?.type;
+      const needsSeparation =
+        ['poetry', 'prose'].includes(type) &&
+        ['poetry', 'prose'].includes(previousType);
       return (
-        <div key={type + i}>
+        <div key={type + i} id={block.anchor != null ? `embedded-${block.anchor}` : undefined}
+          style={needsSeparation === true ? { marginTop: '1.5em' } : undefined}>
           <TextContent
             contentHtml={lines}
-            contentLang={text.content_lang}
+            contentLang={block.content_lang ?? text.content_lang}
             lang={lang}
             options={blockOptions}
             type={type}

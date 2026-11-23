@@ -7,10 +7,11 @@
     <openlibrary-work>OL810987W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Teksten stammer fra Project Gutenbergs rgain10.txt. Indtastet af Judy Boss, Omaha, Nebraska (eng003@zeus.uomaha.edu)</note>
+    <note editorial="true" type="credits">Indtastet af Judy Boss, Omaha, Nebraska (eng003@zeus.uomaha.edu)</note>
   </notes>
   <quality>korrektur1</quality>
   <keywords>blankvers</keywords>
+  <source>Project Gutenberg: rgain10.txt</source>
 </workhead>
 <workbody>
 
@@ -20,6 +21,10 @@
   <toctitle>The First Book</toctitle>
   <firstline>I, who erewhile the happy Garden sung</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="jordan-river" relation="setting"/>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -536,6 +541,12 @@ And now wild beasts came forth the woods to roam.
   <toctitle>The Second Book</toctitle>
   <firstline>Meanwhile the new-baptized, who yet remained</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+    <place ref="jericho" relation="mentioned"/>
+    <place ref="jordan-river" relation="setting"/>
+    <place ref="nazareth" relation="setting"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1036,6 +1047,11 @@ To gain a sceptre, oftest better missed."
   <toctitle>The Third Book</toctitle>
   <firstline>So spake the Son of God; and Satan stood</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="red-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1493,6 +1509,11 @@ So fares it when with truth falsehood contends.
   <toctitle>The Fourth Book</toctitle>
   <firstline>Perplexed and troubled at his bad success</firstline>
   <keywords>blankvers</keywords>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="babylon" relation="mentioned"/>
+    <place ref="campania" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
+import { getElementsByTagName, loadXMLDoc } from '../../tools/build-static/xml.js';
 
 const imageExtensionPattern = /\.(jpe?g|png|gif|webp)$/i;
 const pictureTagPattern = /<picture\b([^>]*)>/g;
@@ -62,6 +63,27 @@ describe('portrait asset conventions', () => {
       });
 
     expect(missing).toEqual([]);
+  });
+
+  it('only gives primary portraits a square source', () => {
+    const invalid = [];
+    for (const entry of fs.readdirSync('fdirs', { withFileTypes: true })) {
+      if (entry.isDirectory() === false) continue;
+      const portraitsFile = path.join('fdirs', entry.name, 'portraits.xml');
+      if (fs.existsSync(portraitsFile) === false) continue;
+      const document = loadXMLDoc(portraitsFile);
+      for (const picture of getElementsByTagName(document, 'picture')) {
+        if (
+          picture.hasAttribute('square-src') === true &&
+          picture.getAttribute('primary') !== 'true'
+        ) {
+          invalid.push(
+            `${portraitsFile}: square-src="${picture.getAttribute('square-src')}" requires primary="true"`
+          );
+        }
+      }
+    }
+    expect(invalid).toEqual([]);
   });
 
   it('keeps square portrait sources square and no larger than 600 px', async () => {

@@ -301,7 +301,7 @@ Med susande vingar,
 Amanda jag hör.
 Allt, ängel, bestrålar
 Din himlagestalt,
-Lik skaparnas i allt
+Lik skaparns i allt
 Din gudom sig målar.
 
 Se! Själarne ila
@@ -428,7 +428,7 @@ befria dig själv och du fria dem gör.
   <title>Vän! I förödelsens stund</title>
   <firstline>Vän! I förödelsens stund, när ditt inre av mörker betäckes</firstline>
   <notes>
-    <note>Titel indsat. Ukendt Kilde.</note>
+    <note editorial="true">Titel indsat. Ukendt Kilde.</note>
   </notes>
   <quality>korrektur1</quality>
   <!-- Dette digt er blevet sendt anonymt via korrekturfeltet med følgende besked: »Det er som om din gengivelse af digtet er "tilpasset" den moderne læser. Således er gamle stavemåder erstattet med nyere, ligesom man f.eks. finder det i Den Danske Salmebog. I vers 14 står der eksempelvis "vars" der oprindeligt stavedes "hvars" - det svarer til "hvis" på dansk som vi stadig staver med "h". Den oprindelige ordlyd der gengivet nedenfor.«
@@ -842,6 +842,9 @@ I rosenband Du leder oss till Gud.
 <head>
   <title>Öfver slaget vid Salamanca</title>
   <firstline>Jag såg civismen, hur med gäckad arm</firstline>
+  <places>
+    <place ref="ebro" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -934,6 +937,9 @@ Hvarann tillsjungen, väldige Tyrtéer!
 <head>
   <title>Öfver slaget vid Vittoria</title>
   <firstline>Ädle Spaniorer! i tryggade kojor</firstline>
+  <places>
+    <place ref="ebro" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1728,6 +1734,9 @@ Dig följa vi kjuste i krig.
 <head>
   <title>Öfver H. K. H. Kronprinsens, nuvarande Konungens hemkomst, efter fälttåget i Tyskland, år 1814</title>
   <firstline>Triumf, o Svea, sjung!</firstline>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2087,7 +2096,7 @@ Till det ovanskeliga ljuset.
   <subtitle>Efter Claudius</subtitle>
   <firstline>Sin skugga natten målar</firstline>
   <notes>
-    <note>Gendigtning af Claudius' <xref type="translation" poem="claudius2001091301"/>.</note>
+    <note editorial="true">Gendigtning af Claudius' <xref type="translation" poem="claudius2001091301"/>.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>

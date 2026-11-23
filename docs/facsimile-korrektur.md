@@ -30,12 +30,16 @@ checkpointets krav er opfyldt, tilføjes `korrektur2`, værket sættes til
 
 ## Grundregel
 
+Basér facsimiler på farveudgaven, når den findes til den valgte kilde. Brug kun
+sort-hvid-udgaven, når der ikke findes en farveudgave. Kontrollér ved skift af
+PDF, at sidetal, siderækkefølge, kildeintervaller og `pb/@facs` stadig passer.
+
 Facsimilet er facit. OCR, eksisterende transskriptioner, metadata og kendskab
 til en strofeform er hjælpemidler, ikke selvstændige tekstvidner.
 
 Kontrollér også hele trykket for rettelsesark. Et fundet ark skal registreres i
 `<workhead>`, og alle relevante rettelser skal indføres med
-`<footnote type="errata">rettet] trykt</footnote>` ved tekststedet. Arket må
+`<!-- Rettelsesark: rettet] trykt -->` ved tekststedet. Arket må
 ikke oprettes som en selvstændig tekstpost. Se `docs/xml-work-format.md`.
 
 En ny tekstforekomst må ikke oprettes ved at kopiere brødteksten fra en anden
@@ -49,6 +53,38 @@ En usædvanlig form eller stavemåde må ikke rettes, blot fordi den ser
 mistænkelig ud. Hvis facsimilet tydeligt har formen, skal den bevares. Hvis
 læsningen ikke kan afgøres forsvarligt, skal usikkerheden synliggøres i stedet
 for at blive skjult med et gæt.
+
+## Løbende strofer i `<wrap>`
+
+En trykt strofe i løbende sats er ikke én verslinje. Helværksanalysen
+registrerer derfor `<wrap>` særskilt som `run_in.units`, med førstelinjeindryk
+og ét tekstfragment per fysisk facsimileside. Et sideskift i et ord forbliver
+inde i ordet. Analysen udsender en `run_in_structure_review`-kandidat;
+en tom liste med observerede verslinjer dokumenterer ikke disse strofer.
+
+Når helværksanalysen får en TSV-mappe, matcher den desuden hvert sidefragment
+mod sammenhængende fysiske OCR-linjer i `run_in.geometry`. Matchningen følger
+sidens rækkefølge og genbruger ikke linjer til flere strofer. Rapporten angiver
+valgt OCR-pass, linjebokse, faktisk matchet linjetal og konkurrerende placeringer
+eller pass med forskelligt linjetal. Manglende og tvetydige match kræver manuel
+kontrol. OCR-geometrien erstatter ikke den uafhængige visuelle optælling.
+Indlejrede tekster ejer deres egne digtblokke og tælles ikke igen under
+hovedteksten; deres sideskift føres videre til hovedtekstens efterfølgende blokke.
+
+Ved slutcheckpointet kræver hver sådan blok desuden
+`visual_run_in_units` i sin uafhængige visuelle strukturkontrol. Listen følger
+XML'ens stroferækkefølge og har `unit_index`, `indentation` og `segments`.
+Hvert segment skal angive `facsimile`, et positivt heltal i
+`physical_line_count` samt kildekontrollerede `first_text` og `last_text`.
+Optæl de faktisk trykte satslinjer på billedet, ikke moderne vers rekonstrueret
+fra skråstreger. Udelad kustoder og sidehoveder. En strofe, der krydser et
+sideskift, har særskilte linjetal og ordankre på begge sider.
+
+Kontrollen sammenholder strofer, indryk og sidefragmenter med XML og afviser
+manglende poster og tomme linje-/ordankre. Den attesterer ikke selve den
+visuelle optællings rigtighed; den skal dokumenteres med direkte
+facsimilekontrol. Den almindelige verslinjegeometri må fortsat ikke bruges som
+bevis for `<wrap>`-indhold, som dens linjemodel ikke matcher.
 
 ## 1. Afgræns arbejdet
 

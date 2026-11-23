@@ -1314,14 +1314,10 @@
       "reason": "later-edition-of-existing:1913"
     },
     {
-      "decision": "register-first-edition",
+      "decision": "exclude",
       "entity": "work",
       "id": "blandede-digte-1845",
-      "kalliope": {
-        "poet_id": "ingemann",
-        "work_id": "1845a"
-      },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "Tredjeudgave af Folkedands-Viser og Blandede Digte 1842. https://danskforfatterleksikon.dk/1850bib/IBSIngemann.htm"
     },
     {
       "decision": "exclude",
@@ -2146,14 +2142,10 @@
       "reason": "contained-collected-selected-or-later-edition"
     },
     {
-      "decision": "register-first-edition",
+      "decision": "exclude",
       "entity": "work",
       "id": "dandseviser-ved-bryllupsgilder-1842",
-      "kalliope": {
-        "poet_id": "ingemann",
-        "work_id": "1842a"
-      },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "Særtryk/uddrag af Folkedands-Viser og Blandede Digte 1842. https://danskforfatterleksikon.dk/1850bib/IBSIngemann.htm"
     },
     {
       "decision": "exclude",
@@ -3853,19 +3845,15 @@
       "id": "digte-1814",
       "kalliope": {
         "poet_id": "blicher",
-        "work_id": "1814a"
+        "work_id": "1814"
       },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "already-in-kalliope"
     },
     {
-      "decision": "register-first-edition",
+      "decision": "exclude",
       "entity": "work",
       "id": "digte-1817",
-      "kalliope": {
-        "poet_id": "ingemann",
-        "work_id": "1817"
-      },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "Andenudgave af Digte 1811–12. https://danskforfatterleksikon.dk/1850bib/IBSIngemann.htm"
     },
     {
       "decision": "register-first-edition",
@@ -13118,14 +13106,14 @@
       "reason": "posthumous-or-later-edition"
     },
     {
-      "decision": "register-first-edition",
+      "decision": "needs-review",
       "entity": "work",
       "id": "morgen-og-aftensange-1845",
       "kalliope": {
         "poet_id": "ingemann",
         "work_id": "1845b"
       },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "Bevares som selvstændig forøget sammenstilling, ikke førsteudgave. https://danskforfatterleksikon.dk/1850bib/IBSIngemann.htm"
     },
     {
       "decision": "exclude",
@@ -15544,14 +15532,10 @@
       "reason": "contained-collected-selected-or-later-edition"
     },
     {
-      "decision": "register-first-edition",
+      "decision": "exclude",
       "entity": "work",
       "id": "rejselyren-1845",
-      "kalliope": {
-        "poet_id": "ingemann",
-        "work_id": "1845c"
-      },
-      "reason": "standalone-danish-poetry-candidate"
+      "reason": "Andenudgave af Reiselyren 1820. https://danskforfatterleksikon.dk/1850bib/IBSIngemann.htm"
     },
     {
       "decision": "exclude",

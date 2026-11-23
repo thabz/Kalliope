@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="gutfeld" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Frederik Carl</firstname>
+    <lastname>Gutfeld</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-10-09</date>
+      <place>Bevtoft</place>
+    </born>
+    <dead>
+      <date>1823-01-09</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>C._Gutfeld</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

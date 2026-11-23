@@ -16,9 +16,13 @@
 <head>
   <title>[Biographisk Skizze]</title>
   <notes>
-    <note>Den biografiske indledning er underskrevet S. Drejer, N. Levinsen og J. Ostermann.</note>
+    <note editorial="true">Den biografiske indledning er underskrevet S. Drejer, N. Levinsen og J. Ostermann.</note>
   </notes>
   <source pages="1-14"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+    <place ref="turkey" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -391,13 +395,16 @@ Snart jeg skuer Axelstad! — Lev vel!
     <event>1829-07-27</event>
   </dates>
   <source pages="23-24"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
 Tillad, Moerlil! at din ældste Dreng
 Et Stykke stryger Dig paa Fiolen,
 Skjøndt, som Du veed, den kun har een Streng,
-Og Gribebrettet er væk, samt Stolen;<footnote>*) Begge Dele vare nemlig bortkomne paa Regentsen.</footnote>
+Og Gribebrettet er væk, samt Stolen;<footnote>Begge Dele vare nemlig bortkomne paa Regentsen.</footnote>
               Thi Qvintessentsen
               Er dog Tendentsen,
 Og den er god — ak, men paa Regentsen
@@ -654,7 +661,7 @@ For dem, som til Eveldrups ei han regner —
 Eller Præstekone, eller Degnekone,
 Eller Liv har maattet af disse laane,
 Eller endelig heller ei er Arrigo,
-Carl Lenz;<footnote>*) Christian Lenz er Forfatteren selv; Carl Lenz een af hans Venner.</footnote> eller Olsen, eller deres Lige; —
+Carl Lenz;<footnote>Christian Lenz er Forfatteren selv; Carl Lenz een af hans Venner.</footnote> eller Olsen, eller deres Lige; —
 Vil Autor, alt i den Forudsætning
 (Skjøndt feil er rimeligviis hans Gjætning)
 At de vil læse „Logikkens Magt,“
@@ -745,7 +752,7 @@ Maaskee da vælger et bedre Stof.
   </subtitle>
   <firstline>Een Gang jeg ønskte, før i Exameners</firstline>
   <notes>
-    <note>Gendigtning af Friedrich von Matthissons <xref type="translation" poem="matthisson2026083101"/>.</note>
+    <note editorial="true">Gendigtning af Friedrich von Matthissons <xref type="translation" poem="matthisson2026083101"/>.</note>
   </notes>
   <source pages="35-36"/>
 </head>
@@ -905,7 +912,7 @@ Hvis Erindring er veemodig-sød; —
 <body>
 <poetry>
 Ved vor Forsamling sidst i Storestræde
-En Strid i et, os Begge „fremmed“ Fag;<footnote>*) Theologien.</footnote>
+En Strid i et, os Begge „fremmed“ Fag;<footnote>Theologien.</footnote>
 Udspandt sig mellem os ved Talens Hede —
 Derom et Ord jeg melde vil idag,
 
@@ -1276,7 +1283,7 @@ I Hjertet — uden Vise!
 <epigraph>
 Stem op, o Calliope! og syng til Phøbus’s
 Citrinke en evig Sang!
-<right>Horats og Baden.<footnote>Mottoet gengiver begyndelsen af Horats’ <xref poem="horats2026083101"/> i Jakob Badens danske oversættelse.</footnote></right>
+<right>Horats og Baden.<footnote editorial="true">Mottoet gengiver begyndelsen af Horats’ <xref poem="horats2026083101"/> i Jakob Badens danske oversættelse.</footnote></right>
 </epigraph>
 <poetry>
 Komme, hvo som komme kan —
@@ -1757,6 +1764,9 @@ Ei glemmes den Gjæve herinde :
   <subtitle>1832</subtitle>
   <firstline>Studenten gjør ei mange Ord</firstline>
   <source pages="67-69"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1832,6 +1842,9 @@ I festligt Chor at bringe!
   <subtitle>1833</subtitle>
   <firstline>Naar Vinteren breder sit Taage-Flor</firstline>
   <source pages="70-72"/>
+  <places>
+    <place ref="regensen" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1911,6 +1924,9 @@ Og Philister-Nykken forjage!
   <subtitle>1833</subtitle>
   <firstline>Udi den lærde Republik —</firstline>
   <source pages="72-75"/>
+  <places>
+    <place ref="regensen" relation="subject" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -2129,6 +2145,10 @@ Vort Samlivs glædelige Frugter!
     <event>1834-07-01</event>
   </dates>
   <source pages="79-82"/>
+  <places>
+    <place ref="regensen" relation="setting" primary="true"/>
+    <place ref="bornholm" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>

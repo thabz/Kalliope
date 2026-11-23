@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="soldin" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Salomon</firstname>
+    <lastname>Soldin</lastname>
+    <pseudonym>Gustav Palmer</pseudonym>
+  </name>
+  <!-- Livsdata: Erslew, Almindeligt Forfatter-Lexicon, III,1853,s.194; identiteten også kontrolleret mod DBL2,XXII,s.271–272. Pseudonymet er dokumenteret hos Erslew,s.195. -->
+  <period>
+    <born>
+      <date>1774-03-15</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1837-11-27</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid,dk-guldalder-og-romantik</literary-periods>
+  <!-- Redaktionel periodeinddeling: Rousseau-oversættelse1800 og oplysende tidsskriftvirksomhed samt romantiske fortællinger fra1802 og bidrag indtil1830; Erslew,III,1853,s194–195. -->
+  <identifiers>
+    <wikidata>Q11049823</wikidata>
+    <wikipedia-da>Salomon Soldin</wikipedia-da>
+    <wikipedia-en>Salomon Soldin</wikipedia-en>
+    <gravsted-dk>salomonsoldin</gravsted-dk>
+    <biografisk-leksikon-lex-dk>Salomon_Soldin</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>SSalomonSoldin</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

@@ -33,8 +33,10 @@
         <ref name="content"/>
         <ref name="head"/>
         <ref name="body"/>
+        <ref name="front"/>
         <ref name="title"/>
         <ref name="year"/>
+        <ref name="titleblock"/>
         <ref name="subtitle"/>
         <ref name="suptitle"/>
         <ref name="firstline"/>
@@ -74,6 +76,7 @@
         <ref name="sc"/>
         <ref name="small"/>
         <ref name="sup"/>
+        <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
         <ref name="num"/>
@@ -127,7 +130,7 @@
 
   <define name="errata">
     <element name="errata">
-      <attribute name="status"><choice><value>none</value><value>applied</value></choice></attribute>
+      <attribute name="status"><choice><value>none</value><value>applied</value><value>reviewed</value></choice></attribute>
       <optional><attribute name="in"><text/></attribute></optional>
       <optional><attribute name="pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
@@ -144,6 +147,9 @@
       <optional><attribute name="skip-index"><text/></attribute></optional>
       <optional><attribute name="lang"><text/></attribute></optional>
       <optional><attribute name="ignore-tests"><text/></attribute></optional>
+      <optional><attribute name="context-font-size"><value>small</value></attribute></optional>
+      <optional><attribute name="context-indent"><data type="nonNegativeInteger"/></attribute></optional>
+      <optional><attribute name="context-quotes"><value>stanzas</value></attribute></optional>
       <ref name="mixed"/>
     </element>
   </define>
@@ -177,12 +183,84 @@
         </attribute>
       </optional>
       <zeroOrMore>
-        <choice>
-          <ref name="poetry"/>
-          <ref name="prose"/>
-          <ref name="epigraph"/>
-        </choice>
+        <group>
+          <zeroOrMore><ref name="pb"/></zeroOrMore>
+          <choice>
+            <ref name="poetry"/>
+            <ref name="prose"/>
+            <ref name="epigraph"/>
+            <ref name="castList"/>
+            <ref name="textElement"/>
+          </choice>
+        </group>
       </zeroOrMore>
+    </element>
+  </define>
+
+  <!-- TEI P5 drama vocabulary, integrated with Kalliope's text entries. -->
+  <define name="front">
+    <element name="front">
+      <oneOrMore><choice>
+        <ref name="castList"/>
+        <ref name="set"/>
+        <ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castInline"><zeroOrMore><ref name="castInlineNode"/></zeroOrMore></define>
+  <define name="castInlineNode">
+    <choice>
+      <text/>
+      <ref name="b"/><ref name="i"/><ref name="w"/><ref name="sc"/>
+      <ref name="span"/><ref name="small"/><ref name="s"/>
+      <ref name="sup"/><ref name="sub"/><ref name="u"/>
+      <ref name="br"/><ref name="pb"/><ref name="note"/><ref name="footnote"/>
+    </choice>
+  </define>
+
+  <define name="castHead">
+    <element name="head"><ref name="castInline"/></element>
+  </define>
+
+  <define name="castList">
+    <element name="castList">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <optional><ref name="castHead"/></optional>
+      <oneOrMore><choice>
+        <ref name="castItem"/><ref name="castGroup"/><ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castGroup">
+    <element name="castGroup">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <oneOrMore><choice>
+        <ref name="castHead"/><ref name="castItem"/><ref name="castGroup"/>
+        <ref name="roleDesc"/><ref name="pb"/>
+      </choice></oneOrMore>
+    </element>
+  </define>
+
+  <define name="castItem">
+    <element name="castItem">
+      <optional><attribute name="type"><choice>
+        <value>role</value><value>list</value>
+      </choice></attribute></optional>
+      <zeroOrMore><choice>
+        <ref name="role"/><ref name="roleDesc"/><ref name="castInlineNode"/>
+      </choice></zeroOrMore>
+    </element>
+  </define>
+
+  <define name="sub"><element name="sub"><ref name="castInline"/></element></define>
+  <define name="role"><element name="role"><ref name="castInline"/></element></define>
+  <define name="roleDesc"><element name="roleDesc"><ref name="castInline"/></element></define>
+  <define name="set">
+    <element name="set">
+      <optional><attribute name="rend"><text/></attribute></optional>
+      <oneOrMore><element name="p"><ref name="castInline"/></element></oneOrMore>
     </element>
   </define>
 
@@ -211,6 +289,7 @@
       <optional><attribute name="facsimile-pages"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-num"><text/></attribute></optional>
       <optional><attribute name="facsimile-pages-offset"><text/></attribute></optional>
+      <optional><attribute name="first-n"><data type="nonNegativeInteger"/></attribute></optional>
       <choice>
         <ref name="inlineWithoutLineMarkers"/>
         <ref name="sourceBibliography"/>
@@ -223,7 +302,7 @@
 
   <define name="sourceBibliography">
     <interleave>
-      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
+      <zeroOrMore><element name="author"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="realname"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <zeroOrMore><element name="editor"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><optional><attribute name="type"><value>editor</value></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <zeroOrMore><element name="translator"><optional><attribute name="id"><ref name="sourceBibliographicText"/></attribute></optional><ref name="sourceBibliographicText"/></element></zeroOrMore>
       <element name="title"><ref name="sourceBibliographicText"/></element>
@@ -262,6 +341,7 @@
       <optional><attribute name="type"><text/></attribute></optional>
       <optional><attribute name="year"><text/></attribute></optional>
       <optional><attribute name="artwork"><text/></attribute></optional>
+      <optional><attribute name="portrait"><text/></attribute></optional>
       <optional><attribute name="museum"><text/></attribute></optional>
       <optional><attribute name="invnr"><text/></attribute></optional>
       <optional><attribute name="objid"><text/></attribute></optional>
@@ -270,6 +350,23 @@
     </element>
   </define>
   <define name="transcription"><element name="transcription"><text/></element></define>
+
+  <define name="textIdentifiers">
+    <element name="identifiers">
+      <interleave>
+        <optional><ref name="wikidataIdentifier"/></optional>
+        <zeroOrMore><element name="dgf-id"><ref name="catalogueIdentifier"/></element></zeroOrMore>
+        <zeroOrMore><element name="dv-id"><ref name="catalogueIdentifier"/></element></zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+
+  <define name="catalogueIdentifier">
+    <optional><attribute name="variant"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <optional><attribute name="witness"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <optional><attribute name="appendix"><data type="string"><param name="pattern">\S+</param></data></attribute></optional>
+    <data type="string"><param name="pattern">[1-9][0-9]*</param></data>
+  </define>
 
   <define name="sourceIdentifiers">
     <element name="identifiers">
@@ -367,6 +464,7 @@
   <define name="pb">
     <element name="pb">
       <optional><attribute name="n"><text/></attribute></optional>
+      <optional><attribute name="corrected-n"><data type="positiveInteger"/></attribute></optional>
       <optional><attribute name="facs"><text/></attribute></optional>
       <ref name="mixed"/>
     </element>
@@ -394,7 +492,14 @@
 
   <define name="prosa"><element name="prosa"><ref name="simpleElement"/></element></define>
   <define name="content"><element name="content"><ref name="simpleElement"/></element></define>
-  <define name="head"><element name="head"><ref name="headMixed"/></element></define>
+  <define name="head">
+    <element name="head">
+      <interleave>
+        <ref name="headMixed"/>
+        <optional><ref name="textIdentifiers"/></optional>
+      </interleave>
+    </element>
+  </define>
   <define name="year"><element name="year"><ref name="simpleElement"/></element></define>
   <define name="subtitle"><element name="subtitle"><optional><attribute name="lang"><text/></attribute></optional><ref name="simpleElement"/></element></define>
   <define name="suptitle"><element name="suptitle"><ref name="simpleElement"/></element></define>
@@ -543,7 +648,7 @@
       </element>
     </element>
   </define>
-  <define name="pagebreaks"><element name="pagebreaks"><empty/></element></define>
+  <define name="pagebreaks"><element name="pagebreaks"><optional><attribute name="count-by"><value>facsimile</value></attribute></optional><empty/></element></define>
   <define name="pictures"><element name="pictures"><ref name="simpleElement"/></element></define>
   <define name="inlineWithoutLineMarkers">
     <zeroOrMore>
@@ -557,6 +662,7 @@
         <ref name="sc"/>
         <ref name="small"/>
         <ref name="sup"/>
+        <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
         <ref name="num"/>
@@ -652,4 +758,10 @@
       <ref name="inlineWithoutLineMarkers"/>
     </element>
   </define>
+<define name="titleblock"><element name="titleblock"><oneOrMore><element name="part">
+<attribute name="type"><choice><value>main</value><value>sub</value><value>dedication</value><value>byline</value><value>tune</value><value>imprint</value></choice></attribute>
+<optional><attribute name="align"><choice><value>left</value><value>center</value><value>right</value></choice></attribute></optional>
+<optional><attribute name="size"><choice><value>small</value><value>normal</value><value>large</value></choice></attribute></optional>
+<choice><oneOrMore><element name="line"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore><oneOrMore><element name="p"><ref name="inlineWithoutLineMarkers"/></element></oneOrMore></choice>
+</element></oneOrMore></element></define>
 </grammar>

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pictures>
-  <picture src="p1.jpg" square-src="p1-square.jpg" year="1796-1804" museum="rijksmuseum" objid="Portret-van-Jean-Pierre-Claris-de-Florian--c61371e88523971cd1e3fcb4165eb8ae" invnr="RP-P-1920-1440" primary="true">
+  <picture src="p1.jpg" year="1796-1804" museum="rijksmuseum" objid="Portret-van-Jean-Pierre-Claris-de-Florian--c61371e88523971cd1e3fcb4165eb8ae" invnr="RP-P-1920-1440" clip-path="polygon(20% 0%, 80% 0%, 100% 16%, 100% 84%, 80% 100%, 20% 100%, 0% 84%, 0% 16%)">
     Anton Wachsmann, efter Achille Devéria: <i>Jean-Pierre Claris de Florian</i>, 1796-1804, stik.
+  </picture>
+  <picture src="p2.jpg" primary="true" square-src="p2-square.jpg" year="1700-1799">
+    Anonym fransk kunstner: <i>Formodet portræt af Jean-Pierre Claris de Florian</i>, 1700-tallet, pastel på grågrønt papir opklæbet på lærred. Blad: 40,6 × 32,2 cm. Musée des Châteaux de Versailles et de Trianon.
+    <!-- Kilde: https://collections.louvre.fr/ark:/53355/cl020112800
+    Identifikationen er usikker ifølge katalogets henvisning til Xavier Salmon,
+    Les pastels du musée du château de Versailles (1997), kat. 39, s. 136-138.
+    Kunstneren er anonym; intet sikkert kunstner-id i Kalliope.
+    Tidligere Louvre-inventar RF 1185, Recto; overført til Versailles 13. juni 2024.
+    Gave fra Charles Vatel til Versailles 5. august 1881.
+    Affotografering: GrandPalaisRmn (Château de Versailles) / Gérard Blot.
+    Billedfil: https://collections.louvre.fr/media/cache/original/11/28/00/00/AGO112800-000_PE.jpg
+    Værket er public domain; Commons registrerer gengivelsen som PD-Art:
+    https://commons.wikimedia.org/wiki/File:Jean-pierre-claris-de-florian.jpg
+    Museets gengivelse er valgt frem for den mindre, farvemættede beskæring.
+    Rammekanten er beskåret; motivet er ikke retoucheret. -->
+    <!-- metadata checked: 2026-11-13 -->
   </picture>
 </pictures>

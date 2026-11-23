@@ -153,3 +153,24 @@ it('it formats year ranges', () => {
   );
   expect(formattedYearRange('?', '?', 'en')).toEqual('(Unknown lifetime)');
 });
+
+it.each([undefined, null, '?'])('marks a known death year when birth is %s', born => {
+  expect(formattedYearRange(born, '1695-05-09')).toBe('(†\u00a01695)');
+  expect(formattedYearRange(born, 'ca. 1700')).toBe('(†\u00a0c. 1700)');
+  expect(formattedYearRange(born, '-0050')).toBe('(†\u00a050 f.Kr.)');
+  expect(formattedYearRange(born, '?')).toBe('(Ukendt levetid)');
+});
+
+it.each([
+  ['da', '(†\u00a0c. 1700)', '(†\u00a050 f.Kr.)'],
+  ['en', '(†\u00a0c. 1700)', '(†\u00a050 BC)'],
+  ['de', '(†\u00a0ca. 1700)', '(†\u00a050 v. Chr.)'],
+  ['fr', '(†\u00a0v. 1700)', '(†\u00a050 av. J.-C.)'],
+])('localizes death years with unknown birth in %s', (lang, approximate, bce) => {
+  expect(formattedYearRange('?', 'ca. 1700', lang)).toBe(approximate);
+  expect(formattedYearRange('?', '-0050', lang)).toBe(bce);
+});
+
+it('keeps a known birth year when the death year is unknown', () => {
+  expect(formattedYearRange('1800', '?')).toBe('(1800–ukendt år)');
+});

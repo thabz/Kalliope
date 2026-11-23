@@ -4,6 +4,79 @@ import {
 } from '../../tools/format-work-xml.js';
 
 describe('work XML formatting', () => {
+  it.each(['text', 'poetry', 'prose', 'epigraph', 'castList'])('allows page-marker prefixes before a %s block', block => {
+    const xml = `<pb facs="001.jpg"/><pb n="3" facs="002.jpg"/><${block}>\n</${block}>\n`;
+    expect(structuralTagsOutsideColumnZero(xml)).toEqual([]);
+  });
+
+  it('still rejects an indented page-marker prefix and a prefix before metadata', () => {
+    for (const xml of ['  <pb facs="001.jpg"/><text>\n</text>\n', '<pb facs="001.jpg"/><head>\n</head>\n']) {
+      expect(structuralTagsOutsideColumnZero(xml)).not.toEqual([]);
+    }
+  });
+
+  it.each([
+    '<head><title>Titel</title></head>',
+    '<head>\n<title>Titel</title>\n<source pages="1"/></head>',
+    '<workhead><title>Værk</title></workhead>',
+  ])('preserves body whitespace after compact metadata: %s', metadata => {
+    const body = `<body>
+<poetry>
+Første vers
+    Indrykket vers
+
+Næste strofe
+</poetry>
+<prose>
+Første afsnit.
+    Indrykket afsnit.
+</prose>
+</body>\n`;
+    const formatted = formatWorkXml(`${metadata}\n${body}`);
+    expect(formatted).toContain(body);
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
+  it('preserves verse indentation and page markers in metadata notes', () => {
+    const citation = `<footnote>Indledning.
+<poetry lang="de">
+Første vers
+<pb n="2" facs="002.jpg"/>  Andet vers
+
+Tredje vers
+  Fjerde vers
+</poetry>
+Kilde.</footnote>`;
+    const xml = `<head>
+  <title>Titel${citation}</title>
+  <notes>
+    ${citation.replaceAll('footnote', 'note')}
+  </notes>
+</head>
+`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain(citation.replaceAll('footnote', 'note'));
+    expect(formatWorkXml(formatted)).toBe(formatted);
+  });
+
+  it('keeps explicit note citation breaks separate from main verse formatting', () => {
+    const citation = '<footnote><poetry><nonum><right>Kort citat</right></nonum><br/>    Andet vers</poetry></footnote>';
+    const xml = `<body>\n<poetry>Vers${citation}\n<nonum><right>Signatur</right></nonum></poetry>\n</body>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(citation);
+    expect(formatted).toContain('</nonum>\n</poetry>');
+    expect(formatWorkXml(formatted)).toBe(formatted);
+    expect(structuralTagsOutsideColumnZero(formatted)).toEqual([]);
+  });
+
+  it('preserves verse lines, stanzas and indentation in a multiline note citation', () => {
+    const citation = '<footnote><poetry>\nFørste vers\n    Andet vers\n\nTredje vers\n</poetry></footnote>';
+    const xml = `<body>\n<poetry>\nVers${citation}\nNæste vers\n</poetry>\n</body>\n`;
+    expect(formatWorkXml(xml)).toBe(xml);
+    expect(structuralTagsOutsideColumnZero(xml)).toEqual([]);
+  });
+
   it('puts structural tags in column zero and spaces texts and sections', () => {
     const xml = `<kalliopework>
   <workhead>
@@ -376,5 +449,16 @@ Et citat
     const xml = '<poetry>\n<nonum><right><i><small>Signatur</small></i></right></nonum>\n</poetry>\n';
 
     expect(formatWorkXml(formatWorkXml(xml))).toBe(xml);
+  });
+});
+
+
+describe('correction comments', () => {
+  it('preserves inline positions, verse lines and stanzas', () => {
+    const poetry = '<poetry>\nOrd<!-- Rettelsesark: Ord] Fejl --> og tekst\nAnden linje\n\nTredje<!-- Rettelsesark: ∅] ord --> linje\n</poetry>';
+    const xml = `<kalliopework>\n<workhead>\n  <title>Test</title>\n</workhead>\n<workbody>\n<text>\n<body>\n${poetry}\n</body>\n</text>\n</workbody>\n</kalliopework>\n`;
+    const formatted = formatWorkXml(xml);
+    expect(formatted).toContain(poetry);
+    expect(formatWorkXml(formatted)).toBe(formatted);
   });
 });

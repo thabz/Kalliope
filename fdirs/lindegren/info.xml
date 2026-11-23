@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lindegren" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Johan</firstname>
+    <lastname>Lindegren</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1770-02-22</date>
+      <place>Lindesberg</place>
+    </born>
+    <dead>
+      <date>1815-05-01</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q16649695</wikidata>
+    <viaf>17490256</viaf>
+    <gnd>129184888</gnd>
+  </identifiers>
+</person>

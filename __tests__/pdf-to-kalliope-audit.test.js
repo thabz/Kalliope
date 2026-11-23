@@ -6,6 +6,8 @@ import {
   visibleLines,
 } from '../.agents/skills/pdf-to-kalliope/scripts/audit-utils.js';
 import { analyzeWholeWork } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-whole-work.js';
+import { extractPoetryBlocks } from '../.agents/skills/pdf-to-kalliope/scripts/prepare-poetry-geometry.js';
+import { analyzeIndentation } from '../.agents/skills/pdf-to-kalliope/scripts/analyze-indentation.js';
 import { historicalOcrCandidates } from '../.agents/skills/pdf-to-kalliope/scripts/audit-ocr-candidates.js';
 import {
   updateFinding,
@@ -63,7 +65,123 @@ Sidste linje</poetry></body>
 </workbody>
 </kalliopework>`;
 
+describe('embedded poems in a continuing prose text', () => {
+  const xml = `<kalliopework><workhead>
+<source facsimile-pages-offset="1">Fixture</source></workhead><workbody>
+<text id="parent"><head><source pages="10-12"/></head><body>
+<poetry>Forvers</poetry>
+<prose><pb n="11" facs="011.jpg"/></prose>
+<text id="child"><head><title>Metadata, ikke brødtekst</title>
+<source pages="11-12"/></head><body><poetry>Barnets første linje
+<pb n="12" facs="012.jpg"/>Barnets sidste linje</poetry></body></text>
+<poetry>Eftervers</poetry></body></text>
+<text id="next"><head><source pages="12"/></head>
+<body><poetry>Næste digt</poetry></body></text>
+</workbody></kalliopework>`;
+
+  it('analyzes the child once under its own ID and resumes on its last page', () => {
+    const analysis = analyzeWholeWork(xml);
+    expect(analysis.poems.map(poem => [poem.text_id, poem.block_index]))
+      .toEqual([['parent', 1], ['parent', 2], ['child', 1], ['next', 1]]);
+    const blocks = extractPoetryBlocks(xml);
+    expect(blocks.map(block => [block.textId, block.blockIndex]))
+      .toEqual([['parent', 1], ['child', 1], ['parent', 2], ['next', 1]]);
+    expect(blocks[2].lines[0].facsimile).toBe('012.jpg');
+    expect(blocks[1].lines.map(line => line.facsimile)).toEqual(['011.jpg', '012.jpg']);
+  });
+
+  it('inventories contextual bodies without metadata or false backwards jumps', () => {
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false }).map(row => ({
+      ...row, status: 'reviewed', reviewer: 'independent', disposition: 'Kontrolleret mod facsimile',
+      typography_status: 'reviewed', typography_disposition: 'Ingen fremhævelser',
+    }));
+    expect(inventory.find(row => row.text_id === 'parent' && row.printed_page === '11'))
+      .toMatchObject({ first_line: 'Barnets første linje' });
+    expect(inventory.find(row => row.text_id === 'child'))
+      .toMatchObject({ parent_text_id: 'parent' });
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+    const backwards = xml.replace('Næste digt', '<pb n="11" facs="011.jpg"/>Næste digt');
+    expect(auditPageInventory({ xml: backwards, inventory }).issues)
+      .toEqual(expect.arrayContaining([expect.objectContaining({ rule: 'decreasing-facsimile' })]));
+  });
+
+  it('includes verse in title footnotes under the owning text and its own page stream', () => {
+    const withTitleNote = xml.replace('Metadata, ikke brødtekst',
+      'Titel<footnote><poetry>Notens første vers fom\n<pb n="12" facs="012.jpg"/>Notens sidste vers</poetry></footnote>');
+    expect(analyzeWholeWork(withTitleNote).poems.filter(poem => poem.text_id === 'child')
+      .map(poem => poem.block_index)).toEqual([1, 2]);
+    const blocks = extractPoetryBlocks(withTitleNote).filter(block => block.textId === 'child');
+    expect(blocks.map(block => block.blockIndex)).toEqual([2, 1]);
+    expect(blocks[0].lines.map(line => line.facsimile)).toEqual(['011.jpg', '012.jpg']);
+    expect(blocks[0].lines.map(line => line.text)).toEqual(['Notens første vers fom', 'Notens sidste vers']);
+    expect(historicalOcrCandidates({ xml: withTitleNote })).toEqual(expect.arrayContaining([
+      expect.objectContaining({ text_id: 'child', facsimile: '011.jpg', match: 'fom' }),
+    ]));
+  });
+
+  it('resumes after a child whose physical transition is recorded only in a note', () => {
+    const noteOnlyPageBreak = xml.replace(
+      '<pb n="12" facs="012.jpg"/>Barnets sidste linje',
+      '<footnote>Noten begynder<pb n="12" facs="012.jpg"/>og fortsætter.</footnote>Barnets sidste linje',
+    );
+    const blocks = extractPoetryBlocks(noteOnlyPageBreak);
+    expect(blocks[2].lines[0].text).toBe('Eftervers');
+    expect(blocks[2].lines[0].facsimile).toBe('012.jpg');
+  });
+});
+
 describe('pdf-to-kalliope page inventory and semantic audit', () => {
+  it('inventories physical pages without inventing skipped printed numbers', () => {
+    const xml = workXml.replace('<pagebreaks/>', '<pagebreaks count-by="facsimile"/>')
+      .replace('pages="10-12"', 'pages="176-180" facsimile-pages="11-13"')
+      .replace('n="11"', 'n="179"').replace('n="12"', 'n="180"');
+    const rows = buildPageInventory({ xml });
+    expect(rows.map(row => row.printed_page)).toEqual(['176', '179', '180']);
+    expect(rows.map(row => row.facsimile)).toEqual(['010.jpg', '011.jpg', '012.jpg']);
+  });
+
+  it('keeps literal and corrected labels distinct regardless of attribute order', () => {
+    const xml = workXml.replace('pages="10-12"', 'pages="200-202" facsimile-pages="11-13"')
+      .replace('n="11"', 'corrected-n="201" n="101"').replace('n="12"', 'n="202"');
+    const rows = buildPageInventory({ xml });
+    expect(rows).toHaveLength(3);
+    expect(rows[1]).toMatchObject({ printed_page: '101', corrected_page: '201', facsimile: '011.jpg' });
+    const inventory = rows.map(row => ({ ...row, status: 'reviewed', reviewer: 'reader',
+      disposition: 'checked', typography_status: 'reviewed', typography_disposition: 'checked' }));
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual([]);
+    delete inventory[1].corrected_page;
+    expect(auditPageInventory({ xml, inventory }).issues).toEqual(expect.arrayContaining([
+      expect.objectContaining({ rule: 'mismatched-corrected-page' }),
+    ]));
+  });
+
+  it('retains a misprinted first label and its nominal reference in the inventory', () => {
+    const xml = workXml.replace('pages="10-12"', 'pages="10-12" first-n="99" facsimile-pages="11-13"');
+    const rows = buildPageInventory({ xml });
+    expect(rows).toHaveLength(3);
+    expect(rows[0]).toMatchObject({ printed_page: '99', corrected_page: '10', facsimile: '010.jpg' });
+  });
+
+  it('inventories and checks a standalone cast list without a body', () => {
+    const xml = `<kalliopework id="1929" author="hauch">
+<workhead><title>Digte</title><source facsimile="book" facsimile-pages-num="50"/></workhead>
+<workbody><text id="cast" skip-index="true">
+<head><title>Personerne</title><source pages="3" facsimile-pages="41"/></head>
+<front><castList><castItem><role>John,</role> <roleDesc>en fom gammel Bonde.</roleDesc></castItem></castList></front>
+</text></workbody></kalliopework>`;
+    const inventory = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(inventory).toEqual([expect.objectContaining({
+      text_id: 'cast', printed_page: '3', facsimile: '040.jpg',
+      first_line: 'John, en fom gammel Bonde.',
+    })]);
+    expect(historicalOcrCandidates({ xml, inventory })).toEqual(expect.arrayContaining([
+      expect.objectContaining({
+        text_id: 'cast', rule: 'likely-long-s-substitution', match: 'fom',
+        printed_page: '3', facsimile: '040.jpg',
+      }),
+    ]));
+  });
+
   it('distinguishes physical pages with a repeated printed page number', () => {
     const xml = workXml.replace('n="12"', 'n="11"');
     const inventory = buildPageInventory({ xml, includeExpectedPages: false }).map(row => ({
@@ -88,6 +206,15 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
     expect(bodyCandidate).toMatchObject({ printed_page: '11', facsimile: '011.jpg' });
     expect(candidates.every(candidate => candidate.facsimile != null)).toBe(true);
     expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(candidates.length);
+  });
+
+  it('does not move main-text anchors to the next page when a footnote crosses the same boundary', () => {
+    const xml = workXml.replace('Første linje',
+      'Første<footnote>Flens<pb n="11" facs="011.jpg"/>burgi</footnote> linje');
+    const rows = buildPageInventory({ xml, includeExpectedPages: false });
+    expect(rows).toHaveLength(3);
+    expect(rows[0]).toMatchObject({ first_line: 'Første linje', last_line: 'Sidste paa ti' });
+    expect(rows[1]).toMatchObject({ printed_page: '11', first_line: 'Første paa elleve' });
   });
 
   it('keeps body anchors stable when notes change', () => {
@@ -245,6 +372,28 @@ describe('pdf-to-kalliope page inventory and semantic audit', () => {
 });
 
 describe('whole-work structure wrapper', () => {
+  it('uses the same verse and indentation counts when a poem starts with a metrical diagram', () => {
+    const body = '<metrik>_ u _\n_ _</metrik>\nFørste vers\n    Andet vers';
+    const xml = `<kalliopework><workbody><text id="diagram"><head><title>Digt</title></head><body><poetry>${body}</poetry></body></text></workbody></kalliopework>`;
+    const [poem] = analyzeWholeWork(xml).poems;
+    expect(poem.stanza.verse_line_count).toBe(2);
+    expect(poem.stanza.observed_stanza_lengths).toEqual([2]);
+    expect(poem.indentation.indentation_profile).toEqual([0, 4]);
+    expect(analyzeIndentation({ body }).indentation_profile).toEqual([0, 4]);
+  });
+  it('counts note poetry separately without adding its paragraphs or page breaks to the main poem', () => {
+    const xml = workXml.replace('Første linje', `Første<footnote>Notens prosa
+
+<pb n="11" facs="011.jpg"/><poetry>Notens første vers<br/>Notens andet vers</poetry>
+
+Mere prosa</footnote> linje`);
+    const analysis = analyzeWholeWork(xml);
+    expect(analysis.poems).toHaveLength(2);
+    expect(analysis.poems[0].stanza.observed_stanza_lengths).toEqual([5]);
+    expect(analysis.poems[0].page_breaks).toEqual([3, 4]);
+    expect(analysis.poems[1].stanza.observed_stanza_lengths).toEqual([2]);
+  });
+
   it.each([
     {
       textId: 'roerdam2026092001',
@@ -478,6 +627,36 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
     ]));
   });
 
+  it.each(['<br/>', '\n'])('audits note citations with %j breaks separately from the main stanza', separator => {
+    const citedXml = workXml.replace('<poetry>', `<poetry>Vers<footnote><poetry>Første citat${separator}Andet citat</poetry></footnote>\n`);
+    const result = analyzeWholeWork(citedXml);
+    expect(result.poems).toHaveLength(2);
+    expect(result.poems[1].stanza.observed_stanza_lengths).toEqual([2]);
+  });
+
+  it('does not interpret prose note columns as poems', () => {
+    const withNote = workXml.replace('Første linje',
+      'Første<footnote><column>Se første udgave, 1820.<br/>Se anden udgave, 1830.</column></footnote> linje');
+    expect(analyzeWholeWork(withNote).poems).toEqual(analyzeWholeWork(workXml).poems);
+  });
+
+  it('preserves legacy note-only page boundaries without counting note text as verses', () => {
+    const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
+      .replace('Sidste paa ti',
+        'Sidste paa ti<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote>');
+    const [poem] = analyzeWholeWork(legacy).poems;
+    expect(poem.stanza.observed_stanza_lengths).toEqual([5]);
+    // Preserve master's convention: an inline transition belongs to its verse.
+    expect(poem.page_breaks).toEqual([2, 4]);
+  });
+
+  it('matches shared boundaries by facsimile regardless of attribute order', () => {
+    const withNote = workXml.replace('Første linje',
+      'Første<footnote>Note<pb facs="011.jpg" n="11"/> fortsat.</footnote> linje');
+    expect(analyzeWholeWork(withNote).poems).toEqual(analyzeWholeWork(workXml).poems);
+    expect(buildPageInventory({ xml: withNote })).toEqual(buildPageInventory({ xml: workXml }));
+  });
+
   it('treats any line without terminal punctuation as continuation evidence', () => {
     const xml = workXml.replace(
       /<body><poetry>[\s\S]*?<\/poetry><\/body>/,
@@ -634,6 +813,26 @@ Så fik vi September engang. Og Jer, kære kvidrende Svaler,
 });
 
 describe('historical OCR candidate profile', () => {
+  it('starts a later note on the page inherited from a legacy note-only transition', () => {
+    const legacy = workXml.replace('<pb n="11" facs="011.jpg"/>', '')
+      .replace('Første linje', 'Første<footnote>Note<pb n="11" facs="011.jpg"/> fortsat.</footnote> linje')
+      .replace('Sidste paa ti', 'Senere<footnote>Image senere note</footnote> linje');
+    const candidate = historicalOcrCandidates({ xml: legacy })
+      .find(item => item.rule === 'image-token');
+    expect(candidate).toMatchObject({ facsimile: '011.jpg', printed_page: '11' });
+  });
+
+  it('keeps note and main-text candidates on their physical pages when their transitions repeat', () => {
+    const xml = workXml.replace('Første linje',
+      'Første<footnote>Image note<pb n="11" facs="011.jpg"/>Image notefortsættelse</footnote> linje')
+      .replace('Første paa elleve', 'Image hovedtekst');
+    const candidates = historicalOcrCandidates({ xml })
+      .filter(candidate => candidate.rule === 'image-token');
+    expect(candidates.map(candidate => candidate.facsimile))
+      .toEqual(['011.jpg', '010.jpg', '011.jpg']);
+    expect(new Set(candidates.map(candidate => candidate.id)).size).toBe(3);
+  });
+
   it('attributes candidates on unnumbered pages to their own facsimile', () => {
     const xml = workXml
       .replace('pages="10-12"', 'facsimile-pages="10-12"')

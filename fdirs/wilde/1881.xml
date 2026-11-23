@@ -7,7 +7,7 @@
     <openlibrary-work>OL14877876W</openlibrary-work>
   </identifiers>
   <notes>
-    <note>Tilføjet af Henrik Nielsen.</note>
+    <note type="credits" editorial="true">Tilføjet af Henrik Nielsen.</note>
   </notes>
   <quality>korrektur1</quality>
 </workhead>
@@ -77,6 +77,10 @@ God knows it I am with them, in some things.
 <head>
   <title>Ave Imperatrix</title>
   <firstline>Set in this stormy Northern sea</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -598,7 +602,7 @@ The star that shook above the Eastern hill
 From all the gathering gloom and fretful fight—
 O tarry with us still! for through the long and common night,
 
-Morris<footnote><a poet="morrisw">William Morris</a> (1834-1896).</footnote>, our sweet and simple Chaucer's child,
+Morris<footnote editorial="true"><a poet="morrisw">William Morris</a> (1834-1896).</footnote>, our sweet and simple Chaucer's child,
   Dear heritor of Spenser's tuneful reed,
 With soft and sylvan pipe has oft beguiled
   The weary soul of man in troublous need,
@@ -934,6 +938,9 @@ Ah, God! Ah, God! those dear Hellenic hours
 <head>
   <title>Rome Unvisited</title>
   <firstline>The corn has turned from grey to red</firstline>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1105,6 +1112,9 @@ My heart stole back across wide wastes of years
   <title>E Tenebris</title>
   <firstline>Come down, O Christ, and help me! reach thy hand</firstline>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2070,6 +2080,7 @@ For me three paces on the sand
 <head>
   <title>Charmides</title>
   <firstline>He was a Grecian lad, who coming home</firstline>
+  <keywords>sappho</keywords>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -3727,6 +3738,9 @@ And all the branches streaked with gold.
   <title>At Verona</title>
   <firstline>How steep the stairs within Kings' houses are</firstline>
   <keywords>sonnet</keywords>
+  <places>
+    <place ref="verona" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -4508,7 +4522,7 @@ That which is purely human, that is Godlike, that is God.
   <title>Bittersweet Love</title>
   <firstline>Sweet I blame you not for mine the fault was, had I not been made of common clay</firstline>
   <notes>
-    <note>Den rigtige titel på digtet er »ΓΛΥΚΥΠΙΚΡΟΣ ΕΡΩΣ« hvilket er græsk for »Bittersweet Love«.</note>
+    <note editorial="true">Den rigtige titel på digtet er »ΓΛΥΚΥΠΙΚΡΟΣ ΕΡΩΣ« hvilket er græsk for »Bittersweet Love«.</note>
   </notes>
   <quality>korrektur1</quality>
 </head>

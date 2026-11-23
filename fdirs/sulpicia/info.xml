@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="sulpicia" country="un" nationality="it" lang="la" type="poet">
+  <name>
+    <lastname>Sulpicia</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>la-romersk-litteratur</literary-periods>
+  <identifiers>
+    <wikidata>Q257448</wikidata>
+    <gnd>119165384</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-03">
+    <checked-source id="salmonsen2">Bind XXII, s. 574–575: opslaget Sulpicia omhandler den domitianske navnesøster, ikke den augustæiske elegiker.</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI, s. 994 og register: intet Sulpicia-opslag.</checked-source>
+    <checked-source id="salmonsen4">Sp. 4387–4389: intet opslag om Sulpicia.</checked-source>
+    <note>De relevante Salmonsen-opslag er kontrolleret mod facsimilerne. DBL, Erslew og Ehrencron-Müller er geografisk afgrænset til Danmark og Norge/Island og er ikke relevante for denne romerske oldtidsdigter. Præcise leveår er ikke sikkert dokumenteret.</note>
+  </biography-status>
+</person>

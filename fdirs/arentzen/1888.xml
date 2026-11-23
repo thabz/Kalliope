@@ -4,7 +4,7 @@
   <title>Nogle Digte</title>
   <year>1888</year>
   <notes>
-    <note>Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
+    <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
   </notes>
   <pictures>
     <picture src="1888-p2.jpg">Forsiden til <i>Nogle Digte</i> (1888).</picture>
@@ -2656,6 +2656,11 @@ Vincent!
 <head>
   <title>Vølund</title>
   <firstline>Ensom jeg sidder</firstline>
+  <notes>
+    <!-- Kilde: https://kalliope.org/da/text/arentzen2019011238 -->
+    <!-- Kilde: https://heimskringla.no/wiki/V%C3%B8lund -->
+    <note editorial="true">Se også <xref poem="eddadigte2026112010"/>.</note>
+  </notes>
   <source pages="91-94"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -2927,7 +2932,7 @@ denne rige Ungdom - Alting, Alt er hans!
 Alting er i Orden, Ingenting er galt:
 ærlig kjøbt er Varen, og den er betalt.
 
-Tog han hende ikke fra Mansarde'ns<note>Mansarden's] Mansarde'ns</note> Nød,
+Tog han hende ikke fra Mansarde'ns<note editorial="true">Mansarden's] Mansarde'ns</note> Nød,
 fra det strenge Arbeid for det tørre Brød?
 
 Ruller ikke dobbelt frisk nu hendes Blod?
@@ -3125,6 +3130,9 @@ med Lys og Lykke og Fred.
   <firstline>Hvad skal jeg sige? Mine Ord</firstline>
   <source pages="108-110"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="pincian-hill" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3197,6 +3205,12 @@ til mine danske Venner.
   <title>I det gamle Roma</title>
   <firstline>Du, som delte tro min Vandring</firstline>
   <source pages="111-113"/>
+  <places>
+    <place ref="arch-of-titus" relation="mentioned"/>
+    <place ref="colosseum" relation="mentioned"/>
+    <place ref="palatine-hill" relation="mentioned"/>
+    <place ref="roman-forum" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3478,6 +3492,9 @@ Fædres Land!
   <firstline>Nu Juletidens Tryllespil</firstline>
   <source pages="121-125"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3923,6 +3940,9 @@ en Psyche med brudte Vinger.
   <title>Arnold fra Brescia</title>
   <firstline>Rødmende straaler den østlige Himmel</firstline>
   <source pages="137-139"/>
+  <places>
+    <place ref="tiber" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6475,6 +6495,9 @@ Fædreneland.
   <title>Bukefalos og Æselet</title>
   <firstline>To Billeder for Aandens Øie træde</firstline>
   <source pages="233"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7041,6 +7064,9 @@ i sidste Straaleskjær.
   <firstline>Ravnen skreg paa en Runesten</firstline>
   <source pages="253-254"/>
   <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="bornholm" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7103,6 +7129,9 @@ Lurens og Harpens Klang.
   <title>Jons Kapel</title>
   <firstline>Alt Offeralteret, blodbestænkt</firstline>
   <source pages="255-258"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7220,9 +7249,12 @@ Koralen spiller.
   <title>Johan Rantzau</title>
   <firstline>Han sad som en rødmusset, trettenaars Pog</firstline>
   <notes>
-    <note>Johan Rantzau (1492-1565), feltherre for <a person="frederik1">Frederik I</a> og <a person="christian3">Christian III.</a></note>
+    <note editorial="true">Johan Rantzau (1492-1565), feltherre for <a person="frederik1">Frederik I</a> og <a person="christian3">Christian III.</a></note>
   </notes>
   <source pages="259-260"/>
+  <places>
+    <place ref="tiber" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7289,7 +7321,7 @@ og inden han endte,
   <title>Herluf Trolle</title>
   <firstline>I Kjøbenhavn er Bryllupsfest</firstline>
   <notes>
-    <note>Herluf Trolle (1516-1565), dansk admiral og søhelt.</note>
+    <note editorial="true">Herluf Trolle (1516-1565), dansk admiral og søhelt.</note>
   </notes>
   <source pages="261-264"/>
   <quality>korrektur1,kilde,side</quality>
@@ -7494,7 +7526,7 @@ fra Vuggens til Gravens Havne.
 Mens Holbergs mægtige Latter klang
 og rensede Foraarsluften,
 henaandede Stub sin melodiske Sang
-om den deilige Rosenknups Duften.<note>Se <xref poem="stubmoralskea2"/>.</note>
+om den deilige Rosenknups Duften.<note editorial="true">Se <xref poem="stubmoralskea2"/>.</note>
 
 Han var en Svale, der, kviddrende sødt,
 paa pilsnare Vinger kommer
@@ -8414,7 +8446,9 @@ det er lidt Gjenklang af Guldaldersmythen.
   <indextitle>Uglen</indextitle>
   <linktitle>Uglen</linktitle>
   <firstline>Stille, stille, I lystige Fugle!</firstline>
-  <!-- TODO: Find billedet af Wilhelm Zillen. -->
+  <pictures>
+    <picture artwork="kunst/zillen-uglen-1858"/>
+  </pictures>
   <source pages="301-302"/>
   <quality>korrektur1,kilde,side</quality>
 </head>

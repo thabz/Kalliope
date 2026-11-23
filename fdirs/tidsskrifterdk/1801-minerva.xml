@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalliopework id="1801-minerva" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
+<workhead>
+  <title>Minerva</title>
+  <year>1801</year>
+  <pagebreaks/>
+  <!-- Bind 63: intet rettelsesark. -->
+  <!-- Bind 64: intet rettelsesark. -->
+  <errata in="bd65" status="reviewed" pages="[upagineret]" facsimile-pages="2"/>
+  <!-- Bind 66: intet rettelsesark. -->
+  <proofreadings>
+    <!-- Bind 63. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:26:06Z"/>
+    <!-- Bind 64. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:26:06Z"/>
+    <!-- Bind 65. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:46:36Z"/>
+    <!-- Bind 66. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-13T10:56:29Z"/>
+  </proofreadings>
+  <pictures>
+    <picture src="1801-minerva-63-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // Januari, Februari og Marti, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1801-minerva-64-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // April, Maj og Junii, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1801-minerva-65-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // Julii, August og September, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1801-minerva-66-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // October, November og December, / 1801. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <!-- Bind 63: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-01 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_001. 112 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
+  <source id="bd63" href="https://books.google.com/books?id=nWA3AAAAMAAJ" facsimile="1801-minerva-63.pdf" facsimile-pages-num="360">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>63 (16. årgangs 3. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1801</year>
+  </source>
+  <!-- Bind 64: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1801-05 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_002. 114 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
+  <source id="bd64" href="https://books.google.com/books?id=MmE3AAAAMAAJ" facsimile="1801-minerva-64.pdf" facsimile-pages-num="356">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>64 (16. årgangs 4. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1801</year>
+  </source>
+  <source id="bd65" href="https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880016_003" facsimile="1801-minerva-65" facsimile-pages-num="372">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>65 (17. årgangs 1. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets Bogtrykker</printer>
+    <year>1801</year>
+  </source>
+  <source id="bd66" href="https://books.google.dk/books?id=72E3AAAAMAAJ" facsimile="1801-minerva-66" facsimile-pages-num="360">
+    <title>Maanedskriftet Minerva</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>66 (17. årgangs 2. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
+    <year>1801</year>
+  </source>
+</workhead>
+<workbody>
+
+<section level="1">
+<head>
+  <title>Januari 1801</title>
+</head>
+<content>
+
+<text id="thaarup2026110602" author="thaarup" variant="thaarup2026082015">
+<head>
+  <firstline>Gud er her! den Ævighøje</firstline>
+  <source in="bd63" pages="1-5" facsimile-pages="9-13"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center><w>For Prædiken.</w></center></nonum>
+
+Gud er her! den Ævighøje,
+Intet skjules for hans Øje:
+  Livet er hans Bud!
+Han er Herren! kun de Rene
+Kunne ham i Sandhed tjene.
+  Hellig, Hellig er vor Gud.
+
+Gud er her! hvert Hjerte bæve!
+Hisset vil han Regnskab kræve
+  End for denne Stund.
+Hvo for Herrens Aasyn træder,
+Hvo ham i hans Huus tilbeder,
+  Hjertet stemme med hans Mund:
+
+Du er her, Algodheds Fader!
+Hvert dit Barn sig trygt forlader
+  Paa din Kiærlighed;
+Dig vor Fader! dig til Ære
+Denne Stund indviet være:
+  Giv du os dit Lys, din Fred.
+<nonum><center>Amen.</center></nonum>
+
+<pb n="2" facs="009.jpg"/><nonum><center><w>Efter Prædiken.</w></center></nonum>
+
+Lovpriser Jehovah i jublende Chor!
+Lovpriser ham Himmelens Hære!
+Al Jorden forkynde hans Ære!
+Han eene er Herren, alvældig og stor.
+  Halleluja.
+
+Herre! ævig er din Vælde.
+Verdner svinde bort af Ælde,
+  Sole slukkes ud.
+Ved dit Vink Naturen falder,
+Og dit Vink den atter kalder,
+  Alskaber! Gud.
+
+Alvældige! din Skabnings Bryst
+En hellig Rædsel gjennembæver,
+Naar han sin svage Røst
+Om dine Underværker hæver.
+  Svimlende han aander ud:
+  Ubegribelige Gud!
+
+Hvis jeg i Jordens Skjød nedsænkte mig,
+Og kunde jeg med Lynets snare Vinge
+Mig til den sidste Soelkreds svinge;
+I Mulm, i Lys, jeg følte dig.
+  Fra Jordens Svælg fra Sole tordnes ud:
+  Her er Gud!
+
+Alvældig, Ævig, Ubegribelig,
+Langt over Jorden over Himles Hære;
+<pb n="3" facs="010.jpg"/>Alskaber! Herre! hvo kan fatte dig?
+Hvad Navn kan værdigt til din Storhed være?
+  Selv bød du os miskundelig:
+  Vi skulle Fader kalde dig!
+
+Udgyd, o Haab! din Himmel i vort Bryst.
+Vor hele Sjæl erkjændtlig Tillid være!
+Stig højt, du Glædens Jubelrøst!
+Forkynd Jehovahs Godhed med hans Ære!
+  Du Fader! Støvet bød at elske dig,
+  At være lykkelig.
+
+Du kuer Stormens Vælde med din Arm.
+Dit Vink ærbødig Havets Bølge lyder.
+Tyranner rase frem i vilden Harm:
+De synke hen i Støv, naar du det byder.
+  Et Folk sig stort ved Vold med Stolthed seer;
+  Jehovah vil, og Folket er ei meer.
+
+Jehovah bød: vord' Lys! og Lyset blev.
+Han vil; Vankundighedens Mørke viger.
+Han Overtroens Gøglelys bortdrev;
+See Kundskabs klare Morgenrøde stiger.
+  I Lysets Straaler Folket fryder sig:
+  Det Lysets Fader! priser dig.
+
+Du førte vore første Fædre frem
+Paa Kundskabs Vej med Faderhjerte.
+Dit vise Forsyns Øje fulgte dem;
+Du under Billeder dem Sandhed lærte.
+<pb n="4" facs="011.jpg"/>Da deres Afkom gik med sikre Fjed,
+Du Morgenrøden bød for Solen svinde:
+Thi sendte du din Søn til Jorden ned,
+Og Verden saae det store Lys oprinde.
+
+Som Drøm hensvunde attenhundred' Aar;
+End straaler det med reen usvækket Vælde.
+Som Herrens Trone Sandhed ævig staaer.
+Den dræber intet Mulm, den svækker ingen Ælde.
+Til fjerne Folk dens Lys skal spredes ud,
+I det al Jorden skal tilbede.
+De skulle fryde sig ved Jesu Bud
+I Fuego-Landets Kuld og Zarahs Hede.
+
+Thi stor, og reen og navnløs Salighed
+Er deres Løn, som Jesu Lærdom lyder.
+I Sjælen Lys, i Hjertet Fred,
+Og Taal i Modgang, dem Alviisdom byder.
+Ved Dyder ædles Sjælen meer og meer,
+Og naar den sidste Time kommer,
+Naar Øjet brister, Sjælen seer
+En Fader i Alverdens Dommer.
+
+  Gud! du danned' os til Glæde,
+  Kaldte os til Salighed.
+  I din Skabnings Underkjæde
+  Bleve vi et vigtigt Led.
+  Alles Hjerter hæve sig:
+  Alles Læber prise dig.
+
+<pb n="5" facs="012.jpg"/>  Herre! du saae ned til Norden,
+  Skjænkte den fremfarne Tid
+  Fred og Frugtbarhed af Jorden,
+  Signede hver gavnlig Id.
+  Dette nysbegyndte Aar
+  Gud! i dine Hænder staaer.
+
+  Vi din Faderhuld erkjænde
+  Dybt i vor henrykte Sjæl.
+  Du os vil fra Himlen sende,
+  Hvad som tjener til vor Vel.
+  Gud! du skaber Vel af Vee
+  Fader! Gud! din Villie skee!
+
+  Giv vor Sjæl i Viisdom stige!
+  Luttre os til Hellighed!
+  At vi modnes til det Rige,
+  Som du hisset har beredt.
+  Der fra Lys til Lys vi gaaer
+  I et ævigt Jubelaar.
+
+Alt det, som aander, love Herren!
+  Halleluja!
+Min Sjæl! lov Herren!
+  Halleluja!
+
+<nonum><right><w>T. Thaarup.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Februari 1801</title>
+</head>
+<content>
+
+<text id="rahbek2026110608" author="rahbek">
+<head>
+  <suptitle>Sange til de kiøbenhavnske Frimurer-Logers Jubel-Høitid, den 25 Jan. 1801.</suptitle>
+  <title>For Talen</title>
+  <dates>
+    <event>1801-01-25</event>
+  </dates>
+  <source in="bd63" pages="144-145" facsimile-pages="152-153"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I Æoners Ocean
+sank Aarhundredet tilbage.
+Svundne Old! hvo kan, hvo kan
+skilles fra dig uden Klage?
+Mangt et Haab og megen Lykke
+gik forved dig i din Grav;
+Ak! hvorfor saa bradt bortrykke,
+  hvad du gav?
+
+  Sorgfuldt ned i Graven skue
+Sandhed, Retfærd, Borgersind!
+Svoveldamp og Mordbrandslue
+for vort Blik dem hylle ind!
+O! hvi har du smigret dem
+med hiin favre Morgenrøde?
+Knap den fik dem lokket frem,
+før blandt Uveir den bortdøde.
+
+  Hør en Røst fra Seklets Grav!
+Agt dens høitidsfulde Lære:
+Herren tog, og Herren gav,
+Herrens Navn velsignet være!
+<pb n="145" facs="152.jpg"/>Støv! vil du din Skaber lede?
+Kan du tolke Viisdoms Sprog,
+at du mestrer Skiebnens Bog?
+Lær at knæle og tilbede.
+
+  Mester! Herre! Fader! Gud!
+Styr vort Øie, styrk vort Hierte,
+at, hvor vi os drømme Smerte,
+vi maae see dit vise Bud.
+Som en flygtig Røg hendriver,
+svinde, flye Aartusinder,
+smulne, falde Verdener;
+men du var, og er, og bliver!
+</poetry>
+</body>
+</text>
+
+<text id="rahbek2026110609" author="rahbek">
+<head>
+  <suptitle>Sange til de kiøbenhavnske Frimurer-Logers Jubel-Høitid, den 25 Jan. 1801.</suptitle>
+  <title>Efter Talen</title>
+  <dates>
+    <event>1801-01-25</event>
+  </dates>
+  <source in="bd63" pages="145-146" facsimile-pages="153-154"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+  Evighedens yngste Søn?
+Sukke lyde dig imøde!
+Smil fra Østen blid og skiøn,
+bedre Dages Morgenrøde.
+Nattens Furier forsvinde
+Fordom, Tvedragt, Had og Nag!
+Skiøn som Edens første Dag
+Sandheds Dag med dig oprinde!
+
+  For dit Aasyn svæve Fred,
+lindre Jorderigets Sukke!
+ved din Side Enighed
+alle Svælgedyb tillukke!
+<pb n="146" facs="153.jpg"/>I dit Fied til Jordens Slægter
+Ile kierlig Broderaand,
+samle ømt ved Broderhaand
+alle Farver, alle Secter!
+
+  Lad vort Lys til Brødres Vel
+giennembryde Fordoms Mørke!
+Bring vor store Bygning Held,
+bring os Viisdom, Skiønhed, Styrke!
+Viisdom Sandhedsiver være,
+Skiønhed Brødres Gavn og Fryd,
+Styrke egen Værd og Dyd,
+til vor store Mesters Ære!
+
+<nonum><right><w>K. L. Rahbek.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<!-- Trykt 162, facs169.jpg: »snarlig snarlig« er verificeret i kilden og bevaret. Undtagelsen gælder kun repeated-adjacent-word. -->
+<text id="abrahamson2026110601" author="abrahamson" ignore-tests="repeated-adjacent-word">
+<head>
+  <title>Sækular-Sang</title>
+  <source in="bd63" pages="159-163" facsimile-pages="167-171"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center><w>Et Chor.</w></center></nonum>
+Til dig, som bødst i ti og ti Olympiader
+  Nedsmile Fred og Held til Dan og Nor,
+Til Dig! til Dig: Algodheds Fader!
+  Opstiger vor Lovsang i jublende Chor.
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+    Minuter, Timer, Dage,
+    Og Maaneder, og Aar,
+    Og Sekler, rinde fage,
+    Tid vorder, og forgaaer.
+
+<nonum><center><w>Solo.</w></center></nonum>
+  Aartusinder han seer, som Dage,
+  Held os, hans Varetægt bestaaer.
+
+<nonum><center><w>begge Chor.</w></center></nonum>
+  Held os! Held os! hans Varetægt bestaaer.
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+Det er fuldbragt! Aarhundrede!
+Du sank i Fortids aabne Afgrund;
+De Fædres Fædre saae din Fødsel
+Din Vugge svæved i et Blodhav<footnote>Den nordiske Krig og den spanske Successionskrig.</footnote>,
+Som bølgede fra Herkuls Støtter
+Til Borysthenes Katarakter.
+Og Vaabenbrag var Vuggesangen,
+Gienlydende fra Dovres Huler
+Henover Rhætiens<footnote>Schweiz.</footnote> iisklædte Alper.
+<pb n="160" facs="167.jpg"/>End strakte Østens Morderdæmon<footnote>Pesten.</footnote>
+Sit Flammesværd ud over Verden,
+Og Millioner faldt for Sværdet
+Fra Stambul<footnote>Constantinopel.</footnote> til Algarves Kyster.
+
+<nonum><center><w>Arioso.</w></center></nonum>
+    Blevst du, Aarhundrede!
+    Fød til Forbandelse?
+    Skal du fra Fødslen af
+    Sprede Forstyrrelse
+    Ud over Folkene
+    Indtil din Grav?
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+  Det er fuldbragt! i Fortids Afgrund
+  Nedsank Aarhundredet. Og atter
+  Et Blodhav slaaer de vilde Bølger;
+  Og atter løfter Pestilentsen
+  Sit Slagsværd hist fra fierne Gades
+  Imod Europas Millioner.
+
+<nonum><center><w>Arioso.</w></center></nonum>
+    Den Skræk, dig omgav
+    Henfarne Aarhundred
+    I Fødselens Time,
+    Den følger, den følger
+    Dig indtil din Grav.
+
+<nonum><center><w>Solo.</w></center></nonum>
+Lover Herren! thi han haver underlig beviist sin Miskundhed imod os<footnote>Davids Ord.</footnote>.
+
+<pb n="161" facs="168.jpg"/><nonum><center><w>Et Chor.</w></center></nonum>
+Held os! Held os! i ti og ti Olympiader
+Har hvilt i Trygheds Arme Dan og Nor.
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+Til ham! til ham! Algodheds Fader!
+Opstiger vor Lovsang i jublende Chor.
+
+<nonum><center><w>begge Chor.</w></center></nonum>
+Priis være dig! Algodheds Fader!
+Du værnede om Dan og Nor.
+
+<nonum><center><w>et Chor.</w></center></nonum>
+<footnote>Klopstok.</footnote>"Eet Aarhundred endnu! da gielder"
+"Fornuftens Ret ei Spydstagens Ret".
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+I Rædsler født og død i Rædsler
+Er den henfarne Tidens Datter,
+Men ei Forbandelser den bragde,
+Velsignelser den deelte ud
+Til Held for Slægt og Efterslægter,
+Thi see! den sendtes fra Algodheds Gud.
+
+<nonum><center><w>Duet.</w></center></nonum>
+<margin>1.</margin>Det vi see, det vore Fædre
+  Ønskede, men saae det ei.
+<margin>2.</margin>Fra det Gode til det Bedre
+  Gaaer det vise Forsyns Vei.
+<margin><w>begge</w></margin>Før det haabes, vorder brat
+  Held af Uheld, Dag af Nat.
+
+<pb n="162" facs="169.jpg"/><nonum><center><w>Solo.</w></center></nonum>
+    "Han sagde: vorde Lys!
+    "Og der blev Lys!"
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+  Aarhundreder henrandt i Mørke,
+  Aarhundreder henrandt i Skumring,
+  Og fælt det var i Nattens Mørke,
+  Og skuffende hiin Skumrings Lysglimt.
+  Men Tiden kom, da fødtes du
+  I Blod og Nat, Aarhundrede!
+  Og det var dig, der bragte Lyset.
+  Ei Skumring, ei det blege Dagskier,
+  Oprunden er den fulde Morgenrøde,
+  Og snart, o snart, oprinder Solen.
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+  Et Aarhundred' endnu! da gielder
+  Fornuftens Ret, ei Spydstagens Ret.
+
+<nonum><center><w>Recitativ.</w></center></nonum>
+  Aartusender henrandt i Trældom;
+  Og fælt de Lænker raslede,
+  Som smeddedes af Egennytte,
+  Og hærdedes af Frygt og Feighed.
+  Men Tiden kom; da fødtes du
+  I Blod og Nat, Aarhundrede!
+  Og det var dig, som skiørned' Lænken,
+  Dig, som bød Friheds Røst at lyde,
+  Og fiern og nær den høres, mærkes,
+  Gientagen lydt fra Dannertronen.
+  Og snarlig snarlig Friehed kommer,
+  Og Haand i Haand ledsages af Fornuften,
+  Og signer alle Jorderiges Slægter.
+
+<pb n="163" facs="170.jpg"/><nonum><center><w>Arioso.</w></center></nonum>
+  Nyfødte Aarhundrede!
+  Af dig vi vente det:
+  Fornuftens og Frihedens Rige.
+  Og skyndsomt skal Mennesket
+  Høyere! høyere
+  Op til Fuldkommenhed stige.
+
+<nonum><center><w>Solo.</w></center></nonum>
+  Af Blod og Nat han lader
+  Oprinde Lyset ved sit Ord.
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+Et Aarhundred' endnu, da gielder
+Fornuftens Ret, ei Spydstagens Ret.
+
+<nonum><center><w>Solo.</w></center></nonum>
+    Amen! Selah!
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+Til ham, til ham, til Fredens, Lysets, Frieheds Fader
+  Opstige Jubelsang fra Dan og Nor.
+
+<nonum><center><w>Et Chor.</w></center></nonum>
+  Ham Fredens, Lysets, Frieheds Fader
+  Al Jorden lovsynge i jublende Chor.
+
+<nonum><center><w>Begge Chore.</w></center></nonum>
+  Lovsyng ham, o Jord.
+
+<nonum><right><w>Abrahamson.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Marti 1801</title>
+</head>
+<content>
+
+<text id="hoeghguldbergf2026110602" author="hoeghguldbergf">
+<head>
+  <suptitle>Det blaagaardske Landalmuelærerseminariums første Tiaarsfest, høitideligholdet d. 14 Marts 1801, med følgende Tale og Sange</suptitle>
+  <title>For Talen</title>
+  <dates>
+    <performed>1801-03-14</performed>
+  </dates>
+  <source in="bd63" pages="297-298" facsimile-pages="303-304"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Sandheds Fader i det høie!
+stedse lad Dit Forsynsøie
+  hvile her!
+<pb n="298" facs="303.jpg"/>Lad vor Flid Dit Bifald finde!
+og vor Idræt allesinde
+  vorde vore Brødre kier!
+
+Reent, beskedent, kierligt være,
+som vor Vandel, i vor Lære
+  hvert et Bud!
+Begge lyse! begge varme!
+aldrig glimre! aldrig larme!
+  begge tækkes Sandheds Gud!
+
+Og, skal da maaskee vort Hierte
+miskiendt tæres af sin Smerte,
+  send da Trøst!
+I den mørke Stund, der kommer,
+lad vor Tankes indre Dommer
+  hæve seirende sin Røst!
+
+Saa vor Daad, naar Banen ender,
+i det brustne Hierte tænder
+  Lys og Ro.
+Dødens Haand vort Øie lukke;
+o men vore sidste Sukke
+  hædre Livet, være froe!
+</poetry>
+</body>
+</text>
+
+<text id="hoeghguldbergf2026110603" author="hoeghguldbergf">
+<head>
+  <suptitle>Det blaagaardske Landalmuelærerseminariums første Tiaarsfest, høitideligholdet d. 14 Marts 1801, med følgende Tale og Sange</suptitle>
+  <title>Efter Talen</title>
+  <dates>
+    <performed>1801-03-14</performed>
+  </dates>
+  <source in="bd63" pages="317-319" facsimile-pages="323-325"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center><w>Enkelte:</w></center></nonum>
+Snart, Brødre! snart vor Time slaaer,
+  vi skilles fra hverandre:
+i Nat og Mulm vor Vei da gaaer,
+  ad sporløs Bane Hver skal vandre.
+    Hvor finde vi
+et Glimt af Lys paa vildsom Sti?
+
+<nonum><center><w>Andre:</w></center></nonum>
+Lad Natten kun sortne, lad Timen kun slaae
+  og Broder fra Broderen fierne!
+der tindrer en Stierne paa Himlenes Blaa,
+  og seer! det er <w>Sandhedens</w> Stierne.
+
+<pb n="318" facs="323.jpg"/><nonum><center><w>Kor:</w></center></nonum>
+O <w>Sandhed</w>! vi følge Din Stierne!
+
+<nonum><center><w>Enkelte:</w></center></nonum>
+Men Løgn og Vold vil bryde frem,
+  i Storme vildt de brage.
+Og Skiebnens Torden møder dem,
+  dens Drøn forbittre vore Dage.
+    Hvor finde vi
+et Glimt af Trøst paa harmfuld Sti?
+
+<nonum><center><w>Andre:</w></center></nonum>
+Lad Torden og Storme forenede slaae!
+  lad blidere Tider sig fierne!
+der tindrer en Stierne paa Himlenes Blaa,
+  og seer! det er <w>Selvfredens</w> Stierne.
+
+<nonum><center><w>Kor:</w></center></nonum>
+O <w>Selvfred</w>! Du tænde Din Stierne!
+
+<nonum><center><w>Enkelte:</w></center></nonum>
+Men Mørket seirer, Lyset flyer,
+  og rystet Jorden bæver:
+en Broder selv sin Broder skyer,
+  og Løgnen Voldets Dolke hæver.
+    Hvor finde vi
+et Glimt af Ro paa fredløs Sti?
+
+<nonum><center><w>Andre:</w></center></nonum>
+Lad Mørket og Voldet forenede staae!
+  Lad Lyset og Retfærd sig fierne!
+der tindrer en Stierne paa Himlenes Blaa,
+  og seer! det er <w>Haabet</w> den Stierne.
+
+<pb n="319" facs="324.jpg"/><nonum><center><w>Kor:</w></center></nonum>
+O <w>Haab</w>! lad os finde Din Stierne!
+
+Blide Stierner! I ledsage
+Lysets Ven i Livets Dage
+  til hans Død!
+<w>Sandhed! Selvfred! Haab!</w> I være
+her vor Læsen! hist vor Ære!
+  Raad i Medgang! Trøst i Nød!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>April 1801</title>
+</head>
+<content>
+
+<text id="falsen2026110602" author="falsen">
+<head>
+  <title>Epilog</title>
+  <subtitle>opført paa den kongelige danske Skueplads, efter Comoedien Tienestefolkenes Skole ved Benefice-Forestillingen til Bedste for Staden Kiøbenhavns almindelige Fattigvæsen, den 18de April 1801.</subtitle>
+  <dates>
+    <performed>1801-04-18</performed>
+  </dates>
+  <source in="bd64" pages="96-98" facsimile-pages="104-106"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center><w>Personer:</w></center>
+<w>Philip</w>
+<w>Freeman</w> } af Tienestefolkenes Skole.
+<w>En fattig Mand</w>.
+<w>Thalia</w>.
+</prose>
+<poetry>
+<nonum><wrap><small><pb n="97" facs="104.jpg"/>En offentlig Plads, i Baggrunden sees en Portal eller Indgangen til et Theater, den er aaben, og <w>Thalia</w> viser sig af og til inden for. <w>En fattig Mand</w> sidder afsides ved et Hiørne. <w>Philip</w> kommer ud fra Lovels Huus, (af hvis Tieneste han er jaget bort) han staaer nogle Øieblik og grunder. Idet han begynder at tale, kommer <w>Freeman</w> ligeledes ud fra Lovels Huus — han bliver staaende afsides og hører til.</small></wrap></nonum>
+
+<nonum><center><w>Philip.</w></center></nonum>
+Her staaer jeg, hielpeløs, forladt,
+alt ved min egen Brøde,
+jeg Lykken sige maa god Nat,
+og for mit Galskab bøde.
+Hvad skal jeg nu vel fange an?
+o! giver Raad, om Nogen kan,
+hvis ei, gier mig en Strikke!
+jeg gider ei bag Ploven gaae,
+ved Betlen vil jeg neppe faae
+Tokaierviin at drikke
+<nonum><right><small>(han gaaer sørgmodig ad).</small></right></nonum>
+
+<nonum><center><w>Freeman.</w></center></nonum>
+Vee Daaren, som ved fulde Kruus
+forøder Lykkens Gaver,
+men trefold Vee, naar i et Ruus
+det hele Samfund raver!
+Naar dysset i en Gøgledrøm
+det hvirvles i en evig Strøm
+af nye Daarligheder,
+og kraftløs Usling skielver kun
+for at opvaagne af det Blun
+<pb n="98" facs="105.jpg"/>der skuffer ham med Glæder.
+Den sande Glæde skabte Gud
+at lindre Livets Plage,
+dens Nectar skal, saa lød hans Bud,
+ikkun den Gode smage;
+en venlig Røst fra Himlen lød:
+"i Ansigts Sveed fortær dit Brød,
+"vær glad, i det du gavner"!
+Gud saae sin Gierning, den var skiøn,
+thi gav han Fryd til Idræts Løn,
+kun Daaren Glæde savner.
+
+<nonum><center><w>Den Fattige.</w></center></nonum>
+En Taare dog for nøisomt Brød,
+i skyldfrit Øie blinker . . . .
+
+<nonum><center><w>Thalia</w> <small>(som under foranstaaende Repliker er kommet frem).</small></center></nonum>
+Men Haabets Straale Skyen brød
+og Medynk Lindring vinker;
+blandt Vaabengny, i Farens Nu
+et troefast Folk dig kom ihu,
+og venligt Haanden byder;
+skue Arme i mit Tryllespeil,
+som nyelig viiste Daarers Feil,
+nu Mildheds ædle Dyder!
+
+<nonum><center><w>Den Fattige.</w></center></nonum>
+End hæver sig til Himmelen
+den Armes Bøn med hellig Iver . . .
+kom Velgiorts Løn tifold igien
+fra Glædens milde Giver!
+</poetry>
+</body>
+</text>
+
+<text id="anonym1800nl2026110601" author="anonym1800nl" lang="nl">
+<head>
+  <title>Aan de dappere en Vaderlandslievende Deenen, van den 2de April 1801</title>
+  <dates>
+    <event>1801-04-02</event>
+  </dates>
+  <source in="bd64" pages="99" facsimile-pages="107"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+K'zing in myn Vaderland voor U regtschapen Deenen,
+Voor 't geen Gy op deez' Dag de Waereld hebt getoond;
+Uw Naam en Dapperheid word in Metaal en Steenen
+Aan't Nageslagt vermeld, en door de Deugd bekroond.
+Dacht Parker in de Sond, de Deenen te doen bukken?
+Neen! Gy hebt hem getoond, voor Coppenhagens Strand,
+Toen Hy door Overmagt het Norden sogt te drukken,
+Dat Gy aan Deugd en Trouw uw Leeven had verpand;
+Gy hebt den Dood veragt, toen G'uw als Muuren stelden
+Voor S' Vyands Moord-Geschut; Uw Roem tot hunne Spyt
+Zong men in Zeegenpraal by 't Sneuvlen uwer Helden
+Door t'Vaderlandsche Lied: op Broeders! tot den stryd.
+Hoe d' Uytslag ook mag zyn, de Faam meld reets uw Daden;
+Tot aan de Zuyder Pool de Noorder meld uw Lof:
+De Vyand van uw Roem heeft U met Roem beladen,
+Den Held van Abukir, heeft hier geen Juychens Stof!
+Mogt 't Noordsche Zeeverbond eens 't Britsch Geweld verbreeken!
+Dan reyst een Juych-Stem op, tot boven Lugt en Zwerk,
+Dan ziet Ge op Kronenborg een Zeegen-Vlag opsteeken
+Met deeze goude Spreuk: dit is der Britten Perk.
+
+<nonum><right><i>Een Bataaf.</i></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="hagerup2026110601" author="hagerup">
+<head>
+  <title>Til de tappre og fædrelandelskende Danske</title>
+  <subtitle>Den 2den April.</subtitle>
+  <dates>
+    <event>1801-04-02</event>
+  </dates>
+  <notes>
+    <note editorial="true">Oversættelse af den anonyme nederlandske <xref type="translation" poem="anonym1800nl2026110601"/>.</note>
+  </notes>
+  <source in="bd64" pages="99-100" facsimile-pages="107-108"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Jeg synger i mit Land, o Danske! eders Ære.
+For det, I have viist hiin Redsels Dag, I ere.
+<pb n="100" facs="107.jpg"/>Bekrandsede af Dyd vil eders Navne gaae
+Til Evigheden hen, og der Beundring naae.
+Mon Britten vel har troet? vi have Danske skrækket.
+Nei, eders Torden ham af denne Drøm har vækket.
+I viiste: Overmagt ei Norden Love gier,
+Og Liv i Friheds Kamp med Lyst opofret blier.
+I trodsed Død og Skræk, som Field urokkelige
+Ved rædsom Morder-Ild fra hærdede i Krige;
+Ja selv mens Strømmeblod af eders Helte flød,
+<w>Til Kampen, Brødre! op,</w> i Krigersange lød.
+Hvad end indtræffe kan; alt Rygtet eders Hæder
+Fra fierne Norden hen til Sydens Egn udbreder.
+Og denne Hæder I fra stolte Fiende vandt,
+Ved Kodan Nilens Helt nye Laurber ikke fandt.
+O maatte Nordens Mod dog Brittens Hovmod knække!
+Vidt ville Jubler da sig over Haver strække.
+Og Kronborgs Tordener med Seiersflaget paa
+Tilraabe Albion: Her dine Skranker staae.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Maj 1801</title>
+</head>
+<content>
+
+<text id="andresencs2026110601" author="andresencs">
+<head>
+  <title>Ved Amtmand Christen Heibergs Grav</title>
+  <subtitle>den 29 April 1801.</subtitle>
+  <dates>
+    <event>1801-04-29</event>
+  </dates>
+  <source in="bd64" pages="181-183" facsimile-pages="189-191"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Bort fra Jordens Uroe, Kamp og Møie
+  hen til Fredens lykkelige Land
+iilte Du — dit længselfulde Øie
+  brast — o <w>Heiberg</w>! — ædle Hædersmand.
+
+Blant vort <w>Norges</w> skovbegroede Fielde
+  — Modig, frie og kiek er Fieldets Søn —
+lærte Du hvad Pligt og Sandhed gielde,
+  følte Du at Dydens Lod er skiøn.
+
+Ei til Rang og Rigdom arvebaaren,
+  spildte Du ei favre Ungdoms Tid.
+Mangen Stolt i Lykkens Skiød udkaaren
+  haaner Arbeid, Tænksomhed og Flid.
+
+Ikke Fædres Værd dit Værd bestemte
+  — Det er skiønt at staae paa egen Fod —
+<pb n="182" facs="189.jpg"/>Hvo, som aldrig Dyd og Pligter glemte,
+  han som Du, urokket, mandig stod.
+
+Giennem Trangs og Arbeids tunge Prøve
+  kiemped' Du dig rask og modig frem,
+Arbeid, Troeskab, Dyd Du saaes udøve;
+  Drog som Kongens Mand til <w>Norge</w> hiem.
+
+I det gamle <w>Norges</w> elskte Rige
+  ved din Daad Du blev en æret Mand.
+Ned til Danmarks Sletter Du mon hige,
+  kom som Hædersmand til dette Land.
+
+Her som ædel, trofast Mand Vi finde
+  Dig at virke Landets sande Gavn;
+Derfor — brave <w>Heiberg</w>! Vi dit Minde
+  her velsigne og dit ædle Navn.
+<nonum><center><small>(Taleren trækker en liden Krands frem.)</small></center></nonum>
+
+Denne Krands ei kiøbt ved Blod og Taarer,
+  Venskab for din Dyd dig fletted' den,
+Denne Krands vort ømme Hierte saarer
+  Nu Vi offre Dig den — ædle Ven! —
+<nonum><center><small>(Krandsen lægges paa Kisten).</small></center></nonum>
+
+See! hvor skiøn den Mandens Kiste pryder,
+  Ikke Smiger, ikke Falskhed pynted' den,
+Den dig fletted' dine ædle Dyder,
+  Den er offret af en trofast Ven.
+
+<pb n="183" facs="190.jpg"/>Bedre Krands i Himlens Land dig venter,
+  hvor din glade Siel nu hviler sødt,
+Der Du Løn for alt dit Arbeid henter —
+  — Dine Been i Graven hvile blødt!
+
+<w>Fromme!</w> — I som her saa sorgfuld græde,
+  Hustrue, Børn og Børnebørn dermed —
+O! misunder ei vor Ven sin Glæde;
+  Han gik bort fra Jordens Kamp til Fred.
+
+Der er <w>Fred</w> i Dødens tause Rige —
+  Der er <w>Fred</w> i Gravens stille Roe —
+Der er <w>Fred</w>, hvortil Vi alle hige —
+  Der er salig <w>Fred</w>, hvortil vi iile froe. —
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Junii 1801</title>
+</head>
+<content>
+
+<text id="anonym1800dk2026110612" author="anonym1800dk">
+<head>
+  <title>Zeus og Faaret</title>
+  <notes>
+    <note editorial="true">Oversættelse af Lessings <xref type="translation" poem="lessing2026110703"/>.</note>
+  </notes>
+  <source in="bd64" pages="320-321" facsimile-pages="328-329"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+   Faaret maatte udstaae meget af alle Dyrene. Da traadte det frem for Zeus, og bad at lindre dets Elendighed. Zeus syntes villig, og talte til Faaret: Jeg seer, mit fromme Dyr, at jeg har skabt dig alt<pb n="321" facs="328.jpg"/>for værgeløst: vælg selv, hvorledes jeg skal bedst afhielpe denne Feil: skal jeg forsyne din Mund med skrækkelige Tænder, eller dine Fødder med Kløer? — O nei! sagde Faaret, jeg vil intet have tilfælles med de glubende Dyr: Eller, fortsatte Zeus, skal jeg lægge Gift i dit Spyt? Ak svarede Faaret, de giftige Slanger blive jo hadede saa meget. — Nu hvad skal jeg da? Jeg vil plante Horn paa din Pande, og give din Nakke Styrke. Heller ikke, gode Fader; jeg kunde let blive saa stridig som Bukken. Og alligevel, sagde Zeus, maa du selv kunne skade, naar andre skulde frygte at skade dig. Maa jeg det? sukkede Faaret, o! saa lad mig, gode Fader, blive som jeg er; thi Kraft til at kunne skade, frygter jeg, opvækker Lyst til at ville skade; og det er bedre at lide Uret, end at tilføie Uret. — Zeus signede det fromme Dyr, og det forglemte fra den Tid af at klage”.
+</prose>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Julii 1801</title>
+</head>
+<content>
+
+<text id="barfoed2026111301" author="barfoed">
+<head>
+  <title>Min Skierv til danske Søekrigers Hæder</title>
+  <subtitle>i Anledning af Slaget ved Kiøbenhavn den 2den April 1801.</subtitle>
+  <firstline>Hist kneiser i Vesthavets Vande en Øe</firstline>
+  <dates><event>1801-04-02</event></dates>
+  <source in="bd65" pages="89-96" facsimile-pages="91-98"/>
+  <places>
+    <place ref="north-sea" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>I.<footnote>Da selv den tappreste Helt dog synes mig kun at ligne et vilde skadeligt Rovdyr, saalænge han ikke fægter med Overbeviisning om en retfærdig Sag; saa har jeg i denne første Sang vildet forudsende et Hint om Anledningen til Slaget, det er ommeldt i anden Sang.</footnote></center></nonum>
+
+Hist kneiser i Vesthavets Vande en Øe,
+  med Skibe og Rigdom begavet.
+Den Britte, som boer der, fa’r vide i Søe,
+  og kalder sig Hersker paa Havet.
+
+Men hvorfra det Herskab sig skriver og kom,
+  man aldrig kan ret faae at vide;
+thi at nogen vover at spørge derom,
+  det Britten slet ikke kan lide. —
+
+Og Povel traf Peder paa alfare Vei,
+  og trued’ med knyttede Næve
+at grandske hans Lommer — hans Trudsel dog ei
+  min Tvivl om hans Ret kunde hæve;
+
+<pb n="90" facs="091.jpg"/>Og hvis jeg var Peder, da gav jeg ei hen
+  min Skilling paa Povels Tallerken,
+før han havde prøvet min Næve igjen;
+  saasandt her er Almen i Kirken.
+
+Den Lignelse faldt mig saa pontsviis i Sind;
+  Enhver, som det lyster, behage
+at dømme, hvor nær den paa Sagen gaaer ind.
+  Jeg vender til Britten tilbage.
+
+Den Britte han var da af modig Maneer,
+  Vil ene paa Havet regjere.
+Ham svared’ den Nordbo med ædel Maneer:
+  ”Vi lade os ei kujonere.”
+
+”Vel elske vi Freden, til Strid har ei Lyst,
+  men Retten vi ivrigt forfægte.
+Med dig skal vi vove en drabelig Dyst,
+  hvis du vil os Retten fornægte.“
+
+Den Tale var djerv, som fra Nordboe gik ud.
+  Den mægted’ dog ei at omvende
+hovmodige Britte. Strax skikked’ han Bud
+  en Flaade i Søen at sende.
+
+Den Flaade, den var vel halvhundrede Seil,
+  den skulde de Nordboer lære,
+(saa meente den Britte, han meente nok feil)
+  At holde hans Herskab i Ære.
+
+<pb n="91" facs="092.jpg"/>Nu skummer den Flaade ad Nordsøen op,
+  den bruser paa skummende Bølger.
+Hr. Parker la’r veie fra kneisende Top!
+  Sit Banner. Hr. Nelson ham følger.
+
+”Hvor skiælve de danske for frygtelig Strid!
+  hvor de sig i Læberne bide!“
+Saa tænker du Britte! men vov dig kun hid,
+  Du snart skal faae andet at vide.
+
+Vist ønske vi heller i velanvendt Fred
+  at bruge de kraftfulde Arme;
+men hvo, som tør vove at bryde vor Fred,
+  skal føle vor billige Harme.
+
+Husk paa, at vi nyligen gave vort Ord:
+  ”Vi Retten vil ivrigt forfægte.”
+Og snart skal du kiende, vi følge vort Ord,
+  hvis du vil os Retten fornægte.
+
+---
+
+<nonum><center>II.</center></nonum>
+
+Det var en Skiertorsdags Morgen,
+  den anden Dag i April,
+da Staden og Kongeborgen
+  Hr. Nelson angribe vil.
+Men Herren raader for Seiren.
+
+<pb n="92" facs="093.jpg"/>Ad Dybet lader han stande,
+  syd hen mod Amagerland.
+Maaskee han der vilde lande,
+  hvis han det udføre kan.
+Men Herren raader for Seiren.
+
+De Danske havde ei sovet,
+  mens Britten rustede sig.
+Ei noget Godt de sig loved’,
+  derfor de rettede sig.
+Men Herren raader for Seiren.
+
+De Batterier og Pramme
+  og Blokskibe ligge paa Rad,
+de kan den Britte vel ramme,
+  hans Hovmod lave et Bad.
+Men Herren raader for Seiren.
+
+Og Alle af Længsel brænde
+  at faae paa den Voldsmand fat;
+de ville ham heden sende
+  til Dødens evige Nat.
+Men Herren raader for Seiren.
+
+Til Vidne de Himlen kalde:
+  Vi slaae for Konge og Land,
+vi seire eller vi falde,
+  vi fægte til sidste Mand.
+Men Herren raader for Seiren.
+
+<pb n="93" facs="094.jpg"/>Og alle Himlen anraabe:
+  vi slaae for retfærdig Sag;
+Paa Herren ville vi haabe,
+  han styrker paa Kampens Dag.
+Thi Herren raader for Seiren.
+
+Nu Helte hinanden praie
+  med Skibe store og smaae.
+Hr. Nelson Blodflag la’r veie,
+  Hr. Fisker giør ligesaa.
+Nu Herren raade for Seiren.
+
+Den Britte, jeg skal ei lyve,
+  Var stærk med Skibe besat.
+Han havde vel fyrgetyve
+  han havde fire mod eet.
+Dog — Herren raader for Seiren.
+
+Men Cimbrer ere ei rædde;
+  de har ei Fædre forgjet,
+som ginge til Strid med Glæde,
+  at slaae for Frihed og Ret.
+Men Herren raader for Seiren.
+
+Først dundred’ dødsvanger Torden
+  fra vældige Prøvsteen<footnote>Det yderste Blokskib af den sydlige DefensionsLinie, som blev angreben; kommanderet af Kapitain Lassen.</footnote>.
+Og alle fulgde i Orden,
+  og ingen at følge var seen.
+Men Herren raader for Seiren.
+
+<pb n="94" facs="095.jpg"/>Som Hagel i Luften bruser,
+  som Lyn med Bulder slaaer ned;
+de Kugler i Luften suse,
+  og flye med Døden afsted.
+Men Herren raader for Seiren.
+
+Fra tusind Ildmunde brølte
+  Dødsbudskab frygtelig ræd,
+Hovmodige Britte da følte,
+  han var blandt Danske bestæd.
+Men Herren raader for Seiren.
+
+Trint om var vildene Lue,
+  trint om kun lynede Død,
+trint om var Himmelens Bue
+  som bragende Flamme rød.
+Men Herren raader for Seiren.
+
+Sort Damp og Hylen og Jammer
+  og Døendes matte Skrig,
+med Stykkernes vilde Flammer
+  og Torden blandede sig.
+Men Herren raader for Seiren.
+
+Og mangen en Kæmpe lukked’
+  sit Øie i Dødens Nat.
+Og mangen faver Møe sukked’
+  For Fæstemands Tab saa brat.
+Men Herren raader for Seiren.
+
+<pb n="95" facs="096.jpg"/>Da fandt sig Britten i Klemme;
+  han føled’ de djærve Slag.
+Han maatte sig da beqvemme
+  at heise det hvide Flag.
+Saa Herren raader for Seiren.
+
+Ja Britte! saa fik du vide,
+  hvorlunde de Danske slaae.
+Om du det mere vil vide,
+  faaer du betænke dig paa.
+Men Herren raade for Seiren.
+
+Fem fulde Timer tillige
+  vedvared’ et rædsomt Slag.
+For Dannemark, tør jeg sige,
+  Det var en Hædersdag.
+Men Herren raader for Seiren.
+
+Thi de, som kæmpede, alle
+  stod kiek i Røg og Damp.
+De, som i Strid monne falde,
+  de fulde i Ærens Kamp.
+Men Herren raader for Seiren.
+
+Men I, som drabelig have
+  beskjærmet Kongs og Land;
+Gud signe Eder! I Brave!
+  Gud signe hver Kampens Mand!
+Men Herren raader for Seiren.
+
+<pb n="96" facs="097.jpg"/>Jeg kan de Helte ei nævne,
+  som strede saa djervelig.
+De ere for mange at nævne
+  som her udmærkede sig.
+Men Herren raader for Seiren.
+
+Men Mand og Pebling tillige
+  — ei blot udi Kiøbenhavn —
+skal vide til hver at sige:
+  Saa vare de Kjekkes Navn.
+Men Herren raader for Seiren.
+
+Saalænge som Draaber rinde
+  af Vand udi Østersø;
+da skal Eders Hædersminde
+  I Brave! aldrig uddøe.
+Men Herren raader for Seiren.
+
+For Fædrenelandet at falde,
+  er Æres- og Hæders-Sag.
+Fred! Fred over Eder alle!
+  som fulde paa Ærens Dag.
+Men Herren raader for Seiren.
+
+Saa leve tappre Skioldunger!
+  Du Himmel! høre vort Raab!
+Leve vor elskede Konge!
+  Leve vor Fredrik vort Haab!
+Du Herre! raader for Seiren.
+
+<nonum><right><w>P. Barfoed.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>August 1801</title>
+</head>
+<content>
+
+<text id="bornemann2026111301" author="bornemann">
+<head>
+  <title>Danmark og Dannerkierlighed</title>
+  <subtitle>en Hymne.</subtitle>
+  <firstline>Du! vort Gode, Du! vort Kiære</firstline>
+  <notes>
+    <note>Synges som Schillers Hymne til Glæden.</note>
+  </notes>
+  <source in="bd65" pages="206-211" facsimile-pages="212-217"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Du! vort Gode, Du! vort Kiære,
+  Dine Sønner hilse Dig,
+Frihed, Glæde, Fred og Ære
+  Nævnes, naar vi nævne Dig;
+Danmark! Danmark! — gjennembæver
+  Du vort Hierte, stærke Lyd!
+Og med Guddomsvælde kræver
+  Os til Kamp og Borgerdyd? —
+
+<pb n="207" facs="212.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Ja — vor Barm Du gjennemgløde,
+Hulde Dannerkierlighed!
+Du velsigne os i Fred,
+Du! med os i Kampen møde!
+
+Danmark stred, — Europa bæved’
+  For Valhallas Ynglingsøn<footnote>Fra Odin indtil Knud den Store.</footnote>
+Før Du stred, — da Trældom svæved’
+  For Dit Blik, blev Seir dig Løn<footnote>I Kiøbenhavns Beleiring.</footnote>.
+Atten Sekler Dig ei hvied’,
+  Held! Du ung paa nye fremgaaer,
+Mod i Barmen, Glands i Øiet
+  Dig en ædel Manddom spaaer.
+
+<nonum><center><w>Chor.</w></center></nonum>
+Ynglingskraft og Ynglingsiver
+Tindre frem af Danmarks Daad;
+Folkets Iid og Førstens Raad
+Dannerkierlighed opliver.
+
+Britten kom med Ild og Kieder,
+  Og os stolt, at vælge bød,
+Da vi valgte Danmarks Hæder,
+  Heltekamp og Heltedød.
+Tordnen brølte, Kuglen knittred,
+  Trefold Magt! — ha, trefold Mod!
+Trefold Hævn da Fienden zittred,
+  Helte sank, og Danmark stod<footnote>See de engelske Aviser.</footnote>.
+
+<pb n="208" facs="213.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Jubler Tvillingfolkets Sønner!
+Himmelstierne! jubler med,
+Brødre! Dannerkierlighed
+Frelser, hædrer, og belønner.
+
+Ja — Din Lynildsvangre Hammer
+  I Skiertorsdagskampen slog,
+Du paa Dannebrogs Flammer
+  Heltes Aand til Himlen tog,
+Engel! Du ved Himmelgave
+  Balsom giød i Heltes Saar,
+Du, fra Vaabenbrødres Grave,
+  Seier eller Fred os spaar.
+
+<nonum><center><w>Chor.</w></center></nonum>
+Danmarks Soel! — fra Tordners Giemmer
+Skinner du — vi kiende dig
+Vær velkommen! hilse dig,
+Vore høitidsglade Stemmer.
+
+Brave Fredrik! ædle, gode,
+  Skal end Stormen Danmark naae,
+Freidig vær, og glad tilmode,
+  Vi med Dig i Kampen gaae.
+Danmark! Danmark! Løvens Hvile
+  Ungdomsild den Trætte gav —
+Skal Du reise Dig og ile,
+  Harmfuld frem paa Land og Hav?
+
+<pb n="209" facs="214.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Skal vor Harm paa Voldsmænd lyne?
+Vee da hver, som vakte den,
+Og for Freden Danmarks Mand
+Skulle Seirens Pile styre.
+
+Danske Søemand! Nordens Hæder,
+  Brittens Trodser, Farers Ven,
+Helteroes dit Daadspor klæder;
+  Danmarks, Norges, Seirens Mænd!
+Mænd! som ingen Magt kan skrække,
+  Danneværn mod Fienders Vold.
+Slaaes, som nys I sloge, Kiække,
+  Juler lig og Tordenskiolde,
+
+<nonum><center><w>Chor.</w></center></nonum>
+Slaaer med Dannevirkes Torden,
+Slaaer med Fædres Lynildslag,
+Dersom Fredens klare Dag
+Ei maae skinne over Norden.
+
+Hvad er Livet uden Ære?
+  Hvad er Glæde for en Træl? —
+Skal end Kamp Europa lære
+  Høit at skatte Danmarks Held?
+Skulle danske Bønder haste
+  Stormende til Ledingsfærd?
+Frihedsmænd og Klippefaste, —
+  Leer vorde deres Sværd.
+
+<pb n="210" facs="215.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Ja — hver Bonde sig bereder
+Til at slaae for Land og Hav,
+For det Held, som Retfærd gav,
+Konge! Fredrik! — og — for Eder.
+
+Kongen, Staden at omværne
+  Musers Ven lød Vaabenklang,
+Ynglinger! som Ærens Stierne
+  Viiste Dannerheltes Gang,
+Danmarks Haab! i Fredens Dage,
+  Ædelmod og Gavneflid
+Eder signende ledsage!
+  Seierskraft! i mandig Strid.
+
+<nonum><center><w>Chor.</w></center></nonum>
+I! som elske Daad og Ære,
+Hædersmænd! i Krig og Fred,
+Troefast Dannerkierlighed
+Eders stolte Løsen være.
+
+Dig! vort Gode, Dig! vort Kiære,
+  Dig, vort Danmark! heltes Bliv,
+Fields og Slettes Mænd frembære
+  Gods og Møie, Blod og Liv.
+Adel, Borger, Bonde, Kriger,
+  Samles til det høie Meed:
+Held vor Konge og hans Riger,
+  Held! og Dannerkierlighed!
+
+<pb n="211" facs="216.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Adel, Borger, Bonde, Kriger
+Samles til det høie Meed.
+Held og Dannerkierlighed
+Signe Kongen og hans Riger!
+
+<nonum><right><w>M. H. Bornemann.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>September 1801</title>
+</head>
+<content>
+
+<text id="tidemand2026111301" author="tidemand">
+<head>
+  <title>Sang paa Eenigheds-Selskabets 20de Aars Stiftelse-Fest</title>
+  <firstline>Paa Reisen over Livets Hav</firstline>
+  <source in="bd65" pages="312-314" facsimile-pages="324-326"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Paa Reisen over Livets Hav,
+Hvor tusind’ Farer møde,
+Velgiørende os Himlen gav,
+Hvad Reisen kan forsøde;
+Men fremfor Alt er Venskab det,
+Som giør os Livets Byrder let.
+
+<pb n="313" facs="324.jpg"/>Naar Modgangs Storme reise sig,
+Naar Uveirs Tordner knittre,
+Naar Elementer føre Krig,
+Og Jorden selv maae sittre;
+Hvor er en Tilflugt? hvorhen flye —
+Hvis ei, o Venskab i dit Lye?
+
+Naar Mennesket, en Dievel lig,
+Forstyrrer Fred og Orden;
+Naar Mord og Brand og Vold og Sviig
+Oprører hele Jorden;
+Hvor er et Fristed? hvorhen flye —
+Hvis ei, i Venskabs hulde Lye?
+
+Ja, held os, Brødre! at og vi
+Et saadant Fristed have;
+En Vennehavn at hvile i,
+Naar Alting er af Lave;
+O! da, hvor sødt at kunne flye,
+I Venskabs trøstefulde Lye!
+
+Saa tit fra virket Gavn vi hid
+I Vennekredser ile,
+For, efter velanvendte Tid,
+At nyde qvægsom Hvile;
+Saa tit, gid og vi finde den,
+I Fred og Glæde, Ven hos Ven!
+
+<pb n="314" facs="325.jpg"/>Men, byder Pligt og Ærens Lov,
+At Landet Sværd skal drage,
+For Overfald og Vold og Rov
+At straffe og bortjage;
+Da er’ vi rede alle Mand,
+At slaae og seire for vort Land.
+
+Med kiekt og uforfærdet Mod
+Vi trodse alle Farer.
+En Nidding den, som Liv og Blod
+For Landets Frelse sparer.
+For Frihed, Konge, Fødeland,
+Vi stride skal til sidste Mand!
+
+<nonum><right><w>A. Tidemand.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="rahbek2026111301" author="rahbek">
+<head>
+  <title>Løven og Leoparden</title>
+  <firstline>En vældig Løve, vidtstrakt Slettes Fyrste</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Florians <xref type="translation" poem="florian2026111301"/>.</note>
+  </notes>
+  <source in="bd65" pages="314-315" facsimile-pages="326-327"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En vældig Løve, vidtstrakt Slettes Fyrste
+Der — efter vor Tids Sprog — sig arrondere vil,
+Fik Indfald efter næste Skov at tørste,
+  Der hørte Leoparden til.
+Med den at finde Sag ei kunst ham kunde være,
+Kun nogle Pantherdyr og Biørne frygted’ han,
+Hvis Lande midt imellem begges ere;
+Hør nu! hvor snildt han lægger Sagen an.
+En overordentlig Gesandt han sender hen
+Til Leoparden at complimentere den.
+<pb n="315" facs="326.jpg"/>En gammel snedig Ræv Gesandten var.
+Man ham til Audientse stæder;
+Han frydes ved den Lykke og den Hæder,
+At see en ung Monark, saa stor og dyrebar,
+Hvis Klogskab, Godhed, Kiærlighed til Fred,
+Hvis Retfærd og Velgiørenhed
+Ei Rygtet noksom at berømme veed.
+Derpaa i Løvens Navn han foreslaaer
+Et evigt Forbud mellem disse tvende
+Mod hver en Naboe, som sig understaaer
+Saa store Fyrsters Vælde at miskiende.
+Det Forbud Leoparden glad indgaaer.
+Den næste Morgen Heltene uddrage;
+De stakkels Nabodyr, mod begges Magt for svage,
+Snart faldt for deres Kloe og Tand.
+Den Ting var let bestilt; nu <w>acqvireret</w> Land
+Skal deeles af de høie Allierte.
+Men snart om Grændserne derved
+Opkom imellem dem Ueenighed.
+Fornærmet Leopard med Iver remonstrerte;
+Til Ultimatum viiste Løven Tand;
+Kort sagt! paa ny gik Krigen an,
+Og Enden blev, at Leoparden faldt,
+Og, skiøndt lidt silde, maatte sande,
+Den bedste Forsvarsmuur mod Løvernes Gewalt
+Er Pantherdyrs og Biørnes Mellemlande.
+
+<nonum><right><w>K. R.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="barfoed2026111302" author="barfoed">
+<head>
+  <title>I min Ven T**s Stambog da han reiste udenlands 1795</title>
+  <firstline>Hvor Troen bygges paa selvgjorte Myndigheder</firstline>
+  <source in="bd65" pages="316" facsimile-pages="328"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="el">
+Ζητειτε και εὑρησετε.
+
+<nonum><right><span lang="da">Jesus.</span></right></nonum>
+</epigraph>
+<poetry>
+Hvor Troen bygges paa selvgjorte<footnote>Autoriteter.</footnote> Myndigheder,
+Om ellers Troe fandt Sted hos Ynglingen,
+Og der, hvor Viisdoms Ekko fra Catheder
+Gienlød i dumpe Skrald — o der min Ven!
+Der saae os flere Vintre trolig vanke,
+Og Haand i Haand, igiennem Dunkelhed,
+De hist og her adspredte Gnister sanke,
+Det blide Sandheds Lys at tænde ved.
+
+Men Sandhed gjemtes ei paa støvet Hylde,
+— Thi eet er alles Maal, een alles Gud,
+Der viis og kyndig i sin heele Fylde
+Til alle Slægter spredde Sandhed ud.
+Den søge du da hist paa fierne Veie,
+Jeg søger her — vi samles da igjen,
+Og troe med Brødre deele, hvad vi eie
+Af Sandheds Lys — det Kald er stort — min Ven.
+
+<nonum><right><w>H. P. Barfoed.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="bornemann2026111302" author="bornemann">
+<head>
+  <title>En fransk Religions Sang</title>
+  <subtitle>Oversat 1794.</subtitle>
+  <firstline>Evige, som Mennesket tilbeder</firstline>
+  <source in="bd65" pages="317-318" facsimile-pages="329-330"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Evige, som Mennesket tilbeder,
+Under Templers Hvælving, Himlens Blaa,
+Hør vor Bøn, hør Folkets Menigheder,
+Som for dig med Sang og Ønsker staae:
+Vi dig om Velsignelse anraabe,
+Jorden for din Villie bøie sig.
+Alretfærdige! selv, naar vi dig
+Frygte, vi din Godhed haabe,
+  Bryd hvert Aag, hvert Slaverie,
+  Fredens Gud! Friheds Gud!
+  Jorden vorde ved dit Bud
+  Fredelig og frie!
+
+Mennesket blev skabt til Friheds Glæder,
+Da du skabte ham at ligne Dig,
+Hver, som fængsler ham med Slavekieder,
+Mod din viise Lov forgriber sig.
+Hævnens Gud! du vor Beskiermer være,
+Frels dit Værk fra Voldsmænd faderlig;
+Mennesker bør alle hylde dig;
+Dine Børn vi alle ere.
+  Bryd hvert Aag, hvert Slaverie
+  Fredens Gud! Friheds Gud!
+  Jorden vorde ved dit Bud
+  Fredelig og frie.
+
+<pb n="318" facs="329.jpg"/>Nærmer Eder, Børn af hver en Alder,
+Unge Piger træder frem med Fryd,
+Ham, som lod os samles her, paakalder!
+Hylder ham med Bøn og Jubellyd.
+Ham med skyldfrie Mund og Hierte beder:
+Hans Velsignelse udbrede sig
+Over hver en Søn af Frankerig,
+Som den over Alt sig breder.
+  Bryd hver Aag, hvert Slaverie
+  Fredens Gud, Friheds Gud!
+  Jorden vorde ved dit Bud
+  Fredelig og frie.
+
+<b>Gud!</b> Du Altings Fader, Altings Herre!
+Sole vidne, du est viis og stor;
+Pragtfuld straale Himlene din Ære,
+Din Algodheds Vidne er vor Jord.
+For din Fod ad afmaalt Bane skride
+Straaleklædte Himmelskloder frem.
+For dit Lys har ingen Afgrund Giem;
+Mulm og Nat forgjæves stride.
+  Bryd hvert Aag, hvert Slaverie
+  Fredens Gud, Friheds Gud!
+  Jorden vorde paa dit Bud
+  Fredelig og frie.
+
+<nonum><right><w>M. H. Bornemann.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>October 1801</title>
+</head>
+<content>
+
+<text id="malling2026111301" author="malling">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>ved den for Fattigvæsenet givne Concert i Frue</line>
+    <line>Kirke Onsdagen den 28 October,</line>
+    <line>Kronprindsesse <w>Maries</w> Fødselsdag.</line>
+  </subtitle>
+  <firstline>Hun kommer, hyldet, den blide Fred</firstline>
+  <dates><performed>1801-10-28</performed></dates>
+  <source in="bd66" pages="94-96" facsimile-pages="102-104"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>1.</center></nonum>
+<nonum><center>Enkelte Stemmer.</center></nonum>
+Hun kommer, hyldet, den blide Fred.
+Fra Himlen hun vinker Velsignelser ned.
+
+<pb n="95" facs="102.jpg"/><nonum><center>Chor.</center></nonum>
+<center>O Hil dig Fred!</center>
+
+<nonum><center>Enkelte Stemmer.</center></nonum>
+Nu Magterne byde sig Haand og Troe,
+Nu Kiemperne vandre til Hiem og Roe.
+
+<nonum><center>Chor.</center></nonum>
+<center>Gid varig Roe!</center>
+
+<nonum><center>2.</center></nonum>
+<w>Maria!</w> Fryd dig! ei skal din Dag
+Omlydes af Orlog, af Vaabnenes Brag!
+
+<nonum><center>Chor.</center></nonum>
+<center>O Held din Dag!</center>
+
+<nonum><center>Enkelte Stemmer.</center></nonum>
+Saa blid, som du smiler til Fædre-Nord,
+Saa smiler nu Fred til den vide Jord.
+
+<nonum><center>Chor.</center></nonum>
+<center>Til viden Jord!</center>
+
+<nonum><center>3.</center></nonum>
+I Glædskabs Jubel vi eenes her;
+Og Veldaad, den giver vor Jubel sit Værd:
+
+<nonum><center>Chor.</center></nonum>
+<center>Sit Hæders Værd!</center>
+
+<nonum><center>Enkelte Stemmer.</center></nonum>
+Vor Konge, hans Stamme, vort Fædrehjem,
+Og alle, som virke det gode frem;
+
+<pb n="96" facs="103.jpg"/><nonum><center>Chor.</center></nonum>
+<center>Gud signe dem!</center>
+
+Ja! Han signer de eenige Samfunds Baand,
+Hvor til Veldaad er Hierte og trofast Haand.
+<center>Han signer dem.</center>
+
+<nonum><right><w>O. Malling.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>November 1801</title>
+</head>
+<content>
+
+<section level="2">
+<head>
+  <title>Den første Acts første Scene af P. Terentii Heautontimorumenos og af Hecyra</title>
+  <subtitle>(en Prøve)</subtitle>
+</head>
+<content>
+
+<text id="hedegaardjc2026111301" author="hedegaardjc">
+<head>
+
+  <title><num>I.</num>Heautontimor</title>
+
+  <firstline>Skiøndt vort Bekiendtskab nyelig sluttet blev</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
+  </notes>
+  <source in="bd66" pages="206-214" facsimile-pages="214-222"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>Cremes.</center></nonum>
+Skiøndt vort Bekiendtskab nyelig sluttet blev,
+da her i Naboeegnen du dig kiøbte
+en landlig Eiendom — thi videre
+Forbindelse ei mellem os har Sted —
+saa byder dog din fromme Ærlighed
+og Naboeskabet — første Grund til Venskab —
+at jeg frimodigen og uden Omsvøb
+paaminder dig: du synes mig at tage
+dig Verden alt for nær, ja mere nær,
+end du behøver, og din Alder taaler.
+Ja! jeg besværger dig ved alle Guder!
+hvad tænker du vel paa? hvad er din Hensigt?
+de tredsindstyve Aar tilbagelagte,
+og maaskee flere, som jeg tør formode,
+og saa en Eiendom, som i Værdie
+og Godhed ingen anden giver efter!
+og mange Huusfolk til at dyrke Jorden!
+Og dog — som var du ene uden Hielp —
+du deres Dont paa dine Skuldre lægger! —
+<pb n="207" facs="214.jpg"/>Ved Solens Opgang, naar jeg vandrer ud,
+ved Solens Nedgang, naar jeg vender hiem,
+man paa din Ager sysselsat dig finder,
+med Gravning, Pløining og med Trællearbeid;
+og aldrig du dig Hvile tager, aldrig
+betænker, hvad dog selv du skylder dig. —
+Vel sandt, jeg veed, du ingen Glæde finder
+heri; det ærgrer dig, at see, hvorledes
+de dovne Knægte stiele Dagen bort,
+men hvis de Timer, dem du saa hentræller
+du vilde nytte til, paa Fingrene
+at see dem, stedse holde dem i Aande,
+du kom langt videre.
+
+<nonum><center>Menedemus.</center></nonum>
+                       Har du ei andet
+at tage vare, at du saa kan bryde
+dit Hoved med de Ting, dig ikke angaae.
+
+<nonum><center>Cremes.</center></nonum>
+Jeg er et Menneske, og derfor føler
+jeg og som Menneske. — Du mig betragte
+nu enten som din Lærer, eller som
+din Lærling, der hos dig Oplysning søger!
+at hvis du handler ret, jeg da af dig
+Exempel tage kan; at hvis du feiler,
+paa andre Tanker du da bringes maae!
+
+<nonum><center>Menedemus.</center></nonum>
+Sligt Liv at føre bedst nu tiener mig
+see til det ei for dig nødvendigt bliver.
+
+<pb n="208" facs="215.jpg"/><nonum><center>Cremes.</center></nonum>
+Siig, hvilket Menneske det gavnligt er
+sig selv at martre, plage?
+
+<nonum><center>Menedemus.</center></nonum>
+                           Jo, for mig!
+
+<nonum><center>Cremes.</center></nonum>
+O hvis Bekymringer dit Hierte trykke,
+jeg dig beklager! Hvilket Vanheld giorde
+dig mod dig selv saa haard, saa hadesfuld?
+
+<nonum><center>Menedemus.</center></nonum>
+     Ach!
+
+<nonum><center>Cremes.</center></nonum>
+Hold dog inde med din Graad! hvad end
+det monne være, du mig Alt fortælle!
+du intet dølge, sæt Undseelse
+tilside, og betroe mig hele Sagen!
+ved Trøst, ved gode Raad, ved virksom Bistand
+maaskee dog nogen Hielp jeg bringe kan.
+
+<nonum><center>Menedemus.</center></nonum>
+Du vil da alting vide?
+
+<nonum><center>Cremes.</center></nonum>
+                       Ja! og Grunden
+jeg alt har sagt.
+
+<nonum><center>Menedemus.</center></nonum>
+                 Velan! saa hør nu da!
+
+<nonum><center>Cremes.</center></nonum>
+Men Spaden midlertid du sætte bort!
+og hvile dig!
+
+<pb n="209" facs="216.jpg"/><nonum><center>Menedemus.</center></nonum>
+                  Nei! ingen — ingenlunde.
+
+<nonum><center>Cremes.</center></nonum>
+Men uafbrudt og idelig at trælle!
+
+<nonum><center>Menedemus.</center></nonum>
+Du mig tillade, ledig ei at staae!
+
+<nonum><center>Cremes.</center></nonum>
+Nei, dette jeg dig ei indrømme kan.
+
+<nonum><center>Menedemus <small>(sætter Spaden bort.)</small></center></nonum>
+Du heel ubillig mod mig er.
+
+<nonum><center>Cremes.</center></nonum>
+                              Hvor tung
+er denne Spade!
+
+<nonum><center>Menedemus.</center></nonum>
+                Som min Byrde svar.
+
+<nonum><center>Cremes.</center></nonum>
+Nu tal!
+
+<nonum><center>Menedemus.</center></nonum>
+     Jeg har en Søn, en Yngling, kun
+den eneste; — men ach jeg siger: har,
+jeg havde ham, thi om han lever, eller
+om han er død, det uvist er.
+
+<nonum><center>Cremes.</center></nonum>
+                            Hvorledes!
+
+<pb n="210" facs="217.jpg"/><nonum><center>Menedemus.</center></nonum>
+Du høre! fra Corinth her til Athenen
+en fattig aldrende Matrone kom;
+i hendes Datter rasende forelsket
+min Søn han bliver, som en Huustroe kier
+han hende faaer, og hemmeligt og skiult
+man holder det, indtil omsider jeg
+faaer Nys herom. — Nu jeg, ei blid og kierlig,
+ei, som et saaret Hierte burde mindes,
+ham mindede; paa Fædres gamle Viis
+jeg dagligen ham overfusede
+med haarde Ord: „Saalænge der er Liv
+„i mig, du ikke vente maa, saaledes
+„dit Spil at drive med en fremmed Pige;
+„at elske hende, som en ægte Huustroe;
+„du kiender ei min Vrede! Feil du tager,
+„hvis du indbilder dig, Sligt længere
+„skal finde Sted! dig for min Søn erkiende
+„jeg vil, naar du dig ei fornedrer selv!
+„hvis ei, jeg nok skal vide Tingen ret
+„at gribe an. — Kun Lediggang er Skyld
+„i den Forlibelse; da paa din Alder
+„jeg var, paa Elskov pønsede jeg ei.
+„Nei! Fattigdom mig drev at drage hen
+„til Asien, hvor jeg med krigersk Ære
+„erholdt og det, som got i Pungen fylder.“
+     Omsider Sagen denne Vending tog:
+Ved idelig at høre samme Vise
+han overvundet blev; han fandt, min Alder
+paa Klogskab havde Krav; at Faderhiertet
+<pb n="211" facs="218.jpg"/>saae mere grant end han, hvad tienligt var;
+og nu til Asien han drog, i Krigen
+at slaae for Kongen.
+
+<nonum><center>Cremes.</center></nonum>
+                     O hvad hører jeg!
+
+<nonum><center>Menedemus.</center></nonum>
+Mig uafvidende han os forlod,
+i trende Maaneder jeg savner ham!
+
+<nonum><center>Cremes.</center></nonum>
+Hos begge findes Skyld; men Handlingen
+dog bære Vidne om hans bløde Hierte,
+og om et Mod, som meget, meget lover!
+
+<nonum><center>Menedemus.</center></nonum>
+Da jeg af hans Fortroelige nu sligt
+erfarer, sorrigfuld, jeg vandrer hiem;
+og min Bekymring giør mig halv forvirret;
+jeg veed ei selv, hvad først jeg griber til;
+jeg ned mig sætter, mine Slaver springe
+nu frem for mine Skoe at trække af;
+og andre seer jeg ile hen, for Sengen
+at lave til; og andre for at ordne
+mit Aftensmaaltid; og enhver bestræber
+sig for at lindre, hvor han kan, min Sorg. —
+     Jeg dette seer; i Tanker rinder mig:
+Hvor mangen Haand dog her geskieftig er,
+og blot for ene mig at varte op!
+saa mange Piger for mig sye og spinde;
+og jeg, for min Person, saa meget øder,
+<pb n="212" facs="219.jpg"/>mens han, den eneste, min Søn, som burde
+og heraf nyde got, ja meer! hvis Alder
+har større Krav paa slige Nydelser,
+er jaget bort ved uretfærdig Strænghed; —
+o hvis jeg længer førte dette Liv,
+da var jeg værd, alt Ondt mig skulde ramme!
+saalænge han, landflygtig, trængende,
+ved min Fornærmelse, omvanker, jeg
+ham hævne skal ved Straffen paa mig selv. —
+     Saaledes jeg fra Huset alting flytter,
+ei Boeskab, Klæder, der tilbagebliver;
+jeg sammenskraber baade løst og fast;
+ja mine Slaver og Slavinder bydes
+tilfals, jeg sælger dem, kun de, som selv
+fortiene Føden kan ved Jordens Dyrkning,
+hos mig tilbageblive; Mine Huse
+beklines med Auctions Plakater, og
+jeg mange tusind’ Daler løser ind. —
+     Nu kiøbte jeg mig denne Eiendom
+for her at trælle, thi saaledes tænker
+jeg mindre uretfærdigen at handle
+imod min Søn, og ingen Glæde bør
+jeg selv mig tilstaae, førend han tilbage
+er kommen, og med mig den dele kan.
+
+<nonum><center>Cremes.</center></nonum>
+Med ømme Faderhierte elsker du
+din Søn, og lydig han dig blevet var,
+hvis ei for streng, og ei for føielig
+du ham behandlet havde; men han dig
+<pb n="213" facs="220.jpg"/>ei kiendte, du ei ham. Saa gaaer det, hvor
+Opdragelsen ei drives, som den bør. —
+Han aldrig mærkede dig af, hvor høit
+du elsker ham, og derfor dulgte han
+for dig, hvad Fædrene dog bør betroes;
+og derfor er du nu ulykkelig. —
+
+<nonum><center>Menedemus.</center></nonum>
+Du taler Sandhed! skyldig jeg mig føler.
+
+<nonum><center>Cremes.</center></nonum>
+Jeg haaber, inden føie Tid at see
+Din Søn, i god Behold, med dig at samles.
+
+<nonum><center>Menedemus.</center></nonum>
+I Guder lad dog dette skee!
+
+<nonum><center>Cremes.</center></nonum>
+                           Det skeer!
+Men da vi Bacchi Fest nu hellig holde,
+saa beder jeg, at du min Giæst vil være
+i Dag.
+
+<nonum><center>Menedemus.</center></nonum>
+       Du mig undskylde maa!
+
+<nonum><center>Cremes.</center></nonum>
+                             Hvorfor?
+Du liden Staansel dog dig selv bør vise,
+og end din Søn, skiøndt borte, ønsker det!
+
+<nonum><center>Menedemus.</center></nonum>
+Mig ikke sømmer, den Besværlighed,
+jeg ham paafører, selv at ville undflye.
+
+<pb n="214" facs="221.jpg"/><nonum><center>Cremes.</center></nonum>
+Du din Beslutning da vil blive troe?
+
+<nonum><center>Menedemus.</center></nonum>
+Ja.
+
+<nonum><center>Cremes.</center></nonum>
+    Lev da vel!
+
+<nonum><center>Menedemus.</center></nonum>
+                Det samme ønskes dig.
+
+<nonum><center>Cremes.</center></nonum>
+Han Taarer mig aftvinger, og jeg ynker
+den Stakkel! Men paa Tide er det, jeg
+paaminde maa min Naboe Phanias,
+at han til Aften spise skal hos mig;
+jeg gaaer nu hen, at see, om han er hiemme. —
+     Den Gang var unødvendig, hiemme alt
+hos mig han er, man siger. Giæsterne
+paa Værten vente. Jeg nu ind vil gaae!
+Hvorledes! Døren knarker! Nogen kommer
+til mig herud, og jeg tilsides <w>smutter.</w>
+</poetry>
+</body>
+</text>
+
+<text id="hedegaardjc2026111302" author="hedegaardjc">
+<head>
+
+  <title><num>II.</num>Hecyra</title>
+
+  <firstline>I Sandhed Syra, neppe nogen Skiege</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af første akts første scene i Terents’ komedie.</note>
+  </notes>
+  <source in="bd66" pages="214-216" facsimile-pages="222-224"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<nonum><center>Philotis.</center></nonum>
+I Sandhed Syra, neppe nogen Skiege
+fremvise kan en troe, oprigtig Elsker.
+<pb n="215" facs="222.jpg"/>Hvor ofte, ofte har Pamphil ei svoret —
+han svor ved alt hvad Helligt nævnes kan,
+hver Uerfaren let ham kundet troet —
+han svor: „saalænge du, min Bacchis lever,
+jeg aldrig nogen ægte vil.“ Og see
+en Brud han fører hiem!
+
+<nonum><center>Syra.</center></nonum>
+                        Jeg derfor atter,
+og atter dig paaminde vil og raade,
+at du mod ingen Elsker viser Medynk,
+ja hver, som i dit Garn du fange kan,
+han afklædt, stympret, nøgen fra dig gaae!
+
+<nonum><center>Philotis.</center></nonum>
+Saaledes alle jeg behandle skal?
+
+<nonum><center>Syra.</center></nonum>
+Ja alle! thi du vide maa, at ingen
+dit Huus betræder, han jo pønser paa
+ved ledske Ord at overtale dig
+for ringest Priis at slukke geile Brynde.
+Nu giver jeg dig, Kiere, at betænke,
+om slig en Karl fortiener Staansel, om
+du ikke ham igien belure bør!
+
+<nonum><center>Philotis.</center></nonum>
+Sligt Sindelag mod alle Uret er.
+
+<nonum><center>Syra.</center></nonum>
+Er det da Uret paa sin Fiende
+at hævne sig? at puffe ham i Graven
+som grov den, for deri at styrte dig?
+<pb n="216" facs="223.jpg"/>O jeg Ulykkelige! hvorfor er
+jeg dog ei ung og skiøn som du? og hvi
+blev ei min Tænkemaade ogsaa din?
+
+<nonum><right><w>J. C. Hedegaard,</w></right></nonum>
+<nonum><right><small>Sekretair og Fuldmægtig ved det Kongl.</small></right></nonum>
+<nonum><right><small>Gen. og Comm. Collegium.</small></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</content>
+</section>
+
+</workbody>
+</kalliopework>

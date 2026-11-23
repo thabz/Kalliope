@@ -62,6 +62,45 @@ describe('text page breadcrumbs', () => {
 
   beforeEach(() => jest.clearAllMocks());
 
+  it('uses the Chinese block language within a Danish text', () => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.content_lang = 'da';
+    data.text.blocks = [{ type: 'poetry', content_lang: 'zh', lines: [['鄭還詩', {}]], options: {} }];
+    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
+    expect(html).toMatch(/class="[^"]*vertical-chinese/);
+    expect(html).toContain('lang="zh"');
+  });
+
+  it.each([
+    ['da', 'Fra', '3. akt, 3. scene', 'Læs i sammenhæng'],
+    ['en', 'From', 'act 3, scene 3', 'Read in context'],
+    ['de', 'Aus', '3. Akt, 3. Szene', 'Im Zusammenhang lesen'],
+    ['fr', 'Extrait de l’œuvre', 'acte 3, scène 3', 'Lire dans son contexte'],
+  ])('renders the automatic context note and its link in the sidebar in %s', (lang, from, location, label) => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.parent_text_id = 'act';
+    data.text.parent_context = {
+      title: 'Ambrosius', parts: [{ number: 3, unit: 'akt' }, { number: 3, unit: 'scene' }],
+    };
+    data.text.blocks = [{ type: 'poetry', lines: [['En rose', {}]], options: {}, anchor: 'poem' }];
+    const html = renderToStaticMarkup(<LangContext.Provider value={lang}><TextPage {...data} lang={lang} /></LangContext.Provider>);
+    expect(html).toContain(`/${lang}/text/act#embedded-${data.text.id}`);
+    expect(html).toContain('id="embedded-poem"');
+    expect(html).toContain('sidebar-note-editorial');
+    expect(html.replace(/<[^>]+>/g, '')).toContain(`${from} Ambrosius, ${location}. ${label}`);
+    const body = html.match(/<div class="text-content">([\s\S]*?)<\/div>/)[1];
+    expect(body).not.toContain(label);
+    expect(body).not.toContain('#embedded-');
+    expect(html.split(`>${label}</a>`)).toHaveLength(2);
+  });
+
+  it('uses the work title for existing parent links without freshly built context metadata', () => {
+    const data = JSON.parse(JSON.stringify(textData));
+    data.text.parent_text_id = 'act';
+    const html = renderToStaticMarkup(<LangContext.Provider value="da"><TextPage {...data} lang="da" /></LangContext.Provider>);
+    expect(html.replace(/<[^>]+>/g, '')).toContain('Fra Gæa. Læs i sammenhæng');
+  });
+
   it('uses the canonical anthology trail while retaining the text author', async () => {
     Client.text.mockResolvedValue(textData);
     Client.poet.mockResolvedValue(collection);
@@ -103,11 +142,29 @@ describe('text page breadcrumbs', () => {
     expect(Client.poet).not.toHaveBeenCalled();
   });
 
-  it('renders edition citations inline and retains the source and other reference sections', async () => {
+  it('shows the editorial label before a translation source under Forlæg', async () => {
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      notes: [{ type: 'translation-source', editorial: true, content_lang: 'da',
+        content_html: [['Gendigtning af Antonio Fogazzaros originaltekst.']] }],
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    const section = [...html.matchAll(/<section\b[^>]*>(.*?)<\/section>/g)]
+      .map(match => match[1]).find(content => content.includes('>Forlæg<'));
+    expect(section).toContain('>Kalliope<');
+    expect(section).toContain('Gendigtning af Antonio Fogazzaros originaltekst.');
+    expect(section.indexOf('>Kalliope<')).toBeLessThan(section.indexOf('Gendigtning af'));
+  });
+
+  it('renders edition, mention and translation citations with the same bibliography', async () => {
     const ref = {
       id: 'other', title: 'De to Røvere', poet: 'Adam Oehlenschläger', poetId: poet.id,
       work: 'Samlede Skrifter (1861)',
-      citation: '<a poem="other">»De to Røvere«</a>, i: <a poet="oehlenschlaeger">Adam Oehlenschläger</a>: <a work="oehlenschlaeger/bd24"><i>Poetiske Skrifter</i></a>, udg. af <a poet="liebenberg">F. L. Liebenberg</a>, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
+      citation: '<a poem="other">»De to Røvere«</a>, i: Adam Oehlenschläger: <i>Poetiske Skrifter</i>, udg. af F. L. Liebenberg, bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.',
     };
     Client.text.mockResolvedValue({ ...textData, work: { id: 'digte', title: 'Digte' }, text: {
       ...textData.text,
@@ -123,20 +180,80 @@ describe('text page breadcrumbs', () => {
     expect(editions).toContain('»De to Røvere«</a>, i: ');
     expect(editions).toContain('href="/da/text/other"');
     expect(editions).not.toContain('href="/da/works/oehlenschlaeger"');
-    expect(editions).toContain('href="/da/works/liebenberg"');
-    expect(editions).toContain('href="/da/work/oehlenschlaeger/bd24"');
+    expect(editions).not.toContain('href="/da/works/liebenberg"');
+    expect(editions).not.toContain('href="/da/work/oehlenschlaeger/bd24"');
     expect(editions).toContain('s. 353–356.');
     expect(editions).not.toContain('reference-metadata');
     const source = sections.find(section => section.includes('>Kilde<'));
     expect(source.replace(/<[^>]*>/g, '')).toContain('Adam Oehlenschläger: Digte, 1803, s. 10–12.');
     for (const heading of ['Omtalt i', 'Gendigtning']) {
       const section = sections.find(section => section.includes(heading));
-      expect(section).toContain('Samlede Skrifter (1861)');
-      expect(section).not.toContain(', i:');
+      expect(section).toContain('»De to Røvere«</a>, i: ');
+      expect(section.match(/<a\b/g)).toHaveLength(1);
+      expect(section).toContain('s. 353–356.');
+      expect(section).toContain('bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.');
+      expect(section).not.toContain('reference-metadata');
     }
   });
 
-  it.each(['poet', 'person'])('omits the current author link in sources and facsimile captions (%s)', async attribute => {
+  it('prefixes translations with their poets, including anthology contributions and older references', async () => {
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      translations: [
+        {
+          id: 'sagen-translation', title: 'Til en ung Pige',
+          poet: 'Lyder Sagen', poetId: 'sagen',
+          citation: '<a poem="sagen-translation">»Til en ung Pige«</a>, i: <i>Charis for 1803</i>, red. af K. L. Rahbek, 1803, s. 133.',
+        },
+        {
+          id: 'schaldemose-translation', title: 'Til en Pige',
+          poet: 'Frederik Schaldemose', poetId: 'schaldemose', work: 'Anakreon (1824)',
+        },
+      ],
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    const section = [...html.matchAll(/<section\b[^>]*>(.*?)<\/section>/g)]
+      .map(match => match[1]).find(content => content.includes('>Gendigtninger<'));
+    const sectionText = section.replace(/<[^>]*>/g, '');
+    expect(sectionText).toContain('Lyder Sagen: »Til en ung Pige«, i: Charis for 1803');
+    expect(sectionText).toContain('Frederik Schaldemose: »Til en Pige«');
+    expect(sectionText).not.toContain('K. L. Rahbek: »');
+    expect(section.match(/Frederik Schaldemose/g)).toHaveLength(1);
+    expect(section).toContain('Anakreon (1824)');
+  });
+
+  it.each([
+    { facsimile: null, facsimilePageCount: null, facsimilePages: [9, 12] },
+    { facsimile: 'scan', facsimilePageCount: null, facsimilePages: [9, 12] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [0, 1] },
+    { facsimile: 'scan', facsimilePageCount: 12, facsimilePages: [13, 14] },
+  ])('renders the text and external source without an available local facsimile (%j)', async facsimile => {
+    const digitalUrl = 'https://www.digitale-sammlungen.de/en/view/bsb11939631?page=9';
+    Client.text.mockResolvedValue({ ...textData, text: {
+      ...textData.text,
+      blocks: [{ type: 'poetry', lines: [['En linje fra digtet.']] }],
+      source: {
+        source: 'Friedrich Leopold Graf zu Stolberg: <i>Jamben</i>, 1784.',
+        pages: '7-10', digitalUrl, ...facsimile,
+      },
+    } });
+    Client.poet.mockResolvedValue(collection);
+    const props = await TextPage.getInitialProps({ query: { lang: 'da', textId: 'poem' } });
+    const html = renderToStaticMarkup(
+      <LangContext.Provider value="da"><TextPage {...JSON.parse(JSON.stringify(props))} /></LangContext.Provider>
+    );
+    expect(html).toContain('En linje fra digtet.');
+    expect(html).toContain(`href="${digitalUrl}"`);
+    expect(html.replace(/<[^>]*>/g, '')).toContain('Jamben, 1784, s. 7–10.');
+    expect(html).not.toContain('/static/facsimiles/');
+  });
+
+  it.each(['poet', 'person'])('omits bibliographic links in sources and facsimile captions (%s)', async attribute => {
     Client.text.mockResolvedValue({ ...textData, text: {
       ...textData.text,
       source: {
@@ -154,8 +271,10 @@ describe('text page breadcrumbs', () => {
     const sidebar = html.match(/<aside\b[^>]*>(.*?)<\/aside>/)[1];
     expect(sidebar).not.toContain('href="/da/works/oehlenschlaeger"');
     expect(sidebar.match(/<b>Adam Oehlenschläger<\/b>: <i>Digte<\/i>/g)).toHaveLength(2);
-    expect(sidebar.match(/href="\/da\/works\/liebenberg"/g)).toHaveLength(2);
+    expect(sidebar).not.toContain('href="/da/works/liebenberg"');
+    expect(sidebar.match(/udg\. af F\. L\. Liebenberg/g)).toHaveLength(2);
     expect(sidebar).toContain('href="https://www.kb.dk/source"');
     expect(sidebar).toContain('s. 10–12.');
+    expect(sidebar).toContain('/static/facsimiles/oehlenschlaeger/scan/t/000-w800.jpg');
   });
 });

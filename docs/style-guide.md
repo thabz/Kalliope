@@ -8,6 +8,9 @@ i specialdokumenterne nedenfor.
 
 Læs den relevante specialdokumentation før ændringer på området:
 
+- `docs/thumbnail-cache.md` ved ændringer i thumbnail-generering, billedcache
+  eller målinger af billedtrinnet
+
 - `docs/kalliope-icons-design.md` ved ændringer i dagsikoner eller
   portrætprioriteringer for **I dag**
 - `docs/xml-info-format.md` ved ændringer i `fdirs/<id>/info.xml`
@@ -29,10 +32,16 @@ Læs den relevante specialdokumentation før ændringer på området:
   facsimilelinks til Det Kgl. Bibliotek
 - `docs/sqlite-index.md` ved forespørgsler på det genererede korpusindeks,
   ændringer i SQLite-buildet eller analyseværktøjer
+- `docs/elasticsearch-build.md` ved ændringer i søgeindeksering, bulkbuffer,
+  indeks-checkpoints eller målinger af Elasticsearch-trinnet
 - `docs/corpus-dataset.md` ved ændringer i det offentlige, versionsmærkede
   korpusdatasæt eller dets discovery-endpoint
+- `docs/keyword-system.md` ved oprettelse, kategorisering, sammenlægning eller
+  kvalitetskontrol af nøgleord
 - `docs/originaltekster-til-oversaettelser.md` ved opsporing, udvælgelse,
   indsættelse eller kildeangivelse af originaltekster til oversættelser
+
+- `docs/person-editorial.md` ved biografistatus, tekstønsker og deres afstemning
 
 ## GitHub
 
@@ -58,7 +67,38 @@ Læs den relevante specialdokumentation før ændringer på området:
 
 ## Billeder
 
+- Nye kunstværker, portrætter og kunstneriske illustrationer skal gennemgås mod
+  museum, Wikidata eller anden dokumenteret kilde. Kontrollér identitet, ophav,
+  datering, teknik, fysiske mål, samling og identifikatorer; indarbejd alle sikre
+  oplysninger og dokumentér væsentlige ubekendte i XML-kommentarer.
+  Afslut gennemgangen med `<!-- metadata checked: YYYY-MM-DD -->` inde i den
+  direkte `<picture>`-registrering med gennemgangens faktiske dato. Eksisterende
+  markeringer umiddelbart efter elementet understøttes også. Markeringen
+  attesterer udført kildegennemgang og må aldrig indsættes automatisk.
+  Reglen gælder også kunstneriske forsider og billeder uden for artwork- og
+  portrætfiler. Referencer (`artwork`, `portrait`, `ref`), titelbladsscanninger
+  (`type="titlepage"`), nodegengivelser (`type="score"`), dagsikoner og separate
+  `square-src`-beskæringer kræver ikke egen markering.
+  CI kontrollerer nye registreringer med
+  `npm run validate-new-picture-metadata -- BASE-REF [HEAD-REF]` (standard: HEAD).
+  Eksisterende umarkerede billeder er ikke omfattet af den nye kontrol;
+  billedomdøbninger og flytninger af registreringer bevarer deres status.
+  Kontrollen beviser markeringens tilstedeværelse, ikke kildegennemgangens kvalitet.
 - Portrætter og kunstgrafik ligger i `public/images/<id>/`.
+- Medtag dokumenterede fysiske mål i billedteksten som højde × bredde med
+  enhed, fx `80 × 60 cm`. Søg målene i værkets katalog- eller museumsopslag,
+  og bevar dem ved senere metadatarettelser. Skeln mellem billedflade, blad
+  og ramme, når kilden gør det. Hvis målene ikke kan dokumenteres, noteres
+  det i en XML-kommentar ved billedet; brug aldrig filens pixelmål som
+  erstatning for værkets fysiske mål.
+- Ved et originalt fotografi vises fotografens navn som kunstner. Et
+  fotografisk forlæg, som kunstneren har brugt til at skabe værket, beskrives
+  også i billedteksten, inklusive forlægsfotografens navn. Oplysninger om
+  senere affotograferinger af det færdige kunstværk samt alle
+  rettigheds- og licensoplysninger gemmes i XML-kommentarer direkte ved
+  billedet. De må ikke ligge i billedtekster eller andre felter, der vises i
+  grænsefladen. Reglen gælder alle billeder og al kunst i Kalliope, uanset
+  hvilken XML-fil billedet er registreret i.
 - Medtag kun en bogforside som værkbillede, når den har selvstændig grafisk eller
   kunstnerisk interesse, fx illustration, ornamentik eller markant typografi.
   Almindelige læderbind og andre rent funktionelle omslag skal ikke medtages.
@@ -73,6 +113,8 @@ Læs den relevante specialdokumentation før ændringer på området:
   `content/keywords/*.xml`, `content/about/*.xml` og `fdirs/<id>/portraits.xml`.
 - Husk at `<picture artwork="...">` og `<picture portrait="...">` er referencer; metadata
   bør normalt ligge på det refererede billede i `artwork.xml` eller `portraits.xml`.
+- Registrér kun hver lokal billedfil én gang. Genbrug billedet med `artwork`-
+  eller `portrait`-referencer i stedet for flere direkte registreringer.
 - `fdirs/<id>/portraits.xml` refererer lokale filer med filnavn, fx `src="p1.jpg"` og `square-src="p1-square.jpg"`.
 - Den faktiske fil for `fdirs/<id>/portraits.xml` skal derfor være `public/images/<id>/p1.jpg`.
 - Square portraits er normalt manuelt beskårne kvadratiske billeder og skal også ligge i `public/images/<id>/`.

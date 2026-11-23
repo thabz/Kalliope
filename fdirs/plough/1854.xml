@@ -3,9 +3,6 @@
 <workhead>
   <title>En Samling Digte</title>
   <year>1854</year>
-  <notes>
-    <note>Noter med en foranstillet asterisk er digterens egne.</note>
-  </notes>
   <pictures>
     <picture src="1854-p1.jpg">Titelbladet til <i>En Samling Digte</i> (1854) lyder ,,En Samling Digte / af / C. PLOUG. // KJÖBENHAVN. / Forlagt af C. G. Iversen. / Thieles Bogtrykkeri. / 1854.''.</picture>
   </pictures>
@@ -585,6 +582,7 @@ Det trofaste Folk paa Norges Kyst!
   <source pages="19"/>
   <places>
     <place ref="charlottenlund" relation="setting" primary="true"/>
+    <place ref="fyris" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -811,6 +809,9 @@ Og naar os Livets Alvor kalder!
   <title>For Norden</title>
   <firstline>Hvor de hvide Bræer skinne</firstline>
   <source pages="26-27"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1642,7 +1643,7 @@ Og meer ei søge i Boldhusgade,
     — Det er s'gu stivt!
 
 At Du, som holdt os vort Hus i Skik,
-Trods Krig og Dyrtid og fæle Busser<note>* Autor troer, at Angjældende selv har opfundet dette Navns Brug i Pluralis.</note>,
+Trods Krig og Dyrtid og fæle Busser<note>Autor troer, at Angjældende selv har opfundet dette Navns Brug i Pluralis.</note>,
 Saa Juletræer vi og Pølser fik
 Og Fastestykker og fulde Russer;
     Som Punschen brygged
@@ -1770,6 +1771,9 @@ Saadan skal I komme tilbage!
   <firstline>Skjaldernes Adam er død!</firstline>
   <source pages="57-62"/>
   <keywords>oehlenschlaeger</keywords>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2486,6 +2490,9 @@ Pege mod Morgenrøden.
 <head>
   <title>Slaget ved Fredericia</title>
   <firstline>Følg med! Der nærme Toner sig, I fatte</firstline>
+  <dates>
+    <event>1849-07-06</event>
+  </dates>
   <source pages="83-111"/>
   <places>
     <place ref="fredericia" relation="subject" primary="true"/>
@@ -3720,6 +3727,9 @@ En Fremtid hviler der af Seir og Ære.
   <title>Peder Tordenskjold</title>
   <firstline>I Nord er Vikingaanden født og baaren</firstline>
   <source pages="129-132"/>
+  <places>
+    <place ref="christianshavn" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

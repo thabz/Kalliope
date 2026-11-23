@@ -197,6 +197,8 @@ const formattedYearRange = (
   ] = extractYear(dead, yearTranslation(lang).unknownYear, lang);
   if (bornYearNumeric == null && deadYearNumeric == null) {
     return `(${unknownLifetime})`;
+  } else if (bornYearNumeric == null) {
+    return `(†\u00a0${formatYearEra(deadYearFormatted, deadYearBCE === true ? 'bce' : null, lang)})`;
   } else {
     let deadYearShortened = deadYearFormatted;
     if (

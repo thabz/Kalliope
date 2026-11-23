@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="dichman" country="dk" lang="da" type="poet">
+  <!-- Metadata source: DBL1 IV259–260; printed Dichman. Athene Dichmann variant; ErslewI338 explicitly lists AtheneIII354. Death place omitted because sources disagree. -->
+  <!-- Kilder: https://runeberg.org/dbl/4/0261.html ; https://runeberg.org/dbl/4/0262.html -->
+  <name>
+    <firstname>Gustav Adolph</firstname>
+    <lastname>Dichman</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1795-04-18</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1853-08-16</date>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+</person>

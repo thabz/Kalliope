@@ -684,6 +684,10 @@ sit tabte Barndoms-Eden.
   <title>Ved Orglet</title>
   <firstline>De slankt opskydende Piber</firstline>
   <source pages="48-53"/>
+  <places>
+    <place ref="judean-mountains" relation="setting"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1277,7 +1281,7 @@ for at varsle os hans <w>sidste</w> Komme?
   <title>Under Livets Træ</title>
   <firstline>Spredt forlængst udover Kloden, var nu</firstline>
   <notes>
-    <note>Mottoen er fra <xref bible="bibel1peter01,12"/>.</note>
+    <note editorial="true">Mottoen er fra <xref bible="bibel1peter01,12"/>.</note>
   </notes>
   <source pages="82-92"/>
   <quality>korrektur1,kilde,side</quality>

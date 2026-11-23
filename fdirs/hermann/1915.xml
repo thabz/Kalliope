@@ -55,7 +55,7 @@ Verdens forvildede Vanvid faa Ende . . . . .
   <title>Den blodige Pinse</title>
   <firstline>Se, Himlen er sort!</firstline>
   <notes>
-    <note>Cf. <xref bible="bibelapostlene02,19-20"/>.</note>
+    <note editorial="true">Cf. <xref bible="bibelapostlene02,19-20"/>.</note>
   </notes>
   <source pages="4-5"/>
   <quality>korrektur1,kilde,side</quality>
@@ -846,6 +846,9 @@ den hængte Mand, der dingler mellem Skovens sorte Stammer.
   <title>De 10 Buds hellige Bjerg</title>
   <firstline>Der knejser et Kors paa Sinai Bjerg</firstline>
   <source pages="27-28"/>
+  <places>
+    <place ref="mount-sinai" relation="subject"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

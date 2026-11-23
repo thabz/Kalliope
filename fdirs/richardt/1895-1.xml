@@ -61,6 +61,9 @@ Staa fast mit gamle danske Hus!
   <subtitle>(1852.)</subtitle>
   <firstline>Udbrændt er Bavnernes blodige Flamme</firstline>
   <source pages="2-3"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -782,6 +785,9 @@ i Naadens Hav udrinde.
   <subtitle>(Ved Kirkemødet 1857.)</subtitle>
   <firstline>Jeg veed en gammel Kirke - dens Taarne er tre</firstline>
   <source pages="22-23"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2654,6 +2660,9 @@ men hist i Koret Christus staar og kalder.
   <title>Ved det døde Hav</title>
   <firstline>Du døde Hav, hvi vinker Du</firstline>
   <source pages="74-76"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2711,6 +2720,11 @@ hvis Bad kan igjenføde.
   <title>I Nazareth</title>
   <firstline>Mellem disse grønne Høje</firstline>
   <source pages="76-78"/>
+  <places>
+    <place ref="mount-carmel" relation="mentioned"/>
+    <place ref="mount-tabor" relation="mentioned"/>
+    <place ref="nazareth" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2793,6 +2807,11 @@ Ham som er Alverdens Bøn.
   <title>Thabor</title>
   <firstline>Paa Esdralonsletten, hvor Vaaren holder Fest</firstline>
   <source pages="78-80"/>
+  <places>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+    <place ref="mount-tabor" relation="subject" primary="true"/>
+    <place ref="mount-lebanon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2855,6 +2874,11 @@ viis mig min Frelser, hos Ham tør jeg dø.
   <title>Hjemvee</title>
   <firstline>Aftenvind, med dine svale</firstline>
   <source pages="80-82"/>
+  <places>
+    <place ref="sharon-plain" relation="mentioned"/>
+    <place ref="jordan-river" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3403,7 +3427,7 @@ til Abu Hassan, Kadien, at komme.
 »Har han da ej betalt?« maaskee Du spørger;
 jo; han har snarere betalt for rask!
 Ben Esra skynder sig til Stadens Kadi,
-der just har grundet paa et Vers af Sadi<note><a poet="saadi">Saadi Shirazi</a> (1210-ca. 1291), persisk digter</note>,
+der just har grundet paa et Vers af Sadi<note editorial="true"><a poet="saadi">Saadi Shirazi</a> (1210-ca. 1291), persisk digter</note>,
 som oversat fra Persisk lyder saa:
 »Tag Alt hvad Du kan faa!« -
 Som sagt, Ben Esra møder;
@@ -4288,6 +4312,9 @@ vi Stjernens Fred kan eje!
   <subtitle>(Den 10 Septbr. 1864.)</subtitle>
   <firstline>Om rusted' vi vil være</firstline>
   <source pages="122-124"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4510,6 +4537,9 @@ vor Frelser og vor Gud!
     <event>1864-06-26</event>
   </dates>
   <source pages="127-129"/>
+  <places>
+    <place ref="sea-of-galilee" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4981,7 +5011,7 @@ og indad Blikket vandrer:
   <title>To i Baaden</title>
   <firstline>Hør Ellen, hør ifald Du vil!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="140-142"/>
   <quality>korrektur1,kilde,side</quality>
@@ -5734,6 +5764,9 @@ i Taagen tænde Stjerner og smelte Is til Vand!
   <title>Godt Mod!</title>
   <subtitle>(Nytaar 1864.)</subtitle>
   <firstline>Mit Folk, hvor var Du ofte</firstline>
+  <dates>
+    <event>1864-01-01</event>
+  </dates>
   <source pages="161-163"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6537,7 +6570,7 @@ til Ham!
   <title>Ved Lærkens Komme</title>
   <firstline>Velkommen Lærkelil!</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="184-185"/>
   <quality>korrektur1,kilde,side</quality>
@@ -6639,7 +6672,7 @@ læg mig saa hos dem derude!
   <title>Plovmandens Sang</title>
   <firstline>Hyp min Hest, lad Ploven gaa</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="187"/>
   <quality>korrektur1,kilde,side</quality>
@@ -7238,7 +7271,7 @@ mig tykkes, her er dobbelt saa eensomt som før.
   <title>Aja Sophia</title>
   <firstline>Du letteste, luftigste Rum</firstline>
   <notes>
-    <note>* Sophia-Moskeen; Aja Sophia er den gængse nygræske Benævnelse (aka = ἂγια, den hellige).</note>
+    <note>Sophia-Moskeen; Aja Sophia er den gængse nygræske Benævnelse (aka = ἂγια, den hellige).</note>
   </notes>
   <source pages="203-204"/>
   <quality>korrektur1,kilde,side</quality>
@@ -7288,6 +7321,9 @@ din Halvmaanering!
   <title>Normannen</title>
   <firstline>Imellem isgraa Fjelde</firstline>
   <source pages="204-213"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -7581,7 +7617,7 @@ og nu er jeg hans.
   <subtitle>En Erindring fra Saida</subtitle>
   <firstline>Blege Pige fra Habeya</firstline>
   <notes>
-    <note>* <w>Saida</w> i Syrien, det gamle Sidon. - ** <w>Tshibuken</w>, den lange tyrkiske Pibe, som oftest af Jasmin- eller Rosentræ.</note>
+    <note><w>Saida</w> i Syrien, det gamle Sidon. - ** <w>Tshibuken</w>, den lange tyrkiske Pibe, som oftest af Jasmin- eller Rosentræ.</note>
   </notes>
   <source pages="213-218"/>
   <quality>korrektur1,kilde,side</quality>
@@ -8091,6 +8127,9 @@ ja var det for at dø i samme Stund!
   <title><num>III.</num>Ved Billed-Egen</title>
   <firstline>Hvor lider Du min Datter</firstline>
   <source pages="229-239"/>
+  <places>
+    <place ref="jordan-river" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9067,6 +9106,9 @@ Gud signe Jert Mod og Jer Vilje!
   <subtitle>December 1864</subtitle>
   <firstline>Tre raske Drenge var vi</firstline>
   <source pages="260-262"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -9264,7 +9306,7 @@ prise højt vort høje Nord!
     <event>1866-06-05</event>
   </dates>
   <notes>
-    <note>* Til Grundlovsfesten i Dyrehaven d. 5te Juni 1866.</note>
+    <note>Til Grundlovsfesten i Dyrehaven d. 5te Juni 1866.</note>
   </notes>
   <source pages="266-267"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9426,7 +9468,7 @@ kom Venner, og følger ham efter!
   <subtitle>indledende Recitativ</subtitle>
   <firstline>Godkvæld Godtfolk fra Land og fra By!</firstline>
   <notes>
-    <note>* Fra Foreningen »<w>Fremtidens</w>« Karneval, Marts 1866, ved hvilken Lejlighed Casinos Lokale forestillede Dyrehavsbakken og dens Omgivelser.</note>
+    <note>Fra Foreningen »<w>Fremtidens</w>« Karneval, Marts 1866, ved hvilken Lejlighed Casinos Lokale forestillede Dyrehavsbakken og dens Omgivelser.</note>
   </notes>
   <source pages="270-272"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9511,7 +9553,7 @@ og finde mig i en lystig Dans!
   </subtitle>
   <firstline>Fra sidste Gang</firstline>
   <notes>
-    <note>* Da Universitetets nysmykkede Festsal første Gang benyttedes.</note>
+    <note>Da Universitetets nysmykkede Festsal første Gang benyttedes.</note>
   </notes>
   <source pages="272-274"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9577,7 +9619,7 @@ som inden disse Vægge.
   </subtitle>
   <firstline>Velsignede Dag, som i Lundenes Skygge</firstline>
   <notes>
-    <note>* Kantate til given Musik.</note>
+    <note>Kantate til given Musik.</note>
   </notes>
   <source pages="274-278"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9742,7 +9784,7 @@ men Gudsfrygt frelser en Folkeaand.
   <indextitle>Peter Severin Lund</indextitle>
   <firstline>Du Lykkelige</firstline>
   <notes>
-    <note>* Cand. theol.; født 13. Decbr. 1834, død paa Sandbjerg Lazareth 18. Juli 1864.</note>
+    <note>Cand. theol.; født 13. Decbr. 1834, død paa Sandbjerg Lazareth 18. Juli 1864.</note>
   </notes>
   <source pages="279"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9785,7 +9827,7 @@ Fred med dit Støv, og Stjerner om dit Minde!
     <event>1864-06-05</event>
   </dates>
   <notes>
-    <note>* Her meddeles Sangen i den oprindelige Skikkelse.</note>
+    <note>Her meddeles Sangen i den oprindelige Skikkelse.</note>
   </notes>
   <source pages="280-281"/>
   <quality>korrektur1,kilde,side</quality>
@@ -9840,7 +9882,7 @@ og i vor Kjærlighed din bedste Magt!
     <event>1865-06-16</event>
   </dates>
   <notes>
-    <note>* Ved en Fest til Minde om Hendes første Indtog paa Sorgenfri.</note>
+    <note>Ved en Fest til Minde om Hendes første Indtog paa Sorgenfri.</note>
   </notes>
   <source pages="281-282"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10045,7 +10087,7 @@ af hine Grænsepæle!
   <subtitle>Foraaret 1867</subtitle>
   <firstline>Tak for djærv og sanddru Tale!</firstline>
   <notes>
-    <note>* Efter deres Hjemkomst fra Berlin.</note>
+    <note>Efter deres Hjemkomst fra Berlin.</note>
   </notes>
   <source pages="287-288"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10151,7 +10193,7 @@ skal bide og skal slaa!
   <title>Volmerslaget</title>
   <firstline>Vidt over grønne Bølge</firstline>
   <notes>
-    <note>* Text fra Sangfesten i Kjøbenhavn, Sommeren 1868. Musikken af P. Heise.</note>
+    <note>Text fra Sangfesten i Kjøbenhavn, Sommeren 1868. Musikken af P. Heise.</note>
   </notes>
   <source pages="289-293"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10218,7 +10260,7 @@ hvor er vort Banner? Tabt! - Fly Danske, fly!«
     og mindes sejromsuset:
     I Dag i Afgudshuset
     slog Absalon i Gruset
-      Svantevits Krop.<note>* Arkonas Indtagelse fandt Sted selvsamme Dag, halvhundrede Aar tidligere.</note>
+      Svantevits Krop.<note>Arkonas Indtagelse fandt Sted selvsamme Dag, halvhundrede Aar tidligere.</note>
 
     Og som af Morgenluen løst
       - Under at see! -
@@ -10260,7 +10302,7 @@ om Folket fylder af Ham sin Aand,
   <subtitle>April 1868.</subtitle>
   <firstline>Forlængst er Skjalden lagt i Muld</firstline>
   <notes>
-    <note>* I Studenterforeningen, ved Afdækningen af Digterens Buste.</note>
+    <note>I Studenterforeningen, ved Afdækningen af Digterens Buste.</note>
   </notes>
   <source pages="293-294"/>
   <keywords>oehlenschlaeger</keywords>
@@ -10308,7 +10350,7 @@ Da døer ej Oehlenschlägers Ætt.
   <title>Septembertid</title>
   <firstline>Hvor dejlig er September her i Danmark!</firstline>
   <notes>
-    <note>* Skrevet i Marts 1868.</note>
+    <note>Skrevet i Marts 1868.</note>
   </notes>
   <source pages="294-297"/>
   <quality>korrektur1,kilde,side</quality>
@@ -10658,6 +10700,9 @@ og hjælpes ad i Nød og Lyst
   <title>Grundlovsvise</title>
   <subtitle>1871</subtitle>
   <firstline>I Stalden var der Uro, Støj og Sparken</firstline>
+  <dates>
+    <event>1871-06-05</event>
+  </dates>
   <source pages="304-305"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10982,6 +11027,9 @@ fanges vore Hjerter her i Norge!
   <toctitle><num>2.</num>Nordens Kvinde</toctitle>
   <firstline>Det lysner over Norden fra Frejas blanke Rok</firstline>
   <source pages="313-314"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -11675,7 +11723,7 @@ saa skal I see, hvordan Haabet seer ud,
   <toctitle><num>2.</num>Sommervise</toctitle>
   <firstline>Naar Egene knoppes</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="330-332"/>
   <quality>korrektur1,kilde,side</quality>

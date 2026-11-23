@@ -37,7 +37,7 @@ dog i alle Fald — mit eget.
   <firstline>Kimer, I Klokker! nu sluktes en Sol over Mulde</firstline>
   <notes>
     <note>1872</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="1-2"/>
   <keywords>grundtvig</keywords>
@@ -160,6 +160,9 @@ bygger nu af Tolvaarsdrenge.
   <toctitle><num>1.</num>,,Skaf Krigssignalet bort fra Nordens Grænse!``</toctitle>
   <firstline>Skaf Krigssignalet bort fra Nordens Grænse!</firstline>
   <source pages="6-7"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -597,6 +600,9 @@ gaar lige løs paa Skanserne, som Christian Spur.
   <title>Vore Førere</title>
   <firstline>Er Freden død i Frodes Vang?</firstline>
   <source pages="25-29"/>
+  <places>
+    <place ref="jelling" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1159,7 +1165,7 @@ men byg I kun dristig med ham mod det blaa!
   <subtitle>Som: Ja vi elsker dette Landet</subtitle>
   <firstline>Det, som lysner over Vangen</firstline>
   <notes>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="48-49"/>
   <quality>korrektur1,kilde,side</quality>
@@ -1518,9 +1524,13 @@ at vække hos Dem en nyfødt Latter.
   <title>Krager</title>
   <subtitle>Til en Tegning af O. A. Hermansen</subtitle>
   <firstline>Vistnok er de mørke og tunge</firstline>
+  <dates><event>1859-12-17</event></dates>
   <notes>
-    <note>TODO:Kan vi finde tegningen?</note>
+    <note editorial="true">Den viste tegning er oprindelig trykt til Thor Langes »Gaaet bort« i <i>Ude og Hjemme</i>, nr. 235, 2. april 1882, s. 321. Det er ikke dokumenteret, om det er den tegning, som digtets undertitel henviser til.</note>
   </notes>
+  <pictures>
+    <picture artwork="kunst/hermansen-krageflokke-1882"/>
+  </pictures>
   <source pages="63-65"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -1897,7 +1907,7 @@ hans Naade paa Jord.
   <subtitle>
     <line>fremsagt af Otto Zinck</line>
     <line>paa hans Jubilæums-Benefice efter Opførelsen af</line>
-    <line>,,Rekrutten`` og ,,Revuen``.</line>
+    <line>„Rekrutten“ og „Revuen“.</line>
   </subtitle>
   <firstline>Vi har ikke mere — nu er De fri</firstline>
   <source pages="78-81"/>
@@ -2452,7 +2462,7 @@ saa vist som hvert et faldende Blad
   <firstline>Julebudet til dem, der bygge</firstline>
   <notes>
     <note>1881</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="102-103"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2496,7 +2506,7 @@ løft dit Hoved og tak for Livet!
   <subtitle>Som: O, det var et Liv</subtitle>
   <firstline>Ingen Sang jeg har</firstline>
   <notes>
-    <note>Fodnoten ,,Hostrups Sange og Digte fra 30 Aar, S. 213'' henviser til digtet <xref poem="hostrup2018051624"/>.</note>
+    <note editorial="true">Fodnoten ,,Hostrups Sange og Digte fra 30 Aar, S. 213'' henviser til digtet <xref poem="hostrup2018051624"/>.</note>
   </notes>
   <source pages="104-106"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2963,6 +2973,9 @@ og kun hvad der var ondt bliver glemt.
   <subtitle>Bryllupsvise</subtitle>
   <firstline>Skal det for Ungersvenden gaa</firstline>
   <source pages="125-130"/>
+  <places>
+    <place ref="north-sea" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3342,7 +3355,7 @@ Freden, der overgaar al Forstand.
   <firstline>Vi fik ej under Tidernes Tryk</firstline>
   <notes>
     <note>1884</note>
-    <note type="credits">Bidrag fra Sven Sørensen.</note>
+    <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="141-143"/>
   <quality>korrektur1,kilde,side</quality>

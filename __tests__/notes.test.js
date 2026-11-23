@@ -13,6 +13,13 @@ describe('note metadata', () => {
     expect(getNoteType(note)).toBe('translation-source');
   });
 
+  it('keeps editorial translation sources in the Forlæg category', () => {
+    const note = parseNote(
+      '<note editorial="true">Gendigtning af <xref type="translation" poem="original"/></note>'
+    );
+    expect(getNoteType(note)).toBe('translation-source');
+  });
+
   it('preserves an explicitly assigned note type', () => {
     const note = parseNote(
       '<note type="credits"><xref type="translation" poem="original"/></note>'

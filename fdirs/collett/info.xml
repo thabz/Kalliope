@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="collett" country="no" lang="no" type="poet">
+  <name>
+    <firstname>Peter Jonas</firstname>
+    <lastname>Collett</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1813-09-12</date>
+      <place>Huseby, Lier</place>
+    </born>
+    <dead>
+      <date>1851-12-18</date>
+      <place>Christiania (nu Oslo)</place>
+    </dead>
+  </period>
+  <literary-periods>no-nationalromantik</literary-periods>
+  <identifiers>
+    <wikidata>Q5148070</wikidata>
+  </identifiers>
+</person>

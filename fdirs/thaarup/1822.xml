@@ -38,6 +38,9 @@ Maaskee torde allerede en Samling af Digte, der ved Indhold og Aand have erhverv
 <head>
   <title>Fortale</title>
   <source pages="VII-XXIV" facsimile-pages="12-29" />
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -339,7 +342,7 @@ Eders Aasyn, Nordens Guder!
 Hvo som reen og ubesmittet er,
 Træde Eders Aasyn nær!
 Han er det værd.
-I det Alfsol nærmer sig Skjæbnens Præstinder, siger den første.<note>*) Resten af denne Scene er blandt det reenstrevne, som ender dermed.</note>
+I det Alfsol nærmer sig Skjæbnens Præstinder, siger den første.<note>Resten af denne Scene er blandt det reenstrevne, som ender dermed.</note>
 Vær trøstig Kongedatter!
 <nonum><center><w>Den tredie</w>.</center></nonum>
 Gid din Skjæbne
@@ -515,6 +518,10 @@ K. L. Rahbek.
   <subtitle>Et Syngespil i een Act</subtitle>
   <firstline>Nys fyldte skjøn Sired det attende Aar</firstline>
   <source pages="1-48"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3537,6 +3544,9 @@ Bo Velstand, Glæde, Fred!
   <title>Forandringer</title>
   <subtitle>foretagne af Digteren i de senere Udgaver af Høstgildet og Peters Bryllup</subtitle>
   <source pages="111-128"/>
+  <places>
+    <place ref="elbe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -5737,6 +5747,10 @@ At det trindt om Jorden lyde:
   <title>Opstandelsen</title>
   <firstline>Klag, o Sandhed! for din Ven</firstline>
   <source pages="194-202"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="nazareth" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6235,6 +6249,9 @@ O da er min Dødsstund blid.
   <subtitle>1821</subtitle>
   <firstline>Hil dig! Hil dig! Livets Morgenrøde!</firstline>
   <source pages="211-215"/>
+  <places>
+    <place ref="mount-sinai" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -6503,6 +6520,9 @@ Vor Dommer og Forsoner!
     <line>(Digterens sidste Arbejde.)</line>
   </subtitle>
   <firstline>Æonen fødes, den forgaaer</firstline>
+  <dates>
+    <event>1822-01-01</event>
+  </dates>
   <source pages="221-222"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -6805,6 +6825,9 @@ Dens Maal er evig Kundskab, evig Fred,
   <title>Afskedssang til Aaret 1807</title>
   <subtitle>bestemt at opføres Nytaars Aften</subtitle>
   <firstline>Det mulmer flux ad Dagens Ende</firstline>
+  <dates>
+    <event>1807-12-31</event>
+  </dates>
   <source pages="231-238"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7187,6 +7210,12 @@ Til evig Ære!
   <title>Sange og Cantater i Anledning af Kroningsfesten 1815</title>
   <subtitle>i Julii 1815</subtitle>
   <firstline>Herre Kongens Sjæl erkjænder</firstline>
+  <dates>
+    <event>1815-07-31</event>
+  </dates>
+  <notes>
+    <note editorial="true">Begivenhedsdatoen angiver Frederik 6.s og dronning Marie Sophie Frederikkes kroning i Frederiksborg Slotskirke den 31. juli 1815, jf. Thorvaldsens Museums arkiv <a href="https://arkivet.thorvaldsensmuseum.dk/personer/frederik-sjette">↬</a>.</note>
+  </notes>
   <source pages="244-255"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7509,6 +7538,12 @@ Om Fredriks, om Marias Krone.
   <title>Cantate paa Universitetet i Kjøbenhavn</title>
   <subtitle>i Anledning af Kroningsfesten</subtitle>
   <firstline>Du Straale fra Guds Herlighed</firstline>
+  <dates>
+    <event>1815-07-31</event>
+  </dates>
+  <notes>
+    <note editorial="true">Begivenhedsdatoen angiver Frederik 6.s og dronning Marie Sophie Frederikkes kroning i Frederiksborg Slotskirke den 31. juli 1815, jf. Thorvaldsens Museums arkiv <a href="https://arkivet.thorvaldsensmuseum.dk/personer/frederik-sjette">↬</a>.</note>
+  </notes>
   <source pages="256-260"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -7741,6 +7776,10 @@ Een vorde Hyrden: een hans Hjord!
 <head>
   <title>Psalmer for Hirschholms Menighed ved Reformationsfesten 1817</title>
   <firstline>Til dig, du ene sande Gud</firstline>
+  <dates>
+    <!-- Reformationens 300-årsjubilæum (31. oktober – 2. november 1817). Begivenhedsdatoen angiver jubilæets begyndelse. -->
+    <event>1817-10-31</event>
+  </dates>
   <source pages="264-268"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8332,6 +8371,9 @@ Du har velsignet dem, o Jehovah!
     <line>1786</line>
   </subtitle>
   <firstline>Verdeners Fader! du gode, du vise!</firstline>
+  <dates>
+    <event>1786-01-29</event>
+  </dates>
   <source pages="283-293"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -8665,6 +8707,9 @@ Først paa Jordens sidste Dag!
   <title>Cantate til Kongens Fødselsfest</title>
   <subtitle>1786</subtitle>
   <firstline>Du, som med harmonisk Kjæde</firstline>
+  <dates>
+    <event>1786-01-29</event>
+  </dates>
   <source pages="294-299"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -9586,6 +9631,9 @@ Til herligt Lys, til evigt Liv.
     <line>den 22 Marts 1798</line>
   </subtitle>
   <firstline>Blide Fred! du mild udbreder</firstline>
+  <dates>
+    <event>1798-03-22</event>
+  </dates>
   <source pages="325-329"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10241,6 +10289,9 @@ gode Borgers Navn at bære,
   <title>Paa Kronprindsens Fødselsdag</title>
   <subtitle>1784</subtitle>
   <firstline>Naar Østens Straale mild udbreder</firstline>
+  <dates>
+    <event>1784-01-28</event>
+  </dates>
   <source pages="346-348"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10409,6 +10460,9 @@ De skal ynde Phæbi Chor.
     <line>Fødselsdag 1792.</line>
   </subtitle>
   <firstline>I fjerne Tid, i Livets Morgenrøde</firstline>
+  <dates>
+    <event>1792-09-04</event>
+  </dates>
   <source pages="351-356"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -10756,6 +10810,9 @@ Hør det hele Folk velsigne
 <head>
   <title>Til Mændene fra anden April</title>
   <firstline>Kjække Mænd! vi signe Eder</firstline>
+  <dates>
+    <event>1801-04-02</event>
+  </dates>
   <source pages="362-363"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -11165,6 +11222,9 @@ Hæld være Borgerharmoni!
 <head>
   <title>29 Januar 1791</title>
   <firstline>Opstemmer o Brødre! med frydefuldt Qvad</firstline>
+  <dates>
+    <event>1791-01-29</event>
+  </dates>
   <source pages="375"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -11246,6 +11306,9 @@ Saa synger Fredriks Fædreland.
 <head>
   <title>Den 29 Januar 1802</title>
   <firstline>Nu tier Krigens Rædselskorden</firstline>
+  <dates>
+    <event>1802-01-29</event>
+  </dates>
   <source pages="377-378"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -11293,6 +11356,10 @@ Du leve, Fader Christian!
 <head>
   <title>28 og 29 Januar samme Aar</title>
   <firstline>Fyd dig, o Konge! thi du byder</firstline>
+  <dates>
+    <event>1802-01-28</event>
+    <event>1802-01-29</event>
+  </dates>
   <source pages="378-379"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -11582,6 +11649,10 @@ Du er saa moderlig saa god.
     <line>1804</line>
   </subtitle>
   <firstline>I jublende Samlyd udbryder</firstline>
+  <dates>
+    <event>1804-01-28</event>
+    <event>1804-01-29</event>
+  </dates>
   <source pages="387-388"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -11622,6 +11693,9 @@ Velsign du vor Konge! velsign du hans Søn!
   <title>Velkomstsang i Skuespilhuset</title>
   <subtitle>den 28 Januar 1816</subtitle>
   <firstline>Konge dig velkommen byder</firstline>
+  <dates>
+    <event>1816-01-28</event>
+  </dates>
   <source pages="388-389"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -12058,7 +12132,7 @@ Men den Mand, man Fader kalder,
     O hans Roes er Evighed,
 
 Ven! det Minde du dig bygger,
-    Gjør dig uforglemmelig<note>* Ved den stiftede Enkecasse for Capellets Medlemmer.</note>
+    Gjør dig uforglemmelig<note>Ved den stiftede Enkecasse for Capellets Medlemmer.</note>
 Naar du boer i Gravens Skygger,
     Vore Børn skal signe dig.
 Her i Dag, hvor Bacchus vinker,
@@ -13201,6 +13275,9 @@ Evigt over Død og Tid.
   <title>Sang ved Prinds Christians Fødselsfest 1816</title>
   <subtitle>den 18 Sept. 1816</subtitle>
   <firstline>I Fredens livsalige Dage</firstline>
+  <dates>
+    <event>1816-09-18</event>
+  </dates>
   <source pages="436-437"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -13250,6 +13327,9 @@ Som Vaarens letvingede Skyl
   <title>I det harmoniske Selskab</title>
   <subtitle>den 29 Januar 1798</subtitle>
   <firstline>Langt over Smiger, fri fra Tvang</firstline>
+  <dates>
+    <event>1798-01-29</event>
+  </dates>
   <source pages="438"/>
   <quality>korrektur1,kilde,side</quality>
 </head>
@@ -14976,6 +15056,7 @@ Nyd længe Magens rene Glæder,
   <firstline>Naar Medbør Havets sølvblaae Bølge triller</firstline>
   <dates>
     <performed>1813-01-29</performed>
+    <event>1813-01-28</event>
   </dates>
   <source pages="488-491"/>
   <quality>korrektur1,kilde,side</quality>
@@ -15565,7 +15646,7 @@ At jeg ikke var hiin Gunst uværdig!
     <event>1793-04-27</event>
   </dates>
   <notes>
-    <note>*) En tilføjet Forerindring siger, at det var Sangerinden nægtet at holde denne Prolog, uden at den af Vedkommende var seet eller bedømt, og at den aftryktes for at godtgjøre, at det ikke var dens Indhold, der havde motiveret Forbudet. Udg. er ligesaalidt istand til at opløse denne Gaade, som Forfatt. erklærede sig at være, da det formdentlig maa høre med til vor Theaters hemmelige Historie.</note>
+    <note>En tilføjet Forerindring siger, at det var Sangerinden nægtet at holde denne Prolog, uden at den af Vedkommende var seet eller bedømt, og at den aftryktes for at godtgjøre, at det ikke var dens Indhold, der havde motiveret Forbudet. Udg. er ligesaalidt istand til at opløse denne Gaade, som Forfatt. erklærede sig at være, da det formdentlig maa høre med til vor Theaters hemmelige Historie.</note>
   </notes>
   <source pages="505-506"/>
   <quality>korrektur1,kilde,side</quality>
@@ -15968,7 +16049,7 @@ O blot et Glimt af Held fra Lysets Rige!
   <title>Efter det Tydske</title>
   <firstline>Søg aldrig paa en Nar at lære</firstline>
   <notes>
-    <note>Gendigtning af første og femte strofe af Nikolaus Dietrich Gisekes <xref type="translation" poem="giseke2026082401"/>.</note>
+    <note editorial="true">Gendigtning af første og femte strofe af Nikolaus Dietrich Gisekes <xref type="translation" poem="giseke2026082401"/>.</note>
   </notes>
   <source pages="517"/>
   <quality>korrektur1,kilde,side</quality>
@@ -15998,7 +16079,7 @@ Men ham en Daare lade blive,
   <subtitle>Efter det Tydske</subtitle>
   <firstline>Sin Handel mig Niels Kjøbmand priser</firstline>
   <notes>
-    <note>Efter Johann Adolf Schlegels »Der entschlossne junge Poet«, også overleveret som »Die Vettern«. Trykt i <i>Johann Adolf Schlegels vermischte Gedichte</i>, bd. 1, Schmieder, 1788, s. 264. En tidligere musikalsk version findes som »Die Vettern«, sat i musik af Knuth Lambo, 1755, nr. 12.</note>
+    <note editorial="true">Efter Johann Adolf Schlegels »Der entschlossne junge Poet«, også overleveret som »Die Vettern«. Trykt i <i>Johann Adolf Schlegels vermischte Gedichte</i>, bd. 1, Schmieder, 1788, s. 264. En tidligere musikalsk version findes som »Die Vettern«, sat i musik af Knuth Lambo, 1755, nr. 12.</note>
   </notes>
   <source pages="517-519"/>
   <quality>korrektur1,kilde,side</quality>
@@ -16058,8 +16139,8 @@ O gid vi samles snart igjen,
   <title>Efter Bürger</title>
   <firstline>Herr Bacchus er en skjønne Mand</firstline>
   <notes>
-    <note>Gendigtning af Bürgers <xref type="translation" poem="burger2019021901"/>.</note>
-    <note type="credits">Bidrag fra Margit Ammentorp.</note>
+    <note editorial="true">Gendigtning af Bürgers <xref type="translation" poem="burger2019021901"/>.</note>
+    <note editorial="true" type="credits">Bidrag fra Margit Ammentorp.</note>
   </notes>
   <source pages="519-521"/>
   <quality>korrektur1,kilde,side</quality>
@@ -16454,7 +16535,6 @@ Da Himlen først vor Elskov saae.
 <body>
 <poetry>
 Held dig, o Venskabs Magt! dit Navn velsignet være!
-
         Serapher føle dig;
 Thi du est Jordens Fryd, Alfaders Ære,
         Og ingen Glæde uden dig.

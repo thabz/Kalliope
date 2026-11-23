@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="kosegarten" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Ludwig Gotthard</firstname>
+    <lastname>Kosegarten</lastname>
+  </name>
+  <!-- Kilde: https://www.deutsche-biographie.de/gnd11898618X.html -->
+  <period>
+    <born>
+      <date>1758-02-01</date>
+      <place>Grevesmühlen</place>
+    </born>
+    <dead>
+      <date>1818-10-26</date>
+      <place>Greifswald</place>
+    </dead>
+  </period>
+  <literary-periods>de-sturm-und-drang-og-romantik</literary-periods>
+  <identifiers>
+    <gnd>11898618X</gnd>
+  </identifiers>
+</person>

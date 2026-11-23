@@ -1,10 +1,51 @@
+import { CastList, CastGroup } from './cast-list.js';
 import Link from 'next/link';
+import SourceIcon from './source-icon.js';
 import { useContext } from 'react';
 import CommonData from '../common/commondata.js';
 import LangContext from '../common/LangContext.js';
 import { Footnote } from './footnotes.js';
 import * as Links from './links.js';
 import { DOMParser } from '@xmldom/xmldom';
+
+// Split at verse boundaries while reopening inline markup on each line.
+const citationLines = node => {
+  const splitNode = child => {
+    if (child.nodeType === 3) {
+      return child.textContent.split(/\r?\n/).map(text => [child.ownerDocument.createTextNode(text)]);
+    }
+    if (child.nodeName === 'br') {
+      return [[], []];
+    }
+    if (child.childNodes.length === 0 || ['note', 'footnote'].includes(child.nodeName)) {
+      return [[child.cloneNode(true)]];
+    }
+    return splitChildren(child).map(line => {
+      const wrapper = child.cloneNode(false);
+      line.forEach(part => wrapper.appendChild(part));
+      return [wrapper];
+    });
+  };
+  const splitChildren = parent => {
+    const lines = [[]];
+    Array.from(parent.childNodes).forEach(child => {
+      const parts = splitNode(child);
+      lines.at(-1).push(...parts[0]);
+      lines.push(...parts.slice(1));
+    });
+    return lines;
+  };
+  const lines = splitChildren(node);
+  // Newlines immediately inside the poetry tags are XML formatting.
+  const blank = line => line.every(part => part.nodeType === 3 && part.textContent.trim() === '');
+  if (node.firstChild?.nodeType === 3 && /^\r?\n/.test(node.firstChild.textContent) && blank(lines[0])) lines.shift();
+  if (node.lastChild?.nodeType === 3 && /\r?\n$/.test(node.lastChild.textContent) && blank(lines.at(-1))) lines.pop();
+  return lines.map(line => {
+    const fragment = node.ownerDocument.createDocumentFragment();
+    line.forEach(part => fragment.appendChild(part));
+    return fragment;
+  });
+};
 
 // Render xml
 const renderXmlString = (inputString) => {
@@ -121,6 +162,9 @@ const renderXmlString = (inputString) => {
       );
     } else if (node.hasAttribute('href')) {
       const href = node.getAttribute('href');
+      if (/^(?:https?:)?\/\//iu.test(href) && node.textContent.trim() === '↬') {
+        return <SourceIcon key={keySeq++} href={href} lang={lang} />;
+      }
       return handle_link(href, handle_nodes(node.childNodes));
     } else if (node.hasAttribute('bible')) {
       const bibleId = node.getAttribute('bible');
@@ -135,6 +179,22 @@ const renderXmlString = (inputString) => {
 
   const handle_node = (node) => {
     switch (node.nodeName) {
+      case 'front':
+        return <div key={keySeq++} className="text-front">{handle_nodes(node.childNodes)}</div>;
+      case 'castList':
+        return <CastList key={keySeq++} node={node} renderNode={handle_node} />;
+      case 'castGroup':
+        return <CastGroup key={keySeq++} node={node} renderNode={handle_node} />;
+      case 'castItem':
+        return <div key={keySeq++} className="cast-item">{handle_nodes(node.childNodes)}</div>;
+      case 'role':
+        return <span key={keySeq++} className="cast-role">{handle_nodes(node.childNodes)}</span>;
+      case 'roleDesc':
+        return <span key={keySeq++} className="cast-role-desc">{handle_nodes(node.childNodes)}</span>;
+      case 'set':
+        return <div key={keySeq++} className={`cast-setting${node.getAttribute('rend')?.split(/\s+/).includes('center') === true ? ' cast-setting--center' : ''}`}>{handle_nodes(node.childNodes)}</div>;
+      case 'head':
+        return <div key={keySeq++} className="cast-group__head">{handle_nodes(node.childNodes)}</div>;
       case 'br':
         return <br key={keySeq++} />;
       case '#text':
@@ -160,7 +220,7 @@ const renderXmlString = (inputString) => {
       case 'u':
         return <u key={keySeq++}>{handle_nodes(node.childNodes)}</u>;
       case 'p':
-        return <p>{handle_nodes(node.childNodes)}</p>;
+        return <p key={keySeq++}>{handle_nodes(node.childNodes)}</p>;
       case 'sup':
         return <sup key={keySeq++}>{handle_nodes(node.childNodes)}</sup>;
       case 'sub':
@@ -198,12 +258,24 @@ const renderXmlString = (inputString) => {
             {handle_nodes(node.childNodes)}
           </center>
         );
-      case 'poetry':
+      case 'poetry': {
+        const inNote = ['note', 'footnote'].includes(node.parentNode?.nodeName);
         return (
-          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}>
-            {handle_nodes(node.childNodes)}
+          <div key={keySeq++} lang={node.hasAttribute('lang') ? node.getAttribute('lang') : undefined}
+            style={{
+              whiteSpace: 'pre-wrap',
+              marginInlineStart: inNote === true ? '1.5em' : undefined,
+              marginBlockStart: inNote === true ? '0.25em' : undefined,
+            }}>
+            {inNote === true ? citationLines(node).map((line, index) => (
+              <div key={index} className="note-verse-line"
+                style={{ marginInlineStart: '3em', textIndent: '-3em' }}>
+                {line.textContent.trim() === '' ? <br /> : handle_nodes(line.childNodes)}
+              </div>
+            )) : handle_nodes(node.childNodes)}
           </div>
         );
+      }
       case 'epigraph':
         return (
           <div
@@ -217,7 +289,7 @@ const renderXmlString = (inputString) => {
       case 'blockquote':
         const left = node.hasAttribute('left')
           ? node.getAttribute('left')
-          : '50%';
+          : '4ch';
         const right = node.hasAttribute('right')
           ? node.getAttribute('right')
           : '0';
@@ -227,7 +299,9 @@ const renderXmlString = (inputString) => {
             style={{
               display: 'block',
               position: 'relative',
-              margin: `0 ${right} 0 ${left}`,
+              margin: `0.25lh ${right} 0.25lh ${left}`,
+              fontSize: '0.9em',
+              textIndent: 0,
             }}>
             {handle_nodes(node.childNodes)}
           </blockquote>
@@ -346,9 +420,19 @@ const renderXmlString = (inputString) => {
         return <img key={keySeq++} src={src} style={style} alt={alt} />;
       }
       case 'footnote':
-      case 'note':
-        const noteContent = handle_nodes(node.childNodes);
-        return <Footnote key={keySeq++} text={noteContent} />;
+      case 'note': {
+        const note = node.cloneNode(true);
+        const first = note.firstChild;
+        const editorial = node.getAttribute('editorial') === 'true';
+        const authorMarker = editorial === false && first?.nodeType === 3
+          ? first.textContent.match(/^\s*(\*+(?:\))?)\s*/)?.[1] ?? null
+          : null;
+        if (authorMarker != null) {
+          first.textContent = first.textContent.replace(/^\s*\*+(?:\))?\s*/, '');
+        }
+        const noteContent = handle_nodes(note.childNodes);
+        return <Footnote key={keySeq++} text={noteContent} authorMarker={authorMarker} editorial={editorial} />;
+      }
       case 'sc':
         return (
           <span key={keySeq++} className="small-caps">
@@ -510,15 +594,20 @@ const TextContent = (props) => {
       className += ' short-poem-line';
     }
 
-    if (type !== 'prose' && !lineOptions.wrap && !lineOptions.hr) {
+    if ((type === 'poetry' || type === 'epigraph') && !lineOptions.wrap && !lineOptions.hr) {
       lineInnerClass += ' inner-poem-line';
       className += ' poem-line';
       return (
         <div
           className={className}
-          data-num={lineOptions.displayNum || lineOptions.margin}
+          data-num={lineOptions.displayNum}
           key={keyPrefix + i}>
           {anchor}
+          {lineOptions.margin != null && (
+            <span className="poem-margin-text">
+              {renderXmlString(lineOptions.margin)}
+            </span>
+          )}
           <div className={lineInnerClass}>{rendered}</div>
         </div>
       );
@@ -552,6 +641,9 @@ const TextContent = (props) => {
   });
 
   let epigraphClassName = '';
+  const centeredProseClassName = type === 'prose' &&
+    contentHtml.some(line => line[1]?.center === true)
+    ? 'centered-prose-block' : null;
   if (type === 'epigraph') {
     epigraphClassName = 'blockquote';
   }
@@ -564,7 +656,8 @@ const TextContent = (props) => {
   return (
     <div
       style={style}
-      className={[className, smallClassName, epigraphClassName]
+      className={[className, smallClassName, epigraphClassName, centeredProseClassName,
+        type === 'poetry' && contentLang === 'zh' ? 'vertical-chinese' : null]
         .filter((a) => a != null)
         .join(' ')}
       lang={contentLang}
@@ -589,7 +682,9 @@ const TextContent = (props) => {
           margin-top: 0.25em;
         }
         :global(.poem-line.with-margin-text::before) {
-          content: attr(data-num);
+          display: none;
+        }
+        :global(.poem-margin-text) {
           color: black;
           margin-right: 1em;
           width: 3.5em;
@@ -631,6 +726,10 @@ const TextContent = (props) => {
         :global(.block) {
           display: inline-block;
         }
+        :global(.block.centered-prose-block) {
+          display: block;
+          width: 100%;
+        }
         :global(.highlighted-line) {
           background-color: rgb(253, 246, 227);
           margin-left: 1em;
@@ -660,6 +759,30 @@ const TextContent = (props) => {
           width: calc(100%-7em);
           margin-left: 7em;
           text-indent: -7em;
+        }
+        :global(.block.vertical-chinese) {
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          line-height: 1.1;
+          max-width: 100%;
+          overflow-x: auto;
+        }
+        :global(.vertical-chinese .poem-line) {
+          margin-left: 0;
+          margin-inline-start: 1.5em;
+          white-space: nowrap;
+        }
+        :global(.vertical-chinese .inner-poem-line) {
+          width: auto;
+          margin-left: 0;
+          text-indent: 0;
+        }
+        :global(.vertical-chinese .line-with-num::before) {
+          margin: 0;
+          margin-inline-start: -1.875em;
+          inline-size: 1.875em;
+          block-size: auto;
+          text-orientation: mixed;
         }
         :global(.inner-prose-line) {
           display: inline-block;

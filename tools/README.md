@@ -20,6 +20,22 @@ npm run build-static-force-reload
 Brug `npm run build-static -- --timings` for at få tidsmålinger af buildets trin.
 `make profile-build-static` medtager også tidsmålingerne i buildloggen.
 
+Efter afsluttet tekstbuild gemmes filregistre, billedmål og filhashes før
+thumbnailgenereringen. En genstart efter en afbrydelse her genbruger tekstbuildet,
+mens ændrede XML-filer stadig behandles på ny. Genstart midt i tekstbuildet er
+ikke et understøttet checkpoint.
+
+Thumbnails skrives atomisk og får individuelle kvitteringer i
+`caches/thumbnails/`. Kvitteringerne kontrollerer kildeindhold, genereringskode,
+Sharp-versioner, format, bredde og outputindhold. Kun billedfunktionens kode
+indgår i genereringsnøglen; ændringer i andre hjælpefunktioner udløser ikke
+ny billedgenerering. Færdige thumbnails kan derfor
+genbruges efter en afbrydelse; manglende eller beskadigede outputs genbygges.
+Originalbilleder læses og hashes først, når deres opgaver starter i køen, så
+genereringen ikke venter på indlæsning af hele billedsamlingen.
+Uden kvitteringer genbygges thumbnails én gang. Slet `caches/thumbnails/` for
+at tvinge ny generering.
+
 Filerne i `build-static/` og `libs/` er interne JavaScript-moduler. De skal ikke
 køres direkte.
 
@@ -76,25 +92,6 @@ npm run check-text-quality -- --min-date=2018-01-01 --facsimile-only
 end den angivne dato. Tekst-id'er uden en gyldig dato medtages ikke. Datoen i et
 id som `winther2018081001` er `2018-08-10`. `--facsimile-only` medtager kun
 værkfiler, hvor mindst én `<source>` refererer til en fil med endelsen `.pdf`.
-
-### Salmonsen-biografier
-
-`report-salmonsen-biographies.js` viser fremdriften for biografier til
-udenlandske digtere. Positive fund registreres af digterens `bio.xml`, mens
-kontrollerede negative fund ligger i
-`data/salmonsen-biography-status.json`.
-Den fulde redaktionelle arbejdsgang er beskrevet i
-[Salmonsen-biografier](../docs/salmonsen-biographies.md).
-
-```sh
-npm run report-salmonsen-biographies
-npm run report-salmonsen-biographies -- --check
-npm run report-salmonsen-biographies -- --next 12
-```
-
-Den sidste kommando udskriver digter-id, navn og landekode for næste bølge.
-Statusfilen skal kun opdateres af bølgens koordinator, efter arbejdsagenternes
-resultater er samlet.
 
 ## Redaktionelle værktøjer
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="finnsson" country="no" lang="is" type="poet">
+  <name>
+    <firstname>Eyvindr</firstname>
+    <lastname>Finnsson</lastname>
+    <alternative>Eyvindr skáldaspillir</alternative>
+    <alternative>Øyvind Finnsson Skaldespiller</alternative>
+    <alternative>Eyvind Skaldespilder</alternative>
+  </name>
+  <!-- Norrønt navn og omtrentlige livsdata: https://snl.no/Øyvind_Finnsson_Skaldespiller, Øyvind Finnsson Skaldespiller, opdateret 25. marts 2025: født i 920'erne og død i 990'erne. Salmonsen 1918 angiver ældre datering ca.910–990. -->
+  <period>
+    <born>
+      <date>ca. 0920</date>
+      <place>Sandnes, Alstahaug</place>
+    </born>
+    <dead>
+      <date>ca. 0990</date>
+    </dead>
+  </period>
+  <literary-periods>no-norroen-litteratur</literary-periods>
+</person>

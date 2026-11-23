@@ -354,6 +354,9 @@ And roar in Numbers worthy <i>Bounce</i>.
 <head>
   <title>Windsor Forest</title>
   <firstline>Thy forests, Windsor! and thy green retreats</firstline>
+  <places>
+    <place ref="ganges" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -3545,7 +3548,7 @@ Still to charm those who charm the world beside.
   <title>On Two Lovers Struck Dead by Lightning</title>
   <firstline>When Eastern lovers feed the funeral fire</firstline>
   <notes>
-    <note>I The Poetical Works of Alexander Pope står digtet i afsnittet »Epitaphs«, nr. XVII.</note>
+    <note editorial="true">I The Poetical Works of Alexander Pope står digtet i afsnittet »Epitaphs«, nr. XVII.</note>
   </notes>
   <source href="https://www.gutenberg.org/ebooks/9413">
     <author>Alexander Pope</author>

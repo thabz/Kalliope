@@ -124,9 +124,12 @@ In meinem Lieben, in meinem Lied!
 <head>
   <title>Die goldne Hochzeit</title>
   <firstline>Brechet auf den Felsenschacht</firstline>
-  <notes>
-    <note>Taget fra <i>Deutschlands Balladen- und Romanzen-Dichter</i>, red. Ignaz Hub, Würzburg, Karlsruhe 1859.</note>
-  </notes>
+  <source>
+    <title>Deutschlands Balladen- und Romanzen-Dichter</title>
+    <editor>Ignaz Hub</editor>
+    <place>Würzburg, Karlsruhe</place>
+    <year>1859</year>
+  </source>
   <quality>kilde</quality>
 </head>
 <body>
@@ -1858,7 +1861,7 @@ O füll es ganz!
   <title>Alfarabi</title>
   <firstline>Alfarabi aus Farab</firstline>
   <notes>
-    <note>Abū Naṣr Muḥammad ibn Muḥammad Al Fārābī (persisk: ابو نصر محمد بن محمد فارابي, ca. 872 - ca. 950), arabisk filosof, jurist og musiker.</note>
+    <note editorial="true">Abū Naṣr Muḥammad ibn Muḥammad Al Fārābī (persisk: ابو نصر محمد بن محمد فارابي, ca. 872 - ca. 950), arabisk filosof, jurist og musiker.</note>
   </notes>
 </head>
 <body>

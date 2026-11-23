@@ -345,6 +345,9 @@ Der brænder det ved Dag og Nat endnu.
   <title>Menneskets Skabelse</title>
   <firstline>Engang paa Dovres Klippeblok</firstline>
   <source pages="11-16"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -1402,7 +1405,7 @@ For den gamle Heltemoder!
 Hør: i Fimbul-Natten svare
 Dig en Yngling-Skare:
 
-Danmark, deiligst Vang og Vænge<note>Cf. Laurids Koks <xref poem="kok1999030201"/>.</note>,
+Danmark, deiligst Vang og Vænge<note editorial="true">Cf. Laurids Koks <xref poem="kok1999030201"/>.</note>,
 Lukt med Bølgen blaa,
 Skal vi elske tro, saa længe
 Hjerterne kan slaae!
@@ -1484,7 +1487,7 @@ Spanien plyndred' Perus Herlighed.
 Frugtløst stred den vilde Indianer,
 Til, med Tomahavken i sin Haand,
 Did han steg, hvor over Stjernebaner
-Helten jager hos den store Aand.<note>* Indianerens Tro.</note>
+Helten jager hos den store Aand.<note>Indianerens Tro.</note>
 
 Blandt den Sværm, der, som Termittermyrer,
 Oversvømmede Columbus' Land,
@@ -1538,7 +1541,7 @@ Har, lig vilde Dyr, vi ingen Fred:
 Dalens helligholdte Ild er slukket,
 Værnet tusind Aar for Stormens Suus;
 Hvo, der ei for Eders Torden bukked',
-Blev til Træl ved Eders Stærkvandsruus!<note>* Brændeviinsruus.</note>
+Blev til Træl ved Eders Stærkvandsruus!<note>Brændeviinsruus.</note>
 
 Ja! lig Bjørnene i Biens Kube
 I min Barndomsdal I har indbrudt,
@@ -1766,7 +1769,7 @@ Og stolt i Seclers vilde Storme staae
 Paa Heltedaaden pegende tilbage,
 Mens Slægterne, som komme, og som gaae,
 Skal føle Hjerterne til Storverk slaae
-For gamle Dannemark i Trængslens Dage!''<note>Dage!] Dage!''</note>
+For gamle Dannemark i Trængslens Dage!''<note editorial="true">Dage!] Dage!''</note>
 
 Saa hæved' nylig sig en liflig Røst
 Blandt Larmen af de travle Arbeidsbier;
@@ -1896,6 +1899,12 @@ Da over Dig Du selv vil bryde Staven!
   <title>Til Danmark</title>
   <firstline>Hil dig, du Nordhavets</firstline>
   <source pages="73-80"/>
+  <places>
+    <place ref="mount-ararat" relation="mentioned"/>
+    <place ref="tiber" relation="mentioned"/>
+    <place ref="himalayas" relation="mentioned"/>
+    <place ref="jelling" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2184,7 +2193,7 @@ De høre det ei for Latter.
 De høre ei Sangen af Nattens Storm,
 Der pidsker Regnen mod Rude!
 ,,Ja tummel dig kun, du stakkels Orm,
-Snart er med din Fryd det ude!<note>ude!] ude!''</note>
+Snart er med din Fryd det ude!<note editorial="true">ude!] ude!''</note>
 
 Snart veirer jeg hen dit usle Støv,
 Saa dands du kun fro derinde!
@@ -2438,6 +2447,9 @@ Sit Hoved til Folket kan hælde!
   <title>Til Solen</title>
   <firstline>Dagens kongelige Stjerne</firstline>
   <source pages="95-97"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -2768,7 +2780,7 @@ Staaer svækket og fremmed tilbage!
   <title>Glæden og Sorgen</title>
   <firstline>Adskilt blev engang Tidens tvende Børn</firstline>
   <notes>
-    <note>Mottoet stammer fra Blichers <xref poem="blicher2003091524,17-20"/>.</note>
+    <note editorial="true">Mottoet stammer fra Blichers <xref poem="blicher2003091524,17-20"/>.</note>
   </notes>
   <source pages="111-117"/>
   <quality>korrektur1,kilde,side</quality>
@@ -2941,6 +2953,9 @@ En Glorie bli'er da din Tornekrone!!''
   <title>Fanatikernes Hævn</title>
   <firstline>Halvt den store Corsikaner</firstline>
   <source pages="118-121"/>
+  <places>
+    <place ref="pyrenees" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3265,7 +3280,7 @@ Og flux ham Ryggen vendte.
   <title>Psyche sælger Amoriner</title>
   <firstline>Hvergang, o Du herlige Mester!</firstline>
   <notes>
-    <note>Digtet er en humoristisk genfortælling af Thorvaldsens relief <i>Kærlighedens aldre</i> fra højre mod venstre.</note>
+    <note editorial="true">Digtet er en humoristisk genfortælling af Thorvaldsens relief <i>Kærlighedens aldre</i> fra højre mod venstre.</note>
   </notes>
   <pictures>
     <picture artwork="thorvaldsen/1824-kaerlighedens-aldre"/>
@@ -3464,7 +3479,7 @@ Og Taaber: Skjald og Viis, og Drot og Klerk.
 
 Med Panden rynket saa en Stund jeg stod;
 Da saae jeg disse Blomster for min Fod:
-Paa Graven hver, som Evigheds Symbol,<note>* Evighedsblomster</note>
+Paa Graven hver, som Evigheds Symbol,<note>Evighedsblomster</note>
 Sit Uskyldsøie vendte mod Guds Sol.
 
 Henplanted' ei ved Nogen Gartners Flid,
@@ -3537,7 +3552,7 @@ Der skubbed' Verdenslivet frem et Old,
 Og sig forvoven op til Skjæbne hæved',
 Han maatte lære ved sit eget Fald,
 At Mennesket er Usselhedens Broder -
-Hans Fængsel bruges nu til Hestestald,<note>* Det er factisk, at det første Fængsel Kaiseren hensattes i, siden afbenyttedes til Stald.</note>
+Hans Fængsel bruges nu til Hestestald,<note>Det er factisk, at det første Fængsel Kaiseren hensattes i, siden afbenyttedes til Stald.</note>
 Og Frankrig hersker atter - kun ved Moder.
 
 Paa St. Helena saae han fra sin Bænk
@@ -3638,7 +3653,7 @@ Og hen gjennem Skovledet kommer:
 Da stands ved den fattige Ledkones Bo,
 Og, hvis den som mig kan Dig fryde,
 Da skjænk hende venlig en Hvid eller to,
-Hvormed hun den bedre kan pryde<note>* Hun er der ikke meer.</note>.
+Hvormed hun den bedre kan pryde<note>Hun er der ikke meer.</note>.
 </poetry>
 </body>
 </text>
@@ -3648,6 +3663,9 @@ Hvormed hun den bedre kan pryde<note>* Hun er der ikke meer.</note>.
   <title>Thussekæmpen Hrugners Vædderidt til Valhalla</title>
   <firstline>Odin reed fra Gudehjem</firstline>
   <source pages="146-150"/>
+  <places>
+    <place ref="valhalla" relation="setting"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -3666,7 +3684,7 @@ Mellem sine Heste:
 Vidt og bredt, han bandte paa,
 Var hans Dyr de bedste;
 Med en Hesteprangers Blik
-Skjældte Sleipner<note>* Sleipner var Odins Ganger.</note> han en Krik:
+Skjældte Sleipner<note>Sleipner var Odins Ganger.</note> han en Krik:
 Snar var ingen Tanke
 Som hans Gyldenmanke.
 
@@ -3786,6 +3804,9 @@ Vee, da skal jeg komme!''
   <title>Thors Kamp med Hrugner og Mokkurkalf</title>
   <firstline>Da Jetterne nu hørte</firstline>
   <source pages="151-156"/>
+  <places>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4042,6 +4063,9 @@ Det sang Alverdens Skjalde ei i Chor!
   <title>Ved Fuursøen</title>
   <firstline>Hvor nylig Iis</firstline>
   <source pages="162-164"/>
+  <places>
+    <place ref="babylon" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>
@@ -4068,7 +4092,7 @@ Saa svinder Livet med sin Fryd og Sorg. -
 See: her en Borg
 Fra denne Høi ud over Egnen skued';
 I Morgensolen Spirets Krone lued'.
-Her <w>Atterdag</w> var <w>Tovelilles</w><note>* Valdemar den 4des Elskede.</note> Gjæst -
+Her <w>Atterdag</w> var <w>Tovelilles</w><note>Valdemar den 4des Elskede.</note> Gjæst -
 Hvor gothisk Vinduet sig bued',
 Hun saae ham komme paa den vilde Hest -
 Alverden, troede de, om dem sig dreie -
@@ -4401,6 +4425,9 @@ Hen til min lille Tue!
   <subtitle>Ideen laant af det Græske</subtitle>
   <firstline>O, Du, som kan lænke det trodsige Kraft</firstline>
   <source pages="177-181"/>
+  <places>
+    <place ref="verona" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde,side</quality>
 </head>
 <body>

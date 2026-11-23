@@ -1,0 +1,4531 @@
+{
+  "title": "Konkordans: Vedels Hundredvisebog og Danmarks gamle Folkeviser",
+  "schema_version": "1.0",
+  "compiled_date": "2026-11-07",
+  "language": "da",
+  "issue_url": "https://github.com/thabz/Kalliope/issues/2168",
+  "scope": "Alle 101 eksisterende tekstposter i Kalliopes Vedel-værk 1591. Det latinske tillæg, som mangler i XML, er registreret særskilt nedenfor.",
+  "method": [
+    "Grundlag: Marius Kristensens konkordans, Danske Studier 1937, s. 176–177, sammenholdt med de eksisterende Kalliope-teksters identitet.",
+    "83 af 88 DgF-forbindelser er kontrolleret direkte i DgF-udgavens henvisninger eller tillæg. Fem er belagt i faglitteraturen; disse er mærket særskilt.",
+    "Kalliope-ID er entydig sammenkoblingsnøgle. Der kobles ikke alene på titel eller på visens position i rækkefølgen.",
+    "DgF-type, variant, lille vidnebogstav og tillægsbogstav er forskellige datafelter. Samme type indebærer ikke identisk ordlyd eller samme redaktion.",
+    "Variantgennemgangen er ikke udtømmende. null i et variantfelt betyder ikke fastslået her, ikke at der nødvendigvis savnes en betegnelse i DgF.",
+    "DV betyder Danske Viser fra Adelsvisebøger og Flyveblade 1530–1630. DV-numre må aldrig indlæses som dgf-id."
+  ],
+  "field_notes": {
+    "dgf_id": "Positivt heltal til den foreslåede alternative identifikator dgf-id; null betyder, at intet DgF-nummer tildeles i denne konkordans.",
+    "dv_number": "Nummer i DV, et særskilt katalog; ikke et forslag om at udvide issue #2168s datamodel.",
+    "reference_in_dgf_and_scholarship": "Konventionel Vedel-reference i DgF/faglitteraturen, ikke nødvendigvis nummeret trykt i den oprindelige udgave eller Kalliopes nuværende undertitel.",
+    "xml_number": "Det tal, der faktisk står som numerisk undertitel i den undersøgte XML; null ved manglende eller unummereret undertitel.",
+    "position_in_division": "Faktisk position i Kalliopes nuværende del, talt fra 1. Skal ikke bruges som selvstændigt historisk visenummer.",
+    "firstline_in_xml": "Ordret indhold af XML-feltet firstline. En konstateret afvigelse fra første strofe er forklaret ved I 6.",
+    "dgf_variant": "Stort variantbogstav, når dokumenteret. Se variant_verification og variant_evidence.",
+    "dgf_witness": "Lille vidne-/underbetegnelse, når dokumenteret, eksempelvis b i 5 B,b.",
+    "dgf_appendix": "Tillægsbetegnelse, eksempelvis lille c for bytravestien under DgF 149; må ikke sammenskrives med dgf_variant.",
+    "evidence": "Kildehenvisninger. Felter med as_printed/as_recorded bevarer kildens formulering; en eventuel correction skal læses sammen med dem. De autoritative normaliserede numre for denne konkordans står i dgf_id og dv_number."
+  },
+  "counts": {
+    "existing_kalliope_texts": 101,
+    "texts_by_division": {
+      "I": 26,
+      "II": 55,
+      "III": 20
+    },
+    "texts_with_dgf_id": 88,
+    "distinct_dgf_types": 78,
+    "dgf_mappings_checked_in_primary_edition": 83,
+    "dgf_mappings_based_on_scholarly_concordance": 5,
+    "texts_with_dv_number": 12,
+    "existing_texts_without_identified_dgf_or_dv": 1,
+    "dgf_variant_letters_recorded": 29,
+    "dgf_variant_letters_checked_in_primary_edition": 28,
+    "dgf_variant_letters_from_scholarship_only": 1,
+    "dgf_lowercase_witness_letters_recorded": 12,
+    "travesty_appendices_with_dgf_relation": 1,
+    "original_texts_identified_as_absent_from_xml": 1
+  },
+  "numbering_findings": [
+    {
+      "finding": "1591-trykket har XII to gange i første part og springer XLVII over i anden part.",
+      "source": "henningsen_1959",
+      "page": 59
+    },
+    {
+      "finding": "Kalliopes XML har to undertitler 12 i første del og intet undertitelnummer ved teksten, der konventionelt er II 38.",
+      "source": "kalliope_xml"
+    },
+    {
+      "finding": "DgF henviser til Sterck Tiderich som I 12 og Løven som I 13; Kalliope placerer Løven før Sterck Tiderich. DgF henviser til Mimmering som I 18 og Berner Riss som I 19; Kalliope placerer Berner Riss før Mimmering.",
+      "source": "dgf_i"
+    }
+  ],
+  "sources": {
+    "kalliope_xml": {
+      "title": "Kalliope: fdirs/vedel/1591.xml",
+      "url": "https://github.com/thabz/Kalliope/blob/06b927705c93af61fba75c5bc5b44d9fa8a8a6ee/fdirs/vedel/1591.xml",
+      "repository": "thabz/Kalliope",
+      "commit": "06b927705c93af61fba75c5bc5b44d9fa8a8a6ee",
+      "git_blob_sha": "5e800608460a04325392cc1d4e45624958d762c2",
+      "retrieved_date": "2026-11-07",
+      "role": "Tekst-ID, titel, metadata, rækkefølge og nuværende nummerering.",
+      "transcription_source_as_recorded": {
+        "title": "Anders Sørensen Vedels Folkevisebog",
+        "editor": "Paul V. Rubow",
+        "place": "Kbh.",
+        "publisher": "Holbergselskabet",
+        "year": 1926
+      }
+    },
+    "kristensen_1937": {
+      "author": "Marius Kristensen",
+      "title": "Marsk Stig Visen",
+      "publication": "Danske Studier",
+      "year": 1937,
+      "pages": "168–177",
+      "concordance_pages": "176–177",
+      "url": "https://danskestudier.dk/wp-content/uploads/2018/06/1937.pdf",
+      "pdf_pages_one_based": [
+        186,
+        187
+      ],
+      "role": "Samlet faglig konkordans, korrigeret mod DgF ved de anførte fejl."
+    },
+    "henningsen_1959": {
+      "author": "Gustav Henningsen",
+      "title": "Vedel og Syv og bogtrykkerne. En bibliografisk undersøgelse af Hundredvisebogen",
+      "publication": "Danske Studier",
+      "year": 1959,
+      "pages": "53–84",
+      "relevant_page": 59,
+      "url": "https://tidsskrift.dk/danskestudier/article/download/159253/201182/352832",
+      "role": "Bibliografisk kollation af 1591-trykket: nummerfejl og slutlinje på Hh6r."
+    },
+    "lundgreen_nielsen_2001": {
+      "author": "Flemming Lundgreen-Nielsen",
+      "title": "Anmeldelse af Rita Geertz: Vor Herre og den lede gam",
+      "publication": "Danske Studier",
+      "year": 2001,
+      "pages": "175–183",
+      "relevant_page": 182,
+      "url": "https://tidsskrift.dk/danskestudier/issue/download/11372/2334",
+      "role": "Identificerer Falkenberg-visen som DV 24 og henviser til DV IV, s. 61."
+    },
+    "vedel_1619": {
+      "title": "It hundrede uduaalde Danske viser",
+      "year": 1619,
+      "url": "https://archive.org/details/bub_gb_toIAAAAAcAAJ",
+      "pdf_url": "https://archive.org/download/bub_gb_toIAAAAAcAAJ/bub_gb_toIAAAAAcAAJ.pdf",
+      "relevant_pdf_pages_one_based": [
+        539,
+        542,
+        546
+      ],
+      "role": "Tidligt optryk: to bytillæg, latinsk incipit, tilskrivning til Morten Børup og slutlinje."
+    },
+    "dgf_i": {
+      "title": "Danmarks gamle Folkeviser, første Deel",
+      "volume": "I",
+      "year": 1853,
+      "url": "https://archive.org/details/bub_gb_FTxNAAAAcAAJ",
+      "contents_locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+      "role": "Primærudgavens egne henvisninger til Vedel; enkelte variant- og vidnebetegnelser."
+    },
+    "dgf_ii": {
+      "title": "Danmarks gamle Folkeviser, anden Deel",
+      "volume": "II",
+      "year": 1856,
+      "url": "https://archive.org/details/danmarksgamlefo00denmgoog",
+      "contents_locus": "Indhold af 2den Deel, pp. III–IV",
+      "role": "Primærudgavens egne henvisninger til Vedel; enkelte variant- og vidnebetegnelser."
+    },
+    "dgf_iii": {
+      "title": "Danmarks gamle Folkeviser, tredje Deel",
+      "volume": "III",
+      "year": 1862,
+      "url": "https://archive.org/details/danmarksgamlefo02denmgoog",
+      "contents_locus": "Indhold af tredje Del, pp. III–IV",
+      "role": "Primærudgavens egne henvisninger til Vedel; enkelte variant- og vidnebetegnelser."
+    },
+    "dgf_iv": {
+      "title": "Danmarks gamle Folkeviser, fjerde Del",
+      "volume": "IV",
+      "year": 1883,
+      "url": "https://archive.org/details/danmarksgamlefo01denmgoog",
+      "contents_locus": "Indhold af fjerde Del",
+      "role": "Primærudgavens egne henvisninger til Vedel; enkelte variant- og vidnebetegnelser."
+    },
+    "dgf_vi": {
+      "title": "Danmarks gamle Folkeviser, sjette Del",
+      "volume": "VI",
+      "year": 1898,
+      "url": "https://archive.org/details/danmarksgamlefo04denmgoog",
+      "contents_locus": "Indhold af sjette Del",
+      "role": "Primærudgavens egne henvisninger til Vedel; enkelte variant- og vidnebetegnelser."
+    },
+    "bm_catalogue": {
+      "title": "Catalogue of romances in the Department of Manuscripts in the British Museum, volume II",
+      "printed_page": 100,
+      "url": "https://archive.org/details/b29001079_0002",
+      "pdf_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Catalogue_of_romances_in_the_Department_of_Manuscripts_in_the_British_Museum_%28IA_b29001079_0002%29.pdf",
+      "source_class": "Independent scholarly catalogue; not direct inspection of DgF V"
+    },
+    "lex_literary_history": {
+      "author": "Vibeke A. Pedersen",
+      "title": "Hundredvisebogen",
+      "publication": "Dansk litteraturs historie (2006–2009), online at Lex",
+      "url": "https://dansklitteraturshistorie.lex.dk/Hundredvisebogen",
+      "source_class": "Independent secondary scholarly account; not direct inspection of DgF V"
+    }
+  },
+  "entries": [
+    {
+      "kalliope_id": "vedel1999123001",
+      "kalliope_url": "https://kalliope.org/da/text/vedel1999123001",
+      "division": "I",
+      "position_in_division": 1,
+      "position_in_xml": 1,
+      "xml_number": 1,
+      "xml_number_raw": "1",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 1",
+      "title_in_xml": "Danske Kongers Nafn oc Tal",
+      "firstline_in_xml": "Alting aff Gud, i Himmel oc Jord",
+      "dgf_id": null,
+      "dv_number": null,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "unresolved_no_catalogue_number_identified",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kalliope_xml",
+          "locus": "vedel1999123001",
+          "supports": "Egen tekstpost med førstelinjen Alting aff Gud, i Himmel oc Jord; Kalliopes note beskriver Vedels kongemonologer med udgangspunkt i Saxo."
+        },
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "supports": "Ingen nummerrelation for I 1 angivet i denne konkordans."
+        },
+        {
+          "source": "dgf_iii",
+          "page": 2,
+          "supports": "DgF 115, Dansk Kongetal, henviser til Vedel I 2; dette er ikke belæg for at tildele I 1 samme nummer."
+        }
+      ],
+      "notes": [
+        "Intet DgF- eller DV-nummer identificeret i de konsulterede kilder. Dette er en åben registrering, ikke en påstand om dokumenteret udelukkelse fra enhver fortegnelse."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000010201",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000010201",
+      "division": "I",
+      "position_in_division": 2,
+      "position_in_xml": 2,
+      "xml_number": 2,
+      "xml_number_raw": "2",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 2",
+      "title_in_xml": "Hertugen Reed fra Colding",
+      "firstline_in_xml": "Hertugen hand red fra Colding By",
+      "dgf_id": 115,
+      "dv_number": null,
+      "dgf_title": "Dansk Kongetal",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 2",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 115
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 1,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000010202",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000010202",
+      "division": "I",
+      "position_in_division": 3,
+      "position_in_xml": 3,
+      "xml_number": 3,
+      "xml_number_raw": "3",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 3",
+      "title_in_xml": "De Longobarders Udgang aff Danmarck",
+      "firstline_in_xml": "Der bode en Konning i Danmarck",
+      "dgf_id": 21,
+      "dv_number": null,
+      "dgf_title": "Longobarderne",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 3",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 21
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 317,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000012802",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000012802",
+      "division": "I",
+      "position_in_division": 4,
+      "position_in_xml": 4,
+      "xml_number": 4,
+      "xml_number_raw": "4",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 4",
+      "title_in_xml": "Langbeen Risers oc Vidrich Verlandssøns Kamp",
+      "firstline_in_xml": "Konning Tidrich stander paa Bern",
+      "dgf_id": 7,
+      "dv_number": null,
+      "dgf_title": "Kong Diderik og hans Kæmper",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, text notes to no. 7; DgF II preface also lists Vedel reprint 7Bb."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 4",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 7,
+          "variant_reference_as_printed": "B"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 63,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000012801",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000012801",
+      "division": "I",
+      "position_in_division": 5,
+      "position_in_xml": 5,
+      "xml_number": 5,
+      "xml_number_raw": "Oc om Siuard Snaren Suends kamp met Herr Humble\n    5",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 5",
+      "title_in_xml": "En Vise om de fornemste gamle Kemper",
+      "firstline_in_xml": "De vaare sin siu oc siusindstiue",
+      "dgf_id": 7,
+      "dv_number": null,
+      "dgf_title": "Kong Diderik og hans Kæmper",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "H",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 112, heading H. (Vedel, I, Nr. 5); page image checked.",
+          "page": 112
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 5",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 7
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 63,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000012803",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000012803",
+      "division": "I",
+      "position_in_division": 6,
+      "position_in_xml": 6,
+      "xml_number": 6,
+      "xml_number_raw": "6",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 6",
+      "title_in_xml": "Om Greffue Guncelin",
+      "firstline_in_xml": "Huorledis hand slog Tileuentin ihiel",
+      "dgf_id": 16,
+      "dv_number": null,
+      "dgf_title": "Greve Genselin",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 16, heading C: a. Rentzels Haandskrift; b. Vedel I, Nr. 6."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 6",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 16
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 222,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "XML-feltet firstline gengiver overskriftens fortsættelse. Første strofe begynder: Det vaar Greffue Herr Guncelin. firstline_in_xml er bevaret ordret som metadata, ikke som rettet incipit."
+      ]
+    },
+    {
+      "kalliope_id": "vedel20000102804",
+      "kalliope_url": "https://kalliope.org/da/text/vedel20000102804",
+      "division": "I",
+      "position_in_division": 7,
+      "position_in_xml": 7,
+      "xml_number": 7,
+      "xml_number_raw": "7",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 7",
+      "title_in_xml": "Den første Vise om Frue Grimild, oc Heldt Hogen",
+      "firstline_in_xml": "Det vaar stolte Fru Grimild",
+      "dgf_id": 5,
+      "dv_number": null,
+      "dgf_title": "Grimilds Hævn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 5, heading C (Vedel, I, Nr. 7), first line Det vaar stolte Fru Grimild."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "I 7",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 5,
+          "variant_reference_as_printed": "C"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 33,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000012805",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000012805",
+      "division": "I",
+      "position_in_division": 8,
+      "position_in_xml": 8,
+      "xml_number": 8,
+      "xml_number_raw": "8",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 8",
+      "title_in_xml": "Den anden Vise om Frue Grimild, og hendis Brødre",
+      "firstline_in_xml": "Det vaar stolte Frue Grimild",
+      "dgf_id": 5,
+      "dv_number": null,
+      "dgf_title": "Grimilds Hævn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 5, heading B lists a. Svanings Haandskrift; b. Vedel I, 8. Grouped 1937 reference 5AB must not be read as an ordered assignment."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 8",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 5,
+          "variant_reference_as_printed": "AB (collective, unordered)"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 33,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kristensen anfører I 8–9 og DgF 5 AB samlet. Det er ikke en ordnet variantfordeling: DgF I identificerer I 8 som B,b og I 9 som A,b."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000012806",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000012806",
+      "division": "I",
+      "position_in_division": 9,
+      "position_in_xml": 9,
+      "xml_number": 9,
+      "xml_number_raw": "9",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 9",
+      "title_in_xml": "Den Tredje Vise om samme Grimilds Forræderi mod sine Brødre",
+      "firstline_in_xml": "Slig Kemper som Helled Hogen",
+      "dgf_id": 5,
+      "dv_number": null,
+      "dgf_title": "Grimilds Hævn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "A",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 5, heading A lists a. Svanings Haandskrift; b. Vedel I, 9."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 9",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 5,
+          "variant_reference_as_printed": "AB (collective, unordered)"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 33,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kristensen anfører I 8–9 og DgF 5 AB samlet. Det er ikke en ordnet variantfordeling: DgF I identificerer I 8 som B,b og I 9 som A,b."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000020501",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000020501",
+      "division": "I",
+      "position_in_division": 10,
+      "position_in_xml": 10,
+      "xml_number": 10,
+      "xml_number_raw": "10",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 10",
+      "title_in_xml": "En Vise om Mester Hildebrand",
+      "firstline_in_xml": "Jeg vil mig af landet ride",
+      "dgf_id": null,
+      "dv_number": 59,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "I 10",
+          "registry_as_printed": "DV",
+          "number_as_printed": 59
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000020503",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000020503",
+      "division": "I",
+      "position_in_division": 11,
+      "position_in_xml": 11,
+      "xml_number": 11,
+      "xml_number_raw": "11",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 11",
+      "title_in_xml": "Vlff Van Jern",
+      "firstline_in_xml": "Det vaar vngen Vlff van jern",
+      "dgf_id": 10,
+      "dv_number": null,
+      "dgf_title": "Ulv van Jærn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "G",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 154, heading G. (Vedel, I, Nr. 11); first line Det vaar vngen Vlff van Iern. Page image checked; OCR misreads G as C.",
+          "page": 154
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 11",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 10
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 142,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000072807",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000072807",
+      "division": "I",
+      "position_in_division": 12,
+      "position_in_xml": 12,
+      "xml_number": 12,
+      "xml_number_raw": "12",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 13",
+      "title_in_xml": "Løvens og Kong Tiderichs Kamp",
+      "firstline_in_xml": "Det vaar Mester Kong Tiderich",
+      "dgf_id": 9,
+      "dv_number": null,
+      "dgf_title": "Kong Diderik og Løven",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "G",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 132, introduction identifies Vedels Text (I, Nr. 13) as Opskr. G; page image checked; OCR misreads G as C.",
+          "page": 132
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 13",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 9
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 129,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Den konventionelle Vedel-reference i DgF afviger fra tekstens placering i Kalliopes XML; forbindelsen følger tekstens identitet, ikke positionsnummeret.",
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000020502",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000020502",
+      "division": "I",
+      "position_in_division": 13,
+      "position_in_xml": 13,
+      "xml_number": 12,
+      "xml_number_raw": "12",
+      "xml_number_occurrence": 2,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 12",
+      "title_in_xml": "Sterck Tiderich oc Olger Danske",
+      "firstline_in_xml": "Sterck Tiderich boer sig vdi Bern",
+      "dgf_id": 17,
+      "dv_number": null,
+      "dgf_title": "Kong Diderik og Holger Danske",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 17, heading B lists a. Svanings Haandskrift; b. Vedel I, Nr. 12."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 12",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 17,
+          "variant_reference_as_printed": "B"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 231,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Den konventionelle Vedel-reference i DgF afviger fra tekstens placering i Kalliopes XML; forbindelsen følger tekstens identitet, ikke positionsnummeret.",
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022806",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022806",
+      "division": "I",
+      "position_in_division": 14,
+      "position_in_xml": 14,
+      "xml_number": 13,
+      "xml_number_raw": "13",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 14",
+      "title_in_xml": "Burman oc Olger Danske",
+      "firstline_in_xml": "Burmand holder i Felden vd",
+      "dgf_id": 30,
+      "dv_number": null,
+      "dgf_title": "Holger Danske og Burmand",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "D",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 30, heading D. (Vedel, I, Nr. 14)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 14",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 30
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 384,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022801",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022801",
+      "division": "I",
+      "position_in_division": 15,
+      "position_in_xml": 15,
+      "xml_number": 14,
+      "xml_number_raw": "14",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 15",
+      "title_in_xml": "Bermerijss oc Orm Vnger Suend",
+      "firstline_in_xml": "Det vaar høye Bermerijss",
+      "dgf_id": 11,
+      "dv_number": null,
+      "dgf_title": "Orm Ungersvend og Bermer-Rise",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "D",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 159, introduction identifies Vedels Text as Opskr. D; distinguished from his second text I, 19.",
+          "page": 159
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "I 15",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 11
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 159,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022805",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022805",
+      "division": "I",
+      "position_in_division": 16,
+      "position_in_xml": 16,
+      "xml_number": 15,
+      "xml_number_raw": "15",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 16",
+      "title_in_xml": "Svend Vonued",
+      "firstline_in_xml": "Svend Vonued sider i Bure",
+      "dgf_id": 18,
+      "dv_number": null,
+      "dgf_title": "Svend Vonved",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "D",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 18, heading D. (Vedel, I, Nr. 16)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "I 16",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 18
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 235,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022804",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022804",
+      "division": "I",
+      "position_in_division": 17,
+      "position_in_xml": 17,
+      "xml_number": 16,
+      "xml_number_raw": "16",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 17",
+      "title_in_xml": "Siuard Snaren Suend",
+      "firstline_in_xml": "Siuard hand slog sin Stiffader ihiel",
+      "dgf_id": 2,
+      "dv_number": null,
+      "dgf_title": "Sivard Snarensvend",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 2, heading C. (Vedel, I, Nr. 17)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 17",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 2
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 7,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022802",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022802",
+      "division": "I",
+      "position_in_division": 18,
+      "position_in_xml": 18,
+      "xml_number": 17,
+      "xml_number_raw": "17",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 19",
+      "title_in_xml": "Berner Riss oc Orm Vnger Suend",
+      "firstline_in_xml": "Det vaar høyen Berner Riss",
+      "dgf_id": 11,
+      "dv_number": null,
+      "dgf_title": "Orm Ungersvend og Bermer-Rise",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 171, notes: C,b (Vedel,I,Nr.19), Berner Rjss oc Orm vnger Suend.",
+          "page": 171
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 19",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 11,
+          "variant_reference_as_printed": "C"
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 159,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Den konventionelle Vedel-reference i DgF afviger fra tekstens placering i Kalliopes XML; forbindelsen følger tekstens identitet, ikke positionsnummeret.",
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000022803",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000022803",
+      "division": "I",
+      "position_in_division": 19,
+      "position_in_xml": 19,
+      "xml_number": 18,
+      "xml_number_raw": "18",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 18",
+      "title_in_xml": "Mimmering Tandt",
+      "firstline_in_xml": "Mimmering vaar den mindste Mand",
+      "dgf_id": 14,
+      "dv_number": null,
+      "dgf_title": "Memering",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 18",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 14
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 214,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Den konventionelle Vedel-reference i DgF afviger fra tekstens placering i Kalliopes XML; forbindelsen følger tekstens identitet, ikke positionsnummeret.",
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000030201",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000030201",
+      "division": "I",
+      "position_in_division": 20,
+      "position_in_xml": 20,
+      "xml_number": 19,
+      "xml_number_raw": "19",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 20",
+      "title_in_xml": "Huitting Helfredssøn oc Isald Konning",
+      "firstline_in_xml": "Kongen raader for Borgen",
+      "dgf_id": 8,
+      "dv_number": null,
+      "dgf_title": "Kong Diderik i Birtingsland",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_witness_only",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 8, notes identify b as Vedel I, Nr. 20; no uppercase variant assigned here."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 20",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 8
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 123,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000030202",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000030202",
+      "division": "I",
+      "position_in_division": 21,
+      "position_in_xml": 21,
+      "xml_number": 20,
+      "xml_number_raw": "20",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 21",
+      "title_in_xml": "Liden Grimmer oc Kamper",
+      "firstline_in_xml": "Grimmer hand gaar paa Gulffuet",
+      "dgf_id": 26,
+      "dv_number": null,
+      "dgf_title": "Liden Grimmer og Hjelmer Kamp",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "d",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, p. 357, notes identify B,d as Vedel I, Nr. 21.",
+          "page": 357
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 21",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 26
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 352,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000030205",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000030205",
+      "division": "I",
+      "position_in_division": 22,
+      "position_in_xml": 22,
+      "xml_number": 21,
+      "xml_number_raw": "21",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 22",
+      "title_in_xml": "Tord aff Haffsgaard oc Tosse Greffue",
+      "firstline_in_xml": "Det vaar Tord aff Haffsgaard",
+      "dgf_id": 1,
+      "dv_number": null,
+      "dgf_title": "Tord af Havsgaard",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 1, heading B. (Vedel, I, Nr. 22)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 22",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 1
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 1,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000030203",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000030203",
+      "division": "I",
+      "position_in_division": 23,
+      "position_in_xml": 23,
+      "xml_number": 22,
+      "xml_number_raw": "22",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 23",
+      "title_in_xml": "Alff i Odderskiær",
+      "firstline_in_xml": "Alff hand boer i Odderskiær",
+      "dgf_id": 19,
+      "dv_number": null,
+      "dgf_title": "Angelfyr og Helmer Kamp",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "D",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 19, heading D. (Vedel, I, Nr. 23)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 23",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 19
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 250,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000030204",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000030204",
+      "division": "I",
+      "position_in_division": 24,
+      "position_in_xml": 24,
+      "xml_number": 23,
+      "xml_number_raw": "23",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 24",
+      "title_in_xml": "Suend Felding",
+      "firstline_in_xml": "Suend Felding hand sider paa Helsingborg",
+      "dgf_id": 31,
+      "dv_number": null,
+      "dgf_title": "Svend Felding",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 31, heading C. (Vedel, I, Nr. 24)."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "I 24",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 31
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 398,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000031102",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000031102",
+      "division": "I",
+      "position_in_division": 25,
+      "position_in_xml": 25,
+      "xml_number": 24,
+      "xml_number_raw": "24",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 25",
+      "title_in_xml": "Suend Felding fører Dronning Judte ind i Danmark",
+      "firstline_in_xml": "Der stunder ind til Danmarck",
+      "dgf_id": 32,
+      "dv_number": null,
+      "dgf_title": "Svend Felding og Dronning Jutte",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 32, introduction and notes identify Vedel I, Nr. 25 as B,b."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 25",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 32
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 411,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000031104",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000031104",
+      "division": "I",
+      "position_in_division": 26,
+      "position_in_xml": 26,
+      "xml_number": 25,
+      "xml_number_raw": "25\n    oc Aller hin stercke",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "I 26",
+      "title_in_xml": "Herr Ribolts Kamp med Dragen",
+      "firstline_in_xml": "Ieg seer saa mangt it Orlog Skib",
+      "dgf_id": 27,
+      "dv_number": null,
+      "dgf_title": "Rigen Rambolt og Aller hin stærke",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_i",
+          "basis": "DgF I, no. 27, heading B and notes identify Vedel I, Nr. 26 as B,b."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "I 26",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 27
+        },
+        {
+          "source": "dgf_i",
+          "locus": "Indhold af første Deel (PDF p. 5; visually verified)",
+          "article_start_page": 358,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kalliopes undertitler gentager nr. 12 og slutter første del ved 25. XML-nummer og DgF-henvisning er derfor bevaret særskilt."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000031101",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000031101",
+      "division": "II",
+      "position_in_division": 1,
+      "position_in_xml": 27,
+      "xml_number": 1,
+      "xml_number_raw": "1",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 1",
+      "title_in_xml": "Eline Bondens Hustru aff Villenskoff",
+      "firstline_in_xml": "Der ligger en Vold i Vester Haff",
+      "dgf_id": 52,
+      "dv_number": null,
+      "dgf_title": "Trolden og Bondens Hustru",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 1",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 52
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 142,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000031103",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000031103",
+      "division": "II",
+      "position_in_division": 2,
+      "position_in_xml": 28,
+      "xml_number": 2,
+      "xml_number_raw": "2",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 2",
+      "title_in_xml": "Germand Gladen Suend",
+      "firstline_in_xml": "Kongen oc vor vnge Dronning",
+      "dgf_id": 33,
+      "dv_number": null,
+      "dgf_title": "Germand Gladensvend",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 2",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 33
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 1,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000032703",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000032703",
+      "division": "II",
+      "position_in_division": 3,
+      "position_in_xml": 29,
+      "xml_number": 3,
+      "xml_number_raw": "3",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 3",
+      "title_in_xml": "Verner Raffn",
+      "firstline_in_xml": "Raffnen hand fløjer om Afften",
+      "dgf_id": 60,
+      "dv_number": null,
+      "dgf_title": "Valravnen",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 3",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 60
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 179,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000032704",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000032704",
+      "division": "II",
+      "position_in_division": 4,
+      "position_in_xml": 30,
+      "xml_number": 4,
+      "xml_number_raw": "4",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 4",
+      "title_in_xml": "Dalby Biørn",
+      "firstline_in_xml": "Der gaar en Biørn paa Dalby Hede",
+      "dgf_id": 64,
+      "dv_number": null,
+      "dgf_title": "Dalby-Bjørn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 4",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 64
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 206,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000032701",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000032701",
+      "division": "II",
+      "position_in_division": 5,
+      "position_in_xml": 31,
+      "xml_number": 5,
+      "xml_number_raw": "5",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 5",
+      "title_in_xml": "Hedebyes Giengangere",
+      "firstline_in_xml": "Jeg reed mig at quelde",
+      "dgf_id": 91,
+      "dv_number": null,
+      "dgf_title": "Hedebys Gjenganger",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 5",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 91
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 498,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000032702",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000032702",
+      "division": "II",
+      "position_in_division": 6,
+      "position_in_xml": 32,
+      "xml_number": 6,
+      "xml_number_raw": "6",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 6",
+      "title_in_xml": "Rosmer Haffmand",
+      "firstline_in_xml": "Der boer en Frue i Danmarck",
+      "dgf_id": 41,
+      "dv_number": null,
+      "dgf_title": "Rosmer",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "A",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_ii",
+          "basis": "DgF II, no. 41, introduction and headings identify Vedel II, Nr. 6 as Ab."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 6",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 41,
+          "variant_reference_as_printed": "A"
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 72,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042201",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042201",
+      "division": "II",
+      "position_in_division": 7,
+      "position_in_xml": 33,
+      "xml_number": 7,
+      "xml_number_raw": "7",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 7",
+      "title_in_xml": "Den Anden Vise om Rosmer Haffmand",
+      "firstline_in_xml": "Bvcke Beenoc Elffuer Steen",
+      "dgf_id": 41,
+      "dv_number": null,
+      "dgf_title": "Rosmer",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "C",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_ii",
+          "basis": "DgF II, no. 41, introduction and headings identify Vedel II, Nr. 7 as C."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 7",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 41,
+          "variant_reference_as_printed": "C"
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 72,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042207",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042207",
+      "division": "II",
+      "position_in_division": 8,
+      "position_in_xml": 34,
+      "xml_number": 8,
+      "xml_number_raw": "8",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 8",
+      "title_in_xml": "Den tredje Vise om Rosmer Haffmand",
+      "firstline_in_xml": "Islands Konning lader bygge it Skib",
+      "dgf_id": 41,
+      "dv_number": null,
+      "dgf_title": "Rosmer",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "B",
+      "dgf_witness": "b",
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_ii",
+          "basis": "DgF II, no. 41, introduction and headings identify Vedel II, Nr. 8 as Bb."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "main (printed I,8; source typo)",
+          "vedel_reference_as_recorded": "I 8",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 41,
+          "variant_reference_as_printed": "B",
+          "correction": "Trykfejl hos Kristensen: der skal stå II 8. DgF II, nr. 41, bekræfter henvisningen."
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 72,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Henvisningen I 8 ved DgF 41 B hos Kristensen er rettet til II 8 efter DgF II."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000042202",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042202",
+      "division": "II",
+      "position_in_division": 9,
+      "position_in_xml": 35,
+      "xml_number": 9,
+      "xml_number_raw": "9",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 9",
+      "title_in_xml": "Elver Høy",
+      "firstline_in_xml": "Ieg lagde mit Hoffuit til Eluer Høy",
+      "dgf_id": 46,
+      "dv_number": null,
+      "dgf_title": "Elvehøj",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 9",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 46
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 105,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042206",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042206",
+      "division": "II",
+      "position_in_division": 10,
+      "position_in_xml": 36,
+      "xml_number": 10,
+      "xml_number_raw": "10",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 10",
+      "title_in_xml": "Saa vinder den Suend sin Jomfru",
+      "firstline_in_xml": "Ieg tog øxen paa min Bag",
+      "dgf_id": 56,
+      "dv_number": null,
+      "dgf_title": "Jomfruen i Fugleham",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 10",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 56
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 158,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042203",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042203",
+      "division": "II",
+      "position_in_division": 11,
+      "position_in_xml": 37,
+      "xml_number": 11,
+      "xml_number_raw": "11",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 11",
+      "title_in_xml": "Greffuens Daatters aff Vendel",
+      "firstline_in_xml": "Ieg bleff født saa sped vdi Bur",
+      "dgf_id": 285,
+      "dv_number": null,
+      "dgf_title": "Grevens Datter af Vendel",
+      "dgf_relation": "ballad_type",
+      "type_verification": "scholarly_concordance",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 11",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 285
+        },
+        {
+          "source": "bm_catalogue",
+          "supports": "The catalogue explicitly identifies the Danish original as Vedel, Part ii, No. 11, and identifies its DgF counterpart as no. 285, Grevens datter af Vendel, vol. V, p. 374."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042204",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042204",
+      "division": "II",
+      "position_in_division": 12,
+      "position_in_xml": 38,
+      "xml_number": 12,
+      "xml_number_raw": "12",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 12",
+      "title_in_xml": "Erland Kongens Søn tager Eline Vnge Axeluolds Moder til Ecte",
+      "firstline_in_xml": "De Kongens Mend ride paa Volde",
+      "dgf_id": 293,
+      "dv_number": null,
+      "dgf_title": "Ung Axelvold",
+      "dgf_relation": "ballad_type",
+      "type_verification": "scholarly_concordance",
+      "dgf_variant": "D",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "reported_in_scholarship",
+      "variant_evidence": [
+        {
+          "source": "lex_literary_history",
+          "basis": "Den faglige fremstilling identificerer udtrykkeligt Vedels tekst som DgF 293 D; DgF-siden er ikke kontrolleret direkte."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 12",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 293
+        },
+        {
+          "source": "lex_literary_history",
+          "supports": "The article explicitly identifies Vedels Erland Kongens Søn tager Eline, vnge Axeluolds Moder til Ecte as DgF 293 D; it compares Vedels stanzas 8–9 with Svaning I."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000042205",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000042205",
+      "division": "II",
+      "position_in_division": 13,
+      "position_in_xml": 39,
+      "xml_number": 13,
+      "xml_number_raw": "13",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 13",
+      "title_in_xml": "Orm Vnger Suend",
+      "firstline_in_xml": "Det da vaar den gamle Greffue",
+      "dgf_id": 472,
+      "dv_number": null,
+      "dgf_title": null,
+      "dgf_relation": "ballad_type",
+      "type_verification": "scholarly_concordance",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 13",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 472
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050404",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050404",
+      "division": "II",
+      "position_in_division": 14,
+      "position_in_xml": 40,
+      "xml_number": 14,
+      "xml_number_raw": "14",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 14",
+      "title_in_xml": "S. Oluff Konning i Norge",
+      "firstline_in_xml": "Oluff Konning oc hans Broder",
+      "dgf_id": 50,
+      "dv_number": null,
+      "dgf_title": "Hellig-Olavs Væddefart",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "II 14",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 50
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 134,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050401",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050401",
+      "division": "II",
+      "position_in_division": 15,
+      "position_in_xml": 41,
+      "xml_number": 15,
+      "xml_number_raw": "15",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 15",
+      "title_in_xml": "En anden Vise om S. Oluff Konning i Norge",
+      "firstline_in_xml": "Det vaar Sant Oluff Konning saa bold",
+      "dgf_id": 51,
+      "dv_number": null,
+      "dgf_title": "Hellig-Olav og Troldene",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 15",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 51
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 140,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050405",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050405",
+      "division": "II",
+      "position_in_division": 16,
+      "position_in_xml": 42,
+      "xml_number": 16,
+      "xml_number_raw": "16",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 16",
+      "title_in_xml": "S. Knud Konning vdi Danmarck",
+      "firstline_in_xml": "Solen skinner saa klar om Dagen",
+      "dgf_id": null,
+      "dv_number": 38,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "II 16",
+          "registry_as_printed": "DV",
+          "number_as_printed": 38
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050406",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050406",
+      "division": "II",
+      "position_in_division": 17,
+      "position_in_xml": 43,
+      "xml_number": 17,
+      "xml_number_raw": "17",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 17",
+      "title_in_xml": "Sant Knud Hertug",
+      "firstline_in_xml": "Nu ville wi quæde om Hertug Knud",
+      "dgf_id": null,
+      "dv_number": 39,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "II 17",
+          "registry_as_printed": "DV",
+          "number_as_printed": 39
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050403",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050403",
+      "division": "II",
+      "position_in_division": 18,
+      "position_in_xml": 44,
+      "xml_number": 18,
+      "xml_number_raw": "18",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 18",
+      "title_in_xml": "Kong Erick Emune oc Sorte Plog",
+      "firstline_in_xml": "Aarle om Morgen Lercken hun sang",
+      "dgf_id": 116,
+      "dv_number": null,
+      "dgf_title": "Erik Emuns Drab",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 18",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 116
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 6,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000050402",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000050402",
+      "division": "II",
+      "position_in_division": 19,
+      "position_in_xml": 45,
+      "xml_number": 19,
+      "xml_number_raw": "19",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 19",
+      "title_in_xml": "Herr Tidmand",
+      "firstline_in_xml": "Aarle om Morgen det vaar Dag",
+      "dgf_id": 317,
+      "dv_number": null,
+      "dgf_title": "Bønderne dræber Hr. Tidemand",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 19",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 317
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 8,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061801",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061801",
+      "division": "II",
+      "position_in_division": 20,
+      "position_in_xml": 46,
+      "xml_number": 20,
+      "xml_number_raw": "20",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 20",
+      "title_in_xml": "Vnge Suercke, Konning vdi Sverig",
+      "firstline_in_xml": "Det vaar vnge Suercke",
+      "dgf_id": 136,
+      "dv_number": null,
+      "dgf_title": "Kong Sverker den unge",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 20",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 136
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 219,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061802",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061802",
+      "division": "II",
+      "position_in_division": 21,
+      "position_in_xml": 47,
+      "xml_number": 21,
+      "xml_number_raw": "21",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 21",
+      "title_in_xml": "En vnger Frøicken føris aff Danmarck til Suerig",
+      "firstline_in_xml": "Min Herre haffuer fest en Rosens Blomme",
+      "dgf_id": 137,
+      "dv_number": null,
+      "dgf_title": "Den danske Kongedatter i Sverrig",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 21",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 137
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 229,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061803",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061803",
+      "division": "II",
+      "position_in_division": 22,
+      "position_in_xml": 48,
+      "xml_number": 22,
+      "xml_number_raw": "22",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 22",
+      "title_in_xml": "Koning Valdemar Affferdiger sine Legater effter Dronning Dagmar",
+      "firstline_in_xml": "Koning Valdemar oc Herr Strange",
+      "dgf_id": 132,
+      "dv_number": null,
+      "dgf_title": "Dronning Dagmar og Junker Strange",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 22",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 132
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 188,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061804",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061804",
+      "division": "II",
+      "position_in_division": 23,
+      "position_in_xml": 49,
+      "xml_number": 23,
+      "xml_number_raw": "23",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 23",
+      "title_in_xml": "Dronning Dagmars Hiemferd til Danmarck",
+      "firstline_in_xml": "Det vaar Behemer lands Droning",
+      "dgf_id": 133,
+      "dv_number": null,
+      "dgf_title": "Dronning Dagmar i Danmark",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 23",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 133
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 201,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061805",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061805",
+      "division": "II",
+      "position_in_division": 24,
+      "position_in_xml": 50,
+      "xml_number": 24,
+      "xml_number_raw": "24",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 24",
+      "title_in_xml": "Droning Dagmar spaaes aff en Haffrue, at hun skal dø vdi Barnfødsel",
+      "firstline_in_xml": "Dan Koning hand lader en Haffrue gribe",
+      "dgf_id": 42,
+      "dv_number": null,
+      "dgf_title": "Havfruens Spaadom",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 24",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 42
+        },
+        {
+          "source": "dgf_ii",
+          "locus": "Indhold af 2den Deel, pp. III–IV",
+          "article_start_page": 89,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061806",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061806",
+      "division": "II",
+      "position_in_division": 25,
+      "position_in_xml": 51,
+      "xml_number": 25,
+      "xml_number_raw": "25",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 25",
+      "title_in_xml": "Droning Dagmars dødelige Affgang",
+      "firstline_in_xml": "Droning Dagmar ligger i Ribe siug",
+      "dgf_id": 135,
+      "dv_number": null,
+      "dgf_title": "Dronning Dagmars Død",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 25",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 135
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 207,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061807",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061807",
+      "division": "II",
+      "position_in_division": 26,
+      "position_in_xml": 52,
+      "xml_number": 26,
+      "xml_number_raw": "26",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 26",
+      "title_in_xml": "Droning Berngerd",
+      "firstline_in_xml": "Aarle om Morgenen langt før Dag",
+      "dgf_id": 139,
+      "dv_number": null,
+      "dgf_title": "Dronning Bengerd",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 26",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 139
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 277,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061809",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061809",
+      "division": "II",
+      "position_in_division": 27,
+      "position_in_xml": 53,
+      "xml_number": 27,
+      "xml_number_raw": "27",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 27",
+      "title_in_xml": "Koning Valdemars Fengsel",
+      "firstline_in_xml": "Ieg vil eder en Vise quede",
+      "dgf_id": 141,
+      "dv_number": null,
+      "dgf_title": "Kong Valdemar fangen",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 27",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 141
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 298,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061810",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061810",
+      "division": "II",
+      "position_in_division": 28,
+      "position_in_xml": 54,
+      "xml_number": 28,
+      "xml_number_raw": "28",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 28",
+      "title_in_xml": "S. Erick Koning vdi Danmarck",
+      "firstline_in_xml": "Som Cain begynte imod Broder sin",
+      "dgf_id": null,
+      "dv_number": 41,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 28",
+          "registry_as_printed": "DV",
+          "number_as_printed": 41
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061811",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061811",
+      "division": "II",
+      "position_in_division": 29,
+      "position_in_xml": 55,
+      "xml_number": 29,
+      "xml_number_raw": "29",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 29",
+      "title_in_xml": "Den første Vise om Marsk Stig Anderssøn",
+      "firstline_in_xml": "Marsk Stig Anderssøn vd aff Landet foer",
+      "dgf_id": 145,
+      "dv_number": null,
+      "dgf_title": "Marsk Stig",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "L",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_iii",
+          "page": 364,
+          "basis": "Variantoverskrift og Vedel-reference er visuelt kontrolleret på samme side."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main (29 ff.)",
+          "vedel_reference_as_recorded": "II 29",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 145
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 338,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000061812",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000061812",
+      "division": "II",
+      "position_in_division": 30,
+      "position_in_xml": 56,
+      "xml_number": 30,
+      "xml_number_raw": "30",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 30",
+      "title_in_xml": "Den anden Vise om Herr Marsk Stig",
+      "firstline_in_xml": "Marsk stig vogner om midie Nat",
+      "dgf_id": 145,
+      "dv_number": null,
+      "dgf_title": "Marsk Stig",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "M",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_iii",
+          "page": 367,
+          "basis": "Variantoverskrift og Vedel-reference er visuelt kontrolleret på samme side."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main (29 ff.)",
+          "vedel_reference_as_recorded": "II 30",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 145
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 338,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000072401",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000072401",
+      "division": "II",
+      "position_in_division": 31,
+      "position_in_xml": 57,
+      "xml_number": 31,
+      "xml_number_raw": "31",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 31",
+      "title_in_xml": "Den tredie Vise om Marsk Stig",
+      "firstline_in_xml": "De ere saa mange i Danmarck",
+      "dgf_id": 145,
+      "dv_number": null,
+      "dgf_title": "Marsk Stig",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "N",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_iii",
+          "page": 369,
+          "basis": "Variantoverskrift og Vedel-reference er visuelt kontrolleret på samme side."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "note 4; main (29 ff.)",
+          "vedel_reference_as_recorded": "II 31",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 145,
+          "variant_reference_as_printed": "N"
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 338,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000072402",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000072402",
+      "division": "II",
+      "position_in_division": 32,
+      "position_in_xml": 58,
+      "xml_number": 32,
+      "xml_number_raw": "32",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 32",
+      "title_in_xml": "Den fierde Vise om Marsk Stig",
+      "firstline_in_xml": "De vaare vel Siu oc Siusinds Tiue",
+      "dgf_id": 145,
+      "dv_number": null,
+      "dgf_title": "Marsk Stig",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "O",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_iii",
+          "page": 372,
+          "basis": "Variantoverskrift og Vedel-reference er visuelt kontrolleret på samme side."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main (29 ff.)",
+          "vedel_reference_as_recorded": "II 32",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 145
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 338,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000072403",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000072403",
+      "division": "II",
+      "position_in_division": 33,
+      "position_in_xml": 59,
+      "xml_number": 33,
+      "xml_number_raw": "33",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 33",
+      "title_in_xml": "Den femte Vise om Marsk Stigs Døtre",
+      "firstline_in_xml": "Marsk Stig haffuer de Døttre tho",
+      "dgf_id": 146,
+      "dv_number": null,
+      "dgf_title": "Marsk Stigs Døttre",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 33",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 146
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 385,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000072404",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000072404",
+      "division": "II",
+      "position_in_division": 34,
+      "position_in_xml": 60,
+      "xml_number": 34,
+      "xml_number_raw": "34",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 34",
+      "title_in_xml": "Den siette Vise om Marsk Stig",
+      "firstline_in_xml": "Oc der gaar Dantz paa Riber Gade",
+      "dgf_id": 147,
+      "dv_number": null,
+      "dgf_title": "Indtagelsen af Riberhus",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 34",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 147
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 404,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020408",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020408",
+      "division": "II",
+      "position_in_division": 35,
+      "position_in_xml": 61,
+      "xml_number": 35,
+      "xml_number_raw": "Huorledis Ranild bliffuer udslegger met sin\n    Festemø Allgreffuens Daatter.\n    35",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 35",
+      "title_in_xml": "Den siuende Vise om Ranild Johnssøn",
+      "firstline_in_xml": "Ranild beder legge Sadel paa Hest",
+      "dgf_id": 148,
+      "dv_number": null,
+      "dgf_title": "Rane Jonsens Giftermaal",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 35",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 148
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 409,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020409",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020409",
+      "division": "II",
+      "position_in_division": 36,
+      "position_in_xml": 62,
+      "xml_number": 36,
+      "xml_number_raw": "Huorledis Ranild Jonssøn Steylis for Roskilde\n    36",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 36",
+      "title_in_xml": "Den Ottende Vise",
+      "firstline_in_xml": "Det springer nu saa vide om Land",
+      "dgf_id": 149,
+      "dv_number": null,
+      "dgf_title": "Ranild Jonsens Endeligt",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4",
+          "vedel_reference_as_recorded": "II 36",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 149
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 418,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020407",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020407",
+      "division": "II",
+      "position_in_division": 37,
+      "position_in_xml": 63,
+      "xml_number": 37,
+      "xml_number_raw": "37",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 37",
+      "title_in_xml": "Droning Ingeborg Erick Mendueds",
+      "firstline_in_xml": "Det vaar Herr Koning Erick",
+      "dgf_id": 153,
+      "dv_number": null,
+      "dgf_title": "Erik Menveds Bryllup",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 37",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 153
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 454,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020708",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020708",
+      "division": "II",
+      "position_in_division": 38,
+      "position_in_xml": 64,
+      "xml_number": null,
+      "xml_number_raw": "",
+      "xml_number_occurrence": null,
+      "xml_number_status": "inferred_from_order",
+      "reference_in_dgf_and_scholarship": "II 38",
+      "title_in_xml": "Koning Ericks Tog ind vdi Mekelborger Land",
+      "firstline_in_xml": "Kongen lader biude offuer alt sit Land",
+      "dgf_id": null,
+      "dv_number": 42,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 38",
+          "registry_as_printed": "DV",
+          "number_as_printed": 42
+        }
+      ],
+      "notes": [
+        "XML mangler en numerisk undertitel. II 38 er dokumenteret i konkordansen og stemmer med placeringen mellem II 37 og II 39; feltet xml_number er derfor null."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000092103",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000092103",
+      "division": "II",
+      "position_in_division": 39,
+      "position_in_xml": 65,
+      "xml_number": 39,
+      "xml_number_raw": "39",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 39",
+      "title_in_xml": "Kong Byrge i Suerige lader tuende sine Brødre suelte ihiel vdi Fengsel",
+      "firstline_in_xml": "Frue Ingeborg haffuer de Brødre Tre",
+      "dgf_id": 154,
+      "dv_number": null,
+      "dgf_title": "Kong Birger og hans Brødre",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 39",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 154
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 458,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000092101",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000092101",
+      "division": "II",
+      "position_in_division": 40,
+      "position_in_xml": 66,
+      "xml_number": 40,
+      "xml_number_raw": "40",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 40",
+      "title_in_xml": "Kong Hogen Hogenssøns dødelig affgang vdi Kirckeuog paa Orckenø",
+      "firstline_in_xml": "Det er nu skeed vdi vor tid",
+      "dgf_id": 142,
+      "dv_number": null,
+      "dgf_title": "Kong Hakon Hakonsøns Død",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 40",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 142
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 308,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000092102",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000092102",
+      "division": "II",
+      "position_in_division": 41,
+      "position_in_xml": 67,
+      "xml_number": 41,
+      "xml_number_raw": "41",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 41",
+      "title_in_xml": "Greffue Gert aff Holsten bliffuer Slagen",
+      "firstline_in_xml": "Greffuen drog i Danmarck ind",
+      "dgf_id": 156,
+      "dv_number": null,
+      "dgf_title": "Niels Ebbesen",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": "F",
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "primary_edition_checked",
+      "variant_evidence": [
+        {
+          "source": "dgf_iii",
+          "page": 530,
+          "basis": "Variantoverskrift og Vedel-reference er visuelt kontrolleret på samme side."
+        },
+        {
+          "source": "dgf_iii",
+          "page": 495,
+          "basis": "Indledningen identificerer udtrykkeligt Vedels II 41 som opskrift F."
+        }
+      ],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 4 (printed 186; suspected source typo for 156)",
+          "vedel_reference_as_recorded": "II 41",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 186,
+          "variant_reference_as_printed": "EF",
+          "correction": "186 er en trykfejl for 156. Den trykte Vedel-tekst står som 156 F i DgF III, s. 530; E er ikke den trykte Vedel-teksts variantbetegnelse."
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 476,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": [
+        "Kristensens henvisning 186 EF må ikke importeres: korrekt type er DgF 156, og den trykte Vedel-tekst er variant F."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000110901",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110901",
+      "division": "II",
+      "position_in_division": 42,
+      "position_in_xml": 68,
+      "xml_number": 42,
+      "xml_number_raw": "42\n    Kongelig Leide",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 42",
+      "title_in_xml": "Herr Bugge bliffuer slagen imod",
+      "firstline_in_xml": "Her Bugge hand bygger op Hald met ære",
+      "dgf_id": 158,
+      "dv_number": null,
+      "dgf_title": "Herr Bugges Død",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 42",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 158
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 551,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110902",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110902",
+      "division": "II",
+      "position_in_division": 43,
+      "position_in_xml": 69,
+      "xml_number": 43,
+      "xml_number_raw": "43",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 43",
+      "title_in_xml": "Kongens Søn aff Engeland",
+      "firstline_in_xml": "Kongens Søn aff Engeland",
+      "dgf_id": 157,
+      "dv_number": null,
+      "dgf_title": "Kongens Søn af Engeland",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 43",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 157
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 542,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110903",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110903",
+      "division": "II",
+      "position_in_division": 44,
+      "position_in_xml": 70,
+      "xml_number": 44,
+      "xml_number_raw": "44",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 44",
+      "title_in_xml": "Droning Margrete Valdemars Daatter",
+      "firstline_in_xml": "En standende Strid vdi Suerige",
+      "dgf_id": 159,
+      "dv_number": null,
+      "dgf_title": "Dronning Margrete",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 44",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 159
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 566,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110904",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110904",
+      "division": "II",
+      "position_in_division": 45,
+      "position_in_xml": 71,
+      "xml_number": 45,
+      "xml_number_raw": "45",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 45",
+      "title_in_xml": "Koning Christofer nedlegger de oprøriske Bønder vdi Nørre Jutland",
+      "firstline_in_xml": "Hertugen vdaff Beier Land",
+      "dgf_id": 162,
+      "dv_number": null,
+      "dgf_title": "Kong Christoffer og Henrik Tagesøn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176–177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 45",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 162
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 601,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110905",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110905",
+      "division": "II",
+      "position_in_division": 46,
+      "position_in_xml": 72,
+      "xml_number": 46,
+      "xml_number_raw": "46\n    bliffuer Herr Iffuer Axelssøn vred for sin Wstadighed",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 46",
+      "title_in_xml": "Koning Christian den Første",
+      "firstline_in_xml": "Det vaar Herr Iffuer Axelssøn",
+      "dgf_id": 163,
+      "dv_number": null,
+      "dgf_title": "Iver Axelsøn Thott",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 46",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 163
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 606,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110906",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110906",
+      "division": "II",
+      "position_in_division": 47,
+      "position_in_xml": 73,
+      "xml_number": 47,
+      "xml_number_raw": "Chørførstens Hertug Ernstis Daatter aff Saxen\n    47",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 47",
+      "title_in_xml": "Koning Hans Fester Frøicken Kirstine",
+      "firstline_in_xml": "Koning Hans hand sider paa Kiøbenhaffn",
+      "dgf_id": 166,
+      "dv_number": null,
+      "dgf_title": "Kong Hanses Bryllup",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 47",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 166
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 616,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110907",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110907",
+      "division": "II",
+      "position_in_division": 48,
+      "position_in_xml": 74,
+      "xml_number": 48,
+      "xml_number_raw": "oc mister it stort antal Krigsfolck\n    48",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 48",
+      "title_in_xml": "Koning Hans drager ind i Dytmersk",
+      "firstline_in_xml": "De Fule haffuer faaet saa vnderligt it Raad",
+      "dgf_id": 170,
+      "dv_number": null,
+      "dgf_title": "Nederlaget i Ditmarsken",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 48",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 170
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 651,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110908",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110908",
+      "division": "II",
+      "position_in_division": 49,
+      "position_in_xml": 75,
+      "xml_number": 49,
+      "xml_number_raw": "49",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 49",
+      "title_in_xml": "Kong Christian den Fangen",
+      "firstline_in_xml": "Chrjste Gud ieg vil dig ære",
+      "dgf_id": null,
+      "dv_number": 6,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 49",
+          "registry_as_printed": "DV",
+          "number_as_printed": 6
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110909",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110909",
+      "division": "II",
+      "position_in_division": 50,
+      "position_in_xml": 76,
+      "xml_number": 50,
+      "xml_number_raw": "50\n    Effter Kong Christian II til Koning vdi Danmarck.",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 50",
+      "title_in_xml": "Koning Frederich den Første Anammes",
+      "firstline_in_xml": "Alle smaa Fule i Skoffuen ere",
+      "dgf_id": 173,
+      "dv_number": null,
+      "dgf_title": "Christian den anden og Adelen",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "II 50",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 173
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 667,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110910",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110910",
+      "division": "II",
+      "position_in_division": 51,
+      "position_in_xml": 77,
+      "xml_number": 51,
+      "xml_number_raw": "Velies Kong vdi Danmarck, oc fordriffuer met stor Lycke,\n    Greffue Christofer aff Oldenborg, met sine Anhengere.\n    51",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 51",
+      "title_in_xml": "Koning Christian III",
+      "firstline_in_xml": "All Øffrigheds Vold at være",
+      "dgf_id": null,
+      "dv_number": 11,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 51",
+          "registry_as_printed": "DV",
+          "number_as_printed": 11
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110911a",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110911a",
+      "division": "II",
+      "position_in_division": 52,
+      "position_in_xml": 78,
+      "xml_number": 52,
+      "xml_number_raw": "52",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 52",
+      "title_in_xml": "Koning Christians III Christelig Affgang aff dene Verden",
+      "firstline_in_xml": "Wi kunde formercke baade Aarle oc silde",
+      "dgf_id": null,
+      "dv_number": 15,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 52",
+          "registry_as_printed": "DV",
+          "number_as_printed": 15
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110911",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110911",
+      "division": "II",
+      "position_in_division": 53,
+      "position_in_xml": 79,
+      "xml_number": 53,
+      "xml_number_raw": "53\n    Met sine Farbrødre tuinger de wlydige Dytmerske Vnder sig met Krigsmact",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 53",
+      "title_in_xml": "Koning Frederich II",
+      "firstline_in_xml": "Vdi an Vol an vdi Guds Naffn",
+      "dgf_id": null,
+      "dv_number": 19,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "II 53",
+          "registry_as_printed": "DV",
+          "number_as_printed": 19
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2000110912",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110912",
+      "division": "II",
+      "position_in_division": 54,
+      "position_in_xml": 80,
+      "xml_number": 54,
+      "xml_number_raw": "Som Konning Frederich II. beholt imod de Suenske\n    den 20. Octobris Ano Dni 1565.\n    54",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 54",
+      "title_in_xml": "Om det merckelige Falckenbergs Slag",
+      "firstline_in_xml": "Vel er det sande i Lesten staar",
+      "dgf_id": null,
+      "dv_number": 24,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented_dgf_exclusion_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "dgf_iii",
+          "pages": "V–VI",
+          "supports": "Grundtvig nævner Falkenberg-Slaget, Vedel II 54, udtrykkeligt blandt de krønikeviser, han ikke optager i DgF."
+        },
+        {
+          "source": "lundgreen_nielsen_2001",
+          "page": 182,
+          "supports": "Identificerer Falkenberg-visen som Danske Viser 1530–1630 nr. 24 og henviser til bind IV, s. 61."
+        }
+      ],
+      "notes": [
+        "DV 24 er et nummer i Danske Viser, ikke et DgF-nummer."
+      ]
+    },
+    {
+      "kalliope_id": "vedel2000110913",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2000110913",
+      "division": "II",
+      "position_in_division": 55,
+      "position_in_xml": 81,
+      "xml_number": 55,
+      "xml_number_raw": "Vduald Kong til Danmarck oc Norge.\n    Beklager sin Herre Faders Affgang, oc fortrøster sig\n    paa Gud effter som hans Sprog og Symbolum liuder:\n    Pietas Regna Firmat.\n    55",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "II 55",
+      "title_in_xml": "Koning Christian IIII",
+      "firstline_in_xml": "Christe Gud oc mand ieg maa dig klage",
+      "dgf_id": null,
+      "dv_number": 30,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "II 55",
+          "registry_as_printed": "DV",
+          "number_as_printed": 30
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010204",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010204",
+      "division": "III",
+      "position_in_division": 1,
+      "position_in_xml": 82,
+      "xml_number": 1,
+      "xml_number_raw": "1",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 1",
+      "title_in_xml": "Spanie Land oc Myklegaard etc.",
+      "firstline_in_xml": "Spanie Land oc Myklegaard",
+      "dgf_id": 479,
+      "dv_number": null,
+      "dgf_title": null,
+      "dgf_relation": "ballad_type",
+      "type_verification": "scholarly_concordance",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "main",
+          "vedel_reference_as_recorded": "III 1",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 479
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010203",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010203",
+      "division": "III",
+      "position_in_division": 2,
+      "position_in_xml": 83,
+      "xml_number": 2,
+      "xml_number_raw": "2",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 2",
+      "title_in_xml": "Herr Jon Rimaardssøns Scrifftemaal",
+      "firstline_in_xml": "Snecken hun ligger paa Lande",
+      "dgf_id": 375,
+      "dv_number": null,
+      "dgf_title": "Jon Remorsøns Død paa Havet",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 2",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 375
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 373,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010201",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010201",
+      "division": "III",
+      "position_in_division": 3,
+      "position_in_xml": 84,
+      "xml_number": 3,
+      "xml_number_raw": "3",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 3",
+      "title_in_xml": "Liden Danued oc Vnge Suend Trøst",
+      "firstline_in_xml": "Huad skal ieg i Danmarck",
+      "dgf_id": 377,
+      "dv_number": null,
+      "dgf_title": "Danneved og Svend Trøst",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 3",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 377
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 409,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010202",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010202",
+      "division": "III",
+      "position_in_division": 4,
+      "position_in_xml": 85,
+      "xml_number": 4,
+      "xml_number_raw": "4",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 4",
+      "title_in_xml": "Palle, Baar oc Liden, Tre Brødre Dræve Huer Anden",
+      "firstline_in_xml": "Liden hand rider til Tinge",
+      "dgf_id": 330,
+      "dv_number": null,
+      "dgf_title": "Palle, Baard og Liden",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 4",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 330
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 63,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020701",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020701",
+      "division": "III",
+      "position_in_division": 5,
+      "position_in_xml": 86,
+      "xml_number": 5,
+      "xml_number_raw": "5",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 5",
+      "title_in_xml": "Nilaus Baggissøn oc brune Herr Erick",
+      "firstline_in_xml": "Det vaar Nilaus Baggissøn",
+      "dgf_id": 331,
+      "dv_number": null,
+      "dgf_title": "Brune-Erik og Nilaus Buggesøn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 5",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 331
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 64,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020702",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020702",
+      "division": "III",
+      "position_in_division": 6,
+      "position_in_xml": 87,
+      "xml_number": 6,
+      "xml_number_raw": "6",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 6",
+      "title_in_xml": "Stolt Signild hielper sin Broder aff Døds Nød",
+      "firstline_in_xml": "Stolte Signild lader brygge oc blande Vjn",
+      "dgf_id": 185,
+      "dv_number": null,
+      "dgf_title": "Stolt Signild",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "III 6",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 185
+        },
+        {
+          "source": "dgf_iv",
+          "locus": "Indhold af fjerde Del",
+          "article_start_page": 75,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020703",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020703",
+      "division": "III",
+      "position_in_division": 7,
+      "position_in_xml": 88,
+      "xml_number": 7,
+      "xml_number_raw": "7",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 7",
+      "title_in_xml": "Søster spurde hun anden etc",
+      "firstline_in_xml": "Søster spurde hun anden",
+      "dgf_id": 193,
+      "dv_number": null,
+      "dgf_title": "Døttre hævne Fader",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "III 7",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 193
+        },
+        {
+          "source": "dgf_iv",
+          "locus": "Indhold af fjerde Del",
+          "article_start_page": 114,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020704",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020704",
+      "division": "III",
+      "position_in_division": 8,
+      "position_in_xml": 89,
+      "xml_number": 8,
+      "xml_number_raw": "8",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 8",
+      "title_in_xml": "Daatter spurde hun Moder",
+      "firstline_in_xml": "Daatter spurde hun Moder",
+      "dgf_id": 186,
+      "dv_number": null,
+      "dgf_title": "Skjoldmøen",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 8",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 186
+        },
+        {
+          "source": "dgf_iv",
+          "locus": "Indhold af fjerde Del",
+          "article_start_page": 77,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020707",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020707",
+      "division": "III",
+      "position_in_division": 9,
+      "position_in_xml": 90,
+      "xml_number": 9,
+      "xml_number_raw": "slaar Herr Suend Graasuend ihiel,\n    oc heffner sin Faders Død.\n    9",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 9",
+      "title_in_xml": "Herr Thule Vognssøn met sine Brødre",
+      "firstline_in_xml": "I Lunde Kircke der yppis en Steffn",
+      "dgf_id": 143,
+      "dv_number": null,
+      "dgf_title": "Tule Vognsøn og Svend Graa",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "III 9",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 143
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 313,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020706",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020706",
+      "division": "III",
+      "position_in_division": 10,
+      "position_in_xml": 91,
+      "xml_number": 10,
+      "xml_number_raw": "10",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 10",
+      "title_in_xml": "Ieg stod faar min Herris Bord",
+      "firstline_in_xml": "Oc ieg stod faar min Herris Bord",
+      "dgf_id": 318,
+      "dv_number": null,
+      "dgf_title": "Bueskytte som Blodhævner",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 10",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 318
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 10,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020705",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020705",
+      "division": "III",
+      "position_in_division": 11,
+      "position_in_xml": 92,
+      "xml_number": 11,
+      "xml_number_raw": "met Liste fra Frue Ingeborg\n    11",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 11",
+      "title_in_xml": "Herr Vernder vndkommer aff Lindholms Huss",
+      "firstline_in_xml": "Paa Lindholms Huss",
+      "dgf_id": 383,
+      "dv_number": null,
+      "dgf_title": "Verner kommer af Fangetaarn",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "III 11",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 383
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 463,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010205",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010205",
+      "division": "III",
+      "position_in_division": 12,
+      "position_in_xml": 93,
+      "xml_number": 12,
+      "xml_number_raw": "12",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 12",
+      "title_in_xml": "Oluff Strangissøn oc Vnge Haffburd",
+      "firstline_in_xml": "Det vaar Oluff Strangissøn",
+      "dgf_id": 329,
+      "dv_number": null,
+      "dgf_title": "Oluf Strangesøns Dystridt",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 12",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 329
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 55,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010206",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010206",
+      "division": "III",
+      "position_in_division": 13,
+      "position_in_xml": 94,
+      "xml_number": 13,
+      "xml_number_raw": "13",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 13",
+      "title_in_xml": "Herr Offue Bliffuer Slagen Aff Herr Torkild Ved Ydsted I Skaane",
+      "firstline_in_xml": "Herr Offue hand vogner om Midienat",
+      "dgf_id": 316,
+      "dv_number": null,
+      "dgf_title": "Den skaanske Biørn fældet",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 13",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 316
+        },
+        {
+          "source": "dgf_vi",
+          "locus": "Indhold af sjette Del",
+          "article_start_page": 1,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001010207",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001010207",
+      "division": "III",
+      "position_in_division": 14,
+      "position_in_xml": 95,
+      "xml_number": 14,
+      "xml_number_raw": "14",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 14",
+      "title_in_xml": "Minder Herr Alff, Greffue Aff Tunsbierg Steilet For Helsingborg",
+      "firstline_in_xml": "Herr Alff hand er en ædeling",
+      "dgf_id": 150,
+      "dv_number": null,
+      "dgf_title": "Mindre-Alfs Vikingstog",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "III 14",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 150
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 432,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020404",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020404",
+      "division": "III",
+      "position_in_division": 15,
+      "position_in_xml": 96,
+      "xml_number": 15,
+      "xml_number_raw": "Gruffue vdi Tunsberg\n    15",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 15",
+      "title_in_xml": "Den anden Vise om Minder Herr Alff",
+      "firstline_in_xml": "Alff hand er i Norge Land fød",
+      "dgf_id": 151,
+      "dv_number": null,
+      "dgf_title": "Mindre-Alfs Endeligt",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 15",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 151
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 435,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020405",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020405",
+      "division": "III",
+      "position_in_division": 16,
+      "position_in_xml": 97,
+      "xml_number": 16,
+      "xml_number_raw": "16",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 16",
+      "title_in_xml": "De Røffuere ligge for Nordens Skoff",
+      "firstline_in_xml": "De Røffuere ligge for norden Skoff",
+      "dgf_id": 152,
+      "dv_number": null,
+      "dgf_title": "Røverne for norden Skov",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 16",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 152
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 439,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020406",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020406",
+      "division": "III",
+      "position_in_division": 17,
+      "position_in_xml": 98,
+      "xml_number": 17,
+      "xml_number_raw": "For Bondens Hustru hand voldtog\n    17",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 17",
+      "title_in_xml": "Herr Tidmand bliffuer halshuggen",
+      "firstline_in_xml": "De Hoffmend side i Roskilde By",
+      "dgf_id": 314,
+      "dv_number": null,
+      "dgf_title": null,
+      "dgf_relation": "ballad_type",
+      "type_verification": "scholarly_concordance",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "177",
+          "locus": "main",
+          "vedel_reference_as_recorded": "III 17",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 314
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020401",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020401",
+      "division": "III",
+      "position_in_division": 18,
+      "position_in_xml": 99,
+      "xml_number": 18,
+      "xml_number_raw": "til Stockholm\n    18",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 18",
+      "title_in_xml": "Erick Pyckessøn bliffuer halshuggen",
+      "firstline_in_xml": "De Bønder de klage dem op paa land",
+      "dgf_id": 161,
+      "dv_number": null,
+      "dgf_title": "Erik Puke",
+      "dgf_relation": "ballad_type",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_determined",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3",
+          "vedel_reference_as_recorded": "III 18",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 161
+        },
+        {
+          "source": "dgf_iii",
+          "locus": "Indhold af tredje Del, pp. III–IV",
+          "article_start_page": 596,
+          "supports": "DgF-udgavens indholdsfortegnelse henviser udtrykkeligt fra denne visetype til den anførte Vedel-reference."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020402",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020402",
+      "division": "III",
+      "position_in_division": 19,
+      "position_in_xml": 100,
+      "xml_number": 19,
+      "xml_number_raw": "19",
+      "xml_number_occurrence": 1,
+      "xml_number_status": "explicit_xml_subtitle",
+      "reference_in_dgf_and_scholarship": "III 19",
+      "title_in_xml": "Hans Schriffuer hand Tiener etc.",
+      "firstline_in_xml": "Hans Scriffuer hand tiener i Kongens Gaard",
+      "dgf_id": null,
+      "dv_number": 2,
+      "dgf_title": null,
+      "dgf_relation": null,
+      "type_verification": "other_catalogue_documented",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": null,
+      "variant_verification": "not_applicable_no_dgf_assigned",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 1",
+          "vedel_reference_as_recorded": "III 19",
+          "registry_as_printed": "DV",
+          "number_as_printed": 2
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kalliope_id": "vedel2001020403",
+      "kalliope_url": "https://kalliope.org/da/text/vedel2001020403",
+      "division": "III",
+      "position_in_division": 20,
+      "position_in_xml": 101,
+      "xml_number": null,
+      "xml_number_raw": "",
+      "xml_number_occurrence": null,
+      "xml_number_status": "unnumbered",
+      "reference_in_dgf_and_scholarship": "III 19B",
+      "title_in_xml": "Det springer nu saa vide om Land",
+      "firstline_in_xml": "Oc det springer nu saa vide om Land",
+      "dgf_id": 149,
+      "dv_number": null,
+      "dgf_title": "Ranild Jonsens Endeligt",
+      "dgf_relation": "travesty_of_ballad",
+      "type_verification": "primary_edition_checked",
+      "dgf_variant": null,
+      "dgf_witness": null,
+      "dgf_appendix": "c",
+      "variant_verification": "primary_appendix_checked",
+      "variant_evidence": [],
+      "evidence": [
+        {
+          "source": "kristensen_1937",
+          "pages": "176",
+          "locus": "note 3 (tillæg)",
+          "vedel_reference_as_recorded": "III 19B",
+          "registry_as_printed": "DgF",
+          "number_as_printed": 149
+        },
+        {
+          "source": "dgf_iii",
+          "pages": "418–419, 429",
+          "supports": "Indledning og tillæg beskriver byvisen udtrykkeligt som en travesti over Ranild-visen og omtaler Vedels bearbejdelse."
+        },
+        {
+          "source": "dgf_iii",
+          "pages": "431–432",
+          "supports": "Vedels tekst er trykt som tillæg c til nr. 149, med kildehenvisning til Hundredvisebogen, Hhiij verso, og samme incipit."
+        }
+      ],
+      "notes": [
+        "Unummereret i XML. III 19B er Kristensens lokator for dette tillæg; B er ikke en DgF-variant.",
+        "Tillæg c med lille bogstav er ikke den almindelige DgF 149 C. dgf_variant og dgf_witness er derfor null.",
+        "Tilknytning til type 149 følger issue #2168s anvendelse af dgf-id også på dokumenterede litterære bearbejdelser."
+      ]
+    }
+  ],
+  "additional_original_texts_absent_from_xml": [
+    {
+      "title_or_incipit": "Clericali & Regali turba",
+      "next_line": "Gaude Hafnia",
+      "language": "la",
+      "description": "Latinsk byrim; det andet afsluttende tillæg uden for hovednummereringen.",
+      "attribution": "Tilskrevet Morten Børup i Vedels trykte indledning.",
+      "kalliope_id": null,
+      "dgf_id": null,
+      "dv_number": null,
+      "catalogue_status": "no_number_assigned_in_this_concordance",
+      "evidence": [
+        {
+          "source": "vedel_1619",
+          "pdf_page_one_based": 546,
+          "supports": "Registret opregner to bytillæg efter III 19: det danske Det springer nu saa vide om Land og det latinske Clericali & Regali turba."
+        },
+        {
+          "source": "vedel_1619",
+          "pdf_page_one_based": 539,
+          "supports": "Indledningen tilskriver latindigtet Doctor Morten Børup; incipit og den følgende linje kan læses i trykket."
+        },
+        {
+          "source": "vedel_1619",
+          "pdf_page_one_based": 542,
+          "supports": "Latindigtet slutter Maria sed in omnibus."
+        },
+        {
+          "source": "henningsen_1959",
+          "page": 59,
+          "supports": "Kollationen af 1591-udgaven anfører samme slutlinje på Hh6r. Sammenholdt med det tidlige optryk identificerer det latintillægget i originalen."
+        },
+        {
+          "source": "kalliope_xml",
+          "supports": "Ingen selvstændig tekstpost for dette latinske tillæg i de 101 gennemgåede poster."
+        }
+      ],
+      "note": "Denne post er ikke medregnet i de 101 eksisterende Kalliope-tekster og har ikke fået et opdigtet tekst-ID."
+    }
+  ],
+  "open_items": [
+    {
+      "reference": "I 1",
+      "kalliope_id": "vedel1999123001",
+      "question": "Intet DgF- eller DV-nummer identificeret for Danske Kongers Nafn oc Tal; hold nummerfelterne tomme."
+    },
+    {
+      "reference": [
+        "II 11",
+        "II 12",
+        "II 13",
+        "III 1",
+        "III 17"
+      ],
+      "question": "Typerne er dokumenteret i faglitteraturen, men de relevante DgF-sider er ikke kontrolleret direkte i denne gennemgang."
+    },
+    {
+      "reference": "variantbetegnelser",
+      "question": "Filen medtager dokumenterede betegnelser, men dækker ikke alle 88 DgF-forbindelsers mulige variant-/vidnebetegnelser."
+    }
+  ]
+}

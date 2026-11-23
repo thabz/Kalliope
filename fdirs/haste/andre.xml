@@ -13,8 +13,17 @@
     <written>1796-11-07</written>
   </dates>
   <notes>
-    <note>Indtastet af Margit Ammentorp fra Sophie Thalbitzer: <i>Grandmamas Bekiendelser</i>, red. Julius Clausen og P. Fr. Rist, Gyldendalske Boghandel, Nordisk Forlag, København, 1906,</note>
+    <note editorial="true" type="credits">Indtastet af Margit Ammentorp.</note>
   </notes>
+  <source>
+    <title>Grandmamas Bekiendelser</title>
+    <author>Sophie Thalbitzer</author>
+    <editor>Julius Clausen</editor>
+    <editor>P. Fr. Rist</editor>
+    <publisher>Gyldendalske Boghandel, Nordisk Forlag</publisher>
+    <place>København</place>
+    <year>1906</year>
+  </source>
   <quality>kilde</quality>
 </head>
 <body>
@@ -43,7 +52,7 @@ Jeg var stolt, fordi jeg kunne fatte,
 Hvad vi hver, som hyldte dig, forstod:
 Alt dit Vid, din Yndes rige Skatte,
 og fordi jeg føl'de, Du var god.
-Og naar nu jeg hører af Petrine,<note>skal være Catrine</note>
+Og naar nu jeg hører af Petrine,<note editorial="true">skal være Catrine</note>
 at Du har en blid retskaffen Mand,
 at Du smiler med en Engels Mine
 til dit skjønne kald i Moderstand: -

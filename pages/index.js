@@ -55,9 +55,8 @@ const TodaysEvents = ({ events }) => {
     .filter((item) => item.type === 'image' && item.src != null)
     .map((item, i) => {
       const picture = {
-        src: item.src || '',
+        ...item,
         lang: item.content_lang,
-        content_html: item.content_html,
       };
       const html = (
         <div className="picture-item">

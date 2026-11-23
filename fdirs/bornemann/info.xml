@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bornemann" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Mathias Hastrup</firstname>
+    <lastname>Bornemann</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1776-09-27</date>
+      <place>Brøndum i Viborg Stift</place>
+    </born>
+    <dead>
+      <date>1840-10-29</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
