@@ -4,7 +4,7 @@
   <title>Poetiske Skrifter</title>
   <year>1805</year>
   <notes>
-    <note>Side 97–100 i anden del mangler i Det Kgl. Biblioteks skanning. <a href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf">↬</a></note>
+    <note>Side 97–100 i anden del er skannet fra Haderslev Katedralskoles Biblioteks eksemplar. De øvrige sider er fra Det Kgl. Biblioteks farveskanning. <a href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf">↬</a></note>
     <note editorial="true">Stavemåde og tegnsætning følger samvittighedsfuldt originaludgaven, kun åbenbare fejl er rettet og i alle tilfælde med originalens ordlyd anmærket i digtnoten, så læseren selv kan vurdere rigtigheden af en rettelse.</note>
     <note type="credits" editorial="true"><i>Aladdin</i> er bidraget af Sven Sørensen.</note>
   </notes>
@@ -21,7 +21,7 @@
     <printer>Andreas Seidelin</printer>
     <year>1805</year>
   </source>
-  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf" facsimile="1805-2" facsimile-pages-num="445" facsimile-pages-offset="7">
+  <source id="bd2" href="https://www.kb.dk/e-mat/dod/115208056526-color.pdf" facsimile="1805-2-komplet" facsimile-pages-num="449" facsimile-pages-offset="7">
     <author id="oehlenschlaeger">Adam Oehlenschläger</author>
     <title>Poetiske Skrifter</title>
     <volume>2</volume>
@@ -30,7 +30,6 @@
     <printer>Andreas Seidelin</printer>
     <year>1805</year>
   </source>
-  <!-- Anden dels skanning springer fra trykt side 96 (103. PDF-side) til 101 (104. PDF-side). Efter springet er forskydningen 3. -->
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </workhead>
 <workbody>
@@ -11389,7 +11388,7 @@ Farvel min Mand! Min Mustapha! Farvel.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="94-102" facsimile-pages="101-105"/>
+  <source in="bd2" pages="94-102"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11653,7 +11652,7 @@ Dog Alt besynderligt i denne Verden.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source in="bd2" pages="102-108" facsimile-pages="105-111"/>
+  <source in="bd2" pages="102-108"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -11858,7 +11857,7 @@ Farvel saalænge Børn.
 <head>
   <title>En vild Bierg-Egn</title>
   <nofirstline/>
-  <source in="bd2" pages="109-127" facsimile-pages="112-130"/>
+  <source in="bd2" pages="109-127"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12388,7 +12387,7 @@ Nu maa jeg gaae; min Fætter venter paa mig.
 <head>
   <title>Det snevre Pas mellem Biergene</title>
   <nofirstline/>
-  <source in="bd2" pages="127-130" facsimile-pages="130-133"/>
+  <source in="bd2" pages="127-130"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12491,7 +12490,7 @@ Til Støv, du Usle! Stakket var dit Liv.
 <head>
   <title>Trappen af den underjordiske Hule</title>
   <nofirstline/>
-  <source in="bd2" pages="130-134" facsimile-pages="133-137"/>
+  <source in="bd2" pages="130-134"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12635,7 +12634,7 @@ Hiem, hvor min Moder boer, i Ispahan!
 <head>
   <title>Tidlig Morgen under Solens Opgang</title>
   <nofirstline/>
-  <source in="bd2" pages="135-136" facsimile-pages="138-139"/>
+  <source in="bd2" pages="135-136"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12688,7 +12687,7 @@ Thi jeg er hungrig; meget, meget hungrig.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source in="bd2" pages="137-144" facsimile-pages="140-147"/>
+  <source in="bd2" pages="137-144"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -12925,7 +12924,7 @@ Nu vil jeg strax gaae ud og sælge Fadet.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="145-147" facsimile-pages="148-150"/>
+  <source in="bd2" pages="145-147"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13024,7 +13023,7 @@ At snydes af en slig glathaget Tosse.
 <head>
   <title>En fornem Kahn</title>
   <nofirstline/>
-  <source in="bd2" pages="148-153" facsimile-pages="151-156"/>
+  <source in="bd2" pages="148-153"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13227,7 +13226,7 @@ Og sveder snart sin Elskov ud igien.
 <head>
   <title>En skiøn Plads, noget afsides i Byen</title>
   <nofirstline/>
-  <source in="bd2" pages="154-158" facsimile-pages="157-161"/>
+  <source in="bd2" pages="154-158"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13367,7 +13366,7 @@ Og skab dig ikke længer som en Nar.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="159-162" facsimile-pages="162-165"/>
+  <source in="bd2" pages="159-162"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13497,7 +13496,7 @@ I næste Christen-Bod, og stiele Strikken.
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source in="bd2" pages="163-173" facsimile-pages="166-176"/>
+  <source in="bd2" pages="163-173"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -13853,7 +13852,7 @@ Saa vil jeg nu da pynte mig en Smule.
 <head>
   <title>Divan</title>
   <nofirstline/>
-  <source in="bd2" pages="173-184" facsimile-pages="176-187"/>
+  <source in="bd2" pages="173-184"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14204,7 +14203,7 @@ Jeg maa dog vise Zulima min Gave.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="184-188" facsimile-pages="187-191"/>
+  <source in="bd2" pages="184-188"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14331,7 +14330,7 @@ At skrive Saadant op, for Livs og Døds Skyld.
 <head>
   <title>Aladdins Kammer</title>
   <nofirstline/>
-  <source in="bd2" pages="188-192" facsimile-pages="191-195"/>
+  <source in="bd2" pages="188-192"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14438,7 +14437,7 @@ Det syndefulde Støv fra Paradis.
 <head>
   <title>Altanen paa Huset</title>
   <nofirstline/>
-  <source in="bd2" pages="193-194" facsimile-pages="196-197"/>
+  <source in="bd2" pages="193-194"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14491,7 +14490,7 @@ Nedstyrter Eder flux og knuser mig.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="195-203" facsimile-pages="198-206"/>
+  <source in="bd2" pages="195-203"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14757,7 +14756,7 @@ Besynderligt! - Kom! Følg mig i mit Divan.
 <head>
   <title>Sultanens Divan</title>
   <nofirstline/>
-  <source in="bd2" pages="204-209" facsimile-pages="207-212"/>
+  <source in="bd2" pages="204-209"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -14946,7 +14945,7 @@ Paa den Galley? Bag efter kommer tyndt Øl!
 <head>
   <title>Stue</title>
   <nofirstline/>
-  <source in="bd2" pages="210-221" facsimile-pages="213-224"/>
+  <source in="bd2" pages="210-221"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15249,7 +15248,7 @@ Ja saa let, min ædle Herre! som Vind kan kruse Vand.
 <head>
   <title>Indgangen til Sultanens Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="221-223" facsimile-pages="224-226"/>
+  <source in="bd2" pages="221-223"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15341,7 +15340,7 @@ Vor Sultan og hans Søn Aladdin leve!
 <head>
   <title>Et prægtigt Marmor-Bad</title>
   <nofirstline/>
-  <source in="bd2" pages="224-230" facsimile-pages="227-233"/>
+  <source in="bd2" pages="224-230"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15529,7 +15528,7 @@ Nu Farvel, du raske Yngling! Nyd din friske Ungdoms Vaar.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="230-232" facsimile-pages="233-235"/>
+  <source in="bd2" pages="230-232"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15610,7 +15609,7 @@ Skal gribe mig i Faldet, naar jeg snubler.
 <head>
   <title>Nat. Den store Plads uden for Sultanens Slot</title>
   <nofirstline/>
-  <source in="bd2" pages="233-239" facsimile-pages="236-242"/>
+  <source in="bd2" pages="233-239"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15804,7 +15803,7 @@ Rødkammet Vægter goel. Nu er vor Tid forbi.
 <head>
   <title>Sultanens Harem</title>
   <nofirstline/>
-  <source in="bd2" pages="239-243" facsimile-pages="242-246"/>
+  <source in="bd2" pages="239-243"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -15948,7 +15947,7 @@ At de kan røre Pauker og Trompeter!
 <head>
   <title>Afrika</title>
   <nofirstline/>
-  <source in="bd2" pages="244-247" facsimile-pages="247-250"/>
+  <source in="bd2" pages="244-247"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16066,7 +16065,7 @@ Indblande Angst og Anger i min Fryd.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="247-251" facsimile-pages="250-254"/>
+  <source in="bd2" pages="247-251"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16198,7 +16197,7 @@ At den tolker: Skiønhed, Styrke, Frugtbarhed.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="252-254" facsimile-pages="255-257"/>
+  <source in="bd2" pages="252-254"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16277,7 +16276,7 @@ Farvel! Imorgen seer du mig igien.
 <head>
   <title>Kahn</title>
   <nofirstline/>
-  <source in="bd2" pages="255-259" facsimile-pages="258-262"/>
+  <source in="bd2" pages="255-259"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16436,7 +16435,7 @@ Fornøy Jer godt i Byen, mens I er her.
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="259-263" facsimile-pages="262-266"/>
+  <source in="bd2" pages="259-263"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16571,7 +16570,7 @@ Mod Bielken under Loftet. Nu kun frisk!
 <head>
   <title>Gulnares Kammer</title>
   <nofirstline/>
-  <source in="bd2" pages="264-272" facsimile-pages="267-275"/>
+  <source in="bd2" pages="264-272"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16837,7 +16836,7 @@ Og Slangen kommer frem af sine Huler.
 <head>
   <title>Vild Mark. Nat, Storm og Regn</title>
   <nofirstline/>
-  <source in="bd2" pages="272-275" facsimile-pages="275-278"/>
+  <source in="bd2" pages="272-275"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -16935,7 +16934,7 @@ Det er saa hurtig giort, som det er sagt.
 <head>
   <title>Sultanens Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="275-282" facsimile-pages="278-285"/>
+  <source in="bd2" pages="275-282"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17162,7 +17161,7 @@ Kan gyde Kiøling i min Smertes Vunde.
 <head>
   <title>En skyggefuld, venlig Plads, dybt inde i Skoven</title>
   <nofirstline/>
-  <source in="bd2" pages="282-291" facsimile-pages="285-294"/>
+  <source in="bd2" pages="282-291"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17438,7 +17437,7 @@ Til Haan for dig! Til Hevn for min Ven!
 <head>
   <title>Et mørkt Fangetaarn</title>
   <nofirstline/>
-  <source in="bd2" pages="291-295" facsimile-pages="294-298"/>
+  <source in="bd2" pages="291-295"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17567,7 +17566,7 @@ Og bring mig i min elskte Faders Skiød.
 <head>
   <title>Slotspladsen</title>
   <nofirstline/>
-  <source in="bd2" pages="296-304" facsimile-pages="299-307"/>
+  <source in="bd2" pages="296-304"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17851,7 +17850,7 @@ Blod maa jeg see, før er jeg ikke rolig!
 <head>
   <title>Gade</title>
   <nofirstline/>
-  <source in="bd2" pages="305-307" facsimile-pages="308-310"/>
+  <source in="bd2" pages="305-307"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -17950,7 +17949,7 @@ Og spild ey Tiden med Betragtninger.
 <head>
   <title>Morgianes Stue</title>
   <nofirstline/>
-  <source in="bd2" pages="307-311" facsimile-pages="310-314"/>
+  <source in="bd2" pages="307-311"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18063,7 +18062,7 @@ Gid vel jeg havde ham kun af mit Huus.
 <head>
   <title>Kirkegaarden</title>
   <nofirstline/>
-  <source in="bd2" pages="311-312" facsimile-pages="314-315"/>
+  <source in="bd2" pages="311-312"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18121,7 +18120,7 @@ Gid vel jeg havde ham kun af mit Huus.
 <head>
   <title>Den store Plads uden for Sultanens Slot</title>
   <nofirstline/>
-  <source in="bd2" pages="313-316" facsimile-pages="316-319"/>
+  <source in="bd2" pages="313-316"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18241,7 +18240,7 @@ Den arme Stakkel. Gud forbarme sig!
   <toctitle>En afsides Plads uden for Byen</toctitle>
   <linktitle>En afsides Plads uden for Byen</linktitle>
   <nofirstline/>
-  <source in="bd2" pages="316-321" facsimile-pages="319-324"/>
+  <source in="bd2" pages="316-321"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18413,7 +18412,7 @@ En snellere Befordring faaer du ey.
 <head>
   <title>Afrika</title>
   <nofirstline/>
-  <source in="bd2" pages="322-326" facsimile-pages="325-329"/>
+  <source in="bd2" pages="322-326"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18533,7 +18532,7 @@ Tilbedte!
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="326-328" facsimile-pages="329-331"/>
+  <source in="bd2" pages="326-328"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18618,7 +18617,7 @@ Med roligt Smil til bange Drømmers Leye.
 <head>
   <title>Apothek</title>
   <nofirstline/>
-  <source in="bd2" pages="329-333" facsimile-pages="332-336"/>
+  <source in="bd2" pages="329-333"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18774,7 +18773,7 @@ For ey at støde sine bedste Kunder.
 <head>
   <title>Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="333-335" facsimile-pages="336-338"/>
+  <source in="bd2" pages="333-335"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -18856,7 +18855,7 @@ At du kan blande Giften aabenlyst.
 <head>
   <title>Cabinettet</title>
   <nofirstline/>
-  <source in="bd2" pages="336-340" facsimile-pages="339-343"/>
+  <source in="bd2" pages="336-340"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19012,7 +19011,7 @@ Og herligt straaler din gienvundne Lampe.
 <head>
   <title>Den store Sal</title>
   <nofirstline/>
-  <source in="bd2" pages="341-351" facsimile-pages="344-354"/>
+  <source in="bd2" pages="341-351"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19361,7 +19360,7 @@ Er det at rette ud, hvad Lampens Drot har tænkt.
 <head>
   <title>Ispahan</title>
   <nofirstline/>
-  <source in="bd2" pages="352-360" facsimile-pages="355-363"/>
+  <source in="bd2" pages="352-360"/>
   <places>
     <place ref="ganges" relation="mentioned"/>
     <place ref="mount-ararat" relation="mentioned"/>
@@ -19608,7 +19607,7 @@ Jeg kunde næsten troe jeg havde Ret.
 <head>
   <title>Mekka</title>
   <nofirstline/>
-  <source in="bd2" pages="360-367" facsimile-pages="363-370"/>
+  <source in="bd2" pages="360-367"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -19820,7 +19819,7 @@ O kommer! lader os endnu engang
 <head>
   <title>Et andet Sted i Staden Mekka</title>
   <nofirstline/>
-  <source in="bd2" pages="368-372" facsimile-pages="371-375"/>
+  <source in="bd2" pages="368-372"/>
   <places>
     <place ref="red-sea" relation="mentioned"/>
   </places>
@@ -19970,7 +19969,7 @@ Reisen til Gud er altid lykkelig.
 <head>
   <title>Den arabiske Ørk</title>
   <nofirstline/>
-  <source in="bd2" pages="372-373" facsimile-pages="375-376"/>
+  <source in="bd2" pages="372-373"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20005,7 +20004,7 @@ Mahoms Maane leder sikkert til vort Hiem.
 <head>
   <title>Persien</title>
   <nofirstline/>
-  <source in="bd2" pages="373-377" facsimile-pages="376-380"/>
+  <source in="bd2" pages="373-377"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20141,7 +20140,7 @@ Hun synger noget! Det maa jeg dog høre.
 <head>
   <title>Fatimes Hytte</title>
   <nofirstline/>
-  <source in="bd2" pages="377-383" facsimile-pages="380-386"/>
+  <source in="bd2" pages="377-383"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20335,7 +20334,7 @@ Den som forener begge, haaber trygt.
 <head>
   <title>Morgenstund</title>
   <nofirstline/>
-  <source in="bd2" pages="383-388" facsimile-pages="386-391"/>
+  <source in="bd2" pages="383-388"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20506,7 +20505,7 @@ Har ene høstet Frugt af hendes Ord!
 <head>
   <title>Pladsen uden for Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="389-394" facsimile-pages="392-397"/>
+  <source in="bd2" pages="389-394"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20712,7 +20711,7 @@ Thi her har Væggene og Muren Øren.
 <head>
   <title>Den store Sal i Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="395-399" facsimile-pages="398-402"/>
+  <source in="bd2" pages="395-399"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20880,7 +20879,7 @@ Du kiender lidt kun til Aladdins Magt.
 <head>
   <title>Ellemose i Skoven</title>
   <nofirstline/>
-  <source in="bd2" pages="400-402" facsimile-pages="403-405"/>
+  <source in="bd2" pages="400-402"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -20993,7 +20992,7 @@ Hist lønner Allah dig, at du var god.
 <head>
   <title>Den store Sal i Aladdins Pallads. Dag</title>
   <nofirstline/>
-  <source in="bd2" pages="403-407" facsimile-pages="406-410"/>
+  <source in="bd2" pages="403-407"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21100,7 +21099,7 @@ Lampens Slaver er tillige Slaver af Bestandighed.
 <head>
   <title>Nat. Uden for Fatimes Hytte i Skoven</title>
   <nofirstline/>
-  <source in="bd2" pages="408-416" facsimile-pages="411-419"/>
+  <source in="bd2" pages="408-416"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21353,7 +21352,7 @@ Kan eengang naae det Maal, den stunder efter.
 <head>
   <title>En Forstue i Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="416-420" facsimile-pages="419-423"/>
+  <source in="bd2" pages="416-420"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21486,7 +21485,7 @@ Til Lykke, da! Til Lykke! Megen Lykke.
 <head>
   <title>Den store Sal i Aladdins Pallads</title>
   <nofirstline/>
-  <source in="bd2" pages="420-433" facsimile-pages="423-436"/>
+  <source in="bd2" pages="420-433"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -21842,7 +21841,7 @@ Paa Morgianes Grav, ved Hyldetræet.
 <head>
   <title>Epilog</title>
   <nofirstline/>
-  <source in="bd2" pages="434-436" facsimile-pages="437-439"/>
+  <source in="bd2" pages="434-436"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
