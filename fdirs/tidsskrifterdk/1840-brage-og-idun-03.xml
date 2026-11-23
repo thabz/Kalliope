@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1840-brage-og-idun-03" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1839-1842-brage-og-idun">
+<kalliopework id="1840-brage-og-idun-03" author="tidsskrifterdk" status="complete" type="periodical" parent="1839-1842-brage-og-idun">
 <workhead>
   <title>Brage og Idun: Tredie Bind</title>
   <breadcrumbtitle>Tredie Bind</breadcrumbtitle>
@@ -21,6 +21,10 @@
   </source>
   <!-- Hammerichs rettelser på trykt s. 562 gælder Skandinaviske Reiseminder i bind 2. -->
   <errata status="reviewed" pages="562" facsimile-pages="580"/>
+  <pagebreaks/>
+  <proofreadings>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-23T20:50:37+00:00"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -40,6 +44,7 @@
   <title>Første hæftes motto</title>
   <nofirstline/>
   <source facsimile-pages="8"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -65,6 +70,7 @@ Enheds-Tid!
   <subtitle>(Den 1ste August 1840.)</subtitle>
   <firstline>Op af Nordhavs dybe Vande knejser</firstline>
   <source pages="329-331" facsimile-pages="339-341"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -186,6 +192,7 @@ Skal staae.
   <title>Vintersange</title>
   <firstline>Jeg eied engang to Fugle smaae</firstline>
   <source pages="332-334" facsimile-pages="342-344"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -301,6 +308,7 @@ Og sagde Farvel, som för.
   <title>Erindring</title>
   <firstline>Kom Erindring! kom min hulde Brud!</firstline>
   <source pages="335-336" facsimile-pages="345-346"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -374,6 +382,7 @@ Stirre længselsfuldt i Natten ud!
   <title>Medicinernes Kjæreste</title>
   <firstline>Til Bengalen stod min Ungdoms Hu</firstline>
   <source pages="337-340" facsimile-pages="347-350"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -497,6 +506,7 @@ Hun skal være da mit Hindostan.
   <title>Den förste Omfavnelse</title>
   <firstline>Kommer nu, Sorger! knuger mit Bryst</firstline>
   <source pages="340-342" facsimile-pages="350-352"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -574,6 +584,7 @@ höre du opfyldt med tonende Strenge
   <subtitle>(Et Digt i fem Romancer.)</subtitle>
   <firstline>Alt funkler Stiernen over Kirkens Tag</firstline>
   <source pages="342-351" facsimile-pages="352-361"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -924,6 +935,7 @@ Saa synker livlös han til Kongens Fod.
   <subtitle>(En Vise, afsjungen i et Selskab af Normænd, Danske og Svenske.)</subtitle>
   <firstline>Fra gamle Tider der gaaer det Ord</firstline>
   <source pages="351-353" facsimile-pages="361-363"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -982,6 +994,7 @@ Og vore hjemlige Minder.
   <title>Paa Nordsöen</title>
   <firstline>Nu lider det henad Aften</firstline>
   <source pages="353-355" facsimile-pages="363-365"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1106,6 +1119,7 @@ Og dens drömmefulde Fred.
   <title>Havet og Öerne</title>
   <firstline>Gud har ei fyldt vor Öe med skyehöit kneisende Bjerge</firstline>
   <source pages="356-361" facsimile-pages="366-371"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1339,6 +1353,7 @@ Noget om Veien til Roes og Magt, og bruser forbittret.
   <subtitle>(Phantasie.)</subtitle>
   <firstline>Det led mot qvällen. Vinter-solen låg</firstline>
   <source pages="362-367" facsimile-pages="372-377"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1554,6 +1569,7 @@ och tänkte på de armas suck derute.
   <title>En Vise om Hellig Olaf</title>
   <firstline>Hellig Olaf stod ved Fjorden med sin Hær</firstline>
   <source pages="367-370" facsimile-pages="377-380"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1658,6 +1674,7 @@ dækker Klippen, hvor den kneiser mörk og gold,
   <firstline>Der staaer en Lovekirke langt ude paa et Skjær</firstline>
   <dates><written>1840-05-12</written></dates>
   <source pages="370-375" facsimile-pages="380-385"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1872,6 +1889,7 @@ Det lyster os at vandre i Skovens mörke Gang.
   <firstline>O, nu en Skål for det friske Ord</firstline>
   <dates><event>1838-06-20</event></dates>
   <source pages="376-377" facsimile-pages="386-387"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1921,6 +1939,7 @@ som frygter den!
   <firstline>I Dybet hamrede de travle Dværge</firstline>
   <dates><event>1840-04-05</event></dates>
   <source pages="377-378" facsimile-pages="387-388"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1974,6 +1993,7 @@ Enheds-Tid! —
   <firstline>Hør, det jubler i Syd, og det jubler i Nord</firstline>
   <dates><event>1840-05-28</event></dates>
   <source pages="378-379" facsimile-pages="388-389"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2028,6 +2048,7 @@ spår en rig, en Velsignelsens Høst!
   <dates><event>1840-05-28</event></dates>
   <source pages="380-381" facsimile-pages="390-391"/>
   <keywords>frederik6</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2081,6 +2102,7 @@ det <sc>Fredrik</sc> bød, den Tid han stod i Stavn!
   <firstline>Han Oldtidsskjalde Ungdomsliv gjengav</firstline>
   <source pages="381" facsimile-pages="391"/>
   <keywords>wilster</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2100,6 +2122,7 @@ Hist blomstrer frisk hans Liv — og her hans Navn.
   <firstline>En ædel Kunstneraand blev seet i Nord</firstline>
   <source pages="381-382" facsimile-pages="391-392"/>
   <keywords>thorvaldsen</keywords>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2144,6 +2167,7 @@ Drog Kunstens djærve Sön til evig Skjönheds Kyst.
   <title><num>1.</num>Frihed</title>
   <firstline>I de dunkle, i de tætte Skove</firstline>
   <source pages="382-386" facsimile-pages="392-396"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2310,6 +2334,7 @@ Og de juble höjt og prise ham.
   <title><num>2.</num>Stoisk Død</title>
   <firstline>Hvi vaander du dig svage</firstline>
   <source pages="387-388" facsimile-pages="397-398"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2382,6 +2407,7 @@ Og svinde skal dit Hjertes fejge Banken!
   <title>Andet hæftes motto</title>
   <nofirstline/>
   <source facsimile-pages="404"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <epigraph>
@@ -2406,6 +2432,7 @@ Gid denne stillere Aandens Samvirken engang i Tiden kunde gaae over til en stor 
   <title><num>1.</num>Taageaanderne</title>
   <firstline>I faldne Luftrigets Aander</firstline>
   <source pages="469-470" facsimile-pages="487-488"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2452,6 +2479,7 @@ Og gjennem Ellestubkrattet
   <title><num>2.</num>Skyslette-Livet</title>
   <firstline>Nu kommer Dagen med Straaler fra Öst</firstline>
   <source pages="470-471" facsimile-pages="488-489"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2493,6 +2521,7 @@ Blandt Luftgiganter med vild Phantasie
   <title><num>3.</num>Skykæmperne</title>
   <firstline>Hvorhen? I flyvende Kæmper</firstline>
   <source pages="471-472" facsimile-pages="489-490"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2544,6 +2573,7 @@ Ned over den gamle Jord.
   <title><num>4.</num>Nimbus</title>
   <firstline>Med Solkrands Tordenskyen</firstline>
   <source pages="472-473" facsimile-pages="490-491"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2580,6 +2610,7 @@ I Nimbusstraalernes Pragt.
   <title><num>5.</num>Iris</title>
   <firstline>I Skyen Pagtens Bue hist staaer</firstline>
   <source pages="473-474" facsimile-pages="491-492"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2612,6 +2643,7 @@ Den peger mod Himmel-Paradiismuren.
   <title><num>6.</num>Paradiismuren</title>
   <firstline>Bag Aftenskyernes Bjerge</firstline>
   <source pages="474" facsimile-pages="492"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2648,6 +2680,7 @@ Henflyer som Svaneduuns-Sky.
   <title><num>7.</num>De befriede Lysalfers Svanesang</title>
   <firstline>Vær hilset igjen, vort lyse Hjem</firstline>
   <source pages="475" facsimile-pages="493"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2694,6 +2727,7 @@ Vi flyve med Vinger af Flor.
   <title>Stjernebilled-Symbolet</title>
   <firstline>Paa Jordens Bold i Universets Hav</firstline>
   <source pages="483-491" facsimile-pages="501-509"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3011,6 +3045,7 @@ Kun <i>Den</i>, som mægtig bærer Sol og Stjerne.
   <title><num>3.</num>Saga</title>
   <firstline>Midt i de svale Bølger</firstline>
   <source pages="563-564" facsimile-pages="581-582"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3072,6 +3107,7 @@ Med sit ene, mægtige Öje
   <title><num>4.</num>Ygdrasil</title>
   <firstline>Midt i den lyse Verden</firstline>
   <source pages="564-566" facsimile-pages="582-584"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3143,6 +3179,7 @@ Det volder den onde Slange:
   <title>Langelegen</title>
   <firstline>Hör kun, do didl dudl do det lyder</firstline>
   <source pages="566-568" facsimile-pages="584-586"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3228,6 +3265,7 @@ Med Raslen glide i den Gamles Skjöd.
   <firstline>Vord Lys!” Det forkyndes i evigt Endnu</firstline>
   <dates><event>1840-06-24</event></dates>
   <source pages="568-573" facsimile-pages="586-591"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3403,6 +3441,7 @@ vor store Mesters Kunst er Guds, Guds stærke Röst, der runger
   <title>Kiærlighed</title>
   <firstline>Gaaer jeg i Nattens Stille</firstline>
   <source pages="573-577" facsimile-pages="591-595"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3572,6 +3611,7 @@ Lindres kun ved den.
   <title>Drömme</title>
   <firstline>Jeg drömte, jeg var i Skoven</firstline>
   <source pages="577-580" facsimile-pages="595-598"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
