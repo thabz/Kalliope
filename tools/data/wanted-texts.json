@@ -329,14 +329,15 @@
       "id": "sturluson-hattatal",
       "poetId": "sturluson",
       "title": "Háttatal",
-      "status": "open",
-      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XXI, s. 846–848, nævner kvadet; Faulkes’ videnskabelige udgave, 2. udgave 2007, er registreret som blankværk. Ingen selvstændig tekstpost i Kalliopes korpus.",
+      "status": "fulfilled",
+      "source": "Salmonsens Konversationsleksikon, 2. udgave, bind XXI, s. 846–848, nævner kvadet. Háttatal er nu importeret i sin helhed fra Heimskringlas Guðni Jónsson-tekst sammen med den øvrige Edda, uden facsimilekontrol; Faulkes’ særskilte udgave fra 2007 er fortsat et blankværk.",
       "mentions": [
         {
           "file": "fdirs/sturluson/bio.xml",
           "text": "Háttatal"
         }
-      ]
+      ],
+      "targetId": "sturluson20261123150"
     },
     {
       "id": "lenngren-biografi",
