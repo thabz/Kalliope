@@ -1,0 +1,1746 @@
+{
+  "title": "Syv 1695: DgF-konkordans",
+  "compiled_date": "2026-11-23",
+  "scope": "200 nummererede hovedposter og den første købstadsvise i tillægget.",
+  "method": [
+    "Tekst-ID er nøgle; trykte numre er ikke entydige. Reference er den konventionelle del og løbende hovedpost, mens xml_number bevarer trykkets nummer.",
+    "Første hundrededel: eksisterende variantrelationer til Vedel og den tidligere dokumenterede konkordans. Anden hundrededel: DgFs Syv-henvisninger, suppleret med de særskilt angivne kilder og sammenholdt med tekstidentiteten.",
+    "Kun typen registreres; Vedels og andre tekstvidners variant- og vidnebogstaver overføres ikke til Syv. Tillægsbetegnelsen c ved DgF 149 bevares.",
+    "null betyder, at der ikke er tildelt et dokumenteret DgF-nummer her; ikke et bevis for, at teksten ikke findes i DgF. DV-numre er ikke DgF-numre."
+  ],
+  "counts": {
+    "main_entries": 200,
+    "main_entries_with_dgf_id": 165,
+    "additional_entries_with_dgf_id": 1,
+    "total_dgf_links": 166,
+    "main_entries_without_assigned_dgf_id": 35
+  },
+  "sources": {
+    "vedel": {
+      "path": "docs/indsamling/folkeviser/vedel-1591-dgf-konkordans.json",
+      "description": "Eksisterende tekst-ID-forbindelse til Vedel 1591 og den dokumenterede Vedel-konkordans."
+    },
+    "dgf-I": {
+      "url": "https://archive.org/details/bub_gb_FTxNAAAAcAAJ",
+      "description": "Danmarks gamle Folkeviser I, indholdsfortegnelse og de respektive visenumre."
+    },
+    "dgf-II": {
+      "url": "https://archive.org/details/danmarksgamlefo00denmgoog",
+      "description": "Danmarks gamle Folkeviser II, indholdsfortegnelse og de respektive visenumre."
+    },
+    "dgf-III": {
+      "url": "https://archive.org/details/danmarksgamlefo02denmgoog",
+      "description": "Danmarks gamle Folkeviser III, indholdsfortegnelse, forord og de respektive visenumre."
+    },
+    "dgf-IV": {
+      "url": "https://archive.org/details/danmarksgamlefo01denmgoog",
+      "description": "Danmarks gamle Folkeviser IV, indholdsfortegnelse og de respektive visenumre."
+    },
+    "dgf-V": {
+      "url": "https://books.google.com/books?id=_BMMAQAAIAAJ&pg=PP13",
+      "additional_url": "https://books.google.com/books?id=_BMMAQAAIAAJ&pg=RA1-PP5",
+      "description": "Danmarks gamle Folkeviser V, indholdsfortegnelserne i første og anden halvdel med henvisninger til Syvs numre."
+    },
+    "dgf-VI": {
+      "url": "https://archive.org/details/danmarksgamlefo04denmgoog",
+      "description": "Danmarks gamle Folkeviser VI, indholdsfortegnelse og de respektive visenumre."
+    },
+    "dgf-VII": {
+      "url": "https://archive.org/details/danmarksgamlefo03denmgoog",
+      "description": "Danmarks gamle Folkeviser VII, indholdsfortegnelse og de respektive visenumre."
+    },
+    "ku-496": {
+      "url": "https://cst.dk/dighumlab/duds/DFK/Dorthe/html/KBRA152.htm",
+      "additional_url": "https://cst.dk/dighumlab/duds/DFK/Dorthe/html/HJB58.htm",
+      "description": "KU: Fattig Jomfru giftes, DgF 496. Begyndelse, omkvæd og handlingsforløb sammenholdt med Syv IV 65; variantbetegnelserne gælder håndskrifterne og overføres ikke."
+    },
+    "ku-498": {
+      "url": "https://cst.dk/dighumlab/duds/DFK/Dorthe/html/DRS21.htm",
+      "description": "KU: Henrik Valdemarsøn, DgF 498. Begyndelse og handlingsforløb sammenholdt med Syv IV 54; håndskriftets variantbetegnelse overføres ikke."
+    },
+    "gv-475": {
+      "url": "https://www.xn--grundtvigsvrker-7lb.dk/pdf/1847_896A_intro.pdf",
+      "description": "Grundtvigs Værker, indledning til Danske Kæmpeviser (1847), afsnit 4.3: Syv IV 23 henføres til DgF 475 C. Her registreres kun typen."
+    },
+    "bandasavn-474": {
+      "url": "https://bandasavn.setur.fo/Tapes/Details/13110",
+      "description": "Fróðskaparsetur Føroya, Bandasavnið, band 001280, 00:34:13: Ismar og Benedikt / Der bor en jarl i Engeland, DgF 474. Sammenholdt med Syv IV 26s førstelinje og Edmund/Benedit; DgF VII, nr. 429, henviser også til Benediktvisen som Syv nr. 26."
+    }
+  },
+  "entries": [
+    {
+      "kalliope_id": "vedel2026111403",
+      "reference": "I 1",
+      "xml_number": "I.",
+      "firstline": "Alting af Gud/ i Himmel oc Jord/",
+      "dgf_id": null,
+      "vedel_text_id": "vedel1999123001"
+    },
+    {
+      "kalliope_id": "folkeviser2026111401",
+      "reference": "I 2",
+      "xml_number": "II.",
+      "firstline": "Hertugen hand red fra Colding By",
+      "dgf_id": 115,
+      "vedel_text_id": "vedel2000010201",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111402",
+      "reference": "I 3",
+      "xml_number": "III.",
+      "firstline": "Der boede en Konning i Danmarck",
+      "dgf_id": 21,
+      "vedel_text_id": "vedel2000010202",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111403",
+      "reference": "I 4",
+      "xml_number": "IV.",
+      "firstline": "Konning Tidrick sidder udi Bern",
+      "dgf_id": 7,
+      "vedel_text_id": "vedel2000012802",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111404",
+      "reference": "I 5",
+      "xml_number": "V.",
+      "firstline": "De vare siv og sivsindstive",
+      "dgf_id": 7,
+      "vedel_text_id": "vedel2000012801",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111405",
+      "reference": "I 6",
+      "xml_number": "VI.",
+      "firstline": "Det var Grefve Herr Guncelin",
+      "dgf_id": 16,
+      "vedel_text_id": "vedel2000012803",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111406",
+      "reference": "I 7",
+      "xml_number": "VII.",
+      "firstline": "Det var stolte Fru Grimild",
+      "dgf_id": 5,
+      "vedel_text_id": "vedel20000102804",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111407",
+      "reference": "I 8",
+      "xml_number": "VIII.",
+      "firstline": "Det var stolte Frue Grimild",
+      "dgf_id": 5,
+      "vedel_text_id": "vedel2000012805",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111408",
+      "reference": "I 9",
+      "xml_number": "IX.",
+      "firstline": "Slig Kæmper som Helled Hogen",
+      "dgf_id": 5,
+      "vedel_text_id": "vedel2000012806",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111409",
+      "reference": "I 10",
+      "xml_number": "X.",
+      "firstline": "Jeg vil mig af Landet ride",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000020501"
+    },
+    {
+      "kalliope_id": "folkeviser2026111410",
+      "reference": "I 11",
+      "xml_number": "XI.",
+      "firstline": "Det var ungen Ulf van Jern",
+      "dgf_id": 10,
+      "vedel_text_id": "vedel2000020503",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111411",
+      "reference": "I 12",
+      "xml_number": "XII.",
+      "firstline": "Sterck Tidrick boer sig udi Bern",
+      "dgf_id": 17,
+      "vedel_text_id": "vedel2000020502",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111412",
+      "reference": "I 13",
+      "xml_number": "XIII.",
+      "firstline": "Det var Mester Kong Tidrich",
+      "dgf_id": 9,
+      "vedel_text_id": "vedel2000072807",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111413",
+      "reference": "I 14",
+      "xml_number": "XIV.",
+      "firstline": "Burmand holder i Fielden ud",
+      "dgf_id": 30,
+      "vedel_text_id": "vedel2000022806",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111414",
+      "reference": "I 15",
+      "xml_number": "XV.",
+      "firstline": "Det var høyen Bermerijs",
+      "dgf_id": 11,
+      "vedel_text_id": "vedel2000022801",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111415",
+      "reference": "I 16",
+      "xml_number": "XVI.",
+      "firstline": "Svend Vonved sidder i Bure",
+      "dgf_id": 18,
+      "vedel_text_id": "vedel2000022805",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111416",
+      "reference": "I 17",
+      "xml_number": "XVII.",
+      "firstline": "Sivard hand slog sin Stif-Fader ihiel alt for sin Moders beste; Og nu lyster Sivard til Hofve at ride",
+      "dgf_id": 2,
+      "vedel_text_id": "vedel2000022804",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111417",
+      "reference": "I 18",
+      "xml_number": "XVIII.",
+      "firstline": "Mimmering var den mindste Mand",
+      "dgf_id": 14,
+      "vedel_text_id": "vedel2000022803",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111418",
+      "reference": "I 19",
+      "xml_number": "XIX.",
+      "firstline": "Det var høyen Berner Riis",
+      "dgf_id": 11,
+      "vedel_text_id": "vedel2000022802",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111419",
+      "reference": "I 20",
+      "xml_number": "XX.",
+      "firstline": "Kongen raader for Borgen",
+      "dgf_id": 8,
+      "vedel_text_id": "vedel2000030201",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111420",
+      "reference": "I 21",
+      "xml_number": "XXI.",
+      "firstline": "Grimmer hand gaar paa Gulfvet",
+      "dgf_id": 26,
+      "vedel_text_id": "vedel2000030202",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111421",
+      "reference": "I 22",
+      "xml_number": "XXII.",
+      "firstline": "Det var Tord af Hafsgaard",
+      "dgf_id": 1,
+      "vedel_text_id": "vedel2000030205",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111422",
+      "reference": "I 23",
+      "xml_number": "XXIII.",
+      "firstline": "Alf hand boer i Oddeskier",
+      "dgf_id": 19,
+      "vedel_text_id": "vedel2000030203",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111423",
+      "reference": "I 24",
+      "xml_number": "XXIV.",
+      "firstline": "Svend Felding hand sider paa Helsingborg",
+      "dgf_id": 31,
+      "vedel_text_id": "vedel2000030204",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111424",
+      "reference": "I 25",
+      "xml_number": "XXV.",
+      "firstline": "Der stunder indtil Danmarck",
+      "dgf_id": 32,
+      "vedel_text_id": "vedel2000031102",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111425",
+      "reference": "I 26",
+      "xml_number": "XXVI.",
+      "firstline": "Jeg seer saa mangt et Orlog Skib",
+      "dgf_id": 27,
+      "vedel_text_id": "vedel2000031104",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111426",
+      "reference": "II 1",
+      "xml_number": "I.",
+      "firstline": "Der ligger en Vold i Vester Haf",
+      "dgf_id": 52,
+      "vedel_text_id": "vedel2000031101",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111427",
+      "reference": "II 2",
+      "xml_number": "II.",
+      "firstline": "Kongen og vor unge Dronning",
+      "dgf_id": 33,
+      "vedel_text_id": "vedel2000031103",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111428",
+      "reference": "II 3",
+      "xml_number": "III.",
+      "firstline": "Rafnen hand fløyer op Aften",
+      "dgf_id": 60,
+      "vedel_text_id": "vedel2000032703",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111429",
+      "reference": "II 4",
+      "xml_number": "IV.",
+      "firstline": "Der gaar en Biørn paa Dalby Hede",
+      "dgf_id": 64,
+      "vedel_text_id": "vedel2000032704",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111430",
+      "reference": "II 5",
+      "xml_number": "V.",
+      "firstline": "Jeg reed mig ad qvelde",
+      "dgf_id": 91,
+      "vedel_text_id": "vedel2000032701",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111431",
+      "reference": "II 6",
+      "xml_number": "VI.",
+      "firstline": "Der boer en Frue i Danmarck",
+      "dgf_id": 41,
+      "vedel_text_id": "vedel2000032702",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111432",
+      "reference": "II 7",
+      "xml_number": "VII.",
+      "firstline": "Bucke Been og Elfver Steen",
+      "dgf_id": 41,
+      "vedel_text_id": "vedel2000042201",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111433",
+      "reference": "II 8",
+      "xml_number": "VIII.",
+      "firstline": "Iselands Konning lader bygge et Skib",
+      "dgf_id": 41,
+      "vedel_text_id": "vedel2000042207",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111434",
+      "reference": "II 9",
+      "xml_number": "IX.",
+      "firstline": "Jeg lagde mit Hofvet til Elver Høy",
+      "dgf_id": 46,
+      "vedel_text_id": "vedel2000042202",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111435",
+      "reference": "II 10",
+      "xml_number": "X.",
+      "firstline": "Jeg tog Øxen paa min Bag",
+      "dgf_id": 56,
+      "vedel_text_id": "vedel2000042206",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111436",
+      "reference": "II 11",
+      "xml_number": "XI.",
+      "firstline": "Jeg blef født saa spæd udi Bur",
+      "dgf_id": 285,
+      "vedel_text_id": "vedel2000042203",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111437",
+      "reference": "II 12",
+      "xml_number": "XII.",
+      "firstline": "De Kongens Mænd ride paa Volde",
+      "dgf_id": 293,
+      "vedel_text_id": "vedel2000042204",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111438",
+      "reference": "II 13",
+      "xml_number": "XIII.",
+      "firstline": "Det da var den gamle Grefve",
+      "dgf_id": 472,
+      "vedel_text_id": "vedel2000042205",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111439",
+      "reference": "II 14",
+      "xml_number": "XIV.",
+      "firstline": "Oluf Konning og hans Broder",
+      "dgf_id": 50,
+      "vedel_text_id": "vedel2000050404",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111440",
+      "reference": "II 15",
+      "xml_number": "XV.",
+      "firstline": "Det var Sanct Oluf Konning saa bold",
+      "dgf_id": 51,
+      "vedel_text_id": "vedel2000050401",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111441",
+      "reference": "II 16",
+      "xml_number": "XVI.",
+      "firstline": "Solen skinner saa klar om Dagen",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000050405"
+    },
+    {
+      "kalliope_id": "folkeviser2026111442",
+      "reference": "II 17",
+      "xml_number": "XVII.",
+      "firstline": "Nu ville vi qvæde om Hertug Knud",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000050406"
+    },
+    {
+      "kalliope_id": "folkeviser2026111443",
+      "reference": "II 18",
+      "xml_number": "XVIII.",
+      "firstline": "Aarlig om Morgen Lercken hun sang",
+      "dgf_id": 116,
+      "vedel_text_id": "vedel2000050403",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111444",
+      "reference": "II 19",
+      "xml_number": "XIX.",
+      "firstline": "Aarle om Morgen det var Dag",
+      "dgf_id": 317,
+      "vedel_text_id": "vedel2000050402",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111445",
+      "reference": "II 20",
+      "xml_number": "XX.",
+      "firstline": "Det var unge Svercke",
+      "dgf_id": 136,
+      "vedel_text_id": "vedel2000061801",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111446",
+      "reference": "II 21",
+      "xml_number": "XXI.",
+      "firstline": "Min Herre hafver fest en Rosens Blomme",
+      "dgf_id": 137,
+      "vedel_text_id": "vedel2000061802",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111447",
+      "reference": "II 22",
+      "xml_number": "XXII.",
+      "firstline": "Konning Valdemar og Herr Strange",
+      "dgf_id": 132,
+      "vedel_text_id": "vedel2000061803",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111448",
+      "reference": "II 23",
+      "xml_number": "XXIII.",
+      "firstline": "Det var Behmer Lands Dronning",
+      "dgf_id": 133,
+      "vedel_text_id": "vedel2000061804",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111449",
+      "reference": "II 24",
+      "xml_number": "XXIV.",
+      "firstline": "Dan Konning hand lader en Haffru grive",
+      "dgf_id": 42,
+      "vedel_text_id": "vedel2000061805",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111450",
+      "reference": "II 25",
+      "xml_number": "XXV.",
+      "firstline": "Dronning Dagmar ligger i Ribe siug",
+      "dgf_id": 135,
+      "vedel_text_id": "vedel2000061806",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111451",
+      "reference": "II 26",
+      "xml_number": "XXVI.",
+      "firstline": "Aarle om Morgenen langt før Dag",
+      "dgf_id": 139,
+      "vedel_text_id": "vedel2000061807",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111452",
+      "reference": "II 27",
+      "xml_number": "XXVII.",
+      "firstline": "Jeg vil eder en Vise qvæde",
+      "dgf_id": 141,
+      "vedel_text_id": "vedel2000061809",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111453",
+      "reference": "II 28",
+      "xml_number": "XXVII.",
+      "firstline": "Som Cain begyndte imod Broder sin",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000061810"
+    },
+    {
+      "kalliope_id": "folkeviser2026111454",
+      "reference": "II 29",
+      "xml_number": "XXIX.",
+      "firstline": "Marsk Stig hand ud af Landet foer",
+      "dgf_id": 145,
+      "vedel_text_id": "vedel2000061811",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111455",
+      "reference": "II 30",
+      "xml_number": "XXX.",
+      "firstline": "Marsk Stig vogner om midie Nat",
+      "dgf_id": 145,
+      "vedel_text_id": "vedel2000061812",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111456",
+      "reference": "II 31",
+      "xml_number": "XXXI.",
+      "firstline": "De ere saa mange i Danmarck",
+      "dgf_id": 145,
+      "vedel_text_id": "vedel2000072401",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111457",
+      "reference": "II 32",
+      "xml_number": "XXXII.",
+      "firstline": "De vare vel siu og siu sindtisve",
+      "dgf_id": 145,
+      "vedel_text_id": "vedel2000072402",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111458",
+      "reference": "II 33",
+      "xml_number": "XXXIII.",
+      "firstline": "Marsk Stig hafver de Døttre to",
+      "dgf_id": 146,
+      "vedel_text_id": "vedel2000072403",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111459",
+      "reference": "II 34",
+      "xml_number": "XXXIV.",
+      "firstline": "Og der gaar dantz paa Riber Gade",
+      "dgf_id": 147,
+      "vedel_text_id": "vedel2000072404",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111460",
+      "reference": "II 35",
+      "xml_number": "XXXV.",
+      "firstline": "Ranild beder legge Sadel paa Hest",
+      "dgf_id": 148,
+      "vedel_text_id": "vedel2001020408",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111461",
+      "reference": "II 36",
+      "xml_number": "XXXVI.",
+      "firstline": "Det springer nu saa vide om Land",
+      "dgf_id": 149,
+      "vedel_text_id": "vedel2001020409",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111462",
+      "reference": "II 37",
+      "xml_number": "XXXVII.",
+      "firstline": "Det var Her Konning Erick",
+      "dgf_id": 153,
+      "vedel_text_id": "vedel2001020407",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111463",
+      "reference": "II 38",
+      "xml_number": "XXXVIII.",
+      "firstline": "Kongen lader biude ofver alt sit Land",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2001020708"
+    },
+    {
+      "kalliope_id": "folkeviser2026111464",
+      "reference": "II 39",
+      "xml_number": "XXXIX.",
+      "firstline": "Frue Ingeborg hafver de Brødre Tre",
+      "dgf_id": 154,
+      "vedel_text_id": "vedel2000092103",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111465",
+      "reference": "II 40",
+      "xml_number": "XL.",
+      "firstline": "Det er nu skeed udi vor Tid",
+      "dgf_id": 142,
+      "vedel_text_id": "vedel2000092101",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111466",
+      "reference": "II 41",
+      "xml_number": "XLI.",
+      "firstline": "Grefven samler alle sine Mænd",
+      "dgf_id": 156,
+      "vedel_text_id": "vedel2000092102",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111467",
+      "reference": "II 42",
+      "xml_number": "XLII.",
+      "firstline": "Herr Bugge hand bygger op Hald med Ære",
+      "dgf_id": 158,
+      "vedel_text_id": "vedel2000110901",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111468",
+      "reference": "II 43",
+      "xml_number": "XLIII.",
+      "firstline": "Kongens Søn af Engeland",
+      "dgf_id": 157,
+      "vedel_text_id": "vedel2000110902",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111469",
+      "reference": "II 44",
+      "xml_number": "XLIV.",
+      "firstline": "En standende Strid i Sverrige",
+      "dgf_id": 159,
+      "vedel_text_id": "vedel2000110903",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111470",
+      "reference": "II 45",
+      "xml_number": "XLV.",
+      "firstline": "Hertugen udaf Beier Land",
+      "dgf_id": 162,
+      "vedel_text_id": "vedel2000110904",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111471",
+      "reference": "II 46",
+      "xml_number": "XLVI.",
+      "firstline": "Det var Herr Ifver Axelsøn",
+      "dgf_id": 163,
+      "vedel_text_id": "vedel2000110905",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111472",
+      "reference": "II 47",
+      "xml_number": "XLVII.",
+      "firstline": "Konning Hans hand sider paa Kiøbenhafn",
+      "dgf_id": 166,
+      "vedel_text_id": "vedel2000110906",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111473",
+      "reference": "II 48",
+      "xml_number": "XLVIII.",
+      "firstline": "De Fugle hafve faat saa underlig et Raad",
+      "dgf_id": 170,
+      "vedel_text_id": "vedel2000110907",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111474",
+      "reference": "II 49",
+      "xml_number": "XLIX.",
+      "firstline": "Christe GUd jeg vil dig ære",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110908"
+    },
+    {
+      "kalliope_id": "folkeviser2026111475",
+      "reference": "II 50",
+      "xml_number": "L.",
+      "firstline": "Alle smaa Fugle i Skofven er",
+      "dgf_id": 173,
+      "vedel_text_id": "vedel2000110909",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111476",
+      "reference": "II 51",
+      "xml_number": "LI.",
+      "firstline": "Udi Øfrigheds Vold at være",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110910"
+    },
+    {
+      "kalliope_id": "bredal2026111401",
+      "reference": "II 52",
+      "xml_number": "LII.",
+      "firstline": "Vi kunde formercke baade Aarle og silde",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110911a"
+    },
+    {
+      "kalliope_id": "folkeviser2026111477",
+      "reference": "II 53",
+      "xml_number": "LIII.",
+      "firstline": "Vol an",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110911"
+    },
+    {
+      "kalliope_id": "folkeviser2026111478",
+      "reference": "II 54",
+      "xml_number": "LV.",
+      "firstline": "Vel er det sande i Lesten staar",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110912"
+    },
+    {
+      "kalliope_id": "folkeviser2026111479",
+      "reference": "II 55",
+      "xml_number": "LV.",
+      "firstline": "Christe GUd og Mand jeg maa dig klage",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2000110913"
+    },
+    {
+      "kalliope_id": "folkeviser2026111480",
+      "reference": "III 1",
+      "xml_number": "I.",
+      "firstline": "Spanie Land og Myklegaard",
+      "dgf_id": 479,
+      "vedel_text_id": "vedel2001010204",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111481",
+      "reference": "III 2",
+      "xml_number": "II.",
+      "firstline": "Snecken hun ligger paa Lande",
+      "dgf_id": 375,
+      "vedel_text_id": "vedel2001010203",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111482",
+      "reference": "III 3",
+      "xml_number": "III.",
+      "firstline": "Hvad skal jeg i Danmarck",
+      "dgf_id": 377,
+      "vedel_text_id": "vedel2001010201",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111483",
+      "reference": "III 4",
+      "xml_number": "IV.",
+      "firstline": "Liden hand rider til Tinge",
+      "dgf_id": 330,
+      "vedel_text_id": "vedel2001010202",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111484",
+      "reference": "III 5",
+      "xml_number": "V.",
+      "firstline": "Det var Nilaus Baggisøn",
+      "dgf_id": 331,
+      "vedel_text_id": "vedel2001020701",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111485",
+      "reference": "III 6",
+      "xml_number": "VI.",
+      "firstline": "Stolte Signild lader brygge og blande Viin",
+      "dgf_id": 185,
+      "vedel_text_id": "vedel2001020702",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111486",
+      "reference": "III 7",
+      "xml_number": "VII.",
+      "firstline": "Søster spurde hun anden",
+      "dgf_id": 193,
+      "vedel_text_id": "vedel2001020703",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111487",
+      "reference": "III 8",
+      "xml_number": "VIII.",
+      "firstline": "Daatter spurde hun Moder",
+      "dgf_id": 186,
+      "vedel_text_id": "vedel2001020704",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111488",
+      "reference": "III 9",
+      "xml_number": "IX.",
+      "firstline": "I Lunde Kircke der yppis en Stefn",
+      "dgf_id": 143,
+      "vedel_text_id": "vedel2001020707",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111489",
+      "reference": "III 10",
+      "xml_number": "X.",
+      "firstline": "Og jeg stod for min Herris Bord",
+      "dgf_id": 318,
+      "vedel_text_id": "vedel2001020706",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111490",
+      "reference": "III 11",
+      "xml_number": "XI.",
+      "firstline": "Paa Lindholm Huus",
+      "dgf_id": 383,
+      "vedel_text_id": "vedel2001020705",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111491",
+      "reference": "III 12",
+      "xml_number": "XII.",
+      "firstline": "Det var Oluf Strangesøn",
+      "dgf_id": 329,
+      "vedel_text_id": "vedel2001010205",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111492",
+      "reference": "III 13",
+      "xml_number": "XIII.",
+      "firstline": "Herr Ofve hand vogner om Midienat",
+      "dgf_id": 316,
+      "vedel_text_id": "vedel2001010206",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111493",
+      "reference": "III 14",
+      "xml_number": "XIV.",
+      "firstline": "Herr Alf hand er en Edeling",
+      "dgf_id": 150,
+      "vedel_text_id": "vedel2001010207",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111494",
+      "reference": "III 15",
+      "xml_number": "XV.",
+      "firstline": "Alf hand er i Norge Land fød",
+      "dgf_id": 151,
+      "vedel_text_id": "vedel2001020404",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111495",
+      "reference": "III 16",
+      "xml_number": "XVI.",
+      "firstline": "De Røfvere ligge for Norden Skov",
+      "dgf_id": 152,
+      "vedel_text_id": "vedel2001020405",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111496",
+      "reference": "III 17",
+      "xml_number": "XVII.",
+      "firstline": "De Hofmænd sidde i Roskilde By",
+      "dgf_id": 314,
+      "vedel_text_id": "vedel2001020406",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111497",
+      "reference": "III 18",
+      "xml_number": "XVIII.",
+      "firstline": "De Bønder de klage dem op paa Land",
+      "dgf_id": 161,
+      "vedel_text_id": "vedel2001020401",
+      "source": "vedel"
+    },
+    {
+      "kalliope_id": "folkeviser2026111498",
+      "reference": "III 19",
+      "xml_number": "XIX.",
+      "firstline": "Hans Skrifver hand tiener i Kongens Gaard",
+      "dgf_id": null,
+      "vedel_text_id": "vedel2001020402"
+    },
+    {
+      "kalliope_id": "folkeviser20261114191",
+      "reference": "IV 1",
+      "xml_number": "I.",
+      "firstline": "Nu Dagen vil oprinde",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114192",
+      "reference": "IV 2",
+      "xml_number": "II.",
+      "firstline": "Mange dræbte Hakes Sverde",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114193",
+      "reference": "IV 3",
+      "xml_number": "III.",
+      "firstline": "Jeg voved har mit kiere Liv",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114194",
+      "reference": "IV 4",
+      "xml_number": "IV.",
+      "firstline": "Slig en fornemme Ridder",
+      "dgf_id": 22,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114195",
+      "reference": "IV 5",
+      "xml_number": "V.",
+      "firstline": "Vi hugge med kaarde",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114196",
+      "reference": "IV 6",
+      "xml_number": "VI.",
+      "firstline": "O moder min Svanhvide",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114197",
+      "reference": "IV 7",
+      "xml_number": "VII.",
+      "firstline": "Af Norden jeg da hørde",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114198",
+      "reference": "IV 8",
+      "xml_number": "VIII.",
+      "firstline": "Hvat er i Heimi bettra",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114100",
+      "reference": "IV 9",
+      "xml_number": "IX.",
+      "firstline": "Blakmand Konge vogner om nat",
+      "dgf_id": 10,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114101",
+      "reference": "IV 10",
+      "xml_number": "X.",
+      "firstline": "Torekal kom af Skogie heim",
+      "dgf_id": 1,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114102",
+      "reference": "IV 11",
+      "xml_number": "XI.",
+      "firstline": "Kong Gørel haver en Dotter",
+      "dgf_id": 430,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114103",
+      "reference": "IV 12",
+      "xml_number": "XII.",
+      "firstline": "Jeg vil ej om lysen dag I mark eller skov udride; Thi jeg bær for en stolt jomfru",
+      "dgf_id": 155,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114104",
+      "reference": "IV 13",
+      "xml_number": "XIII.",
+      "firstline": "Magnus var Kong i Sverrig",
+      "dgf_id": 138,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114105",
+      "reference": "IV 14",
+      "xml_number": "XIV.",
+      "firstline": "Der var en Greve i Saxenland",
+      "dgf_id": 378,
+      "source": "dgf-VI"
+    },
+    {
+      "kalliope_id": "folkeviser20261114106",
+      "reference": "IV 15",
+      "xml_number": "XV.",
+      "firstline": "O rige Gud i højeste sal",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114107",
+      "reference": "IV 16",
+      "xml_number": "XVI.",
+      "firstline": "Kongens dotter af Engelland",
+      "dgf_id": 294,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114108",
+      "reference": "IV 17",
+      "xml_number": "XVII.",
+      "firstline": "De Røvere vilde stiele gaa",
+      "dgf_id": 258,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114109",
+      "reference": "IV 18",
+      "xml_number": "XVIII.",
+      "firstline": "Vill’ i høre og lyde",
+      "dgf_id": 195,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114110",
+      "reference": "IV 19",
+      "xml_number": "XIX.",
+      "firstline": "Her Orm hand tiener i Kongens gaard",
+      "dgf_id": 251,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114111",
+      "reference": "IV 20",
+      "xml_number": "XX.",
+      "firstline": "Samsing tiente i Kongens gaard",
+      "dgf_id": 6,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114112",
+      "reference": "IV 21",
+      "xml_number": "XXI.",
+      "firstline": "Der gaar dands paa tofte",
+      "dgf_id": 220,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114113",
+      "reference": "IV 22",
+      "xml_number": "XXI.",
+      "firstline": "Det var stolten Svane-lille",
+      "dgf_id": 287,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114114",
+      "reference": "IV 23",
+      "xml_number": "XXII.",
+      "firstline": "De legte guldtavel ved breden bord",
+      "dgf_id": 475,
+      "source": "gv-475"
+    },
+    {
+      "kalliope_id": "folkeviser20261114115",
+      "reference": "IV 24",
+      "xml_number": "XXIV.",
+      "firstline": "Det var ungen Svegder",
+      "dgf_id": 70,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114116",
+      "reference": "IV 25",
+      "xml_number": "XXV.",
+      "firstline": "Kongen hand sidder i Ribe",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114117",
+      "reference": "IV 26",
+      "xml_number": "XXVI.",
+      "firstline": "Der boer en Jarl i Engelland",
+      "dgf_id": 474,
+      "source": "bandasavn-474"
+    },
+    {
+      "kalliope_id": "folkeviser20261114118",
+      "reference": "IV 27",
+      "xml_number": "XXVII.",
+      "firstline": "Det er i nat vaagenat. Der vaager hvo som vil. Der komme saa mange til dandsen brat. Der vaager hun stolt Signelild under saa grønnen Øe",
+      "dgf_id": 129,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114119",
+      "reference": "IV 28",
+      "xml_number": "XXVIII.",
+      "firstline": "Liden Kirsten og hendes moder",
+      "dgf_id": 265,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114120",
+      "reference": "IV 29",
+      "xml_number": "XXIX.",
+      "firstline": "Liden Malfred ganger i lunden",
+      "dgf_id": 313,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114121",
+      "reference": "IV 30",
+      "xml_number": "XXX.",
+      "firstline": "Liden Kirsten hun stoed paa høje lofts svale",
+      "dgf_id": 203,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114122",
+      "reference": "IV 31",
+      "xml_number": "XXXI.",
+      "firstline": "Stolt Ingeborg lader sig hoveklæder skære",
+      "dgf_id": 267,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114123",
+      "reference": "IV 32",
+      "xml_number": "XXXII.",
+      "firstline": "Hellelild sidder i bure",
+      "dgf_id": 83,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114124",
+      "reference": "IV 33",
+      "xml_number": "XXXIII.",
+      "firstline": "Det var liden Kirsten",
+      "dgf_id": 188,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114125",
+      "reference": "IV 34",
+      "xml_number": "XXXIV.",
+      "firstline": "Signelild sidder i bure",
+      "dgf_id": 65,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114126",
+      "reference": "IV 35",
+      "xml_number": "XXXV.",
+      "firstline": "Algreven blæser i sin luur",
+      "dgf_id": 94,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114127",
+      "reference": "IV 36",
+      "xml_number": "XXXVI.",
+      "firstline": "Hør du goden unger svend",
+      "dgf_id": 238,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "kok2026111401",
+      "reference": "IV 37",
+      "xml_number": "XXXVII.",
+      "firstline": "Japhet var en mæktig helt",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "kok2026111402",
+      "reference": "IV 38",
+      "xml_number": "XXXVIII.",
+      "firstline": "Danmark deiligst vang og vænge",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114130",
+      "reference": "IV 39",
+      "xml_number": "XXXIX.",
+      "firstline": "Solen skinner klar som dag",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114131",
+      "reference": "IV 40",
+      "xml_number": "XL.",
+      "firstline": "Dan Konning og Hr. Asbiørn Snare",
+      "dgf_id": 131,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114132",
+      "reference": "IV 41",
+      "xml_number": "XLI.",
+      "firstline": "Kong Waldemar og Dronning Sophie I sale",
+      "dgf_id": 126,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114133",
+      "reference": "IV 42",
+      "xml_number": "XLII.",
+      "firstline": "Kongen og Dronning Sophi de sad over bord",
+      "dgf_id": 127,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "kok2026111403",
+      "reference": "IV 43",
+      "xml_number": "XLIII.",
+      "firstline": "Leonora Dronning i Barsels nød",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114135",
+      "reference": "IV 44",
+      "xml_number": "XLIV.",
+      "firstline": "Her gaar dands i borgegaard",
+      "dgf_id": 121,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "schepper2026111401",
+      "reference": "IV 45",
+      "xml_number": "XLV.",
+      "firstline": "Her under marmorstene",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114137",
+      "reference": "IV 46",
+      "xml_number": "XLVI.",
+      "firstline": "Kong Frederik hand sider paa Koldinghuus",
+      "dgf_id": 175,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114138",
+      "reference": "IV 47",
+      "xml_number": "XLVII.",
+      "firstline": "Hiertelig mon jeg mig gremme",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114139",
+      "reference": "IV 48",
+      "xml_number": "XLVIII.",
+      "firstline": "Hvad vil os de tegn betyde",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "bangc2026111401",
+      "reference": "IV 49",
+      "xml_number": "XLIX.",
+      "firstline": "Fælder nu taare",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "pontoppidanee2026111401",
+      "reference": "IV 50",
+      "xml_number": "L.",
+      "firstline": "O Danmark du est lykkerig",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114142",
+      "reference": "IV 51",
+      "xml_number": "LI.",
+      "firstline": "Det var Herre Peder",
+      "dgf_id": 67,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114143",
+      "reference": "IV 52",
+      "xml_number": "LII.",
+      "firstline": "En Jomfru sender sin allerkieriste bud",
+      "dgf_id": 180,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114144",
+      "reference": "IV 53",
+      "xml_number": "LIII.",
+      "firstline": "Her Nielus undte stolt Mettelild vel",
+      "dgf_id": 225,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114145",
+      "reference": "IV 54",
+      "xml_number": "LIV.",
+      "firstline": "Det var Henrik Valmarsøn",
+      "dgf_id": 498,
+      "source": "ku-498"
+    },
+    {
+      "kalliope_id": "folkeviser20261114146",
+      "reference": "IV 55",
+      "xml_number": "LV.",
+      "firstline": "Det var silde om en aften",
+      "dgf_id": 226,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114147",
+      "reference": "IV 56",
+      "xml_number": "LVI.",
+      "firstline": "Det var ungen Herre Karl. Fik sot",
+      "dgf_id": 431,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114148",
+      "reference": "IV 57",
+      "xml_number": "LVII.",
+      "firstline": "Min fader reed sig op paa land",
+      "dgf_id": 56,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114149",
+      "reference": "IV 58",
+      "xml_number": "LVIII.",
+      "firstline": "Her Esbern tiener i Kongens gaard",
+      "dgf_id": 250,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114150",
+      "reference": "IV 59",
+      "xml_number": "LIX.",
+      "firstline": "Det var Herre Peder",
+      "dgf_id": 428,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114151",
+      "reference": "IV 60",
+      "xml_number": "LX.",
+      "firstline": "HErre Gud løse vel min angest",
+      "dgf_id": 78,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114152",
+      "reference": "IV 61",
+      "xml_number": "LVI.",
+      "firstline": "Her Lave hand kom fra tinge hiem",
+      "dgf_id": 460,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114153",
+      "reference": "IV 62",
+      "xml_number": "LXII.",
+      "firstline": "Ingefred og Gudrune",
+      "dgf_id": 274,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114154",
+      "reference": "IV 63",
+      "xml_number": "LXIII.",
+      "firstline": "Det var Magnus Aalegrevens Søn",
+      "dgf_id": 181,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114155",
+      "reference": "IV 64",
+      "xml_number": "LXIV.",
+      "firstline": "Her Lave hand reed sig under øe",
+      "dgf_id": 390,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114156",
+      "reference": "IV 65",
+      "xml_number": "LXV.",
+      "firstline": "Liden Kirsten sider ved Dronningens bord",
+      "dgf_id": 496,
+      "source": "ku-496"
+    },
+    {
+      "kalliope_id": "folkeviser20261114157",
+      "reference": "IV 66",
+      "xml_number": "LXVI.",
+      "firstline": "Paa Lindholms bierg der stander en lind",
+      "dgf_id": 205,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114158",
+      "reference": "IV 67",
+      "xml_number": "LXVII.",
+      "firstline": "Det var Jomfru Gundelille",
+      "dgf_id": 234,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114159",
+      "reference": "IV 68",
+      "xml_number": "LXVIII.",
+      "firstline": "Her Lovmand reed sig under øe",
+      "dgf_id": 387,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114160",
+      "reference": "IV 69",
+      "xml_number": "LXIX.",
+      "firstline": "Torkild hand er den gæveste svend",
+      "dgf_id": 429,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114161",
+      "reference": "IV 70",
+      "xml_number": "LXX.",
+      "firstline": "Jeg stod mig ved en bek at toe",
+      "dgf_id": 381,
+      "source": "dgf-VI"
+    },
+    {
+      "kalliope_id": "folkeviser20261114162",
+      "reference": "IV 71",
+      "xml_number": "LXXI.",
+      "firstline": "Eengang reed jeg paa Dovrefield",
+      "dgf_id": 184,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114163",
+      "reference": "IV 72",
+      "xml_number": "LXXII.",
+      "firstline": "Kirstenlild tiener i Kongens gaard",
+      "dgf_id": 128,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114164",
+      "reference": "IV 73",
+      "xml_number": "LXXIII.",
+      "firstline": "Broder spurde søster ad",
+      "dgf_id": 304,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114165",
+      "reference": "IV 74",
+      "xml_number": "LXXIV.",
+      "firstline": "Der ligger et kloster for oven den skov",
+      "dgf_id": 15,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114166",
+      "reference": "IV 75",
+      "xml_number": "LXXV.",
+      "firstline": "Hellelild vogner om midie nat",
+      "dgf_id": 312,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114167",
+      "reference": "IV 76",
+      "xml_number": "LXXVI.",
+      "firstline": "Her Karl sidder over tavelbord",
+      "dgf_id": 23,
+      "source": "dgf-I"
+    },
+    {
+      "kalliope_id": "folkeviser20261114168",
+      "reference": "IV 77",
+      "xml_number": "LXXVII.",
+      "firstline": "Det var ungen Her Svend Dyring",
+      "dgf_id": 394,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114169",
+      "reference": "IV 78",
+      "xml_number": "LXXVIII.",
+      "firstline": "Svend Dyring hand rider sig op under øe",
+      "dgf_id": 89,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114170",
+      "reference": "IV 79",
+      "xml_number": "LXXIX.",
+      "firstline": "Stolten Ellensborg stander i højeloft",
+      "dgf_id": 303,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114171",
+      "reference": "IV 80",
+      "xml_number": "LXXX.",
+      "firstline": "To Ledingsmænd lagdes under ee",
+      "dgf_id": 252,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114172",
+      "reference": "IV 81",
+      "xml_number": "LXXXI.",
+      "firstline": "Karl Høfding hand sider paa Ramsøe",
+      "dgf_id": 389,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114173",
+      "reference": "IV 82",
+      "xml_number": "LXXXII.",
+      "firstline": "Her Jonas og Her Nielus Maard",
+      "dgf_id": 112,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114174",
+      "reference": "IV 83",
+      "xml_number": "LXXXIII.",
+      "firstline": "Engang skulde jeg min kierest ven lære",
+      "dgf_id": 462,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114175",
+      "reference": "IV 84",
+      "xml_number": "LXXXIV.",
+      "firstline": "Her Helmer Blaa rider sig i rosens lund",
+      "dgf_id": 415,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114176",
+      "reference": "IV 85",
+      "xml_number": "LXXXV.",
+      "firstline": "Jeg vil eder en vise kvæde",
+      "dgf_id": 86,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114177",
+      "reference": "IV 86",
+      "xml_number": "LXXXVI.",
+      "firstline": "Oluf Pant hand sidder paa Korsøer huus",
+      "dgf_id": 315,
+      "source": "dgf-V"
+    },
+    {
+      "kalliope_id": "folkeviser20261114178",
+      "reference": "IV 87",
+      "xml_number": "LXXXVII.",
+      "firstline": "Her Oluf hand rider saa vide",
+      "dgf_id": 47,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114179",
+      "reference": "IV 88",
+      "xml_number": "LXXXVIII.",
+      "firstline": "Ribolt er en Greve-søn",
+      "dgf_id": 82,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114180",
+      "reference": "IV 89",
+      "xml_number": "LXXXIX.",
+      "firstline": "Paa Dofrefield i Norge",
+      "dgf_id": 69,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114181",
+      "reference": "IV 90",
+      "xml_number": "XC.",
+      "firstline": "Her Ove har ej daatter uden een",
+      "dgf_id": 84,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114182",
+      "reference": "IV 91",
+      "xml_number": "XCI.",
+      "firstline": "Kier moder I strax kiender mig raad. Mig tykkes det er tungt. Hvorledis jeg Marstigs datter kand faa. Mig tykkes det er tungt at udride",
+      "dgf_id": 39,
+      "source": "dgf-II"
+    },
+    {
+      "kalliope_id": "folkeviser20261114183",
+      "reference": "IV 92",
+      "xml_number": "XCII.",
+      "firstline": "Her Ebbe lod bygge saa høy en bure",
+      "dgf_id": 194,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114184",
+      "reference": "IV 93",
+      "xml_number": "XCIII.",
+      "firstline": "I Slagelse var en Sogne-Præst",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114185",
+      "reference": "IV 94",
+      "xml_number": "XCIV.",
+      "firstline": "Saa store hellige gaver",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser20261114186",
+      "reference": "IV 95",
+      "xml_number": "XCV.",
+      "firstline": "Det var om en løverdag",
+      "dgf_id": 391,
+      "source": "dgf-VII"
+    },
+    {
+      "kalliope_id": "folkeviser20261114187",
+      "reference": "IV 96",
+      "xml_number": "XCVI.",
+      "firstline": "Det var Elen Oves daatter",
+      "dgf_id": 233,
+      "source": "dgf-IV"
+    },
+    {
+      "kalliope_id": "folkeviser20261114188",
+      "reference": "IV 97",
+      "xml_number": "XCVII.",
+      "firstline": "Erik Stygesen tiener i Kongens gaard",
+      "dgf_id": 167,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114189",
+      "reference": "IV 98",
+      "xml_number": "XCVIII.",
+      "firstline": "Det var Morten Venstermand",
+      "dgf_id": 168,
+      "source": "dgf-III"
+    },
+    {
+      "kalliope_id": "folkeviser20261114190",
+      "reference": "IV 99",
+      "xml_number": "XCIX.",
+      "firstline": "O HErre Gud hvor gaar det til",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "anonym1600dk2026111301",
+      "reference": "IV 100",
+      "xml_number": "C.",
+      "firstline": "Ald verdslig pragt",
+      "dgf_id": null
+    },
+    {
+      "kalliope_id": "folkeviser2026111499",
+      "reference": "Tillæg: første vise om købstæderne",
+      "firstline": "Og det springer saa vide om Land",
+      "dgf_id": 149,
+      "dgf_appendix": "c",
+      "vedel_text_id": "vedel2001020403",
+      "source": "vedel"
+    }
+  ]
+}

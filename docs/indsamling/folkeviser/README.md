@@ -30,3 +30,26 @@ Særlige forhold:
 
 Tekstindhold, eksisterende relationer og kilder ændres ikke. Visning,
 automatisk sammenkædning og omlægning af samlingen i #2168 udestår.
+
+## Syvs 200 Viser (1695)
+
+`syv-1695-dgf-konkordans.json` forbinder de 200 nummererede hovedposter og
+købstadsvisen i tillægget med tekst-ID'er i `fdirs/syv/1695.xml`. Der er
+indsat 166 DgF-forbindelser: 87 i første hundrededel, 78 i anden og én i
+tillægget. De 35 øvrige hovedposter står uden tildelt DgF-nummer. Dette er
+ikke en påstand om, at samtlige 35 tekster er fraværende i DgF.
+
+Første hundrededel bygger på de eksisterende forbindelser til Vedel og
+ovennævnte konkordans. Anden hundrededel bygger især på DgF-udgavens
+indholdsfortegnelser og Syv-henvisninger. KU's håndskriftudgave supplerer
+kontrollen af DgF 496 og 498; Grundtvigs Værker dokumenterer Syv IV 23 som
+DgF 475, og Bandasavnið forbinder begyndelsen til Syv IV 26 med DgF 474.
+De konkrete kilder er samlet i JSON-filens `sources`, og hver tildeling
+henviser til sit grundlag. Der er ikke fundet en samlet KU-konkordans for
+Syv, og Vedel-PR #2185 angav heller ikke en sådan kilde.
+
+Syvs trykte nummereringsfejl er bevaret. For eksempel er IV 23 trykt som
+XXII, mens IV 61 er trykt som LVI. `reference` og `xml_number` holdes derfor
+adskilt. XML ændres via tekst-ID, ikke via en søgning efter det trykte nummer.
+Kun DgF-typen registreres; variant- og vidnebogstaver fra andre udgaver
+overføres ikke. Købstadstravestien bevarer `appendix="c"` ved DgF 149.
