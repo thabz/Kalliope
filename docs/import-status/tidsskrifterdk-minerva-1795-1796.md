@@ -55,7 +55,14 @@ De trykte signaturer bevares, og alternative attributioner behandles særskilt.
 Nyerup registrerer eksempelvis *Kiempevise* fra bind 46 under Johan Michael
 Lund, mens det trykte bidrag er underskrevet »C. Lund.«.
 
-Begge kalenderårsværker har foreløbig status `incomplete` under den afsluttende validering.
+Begge kalenderårsværker har status `incomplete`. Alle 53 tekstposter har
+været igennem uafhængig visuel korrektur, og OCR med to opsætninger er
+sammenholdt med de indlæste verslinjer bind for bind. Det endelige
+korrekturbevis kræver desuden særskilt dokumentation af typografi pr. side
+og af hver markeret afvigelse i strukturkontrollen. Korrekturværktøjet
+læser billednumrene uden at inddrage kilde-id og kan derfor ikke skelne
+mellem samme billednummer i forskellige bind i et kalenderårsværk.
+Billedhenvisningerne er kontrolleret bindvis.
 
 ## Afstemt udvalg
 
