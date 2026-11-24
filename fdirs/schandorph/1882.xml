@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1882" author="schandorph" status="complete" type="poetry">
+<kalliopework id="1882" author="schandorph" status="complete" type="poetry" ignore-tests="mixed-aa-circumflex,single-circumflex-a-in-text">
+<!-- Udgaven bruger historiske cirkumfleksformer som saâ, saâs, naâr og naâs. -->
 <workhead>
   <title>Samlede Digte</title>
   <subtitle>Ældre og nyere</subtitle>
@@ -26,7 +27,7 @@
   <pagebreaks/>
   <errata status="none"/>
   <proofreadings>
-    <proofreading model="gpt-6.2-sol" datetime="2026-11-24T08:43:39Z"/>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-24T08:53:09Z"/>
   </proofreadings>
 </workhead>
 <workbody>
@@ -558,7 +559,7 @@ stig ned i Bjergets Grube trang og kvalm,
 følg Granskeren, naar af det sorte Malm
 med stille Flid han renser ud Metallet!
 giv Agt, naar bag det kunstigt slebne Glar,
-hans Øje bliver store Love vår,
+hans Øje bliver store Love vâr,
 og følg kun Knivens skarpe Eg, der trænger
 til Livets gaadefulde Rødder ind!
 bryd ej dig om, naar Videnskaben sprænger
@@ -2725,7 +2726,7 @@ da skal <w>vor</w> Fane vaje fra Taarn og fra Hus.
 </body>
 </text>
 
-<text id="schandorph2026112427" variant="schandorph2018080535">
+<text id="schandorph2026112427" variant="schandorph2018080535" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Efter Paris's Fald</title>
   <subtitle>(Januar 1871).</subtitle>
@@ -2789,7 +2790,7 @@ hvormed du paa værdig Maade kan din Dukke maje ud.
 
 Var det Sligt, som Han dig lærte, der med en olympisk Aand,
 gudbesjælet, sang en Verden ind i Harmoniens Baand?
-Var det <w>Det</w>, som lønlig drømtes af din store Skjaldehær
+Var det <w>Det</w><!-- Trykkets gentagelse på s. 71 er kontrolleret. -->, som lønlig drømtes af din store Skjaldehær
 under gamle Kirkeruders underlige Farveskjær?
 
 Lærte <w>de</w> dig Aandens Trældom under Preussens Herskerstav?
