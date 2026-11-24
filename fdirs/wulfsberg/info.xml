@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="wulfsberg" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Jacob</firstname>
+    <lastname>Wulfsberg</lastname>
+  </name>
+  <!-- Leveår og steder efter Yngvar Nielsens opslag i Dansk biografisk Lexikon. -->
+  <period>
+    <born>
+      <date>1751-01-14</date>
+      <place>Tønsberg</place>
+    </born>
+    <dead>
+      <date>1826-08-16</date>
+      <place>Nedre Eker</place>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+</person>
