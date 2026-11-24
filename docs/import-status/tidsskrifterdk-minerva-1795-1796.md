@@ -57,9 +57,12 @@ Lund, mens det trykte bidrag er underskrevet »C. Lund.«.
 
 Begge kalenderårsværker har status `incomplete`. Alle 53 tekstposter har
 været igennem uafhængig visuel korrektur, og OCR med to opsætninger er
-sammenholdt med de indlæste verslinjer bind for bind. Det endelige
-korrekturbevis kræver desuden særskilt dokumentation af typografi pr. side
-og af hver markeret afvigelse i strukturkontrollen. Korrekturværktøjet
+sammenholdt med de indlæste verslinjer bind for bind. Den særskilte
+typografikontrol omfattede alle 322 facsimilesider med medtaget tekst.
+Den gav rettelser af bl.a. kursiv i det latinske Lucretius-stykke og
+spatiering i »Festen i Valhal«. Hele titeloverskrifter er gengivet med det
+almindelige titelfelt. Det endelige korrekturbevis kræver en dokumenteret
+afgørelse for hver markeret afvigelse i strukturkontrollen. Korrekturværktøjet
 læser billednumrene uden at inddrage kilde-id og kan derfor ikke skelne
 mellem samme billednummer i forskellige bind i et kalenderårsværk.
 Billedhenvisningerne er kontrolleret bindvis.
