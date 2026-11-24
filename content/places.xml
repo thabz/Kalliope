@@ -537,6 +537,12 @@
     <wikidata>Q3933</wikidata>
     <type>city</type>
   </place>
+  <place id="central-jutland">
+    <name>Midtjylland</name>
+    <type>region</type>
+    <parent ref="jutland"/>
+    <!-- Det centrale Jylland som geografisk område. Kilde: https://dcapub.au.dk/djfpublikation/djfpdf/DCArapport135.pdf -->
+  </place>
   <place id="charlottenlund">
     <name>Charlottenlund</name>
     <wikidata>Q1373658</wikidata>
@@ -584,6 +590,13 @@
     <type>monument/tomb</type>
     <alias>Tomba di Cicerone</alias>
     <parent ref="formia"/>
+  </place>
+  <place id="city-of-london">
+    <name>City of London</name>
+    <wikidata>Q23311</wikidata>
+    <type>district</type>
+    <alias>City</alias>
+    <parent ref="london"/>
   </place>
   <place id="civita-castellana">
     <name>Civita Castellana</name>
@@ -695,6 +708,12 @@
     <type>mountain-range</type>
     <alias>Dovre</alias>
     <parent ref="norway"/>
+  </place>
+  <place id="drachmanns-grav">
+    <name>Drachmanns grav</name>
+    <type>grave</type>
+    <parent ref="grenen-skagen"/>
+    <!-- Kilde: https://skulpturguide.frederikshavn.dk/skagen/40-drachmanns-grav -->
   </place>
   <place id="drammen">
     <name>Drammen</name>
@@ -1368,6 +1387,12 @@
     <canonical-name>Hanover</canonical-name>
     <wikidata>Q1715</wikidata>
     <type>city</type>
+  </place>
+  <place id="hansted-skov">
+    <name>Hansted Skov</name>
+    <type>forest</type>
+    <parent ref="jutland"/>
+    <!-- Hansted Skov ved Horsens. Kilde: https://lokalplaner.horsens.dk/439-boliger-banevej-hansted-horsens/formaal-indhold/beliggenhed-eksisterende-forhold/ -->
   </place>
   <place id="haran">
     <name>Harran</name>
@@ -2465,6 +2490,14 @@
     <alias>Pæstum</alias>
     <parent ref="italy"/>
   </place>
+  <place id="palace-of-westminster">
+    <name>Westminsterpaladset</name>
+    <canonical-name>Palace of Westminster</canonical-name>
+    <wikidata>Q62408</wikidata>
+    <type>palace</type>
+    <alias>Houses of Parliament</alias>
+    <parent ref="london"/>
+  </place>
   <place id="palatine-hill">
     <name>Palatinerhøjen</name>
     <canonical-name>Palatine Hill</canonical-name>
@@ -3063,6 +3096,15 @@
     <type>park</type>
     <parent ref="jutland"/>
   </place>
+  <place id="skjern-aa">
+    <name>Skjern Å</name>
+    <wikidata>Q2025017</wikidata>
+    <type>river</type>
+    <alias>Skjern Aa</alias>
+    <alias>Skjernaa</alias>
+    <alias>Skjernåen</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="skokloster-castle">
     <name>Skokloster Slot</name>
     <canonical-name>Skokloster Castle</canonical-name>
@@ -3201,6 +3243,13 @@
     <alias>Marcuspladsen</alias>
     <alias>Piazza San Marco</alias>
     <parent ref="venice"/>
+  </place>
+  <place id="st-pauls-cathedral-london">
+    <name>St. Paul’s Cathedral</name>
+    <wikidata>Q173882</wikidata>
+    <type>cathedral</type>
+    <alias>St. Paul</alias>
+    <parent ref="city-of-london"/>
   </place>
   <place id="st-peters-basilica">
     <name>Peterskirken</name>
@@ -3342,6 +3391,14 @@
     <alias>Teracina</alias>
     <parent ref="italy"/>
   </place>
+  <place id="thames">
+    <name>Themsen</name>
+    <canonical-name>River Thames</canonical-name>
+    <wikidata>Q19686</wikidata>
+    <type>river</type>
+    <alias>Thames</alias>
+    <parent ref="england"/>
+  </place>
   <place id="third-christiansborg-palace">
     <name>Det tredje Christiansborg</name>
     <type>palace</type>
@@ -3433,6 +3490,13 @@
     <alias>Arnolfos Taarn</alias>
     <parent ref="florence"/>
     <!-- Kilde: Musei Civici Fiorentini, https://bigliettimusei.comune.fi.it/31_torre-di-arnolfo/. -->
+  </place>
+  <place id="tower-of-london">
+    <name>Tower of London</name>
+    <wikidata>Q62378</wikidata>
+    <type>fortress</type>
+    <alias>Tower</alias>
+    <parent ref="london"/>
   </place>
   <place id="trekroner-fort">
     <name>Trekroner Søfort</name>
@@ -3692,6 +3756,12 @@
     <alias>Vierland</alias>
     <parent ref="hamburg"/>
   </place>
+  <place id="vieux-craonne">
+    <name>Vieux Craonne</name>
+    <type>ruins</type>
+    <parent ref="france"/>
+    <!-- Det historiske landsbysted. Kilde: https://pop.culture.gouv.fr/notice/merimee/PA02000048 -->
+  </place>
   <place id="vikersund">
     <name>Vikersund</name>
     <wikidata>Q988426</wikidata>
@@ -3757,6 +3827,18 @@
     <type>locality</type>
     <parent ref="denmark"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 55. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="vroending">
+    <name>Vrønding</name>
+    <type>village</type>
+    <parent ref="jutland"/>
+    <!-- Vrønding i Tamdrup Sogn ved Horsens. Kilde: https://kommuneplan2021.horsens.dk/tillaeg/2021-12-tematillaeg-for-landsbyerne/opslagsvaerk-over-fremtidige-muligheder-i-landsbyerne/vroending/ -->
+  </place>
+  <place id="westminster-abbey">
+    <name>Westminster Abbey</name>
+    <wikidata>Q5933</wikidata>
+    <type>abbey</type>
+    <parent ref="london"/>
   </place>
   <place id="wetterhorn">
     <name>Wetterhorn</name>

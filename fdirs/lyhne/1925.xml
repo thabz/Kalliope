@@ -33,6 +33,10 @@
   <title>Tilbage</title>
   <firstline>I Kræmmerkappestrid og Konkurrence</firstline>
   <source pages="9-11"/>
+  <places>
+    <place ref="gudenaa" relation="setting" primary="true"/>
+    <place ref="central-jutland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -315,6 +319,9 @@ og løs for en Sang i mit Bryst.
   <title>Rast ved Skjern Aa</title>
   <firstline>Blæsende Skumring. Skyerne gløder</firstline>
   <source pages="22-23"/>
+  <places>
+    <place ref="skjern-aa" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -354,6 +361,12 @@ smiler til mig sit alvidende Smil.
   <title>Efteraarsnat paa Grenen</title>
   <firstline>Oh stormende Nætter, naar Havene brydes mod Skagens Gren</firstline>
   <source pages="24-25"/>
+  <places>
+    <place ref="grenen-skagen" relation="setting" primary="true"/>
+    <place ref="drachmanns-grav" relation="mentioned"/>
+    <place ref="north-sea" relation="mentioned"/>
+    <place ref="kattegat" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -535,6 +548,9 @@ der var som en sløret Notturno, uendelig, fjern og fin.
   <title>Som hjemme ved Gudenaa</title>
   <firstline>Hvor fandt du Vildrosen saa rød</firstline>
   <source pages="34-35"/>
+  <places>
+    <place ref="gudenaa" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -604,6 +620,9 @@ sygner Sol bag Graavejrssky.
   <title>De lyse Nætter er forbi</title>
   <firstline>Det lyner imod Høst, de lyse Nætter</firstline>
   <source pages="38-39"/>
+  <places>
+    <place ref="copenhagen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -730,6 +749,9 @@ Fra Hedens Vidder risler en ensom Bjældes Klang
   <title>Høstpigen synger</title>
   <firstline>Hej! Hestetramp og Piskesmæld — nu køres Rugen ind</firstline>
   <source pages="44-45"/>
+  <places>
+    <place ref="gudenaa" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -781,6 +803,9 @@ og danse mig i Sørens Favn til Himmerige ind. —
   <title>I Storm over Nordsøen</title>
   <firstline>Kender I Havet i stormende Høst</firstline>
   <source pages="49"/>
+  <places>
+    <place ref="north-sea" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -817,6 +842,10 @@ Selv er jeg søsyg og ligeglad. —
   <title>Continental-Ekspressen</title>
   <firstline>Jeg er den store Europaekspres</firstline>
   <source pages="50-51"/>
+  <places>
+    <place ref="france" relation="setting" primary="true"/>
+    <place ref="europe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -862,6 +891,9 @@ gennem de høstlige Skove?
   <subtitle>og Vintergækken</subtitle>
   <firstline>Jeg fandt i Frankrigs Champ de bataille</firstline>
   <source pages="52"/>
+  <places>
+    <place ref="france" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -897,6 +929,9 @@ forventer Vaarens Atterkomst.
   <subtitle>i Slagmarkerne ved Craonne</subtitle>
   <firstline>Det mørkner over Craonne</firstline>
   <source pages="53-54"/>
+  <places>
+    <place ref="vieux-craonne" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -947,6 +982,15 @@ sunkne som Kirken i Grus!
   <title>London</title>
   <firstline>Det skumrer, mens vort Skib staar ind ad Themsens gustne Vande</firstline>
   <source pages="55"/>
+  <places>
+    <place ref="london" relation="setting" primary="true"/>
+    <place ref="thames" relation="setting"/>
+    <place ref="tower-of-london" relation="mentioned"/>
+    <place ref="st-pauls-cathedral-london" relation="mentioned"/>
+    <place ref="westminster-abbey" relation="mentioned"/>
+    <place ref="palace-of-westminster" relation="mentioned"/>
+    <place ref="city-of-london" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -988,6 +1032,9 @@ mens Londons klare Klokkespil sødt gennem Kvælden kimer.
   <title>Tiden</title>
   <subtitle>(Efter Percy Shelly).</subtitle>
   <firstline>Oh, Tids-Ocean, dine Bølger er Aar</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Percy Bysshe Shelleys <xref type="translation" poem="shelley2026112401"/>.</note>
+  </notes>
   <source pages="59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1046,6 +1093,9 @@ hvis ikke du kysser mig?
   <title>Klage</title>
   <subtitle>(Efter Percy Shelly)</subtitle>
   <firstline>Oh Liv, oh Tid, som gaar</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Percy Bysshe Shelleys <xref type="translation" poem="shelley2026112402"/>.</note>
+  </notes>
   <source pages="61"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -1076,6 +1126,11 @@ Aldrig mere — ak ingensinde!
   <firstline>Det er en Junidag, at Brandes sammen med Jens Kjær</firstline>
   <source pages="65-67"/>
   <keywords>brandes</keywords>
+  <places>
+    <place ref="hansted-skov" relation="setting" primary="true"/>
+    <place ref="vroending" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1153,6 +1208,10 @@ vor Høvding med et frigjort Smil.
   <subtitle>1853 — 1. Juni — 1923.</subtitle>
   <firstline>Søgende ad lønlig Sti</firstline>
   <source pages="69-71"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1268,6 +1327,9 @@ En Skaal for Jer, I brave, unge Bønder!
   <subtitle>(Konfirmation).</subtitle>
   <firstline>Spætten hamrer — nu er Vaaren inde</firstline>
   <source pages="74-75"/>
+  <places>
+    <place ref="gudenaa" relation="setting" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1317,35 +1379,6 @@ bagom Kimmingen med hvide Sky’r,
 og de Unges Øjne funkler kække,
 nu som da, mod Fremtidsæventyr.
 </poetry>
-</body>
-</text>
-
-<text id="lyhne2026112434">
-<head>
-  <title>Knud Lyhnes Digtsamlinger</title>
-  <toctitle>Udtalelser</toctitle>
-  <nofirstline/>
-  <source pages="76"/>
-  <keywords>brandes,larsent,aakjaer,rimestad</keywords>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<prose>
- „Mod Vind og Strøm“ og „Provinsbyens Sange“ er forlængst udsolgte.
- Om hans sidste Bog „Lur og Lyre“ (Pio) skriver fire af vore fineste Verskendere følgende:
-
- „— — — Knud Lyhnes Talent er utvivlsomt; han har Friskhed, selvstændig Versbehandling, og han har Lune — — —.“
-<right>(Georg Brandes).</right>
-
- „— — — Han har allerede udgivet 3 Digtsamlinger, der viser rig Udvikling, ejendommeligt Talent, Oprindelighed i Følelse og Lune — — —.“
-<right>(Thøger Larsen).</right>
-
- „— — — Knud Lyhne er saa begavet og talentfuld Forfatter, at han fuldtud fortjener Carl Møller-Legatet.“
-<right>(Jeppe Aakjær).</right>
-
- „— — — Af de unge Digtere, der i Aar har udgivet nye Bøger, er Knud Lyhne den, der har gjort de største Fremskridt — — —.“
-<right>(Magister Chr. Rimestad).</right>
-</prose>
 </body>
 </text>
 
