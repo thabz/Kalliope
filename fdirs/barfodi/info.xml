@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="barfodi" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Immanuel</firstname>
+    <lastname>Barfod</lastname>
+    <christened>Immanuel Barfoed</christened>
+  </name>
+  <period>
+    <born>
+      <date>1820-07-16</date>
+      <place>Lyngby, Djursland</place>
+    </born>
+    <dead>
+      <date>1896-05-15</date>
+      <place>Våbensted</place>
+    </dead>
+  </period>
+  <literary-periods>dk-guldalder-og-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q12318167</wikidata>
+    <biografisk-leksikon-lex-dk>Immanuel_Barfod</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>
