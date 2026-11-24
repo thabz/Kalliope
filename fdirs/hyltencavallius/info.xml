@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hyltencavallius" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Gunnar Olof</firstname>
+    <lastname>Hyltén-Cavallius</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1818-05-18</date>
+      <place>Hönetorp, Vislanda</place>
+    </born>
+    <dead>
+      <date>1889-07-05</date>
+      <place>Sunnanvik</place>
+    </dead>
+  </period>
+  <literary-periods>se-romantik</literary-periods>
+  <identifiers>
+    <wikidata>Q3120877</wikidata>
+    <runeberg-org>cavallgo</runeberg-org>
+  </identifiers>
+</person>
