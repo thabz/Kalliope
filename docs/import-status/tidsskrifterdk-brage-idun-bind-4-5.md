@@ -34,19 +34,26 @@ ansvarhavende redaktør. Bind 5 udkom med ét hæfte.
   fulde ordlyd og forholdet til det annoncerede nummer skal afklares ud
   fra det udfoldede bilag.
 
-For at genoptage importen skal de to bilag fotograferes eller skannes
-udfoldet i et eksemplar af de relevante hæfter. Kontrollér trykkets
-identitet, og gennemgå derefter hele sideinventaret, inklusive
-upaginerede sider og rettelsesark.
 
-## Status
+De to bilag er efter aftale udeladt af importen. Den offentliggjorte
+faksimileserie omfatter PDF'ens optagelser, også de foldede blade.
 
-- [x] Afgrænset begge bind i den lokale PDF og kontrolleret hæfterne og de to bilag.
-- [ ] Verificeret komplet facsimile og afsluttet sideinventar, inklusive rettelsesark.
-- [ ] Afgrænset versstof, prosa, musik og øvrige bilag samt identificeret alle bidragydere.
-- [ ] Transskriberet og korrekturlæst de relevante tekster med sideskift, strofer, indryk, typografi og noter.
-- [ ] Registreret hæfter og titelbladsbilleder, afstemt tekstversioner og valideret XML.
-- [ ] Synkroniseret og kontrolleret facsimilerne.
+## Import
 
-Arbejdet stoppede under kildekontrollen. Der blev ikke kørt ny OCR, oprettet
-værk-XML eller publiceret billeder eller facsimiler.
+- Bind 4 rummer 18 versbidrag og bind 5 rummer 25. Importen omfatter
+  selvstændige digte og sange fra prosabidragene samt digtene i tidsskriftets
+  digtafsnit. Korte verscitater og artiklernes øvrige prosa er udeladt.
+- De seks sange og digte fra Knud Henning Poulsens beretning om
+  studenterbesøget er medtaget. To bidrag er registreret med trykkets
+  signaturer »Andersson« og »Hjerta«, da fulde navne ikke er verificeret.
+- Trykt side 289 i bind 4 har også sidetallet 288, rettet i hånden i
+  eksemplaret. Sideskiftene følger den sammenhængende paginering. De to
+  gentagne optagelser midt i »Danmarks Adel« udløser ingen ekstra sideskift.
+- Hæfterne har fem registrerede titelblade. Sidegennemgangen fandt intet
+  særskilt rettelsesark. Bagger-teksten er forbundet med den eksisterende
+  version, og Wergelands »Kong Kristian den Andens Ballade« henviser til DgF 173.
+- Svend Hersleb Grundtvig og Immanuel Barfod er oprettet med metadata,
+  biografier og portrætter.
+- Formen »Åandens« i Frederik Barfods digt på trykt side 206 i bind 5
+  (PDF-side 797) følger trykket. Tekstkvalitetsreglen `mixed-aa-ring`
+  er undtaget for denne ene tekst.
