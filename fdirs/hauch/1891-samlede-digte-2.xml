@@ -36,10 +36,16 @@
 <text id="hauch2026112406" variant="hauch2019010423">
 <head>
   <title>Vexelsang ved en Kirkeconcert</title>
-  <subtitle>(Efter en Oversvømmelse paa Vestkysten af Jylland.)</subtitle>
-  <subtitle>(„Brage og Idun“, 1839.)</subtitle>
+  <subtitle>
+    <line>(Efter en Oversvømmelse paa Vestkysten af Jylland.)</line>
+    <line>(„Brage og Idun“, 1839.)</line>
+  </subtitle>
   <firstline>Stormen hviner, Skoven bæver, Hytten skjælver under Strand</firstline>
   <source pages="3-5" facsimile-pages="359-361"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="jutland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -98,20 +104,26 @@ At den renset kan opstige fra den dunkle Grav til Dig!
 <section>
 <head>
   <title>To geistlige Sange</title>
-  <subtitle>(Frit behandlede efter Novalis.)</subtitle>
-  <subtitle>(1840.)</subtitle>
+  <subtitle>
+    <line>(Frit behandlede efter Novalis.)</line>
+    <line>(1840.)</line>
+  </subtitle>
 </head>
 <content>
 
 <text id="hauch2026112412" variant="hauch2019010426">
 <head>
-  <title>1</title>
-  <titleblock><part type="main"><line>1.</line></part></titleblock>
+  <title><num>1.</num>Min Sjæl, hvad kan Du meer begjære</title>
+  <indextitle>Min Sjæl, hvad kan Du meer begjære</indextitle>
   <firstline>Min Sjæl, hvad kan Du meer begjære</firstline>
   <notes>
     <note editorial="true">Fri gendigtning af Novalis’ <xref type="translation" poem="novalis2005060513"/>.</note>
   </notes>
   <source pages="5-7" facsimile-pages="361-363"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="kidron-valley" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -181,13 +193,14 @@ Og dog hos mig Du dvæle skal.
 
 <text id="hauch2026112413" variant="hauch2019010427">
 <head>
-  <title>2</title>
-  <titleblock><part type="main"><line>2.</line></part></titleblock>
+  <title><num>2.</num>Der gives saa bange Tider</title>
+  <indextitle>Der gives saa bange Tider</indextitle>
   <firstline>Der gives saa bange Tider</firstline>
   <notes>
     <note editorial="true">Fri gendigtning af Novalis’ <xref type="translation" poem="novalis2005060512"/>.</note>
   </notes>
   <source pages="7-8" facsimile-pages="363-364"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -239,6 +252,7 @@ Fra det forjettede Land.
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Solen i sin klare Glands</firstline>
   <source pages="9-10" facsimile-pages="365-366"/>
+  <keywords>salme</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -280,6 +294,10 @@ Da har Smerten tabt sin Braad!
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>O, Herre! jeg vil gaae, hvorhen Du kalder</firstline>
   <source pages="10-11" facsimile-pages="366-367"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -335,13 +353,18 @@ Jeg skuffed ei min Gud.
 <text id="hauch2026112410" variant="hauch2019010428">
 <head>
   <title>Et geistligt Digt</title>
-  <subtitle>(Efter Schenkendorf.)</subtitle>
-  <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
+  <subtitle>
+    <line>(Efter Schenkendorf.)</line>
+    <line>(„Lyriske Digte“, 1842.)</line>
+  </subtitle>
   <firstline>Stedse maa jeg derpaa grunde</firstline>
   <notes>
     <note editorial="true">Gendigtning af <xref type="translation" poem="schenkendorf2026090301"/>, som Hauch tilskriver Schenkendorf.</note>
   </notes>
   <source pages="12-13" facsimile-pages="368-369"/>
+  <places>
+    <place ref="judea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -387,13 +410,16 @@ Frelst og salig ved Dit Blod.
 <text id="hauch2026112411" variant="hauch2019010429">
 <head>
   <title>Gudhengivenhed</title>
-  <subtitle>(Frit omarbeidet efter Paul Gerhard.)</subtitle>
-  <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
+  <subtitle>
+    <line>(Frit omarbeidet efter Paul Gerhard.)</line>
+    <line>(„Lyriske Digte“, 1842.)</line>
+  </subtitle>
   <firstline>Mod Herrens Aasyn gaaer min Vei</firstline>
   <notes>
     <note editorial="true">Fri gendigtning af Paul Gerhardts <xref type="translation" poem="gerhardt2026090301"/>.</note>
   </notes>
   <source pages="13-16" facsimile-pages="369-372"/>
+  <keywords>salme</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -507,6 +533,11 @@ Mens Himlens Klokker klinge.
   <subtitle>(Digtet 1816; trykt i „Iris“ 1819.)</subtitle>
   <firstline>Med røden Kind, med Fjer der vendte</firstline>
   <source pages="19-31" facsimile-pages="375-387"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="loreto" relation="setting"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -877,6 +908,10 @@ Hun saae ham under Hjulets Tænder.
   <subtitle>(Digtet 1816; trykt i „Iris“ 1819.)</subtitle>
   <firstline>Alviva var Konningens Søster huld</firstline>
   <source pages="32-36" facsimile-pages="388-392"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="england" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1011,11 +1046,16 @@ Og brister af inderlig Smerte.
 
 <text id="hauch20261124152" variant="hauch2019011832">
 <head>
-  <title>De tre Haarlokker</title>
-  <titleblock><part type="main"><line>De tre Haarlokker,</line></part><part type="sub"><line>et Digt i fem Romancer.</line></part></titleblock>
-  <subtitle>(1837.)</subtitle>
+  <title>De tre Haarlokker,</title>
+  <subtitle>
+    <line>et Digt i fem Romancer.</line>
+    <line>(1837.)</line>
+  </subtitle>
+  <toctitle>De tre Haarlokker</toctitle>
+  <linktitle>De tre Haarlokker</linktitle>
   <firstline>En Lampe glimter ene</firstline>
   <source pages="36-48" facsimile-pages="392-404"/>
+  <keywords>romance</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1372,6 +1412,15 @@ Der reddet har sin Søn.
   <subtitle>(„Brage og Idun“, 1839.)</subtitle>
   <firstline>Med Seier krandset stod den svenske Hær</firstline>
   <source pages="48-55" facsimile-pages="404-411"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="leipzig" relation="setting"/>
+    <place ref="luetzen" relation="setting"/>
+    <place ref="elbe" relation="mentioned"/>
+    <place ref="scotland" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1562,10 +1611,18 @@ Han sank i Døden ved Kong Gustavs Side.
 <text id="hauch20261124154" variant="hauch2019011646">
 <head>
   <title>Kong Knud i Odense</title>
-  <titleblock><part type="main"><line>Kong Knud i Odense.</line></part><part type="sub"><line>En Romance i fem Sange.</line></part></titleblock>
-  <subtitle>(„Brage og Idun“, 1840.)</subtitle>
+  <subtitle>
+    <line>En Romance i fem Sange.</line>
+    <line>(„Brage og Idun“, 1840.)</line>
+  </subtitle>
   <firstline>Alt funkler Stjernen over Kirkens Tag</firstline>
   <source pages="55-66" facsimile-pages="411-422"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="odense" relation="setting"/>
+    <place ref="medieval-st-albani-church" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1894,6 +1951,13 @@ Saa synker livløs han til Kongens Fødder.
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Den gyldne Sol sank ned i Vesterlide</firstline>
   <source pages="67-70" facsimile-pages="423-426"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="sea-of-galilee" relation="setting"/>
+    <place ref="kidron-valley" relation="mentioned"/>
+    <place ref="judea" relation="mentioned"/>
+    <place ref="zion" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2009,10 +2073,13 @@ Da monne Snekkens Mænd paa Christus skue:
 <text id="hauch20261124156" variant="hauch2005052504">
 <head>
   <title>De to Øxer</title>
-  <titleblock><part type="main"><line>De to Øxer.</line></part><part type="sub"><line>(Efter et Sagn fra Christian den Andens Tid.)</line></part></titleblock>
-  <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
+  <subtitle>
+    <line>(Efter et Sagn fra Christian den Andens Tid.)</line>
+    <line>(„Lyriske Digte“, 1842.)</line>
+  </subtitle>
   <firstline>Det sidste Dagslys taber sig i Nat</firstline>
   <source pages="71-77" facsimile-pages="427-433"/>
+  <keywords>romance</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2188,6 +2255,15 @@ Men Blodet viger bort fra Winfreds Læber.
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Konning Olaf sidder i Garderik med sine gode Hofmænd</firstline>
   <source pages="77-84" facsimile-pages="433-440"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="norway" relation="setting"/>
+    <place ref="gardariki" relation="setting"/>
+    <place ref="novgorod" relation="setting"/>
+    <place ref="trondheim" relation="setting"/>
+    <place ref="stiklestad" relation="setting"/>
+    <place ref="england" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2343,7 +2419,15 @@ Der voxe favre Blomster paa Fjeldet.
   <title>Magnus og Knud Lavard</title>
   <subtitle>(„Svend Grathe“, 1841; „Lyriske Digte“, 1842.)</subtitle>
   <firstline>Herr Magnus han stirrer i Vinternatten ud</firstline>
+  <notes>
+    <note editorial="true">Jf. <xref poem="kok2026111403"/>.</note>
+  </notes>
   <source pages="85-86" facsimile-pages="441-442"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="haraldsted" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2393,6 +2477,12 @@ Det har Du tidt betalt med Dit favreste Blod.
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Farvel Du gamle Qvinde, nu gaaer jeg, mens jeg kan</firstline>
   <source pages="86-89" facsimile-pages="442-445"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="switzerland" relation="setting"/>
+    <place ref="france" relation="setting"/>
+    <place ref="alps" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2468,7 +2558,11 @@ Og Hyrden leged tredie Gang, da Hugis Øie brast:
   <title>Bjergpigen</title>
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Der leged en Svend i den grønne Lund</firstline>
+  <notes>
+    <note editorial="true">Jf. <xref poem="folke2000012901"/>.</note>
+  </notes>
   <source pages="89-95" facsimile-pages="445-451"/>
+  <keywords>romance,omkvaed</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2647,6 +2741,11 @@ Mens Klokkerne klang over Dale.“
   <subtitle>(„Nye Romancer“ udg. af H. P. Holst, 1843.)</subtitle>
   <firstline>Ung Ragnhild hun skuer</firstline>
   <source pages="95-99" facsimile-pages="451-455"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="denmark" relation="setting"/>
+    <place ref="england" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2775,6 +2874,12 @@ Ham seer Du aldrig meer.
   <subtitle>(„Dansk Folkekalender“, 1844.)</subtitle>
   <firstline>Prinds Carlo har sig vendt fra Verdens Tant</firstline>
   <source pages="99-103" facsimile-pages="455-459"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="kingdom-of-naples" relation="setting"/>
+    <place ref="vesuvius" relation="mentioned"/>
+    <place ref="monte-somma" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2918,6 +3023,11 @@ Og pleies vel paa sine gamle Dage.
   <subtitle>(„Skolen og Hjemmet“, 1852.)</subtitle>
   <firstline>Den høie Bølge vælter sig halv graa og Hælften hvid</firstline>
   <source pages="104-108" facsimile-pages="460-464"/>
+  <keywords>christian4,romance</keywords>
+  <places>
+    <place ref="samso" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3046,6 +3156,7 @@ Mens Bølgen sig vælter om Danrigets Ø.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Ved hviden Strand laae Ivars lave Bolig</firstline>
   <source pages="108-120" facsimile-pages="464-476"/>
+  <keywords>romance</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3374,6 +3485,7 @@ Og mæler høit: „I Dag jeg først Dig kjender,
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Der svømmed en Baad under Stranden</firstline>
   <source pages="120-122" facsimile-pages="476-478"/>
+  <keywords>romance</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3452,6 +3564,14 @@ Mens Fuldmaanen skinner i Krat:
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Den gamle Sigurd var en mægtig Mand</firstline>
   <source pages="123-135" facsimile-pages="479-491"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="moskstraumen" relation="setting"/>
+    <place ref="lofoten" relation="setting"/>
+    <place ref="mosken" relation="setting"/>
+    <place ref="norway" relation="setting"/>
+    <place ref="scotland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3799,6 +3919,17 @@ Ei Hevnens Aander kan dem mere naae.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Loke flygted fra Ægirs Ø</firstline>
   <source pages="136-148" facsimile-pages="492-504"/>
+  <keywords>romance,myte</keywords>
+  <places>
+    <place ref="laesoe" relation="setting"/>
+    <place ref="franangr" relation="setting"/>
+    <place ref="franangr-falls" relation="setting"/>
+    <place ref="great-belt" relation="setting"/>
+    <place ref="helheim" relation="mentioned"/>
+    <place ref="nastrond" relation="mentioned"/>
+    <place ref="utgard" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4191,6 +4322,17 @@ Før Kræfterne spredes og Tiden sig ender.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Da Kong Olafs kjække Helte</firstline>
   <source pages="149-155" facsimile-pages="505-511"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="trondheim" relation="setting"/>
+    <place ref="stiklestad" relation="setting"/>
+    <place ref="norway" relation="setting"/>
+    <place ref="sogn" relation="mentioned"/>
+    <place ref="opplandene" relation="mentioned"/>
+    <place ref="dovrefjell" relation="mentioned"/>
+    <place ref="finnmark" relation="mentioned"/>
+    <place ref="viken-historical" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4378,10 +4520,19 @@ Gjennem Tidens Nat.
 <text id="hauch20261124168" variant="hauch2018032935">
 <head>
   <title>Den uadelige Ridderfrue</title>
-  <titleblock><part type="main"><line>Den uadelige Ridderfrue.</line></part><part type="sub"><line>Efter et svensk Folkesagn.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Efter et svensk Folkesagn.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Grev Birger hersked i Gotland</firstline>
   <source pages="155-168" facsimile-pages="511-524"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="sweden" relation="setting"/>
+    <place ref="gotland" relation="setting"/>
+    <place ref="finsta" relation="mentioned"/>
+    <place ref="norway" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4768,6 +4919,13 @@ Dig til min egen Brud.“
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Orion glimter i sin Midnatsglands</firstline>
   <source pages="168-175" facsimile-pages="524-531"/>
+  <keywords>romance,myte</keywords>
+  <places>
+    <place ref="thessaly" relation="setting"/>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="pindus" relation="mentioned"/>
+    <place ref="mount-olympus" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4910,6 +5068,13 @@ Kastor og den høie Pollux glimted med det vante Skjær.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Hvo var den Lykkeligste her paa Jord?</firstline>
   <source pages="175-180" facsimile-pages="531-536"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="golgotha" relation="setting"/>
+    <place ref="jerusalem" relation="setting"/>
+    <place ref="galilee" relation="mentioned"/>
+    <place ref="zion" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5064,11 +5229,16 @@ Til den hun elsked og til Lysets Rige.
 
 <text id="hauch20261124171" variant="hauch2018030737">
 <head>
-  <title>Den christne Slavinde</title>
-  <titleblock><part type="main"><line>Den christne Slavinde,</line></part><part type="sub"><line>et Digt i to Romancer.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <title>Den christne Slavinde,</title>
+  <subtitle>
+    <line>et Digt i to Romancer.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
+  <toctitle>Den christne Slavinde</toctitle>
+  <linktitle>Den christne Slavinde</linktitle>
   <firstline>Den gamle Kong Astolf sukker</firstline>
   <source pages="181-193" facsimile-pages="537-549"/>
+  <keywords>romance</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5411,6 +5581,19 @@ Nu i mit hele Land.“
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Før Gustav Adolf, Sverigs Konge god</firstline>
   <source pages="193-199" facsimile-pages="549-555"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="luetzen" relation="setting"/>
+    <place ref="riddarholmen-church" relation="setting"/>
+    <place ref="riddarholmen" relation="setting"/>
+    <place ref="malaren" relation="setting"/>
+    <place ref="germany" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="baltic-sea" relation="mentioned"/>
+    <place ref="mediterranean-sea" relation="mentioned"/>
+    <place ref="north-pole" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5586,9 +5769,13 @@ En Helt og en Martyr, der søger om sin Lige.
 
 <section>
 <head>
-  <title>Valdemar Atterdag</title>
-  <titleblock><part type="main"><line>Valdemar Atterdag,</line></part><part type="sub"><line>et romantisk Digt.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <title>Valdemar Atterdag,</title>
+  <subtitle>
+    <line>et romantisk Digt.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
+  <toctitle>Valdemar Atterdag</toctitle>
+  <linktitle>Valdemar Atterdag</linktitle>
   <source pages="201-311" facsimile-pages="557-667"/>
 </head>
 <content>
@@ -5598,6 +5785,11 @@ En Helt og en Martyr, der søger om sin Lige.
   <title>Falken</title>
   <firstline>Det var en deilig Morgen og Solen skinned klar</firstline>
   <source pages="203-209" facsimile-pages="559-565"/>
+  <places>
+    <place ref="gurre-lake" relation="setting"/>
+    <place ref="iceland" relation="mentioned"/>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5760,6 +5952,13 @@ Ugjerne jeg den mister, hvor trodsig end den er.“
   <title>Den fremmede Jomfru</title>
   <firstline>Saa red den ædle Konning ad Markerne hen</firstline>
   <source pages="209-212" facsimile-pages="565-568"/>
+  <places>
+    <place ref="gurre-lake" relation="setting"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="rugen" relation="mentioned"/>
+    <place ref="wendland-baltic" relation="mentioned"/>
+    <place ref="denmark" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5852,6 +6051,12 @@ Den Herre, der holdt det hele Danmark i Haand.
   <title>Kongen besøger Tovelil og hendes Broder</title>
   <firstline>Kong Volmer jager den lette Raa</firstline>
   <source pages="212-216" facsimile-pages="568-572"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="rugen" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5954,6 +6159,11 @@ Da var det ved Midnatstide.
   <title>Valdemars Fest</title>
   <firstline>Kong Volmer havde bygget et Slot ved Vordingborg</firstline>
   <source pages="216-219" facsimile-pages="572-575"/>
+  <places>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="holstein" relation="mentioned"/>
+    <place ref="limfjord" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6036,6 +6246,9 @@ Fire ere de Jomfruer, som børste hendes Haar.“
   <title>Tovelilles Dands</title>
   <firstline>Den høie Dør sig aabned, Kong Volmer fremtreen</firstline>
   <source pages="219-223" facsimile-pages="575-579"/>
+  <places>
+    <place ref="vordingborg-castle" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6141,9 +6354,14 @@ Det hørte Dronning Helvig med tankefuldt Sind.
 <text id="hauch20261124178" variant="hauch2018032941">
 <head>
   <title>Kong Valdemar og hans Gjester</title>
-  <titleblock><part type="main"><line>Kong Valdemar og hans Gjester.</line></part><part type="sub"><line>Fortsættelse.</line></part></titleblock>
+  <subtitle>Fortsættelse.</subtitle>
   <firstline>I trende Dage varede den danske Konges Fest</firstline>
   <source pages="223-226" facsimile-pages="579-582"/>
+  <places>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6231,6 +6449,12 @@ Og elsker kun den Munkesang, der snart er forbi.“
   <title>Ridderspillet</title>
   <firstline>Saasnart de atter stode bag Borgens høie Tind</firstline>
   <source pages="226-232" facsimile-pages="582-588"/>
+  <places>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="spain" relation="mentioned"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6383,6 +6607,18 @@ Men hvad hun dengang tænkte, det blev kun seent bekjendt.
   <title>Herr Eckhard og hans Planer</title>
   <firstline>Den næste Morgen jaged Kong Volmer under Ø</firstline>
   <source pages="232-235" facsimile-pages="588-591"/>
+  <places>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="funen" relation="mentioned"/>
+    <place ref="riberhus" relation="mentioned"/>
+    <place ref="odense" relation="mentioned"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="north-sea" relation="mentioned"/>
+    <place ref="lubeck" relation="mentioned"/>
+    <place ref="gotland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6480,6 +6716,10 @@ Kan de ham overvinde, behøves ei vor List.“
   <title>Jagten</title>
   <firstline>Under de høie Bøge var hugget mangen Sti</firstline>
   <source pages="236-240" facsimile-pages="592-596"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6592,6 +6832,13 @@ Og hvad de siden talte, det er mig ei bekjendt.
   <title>Fru Helvig</title>
   <firstline>Hr. Eckhard og Fru Helvig heel tidt hinanden saae</firstline>
   <source pages="240-244" facsimile-pages="596-600"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="schlei" relation="mentioned"/>
+    <place ref="holstein" relation="mentioned"/>
+    <place ref="germany" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6709,6 +6956,11 @@ Og lære Skovens Ulve at trække Bondens Plov.“
   <title>Hexen spaaer Kong Valdemar</title>
   <firstline>Kong Volmer rider ved Maaneglands</firstline>
   <source pages="244-246" facsimile-pages="600-602"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="rome" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6776,6 +7028,14 @@ Fru Helvig har sendt Dig hid.“
   <title>Valdemar beiler til Tovelille</title>
   <firstline>Eng og Ager grønnedes, der blomstred Bøg og Riis</firstline>
   <source pages="247-250" facsimile-pages="603-606"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="lubeck" relation="mentioned"/>
+    <place ref="wendland-baltic" relation="mentioned"/>
+    <place ref="visby" relation="mentioned"/>
+    <place ref="saxony" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6878,6 +7138,12 @@ Ukjendte for Lyset som Havbundens Kryb.“
   <title>Hjemkomsten</title>
   <firstline>Kong Volmer havde seiret, Visby var ødelagt</firstline>
   <source pages="250-253" facsimile-pages="606-609"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="visby" relation="mentioned"/>
+    <place ref="gotland" relation="mentioned"/>
+    <place ref="wendland-baltic" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6956,6 +7222,9 @@ Alt hvad de dengang talte, det blev til Volmer sagt.
   <title>Skriftemaalet</title>
   <firstline>Verdens Frelser var opstanden</firstline>
   <source pages="253-256" facsimile-pages="609-612"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7053,6 +7322,9 @@ Mens hun skjælved ved hans Røst.
   <title>Luftbilledet</title>
   <firstline>Tankefuld den favre Jomfru</firstline>
   <source pages="257-258" facsimile-pages="613-614"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7118,6 +7390,10 @@ Hvor Din Barndoms Vugge stod!“
   <title>Tovelil taler med sin Broder</title>
   <firstline>Længe hviled i det Fjerne</firstline>
   <source pages="259-261" facsimile-pages="615-617"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7194,6 +7470,10 @@ Og hvor hendes Vugge stod.
   <title>Ringen</title>
   <firstline>De Stjerner blinke med Sølverskjær</firstline>
   <source pages="262-265" facsimile-pages="618-621"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="germany" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7306,6 +7586,12 @@ Om Hevnen hun hemmelig drømmer.
   <title>Kongens Kjærlighed vinder Seier</title>
   <firstline>Om nu det var den Trolddom, der var i Ringen lagt</firstline>
   <source pages="266-269" facsimile-pages="622-625"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="gotland" relation="mentioned"/>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="rome" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7412,6 +7698,9 @@ Dog var man i gamle Dage ved Livet mere fro.“
   <title>Valdemars Sang</title>
   <firstline>Min Falk den fløi over Mark og Vang</firstline>
   <source pages="270-272" facsimile-pages="626-628"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7479,6 +7768,15 @@ I vogte den Jomfru vel!
   <title>Herr Eckhard gjester igjen Danmark</title>
   <firstline>Ved Midsommertide, da Dagen var lang</firstline>
   <source pages="272-276" facsimile-pages="628-632"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="denmark" relation="setting"/>
+    <place ref="holstein" relation="mentioned"/>
+    <place ref="germany" relation="mentioned"/>
+    <place ref="mecklenburg" relation="mentioned"/>
+    <place ref="main-river" relation="mentioned"/>
+    <place ref="vestervig" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7601,6 +7899,12 @@ Af alle de danske Konger den Herre bedst jeg lider.“
   <title>Kampen i Skoven</title>
   <firstline>Kong Volmer havde dvælet, til Mørket faldt paa</firstline>
   <source pages="277-283" facsimile-pages="633-639"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="gurre-castle" relation="mentioned"/>
+    <place ref="vordingborg-castle" relation="mentioned"/>
+    <place ref="jutland" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7788,6 +8092,12 @@ Hans hemmelige Planer var mig en lukket Bog.“
   <title>Kongen reiser til Tydskland</title>
   <firstline>Herr Folkvar blev ført til Nyborg under Ø</firstline>
   <source pages="284-288" facsimile-pages="640-644"/>
+  <places>
+    <place ref="germany" relation="mentioned"/>
+    <place ref="nyborg" relation="setting"/>
+    <place ref="zealand" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7924,7 +8234,16 @@ I Dronningens Andagt fandt Mængden megen Trøst.
 <head>
   <title>Fru Helvigs Hevn</title>
   <firstline>Fru Tove sad i Gaarden, da stod ved Borgeled</firstline>
+  <notes>
+    <note editorial="true">Jf. <xref poem="folkeviser20261114135"/>.</note>
+  </notes>
   <source pages="289-293" facsimile-pages="645-649"/>
+  <places>
+    <place ref="zealand" relation="setting"/>
+    <place ref="rugen" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="st-clare-roskilde" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8057,6 +8376,11 @@ Og glemmer Din Skam, at Du var en Slegfredqvinde.“
   <title>Valdemar vender tilbage</title>
   <firstline>Kong Volmers høie Snekke sig gynged under Ø</firstline>
   <source pages="294-297" facsimile-pages="650-653"/>
+  <places>
+    <place ref="gurre-lake" relation="setting"/>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8221,6 +8545,11 @@ Vil der Du hvile, maa Du først forgaae.“
   <title>Hvorledes det siden gik</title>
   <firstline>Atter dog sig reiste Kong Volmer i sin Kraft</firstline>
   <source pages="300-301" facsimile-pages="656-657"/>
+  <places>
+    <place ref="denmark" relation="setting"/>
+    <place ref="vordingborg-castle" relation="setting"/>
+    <place ref="gurre-lake" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8278,6 +8607,11 @@ Hendes Læbe var blegnet, og Øiets Ild var slukt.
   <title>Kong Valdemars sidste Stund</title>
   <firstline>Kong Volmer styred Landet i fem og tredive Aar</firstline>
   <source pages="302-304" facsimile-pages="658-660"/>
+  <places>
+    <place ref="gurre-castle" relation="setting"/>
+    <place ref="gurre-lake" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8355,6 +8689,12 @@ Og i den samme Time de blev i Graven lagt.
   <title>Den vilde Jagt</title>
   <firstline>Da man troede, Danmarks Drot</firstline>
   <source pages="304-308" facsimile-pages="660-664"/>
+  <keywords>folkeminder</keywords>
+  <places>
+    <place ref="gurre-lake" relation="setting"/>
+    <place ref="zealand" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8458,6 +8798,14 @@ Til Verdens og Tidernes Ende.
   <title>Slutning</title>
   <firstline>Valdemars og Helvigs Datter</firstline>
   <source pages="308-311" facsimile-pages="664-667"/>
+  <places>
+    <place ref="soro-abbey-church" relation="setting"/>
+    <place ref="denmark" relation="setting"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="isefjord" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="north-sea" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8541,10 +8889,22 @@ Maales ei af Tiden ud.“
 <text id="hauch20261124202" variant="hauch2001112601">
 <head>
   <title>Magnus og Knud Lavard</title>
-  <titleblock><part type="main"><line>Magnus og Knud Lavard</line></part><part type="sub"><line>i den ældste Skikkelse (se 2det Bind, S. 85).</line><line>1841.</line></part></titleblock>
+  <subtitle>
+    <line>i den ældste Skikkelse (se 2det Bind, S. 85).</line>
+    <line>1841.</line>
+  </subtitle>
   <toctitle>Magnus og Knud Lavard (i den ældste Skikkelse)</toctitle>
   <firstline>Herr Magnus han stirrer i Vinternatten ud</firstline>
+  <notes>
+    <note editorial="true">Se den udvidede udgave af <xref poem="hauch20261124158"/> i dette bind, s. 85.</note>
+    <note editorial="true">Jf. <xref poem="kok2026111403"/>.</note>
+  </notes>
   <source pages="312-313" facsimile-pages="668-669"/>
+  <keywords>romance</keywords>
+  <places>
+    <place ref="haraldsted" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>

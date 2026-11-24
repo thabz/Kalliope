@@ -59,6 +59,7 @@ Enhver, som har værdiget mig at gjøre sig bekjendt med de Poesier, jeg har skr
   <subtitle>(Af Athene, 1815.)</subtitle>
   <firstline>Nei! jeg den holder ei ud den piinlige Vaklen og Strid, der</firstline>
   <source pages="1-5" facsimile-pages="21-25"/>
+  <keywords>distichon</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -137,6 +138,7 @@ Da de syngende Væld gled ham med Gjøglen forbi.
   <subtitle>(Forsøg i Novalis's Aand. Af Athene 1815.)</subtitle>
   <firstline>Hvorfor hvælver sig Himmelblaaet</firstline>
   <source pages="5-12" facsimile-pages="25-32"/>
+  <keywords>novalis</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -310,6 +312,13 @@ Og beseirer Nattens Gys.
   <subtitle>(Af Athene, 1816.)</subtitle>
   <firstline>Heiser nu Seil, mine Vers! nu Poseidon er gunstig, og Phoibos</firstline>
   <source pages="12-22" facsimile-pages="32-42"/>
+  <keywords>distichon,satire</keywords>
+  <places>
+    <place ref="rhodes" relation="mentioned"/>
+    <place ref="pindus" relation="mentioned"/>
+    <place ref="lethe" relation="mentioned"/>
+    <place ref="greek-underworld" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -599,6 +608,7 @@ Da Du svigted mig.
   <subtitle>(Ved Chr. Roedes Død. Af Athene, 1817.)</subtitle>
   <firstline>Stirrer ei i Graven ned</firstline>
   <source pages="24-25" facsimile-pages="44-45"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -754,6 +764,9 @@ Der fletter jeg en Krands omkring min Mage.
   <subtitle>(Et Ungdoms-Forsøg.)</subtitle>
   <firstline>Ja, jeg vil søge mig op et Eden</firstline>
   <source pages="29-34" facsimile-pages="49-54"/>
+  <places>
+    <place ref="eden" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -908,6 +921,7 @@ Og Barndomsvenner i Stavnen staae,
     <note editorial="true">Gendigtning af Novalis’ <xref type="translation" poem="novalis2026090301"/>.</note>
   </notes>
   <source pages="34-36" facsimile-pages="54-56"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1018,6 +1032,7 @@ Da synger Du med.
   <subtitle>(En Allegori, skreven i Aaret 1818 under Baggesens Angreb paa Øhlenschlæger. Trykt i Iris 1819.)</subtitle>
   <firstline>Maane, mit Blik forhadt, stat still’ og hør paa min Bjæffen!</firstline>
   <source pages="38-43" facsimile-pages="58-63"/>
+  <keywords>baggesen,oehlenschlaeger,allegori</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1188,6 +1203,7 @@ Og hvori jeg alene skal kjende den.
   <subtitle>(I et Exemplar af „Bajazet“ og „Tiber“.)</subtitle>
   <firstline>Hvor Faa forstaae den sære Kunst, til Livet</firstline>
   <source pages="46-47" facsimile-pages="66-67"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1225,8 +1241,9 @@ Dig skylder jeg og vier jeg mit Digt.
 
 <text id="hauch2026112422" variant="hauch2019010412">
 <head>
-  <title>1</title>
-  <titleblock><part type="main"><line>1.</line></part></titleblock>
+  <title><num>1.</num></title>
+  <toctitle><num>1.</num>Mig ængster urolige Drømme</toctitle>
+  <indextitle>Mig ængster urolige Drømme</indextitle>
   <firstline>Mig ængster urolige Drømme</firstline>
   <source pages="47-48" facsimile-pages="67-68"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1273,8 +1290,9 @@ En elsket, en fjendtlig Ven.
 
 <text id="hauch2026112423" variant="hauch2002092903">
 <head>
-  <title>2</title>
-  <titleblock><part type="main"><line>2.</line></part></titleblock>
+  <title><num>2.</num></title>
+  <toctitle><num>2.</num>Naar Sneens Lilier dække Marken ene</toctitle>
+  <indextitle>Naar Sneens Lilier dække Marken ene</indextitle>
   <firstline>Naar Sneens Lilier dække Marken ene</firstline>
   <source pages="48-49" facsimile-pages="68-69"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1311,8 +1329,9 @@ Du Drømmefødende, jeg mindes Dig.
 
 <text id="hauch2026112424" variant="hauch2019010413">
 <head>
-  <title>3</title>
-  <titleblock><part type="main"><line>3.</line></part></titleblock>
+  <title><num>3.</num></title>
+  <toctitle><num>3.</num>Veemod ei min Sjæl forlader</toctitle>
+  <indextitle>Veemod ei min Sjæl forlader</indextitle>
   <firstline>Veemod ei min Sjæl forlader</firstline>
   <source pages="49-50" facsimile-pages="69-70"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1361,6 +1380,9 @@ Hvor en evig Glemsel boer!
   <subtitle>(Af „Maastrichts Beleiring“, 1832.)</subtitle>
   <firstline>Som i de gamle Templer</firstline>
   <source pages="51-52" facsimile-pages="71-72"/>
+  <places>
+    <place ref="maastricht" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1424,6 +1446,10 @@ I Kirkedøren ud.
   <subtitle>(Med den tydske Oversættelse af „Maastrichts Beleiring“.)</subtitle>
   <firstline>Heel modig paa min Vandring kom jeg til Dig engang</firstline>
   <source pages="53-54" facsimile-pages="73-74"/>
+  <keywords>tieck,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1467,6 +1493,7 @@ Selv naar de skjule Sangeren i udenlandsk Dragt.
   <subtitle>(Af „Vilhelm Zabern“, 1834.)</subtitle>
   <firstline>Naar Skytten udsender den hvasse Piil</firstline>
   <source pages="54-55" facsimile-pages="74-75"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1500,6 +1527,10 @@ Men vanskeligt did at stige.
   <subtitle>(Søndagen, 1836.)</subtitle>
   <firstline>Den flygtige Lykke gik Skjalden forbi</firstline>
   <source pages="55-56" facsimile-pages="75-76"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1591,6 +1622,9 @@ Og mon det om Morgenen glemme.
   <subtitle>(Af Thyrolerfamilien<footnote>Sungen af en dansk Qvinde i Thyrol.</footnote>, 1837.)</subtitle>
   <firstline>Her vil jeg rede Din Vugge</firstline>
   <source pages="58-59" facsimile-pages="78-79"/>
+  <places>
+    <place ref="tyrol" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1654,6 +1688,7 @@ Dybt i sin kolde Seng!
   <subtitle>(Marts 1838.)</subtitle>
   <firstline>Du var en fornem Mand, dog det var Fleer</firstline>
   <source pages="60" facsimile-pages="80"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1687,6 +1722,10 @@ Og nogen Sandhed være skal dens Smykke.
   <subtitle>(1839.)</subtitle>
   <firstline>Hvi funkler nu saa stærkt hver Ynglings Øie?</firstline>
   <source pages="61-62" facsimile-pages="81-82"/>
+  <keywords>thorvaldsen,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1736,6 +1775,10 @@ Før atter der vil fødes slig en Mand.
   <subtitle>(Sungen i en Forsamling af unge Venner i Sorø.)</subtitle>
   <firstline>Det Vinter er, og dog skal ei vi fryse</firstline>
   <source pages="62-63" facsimile-pages="82-83"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="soro" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1785,6 +1828,10 @@ Skal aldrig finde Plads ved dette Bord.
   <subtitle>(Brage og Idun 1839.)</subtitle>
   <firstline>Jeg veed et Sted, som jeg har elsket længe</firstline>
   <source pages="64-66" facsimile-pages="84-86"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="soro" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1852,6 +1899,15 @@ Det er den Skat, der er os ene kjær.
   <subtitle>(Efter et græsk Sagn. Brage og Idun 1839.)</subtitle>
   <firstline>Festlig bredte sig Faklernes Glands fra kneisende Høisal</firstline>
   <source pages="66-77" facsimile-pages="86-97"/>
+  <keywords>heksameter,myte</keywords>
+  <places>
+    <place ref="sparta" relation="setting"/>
+    <place ref="eurotas" relation="setting"/>
+    <place ref="taygetus" relation="mentioned"/>
+    <place ref="aegean-sea" relation="mentioned"/>
+    <place ref="ithaca" relation="mentioned"/>
+    <place ref="greek-underworld" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2051,6 +2107,9 @@ Huggen af Marmorsteen, som et Minde for kommende Slægter.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>O, Du, som græder, visk Din Taare bort!</firstline>
   <source pages="77-80" facsimile-pages="97-100"/>
+  <places>
+    <place ref="poland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2139,6 +2198,10 @@ Og kun dens Indgang kan jeg vise Dig.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>Jeg eied intet meer paa Jorden</firstline>
   <source pages="80-82" facsimile-pages="100-102"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="poland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2197,6 +2260,11 @@ At Sjælen naaer sit sande Hjem.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>Hvorfor svulmer Weichselfloden som et Heltebryst</firstline>
   <source pages="82-83" facsimile-pages="102-103"/>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+    <place ref="vistula" relation="mentioned"/>
+    <place ref="krakow" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2230,6 +2298,9 @@ Under Sang om svunden Storhed vaagne Polens Børn.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>Farvel mit elskte Moderhjem! farvel, Du favre Sommer!</firstline>
   <source pages="83-84" facsimile-pages="103-104"/>
+  <places>
+    <place ref="poland" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2260,6 +2331,9 @@ Den Jomfru, der mig kjærest var, en Anden vil trolove.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>Her Roserne blussed ved rullende Vove</firstline>
   <source pages="85-87" facsimile-pages="105-107"/>
+  <places>
+    <place ref="poland" relation="subject"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2345,6 +2419,9 @@ Hvis ikke vi levende fange den kan.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>Hvi staaer Du saa eensom, o Birketræ!</firstline>
   <source pages="88" facsimile-pages="108"/>
+  <places>
+    <place ref="poland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2378,6 +2455,9 @@ Paa Heden i Vinter og Vind“.
   <subtitle>(Af „En polsk Familie“, 1839.)</subtitle>
   <firstline>O, Piil, har Vinden hentet Dig</firstline>
   <source pages="89-90" facsimile-pages="109-110"/>
+  <places>
+    <place ref="poland" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2420,6 +2500,15 @@ Forvandlede hendes Blik.
   <title>Ved det skandinaviske Naturforskermøde 1840</title>
   <firstline>Hvor dunkle Fjorde gjennem Landet trænger</firstline>
   <source pages="90-92" facsimile-pages="110-112"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+    <place ref="copenhagen" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="zealand" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2490,6 +2579,7 @@ Der aldrig kan og aldrig vil forgaae.
     <note editorial="true">Gendigtning af Shakespeares <xref type="translation" poem="shakespeare2019010901"/>.</note>
   </notes>
   <source pages="92-93" facsimile-pages="112-113"/>
+  <keywords>elegi</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2531,6 +2621,10 @@ Gid urolige Aander maa flye Dig!
   <subtitle>(1841.)</subtitle>
   <firstline>Andre troe det er nok</firstline>
   <source pages="93-97" facsimile-pages="113-117"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2636,6 +2730,9 @@ Som Du her maatte savne.
   <subtitle>(„Lyriske Digte“, 1842.)</subtitle>
   <firstline>Hver Gang jeg stirrer paa de gamle Skrifter</firstline>
   <source pages="97-99" facsimile-pages="117-119"/>
+  <places>
+    <place ref="greece" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2816,6 +2913,7 @@ Og tømme den sidste Rest!
     <note editorial="true">Gendigtning af Claudius’ <xref type="translation" poem="claudius2001091301"/>.</note>
   </notes>
   <source pages="102-104" facsimile-pages="122-124"/>
+  <keywords>salme</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -2968,6 +3066,9 @@ Ikke lyse paa Jorden, men over den.
   <subtitle>(Af „Slottet ved Rhinen“, 1844.)</subtitle>
   <firstline>Der stander en Borg over Høie</firstline>
   <source pages="107-108" facsimile-pages="127-128"/>
+  <places>
+    <place ref="rhine" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3132,6 +3233,7 @@ Maaskee det vil Dig angre, naar jeg er lagt i Muld.
   <subtitle>(Af „Slottet ved Rhinen“, 1844.)</subtitle>
   <firstline>Jeg eier en mægtig Veninde</firstline>
   <source pages="112-114" facsimile-pages="132-134"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3243,6 +3345,7 @@ Er frie som Bølgen ved Din blege Kyst!
   <subtitle>(1845.)</subtitle>
   <firstline>Saa vandrer ogsaa Du i Dødens Skygger</firstline>
   <source pages="116-117" facsimile-pages="136-137"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3286,6 +3389,12 @@ Og Himlens Engle ved dens Duft sig glæder.
   <subtitle>Mel. Kong Christian stod ved høien Mast.</subtitle>
   <firstline>Nei, Nordens Aand kan ei forgaae</firstline>
   <source pages="118-119" facsimile-pages="138-139"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+    <place ref="copenhagen" relation="mentioned"/>
+    <place ref="dovrefjell" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3339,6 +3448,13 @@ Med Lyst.
   <subtitle>(1845.)</subtitle>
   <firstline>Skjøndt Seclerne flygte som Drømme</firstline>
   <source pages="120-122" facsimile-pages="140-142"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="scania" relation="mentioned"/>
+    <place ref="dovrefjell" relation="mentioned"/>
+    <place ref="north-pole" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3406,6 +3522,15 @@ Da vorder vort Land til et Heelt.
   <subtitle>(Gæa 1845.)</subtitle>
   <firstline>Hesperus vifted sin Fakkel i Luft, da bragtes en ukjendt</firstline>
   <source pages="122-130" facsimile-pages="142-150"/>
+  <keywords>heksameter,myte</keywords>
+  <places>
+    <place ref="lydia" relation="setting"/>
+    <place ref="mount-tmolus" relation="setting"/>
+    <place ref="cayster" relation="mentioned"/>
+    <place ref="mount-olympus" relation="mentioned"/>
+    <place ref="styx" relation="mentioned"/>
+    <place ref="greek-underworld" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3555,6 +3680,11 @@ Synerne svandt som en Drøm i Morgendæmringens Tvelys.
   <subtitle>(1848.)</subtitle>
   <firstline>Du høie Nordens Dronning</firstline>
   <source pages="131-132" facsimile-pages="151-152"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3608,6 +3738,12 @@ Der rækker Dig denne Krands.
   <subtitle>(1848.)</subtitle>
   <firstline>Nu svæver dristig frem det danske Flag</firstline>
   <source pages="132-134" facsimile-pages="152-154"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="jutland" relation="mentioned"/>
+    <place ref="zealand" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3653,10 +3789,16 @@ Fra Jylland klinger det til Sjællands Ø:
 <text id="hauch2026112463" variant="hauch2019011812">
 <head>
   <title>Vexelsang</title>
-  <subtitle>mellem Johanne og Axel i Søstrene paa Kinnekullen i anden Akt.</subtitle>
-  <subtitle>(Udeladt i den trykte Udgave, 1849.)</subtitle>
+  <subtitle>
+    <line>mellem Johanne og Axel i Søstrene paa Kinnekullen i anden Akt.</line>
+    <line>(Udeladt i den trykte Udgave, 1849.)</line>
+  </subtitle>
   <firstline>Her, hvor vi sadde bag Skoven i Læ</firstline>
   <source pages="134-135" facsimile-pages="154-155"/>
+  <places>
+    <place ref="kinnekulle" relation="setting"/>
+    <place ref="sweden" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3694,6 +3836,9 @@ Bag Fjeldet i Skjul ved den smilende Sø.
   <subtitle>(Af „Søstrene paa Kinnekullen“, 1849.)</subtitle>
   <firstline>En Skat jeg alt har, snart jeg flere skal eie</firstline>
   <source pages="135-136" facsimile-pages="155-156"/>
+  <places>
+    <place ref="kinnekulle" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3729,10 +3874,17 @@ Jeg Hørren maa snoe, jeg maa Guldtraaden væde.
 <text id="hauch2026112465" variant="hauch2005052513">
 <head>
   <title>Sang til Adam Øhlenschlæger</title>
-  <subtitle>den 14de November 1849.</subtitle>
-  <subtitle>Mel. Danmark deiligst Vang og Vænge.</subtitle>
+  <subtitle>
+    <line>den 14de November 1849.</line>
+    <line>Mel. Danmark deiligst Vang og Vænge.</line>
+  </subtitle>
   <firstline>Aldrig skal Dit Navn forgjettes i det høie Nord</firstline>
   <source pages="136-137" facsimile-pages="156-157"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3781,6 +3933,7 @@ Før de gaae af Minde.
   <subtitle>(„Lyriske Digte“, 1854.)</subtitle>
   <firstline>Der skinned saa mangt et Glimmerlys</firstline>
   <source pages="138-139" facsimile-pages="158-159"/>
+  <keywords>atterbom,lejlighedsdigtning</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -3826,10 +3979,18 @@ Om Astolph den herlige Sang.
 <text id="hauch2026112467" variant="hauch2019011823">
 <head>
   <title>Epilog til „Hakon Jarl“</title>
-  <subtitle>paa Sorgefesten efter Øhlenschlægers Død.</subtitle>
-  <subtitle>(Fremsagt af Madame Nielsen, 1850.)</subtitle>
+  <subtitle>
+    <line>paa Sorgefesten efter Øhlenschlægers Død.</line>
+    <line>(Fremsagt af Madame Nielsen, 1850.)</line>
+  </subtitle>
   <firstline>Saa est Du da nu skriinlagt Hakon Jarl</firstline>
   <source pages="139-144" facsimile-pages="159-164"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="hekla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4013,6 +4174,13 @@ Thi Ingen det veed, hvordan sig Lykken vender.
   <subtitle>ved Studenternes Besøg i Norge, i Sommeren 1851.</subtitle>
   <firstline>Vi seiled herhid med Jubelsang</firstline>
   <source pages="146-147" facsimile-pages="166-167"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+    <place ref="oslo" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4066,6 +4234,11 @@ Bag Lindens beskyttende Grene.
   <subtitle>i Aaret 1851.</subtitle>
   <firstline>Her saae jeg Lyset først bag Fjeldets Tinde</firstline>
   <source pages="147-149" facsimile-pages="167-169"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="norway" relation="subject" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4119,6 +4292,10 @@ Min Tanke tidt dog Vei til Norge finder.
   <subtitle>(1851.)</subtitle>
   <firstline>Nu sank den Haand, der øved den sjeldneste Bedrift</firstline>
   <source pages="149-151" facsimile-pages="169-171"/>
+  <keywords>oersted,lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4179,6 +4356,11 @@ Saalænge Danmarks Hjerte slaaer.
   <subtitle>(1852.)</subtitle>
   <firstline>Nu aabnes Hallen, hvor de Døde sover</firstline>
   <source pages="151-153" facsimile-pages="171-173"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="roskilde-cathedral" relation="setting"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4237,10 +4419,9 @@ Til vi Din Lige skue skal igjen;
 
 <text id="hauch2026112473" variant="hauch1854a0">
 <head>
+  <suptitle>1.</suptitle>
   <title>Hjemmet</title>
-  <titleblock>
-    <part type="main"><line>1.</line><line>Hjemmet.</line></part>
-  </titleblock>
+  <toctitle><num>1.</num>Hjemmet</toctitle>
   <firstline>Jeg mindes vel et Sted, gid jeg var der igjen</firstline>
   <source pages="153-154" facsimile-pages="173-174"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4272,10 +4453,9 @@ Det har nu vel længst han forglemt.
 
 <text id="hauch2026112474" variant="hauch1854a1">
 <head>
+  <suptitle>2.</suptitle>
   <title>Længsel</title>
-  <titleblock>
-    <part type="main"><line>2.</line><line>Længsel.</line></part>
-  </titleblock>
+  <toctitle><num>2.</num>Længsel</toctitle>
   <firstline>Naar Svanen drømmende paa Strømmen bølger</firstline>
   <source pages="154" facsimile-pages="174"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4307,10 +4487,9 @@ Hvis ei Du der forenes skal med mig.
 
 <text id="hauch2026112475" variant="hauch2019011810">
 <head>
+  <suptitle>3.</suptitle>
   <title>Skuffet Forventning</title>
-  <titleblock>
-    <part type="main"><line>3.</line><line>Skuffet Forventning.</line></part>
-  </titleblock>
+  <toctitle><num>3.</num>Skuffet Forventning</toctitle>
   <firstline>Du var det deiligste Barn</firstline>
   <source pages="155-157" facsimile-pages="175-177"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4386,6 +4565,10 @@ De var nu visnet hen.
   <subtitle>(Af „Robert Fulton“, 1853.)</subtitle>
   <firstline>For mange Gaver takker jeg ham</firstline>
   <source pages="157-162" facsimile-pages="177-182"/>
+  <places>
+    <place ref="america" relation="subject" primary="true"/>
+    <place ref="europe" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -4526,6 +4709,7 @@ Han, der bringer Fred ved Dagens Ende.
   <subtitle>(1854.)</subtitle>
   <firstline>Slægter fødes, Slægter svinde, Tiden kommer, Tiden gaaer</firstline>
   <source pages="162-163" facsimile-pages="182-183"/>
+  <keywords>mynster,lejlighedsdigtning,elegi</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5125,10 +5309,16 @@ Forstaaer det.
 <text id="hauch2026112483" variant="hauch2005052802">
 <head>
   <title>Ved Prof. Christian Lütkens Død</title>
-  <titleblock><part type="main"><line>Ved Prof. Christian Lütkens Død</line><line>1856.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>1856.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Aand, som Intet kunde bøie</firstline>
   <source pages="183-184" facsimile-pages="203-204"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5174,10 +5364,26 @@ Som en Sol i Aanders Land.
 <text id="hauch2026112484" variant="hauch2018032903">
 <head>
   <title>Sang for de Danske Studenter</title>
-  <titleblock><part type="main"><line>Sang for de Danske Studenter</line><line>paa Upsalatoget 1856.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>paa Upsalatoget 1856.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Naar Linden grønnes, og naar Gjøgen kommer</firstline>
+  <dates>
+    <performed>1856-06-15</performed>
+  </dates>
+  <notes>
+    <note editorial="true">Sangen blev fremført den 15. juni 1856 ved det kinesiske lystslot på Drottningholm. <i>Studentertog til Upsala 1856</i>, s. 79 <a href="https://www.kb.dk/e-mat/dod/130023088313-bw.pdf#page=88">↬</a> og 85–86 <a href="https://www.kb.dk/e-mat/dod/130023088313-bw.pdf#page=94">↬</a>.</note>
+  </notes>
   <source pages="185-187" facsimile-pages="205-207"/>
+  <places>
+    <place ref="nordic-countries" relation="subject" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="scania" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5242,10 +5448,18 @@ Til Kamp for Nordens Fremtid og dens Haab.
 <text id="hauch2026112485" variant="hauch2005052801">
 <head>
   <title>Frederiksborg</title>
-  <titleblock><part type="main"><line>Frederiksborg.</line><line>1859.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>1859.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Deilige Slot med de glimtende Fløie</firstline>
   <source pages="187-190" facsimile-pages="207-210"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="frederiksborg-palace" relation="subject" primary="true"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5327,11 +5541,19 @@ For at frelse Danmarks Ø.
 
 <text id="hauch2026112486" variant="hauch2005052803">
 <head>
-  <title>Sang ved Naturforskermødet i Kjøbenhavn</title>
-  <titleblock><part type="main"><line>Sang ved Naturforskermødet i Kjøbenhavn,</line><line>i Sommeren 1860.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <title>Sang ved Naturforskermødet i Kjøbenhavn,</title>
+  <subtitle>
+    <line>i Sommeren 1860.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
+  <toctitle>Sang ved Naturforskermødet i Kjøbenhavn</toctitle>
+  <linktitle>Sang ved Naturforskermødet i Kjøbenhavn</linktitle>
   <firstline>Naturens ædle Dyrker begjerer ei den Krands</firstline>
   <source pages="190-191" facsimile-pages="210-211"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="copenhagen" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5380,6 +5602,15 @@ Og sænkes i Glemselens Vande.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Sangrige Danmark, Du Moder til Helte</firstline>
   <source pages="192-193" facsimile-pages="212-213"/>
+  <places>
+    <place ref="hellebaek" relation="subject" primary="true"/>
+    <place ref="kattegat" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="scania" relation="mentioned"/>
+    <place ref="kullaberg" relation="mentioned"/>
+    <place ref="kronborg-castle" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5438,6 +5669,9 @@ Visselig troer jeg, jeg valgte den her.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Morgendug, der sagte bæver i den lune Vind</firstline>
   <source pages="194-195" facsimile-pages="214-215"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5479,6 +5713,7 @@ Dem vi aldrig svige.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Kjærlighed, Ungdom og Lykke forsvinder</firstline>
   <source pages="195-196" facsimile-pages="215-216"/>
+  <keywords>lejlighedsdigtning</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5514,10 +5749,16 @@ Seent skal han glemmes i Kunsternes Hal.
 <text id="hauch2026112490" variant="hauch2018032905">
 <head>
   <title>Til Hendes Majestæt Dronning Karoline Amalia</title>
-  <titleblock><part type="main"><line>Til Hendes Majestæt Dronning</line><line>Karoline Amalia.</line></part><part type="sub"><line>Sunget ved en Fest paa Skydebanen.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Sunget ved en Fest paa Skydebanen.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Saalænge Danmarks Hjerte for Mildhed end kan slaae</firstline>
   <source pages="196-197" facsimile-pages="216-217"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5566,6 +5807,10 @@ Du Dronning ved de blomstrende Linde!
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Mangen Leg af Lykkens Luner maatte Danmark see</firstline>
   <source pages="198" facsimile-pages="218"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5597,10 +5842,15 @@ Der Din Løn Du finder.
 <text id="hauch2026112492" variant="hauch2002050903">
 <head>
   <title>Vossevangen</title>
-  <titleblock><part type="main"><line>Vossevangen.</line></part><part type="sub"><line>En Bondekarls Sang af et utrykt Lystspil.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>En Bondekarls Sang af et utrykt Lystspil.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Paa Vossevangen der vil jeg boe</firstline>
   <source pages="199-200" facsimile-pages="219-220"/>
+  <places>
+    <place ref="vossavangen" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5641,8 +5891,10 @@ Der er det fagert at leve.
 <text id="hauch2026112493" variant="hauch2002092908">
 <head>
   <title>Den Forladte</title>
-  <titleblock><part type="main"><line>Den Forladte.</line></part><part type="sub"><line>En ung Piges Sang af et utrykt Lystspil.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>En ung Piges Sang af et utrykt Lystspil.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>De Bølger de skylle, de skylle mod Land</firstline>
   <source pages="200-201" facsimile-pages="220-221"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -5673,6 +5925,7 @@ Mig tvinger den lønlige Qvide.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Kun en eneste Gang, mens de lethenglidende Timer</firstline>
   <source pages="201-203" facsimile-pages="221-223"/>
+  <keywords>heksameter</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5729,6 +5982,7 @@ Af vort evige Hjem blev Tidens Foryngelse knyttet.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Storken er flygtet længst, og Sangerfuglenes Qviddren</firstline>
   <source pages="204-207" facsimile-pages="224-227"/>
+  <keywords>heksameter</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -5834,10 +6088,15 @@ Skues nøgen i sin Afmagt gjennem Sandheds Glar.
 <text id="hauch2026112497" variant="hauch2005052805">
 <head>
   <title>Fisken fra Fjeldsøen</title>
-  <titleblock><part type="main"><line>Fisken fra Fjeldsøen.</line></part><part type="sub"><line>En Fabel.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>En Fabel.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Høit imod Norden i en stille Dal</firstline>
   <source pages="209-212" facsimile-pages="229-232"/>
+  <places>
+    <place ref="nordic-countries" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6024,6 +6283,10 @@ Ved Vandbølgens Sang.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Du til Poesi vil offre dit Liv, ak, har Du nøie betænkt det</firstline>
   <source pages="215-219" facsimile-pages="235-239"/>
+  <keywords>digtekunst</keywords>
+  <places>
+    <place ref="castalian-spring" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6204,8 +6467,10 @@ Igjennem Dødens Nat til Livets Kilder!
 <text id="hauch20261124103" variant="hauch2018032921">
 <head>
   <title>Et mystisk Digt</title>
-  <titleblock><part type="main"><line>Et mystisk Digt.</line></part><part type="sub"><line>Efter Novalis.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Efter Novalis.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Naar Tal ikke meer og ei Figurer</firstline>
   <notes>
     <note editorial="true">Gendigtning af Novalis <xref type="translation" poem="novalis2019010901"/>.</note>
@@ -6234,8 +6499,10 @@ Det forvildede Væsen bort fra Jord.
 <text id="hauch20261124104" variant="hauch2018032922">
 <head>
   <title>En lille Drengs Klage</title>
-  <titleblock><part type="main"><line>En lille Drengs Klage.</line></part><part type="sub"><line>Efter Rückert.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Efter Rückert.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Mig Svalen har bedraget</firstline>
   <notes>
     <note editorial="true">Gendigtning af Friedrich Rückert <xref type="translation" poem="rueckert2018121110"/>.</note>
@@ -6261,13 +6528,16 @@ Er jeg af Længsel død.
 <text id="hauch20261124105" variant="hauch2018032923">
 <head>
   <title>Tillid til Gud</title>
-  <titleblock><part type="main"><line>Tillid til Gud.</line></part><part type="sub"><line>Frit omarbeidet efter Paul Gerhard.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Frit omarbeidet efter Paul Gerhard.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Befal hvad Du mon eie</firstline>
   <notes>
     <note editorial="true">Fri gendigtning af Paul Gerhardt <xref type="translation" poem="gerhardt2026072601"/>.</note>
   </notes>
   <source pages="225-228" facsimile-pages="245-248"/>
+  <keywords>salme</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6500,6 +6770,9 @@ Saalænge Syndens Frugter modnes.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>O Maane, svigt mig ei</firstline>
   <source pages="233-237" facsimile-pages="253-257"/>
+  <places>
+    <place ref="sahara" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6617,10 +6890,15 @@ Naar Dødningskibet fører Dig til Hjemmets fjerne Kyst.
 <text id="hauch20261124108" variant="hauch2018032926">
 <head>
   <title>Undergang og Frelse</title>
-  <titleblock><part type="main"><line>Undergang og Frelse.</line></part><part type="sub"><line>Et Phantasibillede fra Folkevandringernes Tid.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Et Phantasibillede fra Folkevandringernes Tid.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Norden i stærke Strømme frem mod Syden brød</firstline>
   <source pages="237-241" facsimile-pages="257-261"/>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6791,8 +7069,10 @@ Som forløstes fra Tidernes Tryk.
 <text id="hauch20261124110" variant="hauch1861a4">
 <head>
   <title>Kanefarten</title>
-  <titleblock><part type="main"><line>Kanefarten.</line></part><part type="sub"><line>Et polsk Reisebillede.</line></part></titleblock>
-  <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
+  <subtitle>
+    <line>Et polsk Reisebillede.</line>
+    <line>(„Lyriske Digte og Romancer“, 1861.)</line>
+  </subtitle>
   <firstline>Nu Natten længes og Dagen er kort</firstline>
   <source pages="244-245" facsimile-pages="264-265"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -6841,6 +7121,7 @@ Hvorhen han kjørte, men Maanen taug.
   <subtitle>(„Lyriske Digte og Romancer“, 1861.)</subtitle>
   <firstline>Der leved en Fisker ved Havets Strand</firstline>
   <source pages="245-249" facsimile-pages="265-269"/>
+  <keywords>eventyr</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -6965,8 +7246,10 @@ Hvor Djævle vil suge mit Hjerteblod.“
 <text id="hauch20261124112" variant="hauch2018030720">
 <head>
   <title>Livets Qvad</title>
-  <titleblock><part type="main"><line>Livets Qvad.</line></part><part type="sub"><line>Efter H. W. Longfellow.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>Efter H. W. Longfellow.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Fortæl mig det ei, Du blege Tænker</firstline>
   <notes>
     <note editorial="true">Gendigtning af H. W. Longfellow <xref type="translation" poem="longfellow1999063003"/>.</note>
@@ -7030,6 +7313,10 @@ Lær at vente til Høstens Dag!
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Jeg har en mægtig Ven</firstline>
   <source pages="251-252" facsimile-pages="271-272"/>
+  <keywords>satire</keywords>
+  <places>
+    <place ref="parnassus" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7130,6 +7417,7 @@ Da modstaae Elskovs Magt.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Naar Nattens Børn sig hæve</firstline>
   <source pages="254-255" facsimile-pages="274-275"/>
+  <keywords>balladestrofe</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7508,9 +7796,14 @@ Jer tause Billedskrift.
 <text id="hauch20261124122" variant="hauch2018030730">
 <head>
   <title>En Oldings Afsked</title>
-  <titleblock><part type="main"><line>En Oldings Afsked.</line></part><part type="sub"><line>Et pantheistisk Livsbillede; frit omarbeidet efter L. Schefer.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>Et pantheistisk Livsbillede; frit omarbeidet efter L. Schefer.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Jeg løser Eder nu</firstline>
+  <notes>
+    <note editorial="true">Fri gendigtning af Leopold Schefers <xref type="translation" poem="schefer2026112401"/>.</note>
+  </notes>
   <source pages="267-269" facsimile-pages="287-289"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -7580,6 +7873,11 @@ Uden min egen Skygge.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Dybt indviklet i Tankernes selsomtslyngede Netgang</firstline>
   <source pages="269-272" facsimile-pages="289-292"/>
+  <keywords>heksameter</keywords>
+  <places>
+    <place ref="ganges" relation="setting"/>
+    <place ref="india" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -7861,6 +8159,13 @@ Kun Muldet og Mørkets Magter
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>En gammel Stamme har i Danmark levet</firstline>
   <source pages="280-285" facsimile-pages="300-305"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+    <place ref="great-belt" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="valhalla" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8033,10 +8338,14 @@ At dog vi ginge fremad, skjøndt ei det syntes saa.
 
 <text id="hauch20261124127" variant="hauch2018030739">
 <head>
+  <suptitle>1.</suptitle>
   <title>Gangen til Sæteren</title>
-  <titleblock><part type="main"><line>1.</line><line>Gangen til Sæteren.</line></part></titleblock>
+  <toctitle><num>1.</num>Gangen til Sæteren</toctitle>
   <firstline>Sneen smelter, Kulden svinder</firstline>
   <source pages="286" facsimile-pages="306"/>
+  <places>
+    <place ref="norway" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8066,10 +8375,14 @@ Naar jeg boer paa Fjeldets Sti.
 
 <text id="hauch20261124128" variant="hauch2018030740">
 <head>
+  <suptitle>2.</suptitle>
   <title>Pigerne paa Malkepladsen</title>
-  <titleblock><part type="main"><line>2.</line><line>Pigerne paa Malkepladsen.</line></part></titleblock>
+  <toctitle><num>2.</num>Pigerne paa Malkepladsen</toctitle>
   <firstline>Kald paa den brune, den kullede Ko!</firstline>
   <source pages="287" facsimile-pages="307"/>
+  <places>
+    <place ref="norway" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8103,10 +8416,14 @@ Kom nu, kom nu, alle mine Køer paa Fjeldet!
 
 <text id="hauch20261124129" variant="hauch2018030741">
 <head>
+  <suptitle>3.</suptitle>
   <title>Pigerne ved Fjeldsøen</title>
-  <titleblock><part type="main"><line>3.</line><line>Pigerne ved Fjeldsøen.</line></part></titleblock>
+  <toctitle><num>3.</num>Pigerne ved Fjeldsøen</toctitle>
   <firstline>Hører I Nøkken og Huldren</firstline>
   <source pages="288-290" facsimile-pages="308-310"/>
+  <places>
+    <place ref="norway" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8176,10 +8493,15 @@ Og spærrer saa Døren til!
 
 <text id="hauch20261124130" variant="hauch2018030742">
 <head>
+  <suptitle>4.</suptitle>
   <title>En Sæterpiges Afsked med sin Kjæreste</title>
-  <titleblock><part type="main"><line>4.</line><line>En Sæterpiges Afsked med sin Kjæreste.</line></part></titleblock>
+  <toctitle><num>4.</num>En Sæterpiges Afsked med sin Kjæreste</toctitle>
   <firstline>Og nu farvel da, min Hjertens Ven!</firstline>
   <source pages="290-291" facsimile-pages="310-311"/>
+  <keywords>balladestrofe</keywords>
+  <places>
+    <place ref="norway" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8217,10 +8539,14 @@ Med Sorg jeg vender tilbage.
 
 <text id="hauch20261124131" variant="hauch2018030743">
 <head>
+  <suptitle>5.</suptitle>
   <title>Den Bjergtagne</title>
-  <titleblock><part type="main"><line>5.</line><line>Den Bjergtagne.</line></part></titleblock>
+  <toctitle><num>5.</num>Den Bjergtagne</toctitle>
   <firstline>I Bjerget der er et underligt Land</firstline>
   <source pages="291-292" facsimile-pages="311-312"/>
+  <places>
+    <place ref="norway" relation="setting"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8281,10 +8607,17 @@ Men vist hun efter Solen længes.
 <text id="hauch20261124132" variant="hauch2018030702">
 <head>
   <title>Til Dronning Caroline Amalie</title>
-  <titleblock><part type="main"><line>Til Dronning Caroline Amalie</line></part><part type="sub"><line>(med et Uhr, der blev hende givet, halvtredsindstyve Aar</line><line>efter hendes første Ankomst til Sorgenfri).</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>(med et Uhr, der blev hende givet, halvtredsindstyve Aar</line>
+    <line>efter hendes første Ankomst til Sorgenfri).</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Et Uhr kun viser Timerne og hvert Minut, der gaaer</firstline>
   <source pages="295-296" facsimile-pages="315-316"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="sorgenfri-palace" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8334,11 +8667,25 @@ For Alt, hvad Du har været, og hvad endnu Du er.
 
 <text id="hauch20261124133" variant="hauch2018030703">
 <head>
-  <title>Ved Afsløringen af Oehlenschlägers Statue</title>
-  <titleblock><part type="main"><line>Ved Afsløringen af Oehlenschlägers Statue,</line></part><part type="sub"><line>den 21de October 1861.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <title>Ved Afsløringen af Oehlenschlägers Statue,</title>
+  <subtitle>
+    <line>den 21de October 1861.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
+  <toctitle>Ved Afsløringen af Oehlenschlägers Statue</toctitle>
+  <linktitle>Ved Afsløringen af Oehlenschlägers Statue</linktitle>
   <firstline>Mens Seklerne svinde, mens Tiderne gaae</firstline>
+  <notes>
+    <note editorial="true">H.W. Bissens bronzestatue af Adam Oehlenschläger blev afsløret på Sankt Annæ Plads den 21. oktober 1861 og flyttet til Kongens Nytorv foran Det Kongelige Teater den 15. oktober 1874. <i>Kraks Vejviser</i> 1911, 1. del, s. II-167 <a href="https://cld.bz/fvCHoue/160/">↬</a>.</note>
+  </notes>
+  <pictures>
+    <picture artwork="kunst/sankt-annae-plads-oehlenschlaegers-statue-ca-1870"/>
+  </pictures>
   <source pages="297-298" facsimile-pages="317-318"/>
+  <keywords>oehlenschlaeger,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="sankt-annae-plads" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8383,6 +8730,10 @@ Mens Oldtidens Aander omsvæved Dit Øie.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Reen uskyldig kun Du leved for Dit ædle Digterkald</firstline>
   <source pages="298-299" facsimile-pages="318-319"/>
+  <keywords>ingemann,lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8416,6 +8767,10 @@ At Du Danmarks Hjerte smelted ved Din Harpes milde Klang.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Du var en dyb og ædel</firstline>
   <source pages="300-301" facsimile-pages="320-321"/>
+  <keywords>lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8465,11 +8820,16 @@ Kun med en Dødningkrands.
 
 <text id="hauch20261124136" variant="hauch2018030706">
 <head>
-  <title>Til Digteren H. C. Andersen</title>
-  <titleblock><part type="main"><line>Til Digteren H. C. Andersen,</line></part><part type="sub"><line>den 6te September 1869.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <title>Til Digteren H. C. Andersen,</title>
+  <subtitle>
+    <line>den 6te September 1869.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
+  <toctitle>Til Digteren H. C. Andersen</toctitle>
+  <linktitle>Til Digteren H. C. Andersen</linktitle>
   <firstline>Du var et fattigt Barn af Lykken forladt</firstline>
   <source pages="301-302" facsimile-pages="321-322"/>
+  <keywords>andersen,lejlighedsdigtning</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8494,11 +8854,19 @@ Der svandt den kolde Vinter, der blev det Vaar paany.
 
 <text id="hauch20261124137" variant="hauch2018030707">
 <head>
-  <title>Det Reitzelske Firmas Jubilæum</title>
-  <titleblock><part type="main"><line>Det Reitzelske Firmas Jubilæum,</line></part><part type="sub"><line>den 1ste Mai 1869.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <title>Det Reitzelske Firmas Jubilæum,</title>
+  <subtitle>
+    <line>den 1ste Mai 1869.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
+  <toctitle>Det Reitzelske Firmas Jubilæum</toctitle>
+  <linktitle>Det Reitzelske Firmas Jubilæum</linktitle>
   <firstline>Der staaer et Huus ved Sjællands grønne Strande</firstline>
   <source pages="302-303" facsimile-pages="322-323"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="zealand" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8544,11 +8912,19 @@ Endnu i hundred Aar og hundred til.
 
 <text id="hauch20261124138" variant="hauch2018030708">
 <head>
-  <title>Ved Soraner-Festen</title>
-  <titleblock><part type="main"><line>Ved Soraner-Festen,</line></part><part type="sub"><line>den 13de December 1862.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <title>Ved Soraner-Festen,</title>
+  <subtitle>
+    <line>den 13de December 1862.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
+  <toctitle>Ved Soraner-Festen</toctitle>
+  <linktitle>Ved Soraner-Festen</linktitle>
   <firstline>Vi veed et deiligt Sted</firstline>
   <source pages="304-305" facsimile-pages="324-325"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="soro" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8607,6 +8983,12 @@ Ved Sorøs gamle By.
     <note>Det første af disse to Digte er skrevet under den sidste polske Kamp, det andet er skrevet efter vor egen ulykkelige Krig.</note>
   </notes>
   <source pages="306-308" facsimile-pages="326-328"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="poland" relation="subject" primary="true"/>
+    <place ref="denmark" relation="subject"/>
+    <place ref="vistula" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8684,10 +9066,13 @@ Er længst i Graven lagt.
 <text id="hauch20261124140" variant="hauch2018030710">
 <head>
   <title>Sange ved Universitetets Sorgefest over Kong Frederik VII</title>
-  <titleblock><part type="main"><line>Sange ved Universitetets Sorgefest over Kong</line><line>Frederik VII.</line></part></titleblock>
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Nys førtes Kongen bort paa sorten Baare</firstline>
   <source pages="309-311" facsimile-pages="329-331"/>
+  <keywords>frederik7,lejlighedsdigtning,elegi</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8759,6 +9144,15 @@ Og aldrig skal Fjenden den træde med Fod;
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Saa er forstummet nu den stolte Tale</firstline>
   <source pages="311-313" facsimile-pages="331-333"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="dannevirke" relation="subject"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="sweden" relation="mentioned"/>
+    <place ref="england" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8834,6 +9228,13 @@ Vi vandt kun det bittre Minde.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Hvilke Rædsler, hvilke Tider</firstline>
   <source pages="314-319" facsimile-pages="334-339"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="drammen" relation="subject" primary="true"/>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -8989,10 +9390,15 @@ Saa viis det nu med Handling, ei med Ord.
 <text id="hauch20261124143" variant="hauch2018030713">
 <head>
   <title>Sang til Danmark</title>
-  <titleblock><part type="main"><line>Sang til Danmark.</line></part><part type="sub"><line>(Da Slesvigerne gjæstede Kjøbenhavn.)</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>(Da Slesvigerne gjæstede Kjøbenhavn.)</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Vort Danmark var et herligt Land</firstline>
   <source pages="319-321" facsimile-pages="339-341"/>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9056,6 +9462,13 @@ Og før vor Tro vi svigte, vil
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Bag græsklædte Høie der ligger en By</firstline>
   <source pages="322-323" facsimile-pages="342-343"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="uppsala" relation="subject"/>
+    <place ref="malaren" relation="mentioned"/>
+    <place ref="fyris-river" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9106,10 +9519,15 @@ Vi hilse den med Gammen og Glæde.
 <text id="hauch20261124145" variant="hauch2018030715">
 <head>
   <title>Sang i Rosenborghave i Anledning af Kronprindsens Formæling</title>
-  <titleblock><part type="main"><line>Sang i Rosenborghave i Anledning af</line><line>Kronprindsens Formæling.</line></part></titleblock>
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Vort Land, vort elskte Fædreland!</firstline>
   <source pages="323-325" facsimile-pages="343-345"/>
+  <keywords>frederik8,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="kings-garden-copenhagen" relation="mentioned"/>
+    <place ref="denmark" relation="subject"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9169,10 +9587,19 @@ Omsnoer den danske Strand.
 <text id="hauch20261124146" variant="hauch2018030716">
 <head>
   <title>Sang i Anledning af Kronprindsens Formæling</title>
-  <titleblock><part type="main"><line>Sang i Anledning af Kronprindsens Formæling.</line></part><part type="sub"><line>Afsungen hos Enkedronningen.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>Afsungen hos Enkedronningen.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Hellige Forbund, der nys blev begrundet</firstline>
   <source pages="325-327" facsimile-pages="345-347"/>
+  <keywords>frederik8,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="subject"/>
+    <place ref="sweden" relation="subject"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9242,6 +9669,12 @@ Det er Jert fagreste Smykke.
   <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
   <firstline>Der boer en Kongeslægt med Glands</firstline>
   <source pages="328-329" facsimile-pages="348-349"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="copenhagen" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9282,10 +9715,19 @@ Vi frygter ei den hele Jord
 <text id="hauch20261124148" variant="hauch2018030718">
 <head>
   <title>Til Sølvbryllupsfesten</title>
-  <titleblock><part type="main"><line>Til Sølvbryllupsfesten</line></part><part type="sub"><line>den 26de Mai 1867.</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>den 26de Mai 1867.</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Nu hæver Nattergalen høit sin Stemme</firstline>
   <source pages="329-332" facsimile-pages="349-352"/>
+  <keywords>christian9,frederik8,lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="thames" relation="mentioned"/>
+    <place ref="neva" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -9395,10 +9837,21 @@ Og Fred og Frihed blomstre ved dens Fod.
 <text id="hauch20261124149" variant="hauch2018030719">
 <head>
   <title>Til Prindsesse Dagmar</title>
-  <titleblock><part type="main"><line>Til Prindsesse Dagmar.</line></part><part type="sub"><line>(Ved hendes Afreise.)</line></part></titleblock>
-  <subtitle>(„Nye Digtninger“, 1869.)</subtitle>
+  <subtitle>
+    <line>(Ved hendes Afreise.)</line>
+    <line>(„Nye Digtninger“, 1869.)</line>
+  </subtitle>
   <firstline>Nei Du vil, Du kan det aldrig glemme</firstline>
   <source pages="333-334" facsimile-pages="353-354"/>
+  <keywords>lejlighedsdigtning</keywords>
+  <places>
+    <place ref="denmark" relation="subject" primary="true"/>
+    <place ref="zealand" relation="mentioned"/>
+    <place ref="isefjord" relation="mentioned"/>
+    <place ref="oresund" relation="mentioned"/>
+    <place ref="great-belt" relation="mentioned"/>
+    <place ref="russia" relation="mentioned"/>
+  </places>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
