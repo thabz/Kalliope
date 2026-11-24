@@ -1,5 +1,6 @@
 import { buildWorkSourceMetadata } from '../tools/build-static/work-metadata.js';
 import { DOMParser } from '@xmldom/xmldom';
+import fs from 'fs';
 import {
   collectSourceDigitalUrl,
   parseSourceBibliography,
@@ -165,6 +166,41 @@ describe('structured bibliographic sources', () => {
       .toBe('<i>Digte</i>, overs. af En oversætter, Anden Udgave, bind 2, [1804].');
   });
 
+  it('shows the title year in italics and the bracketed publication year at the end', () => {
+    const result = reference(`<source>
+      <title>Nytaarsgave</title><editor>Simon Poulsen</editor>
+      <place>Kiøbenhavn</place><publisher>Simon Poulsen</publisher><printer>P. Poulsen</printer>
+      <year>1802</year><publication-year>1801</publication-year>
+    </source>`, null, new Map());
+    expect(result.source).toBe(
+      '<i>Nytaarsgave. 1802</i>, udg. af Simon Poulsen, Kiøbenhavn: Simon Poulsen, [1801].'
+    );
+    expect(result.bibliography).toMatchObject({ year: '1802', 'publication-year': '1801' });
+  });
+
+  it('leaves the existing display unchanged without publication-year', () => {
+    expect(reference('<source><title>Digte</title><editor>A</editor><place>København</place><publisher>Forlaget</publisher><year>[1801]</year></source>').source)
+      .toBe('<i>Digte</i>, udg. af A, København: Forlaget, [1801].');
+    expect(reference('<source><title>Digte</title><year>1802</year></source>').source)
+      .toBe('<i>Digte</i>, 1802.');
+  });
+
+  it('does not repeat a year that is already part of the title', () => {
+    expect(reference('<source><title>Nytaarsgave 1802</title><year>1802</year><publication-year>1801</publication-year></source>').source)
+      .toBe('<i>Nytaarsgave 1802</i>, [1801].');
+    expect(reference('<source><title>1802: Nytaarsgave</title><year>1802</year><publication-year>1801</publication-year></source>').source)
+      .toBe('<i>1802: Nytaarsgave</i>, [1801].');
+    expect(reference('<source><title>18020</title><year>1802</year><publication-year>1801</publication-year></source>').source)
+      .toBe('<i>18020. 1802</i>, [1801].');
+    expect(reference('<source><title>Nytaarsgave.</title><year>1802</year><publication-year>1801</publication-year></source>').source)
+      .toBe('<i>Nytaarsgave. 1802</i>, [1801].');
+  });
+
+  it('inherits publication-year together with the selected bibliography', () => {
+    const inherited = reference('<source><title>Bogen</title><year>1802</year><publication-year>1801</publication-year></source>');
+    expect(reference('<source pages="7"/>', inherited)).toEqual(inherited);
+  });
+
   it('keeps printers in data but displays them only when there is no publisher', () => {
     const result = reference('<source><title>Digte</title><place>København</place><publisher>Forlaget</publisher><printer>Trykkeriet</printer></source>');
     expect(result.source).toBe('<i>Digte</i>, København: Forlaget.');
@@ -202,6 +238,10 @@ describe('structured bibliographic sources', () => {
     '<source><title>Titel</title><editor type="edition">A</editor></source>',
     '<source><title>Titel</title><editor type="">A</editor></source>',
     '<source><title>Titel</title><translator type="editor">A</translator></source>',
+    '<source><title>Titel</title><publication-year/></source>',
+    '<source><title>Titel</title><publication-year>[1801]</publication-year></source>',
+    '<source><title>Titel</title><year>[1802]</year><publication-year>1801</publication-year></source>',
+    '<source><title>Titel</title><publication-year>1801</publication-year><publication-year>1802</publication-year></source>',
   ])('rejects invalid structured bibliography: %s', xml => {
     expect(() => reference(xml)).toThrow();
   });
@@ -209,6 +249,16 @@ describe('structured bibliographic sources', () => {
 
 
 describe('work source metadata before output and caching', () => {
+  it('renders the documented Nytaarsgave citation from the work XML', () => {
+    const filename = 'fdirs/antologierdk/1802-nytaarsgave.xml';
+    const work = new DOMParser().parseFromString(fs.readFileSync(filename, 'utf8'), 'text/xml').documentElement;
+    const { sources } = buildWorkSourceMetadata(work, new Map(), filename);
+    expect(sources.default.source).toBe(
+      '<i>Nytaarsgave. 1802</i>, udg. af Simon Poulsen, Kiøbenhavn: Simon Poulsen, [1801].'
+    );
+    expect(sources.default.bibliography).toMatchObject({ year: '1802', 'publication-year': '1801' });
+  });
+
   it.each([false, true])('keeps errata sources separate unless also used by a text (%s)', usedByText => {
     const work = new DOMParser().parseFromString(`
       <kalliopework><workhead>
