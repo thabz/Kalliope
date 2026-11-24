@@ -98,3 +98,7 @@ og ordrette prosaoversættelse på s. 326–337 er udeladt.
 
 De fire bindtitelblade er kontrolleret mod farveskanningerne og registreret
 med trykt ordlyd. Årgangsværket er knyttet til Minervas overværk.
+
+Trykkets ordgentagelser »hvad hvad« i *Græsbænken* (bind 33, s. 98) og
+»den den« i Lovise-elegien (bind 34, s. 71) er kontrolleret direkte.
+Begge tekstposter har en regelafgrænset undtagelse for nabogentagelser.

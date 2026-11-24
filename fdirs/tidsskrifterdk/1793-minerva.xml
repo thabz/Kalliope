@@ -2692,8 +2692,11 @@ Glæden mildt afviske Sorgen,
 <text id="bruunmc2026112302" author="bruunmc">
 <head>
   <title>Til Maanen</title>
-  <subtitle>(Efter Holty.)</subtitle>
+  <subtitle>(Efter Hølty.)</subtitle>
   <firstline>Lad, kiære Maane! lad din Sølvglands strømme</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Höltys <xref type="translation" poem="holty2026112401"/>.</note>
+  </notes>
   <source in="bd33" pages="97" facsimile-pages="105"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2724,7 +2727,7 @@ Med din forladte Ven.
 </body>
 </text>
 
-<text id="bruunmc2026112303" author="bruunmc">
+<text id="bruunmc2026112303" ignore-tests="repeated-adjacent-word" author="bruunmc">
 <head>
   <title>Græsbænken</title>
   <firstline>Fiolerbestrø’te Græsbænk, hvor min Elskte</firstline>
@@ -2733,9 +2736,9 @@ Med din forladte Ven.
 </head>
 <body>
 <poetry>
-<nonum><metrik>- u u | - u | - u | - u | - u</metrik></nonum>
-<nonum><metrik>- u | - u u | - u | - u | - u</metrik></nonum>
-<nonum><metrik>- u | - u | - u u | - u | - u</metrik></nonum>
+   <nonum><metrik>- u u | - u | - u | - u | - u</metrik></nonum>
+   <nonum><metrik>- u | - u u | - u | - u | - u</metrik></nonum>
+   <nonum><metrik>- u | - u | - u u | - u | - u</metrik></nonum>
                   <nonum><metrik>- u u | - u.</metrik></nonum>
 Fiolerbestrø’te Græsbænk, hvor min Elskte
 Sad, og nynned’, jeg veed ei hvad hvad Vise,
@@ -2772,6 +2775,9 @@ Uden hende blegne? og uden hende
   <title>Til Venus</title>
   <subtitle>Efter Horatses 30. Ode i 1. Bog.</subtitle>
   <firstline>Fra himmelsk Hiem, o Kierligheds Gudinde</firstline>
+  <notes>
+    <note editorial="true">Fri gendigtning af Horats’ <xref type="translation" poem="horats2026010303"/>.</note>
+  </notes>
   <source in="bd33" pages="99" facsimile-pages="107"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2796,6 +2802,9 @@ Thi ellers — troe mig kun — enhver maae tvile
   <title>Faaret og Tornebusken</title>
   <subtitle>Efter Hagedorn.</subtitle>
   <firstline>Bag Tornebuske skiulde sig et Faar</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Friedrich von Hagedorns <xref type="translation" poem="hagedorn2026112401"/>.</note>
+  </notes>
   <source in="bd33" pages="99" facsimile-pages="107"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2929,7 +2938,7 @@ Bli älskat i rikare Mått,
 </body>
 </text>
 
-<text id="zetlitz2026112301" author="zetlitz" variant="zetlitz2001070701">
+<text id="zetlitz2001070701" author="zetlitz">
 <head>
   <title>Mine Længsler</title>
   <firstline>Hvor saare lidet vil der til</firstline>
@@ -3098,6 +3107,9 @@ Til engang dog Retfærdigheds visse Arm
   <title>Foraaret, paa første Maimorgen</title>
   <subtitle>Efter Claudius.</subtitle>
   <firstline>Glad, ja glad jeg være vil i Dag</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Matthias Claudius’ <xref type="translation" poem="claudius2026112401"/>.</note>
+  </notes>
   <source in="bd33" pages="366-367" facsimile-pages="376-377"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3128,6 +3140,9 @@ Saadan tumler jeg min Ven imøde.
   <title>Løveungen og Eslerne</title>
   <subtitle>En Fabel af Gay. (Fri Oversættelse.)</subtitle>
   <firstline>Hvor glædes ei ved Høiheds Magt</firstline>
+  <notes>
+    <note editorial="true">Fri oversættelse af John Gays <xref type="translation" poem="gay2005052919"/>.</note>
+  </notes>
   <source in="bd33" pages="367-368" facsimile-pages="377-378"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3186,6 +3201,9 @@ Det kun Foragt hos Løver naaer.
   <title>Den Syge og Engelen</title>
   <subtitle>En Fabel af Gay. (Fri Oversættelse.)</subtitle>
   <firstline>Ak, Doktor! sagde syge Mand</firstline>
+  <notes>
+    <note editorial="true">Fri oversættelse af John Gays <xref type="translation" poem="gay2005052927"/>.</note>
+  </notes>
   <source in="bd33" pages="369-371" facsimile-pages="379-381"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3258,6 +3276,9 @@ Og derpaa Siælen af Ham foer.
   <title>Middelveien</title>
   <subtitle>En Ode efter Horatses:</subtitle>
   <firstline>Lyksalig Mand, der ei paa Dybets Bølger</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Horats’ <xref type="translation" poem="horats2026102601"/>.</note>
+  </notes>
   <source in="bd33" pages="371-372" facsimile-pages="381-382"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3433,7 +3454,7 @@ For dog tilsidst ei kied heraf at blive,
   <title>Oktober 1793</title>
 </head>
 <content>
-<text id="anonym1700dk2026112329" author="anonym1700dk">
+<text id="anonym1700dk2026112329" ignore-tests="repeated-adjacent-word" author="anonym1700dk">
 <head>
   <title>Kronprindsens Datters Prindsesse Maria Lovises Død</title>
   <subtitle>i Hendes Alders ellevte Maaned den 12. October 1793.</subtitle>
@@ -3848,7 +3869,7 @@ Styre ind mod Klipper, som Smertens hule
   <subtitle>(Efter Pfeffel.)</subtitle>
   <firstline>Borgon, den kritiske Despot</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="pfeffel">Efter Gottlieb Konrad Pfeffel.</note>
+    <note editorial="true">Gendigtning af Gottlieb Konrad Pfeffels <xref type="translation" poem="pfeffel2026112401"/>.</note>
   </notes>
   <source in="bd34" pages="77-78" facsimile-pages="85-86"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -3884,6 +3905,9 @@ Hans Post fremdeles du betræde.
   <title>Landlivet</title>
   <subtitle>en Jambe.</subtitle>
   <firstline>Lyksalig den, som fra Processer fri</firstline>
+  <notes>
+    <note editorial="true">Fri gendigtning af Horats’ <xref type="translation" poem="horats2026010315"/>.</note>
+  </notes>
   <source in="bd34" pages="78-82" facsimile-pages="86-90"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4133,6 +4157,9 @@ Over Stiernemarken er de Egne,
   <title>Elskovsang til Viinflasken<footnote>Til Melodien: Før Noæ Tid var Adams Børn o. s. v.</footnote></title>
   <subtitle>(Ideen af Kleist.)</subtitle>
   <firstline>O Flaske! fuld med Saft af rhinske Druer</firstline>
+  <notes>
+    <note editorial="true">Fri gendigtning af Ewald Christian von Kleists <xref type="translation" poem="kleiste2018080101"/>.</note>
+  </notes>
   <source in="bd34" pages="227-228" facsimile-pages="235-236"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4375,6 +4402,9 @@ Freds og Friheds Fiende i Hæderskamp at
   <title>Frie Oversættelse af den 68. Psalme med oplysende Anmærkninger</title>
   <subtitle>Et Forsøg, oplæst i Herr Professor Hornemans theologiske Selskab.<footnote>Hensigten med denne Oversættelse er ikke at udtrykke Psalmens Ord, men, saavidt mueligt, at fremstille dens Aand paa een for vor Tidsalders finere æsthetiske Følelse passende Maade. Dette er Aarsagen til mine Afvigelser fra Textens Ord.</footnote></subtitle>
   <firstline>Jehova reiser sig, hans Fiender bæve</firstline>
+  <notes>
+    <note editorial="true">Fri oversættelse af Davids salme 68. Se <xref poem="bibelsalme68"/>.</note>
+  </notes>
   <source in="bd34" pages="320-326" facsimile-pages="328-334"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4533,7 +4563,7 @@ Han kommer svøbt i Skræk fra Salems Høie,
   <subtitle>(Den Dublinske Udgave af 1751.)</subtitle>
   <firstline>Du, som det rullende Aar med Guddoms Aande besiæler</firstline>
   <notes>
-    <note editorial="true" unknown-original-by="thomson">Efter James Thomson.</note>
+    <note editorial="true">Gendigtning af James Thomsons <xref type="translation" poem="thomson2018070101"/>.</note>
   </notes>
   <source in="bd34" pages="383-388" facsimile-pages="391-396"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -4649,6 +4679,9 @@ Kom da at grunde paa hans Priis, veltalende Taushed!
   <title>Menneskets Utilfredshed</title>
   <subtitle>frit efter Kleist.</subtitle>
   <firstline>Ja! tidt drikke vi Mennesker Fryd i Strømme og tørste</firstline>
+  <notes>
+    <note editorial="true">Fri gendigtning af Ewald Christian von Kleists <xref type="translation" poem="kleiste2026112401"/>.</note>
+  </notes>
   <source in="bd34" pages="388-392" facsimile-pages="396-400"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
