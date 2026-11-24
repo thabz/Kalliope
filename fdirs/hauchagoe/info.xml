@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="hauchagoe" country="dk" lang="da" type="person">
+  <name>
+    <firstname>A. G. Ø.</firstname>
+    <lastname>Hauch</lastname>
+    <fullname>Adam Gottlob Øhlenschlager Hauch</fullname>
+  </name>
+  <period>
+    <born>
+      <date>1836-09-18</date>
+      <place>Sorø</place>
+    </born>
+    <dead>
+      <date>1914-12-26</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q98345460</wikidata>
+  </identifiers>
+  <!-- Navn og livsdata: https://biografiskleksikon.lex.dk/A.G.%C3%98._Hauch -->
+</person>
