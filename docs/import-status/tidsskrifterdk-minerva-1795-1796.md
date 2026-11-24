@@ -55,6 +55,61 @@ De trykte signaturer bevares, og alternative attributioner behandles særskilt.
 Nyerup registrerer eksempelvis *Kiempevise* fra bind 46 under Johan Michael
 Lund, mens det trykte bidrag er underskrevet »C. Lund.«.
 
-Begge kalenderårsværker står foreløbig som `incomplete`. Den endelige
-afstemning af tekstudvalget, separat korrektur af al XML, kontrol af
-oversættelsesforlæg og færdigregistrering af bidragydere udestår.
+Begge kalenderårsværker har foreløbig status `incomplete` under den afsluttende validering.
+
+## Afstemt udvalg
+
+| Bind | Tekstposter | Bemærkning |
+| --- | ---: | --- |
+| 39 | 6 | Martsudgaven fra Nasjonalbiblioteket er brugt til kontrol af flere læsninger i Skaldebrevet. |
+| 40 | 8 | Tre komplette reformationssalmer fra »Oldsager« er medtaget. |
+| 41 | 9 | Nasjonalbibliotekets s. 275–430, billeder 0003–0158, erstatter Michigan-billederne ved samme positioner. Det gør de beskårne noter til *Møre-Karl* og de nederste verslinjer i *Alasman* læsbare. |
+| 42 | 7 | Seidelins oversættelse af *Iliaden* IX slutter på s. 204, hvor litteraturafdelingen begynder. |
+| 43 | 10 | Også den fulde Chénier-oversættelse på s. 227 og den tresprogede *Sortes Lucretianæ* er medtaget. |
+| 44 | 5 | Andrieux’ *Det capuanske Senats Proces* er et helt versbidrag. |
+| 45 | 6 | Kierulf-rettelsen på s. 336–337 angår prosa. |
+| 46 | 2 | Oktober og december har hver ét selvstændigt versbidrag. November har intet efter den trykte redaktionelle oplysning. |
+
+Fra »Oldsager« er nr. 57, 187 og 220 medtaget. Alle strofer i de tre
+salmer kan afstemmes med Thomissøns 1569-tryk
+([nr. 57](https://salmer.dsl.dk/thomissoen_1569/2/13),
+[nr. 187](https://salmer.dsl.dk/thomissoen_1569/6/1),
+[nr. 220](https://salmer.dsl.dk/thomissoen_1569/10/4)).
+Nr. 25, 59, 264 og 512 er uddrag, jf.
+[Thomissøn](https://salmer.dsl.dk/thomissoen_1569/2/16),
+[salmen til nr. 59](https://salmer.dsl.dk/thomissoen_1569/2/15),
+[salmen til nr. 264](https://salmer.dsl.dk/thomissoen_1569/16/4) og
+[salmen til nr. 512](https://salmer.dsl.dk/thomissoen_1569/25/5).
+Nr. 24, 96, 510 og 727 kan sammenholdes med Brandt og Helvegs
+*Den danske Psalmedigtning*, I, s. 183, 287–288, 233 og 462.
+Nr. 639 kan sammenholdes med Cassuben 1677, s. 917, citeret af
+[Kornerup](https://tidsskrift.dk/kirkehistoriskesamlinger/article/download/162454/204038/360928#page=19).
+Nr. 345 omfatter kun alfabetdigtets A og B. Nr. 675 og 684 omtales
+bibliografisk. Det konkrete [Hoff-tryk fra 1686](https://www.nb.no/items/a576054331db25be6eadb70310398a6b)
+er fundet som katalogpost. Afstemningen bygger på sammenlignelige tryk.
+
+## Attributioner, varianter og forlæg
+
+- Nyerup, s. 147, skelner mellem Christen Andersen Lunds versbreve og
+  Johan Michael Lunds færøske bidrag. Begge trykte signaturer er bevaret.
+  *Kiempevise* i bind 46 står særskilt, fordi Minerva trykker »C. Lund.«,
+  mens Nyerup henfører samme titel og side til Johan Michael Lund.
+- Hans Seidelin og Klaus Henrik Seidelin er registreret som særskilte
+  personer. *Minerva* anfører 1791 i den trykte note til Iliade-oversættelsen.
+  Gravskriften angiver 1790, som er anvendt i personmetadata.
+  [Danmarks Kirker, s. 363](https://nmdanmarkskirkerprod.blob.core.windows.net/files/Maribo_0353-0363.pdf)
+- Erslew, I, s. 12, registrerer præcist begge Minerva-bidrag af Christian
+  Jess Almstrup. Nyerups biografiske oplysning under Almstrup svarer til en
+  anden navnebærer. [Erslew](https://runeberg.org/almiforf/1/0018.html)
+- Nye konkrete variantrelationer forbinder Bruuns to idyloversættelser
+  med 1797-trykket, Thaarups *Flora* med 1822-udgaven og Niels Ebbesens
+  kæmpevise med Syvs 1695-tryk (DgF 156 A).
+- Rahbeks *Det andet Raad* og *Afguderne* er forbundet med Stolbergs
+  *Der zweite Rath* og *Die Gözen* fra den bevarede 1784-udgave.
+- Dokumenterede forlæg til videre tekstregistrering omfatter
+  [Isac Reinhold Bloms prisdigt](https://litteraturbanken.se/export/faksimil/lb10553176.pdf),
+  [Kellgrens *Ljusets fiender*](https://libris.kb.se/bib/2429082),
+  [Sanders *Die Mähr von den sechs Königen*](https://www.digitale-sammlungen.de/en/view/bsb10614685?page=486),
+  [Andrieux’ *Contes et opuscules*](https://archive.org/details/bub_gb_mOKFztR1PlEC),
+  [Dalins *Kämpe-Wisa*](https://litteraturbanken.se/export/faksimil/lb22281131.pdf)
+  og [Chéniers *Le Serment républicain*](https://catalogue.bnf.fr/rechercher.do?index=TIT3&numNotice=15542153).

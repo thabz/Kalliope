@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="seidelinh" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans</firstname>
+    <lastname>Seidelin</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1701</date>
+      <place>Nykøbing Falster</place>
+    </born>
+    <dead>
+      <!-- Gravskrift i Gloslunde Kirke; jf. Danmarks Kirker, Maribo Amt, s. 363. Tryknoten i Minerva anfører 1791. -->
+      <date>1790</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>

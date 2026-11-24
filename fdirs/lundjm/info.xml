@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lundjm" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Johan Michael</firstname>
+    <lastname>Lund</lastname>
+    <alternative>Johann Michael Lund</alternative>
+  </name>
+  <period>
+    <born>
+      <date>1753-09-02</date>
+      <place>Bergen</place>
+    </born>
+    <dead>
+      <date>1824-05-15</date>
+      <place>Bergen</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q224508</wikidata>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-24">
+    <checked-source id="dbl1">Lund-navnefølgen i bind X har ingen artikel om lagmanden født 1753.</checked-source>
+    <checked-source id="salmonsen2">Lund-navnefølgen i bind XVI har andre navnebærere, men ingen artikel om lagmanden.</checked-source>
+    <checked-source id="ehrencron-mueller">Bind V, s. 212, har kun henvisningen »se: Halvorsen«.</checked-source>
+    <note>Den biografiske tekst ligger hos J. B. Halvorsen, Norsk Forfatter-Lexikon, III, s. 570. Ehrencron-Müllers opslag indeholder ingen selvstændig biografitekst.</note>
+  </biography-status>
+</person>
