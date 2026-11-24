@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1906-1909-08" author="drachmann" status="incomplete" type="poetry" parent="1906-1909">
+<kalliopework id="1906-1909-08" author="drachmann" status="complete" type="poetry" parent="1906-1909">
 <workhead>
   <title>Samlede poetiske Skrifter</title>
   <subtitle>Ottende Bind</subtitle>
@@ -30,6 +30,10 @@
       <!-- metadata checked: 2026-11-24 -->
     </picture>
   </pictures>
+  <errata status="none"/>
+  <proofreadings>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-24T15:38:30.953Z"/>
+  </proofreadings>
 </workhead>
 <workbody>
 
@@ -44,6 +48,7 @@
 <head>
   <firstline>Velkommen hjem til fagre Strande</firstline>
   <source pages="233"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -69,6 +74,7 @@ fra Vikingefærd til Danmarks Strand saa fage!
 <head>
   <firstline>Ro — ro væk! med den plaskende Drage</firstline>
   <source pages="236"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -86,6 +92,7 @@ mættet fra Valen vi vender tilbage —
 <head>
   <firstline>Den naadig Junker rider ud</firstline>
   <source pages="237-238"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -137,6 +144,7 @@ den naadig Herres naadig’ Skaal.
 <head>
   <firstline>I Køllert og Staal drog vi ud</firstline>
   <source pages="241"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -171,6 +179,7 @@ Hallali, hallali, hallo!
   <title>Sang</title>
   <firstline>I Freden blev min Isse graa</firstline>
   <source pages="242"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -191,6 +200,7 @@ thi han har adlet Bondens Stand!“
 <head>
   <firstline>En Neverkukuk — en liden Taar</firstline>
   <source pages="245"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -235,6 +245,7 @@ men den kukker bedst, som selv kukker sidst!
 <head>
   <firstline>Nys fyldte Skøn Sired det attende Aar</firstline>
   <source pages="246"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -259,6 +270,7 @@ vi Smaapiger véd dog, vi sejrer til sidst!
   <title>Duet</title>
   <firstline>Paa Rosens Gren de Knopper to</firstline>
   <source pages="247"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -284,6 +296,7 @@ var Længsel først i Knoppens Bryst!
 <head>
   <firstline>I Haven her hvor Flora smiler</firstline>
   <source pages="247"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -321,6 +334,7 @@ Ak nej, hun rækker ham vist gerne
 <head>
   <firstline>Se engang min raske Glut</firstline>
   <source pages="247-248"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -377,6 +391,7 @@ Ak, det har, det har vi ej!
   <title>Kor</title>
   <firstline>Hejsa, her kommer vi, Borger og Bonde</firstline>
   <source pages="248"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -397,6 +412,7 @@ den vil vi ha’!
 <head>
   <firstline>Gid Pokker ta’e ved Politik</firstline>
   <source pages="252-253"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -464,6 +480,7 @@ Jovist, min Ven, vor Jord er skøn o. s. v.
 <head>
   <firstline>Her, Dannemænd, staaer Friheds Minde</firstline>
   <source pages="257"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -486,6 +503,7 @@ thi Frihed, Frihed skjenkte han.“
 <head>
   <firstline>Evige Moder, Ungdom i det gamle</firstline>
   <source pages="262-263"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -516,6 +534,7 @@ Løft os vor vort Banner, led os naar vi famler —
     <note>Offentliggjort i Ugebladet „Hjemme og Ude“ den 12. Oktober 1884.</note>
   </notes>
   <source pages="267-281"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1175,6 +1194,7 @@ for Kærlighedens Skyld han os forlader!
 <head>
   <firstline>Glødende Sol</firstline>
   <source pages="287"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1192,6 +1212,7 @@ alt, hvad vi søger at skjule, men ikke formaar? …
 <head>
   <firstline>Softa, Du blege, som grubler og gransker</firstline>
   <source pages="287-288"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1208,6 +1229,7 @@ Softa, Du blege, som grubler og gransker —
 <head>
   <firstline>Og jeg vil gaa i Tavernen hen</firstline>
   <source pages="291"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1224,6 +1246,7 @@ som den naragtigste Gæk! —
 <head>
   <firstline>Stille gløder Minareten</firstline>
   <source pages="293-294"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1255,6 +1278,7 @@ drukner deres Graad deri!
 <head>
   <firstline>Og saa blegner Minareten</firstline>
   <source pages="294"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1286,6 +1310,7 @@ og helt liden, hjem igen!
 <head>
   <firstline>Over os et Hav af Vellyd</firstline>
   <source pages="295"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1312,6 +1337,7 @@ dirrer gennem Nattens Blaa!
 <head>
   <firstline>Rundt omkring os Nattens Mørke</firstline>
   <source pages="296-297"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1356,6 +1382,7 @@ Ganske som for hundred Aar!
 <head>
   <firstline>Softa, din blækkede Kofte</firstline>
   <source pages="297-298"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1387,6 +1414,7 @@ hvi brænder dit Hjerte, hvi bløder din Mund?
 <head>
   <firstline>Og jeg vil gaa i Tavernen hen</firstline>
   <source pages="301-302"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1468,6 +1496,7 @@ i Morgen gaar jeg til din Kiosk —
 <head>
   <firstline>Softa, Du blege, som grubler og gransker</firstline>
   <source pages="304"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1482,6 +1511,7 @@ ser Du ej Glæden, som haster forbi …
 <head>
   <firstline>En søger Tilflugt i Biblen</firstline>
   <source pages="305"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1522,6 +1552,7 @@ mangt selvmodsigende Sprog!
 <head>
   <firstline>I Dag er Du vor Sultans Elskerinde</firstline>
   <source pages="309"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1563,6 +1594,7 @@ med den, der skælver paa din hule Kind? …
 <head>
   <firstline>Suleîma! det er ej til Dig, jeg taler</firstline>
   <source pages="310"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1594,6 +1626,7 @@ Suleîma! kender Du din sidste Ven?
 <head>
   <firstline>Glødende Sol</firstline>
   <source pages="311-312"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1634,6 +1667,7 @@ naar vi staar op, saa lad Sol i sin Nedgang kun rødme!
 <head>
   <firstline>Allah! din Magt Profetens Stemme priser</firstline>
   <source pages="318-319"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1677,6 +1711,7 @@ end blev den Dødskrans, Eders Tinding bar!
 <head>
   <firstline>Allahs er Magten over Ild og Død</firstline>
   <source pages="320"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1722,6 +1757,7 @@ for Kærlighedens Skyld han os forlader!
 <head>
   <firstline>Og det var sig den Humlebi</firstline>
   <source pages="330-331"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1761,6 +1797,7 @@ det vared ved indtil hans Død.
 <head>
   <firstline>Du gyder Dig i Havet</firstline>
   <source pages="331-332"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1810,6 +1847,7 @@ og Skibet ligegyldigt sejler!
 <head>
   <firstline>Her tager jeg ud af Skønjomfrus Haand</firstline>
   <source pages="344-345"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1850,6 +1888,7 @@ Mit Haandværk er Løjer, min Gruss er Latter —
 <head>
   <firstline>I sidder ved Dobbel, I sidder ved Drik</firstline>
   <source pages="346-348"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1943,6 +1982,7 @@ det var jo den Jomfru; og hun var død!
 <head>
   <firstline>Rabundus i Morgen — i Dag Matador</firstline>
   <source pages="350"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -1977,6 +2017,7 @@ det Spil vil Du sildigst fortryde;
 <head>
   <firstline>Se paa Taget Maanen skinner</firstline>
   <source pages="352"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2009,6 +2050,7 @@ De Katte og de Killinger — dirum — drum — drum!
 <head>
   <firstline>Ejn Pfeyfchen Taback is’ eben so gut</firstline>
   <source pages="360"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2023,6 +2065,7 @@ als wenn man zwey Daaler bei den Mädeln verduth!“
 <head>
   <firstline>Den korte Sommernat slaar ud</firstline>
   <source pages="365-366"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2064,6 +2107,7 @@ men Kronen har en Ædelsten, den gjordes nu til min!
 <head>
   <firstline>Du møder en Glut</firstline>
   <source pages="369-370"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2102,6 +2146,7 @@ Al Kjærlighed er et Mysterium!
 <head>
   <firstline>Rabundus i Morgen — i Dag Matador</firstline>
   <source pages="373"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2119,6 +2164,7 @@ hos Mandfolk saa lidt som hos Kvinde …
 <head>
   <firstline>Godtfolk! i Dag er det Rejsens Dag</firstline>
   <source pages="375"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2147,6 +2193,7 @@ det er mig den ligegyldigste Sag
 <head>
   <firstline>Jeg gik mig ud af den trange By</firstline>
   <source pages="376"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2200,6 +2247,7 @@ og saa er min Vise ude!
   <subtitle>(Ouverture. En Ungdomsfantasi)</subtitle>
   <firstline>Suleîma! Solen skinner</firstline>
   <source pages="391-393"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2364,6 +2412,7 @@ en <i>saadan</i> kaldes for Digter!
 <head>
   <firstline>O Kristenvin fra Cypernland</firstline>
   <source pages="394"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2395,6 +2444,7 @@ Drik ud, og glem hendes gule Baand —
 <head>
   <firstline>Just forleden kom en Sang</firstline>
   <source pages="397"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2426,6 +2476,7 @@ Just forleden brat en Sang
 <head>
   <firstline>O Kristenvin fra Cypernland</firstline>
   <source pages="406"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2440,6 +2491,7 @@ Du kvæger saa mangen Muselmand.
 <head>
   <firstline>Nu hvælver sig Nattens Himmel</firstline>
   <source pages="406-407"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2469,6 +2521,7 @@ o stol ej paa Freden! Der blæser en Storm
 <head>
   <firstline>Bag ved de høje Bjerge</firstline>
   <source pages="407"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2507,6 +2560,7 @@ Kut-Alkulub! Kut-Alkulub! langt heller Døden dø!
 <head>
   <firstline>Der boed en Gang i den Ørken graa</firstline>
   <source pages="413-415"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2611,6 +2665,7 @@ Hej, klingeling! og kys, kys! og kluk — kluk — kluk!
 <head>
   <firstline>Snart hvælver sig Nattens Himmel</firstline>
   <source pages="444"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2636,6 +2691,7 @@ der vaagner en Storm ved et Gæstebud …
 <head>
   <firstline>Harun kan dristigt over Verden byde</firstline>
   <source pages="454"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2661,6 +2717,7 @@ I tusind Aar vil ej hans Ry forgaa!
 <head>
   <firstline>Tag disse friske Sange</firstline>
   <source pages="457"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2693,6 +2750,7 @@ Jeg elsker dem derfor dobbelt:
   <title>Foraarsregn</title>
   <firstline>Det klinger som fra fine Instrumenter</firstline>
   <source pages="459"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2724,6 +2782,7 @@ Det klinger nu, som da, fra fine Strenge,
   <title>Der vælder Lyd —</title>
   <firstline>Der vælder Lyd — af Ensomheden ud</firstline>
   <source pages="459-460"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2767,7 +2826,7 @@ Hvorfor da ængstes? —
     <note editorial="true" type="credits">Bidrag fra Sven Sørensen.</note>
   </notes>
   <source pages="460-461"/>
-  <quality>korrektur1,kilde,side</quality>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2819,6 +2878,7 @@ Paa alt, hvad som savner og længes.
   </titleblock>
   <firstline>Fra Gulløens Pynt, fra den drønende Bred</firstline>
   <source pages="461-463"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2909,6 +2969,7 @@ Elven var samlet til <i>Et</i>. Jeg forstod
   <title>Stemning</title>
   <firstline>Jeg kørte langsomt langs med Skovens Hegn</firstline>
   <source pages="463-464"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -2951,6 +3012,7 @@ Jeg savned — savned … ak, jeg savned Ord
   </titleblock>
   <firstline>En solklar Martsdag med en skyfri Luft</firstline>
   <source pages="464-466"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3050,6 +3112,7 @@ O kunde jeg med denne Sydens Blæst,
   <title>Jeg takker Dig, min Fader, at Du ikke var rig</title>
   <firstline>Jeg takker Dig, min Fader, at Du ikke var rig</firstline>
   <source pages="466-467"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3089,6 +3152,7 @@ Jeg takker Dig, min Fader, at ikke dit Guld,
   <title>Visen om Agnete og Havmanden</title>
   <firstline>Der staar en Frøken ved Havets Strand</firstline>
   <source pages="467-468"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3160,6 +3224,7 @@ De søgte hans Spor fra Hotel til Hotel —
   <title>Ved Siden af mig spilles der Klavér</title>
   <firstline>Ved Siden af mig spilles der Klavér</firstline>
   <source pages="468-469"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3189,6 +3254,7 @@ At tænke sig: et halvforstemt Klavér —
   <title>Med et broget Blad</title>
   <firstline>Saa’ Du det Blad, som Blæstens Haand afrev</firstline>
   <source pages="469-470"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3245,6 +3311,7 @@ Vi har den spæde, sarte Spires Tid,
   <title>Völund</title>
   <firstline>Smeddet i Bolt vil jeg sidde</firstline>
   <source pages="470"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3290,6 +3357,7 @@ Og atter stolt jeg mig strækker,
   <title>Den røde vilde Vin</title>
   <firstline>Et Sus af sagte høstlig Vind</firstline>
   <source pages="471"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3340,6 +3408,7 @@ Af Dig jeg perset har en Drik —
   <title>Naar Linden blomstrer</title>
   <firstline>Sagte gennem Luften strømmer</firstline>
   <source pages="472-474"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3459,6 +3528,7 @@ Dér staar skrevet: Livet fordrer
   <title>Den unge Ørn</title>
   <firstline>Hun vented mig. Det skumred</firstline>
   <source pages="474-476"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3552,6 +3622,7 @@ Hun vented mig. Det skumred;
   </titleblock>
   <firstline>Lad gaa dér agter!“ lød Kaptajnens Ord</firstline>
   <source pages="476"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3594,6 +3665,7 @@ Og vi har Kyssets Sprog, har vi ej andet!“
   </titleblock>
   <firstline>Jeg sejled en Nat over Havet</firstline>
   <source pages="476-477"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3641,6 +3713,7 @@ Jeg sejled en Nat over Havet —
   </titleblock>
   <firstline>Der leger en Sang gennem Luften</firstline>
   <source pages="477-478"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3703,6 +3776,7 @@ Og Kronerne øjner en Sølvstrøm,
   </titleblock>
   <firstline>Din Dug er atter bredt paa Jord</firstline>
   <source pages="478-479"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3769,6 +3843,7 @@ Lad Øjet op fra „Støvets“ Jord
   </titleblock>
   <firstline>Støvskyer stiger for hvert et Skridt</firstline>
   <source pages="480"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3808,6 +3883,7 @@ Støvskyer stiger for hvert et Skridt,
   </titleblock>
   <firstline>Hvad vil de Mennesker? hvad vil de Masker?</firstline>
   <source pages="480-481"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3852,6 +3928,7 @@ Naturens Hjerte bæver dog deri!
   </titleblock>
   <firstline>Jeg beder ej om det daglige Brød</firstline>
   <source pages="481"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3886,6 +3963,7 @@ Saa hugger han selv sig det daglige Brød.
   </titleblock>
   <firstline>En Betler jeg mødte; han bad om en Skærv</firstline>
   <source pages="482-483"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3955,6 +4033,7 @@ En Højsang, en Salme derom jeg véd!
   </titleblock>
   <firstline>Da Maanen stod bag Skyer, gik jeg ned</firstline>
   <source pages="483"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -3997,6 +4076,7 @@ Tavs stod jeg — denne Tavshed var af Guld.
   <indextitle>Hun elsker mig trods mine Fejl og Mangler</indextitle>
   <firstline>Hun elsker mig trods mine Fejl og Mangler</firstline>
   <source pages="484"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4025,6 +4105,7 @@ Jeg elsker hende; dækker hendes Mangler
   <indextitle>At sætte Livet paa et Tærningkast</indextitle>
   <firstline>At sætte Livet paa et Tærningkast</firstline>
   <source pages="484"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4054,6 +4135,7 @@ Men hun, som sidder ene dér i Stuen
   <indextitle>Der er paa Fjældenes de høje Vidder</indextitle>
   <firstline>Der er paa Fjældenes de høje Vidder</firstline>
   <source pages="484-485"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4077,6 +4159,7 @@ Jeg elsker Dig!
   <indextitle>Der gives Stjerner, fjernet fra vor Jord</indextitle>
   <firstline>Der gives Stjerner, fjernet fra vor Jord</firstline>
   <source pages="485"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4102,6 +4185,7 @@ Der gives Stjerner, fjernet fra vor Jord
   <indextitle>Ved Nattens Frembrud slog det paa min Rude</indextitle>
   <firstline>Ved Nattens Frembrud slog det paa min Rude</firstline>
   <source pages="485-488"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4256,6 +4340,7 @@ Hun var min Musa — hendes Digter jeg!
   <indextitle>O lær mig Du, som stedse mig omsvæver</indextitle>
   <firstline>O lær mig Du, som stedse mig omsvæver</firstline>
   <source pages="489"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4292,6 +4377,7 @@ O lær mig Du, som aldrig Dig beklaged,
   <title>Jakobsstigen</title>
   <firstline>Jeg drømte, jeg var død — bag efter Dig</firstline>
   <source pages="489-490"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4338,6 +4424,7 @@ Og atter var vi dér, hvor Skov, hvor Sø
   <title>Folkevise</title>
   <firstline>Der var en Gang en Konge</firstline>
   <source pages="490-492"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4447,6 +4534,7 @@ Laa over Kongens Bryst.
 <head>
   <firstline>Evropa trækker saa tungt sit Vejr</firstline>
   <source pages="492-493"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4507,6 +4595,7 @@ Og trækker jeg selv saa tungt mit Vejr,
   </titleblock>
   <firstline>Jeg er en Softa, en tyrkisk Student</firstline>
   <source pages="493-494"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4538,6 +4627,7 @@ Da saa’ jeg Suleîma for første Gang.
 <head>
   <firstline>Det var mig, som om en Vision jeg fik</firstline>
   <source pages="494-495"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4585,6 +4675,7 @@ Velsignet være dit hvide Skød!
   </titleblock>
   <firstline>Helt ofte, naar i den stille Nat</firstline>
   <source pages="495"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4619,6 +4710,7 @@ Det er min Sjæl, som velsigner i Sang
   </titleblock>
   <firstline>De klamres indenfor Islam</firstline>
   <source pages="495"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4643,6 +4735,7 @@ Det gælder at <i>elske nogen</i>
   </titleblock>
   <firstline>Hos Saadi findes det Udsagn</firstline>
   <source pages="496"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4677,6 +4770,7 @@ Jeg har i Suleîmas Fangenskab
   </titleblock>
   <firstline>Lad Hafis i sine Gazeler</firstline>
   <source pages="496-497"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4721,6 +4815,7 @@ Og det er din <i>Hjertensgodhed</i>,
   </titleblock>
   <firstline>Bosporus! din Bølge sukker</firstline>
   <source pages="497"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4756,6 +4851,7 @@ Denne Længsel, som vil stige,
   </titleblock>
   <firstline>Det var slig en Nat, Du sukked</firstline>
   <source pages="497-498"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4806,6 +4902,7 @@ Det var slig en Nat, vi sukked,
   </titleblock>
   <firstline>Du Vægter foran Tavernen</firstline>
   <source pages="498-499"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4850,6 +4947,7 @@ Jeg prygler den lurvede Vægter,
   </titleblock>
   <firstline>Tys! der lyder Instrumenter</firstline>
   <source pages="499-500"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4918,6 +5016,7 @@ Standser Lyden, endes Natten,
   </titleblock>
   <firstline>Jeg saa’ i et Udsalg forleden</firstline>
   <source pages="500-501"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4952,6 +5051,7 @@ Ak, mangen Gang naar hun rakte
   </titleblock>
   <firstline>O Dug, som laa paa hendes Øjenbryn</firstline>
   <source pages="501"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -4989,6 +5089,7 @@ Er ikke Morgnens Dug et dejligt Syn?
   </titleblock>
   <firstline>Ofte Du sang for de andre</firstline>
   <source pages="501-502"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5018,6 +5119,7 @@ Stundom jeg sang for de andre,
   </titleblock>
   <firstline>Den Dag, jeg første Gang Dig saa’</firstline>
   <source pages="502"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5062,6 +5164,7 @@ Begrav mig i min Drøm, Du Smaa!
   </titleblock>
   <firstline>Frygteligt, naar vi vil tænke</firstline>
   <source pages="502-503"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5096,6 +5199,7 @@ Men <i>min</i> Verden paa dit Bud
   </titleblock>
   <firstline>Kom med, kom med ind i Salen</firstline>
   <source pages="503-504"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5140,6 +5244,7 @@ Dog klinger det stedse paany.
   </titleblock>
   <firstline>Umuligheden af at leve</firstline>
   <source pages="504"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5174,6 +5279,7 @@ End længes jeg — og end jeg lever;
   </titleblock>
   <firstline>Der er de store Vunder</firstline>
   <source pages="504"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5194,6 +5300,7 @@ Der er de Øjeblikke,
 <head>
   <firstline>Men Fuglen, som det søde Bær har smagt</firstline>
   <source pages="505"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5215,6 +5322,7 @@ Som trodser Snedigheden hos en Jæger!
   </titleblock>
   <firstline>Jeg véd saa grumme mange Ting</firstline>
   <source pages="505"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5254,6 +5362,7 @@ Og farer hastigt jeg med Haand
   </titleblock>
   <firstline>Og vidste jeg ej, at Du græmmed Dig</firstline>
   <source pages="505-506"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5288,6 +5397,7 @@ For Dig, Du Fange, som græmmer Dig
   </titleblock>
   <firstline>Det forekom mig alt saa ligegyldigt</firstline>
   <source pages="506"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5312,6 +5422,7 @@ Der er ej Gud, der er ej Djævel til.
   </titleblock>
   <firstline>Syg af at tænke sad jeg for mit Telt</firstline>
   <source pages="506-507"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5351,6 +5462,7 @@ Og som fra Bunden af en Brønd jeg stirred
   </titleblock>
   <firstline>Du har ej røbet mig din Kærlighed</firstline>
   <source pages="507-509"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5485,6 +5597,7 @@ Rig, myndig, klog — og deler med Aïscha“ ……
   </titleblock>
   <firstline>Kommen er jeg tilbage</firstline>
   <source pages="510-511"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5549,6 +5662,7 @@ Staden er mig saa gammel —
   </titleblock>
   <firstline>Var jeg en Skattegraver</firstline>
   <source pages="511"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5592,6 +5706,7 @@ Et Slot kan jeg ikke Dig købe,
   <indextitle>Her blandt de brogede Boder</indextitle>
   <firstline>Her blandt de brogede Boder</firstline>
   <source pages="512"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5634,6 +5749,7 @@ Hvor Guldet og Kræmmerne raader,
   <indextitle>Her er Perler, her er Stene</indextitle>
   <firstline>Her er Perler, her er Stene</firstline>
   <source pages="512-514"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5733,6 +5849,7 @@ Søger hun da bly at skærme
   </titleblock>
   <firstline>Sig: sender hun mig Bud, din unge Frue</firstline>
   <source pages="514-515"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5767,6 +5884,7 @@ Saa vil jeg oppebie Mødets Time —
   </titleblock>
   <firstline>Ja, jeg er kommen tilbage</firstline>
   <source pages="515-516"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5826,6 +5944,7 @@ At Manden myndigen tvinger
   </titleblock>
   <firstline>Det er Midnat i Suleîmas Kammer</firstline>
   <source pages="516-519"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -5970,6 +6089,7 @@ Det er Midnat i Suleîmas Kammer;
   </titleblock>
   <firstline>Hør mig, Suleîma, mens Nattens Timer</firstline>
   <source pages="519-521"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6084,6 +6204,7 @@ Fulgte Dig helst i Bosporus’ Bølge!“
   </titleblock>
   <firstline>Saa løft for sidste Gang dit smukke Hoved</firstline>
   <source pages="521-522"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6158,6 +6279,7 @@ Saa løft for sidste Gang, Du, som har givet
   </titleblock>
   <firstline>Husker Du den Morgen saa dæmrende klar?</firstline>
   <source pages="523"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6211,6 +6333,7 @@ Kun til én Suleîma gaar Tonernes Gang:
   <title>Ouverture</title>
   <firstline>Der strømmer atter Vaarluft gennem Skoven</firstline>
   <source pages="524"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6244,6 +6367,7 @@ Der strømmer atter Vaarluft gennem Skoven,
   <title>Jeg ønsked mig tilbage</title>
   <firstline>Jeg ønsked mig tilbage</firstline>
   <source pages="524-525"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6300,6 +6424,7 @@ I hine fordums Dage,
   <title>Valborgs-Sangen</title>
   <firstline>Hejsa, ta’ nu din fillede Hat</firstline>
   <source pages="525-526"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6351,6 +6476,7 @@ Min Kærest’ bandt mig de Bændler om,
   <title>Jeg havde mig en Hjertenskær</title>
   <firstline>Jeg havde mig en Hjertenskær</firstline>
   <source pages="526-527"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6390,6 +6516,7 @@ Jeg havde mig en Hjertenskær,
   <title>Hvor stedes nu min Gertrud</title>
   <firstline>Hej, Krofa’r, Krofa’r, Vinen frem</firstline>
   <source pages="527-529"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6475,6 +6602,7 @@ Hej, Krofa’r, Krofa’r, Vinen frem!
   <title>Borgruin</title>
   <firstline>Jeg ejer Dig — og alle Skygger flygter</firstline>
   <source pages="529"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6511,6 +6639,7 @@ Jeg ejer Dig — og gaar der disse Rygter
   <title>Hundred jernklædte Mænd</title>
   <firstline>At tuske og tinge, at prutte paa Købet</firstline>
   <source pages="529-530"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6552,6 +6681,7 @@ Lad tuske, lad tinge, lad prutte paa Købet!
   <indextitle>Min Vin — min Kaarde — og min Elskerinde!</indextitle>
   <firstline>Naar forhen dumpt det Egetræs-Panel</firstline>
   <source pages="530-531"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6596,6 +6726,7 @@ Ak nej! Vor Vin — den taaler ingen mer,
   <title>Lad mig dø — naar jeg dog ej kan leve</title>
   <firstline>Lad mig dø — naar jeg dog ej kan leve</firstline>
   <source pages="531"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6631,6 +6762,7 @@ Sansernes Brus kan forstumme,
   <title>Kilden</title>
   <firstline>Hvorfra tror Du Kilden kommer</firstline>
   <source pages="532"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
@@ -6678,6 +6810,7 @@ Og nu Du, som sætter Læben
   <title>Ved Dampskibet „Jarl“s totale Forlis</title>
   <firstline>Kom hid! giv hen enhver sin Skærv</firstline>
   <source pages="533-534"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
