@@ -249,14 +249,52 @@ describe('structured bibliographic sources', () => {
 
 
 describe('work source metadata before output and caching', () => {
-  it('renders the documented Nytaarsgave citation from the work XML', () => {
-    const filename = 'fdirs/antologierdk/1802-nytaarsgave.xml';
+  it.each([
+    [
+      'fdirs/antologierdk/1802-nytaarsgave.xml',
+      '<i>Nytaarsgave. 1802</i>, udg. af Simon Poulsen, Kiøbenhavn: Simon Poulsen, [1801].',
+      '1802', '1801',
+    ],
+    [
+      'fdirs/oehlenschlaeger/1803.xml',
+      'Adam Oehlenschläger: <i>Digte. 1803</i>, Kbh.: Fr. Brummers Forlag, [1802].',
+      '1803', '1802',
+    ],
+    [
+      'fdirs/winther/1856.xml',
+      'Christian Winther: <i>Hjortens Flugt. 1856</i>, Kbh.: C. A. Reitzel, [1855].',
+      '1856', '1855',
+    ],
+    [
+      'fdirs/antologierdk/1802-charis.xml',
+      '<i>Charis for 1802</i>, red. af Knud Lyne Rahbek, Kiöbenhavn: J. F. Schultz, [1801].',
+      '1802', '1801',
+    ],
+    [
+      'fdirs/antologierdk/1804-charis.xml',
+      '<i>Charis for 1804</i>, red. af Knud Lyne Rahbek, Kiöbenhavn: J. F. Schultz, [1803].',
+      '1804', '1803',
+    ],
+    [
+      'fdirs/antologierdk/1805-nytaarsgave.xml',
+      '<i>Nytaarsgave. 1805</i>, udg. af Simon Poulsen, Kiøbenhavn: S. Poulsen, [1804].',
+      '1805', '1804',
+    ],
+    [
+      'fdirs/antologierdk/1807-nytaarsgave.xml',
+      '<i>Nytaarsgave. 1807</i>, udg. af Simon Poulsen, Udgiveren, [1806].',
+      '1807', '1806',
+    ],
+    [
+      'fdirs/antologierdk/1846-gaea.xml',
+      '<i>Gæa. 1846</i>, red. af P. L. Møller, Kjøbenhavn: Udgiverens Forlag, [1845].',
+      '1846', '1845',
+    ],
+  ])('renders the documented citation from %s', (filename, source, year, publicationYear) => {
     const work = new DOMParser().parseFromString(fs.readFileSync(filename, 'utf8'), 'text/xml').documentElement;
     const { sources } = buildWorkSourceMetadata(work, new Map(), filename);
-    expect(sources.default.source).toBe(
-      '<i>Nytaarsgave. 1802</i>, udg. af Simon Poulsen, Kiøbenhavn: Simon Poulsen, [1801].'
-    );
-    expect(sources.default.bibliography).toMatchObject({ year: '1802', 'publication-year': '1801' });
+    expect(sources.default.source).toBe(source);
+    expect(sources.default.bibliography).toMatchObject({ year, 'publication-year': publicationYear });
   });
 
   it.each([false, true])('keeps errata sources separate unless also used by a text (%s)', usedByText => {
