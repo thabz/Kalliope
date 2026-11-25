@@ -3,6 +3,8 @@ import { isFileModified } from '../libs/caching.js';
 import {
   compareNormalizedDate,
   normalizeTimelineDate,
+  normalizedYear,
+  parseDate,
 } from '../../common/dates.js';
 import {
   safeGetAttr,
@@ -18,6 +20,18 @@ const sortedTimeline = (timeline) => {
   return timeline.sort((a, b) =>
     compareNormalizedDate(a.normalized_date, b.normalized_date)
   );
+};
+
+const addYearsToNormalizedDate = (normalizedDate, years) => {
+  const parsed = parseDate(normalizedDate);
+  if (parsed == null || parsed.year == null) {
+    return null;
+  }
+  return [
+    normalizedYear(parsed.year + years),
+    String(parsed.month || 1).padStart(2, '0'),
+    String(parsed.day || 1).padStart(2, '0'),
+  ].join('-');
 };
 
 const loadTimeline = async (filename, collected) => {
@@ -222,20 +236,39 @@ const buildPoetTimelineJson = async (poet, collected) => {
   if (items.length >= 2) {
     const startDate = items[0].normalized_date;
     let endDate = items[items.length - 1].normalized_date;
-    if (poet.period?.dead != null && poet.period.dead.date !== '?') {
-      endDate = normalizeTimelineDate(poet.period.dead.date);
+    const deadDate = poet.period?.dead?.date;
+    const bornDate = poet.period?.born?.date;
+    const birthDate =
+      bornDate != null && bornDate !== '?'
+        ? bornDate
+        : poet.period?.baptized?.date;
+    let includeGlobalItems = true;
+    if (deadDate != null && deadDate !== '?') {
+      endDate = normalizeTimelineDate(deadDate);
+    } else if (birthDate != null && birthDate !== '?') {
+      const lifeCap = addYearsToNormalizedDate(
+        normalizeTimelineDate(birthDate),
+        150
+      );
+      if (lifeCap != null && compareNormalizedDate(lifeCap, endDate) === -1) {
+        endDate = lifeCap;
+      }
+    } else {
+      includeGlobalItems = false;
     }
-    let globalItems = collected.timeline
-      .map((e) => {
-        e.normalized_date = normalizeTimelineDate(e.date);
-        return e;
-      })
-      .filter((e) => {
-        return (
-          compareNormalizedDate(e.normalized_date, startDate) === 1 &&
-          compareNormalizedDate(e.normalized_date, endDate) === -1
-        );
-      });
+    const globalItems = includeGlobalItems
+      ? collected.timeline
+          .map((e) => {
+            e.normalized_date = normalizeTimelineDate(e.date);
+            return e;
+          })
+          .filter((e) => {
+            return (
+              compareNormalizedDate(e.normalized_date, startDate) === 1 &&
+              compareNormalizedDate(e.normalized_date, endDate) === -1
+            );
+          })
+      : [];
     items = [...globalItems, ...items];
     items = sortedTimeline(items);
   }

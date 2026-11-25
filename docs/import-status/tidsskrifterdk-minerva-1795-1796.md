@@ -202,8 +202,12 @@ thumbnails. Sanders serie er et uddrag på fire sider; de oprindelige
 IIIF-positioner er dokumenteret i værkets kildekommentar. Synkronisering er forsøgt, men den sædvanlige rsync-destination
 på `10.0.0.5:22` afviser SSH-forbindelsen. De otte offentlige kontrol-URL'er
 (første side og thumbnail for hver af de fire serier) giver derfor HTTP 404.
-`npm run check-facsimiles` er ikke bestået; serveradgangen skal genetableres,
-og serierne synkroniseres, før ændringen kan publiceres uden døde facsimilelinks.
+Den første `npm run check-facsimiles` bestod derfor ikke. Ved integrationen
+med master er de 50 upublicerede interne billedbindinger taget ud af de fire
+originalværker og bevaret i `minerva-originalfacsimiler-afventer.json` i denne
+mappe. Eksterne kildehenvisninger og trykte sidetal er bevaret. Serierne kan
+uploades og bindingerne genindsættes, når serveradgangen er genetableret;
+denne udgave henviser ikke til de manglende interne billedfiler.
 
 XML-kontrol, originaldigtenes sideaudits, statisk build og
 `make test` er gennemført. Den afsluttende testsuite gav 2.735 beståede og ni

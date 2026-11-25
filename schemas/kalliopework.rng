@@ -312,6 +312,7 @@
       <optional><element name="publisher"><ref name="sourceBibliographicText"/></element></optional>
       <optional><element name="printer"><ref name="sourceBibliographicText"/></element></optional>
       <optional><element name="year"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="publication-year"><ref name="sourceBibliographicText"/></element></optional>
     </interleave>
   </define>
 

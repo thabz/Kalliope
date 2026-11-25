@@ -4,13 +4,12 @@
   <title>Deutsches Museum</title>
   <subtitle>Zweiter Band. Julius bis December.</subtitle>
   <year>1783</year>
-  <pagebreaks/>
   <!-- Facsimileuddrag: fire sider fra BSB bsb10614685, IIIF-canvas 486–489
   af 590, svarende til trykt s. 474–477 i novemberhæftet.
   Signaturen Chr. Friedr. Sander er en navneform for Lävinius Christian
   Friedrich Sander, jf. Bakkehussamlingens personregistrering:
   https://www.bakkehussamlingen.dk/personer/udskriv/sander-levin-christian. -->
-  <source href="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10614685-2" facsimile="1783-deutsches-museum" facsimile-pages-num="4">
+  <source href="https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10614685-2">
     <title>Deutsches Museum</title>
     <editor>Heinrich Christian Boie</editor>
     <volume>2</volume>
@@ -26,7 +25,7 @@
   <title>Die Mähr von den sechs Königen</title>
   <subtitle>Ein lustiger Reim.</subtitle>
   <firstline>Es war einmal ein Vater, der</firstline>
-  <source pages="474-477" facsimile-pages="1-4"/>
+  <source pages="474-477"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -45,7 +44,7 @@ Sie gingen wohl durch tausend Länder,
 Verbrauchten wohl bei zehn Kalender,
 Und sahen Wunder überall,
 In Augias den großen Stall,
-<pb n="475" facs="001.jpg"/>Gros Wasser an dem Meeresstrande
+<pb n="475"/>Gros Wasser an dem Meeresstrande
 Und hohes Dach ob jedem Lande.
 So sezten sie stets vor den Fuß,
 Entboten jedem seinen Gruß,
@@ -82,7 +81,7 @@ Daß nun ihr bester Fürst verloren,
 Und, wie das Leichhuhn Neukirch sang,
 Nicht wiederkäme Lebenslang.
 
-<pb n="476" facs="002.jpg"/>   Da dachten nun die Knaben alle:
+<pb n="476"/>   Da dachten nun die Knaben alle:
 Was thun wir bei dem Trauerfalle?
 Wie trösten wir die Nazion?
 Und alle sprachen, Sohn vor Sohn:
@@ -119,7 +118,7 @@ Kam auch das Volk auf allen Vieren;
 Und ihre Herren griffen dann:
 Den Purpurmantel mutig an
 Ein jeglicher bei seinem Zipfel,
-<pb n="477" facs="003.jpg"/>Und — rissen ihn in tausend Schnipfel.
+<pb n="477"/>Und — rissen ihn in tausend Schnipfel.
 Ach, ach, das schöne Purpurkleid,
 So königlich, so lang, und weit!
 Der Haderlumpe las die Lappen:
