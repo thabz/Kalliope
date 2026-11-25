@@ -35,10 +35,15 @@ visuelt:
 [S. 113](https://books.google.dk/books?id=X2M3AAAAMAAJ&pg=PA113) er
 mærket H, og [s. 115](https://books.google.dk/books?id=X2M3AAAAMAAJ&pg=PA115)
 er mærket H 2. Majhæftets åbningsside begynder med næste arksignatur.
-Oversigten for 18. årgang registrerer også fraværet af s. 119–120.
-Overgangen mellem de to hæfter efterlader muligheden for
-et blankt blad eller et spring i trykkets paginering. Der er ingen kendt
-tekst fra s. 119–120, og årsagen til springet er uafklaret.
+Den [trykte indholdsfortegnelse](https://books.google.dk/books?id=X2M3AAAAMAAJ&pg=PP7)
+fører aprilhæftets sidste indslag, *Historien af Udgiveren*, på s. 106 og
+majhæftets første indslag på s. 121. Sammen med slutstregen på s. 118
+taler det for, at springet ikke rummer et selvstændigt versbidrag.
+Det er fortsat uafklaret, om der var et blankt blad, et oprindeligt
+pagineringsspring eller en udeladelse i eksemplaret eller digitaliseringen. Den digitale årgangsoversigt
+registrerer også springet, men henviser til Michigan-eksemplaret hos
+HathiTrust. Biblioteksstregkoden blandt [de afsluttende billeder](https://books.google.dk/books?id=X2M3AAAAMAAJ&pg=PT3)
+matcher HathiTrusts eksemplar-id `mdp.39015065141098`.
 
 ## Grundlag for genoptagelse
 
