@@ -724,6 +724,10 @@ describe('heading capitalization', () => {
     },
   );
 
+  it.each(['DU', 'DIG', 'MIG'])('does not mistake the word %s for a numeral with an alphabetic suffix', title => {
+    expect(findings(`<text><head><title>${title}</title></head></text>`)).toHaveLength(1);
+  });
+
   it('checks each subtitle line, workheads and sections', () => {
     const xml = '<kalliopework><workhead><title>VÆRK</title></workhead><workbody>' +
       '<section id="part"><head><title>FRA VEJENE</title></head><content>' +

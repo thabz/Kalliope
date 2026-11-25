@@ -328,7 +328,7 @@ const isUppercaseHeading = value => {
   // Roman numerals and sequences of initials are textual capitals.
   const words = value.match(/[\p{L}\p{M}]+/gu) ?? [];
   if (words.length === 0 || words.every(word =>
-    [...word].length === 1 || /^[IVXLCDM]+[A-Z]?$/u.test(word))) return false;
+    [...word].length === 1 || /^[IVXLCDM]+$/u.test(word))) return false;
   return /\p{Lu}/u.test(value) === true && /\p{Ll}/u.test(value) === false;
 };
 
