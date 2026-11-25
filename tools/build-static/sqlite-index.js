@@ -638,7 +638,7 @@ const buildEventInsertStatementsForTextIds = (textIds, collected, now) => {
           const workId = sourceWorkKey(textMeta);
           const sourceFile = (textMeta.sourceFiles || [])[0];
           insertStatements.push(
-            `INSERT INTO event (event_id,event_type,text_id,work_id,poet_id,date_raw,date_iso,source_file,source_file_row_hash,created_at,updated_at) VALUES (${toSqlValue(`${entry.id}#${entry.dateType}#${index}`)}, ${toSqlValue(entry.dateType)}, ${toSqlValue(entry.id)}, ${toSqlValue(workId)}, ${toSqlValue(entry.poetId || textMeta.poetId)}, ${toSqlValue(date)}, ${toSqlValue(date)}, ${toSqlValue(sourceFile)}, ${toSqlValue(null)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
+            `INSERT INTO event (event_id,event_type,text_id,work_id,poet_id,date_raw,date_iso,source_file,source_file_row_hash,created_at,updated_at) VALUES (${toSqlValue(`${entry.id}#${entry.dateType}#${date}#${index}`)}, ${toSqlValue(entry.dateType)}, ${toSqlValue(entry.id)}, ${toSqlValue(workId)}, ${toSqlValue(entry.poetId || textMeta.poetId)}, ${toSqlValue(date)}, ${toSqlValue(date)}, ${toSqlValue(sourceFile)}, ${toSqlValue(null)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
           );
         });
     });
@@ -871,7 +871,7 @@ const buildFallbackSql = (collected) => {
           }
           const workId = sourceWorkKey(textMeta);
           insertRows.push(
-            `INSERT INTO event (event_id,event_type,text_id,work_id,poet_id,date_raw,date_iso,source_file,source_file_row_hash,created_at,updated_at) VALUES (${toSqlValue(`${entry.id}#${entry.dateType}#${index}`)}, ${toSqlValue(entry.dateType)}, ${toSqlValue(entry.id)}, ${toSqlValue(workId)}, ${toSqlValue(entry.poetId || textMeta.poetId)}, ${toSqlValue(date)}, ${toSqlValue(date)}, ${toSqlValue((textMeta.sourceFiles || [])[0])}, ${toSqlValue(null)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
+            `INSERT INTO event (event_id,event_type,text_id,work_id,poet_id,date_raw,date_iso,source_file,source_file_row_hash,created_at,updated_at) VALUES (${toSqlValue(`${entry.id}#${entry.dateType}#${date}#${index}`)}, ${toSqlValue(entry.dateType)}, ${toSqlValue(entry.id)}, ${toSqlValue(workId)}, ${toSqlValue(entry.poetId || textMeta.poetId)}, ${toSqlValue(date)}, ${toSqlValue(date)}, ${toSqlValue((textMeta.sourceFiles || [])[0])}, ${toSqlValue(null)}, ${toSqlValue(now)}, ${toSqlValue(now)})`
           );
         });
     });

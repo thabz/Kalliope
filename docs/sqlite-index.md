@@ -42,6 +42,8 @@ Bygning:
 - `event`
   - Nøgle: `event_id`
   - Datostræk for `written`, `printed`, `performed`, `event`.
+  - Flere datoer af samme type bevares som særskilte rækker. `event_id`
+    indeholder også datoen, så nøglerne er entydige på tværs af datoer.
 - `text_content`
   - Nøgle: `text_id`
   - Lager normaliseret tekst, HTML/JSON repræsentationer m.m.

@@ -1,3 +1,4 @@
+import { textDateEntries, addTextDates } from './build-static/text-dates.js';
 import { extractTitleBlock } from './build-static/parsing.js';
 import { embeddedContext } from './build-static/embedded-context.js';
 import { embeddedTextIssues } from './build-static/embedded-text.js';
@@ -293,6 +294,7 @@ const handle_text = async (
     collected.changedDateTextIds.has(sourceTextId) === false &&
     !isFileModified('tools/build-static.js', 'tools/build-static/anthologies.js',
       'tools/build-static/artwork.js', 'tools/build-static/parsing.js',
+      'tools/build-static/text-dates.js',
       'tools/build-static/edition-reference.js', 'tools/build-static/source.js',
       'tools/build-static/textrefs.js', 'tools/build-static/text-blocks.js', 'tools/build-static/embedded-text.js',
       'tools/build-static/embedded-context.js',
@@ -843,9 +845,9 @@ const validateTextDates = (
   sourceWorkId,
   sourceTextId
 ) => {
-  ['published', 'written', 'performed', 'event'].forEach((type) => {
+  textDateEntries(textDates, ['published', 'written', 'performed', 'event']).forEach(({ type, date }) => {
     validateTextDate(
-      textDates[type],
+      date,
       type,
       sourcePoetId,
       sourceWorkId,
@@ -866,23 +868,6 @@ const removeWorkDates = (dates, poetId, workId) => {
     } else {
       dates.set(date, filtered);
     }
-  });
-};
-
-const addTextDates = (dates, text, textDates) => {
-  ['written', 'performed', 'event'].forEach((type) => {
-    const date = textDates[type] == null ? null : textDates[type].trim();
-    if (date == null || date.length === 0) {
-      return;
-    }
-    const items = dates.get(date) || [];
-    const { type: textType, ...textData } = text;
-    items.push({
-      dateType: type,
-      textType,
-      ...textData,
-    });
-    dates.set(date, items);
   });
 };
 
@@ -918,11 +903,7 @@ const relatedTextsForDates = (textId, textDates, collected) => {
 
   const result = [];
   const seen = new Set();
-  ['written', 'performed', 'event'].forEach((dateType) => {
-    const date = textDates[dateType] == null ? null : textDates[dateType].trim();
-    if (date == null || date.length === 0) {
-      return;
-    }
+  textDateEntries(textDates).forEach(({ type: dateType, date }) => {
     const items = collected.dates.get(date) || [];
     items.forEach((item) => {
       const itemVariantIds = resolve_variants(item.id, collected) || [item.id];
@@ -968,6 +949,8 @@ const works_first_pass = (collected) => {
 
   let found_changes = false;
   const anthologyCodeModified = isFileModified(
+    'tools/build-static/parsing.js',
+    'tools/build-static/text-dates.js',
     'tools/build-static.js',
     'tools/build-static/anthologies.js',
     'tools/build-static/edition-reference.js',
@@ -1298,6 +1281,7 @@ const works_second_pass = async (collected) => {
         'tools/build-static/anthologies.js',
         'tools/build-static/artwork.js',
         'tools/build-static/parsing.js',
+        'tools/build-static/text-dates.js',
         'tools/build-static/source.js',
         'tools/build-static/edition-reference.js',
         'tools/build-static/textrefs.js',

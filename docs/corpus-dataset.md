@@ -65,6 +65,10 @@ udtrækker tekst fra de serialiserede linjetupler, inklusive personer og
 fælles beskrivelser, uden XML-markup eller dekorative klammer.
 `skip-index="true"` udelukker fortsat selvstændige rollelister fra bulkdatasættet.
 
+Tekstpostens `events` indeholder alle registrerede `written`, `performed` og
+`event`-datoer, også flere datoer af samme type. Identiske type/dato-par
+optræder kun én gang. Det eksisterende arrayformat er uændret.
+
 De eksisterende ressourcer er applikationsendpoints. Kun de felter og relationer,
 der er beskrevet i v1-schemaet og datasættets README, er en stabil
 datasætkontrakt.

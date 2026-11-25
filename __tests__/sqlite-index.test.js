@@ -1,3 +1,4 @@
+import { textPath } from '../common/paths.js';
 import fs from 'fs';
 import path from 'path';
 import childProcess from 'child_process';
@@ -176,6 +177,29 @@ const installVirtualSources = ({
 describe('buildIncrementalSql', () => {
   afterEach(() => {
     jest.restoreAllMocks();
+  });
+
+  it('uses different SQLite event keys for repeated dates of the same type', () => {
+    const sourceFile = 'fdirs/alpha/1790.xml';
+    jest.spyOn(fs, 'existsSync').mockImplementation(filename =>
+      filename === sourceFile || filename === textPath('poem'));
+    jest.spyOn(fs, 'readFileSync').mockImplementation(filename => filename === sourceFile
+      ? '<kalliopework><text id="poem"><head><title>Sang</title></head></text></kalliopework>'
+      : JSON.stringify({ text: { blocks: [] } }));
+    const collected = {
+      works: new Map([['alpha/1790', { id: '1790', title: 'Værk' }]]),
+      texts: new Map([['poem', { id: 'poem', poetId: 'alpha', workId: '1790' }]]),
+      poets: new Map(),
+      dates: new Map([
+        ['1800-01-01', [{ id: 'poem', dateType: 'event' }]],
+        ['1880-02-02', [{ id: 'poem', dateType: 'event' }]],
+      ]),
+    };
+    const { sql } = buildIncrementalSql(collected, [sourceFile]);
+    const keys = [...sql.matchAll(/INSERT INTO event [^\n]*?VALUES \('([^']+)'/gu)]
+      .map(match => match[1]);
+    expect(keys).toHaveLength(2);
+    expect(new Set(keys).size).toBe(2);
   });
 
   it('emits scoped SQL for work-text changes', () => {
