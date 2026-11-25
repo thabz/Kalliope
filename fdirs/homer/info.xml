@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="homer" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <lastname>Homer</lastname>
+    <alternative>Homeros</alternative>
+    <christened>Ὅμηρος</christened>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <literary-periods>grc-arkaisk-og-klassisk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q6691</wikidata>
+    <wikipedia-da>Homer</wikipedia-da>
+    <wikipedia-en>Homer</wikipedia-en>
+    <wikipedia-fr>Homère</wikipedia-fr>
+    <wikipedia-de>Homer</wikipedia-de>
+    <viaf>224924963</viaf>
+    <gnd>11855333X</gnd>
+    <lex-dk>Homer</lex-dk>
+  </identifiers>
+</person>
