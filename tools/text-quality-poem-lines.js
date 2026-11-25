@@ -310,6 +310,28 @@ const findLineLeadingPunctuationFindings = ({
   });
 };
 
+const headingCapitalizationRule = 'uppercase-heading';
+const headingFields = [
+  'title', 'indextitle', 'toctitle', 'linktitle', 'breadcrumbtitle',
+  'subtitle', 'suptitle',
+];
+
+const headingText = element => {
+  const copy = element.cloneNode(true);
+  ['num', 'footnote', 'note'].forEach(tag => {
+    getElementsByTagName(copy, tag).forEach(child => child.parentNode.removeChild(child));
+  });
+  return copy.textContent.trim();
+};
+
+const isUppercaseHeading = value => {
+  // Roman numerals and sequences of initials are textual capitals.
+  const words = value.match(/[\p{L}\p{M}]+/gu) ?? [];
+  if (words.length === 0 || words.every(word =>
+    [...word].length === 1 || /^[IVXLCDM]+[A-Z]?$/u.test(word))) return false;
+  return /\p{Lu}/u.test(value) === true && /\p{Ll}/u.test(value) === false;
+};
+
 const findTitleMetadataFindings = ({
   file,
   data,
@@ -328,6 +350,20 @@ const findTitleMetadataFindings = ({
     const textId = head.tagName === 'workhead'
       ? 'workhead'
       : safeGetAttr(owner, 'id') ?? owner.tagName;
+    if (ignoredTests(owner).includes(headingCapitalizationRule) === false) {
+      getChildren(head).filter(child => headingFields.includes(child.tagName)).forEach(element => {
+        const lines = getElementsByTagName(element, 'line');
+        (lines.length > 0 ? lines : [element]).forEach(line => {
+          if (isUppercaseHeading(headingText(line)) === true) {
+            issues.push(titleIssue({
+              file, context, textId, candidate: { element: line },
+              rule: headingCapitalizationRule,
+              description: `${element.tagName} must normalize typographic capitals to upper and lower case.`,
+            }));
+          }
+        });
+      });
+    }
     getChildren(head).filter(child =>
       ['title', 'toctitle', 'indextitle', 'linktitle'].includes(child.tagName),
     ).forEach(element => {

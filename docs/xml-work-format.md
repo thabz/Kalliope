@@ -740,6 +740,15 @@ blandet brug af store og små bogstaver, når den er tekstligt betydningsfuld,
 herunder egennavne og egentlige initialord. Reglen gælder både titelfelter og
 interne overskrifter i brødteksten.
 
+Korpustesten håndhæver normaliseringen i `title`, `indextitle`, `toctitle`,
+`linktitle`, `breadcrumbtitle`, `subtitle` og `suptitle`, også linjevis i
+flerlinjede over- og undertitler. Romertal og initialrækker er tilladt.
+Et dokumenteret initialord kan undtages med `ignore-tests="uppercase-heading"`
+på den konkrete tekst eller sektion; på værkroden gælder undtagelsen kun
+værkhovedet. Skriv begrundelsen i en XML-kommentar. Titelblokke og titelbladets
+`transcription` bevarer kildens typografi og er ikke omfattet af testen.
+Interne overskrifter uden entydig strukturel markering kontrolleres manuelt.
+
 Hvis hierarkiet ikke kan afgøres sikkert fra kilden, bevares de sikre
 oplysninger, og tvivlen markeres med en eksplicit `TODO:`-note i stedet for at
 blive løst med et gæt.
