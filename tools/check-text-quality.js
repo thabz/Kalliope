@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import { findOcrCandidates } from './report-ocr-candidates.js';
 import { collectPoemLineQualityFindings } from './text-quality-poem-lines.js';
 import { normalizeMinDate } from './text-quality-filters.js';
@@ -113,11 +114,11 @@ const formatSummary = (issues, technicalError = null) => {
     };
   }
 
+  const warningCount = issues.filter(issue => issue.severity === 'warning').length;
+  const qualityIssues = issues.length - warningCount;
   return {
-    status: issues.length > 0 ? 'quality-failure' : 'ok',
-    summary: {
-      qualityIssues: issues.length,
-    },
+    status: qualityIssues > 0 ? 'quality-failure' : 'ok',
+    summary: { qualityIssues, warnings: warningCount },
     issues,
   };
 };
@@ -167,14 +168,23 @@ const run = () => {
   const summary = formatSummary(result.issues);
   if (json) {
     console.log(JSON.stringify(summary, null, 2));
-  } else if (result.issues.length > 0) {
-    result.issues.forEach(issue => console.log(asHumanLine(issue)));
-    console.error(`${result.issues.length} tekstkvalitetsfejl fundet.`);
   } else {
-    console.log('Ingen tekstkvalitetsfejl fundet.');
+    result.issues.forEach(issue => console.log(asHumanLine(issue)));
+    if (summary.summary.warnings > 0) {
+      console.error(`${summary.summary.warnings} advarsel(er) fundet.`);
+    }
+    if (summary.summary.qualityIssues > 0) {
+      console.error(`${summary.summary.qualityIssues} tekstkvalitetsfejl fundet.`);
+    } else {
+      console.log('Ingen tekstkvalitetsfejl fundet.');
+    }
   }
 
-  process.exitCode = result.issues.length > 0 ? 1 : 0;
+  process.exitCode = summary.status === 'quality-failure' ? 1 : 0;
 };
 
-run();
+if (fileURLToPath(import.meta.url) === process.argv[1]) {
+  run();
+}
+
+export { formatSummary };

@@ -365,6 +365,23 @@ const findTitleMetadataFindings = ({
     if (head == null) {
       return;
     }
+    if (ignoredTests(owner).includes('subtitle-slash') === false) {
+      getChildren(head).filter(child => ['subtitle', 'suptitle'].includes(child.tagName)).forEach(element => {
+        const lines = getElementsByTagName(element, 'line');
+        (lines.length > 0 ? lines : [element]).forEach(line => {
+          if (/\s\/\s/u.test(titleTextWithoutNotes({ title: line.toString() })) === true) {
+            issues.push({
+              ...titleIssue({
+                file, context, textId, candidate: { element: line },
+                rule: 'subtitle-slash',
+                description: `${element.tagName} contains a spaced slash; check whether the source has separate lines and use line elements.`,
+              }),
+              severity: 'warning',
+            });
+          }
+        });
+      });
+    }
     const punctuationIgnored = ignoredTests(owner).includes(titleTrailingPunctuationRule);
 
     [...titleFieldsWithoutTrailingPunctuation, 'linktitle', 'subtitle', 'suptitle'].forEach(type => {

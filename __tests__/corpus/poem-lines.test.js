@@ -21,6 +21,36 @@ const titleMetadataIssues = data =>
     context: undefined,
   });
 
+describe('subtitle slash warnings', () => {
+  const warnings = xml => titleMetadataIssues(xml).filter(issue => issue.rule === 'subtitle-slash');
+
+  it.each(['subtitle', 'suptitle'])('warns about spaced slashes in %s', tag => {
+    expect(warnings(`<text id="dedication"><head><${tag}>Til / Johannes V. Jensen</${tag}></head></text>`))
+      .toEqual([expect.objectContaining({ textId: 'dedication', severity: 'warning' })]);
+  });
+
+  it('checks workheads, sections and individual subtitle lines', () => {
+    expect(warnings('<kalliopework><workhead><subtitle>Et / værk</subtitle></workhead><workbody>' +
+      '<section id="part"><head><suptitle>En / del</suptitle></head><content>' +
+      '<text id="poem"><head><subtitle><line>En / linje</line><line>Anden linje</line></subtitle></head></text>' +
+      '</content></section></workbody></kalliopework>').map(issue => issue.textId))
+      .toEqual(['workhead', 'part', 'poem']);
+  });
+
+  it('ignores notes, title-page transcriptions and slashes without surrounding spaces', () => {
+    expect(warnings('<kalliopework><workhead><pictures><picture><transcription>Et / titelblad</transcription></picture></pictures>' +
+      '<subtitle>1913/1914<footnote>En / note</footnote></subtitle></workhead></kalliopework>')).toEqual([]);
+  });
+
+  it('keeps documented exceptions local and still warns about unexcepted children', () => {
+    expect(warnings('<kalliopework ignore-tests="subtitle-slash"><workhead><subtitle>Et / værk</subtitle></workhead><workbody>' +
+      '<section ignore-tests="subtitle-slash"><head><suptitle>En / del</suptitle></head><content>' +
+      '<text id="child"><head><subtitle>Til / nogen</subtitle></head></text>' +
+      '<text ignore-tests="subtitle-slash"><head><subtitle>Et / andet</subtitle></head></text>' +
+      '</content></section></workbody></kalliopework>').map(issue => issue.textId)).toEqual(['child']);
+  });
+});
+
 describe('Check workfiles', () => {
   it.each([',', '.', ';', ':', '!', '?'])(
     'rejects a line starting with %s, including formatted and entity text',
@@ -64,7 +94,12 @@ describe('Check workfiles', () => {
   });
 
   it('has no poem-line quality issues', () => {
-    const issues = collectPoemLineQualityFindings();
+    const findings = collectPoemLineQualityFindings();
+    const warnings = findings.filter(issue => issue.severity === 'warning');
+    if (warnings.length > 0) {
+      console.warn(warnings.map(formatPoemLineIssue).join('\n'));
+    }
+    const issues = findings.filter(issue => issue.severity !== 'warning');
     if (issues.length > 0) {
       throw new Error(issues.map(formatPoemLineIssue).join('\n'));
     }
