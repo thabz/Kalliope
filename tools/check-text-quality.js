@@ -103,19 +103,20 @@ const toPoemLineIssue = issue => ({
 });
 
 const formatSummary = (issues, technicalError = null) => {
+  const warningCount = issues.filter(issue => issue.severity === 'warning').length;
+  const qualityIssues = issues.length - warningCount;
   if (technicalError != null) {
     return {
       status: 'technical-error',
       summary: {
-        qualityIssues: issues.length,
+        qualityIssues,
+        warnings: warningCount,
         technicalError,
       },
       issues,
     };
   }
 
-  const warningCount = issues.filter(issue => issue.severity === 'warning').length;
-  const qualityIssues = issues.length - warningCount;
   return {
     status: qualityIssues > 0 ? 'quality-failure' : 'ok',
     summary: { qualityIssues, warnings: warningCount },

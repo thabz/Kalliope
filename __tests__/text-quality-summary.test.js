@@ -15,5 +15,8 @@ it('keeps real errors blocking when warnings are also present', () => {
 });
 
 it('keeps technical failures distinct from warnings', () => {
-  expect(formatSummary([{ severity: 'warning' }], 'XML parse error').status).toBe('technical-error');
+  expect(formatSummary([{ severity: 'warning' }], 'XML parse error')).toMatchObject({
+    status: 'technical-error',
+    summary: { qualityIssues: 0, warnings: 1, technicalError: 'XML parse error' },
+  });
 });
