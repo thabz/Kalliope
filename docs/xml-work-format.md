@@ -324,9 +324,15 @@ Bibliografiske oplysninger kan angives struktureret på både værk- og tekstniv
 </source>
 ```
 
-- `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`
-  og `year` er valgfrie og kan forekomme højst én gang. Alle felter indeholder
-  ikke-tom ren tekst. År kan bevare usikkerhed, fx `[1804]`.
+- `title` er obligatorisk. `edition`, `volume`, `place`, `publisher`, `printer`,
+  `year` og `publication-year` er valgfrie og kan forekomme højst én gang. Alle
+  felter indeholder ikke-tom ren tekst. Uden `publication-year` kan `year` bevare
+  usikkerhed, fx `[1804]`.
+- `publication-year` angiver det faktiske udgivelsesår, når det afviger fra
+  titelbladets årstal i `year`. Begge gemmes som rene årstal. Kildevisningen
+  føjer `year` til den kursiverede titel og viser `publication-year` i kantede
+  parenteser sidst i kildeangivelsen. Uden `publication-year` er visningen
+  uændret, og feltet bruges hverken i værklister, navigation eller sortering.
 - `author`, `editor` og `translator` kan gentages. `id` er valgfrit og bevares
   i metadata. Kildevisningen gengiver personnavne og publikationstitler uden
   links; digitaliseringen linkes med kildeikonet fra `source/@href`. Det gælder
@@ -733,6 +739,15 @@ fremhævelse må ikke transskriberes som fulde versaler. Skriv eksempelvis
 blandet brug af store og små bogstaver, når den er tekstligt betydningsfuld,
 herunder egennavne og egentlige initialord. Reglen gælder både titelfelter og
 interne overskrifter i brødteksten.
+
+Korpustesten håndhæver normaliseringen i `title`, `indextitle`, `toctitle`,
+`linktitle`, `breadcrumbtitle`, `subtitle` og `suptitle`, også linjevis i
+flerlinjede over- og undertitler. Romertal og initialrækker er tilladt.
+Et dokumenteret initialord kan undtages med `ignore-tests="uppercase-heading"`
+på den konkrete tekst eller sektion; på værkroden gælder undtagelsen kun
+værkhovedet. Skriv begrundelsen i en XML-kommentar. Titelblokke og titelbladets
+`transcription` bevarer kildens typografi og er ikke omfattet af testen.
+Interne overskrifter uden entydig strukturel markering kontrolleres manuelt.
 
 Hvis hierarkiet ikke kan afgøres sikkert fra kilden, bevares de sikre
 oplysninger, og tvivlen markeres med en eksplicit `TODO:`-note i stedet for at

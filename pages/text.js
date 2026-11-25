@@ -517,6 +517,7 @@ const TextPage = (props) => {
             contentLang={text.content_lang}
             currentPoetId={poet.id}
             spacing="5px"
+            showPoet={true}
           />
         </MetadataGroup>
       ) : null}

@@ -200,7 +200,7 @@ const titleText = title => {
 };
 
 const countHeadingFootnotes = head =>
-  ['titleblock', 'title', 'subtitle'].reduce((count, tag) => {
+  ['titleblock', 'title', 'subtitle', 'suptitle'].reduce((count, tag) => {
     const heading = getChildByTagName(head, tag);
     return count + getElementsByTagName(heading, 'footnote').length;
   }, 0);

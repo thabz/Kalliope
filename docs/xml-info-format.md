@@ -194,6 +194,11 @@ Hvis `period` mangler både `born` og `baptized`, eller hvis `dead` mangler,
 bliver perioden behandlet som ukomplet i den statiske data. Biografisiden kan
 dog stadig findes, hvis der er `bio.xml`, `events.xml` eller portrætter.
 
+Når dødsdatoen er ukendt, medtager tidslinjen kun fælles historiske
+begivenheder inden for 150 år efter fødsels- eller dåbsdatoen. Er ingen af
+disse datoer kendt, vises ingen fælles begivenheder. Personens egne begivenheder
+og senere udgaver vises altid.
+
 En dåbsdato vises som »Døbt« på biografisiden og som »døbt« i tidslinjen. Den
 bruges som dokumenteret startår i navnenes årsspænd og årssortering, men den
 behandles ikke som fødselsdag i »I dag«, jubilæumskalenderen eller

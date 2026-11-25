@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="scalabrini" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Paolo</firstname>
+    <lastname>Scalabrini</lastname>
+  </name>
+  <!-- Leveår efter Peter Hauges opslag i Dizionario Biografico degli Italiani (2018), som anfører dødsindførslen i Lucca. -->
+  <period>
+    <born>
+      <date>c. 1719</date>
+    </born>
+    <dead>
+      <date>1806-02-23</date>
+      <place>Lucca</place>
+    </dead>
+  </period>
+  <literary-periods>it-oplysning-og-nyklassicisme</literary-periods>
+  <identifiers>
+    <viaf>220519631</viaf>
+  </identifiers>
+</person>
