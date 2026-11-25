@@ -230,3 +230,41 @@ De to latinske mottoer hos Bruun er flyttet til `epigraph lang="la"`.
 17 hidtil nummererede attributioner i Minerva bind III og XI er pakket ind
 i `nonum`; en kontrol af alle tre importerede Minerva-bind fandt derefter
 ingen `right`-attributioner uden denne indpakning.
+
+## Stoppet import af bind 5–6 (25. november 2026)
+
+Importen af bind 5–6 er stoppet, før nogen tekst er transskriberet, fordi
+den tilgængelige skanning af bind 6 mangler trykte sider.
+
+Kilder:
+
+- Bind 5: [Google Books, iGA3AAAAMAAJ](https://books.google.dk/books?id=iGA3AAAAMAAJ),
+  [HathiTrust, mdp.39015065142765](https://babel.hathitrust.org/cgi/pt?id=mdp.39015065142765).
+- Bind 6: [Google Books, 62A3AAAAMAAJ](https://books.google.dk/books?id=62A3AAAAMAAJ),
+  [HathiTrust, mdp.39015065142740](https://babel.hathitrust.org/cgi/pt?id=mdp.39015065142740).
+- [Indholdsoversigt for 2. årgang](https://uforbederlig.dk/tidsskrifter/Minerva-2aarg.htm).
+
+Bind 5 indeholder 409 billedpositioner i Google Books' sideindeks. Springet
+`PA261` → `PA264` er ikke et teksthul: `PA261` er trykt s. 261, `PA264` er
+trykt s. 262 og `PA265` er septemberhæftets titelblad. Direkte forespørgsler
+efter `PA262` og `PA263` giver intet billede, men indholdsoversigtens
+angivelse »\[side 263-64 findes ikke\]« bekræfter, at pagineringen springer
+disse trykte sidetal over.
+
+Bind 6 indeholder 447 billedpositioner. Efter `PA518`, oktoberhæftets sidste
+tekstside, følger `PA525` (en foldet billedplade), `PA526` (blank),
+`PA527` (novemberhæftets titelblad) og `PA528` (trykt s. 528, midt i
+Thormod Thorfesens biografi). `PA519`–`PA524` findes hverken i sideindekset
+eller som direkte billeder, og ingen anden digitaliseret forekomst af bindet
+blev fundet via Google Books, Nasjonalbiblioteket eller Internet Archive.
+Novemberhæftets indledende trykte tekstsider mangler dermed; ifølge
+indholdsoversigten begynder hæftet ved s. 519, og den første bevarede
+tekstside er trykt s. 528. Den tidligere registrerede afvigelse
+`RA1-PA633` er derimod en fejlplaceret, men tilstedeværende side: den
+skal indgå mellem `RA1-PA632` og `RA1-PA634` ved en senere import.
+
+Der er ikke indsat nye tekster, facsimiler eller titelbladsbilleder, og
+`fdirs/tidsskrifterdk/1786-minerva.xml` er uændret. For at genoptage
+importen kræves en komplet, verificeret skanning af bind 6, trykt s.
+519–527, med stabil kildeadresse, så de manglende sider kan gennemgås og
+facsimileres sammen med resten af novemberhæftet.
