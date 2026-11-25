@@ -1,0 +1,333 @@
+{
+  "reason": "De lokale serier er endnu ikke synkroniseret; SSH til den konfigurerede server afvises. Genindsæt attributterne efter upload og bestået check-facsimiles.",
+  "files": [
+    {
+      "file": "fdirs/blomir/1792-skaldebref.xml",
+      "bindings": [
+        {
+          "element": "<source href=\"https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb10553176-faksimil\" facsimile=\"1792-skaldebref\" facsimile-pages-num=\"20\">",
+          "attributes": {
+            "facsimile": "1792-skaldebref",
+            "facsimile-pages-num": "20"
+          }
+        },
+        {
+          "element": "<source pages=\"8-22\" facsimile-pages=\"3-17\"/>",
+          "attributes": {
+            "facsimile-pages": "3-17"
+          }
+        },
+        {
+          "element": "<pb n=\"9\" facs=\"003.jpg\"/>",
+          "attributes": {
+            "facs": "003.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"10\" facs=\"004.jpg\"/>",
+          "attributes": {
+            "facs": "004.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"11\" facs=\"005.jpg\"/>",
+          "attributes": {
+            "facs": "005.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"12\" facs=\"006.jpg\"/>",
+          "attributes": {
+            "facs": "006.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"13\" facs=\"007.jpg\"/>",
+          "attributes": {
+            "facs": "007.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"14\" facs=\"008.jpg\"/>",
+          "attributes": {
+            "facs": "008.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"15\" facs=\"009.jpg\"/>",
+          "attributes": {
+            "facs": "009.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"16\" facs=\"010.jpg\"/>",
+          "attributes": {
+            "facs": "010.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"17\" facs=\"011.jpg\"/>",
+          "attributes": {
+            "facs": "011.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"18\" facs=\"012.jpg\"/>",
+          "attributes": {
+            "facs": "012.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"19\" facs=\"013.jpg\"/>",
+          "attributes": {
+            "facs": "013.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"20\" facs=\"014.jpg\"/>",
+          "attributes": {
+            "facs": "014.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"21\" facs=\"015.jpg\"/>",
+          "attributes": {
+            "facs": "015.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"22\" facs=\"016.jpg\"/>",
+          "attributes": {
+            "facs": "016.jpg"
+          }
+        },
+        {
+          "element": "<source pages=\"22-24\" facsimile-pages=\"17-19\"/>",
+          "attributes": {
+            "facsimile-pages": "17-19"
+          }
+        },
+        {
+          "element": "<pb n=\"23\" facs=\"017.jpg\"/>",
+          "attributes": {
+            "facs": "017.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"24\" facs=\"018.jpg\"/>",
+          "attributes": {
+            "facs": "018.jpg"
+          }
+        }
+      ],
+      "declaredPagebreaks": true
+    },
+    {
+      "file": "fdirs/gyllenborg/1795-sednare.xml",
+      "bindings": [
+        {
+          "element": "<source href=\"https://archive.org/details/10038741bsb\" facsimile=\"1795-sednare\" facsimile-pages-num=\"249\">",
+          "attributes": {
+            "facsimile": "1795-sednare",
+            "facsimile-pages-num": "249"
+          }
+        },
+        {
+          "element": "<source pages=\"81-83\" facsimile-pages=\"93-95\"/>",
+          "attributes": {
+            "facsimile-pages": "93-95"
+          }
+        },
+        {
+          "element": "<pb n=\"82\" facs=\"093.jpg\"/>",
+          "attributes": {
+            "facs": "093.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"83\" facs=\"094.jpg\"/>",
+          "attributes": {
+            "facs": "094.jpg"
+          }
+        },
+        {
+          "element": "<source pages=\"194-195\" facsimile-pages=\"206-207\"/>",
+          "attributes": {
+            "facsimile-pages": "206-207"
+          }
+        },
+        {
+          "element": "<pb n=\"195\" facs=\"206.jpg\"/>",
+          "attributes": {
+            "facs": "206.jpg"
+          }
+        }
+      ],
+      "declaredPagebreaks": true
+    },
+    {
+      "file": "fdirs/gyllenborg/1795-vitterhetsarbeten.xml",
+      "bindings": [
+        {
+          "element": "<source href=\"https://urn.kb.se/resolve?urn=urn:nbn:se:lb-lb2428162-faksimil\" facsimile=\"1795-vitterhetsarbeten\" facsimile-pages-num=\"273\">",
+          "attributes": {
+            "facsimile": "1795-vitterhetsarbeten",
+            "facsimile-pages-num": "273"
+          }
+        },
+        {
+          "element": "<source pages=\"112-124\" facsimile-pages=\"127-139\"/>",
+          "attributes": {
+            "facsimile-pages": "127-139"
+          }
+        },
+        {
+          "element": "<pb n=\"113\" facs=\"127.jpg\"/>",
+          "attributes": {
+            "facs": "127.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"114\" facs=\"128.jpg\"/>",
+          "attributes": {
+            "facs": "128.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"115\" facs=\"129.jpg\"/>",
+          "attributes": {
+            "facs": "129.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"116\" facs=\"130.jpg\"/>",
+          "attributes": {
+            "facs": "130.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"117\" facs=\"131.jpg\"/>",
+          "attributes": {
+            "facs": "131.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"118\" facs=\"132.jpg\"/>",
+          "attributes": {
+            "facs": "132.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"119\" facs=\"133.jpg\"/>",
+          "attributes": {
+            "facs": "133.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"120\" facs=\"134.jpg\"/>",
+          "attributes": {
+            "facs": "134.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"121\" facs=\"135.jpg\"/>",
+          "attributes": {
+            "facs": "135.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"122\" facs=\"136.jpg\"/>",
+          "attributes": {
+            "facs": "136.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"123\" facs=\"137.jpg\"/>",
+          "attributes": {
+            "facs": "137.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"124\" facs=\"138.jpg\"/>",
+          "attributes": {
+            "facs": "138.jpg"
+          }
+        },
+        {
+          "element": "<source pages=\"139-144\" facsimile-pages=\"154-159\"/>",
+          "attributes": {
+            "facsimile-pages": "154-159"
+          }
+        },
+        {
+          "element": "<pb n=\"140\" facs=\"154.jpg\"/>",
+          "attributes": {
+            "facs": "154.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"141\" facs=\"155.jpg\"/>",
+          "attributes": {
+            "facs": "155.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"142\" facs=\"156.jpg\"/>",
+          "attributes": {
+            "facs": "156.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"143\" facs=\"157.jpg\"/>",
+          "attributes": {
+            "facs": "157.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"144\" facs=\"158.jpg\"/>",
+          "attributes": {
+            "facs": "158.jpg"
+          }
+        }
+      ],
+      "declaredPagebreaks": true
+    },
+    {
+      "file": "fdirs/sander/1783-deutsches-museum.xml",
+      "bindings": [
+        {
+          "element": "<source href=\"https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb10614685-2\" facsimile=\"1783-deutsches-museum\" facsimile-pages-num=\"4\">",
+          "attributes": {
+            "facsimile": "1783-deutsches-museum",
+            "facsimile-pages-num": "4"
+          }
+        },
+        {
+          "element": "<source pages=\"474-477\" facsimile-pages=\"1-4\"/>",
+          "attributes": {
+            "facsimile-pages": "1-4"
+          }
+        },
+        {
+          "element": "<pb n=\"475\" facs=\"001.jpg\"/>",
+          "attributes": {
+            "facs": "001.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"476\" facs=\"002.jpg\"/>",
+          "attributes": {
+            "facs": "002.jpg"
+          }
+        },
+        {
+          "element": "<pb n=\"477\" facs=\"003.jpg\"/>",
+          "attributes": {
+            "facs": "003.jpg"
+          }
+        }
+      ],
+      "declaredPagebreaks": true
+    }
+  ]
+}

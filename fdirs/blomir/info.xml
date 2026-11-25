@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="blomir" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Isac Reinhold</firstname>
+    <lastname>Blom</lastname>
+  </name>
+  <!-- Navn og livsdata: Svenskt biografiskt lexikon, bd. 5 (1925), s. 7,
+       https://sok.riksarkivet.se/sbl/Presentation.aspx?id=17797. -->
+  <period>
+    <born>
+      <date>1762-10-27</date>
+      <place>Stjärnholm</place>
+    </born>
+    <dead>
+      <date>1826-05-06</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q5579332</wikidata>
+    <viaf>85970997</viaf>
+    <gnd>1261925270</gnd>
+  </identifiers>
+  <biography-status status="not-found" checked-on="2026-11-25">
+    <checked-source id="salmonsen2">Bind III (1915), s. 455-456, Blom-opslagene og bindets register: intet opslag om Isac Reinhold Blom. https://runeberg.org/salmonsen/2/3/0505.html</checked-source>
+    <checked-source id="salmonsen-supplement">Bind XXVI (1930), registeret og s. 137: intet opslag om Isac Reinhold Blom. https://runeberg.org/salmonsen/2/26/0155.html</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsen (1949), sp. 463-471, herunder Blom-opslaget om Frans Blom: intet opslag om Isac Reinhold Blom. https://runeberg.org/salmonsen/4/0193.html</checked-source>
+    <note>De foretrukne Salmonsen-udgaver har ingen biografi om den svenske digter. DBL og de danske reservekilder er ikke relevante for dette svenske forfatterskab. Svenskt biografiskt lexikon har en verificeret artikel, men er ikke en godkendt biografitekstkilde efter repositoryets regler.</note>
+  </biography-status>
+</person>
