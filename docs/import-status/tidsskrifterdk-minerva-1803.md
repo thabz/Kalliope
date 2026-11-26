@@ -1,6 +1,6 @@
 # Minerva 1803 · import af bind 71–74
 
-Importen i [#2415](https://github.com/thabz/Kalliope/issues/2415) omfatter 45
+Importen i [#2415](https://github.com/thabz/Kalliope/issues/2415) omfatter 43
 tekstposter i 12 hæfter og afleveres i [#2426](https://github.com/thabz/Kalliope/pull/2426).
 De fire faksimiler er synkroniseret, og de fire titelblade har bestået
 visuel og maskinel kontrol.
@@ -66,12 +66,13 @@ bind 72.
 | Bind | Poster | Bidrag |
 | --- | ---: | --- |
 | 71 | 6 | Weinwichs *Advarslen*, to Theokrit-idyller af C. A. Lund med noter, Avisses ariette og Kruses danske oversættelse samt en anonym græsk hyldest til O. Guldberg |
-| 72 | 10 | Kruses prolog og sang og Prams epilog, Hennings’ *An Klopstoks Grabe*, Weinwichs *Varulven*, Hyphoffs første sang af *Æneiden* med indledning, Tøxens *Hymne til Jorden*, Gröndals gravvers og den danske gengivelse samt Munchs *Harpespillersken* |
+| 72 | 8 | Kruses prolog og sang og Prams epilog, Hennings’ *An Klopstoks Grabe*, Weinwichs *Varulven*, Hyphoffs første sang af *Æneiden* med indledning, Tøxens *Hymne til Jorden* samt Munchs *Harpespillersken* |
 | 73 | 7 | Thaarups kantate, Rahbeks sang, Fuglsangs *Martin Snakmund*, to digte af Frederik Schmidt samt bidrag af Platou og Zetlitz |
 | 74 | 22 | Schmidts tre scener fra *Don Karlos*, Smidths forerindring og 15 Horats-oder, Paludans gendigtning med den parallelle latinske ode, Bruns *Thorwaldsons Jason* og Fuglsangs *Femte Vid* med decemberfortsættelsen |
 
 Udvalget følger #2091 og #2415. Omslagsdigte, prosaartikler,
-indholdsfortegnelser og korte verscitater er fravalgt. De tre særskilt
+indholdsfortegnelser og korte verscitater er fravalgt. Gröndals gravvers og
+den danske gengivelse i juniheftet udgår også af udvalget. De tre særskilt
 titulerede, sammenhængende scener fra *Don Karlos* er medtaget. Citater
 i Rahbeks sammenlignende artikler om *Macbeth* og *Balders Død* forbliver
 del af artiklerne, herunder versuddrag på s. 65–93 i bind 73 og de
@@ -111,6 +112,14 @@ Horats-tekster og ni nye enkeltoder fra Perseus’ Shorey–Laing-udgave.
 *Æneiden* I er tilføjet fra Perseus’ Greenough-udgave. Udgaverne
 dokumenterer originalteksterne. Oversætternes konkrete eksemplarer er
 ukendte.
+
+Lunds oversættelser er knyttet til Theokrits idyller 8 og 21 i den
+eksisterende Perseus-baserede udgave. Schmidts uddrag af *Don Karlos*
+er knyttet til de tilsvarende scener på s. 221–243 i [Göschen-udgaven fra
+1802](https://archive.org/details/10119248bsb). De to mottoer hos Stolberg
+og Weinwich er knyttet til vers 11–13 af Horats’ epode VI i [Vollmers
+udgave](https://catalog.perseus.org/catalog/urn:cts:latinLit:phi0893.phi003.perseus-lat2).
+De konkrete tamilske forlæg for Fuglsangs versfabler er uafklarede.
 
 Thaarups kantate er knyttet til den tilsvarende tekst i 1822-udgaven.
 

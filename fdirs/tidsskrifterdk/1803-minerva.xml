@@ -79,6 +79,7 @@
   <firstline>Hvor kommer det sig, at hvér luftig Nar</firstline>
   <notes>
     <note editorial="true">Oversættelse af Stolbergs <xref type="translation" poem="stolbergf2026111301"/>.</note>
+    <note editorial="true">Mottoet citerer vers 11–13 af Horats’ <xref poem="horats2026112648"/>.</note>
   </notes>
   <source in="bd71" pages="49-51" facsimile-pages="57-59"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -236,6 +237,9 @@ Rosen blier mindre skiøn end før.
   <suptitle>Theokrits 8de Idylle.</suptitle>
   <title>Hyrdesangerne</title>
   <firstline>Daphnis, Qvægets den skiønne Bevogter, siger man, mødte</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Theokrits <xref type="translation" poem="theokrit2026112508"/>.</note>
+  </notes>
   <source in="bd71" pages="170-179" facsimile-pages="178-187"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -371,19 +375,22 @@ V. 77 i Texten findes atter Idyll. 9de V. og kan neppe her staae paa sit rette S
 <text id="tidsskrifterdk2026112601" lang="el">
 <head>
   <title>Προϊσταμενου νεωσι των ἡμετερων δικαιων</title>
-  <subtitle>
-    <line>ανδρος του λαμπροτατου</line>
-    <line>του Ο. Γυλδβεργ</line>
-    <line>Φυσιν</line>
-    <line>δια πασης της αυτου ἡγεμονιας</line>
-    <line>δεδηλωμενην</line>
-    <line>ὕτως γεγραμμενην ανεγνων.</line>
-  </subtitle>
+  <notes>
+    <note editorial="true">Oldgræsk hyldestdigt til Ove Høegh-Guldberg, sammensat af vers fra Solons <i>Eunomia</i> og Theognis.</note>
+  </notes>
+  <!-- Kilde til versforlæggene: Eduard Hiller (udg.), Anthologia lyrica, Teubner, Leipzig, 1890, https://upload.wikimedia.org/wikipedia/commons/2/23/Anthologia_lyrica%2C_sive%2C_Lyricorum_graecorum_veterum_praeter_Pindarum_reliquiae_potiores_post_Theodorum_Bergkium_%28IA_anthologialyrica00hill%29.pdf -->
   <source in="bd71" pages="228" facsimile-pages="238"/>
+  <keywords>cento</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum>ανδρος του λαμπροτατου</nonum>
+<nonum>του Ο. Γυλδβεργ</nonum>
+<nonum>Φυσιν</nonum>
+<nonum>δια πασης της αυτου ἡγεμονιας</nonum>
+<nonum>δεδηλωμενην</nonum>
+<nonum>ὕτως γεγραμμενην ανεγνων.</nonum>
 Φιλανθρωπος
 Τρηχεα λειαινει, παυει κορον, ὕβριν ἀμαυροι,
   Ἀναινει δ’ ἀτης ἀνθεα Φυομενα.
@@ -414,6 +421,9 @@ V. 77 i Texten findes atter Idyll. 9de V. og kan neppe her staae paa sit rette S
   <suptitle>Theokrits 21de Idylle.</suptitle>
   <title>Fiskerne</title>
   <firstline>Armod, o Diophantes! aleene Kunsterne vækker</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Theokrits <xref type="translation" poem="theokrit2026112521"/>.</note>
+  </notes>
   <source in="bd71" pages="295-302" facsimile-pages="305-312"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -738,6 +748,7 @@ Glem al Jorderiges Nød!
   <title>An Klopstoks Grabe</title>
   <firstline>Den Musen fehlt es nie an Blumen</firstline>
   <source in="bd72" pages="104-106" facsimile-pages="112-114"/>
+  <keywords>klopstock</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
@@ -1785,42 +1796,6 @@ Stemmes Sielen til Fred, til Venskab og stille Betragtning.
 </head>
 <content>
 
-<text id="groendal2026112601" author="groendal" lang="is">
-<head>
-  <firstline>Þad hrós er ey um of er allra vitni tær</firstline>
-  <source in="bd72" pages="333" facsimile-pages="341"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-Þad hrós er ey um of er allra vitni tær,
-Øfundarlausast lof um legstadi manna grær; —
-Hér liggr hann er átti,
-Ordstýr bestann, og fékk, og fær.
-</poetry>
-</body>
-</text>
-
-<text id="tidsskrifterdk2026112602">
-<head>
-  <title>Paa Dansk</title>
-  <firstline>Det Roes er ikke overdrevent, som eenstemmig gives af Alle</firstline>
-  <notes>
-    <note editorial="true">Dansk gengivelse af Gröndals <xref type="translation" poem="groendal2026112601"/>.</note>
-  </notes>
-  <source in="bd72" pages="333-334" facsimile-pages="341-342"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-Det Roes er ikke overdrevent, som eenstemmig gives af Alle; —
-<pb n="334" facs="341.jpg"/>Den meest upartiske Berømmelse groer paa Menneskets Grav; —
-Her ligger Han, hvem uplettet Hæder
-Tilkom, blev ydet, og skal ydes. —
-</poetry>
-</body>
-</text>
-
 <text id="munchjs2026112601" author="munchjs">
 <head>
   <title>Harpespillersken</title>
@@ -2373,6 +2348,9 @@ Ofte hvæsse sløvet Aand.
     <line>ved F. Schmidt.</line>
   </subtitle>
   <firstline>Mig vil han have? mig? — Det kan ei være</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af et uddrag af Schillers <xref type="translation" poem="schiller2026112601"/>.</note>
+  </notes>
   <source in="bd74" pages="55-72" facsimile-pages="63-80"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -4239,6 +4217,9 @@ din Svaghed fræk fornærmer med vrede Haand,
 <head>
   <title>Thorwaldsons Jason<footnote>Digterinden vil tilgive Minervas Udgiver, her at have forelagt sine Medborgere dette Stykke, hvor<pb n="212" facs="219.jpg"/>paa de, saavel efter Æmnet, det er om, som Haanden, det er fra, have Fordring. Om denne unge danske Kunstner, der, som Digterinden i en Note siger, ikke blot vækker de største Forhaabninger, men og allerede saa høiligen har opfyldt dem, at berømte Mænd ere uvisse, om Canova selv, i Henseende til høi reen Smag, ikke maa vige ham, see mere i Juniihæftet S. 337.</footnote></title>
   <firstline>Trau ich dem staunenden Blick, ist’s Wahrheit, was mir erscheint?</firstline>
+  <pictures>
+    <picture artwork="thorvaldsen/1803-jason"/>
+  </pictures>
   <!-- Digtet står på s. 211. Titelnoten fortsætter på s. 212. -->
   <source in="bd74" pages="211" facsimile-pages="219"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
