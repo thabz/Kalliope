@@ -4,26 +4,767 @@
   <title>Minerva</title>
   <breadcrumbtitle>1803</breadcrumbtitle>
   <year>1803</year>
-  <source id="bd71" href="https://uforbederlig.dk/tidsskrifter/Minerva-18aarg.htm">
+  <pictures>
+    <picture src="1803-minerva-71-p1.jpg" type="titlepage" primary="true">
+      <transcription>Maanedskriftet / Minerva. // Januar, Februar og Marts, / 1803. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1803-minerva-72-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // April, Mai og Junii, / 1803. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1803-minerva-73-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // Julii, August og September / 1803. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1803-minerva-74-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // October, November og December / 1803. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
+  <source id="bd71" href="https://books.google.dk/books?id=_WI3AAAAMAAJ" facsimile="1803-minerva-71" facsimile-pages-num="370">
     <title>Maanedskriftet Minerva</title>
-    <volume>71</volume>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>18. årgangs 3. bind</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1803</year>
   </source>
-  <source id="bd72" href="https://uforbederlig.dk/tidsskrifter/Minerva-18aarg.htm">
+  <!-- Faksimilens sider 127 og 128 er redaktionelt indsatte markører for trykkets s. 119 og 120, der mangler i University of Michigans digitalisering. -->
+  <source id="bd72" href="https://books.google.dk/books?id=X2M3AAAAMAAJ" facsimile="1803-minerva-72" facsimile-pages-num="368">
     <title>Maanedskriftet Minerva</title>
-    <volume>72</volume>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>18. årgangs 4. bind</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1803</year>
   </source>
-  <source id="bd73" href="https://uforbederlig.dk/tidsskrifter/Minerva-19aarg.htm">
+  <source id="bd73" href="https://books.google.dk/books?id=xWM3AAAAMAAJ" facsimile="1803-minerva-73" facsimile-pages-num="356">
     <title>Maanedskriftet Minerva</title>
-    <volume>73</volume>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>19. årgangs 1. bind</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1803</year>
   </source>
-  <source id="bd74" href="https://uforbederlig.dk/tidsskrifter/Minerva-19aarg.htm">
+  <source id="bd74" href="https://books.google.dk/books?id=h103AAAAMAAJ" facsimile="1803-minerva-74" facsimile-pages-num="348">
     <title>Maanedskriftet Minerva</title>
-    <volume>74</volume>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>19. årgangs 2. bind</volume>
+    <place>Kiøbenhavn</place>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1803</year>
   </source>
 </workhead>
-<workbody/>
+<workbody>
+
+<section level="1">
+<head>
+  <title>Januar 1803</title>
+</head>
+<content>
+
+<text id="weinwich2026112601" author="weinwich">
+<head>
+  <title>Advarslen</title>
+  <subtitle>(Efter den første af Grev F. L. Stolbergs Jamber.)</subtitle>
+  <firstline>Hvor kommer det sig, at hvér luftig Nar</firstline>
+  <source in="bd71" pages="49-51" facsimile-pages="57-59"/>
+</head>
+<body>
+<epigraph lang="la">
+Cave, cave, namque in malos asperrimus
+Parata tollo cornua,
+Qualis Lycambæ spretus infido gener,
+
+<nonum><right><i>Hor.</i></right></nonum>
+</epigraph>
+<poetry>
+Hvor kommer det sig, at hvér luftig Nar
+Vil overalt bedømme Digterne,
+Og dem bedømme tør? at Bifald ham
+Tilsmiles af en Silke-Pøbel, og
+En Sladdrer-Flok, naar han bedømmer dem?
+Vel mægte de ei at forstyrre dennes Flugt,
+Naar, Ørnen liig, han modig svinger sig
+Mod Solen op, og laer den dagskye Fugl
+Og Uglen tude i den hule Green;
+Paa spraglet Hof-Fugl han ei skuer ned,
+Og ei paa den falkunske Hanes Gift.
+En Digters Lykke de vel ei formaae
+At spilde, naar han, Foraarsbien liig,
+Omsvæver til hver Blomst, og naar han snart
+Ved Kilden, snart hos svangre Blomstergreen
+Sig vugger ind, i Dalens bunted Skiød
+<pb n="50" facs="057.jpg"/>Indsuger unge Blomsters Morgendug,
+Og denne Dug og gule Blomsterstøv
+Til Honning skifter, som fra Kuben drypper ned,
+Der Hiertet glæder, og oplyser Brødres Syn.
+Men Gud gav denne Solens Ørn ei blot
+Dens Vinger og forvovne Straale-Tørst,
+Han gav ham og den skarpbevæbnet Kloe,
+Og i den krumme Snabel hurtigt Mord,
+Naar han fra Skyens Høide styrter ned,
+Og drypper stigende af Harens Blod.
+Af Honning Bien ikke drypper blot,
+Thi Gud gav ogsaa ham den skarpe Braad,
+Som han i dovne Gedehamser skiød,
+Og andet glindsend’ Pak, der Honning ikke selv
+Forstod at samle, men den samlet Hob
+Omflagrer, rører og besmør med Dræk.
+Ei brammer Digteren med Liren blot,
+Han trodser og med skarpe Svøbesnært,
+Og svinger den med stærk og medfødt Kraft.
+End jeg advare vil, vil Pidsken kun
+Fremvise for Jer; træd nu, Narre, hid,
+Og see! — Med denne Svøbe Grækeren
+Arkilokos i sin Tid revsede,
+Han fletted’ den af Sylbers Vexelslag,
+Svang Armen høit og rask, saa Grækenland,
+Fra Kretas Eege indtil Hellespont,
+Fra Rhodus til Illyrus, Gienlyd gav.
+Lykambus dog endnu forhaaned’ ham,
+<pb n="51" facs="058.jpg"/>Og skiønne Serobule gav den Haand,
+Ham hørte til, én anden udi Vold,
+Veloe hans Elskov og hans Græmmelse.
+Da flød i Blodet Galde, og han slog,
+Saa bitter Spot, og kold Forhaanelse
+Af Svøben flød, feig nu Lykambes løb,
+Fuld af Fortvivlelse, som før Orest,
+Løb, ræd for Furiernes Slangehaar,
+I Kredsen rundt. Den skiønne Datter løb,
+Som Jo for hiin Brems, og hiint Phantoms
+Af Argus, hendes Lokker vildt fløi om,
+Og Øiet, elskovsfuldt før, laae nu dybt
+I gule Huling; endelig hun hang sig op
+Udi et Figentræe; da hendes Faer det saae,
+Strax hænger han sig i et Poppeltræe,
+Kold svinger han med Grenen hist og her,
+I egen Hauge, og er bange Fugles Skræk.
+
+<nonum><right><w>N. H. Weinwich.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>April 1803</title>
+</head>
+<content>
+
+<text id="krusel2026112601" author="krusel">
+<head>
+  <title>Prolog den 2den April 1803</title>
+  <subtitle>(Fremsagt af Hr. Instructeur Schwartz paa Provincial-Theatret i Helsingøer.)</subtitle>
+  <firstline>Ei fremstaaer jeg i denne Stund paa Scenen</firstline>
+  <source in="bd72" pages="94-96" facsimile-pages="102-104"/>
+</head>
+<body>
+<poetry>
+Ei fremstaaer jeg i denne Stund paa Scenen
+adlydende Camenen, som mig vinker!
+I Dag en Stierne blinker til vor Slette,
+hvis klare Straaler lette <w>Deres</w> Hierter,
+som dybt i Mindets Smerter tause sukke,
+skiøndt ingen Magt kan slukke en Erindring,
+som eier selv en Lindring i sin Kummer.
+Ja Brødre! Brat forstummer Musens Toner
+naar Danmarks Borgerkroner til os smile.
+Det lette Spil bør hvile! Musen tier,
+Blot Mindets Phantasier jeg fremkalder,
+paa det, hver Stand, hver Alder, hvert et Hierte,
+som fra sin Fødsel lærte at erkiende
+i Fædrelandets Held sin egen Lykke,
+paa denne Dag saa heit som mit maa brænde,
+og føle, hvad jeg svagt kun kan udtrykke:
+thi vandt ei Kierlighed paa denne Dag
+sin Seier første Gang i Vaabenbrag.
+
+    Ja! Eenighed og Brodertroeskab tvinder
+Guldtraade om hvert Bryst i Danmarks Rige;
+<pb n="95" facs="102.jpg"/>naar Faren møder, Enkelts Fiendskab svinder,
+for Landets Sag slaaer alle Hierter lige.
+Een Kiede alle Danskes Hierter binder,
+og intet Leed kan af sin Orden vige,
+thi dette store sammenvirkte Baand
+en <w>elsket</w> Fyrste holder i sin Haand.
+
+    O Danmark! Moder til saa mange Kiekke,
+som stimle om Dit Banner ufortroden,
+siig! hvad formaaer vel dine Børn at skrække,
+naar Elskede! du er bestæd i Nøden.
+Vort Borgersamfund ingen Tid skal svække,
+for Dig vi gaae frimodige i Døden,
+Vi kiendte neppe selv, hvad Kraft vi har.
+<w>Din store Dag</w> os lærte, hvad vi var.
+
+    Men tys! Hist hører jeg med stærke Stemmer
+et Chor hiin Dags Erindring at gientage.
+Op, stemmer i enhver, hvis Bryst fornemmer
+rørt deres Ord! — Jeg træder taus tilbage.
+<nonum><right>(Dækket falder, bag det begynder Sangen.)</right></nonum>
+
+Han stod, han slog, han faldt, han døde,
+Og Evighedens Morgenrøde
+Omfavned’ Helten fra April.
+Hans Troeskab var hans Testamente,
+Hans Hæder er hans Kiekheds Rente,
+Vi arve den, naar vi kun vil. :/:
+<nonum><center><w>Chor.</w></center></nonum>
+    Ja! alle vi den arve vil
+    Den falder alle Danske til.
+
+<pb n="96" facs="103.jpg"/>Ja, Fædreland! din stærke Stemme
+Dybt i vort Hierte vi fornemme.
+Kald, Danmark! og vi drage ud.
+Vor Fyrste er din Tolk paa Jorden,
+At lyde ham er Pligt og Orden,
+At elske ham er Hiertets Bud. :/:
+<nonum><center><w>Chor.</w></center></nonum>
+    Ja, Fyrste! kald, vi drage ud,
+    Vi lyde alle glad dit Bud.
+
+<nonum><right><w>L. Kruse.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="pram2026112601" author="pram">
+<head>
+  <title>Epilog</title>
+  <subtitle>
+    <line>for Madame Heger</line>
+    <line>efter hendes Benefice-Forestilling</line>
+    <line>d. 12 Marts 1803.</line>
+  </subtitle>
+  <firstline>Elsker du min Kunst? adspurgte mig</firstline>
+  <source in="bd72" pages="96-97" facsimile-pages="104-105"/>
+</head>
+<body>
+<poetry>
+„Elsker du min Kunst?“ adspurgte mig
+Tidt Thalia. — Skiøndt den blander sig
+Med en Drøm, der troer, at Kunsten ikke
+Har, som alting, mange Øieblikke,
+Som — — ei fryde, o saa var endda
+Paa hiint Spørgsmaal et sandfærdigt Ja
+Stedse Svaret. — Held mig! Ja mit Hierte
+Føler Kunstens hele Værd; det lærte
+Og erfoer, at den er sand og skiøn,
+<pb n="97" facs="104.jpg"/>Over Guld og Bifaldsstøi, vor Løn.
+<w>Vor</w>, hvis skiønne Kald det er, at pryde,
+Giøre blidere, forskiønne, fryde,
+Ædles Dage. — Hvo kan prise sig
+Som den Kunstens Dyrker lykkelig,
+Der sig selv tør sige: „Jeg opfyldte,
+„Troelig, som jeg kunde, hvad jeg skyldte
+„Dette skiønne Kald“!
+                   Og jeg, som her
+Af saa mange ædle Mennesker
+Saae mig yndet, og mit Hiertes Stemme
+Lader mig blidthviskende fornemme:
+„Jeg har giort, hvad i min Evne er,
+„For at vorde denne Yndest værd!“
+O nu vise sig Gudinden atter,
+Nu igien hun spørge blid sin Datter:
+„<w>Elsker du min Kunst?</w>“ „Taknemmelig,“
+Er mit Svar, „jeg elsker den og dig,
+„Og mit Hierte skiønner paa sin Lykke!“
+Hvis med Ord sig denne lod udtrykke,
+Blev det Ord kun: <w>Tak!</w> — o Tak til hver,
+Som har Deel i det, jeg føler her;
+Hver min Ven paa Banen; hver, som skiønned’
+Paa min Flid, og bidrog til dens Værd;
+Hver, som venlig letted’ dens Besvær;
+Hver, som nu saa blid min Stræben lønned’!
+</poetry>
+</body>
+</text>
+
+<text id="krusel2026112602" author="krusel">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>for</line>
+    <line>Provincial-Theatret</line>
+    <line>af</line>
+    <line>L. Kruse.</line>
+  </subtitle>
+  <firstline>En Gudinde mild og sød</firstline>
+  <source in="bd72" pages="98-100" facsimile-pages="106-108"/>
+</head>
+<body>
+<poetry>
+En Gudinde mild og sød,
+kierlig over alle svæver,
+og i Jordens Angst og Nød
+ved sin Drøm vort Hierte hæver.
+<nonum><center><w>Chor.</w></center></nonum>
+Det beklemte Hierte hæver
+en Gudinde mild og sød!
+som i lette Drømme svæver
+ned til Jordens Angst og Nød.
+
+    Hun i lette Farvespil
+og med sød Indbildning tryller,
+Mindets Nag og Sorgens Piil
+i sit lette Skyeflor hyller.
+<nonum><center><w>Chor.</w></center></nonum>
+Vi med sød Indbildning trylle
+under lette Farvespil.
+I Gudindens Slør vi hylle
+Mindets Nag og Sorgens Piil.
+
+<pb n="99" facs="106.jpg"/>    Med sin lette Tryllestav
+hun frembringer Bierge, Skove,
+Elskovs Lunde, Heltes Grav,
+Svanen paa den sølvblaae Vove.
+<nonum><center><w>Chor.</w></center></nonum>
+Her staae Bierge, her groe Skove,
+fierne Land her præges af;
+let henrisler sølvblaae Vove,
+rørt af hendes Tryllestav.
+
+    Faa i Tal, men Haand i Haand,
+her en Kreds, som hun regierer,
+danner, kyst af hendes Aand,
+tusind Slægters Caracterer.
+<nonum><center><w>Chor.</w></center></nonum>
+Tusind Slægters Caracterer
+her vi danne, Haand i Haand!
+Hun usynlig os regierer!
+Synlig røre vi jer’ Aand.
+
+    Stille Dyder, dybe Feil,
+Sorgens Smiil og Glædens Taarer,
+her, som i et magisk Speil,
+fryder, rører, læger, saarer.
+<nonum><center><w>Chor.</w></center></nonum>
+Lønnet sødt, af Smiil og Taarer
+Vi afbilde Dyd, som Feil;
+sødt henriver, rører, saarer
+hver, som skuer i vort Speil.
+
+<pb n="100" facs="107.jpg"/>    Phantasien mild og sød,
+kierlig om hvert Hierte svæver,
+der i Jordens Angst og Nød,
+mod dens hulde Drøm sig hæver.
+<nonum><center><w>Chor.</w></center></nonum>
+Sødt berørt hvert Hierte bæve!
+Her er Phantasiens Skiød!
+See! vor Troldoms Slør vi have:
+Glem al Jorderiges Nød!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Mai 1803</title>
+</head>
+<content>
+
+<text id="weinwich2026112602" author="weinwich">
+<head>
+  <title>Varulven</title>
+  <subtitle>(Efter den ottende af Grev F. L. Stolbergs Jamber.)</subtitle>
+  <firstline>Hvo er Du? som paa mig i Nattens Mulm</firstline>
+  <source in="bd72" pages="171-172" facsimile-pages="179-180"/>
+</head>
+<body>
+<epigraph lang="la">
+Verte omnes tete in facies.
+
+<nonum><right><w>Virgilius.</w></right></nonum>
+</epigraph>
+<poetry>
+Hvo er Du? som paa mig i Nattens Mulm
+Udskyder Pile fra din Vittighed.
+Og krøb du, før de naaed’ mig, ei strax
+Tilbage i din Hule, da du saae,
+At ingen af dem farves med mit Blod;
+De falde alle mat fra Pallas Skiold,
+Og bøiede de synke for min Fod!
+Er det maaskee dig nok, at vise kun
+Dit dumme Vid, din ondskabsfulde Siel?
+Og holder du dig sikker, blot for du
+Blandt Pøbelens smaae Aander skuler dig,
+Og Mulm og Mørke dækker om dit Navn?
+Puk ei derpaa! thi falder det mig ind,
+Ved Phoebus Fakkel jeg dig søger op
+Og finder dig, om du nedgravet laae
+Som Grævlingen! ja om du endog var
+I sammenpakket Trængsel, som en Stær
+<pb n="172" facs="179.jpg"/>Blandt flyvende og pibend’ Fugles Træk,
+Naar de for Vinters Frost og Hunger flye;
+Jeg henter dig herud med Phoebus Piil,
+Som feiler ei, og smerter, hvor den traf.
+I Sangen skiød jeg, og tilvisse veed,
+Dit Klageskrig vil snart forraade dig.
+Saa Jægerne fortælle, gamle Kierlinger,
+Ei uden Skyts af Mester Urian,
+Tidt, i et Ulveskind indhyllet, rundt omkring
+Giør Abekatterie inkognito.
+Dog skyd med arvet Sølv og Kors betegnet Skud,
+Paa hendes Pelts og Skind; lemlæsted da
+Hun slæber krybende sig til sin Hytte hiem.
+Forraadt ved hendes Saar, hun bliver da
+Til Naboers Fabel og smaa Drenges Spot.
+
+<nonum><right><w>N. H. Weinwich.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Junii 1803</title>
+</head>
+<content>
+
+<text id="munchjs2026112601" author="munchjs">
+<head>
+  <title>Harpespillersken</title>
+  <firstline>O, kunde min bævende Sang</firstline>
+  <source in="bd72" pages="334-336" facsimile-pages="342-344"/>
+</head>
+<body>
+<poetry>
+O, kunde min bævende Sang
+Nu tolke med fuldere Tone
+Den søde Fryd, som mangen Gang
+Mig skaber, o Harpe! din Klang,
+<pb n="335" facs="342.jpg"/>Jeg steg til Calliope’s Rang,
+Greb Sapho’s den glintrende Krone —
+Thi, Harpe, selv Nattergal-Sang
+Bliver hæs mod din tryllende Tone!
+
+Naar Vaarens sødtduftende Krands
+De smilende Høie bepryder,
+Og Morgenrødens blide Glands
+Opliver hver undrende Sands:
+Da tier Zephirernes Dands,
+O Harpe! naar liflig du lyder:
+Da rækker dig Flora sin Krands,
+Og selv Bækken harmonisk henflyder.
+
+Jeg frygter ei Sommerens Død:
+Lad Rosernes Vellugt forsvinde!
+Naar Høstens barske Storme frembrød,
+Min Harpe! hvor er du mig sød!
+Saa ofte du tryllende lød,
+Jeg Foraar og Fryd seer oprinde,
+I Vinterens sneedækte Skiød,
+Jeg end smilende Blomster kan finde.
+
+Jeg agter ei Tordeners Larm
+Naar din Tone sølvklingende bæver,
+Og Mismod, Kummer, Livets Harm
+Du vinker at flye fra min Barm.
+I Følelsens Fylde, jeg varm —
+Paa letstigende Vinge mig hæver —
+<pb n="336" facs="343.jpg"/>Jeg synker i Saligheds Arm,
+Naar, o Harpe! din Klang mig omsvæver.
+
+Nei, aldrig jeg skilles fra dig,
+Min Harpe, min Lyst, og min Glæde!
+Naar ublid Alder nærmer sig,
+Paa Fryd du mig end vorder riig.
+Ja, slynge sig Torne om mig,
+Jeg smiler, naar du er tilstæde —
+Og aldrig jeg skilles fra dig,
+Du, min Harpe, min Lyst og min Glæde!
+
+<nonum><right><w>J. St. Munk.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Julii 1803</title>
+</head>
+<content>
+
+<text id="thaarup2026112601" author="thaarup">
+<head>
+  <title>Cantate</title>
+  <subtitle>ved det harmoniske Selskabs 25de Aars Fest.</subtitle>
+  <firstline>O! Harmonie! din Trylleskiede</firstline>
+  <source in="bd73" pages="94-95" facsimile-pages="102-103"/>
+</head>
+<body>
+<poetry>
+<nonum><center><w>For Talen.</w></center></nonum>
+<nonum><center><w>Chor af Mænd.</w></center></nonum>
+O! Harmonie! din Trylleskiede
+Vandt Brødres Siel til skyldfrie Glæde,
+Du samlede dem her!
+Din Guddomskraft velsignet være!
+Din Majestæt vor Samfunds Ære,
+Og alle vore Hierter kier!
+
+<nonum><center><w>Chor af Qvinder.</w></center></nonum>
+Du Hierters milde Herskerinde!
+Hver Dannemøe, hver Danneqvinde
+Paakalde dig i Dag!
+Hæv Mandens Siel til Daad og Hæder,
+Du ædle Hymens Rosenkieder!
+Men ingen vorde lydisk svag!
+
+<nonum><center><w>4 Stemmer.</w></center></nonum>
+Velsignet deres Minde være,
+Som først udbredte her din Ære
+For fem og tyve Aar.
+Fred med dens Støv, som Graven giemmer,
+Held hver, som end med os samstemmer,
+I Manddoms Kraft — med sølvgraa Haar.
+<pb n="95" facs="102.jpg"/><nonum><center><w>Chor.</w></center></nonum>
+Vær Harmonie! vær du vor Hæder!
+Du ædle dette Samfunds Glæder,
+Du smelte alles Bryst.
+Hæv os til Daad, bøi du vort Hierte
+Til Brødres Fryd, til Brødres Smerte,
+Til Glædens Ven, og Sorgens Trøst.
+
+<nonum><center><w>Efter Talen.</w></center></nonum>
+Dig, Fødeland! til Held og Ære
+Vor Høitid skal hellig være!
+Og her dig gavne vi!
+Naar Sangens Røst melodisk lyder,
+Den høie, styrke os til Dyder,
+Til Borgerharmonie.
+
+<nonum><right><w>Th. Thaarup.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="rahbek2026112601" author="rahbek">
+<head>
+  <title>Sang</title>
+  <subtitle>ved samme Leilighed.</subtitle>
+  <firstline>Med Spaadoms Aand</firstline>
+  <source in="bd73" pages="95-96" facsimile-pages="103-104"/>
+</head>
+<body>
+<poetry>
+Med Spaadoms Aand
+Til Fremtids skyldfrie Glæde
+    Af Vennehaand
+Nedsattes Qvisten spæde.
+Aarle og silde de pleied’ den,
+Nød alt i Haabet de Dage,
+Da efter Arbeid Ven hos Ven
+Ro i dens Ly skulde smage.
+
+<pb n="96" facs="103.jpg"/>    Den Qvist slog Rod,
+Og frodig skiød den Grene,
+    Flux ved dens Fod
+Fleer Venner sig forene.
+Snart under den blev qvægsom Ly,
+Stolt den sin Krone mon sprede,
+Did nu omløbs de søges at tye
+Alt efter Dagens Hede.
+
+    Hiin Qvist saa spæd
+Et Træ saa stolt er vorden,
+    Dets Skyggers Fred
+Er vide kiendt i Norden.
+Venskab det har for andre tier,
+Skyldfrie Glæder der bygge;
+Smilende Muser og Gratier
+Samles med Lyst i dets Skygge.
+
+    Hil hver en Ven,
+Som satte Qvisten spæde,
+    Hil og hver den,
+Som røgted’ den med Glæde.
+Hver, som dens Fremvært skued’ glad
+Frydet ved broderlig Gammen,
+Hvo fro her sidder, eller sad,
+Hil være alle tilsammen!
+
+<nonum><right><w>Rahbek.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>September 1803</title>
+</head>
+<content>
+
+<text id="schmidtf2026112601" author="schmidtf">
+<head>
+  <title>Til S. O. den 4de Sept. 1802</title>
+  <firstline>Med lette Fied og sorgfrit Sind</firstline>
+  <source in="bd73" pages="316-317" facsimile-pages="324-325"/>
+</head>
+<body>
+<poetry>
+Med lette Fied og sorgfrit Sind
+Du Livets Rosenvei betrade;
+Ei standse Torne Dine Trin,
+Ei Kummers Graad Dit Øie væde!
+
+Med friske Krandse i Dit Haar,
+Du glad Din Fødselsdag modtage!
+Ak skiøn, men kort er Livets Vaar!
+Thi fryd Dig ved dens blide Dage.
+
+<pb n="317" facs="324.jpg"/>Dog Livets Vaar ei blot til Lyst
+Os skienktes. Sæden da skal giemmes,
+Som i vor Alders modne Høst
+Til skiøn og gavnlig Frugt skal fremmes.
+
+Saa nytte Du Din Ungdoms Iid!
+Søg Glæden i et ædelt Hierte!
+Vær stedse god, uskyldig, blid,
+Og troe: en Ven Dig dette lærte.
+
+<nonum><right><w>F. Schmidt.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="schmidtf2026112602" author="schmidtf">
+<head>
+  <title>Til Dr. T——s</title>
+  <firstline>I fremmed Land, ved Leinens Bred</firstline>
+  <source in="bd73" pages="317" facsimile-pages="325"/>
+</head>
+<body>
+<poetry>
+I fremmed Land, ved Leinens Bred,
+I Musernes berømte Sæde,
+Der knyttedes de første Leed,
+O Broder! af vor Venskabskiede.
+
+Nu kom Du hid til norske Field;
+Du saae min Barndoms elskte Steder,
+Du drak af mit cristalske Væld<footnote>Kongs-Kilden ved Opsloe.</footnote>,
+Og deelte mine bedste Glæder.
+
+Saa samles stundom Ven med Ven,
+Hvor dunkelt Skiebnens Traad end spindes.
+O mon ei meer vi sees igien,
+Og froe vor Ungdoms Vane mindes?
+
+<nonum><right><w>F. Schmidt.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="platou2026112601" author="platou">
+<head>
+  <title>I min Ven K. M—rs Stambog</title>
+  <subtitle>da han reiste til Norge</subtitle>
+  <firstline>Saa sødt det er, at mindes af den Gode</firstline>
+  <source in="bd73" pages="318" facsimile-pages="326"/>
+</head>
+<body>
+<epigraph lang="la">
+Sis felix ubicunque mavis
+Et memor nostri:
+
+<nonum><right><w>Horatius,</w></right></nonum>
+</epigraph>
+<poetry>
+Saa sødt det er, at mindes af den Gode,
+Saa sødt det er, at minde ham igien,
+Og sødt det er, rundt om paa Jordens Klode
+At finde een og anden elsket Ven;
+Hist slaaer for Dig det vennehulde Hierte,
+Og her omfavner Dig en Venne-Arm,
+Den Tanke mildner blidt hver Sorg, hver Smerte,
+Og tryller Glæden frem i Kummers Barm;
+O, ja! i Fryd, i Sorg, i Liv, i Død
+Blot Tanken om en Ven er himmelsk-sød!
+Held derfor mig, som fandt i Dig, Du Gode!
+Saa varm, saa trofast og saa huld en Ven;
+Lad os end tumles vidt paa Jordens Klode,
+Tilsidst engang vi samles skal igien!
+Alt lyder Afskedstimen; Pligtens Stemme
+Dig vinker op til Nor[ulæseligt] det stolte Land:
+Drag did, vær lykkelig, og ei Du glemme
+Saa mangen trofast Ven paa Danmarks Strand!
+Far vel! vi sees igien! Vær stedse lykkelig!
+Jeg evig mindes Dig; Du mindes evig mig!
+
+<nonum><right><w>L. Stoud Platou.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="zetlitz2026112601" author="zetlitz">
+<head>
+  <title>Selskabssang</title>
+  <firstline>Sang og Skiemt og Evans Glæder</firstline>
+  <source in="bd73" pages="319-320" facsimile-pages="327-328"/>
+</head>
+<body>
+<poetry>
+Sang og Skiemt og Evans Glæder
+Viede af Venskabs Haand
+Lette Livets Demantkieder,
+Muntre den nedslagne Aand.
+Du, hvis Hierte Kummer nager,
+Søg det muntre Vennelag,
+Braadden det din Sorg fratager,
+Lyser paa din mørke Dag.
+
+Sang og Skiemt og Evans Glæder,
+Viede af Venskabs Haand,
+Jævne Mandens Vei til Hæder,
+Smile mod en virksom Aand.
+Du, hvis Dag i Daad hensvinder,
+Søg det muntre Vennelag,
+Skiemt, og syng, og drik — du vinder
+Styrke til den næste Dag.
+
+Signet være Evans Bæger,
+Naar en Skienk fra Himmelen,
+Flidens Søn det vederqvæger,
+Skyller Usles Kummer hen,
+Sangens Værd og Skiemtes Hæder
+Over Guld og Vælde er;
+Stræbsom Flid den skaber Glæder,
+Mildne Sorgens Lidelser.
+
+<pb n="320" facs="327.jpg"/>Kommer, Brødre! vi vil hylde
+Viin, og Sang, og skyldfrit Skiemt.
+Megen Daadkraft dem vi skylde,
+Dem, at meget Ondt er glemt.
+Ofte blidt de mod os smile,
+Viede af Venskabs Haand,
+Ofte sløve Vanhelds Pile,
+Ofte hvæsse sløvet Aand.
+
+<nonum><right><w>J. Zetlitz.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
 </kalliopework>

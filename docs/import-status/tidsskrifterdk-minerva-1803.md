@@ -1,8 +1,8 @@
 # Minerva 1803 · kildekontrol af bind 71–74
 
-Tekstimporten i #2415 afventer afklaring af pagineringen mellem april-
-og majhæftet i bind 72. Arbejdet standsede ved kildekontrollen før OCR,
-transskription og korrektur.
+Tekstimporten i #2415 er genoptaget efter redaktionel beslutning.
+De fire faksimiler er synkroniseret, og titelbladene er beskåret og
+kontrolleret. Første transskriptionsudkast er indsat i årgangsværket.
 
 ## Digitaliseringer
 
@@ -45,12 +45,43 @@ registrerer også springet, men henviser til Michigan-eksemplaret hos
 HathiTrust. Biblioteksstregkoden blandt [de afsluttende billeder](https://books.google.dk/books?id=X2M3AAAAMAAJ&pg=PT3)
 matcher HathiTrusts eksemplar-id `mdp.39015065141098`.
 
-## Grundlag for genoptagelse
+## Redaktionel løsning og kontrol
 
-Sammenhold afslutningen på aprilhæftet og starten på majhæftet med
-et uafhængigt eksemplar af samme tryk. Hvis s. 119–120 findes, fremskaf
-billeder af dem. Hvis eksemplaret dokumenterer et oprindeligt
-pagineringsspring eller blanke sider, registrér det i kildeinventaret.
-[Det Kgl. Biblioteks katalogpost](https://soeg.kb.dk/permalink/45KBDK_KGL/1pioq0f/alma99122755202305763)
-giver et muligt udgangspunkt. Søgninger i Nasjonalbibliotekets katalog
-og Internet Archive gav ingen brugbar digitalisering af 1803-årgangen.
+Faksimilen til bind 72 indsætter to sider efter trykkets s. 118.
+Hver side viser sit sidetal og oplyser, at siden mangler i kildens
+digitalisering. De indsatte sider er side 127–128 i arbejds-PDF'en
+(henholdsvis `126.jpg` og `127.jpg` i faksimilen). Den oprindelige
+majåbning er derefter side 129 (`128.jpg`). Et andet eksemplar af trykket
+kan stadig afklare, om der oprindelig var et blankt blad.
+
+Faksimilerne omfatter 370, 368, 356 og 348 billeder i bindrækkefølge.
+En kontrol af de digitale sideindekser finder ét spring i ordinære side-id'er,
+mellem april og maj i bind 72. Den fulde visuelle sidegennemgang og
+uafhængige korrektur udestår.
+
+## Tekstudkast i årgangsværket
+
+| Bind | Trykte sider | Udkast |
+| --- | --- | --- |
+| 71 | 49–51 | Weinwichs *Advarslen* efter Stolberg |
+| 72 | 94–100, 171–172, 334–336 | Kruses prolog og sang, Prams epilog, Weinwichs *Varulven* og Storm Munchs *Harpespillersken* |
+| 73 | 94–96, 316–320 | Thaarups kantate, Rahbeks sang, to digte af Frederik Schmidt samt bidrag af Platou og Zetlitz |
+| 74 | | Afventer transskription |
+
+De digitale indholdsfortegnelser giver blandt andet følgende indgange til
+de resterende bidrag. Også artiklerne mellem bidragene skal gennemgås
+for hele digte og fabler.
+
+- Bind 71: Lunds to Theokrit-idyller begynder på s. 170 og 295. Trykket
+  har oversætterens anmærkninger efter begge idyller.
+- Bind 72: Hennings’ tyske digt *An Klopstoks Grabe* står på s. 104–106.
+  Hyphoffs oversættelse af *Æneiden* I og Block Tøxens *Hymne til Jorden*
+  står sammen på s. 214. Hymnens næste side er fejltrykt 213 for 215.
+- Bind 73: Fuglsangs versfabel *Martin Snakmund* står på s. 202–209
+  efter forfatterens brev. Hennings’ *John Binfield* på s. 310–316
+  er en prosaartikel.
+- Bind 74: Schmidts oversættelse af tre scener fra *Don Karlos*,
+  Fuglsangs indiske fabler og Horats-oversættelser af Smidth og Paludan.
+
+En plet skjuler en del af læsemåden efter »Nor« i Platous digt på s. 318
+i bind 73. Den del er markeret som ulæselig i udkastet.
