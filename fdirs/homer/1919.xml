@@ -3,10 +3,8 @@
 <workhead>
   <title>Ὀδύσσεια</title>
   <year>1919</year>
-  <notes>
-    <note editorial="true" type="credits">Homer: <i>The Odyssey with an English Translation</i>, red. af A. T. Murray, bd. 1-2, London: William Heinemann, Ltd. / New York: G.P. Putnam's Sons, 1919. Digital tekst fra Perseus Digital Library under CC BY-SA 4.0. Kilde: PerseusDL/canonical-greekLit på GitHub <a href="https://github.com/PerseusDL/canonical-greekLit">↬</a>.</note>
-  </notes>
-  <source href="https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0012/tlg002/tlg0012.tlg002.perseus-grc2.xml">
+  <!-- Digital tekst fra Perseus Digital Library under CC BY-SA 4.0. Kilde-XML med kreditering og licens: https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0012/tlg002/tlg0012.tlg002.perseus-grc2.xml -->
+  <source href="https://atlas.perseus.tufts.edu/library/urn%3Acts%3AgreekLit%3Atlg0012.tlg002.perseus-grc2/">
     <author id="homer">Homer</author>
     <title>The Odyssey with an English Translation</title>
     <editor type="editor">A. T. Murray</editor>
@@ -20,6 +18,7 @@
 <workbody>
 <text id="homer2026112525" lang="grc">
 <head>
+  <title><num>1.</num>ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ</title>
   <firstline>ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ</firstline>
   <quality>kilde</quality>
 </head>
@@ -475,6 +474,7 @@
 
 <text id="homer2026112526" lang="grc">
 <head>
+  <title><num>2.</num>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</title>
   <firstline>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</firstline>
   <quality>kilde</quality>
 </head>
@@ -920,6 +920,7 @@
 
 <text id="homer2026112527" lang="grc">
 <head>
+  <title><num>3.</num>Ἠέλιος δʼ ἀνόρουσε, λιπὼν περικαλλέα λίμνην</title>
   <firstline>Ἠέλιος δʼ ἀνόρουσε, λιπὼν περικαλλέα λίμνην</firstline>
   <quality>kilde</quality>
 </head>
@@ -1428,6 +1429,7 @@
 
 <text id="homer2026112528" lang="grc">
 <head>
+  <title><num>4.</num>οἱ δʼ ἷξον κοίλην Λακεδαίμονα κητώεσσαν</title>
   <firstline>οἱ δʼ ἷξον κοίλην Λακεδαίμονα κητώεσσαν</firstline>
   <quality>kilde</quality>
 </head>
@@ -2286,6 +2288,7 @@
 
 <text id="homer2026112529" lang="grc">
 <head>
+  <title><num>5.</num>Ἠὼς δʼ ἐκ λεχέων παρʼ ἀγαυοῦ Τιθωνοῖο</title>
   <firstline>Ἠὼς δʼ ἐκ λεχέων παρʼ ἀγαυοῦ Τιθωνοῖο</firstline>
   <quality>kilde</quality>
 </head>
@@ -2790,6 +2793,7 @@
 
 <text id="homer2026112530" lang="grc">
 <head>
+  <title><num>6.</num>ὣς ὁ μὲν ἔνθα καθεῦδε πολύτλας δῖος Ὀδυσσεὺς</title>
   <firstline>ὣς ὁ μὲν ἔνθα καθεῦδε πολύτλας δῖος Ὀδυσσεὺς</firstline>
   <quality>kilde</quality>
 </head>
@@ -3132,6 +3136,7 @@
 
 <text id="homer2026112531" lang="grc">
 <head>
+  <title><num>7.</num>ὧς ὁ μὲν ἔνθʼ ἠρᾶτο πολύτλας δῖος Ὀδυσσεύς</title>
   <firstline>ὧς ὁ μὲν ἔνθʼ ἠρᾶτο πολύτλας δῖος Ὀδυσσεύς</firstline>
   <quality>kilde</quality>
 </head>
@@ -3490,6 +3495,7 @@
 
 <text id="homer2026112532" lang="grc">
 <head>
+  <title><num>8.</num>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</title>
   <firstline>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</firstline>
   <quality>kilde</quality>
 </head>
@@ -4087,6 +4093,7 @@
 
 <text id="homer2026112533" lang="grc">
 <head>
+  <title><num>9.</num>τὸν δʼ ἀπαμειβόμενος προσέφη πολύμητις Ὀδυσσεύς·</title>
   <firstline>τὸν δʼ ἀπαμειβόμενος προσέφη πολύμητις Ὀδυσσεύς·</firstline>
   <quality>kilde</quality>
 </head>
@@ -4664,6 +4671,7 @@
 
 <text id="homer2026112534" lang="grc">
 <head>
+  <title><num>10.</num>Αἰολίην δʼ ἐς νῆσον ἀφικόμεθʼ· ἔνθα δʼ ἔναιεν</title>
   <firstline>Αἰολίην δʼ ἐς νῆσον ἀφικόμεθʼ· ἔνθα δʼ ἔναιεν</firstline>
   <quality>kilde</quality>
 </head>
@@ -5249,6 +5257,7 @@
 
 <text id="homer2026112535" lang="grc">
 <head>
+  <title><num>11.</num>αὐτὰρ ἐπεί ῥʼ ἐπὶ νῆα κατήλθομεν ἠδὲ θάλασσαν</title>
   <firstline>αὐτὰρ ἐπεί ῥʼ ἐπὶ νῆα κατήλθομεν ἠδὲ θάλασσαν</firstline>
   <quality>kilde</quality>
 </head>
@@ -5900,6 +5909,7 @@
 
 <text id="homer2026112536" lang="grc">
 <head>
+  <title><num>12.</num>αὐτὰρ ἐπεὶ ποταμοῖο λίπεν ῥόον Ὠκεανοῖο</title>
   <firstline>αὐτὰρ ἐπεὶ ποταμοῖο λίπεν ῥόον Ὠκεανοῖο</firstline>
   <quality>kilde</quality>
 </head>
@@ -6364,6 +6374,7 @@
 
 <text id="homer2026112537" lang="grc">
 <head>
+  <title><num>13.</num>ὣς ἔφαθʼ, οἱ δʼ ἄρα πάντες ἀκὴν ἐγένοντο σιωπῇ</title>
   <firstline>ὣς ἔφαθʼ, οἱ δʼ ἄρα πάντες ἀκὴν ἐγένοντο σιωπῇ</firstline>
   <quality>kilde</quality>
 </head>
@@ -6815,6 +6826,7 @@
 
 <text id="homer2026112538" lang="grc">
 <head>
+  <title><num>14.</num>αὐτὰρ ὁ ἐκ λιμένος προσέβη τρηχεῖαν ἀταρπὸν</title>
   <firstline>αὐτὰρ ὁ ἐκ λιμένος προσέβη τρηχεῖαν ἀταρπὸν</firstline>
   <quality>kilde</quality>
 </head>
@@ -7359,6 +7371,7 @@
 
 <text id="homer2026112539" lang="grc">
 <head>
+  <title><num>15.</num>ἡ δʼ εἰς εὐρύχορον Λακεδαίμονα Παλλὰς Ἀθήνη</title>
   <firstline>ἡ δʼ εἰς εὐρύχορον Λακεδαίμονα Παλλὰς Ἀθήνη</firstline>
   <quality>kilde</quality>
 </head>
@@ -7927,6 +7940,7 @@
 
 <text id="homer2026112540" lang="grc">
 <head>
+  <title><num>16.</num>τὼ δʼ αὖτʼ ἐν κλισίῃ Ὀδυσεὺς καὶ δῖος ὑφορβὸς</title>
   <firstline>τὼ δʼ αὖτʼ ἐν κλισίῃ Ὀδυσεὺς καὶ δῖος ὑφορβὸς</firstline>
   <quality>kilde</quality>
 </head>
@@ -8419,6 +8433,7 @@
 
 <text id="homer2026112541" lang="grc">
 <head>
+  <title><num>17.</num>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</title>
   <firstline>ἦμος δʼ ἠριγένεια φάνη ῥοδοδάκτυλος Ἠώς</firstline>
   <quality>kilde</quality>
 </head>
@@ -9036,6 +9051,7 @@
 
 <text id="homer2026112542" lang="grc">
 <head>
+  <title><num>18.</num>ἦλθε δʼ ἐπὶ πτωχὸς πανδήμιος, ὃς κατὰ ἄστυ</title>
   <firstline>ἦλθε δʼ ἐπὶ πτωχὸς πανδήμιος, ὃς κατὰ ἄστυ</firstline>
   <quality>kilde</quality>
 </head>
@@ -9475,6 +9491,7 @@
 
 <text id="homer2026112543" lang="grc">
 <head>
+  <title><num>19.</num>αὐτὰρ ὁ ἐν μεγάρῳ ὑπελείπετο δῖος Ὀδυσσεύς</title>
   <firstline>αὐτὰρ ὁ ἐν μεγάρῳ ὑπελείπετο δῖος Ὀδυσσεύς</firstline>
   <quality>kilde</quality>
 </head>
@@ -10090,6 +10107,7 @@
 
 <text id="homer2026112544" lang="grc">
 <head>
+  <title><num>20.</num>αὐτὰρ ὁ ἐν προδόμῳ εὐνάζετο δῖος Ὀδυσσεύς·</title>
   <firstline>αὐτὰρ ὁ ἐν προδόμῳ εὐνάζετο δῖος Ὀδυσσεύς·</firstline>
   <quality>kilde</quality>
 </head>
@@ -10495,6 +10513,7 @@
 
 <text id="homer2026112545" lang="grc">
 <head>
+  <title><num>21.</num>τῇ δʼ ἄρʼ ἐπὶ φρεσὶ θῆκε θεὰ γλαυκῶπις Ἀθήνη</title>
   <firstline>τῇ δʼ ἄρʼ ἐπὶ φρεσὶ θῆκε θεὰ γλαυκῶπις Ἀθήνη</firstline>
   <quality>kilde</quality>
 </head>
@@ -10940,6 +10959,7 @@
 
 <text id="homer2026112546" lang="grc">
 <head>
+  <title><num>22.</num>αὐτὰρ ὁ γυμνώθη ῥακέων πολύμητις Ὀδυσσεύς</title>
   <firstline>αὐτὰρ ὁ γυμνώθη ῥακέων πολύμητις Ὀδυσσεύς</firstline>
   <quality>kilde</quality>
 </head>
@@ -11452,6 +11472,7 @@
 
 <text id="homer2026112547" lang="grc">
 <head>
+  <title><num>23.</num>γρηῢς δʼ εἰς ὑπερῷʼ ἀνεβήσετο καγχαλόωσα</title>
   <firstline>γρηῢς δʼ εἰς ὑπερῷʼ ἀνεβήσετο καγχαλόωσα</firstline>
   <quality>kilde</quality>
 </head>
@@ -11835,6 +11856,7 @@
 
 <text id="homer2026112548" lang="grc">
 <head>
+  <title><num>24.</num>Ἑρμῆς δὲ ψυχὰς Κυλλήνιος ἐξεκαλεῖτο</title>
   <firstline>Ἑρμῆς δὲ ψυχὰς Κυλλήνιος ἐξεκαλεῖτο</firstline>
   <quality>kilde</quality>
 </head>
