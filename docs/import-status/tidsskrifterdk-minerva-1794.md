@@ -1,8 +1,8 @@
 # Minerva 1794 · kildekontrol af bind 35–38
 
-Importen i #2406 afventer et komplet fællestitelblad til bind 38
-(oktober–december 1794). Den nederste del af titelbladet i det
-digitaliserede Michigan-eksemplar er revet af.
+Importen i #2406 omfatter versbidrag fra bind 35–38. Brugeren har
+fravalgt det beskadigede fællestitelblad til bind 38
+(oktober–december 1794).
 
 ## Digitaliseringer
 
@@ -43,14 +43,9 @@ viser forskelligt indhold ved de gentagne sidetal:
 - Bind 38 har to forløb med sidetallene 128–147 i position 136–155 og
   156–175. I andet forløb ligger novemberhæftets åbning ved position 171.
 
-### Grundlag for genoptagelse
+### Importstatus
 
-Fremskaf en hel gengivelse af titelbladets for- og bagside fra et andet
-eksemplar af samme kvartalstryk. [Det Kgl. Biblioteks samlede katalogpost](https://soeg.kb.dk/permalink/45KBDK_KGL/1pioq0f/alma99122755202305763)
-er et udgangspunkt for opslaget. Kontrollér år, kvartal, titel og trykker
-mod det beskadigede originalblad før udskiftning.
-
-Før det beskadigede blad blev identificeret, var de fire billedindekser
-hentet, og kladder til tre versbidrag fra januar var læst mod de otte
-berørte sider. Disse arbejdsfiler er bevaret lokalt og indgår endnu ikke
-i korpus.
+Bind 35–38 har hver sin kilde og farvefacsimile. De tre bevarede
+kvartalstitelblade er behandlet og knyttet til årgangsværket. Tekstimporten
+føres i kladde-PR #2427. Fuldstændig gennemgang af hæfterne, transskription
+af de øvrige bidrag og afsluttende korrektur udestår.
