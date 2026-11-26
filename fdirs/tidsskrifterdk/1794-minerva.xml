@@ -18,26 +18,38 @@
   </pictures>
   <!-- University of Michigan, mdp.39015065142864. -->
   <source id="bd35" href="https://books.google.dk/books?id=vGQ3AAAAMAAJ" facsimile="1794-minerva-35" facsimile-pages-num="406">
-    <title>Minerva</title>
+    <title>Minerva, et Maanedsskrivt. Januar, Februar og Marts</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>35</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
   <!-- University of Michigan, mdp.39015065142849. To fysiske bladpar har trykte sidetal 357–358. -->
   <source id="bd36" href="https://books.google.dk/books?id=SWU3AAAAMAAJ" facsimile="1794-minerva-36" facsimile-pages-num="426">
-    <title>Minerva</title>
+    <title>Minerva, et Maanedsskrivt. April, May og Junii</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>36</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
   <!-- University of Michigan, mdp.39015065142831. -->
   <source id="bd37" href="https://books.google.dk/books?id=vmU3AAAAMAAJ" facsimile="1794-minerva-37" facsimile-pages-num="428">
-    <title>Minerva</title>
+    <title>Minerva, et Maanedsskrivt. Julii, August og September</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>37</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
   <!-- University of Michigan, mdp.39015065142823. To tekstforløb har trykte sidetal 128–147. På facsimileside 249 erstatter farvesiden 221 fra Nasjonalbiblioteket (URN:NBN:no-nb_digitidsskrift_2022072883170_001, canvas 0081) det beskadigede Michigan-billede. Fællestitelbladet udelades efter redaktionel aftale. -->
   <source id="bd38" href="https://books.google.dk/books?id=KmY3AAAAMAAJ" facsimile="1794-minerva-38" facsimile-pages-num="434">
-    <title>Minerva</title>
+    <title>Minerva, et Maanedsskrivt. October, November og December</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>38</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
 </workhead>
@@ -52,11 +64,11 @@
 <text id="lundbyehv2026112501" author="lundbyehv">
 <head>
   <title>Elegie</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Elegie,</w></line></part>
-    <part type="sub" align="center"><line>skreven i Ruffet af et strandet Skib.<footnote>Det er opreist som et Slags Hytte paa Liselund, et Gods paa Møens Klint.</footnote></line></part>
-  </titleblock>
+  <subtitle>skreven i Ruffet af et strandet Skib.<footnote>Det er opreist som et Slags Hytte paa Liselund, et Gods paa Møens Klint.</footnote></subtitle>
   <firstline>Bonden fra sin gyldne Dynge iiler</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd35" pages="41-44" facsimile-pages="49-52"/>
 </head>
 <body>
@@ -249,6 +261,7 @@ Forskiønnet skal jeg see hvert Træk og Mine,
   </titleblock>
   <firstline>Med Friheds-Aand i takfyldt Bryst</firstline>
   <source in="bd35" pages="95-96" facsimile-pages="103-104"/>
+  <keywords>christian7,frederik6</keywords>
 </head>
 <body>
 <poetry>
@@ -311,11 +324,11 @@ Velsigner Kongen og hans Søn!
 <text id="heibergpa2026112601" author="heibergpa" variant="heibergpa20170925235">
 <head>
   <title>Viise</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Viise.</w></line></part>
-    <part type="tune" align="center"><line>Mel. Fred med Kongerne paa Jorden.</line></part>
-  </titleblock>
+  <subtitle>Mel. Fred med Kongerne paa Jorden.</subtitle>
   <firstline>De der leege, dandse, drikke</firstline>
+  <notes>
+    <note editorial="true">Melodiangivelsen henviser til P.A. Heibergs <xref poem="heibergpa2026112301"/>.</note>
+  </notes>
   <source in="bd35" pages="159-161" facsimile-pages="167-169"/>
 </head>
 <body>
@@ -390,7 +403,7 @@ Naar de ynde Lys og Orden!
 </head>
 <content>
 
-<text id="thaarup2026112601" author="thaarup">
+<text id="thaarup2026112604" author="thaarup">
 <head>
   <title>Sang ved Kongehusets Ankomst i Skuespilhuset den 13. Marts 1794</title>
   <titleblock>
@@ -405,6 +418,7 @@ Naar de ynde Lys og Orden!
   </titleblock>
   <firstline>Velkommen, Kongeslægt! Dig byder</firstline>
   <source in="bd35" pages="309-310" facsimile-pages="317-318"/>
+  <keywords>christian7,frederik6</keywords>
 </head>
 <body>
 <poetry>
@@ -450,11 +464,11 @@ Saa synger høit hver Dannemand,
 <text id="buchholm2026112601" author="buchholm">
 <head>
   <title>Apollos Kald paa Jorden</title>
-  <titleblock>
-    <part type="main" align="center"><line>Apollos Kald paa Jorden,</line></part>
-    <part type="dedication" align="center"><line>helliget Hr. Professor Aasheim.</line></part>
-  </titleblock>
+  <subtitle>helliget Hr. Professor Aasheim.</subtitle>
   <firstline>Gud Jupiter fra Himmelborgen</firstline>
+  <notes>
+    <note editorial="true">Tilskrevet Magdalene Sophie Buchholm i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 41 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=56">↬</a>.</note>
+  </notes>
   <source in="bd36" pages="41-44" facsimile-pages="49-52"/>
 </head>
 <body>
@@ -544,7 +558,11 @@ En Søn, en Skjødesøn maa være.
 <head>
   <title>Ved min Ven, J. K. Høsts Opkomst af en farlig Sygdom</title>
   <firstline>O Gud, du gav, du gav mig ham tilbage</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd36" pages="116-117" facsimile-pages="124-125"/>
+  <keywords>hoestjk</keywords>
 </head>
 <body>
 <poetry>
@@ -605,6 +623,9 @@ Min svage Lov forkynde skal din Ære,
 <head>
   <title>I en Stambog</title>
   <firstline>Hvorfor dvæler jeg ved fordums Dage</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«, samme signatur som i <xref poem="lundbyehv2026112602"/>, der tilskrives Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd36" pages="245-246" facsimile-pages="253-254"/>
 </head>
 <body>
@@ -650,11 +671,11 @@ Elskte! ogsaa du er jo min Ven!
 <text id="lundbyehv2026112604" author="lundbyehv">
 <head>
   <title>Sang</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Sang,</w></line></part>
-    <part type="sub" align="center"><line>paa den 4 Febr. 1794.</line></part>
-  </titleblock>
+  <subtitle>paa den 4 Febr. 1794.</subtitle>
   <firstline>At værne for den Svages Fred</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd36" pages="343" facsimile-pages="351"/>
 </head>
 <body>
@@ -689,6 +710,9 @@ Dig vorde sneehvid Alders Pryd.
 <head>
   <title>Paa en Faders Fødselsdag</title>
   <firstline>Med Fryd, o elskte Fader! føle vi</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd36" pages="355-356" facsimile-pages="363-364"/>
 </head>
 <body>
@@ -736,15 +760,13 @@ Dit Minde dog med Fryd hos os skal boe!
 <text id="lundbyehv2026112608" author="lundbyehv">
 <head>
   <title>Elegie ved Schmettaus Grav</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line><w>Elegie</w></line>
-      <line>ved</line>
-      <line><w>Schmettaus Grav.</w></line>
-    </part>
-  </titleblock>
   <firstline>Hvo er hiin Yngling, som paa Codans Slætter</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+    <note editorial="true">Mottoet er fra Alexander Popes <xref poem="pope2026112602,6-12"/>, vers 6–12.</note>
+  </notes>
   <source in="bd37" pages="103-105" facsimile-pages="111-113"/>
+  <keywords>pope</keywords>
 </head>
 <body>
 <epigraph lang="en">
@@ -850,14 +872,11 @@ Men Patrioten kiender den, og yder
 <text id="lundbyehv2026112606" author="lundbyehv">
 <head>
   <title>Paa en fraværende Vens Fødselsdag</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line><w>Paa</w></line>
-      <line><w>en fraværende Vens Fødselsdag</w></line>
-    </part>
-    <part type="sub" align="center"><line>den 1. August 1794.</line></part>
-  </titleblock>
+  <subtitle>den 1. August 1794.</subtitle>
   <firstline>Vort Liv er rigt paa ædel Lyst</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd37" pages="232-233" facsimile-pages="240-241"/>
 </head>
 <body>
@@ -911,15 +930,15 @@ Og snart igien vi favne dig!
 
 <text id="lundbyehv2026112607" author="lundbyehv">
 <head>
-  <title>Sang til en hensovet Vens Erindring</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Sang</w></line></part>
-    <part type="sub" align="center">
-      <line>til</line>
-      <line>en hensovet Vens Erindring.</line>
-    </part>
-  </titleblock>
+  <title>Sang</title>
+  <subtitle>
+    <line>til</line>
+    <line>en hensovet Vens Erindring.</line>
+  </subtitle>
   <firstline>Naar Taaren haabløs triller ned</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
   <source in="bd37" pages="233-235" facsimile-pages="241-243"/>
 </head>
 <body>
@@ -982,16 +1001,14 @@ Den Ven os skiænker, vi begræd. —
 <text id="riber2026112601" author="riber" variant="riber2020032768">
 <head>
   <title>Kilden</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Kilden</w></line></part>
-    <part type="sub" align="center"><line>efter Grev F. L. Stolbergs fierde Jambe.</line></part>
-  </titleblock>
+  <subtitle>efter Grev F. L. Stolbergs fierde Jambe.</subtitle>
   <firstline>Som fordum i den folkerige Stad</firstline>
   <notes>
     <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2020012801"/>.</note>
     <note editorial="true">Mottoet er fra Horats’ <xref poem="horats2026102702,2-5"/>, vers 2–5.</note>
   </notes>
   <source in="bd37" pages="342-345" facsimile-pages="350-353"/>
+  <keywords>horats,stolbergf</keywords>
 </head>
 <body>
 <epigraph lang="la">
@@ -1115,14 +1132,18 @@ Høit brusende slaaer op mod sandig Bred.
 <content>
 <text id="lundbyehv2026112609" author="lundbyehv">
 <head>
-  <title>Sang den 8 October 1794</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Sang</w></line></part>
-    <part type="sub" align="center"><line>Den 8 October 1794.</line></part>
-    <part type="tune" align="center"><line><w>Mel.</w> For Norge, Kiæmpers Fødeland, &amp;c.</line></part>
-  </titleblock>
+  <title>Sang</title>
+  <subtitle>
+    <line>Den 8 October 1794.</line>
+    <line><w>Mel.</w> For Norge, Kiæmpers Fødeland, &amp;c.</line>
+  </subtitle>
   <firstline>Vi samles her for første Gang</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«, samme signatur som i <xref poem="lundbyehv2026112604"/>, der tilskrives Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+    <note editorial="true">Melodiangivelsen henviser til Johan Nordahl Bruns <xref poem="brun2026110301"/>.</note>
+  </notes>
   <source in="bd38" pages="68-69" facsimile-pages="76-77"/>
+  <keywords>brun</keywords>
 </head>
 <body>
 <poetry>
@@ -1187,19 +1208,17 @@ Vi end vor Glæde signe.
 <text id="anonym1700dk2026112603" author="anonym1700dk">
 <head>
   <title>Svend og Gothilde</title>
-  <titleblock>
-    <part type="main" align="center"><line>Svend og Gothilde.</line></part>
-    <part type="sub" align="center"><line><w>Romanse.</w></line></part>
-    <part type="sub" align="center">
-      <line>Efter en Episode i Digtet Hellebek, af Greve</line>
-      <line>F. L. Stolberg.</line>
-    </part>
-  </titleblock>
+  <subtitle>
+    <line><w>Romanse.</w></line>
+    <line>Efter en Episode i Digtet Hellebek, af Greve</line>
+    <line>F. L. Stolberg.</line>
+  </subtitle>
   <firstline>I landlige Hytte, af Bøge omskygget</firstline>
   <notes>
     <note editorial="true">Gendigtning af en episode i Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2018073101"/>.</note>
   </notes>
   <source in="bd38" pages="194-196" facsimile-pages="222-224"/>
+  <keywords>stolbergf</keywords>
 </head>
 <body>
 <poetry>
@@ -1306,14 +1325,6 @@ Og jorder dem der, hvor de dreve til Land.
 <text id="frankenau2026112601" variant="frankenau2019041259" author="frankenau">
 <head>
   <title>Ved Hds. K. H. Prindsesse Sophie Friderikes Død</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line>Ved</line>
-      <line>Hds. K. H. Prindsesse</line>
-      <line><w>Sophie Friderikes</w></line>
-      <line>Død.</line>
-    </part>
-  </titleblock>
   <firstline>Ei, fordi du fødtes en Fyrstinde</firstline>
   <source in="bd38" pages="214-216" facsimile-pages="242-244"/>
 </head>
@@ -1379,12 +1390,16 @@ Og velsigne Dig!
 </body>
 </text>
 
-<text id="rahbek2026112601" variant="rahbek2020010446" author="rahbek">
+<text id="rahbek2026112602" variant="rahbek2020010446" author="rahbek">
 <head>
   <title>Bions Klagesang over Adonis</title>
   <subtitle>Frit oversat.</subtitle>
   <firstline>For Adonis er min Klage</firstline>
+  <notes>
+    <note editorial="true">Fri oversættelse af Bion fra Smyrnas <xref type="translation" poem="bion2026112601"/>.</note>
+  </notes>
   <source in="bd38" pages="216-222" facsimile-pages="244-250"/>
+  <keywords>bion</keywords>
 </head>
 <body>
 <poetry>
@@ -1544,18 +1559,16 @@ For ham med dig vi jamre skal igien.
 </body>
 </text>
 
-<text id="zetlitz2026112601" author="zetlitz">
+<text id="zetlitz2026112602" author="zetlitz">
 <head>
   <title>Todes Skaal</title>
-  <titleblock>
-    <part type="main" align="center"><line><w>Todes Skaal</w></line></part>
-    <part type="sub" align="center"><line><w>en Drikkevise.</w></line></part>
-  </titleblock>
+  <subtitle><w>en Drikkevise.</w></subtitle>
   <firstline>Man fortæller os, at Tode</firstline>
   <notes>
     <note>Med dobbelt Fornøielse indrykker Minervas Udgiver ovenstaaende, da det saa uimodsigelig bevidner, at fleere af Prof. Todes og hans Camenes varmeste Beundrere dog om de bekiendte Bordviser tænke eenstemmig med den Dom, han nogle Steder har ladt til at anke paa. <right><w>K. L. R.</w></right></note>
   </notes>
   <source in="bd38" pages="222-224" facsimile-pages="250-252"/>
+  <keywords>tode</keywords>
 </head>
 <body>
 <poetry>
@@ -1630,8 +1643,10 @@ Gid han sang iblandt om Viin.
 <text id="lundbyehv2026112605" author="lundbyehv">
 <head>
   <title>Ungdommen</title>
-  <titleblock><part type="main" align="center"><line><w>Ungdommen.</w></line></part></titleblock>
   <firstline>Med Lynets Fart vor første Morgen svinder</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 264 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=279">↬</a>.</note>
+  </notes>
   <source in="bd38" pages="224-225" facsimile-pages="252-253"/>
 </head>
 <body>
@@ -1707,14 +1722,6 @@ I vor Moders trygge Skiød.
 <text id="knudsenhc2026112601" author="knudsenhc">
 <head>
   <title>Ved Hds. Kongel. Høihed Prindsesse Sophie Friderikes Grav</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line>Ved</line>
-      <line>Hds. Kongel. Høihed Prindsesse</line>
-      <line><w>Sophie Friderikes</w></line>
-      <line>Grav.</line>
-    </part>
-  </titleblock>
   <firstline>Faa og korte ere Livets Glæder</firstline>
   <source in="bd38" pages="227-228" facsimile-pages="255-256"/>
 </head>
@@ -1759,7 +1766,11 @@ Hisset om din herliggiorte Siel!
 <head>
   <title>Digteren E. Storms Minde</title>
   <firstline>Klag Norge! klag, o! Danmarks Sønner græde</firstline>
+  <notes>
+    <note editorial="true">Mottoet er fra Alexander Popes <xref poem="pope2026112601,75-78"/>, vers 75–78.</note>
+  </notes>
   <source in="bd38" pages="228-230" facsimile-pages="256-258"/>
+  <keywords>storm,pope</keywords>
 </head>
 <body>
 <epigraph lang="en">
@@ -1850,14 +1861,6 @@ At jeg var dydig, ædel Mand, som Du.
 <text id="thaarup2026112602" variant="thaarup2017011601" author="thaarup">
 <head>
   <title>Sørgesange ved Prindsesse Sophie Friderikkes Jordefærd</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line><w>Sørgesange</w></line>
-      <line>ved</line>
-      <line>Prindsesse Sophie Friderikkes</line>
-      <line>Jordefærd.</line>
-    </part>
-  </titleblock>
   <firstline>Som Skyggen svinder Livet bort</firstline>
   <source in="bd38" pages="344-347" facsimile-pages="372-375"/>
 </head>
@@ -2038,19 +2041,14 @@ Og ei Graad vort Øie meer skal væde.
 
 <text id="thaarup2026112603" variant="thaarup2026082037" author="thaarup">
 <head>
-  <title>Sørge-Cantate i Anledning af Arveprindsesse Sophia Friderikas Død</title>
-  <titleblock>
-    <part type="main" align="center">
-      <line><w>Sørge-Cantate</w></line>
-    </part>
-    <part type="sub" align="center">
-      <line>I Anledning af</line>
-      <line><w>Arveprindsesse</w></line>
-      <line><w>Sophia Friderikas</w></line>
-      <line><w>Død.</w></line>
-    </part>
-    <part type="sub" align="center"><line>Opført i det <w>Harmoniske Selskab</w> den 31 December 1794.</line></part>
-  </titleblock>
+  <title>Sørge-Cantate</title>
+  <subtitle>
+    <line>I Anledning af</line>
+    <line><w>Arveprindsesse</w></line>
+    <line><w>Sophia Friderikas</w></line>
+    <line><w>Død.</w></line>
+    <line>Opført i det <w>Harmoniske Selskab</w> den 31 December 1794.</line>
+  </subtitle>
   <firstline>Lindrer, Sukke, Kummers Smerte</firstline>
   <source in="bd38" pages="349-352" facsimile-pages="377-380"/>
 </head>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="bion" country="un" nationality="gr" lang="grc" type="poet">
+  <name>
+    <lastname>Bion fra Smyrna</lastname>
+  </name>
+  <period>
+    <born>
+      <date>?</date>
+    </born>
+    <dead>
+      <date>?</date>
+    </dead>
+  </period>
+  <identifiers>
+    <wikidata>Q463364</wikidata>
+    <gnd>118835874</gnd>
+  </identifiers>
+  <literary-periods>grc-hellenistisk-og-senantik-litteratur</literary-periods>
+  <!-- Oxford Classical Dictionary daterer hans virke til slutningen af 2. årh. f.Kr. med forbehold. https://academic.oup.com/edited-volume/61673/chapter-abstract/548508776 -->
+</person>
