@@ -47,5 +47,9 @@ viser forskelligt indhold ved de gentagne sidetal:
 
 Bind 35–38 har hver sin kilde og farvefacsimile. De tre bevarede
 kvartalstitelblade er behandlet og knyttet til årgangsværket. Tekstimporten
-føres i kladde-PR #2427. Fuldstændig gennemgang af hæfterne, transskription
+føres i kladde-PR #2427. Den foreløbige import omfatter 26 tekstposter. Fuldstændig gennemgang af hæfterne, transskription
 af de øvrige bidrag og afsluttende korrektur udestår.
+
+Hans Christian Knudsen er identificeret i Rasmus Nyerups *Almindeligt
+Register over Maanedsskriftet Minerva* (1801), under Knudsen. Registret
+henfører digtet ved Sophie Friderikes grav til skuespilleren. [Nyerups register](https://www.kb.dk/e-mat/dod/130020877678.pdf)
