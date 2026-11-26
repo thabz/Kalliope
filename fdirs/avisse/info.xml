@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="avisse" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Jean-Baptiste</firstname>
+    <lastname>Avisse</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1771</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1802</date>
+    </dead>
+  </period>
+  <literary-periods>fr-oplysningstid</literary-periods>
+</person>

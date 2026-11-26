@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="groendal" country="is" lang="is" type="poet">
+  <name>
+    <firstname>Benedikt Jónsson</firstname>
+    <lastname>Gröndal</lastname>
+  </name>
+  <period>
+    <born>
+      <!-- Árnastofnun anfører 1762. Fødselsåret er omstridt. -->
+      <date>1762</date>
+    </born>
+    <dead>
+      <date>1825</date>
+    </dead>
+  </period>
+  <literary-periods>is-oplysningstid</literary-periods>
+</person>
