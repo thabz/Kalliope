@@ -1670,6 +1670,11 @@ opdages. Rapporten køres ikke af `build-static`. Se `docs/person-editorial.md`.
 
 ## Udførlige titelpartier
 
+Brug kun `<titleblock>` til komplekse titelopsætninger med flere linjer og
+flere skriftstørrelser i tryk før 1800. Årstallet gælder det tryk, hvis
+titelopsætning gengives, også når den konkrete kilde er en nyere udgave.
+Brug de almindelige titelfelter til øvrige overskrifter.
+
 Et valgfrit `<titleblock>` efter `<title>` i `<head>` eller `<workhead>`
 erstatter visningen af titel, overtitel og undertitel på læsesiden.
 `<title>` bevarer den normaliserede titel til søgning og navigation.
