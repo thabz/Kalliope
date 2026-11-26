@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="seidelin" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Klaus Henrik</firstname>
+    <lastname>Seidelin</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1761-05-06</date>
+      <place>Gloslunde</place>
+    </born>
+    <dead>
+      <date>1811-04-05</date>
+      <place>Frederiksberg</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <biografisk-leksikon-lex-dk>K.H._Seidelin</biografisk-leksikon-lex-dk>
+    <danskforfatterleksikon-dk>SKHSeidelin</danskforfatterleksikon-dk>
+  </identifiers>
+</person>

@@ -39,6 +39,13 @@
     <alias>Adria</alias>
     <alias>Mare Adriatico</alias>
   </place>
+  <place id="aegean-sea">
+    <name>Det Ægæiske Hav</name>
+    <canonical-name>Aegean Sea</canonical-name>
+    <type>sea</type>
+    <alias>Ægæerhavet</alias>
+    <parent ref="mediterranean-sea"/>
+  </place>
   <place id="africa">
     <name>Afrika</name>
     <canonical-name>Africa</canonical-name>
@@ -513,6 +520,13 @@
     <alias>Karthago</alias>
     <alias>Carthago</alias>
   </place>
+  <place id="castalian-spring">
+    <name>Kastaliakilden</name>
+    <canonical-name>Castalian Spring</canonical-name>
+    <type>spring</type>
+    <alias>Castales Væld</alias>
+    <parent ref="greece"/>
+  </place>
   <place id="castel-gandolfo">
     <name>Castel Gandolfo</name>
     <wikidata>Q242105</wikidata>
@@ -532,10 +546,23 @@
     <type>region</type>
     <parent ref="spain"/>
   </place>
+  <place id="cayster">
+    <name>Kaystros</name>
+    <canonical-name>Küçük Menderes</canonical-name>
+    <type>river</type>
+    <alias>Caystrios</alias>
+    <parent ref="turkey"/>
+  </place>
   <place id="celle">
     <name>Celle</name>
     <wikidata>Q3933</wikidata>
     <type>city</type>
+  </place>
+  <place id="central-jutland">
+    <name>Midtjylland</name>
+    <type>region</type>
+    <parent ref="jutland"/>
+    <!-- Det centrale Jylland som geografisk område. Kilde: https://dcapub.au.dk/djfpublikation/djfpdf/DCArapport135.pdf -->
   </place>
   <place id="charlottenlund">
     <name>Charlottenlund</name>
@@ -584,6 +611,13 @@
     <type>monument/tomb</type>
     <alias>Tomba di Cicerone</alias>
     <parent ref="formia"/>
+  </place>
+  <place id="city-of-london">
+    <name>City of London</name>
+    <wikidata>Q23311</wikidata>
+    <type>district</type>
+    <alias>City</alias>
+    <parent ref="london"/>
   </place>
   <place id="civita-castellana">
     <name>Civita Castellana</name>
@@ -696,6 +730,12 @@
     <alias>Dovre</alias>
     <parent ref="norway"/>
   </place>
+  <place id="drachmanns-grav">
+    <name>Drachmanns grav</name>
+    <type>grave</type>
+    <parent ref="grenen-skagen"/>
+    <!-- Kilde: https://skulpturguide.frederikshavn.dk/skagen/40-drachmanns-grav -->
+  </place>
   <place id="drammen">
     <name>Drammen</name>
     <wikidata>Q26525</wikidata>
@@ -804,6 +844,11 @@
     <type>continent</type>
     <alias>Evropa</alias>
   </place>
+  <place id="eurotas">
+    <name>Eurotas</name>
+    <type>river</type>
+    <parent ref="greece"/>
+  </place>
   <place id="eutin">
     <name>Eutin</name>
     <wikidata>Q490445</wikidata>
@@ -853,6 +898,18 @@
     <wikidata>Q82670</wikidata>
     <type>city</type>
     <parent ref="italy"/>
+  </place>
+  <place id="finnmark">
+    <name>Finnmark</name>
+    <type>historical region</type>
+    <alias>Finmark</alias>
+    <parent ref="norway"/>
+  </place>
+  <place id="finsta">
+    <name>Finsta</name>
+    <type>village</type>
+    <alias>Finsta-By</alias>
+    <parent ref="sweden"/>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q234 -->
   <place id="flanders">
@@ -908,6 +965,16 @@
     <type>fort</type>
     <alias>Fort l’Ecluse</alias>
     <parent ref="france"/>
+  </place>
+  <place id="franangr">
+    <name>Franangerfjord</name>
+    <type>mythical fjord</type>
+  </place>
+  <place id="franangr-falls">
+    <name>Franangerfos</name>
+    <canonical-name>Franangrsfors</canonical-name>
+    <type>mythical waterfall</type>
+    <parent ref="franangr"/>
   </place>
   <place id="france">
     <name>Frankrig</name>
@@ -997,15 +1064,33 @@
     <alias>Fyris</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="fyris-river">
+    <name>Fyrisåen</name>
+    <canonical-name>Fyrisån</canonical-name>
+    <type>river</type>
+    <alias>Fyrisaaen</alias>
+    <parent ref="uppsala"/>
+  </place>
   <place id="galdhopiggen">
     <name>Galdhøpiggen</name>
     <wikidata>Q203942</wikidata>
     <type>mountain</type>
     <parent ref="jotunheimen"/>
   </place>
+  <place id="galilee">
+    <name>Galilæa</name>
+    <canonical-name>Galilee</canonical-name>
+    <type>historical region</type>
+  </place>
   <place id="ganges">
     <name>Ganges</name>
     <type>river</type>
+  </place>
+  <place id="gardariki">
+    <name>Gardarige</name>
+    <canonical-name>Garðaríki</canonical-name>
+    <type>historical region</type>
+    <alias>Garderik</alias>
   </place>
   <place id="garderhoj-fort">
     <name>Garderhøjfortet</name>
@@ -1157,6 +1242,12 @@
     <alias>Gøtheborg</alias>
     <parent ref="sweden"/>
   </place>
+  <place id="gotland">
+    <name>Gotland</name>
+    <type>island</type>
+    <alias>Gulland</alias>
+    <parent ref="sweden"/>
+  </place>
   <place id="gotthard-pass">
     <name>Sankt Gotthard-passet</name>
     <canonical-name>Gotthard Pass</canonical-name>
@@ -1225,6 +1316,15 @@
     <alias>Grækeland</alias>
     <alias>Grikland</alias>
     <parent ref="europe"/>
+  </place>
+  <place id="greek-underworld">
+    <name>Den græske underverden</name>
+    <canonical-name>Greek underworld</canonical-name>
+    <type>mythical place</type>
+    <alias>Hades</alias>
+    <alias>Erebos</alias>
+    <alias>Aidos Borg</alias>
+    <alias>Orkus</alias>
   </place>
   <place id="greenland">
     <name>Grønland</name>
@@ -1316,6 +1416,14 @@
     <alias>Gurre Slotsruin</alias>
     <parent ref="helsingor"/>
   </place>
+  <place id="gurre-lake">
+    <name>Gurre Sø</name>
+    <type>lake</type>
+    <alias>Gurresø</alias>
+    <alias>Gurresøen</alias>
+    <parent ref="helsingor"/>
+    <!-- Kilde: https://trap5.lex.dk/sogn/tikoeb-sogn-lynge-kronborg-herred/ -->
+  </place>
   <place id="haga-park">
     <name>Hagaparken</name>
     <canonical-name>Haga Park</canonical-name>
@@ -1369,6 +1477,20 @@
     <wikidata>Q1715</wikidata>
     <type>city</type>
   </place>
+  <place id="hansted-skov">
+    <name>Hansted Skov</name>
+    <type>forest</type>
+    <parent ref="jutland"/>
+    <!-- Hansted Skov ved Horsens. Kilde: https://lokalplaner.horsens.dk/439-boliger-banevej-hansted-horsens/formaal-indhold/beliggenhed-eksisterende-forhold/ -->
+  </place>
+  <place id="haraldsted">
+    <name>Haraldsted</name>
+    <type>village</type>
+    <alias>Harrestad</alias>
+    <alias>Harrested</alias>
+    <parent ref="zealand"/>
+    <!-- Kilde: https://trap5.lex.dk/sogn/haraldsted-sogn-ringsted-herred/ -->
+  </place>
   <place id="haran">
     <name>Harran</name>
     <wikidata>Q199547</wikidata>
@@ -1417,10 +1539,21 @@
     <alias>Helene Kilde</alias>
     <parent ref="tisvilde"/>
   </place>
+  <place id="helheim">
+    <name>Helheim</name>
+    <canonical-name>Hel</canonical-name>
+    <type>mythical place</type>
+  </place>
   <place id="heligoland">
     <name>Helgoland</name>
     <type>island</type>
     <alias>Hælgoland</alias>
+  </place>
+  <place id="hellebaek">
+    <name>Hellebæk</name>
+    <type>town</type>
+    <parent ref="zealand"/>
+    <!-- Kilde: https://trap.lex.dk/Helsing%C3%B8r_Kommune -->
   </place>
   <place id="helsingborg">
     <name>Helsingborg</name>
@@ -1572,6 +1705,12 @@
     <type>country</type>
     <alias>Italia</alias>
   </place>
+  <place id="ithaca">
+    <name>Ithaka</name>
+    <canonical-name>Ithaca</canonical-name>
+    <type>island</type>
+    <parent ref="greece"/>
+  </place>
   <place id="itri">
     <name>Itri</name>
     <wikidata>Q128092</wikidata>
@@ -1720,6 +1859,21 @@
     <wikidata>Q1707</wikidata>
     <type>city</type>
   </place>
+  <place id="kingdom-of-naples">
+    <name>Kongeriget Napoli</name>
+    <canonical-name>Kingdom of Naples</canonical-name>
+    <type>historical kingdom</type>
+    <alias>Neapels Land</alias>
+    <parent ref="italy"/>
+  </place>
+  <place id="kings-garden-copenhagen">
+    <name>Kongens Have</name>
+    <canonical-name>King's Garden</canonical-name>
+    <type>garden</type>
+    <alias>Rosenborghave</alias>
+    <parent ref="copenhagen"/>
+    <!-- Kilde: https://slks.dk/omraader/slotte-og-ejendomme/slotte-og-anlaeg/rosenborg-slot-og-kongens-have/ -->
+  </place>
   <place id="kinnekulle">
     <name>Kinnekulle</name>
     <wikidata>Q1355999</wikidata>
@@ -1786,6 +1940,12 @@
     <type>city</type>
     <alias>Corsøer</alias>
   </place>
+  <place id="krakow">
+    <name>Kraków</name>
+    <type>city</type>
+    <alias>Krakau</alias>
+    <parent ref="poland"/>
+  </place>
   <place id="krokkleiva">
     <name>Krokkleiva</name>
     <wikidata>Q11982200</wikidata>
@@ -1831,6 +1991,14 @@
     <alias>Leckø</alias>
     <alias>Läckö</alias>
     <parent ref="sweden"/>
+  </place>
+  <place id="laesoe">
+    <name>Læsø</name>
+    <type>island</type>
+    <alias>Hlésey</alias>
+    <alias>Hlesey</alias>
+    <parent ref="kattegat"/>
+    <!-- Kilde: https://trap5.lex.dk/herred/laesoe-hjoerring-amt/ -->
   </place>
   <place id="lake-albano">
     <name>Albanersøen</name>
@@ -1925,6 +2093,11 @@
     <type>manor</type>
     <parent ref="funen"/>
   </place>
+  <place id="leipzig">
+    <name>Leipzig</name>
+    <type>city</type>
+    <parent ref="germany"/>
+  </place>
   <place id="lejre">
     <name>Lejre</name>
     <wikidata>Q2689028</wikidata>
@@ -1932,11 +2105,23 @@
     <alias>Leire</alias>
     <parent ref="zealand"/>
   </place>
+  <place id="lethe">
+    <name>Lethe</name>
+    <type>mythical river</type>
+    <parent ref="greek-underworld"/>
+  </place>
   <place id="lille-grundet-hulvej">
     <name>Lille Grundet Hulvej</name>
     <type>street</type>
     <parent ref="vejle"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 28. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="limfjord">
+    <name>Limfjorden</name>
+    <canonical-name>Limfjord</canonical-name>
+    <type>fjord</type>
+    <alias>Liimfjorden</alias>
+    <parent ref="jutland"/>
   </place>
   <place id="little-belt">
     <name>Lillebælt</name>
@@ -1964,6 +2149,12 @@
     <wikidata>Q12325428</wikidata>
     <type>manor</type>
   </place>
+  <place id="lofoten">
+    <name>Lofoten</name>
+    <type>archipelago</type>
+    <alias>Lofod</alias>
+    <parent ref="norway"/>
+  </place>
   <place id="loire">
     <name>Loire</name>
     <type>river</type>
@@ -1987,6 +2178,12 @@
     <wikidata>Q84</wikidata>
     <type>city</type>
     <parent ref="england"/>
+  </place>
+  <place id="loreto">
+    <name>Loreto</name>
+    <type>town</type>
+    <alias>Loretto</alias>
+    <parent ref="italy"/>
   </place>
   <place id="lovstakken">
     <name>Løvstakken</name>
@@ -2014,6 +2211,11 @@
     <type>landscape</type>
     <alias>Lyneborg Hede</alias>
   </place>
+  <place id="luetzen">
+    <name>Lützen</name>
+    <type>town</type>
+    <parent ref="germany"/>
+  </place>
   <place id="lund">
     <name>Lund</name>
     <wikidata>Q2167</wikidata>
@@ -2025,6 +2227,18 @@
     <name>Lüneburg</name>
     <wikidata>Q3920</wikidata>
     <type>city</type>
+  </place>
+  <place id="lydia">
+    <name>Lydien</name>
+    <canonical-name>Lydia</canonical-name>
+    <type>historical region</type>
+    <alias>Mæonien</alias>
+    <parent ref="turkey"/>
+  </place>
+  <place id="maastricht">
+    <name>Maastricht</name>
+    <type>city</type>
+    <parent ref="netherlands"/>
   </place>
   <place id="madeleine-paris">
     <name>La Madeleine</name>
@@ -2086,6 +2300,20 @@
     <type>waterfall</type>
     <alias>Marmore-vandfaldet</alias>
     <parent ref="terni"/>
+  </place>
+  <place id="mecklenburg">
+    <name>Mecklenburg</name>
+    <type>historical region</type>
+    <alias>Meklenborgerland</alias>
+    <parent ref="germany"/>
+  </place>
+  <place id="medieval-st-albani-church">
+    <name>Middelalderens Sankt Albani Kirke</name>
+    <canonical-name>Medieval St Alban's Church</canonical-name>
+    <type>former church</type>
+    <alias>Sanct Albani</alias>
+    <parent ref="odense"/>
+    <!-- Kilde: https://museumodense.dk/udgivelser/skt-albani-kirke-og-kirkegaard/ -->
   </place>
   <place id="mediterranean-sea">
     <name>Middelhavet</name>
@@ -2172,6 +2400,12 @@
     <type>mountain</type>
     <alias>Albanerbjerg</alias>
   </place>
+  <place id="monte-somma">
+    <name>Monte Somma</name>
+    <type>mountain</type>
+    <alias>Somma</alias>
+    <parent ref="italy"/>
+  </place>
   <place id="montenegro">
     <name>Montenegro</name>
     <type>country</type>
@@ -2193,6 +2427,21 @@
     <type>country</type>
     <alias>Morocco</alias>
     <parent ref="africa"/>
+  </place>
+  <place id="mosken">
+    <name>Mosken</name>
+    <type>island</type>
+    <alias>Moskø</alias>
+    <parent ref="lofoten"/>
+    <!-- Kilde: https://snl.no/Moskstraumen -->
+  </place>
+  <place id="moskstraumen">
+    <name>Moskstraumen</name>
+    <type>tidal current</type>
+    <alias>Moskenesstraumen</alias>
+    <alias>Malstrømmen</alias>
+    <parent ref="lofoten"/>
+    <!-- Kilde: https://snl.no/Moskstraumen -->
   </place>
   <place id="moulin-rouge">
     <name>Moulin Rouge</name>
@@ -2249,6 +2498,13 @@
     <type>mountain</type>
     <alias>Thabor</alias>
   </place>
+  <place id="mount-tmolus">
+    <name>Tmolos</name>
+    <canonical-name>Bozdağ</canonical-name>
+    <type>mountain</type>
+    <alias>Timolos</alias>
+    <parent ref="lydia"/>
+  </place>
   <place id="munkebjerg">
     <name>Munkebjerg</name>
     <type>hill</type>
@@ -2288,6 +2544,12 @@
     <alias>Napoli</alias>
     <parent ref="italy"/>
   </place>
+  <place id="nastrond">
+    <name>Nåstrand</name>
+    <canonical-name>Náströnd</canonical-name>
+    <type>mythical place</type>
+    <alias>Nastrond</alias>
+  </place>
   <place id="nazareth">
     <name>Nazareth</name>
     <type>city</type>
@@ -2310,6 +2572,12 @@
     <name>Neuwied</name>
     <wikidata>Q3967</wikidata>
     <type>city</type>
+  </place>
+  <place id="neva">
+    <name>Neva</name>
+    <type>river</type>
+    <alias>Nevastrømmen</alias>
+    <parent ref="russia"/>
   </place>
   <place id="nidau">
     <name>Nidau</name>
@@ -2383,6 +2651,14 @@
     <alias>Notterdame</alias>
     <parent ref="paris"/>
   </place>
+  <place id="novgorod">
+    <name>Velikij Novgorod</name>
+    <canonical-name>Veliky Novgorod</canonical-name>
+    <type>city</type>
+    <alias>Holmgaard</alias>
+    <alias>Holmgård</alias>
+    <parent ref="russia"/>
+  </place>
   <place id="nyborg">
     <name>Nyborg</name>
     <wikidata>Q3530435</wikidata>
@@ -2401,6 +2677,13 @@
     <type>palace</type>
     <alias>Slottet</alias>
     <parent ref="odense"/>
+  </place>
+  <place id="opplandene">
+    <name>Oplandene</name>
+    <canonical-name>Opplandene</canonical-name>
+    <type>historical region</type>
+    <alias>Opland</alias>
+    <parent ref="norway"/>
   </place>
   <place id="oresund">
     <name>Øresund</name>
@@ -2465,6 +2748,14 @@
     <alias>Pæstum</alias>
     <parent ref="italy"/>
   </place>
+  <place id="palace-of-westminster">
+    <name>Westminsterpaladset</name>
+    <canonical-name>Palace of Westminster</canonical-name>
+    <wikidata>Q62408</wikidata>
+    <type>palace</type>
+    <alias>Houses of Parliament</alias>
+    <parent ref="london"/>
+  </place>
   <place id="palatine-hill">
     <name>Palatinerhøjen</name>
     <canonical-name>Palatine Hill</canonical-name>
@@ -2484,6 +2775,13 @@
     <name>Parma</name>
     <wikidata>Q2683</wikidata>
     <type>city</type>
+  </place>
+  <place id="parnassus">
+    <name>Parnassos</name>
+    <canonical-name>Mount Parnassus</canonical-name>
+    <type>mountain</type>
+    <alias>Parnas</alias>
+    <parent ref="greece"/>
   </place>
   <place id="pavia">
     <name>Pavia</name>
@@ -2652,11 +2950,42 @@
     <alias>Rheinfall</alias>
     <parent ref="schaffhausen"/>
   </place>
+  <place id="rhodes">
+    <name>Rhodos</name>
+    <canonical-name>Rhodes</canonical-name>
+    <type>island</type>
+    <parent ref="greece"/>
+  </place>
   <place id="rhone">
     <name>Rhône</name>
     <wikidata>Q602</wikidata>
     <type>river</type>
     <alias>Rhone</alias>
+  </place>
+  <place id="ribe">
+    <name>Ribe</name>
+    <type>city</type>
+    <parent ref="jutland"/>
+  </place>
+  <place id="riberhus">
+    <name>Riberhus</name>
+    <type>castle ruin</type>
+    <alias>Riberslot</alias>
+    <parent ref="ribe"/>
+  </place>
+  <place id="riddarholmen">
+    <name>Riddarholmen</name>
+    <type>island</type>
+    <alias>Ridderholmen</alias>
+    <parent ref="stockholm"/>
+  </place>
+  <place id="riddarholmen-church">
+    <name>Riddarholmskyrkan</name>
+    <canonical-name>Riddarholmen Church</canonical-name>
+    <type>church</type>
+    <alias>Ridderholmens Kirke</alias>
+    <alias>Ridderkirken</alias>
+    <parent ref="riddarholmen"/>
   </place>
   <place id="rigi">
     <name>Rigi</name>
@@ -2810,6 +3139,12 @@
     <type>meadow / historic site</type>
     <alias>Rütly</alias>
   </place>
+  <place id="rugen">
+    <name>Rügen</name>
+    <type>island</type>
+    <alias>Rygen</alias>
+    <parent ref="baltic-sea"/>
+  </place>
   <place id="rungsted">
     <name>Rungsted</name>
     <type>locality</type>
@@ -2895,12 +3230,24 @@
     <alias>St. Pietro Montorio</alias>
     <parent ref="rome"/>
   </place>
+  <place id="sankt-annae-plads">
+    <name>Sankt Annæ Plads</name>
+    <type>square</type>
+    <parent ref="copenhagen"/>
+    <!-- Kilde: https://tidsskrift.dk/fundogforskning/article/download/41221/46993/92518 -->
+  </place>
   <place id="santa-croce-florence">
     <name>Santa Croce i Firenze</name>
     <canonical-name>Basilica of Santa Croce</canonical-name>
     <wikidata>Q51177</wikidata>
     <type>basilica</type>
     <parent ref="florence"/>
+  </place>
+  <place id="saxony">
+    <name>Sachsen</name>
+    <canonical-name>Saxony</canonical-name>
+    <type>historical region</type>
+    <parent ref="germany"/>
   </place>
   <place id="scania">
     <name>Skåne</name>
@@ -2949,6 +3296,12 @@
     <wikidata>Q691758</wikidata>
     <type>island</type>
     <parent ref="lake-lauerz"/>
+  </place>
+  <place id="scotland">
+    <name>Skotland</name>
+    <canonical-name>Scotland</canonical-name>
+    <type>country</type>
+    <parent ref="great-britain"/>
   </place>
   <place id="sea-of-galilee">
     <name>Genesaret Sø</name>
@@ -3063,6 +3416,15 @@
     <type>park</type>
     <parent ref="jutland"/>
   </place>
+  <place id="skjern-aa">
+    <name>Skjern Å</name>
+    <wikidata>Q2025017</wikidata>
+    <type>river</type>
+    <alias>Skjern Aa</alias>
+    <alias>Skjernaa</alias>
+    <alias>Skjernåen</alias>
+    <parent ref="jutland"/>
+  </place>
   <place id="skokloster-castle">
     <name>Skokloster Slot</name>
     <canonical-name>Skokloster Castle</canonical-name>
@@ -3104,6 +3466,11 @@
     <name>Sofiero</name>
     <type>palace</type>
     <parent ref="helsingborg"/>
+  </place>
+  <place id="sogn">
+    <name>Sogn</name>
+    <type>historical region</type>
+    <parent ref="norway"/>
   </place>
   <place id="sognefjord">
     <name>Sognefjorden</name>
@@ -3171,6 +3538,12 @@
     <type>country</type>
     <alias>España</alias>
   </place>
+  <place id="sparta">
+    <name>Sparta</name>
+    <type>city</type>
+    <alias>Lakedaimon</alias>
+    <parent ref="greece"/>
+  </place>
   <place id="spoleto">
     <name>Spoleto</name>
     <wikidata>Q20571</wikidata>
@@ -3184,6 +3557,13 @@
     <type>cathedral</type>
     <alias>Sanct Knuds Kirken</alias>
     <parent ref="odense"/>
+  </place>
+  <place id="st-clare-roskilde">
+    <name>Sankt Clara Kloster i Roskilde</name>
+    <type>former monastery</type>
+    <alias>Sancta Clara Kloster</alias>
+    <parent ref="roskilde"/>
+    <!-- Kilde: https://romu.dk/georadarafslorerkloster/ -->
   </place>
   <place id="st-marks-campanile">
     <name>Markuskirkens Campanile</name>
@@ -3201,6 +3581,13 @@
     <alias>Marcuspladsen</alias>
     <alias>Piazza San Marco</alias>
     <parent ref="venice"/>
+  </place>
+  <place id="st-pauls-cathedral-london">
+    <name>St. Paul’s Cathedral</name>
+    <wikidata>Q173882</wikidata>
+    <type>cathedral</type>
+    <alias>St. Paul</alias>
+    <parent ref="city-of-london"/>
   </place>
   <place id="st-peters-basilica">
     <name>Peterskirken</name>
@@ -3228,6 +3615,11 @@
     <type>cliff</type>
     <alias>Stevens Klint</alias>
     <parent ref="zealand"/>
+  </place>
+  <place id="stiklestad">
+    <name>Stiklestad</name>
+    <type>village</type>
+    <parent ref="norway"/>
   </place>
   <place id="stjerneborg">
     <name>Stjerneborg</name>
@@ -3330,6 +3722,12 @@
     <alias>Tangier</alias>
     <parent ref="morocco"/>
   </place>
+  <place id="taygetus">
+    <name>Taygetos</name>
+    <canonical-name>Taygetus</canonical-name>
+    <type>mountain range</type>
+    <parent ref="greece"/>
+  </place>
   <place id="terni">
     <name>Terni</name>
     <wikidata>Q8621</wikidata>
@@ -3341,6 +3739,19 @@
     <type>town/comune</type>
     <alias>Teracina</alias>
     <parent ref="italy"/>
+  </place>
+  <place id="thames">
+    <name>Themsen</name>
+    <canonical-name>Thames</canonical-name>
+    <wikidata>Q19686</wikidata>
+    <type>river</type>
+    <parent ref="england"/>
+  </place>
+  <place id="thessaly">
+    <name>Thessalien</name>
+    <canonical-name>Thessaly</canonical-name>
+    <type>region</type>
+    <parent ref="greece"/>
   </place>
   <place id="third-christiansborg-palace">
     <name>Det tredje Christiansborg</name>
@@ -3434,6 +3845,13 @@
     <parent ref="florence"/>
     <!-- Kilde: Musei Civici Fiorentini, https://bigliettimusei.comune.fi.it/31_torre-di-arnolfo/. -->
   </place>
+  <place id="tower-of-london">
+    <name>Tower of London</name>
+    <wikidata>Q62378</wikidata>
+    <type>fortress</type>
+    <alias>Tower</alias>
+    <parent ref="london"/>
+  </place>
   <place id="trekroner-fort">
     <name>Trekroner Søfort</name>
     <canonical-name>Trekroner Fort</canonical-name>
@@ -3469,6 +3887,13 @@
     <type>city</type>
     <alias>Trolhättan</alias>
     <parent ref="sweden"/>
+  </place>
+  <place id="trondheim">
+    <name>Trondheim</name>
+    <type>city</type>
+    <alias>Trondhjem</alias>
+    <alias>Nidaros</alias>
+    <parent ref="norway"/>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q43 -->
   <place id="turkey">
@@ -3519,6 +3944,12 @@
     <canonical-name>Canton of Uri</canonical-name>
     <wikidata>Q12404</wikidata>
     <type>canton</type>
+  </place>
+  <place id="utgard">
+    <name>Udgård</name>
+    <canonical-name>Útgarðr</canonical-name>
+    <type>mythical place</type>
+    <alias>Utgard</alias>
   </place>
   <!-- Kilde: https://www.wikidata.org/wiki/Q177860 -->
   <place id="valhalla">
@@ -3647,6 +4078,11 @@
     <type>city</type>
     <parent ref="italy"/>
   </place>
+  <place id="vestervig">
+    <name>Vestervig</name>
+    <type>town</type>
+    <parent ref="jutland"/>
+  </place>
   <place id="vesuvius">
     <name>Vesuv</name>
     <canonical-name>Mount Vesuvius</canonical-name>
@@ -3691,6 +4127,18 @@
     <type>region</type>
     <alias>Vierland</alias>
     <parent ref="hamburg"/>
+  </place>
+  <place id="vieux-craonne">
+    <name>Vieux Craonne</name>
+    <type>ruins</type>
+    <parent ref="france"/>
+    <!-- Det historiske landsbysted. Kilde: https://pop.culture.gouv.fr/notice/merimee/PA02000048 -->
+  </place>
+  <place id="viken-historical">
+    <name>Viken</name>
+    <type>historical region</type>
+    <alias>Vigen</alias>
+    <parent ref="norway"/>
   </place>
   <place id="vikersund">
     <name>Vikersund</name>
@@ -3738,11 +4186,34 @@
     <type>town</type>
     <parent ref="sweden"/>
   </place>
+  <place id="vistula">
+    <name>Wisła</name>
+    <canonical-name>Vistula</canonical-name>
+    <type>river</type>
+    <alias>Weichsel</alias>
+    <alias>Weichselfloden</alias>
+    <parent ref="poland"/>
+  </place>
   <place id="volturno">
     <name>Volturno</name>
     <wikidata>Q572191</wikidata>
     <type>river</type>
     <parent ref="italy"/>
+  </place>
+  <place id="vordingborg-castle">
+    <name>Vordingborg Slot</name>
+    <canonical-name>Vordingborg Castle</canonical-name>
+    <type>castle ruin</type>
+    <alias>Vordingborg Borg</alias>
+    <parent ref="zealand"/>
+    <!-- Kilde: https://museerne.dk/pages/danmarks-borgcenter-gaasetaarnet -->
+  </place>
+  <place id="vossavangen">
+    <name>Vossavangen</name>
+    <type>town</type>
+    <alias>Vossevangen</alias>
+    <parent ref="norway"/>
+    <!-- Kilde: https://snl.no/Vossavangen -->
   </place>
   <place id="vreta-abbey">
     <name>Vreta kloster</name>
@@ -3757,6 +4228,24 @@
     <type>locality</type>
     <parent ref="denmark"/>
     <!-- Stednavn i Andreas Dolleris: Sonetter, 1904, s. 55. Kilde: https://www.kb.dk/e-mat/dod/115308051539-color.pdf -->
+  </place>
+  <place id="vroending">
+    <name>Vrønding</name>
+    <type>village</type>
+    <parent ref="jutland"/>
+    <!-- Vrønding i Tamdrup Sogn ved Horsens. Kilde: https://kommuneplan2021.horsens.dk/tillaeg/2021-12-tematillaeg-for-landsbyerne/opslagsvaerk-over-fremtidige-muligheder-i-landsbyerne/vroending/ -->
+  </place>
+  <place id="wendland-baltic">
+    <name>Venden</name>
+    <type>historical region</type>
+    <alias>Det vendiske land</alias>
+    <parent ref="baltic-sea"/>
+  </place>
+  <place id="westminster-abbey">
+    <name>Westminster Abbey</name>
+    <wikidata>Q5933</wikidata>
+    <type>abbey</type>
+    <parent ref="london"/>
   </place>
   <place id="wetterhorn">
     <name>Wetterhorn</name>

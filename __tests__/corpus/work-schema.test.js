@@ -64,6 +64,12 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
+  it('accepts documented strikethrough markup', () => {
+    expect(() => validate(poetryWork(
+      'Vers med <strike>tekstkritisk forkastet</strike> ord.',
+    ))).not.toThrow();
+  });
+
   it('rejects obsolete overline markup', () => {
     expect(() => validate(poetryWork('h<o>a</o>ns'))).toThrow();
   });
@@ -82,6 +88,7 @@ describe('kalliopework RELAX NG schema', () => {
       '<source><author id="digter" realname="Navn">Pseudonym</author><title>Digte</title></source>',
       '<source><title>Antologi</title><editor type="editor">A</editor><editor>B</editor></source>',
       '<source><author id="digter">Navn</author><editor>A</editor><title>Digte</title><editor id="anden">B</editor><translator>C</translator><edition>2. udgave</edition><volume>1</volume><place>København</place><publisher>Forlag</publisher><printer>Trykkeri</printer><year>[1900]</year><identifiers><kb-alma>123</kb-alma></identifiers></source>',
+      '<source><title>Nytaarsgave</title><editor>Simon Poulsen</editor><place>Kiøbenhavn</place><publisher>Simon Poulsen</publisher><printer>P. Poulsen</printer><year>1802</year><publication-year>1801</publication-year></source>',
       '<source>Fritekst <i>titel</i>.</source>', '<source pages="1-2"/>',
     ]) expect(() => validate(sourceWork(source))).not.toThrow();
   });
@@ -100,6 +107,8 @@ describe('kalliopework RELAX NG schema', () => {
     '<source><title>Digte</title><editor type="edition">A</editor></source>',
     '<source><title>Digte</title><editor type="">A</editor></source>',
     '<source><title>Digte</title><translator type="editor">A</translator></source>',
+    '<source><title>Digte</title><publication-year/></source>',
+    '<source><title>Digte</title><publication-year>1801</publication-year><publication-year>1802</publication-year></source>',
   ])('rejects malformed bibliographic sources: %s', source => {
     expect(() => validate(sourceWork(source))).toThrow();
   });

@@ -162,3 +162,15 @@ describe('titeludtrækning', () => {
     expect(countHeadingFootnotes(doc.documentElement)).toBe(2);
   });
 });
+
+it('counts and preserves overtitling footnotes alongside title and subtitle notes', () => {
+  const doc = new DOMParser().parseFromString(
+    '<head><suptitle>Scarabæen<footnote>Overtitelnote.</footnote></suptitle>' +
+    '<title>I<footnote>Titelnote.</footnote></title>' +
+    '<subtitle><line>Til<footnote>Undertitelnote.</footnote></line><line>N. N.</line></subtitle></head>',
+    'text/xml',
+  );
+  expect(countHeadingFootnotes(doc.documentElement)).toBe(3);
+  expect(extractSubtitles(doc.documentElement, 'suptitle', {})[0][0][0])
+    .toContain('<footnote>Overtitelnote.</footnote>');
+});

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="almstrup" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Christian Jess</firstname>
+    <lastname>Almstrup</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1773-12-29</date>
+      <place>Roholte</place>
+    </born>
+    <dead>
+      <date>1830-08-12</date>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>

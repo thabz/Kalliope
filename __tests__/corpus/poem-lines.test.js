@@ -713,3 +713,48 @@ describe('Check workfiles', () => {
     ).toEqual([expect.objectContaining({ textId: 'child' })]);
   });
 });
+
+describe('heading capitalization', () => {
+  const findings = xml => titleMetadataIssues(xml).filter(issue => issue.rule === 'uppercase-heading');
+
+  it.each(['title', 'subtitle', 'suptitle', 'indextitle', 'toctitle', 'linktitle', 'breadcrumbtitle'])(
+    'rejects typographic capitals in %s despite a lowercase footnote', tag => {
+      expect(findings(`<text id="caps"><head><${tag}><num>II.</num>HØST<footnote>En note.</footnote></${tag}></head></text>`))
+        .toEqual([expect.objectContaining({ rule: 'uppercase-heading', textId: 'caps' })]);
+    },
+  );
+
+  it.each(['DU', 'DIG', 'MIG'])('does not mistake the word %s for a numeral with an alphabetic suffix', title => {
+    expect(findings(`<text><head><title>${title}</title></head></text>`)).toHaveLength(1);
+  });
+
+  it('checks each subtitle line, workheads and sections', () => {
+    const xml = '<kalliopework><workhead><title>VÆRK</title></workhead><workbody>' +
+      '<section id="part"><head><title>FRA VEJENE</title></head><content>' +
+      '<text id="verse"><head><subtitle><line>TIL</line><line>Johannes V. Jensen</line></subtitle></head></text>' +
+      '</content></section></workbody></kalliopework>';
+    expect(findings(xml).map(issue => issue.textId)).toEqual(['workhead', 'part', 'verse']);
+  });
+
+  it.each(['Høst', 'Én Sang', 'A. O.', 'D. 103', 'VIII', 'II.', '123'])(
+    'allows mixed case, initials and numbering: %s', title => {
+      expect(findings(`<text><head><title>${title}</title></head></text>`)).toEqual([]);
+    },
+  );
+
+  it('ignores source titles, title-page transcription, title blocks and ordinary verse', () => {
+    expect(findings('<kalliopework><workhead><title>Værk</title><source><title>KILDE</title></source>' +
+      '<pictures><picture><transcription>TITELBLAD</transcription></picture></pictures>' +
+      '<titleblock><part><line>TITELBLOK</line></part></titleblock></workhead>' +
+      '<workbody><text><head><title>Sang<footnote>FODNOTE</footnote></title></head>' +
+      '<body><poetry>VERS</poetry></body></text></workbody></kalliopework>')).toEqual([]);
+  });
+
+  it('keeps exceptions local to the owning text, section or workhead', () => {
+    expect(findings('<kalliopework ignore-tests="uppercase-heading"><workhead><title>NASA</title></workhead>' +
+      '<workbody><section ignore-tests="uppercase-heading"><head><title>NASA</title></head><content>' +
+      '<text id="child"><head><title>HØST</title></head></text>' +
+      '<text id="excepted" ignore-tests="uppercase-heading"><head><title>NASA</title></head></text>' +
+      '</content></section></workbody></kalliopework>').map(issue => issue.textId)).toEqual(['child']);
+  });
+});

@@ -189,6 +189,7 @@ describe('text page breadcrumbs', () => {
     for (const heading of ['Omtalt i', 'Gendigtning']) {
       const section = sections.find(section => section.includes(heading));
       expect(section).toContain('»De to Røvere«</a>, i: ');
+      expect(section.replace(/<[^>]*>/g, '')).toContain('Adam Oehlenschläger: »De to Røvere«');
       expect(section.match(/<a\b/g)).toHaveLength(1);
       expect(section).toContain('s. 353–356.');
       expect(section).toContain('bd. 24, Kjøbenhavn: Forlaget, 1861, s. 353–356.');

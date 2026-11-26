@@ -141,7 +141,9 @@ export const resolveSourceFacsimileForText = ({
 };
 
 const personRoles = { author: 'authors', editor: 'editors', translator: 'translators' };
-const bibliographyFields = ['title', 'edition', 'volume', 'place', 'publisher', 'printer', 'year'];
+const bibliographyFields = ['title', 'edition', 'volume', 'place', 'publisher', 'printer', 'year', 'publication-year'];
+const pureYearPattern = /^\d+$/;
+const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 export const escapeXml = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;')
   .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -189,6 +191,13 @@ export const parseSourceBibliography = sourceNode => {
       throw new Error(`Ukendt bibliografisk kildefelt <${child.tagName}>.`);
     }
   }
+  const publicationYear = bibliography['publication-year'];
+  if (publicationYear != null && pureYearPattern.test(publicationYear) === false) {
+    throw new Error('Bibliografisk <publication-year> skal være et rent årstal uden parenteser.');
+  }
+  if (publicationYear != null && bibliography.year != null && pureYearPattern.test(bibliography.year) === false) {
+    throw new Error('Bibliografisk <year> skal være et rent årstal, når <publication-year> angives.');
+  }
   const hasFreeText = Array.from(sourceNode.childNodes).some(child =>
     (child.nodeType === 3 || child.nodeType === 4) && child.textContent.trim().length > 0
   );
@@ -215,7 +224,14 @@ export const formatSourceBibliography = (bibliography, poets = new Map(), {
       : `${rendered.slice(0, -1).join(', ')} og ${rendered.at(-1)}`;
   };
   const authors = bibliography.authors ?? [];
-  const title = `<i>${escapeXml(bibliography.title)}</i>`;
+  const publicationYear = bibliography['publication-year'];
+  const year = bibliography.year;
+  const titleHasYear = year != null &&
+    new RegExp(`(?:^|\\D)${escapeRegExp(year)}(?:$|\\D)`).test(bibliography.title);
+  const displayTitle = publicationYear != null && year != null && titleHasYear === false
+    ? `${bibliography.title}${/[.!?]$/.test(bibliography.title) ? ' ' : '. '}${year}`
+    : bibliography.title;
+  const title = `<i>${escapeXml(displayTitle)}</i>`;
   const linkedTitle = workId == null ? title : `<a work="${escapeXml(workId)}">${title}</a>`;
   const parts = [`${authors.length === 0 ? '' : `${names(authors)}: `}${linkedTitle}`];
   const editorGroups = new Map();
@@ -242,7 +258,11 @@ export const formatSourceBibliography = (bibliography, poets = new Map(), {
   } else if (imprint != null) {
     parts.push(imprint);
   }
-  if (bibliography.year != null) parts.push(escapeXml(bibliography.year));
+  if (publicationYear != null) {
+    parts.push(`[${escapeXml(publicationYear)}]`);
+  } else if (year != null) {
+    parts.push(escapeXml(year));
+  }
   return `${parts.join(', ').replace(/\.$/, '')}.`;
 };
 

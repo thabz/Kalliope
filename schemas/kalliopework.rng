@@ -79,6 +79,7 @@
         <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="strike"/>
         <ref name="num"/>
         <ref name="nonum"/>
         <ref name="resetnum"/>
@@ -214,7 +215,7 @@
       <text/>
       <ref name="b"/><ref name="i"/><ref name="w"/><ref name="sc"/>
       <ref name="span"/><ref name="small"/><ref name="s"/>
-      <ref name="sup"/><ref name="sub"/><ref name="u"/>
+      <ref name="sup"/><ref name="sub"/><ref name="u"/><ref name="strike"/>
       <ref name="br"/><ref name="pb"/><ref name="note"/><ref name="footnote"/>
     </choice>
   </define>
@@ -312,6 +313,7 @@
       <optional><element name="publisher"><ref name="sourceBibliographicText"/></element></optional>
       <optional><element name="printer"><ref name="sourceBibliographicText"/></element></optional>
       <optional><element name="year"><ref name="sourceBibliographicText"/></element></optional>
+      <optional><element name="publication-year"><ref name="sourceBibliographicText"/></element></optional>
     </interleave>
   </define>
 
@@ -660,6 +662,7 @@
         <ref name="sub"/>
         <ref name="s"/>
         <ref name="u"/>
+        <ref name="strike"/>
         <ref name="num"/>
         <ref name="resetnum"/>
         <ref name="margin"/>
@@ -706,6 +709,7 @@
   <define name="sup"><element name="sup"><ref name="simpleElement"/></element></define>
   <define name="s"><element name="s"><ref name="simpleElement"/></element></define>
   <define name="u"><element name="u"><ref name="simpleElement"/></element></define>
+  <define name="strike"><element name="strike"><ref name="inlineWithoutLineMarkers"/></element></define>
   <define name="num"><element name="num"><ref name="simpleElement"/></element></define>
   <define name="nonum">
     <element name="nonum">
