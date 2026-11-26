@@ -129,7 +129,9 @@ Begynd med en visuel gennemgang af facsimilet uden at stole på den eksisterende
 XML-opdeling. Registrer:
 
 - tekstens begyndelse og slutning
-- titler, undertitler og deloverskrifter
+- titler, undertitler og deloverskrifter (brug standardtitelfelterne.
+  `<titleblock>` er forbeholdt komplekse titelopsætninger med flere linjer og
+  flere skriftstørrelser i tryk før 1800)
 - strofegrænser og ekstra blanklinjer
 - nummererede og unummererede strofer
 - skillelinjer, signaturer og andre ikke-verslinjer
