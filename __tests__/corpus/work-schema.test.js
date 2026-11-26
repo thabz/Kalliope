@@ -64,6 +64,12 @@ describe('kalliopework RELAX NG schema', () => {
     ))).not.toThrow();
   });
 
+  it('accepts documented strikethrough markup', () => {
+    expect(() => validate(poetryWork(
+      'Vers med <strike>tekstkritisk forkastet</strike> ord.',
+    ))).not.toThrow();
+  });
+
   it('rejects obsolete overline markup', () => {
     expect(() => validate(poetryWork('h<o>a</o>ns'))).toThrow();
   });
