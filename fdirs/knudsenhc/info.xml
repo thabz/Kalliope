@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="knudsenhc" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Hans Christian</firstname>
+    <lastname>Knudsen</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1763-03-04</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1816-03-04</date>
+      <place>København</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+  <identifiers>
+    <wikidata>Q12315273</wikidata>
+    <biografisk-leksikon-lex-dk>H.C._Knudsen</biografisk-leksikon-lex-dk>
+  </identifiers>
+</person>

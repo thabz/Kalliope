@@ -28,6 +28,9 @@
     <picture src="keats2001070710-1.jpg">John William Waterhouse (<year>1849</year>-<year>1917</year>): »Lamia« (<year>1905</year>).</picture>
     <picture src="keats2001070710-2.jpg">John William Waterhouse (<year>1849</year>-<year>1917</year>): »Lamia« (<year>1909</year>).</picture>
   </pictures>
+  <places>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -2329,6 +2332,9 @@ Double-lived in regions new!
 <head>
   <title>Lines on the Mermaid Tavern</title>
   <firstline>Souls of poets dead and gone</firstline>
+  <places>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>

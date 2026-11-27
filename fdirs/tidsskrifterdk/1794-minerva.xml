@@ -4,26 +4,2182 @@
   <title>Minerva</title>
   <breadcrumbtitle>1794</breadcrumbtitle>
   <year>1794</year>
-  <source id="bd35" href="https://uforbederlig.dk/tidsskrifter/Minerva-9aarg.htm">
-    <title>Minerva</title>
+  <pagebreaks count-by="facsimile"/>
+  <pictures>
+    <picture src="1794-minerva-35-p1.jpg" type="titlepage" primary="true">
+      <transcription>Minerva / et / Maanedsskrivt // Januar, Februar og Marts / 1794. // Kiøbenhavn / Trykt hos Johan Frederik Schultz, / Hofs og Universitets-Bogtrykker</transcription>
+    </picture>
+    <picture src="1794-minerva-36-p1.jpg" type="titlepage">
+      <transcription>Minerva / et / Maanedsskrivt // April, May og Junii / 1794. // Kiøbenhavn / Trykt hos Johan Frederik Schultz, / Hofs og Universitets-Bogtrykker</transcription>
+    </picture>
+    <picture src="1794-minerva-37-p1.jpg" type="titlepage">
+      <transcription>Minerva / et / Maanedsskrivt // Julii, August og September / 1794. // Kiøbenhavn / Trykt hos Johan Frederik Schultz, / Hofs og Universitets-Bogtrykker</transcription>
+    </picture>
+  </pictures>
+  <!-- University of Michigan, mdp.39015065142864. -->
+  <source id="bd35" href="https://books.google.dk/books?id=vGQ3AAAAMAAJ" facsimile="1794-minerva-35" facsimile-pages-num="406">
+    <title>Minerva, et Maanedsskrivt. Januar, Februar og Marts</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>35</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
-  <source id="bd36" href="https://uforbederlig.dk/tidsskrifter/Minerva-9aarg.htm">
-    <title>Minerva</title>
+  <!-- University of Michigan, mdp.39015065142849. To fysiske bladpar har trykte sidetal 357–358. -->
+  <source id="bd36" href="https://books.google.dk/books?id=SWU3AAAAMAAJ" facsimile="1794-minerva-36" facsimile-pages-num="426">
+    <title>Minerva, et Maanedsskrivt. April, May og Junii</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>36</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
-  <source id="bd37" href="https://uforbederlig.dk/tidsskrifter/Minerva-10aarg.htm">
-    <title>Minerva</title>
+  <!-- University of Michigan, mdp.39015065142831. -->
+  <source id="bd37" href="https://books.google.dk/books?id=vmU3AAAAMAAJ" facsimile="1794-minerva-37" facsimile-pages-num="428">
+    <title>Minerva, et Maanedsskrivt. Julii, August og September</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>37</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
-  <source id="bd38" href="https://uforbederlig.dk/tidsskrifter/Minerva-10aarg.htm">
-    <title>Minerva</title>
+  <!-- University of Michigan, mdp.39015065142823. To tekstforløb har trykte sidetal 128–147. På facsimileside 249 erstatter farvesiden 221 fra Nasjonalbiblioteket (URN:NBN:no-nb_digitidsskrift_2022072883170_001, canvas 0081) det beskadigede Michigan-billede. Fællestitelbladet udelades efter redaktionel aftale. -->
+  <source id="bd38" href="https://books.google.dk/books?id=KmY3AAAAMAAJ" facsimile="1794-minerva-38" facsimile-pages-num="434">
+    <title>Minerva, et Maanedsskrivt. October, November og December</title>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>38</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1794</year>
   </source>
 </workhead>
-<workbody/>
+<workbody>
+
+<section level="1">
+<head>
+  <title>Januar 1794</title>
+</head>
+<content>
+
+<text id="lundbyehv2026112501" author="lundbyehv">
+<head>
+  <title>Elegie</title>
+  <subtitle>skreven i Ruffet af et strandet Skib.<footnote>Det er opreist som et Slags Hytte paa Liselund, et Gods paa Møens Klint.</footnote></subtitle>
+  <firstline>Bonden fra sin gyldne Dynge iiler</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd35" pages="41-44" facsimile-pages="49-52"/>
+  <places>
+    <place ref="liselund" relation="writtenAt" primary="true"/>
+    <place ref="mons-klint" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<poetry>
+Bonden fra sin gyldne Dynge iiler,
+    Vestens Purpur farver Høien rød;
+Dalende Naturens Konge smiiler,
+    Før den skiuler sig i Havets Skiød.
+
+<pb n="42" facs="049.jpg"/>Nattens Lys i matte Glands nu skrider
+    Over Skovens mørke Toppe hen;
+Sagtelig sølvfarvet Bølge glider,
+    Bredden favnende modtager den.
+
+Eene lyder Philomeles Klage,
+    Kalder mig til Tungsinds stille Fryd;
+Skiøn, som Mindet om hensvundne Dage,
+    Er, o Veemods Fugl, din Klagelyd! —
+
+Nattens Skygge mig til Sorg indvier,
+    Glemte Brødres Suk fremkalder den —
+Vel, at efter Stormen Havet tier,
+    Efter Livet er der Ro igien;
+
+Thi, om Evighed med Haabets Straaler
+    Lyste ei for Dødeliges Fied,
+Mon den Deel, os Skiæbnen her tilmaaler
+    Var en Gave, værd at glædes ved? —
+
+Ei kan Rigdom varig Fryd bereede,
+    Døden er mod Høiheds Stemme døv;
+Sukkende den mørke Vei vi træde,
+    Banens Maal er kun en Haandfuld Støv.
+
+Snart hans glemte Liig i Graven hviler,
+    Hvo nu Millioners Hersker er,
+Liig et Glimt vort Nu forbi os iiler,
+    Alt en Kiæde af Forandring er. —
+
+Ogsaa du, o Hytte, som mig skiuler,
+    Vidner om den Lov, Naturen bød;
+Tause slumre nu i Havets Huler
+    De, som fordum tyede til dit Skiød.
+
+<pb n="43" facs="050.jpg"/>Ei de skue meer de trygge Havne,
+    Ei til Lyst dem vinker fierne Strand,
+Ei skal Ungdoms Venner dem omfavne,
+    Naar de mødes i det elskte Land.
+
+Ei skal Mands og Faders Navne lyde,
+    Skiønt henrivende i stille Hiem,
+Dine Under, o Natur, udgyde
+    Ingen Glæder meere over dem. —
+
+Dog, den hviler trygt, som Graven dækker,
+    Fred omsvæver Dødens stille Bo;
+Ei til Møie Dagens Lys ham vækker,
+    Jordens Sorger mørkne ei hans Ro. —
+
+Hytte, som er Vidne til min Klage,
+    I dit Skiød maaskee en Ædel sad,
+Og i Nydelsen af Fremtids Dage
+    Her maaskee om Kraft til Dyden bad.
+
+Her maaskee var tidt en Ynglings Sæde,
+    Der, som <w>Tell</w>, med høi og dristig Aand
+Engang under Fødder skulde træde
+    Sine Brødres tunge Slavebaand.
+
+Eller med <w>rousseauisk</w> ædel Varme
+    Tale Dyds og Sandheds Sag, som han,
+Eller kaste sig i Dødens Arme
+    Faldende, som <w>Hvidtfeld</w>, for sit Land.
+
+Glemsel skiuler dem, og deres Evner
+    Uudviklede med dem bortsvandt;
+Jorden intet Minde om dem levner,
+    Ingen Vandrer deres Navne fandt.
+
+<pb n="44" facs="051.jpg"/>Fri, paa Morgenrødens Straaler iile
+    Deres Aander nu blandt Verd'ner frem;
+De i Jorden ubekiendte hvile,
+    Men den Evige erindrer dem.
+
+Ingen Lidelser dem meere vente,
+    Ingen Angers Taare flyde skal,
+Lysets Glands omstraaler den Fuldendte,
+    Evig Glæde er hans høie Kald. — —
+
+Aftenstiernens hulde Straale blinker
+    Giennem Eegens løvbeklædte Top,
+Fredens Stierne! venlig du mig vinker,
+    Snart til dig min Aand sig svinger op.
+
+Der skal jeg, o Fader, dig omfavne,
+    Som jeg, — ak, saa ofte — her begræd;
+Der jeg lærer, Livets Trængsler gavne;
+    Thi de føre til Lyksalighed.
+
+Der skal Barndoms Venner mig modtage,
+    Der skal ingen Kummer nage mig,
+Der i Jubler taber sig min Klage,
+    Der — der skal jeg være lykkelig. — —
+
+Naar da engang, Elskte, Nattens Vinde
+    Hyle om den Grav, jeg lagdes i,
+O, da lader ingen Taare rinde;
+    Eders Ven er lykkelig og fri!
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112501" author="anonym1700dk" ignore-tests="comma-comma">
+<head>
+  <title>Ved en inderlig elsket og uforglemmelig Kones Grav</title>
+  <firstline>De svandt, de svandt, de lykkelige Dage</firstline>
+  <source in="bd35" pages="78-79" facsimile-pages="86-87"/>
+</head>
+<body>
+<poetry>
+De svandt, de svandt, de lykkelige Dage,
+    Med Lynets Fart i min Sophies Arm;
+De svandt, og lod mig eensom her tilbage,
+    Nedtrykt af Græmmelse og Længslers Harm.
+
+Omsonst jeg fylder Dalen med min Klage,
+    Omsonst gientager Ekko mine Raab;
+Hun borte er, hun kommer ei tilbage,
+    Og borte er min Rolighed og Haab.
+
+Med Veemod mindes jeg min fordums Glæde,
+    Som hendes Ord og Blik fremtryllede;
+Hun smilende mig bød paa Roser træde,
+    Og Sorgen veeg, som mig indhyllede.
+
+Erkiendtlig følte jeg min Fryd og Lykke,
+    Og offrede min Tak til Himmelen;
+Jeg bad: o Gud! lad Døden ei bortrykke
+    I mange Aar Sophie fra sin Ven!
+
+Men han, hvis Viisdom styrer i det Høie,
+    Og deeler Støvets Kaar med Faderhaand;
+Bød Døden lukke hendes blide Øie.
+    Snart hævedes vort lykkelige Baand.
+
+<pb n="79" facs="086.jpg"/>Hun segnede i Ungdoms favre Dage,
+    Et Offer for de Pant, hun bragte mig;
+Jeg ei den faderlige Fryd skal smage,
+    Ved Moders Haand at see dem danne sig.
+
+Tungt derfor trille Taarer paa de Kinder,
+    Hvor Glæden og Tilfredshed tronet har;
+Alt er mig tomt, og alt mit Hierte minder
+    Hvad jeg er nu, og hvad jeg fordum var.
+
+En Trøst forsøder dog mit Hiertes Kummer,
+    En Trøst, som ingen Skiæbne røver mig,
+Ei evig, o Sophie! er Din Slummer,
+    Ei evig Gravens Nat skal skiule Dig.
+
+I Glædens Egne, hvor de Ædle lønnes,
+    Hvor heele Jordens Harm har tabt sin Braad,
+Hvor Klagen ei fra knuste Bryst udstønnes;
+    Men alt er idel Fryd, ukiendt med Graad,
+
+Der skal jeg, Elskte! favne Dig og Dine,
+    For aldrig meer med dem at tabe Dig;
+Forskiønnet skal jeg see hvert Træk og Mine,
+    Som fordum her saa tidt fortrylled' mig.
+
+<nonum><right><span lang="el">γ.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="thoroup2026112501" author="thoroup">
+<head>
+  <title>Sang i Anledning af Kongens og Kronprindsens Fødselsdage 1794</title>
+  <titleblock>
+    <part type="main" align="center" size="large"><line><w>Sang</w></line></part>
+    <part type="sub" align="center">
+      <line>i Anledning</line>
+      <line>af</line>
+      <line>Kongens og Kronprindsens</line>
+      <line>Fødselsdage</line>
+      <line>1794.</line>
+    </part>
+  </titleblock>
+  <firstline>Med Friheds-Aand i takfyldt Bryst</firstline>
+  <source in="bd35" pages="95-96" facsimile-pages="103-104"/>
+  <keywords>christian7,frederik6</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<poetry>
+Med Friheds-Aand i takfyldt Bryst
+Vi samles, Konge, Dig til Ære!
+Og den, dit Held er ikke Lyst,
+Kan ingen trofast Landsmand være,
+Vi haane Smigers Ord og Svig,
+Af Hiertets Drift vi signe dig.
+
+Vi skue ei din Majestæt,
+Som Trælle, frygtende dens Vælde;
+At huld du hegner hver Mands Ret,
+Det vil vor Kiærlighed giengielde:
+Din Godhed meer end Thronens Pragt,
+Dig giver uindskrænket Magt.
+
+Hav, Konge, Tak, at Sønne-Blod
+I fremmed Kamp du ei vil spilde. —
+Hvis nogen Voldsmand faaer det Mod
+Med Strid vor Kyst at giæste vilde,
+Da griber Nordboe Spyd og Skiold,
+Og diærv giendriver Vold med Vold.
+
+<pb n="96" facs="103.jpg"/>Forbandet den, som Mistroes Sæd
+Vil mellem Folk og Konge sprede!
+Han røver hver en Siel sin Fred,
+Fra Folket Held, fra Kongen Glæde.
+Hans Løn den blive som hans Id,
+Et skiændigt Navn og Angers Bid.
+
+Du Nordens Ven, o Kongesøn!
+Saa værdig Kiærlighed og Hæder:
+Din Skiæbnes Lod den vorde skiøn,
+Og liig det Held, din Daad udbreder:
+Og Sandhed, som du har saa kier,
+Skal vidne om dit sieldne Værd.
+
+Det Folk, hvis uforkrænkte Troe
+Mod gode Fyrster aldrig svigter,
+Paa denne Dag opfylder froe
+Den kiereste blant alle Pligter. —
+O Himle! hører Nordens Bøn,
+Velsigner Kongen og hans Søn!
+
+<nonum><right>Thoroup.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Februar 1794</title>
+</head>
+<content>
+
+<text id="heibergpa2026112601" author="heibergpa" variant="heibergpa20170925235">
+<head>
+  <title>Viise</title>
+  <subtitle>Mel. Fred med Kongerne paa Jorden.</subtitle>
+  <firstline>De der leege, dandse, drikke</firstline>
+  <notes>
+    <note editorial="true">Melodiangivelsen henviser til P.A. Heibergs <xref poem="heibergpa2026112301"/>.</note>
+  </notes>
+  <source in="bd35" pages="159-161" facsimile-pages="167-169"/>
+</head>
+<body>
+<poetry>
+De der leege, dandse, drikke,
+    Bør jo nyde Roelighed?
+Disse Folk forstyrre ikke
+    Kongers eller Staters Fred.
+Selv hvad Vending Leegen tager,
+Man med Rette altid jager
+    De ubudne Giæster bort.
+
+Ofte gives der Patroner,
+    Som af ingen Love veed;
+Som med Titler og Kanoner
+    Trodse Velanstændighed.
+Hvo i fremmed Leeg sig blander,
+Hvad om de fik brodne Pander,
+    Var det ikke vel fortient?
+
+<pb n="160" facs="167.jpg"/>Frankrig med den brudte Lænke
+    Leegte stundom gyseligt;
+Strax Europas Fyrster tænke:
+    ”Leege med er vores Pligt.“
+Store Riger vil de vinde,
+Men for sildig skal de finde,
+    At det var kuns Tab, de vandt.
+
+Wiens og Berlins-Monarker
+    Sagde: vi vil leege med.
+Krigens gamle Patriarker
+    Jage de nu flux afsted.
+Men de fandt ei Rosbachs Harer;
+Wurmsers Flugt og Brunsvigs Farer
+    Lærte dem en anden Leeg.
+
+Britten, som vil eene raade
+    Over Havets vaade Skiød,
+Ruster ud en Kiøbmands-Flaade,
+    Som med Guld Toulon beskiød.
+Ak, at han sit Guld ei sparte!
+Slet han vandt, og slet forsvarte;
+    Leve de, der tog Toulon!
+
+Frankrig! Jordens Læremester!
+    Viis dig i din Prøve kiek!
+Jag kuns de ubudne Giæster
+    Fra din Leeg for Friehed væk!
+Søg saa Eenighed og Orden!
+Lev i Fred med heele Jorden!
+    Og dit Navn blier evig stort.
+
+<pb n="161" facs="168.jpg"/>Leve hver, som ædelt tænker!
+    Leve Velanstændighed!
+Leve hver, som hader Lænker!
+    Leve hver, som elsker Fred!
+Leve Kongerne paa Jorden,
+Naar de ynde Lys og Orden!
+    Leve Christian og hans Søn!
+
+<nonum><right>P. A. Heiberg.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Marts 1794</title>
+</head>
+<content>
+
+<text id="thaarup2026112604" author="thaarup">
+<head>
+  <title>Sang ved Kongehusets Ankomst i Skuespilhuset den 13. Marts 1794</title>
+  <titleblock>
+    <part type="main" align="center" size="large"><line><w>Sang</w></line></part>
+    <part type="sub" align="center">
+      <line>ved</line>
+      <line><w>Kongehusets Ankomst</w></line>
+      <line>i</line>
+      <line><w>Skuespilhuset</w></line>
+      <line><w>den 13. Marts 1794.</w></line>
+    </part>
+  </titleblock>
+  <firstline>Velkommen, Kongeslægt! Dig byder</firstline>
+  <source in="bd35" pages="309-310" facsimile-pages="317-318"/>
+  <keywords>christian7,frederik6</keywords>
+  <places>
+    <place ref="royal-danish-theatre" relation="setting" primary="true"/>
+  </places>
+</head>
+<body>
+<poetry>
+Velkommen, Kongeslægt! Dig byder
+    Et troefast Folk fra tvangfrit Bryst.
+Du veed, det Jubelraab, som lyder,
+    Det er et sønligt Hiertes Røst:
+Med Dig det sørger, fryder sig,
+    O Kongeslægt! det elsker Dig.
+
+Kun Retfærds Haand kan værne Trone,
+    Og Borgerfriehed staae ved den.
+Hvor centner-tung, hvor fæl den Krone,
+    Naar Folket ei er Fyrstens Ven?
+Men der, hvor Folk har Konge kiær,
+    Som Vaarens Krands ham Kronen er.
+
+Naar Voldsmand avindsyg ham truer,
+    Sig væbner Mand og er ham troe:
+<pb n="310" facs="317.jpg"/>Han Døden seer i vilde Luer,
+    Og døer som Mand, og er ham troe;
+Thi Pligt mod ham for frie Mand,
+    Er Troeskab mod sit Fædreland.
+
+Du Borgerkiærlighed, vor Ære!
+    Du Tronens Værn og Folkets Tarv!
+Naar <w>Frederik</w> skal Kronen bære,
+    Du vorde skal Hans Fædre-Arv:
+Saa synger høit hver Dannemand,
+    Saa synger <w>Fredriks</w> Fædreland!
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>April 1794</title>
+</head>
+<content>
+<text id="buchholm2026112601" author="buchholm">
+<head>
+  <title>Apollos Kald paa Jorden</title>
+  <subtitle>helliget Hr. Professor Aasheim.</subtitle>
+  <firstline>Gud Jupiter fra Himmelborgen</firstline>
+  <notes>
+    <note editorial="true">Tilskrevet Magdalene Sophie Buchholm i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 41 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=56">↬</a>.</note>
+  </notes>
+  <source in="bd36" pages="41-44" facsimile-pages="49-52"/>
+  <places>
+    <place ref="mount-olympus" relation="setting" primary="true"/>
+  </places>
+</head>
+<body>
+<poetry>
+Gud Jupiter fra Himmelborgen
+Til sin forviiste Søn nedsaae;
+Hvad han til at fordrive Sorgen
+Og Savnet af Olymp fandt paa,
+Hans Majestæt gad gierne viide.
+Saa haardt Apollos Dom end klang,
+Godt Jupiter ham kunde liide;
+Men Retten have maae sin Gang.
+<pb n="42" facs="049.jpg"/>Han saae Apoll paa Lyren spille,
+Og Skov og Field at høre til;
+Og længe Tordneren sad stille,
+Og lytted' selv paa dette Spil.
+Vi see, hans Komme er til Nytte
+For Jorden, sagde Jupiter;
+Thi mange til hans Sang skal lytte,
+Og skal faae Sang og Lyre kiær.
+Den skal fremlokke Dydens Glæder,
+Og ofte standse Dydens Graad;
+Fremskynde Ynglingen til Hæder,
+Og varme Oldingen til Daad.
+Thi ville Vi: al Jordens Riger
+Skal denne Kunst forplantes til;
+Fremdeles vi ni kloge Piger
+Apoll til Hielp beskikke vil.
+Saa taler han; men Øiet hæfter
+Sig atter paa den elskte Søn;
+Han seer ham bruge Guddoms Kræfter
+Og nyde Guddoms bedste Løn.
+Han seer ham Urter at berede
+Og lægge Lægedom i dem;
+At lindre, styrke, hielpe, redde
+De Lidende, hvor han kom frem.
+Han seer de frelste Skarer stimle
+Omkring Apoll med Jubelskrig;
+O, han har meer end alle Himle!
+Saa sukked' Jupiter ved sig:
+Da han giør slige Underværker
+Og spreder saadan Lykke ud,
+<pb n="43" facs="050.jpg"/>Han gaaer i mine Eenemærker;
+Thi lad ham atter blive Gud.
+Men naar Vi ham tilbage flytte
+Op til Olympens Lediggang,
+Hvo skal som Læge Jorden nytte,
+Og hvo skal glæde den ved Sang.
+O! dog Apoll! en kiærlig Fader
+Ei længer kan undvære dig!
+Kom i hans Favn! Paa Jorden lader
+Du dine Fodspor efter dig;
+Og den, hvis ædle ømme Hierte
+Forstaae og skatte kan den Lyst,
+At ende Nød, og lindre Smerte,
+Og gyde Haab i Brødres Bryst,
+Skal have disse Fied for Øie,
+Og troe og trøstig i dem gaae,
+Og ei fortryde paa den Møie,
+Det koster, denne Vei at gaae.
+Og ofte, ofte skal han finde
+Sin Møies og sit Hiertes Løn,
+See Frelstes glade Taarer rinde
+Og signes, signes som min Søn. —
+Saa talte han, hvis Ord ei svige;
+Høilovet være han derfor;
+Vi have og Apollo's Lige,
+Hans ægte Sønner i vort Nord.
+
+---
+
+Min Ven Apollo ikke var;
+Jeg lidet gunstig ham har funden,
+<pb n="44" facs="051.jpg"/>Saa tidt jeg mig fordristet har,
+At nærme mig til Laurbærlunden.
+Men om han var mig tifold gram,
+Jeg dog ærbødig ham vil ære. —
+Ven! Jeg har føelt, at De af ham
+En Søn, en Skjødesøn maa være.
+
+<nonum><right>M. S. Buchholm.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="lundbyehv2026112602" author="lundbyehv">
+<head>
+  <title>Ved min Ven, J. K. Høsts Opkomst af en farlig Sygdom</title>
+  <firstline>O Gud, du gav, du gav mig ham tilbage</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd36" pages="116-117" facsimile-pages="124-125"/>
+  <keywords>hoestjk</keywords>
+</head>
+<body>
+<poetry>
+O Gud, du gav, du gav mig ham tilbage,
+      Jeg har min Ven igien!
+Du bød, da svandt de rædselfulde Dage
+      For Glædens Jubler hen!
+
+Alt sused' Dødens frygtelige Vinge,
+      Med Skræk den rusted' sig;
+Og ingen Jordens Glæde kunde bringe
+      Et Glimt af Trøst for mig.
+
+Mit matte Øie stirred' paa hans Leie,
+      Men ingen Taare randt,
+Med bittert Smiil jeg dadled' dine Veie;
+      Og Mismod Tungen bandt.
+
+Da saae du til min Smerte, kiærlig sendte
+      Du Livets Engel ned,
+Da straalte Haab, som hine Rædsler endte;
+      Jeg glemte, hvad jeg leed.
+
+Med Glædens Tak mit taareblændte Øie!
+      Til Himlen hæved' sig:
+”Tilgiv mig,“ bad jeg, Fader i det Høie!
+      ”Kan Støv fornærme dig?“
+
+”Modtag min Tak!“ — Snart skal jeg atter hvile
+      Ved Venskabs ømme Bryst,
+<pb n="117" facs="124.jpg"/>Snart dobbelt skiønt skal Livet ad mig smile
+      Og vække mig til Lyst.
+
+O, naar med kiærlig Trøst han da forjager
+      Hver Uroe af min Siel,
+Naar Venskabs fulde Salighed jeg smager,
+      Og føler glad mit Held;
+
+Da skal min Fryd, min Lovsang Offer bære,
+      Du Herlige, til dig!
+Min svage Lov forkynde skal din Ære,
+      Min Fryd skal takke dig!
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Maj 1794</title>
+</head>
+<content>
+<text id="lundbyehv2026112603" author="lundbyehv">
+<head>
+  <title>I en Stambog</title>
+  <firstline>Hvorfor dvæler jeg ved fordums Dage</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«, samme signatur som i <xref poem="lundbyehv2026112602"/>, der tilskrives Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd36" pages="245-246" facsimile-pages="253-254"/>
+</head>
+<body>
+<poetry>
+Hvorfor dvæler jeg ved fordums Dage,
+Hvi er deres Minde kiært for mig?
+Hvorfor, naar jeg kalder dem tilbage,
+Er jeg stedse glad og lykkelig? —
+O, det er en Vandring blandt de Grave,
+Hvor min Barndoms Venner hvile nu,
+I de Dødes fredelige Have
+Kommer jeg den svundne Fryd ihu,
+Der de lykkelige Tider male
+Sig med Længslens Farver for min Aand,
+Skiønne Drømmerier mig husvale,
+Lægende hvert Saar af Skiæbnens Haand. —
+<pb n="246" facs="253.jpg"/>Naar da Venskabs stille Taare flyder
+Ved fuldendte Brødres Hvilested,
+Naar med Krandse jeg de Grave pryder,
+Hvor de tabte Elskte lagdes ned,
+O, da tænker jeg med salig Glæde:
+Ogsaa Venner skal erindre dig!
+Ogsaa Taarer skal din Gravhøi væde,
+Naar du hviler, og er lykkelig! —
+Naar da Lidelser ei meer mig saare,
+Naar til bedre Liv jeg kaldes hen,
+Sæt et Kors og fæld en stille Taare,
+Elskte! ogsaa du er jo min Ven!
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Juni 1794</title>
+</head>
+<content>
+<text id="lundbyehv2026112604" author="lundbyehv">
+<head>
+  <title>Sang</title>
+  <subtitle>paa den 4 Febr. 1794.</subtitle>
+  <firstline>At værne for den Svages Fred</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd36" pages="343" facsimile-pages="351"/>
+</head>
+<body>
+<poetry>
+At værne for den Svages Fred,
+At hemme Svig og Tvedragt dæmpe,
+For Uskylds Ret og Sikkerhed
+Med ædelt Mod og Held at kiempe,
+Den Id er skiøn, er Hæder værd. —
+Held Dig, o Ven! Din Daad det er.
+
+    Som Brødres Talsmand, Sandheds Tolk,
+Du Retfærds Guddom kiær er vorden,
+Og kiær for Dannerrigets Folk,
+Fordi Du fremmer Ret og Orden,
+Og varm for Kald og Pligt og Gavn
+Fortiener ædel Borgers Navn.
+
+    Og stedse skal vi nævne Dig
+Med Lyst blandt Retfærds bedste Sønner.
+Din skiønne Daad Dig rigelig
+Med Retsinds Fryd og Hæder lønner.
+Det Navn, Du vandt ved Borger-Dyd,
+Dig vorde sneehvid Alders Pryd.
+
+<nonum><right><span lang="el">λη.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="lundbyehv2026112610" author="lundbyehv">
+<head>
+  <title>Paa en Faders Fødselsdag</title>
+  <firstline>Med Fryd, o elskte Fader! føle vi</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd36" pages="355-356" facsimile-pages="363-364"/>
+</head>
+<body>
+<poetry>
+Med Fryd, o elskte Fader! føle vi
+Erkiendtlige vor skiønne Lod i Livet,
+At paa dets end ukiendte trange Stie
+En kierlig Leder os i Dig blev givet,
+Hvis Ømhed vogted' vore svage Fied
+Igiennem Barndoms værgeløse Dage,
+Hvis Haab det er, engang det Held at smage,
+At see os værdige til Dydens Fred.
+
+    At naae til dette Maal, saa ædel stort,
+O Fader! did skal al vor Higen stunde;
+<pb n="356" facs="363.jpg"/>Derfra skal ingen Tant os drage bort,
+Os ingen Daarskabs Vink forlede kunde!
+Kun, evig gode Forsyn! at Du os
+Vort Hiertes tillidsfulde Bøn tilsteder,
+At han, vor Fader og vor bedste Leder,
+Paa Banen did maae længe følge os!
+
+    O, sikkert hører Himlen denne Bøn —
+Algodhed smiler mildt, naar Barnet beder.
+O, Vel os! da vor Lod blier stedse skiøn,
+Da vorde vi Din Lykke og Din Hæder.
+Og naar da seent Dig vinker Gravens Roe,
+Din sidste Stund er end ei tom paa Glæde;
+Og skal vor Graad endskiøndt Din Aske væde,
+Dit Minde dog med Fryd hos os skal boe!
+
+<nonum><right><span lang="el">λη.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Juli 1794</title>
+</head>
+<content>
+<text id="lundbyehv2026112608" author="lundbyehv">
+<head>
+  <title>Elegie ved Schmettaus Grav</title>
+  <firstline>Hvo er hiin Yngling, som paa Codans Slætter</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+    <note editorial="true">Mottoet er fra Alexander Popes <xref poem="pope2026112602,6-12"/>, vers 6–12.</note>
+  </notes>
+  <source in="bd37" pages="103-105" facsimile-pages="111-113"/>
+  <keywords>pope</keywords>
+  <places>
+    <place ref="denmark" relation="setting" primary="true"/>
+    <place ref="lejre" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<epigraph lang="en">
+Just to his Prince, and to his Country true,
+Fill'd with the sense of Age, the fire of Youth,
+A Scorn of Wrang'ing, yet a Zeal for Truth
+A generous Faith from superstition free,
+A Love of Peace and Hate to Tyranny:
+Such this Man was, who now from Earth remov'd
+At length enjoys the Liberty, he lov'd.
+
+<right><sc>Pope.</sc></right>
+</epigraph>
+<poetry>
+”Hvo er hiin Yngling, som paa Codans Slætter
+      ”Opreiser Bautasteen?
+”Og som, i det han Eegekrandsen flætter,
+      ”Med Graad bedugger den?
+
+”Hvo er du? siig det, hvilken Ædel hviler
+      ”I denne stille Grav?
+”Hvi er dit Øie, selv i det du smiler,
+      ”Mørkt som et stormfuldt Hav?“
+
+Saa spørger jeg, og Danmarks Engel svarer:
+      ”Min <w>Schmettau</w> er ei meer!
+”Han, uforandret tro i alle Farer,
+      ”Hans Grav er det du seer!
+
+”Skal ingen sorgfuld Sang fra Harpen lyde,
+      ”Og tier Teut og Dan?
+”Vil ingen Skald den dybe Taushed bryde,
+      ”Som hersker i mit Land?“
+
+<pb n="104" facs="111.jpg"/>Jeg taug, af Kummer bankede mit Hierte;
+      I Øiet Taaren hang,
+Jeg sørgede, at ingen Gud mig lærte
+      At styre Harpens Klang.
+
+”O, sukked' jeg, ”skal da den Ædles Minde
+      ”Udslettes blandt hans Folk?
+”Skal Fremtids Slægter ei den Gravhøi finde,
+      ”Der giemmer Sandheds Tolk?
+
+”Tag Luthen,“ var hans Svar med venligt Øie;
+      ”Og er din Sang end svag,
+”Med Lyst skal Dan dog Øret til den bøie
+      ”Og smile Velbehag,
+
+”Og sørgende skal Folket sig foreene
+      ”I Klager ved hans Savn,
+”Og under Sukke her blandt disse Steene
+      ”Gientage <w>Schmettaus</w> Navn!“
+
+Da greb jeg Luthen, Dannemandens Varme
+      Opflammede mit Bryst;
+Jeg sang, og Nid forstummede af Harme;
+      Jeg følte Guders Lyst. —
+
+O hør det, Dan, o hør den unge Sanger,
+      Thi <w>Schmettau</w> synger han,
+Den Viise, som foruden Frygt og Anger
+      Indgik i Aanders Land!
+
+O Fædreland, lad dine Taarer flyde,
+      Thi <w>Schmettau</w> er ei meer;
+Hans Grav skal intet Marmorminde pryde,
+      Er Marmor Dyden værd?
+
+<pb n="105" facs="112.jpg"/>Men Taaren er en Perle i <w>Hans</w> Øie,
+      Som tæller Slægterne,
+Med evig Glands den straaler i det Høie
+      For Danmarks Herlige.
+
+Nordboen hid sin unge Søn skal føre
+      At sværge Danmark Troe,
+Alfader skal hans kiekke Løvter høre,
+      Og Dyd i Leire boe.
+
+Og Rygtet skal med sanddru Tunge lære
+      Den Roes, ham Norden gav,
+Hans Minni Dan foreenet skal frembære
+      Sit Offer paa hans Grav. —
+
+Hist er den, gylden Indskrivt den ei pryder,
+      Ei Støtter bære den;
+Men Patrioten kiender den, og yder
+      Dig Taarer, Danmarks Ven! —
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>August 1794</title>
+</head>
+<content>
+<text id="lundbyehv2026112606" author="lundbyehv">
+<head>
+  <title>Paa en fraværende Vens Fødselsdag</title>
+  <subtitle>den 1. August 1794.</subtitle>
+  <firstline>Vort Liv er rigt paa ædel Lyst</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd37" pages="232-233" facsimile-pages="240-241"/>
+</head>
+<body>
+<poetry>
+Vort Liv er rigt paa ædel Lyst,
+Ei Støvets Søn er skabt til Klage,
+Naar nøisom han med skyldfrit Bryst
+Sin Lod af Himlen vil modtage.
+Selv Taaren, som fra Øiet gleed,
+Er Pant paa Himlens Kiærlighed.
+
+O Venner! herlig blev vor Lod;
+For os fremspired' mangen Glæde;
+Den stundom duggedes med Graad,
+For dobbelt yndig frem at træde.
+Ja, end i Livets seene Høst
+Skal Glæder modnes os til Lyst.
+
+O Held os, Venner, at vor Aand
+Kan Venskabs Værd og Adel fatte!
+Og Held os, at ved Vennehaand
+Vi lærte Livets Fryd at skatte!
+O Venskab, selv et Himmerig
+Blev tomt og frydløst uden dig.
+
+Til Graad du vel indvier tidt,
+Til bitter Graad din Dyrkers Hierte;
+Men snart igien du smiler blidt,
+Og lønner tifold hver hans Smerte.
+<pb n="233" facs="240.jpg"/>Du fylder ham med himmelsk Lyst,
+I Dødens Stund du er hans Trøst.
+
+Bag Tidens Forhæng du hans Aand
+I Kreds af glade Venner fører;
+Der knyttes evig faste Baand,
+Der Graad, og Savn, og Tab ophøre.
+Utalte Sekler svinde hen,
+Men ingen skiller Ven fra Ven.
+
+Du, elskte Pavels, blev os kiær;
+Os kiært er end dit Venskabs Minde,
+Og i hver Barm, som dig er værd,
+Det aldrig, aldrig kan forsvinde.
+Du vorde stedse lykkelig,
+Og snart igien vi favne dig!
+
+<nonum><right><span lang="el">λη.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="lundbyehv2026112607" author="lundbyehv">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>til</line>
+    <line>en hensovet Vens Erindring.</line>
+  </subtitle>
+  <firstline>Naar Taaren haabløs triller ned</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+  </notes>
+  <source in="bd37" pages="233-235" facsimile-pages="241-243"/>
+</head>
+<body>
+<poetry>
+Naar Taaren haabløs triller ned
+Ad de forgrædte, blege Kinder;
+Naar Hiertet ingen Tilflugt veed,
+Og sidste Glimt af Trøst forsvinder,
+Da seer vor Gud, hvad Støvet leed,
+Og skiænker Haab om Evighed.
+
+<pb n="234" facs="241.jpg"/>Hist ved en stille, ukiendt Grav
+En Yngling svundne Fryd begræder;
+Tabt er den Ven, ham Himlen gav,
+Hans heede Taare Urnen væder;
+Brudt er det lykkelige Baand,
+Og Kummer hersker i hans Aand.
+
+Men liig et Bluus paa ukiendt Kyst,
+Hvis Klipper bange Søemand svige,
+O Haab! du skiænker salig Trøst,
+Og Dødens mørke Rædsler vige,
+Vi kiende froe, at Gravens Fred
+Er Indgang til en Evighed. —
+
+Thi, naar en ædel kaldes bort,
+Da vil vi sukke, men dog smile;
+Hans Tab er smerteligt, men kort,
+Snart kaldes ogsaa vi til Hvile.
+Vi mindes uden Sorg vor Ven,
+Vi hisset skue ham igien.
+
+Til Graven vil vi vandre hen,
+Med Markens Blomster den at pryde,
+For Dydens lykkelige Ven
+Skal Venskabs stille Taare flyde;
+Snart stolte Marmorsteen forgaaer,
+Men Dydens Minde evig staaer. —
+
+Saa mindes vi, o Elskte, dig
+Med stille, veemodblandet Glæde,
+<pb n="235" facs="242.jpg"/>Vi vide, du er lykkelig,
+Snart ogsaa vi hiin Egn betræde.
+Ei klage vi, thi Evighed
+Den Ven os skiænker, vi begræd. —
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>September 1794</title>
+</head>
+<content>
+<text id="riber2026112601" author="riber" variant="riber2020032768">
+<head>
+  <title>Kilden</title>
+  <subtitle>efter Grev F. L. Stolbergs fierde Jambe.</subtitle>
+  <firstline>Som fordum i den folkerige Stad</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2020012801"/>.</note>
+    <note editorial="true">Mottoet er fra Horats’ <xref poem="horats2026102702,2-5"/>, vers 2–5.</note>
+  </notes>
+  <source in="bd37" pages="342-345" facsimile-pages="350-353"/>
+  <keywords>horats,stolbergf</keywords>
+  <places>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<epigraph lang="la">
+Insanientis dum sapientiæ
+Consultus erro, nunc retrorsum
+Vela dare, atque iterare cursus
+Cogor relictos — —
+
+<right><sc>Hor.</sc></right>
+</epigraph>
+<poetry>
+Som fordum i den folkerige Stad
+Diogenes ved Solens klare Skin
+Med Lygten i sin Haand løb rundtomkring,
+Og søgte Mennesker, og fandt dem ei;
+Saa løb <w>Jean Jacques</w> omkring med skarpe Blik,
+Og heede Siæle-Tørst; høit slog hans Hierte
+Som Yngling og som Mand, ja end som Olding.
+Han søgte Viisdom; ikke fandt han den
+I golde Lærdoms Tant; nei Skolestøv
+Var i hans Tanker — Støv; det Viisdoms-Marked,
+Hvor Daarskabs Bielde lyder overalt,
+Hvor Lærestolen for umyndig Flok
+Sin Panacee med Pralen byder fal,
+Og hvor Gudindens Billed bryster sig
+I Narre-Kappen; dette var for ham,
+Hvad tomme Bøger er for den, som vandrer
+I Ørken, under heede Middags-Straaler;
+Og tørstig stunder hen til Dalens Kilde.
+    Vel den, som Kilden fandt, og kølig Skygge.
+Den Skygge er ei Drøm; ei heller Kilden.
+<pb n="343" facs="350.jpg"/>Den flød til alle Tider overalt,
+Nu smal, nu breed, her muddret, hisset klar;
+Af Himlen næres den, og af Naturens
+Det dybe Skiød, som lønlig nærer Alt;
+Og hvor den flyder, nærer den og styrker
+Den Drikkende med uformindsket Kraft.
+Men ach! kun Faa har hidtil fundet den.
+Utidig Videlyst forgiæves graver,
+Om den end stikker Spaden nok saa dybt;
+Ei vælder klare Vand fra Grunden frem.
+Dog, naar den graver op et fugtigt Mudder,
+I hvilket Himlen aldrig speiler sig;
+Strax raaber den af Fryd, og kalder hid
+Forsmægtet Vandrer; denne lokkes tidt
+Af Dovenskab, og tidt af Uforstand.
+Af Muddret øser han, og nu han troer,
+At Kilden er en digtet Ting, som den,
+Der qvæger Skygger i Elysium.
+    O Eensomhed! i dine Dale flyder
+Den Vises Qvægelse; hvo styrker mig
+Til dig at taale? — Aldrig var jeg glad
+Ved Læresalens Lærde, tomme Tant,
+Ved løse Slutningers den høie Bygning,
+Medynksom og forundret saae jeg tidt
+Pedanter paa Forhøininger at staae.
+Om disse trængde sig en Sværm af Ungdom,
+Der, med Opmærksomheds den aabne Mund,
+Sig teede som den nøgne Fugl i Reden;
+Der blind og pibende, med udstrakt Hals,
+Gridsk snapper efter hule Pennefier,
+<pb n="344" facs="351.jpg"/>Hvormed skalkagtig Dreng, som rev den bort
+Fra kiærlig Moders Pleie, mader den.
+Maaskee jeg og i Blinde havde snappet,
+Om ikke Hellas<footnote>Grækenland.</footnote> i sit Moder-Skiød
+Mild havde vugget og opfostret mig,
+Oplyst mit Øie, ført mig under Træer,
+Som stedse aande liflig Duft og Kølhed,
+Paa Blomster og paa gyldne Frugter rige.
+Nu søgte jeg ei paa Logikens Torne
+De Roser, som min Plato skiænkte mig.
+Din Sølvlyd hørde jeg, o skiønne Kilde! —
+Dog længe holdt min Svaghed mig fra dig,
+Og som et Barn omdriver flygtig Top,
+Saa drev og Daarskab længe mig omkring;
+Og som et Barn, der følger broget Drage,
+Som svæver høit ved lange Traad i Luften,
+Af Vinden tumlet om; saa blev og jeg
+Henrevet af et broget Hiernespind.
+Og nu? — Skolastiker og Paven fik
+Ufeilbarhed til Deel — dog stunder jeg,
+Som Hiorten, der er jaget mat, til dig,
+O Kilde! til din Dal, o Eensomhed!
+I dine Skygger modtog du din <w>Numa</w>,
+Den Ædle, som med Taarer dig forlod,
+Og paa den Trone, som han gav dens Værd,
+Med Længsel mindedes de stille Lunde,
+Hvor Viisdom, dannet som Egeria,
+Med Nektar fordum qvægede hans Aand.
+<pb n="345" facs="352.jpg"/>I Soelglands du, o Viisdom! straalede
+For Guds Prophet; ei som en vældig Storm,
+Ei, som naar Jorden skiælver, spruder Ild;
+Nei i et sagte Susen gik du blidt
+Forbi ham, ved den stille Klipperift,
+Langt borte fra den Støi, som os forvilder.
+Og da Guds Viisdom selv til Jorden kom,
+Den ofte søgte til de stille Ørkner,
+Og dem indviede til Paradiser.
+Og Siælens Liv i dig, o Eensomhed!
+De høie Oldtids stærke Sønner nøde;
+De Ædle samled' i din Skygge Viisdom.
+Dig spotter den moderne Moralist,
+Der fører Bygning op af Pligt og Ret;
+Som Steen paa Steen er Slutning lagt paa Slutning,
+Ret trofast, om kun ei den løse Grund,
+Vil glide ud, naar Lidenskabers Strøm
+Høit brusende slaaer op mod sandig Bred.
+
+<nonum><right>Riber.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Oktober 1794</title>
+</head>
+<content>
+<text id="lundbyehv2026112609" author="lundbyehv">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>Den 8 October 1794.</line>
+    <line><w>Mel.</w> For Norge, Kiæmpers Fødeland, &amp;c.</line>
+  </subtitle>
+  <firstline>Vi samles her for første Gang</firstline>
+  <notes>
+    <note editorial="true">Signeret »λη.«, samme signatur som i <xref poem="lundbyehv2026112604"/>, der tilskrives Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
+    <note editorial="true">Melodiangivelsen henviser til Johan Nordahl Bruns <xref poem="brun2026110301"/>.</note>
+  </notes>
+  <source in="bd38" pages="68-69" facsimile-pages="76-77"/>
+  <keywords>brun</keywords>
+</head>
+<body>
+<poetry>
+    Vi samles her for første Gang
+Til tvangfri Broderglæde.
+    O lader os med festlig Sang
+Indvie Venskabs Sæde!
+    Og hver, hvis Hierte aabent er
+    For Venskabs høye Følelser,
+    Og har vort Brodersamfund kier,
+Vor Velkomstsang istemme!
+
+    Den Aand, som før besieled' os,
+Som adled' vore Glæder,
+    Som var vort Selskabs sande Roes,
+Her vorde og vor Hæder!
+    Kun den, som Dydens Bud adlød,
+    Som villig lindred' Brødres Nød,
+    Som aldrig troeløs Løfter brød,
+Kun den vor Broder vorde!
+
+    Og bort fra os hver Stormands Træl,
+Og hver, som hykler Dyder,
+    Hver, som sig ei ved andres Held
+Som ved sit eget fryder!
+    Og hver, som hader munter Sang
+<pb n="69" facs="076.jpg"/>    Og Spøg og fyldte Glasses Klang,
+    Og hver, hvis Hierte elsker Tvang —
+Ey vorde han vor Broder!
+
+    O Venskab! dig indvie vi
+Vort Samfunds nye Sæde;
+    Vær med din hulde Harmonie
+Bestandig her tilstæde! —
+    Og Uskyld, Venskabs Moder, dig
+    Hver Broders Siel indvier sig;
+    Paa dine Glæder stedse riig
+Hver Brodersamling være!
+
+    Tidt vinke blide Muser her
+Til Fryd og qvægsom Hvile,
+    Og Smag og Hierte eie hver,
+Som til vor Kreds vil iile!
+    O Venner, her vi frydes saa,
+    At Mindet ei os angre maae!
+    At naar paa Gravens Bred vi staae,
+Vi end vor Glæde signe.
+
+<nonum><right><span lang="el">λη.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>November 1794</title>
+</head>
+<content>
+<text id="anonym1700dk2026112603" author="anonym1700dk">
+<head>
+  <title>Svend og Gothilde</title>
+  <subtitle>
+    <line><w>Romanse.</w></line>
+    <line>Efter en Episode i Digtet Hellebek, af Greve</line>
+    <line>F. L. Stolberg.</line>
+  </subtitle>
+  <firstline>I landlige Hytte, af Bøge omskygget</firstline>
+  <notes>
+    <note editorial="true">Gendigtning af en episode i Friedrich Leopold Graf zu Stolbergs <xref type="translation" poem="stolbergf2018073101"/>.</note>
+  </notes>
+  <source in="bd38" pages="194-196" facsimile-pages="222-224"/>
+  <keywords>stolbergf</keywords>
+  <places>
+    <place ref="hellebaek" relation="setting" primary="true"/>
+    <place ref="oresund" relation="setting"/>
+  </places>
+</head>
+<body>
+<poetry>
+I landlige Hytte, af Bøge omskygget,
+Der levede Svend med Gothilde, hans Viv.
+Ved Tillid til mildeste Forsyn betrygget,
+I roelig Tilfredshed, hengleed deres Liv.
+
+Med Agre og Fæe Gud dem ikke begaved'.
+En Have at dyrke, en malkende Koe,
+Og hvad deres Garn dem indbragte fra Havet,
+Til Nødtørft forsynte den nøisomme Boe.
+
+Men kiekkeste Sønner og Døttre saa væne
+De fik af Algodheds velsignende Haand;
+Og Omsorg for dem, at opdrage og tiene,
+End fastere knytted' det ædleste Baand.
+
+De Mismod og nagende Kummer ei kiendte;
+Kun ømmeste Kierligheds Sorger de bar;
+Nød takfulde glade, hvad Gud dem tilsendte:
+Hver Dag ubekymret for følgende var.
+
+Alfader! Sit Huus bygger Manden, der bygger
+En Svale sin Rede ved hængende Tag:
+Du Manden og Svalen for Mangel betrygger,
+Du qvæger, du fødder dem begge hver Dag!
+
+<pb n="195" facs="222.jpg"/>Med Garnet han flittig paa Havet uddrager,
+Og raskeste Sønner da Aarerne slaae;
+Tidt Moder, med Døttre, i Møien deeltager:
+Naar Fangsten slaaer ind, de tilhobe da gaae.
+
+Saa foer de en Nat med hinanden, og glade
+De sysle med Garnet, til Dagen brød frem.
+Alt mættende Forsyn med Tak de tilbade,
+Saa vendte de Baaden, og stavnede hiem.
+
+Smaakrusede Vaave for Aaren hentriller,
+Og Maanen sig speiler i sølvblanke Hav,
+Alt graanende Dagskiær paa Havsbrynen spiller;
+Men ak! — den bereder de retskafnes Grav.
+
+”O, Svend! hvor den kommende Morgen mig rører!
+Hvor blid er Naturen, og du er saa fro!
+Hvor let glider Baaden!“ — ”Gothilde! saa fører
+Os Gud giennem Livet, til evige Roe!“
+
+”Men, Svend! giennem Sielen en Tanke mig farer:
+Hvo af os skal først fra den anden gaae hen?
+(Nu zittrer en Taare) om Gud dig kun sparer
+Hos disse Forladte! — Som Gud vil, min Ven!“
+
+Dog — hastig er Morgenens Ynde forsvunden.
+Det damper i Øster — strax sortnes det der —
+Bag ildrøde Skyer er Solen oprunden,
+Og alting bebuder: et Uveir er nær.
+
+”Nu, roer, I Drenge! See, Bølgen sig hæver,
+Alt skummer, og fraader dens hvidnende Ryg.
+Hids Seglet! vær rappe! — Gothilde! du bæver
+Ved Almagts Beskiermelse du jo er tryg!“,
+
+<pb n="196" facs="223.jpg"/>Rask roer nu Fader og Sønner. — Gothilde
+Med Hoved nedbøyet paa synkende Arm
+Sødt smiler til Manden, mens Taarer de trilde
+Saa lønlig ned over den bankende Barm.
+
+Gud saae hendes Taarer — og Vinden han kalder;
+Alt hviner nu Stormen. — nu voxer dens Raab, —
+Nu reiser sig himmelhøit Bølgen, — nu falder
+Den brækkede Mast, og med den, deres Haab.
+
+Rask roer end Fader og Sønner, og beder: —
+Dog, Undergang hver nu for Øinene seer;
+Og Moder og Døttre saa angstfulde græde,
+Men nu kun et Vink — og de græde ei meer.
+
+En taarehøi Bølge bag Baaden opstiger,
+Og slenger mod Klippen dens knusede Skrog,
+Og Fader og Moder, og Drenge og Piger
+Nu drikke den Bølge, som over dem slog.
+
+Høit svæve de Engle om Klippen, og skue
+Ned paa disse Frommes omdrivende Liig.
+(Saa hvælver sig Pagtens den herlige Bue,
+Gud satte i Skyen, til Vidne om sig).
+
+Ak! med den nu svæve de salige Siele,
+I straalende Flugt, til den evige Roe,
+Hvor Skilsmissens Veemod ei mere kan qvæle
+Dem, som nu hos Gud og hverandre skal boe.
+
+Og ei deres Legemer Havet adskiller,
+Men vugger dem ind paa den roelige Strand,
+Hvor grædende Naboe nu Taarerne stiller,
+Og jorder dem der, hvor de dreve til Land.
+
+<nonum><right>L. —.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="frankenau2026112601" variant="frankenau2019041259" author="frankenau">
+<head>
+  <title>Ved Hds. K. H. Prindsesse Sophie Friderikes Død</title>
+  <firstline>Ei, fordi du fødtes en Fyrstinde</firstline>
+  <source in="bd38" pages="214-216" facsimile-pages="242-244"/>
+</head>
+<body>
+<poetry>
+Ei, fordi du fødtes en Fyrstinde,
+Ei, fordi en Prinds din Haand du gav,
+<pb n="215" facs="242.jpg"/>Rører Sorgens Muse dig til Minde
+Harpen ved din Grav.
+
+Ei for store Herrers Gunst at stiele,
+Eller for at trygle Fyrsters Brød,
+Reiser jeg dig her et Eftermæle,
+Klager jeg din snare Død.
+
+Men — fordi blandt ædle Qvinders Navne
+Dit saa skiønt, saa herligt glimret har;
+Dine Smaa, som nu din Omhu savne,
+Du en sielden Moder var.
+
+Du har lært dem, ei paa Rang at bygge,
+Ei paa Ahner, eller Kongeblod;
+Men, at jordisk Høihed kun er Skygge,
+Dydens Adel eene god.
+
+Ak, den Læbe, som dem Sandhed lærte,
+Hviler bleg, og taus, og tillukt her;
+Og til alle Dydens Venners Smerte
+Aabnes aldrig, aldrig meer. —
+
+I, som sukke under Armods Kiæder,
+Som i Løndom friste tunge Kaar,
+Græder alle, Stor med Liden græder,
+At det Gode saa forgaaer!
+
+Ak, den Haand, som lindred' eders Kummer,
+Sank paa Dødens Leie kraftløs hen;
+Gravens lange, dybe, kolde Slummer
+Ruger grusom over den.
+
+<pb n="216" facs="243.jpg"/>Ogsaa Venskabs heede Taarer flyde
+Uden Ophold paa din Urne ned.
+Sielden den, som fødtes til at byde,
+Ret af Venskabs Glæder veed:
+
+Men Sophie, du, ja du dem kiendte;
+Mangen ædel Siel du til dig drog.
+Ak, en grusom Skiebne Bladet vendte,
+Og din Afskeds-Time slog.
+
+Bort fra dine Venner maae du vandre,
+Bort fra Børns og Mages Favnetag;
+Er da, Skiebnens Love at forandre
+Støvets Arm for svag?
+
+Nu — saa slumre sødt, og Muldet hvile
+Let, Fyrstinde, paa dit kolde Liig;
+Alle Gode til din Urne smile,
+Og velsigne Dig!
+
+<nonum><right><w>Frankenau.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="rahbek2026112602" variant="rahbek2020010446" author="rahbek">
+<head>
+  <title>Bions Klagesang over Adonis</title>
+  <subtitle>Frit oversat.</subtitle>
+  <firstline>For Adonis er min Klage</firstline>
+  <notes>
+    <note editorial="true">Fri oversættelse af Bion fra Smyrnas <xref type="translation" poem="bion2026112601"/>.</note>
+  </notes>
+  <source in="bd38" pages="216-222" facsimile-pages="244-250"/>
+  <keywords>bion</keywords>
+  <places>
+    <place ref="cocytus" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<poetry>
+For Adonis er min Klage;
+Den deilige Adonis er ei meer!<footnote>At Oversætteren ved dette Arbeide har havt Pankylls uopnaaelige Efterligning for Øie, nægter han ikke; imidlertid troer han, man ved Sammenligning vil finde, <pb n="217" facs="244.jpg"/>at den meere har tient ham som Ideal, end som Modell, da han har adskillige Stæder stræbt at holde sig nøiere til Originalen. Da man saa temmelig synes enig, at dette Digts Bestemmelse har været at opføres ved een af Adonis Liigfester, om hvilke man i Musæi Hero og Leander (see Prams mesterlige Overs. i sidste Bind af Sk. V. Selsk. Skr.) finder saa skiønne Beskrivelser, har Oversætteren troet, saavidt mueligt, at burde indrette sin Oversættelse, som om han smiggrede sig med, en Schulz kunde finde den værdig at componeres.</footnote>
+<pb n="217" facs="244.jpg"/>Elskovsguderne gientage:
+Ak, Adonis er ei meer.
+Ynkværdige! Ynkværdige Cythere!
+Hviil ei paa Purpurleie meere!
+Vaag op, og klag, og hyl, og slaae dit skiønne Bryst!
+Adonis er ei meer! din Ven, din Lyst!
+        For Adonis er min Klage,
+        Alle Elskovsguder klage:
+        Ak, Adonis er ei meer.
+Paa Bierget, hvor han gik at jage,
+Han af et grusomt Rovdyr fældet er.
+End synes han sin Aande svagt at drage;
+        O! men over skiønne Hud,
+        Fuser sorte Blodstrøm ud.
+Stivt og brustet er hans Øie,
+Rosen paa hans Læbe døer,
+Guder! Guder i det Høie,
+Kysset, selve Kysset døer,
+Hvorved end Dione hænger;
+Skiøndt han ikke aander længer,
+Elsker hun hans Kys endnu.
+<pb n="218" facs="245.jpg"/>Ak Adonis! Ak men du
+Hendes Kys ei meer fornemmer.
+        Ak Adonis! ak for dig
+        Hver en Elskovsgud med mig
+        Høie Klagesang istemmer.
+Stort og rædsomt er dit Saar<footnote>Lige efter Texten hedder det vel: ”Stor er Vunden i dit Laar“; men dette Ord tør vel ikke vove sig i dansk alvorlig Poesie? <right>R.</right></footnote>
+Større Cypris Hiertesaar.
+Dine Hunde, dine Svende
+Jamre høit omkring dit Liig!
+Nympherne begræde dig;
+Svagt de sørge dog mod hende.
+Giennem Skov og giennem Lund
+Trøstesløs omvanker hun,
+Vildt udslaget flaggrer Haaret,
+Nøgen er den skiønne Fod,
+Tiorne vædes af dens Blod,
+Men hun mærker ei til Saaret.
+Med skarpe trøstesløse Skriig
+Sin Ven, sin Elskede, sin Mage
+Hun fordrer jamrende tilbage.
+Forgieves! over kolde Liig
+Blodet strømmeviis nedrinder;
+Ulyksaligste iblandt Gudinder!
+Høyt jamre Elskovsguderne med dig.
+        Skal alt da tabt for dig med din Adonis være?
+        Den skiønne Cypris er du ikke meere;
+        Med ham din hulde Skiønhed døde hen.
+<pb n="219" facs="246.jpg"/>Bierg og Skov Dianes Skrig gientage;
+Floderne istemme hendes Klage;
+Kilderne begræde hendes Ven;
+Blomsterne af Kummer visne hen.
+Over alle lyde Cypris Klager:
+        Adonis! ak! Adonis er ei meer!
+Echo jamrende gientager:
+        Ak Adonis er ei meer!
+Hvo sørger ei med Kiærligheds Gudinde!
+Da over døde Elskers blege Liig
+Hun saae hans Purpurblod at rinde?
+Med smertelige Jammerskriig
+Hun mod ham rakte sine Arme!
+Og raabte: bliv Adonis! bliv du Arme!
+End een Gang, sidste Gang, med kiærlig Arm
+Dig din Dione trykke til sin Barm,
+Hæfte sine Læber fast til dine! —
+Vaag op Adonis! hør din Erycine:
+Eet Kys, eet kielent Kys jeg kræver kun,
+Som kan til Afsked leve paa min Mund;
+Eet Kys, som Kiærlighed dem giver!
+At jeg i dette Favnetag
+Inddrikke maae dit sidste Aandedrag!
+At, da du mig for evig røvet bliver,
+Jeg der indaande kan din heele Kiærlighed,
+Og giemme det i min Adonis Sted.
+        Adonis! ak du flyer! du flyer din Elskerinde!
+        Du flygter til Cocyti Strand,
+        Til Skyggers grusomme Tyran!
+<pb n="220" facs="247.jpg"/>Jeg Arme, lever! o! jeg er Gudinde!
+        Ak! jeg kan ei følge dig.
+O Proserpina! du modtage
+Min Ven, min Elskede, min Mage!
+Langt, langt er du i Vælde over mig!
+Al Jordens Deilighed maae hylde dig!
+Jeg er usigelig ulykkelig!
+Erindelige Smerter mig fortære.
+        Adonis! min Adonis er ei meere,
+        Ak du er død! min Elskede, min Ven!
+        Min Elskovs Lykke som en Drøm svandt hen!
+Nu er du Enke; o Cythere!
+Og faderløse Elskovsguder ere!
+Med ham du selv din Cestus mistet har;
+Og uden ham, hvad Gavn mon den dig var? —
+Ubesindige! hvi skulde du dig vove
+Mod grumme Rovdyr i de vilde Skove;
+Mon det for dig — du Skiønne! Syssel var?
+        Saa lød Diones høie Klage.
+        Elskovsguderne gientage:
+Vee! Vee dig Cypris! din Adonis er ei meer!
+Din skiønne elskede Adonis er ei meer!
+
+Strømmeviis Gudindens Taarer flyde;
+Strømmeviis som hendes Elskers Blod.
+Af hendes Taarer Lilier frembryde;
+Og Roser af Adonis Blod.
+        For Adonis er vor Klage!
+        Den deilige Adonis er ei meer!
+Du ei i Skovene bejamre nu din Mage!
+O Aphrodite! her hans Baal du seer.
+<pb n="221" facs="248.jpg"/>Du paa dit eget Leie seer ham hvile.
+Ak! hvor han end er skiøn, som død!
+Skiøn, som han hvilede i Søvnens Skiød.
+Cypris! til din elskede du iile!
+        Smyk! o smyk det kiere Liig
+        Med disse dyrebare Purpurklæder,
+        Minderne om fordums Glæder,
+        Ak, som svandt evig hen for dig! —
+Med Blomsterkrandse du det pryde,
+Hvis ei med ham hver Blomst henvisnet er!
+Med Myrrha du det overgyde!
+Du trænger ei til Myrrha meer.
+Hist hviler han i sine Purpurklæder;
+Omkring ham Elskovsguders Skare græder,
+Og paa hans Liig de offre deres Haar.
+        Hist een sit Kogger under Foden træder,
+        En anden Buen sønderslaaer,
+En brækker Pilen; i Guldkar bringer
+En anden Kildevand at toe Adonis Saar.
+En kiøler det med sine Vinger,
+Men har ei Kraft at see derhen.
+Men alle jamre for Cytheres Ven.
+
+Mod Dørren slukked Hymen Fakkelen,
+Sin Blomsterkrands han sønderbryder,
+Ei meer som Frydesang hans Hymenæus lyder,
+Men Graad og Sukke qvæle den!
+
+Chariterne begræde Myrrhas Søn.
+Ak han er død, som var saa huld og skiøn!
+Saa, høiere end Cypris selv, de klage.
+<pb n="222" facs="249.jpg"/>Selv Parcerne begræde hendes Ven.
+Med Sang de kalde ham fra Gravens Land tilbage,
+Men ak, han hører ikke deres Klage,
+Ei giver Proserpina ham igien.
+
+Græd ei o, Cypris! meere for din Ven!
+Hold eengang inde med din Klage!
+Naar Aaret bringer os hans Fest tilbage,
+For ham med dig vi jamre skal igien.
+
+<nonum><right><w>K. L. R.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="zetlitz2026112602" author="zetlitz">
+<head>
+  <title>Todes Skaal</title>
+  <subtitle><w>en Drikkevise.</w></subtitle>
+  <firstline>Man fortæller os, at Tode</firstline>
+  <notes>
+    <note>Med dobbelt Fornøielse indrykker Minervas Udgiver ovenstaaende, da det saa uimodsigelig bevidner, at fleere af Prof. Todes og hans Camenes varmeste Beundrere dog om de bekiendte Bordviser tænke eenstemmig med den Dom, han nogle Steder har ladt til at anke paa. <right><w>K. L. R.</w></right></note>
+  </notes>
+  <source in="bd38" pages="222-224" facsimile-pages="250-252"/>
+  <keywords>tode</keywords>
+</head>
+<body>
+<poetry>
+Man fortæller os, at Tode
+(Tode er Original)
+Nys har fundet paa en Mode,
+Som jeg finder splittergal:
+Andre synge til sin Viin;
+Han har Sang til Maden sin.
+
+Ingen er saa gridsk en Æder,
+At han skulde vorde glad
+Ved de meest udsøgte Steder
+Af en Bog, som laver Mad;
+Selv en Østers blir paa Sang
+En Apicius for lang.
+
+Kunde slige Æde-Viser
+Appetiten vækket faae,
+<pb n="223" facs="250.jpg"/>Hos en ellers ussel Spiser
+For en Dram de kunde gaae;
+Men det kan de sikkert ei;
+Lad dem altsaa gaae sin Vei.
+
+Nei til Viinen kan jeg qvæde;
+Viin er Emne for en Sang.
+Bacchus skienker anden Glæde,
+End en tilfredsstillet Trang.
+Comus i hans Følge er;
+Smiler han, al Kredsen leer.
+
+Held dig! Glædens muntre Fader,
+Bacchus! Vittig, frie, og glad,
+Du med tækkelige Lader
+Rider paa det fulde Fad;
+Og dit Bæger gier enhver,
+Hvad han trænger til, især.
+
+Glæde til den hele Klynge,
+Feige Mod, Forstand en Lærd,
+Mig Forvovenhed at synge
+Viser, som har lidet Værd;
+Ja dit troldomsfulde Bliv
+Selv i Phlegma tryller Liv.
+
+Selv Skilpadde-Smausen søger
+Al sin Herlighed hos dig;
+Og, naar du om Bordet spøger,
+En Salat er nok for mig;
+Glæden er din Følgesvend;
+Kommer du, saa kommer den.
+
+<pb n="224" facs="251.jpg"/>Her er Saft af stærke Druer;
+Her er Skiemt og munter Leeg;
+Ingen Kok vor Glæde truer;
+Den kan leve uden Steeg.
+Grydens ei, men Glassets, Klang
+Understøtter her vor Sang.
+
+Klinker! Skaalen Todes være!
+Held den underlige Mand,
+Musers Yndling, Musers Ære,
+Som med Luner krydre kan
+Mad, Kritik og Medicin.
+Gid han sang iblandt om Viin.
+
+<nonum><right><w>J. Zetlitz.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="lundbyehv2026112605" author="lundbyehv">
+<head>
+  <title>Ungdommen</title>
+  <firstline>Med Lynets Fart vor første Morgen svinder</firstline>
+  <notes>
+    <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 264 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=279">↬</a>.</note>
+  </notes>
+  <source in="bd38" pages="224-225" facsimile-pages="252-253"/>
+</head>
+<body>
+<poetry>
+Med Lynets Fart vor første Morgen svinder,
+Til Møie kalde vore Manddoms Aar.
+Vel den, som Glædens Krands i Vaaren binder,
+<pb n="225" facs="252.jpg"/>Snart, naar den flygter, han blandt Trængsler gaaer. —
+Dig, Ungdom, Glædens himmelsendte Datter!
+Dig skylder Støvet sin Lyksalighed;
+Du vinker os til skyldfri Spøg og Latter,
+Og Uskyld følger dine lette Fied!
+Ja, i din Favn, mildtsmilende Gudinde,
+Ei Jordens Sorger kiender Støvets Søn;
+Forladt af dig han trøstes ved dit Minde,
+Erindrer dig, og finder Jorden skiøn! —
+Vel den, som nød den Fryd, os Himlen byder,
+Og ei med angstfuld Grublen spildte den!
+Vort Liv og Alt i Tidens Svælg udflyder;
+Ei vinde Klager tabte Aar igien.
+Os kalder Glæden med sin hulde Stemme,
+Med snare Skridt dens Fodspor følge vi.
+Nyd, før du synker ned i Gravens Giemme!
+Som Dunst vort Liv snart iler os forbi!
+
+<nonum><right><span lang="el">γε.</span></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112601" author="anonym1700dk">
+<head>
+  <title>Ved en Grav</title>
+  <firstline>Sød er Gravens stille Slummer</firstline>
+  <source in="bd38" pages="225-226" facsimile-pages="253-254"/>
+</head>
+<body>
+<poetry>
+Sød er Gravens stille Slummer,
+Og den Døde lykkelig;
+Her er Grændsen for vor Kummer,
+Snart maaskee den frelser mig.
+Snart mit lukte, brustne Øie
+Seer ei Brødres Taarer meer,
+<pb n="226" facs="253.jpg"/>Snart af Jordens Qval og Møie
+Skal jeg rolig hvile der.
+Grav! ei Dyden miskiendt sukker
+I dit natlig tause Skiød;
+Snedig Smigger der ei vugger
+Os i farlig Sikkerhed.
+Megen Modgang Dyden truer,
+Ondskab seirer ofte her;
+Hvor den Vises Øie skuer,
+Møder det kun Lidelser.
+Elskovs Lyst og Elskovs Smerte,
+Lidenskabers Tyranie,
+Trodser hist det brustne Hierte!
+Der først, der er nogen frie.
+De, som efter Liighed tørste,
+Først kan opnaae Maalet der,
+Der en Slave og hans Fyrste,
+Klerk og Bonde lige er.
+Vennehuld mig Graven smiler,
+Bliid, som Himlens Morgenrød!
+Lykkelig er den, som hviler
+I vor Moders trygge Skiød.
+
+<nonum><right>***h.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="knudsenhc2026112601" author="knudsenhc">
+<head>
+  <title>Ved Hds. Kongel. Høihed Prindsesse Sophie Friderikes Grav</title>
+  <firstline>Faa og korte ere Livets Glæder</firstline>
+  <source in="bd38" pages="227-228" facsimile-pages="255-256"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="setting" primary="true"/>
+  </places>
+</head>
+<body>
+<poetry>
+Faa og korte ere Livets Glæder;
+Skiæbnens lykkeligste Smiil er Sviig;
+Ogsaa jeg med alle Ædle græder,
+O Fyrstinde! ved dit kolde Liig.
+
+Ei min Klage lyder for at prale
+Af, at jeg hos dig i Yndest stod;
+Nei, men for med simple Træk at male
+Dig som gavmild, følende og god.
+
+Tidt du saae min Veemods Taare flyde,
+Og med venlig Haand du standsed' den;
+Livets Fryd du bød mig atter nyde,
+Og min Kummer svandt i Glemsel hen.
+
+Ogsaa mine Spæde Taarer fælde,
+Ak, i Livets første skyldfrie Aar
+Maae de føle Skiæbnens grumme Vælde,
+Ja, at Fryd, og Haab, og Alt forgaaer
+
+Ak, de Arme savne en Veninde,
+Ja, en Moder savne de i Dig;
+Evig ei dit dyrebare Minde
+Skal i deres Hierter tabe sig.
+
+<pb n="228" facs="255.jpg"/>Nu — farvel, farvel fra Støvets Egne,
+O Fyrstinde, end et kiært Farvel!
+Himlens bedste Saligheder hegne
+Hisset om din herliggiorte Siel!
+
+<nonum><right><w>Knudsen.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="rein2026112601" author="rein">
+<head>
+  <title>Digteren E. Storms Minde</title>
+  <firstline>Klag Norge! klag, o! Danmarks Sønner græde</firstline>
+  <notes>
+    <note editorial="true">Mottoet er fra Alexander Popes <xref poem="pope2026112601,75-78"/>, vers 75–78.</note>
+  </notes>
+  <source in="bd38" pages="228-230" facsimile-pages="256-258"/>
+  <keywords>storm,pope</keywords>
+  <places>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="jutulberget" relation="mentioned"/>
+  </places>
+</head>
+<body>
+<epigraph lang="en">
+    Poets themselves must fall like these, the sung
+Deaf the praised ear, and mute the tunefull tongue
+Even he, whose soul now melts in mournful lays,
+Shal shortly want the gen'rous tear, he pays.
+
+<right><i>Pope.</i></right>
+</epigraph>
+<poetry>
+Klag Norge! klag, o! Danmarks Sønner græde,
+Og Skialdens Grav med ømme Taarer væde;
+Tyst Barderne de dumpe Strenge slaae,
+Ak Lyden ei til dine Field skal naae.
+De offre ham, som ædel Ven, sin Taare,
+Med Skiæl hans Tab dig dybere skal saare:
+Den Mand, som Danmark græder for i Løn,
+O Norge! var din Hæder, og din Søn.
+
+Skal, Norge! jeg da Smertens Tolk dig være?
+Skal jeg det tunge Budskab dig frembære?
+Den Afsked, som hans Hierte tog med dig:
+Vær Norge lykkelig, som kiær for mig!
+Det bad saa tidt hans redelige Hierte,
+Tidt denne Bøn og blandet var med Smerte —
+<pb n="229" facs="256.jpg"/>O! naar han var sig selv i Døden liig,
+Da først hans Død var skiøn og lykkelig.
+
+I ringe Kaar, af Sygdoms Vægt nedtynget,
+Hvor følte han sig ofte rask, forynget,
+Naar oprømt han den gyldne Harpe tog,
+Og i sin Aand til dine Fielde drog!
+I Ragnhilds Arm han drømte sig tilbage,
+Og Jutuls Bierg gientog hans ømme Klage.
+Naar Sinklars Fald og Fædres Daad han sang,
+Han hæved sig til første Digter-Rang. —
+
+O Jona! lad hans Navn, til evigt Minde,
+Et værdigt Sted blandt dine Skialder finde.
+Din Varetægt hans Ungdom giorde glad,
+Dig glædede hans Ungdoms første Qvad.
+Hans Urne da din Digtersal skal pryde,
+Og dine Taarer ned paa Urnen flyde:
+Din Trøst det er, blandt mange bittre Savn,
+At see saa mangen hædret Normands Navn.
+
+Men denne Krands, som han med Hæder naaede,
+Ey eene han, ei for sig selv attraaede.
+Han elsked' Sangen blot, da den gienlød
+Af himmelsk Dyd, som fra hans Hierte flød.
+Religion! du som saa herligt lønner,
+Hvis Vidnesbyrd ei blinde Flok paaskiønner!
+Du tolke skal hans Roes med sandrue Mund,
+Du gav ham Fred i Livets sidste Stund.
+
+Du Haand i Haand med ædle Borger-Dyder,
+Hans Grav med evig skiønne Blomster pryder.
+<pb n="230" facs="257.jpg"/>Du, ved de Unges Mund, paa Guddoms Viis
+Bereder ham den hæderligste Priis;
+Den unge Slægt, som han til Dyd oplærte,
+Og dannede med kiærligt Fader-Hierte,
+Skue disses ømme Taarer, og fortæl,
+At selv hans Aand har naaet deres Siæl!
+
+O lød end denne Harpe, som jeg rører,
+Som kun en Ven med Bifald stundom hører,
+Den Harpe, som her lyder ved din Grav,
+Saa sødt, som den, Apollo selv dig gav;
+Naar Graven eengang mine Been skal giemme,
+Min Digter-Roes jeg Verden bød at glemme,
+Og til min Priis blot komme det ihu,
+At jeg var dydig, ædel Mand, som Du.
+
+<nonum><right><w>Rein.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>December 1794</title>
+</head>
+<content>
+<text id="thaarup2026112602" variant="thaarup2017011601" author="thaarup">
+<head>
+  <title>Sørgesange ved Prindsesse Sophie Friderikkes Jordefærd</title>
+  <firstline>Som Skyggen svinder Livet bort</firstline>
+  <source in="bd38" pages="344-347" facsimile-pages="372-375"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="setting" primary="true"/>
+  </places>
+</head>
+<body>
+<poetry>
+<nonum><center><w>For Talen.</w></center></nonum>
+<nonum><center><w>Choral.</w></center></nonum>
+Som Skyggen svinder Livet bort;
+Den Vej er tung, vi træde.
+Vor Ungdoms favre Vaar er kort,
+Ustadig al vor Glæde.
+Alt kommer, modnes, og forgaaer;
+Syv Gange ti er Livets Aar,
+Og sielden, sielden fleere.
+
+Som Ringheds Søn, en jordisk Gud
+I Dødens Favn maae segne;
+Nu rives Brudgom fra sin Brud,
+Og nu maae Bruden blegne.
+See! fromme Fædre, Mødre, maae
+Forlade deres spæde Smaae;
+Nu Fædre Børn begræde.
+
+Her Døden Mand i Styrkens Aar
+Fra Daad og Venner kalder;
+Her Yngling midt i Haabets Vaar
+Som visnet Lilje falder.
+Hist eensom Olding, mæt af Aar,
+<pb n="345" facs="372.jpg"/>Med trætte svage Trin hengaaer
+Til Sorgs og Mødes Hvile.
+
+O Tidens Søn, betænk hvert Fied,
+Du gaaer til Haab og Glæder,
+Henfarne Slægters Hvilested
+Din lette Fod betræder;
+Hvor Livets første Stemme lød,
+Der fulde Taarer for en Død:
+Thi mindes, mindes Døden.
+
+<nonum><center><w>Solo.</w></center></nonum>
+I, som skjønne Moderhæder,
+Qvinder, Mødre, klager, græder,
+    Ved <w>Sophias</w> Lig!
+Hører de forladte Poder,
+Ak omsonst de raabe Moder!
+    Hører deres Jammerskrig!
+
+<nonum><center><w>Duo.</w></center></nonum>
+Tidlig, tidlig maae I græde
+Arme Smaae! I skal betræde
+Moderløse Livets Vej;
+Hvo skal Eders Leder være,
+Dydens Skjønhed Eder lære?
+Ak en Moder ej!
+
+<nonum><center><w>Solo.</w></center></nonum>
+Føl, og tie Du Ægtemage,
+Tabet er for stort til Klage,
+<pb n="346" facs="373.jpg"/>Hæl det dybt i mandig Favn.
+Kan det døe af Mandens Minde?
+Kjærlig Hustrue! øm Veninde!
+    Hvilket Savn!
+
+<nonum><center><w>Solo.</w></center></nonum>
+Flyder, Venskabs Taarer flyder,
+O! fortolker Hendes Dyder!
+Hendes Venne-Sindelav!
+Maalløs Armod angest irrer,
+Blegner, stirrer
+Paa <w>Sophias</w> Grav.
+
+<nonum><center><w>Chor.</w></center></nonum>
+Ubegribelige Gud!
+Ikke bør det Støv at trætte,
+Ikke Støv at gaae i Rette
+    Mod Dit Bud.
+Men tilgiv, Miskundelige!
+At vi græde, naar vi sige;
+    Skee Din Vilje Gud.
+
+<nonum><center><w>Efter Talen.</w></center></nonum>
+<nonum><center><w>Choral.</w></center></nonum>
+Blandt Levende ei lyder meer
+<w>Sophias</w> blide Stemme,
+Et følelsesløs afsjælet Leer
+Sank ned i Gravens Gjemme;
+<pb n="347" facs="374.jpg"/>Hun gik til Livets Egne hen,
+Hun kommer ej til os igien.
+
+Forsvind du Jammers høje Raab,
+Taus vorde Veemods Klage;
+Til Gud, al Jorderiges Haab,
+Gik Hendes Siæl tilbage.
+Hun nu sin Skabers Aasyn seer,
+Og kjænder Sorg og Død ei meer.
+
+Til Graven alle Fied hengaae,
+Som vi paa Banen træde;
+Og vorder end vor Isse graae,
+Dog liden var vor Glæde.
+Paa Jorden er vor Vandringsstand,
+I Himlen er vort Fædreland.
+
+Der vi velsigne skal den Stund
+Med glad forklaret Stemme,
+Da vi faldt hen i Dødens Blund,
+Og sank i Gravens Gjemme.
+Her Livets korte Dag svandt hen,
+Hist straaler evig Dag igien.
+
+O! nu velsigner Hun den Stund
+Med glad forklaret Stemme,
+Da Hun faldt hen i Dødens Blund,
+Og sank i Gravens Gjemme.
+Held Hende! thi Hun gik herfra
+Til alles Gud — Halleluja!
+
+<nonum><right><w>T. Thaarup.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112602" author="anonym1700dk">
+<head>
+  <title>Ved en værdig Borgers Grav</title>
+  <firstline>Her paa Jorden, dette Dødens Sæde</firstline>
+  <source in="bd38" pages="348-349" facsimile-pages="376-377"/>
+</head>
+<body>
+<poetry>
+Her paa Jorden, dette Dødens Sæde,
+    Mangen Veemods Taare randt;
+O! hvor fandtes vel en Glæde,
+    Som ei atter bort for Kummer svandt?
+Da, naar Haabet venlig til os smiler,
+    Meene vi vort Held, som Klippen fast;
+    Ak, men snart det svage Anker brast,
+Snart vor Glæde troløs fra os iiler!
+
+Hver som kiendte Mandens Værd og Dyder,
+    Vidner denne Sandhed ved hans Grav,
+Og den Graad, som paa hans Støv nedflyder,
+    Fordrer Venskab, som et helligt Krav. —
+Dødens Engel pludselig nedsendte
+    Til vor elskte Ven sit tunge Kald;
+    Ak! da blev vor fordums Fryd til Qval;
+Og vort Held til Kummer sig omvendte.
+
+Men hans sieldne Hierte ei skal glemmes,
+    Og hans Minde ikke døe blandt os;
+Varigen det i vor Barm skal giemmes,
+    Yde ham fortient, uhyklet Roes.
+Ak, men intet kalder ham tilbage,
+    Gravens Mørke skiuler dog vor Ven;
+    Og hvad har da vi igien?
+Intet, uden Veemods spildte Klage!
+
+<pb n="349" facs="376.jpg"/>Grædende vi see en værdig Mage,
+    Elskte Børn vi skue grædende;
+De med rette deres Tab beklage,
+    Hvad skal lindre deres Græmmelse? —
+Ædle Ven! — ak, alle for dig græde,
+    Som kan føle, hvad for os du var! —
+    Ak hvad er hvert Held, som Støvet har?
+Kort og uvis er al Jordens Glæde!
+
+Men vor Tanke til et bedre stiger,
+    Til Udødeligheds lyse Hiem;
+Did, hvor Qval og Smerte viger,
+    Did vor Aand sig dristig trænger frem.
+Der vi øine Ham, som vi begræde,
+    Der han venter os i himmelsk Fred,
+    Til vi deele skal hans Salighed,
+Og ei Graad vort Øie meer skal væde.
+</poetry>
+</body>
+</text>
+
+<text id="thaarup2026112603" variant="thaarup2026082037" author="thaarup">
+<head>
+  <title>Sørge-Cantate</title>
+  <subtitle>
+    <line>I Anledning af</line>
+    <line><w>Arveprindsesse</w></line>
+    <line><w>Sophia Friderikas</w></line>
+    <line><w>Død.</w></line>
+    <line>Opført i det <w>Harmoniske Selskab</w> den 31 December 1794.</line>
+  </subtitle>
+  <firstline>Lindrer, Sukke, Kummers Smerte</firstline>
+  <source in="bd38" pages="349-352" facsimile-pages="377-380"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+  </places>
+</head>
+<body>
+<poetry>
+Lindrer, Sukke, Kummers Smerte;
+    Letter det beklemte Hierte;
+<pb n="350" facs="377.jpg"/>Rinder, Veemods Taarer, rinder;
+      Længselfulde Graven seer.
+Det forgrædte Øie finder
+      Et afsiælet Leer.
+
+O, kun en Lyd,
+O, blot et sagte Aandedræt til Stemme —
+Et Venneblik i det halvaabne Øie,
+Et Vink, <w>Sophia</w>, at Du lever,
+At Du er til! — o rør de hulde Læber —
+At Du er til!
+
+      Rædselfuld
+Er, o Grav, dit mørke Gjemme;
+Døv for Venskabs Klage-Stemme,
+Døv for Elskovs vilde Skrig,
+Smuldrer taaredugget Liig
+Til ukiendt Muld.
+
+      O Tidens Søn!
+Du bygger Seklers Borg for føie Dage,
+Som Barnet frydes du ved Jordens Glimmer,
+Forregner dig i Længden af din Glæde.
+See, Døden kommer,
+Den trodser Lægens Konst,
+Og lader haant om Graad;
+Den viser Graven: See din Moder!
+Og Ormen: See din Broder!
+
+Hør, Dødens Røst en Moder kalder;
+      Hør de Forladtes Jammerskrig!
+See tause Mages Taare falder
+<pb n="351" facs="378.jpg"/>      Paa Magens kolde Lig!
+O! hvad fortolker Brudens Smerte?
+Forgieves smelter hendes Hierte;
+      See Graven giemmer hendes Fryd!
+Fortvivlet seer hun mod det høie;
+Ak! ingen Graad for hendes Øie,
+      For hendes Jammer ingen Lyd.
+
+Hvo søger Levende blant Døde?
+Hvo Lys i Gravens Nat?
+Seer mod Himlen!
+Fra Himlen daler Dug
+Paa tørstig Ager.
+Fra Himlen sendes Trøst
+For Dødeliges Hierte:
+O, der er Dydens Fædreland!
+Paa Jorden spirer Dyden, knoppes, blomstrer:
+Men Evigheden modner den.
+Hvi søge I da Moderen, <w>Sophia</w>!
+I Gravens Skiød?
+Hun er der ei — Hun lever.
+
+Saa længselfuldt vort Syn sig hæver
+      Mod Himmelen, vort Blivested,
+Imens det knuste Hierte bæver,
+      Mens Veemodstaaren triller ned.
+      <w>Sophia!</w> Du var Herren kier;
+      Thi er Du ikke mere her.
+
+Forladte Smaae! I skal ei glemme
+      Hver kierlig Omhu, som I nød:
+<pb n="352" facs="379.jpg"/>Hvor Hendes blide Moderstemme
+      At elske Dyden eder bød.
+      O fromme Børn, o lyder den,
+      Da see I Hende vist igien.
+Forklarede! hvor du Dig fryder,
+      Har Guld ei Vægt, ei Krone Glands;
+Der krones Du for Dine Dyder
+      Med Evighedens Seierkrands.
+      I Jubler lyder der Dit Navn,
+      Mens Jorden sukker ved Dit Savn.
+
+<nonum><right><w>Th. Thaarup.</w></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
 </kalliopework>
