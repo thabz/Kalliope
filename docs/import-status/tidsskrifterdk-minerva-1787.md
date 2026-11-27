@@ -2,8 +2,7 @@
 
 Versudvalget til [#2401](https://github.com/thabz/Kalliope/issues/2401)
 er indsat i `fdirs/tidsskrifterdk/1787-minerva.xml`. Indlagte plancher er
-udeladt efter brugerens beslutning. Brugeren foretager selv facsimile-upload
-senere og har accepteret, at manglende serverfiler kan holde CI rødt.
+udeladt efter brugerens beslutning. Facsimilerne er publiceret på Kalliope.
 
 | Bind | Hæfter | Farveskanning fra University of Michigan | Billeder | Tekster |
 | --- | --- | --- | ---: | ---: |
@@ -104,14 +103,12 @@ uden for Git. Flere bind genbruger de samme numeriske billedfilnavne;
 slutcheckpointet udføres derfor særskilt for hvert bind, sammen med en
 ufiltreret helværksanalyse af den samlede XML.
 
-## Facsimiler til manuel upload
+## Facsimiler
 
-Arbejdsbundtet ligger lokalt i `/private/tmp/minerva1787`.
-`facsimiles/1787-minerva-07` til `facsimiles/1787-minerva-10` indeholder
-originale farve-JPEG'er med bevarede indeks og projektets genererede
-thumbnails i `t/`. Der er ikke udført upload. XML peger allerede på disse
-fire facsimile-id'er. Upload skal derfor ske før facsimilerne kan vises på
-sitet og eventuelle serverkontroller kan blive grønne.
+De 1.726 farvebilleder fra de fire Michigan-skanninger og de 15.534
+miniaturebilleder er synkroniseret under
+`tidsskrifterdk/1787-minerva-07` til `tidsskrifterdk/1787-minerva-10`.
+Filnavnene følger det nulbaserede sideindeks i XML.
 
 ## Slutkontroller
 
@@ -122,4 +119,4 @@ sitet og eventuelle serverkontroller kan blive grønne.
 - Ufiltreret helværksanalyse: 39 poesiblokke og 3.741 verssegmenter; alle kandidater disponeret.
 - Fraktur-ordaudit: alle 2.638 kandidater afklaret mod de kildekontrollerede sider.
 - Fire semantiske sideaudits og fire uafhængige, frosne slutcheckpoints: bestået.
-- Facsimiler: 1.726 originaler og 15.534 thumbnails klargjort; upload er overladt til brugeren.
+- `npm run check-facsimiles`: offentlige facsimiler og miniaturebilleder kontrolleret.
