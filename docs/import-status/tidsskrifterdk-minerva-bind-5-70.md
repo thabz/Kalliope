@@ -2,8 +2,12 @@
 
 Import til #2421 og #2424. De eksisterende årgangsværker udvides med henholdsvis
 11 og 4 selvstændige tekster. Andre bind og deres tekster ændres ikke.
-Bind 6 og 69 behandles særskilt i #2448 og #2457; manglerne fremgår af
-årgangenes redaktionelle værknoter med offentlige kildehenvisninger.
+Bind 6 og 69 behandles særskilt i #2448 og #2457; kildeafklaringen fremgår af
+årgangenes redaktionelle værknoter med offentlige kildehenvisninger. For bind 6
+er 519–526 en arbejdsafgrænsning ved overgangen oktober/november, bibliografisk
+knyttet til oktobertillægget; den sandsynligt bevarede 527 afventer billedkontrol.
+For bind 69 er det korrekte hul 234–235, ikke 232–235. De originale erstatningssider
+er fundet hos Nasjonalbiblioteket og afventer integrering; bindets import udestår.
 Manglende plancher er ikke en hindring for denne import.
 
 ## Kilder og sidegennemgang
