@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="prahl" country="no" lang="da" type="poet">
+  <name>
+    <firstname>Bendix Djurhuus</firstname>
+    <lastname>Prahl</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1747</date>
+      <place>Soggendal</place>
+    </born>
+    <dead>
+      <date>1814-01-07</date>
+      <place>Christiania</place>
+    </dead>
+  </period>
+  <literary-periods>no-oplysningstid</literary-periods>
+</person>
