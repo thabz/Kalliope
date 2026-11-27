@@ -66,6 +66,19 @@ binarized diagnostic variant should join the normal profile.
 Read [references/bundle-contract.md](references/bundle-contract.md) when
 consuming the bundle from another skill or extending the scripts.
 
+## Danish pilot model
+
+For an import trial with the versioned Danish model, add `--danish-pilot`
+to `run` and to each later `recognize` call, including `--scope all`.
+This uses Tesseract 5.5.4 with PSM 6 on cleaned pages and writes TXT and TSV
+for the same page IDs. Run `compare` and `verify` after extending recognition
+to all pages. Use the ordinary profile in the baseline trial.
+
+The command retrieves the pinned release, verifies SHA-256 and reuses a
+verified local copy. `KALLIOPE_OCR_MODEL_CACHE` selects the cache directory.
+The default is `~/.cache/kalliope/ocr`. Record the engine version, release,
+checksum and cache status from `bundle.recognition` in the import report.
+
 ## Image policy
 
 The `original` OCR variant applies only safe decoding operations: EXIF

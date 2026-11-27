@@ -106,7 +106,10 @@ const hasFrakturIntegration = ['dan', 'frk', 'osd', 'script/Fraktur']
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'fraktur-ocr-integration-'));
   const source = path.join(root, 'source');
   const bundle = path.join(root, 'bundle');
+  const bundleLink = path.join(root, 'bundle-link');
   fs.mkdirSync(source);
+  fs.mkdirSync(bundle);
+  fs.symlinkSync(bundle, bundleLink, 'dir');
   try {
     const textLines = Array.from({ length: 14 }, (_, index) => {
       return `<text x="30" y="${35 + index * 17}" font-size="14" fill="#111">Historisk dansk Fraktur tekstlinje ${index + 1}</text>`;
@@ -118,11 +121,15 @@ const hasFrakturIntegration = ['dan', 'frk', 'osd', 'script/Fraktur']
       await sharp(svg).png().toFile(path.join(source, `page-${page}.png`));
     }
 
-    const result = await runPipeline(source, bundle);
+    const result = await runPipeline(source, bundleLink);
     const runs = fs.readFileSync(path.join(bundle, 'runs.jsonl'), 'utf8').trim().split('\n');
 
     expect(result.status).toBe('valid');
     expect(runs).toHaveLength(8);
+    for (const line of runs) {
+      const run = JSON.parse(line);
+      expect(run.command[1]).toBe(fs.realpathSync(run.command[1]));
+    }
     const cleanedPage = path.join(bundle, 'images', 'cleaned', 'page-0006.png');
     expect(fs.existsSync(cleanedPage)).toBe(true);
 

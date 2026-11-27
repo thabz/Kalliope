@@ -466,6 +466,16 @@ TSV files as OCR evidence while retaining the bundle's page IDs and hashes. Do
 not copy its sampling heuristic into this skill, infer layout from its TSV
 coordinates or treat its recommended configuration as source authority.
 
+The versioned Danish Tesseract pilot is available through `--danish-pilot`
+in the Fraktur preparation skill. Use it for the pilot arm of a Danish
+Fraktur import trial. Retain the same visual and independent-review
+requirements and record the engine version, model version, SHA-256 and
+cache status from `bundle.recognition`.
+
+When evaluating a change to the Fraktur OCR workflow, follow
+[the import evaluation protocol](../../../docs/fraktur-import-evaluering.md)
+for end-to-end session measurements and comparison against the reference.
+
 Render the page images used as OCR input at 300 DPI. This requirement applies
 to OCR working images, not to the published facsimile extraction: generate the
 published facsimiles with the repository's ordinary facsimile tool and its

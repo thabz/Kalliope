@@ -22,6 +22,15 @@ mapping in `pages.jsonl` and must not derive one numbering system from another.
 Every material input and output has a SHA-256 hash. `verify` fails when a file
 is absent, a hash differs, a stage is incomplete or an OCR run failed.
 
+## Engine and model
+
+`bundle.json` records the actual `recognition.engine_version`.
+With `--danish-pilot`, `recognition.model` records the release version,
+language, download URL, SHA-256 and cache status (`downloaded` or `hit`).
+The trained model produces both the text and TSV geometry under the
+versioned configuration ID. OCR images and page IDs use the standard
+bundle layout.
+
 ## Sampling
 
 Pages 1-5 are never benchmark samples. The remaining pages are divided into up
