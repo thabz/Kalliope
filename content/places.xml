@@ -625,6 +625,15 @@
     <type>town</type>
     <alias>Civita Caskellana</alias>
   </place>
+  <place id="cocytus">
+    <name>Kokytos</name>
+    <canonical-name>Cocytus</canonical-name>
+    <type>mythical river</type>
+    <alias>Cocyti</alias>
+    <alias>Cocytus</alias>
+    <parent ref="greek-underworld"/>
+    <!-- Homer, Odysseen 10, vers 513–515. -->
+  </place>
   <place id="cologne">
     <name>Køln</name>
     <canonical-name>Cologne</canonical-name>
@@ -812,6 +821,13 @@
     <name>Elben</name>
     <type>river</type>
     <alias>Elbe</alias>
+  </place>
+  <place id="elysium">
+    <name>Elysium</name>
+    <type>mythical place</type>
+    <alias>De elysiske marker</alias>
+    <parent ref="greek-underworld"/>
+    <!-- Vergil, Æneiden 6, vers 637–641. -->
   </place>
   <place id="england">
     <name>England</name>
@@ -1786,6 +1802,14 @@
     <type>peninsula/region</type>
     <parent ref="denmark"/>
   </place>
+  <place id="jutulberget">
+    <name>Jutulberget</name>
+    <type>mountain</type>
+    <alias>Jutuls Bierg</alias>
+    <alias>Jutulsbierget</alias>
+    <parent ref="gudbrandsdalen"/>
+    <!-- Jutulberget ved Vågå: https://nbl.snl.no/Edvard_Storm -->
+  </place>
   <place id="kaerehave-forest">
     <name>Kærehave Skov</name>
     <type>forest</type>
@@ -2122,6 +2146,12 @@
     <type>fjord</type>
     <alias>Liimfjorden</alias>
     <parent ref="jutland"/>
+  </place>
+  <place id="liselund">
+    <name>Liselund</name>
+    <type>manor</type>
+    <parent ref="moen"/>
+    <!-- https://trap.lex.dk/Liselund%2C_Magleby -->
   </place>
   <place id="little-belt">
     <name>Lillebælt</name>

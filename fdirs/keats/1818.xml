@@ -2123,6 +2123,9 @@ He saw the giant sea above his head.
 <head>
   <title>Book III</title>
   <firstline>There are who lord it o'er their fellow-men</firstline>
+  <places>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
   <quality>korrektur1,kilde</quality>
 </head>
 <body>
@@ -3221,6 +3224,7 @@ How happy once again in grassy nest!
   <firstline>Muse of my native land! loftiest Muse!</firstline>
   <places>
     <place ref="ganges" relation="mentioned"/>
+    <place ref="elysium" relation="mentioned"/>
   </places>
   <quality>korrektur1,kilde</quality>
 </head>

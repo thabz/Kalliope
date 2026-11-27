@@ -70,6 +70,10 @@
     <note editorial="true">Signeret »γε.«. Tilskrevet Henrik Vilhelm Lundbye i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 148 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=163">↬</a>.</note>
   </notes>
   <source in="bd35" pages="41-44" facsimile-pages="49-52"/>
+  <places>
+    <place ref="liselund" relation="writtenAt" primary="true"/>
+    <place ref="mons-klint" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -262,6 +266,9 @@ Forskiønnet skal jeg see hvert Træk og Mine,
   <firstline>Med Friheds-Aand i takfyldt Bryst</firstline>
   <source in="bd35" pages="95-96" facsimile-pages="103-104"/>
   <keywords>christian7,frederik6</keywords>
+  <places>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -419,6 +426,9 @@ Naar de ynde Lys og Orden!
   <firstline>Velkommen, Kongeslægt! Dig byder</firstline>
   <source in="bd35" pages="309-310" facsimile-pages="317-318"/>
   <keywords>christian7,frederik6</keywords>
+  <places>
+    <place ref="royal-danish-theatre" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -470,6 +480,9 @@ Saa synger høit hver Dannemand,
     <note editorial="true">Tilskrevet Magdalene Sophie Buchholm i Rasmus Nyerups <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 41 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=56">↬</a>.</note>
   </notes>
   <source in="bd36" pages="41-44" facsimile-pages="49-52"/>
+  <places>
+    <place ref="mount-olympus" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -767,6 +780,11 @@ Dit Minde dog med Fryd hos os skal boe!
   </notes>
   <source in="bd37" pages="103-105" facsimile-pages="111-113"/>
   <keywords>pope</keywords>
+  <places>
+    <place ref="denmark" relation="setting" primary="true"/>
+    <place ref="lejre" relation="mentioned"/>
+    <place ref="nordic-countries" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <epigraph lang="en">
@@ -1009,6 +1027,10 @@ Den Ven os skiænker, vi begræd. —
   </notes>
   <source in="bd37" pages="342-345" facsimile-pages="350-353"/>
   <keywords>horats,stolbergf</keywords>
+  <places>
+    <place ref="greece" relation="mentioned"/>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <epigraph lang="la">
@@ -1219,6 +1241,10 @@ Vi end vor Glæde signe.
   </notes>
   <source in="bd38" pages="194-196" facsimile-pages="222-224"/>
   <keywords>stolbergf</keywords>
+  <places>
+    <place ref="hellebaek" relation="setting" primary="true"/>
+    <place ref="oresund" relation="setting"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1400,6 +1426,9 @@ Og velsigne Dig!
   </notes>
   <source in="bd38" pages="216-222" facsimile-pages="244-250"/>
   <keywords>bion</keywords>
+  <places>
+    <place ref="cocytus" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1724,6 +1753,9 @@ I vor Moders trygge Skiød.
   <title>Ved Hds. Kongel. Høihed Prindsesse Sophie Friderikes Grav</title>
   <firstline>Faa og korte ere Livets Glæder</firstline>
   <source in="bd38" pages="227-228" facsimile-pages="255-256"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -1771,6 +1803,11 @@ Hisset om din herliggiorte Siel!
   </notes>
   <source in="bd38" pages="228-230" facsimile-pages="256-258"/>
   <keywords>storm,pope</keywords>
+  <places>
+    <place ref="norway" relation="mentioned"/>
+    <place ref="denmark" relation="mentioned"/>
+    <place ref="jutulberget" relation="mentioned"/>
+  </places>
 </head>
 <body>
 <epigraph lang="en">
@@ -1863,6 +1900,9 @@ At jeg var dydig, ædel Mand, som Du.
   <title>Sørgesange ved Prindsesse Sophie Friderikkes Jordefærd</title>
   <firstline>Som Skyggen svinder Livet bort</firstline>
   <source in="bd38" pages="344-347" facsimile-pages="372-375"/>
+  <places>
+    <place ref="roskilde-cathedral" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>
@@ -2051,6 +2091,9 @@ Og ei Graad vort Øie meer skal væde.
   </subtitle>
   <firstline>Lindrer, Sukke, Kummers Smerte</firstline>
   <source in="bd38" pages="349-352" facsimile-pages="377-380"/>
+  <places>
+    <place ref="copenhagen" relation="setting" primary="true"/>
+  </places>
 </head>
 <body>
 <poetry>

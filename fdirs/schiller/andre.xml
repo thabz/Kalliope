@@ -96,6 +96,9 @@ Und verläßt sie zur selben Stunde.
 <head>
   <title>An die Freude</title>
   <firstline>Freude, schöner Götterfunken</firstline>
+  <places>
+    <place ref="elysium" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1125,6 +1128,9 @@ Aber versteht er darum der Sphären mystische Tänze,
 <head>
   <title>Laura am Klavier</title>
   <firstline>Wenn dein Finger durch die Saiten meistert</firstline>
+  <places>
+    <place ref="cocytus" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -1810,6 +1816,9 @@ Einer der Unsern sich dünke zu sein.
 <head>
   <title>Elysium</title>
   <firstline>Vorüber die stöhnende Klage!</firstline>
+  <places>
+    <place ref="elysium" relation="subject" primary="true"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
@@ -2156,6 +2165,9 @@ Denn das Gemeine geht klanglos zum Orkus hinab.
 <head>
   <title>Hektors Abschied</title>
   <firstline>Will sich Hektor ewig von mir wenden</firstline>
+  <places>
+    <place ref="cocytus" relation="mentioned"/>
+  </places>
   <quality>korrektur1</quality>
 </head>
 <body>
