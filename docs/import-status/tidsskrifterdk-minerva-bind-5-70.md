@@ -82,9 +82,8 @@ valideres med `make test`; det statiske site og korpusdatasættet bygges med
 over af buildets normale kontrol. Tekstønsker og variantkandidater kontrolleres
 mod det genererede korpus.
 
-Facsimiler uploades senere af brugeren fra en anden maskine. Den lokale
-uploadpakke indeholder alle 772 originalbilleder, 6.948 afledte størrelser,
-SHA-256-manifest og uploadvejledning. Pakken pakkes ud i repositoryets rod,
-hvorefter `./tools/sync-facsimiler.sh` køres på den anden maskine.
-`npm run check-facsimiles` køres efter upload. Offentlig tilgængelighed er
-ikke kontrolleret som en del af denne levering.
+De 772 sidebilleder fra de to dokumenterede Google Books-skanninger og
+6.948 miniaturebilleder er synkroniseret under `tidsskrifterdk/1786-minerva-05`
+og `tidsskrifterdk/1802-minerva-70`. Billedrækkefølgen følger kildeindekserne
+og XML-filernes nulbaserede filnavne. De offentlige facsimiler er kontrolleret
+med `npm run check-facsimiles`.
