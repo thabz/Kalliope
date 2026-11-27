@@ -230,3 +230,9 @@ De to latinske mottoer hos Bruun er flyttet til `epigraph lang="la"`.
 17 hidtil nummererede attributioner i Minerva bind III og XI er pakket ind
 i `nonum`; en kontrol af alle tre importerede Minerva-bind fandt derefter
 ingen `right`-attributioner uden denne indpakning.
+
+## Opfølgning: bind 5
+
+Bind 5 er nu importeret særskilt i #2421. Den tidligere kildestopstatus for
+dette bind er afløst af [importstatus for bind 5 og 70](tidsskrifterdk-minerva-bind-5-70.md).
+Bind 6 behandles fortsat selvstændigt i #2448.
