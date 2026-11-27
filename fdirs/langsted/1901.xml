@@ -1340,7 +1340,9 @@ Vifter Danebroge.
   <title>Prolog</title>
   <subtitle>ved en skandinavisk Fest i Paris den 25 Januar 1896.</subtitle>
   <firstline>Velkommen i Paris paa Danmarks Grund</firstline>
-  <performed>1896-01-25</performed>
+  <dates>
+    <performed>1896-01-25</performed>
+  </dates>
   <source pages="57-58"/>
   <keywords>winther</keywords>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -1929,7 +1931,9 @@ Hans Navn har Liv i Gud og kan ej dø.
   <title>Et Barnesmil</title>
   <subtitle>Et historisk Moment fra d. 17. Oktober 1792.</subtitle>
   <firstline>Der rasler en Karre ad Rue Saint-Honoré</firstline>
-  <event>1792-10-17</event>
+  <dates>
+    <event>1792-10-17</event>
+  </dates>
   <source pages="80-81"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2248,7 +2252,9 @@ I Hjærtets Alterguld.
     <line>Prolog-Kantate, foredraget af Fruerne Agnes Gjørling og Julie Rosenberg.</line>
   </subtitle>
   <firstline>Der var en Tid, da Kvinden og Barnet gjemtes bort</firstline>
-  <performed>1901-02-12</performed>
+  <dates>
+    <performed>1901-02-12</performed>
+  </dates>
   <source pages="94-97"/>
   <places>
     <place ref="jordan-river" relation="mentioned"/>

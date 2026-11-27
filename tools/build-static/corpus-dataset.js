@@ -1,3 +1,4 @@
+import { textDateEntries } from './text-dates.js';
 import { DOMParser } from '@xmldom/xmldom';
 import { sourceWorkKey } from './work-cache.js';
 import crypto from 'crypto';
@@ -19,6 +20,7 @@ const OUTPUT_FILES = [
 ].map(filename => `${OUTPUT_DIRECTORY}/${filename}`).concat('public/api/manifest.json');
 const BUILD_CODE_FILES = [
   'tools/build-static/corpus-dataset.js',
+  'tools/build-static/text-dates.js',
   'tools/build-static/external-identifiers.js',
   'tools/build-static/formatting.js',
   'tools/build-static/xml.js',
@@ -372,13 +374,7 @@ const buildWorkRecords = (collected) => sortById(
 
 const buildTextAuditFields = (textMeta, textData, source) => ({
   firstline: textMeta.firstline,
-  events: ['written', 'performed', 'event'].flatMap((type) => {
-    const date = textMeta.dates?.[type];
-    if (typeof date !== 'string' || date.trim().length === 0) {
-      return [];
-    }
-    return [{ type, date: date.trim() }];
-  }),
+  events: textDateEntries(textMeta.dates),
   has_footnotes:
     textData.text?.has_footnotes === true ||
     textData.text?.has_footnotes === 1,

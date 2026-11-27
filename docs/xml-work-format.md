@@ -982,6 +982,24 @@ Indhold i tekstens `<source>` override'r kildeteksten:
 
 ### Text dates
 
+Korpustesten kræver datometadata for entydige, fulde datoer i tekstens `title`,
+`subtitle` og `suptitle` samt afsluttende dateringslinjer i `body`. Den genkender
+månedsnavne og almindelige forkortelser på dansk, svensk, norsk, engelsk, tysk
+og fransk, historiske dagendelser som `5te` og `1ste` samt ISO-datoer.
+Delvise datoer, usikre datoer og datoer i noter eller bibliografiske kilder
+udløser ikke kontrollen. Almindelige datoomtaler inde i brødteksten samt
+dateringer fulgt af en signatur kræver fortsat manuel kontrol.
+Testen kontrollerer datoens tilstedeværelse; dens type skal vurderes ud fra
+kildens sammenhæng. Den trykte ordlyd bevares.
+
+Registrér alle sikre datoer i én `dates`-beholder. En type kan gentages, fx
+`<event>1800-01-01</event><event>1880-02-02</event>` for fødsel og død.
+Alle gentagelser indgår i datorelationerne og korpusdatasættets `events`.
+Buildets interne metadata bevarer de hidtidige første-dato-felter; yderligere
+datoer gemmes i `additional` som objekter med `type` og `date`.
+Datoer placeret direkte i `head` uden en `dates`-beholder bruges ikke af buildet.
+
+
 ```xml
 <dates>
   <written>1871-03-12</written>

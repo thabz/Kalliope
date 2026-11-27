@@ -66,6 +66,9 @@
     <line>den 19de December 1801.</line>
   </subtitle>
   <firstline>Nys Krigens fortærende Torden</firstline>
+  <dates>
+    <event>1801-12-19</event>
+  </dates>
   <notes>
     <note editorial="true">Signeret Nansen i trykket. Forfatterens fulde navn er ikke sikkert identificeret.</note>
   </notes>
@@ -120,6 +123,9 @@ I Kampen om Hæder for Fædreneland. —
   <title>Korer for Fredriksværkerne</title>
   <subtitle>den 17 Decbr. 1801.</subtitle>
   <firstline>Med Lyst vi pleie, og med Haab</firstline>
+  <dates>
+    <event>1801-12-17</event>
+  </dates>
   <notes>
     <note editorial="true">Forfatterens fulde navn er ikke sikkert identificeret.</note>
   </notes>
@@ -212,6 +218,9 @@ Til Vaaben for Dem og for Fædreneland!
   <title>Sang</title>
   <subtitle>Den 29de Januar 1802.</subtitle>
   <firstline>Saa glade vi hilse dig, signende Fred!</firstline>
+  <dates>
+    <event>1802-01-29</event>
+  </dates>
   <source in="bd67" pages="80-81" facsimile-pages="88-89"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -464,6 +473,9 @@ Med dem sin Opløsning imøde,
 <head>
   <title>Tvende Sange den 28de og 29de Januar 1802 i Horsens</title>
   <firstline>Saa stemmer op i Glædens Toner</firstline>
+  <dates>
+    <event>1802-01-29</event>
+  </dates>
   <source in="bd67" pages="87-91" facsimile-pages="95-99"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -983,7 +995,6 @@ Il honora son Nom, sa Patrie et son Roi.
 <text id="graahph2026111301" author="graahph" lang="la">
 <head>
   <title>In obitum Jacobi Edvardi Colbiörnsen</title>
-
   <notes>
     <note editorial="true">Signeret »P. H. Graae« i kilden.</note>
     <!-- Identificeret som højesteretsassessor Peder Hersleb Graah (1750–1830); Erslew I, s. 503–504, registrerer hans Minerva-bidrag og latinske epitafier. -->
@@ -1021,7 +1032,9 @@ Il honora son Nom, sa Patrie et son Roi.
 <text id="anonym1800dk2026111314" author="anonym1800dk">
 <head>
   <title>Fra Jacob Edvard Colbiørnsens Enke til de ædle og værdige Medborgere, som hædrede hendes Mands Minde ved hans Begravelse den 19 Februar 1802</title>
-
+  <dates>
+    <event>1802-02-19</event>
+  </dates>
   <notes>
     <note editorial="true">Tilskrevet Jacob Edvard Colbiørnsens enke i kildens overskrift.</note>
   </notes>
@@ -1222,6 +1235,9 @@ Dit Hierte dyrebar og kiær!
   <title>Selskabs-Sang</title>
   <subtitle>den 2den April 1802.</subtitle>
   <firstline>Mærkværdig for Danske er anden April</firstline>
+  <dates>
+    <event>1802-04-02</event>
+  </dates>
   <source in="bd68" pages="103-105" facsimile-pages="111-113"/>
   <places>
     <place ref="trekroner-fort" relation="mentioned"/>
@@ -1433,6 +1449,9 @@ et Lys paa Eders Vei, i Døden Lys.
     <line>af A. Tidemand, Selskabets Secretair.</line>
   </subtitle>
   <firstline>Op, Venner! istemmer en jublende Sang!</firstline>
+  <dates>
+    <event>1802-04-09</event>
+  </dates>
   <source in="bd68" pages="215-216" facsimile-pages="223-224"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>

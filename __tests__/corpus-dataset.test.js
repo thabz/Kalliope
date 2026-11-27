@@ -227,6 +227,7 @@ describe('incremental corpus dataset', () => {
     // repository sources or the developer's generated API files.
     for (const filename of [
       'tools/build-static/corpus-dataset.js',
+      'tools/build-static/text-dates.js',
       'tools/build-static/external-identifiers.js',
       'tools/build-static/formatting.js',
       'tools/build-static/xml.js',
@@ -361,4 +362,13 @@ describe('incremental corpus dataset', () => {
     expect(() => buildCorpusDataset(collected)).toThrow();
     expect(fs.readFileSync('caches/corpus-dataset.json')).toEqual(state);
   });
+});
+
+it('exports every repeated date to the existing events array', () => {
+  const fields = buildTextAuditFields({ dates: {
+    event: '1800-01-01', additional: [{ type: 'event', date: '1880-02-02' }],
+  } }, { text: {} }, {});
+  expect(fields.events).toEqual([
+    { type: 'event', date: '1800-01-01' }, { type: 'event', date: '1880-02-02' },
+  ]);
 });

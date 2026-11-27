@@ -359,13 +359,17 @@ const get_pictures = (head, srcPrefix, xmlFilename, collected) => {
 };
 
 const extractDates = head => {
-  const dates = getElementByTagName(head, 'dates');
+  const dates = getChildByTagName(head, 'dates');
   const result = {};
   if (dates != null) {
-    result.published = safeGetText(dates, 'published');
-    result.event = safeGetText(dates, 'event');
-    result.performed = safeGetText(dates, 'performed');
-    result.written = safeGetText(dates, 'written');
+    for (const type of ['published', 'event', 'performed', 'written']) {
+      const values = [...new Set(getChildrenByTagName(dates, type).map(node => node.textContent.trim()))];
+      result[type] = values[0] ?? null;
+      if (values.length > 1) {
+        result.additional ??= [];
+        result.additional.push(...values.slice(1).map(date => ({ type, date })));
+      }
+    }
   }
   return result;
 };
