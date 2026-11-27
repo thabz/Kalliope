@@ -4,6 +4,7 @@
   <title>Minerva</title>
   <year>1802</year>
   <pagebreaks/>
+  <!-- Bind 70: intet rettelsesark fundet ved den fulde sidegennemgang. -->
   <errata in="bd67" status="applied" pages="323" facsimile-pages="383"/>
   <errata in="bd68" status="reviewed" pages="[upagineret]" facsimile-pages="369"/>
   <proofreadings>
@@ -13,13 +14,21 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-11-13T11:35:16Z"/>
     <!-- Bidrag til J. E. Colbiørnsens Minde, s. 209–219: uafhængig anden korrektur. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-13T19:10:33Z"/>
+    <!-- Bind 70. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-27T11:37:53.783349Z"/>
   </proofreadings>
+  <notes>
+    <note editorial="true">Bind 69 er endnu ikke medtaget i tekstudvalget. Den tilgængelige skanning mangler trykt s. 232–235. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-18aarg.htm">↬</a></note>
+  </notes>
   <pictures>
     <picture src="1802-minerva-67-p1.jpg" type="titlepage" primary="true">
       <transcription>Maanedskriftet / Minerva. // Januar, Februar og Marts, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
     <picture src="1802-minerva-68-p1.jpg" type="titlepage">
       <transcription>Maanedskriftet / Minerva. // April, Mai og Juni, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz / Kongelig og Universitets-Bogtrykker.</transcription>
+    </picture>
+    <picture src="1802-minerva-70-p1.jpg" type="titlepage">
+      <transcription>Maanedskriftet / Minerva. // Oktober, November og December, / 1802. // Udgivet / ved / Knud Lyne Rahbek, / Professor. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
   </pictures>
   <source id="bd67" href="https://books.google.dk/books?id=E2I3AAAAMAAJ" facsimile="1802-minerva-67" facsimile-pages-num="386">
@@ -45,9 +54,14 @@
     <volume>69</volume>
     <year>1802</year>
   </source>
-  <source id="bd70" href="https://uforbederlig.dk/tidsskrifter/Minerva-18aarg.htm">
+  <!-- Michigan/Google Books. Billedrækkefølgen bevares. -->
+  <source id="bd70" href="https://books.google.dk/books?id=xWI3AAAAMAAJ" facsimile="1802-minerva-70" facsimile-pages-num="368">
     <title>Maanedskriftet Minerva</title>
-    <volume>70</volume>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>70 (18. årgangs 2. bind)</volume>
+    <publisher>Directeur Johan Frederik Schultz</publisher>
+    <place>Kiøbenhavn</place>
+    <printer>Directeur Johan Frederik Schultz, Kongelig og Universitets-Bogtrykker</printer>
     <year>1802</year>
   </source>
 </workhead>
@@ -1708,6 +1722,583 @@ Den Næring er for vor Tids onde Dom,
 som Giften i en haanend’ Latter smiler hen.
 
 <nonum><right>N. H. Weinwich.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<!-- MINERVA-NEW-IMPORT -->
+
+<section level="1">
+<head>
+  <title>Oktober 1802</title>
+</head>
+<content>
+<text id="schwentzen20261127501" author="schwentzen">
+<head>
+  <title>Synet</title>
+  <subtitle>En Ballade.<footnote>Musiken hertil findes i Apollo for Sept. 1802.</footnote></subtitle>
+  <firstline>Naturen laae i stille Blund</firstline>
+  <dates><written>1802-06-21</written></dates>
+
+  <source in="bd70" pages="82-85" facsimile-pages="90-93"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+Naturen laae i stille Blund,
+  Og Midnatsmaanen smilte
+Ned i den dunkle Bøgelund,
+Hvor nedsænkt i et qvægsomt Blund
+  Ung Adolf sorgløs hvilte.
+
+Og hen mod Lunden sagtelig
+  En hvid Gestalt fremsvæver;
+Som Zefyr kysser, Flora, Dig,
+Saa Græsset neppe bøier sig,
+  Og Løvet neppe bæver.
+
+<pb n="83" facs="090.jpg"/>Ræd Adolf op af Leiet foer.
+  Med’ Skrækkens stive Øie
+Han stirred bleg og uden Ord
+Paa Dødens Bud, som lang og stor
+  Beskyggede hans Leie.
+
+»Vaagn op! Dig kalder Dødens Røst
+  »Til Gravens mørke Boelig.
+»Jeg trykker dig kun til mit Bryst,
+»Saa finder du for evig Trøst,
+  »Og slumrer mere rolig.«
+
+»Forbarm dig, Gud! hvad har jeg giort?«
+  — Han skielvende udbryder —
+»Flye, fæle Død! flye, skynd dig bort!
+»Hos dig er alt saa koldt og sort,
+  »Her Glædens Lys jeg nyder.«
+
+»Jeg rører kun med iiskold Haand,
+  »Min Ven, dit varme Hierte,
+»Saa svæver did din fromme Aand,
+»Løsgiort fra Støvets tunge Baand,
+  »Hvor Alt er frit for Smerte.« —
+
+»Ak! jeg er her saa lykkelig! —
+  »Naar Lauras Arm mig favner,
+»Naar hendes Læber sige mig
+»I hede Kys: jeg elsker dig —
+  »En Himmel ei jeg savner.«
+
+»Din Laura elsker dig ei meer.
+  »Hun ved en andens Hierte
+<pb n="84" facs="091.jpg"/>»Det ømme Sværmerie beleer,
+»Som jeg i dette Øie seer
+  »Og hendes Blik dig lærte.« —
+
+»Ak elsker Laura mig ei meer,
+  »Men i en andens Arme
+»Det ømme Sværmerie beleer,
+»Som du i dette Øie seer,
+  »Da, Død, du dig forbarme.
+
+»Men Laura elsker ene mig
+  »Og Dydens rene Lue.
+»O flye! jeg er saa lykkelig,
+»At jeg i Herrens Himmerig
+  »Ei større Held kan skue.« —
+
+»Din Lauras Hierte slaaer ei meer
+  »For denne Verdens Glæder.
+»Det hulde Blik ei mere seer,
+»Den skiønne Mund ei længer leer,
+  »Dug hendes Gravhøi væder.« —
+
+»Ak, er min Himmel styrtet ned
+  »I Gravens tause Bolig,
+»Da er jeg til dit Kys bered,
+»Og følger glad til Gravens Fred,
+  »For der at slumre rolig.« —
+
+»See her den Ring, du hende gav,
+  »Mens hun var her i Live.
+»Den tog hun ved mit Komme af,
+<pb n="85" facs="092.jpg"/>»Og i min kolde Haand den gav,
+  »Dig den igien at give.«
+
+»Hils Adolf« — lød den blide Røst —
+  »At glad min Aand bortilte.
+»Men siig ham ogsaa til hans Trøst,
+»At, Død! selv ved dit kolde Bryst
+  »Min ømme Elskov smilte.« —
+
+»Min Laura død! min Laura død!
+  »O Christ! du dig forbarme!
+»Kom, skynd dig, skynd dig, hulde Død,
+»Og sænk mig sødt i Gravens Skiød
+  »I dine kolde Arme!« —
+
+Og flux han iler i den Arm,
+  Som Synet mod ham rækker;
+Men trykkes til saa blød en Barm,
+Og mødes af en Mund saa varm,
+  Som heller Døde vækker.
+
+Liig Adam, da Gud Herrens Bliv
+  Et andet Jeg ham rakte,
+Saa stod han uden Sands og Liv,
+Indtil et himmelsk: »o tilgiv!«
+  Fra Lauras Mund, ham vakte.
+
+<nonum>D. 21 Junii 1802.</nonum>
+<nonum><right>Carl J. W. Schwenzen.</right></nonum>
+<nonum><right>Cand. juris.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>November 1802</title>
+</head>
+<content>
+<text id="schmidtf20261127501" author="schmidtf">
+<head>
+  <title>Sang</title>
+  <subtitle>
+    <line>ved</line>
+    <line>Biskop Schmidts Embeds-Jubilæum</line>
+    <line>den 17de November 1802.</line>
+  </subtitle>
+  <firstline>Held Dig, ærværdig Jubel-Lærer! —</firstline>
+  <dates><performed>1802-11-17</performed></dates>
+  <notes>
+    <note>Mel. Vær du vort Selskabs Skytsgudinde.</note>
+  </notes>
+
+  <source in="bd70" pages="184-186" facsimile-pages="192-194"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+Held Dig, ærværdig Jubel-Lærer! —
+I Børns og Venners glade Kreds
+Du henrykt Himlens Veie ærer,
+Og seer mod Banens Maal tilfreds.
+Din Dyds, Din Veldaads Jubel-Aar
+Forskiønner Dine sølvgraa Haar.
+<nonum><center>Chor.</center></nonum>
+En Straaleglands om sølvgraa Haar,
+Er hæderkronet Jubel-Aar.
+
+Med Priis Din glade Siel tilbeder
+Den Gud, som alt det Gode gav.
+Han var Din Ungdoms trygge Leder,
+Din Manddoms Kraft, Din Alders Stav,
+Han styred’ bølgeslagne Stavn,
+Blandt Storm og Skiær, til sikker Havn.
+<pb n="185" facs="192.jpg"/><nonum><center>Chor.</center></nonum>
+Han styred’ bølgeslagne Stavn,
+Blandt Storm og Skiær, i sikker Havn.
+
+Du rolig Stormens Hvinen hørte<footnote>Biskop Schmidt begyndte sin Embeds-Bane som Skibspræst, og har giort 2de Reiser til China.</footnote>
+Og Havets hule Dønninger:
+En stærk, en kierlig Haand Dig førte,
+Den værned’ hist, den signer her;
+Og selv paa Alderdommens Vei,
+Den Roser strøer, og svigter ei.
+<nonum><center>Chor.</center></nonum>
+Ja — selv paa Alderdommens Vei,
+Den Roser strøer, og svigter ei.
+
+I huuslig Kreds og landlig Boelig,
+I stolten Borg og Kongesal,
+Du’, lige nidkier, lige roelig,
+Arbeided’ for Dit høie Kald.
+Det var Dit Maal, det var Din Fryd,
+At vidne Sandhed, fremme Dyd.
+<nonum><center>Chor.</center></nonum>
+Det var Dit Maal, det var Din Fryd,
+At vidne Sandhed, fremme Dyd.
+
+Selv kæmpende med Smertens Qvaler,
+Dit Haab, Din Taalmod vakled’ ei:
+Det Ord, som kraftigen husvaler,
+Dig styrkede paa Pligtens Vei;
+<pb n="186" facs="193.jpg"/>Det ene blev Din Støttestav
+Paa Randen af Din Elsktes Grav.
+<nonum><center>Chor.</center></nonum>
+Det blev Din trygge Støttestav
+Paa Randen af Din Elsktes Grav.
+
+Hun deelte med Dig Fryd og Smerte,
+Til selv Hun Smertens Offer blev;
+Thi bløder end Dit ømme Hierte,
+Ved Baandet, Døden sønderrev:
+Dog — frie og glad Hun smiler ned,
+Velsignende Din Alders Fred.
+<nonum><center>Chor.</center></nonum>
+Fra bedre Verd’ner seer Hun ned,
+Velsignende Din Alders Fred.
+
+En blid og venlig Aftenrøde
+Om Dine Sølvhaar spreder Glands.
+Du seer et herligt Haab imøde,
+Og smiler mod Din Seierkrands.
+Hist mødes Du og vi engang
+Med Evighedens Jubelsang.
+<nonum><center>Chor.</center></nonum>
+Ja — hisset mødes vi engang
+Med Evighedens Jubelsang.
+
+<nonum><right>Fr. Schmidt.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>December 1802</title>
+</head>
+<content>
+<text id="lundca20261127501" author="lundca">
+<head>
+  <suptitle>Theokrits første Idylle.</suptitle>
+  <title>Thyrsis eller Sangen</title>
+
+  <firstline>Sød er den Susen, som lyder, o, Geedehyrde! i Granen</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Theokrits <xref type="translation" poem="theokrit2026112501"/>.</note>
+  </notes>
+  <source in="bd70" pages="311-326" facsimile-pages="319-334"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+<nonum><center>Thyrsis.</center></nonum>
+Sød er den Susen, som lyder, o, Geedehyrde! i Granen
+Nær ved Kilderne hisset; men sød er ogsaa Din Fløites
+Tone. — Næst efter Pan Dig Prisen skulde tilhøre;
+Fik han den hornede Buk, da vilde Du Geeden bekomme,
+Tog han Geeden til Løn, da maatte Dig Kiddet tilfalde.
+Skiønt er Kiddenes Kiød, saalænge indtil de skal malkes.
+<pb n="312" facs="319.jpg"/><nonum><center>Geedehyrden.</center></nonum>
+Sødere lyder din Sang, o Faarehyrde! end Vandet,
+Som med larmende Fald hist ovenfra Klippen nedglider,
+Dersom Muserne vilde modtage et Faar til Belønning,
+Fik Du til Priis for Sangen det fede Lam, men dersom heller,
+Lammet de valgte, da skulde Du Faaret efter dem tage.
+<nonum><center>Thyrsis.</center></nonum>
+Vil Du, for Nymphernes Skyld! min Geedehyrde! o vil Du
+Sætte Dig her ved Brinken af Høien og spille paa Fløiten
+Ved Tamariskens Buske! — jeg vogter imens dine Geeder.
+<nonum><center>Geedehyrden.</center></nonum>
+Hyrde! det maa man ikke; om Middagen maa man ei spille,
+Jeg er bange for Pan; thi træt af Jagten han pleier
+Just paa den Tid at hvile, og han er let at fortørne;
+Altid den bittre Galde jo skinner frem i hans Aasyn.
+<pb n="313" facs="320.jpg"/>Derimod — thi, min Thyrsis! Du Daphnis Lidelser kiender,<footnote>Daphnis og hans Lidelser vare ofte Hyrdesangenes Indhold. Han var berømt for sin Skiønhed og sin Sang; han var elsket af en Nymphe, som siden forskiød ham, hvorefter han døde af haabløs Kierlighed. — Sagnet om ham er i øvrigt ufuldstændigt og forvirret.</footnote>
+Og Du bragte det vidt i Hyrdemusernes Sange —
+Kom, lad os sætte os ned under Ulmen, hvor Kildernes Nympher
+Og Priapen er lige foran os; hvor Hyrdernes Sæde<footnote>Priap, Havernes og alle frugtbringende Træers Beskytter, var dyrket af Hyrderne; — her tales om hans Billedstøtte.</footnote>
+Og hvor Eegene staae; ifald Du da synger, som fordum
+Du mod den Libyske Chromis i Kap har siunget, da faaer Du
+Trende Gange at malke min Geed, som Tvillinger fødte,
+— Tvillinger giver den Die, og fylder to Skaale desuden; —
+Og et rummeligt Bæger med søde Vox overstrøget,
+Tohanket, nyelig udskaaret; det friske Træe man end lugter;
+<pb n="314" facs="321.jpg"/>Rundt om Bægerets Rand sig Vedbende oventil vikler;
+Evighedsblomster er snoet om Vedbendet — neden omkring det
+Slynger en Ranke sig hen, som praler med gyldene Frugter.
+Derimellem en Qvinde med Guders Kunst er afbildet,
+Smykket med Baand om Haaret og Kaaben; men hos hende trættes
+Ved afvexlende Sang, to Mænd med deilige Lokker.
+Een paa hver Side af Qvinden; dog det rører ei hende,
+Smilende kaster hun snart et Blik til den ene, og atter<footnote>Man har bebreidet Theokrit, deels, at han beskriver Ting, som Billedskiærerkonsten umueligen kan forestille; deels, at han anbringer for mange Figurer paa sit Bæger. Den første Beskyldning bortfalder, naar man betænker, at det er ikke Digteren, som taler, men en Hyrde, som med Snaksomhed anpriser sit Bæger, og hvis Indbildningskraft giør ham Billederne levende. Den anden Indvending er end mere ugrundet; fem Hovedfigurer vilde lettelig kunde rummes paa Bægerets Udside; endog naar man ikke forestiller sig nogen af dem i Baggrunden.</footnote>
+Vender hun Tanken til hiin — alt længe brænder af Elskov
+Deres svulmende Øie, og kun forgieves de stride.
+<pb n="315" facs="322.jpg"/>Mellem alt dette er ogsaa en gammel Fisker udskaaret,
+Og en knudret Klippe, hvorpaa den Gamle med Ilen
+Trækker sit store Garn til Fangst, som een, der ret trætter,
+Er det ei, som han anstrænged’ hver Lem for at drage med Styrke?
+Saaledes svulme hans Aarer ham allevegne paa Halsen,
+Og dog er han saa gammel! — en Ung maatte huske hans Kræfter.
+
+Ikke just meget afsides fra denne bedagede Søemand
+Ligger en nydelig Viingaard, betynget med rødmende Druer,
+Og ved Indlukket sidder en lille Dreng, som den vogter;
+Nær ham seer Du to Ræve; den ene lister sig fremad
+Mellem Rankernes Rader, og gnaver de modnede Druer,
+Men ved Madposen lurer den anden, og mener, han slipper
+Drengen ei, førend han hungrig ved tomme Pose skal sidde —
+Men han fletter af Stilke en nydelig Græshoppesnare
+Og den befæster med Siv, og agter hverken paa Posen
+Eller paa Frugten, imod den Glæde, han har af sin Fletning. —
+Saftig Biørnekloe rundt om hele Bægeret hænger;
+<pb n="316" facs="323.jpg"/>Det er Æoliens Under — et Arbeid, hvorved du vil studse.
+Til en Kalydons Skipper en Geed jeg derfor betalte,
+Og en vægtig Ost, som af hvideste Melk var tillavet.
+Endnu jeg satte det ei til min Læbe, men hidtil det ligger
+Urørt — med dette jeg vilde dig meget gierne fornøie,
+Dersom Du, kiereste Ven! den deilige Sang vilde synge.
+Og jeg misunder Dig ikke — kom Gode! Du ikke maa giemme
+Sangen, indtil Du er kommen til Hades, hvor alting forglemmes.
+<nonum><center>Thyrsis.</center></nonum>
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Thyrsis har hiemme paa Ætna, og Thyrsis er det, som synger:
+O! hvor var I, da Daphnis forsmægtede? Nympher! hvor var I?
+Enten paa Pindos eller i Peneos yndige Tempel?
+Thi hvor den store Anapos henflyder, der fandtes I ikke,
+Ikke blandt Ætnas Klipper og Akis hellige Vande<footnote>Pindos og Peneos laae i Thessalien; Anapos og Akis vare Floder i Sicilien.</footnote>.
+
+<pb n="317" facs="324.jpg"/>Elskte Muser! begynder, begynder Sangen om Hyrden!
+Ham har Skakalen og ham har Ulven med Hylen beklaget,
+Ham selv Skovens Løve begraad dengang, da han døde.
+Mange vare de Køer, og mange vare de Tyre,
+Mange de Qvier og Kalve, som sørgende laae ved hans Fødder.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Først kom Hermes ned fra Bierget, og sagde: min Daphnis!<footnote>Hermes, Merkur, var dyrket af Hyrderne. Fabelen siger og, at Daphnis var hans Søn.</footnote>
+Hvad henrykker Dig? Gode! hvem er det, Du saaledes elsker?
+Qvægets, Faarenes Hyrder, og Geedehyrderne komme,
+Alle de spurgte, hvad Ondt ham qvæled’ — Da kom og Priapos.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Arme Daphnis! han sagde, hvi svinder Du hen, medens Pigen<footnote>Disse Priaps Ord maa ansees som Ironie; eller og han taler om en anden Pige, i den Forudsætning, at det kan være Daphnis nok, naar han kun elskes af en Pige.</footnote>
+<pb n="318" facs="325.jpg"/>Ved hver Kilde, hver Skov, med ilende Fødder dig søger?
+Alt for eenfoldig Du er i Elskov, og raadvild tillige,
+Qvæghyrde kaldes Du vel, men Geedehyrden Du ligner.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Geedehyrden betragter, naar Geederne søge til Magen,
+Og hans Øie forsmægter, fordi han selv ei er en Bukken.
+Saaledes ogsaa betragter Du Pigerne, hvordan de smile,
+Og Dit Øie forsmægter, før Du dem i Dandsen ei svinger.
+Hyrden dem svarede intet, men næred’ sin smertende Elskov,
+Næred den, til han naaede det Maal, som Parcen ham satte.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Ogsaa den yndige Kypris omsider sig smilende nærmed’
+(Venlig smilede hun, thi Nag hun bar i sit Hierte)
+Daphnis! hun sagde, du viste Dig før af Din Seier mod Eros,
+Mon du nu ikke selv er af farlige Eros betvunget.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Hende svarede Daphnis: O Kypris! som aldrig formildes!
+<pb n="319" facs="326.jpg"/>Kypris, Du som jeg hader! du menneskefiendtlige Kypris!
+Alting forkynder mig nu, at Solen for mig er neddalet,
+Men i Hades skal Daphnis dog være for Eros en Plage.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Gaae til Ida, derhen hvor Hyrden venter paa Kypris;
+Gaae til Anchises! der finder Du Eege, her Sivet kun voxer.<footnote>Det er: Der finder Du Folk, som bedre passer sig for Dig. Dette Sted indeholder bidende Spot, som ikke behøver nærmere Forklaring, naar man kiender Gudindens Kierlighedshandeler med Anchises og Adonis.</footnote>
+Deilig er ogsaa Adonis, han hisset jo Faarene vogter,
+Hisset han Harerne rammer, og andre Dyr han forfølger.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Gaae, o, fremstil Dig kun atter for Diomedes, og siig da:<footnote>Venus blev i den Trojanske Krig saaret af Diomedes. Daphnis spotter hende, fordi hun vil indlægge sig Seier over en Hyrde, siden hun ikke kunde bestaae mod en Helt.</footnote>
+<pb n="320" facs="327.jpg"/>»Hyrden Daphnis betvang jeg.« — Velan! Du stride nu med mig.
+Jeg er den Daphnis, som her i Egnen har Køerne græsset;
+Jeg er den Daphnis, som her har Tyre og Kalvene vandet.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Ulve, Skakaler og Biørne, som leve i Biergenes Huler;
+O farvel! thi aldrig i Skoven, i Lunden, i Busken
+Hyrden Daphnis herefter skal sees; farvel Arethusa!
+Og I Floder, som, rinde til Thymbris yndige Vande.
+
+Elskte Muser! begynder, begynder Sangen om Hyrden!
+Pan! hvad enten du er paa Bierget det høie Lykaios,
+Eller du vandrer omkring det store Mænalos! kom da
+Til den siculiske Øe — fra Helikas Minde, hiint høie,<footnote>Helikas var Lykaons Søn.</footnote>
+Lykaonidens Gravsted, som selv af Guderne hædres.
+
+O! saa fuldender da, Muser! fuldender Sangen om Hyrden!
+Kom, du Mægtige! tag min honningduftende Fløite,
+Som er ziirlig bestrøget med Vox, og oventil løiet,
+Thi nu drages jeg alt af Eros til Skyggernes Bolig.
+
+<pb n="321" facs="328.jpg"/>O, saa fuldender da, Muser! fuldender Sangen om Hyrden!
+Nu frembringer Violer, I Torne! frembringer dem, Tidsler!
+Og den skiønne Narcis paa Eneberbuskene blomstre!
+Alleting blive forvendte! paa Granen Pærerne vore!
+O! thi Daphnis han døer — nu Hiorten Hundene lede,
+Og Bierguglen i Sang med Nattergalene kappes!
+
+O, saa fuldender da, Muser! fuldender Sangen om Hyrden!
+Saavidt taled’ han, førend han endte, og Aphrodite,
+Vilde ham end opreise, men alle Parcernes Traade
+Vare alt slupne, og Daphnis alt gik over Floden, dens Bølger<footnote>Nemlig Acheron, een af Underverdenens Floder.</footnote>
+Skiulede Musernes Yndling, som ingen af Nympherne haded’,
+
+O, saa fuldender da, Muser! fuldender Sangen om Hyrden!
+Men Du! giv mig nu Geeden og Bægeret, at, naar jeg malker,
+Muserne jeg deres Offer kan bringe. Ja, hil Eder, Muser!
+Hil Eder! sødere Sang istemmer jeg Eder herefter.
+<pb n="322" facs="329.jpg"/><nonum><center>Geedehyrden.</center></nonum>
+Dine deilige Læber, o Thyrsis! fyldes med Honning,
+Fyldes med Biernes Kager, og Ægilos sødeste Figen
+Vorde din Spise! thi bedre Din Sang end Cicadernes lyder:<footnote>Cicaderne, en Art Græshopper, hvis Sang var yndet af Grækerne, og ofte roset af deres Digtere.</footnote>
+Her er Bægeret; mærk Du, Bedste! hvor yndigt det lugter,
+At det i Horaers Kilder var dyppet, skulde man tænke.<footnote>Horaerne, Yndes og Skiønheds Gudinder. — Kissäitha, Geedens Navn.</footnote>
+Kom, Kissäitha, herhid! den malke Du! I mine Geeder!
+Dandser kun ikke saa lystigt — at ikke Bukken skal springe.
+</poetry>
+<prose>
+<center>Anmærkninger ved Oversættelsen.</center>
+Vers 6. <span lang="el">χιμάρῳ δὲ καλὸν κρῆς</span> &amp;c. er paa dette Sted en underlig Anmærkning; den kunde ansees saa meget mere mistænkelig, da Geedehyrden slet ikke besvarer den, skiøndt hans Svar i det øvrige er indrettet efter Vexelsangens strængeste Regler; han svarer med 5 Linier, <pb n="323" facs="330.jpg"/>da dog Tiltalen indeholder 6. — Men skulde dette Sted ansees som uægte, saa maatte <span lang="el">χιμάρος</span> være taget ud af den foregaaende Linie, hvilket vel ikke var urimeligt at antage, da <span lang="el">τῆνος γέρας</span> have megen Liighed med Fyldekalk. Imidlertid torde jeg intet forbigaae i Oversættelsen; andre vil maaskee finde Stedet meget skiønt og passende.
+V. 30. <span lang="el">ὑψόθι μαρύεται κισσός — ἀ δὲ κατ’ αὐτὸν ἕλιξ εἱλεῖται — ἔντοσθεν δὲ γυνά τις</span>, saaledes beskriver Hyrden sit Bæger. Mon der ikke isteden for <span lang="el">κατ’ αὐτὸν</span> skulde læses <span lang="el">κάτωθεν</span>, thi jeg indseer ikke, hvorledes Theokrit ellers kunde bruge Ordet <span lang="el">ἔντοσθεν</span> ɔ: inden i Løvværket, naar dette Løvværk ikke var baade oven og neden om Bægeret. Den hele Forestilling bliver desuden tydeligere ved denne Læsemaade, og Ordet <span lang="el">ὑψόθι</span> bliver da formedelst Modsætning ikke overflødigt, som det ellers maatte synes at være, naar dog <span lang="el">περὶ χείλη</span> staae ved Siden.
+V. 58. <span lang="el">τυρόεις</span> skal, efter Casauboni Bemærkning, ikke være en simpel Ost, men: <span lang="la">placenta, cui erat immixtus caseus.</span> I Oversættelsen, troede jeg, at denne Nøiagtighed var overflødig.
+<pb n="324" facs="331.jpg"/>V. 64. Det er aabenbart og tilstaaet af andre, at Linien <span lang="el">ἄρχετε βωκολικᾶς</span> etc. ikke allevegne er indskudt paa det passende Sted; jeg har prøvet, paa nogle Steder at anvise denne Linie en anden Plads, ifølge de tydelige Spor, som jeg troer at finde i Sangen selv, til Beviis for, at den fra først af har været inddeelt i Stropher paa 4 Linier hver; skiøndt det vel ikke er mueligt, hos en Digter, hvis Text har liidt saa meget som Theokrits, at bringe denne Sag i det rene, da enkelte Linier kan være tabte. Hos en Udgiver vilde slig Forandring være en utilgivelig Dristighed; men da Oversættelsen er min egen, og desuden intet uden et Forsøg, haaber jeg Kienderes Overbærelse.
+V. 96 i den grædske Text er mig mistænkeligt, ikke blot for det ægte Munkerim:
+</prose>
+<poetry>
+<center><span lang="el">— — ἁ Κύπρις γελάοισα</span></center>
+<span lang="el">Λάθρῃ μὲν γελάοισα, βαρὺν δ’ἀνα θυμὸν ἔχοισα</span>
+</poetry>
+<prose>
+ei heller blot, fordi den hele Linie seer ud som en mislykket Scholie til det første <span lang="el">γελάοισα</span>, men fornemmelig, fordi jeg ikke kan finde rigtig Mening deri, med mindre jeg med Scholiastens Frimodighed torde forklare <span lang="el">λάθρῃ μὲν γελάοισα</span> med: <span lang="el">ἤθελε γὰρ εἰπεῖν, φανερῶς <pb n="325" facs="332.jpg"/>μὲν γελῶσα</span>; jeg har dog oversat Stedet saa godt som Omstændighederne tillod mig.
+V. 102 har jeg oversat efter Reiskes Læsemaade:
+</prose>
+<poetry>
+<span lang="el">(”Ἤδη γὰρ Φράσδει πάνθ’) ἅλιος ἄμμι δεδύκει.</span>
+</poetry>
+<prose>
+Men H. Stephanus læste, noget nær med ligesaa god Grund:
+</prose>
+<poetry>
+<span lang="el">”Ἤδη γὰρ Φράσδη, πανθ’ ἅλιον ἄμμι δεδυκεῖν.</span>
+</poetry>
+<prose>
+og andre have læst anderledes; men ingen vilde følge Scholiastens Vink: <span lang="el">διὰ τὴν μετὰ τᾶς Ἄρεως μίξιν λέγει, ἣν ἔδειξεν ὁ ἥλιος.</span> Det er dog høist besynderligt, at Daphnis saa aldeles forbigaaer den meest berygtede og latterligste af alle Gudindens Elskovshandeler, og det var derfor let mueligt, at denne Scholie kunde grunde sig paa en ældre Læsemaade, eller være et Stykke af en anden bedre Scholie. Maaskee kunde den, fra hvilken denne Forklaring først er kommen, have læst:
+</prose>
+<poetry>
+<span lang="el">”Ἤδη γὰρ Φράσδη, πάνθ’ ἅλιον ἄμματα δεῖξαι”</span>
+</poetry>
+<prose>
+eller noget lignende; og da var Meningen: Du hader de Dødelige, fordi du troer, de ere vidende om den Skam, du har baaret.
+V. 105 i Texten, har jeg med Reiske læst <span lang="el">δέρκεται</span> isteden for <span lang="el">λογῦται</span>.
+<pb n="326" facs="333.jpg"/>V. 107 har jeg udeladt af Oversættelsen, da det ganske fordreier Meningen; det henhører til Idyll. 5. V. 46, hvor det læses i rigtig Sammenhæng. At de foregaaende Linier paa begge Steder endes med samme Ord, kan have givet Anledning til Feiltagelsen. Ogsaa Stroth ansaae det for uægte. Bindemann har oversat det, skiøndt han heller ikke troer, det hører hertil.
+V. 109 foreslaaer Reiske at læse <span lang="el">εἴκει</span> for <span lang="el">ἕρπει</span>.
+V. 120 og 121 staae afrevne fra al Sammenhæng. Jeg har vovet at henføre dem til Textens V. 113. Det forekommer mig, som man giør Theokrit Uret, naar man vil have dem ansete som en Gravskrivt, i Sammenligning med Virgil. Ecl. 5. V. 44, 45. I saa Fald maatte man vel antage, at et Par foregaaende Linier vare tabte, og det vilde dog være en høist ubetydelig Gravskrivt.
+V. 125 har jeg fulgt Læsemaaden: <span lang="el">Ἕλικα’ δὲ λυκ’ ἠρίον.</span>
+
+<right>Ch. A. Lund.</right>
+</prose>
+</body>
+</text>
+
+<text id="magnusson20261127501" author="magnusson">
+<head>
+  <title>Thule’s Klage</title>
+  <subtitle>
+    <line>H. K. H. Kronprinds Friderik tilegnet.</line>
+    <line>(I April 1802.)</line>
+  </subtitle>
+  <firstline>O prinds! som saae i Feidens Dage</firstline>
+
+  <source in="bd70" pages="327-330" facsimile-pages="335-338"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph>
+Og det skeede paa Krigens Dag, at der ikke blev funden <w>Spyd eller Sværd</w> i nogen af Folkets Haand.
+<right>2 Sam. 13, 22. cfr. v. 19.</right>
+</epigraph>
+<poetry>
+O prinds! som saae i Feidens Dage
+hver Danmarks Borger væbne sig,
+som saae os Sværdet glade drage
+for Landet, Kongen og for Dig;
+som Cimbren saae mod Britter stride,
+Og trodse Kugler, Ild og Søe;
+en Nøding hver, som ved din Side
+med Glæde ikke vilde døe!
+
+Du hørte, at i Danmarks Egne
+kun Borgermodets Stemme lød,
+Ved Krig dets Hær Du saae ei blegne,
+men længes efter Heltes Død; —
+saa fast og bold som Norges Fielde
+Du saae dets Søn at gaae til Krig,
+<pb n="328" facs="335.jpg"/>uræd for Hav-Despotens Vælde,
+stolt af at kunde slaae for Dig.
+
+Ja, Prinds! Du saae, hvad Dine Fædre
+i Feidens Tider fordum saae,
+det danske Folk sit Navn at hædre,
+for Kongen Mand hos Mand at staae, —
+Dog ak! mens efter Krigens Torden
+de kiekke Daner fryde sig,
+Dit værgeløse Folk i Norden
+i Fienders Vold kan savne Dig.
+
+I Island, Klippers kolde Sæde,
+den Frihedsaand er endnu varm,
+der før, som ædle Barder qvæde<footnote>See Hr. Sysselmand Johnsonius Anhang til Thaarups Ode om Fædrelands-Kierlighed i Kongl. Isl. Litt. Selskabs Skrifter.</footnote>,
+har blusset i Thulensers Barm.
+Man ofte saae ham Livet lade
+med Glæde for sit Fødeland;
+For Kongen trodsed Bonden Dade<footnote>See Biskop Harboes Isl. Reformationshistorie i D. Vidensk. Selsk. Skr.</footnote>
+en fiendtlig Hær og Kirkens Band.
+
+Som Klippen fast i hine Dage,
+mod Fyrstemagt og Folkekiv,
+<pb n="329" facs="336.jpg"/>stod mangen Helt, Tyranners Plage,
+og offred’ Landet Gods og Liv; —
+Thord Anderson i Thules Dale
+med Tak og Hæder nævnes maa,
+som Helt og Borger skal Cacale
+paa ædle Scanders Liste staae.
+
+Naar, kiekke Magnus! Du befalte:
+»Til Vaaben gribe hver en Mand!«
+Ei Tvedragts Aand da af Dig talte,
+men kierlig Iver for Dit Land;
+Du følte: »her i Orlogs-Stunde
+hver, ung og gammel, riig og arm,
+som Lam for Kniven falde kunde,
+til Offer for en Røvers Harm.«
+
+Om stedse Fædres ædle Skikke
+og Dit Exempel her var fulgt,
+hvor fro var Thules Folk da ikke,
+som trygt og frit, skiøndt armt og dulgt.
+Da Daad og Manddom skulde hæve
+sit Hoved op af Støv igien,
+hver Fiende døe, men sikker leve
+hver Landets og hver Kongens Ven.
+
+Men ak! i Værgeløsheds Lænker
+maa Tapres Afkom bundet staae;
+<pb n="330" facs="337.jpg"/>her ingen meer paa Forsvar tænker,
+thi hvo kan uden Vaaben slaae?
+O Prinds, vort Haab, vor Nordens Ære!
+See til Dit Folk, dets Redning byd,
+det Vaaben giv, og lad det lære
+at føre Værget, Mandens Pryd!
+
+Da skal blandt Thule’s fierne Ætter
+i Landets Værn Dit Minde staae;
+dets raske Mænd ved Krigs-Idrætter
+skal signe den, som bød dem slaae;
+for Landets Frihed, Folkets Ære,
+Ild brænde skal i Aand og Blik;
+Og Mødre skal de Spæde lære
+At signe Siette Friderik!
+
+<nonum><right>Finn Magnusen.</right></nonum>
 </poetry>
 </body>
 </text>

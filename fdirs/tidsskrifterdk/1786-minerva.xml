@@ -5,6 +5,7 @@
   <year>1786</year>
   <pagebreaks/>
   <!-- Bind 3: intet rettelsesark. -->
+  <errata in="bd05" status="reviewed" pages="388" facsimile-pages="398"/>
   <errata in="bd04" status="reviewed" pages="852" facsimile-pages="448"/>
   <proofreadings>
     <!-- Bind 3. -->
@@ -12,14 +13,22 @@
     <proofreading model="gpt-6.1-sol" datetime="2026-10-28T17:11:20.448Z"/>
     <!-- Bind 4. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-10-28T17:07:56.621Z"/>
+    <!-- Bind 5, Mariehøien og Censurens Oprindelse. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-27T11:38:37.562031Z"/>
+    <!-- Bind 5, øvrige digte og de to prosafabler. -->
+    <proofreading model="gpt-6.1-sol" datetime="2026-11-27T11:39:04Z"/>
   </proofreadings>
   <notes>
+    <note editorial="true">Bind 6 er endnu ikke medtaget i tekstudvalget. Den tilgængelige skanning mangler trykt s. 519–527. <a href="https://books.google.dk/books?id=62A3AAAAMAAJ&amp;pg=PA528">↬</a></note>
     <note editorial="true">Bind 3: Udvalg af bindets digte. Prosabidrag er ikke medtaget.</note>
     <note editorial="true">Bind 4: Udvalg af bindets digte. Prosabidrag er ikke medtaget.</note>
   </notes>
   <pictures>
     <picture src="1786-minerva-03-p1.jpg" type="titlepage" primary="true"><transcription>Minerva, / et / Maanedskrift. // Tredie Bind. // Kiøbenhavn, / trykt hos Johan Frederik Schultz. / 1786.</transcription></picture>
     <picture src="1786-minerva-04-p1.jpg" type="titlepage"><transcription>Minerva, / et / Maanedskrift. // Fierde Bind. // Kiøbenhavn, 1786. / trykt hos Johan Frederik Schultz. / Kongelig Universitets Bogtrykker.</transcription></picture>
+    <picture src="1786-minerva-05-p1.jpg" type="titlepage">
+      <transcription>Minerva, / et / Maanedsskrift. // Anden Aargangs / Første Bind. // Kiøbenhavn, 1786. / trykt hos Johan Frederik Schulz. / Kongelig Universitets Bogtrykker.</transcription>
+    </picture>
   </pictures>
   <source id="bd03" href="https://books.google.dk/books?id=YV83AAAAMAAJ" facsimile="1786-minerva-03.pdf" facsimile-pages-num="428">
     <title>Minerva</title>
@@ -39,9 +48,14 @@
     <printer>Johan Frederik Schultz</printer>
     <year>1786</year>
   </source>
-  <source id="bd05" href="https://uforbederlig.dk/tidsskrifter/Minerva-2aarg.htm">
-    <title>Minerva</title>
-    <volume>5</volume>
+  <!-- Michigan/Google Books. Billedrækkefølgen bevares. -->
+  <source id="bd05" href="https://books.google.dk/books?id=iGA3AAAAMAAJ" facsimile="1786-minerva-05" facsimile-pages-num="404">
+    <title>Minerva, et Maanedsskrift</title>
+    <editor id="pram" type="editor">Christen Henriksen Pram</editor>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>5 (2. årgangs 1. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schulz</printer>
     <year>1786</year>
   </source>
   <source id="bd06" href="https://uforbederlig.dk/tidsskrifter/Minerva-2aarg.htm">
@@ -4143,6 +4157,1565 @@ Af den en Blomst for dig, min Søn!
     Skal spire op igien.
 
 <nonum><right>J. M. Castberg.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<!-- MINERVA-NEW-IMPORT -->
+
+<section level="1">
+<head>
+  <title>Julii 1786</title>
+</head>
+<content>
+<text id="rahbek20261127501" author="rahbek">
+<head>
+  <title>Mariehøien</title>
+  <subtitle>en Romance.</subtitle>
+  <firstline>Lyksalig er den vilde Mand</firstline>
+
+  <source in="bd05" pages="84-91" facsimile-pages="94-101"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<epigraph lang="la">
+Scis bene, cui dicam, positis pro nomine signis;
+Officium nec te fallit, amice, tuum.
+</epigraph>
+<poetry>
+  Lyksalig er den vilde Mand,
+Naturens Søn! dens Datter er hans Skiønne!
+  Naar hun kun elsker ham, ei Rang, ei Stand,
+Kan hindre hende, fra hans Elskov at belønne.
+  Vær lykkelig! hun uden Tvang kan sige,
+Og flyve i hans Favn, og de er’ lykkelige!
+
+  Kan Europeeren det ei?
+Indvender du: kan nogen Vildmand trykke
+  En mere elsket til sit Bryst end jeg?
+Ven! sielden, sielden som dit Hierte, er din Lykke;
+  Og du fortiener den, ved at erkiende,
+Hvor meget Himlen gav, den Gang den gav dig hende.
+
+  Dog sikkert sander du med mig,
+Forelsktes Kummer rørte tit dit Hierte.
+<pb n="85" facs="094.jpg"/>  O! den er værd at være lykkelig,
+Hvis Lykke hærder ei hans Bryst mod andres Smerte!
+  Vi ofte gruende saae Brødre træde
+En Broders Lykke ned med grum, med Diævleglæde.
+
+  Saa faldt og dette ømme Par,
+Hvis Kierlighed jeg reise vil et Minde.
+  Du dem en ædel Taare offret har;
+Gid denne Sang af dig graadblandet Bifald vinde!
+  Men den som Torden for Barbaren lyde,
+Der Herrens første Lov i Herrens Navn tør bryde!
+
+  I tætte Skov, bag Hillerød,
+Jævnt tvende skyggefulde Høie stige.
+  Her selv Naturen Elskov Skiul tilbød;
+En Elsker mødtes her hver Aften med sin Pige.
+  Marie og Georg nød skyldfrie Glæde,
+Trods Pavens haarde Bud, og strænge Frænders Vrede.
+
+  Den Hellige, hvis Navn hun bar,
+Hun lignede i Fromhed og i Ynde.
+  Georg var hende værd. Kan dette Par,
+Skabt til hinandens Løn, ved ædel Elskov synde?
+<pb n="86" facs="095.jpg"/>  Han geistlig var; ham Elskov var forbuden.
+Den Fordom er ei meer — o! vi har nok desuden!
+
+  Naturens Røst tit sagde dem,
+At Pavens Bud ei Herrens kunde være.
+  Da kiække Luther dem til Trøst stod frem,
+Og Rygtet førte hid hans Levnet og hans Lære,
+  De alt i Haabet bedre Tider smage.
+O! hvad er rigt paa Haab, som Elskovs første Dage?
+
+  Hun stial sig ud, naar Soel gik ned,
+Sin elskte Ven paa yndte Høi at møde.
+  Der Aftnen blid blandt rene Glæder gleed;
+Den lange tunge Dag de lønne og forsøde.
+  Lyksalig, hvo langt — langt fra Stæders Vrimmel,
+Fandt i en Ørk, som de, ved elsket Bryst sin Himmel!
+
+  Paa een gang kom de stedse hid;
+Hver frygtede at komme der for silde.
+  Med karrig Haand udmaales Glædens Tid;
+Vee den, som nænne kan, et Øieblik at spilde!
+  For tidlig dem dog stedse overfalder
+Det mørke Øieblik, dem fra hinanden kalder.
+
+<pb n="87" facs="096.jpg"/>  En Aften kom Georg derhid,
+Og savned’ første Gang sin Elskerinde.
+  Han saae mod Hillerød, og hid, og did —
+Forgieves! ingensteds Marie var at finde.
+  Med bange Røst han hendes Navn udstøder;
+Men ham fra Skoven kun en ængstlig Gienlyd møder.
+
+  En Skræk, som den kun fatte kan,
+Der selv har skielvet for sin Elsktes Dage,
+  Bespænder den ulykkelige Mand;
+Hver rædsom Tanke nye og fæl’re forjage.
+  En Stemme pludselig hans Rædsel ender;
+Hans Navn gientager den; Maries Røst han kiender.
+
+  End veed han ei, hvorfra den kom.
+Med frydfuld Iil han allevegne søger.
+  Nu høres den igien; han seer sig om —
+En skovbekrandset Søe ved Høiens Fødder spøger —
+  Han længe vildsom blandt dens Buske løber,
+Da Vandet ham tilsidst hans Elsktes Billed røber.
+
+  See! sagde hun, og rakte ham
+En Blomsterkost: til dig jeg disse søgte,
+<pb n="88" facs="097.jpg"/>  Da jeg din glade trygge Gang fornam.
+Marie, tænkte jeg, skal lære dig at frygte.
+  Men er du vreed, og feilede din Pige,
+Her er hun i din Favn, du hendes Dom afsige!
+
+  Naar saae jeg sidst min Brud saa glad?
+Udbrød han, da de Høiens Top betraade. —
+  Gud! raabte hun: Mon vi skal skilles ad?
+O! Smerte, Smerte spaaer min overvættes Glæde.
+  Omkring mit Hierte kryber Dødens Kulde —
+Om det var sidste Gang! Ven! om vi skilles skulde!
+
+  Det skal I! tordnede en Røst. —
+Af Skræk betagen, hun den neppe kiender.
+  Hun gysende foer op fra Munkens Bryst,
+Og saae den nærmeste imellem hendes Frænder.
+  Tit Frænder troe, Naturen dem har givet
+En hellig Ret, til at forgifte Frænder Livet.
+
+  Saa var dog ei min Møie spildt,
+Den Grusomme med giftig Spot vedbliver:
+  Snart, kiælne Par! snart skal du blive skilt;
+Et Øieblik endnu jeg naadig eder giver:
+<pb n="89" facs="098.jpg"/>  Jeg maatte ene eder overfalde;
+Dem, eder skille skal, jeg iler nu at kalde.
+
+  Han gik. Lynslagne stod’ de der.
+Omsider sank de i hinandens Arme.
+  O! brød hun ud: Det sidste Gang da er —
+Det sidste Favnetag! — o Himlen sig forbarme!
+  O! var og dette Aandedræt mit sidste!
+Og maatte i din Favn Maries Hierte briste!
+
+  Marie! skreg han, hvis du vil! —
+Alt blinker Morderkniven i hans Hænder —
+  Forstaaer jeg dig? o! min Georg! stød til!
+Os Døden samlede til Glædens Rige sender.
+  Snart! lad mig i din Favn min Aand opgive!
+O hør! de komme alt, som mig fra dig vil rive!
+
+  Selv styrer hun det grumme Stød,
+Og døende i Munkens Arme falder.
+  Som Blomstret segner, saa var hendes Død.
+Med søde matte Røst hun end sin Elskte kalder:
+  Du følger mig! det kan mig alt forsøde;
+Marie leved’ din, Georg, og din hun døde!
+
+<pb n="90" facs="099.jpg"/>  End eengang stammer hun hans Navn,
+Og bristende hang Øiet paa den Arme.
+  Han længe stum holdt hende i sin Favn;
+Tilsidst udbrød han: Gud sig over dig forbarme!
+  Du kaldte mig; jeg efter dig skal ile;
+Men ved din Side maa din Morder ikke hvile!
+
+  Med Gysen sidste Kys han tog,
+Og væbnet hen paa Nabohøien iler.
+  Nu nærmer sig det hele Frændetog.
+Bort! bort! Vanhellige! en Engel hisset hviler!
+  Saa tordner han mod hendes grumme Frænder,
+Og det blodstænkte Staal mod eget Hierte vender.
+
+  Seer eders Værk! o! nyder det!
+Med dette Staal jeg myrdede den Fromme.
+  Men Herren over Miskundhed og Ret,
+Og begges Blod og Synd skal over eder komme.
+  I! Eders Grumhed væbned’ disse Hænder.
+Thi heller, heller død, end piint af slige Frænder!
+
+<pb n="91" facs="100.jpg"/>  Nu, min Marie! see din Ven!
+Han i sit piinte Hierte Staalet støder. —
+  Man gysende til begge iler hen;
+Og dobbelt Vunderne begyndte nu at bløde.<footnote>Overtroens Mærke paa, at Liiget rørtes af sin Morder.</footnote>
+  Man gruende paa Stædet dem begraver,
+Vil sone Gud og dem med Sang og Sielegaver.
+
+  Hver Nat, er Sagnet, skal han gaae
+Om Graven, hvor hun hviler af sin Smerte.
+  Jeg selv rundt om den Græsset nedtraadt saae;
+Et helligt Gysende bradt giennemfoer mit Hierte. —
+  O er da dette Liv saa armt paa Plage,
+Da Mennesker med Flid forgifte Brødres Dage?
+
+<nonum><right>Rahbek.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="zetlitz20261127501" author="zetlitz">
+<head>
+  <title>Ved en stærk Tørke</title>
+
+  <firstline>Jehovah tugter os; tungt hvile Herrens Hænder</firstline>
+
+  <source in="bd05" pages="91-94" facsimile-pages="101-104"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+Jehovah tugter os; tungt hvile Herrens Hænder
+    Paa Landet — Solen har forglemt sin Miskundhed,
+<pb n="92" facs="101.jpg"/>Forstener Dalens Skiød, og Bakkerne forbrænder;
+    Og Natten har ei Dug, thi Nattens Gud er vreed.
+Alt over golde Land vantreven Hunger triner
+    Med Philippidens Sverd og Neros grumme Miner.
+
+Som Klippens Marmor, haard er Sletten — visnet hænger
+    Det ynkelige Straae ved den saftløse Rod;
+Og Floras skiønne Slægt den broged’ Pomp bortslænger,
+    Hvormed, trods Fyrstens Pragt, den nylig prydet stod.
+Veemodig Ceres gaaer omkring den svedne Ager,
+    Og over Solens Glød og Skyens Nidskhed klager.
+
+Hist det forhungred’ Qvæg af hæse Strube brøler,
+    Mens Lærken sidder taus paa en forvisnet Green.
+Najaden giemmer bort sin Urne; Kilden nøler;
+    Sin Iil har Elven glemt, dens Gang er træg og seen.
+Ja selv sit raadne Vand den hule Mose nægter
+    Den Vandrer, som af Tørst og Solens Ild vansmægter.
+
+<pb n="93" facs="102.jpg"/>Med Haanden under Kind, som hede Taare væder,
+    Seer Agermanden spildt sin Tid, sit Slæb, sin Sveed.
+Han seer den mavre Sult at ruge paa de Steder,
+    Hvor ellers Ceres stod i gylden Herlighed.
+Et Blik paa muntre Børn, som ved hans Side leeger,
+    Og Livets Kalk er beedst for ham, som Dødens Bæger.
+
+Affældig Olding, graae af Alderdom og Møie,
+    Imellem Haab og Tvivl udspeider Himmelen,
+Og glædes ved hver Skye, hans halvudslukte Øie
+    Opdager hist og her udsaaet over den;
+Men Storme, som Guds Haand udsendte i sin Vrede,
+    Men Storme Skyerne og glade Haab adsprede.
+
+Alt Aasyn skiftet har; selv hiin høirøstet Torden,
+    Hvis Gang er frygtelig igiennem Skyerne,
+Hvis Røst er Hævnens Røst til dem, som boe paa Jorden,
+    Hvis røde Haand er fuld af Ødelæggelse,
+Hvor ønsket nu dens Røst! — hvor glad den Skye jeg skuer,
+    I hvis langsorte Skiød den giemmer sine Luer!
+
+<pb n="94" facs="103.jpg"/>Men Herren bød — den taug, og ingen kierlig Draabe
+    Maa ledske Jordens Tørst, maa slukke Jordens Brand.
+Miskundelige Gud! — hør Millioner raabe.
+    Hør Angstens hæse Skrig fra et fortørret Land!
+Byd Skyen aabne mild sit rige Forraadskammer,
+    Og slukke Jordens Tørst, og Jordens Sønners Jammer.
+
+<nonum><right>Zetlitz.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="buchholm20261127501" variant="buchholm2026092016" author="buchholm">
+<head>
+  <title>Til Kiedsomhed</title>
+
+  <firstline>Til Hekla byder jeg dig flye</firstline>
+
+  <source in="bd05" pages="94-96" facsimile-pages="104-106"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+Til Hekla byder jeg dig flye,
+Du Satans kiere Mesterstykke!
+O Kiedsomhed! min Barm du skye,
+Og andensteds forsøg din Lykke!
+Bliv trygt hos den, som daarlig troer,
+I Sværm at undflye Kiedheds Plager;
+I Sværm, hvor just din Hæder boer,
+Hvor taus din Orm saa pinlig nager.
+
+    Du følger os paa hver en Sti,
+Hvert Øieblik tienstagtig reede:
+I Kirken stod du Moloch bi,
+At giøre Siele kold’ og kiede;
+<pb n="95" facs="104.jpg"/>Dit Værk det var, at Præsten slog
+Omsonst i purpurklædte Fiele;
+At ei hans Torden Skræk indjog
+De af din Aand indblæste Siele.
+
+    Hvor meget hitted du ei paa,
+Hver Høst og Vinter, Vaar og Sommer?
+Til Bal, Concert, Colads man gaar,
+Utilsagt allesteds du kommer;
+Blot dig til Lyst gik Tiden hen
+Ved prægtigt Bord med Sneese Retter;
+Hvor nedsat hos en ukiendt Ven
+Man, Maven vel, ei Sielen mætter.
+
+    Unægtelig du har din Gang
+Paa gylden Slot blandt Sværm og Bulder;
+Og blyetung du med Baandet hang
+Dig tidt om Stiernemandens Skulder.
+Hvor Lys og Glæde smilte før,
+Du puster givtig Mørk og Længsel,
+Hver Gnist af Vid i Gisp hendøer,
+Og gyldne Sal bliir skumle Fængsel.
+
+    Kun der hvor Bachus Helten er,
+Du stundum maae tilbagerømme;
+Og knysende see Glæden der,
+Af fulde Glas til Hiertet strømme.
+<pb n="96" facs="105.jpg"/>Tidt saae jeg, hvor du fremkom bleg,
+For lumsk dig med i Laug at snige,
+At Glædens Røster dig bortskreg,
+Saa feig og flau du maatte viige.
+
+    Mindst saaes du, hvor en Elsker glad
+Sad henrykt ved sin Elsktes Side;
+Contrast mod dig ei Elskov gad
+Dit ubeqvemme Selskab lide;
+Og Elskovs gode Skik det er,
+At byde Tiden let henglide;
+Den kiender ei til din Maneer,
+Den snegleseen at lade stride.
+
+    Flye hvor du vil, kun mig du skye
+Du Molochs sande Mesterstykke;
+Min Barm, o Kiedsomhed, du skye
+Forsøg kun andensteds din Lykke!
+Men er du hevnfuld, vil du ei
+Jeg skal undgaae din leede Harme,
+For hvad jeg sang — saa trodser jeg,
+Og leer dig ud i Damons Arme.
+
+<nonum><right>Magdalene Sophie Buchholm<footnote>Det er den vore og alle danske Læsere saa bekiendte, som af dem alle yndede Digterinde, der forhen kaldte sig <w>M. S. Castberg</w>, der her bliver dem bekiendt under hendes ny Navn, hvormed vi haabe den Lykke, ofte at kunne pryde vore Hefter.</footnote></right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>August 1786</title>
+</head>
+<content>
+<text id="anonym1700dk20261127503" author="anonym1700dk">
+<head>
+  <title>Maculatur</title>
+  <source in="bd05" pages="192-202" facsimile-pages="202-212"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+Tak skee vore Dages Opfindsomheds Aand, der veed at giøre Brug af alt, endog de unyttigste Ting!
+    Støv og Aske, som synes os saa ubetydelige, at vi med deres Navn belægge de Gienstande, vi ikke agte, have alt i lang Tid været Ingredientser til mange herlige Sager, som prale i de prægtige Sale. Gammelt forrustet Jern erholder ved Støbningen nye skiønne Dannelser; Glas- og Porcellainskaar tiene til nye Kar; og af de Pialter, den fattigste Betler bortkaster, opstaaer Papir, som giver vore nye Bogskriveres Skare Liv og Udødelighed.
+    Dog ikke dem alle. Nogle, og, ville vi sætte Troe til Kritiken, de fleeste, leve, som Ephemerider, een Dag, og døe saa i en Krog af Bog<pb n="193" facs="202.jpg"/>laden, hvor de ligge begravne i Mørket, indtil de gaae frem som Maculatur, og vise sig i mangehaande forskiellig Skikkelse.
+    Men ogsaa Maculatur, saa foragteligt Navnet end stedse maatte synes, er af uundværlig Nytte; den Reisende, Kiøbmanden, Kræmmeren, og ikke blot disse, enhver veed det af daglig Erfaring, at de fortiene vor Tak, som skaffe Maculatur i Verden.
+    Uagtet det vidtudbredte Gavn, vi have Maculaturet at takke for, kunne vi dog, medens Mængden af Skrivter af allehaande Slags saa meget tager Overhaand, ikke noksom takke de Svenskes Opfindsomheds Aand, at den har anviist Maculaturet endnu een nyttig ny Bestemmelse.
+    Digtere, Talere, Polemikere, Recensentere, Roman- og Comoedieskrivere af alle Nationer, I, som tilforn vare kaldede blot til at levere Materialier til Kræmmerens Boed! I arbeide nu, for at skaffe eders Medborgere Tag over Hovedet, hvorunder de tryggeligen kunne boe, siden den Konst er opfunden, af Papiir at forfærdige Tagstene, som ere dem af Leer at foredrage.
+    Selsom, tænkte jeg, da jeg, en forladt, vandrende tydsk Poet, drog ind i en liden Stue i Stokholm, selsom er dog den Blanding af Bogskrivere, som her boe hos hinanden, og fredeligen <pb n="194" facs="203.jpg"/>skiule dette Tag. Fattig er jeg; dog gav jeg mit første poetiske Indfald, ja min bedste Ode, Elegie eller jambiske Satyre, for at kunne høre disse Tagstenes Historie.
+    Faldt jeg i Søvn, og var det en Drøm; eller blev mig, som Pygmalion med hans Elisa, eller som Engel og Mendelsohn ved Bonnets Statue, mit Ønske hørt? — Nok, en nærliggende Papiirs-Tagsteen begyndte virkeligen at tale:
+    Gud skee Lov! sagde den, at jeg igien kan aande frit! Neppe havde jeg seet Verdens Lys, da en mørk Boghandler indsluttede mig i sin Hvælving, og jeg blev glemt. Dog var jeg et vigtigt Værk, og vilde have oplyst hele Verden. Jeg vovede mig til det, som syntes mig herligst, til det guddommelige Ord; jeg paraphraserede, commenterede, exegeserede, polemiserede, var ivrig som Beze, og lærd som Huet og Bellarmin; og dog vilde ingen kiøbe mig. Men sagde, mine Paraphraser svækkede Grundtexten, og giorde den saa vaklende, at Arianere, Socinianere og Manichæerne beraabte sig paa den. Min Exegese vilde nogle ikke forstaae, andre ikke antage; mine Commentarier kaldte man Skolelærdom, og min Polemik skieldede Ondskab for Uvidenhed, og den nymodiske Ver<pb n="195" facs="204.jpg"/>den for Mangel paa Levemaade. O den fordervede Verden!
+    Jeg var mere beskeden, sagde en anden Tagsteen; jeg vilde lære Menneskene at blive Digtere og Talere; jeg underviiste dem derfor, hvorledes de med Lethed skulde finde Riim, og jeg forklarede dem Rhetorikens Figurer. I Begyndelsen tog man i Skolerne mod min Hielp; Leilighedspoeterne søgte i mig Blomstre og Riim, at fylde tre Foliosider med; men da fremstode nogle, som vilde vide alting bedre end andre. De paastode, at der hørte Digter- og Taleraand til at frembringe Digter- og Talerarbeider. Mængden snakkede dem efter Munden; man lod mig forældes, og enhver, der dog ved min Hielp havde i det mindste kunnet finde et reent Riim, troer nu at digte af egen Aand, naar han skriver det urimeligste Tøi af Verden.
+    Hvad er Tale- og Digtekunst! faldt hans Naboe ham i Ordet. Jeg lærte Menneskene at tænke; jeg anførte dem til at finde Sandheder af Barbara, og giendrive Sophismer ved Ferio; jeg anatomerede ontologisk Værdens, og metaphysisk Sielens-Bygning. Aristoteles levede op igien i mig, og jeg gav det femtende og sextende Aarhundreds ædle Disputeerkunst Hæder og Anseelse. Tappre Helte opstode af min Skole, og <pb n="196" facs="205.jpg"/>kivedes til Blodet. Paver, Konger, Geistlige Dommere, Skoledrenge, førte mine Vaaben; og hvor disse ikke forsloge, toge de, for Overbeviisnings Skyld, Bandstraaler, Baale, Torturer, og Nævepuf med til Hielp. Endnu vilde mit Herredømme varet, og Verden nydt dets Lyksalighed, hvis ikke Carthesies <i>Cogito, ergo sum,</i> saa skammeligen var blevet misbrugt. Locke gav heri det skadeligste Exempel; han tænkte i en Logik, hvor han dog kun skulde have givet Reglerne for at tænke; han giorde Iagttagelser, i Stedet for at metaphysicere; Shaftesbury og Hume strøede endog Viddets Fiinhed og attisk Salt i deres Philosophie; Leibniz plan Grundighed, Newton mathematisk Vished, Mendelsohn Gracie og Smag. Der laae jeg og mulnede. De faa Venner, jeg beholdt, vare ikke mægtige nok til at rive mig ud af mit Mørke. Dog haaber jeg, naar den Skielden paa Voltaire først faaer taget Overhaand; naar det nymodiske Raserie, at ville tænke, af de fornuftige Regierere over Censuren, eller Tænkere for andre, igien manes ind inden en regelmæssig Tænkemethodes Grændser, at da et andet Oplag vil holde mig skadesløs for det Offer, jeg nu paa mit Tag maae bringe Menneskenes Tøilesløshed.
+<pb n="197" facs="206.jpg"/>    Chimærer, skolastiske Narrestreger! raabte en hæs Stemme. Hvo i vore Dage bekymrer sig vel om forrige Tiders Reuchliner og Ramuser? Statistik, Politik, det er nu Ordet. — Jeg giorde Planer og Projecter; jeg beregnede i min Studerstue Staternes statistiske Gehalt; jeg skrev Speilere for Regentere, Opdragelsesskrivter for deres Prindser, Anviisninger til Landfolkets Dannelse, og kom aldrig ud af Huset, for at kunne granske saa meget des modnere. Hvo skulde have troet, at mine Forslage ikke bleve hørte, fordi Verden, som ikke gad tænke, forlangte Erfaring af mig? Erfaring kan hver Bonde, hver ustuderet Mand have; og dog — o den Utaknemmelighed! — dog brænder nu Solen mig, eller Regnen og den kolde Snee bedækker mig her paa Taget.
+    I have vel Aarsag at klage! raabte en anden. I ere hendøde i Fødselen, eller I have blot levet i ubekiendte Hænder. Ak at jeg, som I, aldrig havde smagt den udødelige Prises Bæger! min nærværende Skiebne vilde da falde mig mindre smertelig.
+    Og hvem er da du? spurgte paa een Gang alle de omliggende Tagstene.
+    Neppe var jeg kommen for Lyset, svarede hiin, førend der begyndte en rivende Søgning efter mig, af alle, fra den Fornemste til den Rin<pb n="198" facs="207.jpg"/>geste. Jeg laae i Ministerens Cabinet og i Skostikkerens smudsige Værksted, eller i Citronsælgerskens Kurv. Det første Oplag var i Hast forbi; et andet kom ud, et tredie fulgte derpaa, og, desværre! af dette er jeg.
+    Tagstenen taug; dog var den almindelige Nysgierrighed opvakt. Var du maaskee et Digt, som besang een af Fædrenelandets store Tildragelser? — Ney — Eller en almeennyttig Roman, som, hvor fordærvet Mennesket end er, dog altid beholder nogen Agtelse? — Nei — Eller en Anviisning til at blive riig, at vedligeholde sin Ungdom, at vide tilkommende Ting, efter hvilke, som St. Germain meget rigtigen skal have sagt sin Ven Cagliostro, enhver fra Fyrsten til Slaven løber? — Nei, Nei, Nei. — Nu saa siig! hvad var du da?
+    Jeg angreeb Statens bedste Menneskers Sæder, hvor de syntes mig at kaste nogen Skygge paa deres Levnet; jeg søgte at giøre dem forhadte, afmalede dem som farlige, udstrøede hemmelige Anekdoter, skrev i populair Stiil. Nogle kaldte mig Skandskrivt, andre Recension, andre Satyre, andre endog en Dask; men alle læste mig, alle Bibliotheker optoge mig. Dog, Nyheden forgik, og Dunkelhed fulgte paa min glimrende Roes, endskiønt jeg havde forenet Klog<pb n="199" facs="208.jpg"/>skab med Talent. Jeg angreb aldrig Folk, som ved deres Anseelse i Staten kunde blive mig eller mine Læsere farlige. Man vidste paa Kaffehusene at læse mig op udenad. Vovede jeg mig til de Store, eller til Lykkens Favoriter, saa var det, naar de vare faldne.
+    Gid en Hvirvelvind hev dig ud af vort Selskab! raabte forbittrede alle de andre Tagstene; selv Polemikerne, selv Disputererne raabte saa.
+    Fredbydende lespede sagte en melodisk Stemme: Endogsaa endnu i den raa Skikkelse, til hvilken Skiebnen har forvandlet mig, lider ved eders det uharmoniske Bulder mit følsomme Øre. O! at den skiønne Opfindelse, den, ved Kobbere efter Chodowiecky, at redde den finere Følelses Værker fra Makulaturens Vanhæder — o at denne tidligere var opstaaet! Ogsaa jeg skulde da, reddet ved dette Middel, ikke befinde mig i disse Vanhelliges Selskab, og i det mindste i læsende Landstæders Leie-Bibliotheker beholdt et Sted, for i Aftenskumringen at indaande den føelsomme Stuepige et stille Hæng til Tungsindigheden. Endnu er, om I kun tie, Eensomhed min eneste Trøst, især naar den glindsende melankolske Maane beskinner mig arme Tagsteen, eller naar Aurora med sine Rosenfingre bortvisker Duggen af Tagene!!!
+<pb n="200" facs="209.jpg"/>    Med rolig Alvorlighed hævede en anden Tagsteen sin mandige Stemme: Bestem, du Sandheds og du Oplysningens Moder, du sunde Fornuft, om jeg tager feil, eller har Ret! I et Barbaries Land vovede jeg at bearbeide Videnskaberne, at bestride Fordomme, at unddrage den slette Smag dens adlede Ret, og at afrive Blindheden Sløret. I Politiken, i Moralen, i Gudstienesten vilde jeg føre Menneskene tilbage til de opklarede Naturloves Simpelhed. Konger og Slaver syntes mig at være lige langt borte fra Menneskeheden, og hvor stor end Afstanden er, syntes mig bægge, som Mennesker, paa det høieste at være ærværdige. Love syntes mig kun da høie og hellige, naar de, ukonstlede og utvungne, vare overeensstemmende med Naturens Forskrivter, og med Menneskets Bestemmelse til dets Fornufts Brug, til dets Kræfters Udvikling, til Flids og Arbeidsomheds Nødvendighed. Blant de mange Slags Gudstieneste: den som Perseren udøver i Marken, udbredende mod Solen sine Hænder; den som Mahomedaneren udøver i Moskeen, og Christenen i Kirken, syntes mig kun Hiertets Gudsdyrkelse at være den sande, og overalt, hvor der blev stredet om nogen anden, hver anden at burde opoffres for denne. Min Forfatter skrev af egen Trang til Sandhed. Han oversatte ogsaa frem<pb n="201" facs="210.jpg"/>mede Smagens, Moralens, Philosophiens Værker, og vi, hans Værker, bleve, som hans Landsmands Bertolas, der vilde giøre Italienerne bekiendte med de tydske Muser, og Biancontis, som forekastede dem deres Uvidenhed, til Maculatur. Lykkelig var han, at han dog undgik den Forfølgelse, som Galilei maatte udstaae.
+    Stemmer, som aldrig tie, skraldede nu paa een Gang; men uforstaaeligt var deres Bulder. Jeg sluttede heraf, at det var idel Stridsskrivter, i hvilke Vid seirer over Vid, hvor sund Fornuft og grundig Udvikling aldrig hører hiemme, hvor Sæders Fiinhed stedse sættes ud af Synskredsen, god Smag viger for Passionen, og som stedse blive til en sand Hanefægtning, ved hvilken Tilskueren en Tid lang gotter sig, og som denne vel endog ved Vædden i Fægtningen veed at giøre interessant for den Vindende. Værker af den Art, som vi have de utrættelige Fingre at takke for, som Hr. Agent Gyldendal skienker et ephemeridisk Liv, og som Publicum i Begyndelsen læser, og, naar det er trættet, henviser til Steenpapiirs-Fabriken i Sverrig.
+    Men en endnu lydeligere Stemme syntes at ville overdøve Stridsskrivternes Skrig. Altsammen, hørte jeg det skrige, af Hr. Nicolais Boghandel og paa hans Forlag! Hvorledes, <pb n="202" facs="211.jpg"/>tænkte jeg bestyrtset: lyder her en stor Konstdommers, en smagfuld Forfatters Navn? Hvorledes — neppe vovede jeg at spørge — allgemeine deutsche Bibliothek her? Dog, førend jeg havde endt mit Spørgsmaal, blev jeg min Vildfarelse vaer. Rosenkreuzerske Skrivter, Morgen- og Aftenandagter, opbyggelige Bøger af alle Slags, hævede deres Stemmer, og med dem, faste ved Sympathie, atten sværmeriske Børn af een eneste Fader, og den tause Skare af sværmeriske Efterlignere af een uopnaaelig Original. Lutter afsættelige Varer for Mængden, saasnart de komme ud, og en riig Kilde til Gevinst for Boghandlerne, men des lettere Maculatur, naar Overtroens Ruus er forbi, og ingen meer gidder see paa et Skrivt, som ved første Salg indbragte Boghandleren hundrede Procent. Jo dummere Publicum er, siger Sebaldus Nothankers Forfatter, des mere Vinding for Boghandleren; og saaledes leverer Hr. Nicolai Materialier nok for Papiirtagene, medens hans Pen søger at udvide Philosophiens og Smagens Rige.
+    Larmen tog saadan Overhaand, at jeg ikke var i Stand til at forstaae mere; og, som det pleier gaae i en Storm, paa det høieste Bulder fulgte et almindeligt Stille.
+</prose>
+</body>
+</text>
+
+<text id="baggesen20261127501" variant="baggesen2019080303" author="baggesen">
+<head>
+  <title>Censurens Oprindelse</title>
+
+
+  <firstline>Den hele vide Verden veed —</firstline>
+
+  <source in="bd05" pages="203-234" facsimile-pages="213-244"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+<center>En ny</center>
+<center>og</center>
+<center>sandfærdig Historie,</center>
+<center>om</center>
+<center>Oprindelsen til Bog-Censur;</center>
+<center>hvorlunde</center>
+<center>den blev opfunden af en gammel Borgemester i Kallundborg, som ikke kunde lide, at man 100 Aar i Forveien havde fortalt en meget uskyldig Historie.</center>
+<center>Efter ringe Evne, paa Riim</center>
+<center>forfattet</center>
+<center>af</center>
+<center>Simon Simonsen</center>
+<center>uværdig Substitut ibidem.</center>
+<center>Med den dybsindige Magister Ypsilons sprænglærde Anmærkninger.</center>
+<pb n="204" facs="213.jpg"/><center>Den grundlærde, belæste,</center>
+<center>berømmelige Mester</center>
+<center>Rasinius,</center>
+<center>virkelig Bogbinder i Slagelse,</center>
+<center>Min høigunstige Patron og Velynder,</center>
+<center>eller, som vi Lærde kalde det:</center>
+<center><i>Moecenas, grande decus, columenque rerum,</i></center>
+<center>dediceres dette ringe Skrivt</center>
+<center>af</center>
+<center>Forfatteren.</center>
+</prose>
+
+<poetry>
+<pb n="205" facs="214.jpg"/>Den hele vide Verden veed —
+Ved hele Verden, Notabene!
+Poeter, i Særdeleshed,
+Syv, otte gode Venner mene;
+Jeg følger i Poeters Fied,
+Og altsaa: hele Verden veed,
+At, for umaadeligen længe siden,
+Da Kronprinds Humble selv var gandske liden,<footnote>Altsaa i Kong Dans Tid; thi Humble var en Søn af Dan, som Saxo fortæller i sin Grammatica.
+<poetry>
+Man heraf tydelig kan see,
+Historien er meget ældre,
+End den maaskee for mange lader —
+
+<nonum><right><i>Hist. Jeppe p. 175.</i></right></nonum>
+</poetry></footnote>
+En Hest i Kallundborg Borgmester blev,
+Som Peer sig kaldte, Peer sig skrev;
+Sit Tilnavn kunde han aldeles ikke lide,<footnote>Jeg finder, at det var Asen. <i>Ejusd. Hist.</i> p. 154.</footnote>
+Og Fornavn var paa den Tid ingen Skam —
+Hvad om den hele Verden fik at vide
+Lidt meer om ham?
+
+  Det gaaer Skribenten, der giør Verden Cour,
+Naar Verden tier stille som en Muur,
+<pb n="206" facs="215.jpg"/>Aldeles som en anden Frier:
+Han troer, at man samtykker, naar man tier.
+Den sidste feiler gierne meget lidt;
+Den første tit.
+Maaskee jeg og mig her formeget lover —
+Men hvad! den vinder ei, som ikke vover.
+
+  Saa hør da min Fortælling, lille Jord!
+Og ryst og bæv med alle dine Throner,
+Og alle disse Hof-Cameleoner,
+Som vrimle rundt derom fra Syd til Nord!
+Thi stor er Tingen, som jeg taler om,
+Og større Manden, fra hvis Bug den kom,
+Da Kundskabs Straaler dens i Skygge døde —
+Jeg siger Bug; thi ingen Hierne var
+Vidtloftig nok, den Sag er soleklar,
+Til dig, o Kiempe! dig Censur! at føde:<footnote>Man har nok hørt, at et Bierg har født en Muus; men man har aldrig hørt, at en Muus har født et Bierg.</footnote>
+
+  Frygt ikke, Læser, denne Hæftighed
+Skal vare hele Tiden ved!
+Det var et lille Glimt af Pieriden —<footnote>Muserne have en naturlig Modbydelighed for Censur; det blotte Navn kan indjage den raskeste Pieride en Koldfeber.</footnote>
+Ved een og anden Leilighed
+Jeg bliver vel i Hovedet lidt heed;
+Men sagtnes efterhaanden siden.
+
+<pb n="207" facs="216.jpg"/>  I Konning Dans forlængst henfarne Dage
+Var Kallundborg en gandske anden Stad.
+Der var en mægtig Hob, jeg veed ei hvad,
+Hvoraf, desvær’! nu lidet er tilbage:
+Der gaves Folk, som kunde færdig Jydsk,
+Lybsk, Holsteensk, Hollandsk, Flamsk, Sverinsk og Tydsk;
+Ja Kræmmere, som havde Been i Panden,
+Og blot ei Horn — som kunde tviste med
+Achill og Don Qvixott’ i Tapperhed,
+Og gave Lybeks sorte Tavle Fanden;<footnote>Man har i Lybek den slemme Skik, at opslaae de fremmede Kiøbmends i de smaae Kiøbstæder, eller rettere: Høkeres Navne, som have giort Fallit, og ikke kunnet betale, paa et sort Brædt, til evig Spot og Skiændsel.</footnote>
+Pastorer, som holdt Troen reen og puur,
+Og jog’, ved Hielp af Aandens Naade-Gave,
+Hvert Kiettersviin af Helligdommens Have,
+Som, for dens Peberrodder at opgrave,
+Sig sneg saa lumsk omkring paa Luur.<footnote>Derfor sagde Anholts Historiograph til Paars:
+<poetry>
+Vor Troe er reen og puur, som den var paa de Tider,
+Kong Dan ved Roret sad. —
+</poetry></footnote>
+Studenter, som for nogle faa Rosiner
+Forklarte hele Curtius paa Jydsk,
+Og Skriverkarle, som med lærde Miner
+Endog Aviser tolked’ ud af Tydsk;
+<pb n="208" facs="217.jpg"/>For hvilke Læsning, selv i velske Bøger,<footnote>Det vil sige: i velsk Bind indbundne. Saaledes pleier min høigunstige Patron, som jeg har dedic’rt dette ringe Skrivt, at sige: Gid jeg havde en Skilling for alle de <i>Katulusser</i>, <i>Qvidulusser</i> og <i>Vigiliusser</i> jeg kiender baade paa velsk og fransk og i Marmorbind! <right>Forf. egen Anm.</right></footnote>
+Var ingen Konst —
+Ak! slige Folk man nu omstunder søger
+Omsonst.
+
+  Blandt mange flere slige Herligheder,
+Som jeg vil springe reent forbi,
+Var og i Kallundborg et Trykkerie,
+Som den Tid fandtes næsten ingen Steder.
+Ja, somme holde for (og rimeligt det er),
+Den skadelige Konst, at trykke Bøger,
+Er egentligen først opfunden der
+Af en fordømt Knapmager Tøger,
+Som Fanden tog engang paa Veien til Corsøer,
+Lig Doctor Faust en Tid derefter —
+Og, som ved slige Folk han næsten altid giør!
+Beviis herfor er over mine Kræfter;
+Jeg hader al Slags Klammerie ...<footnote>Min Fætter, Simon Simonsen, farer uden tvivl vild heri; thi Bogtrykkerkonsten er vist ikke opfundet i Danmark. Man siger, at Chineserne have havt den længe før. Den lærde Boxhorn holder for, at den er opfunden i Haarlem. En stor Deel ere enige om at den da er allerførst opfundet i Strasborg af en vis Johan Gutenberg. Accursius, en meget lærd Mand, paastaaer, at den er først blevet bekiendt i Maynz, og at en Donat, som han selv eiede var den første trykte Bog. Denne Meening er jeg af; thi hvad er rimeligere, end at Junker Slenz, som paa samme Tid kom her til fra Menz, see Hist. P. Paars, har bragt den gandske frisk til Callundborg, og derved givet Anledning til denne Vildfarelse? See mere herom i <i>Chevilliers Origine de l’imprimerie à Paris.</i></footnote>
+Nok, at der den Gang var, som sagt, et Trykkerie.
+
+<pb n="209" facs="218.jpg"/>  Men Trykkerie er eet, og Trykkerie er to!
+I den Fald Kallundborg var et Geneve:
+Man tænkte hvad man vilde, skrev i Roe,
+Og Skrivter ubedømte trykte bleve.
+Man derfor og fornam, at meer og meer
+De gamle Hæxe svandt med deres Herre;
+At Haandværksfolk blev efterhaanden fleer,
+Og Tiggere hver Løverdag blev færre;
+Thi Konster, Videnskaber voxte frem,
+Og Klogskab i hver Næringsvei med dem;
+Man boede mageligt i nette Huse
+Som for det meeste stod’ i lige Rad,
+Man spiiste god og vel tillavet Mad,
+Og drak sin Miød af skiønt glaserte Kruse.
+Aar efter Aar der meer oplyste Stad
+Blev smukkere. Rundt om dens vestre Side
+<pb n="210" facs="219.jpg"/>En Skov af Skibe saaes, opfyldte med
+De fierne Jordens Egnes Herlighed.
+End skiønnere man saae mod Østerlide
+Det velopdyrkte rigdomsvangre Land
+At prange, liig et Strøg af lutter Haver,
+Med alle Jordens moderlige Gaver.
+
+  Saaledes over alt paa Mark og Vand,
+I Husene, paa Torvet og paa Gaden
+Var nyttig Flid, og Ploven, Axen, Spaden,
+Knibtangen, Øxen, Naalen, alt blev brugt,
+Med mærkeligen meer og mere Frugt.
+Meer ordentlig gik Sagerne til Tinge;
+Meer ordentlig i Kirken Sangen gik;
+Man hørte bedre Byens Klokker ringe;
+Kort alt — endog de Halte bedre gik —<footnote>Den maae have liden eller ingen philosophisk Kundskab i Historien, som kan finde dette Malerie paa Virkningen af almindelig Oplysning overdrevet. Og den bør aldrig læse Vers, som tager hver Linie i denne Tirade efter Bogstaven; thi man kan dog vel ikke i en comisk Fortælling beskrive Virkningen af Trykkefrihed i en enkelt lille Bye, paa samme Maade, som Virkningen af dens velgiørende Soel over hele Stater. At jeg <i>non præter solitum levis</i> synes hist og her at trække paa Smilebaandet, kan derfor ingen fornuftig Læser udtolke, som Letsindighed i denne Henseende. Skrev jeg en alvorlig philosophisk Afhandling om denne Materie, og bar mig saaledes ad, da fortiente jeg at fradømmes Forstanden uden Naade.</footnote>
+Men rigtig nok man stundom fik at læse
+<pb n="211" facs="220.jpg"/>En lille Vise, trykt i dette Aar,
+Som rynked’ hist og her en fornem Næse
+Vor Herre veed hvorfor;
+Og rigtig nok (thi lyve vil jeg ikke)
+Kom ud en Gang en atheistisk Bog,
+Hvori Forfatteren til Punct og Prikke
+Beviiste, „Den var ikke rigtig klog,
+„Som troede, Jorden sad og Himlen rendte —
+„Saa stor en Høflighed.“ (Gud frie os! hvilke Ord!
+En Gysen giennem Præst og Præstedeien foer)
+„Man ikke“ sagde han, „af Himmelen maae vente.“
+
+  Klog over det, som skrevet staaer,
+Bør ingen from, retsindig Christen være!
+Og trykke Bøger, hvor det gaaer,
+Er egentlig dog intet andet, Kiære! —
+Saaledes raisonnerte den og den,
+Som var i Troen nogenlunde kræsen;
+Særdeles Præsten og Borgmesteren
+Leed ingenlunde dette Trykkevæsen,
+Som, sagde de, var Aarsag i,
+At Vantroe, Sviir og Horerie,
+At Kiettermeninger og Poesie,
+Logomakie<footnote>Præsten bildte sig ind, at Logomakie var en Videnskab; en Feiltagelse, som meget kan undskyldes, da man gemeenlig finder den i Selskab med alle Videnskaber.</footnote>, Astronomie,
+<pb n="212" facs="221.jpg"/>Og frem for alting, Atheisterie
+Fik Overhaand i alle Byens Gader,
+Ja selv i Herrens Huus, skiønt det utroeligt lader,
+Saa stærkt, at Folk henslumred’ mangen Gang,
+Naar Prækenen var blot tilbørlig lang,
+Endogsaa paa de lave Stolestader.
+
+  Imidlertid gik Pressen ligefuldt.
+Lad dem kun smøre, de profane Hunde!
+Saa længe vi, trods deres tapp’re Sult,<footnote>Sult bruges ofte i Steden for Geist. <i>Paupertas impulit audax, ut versus facerem</i> &amp;c.</footnote>
+I vore Kanapeer rolig blunde!
+Saa tænkte Byens Fædre — men, o Vee!
+Vee! Vee dig Kallundborg! din lærde Hæder
+Skal snart fordunkles! Dumhed snart skal lee
+Paa den Ruin, hvor alt Minerva græder!
+
+  En Dag, saavidt jeg veed, en Hundedag,
+Borgmesteren sad i sin Stoel, hvis Arme,
+Hvis magelige Sædes lumre Varme
+Min skrøbelige Geist er alt for svag
+Til at beskrive ret; elastisk hæved’
+Det kielne Duun, dens silkebløde Barm,
+En Duft, som slukte strax hvert Glimt af Harm,
+Omkring dens tause Damask døsig svæved’ —
+<pb n="213" facs="222.jpg"/>Kort: dypped’ jeg i Lethe Qvæders<footnote>En af vore meest flittige malende Digtere, som jeg vilde fornærme ved at nævne, da han er for berømt til, at ikke hver Læser ved Beskrivelsen jo strax maae udraabe: Hvo kan det være uden vor store, utrættelige &amp;c.</footnote> Pen,
+Og skrev paa Valmu Dag og Nat med den,
+Jeg kunde den ei søvnig nok afmale —
+Desuden var maaskee min Stræben her
+Reent overflødig; thi, desværr’!
+Maaskee min Læser ligger alt i Dvale.
+O! skyd, i saa Fald, Skylden ei paa mig;
+Men blot paa Stolen!
+
+                     Med den dybe Mine,
+Som for en saadan Mand kan skikke sig
+Hvis rummelige Mave faderlig,
+Maa giemme hele Byens Fryd og Pine
+Sad den velviiseste. Den Roelighed,
+Den philosophiske Dybtænksomhed,
+Og overvættes store Sielefred
+Man seer paa Dalens fede Konges Pande
+Mens han i Græsset sagtelig slængt ned
+I Skyggen af et Træe, ved Kildens Bred,
+I Dyssen af de musicalske Vande,
+Med vigtig Taushed tygger Drøv,
+Sad paa hans store purpurrøde Næse,<footnote>Slige Perioder, hvori man saa lumskeligen lader Nominativus og Verbum lege Skiul, ere nu omstunder meget i Moden, endog i Prosa; endskiønt de falde især en Oplæser meget for Brystet. Man maae Skik holde eller Land flye. I Juvenals Tid hed det: <i>omnia græce!</i> i vores hedder det: Alles auf Deutsch!</footnote>
+<pb n="214" facs="223.jpg"/>Hvor man med liden Møie kunde læse:
+Siel! hold dig klogeligen i dit Støv!
+
+  Som Solen, naar den kobberrød fremstikker
+Imellem tykke Skyer i taaget Luft,
+Saa fremstak af Parykkens Bukkel-Busk
+Hans Ansigt i en Damp af Portorikker.
+I slig Forfatning havde han for Skik,
+At smøge sig i Slummer alle Dage;
+Men hvordan det nu gik og ikke gik,
+Saa vilde Søvnen ei i Dag behage,
+Paa Pibens Vink at nærme sig som før;
+Han røg, og røg igien, og røg sig ør,
+Men intet Blund han fik, end sige Slummer —
+— Ak! ingen Dødelig er frie for Kummer! —
+Liig Kong Asverus lod han hente da
+Den gamle store Stadens Chronika,
+(En Bog, fem Gange tyve Vintre gammel,
+Der ellers brugtes for hans Søn til Skammel
+Og for ham selv, at løfte til Motion)
+Hvoraf hans Kone pleied’ i slig Knibe
+Mod Søvnløsheden Antidot at gribe,
+Og forelæse ham saa stor Portion,
+Som til forønskte Virkning at frembringe
+<pb n="215" facs="224.jpg"/>Var nok. Som oftest var den Dosis ringe;
+Thi deels Borgmesteren, for sin Person,
+Til snart at slumre var utrolig nem,
+Og deels var Bogen til at assoupere
+Fast ligesaa beqvem;
+Men denne Gang hun maatte læse mere:
+Hvad Ord for Ord, aldeles paa et Haar
+Som det i samme gamle Krønik staaer,
+Jeg her min Læser troelig vil levere<footnote>Denne Kallundborgske Krønike, eller som den hedder paa Titelbladet: <i>Chronicon Callunopolitanum</i>, er en meget tyk Foliant, fuld af store Mærkværdigheder. Den er skrevet fornemmelig paa Jydsk af en ubekiendt Forfatter, henved hundrede Aar før Kong Dans Tid. Den store Hans Mikkelsen har meget betient sig af dens Fortsættelse til sin Historie om den vidtberømte Peder Paars; men den egentlige Krønike synes han ikke at have kiendt. Den er overmaade rar, gandske defect; og paa de fleeste Steder af Ælde ulæselig.</footnote>
+
+  Den —<footnote>Det var egentlig den 28de; men hun kunde ikke læse Tal, besynderlig, som de stod paa dette Sted: XXVIII.</footnote> <i>hujus</i> døde Christen Smed
+Den hele Bye til stor Fortræd
+Han var en brav og nyttig Mand,
+Beslog en Hest med stor Forstand,
+Paa Laase giorde mange Sving,
+Slog Dier ud for ingen Ting.
+Gid hisset han ei saa maae svede,
+Som han har altid giort hernede! —
+<pb n="216" facs="225.jpg"/>„Endnu du sover ei, min lille Mand?“
+Udbrød den standsende Borgmesterinde,
+„Nei! læs kun meer“, igientog han,
+„Det vil sig haaber jeg paa Timen finde;
+„Jeg ei begriber denne Søvnløshed;
+„Nu vel! læs meer! bliv ved! — og hun blev ved:“
+
+  Vor Præst, som nyelig var lidt svag,
+Blir feed og fyndig Dag fra Dag.
+Han kan lidt meer end Fadervor,
+Og maner stærkt, som Ordet gaaer.
+Alligevel for Tyverie
+Den stakkels Mand er ikke frie.
+Forleden misted’ han sin Hest.
+Vor Herre skaane kun vor Præst!
+Borgmesterinden standsed her igien:
+„Du slumrer ei endnu?“ O nei! vist ikke!
+„Jeg slumrer ei saa snart i Dag, min Fikke!“
+(Saa heed’ til daglig Brug Borgmestersken.)
+„Du nok kan mærke, hvis jeg sover hen;
+„Jeg snorker, som du veed; bliv ved at læse
+„Saa længe til du hør Signalet af min Næse! —
+Borgmestersken begyndte da igien;
+Men sprang tre fire Blade reent forbi,
+Som der var alt for meget moersomt i;
+Man derfor ene hende Skylden give
+Om Følgende lidt kiedsomt skulde blive:
+
+<pb n="217" facs="226.jpg"/>  Den Tyv, som stial Herr Nielses Hest
+Blev greben sidste Mortensfest,
+Og bragt paa Stand for Magistraten,
+Som arresterede Krabaten.
+Man kneb ham med saa megen Fynd,
+At han tilsidst tilstod sin Synd
+Blev foresiunget, forelæst
+Af den sagtmodige Niels Præst,
+Og siden paa en Sluffe slængt,
+Kiørt ud, vendt om, berettet, hængt;
+Men, som man snart vil mærke det,
+Altsammen overmaade slet.
+
+  Det henved Midnatstide var
+Og Maanen skinte ganske klar,
+Og mange Stierner blinkte ned
+Paa Marken og paa Tyven med;
+(Thi Maanen seer paa slig Person
+Saa vel som paa Endymion)<footnote>Nogle holde disse to Linier for uægte.</footnote>
+Da kom paa Hesten, trap, trap, trap,
+Jens Skovfogd ridende saa rap,
+Forbi det gyselige Sted,
+Hvor Dievle vogte, som man veed,
+Thronen for Retfærdighed.
+Ret, som han rider bedst, og seer
+Ad Galgebakken til — hvad skeer!
+<pb n="218" facs="227.jpg"/>En Røst, liig den af Belzebul,
+Saa rædsom, underlig, og huul
+Ham brøler ud fra Galgen: Stop!
+Og, vips! foer Kolden i hans Krop;
+Han skialv, som Esp, og i sin Skræk
+Forglemte han at spore væk
+For i Gallop at komme fort,
+Som jeg i hans Sted havde giort.
+
+  Han saae, og lytted’ nok engang,
+Og nok et Stop fra den, som hang;
+Han slog et Kors, slog to, slog tre,
+Men ligemeget hiulpe de;
+Han takked’ i en Bøn for Mad,
+Men ihvor inderlig han bad,
+Kom dog den samme Lyd igien
+Fra Fandens nylig hængte Ven.
+
+  Jens var for Resten ei Poltron,
+Og hidtil aldrig kaldt Cuion;
+Han tog paa sin Samvittighed
+Det allerstørste Rangelled,
+Og slog med det engang en Tyv,
+Og qveste hele slige syv,
+Som vilde plyndre lumsk hans Hiem;
+Men der var ogsaa Liv i dem;
+I denne Dievel derimod
+Var intet uden bare Blod,
+<pb n="219" facs="228.jpg"/>Og ingen, ingen Moders Siel
+Kan slaae tilgavns en Død ihiel;
+Selv naar han Græsset maatte bide,
+Al Fordeel var paa Tyvens Side.
+
+  Imens han raisonnerte saa
+Lod Tyven atter fra sig gaae
+Endnu et Skraal, som vores Helt
+Fandt mere liveligt end fælt,
+Og som, hvordan det ogsaa var,
+Den Ting ham giorde soleklar,
+At der var Liv et cætera,
+Hvor dette sidste Skraal kom fra.
+
+  Liv altid var Jens Skovfogd nok —
+En levende Banditer-Flok
+Han meget heller Spidsen bød,
+End een, som, nok saa tam, var død;
+Og derfor reed han, hop sa sa!
+Did, hvor den Lyd af Liv kom fra.
+
+  „Hvordan,“ udbrød han, „er det fat?
+„Er du i Live Kammerat?“ —
+„Ja! skiær mig ned, o! Christen Siel!
+„Jeg ellers hænger reent ihiel!“ —
+„Band paa, du lever, først! hvis ei,
+„Jeg løber strax igien min Vei!“ —
+„Ja vist! i Dievels Skind og Been,
+„Jeg lever! ja! den Sag er reen;
+<pb n="220" facs="229.jpg"/>„Men lever handfast, som du seer,
+„Og døer, hvis — o! jeg kan ei meer.“ —
+
+  Jens Skovfogd tænkte lidt sig om,
+Og snart til sin Beslutning kom;
+Thi det er dog særdeles sødt,
+At bringe Liv igien i Dødt.
+Jeg troer, ved saadan Leilighed
+Jeg og en stakkels Tyv skar ned.
+
+  Jens Skovfogd tog sin Tællekniv,
+Og raabte: løb, og frels dit Liv!
+— Og ned sprang Tyven, liig en Kat,
+Der lang Tid har i Tønden sat,
+Naar Drages<footnote>Drages. Poetisk for Amagers. Saaledes: Gnossius for Creta.</footnote> Helt med vældigt Drag
+Den redder i et Seiersslag —<footnote>Man seer heraf, at dette Pøbel-Ridderspil (thi der er Riddere blandt Pøbelen, ligesom der er Pøbel blandt Ridderne) er meget ældre end man formoder. Naar man betragter visse Øvelser, som ere giængse ved det, f. Ex. at trække Halsen af en Gaas &amp;c., skulde man snarere troe det var opfundet af Caraiber, Rinosser, Pongos, Qvojos, Oran-Utangs, eller andre saadanne Yahoos, end af Christne. Jeg finder derfor og et andet Sted i Krøniken, at det er først opfundet af Hollændere.</footnote>
+
+  Lig en forrykt, beskienket Mand,
+Som Glæden jager fra Forstand,
+<pb n="221" facs="230.jpg"/>Han takked’ ham, som gav ham Liv
+Ved Mod og Kierlighed og Kniv —
+Og Glæden af at giøre vel
+Betog vor Jenses hele Siel:
+„Løb!“ sagde han, „af alle Kræfter!
+„Og stiæl nu aldrig meer herefter!“
+
+  „Du gav mig Livet,“ gientog han,
+„Kun for at døe paa nye, min Mand!
+„Hvor skal i Nat jeg arme hen?
+„Klyng mig i Galgen op igien!
+„Forvildet, saaret, bange, mat,
+„Man faaer mig letteligen fat,
+„Hvis jeg til Morgen ei hos dig
+„Maae lidet vederqvæge mig.
+„Troe mig det er en egen Sag
+„At have hængt en gandske Dag!
+„Lad mig udsove slig en Skræk,
+„Og pille mig i Morgen væk!
+„Hvis ei, saa heller, kiære Ven!
+„Klyng mig i Galgen op igien.“
+
+  Jens fandt den Sag ret rimelig,
+Og sagde: „Kom da hiem til mig!“
+Og tog ham bag paa Hesten, rap,
+Og reed til Huset, trap! trap! trap!
+
+  „Min Kone sover,“ sagde han
+(En Helt er altid kierlig Mand)
+<pb n="222" facs="231.jpg"/>„Giør derfor, Landsmand! ingen Larm;
+„Men læg dig her, og sov dig varm!“
+Og viiste ham en opredt Seng;
+„Sov vel! og ei i Drømme hæng!“
+„God Nat!“ og derpaa begge to
+Sig sloge meget snart til Roe.
+
+  Jens havde med fra Marked hiem
+To nye Støvler, hængte dem
+Paa Sengestolpen, hvor han laae,
+Og faldt i Slummer strax derpaa.
+
+  Vor hængte med sin lange Hals
+Var Søvnen ei saa let tilfals.
+De Støvler fik han Øie paa,
+Og meer og meer paa samme saae;
+Han saae saa længe, saae saa tit,
+At han til dem fik Appetit;
+Han vel tillukked’ Øiet; men
+De Støvler lukked’ op igien.
+Og hvor han vendte Synet mod,
+De nye Støvler for ham stod;
+De blanke var, og uden Meen,
+Og syntes giorte til hans Been —
+Som Tyvs, hans eget gamle Par
+I jammerlig Forfatning var;
+Thi hvor kan Retten tænke paa
+En Fyrs Forlegenhed som saa?
+<pb n="223" facs="232.jpg"/>Man troer gemeenlig, een, som hænger,
+Af alting mindst til Støvler trænger —
+Han stirred’ atter paa dem hen,
+Og Napse-Nykken kom igien:
+<i>Naturam furca pellas ex;</i>
+Hun kommer dog igien, den Hex!<footnote><i>Naturam expellas furca, tamen usqve recurrit,</i> hedder det, ɔ: Jag Naturen ud med en Høetyv eller med en Galge; (thi <i>furca</i> betyder begge Dele) den løber dog atter tilbage! Af slige latinske Sententser er den Kallundborgske Krønike gandske fuld. Den Maade de ere bragte i Riim paa, som f. Ex. her, røber tydelig Alderdom og Barbarie.</footnote>
+Han saae paa dem, han saae paa sine,
+Og tænkte: De skal være mine!
+
+  Som tænkt, saa giort! han listed’ sig
+Til Sengestolpen lumskelig,
+Fik Støvlerne fra Knagen ned
+Med al en hængts Behændighed,
+Og trak dem hurtig begge paa,
+Og vilde netop til, at gaae —
+Da Jens, som vaagned ved den Larm,
+Fik i ham fat med vældig Arm:
+„Fordømte Tyv! som nyelig hængt
+„Er end med Snapperie befængt!
+„Kom du fra Galgen før i Live,
+„Du nu for Alvor hængt skal blive!“
+<pb n="224" facs="233.jpg"/>  Saa sagde han, og trak ham med
+Paa Marken ud: „afsted! afsted!“
+Og puffede ham puf i puf,
+Og puffed’ af ham mangt et Uf!
+Det gik saa tyst den hele Vei;
+Thi skrige høit han voved ei,
+Indtil de kom til Galgen hen —
+Ved atter at beskue den,
+Blev han, der Hest og Støvler stial,
+Som han var gandske bindegal
+Og slog omkring sig vildt og fælt —
+Men Jens, som før er sagt, var Helt,
+Giengieldte Fyrens blinde Puf
+Med sikkre Slag, og i en Ruf
+Han styrted ham paa Jorden ned,
+Og bandt ham med Behændighed,
+Og klynged’ ham i Galgen op
+Tilgavns, med gandske Siel og Krop:
+„Raab nu, saa tit du gider, Stop!
+„Forsøg hver Lyd fra dig at give!
+„Du tredie Gang ei hængt skal blive!“ —
+
+  Det noget over Midnat var,
+Og Maanen skinte gandske klar,
+Og alle Stierner blinkte ned
+Paa Marken og paa Tyven med,
+Som hastig gav det sidste Suk,
+Og mukked’ siden ei et Muk.
+<pb n="225" facs="234.jpg"/>Jens Skovfogd gik sin Vei igien,
+Kom hiem, gik i sin Seng, sov hen,
+Stod op, og Morgenen derpaa
+Sig lod med ingen Ting forstaae.
+
+  Aurora mellem Østens Høie
+Kom i sit røde Skiørt og Trøie
+Med gyldenstykkes Hue paa,
+Og ligeviis paa Tyven saae.
+Ved samme Tid en sort Krabat,
+Som fuldt sig havde foresat,
+I Dag at ville slaae sig brav,
+Fordi han slemt i Gaar røg af,<footnote>Som i Skolerne gemeenlig skeer ved alle slige Leiligheder.</footnote>
+Kom, henrykt i Qvintilian,
+Og rendte paa Herr Urian.
+Han standsed’, studsed’, da han saae
+Ham med to nye Støvler paa,
+Og tænkte stirrende: mon Fanden
+End efter Døden rider Manden,
+At selv i Galgen han ei kan
+Afholde sig fra Rakkeran?
+Gud frie os! „Stiæle Støvler hængt,
+„Er før ei seet, ja neppe tænkt!“
+
+  Med disse Ord han rendte hiem,
+Og raabte høit, hvor han kom frem:
+<pb n="226" facs="235.jpg"/>„Den Tyv, som hængt i Aftes var,
+„Et nyt Par Støvler stiaalet har!“
+
+  Det hele Kallundborg kom ud,
+Og saae det Syn; bevar os Gud!
+De gamle Støvler borte var,
+I deres Sted han nye har.
+Man stirrede paa ham, som hang,
+Man loe, man græd, man peeb, man sang,
+Man giennemgik Physik, Moral,
+Og Hypotheser uden Tal;
+Kort sagt: den hele Bye blev gal —
+Men ingen kunde dog udgrunde,
+Hvor hængt man Støvler stiæle kunde.
+
+  Man efter Præsten Nielses Raad,
+Som selv begreb ei denne Daad,
+Omsider Haabet reent opgav,
+Om den at fatte nogen Tid,
+Før, som han sagde, bag sin Grav
+Man kom til noget mere Vid.
+
+  Borgmester Ebbe derimod,
+Som nok saa lidt deraf forstod,
+Var ei saa rolig i sit Fag
+Ved denne paradoxe Sag.
+Han paastod fast med Mund og Pen,
+At Tyven nok engang igien
+<pb n="227" facs="236.jpg"/>For dette Ran afstraffes skulde;
+Thi Tyverie er Tyverie;
+Og Tyv bør ei gaae Ram forbi,
+Fordi han ligger under Mulde.<footnote>En meget uegentlig Talemaade om en, som er hængt.</footnote>
+I mangen Act <i>in Folio</i>
+Man tvisted’ kontra, tvisted’ pro,
+Men kom med Sagen ei til Ende.
+Man veed endnu med Vished ei,
+(Thi saare lang er Rettens Vei)
+Til hvilken Kant den vil sig vende.
+
+  „Hvad!“ raabte vor Borgmester vild,
+Og slog sin Pibe reent itu paa Kanten
+Af Folianten;
+„Hvad!“ brølte han, „er det for en Pasqvil?
+„Det mig skal ramme, som jeg hører —
+„At lugte sligt, er ingen Konst!
+„Nu, ved min Mave! den fordømte Smører
+„Skal ikke have smurt omsonst!“
+
+  „O! Himmel!“ raabte hun, og slængte Bogen
+Saa langt hun kunde, hen i Krogen,
+„Du drømmer slemt, min lille Mand!
+„Vaagn op! og kom igien til din Forstand!
+<pb n="228" facs="237.jpg"/>„Og lad den fule, Smør, og Sild, og Lugt<footnote>Hun forstod ikke hans hidsige Declamation, og troede derfor, han drømte om disse Ting, som hun hørte en forvirret Lyd af.</footnote>
+„Og alt det andet fare! vaagn nu smukt!“
+
+  „Hvad drømmer! drømmer! drømmer! nei desværre!
+„Jeg ikke fik et Blund, det veed vor Herre!
+„For al den Skumlen, som du læste der.
+„Det Frugten af den Hunde-Friehed er,
+„Alt hvad man vil at kunne trykke!
+„Fornam du ei, din Gaas! det hele Stykke,
+„Du læste der, var Skamskrivt over mig?
+„Men det skal hævnes! troe mig, sikkerlig!“
+
+  „Men, lille Mand!“ gientog med Smil Madammen,
+„Betænk, det er en grumme gammel Bog!
+„Og det er trykt og skrevet alt tilsammen
+„Før jeg og du blev født; betænk dig dog!
+„Du har jo Støvler aldrig stiaalet!
+„Du er jo hidtil ikke hængt, min Peer!“
+
+  „Ja gammel hid, og gammel her,
+„Den skal,“ saa bandte han, „paa Baalet!
+„Du dig kun lidt forstaaer paa slige Ting
+„Jeg seer en smule dybere; jeg veed
+„Som Dommer, som Jurist om sligt Beskeed.
+<pb n="229" facs="238.jpg"/>„Han meener mig med hele Magistraten;
+„Jeg rigtig nok engang har hængt en Tyv,<footnote>Det var paa den Tid Skik, at Øvrigheden selv forrettede slige Executioner — saaledes, som det endnu skeer i Engeland, naar ingen Hangman er tilstæde, og ingen anden vil paatage sig Forretningen.</footnote>
+„Trods ham, og al hans skammelige Praten,
+„Jeg kunde hænge slige syv!
+„Og hvis jeg havde ham, saa sandt, i Fælde,
+„Ham selv i Midten, om det skulde gielde.
+„Hvem anden meener han vel med den Mær,
+„Som kom imellem nogle Høie
+„Med guulrødt eller bruunrødt Skiørt og Trøie,
+„Og gyldenstykkes Hue noget nær —<footnote>Aurora, hvis Opgang Forfatteren af Krøniken i sin egen huuslige hverdags Tone havde beskrevet, som den skiønsomme Læser oventil selv kan læse.</footnote>
+„Hvem anden vel end dig? — Til Punkt og Prikke
+„Han dig har malt; min lille Fikke!
+„Hvem gaaer med gyldenstykkes Huer nu,
+„Med røde Damask-Trøier, uden Du?
+„Og, troe mig! med den sorte, det er reent,
+„Som han beskriver saa confus,
+„Han har vor ældste Søn, vor Petrus meent,
+„Som røg forgangen af med Nucleus.“
+<pb n="230" facs="239.jpg"/>  „Ja,“ sagde hun, „nu synes mig, min Peder!
+„At jeg begriber, du har Ret.
+„I Mænd dog alting fatte kan saa let;
+„Hvor er’ vi Koner dog kun Faar mod Eder!“
+— „Desuden,“ blev han ved, „jeg længe har
+„Mig ærgret over det fordømte Væsen,
+„At kunne trykke frit i hvad det var —
+„Hvad kommer der vel ud af al den Læsen?
+„En Skræder kan jo blive nok saa klog,
+„Som jeg; kan mønstre mig og hele Staten;
+„Kan trodse mig og hele Magistraten
+„Ved Hielp af een og anden lumpen Bog!
+„Spørg kun Herr Morten!<footnote>Saa hedd’ Præsten i Kallundborg.</footnote> han med mig vil sande!
+„Jeg tit har hørt ham Bøger at forbande;
+„Han siger: det er lutter Satans Kram!
+„Studeringer er’ blot for Folk, som ham,
+„Der kan sin Hierne styre selv og raade,
+„Og veed med Pønskningen at holde Maade —
+„Og, overalt! hvad Krøniken især
+„Betræffer, slig en Bog er ikke værd,
+„At være mere til, om ei for andet,
+„Fordi den mig har skilt i Dag
+<pb n="231" facs="240.jpg"/>„Ved Middags Søvnen — blot for denne Sag
+„Den være skal til evig Tid forbandet!“
+
+  Endnu før Solens Nedgang blev sendt Bud
+Til Præsten, som var stærk Zelot i Sagen;
+Og under megen Raslen, Knagen, Bragen,
+Blev Krøniken opofret Ildens Gud.
+Med al Høitidelighed dette Væsen
+I Borgemester-Gaarden foregik:
+De tvende Byens Fædre stod’ og saae
+Med megen patriotisk Fryd derpaa,
+Mens Røgen af den brændende Chronik,
+Satyrisk selv i Dødens Øieblik,
+Dem begge to stak ondskabsfuld i Næsen.
+
+  Den næste Dag kom en Forordning ud:
+At alle Exemplarerne af samme
+Opofres skulde Hævnens vrede Flamme,
+Som lige skyldige — med nok et Bud:
+At ingen, hvo det var, herefter mere
+Til Trykken maatte nogen Ting levere,
+Det være hvad det vilde, Klogt og Galt,
+Philosophier, Eventyr, Moraler,
+Ordbøger, Oder, Elegier, Taler,
+Satirer, Fabler, Krøniker, Annaler,
+Og andet sligt — med eller uden Salt —
+Paa Jydsk, paa Tydsk, paa Holsteensk eller Flamisk,
+Ja Græsk, Sverinsk, Franskst, Mesopotamisk,
+<pb n="232" facs="241.jpg"/>Før det af Byes Borgmester eller Præst
+Var nøie giennembladet, giennemlæst,
+Og dømt, hvorvidt det Statens Tarv og Ære,
+Og deres Bedste kunde tienligt være.
+
+  Saaledes for en Hests<footnote>Thi —
+
+<poetry>
+„Man sætte Mester for, man sætter Mester bag,
+„En Hest er dog en Hest, det er en afgiort Sag!“
+</poetry></footnote> afbrudte Slum
+Opofredes for evig hele Staden —
+Man hørte i et sammenmænget Brum
+Af Jammerskrig, hvorhen man kom paa Gaden:
+„Ak! vi har mistet vort Palladium!“
+
+  Borgmestren var, som han er nys beskrevet;
+Som Censor kiender man hans Dygtighed.
+Med Præsten Morten man, saavidt jeg veed,
+Saa nøie hidtil ei bekiendt er blevet.
+Jeg derfor af hans trufne Malerie
+Vil give her, saa godt jeg kan, Copie —
+Originalen hænger i Peer Paars —
+Han stærk og fyldig var, og lidt til Aars,
+Særdeles Kiender, frem for alt, af Heste;
+Men af sig selv, som Folk er fleest;
+Donat og sligt han engang havde læst,
+Og glemt igien; for Resten, som den beste,
+<pb n="233" facs="242.jpg"/>Han brægede for Altret; præked’ blot
+Et maadeligt Qvateer, og dog saa got,
+Som nogen, fik sin Meenighed i Slummer.
+I Skriftestolen var han meget skrap
+Især mod dem, hvis Offring var lidt knap;
+„Den rette Vei til Himmelen er Kummer,“
+Hans Mundheld var — og, som en Siele-Ven,
+Han derfor rundelig uddeelte den
+Med Lovens Straf og Prophetiens Varsler;
+Og skruppede de Døende med Klem,
+Til Lægen fra hans Torden frelste dem;
+I øvrigt: aad for fire, drak for fem
+Ved alle Bryllupper, Begravelser og Barsler.
+
+  Med disse Censor-Evner rustet ud
+Han hialp Borgmestren i at censurere
+De første, svage literaire Skud,
+Som Rectoren, Conrectoren, og flere,
+Hvis Navne jeg ei her opregne vil,
+Tildeels dog Calvinister, af og til
+Bad’ skiælvende Borgmesters Pige Rikke,
+Igiennem Borgemestersken: Frue Fikke
+At præsentere Borgemester Peer
+Til naadig Dom.
+
+                     Omsider meer og meer
+Man kiedtes ved, tit, uden Frugt, at tigge
+Til Trykken saadant Privilegium.
+<pb n="234" facs="243.jpg"/>Man tabte Vid med Modet og blev dum;
+Og endelig man skrev aldeles ikke.
+
+  Bestandig meer og meer svandt Staden hen;
+Thi Muserne Censurens Sæde skyede,
+Og Handel, Konster og Fabriker flyede
+Med dem i Hast til andre Kyster hen,
+Hvor Fred og Friehed trygt de kunde nyde.
+
+  Den hele Bye blev fyldt med Graad og Sorg.
+Ja! græd, ulykkelige Kallundborg!
+Vee! Vee! dig, arme Stad! din lærde Hæder
+Er nu fordunklet! Ignorance leer
+Paa den Ruin, hvor trøstløs Pallas græder! —
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk20261127501" author="anonym1700dk">
+<head>
+  <title>Naturen</title>
+
+  <firstline>I Glædens Egn, i Vaarens lyse Skygger</firstline>
+
+  <source in="bd05" pages="234-236" facsimile-pages="244-246"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+I Glædens Egn, i Vaarens lyse Skygger,
+Hvor ingen Sværm af vilde Daarer kom,
+Hvor Skovens Sangerske fortroelig bygger
+Sin Boelig i Dryadens Helligdom,
+Der herlige Natur! O der bereder
+Du for din Digter Støvets bedste Glæder.
+
+    Den Riige boe i gyldne Herresale
+Kun Smag og Pragt han rundt omkring sig see,
+<pb n="235" facs="244.jpg"/>Med Skaberværker Kunsten for ham prale,
+Paa kostbar Sopha Søvnen mod ham lee
+O hvad er Konst mod Vaarens Blomstertæppe?
+Og blødt som det er Silkeleiet neppe.
+
+    Den rige Jorddrot til hesperisk Have
+Maae kalde Indiernes Flora hen;
+O Trællens Haand maaskee har maattet grave,
+Ulønnet Sveed maaskee har vædet den!
+Og al hans Pomp dog svagt kun efteraber,
+Den Fryd, som du Natur ukonstlet skaber.
+
+    Ja maatte jeg min stille Bane vanke
+Omringet, herlige Natur! af dig,
+Og Salighed i Vaarens Aften sanke,
+Og ved dens Morgenstraaler fryde mig,
+O maatte da i Livets dunkle Dage
+En ædel Ven min svage Fod ledsage! —
+
+    Da skulde mig den blide Muse føre
+Paa Roser frem ved gyldne Strænges Klang,
+Jeg skulde Glædens vise Digter høre,
+Saa sødt som han i Tiburskoven sang.
+Narcissas Ven fra Støvet skulde drage
+Min Siel til Viisdom hen ved natlig Klage.
+
+    O! naar ei da forsømte Pligter svæve
+For Sielen frem i Helvedskikkelser,
+<pb n="236" facs="245.jpg"/>Naar ei min ringe Broders Suk skal kræve
+Af Himlen Hævn for mine Gierninger.
+O glad jeg da min Banes Maal skal finde
+Og ved min Grav skal Venskabs Taarer rinde.
+
+<nonum><right>(Uden Navn.)</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>September 1786</title>
+</head>
+<content>
+<text id="buchholm20261127502" variant="buchholm2026092012" author="buchholm">
+<head>
+  <title>Laura til Selim i hans lange Fraværelse</title>
+
+  <firstline>Hvor er du nu? ak Elskte! hvor betræder</firstline>
+  <notes>
+    <note>Om dette er skrevet i nogen eller ingen Anledning, forbeholder jeg mig; da det er Digtere tilladt at skabe sig Anledning om de vil, eller, hvis de har nogen, at dølge den.</note>
+  </notes>
+  <source in="bd05" pages="342-348" facsimile-pages="352-358"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+Hvor er du nu? ak Elskte! hvor betræder
+Du fremmed Egn saa langt fra mig?
+Hvad kalder man de lykkelige Steder,
+Som for min Længsel skiuler dig?
+Ak! om du paa troløse Bølger glider,
+Da Amor styre Skibet frem
+Til denne Havn, hvor Laura trøstløs lider,
+Og skuffet venter Selim hiem!
+Men nei! endnu et Sted i fierne Riger
+Du uden Længsel roelig er,
+Og skal jeg troe, hvad grusomt Rygte siger,
+Du elsker andre Piger der.
+Jeg ei vil troe, jeg ikke meer vil tænke
+Saa grum en Tanke — var den sand,
+I Gravens Skiød den skulde mig nedsænke;
+Der er dog Roe i Dødens Land;
+Der uden Sorg de følesløse hvile,
+<!-- S. 343 er fejltrykt 309. --><pb n="343" facs="352.jpg"/>Der sukker ingen Elskov meer,
+Ei Usles Graad ei Lykkeliges Smile
+Det sammenlukte Øie seer.
+Tit naar jeg ved den blege Maands Smile
+Omvandrer eenlig Kirkegaard,
+Jeg ønsker mig blant dem, som roelig hvile,
+Som ingen Harm og Uroe naaer;
+Thi Livet har kun idel Nag og Smerte,
+Og oftest gaaer blandt Torne den
+Med tunge Fied, som fik et kierligt Hierte
+Til bitter Lod af Himmelen.
+Dog, elsker du mig, o da gid jeg leve,
+Og glemme al den Sorg jeg har,
+Ach! om engang igien vi samled bleve,
+Jeg glemte let, jeg sorgfuld var.
+Men nu! — omsonst min Ven jeg dig vil male
+Den Kummer, som fortærer mig!
+Jeg ene gaaer i mørke tause Dale
+Foruden Trøst, foruden dig,
+I Selskab jeg omsonst vil mig adsprede,
+Thi Selskab er ei Kummers Ven,
+Den muntre Flok af mine Sukke kiede
+Kold seer min Sorg, og spotter den.
+Ei Vaarens Pragt, ei al Naturens Ynde
+Oprette kan det Tab jeg leed;
+Den Dag, som mig din Hiemkomst vil forkynde
+Den første bliver for Munterhed.
+Men ach! maaskee endnu den gruesom lenter;
+<pb n="344" facs="353.jpg"/>Og Skiebnen smiiler til mit Raab,
+Og mens forgrædt jeg lange Tider venter,
+Jeg segner hen i skuffet Haab.
+Da jeg ei kan, gid dette Brev maa finde
+Dit mig ukiendte Opholdssted,
+O! gid det maa fremkalde Dig mit Minde,
+Og tolke dig hvor tit jeg græd.
+Mon dog sig ei min Genius hensvinger
+Tit, i mit Sted, den lange Vei?
+Mon mine Suk den Dig ei troelig bringer,
+Og jevnlig græder tunge som jeg?
+O! seer du den, o! da den vist vil sige
+Med Miiner og med udstrakt Arm:
+»Kom! Elskte kom! til fælles Føderige,
+»Dig venter der en kielen Barm,
+»Dig Laura der saa ømt og kierligt møder,
+»Som ingen Elsker mødet var;
+»Du see paa mig hvor hendes Hierte bløder
+»For Dig, som dette Hierte har!
+»Ei slumrer hun i lange mørke Nætter,
+»Men sukker sene Timer hen,
+»Naar qvægsom Søvn saa manges Kummer letter
+»Hun vaager for sin grumme Ven.
+»Og du vil ubarmhiertig længe tøve
+»At lindre Elskovs bittre Harm?
+»Din ædle Siel kan sig den Vellyst røve,
+<pb n="345" facs="354.jpg"/>»At skabe Fryd i sorgfuld Barm?«
+Saa vil sig vist min Genius forklare
+Thi ach! saa sorgfuld klager jeg,
+Du ikke ham, og ikke mig vil svare,
+O Himmel! mig Du svarer ei.
+Mig som for alle Du engang udkaarede,
+Urørt af andres Pigers Blik,
+Stolt troede jeg, for evig Du var saaret,
+Da sidste Gang fra mig Du gik;
+Hvor taarefuldt, hvor mørkt var da Dit Øie,
+Det vidned’ om Din Qval, o Ven!
+Tilfreds jeg saae Du kun forgiæves Møie
+Anvendte for at dølge den.
+Jeg føler end hvor ømt min Haand du trykte,
+Da Du mit Afskeedskys modtog,
+Hvor qvalt af Sorg Du min at lindre søgte,
+Jeg hører end det Suk Du drog.
+Kun Mindet af den Ømhed, Du mig viiste
+I Fordums lykkelige Aar,
+Jeg eier end; alt andet jeg forliiste,
+Forliiste, som den svundne Vaar.
+Men Vaaren kommer dog igien tilbage,
+O! Vaaren er ei haard, som Du,
+Dig intet kan til disse Egne drage,
+Hvor stedse jeg Dig tænker nu.
+Dig seer min Siel, kun Dig, kun Dig allene.
+Dit Minde er den ene kier,
+<pb n="346" facs="355.jpg"/>Jeg savner Dig, og synes at jeg ene
+Som i en Ørk i Verden er.
+Dog kom Du her, o Ven! jeg skulde ikke
+Bebreidende Dig tale til,
+Bebreidelser for den sig ikke skikke,
+Som Hiertet ene røre vil.
+Nei Elskte! Bønner, Suk og Strømme Taarer
+Det blev til Dig mit hele Sprog,
+Langt borte nu de ei min Selim saarer,
+Min sagde jeg! og Hiertet slog
+Saa ængsteligt, saa stærkt, som om ei mere
+Din Elskov gav mig dertil Ret.
+O sig mig — Nei! fordølg det, om af flere
+Du fik det Navn og ønskte det;
+Jeg veed det nok, at fra hver Piges Læber
+Du uden Møie kunde faae
+Saa kielent Navn, men om Du troløs stræber
+En anden Piges Gunst at naae,
+Da Selim, Selim, mod Din Elskerinde
+Du mere grum end Døden er,
+Og skal hun snart i dennes Arme finde
+Den Roe Du hende røver her,
+Og da skal efter mange svundne Dage
+Naar længe jeg i Støvet var,
+Maaskee du da skal ønske mig tilbage,
+Saa tit som jeg Dig ønsket har.
+Men da jeg ei kan længer ynksom høre
+<pb n="347" facs="356.jpg"/>Din Elskovs stumme Klagelyd,
+O kom da nu! mens Elskov kant mig røre,
+Kom i min Arm, og deel min Fryd!
+Ei Stolthed, Elskte! byder mig at sige,
+At flere har Din Laura kier,
+Nei blot fordi Du vide skal Din Pige
+Din Elskov ei uværdig er,
+Jeg ene nævner det; thi stolt jeg ikke
+Af Deres Hylding være kan,
+Før hævtes jeg ved Dine kielne Blikke,
+Nu seer jeg mig kun liden an.
+Medynksom seer jeg, naar en anden stræber
+At naae den Haand, jeg dig gav hen;
+O! Vee Dem; thi en haabløs Elskov dræber.
+O! Vee dem; thi jeg kiender den!
+Men Medynk er hvad jeg kan ene skienke
+Al anden Kierlighed end Din;
+Dig ønsker jeg, og ingen kan jeg tænke —
+Nei! ingen anden tænke Min;
+Om jeg end længe skal omsonst paakalde
+Den kielne Gud, med sorgfuldt Sind,
+Om end for Dig skal mange Taarer falde,
+Og male Tiden paa mit Kind.
+Men kiedes Du fordi Din Laura skriver?
+Hver Stund jeg skriver er mig kier,
+Jeg lykkelig i den Indbildning bliver
+At midlertid Du hos mig er,
+<pb n="348" facs="357.jpg"/>Og at jeg Dig med Taarer kielen maler
+Den Qval, som hersker i mit Bryst,
+Et kierlig Brev fra Hiertet ene taler,
+O! sendte Du mig et til Trøst,
+Kun nogle ømme Ord, kun at Dig rører
+»Forladte Lauras Klagebrev,
+»At Hende end Du Elskende tilhører,
+Hvor faa de er, jeg trøstet blev.
+Jeg intet Kys, o Selim! dig vil sende
+Jeg veed ei om det glædte Dig.
+Men nok engang, før dette Brev har Ende
+O! kom i Hu Du elskte mig!
+
+<nonum><right>Margr. Soph. Buchholm.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="kruse20261127501" author="kruse">
+<head>
+  <!-- Titlen er hentet fra bindets indholdsfortegnelse. -->
+  <title>En Bondekones Sang mellem sine Slægtningers Grave</title>
+
+  <firstline>Her hviiler alt, hvad før udgiorde</firstline>
+
+  <source in="bd05" pages="348-350" facsimile-pages="358-360"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+Imedens jeg i Sommer opholdte mig hos en af mine Venner, der er Præst paa Landet, var jeg en Søndags Morgen inden for et Vindue, der vendte ud til Kirkegaarden, Vidne til følgende Optrin. Kort Tid, førend Gudstienesten skulde begynde, nærmede sig to Bønderkoner til nogle med Nælder og Ukrudt begroede Grave. Den eene, som disse Grave egentlig tilhørte, bortlugede Ukrudet, opklappede Gravene paa ny og bestrøede dem med Sand, og lod imidlertid sin Smerte over Tabet af de Personer, som her hvilede, udbryde i de ømmeste, de meest rørende Klager. Disse skulde være Indholdet af min Sang og jeg vil være glad, om Tankerne i den, der næsten alle tilhøre den <pb n="349" facs="358.jpg"/>gode Kone, ikke have tabt ved Versificationen og Rimene.
+</prose>
+
+<poetry>
+Her hviiler alt, hvad før udgiorde
+Mit hele Livs Lyksalighed,
+Jeg Arme her har ladet jorde
+Min Moder, Mand og Sønnen med.
+O Gud, som trøster hver Bedrøvet,
+Trøst du og mig og mine Smaae.
+Os Mand og Fader er berøvet;
+Dig eene kan vi lide paa.
+
+    Min gode Moder, som mig lærte
+Hvor naadig blid Gud Fader er,
+Som lærte mig at lide Smerte,
+Og dog at have Livet kier;
+O aldrig, aldrig skal jeg glemme
+Hvor saare høit du elskte mig,
+Og indtil Graven mig skal giemme,
+Jeg Moder! stedse takker dig.
+
+    Gud signe dig min ømme Mage!
+Ach tidlig mistede jeg dig!
+I alle dine Levedage
+Du giorde mig saa lykkelig!
+Nu staaer jeg ved din Grav og græder,
+Og klager mig saa vaandefuld.
+Gud lønne dig med Himlens Glæder!
+Du var saa from, saa vennehuld.
+
+<pb n="350" facs="359.jpg"/>    Her sover du, min lille Spæde!
+Er frelst fra alskens Sorg og Nød,
+Din Fader hørte dig ei græde,
+Han var alt død, da du blev fød,
+I Moders Liv, din Moders Smerte
+Du følede, min arme Dreng!
+Den knuste og dit lille Hierte
+Ved Siden af min Sygeseng.
+
+    O hviiler trygt i kiere Døde,
+Og sover sødt i Herrens Fred!
+I Himlen skal jeg Eder møde,
+Og nyde evig Salighed.
+Skal mine Taarer her end rinde,
+Skal Sukke stige fra mit Bryst,
+O hidset, hidset skal jeg finde
+En varig Fryd og salig Trøst.
+
+<nonum><right>M. Kruuse.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk20261127504" author="anonym1700dk">
+<head>
+  <title>En Verden efter mit Sind, og ikke efter mit Sind</title>
+  <dates><written>1786-09-12</written></dates>
+  <source in="bd05" pages="350-356" facsimile-pages="360-366"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<prose>
+En Verden efter mit Sind er netop saadan en Verden som denne, hvor alting udvikler sig af de simple Naturlove; hvor Fuldkommenheden giver sig Tid, at stige Trin for Trin til den største Høide; hvor langsomme og smaae Midler frembringe <pb n="351" facs="360.jpg"/>Storheder, som ikke kunne overgaaes; hvor det almindelige forvandler sig til store Undere. Midlerne ere her ligesaa store, ligesaa underfulde, ligesaa fuldkomne, som Øiemedene. Her behøver jeg ikkun at overlade mig til Naturlovene, give dem Tid til at udvikle Midlerne, ved hvilke de føre ogsaa mig til Maalet, for igien som Middel til det Hele, til at blive fuldkommen, og for mig selv, som det Hele saa stor og saa underfuld, som ethvert Heelt i Naturen.
+    Kongelig handler jeg da som Konge; mandig som Mand, faderlig som Fader, venskabelig som Ven, menneskelig som Menneske. Hvad er lettere end dette! o det er saa let, at ingen gidder handle saa, og enhver skammer sig over denne Eenfoldighed.
+    Derfor opstaaer der en Verden, som er ikke efter mit Sind, netop det modsatte mod en Verden som denne, i hvilken man ikke lader de simple Naturlove Tid til at udvikle sig, hvor der fremtræder Undermagere, som ville paa eengang skabe et fuldkomment Ganske, og som just derfor føre Naturens Fuldkommenheder tilbage til intet, dens Storhed til phantastiske Luftsyner, dens Undere til Hverdagsting, at man i den Ørk, man seer rundt om sig, maa udraabe: <pb n="352" facs="361.jpg"/>O Mennesker, Mennesker! denne Verden er eders; hiin er din, o Guddom!
+<right>den 12 Sept. 1786.</right>
+</prose>
+<prose>
+    Hvor finder jeg dig igien, o Natur! raabte Vandreren Zenid, og gik i en vild Ørk hen mod en mørk Hule.
+    Naturen var her i sin Raahed; dog hvilede Zenid her i dens Arme, og følede det. Men han udhvilede sig efter en Mathed, som Verdens Svingel havde paaført ham; og da han havde udhvilet, hvor blev da hans Roe?
+    Vel, sagde han, er du Naturen; men du er raa. Paa Sletten skaber Stormen Bierge og Dale af det bølgende Sand, og midt i denne Ørk staaer det tørre Bierg jeg beboer. Intet Træe beskygger det; ingen Kilde væder det; de Skygger, det kaster, ligne Tordenskyer.
+    Zenid forlod Ørkenen, og iilede til en Dal, som en fredelig Strøm giennemflød. Det blide Soelskin fremlokkede Blomstre og Knopper af den græsgroede Jordbund og af Buskene. En Blanding af Høie og Dale beskyggede dem mod Sommerheden, og sparede Blomsterknoppene til at blive moden Frugt. Zenid besteg Høien, og be<pb n="353" facs="362.jpg"/>saae Egnen rundtom. Herlig, herlig, raabte han henrykt, er Naturens ægte Skiønhed.
+    Mættet af Henrykkelse forsøgte han nu at giennemvandre Dalen. Han gik ned af Høien. Sammenhængende tætte Tornebuske holdt ham tilbage. En Omvei førde ham til et Morads; omsider kom han til Strømmen.
+    Her troede han, roelig at kunne vandre frem ved Bredden; hist udmærkede han sig et Sted til en Hytte; der vilde han om Natten finde et Dække for den faldende Dug. Høien syntes ham nær; han vilde haste derhen. Som han gik, blev Grunden under hans Fod usikker. Flodens Vand, opsteget over dens Bredde havde trængt sig dybt ind under Jorden. Han vadede møisommeligen der igiennem; der stod midt i Strømmen en steil Klippe, og fordybede Vandet. Han klavrede op paa Klippen, og hvilede sig udmattet paa Toppen endnu langt fra Maalet, hvor han bestemte sin natlige Hytte. Iblandt Buskene, og i Moradserne havde Snoge, og andre Insecter skrækket ham, og saaret ham. Nedslaaet saae han paa sig selv, og paa Egnen rundtom. Han sukkede. Ak, tænkte han, saa er det forgieves, o Natur, at opsøge dig. Jeg flyede Mennesker, fordi Mennesker, hvor de end ere, i Palladser eller i Hytter, omskabe dig. Jeg <pb n="354" facs="363.jpg"/>søgte en Ørk; der savnede jeg din Skiønhed; jeg opsøgte din Skiønhed, og fandt Plager og Udmattelse.
+    Søvnen som flyer den lydelige Kummer, er ofte de stille Sorgers Ven. Zenid følede det. Nattens Dække lagde sig over hans Øienbryne. Men hans Aand gik frem i sin Tungsindighed.
+    Løst fra det sandselige antog denne hans Tungsindighed Drømmeskikkelser, og hvor let maatte ikke dette være den! Fører ikke Tungsindighed ligesom Haabet endog de Vaagende til tumlende Phantasier, og frembringer hist Skrækkebilleder, her gyldne Udsigter, begge lige langt borte fra Sandheden?
+    I Drømme nærmede sig Zenid Sandheden. Han saae sig i det uendeliges Region, saae, hvad han ikke kunde oversee, fattede ikke det uendelige, og hængte dog ikke mere ved det Endelige. Sole ilede, Planeter strømmede, piilsnar gik her een Verden, der en anden forbi; her væltede sig hele Systemer hen under ham, og der bildede Sole et Ild- og Lyshav, i hvilke Millioner Verdener strømmede. Fra den Henskuen over det Hele sænkte sig hans Blik ned paa enkelte Kloder. Hvor stod her alting i Ligevægt; Trykning, Tyngde, Tilbagestød, Elementer som syntes at forfølge sig, med hinanden blandede <pb n="355" facs="364.jpg"/>Kræfter, som ophævede sig mod hinanden, broderligen forenede til at bilde et harmonisk Ganske. Zenid beundrede Ordnen, Overeensstemmelsen i det uendelige, og i de nærmere Kredse i den ham vedkommende Verden. Hvorledes er, raabte han, alt saa stort, saa vist, saa harmonisk ordnet! Men hvor er i denne almægtige Harmonie nogen Hvilepunct for mig.
+    Overalt, raabte den vide Uendelighed ham imod, overalt, hvor du opholder dig, og søger selv at blive harmonisk i Naturen, som overalt i sig er harmonisk. Du søger Natur, men du glemmer, at, for at finde den, maae ogsaa du være Natur. I Naturens Irregange sværmede du aldeles bort fra dens Forskrivter. Ærgierrighed førde dig paa Storhedens Bane; du vilde bygge Sandheden Templer, og miskiendte den ene som Evigheden grunder. Saa blev du Statsmand, saa levede du ved Hoffet; saa bortbyttede du den Anseelse, Hoffet gav dig, mod den Ære at være Dervisch; saa flyer du Verden, og opsøger dig en Ørk. Alting ækler dig, fordi alting i dig kalder dig tilbage til Naturen; og fordi du, som de fleste Dødelige, miskiender denne Røst. Havde du hørt den, du vilde da ingen Tid have været udtrættet; som Statsmand, som Dervisch, endog midt i Hofli<pb n="356" facs="365.jpg"/>vet, vilde tilfredsstillende Viisdom have ført dig hen ad Menneskelighedens Bane; kun den Ørk havde du opsøgt, som du havde kunnet omskabe til et blidt Opholdssted, og i de frugtbare Dale havde du dannet dig Naturen til en Veninde, hvis Mangler kun ere Stof til nye Fuldkommenheder, naar Natur og Sandhed forstaae at omdanne dem.
+</prose>
+</body>
+</text>
+
+<text id="suhm20261127501" author="suhm" lang="la">
+<head>
+  <title>H. S. E</title>
+
+  <firstline>H. S. E</firstline>
+
+  <source in="bd05" pages="388" facsimile-pages="398"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+<center>H. S. E.</center>
+<center>ILLE</center>
+<center>CUJUS. NOMEN</center>
+<center>MAXIMA. LAUS</center>
+<center><w>FRIDERICUS II.</w></center>
+<center>BORUSSORUM. REX</center>
+<center>ARMIS. CÆSAR. PACE. AUGUSTUS</center>
+<center>IN. REPUBLICA. GERENDA. VESPASIANUS</center>
+<center>PHILOSOPHIA. MARCUS</center>
+<center>VITA. ANTONINUS</center>
+<center>REGUM. EXEMPLUM</center>
+<center>SINE. EXEMPLO</center>
+<center>MAXIMUS</center>
+
+<nonum><right>P. F. Suhm.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk20261127502" author="anonym1700dk">
+<head>
+  <title>Indsendt</title>
+
+  <firstline>HER HVILER</firstline>
+
+  <source in="bd05" pages="388" facsimile-pages="398"/>
+
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+
+<poetry>
+<center>HER HVILER</center>
+<center>DEN. ALDRIG. OVERVUNDNE. HELT</center>
+<center><w>FRIDERICH. DEN. II</w></center>
+<center>PREUSENS. KONGE</center>
+<center>SOM</center>
+<center>DANNET. AF. DE. VIISE. BLEV. VERDENS. ÆRE</center>
+<center>DET. ATTENDE. AARHUNDREDS. FORUNDRING</center>
+<center>OG</center>
+<center>ALLE. TILKOMMENDE. SLÆGTERS. MYNSTER</center>
+<center>SOM</center>
+<center>MENNESKE. OG. KONGE.</center>
+
+<center>HAN VAR FØD AAR 1712 DEN 24 JANUAR</center>
+<center>HAN LEVEDE 74 AAR 6 MAANEDER 23 DAGE 14 TIMER,</center>
 </poetry>
 </body>
 </text>
