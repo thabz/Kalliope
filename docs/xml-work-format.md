@@ -732,6 +732,18 @@ entydig i et indeks. `<toctitle>`, `<linktitle>` og `<indextitle>` kan bruges,
 når Kalliopes visning kræver en særskilt dokumenteret titelvariant, men de må
 ikke erstatte eller begrunde en omskrivning af de kildebaserede titelfelter.
 
+Kvalitetskontrollen advarer med `subtitle-slash`, når `subtitle` eller
+`suptitle` indeholder en skråstreg med blanktegn på begge sider, også inde i
+et `line`-element. Kontrollér, om skråstregen erstatter et trykt linjeskift;
+i så fald bruges særskilte `line`-elementer. En dokumenteret trykt skråstreg
+kan undtages med `ignore-tests="subtitle-slash"` på den konkrete tekst eller
+sektion, eller på værkroden for værkhovedet. Begrund undtagelsen i en
+XML-kommentar. Undtagelsen arves ikke af underliggende tekster.
+Advarslen vises i korpustesten og `npm run check-text-quality`, men giver
+ikke fejlstatus. JSON-rapportens `summary.warnings` tæller advarsler,
+mens `summary.qualityIssues` kun tæller blokerende fund. Titelbladets
+`transcription` er ikke omfattet.
+
 En overskrift, der typografisk er sat helt med versaler eller kapitæler,
 normaliseres til læsbar brug af store og små bogstaver; den typografiske
 fremhævelse må ikke transskriberes som fulde versaler. Skriv eksempelvis
