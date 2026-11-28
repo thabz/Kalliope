@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="uz" country="de" lang="de" type="poet">
+  <name>
+    <firstname>Johann Peter</firstname>
+    <lastname>Uz</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1720-10-03</date>
+      <place>Ansbach</place>
+    </born>
+    <dead>
+      <date>1796-05-12</date>
+      <place>Ansbach</place>
+    </dead>
+  </period>
+  <!-- Livsdata: https://schubert-digital.acdh-dev.oeaw.ac.at/P-00447.html. Salmonsens dødssted Nürnberg er ikke overført til metadata. -->
+  <literary-periods>de-oplysning-og-weimarklassik</literary-periods>
+  <identifiers>
+    <wikidata>Q69951</wikidata>
+    <viaf>22405896</viaf>
+    <gnd>118625756</gnd>
+  </identifiers>
+</person>
