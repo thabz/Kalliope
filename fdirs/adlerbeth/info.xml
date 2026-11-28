@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="adlerbeth" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Gudmund Jöran</firstname>
+    <lastname>Adlerbeth</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1751-05-21</date>
+      <place>Jönköping</place>
+    </born>
+    <dead>
+      <date>1818-10-07</date>
+      <place>Ramsjöholm</place>
+    </dead>
+  </period>
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <identifiers>
+    <wikidata>Q3338577</wikidata>
+    <viaf>920133</viaf>
+  </identifiers>
+</person>

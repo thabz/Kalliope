@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kalliopework id="1799-minerva" author="tidsskrifterdk" status="complete" type="periodical" parent="1785-1807-minerva">
+<kalliopework id="1799-minerva" author="tidsskrifterdk" status="incomplete" type="periodical" parent="1785-1807-minerva">
 <workhead>
   <title>Minerva</title>
   <year>1799</year>
@@ -7,12 +7,17 @@
   <!-- Bind 57: intet rettelsesark. -->
   <errata in="bd58" status="reviewed" pages="169" facsimile-pages="185"/>
   <proofreadings>
+    <!-- Bind 56, juni. -->
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-28T07:50:29Z"/>
     <!-- Bind 57. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:25:47Z"/>
     <!-- Bind 58. -->
     <proofreading model="gpt-6.1-sol" datetime="2026-11-06T22:41:59Z"/>
   </proofreadings>
   <pictures>
+    <picture src="1799-minerva-56-p1.jpg" type="titlepage">
+      <transcription>Minerva / et / Maanedsskrivt. // April, Maj og Junii. / 1799. // Kiøbenhavn, / Trykt hos Directeur Johan Frederik Schultz</transcription>
+    </picture>
     <picture src="1799-minerva-57-p1.jpg" type="titlepage" primary="true">
       <transcription>Maanedskriftet / Minerva. // Juli, August og September. / 1799. // Udgivet / de tvende første Hæfter / ved / P. Collet og K. L. Rahbek, / det sidste / ved / Knud Lyne Rahbek, / forhen Professor ved Kiøbenhavns Universitet. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz. / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
@@ -20,6 +25,9 @@
       <transcription>Maanedskriftet / Minerva. // October, November og December. / 1799. // Udgivet / ved / Knud Lyne Rahbek, / forhen Professor ved Kiøbenhavns Universitet. // Kiøbenhavn, / Trykt og forlagt af Directeur Johan Frederik Schultz, / Kongelig og Universitets-Bogtrykker.</transcription>
     </picture>
   </pictures>
+  <notes>
+    <note editorial="true">Januar–marts og maj er udeladt. S. 200–201 mangler i skanningen af majhæftet <a href="https://books.google.dk/books?id=FVw3AAAAMAAJ&amp;pg=PA199">↬</a>.</note>
+  </notes>
   <!-- Bind 57: Facsimilet kombinerer sider fra samme tryk i University of Michigans eksemplar (Google Books) og Nasjonalbibliotekets farveskanninger: 1799-07 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_004, 1799-08 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_005, 1799-09 https://urn.nb.no/URN:NBN:no-nb_digitidsskrift_2022072880009_006. 343 sider er erstattet med individuelt verificerede farvesider; øvrige sider og den samlede siderækkefølge følger Michigan-eksemplaret. -->
   <source id="bd57" href="https://books.google.com/books?id=Zlw3AAAAMAAJ" facsimile="1799-minerva-57.pdf" facsimile-pages-num="392">
     <title>Maanedskriftet Minerva</title>
@@ -46,13 +54,410 @@
     <volume>55</volume>
     <year>1799</year>
   </source>
-  <source id="bd56" href="https://uforbederlig.dk/tidsskrifter/Minerva-14aarg.htm">
-    <title>Minerva</title>
-    <volume>56</volume>
+  <!-- University of Michigan, mdp.39015065140892, farveskanning. Trykt s. 138 er aprils logiske s. 136. S. 200–201 i maj mangler i billedsekvensen. Bindets facsimilepositioner følger Google Books-indekset. -->
+  <source id="bd56" href="https://books.google.dk/books?id=FVw3AAAAMAAJ" facsimile="1799-minerva-56" facsimile-pages-num="412">
+    <title>Minerva et Maanedsskrivt</title>
+    <editor id="collett" type="editor">Peter Collett</editor>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
+    <volume>56 (14. årgangs 4. bind)</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Directeur Johan Frederik Schultz</printer>
     <year>1799</year>
   </source>
+  <errata in="bd56" status="reviewed" pages="[upagineret]" facsimile-pages="7"/>
 </workhead>
 <workbody>
+
+<section level="1">
+<head>
+  <title>Juni 1799</title>
+</head>
+<content>
+
+<text id="lundjm2026112801" author="lundjm">
+<head>
+  <title>Skiøn Anna</title>
+  <titleblock><part type="main" align="center"><line><w>Skiøn Anna.</w></line></part><part type="sub" align="center"><line><w>Ballade.</w></line></part></titleblock>
+  <subtitle>Ballade</subtitle>
+  <firstline>De Vikinger færdes saa vide paa Søe</firstline>
+  <notes>
+    <!-- Forfatterens note står nederst på s. 339 uden synligt henvisningstegn i versene. -->
+    <note>Omarbeidet efter No. 17, 4de Part i K. Viserne. Den begynder der. De Røvere vilde at stiele gaae. I mine Tanker er den af alle K. Viserne den, som slettest er digtet, skiønt Æmnet var saa herligt. Jeg undrer over, at ikke nogen benyttet det.</note>
+    <note editorial="true">Rasmus Nyerup tilskriver balladen Johan Michael Lund i <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 147 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=162">↬</a>.</note>
+    <note editorial="true">Omarbejdelse af <xref poem="folkeviser20261114108"/> i Peder Syvs visebog, fjerde part, nr. 17, som anført i trykkets note.</note>
+  </notes>
+  <source in="bd56" pages="334-341" facsimile-pages="338-345"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+De Vikinger<footnote>Nordiske Sørøvere.</footnote> færdes saa vide paa Søe
+At røve paa fremmede Strande;
+De stiele saa ung og faver en Møe;
+Med hende de hiem lode stande,
+Den Lykke vender saa ofte sig om.
+
+Til Kongen de solgte det unge Liv
+(De Sæder saa vilde da vare)
+Ret aldrig han faaer en skiønnere Viv.
+For hende han Guld ei spare.
+
+<pb n="335" facs="338.jpg"/>Hun var hos den Konge i mange Aar,
+Hans Slegfredviv maatte hun være.
+Skiøn Anna hun kaldtes i Kongens Gaard;
+Hver maae hende agte og ære.
+
+Fem Sønner med Kongen monne hun faae,
+De vare saa skiønne og bolde,
+Sin Herre at tækkes var hendes Attraae,
+Maae hun kun hans Yndest beholde.
+
+Det Folk er gaaet for Kongen at staae:
+”Vi af eders Naade begiere,
+En Arving til Riget os gives maae,
+Og ægtefød maatte han være.„
+
+Den Konges Moder var Anna saa huld:
+Min Søn! vil I mig det tilgive!
+Den Jomfrue I kiøbte for røde Guld,
+En Slegfred ei længer lad blive;
+
+Forvist er hun af saa ædel en Æt,
+Det vel man paa hende kan kiende.
+Det Frille Levnet er dog ikke ret;
+Min Konge! I ægte nu hende.
+
+”De Sønner saa prude fortiente det vel,
+At Ægtebørn I dem lod kalde
+I giøre mod dennem dog Ret og Skiel;
+Lad Herre! det eder befalde„!
+
+<pb n="336" facs="339.jpg"/>Nei, Moder! vel Anna er dyderig;
+Men jeg hendes Byrd ikke kiendte:
+En ædel Fyrstinde lover jeg mig,
+Og snart lader jeg hende hente.
+
+’End ere vi alle Lige for Gud:
+De Klærker os saa monne sige.
+Fuldvel kan I faae den byrdigste Brud;
+Men aldrig i Dyd hendes Lige.„
+
+Den Dronning tager skiøn Anna i Arm.
+Saa saare hun mon det fortryde.
+’Kom favn mig, Anna, og græd ved min Barm.
+Dig Kongen, mit Barn! vil forskyde.„
+
+’Snart lader han hente en ædel Brud.
+En Arving han Riget vil give.
+Min Anna! vi drage af Landet ud,
+Og sammen vi stedse vil blive.„
+
+O nei, min Dronning! I tale ei saa!
+I lade mig fattige Qvinde
+Allene og trøstesløs af Landet gaae.
+Mit Fodspor skal ingen udfinde.
+
+Som Barn blev jeg røvet af Faders Gaard;
+Min Moder ret aldrig jeg kiendte;
+Stor Sorrig og Qvide mig forestaaer,
+Og Trøst jeg hos ingen maae hente.
+
+<pb n="337" facs="340.jpg"/>Vel maae jeg vandre saa mangen vild Stie,
+Og bære saa lønlig min Smerte;
+Men snarlig er Nød og Angest forbi:
+Snart brister det sørgende Hierte.
+
+Skiøn Anna ganger i Høieloft ind;
+Den Kongebrud hører hun komme.
+Saa stride randt Taarer paa blegen Kind:
+Krist give min Tid var nu Ende!
+
+De rede til Bryllup i Uger tre,
+Med kongelig Pragt og Formue;
+Skiøn Anna hun sørged i alle de;
+Ei fik hun Fyrstinden at skue.
+
+Den Konge gaaer for skiøn Anna at staae:
+”Vor Anna! du deilige Qvinde!
+Hvad Gaver har du beredet dig paa
+At give min Brud og Fyrstinde.„?
+
+Hvad kan jeg give den Frue saa fiin?
+I spotte’ dog ei eders Terne.
+Hun faaer nu den Herre, som før var min.
+Den Gave jeg giver ugierne.
+
+Min sidste Bøn I lade mig skee,
+Min fordum saa naadige Herre;
+Maae jeg ei faae den Fyrstinde at see,
+Som nu eders Dronning skal være.„?
+
+<pb n="338" facs="341.jpg"/>”Nei, Anna! den Bøn ei vides dig kan.
+Det monne slet ikke sig sømme.
+Jeg sender dig bort i fremmed Land,
+For hende du Riget maae rømme.„
+
+Min Frille vil hun ei taale sig nær.
+Hun kunde det ikke tilgive.
+For Sønnerne fem selv Omsorg jeg bær:
+De skal hendes Tienere blive.„
+
+For Kongens Moder skiøn Anna gaaer ind:
+Min ædle og naadige Frue!
+Mig bæres saa meget for Tanke og Sind:
+Den Kongebrud vilde jeg skue.
+
+I give mig Brudefakkel i Haand;
+Til Brudehuus jeg hende følger.
+Gud snart vil opløse de tunge Baand
+Hvis Smerte jeg lønlig fordølger.
+
+”Hvad vil du, min Anna! i Brudehuus?
+At øge din Sorrig og Møde.
+Saa blege vil skues ved Fakler og Blus
+De Kinder, som før vare røde.„
+
+Ak jo! min Frue! I lade mig staae,
+Blandt Brudehuus Terner saa vænne!
+”Din Villie, min Anna! du have maae,
+De Terner for dig burde tiene.„
+
+<pb n="339" facs="342.jpg"/>Du klæde dig i det rare Guld-Skrud<footnote>Guldskrud ɔ: Prydelse, Smykke. See P. Syvs K. Viser passim.</footnote>;
+De Sønner foran dig lad træde.
+Iskienke skal du for den unge Brud:
+Jeg vilde, det var dig til Glæde.
+
+Den unge Brud seer skiøn Anna der staae.
+Saa brat hun til Kongen sig vendte,
+”En vænnere Møe ret aldrig jeg saae,
+Alt siden min Moder jeg kiendte.„
+
+”Endog hun drager den Kiortel saa riig,
+Stor lønnelig Sorg mon hun bære.
+Mit Hierte mig bløder, I sige dog mig:
+Hvo mon os den Venneviv være.„?
+
+”Jeg vil Eder sige, unge Brud min!
+Den Viv, som for Eder mon stande,
+Hun er min Søsterdatter saa fiin,
+Hidkommen fra fremmede Lande.„
+
+O nei, min Konge! I sige ei saa.
+Fuldvel da kan jeg det her kiende.
+Hun vel Eders Slegfredviv være maae.
+De Sønner I finge med hende.„
+
+<pb n="340" facs="343.jpg"/>Jeg Sandhed for eder ei dølge kan.
+Min ædele Brud og Fyrstinde!
+Saa ung blev hun røvet fra Fædres Land,
+Og solgt mig til Tienesteqvinde.
+
+Det er hendes Sønner, som I her see;
+De skal eders Tienere vorde.
+Det giør hende nu stor Angest og Vee.
+Hun fristede Skiebnen saa haarde.
+
+”En ældre Søster jeg havde saa bold:
+Saa ung man fra os hende røved:
+De Vikinger finge hende i Vold;
+Saa saare det os har bedrøvet.
+
+Forvist er du, Anna, min Søster væn;
+Mit Hierte mig det monne sige.
+Dig Kongen til ægte nu tage igien;
+Saa gierne for dig vil jeg vige.
+
+Saa fro til mit Hiem jeg reiser afsted
+At bringe de Tidender kiære.
+Den yngste Søn I maae give mig med,
+En Hertug saa bold skal han være.
+
+Den Konge ham randt en Taare paa Kind.
+Saa rørt han til Anna sig vendte,
+”Forlad mig det, Anna, Kiæreste min,
+At før jeg dit Værd ei erkiendte.„
+
+<pb n="341" facs="344.jpg"/>Den kongelig Ære du dele med mig;
+Saavel dig din Dyd det fortiente.
+Stolt var mit Hierte, dog elskte det dig
+Og Kierlighed anden ei kiendte.
+
+Skiøn Anna hun græd, hendes Hierte loe.
+Stor Glæde der blev nu paa Færde
+De drukke det Bryllup sammen saa fro;
+De vare hinanden saa værde.
+Den Lykke vender saa ofte sig om.
+
+    <nonum>Færse Sept. 96.</nonum>
+<nonum><right>L * * *<sup>+</sup></right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="rahbek2026112801" author="rahbek">
+<head>
+  <title>Germanicus</title>
+  <titleblock><part type="main" align="center"><line><w>Germanicus efter Adlerbeth.</w></line></part><part type="sub" align="center"><line>(Skaldskrifter 2 Bind).</line></part></titleblock>
+  <firstline>Liig stolte Eeg, som op mod Himles Nærhed søger</firstline>
+  <notes>
+    <note editorial="true">Oversættelse af Gudmund Jöran Adlerbeths <xref type="translation" poem="adlerbeth2026112801"/>.</note>
+  </notes>
+  <source in="bd56" pages="341-347" facsimile-pages="345-351"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Liig stolte Eeg, som op mod Himles Nærhed søger,
+Og eensom hæver sig i rummelige Lund,
+Hvor lave Buskes Riis omkring dens Rod sig krøger,
+Og dugløs spreder sig omkring besværet Grund.
+    Germanicus! Din Ære vinder
+    Fordobblet Høide ved din Samtids Færd,
+    I romersk Blod, som hos dig rinder
+    Du ene nærer Romerværd.
+
+<pb n="342" facs="345.jpg"/>Din Byrd, som Fædres Navn og Heltebilled<footnote>Imagines. Han var selv af den claudiske Familie. Hans Moder var en Datter af Marcus Antonius og en Søsterdatter af August.</footnote> pryder
+Saa Roms som Jordens Blik hen til din Vugge drog,
+En Faders ædle Støv dig tunge Pligter byder
+Dem at opfylde ei sædvanlig Dyd forslog.
+    De Hære, som hans Støv omgive<footnote>Et Gravminde var reist Drusus ved Rhinen, hvor de romerske Legioner til denne Hærførers Amindelse længe holdte aarlige Krigsøvelser. Et Alter var ham og helliget.</footnote>,
+    Det Alter, som til ham indviet er,
+    Forkynde dig, hvad du bør blive
+    Og du, du bliver meget meer.
+
+Blandt Vellysts Hildegarn, og blandt den falske Skare,
+Som Smiggrens søde Gift paa slibrig Læbe bær,
+I selve Livets Vaar forstaaer du at bevare
+Den Sæders Hellighed, som Helte værdig er.
+    Din spæde Dyd saa stadig lyser,
+    Og saa elskværdig alt den viser sig.
+    At Lasten for dit Aasyn gyser,
+    Og Avind sværger evig Krig<footnote>Tiberius frygtede ham næsten fra Barndommen.</footnote>.
+
+<pb n="343" facs="346.jpg"/>Knap ud paa Stridens Mark dig Æren høres kalde,
+Før med et sielden Skat den frister din Begier;
+Du Legioner seer for dine Fødder falde,
+Tilbyde Diadem, som alt din Fiendes er<!-- Notens tegn mangler i det danske tryk. Placering efter forlægget. --><footnote>Tibers!</footnote>.
+    Men i din Dyd du eier mere.
+    Du deres Bøn afviser med Foragt;
+    Er større, ved dig at regiere,
+    End at besidde Verdens Magt.
+
+Mod deres Overhæng en ædel Ild sig tænder,
+Det Staal, som i din Haand er Fædrelandets Haab,
+Og Fienders Skræk, du mod dit eget Hierte vender,
+Og vreed tiltaler saa din Hær med Trudselsraab.
+    Det Bryst, som Eders Diærvhed saarer
+    Snart bløde skal; I true mig Døden værd.„
+    Med Møie, og Bestyrtnings Taarer
+    Bortrives dig det dragne Sværd.
+
+I Spidsen for den Hær, din Dyd at lyde trued,
+Du ødsler Heltedaad paa Rhins og Elbens Bred
+Blandt kække Folkefærd, som aldrig Aaget kued,
+Trophæer kneise frem i dine Heltested.
+    Men Kampe selv din Mildhed viise,
+    Du sparsom er paa ringest Slaves Blod,
+    Du skienker de fortrykte Lise
+    Dig rører deres Taareflod.
+
+<pb n="344" facs="347.jpg"/>Hvad ædel Ømheds Drift dig til den Mark ledsager,
+Som Vari Nederlag har skiult med Romerliig.
+Du Dødens Alter seer; dig Krigens grimme Plager
+Aftvinge Suk, skiøndt ei dens Farer skrække dig.
+    En hellig Pligt din Sorg husvaler,
+    Din kiere Haand mod Landsmands Aske huld
+    En nægtet Sørgegield betaler
+    Dem med et taarevædet Muld<footnote>Germanicus begyndte selv dette Jordefærd, og kastede med egen Haand den første Græstørv paa disse sørgelige Levninger.</footnote>.
+
+Som da Anchises Søn Guldgrenen fordum førte,
+Til Skyggers blege Flok, hvis Harm han dyssed ned,
+De mørke Spøgelser, hvis Hævnskrig ere hørte,
+Med Tak omgive dig, som har dem Roe bereed.
+    Ei blot du din Velgierning strækker
+    Til Samtid, og til Eftertid; nei end
+    Til dem din ædle Hyldest rækker
+    Der før dit Komme slumred hen.
+
+Hvad Styrke i din Siel! som Seiren venligst smiler,
+Paa Cæsars hadske Vink du lægger Vaabnene
+Hvad Løn, naar hele Rom som dig imøde iiler<footnote>Af lav Avind hiemkaldte Cæsar ham, inden han fik Germanierne fuldkommen underkuede, dog bevilgedes ham Triumph.</footnote>
+I dig sin Hævner, Helt og Skytsgud troer at see.
+<pb n="345" facs="348.jpg"/>    Omkring din Vogn i Trængsel nyder
+    Et henrykt Folk sin egen Glædesfest,
+    Af al den Pragt, Triumphen pryder,
+    Du selv er, hvad den smykker meest.
+
+I Seiervinders Krands Apollos Laurbær blande
+Uskyldige Behag. Du begge fordre tør;
+Liig Tullius du drak af Hippocrenes Vande
+De mægtig som din Arm din blide Stemme giør.
+    Din Aand med stedse lige Vælde
+    I begge Iid forklaret sees igien,
+    Alcid<footnote>Herkules Musagetes.</footnote>, som Hydren saaes at fælde,
+    Var og de hulde Musers Ven<!-- Notens tegn mangler i det danske tryk. Placering efter forlægget. --><footnote>Germanicus havde med Held dyrket baade Digtekunst og Veltalenhed, hvorfor efter hans Død hans Brystbillede fik Plads blandt berømte Skribenters Senatssalen.</footnote>.
+
+Men daglig dette Værd en skinsyg Rædsel nærte
+I feigt despotisk Bryst; med feige Hænder Han
+Dig river fra det Folk, som bar dig i sit Hierte,
+Til nye Stormes Kamp paa Orientens Strand.
+    Du Seiren fører ved din Side
+    Og Fred og Retfærd gaae i dine Fied;
+    Og Nationerne kun stride
+    Om dig at viise Kierlighed.
+
+<pb n="346" facs="349.jpg"/>Ethvert af dine Skridt den lumske Avind skrækker,
+Dens Angreb aabenbar omsider vente dig.
+Den Pisos sorte Siel med sine Slanger ægger<footnote>Piso Statholder i Syrien, udsendt at vaage over Germanici Skridt, og alt hans aabenbare Uven, leed Skibbrud ved Rhodus, og var omkommen, havde ikke Germanicus reddet ham.</footnote>
+Han truende og diærv sin Høvding byder Krig.
+    Et oprørt Hav hans Harme stækker,
+    Blandt knuste Vrag han Bølgers Rov sig seer,
+    Du Haanden til hans Frelse rækker,
+    Og Venskab du din Fiende teer.
+
+Forbittret ved en Dyd, som han ei kan forlade,
+Han for sit frelste Liv dig giver Gift til Løn,
+Du døer — med Fryd han seer et Folk i Graad sig bade,
+Og storme Guders Huus, der giækked deres Bøn.
+    Det ikke er et Folk, der klager,
+    Det er en Jord, som med fortvivlet Skrig
+    En grusom Skiebnes Lov anklager,
+    Forgiæves igienfordrer dig.<!-- Notens tegn mangler i det danske tryk. Placering efter forlægget. --><footnote>Sorgen over hans Død i Antiochia var saa hæftig, at Folket kastede Stenene mod Templet, og nedbrød Alteret; de fleste østerlandske Fyrster, Fiender og allierede anlagde Sorg.</footnote>
+
+O jammerfulde Dag! naar i sit Favn din Mage
+Til sorgfuld Fædrestrand din kolde Urne bær,
+See et modfaldet Folk dem sorgfuld at modtage,
+Og dybe Sukkes Drøn den stumme Helsen er.
+<pb n="347" facs="350.jpg"/>    Den Sørgeskat, som hun forvarer,
+    Fornyer Smerten i bespendte Bryst,
+    Hvert Aasyn, og hvert Blik forklarer
+    En Siel, som hendes, uden Trøst.
+
+O ærefulde Sorg, du eene er den Hæder,
+Som aldrig Lastens Vold fra Dyden røvet har,
+Tyrannen Offre man med tvungne Haand bereder,
+Men Glæden ved hans Grav hans Skam giør aabenbar.
+    Den, hvem det Vidnesbyrd du giver,
+    Han dydig var, for kort han leved her,
+    Hans Navn til Dyrkning viet bliver,
+    Og evigt Minde er han værd.
+
+Men naar din Taareflod en Fyrstes Støv begyder,
+Hvem alt hans Purpur Ret til Verdens Minde gav,
+Han da sin Evighed af dig forædlet nyder,
+Til Tempel vier du hans marmorklædde Grav.
+    Den Krands, hvormed hans Tid omgiver
+    Hans Isse, du en evig Glands beskier,
+    Hvert Blad deraf en Stierne bliver,
+    Hvor Ærens Bane tegnet er.
+
+    <nonum>K. R.</nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
 
 <section level="1">
 <head>
