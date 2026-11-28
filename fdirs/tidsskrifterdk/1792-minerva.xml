@@ -4,14 +4,31 @@
   <title>Minerva</title>
   <breadcrumbtitle>1792</breadcrumbtitle>
   <year>1792</year>
+  <pagebreaks count-by="facsimile"/>
+  <proofreadings>
+    <proofreading model="gpt-6.2-sol" datetime="2026-11-28T07:34:22Z"/>
+  </proofreadings>
+  <pictures>
+    <picture src="1792-minerva-28-p1.jpg" type="titlepage" primary="true">
+      <transcription>Minerva / et / Maanedsskrivt // April, May og Junii / 1792. // Kiøbenhavn / Trykt hos Johan Frederik Schulz / Hofs og Universitets-Bogtrykker</transcription>
+    </picture>
+  </pictures>
+  <notes>
+    <note editorial="true">Årgangen omfatter her maj og juni. Januar–april og juli–december er udeladt. I skanningen af aprilhæftet mangler s. 142–143 <a href="https://books.google.dk/books?id=xGE3AAAAMAAJ&amp;pg=PA141">↬</a>.</note>
+  </notes>
   <source id="bd27" href="https://uforbederlig.dk/tidsskrifter/Minerva-7aarg.htm">
     <title>Minerva</title>
     <volume>27</volume>
     <year>1792</year>
   </source>
-  <source id="bd28" href="https://uforbederlig.dk/tidsskrifter/Minerva-7aarg.htm">
-    <title>Minerva</title>
+  <!-- University of Michigan, mdp.39015065142906. Farveskanning. S. 142–143 i april mangler i eksemplarets billedsekvens. Facsimilepositionerne følger hele Google Books-indekset. -->
+  <source id="bd28" href="https://books.google.dk/books?id=xGE3AAAAMAAJ" facsimile="1792-minerva-28" facsimile-pages-num="455">
+    <title>Minerva et Maanedsskrivt</title>
+    <editor id="pram" type="editor">Christen Henriksen Pram</editor>
+    <editor id="rahbek" type="editor">Knud Lyne Rahbek</editor>
     <volume>28</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schulz</printer>
     <year>1792</year>
   </source>
   <source id="bd29" href="https://uforbederlig.dk/tidsskrifter/Minerva-8aarg.htm">
@@ -25,5 +42,468 @@
     <year>1792</year>
   </source>
 </workhead>
-<workbody/>
+<workbody>
+
+<section level="1">
+<head>
+  <title>Maj 1792</title>
+</head>
+<content>
+
+<text id="anonym1700dk2026112801" author="anonym1700dk">
+<head>
+  <title>Den gyldne Alder</title>
+  <titleblock><part type="main" align="center"><line>Den gyldne Alder.<footnote>Dette lille Digt, som paa et andet Sted blev lemlæstet, restaureres her. Forf. Anm.</footnote></line></part></titleblock>
+  <firstline>Vaarens yndefulde Pragt</firstline>
+  <source in="bd28" pages="281-282" facsimile-pages="287-288"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Vaarens yndefulde Pragt
+Paa Phaninas Kinder svæver,
+Øiet straaler Somrens Magt,
+Høstens Fylde Barmen hæver —
+O smelt Vintren i dit Bryst,
+Og af Sommer, Vaar og Høst
+Kun din Krands du binde:
+<pb n="282" facs="287.jpg"/>Gyldne Alders Salighed
+Synker da fra Krandsen ned
+Til din Elsker, o Gudinde!
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112802" author="anonym1700dk">
+<head>
+  <title>Budet</title>
+  <titleblock><part type="main" align="center"><line><w>Budet.</w></line></part></titleblock>
+  <firstline>Iil, o Sang, mit ømme Hierte byder</firstline>
+  <source in="bd28" pages="282" facsimile-pages="288"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Iil, o Sang, mit ømme Hierte byder,
+Til Phaninas tause Hvilested,
+Hvor ei Sukket bæver, Taaren flyder,
+Hvor hun sank i salig Glemsomhed.
+
+Reent med stille Længsel til fra Øiet
+Søvnens lette Skygger smelte hen,
+Til hun, nyefødt knæler ned ved Leiet,
+Ak, at bede for sin fierne Ven;
+
+Til hun strækker sine bløde Arme
+Længselfuld mod Vennens Hiemvei ud,
+Til hun, haabefuld ved Andagtsvarme,
+Reiser sig og venter Skiebnens Bud —
+
+Da forkynd, naar Vinterstormen bukker
+Eegens stolte Top til Roden ned,
+Naar Naturen, liig en Enke, sukker,
+Dækker til sit kydske, rige Skiød,
+
+At jeg da paa Seilets Vinge iler
+Hiem til Fædres moderlige Kyst,
+Da henrykt i Saligheder, hviler
+Ved Phaninas ømme Svanebryst.
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112803" author="anonym1700dk">
+<head>
+  <title>Til Veemodigheden</title>
+  <titleblock><part type="main" align="center"><line>Til Veemodigheden.</line></part><part type="sub" align="center"><line><w>Sonnet.</w></line></part></titleblock>
+  <subtitle>Sonnet.</subtitle>
+  <firstline>Naar paa Bølgen Aftenrøden bæver</firstline>
+  <source in="bd28" pages="283" facsimile-pages="289"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Naar paa Bølgen Aftenrøden bæver,
+Maanen følger Solens gyldne Fied,
+Dvæler over Dødes Hvilested
+Hvor Erindringen sit Hoved hæver;
+
+Naar sig Mørkets sorte Belte væver
+Rundt om Jorden til Usynlighed,
+Og til Stiernebuens Herlighed
+Haabet op paa bange Vinge svæver,
+
+Møder du, Veemodighed, mit Hierte
+Da med Himlens Bæger fuldt af Hæld,
+Og en Draabe fuld af jordisk Smerte.
+
+Tak, o Himmelskyndige, som lærte
+Mig at yde Dødeliges Gield
+Ved Udødeliges Glædevæld.
+</poetry>
+</body>
+</text>
+
+<text id="staffeldtod2026112801" author="staffeldtod">
+<head>
+  <title>Landlivet</title>
+  <titleblock><part type="main" align="center"><line>Landlivet,</line></part><part type="sub" align="center"><line>ikke ganske i Gesners Smag.</line></part><part type="dedication" align="center"><line>Til min Ven Herr Professor <w>Tode.</w></line></part></titleblock>
+  <subtitle>ikke ganske i Gesners Smag.</subtitle>
+  <firstline>Det blev Din Lod som Momus, Præst</firstline>
+  <source in="bd28" pages="283-288" facsimile-pages="289-294"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Det blev Din Lod som Momus,<footnote>Momus var hos de Gamle Guden for sindrig Vittighed, besynderlig den fine satyriske.</footnote> Præst
+Ei nogensinde at forlade Byen,
+<pb n="284" facs="289.jpg"/>Hvor denne Modensguddom dyrkes best,
+Dens latterfulde Priis naaer op til Skyen;
+Hvor mangen een som gabende seer til
+Gi'r Offringen den beste Føde;
+En anden Vovehals, som Dig haane vil,
+Er offret selv, og ryger os imøde;
+Saa rigt et Alter ingen Guddom har;
+Fra Vaar til Vaar, fra Høst til Høst man har
+Paa Offer til det vidtudstrakte Tempel;
+Og neppe findes eet Exempel:
+At hver — indtil den allersidste Nar
+Tog ud paa Landet; inden dette skeer
+Er ingen Ferier for Dig at vente. —
+Dog ikke Momus blot, som smisket leer,
+Og intet Affald hidindtil Dig sendte,
+Men og det blidere, det muntre Smiil,
+Hvortil Apol sin Yndling, Dig har dannet;
+(O troe mig meer end Gesner og Virgil!)
+Har mavrest Føde her paa Landet. —
+At det er koldt, dog ikke meere sneer,
+Ei meer paa hvidt, men nu paa grønt man seer,
+En Faare-Ungdom hist og her omvanker,
+Deraf slet ingen Følelser jeg sanker,
+Deraf jeg hverken græder eller leer. —
+At Solen spreder Guld paa Lundens Grønt,
+Naar vædskeløse Jord uvirksom hviler,
+Er ikke nær saa godt, som det er kiønt,
+Hvor blidt endog dens Afskedsblik os smiler;
+Og Thetis og Auroras gyldne Pragt,
+Hvis evig unge Skiønhed alt opliver,
+<pb n="285" facs="290.jpg"/>Har vist i Staden meere Tryllekraft,
+Hvor Tusind-Skiønnes Kinder Gienskin giver.
+Thi vores Hyrdeungdom — Herre Gud!
+Den seer nu allermindst arcadisk ud.
+Ved sure Frugt og salte Fisk den trives;
+Det gi'r ei milde Vædsker. — Bande — kives,
+Og huje Skieldord mod et Faar, en Stud,
+Er al vor Hyrdesang. — Afskyeligt! —
+I hvad man end i Hyrdevers fortæller
+Om Zephirs Aande, Blomsterseng og sligt,
+Det gielder ikke os; Her har man Neller,
+Og kolde Pust, der gaae til Marv og Been,
+Er Zephir her, som Blomsterknoppen brækker.
+Blant hundrede der neppe findes een,
+Som ei paa stakkels Flora Halsen knækker. —
+    (”O hvor han overskriver følesløs,
+”Blot for at sige Nyt, den lunkne Knøs!” —
+Jeg hører een og anden Skiønhed sige,
+”Han føler ei det heelt Guddommelige,
+”Naar Skov og Eng fra Kuldens Klemme løs,
+”Sin Brudgom Vaaren favner ung paa ny,
+”Det mildere, det lysegrønne Heele,
+”Mailøvets Duft, dets tætte Væv, dets Lye,
+”Saa skiønt et Alt af tusind skiønne Deele; —
+”Og Lerkens muntre Sang som stemmer i
+”At jeg har Ret, at alt er Fryd og Ynde,
+”At han er død i sløv Misantropie.” —
+Hvad svares her? Hvor ende? hvor begynde? —
+Jeg veed ei selv hvorledes jeg er vendt,
+Geistfulde Herr Correspondent,
+<pb n="286" facs="291.jpg"/>Da mere Tænksomhed fordærver
+De lykkeligen stemte Nerver,
+Saa faaer det være sandt, og Striden endt.
+Men Tænkeren, og Philantropen er
+Til slige Følelser ei nær saa skikket,
+Den fierne Fremtid er ham altid nær,
+Og jager Glæden bort fra Øieblikket —
+Langt fra det Nu, som smiler blidt til Hun;
+Det meget skiulte Godt, Naturen giemmer,
+Og som ham synes Ondt, — En Plan saa fiin
+At hvert et Grandsten blinder, det forstemmer
+Hver Følelse for enkle korte Lyst. —
+    Nu sad jeg og, med lette sorgfrie Bryst,
+Som en Myrtil ved tause Strand forleden,
+Saa tankefuld — min Fryd var Eenligheden
+Og Havets Spil om purpurrøde Kyst,
+Jeg saae paa hele Verdens Vel og Vee,
+Som man sig tænker Skyggerne ved Lethe,
+Paa den forladte Klode ned at see;
+Og som for Dem, det Hørte, Følte, Seete
+I forhen nydte Liv, — saa var for mig
+Al anden Følelse, hvad man den kalder,
+Da fra mit Paradis jeg pludselig
+Ned til den allerbeste Verden falder;
+Det var en Fisk, som blind paa Krogen trak,
+Og længe tause Drenges glade Snak,
+I det de drage Stakklen op paa Landet,
+Som vakte Lyd og Liv i mig og Vandet;
+Hiin i et Kar nu Livets Ophold drak.
+<pb n="287" facs="292.jpg"/>”Tøv, (sagde Pogen) det er ikke ret,
+”O varsom — mere Vand deri maae gydes,
+”Vor Husbond siger at den smager slet,
+”Naar ikke levende den sydes”. —
+Jeg blev som Steen, — de løb med Latter bort. —
+    Et Uveir samler sig af alle Kanter,
+Jeg haster hiem — min Vei var ikke kort,
+Og tusind Ungdomsliv blant Dyr og Planter
+Er stormet bort; — Jeg naaede Huusets Lye,
+Og saae en trippende godladen Tærne
+Opmærksom paa den sorte Hagelsky,
+Om duunklædt Yngel varligen at værne
+Med udbredt Klæde. — O Medlidenhed!
+”De Stakler, sagde jeg, som stod derved,
+”De skulle hiem, var hendes Ord, og — gildes,
+”De døe saa let i saadant Veir, forvildes,
+”Og komme bort.”    En frydelig Beskeed! —
+Alt meer end nok herpaa jeg havde smagt,
+Da vaer jeg blev en følende Hyrdinde,
+Som just kom hiem fra Sommerfuglejagt,
+Drypvaad, svøbt i sit Skiørt, hun løb i blinde;
+De Sommerfugle myrdes ei med Skud,
+Det ømme bløde Bryst kan sligt ei taale,
+”Det derimod seer ganske moersomt ud,
+”En braaget Hær sadt radeviis paa Naale,”
+Et artigt Rettersted en miniatur.<footnote>Den nøieseende Læser vilde undskylde Udeladelsen af det stumme <b>e</b> finale, som aldeeles ikke høres i Dansken.</footnote> — —
+At alt er godt, det troer jeg saare gierne,
+<pb n="288" facs="293.jpg"/>Jeg vil det troe, alt efter viisest Styr,
+Hvormeget end det pirrer i min Hierne
+Naar gridske Tand, naar hvasse Næb og Kloe
+Saalænge kløer, — har ikke Rast og Roe
+Før værgeløse Uskyld er besnæret,
+Og Rovet langsom — levende fortæret.
+Men skal jeg Theosophet blindthen troe,
+Saa maae man og til Giengield lade mig,
+Da her kun spørges om hvad meest behager;
+At saadant Godt er ubehagelig.
+En Kietter den som Tingen selv anklager,
+Hvis Grund er skiult; — Det er et Godt, hvorved
+Jeg gyser, mægter knap at holde Pennen;
+(Saa skyld mig ikke for Ufølsomhed!)
+Nei, derfor lee af Daaren, favne Venner
+I Stadens muntre Sværm, i Vennekreds.
+Nu er man her, nu atter andensteds,
+Studerer stedse, — Bøger, Folk og Flasker,
+Men ikke Faar, ei smudsig Tøs som vasker.
+Lev kostelig, og sund og veltilfreds.
+    <nonum>Paa Landet i Maymaaned.</nonum>
+<nonum><right>O. D. v. Staffeldt.</right></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+<section level="1">
+<head>
+  <title>Juni 1792</title>
+</head>
+<content>
+
+<text id="smidth2026112801" author="smidth">
+<head>
+  <title>Eremiten og hans Ven</title>
+  <titleblock><part type="main" align="center"><line>Eremiten og hans Ven.</line></part><part type="sub"><p>(Fortællingen i denne Fabel er forhen udarbeidet af Hagedorn, i hans <span lang="de">der Bär und der Liebhaber seines Gartens</span>, af la Fontaine i den 151de af hans Fabler, og maaskee andensteds; men paa Dansk har Forfatteren aldrig seet den).</p></part></titleblock>
+  <firstline>En Eremit, som Verden ikke kiendte</firstline>
+  <notes>
+    <note editorial="true">Rasmus Nyerup tilskriver fablen Jens Hansen Smidth i <i>Almindeligt Register over Maanedsskriftet Minerva</i> (1801), s. 237–238 <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf#page=253">↬</a>.</note>
+  </notes>
+  <source in="bd28" pages="417-421" facsimile-pages="423-427"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+En Eremit, som Verden ikke kiendte,
+Som ventelig ei heller kiendte den,
+Hos hvem Hypokondrie den Grille tendte,
+<pb n="418" facs="423.jpg"/>I Eensomhed at leve stille hen,
+Begyndte endeligen der at kiedes;
+Thi Eene man saa sielden ret kan glædes.
+Han altsaa snart det Forsæt falder paa,
+For sig at søge Selskab, ud at gaae.
+Hvorhen? — Ja det maae Lykken sige,
+Den, som saa tidt er Daarens Vittighed,
+Og som en troe Veileder bød ham stige
+I Velstand op, i Viisdom ned.
+Om vores Eremit var nogen Daare
+Jeg ikke veed, og kan ei viide det;
+Men at ei Lykken vilde ham udkaare
+Til Yndling, snart man indseer let.
+Thi see! det første, som paa denne Vandring
+Kom ham imøde, var — en Biørn.
+Med angst og bange Siels Forandring
+Just ei den mildeste han seer af Skovens Børn.
+Dog denne Biørn var ikke som de andre,
+Den synes her sit Væsen at forandre;
+Den loggrer, og ret naadig paa ham seer,
+Saa mildt som Biørne mueligt er.
+Man veed, hvad gammelt Ordsprog siger:
+Een Høflighed er dog den anden værd.
+Da Eremitens Mod nu stiger,
+Og snart hans Hierte ganske lettet er,
+Han vover frit, sit Møde at indbyde
+Til vante Hiem som en kierkommen Giest;
+Ei Bamsen synes just hans Frihed at fortryde,
+Men gotter sig hos ham, som den kan best.
+<pb n="419" facs="424.jpg"/>Hvad skeer? Man giør Bekiendtskab,
+Og begge finde sig ret vel derved.
+En Time knap forbi, man slutter Venskab,
+Og begge drømme sig i Herlighed.
+Med aabne Laller man endog seer Biørnen ile
+At favne ham — men han betakker sig;
+Thi sæt endog, en Biørn kan venligt smiile,
+Dog, stedse Biørn, sig selv den bliver liig.
+Snart disse to Contubernaler
+Har Grunden til bestandigt Venskab lagt;
+Den eene planter, saaer og Caffe maler,
+Den anden driver ædle Jagt.
+I taus Alvorlighed de Dage glide,
+Thi hvad kan Biørne tale om:
+Og sielden lader man hinanden viide,
+Sin Lykke ved et Monosyllabum.
+I trolig og harmonisk skiøn Foreening
+Alt nogen Tid er gledet hen,
+Da — (dog det er vel Nogles Meening,
+At Biørn aldeles ikke duer til Ven;
+Og deres Ord jeg villig er at sande.
+Men hvad giør ikke Kiedsomhed?
+Man vælger hvilken Kost, man nærmest veed,
+For snarligen fra dette Hav at lande.
+Ei nogen Ting, jeg veed, saa underlig,
+Man jo kan elske, naar man kieder sig;
+For denne Dunst imellem bort at blæse
+Man griber, ach! til : : s Vers at læse.
+Nu til Fortællingen igien jeg vender mig.)
+<pb n="420" facs="425.jpg"/>Da, saa omtrent ved Middags Tide
+Kom Biørnen hiem fra Jagt,
+Og seer, sin Pylades at have lagt
+Sig til at sove, men en Deel at lide
+Af Fluerne, som sværme hist og her
+Paa Flueviis, og surre, stikke,
+Ja vel endog beklikke
+Den Næse, som dem nærmest er.
+Som troe Orest hos ham den Sæde tager,
+Og vogter ham omhyggelig;
+Hver vinget Giest den strax bortjager,
+Som vover her, at nærme sig.
+Den jager, snapper, fanger, truer,
+Saa godt den kan, en anden Sværm af Fluer
+Dog her ved Haanden stedse er.
+Tilsidst opirret Biørnen seer
+Paa Panden af sin Pylades at sidde
+En næsviis Giest; og i sin Vreede soer,
+Naa! du skal faae at viide,
+Hvad Biørnen kan.    En Steen saa stor,
+Som til at fælde Stude, hæver
+Den Lallede med Ivrighed,
+Og kaster paa den arme Flue ned,
+Saa heele Hytten bæver.
+Men det, der bæved' meest, var Eremitens Siel,
+Som sagde her i Hast sit vante Hiem Farvel.
+Den korte Tid, han endnu var i Livet,
+Han os har denne Lærdom givet:
+    En tosset Ven
+    Er allesinde
+<pb n="421" facs="426.jpg"/>    Saa farlig en
+    Som vittig Fiende<footnote>conf. med Neseggab.</footnote>.
+
+Til megen Vee for B : : :,
+Har han i C : : slig en Ven. (*)
+
+<nonum><right>*th.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="smidth2026112802" author="smidth">
+<head>
+  <title>Til Linna</title>
+  <titleblock><part type="main" align="center"><line><w>Til Linna.</w></line></part></titleblock>
+  <firstline>Elskte Linna! langt fra dig, min Glæde!</firstline>
+  <source in="bd28" pages="421-422" facsimile-pages="427-428"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Elskte Linna! langt fra dig, min Glæde!
+Længsels bittre Qval nedtrykker mig.
+Stedse er min Siel hos dig tilstede,
+Den har ingen Roe foruden dig.
+Har du hørt, naar Morgenrøden smiiler
+Giennem Vindvet til dit Leiested,
+Et veemodigt Suk, som frygtsomt iiler
+Dig forbi med nødig Hastighed.
+Har du seet, naar stille Aftenrøde
+Blinker svagt igiennem dunkle Lund,
+Da en Skygge som af længst bortdøde,
+Der har ingen Roe i Gravens Blund.
+Slig en Skygge tidt du saae at svæve
+Langsom i den stille Lund omkring;
+Og har seet den stige, dale, bæve
+Rundt om dig i underlige Sving.
+Du har følt den nærme sig dit Øie,
+<pb n="422" facs="427.jpg"/>Blande sig med Vestens kiølne Vind,
+Smidig sig omkring dit Bryst at bøie,
+Og sig trænge til dit Hierte ind.
+Du har hørt, naar Maanens bleege Lysen,
+Skimrede i Lunden, hvor du sad,
+Med en lille, sød og stille Gysen
+Lyd af Sukke, som af en, der bad.
+    Frygt ei for alt dette, elskte Pige!
+Hvad du føler, ahner, hører, seer,
+Hvad du skuer dale, bæve, stiige,
+Er min Siel, som stedse hos dig er.
+Vredes ei, at stedse den omgiver,
+Stedse nærmes dig saa inderlig!
+Heele Jorden Intet har, som giver
+Den sin Roe og Fryd, foruden mig.
+
+<nonum><right>*th.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="suhm2026112801" author="suhm" lang="la">
+<head>
+  <title>[Mindeskrift over Frederik Snedorph]</title>
+  <indextitle>Mindeskrift over Frederik Snedorph</indextitle>
+  <firstline>Eheu</firstline>
+  <source in="bd28" pages="446" facsimile-pages="452"/>
+  <quality>korrektur1,korrektur2,kilde,side</quality>
+</head>
+<body>
+<poetry>
+<center>Eheu</center>
+<center>Obiit</center>
+<center>Vir egregius</center>
+<center><w>FREDERICUS SNEDORPH</w></center>
+<center>Immiti fato raptus</center>
+<center>Ætate juvenis</center>
+<center>Consilio, doctrina, senex</center>
+<center>Quo terra</center>
+<center>Animam candidiorem</center>
+<center>Non tulit</center>
+<center>Heu</center>
+<center>Multis ille flebilis occidit</center>
+<center>Nulli flebilior</center>
+<center>Quam mihi</center>
+<center>Sic amico</center>
+<center>Moerens posuit</center>
+<nonum><center>P. F. <sc>Suhm</sc>.</center></nonum>
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
 </kalliopework>

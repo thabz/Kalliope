@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="staffeldtod" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>Otto Diderich von</firstname>
+    <lastname>Staffeldt</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1762-02-07</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1828-12-29</date>
+      <place>Traventhal</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>
