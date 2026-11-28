@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="lamotte" country="fr" lang="fr" type="poet">
+  <name>
+    <firstname>Antoine Houdar de</firstname>
+    <lastname>La Motte</lastname>
+  </name>
+  <!-- Livsdata kontrolleret mod Académie française:
+       https://www.academie-francaise.fr/les-immortels/antoine-houdar-de-la-motte -->
+  <period>
+    <born>
+      <date>1672-01-17</date>
+      <place>Paris</place>
+    </born>
+    <dead>
+      <date>1731-12-26</date>
+      <place>Paris</place>
+    </dead>
+  </period>
+  <literary-periods>fr-oplysningstid</literary-periods>
+</person>

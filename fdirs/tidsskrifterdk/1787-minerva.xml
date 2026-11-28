@@ -1163,22 +1163,6 @@ Thi see, han har Bue.
 </head>
 <content>
 
-<text id="anonym1700dk2026112702" author="anonym1700dk" lang="la">
-<head>
-  <firstline>Cellula divino magnoqve habitata Luthero</firstline>
-  <source in="bd08" pages="37" facsimile-pages="49"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-<center>Cellula divino magnoqve habitata Luthero</center>
-<center>Salve vix tanto Cellula digna viro</center>
-<center>dignus erat regnum qvi splendida tecta subiret</center>
-<center>te dedignatus non tamen ille fuit.</center>
-</poetry>
-</body>
-</text>
-
 <text id="baggesen2026112704" author="baggesen" variant="baggesen2019080312">
 <head>
   <title>Emma</title>
@@ -1385,23 +1369,6 @@ Og Eginhart og Emma leved’
 I Lykkens Skiød, i Glædens Slum,
 Til begges Siele sammensvæved’
 Fra Jorden til Elysium.
-</poetry>
-</body>
-</text>
-
-<text id="anonym1700dk2026112703" author="anonym1700dk" lang="la">
-<head>
-  <title>In novam accessionem Nosocomio Fridericiano Anno MDCCLXXXV factam. ad Divum Fridericum</title>
-  <firstline>Adsis huc Auguste! pater jam porta salutis</firstline>
-  <source in="bd08" pages="127" facsimile-pages="139"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-<center>Adsis huc Auguste! pater jam porta salutis</center>
-<center>Latius, et vitæ largius unda fluit.</center>
-<center>Julia sic voluit. Bene nos! ita conjugis in Te;</center>
-<center>Ut tuus in populum continuatur amor.</center>
 </poetry>
 </body>
 </text>
@@ -1982,13 +1949,14 @@ Igiennem Livets tunge Veie.
 <text id="baggesen2026112705" author="baggesen" variant="baggesen2002092606">
 <head>
   <title>Roserne</title>
-  <subtitle>Da jeg fik dem.</subtitle>
   <firstline>Skiønne, kielne Roser! visner ikke</firstline>
   <source in="bd09" pages="91-92" facsimile-pages="99-100"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
 <body>
 <poetry>
+<nonum><center>Da jeg fik dem.</center></nonum>
+
 Skiønne, kielne Roser! visner ikke!
     Blomstrer trygge her hos Eders Ven!
 Eders spæde Torne frit ham stikke!
@@ -2048,7 +2016,7 @@ Ogsaa dette Smiil engang forsvinder —
   <firstline>Pindsen bli’r klar. Der er ingen Rand om Maanen, der funkler</firstline>
   <notes>
     <note editorial="true">Nyerups register angiver Pram som oversætter; teksten er senere optaget i Ribers <i>Samlede Digte</i> (1803). <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf">↬</a></note>
-    <note unknown-original-by="voss"/>
+    <note editorial="true">Gendigtning af Voß: <xref type="translation" poem="voss2020020503"/>.</note>
   </notes>
   <source in="bd09" pages="207-219" facsimile-pages="215-227"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2255,6 +2223,9 @@ Pots! han prygler os krumme og lamme. Paskop! efter Skimlen!
   <title>Landsbyepræstens Held</title>
   <subtitle>(efter det engelske.)</subtitle>
   <firstline>Ei Bispens Held din Lykke overveier</firstline>
+  <notes>
+    <note editorial="true">Fri bearbejdelse af Alexander Popes <xref type="translation" poem="pope2026112801"/>.</note>
+  </notes>
   <source in="bd09" pages="219-221" facsimile-pages="227-229"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -2391,34 +2362,6 @@ De brænde skal, og giennem Fryd og Smerte
 </head>
 <content>
 
-<text id="anonym1700dk2026112704" author="anonym1700dk" lang="la">
-<head>
-  <firstline>De Calisz hic medium in Crusviczan fore punctum</firstline>
-  <source in="bd09" pages="267" facsimile-pages="275"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-De Calisz hic medium in Crusviczan fore punctum
-Indicat ista viæ formula justitiæ.
-</poetry>
-</body>
-</text>
-
-<text id="anonym1700dk2026112705" author="anonym1700dk" lang="la">
-<head>
-  <firstline>Hic situs est Petrus, Maria conjuge fretus</firstline>
-  <source in="bd09" pages="271" facsimile-pages="279"/>
-  <quality>korrektur1,korrektur2,kilde,side</quality>
-</head>
-<body>
-<poetry>
-Hic situs est Petrus, Maria conjuge fretus,
-Marmore splendente, Patre Wilhelmo peragente.
-</poetry>
-</body>
-</text>
-
 <text id="pram2026112703" author="pram">
 <head>
   <firstline>Grumt Spydets Hvislen hviner</firstline>
@@ -2477,7 +2420,7 @@ Principis hoc summi tumulatum cespite corpus
   <subtitle>En Idyl af H. J. Voss.</subtitle>
   <firstline>See kun det hvide Spektakel, som rasler henne i Busken</firstline>
   <notes>
-    <note unknown-original-by="voss"/>
+    <note editorial="true">Gendigtning af Voß: <xref type="translation" poem="voss2020020504"/>.</note>
   </notes>
   <source in="bd09" pages="345-355" facsimile-pages="353-363"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2806,10 +2749,10 @@ Og i mit Helved længselfuld omfavne
 <text id="pram2026112705" author="pram">
 <head>
   <title>Najaderne</title>
-  <subtitle>efteerlignet af Dalins Original.</subtitle>
+  <subtitle>efterlignet af Dalins Original.</subtitle>
   <firstline>To Kilders Nympher trættedes om Rangen</firstline>
   <notes>
-    <note unknown-original-by="dalin"/>
+    <note editorial="true">Fri bearbejdelse af Olof von Dalins <xref type="translation" poem="dalin2026112801"/>.</note>
   </notes>
   <source in="bd09" pages="358-360" facsimile-pages="366-368"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
@@ -2935,6 +2878,9 @@ Blomstre skiøn som du, og som din Kunst.
   <dates>
     <event>1787-10-23</event>
   </dates>
+  <notes>
+    <note editorial="true">Stjernesignaturen står for Hans Christian Bunkeflod, som Nyerups register angiver som forfatter. <a href="https://www.kb.dk/e-mat/dod/130020877678.pdf">↬</a></note>
+  </notes>
   <source in="bd10" pages="81-82" facsimile-pages="89-90"/>
   <quality>korrektur1,korrektur2,kilde,side</quality>
 </head>
@@ -3915,7 +3861,7 @@ Flye Taare der saadan en Skiebne mig spaaer!
 </head>
 <body>
 <poetry>
-I Søstre, som saa glade
+    I Søstre, som saa glade
 Forkynde Vaarens Lov,
 O iler at forlade
 Den før saa kiere Skov;
@@ -3924,7 +3870,7 @@ De falske Mennesker,
 O seer, hvis Blod her rinder;
 Min Mage myrdet er!
 
-Bliidt var hans ømme Hierte,
+    Bliidt var hans ømme Hierte,
 Som Maanens hulde Skin,
 Det vidner Eders Smerte
 O dømmer da om min!
@@ -3932,7 +3878,8 @@ Han sang — selv hine grumme
 Jeg saae saa mangen Gang,
 Af Fryd og Ømhed stumme,
 At lytte paa hans Sang.
-<pb n="265" facs="274.jpg"/>Det glædede den Fromme;
+
+<pb n="265" facs="274.jpg"/>    Det glædede den Fromme;
 Thi — ak! han var saa god!
 Han saae sin Morder komme,
 Og fløi ham glad imod.
@@ -3941,7 +3888,7 @@ Sig paa den spæde Qvist,
 Snart smutte bort, og synge,
 Og frygte ingen List.
 
-Og hvor hans kielne Stemme
+    Og hvor hans kielne Stemme
 Saa sødt og yndigt lød,
 Det skal jeg aldrig glemme,
 Og — ak! det blev hans Død.
@@ -3950,7 +3897,7 @@ Et Lyn fra ham udfoer,
 Min arme Mage rørte,
 Som livløs sank til Jord.
 
-O lærer her at hade,
+    O lærer her at hade,
 At kiende Mennesker,
 Og iiler at forlade
 Den Skov, os var saa kier.
@@ -3998,7 +3945,6 @@ Ei havde hun, som før, forkastet
     En trofast Ven;
 Men gierne, ach, ja gierne hastet
     Derhen, Derhen!
-
 <pb n="267" facs="276.jpg"/>Omsonst — men skiult i øde Kammer
     Blev Elskovs Sang.
 Svagt lydede i største Jammer
