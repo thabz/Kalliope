@@ -33,54 +33,125 @@ Nasjonalbiblioteket har enkelte hæfter i farve, blandt andet
 [december](https://www.nb.no/items/613d1169491b448817569765eb1d473a).
 Facsimileserierne følger de fire sammenhængende Michigan-eksemplarer.
 
-## Foreløbigt tekstudvalg
+## Tekstudvalg
 
 | Bind | Trykte sider | Tekst |
 | --- | --- | --- |
-| 75 | 66–68 | Prinds Benedit |
-| 75 | 205–206 | Den 28de og 29de Januar |
-| 75 | 215–217 | Ved Urnen over Søren Hagerup |
-| 75 | 285–287 | [Ja, vort Selskab, som Athene] |
-| 75 | 287–291 | Prøvestenen |
-| 76 | 95–96 | Sang for Kongens Livjægerkorps |
-| 76 | 96–97 | Sang for det borgerlige Selskab |
-| 76 | 343–345 | Ved min Faders Grav |
-| 77 | 183–188 | Forglemmelsen |
+| 75 | 27-28 | [Nej, Förtröstan! jag din röst ej hör] |
+| 75 | 28 | [Stoftets son! din styrka Gudars är] |
+| 75 | 29-30 | [Den blida jord likväl, der hon af hafvet var] |
+| 75 | 37-39 | Til Varus |
+| 75 | 40-41 | Til Dellius |
+| 75 | 41-42 | Til Xanthias fra Phocis |
+| 75 | 42-45 | Til August |
+| 75 | 45-48 | Til Mercurius |
+| 75 | 48-50 | Til Mæcenas |
+| 75 | 57 | [Es wagte sich einst in den Rhein] |
+| 75 | 66-68 | Prinds Benedit |
+| 75 | 205-206 | Den 28de og 29de Januar |
+| 75 | 215-217 | Ved Urnen over Søren Hagerup |
+| 75 | 285-287 | [Ja, vort Selskab, som Athene] |
+| 75 | 287-291 | Prøvestenen |
+| 76 | 95-96 | Sang for Kongens Livjægerkorps |
+| 76 | 96-97 | Sang for det borgerlige Selskab |
+| 76 | 192-212 | Scener af Shakspeares Sørgespil: Julius Cæsar |
+| 76 | 302-341 | Æneiden |
+| 76 | 343-345 | Ved min Faders Grav |
+| 77 | 71-72 | [Om Gustafs ädelmod den sista verlden talar] |
+| 77 | 73-73 | [Trätt att fruktlös lager skörda] |
+| 77 | 75-75 | [Man har med könets rätt så enevåldigt handlat] |
+| 77 | 75-76 | [En klok Semiramis, i verldens barndom prålar] |
+| 77 | 77-78 | [När Stiernhielm på sin luta slår] |
+| 77 | 78-78 | [Lärde Spegel, du som qväder] |
+| 77 | 78-79 | [En Sophia oss besöker] |
+| 77 | 149-160 | Den døende Neger |
+| 77 | 173-175 | [O Dronning! dig bad Jupiter anlægge] |
+| 77 | 175-177 | [O Konge! Faunus ypperlige Afkom!] |
+| 77 | 177-178 | [strax med svar var så Ilioneus färdig] |
+| 77 | 183-188 | Forglemmelsen |
 | 78 | 33 | Til Licin |
-| 78 | 34–35 | Til Grosphus |
-| 78 | 320–322 | Vahl |
-| 78 | 322–323 | Vahls Død |
-| 78 | 323–324 | Elegie |
+| 78 | 34-35 | Til Grosphus |
+| 78 | 61 | [Harmoni! du tone] |
+| 78 | 73-96 | Sammensværgelsen i Rütli |
+| 78 | 151-154 | Til Mæcenas |
+| 78 | 154-155 | Til Virgilius |
+| 78 | 155-157 | Til Lydia |
+| 78 | 157-158 | Til L. Ælius Lamia |
+| 78 | 158-161 | [At slaaes med Bæger, viet til Glædens Brug,] |
+| 78 | 161-161 | Til Venus |
+| 78 | 162-163 | Til Apollo |
+| 78 | 163-164 | Til Lyren |
+| 78 | 164-166 | Til Tibullus |
+| 78 | 166-168 | [Jeg sielden viste Guder min Ærefrygt,] |
+| 78 | 168-171 | Hymne til Fortuna |
+| 78 | 171-172 | Til Plotius Numida |
+| 78 | 173-176 | Til Romerne efter Kleopatras Død |
+| 78 | 176-177 | Til en ung Slave, der er Opvarter |
+| 78 | 225-228 | Til Asinius Pollio |
+| 78 | 228-229 | Til Septimius |
+| 78 | 230-231 | Til Pompejus |
+| 78 | 231-232 | Til Barine |
+| 78 | 232-234 | Til Valgius |
+| 78 | 235-236 | Til Licinius |
+| 78 | 237-238 | Til Qvinctius Hirpinus |
+| 78 | 238-240 | [Paa ulyksalig Dag har han, hvo det var] |
+| 78 | 240-242 | [Alt mindre Jord af Fyrstepaladser nu] |
+| 78 | 243-245 | Til Grosphus |
+| 78 | 245-247 | Til Mæcenas |
+| 78 | 320-322 | Vahl |
+| 78 | 322-323 | Vahls Død |
+| 78 | 323-324 | Elegie |
+| 78 | 324-325 | L’Ombra di Linneo |
+| 78 | 325-326 | En Vinterblomst |
+| 78 | 326-330 | [Ergo etiam] |
 
-Oehlenschlägers og Staffeldts digte forbindes med de senere
-korpusvarianter. Johan Storm Munch er signeret Johan Storm Munk.
-Odenumrene og indholdet svarer til Horats, anden bog, ode 10 og 16,
-som begge har konkrete originaltekster i korpusset. Weinwichs
-Prøvestenen svarer til Friedrich Leopold Stolbergs Der Prüfstein,
-11. jambe, som den trykte undertitel angiver.
+## Sidegennemgang og korrektur
 
-Carl Ferdinand Wilhelm von Krebs er nyregistreret efter Erslews opslag,
-kirkebogstransskriptionen og den samtidige dødsannonce. Dødsannoncens alder
-understøtter 1780, hvor Erslew angiver 1781. Erslew nævner også den enkelte
-`Krigssang` fra 1801. Der er ingen dokumenteret samlet digtudgave eller
-sikkert identificeret portræt i de undersøgte kilder.
+Alle 1.502 kildebilleder er gennemgået for versbidrag, pagination og
+rettelsesark. Indbundne særtryk er bevaret i facsimilerne og indgår ikke som
+Minerva-bidrag. Den dokumenterede rettelse på bind 76 s. 374 angår prosa
+uden for udvalget. Der er indsat 67 tekstforekomster.
 
-## Resterende arbejde
+Afslutningerne er kontrolleret særskilt. Januarserien af Horats slutter på
+s. 50, Julius Cæsar på s. 212, Æneiden på s. 341, Schiller på s. 96 og
+de to sidste Horats-serier på s. 177 og 247. De tidligere kortere intervaller
+var foreløbige. Artikelteksterne med verscitater er gennemgået for
+yderligere vers. Septemberhæftet har ingen yderligere selvstændige
+versbidrag. Vilhelm Tell og Toke Skytte, bind 78 s. 261–267, er prosa.
 
-- Bind 75. Horats-oderne s. 37–49.
-- Bind 76. Foersoms `Julius Cæsar` s. 192 ff., Hyphoffs
-  `Æneidens anden Sang` s. 302 ff.
-- Bind 77. `Den døende Neger` s. 140 ff. og `Et Ønske` s. 169 ff.
-  samt gennemgang af juli og september for versbidrag uden særskilt titel.
-- Bind 78. `Sammensværgelsen i Rütli` s. 73 ff., Smidths to serier af
-  Horats-oder s. 151 ff. og s. 225 ff., eventuelle versuddrag i
-  `Vilhelm Tell og Toke Skytte` s. 261 ff. og de resterende mindetekster
-  fra s. 324 ff.
-- Gennemgå alle hæfter for yderligere selvstændige vers og trykte rettelser.
-  Tjek alle ord, sideskift og indryk mod billederne. På bind 75 s. 67
-  er et ord efter »Glavind og« beskadiget i det tilgængelige sidebillede.
+Transskriptionerne er læst mod facsimilerne i producentgennemgang og
+uafhængig korrektur. Rettelser er genkontrolleret. OCR-geometri med to
+segmenteringsvarianter er brugt til kontrol af verslinjer, strofer og indryk.
 
-[Indholdsfortegnelsen for bind 75–76](https://uforbederlig.dk/tidsskrifter/Minerva-19aarg.htm)
-og [bind 77–78](https://uforbederlig.dk/tidsskrifter/Minerva-20aarg.htm)
-er indgange til sidegennemgangen. Sidebilleder, OCR-tekst og geometriske
-OCR-data for de fire bind ligger lokalt i `/tmp/kalliope-minerva-1804`.
+## Kilder, relationer og usikre læsninger
+
+Nasjonalbibliotekets farveskanning af majhæftet, s. 207, afklarer det
+blækdækkede ord i Michigan-eksemplaret som »hviler«. Foersoms signatur
+slutter »Skuespiller«. Oktoberhæftets farveskanning afklarer svage
+bogstaver i Schiller-bidraget. De fire sammenhængende Michigan-eksemplarer
+er fortsat facsimilegrundlaget.
+
+Tre steder er markeret [ulæseligt]. Det gælder ordet efter »Glavind og«
+i Prinds Benedit, bind 75 s. 67, ét ord i Dalin-citatet, bind 77 s. 71,
+og genrebetegnelsen i Smidths indledning, bind 78 s. 161. Smidths
+»hædigt« på s. 163 er bevaret efter trykket. Fabricius-signaturens
+fulde identitet er ikke sikkert dokumenteret.
+
+Oehlenschlägers og Staffeldts Vahl-digte er forbundet med de dokumenterede
+senere korpusvarianter. Munchs to Horats-oversættelser og Weinwichs
+Prøvestenen er forbundet med konkrete originaltekster. Der er i alt
+14 oversættelsesforekomster med konkret originalreference. De øvrige kendte
+originalforfattere registreres i de relevante oversættelsesnoter.
+
+Enrico Mocenni er registreret efter Ehrencron-Müller, bind 5, s. 399–400.
+Kornerups monografi fra 1963 dokumenterer dåb 30. oktober 1779 og død
+3. februar 1843. Monografiens portrætgengivelse har en rød stribe gennem
+ansigtet og er fravalgt som billedkilde. Adlerbeth og Zinck har
+kildebaserede biografier og dokumenterede portrætter. Rutström har
+kildebaserede livsdata og registreret biografisøgning.
+
+Arbejdsfiler, sideinventarer, OCR, kandidatdispositioner og korrekturkontrakter
+ligger uden for Git under /tmp/kalliope-minerva-1804.
+
+Tekstønskerapporten er kørt mod det opdaterede korpus med alle 67
+tekstforekomster. Rapporten gav ingen nye kandidater til afstemning.
