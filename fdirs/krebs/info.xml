@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="krebs" country="dk" lang="da" type="poet">
+  <name>
+    <firstname>C.F.W.</firstname>
+    <lastname>Krebs</lastname>
+    <fullname>Carl Ferdinand Wilhelm von Krebs</fullname>
+  </name>
+  <period>
+    <born>
+      <!-- Kirkebogstransskriptionen angiver 1780. Erslew angiver 1781.
+           Dødsannoncens alder, knap 74 år i marts 1854, støtter 1780. -->
+      <date>1780-04-03</date>
+      <place>København</place>
+    </born>
+    <dead>
+      <date>1854-03-05</date>
+      <place>Wyk auf Föhr</place>
+    </dead>
+  </period>
+  <literary-periods>dk-oplysningstid</literary-periods>
+</person>

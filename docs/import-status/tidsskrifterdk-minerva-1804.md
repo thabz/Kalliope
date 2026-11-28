@@ -40,9 +40,11 @@ Facsimileserierne følger de fire sammenhængende Michigan-eksemplarer.
 | 75 | 66–68 | Prinds Benedit |
 | 75 | 205–206 | Den 28de og 29de Januar |
 | 75 | 215–217 | Ved Urnen over Søren Hagerup |
+| 75 | 285–287 | [Ja, vort Selskab, som Athene] |
 | 75 | 287–291 | Prøvestenen |
 | 76 | 95–96 | Sang for Kongens Livjægerkorps |
 | 76 | 96–97 | Sang for det borgerlige Selskab |
+| 76 | 343–345 | Ved min Faders Grav |
 | 77 | 183–188 | Forglemmelsen |
 | 78 | 33 | Til Licin |
 | 78 | 34–35 | Til Grosphus |
@@ -57,12 +59,17 @@ som begge har konkrete originaltekster i korpusset. Weinwichs
 Prøvestenen svarer til Friedrich Leopold Stolbergs Der Prüfstein,
 11. jambe, som den trykte undertitel angiver.
 
+Carl Ferdinand Wilhelm von Krebs er nyregistreret efter Erslews opslag,
+kirkebogstransskriptionen og den samtidige dødsannonce. Dødsannoncens alder
+understøtter 1780, hvor Erslew angiver 1781. Erslew nævner også den enkelte
+`Krigssang` fra 1801. Der er ingen dokumenteret samlet digtudgave eller
+sikkert identificeret portræt i de undersøgte kilder.
+
 ## Resterende arbejde
 
-- Bind 75. Horats-oderne s. 37–49 og øvrige versbidrag ved
-  martsartiklerne.
+- Bind 75. Horats-oderne s. 37–49.
 - Bind 76. Foersoms `Julius Cæsar` s. 192 ff., Hyphoffs
-  `Æneidens anden Sang` s. 302 ff. og `Ved min Faders Grav` s. 343–345.
+  `Æneidens anden Sang` s. 302 ff.
 - Bind 77. `Den døende Neger` s. 140 ff. og `Et Ønske` s. 169 ff.
   samt gennemgang af juli og september for versbidrag uden særskilt titel.
 - Bind 78. `Sammensværgelsen i Rütli` s. 73 ff., Smidths to serier af
