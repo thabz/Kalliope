@@ -162,7 +162,8 @@
       <optional><attribute name="level"><text/></attribute></optional>
       <optional><attribute name="variant"><text/></attribute></optional>
       <optional><attribute name="aliases"><text/></attribute></optional>
-      <ref name="mixed"/>
+      <ref name="head"/>
+      <ref name="content"/>
     </element>
   </define>
 

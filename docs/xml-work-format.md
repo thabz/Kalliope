@@ -1225,7 +1225,9 @@ fritager ikke den enkeltstående dobbelte afstand.
 
 ## Sections
 
-Sektioner grupperer tekster og kan nestes:
+Sektioner grupperer tekster og kan nestes. Hver sektion skal have et
+`<head>` efterfulgt af ét `<content>`, som omslutter teksterne og eventuelle
+undersektioner. RELAX NG-valideringen håndhæver strukturen:
 
 ```xml
 <section id="hansenfj2026081501" author="hansenfj" level="2">

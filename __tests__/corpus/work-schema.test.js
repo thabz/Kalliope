@@ -1,4 +1,5 @@
 import { execFileSync } from 'child_process';
+import { trackedWorkFilenames } from '../../tools/libs/work-files.js';
 
 describe('kalliopework RELAX NG schema', () => {
   const poetryWork = content => `
@@ -20,6 +21,37 @@ describe('kalliopework RELAX NG schema', () => {
   );
 
   const sourceWork = source => `<kalliopework id="1900" author="digter"><workhead><title>Digte</title><year>1900</year>${source}</workhead></kalliopework>`;
+
+  it('validates all tracked works', () => {
+    const files = trackedWorkFilenames();
+    expect(files.length).toBeGreaterThan(0);
+
+    try {
+      execFileSync(
+        'xmllint',
+        ['--noout', '--relaxng', 'schemas/kalliopework.rng', ...files],
+        { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] },
+      );
+    } catch (error) {
+      const diagnostics = error.stderr?.split('\n')
+        .filter(line => line.endsWith(' validates') === false).join('\n').trim();
+      throw new Error(diagnostics === '' || diagnostics == null ? error.message : diagnostics);
+    }
+  });
+
+  it('requires one content element after the head of every section', () => {
+    const text = '<text id="digter1900a"><head><title>Vers</title></head><body><poetry>Vers</poetry></body></text>';
+    const section = content => `<section><head><title>Januar</title></head>${content}</section>`;
+    const work = content => sourceWork('').replace('</kalliopework>', `<workbody>${content}</workbody></kalliopework>`);
+    const wrappedText = `<content>${text}</content>`;
+
+    expect(() => validate(work(section(wrappedText)))).not.toThrow();
+    expect(() => validate(work(section(text)))).toThrow();
+    expect(() => validate(work(section('')))).toThrow();
+    expect(() => validate(work(section(wrappedText + '<content/>')))).toThrow();
+    expect(() => validate(work(section(`<content>${section(wrappedText)}</content>`)))).not.toThrow();
+    expect(() => validate(work(section(`<content>${section(text)}</content>`)))).toThrow();
+  });
 
   it('accepts physical page counting and an explicit correction to a printed page number', () => {
     expect(() => validate(sourceWork('<pagebreaks count-by="facsimile"/>'))).not.toThrow();
