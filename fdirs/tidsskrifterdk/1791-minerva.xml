@@ -4,14 +4,28 @@
   <title>Minerva</title>
   <breadcrumbtitle>1791</breadcrumbtitle>
   <year>1791</year>
+  <pagebreaks/>
+  <notes>
+    <note editorial="true">Bind 24: kun majhæftet (trykt s. 193–304) er indlæst indtil videre. April (s. 1–191) og juni (s. 305–444) er udeladt og behandles i issue #2451 (<a href="https://github.com/kalliope-dk/Kalliope/issues/2451">↬</a>); øvrige bind i årgangen afventer. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a></note>
+    <note editorial="true">Bind 24: kildeeksemplaret mangler trykt s. 52–53 og 184–185 (april) samt 338–339 og 348–349 (juni). Hullerne ligger uden for det indlæste udvalg og har ikke påvirket majhæftet. <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+    <note editorial="true">Bind 24: kun hele digte og øvrige selvstændige versbidrag er medtaget. Prosa, anmeldelser, verscitater i prosa og omslagsdigte er udeladt. <a href="https://github.com/kalliope-dk/Kalliope/issues/2091">↬</a></note>
+  </notes>
+  <pictures>
+    <picture src="1791-minerva-24-p1.jpg" type="titlepage" primary="true">
+      <transcription>Minerva/et/Maanedskrift//24//April, Mai og Junii/1791.//Kiøbenhavn./Trykt hos Johan Frederik Schultz/Hof- og Universitets-Bogtrykker.</transcription>
+    </picture>
+  </pictures>
   <source id="bd23" href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">
     <title>Minerva</title>
     <volume>23</volume>
     <year>1791</year>
   </source>
-  <source id="bd24" href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">
+  <!-- University of Michigan, 2F83AAAAMAAJ. Trykt s. 193 svarer til faksimileside 195 (194.jpg); offset 2. -->
+  <source id="bd24" href="https://books.google.com/books?id=2F83AAAAMAAJ" facsimile="1791-minerva-24" facsimile-pages-num="448" facsimile-pages-offset="2">
     <title>Minerva</title>
     <volume>24</volume>
+    <place>Kiøbenhavn</place>
+    <printer>Johan Frederik Schultz</printer>
     <year>1791</year>
   </source>
   <source id="bd25" href="https://uforbederlig.dk/tidsskrifter/Minerva-7aarg.htm">
@@ -25,5 +39,442 @@
     <year>1791</year>
   </source>
 </workhead>
-<workbody/>
+<workbody>
+
+<section level="1">
+<head>
+  <title>Mai 1791</title>
+</head>
+<content>
+<text id="anonym1700dk2026112801" author="anonym1700dk">
+<head>
+  <title>Cirklens Qvadratur i endelige Tal</title>
+  <subtitle>(En farlig Løgremand i Videnskabernes Rige.)</subtitle>
+  <firstline>Søg, hvo som vil, en Cirkel, at qvadrere</firstline>
+  <notes>
+    <note editorial="true">Indholdsfortegnelsen tilskriver epigrammet »af samme« som »Morgenen« på s. 264 (Hr. F.); trykket har ingen signatur. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a> <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="273" facsimile-pages="275"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Søg, hvo som vil, en Cirkel, at qvadrere;
+  En Viis vel veed, at det umuligt er;
+Men Daaren, som vil gjerne speculere,
+  Han bringer frem sit Kram, og viis Mand leer.
+
+<nonum><right>Mai Maaned 1791.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112802" author="anonym1700dk">
+<head>
+  <firstline>O Newton stor! Jeg ønskte dig i Live</firstline>
+  <notes>
+    <note editorial="true">Epigrammet står uden overskrift øverst på trykt s. 274 og er signeret J.; det er ikke opført i indholdsfortegnelsen. <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="274" facsimile-pages="276"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+O Newton stor! Jeg ønskte dig i Live,
+  At dømme fattig Daad paa denne Jord;
+Men jeg veed vist, dit Svar det vilde blive:
+  Om Giøgleværk jeg taler ei et Ord.
+
+<nonum><right>J.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112803" author="anonym1700dk">
+<head>
+  <title>Affeds=Sang</title>
+  <subtitle>
+    <line>til</line>
+    <line>Hds. Rgl. Høihed Prindesse Lovisa Augusta, 1791.</line>
+  </subtitle>
+  <firstline>Du reiser bort — og alle græde</firstline>
+  <notes>
+    <note editorial="true">Indholdsfortegnelsen tilskriver sangen Hr. Lieutn. v. Kirchhof; trykket er signeret Kirchhoff. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a> <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="274-275" facsimile-pages="276-277"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Du reiser bort — og alle græde;
+Thi du er Tvillingrigets Glæde;
+  Og eier Folkets Kierlighed.
+
+Men, skiøndt Du er i fremmed Rige,
+Bør Kierlighed skal aldrig vige,
+  Den uformindsket bliver ved.
+
+Kan vore Øine Dig ei see,
+Saa er i Hiertet dog en Lue,
+  Som brænder stedse der for Dig;
+Selv uden Ret til nogen Krone,
+Og uden Glands og uden Krone
+  Bort Hiert: vilde elske dig.
+
+Vi nu paa nogen Tid Dig laaner
+Til glade fremmede Nationer,
+  Som Fiende og tilbede Dig.
+
+<pb n="275" facs="276.jpg"/>Hvad os er Kilden til at græde,
+Er det som hine skaber Glæde;
+  Vor Graad gier hine lykkelig'.
+
+"Augusta! Himlen Dig ledsage!
+"Han, i sin Baretagt Dig tage!
+  "Han som er Din og Landets Ven"!
+Ved hver Dags blide Morgenrøde,
+Skal tvende Rongeriger møde
+  Med dette Suk, med denne Bøn,
+
+Og naar saa Dagen os frembryder,
+At Glædens Sang i Byen lyder:
+  Augusta kommer hiem igien!
+Hun, Folkets Fryd og Landets Ære!
+Da skal vi alle glade være,
+  Og henrykt takke Himmelen.
+
+<nonum><right>Kirchhoff.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="pram2026112801" author="pram">
+<head>
+  <title>Ved Hendes Kongelige Høiheds Kronprindsessens Lovise Augustas Bortreise</title>
+  <subtitle>
+    <line>Ved Hendes Kongelige Høiheds Kron-</line>
+    <line>prindsessens Lovise Augustas Bortreise</line>
+    <line>den II Mai 1791.</line>
+  </subtitle>
+  <firstline>Eders Modstand er spildte, Vinde! som trodsige</firstline>
+  <notes>
+    <note editorial="true">Indholdsfortegnelsen opfører oden som »Ode ved Hds. K. H. Kronprindsesse Louisa Augustas Bortreise, af C. Pram« ved s. 276. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a></note>
+  </notes>
+  <source in="bd24" pages="275-279" facsimile-pages="277-281"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Eders Modstand er spildte, Vinde! som trodsige
+Rægte føieligt Lær, negte at hielpe til
+  At berøve os Hendes,
+Bringe Danmarks Augusta bort.
+
+<pb n="276" facs="277.jpg"/>O var Skilsmissen lang; vidste vi ei, at Hun
+Kun til stakket Besøg fædrene Kyst forlod,
+  Viiste fremmede Egne
+Danmarks Hæder, og iiled' hiem;
+
+O da raabte vi, høit raabte hver fiønsom Danæ:
+"Hav dig, Nordvind, til Storm! stands vor Augusta
+"Knus hver Bølge, som vover          [Fart;
+"At befordre Augustas Flugt"!
+
+Thi erkiendte ei vi — hele det Danske Folk —
+Hvad Augusta os er, elsket som yndig,
+  Danneqvindernes Mønster,
+Rimnets Hæder, og Rigets Fryd?
+
+Viiste Mødrene ei Døttre, som dannes skal,
+Til i alting at see, hvordan Augusta er,
+  Hvordan Datter, og Syster
+Hustru, alting Augusta er;
+
+Hvor den ædelste Siel maler sig tiendelig
+I et hvert Hendes Blik; hvordan Forstand og Smag
+  Overstraaler af Godhed,
+Præger alle Augustas Træk;
+
+Hvor Hun, blid mod enhver, viiser, Hun føler det,
+Kongedatteren selv Brødre og Systre har
+  I enhver af det Folk, som
+Hendes Fader er Fader for!
+
+<pb n="277" facs="278.jpg"/>Dig Augusta, o Dig vise de frem i alt,
+Skiønheds Mønster er Du, Vndigheds Mønster Du;
+  Selv i Smaating Augusta
+Danske Piger til Mønster er.
+
+Hvordan pyntet og klædt sidst man den Gude faae,
+Spørge Døttrene om, for at betrygge sig,
+  Bed at ligne Augusta,
+Efterst Vnde og rigtigst Smag.
+
+Indtil hvordan Hun gaaer, hvordan Hun hilser Folk,
+Hvad Hun mest synes om, Tonen, Hun taler med,
+  Er Hun Mønstret, som alle
+Stræbe til, men, som ingen naaer.
+
+O var Skilsmissen lang; vidste vi ei, at Hun
+Kun til stakket Besøg fædrene Kyst forlod,
+  Viiste fremmede Egne
+Danmarks Hæder, og iiled' hiem;
+
+Men Hun kommer, og snart, fyrret og Færdere;
+Ah! thi gavende Bad mellem subidisk Fjeld
+  Fordred' vavlende Sielbred —
+Dog, snart fyrret Hun kommer hiem.
+
+Hele Danrigets Folks ivrige Raab til Gud
+Om hans blideste Held, Sundhed og alt Slags Godt,
+  Over Danmarks Augusta,
+Uvhørte ei offres skal.
+
+<pb n="278" facs="279.jpg"/>Rask og glad Hun igien nu skal de Egne see,
+Som ei skulde i Fior snuppet saa tier en Giæst
+  Uden Løvet, dem efter
+Dog at fryde endnu engang.
+
+Vende, Cærer, Sarmat, Quader, Hermundurer
+Atter undrende skal Danmarks Augusta see,
+  Atter lære at hedre,
+Ikke Landet, hvor Hun blev født.
+
+Yndig smiler hver Egn rundt om Augustas Vei,
+Selv forstisser Hun hver. Danmark misundende
+  Alle hylde i Hende
+Skiønhed, Vnde og Dyd, som vi.
+
+Dog Hun kommer igien, snart; intet fremmed Land
+Kiært som fædrene Land Vores Augusta er;
+  Og, fiandt hyldet af Alle,
+Ingen dog Hun er kiar som Os.
+
+Haand og Hierte hun gab Musernes Gistede,
+Deres Forsvar og Ben mellem det danske Folk,
+  Ham de vinse tilbage,
+Ham med Hende; de tøve ei.
+
+Vinde! standser Hun ei vores Augustas Fart;
+Vender blideste Vind; vugger sin Snæften frem;
+  Lader yndige Bølger
+Danse glade om Hendes Stavn;
+
+<pb n="279" facs="280.jpg"/>Og fra Kiøbenhavns Kyst hviler en elsket Lyd
+Af dets stillende Raab: „reis, og vær lykkelig!
+  „Glad og snart kom tilbage!
+  „Glæder følge ethvert Dit Sted“!
+
+Vander Sundhed og Fryd mod Hende, hvor Hun er,
+Vinde! standser hun ei Danmarks Benindes Fart;
+  Snart I glade os Hende
+Rask og fro viste hiem igien.
+</poetry>
+</body>
+</text>
+
+<text id="pavels2026112801" author="pavels">
+<head>
+  <title>Epilog</title>
+  <subtitle>
+    <line>holden den 7 April 1791.</line>
+    <line>min Ben L. . . . helliget. *)<footnote>*) Endeel unge Mennesker forenede sig i Efteraaret til et Selskab, hvis Hovedhensigt var at opføre Skuespil. De fleste vare allerede da fortrolige Venner, og deres Venskabs Baand knyttedes ved denne Forbindelse fastere; andre derimod, som vare mere fremmede for hverandre, bleve ved denne Anledning nærmere bekiendte, og elskede hinanden. Forfatteren har især Aarsag til at betragte dette Selskab fra en alvorligere Synspunkt; det skienkede ham saa mange rene Glæder, og aabnede ham Udsigten til saa mangfoldige nye, at han stedse <pb n="280" facs="281.jpg"/>levende vil erkiender det. Selskabet endte sine Forestillinger den 7 April; og samles rimeligviis aldrig mere. Fra bemeldte Synspunkte ønsker altsaa Forf. nærværende Epilog betragtet, ei som en Epilog i et dramatisk Selskab; men som et Venskabs-Minde, og som en Vens oprigtige Tak til dem, i hvis Omgang han nød saa ædel Glæde.</footnote></line>
+  </subtitle>
+  <firstline>For sidste Gang vi dette Sted betrede</firstline>
+  <notes>
+    <note editorial="true">Indholdsfortegnelsen tilskriver epilogen Hr. Pavels; trykket er signeret Pavels. <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a> <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="279-282" facsimile-pages="281-284"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+For sidste Gang vi dette Sted betrede,
+  Hvor skyldfri Lyst saa tidt os vinket hen.
+Den svandt — saa svinder Jordens første Glæde —
+  Vel den, som nyder, ei misbruger den.
+
+<pb n="280" facs="281.jpg"/>Vel den, som viis, med skiønsom Fryd erkiender,
+  Han skabtes ei til qvalfuldt Slaverie!
+Vel den, som da, naar han sin Daad fuldender,
+  Kan overskue den saa glad, som vi.
+
+Du, som medynksom Støvets Lod betragter,
+  Og seer kun Tornene paa Livets Vei!
+Vi nød' de blide Glæder, du foragter;
+  Kom, skue, og deel vor Fryd! fordom den ei!
+
+Blant Daarens korte, dyrt tilkiøbte Glæder
+  Vi sandsesløs ei drømte Tiden hen:
+De Godes Agt og Bifald var den Hæder,
+  Vi søgte her; og vi opnaaede den.
+
+Her saae vi Dydens Ven i Kamp med Smerte,
+  Lyksalig ved Bevidstheds stille Fryd;
+Vi ynked' Lastens Slave; og vi lærte
+  At vorde frie og lykkelig' ved Dyd.
+
+Der fandt vi det, som Daaren aldrig finder:
+  Den rene Lyst, som kun blev Dydens Løn;
+Naar Guld og Magt og Sandsers Fryd forsvinder,
+  Den blomstrer evig ny og evig skiøn.
+
+<pb n="281" facs="282.jpg"/>O! Venskab, du vor glade Kreds omfavner,
+  Din Aand, din Ild besiælede enhver:
+Erkiendtlig glad hver Broders Siel sig hæver
+  Med Tak til ham, som bød os samles her.
+
+I Medgangs blide Stund, naar Glæder smile,
+  Og Tiden svinder sødt og roeligt hen:
+Forenet skal vi da med Lyst fremile,
+  Og see hverandres Fryd og dele den.
+
+Og skal end Mismods bange Taare flyde,
+  Og savne vi end Hielp og Raad og Trøst:
+O! da skal Venskabs blide Stemme gyde
+  Den fundne Roe og Glæde i vort Bryst.
+
+Naar Jorden og dens Glæder brat forsvinde:
+  Naar Almagt's Stemme lyder: Du skal døe!
+O! Venskabs blide, frydefulde Minde
+  Bør Dødsfeng selv med Roser skal bestrøe.
+
+Ja! snart maaskee vil Affskedstimen lyde,
+  Der kalder os til andre Sysler bort.
+Snart skal maaskee vor sidste Dag frembryde:
+  Ustadigt er vort Liv, og, ak! hvor kort!
+
+O! Venskab os ledsage allevegne
+  Paa Livets Vei, til Gravens Skygger hen;
+Hist, Brødre! hist i Lysets bedre Egne,
+  I Evighedens Roe vi sees igien!
+
+<pb n="282" facs="283.jpg"/>O! Venner! elskte Venner! lad os vandre
+  Paa Livets Bane, alle Haand i Haand!
+I Fryd og Smerter elskte vi hverandre!
+  Og Himmelen signe selv vort Venskabs Baand?
+
+<nonum><right>Pavels.</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112805" author="anonym1700dk">
+<head>
+  <title>Natten</title>
+  <firstline>I Aften bører Mørket, Dagen viger</firstline>
+  <notes>
+    <note editorial="true">Indholdsfortegnelsen tilskriver digtet Hr. H. B.; trykket er signeret P. B. . . . . . . . <a href="https://uforbederlig.dk/tidsskrifter/Minerva-6aarg.htm">↬</a> <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="282-283" facsimile-pages="284-285"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+I Aften bører Mørket, Dagen viger,
+Det sidste Smiil mod Jorden Phoebus sender,
+Paa Himmelens Hvælving Natten først opstiger,
+Bag vestlig Sky kun svage Rødme blænder;
+
+Godt slummer du Natur! O tause Scene,
+Hvert Markens Blomst, hvert Liv, hver Skabning sover,
+Men Vesten rister lydt, blandt dunkle Grene
+Nattergalen sin Skaber lover.
+
+De fjalne Røster Aftenbinden dugger,
+Og dufte sagte over Markens Planter,
+Den Fiolen Lysten græsrig Eng bedugger,
+Som Maanens Skin bestrøer med Diamanter.
+
+Den trætte Bonde slummer hist saa roelig,
+Tung hyler Søvnen paa det matte Øie,
+I lave stille, lykkelige Boelig
+Han glemmer al sin Nød, og Dagens Møie.
+
+Ei sige Sutte meer, ei ynksom Klage
+Fra lidende, fra kummerfulde Hierte,
+Den Ægte glemmer sine haarde Dage,
+O gode Nat! du lindrer alles Smerter;
+
+<pb n="283" facs="284.jpg"/>Den Tænkende sit glade Øie haver
+Til Himlen op, til Kloders Millioner,
+Fra fjerne Sirius, som funklend' svøver
+Og smiler giennem Verdners Regioner;
+
+Beundrende han deres Bane maaler,
+Og svimlende og henrykt Siælen siger
+Til den Almægtige, som giennemstraaler
+Med evig Klarhed Ætherens vide Riger!
+
+I Støvet dybt nedbøiet, han tilbeder
+Den Evige! og her han atter finder
+Lyksalighed, som Faderen udbreder,
+Som ham om den Algodes Priis paaminder.
+
+Og Skov, og Mark, og Dal, og tause Æther,
+Og Maanen, som i Vandet pudsig spiller,
+Fortrøllet ham i Paradiser sætter,
+Hvor Echo nynner Nattergalens Triller.
+
+Andægtig takker han Algods Fader
+For Søvnens stille Roe, for Nattens Slummer,
+For han tillod sin Verdens Myriader
+At hvile sødt, og glemme Dagens Rummer,
+
+O tause stille Nat! i dine Skygger,
+Jeg enelende Alherrens Godhed priser
+Indtil det sidste Bluum min Roe betrygger,
+Hvorfra jeg vaagner glad i Paradiser!
+
+<nonum><right>P. B. . . . . . .</right></nonum>
+</poetry>
+</body>
+</text>
+
+<text id="anonym1700dk2026112804" author="anonym1700dk">
+<head>
+  <title>Ei om Glæde vore Stemmer</title>
+  <firstline>Ei om Glæde vore Stemmer</firstline>
+  <notes>
+    <note editorial="true">Sangen er indledt i prosaen på trykt s. 303: ved Oberberghauptmand Hiorts afsked fra Kongsberg Sølvverk blev hans Afskeds-Kaad ledsaget med denne sang. <a href="https://books.google.com/books?id=2F83AAAAMAAJ">↬</a></note>
+  </notes>
+  <source in="bd24" pages="303" facsimile-pages="305"/>
+  <quality>korrektur1,kilde,side</quality>
+</head>
+<body>
+<poetry>
+Ei om Glæde vore Stemmer,
+  Brødre, lyde kan i Dag.
+Alt for tungt vor Siel fornemmer,
+  Hvorfor vi see dette Lag.
+Ved din Bortgang Biergmands Hammer
+  Mat mod haarde Klipper slaaer;
+Halvudslukte Fæslers Flammer,
+  Falske Erin der' Søster spaaer.
+
+Dyb vor Gang i Klippen træffe;
+  Høit den tone Hiertes Priis!
+Gaa til Ædle og til Kiæffe
+  Bar det ædle Nordmænds Viis.
+Landsmænd, det er skiønt, at hedre
+  Dyden i sit Fædreland;
+Det er Arv af vore Fædre,
+  Som vi et vanflægte Kant.
+
+Bar ei Haabet, dig at stille,
+  Ædle Hiort, hos os igien,
+Kunde ingen Tanke true
+  Os saa haardt og tungt som den.
+Gil, og bliv hvad du fortjener
+  Elsket, æret, lykkelig;
+Dette ønske Norges Sønner,
+  Dette ønsker Kongsberg dig.
+</poetry>
+</body>
+</text>
+
+</content>
+</section>
+
+</workbody>
 </kalliopework>
