@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="mocenni" country="it" lang="it" type="poet">
+  <name>
+    <firstname>Enrico Virgilio Dario</firstname>
+    <lastname>Mocenni</lastname>
+  </name>
+  <period>
+    <!-- Else Kornerup, Enrico Mocenni (1963), s.16 og 185. Dåbsdatoen korrigerer Ehrencron-Müllers omtrentlige fødselsår 1765. -->
+    <baptized>
+      <date>1779-10-30</date>
+      <place>Siena</place>
+    </baptized>
+    <dead>
+      <date>1843-02-03</date>
+      <place>Siena</place>
+    </dead>
+  </period>
+  <literary-periods>it-oplysning-og-nyklassicisme</literary-periods>
+</person>

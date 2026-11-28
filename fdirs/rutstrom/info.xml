@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person id="rutstrom" country="se" lang="sv" type="poet">
+  <name>
+    <firstname>Carl Birger</firstname>
+    <lastname>Rutström</lastname>
+  </name>
+  <period>
+    <born>
+      <date>1758-11-22</date>
+      <place>Stockholm</place>
+    </born>
+    <dead>
+      <date>1826-04-13</date>
+      <place>Stockholm</place>
+    </dead>
+  </period>
+  <!-- Livsdata: Svenskt biografiskt handlexikon, II, s.392, https://runeberg.org/sbh/b0392.html;
+       Svenska Akademiens ledamotsregister, stol15, angiver dødsdato13.april1826 og medlemskab. Handlexikon angiver3.april;
+       den officielle akademifortegnelses13.april er lagt til grund.
+       Minerva1804 bind75s29 betegner oversætteren Doctor Rutström; Svenska Akademiens
+       Ovid-oversættelse og Lundbladsprisen identificerer Carl Birger Rutström.
+       https://www.svenskaakademien.se/svenska-akademien/ledamotsregister?stol=15 -->
+  <literary-periods>se-frihedstid-og-gustaviansk-tid</literary-periods>
+  <biography-status status="not-found" checked-on="2026-11-28">
+    <checked-source id="salmonsen2">BindXX navne- og sideregister kontrolleret for Rutström, Rutstrom og Ruthström. Ingen særskilt artikel.</checked-source>
+    <checked-source id="salmonsen-supplement">BindXXVI navne- og sideregister kontrolleret uden personopslag.</checked-source>
+    <checked-source id="salmonsen4">Den nye Salmonsens indholds- og sideregister kontrolleret uden særskilt opslag om Carl Birger Rutström.</checked-source>
+    <note>Svensk forfatter. De foretrukne Salmonsen-udgaver gav ikke et brugbart personopslag. Svenskt biografiskt handlexikon har en artikel, men er ikke blandt de på forhånd tilladte biografikilder. Portræt findes i Porträtt af svenska läkare och apotekare, bind1s87, https://runeberg.org/snlakare/1/; et dokumenteret museumsoriginal er endnu ikke verificeret.</note>
+  </biography-status>
+</person>
