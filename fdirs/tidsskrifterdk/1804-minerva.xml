@@ -1027,7 +1027,8 @@ Om Danmark og Norge evindelig Held!
   <title>Mai 1804</title>
 </head>
 <content>
-<text id="foersom2026112801" author="foersom">
+<!-- Trykt gentagelse »et et«, bind 76, s. 208. -->
+<text id="foersom2026112801" author="foersom" ignore-tests="repeated-adjacent-word">
 <head>
   <title>Scener af Shakspeares Sørgespil: Julius Cæsar</title>
   <firstline>Antonius! nu er mit Haab stadfæstet</firstline>
