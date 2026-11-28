@@ -244,7 +244,6 @@ const buildThumbnails = async (topFolder, _isFileModifiedMethod, options = {}) =
   stats.hashBytes = stats.sourceHashBytes + stats.outputHashBytes;
   stats.readBytes = stats.hashBytes + stats.receiptBytes + stats.manifestBytes;
   stats.elapsedMs = performance.now() - start;
-  console.log(`Thumbnail-statistik ${topFolder}: ${JSON.stringify(stats)}`);
   return stats;
 };
 

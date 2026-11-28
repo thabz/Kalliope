@@ -68,8 +68,9 @@ men billedbuffere og opgavekø gør ikke.
 
 ## Målinger
 
-Trinnet logger fremdrift for både kontrollerede og genererede billeder samt en
-JSON-statistik pr. rod. Statistikken indeholder kildeantal, cachehits, genererede
+Trinnet logger fremdrift for både kontrollerede og genererede billeder.
+Statistik returneres til kalderen og vises af `tools/measure-thumbnails.js`,
+men udskrives ikke i det normale build-output. Statistikken indeholder kildeantal, cachehits, genererede
 output og reparationer (en delmængde af genererede output med allerede matchende
 genereringsnøgle), receipt-/manifestlæsninger, billedhash-læsninger og bytes.
 `receiptReads` og `manifestReads` tæller læseforsøg, inklusive manglende filer;
